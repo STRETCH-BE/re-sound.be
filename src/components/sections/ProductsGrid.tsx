@@ -8,9 +8,18 @@ interface ProductsGridProps {
 
 export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
   const products = [
-    { slug: 'interior', gradient: 'blue' as const, icon: 'grid' as const },
-    { slug: 'solid', gradient: 'dark' as const, icon: 'solid' as const },
-    { slug: 'divide', gradient: 'accent' as const, icon: 'divide' as const },
+    { 
+      slug: 'interior', 
+      image: '/images/products/interior/card.webp',
+    },
+    { 
+      slug: 'solid', 
+      image: '/images/products/solid/card.webp',
+    },
+    { 
+      slug: 'divide', 
+      image: '/images/products/divide/card.webp',
+    },
   ];
 
   return (
