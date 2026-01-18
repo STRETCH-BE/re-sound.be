@@ -120,6 +120,8 @@ function LeadGenModal({
     overflow: 'hidden',
     position: 'relative',
     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
+    display: 'flex',
+    flexDirection: 'column',
   };
 
   const headerStyle: React.CSSProperties = {
@@ -127,6 +129,7 @@ function LeadGenModal({
     padding: '2rem 2.5rem',
     position: 'relative',
     overflow: 'hidden',
+    flexShrink: 0,
   };
 
   const closeButtonStyle: React.CSSProperties = {
@@ -148,9 +151,16 @@ function LeadGenModal({
   };
 
   const bodyStyle: React.CSSProperties = {
-    padding: '2rem 2.5rem 2.5rem',
+    padding: '1.5rem 2.5rem',
     overflowY: 'auto',
-    maxHeight: 'calc(90vh - 180px)',
+    flex: 1,
+  };
+
+  const footerStyle: React.CSSProperties = {
+    padding: '1rem 2.5rem 2rem',
+    borderTop: '1px solid #e8ecf0',
+    backgroundColor: '#ffffff',
+    flexShrink: 0,
   };
 
   const inputStyle: React.CSSProperties = {
@@ -186,7 +196,6 @@ function LeadGenModal({
     alignItems: 'center',
     justifyContent: 'center',
     gap: '0.5rem',
-    marginTop: '1.5rem',
   };
 
   return (
@@ -267,7 +276,7 @@ function LeadGenModal({
 
         {/* Body */}
         <div style={bodyStyle}>
-          <form onSubmit={handleSubmit}>
+          <form id="lead-form" onSubmit={handleSubmit}>
             {/* Company Name */}
             <div style={{ marginBottom: '1rem' }}>
               <label style={labelStyle}>
@@ -401,7 +410,7 @@ function LeadGenModal({
             </div>
 
             {/* Consent */}
-            <div style={{ marginTop: '1rem', marginBottom: '0.5rem' }}>
+            <div style={{ marginTop: '0.5rem' }}>
               <label style={{
                 display: 'flex',
                 alignItems: 'flex-start',
@@ -422,6 +431,7 @@ function LeadGenModal({
                     marginTop: '2px',
                     accentColor: '#197FC7',
                     cursor: 'pointer',
+                    flexShrink: 0,
                   }}
                 />
                 <span>
@@ -429,33 +439,40 @@ function LeadGenModal({
                 </span>
               </label>
             </div>
-
-            {/* Submit */}
-            <button type="submit" disabled={isSubmitting || !consentChecked} style={submitButtonStyle}>
-              {isSubmitting ? (
-                <>
-                  <span style={{
-                    width: '20px',
-                    height: '20px',
-                    border: '2px solid rgba(255, 255, 255, 0.3)',
-                    borderTopColor: 'white',
-                    borderRadius: '50%',
-                    animation: 'spin 0.8s linear infinite',
-                  }} />
-                  Processing...
-                </>
-              ) : (
-                <>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                    <polyline points="7 10 12 15 17 10" />
-                    <line x1="12" y1="15" x2="12" y2="3" />
-                  </svg>
-                  Download Now
-                </>
-              )}
-            </button>
           </form>
+        </div>
+
+        {/* Fixed Footer with Submit Button */}
+        <div style={footerStyle}>
+          <button 
+            type="submit" 
+            form="lead-form"
+            disabled={isSubmitting || !consentChecked} 
+            style={submitButtonStyle}
+          >
+            {isSubmitting ? (
+              <>
+                <span style={{
+                  width: '20px',
+                  height: '20px',
+                  border: '2px solid rgba(255, 255, 255, 0.3)',
+                  borderTopColor: 'white',
+                  borderRadius: '50%',
+                  animation: 'spin 0.8s linear infinite',
+                }} />
+                Processing...
+              </>
+            ) : (
+              <>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download Now
+              </>
+            )}
+          </button>
         </div>
 
         <style>{`
