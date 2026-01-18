@@ -678,7 +678,7 @@ export default function DivideProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/divide/overview.jpg"
+                src="/images/products/divide/overview.webp"
                 alt="Divide acoustic room divider"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -755,7 +755,7 @@ export default function DivideProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/divide/integrated-base.jpg"
+                src="/images/products/divide/integrated-base.webp"
                 alt="Divide integrated base detail"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -771,7 +771,7 @@ export default function DivideProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/divide/magnetic-connection.jpg"
+                src="/images/products/divide/magnetic-connection.webp"
                 alt="Magnetic connection detail"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -858,7 +858,7 @@ export default function DivideProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/divide/modular.jpg"
+                src="/images/products/divide/modular.webp"
                 alt="Modular configurations"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -874,7 +874,7 @@ export default function DivideProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/divide/circular.jpg"
+                src="/images/products/divide/circular.webp"
                 alt="Circular design - recycled materials"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -1119,7 +1119,7 @@ export default function DivideProductPage() {
             <div key={i} className="gallery-item">
               <div className="image-container gallery">
                 <Image
-                  src={`/images/products/divide/gallery-${i}.jpg`}
+                  src={`/images/products/divide/gallery-${i}.webp`}
                   alt={`Divide room divider installation example ${i}`}
                   fill
                   style={{ objectFit: 'cover' }}
