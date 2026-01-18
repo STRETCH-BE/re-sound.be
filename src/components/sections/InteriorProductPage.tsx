@@ -1058,8 +1058,8 @@ export default function InteriorProductPage() {
             <Link href="/contact" className="btn-primary large">
               Request a Quote
             </Link>
-            <a href="tel:+3232970980" className="btn-secondary large">
-              Call Us: +32 3 297 09 80
+            <a href="tel:+3232846818" className="btn-secondary large">
+              Call Us: +32 3 284 68 18
             </a>
           </div>
           <p className="cta-note">
