@@ -78,88 +78,57 @@ This lead was automatically generated from the Re-Sound website.
 
     let emailSent = false;
 
-    // Option 1: Microsoft Power Automate Webhook (Primary)
+    // Send via Power Automate Webhook
     if (process.env.POWER_AUTOMATE_WEBHOOK_URL) {
       try {
+        console.log('Sending to Power Automate...');
+        
         const response = await fetch(process.env.POWER_AUTOMATE_WEBHOOK_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+          },
           body: JSON.stringify({
-            to: process.env.LEADS_EMAIL || 'leads@stretchgroup.be',
+            // Email fields for Power Automate
+            to: 'leads@stretchgroup.be',
             subject: emailSubject,
             body: emailBody,
-            // Also send structured data for Power Automate
-            leadData: {
-              firstName,
-              lastName,
-              email,
-              phone,
-              companyName,
-              position: formatLabel(position),
-              companyType: formatLabel(companyType),
-              downloadedFile,
-              source,
-              timestamp: new Date().toISOString(),
-            }
+            
+            // Structured data for Power Automate dynamic content
+            firstName,
+            lastName,
+            email,
+            phone,
+            companyName,
+            position: formatLabel(position),
+            companyType: formatLabel(companyType),
+            downloadedFile: downloadedFile || 'N/A',
+            source: source || 'Website Download',
+            timestamp: new Date().toISOString(),
           }),
         });
+
         emailSent = response.ok;
+        
         if (!response.ok) {
-          console.error('Power Automate webhook failed:', await response.text());
+          const errorText = await response.text();
+          console.error('Power Automate webhook failed:', response.status, errorText);
+        } else {
+          console.log('Power Automate webhook succeeded');
         }
       } catch (error) {
         console.error('Power Automate error:', error);
       }
+    } else {
+      console.warn('POWER_AUTOMATE_WEBHOOK_URL not configured');
     }
 
-    // Option 2: Resend (Fallback)
-    else if (process.env.RESEND_API_KEY) {
-      try {
-        const response = await fetch('https://api.resend.com/emails', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            from: 'Re-Sound Website <noreply@re-sound.be>',
-            to: [process.env.LEADS_EMAIL || 'leads@stretchgroup.be'],
-            subject: emailSubject,
-            text: emailBody,
-          }),
-        });
-        emailSent = response.ok;
-      } catch (error) {
-        console.error('Resend error:', error);
-      }
-    }
-
-    // Option 3: SendGrid (Fallback)
-    else if (process.env.SENDGRID_API_KEY) {
-      try {
-        const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${process.env.SENDGRID_API_KEY}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            personalizations: [{ to: [{ email: process.env.LEADS_EMAIL || 'leads@stretchgroup.be' }] }],
-            from: { email: 'noreply@re-sound.be', name: 'Re-Sound Website' },
-            subject: emailSubject,
-            content: [{ type: 'text/plain', value: emailBody }],
-          }),
-        });
-        emailSent = response.ok;
-      } catch (error) {
-        console.error('SendGrid error:', error);
-      }
-    }
-
-    // Always log the lead (useful for debugging and as backup)
+    // Always log the lead (useful for debugging)
     console.log('=== NEW LEAD ===');
-    console.log(emailBody);
-    console.log('Email sent:', emailSent);
+    console.log('Name:', firstName, lastName);
+    console.log('Company:', companyName);
+    console.log('Email:', email);
+    console.log('Email sent via Power Automate:', emailSent);
     console.log('================');
 
     return NextResponse.json({ 
