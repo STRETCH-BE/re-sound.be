@@ -2,10 +2,21 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Lead Generation Form Modal
+// Lead Form Data Interface
+interface LeadFormData {
+  companyName: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  position: string;
+  companyType: string;
+}
+
+// Lead Generation Form Modal - Using inline styles for proper rendering
 function LeadGenModal({ 
   isOpen, 
   onClose, 
@@ -28,6 +39,44 @@ function LeadGenModal({
     position: '',
     companyType: '',
   });
+  const [consentChecked, setConsentChecked] = useState(false);
+
+  // Reset form when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setFormData({
+        companyName: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        position: '',
+        companyType: '',
+      });
+      setConsentChecked(false);
+    }
+  }, [isOpen]);
+
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  // Handle escape key
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) onClose();
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [isOpen, onClose]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -35,144 +84,388 @@ function LeadGenModal({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(formData);
+    if (consentChecked) {
+      onSubmit(formData);
+    }
   };
 
   if (!isOpen) return null;
 
+  // Extract filename for display
+  const displayName = downloadFile?.split('/').pop()?.replace('.pdf', '').replace(/-/g, ' ') || 'Document';
+
+  // Inline styles for proper modal overlay
+  const overlayStyle: React.CSSProperties = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(10, 22, 40, 0.85)',
+    backdropFilter: 'blur(8px)',
+    WebkitBackdropFilter: 'blur(8px)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '1rem',
+    zIndex: 99999,
+  };
+
+  const modalStyle: React.CSSProperties = {
+    backgroundColor: '#ffffff',
+    borderRadius: '20px',
+    maxWidth: '540px',
+    width: '100%',
+    maxHeight: '90vh',
+    overflow: 'hidden',
+    position: 'relative',
+    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
+  };
+
+  const headerStyle: React.CSSProperties = {
+    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
+    padding: '2rem 2.5rem',
+    position: 'relative',
+    overflow: 'hidden',
+  };
+
+  const closeButtonStyle: React.CSSProperties = {
+    position: 'absolute',
+    top: '1rem',
+    right: '1rem',
+    width: '36px',
+    height: '36px',
+    background: 'rgba(255, 255, 255, 0.15)',
+    border: 'none',
+    borderRadius: '50%',
+    color: 'white',
+    fontSize: '1.25rem',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 10,
+  };
+
+  const bodyStyle: React.CSSProperties = {
+    padding: '2rem 2.5rem 2.5rem',
+    overflowY: 'auto',
+    maxHeight: 'calc(90vh - 180px)',
+  };
+
+  const inputStyle: React.CSSProperties = {
+    width: '100%',
+    padding: '0.9rem 1rem',
+    border: '2px solid #e8ecf0',
+    borderRadius: '10px',
+    fontSize: '0.95rem',
+    background: '#fafbfc',
+    boxSizing: 'border-box',
+  };
+
+  const labelStyle: React.CSSProperties = {
+    fontSize: '0.85rem',
+    fontWeight: 600,
+    color: '#0a1628',
+    display: 'block',
+    marginBottom: '0.4rem',
+  };
+
+  const submitButtonStyle: React.CSSProperties = {
+    width: '100%',
+    padding: '1rem 2rem',
+    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
+    color: 'white',
+    border: 'none',
+    borderRadius: '12px',
+    fontSize: '1rem',
+    fontWeight: 600,
+    cursor: isSubmitting || !consentChecked ? 'not-allowed' : 'pointer',
+    opacity: isSubmitting || !consentChecked ? 0.7 : 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '0.5rem',
+    marginTop: '1.5rem',
+  };
+
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close" onClick={onClose}>×</button>
-        
-        <div className="modal-header">
-          <h3>Download Document</h3>
-          <p>Please fill in your details to access the download.</p>
+    <div style={overlayStyle} onClick={onClose}>
+      <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
+        {/* Header */}
+        <div style={headerStyle}>
+          {/* Decorative circle */}
+          <div style={{
+            position: 'absolute',
+            top: '-50%',
+            right: '-20%',
+            width: '200px',
+            height: '200px',
+            background: 'rgba(255, 255, 255, 0.08)',
+            borderRadius: '50%',
+          }} />
+          
+          <button style={closeButtonStyle} onClick={onClose}>✕</button>
+          
+          <div style={{
+            width: '52px',
+            height: '52px',
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '14px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginBottom: '1rem',
+            position: 'relative',
+            zIndex: 1,
+          }}>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </div>
+
+          <h3 style={{
+            fontSize: '1.5rem',
+            fontWeight: 700,
+            color: 'white',
+            margin: '0 0 0.5rem',
+            position: 'relative',
+            zIndex: 1,
+          }}>
+            Download Technical Documentation
+          </h3>
+
+          <p style={{
+            fontSize: '0.95rem',
+            color: 'rgba(255, 255, 255, 0.85)',
+            margin: 0,
+            position: 'relative',
+            zIndex: 1,
+          }}>
+            Fill in your details to access our product specifications
+          </p>
+
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.35rem',
+            background: 'rgba(255, 255, 255, 0.2)',
+            padding: '0.35rem 0.75rem',
+            borderRadius: '20px',
+            fontSize: '0.8rem',
+            color: 'white',
+            marginTop: '0.75rem',
+            position: 'relative',
+            zIndex: 1,
+            textTransform: 'capitalize',
+          }}>
+            📄 {displayName}
+          </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="lead-form">
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="firstName">First Name *</label>
+        {/* Body */}
+        <div style={bodyStyle}>
+          <form onSubmit={handleSubmit}>
+            {/* Company Name */}
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={labelStyle}>
+                Company Name <span style={{ color: '#e53935' }}>*</span>
+              </label>
               <input
                 type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
+                name="companyName"
+                value={formData.companyName}
                 onChange={handleChange}
+                placeholder="Enter your company name"
                 required
+                style={inputStyle}
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="lastName">Last Name *</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
+
+            {/* Name Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+              <div>
+                <label style={labelStyle}>
+                  First Name <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="First name"
+                  required
+                  style={inputStyle}
+                />
+              </div>
+              <div>
+                <label style={labelStyle}>
+                  Last Name <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Last name"
+                  required
+                  style={inputStyle}
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="form-group">
-            <label htmlFor="email">Email Address *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="phone">Phone Number *</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="companyName">Company Name *</label>
-            <input
-              type="text"
-              id="companyName"
-              name="companyName"
-              value={formData.companyName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="position">Position / Role *</label>
-              <input
-                type="text"
-                id="position"
-                name="position"
-                value={formData.position}
-                onChange={handleChange}
-                required
-                placeholder="e.g. Architect, Designer, Manager"
-              />
+            {/* Contact Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+              <div>
+                <label style={labelStyle}>
+                  Email Address <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="your@email.com"
+                  required
+                  style={inputStyle}
+                />
+              </div>
+              <div>
+                <label style={labelStyle}>
+                  Phone Number <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="+32 XXX XX XX XX"
+                  required
+                  style={inputStyle}
+                />
+              </div>
             </div>
-            <div className="form-group">
-              <label htmlFor="companyType">Type of Company *</label>
-              <select
-                id="companyType"
-                name="companyType"
-                value={formData.companyType}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Select...</option>
-                <option value="architecture">Architecture Firm</option>
-                <option value="interior-design">Interior Design</option>
-                <option value="construction">Construction Company</option>
-                <option value="real-estate">Real Estate / Property</option>
-                <option value="corporate">Corporate / Office</option>
-                <option value="hospitality">Hospitality / Hotels</option>
-                <option value="education">Education / Schools</option>
-                <option value="healthcare">Healthcare</option>
-                <option value="retail">Retail</option>
-                <option value="other">Other</option>
-              </select>
+
+            {/* Role Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+              <div>
+                <label style={labelStyle}>
+                  Position / Role <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <select
+                  name="position"
+                  value={formData.position}
+                  onChange={handleChange}
+                  required
+                  style={{ ...inputStyle, cursor: 'pointer' }}
+                >
+                  <option value="">Select...</option>
+                  <option value="owner">Owner / CEO</option>
+                  <option value="director">Director / Manager</option>
+                  <option value="architect">Architect</option>
+                  <option value="designer">Designer</option>
+                  <option value="engineer">Engineer</option>
+                  <option value="project-manager">Project Manager</option>
+                  <option value="procurement">Procurement / Purchasing</option>
+                  <option value="consultant">Consultant</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label style={labelStyle}>
+                  Type of Company <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <select
+                  name="companyType"
+                  value={formData.companyType}
+                  onChange={handleChange}
+                  required
+                  style={{ ...inputStyle, cursor: 'pointer' }}
+                >
+                  <option value="">Select...</option>
+                  <option value="architecture">Architecture Firm</option>
+                  <option value="interior-design">Interior Design</option>
+                  <option value="construction">Construction Company</option>
+                  <option value="acoustic-consultant">Acoustic Consultant</option>
+                  <option value="real-estate">Real Estate / Property</option>
+                  <option value="corporate">Corporate / Office</option>
+                  <option value="hospitality">Hospitality / Hotels</option>
+                  <option value="education">Education / Schools</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="retail">Retail</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-          <div className="form-consent">
-            <label>
-              <input type="checkbox" required />
-              <span>I agree to receive communications from Re-Sound and accept the privacy policy.</span>
-            </label>
-          </div>
+            {/* Consent */}
+            <div style={{ marginTop: '1rem', marginBottom: '0.5rem' }}>
+              <label style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '0.75rem',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                color: '#4b5563',
+                lineHeight: 1.5,
+              }}>
+                <input
+                  type="checkbox"
+                  checked={consentChecked}
+                  onChange={(e) => setConsentChecked(e.target.checked)}
+                  required
+                  style={{
+                    width: '20px',
+                    height: '20px',
+                    marginTop: '2px',
+                    accentColor: '#197FC7',
+                    cursor: 'pointer',
+                  }}
+                />
+                <span>
+                  I agree to receive communications from Re-Sound and accept the privacy policy.
+                </span>
+              </label>
+            </div>
 
-          <button type="submit" className="submit-btn" disabled={isSubmitting}>
-            {isSubmitting ? 'Processing...' : 'Download Now'}
-          </button>
-        </form>
+            {/* Submit */}
+            <button type="submit" disabled={isSubmitting || !consentChecked} style={submitButtonStyle}>
+              {isSubmitting ? (
+                <>
+                  <span style={{
+                    width: '20px',
+                    height: '20px',
+                    border: '2px solid rgba(255, 255, 255, 0.3)',
+                    borderTopColor: 'white',
+                    borderRadius: '50%',
+                    animation: 'spin 0.8s linear infinite',
+                  }} />
+                  Processing...
+                </>
+              ) : (
+                <>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Download Now
+                </>
+              )}
+            </button>
+          </form>
+        </div>
+
+        <style>{`
+          @keyframes spin {
+            to { transform: rotate(360deg); }
+          }
+        `}</style>
       </div>
     </div>
   );
-}
-
-interface LeadFormData {
-  companyName: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  position: string;
-  companyType: string;
 }
 
 export default function InteriorProductPage() {
@@ -205,7 +498,7 @@ export default function InteriorProductPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
-          downloadedFile: selectedDownload,
+          downloadedFile: selectedDownload.split('/').pop(),
           source: 'Interior Product Page',
         }),
       });
@@ -925,37 +1218,6 @@ export default function InteriorProductPage() {
           max-width: none;
         }
 
-        .image-placeholder {
-          background: var(--brand-blue-pale);
-          border-radius: 24px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          aspect-ratio: 4/3;
-          width: 100%;
-          max-width: 600px;
-        }
-
-        .image-placeholder span {
-          font-size: 5rem;
-        }
-
-        .image-placeholder p {
-          color: var(--brand-blue);
-          font-weight: 500;
-          margin-top: 1rem;
-        }
-
-        .image-placeholder.large {
-          aspect-ratio: 4/3;
-          width: 100%;
-        }
-
-        .image-placeholder.gallery {
-          aspect-ratio: 1;
-        }
-
         /* Sticky Navigation */
         .product-nav {
           position: sticky;
@@ -1376,15 +1638,6 @@ export default function InteriorProductPage() {
           overflow: hidden;
         }
 
-        .gallery-item .image-placeholder {
-          background: rgba(255, 255, 255, 0.1);
-          aspect-ratio: 1;
-        }
-
-        .gallery-item .image-placeholder span {
-          font-size: 3rem;
-        }
-
         /* Downloads Section */
         .downloads-header {
           text-align: center;
@@ -1413,6 +1666,9 @@ export default function InteriorProductPage() {
           border-radius: 12px;
           text-decoration: none;
           transition: all 0.3s ease;
+          border: none;
+          cursor: pointer;
+          text-align: left;
         }
 
         .download-card:hover {
@@ -1493,156 +1749,6 @@ export default function InteriorProductPage() {
         .cta-note {
           font-size: 0.9rem;
           color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Modal Styles */
-        .modal-overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.7);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 1000;
-          padding: 1rem;
-        }
-
-        .modal-content {
-          background: white;
-          border-radius: 24px;
-          padding: 2.5rem;
-          max-width: 550px;
-          width: 100%;
-          max-height: 90vh;
-          overflow-y: auto;
-          position: relative;
-        }
-
-        .modal-close {
-          position: absolute;
-          top: 1rem;
-          right: 1.5rem;
-          background: none;
-          border: none;
-          font-size: 2rem;
-          cursor: pointer;
-          color: #999;
-          line-height: 1;
-        }
-
-        .modal-close:hover {
-          color: #333;
-        }
-
-        .modal-header {
-          text-align: center;
-          margin-bottom: 2rem;
-        }
-
-        .modal-header h3 {
-          font-size: 1.75rem;
-          color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-        }
-
-        .modal-header p {
-          color: #666;
-          font-size: 1rem;
-        }
-
-        .lead-form {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-
-        .form-row {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-        }
-
-        .form-group {
-          display: flex;
-          flex-direction: column;
-          gap: 0.4rem;
-        }
-
-        .form-group label {
-          font-size: 0.85rem;
-          font-weight: 600;
-          color: var(--deep-blue);
-        }
-
-        .form-group input,
-        .form-group select {
-          padding: 0.85rem 1rem;
-          border: 2px solid #e0e0e0;
-          border-radius: 10px;
-          font-size: 1rem;
-          transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-          outline: none;
-          border-color: var(--brand-blue);
-        }
-
-        .form-group input::placeholder {
-          color: #aaa;
-        }
-
-        .form-consent {
-          margin-top: 0.5rem;
-        }
-
-        .form-consent label {
-          display: flex;
-          align-items: flex-start;
-          gap: 0.75rem;
-          font-size: 0.85rem;
-          color: #666;
-          cursor: pointer;
-        }
-
-        .form-consent input[type="checkbox"] {
-          margin-top: 0.2rem;
-          width: 18px;
-          height: 18px;
-          cursor: pointer;
-        }
-
-        .submit-btn {
-          margin-top: 1rem;
-          padding: 1.1rem 2rem;
-          background: var(--brand-blue);
-          color: white;
-          border: none;
-          border-radius: 50px;
-          font-size: 1.1rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.3s ease;
-        }
-
-        .submit-btn:hover:not(:disabled) {
-          background: var(--brand-blue-dark);
-          transform: translateY(-2px);
-        }
-
-        .submit-btn:disabled {
-          background: #ccc;
-          cursor: not-allowed;
-        }
-
-        /* Download card as button */
-        button.download-card {
-          text-align: left;
-          cursor: pointer;
         }
 
         /* Responsive */
@@ -1735,21 +1841,6 @@ export default function InteriorProductPage() {
           .dimension-box {
             flex-direction: column;
             gap: 1rem;
-          }
-
-          /* Modal responsive */
-          .modal-content {
-            padding: 1.5rem;
-            margin: 1rem;
-            max-height: 85vh;
-          }
-
-          .modal-header h3 {
-            font-size: 1.5rem;
-          }
-
-          .form-row {
-            grid-template-columns: 1fr;
           }
         }
       `}</style>
