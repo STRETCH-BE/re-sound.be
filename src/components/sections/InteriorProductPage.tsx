@@ -592,8 +592,8 @@ export default function InteriorProductPage() {
               <span className="usp-text">100% Recyclable</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🇧🇪</span>
-              <span className="usp-text">Made in Belgium</span>
+              <span className="usp-icon">🇪🇺</span>
+              <span className="usp-text">Made in Europe</span>
             </div>
           </div>
 
@@ -881,7 +881,7 @@ export default function InteriorProductPage() {
                 </tr>
                 <tr>
                   <td>Thickness</td>
-                  <td>50 mm</td>
+                  <td>45 mm</td>
                 </tr>
                 <tr>
                   <td>Weight</td>
@@ -917,15 +917,15 @@ export default function InteriorProductPage() {
               <tbody>
                 <tr>
                   <td>Core</td>
-                  <td>Recycled textile fibers</td>
+                  <td>Perforated cardboard</td>
                 </tr>
                 <tr>
-                  <td>Binder</td>
-                  <td>Bio-based adhesive</td>
+                  <td>Absorber</td>
+                  <td>Hemp Felt</td>
                 </tr>
                 <tr>
                   <td>Cover</td>
-                  <td>Recycled polyester fabric</td>
+                  <td>Recycled jeans fabric</td>
                 </tr>
               </tbody>
             </table>
