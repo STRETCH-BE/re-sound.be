@@ -9,15 +9,15 @@ export default function ProductsSection() {
   const products = [
     { 
       slug: 'interior', 
-      image: '/images/products/interior/card.webp',
+      image: '/images/products/interior/interior_card.webp',
     },
     { 
       slug: 'solid', 
-      image: '/images/products/solid/card.webp',
+      image: '/images/products/solid/solid_card.webp',
     },
     { 
       slug: 'divide', 
-      image: '/images/products/divide/card.webp',
+      image: '/images/products/divide/divide_card.webp',
     },
   ];
 
