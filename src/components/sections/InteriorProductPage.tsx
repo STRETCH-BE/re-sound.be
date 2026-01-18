@@ -16,6 +16,16 @@ interface LeadFormData {
   companyType: string;
 }
 
+// Color options for the product
+const colorOptions = [
+  { id: 'denim', name: 'Denim', swatch: '/images/products/interior/swatches/denim.webp', image: '/images/products/interior/hero-denim.webp', isDark: true },
+  { id: 'antracite', name: 'Antracite', swatch: '/images/products/interior/swatches/antracite.webp', image: '/images/products/interior/hero-antracite.webp', isDark: true },
+  { id: 'silver', name: 'Silver', swatch: '/images/products/interior/swatches/silver.webp', image: '/images/products/interior/hero-silver.webp', isDark: false },
+  { id: 'sky', name: 'Sky', swatch: '/images/products/interior/swatches/sky.webp', image: '/images/products/interior/hero-sky.webp', isDark: false },
+  { id: 'mint', name: 'Mint', swatch: '/images/products/interior/swatches/mint.webp', image: '/images/products/interior/hero-mint.webp', isDark: false },
+  { id: 'taupe', name: 'Taupe', swatch: '/images/products/interior/swatches/taupe.webp', image: '/images/products/interior/hero-taupe.webp', isDark: false },
+];
+
 // Lead Generation Form Modal - Using inline styles for proper rendering
 function LeadGenModal({ 
   isOpen, 
@@ -491,6 +501,8 @@ export default function InteriorProductPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedColor, setSelectedColor] = useState(colorOptions[0]);
+  const [isImageLoading, setIsImageLoading] = useState(false);
 
   const downloads = [
     { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/interior/product-data-sheet.pdf' },
@@ -504,6 +516,13 @@ export default function InteriorProductPage() {
   const handleDownloadClick = (fileUrl: string) => {
     setSelectedDownload(fileUrl);
     setIsModalOpen(true);
+  };
+
+  const handleColorSelect = (color: typeof colorOptions[0]) => {
+    if (color.id !== selectedColor.id) {
+      setIsImageLoading(true);
+      setSelectedColor(color);
+    }
   };
 
   const handleLeadSubmit = async (data: LeadFormData) => {
@@ -611,13 +630,46 @@ export default function InteriorProductPage() {
         
         <div className="hero-image">
           <div className="image-container">
-            <Image
-              src="/images/products/interior/hero.jpg"
-              alt="Re-Sound Interior acoustic wall panels"
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
+            <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
+              <Image
+                src={selectedColor.image}
+                alt={`Re-Sound Interior acoustic wall panels in ${selectedColor.name}`}
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+                onLoad={() => setIsImageLoading(false)}
+              />
+            </div>
+            {isImageLoading && (
+              <div className="image-loading-overlay">
+                <div className="loading-spinner"></div>
+              </div>
+            )}
+          </div>
+          
+          {/* Color Selector */}
+          <div className="color-selector">
+            <span className="color-selector-label">Select Color</span>
+            <div className="color-options">
+              {colorOptions.map((color) => (
+                <button
+                  key={color.id}
+                  className={`color-option ${selectedColor.id === color.id ? 'active' : ''}`}
+                  onClick={() => handleColorSelect(color)}
+                  title={color.name}
+                  aria-label={`Select ${color.name} color`}
+                >
+                  <span 
+                    className="color-swatch" 
+                    style={{ backgroundImage: `url(${color.swatch})` }}
+                  />
+                  {selectedColor.id === color.id && (
+                    <span className={`color-check ${color.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
+                  )}
+                </button>
+              ))}
+            </div>
+            <span className="selected-color-name">{selectedColor.name}</span>
           </div>
         </div>
       </section>
@@ -1212,8 +1264,10 @@ export default function InteriorProductPage() {
 
         .hero-image {
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
+          gap: 1.5rem;
         }
 
         .image-container {
@@ -1224,6 +1278,120 @@ export default function InteriorProductPage() {
           border-radius: 24px;
           overflow: hidden;
           background: var(--brand-blue-pale);
+        }
+
+        .image-wrapper {
+          position: absolute;
+          inset: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .image-wrapper.loading {
+          opacity: 0.7;
+        }
+
+        .image-loading-overlay {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        .loading-spinner {
+          width: 40px;
+          height: 40px;
+          border: 3px solid var(--brand-blue-pale);
+          border-top-color: var(--brand-blue);
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+
+        /* Color Selector */
+        .color-selector {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 1.25rem 2rem;
+          background: white;
+          border-radius: 16px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .color-selector-label {
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: #888;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .color-options {
+          display: flex;
+          gap: 0.75rem;
+        }
+
+        .color-option {
+          position: relative;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 3px solid transparent;
+          background: none;
+          padding: 0;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .color-option:hover {
+          transform: scale(1.1);
+        }
+
+        .color-option.active {
+          border-color: var(--brand-blue);
+          box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue);
+        }
+
+        .color-swatch {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .color-check {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+
+        .color-check.on-dark {
+          color: white;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .color-check.on-light {
+          color: var(--deep-blue);
+          text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        .selected-color-name {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--deep-blue);
         }
 
         .image-container.gallery {
@@ -1858,6 +2026,15 @@ export default function InteriorProductPage() {
           .dimension-box {
             flex-direction: column;
             gap: 1rem;
+          }
+
+          .color-options {
+            gap: 0.5rem;
+          }
+
+          .color-option {
+            width: 38px;
+            height: 38px;
           }
         }
       `}</style>
