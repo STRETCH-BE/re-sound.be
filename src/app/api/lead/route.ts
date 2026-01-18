@@ -24,28 +24,53 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Format position and company type for readability
+    const formatLabel = (value: string): string => {
+      const labels: Record<string, string> = {
+        // Positions
+        'owner': 'Owner / CEO',
+        'director': 'Director / Manager',
+        'architect': 'Architect',
+        'designer': 'Designer',
+        'engineer': 'Engineer',
+        'project-manager': 'Project Manager',
+        'procurement': 'Procurement / Purchasing',
+        'consultant': 'Consultant',
+        // Company Types
+        'interior-designer': 'Interior Designer',
+        'contractor': 'General Contractor',
+        'acoustic-consultant': 'Acoustic Consultant',
+        'facility-manager': 'Facility Manager',
+        'real-estate': 'Real Estate Developer',
+        'manufacturer': 'Manufacturer / Distributor',
+        'corporate': 'Corporate / End User',
+        'other': 'Other',
+      };
+      return labels[value] || value;
+    };
+
     // Create email content
-    const emailSubject = `New Lead: ${firstName} ${lastName} from ${companyName}`;
+    const emailSubject = `🎯 New Lead: ${firstName} ${lastName} from ${companyName}`;
     
     const emailBody = `
-New Lead from Re-Sound Website
+NEW LEAD FROM RE-SOUND WEBSITE
 ================================
 
-Source: ${source || 'Website'}
+Source: ${source || 'Website Download'}
 Downloaded File: ${downloadedFile || 'N/A'}
 Date: ${new Date().toLocaleString('en-BE', { timeZone: 'Europe/Brussels' })}
 
-Contact Information
+CONTACT INFORMATION
 -------------------
 Name: ${firstName} ${lastName}
 Email: ${email}
 Phone: ${phone}
 
-Company Information
+COMPANY INFORMATION
 -------------------
 Company: ${companyName}
-Position: ${position}
-Company Type: ${companyType}
+Position: ${formatLabel(position)}
+Company Type: ${formatLabel(companyType)}
 
 ---
 This lead was automatically generated from the Re-Sound website.
@@ -53,7 +78,7 @@ This lead was automatically generated from the Re-Sound website.
 
     let emailSent = false;
 
-    // Option 1: Microsoft Power Automate Webhook (Recommended for Microsoft 365)
+    // Option 1: Microsoft Power Automate Webhook (Primary)
     if (process.env.POWER_AUTOMATE_WEBHOOK_URL) {
       try {
         const response = await fetch(process.env.POWER_AUTOMATE_WEBHOOK_URL, {
@@ -70,8 +95,8 @@ This lead was automatically generated from the Re-Sound website.
               email,
               phone,
               companyName,
-              position,
-              companyType,
+              position: formatLabel(position),
+              companyType: formatLabel(companyType),
               downloadedFile,
               source,
               timestamp: new Date().toISOString(),
@@ -87,7 +112,7 @@ This lead was automatically generated from the Re-Sound website.
       }
     }
 
-    // Option 2: Resend
+    // Option 2: Resend (Fallback)
     else if (process.env.RESEND_API_KEY) {
       try {
         const response = await fetch('https://api.resend.com/emails', {
@@ -108,8 +133,8 @@ This lead was automatically generated from the Re-Sound website.
         console.error('Resend error:', error);
       }
     }
-    
-    // Option 3: SendGrid
+
+    // Option 3: SendGrid (Fallback)
     else if (process.env.SENDGRID_API_KEY) {
       try {
         const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
@@ -131,7 +156,7 @@ This lead was automatically generated from the Re-Sound website.
       }
     }
 
-    // Fallback: Log the lead
+    // Always log the lead (useful for debugging and as backup)
     console.log('=== NEW LEAD ===');
     console.log(emailBody);
     console.log('Email sent:', emailSent);
