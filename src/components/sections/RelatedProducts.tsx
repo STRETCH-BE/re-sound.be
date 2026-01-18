@@ -11,9 +11,9 @@ export default function RelatedProducts({ currentSlug }: RelatedProductsProps) {
   const t = useTranslations('products');
 
   const allProducts = [
-    { slug: 'interior', image: '/images/products/interior/card.webp' },
-    { slug: 'solid', image: '/images/products/solid/card.webp' },
-    { slug: 'divide', image: '/images/products/divide/card.webp' },
+    { slug: 'interior', image: '/images/products/interior/interior_card.webp' },
+    { slug: 'solid', image: '/images/products/solid/solid_card.webp' },
+    { slug: 'divide', image: '/images/products/divide/divide_card.webp' },
   ];
 
   const relatedProducts = allProducts.filter((p) => p.slug !== currentSlug);
