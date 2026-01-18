@@ -37,13 +37,16 @@ export async function POST(request: NextRequest) {
         'procurement': 'Procurement / Purchasing',
         'consultant': 'Consultant',
         // Company Types
-        'interior-designer': 'Interior Designer',
-        'contractor': 'General Contractor',
+        'architecture': 'Architecture Firm',
+        'interior-design': 'Interior Design',
+        'construction': 'Construction Company',
         'acoustic-consultant': 'Acoustic Consultant',
-        'facility-manager': 'Facility Manager',
-        'real-estate': 'Real Estate Developer',
-        'manufacturer': 'Manufacturer / Distributor',
-        'corporate': 'Corporate / End User',
+        'real-estate': 'Real Estate / Property',
+        'corporate': 'Corporate / Office',
+        'hospitality': 'Hospitality / Hotels',
+        'education': 'Education / Schools',
+        'healthcare': 'Healthcare',
+        'retail': 'Retail',
         'other': 'Other',
       };
       return labels[value] || value;
@@ -81,7 +84,7 @@ This lead was automatically generated from the Re-Sound website.
     // Send via Power Automate Webhook
     if (process.env.POWER_AUTOMATE_WEBHOOK_URL) {
       try {
-        console.log('Sending to Power Automate...');
+        console.log('Sending to Power Automate webhook...');
         
         const response = await fetch(process.env.POWER_AUTOMATE_WEBHOOK_URL, {
           method: 'POST',
@@ -90,7 +93,7 @@ This lead was automatically generated from the Re-Sound website.
           },
           body: JSON.stringify({
             // Email fields for Power Automate
-            to: 'leads@stretchgroup.be',
+            to: 'leads_be@stretchgroup.be',
             subject: emailSubject,
             body: emailBody,
             
@@ -114,13 +117,13 @@ This lead was automatically generated from the Re-Sound website.
           const errorText = await response.text();
           console.error('Power Automate webhook failed:', response.status, errorText);
         } else {
-          console.log('Power Automate webhook succeeded');
+          console.log('Power Automate webhook succeeded!');
         }
       } catch (error) {
         console.error('Power Automate error:', error);
       }
     } else {
-      console.warn('POWER_AUTOMATE_WEBHOOK_URL not configured');
+      console.warn('WARNING: POWER_AUTOMATE_WEBHOOK_URL environment variable not set!');
     }
 
     // Always log the lead (useful for debugging)
@@ -128,6 +131,7 @@ This lead was automatically generated from the Re-Sound website.
     console.log('Name:', firstName, lastName);
     console.log('Company:', companyName);
     console.log('Email:', email);
+    console.log('Phone:', phone);
     console.log('Email sent via Power Automate:', emailSent);
     console.log('================');
 
