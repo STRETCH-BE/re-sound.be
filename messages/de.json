@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "homeDescription": "Hochleistungs-Akustiklösungen aus recycelten Materialien. Wir verwandeln Abfall in Stille—für den Planeten entwickelt, in Belgien hergestellt.",
+    "productsTitle": "Produkte",
+    "productsDescription": "Entdecken Sie unsere Palette an zirkulären Akustikplatten: Interior, Solid und Divide. 100% recycelt, 100% recycelbar.",
+    "aboutTitle": "Über Re-Sound",
+    "aboutDescription": "Erfahren Sie mehr über unsere Mission, zirkuläre Akustiklösungen aus recycelten Materialien zu schaffen, stolz hergestellt in Belgien.",
+    "sustainabilityTitle": "Nachhaltigkeit",
+    "sustainabilityDescription": "Entdecken Sie, wie wir mit unseren vollständig zirkulären Akustikplatten den Kreislauf schließen—von recycelten Materialien bis hin zu kostenlosen Rücknahmeprogrammen.",
+    "contactTitle": "Kontakt",
+    "contactDescription": "Kontaktieren Sie Re-Sound für Angebote, Fragen oder Partnerschaftsanfragen.",
+    "blogTitle": "Blog",
+    "blogDescription": "Einblicke in Kreislaufwirtschaft, Akustik und nachhaltiges Design vom Re-Sound-Team."
+  },
+  "nav": {
+    "products": "Produkte",
+    "about": "Über uns",
+    "sustainability": "Nachhaltigkeit",
+    "contact": "Kontakt",
+    "cta": "Angebot Anfordern"
+  },
+  "hero": {
+    "badge": "100% Zirkuläre Akustik",
+    "title": "Akustik wird",
+    "titleHighlight": "zirkulär.",
+    "subtitle": "Hochleistungs-Akustiklösungen aus recycelten Materialien. Wir verwandeln Abfall in Stille—für den Planeten entwickelt, in Belgien hergestellt.",
+    "ctaPrimary": "Produkte Entdecken",
+    "ctaSecondary": "Wie Es Funktioniert",
+    "panelTag": "100% Recycelte Materialien"
+  },
+  "stats": {
+    "absorption": "Schallabsorption",
+    "colors": "Verfügbare Farben",
+    "waste": "Abfall auf Deponien",
+    "madeIn": "Hergestellt in Belgien"
+  },
+  "materials": {
+    "tag": "WAS WIR VERWENDEN",
+    "title": "Vom Abfall zum Wunder",
+    "subtitle": "Wir verwandeln verschiedene recycelte Materialien in Hochleistungs-Akustikplatten.",
+    "jeans": "Jeans",
+    "upholstery": "Polsterung",
+    "clothing": "Kleidung",
+    "textiles": "Textilien",
+    "industrial": "Industriell",
+    "bags": "Taschen",
+    "wool": "Wolle",
+    "mattresses": "Matratzen"
+  },
+  "products": {
+    "tag": "UNSERE PRODUKTE",
+    "title": "Akustiklösungen",
+    "learnMore": "Mehr erfahren",
+    "pageTitle": "Unsere Produkte",
+    "pageSubtitle": "Entdecken Sie unsere Palette an zirkulären Akustikplatten, die jeweils für spezifische Anwendungen entwickelt wurden und gleichzeitig unser Engagement für Nachhaltigkeit beibehalten.",
+    "requestQuote": "Angebot Anfordern",
+    "learnCircular": "Unser Kreislaufprozess",
+    "relatedTag": "WEITERE PRODUKTE",
+    "relatedTitle": "Verwandte Produkte",
+    "ctaTitle": "Bereit, Ihren Raum zu verwandeln?",
+    "ctaSubtitle": "Kontaktieren Sie uns für ein maßgeschneidertes Angebot für Ihre akustischen Anforderungen.",
+    "ctaPrimary": "Angebot Erhalten",
+    "interior": {
+      "title": "Interior",
+      "description": "Erweiterbare Akustikplatten für Wände und Decken. Perfekt für Büros, Restaurants und öffentliche Räume.",
+      "fullDescription": "Unsere Interior-Platten sind für die nahtlose Integration in jeden Raum konzipiert. Aus 100% recycelten Textilien hergestellt, bieten sie außergewöhnliche Schallabsorption und verleihen Ihrer Umgebung visuelle Wärme."
+    },
+    "solid": {
+      "title": "Solid",
+      "description": "Minimalistische, hochdichte Platten für maximale Akustikleistung. Ideal für anspruchsvolle Umgebungen.",
+      "fullDescription": "Solid-Platten kombinieren minimalistische Ästhetik mit maximaler Akustikleistung. Ihre hochdichte Konstruktion macht sie perfekt für Räume, die überlegene Schallkontrolle erfordern."
+    },
+    "divide": {
+      "title": "Divide",
+      "description": "Freistehende Akustiktrennwände für flexible Raumgestaltung. Mobil und modular.",
+      "fullDescription": "Divide bietet flexible Raumgestaltung mit freistehenden Akustikplatten. Perfekt für offene Büros, können sie einfach bewegt und umkonfiguriert werden, wenn sich Ihre Bedürfnisse ändern."
+    },
+    "highlights": {
+      "absorption": {
+        "title": "Schallabsorption",
+        "value": "Bis zu αw 1.00"
+      },
+      "recyclable": {
+        "title": "Recycelbar",
+        "value": "100% am Lebensende"
+      },
+      "origin": {
+        "title": "Herkunft",
+        "value": "Hergestellt in Belgien"
+      }
+    },
+    "features": {
+      "performance": {
+        "title": "Hohe Leistung",
+        "description": "Klasse-A-Schallabsorption für optimalen akustischen Komfort in jeder Umgebung."
+      },
+      "circular": {
+        "title": "Vollständig Zirkulär",
+        "description": "Aus recycelten Materialien hergestellt und am Lebensende 100% recycelbar."
+      },
+      "customization": {
+        "title": "Individuelle Optionen",
+        "description": "Verfügbar in 50+ Farben und individuellen Größen, passend zu Ihrer Designvision."
+      }
+    }
+  },
+  "specs": {
+    "tag": "SPEZIFIKATIONEN",
+    "title": "Technische Details",
+    "dimensions": "Abmessungen",
+    "thickness": "Dicke",
+    "weight": "Gewicht",
+    "height": "Höhe",
+    "absorption": "Absorptionskoeffizient",
+    "fireClass": "Brandklassifizierung",
+    "material": "Material",
+    "recycledTextiles": "100% Recycelte Textilien",
+    "certifications": "Zertifizierungen"
+  },
+  "why": {
+    "tag": "WARUM RE-SOUND",
+    "title": "Warum Zirkuläre Akustikplatten Wählen?",
+    "subtitle": "Wir glauben, dass großartige Akustik die Erde nicht kosten sollte. Unsere Platten beweisen, dass nachhaltige Entscheidungen überlegene Leistung liefern können.",
+    "diagramLabel": "Zirkulär",
+    "features": {
+      "performance": {
+        "title": "Überlegene Leistung",
+        "description": "Klasse-A-Absorptionsbewertung (αw 0.95-1.00) für optimalen akustischen Komfort."
+      },
+      "durability": {
+        "title": "Gebaut für die Ewigkeit",
+        "description": "Hochwertige Fertigung garantiert jahrzehntelange Leistung."
+      },
+      "circular": {
+        "title": "Wirklich Zirkulär",
+        "description": "Kostenloses Rücknahmeprogramm—wir recyceln Ihre Platten zu neuen."
+      },
+      "customization": {
+        "title": "Vollständig Anpassbar",
+        "description": "50+ Farben, individuelle Größen und verschiedene Montageoptionen."
+      }
+    }
+  },
+  "circular": {
+    "tag": "KREISLAUFWIRTSCHAFT",
+    "title": "Schließen Sie den",
+    "titleHighlight": "Kreislauf.",
+    "subtitle": "Unsere Platten beginnen ihr Leben als Abfall und können zurückkehren, um neue Platten zu werden—ein endloser Zyklus nachhaltiger Akustiklösungen.",
+    "loopLabel": "Endloser Zyklus",
+    "steps": {
+      "collect": {
+        "title": "Sammeln",
+        "description": "Wir sammeln recycelte Textilien aus verschiedenen Quellen."
+      },
+      "transform": {
+        "title": "Verwandeln",
+        "description": "Materialien werden zu Akustikplatten verarbeitet."
+      },
+      "install": {
+        "title": "Installieren",
+        "description": "Platten bringen akustischen Komfort in Ihren Raum."
+      },
+      "return": {
+        "title": "Zurückgeben",
+        "description": "Kostenlose Abholung und Recycling zu neuen Platten."
+      }
+    }
+  },
+  "cta": {
+    "title": "Bereit, Ihren Raum zu Verwandeln?",
+    "subtitle": "Kontaktieren Sie uns für ein maßgeschneidertes Angebot oder um mehr über unsere zirkulären Akustiklösungen zu erfahren.",
+    "primary": "Angebot Anfordern",
+    "secondary": "Produkte Ansehen"
+  },
+  "about": {
+    "tag": "ÜBER UNS",
+    "title": "Zirkuläre Akustik",
+    "subtitle": "Wir haben die Mission zu beweisen, dass nachhaltiges Geschäft gutes Geschäft ist.",
+    "story": {
+      "tag": "UNSERE GESCHICHTE",
+      "title": "Vom Abfall zum Wunder",
+      "paragraph1": "Re-Sound wurde aus einer einfachen Frage geboren: Was wäre, wenn wir die Berge von Textilabfällen in etwas Schönes und Nützliches verwandeln könnten?",
+      "paragraph2": "2021 in Belgien gegründet, machten wir uns daran, Akustikplatten zu schaffen, die genauso gut funktionieren wie traditionelle Produkte und dabei 100% zirkulär sind.",
+      "paragraph3": "Heute haben wir Tonnen von Textilien von Deponien abgelenkt und Akustiklösungen für Hunderte von Räumen in ganz Europa geschaffen.",
+      "imagePlaceholder": "Re-Sound Produktionsstätte",
+      "founded": "Gegründet in Beveren-Waas"
+    },
+    "values": {
+      "tag": "UNSERE WERTE",
+      "title": "Wofür Wir Stehen",
+      "circular": {
+        "title": "Zirkulär by Design",
+        "description": "Jede Entscheidung, die wir treffen, berücksichtigt den gesamten Lebenszyklus unserer Produkte."
+      },
+      "quality": {
+        "title": "Kompromisslose Qualität",
+        "description": "Nachhaltig bedeutet nicht Kompromisse—unsere Platten erfüllen die höchsten Standards."
+      },
+      "partnership": {
+        "title": "Echte Partnerschaft",
+        "description": "Wir arbeiten eng mit Kunden zusammen, um die perfekte Akustiklösung zu finden."
+      },
+      "innovation": {
+        "title": "Kontinuierliche Innovation",
+        "description": "Wir erkunden ständig neue Materialien und verbessern unsere Prozesse."
+      }
+    },
+    "team": {
+      "tag": "UNSER TEAM",
+      "title": "Lernen Sie das Team Kennen",
+      "subtitle": "Eine leidenschaftliche Gruppe, die sich nachhaltiger Akustik widmet.",
+      "roles": {
+        "founder": "Gründer & CEO",
+        "operations": "Betrieb",
+        "sales": "Vertrieb & Partnerschaften"
+      }
+    },
+    "partners": {
+      "tag": "PARTNER",
+      "title": "Zusammenarbeit",
+      "types": {
+        "supplier": "Materiallieferant",
+        "research": "Forschungspartner",
+        "distribution": "Vertrieb",
+        "certification": "Zertifizierung"
+      }
+    },
+    "belgian": {
+      "tag": "MADE IN BELGIUM",
+      "title": "Stolz Belgisch",
+      "description": "Alle unsere Platten werden in Belgien entworfen und hergestellt, was lokale Beschäftigung unterstützt und Transportemissionen reduziert.",
+      "madeIn": "Hergestellt in Belgien 🇧🇪",
+      "production": {
+        "title": "Lokale Produktion",
+        "description": "Fertigung in Beveren-Waas"
+      },
+      "social": {
+        "title": "Sozialunternehmen",
+        "description": "Partnerschaften mit sozialen Werkstätten"
+      },
+      "rd": {
+        "title": "Belgische F&E",
+        "description": "Kontinuierliche lokale Innovation"
+      }
+    }
+  },
+  "sustainability": {
+    "tag": "NACHHALTIGKEIT",
+    "title": "Wirklich Zirkuläre Akustik",
+    "subtitle": "Wir reduzieren nicht nur Abfall—wir eliminieren ihn durch einen vollständig zirkulären Ansatz.",
+    "intro": {
+      "title": "Die Kreislaufwirtschaft",
+      "description": "Traditionelle Akustikplatten landen auf Deponien. Unsere beginnen ein neues Leben. Unser zirkuläres Modell stellt sicher, dass Materialien kontinuierlich fließen und niemals zu Abfall werden.",
+      "endless": "Endloser Zyklus"
+    },
+    "process": {
+      "tag": "DER PROZESS",
+      "title": "Wie Wir den Kreislauf Schließen",
+      "collect": {
+        "title": "Materialien Sammeln",
+        "description": "Wir beschaffen Post-Consumer- und Post-Industrie-Textilabfälle von Partnern in ganz Europa."
+      },
+      "process": {
+        "title": "Verarbeiten & Verwandeln",
+        "description": "Materialien werden sortiert, gereinigt und zu akustischer Faser verarbeitet."
+      },
+      "create": {
+        "title": "Platten Erstellen",
+        "description": "Fasern werden gebunden und zu schönen, leistungsstarken Akustikplatten verarbeitet."
+      },
+      "return": {
+        "title": "Zurückgeben & Recyceln",
+        "description": "Am Lebensende holen wir Platten kostenlos ab und recyceln sie zu neuen Produkten."
+      }
+    },
+    "materials": {
+      "tag": "MATERIALIEN",
+      "title": "Was Wir Verwandeln",
+      "subtitle": "Von weggeworfenen Textilien zu Premium-Akustiklösungen."
+    },
+    "impact": {
+      "tag": "UNSERE WIRKUNG",
+      "title": "Einen Unterschied Machen",
+      "textilesSaved": "Textilien vor Deponien gerettet",
+      "panelsProduced": "Produzierte Platten",
+      "wasteToLandfill": "Abfall auf Deponien",
+      "returnRate": "Teilnahme am Rücknahmeprogramm",
+      "units": {
+        "tons": "Tonnen"
+      }
+    },
+    "return": {
+      "tag": "RÜCKNAHMEPROGRAMM",
+      "title": "Kostenlose Plattenrückgabe",
+      "description": "Wenn Ihre Platten das Lebensende erreichen—ob durch Renovierung oder Verschleiß—holen wir sie kostenlos ab und recyceln sie zu neuen Platten. Akustiklösungen ohne schlechtes Gewissen.",
+      "benefit1": "Kostenlose Abholung in Belgien & den Niederlanden",
+      "benefit2": "Platten zu neuen Produkten recycelt",
+      "benefit3": "Zertifikat über zirkuläre Entsorgung",
+      "boxText": "Kostenlose Rückgabeabholung"
+    }
+  },
+  "contact": {
+    "tag": "KONTAKTIEREN SIE UNS",
+    "title": "Kontaktieren Sie Uns",
+    "subtitle": "Haben Sie Fragen zu unseren Produkten oder möchten ein individuelles Angebot? Wir freuen uns, von Ihnen zu hören.",
+    "form": {
+      "title": "Senden Sie Uns eine Nachricht",
+      "subtitle": "Füllen Sie das untenstehende Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre@email.de",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmensname",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 ...",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Wählen Sie einen Betreff",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt oder Ihrer Frage...",
+      "submit": "Nachricht Senden",
+      "sending": "Wird gesendet...",
+      "successMessage": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+      "subjects": {
+        "quote": "Angebot Anfordern",
+        "info": "Produktinformation",
+        "partnership": "Partnerschaftsanfrage",
+        "other": "Sonstiges"
+      }
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "hours": "Geschäftszeiten",
+      "hoursValue": "Montag - Freitag: 9:00 - 17:00"
+    },
+    "faq": {
+      "title": "Häufig Gestellte Fragen",
+      "subtitle": "Schnelle Antworten auf häufige Fragen.",
+      "q1": {
+        "question": "Wie lang ist Ihre Lieferzeit?",
+        "answer": "Standardbestellungen werden innerhalb von 2-3 Wochen versandt. Individuelle Farben und Größen können 4-6 Wochen dauern."
+      },
+      "q2": {
+        "question": "Liefern Sie international?",
+        "answer": "Ja! Wir liefern in ganz Europa. Kontaktieren Sie uns für Versandangebote außerhalb der EU."
+      },
+      "q3": {
+        "question": "Kann ich Muster bekommen?",
+        "answer": "Absolut. Wir bieten kostenlose Musterkits mit Materialproben und Farboptionen an."
+      }
+    }
+  },
+  "blog": {
+    "tag": "EINBLICKE",
+    "title": "Blog & Neuigkeiten",
+    "subtitle": "Gedanken zu Akustik, Nachhaltigkeit und Design von unserem Team.",
+    "readMore": "Artikel lesen",
+    "loadMore": "Mehr Artikel Laden",
+    "share": "Artikel teilen",
+    "relatedTag": "VERWANDT",
+    "relatedTitle": "Verwandte Artikel",
+    "filters": {
+      "all": "Alle",
+      "sustainability": "Nachhaltigkeit",
+      "products": "Produkte",
+      "education": "Bildung",
+      "company": "Unternehmen"
+    },
+    "categories": {
+      "sustainability": "Nachhaltigkeit",
+      "products": "Produkte",
+      "materials": "Materialien",
+      "education": "Bildung",
+      "company": "Unternehmen",
+      "design": "Design"
+    }
+  },
+  "blogPosts": {
+    "circular-economy-acoustics": {
+      "title": "Die Kreislaufwirtschaft: Eine Neue Ära für Akustiklösungen",
+      "excerpt": "Wie zirkuläre Designprinzipien die Akustikplattenindustrie transformieren und warum es für die Zukunft wichtig ist.",
+      "category": "sustainability",
+      "date": "2024-01-15",
+      "readTime": "5",
+      "content": {
+        "intro": "Die Akustikplattenindustrie durchläuft eine fundamentale Transformation. Traditionelle lineare Modelle—nehmen, herstellen, entsorgen—weichen zirkulären Ansätzen, die Materialien unbegrenzt in Gebrauch halten.",
+        "section1": {
+          "title": "Warum Zirkularität Wichtig Ist",
+          "text": "Jedes Jahr landen Millionen Tonnen Akustikmaterialien auf Deponien. Diese Materialien, oft mit synthetischen Fasern und Klebstoffen, können Jahrhunderte brauchen, um sich zu zersetzen. Die Kreislaufwirtschaft bietet eine Alternative: Produkte zu entwerfen, die kontinuierlich recycelt werden können."
+        },
+        "section2": {
+          "title": "Unser Ansatz",
+          "text": "Bei Re-Sound haben wir unsere Platten von Grund auf für Zirkularität entwickelt. Durch die Verwendung von nur recycelten Textilien und biobasierten Bindemitteln können unsere Platten am Lebensende vollständig recycelt werden—sie werden zu neuen Platten statt zu Abfall."
+        },
+        "quote": "Die beste Akustikplatte ist eine, die niemals zu Abfall wird.",
+        "section3": {
+          "title": "Der Business Case",
+          "text": "Zirkuläres Design ist nicht nur gut für die Umwelt—es ist gutes Geschäft. Indem wir Wert aus Abfall schaffen und Rücknahmeprogramme anbieten, bauen wir stärkere Kundenbeziehungen auf und reduzieren gleichzeitig Materialkosten."
+        },
+        "conclusion": {
+          "title": "Ein Blick in die Zukunft",
+          "text": "Der Übergang zu zirkulärer Akustik hat gerade erst begonnen. Wenn mehr Unternehmen diese Prinzipien übernehmen, werden wir eine transformierte Industrie sehen—eine, in der akustischer Komfort und Umweltverantwortung Hand in Hand gehen."
+        }
+      }
+    },
+    "office-acoustic-solutions": {
+      "title": "Die Perfekte Akustische Umgebung in Modernen Büros Schaffen",
+      "excerpt": "Praktische Tipps zur Verbesserung der Akustik in Großraumbüros, Besprechungsräumen und kollaborativen Räumen.",
+      "category": "products",
+      "date": "2024-01-10",
+      "readTime": "4",
+      "content": {
+        "intro": "Großraumbüros stellen einzigartige akustische Herausforderungen dar. Ohne richtige Behandlung können Lärmpegel die Produktivität um bis zu 66% reduzieren. Hier erfahren Sie, wie Sie eine ausgewogene akustische Umgebung schaffen.",
+        "section1": {
+          "title": "Büroakustik Verstehen",
+          "text": "Schall in Büros kommt aus mehreren Quellen: Sprache, Geräte, HVAC-Systeme und Außenlärm. Effektives akustisches Design adressiert alle diese Elemente."
+        },
+        "section2": {
+          "title": "Strategische Plattenplatzierung",
+          "text": "Nicht alle Oberflächen brauchen Behandlung. Konzentrieren Sie sich auf Deckenbereiche über Arbeitsplätzen, Wände zwischen kollaborativen und fokussierten Zonen und Trennwände zwischen Schreibtischen."
+        },
+        "quote": "Gute Akustik ist unsichtbar—man bemerkt sie nur, wenn sie fehlt.",
+        "section3": {
+          "title": "Absorption und Reflexion Ausbalancieren",
+          "text": "Vollständige Absorption schafft einen unnatürlich 'toten' Raum. Das Ziel ist, Nachhall zu reduzieren und dabei eine gewisse natürliche Atmosphäre beizubehalten."
+        },
+        "conclusion": {
+          "title": "Klein Anfangen, Ergebnisse Messen",
+          "text": "Beginnen Sie mit wirkungsvollen Bereichen und messen Sie den Unterschied. Oft kann die strategische Platzierung einiger Platten einen Raum transformieren."
+        }
+      }
+    },
+    "recycled-materials-quality": {
+      "title": "Recycelte Materialien: Qualitätsstandards Erfüllen und Übertreffen",
+      "excerpt": "Wie wir sicherstellen, dass unsere recycelten Textilplatten die Leistung traditioneller Materialien erreichen oder übertreffen.",
+      "category": "materials",
+      "date": "2024-01-05",
+      "readTime": "6",
+      "content": {
+        "intro": "Es gibt einen hartnäckigen Mythos, dass recycelte Materialien kompromittierte Qualität bedeuten. Unsere Platten beweisen das Gegenteil—recycelt kann überlegen bedeuten.",
+        "section1": {
+          "title": "Rigorose Materialauswahl",
+          "text": "Nicht alle recycelten Textilien eignen sich für Akustikplatten. Wir wählen und sortieren Materialien sorgfältig aus, um konsistente Faserqualität und akustische Leistung zu gewährleisten."
+        },
+        "section2": {
+          "title": "Fortschrittliche Verarbeitung",
+          "text": "Unsere proprietäre Verarbeitung verwandelt gemischte Textilien in gleichmäßige akustische Fasern. Diese Konsistenz ist der Schlüssel zu vorhersagbaren, leistungsstarken Ergebnissen."
+        },
+        "quote": "Nachhaltigkeit und Qualität sind keine Kompromisse—sie sind Ergänzungen.",
+        "section3": {
+          "title": "Unabhängige Tests",
+          "text": "Jede Charge durchläuft Akustiktests nach EN ISO 354-Standards. Wir erreichen konstant Klasse-A-Absorptionswerte und erfüllen dieselben Standards wie Platten aus Neumaterial."
+        },
+        "conclusion": {
+          "title": "Die Zukunft Ist Recycelt",
+          "text": "Mit der Verbesserung der Verarbeitungstechnologie werden recycelte Materialien zunehmend neue Alternativen übertreffen. Die Frage ist nicht ob wir recycelte Materialien verwenden—sondern wie schnell wir skalieren können."
+        }
+      }
+    },
+    "sound-absorption-explained": {
+      "title": "Schallabsorption Erklärt: Ein Leitfaden für Architekten",
+      "excerpt": "Alles, was Sie über Schallabsorptionskoeffizienten und die Auswahl der richtigen Platten wissen müssen.",
+      "category": "education",
+      "date": "2024-01-01",
+      "readTime": "7",
+      "content": {
+        "intro": "Das Verstehen akustischer Spezifikationen kann herausfordernd sein. Dieser Leitfaden schlüsselt die wichtigsten Kennzahlen auf und erklärt, was sie für Ihr Projekt bedeuten.",
+        "section1": {
+          "title": "Der αw-Koeffizient",
+          "text": "Der bewertete Schallabsorptionsgrad (αw) ist die gebräuchlichste Kennzahl. Er reicht von 0 (keine Absorption) bis 1 (vollständige Absorption). Unsere Platten erreichen αw 0.95-1.00."
+        },
+        "section2": {
+          "title": "Frequenzüberlegungen",
+          "text": "Verschiedene Materialien absorbieren verschiedene Frequenzen. Poröse Materialien wie unsere zeichnen sich bei mittleren und hohen Frequenzen aus—dem Sprachbereich—was sie ideal für Büros macht."
+        },
+        "quote": "Die richtige Absorption hängt vom Zweck des Raums ab.",
+        "section3": {
+          "title": "Abdeckungsberechnungen",
+          "text": "Mehr ist nicht immer besser. Die ideale Abdeckung hängt vom Raumvolumen, den Oberflächenmaterialien und der beabsichtigten Nutzung ab. Wir bieten kostenlose akustische Beratungen zur korrekten Spezifikation an."
+        },
+        "conclusion": {
+          "title": "Jenseits der Zahlen",
+          "text": "Obwohl Spezifikationen wichtig sind, berücksichtigt das beste akustische Design das gesamte Erlebnis. Ästhetik, Nachhaltigkeit und Wohlbefinden tragen alle zu erfolgreichen Räumen bei."
+        }
+      }
+    }
+  },
+  "newsletter": {
+    "tag": "BLEIBEN SIE INFORMIERT",
+    "title": "Abonnieren Sie Unseren Newsletter",
+    "subtitle": "Erhalten Sie die neuesten Nachrichten über zirkuläre Akustik, neue Produkte und nachhaltige Design-Einblicke.",
+    "placeholder": "Geben Sie Ihre E-Mail ein",
+    "subscribe": "Abonnieren",
+    "subscribing": "Wird abonniert...",
+    "success": "Vielen Dank für Ihr Abonnement! Überprüfen Sie Ihren Posteingang zur Bestätigung.",
+    "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmelden."
+  },
+  "footer": {
+    "description": "Zirkuläre Akustiklösungen aus recycelten Materialien. Für den Planeten entwickelt, in Belgien hergestellt.",
+    "products": "Produkte",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "allProducts": "Alle Produkte",
+    "copyright": "© {year} Re-Sound. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  },
+  "cookies": {
+    "title": "Wir verwenden Cookies",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und den Website-Verkehr zu analysieren. Durch Akzeptieren stimmen Sie unserer Verwendung von Cookies zu.",
+    "accept": "Alle Akzeptieren",
+    "reject": "Alle Ablehnen"
+  },
+  "notFound": {
+    "title": "Seite Nicht Gefunden",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden. Sie wurde möglicherweise verschoben oder existiert nicht mehr.",
+    "backHome": "Zurück zur Startseite",
+    "contactUs": "Kontaktieren Sie Uns"
+  }
+}

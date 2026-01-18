@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "homeDescription": "Solutions acoustiques haute performance fabriquées à partir de matériaux recyclés. Nous transformons les déchets en silence—conçu pour la planète, fabriqué en Belgique.",
+    "productsTitle": "Produits",
+    "productsDescription": "Découvrez notre gamme de panneaux acoustiques circulaires : Interior, Solid et Divide. 100% recyclés, 100% recyclables.",
+    "aboutTitle": "À propos de Re-Sound",
+    "aboutDescription": "Découvrez notre mission de créer des solutions acoustiques circulaires à partir de matériaux recyclés, fièrement fabriquées en Belgique.",
+    "sustainabilityTitle": "Durabilité",
+    "sustainabilityDescription": "Découvrez comment nous bouclons la boucle avec nos panneaux acoustiques entièrement circulaires—des matériaux recyclés aux programmes de retour gratuits.",
+    "contactTitle": "Contactez-nous",
+    "contactDescription": "Contactez Re-Sound pour des devis, des questions ou des demandes de partenariat.",
+    "blogTitle": "Blog",
+    "blogDescription": "Perspectives sur l'économie circulaire, l'acoustique et le design durable par l'équipe Re-Sound."
+  },
+  "nav": {
+    "products": "Produits",
+    "about": "À propos",
+    "sustainability": "Durabilité",
+    "contact": "Contact",
+    "cta": "Demander un Devis"
+  },
+  "hero": {
+    "badge": "Acoustique 100% Circulaire",
+    "title": "L'acoustique devient",
+    "titleHighlight": "circulaire.",
+    "subtitle": "Solutions acoustiques haute performance fabriquées à partir de matériaux recyclés. Nous transformons les déchets en silence—conçu pour la planète, fabriqué en Belgique.",
+    "ctaPrimary": "Découvrir les Produits",
+    "ctaSecondary": "Comment Ça Marche",
+    "panelTag": "100% Matériaux Recyclés"
+  },
+  "stats": {
+    "absorption": "Absorption Sonore",
+    "colors": "Couleurs Disponibles",
+    "waste": "Déchets en Décharge",
+    "madeIn": "Fabriqué en Belgique"
+  },
+  "materials": {
+    "tag": "CE QUE NOUS UTILISONS",
+    "title": "Du Déchet à la Merveille",
+    "subtitle": "Nous transformons divers matériaux recyclés en panneaux acoustiques haute performance.",
+    "jeans": "Jeans",
+    "upholstery": "Tapisserie",
+    "clothing": "Vêtements",
+    "textiles": "Textiles",
+    "industrial": "Industriel",
+    "bags": "Sacs",
+    "wool": "Laine",
+    "mattresses": "Matelas"
+  },
+  "products": {
+    "tag": "NOS PRODUITS",
+    "title": "Solutions Acoustiques",
+    "learnMore": "En savoir plus",
+    "pageTitle": "Nos Produits",
+    "pageSubtitle": "Découvrez notre gamme de panneaux acoustiques circulaires, chacun conçu pour des applications spécifiques tout en maintenant notre engagement envers la durabilité.",
+    "requestQuote": "Demander un Devis",
+    "learnCircular": "Notre Processus Circulaire",
+    "relatedTag": "PLUS DE PRODUITS",
+    "relatedTitle": "Produits Connexes",
+    "ctaTitle": "Prêt à transformer votre espace ?",
+    "ctaSubtitle": "Contactez-nous pour un devis personnalisé adapté à vos besoins acoustiques.",
+    "ctaPrimary": "Obtenir un Devis",
+    "interior": {
+      "title": "Interior",
+      "description": "Panneaux acoustiques extensibles pour murs et plafonds. Parfaits pour bureaux, restaurants et espaces publics.",
+      "fullDescription": "Nos panneaux Interior sont conçus pour une intégration parfaite dans n'importe quel espace. Fabriqués à partir de textiles 100% recyclés, ils offrent une absorption sonore exceptionnelle tout en ajoutant une chaleur visuelle à votre environnement."
+    },
+    "solid": {
+      "title": "Solid",
+      "description": "Panneaux minimalistes haute densité pour des performances acoustiques maximales. Idéaux pour les environnements exigeants.",
+      "fullDescription": "Les panneaux Solid combinent une esthétique minimaliste avec des performances acoustiques maximales. Leur construction haute densité les rend parfaits pour les espaces nécessitant un contrôle sonore supérieur."
+    },
+    "divide": {
+      "title": "Divide",
+      "description": "Cloisons acoustiques autoportantes pour une gestion flexible de l'espace. Mobiles et modulaires.",
+      "fullDescription": "Divide offre une gestion flexible de l'espace avec des panneaux acoustiques autoportants. Parfaits pour les bureaux ouverts, ils peuvent être facilement déplacés et reconfigurés selon vos besoins."
+    },
+    "highlights": {
+      "absorption": {
+        "title": "Absorption Sonore",
+        "value": "Jusqu'à αw 1.00"
+      },
+      "recyclable": {
+        "title": "Recyclable",
+        "value": "100% en fin de vie"
+      },
+      "origin": {
+        "title": "Origine",
+        "value": "Fabriqué en Belgique"
+      }
+    },
+    "features": {
+      "performance": {
+        "title": "Haute Performance",
+        "description": "Absorption sonore Classe A pour un confort acoustique optimal dans tout environnement."
+      },
+      "circular": {
+        "title": "Entièrement Circulaire",
+        "description": "Fabriqué à partir de matériaux recyclés et 100% recyclable en fin de vie."
+      },
+      "customization": {
+        "title": "Options Personnalisées",
+        "description": "Disponible en 50+ couleurs et tailles personnalisées pour correspondre à votre vision design."
+      }
+    }
+  },
+  "specs": {
+    "tag": "SPÉCIFICATIONS",
+    "title": "Détails Techniques",
+    "dimensions": "Dimensions",
+    "thickness": "Épaisseur",
+    "weight": "Poids",
+    "height": "Hauteur",
+    "absorption": "Coefficient d'Absorption",
+    "fireClass": "Classification Feu",
+    "material": "Matériau",
+    "recycledTextiles": "100% Textiles Recyclés",
+    "certifications": "Certifications"
+  },
+  "why": {
+    "tag": "POURQUOI RE-SOUND",
+    "title": "Pourquoi Choisir des Panneaux Acoustiques Circulaires ?",
+    "subtitle": "Nous croyons qu'une excellente acoustique ne doit pas coûter cher à la planète. Nos panneaux prouvent que les choix durables peuvent offrir des performances supérieures.",
+    "diagramLabel": "Circulaire",
+    "features": {
+      "performance": {
+        "title": "Performance Supérieure",
+        "description": "Classement d'absorption Classe A (αw 0.95-1.00) pour un confort acoustique optimal."
+      },
+      "durability": {
+        "title": "Construit pour Durer",
+        "description": "Une fabrication de haute qualité garantit des décennies de performance."
+      },
+      "circular": {
+        "title": "Vraiment Circulaire",
+        "description": "Programme de retour gratuit—nous recyclons vos panneaux en nouveaux."
+      },
+      "customization": {
+        "title": "Entièrement Personnalisable",
+        "description": "50+ couleurs, tailles personnalisées et diverses options de montage."
+      }
+    }
+  },
+  "circular": {
+    "tag": "ÉCONOMIE CIRCULAIRE",
+    "title": "Bouclez la",
+    "titleHighlight": "boucle.",
+    "subtitle": "Nos panneaux commencent leur vie comme déchets et peuvent revenir pour devenir de nouveaux panneaux—créant un cycle infini de solutions acoustiques durables.",
+    "loopLabel": "Cycle Infini",
+    "steps": {
+      "collect": {
+        "title": "Collecter",
+        "description": "Nous collectons des textiles recyclés de diverses sources."
+      },
+      "transform": {
+        "title": "Transformer",
+        "description": "Les matériaux sont transformés en panneaux acoustiques."
+      },
+      "install": {
+        "title": "Installer",
+        "description": "Les panneaux apportent un confort acoustique à votre espace."
+      },
+      "return": {
+        "title": "Retourner",
+        "description": "Collecte gratuite et recyclage en nouveaux panneaux."
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à Transformer Votre Espace ?",
+    "subtitle": "Contactez-nous pour un devis personnalisé ou pour en savoir plus sur nos solutions acoustiques circulaires.",
+    "primary": "Demander un Devis",
+    "secondary": "Voir les Produits"
+  },
+  "about": {
+    "tag": "À PROPOS",
+    "title": "Acoustique Circulaire",
+    "subtitle": "Nous avons pour mission de prouver qu'une entreprise durable est une bonne entreprise.",
+    "story": {
+      "tag": "NOTRE HISTOIRE",
+      "title": "Du Déchet à la Merveille",
+      "paragraph1": "Re-Sound est né d'une question simple : et si nous pouvions transformer les montagnes de déchets textiles en quelque chose de beau et d'utile ?",
+      "paragraph2": "Fondé en Belgique en 2021, nous avons entrepris de créer des panneaux acoustiques qui performent aussi bien que les produits traditionnels tout en étant 100% circulaires.",
+      "paragraph3": "Aujourd'hui, nous avons détourné des tonnes de textiles des décharges et créé des solutions acoustiques pour des centaines d'espaces à travers l'Europe.",
+      "imagePlaceholder": "Installation de Production Re-Sound",
+      "founded": "Fondé à Beveren-Waas"
+    },
+    "values": {
+      "tag": "NOS VALEURS",
+      "title": "Ce Que Nous Défendons",
+      "circular": {
+        "title": "Circulaire par Conception",
+        "description": "Chaque décision que nous prenons considère le cycle de vie complet de nos produits."
+      },
+      "quality": {
+        "title": "Qualité Sans Compromis",
+        "description": "Durable ne signifie pas se contenter de moins—nos panneaux répondent aux normes les plus élevées."
+      },
+      "partnership": {
+        "title": "Vrai Partenariat",
+        "description": "Nous travaillons étroitement avec les clients pour trouver la solution acoustique parfaite."
+      },
+      "innovation": {
+        "title": "Innovation Continue",
+        "description": "Nous explorons toujours de nouveaux matériaux et améliorons nos processus."
+      }
+    },
+    "team": {
+      "tag": "NOTRE ÉQUIPE",
+      "title": "Rencontrez l'Équipe",
+      "subtitle": "Un groupe passionné dédié à l'acoustique durable.",
+      "roles": {
+        "founder": "Fondateur & PDG",
+        "operations": "Opérations",
+        "sales": "Ventes & Partenariats"
+      }
+    },
+    "partners": {
+      "tag": "PARTENAIRES",
+      "title": "Travailler Ensemble",
+      "types": {
+        "supplier": "Fournisseur de Matériaux",
+        "research": "Partenaire de Recherche",
+        "distribution": "Distribution",
+        "certification": "Certification"
+      }
+    },
+    "belgian": {
+      "tag": "MADE IN BELGIUM",
+      "title": "Fièrement Belge",
+      "description": "Tous nos panneaux sont conçus et fabriqués en Belgique, soutenant l'emploi local et réduisant les émissions de transport.",
+      "madeIn": "Fabriqué en Belgique 🇧🇪",
+      "production": {
+        "title": "Production Locale",
+        "description": "Fabrication à Beveren-Waas"
+      },
+      "social": {
+        "title": "Entreprise Sociale",
+        "description": "Partenariats avec des ateliers sociaux"
+      },
+      "rd": {
+        "title": "R&D Belge",
+        "description": "Innovation continue locale"
+      }
+    }
+  },
+  "sustainability": {
+    "tag": "DURABILITÉ",
+    "title": "Acoustique Vraiment Circulaire",
+    "subtitle": "Nous ne réduisons pas seulement les déchets—nous les éliminons grâce à une approche entièrement circulaire.",
+    "intro": {
+      "title": "L'Économie Circulaire",
+      "description": "Les panneaux acoustiques traditionnels finissent en décharge. Les nôtres commencent une nouvelle vie. Notre modèle circulaire garantit que les matériaux circulent continuellement, ne devenant jamais des déchets.",
+      "endless": "Cycle Infini"
+    },
+    "process": {
+      "tag": "LE PROCESSUS",
+      "title": "Comment Nous Bouclons la Boucle",
+      "collect": {
+        "title": "Collecter les Matériaux",
+        "description": "Nous collectons des déchets textiles post-consommation et post-industriels auprès de partenaires à travers l'Europe."
+      },
+      "process": {
+        "title": "Traiter & Transformer",
+        "description": "Les matériaux sont triés, nettoyés et transformés en fibre acoustique."
+      },
+      "create": {
+        "title": "Créer des Panneaux",
+        "description": "Les fibres sont liées et finies en beaux panneaux acoustiques haute performance."
+      },
+      "return": {
+        "title": "Retourner & Recycler",
+        "description": "En fin de vie, nous collectons les panneaux gratuitement et les recyclons en nouveaux produits."
+      }
+    },
+    "materials": {
+      "tag": "MATÉRIAUX",
+      "title": "Ce Que Nous Transformons",
+      "subtitle": "Des textiles jetés aux solutions acoustiques premium."
+    },
+    "impact": {
+      "tag": "NOTRE IMPACT",
+      "title": "Faire la Différence",
+      "textilesSaved": "Textiles sauvés des décharges",
+      "panelsProduced": "Panneaux produits",
+      "wasteToLandfill": "Déchets en décharge",
+      "returnRate": "Participation au programme de retour",
+      "units": {
+        "tons": "tonnes"
+      }
+    },
+    "return": {
+      "tag": "PROGRAMME DE RETOUR",
+      "title": "Retour Gratuit des Panneaux",
+      "description": "Lorsque vos panneaux atteignent leur fin de vie—que ce soit suite à une rénovation ou à l'usure—nous les collectons gratuitement et les recyclons en nouveaux panneaux. Des solutions acoustiques sans culpabilité.",
+      "benefit1": "Collecte gratuite en Belgique & Pays-Bas",
+      "benefit2": "Panneaux recyclés en nouveaux produits",
+      "benefit3": "Certificat d'élimination circulaire",
+      "boxText": "Collecte Retour Gratuite"
+    }
+  },
+  "contact": {
+    "tag": "CONTACTEZ-NOUS",
+    "title": "Contactez-Nous",
+    "subtitle": "Vous avez des questions sur nos produits ou souhaitez un devis personnalisé ? Nous serions ravis de vous entendre.",
+    "form": {
+      "title": "Envoyez-Nous un Message",
+      "subtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.",
+      "name": "Nom",
+      "namePlaceholder": "Votre nom complet",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+32 ...",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sélectionnez un sujet",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet ou question...",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "successMessage": "Merci ! Nous vous répondrons dans les 24 heures.",
+      "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
+      "subjects": {
+        "quote": "Demander un Devis",
+        "info": "Information Produit",
+        "partnership": "Demande de Partenariat",
+        "other": "Autre"
+      }
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "email": "Email",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "hours": "Heures d'Ouverture",
+      "hoursValue": "Lundi - Vendredi : 9h00 - 17h00"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "subtitle": "Réponses rapides aux questions courantes.",
+      "q1": {
+        "question": "Quel est votre délai de livraison ?",
+        "answer": "Les commandes standard sont expédiées sous 2-3 semaines. Les couleurs et tailles personnalisées peuvent nécessiter 4-6 semaines."
+      },
+      "q2": {
+        "question": "Livrez-vous à l'international ?",
+        "answer": "Oui ! Nous livrons dans toute l'Europe. Contactez-nous pour des devis d'expédition hors UE."
+      },
+      "q3": {
+        "question": "Puis-je avoir des échantillons ?",
+        "answer": "Absolument. Nous proposons des kits d'échantillons gratuits avec des échantillons de matériaux et options de couleurs."
+      }
+    }
+  },
+  "blog": {
+    "tag": "PERSPECTIVES",
+    "title": "Blog & Actualités",
+    "subtitle": "Réflexions sur l'acoustique, la durabilité et le design par notre équipe.",
+    "readMore": "Lire l'article",
+    "loadMore": "Charger Plus d'Articles",
+    "share": "Partager cet article",
+    "relatedTag": "CONNEXE",
+    "relatedTitle": "Articles Connexes",
+    "filters": {
+      "all": "Tout",
+      "sustainability": "Durabilité",
+      "products": "Produits",
+      "education": "Éducation",
+      "company": "Entreprise"
+    },
+    "categories": {
+      "sustainability": "Durabilité",
+      "products": "Produits",
+      "materials": "Matériaux",
+      "education": "Éducation",
+      "company": "Entreprise",
+      "design": "Design"
+    }
+  },
+  "blogPosts": {
+    "circular-economy-acoustics": {
+      "title": "L'Économie Circulaire : Une Nouvelle Ère pour les Solutions Acoustiques",
+      "excerpt": "Comment les principes de conception circulaire transforment l'industrie des panneaux acoustiques et pourquoi c'est important pour l'avenir.",
+      "category": "sustainability",
+      "date": "2024-01-15",
+      "readTime": "5",
+      "content": {
+        "intro": "L'industrie des panneaux acoustiques connaît une transformation fondamentale. Les modèles linéaires traditionnels—extraire, fabriquer, jeter—cèdent la place à des approches circulaires qui maintiennent les matériaux en usage indéfiniment.",
+        "section1": {
+          "title": "Pourquoi la Circularité Est Importante",
+          "text": "Chaque année, des millions de tonnes de matériaux acoustiques finissent en décharge. Ces matériaux, contenant souvent des fibres synthétiques et des adhésifs, peuvent mettre des siècles à se décomposer. L'économie circulaire offre une alternative : concevoir des produits qui peuvent être continuellement recyclés."
+        },
+        "section2": {
+          "title": "Notre Approche",
+          "text": "Chez Re-Sound, nous avons conçu nos panneaux dès le départ pour la circularité. En utilisant uniquement des textiles recyclés et des liants biosourcés, nos panneaux peuvent être entièrement recyclés en fin de vie—devenant de nouveaux panneaux plutôt que des déchets."
+        },
+        "quote": "Le meilleur panneau acoustique est celui qui ne devient jamais un déchet.",
+        "section3": {
+          "title": "L'Argument Commercial",
+          "text": "La conception circulaire n'est pas seulement bonne pour l'environnement—c'est une bonne affaire. En créant de la valeur à partir des déchets et en offrant des programmes de reprise, nous construisons des relations plus solides avec les clients tout en réduisant les coûts des matériaux."
+        },
+        "conclusion": {
+          "title": "Regard vers l'Avenir",
+          "text": "La transition vers l'acoustique circulaire ne fait que commencer. À mesure que davantage d'entreprises adoptent ces principes, nous verrons une industrie transformée—où confort acoustique et responsabilité environnementale vont de pair."
+        }
+      }
+    },
+    "office-acoustic-solutions": {
+      "title": "Créer l'Environnement Acoustique Parfait dans les Bureaux Modernes",
+      "excerpt": "Conseils pratiques pour améliorer l'acoustique dans les bureaux ouverts, salles de réunion et espaces collaboratifs.",
+      "category": "products",
+      "date": "2024-01-10",
+      "readTime": "4",
+      "content": {
+        "intro": "Les bureaux ouverts présentent des défis acoustiques uniques. Sans traitement approprié, les niveaux de bruit peuvent réduire la productivité jusqu'à 66%. Voici comment créer un environnement acoustique équilibré.",
+        "section1": {
+          "title": "Comprendre l'Acoustique de Bureau",
+          "text": "Le son dans les bureaux provient de multiples sources : la parole, les équipements, les systèmes HVAC et le bruit extérieur. Une conception acoustique efficace traite tous ces éléments."
+        },
+        "section2": {
+          "title": "Placement Stratégique des Panneaux",
+          "text": "Toutes les surfaces n'ont pas besoin de traitement. Concentrez-vous sur les zones de plafond au-dessus des postes de travail, les murs entre zones collaboratives et zones de concentration, et les cloisons entre bureaux."
+        },
+        "quote": "Une bonne acoustique est invisible—on ne la remarque que quand elle manque.",
+        "section3": {
+          "title": "Équilibrer Absorption et Réflexion",
+          "text": "Une absorption complète crée un espace 'mort' non naturel. L'objectif est de réduire la réverbération tout en maintenant une certaine ambiance naturelle."
+        },
+        "conclusion": {
+          "title": "Commencez Petit, Mesurez les Résultats",
+          "text": "Commencez par les zones à fort impact et mesurez la différence. Souvent, le placement stratégique de quelques panneaux peut transformer un espace."
+        }
+      }
+    },
+    "recycled-materials-quality": {
+      "title": "Matériaux Recyclés : Atteindre et Dépasser les Normes de Qualité",
+      "excerpt": "Comment nous nous assurons que nos panneaux en textiles recyclés égalent ou dépassent les performances des matériaux traditionnels.",
+      "category": "materials",
+      "date": "2024-01-05",
+      "readTime": "6",
+      "content": {
+        "intro": "Il existe un mythe persistant selon lequel les matériaux recyclés signifient une qualité compromise. Nos panneaux prouvent le contraire—recyclé peut signifier supérieur.",
+        "section1": {
+          "title": "Sélection Rigoureuse des Matériaux",
+          "text": "Tous les textiles recyclés ne conviennent pas aux panneaux acoustiques. Nous sélectionnons et trions soigneusement les matériaux pour garantir une qualité de fibre et des performances acoustiques constantes."
+        },
+        "section2": {
+          "title": "Traitement Avancé",
+          "text": "Notre traitement propriétaire transforme les textiles mélangés en fibres acoustiques uniformes. Cette consistance est essentielle pour obtenir des résultats prévisibles et performants."
+        },
+        "quote": "Durabilité et qualité ne sont pas des compromis—ils sont complémentaires.",
+        "section3": {
+          "title": "Tests Indépendants",
+          "text": "Chaque lot subit des tests acoustiques selon les normes EN ISO 354. Nous obtenons systématiquement des classements d'absorption Classe A, répondant aux mêmes normes que les panneaux en matériaux vierges."
+        },
+        "conclusion": {
+          "title": "L'Avenir est Recyclé",
+          "text": "À mesure que la technologie de traitement s'améliore, les matériaux recyclés surpasseront de plus en plus les alternatives vierges. La question n'est pas de savoir si utiliser du recyclé—mais à quelle vitesse nous pouvons passer à l'échelle."
+        }
+      }
+    },
+    "sound-absorption-explained": {
+      "title": "L'Absorption Sonore Expliquée : Un Guide pour les Architectes",
+      "excerpt": "Tout ce que vous devez savoir sur les coefficients d'absorption sonore et le choix des bons panneaux.",
+      "category": "education",
+      "date": "2024-01-01",
+      "readTime": "7",
+      "content": {
+        "intro": "Comprendre les spécifications acoustiques peut être difficile. Ce guide décompose les métriques clés et ce qu'elles signifient pour votre projet.",
+        "section1": {
+          "title": "Le Coefficient αw",
+          "text": "Le coefficient d'absorption sonore pondéré (αw) est la métrique la plus courante. Il varie de 0 (pas d'absorption) à 1 (absorption complète). Nos panneaux atteignent αw 0.95-1.00."
+        },
+        "section2": {
+          "title": "Considérations de Fréquence",
+          "text": "Différents matériaux absorbent différentes fréquences. Les matériaux poreux comme les nôtres excellent dans les moyennes et hautes fréquences—la plage vocale—ce qui les rend idéaux pour les bureaux."
+        },
+        "quote": "La bonne absorption dépend de l'usage de la pièce.",
+        "section3": {
+          "title": "Calculs de Couverture",
+          "text": "Plus n'est pas toujours mieux. La couverture idéale dépend du volume de la pièce, des matériaux de surface et de l'usage prévu. Nous offrons des consultations acoustiques gratuites pour spécifier correctement."
+        },
+        "conclusion": {
+          "title": "Au-delà des Chiffres",
+          "text": "Bien que les spécifications comptent, la meilleure conception acoustique considère l'expérience globale. Esthétique, durabilité et bien-être contribuent tous à des espaces réussis."
+        }
+      }
+    }
+  },
+  "newsletter": {
+    "tag": "RESTEZ INFORMÉ",
+    "title": "Abonnez-vous à Notre Newsletter",
+    "subtitle": "Recevez les dernières nouvelles sur l'acoustique circulaire, les nouveaux produits et les perspectives de design durable.",
+    "placeholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "subscribing": "Abonnement...",
+    "success": "Merci de vous être abonné ! Vérifiez votre boîte de réception pour confirmation.",
+    "privacy": "Nous respectons votre vie privée. Désabonnez-vous à tout moment."
+  },
+  "footer": {
+    "description": "Solutions acoustiques circulaires fabriquées à partir de matériaux recyclés. Conçu pour la planète, fabriqué en Belgique.",
+    "products": "Produits",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "allProducts": "Tous les Produits",
+    "copyright": "© {year} Re-Sound. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "cookies": {
+    "title": "Nous utilisons des cookies",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic du site. En acceptant, vous acceptez notre utilisation des cookies.",
+    "accept": "Tout Accepter",
+    "reject": "Tout Rejeter"
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "description": "Désolé, nous n'avons pas pu trouver la page que vous cherchez. Elle a peut-être été déplacée ou n'existe plus.",
+    "backHome": "Retour à l'Accueil",
+    "contactUs": "Contactez-Nous"
+  }
+}

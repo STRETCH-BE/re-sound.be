@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "homeDescription": "Hoogwaardige akoestische oplossingen gemaakt van gerecycleerde materialen. Wij transformeren afval tot stilte—ontworpen voor de planeet, gemaakt in België.",
+    "productsTitle": "Producten",
+    "productsDescription": "Ontdek onze circulaire akoestische panelen: Interior, Solid en Divide. 100% gerecycleerd, 100% recyclebaar.",
+    "aboutTitle": "Over Re-Sound",
+    "aboutDescription": "Leer meer over onze missie om circulaire akoestische oplossingen te creëren uit gerecycleerde materialen, met trots gemaakt in België.",
+    "sustainabilityTitle": "Duurzaamheid",
+    "sustainabilityDescription": "Ontdek hoe we de cirkel sluiten met onze volledig circulaire akoestische panelen—van gerecycleerde materialen tot gratis retourprogramma's.",
+    "contactTitle": "Contact",
+    "contactDescription": "Neem contact op met Re-Sound voor offertes, vragen of samenwerkingsaanvragen.",
+    "blogTitle": "Blog",
+    "blogDescription": "Inzichten over circulaire economie, akoestiek en duurzaam ontwerp van het Re-Sound team."
+  },
+  "nav": {
+    "products": "Producten",
+    "about": "Over ons",
+    "sustainability": "Duurzaamheid",
+    "contact": "Contact",
+    "cta": "Offerte Aanvragen"
+  },
+  "hero": {
+    "badge": "100% Circulaire Akoestiek",
+    "title": "Akoestiek wordt",
+    "titleHighlight": "circulair.",
+    "subtitle": "Hoogwaardige akoestische oplossingen gemaakt van gerecycleerde materialen. Wij transformeren afval tot stilte—ontworpen voor de planeet, gemaakt in België.",
+    "ctaPrimary": "Ontdek Producten",
+    "ctaSecondary": "Hoe Het Werkt",
+    "panelTag": "100% Gerecycleerde Materialen"
+  },
+  "stats": {
+    "absorption": "Geluidsabsorptie",
+    "colors": "Kleuren Beschikbaar",
+    "waste": "Afval naar Stort",
+    "madeIn": "Gemaakt in België"
+  },
+  "materials": {
+    "tag": "WAT WE GEBRUIKEN",
+    "title": "Van Afval tot Wonder",
+    "subtitle": "Wij transformeren diverse gerecycleerde materialen tot hoogwaardige akoestische panelen.",
+    "jeans": "Jeans",
+    "upholstery": "Bekleding",
+    "clothing": "Kleding",
+    "textiles": "Textiel",
+    "industrial": "Industrieel",
+    "bags": "Tassen",
+    "wool": "Wol",
+    "mattresses": "Matrassen"
+  },
+  "products": {
+    "tag": "ONZE PRODUCTEN",
+    "title": "Akoestische Oplossingen",
+    "learnMore": "Meer info",
+    "pageTitle": "Onze Producten",
+    "pageSubtitle": "Ontdek onze circulaire akoestische panelen, elk ontworpen voor specifieke toepassingen met behoud van ons duurzaamheidsengagement.",
+    "requestQuote": "Vraag een Offerte",
+    "learnCircular": "Ons Circulair Proces",
+    "relatedTag": "MEER PRODUCTEN",
+    "relatedTitle": "Gerelateerde Producten",
+    "ctaTitle": "Klaar om uw ruimte te transformeren?",
+    "ctaSubtitle": "Neem contact op voor een offerte op maat van uw akoestische behoeften.",
+    "ctaPrimary": "Vraag Offerte",
+    "interior": {
+      "title": "Interior",
+      "description": "Uitbreidbare akoestische panelen voor wanden en plafonds. Perfect voor kantoren, restaurants en openbare ruimtes.",
+      "fullDescription": "Onze Interior panelen zijn ontworpen voor naadloze integratie in elke ruimte. Gemaakt van 100% gerecycleerd textiel, bieden ze uitzonderlijke geluidsabsorptie terwijl ze visuele warmte toevoegen aan uw omgeving."
+    },
+    "solid": {
+      "title": "Solid",
+      "description": "Minimalistische, hoogdichte panelen voor maximale akoestische prestaties. Ideaal voor veeleisende omgevingen.",
+      "fullDescription": "Solid panelen combineren minimalistische esthetiek met maximale akoestische prestaties. Hun hoogdichte constructie maakt ze perfect voor ruimtes die superieure geluidsbeheersing vereisen."
+    },
+    "divide": {
+      "title": "Divide",
+      "description": "Vrijstaande akoestische scheidingswanden voor flexibel ruimtebeheer. Mobiel en modulair.",
+      "fullDescription": "Divide biedt flexibel ruimtebeheer met vrijstaande akoestische panelen. Perfect voor open kantoren, ze kunnen eenvoudig worden verplaatst en herconfigureerd naargelang uw behoeften veranderen."
+    },
+    "highlights": {
+      "absorption": {
+        "title": "Geluidsabsorptie",
+        "value": "Tot αw 1.00"
+      },
+      "recyclable": {
+        "title": "Recyclebaar",
+        "value": "100% aan einde levensduur"
+      },
+      "origin": {
+        "title": "Herkomst",
+        "value": "Gemaakt in België"
+      }
+    },
+    "features": {
+      "performance": {
+        "title": "Hoge Prestaties",
+        "description": "Klasse A geluidsabsorptie voor optimaal akoestisch comfort in elke omgeving."
+      },
+      "circular": {
+        "title": "Volledig Circulair",
+        "description": "Gemaakt van gerecycleerde materialen en 100% recyclebaar aan het einde van de levensduur."
+      },
+      "customization": {
+        "title": "Op Maat",
+        "description": "Beschikbaar in 50+ kleuren en aangepaste maten om bij uw ontwerpvisie te passen."
+      }
+    }
+  },
+  "specs": {
+    "tag": "SPECIFICATIES",
+    "title": "Technische Details",
+    "dimensions": "Afmetingen",
+    "thickness": "Dikte",
+    "weight": "Gewicht",
+    "height": "Hoogte",
+    "absorption": "Absorptiecoëfficiënt",
+    "fireClass": "Brandclassificatie",
+    "material": "Materiaal",
+    "recycledTextiles": "100% Gerecycleerd Textiel",
+    "certifications": "Certificeringen"
+  },
+  "why": {
+    "tag": "WAAROM RE-SOUND",
+    "title": "Waarom Kiezen voor Circulaire Akoestische Panelen?",
+    "subtitle": "Wij geloven dat goede akoestiek de aarde niet hoeft te kosten. Onze panelen bewijzen dat duurzame keuzes superieure prestaties kunnen leveren.",
+    "diagramLabel": "Circulair",
+    "features": {
+      "performance": {
+        "title": "Superieure Prestaties",
+        "description": "Klasse A absorptiewaardering (αw 0.95-1.00) voor optimaal akoestisch comfort."
+      },
+      "durability": {
+        "title": "Gebouwd om te Duren",
+        "description": "Hoogwaardige productie garandeert tientallen jaren prestatie."
+      },
+      "circular": {
+        "title": "Echt Circulair",
+        "description": "Gratis retourprogramma—wij recycleren uw panelen tot nieuwe."
+      },
+      "customization": {
+        "title": "Volledig Aanpasbaar",
+        "description": "50+ kleuren, aangepaste maten en diverse montageopties."
+      }
+    }
+  },
+  "circular": {
+    "tag": "CIRCULAIRE ECONOMIE",
+    "title": "Sluit de",
+    "titleHighlight": "cirkel.",
+    "subtitle": "Onze panelen beginnen hun leven als afval en kunnen terugkeren om nieuwe panelen te worden—een eindeloze cyclus van duurzame akoestische oplossingen.",
+    "loopLabel": "Eindeloze Cyclus",
+    "steps": {
+      "collect": {
+        "title": "Verzamelen",
+        "description": "Wij verzamelen gerecycleerd textiel uit diverse bronnen."
+      },
+      "transform": {
+        "title": "Transformeren",
+        "description": "Materialen worden verwerkt tot akoestische panelen."
+      },
+      "install": {
+        "title": "Installeren",
+        "description": "Panelen brengen akoestisch comfort in uw ruimte."
+      },
+      "return": {
+        "title": "Retourneren",
+        "description": "Gratis ophaling en recycling tot nieuwe panelen."
+      }
+    }
+  },
+  "cta": {
+    "title": "Klaar om Uw Ruimte te Transformeren?",
+    "subtitle": "Neem contact op voor een offerte op maat of om meer te leren over onze circulaire akoestische oplossingen.",
+    "primary": "Vraag een Offerte",
+    "secondary": "Bekijk Producten"
+  },
+  "about": {
+    "tag": "OVER ONS",
+    "title": "Circulaire Akoestiek",
+    "subtitle": "We zijn op een missie om te bewijzen dat duurzaam ondernemen goed ondernemen is.",
+    "story": {
+      "tag": "ONS VERHAAL",
+      "title": "Van Afval tot Wonder",
+      "paragraph1": "Re-Sound werd geboren uit een simpele vraag: wat als we de bergen textielafval konden transformeren tot iets moois en nuttigs?",
+      "paragraph2": "Opgericht in België in 2021, wilden we akoestische panelen creëren die even goed presteren als traditionele producten terwijl ze 100% circulair zijn.",
+      "paragraph3": "Vandaag hebben we tonnen textiel van stortplaatsen afgeleid en akoestische oplossingen gecreëerd voor honderden ruimtes in heel Europa.",
+      "imagePlaceholder": "Re-Sound Productiefaciliteit",
+      "founded": "Opgericht in Beveren-Waas"
+    },
+    "values": {
+      "tag": "ONZE WAARDEN",
+      "title": "Waar We Voor Staan",
+      "circular": {
+        "title": "Circulair by Design",
+        "description": "Elke beslissing die we nemen houdt rekening met de volledige levenscyclus van onze producten."
+      },
+      "quality": {
+        "title": "Compromisloze Kwaliteit",
+        "description": "Duurzaam betekent niet inleveren—onze panelen voldoen aan de hoogste normen."
+      },
+      "partnership": {
+        "title": "Echt Partnerschap",
+        "description": "We werken nauw samen met klanten om de perfecte akoestische oplossing te vinden."
+      },
+      "innovation": {
+        "title": "Continue Innovatie",
+        "description": "We verkennen voortdurend nieuwe materialen en verbeteren onze processen."
+      }
+    },
+    "team": {
+      "tag": "ONS TEAM",
+      "title": "Maak Kennis met het Team",
+      "subtitle": "Een gepassioneerde groep toegewijd aan duurzame akoestiek.",
+      "roles": {
+        "founder": "Oprichter & CEO",
+        "operations": "Operaties",
+        "sales": "Sales & Partnerships"
+      }
+    },
+    "partners": {
+      "tag": "PARTNERS",
+      "title": "Samen Werken",
+      "types": {
+        "supplier": "Materiaalleverancier",
+        "research": "Onderzoekspartner",
+        "distribution": "Distributie",
+        "certification": "Certificering"
+      }
+    },
+    "belgian": {
+      "tag": "MADE IN BELGIUM",
+      "title": "Trots Belgisch",
+      "description": "Al onze panelen worden ontworpen en geproduceerd in België, wat lokale werkgelegenheid ondersteunt en transportemissies vermindert.",
+      "madeIn": "Gemaakt in België 🇧🇪",
+      "production": {
+        "title": "Lokale Productie",
+        "description": "Productie in Beveren-Waas"
+      },
+      "social": {
+        "title": "Sociale Onderneming",
+        "description": "Partnerschappen met sociale werkplaatsen"
+      },
+      "rd": {
+        "title": "Belgische R&D",
+        "description": "Continue lokale innovatie"
+      }
+    }
+  },
+  "sustainability": {
+    "tag": "DUURZAAMHEID",
+    "title": "Echt Circulaire Akoestiek",
+    "subtitle": "We verminderen niet alleen afval—we elimineren het door een volledig circulaire aanpak.",
+    "intro": {
+      "title": "De Circulaire Economie",
+      "description": "Traditionele akoestische panelen eindigen op stortplaatsen. De onze beginnen een nieuw leven. Ons circulair model zorgt ervoor dat materialen continu stromen, nooit afval worden.",
+      "endless": "Eindeloze Cyclus"
+    },
+    "process": {
+      "tag": "HET PROCES",
+      "title": "Hoe We de Cirkel Sluiten",
+      "collect": {
+        "title": "Materialen Verzamelen",
+        "description": "We verzamelen post-consumer en post-industrieel textielafval van partners in heel Europa."
+      },
+      "process": {
+        "title": "Verwerken & Transformeren",
+        "description": "Materialen worden gesorteerd, gereinigd en verwerkt tot akoestische vezel."
+      },
+      "create": {
+        "title": "Panelen Creëren",
+        "description": "Vezels worden gebonden en afgewerkt tot mooie, hoogwaardige akoestische panelen."
+      },
+      "return": {
+        "title": "Retourneren & Recycleren",
+        "description": "Aan het einde van hun leven halen we panelen gratis op en recycleren ze tot nieuwe producten."
+      }
+    },
+    "materials": {
+      "tag": "MATERIALEN",
+      "title": "Wat We Transformeren",
+      "subtitle": "Van afgedankt textiel tot premium akoestische oplossingen."
+    },
+    "impact": {
+      "tag": "ONZE IMPACT",
+      "title": "Het Verschil Maken",
+      "textilesSaved": "Textiel gered van stortplaatsen",
+      "panelsProduced": "Panelen geproduceerd",
+      "wasteToLandfill": "Afval naar stortplaats",
+      "returnRate": "Deelname retourprogramma",
+      "units": {
+        "tons": "ton"
+      }
+    },
+    "return": {
+      "tag": "RETOURPROGRAMMA",
+      "title": "Gratis Paneel Retour",
+      "description": "Wanneer uw panelen het einde van hun levensduur bereiken—door renovatie of slijtage—halen we ze gratis op en recycleren ze tot nieuwe panelen. Akoestische oplossingen zonder schuldgevoel.",
+      "benefit1": "Gratis ophaling in België & Nederland",
+      "benefit2": "Panelen gerecycleerd tot nieuwe producten",
+      "benefit3": "Certificaat van circulaire verwerking",
+      "boxText": "Gratis Retour Ophaling"
+    }
+  },
+  "contact": {
+    "tag": "NEEM CONTACT OP",
+    "title": "Contacteer Ons",
+    "subtitle": "Heeft u vragen over onze producten of wilt u een offerte op maat? We horen graag van u.",
+    "form": {
+      "title": "Stuur Ons een Bericht",
+      "subtitle": "Vul het onderstaande formulier in en we nemen binnen 24 uur contact met u op.",
+      "name": "Naam",
+      "namePlaceholder": "Uw volledige naam",
+      "email": "E-mail",
+      "emailPlaceholder": "uw@email.com",
+      "company": "Bedrijf",
+      "companyPlaceholder": "Uw bedrijfsnaam",
+      "phone": "Telefoon",
+      "phonePlaceholder": "+32 ...",
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Selecteer een onderwerp",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel ons over uw project of vraag...",
+      "submit": "Verstuur Bericht",
+      "sending": "Verzenden...",
+      "successMessage": "Bedankt! We nemen binnen 24 uur contact met u op.",
+      "errorMessage": "Er ging iets mis. Probeer het opnieuw.",
+      "subjects": {
+        "quote": "Offerte Aanvragen",
+        "info": "Productinformatie",
+        "partnership": "Samenwerkingsaanvraag",
+        "other": "Anders"
+      }
+    },
+    "info": {
+      "title": "Contactgegevens",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "address": "Adres",
+      "hours": "Openingstijden",
+      "hoursValue": "Maandag - Vrijdag: 9:00 - 17:00"
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "subtitle": "Snelle antwoorden op veelgestelde vragen.",
+      "q1": {
+        "question": "Wat is uw levertijd?",
+        "answer": "Standaard bestellingen worden binnen 2-3 weken verzonden. Aangepaste kleuren en maten kunnen 4-6 weken duren."
+      },
+      "q2": {
+        "question": "Levert u internationaal?",
+        "answer": "Ja! We leveren in heel Europa. Neem contact met ons op voor verzendoffertes buiten de EU."
+      },
+      "q3": {
+        "question": "Kan ik samples krijgen?",
+        "answer": "Absoluut. We bieden gratis sample kits met materiaalstalen en kleuropties."
+      }
+    }
+  },
+  "blog": {
+    "tag": "INZICHTEN",
+    "title": "Blog & Nieuws",
+    "subtitle": "Gedachten over akoestiek, duurzaamheid en design van ons team.",
+    "readMore": "Lees artikel",
+    "loadMore": "Laad Meer Artikelen",
+    "share": "Deel dit artikel",
+    "relatedTag": "GERELATEERD",
+    "relatedTitle": "Gerelateerde Artikelen",
+    "filters": {
+      "all": "Alles",
+      "sustainability": "Duurzaamheid",
+      "products": "Producten",
+      "education": "Educatie",
+      "company": "Bedrijf"
+    },
+    "categories": {
+      "sustainability": "Duurzaamheid",
+      "products": "Producten",
+      "materials": "Materialen",
+      "education": "Educatie",
+      "company": "Bedrijf",
+      "design": "Design"
+    }
+  },
+  "blogPosts": {
+    "circular-economy-acoustics": {
+      "title": "De Circulaire Economie: Een Nieuw Tijdperk voor Akoestische Oplossingen",
+      "excerpt": "Hoe circulaire ontwerpprincipes de akoestische paneelIndustrie transformeren en waarom het belangrijk is voor de toekomst.",
+      "category": "sustainability",
+      "date": "2024-01-15",
+      "readTime": "5",
+      "content": {
+        "intro": "De akoestische paneelIndustrie ondergaat een fundamentele transformatie. Traditionele lineaire modellen—nemen, maken, weggooien—maken plaats voor circulaire benaderingen die materialen eindeloos in gebruik houden.",
+        "section1": {
+          "title": "Waarom Circulariteit Belangrijk Is",
+          "text": "Elk jaar belanden miljoenen tonnen akoestische materialen op stortplaatsen. Deze materialen, vaak met synthetische vezels en lijmen, kunnen eeuwen nodig hebben om te ontbinden. De circulaire economie biedt een alternatief: producten ontwerpen die continu kunnen worden gerecycleerd."
+        },
+        "section2": {
+          "title": "Onze Aanpak",
+          "text": "Bij Re-Sound hebben we onze panelen van de grond af ontworpen voor circulariteit. Door alleen gerecycleerd textiel en bio-based bindmiddelen te gebruiken, kunnen onze panelen volledig worden gerecycleerd aan het einde van hun levensduur—ze worden nieuwe panelen in plaats van afval."
+        },
+        "quote": "Het beste akoestische paneel is er een dat nooit afval wordt.",
+        "section3": {
+          "title": "De Business Case",
+          "text": "Circulair design is niet alleen goed voor het milieu—het is goed zakendoen. Door waarde te creëren uit afval en terugnameprogramma's aan te bieden, bouwen we sterkere relaties met klanten terwijl we materiaalkosten verlagen."
+        },
+        "conclusion": {
+          "title": "Vooruitkijken",
+          "text": "De transitie naar circulaire akoestiek is net begonnen. Naarmate meer bedrijven deze principes adopteren, zien we een industrie transformeren—een waar akoestisch comfort en milieuverantwoordelijkheid hand in hand gaan."
+        }
+      }
+    },
+    "office-acoustic-solutions": {
+      "title": "De Perfecte Akoestische Omgeving Creëren in Moderne Kantoren",
+      "excerpt": "Praktische tips voor het verbeteren van akoestiek in open kantoren, vergaderruimtes en samenwerkingsruimtes.",
+      "category": "products",
+      "date": "2024-01-10",
+      "readTime": "4",
+      "content": {
+        "intro": "Open kantoren presenteren unieke akoestische uitdagingen. Zonder goede behandeling kunnen geluidsniveaus de productiviteit tot 66% verminderen. Hier leest u hoe u een gebalanceerde akoestische omgeving creëert.",
+        "section1": {
+          "title": "Kantorakoestiek Begrijpen",
+          "text": "Geluid in kantoren komt van meerdere bronnen: spraak, apparatuur, HVAC-systemen en extern geluid. Effectief akoestisch ontwerp pakt al deze elementen aan."
+        },
+        "section2": {
+          "title": "Strategische Paneelplaatsing",
+          "text": "Niet alle oppervlakken hebben behandeling nodig. Focus op plafondgebieden boven werkplekken, muren tussen samenwerkings- en focuszones, en scheidingswanden tussen bureaus."
+        },
+        "quote": "Goede akoestiek is onzichtbaar—je merkt het alleen als het ontbreekt.",
+        "section3": {
+          "title": "Absorptie en Reflectie Balanceren",
+          "text": "Volledige absorptie creëert een onnatuurlijk 'dode' ruimte. Het doel is nagalm verminderen terwijl enige natuurlijke sfeer behouden blijft."
+        },
+        "conclusion": {
+          "title": "Begin Klein, Meet Resultaten",
+          "text": "Begin met impactvolle gebieden en meet het verschil. Vaak kan strategische plaatsing van enkele panelen een ruimte transformeren."
+        }
+      }
+    },
+    "recycled-materials-quality": {
+      "title": "Gerecycleerde Materialen: Kwaliteitsnormen Halen en Overtreffen",
+      "excerpt": "Hoe we ervoor zorgen dat onze gerecycleerde textielpanelen de prestaties van traditionele materialen evenaren of overtreffen.",
+      "category": "materials",
+      "date": "2024-01-05",
+      "readTime": "6",
+      "content": {
+        "intro": "Er bestaat een hardnekkige mythe dat gerecycleerde materialen compromissen in kwaliteit betekenen. Onze panelen bewijzen het tegendeel—gerecycleerd kan superieur betekenen.",
+        "section1": {
+          "title": "Rigoureuze Materiaalselectie",
+          "text": "Niet al het gerecycleerde textiel is geschikt voor akoestische panelen. We selecteren en sorteren materialen zorgvuldig om consistente vezelkwaliteit en akoestische prestaties te garanderen."
+        },
+        "section2": {
+          "title": "Geavanceerde Verwerking",
+          "text": "Onze eigen verwerking transformeert gemengd textiel tot uniforme akoestische vezel. Deze consistentie is de sleutel tot het behalen van voorspelbare, hoogwaardige resultaten."
+        },
+        "quote": "Duurzaamheid en kwaliteit zijn geen afwegingen—ze zijn complementen.",
+        "section3": {
+          "title": "Onafhankelijke Tests",
+          "text": "Elke batch ondergaat akoestische tests volgens EN ISO 354-normen. We behalen consistent Klasse A absorptiewaarden, voldoend aan dezelfde normen als panelen van nieuw materiaal."
+        },
+        "conclusion": {
+          "title": "De Toekomst is Gerecycleerd",
+          "text": "Naarmate verwerkingstechnologie verbetert, zullen gerecycleerde materialen steeds beter presteren dan nieuwe alternatieven. De vraag is niet of we gerecycleerd moeten gebruiken—maar hoe snel we kunnen opschalen."
+        }
+      }
+    },
+    "sound-absorption-explained": {
+      "title": "Geluidsabsorptie Uitgelegd: Een Gids voor Architecten",
+      "excerpt": "Alles wat u moet weten over geluidsabsorptiecoëfficiënten en het selecteren van de juiste panelen.",
+      "category": "education",
+      "date": "2024-01-01",
+      "readTime": "7",
+      "content": {
+        "intro": "Het begrijpen van akoestische specificaties kan uitdagend zijn. Deze gids verduidelijkt de belangrijkste metrics en wat ze betekenen voor uw project.",
+        "section1": {
+          "title": "De αw Coëfficiënt",
+          "text": "De gewogen geluidsabsorptiecoëfficiënt (αw) is de meest gebruikte metric. Hij varieert van 0 (geen absorptie) tot 1 (volledige absorptie). Onze panelen behalen αw 0.95-1.00."
+        },
+        "section2": {
+          "title": "Frequentieoverwegingen",
+          "text": "Verschillende materialen absorberen verschillende frequenties. Poreuze materialen zoals de onze blinken uit bij midden- en hoge frequenties—het spraakbereik—wat ze ideaal maakt voor kantoren."
+        },
+        "quote": "De juiste absorptie hangt af van het doel van de ruimte.",
+        "section3": {
+          "title": "Dekkingsberekeningen",
+          "text": "Meer is niet altijd beter. De ideale dekking hangt af van ruimtevolume, oppervlaktematerialen en beoogd gebruik. We bieden gratis akoestische consultaties om correct te specificeren."
+        },
+        "conclusion": {
+          "title": "Voorbij de Cijfers",
+          "text": "Hoewel specificaties belangrijk zijn, houdt het beste akoestische ontwerp rekening met de hele ervaring. Esthetiek, duurzaamheid en welzijn dragen allemaal bij aan succesvolle ruimtes."
+        }
+      }
+    }
+  },
+  "newsletter": {
+    "tag": "BLIJF OP DE HOOGTE",
+    "title": "Abonneer op Onze Nieuwsbrief",
+    "subtitle": "Ontvang het laatste nieuws over circulaire akoestiek, nieuwe producten en duurzame design inzichten.",
+    "placeholder": "Voer uw e-mail in",
+    "subscribe": "Abonneren",
+    "subscribing": "Abonneren...",
+    "success": "Bedankt voor uw abonnement! Controleer uw inbox voor bevestiging.",
+    "privacy": "We respecteren uw privacy. Uitschrijven kan op elk moment."
+  },
+  "footer": {
+    "description": "Circulaire akoestische oplossingen gemaakt van gerecycleerde materialen. Ontworpen voor de planeet, gemaakt in België.",
+    "products": "Producten",
+    "company": "Bedrijf",
+    "contact": "Contact",
+    "allProducts": "Alle Producten",
+    "copyright": "© {year} Re-Sound. Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene Voorwaarden"
+  },
+  "cookies": {
+    "title": "We gebruiken cookies",
+    "description": "We gebruiken cookies om uw ervaring te verbeteren en siteverkeer te analyseren. Door te accepteren gaat u akkoord met ons gebruik van cookies.",
+    "accept": "Alles Accepteren",
+    "reject": "Alles Weigeren"
+  },
+  "notFound": {
+    "title": "Pagina Niet Gevonden",
+    "description": "Sorry, we konden de pagina die u zoekt niet vinden. Hij is mogelijk verplaatst of bestaat niet meer.",
+    "backHome": "Terug naar Home",
+    "contactUs": "Contacteer Ons"
+  }
+}

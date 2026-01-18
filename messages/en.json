@@ -1,0 +1,528 @@
+{
+  "meta": {
+    "homeDescription": "High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.",
+    "productsTitle": "Products",
+    "productsDescription": "Explore our range of circular acoustic panels: Interior, Solid, and Divide. 100% recycled, 100% recyclable.",
+    "aboutTitle": "About Re-Sound",
+    "aboutDescription": "Learn about our mission to create circular acoustic solutions from recycled materials, proudly made in Belgium.",
+    "sustainabilityTitle": "Sustainability",
+    "sustainabilityDescription": "Discover how we close the loop with our fully circular acoustic panels—from recycled materials to free return programs.",
+    "contactTitle": "Contact Us",
+    "contactDescription": "Get in touch with Re-Sound for quotes, questions, or partnership inquiries.",
+    "blogTitle": "Blog",
+    "blogDescription": "Insights on circular economy, acoustics, and sustainable design from the Re-Sound team."
+  },
+  "nav": {
+    "products": "Products",
+    "about": "About",
+    "sustainability": "Sustainability",
+    "contact": "Contact",
+    "cta": "Request Quote"
+  },
+  "hero": {
+    "badge": "100% Circular Acoustics",
+    "title": "Acoustics made",
+    "titleHighlight": "circular.",
+    "subtitle": "High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.",
+    "ctaPrimary": "Discover Products",
+    "ctaSecondary": "How It Works",
+    "panelTag": "100% Recycled Materials"
+  },
+  "stats": {
+    "absorption": "Sound Absorption",
+    "colors": "Colors Available",
+    "waste": "Waste to Landfill",
+    "madeIn": "Made in Belgium"
+  },
+  "materials": {
+    "tag": "WHAT WE USE",
+    "title": "From Waste to Wonder",
+    "subtitle": "We transform various recycled materials into high-performance acoustic panels.",
+    "jeans": "Jeans",
+    "upholstery": "Upholstery",
+    "clothing": "Clothing",
+    "textiles": "Textiles",
+    "industrial": "Industrial",
+    "bags": "Bags",
+    "wool": "Wool",
+    "mattresses": "Mattresses"
+  },
+  "products": {
+    "tag": "OUR PRODUCTS",
+    "title": "Acoustic Solutions",
+    "learnMore": "Learn more",
+    "pageTitle": "Our Products",
+    "pageSubtitle": "Discover our range of circular acoustic panels, each designed for specific applications while maintaining our commitment to sustainability.",
+    "requestQuote": "Request a Quote",
+    "learnCircular": "Our Circular Process",
+    "relatedTag": "MORE PRODUCTS",
+    "relatedTitle": "Related Products",
+    "ctaTitle": "Ready to transform your space?",
+    "ctaSubtitle": "Contact us for a custom quote tailored to your acoustic needs.",
+    "ctaPrimary": "Get a Quote",
+    "interior": {
+      "title": "Interior",
+      "description": "Expandable acoustic panels for walls and ceilings. Perfect for offices, restaurants, and public spaces.",
+      "fullDescription": "Our Interior panels are designed for seamless integration into any space. Made from 100% recycled textiles, they offer exceptional sound absorption while adding visual warmth to your environment."
+    },
+    "solid": {
+      "title": "Solid",
+      "description": "Minimal, high-density panels for maximum acoustic performance. Ideal for demanding environments.",
+      "fullDescription": "Solid panels combine minimalist aesthetics with maximum acoustic performance. Their high-density construction makes them perfect for spaces requiring superior sound control."
+    },
+    "divide": {
+      "title": "Divide",
+      "description": "Freestanding acoustic dividers for flexible space management. Mobile and modular.",
+      "fullDescription": "Divide offers flexible space management with freestanding acoustic panels. Perfect for open offices, they can be easily moved and reconfigured as your needs change."
+    },
+    "highlights": {
+      "absorption": {
+        "title": "Sound Absorption",
+        "value": "Up to αw 1.00"
+      },
+      "recyclable": {
+        "title": "Recyclable",
+        "value": "100% at end of life"
+      },
+      "origin": {
+        "title": "Origin",
+        "value": "Made in Belgium"
+      }
+    },
+    "features": {
+      "performance": {
+        "title": "High Performance",
+        "description": "Class A sound absorption for optimal acoustic comfort in any environment."
+      },
+      "circular": {
+        "title": "Fully Circular",
+        "description": "Made from recycled materials and 100% recyclable at end of life."
+      },
+      "customization": {
+        "title": "Custom Options",
+        "description": "Available in 50+ colors and custom sizes to match your design vision."
+      }
+    }
+  },
+  "specs": {
+    "tag": "SPECIFICATIONS",
+    "title": "Technical Details",
+    "dimensions": "Dimensions",
+    "thickness": "Thickness",
+    "weight": "Weight",
+    "height": "Height",
+    "absorption": "Absorption Coefficient",
+    "fireClass": "Fire Classification",
+    "material": "Material",
+    "recycledTextiles": "100% Recycled Textiles",
+    "certifications": "Certifications"
+  },
+  "why": {
+    "tag": "WHY RE-SOUND",
+    "title": "Why Choose Circular Acoustic Panels?",
+    "subtitle": "We believe great acoustics shouldn't cost the earth. Our panels prove that sustainable choices can deliver superior performance.",
+    "diagramLabel": "Circular",
+    "features": {
+      "performance": {
+        "title": "Superior Performance",
+        "description": "Class A absorption rating (αw 0.95-1.00) for optimal acoustic comfort."
+      },
+      "durability": {
+        "title": "Built to Last",
+        "description": "High-quality manufacturing ensures decades of performance."
+      },
+      "circular": {
+        "title": "Truly Circular",
+        "description": "Free return program—we recycle your panels into new ones."
+      },
+      "customization": {
+        "title": "Fully Customizable",
+        "description": "50+ colors, custom sizes, and various mounting options."
+      }
+    }
+  },
+  "circular": {
+    "tag": "CIRCULAR ECONOMY",
+    "title": "Close the",
+    "titleHighlight": "loop.",
+    "subtitle": "Our panels begin their life as waste and can return to become new panels—creating an endless cycle of sustainable acoustic solutions.",
+    "loopLabel": "Endless Cycle",
+    "steps": {
+      "collect": {
+        "title": "Collect",
+        "description": "We gather recycled textiles from various sources."
+      },
+      "transform": {
+        "title": "Transform",
+        "description": "Materials are processed into acoustic panels."
+      },
+      "install": {
+        "title": "Install",
+        "description": "Panels bring acoustic comfort to your space."
+      },
+      "return": {
+        "title": "Return",
+        "description": "Free pickup and recycling into new panels."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Space?",
+    "subtitle": "Get in touch for a custom quote or to learn more about our circular acoustic solutions.",
+    "primary": "Request a Quote",
+    "secondary": "View Products"
+  },
+  "about": {
+    "tag": "ABOUT US",
+    "title": "Acoustics Made Circular",
+    "subtitle": "We're on a mission to prove that sustainable business is good business.",
+    "story": {
+      "tag": "OUR STORY",
+      "title": "From Waste to Wonder",
+      "paragraph1": "Re-Sound was born from a simple question: what if we could transform the mountains of textile waste into something beautiful and useful?",
+      "paragraph2": "Founded in Belgium in 2021, we set out to create acoustic panels that perform as well as traditional products while being 100% circular.",
+      "paragraph3": "Today, we've diverted tons of textiles from landfills and created acoustic solutions for hundreds of spaces across Europe.",
+      "imagePlaceholder": "Re-Sound Production Facility",
+      "founded": "Founded in Beveren-Waas"
+    },
+    "values": {
+      "tag": "OUR VALUES",
+      "title": "What We Stand For",
+      "circular": {
+        "title": "Circular by Design",
+        "description": "Every decision we make considers the full lifecycle of our products."
+      },
+      "quality": {
+        "title": "Uncompromising Quality",
+        "description": "Sustainable doesn't mean settling—our panels meet the highest standards."
+      },
+      "partnership": {
+        "title": "True Partnership",
+        "description": "We work closely with clients to find the perfect acoustic solution."
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "We're always exploring new materials and improving our processes."
+      }
+    },
+    "team": {
+      "tag": "OUR TEAM",
+      "title": "Meet the Team",
+      "subtitle": "A passionate group dedicated to sustainable acoustics.",
+      "roles": {
+        "founder": "Founder & CEO",
+        "operations": "Operations",
+        "sales": "Sales & Partnerships"
+      }
+    },
+    "partners": {
+      "tag": "PARTNERS",
+      "title": "Working Together",
+      "types": {
+        "supplier": "Material Supplier",
+        "research": "Research Partner",
+        "distribution": "Distribution",
+        "certification": "Certification"
+      }
+    },
+    "belgian": {
+      "tag": "MADE IN BELGIUM",
+      "title": "Proudly Belgian",
+      "description": "All our panels are designed and manufactured in Belgium, supporting local employment and reducing transport emissions.",
+      "madeIn": "Made in Belgium 🇧🇪",
+      "production": {
+        "title": "Local Production",
+        "description": "Manufacturing in Beveren-Waas"
+      },
+      "social": {
+        "title": "Social Enterprise",
+        "description": "Partnerships with social workshops"
+      },
+      "rd": {
+        "title": "Belgian R&D",
+        "description": "Continuous innovation locally"
+      }
+    }
+  },
+  "sustainability": {
+    "tag": "SUSTAINABILITY",
+    "title": "Truly Circular Acoustics",
+    "subtitle": "We're not just reducing waste—we're eliminating it through a fully circular approach.",
+    "intro": {
+      "title": "The Circular Economy",
+      "description": "Traditional acoustic panels end up in landfills. Ours begin a new life. Our circular model ensures that materials flow continuously, never becoming waste.",
+      "endless": "Endless Cycle"
+    },
+    "process": {
+      "tag": "THE PROCESS",
+      "title": "How We Close the Loop",
+      "collect": {
+        "title": "Collect Materials",
+        "description": "We source post-consumer and post-industrial textile waste from partners across Europe."
+      },
+      "process": {
+        "title": "Process & Transform",
+        "description": "Materials are sorted, cleaned, and processed into acoustic-grade fiber."
+      },
+      "create": {
+        "title": "Create Panels",
+        "description": "Fibers are bonded and finished into beautiful, high-performance acoustic panels."
+      },
+      "return": {
+        "title": "Return & Recycle",
+        "description": "At end of life, we pick up panels for free and recycle them into new products."
+      }
+    },
+    "materials": {
+      "tag": "MATERIALS",
+      "title": "What We Transform",
+      "subtitle": "From discarded textiles to premium acoustic solutions."
+    },
+    "impact": {
+      "tag": "OUR IMPACT",
+      "title": "Making a Difference",
+      "textilesSaved": "Textiles saved from landfill",
+      "panelsProduced": "Panels produced",
+      "wasteToLandfill": "Waste to landfill",
+      "returnRate": "Return program participation",
+      "units": {
+        "tons": "tons"
+      }
+    },
+    "return": {
+      "tag": "RETURN PROGRAM",
+      "title": "Free Panel Return",
+      "description": "When your panels reach end of life—whether from renovation or wear—we'll pick them up for free and recycle them into new panels. It's acoustic solutions without the guilt.",
+      "benefit1": "Free pickup anywhere in Belgium & Netherlands",
+      "benefit2": "Panels recycled into new products",
+      "benefit3": "Certificate of circular disposal",
+      "boxText": "Free Return Pickup"
+    }
+  },
+  "contact": {
+    "tag": "GET IN TOUCH",
+    "title": "Contact Us",
+    "subtitle": "Have questions about our products or want a custom quote? We'd love to hear from you.",
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "phone": "Phone",
+      "phonePlaceholder": "+32 ...",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project or question...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Thank you! We'll get back to you within 24 hours.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "subjects": {
+        "quote": "Request a Quote",
+        "info": "Product Information",
+        "partnership": "Partnership Inquiry",
+        "other": "Other"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday: 9:00 - 17:00"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to common questions.",
+      "q1": {
+        "question": "What is your lead time?",
+        "answer": "Standard orders ship within 2-3 weeks. Custom colors and sizes may require 4-6 weeks."
+      },
+      "q2": {
+        "question": "Do you ship internationally?",
+        "answer": "Yes! We ship throughout Europe. Contact us for shipping quotes outside the EU."
+      },
+      "q3": {
+        "question": "Can I get samples?",
+        "answer": "Absolutely. We offer free sample kits with material swatches and color options."
+      }
+    }
+  },
+  "blog": {
+    "tag": "INSIGHTS",
+    "title": "Blog & News",
+    "subtitle": "Thoughts on acoustics, sustainability, and design from our team.",
+    "readMore": "Read article",
+    "loadMore": "Load More Articles",
+    "share": "Share this article",
+    "relatedTag": "RELATED",
+    "relatedTitle": "Related Articles",
+    "defaultAuthor": {
+      "name": "Re-Sound Team",
+      "role": "Circular Acoustics Experts"
+    },
+    "filters": {
+      "all": "All",
+      "sustainability": "Sustainability",
+      "products": "Products",
+      "education": "Education",
+      "company": "Company"
+    },
+    "categories": {
+      "sustainability": "Sustainability",
+      "products": "Products",
+      "materials": "Materials",
+      "education": "Education",
+      "company": "Company",
+      "design": "Design"
+    }
+  },
+  "blogPosts": {
+    "circular-economy-acoustics": {
+      "title": "The Circular Economy: A New Era for Acoustic Solutions",
+      "excerpt": "How circular design principles are transforming the acoustic panel industry and why it matters for the future.",
+      "category": "sustainability",
+      "date": "2024-01-15",
+      "readTime": "5",
+      "content": {
+        "intro": "The acoustic panel industry is undergoing a fundamental transformation. Traditional linear models—take, make, dispose—are giving way to circular approaches that keep materials in use indefinitely.",
+        "section1": {
+          "title": "Why Circularity Matters",
+          "text": "Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives, can take centuries to decompose. The circular economy offers an alternative: designing products that can be continuously recycled."
+        },
+        "section2": {
+          "title": "Our Approach",
+          "text": "At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels can be fully recycled at end of life—becoming new panels rather than waste."
+        },
+        "quote": "The best acoustic panel is one that never becomes waste.",
+        "section3": {
+          "title": "The Business Case",
+          "text": "Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we build stronger relationships with customers while reducing material costs."
+        },
+        "conclusion": {
+          "title": "Looking Forward",
+          "text": "The transition to circular acoustics is just beginning. As more companies adopt these principles, we'll see an industry transformed—one where acoustic comfort and environmental responsibility go hand in hand."
+        }
+      }
+    },
+    "office-acoustic-solutions": {
+      "title": "Creating the Perfect Acoustic Environment in Modern Offices",
+      "excerpt": "Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.",
+      "category": "products",
+      "date": "2024-01-10",
+      "readTime": "4",
+      "content": {
+        "intro": "Open-plan offices present unique acoustic challenges. Without proper treatment, noise levels can reduce productivity by up to 66%. Here's how to create a balanced acoustic environment.",
+        "section1": {
+          "title": "Understanding Office Acoustics",
+          "text": "Sound in offices comes from multiple sources: speech, equipment, HVAC systems, and external noise. Effective acoustic design addresses all these elements."
+        },
+        "section2": {
+          "title": "Strategic Panel Placement",
+          "text": "Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers between desks."
+        },
+        "quote": "Good acoustics is invisible—you only notice when it's missing.",
+        "section3": {
+          "title": "Balancing Absorption and Reflection",
+          "text": "Complete absorption creates an unnaturally 'dead' space. The goal is reducing reverberation while maintaining some natural ambience."
+        },
+        "conclusion": {
+          "title": "Start Small, Measure Results",
+          "text": "Begin with high-impact areas and measure the difference. Often, strategic placement of a few panels can transform a space."
+        }
+      }
+    },
+    "recycled-materials-quality": {
+      "title": "Recycled Materials: Meeting and Exceeding Quality Standards",
+      "excerpt": "How we ensure our recycled textile panels match or exceed the performance of traditional materials.",
+      "category": "materials",
+      "date": "2024-01-05",
+      "readTime": "6",
+      "content": {
+        "intro": "There's a persistent myth that recycled materials mean compromised quality. Our panels prove the opposite—recycled can mean superior.",
+        "section1": {
+          "title": "Rigorous Material Selection",
+          "text": "Not all recycled textiles are suitable for acoustic panels. We carefully select and sort materials to ensure consistent fiber quality and acoustic performance."
+        },
+        "section2": {
+          "title": "Advanced Processing",
+          "text": "Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-performance results."
+        },
+        "quote": "Sustainability and quality aren't trade-offs—they're complements.",
+        "section3": {
+          "title": "Third-Party Testing",
+          "text": "Every batch undergoes acoustic testing to EN ISO 354 standards. We achieve Class A absorption ratings consistently, meeting the same standards as virgin material panels."
+        },
+        "conclusion": {
+          "title": "The Future is Recycled",
+          "text": "As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use recycled—it's how quickly we can scale."
+        }
+      }
+    },
+    "sound-absorption-explained": {
+      "title": "Sound Absorption Explained: A Guide for Architects",
+      "excerpt": "Everything you need to know about sound absorption coefficients and selecting the right panels.",
+      "category": "education",
+      "date": "2024-01-01",
+      "readTime": "7",
+      "content": {
+        "intro": "Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.",
+        "section1": {
+          "title": "The αw Coefficient",
+          "text": "The weighted sound absorption coefficient (αw) is the most common metric. It ranges from 0 (no absorption) to 1 (complete absorption). Our panels achieve αw 0.95-1.00."
+        },
+        "section2": {
+          "title": "Frequency Considerations",
+          "text": "Different materials absorb different frequencies. Porous materials like ours excel at mid and high frequencies—the speech range—making them ideal for offices."
+        },
+        "quote": "The right absorption depends on the room's purpose.",
+        "section3": {
+          "title": "Coverage Calculations",
+          "text": "More isn't always better. The ideal coverage depends on room volume, surface materials, and intended use. We offer free acoustic consultations to help specify correctly."
+        },
+        "conclusion": {
+          "title": "Beyond the Numbers",
+          "text": "While specifications matter, the best acoustic design considers the whole experience. Aesthetics, sustainability, and wellbeing all contribute to successful spaces."
+        }
+      }
+    }
+  },
+  "newsletter": {
+    "tag": "STAY UPDATED",
+    "title": "Subscribe to Our Newsletter",
+    "subtitle": "Get the latest news on circular acoustics, new products, and sustainable design insights.",
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success": "Thank you for subscribing! Check your inbox for confirmation.",
+    "privacy": "We respect your privacy. Unsubscribe at any time."
+  },
+  "footer": {
+    "description": "Circular acoustic solutions crafted from recycled materials. Designed for the planet, made in Belgium.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "allProducts": "All Products",
+    "copyright": "© {year} Re-Sound. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience and analyze site traffic. By accepting, you agree to our use of cookies.",
+    "accept": "Accept All",
+    "reject": "Reject All"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved or no longer exists.",
+    "backHome": "Back to Home",
+    "contactUs": "Contact Us"
+  }
+}
