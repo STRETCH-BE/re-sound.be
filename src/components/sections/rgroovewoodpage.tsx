@@ -892,7 +892,7 @@ export default function RGrooveWoodProductPage() {
             <h2>Seamless Installation</h2>
             <p>
               r-Groove Wood panels feature an innovative tongue-and-groove connection 
-              system that ensures invisible joints and a cohesive surface. Whether you're 
+              system that ensures invisible joints and a cohesive surface. Whether you&apos;re 
               a professional installer or a skilled DIYer, our system makes installation 
               straightforward.
             </p>
