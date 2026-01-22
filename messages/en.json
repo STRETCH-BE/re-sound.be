@@ -526,3 +526,23 @@
     "contactUs": "Contact Us"
   }
 }
+{
+  "products": {
+    "filters": {
+      "title": "Filter Products",
+      "clear": "Clear all",
+      "finish": "Product Finish",
+      "textile": "Textile",
+      "wood": "Wood",
+      "pet": "PET",
+      "type": "Product Type",
+      "wallPanel": "Wall Panel",
+      "ceilingPanel": "Ceiling Panel",
+      "divider": "Divider",
+      "showingAll": "Showing all {count} products",
+      "showingFiltered": "Showing {filtered} of {total} products",
+      "noResults": "No products match your filters",
+      "clearAndShowAll": "Clear filters and show all"
+    }
+  }
+}
