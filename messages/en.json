@@ -90,25 +90,31 @@
       "title": "Divide",
       "description": "Freestanding acoustic dividers for flexible space management. Mobile and modular.",
       "fullDescription": "Divide offers flexible space management with freestanding acoustic panels. Perfect for open offices, they can be easily moved and reconfigured as your needs change."
+    },
     "rwood-groove": {
       "title": "rWood - Groove",
-      "description": "Premium acoustic wood panels with natural oak and walnut veneers. Elegant design meets superior sound absorption."
+      "description": "Premium acoustic wood panels with natural oak and walnut veneers. Elegant design meets superior sound absorption.",
+      "fullDescription": "rWood - Groove panels combine the natural beauty of FSC-certified wood with exceptional acoustic performance. Featuring precision-milled grooves and integrated felt backing, these panels transform any space with warmth and style while delivering Class A sound absorption."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
-      "description": "Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance."
+      "description": "Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.",
+      "fullDescription": "rPET - Groove panels feature a distinctive linear pattern created from 100% recycled PET bottles. The grooved design maximizes sound absorption while adding contemporary texture to walls and ceilings."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
-      "description": "Versatile recycled PET acoustic panels. Clean design for walls and ceilings with superior sound control."
+      "description": "Versatile recycled PET acoustic panels. Clean design for walls and ceilings with superior sound control.",
+      "fullDescription": "rPET - Panel offers a clean, minimal aesthetic crafted entirely from recycled PET bottles. These versatile panels provide excellent acoustic performance for any interior application."
     },
     "rpet-circle": {
       "title": "rPET - Circle",
-      "description": "Circular acoustic ceiling elements made from recycled PET. Create visual interest while improving acoustics."
+      "description": "Circular acoustic ceiling elements made from recycled PET. Create visual interest while improving acoustics.",
+      "fullDescription": "rPET - Circle brings a unique design element to ceiling acoustics. These circular panels, made from recycled PET, create striking visual compositions while effectively controlling sound reverberation."
     },
     "rpet-divide": {
       "title": "rPET - Divide",
-      "description": "Freestanding acoustic dividers made from recycled PET. Flexible space management with sustainable materials."
+      "description": "Freestanding acoustic dividers made from recycled PET. Flexible space management with sustainable materials.",
+      "fullDescription": "rPET - Divide combines the flexibility of freestanding dividers with sustainable recycled PET construction. Perfect for creating adaptable workspaces and privacy zones in open environments."
     },
     "highlights": {
       "absorption": {
