@@ -57,15 +57,15 @@ const products = [
   },
   { 
     slug: 'rWood - Groove', 
-    image: '/images/products/divide/divide_card.webp',
+    image: '/images/products/rwood-groove/hero-rWood-Groove.webp',
     tags: {
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-  { 
+  {
     slug: 'rPET - Groove', 
-    image: '/images/products/divide/divide_card.webp',
+    image: '/images/products/rpet-groove/hero-rpet-groove.webp',
     tags: {
       finish: ['pet'],
       type: ['wall-panel', 'ceiling-panel'],
@@ -73,7 +73,7 @@ const products = [
   },
   { 
     slug: 'rPET - Panel', 
-    image: '/images/products/divide/divide_card.webp',
+    image: '/images/products/rpet-panel/hero-rPET-Flat.webp',
     tags: {
       finish: ['pet'],
       type: ['wall-panel', 'ceiling-panel'],
@@ -81,7 +81,7 @@ const products = [
   },
   { 
     slug: 'rPET - Circle', 
-    image: '/images/products/divide/divide_card.webp',
+    image: '/images/products/rpet-circle/hero-rPET-Ceiling-Circle-grey.webp',
     tags: {
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
@@ -89,7 +89,7 @@ const products = [
   },
   { 
     slug: 'rPET - divide', 
-    image: '/images/products/divide/divide_card.webp',
+    image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
     tags: {
       finish: ['wood'],
       type: ['divider'],
