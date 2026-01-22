@@ -36,14 +36,14 @@ const products = [
     image: '/images/products/interior/interior_card.webp',
     tags: {
       finish: ['textile'],
-      type: ['wall-panel', 'ceiling-panel'],
+      type: ['wall-panel'],
     },
   },
   { 
     slug: 'solid', 
     image: '/images/products/solid/solid_card.webp',
     tags: {
-      finish: ['pet'],
+      finish: ['textile'],
       type: ['wall-panel'],
     },
   },
@@ -52,6 +52,46 @@ const products = [
     image: '/images/products/divide/divide_card.webp',
     tags: {
       finish: ['textile'],
+      type: ['divider'],
+    },
+  },
+  { 
+    slug: 'rWood - Groove', 
+    image: '/images/products/divide/divide_card.webp',
+    tags: {
+      finish: ['wood'],
+      type: ['wall-panel', 'ceiling-panel'],
+    },
+  },
+  { 
+    slug: 'rPET - Groove', 
+    image: '/images/products/divide/divide_card.webp',
+    tags: {
+      finish: ['pet'],
+      type: ['wall-panel', 'ceiling-panel'],
+    },
+  },
+  { 
+    slug: 'rPET - Panel', 
+    image: '/images/products/divide/divide_card.webp',
+    tags: {
+      finish: ['pet'],
+      type: ['wall-panel', 'ceiling-panel'],
+    },
+  },
+  { 
+    slug: 'rPET - Circle', 
+    image: '/images/products/divide/divide_card.webp',
+    tags: {
+      finish: ['wood'],
+      type: ['wall-panel', 'ceiling-panel'],
+    },
+  },
+  { 
+    slug: 'rPET - divide', 
+    image: '/images/products/divide/divide_card.webp',
+    tags: {
+      finish: ['wood'],
       type: ['divider'],
     },
   },
