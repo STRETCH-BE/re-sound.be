@@ -1,5 +1,4 @@
 'use client';
-
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
@@ -12,7 +11,7 @@ interface ProductCardProps {
 export default function ProductCard({ slug, image }: ProductCardProps) {
   const t = useTranslations(`products.${slug}`);
   const tCommon = useTranslations('products');
-
+  
   return (
     <div className="product-card">
       <div className="product-image">
