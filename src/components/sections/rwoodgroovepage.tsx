@@ -1015,15 +1015,15 @@ export default function RWoodGrooveProductPage() {
                 </tr>
                 <tr>
                   <td>Thickness</td>
-                  <td>16 mm</td>
+                  <td>19 mm</td>
                 </tr>
                 <tr>
                   <td>Groove depth</td>
-                  <td>10 mm</td>
+                  <td>15 mm</td>
                 </tr>
                 <tr>
                   <td>Groove width</td>
-                  <td>16 mm</td>
+                  <td>15 mm</td>
                 </tr>
               </tbody>
             </table>
@@ -1091,7 +1091,7 @@ export default function RWoodGrooveProductPage() {
                 </tr>
                 <tr>
                   <td>Test standard</td>
-                  <td>EN 13501-1</td>
+                  <td>EN 13501</td>
                 </tr>
               </tbody>
             </table>
