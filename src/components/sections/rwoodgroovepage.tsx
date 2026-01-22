@@ -18,20 +18,17 @@ interface LeadFormData {
 
 // Wood finish options for rWood - Groove
 const woodFinishOptions = [
-  { id: 'oak-natural', name: 'Oak Natural', swatch: '/images/products/rwood-groove/swatches/oak-natural.webp', image: '/images/products/rwood-groove/hero-oak-natural.webp', isDark: false },
-  { id: 'oak-white', name: 'Oak White', swatch: '/images/products/rwood-groove/swatches/oak-white.webp', image: '/images/products/rwood-groove/hero-oak-white.webp', isDark: false },
-  { id: 'oak-clear', name: 'Oak Clear', swatch: '/images/products/rwood-groove/swatches/oak-clear.webp', image: '/images/products/rwood-groove/hero-oak-clear.webp', isDark: false },
-  { id: 'oak-brown', name: 'Oak Brown', swatch: '/images/products/rwood-groove/swatches/oak-brown.webp', image: '/images/products/rwood-groove/hero-oak-brown.webp', isDark: true },
-  { id: 'oak-dark', name: 'Oak Dark', swatch: '/images/products/rwood-groove/swatches/oak-dark.webp', image: '/images/products/rwood-groove/hero-oak-dark.webp', isDark: true },
-  { id: 'oak-black', name: 'Oak Black', swatch: '/images/products/rwood-groove/swatches/oak-black.webp', image: '/images/products/rwood-groove/hero-oak-black.webp', isDark: true },
-  { id: 'walnut', name: 'Walnut', swatch: '/images/products/rwood-groove/swatches/walnut.webp', image: '/images/products/rwood-groove/hero-walnut.webp', isDark: true },
+  { id: 'oak-natural', name: 'Silk Oak', swatch: '/images/products/rwood-groove/swatches/silk-oak.jpg', image: '/images/products/rwood-groove/silk-oak.jpg', isDark: false },
+  { id: 'oak-white', name: 'Straw Oak', swatch: '/images/products/rwood-groove/swatches/straw-oak.jpg', image: '/images/products/rwood-groove/straw-oak.jpg', isDark: false },
+  { id: 'oak-clear', name: 'Umber Oak', swatch: '/images/products/rwood-groove/swatches/umber-oak.jpg', image: '/images/products/rwood-groove/umber-oak.jpg', isDark: false },
+  { id: 'oak-brown', name: 'Walnut', swatch: '/images/products/rwood-groove/swatches/walnut.jpg', image: '/images/products/rwood-groove/walnut.jpg', isDark: true },
+  { id: 'oak-dark', name: 'Tobacco Walnut', swatch: '/images/products/rwood-groove/swatches/tobacco-walnut.jpg', image: '/images/products/rwood-groove/tobacco-walnut.jpg', isDark: true },
 ];
 
 // Felt backing options
 const feltOptions = [
   { id: 'black', name: 'Black Felt', color: '#1a1a1a' },
   { id: 'grey', name: 'Grey Felt', color: '#6b6b6b' },
-  { id: 'beige', name: 'Beige Felt', color: '#c4b5a0' },
 ];
 
 // Panel variant options
