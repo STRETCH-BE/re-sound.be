@@ -56,7 +56,7 @@ const products = [
     },
   },
   { 
-    slug: 'rWood - Groove', 
+    slug: 'rwood-groove', 
     image: '/images/products/rwood-groove/hero-rWood-Groove.webp',
     tags: {
       finish: ['wood'],
