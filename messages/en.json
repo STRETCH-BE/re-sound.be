@@ -90,6 +90,25 @@
       "title": "Divide",
       "description": "Freestanding acoustic dividers for flexible space management. Mobile and modular.",
       "fullDescription": "Divide offers flexible space management with freestanding acoustic panels. Perfect for open offices, they can be easily moved and reconfigured as your needs change."
+    "rwood-groove": {
+      "title": "rWood - Groove",
+      "description": "Premium acoustic wood panels with natural oak and walnut veneers. Elegant design meets superior sound absorption."
+    },
+    "rpet-groove": {
+      "title": "rPET - Groove",
+      "description": "Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance."
+    },
+    "rpet-panel": {
+      "title": "rPET - Panel",
+      "description": "Versatile recycled PET acoustic panels. Clean design for walls and ceilings with superior sound control."
+    },
+    "rpet-circle": {
+      "title": "rPET - Circle",
+      "description": "Circular acoustic ceiling elements made from recycled PET. Create visual interest while improving acoustics."
+    },
+    "rpet-divide": {
+      "title": "rPET - Divide",
+      "description": "Freestanding acoustic dividers made from recycled PET. Flexible space management with sustainable materials."
     },
     "highlights": {
       "absorption": {
