@@ -64,7 +64,7 @@ const products = [
     },
   },
   {
-    slug: 'rPET - Groove', 
+    slug: 'rpet-groove', 
     image: '/images/products/rpet-groove/hero-rpet-groove.webp',
     tags: {
       finish: ['pet'],
@@ -72,7 +72,7 @@ const products = [
     },
   },
   { 
-    slug: 'rPET - Panel', 
+    slug: 'rpet-panel', 
     image: '/images/products/rpet-panel/hero-rPET-Flat.webp',
     tags: {
       finish: ['pet'],
@@ -80,31 +80,21 @@ const products = [
     },
   },
   { 
-    slug: 'rPET - Circle', 
+    slug: 'rpet-circle', 
     image: '/images/products/rpet-circle/hero-rPET-Ceiling-Circle-grey.webp',
     tags: {
-      finish: ['wood'],
+      finish: ['pet'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
   { 
-    slug: 'rPET - divide', 
+    slug: 'rpet-divide', 
     image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
     tags: {
-      finish: ['wood'],
+      finish: ['pet'],
       type: ['divider'],
     },
   },
-  // Add more products here with their tags
-  // Example:
-  // { 
-  //   slug: 'rwood', 
-  //   image: '/images/products/rwood/rwood_card.webp',
-  //   tags: {
-  //     finish: ['wood'],
-  //     type: ['wall-panel'],
-  //   },
-  // },
 ];
 
 interface ProductsGridProps {
