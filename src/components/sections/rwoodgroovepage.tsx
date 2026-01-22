@@ -16,15 +16,15 @@ interface LeadFormData {
   companyType: string;
 }
 
-// Wood finish options for r-Groove Wood
+// Wood finish options for rWood - Groove
 const woodFinishOptions = [
-  { id: 'oak-natural', name: 'Oak Natural', swatch: '/images/products/rgroove-wood/swatches/oak-natural.webp', image: '/images/products/rgroove-wood/hero-oak-natural.webp', isDark: false },
-  { id: 'oak-white', name: 'Oak White', swatch: '/images/products/rgroove-wood/swatches/oak-white.webp', image: '/images/products/rgroove-wood/hero-oak-white.webp', isDark: false },
-  { id: 'oak-clear', name: 'Oak Clear', swatch: '/images/products/rgroove-wood/swatches/oak-clear.webp', image: '/images/products/rgroove-wood/hero-oak-clear.webp', isDark: false },
-  { id: 'oak-brown', name: 'Oak Brown', swatch: '/images/products/rgroove-wood/swatches/oak-brown.webp', image: '/images/products/rgroove-wood/hero-oak-brown.webp', isDark: true },
-  { id: 'oak-dark', name: 'Oak Dark', swatch: '/images/products/rgroove-wood/swatches/oak-dark.webp', image: '/images/products/rgroove-wood/hero-oak-dark.webp', isDark: true },
-  { id: 'oak-black', name: 'Oak Black', swatch: '/images/products/rgroove-wood/swatches/oak-black.webp', image: '/images/products/rgroove-wood/hero-oak-black.webp', isDark: true },
-  { id: 'walnut', name: 'Walnut', swatch: '/images/products/rgroove-wood/swatches/walnut.webp', image: '/images/products/rgroove-wood/hero-walnut.webp', isDark: true },
+  { id: 'oak-natural', name: 'Oak Natural', swatch: '/images/products/rwood-groove/swatches/oak-natural.webp', image: '/images/products/rwood-groove/hero-oak-natural.webp', isDark: false },
+  { id: 'oak-white', name: 'Oak White', swatch: '/images/products/rwood-groove/swatches/oak-white.webp', image: '/images/products/rwood-groove/hero-oak-white.webp', isDark: false },
+  { id: 'oak-clear', name: 'Oak Clear', swatch: '/images/products/rwood-groove/swatches/oak-clear.webp', image: '/images/products/rwood-groove/hero-oak-clear.webp', isDark: false },
+  { id: 'oak-brown', name: 'Oak Brown', swatch: '/images/products/rwood-groove/swatches/oak-brown.webp', image: '/images/products/rwood-groove/hero-oak-brown.webp', isDark: true },
+  { id: 'oak-dark', name: 'Oak Dark', swatch: '/images/products/rwood-groove/swatches/oak-dark.webp', image: '/images/products/rwood-groove/hero-oak-dark.webp', isDark: true },
+  { id: 'oak-black', name: 'Oak Black', swatch: '/images/products/rwood-groove/swatches/oak-black.webp', image: '/images/products/rwood-groove/hero-oak-black.webp', isDark: true },
+  { id: 'walnut', name: 'Walnut', swatch: '/images/products/rwood-groove/swatches/walnut.webp', image: '/images/products/rwood-groove/hero-walnut.webp', isDark: true },
 ];
 
 // Felt backing options
@@ -497,8 +497,8 @@ function LeadGenModal({
   );
 }
 
-export default function RGrooveWoodProductPage() {
-  const t = useTranslations('products.rgroove-wood');
+export default function RWoodGrooveProductPage() {
+  const t = useTranslations('products.rwood-groove');
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
@@ -509,12 +509,12 @@ export default function RGrooveWoodProductPage() {
   const [isImageLoading, setIsImageLoading] = useState(false);
 
   const downloads = [
-    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rgroove-wood/product-data-sheet.pdf' },
-    { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rgroove-wood/installation-guide.pdf' },
-    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/rgroove-wood/acoustic-test-report.pdf' },
-    { id: 'color-finish-guide', name: 'Color & Finish Guide', icon: '🎨', file: '/documents/rgroove-wood/color-finish-guide.pdf' },
-    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rgroove-wood/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rgroove-wood/sustainability-declaration.pdf' },
+    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-groove/product-data-sheet.pdf' },
+    { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rwood-groove/installation-guide.pdf' },
+    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/rwood-groove/acoustic-test-report.pdf' },
+    { id: 'color-finish-guide', name: 'Color & Finish Guide', icon: '🎨', file: '/documents/rwood-groove/color-finish-guide.pdf' },
+    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rwood-groove/fire-certificate.pdf' },
+    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rwood-groove/sustainability-declaration.pdf' },
   ];
 
   const handleDownloadClick = (fileUrl: string) => {
@@ -539,7 +539,7 @@ export default function RGrooveWoodProductPage() {
         body: JSON.stringify({
           ...data,
           downloadedFile: selectedDownload.split('/').pop(),
-          source: 'r-Groove Wood Product Page',
+          source: 'rWood - Groove Product Page',
         }),
       });
 
@@ -591,15 +591,15 @@ export default function RGrooveWoodProductPage() {
   };
 
   return (
-    <div className="rgroove-wood-product-page">
+    <div className="rwood-groove-product-page">
       {/* Hero Section */}
       <section className="product-hero">
         <div className="hero-content">
           <span className="product-tag">ACOUSTIC WOOD PANELS</span>
-          <h1>r-Groove Wood</h1>
+          <h1>rWood - Groove</h1>
           <p className="hero-tagline">Natural Beauty, Perfect Acoustics</p>
           <p className="hero-description">
-            Bring natural warmth and sophisticated style to any space with r-Groove Wood 
+            Bring natural warmth and sophisticated style to any space with rWood - Groove 
             acoustic panels. Premium oak and walnut veneers combined with sound-absorbing 
             felt backing create harmony between aesthetics and acoustics.
           </p>
@@ -636,7 +636,7 @@ export default function RGrooveWoodProductPage() {
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={selectedFinish.image}
-                alt={`r-Groove Wood acoustic panel in ${selectedFinish.name}`}
+                alt={`rWood - Groove acoustic panel in ${selectedFinish.name}`}
                 fill
                 style={{ objectFit: 'cover' }}
                 priority
@@ -697,8 +697,8 @@ export default function RGrooveWoodProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rgroove-wood/overview.webp"
-                alt="r-Groove Wood acoustic panel in modern interior"
+                src="/images/products/rwood-groove/overview.webp"
+                alt="rWood - Groove acoustic panel in modern interior"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -708,7 +708,7 @@ export default function RGrooveWoodProductPage() {
             <span className="section-tag">CRAFTSMANSHIP</span>
             <h2>Where Nature Meets Design</h2>
             <p>
-              r-Groove Wood panels transform any room into a space of natural beauty and 
+              rWood - Groove panels transform any room into a space of natural beauty and 
               acoustic comfort. Each panel features premium A-grade oak or walnut veneer, 
               precisely grooved to create the signature linear aesthetic while maximizing 
               sound absorption through integrated felt backing.
@@ -778,7 +778,7 @@ export default function RGrooveWoodProductPage() {
             <span className="section-tag">MATERIALS</span>
             <h2>Premium Finishes</h2>
             <p>
-              Every r-Groove Wood panel is crafted with A-grade veneer, ensuring consistent 
+              Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent 
               grain patterns and superior quality. Choose from our range of oiled and painted 
               finishes to perfectly complement your interior design.
             </p>
@@ -813,7 +813,7 @@ export default function RGrooveWoodProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rgroove-wood/finishes.webp"
+                src="/images/products/rwood-groove/finishes.webp"
                 alt="Wood finish samples"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -891,7 +891,7 @@ export default function RGrooveWoodProductPage() {
             <span className="section-tag">EASY INSTALL</span>
             <h2>Seamless Installation</h2>
             <p>
-              r-Groove Wood panels feature an innovative tongue-and-groove connection 
+              rWood - Groove panels feature an innovative tongue-and-groove connection 
               system that ensures invisible joints and a cohesive surface. Whether you&apos;re 
               a professional installer or a skilled DIYer, our system makes installation 
               straightforward.
@@ -931,7 +931,7 @@ export default function RGrooveWoodProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rgroove-wood/installation.webp"
+                src="/images/products/rwood-groove/installation.webp"
                 alt="Panel installation process"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -947,7 +947,7 @@ export default function RGrooveWoodProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rgroove-wood/sustainability.webp"
+                src="/images/products/rwood-groove/sustainability.webp"
                 alt="Sustainable forestry"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -958,7 +958,7 @@ export default function RGrooveWoodProductPage() {
             <span className="section-tag">SUSTAINABILITY</span>
             <h2>Responsibly Sourced</h2>
             <p>
-              Every r-Groove Wood panel is crafted with sustainability at its core. 
+              Every rWood - Groove panel is crafted with sustainability at its core. 
               Our FSC® certification guarantees that the wood comes from responsibly 
               managed forests that provide environmental, social, and economic benefits.
             </p>
@@ -1162,8 +1162,8 @@ export default function RGrooveWoodProductPage() {
             <div key={i} className="gallery-item">
               <div className="image-container gallery">
                 <Image
-                  src={`/images/products/rgroove-wood/gallery-${i}.webp`}
-                  alt={`r-Groove Wood installation example ${i}`}
+                  src={`/images/products/rwood-groove/gallery-${i}.webp`}
+                  alt={`rWood - Groove installation example ${i}`}
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -1262,7 +1262,7 @@ export default function RGrooveWoodProductPage() {
       </section>
 
       <style jsx>{`
-        .rgroove-wood-product-page {
+        .rwood-groove-product-page {
           --brand-blue: #197FC7;
           --brand-blue-dark: #155d94;
           --brand-blue-pale: #e8f4fc;
