@@ -694,7 +694,7 @@ export default function RWoodGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-groove/FSC_CERT.webp"
+                src="/images/products/rwood-groove/Where Nature Meets Design.webp"
                 alt="rWood - Groove acoustic panel in modern interior"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -928,7 +928,7 @@ export default function RWoodGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-groove/installation.webp"
+                src="/images/products/rwood-groove/seamless installation.jpg"
                 alt="Panel installation process"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -944,7 +944,7 @@ export default function RWoodGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-groove/sustainability.webp"
+                src="/images/products/rwood-groove/FSC_CERT.webp"
                 alt="Sustainable forestry"
                 fill
                 style={{ objectFit: 'cover' }}
