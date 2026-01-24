@@ -39,7 +39,7 @@ const directionOptions = [
 ];
 
 // Default hero image (shown before any color is selected)
-const defaultHeroImage = '/images/products/rpet-flex-groove/hero-rpet-flex-groove.jpg';
+const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
 
 // Lead Generation Form Modal
 function LeadGenModal({ 
@@ -695,7 +695,7 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-flex-groove/curved-surfaces.jpg"
+                src="/images/products/rpet-flex-groove/rPET-Flex-hero.png"
                 alt="rPET Flex-Groove acoustic panel on curved surface"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -839,7 +839,7 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-flex-groove/color-detail.jpg"
+                src="/images/products/rpet-flex-groove/rPET-Flex-hero_1.jpg"
                 alt="rPET Flex-Groove color options"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -952,7 +952,7 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-flex-groove/installation.jpg"
+                src="/images/products/rpet-flex-groove/rPET-Flex-hero_2.jpg"
                 alt="Flex-Groove panel installation"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -968,7 +968,7 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-flex-groove/sustainability.jpg"
+                src="/images/products/rpet-flex-groove/rPET-Flex-hero_3.jpg"
                 alt="Recycled PET bottles"
                 fill
                 style={{ objectFit: 'cover' }}
