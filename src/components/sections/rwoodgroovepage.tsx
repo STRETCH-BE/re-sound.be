@@ -39,6 +39,9 @@ const variantOptions = [
   { id: '3-lamella', name: '3-Lamella', lamellas: 3, lamellaWidth: '84mm', description: 'Statement wide panels' },
 ];
 
+// Default hero image (shown before any swatch is selected)
+const defaultHeroImage = '/images/products/rwood-groove/rWood-Groove_detail.jpg';
+
 // Lead Generation Form Modal
 function LeadGenModal({ 
   isOpen, 
@@ -500,10 +503,13 @@ export default function RWoodGrooveProductPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [selectedFinish, setSelectedFinish] = useState(woodFinishOptions[0]);
+  const [selectedFinish, setSelectedFinish] = useState<typeof woodFinishOptions[0] | null>(null);
   const [selectedFelt, setSelectedFelt] = useState(feltOptions[0]);
   const [selectedVariant, setSelectedVariant] = useState(variantOptions[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
+
+  // Get the current hero image - default or selected finish
+  const currentHeroImage = selectedFinish ? selectedFinish.image : defaultHeroImage;
 
   const downloads = [
     { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-groove/product-data-sheet.pdf' },
@@ -520,7 +526,7 @@ export default function RWoodGrooveProductPage() {
   };
 
   const handleFinishSelect = (finish: typeof woodFinishOptions[0]) => {
-    if (finish.id !== selectedFinish.id) {
+    if (!selectedFinish || finish.id !== selectedFinish.id) {
       setIsImageLoading(true);
       setSelectedFinish(finish);
     }
@@ -632,8 +638,8 @@ export default function RWoodGrooveProductPage() {
           <div className="image-container">
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
-                src={selectedFinish.image}
-                alt={`rWood - Groove acoustic panel in ${selectedFinish.name}`}
+                src={currentHeroImage}
+                alt={`rWood - Groove acoustic panel${selectedFinish ? ` in ${selectedFinish.name}` : ''}`}
                 fill
                 style={{ objectFit: 'cover' }}
                 priority
@@ -653,7 +659,7 @@ export default function RWoodGrooveProductPage() {
               {woodFinishOptions.map((finish) => (
                 <button
                   key={finish.id}
-                  className={`finish-option ${selectedFinish.id === finish.id ? 'active' : ''}`}
+                  className={`finish-option ${selectedFinish?.id === finish.id ? 'active' : ''}`}
                   onClick={() => handleFinishSelect(finish)}
                   title={finish.name}
                   aria-label={`Select ${finish.name} finish`}
@@ -662,13 +668,13 @@ export default function RWoodGrooveProductPage() {
                     className="finish-swatch" 
                     style={{ backgroundImage: `url(${finish.swatch})` }}
                   />
-                  {selectedFinish.id === finish.id && (
+                  {selectedFinish?.id === finish.id && (
                     <span className={`finish-check ${finish.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
                   )}
                 </button>
               ))}
             </div>
-            <span className="selected-finish-name">{selectedFinish.name}</span>
+            <span className="selected-finish-name">{selectedFinish?.name || 'Select a finish'}</span>
           </div>
         </div>
       </section>
