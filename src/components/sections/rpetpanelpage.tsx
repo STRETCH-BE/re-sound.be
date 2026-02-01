@@ -42,7 +42,7 @@ const applicationOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-panel/rpet-panel-hero.jpg';
+const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
 
 // Lead Generation Form Modal
 function LeadGenModal({ 
@@ -884,13 +884,13 @@ export default function RPETPanelProductPage() {
             <div className="showcase-item">
               <div className="image-container">
                 <Image
-                  src="/images/products/rpet-panel/application-restaurant.jpg"
+                  src="/images/products/rpet-panel/application-bank.jpg"
                   alt="Ceiling panels in restaurant"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <div className="showcase-label">Restaurants</div>
+              <div className="showcase-label">Banks</div>
             </div>
             <div className="showcase-item">
               <div className="image-container">
@@ -1125,7 +1125,7 @@ export default function RPETPanelProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-panel/sustainability-bottles.jpg"
+                src="/images/products/rpet-panel/overview-recycled.jpg"
                 alt="Recycled PET bottles"
                 fill
                 style={{ objectFit: 'cover' }}
