@@ -71,6 +71,14 @@ const products = [
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
+    { 
+    slug: 'rpet-flex-groove', 
+    image: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
+    tags: {
+      finish: ['pet'],
+      type: ['wall-panel'],
+    },
+  },
   { 
     slug: 'rpet-panel', 
     image: '/images/products/rpet-panel/hero-rPET-Flat.webp',
