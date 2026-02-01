@@ -18,10 +18,10 @@ interface LeadFormData {
 
 // Color options for rPET - Groove (12 colors)
 const colorOptions = [
-  { id: 'beige', name: 'Cloud White', hex: '#F5F5F5', image: '/images/products/rpet-groove/rPET-Groove-Beige.jpg', isDark: false },
-  { id: 'grey', name: 'Ivory', hex: '#FFFFF0', image: '/images/products/rpet-groove/rPET-Groove-grey.jpg', isDark: false },
-  { id: 'anthracit', name: 'Silver Mist', hex: '#C0C0C0', image: '/images/products/rpet-groove/rPET-Groove-Anthracit.jpg', isDark: false },
-  { id: 'black', name: 'Stone Grey', hex: '#808080', image: '/images/products/rpet-groove/rPET-Groove-Black.jpg', isDark: false },
+  { id: 'beige', name: 'Beige', hex: '#FFFFF0', image: '/images/products/rpet-groove/rPET-Groove-Beige.jpg', isDark: false },
+  { id: 'grey', name: 'Grey', hex: '#BAB9A9', image: '/images/products/rpet-groove/rPET-Groove-grey.jpg', isDark: false },
+  { id: 'anthracite', name: 'Anthracite', hex: '#393D47', image: '/images/products/rpet-groove/rPET-Groove-Anthracit.jpg', isDark: false },
+  { id: 'black', name: 'Black', hex: '#000000', image: '/images/products/rpet-groove/rPET-Groove-Black.jpg', isDark: false },
 ];
 
 // Groove pattern options
