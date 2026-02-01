@@ -1130,7 +1130,7 @@ export default function RPetGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-groove//Users/stretch/Downloads/processing-cnc.jpg"
+                src="/images/products/rpet-groove/processing-cnc.jpg"
                 alt="Panel installation process"
                 fill
                 style={{ objectFit: 'cover' }}
