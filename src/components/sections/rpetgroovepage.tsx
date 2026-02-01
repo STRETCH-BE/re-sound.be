@@ -700,7 +700,7 @@ export default function RPetGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-groove/design-meets-sustainability.jpg"
+                src="/images/products/rpet-groove/rPET-groove-Wood-1.jpg"
                 alt="rPET - Groove acoustic panel in modern office"
                 fill
                 style={{ objectFit: 'cover' }}
