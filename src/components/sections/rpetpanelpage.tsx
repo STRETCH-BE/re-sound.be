@@ -42,7 +42,7 @@ const applicationOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
+const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.jpg';
 
 // Lead Generation Form Modal
 function LeadGenModal({ 
