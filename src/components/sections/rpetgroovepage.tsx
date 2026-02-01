@@ -18,18 +18,10 @@ interface LeadFormData {
 
 // Color options for rPET - Groove (12 colors)
 const colorOptions = [
-  { id: 'white', name: 'Cloud White', hex: '#F5F5F5', image: '/images/products/rpet-groove/cloud-white.jpg', isDark: false },
-  { id: 'ivory', name: 'Ivory', hex: '#FFFFF0', image: '/images/products/rpet-groove/ivory.jpg', isDark: false },
-  { id: 'light-grey', name: 'Silver Mist', hex: '#C0C0C0', image: '/images/products/rpet-groove/silver-mist.jpg', isDark: false },
-  { id: 'grey', name: 'Stone Grey', hex: '#808080', image: '/images/products/rpet-groove/stone-grey.jpg', isDark: false },
-  { id: 'charcoal', name: 'Charcoal', hex: '#36454F', image: '/images/products/rpet-groove/charcoal.jpg', isDark: true },
-  { id: 'black', name: 'Midnight Black', hex: '#1a1a1a', image: '/images/products/rpet-groove/midnight-black.jpg', isDark: true },
-  { id: 'sage', name: 'Sage Green', hex: '#9DC183', image: '/images/products/rpet-groove/sage-green.jpg', isDark: false },
-  { id: 'ocean', name: 'Ocean Blue', hex: '#4F97A3', image: '/images/products/rpet-groove/ocean-blue.jpg', isDark: false },
-  { id: 'navy', name: 'Navy', hex: '#1E3A5F', image: '/images/products/rpet-groove/navy.jpg', isDark: true },
-  { id: 'terracotta', name: 'Terracotta', hex: '#C67B5C', image: '/images/products/rpet-groove/terracotta.jpg', isDark: false },
-  { id: 'burgundy', name: 'Burgundy', hex: '#722F37', image: '/images/products/rpet-groove/burgundy.jpg', isDark: true },
-  { id: 'mustard', name: 'Mustard', hex: '#DDAA33', image: '/images/products/rpet-groove/mustard.jpg', isDark: false },
+  { id: 'beige', name: 'Cloud White', hex: '#F5F5F5', image: '/images/products/rpet-groove/rPET-Groove-Beige.jpg', isDark: false },
+  { id: 'grey', name: 'Ivory', hex: '#FFFFF0', image: '/images/products/rpet-groove/rPET-Groove-grey.jpg', isDark: false },
+  { id: 'anthracit', name: 'Silver Mist', hex: '#C0C0C0', image: '/images/products/rpet-groove/rPET-Groove-Anthracit.jpg', isDark: false },
+  { id: 'black', name: 'Stone Grey', hex: '#808080', image: '/images/products/rpet-groove/rPET-Groove-Black.jpg', isDark: false },
 ];
 
 // Groove pattern options
@@ -48,7 +40,7 @@ const thicknessOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-groove/rpet-groove-hero.jpg';
+const defaultHeroImage = '/images/products/rpet-groove/rPET-Groove-Beige-Home_offce.png';
 
 // Lead Generation Form Modal
 function LeadGenModal({ 
@@ -797,7 +789,7 @@ export default function RPetGrooveProductPage() {
       <section id="colors" className="content-section colors-section">
         <div className="colors-header">
           <span className="section-tag">PALETTE</span>
-          <h2>12 Designer Colors</h2>
+          <h2>Multiple Designer Colors</h2>
           <p>
             From neutral tones to bold accents, our curated color palette fits seamlessly 
             into any interior design concept. All colors are achieved through dope-dyeing, 
@@ -1138,7 +1130,7 @@ export default function RPetGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-groove/installation.jpg"
+                src="/images/products/rpet-groove//Users/stretch/Downloads/processing-cnc.jpg"
                 alt="Panel installation process"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -1154,7 +1146,7 @@ export default function RPetGrooveProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-groove/sustainability.jpg"
+                src="/images/products/rpet-groove/overview-recycled.jpg"
                 alt="Recycled materials"
                 fill
                 style={{ objectFit: 'cover' }}
