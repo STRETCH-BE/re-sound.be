@@ -826,7 +826,7 @@ export default function RWoodGrooveProductPage() {
         </div>
       </section>
 
-      {/* Acoustic Performance Section */}
+      {/* Acoustic Performance Section - IMPROVED */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
           <span className="section-tag">PERFORMANCE</span>
@@ -838,49 +838,146 @@ export default function RWoodGrooveProductPage() {
           </p>
         </div>
 
-        <div className="acoustics-visual">
-          <div className="panel-cross-section">
-            <div className="cross-section-diagram">
-              <div className="diagram-layer veneer">
-                <span className="layer-label">Oak/Walnut Veneer</span>
+        <div className="acoustics-main-grid">
+          {/* Left: Exploded diagram */}
+          <div className="exploded-diagram">
+            <div className="diagram-title">Panel Cross-Section</div>
+            <div className="exploded-layers">
+              <div className="exploded-layer">
+                <div className="layer-visual veneer-layer">
+                  <div className="wood-grain"></div>
+                </div>
+                <div className="layer-info">
+                  <span className="layer-name">Oak / Walnut Veneer</span>
+                  <span className="layer-desc">Premium A-grade natural wood</span>
+                </div>
               </div>
-              <div className="diagram-layer mdf">
-                <span className="layer-label">MDF Core</span>
+              
+              <div className="layer-connector">
+                <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
+                </svg>
               </div>
-              <div className="diagram-layer grooves">
-                <div className="groove"></div>
-                <div className="groove"></div>
-                <div className="groove"></div>
-                <span className="layer-label">Sound Entry Grooves</span>
+              
+              <div className="exploded-layer">
+                <div className="layer-visual mdf-layer">
+                  <div className="groove-slots">
+                    <div className="slot"></div>
+                    <div className="slot"></div>
+                    <div className="slot"></div>
+                  </div>
+                </div>
+                <div className="layer-info">
+                  <span className="layer-name">MDF Core with Grooves</span>
+                  <span className="layer-desc">Sound entry channels</span>
+                </div>
               </div>
-              <div className="diagram-layer felt">
-                <span className="layer-label">Acoustic Felt</span>
+              
+              <div className="layer-connector">
+                <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
+                </svg>
               </div>
+              
+              <div className="exploded-layer">
+                <div className="layer-visual felt-layer"></div>
+                <div className="layer-info">
+                  <span className="layer-name">Acoustic Felt Backing</span>
+                  <span className="layer-desc">Recycled PET, 3mm thick</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Sound wave animation */}
+            <div className="sound-waves">
+              <div className="wave wave-1"></div>
+              <div className="wave wave-2"></div>
+              <div className="wave wave-3"></div>
+              <span className="wave-label">Sound waves absorbed</span>
             </div>
           </div>
 
-          <div className="absorption-rating">
-            <div className="rating-circle">
-              <span className="rating-value">αw 0.90</span>
-              <span className="rating-label">Absorption</span>
+          {/* Right: Performance metrics */}
+          <div className="performance-metrics">
+            <div className="main-rating">
+              <div className="rating-ring">
+                <svg viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="54" fill="none" stroke="#e8f4fc" strokeWidth="8"/>
+                  <circle 
+                    cx="60" cy="60" r="54" 
+                    fill="none" 
+                    stroke="#197FC7" 
+                    strokeWidth="8"
+                    strokeLinecap="round"
+                    strokeDasharray="305"
+                    strokeDashoffset="30"
+                    transform="rotate(-90 60 60)"
+                  />
+                </svg>
+                <div className="rating-content">
+                  <span className="rating-value">αw 0.90</span>
+                  <span className="rating-label">Absorption</span>
+                </div>
+              </div>
+              <div className="rating-badge">
+                <span className="badge-icon">★</span>
+                <span className="badge-text">Class A</span>
+              </div>
             </div>
-            <p>Class A Acoustic Performance</p>
+
+            <div className="metric-cards">
+              <div className="metric-card">
+                <div className="metric-value">90%</div>
+                <div className="metric-label">Sound Absorbed</div>
+              </div>
+              <div className="metric-card">
+                <div className="metric-value">ISO 354</div>
+                <div className="metric-label">Test Standard</div>
+              </div>
+            </div>
+
+            <div className="certification-note">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#197FC7" strokeWidth="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span>Independently tested &amp; certified to ISO 11654</span>
+            </div>
           </div>
         </div>
 
         <div className="acoustics-benefits">
           <div className="benefit">
-            <span className="benefit-icon">🎯</span>
+            <div className="benefit-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
             <h4>Reduced Reverberation</h4>
-            <p>Control echo and improve speech clarity</p>
+            <p>Control echo and improve speech clarity in any room</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">😌</span>
+            <div className="benefit-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
             <h4>Increased Comfort</h4>
             <p>Create calmer, more peaceful environments</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">📊</span>
+            <div className="benefit-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 20V10"/>
+                <path d="M18 20V4"/>
+                <path d="M6 20v-4"/>
+              </svg>
+            </div>
             <h4>Tested Performance</h4>
             <p>Independently verified acoustic data</p>
           </div>
@@ -1731,8 +1828,12 @@ export default function RWoodGrooveProductPage() {
 
         .felt-name { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); }
 
-        /* Acoustics Section */
-        .acoustics-section { background: var(--cream); }
+        /* ========================================
+           ACOUSTICS SECTION - IMPROVED STYLES
+           ======================================== */
+        .acoustics-section {
+          background: var(--cream);
+        }
 
         .acoustics-header {
           text-align: center;
@@ -1746,107 +1847,325 @@ export default function RWoodGrooveProductPage() {
           margin-bottom: 1rem;
         }
 
-        .acoustics-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
-
-        .acoustics-visual {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 6rem;
-          margin-bottom: 4rem;
+        .acoustics-header p {
+          font-size: 1.1rem;
+          color: #555;
+          line-height: 1.8;
         }
 
-        .cross-section-diagram {
+        .acoustics-main-grid {
+          display: grid;
+          grid-template-columns: 1.2fr 1fr;
+          gap: 4rem;
+          max-width: 1100px;
+          margin: 0 auto 4rem;
+          align-items: center;
+        }
+
+        /* Exploded Diagram */
+        .exploded-diagram {
+          background: white;
+          border-radius: 24px;
+          padding: 2.5rem;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+          position: relative;
+        }
+
+        .diagram-title {
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: #888;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+
+        .exploded-layers {
           display: flex;
           flex-direction: column;
+          align-items: center;
           gap: 0;
-          width: 200px;
         }
 
-        .diagram-layer {
-          position: relative;
-          padding: 1rem;
+        .exploded-layer {
           display: flex;
           align-items: center;
-          justify-content: center;
+          gap: 1.5rem;
+          width: 100%;
+          max-width: 400px;
         }
 
-        .diagram-layer.veneer {
-          background: linear-gradient(90deg, #c4a77d 0%, #d4a954 50%, #c4a77d 100%);
-          border-radius: 8px 8px 0 0;
-          height: 20px;
+        .layer-visual {
+          width: 180px;
+          border-radius: 6px;
+          flex-shrink: 0;
+          position: relative;
+          overflow: hidden;
         }
 
-        .diagram-layer.mdf {
+        .layer-visual.veneer-layer {
+          background: linear-gradient(90deg, #c4a77d 0%, #d4a954 30%, #c4a77d 60%, #b89860 100%);
+          height: 24px;
+        }
+
+        .layer-visual.veneer-layer .wood-grain {
+          position: absolute;
+          inset: 0;
+          background: repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 8px,
+            rgba(139, 105, 20, 0.15) 8px,
+            rgba(139, 105, 20, 0.15) 10px
+          );
+        }
+
+        .layer-visual.mdf-layer {
           background: #d4c4a0;
-          height: 40px;
-        }
-
-        .diagram-layer.grooves {
-          background: #d4c4a0;
-          height: 30px;
+          height: 50px;
           display: flex;
-          gap: 20px;
-          padding: 0 20px;
+          align-items: flex-end;
+          justify-content: center;
+          padding-bottom: 0;
         }
 
-        .groove {
-          width: 16px;
-          height: 100%;
-          background: #333;
+        .groove-slots {
+          display: flex;
+          gap: 24px;
+        }
+
+        .groove-slots .slot {
+          width: 14px;
+          height: 35px;
+          background: var(--deep-blue);
           border-radius: 0 0 4px 4px;
         }
 
-        .diagram-layer.felt {
-          background: #333;
-          border-radius: 0 0 8px 8px;
-          height: 15px;
+        .layer-visual.felt-layer {
+          background: #2d2d2d;
+          height: 16px;
         }
 
-        .layer-label {
-          position: absolute;
-          right: -150px;
+        .layer-connector {
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          padding-left: 90px;
+        }
+
+        .layer-connector svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        .layer-info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+        }
+
+        .layer-name {
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--deep-blue);
+        }
+
+        .layer-desc {
           font-size: 0.8rem;
-          color: #666;
-          white-space: nowrap;
+          color: #888;
         }
 
-        .absorption-rating { text-align: center; }
+        /* Sound Waves Animation */
+        .sound-waves {
+          position: absolute;
+          left: 1.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+        }
 
-        .rating-circle {
-          width: 140px;
-          height: 140px;
-          border-radius: 50%;
+        .wave {
+          width: 3px;
           background: var(--brand-blue);
+          border-radius: 2px;
+          opacity: 0.6;
+          animation: wave-pulse 1.5s ease-in-out infinite;
+        }
+
+        .wave-1 { animation-delay: 0s; height: 16px; }
+        .wave-2 { animation-delay: 0.2s; height: 24px; }
+        .wave-3 { animation-delay: 0.4s; height: 20px; }
+
+        @keyframes wave-pulse {
+          0%, 100% { transform: scaleY(0.6); opacity: 0.4; }
+          50% { transform: scaleY(1); opacity: 0.8; }
+        }
+
+        .wave-label {
+          font-size: 0.65rem;
+          color: #888;
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transform: rotate(180deg);
+          margin-top: 0.5rem;
+        }
+
+        /* Performance Metrics */
+        .performance-metrics {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+        }
+
+        .main-rating {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .rating-ring {
+          position: relative;
+          width: 160px;
+          height: 160px;
+        }
+
+        .rating-ring svg {
+          width: 100%;
+          height: 100%;
+          transform: rotate(0deg);
+        }
+
+        .rating-ring circle:last-child {
+          transition: stroke-dashoffset 1s ease-out;
+        }
+
+        .rating-content {
+          position: absolute;
+          inset: 0;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin-bottom: 1rem;
         }
 
-        .rating-value { font-size: 1.8rem; font-weight: 700; color: white; }
-        .rating-label { font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); }
-        .absorption-rating > p { font-size: 0.9rem; color: #666; }
+        .rating-content .rating-value {
+          font-size: 1.75rem;
+          font-weight: 700;
+          color: var(--deep-blue);
+        }
 
+        .rating-content .rating-label {
+          font-size: 0.85rem;
+          color: #888;
+        }
+
+        .rating-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: linear-gradient(135deg, #197FC7 0%, #155d94 100%);
+          color: white;
+          padding: 0.5rem 1.25rem;
+          border-radius: 20px;
+          font-weight: 600;
+          font-size: 0.9rem;
+        }
+
+        .badge-icon {
+          font-size: 1rem;
+        }
+
+        .metric-cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          width: 100%;
+        }
+
+        .metric-card {
+          background: white;
+          padding: 1.25rem;
+          border-radius: 12px;
+          text-align: center;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .metric-value {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: var(--brand-blue);
+          margin-bottom: 0.25rem;
+        }
+
+        .metric-label {
+          font-size: 0.8rem;
+          color: #888;
+        }
+
+        .certification-note {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 1rem 1.5rem;
+          background: rgba(25, 127, 199, 0.08);
+          border-radius: 12px;
+          font-size: 0.9rem;
+          color: var(--deep-blue);
+        }
+
+        /* Benefits Grid - Improved */
         .acoustics-benefits {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
-          max-width: 900px;
+          max-width: 1000px;
           margin: 0 auto;
         }
 
         .benefit {
           text-align: center;
-          padding: 2rem;
+          padding: 2.5rem 2rem;
           background: white;
-          border-radius: 16px;
+          border-radius: 20px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .benefit-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
-        .benefit h4 { font-size: 1.1rem; color: var(--deep-blue); margin-bottom: 0.5rem; }
-        .benefit p { font-size: 0.9rem; color: #666; margin: 0; }
+        .benefit:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .benefit-icon-wrap {
+          width: 64px;
+          height: 64px;
+          margin: 0 auto 1.25rem;
+          background: var(--brand-blue-pale);
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--brand-blue);
+        }
+
+        .benefit h4 {
+          font-size: 1.1rem;
+          color: var(--deep-blue);
+          margin-bottom: 0.5rem;
+        }
+
+        .benefit p {
+          font-size: 0.9rem;
+          color: #666;
+          margin: 0;
+          line-height: 1.6;
+        }
 
         /* Installation Section */
         .installation-steps {
@@ -2035,6 +2354,9 @@ export default function RWoodGrooveProductPage() {
         .cta-section .btn-secondary:hover { background: white; color: var(--brand-blue); }
         .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); }
 
+        /* ========================================
+           RESPONSIVE STYLES
+           ======================================== */
         @media (max-width: 1024px) {
           .product-hero {
             grid-template-columns: 1fr;
@@ -2047,11 +2369,28 @@ export default function RWoodGrooveProductPage() {
           .specs-grid, .downloads-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .variants-grid { grid-template-columns: repeat(2, 1fr); }
           .accessories-grid { grid-template-columns: repeat(2, 1fr); }
-          .acoustics-visual { flex-direction: column; gap: 3rem; }
-          .acoustics-benefits { grid-template-columns: 1fr; }
           .finish-categories { grid-template-columns: 1fr; }
           .sustainability-features { grid-template-columns: 1fr; }
-          .layer-label { display: none; }
+          
+          /* Acoustics responsive */
+          .acoustics-main-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+          }
+          
+          .exploded-diagram {
+            max-width: 500px;
+            margin: 0 auto;
+          }
+          
+          .acoustics-benefits {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+          }
+          
+          .sound-waves {
+            display: none;
+          }
         }
 
         @media (max-width: 768px) {
@@ -2069,6 +2408,31 @@ export default function RWoodGrooveProductPage() {
           .cta-buttons { flex-direction: column; }
           .felt-selector { flex-wrap: wrap; }
           .finish-options { flex-wrap: wrap; justify-content: center; }
+          
+          /* Acoustics responsive */
+          .exploded-layer {
+            flex-direction: column;
+            gap: 0.75rem;
+            text-align: center;
+          }
+          
+          .layer-visual {
+            width: 100%;
+            max-width: 200px;
+          }
+          
+          .layer-connector {
+            padding-left: 0;
+          }
+          
+          .metric-cards {
+            grid-template-columns: 1fr;
+          }
+          
+          .rating-ring {
+            width: 140px;
+            height: 140px;
+          }
         }
       `}</style>
     </div>
