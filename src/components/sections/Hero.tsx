@@ -40,7 +40,7 @@ export default function Hero() {
           {/* Option 1: Next.js Image component (recommended) */}
           <div className="panel-image-wrapper">
             <Image
-              src="images/products/rwood-groove/seamless installation.jpg"
+              src="images/products/interior/maintenance.jpg"
               alt="Re-Sound circular acoustic panels"
               fill
               style={{ objectFit: 'cover' }}
