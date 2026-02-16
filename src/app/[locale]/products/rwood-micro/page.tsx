@@ -1,5 +1,5 @@
-import RWOODMicroProductPage from '@/components/sections/rwoodmicropage';
+import RWoodMicroProductPage from '@/components/sections/rwoodmicropage';
 
-export default function RWOODMicroPage() {
-  return <RWOODMICROProductPage />;
+export default function RWoodMicroPage() {
+  return <RWoodMicroProductPage />;
 }
