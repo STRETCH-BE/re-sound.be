@@ -105,7 +105,7 @@ const products = [
   },
   { 
     slug: 'rwood-perf', 
-    image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
+    image: '/images/products/rwood-perf/hero-rwood-perf.webp',
     tags: {
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
@@ -113,7 +113,7 @@ const products = [
   },
   { 
     slug: 'rwood-micro', 
-    image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
+    image: '/images/products/rwood-micro/hero-rwood-micro.webp',
     tags: {
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
@@ -121,7 +121,7 @@ const products = [
   },
   { 
     slug: 'rwood-veneer', 
-    image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
+    image: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
     tags: {
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
