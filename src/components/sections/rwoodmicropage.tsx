@@ -978,8 +978,8 @@ export default function RWoodMicroProductPage() {
                   </div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">High-Density Fibre Gypsum Core</span>
-                  <span className="layer-desc">Non-combustible with sound chambers</span>
+                  <span className="layer-name">Fire Retardant Medium Density Fiberboard Core</span>
+                  <span className="layer-desc">Fire Retardant, with sound chambers</span>
                 </div>
               </div>
               
@@ -1215,7 +1215,7 @@ export default function RWoodMicroProductPage() {
             <h2>Responsibly Made</h2>
             <p>
               rWood - Micro combines natural materials with responsible production. 
-              The non-combustible fibre gypsum core and sustainably sourced veneers 
+              The Fire Retardant Medium Density Fiberboard core and sustainably sourced veneers 
               contribute to healthier interiors and a lower environmental footprint.
             </p>
             <div className="sustainability-features">
@@ -1230,7 +1230,7 @@ export default function RWoodMicroProductPage() {
                 <span className="sustain-icon">🏗️</span>
                 <div>
                   <h4>Natural Core Material</h4>
-                  <p>Fibre gypsum—a mineral-based, non-combustible core</p>
+                  <p>Fiberboard core—a wood-based, Firerated core</p>
                 </div>
               </div>
               <div className="sustain-item">
@@ -1271,28 +1271,26 @@ export default function RWoodMicroProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions</h4>
+        <div className="specs-grid">
+          <div className="spec-card">
+            <h4>Dimensions &mdash; Walls and Ceilings</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Panel length</td>
-                  <td>Up to 3000 mm</td>
-                </tr>
-                <tr>
-                  <td>Panel width</td>
-                  <td>Up to 630 mm</td>
+                  <td>Custom sizes</td>
+                  <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
                   <td>Thickness</td>
-                  <td>14 mm</td>
+                  <td>8 - 19 mm</td>
                 </tr>
                 <tr>
                   <td>Weight</td>
-                  <td>~4.5 kg/m²</td>
+                  <td>~From 0,35 kg/m&sup2;</td>
                 </tr>
                 <tr>
-                  <td>Custom sizes</td>
-                  <td>Available on request</td>
+                  <td>Core density</td>
+                  <td>48,40 kg/m&sup3;</td>
                 </tr>
               </tbody>
             </table>
@@ -1351,16 +1349,16 @@ export default function RWoodMicroProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Panel (Euroclass)</td>
+                  <td>Reaction to fire</td>
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
-                  <td>ASTM rating</td>
-                  <td>Class A</td>
+                  <td>Resistance to fire</td>
+                  <td>K1-10 / K2-10</td>
                 </tr>
                 <tr>
-                  <td>Core material</td>
-                  <td>Non-combustible</td>
+                  <td>Core</td>
+                  <td>Fire Retardant</td>
                 </tr>
                 <tr>
                   <td>Test standard</td>
@@ -1376,19 +1374,19 @@ export default function RWoodMicroProductPage() {
               <tbody>
                 <tr>
                   <td>Surface</td>
-                  <td>A-grade Veneer / HPL</td>
+                  <td>Veneer / HPL / Foil / Paint</td>
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>High-density fibre gypsum</td>
-                </tr>
-                <tr>
-                  <td>Backing</td>
-                  <td>Acoustic fleece</td>
+                  <td>Medium Density Fiberboard core (brown / green / black)</td>
                 </tr>
                 <tr>
                   <td>Edges</td>
-                  <td>Over-veneered</td>
+                  <td>Over-veneered solid wood</td>
+                </tr>
+                <tr>
+                  <td>Acoustic felt</td>
+                  <td>Black / White</td>
                 </tr>
               </tbody>
             </table>
