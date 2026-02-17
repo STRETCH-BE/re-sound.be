@@ -638,7 +638,7 @@ export default function RWoodMicroProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€119</strong> per panel excl. VAT</p>
+          <p className="hero-price">Starting from <strong>&euro;119</strong> per panel excl. VAT</p>
         </div>
         
         <div className="hero-image">
@@ -1222,7 +1222,7 @@ export default function RWoodMicroProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🌲</span>
                 <div>
-                  <h4>FSC® Certified Veneer</h4>
+                  <h4>FSC&reg; Certified Veneer</h4>
                   <p>Wood from responsibly managed forests</p>
                 </div>
               </div>
@@ -1269,8 +1269,6 @@ export default function RWoodMicroProductPage() {
           <h2>Specifications</h2>
         </div>
 
-        <div className="specs-grid">
-          <div className="spec-card">
         <div className="specs-grid">
           <div className="spec-card">
             <h4>Dimensions &mdash; Walls and Ceilings</h4>
