@@ -559,7 +559,7 @@ export default function RWoodPerfProductPage() {
           <p className="hero-tagline">Precision Perforations, Maximum Absorption</p>
           <p className="hero-description">
             High-performance drilled acoustic panels combining natural wood beauty with 
-            outstanding sound absorption. A non-combustible fibre gypsum core and over-veneered 
+            outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered 
             edges deliver the highest levels of fire safety and acoustic control for 
             demanding public spaces.
           </p>
@@ -571,7 +571,7 @@ export default function RWoodPerfProductPage() {
             </div>
             <div className="usp">
               <span className="usp-icon">🔥</span>
-              <span className="usp-text">A2-s1, d0 Fire Rated</span>
+              <span className="usp-text">B2-s1, d0 Fire Rated</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
@@ -674,14 +674,14 @@ export default function RWoodPerfProductPage() {
               while premium wood veneer ensures a natural, warm appearance.
             </p>
             <p>
-              Combined with a non-combustible fibre gypsum core and over-veneered edges 
+              Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges 
               for seamless joints, these panels are engineered for the highest demands in 
               large public spaces&mdash;from atriums and concert halls to offices and schools.
             </p>
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Non-combustible fibre gypsum core (A2-s1, d0)
+                Fire Retardant Medium Density Fiberboard core (B2-s1, d0)
               </li>
               <li>
                 <span className="check">✓</span>
@@ -693,7 +693,7 @@ export default function RWoodPerfProductPage() {
               </li>
               <li>
                 <span className="check">✓</span>
-                Custom formats up to 3000 &times; 1200 mm
+                Custom formats up to 3050 &times; 1220 mm
               </li>
             </ul>
           </div>
@@ -859,8 +859,8 @@ export default function RWoodPerfProductPage() {
                   <div className="core-texture"></div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Fibre Gypsum Core</span>
-                  <span className="layer-desc">Non-combustible, 1150 kg/m&sup3; density</span>
+                  <span className="layer-name">Fire Retardant Medium Density Fiberboard Core</span>
+                  <span className="layer-desc">Fire Retardant, 0,45 kg/m&sup3; density</span>
                 </div>
               </div>
               
@@ -934,7 +934,7 @@ export default function RWoodPerfProductPage() {
 
             <div className="metric-cards">
               <div className="metric-card">
-                <div className="metric-value">A2-s1, d0</div>
+                <div className="metric-value">B-s1, d0</div>
                 <div className="metric-label">Fire Rating</div>
               </div>
               <div className="metric-card">
@@ -972,7 +972,7 @@ export default function RWoodPerfProductPage() {
               </svg>
             </div>
             <h4>Highest Fire Safety</h4>
-            <p>A2-s1, d0&mdash;the highest achievable class for wooden panels</p>
+            <p>B-s1, d0&mdash;the highest achievable class for wooden panels</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -995,7 +995,7 @@ export default function RWoodPerfProductPage() {
             <span className="section-tag">CONCEALED MOUNTING</span>
             <h2>Seamless Installation</h2>
             <p>
-              rWood - Perf panels are installed with a concealed aluminium clip system 
+              rWood - Perf panels are installed with a concealed clip system 
               designed for precision, speed, and a flawless end result. The system ensures 
               zero-spaced joints and perfectly aligned perforation patterns across 
               multiple panels.
@@ -1006,7 +1006,7 @@ export default function RWoodPerfProductPage() {
                 <div className="step-number">1</div>
                 <div className="step-content">
                   <h4>Mount Subframe</h4>
-                  <p>Install aluminium rails to wall or ceiling structure</p>
+                  <p>Install metal rails to wall or ceiling structure</p>
                 </div>
               </div>
               <div className="install-step">
@@ -1115,19 +1115,19 @@ export default function RWoodPerfProductPage() {
               <tbody>
                 <tr>
                   <td>Custom sizes</td>
-                  <td>300&ndash;3000 &times; 300&ndash;1200 mm</td>
+                  <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
                   <td>Thickness</td>
-                  <td>13.2 mm</td>
+                  <td>8 - 19 mm</td>
                 </tr>
                 <tr>
                   <td>Weight</td>
-                  <td>~15.7 kg/m&sup2;</td>
+                  <td>~From 0,35 kg/m&sup2;</td>
                 </tr>
                 <tr>
                   <td>Core density</td>
-                  <td>1150 kg/m&sup3;</td>
+                  <td>48,40 kg/m&sup3;</td>
                 </tr>
               </tbody>
             </table>
@@ -1139,11 +1139,11 @@ export default function RWoodPerfProductPage() {
               <tbody>
                 <tr>
                   <td>Standard sizes</td>
-                  <td>600&times;600 to 2400&times;600 mm</td>
+                  <td>600&times;600 to 1200&times;600 mm</td>
                 </tr>
                 <tr>
                   <td>Custom sizes</td>
-                  <td>300&ndash;3000 &times; 300&ndash;600 mm</td>
+                  <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
                   <td>Joints</td>
@@ -1187,7 +1187,7 @@ export default function RWoodPerfProductPage() {
               <tbody>
                 <tr>
                   <td>Reaction to fire</td>
-                  <td>A2-s1, d0</td>
+                  <td>B-s1, d0</td>
                 </tr>
                 <tr>
                   <td>Resistance to fire</td>
@@ -1195,7 +1195,7 @@ export default function RWoodPerfProductPage() {
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>Non-combustible</td>
+                  <td>Fire Retardant</td>
                 </tr>
                 <tr>
                   <td>Test standard</td>
@@ -1215,7 +1215,7 @@ export default function RWoodPerfProductPage() {
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>Fibre gypsum (light / dark)</td>
+                  <td>Medium Density Fiberboard core (brown / green / black)</td>
                 </tr>
                 <tr>
                   <td>Edges</td>
