@@ -1110,7 +1110,7 @@ export default function RWoodPerfProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions &mdash; Walls</h4>
+            <h4>Dimensions &mdash; Walls and Ceilings</h4>
             <table>
               <tbody>
                 <tr>
@@ -1134,24 +1134,24 @@ export default function RWoodPerfProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Dimensions &mdash; Ceilings</h4>
+            <h4>Acoustic Performance</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Standard sizes</td>
-                  <td>600&times;600 to 1200&times;600 mm</td>
+                  <td>Absorption coefficient (αw)</td>
+                  <td>0.90</td>
                 </tr>
                 <tr>
-                  <td>Custom sizes</td>
-                  <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
+                  <td>With 50mm mineral wool</td>
+                  <td>Up to 1.00</td>
                 </tr>
                 <tr>
-                  <td>Joints</td>
-                  <td>Closed 0 mm / Open 5&ndash;13 mm</td>
+                  <td>Absorption class</td>
+                  <td>Class A / C</td>
                 </tr>
                 <tr>
-                  <td>Demountable</td>
-                  <td>Yes, full access</td>
+                  <td>Test standard</td>
+                  <td>ISO 354 / ISO 11654</td>
                 </tr>
               </tbody>
             </table>
