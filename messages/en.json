@@ -116,6 +116,26 @@
       "description": "Freestanding acoustic dividers made from recycled PET. Flexible space management with sustainable materials.",
       "fullDescription": "rPET - Divide combines the flexibility of freestanding dividers with sustainable recycled PET construction. Perfect for creating adaptable workspaces and privacy zones in open environments."
     },
+    "rpet-flex-groove": {
+      "title": "rPET - Flex Groove",
+      "description": "Flexible grooved acoustic panels made from recycled PET. Versatile installation options with modern linear aesthetics.",
+      "fullDescription": "rPET - Flex Groove offers the same distinctive grooved design as our standard rPET panels, with added installation flexibility. Made from 100% recycled PET bottles, these panels deliver excellent acoustic performance while adapting to a variety of mounting configurations."
+    },
+    "rwood-perf": {
+      "title": "rWood - Perf",
+      "description": "Perforated acoustic wood panels combining natural beauty with precision engineering. Superior sound diffusion through micro-perforations.",
+      "fullDescription": "rWood - Perf panels feature precision micro-perforations through FSC-certified wood veneer, creating a sophisticated acoustic solution that balances absorption and diffusion. The perforated pattern adds visual texture while optimizing sound control across a broad frequency range."
+    },
+    "rwood-micro": {
+      "title": "rWood - Micro",
+      "description": "Fine micro-grooved wood acoustic panels. Subtle texture with exceptional acoustic performance for premium interiors.",
+      "fullDescription": "rWood - Micro combines refined aesthetics with high-performance acoustics. The micro-groove pattern is precision-milled into FSC-certified wood veneer, creating a subtle texture that enhances both the visual character and acoustic properties of any space."
+    },
+    "rwood-veneer": {
+      "title": "rWood - Veneer",
+      "description": "Clean, smooth wood veneer acoustic panels. Timeless elegance meets Class A sound absorption for premium spaces.",
+      "fullDescription": "rWood - Veneer offers the pure, uninterrupted beauty of FSC-certified wood veneer backed by high-performance acoustic felt. These clean, minimal panels bring natural warmth to offices, hospitality venues, and cultural spaces while delivering outstanding sound absorption."
+    },
     "highlights": {
       "absorption": {
         "title": "Sound Absorption",
