@@ -26,7 +26,42 @@
     "subtitle": "High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.",
     "ctaPrimary": "Discover Products",
     "ctaSecondary": "How It Works",
-    "panelTag": "100% Recycled Materials"
+    "panelTag": "100% Recycled Materials",
+    "rwood": {
+      "badge": "rWood Series · Natural Finish Line",
+      "title": "Acoustic panels with",
+      "titleHighlight": "a natural soul.",
+      "subtitle": "Real wood veneer on a high-performance recycled acoustic core. Biophilic warmth and Class A sound absorption — beautifully combined.",
+      "ctaPrimary": "Discover rWood",
+      "ctaSecondary": "View Finishes",
+      "statVeneers": "Veneer species",
+      "statThickness": "Thickness",
+      "statAbsorption": "Absorption",
+      "statFire": "Fire rating"
+    },
+    "circular": {
+      "badge": "Circular Range · Interior · Solid · Divide · rPET",
+      "title": "Designed to return —",
+      "titleHighlight": "and return again.",
+      "subtitle": "100% recycled input. Free take-back at end of life. Our circular system ensures your acoustic investment never becomes landfill.",
+      "ctaPrimary": "View All Products",
+      "ctaSecondary": "How It Works",
+      "statRecycled": "Recycled input",
+      "statLandfill": "Landfill waste",
+      "statFreeLabel": "Free",
+      "statTakeback": "Take-back",
+      "statColors": "Colors"
+    }
+  },
+  "ticker": {
+    "recycled": "100% Recycled Materials",
+    "classA": "Class A Sound Absorption",
+    "fire": "B-s1,d0 Fire Rated",
+    "belgium": "Made in Belgium",
+    "takeback": "Free Take-Back Program",
+    "veneer": "Real Wood Veneer Finishes",
+    "colors": "50+ Standard Colors",
+    "custom": "Custom Sizes on Request"
   },
   "stats": {
     "absorption": "Sound Absorption",
@@ -47,9 +82,39 @@
     "wool": "Wool",
     "mattresses": "Mattresses"
   },
+  "rwood": {
+    "tag": "rWood Series — Natural Finish Line",
+    "heroTitle": "Where nature",
+    "heroTitleHighlight": "meets acoustics.",
+    "heroSubtitle": "A recycled acoustic core dressed in genuine wood veneer. Two variants: Solid for seamless elegance, Perforated for maximum absorption.",
+    "ctaExplore": "Explore rWood",
+    "ctaSample": "Request Sample",
+    "floatTag": "rWood · RW-W-M-OAK · Oak Natural",
+    "specsTag": "Technical Specifications",
+    "specsTitle": "Engineered for acoustic perfection",
+    "specsBody": "The rWood core is made from compressed recycled textile fibres — the same high-performance material as our Interior range. Real wood veneer is applied on top for natural warmth without compromise.",
+    "specAbsorptionKey": "Sound Absorption",
+    "specFireKey": "Fire Rating",
+    "specThicknessKey": "Thickness",
+    "specVariantsKey": "Variants",
+    "specVariantsVal": "Solid & Perforated",
+    "specCoreKey": "Core Material",
+    "specCoreVal": "Recycled textile",
+    "specStandardKey": "Standard Sizes",
+    "specStandardVal": "Custom on request",
+    "swatchesTag": "Veneer Collection",
+    "swatchesTitle": "Choose your natural finish",
+    "swatchesBody": "Five wood species, each with its own character. All applied over a 100% recycled acoustic core.",
+    "ctaFullSpec": "Full Specifications",
+    "ctaDatasheet": "Download Datasheet",
+    "ctaOrderSamples": "Order Sample Kit"
+  },
   "products": {
     "tag": "OUR PRODUCTS",
     "title": "Acoustic Solutions",
+    "titleHighlight": "for every space.",
+    "mosaicSubtitle": "From modular wall panels to freestanding dividers — all made from 100% recycled materials, all designed to come back.",
+    "viewAll": "View all products",
     "learnMore": "Learn more",
     "pageTitle": "Our Products",
     "pageSubtitle": "Discover our range of circular acoustic panels, each designed for specific applications while maintaining our commitment to sustainability.",
@@ -181,6 +246,8 @@
   "why": {
     "tag": "WHY RE-SOUND",
     "title": "Why Choose Circular Acoustic Panels?",
+    "titleHighlight": "the earth.",
+    "belgianLabel": "Belgian",
     "subtitle": "We believe great acoustics shouldn't cost the earth. Our panels prove that sustainable choices can deliver superior performance.",
     "diagramLabel": "Circular",
     "features": {
@@ -208,6 +275,11 @@
     "titleHighlight": "loop.",
     "subtitle": "Our panels begin their life as waste and can return to become new panels—creating an endless cycle of sustainable acoustic solutions.",
     "loopLabel": "Endless Cycle",
+    "cta": "How It Works",
+    "statRecycled": "Recycled Input",
+    "statLandfill": "Landfill",
+    "statFreeLabel": "Free",
+    "statTakeback": "Take-Back",
     "steps": {
       "collect": {
         "title": "Collect",
@@ -225,6 +297,20 @@
         "title": "Return",
         "description": "Free pickup and recycling into new panels."
       }
+    }
+  },
+  "dualCta": {
+    "left": {
+      "eyebrow": "rWood Series",
+      "title": "Discover natural acoustic finishes",
+      "subtitle": "Real wood veneer on a recycled core. Request a sample kit and find the right finish for your project.",
+      "cta": "Order Sample Kit"
+    },
+    "right": {
+      "eyebrow": "All Products",
+      "title": "Get a custom quote",
+      "subtitle": "Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.",
+      "cta": "Request Quote"
     }
   },
   "cta": {
