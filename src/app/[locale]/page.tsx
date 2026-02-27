@@ -1,72 +1,64 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-// Import all homepage sections
 import Hero from '@/components/sections/Hero';
-import StatsBar from '@/components/sections/StatsBar';
-import Materials from '@/components/sections/Materials';
-import ProductsSection from '@/components/sections/ProductsSection';
-import WhySection from '@/components/sections/WhySection';
-import CircularSection from '@/components/sections/CircularSection';
-import CTA from '@/components/sections/CTA';
+import Ticker from '@/components/sections/Ticker';
+import RWoodShowcase from '@/components/sections/RWoodShowcase';
+import ProductsMosaic from '@/components/sections/ProductsMosaic';
+import CircularLoop from '@/components/sections/CircularLoop';
+import WhyCards from '@/components/sections/WhyCards';
+import DualCTA from '@/components/sections/DualCTA';
 
 interface HomePageProps {
   params: { locale: string };
 }
 
-// Generate metadata for SEO
 export async function generateMetadata({
   params: { locale },
 }: HomePageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
 
   return {
-    title: 'Acoustics Made Circular',
+    title: 'Re—Sound | Recycled by Origin. Circular by Design.',
     description: t('homeDescription'),
     openGraph: {
-      title: 'Re-Sound | Acoustics Made Circular',
+      title: 'Re-Sound | Acoustic Panels Made Circular',
       description: t('homeDescription'),
       images: ['/images/og-home.jpg'],
       locale: locale,
     },
     alternates: {
       canonical: `/${locale}`,
-      languages: {
-        en: '/en',
-        nl: '/nl',
-        fr: '/fr',
-        de: '/de',
-      },
+      languages: { en: '/en', nl: '/nl', fr: '/fr', de: '/de' },
     },
   };
 }
 
 export default function HomePage({ params: { locale } }: HomePageProps) {
-  // Enable static rendering
   setRequestLocale(locale);
-  
+
   return (
     <>
-      {/* Hero Section - Main landing area */}
+      {/* Dual-split fullscreen hero: rWood left / Circular right */}
       <Hero />
 
-      {/* Stats Bar - 100%, 50+, 0, 🇧🇪 */}
-      <StatsBar />
+      {/* Scrolling blue ticker strip */}
+      <Ticker />
 
-      {/* Materials Section - Recycled materials showcase */}
-      <Materials />
+      {/* rWood hero image + veneer strip + specs + swatches */}
+      <RWoodShowcase />
 
-      {/* Products Section - Interior, Solid, Divide */}
-      <ProductsSection />
+      {/* 5-product mosaic grid + application context strip */}
+      <ProductsMosaic />
 
-      {/* Why Section - Why choose circular acoustic panels */}
-      <WhySection />
+      {/* Dark circular economy section with spinning ring */}
+      <CircularLoop />
 
-      {/* Circular Section - Close the loop process */}
-      <CircularSection />
+      {/* 4-card why section */}
+      <WhyCards />
 
-      {/* CTA Section - Ready to transform your space */}
-      <CTA />
+      {/* Split image CTA: samples left / quote right */}
+      <DualCTA />
     </>
   );
 }
