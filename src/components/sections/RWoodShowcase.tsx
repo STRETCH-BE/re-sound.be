@@ -1,62 +1,88 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
+interface Veneer {
+  name: string;
+  code: string;
+  heroImage: string;   // full-panel image shown in the hero when selected
+  swatchImage: string; // small swatch image
+}
+
+const VENEERS: Veneer[] = [
+  {
+    name: 'Silk Oak',
+    code: 'RW-SILK',
+    heroImage: '/images/products/rwood-groove/silk-oak.jpg',
+    swatchImage: '/images/products/rwood-groove/swatches/silk-oak.jpg',
+  },
+  {
+    name: 'Straw Oak',
+    code: 'RW-STRAW',
+    heroImage: '/images/products/rwood-groove/straw-oak.jpg',
+    swatchImage: '/images/products/rwood-groove/swatches/straw-oak.jpg',
+  },
+  {
+    name: 'Umber Oak',
+    code: 'RW-UMBER',
+    heroImage: '/images/products/rwood-groove/umber-oak.jpg',
+    swatchImage: '/images/products/rwood-groove/swatches/umber-oak.jpg',
+  },
+  {
+    name: 'Tobacco Walnut',
+    code: 'RW-TOB',
+    heroImage: '/images/products/rwood-groove/tobacco-walnut.jpg',
+    swatchImage: '/images/products/rwood-groove/swatches/tobacco-walnut.jpg',
+  },
+  {
+    name: 'Walnut',
+    code: 'RW-WAL',
+    heroImage: '/images/products/rwood-groove/walnut.jpg',
+    swatchImage: '/images/products/rwood-groove/swatches/walnut.jpg',
+  },
+  {
+    name: 'Ash White',
+    code: 'RW-ASH',
+    heroImage: '/images/products/rwood-veneer/ASH-White-1.jpg',
+    swatchImage: '/images/products/rwood-veneer/ASH-White.jpg',
+  },
+  {
+    name: 'Birch Sliced',
+    code: 'RW-BIR',
+    heroImage: '/images/products/rwood-veneer/Birch-Sliced.jpg',
+    swatchImage: '/images/products/rwood-veneer/Birch-Sliced.jpg',
+  },
+  {
+    name: 'Beech White',
+    code: 'RW-BEECH',
+    heroImage: '/images/products/rwood-veneer/Beech-White.jpg',
+    swatchImage: '/images/products/rwood-veneer/Beech-White.jpg',
+  },
+];
+
+// The first 5 veneers appear in the strip (groove range — they have full-panel photos)
+const STRIP_VENEERS = VENEERS.slice(0, 5);
+
+const DEFAULT_HERO = '/images/products/rwood-groove/hero-rWood-Groove.webp';
+
 export default function RWoodShowcase() {
   const t = useTranslations('rwood');
+  const [activeVeneer, setActiveVeneer] = useState<Veneer | null>(null);
+  const [fadeKey, setFadeKey] = useState(0);
 
-  const veneers = [
-    {
-      name: 'Silk Oak',
-      code: 'RW-SILK',
-      image: '/images/products/rwood-groove/swatches/silk-oak.jpg',
-    },
-    {
-      name: 'Straw Oak',
-      code: 'RW-STRAW',
-      image: '/images/products/rwood-groove/swatches/straw-oak.jpg',
-    },
-    {
-      name: 'Umber Oak',
-      code: 'RW-UMBER',
-      image: '/images/products/rwood-groove/swatches/umber-oak.jpg',
-    },
-    {
-      name: 'Tobacco Walnut',
-      code: 'RW-TOB',
-      image: '/images/products/rwood-groove/swatches/tobacco-walnut.jpg',
-    },
-    {
-      name: 'Walnut',
-      code: 'RW-WAL',
-      image: '/images/products/rwood-groove/swatches/walnut.jpg',
-    },
-    {
-      name: 'Ash White',
-      code: 'RW-ASH',
-      image: '/images/products/rwood-veneer/ASH-White.jpg',
-    },
-    {
-      name: 'Birch Sliced',
-      code: 'RW-BIR',
-      image: '/images/products/rwood-veneer/Birch-Sliced.jpg',
-    },
-    {
-      name: 'Beech White',
-      code: 'RW-BEECH',
-      image: '/images/products/rwood-veneer/Beech-White.jpg',
-    },
-  ];
+  const currentHero = activeVeneer?.heroImage ?? DEFAULT_HERO;
+  const currentLabel = activeVeneer
+    ? `${activeVeneer.code} · ${activeVeneer.name}`
+    : t('floatTag');
 
-  const veneerStrip = [
-    { name: 'Silk Oak', image: '/images/products/rwood-groove/silk-oak.jpg' },
-    { name: 'Tobacco Walnut', image: '/images/products/rwood-groove/tobacco-walnut.jpg' },
-    { name: 'Umber Oak', image: '/images/products/rwood-groove/umber-oak.jpg' },
-    { name: 'Walnut', image: '/images/products/rwood-groove/walnut.jpg' },
-    { name: 'Straw Oak', image: '/images/products/rwood-groove/straw-oak.jpg' },
-  ];
+  function selectVeneer(v: Veneer) {
+    if (activeVeneer?.code === v.code) return;
+    setActiveVeneer(v);
+    setFadeKey((k) => k + 1); // triggers CSS fade animation
+  }
 
   const specs = [
     { key: t('specAbsorptionKey'), val: 'αw 0.90 – 0.95' },
@@ -72,13 +98,16 @@ export default function RWoodShowcase() {
 
       {/* ── HERO IMAGE + TEXT OVERLAY ── */}
       <div className="rwood-hero">
-        <div className="rwood-hero-img">
+
+        {/* Fading image layer — key change triggers re-mount for CSS fade-in */}
+        <div className="rwood-hero-img" key={fadeKey}>
           <Image
-            src="/images/products/rwood-groove/hero-rWood-Groove.webp"
-            alt="rWood acoustic panel with natural wood veneer finish"
+            src={currentHero}
+            alt={activeVeneer ? `${activeVeneer.name} rWood acoustic panel` : 'rWood acoustic panel'}
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
             sizes="100vw"
+            priority
           />
         </div>
         <div className="rwood-hero-overlay" />
@@ -90,13 +119,13 @@ export default function RWoodShowcase() {
           </h2>
           <p>{t('heroSubtitle')}</p>
           <div className="rwood-hero-cta">
-            <Link href="/products/rwood-groove" className="btn-warm">
+            <Link href="/products/rwood-groove" className="rwood-btn-warm">
               {t('ctaExplore')}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/contact" className="btn-ghost-white">
+            <Link href="/contact" className="rwood-btn-ghost">
               {t('ctaSample')}
             </Link>
           </div>
@@ -104,7 +133,7 @@ export default function RWoodShowcase() {
 
         {/* Floating spec card */}
         <div className="spec-float">
-          <div className="spec-float-tag">{t('floatTag')}</div>
+          <div className="spec-float-tag">{currentLabel}</div>
           <div className="spec-float-grid">
             <div className="sfg-cell">
               <span className="sfg-k">{t('specAbsorptionKey')}</span>
@@ -123,25 +152,54 @@ export default function RWoodShowcase() {
               <span className="sfg-v">{t('specCoreVal')}</span>
             </div>
           </div>
+          {/* Active veneer indicator */}
+          {activeVeneer && (
+            <div className="spec-float-swatch">
+              <div className="spec-swatch-img">
+                <Image
+                  src={activeVeneer.swatchImage}
+                  alt={activeVeneer.name}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="32px"
+                />
+              </div>
+              <span>{activeVeneer.name}</span>
+            </div>
+          )}
         </div>
       </div>
 
-      {/* ── VENEER STRIP ── */}
+      {/* ── VENEER STRIP (clickable) ── */}
       <div className="veneer-strip">
-        {veneerStrip.map((v) => (
-          <div key={v.name} className="veneer-cell">
-            <Image
-              src={v.image}
-              alt={`${v.name} veneer`}
-              fill
-              style={{ objectFit: 'cover' }}
-              sizes="20vw"
-            />
-            <div className="veneer-label">
-              <span className="veneer-name">{v.name}</span>
+        {STRIP_VENEERS.map((v) => {
+          const isActive = activeVeneer?.code === v.code;
+          return (
+            <div
+              key={v.code}
+              className={`veneer-cell${isActive ? ' veneer-cell-active' : ''}`}
+              onClick={() => selectVeneer(v)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && selectVeneer(v)}
+              aria-label={`View ${v.name} veneer`}
+              aria-pressed={isActive}
+            >
+              <Image
+                src={v.heroImage}
+                alt={`${v.name} veneer`}
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="20vw"
+              />
+              <div className="veneer-overlay" />
+              <div className="veneer-label">
+                <span className="veneer-name">{v.name}</span>
+              </div>
+              {isActive && <div className="veneer-active-bar" />}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* ── INFO + SWATCHES ── */}
@@ -163,47 +221,71 @@ export default function RWoodShowcase() {
           </div>
 
           <div className="info-cta">
-            <Link href="/products/rwood-groove" className="btn-warm">
+            <Link href="/products/rwood-groove" className="rwood-btn-warm">
               {t('ctaFullSpec')}
             </Link>
-            <Link href="/documents/rwood-groove/datasheet.pdf" className="btn-outline-warm" target="_blank">
+            <Link href="/documents/rwood-groove/datasheet.pdf" className="rwood-btn-outline" target="_blank">
               {t('ctaDatasheet')}
             </Link>
           </div>
         </div>
 
-        {/* Veneer swatches panel */}
+        {/* Veneer swatches panel (all 8, also clickable) */}
         <div className="rwood-swatches">
           <div className="section-tag-warm">{t('swatchesTag')}</div>
           <h3>{t('swatchesTitle')}</h3>
           <p>{t('swatchesBody')}</p>
 
           <div className="swatch-grid">
-            {veneers.map((v) => (
-              <div key={v.code} className="swatch-item">
-                <div className="swatch-img">
-                  <Image
-                    src={v.image}
-                    alt={v.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="80px"
-                  />
+            {VENEERS.map((v) => {
+              const isActive = activeVeneer?.code === v.code;
+              return (
+                <div
+                  key={v.code}
+                  className={`swatch-item${isActive ? ' swatch-active' : ''}`}
+                  onClick={() => selectVeneer(v)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === 'Enter' && selectVeneer(v)}
+                  aria-label={`Select ${v.name}`}
+                  aria-pressed={isActive}
+                >
+                  <div className="swatch-img-wrap">
+                    <Image
+                      src={v.swatchImage}
+                      alt={v.name}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      sizes="80px"
+                    />
+                    {isActive && (
+                      <div className="swatch-check">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                          <path d="M20 6L9 17l-5-5" />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+                  <span className="swatch-name">{v.name}</span>
                 </div>
-                <span className="swatch-name">{v.name}</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
-          <Link href="/contact" className="btn-primary sample-btn">
+          <Link href="/contact" className="rwood-btn-primary sample-btn">
             {t('ctaOrderSamples')}
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14m-7-7l7 7-7 7" />
             </svg>
           </Link>
         </div>
       </div>
 
+      {/* ─────────────────────────────────────────────
+          STYLES
+          Buttons on <Link> use :global() so the hash
+          isn't applied — <a> tags don't receive jsx attrs
+      ───────────────────────────────────────────── */}
       <style jsx>{`
         .rwood-section {
           background: #f5efe6;
@@ -220,11 +302,12 @@ export default function RWoodShowcase() {
         .rwood-hero-img {
           position: absolute;
           inset: 0;
-          transition: transform 6s ease;
+          animation: heroFadeIn 0.55s ease both;
         }
 
-        .rwood-hero:hover .rwood-hero-img {
-          transform: scale(1.03);
+        @keyframes heroFadeIn {
+          from { opacity: 0; transform: scale(1.03); }
+          to   { opacity: 1; transform: scale(1); }
         }
 
         .rwood-hero-overlay {
@@ -232,9 +315,9 @@ export default function RWoodShowcase() {
           inset: 0;
           background: linear-gradient(
             to right,
-            rgba(15, 7, 2, 0.82) 0%,
-            rgba(15, 7, 2, 0.4) 55%,
-            transparent 100%
+            rgba(12, 5, 1, 0.88) 0%,
+            rgba(12, 5, 1, 0.45) 50%,
+            rgba(12, 5, 1, 0.05) 100%
           );
           z-index: 1;
         }
@@ -248,7 +331,6 @@ export default function RWoodShowcase() {
           justify-content: flex-end;
           padding: 4rem 5rem;
           max-width: 44rem;
-          color: white;
         }
 
         .rwood-hero-text h2 {
@@ -265,10 +347,10 @@ export default function RWoodShowcase() {
           color: #d4a97a;
         }
 
-        .rwood-hero-text p {
-          font-size: 1rem;
+        .rwood-hero-text > p {
+          font-size: 0.95rem;
           line-height: 1.75;
-          color: rgba(255, 255, 255, 0.7);
+          color: rgba(255, 255, 255, 0.65);
           max-width: 28rem;
           margin-bottom: 1.6rem;
         }
@@ -301,6 +383,7 @@ export default function RWoodShowcase() {
           text-transform: uppercase;
           color: #8b6235;
           margin-bottom: 0.7rem;
+          transition: all 0.3s;
         }
 
         .spec-float-grid {
@@ -310,6 +393,7 @@ export default function RWoodShowcase() {
           background: #e4e0d8;
           border-radius: var(--radius-sm);
           overflow: hidden;
+          margin-bottom: 0.8rem;
         }
 
         .sfg-cell {
@@ -335,6 +419,32 @@ export default function RWoodShowcase() {
           color: var(--charcoal);
         }
 
+        /* Active veneer row inside spec card */
+        .spec-float-swatch {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          border-top: 1px solid #ece8e0;
+          padding-top: 0.7rem;
+          animation: heroFadeIn 0.35s ease both;
+        }
+
+        .spec-swatch-img {
+          position: relative;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 4px;
+          overflow: hidden;
+          flex-shrink: 0;
+          border: 1px solid #ddd;
+        }
+
+        .spec-float-swatch span {
+          font-size: 0.72rem;
+          font-weight: 700;
+          color: var(--charcoal);
+        }
+
         /* ── VENEER STRIP ── */
         .veneer-strip {
           display: grid;
@@ -348,39 +458,62 @@ export default function RWoodShowcase() {
           position: relative;
           overflow: hidden;
           cursor: pointer;
+          outline: none;
         }
 
         .veneer-cell :global(img) {
-          filter: brightness(0.82) saturate(0.9);
-          transition: all 0.45s ease;
+          filter: brightness(0.78) saturate(0.85);
+          transition: filter 0.4s ease, transform 0.5s ease;
         }
 
-        .veneer-cell:hover :global(img) {
-          transform: scale(1.07);
-          filter: brightness(1) saturate(1.1);
+        .veneer-cell:hover :global(img),
+        .veneer-cell-active :global(img) {
+          filter: brightness(1) saturate(1.08);
+          transform: scale(1.05);
+        }
+
+        .veneer-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(10, 4, 1, 0.65) 0%, transparent 60%);
+          z-index: 1;
         }
 
         .veneer-label {
           position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: linear-gradient(to top, rgba(15, 7, 2, 0.85), transparent);
-          padding: 0.7rem 0.8rem 0.6rem;
+          bottom: 0.7rem;
+          left: 0.8rem;
+          right: 0.8rem;
+          z-index: 2;
           opacity: 0;
-          transition: opacity 0.3s;
+          transform: translateY(5px);
+          transition: opacity 0.25s, transform 0.25s;
         }
 
-        .veneer-cell:hover .veneer-label {
+        .veneer-cell:hover .veneer-label,
+        .veneer-cell-active .veneer-label {
           opacity: 1;
+          transform: translateY(0);
         }
 
         .veneer-name {
           font-family: var(--font-heading);
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           font-weight: 700;
           color: white;
           display: block;
+          text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Orange bar at top of active strip cell */
+        .veneer-active-bar {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: #d4a97a;
+          z-index: 3;
         }
 
         /* ── BOTTOM ROW ── */
@@ -404,8 +537,8 @@ export default function RWoodShowcase() {
           margin-bottom: 0.7rem;
         }
 
-        .rwood-info p,
-        .rwood-swatches p {
+        .rwood-info > p,
+        .rwood-swatches > p {
           font-size: 0.95rem;
           line-height: 1.8;
           color: var(--charcoal);
@@ -429,11 +562,6 @@ export default function RWoodShowcase() {
           display: flex;
           flex-direction: column;
           gap: 0.2rem;
-          transition: background 0.2s;
-        }
-
-        .spec-cell:hover {
-          background: #fffdf9;
         }
 
         .spec-k {
@@ -475,30 +603,58 @@ export default function RWoodShowcase() {
           cursor: pointer;
           display: flex;
           flex-direction: column;
-          gap: 0.4rem;
+          gap: 0.35rem;
+          outline: none;
         }
 
-        .swatch-img {
+        .swatch-img-wrap {
           position: relative;
           height: 3.5rem;
           border-radius: var(--radius-sm);
           overflow: hidden;
-          border: 2px solid white;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-          transition: transform 0.2s, box-shadow 0.2s;
+          border: 2px solid transparent;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
         }
 
-        .swatch-item:hover .swatch-img {
-          transform: translateY(-3px) scale(1.04);
+        .swatch-item:hover .swatch-img-wrap {
+          transform: translateY(-2px) scale(1.03);
           box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
         }
 
+        .swatch-active .swatch-img-wrap {
+          border-color: #8b6235;
+          box-shadow: 0 0 0 3px rgba(139, 98, 53, 0.22);
+          transform: translateY(-2px);
+        }
+
+        /* Checkmark badge on active swatch */
+        .swatch-check {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          width: 1.1rem;
+          height: 1.1rem;
+          background: #8b6235;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 2;
+        }
+
         .swatch-name {
-          font-size: 0.62rem;
+          font-size: 0.6rem;
           font-weight: 600;
-          color: #888;
+          color: #999;
           text-align: center;
           letter-spacing: 0.04em;
+          transition: color 0.2s;
+        }
+
+        .swatch-active .swatch-name {
+          color: #8b6235;
+          font-weight: 700;
         }
 
         .sample-btn {
@@ -528,150 +684,109 @@ export default function RWoodShowcase() {
           display: inline-block;
         }
 
-        /* ── BUTTONS ── */
-        .btn-warm {
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+          .rwood-hero-text { padding: 3rem; }
+          .spec-float { display: none; }
+          .veneer-strip { grid-template-columns: repeat(3, 1fr); height: 22vh; }
+          .rwood-bottom { grid-template-columns: 1fr; }
+          .rwood-info { border-right: none; border-bottom: 1px solid rgba(139, 98, 53, 0.1); padding: 3.5rem 3rem; }
+          .rwood-swatches { padding: 3.5rem 3rem; }
+        }
+
+        @media (max-width: 640px) {
+          .rwood-hero { min-height: 440px; }
+          .rwood-hero-text { padding: 2rem 1.5rem; }
+          .rwood-hero-text h2 { font-size: 2.2rem; }
+          .veneer-strip { grid-template-columns: repeat(3, 1fr); height: 28vh; }
+          .swatch-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+          .rwood-info, .rwood-swatches { padding: 2.5rem 1.5rem; }
+        }
+      `}</style>
+
+      {/* ── GLOBAL BUTTON STYLES ──
+          <Link> renders as <a> — styled-jsx doesn't inject its hash
+          onto React components, so scoped rules never match the <a>.
+          :global() emits real CSS that hits the DOM directly. */}
+      <style jsx global>{`
+        .rwood-btn-warm {
           display: inline-flex;
           align-items: center;
           gap: 0.4rem;
           background: #8b6235;
-          color: white;
-          font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
+          color: #fff !important;
+          font-weight: 700;
+          font-size: 0.85rem;
+          padding: 0.7rem 1.45rem;
           border-radius: var(--radius-full);
-          text-decoration: none;
-          transition: all 0.25s;
-          border: none;
-          cursor: pointer;
+          text-decoration: none !important;
+          transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+          white-space: nowrap;
         }
-
-        .btn-warm:hover {
+        .rwood-btn-warm:hover {
           background: #7a5430;
           transform: translateY(-2px);
-          box-shadow: 0 12px 28px rgba(139, 98, 53, 0.28);
+          box-shadow: 0 10px 24px rgba(139, 98, 53, 0.32);
         }
 
-        .btn-outline-warm {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.4rem;
-          background: transparent;
-          color: #8b6235;
-          font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
-          border-radius: var(--radius-full);
-          text-decoration: none;
-          border: 2px solid rgba(139, 98, 53, 0.28);
-          transition: all 0.25s;
-        }
-
-        .btn-outline-warm:hover {
-          border-color: #8b6235;
-          background: rgba(139, 98, 53, 0.06);
-        }
-
-        .btn-primary {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.4rem;
-          background: var(--brand-blue);
-          color: white;
-          font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
-          border-radius: var(--radius-full);
-          text-decoration: none;
-          transition: all 0.25s;
-        }
-
-        .btn-primary:hover {
-          background: var(--brand-blue-dark);
-          transform: translateY(-2px);
-          box-shadow: 0 12px 28px rgba(25, 127, 199, 0.28);
-        }
-
-        .btn-ghost-white {
+        .rwood-btn-ghost {
           display: inline-flex;
           align-items: center;
           gap: 0.4rem;
           background: rgba(255, 255, 255, 0.1);
-          color: rgba(255, 255, 255, 0.8);
+          color: rgba(255, 255, 255, 0.85) !important;
           font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
+          font-size: 0.85rem;
+          padding: 0.7rem 1.45rem;
           border-radius: var(--radius-full);
-          text-decoration: none;
+          text-decoration: none !important;
           border: 1.5px solid rgba(255, 255, 255, 0.28);
-          transition: all 0.25s;
+          transition: background 0.2s, border-color 0.2s;
+          white-space: nowrap;
         }
-
-        .btn-ghost-white:hover {
+        .rwood-btn-ghost:hover {
           background: rgba(255, 255, 255, 0.18);
           border-color: rgba(255, 255, 255, 0.5);
         }
 
-        /* ── RESPONSIVE ── */
-        @media (max-width: 1024px) {
-          .rwood-hero-text {
-            padding: 3rem;
-          }
-
-          .spec-float {
-            display: none;
-          }
-
-          .veneer-strip {
-            grid-template-columns: repeat(3, 1fr);
-            height: 22vh;
-          }
-
-          .rwood-bottom {
-            grid-template-columns: 1fr;
-          }
-
-          .rwood-info {
-            border-right: none;
-            border-bottom: 1px solid rgba(139, 98, 53, 0.1);
-            padding: 3.5rem 3rem;
-          }
-
-          .rwood-swatches {
-            padding: 3.5rem 3rem;
-          }
-
-          .swatch-grid {
-            grid-template-columns: repeat(4, 1fr);
-          }
+        .rwood-btn-outline {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          background: transparent;
+          color: #8b6235 !important;
+          font-weight: 600;
+          font-size: 0.85rem;
+          padding: 0.7rem 1.45rem;
+          border-radius: var(--radius-full);
+          text-decoration: none !important;
+          border: 2px solid rgba(139, 98, 53, 0.3);
+          transition: border-color 0.2s, background 0.2s;
+          white-space: nowrap;
+        }
+        .rwood-btn-outline:hover {
+          border-color: #8b6235;
+          background: rgba(139, 98, 53, 0.06);
         }
 
-        @media (max-width: 640px) {
-          .rwood-hero {
-            min-height: 440px;
-          }
-
-          .rwood-hero-text {
-            padding: 2rem 1.5rem;
-          }
-
-          .rwood-hero-text h2 {
-            font-size: 2.2rem;
-          }
-
-          .veneer-strip {
-            grid-template-columns: repeat(2, 1fr);
-            height: 28vh;
-          }
-
-          .swatch-grid {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 6px;
-          }
-
-          .rwood-info,
-          .rwood-swatches {
-            padding: 2.5rem 1.5rem;
-          }
+        .rwood-btn-primary {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          background: var(--brand-blue);
+          color: #fff !important;
+          font-weight: 700;
+          font-size: 0.85rem;
+          padding: 0.7rem 1.45rem;
+          border-radius: var(--radius-full);
+          text-decoration: none !important;
+          transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+          white-space: nowrap;
+        }
+        .rwood-btn-primary:hover {
+          background: var(--brand-blue-dark);
+          transform: translateY(-2px);
+          box-shadow: 0 10px 24px rgba(25, 127, 199, 0.3);
         }
       `}</style>
     </section>
