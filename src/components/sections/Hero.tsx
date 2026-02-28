@@ -43,13 +43,13 @@ export default function Hero() {
           </div>
 
           <div className="cta-row">
-            <Link href="/products/rwood-groove" className="btn-warm">
+            <Link href="/products/rwood-groove" className="hero-btn-warm">
               {t('rwood.ctaPrimary')}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/products/rwood-veneer" className="btn-ghost-warm">
+            <Link href="/products/rwood-veneer" className="hero-btn-ghost-warm">
               {t('rwood.ctaSecondary')}
             </Link>
           </div>
@@ -108,13 +108,13 @@ export default function Hero() {
           </div>
 
           <div className="cta-row">
-            <Link href="/products" className="btn-blue">
+            <Link href="/products" className="hero-btn-blue">
               {t('circular.ctaPrimary')}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/sustainability" className="btn-ghost-blue">
+            <Link href="/sustainability" className="hero-btn-ghost-blue">
               {t('circular.ctaSecondary')}
             </Link>
           </div>
@@ -313,80 +313,82 @@ export default function Hero() {
           animation: fadeUp 0.6s 0.45s both;
         }
 
-        .btn-warm {
+        /* Buttons use :global() because <Link> renders as <a> and
+           styled-jsx doesn't inject its hash onto third-party components */
+        :global(.hero-btn-warm) {
           display: inline-flex;
           align-items: center;
           gap: 0.38rem;
           background: #8b6235;
-          color: #fff;
+          color: #fff !important;
           font-weight: 700;
           font-size: 0.8rem;
           padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
-          text-decoration: none;
+          text-decoration: none !important;
           transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
           white-space: nowrap;
         }
-        .btn-warm:hover {
+        :global(.hero-btn-warm:hover) {
           background: #7a5430;
           transform: translateY(-2px);
           box-shadow: 0 10px 22px rgba(139, 98, 53, 0.38);
         }
 
-        .btn-ghost-warm {
+        :global(.hero-btn-ghost-warm) {
           display: inline-flex;
           align-items: center;
           background: rgba(255, 255, 255, 0.1);
-          color: rgba(255, 255, 255, 0.82);
+          color: rgba(255, 255, 255, 0.82) !important;
           font-weight: 600;
           font-size: 0.8rem;
           padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
-          text-decoration: none;
+          text-decoration: none !important;
           border: 1.5px solid rgba(255, 255, 255, 0.24);
           transition: background 0.2s, border-color 0.2s;
           white-space: nowrap;
         }
-        .btn-ghost-warm:hover {
+        :global(.hero-btn-ghost-warm:hover) {
           background: rgba(255, 255, 255, 0.16);
           border-color: rgba(255, 255, 255, 0.44);
         }
 
-        .btn-blue {
+        :global(.hero-btn-blue) {
           display: inline-flex;
           align-items: center;
           gap: 0.38rem;
           background: var(--brand-blue);
-          color: #fff;
+          color: #fff !important;
           font-weight: 700;
           font-size: 0.8rem;
           padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
-          text-decoration: none;
+          text-decoration: none !important;
           transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
           white-space: nowrap;
         }
-        .btn-blue:hover {
+        :global(.hero-btn-blue:hover) {
           background: var(--brand-blue-dark);
           transform: translateY(-2px);
           box-shadow: 0 10px 22px rgba(25, 127, 199, 0.38);
         }
 
-        .btn-ghost-blue {
+        :global(.hero-btn-ghost-blue) {
           display: inline-flex;
           align-items: center;
           background: rgba(255, 255, 255, 0.08);
-          color: rgba(255, 255, 255, 0.82);
+          color: rgba(255, 255, 255, 0.82) !important;
           font-weight: 600;
           font-size: 0.8rem;
           padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
-          text-decoration: none;
+          text-decoration: none !important;
           border: 1.5px solid rgba(255, 255, 255, 0.2);
           transition: background 0.2s, border-color 0.2s;
           white-space: nowrap;
         }
-        .btn-ghost-blue:hover {
+        :global(.hero-btn-ghost-blue:hover) {
           background: rgba(255, 255, 255, 0.14);
           border-color: rgba(255, 255, 255, 0.4);
         }
