@@ -134,7 +134,7 @@ export default function SampleKitModal({ open, onClose }: Props) {
               Order Your Sample Kit
             </h2>
             <p style={{ fontSize: '0.82rem', color: '#888', lineHeight: 1.5, margin: 0 }}>
-              Fill in your details and we'll ship a free sample kit within 3–5 business days.
+              Fill in your details and we&apos;ll ship a free sample kit within 3&ndash;5 business days.
             </p>
           </div>
           <button
@@ -159,7 +159,7 @@ export default function SampleKitModal({ open, onClose }: Props) {
             <div style={{ fontSize: '3rem' }}>✅</div>
             <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.4rem', fontWeight: 800, color: 'var(--charcoal)', margin: 0 }}>Request received!</h3>
             <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.65, maxWidth: '22rem', margin: 0 }}>
-              We'll prepare your sample kit and ship it to <strong>{form.city}</strong> within 3–5 business days. Check your inbox for a confirmation.
+              We&apos;ll prepare your sample kit and ship it to <strong>{form.city}</strong> within 3&ndash;5 business days. Check your inbox for a confirmation.
             </p>
             <button
               onClick={handleClose}
