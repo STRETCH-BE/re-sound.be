@@ -629,10 +629,6 @@ export default function RWoodGrooveProductPage() {
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
               View Specifications
             </a>
-          </div>
-
-          <p className="hero-price">Starting from <strong>€89</strong> per panel excl. VAT</p>
-        </div>
         
         <div className="hero-image">
           <div className="image-container">
