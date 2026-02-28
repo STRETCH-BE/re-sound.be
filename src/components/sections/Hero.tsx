@@ -17,7 +17,7 @@ export default function Hero() {
             src="/images/products/rwood-groove/hero-rWood-Groove.webp"
             alt="rWood acoustic panel with natural wood veneer"
             fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
             priority
             sizes="50vw"
           />
@@ -45,11 +45,11 @@ export default function Hero() {
           <div className="cta-row">
             <Link href="/products/rwood-groove" className="btn-warm">
               {t('rwood.ctaPrimary')}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/products/rwood-veneer" className="btn-ghost">
+            <Link href="/products/rwood-veneer" className="btn-ghost-warm">
               {t('rwood.ctaSecondary')}
             </Link>
           </div>
@@ -108,13 +108,13 @@ export default function Hero() {
           </div>
 
           <div className="cta-row">
-            <Link href="/products" className="btn-primary">
+            <Link href="/products" className="btn-blue">
               {t('circular.ctaPrimary')}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/sustainability" className="btn-ghost">
+            <Link href="/sustainability" className="btn-ghost-blue">
               {t('circular.ctaSecondary')}
             </Link>
           </div>
@@ -140,19 +140,24 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Center divider */}
+      {/* Center divider line */}
       <div className="center-divider" />
 
       <style jsx>{`
+        /* ─────────────────────────────────────────────
+           HERO — Full-bleed, goes under the fixed nav.
+           No top gap. Images cover from y:0.
+        ───────────────────────────────────────────── */
         .hero {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          min-height: 100vh;
-          padding-top: 68px;
+          height: 100vh;
+          min-height: 700px;
           position: relative;
+          /* NO padding-top — hero sits behind fixed nav */
         }
 
-        /* ── PANEL BASE ── */
+        /* ── PANEL ── */
         .panel {
           position: relative;
           display: flex;
@@ -164,13 +169,16 @@ export default function Hero() {
         .panel-img {
           position: absolute;
           inset: 0;
-          transition: transform 8s ease;
+          transition: transform 9s ease;
         }
 
         .panel:hover .panel-img {
-          transform: scale(1.03);
+          transform: scale(1.04);
         }
 
+        /* ── OVERLAYS ──
+           Heavy at bottom for legibility, transparent at top
+           so the photo reads behind the nav */
         .panel-overlay {
           position: absolute;
           inset: 0;
@@ -180,64 +188,72 @@ export default function Hero() {
         .panel-overlay-warm {
           background: linear-gradient(
             to top,
-            rgba(15, 7, 2, 0.94) 0%,
-            rgba(15, 7, 2, 0.58) 45%,
-            rgba(15, 7, 2, 0.12) 100%
+            rgba(10, 4, 1, 0.97) 0%,
+            rgba(10, 4, 1, 0.78) 32%,
+            rgba(10, 4, 1, 0.35) 58%,
+            rgba(10, 4, 1, 0.06) 100%
           );
         }
 
         .panel-overlay-blue {
           background: linear-gradient(
             to top,
-            rgba(5, 18, 38, 0.95) 0%,
-            rgba(5, 18, 38, 0.58) 45%,
-            rgba(5, 18, 38, 0.12) 100%
+            rgba(2, 10, 24, 0.97) 0%,
+            rgba(2, 10, 24, 0.80) 32%,
+            rgba(2, 10, 24, 0.38) 58%,
+            rgba(2, 10, 24, 0.06) 100%
           );
         }
 
+        /* ── CONTENT ──
+           margin-top: auto pushes it to the bottom.
+           padding-bottom gives breathing room above footer. */
         .panel-content {
           position: relative;
           z-index: 2;
-          padding: 3.5rem 4rem 4.5rem;
+          margin-top: auto;
+          padding: 0 3.5rem 3.5rem;
+          display: flex;
+          flex-direction: column;
         }
 
         /* ── BADGES ── */
         .panel-badge {
           display: inline-flex;
           align-items: center;
-          gap: 0.45rem;
-          font-size: 0.7rem;
+          gap: 0.4rem;
+          font-size: 0.62rem;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.13em;
           text-transform: uppercase;
-          padding: 0.38rem 0.9rem;
+          padding: 0.3rem 0.8rem;
           border-radius: var(--radius-full);
-          margin-bottom: 1.6rem;
+          margin-bottom: 1.3rem;
           width: fit-content;
-          animation: fadeUp 0.6s 0.05s both;
+          animation: fadeUp 0.55s 0.05s both;
         }
 
         .badge-warm {
-          background: rgba(139, 98, 53, 0.22);
-          color: #d4a97a;
-          border: 1px solid rgba(200, 160, 100, 0.32);
+          background: rgba(139, 98, 53, 0.3);
+          color: #e0b87a;
+          border: 1px solid rgba(220, 170, 100, 0.45);
         }
 
         .badge-blue {
-          background: rgba(25, 127, 199, 0.22);
-          color: #7fc4f0;
-          border: 1px solid rgba(25, 127, 199, 0.38);
+          background: rgba(25, 127, 199, 0.3);
+          color: #8ecef5;
+          border: 1px solid rgba(25, 127, 199, 0.5);
         }
 
         /* ── HEADINGS ── */
         .panel-content h1 {
-          font-size: clamp(2.6rem, 4vw, 4rem);
+          font-size: clamp(2.2rem, 3.4vw, 3.6rem);
           font-weight: 800;
-          letter-spacing: -2.5px;
-          line-height: 1.02;
+          letter-spacing: -2px;
+          line-height: 1.04;
           color: #fff;
-          margin-bottom: 1.2rem;
-          animation: fadeUp 0.65s 0.18s both;
+          margin: 0 0 0.9rem;
+          animation: fadeUp 0.6s 0.15s both;
         }
 
         .panel-left h1 em {
@@ -246,136 +262,154 @@ export default function Hero() {
         }
 
         .panel-right h1 em {
-          color: var(--brand-blue-light);
+          color: #7fc4f0;
           font-style: italic;
         }
 
-        .panel-content p {
-          font-size: 0.98rem;
-          line-height: 1.75;
-          color: rgba(255, 255, 255, 0.65);
-          max-width: 27rem;
-          margin-bottom: 1.8rem;
-          animation: fadeUp 0.65s 0.3s both;
+        .panel-content > p {
+          font-size: 0.875rem;
+          line-height: 1.72;
+          color: rgba(255, 255, 255, 0.58);
+          max-width: 25rem;
+          margin: 0 0 1.3rem;
+          animation: fadeUp 0.6s 0.25s both;
         }
 
         /* ── PILLS ── */
         .pill-row {
           display: flex;
           flex-wrap: wrap;
-          gap: 0.45rem;
-          margin-bottom: 1.8rem;
-          animation: fadeUp 0.65s 0.42s both;
+          gap: 0.38rem;
+          margin-bottom: 1.3rem;
+          animation: fadeUp 0.6s 0.35s both;
         }
 
         .pill {
-          font-size: 0.7rem;
+          font-size: 0.63rem;
           font-weight: 600;
-          padding: 0.3rem 0.72rem;
+          padding: 0.25rem 0.65rem;
           border-radius: var(--radius-full);
-          backdrop-filter: blur(8px);
+          backdrop-filter: blur(6px);
+          letter-spacing: 0.02em;
         }
 
         .pill-warm {
-          background: rgba(200, 160, 100, 0.18);
-          color: #d4a97a;
-          border: 1px solid rgba(200, 160, 100, 0.3);
+          background: rgba(200, 155, 90, 0.18);
+          color: #e0b87a;
+          border: 1px solid rgba(200, 155, 90, 0.35);
         }
 
         .pill-blue {
           background: rgba(25, 127, 199, 0.2);
-          color: #7fc4f0;
-          border: 1px solid rgba(25, 127, 199, 0.35);
+          color: #8ecef5;
+          border: 1px solid rgba(25, 127, 199, 0.4);
         }
 
         /* ── CTA BUTTONS ── */
         .cta-row {
           display: flex;
-          gap: 0.75rem;
+          gap: 0.6rem;
           align-items: center;
-          margin-bottom: 0;
-          animation: fadeUp 0.65s 0.54s both;
+          animation: fadeUp 0.6s 0.45s both;
         }
 
         .btn-warm {
           display: inline-flex;
           align-items: center;
-          gap: 0.4rem;
+          gap: 0.38rem;
           background: #8b6235;
-          color: white;
-          font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
+          color: #fff;
+          font-weight: 700;
+          font-size: 0.8rem;
+          padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
           text-decoration: none;
-          transition: all 0.25s;
+          transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+          white-space: nowrap;
         }
-
         .btn-warm:hover {
           background: #7a5430;
           transform: translateY(-2px);
-          box-shadow: 0 12px 28px rgba(139, 98, 53, 0.3);
+          box-shadow: 0 10px 22px rgba(139, 98, 53, 0.38);
         }
 
-        .btn-primary {
+        .btn-ghost-warm {
           display: inline-flex;
           align-items: center;
-          gap: 0.4rem;
-          background: var(--brand-blue);
-          color: white;
+          background: rgba(255, 255, 255, 0.1);
+          color: rgba(255, 255, 255, 0.82);
           font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
+          font-size: 0.8rem;
+          padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
           text-decoration: none;
-          transition: all 0.25s;
+          border: 1.5px solid rgba(255, 255, 255, 0.24);
+          transition: background 0.2s, border-color 0.2s;
+          white-space: nowrap;
+        }
+        .btn-ghost-warm:hover {
+          background: rgba(255, 255, 255, 0.16);
+          border-color: rgba(255, 255, 255, 0.44);
         }
 
-        .btn-primary:hover {
+        .btn-blue {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.38rem;
+          background: var(--brand-blue);
+          color: #fff;
+          font-weight: 700;
+          font-size: 0.8rem;
+          padding: 0.65rem 1.35rem;
+          border-radius: var(--radius-full);
+          text-decoration: none;
+          transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+          white-space: nowrap;
+        }
+        .btn-blue:hover {
           background: var(--brand-blue-dark);
           transform: translateY(-2px);
-          box-shadow: 0 12px 28px rgba(25, 127, 199, 0.3);
+          box-shadow: 0 10px 22px rgba(25, 127, 199, 0.38);
         }
 
-        .btn-ghost {
+        .btn-ghost-blue {
           display: inline-flex;
           align-items: center;
-          gap: 0.4rem;
-          background: rgba(255, 255, 255, 0.1);
-          color: rgba(255, 255, 255, 0.8);
+          background: rgba(255, 255, 255, 0.08);
+          color: rgba(255, 255, 255, 0.82);
           font-weight: 600;
-          font-size: 0.88rem;
-          padding: 0.72rem 1.5rem;
+          font-size: 0.8rem;
+          padding: 0.65rem 1.35rem;
           border-radius: var(--radius-full);
           text-decoration: none;
-          border: 1.5px solid rgba(255, 255, 255, 0.28);
-          transition: all 0.25s;
+          border: 1.5px solid rgba(255, 255, 255, 0.2);
+          transition: background 0.2s, border-color 0.2s;
+          white-space: nowrap;
+        }
+        .btn-ghost-blue:hover {
+          background: rgba(255, 255, 255, 0.14);
+          border-color: rgba(255, 255, 255, 0.4);
         }
 
-        .btn-ghost:hover {
-          background: rgba(255, 255, 255, 0.18);
-          border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* ── STATS ── */
+        /* ── STAT BAR ── */
         .stat-row {
           display: flex;
-          gap: 0;
-          margin-top: 2.2rem;
-          background: rgba(255, 255, 255, 0.07);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          margin-top: 1.6rem;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.12);
           border-radius: var(--radius-md);
           overflow: hidden;
-          backdrop-filter: blur(10px);
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
           width: fit-content;
-          animation: fadeUp 0.65s 0.66s both;
+          animation: fadeUp 0.6s 0.55s both;
         }
 
         .stat {
           display: flex;
           flex-direction: column;
-          padding: 0.85rem 1.4rem;
-          border-right: 1px solid rgba(255, 255, 255, 0.08);
+          padding: 0.75rem 1.15rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .stat:last-child {
@@ -384,26 +418,26 @@ export default function Hero() {
 
         .stat-num {
           font-family: var(--font-heading);
-          font-size: 1.3rem;
+          font-size: 1.15rem;
           font-weight: 800;
           color: #fff;
           line-height: 1;
-          letter-spacing: -0.5px;
+          letter-spacing: -0.4px;
         }
 
         .stat-lbl {
-          font-size: 0.6rem;
+          font-size: 0.54rem;
           text-transform: uppercase;
           letter-spacing: 0.1em;
-          color: rgba(255, 255, 255, 0.42);
+          color: rgba(255, 255, 255, 0.38);
           margin-top: 0.2rem;
           white-space: nowrap;
         }
 
-        /* ── CENTER BAR ── */
+        /* ── CENTER DIVIDER ── */
         .center-divider {
           position: absolute;
-          top: 68px;
+          top: 0;
           bottom: 0;
           left: 50%;
           width: 1px;
@@ -414,7 +448,7 @@ export default function Hero() {
 
         /* ── ANIMATIONS ── */
         @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(28px); }
+          from { opacity: 0; transform: translateY(20px); }
           to   { opacity: 1; transform: translateY(0); }
         }
 
@@ -422,47 +456,39 @@ export default function Hero() {
         @media (max-width: 1024px) {
           .hero {
             grid-template-columns: 1fr;
-            min-height: auto;
+            height: auto;
           }
-
           .panel {
             min-height: 90vh;
           }
-
           .center-divider {
             display: none;
           }
-
           .panel-content {
-            padding: 3rem 2.5rem 3.5rem;
-          }
-
-          .panel-content h1 {
-            font-size: 2.8rem;
+            padding: 0 2.5rem 3rem;
           }
         }
 
         @media (max-width: 640px) {
           .panel {
-            min-height: 80vh;
+            min-height: 85vh;
           }
-
           .panel-content {
-            padding: 2.5rem 1.5rem 3rem;
+            padding: 0 1.5rem 2.5rem;
           }
-
           .panel-content h1 {
-            font-size: 2.2rem;
-            letter-spacing: -1.5px;
+            font-size: 2rem;
+            letter-spacing: -1.2px;
           }
-
           .stat-row {
-            flex-wrap: wrap;
             width: 100%;
           }
-
           .stat {
-            flex: 1 1 calc(50% - 1px);
+            flex: 1;
+            padding: 0.65rem 0.7rem;
+          }
+          .cta-row {
+            flex-wrap: wrap;
           }
         }
       `}</style>
