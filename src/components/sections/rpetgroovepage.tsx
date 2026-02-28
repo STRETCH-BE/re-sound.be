@@ -631,7 +631,7 @@ export default function RPetGrooveProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€65</strong> per panel excl. VAT</p>
+          <p className="hero-price">  <strong> </strong>  </p>
         </div>
         
         <div className="hero-image">
