@@ -8,7 +8,7 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="hero">
+    <section className="hero-split">
 
       {/* ── LEFT PANEL: rWood / Natural ── */}
       <div className="panel panel-left">
@@ -148,7 +148,7 @@ export default function Hero() {
            HERO — Full-bleed, goes under the fixed nav.
            No top gap. Images cover from y:0.
         ───────────────────────────────────────────── */
-        .hero {
+        .hero-split {
           display: grid;
           grid-template-columns: 1fr 1fr;
           height: 100vh;
@@ -454,7 +454,7 @@ export default function Hero() {
 
         /* ── RESPONSIVE ── */
         @media (max-width: 1024px) {
-          .hero {
+          .hero-split {
             grid-template-columns: 1fr;
             height: auto;
           }
