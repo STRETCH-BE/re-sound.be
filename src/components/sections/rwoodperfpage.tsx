@@ -1054,7 +1054,7 @@ export default function RWoodPerfProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-perf/sustainability.webp"
+                src="/images/products/rwood-perf/FSC_sustainability.webp"
                 alt="Sustainable wood sourcing and production"
                 fill
                 style={{ objectFit: 'cover' }}
