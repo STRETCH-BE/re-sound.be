@@ -15,9 +15,9 @@ export default function ProductsMosaic() {
       tall: true,
     },
     {
-      slug: 'solid',
-      series: 'Solid Series · SOL-W-M',
-      image: '/images/products/solid/solid_card.webp',
+      slug: 'rWood-Perf',
+      series: 'rWood-Perf series · RW-P',
+      image: '/images/products/rwood-perf/rWood-Perf_hero.jpg',
       tall: false,
     },
     {
@@ -41,10 +41,10 @@ export default function ProductsMosaic() {
   ];
 
   const applications = [
-    { label: '🏢 Office', image: '/images/products/interior/installatie_interior.jpg' },
-    { label: '🍽️ Hospitality', image: '/images/products/interior/gallery-1.jpg' },
-    { label: '📚 Education', image: '/images/products/interior/gallery-2.jpg' },
-    { label: '🏥 Healthcare', image: '/images/products/interior/gallery-3.jpg' },
+    { label: '⛹️‍♂️ Education - Sports', image: '/images/products/rwood-perf/gallery-7.webp' },
+    { label: '🏢 Office', image: '/images/products/rwood-perf/gallery-3.webp' },
+    { label: '🏡 Private', image: '/images/products/rwood-veneer/gallery-2.webp' },
+    { label: '🏥 Healthcare', image: '/images/products/rpet-panel/gallery-5.webp' },
   ];
 
   return (
