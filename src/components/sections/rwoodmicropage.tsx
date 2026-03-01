@@ -1050,15 +1050,13 @@ export default function RWoodMicroProductPage() {
         <div className="cta-content">
           <h2>{tPage('cta.ctaTitle')}</h2>
           <p>
-            Get a personalized quote for your project. Our team will help you 
-            select the perfect perforation, veneer, and finish combination.
-          </p>
+            {tPage('cta.ctaSubtitle')}</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="tel:+3232846818" className="btn-secondary large">
-              Call Us: +32 3 284 68 18
+              {tPage('cta.callUs')}
             </a>
           </div>
           <p className="cta-note">

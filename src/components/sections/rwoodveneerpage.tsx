@@ -183,7 +183,7 @@ export default function RWoodPanelProductPage() {
 
           <div className="hero-ctas">
             <Link href="/contact" className="btn-primary">
-              Request a Quote
+              {tPage(\'cta.requestQuote\')}
             </Link>
             <a href="#collection" onClick={(e) => { e.preventDefault(); scrollToSection('collection'); }} className="btn-secondary">
               Explore the Collection
@@ -888,10 +888,10 @@ export default function RWoodPanelProductPage() {
           </p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="tel:+3232846818" className="btn-secondary large">
-              Call Us: +32 3 284 68 18
+              {tPage('cta.callUs')}
             </a>
           </div>
           <p className="cta-note">

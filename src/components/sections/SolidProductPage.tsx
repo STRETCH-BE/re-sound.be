@@ -423,7 +423,7 @@ export default function SolidProductPage() {
           </div>
           <div className="benefit">
             <span className="benefit-icon">📐</span>
-            <h4>{t('acoustics.benefit4Title') if False else t('specs.maxCoverageTitle')}</h4>
+            <h4>{t('specs.maxCoverageTitle')}</h4>
             <p>{t('acoustics.benefit4')}</p>
           </div>
         </div>
@@ -621,10 +621,10 @@ export default function SolidProductPage() {
           </p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="tel:+3232846818" className="btn-secondary large">
-              Call Us: +32 3 284 68 18
+              {tPage('cta.callUs')}
             </a>
           </div>
           <p className="cta-note">
