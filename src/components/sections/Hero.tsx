@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="panel panel-left">
         <div className="panel-img">
           <Image
-            src="/images/products/rwood-groove/hero-rWood-Groove.webp"
+            src="/images/products/rwood-micro/finish-detail.webp"
             alt="rWood acoustic panel with natural wood veneer"
             fill
             style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
