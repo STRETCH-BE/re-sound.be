@@ -641,7 +641,7 @@ export default function RWoodMicroProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>&euro;119</strong> per panel excl. VAT</p>
+          <p className="hero-price"> <strong></strong> </p>
         </div>
         
         <div className="hero-image">
