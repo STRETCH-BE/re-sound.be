@@ -22,27 +22,27 @@ const veneerCollections = [
     category: 'Light Naturals',
     description: 'Serene, luminous tones that open up any space',
     veneers: [
-      { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-panel/swatches/Beech-White.jpg', image: '/images/products/rwood-panel/Beech-White.jpg', isDark: false, origin: 'Europe', grain: 'Straight to interlocked' },
-      { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-panel/swatches/Birch-Rotary.jpg', image: '/images/products/rwood-panel/Birch-Rotary.jpg', isDark: false, origin: 'Scandinavia', grain: 'Subtle fine grain' },
-      { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-panel/swatches/silk-oak.jpg', image: '/images/products/rwood-panel/silk-oak.jpg', isDark: false, origin: 'Europe', grain: 'Fine straight grain' },
+      { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-veneer/Beech-White.jpg', image: '/images/products/rwood-veneer/Beech-White.jpg', isDark: false, origin: 'Europe', grain: 'Straight to interlocked' },
+      { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-veneer/Birch-Rotary.jpg', image: '/images/products/rwood-veneer/Birch-Rotary.jpg', isDark: false, origin: 'Scandinavia', grain: 'Subtle fine grain' },
+      { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-veneer/silk-oak.jpg', image: '/images/products/rwood-veneer/silk-oak.jpg', isDark: false, origin: 'Europe', grain: 'Fine straight grain' },
     ],
   },
   {
     category: 'Warm Naturals',
     description: 'Rich, inviting mid-tones with timeless appeal',
     veneers: [
-      { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-panel/swatches/straw-oak.jpg', image: '/images/products/rwood-panel/straw-oak.jpg', isDark: false, origin: 'Europe', grain: 'Cathedral grain' },
-      { id: 'honey-oak', name: 'Honey Oak', swatch: '/images/products/rwood-panel/swatches/honey-oak.jpg', image: '/images/products/rwood-panel/honey-oak.jpg', isDark: false, origin: 'Europe', grain: 'Prominent grain' },
+      { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false, origin: 'Europe', grain: 'Cathedral grain' },
+      { id: 'honey-oak', name: 'Honey Oak', swatch: '/images/products/rwood-veneer/honey-oak.jpg', image: '/images/products/rwood-veneer/honey-oak.jpg', isDark: false, origin: 'Europe', grain: 'Prominent grain' },
     ],
   },
   {
     category: 'Deep Tones',
     description: 'Bold, sophisticated finishes with dramatic presence',
     veneers: [
-      { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-panel/swatches/umber-oak.jpg', image: '/images/products/rwood-panel/umber-oak.jpg', isDark: true, origin: 'Europe', grain: 'Pronounced grain' },
-      { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-panel/swatches/walnut.jpg', image: '/images/products/rwood-panel/walnut.jpg', isDark: true, origin: 'North America', grain: 'Straight to wavy' },
-      { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-panel/swatches/smoked-oak.jpg', image: '/images/products/rwood-panel/smoked-oak.jpg', isDark: true, origin: 'Europe', grain: 'Deep cathedral grain' },
-      { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-panel/swatches/tobacco-walnut.jpg', image: '/images/products/rwood-panel/tobacco-walnut.jpg', isDark: true, origin: 'North America', grain: 'Rich flowing grain' },
+      { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-veneer/umber-oak.jpg', image: '/images/products/rwood-veneer/umber-oak.jpg', isDark: true, origin: 'Europe', grain: 'Pronounced grain' },
+      { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-veneer/walnut.jpg', image: '/images/products/rwood-veneer/walnut.jpg', isDark: true, origin: 'North America', grain: 'Straight to wavy' },
+      { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-veneer/smoked-oak.jpg', image: '/images/products/rwood-veneer/smoked-oak.jpg', isDark: true, origin: 'Europe', grain: 'Deep cathedral grain' },
+      { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-veneer/tobacco-walnut.jpg', image: '/images/products/rwood-veneer/tobacco-walnut.jpg', isDark: true, origin: 'North America', grain: 'Rich flowing grain' },
     ],
   },
 ];
@@ -341,12 +341,12 @@ export default function RWoodPanelProductPage() {
     : veneerCollections.find(c => c.category === activeCollection)?.veneers || [];
 
   const downloads = [
-    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-panel/product-data-sheet.pdf' },
-    { id: 'veneer-collection-guide', name: 'Veneer Collection Guide', icon: '🎨', file: '/documents/rwood-panel/veneer-collection-guide.pdf' },
-    { id: 'processing-instructions', name: 'Processing Instructions', icon: '🔧', file: '/documents/rwood-panel/processing-instructions.pdf' },
-    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/rwood-panel/acoustic-test-report.pdf' },
-    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rwood-panel/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rwood-panel/sustainability-declaration.pdf' },
+    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
+    { id: 'veneer-collection-guide', name: 'Veneer Collection Guide', icon: '🎨', file: '/documents/rwood-veneer/veneer-collection-guide.pdf' },
+    { id: 'processing-instructions', name: 'Processing Instructions', icon: '🔧', file: '/documents/rwood-veneer//processing-instructions.pdf' },
+    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/rwood-veneer/acoustic-test-report.pdf' },
+    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rwood-veneer/fire-certificate.pdf' },
+    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rwood-veneer/sustainability-declaration.pdf' },
   ];
 
   const handleDownloadClick = (fileUrl: string) => {
@@ -457,7 +457,7 @@ export default function RWoodPanelProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€72</strong> per panel excl. VAT</p>
+          <p className="hero-price"> <strong> </strong> </p>
         </div>
         
         <div className="hero-image">
@@ -531,7 +531,7 @@ export default function RWoodPanelProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-panel/overview-craftsmanship.webp"
+                src="/images/products/rwood-veneer/overview-craftsmanship.webp"
                 alt="rWood - Panel veneered MDF panel close-up showing grain detail"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -757,7 +757,7 @@ export default function RWoodPanelProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-panel/finish-detail.webp"
+                src="/images/products/rwood-veneer/finish-detail.webp"
                 alt="Close-up of lacquered veneer surface"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -883,7 +883,7 @@ export default function RWoodPanelProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-panel/FSC_sustainability.webp"
+                src="/images/products/rwood-veneer/FSC_sustainability.webp"
                 alt="Sustainably managed forest"
                 fill
                 style={{ objectFit: 'cover' }}
