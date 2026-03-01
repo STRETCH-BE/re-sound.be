@@ -635,7 +635,7 @@ export default function RPETPanelProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€35</strong> per m² excl. VAT</p>
+          <p className="hero-price"> <strong> </strong> </p>
         </div>
         
         <div className="hero-image">
