@@ -77,12 +77,12 @@ export default function RWoodPanelProductPage() {
     : veneerCollections.find(c => c.category === activeCollection)?.veneers || [];
 
   const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
-    { id: 'veneer-collection-guide', name: 'Veneer Collection Guide', icon: '🎨', file: '/documents/rwood-veneer/veneer-collection-guide.pdf' },
-    { id: 'processing-instructions', name: 'Processing Instructions', icon: '🔧', file: '/documents/rwood-veneer//processing-instructions.pdf' },
-    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/rwood-veneer/acoustic-test-report.pdf' },
-    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rwood-veneer/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rwood-veneer/sustainability-declaration.pdf' },
+    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
+    { id: 'veneer-collection-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/rwood-veneer/veneer-collection-guide.pdf' },
+    { id: 'processing-instructions', name: tPage('downloads.installationManual'), icon: '🔧', file: '/documents/rwood-veneer//processing-instructions.pdf' },
+    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-veneer/acoustic-test-report.pdf' },
+    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-veneer/fire-certificate.pdf' },
+    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-veneer/sustainability-declaration.pdf' },
   ];
 
   const handleDownloadClick = (fileUrl: string) => {
@@ -157,7 +157,7 @@ export default function RWoodPanelProductPage() {
           ═══════════════════════════════════ */}
       <section className="product-hero">
         <div className="hero-content">
-          <span className="product-tag">PREFINISHED VENEER PANELS</span>
+          <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">The Elegance of Real Wood. Ready to Use.</p>
           <p className="hero-description">
@@ -183,7 +183,7 @@ export default function RWoodPanelProductPage() {
 
           <div className="hero-ctas">
             <Link href="/contact" className="btn-primary">
-              {tPage(\'cta.requestQuote\')}
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="#collection" onClick={(e) => { e.preventDefault(); scrollToSection('collection'); }} className="btn-secondary">
               Explore the Collection
@@ -839,7 +839,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M10 16h4" opacity="0.5"/>
               </svg>
             </div>
-            <h4>{t('related.groove')}</h4>
+            <h4>rWood - Groove</h4>
             <p>Slatted acoustic panels in matching wood veneers for wall and ceiling feature zones</p>
             <Link href="/products/rwood-groove" className="matching-link">Explore →</Link>
           </div>
@@ -895,7 +895,7 @@ export default function RWoodPanelProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available • Made in Europe • FSC® Certified • Circular Take-Back
+            {tPage('cta.freeShippingNote')} • Circular Take-Back
           </p>
         </div>
       </section>
