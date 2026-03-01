@@ -42,7 +42,7 @@ const applicationOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.jpg';
+const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
 
 // Lead Generation Form Modal
 function LeadGenModal({ 
@@ -873,35 +873,35 @@ export default function RPETPanelProductPage() {
             <div className="showcase-item large">
               <div className="image-container">
                 <Image
-                  src="/images/products/rpet-panel/application-office.jpg"
-                  alt="Acoustic wall panels in modern office"
+                  src="/images/products/rpet-panel/gallery-1.webp"
+                  alt="PET Acoustic walls in meeting pod"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <div className="showcase-label">Open Plan Offices</div>
+              <div className="showcase-label">Meeting Pod</div>
             </div>
             <div className="showcase-item">
               <div className="image-container">
                 <Image
-                  src="/images/products/rpet-panel/application-bank.jpg"
-                  alt="Ceiling panels in restaurant"
+                  src="/images/products/rpet-panel/gallery-3.webp"
+                  alt="Ceiling panels and table divider"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <div className="showcase-label">Banks</div>
+              <div className="showcase-label">Offices</div>
             </div>
             <div className="showcase-item">
               <div className="image-container">
                 <Image
-                  src="/images/products/rpet-panel/application-education.jpg"
-                  alt="Acoustic treatment in classroom"
+                  src="/images/products/rpet-panel/gallery-12.webp"
+                  alt="Acoustic treatment in restaurant"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
-              <div className="showcase-label">Education</div>
+              <div className="showcase-label">Hospitallity</div>
             </div>
           </div>
         </div>
@@ -983,7 +983,7 @@ export default function RPETPanelProductPage() {
                   />
                 </svg>
                 <div className="rating-content">
-                  <span className="rating-value">αw 1.00</span>
+                  <span className="rating-value">αw 0.95</span>
                   <span className="rating-label">Maximum</span>
                 </div>
               </div>
@@ -995,7 +995,7 @@ export default function RPETPanelProductPage() {
 
             <div className="metric-cards">
               <div className="metric-card">
-                <div className="metric-value">100%</div>
+                <div className="metric-value">95%</div>
                 <div className="metric-label">Sound Absorbed</div>
               </div>
               <div className="metric-card">
@@ -1007,7 +1007,7 @@ export default function RPETPanelProductPage() {
             <div className="test-note">
               <p>
                 <strong>Test Configuration:</strong> 24mm panel on 50mm frame with 
-                polyester wool insulation achieves αw 1.00
+                polyester wool insulation achieves αw 0.95
               </p>
             </div>
 
