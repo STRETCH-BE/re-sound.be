@@ -18,11 +18,14 @@ interface LeadFormData {
 
 // Wood veneer options for rWood - Micro
 const woodFinishOptions = [
-  { id: 'oak-natural', name: 'Natural Oak', swatch: '/images/products/rwood-micro/swatches/natural-oak.jpg', image: '/images/products/rwood-micro/natural-oak.jpg', isDark: false },
-  { id: 'oak-white', name: 'White Oak', swatch: '/images/products/rwood-micro/swatches/white-oak.jpg', image: '/images/products/rwood-micro/white-oak.jpg', isDark: false },
-  { id: 'oak-smoked', name: 'Smoked Oak', swatch: '/images/products/rwood-micro/swatches/smoked-oak.jpg', image: '/images/products/rwood-micro/smoked-oak.jpg', isDark: true },
-  { id: 'walnut', name: 'Walnut', swatch: '/images/products/rwood-micro/swatches/walnut.jpg', image: '/images/products/rwood-micro/walnut.jpg', isDark: true },
-  { id: 'birch', name: 'Birch', swatch: '/images/products/rwood-micro/swatches/birch.jpg', image: '/images/products/rwood-micro/birch.jpg', isDark: false },
+  { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-veneer/Beech-White.jpg', image: '/images/products/rwood-veneer/Beech-White.jpg', isDark: false },
+  { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-veneer/Birch-Rotary.jpg', image: '/images/products/rwood-veneer/Birch-Rotary.jpg', isDark: false },
+  { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-veneer/silk-oak.jpg', image: '/images/products/rwood-veneer/silk-oak.jpg', isDark: false },
+  { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false },
+  { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-veneer/umber-oak.jpg', image: '/images/products/rwood-veneer/umber-oak.jpg', isDark: false },
+  { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-veneer/walnut.jpg', image: '/images/products/rwood-veneer/walnut.jpg', isDark: false },
+  { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-veneer/smoked-oak.jpg', image: '/images/products/rwood-veneer/smoked-oak.jpg', isDark: false },
+  { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-veneer/tobacco-walnut.jpg', image: '/images/products/rwood-veneer/tobacco-walnut.jpg', isDark: false },
 ];
 
 // Surface finish options
@@ -1165,7 +1168,7 @@ export default function RWoodMicroProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-micro/bespoke-backlit.jpg"
+                src="/images/products/rwood-micro/bespoke.jpg"
                 alt="Backlit micro-perforated panel creating light effect"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -1252,7 +1255,7 @@ export default function RWoodMicroProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rwood-micro/sustainability.webp"
+                src="/images/products/rwood-micro/FSC_sustainability.webp"
                 alt="Sustainable production"
                 fill
                 style={{ objectFit: 'cover' }}
