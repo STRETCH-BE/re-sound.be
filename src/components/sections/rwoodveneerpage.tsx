@@ -65,7 +65,7 @@ const finishTypes = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rwood-panel/hero-rwood-veneer.webp';
+const defaultHeroImage = '/images/products/rwood-veneer/hero-rwood-veneer.webp';
 
 // ──────────────────────────────────────
 // Lead Generation Form Modal
@@ -1047,7 +1047,7 @@ export default function RWoodPanelProductPage() {
             <div key={i} className={`gallery-item ${i <= 2 ? 'wide' : ''}`}>
               <div className="image-container gallery">
                 <Image
-                  src={`/images/products/rwood-panel/gallery-${i}.webp`}
+                  src={`/images/products/rwood-veneer/gallery-${i}.webp`}
                   alt={`rWood - Panel interior project ${i}`}
                   fill
                   style={{ objectFit: 'cover' }}
