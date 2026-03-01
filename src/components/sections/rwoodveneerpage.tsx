@@ -22,9 +22,9 @@ const veneerCollections = [
     category: 'Light Naturals',
     description: 'Serene, luminous tones that open up any space',
     veneers: [
-      { id: 'white-ash', name: 'White Ash', swatch: '/images/products/rwood-panel/swatches/white-ash.jpg', image: '/images/products/rwood-panel/white-ash.jpg', isDark: false, origin: 'Europe', grain: 'Straight to interlocked' },
+      { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-panel/swatches/Beech-White.jpg', image: '/images/products/rwood-panel/Beech-White.jpg', isDark: false, origin: 'Europe', grain: 'Straight to interlocked' },
+      { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-panel/swatches/Birch-Rotary.jpg', image: '/images/products/rwood-panel/Birch-Rotary.jpg', isDark: false, origin: 'Scandinavia', grain: 'Subtle fine grain' },
       { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-panel/swatches/silk-oak.jpg', image: '/images/products/rwood-panel/silk-oak.jpg', isDark: false, origin: 'Europe', grain: 'Fine straight grain' },
-      { id: 'nordic-birch', name: 'Nordic Birch', swatch: '/images/products/rwood-panel/swatches/nordic-birch.jpg', image: '/images/products/rwood-panel/nordic-birch.jpg', isDark: false, origin: 'Scandinavia', grain: 'Subtle fine grain' },
     ],
   },
   {
@@ -33,7 +33,6 @@ const veneerCollections = [
     veneers: [
       { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-panel/swatches/straw-oak.jpg', image: '/images/products/rwood-panel/straw-oak.jpg', isDark: false, origin: 'Europe', grain: 'Cathedral grain' },
       { id: 'honey-oak', name: 'Honey Oak', swatch: '/images/products/rwood-panel/swatches/honey-oak.jpg', image: '/images/products/rwood-panel/honey-oak.jpg', isDark: false, origin: 'Europe', grain: 'Prominent grain' },
-      { id: 'natural-cherry', name: 'Natural Cherry', swatch: '/images/products/rwood-panel/swatches/natural-cherry.jpg', image: '/images/products/rwood-panel/natural-cherry.jpg', isDark: false, origin: 'North America', grain: 'Fine straight grain' },
     ],
   },
   {
@@ -41,7 +40,7 @@ const veneerCollections = [
     description: 'Bold, sophisticated finishes with dramatic presence',
     veneers: [
       { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-panel/swatches/umber-oak.jpg', image: '/images/products/rwood-panel/umber-oak.jpg', isDark: true, origin: 'Europe', grain: 'Pronounced grain' },
-      { id: 'american-walnut', name: 'American Walnut', swatch: '/images/products/rwood-panel/swatches/american-walnut.jpg', image: '/images/products/rwood-panel/american-walnut.jpg', isDark: true, origin: 'North America', grain: 'Straight to wavy' },
+      { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-panel/swatches/walnut.jpg', image: '/images/products/rwood-panel/walnut.jpg', isDark: true, origin: 'North America', grain: 'Straight to wavy' },
       { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-panel/swatches/smoked-oak.jpg', image: '/images/products/rwood-panel/smoked-oak.jpg', isDark: true, origin: 'Europe', grain: 'Deep cathedral grain' },
       { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-panel/swatches/tobacco-walnut.jpg', image: '/images/products/rwood-panel/tobacco-walnut.jpg', isDark: true, origin: 'North America', grain: 'Rich flowing grain' },
     ],
@@ -66,7 +65,7 @@ const finishTypes = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rwood-panel/rWood-Panel_hero.jpg';
+const defaultHeroImage = '/images/products/rwood-panel/hero-rwood-veneer.webp';
 
 // ──────────────────────────────────────
 // Lead Generation Form Modal
@@ -1044,7 +1043,7 @@ export default function RWoodPanelProductPage() {
         </div>
 
         <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
             <div key={i} className={`gallery-item ${i <= 2 ? 'wide' : ''}`}>
               <div className="image-container gallery">
                 <Image
