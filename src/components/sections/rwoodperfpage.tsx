@@ -1,20 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-// Lead Form Data Interface
-interface LeadFormData {
-  companyName: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  position: string;
-  companyType: string;
-}
 
 // Wood finish options for rWood - Perf
 const woodFinishOptions = [
@@ -45,419 +35,10 @@ const perforationOptions = [
 // Default hero image
 const defaultHeroImage = '/images/products/rwood-perf/rWood-Perf_hero.jpg';
 
-// Lead Generation Form Modal
-function LeadGenModal({ 
-  isOpen, 
-  onClose, 
-  onSubmit, 
-  downloadFile,
-  isSubmitting 
-}: { 
-  isOpen: boolean; 
-  onClose: () => void; 
-  onSubmit: (data: LeadFormData) => void;
-  downloadFile: string;
-  isSubmitting: boolean;
-}) {
-  const [formData, setFormData] = useState<LeadFormData>({
-    companyName: '',
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    position: '',
-    companyType: '',
-  });
-  const [consentChecked, setConsentChecked] = useState(false);
-
-  useEffect(() => {
-    if (isOpen) {
-      setFormData({
-        companyName: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        position: '',
-        companyType: '',
-      });
-      setConsentChecked(false);
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
-
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) onClose();
-    };
-    window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
-  }, [isOpen, onClose]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (consentChecked) {
-      onSubmit(formData);
-    }
-  };
-
-  if (!isOpen) return null;
-
-  const displayName = downloadFile?.split('/').pop()?.replace('.pdf', '').replace(/-/g, ' ') || 'Document';
-
-  const overlayStyle: React.CSSProperties = {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(10, 22, 40, 0.85)',
-    backdropFilter: 'blur(8px)',
-    WebkitBackdropFilter: 'blur(8px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '1rem',
-    zIndex: 99999,
-  };
-
-  const modalStyle: React.CSSProperties = {
-    backgroundColor: '#ffffff',
-    borderRadius: '20px',
-    maxWidth: '540px',
-    width: '100%',
-    maxHeight: '90vh',
-    overflow: 'hidden',
-    position: 'relative',
-    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
-    display: 'flex',
-    flexDirection: 'column',
-  };
-
-  const headerStyle: React.CSSProperties = {
-    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
-    padding: '2rem 2.5rem',
-    position: 'relative',
-    overflow: 'hidden',
-    flexShrink: 0,
-  };
-
-  const closeButtonStyle: React.CSSProperties = {
-    position: 'absolute',
-    top: '1rem',
-    right: '1rem',
-    width: '36px',
-    height: '36px',
-    background: 'rgba(255, 255, 255, 0.15)',
-    border: 'none',
-    borderRadius: '50%',
-    color: 'white',
-    fontSize: '1.25rem',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 10,
-  };
-
-  const bodyStyle: React.CSSProperties = {
-    padding: '1.5rem 2.5rem',
-    overflowY: 'auto',
-    flex: 1,
-  };
-
-  const footerStyle: React.CSSProperties = {
-    padding: '1rem 2.5rem 2rem',
-    borderTop: '1px solid #e8ecf0',
-    backgroundColor: '#ffffff',
-    flexShrink: 0,
-  };
-
-  const inputStyle: React.CSSProperties = {
-    width: '100%',
-    padding: '0.9rem 1rem',
-    border: '2px solid #e8ecf0',
-    borderRadius: '10px',
-    fontSize: '0.95rem',
-    background: '#fafbfc',
-    boxSizing: 'border-box',
-  };
-
-  const labelStyle: React.CSSProperties = {
-    fontSize: '0.85rem',
-    fontWeight: 600,
-    color: '#0a1628',
-    display: 'block',
-    marginBottom: '0.4rem',
-  };
-
-  const submitButtonStyle: React.CSSProperties = {
-    width: '100%',
-    padding: '1rem 2rem',
-    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
-    color: 'white',
-    border: 'none',
-    borderRadius: '12px',
-    fontSize: '1rem',
-    fontWeight: 600,
-    cursor: isSubmitting || !consentChecked ? 'not-allowed' : 'pointer',
-    opacity: isSubmitting || !consentChecked ? 0.7 : 1,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '0.5rem',
-  };
-
-  return (
-    <div style={overlayStyle} onClick={onClose}>
-      <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
-        <div style={headerStyle}>
-          <div style={{
-            position: 'absolute',
-            top: '-50%',
-            right: '-20%',
-            width: '200px',
-            height: '200px',
-            background: 'rgba(255, 255, 255, 0.08)',
-            borderRadius: '50%',
-          }} />
-          
-          <button style={closeButtonStyle} onClick={onClose}>✕</button>
-          
-          <div style={{
-            width: '52px',
-            height: '52px',
-            background: 'rgba(255, 255, 255, 0.2)',
-            borderRadius: '14px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '1rem',
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-          </div>
-
-          <h3 style={{
-            fontSize: '1.5rem',
-            fontWeight: 700,
-            color: 'white',
-            margin: '0 0 0.5rem',
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            Download Technical Documentation
-          </h3>
-
-          <p style={{
-            fontSize: '0.95rem',
-            color: 'rgba(255, 255, 255, 0.85)',
-            margin: 0,
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            Fill in your details to access our product specifications
-          </p>
-
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.35rem',
-            background: 'rgba(255, 255, 255, 0.2)',
-            padding: '0.35rem 0.75rem',
-            borderRadius: '20px',
-            fontSize: '0.8rem',
-            color: 'white',
-            marginTop: '0.75rem',
-            position: 'relative',
-            zIndex: 1,
-            textTransform: 'capitalize',
-          }}>
-            📄 {displayName}
-          </div>
-        </div>
-
-        <div style={bodyStyle}>
-          <form id="lead-form" onSubmit={handleSubmit}>
-            <div style={{ marginBottom: '1rem' }}>
-              <label style={labelStyle}>
-                Company Name <span style={{ color: '#e53935' }}>*</span>
-              </label>
-              <input
-                type="text"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleChange}
-                placeholder="Enter your company name"
-                required
-                style={inputStyle}
-              />
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  First Name <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First name" required style={inputStyle} />
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Last Name <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last name" required style={inputStyle} />
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  Email Address <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="your@email.com" required style={inputStyle} />
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Phone Number <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+32 XXX XX XX XX" required style={inputStyle} />
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  Position / Role <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <select name="position" value={formData.position} onChange={handleChange} required style={{ ...inputStyle, cursor: 'pointer' }}>
-                  <option value="">Select...</option>
-                  <option value="owner">Owner / CEO</option>
-                  <option value="director">Director / Manager</option>
-                  <option value="architect">Architect</option>
-                  <option value="designer">Designer</option>
-                  <option value="engineer">Engineer</option>
-                  <option value="project-manager">Project Manager</option>
-                  <option value="procurement">Procurement / Purchasing</option>
-                  <option value="consultant">Consultant</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Type of Company <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <select name="companyType" value={formData.companyType} onChange={handleChange} required style={{ ...inputStyle, cursor: 'pointer' }}>
-                  <option value="">Select...</option>
-                  <option value="architecture">Architecture Firm</option>
-                  <option value="interior-design">Interior Design</option>
-                  <option value="construction">Construction Company</option>
-                  <option value="acoustic-consultant">Acoustic Consultant</option>
-                  <option value="real-estate">Real Estate / Property</option>
-                  <option value="corporate">Corporate / Office</option>
-                  <option value="hospitality">Hospitality / Hotels</option>
-                  <option value="education">Education / Schools</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="retail">Retail</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div style={{ marginTop: '0.5rem' }}>
-              <label style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: '0.75rem',
-                cursor: 'pointer',
-                fontSize: '0.85rem',
-                color: '#4b5563',
-                lineHeight: 1.5,
-              }}>
-                <input
-                  type="checkbox"
-                  checked={consentChecked}
-                  onChange={(e) => setConsentChecked(e.target.checked)}
-                  required
-                  style={{
-                    width: '20px',
-                    height: '20px',
-                    marginTop: '2px',
-                    accentColor: '#197FC7',
-                    cursor: 'pointer',
-                    flexShrink: 0,
-                  }}
-                />
-                <span>
-                  I agree to receive communications from Re-Sound and accept the privacy policy.
-                </span>
-              </label>
-            </div>
-          </form>
-        </div>
-
-        <div style={footerStyle}>
-          <button 
-            type="submit" 
-            form="lead-form"
-            disabled={isSubmitting || !consentChecked} 
-            style={submitButtonStyle}
-          >
-            {isSubmitting ? (
-              <>
-                <span style={{
-                  width: '20px',
-                  height: '20px',
-                  border: '2px solid rgba(255, 255, 255, 0.3)',
-                  borderTopColor: 'white',
-                  borderRadius: '50%',
-                  animation: 'spin 0.8s linear infinite',
-                }} />
-                Processing...
-              </>
-            ) : (
-              <>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                Download Now
-              </>
-            )}
-          </button>
-        </div>
-
-        <style>{`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
-      </div>
-    </div>
-  );
-}
 
 export default function RWoodPerfProductPage() {
-  const t = useTranslations('products.rwood-perf');
+  const t = useTranslations('rwoodPerfPage');
+  const tPage = useTranslations('productPage');
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
@@ -471,12 +52,12 @@ export default function RWoodPerfProductPage() {
   const currentHeroImage = selectedFinish ? selectedFinish.image : defaultHeroImage;
 
   const downloads = [
-    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-perf/product-data-sheet.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-perf/product-data-sheet.pdf' },
     { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rwood-perf/installation-guide.pdf' },
-    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/rwood-perf/acoustic-test-report.pdf' },
+    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-perf/acoustic-test-report.pdf' },
     { id: 'perforation-patterns', name: 'Perforation Patterns', icon: '🔘', file: '/documents/rwood-perf/perforation-patterns.pdf' },
-    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rwood-perf/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rwood-perf/sustainability-declaration.pdf' },
+    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-perf/fire-certificate.pdf' },
+    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-perf/sustainability-declaration.pdf' },
   ];
 
   const handleDownloadClick = (fileUrl: string) => {
@@ -558,7 +139,7 @@ export default function RWoodPerfProductPage() {
       <section className="product-hero">
         <div className="hero-content">
           <span className="product-tag">PERFORATED ACOUSTIC WOOD PANELS</span>
-          <h1>rWood - Perf</h1>
+          <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">Precision Perforations, Maximum Absorption</p>
           <p className="hero-description">
             High-performance drilled acoustic panels combining natural wood beauty with 
@@ -584,10 +165,10 @@ export default function RWoodPerfProductPage() {
 
           <div className="hero-ctas">
             <Link href="/contact" className="btn-primary">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
-              View Specifications
+              {tPage('cta.viewSpecifications')}
             </a>
           </div>
 
@@ -669,7 +250,7 @@ export default function RWoodPerfProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">PROVEN PERFORMANCE</span>
-            <h2>The Classic Acoustic Solution</h2>
+            <h2>{t('hero.tagline')}</h2>
             <p>
               rWood - Perf panels are one of the most effective and widely used solutions 
               for acoustic walls and ceilings. The precisely drilled round perforations 
@@ -707,7 +288,7 @@ export default function RWoodPerfProductPage() {
       <section id="variants" className="content-section variants-section dark">
         <div className="variants-header">
           <span className="section-tag">PERFORATION PATTERNS</span>
-          <h2>Choose Your Pattern</h2>
+          <h2>{t('patterns.title')}</h2>
           <p>
             Four drilled perforation patterns with calibrated acoustic properties. From 
             maximum open area for demanding acoustic spaces to more discreet patterns 
@@ -770,7 +351,7 @@ export default function RWoodPerfProductPage() {
         <div className="section-grid">
           <div className="section-content">
             <span className="section-tag">SURFACES</span>
-            <h2>Premium Wood Surfaces</h2>
+            <h2>{t('surfaces.title')}</h2>
             <p>
               Every rWood - Perf panel is produced with over-veneered edges&mdash;a 
               traditional manufacturing technique where solid wood edging is integrated 
@@ -824,7 +405,7 @@ export default function RWoodPerfProductPage() {
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
           <span className="section-tag">PERFORMANCE</span>
-          <h2>Engineered for Sound</h2>
+          <h2>{t('acoustics.title')}</h2>
           <p>
             Precision-drilled perforations allow sound waves to enter the panel and 
             pass through to the cavity behind. Combined with mineral wool insulation, 
@@ -996,7 +577,7 @@ export default function RWoodPerfProductPage() {
         <div className="section-grid reverse">
           <div className="section-content">
             <span className="section-tag">CONCEALED MOUNTING</span>
-            <h2>Seamless Installation</h2>
+            <h2>{t('installation.title')}</h2>
             <p>
               rWood - Perf panels are installed with a concealed clip system 
               designed for precision, speed, and a flawless end result. The system ensures 
@@ -1063,7 +644,7 @@ export default function RWoodPerfProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">SUSTAINABILITY</span>
-            <h2>Built to Last, Built Responsibly</h2>
+            <h2>{t('sustainability.title')}</h2>
             <p>
               rWood - Perf combines durable, natural materials with responsible sourcing. 
               The fibre gypsum core is inherently low-emitting&mdash;no chemical 
@@ -1107,8 +688,8 @@ export default function RWoodPerfProductPage() {
       {/* Specifications Section */}
       <section id="specs" className="content-section specs-section">
         <div className="specs-header">
-          <span className="section-tag">TECHNICAL</span>
-          <h2>Specifications</h2>
+          <span className="section-tag">{t('specs.tag')}</span>
+          <h2>{t('specs.title')}</h2>
         </div>
 
         <div className="specs-grid">
@@ -1261,8 +842,8 @@ export default function RWoodPerfProductPage() {
       {/* Gallery Section */}
       <section id="gallery" className="content-section gallery-section">
         <div className="gallery-header">
-          <span className="section-tag">INSPIRATION</span>
-          <h2>Projects &amp; Installations</h2>
+          <span className="section-tag">{tPage('gallery.tag')}</span>
+          <h2>{t('gallery.title')}</h2>
         </div>
 
         <div className="gallery-grid">
@@ -1284,8 +865,8 @@ export default function RWoodPerfProductPage() {
       {/* Downloads Section */}
       <section id="downloads" className="content-section downloads-section">
         <div className="downloads-header">
-          <span className="section-tag">RESOURCES</span>
-          <h2>Downloads</h2>
+          <span className="section-tag">{tPage('downloads.tag')}</span>
+          <h2>{tPage('downloads.title')}</h2>
         </div>
 
         <div className="downloads-grid">
@@ -1350,7 +931,7 @@ export default function RWoodPerfProductPage() {
       {/* CTA Section */}
       <section className="content-section cta-section">
         <div className="cta-content">
-          <h2>Ready to Transform Your Space?</h2>
+          <h2>{tPage('cta.ctaTitle')}</h2>
           <p>
             Get a personalized quote for your project. Our team will help you 
             select the perfect perforation, veneer, and core combination.

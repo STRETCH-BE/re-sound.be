@@ -1,20 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-// Lead Form Data Interface
-interface LeadFormData {
-  companyName: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  position: string;
-  companyType: string;
-}
 
 // Color options for the product
 const colorOptions = [
@@ -26,477 +16,10 @@ const colorOptions = [
   { id: 'taupe', name: 'Taupe', swatch: '/images/products/interior/swatches/taupe.webp', image: '/images/products/interior/hero-taupe.webp', isDark: false },
 ];
 
-// Lead Generation Form Modal - Using inline styles for proper rendering
-function LeadGenModal({ 
-  isOpen, 
-  onClose, 
-  onSubmit, 
-  downloadFile,
-  isSubmitting 
-}: { 
-  isOpen: boolean; 
-  onClose: () => void; 
-  onSubmit: (data: LeadFormData) => void;
-  downloadFile: string;
-  isSubmitting: boolean;
-}) {
-  const [formData, setFormData] = useState<LeadFormData>({
-    companyName: '',
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    position: '',
-    companyType: '',
-  });
-  const [consentChecked, setConsentChecked] = useState(false);
-
-  // Reset form when modal opens
-  useEffect(() => {
-    if (isOpen) {
-      setFormData({
-        companyName: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        position: '',
-        companyType: '',
-      });
-      setConsentChecked(false);
-    }
-  }, [isOpen]);
-
-  // Prevent body scroll when modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
-
-  // Handle escape key
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) onClose();
-    };
-    window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
-  }, [isOpen, onClose]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (consentChecked) {
-      onSubmit(formData);
-    }
-  };
-
-  if (!isOpen) return null;
-
-  // Extract filename for display
-  const displayName = downloadFile?.split('/').pop()?.replace('.pdf', '').replace(/-/g, ' ') || 'Document';
-
-  // Inline styles for proper modal overlay
-  const overlayStyle: React.CSSProperties = {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(10, 22, 40, 0.85)',
-    backdropFilter: 'blur(8px)',
-    WebkitBackdropFilter: 'blur(8px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '1rem',
-    zIndex: 99999,
-  };
-
-  const modalStyle: React.CSSProperties = {
-    backgroundColor: '#ffffff',
-    borderRadius: '20px',
-    maxWidth: '540px',
-    width: '100%',
-    maxHeight: '90vh',
-    overflow: 'hidden',
-    position: 'relative',
-    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
-    display: 'flex',
-    flexDirection: 'column',
-  };
-
-  const headerStyle: React.CSSProperties = {
-    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
-    padding: '2rem 2.5rem',
-    position: 'relative',
-    overflow: 'hidden',
-    flexShrink: 0,
-  };
-
-  const closeButtonStyle: React.CSSProperties = {
-    position: 'absolute',
-    top: '1rem',
-    right: '1rem',
-    width: '36px',
-    height: '36px',
-    background: 'rgba(255, 255, 255, 0.15)',
-    border: 'none',
-    borderRadius: '50%',
-    color: 'white',
-    fontSize: '1.25rem',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 10,
-  };
-
-  const bodyStyle: React.CSSProperties = {
-    padding: '1.5rem 2.5rem',
-    overflowY: 'auto',
-    flex: 1,
-  };
-
-  const footerStyle: React.CSSProperties = {
-    padding: '1rem 2.5rem 2rem',
-    borderTop: '1px solid #e8ecf0',
-    backgroundColor: '#ffffff',
-    flexShrink: 0,
-  };
-
-  const inputStyle: React.CSSProperties = {
-    width: '100%',
-    padding: '0.9rem 1rem',
-    border: '2px solid #e8ecf0',
-    borderRadius: '10px',
-    fontSize: '0.95rem',
-    background: '#fafbfc',
-    boxSizing: 'border-box',
-  };
-
-  const labelStyle: React.CSSProperties = {
-    fontSize: '0.85rem',
-    fontWeight: 600,
-    color: '#0a1628',
-    display: 'block',
-    marginBottom: '0.4rem',
-  };
-
-  const submitButtonStyle: React.CSSProperties = {
-    width: '100%',
-    padding: '1rem 2rem',
-    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
-    color: 'white',
-    border: 'none',
-    borderRadius: '12px',
-    fontSize: '1rem',
-    fontWeight: 600,
-    cursor: isSubmitting || !consentChecked ? 'not-allowed' : 'pointer',
-    opacity: isSubmitting || !consentChecked ? 0.7 : 1,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '0.5rem',
-  };
-
-  return (
-    <div style={overlayStyle} onClick={onClose}>
-      <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
-        {/* Header */}
-        <div style={headerStyle}>
-          {/* Decorative circle */}
-          <div style={{
-            position: 'absolute',
-            top: '-50%',
-            right: '-20%',
-            width: '200px',
-            height: '200px',
-            background: 'rgba(255, 255, 255, 0.08)',
-            borderRadius: '50%',
-          }} />
-          
-          <button style={closeButtonStyle} onClick={onClose}>✕</button>
-          
-          <div style={{
-            width: '52px',
-            height: '52px',
-            background: 'rgba(255, 255, 255, 0.2)',
-            borderRadius: '14px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '1rem',
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-          </div>
-
-          <h3 style={{
-            fontSize: '1.5rem',
-            fontWeight: 700,
-            color: 'white',
-            margin: '0 0 0.5rem',
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            Download Technical Documentation
-          </h3>
-
-          <p style={{
-            fontSize: '0.95rem',
-            color: 'rgba(255, 255, 255, 0.85)',
-            margin: 0,
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            Fill in your details to access our product specifications
-          </p>
-
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.35rem',
-            background: 'rgba(255, 255, 255, 0.2)',
-            padding: '0.35rem 0.75rem',
-            borderRadius: '20px',
-            fontSize: '0.8rem',
-            color: 'white',
-            marginTop: '0.75rem',
-            position: 'relative',
-            zIndex: 1,
-            textTransform: 'capitalize',
-          }}>
-            📄 {displayName}
-          </div>
-        </div>
-
-        {/* Body */}
-        <div style={bodyStyle}>
-          <form id="lead-form" onSubmit={handleSubmit}>
-            {/* Company Name */}
-            <div style={{ marginBottom: '1rem' }}>
-              <label style={labelStyle}>
-                Company Name <span style={{ color: '#e53935' }}>*</span>
-              </label>
-              <input
-                type="text"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleChange}
-                placeholder="Enter your company name"
-                required
-                style={inputStyle}
-              />
-            </div>
-
-            {/* Name Row */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  First Name <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="text"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder="First name"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Last Name <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder="Last name"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-            </div>
-
-            {/* Contact Row */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  Email Address <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="your@email.com"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Phone Number <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="+32 XXX XX XX XX"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-            </div>
-
-            {/* Role Row */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  Position / Role <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <select
-                  name="position"
-                  value={formData.position}
-                  onChange={handleChange}
-                  required
-                  style={{ ...inputStyle, cursor: 'pointer' }}
-                >
-                  <option value="">Select...</option>
-                  <option value="owner">Owner / CEO</option>
-                  <option value="director">Director / Manager</option>
-                  <option value="architect">Architect</option>
-                  <option value="designer">Designer</option>
-                  <option value="engineer">Engineer</option>
-                  <option value="project-manager">Project Manager</option>
-                  <option value="procurement">Procurement / Purchasing</option>
-                  <option value="consultant">Consultant</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Type of Company <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <select
-                  name="companyType"
-                  value={formData.companyType}
-                  onChange={handleChange}
-                  required
-                  style={{ ...inputStyle, cursor: 'pointer' }}
-                >
-                  <option value="">Select...</option>
-                  <option value="architecture">Architecture Firm</option>
-                  <option value="interior-design">Interior Design</option>
-                  <option value="construction">Construction Company</option>
-                  <option value="acoustic-consultant">Acoustic Consultant</option>
-                  <option value="real-estate">Real Estate / Property</option>
-                  <option value="corporate">Corporate / Office</option>
-                  <option value="hospitality">Hospitality / Hotels</option>
-                  <option value="education">Education / Schools</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="retail">Retail</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Consent */}
-            <div style={{ marginTop: '0.5rem' }}>
-              <label style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: '0.75rem',
-                cursor: 'pointer',
-                fontSize: '0.85rem',
-                color: '#4b5563',
-                lineHeight: 1.5,
-              }}>
-                <input
-                  type="checkbox"
-                  checked={consentChecked}
-                  onChange={(e) => setConsentChecked(e.target.checked)}
-                  required
-                  style={{
-                    width: '20px',
-                    height: '20px',
-                    marginTop: '2px',
-                    accentColor: '#197FC7',
-                    cursor: 'pointer',
-                    flexShrink: 0,
-                  }}
-                />
-                <span>
-                  I agree to receive communications from Re-Sound and accept the privacy policy.
-                </span>
-              </label>
-            </div>
-          </form>
-        </div>
-
-        {/* Fixed Footer with Submit Button */}
-        <div style={footerStyle}>
-          <button 
-            type="submit" 
-            form="lead-form"
-            disabled={isSubmitting || !consentChecked} 
-            style={submitButtonStyle}
-          >
-            {isSubmitting ? (
-              <>
-                <span style={{
-                  width: '20px',
-                  height: '20px',
-                  border: '2px solid rgba(255, 255, 255, 0.3)',
-                  borderTopColor: 'white',
-                  borderRadius: '50%',
-                  animation: 'spin 0.8s linear infinite',
-                }} />
-                Processing...
-              </>
-            ) : (
-              <>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                Download Now
-              </>
-            )}
-          </button>
-        </div>
-
-        <style>{`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
-      </div>
-    </div>
-  );
-}
 
 export default function InteriorProductPage() {
-  const t = useTranslations('products.interior');
+  const t = useTranslations('interiorPage');
+  const tPage = useTranslations('productPage');
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
@@ -505,12 +28,12 @@ export default function InteriorProductPage() {
   const [isImageLoading, setIsImageLoading] = useState(false);
 
   const downloads = [
-    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/interior/product-data-sheet.pdf' },
-    { id: 'installation-manual', name: 'Installation Manual', icon: '📋', file: '/documents/interior/installation-manual.pdf' },
-    { id: 'acoustic-test-report', name: 'Acoustic Test Report', icon: '📊', file: '/documents/interior/acoustic-test-report.pdf' },
-    { id: 'color-fabric-guide', name: 'Color & Fabric Guide', icon: '🎨', file: '/documents/interior/color-fabric-guide.pdf' },
-    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/interior/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/interior/sustainability-declaration.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/interior/product-data-sheet.pdf' },
+    { id: 'installation-manual', name: tPage('downloads.installationManual'), icon: '📋', file: '/documents/interior/installation-manual.pdf' },
+    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/interior/acoustic-test-report.pdf' },
+    { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/interior/color-fabric-guide.pdf' },
+    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/interior/fire-certificate.pdf' },
+    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/interior/sustainability-declaration.pdf' },
   ];
 
   const handleDownloadClick = (fileUrl: string) => {
@@ -562,12 +85,12 @@ export default function InteriorProductPage() {
   };
 
   const navItems = [
-    { id: 'overview', label: 'Overview' },
-    { id: 'features', label: 'Features' },
-    { id: 'acoustics', label: 'Acoustics' },
-    { id: 'specs', label: 'Specifications' },
-    { id: 'gallery', label: 'Gallery' },
-    { id: 'downloads', label: 'Downloads' },
+    { id: 'overview', label: tPage('nav.overview') },
+    { id: 'features', label: tPage('nav.features') },
+    { id: 'acoustics', label: tPage('nav.acoustics') },
+    { id: 'specs', label: tPage('nav.specs') },
+    { id: 'gallery', label: tPage('nav.gallery') },
+    { id: 'downloads', label: tPage('nav.downloads') },
   ];
 
   const scrollToSection = (id: string) => {
@@ -592,40 +115,38 @@ export default function InteriorProductPage() {
       {/* Hero Section */}
       <section className="product-hero">
         <div className="hero-content">
-          <span className="product-tag">ACOUSTIC WALL PANELS</span>
-          <h1>Interior</h1>
-          <p className="hero-tagline">Modular Acoustics, Circular by Design</p>
+          <span className="product-tag">{tPage('tags.acousticWallPanels')}</span>
+          <h1>{t('hero.title')}</h1>
+          <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            Transform your space with Re-Sound Interior—a complete acoustic wall system 
-            crafted from recycled materials. Fully customizable, easy to install, and 
-            designed to be recycled at end of life.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🔊</span>
-              <span className="usp-text">αw 1.0 Absorption</span>
+              <span className="usp-text">{t('hero.uspAbsorption')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">100% Recyclable</span>
+              <span className="usp-text">{t('hero.uspRecyclable')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🇪🇺</span>
-              <span className="usp-text">Made in Europe</span>
+              <span className="usp-text">{t('hero.uspOrigin')}</span>
             </div>
           </div>
 
           <div className="hero-ctas">
             <Link href="/contact" className="btn-primary">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
               View Specifications
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€387</strong> excl. VAT per set of 3 modules</p>
+          <p className="hero-price">{t('hero.priceFrom')} <strong>€387</strong> {t('hero.priceUnit')}</p>
         </div>
         
         <div className="hero-image">
@@ -649,7 +170,7 @@ export default function InteriorProductPage() {
           
           {/* Color Selector */}
           <div className="color-selector">
-            <span className="color-selector-label">Select Color</span>
+            <span className="color-selector-label">{t('hero.colorSelector')}</span>
             <div className="color-options">
               {colorOptions.map((color) => (
                 <button
@@ -703,17 +224,15 @@ export default function InteriorProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">COMPLETE SOLUTION</span>
-            <h2>Everything You Need, In One Package</h2>
+            <span className="section-tag">{t('overview.tag')}</span>
+            <h2>{t('overview.title')}</h2>
             <p>
-              Re-Sound Interior is a complete acoustic enhancement solution. Each starter 
-              package includes the acoustic core material, a removable fabric cover, and 
-              the complete mounting system—everything you need for professional installation.
+              {t('overview.description')}
             </p>
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Acoustic core from recycled textiles
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
@@ -721,11 +240,11 @@ export default function InteriorProductPage() {
               </li>
               <li>
                 <span className="check">✓</span>
-                Complete mounting hardware included
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                No specialist tools required
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -736,26 +255,23 @@ export default function InteriorProductPage() {
       <section id="features" className="content-section features-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
-            <h2>Circular Inside, Beautiful Outside</h2>
+            <span className="section-tag">{t('features.tag')}</span>
+            <h2>{t('features.title')}</h2>
             <p>
-              Every Interior panel begins its life as discarded textiles—clothing, 
-              upholstery, and industrial fabric waste. We transform these materials 
-              into high-performance acoustic cores using bio-based binders, creating 
-              panels that perform beautifully and can be fully recycled at end of life.
+              {t('features.description')}
             </p>
             <div className="circular-stats">
               <div className="stat">
-                <span className="stat-number">80%</span>
-                <span className="stat-label">Recycled content</span>
+                <span className="stat-number">{t('features.stat1Value')}</span>
+                <span className="stat-label">{t('features.stat1Label')}</span>
               </div>
               <div className="stat">
-                <span className="stat-number">0</span>
-                <span className="stat-label">Waste to landfill</span>
+                <span className="stat-number">{t('features.stat2Value')}</span>
+                <span className="stat-label">{t('features.stat2Label')}</span>
               </div>
               <div className="stat">
-                <span className="stat-number">∞</span>
-                <span className="stat-label">Recyclable cycles</span>
+                <span className="stat-number">{t('features.stat3Value')}</span>
+                <span className="stat-label">{t('features.stat3Label')}</span>
               </div>
             </div>
           </div>
@@ -786,21 +302,19 @@ export default function InteriorProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">DESIGN FREEDOM</span>
-            <h2>Modular Versatility</h2>
+            <span className="section-tag">{t('modular.tag')}</span>
+            <h2>{t('modular.title')}</h2>
             <p>
-              With its modular design, Interior offers limitless creative possibilities. 
-              Create feature walls, cover entire surfaces, or design custom patterns 
-              that reflect your brand. The system adapts to spaces of any size.
+              {t('modular.description')}
             </p>
             <div className="dimension-box">
               <div className="dimension">
-                <span className="dim-value">900 × 600</span>
-                <span className="dim-unit">mm per module</span>
+                <span className="dim-value">{t('modular.dimSize')}</span>
+                <span className="dim-unit">{t('modular.dimSizeUnit')}</span>
               </div>
               <div className="dimension">
-                <span className="dim-value">Set of 3</span>
-                <span className="dim-unit">modules per package</span>
+                <span className="dim-value">{t('modular.dimSet')}</span>
+                <span className="dim-unit">{t('modular.dimSetUnit')}</span>
               </div>
             </div>
           </div>
@@ -811,29 +325,27 @@ export default function InteriorProductPage() {
       <section className="content-section maintenance-section">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">PRACTICAL</span>
-            <h2>Easy Maintenance</h2>
+            <span className="section-tag">{t('maintenance.tag')}</span>
+            <h2>{t('maintenance.title')}</h2>
             <p>
-              The removable fabric cover makes cleaning effortless. Simply unzip, 
-              wash, and reattach—your panels will look as good as new. This extends 
-              the product lifespan and ensures your space always looks professional.
+              {t('maintenance.description')}
             </p>
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Removable cover with zipper
+                {t('maintenance.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Machine washable at 30°C
+                {t('maintenance.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Stain-resistant fabric options
+                {t('maintenance.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Replacement covers available
+                {t('maintenance.feature4')}
               </li>
             </ul>
           </div>
@@ -853,12 +365,10 @@ export default function InteriorProductPage() {
       {/* Acoustic Performance Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
-          <h2>Superior Sound Absorption</h2>
+          <span className="section-tag">{t('acoustics.tag')}</span>
+          <h2>{t('acoustics.title')}</h2>
           <p>
-            With a weighted sound absorption coefficient (αw) of 1.0, Re-Sound Interior 
-            delivers maximum acoustic performance. Both high and low frequency sounds 
-            are effectively absorbed, creating comfortable, productive spaces.
+            {t('acoustics.description')}
           </p>
         </div>
 
@@ -868,49 +378,49 @@ export default function InteriorProductPage() {
               <div className="freq-bar low">
                 <div className="bar-fill" style={{ height: '85%' }}></div>
               </div>
-              <span className="freq-label">Low</span>
+              <span className="freq-label">{tPage('acoustics.low')}</span>
               <span className="freq-range">125-500 Hz</span>
             </div>
             <div className="freq-group">
               <div className="freq-bar mid">
                 <div className="bar-fill" style={{ height: '95%' }}></div>
               </div>
-              <span className="freq-label">Mid</span>
+              <span className="freq-label">{tPage('acoustics.mid')}</span>
               <span className="freq-range">500-2000 Hz</span>
             </div>
             <div className="freq-group">
               <div className="freq-bar high">
                 <div className="bar-fill" style={{ height: '100%' }}></div>
               </div>
-              <span className="freq-label">High</span>
+              <span className="freq-label">{tPage('acoustics.high')}</span>
               <span className="freq-range">2000-4000 Hz</span>
             </div>
           </div>
 
           <div className="absorption-rating">
             <div className="rating-circle">
-              <span className="rating-value">αw 1.0</span>
-              <span className="rating-label">Class A</span>
+              <span className="rating-value">{t('specs.alphaValue')}</span>
+              <span className="rating-label">{t('specs.classValue')}</span>
             </div>
-            <p>Highest absorption rating achievable</p>
+            <p>{tPage('acoustics.highestRating')}</p>
           </div>
         </div>
 
         <div className="acoustics-benefits">
           <div className="benefit">
             <span className="benefit-icon">🗣️</span>
-            <h4>Improved Speech Clarity</h4>
-            <p>Reduce reverberation for clearer conversations</p>
+            <h4>{tPage('acoustics.benefitSpeech.title')}</h4>
+            <p>{tPage('acoustics.benefitSpeech.desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🧠</span>
-            <h4>Enhanced Focus</h4>
-            <p>Minimize distracting background noise</p>
+            <h4>{tPage('acoustics.benefitFocus.title')}</h4>
+            <p>{tPage('acoustics.benefitFocus.desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">😌</span>
-            <h4>Reduced Stress</h4>
-            <p>Create calmer, more comfortable environments</p>
+            <h4>{tPage('acoustics.benefitStress.title')}</h4>
+            <p>{tPage('acoustics.benefitStress.desc')}</p>
           </div>
         </div>
       </section>
@@ -918,122 +428,122 @@ export default function InteriorProductPage() {
       {/* Specifications Section */}
       <section id="specs" className="content-section specs-section">
         <div className="specs-header">
-          <span className="section-tag">TECHNICAL</span>
-          <h2>Specifications</h2>
+          <span className="section-tag">{t('specs.tag')}</span>
+          <h2>{t('specs.title')}</h2>
         </div>
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions</h4>
+            <h4>{tPage('specs.dimensions')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Module size</td>
-                  <td>900 × 600 mm</td>
+                  <td>{tPage('specs.moduleSize')}</td>
+                  <td>{t('specs.moduleSizeValue')}</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
-                  <td>45 mm</td>
+                  <td>{tPage('specs.thickness')}</td>
+                  <td>{t('specs.thicknessValue')}</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
-                  <td>~3.5 kg per module</td>
+                  <td>{tPage('specs.weight')}</td>
+                  <td>{t('specs.weightValue')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Acoustic Performance</h4>
+            <h4>{t('specs.acousticsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Absorption coefficient (αw)</td>
-                  <td>1.0</td>
+                  <td>{tPage('specs.absorptionCoeff')}</td>
+                  <td>{t('specs.alphaValue')}</td>
                 </tr>
                 <tr>
-                  <td>Absorption class</td>
-                  <td>Class A</td>
+                  <td>{tPage('specs.absorptionClass')}</td>
+                  <td>{t('specs.classValue')}</td>
                 </tr>
                 <tr>
-                  <td>NRC</td>
-                  <td>0.95</td>
+                  <td>{tPage('specs.nrc')}</td>
+                  <td>{t('specs.nrcValue')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Materials</h4>
+            <h4>{t('specs.materialsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Core</td>
-                  <td>Perforated cardboard</td>
+                  <td>{tPage('specs.core')}</td>
+                  <td>{t('specs.coreValue')}</td>
                 </tr>
                 <tr>
-                  <td>Absorber</td>
-                  <td>Hemp Felt</td>
+                  <td>{tPage('specs.absorber')}</td>
+                  <td>{t('specs.absorberValue')}</td>
                 </tr>
                 <tr>
-                  <td>Cover</td>
-                  <td>Recycled jeans fabric</td>
+                  <td>{tPage('specs.cover')}</td>
+                  <td>{t('specs.coverValue')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Fire rating</td>
-                  <td>B-s1, d0</td>
+                  <td>{tPage('specs.fireRating')}</td>
+                  <td>{t('specs.fireRatingValue')}</td>
                 </tr>
                 <tr>
-                  <td>Standard</td>
-                  <td>EN 13501-1</td>
+                  <td>{tPage('specs.standard')}</td>
+                  <td>{t('specs.fireStandardValue')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Sustainability</h4>
+            <h4>{t('specs.sustainTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Recycled content</td>
-                  <td>≥80%</td>
+                  <td>{tPage('specs.recycledContent')}</td>
+                  <td>{t('specs.recycledValue')}</td>
                 </tr>
                 <tr>
-                  <td>End of life</td>
-                  <td>100% recyclable</td>
+                  <td>{tPage('specs.endOfLife')}</td>
+                  <td>{t('specs.endOfLifeValue')}</td>
                 </tr>
                 <tr>
-                  <td>VOC emissions</td>
-                  <td>Low / A+</td>
+                  <td>{tPage('specs.vocEmissions')}</td>
+                  <td>{t('specs.vocValue')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Installation</h4>
+            <h4>{t('specs.installTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Mounting</td>
-                  <td>Wall rail system</td>
+                  <td>{tPage('specs.mounting')}</td>
+                  <td>{t('specs.mountingValue')}</td>
                 </tr>
                 <tr>
-                  <td>Installation time</td>
-                  <td>~5 min per module</td>
+                  <td>{tPage('specs.installationTime')}</td>
+                  <td>{t('specs.installTimeValue')}</td>
                 </tr>
                 <tr>
-                  <td>Tools required</td>
-                  <td>Drill, level</td>
+                  <td>{tPage('specs.toolsRequired')}</td>
+                  <td>{t('specs.toolsValue')}</td>
                 </tr>
               </tbody>
             </table>
@@ -1044,8 +554,8 @@ export default function InteriorProductPage() {
       {/* Gallery Section */}
       <section id="gallery" className="content-section gallery-section">
         <div className="gallery-header">
-          <span className="section-tag">INSPIRATION</span>
-          <h2>Interior in Action</h2>
+          <span className="section-tag">{tPage('gallery.tag')}</span>
+          <h2>{t('gallery.title')}</h2>
         </div>
 
         <div className="gallery-grid">
@@ -1067,8 +577,8 @@ export default function InteriorProductPage() {
       {/* Downloads Section */}
       <section id="downloads" className="content-section downloads-section">
         <div className="downloads-header">
-          <span className="section-tag">RESOURCES</span>
-          <h2>Downloads</h2>
+          <span className="section-tag">{tPage('downloads.tag')}</span>
+          <h2>{tPage('downloads.title')}</h2>
         </div>
 
         <div className="downloads-grid">
@@ -1101,10 +611,9 @@ export default function InteriorProductPage() {
       {/* CTA Section */}
       <section className="content-section cta-section">
         <div className="cta-content">
-          <h2>Ready to Transform Your Space?</h2>
+          <h2>{tPage('cta.ctaTitle')}</h2>
           <p>
-            Get a personalized quote for your project. Our team will help you 
-            calculate the right amount of panels and find the perfect configuration.
+            {tPage('cta.ctaSubtitle')}
           </p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
@@ -1115,7 +624,7 @@ export default function InteriorProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free shipping in Belgium • Return for recycling included
+            {tPage('cta.freeShippingNote')}
           </p>
         </div>
       </section>
