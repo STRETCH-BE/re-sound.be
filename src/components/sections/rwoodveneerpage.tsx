@@ -32,7 +32,6 @@ const veneerCollections = [
     description: 'Rich, inviting mid-tones with timeless appeal',
     veneers: [
       { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false, origin: 'Europe', grain: 'Cathedral grain' },
-      { id: 'honey-oak', name: 'Honey Oak', swatch: '/images/products/rwood-veneer/honey-oak.jpg', image: '/images/products/rwood-veneer/honey-oak.jpg', isDark: false, origin: 'Europe', grain: 'Prominent grain' },
     ],
   },
   {
