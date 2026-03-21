@@ -1424,57 +1424,78 @@
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "AKUSTISCHE HOLZPANEELE",
+      "tag": "MIKROPERFORIERTE AKUSTIKPANEELE",
       "title": "rWood - Micro",
-      "tagline": "Für Augen und Ohren Gestaltet",
-      "description": "Präzisions-mikroperforierte Akustik-Holzpaneele, die für das Auge nahezu unsichtbar sind. Überlegene Absorption mit der klaren Ästhetik von Massivholz."
+      "tagline": "Unsichtbare Perforation, Außergewöhnliche Akustik",
+      "description": "Erleben Sie die Schönheit von Naturholz kombiniert mit der akustischen Leistung fortschrittlicher Mikroperforationstechnologie. Praktisch unsichtbare Löcher liefern Klasse A Schallabsorption und bewahren gleichzeitig das reine, homogene Aussehen des Premium-Holzfurniers.",
+      "usp1": "Unsichtbare Perforationen",
+      "usp2": "Klasse A Absorption",
+      "usp3": "Brandschutz B-s1, d0",
+      "colorSelector": "Holzfurnier Wählen"
     },
     "perforation": {
-      "tag": "DESIGNOPTIONEN",
+      "tag": "PERFORATIONSMUSTER",
       "title": "Wählen Sie Ihre Perforation",
-      "description": "Verschiedene Mikroperforationsdichten für fein abgestimmte akustische Kontrolle — von subtil bis hochleistend."
+      "description": "Vier Perforationsdichten für Ihre akustischen Anforderungen. Von praktisch unsichtbaren Nano-Perforationen bis zu maximaler Absorption mit Micro L-Mustern."
     },
     "surfaces": {
-      "tag": "PREMIUM OBERFLÄCHEN",
+      "tag": "OBERFLÄCHEN",
       "title": "Premium Oberflächen",
       "woodVeneer": "Holzfurnier",
-      "hplLaminate": "HPL-Laminat"
+      "hplLaminate": "HPL-Laminat",
+      "description": "Jedes rWood - Micro Panel verfügt über überfurnierte Kanten — eine Fertigungstechnik aus dem traditionellen Tischlerhandwerk. Das Ergebnis: stärkere Paneele, nahtlose Verbindungen und ein durchgehendes Muster unabhängig vom Panelformat.",
+      "woodVeneerDesc": "Premium A-Grad Furniere in Eiche, Walnuss, Birke und mehr. Nature und Gemini Schnitte verfügbar.",
+      "hplLaminateDesc": "Hochdrucklaminatoberflächen für höhere Haltbarkeit. In einer breiten Palette von Farben und Oberflächen erhältlich.",
+      "surfaceType": "Oberflächentyp",
+      "finishTreatments": "Oberflächenbehandlungen"
     },
     "bespoke": {
-      "tag": "MASSANFERTIGUNG",
+      "tag": "GESTALTUNGSFREIHEIT",
       "title": "Individuelle Möglichkeiten",
-      "description": "Von hinterleuchteten Paneelen bis zu vollständig individuellen Maßen — rWood Micro passt sich jedem Projekt an."
+      "description": "rWood - Micro Paneele können nach Ihren Zeichnungen angepasst und vorgefertigt werden. Die Mikroperforationen eröffnen einzigartige Designmöglichkeiten, die über Standard-Akustikpaneele hinausgehen.",
+      "backlitTitle": "Hinterleuchtete Paneele",
+      "backlitDesc": "Erstellen Sie atemberaubende hinterleuchtete Abschnitte, bei denen Licht durch die Mikroperforationen scheint. Logos und Muster leuchten schön, wenn beleuchtet, bleiben aber unsichtbar, wenn das Licht aus ist.",
+      "customDimTitle": "Individuelle Maße",
+      "customDimDesc": "Paneele nach Ihren genauen Spezifikationen gefertigt. Nicht-standardmäßige Größen und Formen für einzigartige architektonische Anforderungen.",
+      "patternTitle": "Durchgehendes Muster",
+      "patternDesc": "Überfurnierte Paneele schaffen nahtlose Übergänge unabhängig vom Format, für einen homogenen Eindruck auf jeder Oberfläche."
     },
     "acoustics": {
       "tag": "LEISTUNG",
       "title": "Überlegene Schallabsorption",
       "benefit1Title": "Doppelter Absorptionsmechanismus",
-      "benefit1": "Mikroperforationen und Schallresonatoren arbeiten zusammen für überlegene Absorption",
-      "benefit2Title": "Dünnerer Aufbau",
-      "benefit2": "Weniger abhängig von Luftspalt — dünnerer Wand- und Deckenaufbau",
-      "benefit3Title": "Breitband-Frequenzbereich",
-      "benefit3": "Effektiv von tief bis hoch, einschließlich Sprachfrequenzen"
+      "benefit1": "Mikrolöcher und Schallkammern arbeiten für überlegene Absorption zusammen",
+      "benefit2Title": "Platzsparendes Design",
+      "benefit2": "Weniger abhängig von Luftspalten — dünnere Wand- und Deckenaufbauten",
+      "benefit3Title": "Höchster Brandschutz",
+      "benefit3": "B-s1, d0 Klassifizierung — die höchste für mikroperforiertes Holz",
+      "description": "Die Kombination von Mikroperforationen an der Oberfläche und Tausenden größerer Schallkammern im Kern schafft einen doppelten akustischen Mechanismus. Weniger abhängig von Dämmung und Luftspalten — was dünnere Wände und Decken bedeutet, die wertvollen Raum sparen."
     },
     "installation": {
-      "tag": "MONTAGE",
+      "tag": "MONTAGESYSTEM",
       "title": "Präzisionsmontage",
       "step1Title": "Unterkonstruktion Montieren",
-      "step1Desc": "Aluminium-Profilsystem an Wand oder Decke installieren",
-      "step2Title": "Paneele Setzen",
-      "step2Desc": "Paneele ins Profilsystem einclipsen für unsichtbare Befestigung",
-      "step3Title": "Nahtlos Verbinden",
-      "step3Desc": "Nut-und-Feder sorgt für nahtlose Übergänge zwischen Paneelen",
-      "step4Title": "Abschließen",
-      "step4Desc": "End- und Eckprofile hinzufügen"
+      "step1Desc": "Aluminiumschienen an Wand- oder Deckenstruktur befestigen",
+      "step2Title": "Dämmung Einbringen",
+      "step2Desc": "Optionale Mineralwolle für verbesserte Absorption",
+      "step3Title": "Paneele Einclipsen",
+      "step3Desc": "Verdecktes Clipsystem für werkzeuglose Paneel-Montage",
+      "step4Title": "Nahtloses Ergebnis",
+      "step4Desc": "Überfurnierte Kanten schaffen eine durchgehende Holzoberfläche",
+      "description": "rWood - Micro Paneele werden mit unserem verdeckten Befestigungssystem installiert, das unsichtbare Befestigungen und eine makellose Oberfläche gewährleistet. Das System ermöglicht sowohl Wand- als auch Deckenanwendungen mit nahtlosen Paneel-zu-Paneel-Übergängen durch überfurnierte Kanten."
     },
     "sustainability": {
-      "tag": "VERANTWORTUNGSVOLL HERGESTELLT",
+      "tag": "NACHHALTIGKEIT",
       "title": "Verantwortungsvoll Hergestellt",
-      "badge1": "FSC® Zertifiziert",
-      "badge2": "Kreislaufrücknahme",
+      "badge1": "FSC® Zertifiziertes Furnier",
+      "badge2": "Natürliches Kernmaterial",
       "badge3": "Europäische Produktion",
-      "badge4": "EPD Verfügbar",
-      "badge5": "Grüne Energie"
+      "badge4": "Niedrige VOC-Emissionen",
+      "badge5": "Grüne Energie",
+      "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
+      "badge2Desc": "Faserplattenkem — ein holzbasierter, brandgeschützter Kern",
+      "badge3Desc": "In Europa hergestellt, geringere Transportemissionen",
+      "badge4Desc": "E1-klassifiziert für gesündere Innenraumluft"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1488,6 +1509,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projekte & Installationen"
+    },
+    "overview": {
+      "tag": "DIE UNSICHTBARE LÖSUNG",
+      "title": "Für Augen und Ohren Gestaltet",
+      "description1": "rWood - Micro Paneele kombinieren fortschrittliche Mikroperforationstechnologie mit Premium-Holzfurnieren. Aus normaler Betrachtungsdistanz sind die Perforationen völlig unsichtbar — was Sie sehen, ist eine schöne, homogene Holzoberfläche. Was Sie hören, ist außergewöhnlicher akustischer Komfort.",
+      "description2": "Das Geheimnis liegt in der Kombination zweier akustischer Mechanismen: Tausende präzise gefertigte Mikrolöcher an der Oberfläche und schallabsorbierende Kammern im Kernmaterial.",
+      "feature1": "Perforationen aus normaler Betrachtungsdistanz unsichtbar",
+      "feature2": "Nicht brennbarer Fasergipskern",
+      "feature3": "Überfurnierte Kanten für nahtlose Verbindungen",
+      "feature4": "Geeignet für Wände und Decken",
+      "feature5": "Als hinterleuchtete Paneele erhältlich"
+    },
+    "accessories": {
+      "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
+      "title": "Zubehör",
+      "description": "Professionelle Abschlusselemente für ein tadelloses Ergebnis",
+      "item1Title": "Endprofile",
+      "item1Desc": "Passende Profile für saubere Paneel-Abschlüsse",
+      "item2Title": "Ecklösungen",
+      "item2Desc": "Nahtlose Innen- und Außeneckübergänge",
+      "item3Title": "Montageschienen",
+      "item3Desc": "Verdecktes Aluminium-Unterkonstruktionssystem",
+      "item4Title": "LED-Hinterbeleuchtung",
+      "item4Desc": "Integrierte Beleuchtung für hinterleuchtete Paneel-Effekte"
     }
   },
   "rwoodVeneerPage": {

@@ -1424,57 +1424,78 @@
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "PANNEAUX ACOUSTIQUES EN BOIS",
+      "tag": "PANNEAUX ACOUSTIQUES MICRO-PERFORÉS",
       "title": "rWood - Micro",
-      "tagline": "Conçu pour les Yeux et les Oreilles",
-      "description": "Panneaux acoustiques en bois micro-perforés de précision pratiquement invisibles à l'œil. Absorption supérieure avec l'esthétique épurée du bois massif."
+      "tagline": "Perforation Invisible, Acoustique Exceptionnelle",
+      "description": "Découvrez la beauté du bois naturel associée aux performances acoustiques d'une technologie de micro-perforation avancée. Des trous pratiquement invisibles offrent une absorption sonore Classe A tout en préservant l'aspect pur et homogène du placage bois premium.",
+      "usp1": "Perforations Invisibles",
+      "usp2": "Absorption Classe A",
+      "usp3": "Classement Feu B-s1, d0",
+      "colorSelector": "Sélectionner le Placage Bois"
     },
     "perforation": {
-      "tag": "OPTIONS DE DESIGN",
+      "tag": "MOTIFS DE PERFORATION",
       "title": "Choisissez Votre Perforation",
-      "description": "Différentes densités de micro-perforation pour un contrôle acoustique précis — du subtil au haute performance."
+      "description": "Quatre densités de perforation pour répondre à vos exigences acoustiques. Des perforations Nano pratiquement invisibles aux motifs Micro L à absorption maximale."
     },
     "surfaces": {
-      "tag": "SURFACES PREMIUM",
+      "tag": "SURFACES",
       "title": "Surfaces Premium",
       "woodVeneer": "Placage Bois",
-      "hplLaminate": "Stratifié HPL"
+      "hplLaminate": "Stratifié HPL",
+      "description": "Chaque panneau rWood - Micro dispose de chants surépaissés — une technique de fabrication issue du patrimoine de la menuiserie traditionnelle. Résultat : des panneaux plus solides, des joints continus et un motif homogène quel que soit le format.",
+      "woodVeneerDesc": "Placages A-grade premium en chêne, noyer, bouleau et plus. Coupes Nature et Gemini disponibles.",
+      "hplLaminateDesc": "Surfaces en stratifié haute pression pour une durabilité accrue. Disponible dans une large gamme de couleurs et finitions.",
+      "surfaceType": "Type de Surface",
+      "finishTreatments": "Traitements de Finition"
     },
     "bespoke": {
-      "tag": "SUR MESURE",
+      "tag": "LIBERTÉ DE CONCEPTION",
       "title": "Possibilités Sur Mesure",
-      "description": "Des panneaux rétroéclairés aux dimensions entièrement personnalisées — rWood Micro s'adapte à chaque projet."
+      "description": "Les panneaux rWood - Micro peuvent être personnalisés et préfabriqués selon vos plans. Les micro-perforations ouvrent des possibilités de design uniques qui vont bien au-delà des panneaux acoustiques standard.",
+      "backlitTitle": "Panneaux Rétroéclairés",
+      "backlitDesc": "Créez de superbes sections rétroéclairées où la lumière traverse les micro-perforations. Logos et motifs brillent magnifiquement lorsqu'ils sont éclairés, mais restent invisibles lorsque la lumière est éteinte.",
+      "customDimTitle": "Dimensions Personnalisées",
+      "customDimDesc": "Panneaux produits selon vos spécifications exactes. Formes et dimensions non standard pour des exigences architecturales uniques.",
+      "patternTitle": "Motif Continu",
+      "patternDesc": "Les panneaux à chants surépaissés créent des transitions continues quel que soit le format, pour une impression homogène sur n'importe quelle surface."
     },
     "acoustics": {
       "tag": "PERFORMANCES",
       "title": "Absorption Sonore Supérieure",
       "benefit1Title": "Double Mécanisme d'Absorption",
-      "benefit1": "Micro-perforations et résonateurs sonores travaillent ensemble pour une absorption supérieure",
-      "benefit2Title": "Construction Plus Mince",
-      "benefit2": "Moins dépendant de la lame d'air — constructions de mur et plafond plus minces",
-      "benefit3Title": "Plage de Fréquences Large",
-      "benefit3": "Efficace des graves aux aigus, incluant les fréquences de parole"
+      "benefit1": "Micro-trous et chambres acoustiques travaillent ensemble pour une absorption supérieure",
+      "benefit2Title": "Gain de Place",
+      "benefit2": "Moins dépendant des lames d'air — constructions de mur et plafond plus minces",
+      "benefit3Title": "Sécurité Incendie Maximale",
+      "benefit3": "Classement B-s1, d0 — le plus élevé possible pour le bois micro-perforé",
+      "description": "La combinaison des micro-perforations en surface et des milliers de grandes chambres acoustiques dans le cœur crée un double mécanisme acoustique. Moins dépendant de l'isolation et des lames d'air — ce qui signifie des murs et plafonds plus minces qui économisent un espace précieux."
     },
     "installation": {
-      "tag": "INSTALLATION",
+      "tag": "SYSTÈME D'INSTALLATION",
       "title": "Installation de Précision",
-      "step1Title": "Monter la Sous-structure",
-      "step1Desc": "Installer le système de profilés aluminium sur mur ou plafond",
-      "step2Title": "Poser les Panneaux",
-      "step2Desc": "Clipser les panneaux dans le système de profilés pour une fixation invisible",
-      "step3Title": "Connecter Sans Couture",
-      "step3Desc": "Le système rainure-languette assure des transitions sans couture entre panneaux",
-      "step4Title": "Finir",
-      "step4Desc": "Ajouter les profilés de finition et d'angle"
+      "step1Title": "Installer la Sous-structure",
+      "step1Desc": "Fixer les rails aluminium sur la structure mur ou plafond",
+      "step2Title": "Ajouter l'Isolation",
+      "step2Desc": "Laine minérale optionnelle pour une absorption améliorée",
+      "step3Title": "Clipser les Panneaux",
+      "step3Desc": "Système de clips dissimulés pour une fixation sans outil",
+      "step4Title": "Résultat Sans Couture",
+      "step4Desc": "Les chants surépaissés créent une surface bois continue",
+      "description": "Les panneaux rWood - Micro sont installés avec notre système de fixation dissimulée, garantissant des fixations invisibles et une finition impeccable. Le système permet des applications en mur et plafond, avec des transitions continues entre panneaux grâce aux chants surépaissés."
     },
     "sustainability": {
-      "tag": "FABRIQUÉ DE FAÇON RESPONSABLE",
+      "tag": "DURABILITÉ",
       "title": "Fabriqué de Façon Responsable",
-      "badge1": "Certifié FSC®",
-      "badge2": "Reprise Circulaire",
+      "badge1": "Placage Certifié FSC®",
+      "badge2": "Matériau de Cœur Naturel",
       "badge3": "Production Européenne",
-      "badge4": "DEP Disponible",
-      "badge5": "Énergie Verte"
+      "badge4": "Faibles Émissions COV",
+      "badge5": "Énergie Verte",
+      "badge1Desc": "Bois issu de forêts gérées de façon responsable",
+      "badge2Desc": "Cœur en fibres — un cœur à base de bois, certifié au feu",
+      "badge3Desc": "Fabriqué en Europe, réduisant les émissions de transport",
+      "badge4Desc": "Classé E1 pour une meilleure qualité de l'air intérieur"
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1488,6 +1509,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projets & Installations"
+    },
+    "overview": {
+      "tag": "LA SOLUTION INVISIBLE",
+      "title": "Conçu pour les Yeux et les Oreilles",
+      "description1": "Les panneaux rWood - Micro combinent une technologie de micro-perforation avancée avec des placages bois premium. À distance normale, les perforations sont totalement invisibles — ce que vous voyez est une belle surface bois homogène. Ce que vous entendez est un confort acoustique exceptionnel.",
+      "description2": "Le secret réside dans la combinaison de deux mécanismes acoustiques : des milliers de micro-trous précisément ingéniérés en surface et des chambres absorbantes dans le matériau de cœur.",
+      "feature1": "Perforations invisibles à distance normale",
+      "feature2": "Cœur en fibres non combustibles",
+      "feature3": "Chants surépaissés pour joints continus",
+      "feature4": "Adapté aux murs et plafonds",
+      "feature5": "Disponible en panneaux rétroéclairés"
+    },
+    "accessories": {
+      "tag": "POUR COMPLÉTER LE LOOK",
+      "title": "Accessoires",
+      "description": "Éléments de finition professionnels pour un résultat impeccable",
+      "item1Title": "Profilés de Finition",
+      "item1Desc": "Profilés assortis pour des terminaisons de panneaux nettes",
+      "item2Title": "Solutions d'Angle",
+      "item2Desc": "Transitions d'angle intérieur et extérieur continues",
+      "item3Title": "Rails de Fixation",
+      "item3Desc": "Système de sous-structure aluminium dissimulée",
+      "item4Title": "Rétroéclairage LED",
+      "item4Desc": "Éclairage intégré pour les effets de panneaux rétroéclairés"
     }
   },
   "rwoodVeneerPage": {

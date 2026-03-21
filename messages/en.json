@@ -1424,65 +1424,77 @@
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "ACOUSTIC WOOD PANELS",
+      "tag": "MICRO-PERFORATED ACOUSTIC PANELS",
       "title": "rWood - Micro",
-      "tagline": "Designed for Eyes and Ears",
-      "description": "Precision micro-perforated acoustic wood panels that are virtually invisible to the eye. Superior absorption with the clean aesthetic of solid wood."
+      "tagline": "Invisible Perforation, Exceptional Acoustics",
+      "description": "Experience the beauty of natural wood with the acoustic performance of advanced micro-perforation technology. Virtually invisible holes deliver Class A sound absorption while preserving the pure, homogeneous look of premium wood veneer.",
+      "usp1": "Invisible Perforations",
+      "usp2": "Class A Absorption",
+      "usp3": "B-s1, d0 Fire Rated",
+      "colorSelector": "Select Wood Veneer"
     },
     "perforation": {
-      "tag": "DESIGN OPTIONS",
+      "tag": "PERFORATION PATTERNS",
       "title": "Choose Your Perforation",
       "description": "Different micro-perforation densities for fine-tuned acoustic control—from subtle to high-performance."
     },
     "surfaces": {
-      "tag": "PREMIUM SURFACES",
+      "tag": "SURFACES",
       "title": "Premium Surfaces",
       "woodVeneer": "Wood Veneer",
-      "woodVeneerDesc": "FSC-certified natural wood species with factory-applied finish.",
+      "woodVeneerDesc": "Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available.",
       "hplLaminate": "HPL Laminate",
-      "hplLaminateDesc": "High-pressure laminate for uniform color and maximum durability.",
+      "hplLaminateDesc": "High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.",
       "surfaceType": "Surface Type",
-      "finishTreatments": "Finish Treatments"
+      "finishTreatments": "Finish Treatments",
+      "description": "Every rWood - Micro panel features over-veneered edges—a manufacturing technique from traditional carpentry heritage. The result: stronger panels, seamless joints, and a continuous pattern regardless of panel format."
     },
     "acoustics": {
       "tag": "PERFORMANCE",
       "title": "Superior Sound Absorption",
       "benefit1Title": "Dual Acoustic Mechanism",
-      "benefit1": "Combines micro-perforation absorption with porous backing layer",
+      "benefit1": "Micro-holes and sound chambers work together for superior absorption",
       "benefit2Title": "Space-Saving Design",
-      "benefit2": "Slim profile with outstanding acoustic performance",
+      "benefit2": "Less dependent on air gaps—thinner wall and ceiling build-ups",
       "benefit3Title": "Highest Fire Safety",
-      "benefit3": "A2-s1,d0 rated with non-combustible substrate option"
+      "benefit3": "B-s1, d0 rating—the highest achievable for micro-perforated wood",
+      "description": "The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism. Less dependent on insulation and air gaps—meaning thinner walls and ceilings that save valuable space."
     },
     "installation": {
-      "tag": "INSTALLATION",
+      "tag": "INSTALLATION SYSTEM",
       "title": "Precision Installation",
       "step1Title": "Install Subframe",
-      "step1Desc": "Aluminium T-profile subframe for walls or ceilings",
+      "step1Desc": "Mount aluminium rails to wall or ceiling structure",
       "step2Title": "Add Insulation",
-      "step2Desc": "Insert acoustic wool or mineral wool behind panels",
+      "step2Desc": "Optional mineral wool for enhanced absorption",
       "step3Title": "Click & Fix Panels",
-      "step3Desc": "Click panels into the subframe profile—no visible fixings",
+      "step3Desc": "Concealed clip system for tool-free panel mounting",
       "step4Title": "Seamless Result",
-      "step4Desc": "Continuous surface with hairline joins between panels"
+      "step4Desc": "Over-veneered edges create continuous wood surface",
+      "description": "rWood - Micro panels are installed with our concealed mounting system, ensuring invisible fixings and a flawless finish. The system allows for both wall and ceiling applications, with seamless panel-to-panel transitions through over-veneered edges."
     },
     "bespoke": {
-      "tag": "BESPOKE",
+      "tag": "DESIGN FREEDOM",
       "title": "Bespoke Possibilities",
       "backlitTitle": "Backlit Panels",
-      "backlitDesc": "Integrate LED backlighting for dramatic effect",
+      "backlitDesc": "Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet remain invisible when the light is off.",
       "customDimTitle": "Custom Dimensions",
-      "customDimDesc": "Panels up to 3600 mm length on request",
+      "customDimDesc": "Panels produced to your exact specifications. Non-standard sizes and shapes for unique architectural requirements.",
       "patternTitle": "Continuous Pattern",
-      "patternDesc": "Book-matched veneer for seamless pattern flow"
+      "patternDesc": "Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.",
+      "description": "rWood - Micro panels can be customized and pre-fabricated according to your drawings. The micro-perforations open up unique design possibilities that go beyond standard acoustic panels."
     },
     "sustainability": {
-      "tag": "RESPONSIBLY MADE",
+      "tag": "SUSTAINABILITY",
       "title": "Responsibly Made",
       "badge1": "FSC® Certified Veneer",
       "badge2": "Natural Core Material",
       "badge3": "European Production",
-      "badge4": "Low VOC Emissions"
+      "badge4": "Low VOC Emissions",
+      "badge1Desc": "Wood from responsibly managed forests",
+      "badge2Desc": "Fiberboard core—a wood-based, fire-rated core",
+      "badge3Desc": "Manufactured in Europe, reducing transport emissions",
+      "badge4Desc": "E1-rated for healthier indoor air quality"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1493,6 +1505,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projects & Installations"
+    },
+    "overview": {
+      "tag": "THE INVISIBLE SOLUTION",
+      "title": "Designed for Eyes and Ears",
+      "description1": "rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perforations are completely invisible—what you see is a beautiful, homogeneous wood surface. What you hear is exceptional acoustic comfort.",
+      "description2": "The secret lies in the combination of two acoustic mechanisms: thousands of precisely engineered micro-holes in the surface and sound-absorbing chambers within the core material.",
+      "feature1": "Perforations invisible from normal viewing distance",
+      "feature2": "Non-combustible fibre gypsum core",
+      "feature3": "Over-veneered edges for seamless joints",
+      "feature4": "Suitable for walls and ceilings",
+      "feature5": "Available as backlit panels"
+    },
+    "accessories": {
+      "tag": "COMPLETE THE LOOK",
+      "title": "Accessories",
+      "description": "Professional finishing elements for a flawless result",
+      "item1Title": "Edge Profiles",
+      "item1Desc": "Matching profiles for clean panel terminations",
+      "item2Title": "Corner Solutions",
+      "item2Desc": "Seamless internal and external corner transitions",
+      "item3Title": "Mounting Rails",
+      "item3Desc": "Concealed aluminium subframe system",
+      "item4Title": "LED Backlighting",
+      "item4Desc": "Integrated lighting for backlit panel effects"
     }
   },
   "rwoodVeneerPage": {

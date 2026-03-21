@@ -1424,70 +1424,115 @@
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "AKOESTISCHE HOUTPANELEN",
+      "tag": "MICRO-GEPERFOREERDE AKOESTISCHE PANELEN",
       "title": "rWood - Micro",
-      "tagline": "Ontworpen voor Ogen en Oren",
-      "description": "Precisie micro-geperforeerde akoestische houtpanelen die vrijwel onzichtbaar zijn voor het oog. Superieure absorptie met de strakke esthetiek van massief hout."
+      "tagline": "Onzichtbare Perforatie, Uitzonderlijke Akoestiek",
+      "description": "Ervaar de schoonheid van naturel hout gecombineerd met de akoestische prestaties van geavanceerde micro-perforatietechnologie. Vrijwel onzichtbare gaatjes leveren Klasse A geluidsabsorptie terwijl het pure, homogene uiterlijk van premium houtfineer behouden blijft.",
+      "usp1": "Onzichtbare Perforaties",
+      "usp2": "Klasse A Absorptie",
+      "usp3": "Brandklasse B-s1, d0",
+      "colorSelector": "Houtfineer Kiezen"
     },
     "perforation": {
-      "tag": "ONTWERPOPTIES",
+      "tag": "PERFORATIEPATRONEN",
       "title": "Kies je Perforatie",
-      "description": "Verschillende micro-perforatiedichtheden voor nauwkeurige akoestische controle — van subtiel tot hoogpresteerend."
+      "description": "Vier perforatiedichtheden voor jouw akoestische vereisten. Van vrijwel onzichtbare Nano-perforaties tot maximale absorptie Micro L-patronen."
     },
     "surfaces": {
-      "tag": "PREMIUM OPPERVLAKKEN",
+      "tag": "OPPERVLAKKEN",
       "title": "Premium Oppervlakken",
       "woodVeneer": "Houtfineer",
-      "hplLaminate": "HPL Laminaat"
+      "hplLaminate": "HPL Laminaat",
+      "description": "Elk rWood - Micro paneel heeft overkante kanten — een productietechniek uit de traditionele schrijnwerktraditie. Het resultaat: sterkere panelen, naadloze verbindingen en een continu patroon ongeacht het panelformaat.",
+      "woodVeneerDesc": "Premium A-kwaliteit fineers in eik, walnoot, berk en meer. Nature en Gemini sneden beschikbaar.",
+      "hplLaminateDesc": "Hoogdruk laminaat oppervlakken voor extra duurzaamheid. Beschikbaar in een breed scala aan kleuren en afwerkingen.",
+      "surfaceType": "Oppervlaktype",
+      "finishTreatments": "Afwerkingsbehandelingen"
     },
     "bespoke": {
-      "tag": "MAATWERK",
+      "tag": "ONTWERPVRIJHEID",
       "title": "Maatwerk Mogelijkheden",
-      "description": "Van verlichte panelen tot volledig aangepaste afmetingen — rWood Micro past zich aan elk project aan."
+      "description": "rWood - Micro panelen kunnen worden gepersonaliseerd en voorgefabriceerd volgens jouw tekeningen. De micro-perforaties openen unieke ontwerpmogelijkheden die verder gaan dan standaard akoestische panelen.",
+      "backlitTitle": "Verlichte Panelen",
+      "backlitDesc": "Maak verbluffende verlichte secties waar licht door de micro-perforaties schijnt. Logo's en patronen gloeien prachtig wanneer verlicht, maar blijven onzichtbaar wanneer het licht uit is.",
+      "customDimTitle": "Maatafmetingen",
+      "customDimDesc": "Panelen geproduceerd volgens jouw exacte specificaties. Niet-standaard maten en vormen voor unieke architecturale vereisten.",
+      "patternTitle": "Continu Patroon",
+      "patternDesc": "Overkante panelen creëren naadloze overgangen ongeacht het formaat, voor een homogene indruk op elk oppervlak."
     },
     "acoustics": {
       "tag": "PRESTATIES",
       "title": "Superieure Geluidsabsorptie",
       "benefit1Title": "Dubbel Absorptiemechanisme",
-      "benefit1": "Micro-perforaties en geluidsresonatoren werken samen voor superieure absorptie",
-      "benefit2Title": "Dunnere Opbouw",
-      "benefit2": "Minder afhankelijk van luchtspouw — dunnere wand- en plafondopbouw",
-      "benefit3Title": "Breedband Frequentiebereik",
-      "benefit3": "Effectief van laag tot hoog, inclusief spraakfrequenties"
+      "benefit1": "Micro-gaatjes en geluidskamers werken samen voor superieure absorptie",
+      "benefit2Title": "Ruimtebesparend Ontwerp",
+      "benefit2": "Minder afhankelijk van luchtspouwen — dunnere wand- en plafondopbouw",
+      "benefit3Title": "Hoogste Brandveiligheid",
+      "benefit3": "Brandklasse B-s1, d0 — de hoogst haalbare voor micro-geperforeerd hout",
+      "description": "De combinatie van micro-perforaties aan het oppervlak en duizenden grotere geluidskamers in de kern creëert een dubbel akoestisch mechanisme. Minder afhankelijk van isolatie en luchtspouwen — wat dunne wanden en plafonds oplevert die waardevolle ruimte besparen."
     },
     "installation": {
-      "tag": "INSTALLATIE",
+      "tag": "INSTALLATIESYSTEEM",
       "title": "Precisie Installatie",
       "step1Title": "Onderbouw Monteren",
-      "step1Desc": "Installeer het aluminium profielsysteem op wand of plafond",
-      "step2Title": "Panelen Plaatsen",
-      "step2Desc": "Klik panelen in het profielsysteem voor onzichtbare bevestiging",
-      "step3Title": "Naadloos Verbinden",
-      "step3Desc": "Tong-en-groef zorgt voor naadloze overgangen tussen panelen",
-      "step4Title": "Afwerken",
-      "step4Desc": "Voeg eindprofielen en hoekoplossingen toe"
+      "step1Desc": "Aluminium rails bevestigen aan wand- of plafondstructuur",
+      "step2Title": "Isolatie Toevoegen",
+      "step2Desc": "Optionele minerale wol voor verbeterde absorptie",
+      "step3Title": "Panelen Inklikken",
+      "step3Desc": "Verborgen klemmenssysteem voor gereedschapsvrije montage",
+      "step4Title": "Naadloos Resultaat",
+      "step4Desc": "Overkante kanten creëren een continu houtoppervlak",
+      "description": "rWood - Micro panelen worden geïnstalleerd met ons verborgen bevestigingssysteem, dat onzichtbare bevestigingen en een perfecte afwerking garandeert. Het systeem maakt zowel wand- als plafondtoepassingen mogelijk met naadloze overgangen via overkante kanten."
     },
     "sustainability": {
-      "tag": "VERANTWOORD GEMAAKT",
+      "tag": "DUURZAAMHEID",
       "title": "Verantwoord Gemaakt",
-      "badge1": "FSC® Gecertificeerd",
-      "badge2": "Circulaire Terugname",
+      "badge1": "FSC® Gecertificeerd Fineer",
+      "badge2": "Naturel Kernmateriaal",
       "badge3": "Europese Productie",
-      "badge4": "EPD Beschikbaar",
-      "badge5": "Groene Energie"
+      "badge4": "Lage VOS-emissies",
+      "badge5": "Groene Energie",
+      "badge1Desc": "Hout uit verantwoord beheerde bossen",
+      "badge2Desc": "Vezelbord kern — een houtig, brandvertragend kern",
+      "badge3Desc": "Vervaardigd in Europa, minder transportemissies",
+      "badge4Desc": "E1-klasse voor gezondere binnenlucht"
     },
     "specs": {
       "tag": "TECHNISCH",
       "title": "Specificaties",
       "dimensionsTitle": "Afmetingen — Wanden en Plafonds",
       "acousticsTitle": "Akoestische Prestaties",
-      "perforationsTitle": "Perforatieopties",
+      "perforationsTitle": "Performatieopties",
       "fireTitle": "Brandveiligheid",
       "certsTitle": "Certificeringen"
     },
     "gallery": {
       "tag": "INSPIRATIE",
       "title": "Projecten & Installaties"
+    },
+    "overview": {
+      "tag": "DE ONZICHTBARE OPLOSSING",
+      "title": "Ontworpen voor Ogen en Oren",
+      "description1": "rWood - Micro panelen combineren geavanceerde micro-perforatietechnologie met premium houtfineers. Op normale kijkafstand zijn de perforaties volledig onzichtbaar — wat je ziet is een prachtig, homogeen houtoppervlak. Wat je hoort is uitzonderlijk akoestisch comfort.",
+      "description2": "Het geheim schuilt in de combinatie van twee akoestische mechanismen: duizenden precies gemaakte micro-gaatjes aan het oppervlak en geluidsabsorberende kamers in het kernmateriaal.",
+      "feature1": "Perforaties onzichtbaar op normale kijkafstand",
+      "feature2": "Niet-brandbare vezelgipsken",
+      "feature3": "Overkante kanten voor naadloze verbindingen",
+      "feature4": "Geschikt voor wanden en plafonds",
+      "feature5": "Beschikbaar als verlichte panelen"
+    },
+    "accessories": {
+      "tag": "DE LOOK COMPLETEREN",
+      "title": "Accessoires",
+      "description": "Professionele afwerkingselementen voor een perfect resultaat",
+      "item1Title": "Eindprofielen",
+      "item1Desc": "Bijpassende profielen voor nette paneelafwerkingen",
+      "item2Title": "Hoekoplossingen",
+      "item2Desc": "Naadloze binnen- en buitenhoekovergang",
+      "item3Title": "Montagrails",
+      "item3Desc": "Verborgen aluminium onderbouwsysteem",
+      "item4Title": "LED Verlichting",
+      "item4Desc": "Geïntegreerde verlichting voor verlichte paneeleffecten"
     }
   },
   "rwoodVeneerPage": {
