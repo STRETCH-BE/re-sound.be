@@ -20,8 +20,8 @@ const woodFinishOptions = [
 
 // Surface finish options
 const surfaceFinishOptions = [
-  { id: 'veneer', name: 'Wood Veneer', description: 'Natural A-grade veneer' },
-  { id: 'hpl', name: 'HPL Laminate', description: 'High-pressure laminate' },
+  { id: 'veneer', name: 'woodVeneer', description: 'Natural A-grade veneer' },
+  { id: 'hpl', name: 'hplLaminate', description: 'High-pressure laminate' },
 ];
 
 // Perforation pattern options
@@ -138,15 +138,10 @@ export default function RWoodMicroProductPage() {
       {/* Hero Section */}
       <section className="product-hero">
         <div className="hero-content">
-          <span className="product-tag">MICRO-PERFORATED ACOUSTIC PANELS</span>
+          <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">Invisible Perforation, Exceptional Acoustics</p>
-          <p className="hero-description">
-            Experience the beauty of natural wood with the acoustic performance of 
-            advanced micro-perforation technology. Virtually invisible holes deliver 
-            Class A sound absorption while preserving the pure, homogeneous look 
-            of premium wood veneer.
-          </p>
+          <p className="hero-tagline">{t('hero.tagline')}</p>
+          <p className="hero-description">{t('hero.description')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -157,15 +152,15 @@ export default function RWoodMicroProductPage() {
                   <circle cx="12" cy="12" r="9" strokeDasharray="1 2"/>
                 </svg>
               </span>
-              <span className="usp-text">Invisible Perforations</span>
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">Class A Absorption</span>
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔥</span>
-              <span className="usp-text">B-s1, d0 Fire Rated</span>
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -201,7 +196,7 @@ export default function RWoodMicroProductPage() {
           </div>
           
           <div className="finish-selector">
-            <span className="selector-label">Select Wood Veneer</span>
+            <span className="selector-label">{t('hero.colorSelector')}</span>
             <div className="finish-options">
               {woodFinishOptions.map((finish) => (
                 <button
@@ -255,39 +250,34 @@ export default function RWoodMicroProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">THE INVISIBLE SOLUTION</span>
-            <h2>Designed for Eyes and Ears</h2>
+            <span className="section-tag">{t('overview.tag')}</span>
+            <h2>{t('overview.title')}</h2>
             <p>
-              rWood - Micro panels combine advanced micro-perforation technology with 
-              premium wood veneers. From a normal viewing distance, the perforations 
-              are completely invisible—what you see is a beautiful, homogeneous wood 
-              surface. What you hear is exceptional acoustic comfort.
+              {t('overview.description1')}
             </p>
             <p>
-              The secret lies in the combination of two acoustic mechanisms: thousands 
-              of precisely engineered micro-holes in the surface and sound-absorbing 
-              chambers within the core material.
+              {t('overview.description2')}
             </p>
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Perforations invisible from normal viewing distance
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Non-combustible fibre gypsum core
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Over-veneered edges for seamless joints
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Suitable for walls and ceilings
+                {t('overview.feature4')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Available as backlit panels
+                {t('overview.feature5')}
               </li>
             </ul>
           </div>
@@ -297,7 +287,7 @@ export default function RWoodMicroProductPage() {
       {/* Perforations Section */}
       <section id="perforations" className="content-section perforations-section dark">
         <div className="perforations-header">
-          <span className="section-tag">PERFORATION PATTERNS</span>
+          <span className="section-tag">{t('perforation.tag')}</span>
           <h2>{t('perforation.title')}</h2>
           <p>
             Four perforation densities to match your acoustic requirements. From virtually 
@@ -404,8 +394,8 @@ export default function RWoodMicroProductPage() {
       <section id="finishes" className="content-section finishes-section">
         <div className="section-grid">
           <div className="section-content">
-            <span className="section-tag">SURFACES</span>
-            <h2>Premium Surfaces</h2>
+            <span className="section-tag">{t('surfaces.tag')}</span>
+            <h2>{t('surfaces.title')}</h2>
             <p>
               Every rWood - Micro panel features over-veneered edges—a manufacturing 
               technique from traditional carpentry heritage. The result: stronger panels, 
@@ -414,17 +404,17 @@ export default function RWoodMicroProductPage() {
             
             <div className="finish-categories">
               <div className="finish-category">
-                <h4>Wood Veneer</h4>
-                <p>Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available for lively or harmonious grain expressions.</p>
+                <h4>{t('surfaces.woodVeneer')}</h4>
+                <p>{t('surfaces.woodVeneerDesc')}</p>
               </div>
               <div className="finish-category">
-                <h4>HPL Laminate</h4>
-                <p>High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.</p>
+                <h4>{t('surfaces.hplLaminate')}</h4>
+                <p>{t('surfaces.hplLaminateDesc')}</p>
               </div>
             </div>
 
             <div className="surface-options">
-              <h4>Surface Type</h4>
+              <h4>{t('surfaces.surfaceType')}</h4>
               <div className="surface-selector">
                 {surfaceFinishOptions.map((surface) => (
                   <button
@@ -443,7 +433,7 @@ export default function RWoodMicroProductPage() {
             </div>
 
             <div className="finish-extras">
-              <h4>Finish Treatments</h4>
+              <h4>{t('surfaces.finishTreatments')}</h4>
               <div className="extras-grid">
                 <div className="extra-item">
                   <span className="extra-icon">🎨</span>
@@ -475,10 +465,10 @@ export default function RWoodMicroProductPage() {
         </div>
       </section>
 
-      {/* Acoustic Performance Section */}
+      {/* {t('specs.acousticsTitle')} Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
+          <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
             The combination of micro-perforations in the surface and thousands of larger 
@@ -500,7 +490,7 @@ export default function RWoodMicroProductPage() {
                   </div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Wood Veneer + Micro-Perforations</span>
+                  <span className="layer-name">{t('surfaces.woodVeneer')} + Micro-Perforations</span>
                   <span className="layer-desc">A-grade veneer with precision-drilled holes</span>
                 </div>
               </div>
@@ -616,8 +606,8 @@ export default function RWoodMicroProductPage() {
                 <circle cx="12" cy="12" r="9" strokeDasharray="1 2"/>
               </svg>
             </div>
-            <h4>Dual Acoustic Mechanism</h4>
-            <p>Micro-holes and sound chambers work together for superior absorption</p>
+            <h4>{t('acoustics.benefit1Title')}</h4>
+            <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -627,8 +617,8 @@ export default function RWoodMicroProductPage() {
                 <path d="M12 3v18"/>
               </svg>
             </div>
-            <h4>Space-Saving Design</h4>
-            <p>Less dependent on air gaps—thinner wall and ceiling build-ups</p>
+            <h4>{t('acoustics.benefit2Title')}</h4>
+            <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -636,8 +626,8 @@ export default function RWoodMicroProductPage() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
-            <h4>Highest Fire Safety</h4>
-            <p>B-s1, d0 rating—the highest achievable for micro-perforated wood</p>
+            <h4>{t('acoustics.benefit3Title')}</h4>
+            <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
       </section>
@@ -646,27 +636,24 @@ export default function RWoodMicroProductPage() {
       <section id="installation" className="content-section installation-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">INSTALLATION SYSTEM</span>
+            <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
-              rWood - Micro panels are installed with our concealed mounting system, 
-              ensuring invisible fixings and a flawless finish. The system allows for 
-              both wall and ceiling applications, with seamless panel-to-panel transitions 
-              through over-veneered edges.
+              {t('installation.description')}
             </p>
             
             <div className="installation-steps">
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>Install Subframe</h4>
+                  <h4>{t('installation.step1Title')}</h4>
                   <p>Mount aluminium rails to wall or ceiling structure</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>Add Insulation</h4>
+                  <h4>{t('installation.step2Title')}</h4>
                   <p>Optional mineral wool for enhanced absorption</p>
                 </div>
               </div>
@@ -680,7 +667,7 @@ export default function RWoodMicroProductPage() {
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>Seamless Result</h4>
+                  <h4>{t('installation.step4Title')}</h4>
                   <p>Over-veneered edges create continuous wood surface</p>
                 </div>
               </div>
@@ -713,33 +700,31 @@ export default function RWoodMicroProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">DESIGN FREEDOM</span>
+            <span className="section-tag">{t('bespoke.tag')}</span>
             <h2>{t('bespoke.title')}</h2>
             <p>
-              rWood - Micro panels can be customized and pre-fabricated according to 
-              your drawings. The micro-perforations open up unique design possibilities 
-              that go beyond standard acoustic panels.
+              {t('bespoke.description')}
             </p>
             <div className="bespoke-features">
               <div className="bespoke-item">
                 <span className="bespoke-icon">💡</span>
                 <div>
-                  <h4>Backlit Panels</h4>
-                  <p>Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet remain invisible when the light is off.</p>
+                  <h4>{t('bespoke.backlitTitle')}</h4>
+                  <p>{t('bespoke.backlitDesc')}</p>
                 </div>
               </div>
               <div className="bespoke-item">
                 <span className="bespoke-icon">📐</span>
                 <div>
-                  <h4>Custom Dimensions</h4>
-                  <p>Panels produced to your exact specifications. Non-standard sizes and shapes for unique architectural requirements.</p>
+                  <h4>{t('bespoke.customDimTitle')}</h4>
+                  <p>{t('bespoke.customDimDesc')}</p>
                 </div>
               </div>
               <div className="bespoke-item">
                 <span className="bespoke-icon">🔄</span>
                 <div>
-                  <h4>Continuous Pattern</h4>
-                  <p>Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.</p>
+                  <h4>{t('bespoke.patternTitle')}</h4>
+                  <p>{t('bespoke.patternDesc')}</p>
                 </div>
               </div>
             </div>
@@ -751,40 +736,38 @@ export default function RWoodMicroProductPage() {
       <section className="content-section sustainability-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
+            <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              rWood - Micro combines natural materials with responsible production. 
-              The Fire Retardant Medium Density Fiberboard core and sustainably sourced veneers 
-              contribute to healthier interiors and a lower environmental footprint.
+              {t('sustainability.description')}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
                 <span className="sustain-icon">🌲</span>
                 <div>
-                  <h4>FSC&reg; Certified Veneer</h4>
-                  <p>Wood from responsibly managed forests</p>
+                  <h4>{t('sustainability.badge1')}</h4>
+                  <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏗️</span>
                 <div>
-                  <h4>Natural Core Material</h4>
-                  <p>Fiberboard core—a wood-based, Firerated core</p>
+                  <h4>{t('sustainability.badge2')}</h4>
+                  <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🇪🇺</span>
                 <div>
-                  <h4>European Production</h4>
-                  <p>Manufactured in Europe, reducing transport emissions</p>
+                  <h4>{t('sustainability.badge3')}</h4>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">📋</span>
                 <div>
-                  <h4>Low VOC Emissions</h4>
-                  <p>E1-rated for healthier indoor air quality</p>
+                  <h4>{t('sustainability.badge4')}</h4>
+                  <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -835,7 +818,7 @@ export default function RWoodMicroProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Acoustic Performance</h4>
+            <h4>{t('specs.acousticsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -959,8 +942,8 @@ export default function RWoodMicroProductPage() {
       {/* Gallery Section */}
       <section id="gallery" className="content-section gallery-section">
         <div className="gallery-header">
-          <span className="section-tag">{tPage('gallery.tag')}</span>
-          <h2>Projects &amp; Installations</h2>
+          <span className="section-tag">{t('gallery.tag')}</span>
+          <h2>{t('gallery.title')}</h2>
         </div>
 
         <div className="gallery-grid">
@@ -1007,31 +990,31 @@ export default function RWoodMicroProductPage() {
       {/* Accessories Section */}
       <section className="content-section accessories-section dark">
         <div className="accessories-header">
-          <span className="section-tag">COMPLETE THE LOOK</span>
-          <h2>Accessories</h2>
-          <p>Professional finishing elements for a flawless result</p>
+          <span className="section-tag">{t('accessories.tag')}</span>
+          <h2>{t('accessories.title')}</h2>
+          <p>{t('accessories.description')}</p>
         </div>
 
         <div className="accessories-grid">
           <div className="accessory-card">
             <div className="accessory-icon">📏</div>
-            <h4>Edge Profiles</h4>
-            <p>Matching profiles for clean panel terminations</p>
+            <h4>{t('accessories.item1Title')}</h4>
+            <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">🔲</div>
-            <h4>Corner Solutions</h4>
-            <p>Seamless internal and external corner transitions</p>
+            <h4>{t('accessories.item2Title')}</h4>
+            <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">⚙️</div>
-            <h4>Mounting Rails</h4>
-            <p>Concealed aluminium subframe system</p>
+            <h4>{t('accessories.item3Title')}</h4>
+            <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">💡</div>
-            <h4>LED Backlighting</h4>
-            <p>Integrated lighting for backlit panel effects</p>
+            <h4>{t('accessories.item4Title')}</h4>
+            <p>{t('accessories.item4Desc')}</p>
           </div>
         </div>
       </section>
@@ -1060,7 +1043,7 @@ export default function RWoodMicroProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available • Made in Europe • FSC® Certified • B-s1, d0 Fire Rated
+            {tPage('cta.freeShippingNote')}
           </p>
         </div>
       </section>
@@ -2120,7 +2103,7 @@ export default function RWoodMicroProductPage() {
         }
 
         /* ========================================
-           INSTALLATION SECTION
+           {t('installation.tag')} SECTION
            ======================================== */
         .installation-steps {
           display: flex;
@@ -2152,7 +2135,7 @@ export default function RWoodMicroProductPage() {
         .step-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
 
         /* ========================================
-           BESPOKE SECTION
+           {t('bespoke.tag')} SECTION
            ======================================== */
         .bespoke-features {
           display: flex;
