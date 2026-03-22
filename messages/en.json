@@ -934,12 +934,19 @@
       "usp1": "High Absorption",
       "usp2": "1200 × 600 mm",
       "usp3": "Hook System",
-      "colorSelector": "Select Color"
+      "colorSelector": "Select Color",
+      "priceValue": "€407",
+      "priceUnit": "excl. VAT per panel",
+      "priceFrom": "Starting from"
     },
     "overview": {
       "tag": "COMPLETE SOLUTION",
       "title": "All Essentials, One Package",
-      "description": "Re-Sound Solid provides everything you need to optimize your space's acoustics. This large-format acoustic wall panel comes complete with core material, an elegant fabric cover, and the full mounting system—ready for professional results."
+      "description": "Re-Sound Solid provides everything you need to optimize your space's acoustics. This large-format acoustic wall panel comes complete with core material, an elegant fabric cover, and the full mounting system—ready for professional results.",
+      "feature1": "High-performance acoustic core",
+      "feature2": "Elegant removable fabric cover",
+      "feature3": "Complete hook mounting system",
+      "feature4": "Large format for maximum impact"
     },
     "installation": {
       "tag": "EASE OF USE",
@@ -952,7 +959,11 @@
     "maintenance": {
       "tag": "LOW MAINTENANCE",
       "title": "Always Looking Fresh",
-      "description": "The removable cover makes cleaning effortless. Simply remove, wash, and reattach—your Solid panels will maintain their original appearance for years. This practical design extends product life and ensures your space always looks professional."
+      "description": "The removable cover makes cleaning effortless. Simply remove, wash, and reattach—your Solid panels will maintain their original appearance for years. This practical design extends product life and ensures your space always looks professional.",
+      "feature1": "Removable fabric cover",
+      "feature2": "Machine washable at 30°C",
+      "feature3": "Stain-resistant options available",
+      "feature4": "Replacement covers available"
     },
     "features": {
       "tag": "SUSTAINABILITY",
@@ -1011,35 +1022,49 @@
   },
   "dividePage": {
     "hero": {
-      "tag": "FREESTANDING ACOUSTIC SCREENS",
+      "tag": "ACOUSTIC ROOM DIVIDER",
       "title": "Divide",
       "tagline": "Snap to Redefine, Split for Style",
-      "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use. Easily divide your space, create privacy zones, and eliminate background noise with our innovative modular system."
+      "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use. Easily divide your space, create privacy zones, and eliminate background noise with our innovative modular system.",
+      "usp1": "Magnetic Connect",
+      "usp2": "Fully Modular",
+      "usp3": "Freestanding",
+      "priceFrom": "Starting from",
+      "priceValue": "€1,238",
+      "priceUnit": "excl. VAT",
+      "colorSelector": "Select Color"
     },
     "overview": {
-      "tag": "FLEXIBLE SOLUTION",
+      "tag": "INNOVATION",
       "title": "Redefine Your Space",
-      "description": "Re-Sound Divide is the first freestanding acoustic product designed for ultimate flexibility. Create private zones, divide open spaces, and control background noise—all while maintaining the freedom to reconfigure as your needs change."
+      "description": "Re-Sound Divide is the first freestanding acoustic product designed for ultimate flexibility. Create private zones, divide open spaces, and control background noise—all while maintaining the freedom to reconfigure as your needs change.",
+      "feature1": "Freestanding design—no installation needed",
+      "feature2": "Magnetic connection system",
+      "feature3": "Lightweight and easy to move",
+      "feature4": "Circular by design"
     },
     "base": {
-      "tag": "EASE OF USE",
+      "tag": "STABILITY",
       "title": "Integrated Base",
       "description": "Thanks to the integrated base, Divide is always stable and stands freely on any floor. The lightweight modules can be easily moved for optimal flexibility—perfect for dynamic work environments that need to adapt quickly.",
       "feature1": "Stable on any surface without fixing",
       "feature2": "Easy to move and reposition",
-      "feature3": "Soft base protects all floor types"
+      "feature3": "Soft base protects all floor types",
+      "item1Title": "Perfectly Balanced",
+      "item2Title": "Lightweight",
+      "item3Title": "Floor-Safe"
     },
     "balanced": {
       "title": "Perfectly Balanced",
       "description": "Lightweight yet stable. Divide's engineered base keeps your configuration secure without floor fixtures."
     },
     "magnetic": {
-      "tag": "MODULAR CONNECTION",
+      "tag": "EFFORTLESS",
       "title": "Magnetic Connection",
       "description": "The modules connect effortlessly through subtle magnets integrated into the fabric. Assemble and disassemble with ease—invisible, subtly processed, yet strong enough for worry-free use. No tools, no complexity, just snap and go."
     },
     "modular": {
-      "tag": "DESIGN FREEDOM",
+      "tag": "FLEXIBILITY",
       "title": "Modular System",
       "description": "Decide the layout of your space yourself. Divide is a modular system that adapts to your needs. Whether you choose a long room divider or several short configurations—let your creativity run wild."
     },
@@ -1053,11 +1078,12 @@
       "title": "Dual-Sided Sound Absorption",
       "description": "Re-Sound Divide absorbs sound from both sides, making it perfect for creating acoustic privacy in open environments. Stop being disturbed by background noise and create focused, productive spaces.",
       "benefit1Title": "Noise Reduction",
-      "benefit1": "Effectively reduce noise levels in open offices",
+      "benefit1": "Block distracting background conversations",
       "benefit2Title": "Privacy Zones",
-      "benefit2": "Create acoustic privacy without walls",
+      "benefit2": "Create focused work areas in open spaces",
       "benefit3Title": "Better Focus",
-      "benefit3": "Minimize distractions for improved productivity"
+      "benefit3": "Improve concentration and productivity",
+      "extraBenefit": "Excellent dual-sided absorption"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1065,7 +1091,10 @@
       "acousticsTitle": "Acoustic Performance",
       "fireTitle": "Fire Safety",
       "sustainTitle": "Sustainability",
-      "installTitle": "Mobility"
+      "installTitle": "Mobility",
+      "materialsTitle": "Materials",
+      "featuresTitle": "Features",
+      "dimensionsTitle": "Dimensions"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1079,20 +1108,20 @@
       "tagline": "From Bottles to Silence",
       "description": "Transform your space with rPET - Groove acoustic panels. Made from 100% recycled plastic bottles, these elegant grooved panels combine contemporary design with exceptional sound absorption. Efficiency meets elegance.",
       "usp1": "100% Recycled PET",
-      "usp2": "12 Designer Colors",
-      "usp3": "36mm thickness"
+      "usp2": "Up to NRC 0.90",
+      "usp3": "12 Designer Colors"
     },
     "overview": {
       "tag": "CIRCULAR DESIGN",
       "title": "Design Meets Sustainability",
       "description": "rPET - Groove panels bring a contemporary touch to any space while reducing noise disturbances. The visible slat design creates visual depth and texture, perfect for modern offices, meeting rooms, lobbies, restaurants, and reception areas.",
-      "feature1": "CNC-cut pattern for visual depth",
-      "feature2": "Multiple designer colors",
-      "feature3": "UV resistant",
-      "feature4": "Direct wall/ceiling attachment"
+      "feature1": "Made from 100% recycled plastic bottles",
+      "feature2": "Precision CNC-cut groove patterns",
+      "feature3": "Lightweight and easy to handle",
+      "feature4": "Suitable for walls and ceilings"
     },
     "fromBottles": {
-      "tag": "MATERIAL STORY",
+      "tag": "THE JOURNEY",
       "title": "From Plastic Bottle to Acoustic Panel",
       "step1Number": "01",
       "step1Title": "Collection",
@@ -1105,7 +1134,8 @@
       "step3Desc": "Fibers are compressed into dense acoustic felt sheets",
       "step4Number": "04",
       "step4Title": "Finishing",
-      "step4Desc": "CNC precision cutting creates the signature groove patterns"
+      "step4Desc": "CNC precision cutting creates the signature groove patterns",
+      "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product."
     },
     "patterns": {
       "tag": "DESIGN OPTIONS",
@@ -1114,25 +1144,34 @@
     },
     "colors": {
       "title": "Multiple Designer Colors",
-      "subtitle": "12 colors to complement any interior"
+      "subtitle": "From neutral tones to bold accents, our curated collection complements any interior.",
+      "tag": "PALETTE",
+      "feature1": "UV Resistant",
+      "feature1Desc": "Colors stay vibrant even in sunlit spaces",
+      "feature2": "Easy Clean",
+      "feature2Desc": "Vacuum or wipe with damp cloth",
+      "feature3": "Consistent",
+      "feature3Desc": "Batch-to-batch color consistency guaranteed"
     },
     "thickness": {
       "title": "Select Thickness",
-      "subtitle": "Three thicknesses for different acoustic needs"
+      "subtitle": "Three thicknesses for different acoustic needs",
+      "tag": "SELECT THICKNESS",
+      "sectionTitle": "Select Thickness"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
       "title": "Superior Sound Absorption",
       "description": "The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye.",
       "benefit1Title": "Reduced Reverberation",
-      "benefit1": "Shorter echo times for clearer sound",
+      "benefit1": "Control echo and improve speech clarity in any room",
       "benefit2Title": "Increased Comfort",
-      "benefit2": "More pleasant acoustic environment",
+      "benefit2": "Create calmer, more peaceful environments",
       "benefit3Title": "Tested Performance",
-      "benefit3": "Laboratory certified to ISO 354"
+      "benefit3": "Independently verified acoustic data"
     },
     "installation": {
-      "tag": "EASY INSTALLATION",
+      "tag": "EASY INSTALL",
       "title": "Simple Installation",
       "step1Title": "Plan Layout",
       "step1Desc": "Measure space and plan panel arrangement",
@@ -1143,7 +1182,8 @@
       "step4Title": "Enjoy",
       "step4Desc": "Immediate acoustic improvement",
       "mountingOptions": "Mounting Options",
-      "mounting1": "Direct wall/ceiling attachment"
+      "mounting1": "Direct wall/ceiling attachment",
+      "description": "rPET - Groove panels are designed for quick and easy installation on both walls and ceilings. Multiple mounting methods available to suit your project requirements."
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -1153,7 +1193,9 @@
       "badge2": "Fully Recyclable",
       "badge3": "Free Take-Back",
       "badge4": "Made in Belgium",
-      "recycledBottlesLabel": "Recycled bottles per panel"
+      "recycledBottlesLabel": "Recycled bottles per panel",
+      "badge1Desc": "Made from post-consumer PET bottles",
+      "badge2Desc": "Can be recycled at end of life"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1204,21 +1246,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projects & Installations"
+    },
+    "applications": {
+      "tag": "VERSATILE USE",
+      "title": "Applications",
+      "description": "rPET - Groove panels fit seamlessly into diverse environments.",
+      "app1": "Open plan spaces, meeting rooms, focus pods",
+      "app2": "Hotels, restaurants, lobbies, reception areas",
+      "app3": "Schools, universities, libraries",
+      "app4": "Healthcare, wellness centres"
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "RECYCLED PET ACOUSTIC PANELS",
       "title": "rPET - Panel",
-      "tagline": "From Bottles to Better Spaces",
-      "description": "Versatile acoustic panels made from 100% recycled PET bottles. Process like MDF, yet lightweight and people-friendly. Clean design for walls, ceilings, and furniture.",
-      "usp1": "Easy to Handle",
-      "usp2": "People-Friendly",
-      "usp3": "Endless Possibilities"
+      "tagline": "Sustainable Silence, Infinite Possibilities",
+      "description": "Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight panels deliver outstanding acoustic performance with Class A absorption.",
+      "usp1": "100% Recyclable PET",
+      "usp2": "αw up to 1.00",
+      "usp3": "Only 3-4 kg/m²"
     },
     "overview": {
-      "tag": "WHY rPET PANEL",
-      "title": "Five Reasons to Choose rPET",
+      "tag": "CIRCULAR DESIGN",
+      "title": "From Bottles to Better Spaces",
       "reason1Title": "Easy to Handle",
       "reason1": "Lightweight panels that anyone can install without heavy equipment",
       "reason2Title": "People-Friendly",
@@ -1228,7 +1279,12 @@
       "reason4Title": "Express Your Style",
       "reason4": "50+ colors to complement any interior design vision",
       "reason5Title": "Want More Options?",
-      "reason5": "Combine with rPET Groove for a complete design system"
+      "reason5": "Combine with rPET Groove for a complete design system",
+      "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. A truly circular product that contributes to a more sustainable built environment.",
+      "feature1": "Made from up to 50% recycled PET bottles",
+      "feature2": "100% recyclable at end of life",
+      "feature3": "Lightweight: only 3-4 kg/m²",
+      "feature4": "Free from chemical binders"
     },
     "process": {
       "tag": "HOW IT'S MADE",
@@ -1236,23 +1292,31 @@
       "description": "rPET Panel can be processed exactly like MDF. Cut, mill, drill, bend—your fabricator will need zero new tools or techniques."
     },
     "workability": {
-      "tag": "WORKABILITY",
-      "step1Title": "CNC Cutting & Milling",
+      "tag": "EASY TO WORK WITH",
+      "step1Title": "Sawing",
       "step1": "Precision shapes and profiles with standard CNC equipment",
-      "step2Title": "Drilling & Screwing",
+      "step2Title": "CNC Cutting & Milling",
       "step2": "Direct fixings without pre-drilling or special anchors",
-      "step3Title": "V-Cut Bending",
-      "step3": "Create curves and angles with simple V-cut technique"
+      "step3Title": "Drilling & Screwing",
+      "step3": "Create curves and angles with simple V-cut technique",
+      "title": "Design, Construct, Build",
+      "description": "rPET - Panel combines the workability of MDF with incredibly light weight.",
+      "step1Desc": "Manual or electric—clean cuts every time",
+      "step2Desc": "Precision shapes and custom profiles",
+      "step3Desc": "Direct fixings without special anchors",
+      "step4Title": "V-Cut Bending",
+      "step4Desc": "Create curves and angles with V-cut technique"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
-      "title": "Best-in-Class Sound Absorption",
+      "title": "Process Like MDF, Weighs Like Nothing",
       "benefit1Title": "Speech Clarity",
-      "benefit1": "Reduce reverberation for clearer communication",
+      "benefit1": "Dramatically improve intelligibility in meeting rooms and classrooms",
       "benefit2Title": "Reduced Stress",
-      "benefit2": "Lower noise levels reduce cognitive load and stress",
-      "benefit3Title": "Process Like MDF, Weighs Like Nothing",
-      "benefit3": "High performance in a lightweight, easy-to-handle format"
+      "benefit2": "Create calmer environments that boost wellbeing and productivity",
+      "benefit3Title": "Privacy",
+      "benefit3": "Reduce sound transmission between spaces for confidential conversations",
+      "description": "rPET - Panel achieves the maximum possible acoustic performance. The ultimate acoustic absorber for any interior."
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -1260,7 +1324,9 @@
       "cert1": "Up to 50% Recycled Content",
       "cert2": "100% Recyclable",
       "cert3": "OEKO-TEX® Standard 100",
-      "cert4": "Class A+ Emissions"
+      "cert4": "Class A+ Emissions",
+      "badge1Desc": "Made from post-consumer PET bottles",
+      "badge2Desc": "Full material recovery at end of life"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1273,24 +1339,57 @@
     },
     "sample": {
       "title": "Request Your Sample Package",
-      "description": "See and feel the quality of rPET Panel before you specify. Our sample kit includes color swatches and a full-size panel sample."
+      "description": "Experience the quality of rPET - Panel firsthand. Our sample package includes color swatches and a panel sample.",
+      "tag": "GET STARTED"
     },
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projects & Installations"
+    },
+    "why": {
+      "tag": "WHY rPET - PANEL",
+      "description": "Discover why architects, designers, and acoustic consultants choose rPET - Panel for their projects.",
+      "reason1Title": "Ecoustic",
+      "reason1": "Made from recycled PET bottles, fully recyclable, and contributing to healthier indoor environments.",
+      "reason2Title": "Excellent",
+      "reason2": "Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.",
+      "reason3Title": "Easy to Handle",
+      "reason3": "Lightweight and stable. Cut, drill, mill, and install with standard tools. No specialist required.",
+      "reason4Title": "People-Friendly",
+      "reason4": "Anti-static, skin-friendly, anti-allergenic. No VOC or formaldehyde emissions.",
+      "reason5Title": "Endless Possibilities",
+      "reason5": "CNC cuttable, millable, drillable—use it like MDF with none of the downsides."
+    },
+    "colors": {
+      "tag": "COLOR OPTIONS",
+      "title": "Express Your Style",
+      "description": "Choose from 5 sophisticated standard colors or specify from our extended palette. All base colors can be combined with finishing layers for a fully custom look."
+    },
+    "applications": {
+      "tag": "APPLICATIONS",
+      "title": "Applications",
+      "description": "Every building and every room is unique. rPET - Panel adapts to your needs."
     }
   },
   "rwoodGroovePage": {
     "hero": {
       "tag": "ACOUSTIC WOOD PANELS",
       "title": "rWood - Groove",
-      "tagline": "Where Nature Meets Design",
-      "description": "Premium grooved acoustic wood panels. FSC-certified wood veneer on a recycled acoustic felt core—combining natural beauty with exceptional Class A sound absorption."
+      "tagline": "Natural Beauty, Perfect Acoustics",
+      "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
+      "usp1": "FSC® Certified Wood",
+      "usp2": "Class A Absorption",
+      "usp3": "Made in Europe"
     },
     "overview": {
-      "tag": "DESIGN OPTIONS",
-      "title": "Choose Your Style",
-      "subtitle": "Premium Finishes"
+      "tag": "CRAFTSMANSHIP",
+      "title": "Where Nature Meets Design",
+      "subtitle": "Premium Finishes",
+      "description": "rWood - Groove panels transform any room into a sophisticated acoustic environment. The combination of precision-milled grooves and premium wood veneers creates a surface that is both visually stunning and acoustically effective.",
+      "feature1": "Premium A-grade oak and walnut veneers",
+      "feature2": "Integrated acoustic felt backing",
+      "feature3": "Seamless panel-to-panel connection",
+      "feature4": "Suitable for walls and ceilings"
     },
     "oakCollection": {
       "title": "Oak Collection",
@@ -1304,31 +1403,32 @@
       "tag": "PERFORMANCE",
       "title": "Superior Sound Absorption",
       "benefit1Title": "Reduced Reverberation",
-      "benefit1": "Shorter echo times for clearer, more pleasant sound",
+      "benefit1": "Control echo and improve speech clarity in any room",
       "benefit2Title": "Increased Comfort",
-      "benefit2": "More pleasant acoustic environment for occupants",
+      "benefit2": "Create calmer, more peaceful environments",
       "benefit3Title": "Tested Performance",
-      "benefit3": "Laboratory certified to EN ISO 354"
+      "benefit3": "Independently verified acoustic data"
     },
     "installation": {
-      "tag": "INSTALLATION",
+      "tag": "EASY INSTALL",
       "title": "Seamless Installation",
       "step1Title": "Prepare Surface",
-      "step1Desc": "Ensure wall/ceiling is clean, dry, and level",
+      "step1Desc": "Mount battens or apply adhesive to clean, dry surface",
       "step2Title": "Position First Panel",
-      "step2Desc": "Start from reference point for perfect alignment",
+      "step2Desc": "Start from corner, ensure level alignment",
       "step3Title": "Connect Panels",
-      "step3Desc": "Tongue-and-groove system for seamless joins",
+      "step3Desc": "Tongue-and-groove system locks panels together",
       "step4Title": "Complete & Finish",
-      "step4Desc": "Add end mouldings and corner profiles"
+      "step4Desc": "Add profiles and trim as required",
+      "description": "rWood - Groove panels feature an innovative tongue-and-groove connection for fast and easy installation."
     },
     "sustainability": {
-      "tag": "RESPONSIBLY SOURCED",
-      "title": "Built with Integrity",
+      "tag": "SUSTAINABILITY",
+      "title": "Responsibly Sourced",
       "badge1": "FSC® Certified",
-      "badge1Desc": "Responsibly sourced wood",
+      "badge1Desc": "Wood from responsibly managed forests",
       "badge2": "Recycled Felt",
-      "badge2Desc": "Acoustic core from recycled fibers",
+      "badge2Desc": "Acoustic backing from recycled materials",
       "badge3": "European Production",
       "badge3Desc": "Made in Belgium",
       "badge4": "EPD Available",
@@ -1340,30 +1440,53 @@
       "acousticsTitle": "Acoustic Performance",
       "fireTitle": "Fire Safety",
       "certsTitle": "Certifications",
-      "applicationsTitle": "Applications"
+      "applicationsTitle": "Applications",
+      "dimensionsTitle": "Dimensions",
+      "materialsTitle": "Materials"
     },
     "accessories": {
-      "tag": "ACCESSORIES",
-      "title": "Complete the Look",
+      "tag": "COMPLETE THE LOOK",
+      "title": "Accessories",
       "endMouldings": "End Mouldings",
-      "cornerProfiles": "Corner Profiles"
+      "cornerProfiles": "Corner Profiles",
+      "description": "Professional finishing touches for a perfect result.",
+      "item1Title": "End Mouldings",
+      "item1Desc": "Clean edges where panels meet other surfaces",
+      "item2Title": "Corner Profiles",
+      "item2Desc": "Seamless internal and external corner solutions"
     },
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projects & Installations"
+    },
+    "patterns": {
+      "tag": "DESIGN OPTIONS",
+      "title": "Premium Finishes",
+      "description": "Four distinct groove patterns to match any architectural vision."
+    },
+    "materials": {
+      "tag": "MATERIALS",
+      "oilFinishesTitle": "Oil Finishes",
+      "oilFinishesDesc": "Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.",
+      "walnutTitle": "Walnut",
+      "walnutDesc": "Rich, warm tones with distinctive grain patterns. The premium choice for high-end interiors."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "ACOUSTIC WOOD PANELS",
+      "tag": "PERFORATED ACOUSTIC WOOD PANELS",
       "title": "rWood - Perf",
-      "tagline": "The Classic Acoustic Solution",
-      "description": "Perforated acoustic wood panels. The proven solution for architects and designers who demand both visual refinement and outstanding acoustic performance."
+      "tagline": "Precision Perforations, Maximum Absorption",
+      "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. FSC-certified veneers over a fire-retardant core with concealed mounting system.",
+      "usp1": "Round Perforations",
+      "usp2": "B2-s1, d0 Fire Rated",
+      "usp3": "Up to Class B"
     },
     "patterns": {
-      "tag": "DESIGN OPTIONS",
+      "tag": "PERFORATION PATTERNS",
       "title": "Choose Your Pattern",
-      "description": "Multiple perforation patterns for different acoustic tuning and visual effects. From fine micro-perforations to bold standard patterns."
+      "description": "Four drilled perforation patterns with calibrated open areas for different acoustic performance levels.",
+      "coreMatchTitle": "Match the core to your veneer to make perforations disappear—or make them a design feature."
     },
     "coreColor": {
       "title": "Core Colour",
@@ -1373,40 +1496,46 @@
       "tag": "SURFACES",
       "title": "Premium Wood Surfaces",
       "natureVeneers": "Nature Veneers",
-      "natureDesc": "Natural wood species including oak, walnut, beech, and more.",
+      "natureDesc": "Lively variations and characteristic expression associated with each wood species.",
       "geminiVeneers": "Gemini Veneers",
-      "geminiDesc": "Designer veneers with unique grain patterns and special treatments.",
-      "finishes": "Surface Finishes"
+      "geminiDesc": "Even colour tone and structure for a more harmonious, uniform appearance.",
+      "finishes": "Surface Finishes",
+      "description": "Every rWood - Perf panel is produced with over-veneered edges. Two distinct veneer families available."
     },
     "acoustics": {
-      "tag": "ENGINEERED FOR SOUND",
+      "tag": "PERFORMANCE",
       "title": "Engineered for Sound",
       "benefit1Title": "Broadband Absorption",
-      "benefit1": "Effective across a wide frequency range including low frequencies",
+      "benefit1": "Effective across the full frequency spectrum, from low to high",
       "benefit2Title": "Highest Fire Safety",
-      "benefit2": "A2-s1,d0 fire rating with non-combustible core option",
+      "benefit2": "B-s1, d0—the highest achievable class for wooden panels",
       "benefit3Title": "Tunable Performance",
-      "benefit3": "Select perforation % and backing to optimize for your space"
+      "benefit3": "Four perforation patterns for tailored acoustic solutions",
+      "description": "Precision-drilled perforations allow sound waves to pass through the decorative wood surface into the highly absorbent core beneath."
     },
     "installation": {
-      "tag": "INSTALLATION",
+      "tag": "CONCEALED MOUNTING",
       "title": "Seamless Installation",
       "step1Title": "Mount Subframe",
-      "step1Desc": "Install aluminium or timber subframe to wall or ceiling",
+      "step1Desc": "Install metal rails to wall or ceiling structure",
       "step2Title": "Place Insulation",
-      "step2Desc": "Add acoustic infill for enhanced low-frequency absorption",
+      "step2Desc": "Add mineral wool in the cavity for optimal absorption",
       "step3Title": "Clip Panels",
-      "step3Desc": "Hidden clip system for seamless, tool-free panel fixing",
+      "step3Desc": "Snap panels into the concealed clip system",
       "step4Title": "Perfect Alignment",
-      "step4Desc": "Adjustment system ensures perfectly flush installation"
+      "step4Desc": "Over-veneered edges create seamless joints",
+      "description": "rWood - Perf panels are installed with a concealed clip system for an invisible, seamless look."
     },
     "sustainability": {
-      "tag": "BUILT RESPONSIBLY",
+      "tag": "SUSTAINABILITY",
       "title": "Built to Last, Built Responsibly",
       "badge1": "FSC® Certified",
       "badge2": "17% Recycled Content",
       "badge3": "European Production",
-      "badge4": "Ultra-Low Emissions"
+      "badge4": "Ultra-Low Emissions",
+      "badge1Desc": "Wood from responsibly managed forests",
+      "badge2Desc": "Post-consumer recycled material in core",
+      "badge3Desc": "Made in Belgium"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1420,6 +1549,23 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projects & Installations"
+    },
+    "overview": {
+      "tag": "PROVEN PERFORMANCE",
+      "description": "rWood - Perf panels are one of the most effective acoustic wall solutions available. Precision-drilled round perforations allow sound to pass through the wood veneer surface into the acoustic core.",
+      "feature1": "Fire Retardant Medium Density Fiberboard core (B2-s1, d0)",
+      "feature2": "Over-veneered edges for seamless joints",
+      "feature3": "Light or dark core for pattern discretion",
+      "feature4": "Custom formats up to 3050 × 1220 mm"
+    },
+    "accessories": {
+      "tag": "COMPLETE THE LOOK",
+      "title": "Accessories",
+      "description": "Professional finishing elements for a flawless result.",
+      "item1Title": "Edge Profiles",
+      "item1Desc": "Matching profiles for clean panel terminations",
+      "item2Title": "Corner Solutions",
+      "item2Desc": "Seamless internal and external corner transitions"
     }
   },
   "rwoodMicroPage": {
@@ -1533,13 +1679,13 @@
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "ACOUSTIC WOOD PANELS",
+      "tag": "CRAFTSMANSHIP",
       "title": "rWood - Panel",
-      "tagline": "Nature, Refined",
-      "description": "Smooth, uninterrupted wood veneer panels with high-performance acoustic backing. Ten curated species. Furniture-grade construction. Where natural beauty meets functional performance.",
-      "usp1": "10 Curated Wood Veneers",
-      "usp2": "Touch & Protection",
-      "usp3": "Key Advantages"
+      "tagline": "The Elegance of Real Wood. Ready to Use.",
+      "description": "Premium veneered MDF panels, brushed, stained and lacquered — requiring no additional finishing. The authentic beauty of solid wood without compromise.",
+      "usp1": "FSC® Certified",
+      "usp2": "Prefinished & Ready to Use",
+      "usp3": "Made in Europe"
     },
     "construction": {
       "tag": "CONSTRUCTION",
@@ -1558,7 +1704,8 @@
     },
     "finishes": {
       "title": "Touch & Protection",
-      "description": "Factory-applied clear lacquer protects the veneer while preserving the natural feel of the wood."
+      "description": "The right finish brings out the best in every wood species.",
+      "tag": "SURFACE FINISHES"
     },
     "advantages": {
       "tag": "ADVANTAGES",
@@ -1570,29 +1717,38 @@
     },
     "applications": {
       "tag": "APPLICATIONS",
-      "title": "Where It Shines",
+      "title": "Limitless Possibilities",
       "app1Title": "Furniture & Cabinetry",
       "app1": "Seamlessly match acoustic panels to fitted furniture",
       "app2Title": "Wall Cladding",
       "app2": "Feature walls with natural warmth and acoustic benefit",
-      "app3Title": "Retail & Hospitality",
-      "app3": "Premium finishes for high-footfall commercial spaces"
+      "app3Title": "Ceilings",
+      "app3": "Premium finishes for high-footfall commercial spaces",
+      "description": "From bespoke cabinetry to full-height feature walls—rWood - Panel adapts to any creative vision.",
+      "app1Desc": "Kitchen fronts, wardrobes, reception desks, shelving and bespoke furniture.",
+      "app2Desc": "Full-height feature walls, wainscoting and accent panels.",
+      "app3Desc": "Suspended ceiling panels and integrated ceiling systems.",
+      "app4Title": "Retail & Hospitality",
+      "app4Desc": "Premium finishes for high-footfall commercial spaces."
     },
     "sustainability": {
-      "tag": "RESPONSIBLY MADE",
+      "tag": "SUSTAINABILITY",
       "title": "Responsibly Made",
       "badge1": "FSC® Certified",
       "badge2": "Circular Take-Back",
       "badge3": "European Production",
       "badge4": "EPD Available",
-      "badge5": "Green Energy"
+      "badge5": "Green Energy",
+      "badge1Desc": "All wood from responsibly managed forests",
+      "badge2Desc": "Free end-of-life panel return and recycling"
     },
     "specs": {
       "tag": "TECHNICAL",
       "title": "Specifications",
       "compositionTitle": "Composition",
       "fireTitle": "Fire Safety",
-      "certsTitle": "Certifications"
+      "certsTitle": "Certifications",
+      "dimensionsTitle": "Dimensions"
     },
     "related": {
       "tag": "MATCHING PRODUCTS",
@@ -1604,6 +1760,145 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projects & Interiors"
+    },
+    "overview": {
+      "tag": "CRAFTSMANSHIP",
+      "title": "Nature, Refined",
+      "description": "rWood - Panel brings the warmth and character of solid wood to acoustic spaces. Each panel is finished in our Belgian facility using a precision multi-layer lacquer process."
+    },
+    "anatomy": {
+      "tag": "ANATOMY",
+      "layer1": "Top Veneer Layer",
+      "layer1Desc": "A-grade real wood veneer, brushed, stained and protected with 6 layers of UV-cured lacquer",
+      "layer2": "High-Density MDF Core",
+      "layer2Desc": "700 kg/m³ FSC® certified MDF. Available in standard and moisture-resistant grades",
+      "layer3": "Balance Veneer Layer",
+      "layer3Desc": "Matching veneer backing ensures dimensional stability and prevents warping",
+      "keyAdvTitle": "Key Advantages"
+    },
+    "collection": {
+      "tag": "THE COLLECTION",
+      "title": "10 Curated Wood Veneers",
+      "description": "From serene Scandinavian birch to dramatic American walnut—each species selected for grain character and FSC certification."
+    },
+    "dimensions": {
+      "tag": "DIMENSIONS",
+      "title": "Panel Formats",
+      "description": "Three formats to cover every application — from full-height wall cladding to furniture panels."
+    },
+    "accessories": {
+      "tag": "COMPLETE THE LOOK",
+      "title": "Matching Products & Accessories",
+      "description": "Achieve design continuity with coordinated Re-Sound products.",
+      "item1Title": "rWood - Groove",
+      "item1Desc": "Slatted acoustic panels in matching wood veneers for walls and ceilings.",
+      "item2Title": "Matching Edgebanding",
+      "item2Desc": "Pre-finished veneer edgebanding in every colour for cabinet and furniture work.",
+      "item3Title": "Free Samples",
+      "item3Desc": "Request samples of any veneer and finish combination."
+    }
+  },
+  "rpetFlexGroovePage": {
+    "hero": {
+      "tag": "FLEXIBLE ACOUSTIC PANELS",
+      "title": "rPET Flex-Groove",
+      "tagline": "Bend Without Breaking",
+      "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cuts, Flex-Groove panels bend seamlessly to follow any radius.",
+      "usp1": "Min. Radius 500mm",
+      "usp2": "Fire Retardant",
+      "usp3": "100% Recycled PET"
+    },
+    "overview": {
+      "tag": "INNOVATION",
+      "title": "Designed for Curved Surfaces",
+      "description": "Flex-Groove panels provide a versatile acoustic solution for designers who want to incorporate acoustic treatment into curved or irregular surfaces.",
+      "feature1": "Adapts to any curved surface",
+      "feature2": "Works with inner and outer radii",
+      "feature3": "Ribbed texture adds depth and rhythm",
+      "feature4": "Sound-dampening properties built-in"
+    },
+    "technology": {
+      "tag": "TECHNOLOGY",
+      "title": "V-Cut Flexibility System",
+      "description": "Each panel is incised with precision V-cuts, allowing the panel to bend along a controlled arc without cracking or distorting.",
+      "minRadius": "Minimum Bending Radius",
+      "feature1Title": "Precision V-Cut",
+      "feature1Desc": "Engineered grooves for controlled flexibility",
+      "feature2Title": "Seamless Curves",
+      "feature2Desc": "Smooth transitions on any curved surface",
+      "feature3Title": "Minimal Waste",
+      "feature3Desc": "Efficient design reduces cutting waste"
+    },
+    "colors": {
+      "tag": "REFINED COLLECTION",
+      "title": "12 Curated Colors",
+      "description": "Our carefully curated color palette offers versatile options to suit any interior.",
+      "grooveDir": "Groove Direction"
+    },
+    "acoustics": {
+      "tag": "PERFORMANCE",
+      "title": "Sound-Dampening Properties",
+      "description": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide acoustic dampening wherever they are installed.",
+      "feature1Title": "Sound Dampening",
+      "feature1Desc": "Reduces echo and reverberation",
+      "feature2Title": "Fire Retardant",
+      "feature2Desc": "Built-in fire safety properties",
+      "feature3Title": "100% Recycled",
+      "feature3Desc": "Made from recycled plastic bottles"
+    },
+    "installation": {
+      "tag": "EASY INSTALL",
+      "title": "Secure Mounting, Simple Installation",
+      "description": "Designed to span standard floor-to-ceiling heights in a single panel.",
+      "step1Title": "Prepare Surface",
+      "step1Desc": "Ensure the curved surface is clean and ready for mounting",
+      "step2Title": "Apply Adhesive",
+      "step2Desc": "Use recommended adhesive on the panel back",
+      "step3Title": "Position & Bend",
+      "step3Desc": "Gently bend the panel to follow the curved surface",
+      "step4Title": "Secure & Finish",
+      "step4Desc": "Press firmly to ensure full adhesion along the curve"
+    },
+    "sustainability": {
+      "tag": "SUSTAINABILITY",
+      "title": "From Bottles to Beautiful Spaces",
+      "description": "Every Flex-Groove panel is crafted from 100% recycled PET felt, making it a truly sustainable choice.",
+      "badge1": "Recycled PET",
+      "badge1Desc": "Made from recycled plastic bottles",
+      "badge2": "Fully Recyclable",
+      "badge2Desc": "Can be recycled at end of life",
+      "badge3": "European Production",
+      "badge4": "Low VOC"
+    },
+    "specs": {
+      "tag": "TECHNICAL",
+      "title": "Specifications",
+      "dimensionsTitle": "Dimensions",
+      "flexibilityTitle": "Flexibility",
+      "materialTitle": "Material",
+      "fireTitle": "Fire Safety",
+      "certsTitle": "Certifications"
+    },
+    "gallery": {
+      "tag": "INSPIRATION",
+      "title": "Projects & Applications"
+    },
+    "downloads": {
+      "tag": "RESOURCES",
+      "title": "Downloads",
+      "perforationGuide": "Flex-Groove Guide"
+    },
+    "applications": {
+      "tag": "IDEAL FOR",
+      "title": "Perfect Applications",
+      "description": "Wherever curves meet acoustics",
+      "app1": "Wrap structural columns with seamless acoustic coverage",
+      "app2": "Follow organic wall shapes for continuous coverage",
+      "app3": "Create acoustic curved feature walls",
+      "app4": "Reception areas, hospitality, retail"
+    },
+    "cta": {
+      "title": "Ready to Curve Your Acoustics?"
     }
   }
 }
