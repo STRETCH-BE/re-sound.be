@@ -1001,7 +1001,7 @@
       "classValue": "Klasse A",
       "nrcValue": "0.90",
       "materialsTitle": "Materialien",
-      "coreValue": "Hochdichtes recyceltes Textil",
+      "coreValue": "Recycelte Textilfasern",
       "coverValue": "Recycelter Stoff",
       "fireTitle": "Brandschutz",
       "fireRatingValue": "B-s1, d0",
@@ -1013,7 +1013,9 @@
       "mountingValue": "Hakenschienensystem",
       "toolsValue": "Bohrmaschine, Wasserwaage",
       "maxCoverageTitle": "Maximale Abdeckung",
-      "maxCoverageDesc": "Großformat für maximale Wirkung"
+      "maxCoverageDesc": "Großformat für maximale Wirkung",
+      "binderValue": "Biobasierter Klebstoff",
+      "coverValue2": "Recycelter Stoff"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1025,7 +1027,7 @@
       "tag": "AKUSTISCHE RAUMTEILER",
       "title": "Divide",
       "tagline": "Einrasten für Stil, Teilen für Design",
-      "description": "Lernen Sie Re-Sound Divide kennen — die erste freistehende Akustiktrennwand für flexiblen Einsatz. Teilen Sie Ihren Raum, schaffen Sie Privatzonen und eliminieren Sie Hintergrundgeräusche.",
+      "description": "Lernen Sie Re-Sound Divide kennen — die erste freistehende Akustiktrennwand für flexiblen Einsatz.",
       "usp1": "Magnetverbindung",
       "usp2": "Vollständig Modular",
       "usp3": "Freistehend",
@@ -1037,7 +1039,7 @@
     "overview": {
       "tag": "INNOVATION",
       "title": "Gestalten Sie Ihren Raum Neu",
-      "description": "Re-Sound Divide ist das erste freistehende Akustikprodukt für maximale Flexibilität. Schaffen Sie Privatzonen, teilen Sie offene Räume und kontrollieren Sie Hintergrundgeräusche.",
+      "description": "Re-Sound Divide ist das erste freistehende Akustikprodukt für maximale Flexibilität. Schaffen Sie Privatzonen, teilen Sie offene Räume auf.",
       "feature1": "Freistehend — keine Installation erforderlich",
       "feature2": "Magnetisches Verbindungssystem",
       "feature3": "Leicht und einfach zu bewegen",
@@ -1046,7 +1048,7 @@
     "base": {
       "tag": "STABILITÄT",
       "title": "Integrierte Basis",
-      "description": "Dank der integrierten Basis steht Divide immer stabil und frei auf jedem Boden.",
+      "description": "Dank der integrierten Basis steht Divide immer stabil und frei auf jedem Boden. Die leichten Module lassen sich leicht bewegen.",
       "feature1": "Stabil auf jeder Oberfläche ohne Befestigung",
       "feature2": "Leicht zu bewegen und neu zu positionieren",
       "feature3": "Weiche Basis schützt alle Bodenbeläge",
@@ -1061,22 +1063,27 @@
     "magnetic": {
       "tag": "MÜHELOS",
       "title": "Magnetische Verbindung",
-      "description": "Die Module verbinden sich mühelos über dezente Magnete, die in den Stoff integriert sind. Montieren und demontieren Sie mit Leichtigkeit — unsichtbar, dezent verarbeitet, aber stark genug für sorgenfreie Nutzung. Kein Werkzeug, keine Komplexität, einfach einrasten und los."
+      "description": "Die Module verbinden sich mühelos über dezente Magnete im Stoff. Einfach zwei Module zusammenklappen — unsichtbar aber stark.",
+      "snapLabel": "Zusammenklappen"
     },
     "modular": {
       "tag": "FLEXIBILITÄT",
       "title": "Modulares System",
-      "description": "Bestimmen Sie selbst das Layout Ihres Raums. Divide ist ein modulares System, das sich Ihren Bedürfnissen anpasst. Ob Sie sich für eine lange Raumteilung oder mehrere kurze Konfigurationen entscheiden — lassen Sie Ihrer Kreativität freien Lauf."
+      "description": "Bestimmen Sie selbst das Layout. Divide passt sich Ihren Bedürfnissen an.",
+      "config1": "Einfach",
+      "config2": "Doppel",
+      "config3": "Dreifach",
+      "config4": "Ecke"
     },
     "features": {
       "tag": "NACHHALTIGKEIT",
       "title": "Kreislauffähig Gestaltet",
-      "description": "Wie alle Re-Sound-Produkte wurde Divide sorgfältig mit Kreislauffähigkeit als Kern entworfen. Hergestellt aus recycelten Textilien und Industrieabfällen, trägt es zu einer nachhaltigeren Zukunft bei. Am Lebensende geben Sie es uns kostenlos zum Recyceln zurück."
+      "description": "Wie alle Re-Sound-Produkte wurde Divide mit Kreislauffähigkeit als Kern entworfen. Aus recycelten Textilien hergestellt."
     },
     "acoustics": {
       "tag": "LEISTUNG",
       "title": "Beidseitige Schallabsorption",
-      "description": "Re-Sound Divide absorbiert Schall von beiden Seiten, was es perfekt für die Schaffung akustischer Privatsphäre in offenen Umgebungen macht. Hören Sie auf, von Hintergrundgeräuschen gestört zu werden, und schaffen Sie fokussierte, produktive Räume.",
+      "description": "Re-Sound Divide absorbiert Schall von beiden Seiten, ideal für akustische Privatsphäre in offenen Umgebungen.",
       "benefit1Title": "Lärmreduzierung",
       "benefit1": "Ablenkende Hintergrundgespräche blockieren",
       "benefit2Title": "Privatzonen",
@@ -1106,10 +1113,11 @@
       "tag": "RECYCELTE PET-AKUSTIKPANEELE",
       "title": "rPET - Groove",
       "tagline": "Von Flaschen zur Stille",
-      "description": "Verwandeln Sie Ihren Raum mit rPET - Groove Akustikpaneelen. Aus 100% recycelten Kunststoffflaschen hergestellt, vereinen diese eleganten Rillenp aneele zeitgemäßes Design mit außergewöhnlicher Schallabsorption.",
+      "description": "Verwandeln Sie Ihren Raum mit rPET - Groove Akustikpaneelen. Aus 100% recycelten Kunststoffflaschen hergestellt, vereinen diese eleganten Rillenpaneele zeitgemäßes Design mit außergewöhnlicher Schallabsorption. Effizienz trifft Eleganz.",
       "usp1": "100% Recyceltes PET",
       "usp2": "Bis zu NRC 0.90",
-      "usp3": "12 Designerfarben"
+      "usp3": "12 Designerfarben",
+      "colorSelector": "Farbe Wählen"
     },
     "overview": {
       "tag": "KREISLAUFDESIGN",
@@ -1195,7 +1203,9 @@
       "badge4": "Hergestellt in Belgien",
       "recycledBottlesLabel": "Recycelte Flaschen pro Panel",
       "badge1Desc": "Aus post-consumer PET-Flaschen hergestellt",
-      "badge2Desc": "Kann am Lebensende recycelt werden"
+      "badge2Desc": "Kann am Lebensende recycelt werden",
+      "badge3Desc": "Wir sammeln Paneele zum Recyceln",
+      "badge4Desc": "Kurze Lieferketten, niedrige Emissionen"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1262,7 +1272,7 @@
       "tag": "RECYCELTE PET-AKUSTIKPANEELE",
       "title": "rPET - Panel",
       "tagline": "Nachhaltige Stille, Unendliche Möglichkeiten",
-      "description": "Vielseitige Akustikpaneele aus 100% recycelten PET-Flaschen. Bearbeitbar wie MDF, aber leicht und menschenfreundlich. Klares Design für Wände, Decken und Möbel.",
+      "description": "Verwandeln Sie jeden Raum mit rPET - Panel Akustikpaneelen. Aus 100% recycelten PET-Flaschen hergestellt, liefern diese leichten, aber leistungsstarken Schallabsorber maximale Akustikleistung bei minimaler Umweltbelastung.",
       "usp1": "100% Recycelbares PET",
       "usp2": "αw bis 1,00",
       "usp3": "Nur 3-4 kg/m²"
@@ -1376,7 +1386,7 @@
       "tag": "AKUSTISCHE HOLZPANEELE",
       "title": "rWood - Groove",
       "tagline": "Natürliche Schönheit, Perfekte Akustik",
-      "description": "Premium gerillte Akustik-Holzpaneele. FSC-zertifiziertes Holzfurnier auf einem recycelten Akustikfilzkern — natürliche Schönheit kombiniert mit außergewöhnlicher Klasse A Schallabsorption.",
+      "description": "Bringen Sie natürliche Wärme und anspruchsvollen Stil in jeden Raum mit rWood - Groove Akustikpaneelen. Premium Eichen- und Walnussfurniere kombiniert mit schallabsorbierendem Filzrücken schaffen Harmonie zwischen Ästhetik und Akustik.",
       "usp1": "FSC® Zertifiziertes Holz",
       "usp2": "Klasse A Absorption",
       "usp3": "Hergestellt in Europa"
@@ -1417,9 +1427,9 @@
       "step2Title": "Erstes Panel Setzen",
       "step2Desc": "Von der Ecke beginnen, Niveau-Ausrichtung sicherstellen",
       "step3Title": "Paneele Verbinden",
-      "step3Desc": "Nut-und-Feder-System arretiert Paneele zusammen",
+      "step3Desc": "Feder in Nut schieben für nahtlose Verbindung",
       "step4Title": "Abschließen",
-      "step4Desc": "Profile und Abschlussleisten hinzufügen",
+      "step4Desc": "Endprofile für professionelles Ergebnis hinzufügen",
       "description": "rWood - Groove Paneele verfügen über eine innovative Nut-und-Feder-Verbindung für schnelle und einfache Montage."
     },
     "sustainability": {
@@ -1430,7 +1440,7 @@
       "badge2": "Recycelter Filz",
       "badge2Desc": "Akustikrücken aus recycelten Materialien",
       "badge3": "Europäische Produktion",
-      "badge3Desc": "Hergestellt in Belgien",
+      "badge3Desc": "Reduzierte Transportemissionen",
       "badge4": "EPD Verfügbar",
       "badge4Desc": "Vollständige Umweltproduktdeklaration"
     },
@@ -1477,7 +1487,7 @@
       "tag": "PERFORIERTE AKUSTISCHE HOLZPANEELE",
       "title": "rWood - Perf",
       "tagline": "Präzisionsperforationen, Maximale Absorption",
-      "description": "Perforierte Akustik-Holzpaneele. Die bewährte Lösung für Architekten und Designer, die sowohl visuelle Raffinesse als auch hervorragende Akustikleistung fordern.",
+      "description": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten bieten höchste Brandschutz- und Akustikkontrolle.",
       "usp1": "Runde Perforationen",
       "usp2": "Brandschutz B2-s1, d0",
       "usp3": "Bis Klasse B"
@@ -1486,7 +1496,8 @@
       "tag": "PERFORATIONSMUSTER",
       "title": "Wählen Sie Ihr Muster",
       "description": "Mehrere Perforationsmuster für verschiedene akustische Abstimmung und visuelle Effekte. Von feinen Mikro-Perforationen bis zu markanten Standardmustern.",
-      "coreMatchTitle": "Kern zum Furnier abstimmen, um Perforationen verschwinden zu lassen — oder sie zum Designelement machen."
+      "coreMatchTitle": "Kern zum Furnier abstimmen, um Perforationen verschwinden zu lassen — oder sie zum Designelement machen.",
+      "coreColorTitle": "Kernfarbe"
     },
     "coreColor": {
       "title": "Kernfarbe",
@@ -1535,7 +1546,8 @@
       "badge4": "Ultra-Niedrige Emissionen",
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Post-consumer Recyclingmaterial im Kern",
-      "badge3Desc": "Hergestellt in Belgien"
+      "badge3Desc": "Erneuerbare Energiequellen, kurze Lieferketten",
+      "badge4Desc": "Kein zugesetztes Formaldehyd, EPD verfügbar"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1686,10 +1698,12 @@
       "tag": "HANDWERKSKUNST",
       "title": "rWood - Panel",
       "tagline": "Die Eleganz von Echtem Holz. Gebrauchsfertig.",
-      "description": "Vorveredelete MDF-Paneele, gebürstet, gebeizt und lackiert — kein weiteres Finishing erforderlich. Die authentische Schönheit von Massivholz ohne Kompromisse, für Architekten, Designer und Tischler, die Perfektion fordern.",
+      "description": "Vorbehandelte MDF-Paneele, gebürstet, gebeizt und lackiert — keine zusätzliche Veredelung erforderlich. Die authentische Schönheit von Massivholz ohne Kompromisse.",
       "usp1": "FSC® Zertifiziert",
       "usp2": "Vorbehandelt & Gebrauchsfertig",
-      "usp3": "Hergestellt in Europa"
+      "usp3": "Hergestellt in Europa",
+      "ctaSecondary": "Kollektion Entdecken",
+      "colorSelector": "Furnier Wählen"
     },
     "construction": {
       "tag": "KONSTRUKTION",
@@ -1768,7 +1782,12 @@
     "overview": {
       "tag": "HANDWERKSKUNST",
       "title": "Natur, Verfeinert",
-      "description": "rWood - Panel bringt die Wärme und den Charakter von Massivholz in akustische Räume. Jedes Panel wird in unserer belgischen Anlage mit einem Präzisions-Mehrlagen-Lackierverfahren fertiggestellt."
+      "description": "rWood - Panel bringt die Wärme und den Charakter von Massivholz in akustische Räume. Jedes Panel wird in unserer belgischen Anlage mit einem Präzisions-Mehrlagen-Lackierverfahren fertiggestellt.",
+      "feature1": "Premium A-Grad Furniere — Eiche, Walnuss, Esche, Kirsche und Birke",
+      "feature2": "6-Schicht UV-Klarlack für Kratz- und Fleckenbeständigkeit",
+      "feature3": "Hochdichter MDF-Kern (700 kg/m³) für strukturelle Integrität",
+      "feature4": "Ausgewogene Konstruktion — Furnier auf beiden Seiten für Stabilität",
+      "feature5": "Keine zusätzliche Veredelung erforderlich — sofort einsatzbereit"
     },
     "anatomy": {
       "tag": "ANATOMIE",
@@ -1806,7 +1825,7 @@
     "hero": {
       "tag": "FLEXIBLE AKUSTIKPANEELE",
       "tagline": "Biegen Ohne Brechen",
-      "description": "Die ultimative Akustiklösung für gekrümmte Oberflächen. Aus recyceltem PET-Filz mit Präzisions-V-Schnitten biegen sich Flex-Groove Paneele nahtlos.",
+      "description": "Die ultimative Akustiklösung für gekrümmte Oberflächen. Aus recyceltem PET-Filz mit Präzisions-V-Schnitt-Rillen hergestellt, passen sich diese flexiblen Paneele nahtlos an Säulen, gekrümmte Wände und jede architektonische Form an.",
       "usp1": "Min. Radius 500mm",
       "usp2": "Brandhemmend",
       "usp3": "100% Recyceltes PET",
@@ -1872,7 +1891,8 @@
       "badge1": "Recyceltes PET",
       "badge2": "Vollständig Recyclierbar",
       "badge3": "Europäische Produktion",
-      "badge4": "Niedrige VOC"
+      "badge4": "Niedrige VOC",
+      "badge3Desc": "Reduzierte Transportemissionen"
     },
     "specs": {
       "tag": "TECHNISCH",

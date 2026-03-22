@@ -1001,7 +1001,7 @@
       "classValue": "Classe A",
       "nrcValue": "0.90",
       "materialsTitle": "Matériaux",
-      "coreValue": "Textile recyclé haute densité",
+      "coreValue": "Fibre textile recyclée",
       "coverValue": "Tissu recyclé",
       "fireTitle": "Sécurité Incendie",
       "fireRatingValue": "B-s1, d0",
@@ -1013,7 +1013,9 @@
       "mountingValue": "Système de rail à crochets",
       "toolsValue": "Perceuse, niveau",
       "maxCoverageTitle": "Couverture Maximale",
-      "maxCoverageDesc": "Grand format pour un impact maximal"
+      "maxCoverageDesc": "Grand format pour un impact maximal",
+      "binderValue": "Adhésif biosourcé",
+      "coverValue2": "Tissu recyclé"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1025,7 +1027,7 @@
       "tag": "CLOISON ACOUSTIQUE",
       "title": "Divide",
       "tagline": "Cliquez pour Délimiter, Divisez avec Style",
-      "description": "Découvrez Re-Sound Divide — le premier écran acoustique autoportant conçu pour un usage flexible. Divisez facilement votre espace, créez des zones de confidentialité et éliminez les bruits de fond.",
+      "description": "Découvrez Re-Sound Divide — le premier écran acoustique autoportant conçu pour un usage flexible.",
       "usp1": "Connexion Magnétique",
       "usp2": "Entièrement Modulaire",
       "usp3": "Autoportant",
@@ -1037,7 +1039,7 @@
     "overview": {
       "tag": "INNOVATION",
       "title": "Redéfinissez Votre Espace",
-      "description": "Re-Sound Divide est le premier produit acoustique autoportant conçu pour une flexibilité maximale. Créez des zones privées, divisez des espaces ouverts et gérez les bruits de fond.",
+      "description": "Re-Sound Divide est le premier produit acoustique autoportant conçu pour une flexibilité maximale. Créez des zones privées, divisez des espaces ouverts et contrôlez les bruits de fond.",
       "feature1": "Design autoportant — aucune installation requise",
       "feature2": "Système de connexion magnétique",
       "feature3": "Léger et facile à déplacer",
@@ -1046,7 +1048,7 @@
     "base": {
       "tag": "STABILITÉ",
       "title": "Base Intégrée",
-      "description": "Grâce à la base intégrée, Divide est toujours stable et se tient librement sur n'importe quel sol.",
+      "description": "Grâce à la base intégrée, Divide est toujours stable et se tient librement sur n'importe quel sol. Les modules légers peuvent être facilement déplacés.",
       "feature1": "Stable sur toute surface sans fixation",
       "feature2": "Facile à déplacer et repositionner",
       "feature3": "Base douce protège tous les types de sol",
@@ -1061,22 +1063,27 @@
     "magnetic": {
       "tag": "SANS EFFORT",
       "title": "Connexion Magnétique",
-      "description": "Les modules se connectent sans effort grâce à de subtils aimants intégrés dans le tissu. Montez et démontez facilement — invisible, discrètement intégré, mais assez solide pour une utilisation sans souci. Pas d'outils, pas de complexité, simplement cliquez et c'est parti."
+      "description": "Les modules se connectent sans effort grâce à de subtils aimants intégrés dans le tissu. Simplement assembler deux modules — invisible, mais assez solide.",
+      "snapLabel": "Assembler"
     },
     "modular": {
       "tag": "FLEXIBILITÉ",
       "title": "Système Modulaire",
-      "description": "Décidez vous-même de l'agencement de votre espace. Divide est un système modulaire qui s'adapte à vos besoins. Que vous choisissiez un long séparateur ou plusieurs configurations courtes — laissez libre cours à votre créativité."
+      "description": "Décidez vous-même de l'agencement. Divide s'adapte à vos besoins.",
+      "config1": "Simple",
+      "config2": "Double",
+      "config3": "Triple",
+      "config4": "Angle"
     },
     "features": {
       "tag": "DURABILITÉ",
       "title": "Circulaire par Conception",
-      "description": "Comme tous les produits Re-Sound, Divide est soigneusement conçu avec la circularité en son cœur. Fabriqué à partir de textiles recyclés et de déchets industriels. En fin de vie, retournez-le nous pour un recyclage gratuit."
+      "description": "Comme tous les produits Re-Sound, Divide est conçu avec la circularité en son cœur. Fabriqué à partir de textiles recyclés."
     },
     "acoustics": {
       "tag": "PERFORMANCES",
       "title": "Absorption Sonore Double Face",
-      "description": "Re-Sound Divide absorbe le son des deux côtés, ce qui en fait le produit idéal pour créer une confidentialité acoustique dans les environnements ouverts.",
+      "description": "Re-Sound Divide absorbe le son des deux côtés, créant une confidentialité acoustique dans les environnements ouverts.",
       "benefit1Title": "Réduction du Bruit",
       "benefit1": "Bloquer les conversations de fond distrayantes",
       "benefit2Title": "Zones de Confidentialité",
@@ -1106,10 +1113,11 @@
       "tag": "PANNEAUX ACOUSTIQUES EN PET RECYCLÉ",
       "title": "rPET - Groove",
       "tagline": "Des Bouteilles au Silence",
-      "description": "Transformez votre espace avec les panneaux acoustiques rPET - Groove. Fabriqués à partir de 100% de bouteilles plastiques recyclées, ces élégants panneaux rainurés allient design contemporain et absorption sonore exceptionnelle.",
+      "description": "Transformez votre espace avec les panneaux acoustiques rPET - Groove. Fabriqués à partir de 100% de bouteilles plastiques recyclées, ces élégants panneaux rainurés allient design contemporain et absorption sonore exceptionnelle. L'efficacité rencontre l'élégance.",
       "usp1": "100% PET Recyclé",
       "usp2": "Jusqu'à NRC 0.90",
-      "usp3": "12 Couleurs Design"
+      "usp3": "12 Couleurs Design",
+      "colorSelector": "Sélectionner la Couleur"
     },
     "overview": {
       "tag": "DESIGN CIRCULAIRE",
@@ -1195,7 +1203,9 @@
       "badge4": "Fabriqué en Belgique",
       "recycledBottlesLabel": "Bouteilles recyclées par panneau",
       "badge1Desc": "Fabriqués à partir de bouteilles PET post-consommation",
-      "badge2Desc": "Peut être recyclé en fin de vie"
+      "badge2Desc": "Peut être recyclé en fin de vie",
+      "badge3Desc": "Nous collectons les panneaux pour recyclage",
+      "badge4Desc": "Chaînes d'approvisionnement courtes, faibles émissions"
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1262,7 +1272,7 @@
       "tag": "PANNEAUX ACOUSTIQUES EN PET RECYCLÉ",
       "title": "rPET - Panel",
       "tagline": "Silence Durable, Possibilités Infinies",
-      "description": "Panneaux acoustiques polyvalents fabriqués à partir de 100% de bouteilles PET recyclées. Usinables comme du MDF, mais légers et respectueux des personnes. Design épuré pour murs, plafonds et mobilier.",
+      "description": "Transformez n'importe quel espace avec les panneaux acoustiques rPET - Panel. Fabriqués à partir de 100% de bouteilles PET recyclées, ces absorbeurs sonores légers mais puissants offrent des performances acoustiques maximales avec un impact environnemental minimal.",
       "usp1": "PET 100% Recyclable",
       "usp2": "αw jusqu'à 1.00",
       "usp3": "Seulement 3-4 kg/m²"
@@ -1376,7 +1386,7 @@
       "tag": "PANNEAUX ACOUSTIQUES EN BOIS",
       "title": "rWood - Groove",
       "tagline": "Beauté Naturelle, Acoustique Parfaite",
-      "description": "Panneaux acoustiques en bois rainurés premium. Placage bois certifié FSC sur un cœur en feutre acoustique recyclé — beauté naturelle alliée à une absorption sonore Classe A exceptionnelle.",
+      "description": "Apportez chaleur naturelle et style sophistiqué à tout espace avec les panneaux acoustiques rWood - Groove. Des placages premium de chêne et noyer combinés à un dos en feutre absorbant créent l'harmonie entre esthétique et acoustique.",
       "usp1": "Bois Certifié FSC®",
       "usp2": "Absorption Classe A",
       "usp3": "Fabriqué en Europe"
@@ -1417,9 +1427,9 @@
       "step2Title": "Positionner le Premier Panneau",
       "step2Desc": "Commencer par le coin, assurer l'alignement de niveau",
       "step3Title": "Connecter les Panneaux",
-      "step3Desc": "Système rainure-languette verrouille les panneaux ensemble",
+      "step3Desc": "Glissez la languette dans la rainure pour une connexion continue",
       "step4Title": "Compléter & Finir",
-      "step4Desc": "Ajouter profilés et bordures si nécessaire",
+      "step4Desc": "Ajoutez des profilés de finition pour un résultat professionnel",
       "description": "Les panneaux rWood - Groove disposent d'une connexion innovante rainure-languette pour une installation rapide et facile."
     },
     "sustainability": {
@@ -1430,7 +1440,7 @@
       "badge2": "Feutre Recyclé",
       "badge2Desc": "Dos acoustique en matériaux recyclés",
       "badge3": "Production Européenne",
-      "badge3Desc": "Fabriqué en Belgique",
+      "badge3Desc": "Émissions de transport réduites",
       "badge4": "DEP Disponible",
       "badge4Desc": "Déclaration environnementale de produit complète"
     },
@@ -1477,7 +1487,7 @@
       "tag": "PANNEAUX ACOUSTIQUES EN BOIS PERFORÉ",
       "title": "rWood - Perf",
       "tagline": "Perforations de Précision, Absorption Maximale",
-      "description": "Panneaux acoustiques en bois perforé. La solution éprouvée pour les architectes et designers qui exigent à la fois raffinement visuel et performances acoustiques remarquables.",
+      "description": "Panneaux acoustiques percés haute performance alliant beauté du bois naturel et absorption sonore exceptionnelle. Un cœur MDF à retardant de flamme et des chants surépaissés offrent les niveaux les plus élevés de sécurité incendie et de contrôle acoustique.",
       "usp1": "Perforations Rondes",
       "usp2": "Classement Feu B2-s1, d0",
       "usp3": "Jusqu'à Classe B"
@@ -1486,7 +1496,8 @@
       "tag": "MOTIFS DE PERFORATION",
       "title": "Choisissez Votre Motif",
       "description": "Plusieurs motifs de perforation pour différents réglages acoustiques et effets visuels. Des micro-perforations fines aux motifs standard audacieux.",
-      "coreMatchTitle": "Assortir le cœur au placage pour faire disparaître les perforations — ou en faire un élément de design."
+      "coreMatchTitle": "Assortir le cœur au placage pour faire disparaître les perforations — ou en faire un élément de design.",
+      "coreColorTitle": "Couleur du Cœur"
     },
     "coreColor": {
       "title": "Couleur du Cœur",
@@ -1535,7 +1546,8 @@
       "badge4": "Ultra-Faibles Émissions",
       "badge1Desc": "Bois issu de forêts gérées de façon responsable",
       "badge2Desc": "Matériau recyclé post-consommation dans le cœur",
-      "badge3Desc": "Fabriqué en Belgique"
+      "badge3Desc": "Sources d'énergie renouvelables, chaînes courtes",
+      "badge4Desc": "Sans formaldéhyde ajouté, DEP disponible"
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1686,10 +1698,12 @@
       "tag": "ARTISANAT",
       "title": "rWood - Panel",
       "tagline": "L'Élégance du Bois Véritable. Prêt à l'Emploi.",
-      "description": "Panneaux MDF préfinis, brossés, teintés et laqués — sans finition supplémentaire requise. La beauté authentique du bois massif sans compromis, conçus pour les architectes, designers et menuisiers qui exigent la perfection.",
+      "description": "Panneaux MDF préfinis, brossés, teintés et laqués — sans finition supplémentaire requise. La beauté authentique du bois massif sans compromis.",
       "usp1": "Certifié FSC®",
       "usp2": "Préfini & Prêt à l'Emploi",
-      "usp3": "Fabriqué en Europe"
+      "usp3": "Fabriqué en Europe",
+      "ctaSecondary": "Explorer la Collection",
+      "colorSelector": "Sélectionner le Placage"
     },
     "construction": {
       "tag": "CONSTRUCTION",
@@ -1768,7 +1782,12 @@
     "overview": {
       "tag": "ARTISANAT",
       "title": "Nature, Raffinée",
-      "description": "rWood - Panel apporte la chaleur et le caractère du bois massif aux espaces acoustiques. Chaque panneau est fini dans notre atelier belge avec un procédé de laque multicouche de précision."
+      "description": "rWood - Panel apporte la chaleur et le caractère du bois massif aux espaces acoustiques. Chaque panneau est fini dans notre atelier belge avec un procédé de laque multicouche de précision.",
+      "feature1": "Placages A-grade premium — chêne, noyer, frêne, cerisier et bouleau",
+      "feature2": "Laque UV 6 couches résistante aux rayures et éclaboussures",
+      "feature3": "Cœur MDF haute densité (700 kg/m³) pour l'intégrité structurelle",
+      "feature4": "Construction équilibrée — placage sur les deux faces pour la stabilité",
+      "feature5": "Aucune finition supplémentaire requise — prêt à l'emploi"
     },
     "anatomy": {
       "tag": "ANATOMIE",
@@ -1806,7 +1825,7 @@
     "hero": {
       "tag": "PANNEAUX ACOUSTIQUES FLEXIBLES",
       "tagline": "Courbez Sans Briser",
-      "description": "La solution acoustique ultime pour les surfaces courbes. Fabriqués à partir de feutre PET recyclé avec des V-cuts de précision, les panneaux Flex-Groove s'incurvent harmonieusement.",
+      "description": "La solution acoustique ultime pour les surfaces courbes. Fabriqués à partir de feutre PET recyclé avec des rainures V-cut de précision, ces panneaux flexibles s'adaptent parfaitement aux colonnes, murs courbes et toute forme architecturale avec un rayon minimum de 500mm.",
       "usp1": "Rayon Min. 500mm",
       "usp2": "Retardant au Feu",
       "usp3": "100% PET Recyclé",
@@ -1872,7 +1891,8 @@
       "badge1": "PET Recyclé",
       "badge2": "Entièrement Recyclable",
       "badge3": "Production Européenne",
-      "badge4": "Faibles COV"
+      "badge4": "Faibles COV",
+      "badge3Desc": "Émissions de transport réduites"
     },
     "specs": {
       "tag": "TECHNIQUE",

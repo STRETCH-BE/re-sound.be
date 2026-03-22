@@ -1001,7 +1001,7 @@
       "classValue": "Class A",
       "nrcValue": "0.90",
       "materialsTitle": "Materials",
-      "coreValue": "High-density recycled textile",
+      "coreValue": "Recycled textile fiber",
       "coverValue": "Recycled fabric",
       "fireTitle": "Fire Safety",
       "fireRatingValue": "B-s1, d0",
@@ -1013,7 +1013,9 @@
       "mountingValue": "Hook rail system",
       "toolsValue": "Drill, level",
       "maxCoverageTitle": "Maximum Coverage",
-      "maxCoverageDesc": "Large format for high-impact results"
+      "maxCoverageDesc": "Large format for high-impact results",
+      "binderValue": "Bio-based adhesive",
+      "coverValue2": "Recycled fabric"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1025,7 +1027,7 @@
       "tag": "ACOUSTIC ROOM DIVIDER",
       "title": "Divide",
       "tagline": "Snap to Redefine, Split for Style",
-      "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use. Easily divide your space, create privacy zones, and eliminate background noise with our innovative modular system.",
+      "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use.",
       "usp1": "Magnetic Connect",
       "usp2": "Fully Modular",
       "usp3": "Freestanding",
@@ -1046,7 +1048,7 @@
     "base": {
       "tag": "STABILITY",
       "title": "Integrated Base",
-      "description": "Thanks to the integrated base, Divide is always stable and stands freely on any floor. The lightweight modules can be easily moved for optimal flexibility—perfect for dynamic work environments that need to adapt quickly.",
+      "description": "Thanks to the integrated base, Divide is always stable and stands freely on any floor. The lightweight modules can be easily moved for optimal flexibility.",
       "feature1": "Stable on any surface without fixing",
       "feature2": "Easy to move and reposition",
       "feature3": "Soft base protects all floor types",
@@ -1061,22 +1063,27 @@
     "magnetic": {
       "tag": "EFFORTLESS",
       "title": "Magnetic Connection",
-      "description": "The modules connect effortlessly through subtle magnets integrated into the fabric. Assemble and disassemble with ease—invisible, subtly processed, yet strong enough for worry-free use. No tools, no complexity, just snap and go."
+      "description": "The modules connect effortlessly through subtle magnets integrated into the fabric. Simply snap two modules together—invisible, yet strong enough for worry-free use.",
+      "snapLabel": "Snap together"
     },
     "modular": {
       "tag": "FLEXIBILITY",
       "title": "Modular System",
-      "description": "Decide the layout of your space yourself. Divide is a modular system that adapts to your needs. Whether you choose a long room divider or several short configurations—let your creativity run wild."
+      "description": "Decide the layout of your space yourself. Divide is a modular system that adapts to your needs.",
+      "config1": "Single",
+      "config2": "Double",
+      "config3": "Triple",
+      "config4": "Corner"
     },
     "features": {
       "tag": "SUSTAINABILITY",
       "title": "Circular by Design",
-      "description": "Like all Re-Sound products, Divide is carefully designed with circularity at its core. Made from recycled textiles and industrial waste, contributing to a more sustainable future. At end of life, return it to us for free recycling."
+      "description": "Like all Re-Sound products, Divide is carefully designed with circularity at its core. Made from recycled textiles and industrial waste, contributing to a more sustainable future."
     },
     "acoustics": {
       "tag": "PERFORMANCE",
       "title": "Dual-Sided Sound Absorption",
-      "description": "Re-Sound Divide absorbs sound from both sides, making it perfect for creating acoustic privacy in open environments. Stop being disturbed by background noise and create focused, productive spaces.",
+      "description": "Re-Sound Divide absorbs sound from both sides, making it perfect for creating acoustic privacy in open environments.",
       "benefit1Title": "Noise Reduction",
       "benefit1": "Block distracting background conversations",
       "benefit2Title": "Privacy Zones",
@@ -1109,7 +1116,8 @@
       "description": "Transform your space with rPET - Groove acoustic panels. Made from 100% recycled plastic bottles, these elegant grooved panels combine contemporary design with exceptional sound absorption. Efficiency meets elegance.",
       "usp1": "100% Recycled PET",
       "usp2": "Up to NRC 0.90",
-      "usp3": "12 Designer Colors"
+      "usp3": "12 Designer Colors",
+      "colorSelector": "Select Color"
     },
     "overview": {
       "tag": "CIRCULAR DESIGN",
@@ -1195,7 +1203,9 @@
       "badge4": "Made in Belgium",
       "recycledBottlesLabel": "Recycled bottles per panel",
       "badge1Desc": "Made from post-consumer PET bottles",
-      "badge2Desc": "Can be recycled at end of life"
+      "badge2Desc": "Can be recycled at end of life",
+      "badge3Desc": "We collect panels for recycling",
+      "badge4Desc": "Short supply chains, low emissions"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1262,7 +1272,7 @@
       "tag": "RECYCLED PET ACOUSTIC PANELS",
       "title": "rPET - Panel",
       "tagline": "Sustainable Silence, Infinite Possibilities",
-      "description": "Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight panels deliver outstanding acoustic performance with Class A absorption.",
+      "description": "Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
       "usp1": "100% Recyclable PET",
       "usp2": "αw up to 1.00",
       "usp3": "Only 3-4 kg/m²"
@@ -1417,9 +1427,9 @@
       "step2Title": "Position First Panel",
       "step2Desc": "Start from corner, ensure level alignment",
       "step3Title": "Connect Panels",
-      "step3Desc": "Tongue-and-groove system locks panels together",
+      "step3Desc": "Slide tongue into groove for seamless connection",
       "step4Title": "Complete & Finish",
-      "step4Desc": "Add profiles and trim as required",
+      "step4Desc": "Add end mouldings for a professional result",
       "description": "rWood - Groove panels feature an innovative tongue-and-groove connection for fast and easy installation."
     },
     "sustainability": {
@@ -1430,7 +1440,7 @@
       "badge2": "Recycled Felt",
       "badge2Desc": "Acoustic backing from recycled materials",
       "badge3": "European Production",
-      "badge3Desc": "Made in Belgium",
+      "badge3Desc": "Reduced transport emissions",
       "badge4": "EPD Available",
       "badge4Desc": "Full environmental product declaration"
     },
@@ -1477,7 +1487,7 @@
       "tag": "PERFORATED ACOUSTIC WOOD PANELS",
       "title": "rWood - Perf",
       "tagline": "Precision Perforations, Maximum Absorption",
-      "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. FSC-certified veneers over a fire-retardant core with concealed mounting system.",
+      "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control.",
       "usp1": "Round Perforations",
       "usp2": "B2-s1, d0 Fire Rated",
       "usp3": "Up to Class B"
@@ -1486,7 +1496,8 @@
       "tag": "PERFORATION PATTERNS",
       "title": "Choose Your Pattern",
       "description": "Four drilled perforation patterns with calibrated open areas for different acoustic performance levels.",
-      "coreMatchTitle": "Match the core to your veneer to make perforations disappear—or make them a design feature."
+      "coreMatchTitle": "Match the core to your veneer to make perforations disappear—or make them a design feature.",
+      "coreColorTitle": "Core Colour"
     },
     "coreColor": {
       "title": "Core Colour",
@@ -1535,7 +1546,8 @@
       "badge4": "Ultra-Low Emissions",
       "badge1Desc": "Wood from responsibly managed forests",
       "badge2Desc": "Post-consumer recycled material in core",
-      "badge3Desc": "Made in Belgium"
+      "badge3Desc": "Renewable energy sources, short supply chains",
+      "badge4Desc": "No added formaldehyde, EPD available"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1685,7 +1697,9 @@
       "description": "Premium veneered MDF panels, brushed, stained and lacquered — requiring no additional finishing. The authentic beauty of solid wood without compromise.",
       "usp1": "FSC® Certified",
       "usp2": "Prefinished & Ready to Use",
-      "usp3": "Made in Europe"
+      "usp3": "Made in Europe",
+      "ctaSecondary": "Explore the Collection",
+      "colorSelector": "Select Veneer"
     },
     "construction": {
       "tag": "CONSTRUCTION",
@@ -1764,7 +1778,12 @@
     "overview": {
       "tag": "CRAFTSMANSHIP",
       "title": "Nature, Refined",
-      "description": "rWood - Panel brings the warmth and character of solid wood to acoustic spaces. Each panel is finished in our Belgian facility using a precision multi-layer lacquer process."
+      "description": "rWood - Panel brings the warmth and character of solid wood to acoustic spaces. Each panel is finished in our Belgian facility using a precision multi-layer lacquer process.",
+      "feature1": "Premium A-grade veneers — oak, walnut, ash, cherry and birch",
+      "feature2": "6-layer UV-cured lacquer for scratch and spill resistance",
+      "feature3": "High-density MDF core (700 kg/m³) for structural integrity",
+      "feature4": "Balanced construction — veneer on both faces for stability",
+      "feature5": "No additional finishing required — ready from the box"
     },
     "anatomy": {
       "tag": "ANATOMY",
@@ -1803,7 +1822,7 @@
       "tag": "FLEXIBLE ACOUSTIC PANELS",
       "title": "rPET Flex-Groove",
       "tagline": "Bend Without Breaking",
-      "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cuts, Flex-Groove panels bend seamlessly to follow any radius.",
+      "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt seamlessly to columns, curved walls, and any architectural form with a minimum radius of 500mm.",
       "usp1": "Min. Radius 500mm",
       "usp2": "Fire Retardant",
       "usp3": "100% Recycled PET"
@@ -1868,7 +1887,8 @@
       "badge2": "Fully Recyclable",
       "badge2Desc": "Can be recycled at end of life",
       "badge3": "European Production",
-      "badge4": "Low VOC"
+      "badge4": "Low VOC",
+      "badge3Desc": "Reduced transport emissions"
     },
     "specs": {
       "tag": "TECHNICAL",
