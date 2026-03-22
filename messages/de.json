@@ -1063,13 +1063,13 @@
     "magnetic": {
       "tag": "MÜHELOS",
       "title": "Magnetische Verbindung",
-      "description": "Die Module verbinden sich mühelos über dezente Magnete im Stoff. Einfach zwei Module zusammenklappen — unsichtbar aber stark.",
+      "description": "Die Module verbinden sich mühelos über dezente Magnete, die in den Stoff integriert sind. Montieren und demontieren Sie mit Leichtigkeit — unsichtbar, dezent verarbeitet, aber stark genug für sorgenfreie Nutzung. Kein Werkzeug, keine Komplexität, einfach einrasten und los.",
       "snapLabel": "Zusammenklappen"
     },
     "modular": {
       "tag": "FLEXIBILITÄT",
       "title": "Modulares System",
-      "description": "Bestimmen Sie selbst das Layout. Divide passt sich Ihren Bedürfnissen an.",
+      "description": "Bestimmen Sie selbst das Layout Ihres Raums. Divide ist ein modulares System, das sich Ihren Bedürfnissen anpasst. Ob Sie sich für einen langen Raumteiler oder mehrere kurze Konfigurationen entscheiden — lassen Sie Ihrer Kreativität freien Lauf.",
       "config1": "Einfach",
       "config2": "Doppel",
       "config3": "Dreifach",
@@ -1078,12 +1078,12 @@
     "features": {
       "tag": "NACHHALTIGKEIT",
       "title": "Kreislauffähig Gestaltet",
-      "description": "Wie alle Re-Sound-Produkte wurde Divide mit Kreislauffähigkeit als Kern entworfen. Aus recycelten Textilien hergestellt."
+      "description": "Wie alle Re-Sound-Produkte wurde Divide sorgfältig mit Kreislauffähigkeit als Kern entworfen. Hergestellt aus recycelten Textilien und Industrieabfällen, trägt es zu einer nachhaltigeren Zukunft bei. Am Lebensende geben Sie es uns kostenlos zum Recyceln zurück."
     },
     "acoustics": {
       "tag": "LEISTUNG",
       "title": "Beidseitige Schallabsorption",
-      "description": "Re-Sound Divide absorbiert Schall von beiden Seiten, ideal für akustische Privatsphäre in offenen Umgebungen.",
+      "description": "Re-Sound Divide absorbiert Schall von beiden Seiten, was es ideal für akustische Privatsphäre in offenen Umgebungen macht. Hören Sie auf, von Hintergrundgeräuschen gestört zu werden, und schaffen Sie fokussierte, produktive Räume.",
       "benefit1Title": "Lärmreduzierung",
       "benefit1": "Ablenkende Hintergrundgespräche blockieren",
       "benefit2Title": "Privatzonen",

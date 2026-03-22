@@ -1063,13 +1063,13 @@
     "magnetic": {
       "tag": "SANS EFFORT",
       "title": "Connexion Magnétique",
-      "description": "Les modules se connectent sans effort grâce à de subtils aimants intégrés dans le tissu. Simplement assembler deux modules — invisible, mais assez solide.",
+      "description": "Les modules se connectent sans effort grâce à de subtils aimants intégrés dans le tissu. Assemblez et démontez facilement — invisible, discrètement traité, mais assez solide pour une utilisation sans souci. Pas d'outils, pas de complexité, just cliquez et c'est parti.",
       "snapLabel": "Assembler"
     },
     "modular": {
       "tag": "FLEXIBILITÉ",
       "title": "Système Modulaire",
-      "description": "Décidez vous-même de l'agencement. Divide s'adapte à vos besoins.",
+      "description": "Décidez vous-même de l'agencement de votre espace. Divide est un système modulaire qui s'adapte à vos besoins. Que vous choisissiez un long séparateur ou plusieurs configurations courtes — laissez libre cours à votre créativité.",
       "config1": "Simple",
       "config2": "Double",
       "config3": "Triple",
@@ -1078,12 +1078,12 @@
     "features": {
       "tag": "DURABILITÉ",
       "title": "Circulaire par Conception",
-      "description": "Comme tous les produits Re-Sound, Divide est conçu avec la circularité en son cœur. Fabriqué à partir de textiles recyclés."
+      "description": "Comme tous les produits Re-Sound, Divide est soigneusement conçu avec la circularité en son cœur. Fabriqué à partir de textiles recyclés et de déchets industriels, contribuant à un avenir plus durable. En fin de vie, retournez-le nous pour un recyclage gratuit."
     },
     "acoustics": {
       "tag": "PERFORMANCES",
       "title": "Absorption Sonore Double Face",
-      "description": "Re-Sound Divide absorbe le son des deux côtés, créant une confidentialité acoustique dans les environnements ouverts.",
+      "description": "Re-Sound Divide absorbe le son des deux côtés, ce qui le rend parfait pour créer une confidentialité acoustique dans les environnements ouverts. Cessez d'être dérangé par les bruits de fond et créez des espaces concentrés et productifs.",
       "benefit1Title": "Réduction du Bruit",
       "benefit1": "Bloquer les conversations de fond distrayantes",
       "benefit2Title": "Zones de Confidentialité",

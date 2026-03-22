@@ -1063,13 +1063,13 @@
     "magnetic": {
       "tag": "MOEITELOOS",
       "title": "Magnetische Verbinding",
-      "description": "De modules verbinden moeiteloos via subtiele magneten in de stof. Klap twee modules samen — onzichtbaar maar sterk.",
+      "description": "De modules verbinden moeiteloos via subtiele magneten geïntegreerd in de stof. Monteer en demonteer met gemak — onzichtbaar, subtiel verwerkt, maar sterk genoeg voor zorgeloos gebruik. Geen gereedschap, geen complexiteit, gewoon klikken en gaan.",
       "snapLabel": "Samenklappen"
     },
     "modular": {
       "tag": "FLEXIBILITEIT",
       "title": "Modulair Systeem",
-      "description": "Bepaal zelf de indeling. Divide past zich aan jouw behoeften aan.",
+      "description": "Bepaal zelf de indeling van je ruimte. Divide is een modulair systeem dat zich aanpast aan jouw behoeften. Of je nu kiest voor een lange ruimteverdeler of meerdere korte configuraties — laat je creativiteit de vrije loop.",
       "config1": "Enkel",
       "config2": "Dubbel",
       "config3": "Drievoudig",
@@ -1078,12 +1078,12 @@
     "features": {
       "tag": "DUURZAAMHEID",
       "title": "Circulair van Ontwerp",
-      "description": "Net als alle Re-Sound-producten is Divide ontworpen met circulariteit als kern. Gemaakt van gerecycleerde textiel en industrieel afval."
+      "description": "Net als alle Re-Sound-producten is Divide zorgvuldig ontworpen met circulariteit als kern. Gemaakt van gerecycleerde textiel en industrieel afval, draagt het bij aan een duurzamere toekomst. Aan het einde van de levensduur geef je het gratis terug voor recycling."
     },
     "acoustics": {
       "tag": "PRESTATIES",
       "title": "Tweezijdige Geluidsabsorptie",
-      "description": "Re-Sound Divide absorbeert geluid van beide kanten, perfect voor akoestische privacy in open omgevingen.",
+      "description": "Re-Sound Divide absorbeert geluid van beide kanten, waardoor het perfect is voor akoestische privacy in open omgevingen. Stop met gestoord worden door achtergrondgeluid en creëer gefocuste, productieve ruimtes.",
       "benefit1Title": "Geluidsreductie",
       "benefit1": "Storende achtergrondgesprekken blokkeren",
       "benefit2Title": "Privacyzones",

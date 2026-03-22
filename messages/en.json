@@ -1063,13 +1063,13 @@
     "magnetic": {
       "tag": "EFFORTLESS",
       "title": "Magnetic Connection",
-      "description": "The modules connect effortlessly through subtle magnets integrated into the fabric. Simply snap two modules together—invisible, yet strong enough for worry-free use.",
+      "description": "The modules connect effortlessly through subtle magnets integrated into the fabric. Assemble and disassemble with ease—invisible, subtly processed, yet strong enough for worry-free use. No tools, no complexity, just snap and go.",
       "snapLabel": "Snap together"
     },
     "modular": {
       "tag": "FLEXIBILITY",
       "title": "Modular System",
-      "description": "Decide the layout of your space yourself. Divide is a modular system that adapts to your needs.",
+      "description": "Decide the layout of your space yourself. Divide is a modular system that adapts to your needs. Whether you choose a long room divider or several short configurations—let your creativity run wild.",
       "config1": "Single",
       "config2": "Double",
       "config3": "Triple",
@@ -1078,12 +1078,12 @@
     "features": {
       "tag": "SUSTAINABILITY",
       "title": "Circular by Design",
-      "description": "Like all Re-Sound products, Divide is carefully designed with circularity at its core. Made from recycled textiles and industrial waste, contributing to a more sustainable future."
+      "description": "Like all Re-Sound products, Divide is carefully designed with circularity at its core. Made from recycled textiles and industrial waste, contributing to a more sustainable future. At end of life, return it to us for free recycling."
     },
     "acoustics": {
       "tag": "PERFORMANCE",
       "title": "Dual-Sided Sound Absorption",
-      "description": "Re-Sound Divide absorbs sound from both sides, making it perfect for creating acoustic privacy in open environments.",
+      "description": "Re-Sound Divide absorbs sound from both sides, making it perfect for creating acoustic privacy in open environments. Stop being disturbed by background noise and create focused, productive spaces.",
       "benefit1Title": "Noise Reduction",
       "benefit1": "Block distracting background conversations",
       "benefit2Title": "Privacy Zones",
