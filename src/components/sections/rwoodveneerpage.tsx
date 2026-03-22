@@ -39,20 +39,6 @@ const veneerCollections = [
 // All veneers flat for the selector
 const allVeneers = veneerCollections.flatMap(c => c.veneers);
 
-// Panel format options
-const formatOptions = [
-  { id: 'standard', name: t('dimensions.standardName'), width: '1220 mm', length: '2800 mm', thickness: '19 mm', description: t('dimensions.standardDesc') },
-  { id: 'large', name: t('dimensions.largeName'), width: '1220 mm', length: '3050 mm', thickness: '19 mm', description: t('dimensions.largeDesc') },
-  { id: 'slim', name: t('dimensions.slimName'), width: '1220 mm', length: '2800 mm', thickness: '12 mm', description: t('dimensions.slimDesc') },
-];
-
-// Finish type options
-const finishTypes = [
-  { id: 'matt-lacquer', name: t('finishes.mattLacquerName'), description: t('finishes.mattLacquerDesc'), icon: '✦' },
-  { id: 'natural-oil', name: t('finishes.naturalOilName'), description: t('finishes.naturalOilDesc'), icon: '◉' },
-  { id: 'raw', name: t('finishes.unfinishedName'), description: t('finishes.unfinishedDesc'), icon: '◇' },
-];
-
 // Default hero image
 const defaultHeroImage = '/images/products/rwood-veneer/hero-rwood-veneer.webp';
 
@@ -60,6 +46,20 @@ const defaultHeroImage = '/images/products/rwood-veneer/hero-rwood-veneer.webp';
 export default function RWoodPanelProductPage() {
   const t = useTranslations('rwoodVeneerPage');
   const tPage = useTranslations('productPage');
+
+  // Panel format options (inside component so t() is available)
+  const formatOptions = [
+    { id: 'standard', name: t('dimensions.standardName'), width: '1220 mm', length: '2800 mm', thickness: '19 mm', description: t('dimensions.standardDesc') },
+    { id: 'large', name: t('dimensions.largeName'), width: '1220 mm', length: '3050 mm', thickness: '19 mm', description: t('dimensions.largeDesc') },
+    { id: 'slim', name: t('dimensions.slimName'), width: '1220 mm', length: '2800 mm', thickness: '12 mm', description: t('dimensions.slimDesc') },
+  ];
+
+  // Finish type options (inside component so t() is available)
+  const finishTypes = [
+    { id: 'matt-lacquer', name: t('finishes.mattLacquerName'), description: t('finishes.mattLacquerDesc'), icon: '✦' },
+    { id: 'natural-oil', name: t('finishes.naturalOilName'), description: t('finishes.naturalOilDesc'), icon: '◉' },
+    { id: 'raw', name: t('finishes.unfinishedName'), description: t('finishes.unfinishedDesc'), icon: '◇' },
+  ];
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');

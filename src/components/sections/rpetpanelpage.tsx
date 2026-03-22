@@ -23,14 +23,6 @@ const thicknessOptions = [
   { id: '24mm', value: 24, name: '24mm', weight: '4 kg/m²', description: 'Maximum absorption' },
 ];
 
-// Application options
-const applicationOptions = [
-  { id: 'walls', name: t('applications.app1Name'), icon: '🧱', description: t('applications.app1Desc') },
-  { id: 'ceilings', name: t('applications.app2Name'), icon: '⬆️', description: t('applications.app2Desc') },
-  { id: 'dividers', name: t('applications.app3Name'), icon: '📏', description: t('applications.app3Desc') },
-  { id: 'furniture', name: t('applications.app4Name'), icon: '🪑', description: t('applications.app4Desc') },
-];
-
 // Default hero image
 const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
 
@@ -38,6 +30,14 @@ const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
 export default function RPETPanelProductPage() {
   const t = useTranslations('rpetPanelPage');
   const tPage = useTranslations('productPage');
+
+  // Application options (inside component so t() is available)
+  const applicationOptions = [
+    { id: 'walls', name: t('applications.app1Name'), icon: '🧱', description: t('applications.app1Desc') },
+    { id: 'ceilings', name: t('applications.app2Name'), icon: '⬆️', description: t('applications.app2Desc') },
+    { id: 'dividers', name: t('applications.app3Name'), icon: '📏', description: t('applications.app3Desc') },
+    { id: 'furniture', name: t('applications.app4Name'), icon: '🪑', description: t('applications.app4Desc') },
+  ];
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
