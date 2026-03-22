@@ -143,9 +143,7 @@ export default function RPETPanelProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            Transform any space with rPET - Panel acoustic panels. Made from 100% recycled 
-            PET bottles, these lightweight yet powerful sound absorbers deliver maximum 
-            acoustic performance with minimal environmental impact.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
@@ -250,7 +248,7 @@ export default function RPETPanelProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
-            <h2>From Bottles to Better Spaces</h2>
+            <h2>{t('overview.title')}</h2>
             <p>
               rPET - Panel transforms recycled PET bottles into high-performance acoustic 
               panels. Each panel diverts plastic waste from landfills while creating 
@@ -323,7 +321,7 @@ export default function RPETPanelProductPage() {
       <section id="colors" className="content-section colors-section">
         <div className="colors-header">
           <span className="section-tag">{t('colors.tag')}</span>
-          <h2>Express Your Style</h2>
+          <h2>{t('colors.title')}</h2>
           <p>
             Choose from 5 sophisticated standard colors or specify any custom color 
             from the RAL or NCS palette. Every shade maintains the same outstanding 
@@ -388,7 +386,7 @@ export default function RPETPanelProductPage() {
       <section id="applications" className="content-section applications-section dark">
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
-          <h2>Design, Construct, Build</h2>
+          <h2>{t('workability.title')}</h2>
           <p>
             Every building and every room is unique. rPET - Panel adapts to any 
             acoustic challenge with versatile applications.

@@ -138,9 +138,7 @@ export default function RPETFlexGrooveProductPage() {
           <h1>rPET Flex-Groove</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            The ultimate acoustic solution for curved surfaces. Made from recycled PET felt 
-            with precision V-cut grooves, these flexible panels adapt seamlessly to columns, 
-            curved walls, and any architectural form with a minimum radius of 500mm.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
@@ -163,7 +161,7 @@ export default function RPETFlexGrooveProductPage() {
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
-              View Specifications
+              {tPage('cta.viewSpecifications')}
             </a>
           </div>
 
@@ -309,7 +307,7 @@ export default function RPETFlexGrooveProductPage() {
               <span className="radius-value">R500</span>
               <span className="radius-unit">mm</span>
             </div>
-            <p>Minimum Bending Radius</p>
+            <p>{t('technology.minRadius')}</p>
           </div>
         </div>
 
@@ -357,7 +355,7 @@ export default function RPETFlexGrooveProductPage() {
             </div>
 
             <div className="direction-options">
-              <h4>Groove Direction</h4>
+              <h4>{t('colors.grooveDir')}</h4>
               <div className="direction-selector">
                 {directionOptions.map((direction) => (
                   <button
@@ -432,7 +430,7 @@ export default function RPETFlexGrooveProductPage() {
           </div>
           <div className="benefit">
             <span className="benefit-icon">🔥</span>
-            <h4>Fire Retardant</h4>
+            <h4>{t('acoustics.feature2Title')}</h4>
             <p>{t('acoustics.feature2Desc')}</p>
           </div>
           <div className="benefit">
@@ -525,28 +523,28 @@ export default function RPETFlexGrooveProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🍾</span>
                 <div>
-                  <h4>Recycled PET</h4>
+                  <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('acoustics.feature3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>Fully Recyclable</h4>
+                  <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏭</span>
                 <div>
-                  <h4>European Production</h4>
-                  <p>Reduced transport emissions</p>
+                  <h4>{t('sustainability.badge3')}</h4>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🌱</span>
                 <div>
-                  <h4>Low VOC</h4>
+                  <h4>{t('sustainability.badge4')}</h4>
                   <p>Safe for indoor environments</p>
                 </div>
               </div>

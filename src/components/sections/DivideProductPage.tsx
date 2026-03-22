@@ -116,9 +116,7 @@ export default function DivideProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            Meet Re-Sound Divide—the first freestanding acoustic screen designed for 
-            flexible use. Easily divide your space, create privacy zones, and eliminate 
-            background noise with our innovative modular system.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
@@ -328,7 +326,7 @@ export default function DivideProductPage() {
                 <div className="step-visual snap">
                   <span>🧲</span>
                 </div>
-                <span className="step-label">Snap together</span>
+                <span className="step-label">{t('magnetic.snapLabel')}</span>
               </div>
               <div className="connect-arrow">→</div>
               <div className="connect-step">
@@ -365,14 +363,14 @@ export default function DivideProductPage() {
                 <div className="config-visual">
                   <div className="module"></div>
                 </div>
-                <span>Single</span>
+                <span>{t('modular.config1')}</span>
               </div>
               <div className="config">
                 <div className="config-visual">
                   <div className="module"></div>
                   <div className="module"></div>
                 </div>
-                <span>Double</span>
+                <span>{t('modular.config2')}</span>
               </div>
               <div className="config">
                 <div className="config-visual">
@@ -380,14 +378,14 @@ export default function DivideProductPage() {
                   <div className="module"></div>
                   <div className="module"></div>
                 </div>
-                <span>Triple</span>
+                <span>{t('modular.config3')}</span>
               </div>
               <div className="config">
                 <div className="config-visual corner">
                   <div className="module"></div>
                   <div className="module rotated"></div>
                 </div>
-                <span>Corner</span>
+                <span>{t('modular.config4')}</span>
               </div>
             </div>
           </div>
@@ -530,11 +528,11 @@ export default function DivideProductPage() {
                   <td>1600 mm</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specs.thickness')}</td>
                   <td>45 mm</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
+                  <td>{tPage('specs.weight')}</td>
                   <td>~8 kg per module</td>
                 </tr>
               </tbody>
@@ -546,12 +544,12 @@ export default function DivideProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Absorption coefficient (αw)</td>
+                  <td>{tPage('specs.absorptionCoeff')}</td>
                   <td>0.85</td>
                 </tr>
                 <tr>
-                  <td>Absorption class</td>
-                  <td>Class A</td>
+                  <td>{tPage('specs.absorptionClass')}</td>
+                  <td>{tPage('acoustics.classA')}</td>
                 </tr>
                 <tr>
                   <td>Dual-sided</td>

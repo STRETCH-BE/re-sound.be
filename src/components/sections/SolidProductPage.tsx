@@ -446,11 +446,11 @@ export default function SolidProductPage() {
                   <td>{t('specs.panelSizeValue')}</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specs.thickness')}</td>
                   <td>50 mm</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
+                  <td>{tPage('specs.weight')}</td>
                   <td>~5 kg per panel</td>
                 </tr>
               </tbody>
@@ -462,12 +462,12 @@ export default function SolidProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Absorption coefficient (αw)</td>
+                  <td>{tPage('specs.absorptionCoeff')}</td>
                   <td>0.95</td>
                 </tr>
                 <tr>
-                  <td>Absorption class</td>
-                  <td>Class A</td>
+                  <td>{tPage('specs.absorptionClass')}</td>
+                  <td>{tPage('acoustics.classA')}</td>
                 </tr>
                 <tr>
                   <td>NRC</td>
@@ -483,15 +483,15 @@ export default function SolidProductPage() {
               <tbody>
                 <tr>
                   <td>Core</td>
-                  <td>Recycled textile fiber</td>
+                  <td>{t('specs.coreValue')}</td>
                 </tr>
                 <tr>
                   <td>Binder</td>
-                  <td>Bio-based adhesive</td>
+                  <td>{t('specs.binderValue')}</td>
                 </tr>
                 <tr>
                   <td>Cover</td>
-                  <td>Recycled fabric</td>
+                  <td>{t('specs.coverValue2')}</td>
                 </tr>
               </tbody>
             </table>
@@ -502,11 +502,11 @@ export default function SolidProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Fire rating</td>
+                  <td>{tPage('specs.fireRating')}</td>
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
-                  <td>Standard</td>
+                  <td>{tPage('specs.standard')}</td>
                   <td>EN 13501-1</td>
                 </tr>
               </tbody>
@@ -518,7 +518,7 @@ export default function SolidProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Recycled content</td>
+                  <td>{tPage('specs.recycledContent')}</td>
                   <td>≥80%</td>
                 </tr>
                 <tr>

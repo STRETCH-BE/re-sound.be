@@ -161,9 +161,7 @@ export default function RWoodPanelProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            Premium veneered MDF panels, brushed, stained and lacquered — requiring 
-            no additional finishing. The authentic beauty of solid wood without compromise, 
-            designed for architects, designers and cabinetmakers who demand perfection.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
@@ -186,7 +184,7 @@ export default function RWoodPanelProductPage() {
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#collection" onClick={(e) => { e.preventDefault(); scrollToSection('collection'); }} className="btn-secondary">
-              Explore the Collection
+              {t('hero.ctaSecondary')}
             </a>
           </div>
 
@@ -214,7 +212,7 @@ export default function RWoodPanelProductPage() {
           
           {/* Veneer quick-selector */}
           <div className="veneer-quick-selector">
-            <span className="selector-label">Select Veneer</span>
+            <span className="selector-label">{t('hero.colorSelector')}</span>
             <div className="veneer-options">
               {allVeneers.slice(0, 6).map((veneer) => (
                 <button
@@ -273,7 +271,7 @@ export default function RWoodPanelProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
-            <h2>Nature, Refined</h2>
+            <h2>{t('overview.title')}</h2>
             <p>
               rWood - Panel brings the warmth and character of solid timber into a prefinished, 
               ready-to-use format. Each panel is crafted from premium A-grade veneer, bonded 
@@ -283,23 +281,23 @@ export default function RWoodPanelProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Premium A-grade veneers — oak, walnut, ash, cherry and birch
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                6-layer UV-cured lacquer for scratch and spill resistance
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                High-density MDF core (700 kg/m³) for structural integrity
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Balanced construction — veneer on both faces for stability
+                {t('overview.feature4')}
               </li>
               <li>
                 <span className="check">✓</span>
-                No additional finishing required — ready from the box
+                {t('overview.feature5')}
               </li>
             </ul>
           </div>

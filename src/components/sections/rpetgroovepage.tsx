@@ -139,9 +139,7 @@ export default function RPetGrooveProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            Transform your space with rPET - Groove acoustic panels. Made from 100% recycled 
-            plastic bottles, these elegant grooved panels combine contemporary design with 
-            exceptional sound absorption. Efficiency meets elegance.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
@@ -191,7 +189,7 @@ export default function RPetGrooveProductPage() {
           </div>
           
           <div className="color-selector">
-            <span className="selector-label">Select Color</span>
+            <span className="selector-label">{t('hero.colorSelector')}</span>
             <div className="color-options">
               {colorOptions.map((color) => (
                 <button
@@ -709,22 +707,22 @@ export default function RPetGrooveProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🔄</span>
                 <div>
-                  <h4>Fully Recyclable</h4>
+                  <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">📦</span>
                 <div>
-                  <h4>Free Take-Back</h4>
-                  <p>We collect panels for recycling</p>
+                  <h4>{t('sustainability.badge3')}</h4>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏭</span>
                 <div>
-                  <h4>Made in Belgium</h4>
-                  <p>Short supply chains, low emissions</p>
+                  <h4>{t('sustainability.badge4')}</h4>
+                  <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
             </div>

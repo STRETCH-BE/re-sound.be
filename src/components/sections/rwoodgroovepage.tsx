@@ -139,9 +139,7 @@ export default function RWoodGrooveProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            Bring natural warmth and sophisticated style to any space with rWood - Groove 
-            acoustic panels. Premium oak and walnut veneers combined with sound-absorbing 
-            felt backing create harmony between aesthetics and acoustics.
+            {t('hero.description')}
           </p>
           
           <div className="hero-usps">
@@ -246,7 +244,7 @@ export default function RWoodGrooveProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
-            <h2>Where Nature Meets Design</h2>
+            <h2>{t('overview.title')}</h2>
             <p>
               rWood - Groove panels transform any room into a space of natural beauty and 
               acoustic comfort. Each panel features premium A-grade oak or walnut veneer, 
@@ -316,7 +314,7 @@ export default function RWoodGrooveProductPage() {
         <div className="section-grid">
           <div className="section-content">
             <span className="section-tag">{t('materials.tag')}</span>
-            <h2>Premium Finishes</h2>
+            <h2>{t('patterns.title')}</h2>
             <p>
               Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent 
               grain patterns and superior quality. Choose from our range of oiled and painted 
@@ -553,14 +551,14 @@ export default function RWoodGrooveProductPage() {
                 <div className="step-number">3</div>
                 <div className="step-content">
                   <h4>{t('installation.step3Title')}</h4>
-                  <p>Slide tongue into groove for seamless connection</p>
+                  <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
                   <h4>{t('installation.step4Title')}</h4>
-                  <p>Add end mouldings for a professional result</p>
+                  <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -593,7 +591,7 @@ export default function RWoodGrooveProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
-            <h2>Responsibly Sourced</h2>
+            <h2>{t('sustainability.title')}</h2>
             <p>
               Every rWood - Groove panel is crafted with sustainability at its core. 
               Our FSC® certification guarantees that the wood comes from responsibly 
@@ -603,28 +601,28 @@ export default function RWoodGrooveProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🌲</span>
                 <div>
-                  <h4>FSC® Certified</h4>
+                  <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>Recycled Felt</h4>
+                  <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏭</span>
                 <div>
-                  <h4>European Production</h4>
-                  <p>Reduced transport emissions</p>
+                  <h4>{t('sustainability.badge3')}</h4>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">📋</span>
                 <div>
-                  <h4>EPD Available</h4>
+                  <h4>{t('sustainability.badge4')}</h4>
                   <p>Full environmental product declaration</p>
                 </div>
               </div>

@@ -326,7 +326,7 @@ export default function RWoodPerfProductPage() {
 
         {/* Core Colour Selector (replaces felt selector placement in Groove) */}
         <div className="core-colour-section">
-          <h3>Core Colour</h3>
+          <h3>{t('patterns.coreColorTitle')}</h3>
           <p className="core-colour-desc">
             Match the core to your veneer to make perforations blend in, 
             or choose a contrasting core for a decorative effect.
@@ -655,7 +655,7 @@ export default function RWoodPerfProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🌲</span>
                 <div>
-                  <h4>FSC&reg; Certified</h4>
+                  <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
@@ -669,15 +669,15 @@ export default function RWoodPerfProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🏭</span>
                 <div>
-                  <h4>European Production</h4>
-                  <p>Renewable energy sources, short supply chains</p>
+                  <h4>{t('sustainability.badge3')}</h4>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">📋</span>
                 <div>
-                  <h4>Ultra-Low Emissions</h4>
-                  <p>No added formaldehyde, EPD available</p>
+                  <h4>{t('sustainability.badge4')}</h4>
+                  <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
             </div>
