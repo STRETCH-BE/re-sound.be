@@ -145,7 +145,7 @@ export default function DivideProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">{{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}}</p>
+          <p className="hero-price">{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}</p>
         </div>
         
         <div className="hero-image">
@@ -275,7 +275,7 @@ export default function DivideProductPage() {
               <div className="highlight">
                 <span className="highlight-icon">🪶</span>
                 <div>
-                  <h4>{t('base.item2Title')}</h4>}
+                  <h4>{t(\'base.item2Title\')}</h4>
                   <p>{t('base.feature2')}</p>
                 </div>
               </div>
@@ -518,7 +518,7 @@ export default function DivideProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>}
+            <h4>{t(\'specs.dimensionsTitle\')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -542,7 +542,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>}
+            <h4>{t(\'specs.acousticsTitle\')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -562,7 +562,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.materialsTitle')}</h4>}
+            <h4>{t(\'specs.materialsTitle\')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -586,7 +586,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>}
+            <h4>{t(\'specs.fireTitle\')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -602,7 +602,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.sustainTitle')}</h4>}
+            <h4>{t(\'specs.sustainTitle\')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -622,7 +622,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.featuresTitle')}</h4>}
+            <h4>{t(\'specs.featuresTitle\')}</h4>
             <table>
               <tbody>
                 <tr>

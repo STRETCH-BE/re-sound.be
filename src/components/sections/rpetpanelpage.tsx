@@ -141,7 +141,7 @@ export default function RPETPanelProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">{t('hero.tagline')}</p>}
+          <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
             Transform any space with rPET - Panel acoustic panels. Made from 100% recycled 
             PET bottles, these lightweight yet powerful sound absorbers deliver maximum 
@@ -151,15 +151,15 @@ export default function RPETPanelProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">{t('hero.usp1')}</span>}
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">{t('hero.usp2')}</span>}
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🪶</span>
-              <span className="usp-text">{t('hero.usp3')}</span>}
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -293,27 +293,27 @@ export default function RPETPanelProductPage() {
         <div className="benefits-grid">
           <div className="benefit-card">
             <div className="benefit-icon">🌱</div>
-            <h4>{t('why.reason1Title')}</h4>}
+            <h4>{t('why.reason1Title')}</h4>
             <p>Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">⭐</div>
-            <h4>{t('why.reason2Title')}</h4>}
+            <h4>{t('why.reason2Title')}</h4>
             <p>Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">🛠️</div>
-            <h4>{t('why.reason3Title')}</h4>}
+            <h4>{t('why.reason3Title')}</h4>
             <p>Lightweight and stable. Cut, drill, mill, and install with standard tools.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">💚</div>
-            <h4>{t('why.reason4Title')}</h4>}
+            <h4>{t('why.reason4Title')}</h4>
             <p>Anti-static, skin-friendly, anti-allergenic. No VOC or formaldehyde emissions.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">🎨</div>
-            <h4>{t('why.reason5Title')}</h4>}
+            <h4>{t('why.reason5Title')}</h4>
             <p>5 standard colors plus any RAL/NCS. Add fabric, laminate, veneer, or custom prints.</p>
           </div>
         </div>
@@ -568,7 +568,7 @@ export default function RPETPanelProductPage() {
                 <line x1="8" y1="23" x2="16" y2="23"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit1Title')}</h4>}
+            <h4>{t('acoustics.benefit1Title')}</h4>
             <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
@@ -580,7 +580,7 @@ export default function RPETPanelProductPage() {
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit2Title')}</h4>}
+            <h4>{t('acoustics.benefit2Title')}</h4>
             <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
@@ -590,7 +590,7 @@ export default function RPETPanelProductPage() {
                 <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit3Title')}</h4>}
+            <h4>{t('acoustics.benefit3Title')}</h4>
             <p>{t('acoustics.benefit3')}s</p>
           </div>
         </div>
@@ -612,28 +612,28 @@ export default function RPETPanelProductPage() {
               <div className="method">
                 <div className="method-icon">🪚</div>
                 <div className="method-content">
-                  <h4>{t('workability.step1Title')}</h4>}
+                  <h4>{t('workability.step1Title')}</h4>
                   <p>{t('workability.step1Desc')}</p>
                 </div>
               </div>
               <div className="method">
                 <div className="method-icon">⚙️</div>
                 <div className="method-content">
-                  <h4>{t('workability.step2Title')}</h4>}
+                  <h4>{t('workability.step2Title')}</h4>
                   <p>{t('workability.step2Desc')}</p>
                 </div>
               </div>
               <div className="method">
                 <div className="method-icon">🔩</div>
                 <div className="method-content">
-                  <h4>{t('workability.step3Title')}</h4>}
+                  <h4>{t('workability.step3Title')}</h4>
                   <p>Secure fixing without splitting</p>
                 </div>
               </div>
               <div className="method">
                 <div className="method-icon">📐</div>
                 <div className="method-content">
-                  <h4>{t('workability.step4Title')}</h4>}
+                  <h4>{t('workability.step4Title')}</h4>
                   <p>Create 3D shapes and corners</p>
                 </div>
               </div>
@@ -681,21 +681,21 @@ export default function RPETPanelProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🍾</span>
                 <div>
-                  <h4>{t('sustainability.cert1')}</h4>}
-                  <p>{t('sustainability.badge1Desc')}</p>}
+                  <h4>{t('sustainability.cert1')}</h4>
+                  <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>{t('sustainability.cert2')}</h4>}
+                  <h4>{t('sustainability.cert2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏷️</span>
                 <div>
-                  <h4>{t('sustainability.cert3')}</h4>}
+                  <h4>{t('sustainability.cert3')}</h4>
                   <p>Class 1 certified for human safety</p>
                 </div>
               </div>

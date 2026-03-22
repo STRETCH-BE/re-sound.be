@@ -140,7 +140,7 @@ export default function RWoodPerfProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">{t('hero.tagline')}</p>}
+          <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
             High-performance drilled acoustic panels combining natural wood beauty with 
             outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered 
@@ -151,15 +151,15 @@ export default function RWoodPerfProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🔘</span>
-              <span className="usp-text">{t('hero.usp1')}</span>}
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔥</span>
-              <span className="usp-text">{t('hero.usp2')}</span>}
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">{t('hero.usp3')}</span>}
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -361,17 +361,17 @@ export default function RWoodPerfProductPage() {
             
             <div className="finish-categories">
               <div className="finish-category">
-                <h4>{t('surfaces.natureVeneers')}</h4>}
+                <h4>{t('surfaces.natureVeneers')}</h4>
                 <p>{t('surfaces.natureDesc')} associated with each wood species. Authentic grain patterns and natural beauty.</p>
               </div>
               <div className="finish-category">
-                <h4>{t('surfaces.geminiVeneers')}</h4>}
+                <h4>{t('surfaces.geminiVeneers')}</h4>
                 <p>{t('surfaces.geminiDesc')}, uniform appearance across large surfaces.</p>
               </div>
             </div>
 
             <div className="felt-options">
-              <h4>{t('surfaces.finishes')}</h4>}
+              <h4>{t('surfaces.finishes')}</h4>
               <div className="felt-selector">
                 <button className="felt-option active">
                   <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #c4a77d, #8b6914)' }} />
@@ -512,7 +512,7 @@ export default function RWoodPerfProductPage() {
               </div>
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
-                <span className="badge-text">{t('hero.usp3')}</span>}
+                <span className="badge-text">{t('hero.usp3')}</span>
               </div>
             </div>
 
@@ -546,7 +546,7 @@ export default function RWoodPerfProductPage() {
                 <circle cx="12" cy="12" r="2"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit1Title')}</h4>}
+            <h4>{t('acoustics.benefit1Title')}</h4>
             <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
@@ -555,7 +555,7 @@ export default function RWoodPerfProductPage() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit2Title')}</h4>}
+            <h4>{t('acoustics.benefit2Title')}</h4>
             <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
@@ -566,7 +566,7 @@ export default function RWoodPerfProductPage() {
                 <path d="M6 20v-4"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit3Title')}</h4>}
+            <h4>{t('acoustics.benefit3Title')}</h4>
             <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
@@ -589,28 +589,28 @@ export default function RWoodPerfProductPage() {
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>{t('installation.step1Title')}</h4>}
+                  <h4>{t('installation.step1Title')}</h4>
                   <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>{t('installation.step2Title')}</h4>}
+                  <h4>{t('installation.step2Title')}</h4>
                   <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>{t('installation.step3Title')}</h4>}
+                  <h4>{t('installation.step3Title')}</h4>
                   <p>Concealed clip system for tool-free, zero-gap mounting</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>{t('installation.step4Title')}</h4>}
+                  <h4>{t('installation.step4Title')}</h4>
                   <p>In-line perforation patterns with seamless over-veneered joints</p>
                 </div>
               </div>
@@ -694,7 +694,7 @@ export default function RWoodPerfProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>}
+            <h4>{t('specs.dimensionsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -718,7 +718,7 @@ export default function RWoodPerfProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>}
+            <h4>{t('specs.acousticsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -742,7 +742,7 @@ export default function RWoodPerfProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.perforationsTitle')}</h4>}
+            <h4>{t('specs.perforationsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -766,7 +766,7 @@ export default function RWoodPerfProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>}
+            <h4>{t('specs.fireTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -891,7 +891,7 @@ export default function RWoodPerfProductPage() {
       <section className="content-section accessories-section dark">
         <div className="accessories-header">
           <span className="section-tag">{t('accessories.tag')}</span>
-          <h2>{t('accessories.title')}</h2>}
+          <h2>{t('accessories.title')}</h2>
           <p>Professional finishing elements for a flawless result</p>
         </div>
 

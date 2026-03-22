@@ -146,7 +146,7 @@ export default function SolidProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">{{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}}</p>
+          <p className="hero-price">{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}</p>
         </div>
         
         <div className="hero-image">

@@ -159,7 +159,7 @@ export default function RWoodPanelProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">{t('hero.tagline')}</p>}
+          <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
             Premium veneered MDF panels, brushed, stained and lacquered — requiring 
             no additional finishing. The authentic beauty of solid wood without compromise, 
@@ -169,15 +169,15 @@ export default function RWoodPanelProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🌳</span>
-              <span className="usp-text">{t('hero.usp1')}</span>}
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">✦</span>
-              <span className="usp-text">{t('hero.usp2')}</span>}
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🇪🇺</span>
-              <span className="usp-text">{t('hero.usp3')}</span>}
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -324,7 +324,7 @@ export default function RWoodPanelProductPage() {
             <div className="comp-layer-info">
               <span className="comp-layer-number">01</span>
               <div>
-                <h4>{t('anatomy.layer1')}</h4>}
+                <h4>{t('anatomy.layer1')}</h4>
                 <p>A-grade real wood veneer, brushed, stained and protected with 6 layers of UV-cured acrylate urethane lacquer. Soft-touch super matt finish.</p>
               </div>
             </div>
@@ -341,7 +341,7 @@ export default function RWoodPanelProductPage() {
             <div className="comp-layer-info">
               <span className="comp-layer-number">02</span>
               <div>
-                <h4>{t('anatomy.layer2')}</h4>}
+                <h4>{t('anatomy.layer2')}</h4>
                 <p>700 kg/m³ FSC® certified MDF. Available in standard, moisture-resistant (MR) and fire-retardant (FR) grades.</p>
               </div>
             </div>
@@ -358,7 +358,7 @@ export default function RWoodPanelProductPage() {
             <div className="comp-layer-info">
               <span className="comp-layer-number">03</span>
               <div>
-                <h4>{t('anatomy.layer3')}</h4>}
+                <h4>{t('anatomy.layer3')}</h4>
                 <p>Matching veneer backing ensures dimensional stability and prevents warping. Finished or unfinished options.</p>
               </div>
             </div>
@@ -466,7 +466,7 @@ export default function RWoodPanelProductPage() {
             </div>
 
             <div className="finish-advantages">
-              <h4>{t('anatomy.keyAdvTitle')}</h4>}
+              <h4>{t('anatomy.keyAdvTitle')}</h4>
               <div className="advantages-grid">
                 <div className="advantage">
                   <span className="adv-icon">🛡️</span>
@@ -559,7 +559,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M18 6V4"/>
               </svg>
             </div>
-            <h4>{t('applications.app1Title')}</h4>}
+            <h4>{t('applications.app1Title')}</h4>
             <p>{t('applications.app1Desc')} shelving and bespoke furniture. Easy to machine with standard woodworking tools.</p>
           </div>
           <div className="application-card">
@@ -570,7 +570,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M9 3v18"/>
               </svg>
             </div>
-            <h4>{t('applications.app2Title')}</h4>}
+            <h4>{t('applications.app2Title')}</h4>
             <p>{t('applications.app2Desc')} Creates stunning visual impact with the warmth of natural wood.</p>
           </div>
           <div className="application-card">
@@ -581,7 +581,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M9 21v-6h6v6"/>
               </svg>
             </div>
-            <h4>{t('applications.app3Title')}</h4>}
+            <h4>{t('applications.app3Title')}</h4>
             <p>{t('applications.app3Desc')} Lightweight slim format available for reduced structural load.</p>
           </div>
           <div className="application-card">
@@ -592,7 +592,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M2 12l10 5 10-5"/>
               </svg>
             </div>
-            <h4>{t('applications.app4Title')}</h4>}
+            <h4>{t('applications.app4Title')}</h4>
             <p>Shop fittings, bar counters, hotel lobbies and restaurant interiors. Consistent quality across large-scale projects.</p>
           </div>
         </div>
@@ -691,7 +691,7 @@ export default function RWoodPanelProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>}
+            <h4>{t('specs.dimensionsTitle')}</h4>
             <table>
               <tbody>
                 <tr><td>Panel width</td><td>1220 mm</td></tr>

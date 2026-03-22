@@ -137,7 +137,7 @@ export default function RPetGrooveProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">{t('hero.tagline')}</p>}
+          <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
             Transform your space with rPET - Groove acoustic panels. Made from 100% recycled 
             plastic bottles, these elegant grooved panels combine contemporary design with 
@@ -147,15 +147,15 @@ export default function RPetGrooveProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">{t('hero.usp1')}</span>}
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">{t('hero.usp2')}</span>}
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🎨</span>
-              <span className="usp-text">{t('hero.usp3')}</span>}
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -289,28 +289,28 @@ export default function RPetGrooveProductPage() {
             <div className="recycling-step">
               <div className="step-icon">🍾</div>
               <div className="step-number">01</div>
-              <h4>{t('fromBottles.step1Title')}</h4>}
+              <h4>{t('fromBottles.step1Title')}</h4>
               <p>{t('fromBottles.step1Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
               <div className="step-icon">⚙️</div>
               <div className="step-number">02</div>
-              <h4>{t('fromBottles.step2Title')}</h4>}
+              <h4>{t('fromBottles.step2Title')}</h4>
               <p>{t('fromBottles.step2Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
               <div className="step-icon">🧵</div>
               <div className="step-number">03</div>
-              <h4>{t('fromBottles.step3Title')}</h4>}
+              <h4>{t('fromBottles.step3Title')}</h4>
               <p>{t('fromBottles.step3Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
               <div className="step-icon">✨</div>
               <div className="step-number">04</div>
-              <h4>{t('fromBottles.step4Title')}</h4>}
+              <h4>{t('fromBottles.step4Title')}</h4>
               <p>{t('fromBottles.step4Desc')}</p>
             </div>
           </div>
@@ -326,7 +326,7 @@ export default function RPetGrooveProductPage() {
       <section id="colors" className="content-section colors-section">
         <div className="colors-header">
           <span className="section-tag">{t('colors.tag')}</span>
-          <h2>{t('colors.title')}</h2>}
+          <h2>{t('colors.title')}</h2>
           <p>
             From neutral tones to bold accents, our curated color palette fits seamlessly 
             into any interior design concept. All colors are achieved through dope-dyeing, 
@@ -357,17 +357,17 @@ export default function RPetGrooveProductPage() {
         <div className="color-features">
           <div className="color-feature">
             <span className="feature-icon">☀️</span>
-            <h4>{t('colors.feature1')}</h4>}
+            <h4>{t('colors.feature1')}</h4>
             <p>{t('colors.feature1Desc')}</p>
           </div>
           <div className="color-feature">
             <span className="feature-icon">🧹</span>
-            <h4>{t('colors.feature2')}</h4>}
+            <h4>{t('colors.feature2')}</h4>
             <p>{t('colors.feature2Desc')}</p>
           </div>
           <div className="color-feature">
             <span className="feature-icon">🔄</span>
-            <h4>{t('colors.feature3')}</h4>}
+            <h4>{t('colors.feature3')}</h4>
             <p>{t('colors.feature3Desc')}</p>
           </div>
         </div>
@@ -536,7 +536,7 @@ export default function RPetGrooveProductPage() {
             </div>
 
             <div className="thickness-selector">
-              <h4>{t('thickness.sectionTitle')}</h4>}
+              <h4>{t('thickness.sectionTitle')}</h4>
               <div className="thickness-options">
                 {thicknessOptions.map((thickness) => (
                   <button
@@ -570,7 +570,7 @@ export default function RPetGrooveProductPage() {
                 <circle cx="12" cy="12" r="2"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit1Title')}</h4>}
+            <h4>{t('acoustics.benefit1Title')}</h4>
             <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
@@ -582,7 +582,7 @@ export default function RPetGrooveProductPage() {
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit2Title')}</h4>}
+            <h4>{t('acoustics.benefit2Title')}</h4>
             <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
@@ -593,7 +593,7 @@ export default function RPetGrooveProductPage() {
                 <path d="M6 20v-4"/>
               </svg>
             </div>
-            <h4>{t('acoustics.benefit3Title')}</h4>}
+            <h4>{t('acoustics.benefit3Title')}</h4>
             <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
@@ -615,35 +615,35 @@ export default function RPetGrooveProductPage() {
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>{t('installation.step1Title')}</h4>}
+                  <h4>{t('installation.step1Title')}</h4>
                   <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>{t('installation.step2Title')}</h4>}
+                  <h4>{t('installation.step2Title')}</h4>
                   <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>{t('installation.step3Title')}</h4>}
+                  <h4>{t('installation.step3Title')}</h4>
                   <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>{t('installation.step4Title')}</h4>}
+                  <h4>{t('installation.step4Title')}</h4>
                   <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
             </div>
 
             <div className="mounting-options">
-              <h4>{t('installation.mountingOptions')}</h4>}
+              <h4>{t('installation.mountingOptions')}</h4>
               <div className="mounting-grid">
                 <div className="mounting-option">
                   <span className="mounting-icon">🧲</span>
@@ -942,7 +942,7 @@ export default function RPetGrooveProductPage() {
       <section className="content-section applications-section dark">
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
-          <h2>{t('applications.title')}</h2>}
+          <h2>{t('applications.title')}</h2>
           <p>rPET - Groove panels fit seamlessly into diverse environments</p>
         </div>
 

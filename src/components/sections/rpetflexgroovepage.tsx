@@ -136,7 +136,7 @@ export default function RPETFlexGrooveProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>rPET Flex-Groove</h1>
-          <p className="hero-tagline">{t('hero.tagline')}</p>}
+          <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
             The ultimate acoustic solution for curved surfaces. Made from recycled PET felt 
             with precision V-cut grooves, these flexible panels adapt seamlessly to columns, 
@@ -146,15 +146,15 @@ export default function RPETFlexGrooveProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🔄</span>
-              <span className="usp-text">{t('hero.usp1')}</span>}
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔥</span>
-              <span className="usp-text">{t('hero.usp2')}</span>}
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">{t('hero.usp3')}</span>}
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -242,7 +242,7 @@ export default function RPETFlexGrooveProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
-            <h2>{t('overview.title')}</h2>}
+            <h2>{t('overview.title')}</h2>
             <p>
               Flex-Groove panels provide a versatile acoustic solution for curved surfaces, 
               effortlessly adapting to any shape. Suitable for inner and outer radii, their 
@@ -275,7 +275,7 @@ export default function RPETFlexGrooveProductPage() {
       <section id="flexibility" className="content-section flexibility-section dark">
         <div className="flexibility-header">
           <span className="section-tag">{t('technology.tag')}</span>
-          <h2>{t('technology.title')}</h2>}
+          <h2>{t('technology.title')}</h2>
           <p>
             Each panel is incised with precision V-cuts, allowing it to bend without breaking. 
             This smart cut creates the signature ribbed texture — a series of linear grooves 
@@ -316,17 +316,17 @@ export default function RPETFlexGrooveProductPage() {
         <div className="flexibility-benefits">
           <div className="benefit">
             <span className="benefit-icon">📐</span>
-            <h4>{t('technology.feature1Title')}</h4>}
+            <h4>{t('technology.feature1Title')}</h4>
             <p>{t('technology.feature1Desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🔄</span>
-            <h4>{t('technology.feature2Title')}</h4>}
+            <h4>{t('technology.feature2Title')}</h4>
             <p>{t('technology.feature2Desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">✂️</span>
-            <h4>{t('technology.feature3Title')}</h4>}
+            <h4>{t('technology.feature3Title')}</h4>
             <p>{t('technology.feature3Desc')}</p>
           </div>
         </div>
@@ -337,7 +337,7 @@ export default function RPETFlexGrooveProductPage() {
         <div className="section-grid">
           <div className="section-content">
             <span className="section-tag">{t('colors.tag')}</span>
-            <h2>{t('colors.title')}</h2>}
+            <h2>{t('colors.title')}</h2>
             <p>
               Our carefully curated color palette offers versatile options for any interior. 
               From soft neutrals to bold statement colors, each shade is designed to complement 
@@ -391,7 +391,7 @@ export default function RPETFlexGrooveProductPage() {
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
-          <h2>{t('acoustics.title')}</h2>}
+          <h2>{t('acoustics.title')}</h2>
           <p>
             Made from fire-retardant recycled PET felt, Flex-Groove panels provide 
             effective sound absorption while maintaining visual continuity across 
@@ -427,7 +427,7 @@ export default function RPETFlexGrooveProductPage() {
         <div className="acoustics-benefits">
           <div className="benefit">
             <span className="benefit-icon">🔇</span>
-            <h4>{t('acoustics.feature1Title')}</h4>}
+            <h4>{t('acoustics.feature1Title')}</h4>
             <p>{t('acoustics.feature1Desc')}</p>
           </div>
           <div className="benefit">
@@ -438,7 +438,7 @@ export default function RPETFlexGrooveProductPage() {
           <div className="benefit">
             <span className="benefit-icon">♻️</span>
             <h4>100% Recycled</h4>
-            <p>{t('acoustics.feature3Desc')}</p>}
+            <p>{t('acoustics.feature3Desc')}</p>
           </div>
         </div>
       </section>
@@ -448,7 +448,7 @@ export default function RPETFlexGrooveProductPage() {
         <div className="section-grid reverse">
           <div className="section-content">
             <span className="section-tag">{t('installation.tag')}</span>
-            <h2>{t('installation.title')}</h2>}
+            <h2>{t('installation.title')}</h2>
             <p>
               Designed to span standard floor-to-ceiling heights, the panels simplify 
               alignment and reduce installation time. The adaptable form makes them 
@@ -460,28 +460,28 @@ export default function RPETFlexGrooveProductPage() {
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>{t('installation.step1Title')}</h4>}
+                  <h4>{t('installation.step1Title')}</h4>
                   <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>{t('installation.step2Title')}</h4>}
+                  <h4>{t('installation.step2Title')}</h4>
                   <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>{t('installation.step3Title')}</h4>}
+                  <h4>{t('installation.step3Title')}</h4>
                   <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>{t('installation.step4Title')}</h4>}
+                  <h4>{t('installation.step4Title')}</h4>
                   <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
@@ -515,7 +515,7 @@ export default function RPETFlexGrooveProductPage() {
           </div>
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
-            <h2>{t('sustainability.title')}</h2>}
+            <h2>{t('sustainability.title')}</h2>
             <p>
               Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, 
               giving new life to waste materials. Our circular approach ensures that 
@@ -526,7 +526,7 @@ export default function RPETFlexGrooveProductPage() {
                 <span className="sustain-icon">🍾</span>
                 <div>
                   <h4>Recycled PET</h4>
-                  <p>{t('acoustics.feature3Desc')}</p>}
+                  <p>{t('acoustics.feature3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
@@ -559,7 +559,7 @@ export default function RPETFlexGrooveProductPage() {
       <section id="specs" className="content-section specs-section">
         <div className="specs-header">
           <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>}
+          <h2>{t('specs.title')}</h2>
         </div>
 
         <div className="specs-grid">
@@ -709,7 +709,7 @@ export default function RPETFlexGrooveProductPage() {
       <section id="gallery" className="content-section gallery-section">
         <div className="gallery-header">
           <span className="section-tag">{t('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>}
+          <h2>{t('gallery.title')}</h2>
         </div>
 
         <div className="gallery-grid">
@@ -732,7 +732,7 @@ export default function RPETFlexGrooveProductPage() {
       <section id="downloads" className="content-section downloads-section">
         <div className="downloads-header">
           <span className="section-tag">{t('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>}
+          <h2>{tPage('downloads.title')}</h2>
         </div>
 
         <div className="downloads-grid">
@@ -757,7 +757,7 @@ export default function RPETFlexGrooveProductPage() {
       <section className="content-section applications-section dark">
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
-          <h2>{t('applications.title')}</h2>}
+          <h2>{t('applications.title')}</h2>
           <p>Wherever curves meet acoustics</p>
         </div>
 
@@ -797,7 +797,7 @@ export default function RPETFlexGrooveProductPage() {
       {/* CTA Section */}
       <section className="content-section cta-section">
         <div className="cta-content">
-          <h2>{t('cta.title')}</h2>}
+          <h2>{t('cta.title')}</h2>
           <p>
             Get a personalized quote for your project. Our team will help you 
             choose the perfect color and calculate your requirements.
