@@ -222,12 +222,7 @@ export default function DivideProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
-            <p>
-              Re-Sound Divide is the first freestanding acoustic product designed for 
-              ultimate flexibility. Create private zones, divide open spaces, and 
-              control background noise—all while maintaining the freedom to reconfigure 
-              as your needs change.
-            </p>
+            <p>{t('overview.description')}</p>
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
@@ -256,12 +251,7 @@ export default function DivideProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('base.tag')}</span>
             <h2>{t('base.title')}</h2>
-            <p>
-              Thanks to the integrated base, Divide is always stable and stands freely 
-              on any floor. The lightweight modules can be easily moved for optimal 
-              flexibility—perfect for dynamic work environments that need to adapt 
-              quickly.
-            </p>
+            <p>{t('base.description')}</p>
             <div className="feature-highlights">
               <div className="highlight">
                 <span className="highlight-icon">⚖️</span>
@@ -316,10 +306,7 @@ export default function DivideProductPage() {
             <span className="section-tag">{t('magnetic.tag')}</span>
             <h2>{t('magnetic.title')}</h2>
             <p>
-              The modules connect effortlessly through subtle magnets integrated into 
-              the fabric. Assemble and disassemble with ease—invisible, subtly processed, 
-              yet strong enough for worry-free use. No tools, no complexity, just snap 
-              and go.
+              {t('magnetic.description')}
             </p>
             <div className="connect-demo">
               <div className="connect-step">
@@ -354,9 +341,7 @@ export default function DivideProductPage() {
             <span className="section-tag">{t('modular.tag')}</span>
             <h2>{t('modular.title')}</h2>
             <p>
-              Decide the layout of your space yourself. Divide is a modular system 
-              that adapts to your needs. Whether you choose a long room divider or 
-              several short configurations—let your creativity run wild.
+              {t('modular.description')}
             </p>
             <div className="config-options">
               <div className="config">
@@ -419,10 +404,7 @@ export default function DivideProductPage() {
             <span className="section-tag">{t('features.tag')}</span>
             <h2>{t('features.title')}</h2>
             <p>
-              Like all Re-Sound products, Divide is carefully designed with circularity 
-              at its core. Made from recycled textiles and industrial waste, contributing 
-              to a more sustainable future. At end of life, return it to us for free 
-              recycling.
+              {t('features.description')}
             </p>
             <div className="circular-stats">
               <div className="stat">
@@ -448,9 +430,7 @@ export default function DivideProductPage() {
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
-            Re-Sound Divide absorbs sound from both sides, making it perfect for 
-            creating acoustic privacy in open environments. Stop being disturbed 
-            by background noise and create focused, productive spaces.
+            {t('acoustics.description')}
           </p>
         </div>
 
