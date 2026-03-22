@@ -812,7 +812,8 @@
       "surface": "Oberfläche",
       "finish": "Oberflächenbehandlung",
       "epd": "EPD verfügbar",
-      "fscCertified": "FSC® zertifiziert"
+      "fscCertified": "FSC® zertifiziert",
+      "dimPanelWidth": "Panelbreite"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -836,6 +837,40 @@
         "title": "Stressreduzierung",
         "desc": "Ruhigere, komfortablere Umgebungen schaffen"
       }
+    },
+    "specLabels": {
+      "thickness": "Stärke",
+      "weight": "Gewicht",
+      "density": "Dichte",
+      "testStandard": "Prüfnorm",
+      "envLabel": "Umwelt",
+      "health": "Gesundheit",
+      "installation": "Montage",
+      "environment": "Umgebung",
+      "envVal": "Innenbereich (Trockenbereiche)",
+      "soundAbsorbed": "Schall Absorbiert",
+      "panelCrossSection": "Querschnitt",
+      "fireRating": "Brandklasse",
+      "noiseReduction": "Lärmreduzierung",
+      "wallsCeilings": "Wände & Decken",
+      "reactionFire": "Brandreaktion",
+      "resistanceFire": "Brandwiderstand",
+      "fireRetardant": "Brandhemmend",
+      "surface": "Oberfläche",
+      "edges": "Kanten",
+      "acousticFelt": "Akustikfilz",
+      "woodSourcing": "Holzbeschaffung",
+      "feltCert": "Filzzertifizierung",
+      "epd": "EPD verfügbar",
+      "vocEmissions": "VOC-Emissionen",
+      "moistureResistant": "Feuchtigkeitsresistent",
+      "connection": "Verbindung",
+      "backlitOption": "Hintergrundbeleuchtung",
+      "mountingSystem": "Befestigungssystem",
+      "concealedClip": "Verdecktes Clipsystem",
+      "coreDensity": "Kerndichte",
+      "formaldehyde": "Formaldehyd",
+      "fscCert": "FSC® zertifiziert"
     }
   },
   "interiorPage": {
@@ -1162,7 +1197,8 @@
       "feature1": "Aus 100% recycelten Kunststoffflaschen",
       "feature2": "CNC-geschnittene Rillenmuster",
       "feature3": "Leicht und einfach zu handhaben",
-      "feature4": "Geeignet für Wände und Decken"
+      "feature4": "Geeignet für Wände und Decken",
+      "description2": "rPET - Groove Paneele verleihen jedem Raum eine zeitgemäße Note und reduzieren Lärmstörungen. Das sichtbare Lamellendesign schafft visuelle Tiefe und Textur — ideal für moderne Büros, Konferenzräume, Lobbys, Restaurants und Empfangsbereiche."
     },
     "fromBottles": {
       "tag": "DIE REISE",
@@ -1180,14 +1216,16 @@
       "step4Title": "Veredelung",
       "step4Desc": "CNC-Präzisionsschnitt erzeugt die charakteristischen Rillenmuster",
       "description": "Jedes rPET - Groove Panel gibt etwa 60 recycelten Kunststoffflaschen ein neues Leben. Unser Herstellungsprozess verwandelt post-consumer PET-Abfall in hochleistungsfähigen Akustikfilz.",
-      "statLabel": "Recycelte Flaschen pro Panel"
+      "statLabel": "Recycelte Flaschen pro Panel",
+      "description2": "Jedes rPET - Groove Panel gibt etwa 60 recycelten Kunststoffflaschen ein neues Leben. Unser Herstellungsprozess verwandelt post-consumer PET-Abfall in hochleistungsfähigen Akustikfilz und schafft so ein wirklich kreislauffähiges Produkt."
     },
     "patterns": {
       "tag": "DESIGNOPTIONEN",
       "title": "Wählen Sie Ihr Muster",
       "description": "Vier charakteristische Rillenmuster für jede architektonische Vision. Von klaren parallelen Linien bis zu dynamischen Chevrons, jedes Muster ist präzise CNC-geschnitten.",
       "groovesLabel": "Rillen",
-      "spacingLabel": "Abstand:"
+      "spacingLabel": "Abstand:",
+      "description2": "Vier charakteristische Rillenmuster für jede architektonische Vision. Von klaren parallelen Linien bis zu dynamischen Chevrons — jedes Muster ist präzise CNC-geschnitten für perfekte Konsistenz."
     },
     "colors": {
       "title": "Mehrere Designerfarben",
@@ -1199,7 +1237,8 @@
       "feature2Desc": "Staubsaugen oder mit feuchtem Tuch abwischen",
       "feature3": "Konsistenz garantiert",
       "feature3Desc": "Farbkonsistenz von Charge zu Charge garantiert",
-      "colorsDescription": "Von neutralen Tönen bis zu kräftigen Akzenten fügt sich unsere kuratierte Farbpalette harmonisch in jedes Innenraumkonzept. Alle Farben werden durch Dope-Färbung erzielt, was hervorragende Farbechtheit und UV-Beständigkeit garantiert."
+      "colorsDescription": "Von neutralen Tönen bis zu kräftigen Akzenten fügt sich unsere kuratierte Farbpalette harmonisch in jedes Innenraumkonzept. Alle Farben werden durch Dope-Färbung erzielt, was hervorragende Farbechtheit und UV-Beständigkeit garantiert.",
+      "description2": "Von neutralen Tönen bis zu kräftigen Akzenten fügt sich unsere Farbpalette harmonisch in jedes Innenraumkonzept. Alle Farben werden durch Dope-Färbung erzielt, was hervorragende Farbechtheit und UV-Beständigkeit garantiert."
     },
     "thickness": {
       "title": "Stärke Wählen",
@@ -1225,7 +1264,8 @@
       "layer3Name": "Montagefläche",
       "layer3Desc": "Direkte Wand-/Deckenbefestigung",
       "waveLabel": "Schallwellen absorbiert",
-      "certNote": "Getestet nach ISO 354 & ASTM C423"
+      "certNote": "Getestet nach ISO 354 & ASTM C423",
+      "description2": "Das einzigartige Rillendesign kombiniert mit hochdichtem recyceltem PET-Filz schafft außergewöhnliche Schallabsorption. Reduzieren Sie Echo, eliminieren Sie Lärm und schaffen Sie Räume, die für Ohr und Auge gleichermaßen angenehm sind."
     },
     "installation": {
       "tag": "EINFACHE MONTAGE",
@@ -1243,7 +1283,8 @@
       "description": "rPET - Groove Paneele sind für schnelle und einfache Installation ausgelegt. Ihre leichte Konstruktion ermöglicht eine Einzelperson-Montage.",
       "mounting2": "Z-Clips",
       "mounting3": "Schrauben",
-      "mounting4": "Latten"
+      "mounting4": "Latten",
+      "description2": "rPET - Groove Paneele sind für schnelle und einfache Montage ausgelegt. Ihre leichte Konstruktion ermöglicht die Einzelperson-Handhabung, und mehrere Befestigungsoptionen bieten Flexibilität für jedes Projekt."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
@@ -1257,7 +1298,8 @@
       "badge1Desc": "Aus post-consumer PET-Flaschen hergestellt",
       "badge2Desc": "Kann am Lebensende recycelt werden",
       "badge3Desc": "Wir sammeln Paneele zum Recyceln",
-      "badge4Desc": "Kurze Lieferketten, niedrige Emissionen"
+      "badge4Desc": "Kurze Lieferketten, niedrige Emissionen",
+      "description2": "rPET - Groove Paneele verkörpern die Kreislaufwirtschaft. Vollständig aus post-consumer recyceltem Kunststoff hergestellt, können sie am Lebensende erneut recycelt werden. Wir bieten kostenlose Rücknahme."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1285,7 +1327,7 @@
       "certHealthValue": "OEKO-TEX® Standard 100",
       "certEnv": "Umwelt",
       "certEnvValue": "EPD verfügbar",
-      "certVOC": "VOC-Emissionen",
+      "certVOC": "Niedrige Emissionen / E1",
       "certVOCValue": "Niedrige Emission / E1",
       "certRecycled": "Recyclinganteil",
       "certRecycledValue": "GRS zertifiziert",
@@ -1321,7 +1363,19 @@
       "fireCert": "Zertifizierung",
       "appWalls": "Wandpaneele",
       "appCeilings": "Deckenpaneele",
-      "appEnvironment": "Umgebung"
+      "appEnvironment": "Umgebung",
+      "matRecycledPET": "100% Recyceltes PET",
+      "matDensity": "Dichte",
+      "colorsLabel": "Farben",
+      "colorsVal": "12 Standardfarben",
+      "customColors": "Sonderfarben",
+      "customColorsVal": "Verfügbar (MOQ erforderlich)",
+      "certEPD": "EPD verfügbar",
+      "certGRS": "GRS zertifiziert",
+      "appIdealFor": "Ideal für",
+      "appIdealVal": "Büros, Konferenzräume, Lobbys",
+      "appAlso": "Auch geeignet",
+      "appAlsoVal": "Restaurants, Hotels, Schulen"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1343,6 +1397,9 @@
     "downloads": {
       "installationGuide": "Montageanleitung",
       "colorChart": "Farbkarte"
+    },
+    "cta2": {
+      "freeNote": "Kostenlose Muster • Hergestellt in Belgien • 100% Recycelt"
     }
   },
   "rpetPanelPage": {
@@ -1527,6 +1584,9 @@
       "acousticTestReport": "Akustikprüfbericht (ISO 354)",
       "fireCertificate": "Brandschutzzertifikat (EN 13501-1)",
       "oekoTexCert": "OEKO-TEX® Zertifikat"
+    },
+    "cta2": {
+      "freeNote": "Kostenlose Muster • Hergestellt in Belgien • 100% Recyclierbar"
     }
   },
   "rwoodGroovePage": {
@@ -1547,7 +1607,8 @@
       "feature2": "Integrierter akustischer Filzrücken",
       "feature3": "Nahtlose Paneel-zu-Paneel-Verbindung",
       "feature4": "Geeignet für Wände und Decken",
-      "description": "rWood - Groove Paneele verwandeln jeden Raum in eine anspruchsvolle akustische Umgebung. Die Kombination aus präzisionsgefrästen Rillen und Premium-Holzfurnieren schafft eine Oberfläche, die visuell beeindruckend und akustisch effektiv ist."
+      "description": "rWood - Groove Paneele verwandeln jeden Raum in eine anspruchsvolle akustische Umgebung. Die Kombination aus präzisionsgefrästen Rillen und Premium-Holzfurnieren schafft eine Oberfläche, die visuell beeindruckend und akustisch effektiv ist.",
+      "description2": "rWood - Groove Paneele verwandeln jeden Raum in einen Ort natürlicher Schönheit und akustischen Komforts. Jedes Panel hat Premium A-Grad Eichen- oder Walnussfurnier, präzisionsgefräst für die charakteristische lineare Ästhetik."
     },
     "oakCollection": {
       "title": "Eichenkollektion",
@@ -1567,7 +1628,11 @@
       "benefit3Title": "Geprüfte Leistung",
       "benefit3": "Unabhängig verifizierte Akustikdaten",
       "description": "Das einzigartige Rillendesign kombiniert mit hochwertigem Akustikfilz schafft außergewöhnliche Schallabsorption.",
-      "ratingLabel": "Absorption"
+      "ratingLabel": "Absorption",
+      "description2": "Das einzigartige Rillendesign kombiniert mit hochwertigem Akustikfilz schafft außergewöhnliche Schallabsorption. Reduzieren Sie Echo, eliminieren Sie Lärm und schaffen Sie komfortable Räume.",
+      "diagramTitle": "Querschnitt",
+      "soundAbsorbed": "Schall Absorbiert",
+      "testStandard": "Prüfnorm"
     },
     "installation": {
       "tag": "EINFACHE MONTAGE",
@@ -1580,7 +1645,8 @@
       "step3Desc": "Feder in Nut schieben für nahtlose Verbindung",
       "step4Title": "Abschließen",
       "step4Desc": "Endprofile für professionelles Ergebnis hinzufügen",
-      "description": "rWood - Groove Paneele verfügen über eine innovative Nut-und-Feder-Verbindung für schnelle und einfache Montage."
+      "description": "rWood - Groove Paneele verfügen über eine innovative Nut-und-Feder-Verbindung für schnelle und einfache Montage.",
+      "description2": "rWood - Groove Paneele verfügen über ein innovatives Nut-und-Feder-Verbindungssystem, das unsichtbare Fugen und eine einheitliche Oberfläche gewährleistet. Ob professioneller Installateur oder erfahrener Heimwerker — unser System macht die Montage unkompliziert."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
@@ -1593,7 +1659,8 @@
       "badge3Desc": "Reduzierte Transportemissionen",
       "badge4": "EPD Verfügbar",
       "badge4Desc": "Vollständige Umweltproduktdeklaration",
-      "description": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unser FSC®-zertifiziertes Holz stammt aus verantwortungsvoll bewirtschafteten Wäldern."
+      "description": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unser FSC®-zertifiziertes Holz stammt aus verantwortungsvoll bewirtschafteten Wäldern.",
+      "description2": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unsere FSC®-Zertifizierung garantiert, dass das Holz aus verantwortungsvoll bewirtschafteten Wäldern stammt, die Umwelt-, Sozial- und Wirtschaftsvorteile bieten."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1615,7 +1682,23 @@
       "matCoreVal": "MDF (Standard / feuchtigkeitsresistent / brandhemmend)",
       "matBacking": "Rücken",
       "matBackingVal": "Recyceltes PET (3mm)",
-      "matFinish": "Oberfläche"
+      "matFinish": "Oberfläche",
+      "finishVal": "Öl / Lack",
+      "stdPanels": "Standardpaneele",
+      "fireMdfVal": "Brandhemmendes MDF",
+      "woodSourcing": "Holzbeschaffung",
+      "feltCert": "Filzzertifizierung",
+      "envLabel": "Umwelt",
+      "vocLabel": "VOC-Emissionen",
+      "vocVal": "E1 / Niedrige Emissionen",
+      "appInstall": "Montage",
+      "appWalls": "Wände & Decken",
+      "appEnv": "Umgebung",
+      "appEnvVal": "Innenbereich (Trockenbereiche)",
+      "appMoist": "Feuchtigkeitsresistent",
+      "appMoistVal": "Für feuchte Bereiche verfügbar",
+      "appConn": "Verbindung",
+      "appConnVal": "Nut & Feder"
     },
     "accessories": {
       "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
@@ -1639,7 +1722,8 @@
     "patterns": {
       "tag": "DESIGNOPTIONEN",
       "title": "Premium Oberflächen",
-      "description": "Vier markante Rillenmuster für jede architektonische Vision. Von klassischem Batten bis modernem Linear."
+      "description": "Vier markante Rillenmuster für jede architektonische Vision. Von klassischem Batten bis modernem Linear.",
+      "description2": "Vier markante Rillenmuster für jede architektonische Vision. Von klassischen ausgewogenen Proportionen bis zu kühnen breiten Streifen — finden Sie den perfekten Ausdruck für Ihren Raum."
     },
     "materials": {
       "tag": "MATERIALIEN",
@@ -1656,11 +1740,15 @@
       "layer3Name": "Akustischer Filzrücken",
       "layer3Desc": "Recyceltes PET, 3mm stark",
       "waveLabel": "Schallwellen absorbiert",
-      "certNote": "Getestet und zertifiziert nach ISO 11654"
+      "certNote": "Getestet und zertifiziert nach ISO 11654",
+      "description2": "Jedes rWood - Groove Panel wird mit A-Grad Furnier gefertigt, das konsistente Maserungsmuster und überlegene Qualität sicherstellt. Wählen Sie aus unserem Sortiment von geölten und lackierten Oberflächen."
     },
     "downloads": {
       "installationGuide": "Montageanleitung",
       "colorChart": "Farb- & Oberflächenguide"
+    },
+    "cta2": {
+      "freeNote": "Kostenlose Muster • Hergestellt in Europa • FSC® zertifiziert"
     }
   },
   "rwoodPerfPage": {
@@ -1671,7 +1759,8 @@
       "description": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten bieten höchste Brandschutz- und Akustikkontrolle.",
       "usp1": "Runde Perforationen",
       "usp2": "Brandschutz B2-s1, d0",
-      "usp3": "Bis Klasse B"
+      "usp3": "Bis Klasse B",
+      "description2": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten liefern höchste Brandschutz- und Akustikkontrolle für anspruchsvolle öffentliche Räume."
     },
     "patterns": {
       "tag": "PERFORATIONSMUSTER",
@@ -1679,7 +1768,9 @@
       "description": "Vier gebohrte Perforationsmuster mit kalibrierten akustischen Eigenschaften. Von maximaler offener Fläche bis zu subtilen Mikro-Perforationen.",
       "coreMatchTitle": "Kern zum Furnier abstimmen, um Perforationen verschwinden zu lassen — oder sie zum Designelement machen.",
       "coreColorTitle": "Kernfarbe",
-      "coreMatchDesc": "Passen Sie den Kern zu Ihrem Furnier, um Perforationen verschwinden zu lassen, oder wählen Sie einen kontrastierenden Kern für einen Designeffekt."
+      "coreMatchDesc": "Passen Sie den Kern zu Ihrem Furnier, um Perforationen verschwinden zu lassen, oder wählen Sie einen kontrastierenden Kern für einen Designeffekt.",
+      "description3": "Vier gebohrte Perforationsmuster mit kalibrierten akustischen Eigenschaften. Von maximaler offener Fläche für anspruchsvolle Akustikräume bis zu diskreteren Mustern, die visuelle Verfeinerung priorisieren.",
+      "coreMatchDesc2": "Passen Sie den Kern zum Furnier, um Perforationen verschwinden zu lassen, oder wählen Sie einen kontrastierenden Kern für einen dekorativen Effekt."
     },
     "coreColor": {
       "title": "Kernfarbe",
@@ -1697,7 +1788,8 @@
       "finish1": "Naturlack",
       "finish2": "Pigmentiert",
       "finish3": "HPL-Laminat",
-      "colorSelector": "Furnier Wählen"
+      "colorSelector": "Furnier Wählen",
+      "description3": "Jedes rWood - Perf Panel wird mit überfurnierten Kanten produziert — eine traditionelle Fertigungstechnik, bei der festes Holz vor dem Furnieren um das Panel integriert wird. Dies gibt jedem Panel das Erscheinungsbild von vollständigem Holz mit nahtlosen Fugen über große Flächen."
     },
     "acoustics": {
       "tag": "LEISTUNG",
@@ -1719,7 +1811,11 @@
       "layer4Desc": "30–50 mm für Breitbandabsorption",
       "waveLabel": "Schallwellen absorbiert",
       "certNote": "Getestet und zertifiziert nach ISO 11654",
-      "ratingLabel": "Absorption"
+      "ratingLabel": "Absorption",
+      "description3": "Präzisionsgebohrte Perforationen lassen Schallwellen in das Panel eintreten und durch die Kavität dahinter strömen. Kombiniert mit Mineralwolle-Dämmung liefert rWood - Perf hervorragende Breitbandabsorption.",
+      "diagramTitle": "Querschnitt",
+      "fireRating": "Brandklasse",
+      "noiseReduction": "Lärmreduzierung"
     },
     "installation": {
       "tag": "VERDECKTE BEFESTIGUNG",
@@ -1732,7 +1828,8 @@
       "step3Desc": "Verdecktes Clipsystem für werkzeugfreie, spaltfreie Montage",
       "step4Title": "Perfekte Ausrichtung",
       "step4Desc": "Ausgerichtete Perforationsmuster mit nahtlosen überfurnierten Verbindungen",
-      "description": "rWood - Perf Paneele werden mit einem verdeckten Clipsystem für ein unsichtbares, nahtloses Aussehen installiert."
+      "description": "rWood - Perf Paneele werden mit einem verdeckten Clipsystem für ein unsichtbares, nahtloses Aussehen installiert.",
+      "description3": "rWood - Perf Paneele werden mit einem verdeckten Clipsystem montiert, das auf Präzision, Geschwindigkeit und ein makelloses Ergebnis ausgelegt ist. Das System gewährleistet fugenlose Verbindungen und perfekt ausgerichtete Perforationsmuster."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
@@ -1745,7 +1842,8 @@
       "badge2Desc": "Post-consumer Recyclingmaterial im Kern",
       "badge3Desc": "Erneuerbare Energiequellen, kurze Lieferketten",
       "badge4Desc": "Kein zugesetztes Formaldehyd, EPD verfügbar",
-      "description": "rWood - Perf kombiniert langlebige, natürliche Materialien mit einem verantwortungsvollen Fertigungsansatz."
+      "description": "rWood - Perf kombiniert langlebige, natürliche Materialien mit einem verantwortungsvollen Fertigungsansatz.",
+      "description3": "rWood - Perf kombiniert langlebige, natürliche Materialien mit verantwortungsvoller Beschaffung. Der Fasergipskern ist von Natur aus emissionsarm — keine chemische Imprägnierung ist für Brandschutzleistungen erforderlich."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1760,7 +1858,22 @@
       "dimWeight": "Gewicht",
       "matTitle": "Materialien",
       "matCustomColor": "Individuelle Farbtöne mit transparenter oder deckender Pigmentierung",
-      "matLacquerFinish": "Von supermatt bis Hochglanz UV-Lack"
+      "matLacquerFinish": "Von supermatt bis Hochglanz UV-Lack",
+      "surfaceLabel": "Oberfläche",
+      "surfaceVal": "Furnier / HPL / Folie / Farbe",
+      "coreVal": "MDF-Kern (braun / grün / schwarz)",
+      "edgesLabel": "Kanten",
+      "edgesVal": "Überfurniertes Massivholz",
+      "acousticFelt": "Akustikfilz",
+      "feltColor": "Schwarz / Weiß",
+      "reactionFire": "Brandreaktion",
+      "resistanceFire": "Brandwiderstand",
+      "fireRetardant": "Brandhemmend",
+      "vocLabel": "VOC-Emissionen",
+      "vocVal": "TVOC zugelassen (ISO 16000)",
+      "formaldehydeLabel": "Formaldehyd",
+      "formaldehydeVal": "Kein zugesetztes Harnstoff-Formaldehyd",
+      "envLabel": "Umwelt"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1772,7 +1885,9 @@
       "feature2": "Überfurnierte Kanten für nahtlose Verbindungen",
       "feature3": "Heller oder dunkler Kern für Musterdiskretion",
       "feature4": "Sonderformate bis 3050 × 1220 mm",
-      "description": "rWood - Perf Paneele sind eine der wirksamsten Akustikwandlösungen. Präzisionsgebohrte Perforationen lassen Schall durch die dekorative Holzoberfläche."
+      "description": "rWood - Perf Paneele sind eine der wirksamsten Akustikwandlösungen. Präzisionsgebohrte Perforationen lassen Schall durch die dekorative Holzoberfläche.",
+      "description3": "rWood - Perf Paneele sind eine der effektivsten und meistgenutzten Lösungen für Akustikwände und -decken. Die präzisionsgebohrten runden Perforationen schaffen eine große offene Fläche, die hohe Schallabsorptionsniveaus garantiert.",
+      "description4": "Kombiniert mit einem brandhemmenden MDF-Kern und überfurnierten Kanten für nahtlose Fugen, sind diese Paneele für höchste Anforderungen in großen öffentlichen Räumen konzipiert — von Atrien und Konzertsälen bis zu Büros und Schulen."
     },
     "accessories": {
       "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
@@ -1818,7 +1933,8 @@
       "surfaceType": "Oberflächentyp",
       "finishTreatments": "Oberflächenbehandlungen",
       "finish1Desc": "Individuelle Farbtöne mit transparenter oder deckender Pigmentierung",
-      "finish2Desc": "Von supermatt bis Hochglanz UV-Lack"
+      "finish2Desc": "Von supermatt bis Hochglanz UV-Lack",
+      "description2": "Jedes rWood - Micro Panel hat überfurnierte Kanten — eine Fertigungstechnik aus dem traditionellen Schreinerhandwerk. Das Ergebnis: stärkere Paneele, nahtlose Fugen und ein durchgehendes Muster unabhängig vom Panelformat."
     },
     "bespoke": {
       "tag": "GESTALTUNGSFREIHEIT",
@@ -1847,7 +1963,14 @@
       "layer3Name": "Akustikflies-Rücken",
       "layer3Desc": "Zusätzliche Schallabsorptionsschicht",
       "waveLabel": "Schallwellen absorbiert",
-      "certNote": "Getestet und zertifiziert nach ISO 11654"
+      "certNote": "Getestet und zertifiziert nach ISO 11654",
+      "description2": "Die Kombination aus Mikro-Perforationen an der Oberfläche und tausenden größerer Schallkammern im Kern schafft einen dualen Akustik-Mechanismus. Weniger abhängig von Dämmung und Luftspalten — für dünnere Wände und Decken, die wertvolle Fläche sparen.",
+      "diagramTitle": "Querschnitt",
+      "soundAbsorbed": "Schall Absorbiert",
+      "fireRating": "Brandklasse",
+      "testStandard": "Prüfnorm",
+      "thinner": "Dünner",
+      "wallBuildUp": "Wandaufbau"
     },
     "installation": {
       "tag": "MONTAGESYSTEM",
@@ -1891,7 +2014,25 @@
       "perfsTitle": "Perforationsoptionen",
       "matTitle": "Materialien",
       "appsTitle": "Anwendungen",
-      "acWithMinWool": "Mit 50mm Mineralwolle"
+      "acWithMinWool": "Mit 50mm Mineralwolle",
+      "reactionFire": "Brandreaktion",
+      "resistanceFire": "Brandwiderstand",
+      "fireRetardant": "Brandhemmend",
+      "surfaceLabel": "Oberfläche",
+      "surfaceVal": "Furnier / HPL / Folie / Farbe",
+      "coreVal": "MDF-Kern (braun / grün / schwarz)",
+      "edgesLabel": "Kanten",
+      "edgesVal": "Überfurniertes Massivholz",
+      "acousticFelt": "Akustikfilz",
+      "feltColor": "Schwarz / Weiß",
+      "appInstall": "Montage",
+      "appWalls": "Wände & Decken",
+      "appEnv": "Umgebung",
+      "appEnvVal": "Innenbereich (Trockenbereiche)",
+      "backlitOption": "Hintergrundbeleuchtung",
+      "backlitVal": "Verfügbar",
+      "mountingSystem": "Befestigungssystem",
+      "concealedClip": "Verdecktes Clipsystem"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1926,7 +2067,10 @@
       "magnifiedLabel": "10-fach vergrößert",
       "holeDiameter": "Lochdurchmesser",
       "openArea": "Offene Fläche",
-      "ratingLabel": "Absorption"
+      "ratingLabel": "Absorption",
+      "description2": "Vier Perforationsdichten für Ihre akustischen Anforderungen. Von nahezu unsichtbaren Nano-Perforationen bis zu maximaler Absorptions-Micro-L-Mustern — wählen Sie die perfekte Balance zwischen Ästhetik und akustischer Leistung.",
+      "pigmentedLacquer": "Pigmentierter Lack",
+      "glossLevels": "Glanzstufen"
     }
   },
   "rwoodVeneerPage": {
@@ -2159,7 +2303,8 @@
       "feature2": "Funktioniert mit Innen- und Außenradien",
       "feature3": "Gerippte Textur fügt Tiefe und Rhythmus hinzu",
       "feature4": "Eingebaute Schalldämpfungseigenschaften",
-      "description": "Flex-Groove Paneele bieten eine vielseitige Akustiklösung für gekrümmte Oberflächen und passen sich mühelos jeder Form an."
+      "description": "Flex-Groove Paneele bieten eine vielseitige Akustiklösung für gekrümmte Oberflächen und passen sich mühelos jeder Form an.",
+      "description2": "Flex-Groove Paneele bieten eine vielseitige Akustiklösung für gekrümmte Oberflächen und passen sich mühelos jeder Form an. Geeignet für Innen- und Außenradien, ermöglicht ihre flexible Struktur nahtlose Übergänge an Wänden, Säulen und anderen gerundeten Architekturelementen."
     },
     "technology": {
       "tag": "TECHNOLOGIE",
@@ -2173,13 +2318,15 @@
       "feature3Desc": "Effizientes Design reduziert Schnittverluste",
       "description": "Jedes Panel ist mit Präzisions-V-Schnitten versehen, sodass es sich biegen kann ohne zu brechen. Dieser clevere Schnitt erzeugt die charakteristische Rippenstruktur.",
       "flatPanel": "Flaches Panel",
-      "curvedApp": "Gebogene Anwendung"
+      "curvedApp": "Gebogene Anwendung",
+      "description2": "Jedes Panel ist mit Präzisions-V-Schnitten versehen, sodass es sich biegen kann ohne zu brechen. Dieser clevere Schnitt erzeugt die charakteristische Rippenstruktur — eine Reihe linearer Rillen, die Flexibilität ermöglichen und der Oberfläche ein skulpturales Relief verleihen."
     },
     "colors": {
       "tag": "VERFEINERTE KOLLEKTION",
       "title": "12 Sorgfältig Ausgewählte Farben",
       "grooveDir": "Rillenrichtung",
-      "description": "Unsere sorgfältig kuratierte Farbpalette bietet vielseitige Optionen für jedes Interieur."
+      "description": "Unsere sorgfältig kuratierte Farbpalette bietet vielseitige Optionen für jedes Interieur.",
+      "description2": "Unsere sorgfältig kuratierte Farbpalette bietet vielseitige Optionen für jedes Interieur. Von sanften Neutraltönen bis zu kräftigen Statement-Farben ist jeder Farbton so gestaltet, dass er moderne Architekturräume ergänzt."
     },
     "acoustics": {
       "tag": "LEISTUNG",
@@ -2194,7 +2341,8 @@
       "layer1Label": "Recycelter PET-Filz",
       "layer2Label": "Präzisions-V-Schnitte",
       "thicknessLabel": "Stärke",
-      "materialLabel": "Brandhemmender PET-Filz"
+      "materialLabel": "Brandhemmender PET-Filz",
+      "description2": "Aus brandhemmendem recyceltem PET-Filz hergestellt, bieten Flex-Groove Paneele effektive Schallabsorption bei visueller Kontinuität auf gekrümmten Oberflächen. Die gerippte Textur verbessert die akustischen Eigenschaften."
     },
     "installation": {
       "tag": "EINFACHE MONTAGE",
@@ -2207,7 +2355,8 @@
       "step3Desc": "Das Panel vorsichtig biegen, um der gebogenen Oberfläche zu folgen",
       "step4Title": "Befestigen & Fertigstellen",
       "step4Desc": "Fest andrücken für vollständige Haftung entlang der Kurve",
-      "description": "Entwickelt für Standardraumhöhen von Boden bis Decke, vereinfachen die Paneele die Ausrichtung und reduzieren die Montagezeit."
+      "description": "Entwickelt für Standardraumhöhen von Boden bis Decke, vereinfachen die Paneele die Ausrichtung und reduzieren die Montagezeit.",
+      "description2": "Entwickelt für Standardraumhöhen, vereinfachen die Paneele die Ausrichtung und reduzieren die Montagezeit. Ihre anpassbare Form macht sie zu einer praktischen Lösung für Interieurs, die Schallabsorption und Designflexibilität erfordern."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
@@ -2220,7 +2369,8 @@
       "badge3": "Europäische Produktion",
       "badge4": "Niedrige VOC",
       "badge3Desc": "Reduzierte Transportemissionen",
-      "badge4Desc": "Sicher für Innenräume"
+      "badge4Desc": "Sicher für Innenräume",
+      "description2": "Jedes Flex-Groove Panel wird aus 100% recycelten PET-Kunststoffflaschen hergestellt und gibt Abfallmaterialien ein neues Leben. Unser kreislauffähiger Ansatz stellt sicher, dass diese Paneele am Lebensende erneut recycelt werden können."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2292,7 +2442,11 @@
     },
     "cta": {
       "title": "Bereit, Ihre Akustik zu Biegen?",
-      "description": "Fordern Sie ein individuelles Angebot für Ihr Projekt an. Unser Team hilft Ihnen, die perfekte Flex-Lösung zu wählen."
+      "description": "Fordern Sie ein individuelles Angebot für Ihr Projekt an. Unser Team hilft Ihnen, die perfekte Flex-Lösung zu wählen.",
+      "description2": "Fordern Sie ein individuelles Angebot für Ihr Projekt an. Unser Team hilft Ihnen, die perfekte Farbe zu wählen und Ihren Bedarf zu berechnen."
+    },
+    "cta2": {
+      "freeNote": "Kostenlose Muster • Hergestellt in Europa • 100% Recycelt"
     }
   }
 }

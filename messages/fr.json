@@ -812,7 +812,8 @@
       "surface": "Surface",
       "finish": "Finition",
       "epd": "DEP disponible",
-      "fscCertified": "Certifié FSC®"
+      "fscCertified": "Certifié FSC®",
+      "dimPanelWidth": "Largeur du panneau"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -836,6 +837,40 @@
         "title": "Réduction du Stress",
         "desc": "Créer des environnements plus calmes et confortables"
       }
+    },
+    "specLabels": {
+      "thickness": "Épaisseur",
+      "weight": "Poids",
+      "density": "Densité",
+      "testStandard": "Norme de test",
+      "envLabel": "Environnement",
+      "health": "Santé",
+      "installation": "Installation",
+      "environment": "Environnement",
+      "envVal": "Intérieur (zones sèches)",
+      "soundAbsorbed": "Son Absorbé",
+      "panelCrossSection": "Coupe Transversale",
+      "fireRating": "Classement Feu",
+      "noiseReduction": "Réduction du Bruit",
+      "wallsCeilings": "Murs & Plafonds",
+      "reactionFire": "Réaction au feu",
+      "resistanceFire": "Résistance au feu",
+      "fireRetardant": "Retardant de Flamme",
+      "surface": "Surface",
+      "edges": "Chants",
+      "acousticFelt": "Feutre acoustique",
+      "woodSourcing": "Approvisionnement bois",
+      "feltCert": "Certification feutre",
+      "epd": "DEP disponible",
+      "vocEmissions": "Émissions COV",
+      "moistureResistant": "Résistant à l'humidité",
+      "connection": "Connexion",
+      "backlitOption": "Option rétroéclairage",
+      "mountingSystem": "Système de fixation",
+      "concealedClip": "Système à clips dissimulé",
+      "coreDensity": "Densité du cœur",
+      "formaldehyde": "Formaldéhyde",
+      "fscCert": "Certifié FSC®"
     }
   },
   "interiorPage": {
@@ -1162,7 +1197,8 @@
       "feature1": "Fabriqués à partir de 100% de bouteilles plastiques recyclées",
       "feature2": "Motifs de rainures découpés au CNC",
       "feature3": "Léger et facile à manipuler",
-      "feature4": "Adapté aux murs et plafonds"
+      "feature4": "Adapté aux murs et plafonds",
+      "description2": "Les panneaux rPET - Groove apportent une touche contemporaine à tout espace tout en réduisant les nuisances sonores. Le design à lamelles visibles crée profondeur visuelle et texture, parfait pour bureaux modernes, salles de réunion, lobbies, restaurants et zones d'accueil."
     },
     "fromBottles": {
       "tag": "LE PARCOURS",
@@ -1180,14 +1216,16 @@
       "step4Title": "Finition",
       "step4Desc": "La découpe CNC de précision crée les motifs de rainures caractéristiques",
       "description": "Chaque panneau rPET - Groove donne une nouvelle vie à environ 60 bouteilles plastiques recyclées. Notre processus transforme les déchets PET post-consommation en feutre acoustique haute performance.",
-      "statLabel": "Bouteilles recyclées par panneau"
+      "statLabel": "Bouteilles recyclées par panneau",
+      "description2": "Chaque panneau rPET - Groove donne une nouvelle vie à environ 60 bouteilles plastiques recyclées. Notre processus de fabrication transforme les déchets PET post-consommation en feutre acoustique haute performance, créant un produit véritablement circulaire."
     },
     "patterns": {
       "tag": "OPTIONS DE DESIGN",
       "title": "Choisissez Votre Motif",
       "description": "Quatre motifs de rainures distinctifs pour toute vision architecturale. Des lignes parallèles épurées aux chevrons dynamiques, chaque motif est découpé avec précision par CNC.",
       "groovesLabel": "rainures",
-      "spacingLabel": "Espacement :"
+      "spacingLabel": "Espacement :",
+      "description2": "Quatre motifs de rainures distinctifs pour toute vision architecturale. Des lignes parallèles épurées aux chevrons dynamiques, chaque motif est découpé avec précision par CNC."
     },
     "colors": {
       "title": "Plusieurs Couleurs Design",
@@ -1199,7 +1237,8 @@
       "feature2Desc": "Aspirer ou essuyer avec un chiffon humide",
       "feature3": "Cohérence garantie",
       "feature3Desc": "Cohérence des couleurs garantie d'un lot à l'autre",
-      "colorsDescription": "Des tons neutres aux accents vifs, notre palette de couleurs s'intègre harmonieusement dans tout concept de design d'intérieur. Toutes les couleurs sont obtenues par teinture dans la masse, garantissant une excellente solidité des couleurs et une résistance aux UV."
+      "colorsDescription": "Des tons neutres aux accents vifs, notre palette de couleurs s'intègre harmonieusement dans tout concept de design d'intérieur. Toutes les couleurs sont obtenues par teinture dans la masse, garantissant une excellente solidité des couleurs et une résistance aux UV.",
+      "description2": "Des tons neutres aux accents vifs, notre palette s'intègre harmonieusement dans tout concept de design d'intérieur. Toutes les couleurs sont obtenues par teinture dans la masse, garantissant une excellente solidité des couleurs et une résistance aux UV."
     },
     "thickness": {
       "title": "Choisir l'Épaisseur",
@@ -1225,7 +1264,8 @@
       "layer3Name": "Surface de Montage",
       "layer3Desc": "Fixation directe mur/plafond",
       "waveLabel": "Ondes sonores absorbées",
-      "certNote": "Testé selon ISO 354 et ASTM C423"
+      "certNote": "Testé selon ISO 354 et ASTM C423",
+      "description2": "Le design rainuré unique combiné au feutre PET haute densité crée une absorption sonore exceptionnelle. Réduisez l'écho, éliminez le bruit, créez des espaces confortables à l'oreille comme à l'œil."
     },
     "installation": {
       "tag": "INSTALLATION FACILE",
@@ -1243,7 +1283,8 @@
       "description": "Les panneaux rPET - Groove sont conçus pour une installation rapide et facile. Leur légèreté permet à une seule personne de les manipuler.",
       "mounting2": "Clips Z",
       "mounting3": "Vis",
-      "mounting4": "Tasseaux"
+      "mounting4": "Tasseaux",
+      "description2": "Les panneaux rPET - Groove sont conçus pour une installation rapide et facile. Leur légèreté permet à une seule personne de les manipuler, et les multiples options de fixation offrent flexibilité pour tout projet."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
@@ -1257,7 +1298,8 @@
       "badge1Desc": "Fabriqués à partir de bouteilles PET post-consommation",
       "badge2Desc": "Peut être recyclé en fin de vie",
       "badge3Desc": "Nous collectons les panneaux pour recyclage",
-      "badge4Desc": "Chaînes d'approvisionnement courtes, faibles émissions"
+      "badge4Desc": "Chaînes d'approvisionnement courtes, faibles émissions",
+      "description2": "Les panneaux rPET - Groove incarnent l'économie circulaire. Fabriqués entièrement à partir de plastique recyclé post-consommation, ils peuvent être recyclés en fin de vie. Nous offrons une reprise gratuite."
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1285,7 +1327,7 @@
       "certHealthValue": "OEKO-TEX® Standard 100",
       "certEnv": "Environnement",
       "certEnvValue": "DEP disponible",
-      "certVOC": "Émissions COV",
+      "certVOC": "Faibles émissions / E1",
       "certVOCValue": "Faibles émissions / E1",
       "certRecycled": "Contenu recyclé",
       "certRecycledValue": "Certifié GRS",
@@ -1321,7 +1363,19 @@
       "fireCert": "Certification",
       "appWalls": "Panneaux muraux",
       "appCeilings": "Panneaux de plafond",
-      "appEnvironment": "Environnement"
+      "appEnvironment": "Environnement",
+      "matRecycledPET": "100% PET Recyclé",
+      "matDensity": "Densité",
+      "colorsLabel": "Couleurs",
+      "colorsVal": "12 couleurs standard",
+      "customColors": "Couleurs personnalisées",
+      "customColorsVal": "Disponible (MOQ applicable)",
+      "certEPD": "DEP disponible",
+      "certGRS": "Certifié GRS",
+      "appIdealFor": "Idéal pour",
+      "appIdealVal": "Bureaux, Salles de réunion, Lobbies",
+      "appAlso": "Aussi adapté",
+      "appAlsoVal": "Restaurants, Hôtels, Écoles"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1343,6 +1397,9 @@
     "downloads": {
       "installationGuide": "Guide d'Installation",
       "colorChart": "Nuancier"
+    },
+    "cta2": {
+      "freeNote": "Échantillons gratuits • Fabriqué en Belgique • 100% Recyclé"
     }
   },
   "rpetPanelPage": {
@@ -1527,6 +1584,9 @@
       "acousticTestReport": "Rapport de Test Acoustique (ISO 354)",
       "fireCertificate": "Certificat Incendie (EN 13501-1)",
       "oekoTexCert": "Certificat OEKO-TEX®"
+    },
+    "cta2": {
+      "freeNote": "Échantillons gratuits • Fabriqué en Belgique • 100% Recyclable"
     }
   },
   "rwoodGroovePage": {
@@ -1547,7 +1607,8 @@
       "feature2": "Dos en feutre acoustique intégré",
       "feature3": "Connexion panneau-à-panneau continue",
       "feature4": "Adapté aux murs et plafonds",
-      "description": "Les panneaux rWood - Groove transforment chaque pièce en un environnement acoustique sophistiqué. La combinaison de rainures fraisées avec précision et de placages bois premium crée une surface à la fois visuellement impressionnante et acoustiquement efficace."
+      "description": "Les panneaux rWood - Groove transforment chaque pièce en un environnement acoustique sophistiqué. La combinaison de rainures fraisées avec précision et de placages bois premium crée une surface à la fois visuellement impressionnante et acoustiquement efficace.",
+      "description2": "Les panneaux rWood - Groove transforment chaque pièce en un espace de beauté naturelle et de confort acoustique. Chaque panneau présente un placage premium A-grade de chêne ou noyer, rainuré avec précision pour créer l'esthétique linéaire caractéristique."
     },
     "oakCollection": {
       "title": "Collection Chêne",
@@ -1567,7 +1628,11 @@
       "benefit3Title": "Performances Testées",
       "benefit3": "Données acoustiques vérifiées indépendamment",
       "description": "Le design rainuré unique combiné au feutre acoustique haute qualité crée une absorption sonore exceptionnelle.",
-      "ratingLabel": "Absorption"
+      "ratingLabel": "Absorption",
+      "description2": "Le design rainuré unique combiné au feutre acoustique haute qualité crée une absorption sonore exceptionnelle. Réduisez l'écho, éliminez le bruit, créez des espaces confortables.",
+      "diagramTitle": "Coupe Transversale",
+      "soundAbsorbed": "Son Absorbé",
+      "testStandard": "Norme de Test"
     },
     "installation": {
       "tag": "INSTALLATION FACILE",
@@ -1580,7 +1645,8 @@
       "step3Desc": "Glissez la languette dans la rainure pour une connexion continue",
       "step4Title": "Compléter & Finir",
       "step4Desc": "Ajoutez des profilés de finition pour un résultat professionnel",
-      "description": "Les panneaux rWood - Groove disposent d'une connexion innovante rainure-languette pour une installation rapide et facile."
+      "description": "Les panneaux rWood - Groove disposent d'une connexion innovante rainure-languette pour une installation rapide et facile.",
+      "description2": "Les panneaux rWood - Groove disposent d'un système de connexion rainure-languette innovant qui assure des joints invisibles et une surface cohérente. Que vous soyez installateur professionnel ou bricoleur expérimenté, notre système rend l'installation simple."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
@@ -1593,7 +1659,8 @@
       "badge3Desc": "Émissions de transport réduites",
       "badge4": "DEP Disponible",
       "badge4Desc": "Déclaration environnementale de produit complète",
-      "description": "Chaque panneau rWood - Groove est conçu avec la durabilité en son cœur. Notre bois FSC® certifié provient de forêts gérées de façon responsable."
+      "description": "Chaque panneau rWood - Groove est conçu avec la durabilité en son cœur. Notre bois FSC® certifié provient de forêts gérées de façon responsable.",
+      "description2": "Chaque panneau rWood - Groove est conçu avec la durabilité en son cœur. Notre certification FSC® garantit que le bois provient de forêts gérées de façon responsable offrant des bénéfices environnementaux, sociaux et économiques."
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1615,7 +1682,23 @@
       "matCoreVal": "MDF (standard / résistant à l'humidité / retardant)",
       "matBacking": "Dos",
       "matBackingVal": "PET recyclé (3mm)",
-      "matFinish": "Finition"
+      "matFinish": "Finition",
+      "finishVal": "Huile / Laque",
+      "stdPanels": "Panneaux standard",
+      "fireMdfVal": "MDF retardant de flamme",
+      "woodSourcing": "Approvisionnement bois",
+      "feltCert": "Certification feutre",
+      "envLabel": "Environnement",
+      "vocLabel": "Émissions COV",
+      "vocVal": "E1 / Faibles émissions",
+      "appInstall": "Installation",
+      "appWalls": "Murs & Plafonds",
+      "appEnv": "Environnement",
+      "appEnvVal": "Intérieur (zones sèches)",
+      "appMoist": "Résistant à l'humidité",
+      "appMoistVal": "Disponible pour zones humides",
+      "appConn": "Connexion",
+      "appConnVal": "Rainure & languette"
     },
     "accessories": {
       "tag": "POUR COMPLÉTER LE LOOK",
@@ -1639,7 +1722,8 @@
     "patterns": {
       "tag": "OPTIONS DE DESIGN",
       "title": "Finitions Premium",
-      "description": "Quatre motifs de rainures distincts pour toute vision architecturale. Du classique batten au linéaire moderne."
+      "description": "Quatre motifs de rainures distincts pour toute vision architecturale. Du classique batten au linéaire moderne.",
+      "description2": "Quatre motifs de rainures distincts pour toute vision architecturale. Des proportions classiques équilibrées aux larges bandes audacieuses — trouvez l'expression parfaite pour votre espace."
     },
     "materials": {
       "tag": "MATÉRIAUX",
@@ -1656,11 +1740,15 @@
       "layer3Name": "Dos en Feutre Acoustique",
       "layer3Desc": "PET recyclé, 3mm d'épaisseur",
       "waveLabel": "Ondes sonores absorbées",
-      "certNote": "Testé et certifié selon ISO 11654"
+      "certNote": "Testé et certifié selon ISO 11654",
+      "description2": "Chaque panneau rWood - Groove est fabriqué avec un placage A-grade, assurant des motifs de grain constants et une qualité supérieure. Choisissez parmi notre gamme de finitions huilées et peintes pour compléter parfaitement votre design d'intérieur."
     },
     "downloads": {
       "installationGuide": "Guide d'Installation",
       "colorChart": "Guide Couleurs & Finitions"
+    },
+    "cta2": {
+      "freeNote": "Échantillons gratuits • Fabriqué en Europe • Certifié FSC®"
     }
   },
   "rwoodPerfPage": {
@@ -1671,7 +1759,8 @@
       "description": "Panneaux acoustiques percés haute performance alliant beauté du bois naturel et absorption sonore exceptionnelle. Un cœur MDF à retardant de flamme et des chants surépaissés offrent les niveaux les plus élevés de sécurité incendie et de contrôle acoustique.",
       "usp1": "Perforations Rondes",
       "usp2": "Classement Feu B2-s1, d0",
-      "usp3": "Jusqu'à Classe B"
+      "usp3": "Jusqu'à Classe B",
+      "description2": "Panneaux acoustiques percés haute performance alliant beauté du bois naturel et absorption sonore exceptionnelle. Un cœur en MDF à retardant de flamme et des chants surépaissés offrent les niveaux les plus élevés de sécurité incendie et de contrôle acoustique pour les espaces publics exigeants."
     },
     "patterns": {
       "tag": "MOTIFS DE PERFORATION",
@@ -1679,7 +1768,9 @@
       "description": "Quatre motifs de perforation percés avec des propriétés acoustiques calibrées. De la zone ouverte maximale à la micro-perforation subtile.",
       "coreMatchTitle": "Assortir le cœur au placage pour faire disparaître les perforations — ou en faire un élément de design.",
       "coreColorTitle": "Couleur du Cœur",
-      "coreMatchDesc": "Assortissez le cœur à votre placage pour faire disparaître les perforations, ou choisissez un cœur contrastant pour un effet design."
+      "coreMatchDesc": "Assortissez le cœur à votre placage pour faire disparaître les perforations, ou choisissez un cœur contrastant pour un effet design.",
+      "description3": "Quatre motifs de perforation percés avec des propriétés acoustiques calibrées. De la zone ouverte maximale pour les espaces acoustiques exigeants aux motifs plus discrets qui privilégient le raffinement visuel.",
+      "coreMatchDesc2": "Assortissez le cœur à votre placage pour faire disparaître les perforations, ou choisissez un cœur contrastant pour un effet décoratif."
     },
     "coreColor": {
       "title": "Couleur du Cœur",
@@ -1697,7 +1788,8 @@
       "finish1": "Laque Naturelle",
       "finish2": "Pigmenté",
       "finish3": "Laminé HPL",
-      "colorSelector": "Sélectionner le Placage"
+      "colorSelector": "Sélectionner le Placage",
+      "description3": "Chaque panneau rWood - Perf est produit avec des chants surépaissés — une technique de fabrication traditionnelle où des bords en bois massif sont intégrés autour du panneau avant le placage. Cela donne à chaque panneau l'apparence d'être entièrement en bois, avec des joints continus sur de grandes surfaces."
     },
     "acoustics": {
       "tag": "PERFORMANCES",
@@ -1719,7 +1811,11 @@
       "layer4Desc": "30–50 mm pour absorption large bande",
       "waveLabel": "Ondes sonores absorbées",
       "certNote": "Testé et certifié selon ISO 11654",
-      "ratingLabel": "Absorption"
+      "ratingLabel": "Absorption",
+      "description3": "Les perforations percées avec précision permettent aux ondes sonores d'entrer dans le panneau et de passer dans la cavité derrière. Combiné à l'isolant en laine minérale, rWood - Perf offre une absorption large bande exceptionnelle.",
+      "diagramTitle": "Coupe Transversale",
+      "fireRating": "Classement Feu",
+      "noiseReduction": "Réduction du Bruit"
     },
     "installation": {
       "tag": "FIXATION DISSIMULÉE",
@@ -1732,7 +1828,8 @@
       "step3Desc": "Système de clips dissimulé pour montage sans outil, sans interstice",
       "step4Title": "Alignement Parfait",
       "step4Desc": "Motifs de perforation alignés avec joints surépaissés continus",
-      "description": "Les panneaux rWood - Perf sont installés avec un système de clips dissimulé pour un aspect invisible et continu."
+      "description": "Les panneaux rWood - Perf sont installés avec un système de clips dissimulé pour un aspect invisible et continu.",
+      "description3": "Les panneaux rWood - Perf sont installés avec un système de clips dissimulé conçu pour la précision, la rapidité et un résultat impeccable. Le système garantit des joints sans espace et des motifs de perforation parfaitement alignés."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
@@ -1745,7 +1842,8 @@
       "badge2Desc": "Matériau recyclé post-consommation dans le cœur",
       "badge3Desc": "Sources d'énergie renouvelables, chaînes courtes",
       "badge4Desc": "Sans formaldéhyde ajouté, DEP disponible",
-      "description": "rWood - Perf combine des matériaux naturels durables avec une approche de fabrication responsable."
+      "description": "rWood - Perf combine des matériaux naturels durables avec une approche de fabrication responsable.",
+      "description3": "rWood - Perf combine des matériaux naturels durables avec un approvisionnement responsable. Le cœur en fibre de gypse est intrinsèquement à faibles émissions — aucune imprégnation chimique n'est nécessaire pour les performances incendie."
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1760,7 +1858,22 @@
       "dimWeight": "Poids",
       "matTitle": "Matériaux",
       "matCustomColor": "Tons couleur personnalisés avec pigmentation transparente ou solide",
-      "matLacquerFinish": "Du super mat au laque UV haute brillance"
+      "matLacquerFinish": "Du super mat au laque UV haute brillance",
+      "surfaceLabel": "Surface",
+      "surfaceVal": "Placage / HPL / Film / Peinture",
+      "coreVal": "Cœur en MDF (brun / vert / noir)",
+      "edgesLabel": "Chants",
+      "edgesVal": "Bois massif surépaissé",
+      "acousticFelt": "Feutre acoustique",
+      "feltColor": "Noir / Blanc",
+      "reactionFire": "Réaction au feu",
+      "resistanceFire": "Résistance au feu",
+      "fireRetardant": "Retardant de Flamme",
+      "vocLabel": "Émissions COV",
+      "vocVal": "TVOC approuvé (ISO 16000)",
+      "formaldehydeLabel": "Formaldéhyde",
+      "formaldehydeVal": "Sans urée-formaldéhyde ajoutée",
+      "envLabel": "Environnement"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1772,7 +1885,9 @@
       "feature2": "Chants surépaissés pour joints continus",
       "feature3": "Cœur clair ou foncé pour discrétion des motifs",
       "feature4": "Formats personnalisés jusqu'à 3050 × 1220 mm",
-      "description": "Les panneaux rWood - Perf sont l'une des solutions murales acoustiques les plus efficaces. Les perforations percées avec précision permettent au son de traverser la surface décorative en bois."
+      "description": "Les panneaux rWood - Perf sont l'une des solutions murales acoustiques les plus efficaces. Les perforations percées avec précision permettent au son de traverser la surface décorative en bois.",
+      "description3": "Les panneaux rWood - Perf sont l'une des solutions murales et plafonds acoustiques les plus efficaces et utilisées. Les perforations rondes percées avec précision créent une grande zone ouverte garantissant des niveaux élevés d'absorption sonore.",
+      "description4": "Combinés à un cœur MDF à retardant de flamme et des chants surépaissés pour des joints continus, ces panneaux sont conçus pour les exigences les plus élevées des grands espaces publics — des atriums et salles de concert aux bureaux et écoles."
     },
     "accessories": {
       "tag": "POUR COMPLÉTER LE LOOK",
@@ -1818,7 +1933,8 @@
       "surfaceType": "Type de Surface",
       "finishTreatments": "Traitements de Finition",
       "finish1Desc": "Tons couleur personnalisés avec pigmentation transparente ou solide",
-      "finish2Desc": "Du super mat au laque UV haute brillance"
+      "finish2Desc": "Du super mat au laque UV haute brillance",
+      "description2": "Chaque panneau rWood - Micro présente des chants surépaissés — une technique de fabrication issue du patrimoine de la menuiserie traditionnelle. Résultat : panneaux plus solides, joints imperceptibles et motif continu quel que soit le format du panneau."
     },
     "bespoke": {
       "tag": "LIBERTÉ DE CONCEPTION",
@@ -1847,7 +1963,14 @@
       "layer3Name": "Dos en Voile Acoustique",
       "layer3Desc": "Couche d'absorption sonore supplémentaire",
       "waveLabel": "Ondes sonores absorbées",
-      "certNote": "Testé et certifié selon ISO 11654"
+      "certNote": "Testé et certifié selon ISO 11654",
+      "description2": "La combinaison de micro-perforations en surface et de milliers de chambres sonores plus larges dans le cœur crée un mécanisme acoustique dual. Moins dépendant de l'isolation et des lames d'air — permettant des murs et plafonds plus minces qui économisent de l'espace précieux.",
+      "diagramTitle": "Coupe Transversale",
+      "soundAbsorbed": "Son Absorbé",
+      "fireRating": "Classement Feu",
+      "testStandard": "Norme de Test",
+      "thinner": "Plus Mince",
+      "wallBuildUp": "Épaisseur de Paroi"
     },
     "installation": {
       "tag": "SYSTÈME D'INSTALLATION",
@@ -1891,7 +2014,25 @@
       "perfsTitle": "Options de Perforation",
       "matTitle": "Matériaux",
       "appsTitle": "Applications",
-      "acWithMinWool": "Avec laine minérale 50mm"
+      "acWithMinWool": "Avec laine minérale 50mm",
+      "reactionFire": "Réaction au feu",
+      "resistanceFire": "Résistance au feu",
+      "fireRetardant": "Retardant de Flamme",
+      "surfaceLabel": "Surface",
+      "surfaceVal": "Placage / HPL / Film / Peinture",
+      "coreVal": "Cœur en MDF (brun / vert / noir)",
+      "edgesLabel": "Chants",
+      "edgesVal": "Bois massif surépaissé",
+      "acousticFelt": "Feutre acoustique",
+      "feltColor": "Noir / Blanc",
+      "appInstall": "Installation",
+      "appWalls": "Murs & Plafonds",
+      "appEnv": "Environnement",
+      "appEnvVal": "Intérieur (zones sèches)",
+      "backlitOption": "Option rétroéclairage",
+      "backlitVal": "Disponible",
+      "mountingSystem": "Système de fixation",
+      "concealedClip": "Système à clips dissimulé"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1926,7 +2067,10 @@
       "magnifiedLabel": "Agrandi 10×",
       "holeDiameter": "Diamètre du trou",
       "openArea": "Surface ouverte",
-      "ratingLabel": "Absorption"
+      "ratingLabel": "Absorption",
+      "description2": "Quatre densités de perforation pour répondre à vos exigences acoustiques. Des micro-perforations Nano quasiment invisibles aux motifs Micro L à absorption maximale — sélectionnez l'équilibre parfait entre esthétique et performances acoustiques.",
+      "pigmentedLacquer": "Laque Pigmentée",
+      "glossLevels": "Niveaux de Brillance"
     }
   },
   "rwoodVeneerPage": {
@@ -2159,7 +2303,8 @@
       "feature2": "Compatible avec les rayons intérieurs et extérieurs",
       "feature3": "Texture nervurée ajoute profondeur et rythme",
       "feature4": "Propriétés d'atténuation sonore intégrées",
-      "description": "Les panneaux Flex-Groove offrent une solution acoustique polyvalente pour les surfaces courbes, s'adaptant sans effort à toute forme. Adaptés aux rayons intérieurs et extérieurs."
+      "description": "Les panneaux Flex-Groove offrent une solution acoustique polyvalente pour les surfaces courbes, s'adaptant sans effort à toute forme. Adaptés aux rayons intérieurs et extérieurs.",
+      "description2": "Les panneaux Flex-Groove offrent une solution acoustique polyvalente pour les surfaces courbes, s'adaptant sans effort à toute forme. Adaptés aux rayons intérieurs et extérieurs, leur structure flexible permet des transitions continues le long des murs, colonnes et autres éléments architecturaux arrondis."
     },
     "technology": {
       "tag": "TECHNOLOGIE",
@@ -2173,13 +2318,15 @@
       "feature3Desc": "Design efficace réduit les chutes de découpe",
       "description": "Chaque panneau est incisé de V-cuts de précision, lui permettant de se courber sans se casser. Cette découpe crée la texture nervurée caractéristique.",
       "flatPanel": "Panneau Plat",
-      "curvedApp": "Application Courbe"
+      "curvedApp": "Application Courbe",
+      "description2": "Chaque panneau est incisé de V-cuts de précision, lui permettant de se courber sans se casser. Cette découpe intelligente crée la texture nervurée caractéristique — une série de rainures linéaires qui permettent la flexibilité tout en donnant à la surface un relief sculptural."
     },
     "colors": {
       "tag": "COLLECTION RAFFINÉE",
       "title": "12 Couleurs Soigneusement Sélectionnées",
       "grooveDir": "Direction de Rainure",
-      "description": "Notre palette de couleurs soigneusement sélectionnée offre des options polyvalentes pour tout intérieur. Des neutres doux aux couleurs vives."
+      "description": "Notre palette de couleurs soigneusement sélectionnée offre des options polyvalentes pour tout intérieur. Des neutres doux aux couleurs vives.",
+      "description2": "Notre palette de couleurs soigneusement sélectionnée offre des options polyvalentes pour tout intérieur. Des neutres doux aux couleurs vives, chaque teinte est conçue pour compléter les espaces architecturaux modernes."
     },
     "acoustics": {
       "tag": "PERFORMANCES",
@@ -2194,7 +2341,8 @@
       "layer1Label": "Feutre PET Recyclé",
       "layer2Label": "Découpes V de Précision",
       "thicknessLabel": "Épaisseur",
-      "materialLabel": "Feutre PET Retardant"
+      "materialLabel": "Feutre PET Retardant",
+      "description2": "Fabriqués en feutre PET recyclé retardant, les panneaux Flex-Groove assurent une absorption sonore efficace tout en maintenant la continuité visuelle sur les surfaces courbes. La texture rainurée améliore les performances acoustiques."
     },
     "installation": {
       "tag": "INSTALLATION FACILE",
@@ -2207,7 +2355,8 @@
       "step3Desc": "Courber doucement le panneau pour suivre la surface courbe",
       "step4Title": "Fixer & Finir",
       "step4Desc": "Appuyer fermement pour assurer une pleine adhérence sur la courbe",
-      "description": "Conçus pour couvrir les hauteurs standard sol-plafond, les panneaux simplifient l'alignement et réduisent le temps d'installation."
+      "description": "Conçus pour couvrir les hauteurs standard sol-plafond, les panneaux simplifient l'alignement et réduisent le temps d'installation.",
+      "description2": "Conçus pour couvrir les hauteurs standard sol-plafond, les panneaux simplifient l'alignement et réduisent le temps d'installation. Leur forme adaptable en fait une solution pratique pour les intérieurs nécessitant absorption acoustique et flexibilité de design."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
@@ -2220,7 +2369,8 @@
       "badge3": "Production Européenne",
       "badge4": "Faibles COV",
       "badge3Desc": "Émissions de transport réduites",
-      "badge4Desc": "Sûr pour les environnements intérieurs"
+      "badge4Desc": "Sûr pour les environnements intérieurs",
+      "description2": "Chaque panneau Flex-Groove est fabriqué à partir de 100% de bouteilles PET recyclées, donnant une nouvelle vie aux matériaux usagés. Notre approche circulaire garantit que ces panneaux peuvent être recyclés à nouveau en fin de vie."
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -2292,7 +2442,11 @@
     },
     "cta": {
       "title": "Prêt à Courber Votre Acoustique ?",
-      "description": "Demandez un devis personnalisé pour votre projet. Notre équipe vous aidera à choisir la solution flex parfaite."
+      "description": "Demandez un devis personnalisé pour votre projet. Notre équipe vous aidera à choisir la solution flex parfaite.",
+      "description2": "Demandez un devis personnalisé pour votre projet. Notre équipe vous aidera à choisir la couleur parfaite et à calculer vos besoins."
+    },
+    "cta2": {
+      "freeNote": "Échantillons gratuits • Fabriqué en Europe • 100% Recyclé"
     }
   }
 }
