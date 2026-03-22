@@ -137,7 +137,7 @@ export default function RPetGrooveProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">From Bottles to Silence</p>
+          <p className="hero-tagline">{t('hero.tagline')}</p>}
           <p className="hero-description">
             Transform your space with rPET - Groove acoustic panels. Made from 100% recycled 
             plastic bottles, these elegant grooved panels combine contemporary design with 
@@ -147,15 +147,15 @@ export default function RPetGrooveProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">100% Recycled PET</span>
+              <span className="usp-text">{t('hero.usp1')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">Up to NRC 0.90</span>
+              <span className="usp-text">{t('hero.usp2')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🎨</span>
-              <span className="usp-text">12 Designer Colors</span>
+              <span className="usp-text">{t('hero.usp3')}</span>}
             </div>
           </div>
 
@@ -245,7 +245,7 @@ export default function RPetGrooveProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">CIRCULAR DESIGN</span>
+            <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>
               rPET - Groove panels bring a contemporary touch to any space while reducing 
@@ -255,19 +255,19 @@ export default function RPetGrooveProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Made from 100% recycled plastic bottles
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Precision CNC-cut groove patterns
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Lightweight and easy to handle
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Suitable for walls and ceilings
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -277,7 +277,7 @@ export default function RPetGrooveProductPage() {
       {/* Recycling Story Section */}
       <section className="content-section recycling-section dark">
         <div className="recycling-content">
-          <span className="section-tag">THE JOURNEY</span>
+          <span className="section-tag">{t('fromBottles.tag')}</span>
           <h2>{t('fromBottles.title')}</h2>
           <p>
             Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. 
@@ -289,29 +289,29 @@ export default function RPetGrooveProductPage() {
             <div className="recycling-step">
               <div className="step-icon">🍾</div>
               <div className="step-number">01</div>
-              <h4>Collection</h4>
-              <p>Post-consumer plastic bottles are collected and sorted</p>
+              <h4>{t('fromBottles.step1Title')}</h4>}
+              <p>{t('fromBottles.step1Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
               <div className="step-icon">⚙️</div>
               <div className="step-number">02</div>
-              <h4>Processing</h4>
-              <p>Bottles are cleaned, shredded, and melted into PET fibers</p>
+              <h4>{t('fromBottles.step2Title')}</h4>}
+              <p>{t('fromBottles.step2Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
               <div className="step-icon">🧵</div>
               <div className="step-number">03</div>
-              <h4>Felting</h4>
-              <p>Fibers are compressed into dense acoustic felt sheets</p>
+              <h4>{t('fromBottles.step3Title')}</h4>}
+              <p>{t('fromBottles.step3Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
               <div className="step-icon">✨</div>
               <div className="step-number">04</div>
-              <h4>Finishing</h4>
-              <p>CNC precision cutting creates the signature groove patterns</p>
+              <h4>{t('fromBottles.step4Title')}</h4>}
+              <p>{t('fromBottles.step4Desc')}</p>
             </div>
           </div>
 
@@ -325,8 +325,8 @@ export default function RPetGrooveProductPage() {
       {/* Colors Section */}
       <section id="colors" className="content-section colors-section">
         <div className="colors-header">
-          <span className="section-tag">PALETTE</span>
-          <h2>Multiple Designer Colors</h2>
+          <span className="section-tag">{t('colors.tag')}</span>
+          <h2>{t('colors.title')}</h2>}
           <p>
             From neutral tones to bold accents, our curated color palette fits seamlessly 
             into any interior design concept. All colors are achieved through dope-dyeing, 
@@ -357,18 +357,18 @@ export default function RPetGrooveProductPage() {
         <div className="color-features">
           <div className="color-feature">
             <span className="feature-icon">☀️</span>
-            <h4>UV Resistant</h4>
-            <p>Colors stay vibrant even in sunlit spaces</p>
+            <h4>{t('colors.feature1')}</h4>}
+            <p>{t('colors.feature1Desc')}</p>
           </div>
           <div className="color-feature">
             <span className="feature-icon">🧹</span>
-            <h4>Easy Clean</h4>
-            <p>Vacuum or wipe with damp cloth</p>
+            <h4>{t('colors.feature2')}</h4>}
+            <p>{t('colors.feature2Desc')}</p>
           </div>
           <div className="color-feature">
             <span className="feature-icon">🔄</span>
-            <h4>Consistent</h4>
-            <p>Batch-to-batch color consistency guaranteed</p>
+            <h4>{t('colors.feature3')}</h4>}
+            <p>{t('colors.feature3Desc')}</p>
           </div>
         </div>
       </section>
@@ -376,7 +376,7 @@ export default function RPetGrooveProductPage() {
       {/* Patterns Section */}
       <section id="patterns" className="content-section patterns-section dark">
         <div className="patterns-header">
-          <span className="section-tag">DESIGN OPTIONS</span>
+          <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('patterns.title')}</h2>
           <p>
             Four distinctive groove patterns to match any architectural vision. From clean 
@@ -441,7 +441,7 @@ export default function RPetGrooveProductPage() {
       {/* Acoustic Performance Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
+          <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
             The unique groove design combined with high-density recycled PET felt creates 
@@ -536,7 +536,7 @@ export default function RPetGrooveProductPage() {
             </div>
 
             <div className="thickness-selector">
-              <h4>Select Thickness</h4>
+              <h4>{t('thickness.sectionTitle')}</h4>}
               <div className="thickness-options">
                 {thicknessOptions.map((thickness) => (
                   <button
@@ -570,8 +570,8 @@ export default function RPetGrooveProductPage() {
                 <circle cx="12" cy="12" r="2"/>
               </svg>
             </div>
-            <h4>Reduced Reverberation</h4>
-            <p>Control echo and improve speech clarity in any room</p>
+            <h4>{t('acoustics.benefit1Title')}</h4>}
+            <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -582,8 +582,8 @@ export default function RPetGrooveProductPage() {
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
               </svg>
             </div>
-            <h4>Increased Comfort</h4>
-            <p>Create calmer, more peaceful environments</p>
+            <h4>{t('acoustics.benefit2Title')}</h4>}
+            <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -593,8 +593,8 @@ export default function RPetGrooveProductPage() {
                 <path d="M6 20v-4"/>
               </svg>
             </div>
-            <h4>Tested Performance</h4>
-            <p>Independently verified acoustic data</p>
+            <h4>{t('acoustics.benefit3Title')}</h4>}
+            <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
       </section>
@@ -603,7 +603,7 @@ export default function RPetGrooveProductPage() {
       <section id="installation" className="content-section installation-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">EASY INSTALL</span>
+            <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
               rPET - Groove panels are designed for quick and easy installation. Their 
@@ -615,35 +615,35 @@ export default function RPetGrooveProductPage() {
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>Plan Layout</h4>
-                  <p>Measure space and plan panel arrangement</p>
+                  <h4>{t('installation.step1Title')}</h4>}
+                  <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>Prepare Surface</h4>
-                  <p>Ensure wall/ceiling is clean and dry</p>
+                  <h4>{t('installation.step2Title')}</h4>}
+                  <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>Mount Panels</h4>
-                  <p>Use adhesive, clips, or mechanical fixings</p>
+                  <h4>{t('installation.step3Title')}</h4>}
+                  <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>Enjoy</h4>
-                  <p>Immediate acoustic improvement</p>
+                  <h4>{t('installation.step4Title')}</h4>}
+                  <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
             </div>
 
             <div className="mounting-options">
-              <h4>Mounting Options</h4>
+              <h4>{t('installation.mountingOptions')}</h4>}
               <div className="mounting-grid">
                 <div className="mounting-option">
                   <span className="mounting-icon">🧲</span>
@@ -691,7 +691,7 @@ export default function RPetGrooveProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
+            <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
               rPET - Groove panels embody the circular economy. Made entirely from 
@@ -703,14 +703,14 @@ export default function RPetGrooveProductPage() {
                 <span className="sustain-icon">♻️</span>
                 <div>
                   <h4>100% Recycled</h4>
-                  <p>Made from post-consumer PET bottles</p>
+                  <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🔄</span>
                 <div>
                   <h4>Fully Recyclable</h4>
-                  <p>Can be recycled at end of life</p>
+                  <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
@@ -941,8 +941,8 @@ export default function RPetGrooveProductPage() {
       {/* Applications Section */}
       <section className="content-section applications-section dark">
         <div className="applications-header">
-          <span className="section-tag">VERSATILE USE</span>
-          <h2>Applications</h2>
+          <span className="section-tag">{t('applications.tag')}</span>
+          <h2>{t('applications.title')}</h2>}
           <p>rPET - Groove panels fit seamlessly into diverse environments</p>
         </div>
 
@@ -950,17 +950,17 @@ export default function RPetGrooveProductPage() {
           <div className="application-card">
             <div className="application-icon">🏢</div>
             <h4>Offices</h4>
-            <p>Open plan spaces, meeting rooms, focus pods</p>
+            <p>{t('applications.app1')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🏨</div>
             <h4>Hospitality</h4>
-            <p>Hotels, restaurants, lobbies, reception areas</p>
+            <p>{t('applications.app2')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🏫</div>
             <h4>Education</h4>
-            <p>Schools, universities, libraries, auditoriums</p>
+            <p>{t('applications.app3')}, auditoriums</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🏥</div>

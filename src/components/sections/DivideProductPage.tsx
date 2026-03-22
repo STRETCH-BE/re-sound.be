@@ -112,7 +112,7 @@ export default function DivideProductPage() {
       {/* Hero Section */}
       <section className="product-hero">
         <div className="hero-content">
-          <span className="product-tag">ACOUSTIC ROOM DIVIDER</span>
+          <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
@@ -124,15 +124,15 @@ export default function DivideProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🧲</span>
-              <span className="usp-text">Magnetic Connect</span>
+              <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🔄</span>
-              <span className="usp-text">Fully Modular</span>
+              <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
               <span className="usp-icon">🦶</span>
-              <span className="usp-text">Freestanding</span>
+              <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
 
@@ -145,7 +145,7 @@ export default function DivideProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€1,238</strong> excl. VAT</p>
+          <p className="hero-price">{{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}}</p>
         </div>
         
         <div className="hero-image">
@@ -168,7 +168,7 @@ export default function DivideProductPage() {
           </div>
           
           <div className="color-selector">
-            <span className="color-selector-label">Select Color</span>
+            <span className="color-selector-label">{t('hero.colorSelector')}</span>
             <div className="color-options">
               {colorOptions.map((color) => (
                 <button
@@ -222,7 +222,7 @@ export default function DivideProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">INNOVATION</span>
+            <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>
               Re-Sound Divide is the first freestanding acoustic product designed for 
@@ -233,19 +233,19 @@ export default function DivideProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Freestanding design—no installation needed
+                {t('hero.usp3')} design—no installation needed
               </li>
               <li>
                 <span className="check">✓</span>
-                Magnetic connection system
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Lightweight and easy to move
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Circular by design
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -256,7 +256,7 @@ export default function DivideProductPage() {
       <section id="features" className="content-section features-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">STABILITY</span>
+            <span className="section-tag">{t('base.tag')}</span>
             <h2>{t('base.title')}</h2>
             <p>
               Thanks to the integrated base, Divide is always stable and stands freely 
@@ -268,22 +268,22 @@ export default function DivideProductPage() {
               <div className="highlight">
                 <span className="highlight-icon">⚖️</span>
                 <div>
-                  <h4>Perfectly Balanced</h4>
-                  <p>Stable on any surface without fixing</p>
+                  <h4>{t('base.item1Title')}</h4>
+                  <p>{t('base.feature1')}</p>
                 </div>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">🪶</span>
                 <div>
-                  <h4>Lightweight</h4>
-                  <p>Easy to move and reposition</p>
+                  <h4>{t('base.item2Title')}</h4>}
+                  <p>{t('base.feature2')}</p>
                 </div>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">🛡️</span>
                 <div>
-                  <h4>Floor-Safe</h4>
-                  <p>Soft base protects all floor types</p>
+                  <h4>{t('base.item3Title')}</h4>
+                  <p>{t('base.feature3')}</p>
                 </div>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function DivideProductPage() {
         </div>
       </section>
 
-      {/* Magnetic Connection Section */}
+      {/* {t('hero.usp1')}ion Section */}
       <section className="content-section magnetic-section">
         <div className="section-grid">
           <div className="section-image">
@@ -315,7 +315,7 @@ export default function DivideProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">EFFORTLESS</span>
+            <span className="section-tag">{t('magnetic.tag')}</span>
             <h2>{t('magnetic.title')}</h2>
             <p>
               The modules connect effortlessly through subtle magnets integrated into 
@@ -353,7 +353,7 @@ export default function DivideProductPage() {
       <section id="modular" className="content-section modular-section">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">FLEXIBILITY</span>
+            <span className="section-tag">{t('modular.tag')}</span>
             <h2>{t('modular.title')}</h2>
             <p>
               Decide the layout of your space yourself. Divide is a modular system 
@@ -418,7 +418,7 @@ export default function DivideProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
+            <span className="section-tag">{t('features.tag')}</span>
             <h2>{t('features.title')}</h2>
             <p>
               Like all Re-Sound products, Divide is carefully designed with circularity 
@@ -447,7 +447,7 @@ export default function DivideProductPage() {
       {/* Acoustic Performance Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
+          <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
             Re-Sound Divide absorbs sound from both sides, making it perfect for 
@@ -486,25 +486,25 @@ export default function DivideProductPage() {
               <span className="rating-value">αw 0.85</span>
               <span className="rating-label">Per side</span>
             </div>
-            <p>Excellent dual-sided absorption</p>
+            <p>{t('acoustics.extraBenefit')}</p>
           </div>
         </div>
 
         <div className="acoustics-benefits">
           <div className="benefit">
             <span className="benefit-icon">🔇</span>
-            <h4>Noise Reduction</h4>
-            <p>Block distracting background conversations</p>
+            <h4>{t('acoustics.benefit1Title')}</h4>
+            <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🔒</span>
-            <h4>Privacy Zones</h4>
-            <p>Create focused work areas in open spaces</p>
+            <h4>{t('acoustics.benefit2Title')}</h4>
+            <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🎯</span>
-            <h4>Better Focus</h4>
-            <p>Improve concentration and productivity</p>
+            <h4>{t('acoustics.benefit3Title')}</h4>
+            <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
       </section>
@@ -518,7 +518,7 @@ export default function DivideProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions</h4>
+            <h4>{t('specs.dimensionsTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -542,7 +542,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Acoustic Performance</h4>
+            <h4>{t('specs.acousticsTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -562,7 +562,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Materials</h4>
+            <h4>{t('specs.materialsTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -586,7 +586,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -602,7 +602,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Sustainability</h4>
+            <h4>{t('specs.sustainTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -622,7 +622,7 @@ export default function DivideProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Features</h4>
+            <h4>{t('specs.featuresTitle')}</h4>}
             <table>
               <tbody>
                 <tr>

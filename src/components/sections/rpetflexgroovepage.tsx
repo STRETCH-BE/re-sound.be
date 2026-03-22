@@ -1,20 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-// Lead Form Data Interface
-interface LeadFormData {
-  companyName: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  position: string;
-  companyType: string;
-}
 
 // Color options for rPET Flex-Groove (12 colors from Refined Collection)
 const colorOptions = [
@@ -42,462 +32,10 @@ const directionOptions = [
 const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
 
 // Lead Generation Form Modal
-function LeadGenModal({ 
-  isOpen, 
-  onClose, 
-  onSubmit, 
-  downloadFile,
-  isSubmitting 
-}: { 
-  isOpen: boolean; 
-  onClose: () => void; 
-  onSubmit: (data: LeadFormData) => void;
-  downloadFile: string;
-  isSubmitting: boolean;
-}) {
-  const [formData, setFormData] = useState<LeadFormData>({
-    companyName: '',
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    position: '',
-    companyType: '',
-  });
-  const [consentChecked, setConsentChecked] = useState(false);
-
-  useEffect(() => {
-    if (isOpen) {
-      setFormData({
-        companyName: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        position: '',
-        companyType: '',
-      });
-      setConsentChecked(false);
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
-
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) onClose();
-    };
-    window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
-  }, [isOpen, onClose]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (consentChecked) {
-      onSubmit(formData);
-    }
-  };
-
-  if (!isOpen) return null;
-
-  const displayName = downloadFile?.split('/').pop()?.replace('.pdf', '').replace(/-/g, ' ') || 'Document';
-
-  const overlayStyle: React.CSSProperties = {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(10, 22, 40, 0.85)',
-    backdropFilter: 'blur(8px)',
-    WebkitBackdropFilter: 'blur(8px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '1rem',
-    zIndex: 99999,
-  };
-
-  const modalStyle: React.CSSProperties = {
-    backgroundColor: '#ffffff',
-    borderRadius: '20px',
-    maxWidth: '540px',
-    width: '100%',
-    maxHeight: '90vh',
-    overflow: 'hidden',
-    position: 'relative',
-    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
-    display: 'flex',
-    flexDirection: 'column',
-  };
-
-  const headerStyle: React.CSSProperties = {
-    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
-    padding: '2rem 2.5rem',
-    position: 'relative',
-    overflow: 'hidden',
-    flexShrink: 0,
-  };
-
-  const closeButtonStyle: React.CSSProperties = {
-    position: 'absolute',
-    top: '1rem',
-    right: '1rem',
-    width: '36px',
-    height: '36px',
-    background: 'rgba(255, 255, 255, 0.15)',
-    border: 'none',
-    borderRadius: '50%',
-    color: 'white',
-    fontSize: '1.25rem',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 10,
-  };
-
-  const bodyStyle: React.CSSProperties = {
-    padding: '1.5rem 2.5rem',
-    overflowY: 'auto',
-    flex: 1,
-  };
-
-  const footerStyle: React.CSSProperties = {
-    padding: '1rem 2.5rem 2rem',
-    borderTop: '1px solid #e8ecf0',
-    backgroundColor: '#ffffff',
-    flexShrink: 0,
-  };
-
-  const inputStyle: React.CSSProperties = {
-    width: '100%',
-    padding: '0.9rem 1rem',
-    border: '2px solid #e8ecf0',
-    borderRadius: '10px',
-    fontSize: '0.95rem',
-    background: '#fafbfc',
-    boxSizing: 'border-box',
-  };
-
-  const labelStyle: React.CSSProperties = {
-    fontSize: '0.85rem',
-    fontWeight: 600,
-    color: '#0a1628',
-    display: 'block',
-    marginBottom: '0.4rem',
-  };
-
-  const submitButtonStyle: React.CSSProperties = {
-    width: '100%',
-    padding: '1rem 2rem',
-    background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
-    color: 'white',
-    border: 'none',
-    borderRadius: '12px',
-    fontSize: '1rem',
-    fontWeight: 600,
-    cursor: isSubmitting || !consentChecked ? 'not-allowed' : 'pointer',
-    opacity: isSubmitting || !consentChecked ? 0.7 : 1,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '0.5rem',
-  };
-
-  return (
-    <div style={overlayStyle} onClick={onClose}>
-      <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
-        <div style={headerStyle}>
-          <div style={{
-            position: 'absolute',
-            top: '-50%',
-            right: '-20%',
-            width: '200px',
-            height: '200px',
-            background: 'rgba(255, 255, 255, 0.08)',
-            borderRadius: '50%',
-          }} />
-          
-          <button style={closeButtonStyle} onClick={onClose}>✕</button>
-          
-          <div style={{
-            width: '52px',
-            height: '52px',
-            background: 'rgba(255, 255, 255, 0.2)',
-            borderRadius: '14px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '1rem',
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-          </div>
-
-          <h3 style={{
-            fontSize: '1.5rem',
-            fontWeight: 700,
-            color: 'white',
-            margin: '0 0 0.5rem',
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            Download Technical Documentation
-          </h3>
-
-          <p style={{
-            fontSize: '0.95rem',
-            color: 'rgba(255, 255, 255, 0.85)',
-            margin: 0,
-            position: 'relative',
-            zIndex: 1,
-          }}>
-            Fill in your details to access our product specifications
-          </p>
-
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.35rem',
-            background: 'rgba(255, 255, 255, 0.2)',
-            padding: '0.35rem 0.75rem',
-            borderRadius: '20px',
-            fontSize: '0.8rem',
-            color: 'white',
-            marginTop: '0.75rem',
-            position: 'relative',
-            zIndex: 1,
-            textTransform: 'capitalize',
-          }}>
-            📄 {displayName}
-          </div>
-        </div>
-
-        <div style={bodyStyle}>
-          <form id="lead-form" onSubmit={handleSubmit}>
-            <div style={{ marginBottom: '1rem' }}>
-              <label style={labelStyle}>
-                Company Name <span style={{ color: '#e53935' }}>*</span>
-              </label>
-              <input
-                type="text"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleChange}
-                placeholder="Enter your company name"
-                required
-                style={inputStyle}
-              />
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  First Name <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="text"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder="First name"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Last Name <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder="Last name"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  Email Address <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="your@email.com"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Phone Number <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="+32 XXX XX XX XX"
-                  required
-                  style={inputStyle}
-                />
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-              <div>
-                <label style={labelStyle}>
-                  Position / Role <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <select
-                  name="position"
-                  value={formData.position}
-                  onChange={handleChange}
-                  required
-                  style={{ ...inputStyle, cursor: 'pointer' }}
-                >
-                  <option value="">Select...</option>
-                  <option value="owner">Owner / CEO</option>
-                  <option value="director">Director / Manager</option>
-                  <option value="architect">Architect</option>
-                  <option value="designer">Designer</option>
-                  <option value="engineer">Engineer</option>
-                  <option value="project-manager">Project Manager</option>
-                  <option value="procurement">Procurement / Purchasing</option>
-                  <option value="consultant">Consultant</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label style={labelStyle}>
-                  Type of Company <span style={{ color: '#e53935' }}>*</span>
-                </label>
-                <select
-                  name="companyType"
-                  value={formData.companyType}
-                  onChange={handleChange}
-                  required
-                  style={{ ...inputStyle, cursor: 'pointer' }}
-                >
-                  <option value="">Select...</option>
-                  <option value="architecture">Architecture Firm</option>
-                  <option value="interior-design">Interior Design</option>
-                  <option value="construction">Construction Company</option>
-                  <option value="acoustic-consultant">Acoustic Consultant</option>
-                  <option value="real-estate">Real Estate / Property</option>
-                  <option value="corporate">Corporate / Office</option>
-                  <option value="hospitality">Hospitality / Hotels</option>
-                  <option value="education">Education / Schools</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="retail">Retail</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div style={{ marginTop: '0.5rem' }}>
-              <label style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: '0.75rem',
-                cursor: 'pointer',
-                fontSize: '0.85rem',
-                color: '#4b5563',
-                lineHeight: 1.5,
-              }}>
-                <input
-                  type="checkbox"
-                  checked={consentChecked}
-                  onChange={(e) => setConsentChecked(e.target.checked)}
-                  required
-                  style={{
-                    width: '20px',
-                    height: '20px',
-                    marginTop: '2px',
-                    accentColor: '#197FC7',
-                    cursor: 'pointer',
-                    flexShrink: 0,
-                  }}
-                />
-                <span>
-                  I agree to receive communications from Re-Sound and accept the privacy policy.
-                </span>
-              </label>
-            </div>
-          </form>
-        </div>
-
-        <div style={footerStyle}>
-          <button 
-            type="submit" 
-            form="lead-form"
-            disabled={isSubmitting || !consentChecked} 
-            style={submitButtonStyle}
-          >
-            {isSubmitting ? (
-              <>
-                <span style={{
-                  width: '20px',
-                  height: '20px',
-                  border: '2px solid rgba(255, 255, 255, 0.3)',
-                  borderTopColor: 'white',
-                  borderRadius: '50%',
-                  animation: 'spin 0.8s linear infinite',
-                }} />
-                Processing...
-              </>
-            ) : (
-              <>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                Download Now
-              </>
-            )}
-          </button>
-        </div>
-
-        <style>{`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
-      </div>
-    </div>
-  );
-}
 
 export default function RPETFlexGrooveProductPage() {
-  const t = useTranslations('products.rpet-flex-groove');
+  const t = useTranslations('rpetFlexGroovePage');
+  const tPage = useTranslations('productPage');
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDownload, setSelectedDownload] = useState('');
@@ -596,9 +134,9 @@ export default function RPETFlexGrooveProductPage() {
       {/* Hero Section */}
       <section className="product-hero">
         <div className="hero-content">
-          <span className="product-tag">FLEXIBLE ACOUSTIC PANELS</span>
+          <span className="product-tag">{t('hero.tag')}</span>
           <h1>rPET Flex-Groove</h1>
-          <p className="hero-tagline">Bend Without Breaking</p>
+          <p className="hero-tagline">{t('hero.tagline')}</p>}
           <p className="hero-description">
             The ultimate acoustic solution for curved surfaces. Made from recycled PET felt 
             with precision V-cut grooves, these flexible panels adapt seamlessly to columns, 
@@ -608,21 +146,21 @@ export default function RPETFlexGrooveProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🔄</span>
-              <span className="usp-text">Min. Radius 500mm</span>
+              <span className="usp-text">{t('hero.usp1')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🔥</span>
-              <span className="usp-text">Fire Retardant</span>
+              <span className="usp-text">{t('hero.usp2')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">100% Recycled PET</span>
+              <span className="usp-text">{t('hero.usp3')}</span>}
             </div>
           </div>
 
           <div className="hero-ctas">
             <Link href="/contact" className="btn-primary">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
               View Specifications
@@ -703,8 +241,8 @@ export default function RPETFlexGrooveProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">INNOVATION</span>
-            <h2>Designed for Curved Surfaces</h2>
+            <span className="section-tag">{t('overview.tag')}</span>
+            <h2>{t('overview.title')}</h2>}
             <p>
               Flex-Groove panels provide a versatile acoustic solution for curved surfaces, 
               effortlessly adapting to any shape. Suitable for inner and outer radii, their 
@@ -714,19 +252,19 @@ export default function RPETFlexGrooveProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Adapts to any curved surface
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Works with inner and outer radii
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Ribbed texture adds depth and rhythm
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Sound-dampening properties built-in
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -736,8 +274,8 @@ export default function RPETFlexGrooveProductPage() {
       {/* Flexibility Section */}
       <section id="flexibility" className="content-section flexibility-section dark">
         <div className="flexibility-header">
-          <span className="section-tag">TECHNOLOGY</span>
-          <h2>V-Cut Flexibility System</h2>
+          <span className="section-tag">{t('technology.tag')}</span>
+          <h2>{t('technology.title')}</h2>}
           <p>
             Each panel is incised with precision V-cuts, allowing it to bend without breaking. 
             This smart cut creates the signature ribbed texture — a series of linear grooves 
@@ -778,18 +316,18 @@ export default function RPETFlexGrooveProductPage() {
         <div className="flexibility-benefits">
           <div className="benefit">
             <span className="benefit-icon">📐</span>
-            <h4>Precision V-Cut</h4>
-            <p>Engineered grooves for controlled flexibility</p>
+            <h4>{t('technology.feature1Title')}</h4>}
+            <p>{t('technology.feature1Desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🔄</span>
-            <h4>Seamless Curves</h4>
-            <p>Smooth transitions on any curved surface</p>
+            <h4>{t('technology.feature2Title')}</h4>}
+            <p>{t('technology.feature2Desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">✂️</span>
-            <h4>Minimal Waste</h4>
-            <p>Efficient design reduces cutting waste</p>
+            <h4>{t('technology.feature3Title')}</h4>}
+            <p>{t('technology.feature3Desc')}</p>
           </div>
         </div>
       </section>
@@ -798,8 +336,8 @@ export default function RPETFlexGrooveProductPage() {
       <section id="colors" className="content-section colors-section">
         <div className="section-grid">
           <div className="section-content">
-            <span className="section-tag">REFINED COLLECTION</span>
-            <h2>12 Curated Colors</h2>
+            <span className="section-tag">{t('colors.tag')}</span>
+            <h2>{t('colors.title')}</h2>}
             <p>
               Our carefully curated color palette offers versatile options for any interior. 
               From soft neutrals to bold statement colors, each shade is designed to complement 
@@ -852,8 +390,8 @@ export default function RPETFlexGrooveProductPage() {
       {/* Acoustic Performance Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
-          <h2>Sound-Dampening Properties</h2>
+          <span className="section-tag">{t('acoustics.tag')}</span>
+          <h2>{t('acoustics.title')}</h2>}
           <p>
             Made from fire-retardant recycled PET felt, Flex-Groove panels provide 
             effective sound absorption while maintaining visual continuity across 
@@ -889,18 +427,18 @@ export default function RPETFlexGrooveProductPage() {
         <div className="acoustics-benefits">
           <div className="benefit">
             <span className="benefit-icon">🔇</span>
-            <h4>Sound Dampening</h4>
-            <p>Reduces echo and reverberation</p>
+            <h4>{t('acoustics.feature1Title')}</h4>}
+            <p>{t('acoustics.feature1Desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🔥</span>
             <h4>Fire Retardant</h4>
-            <p>Built-in fire safety properties</p>
+            <p>{t('acoustics.feature2Desc')}</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">♻️</span>
             <h4>100% Recycled</h4>
-            <p>Made from recycled plastic bottles</p>
+            <p>{t('acoustics.feature3Desc')}</p>}
           </div>
         </div>
       </section>
@@ -909,8 +447,8 @@ export default function RPETFlexGrooveProductPage() {
       <section id="installation" className="content-section installation-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">EASY INSTALL</span>
-            <h2>Secure Mounting, Simple Installation</h2>
+            <span className="section-tag">{t('installation.tag')}</span>
+            <h2>{t('installation.title')}</h2>}
             <p>
               Designed to span standard floor-to-ceiling heights, the panels simplify 
               alignment and reduce installation time. The adaptable form makes them 
@@ -922,29 +460,29 @@ export default function RPETFlexGrooveProductPage() {
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>Prepare Surface</h4>
-                  <p>Ensure the curved surface is clean and ready for mounting</p>
+                  <h4>{t('installation.step1Title')}</h4>}
+                  <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>Apply Adhesive</h4>
-                  <p>Use recommended adhesive on the panel back</p>
+                  <h4>{t('installation.step2Title')}</h4>}
+                  <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>Position & Bend</h4>
-                  <p>Gently bend the panel to follow the curved surface</p>
+                  <h4>{t('installation.step3Title')}</h4>}
+                  <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>Secure & Finish</h4>
-                  <p>Press firmly to ensure full adhesion along the curve</p>
+                  <h4>{t('installation.step4Title')}</h4>}
+                  <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -976,8 +514,8 @@ export default function RPETFlexGrooveProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
-            <h2>From Bottles to Beautiful Spaces</h2>
+            <span className="section-tag">{t('sustainability.tag')}</span>
+            <h2>{t('sustainability.title')}</h2>}
             <p>
               Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, 
               giving new life to waste materials. Our circular approach ensures that 
@@ -988,14 +526,14 @@ export default function RPETFlexGrooveProductPage() {
                 <span className="sustain-icon">🍾</span>
                 <div>
                   <h4>Recycled PET</h4>
-                  <p>Made from recycled plastic bottles</p>
+                  <p>{t('acoustics.feature3Desc')}</p>}
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
                   <h4>Fully Recyclable</h4>
-                  <p>Can be recycled at end of life</p>
+                  <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
@@ -1020,8 +558,8 @@ export default function RPETFlexGrooveProductPage() {
       {/* Specifications Section */}
       <section id="specs" className="content-section specs-section">
         <div className="specs-header">
-          <span className="section-tag">TECHNICAL</span>
-          <h2>Specifications</h2>
+          <span className="section-tag">{t('specs.tag')}</span>
+          <h2>{t('specs.title')}</h2>}
         </div>
 
         <div className="specs-grid">
@@ -1170,8 +708,8 @@ export default function RPETFlexGrooveProductPage() {
       {/* Gallery Section */}
       <section id="gallery" className="content-section gallery-section">
         <div className="gallery-header">
-          <span className="section-tag">INSPIRATION</span>
-          <h2>Projects & Applications</h2>
+          <span className="section-tag">{t('gallery.tag')}</span>
+          <h2>{t('gallery.title')}</h2>}
         </div>
 
         <div className="gallery-grid">
@@ -1193,8 +731,8 @@ export default function RPETFlexGrooveProductPage() {
       {/* Downloads Section */}
       <section id="downloads" className="content-section downloads-section">
         <div className="downloads-header">
-          <span className="section-tag">RESOURCES</span>
-          <h2>Downloads</h2>
+          <span className="section-tag">{t('downloads.tag')}</span>
+          <h2>{tPage('downloads.title')}</h2>}
         </div>
 
         <div className="downloads-grid">
@@ -1218,8 +756,8 @@ export default function RPETFlexGrooveProductPage() {
       {/* Applications Section */}
       <section className="content-section applications-section dark">
         <div className="applications-header">
-          <span className="section-tag">IDEAL FOR</span>
-          <h2>Perfect Applications</h2>
+          <span className="section-tag">{t('applications.tag')}</span>
+          <h2>{t('applications.title')}</h2>}
           <p>Wherever curves meet acoustics</p>
         </div>
 
@@ -1227,12 +765,12 @@ export default function RPETFlexGrooveProductPage() {
           <div className="application-card">
             <div className="application-icon">🏛️</div>
             <h4>Columns</h4>
-            <p>Wrap structural columns with seamless acoustic coverage</p>
+            <p>{t('applications.app1')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🌀</div>
             <h4>Curved Walls</h4>
-            <p>Follow organic wall shapes for continuous coverage</p>
+            <p>{t('applications.app2')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🚪</div>
@@ -1259,17 +797,17 @@ export default function RPETFlexGrooveProductPage() {
       {/* CTA Section */}
       <section className="content-section cta-section">
         <div className="cta-content">
-          <h2>Ready to Curve Your Acoustics?</h2>
+          <h2>{t('cta.title')}</h2>}
           <p>
             Get a personalized quote for your project. Our team will help you 
             choose the perfect color and calculate your requirements.
           </p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
-              Request a Quote
+              {tPage('cta.requestQuote')}
             </Link>
             <a href="tel:+3232846818" className="btn-secondary large">
-              Call Us: +32 3 284 68 18
+              {tPage('cta.callUs')}
             </a>
           </div>
           <p className="cta-note">

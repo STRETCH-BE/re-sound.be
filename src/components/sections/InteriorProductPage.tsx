@@ -142,7 +142,7 @@ export default function InteriorProductPage() {
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
-              View Specifications
+              {tPage('cta.viewSpecifications')}
             </a>
           </div>
 
@@ -236,7 +236,7 @@ export default function InteriorProductPage() {
               </li>
               <li>
                 <span className="check">✓</span>
-                Removable & washable cover
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>

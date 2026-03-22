@@ -141,7 +141,7 @@ export default function RPETPanelProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">Sustainable Silence, Infinite Possibilities</p>
+          <p className="hero-tagline">{t('hero.tagline')}</p>}
           <p className="hero-description">
             Transform any space with rPET - Panel acoustic panels. Made from 100% recycled 
             PET bottles, these lightweight yet powerful sound absorbers deliver maximum 
@@ -151,15 +151,15 @@ export default function RPETPanelProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">♻️</span>
-              <span className="usp-text">100% Recyclable PET</span>
+              <span className="usp-text">{t('hero.usp1')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">αw up to 1.00</span>
+              <span className="usp-text">{t('hero.usp2')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🪶</span>
-              <span className="usp-text">Only 3-4 kg/m²</span>
+              <span className="usp-text">{t('hero.usp3')}</span>}
             </div>
           </div>
 
@@ -249,7 +249,7 @@ export default function RPETPanelProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">CIRCULAR DESIGN</span>
+            <span className="section-tag">{t('overview.tag')}</span>
             <h2>From Bottles to Better Spaces</h2>
             <p>
               rPET - Panel transforms recycled PET bottles into high-performance acoustic 
@@ -260,19 +260,19 @@ export default function RPETPanelProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Made from up to 50% recycled PET bottles
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                100% recyclable at end of life
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Lightweight: only 3-4 kg/m²
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Free from chemical binders
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -282,7 +282,7 @@ export default function RPETPanelProductPage() {
       {/* Key Benefits Section */}
       <section className="content-section benefits-section dark">
         <div className="benefits-header">
-          <span className="section-tag">WHY rPET - PANEL</span>
+          <span className="section-tag">{t('why.tag')}</span>
           <h2>{t('overview.title')}</h2>
           <p>
             Discover why architects, designers, and acoustic consultants choose 
@@ -293,27 +293,27 @@ export default function RPETPanelProductPage() {
         <div className="benefits-grid">
           <div className="benefit-card">
             <div className="benefit-icon">🌱</div>
-            <h4>Ecoustic</h4>
+            <h4>{t('why.reason1Title')}</h4>}
             <p>Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">⭐</div>
-            <h4>Excellent</h4>
+            <h4>{t('why.reason2Title')}</h4>}
             <p>Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">🛠️</div>
-            <h4>Easy to Handle</h4>
+            <h4>{t('why.reason3Title')}</h4>}
             <p>Lightweight and stable. Cut, drill, mill, and install with standard tools.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">💚</div>
-            <h4>People-Friendly</h4>
+            <h4>{t('why.reason4Title')}</h4>}
             <p>Anti-static, skin-friendly, anti-allergenic. No VOC or formaldehyde emissions.</p>
           </div>
           <div className="benefit-card">
             <div className="benefit-icon">🎨</div>
-            <h4>Endless Possibilities</h4>
+            <h4>{t('why.reason5Title')}</h4>}
             <p>5 standard colors plus any RAL/NCS. Add fabric, laminate, veneer, or custom prints.</p>
           </div>
         </div>
@@ -322,7 +322,7 @@ export default function RPETPanelProductPage() {
       {/* Colors Section */}
       <section id="colors" className="content-section colors-section">
         <div className="colors-header">
-          <span className="section-tag">COLOR OPTIONS</span>
+          <span className="section-tag">{t('colors.tag')}</span>
           <h2>Express Your Style</h2>
           <p>
             Choose from 5 sophisticated standard colors or specify any custom color 
@@ -387,7 +387,7 @@ export default function RPETPanelProductPage() {
       {/* Applications Section */}
       <section id="applications" className="content-section applications-section dark">
         <div className="applications-header">
-          <span className="section-tag">APPLICATIONS</span>
+          <span className="section-tag">{t('applications.tag')}</span>
           <h2>Design, Construct, Build</h2>
           <p>
             Every building and every room is unique. rPET - Panel adapts to any 
@@ -447,7 +447,7 @@ export default function RPETPanelProductPage() {
       {/* Acoustic Performance Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
+          <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
             rPET - Panel achieves the maximum possible acoustic absorption rating. 
@@ -568,8 +568,8 @@ export default function RPETPanelProductPage() {
                 <line x1="8" y1="23" x2="16" y2="23"/>
               </svg>
             </div>
-            <h4>Speech Clarity</h4>
-            <p>Dramatically improve intelligibility in meeting rooms and classrooms</p>
+            <h4>{t('acoustics.benefit1Title')}</h4>}
+            <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -580,8 +580,8 @@ export default function RPETPanelProductPage() {
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
               </svg>
             </div>
-            <h4>Reduced Stress</h4>
-            <p>Create calmer environments that boost wellbeing and productivity</p>
+            <h4>{t('acoustics.benefit2Title')}</h4>}
+            <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -590,8 +590,8 @@ export default function RPETPanelProductPage() {
                 <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
               </svg>
             </div>
-            <h4>Privacy</h4>
-            <p>Reduce sound transmission between spaces for confidential conversations</p>
+            <h4>{t('acoustics.benefit3Title')}</h4>}
+            <p>{t('acoustics.benefit3')}s</p>
           </div>
         </div>
       </section>
@@ -600,7 +600,7 @@ export default function RPETPanelProductPage() {
       <section id="processing" className="content-section processing-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">EASY TO WORK WITH</span>
+            <span className="section-tag">{t('workability.tag')}</span>
             <h2>Process Like MDF, Weighs Like Nothing</h2>
             <p>
               rPET - Panel combines the workability of MDF with incredibly light weight. 
@@ -612,28 +612,28 @@ export default function RPETPanelProductPage() {
               <div className="method">
                 <div className="method-icon">🪚</div>
                 <div className="method-content">
-                  <h4>Sawing</h4>
-                  <p>Manual or electric—clean cuts every time</p>
+                  <h4>{t('workability.step1Title')}</h4>}
+                  <p>{t('workability.step1Desc')}</p>
                 </div>
               </div>
               <div className="method">
                 <div className="method-icon">⚙️</div>
                 <div className="method-content">
-                  <h4>CNC Cutting & Milling</h4>
-                  <p>Precision shapes and custom profiles</p>
+                  <h4>{t('workability.step2Title')}</h4>}
+                  <p>{t('workability.step2Desc')}</p>
                 </div>
               </div>
               <div className="method">
                 <div className="method-icon">🔩</div>
                 <div className="method-content">
-                  <h4>Drilling & Screwing</h4>
+                  <h4>{t('workability.step3Title')}</h4>}
                   <p>Secure fixing without splitting</p>
                 </div>
               </div>
               <div className="method">
                 <div className="method-icon">📐</div>
                 <div className="method-content">
-                  <h4>V-Cut Bending</h4>
+                  <h4>{t('workability.step4Title')}</h4>}
                   <p>Create 3D shapes and corners</p>
                 </div>
               </div>
@@ -670,7 +670,7 @@ export default function RPETPanelProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
+            <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
               rPET - Panel embodies the circular economy. Each panel contains up to 50% 
@@ -681,21 +681,21 @@ export default function RPETPanelProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🍾</span>
                 <div>
-                  <h4>Up to 50% Recycled Content</h4>
-                  <p>Made from post-consumer PET bottles</p>
+                  <h4>{t('sustainability.cert1')}</h4>}
+                  <p>{t('sustainability.badge1Desc')}</p>}
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>100% Recyclable</h4>
-                  <p>Full material recovery at end of life</p>
+                  <h4>{t('sustainability.cert2')}</h4>}
+                  <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏷️</span>
                 <div>
-                  <h4>OEKO-TEX® Standard 100</h4>
+                  <h4>{t('sustainability.cert3')}</h4>}
                   <p>Class 1 certified for human safety</p>
                 </div>
               </div>
@@ -909,7 +909,7 @@ export default function RPETPanelProductPage() {
       <section className="content-section samples-section dark">
         <div className="samples-content">
           <div className="samples-text">
-            <span className="section-tag">GET STARTED</span>
+            <span className="section-tag">{t('sample.tag')}</span>
             <h2>Request Your Sample Package</h2>
             <p>
               Experience the quality of rPET - Panel firsthand. Our customized sample 

@@ -142,11 +142,11 @@ export default function SolidProductPage() {
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
-              View Specifications
+              {tPage('cta.viewSpecifications')}
             </a>
           </div>
 
-          <p className="hero-price">Starting from <strong>€407</strong> excl. VAT per panel</p>
+          <p className="hero-price">{{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}}</p>
         </div>
         
         <div className="hero-image">
@@ -232,19 +232,19 @@ export default function SolidProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                High-performance acoustic core
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Elegant removable fabric cover
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Complete hook mounting system
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Large format for maximum impact
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -314,15 +314,15 @@ export default function SolidProductPage() {
               </li>
               <li>
                 <span className="check">✓</span>
-                Machine washable at 30°C
+                {t('maintenance.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Stain-resistant options available
+                {t('maintenance.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Replacement covers available
+                {t('maintenance.feature4')}
               </li>
             </ul>
           </div>

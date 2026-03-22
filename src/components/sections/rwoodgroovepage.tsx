@@ -137,7 +137,7 @@ export default function RWoodGrooveProductPage() {
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
-          <p className="hero-tagline">Natural Beauty, Perfect Acoustics</p>
+          <p className="hero-tagline">{t('hero.tagline')}</p>}
           <p className="hero-description">
             Bring natural warmth and sophisticated style to any space with rWood - Groove 
             acoustic panels. Premium oak and walnut veneers combined with sound-absorbing 
@@ -147,15 +147,15 @@ export default function RWoodGrooveProductPage() {
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-icon">🌳</span>
-              <span className="usp-text">FSC® Certified Wood</span>
+              <span className="usp-text">{t('hero.usp1')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🔇</span>
-              <span className="usp-text">Class A Absorption</span>
+              <span className="usp-text">{t('hero.usp2')}</span>}
             </div>
             <div className="usp">
               <span className="usp-icon">🇪🇺</span>
-              <span className="usp-text">Made in Europe</span>
+              <span className="usp-text">{t('hero.usp3')}</span>}
             </div>
           </div>
 
@@ -245,7 +245,7 @@ export default function RWoodGrooveProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">CRAFTSMANSHIP</span>
+            <span className="section-tag">{t('overview.tag')}</span>
             <h2>Where Nature Meets Design</h2>
             <p>
               rWood - Groove panels transform any room into a space of natural beauty and 
@@ -256,19 +256,19 @@ export default function RWoodGrooveProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Premium A-grade oak and walnut veneers
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Integrated acoustic felt backing
+                {t('overview.feature2')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Seamless panel-to-panel connection
+                {t('overview.feature3')}
               </li>
               <li>
                 <span className="check">✓</span>
-                Suitable for walls and ceilings
+                {t('overview.feature4')}
               </li>
             </ul>
           </div>
@@ -278,7 +278,7 @@ export default function RWoodGrooveProductPage() {
       {/* Variants Section */}
       <section id="variants" className="content-section variants-section dark">
         <div className="variants-header">
-          <span className="section-tag">DESIGN OPTIONS</span>
+          <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('overview.title')}</h2>
           <p>
             Four distinct groove patterns to match any architectural vision. From classic 
@@ -315,7 +315,7 @@ export default function RWoodGrooveProductPage() {
       <section id="finishes" className="content-section finishes-section">
         <div className="section-grid">
           <div className="section-content">
-            <span className="section-tag">MATERIALS</span>
+            <span className="section-tag">{t('materials.tag')}</span>
             <h2>Premium Finishes</h2>
             <p>
               Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent 
@@ -326,11 +326,11 @@ export default function RWoodGrooveProductPage() {
             <div className="finish-categories">
               <div className="finish-category">
                 <h4>{t('oakCollection.title')}</h4>
-                <p>Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each brings out the distinctive oak grain in a unique way.</p>
+                <p>{t('materials.oilFinishesDesc')} Each brings out the distinctive oak grain in a unique way.</p>
               </div>
               <div className="finish-category">
-                <h4>Walnut</h4>
-                <p>Rich, warm tones with distinctive grain patterns. The premium choice for sophisticated interiors.</p>
+                <h4>{t('materials.walnutTitle')}</h4>}
+                <p>{t('materials.walnutDesc')} The premium choice for sophisticated interiors.</p>
               </div>
             </div>
 
@@ -366,7 +366,7 @@ export default function RWoodGrooveProductPage() {
       {/* Acoustic Performance Section - IMPROVED */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
-          <span className="section-tag">PERFORMANCE</span>
+          <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
             The unique groove design combined with high-quality acoustic felt creates 
@@ -492,8 +492,8 @@ export default function RWoodGrooveProductPage() {
                 <circle cx="12" cy="12" r="2"/>
               </svg>
             </div>
-            <h4>Reduced Reverberation</h4>
-            <p>Control echo and improve speech clarity in any room</p>
+            <h4>{t('acoustics.benefit1Title')}</h4>}
+            <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -504,8 +504,8 @@ export default function RWoodGrooveProductPage() {
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
               </svg>
             </div>
-            <h4>Increased Comfort</h4>
-            <p>Create calmer, more peaceful environments</p>
+            <h4>{t('acoustics.benefit2Title')}</h4>}
+            <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -515,8 +515,8 @@ export default function RWoodGrooveProductPage() {
                 <path d="M6 20v-4"/>
               </svg>
             </div>
-            <h4>Tested Performance</h4>
-            <p>Independently verified acoustic data</p>
+            <h4>{t('acoustics.benefit3Title')}</h4>}
+            <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
       </section>
@@ -525,7 +525,7 @@ export default function RWoodGrooveProductPage() {
       <section id="installation" className="content-section installation-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">EASY INSTALL</span>
+            <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
               rWood - Groove panels feature an innovative tongue-and-groove connection 
@@ -538,28 +538,28 @@ export default function RWoodGrooveProductPage() {
               <div className="install-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
-                  <h4>Prepare Surface</h4>
-                  <p>Mount battens or apply adhesive to clean, dry surface</p>
+                  <h4>{t('installation.step1Title')}</h4>}
+                  <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
-                  <h4>Position First Panel</h4>
-                  <p>Start from corner, ensure level alignment</p>
+                  <h4>{t('installation.step2Title')}</h4>}
+                  <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>Connect Panels</h4>
+                  <h4>{t('installation.step3Title')}</h4>}
                   <p>Slide tongue into groove for seamless connection</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
-                  <h4>Complete & Finish</h4>
+                  <h4>{t('installation.step4Title')}</h4>}
                   <p>Add end mouldings for a professional result</p>
                 </div>
               </div>
@@ -592,7 +592,7 @@ export default function RWoodGrooveProductPage() {
             </div>
           </div>
           <div className="section-content">
-            <span className="section-tag">SUSTAINABILITY</span>
+            <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>Responsibly Sourced</h2>
             <p>
               Every rWood - Groove panel is crafted with sustainability at its core. 
@@ -604,14 +604,14 @@ export default function RWoodGrooveProductPage() {
                 <span className="sustain-icon">🌲</span>
                 <div>
                   <h4>FSC® Certified</h4>
-                  <p>Wood from responsibly managed forests</p>
+                  <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
                   <h4>Recycled Felt</h4>
-                  <p>Acoustic backing from recycled materials</p>
+                  <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
@@ -642,7 +642,7 @@ export default function RWoodGrooveProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions</h4>
+            <h4>{t('specs.dimensionsTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -670,7 +670,7 @@ export default function RWoodGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Acoustic Performance</h4>
+            <h4>{t('specs.acousticsTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -690,7 +690,7 @@ export default function RWoodGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Materials</h4>
+            <h4>{t('specs.materialsTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -714,7 +714,7 @@ export default function RWoodGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>}
             <table>
               <tbody>
                 <tr>
@@ -838,8 +838,8 @@ export default function RWoodGrooveProductPage() {
       {/* Accessories Section */}
       <section className="content-section accessories-section dark">
         <div className="accessories-header">
-          <span className="section-tag">COMPLETE THE LOOK</span>
-          <h2>Accessories</h2>
+          <span className="section-tag">{t('accessories.tag')}</span>
+          <h2>{t('accessories.title')}</h2>}
           <p>Professional finishing touches for a perfect result</p>
         </div>
 
@@ -847,12 +847,12 @@ export default function RWoodGrooveProductPage() {
           <div className="accessory-card">
             <div className="accessory-icon">📏</div>
             <h4>End Mouldings</h4>
-            <p>Clean edges where panels meet other surfaces</p>
+            <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">🔲</div>
             <h4>Corner Profiles</h4>
-            <p>Seamless internal and external corner solutions</p>
+            <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">📐</div>
