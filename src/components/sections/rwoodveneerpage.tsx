@@ -41,16 +41,16 @@ const allVeneers = veneerCollections.flatMap(c => c.veneers);
 
 // Panel format options
 const formatOptions = [
-  { id: 'standard', name: 'Standard', width: '1220 mm', length: '2800 mm', thickness: '19 mm', description: 'Most versatile format' },
-  { id: 'large', name: 'Large Format', width: '1220 mm', length: '3050 mm', thickness: '19 mm', description: 'Fewer joints, grander look' },
-  { id: 'slim', name: 'Slim', width: '1220 mm', length: '2800 mm', thickness: '12 mm', description: 'Lightweight wall cladding' },
+  { id: 'standard', name: t('dimensions.standardName'), width: '1220 mm', length: '2800 mm', thickness: '19 mm', description: t('dimensions.standardDesc') },
+  { id: 'large', name: t('dimensions.largeName'), width: '1220 mm', length: '3050 mm', thickness: '19 mm', description: t('dimensions.largeDesc') },
+  { id: 'slim', name: t('dimensions.slimName'), width: '1220 mm', length: '2800 mm', thickness: '12 mm', description: t('dimensions.slimDesc') },
 ];
 
 // Finish type options
 const finishTypes = [
-  { id: 'matt-lacquer', name: 'Super Matt Lacquer', description: 'Anti-fingerprint, silky touch. 6-layer UV-cured protection.', icon: '✦' },
-  { id: 'natural-oil', name: 'Natural Oil', description: 'Deep, authentic wood feel with penetrating protection.', icon: '◉' },
-  { id: 'raw', name: 'Unfinished', description: 'Ready for custom on-site finishing by the installer.', icon: '◇' },
+  { id: 'matt-lacquer', name: t('finishes.mattLacquerName'), description: t('finishes.mattLacquerDesc'), icon: '✦' },
+  { id: 'natural-oil', name: t('finishes.naturalOilName'), description: t('finishes.naturalOilDesc'), icon: '◉' },
+  { id: 'raw', name: t('finishes.unfinishedName'), description: t('finishes.unfinishedDesc'), icon: '◇' },
 ];
 
 // Default hero image
@@ -77,7 +77,7 @@ export default function RWoodPanelProductPage() {
     : veneerCollections.find(c => c.category === activeCollection)?.veneers || [];
 
   const downloads = [
-    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
     { id: 'veneer-collection-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/rwood-veneer/veneer-collection-guide.pdf' },
     { id: 'processing-instructions', name: tPage('downloads.installationManual'), icon: '🔧', file: '/documents/rwood-veneer//processing-instructions.pdf' },
     { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-veneer/acoustic-test-report.pdf' },
@@ -273,10 +273,7 @@ export default function RWoodPanelProductPage() {
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>
-              rWood - Panel brings the warmth and character of solid timber into a prefinished, 
-              ready-to-use format. Each panel is crafted from premium A-grade veneer, bonded 
-              to a high-density MDF core using advanced pressing technology — delivering 
-              the beauty of natural wood with outstanding dimensional stability.
+              {t('overview.description')}
             </p>
             <ul className="feature-list">
               <li>
@@ -311,7 +308,7 @@ export default function RWoodPanelProductPage() {
         <div className="composition-header">
           <span className="section-tag">{t('anatomy.tag')}</span>
           <h2>{t('construction.title')}</h2>
-          <p>Every layer serves a purpose — from the authentic wood surface to the engineered core.</p>
+          <p>{t('anatomy.description')}</p>
         </div>
 
         <div className="composition-diagram">
@@ -323,7 +320,7 @@ export default function RWoodPanelProductPage() {
               <span className="comp-layer-number">01</span>
               <div>
                 <h4>{t('anatomy.layer1')}</h4>
-                <p>A-grade real wood veneer, brushed, stained and protected with 6 layers of UV-cured acrylate urethane lacquer. Soft-touch super matt finish.</p>
+                <p>{t('anatomy.layer1Desc')}</p>
               </div>
             </div>
           </div>
@@ -340,7 +337,7 @@ export default function RWoodPanelProductPage() {
               <span className="comp-layer-number">02</span>
               <div>
                 <h4>{t('anatomy.layer2')}</h4>
-                <p>700 kg/m³ FSC® certified MDF. Available in standard, moisture-resistant (MR) and fire-retardant (FR) grades.</p>
+                <p>{t('anatomy.layer2Desc')}</p>
               </div>
             </div>
           </div>
@@ -357,7 +354,7 @@ export default function RWoodPanelProductPage() {
               <span className="comp-layer-number">03</span>
               <div>
                 <h4>{t('anatomy.layer3')}</h4>
-                <p>Matching veneer backing ensures dimensional stability and prevents warping. Finished or unfinished options.</p>
+                <p>{t('anatomy.layer3Desc')}</p>
               </div>
             </div>
           </div>
@@ -370,10 +367,9 @@ export default function RWoodPanelProductPage() {
       <section id="collection" className="content-section collection-section dark">
         <div className="collection-header">
           <span className="section-tag">{t('collection.tag')}</span>
-          <h2>10 Curated Wood Veneers</h2>
+          <h2>{t('collection.title')}</h2>
           <p>
-            From serene Scandinavian birch to dramatic American walnut — every veneer 
-            is carefully selected, brushed and finished to showcase the character of the wood.
+            {t('collection.description')}
           </p>
         </div>
 
@@ -429,7 +425,7 @@ export default function RWoodPanelProductPage() {
             <line x1="12" y1="16" x2="12" y2="12"/>
             <line x1="12" y1="8" x2="12.01" y2="8"/>
           </svg>
-          <span>Custom veneer species and stain colours available on project orders of 50+ panels.</span>
+          <span>{t('collection.customNote')}</span>
         </div>
       </section>
 
@@ -440,11 +436,9 @@ export default function RWoodPanelProductPage() {
         <div className="section-grid">
           <div className="section-content">
             <span className="section-tag">{t('finishes.tag')}</span>
-            <h2>Touch &amp; Protection</h2>
+            <h2>{t('finishes.title')}</h2>
             <p>
-              The right finish brings out the best in every wood species. Our multi-layer 
-              finishing process delivers a surface that is as pleasing to touch as it is 
-              durable — protected against scratches, moisture and daily wear.
+              {t('finishes.description')}
             </p>
 
             <div className="finish-type-selector">
@@ -468,19 +462,19 @@ export default function RWoodPanelProductPage() {
               <div className="advantages-grid">
                 <div className="advantage">
                   <span className="adv-icon">🛡️</span>
-                  <span>Scratch resistant</span>
+                  <span>{t('finishes.adv1')}</span>
                 </div>
                 <div className="advantage">
                   <span className="adv-icon">💧</span>
-                  <span>Spill resistant</span>
+                  <span>{t('finishes.adv2')}</span>
                 </div>
                 <div className="advantage">
                   <span className="adv-icon">👆</span>
-                  <span>Anti-fingerprint</span>
+                  <span>{t('finishes.adv3')}</span>
                 </div>
                 <div className="advantage">
                   <span className="adv-icon">🧹</span>
-                  <span>Easy maintenance</span>
+                  <span>{t('finishes.adv4')}</span>
                 </div>
               </div>
             </div>
@@ -504,8 +498,8 @@ export default function RWoodPanelProductPage() {
       <section id="formats" className="content-section formats-section">
         <div className="formats-header">
           <span className="section-tag">{t('dimensions.tag')}</span>
-          <h2>Panel Formats</h2>
-          <p>Three formats to cover every application — from full-height wall cladding to compact furniture elements.</p>
+          <h2>{t('dimensions.title')}</h2>
+          <p>{t('dimensions.description')}</p>
         </div>
 
         <div className="formats-grid">
@@ -526,7 +520,7 @@ export default function RWoodPanelProductPage() {
                 <p>{format.description}</p>
                 <div className="format-specs">
                   <span>{format.width} × {format.length}</span>
-                  <span>Thickness: {format.thickness}</span>
+                  <span>{t('dimensions.thicknessLabel')} {format.thickness}</span>
                 </div>
               </div>
             </div>
@@ -538,10 +532,9 @@ export default function RWoodPanelProductPage() {
       <section id="applications" className="content-section applications-section dark">
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
-          <h2>Limitless Possibilities</h2>
+          <h2>{t('applications.title')}</h2>
           <p>
-            From bespoke cabinetry to full-height feature walls — rWood - Panel delivers 
-            the look and feel of solid timber for every interior application.
+            {t('applications.description')}
           </p>
         </div>
 
@@ -556,7 +549,7 @@ export default function RWoodPanelProductPage() {
               </svg>
             </div>
             <h4>{t('applications.app1Title')}</h4>
-            <p>{t('applications.app1Desc')} shelving and bespoke furniture. Easy to machine with standard woodworking tools.</p>
+            <p>{t('applications.app1Desc')} {t('applications.app1Extra')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">
@@ -567,7 +560,7 @@ export default function RWoodPanelProductPage() {
               </svg>
             </div>
             <h4>{t('applications.app2Title')}</h4>
-            <p>{t('applications.app2Desc')} Creates stunning visual impact with the warmth of natural wood.</p>
+            <p>{t('applications.app2Desc')} {t('applications.app2Extra')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">
@@ -578,7 +571,7 @@ export default function RWoodPanelProductPage() {
               </svg>
             </div>
             <h4>{t('applications.app3Title')}</h4>
-            <p>{t('applications.app3Desc')} Lightweight slim format available for reduced structural load.</p>
+            <p>{t('applications.app3Desc')} {t('applications.app3Extra')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">
@@ -589,18 +582,18 @@ export default function RWoodPanelProductPage() {
               </svg>
             </div>
             <h4>{t('applications.app4Title')}</h4>
-            <p>Shop fittings, bar counters, hotel lobbies and restaurant interiors. Consistent quality across large-scale projects.</p>
+            <p>{t('applications.app4Desc')}</p>
           </div>
         </div>
 
         {/* Sector badges */}
         <div className="sector-badges">
-          <span className="sector-badge">Office</span>
-          <span className="sector-badge">Hospitality</span>
-          <span className="sector-badge">Residential</span>
-          <span className="sector-badge">Retail</span>
-          <span className="sector-badge">Healthcare</span>
-          <span className="sector-badge">Education</span>
+          <span className="sector-badge">{t('applications.sector1')}</span>
+          <span className="sector-badge">{t('applications.sector2')}</span>
+          <span className="sector-badge">{t('applications.sector3')}</span>
+          <span className="sector-badge">{t('applications.sector4')}</span>
+          <span className="sector-badge">{t('applications.sector5')}</span>
+          <span className="sector-badge">{t('applications.sector6')}</span>
         </div>
       </section>
 
@@ -621,52 +614,49 @@ export default function RWoodPanelProductPage() {
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              Every rWood - Panel starts with responsibly sourced timber. As part of 
-              Re-Sound&apos;s circular economy commitment, we maximise the use of each 
-              log by processing it as veneer — yielding up to 40× more surface area 
-              than solid lumber from the same tree.
+              {t('sustainability.description')}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
                 <span className="sustain-icon">🌲</span>
                 <div>
-                  <h4>FSC® Certified</h4>
+                  <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>Circular Take-Back</h4>
+                  <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏭</span>
                 <div>
-                  <h4>European Production</h4>
-                  <p>Short supply chains, reduced transport emissions</p>
+                  <h4>{t('sustainability.badge3')}</h4>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">📋</span>
                 <div>
-                  <h4>EPD Available</h4>
-                  <p>Full environmental product declaration</p>
+                  <h4>{t('sustainability.badge4')}</h4>
+                  <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🌿</span>
                 <div>
-                  <h4>Low VOC</h4>
-                  <p>E1 classified, meets strictest emission standards</p>
+                  <h4>{t('sustainability.badge5')}</h4>
+                  <p>{t('sustainability.badge5Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">⚡</span>
                 <div>
-                  <h4>Green Energy</h4>
-                  <p>Production powered by renewable energy sources</p>
+                  <h4>{t('sustainability.badge6')}</h4>
+                  <p>{t('sustainability.badge6Desc')}</p>
                 </div>
               </div>
             </div>
@@ -688,72 +678,72 @@ export default function RWoodPanelProductPage() {
             <h4>{t('specs.dimensionsTitle')}</h4>
             <table>
               <tbody>
-                <tr><td>Panel width</td><td>1220 mm</td></tr>
-                <tr><td>Panel length</td><td>2800 / 3050 mm</td></tr>
-                <tr><td>Thickness (standard)</td><td>19 mm</td></tr>
-                <tr><td>Thickness (slim)</td><td>12 mm</td></tr>
-                <tr><td>Weight (19 mm)</td><td>± 14.5 kg/m²</td></tr>
+                <tr><td>{t('specs.dimPanelWidth')}</td><td>1220 mm</td></tr>
+                <tr><td>{t('specs.dimPanelLength')}</td><td>2800 / 3050 mm</td></tr>
+                <tr><td>{t('specs.dimThicknessStd')}</td><td>19 mm</td></tr>
+                <tr><td>{t('specs.dimThicknessSlim')}</td><td>12 mm</td></tr>
+                <tr><td>{t('specs.dimWeight19')}</td><td>± 14.5 kg/m²</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Composition</h4>
+            <h4>{t('specs.compositionTitle')}</h4>
             <table>
               <tbody>
-                <tr><td>Top layer</td><td>A-grade veneer, stained &amp; lacquered</td></tr>
-                <tr><td>Core</td><td>MDF 700 kg/m³ (std / MR / FR)</td></tr>
-                <tr><td>Back layer</td><td>Balancing veneer</td></tr>
-                <tr><td>Bonding</td><td>HPLT press technology</td></tr>
+                <tr><td>{t('specs.compTopLayer')}</td><td>{t('specs.compTopLayerVal')}</td></tr>
+                <tr><td>{t('specs.compCore')}</td><td>{t('specs.compCoreVal')}</td></tr>
+                <tr><td>{t('specs.compBackLayer')}</td><td>{t('specs.compBackLayerVal')}</td></tr>
+                <tr><td>{t('specs.compBonding')}</td><td>{t('specs.compBondingVal')}</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Finish</h4>
+            <h4>{t('specs.finishTitle')}</h4>
             <table>
               <tbody>
-                <tr><td>Lacquer type</td><td>Acrylate urethane UV-cured</td></tr>
-                <tr><td>Number of layers</td><td>6</td></tr>
-                <tr><td>Gloss level</td><td>Super matt (3-5 GU)</td></tr>
-                <tr><td>Anti-fingerprint</td><td>Yes</td></tr>
-                <tr><td>Scratch resistance</td><td>≥ 2N (ISO 1518)</td></tr>
+                <tr><td>{t('specs.finishLacquerType')}</td><td>{t('specs.finishLacquerVal')}</td></tr>
+                <tr><td>{t('specs.finishLayers')}</td><td>6</td></tr>
+                <tr><td>{t('specs.finishGloss')}</td><td>{t('specs.finishGlossVal')}</td></tr>
+                <tr><td>{t('specs.finishAntiFingerprint')}</td><td>Yes</td></tr>
+                <tr><td>{t('specs.finishScratch')}</td><td>≥ 2N (ISO 1518)</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>
             <table>
               <tbody>
-                <tr><td>Standard MDF</td><td>D-s2, d0</td></tr>
-                <tr><td>Fire-retardant MDF</td><td>B-s1, d0</td></tr>
-                <tr><td>Test standard</td><td>EN 13501-1</td></tr>
+                <tr><td>{t('specs.fireStdMDF')}</td><td>D-s2, d0</td></tr>
+                <tr><td>{t('specs.fireFRMDF')}</td><td>B-s1, d0</td></tr>
+                <tr><td>{tPage('specs.testStandard')}</td><td>EN 13501-1</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Certifications</h4>
+            <h4>{t('specs.certsTitle')}</h4>
             <table>
               <tbody>
-                <tr><td>Wood sourcing</td><td>FSC® certified</td></tr>
-                <tr><td>VOC emissions</td><td>E1 / CARB 2 compliant</td></tr>
-                <tr><td>Environmental</td><td>EPD available</td></tr>
-                <tr><td>Felt (if acoustic)</td><td>OEKO-TEX® Standard 100</td></tr>
+                <tr><td>{t('specs.certWoodSourcing')}</td><td>{tPage('specs.fscCertified')}</td></tr>
+                <tr><td>{tPage('specs.vocEmissions')}</td><td>E1 / CARB 2 compliant</td></tr>
+                <tr><td>{t('specs.certEnvironmental')}</td><td>{tPage('specs.epd')}</td></tr>
+                <tr><td>{t('specs.certFelt')}</td><td>OEKO-TEX® Standard 100</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Processing</h4>
+            <h4>{t('specs.processingTitle')}</h4>
             <table>
               <tbody>
-                <tr><td>Sawing</td><td>Standard woodworking tools</td></tr>
-                <tr><td>Edge banding</td><td>Matching veneer edgebanding available</td></tr>
-                <tr><td>CNC machining</td><td>Suitable</td></tr>
-                <tr><td>Environment</td><td>Interior use (dry areas)</td></tr>
-                <tr><td>Moisture-resistant</td><td>MR core available</td></tr>
+                <tr><td>{t('specs.procSawing')}</td><td>{t('specs.procSawingVal')} woodworking tools</td></tr>
+                <tr><td>{t('specs.procEdgeBanding')}</td><td>{t('specs.procEdgeBandingVal')}</td></tr>
+                <tr><td>{t('specs.procCNC')}</td><td>Suitable</td></tr>
+                <tr><td>{t('specs.procEnvironment')}</td><td>{t('specs.procEnvironmentVal')} (dry areas)</td></tr>
+                <tr><td>{t('specs.procMoisture')}</td><td>{t('specs.procMoistureVal')}</td></tr>
               </tbody>
             </table>
           </div>
@@ -819,7 +809,7 @@ export default function RWoodPanelProductPage() {
         <div className="matching-header">
           <span className="section-tag">{t('accessories.tag')}</span>
           <h2>{t('related.title')}</h2>
-          <p>Achieve design continuity with coordinated Re-Sound products</p>
+          <p>{t('related.description')}</p>
         </div>
 
         <div className="matching-grid">
@@ -833,9 +823,9 @@ export default function RWoodPanelProductPage() {
                 <path d="M10 16h4" opacity="0.5"/>
               </svg>
             </div>
-            <h4>rWood - Groove</h4>
+            <h4>{t('accessories.item1Title')}</h4>
             <p>{t('accessories.item1Desc')} for wall and ceiling feature zones</p>
-            <Link href="/products/rwood-groove" className="matching-link">Explore →</Link>
+            <Link href="/products/rwood-groove" className="matching-link">{t('related.explore')}</Link>
           </div>
           <div className="matching-card">
             <div className="matching-icon">
@@ -845,8 +835,8 @@ export default function RWoodPanelProductPage() {
                 <path d="M8 4v16"/>
               </svg>
             </div>
-            <h4>Matching Edgebanding</h4>
-            <p>{t('accessories.item2Desc')} for seamless furniture edges</p>
+            <h4>{t('accessories.item2Title')}</h4>
+            <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="matching-card">
             <div className="matching-icon">
@@ -854,9 +844,9 @@ export default function RWoodPanelProductPage() {
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
               </svg>
             </div>
-            <h4>Free Samples</h4>
-            <p>Order physical veneer samples to compare finishes, colours and textures in your space</p>
-            <Link href="/contact" className="matching-link">Order Samples →</Link>
+            <h4>{t('accessories.item3Title')}</h4>
+            <p>{t('related.item3Desc')}</p>
+            <Link href="/contact" className="matching-link">{t('related.orderSamples')}</Link>
           </div>
         </div>
       </section>
@@ -875,10 +865,9 @@ export default function RWoodPanelProductPage() {
           ═══════════════════════════════════ */}
       <section className="content-section cta-section">
         <div className="cta-content">
-          <h2>Ready to Elevate Your Project?</h2>
+          <h2>{t('cta.title')}</h2>
           <p>
-            Get a personalised quote, request physical samples, or speak with our 
-            specification team about your next project.
+            {t('cta.description')}
           </p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
@@ -889,7 +878,7 @@ export default function RWoodPanelProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            {tPage('cta.freeShippingNote')} • Circular Take-Back
+            {tPage('cta.freeShippingNote')} • {t('cta.circularNote')}
           </p>
         </div>
       </section>
