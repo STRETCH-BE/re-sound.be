@@ -976,7 +976,13 @@
       "stat2Value": "0",
       "stat2Label": "Waste to landfill",
       "stat3Value": "∞",
-      "stat3Label": "Recyclable cycles"
+      "stat3Label": "Recyclable cycles",
+      "recycledLabel": "Recycled content",
+      "wasteLabel": "Waste to landfill",
+      "recycleLabel": "Recyclable cycles",
+      "freqLow": "125-500 Hz",
+      "freqMid": "500-2000 Hz",
+      "freqHigh": "2000-4000 Hz"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -1017,7 +1023,16 @@
       "maxCoverageTitle": "Maximum Coverage",
       "maxCoverageDesc": "Large format for high-impact results",
       "binderValue": "Bio-based adhesive",
-      "coverValue2": "Recycled fabric"
+      "coverValue2": "Recycled fabric",
+      "binderRow": "Binder",
+      "endOfLife": "End of life",
+      "endOfLifeVal": "100% recyclable",
+      "mounting": "Mounting",
+      "mountingVal": "Hook system",
+      "installTime": "Installation time",
+      "installTimeVal": "~3 min per panel",
+      "toolsRequired": "Tools required",
+      "toolsVal": "Drill, level"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1066,7 +1081,8 @@
       "tag": "EFFORTLESS",
       "title": "Magnetic Connection",
       "description": "The modules connect effortlessly through subtle magnets integrated into the fabric. Assemble and disassemble with ease—invisible, subtly processed, yet strong enough for worry-free use. No tools, no complexity, just snap and go.",
-      "snapLabel": "Snap together"
+      "snapLabel": "Snap together",
+      "autoAlign": "Auto-align"
     },
     "modular": {
       "tag": "FLEXIBILITY",
@@ -1080,7 +1096,10 @@
     "features": {
       "tag": "SUSTAINABILITY",
       "title": "Circular by Design",
-      "description": "Like all Re-Sound products, Divide is carefully designed with circularity at its core. Made from recycled textiles and industrial waste, contributing to a more sustainable future. At end of life, return it to us for free recycling."
+      "description": "Like all Re-Sound products, Divide is carefully designed with circularity at its core. Made from recycled textiles and industrial waste, contributing to a more sustainable future. At end of life, return it to us for free recycling.",
+      "recycledLabel": "Recycled content",
+      "wasteLabel": "Waste to landfill",
+      "recycleLabel": "Recyclable cycles"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -1092,7 +1111,9 @@
       "benefit2": "Create focused work areas in open spaces",
       "benefit3Title": "Better Focus",
       "benefit3": "Improve concentration and productivity",
-      "extraBenefit": "Excellent dual-sided absorption"
+      "extraBenefit": "Excellent dual-sided absorption",
+      "soundAbsorbed": "Sound absorbed",
+      "perSide": "Per side"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1103,7 +1124,20 @@
       "installTitle": "Mobility",
       "materialsTitle": "Materials",
       "featuresTitle": "Features",
-      "dimensionsTitle": "Dimensions"
+      "dimensionsTitle": "Dimensions",
+      "moduleWidth": "Module width",
+      "moduleHeight": "Module height",
+      "fabricCore": "Recycled fabric",
+      "steelFrame": "Recycled steel",
+      "magnets": "Magnets",
+      "magnetsVal": "Neodymium",
+      "endOfLife": "End of life",
+      "endOfLifeVal": "100% recyclable",
+      "connection": "Connection",
+      "connectionVal": "Magnetic snap",
+      "setupTime": "Setup time",
+      "setupTimeVal": "Instant",
+      "toolsRequired": "Tools required"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1145,12 +1179,15 @@
       "step4Number": "04",
       "step4Title": "Finishing",
       "step4Desc": "CNC precision cutting creates the signature groove patterns",
-      "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product."
+      "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product.",
+      "statLabel": "Recycled bottles per panel"
     },
     "patterns": {
       "tag": "DESIGN OPTIONS",
       "title": "Choose Your Pattern",
-      "description": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency."
+      "description": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency.",
+      "groovesLabel": "grooves",
+      "spacingLabel": "Spacing:"
     },
     "colors": {
       "title": "Multiple Designer Colors",
@@ -1161,7 +1198,8 @@
       "feature2": "Easy Clean",
       "feature2Desc": "Vacuum or wipe with damp cloth",
       "feature3": "Consistent",
-      "feature3Desc": "Batch-to-batch color consistency guaranteed"
+      "feature3Desc": "Batch-to-batch color consistency guaranteed",
+      "colorsDescription": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
     },
     "thickness": {
       "title": "Select Thickness",
@@ -1178,7 +1216,16 @@
       "benefit2Title": "Increased Comfort",
       "benefit2": "Create calmer, more peaceful environments",
       "benefit3Title": "Tested Performance",
-      "benefit3": "Independently verified acoustic data"
+      "benefit3": "Independently verified acoustic data",
+      "diagramTitle": "Panel Cross-Section",
+      "layer1Name": "Grooved Surface",
+      "layer1Desc": "CNC-cut pattern for visual depth",
+      "layer2Name": "High-Density PET Core",
+      "layer2Desc": "Sound absorption layer",
+      "layer3Name": "Mounting Surface",
+      "layer3Desc": "Direct wall/ceiling attachment",
+      "waveLabel": "Sound waves absorbed",
+      "certNote": "Tested according to ISO 354 & ASTM C423"
     },
     "installation": {
       "tag": "EASY INSTALL",
@@ -1192,8 +1239,11 @@
       "step4Title": "Enjoy",
       "step4Desc": "Immediate acoustic improvement",
       "mountingOptions": "Mounting Options",
-      "mounting1": "Direct wall/ceiling attachment",
-      "description": "rPET - Groove panels are designed for quick and easy installation on both walls and ceilings. Multiple mounting methods available to suit your project requirements."
+      "mounting1": "Adhesive",
+      "description": "rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the panels, and multiple mounting options give you flexibility for any project.",
+      "mounting2": "Z-clips",
+      "mounting3": "Screws",
+      "mounting4": "Battens"
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -1253,7 +1303,25 @@
       "lengthValue": "600 / 1200 / 2400 mm",
       "thicknessValue": "12 / 24 / 36 mm",
       "weightValue": "2.5 - 7.5 kg/m²",
-      "densityValue": "200-250 kg/m³"
+      "densityValue": "200-250 kg/m³",
+      "materialTitle": "Material",
+      "dimPanelWidth": "Panel width",
+      "dimPanelLength": "Panel length",
+      "dimThickness": "Thickness",
+      "dimGrooveDepth": "Groove depth",
+      "dimWeight": "Weight",
+      "acNRC12": "NRC (12mm)",
+      "acNRC24": "NRC (24mm)",
+      "acNRC36": "NRC (36mm)",
+      "matComposition": "Composition",
+      "matBinder": "Binder",
+      "matRecycled": "Recycled content",
+      "matFireClass": "Fire class",
+      "matEmissions": "VOC emissions",
+      "fireCert": "Certification",
+      "appWalls": "Wall panels",
+      "appCeilings": "Ceiling panels",
+      "appEnvironment": "Environment"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1262,11 +1330,19 @@
     "applications": {
       "tag": "VERSATILE USE",
       "title": "Applications",
-      "description": "rPET - Groove panels fit seamlessly into diverse environments.",
-      "app1": "Open plan spaces, meeting rooms, focus pods",
-      "app2": "Hotels, restaurants, lobbies, reception areas",
-      "app3": "Schools, universities, libraries",
-      "app4": "Healthcare, wellness centres"
+      "description": "rPET - Groove panels fit seamlessly into diverse environments",
+      "app1": "Offices",
+      "app2": "Hospitality",
+      "app3": "Education",
+      "app4": "Healthcare",
+      "app1Desc": "Open plan workspaces, meeting rooms, focus zones",
+      "app2Desc": "Hotels, restaurants, lobbies, reception areas",
+      "app3Desc": "Schools, universities, libraries",
+      "app4Desc": "Waiting rooms, consultation rooms, corridors"
+    },
+    "downloads": {
+      "installationGuide": "Installation Guide",
+      "colorChart": "Color Chart"
     }
   },
   "rpetPanelPage": {
@@ -1489,7 +1565,9 @@
       "benefit2Title": "Increased Comfort",
       "benefit2": "Create calmer, more peaceful environments",
       "benefit3Title": "Tested Performance",
-      "benefit3": "Independently verified acoustic data"
+      "benefit3": "Independently verified acoustic data",
+      "description": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo and reverberation to create calm, productive spaces.",
+      "ratingLabel": "Absorption"
     },
     "installation": {
       "tag": "EASY INSTALL",
@@ -1514,7 +1592,8 @@
       "badge3": "European Production",
       "badge3Desc": "Reduced transport emissions",
       "badge4": "EPD Available",
-      "badge4Desc": "Full environmental product declaration"
+      "badge4Desc": "Full environmental product declaration",
+      "description": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certified wood comes from responsibly managed forests, and the acoustic backing uses recycled materials."
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1524,18 +1603,34 @@
       "certsTitle": "Certifications",
       "applicationsTitle": "Applications",
       "dimensionsTitle": "Dimensions",
-      "materialsTitle": "Materials"
+      "materialsTitle": "Materials",
+      "dimPanelWidth": "Panel width",
+      "dimPanelLength": "Panel length",
+      "dimThickness": "Thickness",
+      "dimGrooveDepth": "Groove depth",
+      "dimGrooveWidth": "Groove width",
+      "matVeneer": "Veneer",
+      "matVeneerVal": "A-grade Oak / Walnut",
+      "matCore": "Core",
+      "matCoreVal": "MDF (standard / moisture-resistant / fire-retardant)",
+      "matBacking": "Backing",
+      "matBackingVal": "Recycled PET (3mm)",
+      "matFinish": "Finish"
     },
     "accessories": {
       "tag": "COMPLETE THE LOOK",
       "title": "Accessories",
       "endMouldings": "End Mouldings",
       "cornerProfiles": "Corner Profiles",
-      "description": "Professional finishing touches for a perfect result.",
+      "description": "Professional finishing touches for a perfect result",
       "item1Title": "End Mouldings",
       "item1Desc": "Clean edges where panels meet other surfaces",
       "item2Title": "Corner Profiles",
-      "item2Desc": "Seamless internal and external corner solutions"
+      "item2Desc": "Seamless internal and external corner solutions",
+      "item3Title": "Mounting Battens",
+      "item3Desc": "Hidden fixing system for walls and ceilings",
+      "item4Title": "Touch-up Kit",
+      "item4Desc": "Matching oils for repairs and maintenance"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1544,14 +1639,28 @@
     "patterns": {
       "tag": "DESIGN OPTIONS",
       "title": "Premium Finishes",
-      "description": "Four distinct groove patterns to match any architectural vision."
+      "description": "Four distinct groove patterns to match any architectural vision. From classic batten to modern linear, each pattern transforms the wall into a dynamic surface."
     },
     "materials": {
       "tag": "MATERIALS",
       "oilFinishesTitle": "Oil Finishes",
       "oilFinishesDesc": "Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.",
       "walnutTitle": "Walnut",
-      "walnutDesc": "Rich, warm tones with distinctive grain patterns. The premium choice for high-end interiors."
+      "walnutDesc": "Rich, warm tones with distinctive grain patterns. The premium choice for high-end interiors.",
+      "description": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain and colour. The oil-finished surface is ready to install with no additional treatment required.",
+      "colorSelector": "Select Wood Finish",
+      "layer1Name": "Oak / Walnut Veneer",
+      "layer1Desc": "Premium A-grade natural wood",
+      "layer2Name": "MDF Core with Grooves",
+      "layer2Desc": "Sound entry channels",
+      "layer3Name": "Acoustic Felt Backing",
+      "layer3Desc": "Recycled PET, 3mm thick",
+      "waveLabel": "Sound waves absorbed",
+      "certNote": "Independently tested & certified to ISO 11654"
+    },
+    "downloads": {
+      "installationGuide": "Installation Guide",
+      "colorChart": "Color & Finish Guide"
     }
   },
   "rwoodPerfPage": {
@@ -1567,9 +1676,10 @@
     "patterns": {
       "tag": "PERFORATION PATTERNS",
       "title": "Choose Your Pattern",
-      "description": "Four drilled perforation patterns with calibrated open areas for different acoustic performance levels.",
+      "description": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for highest absorption to subtle micro-perforations for a clean wood aesthetic.",
       "coreMatchTitle": "Match the core to your veneer to make perforations disappear—or make them a design feature.",
-      "coreColorTitle": "Core Colour"
+      "coreColorTitle": "Core Colour",
+      "coreMatchDesc": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a design statement."
     },
     "coreColor": {
       "title": "Core Colour",
@@ -1583,7 +1693,11 @@
       "geminiVeneers": "Gemini Veneers",
       "geminiDesc": "Even colour tone and structure for a more harmonious, uniform appearance.",
       "finishes": "Surface Finishes",
-      "description": "Every rWood - Perf panel is produced with over-veneered edges. Two distinct veneer families available."
+      "description": "Every rWood - Perf panel is produced with over-veneered edges — a traditional craft technique that creates perfectly seamless joints and eliminates visible panel boundaries.",
+      "finish1": "Natural Lacquer",
+      "finish2": "Pigmented",
+      "finish3": "HPL Laminate",
+      "colorSelector": "Select Wood Veneer"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -1594,7 +1708,18 @@
       "benefit2": "B-s1, d0—the highest achievable class for wooden panels",
       "benefit3Title": "Tunable Performance",
       "benefit3": "Four perforation patterns for tailored acoustic solutions",
-      "description": "Precision-drilled perforations allow sound waves to pass through the decorative wood surface into the highly absorbent core beneath."
+      "description": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the absorption layer beneath. The cavity behind the panel further enhances low-frequency absorption.",
+      "layer1Name": "Wood Veneer + Perforations",
+      "layer1Desc": "Over-veneered, precision-drilled surface",
+      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
+      "layer2Desc": "Fire Retardant, 0.45 kg/m³ density",
+      "layer3Name": "Acoustic Fleece",
+      "layer3Desc": "Prevents fibre migration",
+      "layer4Name": "Mineral Wool Cavity",
+      "layer4Desc": "30–50 mm for broadband absorption",
+      "waveLabel": "Sound waves absorbed",
+      "certNote": "Independently tested & certified to ISO 11654",
+      "ratingLabel": "Absorption"
     },
     "installation": {
       "tag": "CONCEALED MOUNTING",
@@ -1604,9 +1729,9 @@
       "step2Title": "Place Insulation",
       "step2Desc": "Add mineral wool in the cavity for optimal absorption",
       "step3Title": "Clip Panels",
-      "step3Desc": "Snap panels into the concealed clip system",
+      "step3Desc": "Concealed clip system for tool-free, zero-gap mounting",
       "step4Title": "Perfect Alignment",
-      "step4Desc": "Over-veneered edges create seamless joints",
+      "step4Desc": "In-line perforation patterns with seamless over-veneered joints",
       "description": "rWood - Perf panels are installed with a concealed clip system for an invisible, seamless look."
     },
     "sustainability": {
@@ -1619,7 +1744,8 @@
       "badge1Desc": "Wood from responsibly managed forests",
       "badge2Desc": "Post-consumer recycled material in core",
       "badge3Desc": "Renewable energy sources, short supply chains",
-      "badge4Desc": "No added formaldehyde, EPD available"
+      "badge4Desc": "No added formaldehyde, EPD available",
+      "description": "rWood - Perf combines durable, natural materials with a responsible manufacturing approach."
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1628,7 +1754,13 @@
       "acousticsTitle": "Acoustic Performance",
       "perforationsTitle": "Perforation Options",
       "fireTitle": "Fire Safety",
-      "certsTitle": "Certifications"
+      "certsTitle": "Certifications",
+      "customSizes": "Custom sizes",
+      "dimThickness": "Thickness",
+      "dimWeight": "Weight",
+      "matTitle": "Materials",
+      "matCustomColor": "Custom color tones with transparent or solid pigmentation",
+      "matLacquerFinish": "From super matte to high gloss UV-cured lacquer"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1636,7 +1768,7 @@
     },
     "overview": {
       "tag": "PROVEN PERFORMANCE",
-      "description": "rWood - Perf panels are one of the most effective acoustic wall solutions available. Precision-drilled round perforations allow sound to pass through the wood veneer surface into the acoustic core.",
+      "description": "rWood - Perf panels are one of the most effective acoustic wall solutions. Precision-drilled perforations allow sound to pass through the decorative wood surface into the highly absorbent core.",
       "feature1": "Fire Retardant Medium Density Fiberboard core (B2-s1, d0)",
       "feature2": "Over-veneered edges for seamless joints",
       "feature3": "Light or dark core for pattern discretion",
@@ -1645,11 +1777,18 @@
     "accessories": {
       "tag": "COMPLETE THE LOOK",
       "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result.",
+      "description": "Professional finishing elements for a flawless result",
       "item1Title": "Edge Profiles",
       "item1Desc": "Matching profiles for clean panel terminations",
       "item2Title": "Corner Solutions",
-      "item2Desc": "Seamless internal and external corner transitions"
+      "item2Desc": "Seamless internal and external corner transitions",
+      "item3Title": "Mounting Rails",
+      "item3Desc": "Concealed aluminium subframe system",
+      "item4Title": "Mineral Wool",
+      "item4Desc": "30–50 mm insulation for optimal performance"
+    },
+    "cta": {
+      "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
     }
   },
   "rwoodMicroPage": {
@@ -1677,7 +1816,9 @@
       "hplLaminateDesc": "High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.",
       "surfaceType": "Surface Type",
       "finishTreatments": "Finish Treatments",
-      "description": "Every rWood - Micro panel features over-veneered edges—a manufacturing technique from traditional carpentry heritage. The result: stronger panels, seamless joints, and a continuous pattern regardless of panel format."
+      "description": "Every rWood - Micro panel features over-veneered edges — a manufacturing technique that creates seamless panel joints for a continuous wood surface.",
+      "finish1Desc": "Custom color tones with transparent or solid pigmentation",
+      "finish2Desc": "From super matte to high gloss UV-cured lacquer"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -1688,7 +1829,14 @@
       "benefit2": "Less dependent on air gaps—thinner wall and ceiling build-ups",
       "benefit3Title": "Highest Fire Safety",
       "benefit3": "B-s1, d0 rating—the highest achievable for micro-perforated wood",
-      "description": "The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism. Less dependent on insulation and air gaps—meaning thinner walls and ceilings that save valuable space."
+      "description": "The combination of micro-perforations in the surface and thousands of larger sound-entry channels creates exceptional broadband absorption.",
+      "layer1Name": "A-grade veneer with precision-drilled holes",
+      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
+      "layer2Desc": "Fire Retardant, with sound chambers",
+      "layer3Name": "Acoustic Fleece Backing",
+      "layer3Desc": "Additional sound absorption layer",
+      "waveLabel": "Sound waves absorbed",
+      "certNote": "Independently tested & certified to ISO 11654"
     },
     "installation": {
       "tag": "INSTALLATION SYSTEM",
@@ -1724,13 +1872,23 @@
       "badge1Desc": "Wood from responsibly managed forests",
       "badge2Desc": "Fiberboard core—a wood-based, fire-rated core",
       "badge3Desc": "Manufactured in Europe, reducing transport emissions",
-      "badge4Desc": "E1-rated for healthier indoor air quality"
+      "badge4Desc": "E1-rated for healthier indoor air quality",
+      "description": "rWood - Micro panels are built with sustainability as a core principle. FSC® certified wood, low-emission finishes and responsibly sourced materials ensure environmental responsibility throughout the product lifecycle."
     },
     "specs": {
       "tag": "TECHNICAL",
       "title": "Specifications",
       "dimensionsTitle": "Dimensions — Walls and Ceilings",
-      "acousticsTitle": "Acoustic Performance"
+      "acousticsTitle": "Dimensions — Walls and Ceilings",
+      "customSizes": "Custom sizes",
+      "dimThickness": "Thickness",
+      "dimWeight": "Weight",
+      "dimCoreDensity": "Core density",
+      "perfsTitle": "Perforation Options",
+      "fireTitle": "Fire Safety",
+      "matTitle": "Materials",
+      "appsTitle": "Applications",
+      "acWithMinWool": "With 50mm mineral wool"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1759,6 +1917,13 @@
       "item3Desc": "Concealed aluminium subframe system",
       "item4Title": "LED Backlighting",
       "item4Desc": "Integrated lighting for backlit panel effects"
+    },
+    "patterns": {
+      "description": "Four perforation densities to match your acoustic requirements. From virtually invisible micro-perforations to generous open areas, each density delivers a different balance of aesthetics and performance.",
+      "magnifiedLabel": "10× magnified",
+      "holeDiameter": "Hole diameter",
+      "openArea": "Open area",
+      "ratingLabel": "Absorption"
     }
   },
   "rwoodVeneerPage": {
@@ -1980,12 +2145,14 @@
       "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt seamlessly to columns, curved walls, and any architectural form with a minimum radius of 500mm.",
       "usp1": "Min. Radius 500mm",
       "usp2": "Fire Retardant",
-      "usp3": "100% Recycled PET"
+      "usp3": "100% Recycled PET",
+      "colorSelector": "Select Color",
+      "colorPlaceholder": "Select a color"
     },
     "overview": {
       "tag": "INNOVATION",
       "title": "Designed for Curved Surfaces",
-      "description": "Flex-Groove panels provide a versatile acoustic solution for designers who want to incorporate acoustic treatment into curved or irregular surfaces.",
+      "description": "Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and outer radii, their flexible structure allows for seamless transitions along walls, columns, and other rounded architectural elements.",
       "feature1": "Adapts to any curved surface",
       "feature2": "Works with inner and outer radii",
       "feature3": "Ribbed texture adds depth and rhythm",
@@ -1994,36 +2161,42 @@
     "technology": {
       "tag": "TECHNOLOGY",
       "title": "V-Cut Flexibility System",
-      "description": "Each panel is incised with precision V-cuts, allowing the panel to bend along a controlled arc without cracking or distorting.",
+      "description": "Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — a series of linear grooves that enable flexibility while giving the surface a sculptural relief.",
       "minRadius": "Minimum Bending Radius",
       "feature1Title": "Precision V-Cut",
       "feature1Desc": "Engineered grooves for controlled flexibility",
       "feature2Title": "Seamless Curves",
       "feature2Desc": "Smooth transitions on any curved surface",
       "feature3Title": "Minimal Waste",
-      "feature3Desc": "Efficient design reduces cutting waste"
+      "feature3Desc": "Efficient design reduces cutting waste",
+      "flatPanel": "Flat Panel",
+      "curvedApp": "Curved Application"
     },
     "colors": {
       "tag": "REFINED COLLECTION",
       "title": "12 Curated Colors",
-      "description": "Our carefully curated color palette offers versatile options to suit any interior.",
+      "description": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance.",
       "grooveDir": "Groove Direction"
     },
     "acoustics": {
       "tag": "PERFORMANCE",
       "title": "Sound-Dampening Properties",
-      "description": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide acoustic dampening wherever they are installed.",
+      "description": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide effective sound absorption while maintaining visual continuity across curved surfaces. The grooved texture enhances acoustic performance.",
       "feature1Title": "Sound Dampening",
       "feature1Desc": "Reduces echo and reverberation",
       "feature2Title": "Fire Retardant",
       "feature2Desc": "Built-in fire safety properties",
       "feature3Title": "100% Recycled",
-      "feature3Desc": "Made from recycled plastic bottles"
+      "feature3Desc": "Made from recycled plastic bottles",
+      "layer1Label": "Recycled PET Felt",
+      "layer2Label": "Precision V-Cuts",
+      "thicknessLabel": "Thickness",
+      "materialLabel": "Fire-Retardant PET Felt"
     },
     "installation": {
       "tag": "EASY INSTALL",
       "title": "Secure Mounting, Simple Installation",
-      "description": "Designed to span standard floor-to-ceiling heights in a single panel.",
+      "description": "Designed to span standard floor-to-ceiling heights, the panels simplify alignment and reduce installation time. The adaptable form makes them a practical solution for interiors requiring both sound absorption and design flexibility.",
       "step1Title": "Prepare Surface",
       "step1Desc": "Ensure the curved surface is clean and ready for mounting",
       "step2Title": "Apply Adhesive",
@@ -2036,14 +2209,15 @@
     "sustainability": {
       "tag": "SUSTAINABILITY",
       "title": "From Bottles to Beautiful Spaces",
-      "description": "Every Flex-Groove panel is crafted from 100% recycled PET felt, making it a truly sustainable choice.",
+      "description": "Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensures that these panels can be recycled again at the end of their lifecycle.",
       "badge1": "Recycled PET",
       "badge1Desc": "Made from recycled plastic bottles",
       "badge2": "Fully Recyclable",
       "badge2Desc": "Can be recycled at end of life",
       "badge3": "European Production",
       "badge4": "Low VOC",
-      "badge3Desc": "Reduced transport emissions"
+      "badge3Desc": "Reduced transport emissions",
+      "badge4Desc": "Safe for indoor environments"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -2052,7 +2226,42 @@
       "flexibilityTitle": "Flexibility",
       "materialTitle": "Material",
       "fireTitle": "Fire Safety",
-      "certsTitle": "Certifications"
+      "certsTitle": "Certifications",
+      "applicationsTitle": "Applications",
+      "dimPanelLength": "Panel length",
+      "dimPanelWidth": "Panel width",
+      "dimThickness": "Thickness",
+      "dimWeight": "Weight",
+      "dimDensity": "Density",
+      "flexMinRadius": "Minimum radius",
+      "flexBendDir": "Bend direction",
+      "flexBendDirVal": "Inner & outer radii",
+      "flexCutType": "Cut type",
+      "flexCutTypeVal": "Precision V-cut",
+      "matComposition": "Composition",
+      "matCompositionVal": "FR PET Felt",
+      "matRecycled": "Recycled content",
+      "matFireRetardant": "Fire retardant",
+      "matFireRetardantVal": "Yes (built-in)",
+      "matColorVar": "Color variations",
+      "matColorVarVal": "Possible (recycled material)",
+      "fireRating": "Fire rating",
+      "fireSmokeProduction": "Smoke production",
+      "fireFlamingDroplets": "Flaming droplets",
+      "fireFlamingDropletsVal": "d0 (none)",
+      "certMaterial": "Material",
+      "certVOC": "VOC emissions",
+      "certVOCVal": "Low emission",
+      "certRecycled": "Recycled content",
+      "certRecycledVal": "Verified 100%",
+      "appSurfaces": "Surfaces",
+      "appSurfacesVal": "Walls, columns, curved elements",
+      "appEnvironment": "Environment",
+      "appEnvironmentVal": "Interior (dry areas)",
+      "appInstallation": "Installation",
+      "appInstallationVal": "Adhesive mounting",
+      "appOrientation": "Orientation",
+      "appOrientationVal": "Lengthwise / Widthwise"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2067,13 +2276,20 @@
       "tag": "IDEAL FOR",
       "title": "Perfect Applications",
       "description": "Wherever curves meet acoustics",
-      "app1": "Wrap structural columns with seamless acoustic coverage",
-      "app2": "Follow organic wall shapes for continuous coverage",
-      "app3": "Create acoustic curved feature walls",
-      "app4": "Reception areas, hospitality, retail"
+      "app1": "Columns",
+      "app2": "Curved Walls",
+      "app3": "Archways",
+      "app4": "Reception Areas",
+      "sectionTitle": "Perfect Applications",
+      "sectionDesc": "Wherever curves meet acoustics",
+      "app1Desc": "Wrap structural columns with seamless acoustic coverage",
+      "app2Desc": "Follow organic wall shapes for continuous coverage",
+      "app3Desc": "Line curved openings and architectural features",
+      "app4Desc": "Create striking curved feature walls"
     },
     "cta": {
-      "title": "Ready to Curve Your Acoustics?"
+      "title": "Ready to Curve Your Acoustics?",
+      "description": "Get a personalized quote for your project. Our team will help you choose the perfect flex solution."
     }
   }
 }

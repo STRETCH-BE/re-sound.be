@@ -976,7 +976,13 @@
       "stat2Value": "0",
       "stat2Label": "Afval naar stortplaats",
       "stat3Value": "∞",
-      "stat3Label": "Recycleerbare cycli"
+      "stat3Label": "Recycleerbare cycli",
+      "recycledLabel": "Gerecycleerd materiaal",
+      "wasteLabel": "Afval naar stortplaats",
+      "recycleLabel": "Recycleerbare cycli",
+      "freqLow": "125-500 Hz",
+      "freqMid": "500-2000 Hz",
+      "freqHigh": "2000-4000 Hz"
     },
     "acoustics": {
       "tag": "PRESTATIES",
@@ -1017,7 +1023,16 @@
       "maxCoverageTitle": "Maximale Dekking",
       "maxCoverageDesc": "Groot formaat voor maximale impact",
       "binderValue": "Bio-gebaseerde lijm",
-      "coverValue2": "Gerecycleerde stof"
+      "coverValue2": "Gerecycleerde stof",
+      "binderRow": "Bindmiddel",
+      "endOfLife": "Einde levensduur",
+      "endOfLifeVal": "100% recycleerbaar",
+      "mounting": "Bevestiging",
+      "mountingVal": "Haaksysteem",
+      "installTime": "Installatietijd",
+      "installTimeVal": "~3 min per paneel",
+      "toolsRequired": "Gereedschap nodig",
+      "toolsVal": "Boormachine, waterpas"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1066,7 +1081,8 @@
       "tag": "MOEITELOOS",
       "title": "Magnetische Verbinding",
       "description": "De modules verbinden moeiteloos via subtiele magneten geïntegreerd in de stof. Monteer en demonteer met gemak — onzichtbaar, subtiel verwerkt, maar sterk genoeg voor zorgeloos gebruik. Geen gereedschap, geen complexiteit, gewoon klikken en gaan.",
-      "snapLabel": "Samenklappen"
+      "snapLabel": "Samenklappen",
+      "autoAlign": "Auto-uitlijning"
     },
     "modular": {
       "tag": "FLEXIBILITEIT",
@@ -1080,7 +1096,10 @@
     "features": {
       "tag": "DUURZAAMHEID",
       "title": "Circulair van Ontwerp",
-      "description": "Net als alle Re-Sound-producten is Divide zorgvuldig ontworpen met circulariteit als kern. Gemaakt van gerecycleerde textiel en industrieel afval, draagt het bij aan een duurzamere toekomst. Aan het einde van de levensduur geef je het gratis terug voor recycling."
+      "description": "Net als alle Re-Sound-producten is Divide zorgvuldig ontworpen met circulariteit als kern. Gemaakt van gerecycleerde textiel en industrieel afval, draagt het bij aan een duurzamere toekomst. Aan het einde van de levensduur geef je het gratis terug voor recycling.",
+      "recycledLabel": "Gerecycleerd materiaal",
+      "wasteLabel": "Afval naar stortplaats",
+      "recycleLabel": "Recycleerbare cycli"
     },
     "acoustics": {
       "tag": "PRESTATIES",
@@ -1092,7 +1111,9 @@
       "benefit2": "Gefocuste werkzones creëren in open ruimte",
       "benefit3Title": "Betere Focus",
       "benefit3": "Concentratie en productiviteit verbeteren",
-      "extraBenefit": "Tweezijdige akoestische absorptie"
+      "extraBenefit": "Tweezijdige akoestische absorptie",
+      "soundAbsorbed": "Geluid geabsorbeerd",
+      "perSide": "Per zijde"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1103,7 +1124,20 @@
       "installTitle": "Mobiliteit",
       "materialsTitle": "Materialen",
       "featuresTitle": "Kenmerken",
-      "dimensionsTitle": "Afmetingen"
+      "dimensionsTitle": "Afmetingen",
+      "moduleWidth": "Modulebreed te",
+      "moduleHeight": "Modulehoogte",
+      "fabricCore": "Gerecycleerde stof",
+      "steelFrame": "Gerecycleerd staal",
+      "magnets": "Magneten",
+      "magnetsVal": "Neodymium",
+      "endOfLife": "Einde levensduur",
+      "endOfLifeVal": "100% recycleerbaar",
+      "connection": "Verbinding",
+      "connectionVal": "Magnetische klik",
+      "setupTime": "Installatietijd",
+      "setupTimeVal": "Direct",
+      "toolsRequired": "Gereedschap nodig"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1145,12 +1179,15 @@
       "step4Number": "04",
       "step4Title": "Afwerking",
       "step4Desc": "CNC-precisie snijden creëert de kenmerkende groefpatronen",
-      "description": "Elk rPET - Groove paneel geeft een nieuw leven aan ongeveer 60 gerecycleerde plastic flessen. Ons productieproces transformeert post-consumer PET-afval in hoogperformant akoestisch vilt."
+      "description": "Elk rPET - Groove paneel geeft een nieuw leven aan ongeveer 60 gerecycleerde plastic flessen. Ons productieproces transformeert post-consumer PET-afval in hoogperformant akoestisch vilt.",
+      "statLabel": "Gerecycleerde flessen per paneel"
     },
     "patterns": {
       "tag": "ONTWERPOPTIES",
       "title": "Kies je Patroon",
-      "description": "Vier kenmerkende groefpatronen voor elke architecturale visie. Van strakke parallelle lijnen tot dynamische chevrons, elk patroon wordt nauwkeurig gesneden met CNC-technologie voor perfecte consistentie."
+      "description": "Vier kenmerkende groefpatronen voor elke architecturale visie. Van strakke parallelle lijnen tot dynamische chevrons, elk patroon is nauwkeurig CNC-gesneden.",
+      "groovesLabel": "groeven",
+      "spacingLabel": "Tussenruimte:"
     },
     "colors": {
       "title": "Meerdere Designerkleuren",
@@ -1161,7 +1198,8 @@
       "feature2": "Eenvoudig schoon te maken",
       "feature2Desc": "Stofzuigen of afvegen met vochtige doek",
       "feature3": "Consistentie gegarandeerd",
-      "feature3Desc": "Batch-tot-batch kleurconsistentie gegarandeerd"
+      "feature3Desc": "Batch-tot-batch kleurconsistentie gegarandeerd",
+      "colorsDescription": "Van neutrale tinten tot gedurfde accenten past onze gecureerde kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert."
     },
     "thickness": {
       "title": "Kies Dikte",
@@ -1172,13 +1210,22 @@
     "acoustics": {
       "tag": "PRESTATIES",
       "title": "Superieure Geluidsabsorptie",
-      "description": "Het unieke groefontwerp gecombineerd met hoogdicht gerecycleerd PET-vilt creëert uitzonderlijke geluidsabsorptie. Verminder echo, elimineer ruis en creëer ruimtes die zo aangenaam zijn voor het oor als voor het oog.",
+      "description": "Het unieke groefontwerp gecombineerd met hoogdicht gerecycleerd PET-vilt zorgt voor uitzonderlijke geluidsabsorptie. Verminder echo, elimineer geluid.",
       "benefit1Title": "Verminderde Nagalm",
       "benefit1": "Echo beheersen en spraakverstaanbaarheid verbeteren",
       "benefit2Title": "Meer Comfort",
       "benefit2": "Rustigere, meer vredige omgevingen creëren",
       "benefit3Title": "Geteste Prestaties",
-      "benefit3": "Onafhankelijk geverifieerde akoestische gegevens"
+      "benefit3": "Onafhankelijk geverifieerde akoestische gegevens",
+      "diagramTitle": "Dwarsdoorsnede",
+      "layer1Name": "Gegroefd Oppervlak",
+      "layer1Desc": "CNC-gesneden patroon voor visuele diepte",
+      "layer2Name": "Hoogdicht PET-kern",
+      "layer2Desc": "Geluidsabsorptielaag",
+      "layer3Name": "Montagevlak",
+      "layer3Desc": "Directe wand-/plafondbevestiging",
+      "waveLabel": "Geluidsgolven geabsorbeerd",
+      "certNote": "Getest volgens ISO 354 & ASTM C423"
     },
     "installation": {
       "tag": "EENVOUDIGE INSTALLATIE",
@@ -1192,13 +1239,16 @@
       "step4Title": "Genieten",
       "step4Desc": "Directe akoestische verbetering",
       "mountingOptions": "Bevestigingsopties",
-      "mounting1": "Directe wand-/plafondbevestiging",
-      "description": "rPET - Groove panelen zijn ontworpen voor snelle en eenvoudige installatie op zowel wanden als plafonds. Meerdere bevestigingsmethoden beschikbaar."
+      "mounting1": "Lijm",
+      "description": "rPET - Groove panelen zijn ontworpen voor snelle en eenvoudige installatie. Hun lichtgewicht constructie maakt het voor één persoon mogelijk.",
+      "mounting2": "Z-clips",
+      "mounting3": "Schroeven",
+      "mounting4": "Latten"
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
       "title": "Werkelijk Circulair",
-      "description": "rPET - Groove panelen belichamen de circulaire economie. Volledig gemaakt van post-consumer gerecycleerd plastic, kunnen ze aan het einde van hun levensduur opnieuw worden gerecycleerd. Wij bieden gratis terugname zodat niets verloren gaat.",
+      "description": "rPET - Groove panelen belichamen de circulaire economie. Volledig gemaakt van post-consumer gerecycleerd plastic, kunnen ze aan het einde van hun levensduur opnieuw worden gerecycleerd.",
       "badge1": "100% Gerecycleerd",
       "badge2": "Volledig Recycleerbaar",
       "badge3": "Gratis Terugname",
@@ -1253,7 +1303,25 @@
       "lengthValue": "600 / 1200 / 2400 mm",
       "thicknessValue": "12 / 24 / 36 mm",
       "weightValue": "2,5 - 7,5 kg/m²",
-      "densityValue": "200-250 kg/m³"
+      "densityValue": "200-250 kg/m³",
+      "materialTitle": "Materiaal",
+      "dimPanelWidth": "Breedte paneel",
+      "dimPanelLength": "Lengte paneel",
+      "dimThickness": "Dikte",
+      "dimGrooveDepth": "Groepdiepte",
+      "dimWeight": "Gewicht",
+      "acNRC12": "NRC (12mm)",
+      "acNRC24": "NRC (24mm)",
+      "acNRC36": "NRC (36mm)",
+      "matComposition": "Samenstelling",
+      "matBinder": "Bindmiddel",
+      "matRecycled": "Gerecycleerd materiaal",
+      "matFireClass": "Brandklasse",
+      "matEmissions": "VOS-emissies",
+      "fireCert": "Certificering",
+      "appWalls": "Wandpanelen",
+      "appCeilings": "Plafondpanelen",
+      "appEnvironment": "Omgeving"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1262,11 +1330,19 @@
     "applications": {
       "tag": "VEELZIJDIG GEBRUIK",
       "title": "Toepassingen",
-      "app1": "Open ruimtes, vergaderzalen, focuspods",
-      "app2": "Hotels, restaurants, lobby's, recepties",
-      "app3": "Scholen, universiteiten, bibliotheken",
-      "app4": "Gezondheidszorg, wellnesscentra",
-      "description": "rPET - Groove panelen passen naadloos in diverse omgevingen."
+      "app1": "Kantoren",
+      "app2": "Horeca",
+      "app3": "Onderwijs",
+      "app4": "Gezondheidszorg",
+      "description": "rPET - Groove panelen passen naadloos in diverse omgevingen",
+      "app1Desc": "Open werkruimtes, vergaderzalen, focuszones",
+      "app2Desc": "Hotels, restaurants, lobby's, recepties",
+      "app3Desc": "Scholen, universiteiten, bibliotheken",
+      "app4Desc": "Wachtkamers, spreekkamers, gangen"
+    },
+    "downloads": {
+      "installationGuide": "Installatiehandleiding",
+      "colorChart": "Kleurenkaart"
     }
   },
   "rpetPanelPage": {
@@ -1489,7 +1565,9 @@
       "benefit2Title": "Meer Comfort",
       "benefit2": "Rustigere omgevingen creëren",
       "benefit3Title": "Geteste Prestaties",
-      "benefit3": "Onafhankelijk geverifieerde akoestische gegevens"
+      "benefit3": "Onafhankelijk geverifieerde akoestische gegevens",
+      "description": "Het unieke groefontwerp gecombineerd met kwalitatief akoestisch vilt zorgt voor uitzonderlijke geluidsabsorptie.",
+      "ratingLabel": "Absorptie"
     },
     "installation": {
       "tag": "EENVOUDIGE INSTALLATIE",
@@ -1514,7 +1592,8 @@
       "badge3": "Europese Productie",
       "badge3Desc": "Verminderde transportemissies",
       "badge4": "EPD Beschikbaar",
-      "badge4Desc": "Volledige milieuproductverklaring"
+      "badge4Desc": "Volledige milieuproductverklaring",
+      "description": "Elk rWood - Groove paneel is ontworpen met duurzaamheid als kern. Ons FSC®-gecertificeerd hout komt uit verantwoord beheerde bossen."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1524,7 +1603,19 @@
       "certsTitle": "Certificeringen",
       "applicationsTitle": "Toepassingen",
       "dimensionsTitle": "Afmetingen",
-      "materialsTitle": "Materialen"
+      "materialsTitle": "Materialen",
+      "dimPanelWidth": "Breedte",
+      "dimPanelLength": "Lengte",
+      "dimThickness": "Dikte",
+      "dimGrooveDepth": "Groepdiepte",
+      "dimGrooveWidth": "Groepbreedte",
+      "matVeneer": "Fineer",
+      "matVeneerVal": "A-kwaliteit Eik / Walnoot",
+      "matCore": "Kern",
+      "matCoreVal": "MDF (standaard / vochtbestendig / brandvertragend)",
+      "matBacking": "Backing",
+      "matBackingVal": "Gerecycleerd PET (3mm)",
+      "matFinish": "Afwerking"
     },
     "accessories": {
       "tag": "DE LOOK COMPLETEREN",
@@ -1533,9 +1624,13 @@
       "cornerProfiles": "Hoekprofielen",
       "item1Desc": "Nette kanten waar panelen andere oppervlakken ontmoeten",
       "item2Desc": "Naadloze binnen- en buitenhoekoplossingen",
-      "description": "Professionele afwerkingsdetails voor een perfect resultaat.",
+      "description": "Professionele afwerkingsdetails voor een perfect resultaat",
       "item1Title": "Eindprofielen",
-      "item2Title": "Hoekprofielen"
+      "item2Title": "Hoekprofielen",
+      "item3Title": "Montagelijsten",
+      "item3Desc": "Verborgen bevestigingssysteem voor wanden en plafonds",
+      "item4Title": "Bijwerkset",
+      "item4Desc": "Bijpassende oliën voor reparaties en onderhoud"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1544,14 +1639,28 @@
     "patterns": {
       "tag": "ONTWERPOPTIES",
       "title": "Premium Afwerkingen",
-      "description": "Vier kenmerkende groefpatronen voor elke architecturale visie."
+      "description": "Vier kenmerkende groefpatronen voor elke architecturale visie. Van klassiek batten tot modern lineair."
     },
     "materials": {
       "tag": "MATERIALEN",
       "oilFinishesDesc": "Naturel, wit, klaar, bruin, donkerbruin en zwart olie-afwerkingen. Elk penetreert diep in het hout.",
       "walnutTitle": "Walnoot",
       "walnutDesc": "Rijke, warme tonen met kenmerkende neerfpatronen. De premium keuze voor hoogwaardige interieurs.",
-      "oilFinishesTitle": "Olie-Afwerkingen"
+      "oilFinishesTitle": "Olie-Afwerkingen",
+      "description": "Elk rWood - Groove paneel is gemaakt met A-kwaliteit fineer, wat consistente nerf en kleur garandeert. Het olie-afgewerkte oppervlak is installatieklaar.",
+      "colorSelector": "Afwerking Kiezen",
+      "layer1Name": "Eiken / Walnoten Fineer",
+      "layer1Desc": "Premium A-kwaliteit naturel hout",
+      "layer2Name": "MDF-kern met Groeven",
+      "layer2Desc": "Geluidstoetredingskanalen",
+      "layer3Name": "Akoestische Viltbacking",
+      "layer3Desc": "Gerecycleerd PET, 3mm dik",
+      "waveLabel": "Geluidsgolven geabsorbeerd",
+      "certNote": "Getest en gecertificeerd volgens ISO 11654"
+    },
+    "downloads": {
+      "installationGuide": "Installatiehandleiding",
+      "colorChart": "Kleur & Afwerkinggids"
     }
   },
   "rwoodPerfPage": {
@@ -1567,9 +1676,10 @@
     "patterns": {
       "tag": "PERFORATIEPATRONEN",
       "title": "Kies je Patroon",
-      "description": "Meerdere perforatiepatronen voor verschillende akoestische afstelling en visuele effecten. Van fijne micro-perforaties tot opvallende standaardpatronen.",
+      "description": "Vier geboorde perforatiepatronen met gekalibreerde akoestische eigenschappen. Van maximale open oppervlak tot subtiele micro-perforaties.",
       "coreMatchTitle": "Pas de kern aan bij het fineer om perforaties te laten verdwijnen — of maak er een designelement van.",
-      "coreColorTitle": "Kernkleur"
+      "coreColorTitle": "Kernkleur",
+      "coreMatchDesc": "Pas de kern aan bij uw fineer om perforaties te laten verdwijnen, of kies een contrasterende kern voor een designeffect."
     },
     "coreColor": {
       "title": "Kernkleur",
@@ -1583,7 +1693,11 @@
       "geminiVeneers": "Gemini Fineers",
       "geminiDesc": "Uniforme kleur en structuur voor een harmonieuzer uiterlijk.",
       "finishes": "Oppervlakafwerkingen",
-      "description": "Elk rWood - Perf paneel wordt geproduceerd met overkante kanten. Twee distincte fineer-families beschikbaar."
+      "description": "Elk rWood - Perf paneel wordt geproduceerd met overkante kanten — een traditionele ambachtstechniek die perfect naadloze verbindingen creëert.",
+      "finish1": "Naturel Lak",
+      "finish2": "Gepigmenteerd",
+      "finish3": "HPL Laminaat",
+      "colorSelector": "Fineer Kiezen"
     },
     "acoustics": {
       "tag": "PRESTATIES",
@@ -1594,7 +1708,18 @@
       "benefit2": "B-s1, d0 — de hoogst haalbare klasse voor houten panelen",
       "benefit3Title": "Afstelbare Prestaties",
       "benefit3": "Vier perforatiepatronen voor op maat gemaakte akoestische oplossingen",
-      "description": "Precies geboorde perforaties laten geluidsgolven door het decoratieve houtoppervlak naar de sterk absorberende kern eronder stromen."
+      "description": "Precies geboorde perforaties laten geluidsgolven in het paneel stromen en naar de absorptielaag eronder.",
+      "layer1Name": "Houtfineer + Perforaties",
+      "layer1Desc": "Overkante, precies geboorde oppervlak",
+      "layer2Name": "Brandvertragend MDF-kern",
+      "layer2Desc": "Brandvertragend, 0,45 kg/m³ dichtheid",
+      "layer3Name": "Akoestisch Vlies",
+      "layer3Desc": "Voorkomt vezelmigratie",
+      "layer4Name": "Minerale Wolholte",
+      "layer4Desc": "30–50 mm voor breedband absorptie",
+      "waveLabel": "Geluidsgolven geabsorbeerd",
+      "certNote": "Getest en gecertificeerd volgens ISO 11654",
+      "ratingLabel": "Absorptie"
     },
     "installation": {
       "tag": "VERBORGEN MONTAGE",
@@ -1604,9 +1729,9 @@
       "step2Title": "Isolatie Plaatsen",
       "step2Desc": "Minerale wol in de holte toevoegen voor optimale absorptie",
       "step3Title": "Panelen Klemmen",
-      "step3Desc": "Panelen in het verborgen clipsysteem klikken",
+      "step3Desc": "Verborgen clipsysteem voor gereedschapsvrije, naadloze montage",
       "step4Title": "Perfecte Uitlijning",
-      "step4Desc": "Overkante kanten creëren naadloze verbindingen",
+      "step4Desc": "Uitgelijnde perforatiepatronen met naadloze overkante verbindingen",
       "description": "rWood - Perf panelen worden geïnstalleerd met een verborgen clipsysteem voor een onzichtbaar, naadloos uiterlijk."
     },
     "sustainability": {
@@ -1619,7 +1744,8 @@
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
       "badge2Desc": "Post-consumer gerecycleerd materiaal in de kern",
       "badge3Desc": "Hernieuwbare energiebronnen, korte ketens",
-      "badge4Desc": "Geen toegevoegd formaldehyde, EPD beschikbaar"
+      "badge4Desc": "Geen toegevoegd formaldehyde, EPD beschikbaar",
+      "description": "rWood - Perf combineert duurzame, natuurlijke materialen met een verantwoorde productiebenadering."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1628,7 +1754,13 @@
       "acousticsTitle": "Akoestische Prestaties",
       "perforationsTitle": "Performatieopties",
       "fireTitle": "Brandveiligheid",
-      "certsTitle": "Certificeringen"
+      "certsTitle": "Certificeringen",
+      "customSizes": "Aangepaste maten",
+      "dimThickness": "Dikte",
+      "dimWeight": "Gewicht",
+      "matTitle": "Materialen",
+      "matCustomColor": "Aangepaste kleurtonen met transparante of vaste pigmentatie",
+      "matLacquerFinish": "Van super mat tot hoogglans UV-lak"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1640,16 +1772,23 @@
       "feature2": "Overkante kanten voor naadloze verbindingen",
       "feature3": "Lichte of donkere kern voor patroonkeuze",
       "feature4": "Aangepaste formaten tot 3050 × 1220 mm",
-      "description": "rWood - Perf panelen zijn een van de meest effectieve akoestische wandoplossingen. Precies geboorde ronde perforaties laten geluid door het houtfineeroppervlak in de akoestische kern stromen."
+      "description": "rWood - Perf panelen zijn een van de meest effectieve akoestische wandoplossingen. Precies geboorde perforaties laten geluid door het decoratieve houtoppervlak."
     },
     "accessories": {
       "tag": "DE LOOK COMPLETEREN",
       "title": "Accessoires",
       "item1Desc": "Bijpassende profielen voor nette afwerkingen",
       "item2Desc": "Naadloze binnen- en buitenhoekovergang",
-      "description": "Professionele afwerkingselementen voor een perfect resultaat.",
+      "description": "Professionele afwerkingselementen voor een perfect resultaat",
       "item1Title": "Eindprofielen",
-      "item2Title": "Hoekoplossingen"
+      "item2Title": "Hoekoplossingen",
+      "item3Title": "Montagerails",
+      "item3Desc": "Verborgen aluminium onderbouwsysteem",
+      "item4Title": "Minerale Wol",
+      "item4Desc": "30–50 mm isolatie voor optimale prestaties"
+    },
+    "cta": {
+      "note": "Gratis stalen beschikbaar • Gemaakt in Europa • FSC® gecertificeerd • A2 brandklasse beschikbaar"
     }
   },
   "rwoodMicroPage": {
@@ -1673,11 +1812,13 @@
       "title": "Premium Oppervlakken",
       "woodVeneer": "Houtfineer",
       "hplLaminate": "HPL Laminaat",
-      "description": "Elk rWood - Micro paneel heeft overkante kanten — een productietechniek uit de traditionele schrijnwerktraditie. Het resultaat: sterkere panelen, naadloze verbindingen en een continu patroon ongeacht het panelformaat.",
+      "description": "Elk rWood - Micro paneel heeft overkante kanten — een productietechniek die continue paneelverbindingen creëert.",
       "woodVeneerDesc": "Premium A-kwaliteit fineers in eik, walnoot, berk en meer. Nature en Gemini sneden beschikbaar.",
       "hplLaminateDesc": "Hoogdruk laminaat oppervlakken voor extra duurzaamheid. Beschikbaar in een breed scala aan kleuren en afwerkingen.",
       "surfaceType": "Oppervlaktype",
-      "finishTreatments": "Afwerkingsbehandelingen"
+      "finishTreatments": "Afwerkingsbehandelingen",
+      "finish1Desc": "Aangepaste kleurtonen met transparante of vaste pigmentatie",
+      "finish2Desc": "Van super mat tot hoogglans UV-lak"
     },
     "bespoke": {
       "tag": "ONTWERPVRIJHEID",
@@ -1699,17 +1840,24 @@
       "benefit2": "Minder afhankelijk van luchtspouwen — dunnere wand- en plafondopbouw",
       "benefit3Title": "Hoogste Brandveiligheid",
       "benefit3": "Brandklasse B-s1, d0 — de hoogst haalbare voor micro-geperforeerd hout",
-      "description": "De combinatie van micro-perforaties aan het oppervlak en duizenden grotere geluidskamers in de kern creëert een dubbel akoestisch mechanisme. Minder afhankelijk van isolatie en luchtspouwen — wat dunne wanden en plafonds oplevert die waardevolle ruimte besparen."
+      "description": "De combinatie van micro-perforaties aan het oppervlak en duizenden grotere geluidstoetredingskanalen zorgt voor uitzonderlijke breedband absorptie.",
+      "layer1Name": "A-kwaliteit fineer met precies geboorde gaten",
+      "layer2Name": "Brandvertragend MDF-kern",
+      "layer2Desc": "Brandvertragend, met geluidskamers",
+      "layer3Name": "Akoestisch Vliesbacking",
+      "layer3Desc": "Extra geluidsabsorptielaag",
+      "waveLabel": "Geluidsgolven geabsorbeerd",
+      "certNote": "Getest en gecertificeerd volgens ISO 11654"
     },
     "installation": {
       "tag": "INSTALLATIESYSTEEM",
       "title": "Precisie Installatie",
       "step1Title": "Onderbouw Monteren",
-      "step1Desc": "Aluminium rails bevestigen aan wand- of plafondstructuur",
+      "step1Desc": "Aluminium rails aan wand- of plafondstructuur bevestigen",
       "step2Title": "Isolatie Toevoegen",
       "step2Desc": "Optionele minerale wol voor verbeterde absorptie",
-      "step3Title": "Panelen Inklikken",
-      "step3Desc": "Verborgen klemmenssysteem voor gereedschapsvrije montage",
+      "step3Title": "Panelen Klemmen",
+      "step3Desc": "Verborgen clipsysteem voor gereedschapsvrije montage",
       "step4Title": "Naadloos Resultaat",
       "step4Desc": "Overkante kanten creëren een continu houtoppervlak",
       "description": "rWood - Micro panelen worden geïnstalleerd met ons verborgen bevestigingssysteem, dat onzichtbare bevestigingen en een perfecte afwerking garandeert. Het systeem maakt zowel wand- als plafondtoepassingen mogelijk met naadloze overgangen via overkante kanten."
@@ -1725,16 +1873,25 @@
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
       "badge2Desc": "Vezelbord kern — een houtig, brandvertragend kern",
       "badge3Desc": "Vervaardigd in Europa, minder transportemissies",
-      "badge4Desc": "E1-klasse voor gezondere binnenlucht"
+      "badge4Desc": "E1-klasse voor gezondere binnenlucht",
+      "description": "rWood - Micro panelen zijn gebouwd met duurzaamheid als kernprincipe. FSC®-gecertificeerd hout, lage-emissie afwerkingen en verantwoord geproduceerde materialen."
     },
     "specs": {
       "tag": "TECHNISCH",
       "title": "Specificaties",
       "dimensionsTitle": "Afmetingen — Wanden en Plafonds",
-      "acousticsTitle": "Akoestische Prestaties",
+      "acousticsTitle": "Afmetingen — Wanden en Plafonds",
       "perforationsTitle": "Performatieopties",
       "fireTitle": "Brandveiligheid",
-      "certsTitle": "Certificeringen"
+      "certsTitle": "Certificeringen",
+      "customSizes": "Aangepaste maten",
+      "dimThickness": "Dikte",
+      "dimWeight": "Gewicht",
+      "dimCoreDensity": "Kerndichtheid",
+      "perfsTitle": "Perforatieopties",
+      "matTitle": "Materialen",
+      "appsTitle": "Toepassingen",
+      "acWithMinWool": "Met 50mm minerale wol"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1763,6 +1920,13 @@
       "item3Desc": "Verborgen aluminium onderbouwsysteem",
       "item4Title": "LED Verlichting",
       "item4Desc": "Geïntegreerde verlichting voor verlichte paneeleffecten"
+    },
+    "patterns": {
+      "description": "Vier perforatiedichtheden voor uw akoestische vereisten. Van vrijwel onzichtbare micro-perforaties tot ruime open zones.",
+      "magnifiedLabel": "10× vergroot",
+      "holeDiameter": "Gatdiameter",
+      "openArea": "Open oppervlak",
+      "ratingLabel": "Absorptie"
     }
   },
   "rwoodVeneerPage": {
@@ -1984,7 +2148,9 @@
       "usp1": "Min. Straal 500mm",
       "usp2": "Brandvertragend",
       "usp3": "100% Gerecycleerd PET",
-      "title": "rPET Flex-Groove"
+      "title": "rPET Flex-Groove",
+      "colorSelector": "Kleur Kiezen",
+      "colorPlaceholder": "Kies een kleur"
     },
     "overview": {
       "tag": "INNOVATIE",
@@ -1993,7 +2159,7 @@
       "feature2": "Werkt met binnen- en buitenstralen",
       "feature3": "Geribbelde textuur voegt diepte en ritme toe",
       "feature4": "Ingebouwde geluidsdempende eigenschappen",
-      "description": "Flex-Groove panelen bieden een veelzijdige akoestische oplossing voor designers die akoestische behandeling willen verwerken in gebogen of onregelmatige oppervlakken."
+      "description": "Flex-Groove panelen bieden een veelzijdige akoestische oplossing voor gebogen oppervlakken, die moeiteloos aan elke vorm aanpassen."
     },
     "technology": {
       "tag": "TECHNOLOGIE",
@@ -2005,13 +2171,15 @@
       "feature2Desc": "Vloeiende overgangen op elke gebogen ondergrond",
       "feature3Title": "Minimaal Afval",
       "feature3Desc": "Efficiënt ontwerp vermindert snijafval",
-      "description": "Elk paneel is voorzien van precisie V-sneden, waardoor het paneel langs een gecontroleerde boog kan buigen zonder scheuren of vervormen."
+      "description": "Elk paneel is voorzien van precisie V-sneden, zodat het kan buigen zonder te breken. Dit slimme snit creëert de kenmerkende geribbelde textuur.",
+      "flatPanel": "Plat Paneel",
+      "curvedApp": "Gebogen Toepassing"
     },
     "colors": {
       "tag": "VERFIJNDE COLLECTIE",
       "title": "12 Zorgvuldig Geselecteerde Kleuren",
       "grooveDir": "Groefrichting",
-      "description": "Ons zorgvuldig samengesteld kleurpalet biedt veelzijdige opties voor elk interieur."
+      "description": "Onze zorgvuldig samengestelde kleurenpalet biedt veelzijdige opties voor elk interieur."
     },
     "acoustics": {
       "tag": "PRESTATIES",
@@ -2022,7 +2190,11 @@
       "feature2Desc": "Ingebouwde brandveiligheid",
       "feature3Title": "100% Gerecycleerd",
       "feature3Desc": "Gemaakt van gerecycleerde plastic flessen",
-      "description": "Gemaakt van brandvertragend gerecycleerd PET-vilt bieden Flex-Groove panelen akoestische demping overal waar ze worden geïnstalleerd."
+      "description": "Gemaakt van brandvertragend gerecycleerd PET-vilt bieden Flex-Groove panelen effectieve geluidsabsorptie met visuele continuïteit op gebogen oppervlakken.",
+      "layer1Label": "Gerecycleerd PET-vilt",
+      "layer2Label": "Precisie V-sneden",
+      "thicknessLabel": "Dikte",
+      "materialLabel": "Brandvertragend PET-vilt"
     },
     "installation": {
       "tag": "EENVOUDIGE INSTALLATIE",
@@ -2035,19 +2207,20 @@
       "step3Desc": "Het paneel voorzichtig buigen om de gebogen ondergrond te volgen",
       "step4Title": "Bevestigen & Afwerken",
       "step4Desc": "Stevig aandrukken voor volledige hechting langs de curve",
-      "description": "Ontworpen om standaard vloer-tot-plafond hoogtes in één paneel te overbruggen."
+      "description": "Ontworpen om standaard vloer-tot-plafond hoogtes te overbruggen, vereenvoudigen de panelen uitlijning en verminderen installatietijd."
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
       "title": "Van Flessen naar Mooie Ruimtes",
       "badge1Desc": "Gemaakt van gerecycleerde plastic flessen",
       "badge2Desc": "Kan worden gerecycleerd aan einde levensduur",
-      "description": "Elk Flex-Groove paneel is gemaakt van 100% gerecycleerd PET-vilt, waardoor het een werkelijk duurzame keuze is.",
+      "description": "Elk Flex-Groove paneel is gemaakt van 100% gerecycleerde PET plastic flessen, waardoor afvalmaterialen een nieuw leven krijgen.",
       "badge1": "Gerecycleerd PET",
       "badge2": "Volledig Recycleerbaar",
       "badge3": "Europese Productie",
       "badge4": "Lage VOS",
-      "badge3Desc": "Verminderde transportemissies"
+      "badge3Desc": "Verminderde transportemissies",
+      "badge4Desc": "Veilig voor binnenomgevingen"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2056,7 +2229,42 @@
       "flexibilityTitle": "Flexibiliteit",
       "materialTitle": "Materiaal",
       "fireTitle": "Brandveiligheid",
-      "certsTitle": "Certificeringen"
+      "certsTitle": "Certificeringen",
+      "applicationsTitle": "Toepassingen",
+      "dimPanelLength": "Lengte",
+      "dimPanelWidth": "Breedte",
+      "dimThickness": "Dikte",
+      "dimWeight": "Gewicht",
+      "dimDensity": "Dichtheid",
+      "flexMinRadius": "Minimale straal",
+      "flexBendDir": "Buigrichting",
+      "flexBendDirVal": "Binnen- & buitenstralen",
+      "flexCutType": "Snijtype",
+      "flexCutTypeVal": "Precisie V-snede",
+      "matComposition": "Samenstelling",
+      "matCompositionVal": "FR PET-vilt",
+      "matRecycled": "Gerecycleerd materiaal",
+      "matFireRetardant": "Brandvertragend",
+      "matFireRetardantVal": "Ja (ingebouwd)",
+      "matColorVar": "Kleurvariaties",
+      "matColorVarVal": "Mogelijk (gerecycleed materiaal)",
+      "fireRating": "Brandklasse",
+      "fireSmokeProduction": "Rookproductie",
+      "fireFlamingDroplets": "Vlammende druppels",
+      "fireFlamingDropletsVal": "d0 (geen)",
+      "certMaterial": "Materiaal",
+      "certVOC": "VOS-emissies",
+      "certVOCVal": "Lage emissies",
+      "certRecycled": "Gerecycleerd materiaal",
+      "certRecycledVal": "Geverifieerd 100%",
+      "appSurfaces": "Oppervlakken",
+      "appSurfacesVal": "Wanden, kolommen, gebogen elementen",
+      "appEnvironment": "Omgeving",
+      "appEnvironmentVal": "Binnenruimte (droge zones)",
+      "appInstallation": "Installatie",
+      "appInstallationVal": "Lijmmontage",
+      "appOrientation": "Oriëntatie",
+      "appOrientationVal": "Lengte / Breedte"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -2070,14 +2278,21 @@
     "applications": {
       "tag": "IDEAAL VOOR",
       "title": "Ideale Toepassingen",
-      "app1": "Constructieve kolommen bekleden met naadloze akoestische dekking",
-      "app2": "Organische wandvormen volgen voor continue dekking",
-      "app3": "Gebogen akoestische accentwanden creëren",
-      "app4": "Receptiegebieden, horeca, retail",
-      "description": "Waar rondingen en akoestiek samenkomen"
+      "app1": "Kolommen",
+      "app2": "Gebogen Wanden",
+      "app3": "Bogen",
+      "app4": "Receptiegebieden",
+      "description": "Waar rondingen en akoestiek samenkomen",
+      "sectionTitle": "Ideale Toepassingen",
+      "sectionDesc": "Waar rondingen en akoestiek samenkomen",
+      "app1Desc": "Structurele kolommen bekleden met naadloze akoestische dekking",
+      "app2Desc": "Organische wandvormen volgen voor continue dekking",
+      "app3Desc": "Gebogen openingen en architectonische elementen bekleden",
+      "app4Desc": "Opvallende gebogen accentwanden creëren"
     },
     "cta": {
-      "title": "Klaar om uw Akoestiek te Buigen?"
+      "title": "Klaar om uw Akoestiek te Buigen?",
+      "description": "Vraag een offerte op maat voor uw project. Ons team helpt u de perfecte flex-oplossing te kiezen."
     }
   }
 }
