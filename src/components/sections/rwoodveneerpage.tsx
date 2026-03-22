@@ -534,9 +534,7 @@ export default function RWoodPanelProductPage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          {t('applications.tag')}
-          ═══════════════════════════════════ */}
+      {/* Tag Section */}
       <section id="applications" className="content-section applications-section dark">
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
@@ -606,9 +604,7 @@ export default function RWoodPanelProductPage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          {t('sustainability.tag')}
-          ═══════════════════════════════════ */}
+      {/* Tag Section */}
       <section className="content-section sustainability-section">
         <div className="section-grid">
           <div className="section-image">

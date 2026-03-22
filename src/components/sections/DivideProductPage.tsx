@@ -289,7 +289,7 @@ export default function DivideProductPage() {
         </div>
       </section>
 
-      {/* {t('hero.usp1')}ion Section */}
+      {/* Magnetic Connection Section */}
       <section className="content-section magnetic-section">
         <div className="section-grid">
           <div className="section-image">

@@ -465,7 +465,7 @@ export default function RWoodMicroProductPage() {
         </div>
       </section>
 
-      {/* {t('specs.acousticsTitle')} Section */}
+      {/* Acousticstitle Section */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
