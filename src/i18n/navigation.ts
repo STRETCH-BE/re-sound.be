@@ -1,25 +1,25 @@
 import { createSharedPathnamesNavigation } from 'next-intl/navigation';
 import { locales, defaultLocale } from './config';
 
-// Create navigation utilities that automatically handle locale prefixes
-// This ensures all links include the current locale in the URL
+// Create navigation utilities that automatically handle locale prefixes.
+// This ensures all links include the current locale in the URL.
 
 export const {
-  // Enhanced Link component that automatically adds locale prefix
+  // Enhanced Link component that automatically adds locale prefix.
   // Usage: <Link href="/products">Products</Link>
-  // Output: /en/products or /nl/products depending on current locale
+  // Output: /en/products or /es/products depending on current locale
   Link,
 
-  // Enhanced redirect function for server components
+  // Enhanced redirect function for server components.
   // Usage: redirect('/products')
-  // Redirects to: /en/products or /nl/products
+  // Redirects to: /en/products or /es/products
   redirect,
 
-  // Hook to get current pathname without locale prefix
+  // Hook to get current pathname without locale prefix.
   // Usage: const pathname = usePathname() // returns '/products' not '/en/products'
   usePathname,
 
-  // Enhanced router for client-side navigation
+  // Enhanced router for client-side navigation.
   // Usage: router.push('/products') // navigates to /en/products
   useRouter,
 } = createSharedPathnamesNavigation({
@@ -34,7 +34,9 @@ export type LocaleParams = {
 };
 
 // Helper to generate localized paths for all locales (useful for sitemap)
-export function generateLocalizedPaths(path: string): { locale: string; path: string }[] {
+export function generateLocalizedPaths(
+  path: string
+): { locale: string; path: string }[] {
   return locales.map((locale) => ({
     locale,
     path: `/${locale}${path === '/' ? '' : path}`,
@@ -51,7 +53,7 @@ export function getAlternateLinks(
     href: `${baseUrl}/${locale}${path === '/' ? '' : path}`,
   }));
 
-  // Add x-default for the default locale
+  // Add x-default pointing to the default locale
   links.push({
     hrefLang: 'x-default',
     href: `${baseUrl}/${defaultLocale}${path === '/' ? '' : path}`,

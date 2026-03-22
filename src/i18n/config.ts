@@ -1,5 +1,5 @@
 // Supported locales for Re-Sound website
-export const locales = ['en', 'nl', 'fr', 'de'] as const;
+export const locales = ['en', 'nl', 'fr', 'de', 'es', 'pt', 'da', 'sv', 'no', 'is'] as const;
 
 // Default locale (English)
 export const defaultLocale = 'en' as const;
@@ -20,6 +20,12 @@ export const localeNames: Record<Locale, string> = {
   nl: 'Nederlands',
   fr: 'Français',
   de: 'Deutsch',
+  es: 'Español',
+  pt: 'Português',
+  da: 'Dansk',
+  sv: 'Svenska',
+  no: 'Norsk',
+  is: 'Íslenska',
 };
 
 // Locale flags for UI
@@ -28,6 +34,12 @@ export const localeFlags: Record<Locale, string> = {
   nl: '🇳🇱',
   fr: '🇫🇷',
   de: '🇩🇪',
+  es: '🇪🇸',
+  pt: '🇵🇹',
+  da: '🇩🇰',
+  sv: '🇸🇪',
+  no: '🇳🇴',
+  is: '🇮🇸',
 };
 
 // Full locale codes (for HTML lang attribute and SEO)
@@ -36,6 +48,12 @@ export const localeFullCodes: Record<Locale, string> = {
   nl: 'nl-BE',
   fr: 'fr-BE',
   de: 'de-DE',
+  es: 'es-ES',
+  pt: 'pt-PT',
+  da: 'da-DK',
+  sv: 'sv-SE',
+  no: 'no-NO',
+  is: 'is-IS',
 };
 
 // RTL languages (none for Re-Sound, but included for reference)
@@ -50,21 +68,21 @@ export function isValidLocale(locale: string): locale is Locale {
 export function getLocaleFromPath(path: string): Locale | null {
   const segments = path.split('/').filter(Boolean);
   const potentialLocale = segments[0];
-  
+
   if (potentialLocale && isValidLocale(potentialLocale)) {
     return potentialLocale;
   }
-  
+
   return null;
 }
 
 // Remove locale from path
 export function removeLocaleFromPath(path: string): string {
   const locale = getLocaleFromPath(path);
-  
+
   if (locale) {
     return path.replace(`/${locale}`, '') || '/';
   }
-  
+
   return path;
 }
