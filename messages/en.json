@@ -810,7 +810,9 @@
       "toolsRequired": "Tools required",
       "testStandard": "Test standard",
       "surface": "Surface",
-      "finish": "Finish"
+      "finish": "Finish",
+      "epd": "EPD available",
+      "fscCertified": "FSC® certified"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1275,7 +1277,9 @@
       "description": "Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
       "usp1": "100% Recyclable PET",
       "usp2": "αw up to 1.00",
-      "usp3": "Only 3-4 kg/m²"
+      "usp3": "Only 3-4 kg/m²",
+      "colorSelector": "Select Panel Color",
+      "colorSelectorPlaceholder": "Select a color"
     },
     "overview": {
       "tag": "CIRCULAR DESIGN",
@@ -1290,7 +1294,7 @@
       "reason4": "50+ colors to complement any interior design vision",
       "reason5Title": "Want More Options?",
       "reason5": "Combine with rPET Groove for a complete design system",
-      "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. A truly circular product that contributes to a more sustainable built environment.",
+      "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. Each panel diverts plastic waste from landfills while creating healthier, quieter environments. It's the sound-absorbing alternative to MDF—but at a fraction of the weight.",
       "feature1": "Made from up to 50% recycled PET bottles",
       "feature2": "100% recyclable at end of life",
       "feature3": "Lightweight: only 3-4 kg/m²",
@@ -1309,13 +1313,14 @@
       "step2": "Direct fixings without pre-drilling or special anchors",
       "step3Title": "Drilling & Screwing",
       "step3": "Create curves and angles with simple V-cut technique",
-      "title": "Design, Construct, Build",
-      "description": "rPET - Panel combines the workability of MDF with incredibly light weight.",
+      "title": "Process Like MDF, Weighs Like Nothing",
+      "description": "rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the material handles beautifully with standard workshop tools.",
       "step1Desc": "Manual or electric—clean cuts every time",
       "step2Desc": "Precision shapes and custom profiles",
-      "step3Desc": "Direct fixings without special anchors",
+      "step3Desc": "Secure fixing without splitting",
       "step4Title": "V-Cut Bending",
-      "step4Desc": "Create curves and angles with V-cut technique"
+      "step4Desc": "Create 3D shapes and corners",
+      "quote": "You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board."
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -1326,7 +1331,15 @@
       "benefit2": "Create calmer environments that boost wellbeing and productivity",
       "benefit3Title": "Privacy",
       "benefit3": "Reduce sound transmission between spaces for confidential conversations",
-      "description": "rPET - Panel achieves the maximum possible acoustic performance. The ultimate acoustic absorber for any interior."
+      "description": "rPET - Panel achieves the maximum possible acoustic absorption rating. The unique fiber structure traps and dissipates sound energy, dramatically reducing reverberation and improving speech clarity.",
+      "howItWorks": "How It Works",
+      "fiberLabel": "Compressed PET Fibers",
+      "fiberSublabel": "Sound energy converted to heat",
+      "panelThickness": "Panel Thickness",
+      "soundAbsorbed": "Sound Absorbed",
+      "testStandard": "Test Standard",
+      "testConfig": "Test Configuration: 24mm panel on 50mm frame with polyester wool insulation achieves αw 0.95",
+      "certNote": "Independently tested & certified to ISO 11654"
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -1336,7 +1349,10 @@
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Class A+ Emissions",
       "badge1Desc": "Made from post-consumer PET bottles",
-      "badge2Desc": "Full material recovery at end of life"
+      "badge2Desc": "Full material recovery at end of life",
+      "description": "rPET - Panel embodies the circular economy. Each panel contains up to 50% recycled PET bottles, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
+      "cert3Desc": "Class 1 certified for human safety",
+      "cert4Desc": "No VOC or formaldehyde (ISO 16000)"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1345,12 +1361,33 @@
       "physicalTitle": "Physical Properties",
       "fireTitle": "Fire Safety",
       "healthTitle": "Health & Environment",
-      "colorsTitle": "Colors & Finishes"
+      "colorsTitle": "Colors & Finishes",
+      "dimensionsTitle": "Dimensions",
+      "dimStandard": "Standard panel",
+      "dimCustomMax": "Custom maximum",
+      "dimThicknessOptions": "Thickness options",
+      "dimCustomThickness": "Custom thickness",
+      "physMaterial": "Material",
+      "physWeight12": "Weight (12mm)",
+      "physWeight24": "Weight (24mm)",
+      "fireEuClass": "European classification",
+      "fireGerman": "German standard",
+      "healthOekoTex": "OEKO-TEX®",
+      "healthFormaldehyde": "Formaldehyde",
+      "healthBinders": "Chemical binders",
+      "colorStandard": "Standard colors",
+      "colorCustom": "Custom colors",
+      "finishOptions": "Finish options",
+      "recyclability": "Recyclability",
+      "vocEmissions": "VOC emissions",
+      "anyRalNcs": "Any RAL / NCS",
+      "finishOptionsVal": "Fabric, HPL, Veneer, Print"
     },
     "sample": {
       "title": "Request Your Sample Package",
-      "description": "Experience the quality of rPET - Panel firsthand. Our sample package includes color swatches and a panel sample.",
-      "tag": "GET STARTED"
+      "description": "Experience the quality of rPET - Panel firsthand. Our customized sample package includes color swatches, thickness options, and finishing samples to help you make the perfect choice.",
+      "tag": "GET STARTED",
+      "cta": "Request Free Samples"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1358,27 +1395,62 @@
     },
     "why": {
       "tag": "WHY rPET - PANEL",
-      "description": "Discover why architects, designers, and acoustic consultants choose rPET - Panel for their projects.",
+      "description": "Discover why architects, designers, and acoustic consultants choose rPET - Panel for their most demanding projects.",
       "reason1Title": "Ecoustic",
-      "reason1": "Made from recycled PET bottles, fully recyclable, and contributing to healthier indoor environments.",
+      "reason1": "Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.",
       "reason2Title": "Excellent",
       "reason2": "Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.",
       "reason3Title": "Easy to Handle",
-      "reason3": "Lightweight and stable. Cut, drill, mill, and install with standard tools. No specialist required.",
+      "reason3": "Lightweight and stable. Cut, drill, mill, and install with standard tools.",
       "reason4Title": "People-Friendly",
       "reason4": "Anti-static, skin-friendly, anti-allergenic. No VOC or formaldehyde emissions.",
       "reason5Title": "Endless Possibilities",
-      "reason5": "CNC cuttable, millable, drillable—use it like MDF with none of the downsides."
+      "reason5": "5 standard colors plus any RAL/NCS. Add fabric, laminate, veneer, or custom prints.",
+      "title": "Five Reasons to Choose rPET"
     },
     "colors": {
       "tag": "COLOR OPTIONS",
       "title": "Express Your Style",
-      "description": "Choose from 5 sophisticated standard colors or specify from our extended palette. All base colors can be combined with finishing layers for a fully custom look."
+      "description": "Choose from 5 sophisticated standard colors or specify any custom color from the RAL or NCS palette. Every shade maintains the same outstanding acoustic performance.",
+      "anyColor": "Any Color",
+      "moreOptionsTitle": "Want More Options?",
+      "moreOptionsDesc": "All base colors can be combined with finishing layers like acoustic fabrics, HPL laminate, real wood veneer, or custom prints—without compromising acoustic performance.",
+      "fabric1": "Acoustic Fabrics",
+      "fabric2": "HPL/CPL Laminate",
+      "fabric3": "Real Wood Veneer",
+      "fabric4": "Custom Print"
     },
     "applications": {
       "tag": "APPLICATIONS",
       "title": "Applications",
-      "description": "Every building and every room is unique. rPET - Panel adapts to your needs."
+      "description": "Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.",
+      "app1Name": "Wall Panels",
+      "app1Desc": "Sound-absorbing wall cladding",
+      "app2Name": "Ceiling Panels",
+      "app2Desc": "Acoustic ceiling solutions",
+      "app3Name": "Room Dividers",
+      "app3Desc": "Functional space separation",
+      "app4Name": "Furniture",
+      "app4Desc": "Custom acoustic furniture",
+      "label1": "Meeting Pod",
+      "label2": "Offices",
+      "label3": "Hospitality"
+    },
+    "nav": {
+      "overview": "Overview",
+      "colors": "Colors",
+      "applications": "Applications",
+      "acoustics": "Acoustics",
+      "processing": "Processing",
+      "specifications": "Specifications",
+      "gallery": "Gallery",
+      "downloads": "Downloads"
+    },
+    "downloads": {
+      "installationGuide": "Installation Guide",
+      "acousticTestReport": "Acoustic Test Report (ISO 354)",
+      "fireCertificate": "Fire Certificate (EN 13501-1)",
+      "oekoTexCert": "OEKO-TEX® Certificate"
     }
   },
   "rwoodGroovePage": {
@@ -1718,8 +1790,18 @@
     },
     "finishes": {
       "title": "Touch & Protection",
-      "description": "The right finish brings out the best in every wood species.",
-      "tag": "SURFACE FINISHES"
+      "description": "The right finish brings out the best in every wood species. Our multi-layer finishing process delivers a surface that is as pleasing to touch as it is durable — protected against scratches, moisture and daily wear.",
+      "tag": "SURFACE FINISHES",
+      "mattLacquerName": "Super Matt Lacquer",
+      "mattLacquerDesc": "Anti-fingerprint, silky touch. 6-layer UV-cured protection.",
+      "naturalOilName": "Natural Oil",
+      "naturalOilDesc": "Deep, authentic wood feel with penetrating protection.",
+      "unfinishedName": "Unfinished",
+      "unfinishedDesc": "Ready for custom on-site finishing by the installer.",
+      "adv1": "Scratch resistant",
+      "adv2": "Spill resistant",
+      "adv3": "Anti-fingerprint",
+      "adv4": "Easy maintenance"
     },
     "advantages": {
       "tag": "ADVANTAGES",
@@ -1738,12 +1820,21 @@
       "app2": "Feature walls with natural warmth and acoustic benefit",
       "app3Title": "Ceilings",
       "app3": "Premium finishes for high-footfall commercial spaces",
-      "description": "From bespoke cabinetry to full-height feature walls—rWood - Panel adapts to any creative vision.",
+      "description": "From bespoke cabinetry to full-height feature walls — rWood - Panel delivers the look and feel of solid timber for every interior application.",
       "app1Desc": "Kitchen fronts, wardrobes, reception desks, shelving and bespoke furniture.",
       "app2Desc": "Full-height feature walls, wainscoting and accent panels.",
       "app3Desc": "Suspended ceiling panels and integrated ceiling systems.",
       "app4Title": "Retail & Hospitality",
-      "app4Desc": "Premium finishes for high-footfall commercial spaces."
+      "app4Desc": "Shop fittings, bar counters, hotel lobbies and restaurant interiors. Consistent quality across large-scale projects.",
+      "app1Extra": "Easy to machine with standard woodworking tools.",
+      "app2Extra": "Creates stunning visual impact with the warmth of natural wood.",
+      "app3Extra": "Lightweight slim format available for reduced structural load.",
+      "sector1": "Office",
+      "sector2": "Hospitality",
+      "sector3": "Residential",
+      "sector4": "Retail",
+      "sector5": "Healthcare",
+      "sector6": "Education"
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -1752,9 +1843,15 @@
       "badge2": "Circular Take-Back",
       "badge3": "European Production",
       "badge4": "EPD Available",
-      "badge5": "Green Energy",
+      "badge5": "Low VOC",
       "badge1Desc": "All wood from responsibly managed forests",
-      "badge2Desc": "Free end-of-life panel return and recycling"
+      "badge2Desc": "Free end-of-life panel return and recycling",
+      "description": "Every rWood - Panel starts with responsibly sourced timber. As part of Re-Sound's circular economy commitment, we maximise the use of each log by processing it as veneer — yielding up to 40× more surface area than solid lumber from the same tree.",
+      "badge3Desc": "Short supply chains, reduced transport emissions",
+      "badge4Desc": "Full environmental product declaration",
+      "badge5Desc": "E1 classified, meets strictest emission standards",
+      "badge6": "Green Energy",
+      "badge6Desc": "Production powered by renewable energy sources"
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1762,14 +1859,54 @@
       "compositionTitle": "Composition",
       "fireTitle": "Fire Safety",
       "certsTitle": "Certifications",
-      "dimensionsTitle": "Dimensions"
+      "dimensionsTitle": "Dimensions",
+      "finishTitle": "Finish",
+      "processingTitle": "Processing",
+      "dimPanelWidth": "Panel width",
+      "dimPanelLength": "Panel length",
+      "dimThicknessStd": "Thickness (standard)",
+      "dimThicknessSlim": "Thickness (slim)",
+      "dimWeight19": "Weight (19 mm)",
+      "compTopLayer": "Top layer",
+      "compTopLayerVal": "A-grade veneer, stained & lacquered",
+      "compCore": "Core",
+      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compBackLayer": "Back layer",
+      "compBackLayerVal": "Balancing veneer",
+      "compBonding": "Bonding",
+      "compBondingVal": "HPLT press technology",
+      "finishLacquerType": "Lacquer type",
+      "finishLacquerVal": "Acrylate urethane UV-cured",
+      "finishLayers": "Number of layers",
+      "finishGloss": "Gloss level",
+      "finishGlossVal": "Super matt (3-5 GU)",
+      "finishAntiFingerprint": "Anti-fingerprint",
+      "finishScratch": "Scratch resistance",
+      "fireStdMDF": "Standard MDF",
+      "fireFRMDF": "Fire-retardant MDF",
+      "certWoodSourcing": "Wood sourcing",
+      "certEnvironmental": "Environmental",
+      "certFelt": "Felt (if acoustic)",
+      "procSawing": "Sawing",
+      "procSawingVal": "Standard woodworking tools",
+      "procEdgeBanding": "Edge banding",
+      "procEdgeBandingVal": "Matching veneer edgebanding available",
+      "procCNC": "CNC machining",
+      "procEnvironment": "Environment",
+      "procEnvironmentVal": "Interior use (dry areas)",
+      "procMoisture": "Moisture-resistant",
+      "procMoistureVal": "MR core available"
     },
     "related": {
       "tag": "MATCHING PRODUCTS",
       "title": "Matching Products & Accessories",
       "groove": "rWood - Groove",
       "edgebanding": "Matching Edgebanding",
-      "samples": "Free Samples"
+      "samples": "Free Samples",
+      "description": "Achieve design continuity with coordinated Re-Sound products",
+      "explore": "Explore →",
+      "orderSamples": "Order Samples →",
+      "item3Desc": "Order physical veneer samples to compare finishes, colours and textures in your space"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1778,7 +1915,7 @@
     "overview": {
       "tag": "CRAFTSMANSHIP",
       "title": "Nature, Refined",
-      "description": "rWood - Panel brings the warmth and character of solid wood to acoustic spaces. Each panel is finished in our Belgian facility using a precision multi-layer lacquer process.",
+      "description": "rWood - Panel brings the warmth and character of solid timber into a prefinished, ready-to-use format. Each panel is crafted from premium A-grade veneer, bonded to a high-density MDF core using advanced pressing technology — delivering the beauty of natural wood with outstanding dimensional stability.",
       "feature1": "Premium A-grade veneers — oak, walnut, ash, cherry and birch",
       "feature2": "6-layer UV-cured lacquer for scratch and spill resistance",
       "feature3": "High-density MDF core (700 kg/m³) for structural integrity",
@@ -1788,22 +1925,32 @@
     "anatomy": {
       "tag": "ANATOMY",
       "layer1": "Top Veneer Layer",
-      "layer1Desc": "A-grade real wood veneer, brushed, stained and protected with 6 layers of UV-cured lacquer",
+      "layer1Desc": "A-grade real wood veneer, brushed, stained and protected with 6 layers of UV-cured acrylate urethane lacquer. Soft-touch super matt finish.",
       "layer2": "High-Density MDF Core",
-      "layer2Desc": "700 kg/m³ FSC® certified MDF. Available in standard and moisture-resistant grades",
+      "layer2Desc": "700 kg/m³ FSC® certified MDF. Available in standard, moisture-resistant (MR) and fire-retardant (FR) grades.",
       "layer3": "Balance Veneer Layer",
-      "layer3Desc": "Matching veneer backing ensures dimensional stability and prevents warping",
-      "keyAdvTitle": "Key Advantages"
+      "layer3Desc": "Matching veneer backing ensures dimensional stability and prevents warping. Finished or unfinished options.",
+      "keyAdvTitle": "Key Advantages",
+      "description": "Every layer serves a purpose — from the authentic wood surface to the engineered core."
     },
     "collection": {
       "tag": "THE COLLECTION",
       "title": "10 Curated Wood Veneers",
-      "description": "From serene Scandinavian birch to dramatic American walnut—each species selected for grain character and FSC certification."
+      "description": "From serene Scandinavian birch to dramatic American walnut — every veneer is carefully selected, brushed and finished to showcase the character of the wood.",
+      "filterAll": "All Veneers",
+      "customNote": "Custom veneer species and stain colours available on project orders of 50+ panels."
     },
     "dimensions": {
       "tag": "DIMENSIONS",
       "title": "Panel Formats",
-      "description": "Three formats to cover every application — from full-height wall cladding to furniture panels."
+      "description": "Three formats to cover every application — from full-height wall cladding to compact furniture elements.",
+      "standardName": "Standard",
+      "standardDesc": "Most versatile format",
+      "largeName": "Large Format",
+      "largeDesc": "Fewer joints, grander look",
+      "slimName": "Slim",
+      "slimDesc": "Lightweight wall cladding",
+      "thicknessLabel": "Thickness:"
     },
     "accessories": {
       "tag": "COMPLETE THE LOOK",
@@ -1815,6 +1962,14 @@
       "item2Desc": "Pre-finished veneer edgebanding in every colour for cabinet and furniture work.",
       "item3Title": "Free Samples",
       "item3Desc": "Request samples of any veneer and finish combination."
+    },
+    "cta": {
+      "title": "Ready to Elevate Your Project?",
+      "description": "Get a personalised quote, request physical samples, or speak with our specification team about your next project.",
+      "circularNote": "Circular Take-Back"
+    },
+    "downloads": {
+      "productDataSheet": "Product Data Sheet"
     }
   },
   "rpetFlexGroovePage": {

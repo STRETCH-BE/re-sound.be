@@ -810,7 +810,9 @@
       "toolsRequired": "Outils nécessaires",
       "testStandard": "Norme de test",
       "surface": "Surface",
-      "finish": "Finition"
+      "finish": "Finition",
+      "epd": "DEP disponible",
+      "fscCertified": "Certifié FSC®"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1275,7 +1277,9 @@
       "description": "Transformez n'importe quel espace avec les panneaux acoustiques rPET - Panel. Fabriqués à partir de 100% de bouteilles PET recyclées, ces absorbeurs sonores légers mais puissants offrent des performances acoustiques maximales avec un impact environnemental minimal.",
       "usp1": "PET 100% Recyclable",
       "usp2": "αw jusqu'à 1.00",
-      "usp3": "Seulement 3-4 kg/m²"
+      "usp3": "Seulement 3-4 kg/m²",
+      "colorSelector": "Sélectionner la Couleur",
+      "colorSelectorPlaceholder": "Sélectionner une couleur"
     },
     "overview": {
       "tag": "DESIGN CIRCULAIRE",
@@ -1294,7 +1298,7 @@
       "feature2": "100% recyclable en fin de vie",
       "feature3": "Léger : seulement 3-4 kg/m²",
       "feature4": "Sans liants chimiques",
-      "description": "rPET - Panel transforme les bouteilles PET recyclées en panneaux acoustiques haute performance. Un produit véritablement circulaire contribuant à un environnement bâti plus durable."
+      "description": "rPET - Panel transforme les bouteilles PET recyclées en panneaux acoustiques haute performance. Chaque panneau détourne les déchets plastiques des décharges tout en créant des environnements plus sains et plus silencieux. C'est l'alternative absorbante au MDF — mais à une fraction du poids."
     },
     "process": {
       "tag": "COMMENT C'EST FABRIQUÉ",
@@ -1311,11 +1315,12 @@
       "step3": "Créer des courbes et angles avec la simple technique de rainurage en V",
       "step1Desc": "Manuel ou électrique — des coupes nettes à chaque fois",
       "step2Desc": "Formes précises et profils personnalisés",
-      "step3Desc": "Fixations directes sans ancrages spéciaux",
+      "step3Desc": "Fixation sécurisée sans fendillement",
       "step4Title": "Pliage V-Cut",
-      "step4Desc": "Créer des courbes et angles avec la technique V-cut",
-      "title": "Concevoir, Construire, Bâtir",
-      "description": "rPET - Panel combine la facilité d'usinage du MDF avec un poids incroyablement léger."
+      "step4Desc": "Créer des formes 3D et des angles",
+      "title": "Usinable comme du MDF, Léger comme une Plume",
+      "description": "rPET - Panel combine la facilité d'usinage du MDF avec un poids incroyablement léger. Découpez-le à la scie, fraisez-le sur CNC, percez-le, entaillez-le en V — le matériau se travaille magnifiquement avec des outils d'atelier standard.",
+      "quote": "Vous vous rendez vite compte que rPET - Panel peut être usiné aussi rapidement et facilement qu'une plaque MDF."
     },
     "acoustics": {
       "tag": "PERFORMANCES",
@@ -1326,7 +1331,15 @@
       "benefit2": "Créer des environnements plus calmes qui stimulent le bien-être et la productivité",
       "benefit3Title": "Confidentialité",
       "benefit3": "Réduire la transmission sonore entre espaces pour des conversations confidentielles",
-      "description": "rPET - Panel atteint les performances acoustiques maximales possibles. L'absorbeur acoustique ultime pour tout intérieur."
+      "description": "rPET - Panel atteint la note d'absorption acoustique maximale possible. La structure unique en fibres piège et dissipe l'énergie sonore, réduisant considérablement la réverbération et améliorant la clarté de la parole.",
+      "howItWorks": "Comment Ça Fonctionne",
+      "fiberLabel": "Fibres PET Compressées",
+      "fiberSublabel": "Énergie sonore convertie en chaleur",
+      "panelThickness": "Épaisseur du Panneau",
+      "soundAbsorbed": "Son Absorbé",
+      "testStandard": "Norme de Test",
+      "testConfig": "Configuration de test : panneau 24mm sur cadre 50mm avec isolant en laine polyester atteint αw 0,95",
+      "certNote": "Testé et certifié indépendamment selon ISO 11654"
     },
     "sustainability": {
       "tag": "DURABILITÉ",
@@ -1336,7 +1349,10 @@
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Émissions Classe A+",
       "badge1Desc": "Fabriqué à partir de bouteilles PET post-consommation",
-      "badge2Desc": "Récupération totale des matériaux en fin de vie"
+      "badge2Desc": "Récupération totale des matériaux en fin de vie",
+      "description": "rPET - Panel incarne l'économie circulaire. Chaque panneau contient jusqu'à 50% de bouteilles PET recyclées et, en fin de vie, l'ensemble du panneau peut être recyclé à nouveau. Pas de déchets, pas de compromis.",
+      "cert3Desc": "Classe 1 certifié pour la sécurité humaine",
+      "cert4Desc": "Pas de COV ni de formaldéhyde (ISO 16000)"
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1345,12 +1361,33 @@
       "physicalTitle": "Propriétés Physiques",
       "fireTitle": "Sécurité Incendie",
       "healthTitle": "Santé & Environnement",
-      "colorsTitle": "Couleurs & Finitions"
+      "colorsTitle": "Couleurs & Finitions",
+      "dimensionsTitle": "Dimensions",
+      "dimStandard": "Panneau standard",
+      "dimCustomMax": "Maximum personnalisé",
+      "dimThicknessOptions": "Options d'épaisseur",
+      "dimCustomThickness": "Épaisseur personnalisée",
+      "physMaterial": "Matériau",
+      "physWeight12": "Poids (12mm)",
+      "physWeight24": "Poids (24mm)",
+      "fireEuClass": "Classification européenne",
+      "fireGerman": "Norme allemande",
+      "healthOekoTex": "OEKO-TEX®",
+      "healthFormaldehyde": "Formaldéhyde",
+      "healthBinders": "Liants chimiques",
+      "colorStandard": "Couleurs standard",
+      "colorCustom": "Couleurs personnalisées",
+      "finishOptions": "Options de finition",
+      "recyclability": "Recyclabilité",
+      "vocEmissions": "Émissions COV",
+      "anyRalNcs": "Tout RAL / NCS",
+      "finishOptionsVal": "Tissu, HPL, Placage, Impression"
     },
     "sample": {
       "title": "Demandez Votre Kit d'Échantillons",
-      "description": "Voyez et touchez la qualité de rPET Panel avant de le prescrire. Notre kit d'échantillons comprend des nuanciers et un échantillon de panneau en taille réelle.",
-      "tag": "DÉMARRER"
+      "description": "Découvrez la qualité de rPET - Panel par vous-même. Notre kit d'échantillons personnalisé comprend des nuanciers, des options d'épaisseur et des échantillons de finition pour vous aider à faire le choix parfait.",
+      "tag": "DÉMARRER",
+      "cta": "Demander des Échantillons Gratuits"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1363,22 +1400,57 @@
       "reason3Title": "Facile à Manier",
       "reason4Title": "Respectueux des Personnes",
       "reason5Title": "Possibilités Infinies",
-      "description": "Découvrez pourquoi les architectes, designers et consultants acoustiques choisissent rPET - Panel pour leurs projets.",
-      "reason1": "Fabriqué à partir de bouteilles PET recyclées, entièrement recyclable, et contribuant à des environnements intérieurs plus sains.",
-      "reason2": "Absorption acoustique jusqu'à αw 1,00 — la meilleure note possible pour l'absorption sonore.",
-      "reason3": "Léger et stable. Scier, percer, fraiser et installer avec des outils standard. Aucun spécialiste requis.",
+      "description": "Découvrez pourquoi les architectes, designers et consultants acoustiques choisissent rPET - Panel pour leurs projets les plus exigeants.",
+      "reason1": "Fabriqué à partir de bouteilles PET recyclées, entièrement recyclable et contribuant à une économie circulaire.",
+      "reason2": "Absorption acoustique jusqu'à αw 1,00 — la meilleure notation possible pour l'absorption sonore.",
+      "reason3": "Léger et stable. Scier, percer, fraiser et installer avec des outils standard.",
       "reason4": "Antistatique, respectueux de la peau, antiallergénique. Aucune émission de COV ou de formaldéhyde.",
-      "reason5": "Usinable au CNC, fraisable, percable — utilisez-le comme du MDF sans les inconvénients."
+      "reason5": "5 couleurs standard plus tout RAL/NCS. Ajoutez tissu, laminé, placage ou impressions personnalisées.",
+      "title": "Cinq Raisons de Choisir rPET"
     },
     "colors": {
       "tag": "OPTIONS DE COULEUR",
       "title": "Exprimez Votre Style",
-      "description": "Choisissez parmi 5 couleurs standard sophistiquées ou spécifiez depuis notre palette étendue."
+      "description": "Choisissez parmi 5 couleurs standard sophistiquées ou spécifiez toute couleur de la palette RAL ou NCS. Chaque teinte maintient les mêmes performances acoustiques exceptionnelles.",
+      "anyColor": "Toute Couleur",
+      "moreOptionsTitle": "Plus d'Options ?",
+      "moreOptionsDesc": "Toutes les couleurs de base peuvent être combinées avec des couches de finition comme des tissus acoustiques, du laminé HPL, du placage bois réel ou des impressions personnalisées — sans compromettre les performances acoustiques.",
+      "fabric1": "Tissus Acoustiques",
+      "fabric2": "Laminé HPL/CPL",
+      "fabric3": "Placage Bois Réel",
+      "fabric4": "Impression Personnalisée"
     },
     "applications": {
       "tag": "APPLICATIONS",
       "title": "Applications",
-      "description": "Chaque bâtiment et chaque pièce est unique. rPET - Panel s'adapte à vos besoins."
+      "description": "Chaque bâtiment et chaque pièce est unique. rPET - Panel s'adapte à tout défi acoustique avec des applications polyvalentes.",
+      "app1Name": "Panneaux Muraux",
+      "app1Desc": "Revêtement mural absorbant les sons",
+      "app2Name": "Panneaux de Plafond",
+      "app2Desc": "Solutions acoustiques pour plafond",
+      "app3Name": "Cloisons",
+      "app3Desc": "Séparation fonctionnelle des espaces",
+      "app4Name": "Mobilier",
+      "app4Desc": "Mobilier acoustique sur mesure",
+      "label1": "Pod de Réunion",
+      "label2": "Bureaux",
+      "label3": "Hôtellerie"
+    },
+    "nav": {
+      "overview": "Aperçu",
+      "colors": "Couleurs",
+      "applications": "Applications",
+      "acoustics": "Acoustique",
+      "processing": "Traitement",
+      "specifications": "Spécifications",
+      "gallery": "Galerie",
+      "downloads": "Téléchargements"
+    },
+    "downloads": {
+      "installationGuide": "Guide d'Installation",
+      "acousticTestReport": "Rapport de Test Acoustique (ISO 354)",
+      "fireCertificate": "Certificat Incendie (EN 13501-1)",
+      "oekoTexCert": "Certificat OEKO-TEX®"
     }
   },
   "rwoodGroovePage": {
@@ -1722,8 +1794,18 @@
     },
     "finishes": {
       "title": "Toucher & Protection",
-      "description": "La laque transparente appliquée en usine protège le placage tout en préservant le toucher naturel du bois.",
-      "tag": "FINITIONS DE SURFACE"
+      "description": "La bonne finition fait ressortir le meilleur de chaque essence. Notre processus de finition multicouche offre une surface aussi agréable au toucher que durable — protégée contre les rayures, l'humidité et l'usure quotidienne.",
+      "tag": "FINITIONS DE SURFACE",
+      "mattLacquerName": "Laque Super Mate",
+      "mattLacquerDesc": "Anti-empreintes, toucher soyeux. Protection UV 6 couches.",
+      "naturalOilName": "Huile Naturelle",
+      "naturalOilDesc": "Sensation bois profonde et authentique avec protection pénétrante.",
+      "unfinishedName": "Non Fini",
+      "unfinishedDesc": "Prêt pour une finition personnalisée sur chantier par l'installateur.",
+      "adv1": "Résistant aux rayures",
+      "adv2": "Résistant aux éclaboussures",
+      "adv3": "Anti-empreintes",
+      "adv4": "Facile à entretenir"
     },
     "advantages": {
       "tag": "AVANTAGES",
@@ -1735,7 +1817,7 @@
     },
     "applications": {
       "tag": "APPLICATIONS",
-      "title": "Là où il Brille",
+      "title": "Possibilités Illimitées",
       "app1Title": "Mobilier & Menuiserie",
       "app1": "Associer les panneaux acoustiques au mobilier sur mesure de façon transparente",
       "app2Title": "Revêtement Mural",
@@ -1746,8 +1828,17 @@
       "app2Desc": "Murs d'accent pleine hauteur, lambris et panneaux décoratifs.",
       "app3Desc": "Panneaux de plafond suspendus et systèmes de plafond intégrés.",
       "app4Title": "Commerce & Hôtellerie",
-      "app4Desc": "Finitions premium pour les espaces commerciaux à fort passage.",
-      "description": "De la menuiserie sur mesure aux murs d'accent pleine hauteur — rWood - Panel s'adapte à toute vision créative."
+      "app4Desc": "Agencements de magasins, comptoirs de bar, lobbies d'hôtels et intérieurs de restaurants. Qualité constante pour les grands projets.",
+      "description": "De la menuiserie sur mesure aux murs d'accent pleine hauteur — rWood - Panel apporte l'aspect et le toucher du bois massif pour toute application intérieure.",
+      "app1Extra": "Facile à usiner avec des outils de menuiserie standard.",
+      "app2Extra": "Crée un impact visuel saisissant avec la chaleur du bois naturel.",
+      "app3Extra": "Format slim léger disponible pour une charge structurelle réduite.",
+      "sector1": "Bureau",
+      "sector2": "Hôtellerie",
+      "sector3": "Résidentiel",
+      "sector4": "Commerce",
+      "sector5": "Santé",
+      "sector6": "Éducation"
     },
     "sustainability": {
       "tag": "DURABILITÉ",
@@ -1756,9 +1847,15 @@
       "badge2": "Reprise Circulaire",
       "badge3": "Production Européenne",
       "badge4": "DEP Disponible",
-      "badge5": "Énergie Verte",
+      "badge5": "Faibles COV",
       "badge1Desc": "Tout le bois issu de forêts gérées de façon responsable",
-      "badge2Desc": "Retour et recyclage gratuits des panneaux en fin de vie"
+      "badge2Desc": "Retour et recyclage gratuits des panneaux en fin de vie",
+      "description": "Chaque panneau rWood - Panel commence par du bois issu de sources responsables. Dans le cadre de l'engagement de Re-Sound pour l'économie circulaire, nous maximisons l'utilisation de chaque tronc en le transformant en placage — offrant jusqu'à 40× plus de surface que du bois massif issu du même arbre.",
+      "badge3Desc": "Chaînes d'approvisionnement courtes, émissions de transport réduites",
+      "badge4Desc": "Déclaration environnementale de produit complète",
+      "badge5Desc": "Classé E1, répond aux normes d'émission les plus strictes",
+      "badge6": "Énergie Verte",
+      "badge6Desc": "Production alimentée par des sources d'énergie renouvelables"
     },
     "specs": {
       "tag": "TECHNIQUE",
@@ -1766,14 +1863,54 @@
       "compositionTitle": "Composition",
       "fireTitle": "Sécurité Incendie",
       "certsTitle": "Certifications",
-      "dimensionsTitle": "Dimensions"
+      "dimensionsTitle": "Dimensions",
+      "finishTitle": "Finition",
+      "processingTitle": "Traitement",
+      "dimPanelWidth": "Largeur du panneau",
+      "dimPanelLength": "Longueur du panneau",
+      "dimThicknessStd": "Épaisseur (standard)",
+      "dimThicknessSlim": "Épaisseur (slim)",
+      "dimWeight19": "Poids (19 mm)",
+      "compTopLayer": "Couche supérieure",
+      "compTopLayerVal": "Placage A-grade, teinté et laqué",
+      "compCore": "Cœur",
+      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compBackLayer": "Couche arrière",
+      "compBackLayerVal": "Placage de contrepoids",
+      "compBonding": "Collage",
+      "compBondingVal": "Technologie de presse HPLT",
+      "finishLacquerType": "Type de laque",
+      "finishLacquerVal": "Acrylate uréthane UV-cured",
+      "finishLayers": "Nombre de couches",
+      "finishGloss": "Niveau de brillance",
+      "finishGlossVal": "Super mat (3-5 GU)",
+      "finishAntiFingerprint": "Anti-empreintes",
+      "finishScratch": "Résistance aux rayures",
+      "fireStdMDF": "MDF standard",
+      "fireFRMDF": "MDF retardant de flamme",
+      "certWoodSourcing": "Approvisionnement en bois",
+      "certEnvironmental": "Environnement",
+      "certFelt": "Feutre (si acoustique)",
+      "procSawing": "Sciage",
+      "procSawingVal": "Outils de menuiserie standard",
+      "procEdgeBanding": "Chant",
+      "procEdgeBandingVal": "Chant en placage assorti disponible",
+      "procCNC": "Usinage CNC",
+      "procEnvironment": "Environnement",
+      "procEnvironmentVal": "Usage intérieur (zones sèches)",
+      "procMoisture": "Résistant à l'humidité",
+      "procMoistureVal": "Cœur MR disponible"
     },
     "related": {
       "tag": "PRODUITS ASSORTIS",
       "title": "Produits & Accessoires Assortis",
       "groove": "rWood - Groove",
       "edgebanding": "Chant Assorti",
-      "samples": "Échantillons Gratuits"
+      "samples": "Échantillons Gratuits",
+      "description": "Réalisez une continuité de design avec les produits Re-Sound coordonnés",
+      "explore": "Explorer →",
+      "orderSamples": "Commander des Échantillons →",
+      "item3Desc": "Commandez des échantillons de placage physiques pour comparer les finitions, couleurs et textures dans votre espace"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1782,7 +1919,7 @@
     "overview": {
       "tag": "ARTISANAT",
       "title": "Nature, Raffinée",
-      "description": "rWood - Panel apporte la chaleur et le caractère du bois massif aux espaces acoustiques. Chaque panneau est fini dans notre atelier belge avec un procédé de laque multicouche de précision.",
+      "description": "rWood - Panel apporte la chaleur et le caractère du bois massif dans un format préfini et prêt à l'emploi. Chaque panneau est fabriqué à partir d'un placage A-grade premium, collé sur un cœur MDF haute densité grâce à une technologie de pressage avancée — alliant beauté du bois naturel et stabilité dimensionnelle exceptionnelle.",
       "feature1": "Placages A-grade premium — chêne, noyer, frêne, cerisier et bouleau",
       "feature2": "Laque UV 6 couches résistante aux rayures et éclaboussures",
       "feature3": "Cœur MDF haute densité (700 kg/m³) pour l'intégrité structurelle",
@@ -1792,22 +1929,32 @@
     "anatomy": {
       "tag": "ANATOMIE",
       "layer1": "Couche de Placage Supérieure",
-      "layer1Desc": "Placage bois naturel A-grade, brossé, teinté et protégé par 6 couches de laque UV",
+      "layer1Desc": "Placage bois naturel A-grade, brossé, teinté et protégé par 6 couches de laque acrylate uréthane UV. Finition super mate au toucher soyeux.",
       "layer2": "Cœur MDF Haute Densité",
-      "layer2Desc": "MDF FSC® 700 kg/m³. Disponible en grades standard et résistant à l'humidité",
+      "layer2Desc": "MDF FSC® 700 kg/m³. Disponible en grades standard, résistant à l'humidité (MR) et retardant de flamme (FR).",
       "layer3": "Couche de Contreplacage",
-      "layer3Desc": "Le dos en placage assorti garantit la stabilité dimensionnelle et prévient le gauchissement",
-      "keyAdvTitle": "Avantages Clés"
+      "layer3Desc": "Le dos en placage assorti garantit la stabilité dimensionnelle et prévient le gauchissement. Options finies ou brutes.",
+      "keyAdvTitle": "Avantages Clés",
+      "description": "Chaque couche a un rôle — de la surface en bois authentique au cœur technique."
     },
     "collection": {
       "tag": "LA COLLECTION",
       "title": "10 Placages Bois Sélectionnés",
-      "description": "Du bouleau scandinave serein au noyer américain dramatique — chaque essence sélectionnée pour son caractère de grain et sa certification FSC."
+      "description": "Du bouleau scandinave serein au noyer américain dramatique — chaque placage est soigneusement sélectionné, brossé et fini pour mettre en valeur le caractère du bois.",
+      "filterAll": "Tous les Placages",
+      "customNote": "Espèces de placage et coloris de teinture personnalisés disponibles pour les commandes de projet de 50+ panneaux."
     },
     "dimensions": {
       "tag": "DIMENSIONS",
       "title": "Formats de Panneaux",
-      "description": "Trois formats pour couvrir chaque application — du revêtement mural pleine hauteur aux panneaux de mobilier."
+      "description": "Trois formats pour couvrir chaque application — du revêtement mural pleine hauteur aux éléments de mobilier compacts.",
+      "standardName": "Standard",
+      "standardDesc": "Format le plus polyvalent",
+      "largeName": "Grand Format",
+      "largeDesc": "Moins de joints, look plus grand",
+      "slimName": "Slim",
+      "slimDesc": "Revêtement mural léger",
+      "thicknessLabel": "Épaisseur :"
     },
     "accessories": {
       "tag": "POUR COMPLÉTER LE LOOK",
@@ -1819,6 +1966,14 @@
       "item2Title": "Chant Assorti",
       "item3Title": "Échantillons Gratuits",
       "item3Desc": "Demandez des échantillons de toute combinaison de placage et de finition."
+    },
+    "cta": {
+      "title": "Prêt à Élever Votre Projet ?",
+      "description": "Obtenez un devis personnalisé, demandez des échantillons physiques ou parlez à notre équipe de spécification pour votre prochain projet.",
+      "circularNote": "Reprise Circulaire"
+    },
+    "downloads": {
+      "productDataSheet": "Fiche Produit"
     }
   },
   "rpetFlexGroovePage": {

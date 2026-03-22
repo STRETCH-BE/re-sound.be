@@ -810,7 +810,9 @@
       "toolsRequired": "Benodigde gereedschappen",
       "testStandard": "Testnorm",
       "surface": "Oppervlak",
-      "finish": "Afwerking"
+      "finish": "Afwerking",
+      "epd": "EPD beschikbaar",
+      "fscCertified": "FSC® gecertificeerd"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1275,7 +1277,9 @@
       "description": "Transformeer elke ruimte met rPET - Panel akoestische panelen. Gemaakt van 100% gerecycleerde PET-flessen leveren deze lichtgewicht maar krachtige geluidsabsorbers maximale akoestische prestaties met minimale milieu-impact.",
       "usp1": "100% Recycleerbaar PET",
       "usp2": "αw tot 1,00",
-      "usp3": "Slechts 3-4 kg/m²"
+      "usp3": "Slechts 3-4 kg/m²",
+      "colorSelector": "Kleur Kiezen",
+      "colorSelectorPlaceholder": "Kies een kleur"
     },
     "overview": {
       "tag": "CIRCULAIR ONTWERP",
@@ -1294,7 +1298,7 @@
       "feature2": "100% recycleerbaar aan einde levensduur",
       "feature3": "Lichtgewicht: slechts 3-4 kg/m²",
       "feature4": "Vrij van chemische bindmiddelen",
-      "description": "rPET - Panel transformeert gerecycleerde PET-flessen in hoogperformante akoestische panelen. Een werkelijk circulair product dat bijdraagt aan een duurzamere gebouwde omgeving."
+      "description": "rPET - Panel transformeert gerecycleerde PET-flessen in hoogperformante akoestische panelen. Elk paneel houdt plastic afval weg van stortplaatsen terwijl het gezondere, stillere omgevingen creëert. Het is het geluidsabsorberende alternatief voor MDF — maar een fractie van het gewicht."
     },
     "process": {
       "tag": "HOE HET GEMAAKT WORDT",
@@ -1311,11 +1315,12 @@
       "step3": "Maak rondingen en hoeken met eenvoudige V-snede techniek",
       "step1Desc": "Handmatig of elektrisch — nette sneden elke keer",
       "step2Desc": "Nauwkeurige vormen en aangepaste profielen",
-      "step3Desc": "Directe bevestigingen zonder speciale ankers",
+      "step3Desc": "Veilige bevestiging zonder splijten",
       "step4Title": "V-snede Buigen",
-      "step4Desc": "Rondingen en hoeken met V-snede techniek",
-      "title": "Ontwerp, Construeer, Bouw",
-      "description": "rPET - Panel combineert de bewerkbaarheid van MDF met een ongelooflijk licht gewicht."
+      "step4Desc": "3D-vormen en hoeken maken",
+      "title": "Bewerkbaar als MDF, Licht als een Veer",
+      "description": "rPET - Panel combineert de bewerkbaarheid van MDF met een ongelooflijk licht gewicht. Zaag het, frees het op CNC, boor het, maak V-sneden — het materiaal verwerkt prachtig met standaard werkplaatsgereedschap.",
+      "quote": "Je merkt al snel dat rPET - Panel net zo snel en gemakkelijk te verwerken is als een MDF-plaat."
     },
     "acoustics": {
       "tag": "PRESTATIES",
@@ -1326,7 +1331,15 @@
       "benefit2": "Rustigere omgevingen creëren die welzijn en productiviteit stimuleren",
       "benefit3Title": "Privacy",
       "benefit3": "Geluidsoverdracht tussen ruimtes verminderen voor vertrouwelijke gesprekken",
-      "description": "rPET - Panel bereikt de maximaal mogelijke akoestische prestaties. De ultieme akoestische absorber voor elk interieur."
+      "description": "rPET - Panel behaalt de maximaal mogelijke akoestische absorptiewaarde. De unieke vezelstructuur vangt en dissipeert geluidsenergie, waardoor de nagalm aanzienlijk wordt verminderd en de spraakverstaanbaarheid verbetert.",
+      "howItWorks": "Hoe het Werkt",
+      "fiberLabel": "Gecomprimeerde PET-vezels",
+      "fiberSublabel": "Geluidsenergie omgezet in warmte",
+      "panelThickness": "Paneldikte",
+      "soundAbsorbed": "Geluid Geabsorbeerd",
+      "testStandard": "Testnorm",
+      "testConfig": "Testconfiguratie: 24mm paneel op 50mm frame met polyesterwol isolatie bereikt αw 0,95",
+      "certNote": "Onafhankelijk getest en gecertificeerd volgens ISO 11654"
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
@@ -1336,7 +1349,10 @@
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Klasse A+ Emissies",
       "badge1Desc": "Gemaakt van post-consumer PET-flessen",
-      "badge2Desc": "Volledige materiaalherstel aan einde levensduur"
+      "badge2Desc": "Volledige materiaalherstel aan einde levensduur",
+      "description": "rPET - Panel belichaamt de circulaire economie. Elk paneel bevat tot 50% gerecycleerde PET-flessen en aan het einde van zijn levensduur kan het volledige paneel opnieuw worden gerecycleerd. Geen afval, geen compromissen.",
+      "cert3Desc": "Klasse 1 gecertificeerd voor menselijke veiligheid",
+      "cert4Desc": "Geen VOS of formaldehyde (ISO 16000)"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1345,12 +1361,33 @@
       "physicalTitle": "Fysieke Eigenschappen",
       "fireTitle": "Brandveiligheid",
       "healthTitle": "Gezondheid & Milieu",
-      "colorsTitle": "Kleuren & Afwerkingen"
+      "colorsTitle": "Kleuren & Afwerkingen",
+      "dimensionsTitle": "Afmetingen",
+      "dimStandard": "Standaard paneel",
+      "dimCustomMax": "Aangepast maximum",
+      "dimThicknessOptions": "Dikteoptis",
+      "dimCustomThickness": "Aangepaste dikte",
+      "physMaterial": "Materiaal",
+      "physWeight12": "Gewicht (12mm)",
+      "physWeight24": "Gewicht (24mm)",
+      "fireEuClass": "Europese classificatie",
+      "fireGerman": "Duitse norm",
+      "healthOekoTex": "OEKO-TEX®",
+      "healthFormaldehyde": "Formaldehyde",
+      "healthBinders": "Chemische bindmiddelen",
+      "colorStandard": "Standaardkleuren",
+      "colorCustom": "Aangepaste kleuren",
+      "finishOptions": "Afwerkingsopties",
+      "recyclability": "Recycleerbaarheid",
+      "vocEmissions": "VOS-emissies",
+      "anyRalNcs": "Elke RAL / NCS",
+      "finishOptionsVal": "Stof, HPL, Fineer, Print"
     },
     "sample": {
-      "title": "Vraag je Staalpackage Aan",
-      "description": "Zie en voel de kwaliteit van rPET Panel voor je specificeert. Ons staalkit bevat kleurstalen en een full-size paneelstaal.",
-      "tag": "AAN DE SLAG"
+      "title": "Vraag uw Staalpackage Aan",
+      "description": "Ervaar de kwaliteit van rPET - Panel zelf. Ons gepersonaliseerd staalpackage bevat kleurstalen, dikteoptis en afwerkingstalen om u te helpen de perfecte keuze te maken.",
+      "tag": "AAN DE SLAG",
+      "cta": "Gratis Stalen Aanvragen"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1363,22 +1400,57 @@
       "reason3Title": "Eenvoudig te Hanteren",
       "reason4Title": "Mensvriendelijk",
       "reason5Title": "Eindeloze Mogelijkheden",
-      "description": "Ontdek waarom architecten, designers en akoestisch adviseurs rPET - Panel kiezen voor hun projecten.",
-      "reason1": "Gemaakt van gerecycleerde PET-flessen, volledig recycleerbaar en bijdragend aan gezondere binnenomgevingen.",
+      "description": "Ontdek waarom architecten, designers en akoestisch adviseurs rPET - Panel kiezen voor hun meest veeleisende projecten.",
+      "reason1": "Gemaakt van gerecycleerde PET-flessen, volledig recycleerbaar en bijdragend aan een circulaire economie.",
       "reason2": "Geluidsabsorptie tot αw 1,00 — de hoogst mogelijke beoordeling voor geluidsabsorptie.",
-      "reason3": "Lichtgewicht en stabiel. Zagen, boren, frezen en installeren met standaard gereedschap. Geen specialist vereist.",
+      "reason3": "Lichtgewicht en stabiel. Zagen, boren, frezen en installeren met standaard gereedschap.",
       "reason4": "Antistatisch, huidvriendelijk, antiallergeen. Geen VOS- of formaldehydeemissies.",
-      "reason5": "CNC-bewerkbaar, freesbaar, boorbaar — gebruik het zoals MDF zonder de nadelen."
+      "reason5": "5 standaardkleuren plus elk RAL/NCS. Voeg stof, laminaat, fineer of aangepaste prints toe.",
+      "title": "Vijf Redenen voor rPET"
     },
     "colors": {
       "tag": "KLEUROPTIES",
       "title": "Druk je Stijl Uit",
-      "description": "Kies uit 5 verfijnde standaardkleuren of specificeer uit ons uitgebreide palet."
+      "description": "Kies uit 5 verfijnde standaardkleuren of specificeer elke kleur uit het RAL- of NCS-palet. Elke tint behoudt dezelfde uitstekende akoestische prestaties.",
+      "anyColor": "Elke Kleur",
+      "moreOptionsTitle": "Meer Opties?",
+      "moreOptionsDesc": "Alle basiskleuren kunnen worden gecombineerd met afwerkingslagen zoals akoestische stoffen, HPL-laminaat, echt houtfineer of aangepaste prints — zonder de akoestische prestaties te compromitteren.",
+      "fabric1": "Akoestische Stoffen",
+      "fabric2": "HPL/CPL Laminaat",
+      "fabric3": "Echt Houtfineer",
+      "fabric4": "Aangepaste Print"
     },
     "applications": {
       "tag": "TOEPASSINGEN",
       "title": "Toepassingen",
-      "description": "Elk gebouw en elke ruimte is uniek. rPET - Panel past zich aan jouw behoeften aan."
+      "description": "Elk gebouw en elke ruimte is uniek. rPET - Panel past zich aan elke akoestische uitdaging aan met veelzijdige toepassingen.",
+      "app1Name": "Wandpanelen",
+      "app1Desc": "Geluidsabsorberende wandbekleding",
+      "app2Name": "Plafondpanelen",
+      "app2Desc": "Akoestische plafondoplossingen",
+      "app3Name": "Ruimteverdelers",
+      "app3Desc": "Functionele ruimtescheiding",
+      "app4Name": "Meubilair",
+      "app4Desc": "Aangepast akoestisch meubilair",
+      "label1": "Vergaderpod",
+      "label2": "Kantoren",
+      "label3": "Horeca"
+    },
+    "nav": {
+      "overview": "Overzicht",
+      "colors": "Kleuren",
+      "applications": "Toepassingen",
+      "acoustics": "Akoestiek",
+      "processing": "Verwerking",
+      "specifications": "Specificaties",
+      "gallery": "Galerij",
+      "downloads": "Downloads"
+    },
+    "downloads": {
+      "installationGuide": "Installatiehandleiding",
+      "acousticTestReport": "Akoestisch Testrapport (ISO 354)",
+      "fireCertificate": "Brandcertificaat (EN 13501-1)",
+      "oekoTexCert": "OEKO-TEX® Certificaat"
     }
   },
   "rwoodGroovePage": {
@@ -1722,8 +1794,18 @@
     },
     "finishes": {
       "title": "Touch & Bescherming",
-      "description": "Fabrieksgepaste klarlak beschermt het fineer terwijl het natuurlijke gevoel van het hout behouden blijft.",
-      "tag": "OPPERVLAKAFWERKINGEN"
+      "description": "De juiste afwerking haalt het beste uit elke houtsoort. Ons meerlaags afwerkingsproces levert een oppervlak dat even aangenaam is om aan te raken als duurzaam — beschermd tegen krassen, vocht en dagelijkse slijtage.",
+      "tag": "OPPERVLAKAFWERKINGEN",
+      "mattLacquerName": "Super Matte Lak",
+      "mattLacquerDesc": "Anti-vingerafdruk, zijdeachtige touch. 6-laags UV-bescherming.",
+      "naturalOilName": "Natuurolie",
+      "naturalOilDesc": "Diep, authentiek houtgevoel met doordringende bescherming.",
+      "unfinishedName": "Onafgewerkt",
+      "unfinishedDesc": "Klaar voor aangepaste afwerking op locatie door de installateur.",
+      "adv1": "Krasbestendig",
+      "adv2": "Vloeistofbestendig",
+      "adv3": "Anti-vingerafdruk",
+      "adv4": "Eenvoudig onderhoud"
     },
     "advantages": {
       "tag": "VOORDELEN",
@@ -1735,7 +1817,7 @@
     },
     "applications": {
       "tag": "TOEPASSINGEN",
-      "title": "Waar het Schittert",
+      "title": "Grenzeloze Mogelijkheden",
       "app1Title": "Meubilair & Schrijnwerk",
       "app1": "Combineer akoestische panelen naadloos met maatwerk meubilair",
       "app2Title": "Wandbekleding",
@@ -1746,8 +1828,17 @@
       "app2Desc": "Accentwanden over volledige hoogte, lambrisering en accentpanelen.",
       "app3Desc": "Ophangplafondpanelen en geïntegreerde plafondsystemen.",
       "app4Title": "Retail & Horeca",
-      "app4Desc": "Premium afwerkingen voor drukbezochte commerciële ruimtes.",
-      "description": "Van maatwerk schrijnwerk tot accentwanden over volledige hoogte — rWood - Panel past zich aan elke creatieve visie aan."
+      "app4Desc": "Winkelinrichtingen, barbladen, hotellobby's en restaurantinterieurs. Consistente kwaliteit voor grootschalige projecten.",
+      "description": "Van maatwerk schrijnwerk tot accentwanden op volledige hoogte — rWood - Panel levert het uiterlijk en gevoel van massief hout voor elke interieurtoepassing.",
+      "app1Extra": "Eenvoudig te bewerken met standaard houtbewerkingsgereedschap.",
+      "app2Extra": "Creëert een verbluffende visuele impact met de warmte van naturel hout.",
+      "app3Extra": "Lichtgewicht slim-formaat beschikbaar voor verminderde constructiebelasting.",
+      "sector1": "Kantoor",
+      "sector2": "Horeca",
+      "sector3": "Residentieel",
+      "sector4": "Retail",
+      "sector5": "Gezondheidszorg",
+      "sector6": "Onderwijs"
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
@@ -1756,9 +1847,15 @@
       "badge2": "Circulaire Terugname",
       "badge3": "Europese Productie",
       "badge4": "EPD Beschikbaar",
-      "badge5": "Groene Energie",
+      "badge5": "Lage VOS",
       "badge1Desc": "Al het hout uit verantwoord beheerde bossen",
-      "badge2Desc": "Gratis terugname en recycling van panelen aan einde levensduur"
+      "badge2Desc": "Gratis terugname en recycling van panelen aan einde levensduur",
+      "description": "Elk rWood - Panel begint met verantwoord geproduceerd hout. Als onderdeel van Re-Sound's engagement voor de circulaire economie maximaliseren we het gebruik van elk stamhout door het als fineer te verwerken — tot 40× meer oppervlak dan massief hout van dezelfde boom.",
+      "badge3Desc": "Korte toeleveringsketens, verminderde transportemissies",
+      "badge4Desc": "Volledige milieuproductverklaring",
+      "badge5Desc": "E1-geclassificeerd, voldoet aan strengste emissienormen",
+      "badge6": "Groene Energie",
+      "badge6Desc": "Productie aangedreven door hernieuwbare energiebronnen"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1766,14 +1863,54 @@
       "compositionTitle": "Samenstelling",
       "fireTitle": "Brandveiligheid",
       "certsTitle": "Certificeringen",
-      "dimensionsTitle": "Afmetingen"
+      "dimensionsTitle": "Afmetingen",
+      "finishTitle": "Afwerking",
+      "processingTitle": "Bewerking",
+      "dimPanelWidth": "Breedte paneel",
+      "dimPanelLength": "Lengte paneel",
+      "dimThicknessStd": "Dikte (standaard)",
+      "dimThicknessSlim": "Dikte (slim)",
+      "dimWeight19": "Gewicht (19 mm)",
+      "compTopLayer": "Bovenste laag",
+      "compTopLayerVal": "A-kwaliteit fineer, gebeitst en gelakt",
+      "compCore": "Kern",
+      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compBackLayer": "Achterste laag",
+      "compBackLayerVal": "Balansfineer",
+      "compBonding": "Verlijming",
+      "compBondingVal": "HPLT-persperstechnologie",
+      "finishLacquerType": "Laktype",
+      "finishLacquerVal": "Acrylaat urethaan UV-gehard",
+      "finishLayers": "Aantal lagen",
+      "finishGloss": "Glansniveau",
+      "finishGlossVal": "Super mat (3-5 GU)",
+      "finishAntiFingerprint": "Anti-vingerafdruk",
+      "finishScratch": "Krasbestendigheid",
+      "fireStdMDF": "Standaard MDF",
+      "fireFRMDF": "Brandvertragend MDF",
+      "certWoodSourcing": "Houtherkomst",
+      "certEnvironmental": "Milieu",
+      "certFelt": "Vilt (indien akoestisch)",
+      "procSawing": "Zagen",
+      "procSawingVal": "Standaard houtbewerkingsgereedschap",
+      "procEdgeBanding": "Kantstrip",
+      "procEdgeBandingVal": "Bijpassend fineer kantstrip beschikbaar",
+      "procCNC": "CNC-bewerking",
+      "procEnvironment": "Omgeving",
+      "procEnvironmentVal": "Binnengebruik (droge ruimtes)",
+      "procMoisture": "Vochtbestendig",
+      "procMoistureVal": "MR-kern beschikbaar"
     },
     "related": {
       "tag": "BIJPASSENDE PRODUCTEN",
       "title": "Bijpassende Producten & Accessoires",
       "groove": "rWood - Groove",
       "edgebanding": "Bijpassende Kantstrip",
-      "samples": "Gratis Stalen"
+      "samples": "Gratis Stalen",
+      "description": "Bereik designcontinuïteit met gecoördineerde Re-Sound producten",
+      "explore": "Ontdekken →",
+      "orderSamples": "Stalen Bestellen →",
+      "item3Desc": "Bestel fysieke fineerstalen om afwerkingen, kleuren en texturen in uw ruimte te vergelijken"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1782,7 +1919,7 @@
     "overview": {
       "tag": "VAKMANSCHAP",
       "title": "Natuur, Verfijnd",
-      "description": "rWood - Panel brengt de warmte en het karakter van massief hout naar akoestische ruimtes. Elk paneel wordt afgewerkt in ons Belgisch atelier met een precisiemeerlaags lakkeerproces.",
+      "description": "rWood - Panel brengt de warmte en het karakter van massief hout in een voorgefineerd, gebruiksklaar formaat. Elk paneel is gemaakt van premium A-kwaliteit fineer, verlijmd op een hoogdicht MDF-kern met geavanceerde perspersingstechnologie — de schoonheid van naturel hout met uitstekende dimensionale stabiliteit.",
       "feature1": "Premium A-kwaliteit fineers — eik, walnoot, es, kers en berk",
       "feature2": "6-laags UV-geharde lak voor kras- en vlekweerstand",
       "feature3": "Hoogdicht MDF-kern (700 kg/m³) voor structurele integriteit",
@@ -1792,22 +1929,32 @@
     "anatomy": {
       "tag": "ANATOMIE",
       "layer1": "Bovenste Fineerlaag",
-      "layer1Desc": "A-kwaliteit naturel houtfineer, geborsteld, gebeitst en beschermd met 6 lagen UV-lak",
+      "layer1Desc": "A-kwaliteit naturel houtfineer, geborsteld, gebeitst en beschermd met 6 lagen UV-geharde acrylaat urethaan lak. Super matte afwerking met zijdeachtige touch.",
       "layer2": "Hoogdicht MDF-kern",
-      "layer2Desc": "700 kg/m³ FSC® gecertificeerd MDF. Beschikbaar in standaard en vochtbestendig",
+      "layer2Desc": "700 kg/m³ FSC® MDF. Beschikbaar in standaard, vochtbestendig (MR) en brandvertragend (FR) kwaliteiten.",
       "layer3": "Balansfineerlaag",
-      "layer3Desc": "Bijpassende fineerbacking garandeert dimensionale stabiliteit en voorkomt vervorming",
-      "keyAdvTitle": "Belangrijkste Voordelen"
+      "layer3Desc": "Bijpassend fineerbacking garandeert dimensionale stabiliteit en voorkomt vervorming. Afgewerkte of onafgewerkte opties.",
+      "keyAdvTitle": "Belangrijkste Voordelen",
+      "description": "Elke laag heeft een functie — van het authentieke houtoppervlak tot de technische kern."
     },
     "collection": {
       "tag": "DE COLLECTIE",
       "title": "10 Geselecteerde Houtfineers",
-      "description": "Van serene Scandinavische berk tot dramatische Amerikaanse walnoot — elke houtsoort geselecteerd op neerfkarakter en FSC-certificering."
+      "description": "Van serene Scandinavische berk tot dramatische Amerikaanse walnoot — elk fineer is zorgvuldig geselecteerd, geborsteld en afgewerkt om het karakter van het hout tot zijn recht te laten komen.",
+      "filterAll": "Alle Fineers",
+      "customNote": "Aangepaste fineersoorten en beitskleuren beschikbaar voor projectbestellingen van 50+ panelen."
     },
     "dimensions": {
       "tag": "AFMETINGEN",
       "title": "Panelformaten",
-      "description": "Drie formaten voor elke toepassing — van wandbekleding over volledige hoogte tot meubelplaten."
+      "description": "Drie formaten voor elke toepassing — van wandbekleding op volledige hoogte tot compacte meubelementen.",
+      "standardName": "Standaard",
+      "standardDesc": "Meest veelzijdig formaat",
+      "largeName": "Groot Formaat",
+      "largeDesc": "Minder verbindingen, groter effect",
+      "slimName": "Slim",
+      "slimDesc": "Lichte wandbekleding",
+      "thicknessLabel": "Dikte:"
     },
     "accessories": {
       "tag": "DE LOOK COMPLETEREN",
@@ -1819,6 +1966,14 @@
       "item2Title": "Bijpassende Kantstrip",
       "item3Title": "Gratis Stalen",
       "item3Desc": "Vraag stalen aan van elke fineer- en afwerkingscombinatie."
+    },
+    "cta": {
+      "title": "Klaar om uw Project te Verheffen?",
+      "description": "Vraag een persoonlijke offerte aan, vraag fysieke stalen op of spreek met ons specificatieteam over uw volgende project.",
+      "circularNote": "Circulaire Terugname"
+    },
+    "downloads": {
+      "productDataSheet": "Productfiche"
     }
   },
   "rpetFlexGroovePage": {

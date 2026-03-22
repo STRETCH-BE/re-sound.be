@@ -810,7 +810,9 @@
       "toolsRequired": "Benötigtes Werkzeug",
       "testStandard": "Prüfnorm",
       "surface": "Oberfläche",
-      "finish": "Oberflächenbehandlung"
+      "finish": "Oberflächenbehandlung",
+      "epd": "EPD verfügbar",
+      "fscCertified": "FSC® zertifiziert"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1275,7 +1277,9 @@
       "description": "Verwandeln Sie jeden Raum mit rPET - Panel Akustikpaneelen. Aus 100% recycelten PET-Flaschen hergestellt, liefern diese leichten, aber leistungsstarken Schallabsorber maximale Akustikleistung bei minimaler Umweltbelastung.",
       "usp1": "100% Recycelbares PET",
       "usp2": "αw bis 1,00",
-      "usp3": "Nur 3-4 kg/m²"
+      "usp3": "Nur 3-4 kg/m²",
+      "colorSelector": "Farbe Wählen",
+      "colorSelectorPlaceholder": "Farbe auswählen"
     },
     "overview": {
       "tag": "KREISLAUFDESIGN",
@@ -1294,7 +1298,7 @@
       "feature2": "100% recyclierbar am Lebensende",
       "feature3": "Leicht: nur 3-4 kg/m²",
       "feature4": "Ohne chemische Bindemittel",
-      "description": "rPET - Panel verwandelt recycelte PET-Flaschen in hochleistungsfähige Akustikpaneele. Ein wirklich kreislauffähiges Produkt für eine nachhaltigere Bauumgebung."
+      "description": "rPET - Panel verwandelt recycelte PET-Flaschen in hochleistungsfähige Akustikpaneele. Jedes Panel hält Plastikmüll von Deponien fern und schafft dabei gesündere, ruhigere Umgebungen. Es ist die schallabsorbierende Alternative zu MDF — bei einem Bruchteil des Gewichts."
     },
     "process": {
       "tag": "WIE ES HERGESTELLT WIRD",
@@ -1311,11 +1315,12 @@
       "step3": "Kurven und Winkel mit einfacher V-Schnitt-Technik erstellen",
       "step1Desc": "Manuell oder elektrisch — saubere Schnitte jedes Mal",
       "step2Desc": "Präzise Formen und individuelle Profile",
-      "step3Desc": "Direkte Befestigungen ohne Spezialanker",
+      "step3Desc": "Sichere Befestigung ohne Splittern",
       "step4Title": "V-Schnitt Biegen",
-      "step4Desc": "Kurven und Winkel mit V-Schnitt-Technik",
-      "title": "Entwerfen, Konstruieren, Bauen",
-      "description": "rPET - Panel kombiniert die Bearbeitbarkeit von MDF mit unglaublich leichtem Gewicht."
+      "step4Desc": "3D-Formen und Ecken erstellen",
+      "title": "Bearbeitbar wie MDF, Leicht wie nichts",
+      "description": "rPET - Panel kombiniert die Bearbeitbarkeit von MDF mit unglaublich leichtem Gewicht. Sägen, CNC-fräsen, bohren, V-schneiden — das Material verhält sich hervorragend mit Standard-Werkstattwerkzeugen.",
+      "quote": "Sie stellen schnell fest, dass rPET - Panel genauso schnell und einfach wie eine MDF-Platte bearbeitet werden kann."
     },
     "acoustics": {
       "tag": "LEISTUNG",
@@ -1326,7 +1331,15 @@
       "benefit2": "Ruhigere Umgebungen schaffen, die Wohlbefinden und Produktivität fördern",
       "benefit3Title": "Privatsphäre",
       "benefit3": "Schallübertragung zwischen Räumen für vertrauliche Gespräche reduzieren",
-      "description": "rPET - Panel erreicht die maximal mögliche Akustikleistung. Der ultimative Akustikabsorber für jedes Interieur."
+      "description": "rPET - Panel erreicht die maximal mögliche Schallabsorptionsbewertung. Die einzigartige Faserstruktur fängt Schallenergie ein und wandelt sie um, reduziert Nachhall dramatisch und verbessert die Sprachverständlichkeit.",
+      "howItWorks": "So Funktioniert Es",
+      "fiberLabel": "Komprimierte PET-Fasern",
+      "fiberSublabel": "Schallenergie wird in Wärme umgewandelt",
+      "panelThickness": "Panelstärke",
+      "soundAbsorbed": "Schall Absorbiert",
+      "testStandard": "Prüfnorm",
+      "testConfig": "Testkonfiguration: 24mm Panel auf 50mm Rahmen mit Polyesterwoll-Dämmung erreicht αw 0,95",
+      "certNote": "Unabhängig getestet und zertifiziert nach ISO 11654"
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
@@ -1336,7 +1349,10 @@
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Klasse A+ Emissionen",
       "badge1Desc": "Aus post-consumer PET-Flaschen hergestellt",
-      "badge2Desc": "Vollständige Materialrückgewinnung am Lebensende"
+      "badge2Desc": "Vollständige Materialrückgewinnung am Lebensende",
+      "description": "rPET - Panel verkörpert die Kreislaufwirtschaft. Jedes Panel enthält bis zu 50% recycelte PET-Flaschen und am Lebensende kann das gesamte Panel erneut recycelt werden. Kein Abfall, kein Kompromiss.",
+      "cert3Desc": "Klasse 1 zertifiziert für menschliche Sicherheit",
+      "cert4Desc": "Keine VOC oder Formaldehyd (ISO 16000)"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1345,12 +1361,33 @@
       "physicalTitle": "Physikalische Eigenschaften",
       "fireTitle": "Brandschutz",
       "healthTitle": "Gesundheit & Umwelt",
-      "colorsTitle": "Farben & Oberflächen"
+      "colorsTitle": "Farben & Oberflächen",
+      "dimensionsTitle": "Abmessungen",
+      "dimStandard": "Standardpanel",
+      "dimCustomMax": "Sondermaß max.",
+      "dimThicknessOptions": "Stärkeoptionen",
+      "dimCustomThickness": "Sonderstärke",
+      "physMaterial": "Material",
+      "physWeight12": "Gewicht (12mm)",
+      "physWeight24": "Gewicht (24mm)",
+      "fireEuClass": "Europäische Klassifizierung",
+      "fireGerman": "Deutsche Norm",
+      "healthOekoTex": "OEKO-TEX®",
+      "healthFormaldehyde": "Formaldehyd",
+      "healthBinders": "Chemische Bindemittel",
+      "colorStandard": "Standardfarben",
+      "colorCustom": "Sonderfarben",
+      "finishOptions": "Veredelungsoptionen",
+      "recyclability": "Recyclierbarkeit",
+      "vocEmissions": "VOC-Emissionen",
+      "anyRalNcs": "Jedes RAL / NCS",
+      "finishOptionsVal": "Stoff, HPL, Furnier, Druck"
     },
     "sample": {
-      "title": "Ihr Musterpaket Anfordern",
-      "description": "Sehen und fühlen Sie die Qualität von rPET Panel, bevor Sie spezifizieren. Unser Musterkit enthält Farbmuster und ein Paneel in Originalgröße.",
-      "tag": "LOSLEGEN"
+      "title": "Musterpaket Anfordern",
+      "description": "Erleben Sie die Qualität von rPET - Panel selbst. Unser individuelles Musterpaket enthält Farbmuster, Stärkeoptionen und Veredelungsmuster für die perfekte Auswahl.",
+      "tag": "LOSLEGEN",
+      "cta": "Kostenlose Muster Anfordern"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1363,22 +1400,57 @@
       "reason3Title": "Einfach zu Handhaben",
       "reason4Title": "Menschenfreundlich",
       "reason5Title": "Unbegrenzte Möglichkeiten",
-      "description": "Entdecken Sie, warum Architekten, Designer und Akustikberater rPET - Panel für ihre Projekte wählen.",
-      "reason1": "Aus recycelten PET-Flaschen hergestellt, vollständig recyclierbar und für gesündere Innenräume.",
+      "description": "Entdecken Sie, warum Architekten, Designer und Akustikberater rPET - Panel für ihre anspruchsvollsten Projekte wählen.",
+      "reason1": "Aus recycelten PET-Flaschen hergestellt, vollständig recyclierbar und zur Kreislaufwirtschaft beitragend.",
       "reason2": "Schallabsorption bis αw 1,00 — die höchstmögliche Bewertung für Schallabsorption.",
-      "reason3": "Leicht und stabil. Sägen, bohren, fräsen und mit Standardwerkzeug installieren. Kein Spezialist erforderlich.",
+      "reason3": "Leicht und stabil. Sägen, bohren, fräsen und mit Standardwerkzeug montieren.",
       "reason4": "Antistatisch, hautfreundlich, antiallergisch. Keine VOC- oder Formaldehydemissionen.",
-      "reason5": "CNC-bearbeitbar, fräsbar, bohrbar — wie MDF verwenden, ohne die Nachteile."
+      "reason5": "5 Standardfarben plus jedes RAL/NCS. Stoff, Laminat, Furnier oder Individualdrucke hinzufügbar.",
+      "title": "Fünf Gründe für rPET"
     },
     "colors": {
       "tag": "FARBOPTIONEN",
       "title": "Ihren Stil Ausdrücken",
-      "description": "Wählen Sie aus 5 raffinierten Standardfarben oder spezifizieren Sie aus unserer erweiterten Palette."
+      "description": "Wählen Sie aus 5 raffinierten Standardfarben oder spezifizieren Sie jede Farbe aus der RAL- oder NCS-Palette. Jeder Farbton behält die gleichen hervorragenden akustischen Eigenschaften.",
+      "anyColor": "Jede Farbe",
+      "moreOptionsTitle": "Mehr Optionen?",
+      "moreOptionsDesc": "Alle Basisfarben können mit Veredelungsschichten wie Akustikgewebe, HPL-Laminat, echtem Holzfurnier oder Individualdrucken kombiniert werden — ohne die akustischen Eigenschaften zu beeinträchtigen.",
+      "fabric1": "Akustikgewebe",
+      "fabric2": "HPL/CPL-Laminat",
+      "fabric3": "Echtes Holzfurnier",
+      "fabric4": "Individualdruck"
     },
     "applications": {
       "tag": "ANWENDUNGEN",
       "title": "Anwendungen",
-      "description": "Jedes Gebäude und jeder Raum ist einzigartig. rPET - Panel passt sich Ihren Anforderungen an."
+      "description": "Jedes Gebäude und jeder Raum ist einzigartig. rPET - Panel passt sich jeder akustischen Herausforderung mit vielseitigen Anwendungen an.",
+      "app1Name": "Wandpaneele",
+      "app1Desc": "Schallabsorbierende Wandverkleidung",
+      "app2Name": "Deckenpaneele",
+      "app2Desc": "Akustische Deckenlösungen",
+      "app3Name": "Raumteiler",
+      "app3Desc": "Funktionale Raumtrennung",
+      "app4Name": "Möbel",
+      "app4Desc": "Individuelles akustisches Mobiliar",
+      "label1": "Meeting Pod",
+      "label2": "Büros",
+      "label3": "Gastronomie"
+    },
+    "nav": {
+      "overview": "Übersicht",
+      "colors": "Farben",
+      "applications": "Anwendungen",
+      "acoustics": "Akustik",
+      "processing": "Verarbeitung",
+      "specifications": "Spezifikationen",
+      "gallery": "Galerie",
+      "downloads": "Downloads"
+    },
+    "downloads": {
+      "installationGuide": "Montageanleitung",
+      "acousticTestReport": "Akustikprüfbericht (ISO 354)",
+      "fireCertificate": "Brandschutzzertifikat (EN 13501-1)",
+      "oekoTexCert": "OEKO-TEX® Zertifikat"
     }
   },
   "rwoodGroovePage": {
@@ -1722,8 +1794,18 @@
     },
     "finishes": {
       "title": "Touch & Schutz",
-      "description": "Werkseitig aufgetragener Klarlack schützt das Furnier und bewahrt gleichzeitig das natürliche Gefühl des Holzes.",
-      "tag": "OBERFLÄCHENBEHANDLUNGEN"
+      "description": "Die richtige Veredelung bringt das Beste jeder Holzart hervor. Unser Mehrlagen-Veredelungsprozess liefert eine Oberfläche, die ebenso angenehm zu berühren wie langlebig ist — geschützt gegen Kratzer, Feuchtigkeit und täglichen Verschleiß.",
+      "tag": "OBERFLÄCHENBEHANDLUNGEN",
+      "mattLacquerName": "Super Matt Lack",
+      "mattLacquerDesc": "Anti-Fingerabdruck, seidiger Touch. 6-Schicht UV-Schutz.",
+      "naturalOilName": "Naturöl",
+      "naturalOilDesc": "Tiefes, authentisches Holzgefühl mit penetrierendem Schutz.",
+      "unfinishedName": "Unbehandelt",
+      "unfinishedDesc": "Bereit für individuelle Vor-Ort-Veredelung durch den Installateur.",
+      "adv1": "Kratzfest",
+      "adv2": "Spritzwasserbeständig",
+      "adv3": "Anti-Fingerabdruck",
+      "adv4": "Einfache Pflege"
     },
     "advantages": {
       "tag": "VORTEILE",
@@ -1735,7 +1817,7 @@
     },
     "applications": {
       "tag": "ANWENDUNGEN",
-      "title": "Wo Es Glänzt",
+      "title": "Grenzenlose Möglichkeiten",
       "app1Title": "Möbel & Schreinerarbeiten",
       "app1": "Akustikpaneele nahtlos mit Einbaumöbeln kombinieren",
       "app2Title": "Wandverkleidung",
@@ -1746,8 +1828,17 @@
       "app2Desc": "Raumhohe Akzentwände, Wandverkleidungen und Akzentpaneele.",
       "app3Desc": "Abgehängte Deckenpaneele und integrierte Deckensysteme.",
       "app4Title": "Einzelhandel & Gastgewerbe",
-      "app4Desc": "Premium-Oberflächen für stark frequentierte Gewerbeflächen.",
-      "description": "Von maßgefertigten Schreinerarbeiten bis zu raumhohen Akzentwänden — rWood - Panel passt sich jeder kreativen Vision an."
+      "app4Desc": "Ladeneinrichtungen, Bartresen, Hotellobby und Restaurantinterieurs. Gleichbleibende Qualität für Großprojekte.",
+      "description": "Von maßgefertigten Schreinerarbeiten bis zu raumhohen Akzentwänden — rWood - Panel liefert das Aussehen und Gefühl von Massivholz für jede Innenanwendung.",
+      "app1Extra": "Einfach mit Standard-Holzbearbeitungswerkzeugen zu bearbeiten.",
+      "app2Extra": "Schafft beeindruckende visuelle Wirkung mit der Wärme von Naturholz.",
+      "app3Extra": "Leichtes Slim-Format für reduzierte Konstruktionslast verfügbar.",
+      "sector1": "Büro",
+      "sector2": "Gastgewerbe",
+      "sector3": "Wohnen",
+      "sector4": "Einzelhandel",
+      "sector5": "Gesundheit",
+      "sector6": "Bildung"
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
@@ -1756,9 +1847,15 @@
       "badge2": "Kreislaufrücknahme",
       "badge3": "Europäische Produktion",
       "badge4": "EPD Verfügbar",
-      "badge5": "Grüne Energie",
+      "badge5": "Niedrige VOC",
       "badge1Desc": "Gesamtes Holz aus verantwortungsvoll bewirtschafteten Wäldern",
-      "badge2Desc": "Kostenlose Paneel-Rücknahme und Recycling am Lebensende"
+      "badge2Desc": "Kostenlose Paneel-Rücknahme und Recycling am Lebensende",
+      "description": "Jedes rWood - Panel beginnt mit verantwortungsvoll gewonnenem Holz. Im Rahmen von Re-Sounds Kreislaufwirtschafts-Engagement maximieren wir die Nutzung jedes Stamms durch Furnierverarbeitung — bis zu 40× mehr Oberfläche als Massivholz aus demselben Baum.",
+      "badge3Desc": "Kurze Lieferketten, reduzierte Transportemissionen",
+      "badge4Desc": "Vollständige Umweltproduktdeklaration",
+      "badge5Desc": "E1-klassifiziert, erfüllt strengste Emissionsnormen",
+      "badge6": "Grüne Energie",
+      "badge6Desc": "Produktion mit erneuerbaren Energiequellen betrieben"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1766,14 +1863,54 @@
       "compositionTitle": "Zusammensetzung",
       "fireTitle": "Brandschutz",
       "certsTitle": "Zertifizierungen",
-      "dimensionsTitle": "Abmessungen"
+      "dimensionsTitle": "Abmessungen",
+      "finishTitle": "Oberfläche",
+      "processingTitle": "Verarbeitung",
+      "dimPanelWidth": "Panelbreite",
+      "dimPanelLength": "Panellänge",
+      "dimThicknessStd": "Stärke (Standard)",
+      "dimThicknessSlim": "Stärke (Slim)",
+      "dimWeight19": "Gewicht (19 mm)",
+      "compTopLayer": "Oberschicht",
+      "compTopLayerVal": "A-Grad Furnier, gebeizt & lackiert",
+      "compCore": "Kern",
+      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compBackLayer": "Rückschicht",
+      "compBackLayerVal": "Gegenzugfurnier",
+      "compBonding": "Verklebung",
+      "compBondingVal": "HPLT-Presstechnologie",
+      "finishLacquerType": "Lacktyp",
+      "finishLacquerVal": "Acrylat-Urethan UV-gehärtet",
+      "finishLayers": "Anzahl Schichten",
+      "finishGloss": "Glanzstufe",
+      "finishGlossVal": "Super matt (3-5 GU)",
+      "finishAntiFingerprint": "Anti-Fingerabdruck",
+      "finishScratch": "Kratzfestigkeit",
+      "fireStdMDF": "Standard MDF",
+      "fireFRMDF": "Brandhemmendes MDF",
+      "certWoodSourcing": "Holzbeschaffung",
+      "certEnvironmental": "Umwelt",
+      "certFelt": "Filz (falls akustisch)",
+      "procSawing": "Sägen",
+      "procSawingVal": "Standard-Holzbearbeitungswerkzeuge",
+      "procEdgeBanding": "Kantenumleimer",
+      "procEdgeBandingVal": "Passender Furnierkantenumleimer verfügbar",
+      "procCNC": "CNC-Bearbeitung",
+      "procEnvironment": "Umgebung",
+      "procEnvironmentVal": "Innenbereich (Trockenbereiche)",
+      "procMoisture": "Feuchtigkeitsresistent",
+      "procMoistureVal": "MR-Kern verfügbar"
     },
     "related": {
       "tag": "PASSENDE PRODUKTE",
       "title": "Passende Produkte & Zubehör",
       "groove": "rWood - Groove",
       "edgebanding": "Passende Kantenumleimer",
-      "samples": "Kostenlose Muster"
+      "samples": "Kostenlose Muster",
+      "description": "Gestalterische Kontinuität mit koordinierten Re-Sound Produkten",
+      "explore": "Entdecken →",
+      "orderSamples": "Muster Bestellen →",
+      "item3Desc": "Bestellen Sie physische Furnierproben zum Vergleich von Oberflächen, Farben und Texturen in Ihrem Raum"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1782,7 +1919,7 @@
     "overview": {
       "tag": "HANDWERKSKUNST",
       "title": "Natur, Verfeinert",
-      "description": "rWood - Panel bringt die Wärme und den Charakter von Massivholz in akustische Räume. Jedes Panel wird in unserer belgischen Anlage mit einem Präzisions-Mehrlagen-Lackierverfahren fertiggestellt.",
+      "description": "rWood - Panel bringt die Wärme und den Charakter von Massivholz in einem vorbehandelten, gebrauchsfertigen Format. Jedes Panel wird aus Premium A-Grad Furnier hergestellt, mit fortschrittlicher Presstechnologie auf einen hochdichten MDF-Kern aufgebracht — natürliche Holzschönheit mit hervorragender Dimensionsstabilität.",
       "feature1": "Premium A-Grad Furniere — Eiche, Walnuss, Esche, Kirsche und Birke",
       "feature2": "6-Schicht UV-Klarlack für Kratz- und Fleckenbeständigkeit",
       "feature3": "Hochdichter MDF-Kern (700 kg/m³) für strukturelle Integrität",
@@ -1792,22 +1929,32 @@
     "anatomy": {
       "tag": "ANATOMIE",
       "layer1": "Obere Furnierschicht",
-      "layer1Desc": "A-Grad Naturholzfurnier, gebürstet, gebeizt und mit 6 Schichten UV-Lack geschützt",
+      "layer1Desc": "A-Grad Naturholzfurnier, gebürstet, gebeizt und mit 6 Schichten UV-gehärteter Acrylat-Urethan-Lack geschützt. Super matte Oberfläche mit seidigem Touch.",
       "layer2": "Hochdichter MDF-Kern",
-      "layer2Desc": "700 kg/m³ FSC® zertifiziertes MDF. In Standard- und feuchtigkeitsresistenten Ausführungen",
+      "layer2Desc": "700 kg/m³ FSC® MDF. In Standard-, feuchtigkeitsresistenten (MR) und brandhemmenden (FR) Ausführungen erhältlich.",
       "layer3": "Gegenzugfurnierschicht",
-      "layer3Desc": "Passender Furnierrücken gewährleistet Dimensionsstabilität und verhindert Verformung",
-      "keyAdvTitle": "Hauptvorteile"
+      "layer3Desc": "Passendes Furnierbalancing gewährleistet Dimensionsstabilität und verhindert Verformung. Fertig oder unfertig verfügbar.",
+      "keyAdvTitle": "Hauptvorteile",
+      "description": "Jede Schicht hat einen Zweck — von der authentischen Holzoberfläche bis zum technischen Kern."
     },
     "collection": {
       "tag": "DIE KOLLEKTION",
       "title": "10 Kuratierte Holzfurniere",
-      "description": "Von serenern skandinavischen Birken bis zu dramatischem amerikanischem Walnuss — jede Holzart nach Maserungscharakter und FSC-Zertifizierung ausgewählt."
+      "description": "Von serenerer skandinavischer Birke bis zu dramatischem amerikanischem Walnuss — jedes Furnier wird sorgfältig ausgewählt, gebürstet und veredelt, um den Charakter des Holzes zu unterstreichen.",
+      "filterAll": "Alle Furniere",
+      "customNote": "Individuelle Furnierarten und Beizfarben für Projektbestellungen ab 50 Paneelen verfügbar."
     },
     "dimensions": {
       "tag": "ABMESSUNGEN",
       "title": "Panelformate",
-      "description": "Drei Formate für jede Anwendung — von raumhoher Wandverkleidung bis zu Möbelpaneelen."
+      "description": "Drei Formate für jede Anwendung — von raumhoher Wandverkleidung bis zu kompakten Möbelelementen.",
+      "standardName": "Standard",
+      "standardDesc": "Vielseitigstes Format",
+      "largeName": "Großformat",
+      "largeDesc": "Weniger Fugen, imposanterer Look",
+      "slimName": "Slim",
+      "slimDesc": "Leichte Wandverkleidung",
+      "thicknessLabel": "Stärke:"
     },
     "accessories": {
       "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
@@ -1819,6 +1966,14 @@
       "item2Title": "Passende Kante",
       "item3Title": "Kostenlose Muster",
       "item3Desc": "Fordern Sie Muster jeder Furnier- und Oberflächenkombination an."
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt zu Elevieren?",
+      "description": "Erhalten Sie ein persönliches Angebot, fordern Sie physische Muster an oder sprechen Sie mit unserem Spezifikationsteam über Ihr nächstes Projekt.",
+      "circularNote": "Kreislaufrücknahme"
+    },
+    "downloads": {
+      "productDataSheet": "Produktdatenblatt"
     }
   },
   "rpetFlexGroovePage": {
