@@ -50,9 +50,9 @@ export default function RPetGrooveProductPage() {
 
   const downloads = [
     { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rpet-groove/product-data-sheet.pdf' },
-    { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rpet-groove/installation-guide.pdf' },
+    { id: 'installation-guide', name: t('downloads.installationGuide'), icon: '🔧', file: '/documents/rpet-groove/installation-guide.pdf' },
     { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rpet-groove/acoustic-test-report.pdf' },
-    { id: 'color-chart', name: 'Color Chart', icon: '🎨', file: '/documents/rpet-groove/color-chart.pdf' },
+    { id: 'color-chart', name: t('downloads.colorChart'), icon: '🎨', file: '/documents/rpet-groove/color-chart.pdf' },
     { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rpet-groove/fire-certificate.pdf' },
     { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rpet-groove/sustainability-declaration.pdf' },
   ];
@@ -315,7 +315,7 @@ export default function RPetGrooveProductPage() {
 
           <div className="recycling-stat">
             <div className="stat-number">~60</div>
-            <div className="stat-label">Recycled bottles per panel</div>
+            <div className="stat-label">{t('fromBottles.statLabel')}</div>
           </div>
         </div>
       </section>
@@ -427,9 +427,9 @@ export default function RPetGrooveProductPage() {
               </div>
               <div className="pattern-info">
                 <h4>{pattern.name}</h4>
-                <span className="pattern-type">{pattern.grooves} grooves</span>
+                <span className="pattern-type">{pattern.grooves} {t('patterns.groovesLabel')}</span>
                 <p>{pattern.description}</p>
-                <span className="pattern-spacing">Spacing: {pattern.spacing}</span>
+                <span className="pattern-spacing">{t('patterns.spacingLabel')} {pattern.spacing}</span>
               </div>
             </div>
           ))}
@@ -451,7 +451,7 @@ export default function RPetGrooveProductPage() {
         <div className="acoustics-main-grid">
           {/* Left: Exploded diagram */}
           <div className="exploded-diagram">
-            <div className="diagram-title">Panel Cross-Section</div>
+            <div className="diagram-title">{t('acoustics.diagramTitle')}</div>
             <div className="exploded-layers">
               <div className="exploded-layer">
                 <div className="layer-visual pet-surface-layer">
@@ -462,8 +462,8 @@ export default function RPetGrooveProductPage() {
                   </div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Grooved Surface</span>
-                  <span className="layer-desc">CNC-cut pattern for visual depth</span>
+                  <span className="layer-name">{t('acoustics.layer1Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer1Desc')}</span>
                 </div>
               </div>
               
@@ -476,8 +476,8 @@ export default function RPetGrooveProductPage() {
               <div className="exploded-layer">
                 <div className="layer-visual pet-core-layer"></div>
                 <div className="layer-info">
-                  <span className="layer-name">High-Density PET Core</span>
-                  <span className="layer-desc">Sound absorption layer</span>
+                  <span className="layer-name">{t('acoustics.layer2Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer2Desc')}</span>
                 </div>
               </div>
               
@@ -490,8 +490,8 @@ export default function RPetGrooveProductPage() {
               <div className="exploded-layer">
                 <div className="layer-visual pet-back-layer"></div>
                 <div className="layer-info">
-                  <span className="layer-name">Mounting Surface</span>
-                  <span className="layer-desc">Direct wall/ceiling attachment</span>
+                  <span className="layer-name">{t('acoustics.layer3Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer3Desc')}</span>
                 </div>
               </div>
             </div>
@@ -501,7 +501,7 @@ export default function RPetGrooveProductPage() {
               <div className="wave wave-1"></div>
               <div className="wave wave-2"></div>
               <div className="wave wave-3"></div>
-              <span className="wave-label">Sound waves absorbed</span>
+              <span className="wave-label">{t('acoustics.waveLabel')}</span>
             </div>
           </div>
 
@@ -524,7 +524,7 @@ export default function RPetGrooveProductPage() {
                 </svg>
                 <div className="rating-content">
                   <span className="rating-value">NRC 0.90</span>
-                  <span className="rating-label">36mm thickness</span>
+                  <span className="rating-label">{t('thickness.sectionTitle')}</span>
                 </div>
               </div>
               <div className="rating-badge">
@@ -554,7 +554,7 @@ export default function RPetGrooveProductPage() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                 <polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
-              <span>Tested according to ISO 354 &amp; ASTM C423</span>
+              <span>{t('acoustics.certNote')}</span>
             </div>
           </div>
         </div>
@@ -645,19 +645,19 @@ export default function RPetGrooveProductPage() {
               <div className="mounting-grid">
                 <div className="mounting-option">
                   <span className="mounting-icon">🧲</span>
-                  <span>Adhesive</span>
+                  <span>{t('installation.mounting1')}</span>
                 </div>
                 <div className="mounting-option">
                   <span className="mounting-icon">📎</span>
-                  <span>Z-clips</span>
+                  <span>{t('installation.mounting2')}</span>
                 </div>
                 <div className="mounting-option">
                   <span className="mounting-icon">🔩</span>
-                  <span>Screws</span>
+                  <span>{t('installation.mounting3')}</span>
                 </div>
                 <div className="mounting-option">
                   <span className="mounting-icon">🧱</span>
-                  <span>Battens</span>
+                  <span>{t('installation.mounting4')}</span>
                 </div>
               </div>
             </div>
@@ -700,7 +700,7 @@ export default function RPetGrooveProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>100% Recycled</h4>
+                  <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
@@ -739,15 +739,15 @@ export default function RPetGrooveProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions</h4>
+            <h4>{t('specs.dimensionsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Panel width</td>
+                  <td>{tPage('specs.dimPanelWidth') || t('specs.dimPanelWidth')}</td>
                   <td>600 / 1200 mm</td>
                 </tr>
                 <tr>
-                  <td>Panel length</td>
+                  <td>{t('specs.dimPanelLength')}</td>
                   <td>600 / 1200 / 2400 mm</td>
                 </tr>
                 <tr>
@@ -755,7 +755,7 @@ export default function RPetGrooveProductPage() {
                   <td>12 / 24 / 36 mm</td>
                 </tr>
                 <tr>
-                  <td>Groove depth</td>
+                  <td>{t('specs.dimGrooveDepth')}</td>
                   <td>6 / 12 / 18 mm</td>
                 </tr>
                 <tr>
@@ -767,19 +767,19 @@ export default function RPetGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Acoustic Performance</h4>
+            <h4>{t('specs.acousticsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>NRC (12mm)</td>
+                  <td>{t('specs.acNRC12')}</td>
                   <td>0.55</td>
                 </tr>
                 <tr>
-                  <td>NRC (24mm)</td>
+                  <td>{t('specs.acNRC24')}</td>
                   <td>0.75</td>
                 </tr>
                 <tr>
-                  <td>NRC (36mm)</td>
+                  <td>{t('specs.acNRC36')}</td>
                   <td>0.90</td>
                 </tr>
                 <tr>
@@ -791,11 +791,11 @@ export default function RPetGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Material</h4>
+            <h4>{t('specs.materialTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Composition</td>
+                  <td>{t('specs.matComposition')}</td>
                   <td>100% Recycled PET</td>
                 </tr>
                 <tr>
@@ -815,7 +815,7 @@ export default function RPetGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -839,7 +839,7 @@ export default function RPetGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Certifications</h4>
+            <h4>{t('specs.certsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -851,11 +851,11 @@ export default function RPetGrooveProductPage() {
                   <td>EPD available</td>
                 </tr>
                 <tr>
-                  <td>VOC emissions</td>
+                  <td>{t('specs.matEmissions')}</td>
                   <td>Low emission / E1</td>
                 </tr>
                 <tr>
-                  <td>Recycled content</td>
+                  <td>{tPage('specs.recycledContent')}</td>
                   <td>GRS certified</td>
                 </tr>
               </tbody>
@@ -863,15 +863,15 @@ export default function RPetGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Applications</h4>
+            <h4>{t('specs.applicationsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Installation</td>
+                  <td>{t('specs.appInstall')}</td>
                   <td>Walls & Ceilings</td>
                 </tr>
                 <tr>
-                  <td>Environment</td>
+                  <td>{t('specs.appEnvironment')}</td>
                   <td>Interior (dry areas)</td>
                 </tr>
                 <tr>
@@ -941,29 +941,29 @@ export default function RPetGrooveProductPage() {
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
           <h2>{t('applications.title')}</h2>
-          <p>rPET - Groove panels fit seamlessly into diverse environments</p>
+          <p>{t('applications.description')}</p>
         </div>
 
         <div className="applications-grid">
           <div className="application-card">
             <div className="application-icon">🏢</div>
-            <h4>Offices</h4>
+            <h4>{t('applications.app1')}</h4>
             <p>{t('applications.app1')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🏨</div>
-            <h4>Hospitality</h4>
+            <h4>{t('applications.app2')}</h4>
             <p>{t('applications.app2')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🏫</div>
-            <h4>Education</h4>
+            <h4>{t('applications.app3')}</h4>
             <p>{t('applications.app3')}, auditoriums</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🏥</div>
-            <h4>Healthcare</h4>
-            <p>Waiting rooms, consultation rooms, corridors</p>
+            <h4>{t('applications.app4')}</h4>
+            <p>{t('applications.app4Desc')}</p>
           </div>
         </div>
       </section>

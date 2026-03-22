@@ -366,7 +366,7 @@ export default function RWoodMicroProductPage() {
                   </div>
                 )}
               </div>
-              <span className="magnify-label">10× magnified</span>
+              <span className="magnify-label">{t('patterns.magnifiedLabel')}</span>
             </div>
           </div>
           <div className="detail-info">
@@ -374,7 +374,7 @@ export default function RWoodMicroProductPage() {
             <div className="detail-stats">
               <div className="detail-stat">
                 <span className="stat-value">⌀ {selectedPerforation.holeSize}</span>
-                <span className="stat-label">Hole diameter</span>
+                <span className="stat-label">{t('patterns.holeDiameter')}</span>
               </div>
               <div className="detail-stat">
                 <span className="stat-value">{selectedPerforation.openArea}</span>
@@ -439,14 +439,14 @@ export default function RWoodMicroProductPage() {
                   <span className="extra-icon">🎨</span>
                   <div>
                     <strong>Pigmented Lacquer</strong>
-                    <p>Custom color tones with transparent or solid pigmentation</p>
+                    <p>{t('surfaces.finish1Desc')}</p>
                   </div>
                 </div>
                 <div className="extra-item">
                   <span className="extra-icon">✨</span>
                   <div>
                     <strong>Gloss Levels</strong>
-                    <p>From super matte to high gloss UV-cured lacquer</p>
+                    <p>{t('surfaces.finish2Desc')}</p>
                   </div>
                 </div>
               </div>
@@ -508,8 +508,8 @@ export default function RWoodMicroProductPage() {
                   </div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Fire Retardant Medium Density Fiberboard Core</span>
-                  <span className="layer-desc">Fire Retardant, with sound chambers</span>
+                  <span className="layer-name">{t('acoustics.layer2Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer2Desc')}</span>
                 </div>
               </div>
               
@@ -522,8 +522,8 @@ export default function RWoodMicroProductPage() {
               <div className="exploded-layer">
                 <div className="layer-visual backing-layer"></div>
                 <div className="layer-info">
-                  <span className="layer-name">Acoustic Fleece Backing</span>
-                  <span className="layer-desc">Additional sound absorption layer</span>
+                  <span className="layer-name">{t('acoustics.layer3Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer3Desc')}</span>
                 </div>
               </div>
             </div>
@@ -533,7 +533,7 @@ export default function RWoodMicroProductPage() {
               <div className="wave wave-1"></div>
               <div className="wave wave-2"></div>
               <div className="wave wave-3"></div>
-              <span className="wave-label">Sound waves absorbed</span>
+              <span className="wave-label">{t('acoustics.waveLabel')}</span>
             </div>
           </div>
 
@@ -556,7 +556,7 @@ export default function RWoodMicroProductPage() {
                 </svg>
                 <div className="rating-content">
                   <span className="rating-value">αw 0.90</span>
-                  <span className="rating-label">Absorption</span>
+                  <span className="rating-label">{t('patterns.ratingLabel')}</span>
                 </div>
               </div>
               <div className="rating-badge">
@@ -592,7 +592,7 @@ export default function RWoodMicroProductPage() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                 <polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
-              <span>Independently tested &amp; certified to ISO 11654</span>
+              <span>{t('acoustics.certNote')}</span>
             </div>
           </div>
         </div>
@@ -647,28 +647,28 @@ export default function RWoodMicroProductPage() {
                 <div className="step-number">1</div>
                 <div className="step-content">
                   <h4>{t('installation.step1Title')}</h4>
-                  <p>Mount aluminium rails to wall or ceiling structure</p>
+                  <p>{t('installation.step1Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">2</div>
                 <div className="step-content">
                   <h4>{t('installation.step2Title')}</h4>
-                  <p>Optional mineral wool for enhanced absorption</p>
+                  <p>{t('installation.step2Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">3</div>
                 <div className="step-content">
-                  <h4>Click &amp; Fix Panels</h4>
-                  <p>Concealed clip system for tool-free panel mounting</p>
+                  <h4>{t('installation.step3Title')}</h4>
+                  <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
                   <h4>{t('installation.step4Title')}</h4>
-                  <p>Over-veneered edges create continuous wood surface</p>
+                  <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -794,11 +794,11 @@ export default function RWoodMicroProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions &mdash; Walls and Ceilings</h4>
+            <h4>{t('specs.acousticsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Custom sizes</td>
+                  <td>{t('specs.customSizes')}</td>
                   <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
@@ -810,7 +810,7 @@ export default function RWoodMicroProductPage() {
                   <td>~From 0,35 kg/m&sup2;</td>
                 </tr>
                 <tr>
-                  <td>Core density</td>
+                  <td>{t('specs.dimCoreDensity')}</td>
                   <td>48,40 kg/m&sup3;</td>
                 </tr>
               </tbody>
@@ -822,15 +822,15 @@ export default function RWoodMicroProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Absorption coefficient (αw)</td>
+                  <td>{tPage('specs.absorptionCoeff')}</td>
                   <td>0.90</td>
                 </tr>
                 <tr>
-                  <td>With 50mm mineral wool</td>
+                  <td>{t('specs.acWithMinWool')}</td>
                   <td>Up to 1.00</td>
                 </tr>
                 <tr>
-                  <td>Absorption class</td>
+                  <td>{tPage('specs.absorptionClass')}</td>
                   <td>Class A / C</td>
                 </tr>
                 <tr>
@@ -842,7 +842,7 @@ export default function RWoodMicroProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Perforation Options</h4>
+            <h4>{t('specs.perfsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -866,7 +866,7 @@ export default function RWoodMicroProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -890,7 +890,7 @@ export default function RWoodMicroProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Materials</h4>
+            <h4>{t('specs.matTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -914,7 +914,7 @@ export default function RWoodMicroProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Applications</h4>
+            <h4>{t('specs.appsTitle')}</h4>
             <table>
               <tbody>
                 <tr>

@@ -195,7 +195,7 @@ export default function RWoodPerfProductPage() {
           </div>
           
           <div className="finish-selector">
-            <span className="selector-label">Select Wood Veneer</span>
+            <span className="selector-label">{t('surfaces.colorSelector')}</span>
             <div className="finish-options">
               {woodFinishOptions.map((finish) => (
                 <button
@@ -375,15 +375,15 @@ export default function RWoodPerfProductPage() {
               <div className="felt-selector">
                 <button className="felt-option active">
                   <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #c4a77d, #8b6914)' }} />
-                  <span className="felt-name">Natural Lacquer</span>
+                  <span className="felt-name">{t('surfaces.finish1')}</span>
                 </button>
                 <button className="felt-option">
                   <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #e0d5c5, #c8bfb0)' }} />
-                  <span className="felt-name">Pigmented</span>
+                  <span className="felt-name">{t('surfaces.finish2')}</span>
                 </button>
                 <button className="felt-option">
                   <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #d0c4b0, #b8a890)' }} />
-                  <span className="felt-name">HPL Laminate</span>
+                  <span className="felt-name">{t('surfaces.finish3')}</span>
                 </button>
               </div>
             </div>
@@ -427,8 +427,8 @@ export default function RWoodPerfProductPage() {
                   </div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Wood Veneer + Perforations</span>
-                  <span className="layer-desc">Over-veneered, precision-drilled surface</span>
+                  <span className="layer-name">{t('acoustics.layer1Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer1Desc')}</span>
                 </div>
               </div>
               
@@ -443,8 +443,8 @@ export default function RWoodPerfProductPage() {
                   <div className="core-texture"></div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Fire Retardant Medium Density Fiberboard Core</span>
-                  <span className="layer-desc">Fire Retardant, 0,45 kg/m&sup3; density</span>
+                  <span className="layer-name">{t('acoustics.layer2Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer2Desc')}</span>
                 </div>
               </div>
               
@@ -457,8 +457,8 @@ export default function RWoodPerfProductPage() {
               <div className="exploded-layer">
                 <div className="layer-visual felt-layer"></div>
                 <div className="layer-info">
-                  <span className="layer-name">Acoustic Fleece</span>
-                  <span className="layer-desc">Prevents fibre migration</span>
+                  <span className="layer-name">{t('acoustics.layer3Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer3Desc')}</span>
                 </div>
               </div>
 
@@ -473,8 +473,8 @@ export default function RWoodPerfProductPage() {
                   <div className="insulation-fibers"></div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Mineral Wool Cavity</span>
-                  <span className="layer-desc">30&ndash;50 mm for broadband absorption</span>
+                  <span className="layer-name">{t('acoustics.layer4Name')}</span>
+                  <span className="layer-desc">{t('acoustics.layer4Desc')}</span>
                 </div>
               </div>
             </div>
@@ -484,7 +484,7 @@ export default function RWoodPerfProductPage() {
               <div className="wave wave-1"></div>
               <div className="wave wave-2"></div>
               <div className="wave wave-3"></div>
-              <span className="wave-label">Sound waves absorbed</span>
+              <span className="wave-label">{t('acoustics.waveLabel')}</span>
             </div>
           </div>
 
@@ -507,7 +507,7 @@ export default function RWoodPerfProductPage() {
                 </svg>
                 <div className="rating-content">
                   <span className="rating-value">αw 0.85</span>
-                  <span className="rating-label">Absorption</span>
+                  <span className="rating-label">{t('acoustics.ratingLabel')}</span>
                 </div>
               </div>
               <div className="rating-badge">
@@ -532,7 +532,7 @@ export default function RWoodPerfProductPage() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                 <polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
-              <span>Independently tested &amp; certified to ISO 11654</span>
+              <span>{t('acoustics.certNote')}</span>
             </div>
           </div>
         </div>
@@ -604,14 +604,14 @@ export default function RWoodPerfProductPage() {
                 <div className="step-number">3</div>
                 <div className="step-content">
                   <h4>{t('installation.step3Title')}</h4>
-                  <p>Concealed clip system for tool-free, zero-gap mounting</p>
+                  <p>{t('installation.step3Desc')}</p>
                 </div>
               </div>
               <div className="install-step">
                 <div className="step-number">4</div>
                 <div className="step-content">
                   <h4>{t('installation.step4Title')}</h4>
-                  <p>In-line perforation patterns with seamless over-veneered joints</p>
+                  <p>{t('installation.step4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -662,7 +662,7 @@ export default function RWoodPerfProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>17% Recycled Content</h4>
+                  <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
@@ -698,7 +698,7 @@ export default function RWoodPerfProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Custom sizes</td>
+                  <td>{t('specs.customSizes')}</td>
                   <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
@@ -790,7 +790,7 @@ export default function RWoodPerfProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Materials</h4>
+            <h4>{t('specs.matTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -814,7 +814,7 @@ export default function RWoodPerfProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Certifications</h4>
+            <h4>{t('specs.certsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -892,29 +892,29 @@ export default function RWoodPerfProductPage() {
         <div className="accessories-header">
           <span className="section-tag">{t('accessories.tag')}</span>
           <h2>{t('accessories.title')}</h2>
-          <p>Professional finishing elements for a flawless result</p>
+          <p>{t('accessories.description')}</p>
         </div>
 
         <div className="accessories-grid">
           <div className="accessory-card">
             <div className="accessory-icon">📏</div>
-            <h4>Edge Profiles</h4>
+            <h4>{t('accessories.item1Title')}</h4>
             <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">🔲</div>
-            <h4>Corner Solutions</h4>
+            <h4>{t('accessories.item2Title')}</h4>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">⚙️</div>
-            <h4>Mounting Rails</h4>
-            <p>Concealed aluminium subframe system</p>
+            <h4>{t('accessories.item3Title')}</h4>
+            <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">🧱</div>
-            <h4>Mineral Wool</h4>
-            <p>30&ndash;50 mm insulation for optimal performance</p>
+            <h4>{t('accessories.item4Title')}</h4>
+            <p>{t('accessories.item4Desc')}</p>
           </div>
         </div>
       </section>
@@ -943,7 +943,7 @@ export default function RWoodPerfProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available &bull; Made in Europe &bull; FSC&reg; Certified &bull; A2-s1, d0 Fire Rated
+            {t('cta.note')}-s1, d0 Fire Rated
           </p>
         </div>
       </section>

@@ -135,7 +135,7 @@ export default function RPETFlexGrooveProductPage() {
       <section className="product-hero">
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
-          <h1>rPET Flex-Groove</h1>
+          <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
             {t('hero.description')}
@@ -188,7 +188,7 @@ export default function RPETFlexGrooveProductPage() {
           </div>
           
           <div className="color-selector">
-            <span className="selector-label">Select Color</span>
+            <span className="selector-label">{t('hero.colorSelector')}</span>
             <div className="color-options">
               {colorOptions.map((color) => (
                 <button
@@ -205,7 +205,7 @@ export default function RPETFlexGrooveProductPage() {
                 </button>
               ))}
             </div>
-            <span className="selected-color-name">{selectedColor?.name || 'Select a color'}</span>
+            <span className="selected-color-name">{selectedColor?.name || t('hero.colorPlaceholder')}</span>
           </div>
         </div>
       </section>
@@ -289,7 +289,7 @@ export default function RPETFlexGrooveProductPage() {
                   <div key={i} className="groove-line" />
                 ))}
               </div>
-              <span className="demo-label">Flat Panel</span>
+              <span className="demo-label">{t('technology.flatPanel')}</span>
             </div>
             <div className="arrow">→</div>
             <div className="panel-curved">
@@ -298,7 +298,7 @@ export default function RPETFlexGrooveProductPage() {
                   <div key={i} className="groove-line curved" />
                 ))}
               </div>
-              <span className="demo-label">Curved Application</span>
+              <span className="demo-label">{t('technology.curvedApp')}</span>
             </div>
           </div>
 
@@ -401,14 +401,14 @@ export default function RPETFlexGrooveProductPage() {
           <div className="panel-cross-section">
             <div className="cross-section-diagram flex">
               <div className="diagram-layer pet-felt">
-                <span className="layer-label">Recycled PET Felt</span>
+                <span className="layer-label">{t('acoustics.layer1Label')}</span>
               </div>
               <div className="diagram-layer v-cuts">
                 <div className="v-cut"></div>
                 <div className="v-cut"></div>
                 <div className="v-cut"></div>
                 <div className="v-cut"></div>
-                <span className="layer-label">Precision V-Cuts</span>
+                <span className="layer-label">{t('acoustics.layer2Label')}</span>
               </div>
             </div>
           </div>
@@ -416,9 +416,9 @@ export default function RPETFlexGrooveProductPage() {
           <div className="material-info">
             <div className="material-circle">
               <span className="material-value">9mm</span>
-              <span className="material-label">Thickness</span>
+              <span className="material-label">{t('acoustics.thicknessLabel')}</span>
             </div>
-            <p>Fire-Retardant PET Felt</p>
+            <p>{t('acoustics.materialLabel')}</p>
           </div>
         </div>
 
@@ -435,7 +435,7 @@ export default function RPETFlexGrooveProductPage() {
           </div>
           <div className="benefit">
             <span className="benefit-icon">♻️</span>
-            <h4>100% Recycled</h4>
+            <h4>{t('sustainability.badge1')}</h4>
             <p>{t('acoustics.feature3Desc')}</p>
           </div>
         </div>
@@ -545,7 +545,7 @@ export default function RPETFlexGrooveProductPage() {
                 <span className="sustain-icon">🌱</span>
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
-                  <p>Safe for indoor environments</p>
+                  <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -562,15 +562,15 @@ export default function RPETFlexGrooveProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>Dimensions</h4>
+            <h4>{t('specs.dimensionsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Panel length</td>
+                  <td>{t('specs.dimPanelLength')}</td>
                   <td>2880 mm</td>
                 </tr>
                 <tr>
-                  <td>Panel width</td>
+                  <td>{t('specs.dimPanelWidth')}</td>
                   <td>1130 mm</td>
                 </tr>
                 <tr>
@@ -582,7 +582,7 @@ export default function RPETFlexGrooveProductPage() {
                   <td>4.4 kg</td>
                 </tr>
                 <tr>
-                  <td>Density</td>
+                  <td>{t('specs.dimDensity')}</td>
                   <td>1.35 kg/m²</td>
                 </tr>
               </tbody>
@@ -590,55 +590,55 @@ export default function RPETFlexGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Flexibility</h4>
+            <h4>{t('specs.flexibilityTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Minimum radius</td>
+                  <td>{t('specs.flexMinRadius')}</td>
                   <td>500 mm</td>
                 </tr>
                 <tr>
-                  <td>Bend direction</td>
-                  <td>Inner & outer radii</td>
+                  <td>{t('specs.flexBendDir')}</td>
+                  <td>{t('specs.flexBendDirVal')}</td>
                 </tr>
                 <tr>
-                  <td>Cut type</td>
-                  <td>Precision V-cut</td>
+                  <td>{t('specs.flexCutType')}</td>
+                  <td>{t('specs.flexCutTypeVal')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Material</h4>
+            <h4>{t('specs.materialTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Composition</td>
-                  <td>FR PET Felt</td>
+                  <td>{t('specs.matComposition')}</td>
+                  <td>{t('specs.matCompositionVal')}</td>
                 </tr>
                 <tr>
-                  <td>Recycled content</td>
+                  <td>{tPage('specs.recycledContent')}</td>
                   <td>100%</td>
                 </tr>
                 <tr>
-                  <td>Fire retardant</td>
-                  <td>Yes (built-in)</td>
+                  <td>{t('specs.matFireRetardant')}</td>
+                  <td>{t('specs.matFireRetardantVal')}</td>
                 </tr>
                 <tr>
-                  <td>Color variations</td>
-                  <td>Possible (recycled material)</td>
+                  <td>{t('specs.matColorVar')}</td>
+                  <td>{t('specs.matColorVarVal')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Fire Safety</h4>
+            <h4>{t('specs.fireTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Fire rating</td>
+                  <td>{tPage('specs.fireRating') || t('specs.fireRating')}</td>
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
@@ -646,56 +646,56 @@ export default function RPETFlexGrooveProductPage() {
                   <td>EN 13501-1</td>
                 </tr>
                 <tr>
-                  <td>Smoke production</td>
+                  <td>{t('specs.fireSmokeProduction')}</td>
                   <td>s1 (low)</td>
                 </tr>
                 <tr>
-                  <td>Flaming droplets</td>
-                  <td>d0 (none)</td>
+                  <td>{t('specs.fireFlamingDroplets')}</td>
+                  <td>{t('specs.fireFlamingDropletsVal')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Certifications</h4>
+            <h4>{t('specs.certsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Material</td>
+                  <td>{t('specs.certMaterial')}</td>
                   <td>OEKO-TEX® Standard 100</td>
                 </tr>
                 <tr>
-                  <td>VOC emissions</td>
-                  <td>Low emission</td>
+                  <td>{t('specs.certVOC')}</td>
+                  <td>{t('specs.certVOCVal')}</td>
                 </tr>
                 <tr>
-                  <td>Recycled content</td>
-                  <td>Verified 100%</td>
+                  <td>{tPage('specs.recycledContent')}</td>
+                  <td>{t('specs.certRecycledVal')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div className="spec-card">
-            <h4>Applications</h4>
+            <h4>{t('specs.applicationsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
-                  <td>Surfaces</td>
-                  <td>Walls, columns, curved elements</td>
+                  <td>{t('specs.appSurfaces')}</td>
+                  <td>{t('specs.appSurfacesVal')}</td>
                 </tr>
                 <tr>
-                  <td>Environment</td>
-                  <td>Interior (dry areas)</td>
+                  <td>{t('specs.appEnvironment')}</td>
+                  <td>{t('specs.appEnvironmentVal')}</td>
                 </tr>
                 <tr>
-                  <td>Installation</td>
-                  <td>Adhesive mounting</td>
+                  <td>{t('specs.appInstallation')}</td>
+                  <td>{t('specs.appInstallationVal')}</td>
                 </tr>
                 <tr>
-                  <td>Orientation</td>
-                  <td>Lengthwise / Widthwise</td>
+                  <td>{t('specs.appOrientation')}</td>
+                  <td>{t('specs.appOrientationVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -756,29 +756,29 @@ export default function RPETFlexGrooveProductPage() {
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
           <h2>{t('applications.title')}</h2>
-          <p>Wherever curves meet acoustics</p>
+          <p>{t('applications.sectionDesc')}</p>
         </div>
 
         <div className="applications-grid">
           <div className="application-card">
             <div className="application-icon">🏛️</div>
-            <h4>Columns</h4>
+            <h4>{t('applications.app1')}</h4>
             <p>{t('applications.app1')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🌀</div>
-            <h4>Curved Walls</h4>
+            <h4>{t('applications.app2')}</h4>
             <p>{t('applications.app2')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🚪</div>
-            <h4>Archways</h4>
-            <p>Line curved openings and architectural features</p>
+            <h4>{t('applications.app3')}</h4>
+            <p>{t('applications.app3Desc')}</p>
           </div>
           <div className="application-card">
             <div className="application-icon">🎯</div>
-            <h4>Reception Areas</h4>
-            <p>Create striking curved feature walls</p>
+            <h4>{t('applications.app4')}</h4>
+            <p>{t('applications.app4Desc')}</p>
           </div>
         </div>
       </section>

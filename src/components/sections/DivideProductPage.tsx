@@ -320,7 +320,7 @@ export default function DivideProductPage() {
                 <div className="step-visual align">
                   <span>✨</span>
                 </div>
-                <span className="step-label">Auto-align</span>
+                <span className="step-label">{t('magnetic.autoAlign')}</span>
               </div>
               <div className="connect-arrow">→</div>
               <div className="connect-step">
@@ -409,15 +409,15 @@ export default function DivideProductPage() {
             <div className="circular-stats">
               <div className="stat">
                 <span className="stat-number">80%</span>
-                <span className="stat-label">Recycled content</span>
+                <span className="stat-label">{t('features.recycledLabel')}</span>
               </div>
               <div className="stat">
                 <span className="stat-number">0</span>
-                <span className="stat-label">Waste to landfill</span>
+                <span className="stat-label">{t('features.wasteLabel')}</span>
               </div>
               <div className="stat">
                 <span className="stat-number">∞</span>
-                <span className="stat-label">Recyclable cycles</span>
+                <span className="stat-label">{t('features.recycleLabel')}</span>
               </div>
             </div>
           </div>
@@ -440,7 +440,7 @@ export default function DivideProductPage() {
               <div className="wave-lines">
                 <span></span><span></span><span></span>
               </div>
-              <span className="side-label">Sound absorbed</span>
+              <span className="side-label">{t('acoustics.soundAbsorbed')}</span>
             </div>
             <div className="divider-panel">
               <Image
@@ -455,7 +455,7 @@ export default function DivideProductPage() {
               <div className="wave-lines">
                 <span></span><span></span><span></span>
               </div>
-              <span className="side-label">Sound absorbed</span>
+              <span className="side-label">{t('acoustics.soundAbsorbed')}</span>
             </div>
           </div>
 
@@ -500,11 +500,11 @@ export default function DivideProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Module width</td>
+                  <td>{t('specs.moduleWidth')}</td>
                   <td>800 mm</td>
                 </tr>
                 <tr>
-                  <td>Module height</td>
+                  <td>{t('specs.moduleHeight')}</td>
                   <td>1600 mm</td>
                 </tr>
                 <tr>
@@ -549,15 +549,15 @@ export default function DivideProductPage() {
                 </tr>
                 <tr>
                   <td>Cover</td>
-                  <td>Recycled fabric</td>
+                  <td>{t('specs.fabricCore')}</td>
                 </tr>
                 <tr>
                   <td>Base</td>
-                  <td>Recycled steel</td>
+                  <td>{t('specs.steelFrame')}</td>
                 </tr>
                 <tr>
-                  <td>Magnets</td>
-                  <td>Neodymium</td>
+                  <td>{t('specs.magnets')}</td>
+                  <td>{t('specs.magnetsVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -588,8 +588,8 @@ export default function DivideProductPage() {
                   <td>≥80%</td>
                 </tr>
                 <tr>
-                  <td>End of life</td>
-                  <td>100% recyclable</td>
+                  <td>{t('specs.endOfLife')}</td>
+                  <td>{t('specs.endOfLifeVal')}</td>
                 </tr>
                 <tr>
                   <td>VOC emissions</td>
@@ -604,15 +604,15 @@ export default function DivideProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Connection</td>
-                  <td>Magnetic snap</td>
+                  <td>{t('specs.connection')}</td>
+                  <td>{t('specs.connectionVal')}</td>
                 </tr>
                 <tr>
-                  <td>Setup time</td>
-                  <td>Instant</td>
+                  <td>{t('specs.setupTime')}</td>
+                  <td>{t('specs.setupTimeVal')}</td>
                 </tr>
                 <tr>
-                  <td>Tools required</td>
+                  <td>{t('specs.toolsRequired')}</td>
                   <td>None</td>
                 </tr>
               </tbody>

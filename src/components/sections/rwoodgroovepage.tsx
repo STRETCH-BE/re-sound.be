@@ -50,7 +50,7 @@ export default function RWoodGrooveProductPage() {
 
   const downloads = [
     { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-groove/product-data-sheet.pdf' },
-    { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rwood-groove/installation-guide.pdf' },
+    { id: 'installation-guide', name: t('downloads.installationGuide'), icon: '🔧', file: '/documents/rwood-groove/installation-guide.pdf' },
     { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-groove/acoustic-test-report.pdf' },
     { id: 'color-finish-guide', name: 'Color & Finish Guide', icon: '🎨', file: '/documents/rwood-groove/color-finish-guide.pdf' },
     { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-groove/fire-certificate.pdf' },
@@ -189,7 +189,7 @@ export default function RWoodGrooveProductPage() {
           </div>
           
           <div className="finish-selector">
-            <span className="selector-label">Select Wood Finish</span>
+            <span className="selector-label">{t('materials.colorSelector')}</span>
             <div className="finish-options">
               {woodFinishOptions.map((finish) => (
                 <button
@@ -383,8 +383,8 @@ export default function RWoodGrooveProductPage() {
                   <div className="wood-grain"></div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">Oak / Walnut Veneer</span>
-                  <span className="layer-desc">Premium A-grade natural wood</span>
+                  <span className="layer-name">{t('materials.layer1Name')}</span>
+                  <span className="layer-desc">{t('materials.layer1Desc')}</span>
                 </div>
               </div>
               
@@ -403,8 +403,8 @@ export default function RWoodGrooveProductPage() {
                   </div>
                 </div>
                 <div className="layer-info">
-                  <span className="layer-name">MDF Core with Grooves</span>
-                  <span className="layer-desc">Sound entry channels</span>
+                  <span className="layer-name">{t('materials.layer2Name')}</span>
+                  <span className="layer-desc">{t('materials.layer2Desc')}</span>
                 </div>
               </div>
               
@@ -417,8 +417,8 @@ export default function RWoodGrooveProductPage() {
               <div className="exploded-layer">
                 <div className="layer-visual felt-layer"></div>
                 <div className="layer-info">
-                  <span className="layer-name">Acoustic Felt Backing</span>
-                  <span className="layer-desc">Recycled PET, 3mm thick</span>
+                  <span className="layer-name">{t('materials.layer3Name')}</span>
+                  <span className="layer-desc">{t('materials.layer3Desc')}</span>
                 </div>
               </div>
             </div>
@@ -428,7 +428,7 @@ export default function RWoodGrooveProductPage() {
               <div className="wave wave-1"></div>
               <div className="wave wave-2"></div>
               <div className="wave wave-3"></div>
-              <span className="wave-label">Sound waves absorbed</span>
+              <span className="wave-label">{t('materials.waveLabel')}</span>
             </div>
           </div>
 
@@ -451,7 +451,7 @@ export default function RWoodGrooveProductPage() {
                 </svg>
                 <div className="rating-content">
                   <span className="rating-value">αw 0.90</span>
-                  <span className="rating-label">Absorption</span>
+                  <span className="rating-label">{t('acoustics.ratingLabel')}</span>
                 </div>
               </div>
               <div className="rating-badge">
@@ -476,7 +476,7 @@ export default function RWoodGrooveProductPage() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                 <polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
-              <span>Independently tested &amp; certified to ISO 11654</span>
+              <span>{t('materials.certNote')}</span>
             </div>
           </div>
         </div>
@@ -623,7 +623,7 @@ export default function RWoodGrooveProductPage() {
                 <span className="sustain-icon">📋</span>
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
-                  <p>Full environmental product declaration</p>
+                  <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
             </div>
@@ -644,11 +644,11 @@ export default function RWoodGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Panel width</td>
+                  <td>{t('specs.dimPanelWidth')}</td>
                   <td>300 mm</td>
                 </tr>
                 <tr>
-                  <td>Panel length</td>
+                  <td>{t('specs.dimPanelLength')}</td>
                   <td>2400 / 2780 mm</td>
                 </tr>
                 <tr>
@@ -656,11 +656,11 @@ export default function RWoodGrooveProductPage() {
                   <td>19 mm</td>
                 </tr>
                 <tr>
-                  <td>Groove depth</td>
+                  <td>{t('specs.dimGrooveDepth')}</td>
                   <td>15 mm</td>
                 </tr>
                 <tr>
-                  <td>Groove width</td>
+                  <td>{t('specs.dimGrooveWidth')}</td>
                   <td>15 mm</td>
                 </tr>
               </tbody>
@@ -672,15 +672,15 @@ export default function RWoodGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Absorption coefficient (αw)</td>
+                  <td>{tPage('specs.absorptionCoeff')}</td>
                   <td>0.90</td>
                 </tr>
                 <tr>
-                  <td>Absorption class</td>
+                  <td>{tPage('specs.absorptionClass')}</td>
                   <td>Class A</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specs.testStandard')}</td>
                   <td>ISO 354 / ISO 11654</td>
                 </tr>
               </tbody>
@@ -692,19 +692,19 @@ export default function RWoodGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Veneer</td>
-                  <td>A-grade Oak / Walnut</td>
+                  <td>{t('specs.matVeneer')}</td>
+                  <td>{t('specs.matVeneerVal')}</td>
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>MDF (standard / moisture-resistant / fire-retardant)</td>
+                  <td>{t('specs.matCoreVal')}</td>
                 </tr>
                 <tr>
                   <td>Felt</td>
-                  <td>Recycled PET (3mm)</td>
+                  <td>{t('specs.matBackingVal')}</td>
                 </tr>
                 <tr>
-                  <td>Finish</td>
+                  <td>{t('specs.matFinish')}</td>
                   <td>Oil / Lacquer</td>
                 </tr>
               </tbody>
@@ -728,7 +728,7 @@ export default function RWoodGrooveProductPage() {
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specs.testStandard')}</td>
                   <td>EN 13501</td>
                 </tr>
               </tbody>
@@ -736,7 +736,7 @@ export default function RWoodGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Certifications</h4>
+            <h4>{t('specs.certsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -760,7 +760,7 @@ export default function RWoodGrooveProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>Applications</h4>
+            <h4>{t('specs.applicationsTitle')}</h4>
             <table>
               <tbody>
                 <tr>
@@ -838,29 +838,29 @@ export default function RWoodGrooveProductPage() {
         <div className="accessories-header">
           <span className="section-tag">{t('accessories.tag')}</span>
           <h2>{t('accessories.title')}</h2>
-          <p>Professional finishing touches for a perfect result</p>
+          <p>{t('accessories.description')}</p>
         </div>
 
         <div className="accessories-grid">
           <div className="accessory-card">
             <div className="accessory-icon">📏</div>
-            <h4>End Mouldings</h4>
+            <h4>{t('accessories.item1Title')}</h4>
             <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">🔲</div>
-            <h4>Corner Profiles</h4>
+            <h4>{t('accessories.item2Title')}</h4>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">📐</div>
-            <h4>Mounting Battens</h4>
-            <p>Hidden fixing system for walls and ceilings</p>
+            <h4>{t('accessories.item3Title')}</h4>
+            <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
             <div className="accessory-icon">🎨</div>
-            <h4>Touch-up Kit</h4>
-            <p>Matching oils for repairs and maintenance</p>
+            <h4>{t('accessories.item4Title')}</h4>
+            <p>{t('accessories.item4Desc')}</p>
           </div>
         </div>
       </section>

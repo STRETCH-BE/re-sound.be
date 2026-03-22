@@ -341,15 +341,15 @@ export default function SolidProductPage() {
             <div className="circular-stats">
               <div className="stat">
                 <span className="stat-number">80%</span>
-                <span className="stat-label">Recycled content</span>
+                <span className="stat-label">{t('features.recycledLabel')}</span>
               </div>
               <div className="stat">
                 <span className="stat-number">0</span>
-                <span className="stat-label">Waste to landfill</span>
+                <span className="stat-label">{t('features.wasteLabel')}</span>
               </div>
               <div className="stat">
                 <span className="stat-number">∞</span>
-                <span className="stat-label">Recyclable cycles</span>
+                <span className="stat-label">{t('features.recycleLabel')}</span>
               </div>
             </div>
           </div>
@@ -486,7 +486,7 @@ export default function SolidProductPage() {
                   <td>{t('specs.coreValue')}</td>
                 </tr>
                 <tr>
-                  <td>Binder</td>
+                  <td>{t('specs.binderRow')}</td>
                   <td>{t('specs.binderValue')}</td>
                 </tr>
                 <tr>
@@ -522,11 +522,11 @@ export default function SolidProductPage() {
                   <td>≥80%</td>
                 </tr>
                 <tr>
-                  <td>End of life</td>
-                  <td>100% recyclable</td>
+                  <td>{t('specs.endOfLife')}</td>
+                  <td>{t('specs.endOfLifeVal')}</td>
                 </tr>
                 <tr>
-                  <td>VOC emissions</td>
+                  <td>{tPage('specs.vocEmissions') || 'VOC emissions'}</td>
                   <td>Low / A+</td>
                 </tr>
               </tbody>
@@ -538,16 +538,16 @@ export default function SolidProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Mounting</td>
-                  <td>Hook system</td>
+                  <td>{t('specs.mounting')}</td>
+                  <td>{t('specs.mountingVal')}</td>
                 </tr>
                 <tr>
-                  <td>Installation time</td>
-                  <td>~3 min per panel</td>
+                  <td>{t('specs.installTime')}</td>
+                  <td>{t('specs.installTimeVal')}</td>
                 </tr>
                 <tr>
-                  <td>Tools required</td>
-                  <td>Drill, level</td>
+                  <td>{t('specs.toolsRequired')}</td>
+                  <td>{t('specs.toolsVal')}</td>
                 </tr>
               </tbody>
             </table>
