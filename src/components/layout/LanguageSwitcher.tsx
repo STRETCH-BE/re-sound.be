@@ -3,15 +3,14 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
+import { locales, localeNames, localeFlags, type Locale } from '@/i18n/config';
 
-type LocaleCode = 'en' | 'nl' | 'fr' | 'de';
-
-const locales = [
-  { code: 'en' as LocaleCode, name: 'English', flag: '🇬🇧' },
-  { code: 'nl' as LocaleCode, name: 'Nederlands', flag: '🇳🇱' },
-  { code: 'fr' as LocaleCode, name: 'Français', flag: '🇫🇷' },
-  { code: 'de' as LocaleCode, name: 'Deutsch', flag: '🇩🇪' },
-];
+// Build the display list from config so adding a language only requires config.ts
+const localeList = locales.map((code) => ({
+  code,
+  name: localeNames[code],
+  flag: localeFlags[code],
+}));
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const currentLocale = locales.find((l) => l.code === locale) || locales[0];
+  const currentLocale = localeList.find((l) => l.code === locale) || localeList[0];
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -29,24 +28,20 @@ export default function LanguageSwitcher() {
         setIsOpen(false);
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Close dropdown on escape key
+  // Close dropdown on Escape key
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setIsOpen(false);
-      }
+      if (event.key === 'Escape') setIsOpen(false);
     };
-
     document.addEventListener('keydown', handleEscape);
     return () => document.removeEventListener('keydown', handleEscape);
   }, []);
 
-  const handleLocaleChange = (newLocale: LocaleCode) => {
+  const handleLocaleChange = (newLocale: Locale) => {
     router.replace(pathname, { locale: newLocale });
     setIsOpen(false);
   };
@@ -80,7 +75,7 @@ export default function LanguageSwitcher() {
         role="listbox"
         aria-label="Select language"
       >
-        {locales.map((loc) => (
+        {localeList.map((loc) => (
           <li key={loc.code} role="option" aria-selected={loc.code === locale}>
             <button
               className={`lang-option ${loc.code === locale ? 'active' : ''}`}
@@ -146,6 +141,8 @@ export default function LanguageSwitcher() {
           list-style: none;
           padding: 0.5rem;
           min-width: 180px;
+          max-height: 360px;
+          overflow-y: auto;
           opacity: 0;
           visibility: hidden;
           transform: translateY(-10px);
@@ -169,7 +166,6 @@ export default function LanguageSwitcher() {
           border: none;
           border-radius: 10px;
           color: var(--charcoal);
-          text-decoration: none;
           cursor: pointer;
           transition: background 0.2s ease;
           text-align: left;
