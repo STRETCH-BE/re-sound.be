@@ -142,10 +142,7 @@ export default function RWoodPerfProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            High-performance drilled acoustic panels combining natural wood beauty with 
-            outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered 
-            edges deliver the highest levels of fire safety and acoustic control for 
-            demanding public spaces.
+            {t('hero.description2')}
           </p>
           
           <div className="hero-usps">
@@ -252,15 +249,10 @@ export default function RWoodPerfProductPage() {
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('hero.tagline')}</h2>
             <p>
-              rWood - Perf panels are one of the most effective and widely used solutions 
-              for acoustic walls and ceilings. The precisely drilled round perforations 
-              create a large open area that guarantees high levels of sound absorption, 
-              while premium wood veneer ensures a natural, warm appearance.
+              {t('overview.description3')}
             </p>
             <p>
-              Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges 
-              for seamless joints, these panels are engineered for the highest demands in 
-              large public spaces&mdash;from atriums and concert halls to offices and schools.
+              {t('overview.description4')}
             </p>
             <ul className="feature-list">
               <li>
@@ -290,9 +282,7 @@ export default function RWoodPerfProductPage() {
           <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('patterns.title')}</h2>
           <p>
-            Four drilled perforation patterns with calibrated acoustic properties. From 
-            maximum open area for demanding acoustic spaces to more discreet patterns 
-            that prioritize visual refinement.
+            {t('patterns.description3')}
           </p>
         </div>
 
@@ -328,8 +318,7 @@ export default function RWoodPerfProductPage() {
         <div className="core-colour-section">
           <h3>{t('patterns.coreColorTitle')}</h3>
           <p className="core-colour-desc">
-            Match the core to your veneer to make perforations blend in, 
-            or choose a contrasting core for a decorative effect.
+            {t('patterns.coreMatchDesc2')}
           </p>
           <div className="felt-selector">
             {coreColourOptions.map((core) => (
@@ -353,10 +342,7 @@ export default function RWoodPerfProductPage() {
             <span className="section-tag">{t('surfaces.tag')}</span>
             <h2>{t('surfaces.title')}</h2>
             <p>
-              Every rWood - Perf panel is produced with over-veneered edges&mdash;a 
-              traditional manufacturing technique where solid wood edging is integrated 
-              around the panel before veneering. This gives each panel the appearance 
-              of being entirely of wood, with seamless joints across large surfaces.
+              {t('surfaces.description3')}
             </p>
             
             <div className="finish-categories">
@@ -407,17 +393,14 @@ export default function RWoodPerfProductPage() {
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
-            Precision-drilled perforations allow sound waves to enter the panel and 
-            pass through to the cavity behind. Combined with mineral wool insulation, 
-            rWood - Perf delivers outstanding broadband absorption across the full 
-            frequency spectrum&mdash;from low bass to high treble.
+            {t('acoustics.description3')}
           </p>
         </div>
 
         <div className="acoustics-main-grid">
           {/* Left: Exploded diagram - 4 layers */}
           <div className="exploded-diagram">
-            <div className="diagram-title">Panel Cross-Section</div>
+            <div className="diagram-title">{t('acoustics.diagramTitle')}</div>
             <div className="exploded-layers">
               <div className="exploded-layer">
                 <div className="layer-visual veneer-layer">
@@ -519,11 +502,11 @@ export default function RWoodPerfProductPage() {
             <div className="metric-cards">
               <div className="metric-card">
                 <div className="metric-value">B-s1, d0</div>
-                <div className="metric-label">Fire Rating</div>
+                <div className="metric-label">{t('acoustics.fireRating')}</div>
               </div>
               <div className="metric-card">
                 <div className="metric-value">NRC 0.90</div>
-                <div className="metric-label">Noise Reduction</div>
+                <div className="metric-label">{t('acoustics.noiseReduction')}</div>
               </div>
             </div>
 
@@ -579,10 +562,7 @@ export default function RWoodPerfProductPage() {
             <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
-              rWood - Perf panels are installed with a concealed clip system 
-              designed for precision, speed, and a flawless end result. The system ensures 
-              zero-spaced joints and perfectly aligned perforation patterns across 
-              multiple panels.
+              {t('installation.description3')}
             </p>
             
             <div className="installation-steps">
@@ -646,10 +626,7 @@ export default function RWoodPerfProductPage() {
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              rWood - Perf combines durable, natural materials with responsible sourcing. 
-              The fibre gypsum core is inherently low-emitting&mdash;no chemical 
-              impregnation is needed for fire performance&mdash;and our veneers come from 
-              sustainably managed forests.
+              {t('sustainability.description3')}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
@@ -702,15 +679,15 @@ export default function RWoodPerfProductPage() {
                   <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specLabels.thickness')}</td>
                   <td>8 - 19 mm</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
+                  <td>{tPage('specLabels.weight')}</td>
                   <td>~From 0,35 kg/m&sup2;</td>
                 </tr>
                 <tr>
-                  <td>Core density</td>
+                  <td>{tPage('specLabels.coreDensity')}</td>
                   <td>48,40 kg/m&sup3;</td>
                 </tr>
               </tbody>
@@ -722,7 +699,7 @@ export default function RWoodPerfProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Absorption coefficient (αw)</td>
+                  <td>{tPage('specs.absorptionCoeff')}</td>
                   <td>0.90</td>
                 </tr>
                 <tr>
@@ -730,11 +707,11 @@ export default function RWoodPerfProductPage() {
                   <td>Up to 1.00</td>
                 </tr>
                 <tr>
-                  <td>Absorption class</td>
+                  <td>{tPage('specs.absorptionClass')}</td>
                   <td>Class A / C</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specLabels.testStandard')}</td>
                   <td>ISO 354 / ISO 11654</td>
                 </tr>
               </tbody>
@@ -770,19 +747,19 @@ export default function RWoodPerfProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Reaction to fire</td>
+                  <td>{t('specs.reactionFire')}</td>
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
-                  <td>Resistance to fire</td>
+                  <td>{t('specs.resistanceFire')}</td>
                   <td>K1-10 / K2-10</td>
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>Fire Retardant</td>
+                  <td>{t('specs.fireRetardant')}</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specLabels.testStandard')}</td>
                   <td>EN 13501</td>
                 </tr>
               </tbody>
@@ -794,20 +771,20 @@ export default function RWoodPerfProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Surface</td>
-                  <td>Veneer / HPL / Foil / Paint</td>
+                  <td>{t('specs.surfaceLabel')}</td>
+                  <td>{t('specs.surfaceVal')}</td>
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>Medium Density Fiberboard core (brown / green / black)</td>
+                  <td>{t('specs.coreVal')}</td>
                 </tr>
                 <tr>
-                  <td>Edges</td>
-                  <td>Over-veneered solid wood</td>
+                  <td>{t('specs.edgesLabel')}</td>
+                  <td>{t('specs.edgesVal')}</td>
                 </tr>
                 <tr>
-                  <td>Acoustic felt</td>
-                  <td>Black / White</td>
+                  <td>{t('specs.acousticFelt')}</td>
+                  <td>{t('specs.feltColor')}</td>
                 </tr>
               </tbody>
             </table>
@@ -818,20 +795,20 @@ export default function RWoodPerfProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Wood sourcing</td>
-                  <td>FSC&reg; certified</td>
+                  <td>{tPage('specLabels.woodSourcing')}</td>
+                  <td>{tPage('specLabels.fscCert')}</td>
                 </tr>
                 <tr>
-                  <td>VOC emissions</td>
-                  <td>TVOC approved (ISO 16000)</td>
+                  <td>{t('specs.vocLabel')}</td>
+                  <td>{t('specs.vocVal')}</td>
                 </tr>
                 <tr>
-                  <td>Formaldehyde</td>
-                  <td>No added urea formaldehyde</td>
+                  <td>{tPage('specLabels.formaldehyde')}</td>
+                  <td>{t('specs.formaldehydeVal')}</td>
                 </tr>
                 <tr>
-                  <td>Environmental</td>
-                  <td>EPD available</td>
+                  <td>{t('specs.envLabel')}</td>
+                  <td>{tPage('specLabels.epd')}</td>
                 </tr>
               </tbody>
             </table>

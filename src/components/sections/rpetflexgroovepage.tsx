@@ -242,10 +242,7 @@ export default function RPETFlexGrooveProductPage() {
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>
-              Flex-Groove panels provide a versatile acoustic solution for curved surfaces, 
-              effortlessly adapting to any shape. Suitable for inner and outer radii, their 
-              flexible structure allows for seamless transitions along walls, columns, and 
-              other rounded architectural elements.
+              {t('overview.description2')}
             </p>
             <ul className="feature-list">
               <li>
@@ -275,9 +272,7 @@ export default function RPETFlexGrooveProductPage() {
           <span className="section-tag">{t('technology.tag')}</span>
           <h2>{t('technology.title')}</h2>
           <p>
-            Each panel is incised with precision V-cuts, allowing it to bend without breaking. 
-            This smart cut creates the signature ribbed texture — a series of linear grooves 
-            that enable flexibility while giving the surface a sculptural relief.
+            {t('technology.description2')}
           </p>
         </div>
 
@@ -337,9 +332,7 @@ export default function RPETFlexGrooveProductPage() {
             <span className="section-tag">{t('colors.tag')}</span>
             <h2>{t('colors.title')}</h2>
             <p>
-              Our carefully curated color palette offers versatile options for any interior. 
-              From soft neutrals to bold statement colors, each shade is designed to complement 
-              modern architectural spaces while providing excellent acoustic performance.
+              {t('colors.description2')}
             </p>
             
             <div className="color-grid">
@@ -391,9 +384,7 @@ export default function RPETFlexGrooveProductPage() {
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
-            Made from fire-retardant recycled PET felt, Flex-Groove panels provide 
-            effective sound absorption while maintaining visual continuity across 
-            curved surfaces. The grooved texture enhances acoustic performance.
+            {t('acoustics.description2')}
           </p>
         </div>
 
@@ -448,10 +439,7 @@ export default function RPETFlexGrooveProductPage() {
             <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
-              Designed to span standard floor-to-ceiling heights, the panels simplify 
-              alignment and reduce installation time. The adaptable form makes them 
-              a practical solution for interiors requiring both sound absorption and 
-              design flexibility.
+              {t('installation.description2')}
             </p>
             
             <div className="installation-steps">
@@ -515,9 +503,7 @@ export default function RPETFlexGrooveProductPage() {
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, 
-              giving new life to waste materials. Our circular approach ensures that 
-              these panels can be recycled again at the end of their lifecycle.
+              {t('sustainability.description2')}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
@@ -574,11 +560,11 @@ export default function RPETFlexGrooveProductPage() {
                   <td>1130 mm</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specLabels.thickness')}</td>
                   <td>9 mm</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
+                  <td>{tPage('specLabels.weight')}</td>
                   <td>4.4 kg</td>
                 </tr>
                 <tr>
@@ -642,7 +628,7 @@ export default function RPETFlexGrooveProductPage() {
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specLabels.testStandard')}</td>
                   <td>EN 13501-1</td>
                 </tr>
                 <tr>
@@ -797,8 +783,7 @@ export default function RPETFlexGrooveProductPage() {
         <div className="cta-content">
           <h2>{t('cta.title')}</h2>
           <p>
-            Get a personalized quote for your project. Our team will help you 
-            choose the perfect color and calculate your requirements.
+            {t('cta.description2')}
           </p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
@@ -809,7 +794,7 @@ export default function RPETFlexGrooveProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available • Made in Europe • 100% Recycled
+            {t('cta2.freeNote')}
           </p>
         </div>
       </section>

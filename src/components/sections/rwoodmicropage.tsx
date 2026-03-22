@@ -290,9 +290,7 @@ export default function RWoodMicroProductPage() {
           <span className="section-tag">{t('perforation.tag')}</span>
           <h2>{t('perforation.title')}</h2>
           <p>
-            Four perforation densities to match your acoustic requirements. From virtually 
-            invisible Nano perforations to maximum-absorption Micro L patterns—select the 
-            perfect balance between aesthetics and acoustic performance.
+            {t('patterns.description2')}
           </p>
         </div>
 
@@ -397,9 +395,7 @@ export default function RWoodMicroProductPage() {
             <span className="section-tag">{t('surfaces.tag')}</span>
             <h2>{t('surfaces.title')}</h2>
             <p>
-              Every rWood - Micro panel features over-veneered edges—a manufacturing 
-              technique from traditional carpentry heritage. The result: stronger panels, 
-              seamless joints, and a continuous pattern regardless of panel format.
+              {t('surfaces.description2')}
             </p>
             
             <div className="finish-categories">
@@ -438,14 +434,14 @@ export default function RWoodMicroProductPage() {
                 <div className="extra-item">
                   <span className="extra-icon">🎨</span>
                   <div>
-                    <strong>Pigmented Lacquer</strong>
+                    <strong>{t('patterns.pigmentedLacquer')}</strong>
                     <p>{t('surfaces.finish1Desc')}</p>
                   </div>
                 </div>
                 <div className="extra-item">
                   <span className="extra-icon">✨</span>
                   <div>
-                    <strong>Gloss Levels</strong>
+                    <strong>{t('patterns.glossLevels')}</strong>
                     <p>{t('surfaces.finish2Desc')}</p>
                   </div>
                 </div>
@@ -471,16 +467,14 @@ export default function RWoodMicroProductPage() {
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
-            The combination of micro-perforations in the surface and thousands of larger 
-            sound chambers in the core creates a dual acoustic mechanism. Less dependent 
-            on insulation and air gaps—meaning thinner walls and ceilings that save valuable space.
+            {t('acoustics.description2')}
           </p>
         </div>
 
         <div className="acoustics-main-grid">
           {/* Left: Panel cross-section diagram */}
           <div className="exploded-diagram">
-            <div className="diagram-title">Panel Cross-Section</div>
+            <div className="diagram-title">{t('acoustics.diagramTitle')}</div>
             <div className="exploded-layers">
               <div className="exploded-layer">
                 <div className="layer-visual veneer-layer">
@@ -568,22 +562,22 @@ export default function RWoodMicroProductPage() {
             <div className="metric-cards">
               <div className="metric-card">
                 <div className="metric-value">90%</div>
-                <div className="metric-label">Sound Absorbed</div>
+                <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
               </div>
               <div className="metric-card">
                 <div className="metric-value">B-s1, d0</div>
-                <div className="metric-label">Fire Rating</div>
+                <div className="metric-label">{t('acoustics.fireRating')}</div>
               </div>
             </div>
 
             <div className="metric-cards">
               <div className="metric-card">
                 <div className="metric-value">ISO 354</div>
-                <div className="metric-label">Test Standard</div>
+                <div className="metric-label">{t('acoustics.testStandard')}</div>
               </div>
               <div className="metric-card">
                 <div className="metric-value">Thinner</div>
-                <div className="metric-label">Wall Build-up</div>
+                <div className="metric-label">{t('acoustics.wallBuildUp')}</div>
               </div>
             </div>
 
@@ -802,11 +796,11 @@ export default function RWoodMicroProductPage() {
                   <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specLabels.thickness')}</td>
                   <td>8 - 19 mm</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
+                  <td>{tPage('specLabels.weight')}</td>
                   <td>~From 0,35 kg/m&sup2;</td>
                 </tr>
                 <tr>
@@ -834,7 +828,7 @@ export default function RWoodMicroProductPage() {
                   <td>Class A / C</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specLabels.testStandard')}</td>
                   <td>ISO 354 / ISO 11654</td>
                 </tr>
               </tbody>
@@ -870,19 +864,19 @@ export default function RWoodMicroProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Reaction to fire</td>
+                  <td>{t('specs.reactionFire')}</td>
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
-                  <td>Resistance to fire</td>
+                  <td>{t('specs.resistanceFire')}</td>
                   <td>K1-10 / K2-10</td>
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>Fire Retardant</td>
+                  <td>{t('specs.fireRetardant')}</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specLabels.testStandard')}</td>
                   <td>EN 13501</td>
                 </tr>
               </tbody>
@@ -894,20 +888,20 @@ export default function RWoodMicroProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Surface</td>
-                  <td>Veneer / HPL / Foil / Paint</td>
+                  <td>{t('specs.surfaceLabel')}</td>
+                  <td>{t('specs.surfaceVal')}</td>
                 </tr>
                 <tr>
                   <td>Core</td>
-                  <td>Medium Density Fiberboard core (brown / green / black)</td>
+                  <td>{t('specs.coreVal')}</td>
                 </tr>
                 <tr>
-                  <td>Edges</td>
-                  <td>Over-veneered solid wood</td>
+                  <td>{t('specs.edgesLabel')}</td>
+                  <td>{t('specs.edgesVal')}</td>
                 </tr>
                 <tr>
-                  <td>Acoustic felt</td>
-                  <td>Black / White</td>
+                  <td>{t('specs.acousticFelt')}</td>
+                  <td>{t('specs.feltColor')}</td>
                 </tr>
               </tbody>
             </table>
@@ -918,20 +912,20 @@ export default function RWoodMicroProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Installation</td>
-                  <td>Walls &amp; Ceilings</td>
+                  <td>{t('specs.appInstall')}</td>
+                  <td>{t('specs.appWalls')}</td>
                 </tr>
                 <tr>
-                  <td>Environment</td>
-                  <td>Interior (dry areas)</td>
+                  <td>{t('specs.appEnv')}</td>
+                  <td>{t('specs.appEnvVal')}</td>
                 </tr>
                 <tr>
-                  <td>Backlit option</td>
-                  <td>Available</td>
+                  <td>{t('specs.backlitOption')}</td>
+                  <td>{t('specs.backlitVal')}</td>
                 </tr>
                 <tr>
-                  <td>Mounting system</td>
-                  <td>Concealed clip system</td>
+                  <td>{t('specs.mountingSystem')}</td>
+                  <td>{t('specs.concealedClip')}</td>
                 </tr>
               </tbody>
             </table>

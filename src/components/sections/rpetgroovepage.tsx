@@ -246,9 +246,7 @@ export default function RPetGrooveProductPage() {
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>
-              rPET - Groove panels bring a contemporary touch to any space while reducing 
-              noise disturbances. The visible slat design creates visual depth and texture, 
-              perfect for modern offices, meeting rooms, lobbies, restaurants, and reception areas.
+              {t('overview.description2')}
             </p>
             <ul className="feature-list">
               <li>
@@ -278,9 +276,7 @@ export default function RPetGrooveProductPage() {
           <span className="section-tag">{t('fromBottles.tag')}</span>
           <h2>{t('fromBottles.title')}</h2>
           <p>
-            Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. 
-            Our manufacturing process transforms post-consumer PET waste into high-performance 
-            acoustic felt, creating a truly circular product.
+            {t('fromBottles.description2')}
           </p>
           
           <div className="recycling-steps">
@@ -326,9 +322,7 @@ export default function RPetGrooveProductPage() {
           <span className="section-tag">{t('colors.tag')}</span>
           <h2>{t('colors.title')}</h2>
           <p>
-            From neutral tones to bold accents, our curated color palette fits seamlessly 
-            into any interior design concept. All colors are achieved through dope-dyeing, 
-            ensuring excellent color fastness and UV resistance.
+            {t('colors.description2')}
           </p>
         </div>
 
@@ -377,9 +371,7 @@ export default function RPetGrooveProductPage() {
           <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('patterns.title')}</h2>
           <p>
-            Four distinctive groove patterns to match any architectural vision. From clean 
-            parallel lines to dynamic chevrons, each pattern is precision-cut using CNC 
-            technology for perfect consistency.
+            {t('patterns.description2')}
           </p>
         </div>
 
@@ -442,9 +434,7 @@ export default function RPetGrooveProductPage() {
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
-            The unique groove design combined with high-density recycled PET felt creates 
-            exceptional sound absorption. Reduce echo, eliminate noise, and create 
-            spaces that are as comfortable to the ear as they are to the eye.
+            {t('acoustics.description2')}
           </p>
         </div>
 
@@ -604,9 +594,7 @@ export default function RPetGrooveProductPage() {
             <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
-              rPET - Groove panels are designed for quick and easy installation. Their 
-              lightweight construction means a single person can handle the panels, and 
-              multiple mounting options give you flexibility for any project.
+              {t('installation.description2')}
             </p>
             
             <div className="installation-steps">
@@ -692,9 +680,7 @@ export default function RPetGrooveProductPage() {
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              rPET - Groove panels embody the circular economy. Made entirely from 
-              post-consumer recycled plastic, they can be recycled again at end of life. 
-              We offer free take-back to ensure nothing goes to waste.
+              {t('sustainability.description2')}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
@@ -743,7 +729,7 @@ export default function RPetGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>{tPage('specs.dimPanelWidth') || t('specs.dimPanelWidth')}</td>
+                  <td>{tPage('specs.dimPanelWidth')}</td>
                   <td>600 / 1200 mm</td>
                 </tr>
                 <tr>
@@ -751,7 +737,7 @@ export default function RPetGrooveProductPage() {
                   <td>600 / 1200 / 2400 mm</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specLabels.thickness')}</td>
                   <td>12 / 24 / 36 mm</td>
                 </tr>
                 <tr>
@@ -759,7 +745,7 @@ export default function RPetGrooveProductPage() {
                   <td>6 / 12 / 18 mm</td>
                 </tr>
                 <tr>
-                  <td>Weight</td>
+                  <td>{tPage('specLabels.weight')}</td>
                   <td>2.5 - 7.5 kg/m²</td>
                 </tr>
               </tbody>
@@ -783,7 +769,7 @@ export default function RPetGrooveProductPage() {
                   <td>0.90</td>
                 </tr>
                 <tr>
-                  <td>Test standard</td>
+                  <td>{tPage('specLabels.testStandard')}</td>
                   <td>ISO 354 / ASTM C423</td>
                 </tr>
               </tbody>
@@ -796,19 +782,19 @@ export default function RPetGrooveProductPage() {
               <tbody>
                 <tr>
                   <td>{t('specs.matComposition')}</td>
-                  <td>100% Recycled PET</td>
+                  <td>{t('specs.matRecycledPET')}</td>
                 </tr>
                 <tr>
-                  <td>Density</td>
+                  <td>{t('specs.matDensity')}</td>
                   <td>200-250 kg/m³</td>
                 </tr>
                 <tr>
-                  <td>Colors</td>
-                  <td>12 standard colors</td>
+                  <td>{t('specs.colorsLabel')}</td>
+                  <td>{t('specs.colorsVal')}</td>
                 </tr>
                 <tr>
-                  <td>Custom colors</td>
-                  <td>Available (MOQ applies)</td>
+                  <td>{t('specs.customColors')}</td>
+                  <td>{t('specs.customColorsVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -843,20 +829,20 @@ export default function RPetGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Health</td>
+                  <td>{t('specs.certHealth')}</td>
                   <td>OEKO-TEX® Standard 100</td>
                 </tr>
                 <tr>
-                  <td>Environmental</td>
-                  <td>EPD available</td>
+                  <td>{t('specs.certEnv')}</td>
+                  <td>{t('specs.certEPD')}</td>
                 </tr>
                 <tr>
                   <td>{t('specs.matEmissions')}</td>
-                  <td>Low emission / E1</td>
+                  <td>{t('specs.certVOC')}</td>
                 </tr>
                 <tr>
                   <td>{tPage('specs.recycledContent')}</td>
-                  <td>GRS certified</td>
+                  <td>{t('specs.certGRS')}</td>
                 </tr>
               </tbody>
             </table>
@@ -868,19 +854,19 @@ export default function RPetGrooveProductPage() {
               <tbody>
                 <tr>
                   <td>{t('specs.appInstall')}</td>
-                  <td>Walls & Ceilings</td>
+                  <td>{tPage('specLabels.wallsCeilings')}</td>
                 </tr>
                 <tr>
                   <td>{t('specs.appEnvironment')}</td>
-                  <td>Interior (dry areas)</td>
+                  <td>{tPage('specLabels.envVal')}</td>
                 </tr>
                 <tr>
-                  <td>Ideal for</td>
-                  <td>Offices, Meeting rooms, Lobbies</td>
+                  <td>{t('specs.appIdealFor')}</td>
+                  <td>{t('specs.appIdealVal')}</td>
                 </tr>
                 <tr>
-                  <td>Also suitable</td>
-                  <td>Restaurants, Hotels, Schools</td>
+                  <td>{t('specs.appAlso')}</td>
+                  <td>{t('specs.appAlsoVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -992,7 +978,7 @@ export default function RPetGrooveProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available • Made in Belgium • 100% Recycled
+            {t('cta2.freeNote')}
           </p>
         </div>
       </section>

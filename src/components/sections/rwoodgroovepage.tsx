@@ -246,10 +246,7 @@ export default function RWoodGrooveProductPage() {
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>
-              rWood - Groove panels transform any room into a space of natural beauty and 
-              acoustic comfort. Each panel features premium A-grade oak or walnut veneer, 
-              precisely grooved to create the signature linear aesthetic while maximizing 
-              sound absorption through integrated felt backing.
+              {t('overview.description2')}
             </p>
             <ul className="feature-list">
               <li>
@@ -279,8 +276,7 @@ export default function RWoodGrooveProductPage() {
           <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('overview.title')}</h2>
           <p>
-            Four distinct groove patterns to match any architectural vision. From classic 
-            balanced proportions to bold wide strips—find the perfect expression for your space.
+            {t('patterns.description2')}
           </p>
         </div>
 
@@ -316,9 +312,7 @@ export default function RWoodGrooveProductPage() {
             <span className="section-tag">{t('materials.tag')}</span>
             <h2>{t('patterns.title')}</h2>
             <p>
-              Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent 
-              grain patterns and superior quality. Choose from our range of oiled and painted 
-              finishes to perfectly complement your interior design.
+              {t('materials.description2')}
             </p>
             
             <div className="finish-categories">
@@ -367,16 +361,14 @@ export default function RWoodGrooveProductPage() {
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
           <p>
-            The unique groove design combined with high-quality acoustic felt creates 
-            exceptional sound absorption. Reduce echo, eliminate noise, and create 
-            spaces that are as comfortable to the ear as they are to the eye.
+            {t('acoustics.description2')}
           </p>
         </div>
 
         <div className="acoustics-main-grid">
           {/* Left: Exploded diagram */}
           <div className="exploded-diagram">
-            <div className="diagram-title">Panel Cross-Section</div>
+            <div className="diagram-title">{t('acoustics.diagramTitle')}</div>
             <div className="exploded-layers">
               <div className="exploded-layer">
                 <div className="layer-visual veneer-layer">
@@ -463,11 +455,11 @@ export default function RWoodGrooveProductPage() {
             <div className="metric-cards">
               <div className="metric-card">
                 <div className="metric-value">90%</div>
-                <div className="metric-label">Sound Absorbed</div>
+                <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
               </div>
               <div className="metric-card">
                 <div className="metric-value">ISO 354</div>
-                <div className="metric-label">Test Standard</div>
+                <div className="metric-label">{t('acoustics.testStandard')}</div>
               </div>
             </div>
 
@@ -526,10 +518,7 @@ export default function RWoodGrooveProductPage() {
             <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
             <p>
-              rWood - Groove panels feature an innovative tongue-and-groove connection 
-              system that ensures invisible joints and a cohesive surface. Whether you&apos;re 
-              a professional installer or a skilled DIYer, our system makes installation 
-              straightforward.
+              {t('installation.description2')}
             </p>
             
             <div className="installation-steps">
@@ -593,9 +582,7 @@ export default function RWoodGrooveProductPage() {
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              Every rWood - Groove panel is crafted with sustainability at its core. 
-              Our FSC® certification guarantees that the wood comes from responsibly 
-              managed forests that provide environmental, social, and economic benefits.
+              {t('sustainability.description2')}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
@@ -652,7 +639,7 @@ export default function RWoodGrooveProductPage() {
                   <td>2400 / 2780 mm</td>
                 </tr>
                 <tr>
-                  <td>Thickness</td>
+                  <td>{tPage('specLabels.thickness')}</td>
                   <td>19 mm</td>
                 </tr>
                 <tr>
@@ -705,7 +692,7 @@ export default function RWoodGrooveProductPage() {
                 </tr>
                 <tr>
                   <td>{t('specs.matFinish')}</td>
-                  <td>Oil / Lacquer</td>
+                  <td>{t('specs.finishVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -716,11 +703,11 @@ export default function RWoodGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Standard panels</td>
+                  <td>{t('specs.stdPanels')}</td>
                   <td>D-s2, d2</td>
                 </tr>
                 <tr>
-                  <td>Fire-retardant MDF</td>
+                  <td>{t('specs.fireMdfVal')}</td>
                   <td>B-s1, d0</td>
                 </tr>
                 <tr>
@@ -740,20 +727,20 @@ export default function RWoodGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Wood sourcing</td>
-                  <td>FSC® certified</td>
+                  <td>{tPage('specLabels.woodSourcing')}</td>
+                  <td>{tPage('specLabels.fscCert')}</td>
                 </tr>
                 <tr>
-                  <td>Felt certification</td>
+                  <td>{t('specs.feltCert')}</td>
                   <td>OEKO-TEX® Standard 100</td>
                 </tr>
                 <tr>
-                  <td>Environmental</td>
-                  <td>EPD available</td>
+                  <td>{t('specs.envLabel')}</td>
+                  <td>{tPage('specLabels.epd')}</td>
                 </tr>
                 <tr>
-                  <td>VOC emissions</td>
-                  <td>E1 / Low emission</td>
+                  <td>{t('specs.vocLabel')}</td>
+                  <td>{t('specs.vocVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -764,20 +751,20 @@ export default function RWoodGrooveProductPage() {
             <table>
               <tbody>
                 <tr>
-                  <td>Installation</td>
-                  <td>Walls & Ceilings</td>
+                  <td>{t('specs.appInstall')}</td>
+                  <td>{t('specs.appWalls')}</td>
                 </tr>
                 <tr>
-                  <td>Environment</td>
-                  <td>Interior (dry areas)</td>
+                  <td>{t('specs.appEnv')}</td>
+                  <td>{t('specs.appEnvVal')}</td>
                 </tr>
                 <tr>
-                  <td>Moisture-resistant</td>
-                  <td>Available for humid areas</td>
+                  <td>{t('specs.appMoist')}</td>
+                  <td>{t('specs.appMoistVal')}</td>
                 </tr>
                 <tr>
-                  <td>Connection</td>
-                  <td>Tongue & groove</td>
+                  <td>{t('specs.appConn')}</td>
+                  <td>{t('specs.appConnVal')}</td>
                 </tr>
               </tbody>
             </table>
@@ -889,7 +876,7 @@ export default function RWoodGrooveProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available • Made in Europe • FSC® Certified
+            {t('cta2.freeNote')}
           </p>
         </div>
       </section>

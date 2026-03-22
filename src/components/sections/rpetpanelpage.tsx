@@ -931,7 +931,7 @@ export default function RPETPanelProductPage() {
             </a>
           </div>
           <p className="cta-note">
-            Free samples available • Made in Belgium • 100% Recyclable
+            {t('cta2.freeNote')}
           </p>
         </div>
       </section>
