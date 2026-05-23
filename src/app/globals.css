@@ -29,9 +29,13 @@
   --charcoal: #2a2a2a;
   --deep-blue: #0d3a5c;
   
-  /* Typography */
-  --font-heading: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  /* Typography
+     The --font-syne and --font-dmsans variables are injected by next/font/google
+     from src/app/[locale]/layout.tsx onto the <html> element, with built-in
+     metric-adjusted fallbacks. We retain explicit named fallbacks here so the
+     stack still works if the CSS variable is somehow unavailable. */
+  --font-heading: var(--font-syne), 'Syne', sans-serif;
+  --font-body: var(--font-dmsans), 'DM Sans', sans-serif;
   
   /* Spacing */
   --space-xs: 0.5rem;
