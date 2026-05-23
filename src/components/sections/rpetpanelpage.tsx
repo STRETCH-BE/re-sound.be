@@ -626,7 +626,7 @@ export default function RPETPanelProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-panel/processing-cnc.jpg"
+                src="/images/products/rpet-panel/processing-cnc.webp"
                 alt="CNC processing of rPET panels"
                 fill
                 style={{ objectFit: 'cover' }}
