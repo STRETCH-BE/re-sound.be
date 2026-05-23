@@ -151,7 +151,6 @@ export default function Footer() {
           </button>
           <Link href="/privacy">{t('privacy')}</Link>
           <Link href="/terms">{t('terms')}</Link>
-          <Link href="/faq">FAQ</Link>
         </div>
       </div>
 
