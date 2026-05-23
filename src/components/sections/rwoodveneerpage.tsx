@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import SampleKitModal from './SampleKitModal';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -70,6 +71,7 @@ export default function RWoodPanelProductPage() {
   const [selectedFormat, setSelectedFormat] = useState(formatOptions[0]);
   const [selectedFinish, setSelectedFinish] = useState(finishTypes[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
+  const [sampleModalOpen, setSampleModalOpen] = useState(false);
 
   const currentHeroImage = selectedVeneer ? selectedVeneer.image : defaultHeroImage;
 
@@ -847,7 +849,14 @@ export default function RWoodPanelProductPage() {
             </div>
             <h4>{t('accessories.item3Title')}</h4>
             <p>{t('related.item3Desc')}</p>
-            <Link href="/contact" className="matching-link">{t('related.orderSamples')}</Link>
+            <button
+              type="button"
+              className="matching-link"
+              onClick={() => setSampleModalOpen(true)}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, font: 'inherit' }}
+            >
+              {t('related.orderSamples')}
+            </button>
           </div>
         </div>
       </section>
@@ -859,6 +868,13 @@ export default function RWoodPanelProductPage() {
         onSubmit={handleLeadSubmit}
         downloadFile={selectedDownload}
         isSubmitting={isSubmitting}
+      />
+
+      {/* Sample Kit Modal — opened by the "Order Sample Kit" link in the related/accessories card */}
+      <SampleKitModal
+        open={sampleModalOpen}
+        onClose={() => setSampleModalOpen(false)}
+        source="Sample Kit Request — rWood Veneer Product Page"
       />
 
       {/* ═══════════════════════════════════

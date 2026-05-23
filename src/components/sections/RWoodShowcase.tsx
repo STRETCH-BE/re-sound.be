@@ -74,6 +74,14 @@ export default function RWoodShowcase() {
   const [activeVeneer, setActiveVeneer] = useState<Veneer | null>(null);
   const [fadeKey, setFadeKey] = useState(0);
   const [sampleModalOpen, setSampleModalOpen] = useState(false);
+  // Track which CTA opened the sample modal so the lead email's Source field
+  // can distinguish hero vs swatches panel — useful for measuring CTA pull.
+  const [sampleSource, setSampleSource] = useState('Sample Kit Request — rWood Section');
+
+  function openSampleModal(source: string) {
+    setSampleSource(source);
+    setSampleModalOpen(true);
+  }
 
   const currentHero = activeVeneer?.heroImage ?? DEFAULT_HERO;
   const currentLabel = activeVeneer
@@ -128,9 +136,13 @@ export default function RWoodShowcase() {
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/contact" className="rwood-btn-ghost">
+            <button
+              type="button"
+              className="rwood-btn-ghost"
+              onClick={() => openSampleModal('Sample Kit Request — rWood Hero')}
+            >
               {t('ctaSample')}
-            </Link>
+            </button>
           </div>
         </div>
 
@@ -278,7 +290,7 @@ export default function RWoodShowcase() {
           <button
             type="button"
             className="rwood-btn-primary sample-btn"
-            onClick={() => setSampleModalOpen(true)}
+            onClick={() => openSampleModal('Sample Kit Request — rWood Veneer Collection')}
           >
             {t('ctaOrderSamples')}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -798,11 +810,13 @@ export default function RWoodShowcase() {
       `}</style>
     </section>
 
-    {/* Sample-kit modal — triggered by the "Order Sample Kit" button in the swatches panel */}
+    {/* Sample-kit modal — triggered by both the hero "Request Sample" and the
+        "Order Sample Kit" button in the veneer-collection panel. The `source`
+        is set per click so the resulting lead email distinguishes which CTA fired. */}
     <SampleKitModal
       open={sampleModalOpen}
       onClose={() => setSampleModalOpen(false)}
-      source="Sample Kit Request — rWood Veneer Section"
+      source={sampleSource}
     />
     </>
   );
