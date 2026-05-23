@@ -6,32 +6,33 @@ import { Link } from '@/i18n/navigation';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
-// Veneer collection with categories
+// Veneer collection — keys are stable identifiers; display strings come from i18n
+// (see rwoodVeneerPage.collectionData.{categories,origins,grains} in messages/*.json)
 const veneerCollections = [
   {
-    category: 'Light Naturals',
-    description: 'Serene, luminous tones that open up any space',
+    id: 'lightNaturals',
+    category: 'Light Naturals',  // English label, used as activeCollection state key
     veneers: [
-      { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-veneer/Beech-White.jpg', image: '/images/products/rwood-veneer/Beech-White.jpg', isDark: false, origin: 'Europe', grain: 'Straight to interlocked' },
-      { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-veneer/Birch-Rotary.jpg', image: '/images/products/rwood-veneer/Birch-Rotary.jpg', isDark: false, origin: 'Scandinavia', grain: 'Subtle fine grain' },
-      { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-veneer/silk-oak.jpg', image: '/images/products/rwood-veneer/silk-oak.jpg', isDark: false, origin: 'Europe', grain: 'Fine straight grain' },
+      { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-veneer/Beech-White.jpg', image: '/images/products/rwood-veneer/Beech-White.jpg', isDark: false, originKey: 'europe', grainKey: 'straightToInterlocked' },
+      { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-veneer/Birch-Rotary.jpg', image: '/images/products/rwood-veneer/Birch-Rotary.jpg', isDark: false, originKey: 'scandinavia', grainKey: 'subtleFineGrain' },
+      { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-veneer/silk-oak.jpg', image: '/images/products/rwood-veneer/silk-oak.jpg', isDark: false, originKey: 'europe', grainKey: 'fineStraightGrain' },
     ],
   },
   {
+    id: 'warmNaturals',
     category: 'Warm Naturals',
-    description: 'Rich, inviting mid-tones with timeless appeal',
     veneers: [
-      { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false, origin: 'Europe', grain: 'Cathedral grain' },
+      { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false, originKey: 'europe', grainKey: 'cathedralGrain' },
     ],
   },
   {
+    id: 'deepTones',
     category: 'Deep Tones',
-    description: 'Bold, sophisticated finishes with dramatic presence',
     veneers: [
-      { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-veneer/umber-oak.jpg', image: '/images/products/rwood-veneer/umber-oak.jpg', isDark: true, origin: 'Europe', grain: 'Pronounced grain' },
-      { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-veneer/walnut.jpg', image: '/images/products/rwood-veneer/walnut.jpg', isDark: true, origin: 'North America', grain: 'Straight to wavy' },
-      { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-veneer/smoked-oak.jpg', image: '/images/products/rwood-veneer/smoked-oak.jpg', isDark: true, origin: 'Europe', grain: 'Deep cathedral grain' },
-      { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-veneer/tobacco-walnut.jpg', image: '/images/products/rwood-veneer/tobacco-walnut.jpg', isDark: true, origin: 'North America', grain: 'Rich flowing grain' },
+      { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-veneer/umber-oak.jpg', image: '/images/products/rwood-veneer/umber-oak.jpg', isDark: true, originKey: 'europe', grainKey: 'pronouncedGrain' },
+      { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-veneer/walnut.jpg', image: '/images/products/rwood-veneer/walnut.jpg', isDark: true, originKey: 'northAmerica', grainKey: 'straightToWavy' },
+      { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-veneer/smoked-oak.jpg', image: '/images/products/rwood-veneer/smoked-oak.jpg', isDark: true, originKey: 'europe', grainKey: 'deepCathedralGrain' },
+      { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-veneer/tobacco-walnut.jpg', image: '/images/products/rwood-veneer/tobacco-walnut.jpg', isDark: true, originKey: 'northAmerica', grainKey: 'richFlowingGrain' },
     ],
   },
 ];
@@ -379,15 +380,15 @@ export default function RWoodPanelProductPage() {
             className={`filter-btn ${activeCollection === 'all' ? 'active' : ''}`}
             onClick={() => setActiveCollection('all')}
           >
-            All Veneers
+            {t('collection.filterAll')}
           </button>
           {veneerCollections.map((col) => (
             <button
-              key={col.category}
+              key={col.id}
               className={`filter-btn ${activeCollection === col.category ? 'active' : ''}`}
               onClick={() => setActiveCollection(col.category)}
             >
-              {col.category}
+              {t(`collection.categories.${col.id}`)}
             </button>
           ))}
         </div>
@@ -405,8 +406,8 @@ export default function RWoodPanelProductPage() {
               </div>
               <div className="veneer-card-info">
                 <h4>{veneer.name}</h4>
-                <span className="veneer-origin">{veneer.origin}</span>
-                <p className="veneer-grain">{veneer.grain}</p>
+                <span className="veneer-origin">{t(`collection.origins.${veneer.originKey}`)}</span>
+                <p className="veneer-grain">{t(`collection.grains.${veneer.grainKey}`)}</p>
               </div>
               {selectedVeneer?.id === veneer.id && (
                 <div className="veneer-card-selected">
