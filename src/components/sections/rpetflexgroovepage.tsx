@@ -35,6 +35,20 @@ const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
 
 export default function RPETFlexGrooveProductPage() {
   const t = useTranslations('rpetFlexGroovePage');
+  // Renders description2 below description only when distinct (handles the
+  // pre-existing data state where some locales have the same content in both
+  // fields — those render as a single paragraph; locales with genuine
+  // second paragraphs render two).
+  const desc2IfDistinct = (basePath: string): string | null => {
+    const a = t(`${basePath}.description`);
+    let b: string;
+    try { b = t(`${basePath}.description2`); } catch { return null; }
+    // next-intl returns "namespace.key" as fallback for missing keys (per
+    // getMessageFallback in i18n/request.ts). Detect that and treat as absent.
+    if (!b || b === a || b.endsWith('.description2')) return null;
+    return b;
+  };
+
   const tPage = useTranslations('productPage');
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -241,9 +255,10 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
-            <p>
-              {t('overview.description2')}
-            </p>
+            <p>{t('overview.description')}</p>
+            {desc2IfDistinct('overview') && (
+              <p>{desc2IfDistinct('overview')}</p>
+            )}
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
@@ -271,9 +286,10 @@ export default function RPETFlexGrooveProductPage() {
         <div className="flexibility-header">
           <span className="section-tag">{t('technology.tag')}</span>
           <h2>{t('technology.title')}</h2>
-          <p>
-            {t('technology.description2')}
-          </p>
+          <p>{t('technology.description')}</p>
+          {desc2IfDistinct('technology') && (
+            <p>{desc2IfDistinct('technology')}</p>
+          )}
         </div>
 
         <div className="flexibility-visual">
@@ -331,9 +347,10 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('colors.tag')}</span>
             <h2>{t('colors.title')}</h2>
-            <p>
-              {t('colors.description2')}
-            </p>
+            <p>{t('colors.description')}</p>
+            {desc2IfDistinct('colors') && (
+              <p>{desc2IfDistinct('colors')}</p>
+            )}
             
             <div className="color-grid">
               {colorOptions.map((color) => (
@@ -383,9 +400,10 @@ export default function RPETFlexGrooveProductPage() {
         <div className="acoustics-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
-          <p>
-            {t('acoustics.description2')}
-          </p>
+          <p>{t('acoustics.description')}</p>
+          {desc2IfDistinct('acoustics') && (
+            <p>{desc2IfDistinct('acoustics')}</p>
+          )}
         </div>
 
         <div className="acoustics-visual">
@@ -438,9 +456,10 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
-            <p>
-              {t('installation.description2')}
-            </p>
+            <p>{t('installation.description')}</p>
+            {desc2IfDistinct('installation') && (
+              <p>{desc2IfDistinct('installation')}</p>
+            )}
             
             <div className="installation-steps">
               <div className="install-step">
@@ -502,9 +521,10 @@ export default function RPETFlexGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
-            <p>
-              {t('sustainability.description2')}
-            </p>
+            <p>{t('sustainability.description')}</p>
+            {desc2IfDistinct('sustainability') && (
+              <p>{desc2IfDistinct('sustainability')}</p>
+            )}
             <div className="sustainability-features">
               <div className="sustain-item">
                 <span className="sustain-icon">🍾</span>
@@ -782,9 +802,10 @@ export default function RPETFlexGrooveProductPage() {
       <section className="content-section cta-section">
         <div className="cta-content">
           <h2>{t('cta.title')}</h2>
-          <p>
-            {t('cta.description2')}
-          </p>
+          <p>{t('cta.description')}</p>
+          {desc2IfDistinct('cta') && (
+            <p>{desc2IfDistinct('cta')}</p>
+          )}
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large">
               {tPage('cta.requestQuote')}

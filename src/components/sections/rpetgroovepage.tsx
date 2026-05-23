@@ -35,6 +35,20 @@ const defaultHeroImage = '/images/products/rpet-groove/rPET-Groove-Beige-Home_of
 
 export default function RPetGrooveProductPage() {
   const t = useTranslations('rpetGroovePage');
+  // Renders description2 below description only when distinct (handles the
+  // pre-existing data state where some locales have the same content in both
+  // fields — those render as a single paragraph; locales with genuine
+  // second paragraphs render two).
+  const desc2IfDistinct = (basePath: string): string | null => {
+    const a = t(`${basePath}.description`);
+    let b: string;
+    try { b = t(`${basePath}.description2`); } catch { return null; }
+    // next-intl returns "namespace.key" as fallback for missing keys (per
+    // getMessageFallback in i18n/request.ts). Detect that and treat as absent.
+    if (!b || b === a || b.endsWith('.description2')) return null;
+    return b;
+  };
+
   const tPage = useTranslations('productPage');
   const [activeSection, setActiveSection] = useState('overview');
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -245,9 +259,10 @@ export default function RPetGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
-            <p>
-              {t('overview.description2')}
-            </p>
+            <p>{t('overview.description')}</p>
+            {desc2IfDistinct('overview') && (
+              <p>{desc2IfDistinct('overview')}</p>
+            )}
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
@@ -275,9 +290,10 @@ export default function RPetGrooveProductPage() {
         <div className="recycling-content">
           <span className="section-tag">{t('fromBottles.tag')}</span>
           <h2>{t('fromBottles.title')}</h2>
-          <p>
-            {t('fromBottles.description2')}
-          </p>
+          <p>{t('fromBottles.description')}</p>
+          {desc2IfDistinct('fromBottles') && (
+            <p>{desc2IfDistinct('fromBottles')}</p>
+          )}
           
           <div className="recycling-steps">
             <div className="recycling-step">
@@ -321,9 +337,10 @@ export default function RPetGrooveProductPage() {
         <div className="colors-header">
           <span className="section-tag">{t('colors.tag')}</span>
           <h2>{t('colors.title')}</h2>
-          <p>
-            {t('colors.description2')}
-          </p>
+          <p>{t('colors.description')}</p>
+          {desc2IfDistinct('colors') && (
+            <p>{desc2IfDistinct('colors')}</p>
+          )}
         </div>
 
         <div className="colors-grid">
@@ -370,9 +387,10 @@ export default function RPetGrooveProductPage() {
         <div className="patterns-header">
           <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('patterns.title')}</h2>
-          <p>
-            {t('patterns.description2')}
-          </p>
+          <p>{t('patterns.description')}</p>
+          {desc2IfDistinct('patterns') && (
+            <p>{desc2IfDistinct('patterns')}</p>
+          )}
         </div>
 
         <div className="patterns-grid">
@@ -433,9 +451,10 @@ export default function RPetGrooveProductPage() {
         <div className="acoustics-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
-          <p>
-            {t('acoustics.description2')}
-          </p>
+          <p>{t('acoustics.description')}</p>
+          {desc2IfDistinct('acoustics') && (
+            <p>{desc2IfDistinct('acoustics')}</p>
+          )}
         </div>
 
         <div className="acoustics-main-grid">
@@ -593,9 +612,10 @@ export default function RPetGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('installation.tag')}</span>
             <h2>{t('installation.title')}</h2>
-            <p>
-              {t('installation.description2')}
-            </p>
+            <p>{t('installation.description')}</p>
+            {desc2IfDistinct('installation') && (
+              <p>{desc2IfDistinct('installation')}</p>
+            )}
             
             <div className="installation-steps">
               <div className="install-step">
@@ -679,9 +699,10 @@ export default function RPetGrooveProductPage() {
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
-            <p>
-              {t('sustainability.description2')}
-            </p>
+            <p>{t('sustainability.description')}</p>
+            {desc2IfDistinct('sustainability') && (
+              <p>{desc2IfDistinct('sustainability')}</p>
+            )}
             <div className="sustainability-features">
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
