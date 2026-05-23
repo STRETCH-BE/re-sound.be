@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { Syne, DM_Sans } from 'next/font/google';
 
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -17,6 +18,25 @@ import {
 import { locales, localeFullCodes, type Locale } from '@/i18n/config';
 
 import '@/app/globals.css';
+
+// Self-hosted fonts via next/font: eliminates the render-blocking request to
+// fonts.googleapis.com, automatically adds metric-adjusted fallbacks (zero CLS),
+// and preloads the woff2 from the same origin. Exposed as CSS variables that
+// globals.css composes with explicit named fallbacks.
+const syne = Syne({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-syne',
+  display: 'swap',
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-dmsans',
+  display: 'swap',
+});
 
 // Generate static params for all locales (for static export)
 export function generateStaticParams() {
@@ -90,20 +110,8 @@ export default async function LocaleLayout({
   const htmlLang = localeFullCodes[locale as Locale] ?? locale;
 
   return (
-    <html lang={htmlLang}>
+    <html lang={htmlLang} className={`${syne.variable} ${dmSans.variable}`}>
       <head>
-        {/* Preconnect to font servers for faster loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-          rel="stylesheet"
-        />
-
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

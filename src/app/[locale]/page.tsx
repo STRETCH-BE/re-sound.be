@@ -9,7 +9,9 @@ import CircularLoop from '@/components/sections/CircularLoop';
 import WhyCards from '@/components/sections/WhyCards';
 import DualCTA from '@/components/sections/DualCTA';
 
+import JsonLd from '@/components/seo/JsonLd';
 import { buildAlternates } from '@/lib/seo';
+import { organizationSchema } from '@/lib/structured-data';
 
 interface HomePageProps {
   params: { locale: string };
@@ -48,6 +50,9 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
 
   return (
     <>
+      {/* Schema.org Organization — sitewide entity for rich results & Knowledge Graph */}
+      <JsonLd data={organizationSchema()} />
+
       {/* Dual-split fullscreen hero: rWood left / Circular right */}
       <Hero />
 
