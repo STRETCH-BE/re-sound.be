@@ -19,13 +19,13 @@
     "divideTitle": "Divide Freestanding Acoustic Screens | Re-Sound",
     "divideDescription": "Freestanding acoustic dividers with magnetic modular connection. Flexible space management, dual-sided absorption, 100% recycled. Made in Belgium.",
     "rwoodGrooveTitle": "rWood Groove Acoustic Wood Panels | Re-Sound",
-    "rwoodGrooveDescription": "Premium grooved acoustic panels with FSC-certified wood veneer on a recycled felt core. Class A absorption, natural oak and walnut finishes. Made in Belgium.",
+    "rwoodGrooveDescription": "Premium grooved acoustic panels with FSC-certified wood veneer on a recycled felt core. Class A absorption, natural oak and walnut finishes. Made in Europe.",
     "rwoodPerfTitle": "rWood Perf Perforated Acoustic Wood Panels | Re-Sound",
-    "rwoodPerfDescription": "Classic perforated wood acoustic panels with FSC-certified veneer. Broadband absorption, tunable performance, multiple perforation patterns. Made in Belgium.",
+    "rwoodPerfDescription": "Classic perforated wood acoustic panels with FSC-certified veneer. Broadband absorption, tunable performance, multiple perforation patterns. Made in Europe.",
     "rwoodMicroTitle": "rWood Micro Micro-Perforated Acoustic Wood Panels | Re-Sound",
-    "rwoodMicroDescription": "Precision micro-perforated acoustic wood panels. Dual absorption mechanism, highest fire safety, backlit option available. FSC certified. Made in Belgium.",
+    "rwoodMicroDescription": "Precision micro-perforated acoustic wood panels. Dual absorption mechanism, highest fire safety, backlit option available. FSC certified. Made in Europe.",
     "rwoodVeneerTitle": "rWood Panel Acoustic Wood Veneer Panels | Re-Sound",
-    "rwoodVeneerDescription": "Smooth wood veneer acoustic panels. 10 curated species, furniture-grade construction, EPD available. FSC certified. Made in Belgium.",
+    "rwoodVeneerDescription": "Smooth wood veneer acoustic panels. 10 curated species, furniture-grade construction, EPD available. FSC certified. Made in Europe.",
     "rpetGrooveTitle": "rPET Groove Recycled PET Acoustic Panels | Re-Sound",
     "rpetGrooveDescription": "Grooved acoustic panels made from 100% recycled PET bottles. 12 designer colors, 3 thicknesses (12/24/36 mm), B-s1,d0 fire rating. Made in Belgium.",
     "rpetPanelTitle": "rPET Panel Recycled PET Acoustic Panels | Re-Sound",
@@ -47,7 +47,7 @@
     "subtitle": "High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.",
     "ctaPrimary": "Discover Products",
     "ctaSecondary": "How It Works",
-    "panelTag": "100% Recycled Materials",
+    "panelTag": "Recycled Materials",
     "rwood": {
       "badge": "rWood Series · Natural Finish Line",
       "title": "Acoustic panels with",
@@ -64,7 +64,7 @@
       "badge": "Circular Range · Interior · Solid · Divide · rPET",
       "title": "Designed to return —",
       "titleHighlight": "and return again.",
-      "subtitle": "100% recycled input. Free take-back at end of life. Our circular system ensures your acoustic investment never becomes landfill.",
+      "subtitle": "Recycled input. Free take-back at end of life. Our circular system ensures your acoustic investment never becomes landfill.",
       "ctaPrimary": "View All Products",
       "ctaSecondary": "How It Works",
       "statRecycled": "Recycled input",
@@ -75,7 +75,7 @@
     }
   },
   "ticker": {
-    "recycled": "100% Recycled Materials",
+    "recycled": "Recycled Materials",
     "classA": "Class A Sound Absorption",
     "fire": "B-s1,d0 Fire Rated",
     "belgium": "Made in Belgium",
@@ -1209,7 +1209,8 @@
       "usp1": "100% Recycled PET",
       "usp2": "Up to NRC 0.90",
       "usp3": "12 Designer Colors",
-      "colorSelector": "Select Color"
+      "colorSelector": "Select Color",
+      "description2": ""
     },
     "overview": {
       "tag": "CIRCULAR DESIGN",
@@ -1219,7 +1220,7 @@
       "feature2": "Precision CNC-cut groove patterns",
       "feature3": "Lightweight and easy to handle",
       "feature4": "Suitable for walls and ceilings",
-      "description2": "rPET - Groove panels bring a contemporary touch to any space while reducing noise disturbances. The visible slat design creates visual depth and texture, perfect for modern offices, meeting rooms, lobbies, restaurants, and reception areas."
+      "description2": ""
     },
     "fromBottles": {
       "tag": "THE JOURNEY",
@@ -1238,7 +1239,7 @@
       "step4Desc": "CNC precision cutting creates the signature groove patterns",
       "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product.",
       "statLabel": "Recycled bottles per panel",
-      "description2": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product."
+      "description2": ""
     },
     "patterns": {
       "tag": "DESIGN OPTIONS",
@@ -1246,7 +1247,7 @@
       "description": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency.",
       "groovesLabel": "grooves",
       "spacingLabel": "Spacing:",
-      "description2": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency."
+      "description2": ""
     },
     "colors": {
       "title": "Multiple Designer Colors",
@@ -1258,8 +1259,8 @@
       "feature2Desc": "Vacuum or wipe with damp cloth",
       "feature3": "Consistent",
       "feature3Desc": "Batch-to-batch color consistency guaranteed",
-      "colorsDescription": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance.",
-      "description2": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
+      "description2": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance.",
+      "description": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
     },
     "thickness": {
       "title": "Select Thickness",
@@ -1286,7 +1287,7 @@
       "layer3Desc": "Direct wall/ceiling attachment",
       "waveLabel": "Sound waves absorbed",
       "certNote": "Tested according to ISO 354 & ASTM C423",
-      "description2": "The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye."
+      "description2": ""
     },
     "installation": {
       "tag": "EASY INSTALL",
@@ -1305,7 +1306,7 @@
       "mounting2": "Z-clips",
       "mounting3": "Screws",
       "mounting4": "Battens",
-      "description2": "rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the panels, and multiple mounting options give you flexibility for any project."
+      "description2": ""
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -1320,7 +1321,7 @@
       "badge2Desc": "Can be recycled at end of life",
       "badge3Desc": "We collect panels for recycling",
       "badge4Desc": "Short supply chains, low emissions",
-      "description2": "rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of life. We offer free take-back to ensure nothing goes to waste."
+      "description2": ""
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -1413,7 +1414,8 @@
       "app1Desc": "Open plan workspaces, meeting rooms, focus zones",
       "app2Desc": "Hotels, restaurants, lobbies, reception areas",
       "app3Desc": "Schools, universities, libraries",
-      "app4Desc": "Waiting rooms, consultation rooms, corridors"
+      "app4Desc": "Waiting rooms, consultation rooms, corridors",
+      "description2": ""
     },
     "downloads": {
       "installationGuide": "Installation Guide",
@@ -2312,7 +2314,8 @@
       "usp2": "Fire Retardant",
       "usp3": "100% Recycled PET",
       "colorSelector": "Select Color",
-      "colorPlaceholder": "Select a color"
+      "colorPlaceholder": "Select a color",
+      "description2": ""
     },
     "overview": {
       "tag": "INNOVATION",
@@ -2322,7 +2325,7 @@
       "feature2": "Works with inner and outer radii",
       "feature3": "Ribbed texture adds depth and rhythm",
       "feature4": "Sound-dampening properties built-in",
-      "description2": "Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and outer radii, their flexible structure allows for seamless transitions along walls, columns, and other rounded architectural elements."
+      "description2": ""
     },
     "technology": {
       "tag": "TECHNOLOGY",
@@ -2337,14 +2340,14 @@
       "feature3Desc": "Efficient design reduces cutting waste",
       "flatPanel": "Flat Panel",
       "curvedApp": "Curved Application",
-      "description2": "Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — a series of linear grooves that enable flexibility while giving the surface a sculptural relief."
+      "description2": ""
     },
     "colors": {
       "tag": "REFINED COLLECTION",
       "title": "12 Curated Colors",
       "description": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance.",
       "grooveDir": "Groove Direction",
-      "description2": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance."
+      "description2": ""
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -2360,7 +2363,7 @@
       "layer2Label": "Precision V-Cuts",
       "thicknessLabel": "Thickness",
       "materialLabel": "Fire-Retardant PET Felt",
-      "description2": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide effective sound absorption while maintaining visual continuity across curved surfaces. The grooved texture enhances acoustic performance."
+      "description2": ""
     },
     "installation": {
       "tag": "EASY INSTALL",
@@ -2374,7 +2377,7 @@
       "step3Desc": "Gently bend the panel to follow the curved surface",
       "step4Title": "Secure & Finish",
       "step4Desc": "Press firmly to ensure full adhesion along the curve",
-      "description2": "Designed to span standard floor-to-ceiling heights, the panels simplify alignment and reduce installation time. The adaptable form makes them a practical solution for interiors requiring both sound absorption and design flexibility."
+      "description2": ""
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
@@ -2388,7 +2391,7 @@
       "badge4": "Low VOC",
       "badge3Desc": "Reduced transport emissions",
       "badge4Desc": "Safe for indoor environments",
-      "description2": "Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensures that these panels can be recycled again at the end of their lifecycle."
+      "description2": ""
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -2456,7 +2459,8 @@
       "app1Desc": "Wrap structural columns with seamless acoustic coverage",
       "app2Desc": "Follow organic wall shapes for continuous coverage",
       "app3Desc": "Line curved openings and architectural features",
-      "app4Desc": "Create striking curved feature walls"
+      "app4Desc": "Create striking curved feature walls",
+      "description2": ""
     },
     "cta": {
       "title": "Ready to Curve Your Acoustics?",

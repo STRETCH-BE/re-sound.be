@@ -12,19 +12,19 @@
     "contactDescription": "Neem contact op met Re-Sound voor offertes, vragen of samenwerkingsaanvragen.",
     "blogTitle": "Blog",
     "blogDescription": "Inzichten over circulaire economie, akoestiek en duurzaam ontwerp van het Re-Sound team.",
-    "rwoodVeneerDescription": "Gladde houtfineer akoestische panelen. 10 geselecteerde soorten, meubelkwaliteit constructie, EPD beschikbaar. FSC gecertificeerd. Gemaakt in België.",
+    "rwoodVeneerDescription": "Gladde houtfineer akoestische panelen. 10 geselecteerde soorten, meubelkwaliteit constructie, EPD beschikbaar. FSC gecertificeerd. Gemaakt in Europa.",
     "rpetGrooveTitle": "rPET Groove Gerecycleerde PET Akoestische Panelen | Re-Sound",
     "rpetGrooveDescription": "Gegroeide akoestische panelen van 100% gerecycleerde PET-flessen. 12 designerkleuren, 3 diktes (12/24/36 mm), B-s1,d0 brandklasse. Gemaakt in België.",
     "rwoodVeneerTitle": "rWood Panel Akoestische Houtfineer Panelen | Re-Sound",
     "rpetPanelTitle": "rPET Panel Gerecycleerde PET Akoestische Panelen | Re-Sound",
     "rwoodPerfTitle": "rWood Perf Geperforeerde Akoestische Houtpanelen | Re-Sound",
     "rwoodMicroTitle": "rWood Micro Micro-Geperforeerde Akoestische Houtpanelen | Re-Sound",
-    "rwoodPerfDescription": "Klassieke geperforeerde akoestische houtpanelen met FSC-gecertificeerd fineer. Breedbandabsorptie, afstelbare prestaties, meerdere perforatiepatronen. Gemaakt in België.",
+    "rwoodPerfDescription": "Klassieke geperforeerde akoestische houtpanelen met FSC-gecertificeerd fineer. Breedbandabsorptie, afstelbare prestaties, meerdere perforatiepatronen. Gemaakt in Europa.",
     "divideDescription": "Vrijstaande akoestische scheidingswanden met magnetische modulaire verbinding. Flexibel ruimtebeheer, tweezijdige absorptie, 100% gerecycleerd. Gemaakt in België.",
-    "rwoodMicroDescription": "Precisie micro-geperforeerde akoestische houtpanelen. Dubbel absorptiemechanisme, hoogste brandveiligheid, verlichtingsoptie beschikbaar. FSC gecertificeerd. Gemaakt in België.",
+    "rwoodMicroDescription": "Precisie micro-geperforeerde akoestische houtpanelen. Dubbel absorptiemechanisme, hoogste brandveiligheid, verlichtingsoptie beschikbaar. FSC gecertificeerd. Gemaakt in Europa.",
     "rwoodGrooveTitle": "rWood Groove Akoestische Houtpanelen | Re-Sound",
     "divideTitle": "Divide Vrijstaande Akoestische Schermen | Re-Sound",
-    "rwoodGrooveDescription": "Premium gegroeide akoestische panelen met FSC-gecertificeerd houtfineer op een gerecycleerde viltkern. Klasse A absorptie, naturel eiken en walnoten afwerkingen. Gemaakt in België.",
+    "rwoodGrooveDescription": "Premium gegroeide akoestische panelen met FSC-gecertificeerd houtfineer op een gerecycleerde viltkern. Klasse A absorptie, naturel eiken en walnoten afwerkingen. Gemaakt in Europa.",
     "interiorDescription": "Modulaire akoestische wandpanelen gemaakt van 100% gerecycleerd textiel. Klasse A geluidsabsorptie (αw 1.0), afneembare wasbare bekleding, gemaakt in België. Vanaf €387 per set.",
     "rpetPanelDescription": "Veelzijdige vlakke akoestische panelen van 100% gerecycleerd PET. Bewerkbaar als MDF, OEKO-TEX® gecertificeerd, Klasse A+ emissies. Wanden, plafonds, meubilair. Gemaakt in België.",
     "rpetFlexGrooveTitle": "rPET Flex Groove Flexibele Akoestische Panelen | Re-Sound",
@@ -47,12 +47,12 @@
     "subtitle": "Hoogwaardige akoestische oplossingen gemaakt van gerecycleerde materialen. Wij transformeren afval tot stilte—ontworpen voor de planeet, gemaakt in België.",
     "ctaPrimary": "Ontdek Producten",
     "ctaSecondary": "Hoe Het Werkt",
-    "panelTag": "100% Gerecycleerde Materialen",
+    "panelTag": "Gerecycleerde Materialen",
     "circular": {
       "badge": "Circulair Gamma · Interior · Solid · Divide · rPET",
       "title": "Ontworpen om terug te keren —",
       "titleHighlight": "keer op keer.",
-      "subtitle": "100% gerecycleerde grondstof. Gratis terugname aan het einde van de levensduur. Ons circulair systeem zorgt ervoor dat jouw akoestische investering nooit op de stortplaats belandt.",
+      "subtitle": "Gerecycleerde grondstof. Gratis terugname aan het einde van de levensduur. Ons circulair systeem zorgt ervoor dat jouw akoestische investering nooit op de stortplaats belandt.",
       "ctaPrimary": "Alle Producten Bekijken",
       "ctaSecondary": "Hoe het Werkt",
       "statRecycled": "Gerecycleerde grondstof",
@@ -661,7 +661,7 @@
     "contactUs": "Contacteer Ons"
   },
   "ticker": {
-    "recycled": "100% Gerecycleerde Materialen",
+    "recycled": "Gerecycleerde Materialen",
     "classA": "Klasse A Geluidsabsorptie",
     "fire": "B-s1,d0 Brandklasse",
     "belgium": "Gemaakt in België",
@@ -1209,7 +1209,8 @@
       "usp1": "100% Gerecycleerd PET",
       "usp2": "Tot NRC 0.90",
       "usp3": "12 Designerkleuren",
-      "colorSelector": "Kleur Kiezen"
+      "colorSelector": "Kleur Kiezen",
+      "description2": ""
     },
     "overview": {
       "tag": "CIRCULAIR ONTWERP",
@@ -1258,8 +1259,8 @@
       "feature2Desc": "Stofzuigen of afvegen met vochtige doek",
       "feature3": "Consistentie gegarandeerd",
       "feature3Desc": "Batch-tot-batch kleurconsistentie gegarandeerd",
-      "colorsDescription": "Van neutrale tinten tot gedurfde accenten past onze gecureerde kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert.",
-      "description2": "Van neutrale tinten tot gedurfde accenten past onze kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert."
+      "description2": "Van neutrale tinten tot gedurfde accenten past onze kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert.",
+      "description": "Van neutrale tinten tot gedurfde accenten past onze gecureerde kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert."
     },
     "thickness": {
       "title": "Kies Dikte",
@@ -1413,7 +1414,8 @@
       "app1Desc": "Open werkruimtes, vergaderzalen, focuszones",
       "app2Desc": "Hotels, restaurants, lobby's, recepties",
       "app3Desc": "Scholen, universiteiten, bibliotheken",
-      "app4Desc": "Wachtkamers, spreekkamers, gangen"
+      "app4Desc": "Wachtkamers, spreekkamers, gangen",
+      "description2": ""
     },
     "downloads": {
       "installationGuide": "Installatiehandleiding",
@@ -2315,7 +2317,8 @@
       "usp3": "100% Gerecycleerd PET",
       "title": "rPET Flex-Groove",
       "colorSelector": "Kleur Kiezen",
-      "colorPlaceholder": "Kies een kleur"
+      "colorPlaceholder": "Kies een kleur",
+      "description2": ""
     },
     "overview": {
       "tag": "INNOVATIE",
@@ -2459,7 +2462,8 @@
       "app1Desc": "Structurele kolommen bekleden met naadloze akoestische dekking",
       "app2Desc": "Organische wandvormen volgen voor continue dekking",
       "app3Desc": "Gebogen openingen en architectonische elementen bekleden",
-      "app4Desc": "Opvallende gebogen accentwanden creëren"
+      "app4Desc": "Opvallende gebogen accentwanden creëren",
+      "description2": ""
     },
     "cta": {
       "title": "Klaar om uw Akoestiek te Buigen?",

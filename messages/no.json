@@ -47,7 +47,7 @@
     "subtitle": "Høytydende akustikkløsninger laget av gjenvunne materialer. Vi forvandler avfall til stillhet.",
     "ctaPrimary": "Oppdag produkter",
     "ctaSecondary": "Slik fungerer det",
-    "panelTag": "100% Gjenvunnede materialer",
+    "panelTag": "Gjenvunnede materialer",
     "rwood": {
       "badge": "rWood Serie · Naturlig Overflate Linje",
       "title": "Akustikkpaneler med",
@@ -64,7 +64,7 @@
       "badge": "Sirkulær Serie · Interior · Solid · Divide · rPET",
       "title": "Designet for å komme tilbake —",
       "titleHighlight": "og komme tilbake igjen.",
-      "subtitle": "100% gjenvunnet inngang. Gratis tilbaketaking ved endt levetid. Vårt sirkulære system sikrer at din akustiske investering aldri blir avfall.",
+      "subtitle": "Gjenvunnet inngang. Gratis tilbaketaking ved endt levetid. Vårt sirkulære system sikrer at din akustiske investering aldri blir avfall.",
       "ctaPrimary": "Se alle produkter",
       "ctaSecondary": "Slik fungerer det",
       "statRecycled": "Gjenvunnet inngang",
@@ -75,7 +75,7 @@
     }
   },
   "ticker": {
-    "recycled": "100% Gjenvunnede materialer",
+    "recycled": "Gjenvunnede materialer",
     "classA": "Klasse A lydabsorpsjon",
     "fire": "B-s1,d0 Fire Rated",
     "belgium": "Laget i Belgia",
@@ -1209,7 +1209,8 @@
       "usp1": "100% gjenvunnet PET",
       "usp2": "Klasse A",
       "usp3": "12 Designfarger",
-      "colorSelector": "Velg farge"
+      "colorSelector": "Velg farge",
+      "description2": ""
     },
     "overview": {
       "tag": "OVERSIKT",
@@ -1219,7 +1220,7 @@
       "feature2": "Klasse A lydabsorpsjon (NRC opptil 0,90)",
       "feature3": "Holdbar og fargerik finish takket være dope-farging",
       "feature4": "Tilgjengelig i tykkelsene 12 mm, 24 mm og 36 mm",
-      "description2": "rPET - Groove panels bring a contemporary touch to any space while reducing noise disturbances. The visible slat design creates visual depth and texture, perfect for modern offices, meeting rooms, lobbies, restaurants, and reception areas."
+      "description2": ""
     },
     "fromBottles": {
       "tag": "REISEN",
@@ -1238,7 +1239,7 @@
       "step4Desc": "CNC precision cutting creates the signature groove patterns",
       "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product.",
       "statLabel": "Recycled bottles per panel",
-      "description2": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product."
+      "description2": ""
     },
     "patterns": {
       "tag": "MØNSTRE",
@@ -1246,7 +1247,7 @@
       "description": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency.",
       "groovesLabel": "grooves",
       "spacingLabel": "Spacing:",
-      "description2": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency."
+      "description2": ""
     },
     "colors": {
       "title": "12 Levende Farger",
@@ -1258,8 +1259,8 @@
       "feature2Desc": "Flekkbestandig overflate, kan tørkes av med fuktig klut",
       "feature3": "Ingen Falming",
       "feature3Desc": "Fargeringsprosessen sikrer konsistente farger over hele panelet",
-      "colorsDescription": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance.",
-      "description2": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
+      "description2": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance.",
+      "description": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
     },
     "thickness": {
       "title": "Velg tykkelse",
@@ -1286,7 +1287,7 @@
       "layer3Desc": "Direct wall/ceiling attachment",
       "waveLabel": "Sound waves absorbed",
       "certNote": "Tested according to ISO 354 & ASTM C423",
-      "description2": "The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye."
+      "description2": ""
     },
     "installation": {
       "tag": "ENKEL INSTALLASJON",
@@ -1305,7 +1306,7 @@
       "mounting2": "Z-clips",
       "mounting3": "Screws",
       "mounting4": "Battens",
-      "description2": "rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the panels, and multiple mounting options give you flexibility for any project."
+      "description2": ""
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
@@ -1320,7 +1321,7 @@
       "badge2Desc": "Gratis retur av paneler ved endt levetid",
       "badge3Desc": "Laget i Belgia med korte forsyningskjeder",
       "badge4Desc": "Sertifisert for menneskelig sikkerhet",
-      "description2": "rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of life. We offer free take-back to ensure nothing goes to waste."
+      "description2": ""
     },
     "specs": {
       "tag": "SPESIFIKASJONER",
@@ -1413,7 +1414,8 @@
       "app1Desc": "Open plan workspaces, meeting rooms, focus zones",
       "app2Desc": "Hotels, restaurants, lobbies, reception areas",
       "app3Desc": "Schools, universities, libraries",
-      "app4Desc": "Waiting rooms, consultation rooms, corridors"
+      "app4Desc": "Waiting rooms, consultation rooms, corridors",
+      "description2": ""
     },
     "downloads": {
       "installationGuide": "Installasjonsveiledning",
@@ -2315,7 +2317,8 @@
       "usp2": "Branndempende",
       "usp3": "100% gjenvunnet PET",
       "colorSelector": "Velg farge",
-      "colorPlaceholder": "Select a color"
+      "colorPlaceholder": "Select a color",
+      "description2": ""
     },
     "overview": {
       "tag": "INNOVATION",
@@ -2325,7 +2328,7 @@
       "feature2": "Works with inner and outer radii",
       "feature3": "Ribbed texture adds depth and rhythm",
       "feature4": "Sound-dampening properties built-in",
-      "description2": "Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and outer radii, their flexible structure allows for seamless transitions along walls, columns, and other rounded architectural elements."
+      "description2": ""
     },
     "technology": {
       "tag": "TEKNOLOGI",
@@ -2340,14 +2343,14 @@
       "feature3Desc": "Efficient design reduces cutting waste",
       "flatPanel": "Flat Panel",
       "curvedApp": "Curved Application",
-      "description2": "Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — a series of linear grooves that enable flexibility while giving the surface a sculptural relief."
+      "description2": ""
     },
     "colors": {
       "tag": "RAFFINERT KOLLEKTION",
       "title": "12 Curated Colors",
       "description": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance.",
       "grooveDir": "Groove Direction",
-      "description2": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance."
+      "description2": ""
     },
     "acoustics": {
       "tag": "PERFORMANCE",
@@ -2363,7 +2366,7 @@
       "layer2Label": "Precision V-Cuts",
       "thicknessLabel": "Tykkelse",
       "materialLabel": "Fire-Retardant PET Felt",
-      "description2": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide effective sound absorption while maintaining visual continuity across curved surfaces. The grooved texture enhances acoustic performance."
+      "description2": ""
     },
     "installation": {
       "tag": "ENKEL INSTALLASJON",
@@ -2377,7 +2380,7 @@
       "step3Desc": "Gently bend the panel to follow the curved surface",
       "step4Title": "Secure & Finish",
       "step4Desc": "Press firmly to ensure full adhesion along the curve",
-      "description2": "Designed to span standard floor-to-ceiling heights, the panels simplify alignment and reduce installation time. The adaptable form makes them a practical solution for interiors requiring both sound absorption and design flexibility."
+      "description2": ""
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
@@ -2391,7 +2394,7 @@
       "badge4": "Low VOC",
       "badge3Desc": "Reduced transport emissions",
       "badge4Desc": "Safe for indoor environments",
-      "description2": "Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensures that these panels can be recycled again at the end of their lifecycle."
+      "description2": ""
     },
     "specs": {
       "tag": "TECHNICAL",
@@ -2459,7 +2462,8 @@
       "app1Desc": "Wrap structural columns with seamless acoustic coverage",
       "app2Desc": "Follow organic wall shapes for continuous coverage",
       "app3Desc": "Line curved openings and architectural features",
-      "app4Desc": "Create striking curved feature walls"
+      "app4Desc": "Create striking curved feature walls",
+      "description2": ""
     },
     "cta": {
       "title": "Klar til å kurve akustikken din?",
