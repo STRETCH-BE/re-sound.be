@@ -15,7 +15,7 @@ export default function ProductsMosaic() {
       tall: true,
     },
     {
-      slug: 'rWood-Perf',
+      slug: 'rwood-perf',
       series: 'rWood-Perf series · RW-P',
       image: '/images/products/rwood-perf/rWood-Perf_hero.jpg',
       tall: false,
