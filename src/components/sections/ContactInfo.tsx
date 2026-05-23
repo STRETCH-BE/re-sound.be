@@ -23,8 +23,8 @@ export default function ContactInfo() {
         </svg>
       ),
       label: t('phone'),
-      value: '+32 (0)3 XXX XX XX',
-      href: 'tel:+32XXXXXXXXX',
+      value: '+32 (0)4 854 830 35',
+      href: 'tel:+32485483035',
     },
     {
       icon: (
