@@ -34,9 +34,15 @@ const EMPTY: SampleFormData = {
 interface Props {
   open: boolean;
   onClose: () => void;
+  /**
+   * Free-text identifier for where on the site the modal was triggered from.
+   * Shown in the lead email's "Source" field. Defaults to the homepage label
+   * to keep backward compatibility with existing callers.
+   */
+  source?: string;
 }
 
-export default function SampleKitModal({ open, onClose }: Props) {
+export default function SampleKitModal({ open, onClose, source = 'Sample Kit Request — Homepage' }: Props) {
   const [form, setForm] = useState<SampleFormData>(EMPTY);
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -72,7 +78,7 @@ export default function SampleKitModal({ open, onClose }: Props) {
           companyName:  form.company,
           position:     '',
           companyType:  '',
-          source:       'Sample Kit Request — Homepage',
+          source:       source,
           downloadedFile: `Samples: ${form.samples.join(', ')}`,
           extraFields: {
             shippingAddress: `${form.address}, ${form.city}, ${form.country}`,

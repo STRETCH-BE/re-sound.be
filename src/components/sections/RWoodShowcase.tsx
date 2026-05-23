@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
+import SampleKitModal from './SampleKitModal';
 
 interface Veneer {
   name: string;
@@ -72,6 +73,7 @@ export default function RWoodShowcase() {
   const t = useTranslations('rwood');
   const [activeVeneer, setActiveVeneer] = useState<Veneer | null>(null);
   const [fadeKey, setFadeKey] = useState(0);
+  const [sampleModalOpen, setSampleModalOpen] = useState(false);
 
   const currentHero = activeVeneer?.heroImage ?? DEFAULT_HERO;
   const currentLabel = activeVeneer
@@ -94,6 +96,7 @@ export default function RWoodShowcase() {
   ];
 
   return (
+    <>
     <section className="rwood-section">
 
       {/* ── HERO IMAGE + TEXT OVERLAY ── */}
@@ -272,12 +275,16 @@ export default function RWoodShowcase() {
             })}
           </div>
 
-          <Link href="/contact" className="rwood-btn-primary sample-btn">
+          <button
+            type="button"
+            className="rwood-btn-primary sample-btn"
+            onClick={() => setSampleModalOpen(true)}
+          >
             {t('ctaOrderSamples')}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14m-7-7l7 7-7 7" />
             </svg>
-          </Link>
+          </button>
         </div>
       </div>
 
@@ -790,5 +797,13 @@ export default function RWoodShowcase() {
         }
       `}</style>
     </section>
+
+    {/* Sample-kit modal — triggered by the "Order Sample Kit" button in the swatches panel */}
+    <SampleKitModal
+      open={sampleModalOpen}
+      onClose={() => setSampleModalOpen(false)}
+      source="Sample Kit Request — rWood Veneer Section"
+    />
+    </>
   );
 }
