@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Endurunnið frá uppruna. Hringrásarmiðuð hönnun.",
     "homeDescription": "Hávirkar hljóðlausnir úr endurunnnum efnum. Við breytum úrgangi í þögn – hannað fyrir plánetuna, framleitt í Belgíu.",
     "productsTitle": "Vörur",
     "productsDescription": "Kannaðu úrval okkar af hringrásarlegum hljóðpanelar: Interior, Solid og Divide. 100% endurunnin, 100% endurvinnanleg, framleidd í Belgíu.",
@@ -28,7 +29,9 @@
     "rpetGrooveTitle": "rPET Groove Endurunnin PET Hljóðpanel | Re-Sound",
     "rpetGrooveDescription": "Drillað hljóðpanel úr 100% endurunnnum PET-flöskum. 12 hönnunarliturlit, 3 þykktir (12/24/36 mm).",
     "rpetPanelTitle": "rPET Panel Endurunnin PET Hljóðpanel | Re-Sound",
-    "rpetPanelDescription": "Fjölhæfar flettar hljóðpaneler úr 100% endurunnnum PET. Unnið eins og MDF, OEKO-TEX® vottað, flokkur A."
+    "rpetPanelDescription": "Fjölhæfar flettar hljóðpaneler úr 100% endurunnnum PET. Unnið eins og MDF, OEKO-TEX® vottað, flokkur A.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove sveigjanleg hljóðplötur | Re-Sound",
+    "rpetFlexGrooveDescription": "Sveigjanlegar rifluðar hljóðplötur úr 100% endurunnu PET. Beygjanlegar fyrir bogna fleti, súlur og sérsmíðaðar uppsetningar. OEKO-TEX®-vottaðar."
   },
   "nav": {
     "products": "Vörur",
@@ -492,7 +495,8 @@
         "info": "Product Information",
         "partnership": "Partnership Inquiry",
         "other": "Annað"
-      }
+      },
+      "privacyNotice": "Með því að senda þetta eyðublað samþykkir þú <link>persónuverndarstefnu okkar</link>."
     },
     "info": {
       "title": "Sambandsupplýsingar",
@@ -675,14 +679,31 @@
     "contact": "Samband",
     "allProducts": "Allar vörur",
     "copyright": "© {year} Re-Sound. All rights reserved.",
+    "manageCookies": "Stjórna vafrakökum",
     "privacy": "Persónuverndarstefna",
     "terms": "Þjónustuskilmálar"
   },
   "cookies": {
-    "title": "Við notum kökur",
-    "description": "We use cookies to improve your experience and analyze site traffic. By accepting, you agree to our use of cookies.",
-    "accept": "Samþykkja allt",
-    "reject": "Hafna öllu"
+    "title": "Vafrakökustillingar",
+    "description": "Við notum vafrakökur til að keyra síðuna, skilja hvernig þú notar hana og (með leyfi þínu) mæla árangur markaðssetningar.",
+    "readPolicy": "Lesa persónuverndarstefnuna",
+    "acceptAll": "Samþykkja allt",
+    "rejectAll": "Hafna öllu",
+    "customise": "Sérsníða",
+    "savePreferences": "Vista val",
+    "alwaysOn": "Alltaf virkt",
+    "necessary": {
+      "title": "Nauðsynlegar",
+      "description": "Nauðsynlegar fyrir virkni síðunnar. Alltaf virkar."
+    },
+    "analytics": {
+      "title": "Tölfræði",
+      "description": "Nafnlaus tölfræði um hvernig gestir nota síðuna (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Markaðssetning",
+      "description": "Notað til að mæla árangur auglýsinga og birta viðeigandi efni (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Síða finnst ekki",
@@ -2447,6 +2468,18 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • 100% Recycled"
+    }
+  },
+  "legal": {
+    "draftBanner": "DRÖG — Þetta skjal er vinnuútgáfa. Láttu lögfræðing yfirfara áður en það er birt.",
+    "lastUpdated": "Síðast uppfært",
+    "privacy": {
+      "title": "Persónuverndarstefna",
+      "subtitle": "Hvernig Re-Sound safnar, notar og verndar persónuupplýsingar þínar"
+    },
+    "terms": {
+      "title": "Notkunarskilmálar",
+      "subtitle": "Skilmálar fyrir notkun á Re-Sound vefsvæðinu"
     }
   }
 }

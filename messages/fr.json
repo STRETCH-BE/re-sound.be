@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Recyclé à l'origine. Circulaire par conception.",
     "homeDescription": "Solutions acoustiques haute performance fabriquées à partir de matériaux recyclés. Nous transformons les déchets en silence—conçu pour la planète, fabriqué en Belgique.",
     "productsTitle": "Produits",
     "productsDescription": "Découvrez notre gamme de panneaux acoustiques circulaires : Interior, Solid et Divide. 100% recyclés, 100% recyclables.",
@@ -26,6 +27,8 @@
     "rwoodGrooveDescription": "Panneaux acoustiques rainurés premium avec placage bois certifié FSC sur un cœur en feutre recyclé. Absorption Classe A, finitions chêne et noyer naturels. Fabriqué en Belgique.",
     "interiorDescription": "Panneaux muraux acoustiques modulaires fabriqués à partir de 100% de textiles recyclés. Absorption sonore Classe A (αw 1,0), revêtement lavable amovible, fabriqué en Belgique. À partir de €387 par lot.",
     "rpetPanelDescription": "Panneaux acoustiques plats polyvalents en 100% PET recyclé. Usinable comme du MDF, certifié OEKO-TEX®, émissions Classe A+. Murs, plafonds, mobilier. Fabriqué en Belgique.",
+    "rpetFlexGrooveTitle": "Panneaux acoustiques flexibles rPET Flex Groove | Re-Sound",
+    "rpetFlexGrooveDescription": "Panneaux acoustiques rainurés flexibles, fabriqués à partir de PET 100% recyclé. Pliables pour surfaces courbes, colonnes et installations sur mesure. Certifiés OEKO-TEX®.",
     "interiorTitle": "Interior Panneaux Muraux Acoustiques | Re-Sound",
     "solidTitle": "Solid Panneaux Muraux Acoustiques | Re-Sound",
     "solidDescription": "Panneaux muraux acoustiques grand format pour une absorption sonore performante. 1200 × 600 mm, système d'installation à crochets, 100% matériaux recyclés. Fabriqué en Belgique."
@@ -441,7 +444,8 @@
         "info": "Information Produit",
         "partnership": "Demande de Partenariat",
         "other": "Autre"
-      }
+      },
+      "privacyNotice": "En soumettant ce formulaire, vous acceptez notre <link>politique de confidentialité</link>."
     },
     "info": {
       "title": "Informations de Contact",
@@ -624,14 +628,31 @@
     "contact": "Contact",
     "allProducts": "Tous les Produits",
     "copyright": "© {year} Re-Sound. Tous droits réservés.",
+    "manageCookies": "Gérer les cookies",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation"
   },
   "cookies": {
-    "title": "Nous utilisons des cookies",
-    "description": "Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic du site. En acceptant, vous acceptez notre utilisation des cookies.",
-    "accept": "Tout Accepter",
-    "reject": "Tout Rejeter"
+    "title": "Préférences de cookies",
+    "description": "Nous utilisons des cookies pour faire fonctionner le site, comprendre comment vous l'utilisez et (avec votre autorisation) mesurer les performances marketing.",
+    "readPolicy": "Lire notre politique de confidentialité",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "customise": "Personnaliser",
+    "savePreferences": "Enregistrer les préférences",
+    "alwaysOn": "Toujours actif",
+    "necessary": {
+      "title": "Nécessaires",
+      "description": "Requis pour le fonctionnement du site. Toujours actifs."
+    },
+    "analytics": {
+      "title": "Analyse",
+      "description": "Statistiques anonymes sur l'utilisation du site (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Utilisés pour mesurer les performances publicitaires et proposer du contenu pertinent (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Page Non Trouvée",
@@ -2447,6 +2468,18 @@
     },
     "cta2": {
       "freeNote": "Échantillons gratuits • Fabriqué en Europe • 100% Recyclé"
+    }
+  },
+  "legal": {
+    "draftBanner": "BROUILLON — Ce document est une version de travail. Faites-le relire par un conseiller juridique avant publication.",
+    "lastUpdated": "Dernière mise à jour",
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "subtitle": "Comment Re-Sound collecte, utilise et protège vos données personnelles"
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "subtitle": "Conditions d'utilisation du site Re-Sound"
     }
   }
 }

@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Recycelt im Ursprung. Zirkulär im Design.",
     "homeDescription": "Hochleistungs-Akustiklösungen aus recycelten Materialien. Wir verwandeln Abfall in Stille—für den Planeten entwickelt, in Belgien hergestellt.",
     "productsTitle": "Produkte",
     "productsDescription": "Entdecken Sie unsere Palette an zirkulären Akustikplatten: Interior, Solid und Divide. 100% recycelt, 100% recycelbar.",
@@ -26,6 +27,8 @@
     "rwoodGrooveDescription": "Premium gerillte Akustikpaneele mit FSC-zertifiziertem Holzfurnier auf einem recycelten Filzkern. Klasse A Absorption, natürliche Eichen- und Walnussoberflächen. Hergestellt in Belgien.",
     "interiorDescription": "Modulare Akustik-Wandpaneele aus 100% recycelten Textilien. Klasse A Schallabsorption (αw 1,0), abnehmbarer waschbarer Bezug, hergestellt in Belgien. Ab €387 pro Set.",
     "rpetPanelDescription": "Vielseitige flache Akustikpaneele aus 100% recyceltem PET. Bearbeitbar wie MDF, OEKO-TEX® zertifiziert, Klasse A+ Emissionen. Wände, Decken, Möbel. Hergestellt in Belgien.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove Flexible Akustikpaneele | Re-Sound",
+    "rpetFlexGrooveDescription": "Flexible gerillte Akustikpaneele aus 100% recyceltem PET. Biegsam für gewölbte Flächen, Säulen und maßgeschneiderte Installationen. OEKO-TEX® zertifiziert.",
     "interiorTitle": "Interior Akustische Wandpaneele | Re-Sound",
     "solidTitle": "Solid Akustische Wandpaneele | Re-Sound",
     "solidDescription": "Großformatige Akustik-Wandpaneele für wirkungsvolle Schallabsorption. 1200 × 600 mm, Hakenmontagesystem, 100% recycelte Materialien. Hergestellt in Belgien."
@@ -441,7 +444,8 @@
         "info": "Produktinformation",
         "partnership": "Partnerschaftsanfrage",
         "other": "Sonstiges"
-      }
+      },
+      "privacyNotice": "Mit dem Absenden dieses Formulars akzeptieren Sie unsere <link>Datenschutzerklärung</link>."
     },
     "info": {
       "title": "Kontaktinformationen",
@@ -624,14 +628,31 @@
     "contact": "Kontakt",
     "allProducts": "Alle Produkte",
     "copyright": "© {year} Re-Sound. Alle Rechte vorbehalten.",
+    "manageCookies": "Cookies verwalten",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen"
   },
   "cookies": {
-    "title": "Wir verwenden Cookies",
-    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und den Website-Verkehr zu analysieren. Durch Akzeptieren stimmen Sie unserer Verwendung von Cookies zu.",
-    "accept": "Alle Akzeptieren",
-    "reject": "Alle Ablehnen"
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies, um die Website zu betreiben, zu verstehen, wie Sie sie nutzen, und (mit Ihrer Erlaubnis) Marketing-Performance zu messen.",
+    "readPolicy": "Datenschutzerklärung lesen",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "customise": "Anpassen",
+    "savePreferences": "Einstellungen speichern",
+    "alwaysOn": "Immer aktiv",
+    "necessary": {
+      "title": "Notwendig",
+      "description": "Erforderlich für den Betrieb der Website. Immer aktiv."
+    },
+    "analytics": {
+      "title": "Analyse",
+      "description": "Anonyme Statistiken zur Nutzung der Website (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Zur Messung der Werbe-Performance und Bereitstellung relevanter Inhalte (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Seite Nicht Gefunden",
@@ -2447,6 +2468,18 @@
     },
     "cta2": {
       "freeNote": "Kostenlose Muster • Hergestellt in Europa • 100% Recycelt"
+    }
+  },
+  "legal": {
+    "draftBanner": "ENTWURF — Dieses Dokument ist eine Arbeitsversion. Bitte vor der Veröffentlichung rechtlich prüfen lassen.",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "subtitle": "Wie Re-Sound Ihre personenbezogenen Daten erhebt, verwendet und schützt"
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "subtitle": "Bedingungen für die Nutzung der Re-Sound-Website"
     }
   }
 }

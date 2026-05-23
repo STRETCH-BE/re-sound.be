@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Reciclado na origem. Circular por design.",
     "homeDescription": "Soluções acústicas de alto desempenho fabricadas com materiais reciclados. Transformamos resíduos em silêncio, concebidas para o planeta, fabricadas na Bélgica.",
     "productsTitle": "Productos",
     "productsDescription": "Explore a nossa gama de painéis acústicos circulares: Interior, Solid e Divide. 100% reciclados, 100% recicláveis, fabricados na Bélgica.",
@@ -28,7 +29,9 @@
     "rpetGrooveTitle": "rPET Groove Painéis Acústicos de PET Reciclado | Re-Sound",
     "rpetGrooveDescription": "Painéis acústicos ranhurados fabricados com garrafas PET 100% recicladas. 12 cores de designer, 3 espessuras (12/24/36 mm).",
     "rpetPanelTitle": "rPET Panel Painéis Acústicos de PET Reciclado | Re-Sound",
-    "rpetPanelDescription": "Painéis acústicos planos versáteis fabricados com PET 100% reciclado. Processa como MDF, certificado OEKO-TEX®, classe A."
+    "rpetPanelDescription": "Painéis acústicos planos versáteis fabricados com PET 100% reciclado. Processa como MDF, certificado OEKO-TEX®, classe A.",
+    "rpetFlexGrooveTitle": "Painéis acústicos flexíveis rPET Flex Groove | Re-Sound",
+    "rpetFlexGrooveDescription": "Painéis acústicos ranhurados flexíveis, feitos a partir de PET 100% reciclado. Dobráveis para superfícies curvas, colunas e instalações personalizadas. Certificação OEKO-TEX®."
   },
   "nav": {
     "products": "Productos",
@@ -492,7 +495,8 @@
         "info": "Información del Producto",
         "partnership": "Consulta de Asociación",
         "other": "Otro"
-      }
+      },
+      "privacyNotice": "Ao enviar este formulário, aceita a nossa <link>política de privacidade</link>."
     },
     "info": {
       "title": "Información de Contacto",
@@ -675,14 +679,31 @@
     "contact": "Contacto",
     "allProducts": "Todos los Productos",
     "copyright": "© {year} Re-Sound. Todos los derechos reservados.",
+    "manageCookies": "Gerir cookies",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
   },
   "cookies": {
-    "title": "Usamos cookies",
-    "description": "Usamos cookies para mejorar su experiencia y analizar el tráfico del sitio. Al aceptar, usted acepta nuestro uso de cookies.",
-    "accept": "Aceptar Todo",
-    "reject": "Rechazar Todo"
+    "title": "Preferências de cookies",
+    "description": "Utilizamos cookies para o funcionamento do site, para perceber como o utiliza e (com a sua permissão) para medir o desempenho de marketing.",
+    "readPolicy": "Ler a nossa política de privacidade",
+    "acceptAll": "Aceitar tudo",
+    "rejectAll": "Rejeitar tudo",
+    "customise": "Personalizar",
+    "savePreferences": "Guardar preferências",
+    "alwaysOn": "Sempre ativo",
+    "necessary": {
+      "title": "Necessários",
+      "description": "Necessários para o funcionamento do site. Sempre ativos."
+    },
+    "analytics": {
+      "title": "Análise",
+      "description": "Estatísticas anónimas sobre como os visitantes utilizam o site (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Utilizados para medir o desempenho publicitário e apresentar conteúdo relevante (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Página No Encontrada",
@@ -2447,6 +2468,18 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • 100% Recycled"
+    }
+  },
+  "legal": {
+    "draftBanner": "RASCUNHO — Este documento é uma versão de trabalho. Reveja com aconselhamento jurídico antes de publicar.",
+    "lastUpdated": "Última atualização",
+    "privacy": {
+      "title": "Política de privacidade",
+      "subtitle": "Como a Re-Sound recolhe, utiliza e protege os seus dados pessoais"
+    },
+    "terms": {
+      "title": "Termos de utilização",
+      "subtitle": "Condições para utilização do site Re-Sound"
     }
   }
 }

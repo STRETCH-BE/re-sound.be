@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Genanvendt af oprindelse. Cirkulær af design.",
     "homeDescription": "Højtydende akustikløsninger fremstillet af genbrugsmaterialer. Vi omdanner affald til stilhed – designet til planeten, fremstillet i Belgien.",
     "productsTitle": "Produkter",
     "productsDescription": "Udforsk vores sortiment af cirkulære akustikpaneler: Interior, Solid og Divide. 100% genanvendt, 100% genanvendelige, fremstillet i Belgien.",
@@ -28,7 +29,9 @@
     "rpetGrooveTitle": "rPET Groove Genanvendt PET Akustikpaneler | Re-Sound",
     "rpetGrooveDescription": "Rillede akustikpaneler lavet af 100% genbrugste PET-flasker. 12 designerfarver, 3 tykkelser (12/24/36 mm).",
     "rpetPanelTitle": "rPET Panel Genanvendt PET Akustikpaneler | Re-Sound",
-    "rpetPanelDescription": "Alsidige flade akustikpaneler fremstillet af 100% genanvendt PET. Kan bearbejdes som MDF, OEKO-TEX® certificeret, klasse A."
+    "rpetPanelDescription": "Alsidige flade akustikpaneler fremstillet af 100% genanvendt PET. Kan bearbejdes som MDF, OEKO-TEX® certificeret, klasse A.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove fleksible akustikpaneler | Re-Sound",
+    "rpetFlexGrooveDescription": "Fleksible rillede akustikpaneler fremstillet af 100% genbrugt PET. Bøjelige til buede flader, søjler og specialfremstillede installationer. OEKO-TEX® certificeret."
   },
   "nav": {
     "products": "Produkter",
@@ -492,7 +495,8 @@
         "info": "Product Information",
         "partnership": "Partnership Inquiry",
         "other": "Andet"
-      }
+      },
+      "privacyNotice": "Ved at indsende denne formular accepterer du vores <link>privatlivspolitik</link>."
     },
     "info": {
       "title": "Kontaktoplysninger",
@@ -675,14 +679,31 @@
     "contact": "Kontakt",
     "allProducts": "Alle produkter",
     "copyright": "© {year} Re-Sound. All rights reserved.",
+    "manageCookies": "Administrer cookies",
     "privacy": "Privatlivspolitik",
     "terms": "Servicevilkår"
   },
   "cookies": {
-    "title": "Vi bruger cookies",
-    "description": "We use cookies to improve your experience and analyze site traffic. By accepting, you agree to our use of cookies.",
-    "accept": "Accepter alle",
-    "reject": "Afvis alle"
+    "title": "Cookie-præferencer",
+    "description": "Vi bruger cookies for at få sitet til at fungere, for at forstå, hvordan du bruger det, og (med din tilladelse) for at måle marketingydelse.",
+    "readPolicy": "Læs vores privatlivspolitik",
+    "acceptAll": "Accepter alle",
+    "rejectAll": "Afvis alle",
+    "customise": "Tilpas",
+    "savePreferences": "Gem præferencer",
+    "alwaysOn": "Altid aktiv",
+    "necessary": {
+      "title": "Nødvendige",
+      "description": "Nødvendige for sitets funktion. Altid aktive."
+    },
+    "analytics": {
+      "title": "Analyse",
+      "description": "Anonym statistik om, hvordan besøgende bruger sitet (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Bruges til at måle annonceringsydelse og levere relevant indhold (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Side ikke fundet",
@@ -2447,6 +2468,18 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • 100% Recycled"
+    }
+  },
+  "legal": {
+    "draftBanner": "UDKAST — Dette dokument er en arbejdsversion. Få det gennemgået af en jurist før offentliggørelse.",
+    "lastUpdated": "Sidst opdateret",
+    "privacy": {
+      "title": "Privatlivspolitik",
+      "subtitle": "Hvordan Re-Sound indsamler, bruger og beskytter dine personoplysninger"
+    },
+    "terms": {
+      "title": "Brugsbetingelser",
+      "subtitle": "Betingelser for brug af Re-Sound-webstedet"
     }
   }
 }

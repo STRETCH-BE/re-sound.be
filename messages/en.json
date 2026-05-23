@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Recycled by Origin. Circular by Design.",
     "homeDescription": "High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.",
     "productsTitle": "Products",
     "productsDescription": "Explore our range of circular acoustic panels: Interior, Solid, and Divide. 100% recycled, 100% recyclable.",
@@ -28,7 +29,9 @@
     "rpetGrooveTitle": "rPET Groove Recycled PET Acoustic Panels | Re-Sound",
     "rpetGrooveDescription": "Grooved acoustic panels made from 100% recycled PET bottles. 12 designer colors, 3 thicknesses (12/24/36 mm), B-s1,d0 fire rating. Made in Belgium.",
     "rpetPanelTitle": "rPET Panel Recycled PET Acoustic Panels | Re-Sound",
-    "rpetPanelDescription": "Versatile flat acoustic panels from 100% recycled PET. Process like MDF, OEKO-TEX® certified, Class A+ emissions. Walls, ceilings, furniture. Made in Belgium."
+    "rpetPanelDescription": "Versatile flat acoustic panels from 100% recycled PET. Process like MDF, OEKO-TEX® certified, Class A+ emissions. Walls, ceilings, furniture. Made in Belgium.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove Flexible Acoustic Panels | Re-Sound",
+    "rpetFlexGrooveDescription": "Flexible grooved acoustic panels made from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified."
   },
   "nav": {
     "products": "Products",
@@ -492,7 +495,8 @@
         "info": "Product Information",
         "partnership": "Partnership Inquiry",
         "other": "Other"
-      }
+      },
+      "privacyNotice": "By submitting this form, you agree to our <link>privacy policy</link>."
     },
     "info": {
       "title": "Contact Information",
@@ -675,14 +679,31 @@
     "contact": "Contact",
     "allProducts": "All Products",
     "copyright": "© {year} Re-Sound. All rights reserved.",
+    "manageCookies": "Manage cookies",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "cookies": {
-    "title": "We use cookies",
-    "description": "We use cookies to improve your experience and analyze site traffic. By accepting, you agree to our use of cookies.",
-    "accept": "Accept All",
-    "reject": "Reject All"
+    "title": "Cookie preferences",
+    "description": "We use cookies to keep the site running, understand how you use it, and (with your permission) measure marketing performance.",
+    "readPolicy": "Read our privacy policy",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all",
+    "customise": "Customise",
+    "savePreferences": "Save preferences",
+    "alwaysOn": "Always on",
+    "necessary": {
+      "title": "Necessary",
+      "description": "Required for the site to function. Always active."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Anonymous statistics about how visitors use the site (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Used to measure ad performance and serve relevant content (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Page Not Found",
@@ -2444,6 +2465,18 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • 100% Recycled"
+    }
+  },
+  "legal": {
+    "draftBanner": "DRAFT — This document is a working template. Review with legal counsel before publishing.",
+    "lastUpdated": "Last updated",
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "How Re-Sound collects, uses, and protects your personal data"
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "subtitle": "Conditions for using the Re-Sound website"
     }
   }
 }

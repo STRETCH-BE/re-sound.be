@@ -1,5 +1,6 @@
 {
   "meta": {
+    "homeTitle": "Re-Sound | Gerecycleerd van oorsprong. Circulair van ontwerp.",
     "homeDescription": "Hoogwaardige akoestische oplossingen gemaakt van gerecycleerde materialen. Wij transformeren afval tot stilte—ontworpen voor de planeet, gemaakt in België.",
     "productsTitle": "Producten",
     "productsDescription": "Ontdek onze circulaire akoestische panelen: Interior, Solid en Divide. 100% gerecycleerd, 100% recyclebaar.",
@@ -26,6 +27,8 @@
     "rwoodGrooveDescription": "Premium gegroeide akoestische panelen met FSC-gecertificeerd houtfineer op een gerecycleerde viltkern. Klasse A absorptie, naturel eiken en walnoten afwerkingen. Gemaakt in België.",
     "interiorDescription": "Modulaire akoestische wandpanelen gemaakt van 100% gerecycleerd textiel. Klasse A geluidsabsorptie (αw 1.0), afneembare wasbare bekleding, gemaakt in België. Vanaf €387 per set.",
     "rpetPanelDescription": "Veelzijdige vlakke akoestische panelen van 100% gerecycleerd PET. Bewerkbaar als MDF, OEKO-TEX® gecertificeerd, Klasse A+ emissies. Wanden, plafonds, meubilair. Gemaakt in België.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove Flexibele Akoestische Panelen | Re-Sound",
+    "rpetFlexGrooveDescription": "Flexibele gegroefde akoestische panelen, gemaakt van 100% gerecycleerd PET. Buigbaar voor gebogen oppervlakken, kolommen en maatwerk installaties. OEKO-TEX® gecertificeerd.",
     "interiorTitle": "Interior Akoestische Wandpanelen | Re-Sound",
     "solidTitle": "Solid Akoestische Wandpanelen | Re-Sound",
     "solidDescription": "Grootformaat akoestische wandpanelen voor krachtige geluidsabsorptie. 1200 × 600 mm, haakinstallatiesysteem, 100% gerecycleerde materialen. Gemaakt in België."
@@ -441,7 +444,8 @@
         "info": "Productinformatie",
         "partnership": "Samenwerkingsaanvraag",
         "other": "Anders"
-      }
+      },
+      "privacyNotice": "Door dit formulier in te dienen, ga je akkoord met ons <link>privacybeleid</link>."
     },
     "info": {
       "title": "Contactgegevens",
@@ -624,14 +628,31 @@
     "contact": "Contact",
     "allProducts": "Alle Producten",
     "copyright": "© {year} Re-Sound. Alle rechten voorbehouden.",
+    "manageCookies": "Cookies beheren",
     "privacy": "Privacybeleid",
     "terms": "Algemene Voorwaarden"
   },
   "cookies": {
-    "title": "We gebruiken cookies",
-    "description": "We gebruiken cookies om uw ervaring te verbeteren en siteverkeer te analyseren. Door te accepteren gaat u akkoord met ons gebruik van cookies.",
-    "accept": "Alles Accepteren",
-    "reject": "Alles Weigeren"
+    "title": "Cookievoorkeuren",
+    "description": "We gebruiken cookies om de site te laten werken, te begrijpen hoe je hem gebruikt en (met jouw toestemming) marketingprestaties te meten.",
+    "readPolicy": "Lees ons privacybeleid",
+    "acceptAll": "Alles aanvaarden",
+    "rejectAll": "Alles weigeren",
+    "customise": "Aanpassen",
+    "savePreferences": "Voorkeuren opslaan",
+    "alwaysOn": "Altijd actief",
+    "necessary": {
+      "title": "Noodzakelijk",
+      "description": "Vereist om de site te laten werken. Altijd actief."
+    },
+    "analytics": {
+      "title": "Analyse",
+      "description": "Anonieme statistieken over hoe bezoekers de site gebruiken (Google Analytics, Microsoft Clarity)."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Gebruikt om advertentieprestaties te meten en relevante content te tonen (Meta Pixel, Bing UET)."
+    }
   },
   "notFound": {
     "title": "Pagina Niet Gevonden",
@@ -2447,6 +2468,18 @@
     },
     "cta2": {
       "freeNote": "Gratis stalen • Gemaakt in Europa • 100% Gerecycleerd"
+    }
+  },
+  "legal": {
+    "draftBanner": "CONCEPT — Dit document is een werkversie. Laat het door een juridisch adviseur nakijken vóór publicatie.",
+    "lastUpdated": "Laatst bijgewerkt",
+    "privacy": {
+      "title": "Privacybeleid",
+      "subtitle": "Hoe Re-Sound je persoonsgegevens verzamelt, gebruikt en beschermt"
+    },
+    "terms": {
+      "title": "Gebruiksvoorwaarden",
+      "subtitle": "Voorwaarden voor het gebruik van de Re-Sound website"
     }
   }
 }
