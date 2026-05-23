@@ -303,7 +303,7 @@ export async function POST(request: NextRequest) {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            to: 'leads_be@stretchgroup.be',
+            to: 'leads@stretchgroup.be',
             subject: `New Lead: ${firstName} ${lastName} from ${companyName}`,
             body: textBody,
             htmlBody: htmlBody,
