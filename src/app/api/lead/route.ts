@@ -305,8 +305,11 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify({
             to: 'leads@stretchgroup.be',
             subject: `New Lead: ${firstName} ${lastName} from ${companyName}`,
-            body: textBody,
-            htmlBody: htmlBody,
+            // `body` holds the HTML — Power Automate's "Send an email (V2)"
+            // action with Is HTML = Yes should map its Body input to this field.
+            // `text` is the plain-text alternative if a non-HTML flow is used.
+            body: htmlBody,
+            text: textBody,
             // Individual fields for Power Automate flexibility
             leadData: {
               firstName,
