@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-import DivideProductPage from '@/components/sections/DivideProductPage';
+import InteriorProductPage from '@/components/sections/InteriorProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { buildAlternates } from '@/lib/seo';
 import { breadcrumbSchema, productSchema } from '@/lib/structured-data';
@@ -15,8 +15,8 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
 
-  const title = t('divideTitle');
-  const description = t('divideDescription');
+  const title = t('interiorTitle');
+  const description = t('interiorDescription');
 
   return {
     // Existing meta values already include "| Re-Sound" — bypass the layout template
@@ -25,7 +25,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: ['/images/products/divide/overview.webp'],
+      images: ['/images/products/interior/hero-antracite.webp'],
       type: 'website',
     },
     twitter: {
@@ -33,7 +33,7 @@ export async function generateMetadata({
       title,
       description,
     },
-    alternates: buildAlternates(locale, '/products/divide'),
+    alternates: buildAlternates(locale, '/products/interior'),
   };
 }
 
@@ -42,30 +42,30 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly
   const t = await getTranslations({ locale, namespace: 'meta' });
-  const fullTitle = t('divideTitle');
+  const fullTitle = t('interiorTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
-  const description = t('divideDescription');
+  const description = t('interiorDescription');
   const tProducts = await getTranslations({ locale, namespace: 'products' });
 
   return (
     <>
       <JsonLd
         data={productSchema({
-          slug: 'divide',
+          slug: 'interior',
           name: cleanName,
           description,
-          image: '/images/products/divide/overview.webp',
-          category: 'Freestanding acoustic dividers', countryOfOrigin: 'BE',
+          image: '/images/products/interior/hero-antracite.webp',
+          category: 'Acoustic textile wall panels', countryOfOrigin: 'BE',
         })}
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Re-Sound', url: `/${locale}` },
           { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/divide` },
+          { name: cleanName, url: `/${locale}/products/interior` },
         ])}
       />
-      <DivideProductPage />
+      <InteriorProductPage />
     </>
   );
 }
