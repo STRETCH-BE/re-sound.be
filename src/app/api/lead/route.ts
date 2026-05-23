@@ -13,6 +13,23 @@ interface LeadData {
   companyType: string;
   source: string;
   downloadedFile: string;
+  // Extra fields supplied by sample-kit form (shippingAddress, samples, notes).
+  // Other lead-gen entry points don't send this; treated as optional everywhere.
+  extraFields?: {
+    shippingAddress?: string;
+    requestedSamples?: string;
+    notes?: string;
+  };
+}
+
+// Basic HTML escape for user-provided fields rendered into the email template.
+function escHtml(s: string | undefined | null): string {
+  return (s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 // ==========================================
@@ -29,6 +46,7 @@ function generateEmailHTML(data: LeadData, timestamp: string): string {
     companyType,
     source,
     downloadedFile,
+    extraFields,
   } = data;
 
   return `
@@ -167,6 +185,65 @@ function generateEmailHTML(data: LeadData, timestamp: string): string {
             </td>
           </tr>
 
+          ${
+            extraFields && (extraFields.shippingAddress || extraFields.requestedSamples || extraFields.notes)
+              ? `
+          <!-- Sample Request Details (only present for sample kit requests) -->
+          <tr>
+            <td style="padding: 24px 40px 0 40px;">
+              <h2 style="margin: 0 0 16px 0; color: #333; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; border-bottom: 2px solid #197FC7; padding-bottom: 8px; display: inline-block;">
+                Sample Request
+              </h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                ${
+                  extraFields.requestedSamples
+                    ? `<tr>
+                  <td style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="140" style="color: #888; font-size: 13px; vertical-align: top;">Samples</td>
+                        <td style="color: #333; font-size: 15px;">${escHtml(extraFields.requestedSamples)}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>`
+                    : ''
+                }
+                ${
+                  extraFields.shippingAddress
+                    ? `<tr>
+                  <td style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="140" style="color: #888; font-size: 13px; vertical-align: top;">Shipping to</td>
+                        <td style="color: #333; font-size: 15px; white-space: pre-line;">${escHtml(extraFields.shippingAddress)}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>`
+                    : ''
+                }
+                ${
+                  extraFields.notes
+                    ? `<tr>
+                  <td style="padding: 8px 0;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="140" style="color: #888; font-size: 13px; vertical-align: top;">Notes</td>
+                        <td style="color: #333; font-size: 15px; font-style: italic; white-space: pre-wrap;">${escHtml(extraFields.notes)}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>`
+                    : ''
+                }
+              </table>
+            </td>
+          </tr>
+          `
+              : ''
+          }
+
           <!-- CTA Button -->
           <tr>
             <td style="padding: 32px 40px;">
@@ -222,7 +299,17 @@ function generatePlainText(data: LeadData, timestamp: string): string {
     companyType,
     source,
     downloadedFile,
+    extraFields,
   } = data;
+
+  const sampleSection =
+    extraFields && (extraFields.shippingAddress || extraFields.requestedSamples || extraFields.notes)
+      ? `
+
+SAMPLE REQUEST
+--------------
+${extraFields.requestedSamples ? `Samples:      ${extraFields.requestedSamples}\n` : ''}${extraFields.shippingAddress ? `Shipping to:  ${extraFields.shippingAddress}\n` : ''}${extraFields.notes ? `Notes:        ${extraFields.notes}\n` : ''}`.trimEnd()
+      : '';
 
   return `
 NEW LEAD FROM RE-SOUND WEBSITE
@@ -242,7 +329,7 @@ COMPANY
 -------
 Company: ${companyName}
 Position: ${position}
-Type: ${companyType}
+Type: ${companyType}${sampleSection}
 
 ---
 Automated lead from re-sound.be
@@ -321,6 +408,7 @@ export async function POST(request: NextRequest) {
               companyType,
               source,
               downloadedFile,
+              extraFields: data.extraFields ?? null,
               timestamp,
             },
           }),
