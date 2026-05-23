@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 import PageHero from '@/components/sections/PageHero';
 import AboutStory from '@/components/sections/AboutStory';
 import AboutValues from '@/components/sections/AboutValues';
@@ -25,15 +27,7 @@ export async function generateMetadata({
       description: t('aboutDescription'),
       images: ['/images/og-about.jpg'],
     },
-    alternates: {
-      canonical: `/${locale}/about`,
-      languages: {
-        en: '/en/about',
-        nl: '/nl/about',
-        fr: '/fr/about',
-        de: '/de/about',
-      },
-    },
+    alternates: buildAlternates(locale, '/about'),
   };
 }
 

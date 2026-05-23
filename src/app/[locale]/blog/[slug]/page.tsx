@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 import BlogPostHeader from '@/components/sections/BlogPostHeader';
 import BlogPostContent from '@/components/sections/BlogPostContent';
 import BlogPostAuthor from '@/components/sections/BlogPostAuthor';
@@ -41,15 +43,7 @@ export async function generateMetadata({
       description: excerpt,
       type: 'article',
     },
-    alternates: {
-      canonical: `/${locale}/blog/${slug}`,
-      languages: {
-        en: `/en/blog/${slug}`,
-        nl: `/nl/blog/${slug}`,
-        fr: `/fr/blog/${slug}`,
-        de: `/de/blog/${slug}`,
-      },
-    },
+    alternates: buildAlternates(locale, `/blog/${slug}`),
   };
 }
 

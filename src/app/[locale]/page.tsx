@@ -9,6 +9,8 @@ import CircularLoop from '@/components/sections/CircularLoop';
 import WhyCards from '@/components/sections/WhyCards';
 import DualCTA from '@/components/sections/DualCTA';
 
+import { buildAlternates } from '@/lib/seo';
+
 interface HomePageProps {
   params: { locale: string };
 }
@@ -18,19 +20,26 @@ export async function generateMetadata({
 }: HomePageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
 
+  const title = t('homeTitle');
+  const description = t('homeDescription');
+
   return {
-    title: 'Re—Sound | Recycled by Origin. Circular by Design.',
-    description: t('homeDescription'),
+    // Title already includes "Re-Sound" — bypass template wrap
+    title: { absolute: title },
+    description,
     openGraph: {
-      title: 'Re-Sound | Acoustic Panels Made Circular',
-      description: t('homeDescription'),
+      title,
+      description,
       images: ['/images/og-home.jpg'],
-      locale: locale,
+      locale,
+      type: 'website',
     },
-    alternates: {
-      canonical: `/${locale}`,
-      languages: { en: '/en', nl: '/nl', fr: '/fr', de: '/de' },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
+    alternates: buildAlternates(locale, '/'),
   };
 }
 

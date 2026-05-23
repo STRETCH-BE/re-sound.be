@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 import PageHero from '@/components/sections/PageHero';
 import ContactForm from '@/components/sections/ContactForm';
 import ContactInfo from '@/components/sections/ContactInfo';
@@ -23,15 +25,7 @@ export async function generateMetadata({
       title: `${t('contactTitle')} | Re-Sound`,
       description: t('contactDescription'),
     },
-    alternates: {
-      canonical: `/${locale}/contact`,
-      languages: {
-        en: '/en/contact',
-        nl: '/nl/contact',
-        fr: '/fr/contact',
-        de: '/de/contact',
-      },
-    },
+    alternates: buildAlternates(locale, '/contact'),
   };
 }
 

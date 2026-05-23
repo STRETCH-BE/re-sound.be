@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 import PageHero from '@/components/sections/PageHero';
 import BlogGrid from '@/components/sections/BlogGrid';
 import Newsletter from '@/components/sections/Newsletter';
@@ -22,15 +24,7 @@ export async function generateMetadata({
       title: `${t('blogTitle')} | Re-Sound`,
       description: t('blogDescription'),
     },
-    alternates: {
-      canonical: `/${locale}/blog`,
-      languages: {
-        en: '/en/blog',
-        nl: '/nl/blog',
-        fr: '/fr/blog',
-        de: '/de/blog',
-      },
-    },
+    alternates: buildAlternates(locale, '/blog'),
   };
 }
 

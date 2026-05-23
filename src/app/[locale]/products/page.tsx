@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 import PageHero from '@/components/sections/PageHero';
 import ProductsGrid from '@/components/sections/ProductsGrid';
 import CTA from '@/components/sections/CTA';
@@ -23,15 +25,7 @@ export async function generateMetadata({
       description: t('productsDescription'),
       images: ['/images/og-products.jpg'],
     },
-    alternates: {
-      canonical: `/${locale}/products`,
-      languages: {
-        en: '/en/products',
-        nl: '/nl/products',
-        fr: '/fr/products',
-        de: '/de/products',
-      },
-    },
+    alternates: buildAlternates(locale, '/products'),
   };
 }
 

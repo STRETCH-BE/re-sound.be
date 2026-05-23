@@ -2,6 +2,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
+import { buildAlternates } from '@/lib/seo';
+
 import ProductDetail from '@/components/sections/ProductDetail';
 import ProductSpecs from '@/components/sections/ProductSpecs';
 import RelatedProducts from '@/components/sections/RelatedProducts';
@@ -43,15 +45,7 @@ export async function generateMetadata({
       description: t(`${slug}.fullDescription`),
       images: [`/images/products/${slug}.jpg`],
     },
-    alternates: {
-      canonical: `/${locale}/products/${slug}`,
-      languages: {
-        en: `/en/products/${slug}`,
-        nl: `/nl/products/${slug}`,
-        fr: `/fr/products/${slug}`,
-        de: `/de/products/${slug}`,
-      },
-    },
+    alternates: buildAlternates(locale, `/products/${slug}`),
   };
 }
 

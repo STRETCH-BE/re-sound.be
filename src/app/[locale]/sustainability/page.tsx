@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 import PageHero from '@/components/sections/PageHero';
 import CircularProcess from '@/components/sections/CircularProcess';
 import Materials from '@/components/sections/Materials';
@@ -25,15 +27,7 @@ export async function generateMetadata({
       description: t('sustainabilityDescription'),
       images: ['/images/og-sustainability.jpg'],
     },
-    alternates: {
-      canonical: `/${locale}/sustainability`,
-      languages: {
-        en: '/en/sustainability',
-        nl: '/nl/sustainability',
-        fr: '/fr/sustainability',
-        de: '/de/sustainability',
-      },
-    },
+    alternates: buildAlternates(locale, '/sustainability'),
   };
 }
 
