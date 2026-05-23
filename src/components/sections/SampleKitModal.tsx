@@ -255,7 +255,7 @@ export default function SampleKitModal({ open, onClose }: Props) {
             {status === 'error' && (
               <p style={{ fontSize: '0.8rem', color: '#c0392b', background: '#fdf0ee', border: '1px solid #f5c6c0', borderRadius: 8, padding: '0.7rem 1rem', margin: 0 }}>
                 Something went wrong. Email us at{' '}
-                <a href="mailto:leads_be@stretchgroup.be" style={{ color: '#c0392b', fontWeight: 600 }}>leads_be@stretchgroup.be</a>
+                <a href="mailto:leads@stretchgroup.be" style={{ color: '#c0392b', fontWeight: 600 }}>leads@stretchgroup.be</a>
               </p>
             )}
 
