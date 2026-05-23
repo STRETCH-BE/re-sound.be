@@ -14,7 +14,7 @@
     "blogDescription": "Perspectives sur l'économie circulaire, l'acoustique et le design durable par l'équipe Re-Sound.",
     "rwoodVeneerDescription": "Panneaux acoustiques en placage bois lisse. 10 essences sélectionnées, construction qualité meuble, DEP disponible. Certifié FSC. Fabriqué en Europe.",
     "rpetGrooveTitle": "rPET Groove Panneaux Acoustiques en PET Recyclé | Re-Sound",
-    "rpetGrooveDescription": "Panneaux acoustiques rainurés fabriqués à partir de 100% de bouteilles PET recyclées. 12 couleurs design, 3 épaisseurs (12/24/36 mm), classement feu B-s1,d0. Fabriqué en Belgique.",
+    "rpetGrooveDescription": "Panneaux acoustiques rainurés fabriqués à partir de 100% de bouteilles PET recyclées. 12 couleurs design, 3 épaisseurs (12/24/36 mm), classement feu B-s1,d0. Fabriqué en Pologne.",
     "rwoodVeneerTitle": "rWood Panel Panneaux Acoustiques en Placage Bois | Re-Sound",
     "rpetPanelTitle": "rPET Panel Panneaux Acoustiques en PET Recyclé | Re-Sound",
     "rwoodPerfTitle": "rWood Perf Panneaux Acoustiques en Bois Perforé | Re-Sound",
@@ -26,19 +26,22 @@
     "divideTitle": "Divide Cloisons Acoustiques Autoportantes | Re-Sound",
     "rwoodGrooveDescription": "Panneaux acoustiques rainurés premium avec placage bois certifié FSC sur un cœur en feutre recyclé. Absorption Classe A, finitions chêne et noyer naturels. Fabriqué en Europe.",
     "interiorDescription": "Panneaux muraux acoustiques modulaires fabriqués à partir de 100% de textiles recyclés. Absorption sonore Classe A (αw 1,0), revêtement lavable amovible, fabriqué en Belgique. À partir de €387 par lot.",
-    "rpetPanelDescription": "Panneaux acoustiques plats polyvalents en 100% PET recyclé. Usinable comme du MDF, certifié OEKO-TEX®, émissions Classe A+. Murs, plafonds, mobilier. Fabriqué en Belgique.",
+    "rpetPanelDescription": "Panneaux acoustiques plats polyvalents en 100% PET recyclé. Usinable comme du MDF, certifié OEKO-TEX®, émissions Classe A+. Murs, plafonds, mobilier. Fabriqué en Pologne.",
     "rpetFlexGrooveTitle": "Panneaux acoustiques flexibles rPET Flex Groove | Re-Sound",
     "rpetFlexGrooveDescription": "Panneaux acoustiques rainurés flexibles, fabriqués à partir de PET 100% recyclé. Pliables pour surfaces courbes, colonnes et installations sur mesure. Certifiés OEKO-TEX®.",
     "interiorTitle": "Interior Panneaux Muraux Acoustiques | Re-Sound",
     "solidTitle": "Solid Panneaux Muraux Acoustiques | Re-Sound",
-    "solidDescription": "Panneaux muraux acoustiques grand format pour une absorption sonore performante. 1200 × 600 mm, système d'installation à crochets, 100% matériaux recyclés. Fabriqué en Belgique."
+    "solidDescription": "Panneaux muraux acoustiques grand format pour une absorption sonore performante. 1200 × 600 mm, système d'installation à crochets, 100% matériaux recyclés. Fabriqué en Belgique.",
+    "faqTitle": "FAQ — Panneaux Acoustiques Re-Sound",
+    "faqDescription": "Réponses aux questions fréquentes sur les panneaux acoustiques Re-Sound : fonctionnement de l'absorption, classifications au feu, délais, programme de reprise circulaire et choix des produits."
   },
   "nav": {
     "products": "Produits",
     "about": "À propos",
     "sustainability": "Durabilité",
     "contact": "Contact",
-    "cta": "Demander un Devis"
+    "cta": "Demander un Devis",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "Acoustique 100% Circulaire",
@@ -1422,7 +1425,7 @@
       "colorChart": "Nuancier"
     },
     "cta2": {
-      "freeNote": "Échantillons gratuits • Fabriqué en Belgique • 100% Recyclé"
+      "freeNote": "Échantillons gratuits • Fabriqué en Pologne • 100% Recyclé"
     }
   },
   "rpetPanelPage": {
@@ -1609,7 +1612,7 @@
       "oekoTexCert": "Certificat OEKO-TEX®"
     },
     "cta2": {
-      "freeNote": "Échantillons gratuits • Fabriqué en Belgique • 100% Recyclable"
+      "freeNote": "Échantillons gratuits • Fabriqué en Pologne • 100% Recyclable"
     }
   },
   "rwoodGroovePage": {
@@ -2471,7 +2474,7 @@
       "description2": "Demandez un devis personnalisé pour votre projet. Notre équipe vous aidera à choisir la couleur parfaite et à calculer vos besoins."
     },
     "cta2": {
-      "freeNote": "Échantillons gratuits • Fabriqué en Europe • 100% Recyclé"
+      "freeNote": "Échantillons gratuits • Fabriqué en Pologne • 100% Recyclé"
     }
   },
   "legal": {
@@ -2484,6 +2487,96 @@
     "terms": {
       "title": "Conditions d'utilisation",
       "subtitle": "Conditions d'utilisation du site Re-Sound"
+    }
+  },
+  "faq": {
+    "title": "Foire aux questions",
+    "subtitle": "Tout ce que vous devez savoir sur les panneaux acoustiques Re-Sound — des bases de l'acoustique des locaux à notre service de reprise circulaire.",
+    "searchPlaceholder": "Rechercher dans les questions...",
+    "noResults": "Aucune question ne correspond à votre recherche.",
+    "contact": {
+      "title": "Vous ne trouvez pas votre réponse ?",
+      "body": "Envoyez-nous votre question et nous reviendrons vers vous avec une réponse adaptée à votre projet.",
+      "cta": "Poser votre question"
+    },
+    "categories": {
+      "all": "Toutes les questions",
+      "acoustics": "Acoustique",
+      "products": "Produits",
+      "sustainability": "Durabilité",
+      "commercial": "Commande & échantillons"
+    },
+    "questions": {
+      "absorptionVsInsulation": {
+        "category": "acoustics",
+        "question": "Quelle est la différence entre l'absorption acoustique et l'isolation acoustique ?",
+        "answer": "L'absorption et l'isolation acoustique résolvent des problèmes différents. L'absorption réduit l'écho et la réverbération à l'intérieur d'une pièce en convertissant l'énergie des ondes sonores en chaleur lorsqu'elles frappent un matériau souple et poreux — c'est ce que fait chaque panneau Re-Sound. L'isolation empêche le son de traverser un mur ou un plancher vers la pièce suivante, ce qui nécessite une construction massive, dense et étanche. Les panneaux Re-Sound améliorent l'acoustique de la pièce dans laquelle vous vous trouvez ; ce n'est pas une solution d'insonorisation entre pièces."
+      },
+      "whatIsReverberation": {
+        "category": "acoustics",
+        "question": "Qu'est-ce que la réverbération et pourquoi est-elle importante ?",
+        "answer": "La réverbération est la persistance du son dans une pièce après l'arrêt de la source originale — la qualité \"vivante\" d'une pièce aux surfaces dures. Elle se mesure par le RT60 : le temps nécessaire pour que le son diminue de 60 décibels. Une réverbération élevée rend la parole difficile à comprendre, augmente le niveau de bruit ambiant et accroît la fatigue auditive. Dans les bureaux, restaurants, écoles et environnements de soins, le RT60 recommandé se situe typiquement entre 0,4 et 0,8 seconde. Les panneaux Re-Sound réduisent la réverbération en absorbant les sons de moyennes et hautes fréquences — la gamme dans laquelle se trouve la parole humaine."
+      },
+      "whatInfluencesAcoustics": {
+        "category": "acoustics",
+        "question": "Qu'est-ce qui influence l'acoustique d'une pièce ?",
+        "answer": "Trois éléments déterminent l'acoustique d'une pièce : son volume, les matériaux de ses surfaces et sa fonction. Les surfaces dures et lisses (béton, verre, carrelage, parquet) réfléchissent le son et créent de l'écho. Les surfaces souples et poreuses (textiles, panneaux en fibres recyclées, moquette) l'absorbent. Plus une pièce est grande et dure, plus il faut de surface absorbante pour ramener la réverbération à un niveau confortable. Les panneaux Re-Sound sont conçus pour ajouter cette surface absorbante sans alourdir le volume."
+      },
+      "whatIsAlphaW": {
+        "category": "acoustics",
+        "question": "Que signifient αw, NRC et Classe A sur les fiches techniques ?",
+        "answer": "Ce sont différentes façons d'exprimer la même propriété : la quantité de son qu'un matériau absorbe. αw est le coefficient pondéré d'absorption acoustique selon ISO 11654 — un seul chiffre entre 0 (réflecteur parfait) et 1,0 (absorbeur parfait). NRC (Noise Reduction Coefficient, ASTM C423) est l'équivalent américain, également de 0 à 1,0. La Classe A est la plus haute classe d'absorption d'ISO 11654, accordée aux matériaux dont αw ≥ 0,9. Plusieurs produits Re-Sound sont classés A : plus αw est élevé, plus le panneau est absorbant."
+      },
+      "howManyPanels": {
+        "category": "acoustics",
+        "question": "De combien de panneaux ai-je besoin pour mon espace ?",
+        "answer": "En règle générale, prévoyez une surface absorbante équivalente à environ 20-30 % de la surface au sol d'un bureau, d'une salle de réunion ou d'un restaurant typique. Une pièce de 30 m² bénéficiera donc de 6 à 9 m² de panneaux acoustiques. Le chiffre exact dépend des surfaces existantes, de la hauteur sous plafond et de l'usage — pour un chiffre plus précis, nous réalisons volontiers un calcul de Sabine basé sur votre plan. Envoyez-nous les dimensions et nous reviendrons avec une recommandation."
+      },
+      "whereCanUse": {
+        "category": "products",
+        "question": "Où peut-on utiliser les panneaux Re-Sound ?",
+        "answer": "Les panneaux Re-Sound sont conçus pour les environnements intérieurs B2B : bureaux, salles de réunion, espaces de travail ouverts, halls et zones de réception, restaurants, hôtels, écoles et universités, établissements de santé, bibliothèques et espaces culturels. Ils peuvent être muraux, plafonniers ou autoportants (Divide), et la gamme en placage bois (rWood) convient aux projets architecturaux haut de gamme où l'aspect compte autant que la performance."
+      },
+      "rwoodVsRpetVsTextile": {
+        "category": "products",
+        "question": "Quelle est la différence entre rWood, rPET et la gamme textile ?",
+        "answer": "Ce sont trois familles de matériaux différentes pour des intentions de design différentes. La gamme textile (Interior, Solid, Divide) est fabriquée à partir de fibres textiles 100 % recyclées avec une housse en tissu — douce, chaleureuse, disponible en plusieurs coloris, fabriquée en Belgique. La gamme rPET (Panel, Groove, Flex Groove) est fabriquée à partir de bouteilles PET 100 % recyclées, certifiée OEKO-TEX®, et peut se travailler comme du MDF (couper, fraiser, peindre) ; idéale pour les couleurs vives et les installations sur mesure. La gamme rWood (Groove, Perf, Micro, Panel) associe un placage bois certifié FSC à une âme en fibres recyclées, offrant une finition architecturale haut de gamme dans 8+ essences ; fabriquée en Europe."
+      },
+      "fireSafety": {
+        "category": "products",
+        "question": "Quelles sont les classifications au feu des panneaux Re-Sound ?",
+        "answer": "La classification au feu varie selon la gamme. La gamme rPET est certifiée B-s1,d0 selon EN 13501-1 — adaptée à la plupart des applications commerciales et publiques. La gamme rWood porte des classifications jusqu'à B-s2,d0 selon la finition, et le rWood Micro micro-perforé atteint la plus haute classification au feu de notre catalogue. Chaque page produit indique la certification exacte, et les certificats de test sont disponibles en PDF après un court formulaire de contact. Pour des exigences de conformité spécifiques à votre projet, contactez-nous en indiquant la classification exacte requise."
+      },
+      "samples": {
+        "category": "products",
+        "question": "Puis-je commander des échantillons ?",
+        "answer": "Oui — les échantillons sont gratuits pour les demandes B2B qualifiées. Utilisez le formulaire de contact de chaque page produit pour demander des échantillons ; précisez les couleurs, finitions ou placages souhaités. Les kits d'échantillons sont généralement expédiés sous 5 jours ouvrés dans l'UE. Pour les projets de plus grande envergure, nous pouvons également organiser une visite en showroom ou envoyer un conseiller projet sur site."
+      },
+      "whatIsCircular": {
+        "category": "sustainability",
+        "question": "Que signifie \"circulaire\" chez Re-Sound ?",
+        "answer": "Circulaire signifie trois choses chez Re-Sound, intégrées dès la conception. D'abord, les intrants : nous utilisons des matériaux recyclés là où les performances acoustiques le permettent — fibres textiles 100 % recyclées dans Interior/Solid/Divide, PET 100 % recyclé dans la gamme rPET, et âme en fibres recyclées sous le placage FSC de la gamme rWood. Ensuite, la fin de vie : chaque panneau Re-Sound peut nous être retourné via notre service de reprise gratuit, et les matériaux sont retraités en nouveaux panneaux ou en nouvelle matière première au lieu d'aller à la décharge. Enfin, la conception : les fixations (magnétiques, mécaniques, à crochets) sont réversibles, ce qui permet de retirer les panneaux sans destruction et de reconfigurer l'espace pendant la vie du bâtiment."
+      },
+      "takeBack": {
+        "category": "sustainability",
+        "question": "Comment fonctionne le programme de reprise ?",
+        "answer": "En fin de vie — lors d'une rénovation ou d'un remplacement des panneaux — Re-Sound récupère les panneaux sur votre site, gratuitement en Belgique et au coût logistique dans le reste de l'UE. Nous les retraitons ensuite en matière première : les panneaux textiles sont broyés et filés en nouvelles fibres ; les panneaux rPET sont rebroyés et repressés ; les âmes rWood sont séparées du placage et réutilisées. Pour initier un retour, contactez-nous avec la référence de livraison d'origine et le volume approximatif."
+      },
+      "recycledContent": {
+        "category": "sustainability",
+        "question": "Quel est le contenu recyclé de chaque gamme ?",
+        "answer": "Le contenu recyclé varie par famille de produits. La gamme textile (Interior, Solid, Divide) est fabriquée à partir de fibres textiles recyclées avec un fort taux de recyclage. La gamme rPET utilise 100 % de PET post-consommation recyclé (le nombre équivalent de bouteilles varie selon la taille du panneau — environ 60 bouteilles par panneau Groove standard). La gamme rWood utilise une âme à forte teneur en fibres recyclées avec un placage FSC sur la face visible. Des décompositions matériaux détaillées et la documentation EPD sont disponibles sur chaque page produit et sur demande."
+      },
+      "leadTimes": {
+        "category": "commercial",
+        "question": "Quels sont les délais de livraison habituels ?",
+        "answer": "Les articles standard du catalogue sont expédiés sous 2 à 3 semaines après confirmation de commande dans toute l'UE. Les dimensions sur mesure, les couleurs personnalisées ou les grandes quantités de projets prennent généralement 4 à 6 semaines. Pour les projets soumis à une échéance, contactez-nous avec le calendrier et nous confirmerons ce qui est réalisable avant la passation de commande."
+      },
+      "quoteProcess": {
+        "category": "commercial",
+        "question": "Comment demander un devis ?",
+        "answer": "Utilisez le formulaire de contact d'une page produit ou le formulaire général, en indiquant : la gamme qui vous intéresse, les quantités approximatives ou le plan, et le calendrier du projet. Nous répondons sous un jour ouvré avec un devis personnalisé, une proposition d'échantillons et un calcul de l'amélioration acoustique attendue. Pour les projets plus importants, nous pouvons organiser une visite sur site ou un appel de briefing."
+      }
     }
   }
 }

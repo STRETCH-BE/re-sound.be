@@ -14,7 +14,7 @@
     "blogDescription": "Einblicke in Kreislaufwirtschaft, Akustik und nachhaltiges Design vom Re-Sound-Team.",
     "rwoodVeneerDescription": "Glatte Holzfurnier-Akustikpaneele. 10 kuratierte Holzarten, möbelqualität Konstruktion, EPD verfügbar. FSC zertifiziert. Hergestellt in Europa.",
     "rpetGrooveTitle": "rPET Groove Recycelte PET-Akustikpaneele | Re-Sound",
-    "rpetGrooveDescription": "Gerillte Akustikpaneele aus 100% recycelten PET-Flaschen. 12 Designerfarben, 3 Stärken (12/24/36 mm), B-s1,d0 Brandschutz. Hergestellt in Belgien.",
+    "rpetGrooveDescription": "Gerillte Akustikpaneele aus 100% recycelten PET-Flaschen. 12 Designerfarben, 3 Stärken (12/24/36 mm), B-s1,d0 Brandschutz. Hergestellt in Polen.",
     "rwoodVeneerTitle": "rWood Panel Akustische Holzfurnierpaneele | Re-Sound",
     "rpetPanelTitle": "rPET Panel Recycelte PET-Akustikpaneele | Re-Sound",
     "rwoodPerfTitle": "rWood Perf Perforierte Akustische Holzpaneele | Re-Sound",
@@ -26,19 +26,22 @@
     "divideTitle": "Divide Freistehende Akustiktrennwände | Re-Sound",
     "rwoodGrooveDescription": "Premium gerillte Akustikpaneele mit FSC-zertifiziertem Holzfurnier auf einem recycelten Filzkern. Klasse A Absorption, natürliche Eichen- und Walnussoberflächen. Hergestellt in Europa.",
     "interiorDescription": "Modulare Akustik-Wandpaneele aus 100% recycelten Textilien. Klasse A Schallabsorption (αw 1,0), abnehmbarer waschbarer Bezug, hergestellt in Belgien. Ab €387 pro Set.",
-    "rpetPanelDescription": "Vielseitige flache Akustikpaneele aus 100% recyceltem PET. Bearbeitbar wie MDF, OEKO-TEX® zertifiziert, Klasse A+ Emissionen. Wände, Decken, Möbel. Hergestellt in Belgien.",
+    "rpetPanelDescription": "Vielseitige flache Akustikpaneele aus 100% recyceltem PET. Bearbeitbar wie MDF, OEKO-TEX® zertifiziert, Klasse A+ Emissionen. Wände, Decken, Möbel. Hergestellt in Polen.",
     "rpetFlexGrooveTitle": "rPET Flex Groove Flexible Akustikpaneele | Re-Sound",
     "rpetFlexGrooveDescription": "Flexible gerillte Akustikpaneele aus 100% recyceltem PET. Biegsam für gewölbte Flächen, Säulen und maßgeschneiderte Installationen. OEKO-TEX® zertifiziert.",
     "interiorTitle": "Interior Akustische Wandpaneele | Re-Sound",
     "solidTitle": "Solid Akustische Wandpaneele | Re-Sound",
-    "solidDescription": "Großformatige Akustik-Wandpaneele für wirkungsvolle Schallabsorption. 1200 × 600 mm, Hakenmontagesystem, 100% recycelte Materialien. Hergestellt in Belgien."
+    "solidDescription": "Großformatige Akustik-Wandpaneele für wirkungsvolle Schallabsorption. 1200 × 600 mm, Hakenmontagesystem, 100% recycelte Materialien. Hergestellt in Belgien.",
+    "faqTitle": "FAQ — Re-Sound Akustikplatten",
+    "faqDescription": "Antworten auf häufige Fragen zu Re-Sound Akustikplatten: wie Absorption funktioniert, Brandschutzklassen, Lieferzeiten, zirkuläres Rücknahmeprogramm und Produktauswahl."
   },
   "nav": {
     "products": "Produkte",
     "about": "Über uns",
     "sustainability": "Nachhaltigkeit",
     "contact": "Kontakt",
-    "cta": "Angebot Anfordern"
+    "cta": "Angebot Anfordern",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "100% Zirkuläre Akustik",
@@ -1422,7 +1425,7 @@
       "colorChart": "Farbkarte"
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Belgien • 100% Recycelt"
+      "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recycelt"
     }
   },
   "rpetPanelPage": {
@@ -1609,7 +1612,7 @@
       "oekoTexCert": "OEKO-TEX® Zertifikat"
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Belgien • 100% Recyclierbar"
+      "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recyclierbar"
     }
   },
   "rwoodGroovePage": {
@@ -2471,7 +2474,7 @@
       "description2": "Fordern Sie ein individuelles Angebot für Ihr Projekt an. Unser Team hilft Ihnen, die perfekte Farbe zu wählen und Ihren Bedarf zu berechnen."
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Europa • 100% Recycelt"
+      "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recycelt"
     }
   },
   "legal": {
@@ -2484,6 +2487,96 @@
     "terms": {
       "title": "Nutzungsbedingungen",
       "subtitle": "Bedingungen für die Nutzung der Re-Sound-Website"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über Re-Sound Akustikplatten wissen müssen — von den Grundlagen der Raumakustik bis zu unserem zirkulären Rücknahmeservice.",
+    "searchPlaceholder": "Fragen durchsuchen...",
+    "noResults": "Keine Fragen passen zu Ihrer Suche.",
+    "contact": {
+      "title": "Ihre Frage nicht dabei?",
+      "body": "Senden Sie uns Ihre Frage und wir antworten Ihnen mit einer auf Ihr Projekt zugeschnittenen Lösung.",
+      "cta": "Frage stellen"
+    },
+    "categories": {
+      "all": "Alle Fragen",
+      "acoustics": "Akustik",
+      "products": "Produkte",
+      "sustainability": "Nachhaltigkeit",
+      "commercial": "Bestellung & Muster"
+    },
+    "questions": {
+      "absorptionVsInsulation": {
+        "category": "acoustics",
+        "question": "Was ist der Unterschied zwischen Schallabsorption und Schallisolierung?",
+        "answer": "Schallabsorption und Schallisolierung lösen unterschiedliche Probleme. Absorption reduziert Echo und Nachhall im Raum, indem Schallwellenenergie in Wärme umgewandelt wird, wenn sie auf ein weiches, poröses Material trifft — das ist es, was jede Re-Sound Platte tut. Isolierung verhindert, dass Schall durch eine Wand oder einen Boden in den nächsten Raum dringt, was eine dichte, abgedichtete massive Konstruktion erfordert. Re-Sound Platten verbessern die Akustik des Raums, in dem Sie sich befinden; sie sind keine Schallschutzlösung zwischen Räumen."
+      },
+      "whatIsReverberation": {
+        "category": "acoustics",
+        "question": "Was ist Nachhall und warum ist er wichtig?",
+        "answer": "Nachhall ist das Fortbestehen von Schall in einem Raum, nachdem die ursprüngliche Quelle aufgehört hat — die \"lebendige\" Qualität eines Raums mit harten Oberflächen. Er wird als RT60 gemessen: die Zeit, die ein Schall braucht, um um 60 Dezibel abzufallen. Hoher Nachhall macht Sprache schwer verständlich, erhöht den Umgebungsgeräuschpegel und steigert die Hörermüdung. In Büros, Restaurants, Schulen und Gesundheitseinrichtungen liegt die empfohlene RT60 typischerweise zwischen 0,4 und 0,8 Sekunden. Re-Sound Platten reduzieren Nachhall durch Absorption von Mittel- und Hochfrequenzschall — dem Bereich, in dem sich die menschliche Sprache befindet."
+      },
+      "whatInfluencesAcoustics": {
+        "category": "acoustics",
+        "question": "Was beeinflusst die Akustik eines Raums?",
+        "answer": "Drei Dinge bestimmen die Raumakustik: das Volumen des Raums, die Materialien an seinen Oberflächen und seine Funktion. Harte, glatte Oberflächen (Beton, Glas, Fliesen, Parkett) reflektieren Schall und erzeugen Echo. Weiche, poröse Oberflächen (Textilien, Platten aus recycelten Fasern, Teppich) absorbieren ihn. Je größer und härter ein Raum ist, desto mehr absorbierende Fläche brauchen Sie, um den Nachhall auf ein angenehmes Niveau zu bringen. Re-Sound Platten sind so konzipiert, dass sie diese absorbierende Fläche hinzufügen, ohne Volumen hinzuzufügen."
+      },
+      "whatIsAlphaW": {
+        "category": "acoustics",
+        "question": "Was bedeuten αw, NRC und Klasse A auf den Datenblättern?",
+        "answer": "Es sind unterschiedliche Arten, dieselbe Eigenschaft auszudrücken: wie viel Schall ein Material absorbiert. αw ist der bewertete Schallabsorptionskoeffizient nach ISO 11654 — eine einzelne Zahl von 0 (perfekter Reflektor) bis 1,0 (perfekter Absorber). NRC (Noise Reduction Coefficient, ASTM C423) ist das amerikanische Äquivalent, ebenfalls 0 bis 1,0. Klasse A ist die höchste Absorptionsklasse in ISO 11654 und wird Materialien mit αw ≥ 0,9 zuerkannt. Mehrere Re-Sound Produkte sind Klasse A: je höher αw, desto absorbierender die Platte."
+      },
+      "howManyPanels": {
+        "category": "acoustics",
+        "question": "Wie viele Platten brauche ich für meinen Raum?",
+        "answer": "Als Faustregel planen Sie eine absorbierende Fläche, die etwa 20-30 % der Bodenfläche eines typischen Büros, Besprechungsraums oder Restaurants entspricht. Ein Raum von 30 m² profitiert also von etwa 6-9 m² Akustikplatten. Die genaue Zahl hängt von vorhandenen Oberflächen, Raumhöhe und Nutzung ab — für eine präzisere Berechnung führen wir gerne eine Sabine-Berechnung auf Basis Ihres Grundrisses durch. Senden Sie uns die Abmessungen und wir kommen mit einer Empfehlung zurück."
+      },
+      "whereCanUse": {
+        "category": "products",
+        "question": "Wo können Re-Sound Platten eingesetzt werden?",
+        "answer": "Re-Sound Platten sind für B2B-Innenumgebungen konzipiert: Büros, Besprechungsräume, Open-Space-Arbeitsbereiche, Lobbys und Empfangsbereiche, Restaurants, Hotels, Schulen und Universitäten, Gesundheitseinrichtungen, Bibliotheken und Kulturräume. Sie können wand-, decken- oder freistehend (Divide) montiert werden, und die Holzfurnier-Serie (rWood) eignet sich für anspruchsvolle, designorientierte Architekturprojekte, bei denen das Aussehen genauso wichtig ist wie die Leistung."
+      },
+      "rwoodVsRpetVsTextile": {
+        "category": "products",
+        "question": "Was ist der Unterschied zwischen rWood, rPET und der Textilserie?",
+        "answer": "Es sind drei unterschiedliche Materialfamilien für unterschiedliche Designintentionen. Die Textilserie (Interior, Solid, Divide) besteht aus 100 % recycelten Textilfasern mit Stoffbezug — weich, warm, in mehreren Farben verfügbar, hergestellt in Belgien. Die rPET-Serie (Panel, Groove, Flex Groove) besteht aus 100 % recycelten PET-Flaschen, ist OEKO-TEX® zertifiziert und kann wie MDF verarbeitet werden (sägen, fräsen, lackieren); ideal für kräftige Farben und individuelle Installationen. Die rWood-Serie (Groove, Perf, Micro, Panel) kombiniert FSC-zertifiziertes Holzfurnier mit einem Kern aus recycelten Fasern und bietet eine architektonische Premium-Oberfläche in 8+ Holzarten; in Europa gefertigt."
+      },
+      "fireSafety": {
+        "category": "products",
+        "question": "Welche Brandschutzklassen tragen Re-Sound Platten?",
+        "answer": "Die Brandklassifizierung variiert je nach Produktlinie. Die rPET-Serie ist gemäß EN 13501-1 mit B-s1,d0 zertifiziert — geeignet für die meisten gewerblichen und öffentlichen Anwendungen. Die rWood-Serie trägt je nach Ausführung Klassifizierungen bis B-s2,d0, und die mikroperforierte rWood Micro erreicht die höchste Brandschutzbewertung in unserem Katalog. Jede Produktseite gibt die genaue Zertifizierung an, und die Prüfzertifikate sind nach einem kurzen Kontaktformular als PDF verfügbar. Für spezifische Projekt-Compliance-Anforderungen wenden Sie sich mit der genau benötigten Klassifizierung an uns."
+      },
+      "samples": {
+        "category": "products",
+        "question": "Kann ich Muster bestellen?",
+        "answer": "Ja — Muster sind für qualifizierte B2B-Anfragen kostenlos. Verwenden Sie das Kontaktformular auf jeder Produktseite, um Muster anzufordern; geben Sie an, welche Farben, Oberflächen oder Furniere Sie sehen möchten. Musterpakete werden in der Regel innerhalb von 5 Arbeitstagen innerhalb der EU versandt. Für größere Projekte arrangieren wir auch gerne einen Showroom-Besuch oder schicken einen Projektberater vor Ort."
+      },
+      "whatIsCircular": {
+        "category": "sustainability",
+        "question": "Was bedeutet \"zirkulär\" bei Re-Sound?",
+        "answer": "Zirkulär bedeutet bei Re-Sound drei Dinge, die von Anfang an mitgedacht werden. Erstens, Inputs: Wir verwenden recycelte Materialien überall dort, wo die akustische Leistung es zulässt — 100 % recycelte Textilfasern in der Interior/Solid/Divide-Serie, 100 % recycelter PET in der rPET-Serie und ein Kern aus recycelten Fasern unter dem FSC-zertifizierten Furnier der rWood-Serie. Zweitens, Lebensende: Jede Re-Sound Platte kann über unseren kostenlosen Rücknahmeservice zurückgegeben werden, und die Materialien werden zu neuen Platten oder neuen Rohstoffen wiederaufbereitet, anstatt auf der Deponie zu landen. Drittens, Design: Verbindungen (magnetisch, mechanisch, Hakensysteme) sind umkehrbar, sodass Platten zerstörungsfrei entfernt werden können, was eine Neukonfiguration während der Lebensdauer des Gebäudes ermöglicht."
+      },
+      "takeBack": {
+        "category": "sustainability",
+        "question": "Wie funktioniert das Rücknahmeprogramm?",
+        "answer": "Am Ende der Lebensdauer — wenn ein Gebäude renoviert oder die Platten ersetzt werden — holt Re-Sound die Platten bei Ihnen vor Ort ab, kostenlos in Belgien und zu Logistikkosten im Rest der EU. Wir verarbeiten sie dann zurück in Rohmaterial: Textilplatten werden geschreddert und zu neuen Fasern weitergesponnen; rPET-Platten werden zerkleinert und neu gepresst; rWood-Kerne werden vom Furnier getrennt und wiederverwendet. Um eine Rückgabe einzuleiten, kontaktieren Sie uns mit der ursprünglichen Lieferreferenz und dem geschätzten Volumen."
+      },
+      "recycledContent": {
+        "category": "sustainability",
+        "question": "Welchen Rezyklatanteil hat jede Produktserie?",
+        "answer": "Der Rezyklatanteil variiert je nach Produktfamilie. Die Textilserie (Interior, Solid, Divide) besteht aus recycelten Textilfasern mit hohem Recyclinganteil. Die rPET-Serie verwendet 100 % post-consumer recyceltes PET (die entsprechende Flaschenzahl variiert je nach Plattengröße — etwa 60 Flaschen pro Standard-Groove-Platte). Die rWood-Serie verwendet einen Kern mit hohem Recyclingfaseranteil mit FSC-zertifiziertem Furnier auf der Sichtseite. Detaillierte Materialaufschlüsselungen und EPD-Dokumentation sind auf jeder Produktseite und auf Anfrage verfügbar."
+      },
+      "leadTimes": {
+        "category": "commercial",
+        "question": "Was sind die üblichen Lieferzeiten?",
+        "answer": "Standard-Katalogartikel werden innerhalb von 2-3 Wochen nach Auftragsbestätigung in die gesamte EU versandt. Sondergrößen, Sonderfarben oder große Projektmengen dauern in der Regel 4-6 Wochen. Für Projekte mit Termindruck kontaktieren Sie uns bitte mit dem Zeitplan, und wir bestätigen vor der Auftragsvergabe, was machbar ist."
+      },
+      "quoteProcess": {
+        "category": "commercial",
+        "question": "Wie fordere ich ein Angebot an?",
+        "answer": "Verwenden Sie das Kontaktformular auf einer Produktseite oder das allgemeine Kontaktformular, mit: der Produktlinie, die Sie interessiert, ungefähre Mengen oder Grundriss und Ihrem Projektzeitplan. Wir antworten innerhalb eines Werktags mit einem maßgeschneiderten Angebot, einer Musterregelung und einer Berechnung der erwarteten akustischen Verbesserung. Für größere Projekte können wir einen Vor-Ort-Termin oder einen Briefing-Call vereinbaren."
+      }
     }
   }
 }

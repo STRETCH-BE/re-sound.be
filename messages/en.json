@@ -27,18 +27,21 @@
     "rwoodVeneerTitle": "rWood Panel Acoustic Wood Veneer Panels | Re-Sound",
     "rwoodVeneerDescription": "Smooth wood veneer acoustic panels. 10 curated species, furniture-grade construction, EPD available. FSC certified. Made in Europe.",
     "rpetGrooveTitle": "rPET Groove Recycled PET Acoustic Panels | Re-Sound",
-    "rpetGrooveDescription": "Grooved acoustic panels made from 100% recycled PET bottles. 12 designer colors, 3 thicknesses (12/24/36 mm), B-s1,d0 fire rating. Made in Belgium.",
+    "rpetGrooveDescription": "Grooved acoustic panels made from 100% recycled PET bottles. 12 designer colors, 3 thicknesses (12/24/36 mm), B-s1,d0 fire rating. Made in Poland.",
     "rpetPanelTitle": "rPET Panel Recycled PET Acoustic Panels | Re-Sound",
-    "rpetPanelDescription": "Versatile flat acoustic panels from 100% recycled PET. Process like MDF, OEKO-TEX® certified, Class A+ emissions. Walls, ceilings, furniture. Made in Belgium.",
+    "rpetPanelDescription": "Versatile flat acoustic panels from 100% recycled PET. Process like MDF, OEKO-TEX® certified, Class A+ emissions. Walls, ceilings, furniture. Made in Poland.",
     "rpetFlexGrooveTitle": "rPET Flex Groove Flexible Acoustic Panels | Re-Sound",
-    "rpetFlexGrooveDescription": "Flexible grooved acoustic panels made from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified."
+    "rpetFlexGrooveDescription": "Flexible grooved acoustic panels made from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified.",
+    "faqTitle": "FAQ — Re-Sound Acoustic Panels",
+    "faqDescription": "Answers to common questions about Re-Sound acoustic panels: how absorption works, fire ratings, lead times, the circular take-back program, and product selection."
   },
   "nav": {
     "products": "Products",
     "about": "About",
     "sustainability": "Sustainability",
     "contact": "Contact",
-    "cta": "Request Quote"
+    "cta": "Request Quote",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "100% Circular Acoustics",
@@ -1315,7 +1318,7 @@
       "badge1": "100% Recycled",
       "badge2": "Fully Recyclable",
       "badge3": "Free Take-Back",
-      "badge4": "Made in Belgium",
+      "badge4": "Made in Poland",
       "recycledBottlesLabel": "Recycled bottles per panel",
       "badge1Desc": "Made from post-consumer PET bottles",
       "badge2Desc": "Can be recycled at end of life",
@@ -1422,7 +1425,7 @@
       "colorChart": "Color Chart"
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Belgium • 100% Recycled"
+      "freeNote": "Free samples available • Made in Poland • 100% Recycled"
     }
   },
   "rpetPanelPage": {
@@ -1609,7 +1612,7 @@
       "oekoTexCert": "OEKO-TEX® Certificate"
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Belgium • 100% Recyclable"
+      "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
     }
   },
   "rwoodGroovePage": {
@@ -2468,7 +2471,7 @@
       "description2": "Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements."
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Europe • 100% Recycled"
+      "freeNote": "Free samples available • Made in Poland • 100% Recycled"
     }
   },
   "legal": {
@@ -2481,6 +2484,96 @@
     "terms": {
       "title": "Terms of Use",
       "subtitle": "Conditions for using the Re-Sound website"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Re-Sound acoustic panels — from the basics of room acoustics to circular take-back.",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions match your search.",
+    "contact": {
+      "title": "Can't find your answer?",
+      "body": "Send us your question and we will get back to you with a tailored answer for your project.",
+      "cta": "Ask your question"
+    },
+    "categories": {
+      "all": "All questions",
+      "acoustics": "Acoustics",
+      "products": "Products",
+      "sustainability": "Sustainability",
+      "commercial": "Ordering & samples"
+    },
+    "questions": {
+      "absorptionVsInsulation": {
+        "category": "acoustics",
+        "question": "What is the difference between sound absorption and sound insulation?",
+        "answer": "Sound absorption and sound insulation solve different problems. Absorption reduces echo and reverberation inside a room by converting sound-wave energy into heat as it strikes a soft, porous material — that's what every Re-Sound panel does. Insulation prevents sound from passing through a wall or floor into the next room, which requires dense, sealed mass construction. Re-Sound panels improve the acoustics of the space you are in; they are not a soundproofing solution between rooms."
+      },
+      "whatIsReverberation": {
+        "category": "acoustics",
+        "question": "What is reverberation and why does it matter?",
+        "answer": "Reverberation is the persistence of sound in a room after the original source has stopped — the \"live\" quality of a hard-surfaced room. It is measured as RT60: the time it takes a sound to fall by 60 decibels. High reverberation makes speech difficult to understand, raises ambient noise levels, and increases listener fatigue. In offices, restaurants, schools and healthcare environments the recommended RT60 is typically between 0.4 and 0.8 seconds. Re-Sound panels reduce reverberation by absorbing mid- and high-frequency sound — the range where human speech lives."
+      },
+      "whatInfluencesAcoustics": {
+        "category": "acoustics",
+        "question": "What influences the acoustics of a room?",
+        "answer": "Three things drive room acoustics: the volume of the space, the materials on its surfaces, and the function it serves. Hard, smooth surfaces (concrete, glass, tile, parquet) reflect sound and create echo. Soft, porous surfaces (textiles, recycled-fibre panels, carpet) absorb it. The larger and harder a space is, the more absorptive surface you need to bring reverberation down to a comfortable level. Re-Sound panels are designed to add that absorptive surface without adding bulk."
+      },
+      "whatIsAlphaW": {
+        "category": "acoustics",
+        "question": "What do αw, NRC, and Class A mean on the spec sheets?",
+        "answer": "They are different ways of expressing the same property: how much sound a material absorbs. αw is the weighted sound absorption coefficient defined by ISO 11654 — a single number from 0 (perfect reflector) to 1.0 (perfect absorber). NRC (Noise Reduction Coefficient, ASTM C423) is the American equivalent, also 0 to 1.0. Class A is the top absorption class in ISO 11654, awarded to materials with αw ≥ 0.9. Several Re-Sound products are Class A rated: the higher the αw, the more absorptive the panel."
+      },
+      "howManyPanels": {
+        "category": "acoustics",
+        "question": "How many panels do I need for my space?",
+        "answer": "As a rule of thumb, plan for absorptive surface equivalent to about 20-30% of the floor area in a typical office, meeting room or restaurant. So a 30 m² room will benefit from roughly 6-9 m² of acoustic panels. The exact figure depends on existing surfaces, ceiling height, and the use case — for a more precise number we are happy to run a Sabine calculation based on your floor plan. Send us the dimensions and we will come back with a recommendation."
+      },
+      "whereCanUse": {
+        "category": "products",
+        "question": "Where can Re-Sound panels be used?",
+        "answer": "Re-Sound panels are designed for B2B interior environments: offices, meeting rooms, open-plan workspaces, lobbies and reception areas, restaurants, hotels, schools and universities, healthcare facilities, libraries, and cultural spaces. They can be wall-mounted, ceiling-mounted or freestanding (Divide), and the wood-veneer ranges (rWood) are suitable for premium, design-led architectural projects where appearance matters as much as performance."
+      },
+      "rwoodVsRpetVsTextile": {
+        "category": "products",
+        "question": "What is the difference between rWood, rPET and the textile range?",
+        "answer": "They are three different material families serving different design intents. The textile range (Interior, Solid, Divide) is made from 100% recycled textile fibres with a fabric cover — soft, warm, available in multiple colours, made in Belgium. The rPET range (Panel, Groove, Flex Groove) is made from 100% recycled PET bottles, OEKO-TEX® certified, and can be processed like MDF (cut, mill, paint); ideal for bold colours and custom installations. The rWood range (Groove, Perf, Micro, Panel) combines FSC-certified wood veneer with a recycled-fibre core, giving a premium architectural finish in 8+ wood species; manufactured in Europe."
+      },
+      "fireSafety": {
+        "category": "products",
+        "question": "What fire safety classifications do Re-Sound panels carry?",
+        "answer": "Fire classification varies by product line. The rPET range is certified B-s1,d0 to EN 13501-1 — suitable for most commercial and public-building applications. The rWood range carries classifications up to B-s2,d0 depending on finish, and the micro-perforated rWood Micro reaches the highest fire safety rating in our catalog. Each product page lists the exact certification, and the test certificates are available as PDF downloads after a quick contact form. For specific project compliance requirements get in touch with the exact classification you need."
+      },
+      "samples": {
+        "category": "products",
+        "question": "Can I order samples?",
+        "answer": "Yes — samples are free for qualified B2B requests. Use the contact form on any product page to request samples; specify which colours, finishes or veneers you would like to see. Sample kits are typically shipped within 5 working days within the EU. For larger projects we can also arrange a showroom visit or send a project consultant on site."
+      },
+      "whatIsCircular": {
+        "category": "sustainability",
+        "question": "What does \"circular\" mean at Re-Sound?",
+        "answer": "Circular at Re-Sound means three things, designed in from the start. First, inputs: we use recycled materials wherever the acoustic performance allows it — 100% recycled textiles in the Interior/Solid/Divide range, 100% recycled PET in the rPET range, and a recycled-fibre core under the FSC-certified veneer of the rWood range. Second, end of life: every Re-Sound panel can be returned to us through our free take-back service, and the materials are reprocessed into new panels or new raw material rather than going to landfill. Third, design: connections (magnetic, mechanical, hook systems) are reversible so panels can be removed without destruction, allowing reconfiguration during the building's life."
+      },
+      "takeBack": {
+        "category": "sustainability",
+        "question": "How does the take-back program work?",
+        "answer": "At end of life — when a building is being refurbished or the panels are being replaced — Re-Sound will collect the panels from your site, free of charge within Belgium and at logistics cost in the rest of the EU. We then process them back into raw material: textile panels are shredded and re-spun into new fibre; rPET panels are reground and re-pressed; rWood cores are separated from the veneer and reused. To initiate a return, contact us with the original delivery reference and approximate volume."
+      },
+      "recycledContent": {
+        "category": "sustainability",
+        "question": "What is the recycled content of each product line?",
+        "answer": "Recycled content varies by product family. The textile range (Interior, Solid, Divide) is made from recycled textile fibres with high recycled content. The rPET range uses 100% post-consumer recycled PET (the actual bottle-equivalent count varies by panel size — roughly 60 bottles per standard Groove panel). The rWood range uses a high recycled-fibre core with FSC-certified veneer on the visible face. Detailed material breakdowns and EPD documentation are available on each product page and on request."
+      },
+      "leadTimes": {
+        "category": "commercial",
+        "question": "What are typical lead times?",
+        "answer": "Standard catalog items ship within 2-3 weeks from order confirmation across the EU. Custom sizes, custom colours, or large project quantities typically run 4-6 weeks. For projects on a deadline, contact us with the timeline and we will confirm what is achievable before order placement."
+      },
+      "quoteProcess": {
+        "category": "commercial",
+        "question": "How do I request a quote?",
+        "answer": "Use the contact form on any product page, or the general contact form, with: the product line you are interested in, approximate quantities or floor plan, and your project timeline. We will respond within one working day with a tailored quote, sample arrangement, and a calculation of expected acoustic improvement. For larger projects we can attend a site visit or briefing call."
+      }
     }
   }
 }

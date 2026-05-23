@@ -14,7 +14,7 @@
     "blogDescription": "Inzichten over circulaire economie, akoestiek en duurzaam ontwerp van het Re-Sound team.",
     "rwoodVeneerDescription": "Gladde houtfineer akoestische panelen. 10 geselecteerde soorten, meubelkwaliteit constructie, EPD beschikbaar. FSC gecertificeerd. Gemaakt in Europa.",
     "rpetGrooveTitle": "rPET Groove Gerecycleerde PET Akoestische Panelen | Re-Sound",
-    "rpetGrooveDescription": "Gegroeide akoestische panelen van 100% gerecycleerde PET-flessen. 12 designerkleuren, 3 diktes (12/24/36 mm), B-s1,d0 brandklasse. Gemaakt in België.",
+    "rpetGrooveDescription": "Gegroeide akoestische panelen van 100% gerecycleerde PET-flessen. 12 designerkleuren, 3 diktes (12/24/36 mm), B-s1,d0 brandklasse. Gemaakt in Polen.",
     "rwoodVeneerTitle": "rWood Panel Akoestische Houtfineer Panelen | Re-Sound",
     "rpetPanelTitle": "rPET Panel Gerecycleerde PET Akoestische Panelen | Re-Sound",
     "rwoodPerfTitle": "rWood Perf Geperforeerde Akoestische Houtpanelen | Re-Sound",
@@ -26,19 +26,22 @@
     "divideTitle": "Divide Vrijstaande Akoestische Schermen | Re-Sound",
     "rwoodGrooveDescription": "Premium gegroeide akoestische panelen met FSC-gecertificeerd houtfineer op een gerecycleerde viltkern. Klasse A absorptie, naturel eiken en walnoten afwerkingen. Gemaakt in Europa.",
     "interiorDescription": "Modulaire akoestische wandpanelen gemaakt van 100% gerecycleerd textiel. Klasse A geluidsabsorptie (αw 1.0), afneembare wasbare bekleding, gemaakt in België. Vanaf €387 per set.",
-    "rpetPanelDescription": "Veelzijdige vlakke akoestische panelen van 100% gerecycleerd PET. Bewerkbaar als MDF, OEKO-TEX® gecertificeerd, Klasse A+ emissies. Wanden, plafonds, meubilair. Gemaakt in België.",
+    "rpetPanelDescription": "Veelzijdige vlakke akoestische panelen van 100% gerecycleerd PET. Bewerkbaar als MDF, OEKO-TEX® gecertificeerd, Klasse A+ emissies. Wanden, plafonds, meubilair. Gemaakt in Polen.",
     "rpetFlexGrooveTitle": "rPET Flex Groove Flexibele Akoestische Panelen | Re-Sound",
     "rpetFlexGrooveDescription": "Flexibele gegroefde akoestische panelen, gemaakt van 100% gerecycleerd PET. Buigbaar voor gebogen oppervlakken, kolommen en maatwerk installaties. OEKO-TEX® gecertificeerd.",
     "interiorTitle": "Interior Akoestische Wandpanelen | Re-Sound",
     "solidTitle": "Solid Akoestische Wandpanelen | Re-Sound",
-    "solidDescription": "Grootformaat akoestische wandpanelen voor krachtige geluidsabsorptie. 1200 × 600 mm, haakinstallatiesysteem, 100% gerecycleerde materialen. Gemaakt in België."
+    "solidDescription": "Grootformaat akoestische wandpanelen voor krachtige geluidsabsorptie. 1200 × 600 mm, haakinstallatiesysteem, 100% gerecycleerde materialen. Gemaakt in België.",
+    "faqTitle": "Veelgestelde vragen — Re-Sound Akoestische Panelen",
+    "faqDescription": "Antwoorden op veelgestelde vragen over Re-Sound akoestische panelen: hoe absorptie werkt, brandklassen, levertijden, circulair terugnameprogramma en productkeuze."
   },
   "nav": {
     "products": "Producten",
     "about": "Over ons",
     "sustainability": "Duurzaamheid",
     "contact": "Contact",
-    "cta": "Offerte Aanvragen"
+    "cta": "Offerte Aanvragen",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "100% Circulaire Akoestiek",
@@ -1422,7 +1425,7 @@
       "colorChart": "Kleurenkaart"
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in België • 100% Gerecycleerd"
+      "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Gerecycleerd"
     }
   },
   "rpetPanelPage": {
@@ -1609,7 +1612,7 @@
       "oekoTexCert": "OEKO-TEX® Certificaat"
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in België • 100% Recycleerbaar"
+      "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Recycleerbaar"
     }
   },
   "rwoodGroovePage": {
@@ -2471,7 +2474,7 @@
       "description2": "Vraag een offerte op maat voor uw project. Ons team helpt u de perfecte kleur te kiezen en uw behoeften te berekenen."
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in Europa • 100% Gerecycleerd"
+      "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Gerecycleerd"
     }
   },
   "legal": {
@@ -2484,6 +2487,96 @@
     "terms": {
       "title": "Gebruiksvoorwaarden",
       "subtitle": "Voorwaarden voor het gebruik van de Re-Sound website"
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Alles wat je moet weten over Re-Sound akoestische panelen — van de basis van ruimteakoestiek tot ons circulaire terugnamesysteem.",
+    "searchPlaceholder": "Zoek in vragen...",
+    "noResults": "Geen vragen gevonden voor je zoekopdracht.",
+    "contact": {
+      "title": "Vind je je antwoord niet?",
+      "body": "Stel je vraag en we komen bij je terug met een antwoord op maat van je project.",
+      "cta": "Stel je vraag"
+    },
+    "categories": {
+      "all": "Alle vragen",
+      "acoustics": "Akoestiek",
+      "products": "Producten",
+      "sustainability": "Duurzaamheid",
+      "commercial": "Bestellen & stalen"
+    },
+    "questions": {
+      "absorptionVsInsulation": {
+        "category": "acoustics",
+        "question": "Wat is het verschil tussen geluidsabsorptie en geluidsisolatie?",
+        "answer": "Geluidsabsorptie en geluidsisolatie lossen verschillende problemen op. Absorptie vermindert echo en nagalm in een ruimte door geluidsenergie om te zetten in warmte wanneer deze een zacht, poreus materiaal raakt — dat is wat elk Re-Sound paneel doet. Isolatie voorkomt dat geluid door een wand of vloer naar de volgende ruimte gaat, wat dichte, afgesloten massieve constructie vereist. Re-Sound panelen verbeteren de akoestiek binnen een ruimte; ze zijn geen oplossing voor geluidsisolatie tussen ruimtes."
+      },
+      "whatIsReverberation": {
+        "category": "acoustics",
+        "question": "Wat is nagalm en waarom is het belangrijk?",
+        "answer": "Nagalm is het aanhoudende geluid in een ruimte nadat de oorspronkelijke bron is gestopt — de \"levende\" kwaliteit van een ruimte met harde oppervlakken. Het wordt gemeten als RT60: de tijd die geluid nodig heeft om met 60 decibel af te nemen. Hoge nagalm maakt spraak moeilijk te verstaan, verhoogt het achtergrondgeluidsniveau en veroorzaakt luistermoeheid. In kantoren, restaurants, scholen en zorgomgevingen is de aanbevolen RT60 doorgaans tussen 0,4 en 0,8 seconden. Re-Sound panelen verminderen nagalm door midden- en hoogfrequent geluid te absorberen — het bereik waarin menselijke spraak zich bevindt."
+      },
+      "whatInfluencesAcoustics": {
+        "category": "acoustics",
+        "question": "Wat beïnvloedt de akoestiek van een ruimte?",
+        "answer": "Drie zaken bepalen ruimteakoestiek: het volume van de ruimte, de materialen op de oppervlakken en de functie ervan. Harde, gladde oppervlakken (beton, glas, tegels, parket) weerkaatsen geluid en creëren echo. Zachte, poreuze oppervlakken (textiel, gerecycleerde vezelpanelen, tapijt) absorberen geluid. Hoe groter en harder een ruimte is, hoe meer absorberend oppervlak je nodig hebt om nagalm tot een comfortabel niveau terug te brengen. Re-Sound panelen zijn ontworpen om dat absorberend oppervlak toe te voegen zonder volume toe te voegen."
+      },
+      "whatIsAlphaW": {
+        "category": "acoustics",
+        "question": "Wat betekenen αw, NRC en Klasse A op de technische fiches?",
+        "answer": "Het zijn verschillende manieren om dezelfde eigenschap uit te drukken: hoeveel geluid een materiaal absorbeert. αw is de gewogen geluidsabsorptiecoëfficiënt volgens ISO 11654 — één getal tussen 0 (perfecte reflector) en 1,0 (perfecte absorber). NRC (Noise Reduction Coefficient, ASTM C423) is het Amerikaanse equivalent, ook 0 tot 1,0. Klasse A is de hoogste absorptieklasse in ISO 11654, toegekend aan materialen met αw ≥ 0,9. Verschillende Re-Sound producten zijn Klasse A: hoe hoger de αw, hoe absorberender het paneel."
+      },
+      "howManyPanels": {
+        "category": "acoustics",
+        "question": "Hoeveel panelen heb ik nodig voor mijn ruimte?",
+        "answer": "Als vuistregel reken je op absorberend oppervlak gelijk aan ongeveer 20-30% van de vloeroppervlakte in een typisch kantoor, vergaderruimte of restaurant. Een ruimte van 30 m² heeft dus baat bij ongeveer 6-9 m² akoestische panelen. Het exacte cijfer hangt af van bestaande oppervlakken, plafondhoogte en de toepassing — voor een preciezer cijfer maken we graag een Sabine-berekening op basis van je grondplan. Stuur ons de afmetingen en we komen terug met een aanbeveling."
+      },
+      "whereCanUse": {
+        "category": "products",
+        "question": "Waar kunnen Re-Sound panelen worden gebruikt?",
+        "answer": "Re-Sound panelen zijn ontworpen voor B2B interieuromgevingen: kantoren, vergaderruimtes, open werkplekken, lobby's en receptiezones, restaurants, hotels, scholen en universiteiten, zorginstellingen, bibliotheken en culturele ruimtes. Ze kunnen aan de wand, aan het plafond of vrijstaand (Divide) worden geplaatst, en de houtfineerreeks (rWood) is geschikt voor architecturale topprojecten waar uitzicht net zo belangrijk is als prestaties."
+      },
+      "rwoodVsRpetVsTextile": {
+        "category": "products",
+        "question": "Wat is het verschil tussen rWood, rPET en de textielreeks?",
+        "answer": "Dit zijn drie verschillende materiaalfamilies voor verschillende ontwerpintenties. De textielreeks (Interior, Solid, Divide) is gemaakt van 100% gerecycleerde textielvezels met een stoffen overtrek — zacht, warm, beschikbaar in meerdere kleuren, gemaakt in België. De rPET-reeks (Panel, Groove, Flex Groove) is gemaakt van 100% gerecycleerde PET-flessen, OEKO-TEX® gecertificeerd, en kan zoals MDF verwerkt worden (zagen, frezen, schilderen); ideaal voor opvallende kleuren en bespoke installaties. De rWood-reeks (Groove, Perf, Micro, Panel) combineert FSC-gecertificeerd houtfineer met een gerecycleerde vezelkern en geeft een architecturale topafwerking in 8+ houtsoorten; geproduceerd in Europa."
+      },
+      "fireSafety": {
+        "category": "products",
+        "question": "Welke brandklassen hebben Re-Sound panelen?",
+        "answer": "De brandklasse verschilt per productlijn. De rPET-reeks is gecertificeerd B-s1,d0 volgens EN 13501-1 — geschikt voor de meeste commerciële en openbare toepassingen. De rWood-reeks draagt classificaties tot B-s2,d0 afhankelijk van de afwerking, en de microgeperforeerde rWood Micro bereikt de hoogste brandklasse in ons gamma. Elke productpagina vermeldt de exacte certificering en de testcertificaten zijn beschikbaar als PDF na een kort contactformulier. Neem voor specifieke projectvereisten contact op met de exacte vereiste classificatie."
+      },
+      "samples": {
+        "category": "products",
+        "question": "Kan ik stalen bestellen?",
+        "answer": "Ja — stalen zijn gratis voor gekwalificeerde B2B aanvragen. Gebruik het contactformulier op elke productpagina om stalen aan te vragen; geef aan welke kleuren, afwerkingen of fineerhouten je wilt zien. Stalenpakketten worden doorgaans binnen 5 werkdagen verzonden binnen de EU. Voor grotere projecten regelen we ook graag een showroombezoek of sturen we een projectadviseur ter plaatse."
+      },
+      "whatIsCircular": {
+        "category": "sustainability",
+        "question": "Wat betekent \"circulair\" bij Re-Sound?",
+        "answer": "Circulair betekent bij Re-Sound drie dingen, ingebakken vanaf het ontwerp. Eén — inputs: we gebruiken gerecycleerde materialen waar de akoestische prestaties dat toelaten — 100% gerecycleerde textielvezels in Interior/Solid/Divide, 100% gerecycleerde PET in de rPET-reeks en een gerecycleerde vezelkern onder het FSC-gecertificeerde fineer van de rWood-reeks. Twee — einde levensduur: elk Re-Sound paneel kan via onze gratis terugnameservice naar ons terug, en de materialen worden verwerkt tot nieuwe panelen of nieuwe grondstof in plaats van naar het stort te gaan. Drie — ontwerp: verbindingen (magneten, mechanisch, haaksystemen) zijn omkeerbaar zodat panelen zonder vernieling kunnen worden verwijderd, wat herconfiguratie tijdens de levensduur van het gebouw mogelijk maakt."
+      },
+      "takeBack": {
+        "category": "sustainability",
+        "question": "Hoe werkt het terugnameprogramma?",
+        "answer": "Aan het einde van de levensduur — wanneer een gebouw wordt gerenoveerd of de panelen worden vervangen — komt Re-Sound de panelen ophalen op je locatie, gratis binnen België en tegen logistieke kostprijs in de rest van de EU. We verwerken ze daarna terug tot grondstof: textielpanelen worden versnipperd en herversponnen tot nieuwe vezel; rPET-panelen worden hervermalen en hergeperst; rWood-kernen worden van het fineer gescheiden en hergebruikt. Om een retour te starten, neem contact met ons op met de oorspronkelijke leveringsreferentie en het geschatte volume."
+      },
+      "recycledContent": {
+        "category": "sustainability",
+        "question": "Wat is het gerecycleerde gehalte per productreeks?",
+        "answer": "Het gerecycleerde gehalte verschilt per productfamilie. De textielreeks (Interior, Solid, Divide) is gemaakt van gerecycleerde textielvezels met een hoog gerecycleerd gehalte. De rPET-reeks gebruikt 100% post-consumer gerecycleerde PET (het equivalent aantal flessen varieert per paneelformaat — ongeveer 60 flessen per standaard Groove-paneel). De rWood-reeks gebruikt een kern met hoog gerecycleerd vezelgehalte met FSC-gecertificeerd fineer aan de zichtzijde. Gedetailleerde materiaalverdelingen en EPD-documentatie zijn beschikbaar op elke productpagina en op aanvraag."
+      },
+      "leadTimes": {
+        "category": "commercial",
+        "question": "Wat zijn de typische levertijden?",
+        "answer": "Standaardcatalogusartikelen worden binnen 2-3 weken na orderbevestiging verzonden binnen de EU. Maatwerk, kleur op maat of grote projectvolumes lopen doorgaans 4-6 weken. Voor projecten met een deadline: neem contact op met de planning en we bevestigen wat haalbaar is vóór de orderplaatsing."
+      },
+      "quoteProcess": {
+        "category": "commercial",
+        "question": "Hoe vraag ik een offerte aan?",
+        "answer": "Gebruik het contactformulier op elke productpagina of het algemene contactformulier, met: de productlijn die je interesseert, geschatte hoeveelheden of grondplan, en je projectplanning. We antwoorden binnen één werkdag met een offerte op maat, stalenregeling en een berekening van de verwachte akoestische verbetering. Voor grotere projecten gaan we ter plaatse of doen we een briefing-call."
+      }
     }
   }
 }
