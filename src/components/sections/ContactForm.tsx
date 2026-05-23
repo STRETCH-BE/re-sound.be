@@ -104,17 +104,31 @@ export default function ContactForm() {
         required
       />
 
-      {submitStatus === 'success' && (
-        <div className="form-message success">
-          <span>✓</span> {t('successMessage')}
-        </div>
-      )}
+      {/* Honeypot: visually hidden but visible to bots. Real users skip it. */}
+      <div className="hp-field" aria-hidden="true">
+        <label htmlFor="website">Leave this field empty</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
 
-      {submitStatus === 'error' && (
-        <div className="form-message error">
-          <span>!</span> {t('errorMessage')}
-        </div>
-      )}
+      <div className="form-status" role="status" aria-live="polite">
+        {submitStatus === 'success' && (
+          <div className="form-message success">
+            <span>✓</span> {t('successMessage')}
+          </div>
+        )}
+
+        {submitStatus === 'error' && (
+          <div className="form-message error">
+            <span>!</span> {t('errorMessage')}
+          </div>
+        )}
+      </div>
 
       <button type="submit" className="btn-primary" disabled={isSubmitting}>
         {isSubmitting ? t('sending') : t('submit')}
@@ -124,6 +138,14 @@ export default function ContactForm() {
           </svg>
         )}
       </button>
+
+      <p className="form-consent">
+        {t.rich('privacyNotice', {
+          link: (chunks) => (
+            <a href={`/${locale}/privacy`}>{chunks}</a>
+          ),
+        })}
+      </p>
 
       <style jsx>{`
         .contact-form {
@@ -179,6 +201,27 @@ export default function ContactForm() {
 
         .contact-form .btn-primary {
           align-self: flex-start;
+        }
+
+        /* Visually-hidden honeypot — invisible to real users, parseable by bots */
+        .hp-field {
+          position: absolute;
+          left: -9999px;
+          top: -9999px;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+        }
+
+        .form-consent {
+          font-size: 0.85rem;
+          color: #666;
+          margin-top: 0.25rem;
+        }
+
+        .form-consent :global(a) {
+          color: var(--brand-blue);
+          text-decoration: underline;
         }
 
         @media (max-width: 576px) {

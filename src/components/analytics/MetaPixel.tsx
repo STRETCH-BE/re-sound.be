@@ -2,28 +2,36 @@
 
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
+import {
+  CONSENT_EVENT,
+  getConsent,
+  type ConsentPreferences,
+} from '@/lib/consent';
 
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
+/**
+ * Meta (Facebook) Pixel.
+ *
+ * Meta does not support Google's Consent Mode v2 directly, so the pixel
+ * still uses the load-only-after-consent pattern. Gated on the `marketing`
+ * category from <CookieConsent />.
+ */
 export default function MetaPixel() {
   const [hasConsent, setHasConsent] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent === 'accepted') {
-      setHasConsent(true);
-    }
+    const stored = getConsent();
+    if (stored?.marketing) setHasConsent(true);
 
-    const handleConsent = (e: CustomEvent) => {
-      if (e.detail === 'accepted') {
-        setHasConsent(true);
-      }
+    const handleConsent = (e: Event) => {
+      const detail = (e as CustomEvent<ConsentPreferences>).detail;
+      if (detail?.marketing) setHasConsent(true);
+      else setHasConsent(false);
     };
 
-    window.addEventListener('consent-given', handleConsent as EventListener);
-    return () => {
-      window.removeEventListener('consent-given', handleConsent as EventListener);
-    };
+    window.addEventListener(CONSENT_EVENT, handleConsent);
+    return () => window.removeEventListener(CONSENT_EVENT, handleConsent);
   }, []);
 
   if (!hasConsent || !META_PIXEL_ID) return null;
@@ -59,21 +67,26 @@ export default function MetaPixel() {
 
 // Helper hook for Meta Pixel events
 export function useMetaPixel() {
-  const trackEvent = (eventName: string, params?: Record<string, any>) => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent !== 'accepted') return;
-
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', eventName, params);
+  const trackEvent = (eventName: string, params?: Record<string, unknown>) => {
+    if (typeof window === 'undefined') return;
+    const stored = getConsent();
+    if (!stored?.marketing) return;
+    const w = window as unknown as { fbq?: (...args: unknown[]) => void };
+    if (typeof w.fbq === 'function') {
+      w.fbq('track', eventName, params);
     }
   };
 
-  const trackCustomEvent = (eventName: string, params?: Record<string, any>) => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent !== 'accepted') return;
-
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('trackCustom', eventName, params);
+  const trackCustomEvent = (
+    eventName: string,
+    params?: Record<string, unknown>
+  ) => {
+    if (typeof window === 'undefined') return;
+    const stored = getConsent();
+    if (!stored?.marketing) return;
+    const w = window as unknown as { fbq?: (...args: unknown[]) => void };
+    if (typeof w.fbq === 'function') {
+      w.fbq('trackCustom', eventName, params);
     }
   };
 

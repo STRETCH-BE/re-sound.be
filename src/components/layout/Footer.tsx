@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { openConsentBanner } from '@/lib/consent';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -132,6 +133,13 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>{t('copyright')}</p>
         <div className="footer-legal">
+          <button
+            type="button"
+            onClick={openConsentBanner}
+            className="footer-legal-button"
+          >
+            {t('manageCookies')}
+          </button>
           <Link href="/privacy">{t('privacy')}</Link>
           <Link href="/terms">{t('terms')}</Link>
           <Link href="/faq">FAQ</Link>
@@ -243,6 +251,22 @@ export default function Footer() {
         }
 
         .footer-legal :global(a):hover {
+          color: white;
+        }
+
+        .footer-legal-button {
+          background: none;
+          border: none;
+          padding: 0;
+          color: rgba(255, 255, 255, 0.5);
+          text-decoration: none;
+          font-size: 0.9rem;
+          font-family: inherit;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+
+        .footer-legal-button:hover {
           color: white;
         }
 

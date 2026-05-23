@@ -2,28 +2,37 @@
 
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
+import {
+  CONSENT_EVENT,
+  getConsent,
+  type ConsentPreferences,
+} from '@/lib/consent';
 
 const BING_UET_ID = process.env.NEXT_PUBLIC_BING_UET_ID;
 
+/**
+ * Bing Universal Event Tracking.
+ *
+ * Loads only after the user grants `marketing` consent. UET also supports a
+ * consent signal via `window.uetq.push('consent', 'update', { ad_storage: ... })`
+ * which we could add later — for now, gating the script entirely is sufficient
+ * and the simpler compliance posture.
+ */
 export default function BingUET() {
   const [hasConsent, setHasConsent] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent === 'accepted') {
-      setHasConsent(true);
-    }
+    const stored = getConsent();
+    if (stored?.marketing) setHasConsent(true);
 
-    const handleConsent = (e: CustomEvent) => {
-      if (e.detail === 'accepted') {
-        setHasConsent(true);
-      }
+    const handleConsent = (e: Event) => {
+      const detail = (e as CustomEvent<ConsentPreferences>).detail;
+      if (detail?.marketing) setHasConsent(true);
+      else setHasConsent(false);
     };
 
-    window.addEventListener('consent-given', handleConsent as EventListener);
-    return () => {
-      window.removeEventListener('consent-given', handleConsent as EventListener);
-    };
+    window.addEventListener(CONSENT_EVENT, handleConsent);
+    return () => window.removeEventListener(CONSENT_EVENT, handleConsent);
   }, []);
 
   if (!hasConsent || !BING_UET_ID) return null;
@@ -50,21 +59,28 @@ export default function BingUET() {
 
 // Helper hook for Bing UET events
 export function useBingUET() {
-  const trackEvent = (eventName: string, params?: Record<string, any>) => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent !== 'accepted') return;
-
-    if (typeof window !== 'undefined' && (window as any).uetq) {
-      (window as any).uetq.push('event', eventName, params || {});
+  const trackEvent = (eventName: string, params?: Record<string, unknown>) => {
+    if (typeof window === 'undefined') return;
+    const stored = getConsent();
+    if (!stored?.marketing) return;
+    const w = window as unknown as { uetq?: { push: (...args: unknown[]) => void } };
+    if (w.uetq) {
+      w.uetq.push('event', eventName, params || {});
     }
   };
 
-  const trackConversion = (action: string, category?: string, label?: string, value?: number) => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent !== 'accepted') return;
-
-    if (typeof window !== 'undefined' && (window as any).uetq) {
-      (window as any).uetq.push('event', action, {
+  const trackConversion = (
+    action: string,
+    category?: string,
+    label?: string,
+    value?: number
+  ) => {
+    if (typeof window === 'undefined') return;
+    const stored = getConsent();
+    if (!stored?.marketing) return;
+    const w = window as unknown as { uetq?: { push: (...args: unknown[]) => void } };
+    if (w.uetq) {
+      w.uetq.push('event', action, {
         event_category: category,
         event_label: label,
         event_value: value,
