@@ -2276,7 +2276,27 @@
       "title": "10 Geselecteerde Houtfineers",
       "description": "Van serene Scandinavische berk tot dramatische Amerikaanse walnoot — elk fineer is zorgvuldig geselecteerd, geborsteld en afgewerkt om het karakter van het hout tot zijn recht te laten komen.",
       "filterAll": "Alle Fineers",
-      "customNote": "Aangepaste fineersoorten en beitskleuren beschikbaar voor projectbestellingen van 50+ panelen."
+      "customNote": "Aangepaste fineersoorten en beitskleuren beschikbaar voor projectbestellingen van 50+ panelen.",
+      "categories": {
+        "lightNaturals": "Lichte tonen",
+        "warmNaturals": "Warme tonen",
+        "deepTones": "Diepe tonen"
+      },
+      "origins": {
+        "europe": "Europa",
+        "scandinavia": "Scandinavië",
+        "northAmerica": "Noord-Amerika"
+      },
+      "grains": {
+        "straightToInterlocked": "Recht tot verstrengeld",
+        "subtleFineGrain": "Subtiele fijne nerf",
+        "fineStraightGrain": "Fijne rechte nerf",
+        "cathedralGrain": "Kathedraalnerf",
+        "pronouncedGrain": "Uitgesproken nerf",
+        "straightToWavy": "Recht tot golvend",
+        "deepCathedralGrain": "Diepe kathedraalnerf",
+        "richFlowingGrain": "Rijk stromende nerf"
+      }
     },
     "dimensions": {
       "tag": "AFMETINGEN",
@@ -2395,7 +2415,7 @@
       "badge2": "Volledig Recycleerbaar",
       "badge3": "Europese Productie",
       "badge4": "Lage VOS",
-      "badge3Desc": "Verminderde transportemissies",
+      "badge3Desc": "Korte aanvoerketen vanuit onze Poolse fabriek",
       "badge4Desc": "Veilig voor binnenomgevingen",
       "description2": "Elk Flex-Groove paneel is gemaakt van 100% gerecycleerde PET plastic flessen, waardoor afvalmaterialen een nieuw leven krijgen. Onze circulaire aanpak zorgt ervoor dat deze panelen aan het einde van hun levensduur opnieuw gerecycleerd kunnen worden."
     },

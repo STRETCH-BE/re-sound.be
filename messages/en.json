@@ -2273,7 +2273,27 @@
       "title": "10 Curated Wood Veneers",
       "description": "From serene Scandinavian birch to dramatic American walnut — every veneer is carefully selected, brushed and finished to showcase the character of the wood.",
       "filterAll": "All Veneers",
-      "customNote": "Custom veneer species and stain colours available on project orders of 50+ panels."
+      "customNote": "Custom veneer species and stain colours available on project orders of 50+ panels.",
+      "categories": {
+        "lightNaturals": "Light Naturals",
+        "warmNaturals": "Warm Naturals",
+        "deepTones": "Deep Tones"
+      },
+      "origins": {
+        "europe": "Europe",
+        "scandinavia": "Scandinavia",
+        "northAmerica": "North America"
+      },
+      "grains": {
+        "straightToInterlocked": "Straight to interlocked",
+        "subtleFineGrain": "Subtle fine grain",
+        "fineStraightGrain": "Fine straight grain",
+        "cathedralGrain": "Cathedral grain",
+        "pronouncedGrain": "Pronounced grain",
+        "straightToWavy": "Straight to wavy",
+        "deepCathedralGrain": "Deep cathedral grain",
+        "richFlowingGrain": "Rich flowing grain"
+      }
     },
     "dimensions": {
       "tag": "DIMENSIONS",
@@ -2390,9 +2410,9 @@
       "badge1Desc": "Made from recycled plastic bottles",
       "badge2": "Fully Recyclable",
       "badge2Desc": "Can be recycled at end of life",
-      "badge3": "European Production",
+      "badge3": "Made in Poland",
       "badge4": "Low VOC",
-      "badge3Desc": "Reduced transport emissions",
+      "badge3Desc": "Short supply chain from our Polish facility",
       "badge4Desc": "Safe for indoor environments",
       "description2": ""
     },

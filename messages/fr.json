@@ -2276,7 +2276,27 @@
       "title": "10 Placages Bois Sélectionnés",
       "description": "Du bouleau scandinave serein au noyer américain dramatique — chaque placage est soigneusement sélectionné, brossé et fini pour mettre en valeur le caractère du bois.",
       "filterAll": "Tous les Placages",
-      "customNote": "Espèces de placage et coloris de teinture personnalisés disponibles pour les commandes de projet de 50+ panneaux."
+      "customNote": "Espèces de placage et coloris de teinture personnalisés disponibles pour les commandes de projet de 50+ panneaux.",
+      "categories": {
+        "lightNaturals": "Tons clairs",
+        "warmNaturals": "Tons chauds",
+        "deepTones": "Tons profonds"
+      },
+      "origins": {
+        "europe": "Europe",
+        "scandinavia": "Scandinavie",
+        "northAmerica": "Amérique du Nord"
+      },
+      "grains": {
+        "straightToInterlocked": "Droit à entrelacé",
+        "subtleFineGrain": "Grain fin et subtil",
+        "fineStraightGrain": "Grain droit et fin",
+        "cathedralGrain": "Grain cathédrale",
+        "pronouncedGrain": "Grain prononcé",
+        "straightToWavy": "Droit à ondulé",
+        "deepCathedralGrain": "Grain cathédrale profond",
+        "richFlowingGrain": "Grain riche et fluide"
+      }
     },
     "dimensions": {
       "tag": "DIMENSIONS",
@@ -2395,7 +2415,7 @@
       "badge2": "Entièrement Recyclable",
       "badge3": "Production Européenne",
       "badge4": "Faibles COV",
-      "badge3Desc": "Émissions de transport réduites",
+      "badge3Desc": "Chaîne d'approvisionnement courte depuis notre usine polonaise",
       "badge4Desc": "Sûr pour les environnements intérieurs",
       "description2": "Chaque panneau Flex-Groove est fabriqué à partir de 100% de bouteilles PET recyclées, donnant une nouvelle vie aux matériaux usagés. Notre approche circulaire garantit que ces panneaux peuvent être recyclés à nouveau en fin de vie."
     },

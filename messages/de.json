@@ -2276,7 +2276,27 @@
       "title": "10 Kuratierte Holzfurniere",
       "description": "Von serenerer skandinavischer Birke bis zu dramatischem amerikanischem Walnuss — jedes Furnier wird sorgfältig ausgewählt, gebürstet und veredelt, um den Charakter des Holzes zu unterstreichen.",
       "filterAll": "Alle Furniere",
-      "customNote": "Individuelle Furnierarten und Beizfarben für Projektbestellungen ab 50 Paneelen verfügbar."
+      "customNote": "Individuelle Furnierarten und Beizfarben für Projektbestellungen ab 50 Paneelen verfügbar.",
+      "categories": {
+        "lightNaturals": "Helle Töne",
+        "warmNaturals": "Warme Töne",
+        "deepTones": "Dunkle Töne"
+      },
+      "origins": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavien",
+        "northAmerica": "Nordamerika"
+      },
+      "grains": {
+        "straightToInterlocked": "Gerade bis verflochten",
+        "subtleFineGrain": "Feine, dezente Maserung",
+        "fineStraightGrain": "Feine, gerade Maserung",
+        "cathedralGrain": "Kathedrale Maserung",
+        "pronouncedGrain": "Ausgeprägte Maserung",
+        "straightToWavy": "Gerade bis wellig",
+        "deepCathedralGrain": "Tiefe kathedrale Maserung",
+        "richFlowingGrain": "Reiche, fließende Maserung"
+      }
     },
     "dimensions": {
       "tag": "ABMESSUNGEN",
@@ -2393,9 +2413,9 @@
       "description": "Jedes Flex-Groove Panel wird aus 100% recycelten PET-Kunststoffflaschen hergestellt und gibt Abfallmaterialien ein neues Leben.",
       "badge1": "Recyceltes PET",
       "badge2": "Vollständig Recyclierbar",
-      "badge3": "Europäische Produktion",
+      "badge3": "Hergestellt in Polen",
       "badge4": "Niedrige VOC",
-      "badge3Desc": "Reduzierte Transportemissionen",
+      "badge3Desc": "Kurze Lieferkette aus unserem polnischen Werk",
       "badge4Desc": "Sicher für Innenräume",
       "description2": "Jedes Flex-Groove Panel wird aus 100% recycelten PET-Kunststoffflaschen hergestellt und gibt Abfallmaterialien ein neues Leben. Unser kreislauffähiger Ansatz stellt sicher, dass diese Paneele am Lebensende erneut recycelt werden können."
     },
