@@ -280,7 +280,7 @@ export async function POST(request: NextRequest) {
 
     // Send to Power Automate webhook
     const webhookUrl = process.env.POWER_AUTOMATE_WEBHOOK_URL;
-    const recipient = process.env.CONTACT_EMAIL || 'info@re-sound.be';
+    const recipient = process.env.CONTACT_EMAIL || 'leads@stretchgroup.be';
     let emailSent = false;
 
     if (webhookUrl) {
@@ -291,8 +291,11 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify({
             to: recipient,
             subject: `Contact form: ${subject || 'General inquiry'} — ${name}`,
-            body: textBody,
-            htmlBody: htmlBody,
+            // `body` holds the HTML — Power Automate's "Send an email (V2)"
+            // action with Is HTML = Yes should map its Body input to this field.
+            // `text` is the plain-text alternative if a non-HTML flow is used.
+            body: htmlBody,
+            text: textBody,
             // Individual fields for Power Automate flexibility
             contactData: {
               name,
