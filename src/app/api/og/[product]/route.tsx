@@ -9,11 +9,13 @@ import type { NextRequest } from 'next/server';
  * Falls back to the homepage layout if the slug isn't recognised. Themed
  * around the product family (textile / rWood / rPET) so the shared image
  * tells the recipient what they'll see when they click.
+ *
+ * Note: `size` / `contentType` are NOT valid exports from an App-Router
+ * `route.tsx` file — those belong to the `opengraph-image.tsx` file
+ * convention only. Dimensions are inlined in the ImageResponse call.
  */
 
 export const runtime = 'edge';
-export const contentType = 'image/png';
-export const size = { width: 1200, height: 630 };
 
 interface RouteParams {
   params: { product: string };
@@ -141,7 +143,8 @@ export async function GET(req: NextRequest, { params }: RouteParams) {
       </div>
     ),
     {
-      ...size,
+      width: 1200,
+      height: 630,
       headers: {
         'Cache-Control': 'public, max-age=86400, s-maxage=604800',
       },
