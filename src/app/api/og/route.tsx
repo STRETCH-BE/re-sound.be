@@ -4,22 +4,19 @@ import type { NextRequest } from 'next/server';
 /**
  * Dynamic OG image for the sitewide / homepage / non-product pages.
  *
- * Why dynamic: there were ~8 referenced static OG files in metadata
- * (og-default, og-home, og-about, og-products, og-sustainability, plus
- * product-specific ones) — none of them existed, so every share on
- * LinkedIn / WhatsApp / Slack / X rendered broken. A single dynamic
- * endpoint that can be themed per locale + page eliminates the drift.
- *
  * Uses `next/og` (built into Next.js 13.3+), so no extra dependency
  * vs. installing @vercel/og separately.
  *
  * Edge runtime keeps cold-start under ~200 ms; CDN cache is set generously
  * because the layout (brand colour, fixed copy) is stable.
+ *
+ * Note: `size` / `contentType` are NOT valid exports from an App-Router
+ * `route.tsx` file — those belong to the special `opengraph-image.tsx`
+ * file convention. The image dimensions are inlined in the ImageResponse
+ * call below; the Content-Type header is set by ImageResponse itself.
  */
 
 export const runtime = 'edge';
-export const contentType = 'image/png';
-export const size = { width: 1200, height: 630 };
 
 const BRAND = '#197FC7';
 const DARK = '#0a1628';
@@ -128,7 +125,8 @@ export async function GET(req: NextRequest) {
       </div>
     ),
     {
-      ...size,
+      width: 1200,
+      height: 630,
       headers: {
         'Cache-Control': 'public, max-age=86400, s-maxage=604800',
       },
