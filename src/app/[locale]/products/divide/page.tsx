@@ -37,7 +37,7 @@ export async function generateMetadata({
       description,
       // Dynamic per-product OG so every locale's share preview matches
       // the page's language + branding.
-      images: [`/api/og/divide?locale=${locale}`],
+      images: [`/api/og?product=divide&locale=${locale}`],
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
       type: 'website',
