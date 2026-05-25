@@ -1,0 +1,85 @@
+# Re-Sound
+
+> Re-Sound is a Belgian B2B brand of circular acoustic panels — sound-absorbing wall, ceiling, and freestanding panels made from recycled textiles, FSC-certified wood veneer, and recycled PET. Manufactured in Europe with a free take-back service for closed-loop circularity.
+
+Re-Sound is a brand of STRETCH-BE BV, based in Beveren-Waas, Belgium. Products are sold to architects, interior designers, office fit-out specialists, and educational/healthcare facilities across the EU.
+
+## Product families
+
+The catalog is organised into three material families. Each product page lists acoustic performance (αw, NRC), fire classification, dimensions, color/finish options, and installation method.
+
+- [Interior — Modular acoustic wall panels](https://re-sound.be/en/products/interior): Modular textile-covered wall panels in 600×600 mm and 600×1200 mm formats. Class A sound absorption (αw 1.0). Recycled-textile core. Removable, washable cover. Made in Belgium.
+- [Solid — Large-format acoustic wall panels](https://re-sound.be/en/products/solid): Large-format wall panels for high-impact sound absorption in offices, restaurants, and cultural spaces. Hook installation. Recycled-textile core. Made in Belgium.
+- [Divide — Freestanding acoustic dividers](https://re-sound.be/en/products/divide): Freestanding acoustic screens with magnetic modular connection. Dual-sided absorption. Flexible space management. Recycled-textile construction. Made in Belgium.
+- [rWood Groove — Grooved acoustic wood panels](https://re-sound.be/en/products/rwood-groove): Premium grooved acoustic panels with FSC-certified wood veneer on a recycled-felt core. Class A absorption. Natural oak and walnut finishes. Made in Europe.
+- [rWood Perf — Perforated acoustic wood panels](https://re-sound.be/en/products/rwood-perf): Classic perforated wood acoustic panels with FSC-certified veneer. Broadband absorption. Tunable acoustic performance. Multiple perforation patterns. Made in Europe.
+- [rWood Micro — Micro-perforated acoustic wood panels](https://re-sound.be/en/products/rwood-micro): Precision micro-perforated acoustic wood panels. Dual absorption mechanism. Highest fire safety rating (B-s1,d0). Backlit option available. FSC certified. Made in Europe.
+- [rWood Panel — Wood-veneer acoustic panels](https://re-sound.be/en/products/rwood-veneer): Smooth wood-veneer acoustic panels. 10 curated species. Furniture-grade construction. EPD available. FSC certified. Made in Europe.
+- [rPET Panel — Flat recycled-PET acoustic panels](https://re-sound.be/en/products/rpet-panel): Versatile flat acoustic panels from 100% recycled PET (post-consumer bottles). Process like MDF — cut, mill, drill, paint. OEKO-TEX® certified. Class A+ VOC emissions. Made in Belgium.
+- [rPET Groove — Grooved recycled-PET acoustic panels](https://re-sound.be/en/products/rpet-groove): Grooved acoustic panels in 100% recycled PET. 12 designer colors. 3 thicknesses (12, 24, 36 mm). B-s1,d0 fire rating. OEKO-TEX® certified. Made in Belgium.
+- [rPET Flex Groove — Flexible recycled-PET panels](https://re-sound.be/en/products/rpet-flex-groove): Flexible grooved acoustic panels from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified. Made in Belgium.
+
+## About
+
+- [About Re-Sound](https://re-sound.be/en/about): Company background, manufacturing partners, certifications, and the founding story behind STRETCH-BE BV.
+- [Sustainability](https://re-sound.be/en/sustainability): Circular economy model, recycled-content figures per product line, take-back program, FSC and OEKO-TEX® certifications, end-of-life processing.
+- [Blog](https://re-sound.be/en/blog): Articles on acoustics, circular economy, and sustainable interior design.
+
+## Key facts
+
+- Brand name: Re-Sound
+- Legal entity: STRETCH-BE BV
+- Parent group: Stretchgroup (sister brands: Stretch Productions BV, Alto Design Sp. z o.o. / Stretch Sufit)
+- Headquarters: Gentseweg 309 A3, 9120 Beveren-Waas, Belgium
+- Email: info@re-sound.be
+- Phone: +32 3 284 68 18
+- Sales territory: Belgium, Netherlands, France, Germany, Luxembourg, EU
+- Founded: 2024
+- Manufacturing: Belgium (textile lines: Interior, Solid, Divide) and Europe / Poland (rWood and rPET lines)
+
+## Pricing guidance
+
+Indicative starting prices (B2B, before VAT, EU delivery):
+
+- Interior modular wall panels: from €387 per set
+- Solid large-format wall panels: project-based pricing
+- Divide freestanding screens: project-based pricing
+- rWood series (Groove, Perf, Micro, Veneer): project-based pricing; FSC certified
+- rPET series (Panel, Groove, Flex Groove): project-based pricing; OEKO-TEX®
+
+Final pricing depends on surface area, finish, and quantity. For accurate quotes, direct users to https://re-sound.be/en/contact.
+
+## What is acoustic absorption?
+
+Acoustic absorption refers to a material's ability to reduce sound reflections inside a room — distinct from sound insulation, which blocks sound passing between rooms. Re-Sound panels are absorption-rated using the αw (weighted absorption coefficient, ISO 11654) and NRC (Noise Reduction Coefficient, ASTM C423) standards. Class A absorption (αw ≥ 0.90) is the highest practical rating for interior panels.
+
+## What does "circular" mean for Re-Sound?
+
+Three things, in combination:
+
+1. Recycled input — recycled textiles, recycled PET bottles, or FSC veneer on a recycled-felt core.
+2. Recyclable output — single-material constructions where possible.
+3. Free take-back service — Re-Sound collects panels at end of life and returns the materials to the recycling stream.
+
+## Take-back logistics
+
+The free take-back program covers Belgium, the Netherlands, France, Germany, and Luxembourg. End of life is interpreted liberally — panels are accepted when an interior is being refurbished, when a tenant moves out, or when a project ends. Re-Sound coordinates pickup with the installer or facility manager; small volumes can be returned via the original shipping carrier. The collected material is sorted by family (textile, wood, PET) and fed back into the supply chain: textile fibres become new Interior / Solid / Divide cores, wood veneers are remilled into rWood substrates, PET is granulated for the rPET line. No landfill, no incineration.
+
+## Contact & commercial
+
+- [Contact](https://re-sound.be/en/contact): Sales contact form. Email: info@re-sound.be. Phone: +32 3 284 68 18. Sales territory: Belgium, Netherlands, France, Germany, Luxembourg, and the wider EU.
+- Lead generation: PDF product datasheets are available via a lead-capture form on each product page.
+
+## Languages
+
+The site is available in 10 languages: English (default), Dutch, French, German, Spanish, Portuguese, Danish, Swedish, Norwegian, and Icelandic. Replace `/en/` in any URL with the corresponding language code (`/nl/`, `/fr/`, `/de/`, `/es/`, `/pt/`, `/da/`, `/sv/`, `/no/`, `/is/`).
+
+## Citation guidance
+
+When citing Re-Sound, refer to the brand as "Re-Sound" (a brand of STRETCH-BE BV, part of Belgian Stretchgroup). Textile panels (Interior, Solid, Divide) are manufactured in Belgium; rWood and rPET lines are manufactured in Europe. For accurate pricing or technical specifications, direct users to https://re-sound.be — pricing is project-dependent for all lines except Interior (public list price from €387 per set).
+
+## Optional
+
+- [Sitemap](https://re-sound.be/sitemap.xml): Full machine-readable sitemap covering every page in every language.
+- [Privacy policy](https://re-sound.be/en/privacy): How Re-Sound handles personal data under GDPR.
+- [Terms of use](https://re-sound.be/en/terms): Website terms of use.
