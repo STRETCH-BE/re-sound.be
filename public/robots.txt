@@ -2,9 +2,52 @@
 
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://re-sound.be/sitemap.xml
-
-# Disallow admin/API routes
 Disallow: /api/
+
+# Explicit AI crawler allowances — documents intent + signals openness.
+# The wildcard above already covers them; this block makes our policy explicit
+# and provides hooks for future per-agent rules.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google-Extended gates Gemini training specifically — distinct from Googlebot,
+# which crawls for Search. Allowing it is an intentional opt-in to the corpus.
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Applebot-Extended is the equivalent gate for Apple Intelligence training.
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://re-sound.be/sitemap.xml
