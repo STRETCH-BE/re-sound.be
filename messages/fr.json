@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Interior en Situation"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les coloris en stock sont expédiés sous 1 à 2 semaines ; les configurations sur mesure demandent 3 à 4 semaines à compter de la confirmation de commande. Pour les projets de plus de 50 m², prévoyez 4 à 6 semaines."
+        },
+        "washableCover": {
+          "question": "La housse textile est-elle lavable ?",
+          "answer": "Oui. La housse est amovible et lavable en machine à 30 °C. Le noyau en textile recyclé reste à l'intérieur du panneau et n'est pas affecté."
+        },
+        "absorptionRating": {
+          "question": "Quelle est la différence entre αw 1.0 et NRC 0.95 ?",
+          "answer": "Les deux mesurent l'absorption mais selon des normes différentes. αw (ISO 11654) est la valeur unique européenne ; NRC (ASTM C423) en est l'équivalent américain. αw 1.0 et NRC 0.95 indiquent la même performance Classe A."
+        },
+        "breeamLeed": {
+          "question": "Ce produit est-il éligible aux crédits BREEAM ou LEED ?",
+          "answer": "Oui. Le contenu recyclé, les faibles émissions de COV et le programme de reprise contribuent aux crédits BREEAM Mat 03 et LEED MR. Une EPD est disponible sur demande."
+        },
+        "installMethod": {
+          "question": "Comment les panneaux sont-ils installés ?",
+          "answer": "Interior utilise un rail modulaire dissimulé ; Solid utilise des crochets dissimulés ; Divide est autoportant avec une connexion modulaire magnétique. Aucun outil spécialisé n'est requis."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Solid en Situation"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les coloris en stock sont expédiés sous 1 à 2 semaines ; les configurations sur mesure demandent 3 à 4 semaines à compter de la confirmation de commande. Pour les projets de plus de 50 m², prévoyez 4 à 6 semaines."
+        },
+        "hookInstall": {
+          "question": "Comment fonctionne l'installation par crochets ?",
+          "answer": "Chaque panneau Solid est livré avec des crochets en acier dissimulés pré-fixés au dos. Ils s'accrochent à des vis posées sur une ligne de niveau — l'installation d'un panneau 1200 × 600 standard prend moins de cinq minutes par pièce."
+        },
+        "sizeCustomization": {
+          "question": "Le panneau peut-il être personnalisé en taille ?",
+          "answer": "Oui. Des largeurs et hauteurs personnalisées sont disponibles pour les projets à partir de 20 m². Des quantités minimales s'appliquent ; contactez-nous pour un devis sur mesure."
+        },
+        "weightPerPanel": {
+          "question": "Combien pèse un panneau ?",
+          "answer": "Un panneau Solid standard 1200 × 600 mm pèse environ 4,5 kg. La construction légère permet rarement de renforcer les fixations murales."
+        },
+        "absorptionRating": {
+          "question": "Quelle est la différence entre αw 1.0 et NRC 0.95 ?",
+          "answer": "Les deux mesurent l'absorption mais selon des normes différentes. αw (ISO 11654) est la valeur unique européenne ; NRC (ASTM C423) en est l'équivalent américain. αw 1.0 et NRC 0.95 indiquent la même performance Classe A."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Divide en Situation"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les coloris en stock sont expédiés sous 1 à 2 semaines ; les configurations sur mesure demandent 3 à 4 semaines à compter de la confirmation de commande. Pour les projets de plus de 50 m², prévoyez 4 à 6 semaines."
+        },
+        "magneticConnection": {
+          "question": "Comment fonctionne la connexion magnétique ?",
+          "answer": "Chaque écran Divide possède des aimants néodyme intégrés dans le profil de chant. Les écrans s'emboîtent bout à bout ou à 90 °, et peuvent être reconfigurés à tout moment sans outils."
+        },
+        "dualSidedAbsorption": {
+          "question": "Divide absorbe-t-il le son des deux côtés ?",
+          "answer": "Oui. La construction est symétrique et les deux faces offrent une performance d'absorption équivalente — utile dans les bureaux ouverts où l'écran se trouve entre deux zones de travail."
+        },
+        "footStability": {
+          "question": "Quelle est la stabilité du pied autoportant ?",
+          "answer": "Le pied en fonte est lesté pour maintenir l'écran stable jusqu'à 2 m de hauteur dans des conditions intérieures normales. Pour des écrans plus hauts ou des zones de circulation animées, vous pouvez relier les panneaux via les connecteurs magnétiques pour plus de stabilité."
+        },
+        "sizeCustomization": {
+          "question": "Le panneau peut-il être personnalisé en taille ?",
+          "answer": "Oui. Des largeurs et hauteurs personnalisées sont disponibles pour les projets à partir de 20 m². Des quantités minimales s'appliquent ; contactez-nous pour un devis sur mesure."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1426,6 +1498,30 @@
     },
     "cta2": {
       "freeNote": "Échantillons gratuits • Fabriqué en Pologne • 100% Recyclé"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Le PET recyclé est-il certifié ?",
+          "answer": "Oui. Tous les panneaux rPET sont certifiés OEKO-TEX® Standard 100 — confirmant l'absence de substances nocives. Les émissions de COV sont testées au niveau français A+ (la qualité d'air intérieur la plus stricte)."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "Tous les panneaux rPET sont classés B-s1,d0 selon EN 13501-1 — la classification pratique la plus élevée pour un matériau décoratif d'intérieur, hors classe A."
+        },
+        "processability": {
+          "question": "Les panneaux rPET peuvent-ils être coupés, percés ou peints ?",
+          "answer": "Oui. Le rPET se comporte comme du MDF sur les machines de menuiserie standard : scie circulaire ou défonceuse CNC, perçage avec mèches hélicoïdales, peinture avec finitions à l'eau ou aux solvants. Aucun équipement de protection spécial requis."
+        },
+        "colorRange": {
+          "question": "Combien de coloris sont disponibles ?",
+          "answer": "12 coloris designer sont stockés pour les lignes rPET Groove et Flex Groove ; la ligne rPET Panel est disponible en 16 coloris. Des coloris personnalisés peuvent être produits pour les projets supérieurs à 200 m²."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les coloris en stock sont expédiés sous 2 à 3 semaines ; les coloris personnalisés demandent 5 à 6 semaines. Les grands projets (>500 m²) sont planifiés par lots de production — contactez-nous pour une date ferme."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1613,6 +1709,30 @@
     },
     "cta2": {
       "freeNote": "Échantillons gratuits • Fabriqué en Pologne • 100% Recyclable"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Le PET recyclé est-il certifié ?",
+          "answer": "Oui. Tous les panneaux rPET sont certifiés OEKO-TEX® Standard 100 — confirmant l'absence de substances nocives. Les émissions de COV sont testées au niveau français A+ (la qualité d'air intérieur la plus stricte)."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "Tous les panneaux rPET sont classés B-s1,d0 selon EN 13501-1 — la classification pratique la plus élevée pour un matériau décoratif d'intérieur, hors classe A."
+        },
+        "processability": {
+          "question": "Les panneaux rPET peuvent-ils être coupés, percés ou peints ?",
+          "answer": "Oui. Le rPET se comporte comme du MDF sur les machines de menuiserie standard : scie circulaire ou défonceuse CNC, perçage avec mèches hélicoïdales, peinture avec finitions à l'eau ou aux solvants. Aucun équipement de protection spécial requis."
+        },
+        "colorRange": {
+          "question": "Combien de coloris sont disponibles ?",
+          "answer": "12 coloris designer sont stockés pour les lignes rPET Groove et Flex Groove ; la ligne rPET Panel est disponible en 16 coloris. Des coloris personnalisés peuvent être produits pour les projets supérieurs à 200 m²."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les coloris en stock sont expédiés sous 2 à 3 semaines ; les coloris personnalisés demandent 5 à 6 semaines. Les grands projets (>500 m²) sont planifiés par lots de production — contactez-nous pour une date ferme."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1775,6 +1895,30 @@
     },
     "cta2": {
       "freeNote": "Échantillons gratuits • Fabriqué en Europe • Certifié FSC®"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "D'où provient le placage certifié FSC ?",
+          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "La classification feu standard est B-s2,d0 selon EN 13501-1. La variante rWood Micro atteint B-s1,d0, adaptée aux exigences les plus strictes des bâtiments publics."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+        },
+        "installMethod": {
+          "question": "Comment les panneaux rWood sont-ils installés ?",
+          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+        },
+        "substrateCleanup": {
+          "question": "Que deviennent les panneaux en fin de vie ?",
+          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1930,6 +2074,30 @@
     },
     "cta": {
       "note": "Échantillons gratuits disponibles • Fabriqué en Europe • Certifié FSC® • Classement A2 disponible"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "D'où provient le placage certifié FSC ?",
+          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "La classification feu standard est B-s2,d0 selon EN 13501-1. La variante rWood Micro atteint B-s1,d0, adaptée aux exigences les plus strictes des bâtiments publics."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+        },
+        "installMethod": {
+          "question": "Comment les panneaux rWood sont-ils installés ?",
+          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+        },
+        "substrateCleanup": {
+          "question": "Que deviennent les panneaux en fin de vie ?",
+          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2097,6 +2265,30 @@
       "description2": "Quatre densités de perforation pour répondre à vos exigences acoustiques. Des micro-perforations Nano quasiment invisibles aux motifs Micro L à absorption maximale — sélectionnez l'équilibre parfait entre esthétique et performances acoustiques.",
       "pigmentedLacquer": "Laque Pigmentée",
       "glossLevels": "Niveaux de Brillance"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "D'où provient le placage certifié FSC ?",
+          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "La classification feu standard est B-s2,d0 selon EN 13501-1. La variante rWood Micro atteint B-s1,d0, adaptée aux exigences les plus strictes des bâtiments publics."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+        },
+        "installMethod": {
+          "question": "Comment les panneaux rWood sont-ils installés ?",
+          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+        },
+        "substrateCleanup": {
+          "question": "Que deviennent les panneaux en fin de vie ?",
+          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2328,6 +2520,30 @@
     },
     "downloads": {
       "productDataSheet": "Fiche Produit"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "D'où provient le placage certifié FSC ?",
+          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "La classification feu standard est B-s2,d0 selon EN 13501-1. La variante rWood Micro atteint B-s1,d0, adaptée aux exigences les plus strictes des bâtiments publics."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+        },
+        "installMethod": {
+          "question": "Comment les panneaux rWood sont-ils installés ?",
+          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+        },
+        "substrateCleanup": {
+          "question": "Que deviennent les panneaux en fin de vie ?",
+          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2495,6 +2711,30 @@
     },
     "cta2": {
       "freeNote": "Échantillons gratuits • Fabriqué en Pologne • 100% Recyclé"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Le PET recyclé est-il certifié ?",
+          "answer": "Oui. Tous les panneaux rPET sont certifiés OEKO-TEX® Standard 100 — confirmant l'absence de substances nocives. Les émissions de COV sont testées au niveau français A+ (la qualité d'air intérieur la plus stricte)."
+        },
+        "fireRating": {
+          "question": "Quel est le classement au feu ?",
+          "answer": "Tous les panneaux rPET sont classés B-s1,d0 selon EN 13501-1 — la classification pratique la plus élevée pour un matériau décoratif d'intérieur, hors classe A."
+        },
+        "processability": {
+          "question": "Les panneaux rPET peuvent-ils être coupés, percés ou peints ?",
+          "answer": "Oui. Le rPET se comporte comme du MDF sur les machines de menuiserie standard : scie circulaire ou défonceuse CNC, perçage avec mèches hélicoïdales, peinture avec finitions à l'eau ou aux solvants. Aucun équipement de protection spécial requis."
+        },
+        "colorRange": {
+          "question": "Combien de coloris sont disponibles ?",
+          "answer": "12 coloris designer sont stockés pour les lignes rPET Groove et Flex Groove ; la ligne rPET Panel est disponible en 16 coloris. Des coloris personnalisés peuvent être produits pour les projets supérieurs à 200 m²."
+        },
+        "leadTime": {
+          "question": "Quel est le délai de livraison standard ?",
+          "answer": "Les coloris en stock sont expédiés sous 2 à 3 semaines ; les coloris personnalisés demandent 5 à 6 semaines. Les grands projets (>500 m²) sont planifiés par lots de production — contactez-nous pour une date ferme."
+        }
+      }
     }
   },
   "legal": {

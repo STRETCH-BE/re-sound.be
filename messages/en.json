@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Interior in Action"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock colors ship within 1–2 weeks; custom configurations require 3–4 weeks from order confirmation. For projects above 50 m², plan 4–6 weeks."
+        },
+        "washableCover": {
+          "question": "Is the textile cover washable?",
+          "answer": "Yes. The cover is removable and machine-washable at 30 °C. The recycled-textile core stays inside the panel and is not affected."
+        },
+        "absorptionRating": {
+          "question": "What is the difference between αw 1.0 and NRC 0.95?",
+          "answer": "Both measure absorption but use different test standards. αw (ISO 11654) is the European single-number value; NRC (ASTM C423) is the American equivalent. αw 1.0 and NRC 0.95 indicate the same Class A performance."
+        },
+        "breeamLeed": {
+          "question": "Does this product qualify for BREEAM or LEED credits?",
+          "answer": "Yes. Recycled content, low VOC emissions, and the take-back program contribute to BREEAM Mat 03 and LEED MR credits. An EPD is available on request."
+        },
+        "installMethod": {
+          "question": "How are the panels installed?",
+          "answer": "Interior uses a hidden modular rail; Solid uses concealed hooks; Divide is freestanding with a magnetic modular connection. No specialist tools required."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Solid in Action"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock colors ship within 1–2 weeks; custom configurations require 3–4 weeks from order confirmation. For projects above 50 m², plan 4–6 weeks."
+        },
+        "hookInstall": {
+          "question": "How does the hook installation work?",
+          "answer": "Each Solid panel ships with concealed steel hooks pre-fitted to the back. They hang from screws placed on a level line — installation for a typical 1200 × 600 panel takes under five minutes per piece."
+        },
+        "sizeCustomization": {
+          "question": "Can the panel size be customized?",
+          "answer": "Yes. Custom widths and heights are available on projects from 20 m². Minimum order quantities apply; contact us for a tailored quote."
+        },
+        "weightPerPanel": {
+          "question": "How much does a panel weigh?",
+          "answer": "A standard 1200 × 600 mm Solid panel weighs approximately 4.5 kg. The lightweight construction means wall fixings rarely need reinforcement."
+        },
+        "absorptionRating": {
+          "question": "What is the difference between αw 1.0 and NRC 0.95?",
+          "answer": "Both measure absorption but use different test standards. αw (ISO 11654) is the European single-number value; NRC (ASTM C423) is the American equivalent. αw 1.0 and NRC 0.95 indicate the same Class A performance."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Divide in Action"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock colors ship within 1–2 weeks; custom configurations require 3–4 weeks from order confirmation. For projects above 50 m², plan 4–6 weeks."
+        },
+        "magneticConnection": {
+          "question": "How does the magnetic connection work?",
+          "answer": "Each Divide screen has neodymium magnets embedded in the edge profile. Screens snap together end-to-end or at 90 °, and can be reconfigured at any time without tools."
+        },
+        "dualSidedAbsorption": {
+          "question": "Does Divide absorb sound from both sides?",
+          "answer": "Yes. The construction is symmetrical and both faces deliver equivalent absorption performance — useful for open-plan offices where the screen sits between two work zones."
+        },
+        "footStability": {
+          "question": "How stable is the freestanding foot?",
+          "answer": "The cast-iron foot is weighted to keep the screen stable up to 2 m in height under normal indoor conditions. For higher screens or busy circulation routes, panels can be linked via the magnetic connectors for added stability."
+        },
+        "sizeCustomization": {
+          "question": "Can the panel size be customized?",
+          "answer": "Yes. Custom widths and heights are available on projects from 20 m². Minimum order quantities apply; contact us for a tailored quote."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1426,6 +1498,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Is the recycled PET certified?",
+          "answer": "Yes. All rPET panels are OEKO-TEX® Standard 100 certified — verifying the absence of harmful substances. VOC emissions are tested to French A+ (the strictest indoor-air-quality grade)."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "All rPET panels are rated B-s1,d0 according to EN 13501-1 — the highest practical rating for an interior decorative material short of A-class."
+        },
+        "processability": {
+          "question": "Can rPET panels be cut, drilled, or painted?",
+          "answer": "Yes. rPET behaves like MDF on standard woodworking machinery: cut with a circular saw or CNC router, drill with twist bits, paint with water- or solvent-based finishes. No special protective equipment required."
+        },
+        "colorRange": {
+          "question": "How many colors are available?",
+          "answer": "12 designer colors are stocked for the rPET Groove and Flex Groove lines; the rPET Panel line is available in 16 colors. Custom colors can be produced for projects above 200 m²."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock colors ship within 2–3 weeks; custom colors require 5–6 weeks. Large projects (>500 m²) are scheduled in production batches — contact us for a binding date."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1613,6 +1709,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Is the recycled PET certified?",
+          "answer": "Yes. All rPET panels are OEKO-TEX® Standard 100 certified — verifying the absence of harmful substances. VOC emissions are tested to French A+ (the strictest indoor-air-quality grade)."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "All rPET panels are rated B-s1,d0 according to EN 13501-1 — the highest practical rating for an interior decorative material short of A-class."
+        },
+        "processability": {
+          "question": "Can rPET panels be cut, drilled, or painted?",
+          "answer": "Yes. rPET behaves like MDF on standard woodworking machinery: cut with a circular saw or CNC router, drill with twist bits, paint with water- or solvent-based finishes. No special protective equipment required."
+        },
+        "colorRange": {
+          "question": "How many colors are available?",
+          "answer": "12 designer colors are stocked for the rPET Groove and Flex Groove lines; the rPET Panel line is available in 16 colors. Custom colors can be produced for projects above 200 m²."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock colors ship within 2–3 weeks; custom colors require 5–6 weeks. Large projects (>500 m²) are scheduled in production batches — contact us for a binding date."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1775,6 +1895,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • FSC® Certified"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Where does the FSC-certified veneer come from?",
+          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "Standard fire classification is B-s2,d0 according to EN 13501-1. The rWood Micro variant achieves B-s1,d0, suitable for the strictest public-building requirements."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+        },
+        "installMethod": {
+          "question": "How are rWood panels installed?",
+          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+        },
+        "substrateCleanup": {
+          "question": "What happens to the panels at end of life?",
+          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1930,6 +2074,30 @@
     },
     "cta": {
       "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Where does the FSC-certified veneer come from?",
+          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "Standard fire classification is B-s2,d0 according to EN 13501-1. The rWood Micro variant achieves B-s1,d0, suitable for the strictest public-building requirements."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+        },
+        "installMethod": {
+          "question": "How are rWood panels installed?",
+          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+        },
+        "substrateCleanup": {
+          "question": "What happens to the panels at end of life?",
+          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2094,6 +2262,30 @@
       "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
       "pigmentedLacquer": "Pigmented Lacquer",
       "glossLevels": "Gloss Levels"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Where does the FSC-certified veneer come from?",
+          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "Standard fire classification is B-s2,d0 according to EN 13501-1. The rWood Micro variant achieves B-s1,d0, suitable for the strictest public-building requirements."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+        },
+        "installMethod": {
+          "question": "How are rWood panels installed?",
+          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+        },
+        "substrateCleanup": {
+          "question": "What happens to the panels at end of life?",
+          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2325,6 +2517,30 @@
     },
     "downloads": {
       "productDataSheet": "Product Data Sheet"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Where does the FSC-certified veneer come from?",
+          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "Standard fire classification is B-s2,d0 according to EN 13501-1. The rWood Micro variant achieves B-s1,d0, suitable for the strictest public-building requirements."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+        },
+        "installMethod": {
+          "question": "How are rWood panels installed?",
+          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+        },
+        "substrateCleanup": {
+          "question": "What happens to the panels at end of life?",
+          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2492,6 +2708,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Is the recycled PET certified?",
+          "answer": "Yes. All rPET panels are OEKO-TEX® Standard 100 certified — verifying the absence of harmful substances. VOC emissions are tested to French A+ (the strictest indoor-air-quality grade)."
+        },
+        "fireRating": {
+          "question": "What is the fire rating?",
+          "answer": "All rPET panels are rated B-s1,d0 according to EN 13501-1 — the highest practical rating for an interior decorative material short of A-class."
+        },
+        "processability": {
+          "question": "Can rPET panels be cut, drilled, or painted?",
+          "answer": "Yes. rPET behaves like MDF on standard woodworking machinery: cut with a circular saw or CNC router, drill with twist bits, paint with water- or solvent-based finishes. No special protective equipment required."
+        },
+        "colorRange": {
+          "question": "How many colors are available?",
+          "answer": "12 designer colors are stocked for the rPET Groove and Flex Groove lines; the rPET Panel line is available in 16 colors. Custom colors can be produced for projects above 200 m²."
+        },
+        "leadTime": {
+          "question": "What is the standard lead time?",
+          "answer": "Stock colors ship within 2–3 weeks; custom colors require 5–6 weeks. Large projects (>500 m²) are scheduled in production batches — contact us for a binding date."
+        }
+      }
     }
   },
   "legal": {
