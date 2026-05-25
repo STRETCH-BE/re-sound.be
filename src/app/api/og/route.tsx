@@ -4,16 +4,13 @@ import type { NextRequest } from 'next/server';
 /**
  * Dynamic OG image for the sitewide / homepage / non-product pages.
  *
- * Uses `next/og` (built into Next.js 13.3+), so no extra dependency
- * vs. installing @vercel/og separately.
- *
- * Edge runtime keeps cold-start under ~200 ms; CDN cache is set generously
- * because the layout (brand colour, fixed copy) is stable.
- *
- * Note: `size` / `contentType` are NOT valid exports from an App-Router
- * `route.tsx` file — those belong to the special `opengraph-image.tsx`
- * file convention. The image dimensions are inlined in the ImageResponse
- * call below; the Content-Type header is set by ImageResponse itself.
+ * Defensive design notes:
+ *   - Solid background, no linear-gradient (Satori on edge runtime
+ *     can render gradients as blank in some cases).
+ *   - ASCII-only text (no recycle glyphs / middle dots) — Satori
+ *     skips glyphs that the default font doesn't ship, and a single
+ *     missing glyph can fail the whole render silently on edge.
+ *   - System font stack so we never depend on a font being fetched.
  */
 
 export const runtime = 'edge';
@@ -49,15 +46,16 @@ export async function GET(req: NextRequest) {
           flexDirection: 'column',
           justifyContent: 'space-between',
           padding: '64px 80px',
-          background: `linear-gradient(135deg, ${BRAND} 0%, ${DARK} 100%)`,
-          color: '#fff',
-          fontFamily: 'sans-serif',
+          backgroundColor: BRAND,
+          backgroundImage: `linear-gradient(135deg, ${BRAND} 0%, ${DARK} 100%)`,
+          color: '#ffffff',
+          fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div
             style={{
-              fontSize: 36,
+              fontSize: 40,
               fontWeight: 800,
               letterSpacing: '-0.02em',
             }}
@@ -66,14 +64,13 @@ export async function GET(req: NextRequest) {
           </div>
           <div
             style={{
-              padding: '4px 12px',
-              border: '1.5px solid rgba(255,255,255,0.5)',
+              padding: '6px 14px',
+              border: '2px solid rgba(255,255,255,0.5)',
               borderRadius: 999,
-              fontSize: 16,
+              fontSize: 18,
               fontWeight: 500,
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
-              opacity: 0.85,
             }}
           >
             {locale.toUpperCase()}
@@ -87,7 +84,7 @@ export async function GET(req: NextRequest) {
               fontWeight: 800,
               letterSpacing: '-0.03em',
               lineHeight: 1.05,
-              maxWidth: '1000px',
+              maxWidth: 1000,
             }}
           >
             {title}
@@ -97,7 +94,7 @@ export async function GET(req: NextRequest) {
               marginTop: 24,
               fontSize: 28,
               fontWeight: 400,
-              opacity: 0.85,
+              opacity: 0.9,
             }}
           >
             {tagline}
@@ -109,18 +106,12 @@ export async function GET(req: NextRequest) {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-end',
-            fontSize: 20,
-            opacity: 0.75,
+            fontSize: 22,
+            opacity: 0.8,
           }}
         >
           <div>re-sound.be</div>
-          <div style={{ display: 'flex', gap: 16 }}>
-            <span>♻︎ Recycled input</span>
-            <span>·</span>
-            <span>Made in Europe</span>
-            <span>·</span>
-            <span>Free take-back</span>
-          </div>
+          <div>Recycled input / Made in Europe / Free take-back</div>
         </div>
       </div>
     ),
