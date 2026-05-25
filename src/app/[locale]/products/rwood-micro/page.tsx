@@ -3,12 +3,22 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import RWoodMicroProductPage from '@/components/sections/rwoodmicropage';
 import JsonLd from '@/components/seo/JsonLd';
-import { buildAlternates } from '@/lib/seo';
-import { breadcrumbSchema, productSchema } from '@/lib/structured-data';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import {
+  breadcrumbSchema,
+  productSchema,
+  faqPageSchema,
+  type FaqEntry,
+} from '@/lib/structured-data';
 
 interface PageProps {
   params: { locale: string };
 }
+
+// Localised FAQ keys for this product. The keys are stable across locales;
+// each translation file under `messages/{locale}.json` provides the actual
+// Q&A copy under `rwoodMicroPage.faq.questions.<key>.question/.answer`.
+const FAQ_KEYS = ["fscSource", "fireRating", "leadTime", "installMethod", "substrateCleanup"] as const;
 
 export async function generateMetadata({
   params: { locale },
@@ -19,13 +29,17 @@ export async function generateMetadata({
   const description = t('rwoodMicroDescription');
 
   return {
-    // Existing meta values already include "| Re-Sound" — bypass the layout template
+    // Title already contains "| Re-Sound" — bypass the layout template
     title: { absolute: title },
     description,
     openGraph: {
       title,
       description,
-      images: ['/images/products/rwood-micro/hero-rwood-micro.webp'],
+      // Dynamic per-product OG so every locale's share preview matches
+      // the page's language + branding.
+      images: [`/api/og/rwood-micro?locale=${locale}`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
       type: 'website',
     },
     twitter: {
@@ -40,22 +54,56 @@ export async function generateMetadata({
 export default async function Page({ params: { locale } }: PageProps) {
   setRequestLocale(locale);
 
-  // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly
-  const t = await getTranslations({ locale, namespace: 'meta' });
-  const fullTitle = t('rwoodMicroTitle');
+  // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
+  const tMeta = await getTranslations({ locale, namespace: 'meta' });
+  const fullTitle = tMeta('rwoodMicroTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
-  const description = t('rwoodMicroDescription');
+  const description = tMeta('rwoodMicroDescription');
+
   const tProducts = await getTranslations({ locale, namespace: 'products' });
+
+  // FAQ entries — fall back gracefully if a question key isn't translated
+  // (string returns the key, which we then filter out).
+  const tFaq = await getTranslations({
+    locale,
+    namespace: 'rwoodMicroPage.faq',
+  });
+  const faqEntries: FaqEntry[] = FAQ_KEYS
+    .map((key) => {
+      try {
+        return {
+          question: tFaq(`questions.${key}.question`),
+          answer: tFaq(`questions.${key}.answer`),
+        };
+      } catch {
+        return null;
+      }
+    })
+    .filter((e): e is FaqEntry => e !== null);
 
   return (
     <>
       <JsonLd
         data={productSchema({
           slug: 'rwood-micro',
+          locale,
           name: cleanName,
           description,
-          image: '/images/products/rwood-micro/hero-rwood-micro.webp',
+          image: '/images/products/rwood-micro/hero-rWood-Micro.webp',
           category: 'Acoustic wood panels',
+          countryOfOrigin: 'EU',
+          material: 'FSC-certified wood veneer on recycled-felt core',
+          specs: [
+            { name: 'Sound absorption (αw)', value: '0.90', unitText: 'ISO 11654' },
+            { name: 'NRC', value: '0.85', unitText: 'ASTM C423' },
+            { name: 'Fire classification', value: 'B-s1,d0' },
+            { name: 'Recycled content', value: '60', unitText: '%' },
+            { name: 'Perforation type', value: 'Micro (0.5 mm)' },
+            { name: 'Certification', value: 'FSC' },
+          ],
+          offer: {
+            priceCurrency: 'EUR',
+          },
         })}
       />
       <JsonLd
@@ -65,6 +113,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           { name: cleanName, url: `/${locale}/products/rwood-micro` },
         ])}
       />
+      {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RWoodMicroProductPage />
     </>
   );

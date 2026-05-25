@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-import { buildAlternates } from '@/lib/seo';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 import PageHero from '@/components/sections/PageHero';
 import CircularProcess from '@/components/sections/CircularProcess';
@@ -25,7 +25,9 @@ export async function generateMetadata({
     openGraph: {
       title: `${t('sustainabilityTitle')} | Re-Sound`,
       description: t('sustainabilityDescription'),
-      images: ['/images/og-sustainability.jpg'],
+      images: [`/api/og?locale=${locale}&page=sustainability`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     alternates: buildAlternates(locale, '/sustainability'),
   };

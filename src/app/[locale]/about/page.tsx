@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-import { buildAlternates } from '@/lib/seo';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 import PageHero from '@/components/sections/PageHero';
 import AboutStory from '@/components/sections/AboutStory';
@@ -25,7 +25,9 @@ export async function generateMetadata({
     openGraph: {
       title: `${t('aboutTitle')} | Re-Sound`,
       description: t('aboutDescription'),
-      images: ['/images/og-about.jpg'],
+      images: [`/api/og?locale=${locale}&page=about`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     alternates: buildAlternates(locale, '/about'),
   };

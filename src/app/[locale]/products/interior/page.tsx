@@ -3,12 +3,22 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import InteriorProductPage from '@/components/sections/InteriorProductPage';
 import JsonLd from '@/components/seo/JsonLd';
-import { buildAlternates } from '@/lib/seo';
-import { breadcrumbSchema, productSchema } from '@/lib/structured-data';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import {
+  breadcrumbSchema,
+  productSchema,
+  faqPageSchema,
+  type FaqEntry,
+} from '@/lib/structured-data';
 
 interface PageProps {
   params: { locale: string };
 }
+
+// Localised FAQ keys for this product. The keys are stable across locales;
+// each translation file under `messages/{locale}.json` provides the actual
+// Q&A copy under `interiorPage.faq.questions.<key>.question/.answer`.
+const FAQ_KEYS = ["leadTime", "washableCover", "absorptionRating", "breeamLeed", "installMethod"] as const;
 
 export async function generateMetadata({
   params: { locale },
@@ -19,13 +29,17 @@ export async function generateMetadata({
   const description = t('interiorDescription');
 
   return {
-    // Existing meta values already include "| Re-Sound" — bypass the layout template
+    // Title already contains "| Re-Sound" — bypass the layout template
     title: { absolute: title },
     description,
     openGraph: {
       title,
       description,
-      images: ['/images/products/interior/hero-antracite.webp'],
+      // Dynamic per-product OG so every locale's share preview matches
+      // the page's language + branding.
+      images: [`/api/og/interior?locale=${locale}`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
       type: 'website',
     },
     twitter: {
@@ -40,22 +54,55 @@ export async function generateMetadata({
 export default async function Page({ params: { locale } }: PageProps) {
   setRequestLocale(locale);
 
-  // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly
-  const t = await getTranslations({ locale, namespace: 'meta' });
-  const fullTitle = t('interiorTitle');
+  // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
+  const tMeta = await getTranslations({ locale, namespace: 'meta' });
+  const fullTitle = tMeta('interiorTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
-  const description = t('interiorDescription');
+  const description = tMeta('interiorDescription');
+
   const tProducts = await getTranslations({ locale, namespace: 'products' });
+
+  // FAQ entries — fall back gracefully if a question key isn't translated
+  // (string returns the key, which we then filter out).
+  const tFaq = await getTranslations({
+    locale,
+    namespace: 'interiorPage.faq',
+  });
+  const faqEntries: FaqEntry[] = FAQ_KEYS
+    .map((key) => {
+      try {
+        return {
+          question: tFaq(`questions.${key}.question`),
+          answer: tFaq(`questions.${key}.answer`),
+        };
+      } catch {
+        return null;
+      }
+    })
+    .filter((e): e is FaqEntry => e !== null);
 
   return (
     <>
       <JsonLd
         data={productSchema({
           slug: 'interior',
+          locale,
           name: cleanName,
           description,
           image: '/images/products/interior/hero-antracite.webp',
-          category: 'Acoustic textile wall panels', countryOfOrigin: 'BE',
+          category: 'Acoustic textile wall panels',
+          countryOfOrigin: 'BE',
+          material: 'Recycled textile fibres',
+          specs: [
+            { name: 'Sound absorption (αw)', value: '1.0', unitText: 'ISO 11654' },
+            { name: 'NRC', value: '0.95', unitText: 'ASTM C423' },
+            { name: 'Fire classification', value: 'B-s2,d0' },
+            { name: 'Recycled content', value: '80', unitText: '%' },
+            { name: 'Panel thickness', value: '25', unitText: 'mm' },
+          ],
+          offer: {
+            lowPrice: '387', priceCurrency: 'EUR',
+          },
         })}
       />
       <JsonLd
@@ -65,6 +112,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           { name: cleanName, url: `/${locale}/products/interior` },
         ])}
       />
+      {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <InteriorProductPage />
     </>
   );

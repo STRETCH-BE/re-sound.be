@@ -6,6 +6,7 @@ import { useLocale } from 'next-intl';
 import Input from '@/components/ui/Input';
 import Textarea from '@/components/ui/Textarea';
 import Select from '@/components/ui/Select';
+import { analytics } from '@/lib/analytics';
 
 export default function ContactForm() {
   const t = useTranslations('contact.form');
@@ -45,12 +46,15 @@ export default function ContactForm() {
 
       if (response.ok) {
         setSubmitStatus('success');
+        analytics.submitContactForm(true, String(data.subject ?? ''));
         (e.target as HTMLFormElement).reset();
       } else {
         setSubmitStatus('error');
+        analytics.submitContactForm(false, String(data.subject ?? ''));
       }
     } catch (error) {
       setSubmitStatus('error');
+      analytics.submitContactForm(false, String(data.subject ?? ''));
     } finally {
       setIsSubmitting(false);
     }

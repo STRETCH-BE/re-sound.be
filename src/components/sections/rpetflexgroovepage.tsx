@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -61,6 +62,13 @@ export default function RPETFlexGrooveProductPage() {
   // Get the current hero image - default or selected color
   const currentHeroImage = selectedColor ? selectedColor.image : defaultHeroImage;
 
+  // Fire a single view_item event on mount so GA4 / Meta see
+  // the product impression. Empty deps array → fires once per page.
+  useEffect(() => {
+    analytics.viewItem('rpet-flex-groove', 'rpet');
+  }, []);
+
+
   const downloads = [
     { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rpet-flex-groove/product-data-sheet.pdf' },
     { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rpet-flex-groove/installation-guide.pdf' },
@@ -98,6 +106,32 @@ export default function RPETFlexGrooveProductPage() {
 
       if (response.ok) {
         setIsModalOpen(false);
+        // ── Analytics ───────────────────────────────────
+        // Fire AFTER server confirms — never report a lead that
+        // never made it to Power Automate.
+        try {
+          await setEnhancedConversionsUserData(data.email, data.phone);
+          analytics.generateLead({ product: 'rpet-flex-groove', source: 'pdf_download_modal' });
+          const fileName = selectedDownload.split('/').pop() || '';
+          analytics.fileDownload('rpet-flex-groove', fileName);
+        } catch (err) {
+          console.warn('Analytics dispatch failed:', err);
+        }
+
+        // ── Microsoft Clarity custom tags ───────────────
+        try {
+          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
+          if (typeof w.clarity === 'function') {
+            w.clarity('set', 'lead_status', 'submitted');
+            w.clarity('set', 'lead_product', 'rpet-flex-groove');
+            if (data.companyName) w.clarity('set', 'company', data.companyName);
+            if (data.email) w.clarity('identify', data.email);
+            w.clarity('upgrade', 'submitted_lead');
+          }
+        } catch {
+          /* Clarity may not be loaded; no-op */
+        }
+
         const link = document.createElement('a');
         link.href = selectedDownload;
         link.download = selectedDownload.split('/').pop() || 'download.pdf';
@@ -171,7 +205,7 @@ export default function RPETFlexGrooveProductPage() {
           </div>
 
           <div className="hero-ctas">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary" onClick={() => analytics.quoteClick('rpet-flex-groove', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
@@ -807,10 +841,10 @@ export default function RPETFlexGrooveProductPage() {
             <p>{desc2IfDistinct('cta')}</p>
           )}
           <div className="cta-buttons">
-            <Link href="/contact" className="btn-primary large">
+            <Link href="/contact" className="btn-primary large" onClick={() => analytics.quoteClick('rpet-flex-groove', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
-            <a href="tel:+3232846818" className="btn-secondary large">
+            <a href="tel:+3232846818" className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_rpet-flex-groove')}>
               {tPage('cta.callUs')}
             </a>
           </div>

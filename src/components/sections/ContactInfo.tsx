@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { analytics } from '@/lib/analytics';
 
 export default function ContactInfo() {
   const t = useTranslations('contact.info');
@@ -23,8 +24,8 @@ export default function ContactInfo() {
         </svg>
       ),
       label: t('phone'),
-      value: '+32 (0)4 854 830 35',
-      href: 'tel:+32485483035',
+      value: '+32 3 284 68 18',
+      href: 'tel:+3232846818',
     },
     {
       icon: (
@@ -44,21 +45,32 @@ export default function ContactInfo() {
       <h3>{t('title')}</h3>
       
       <div className="info-items">
-        {contactItems.map((item, index) => (
-          <a
-            key={index}
-            href={item.href}
-            className="info-item"
-            target={item.href.startsWith('http') ? '_blank' : undefined}
-            rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-          >
-            <div className="info-icon">{item.icon}</div>
-            <div className="info-content">
-              <span className="info-label">{item.label}</span>
-              <span className="info-value">{item.value}</span>
-            </div>
-          </a>
-        ))}
+        {contactItems.map((item, index) => {
+          // Decide which analytics event to fire on click. Phone / email
+          // / map are tracked separately so the dashboard can break out
+          // contact-method preference per locale.
+          const onClickHandler = item.href.startsWith('tel:')
+            ? () => analytics.phoneClick('contact_page')
+            : item.href.startsWith('mailto:')
+            ? () => analytics.emailClick('contact_page')
+            : undefined;
+          return (
+            <a
+              key={index}
+              href={item.href}
+              className="info-item"
+              target={item.href.startsWith('http') ? '_blank' : undefined}
+              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              onClick={onClickHandler}
+            >
+              <div className="info-icon">{item.icon}</div>
+              <div className="info-content">
+                <span className="info-label">{item.label}</span>
+                <span className="info-value">{item.value}</span>
+              </div>
+            </a>
+          );
+        })}
       </div>
 
       <div className="business-hours">

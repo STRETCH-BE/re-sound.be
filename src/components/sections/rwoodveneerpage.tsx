@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import SampleKitModal from './SampleKitModal';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect, useRef } from 'react';
@@ -79,6 +80,13 @@ export default function RWoodPanelProductPage() {
     ? allVeneers
     : veneerCollections.find(c => c.category === activeCollection)?.veneers || [];
 
+  // Fire a single view_item event on mount so GA4 / Meta see
+  // the product impression. Empty deps array → fires once per page.
+  useEffect(() => {
+    analytics.viewItem('rwood-veneer', 'rwood');
+  }, []);
+
+
   const downloads = [
     { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
     { id: 'veneer-collection-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/rwood-veneer/veneer-collection-guide.pdf' },
@@ -114,6 +122,32 @@ export default function RWoodPanelProductPage() {
       });
       if (response.ok) {
         setIsModalOpen(false);
+        // ── Analytics ───────────────────────────────────
+        // Fire AFTER server confirms — never report a lead that
+        // never made it to Power Automate.
+        try {
+          await setEnhancedConversionsUserData(data.email, data.phone);
+          analytics.generateLead({ product: 'rwood-veneer', source: 'pdf_download_modal' });
+          const fileName = selectedDownload.split('/').pop() || '';
+          analytics.fileDownload('rwood-veneer', fileName);
+        } catch (err) {
+          console.warn('Analytics dispatch failed:', err);
+        }
+
+        // ── Microsoft Clarity custom tags ───────────────
+        try {
+          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
+          if (typeof w.clarity === 'function') {
+            w.clarity('set', 'lead_status', 'submitted');
+            w.clarity('set', 'lead_product', 'rwood-veneer');
+            if (data.companyName) w.clarity('set', 'company', data.companyName);
+            if (data.email) w.clarity('identify', data.email);
+            w.clarity('upgrade', 'submitted_lead');
+          }
+        } catch {
+          /* Clarity may not be loaded; no-op */
+        }
+
         const link = document.createElement('a');
         link.href = selectedDownload;
         link.download = selectedDownload.split('/').pop() || 'download.pdf';
@@ -183,7 +217,7 @@ export default function RWoodPanelProductPage() {
           </div>
 
           <div className="hero-ctas">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary" onClick={() => analytics.quoteClick('rwood-veneer', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#collection" onClick={(e) => { e.preventDefault(); scrollToSection('collection'); }} className="btn-secondary">
@@ -887,10 +921,10 @@ export default function RWoodPanelProductPage() {
             {t('cta.description')}
           </p>
           <div className="cta-buttons">
-            <Link href="/contact" className="btn-primary large">
+            <Link href="/contact" className="btn-primary large" onClick={() => analytics.quoteClick('rwood-veneer', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
-            <a href="tel:+3232846818" className="btn-secondary large">
+            <a href="tel:+3232846818" className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_rwood-veneer')}>
               {tPage('cta.callUs')}
             </a>
           </div>

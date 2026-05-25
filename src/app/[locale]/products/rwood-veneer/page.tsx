@@ -1,14 +1,24 @@
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-import RWoodVeneerPage from '@/components/sections/rwoodveneerpage';
+import RWoodVeneerProductPage from '@/components/sections/rwoodveneerpage';
 import JsonLd from '@/components/seo/JsonLd';
-import { buildAlternates } from '@/lib/seo';
-import { breadcrumbSchema, productSchema } from '@/lib/structured-data';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import {
+  breadcrumbSchema,
+  productSchema,
+  faqPageSchema,
+  type FaqEntry,
+} from '@/lib/structured-data';
 
 interface PageProps {
   params: { locale: string };
 }
+
+// Localised FAQ keys for this product. The keys are stable across locales;
+// each translation file under `messages/{locale}.json` provides the actual
+// Q&A copy under `rwoodVeneerPage.faq.questions.<key>.question/.answer`.
+const FAQ_KEYS = ["fscSource", "fireRating", "leadTime", "installMethod", "substrateCleanup"] as const;
 
 export async function generateMetadata({
   params: { locale },
@@ -19,13 +29,17 @@ export async function generateMetadata({
   const description = t('rwoodVeneerDescription');
 
   return {
-    // Existing meta values already include "| Re-Sound" — bypass the layout template
+    // Title already contains "| Re-Sound" — bypass the layout template
     title: { absolute: title },
     description,
     openGraph: {
       title,
       description,
-      images: ['/images/products/rwood-veneer/hero-rwood-veneer.webp'],
+      // Dynamic per-product OG so every locale's share preview matches
+      // the page's language + branding.
+      images: [`/api/og/rwood-veneer?locale=${locale}`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
       type: 'website',
     },
     twitter: {
@@ -40,22 +54,55 @@ export async function generateMetadata({
 export default async function Page({ params: { locale } }: PageProps) {
   setRequestLocale(locale);
 
-  // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly
-  const t = await getTranslations({ locale, namespace: 'meta' });
-  const fullTitle = t('rwoodVeneerTitle');
+  // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
+  const tMeta = await getTranslations({ locale, namespace: 'meta' });
+  const fullTitle = tMeta('rwoodVeneerTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
-  const description = t('rwoodVeneerDescription');
+  const description = tMeta('rwoodVeneerDescription');
+
   const tProducts = await getTranslations({ locale, namespace: 'products' });
+
+  // FAQ entries — fall back gracefully if a question key isn't translated
+  // (string returns the key, which we then filter out).
+  const tFaq = await getTranslations({
+    locale,
+    namespace: 'rwoodVeneerPage.faq',
+  });
+  const faqEntries: FaqEntry[] = FAQ_KEYS
+    .map((key) => {
+      try {
+        return {
+          question: tFaq(`questions.${key}.question`),
+          answer: tFaq(`questions.${key}.answer`),
+        };
+      } catch {
+        return null;
+      }
+    })
+    .filter((e): e is FaqEntry => e !== null);
 
   return (
     <>
       <JsonLd
         data={productSchema({
           slug: 'rwood-veneer',
+          locale,
           name: cleanName,
           description,
-          image: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
+          image: '/images/products/rwood-veneer/hero-rWood-Veneer.webp',
           category: 'Acoustic wood panels',
+          countryOfOrigin: 'EU',
+          material: 'FSC-certified wood veneer',
+          specs: [
+            { name: 'Fire classification', value: 'B-s2,d0' },
+            { name: 'Recycled content', value: '40', unitText: '%' },
+            { name: 'Wood species', value: '10 curated' },
+            { name: 'Construction', value: 'Furniture-grade' },
+            { name: 'Certification', value: 'FSC + EPD' },
+          ],
+          offer: {
+            priceCurrency: 'EUR',
+          },
         })}
       />
       <JsonLd
@@ -65,7 +112,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           { name: cleanName, url: `/${locale}/products/rwood-veneer` },
         ])}
       />
-      <RWoodVeneerPage />
+      {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
+      <RWoodVeneerProductPage />
     </>
   );
 }

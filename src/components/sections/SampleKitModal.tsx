@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { analytics } from '@/lib/analytics';
 
 export interface SampleFormData {
   firstName: string;
@@ -88,6 +89,13 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
         }),
       });
       setStatus(res.ok ? 'success' : 'error');
+      if (res.ok) {
+        analytics.sampleRequest(form.samples.join(','), form.samples);
+        analytics.generateLead({
+          product: form.samples[0] ?? 'samples',
+          source: 'sample_kit_modal',
+        });
+      }
     } catch {
       setStatus('error');
     }

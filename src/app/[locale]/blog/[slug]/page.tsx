@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-import { buildAlternates } from '@/lib/seo';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 import BlogPostHeader from '@/components/sections/BlogPostHeader';
 import BlogPostContent from '@/components/sections/BlogPostContent';
@@ -42,6 +42,8 @@ export async function generateMetadata({
       title: `${title} | Re-Sound`,
       description: excerpt,
       type: 'article',
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     alternates: buildAlternates(locale, `/blog/${slug}`),
   };

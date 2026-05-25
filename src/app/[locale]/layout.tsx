@@ -13,9 +13,11 @@ import {
   MetaPixel,
   BingUET,
   Clarity,
+  ScrollTracker,
 } from '@/components/analytics';
 
 import { locales, localeFullCodes, type Locale } from '@/i18n/config';
+import { ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 import '@/app/globals.css';
 
@@ -43,52 +45,64 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-// Default metadata (can be overridden per page)
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Re-Sound',
-    default: 'Re-Sound | Acoustics Made Circular',
-  },
-  description:
-    'High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.',
-  keywords: [
-    'acoustic panels',
-    'circular economy',
-    'recycled materials',
-    'sound absorption',
-    'Belgium',
-    'sustainable',
-  ],
-  authors: [{ name: 'Re-Sound' }],
-  creator: 'Re-Sound',
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be'
-  ),
-  openGraph: {
-    type: 'website',
-    locale: 'en_BE',
-    siteName: 'Re-Sound',
-    images: [
-      {
-        url: '/images/og-default.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Re-Sound - Acoustics Made Circular',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
 interface LocaleLayoutProps {
   children: React.ReactNode;
   params: { locale: string };
+}
+
+/**
+ * Per-locale default metadata. Per-page generateMetadata overrides
+ * title / description / images; this provides the baseline OG locale and
+ * `alternateLocale` array so social shares from any page advertise the
+ * right language_TERRITORY pair to LinkedIn / Slack / WhatsApp / X.
+ */
+export async function generateMetadata({
+  params: { locale },
+}: LocaleLayoutProps): Promise<Metadata> {
+  return {
+    title: {
+      template: '%s | Re-Sound',
+      default: 'Re-Sound | Acoustics Made Circular',
+    },
+    description:
+      'High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.',
+    keywords: [
+      'acoustic panels',
+      'circular economy',
+      'recycled materials',
+      'sound absorption',
+      'Belgium',
+      'sustainable',
+    ],
+    authors: [{ name: 'Re-Sound' }],
+    creator: 'Re-Sound',
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be'
+    ),
+    openGraph: {
+      type: 'website',
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
+      siteName: 'Re-Sound',
+      images: [
+        {
+          // Dynamic OG generated at runtime by /api/og — never 404s, no
+          // pre-built JPEG to keep in sync with copy or branding.
+          url: `/api/og?locale=${locale}`,
+          width: 1200,
+          height: 630,
+          alt: 'Re-Sound - Acoustics Made Circular',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
 }
 
 export default async function LocaleLayout({
@@ -134,6 +148,10 @@ export default async function LocaleLayout({
           <MetaPixel />
           <BingUET />
           <Clarity />
+
+          {/* Fires scroll-depth events (25/50/75/90 %) into the analytics
+              pipeline. No DOM output; resets on every pathname change. */}
+          <ScrollTracker />
 
           {/* Header - consistent across all pages */}
           <Header />

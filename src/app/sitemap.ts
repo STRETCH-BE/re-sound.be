@@ -46,9 +46,16 @@ const BLOG_SLUGS = [
 ];
 
 function buildLanguageAlternates(base: string, path: string) {
-  return Object.fromEntries(
-    locales.map((loc) => [loc, `${base}/${loc}${path}`])
-  );
+  return {
+    ...Object.fromEntries(
+      locales.map((loc) => [loc, `${base}/${loc}${path}`])
+    ),
+    // EN as the default for unspecified locales. Matches the helper in
+    // `src/lib/seo.ts` so the static sitemap and per-page alternates stay
+    // consistent — Google requires x-default whenever multiple locales
+    // exist without a clear regional default.
+    'x-default': `${base}/en${path}`,
+  };
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

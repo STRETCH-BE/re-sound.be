@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-import { buildAlternates } from '@/lib/seo';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 import PageHero from '@/components/sections/PageHero';
 import BlogGrid from '@/components/sections/BlogGrid';
@@ -23,6 +23,8 @@ export async function generateMetadata({
     openGraph: {
       title: `${t('blogTitle')} | Re-Sound`,
       description: t('blogDescription'),
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     alternates: buildAlternates(locale, '/blog'),
   };

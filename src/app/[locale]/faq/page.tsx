@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import FAQContent from '@/components/sections/FAQContent';
 import JsonLd from '@/components/seo/JsonLd';
-import { buildAlternates } from '@/lib/seo';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 interface PageProps {
   params: { locale: string };
@@ -39,6 +39,8 @@ export async function generateMetadata({
       title: t('faqTitle'),
       description: t('faqDescription'),
       type: 'website',
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     twitter: {
       card: 'summary_large_image',

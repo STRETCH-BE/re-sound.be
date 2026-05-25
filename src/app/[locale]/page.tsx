@@ -10,8 +10,8 @@ import WhyCards from '@/components/sections/WhyCards';
 import DualCTA from '@/components/sections/DualCTA';
 
 import JsonLd from '@/components/seo/JsonLd';
-import { buildAlternates } from '@/lib/seo';
-import { organizationSchema } from '@/lib/structured-data';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { organizationSchema, websiteSchema } from '@/lib/structured-data';
 
 interface HomePageProps {
   params: { locale: string };
@@ -32,8 +32,10 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: ['/images/og-home.jpg'],
-      locale,
+      // Dynamic homepage OG image (brand-blue background, title, tagline).
+      images: [`/api/og?locale=${locale}&page=home`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
       type: 'website',
     },
     twitter: {
@@ -50,8 +52,11 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
 
   return (
     <>
-      {/* Schema.org Organization — sitewide entity for rich results & Knowledge Graph */}
+      {/* Sitewide entity graph — Organization + WebSite together let Google
+          merge facts under a single Knowledge-Graph node instead of treating
+          the site as anonymous. WebSite is required for sitelinks. */}
       <JsonLd data={organizationSchema()} />
+      <JsonLd data={websiteSchema()} />
 
       {/* Dual-split fullscreen hero: rWood left / Circular right */}
       <Hero />

@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 
-import { buildAlternates } from '@/lib/seo';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 import PageHero from '@/components/sections/PageHero';
 import ContactForm from '@/components/sections/ContactForm';
@@ -24,6 +24,8 @@ export async function generateMetadata({
     openGraph: {
       title: `${t('contactTitle')} | Re-Sound`,
       description: t('contactDescription'),
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     alternates: buildAlternates(locale, '/contact'),
   };

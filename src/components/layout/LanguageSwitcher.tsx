@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { locales, localeNames, localeFlags, type Locale } from '@/i18n/config';
+import { analytics } from '@/lib/analytics';
 
 // Build the display list from config so adding a language only requires config.ts
 const localeList = locales.map((code) => ({
@@ -42,6 +43,10 @@ export default function LanguageSwitcher() {
   }, []);
 
   const handleLocaleChange = (newLocale: Locale) => {
+    // Fire analytics BEFORE navigating — the page transition can outrun the
+    // event otherwise, and locale switches are a key conversion signal
+    // (which language do paying B2B leads actually come from?).
+    analytics.languageSwitch(locale, newLocale, pathname);
     router.replace(pathname, { locale: newLocale });
     setIsOpen(false);
   };

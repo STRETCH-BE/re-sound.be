@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -26,6 +27,13 @@ export default function InteriorProductPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedColor, setSelectedColor] = useState(colorOptions[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
+
+  // Fire a single view_item event on mount so GA4 / Meta see
+  // the product impression. Empty deps array → fires once per page.
+  useEffect(() => {
+    analytics.viewItem('interior', 'textile');
+  }, []);
+
 
   const downloads = [
     { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/interior/product-data-sheet.pdf' },
@@ -65,6 +73,34 @@ export default function InteriorProductPage() {
       if (response.ok) {
         // Close modal and trigger download
         setIsModalOpen(false);
+        // ── Analytics ───────────────────────────────────
+        // Fire AFTER server confirms — never report a lead that
+        // never made it to Power Automate.
+        try {
+          await setEnhancedConversionsUserData(data.email, data.phone);
+          analytics.generateLead({ product: 'interior', source: 'pdf_download_modal' });
+          const fileName = selectedDownload.split('/').pop() || '';
+          analytics.fileDownload('interior', fileName);
+        } catch (err) {
+          // Never let analytics failure break the user's download.
+          console.warn('Analytics dispatch failed:', err);
+        }
+
+        // ── Microsoft Clarity custom tags ───────────────
+        // Lets us search recordings by lead_product / company.
+        try {
+          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
+          if (typeof w.clarity === 'function') {
+            w.clarity('set', 'lead_status', 'submitted');
+            w.clarity('set', 'lead_product', 'interior');
+            if (data.companyName) w.clarity('set', 'company', data.companyName);
+            if (data.email) w.clarity('identify', data.email);
+            w.clarity('upgrade', 'submitted_lead');
+          }
+        } catch {
+          /* Clarity may not be loaded; no-op */
+        }
+
         
         // Create download link and trigger it
         const link = document.createElement('a');
@@ -138,7 +174,7 @@ export default function InteriorProductPage() {
           </div>
 
           <div className="hero-ctas">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary" onClick={() => analytics.quoteClick('interior', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
@@ -616,10 +652,10 @@ export default function InteriorProductPage() {
             {tPage('cta.ctaSubtitle')}
           </p>
           <div className="cta-buttons">
-            <Link href="/contact" className="btn-primary large">
+            <Link href="/contact" className="btn-primary large" onClick={() => analytics.quoteClick('interior', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
-            <a href="tel:+3232846818" className="btn-secondary large">
+            <a href="tel:+3232846818" className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_interior')}>
               {tPage('cta.callUs')}
             </a>
           </div>
