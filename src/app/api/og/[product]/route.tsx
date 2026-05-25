@@ -6,13 +6,12 @@ import type { NextRequest } from 'next/server';
  *
  *   /api/og/rwood-groove?locale=en
  *
- * Falls back to the homepage layout if the slug isn't recognised. Themed
- * around the product family (textile / rWood / rPET) so the shared image
- * tells the recipient what they'll see when they click.
- *
- * Note: `size` / `contentType` are NOT valid exports from an App-Router
- * `route.tsx` file — those belong to the `opengraph-image.tsx` file
- * convention only. Dimensions are inlined in the ImageResponse call.
+ * Defensive design notes (after a v1 that rendered blank on Vercel edge):
+ *   - Solid background per family + supplementary gradient. Solid colour
+ *     guarantees a visible background even if Satori skips the gradient.
+ *   - ASCII-only text. Greek alpha and dot separators are out — a single
+ *     unrenderable glyph can fail the whole image silently on edge.
+ *   - System-font stack so we never block on a font fetch.
  */
 
 export const runtime = 'edge';
@@ -29,22 +28,22 @@ interface ProductMeta {
 }
 
 const PRODUCTS: Record<string, ProductMeta> = {
-  interior:           { name: 'Interior',        category: 'Modular acoustic wall panels',         spec: 'Class A · αw 1.0 · Made in Belgium',                 family: 'textile' },
-  solid:              { name: 'Solid',           category: 'Large-format acoustic wall panels',    spec: 'Class A absorption · Hook install · Belgium',        family: 'textile' },
-  divide:             { name: 'Divide',          category: 'Freestanding acoustic screens',         spec: 'Dual-sided · Magnetic modular · Belgium',           family: 'textile' },
-  'rwood-groove':     { name: 'rWood Groove',    category: 'Grooved acoustic wood panels',          spec: 'FSC · Class A · Made in Europe',                     family: 'rwood'   },
-  'rwood-perf':       { name: 'rWood Perf',      category: 'Perforated acoustic wood panels',       spec: 'FSC · Broadband absorption · Europe',               family: 'rwood'   },
-  'rwood-micro':      { name: 'rWood Micro',     category: 'Micro-perforated wood panels',          spec: 'FSC · Dual absorption · Backlit option',            family: 'rwood'   },
-  'rwood-veneer':     { name: 'rWood Panel',     category: 'Wood-veneer acoustic panels',           spec: 'FSC · 10 species · Furniture-grade',                family: 'rwood'   },
-  'rpet-panel':       { name: 'rPET Panel',      category: 'Flat recycled-PET acoustic panels',     spec: '100% recycled PET · OEKO-TEX® · Belgium',           family: 'rpet'    },
-  'rpet-groove':      { name: 'rPET Groove',     category: 'Grooved recycled-PET panels',           spec: '12 colors · 3 thicknesses · B-s1,d0',               family: 'rpet'    },
-  'rpet-flex-groove': { name: 'rPET Flex Groove',category: 'Flexible recycled-PET panels',          spec: 'Bendable · OEKO-TEX® · Made in Belgium',            family: 'rpet'    },
+  interior:           { name: 'Interior',         category: 'Modular acoustic wall panels',         spec: 'Class A absorption / Made in Belgium',         family: 'textile' },
+  solid:              { name: 'Solid',            category: 'Large-format acoustic wall panels',     spec: 'Class A absorption / Hook install / Belgium',  family: 'textile' },
+  divide:             { name: 'Divide',           category: 'Freestanding acoustic screens',         spec: 'Dual-sided / Magnetic modular / Belgium',     family: 'textile' },
+  'rwood-groove':     { name: 'rWood Groove',     category: 'Grooved acoustic wood panels',          spec: 'FSC / Class A / Made in Europe',               family: 'rwood'   },
+  'rwood-perf':       { name: 'rWood Perf',       category: 'Perforated acoustic wood panels',       spec: 'FSC / Broadband absorption / Europe',         family: 'rwood'   },
+  'rwood-micro':      { name: 'rWood Micro',      category: 'Micro-perforated wood panels',          spec: 'FSC / Dual absorption / Backlit option',      family: 'rwood'   },
+  'rwood-veneer':     { name: 'rWood Panel',      category: 'Wood-veneer acoustic panels',           spec: 'FSC / 10 species / Furniture-grade',          family: 'rwood'   },
+  'rpet-panel':       { name: 'rPET Panel',       category: 'Flat recycled-PET acoustic panels',     spec: '100% recycled PET / OEKO-TEX / Belgium',      family: 'rpet'    },
+  'rpet-groove':      { name: 'rPET Groove',      category: 'Grooved recycled-PET panels',           spec: '12 colors / 3 thicknesses / B-s1,d0',         family: 'rpet'    },
+  'rpet-flex-groove': { name: 'rPET Flex Groove', category: 'Flexible recycled-PET panels',          spec: 'Bendable / OEKO-TEX / Made in Belgium',       family: 'rpet'    },
 };
 
-const FAMILY_GRADIENTS: Record<ProductMeta['family'], string> = {
-  textile: 'linear-gradient(135deg, #197FC7 0%, #0a1628 100%)',
-  rwood:   'linear-gradient(135deg, #8b6235 0%, #2a1810 100%)',
-  rpet:    'linear-gradient(135deg, #2e8a6f 0%, #0a1f1a 100%)',
+const FAMILY_BG: Record<ProductMeta['family'], { solid: string; gradient: string }> = {
+  textile: { solid: '#197FC7', gradient: 'linear-gradient(135deg, #197FC7 0%, #0a1628 100%)' },
+  rwood:   { solid: '#8b6235', gradient: 'linear-gradient(135deg, #8b6235 0%, #2a1810 100%)' },
+  rpet:    { solid: '#2e8a6f', gradient: 'linear-gradient(135deg, #2e8a6f 0%, #0a1f1a 100%)' },
 };
 
 export async function GET(req: NextRequest, { params }: RouteParams) {
@@ -52,10 +51,7 @@ export async function GET(req: NextRequest, { params }: RouteParams) {
   const locale = searchParams.get('locale') ?? 'en';
   const slug = params.product;
   const product = PRODUCTS[slug];
-
-  const bg = product
-    ? FAMILY_GRADIENTS[product.family]
-    : FAMILY_GRADIENTS.textile;
+  const bg = FAMILY_BG[product?.family ?? 'textile'];
 
   return new ImageResponse(
     (
@@ -67,25 +63,25 @@ export async function GET(req: NextRequest, { params }: RouteParams) {
           flexDirection: 'column',
           justifyContent: 'space-between',
           padding: '64px 80px',
-          background: bg,
-          color: '#fff',
-          fontFamily: 'sans-serif',
+          backgroundColor: bg.solid,
+          backgroundImage: bg.gradient,
+          color: '#ffffff',
+          fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ fontSize: 36, fontWeight: 800, letterSpacing: '-0.02em' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <div style={{ fontSize: 40, fontWeight: 800, letterSpacing: '-0.02em' }}>
             Re-Sound
           </div>
           <div
             style={{
-              padding: '4px 12px',
-              border: '1.5px solid rgba(255,255,255,0.5)',
+              padding: '6px 14px',
+              border: '2px solid rgba(255,255,255,0.5)',
               borderRadius: 999,
-              fontSize: 16,
+              fontSize: 18,
               fontWeight: 500,
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
-              opacity: 0.85,
             }}
           >
             {locale.toUpperCase()}
@@ -95,9 +91,9 @@ export async function GET(req: NextRequest, { params }: RouteParams) {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div
             style={{
-              fontSize: 28,
+              fontSize: 30,
               fontWeight: 500,
-              opacity: 0.78,
+              opacity: 0.85,
               letterSpacing: '0.02em',
               marginBottom: 16,
             }}
@@ -118,9 +114,9 @@ export async function GET(req: NextRequest, { params }: RouteParams) {
             <div
               style={{
                 marginTop: 28,
-                fontSize: 24,
+                fontSize: 26,
                 fontWeight: 400,
-                opacity: 0.85,
+                opacity: 0.9,
               }}
             >
               {product.spec}
@@ -133,12 +129,14 @@ export async function GET(req: NextRequest, { params }: RouteParams) {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-end',
-            fontSize: 20,
-            opacity: 0.7,
+            fontSize: 22,
+            opacity: 0.8,
           }}
         >
-          <div>re-sound.be/{locale}/products/{slug}</div>
-          <div>♻︎ Free take-back program</div>
+          <div>
+            re-sound.be/{locale}/products/{slug}
+          </div>
+          <div>Free take-back program</div>
         </div>
       </div>
     ),
