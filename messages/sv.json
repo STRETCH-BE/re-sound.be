@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Interior i bruk"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfärger levereras inom 1–2 veckor; specialkonfigurationer kräver 3–4 veckor från orderbekräftelse. För projekt över 50 m² räkna med 4–6 veckor."
+        },
+        "washableCover": {
+          "question": "Är textilklädseln tvättbar?",
+          "answer": "Ja. Klädseln är avtagbar och kan maskintvättas i 30 °C. Kärnan av återvunnen textil stannar i panelen och påverkas inte."
+        },
+        "absorptionRating": {
+          "question": "Vad är skillnaden mellan αw 1,0 och NRC 0,95?",
+          "answer": "Båda mäter absorption men enligt olika standarder. αw (ISO 11654) är det europeiska enkelvärdet; NRC (ASTM C423) är den amerikanska motsvarigheten. αw 1,0 och NRC 0,95 anger samma Klass A-prestanda."
+        },
+        "breeamLeed": {
+          "question": "Kvalificerar produkten för BREEAM- eller LEED-poäng?",
+          "answer": "Ja. Återvunnet innehåll, låga VOC-utsläpp och återtagningsprogrammet bidrar till BREEAM Mat 03 och LEED MR-poäng. En EPD finns på begäran."
+        },
+        "installMethod": {
+          "question": "Hur installeras panelerna?",
+          "answer": "Interior använder en dold modulskena; Solid använder dolda krokar; Divide är fristående med en magnetisk modulär koppling. Inga specialverktyg krävs."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Solid i bruk"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfärger levereras inom 1–2 veckor; specialkonfigurationer kräver 3–4 veckor från orderbekräftelse. För projekt över 50 m² räkna med 4–6 veckor."
+        },
+        "hookInstall": {
+          "question": "Hur fungerar krokmonteringen?",
+          "answer": "Varje Solid-panel levereras med dolda stålkrokar förmonterade på baksidan. De hängs på skruvar placerade på en vågrät linje — montering av en standardpanel 1200 × 600 tar under fem minuter per styck."
+        },
+        "sizeCustomization": {
+          "question": "Kan panelstorleken anpassas?",
+          "answer": "Ja. Skräddarsydda bredder och höjder erbjuds för projekt från 20 m². Minimibeställningskvantiteter gäller; kontakta oss för en anpassad offert."
+        },
+        "weightPerPanel": {
+          "question": "Hur mycket väger en panel?",
+          "answer": "En standard Solid-panel 1200 × 600 mm väger ungefär 4,5 kg. Den lätta konstruktionen gör att väggfästen sällan behöver förstärkas."
+        },
+        "absorptionRating": {
+          "question": "Vad är skillnaden mellan αw 1,0 och NRC 0,95?",
+          "answer": "Båda mäter absorption men enligt olika standarder. αw (ISO 11654) är det europeiska enkelvärdet; NRC (ASTM C423) är den amerikanska motsvarigheten. αw 1,0 och NRC 0,95 anger samma Klass A-prestanda."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Divide i bruk"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfärger levereras inom 1–2 veckor; specialkonfigurationer kräver 3–4 veckor från orderbekräftelse. För projekt över 50 m² räkna med 4–6 veckor."
+        },
+        "magneticConnection": {
+          "question": "Hur fungerar den magnetiska kopplingen?",
+          "answer": "Varje Divide-skärm har neodymmagneter inbäddade i kantprofilen. Skärmar klickar ihop ände mot ände eller i 90 °, och kan konfigureras om när som helst utan verktyg."
+        },
+        "dualSidedAbsorption": {
+          "question": "Absorberar Divide ljud från båda sidor?",
+          "answer": "Ja. Konstruktionen är symmetrisk och båda sidorna ger likvärdig absorptionsprestanda — användbart i öppna kontor där skärmen står mellan två arbetszoner."
+        },
+        "footStability": {
+          "question": "Hur stabil är den fristående foten?",
+          "answer": "Gjutjärnsfoten är vägd för att hålla skärmen stabil upp till 2 m höjd under normala inomhusförhållanden. För högre skärmar eller livliga passager kan panelerna länkas via magnetkontakterna för extra stabilitet."
+        },
+        "sizeCustomization": {
+          "question": "Kan panelstorleken anpassas?",
+          "answer": "Ja. Skräddarsydda bredder och höjder erbjuds för projekt från 20 m². Minimibeställningskvantiteter gäller; kontakta oss för en anpassad offert."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1429,6 +1501,30 @@
     },
     "related": {
       "title": "Relaterade Produkter"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Är den återvunna PET-en certifierad?",
+          "answer": "Ja. Alla rPET-paneler är OEKO-TEX® Standard 100-certifierade — bekräftar frånvaron av skadliga ämnen. VOC-utsläpp testas mot franska A+ (den strängaste inomhusluftklassen)."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Alla rPET-paneler är klassificerade B-s1,d0 enligt EN 13501-1 — den högsta praktiska klassningen för ett invändigt dekorativt material, utöver klass A."
+        },
+        "processability": {
+          "question": "Kan rPET-paneler kapas, borras eller målas?",
+          "answer": "Ja. rPET beter sig som MDF i vanliga träbearbetningsmaskiner: kapa med cirkelsåg eller CNC-fräs, borra med spiralborr, måla med vatten- eller lösningsmedelsbaserade lacker. Ingen särskild skyddsutrustning krävs."
+        },
+        "colorRange": {
+          "question": "Hur många färger finns tillgängliga?",
+          "answer": "12 designerfärger lagerförs för rPET Groove- och Flex Groove-linjerna; rPET Panel-linjen finns i 16 färger. Anpassade färger kan tillverkas för projekt över 200 m²."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfärger levereras inom 2–3 veckor; anpassade färger kräver 5–6 veckor. Större projekt (>500 m²) planeras i produktionsbatcher — kontakta oss för ett bindande datum."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1616,6 +1712,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Är den återvunna PET-en certifierad?",
+          "answer": "Ja. Alla rPET-paneler är OEKO-TEX® Standard 100-certifierade — bekräftar frånvaron av skadliga ämnen. VOC-utsläpp testas mot franska A+ (den strängaste inomhusluftklassen)."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Alla rPET-paneler är klassificerade B-s1,d0 enligt EN 13501-1 — den högsta praktiska klassningen för ett invändigt dekorativt material, utöver klass A."
+        },
+        "processability": {
+          "question": "Kan rPET-paneler kapas, borras eller målas?",
+          "answer": "Ja. rPET beter sig som MDF i vanliga träbearbetningsmaskiner: kapa med cirkelsåg eller CNC-fräs, borra med spiralborr, måla med vatten- eller lösningsmedelsbaserade lacker. Ingen särskild skyddsutrustning krävs."
+        },
+        "colorRange": {
+          "question": "Hur många färger finns tillgängliga?",
+          "answer": "12 designerfärger lagerförs för rPET Groove- och Flex Groove-linjerna; rPET Panel-linjen finns i 16 färger. Anpassade färger kan tillverkas för projekt över 200 m²."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfärger levereras inom 2–3 veckor; anpassade färger kräver 5–6 veckor. Större projekt (>500 m²) planeras i produktionsbatcher — kontakta oss för ett bindande datum."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1778,6 +1898,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • FSC® Certified"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Var kommer den FSC-certifierade fanéret från?",
+          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Standardbrandklassen är B-s2,d0 enligt EN 13501-1. rWood Micro-varianten når B-s1,d0, lämplig för de strängaste kraven i offentliga byggnader."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+        },
+        "installMethod": {
+          "question": "Hur installeras rWood-paneler?",
+          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+        },
+        "substrateCleanup": {
+          "question": "Vad händer med panelerna när de tjänat ut?",
+          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1933,6 +2077,30 @@
     },
     "cta": {
       "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Var kommer den FSC-certifierade fanéret från?",
+          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Standardbrandklassen är B-s2,d0 enligt EN 13501-1. rWood Micro-varianten når B-s1,d0, lämplig för de strängaste kraven i offentliga byggnader."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+        },
+        "installMethod": {
+          "question": "Hur installeras rWood-paneler?",
+          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+        },
+        "substrateCleanup": {
+          "question": "Vad händer med panelerna när de tjänat ut?",
+          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2097,6 +2265,30 @@
       "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
       "pigmentedLacquer": "Pigmenterad lack",
       "glossLevels": "Glansnivåer"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Var kommer den FSC-certifierade fanéret från?",
+          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Standardbrandklassen är B-s2,d0 enligt EN 13501-1. rWood Micro-varianten når B-s1,d0, lämplig för de strängaste kraven i offentliga byggnader."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+        },
+        "installMethod": {
+          "question": "Hur installeras rWood-paneler?",
+          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+        },
+        "substrateCleanup": {
+          "question": "Vad händer med panelerna när de tjänat ut?",
+          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2328,6 +2520,30 @@
     },
     "downloads": {
       "productDataSheet": "Produktdatablad"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Var kommer den FSC-certifierade fanéret från?",
+          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Standardbrandklassen är B-s2,d0 enligt EN 13501-1. rWood Micro-varianten når B-s1,d0, lämplig för de strängaste kraven i offentliga byggnader."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+        },
+        "installMethod": {
+          "question": "Hur installeras rWood-paneler?",
+          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+        },
+        "substrateCleanup": {
+          "question": "Vad händer med panelerna när de tjänat ut?",
+          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2495,6 +2711,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Är den återvunna PET-en certifierad?",
+          "answer": "Ja. Alla rPET-paneler är OEKO-TEX® Standard 100-certifierade — bekräftar frånvaron av skadliga ämnen. VOC-utsläpp testas mot franska A+ (den strängaste inomhusluftklassen)."
+        },
+        "fireRating": {
+          "question": "Vad är brandklassificeringen?",
+          "answer": "Alla rPET-paneler är klassificerade B-s1,d0 enligt EN 13501-1 — den högsta praktiska klassningen för ett invändigt dekorativt material, utöver klass A."
+        },
+        "processability": {
+          "question": "Kan rPET-paneler kapas, borras eller målas?",
+          "answer": "Ja. rPET beter sig som MDF i vanliga träbearbetningsmaskiner: kapa med cirkelsåg eller CNC-fräs, borra med spiralborr, måla med vatten- eller lösningsmedelsbaserade lacker. Ingen särskild skyddsutrustning krävs."
+        },
+        "colorRange": {
+          "question": "Hur många färger finns tillgängliga?",
+          "answer": "12 designerfärger lagerförs för rPET Groove- och Flex Groove-linjerna; rPET Panel-linjen finns i 16 färger. Anpassade färger kan tillverkas för projekt över 200 m²."
+        },
+        "leadTime": {
+          "question": "Vad är den normala leveranstiden?",
+          "answer": "Lagerfärger levereras inom 2–3 veckor; anpassade färger kräver 5–6 veckor. Större projekt (>500 m²) planeras i produktionsbatcher — kontakta oss för ett bindande datum."
+        }
+      }
     }
   },
   "legal": {

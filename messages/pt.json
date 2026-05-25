@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INSPIRAÇÃO",
       "title": "Interior en Acción"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "As cores em stock são expedidas em 1 a 2 semanas; as configurações personalizadas exigem de 3 a 4 semanas após a confirmação da encomenda. Para projetos acima de 50 m², considere 4 a 6 semanas."
+        },
+        "washableCover": {
+          "question": "A capa têxtil é lavável?",
+          "answer": "Sim. A capa é removível e lavável à máquina a 30 °C. O núcleo de têxtil reciclado permanece dentro do painel e não é afetado."
+        },
+        "absorptionRating": {
+          "question": "Qual é a diferença entre αw 1.0 e NRC 0.95?",
+          "answer": "Ambos medem absorção, mas segundo normas diferentes. αw (ISO 11654) é o valor único europeu; NRC (ASTM C423) é o equivalente americano. αw 1.0 e NRC 0.95 indicam o mesmo desempenho Classe A."
+        },
+        "breeamLeed": {
+          "question": "Este produto é elegível para créditos BREEAM ou LEED?",
+          "answer": "Sim. O conteúdo reciclado, as baixas emissões de COV e o programa de retoma contribuem para os créditos BREEAM Mat 03 e LEED MR. Uma EPD está disponível mediante pedido."
+        },
+        "installMethod": {
+          "question": "Como são instalados os painéis?",
+          "answer": "O Interior utiliza uma calha modular oculta; o Solid utiliza ganchos ocultos; o Divide é independente com ligação modular magnética. Não é necessária ferramenta especializada."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INSPIRAÇÃO",
       "title": "Solid en Acción"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "As cores em stock são expedidas em 1 a 2 semanas; as configurações personalizadas exigem de 3 a 4 semanas após a confirmação da encomenda. Para projetos acima de 50 m², considere 4 a 6 semanas."
+        },
+        "hookInstall": {
+          "question": "Como funciona a instalação por ganchos?",
+          "answer": "Cada painel Solid é entregue com ganchos de aço ocultos pré-fixados na parte traseira. Encaixam em parafusos colocados numa linha nivelada — a instalação de um painel-padrão 1200 × 600 leva menos de cinco minutos por peça."
+        },
+        "sizeCustomization": {
+          "question": "É possível personalizar o tamanho do painel?",
+          "answer": "Sim. Larguras e alturas personalizadas estão disponíveis para projetos a partir de 20 m². Aplicam-se quantidades mínimas; contacte-nos para um orçamento à medida."
+        },
+        "weightPerPanel": {
+          "question": "Quanto pesa um painel?",
+          "answer": "Um painel Solid padrão de 1200 × 600 mm pesa cerca de 4,5 kg. A construção leve faz com que as fixações de parede raramente precisem de reforço."
+        },
+        "absorptionRating": {
+          "question": "Qual é a diferença entre αw 1.0 e NRC 0.95?",
+          "answer": "Ambos medem absorção, mas segundo normas diferentes. αw (ISO 11654) é o valor único europeu; NRC (ASTM C423) é o equivalente americano. αw 1.0 e NRC 0.95 indicam o mesmo desempenho Classe A."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INSPIRAÇÃO",
       "title": "Divide en Acción"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "As cores em stock são expedidas em 1 a 2 semanas; as configurações personalizadas exigem de 3 a 4 semanas após a confirmação da encomenda. Para projetos acima de 50 m², considere 4 a 6 semanas."
+        },
+        "magneticConnection": {
+          "question": "Como funciona a ligação magnética?",
+          "answer": "Cada biombo Divide tem ímanes de neodímio embutidos no perfil da aresta. Os biombos encaixam topo a topo ou a 90 °, e podem ser reconfigurados a qualquer momento sem ferramentas."
+        },
+        "dualSidedAbsorption": {
+          "question": "O Divide absorve som dos dois lados?",
+          "answer": "Sim. A construção é simétrica e ambas as faces oferecem desempenho de absorção equivalente — útil em escritórios abertos onde o biombo fica entre duas zonas de trabalho."
+        },
+        "footStability": {
+          "question": "Qual a estabilidade do pé independente?",
+          "answer": "O pé em ferro fundido é lastrado para manter o biombo estável até 2 m de altura em condições interiores normais. Para biombos mais altos ou zonas de circulação intensa, os painéis podem ser ligados pelos conectores magnéticos para maior estabilidade."
+        },
+        "sizeCustomization": {
+          "question": "É possível personalizar o tamanho do painel?",
+          "answer": "Sim. Larguras e alturas personalizadas estão disponíveis para projetos a partir de 20 m². Aplicam-se quantidades mínimas; contacte-nos para um orçamento à medida."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1429,6 +1501,30 @@
     },
     "related": {
       "title": "Produtos Relacionados"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "O PET reciclado é certificado?",
+          "answer": "Sim. Todos os painéis rPET são certificados OEKO-TEX® Standard 100 — verifica a ausência de substâncias nocivas. As emissões de COV são testadas pela classificação francesa A+ (a mais exigente classificação de qualidade do ar interior)."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "Todos os painéis rPET são classificados B-s1,d0 segundo a EN 13501-1 — a classificação prática mais alta para um material decorativo de interior, abaixo da classe A."
+        },
+        "processability": {
+          "question": "Os painéis rPET podem ser cortados, furados ou pintados?",
+          "answer": "Sim. O rPET comporta-se como MDF em maquinaria de carpintaria padrão: corte com serra circular ou fresadora CNC, furação com brocas helicoidais, pintura com acabamentos à base de água ou solvente. Não é necessário equipamento de proteção especial."
+        },
+        "colorRange": {
+          "question": "Quantas cores estão disponíveis?",
+          "answer": "12 cores designer são mantidas em stock para as linhas rPET Groove e Flex Groove; a linha rPET Panel está disponível em 16 cores. Podem ser produzidas cores personalizadas para projetos acima de 200 m²."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "As cores em stock são expedidas em 2–3 semanas; as cores personalizadas exigem 5–6 semanas. Grandes projetos (>500 m²) são programados em lotes de produção — contacte-nos para uma data vinculativa."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1616,6 +1712,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "O PET reciclado é certificado?",
+          "answer": "Sim. Todos os painéis rPET são certificados OEKO-TEX® Standard 100 — verifica a ausência de substâncias nocivas. As emissões de COV são testadas pela classificação francesa A+ (a mais exigente classificação de qualidade do ar interior)."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "Todos os painéis rPET são classificados B-s1,d0 segundo a EN 13501-1 — a classificação prática mais alta para um material decorativo de interior, abaixo da classe A."
+        },
+        "processability": {
+          "question": "Os painéis rPET podem ser cortados, furados ou pintados?",
+          "answer": "Sim. O rPET comporta-se como MDF em maquinaria de carpintaria padrão: corte com serra circular ou fresadora CNC, furação com brocas helicoidais, pintura com acabamentos à base de água ou solvente. Não é necessário equipamento de proteção especial."
+        },
+        "colorRange": {
+          "question": "Quantas cores estão disponíveis?",
+          "answer": "12 cores designer são mantidas em stock para as linhas rPET Groove e Flex Groove; a linha rPET Panel está disponível em 16 cores. Podem ser produzidas cores personalizadas para projetos acima de 200 m²."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "As cores em stock são expedidas em 2–3 semanas; as cores personalizadas exigem 5–6 semanas. Grandes projetos (>500 m²) são programados em lotes de produção — contacte-nos para uma data vinculativa."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1778,6 +1898,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • FSC® Certified"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "De onde vem o folheado certificado FSC?",
+          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+        },
+        "installMethod": {
+          "question": "Como são instalados os painéis rWood?",
+          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+        },
+        "substrateCleanup": {
+          "question": "O que acontece aos painéis no fim de vida?",
+          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1933,6 +2077,30 @@
     },
     "cta": {
       "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "De onde vem o folheado certificado FSC?",
+          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+        },
+        "installMethod": {
+          "question": "Como são instalados os painéis rWood?",
+          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+        },
+        "substrateCleanup": {
+          "question": "O que acontece aos painéis no fim de vida?",
+          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2097,6 +2265,30 @@
       "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
       "pigmentedLacquer": "Laca pigmentada",
       "glossLevels": "Níveis de brilho"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "De onde vem o folheado certificado FSC?",
+          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+        },
+        "installMethod": {
+          "question": "Como são instalados os painéis rWood?",
+          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+        },
+        "substrateCleanup": {
+          "question": "O que acontece aos painéis no fim de vida?",
+          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2328,6 +2520,30 @@
     },
     "downloads": {
       "productDataSheet": "Ficha Técnica del Producto"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "De onde vem o folheado certificado FSC?",
+          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+        },
+        "installMethod": {
+          "question": "Como são instalados os painéis rWood?",
+          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+        },
+        "substrateCleanup": {
+          "question": "O que acontece aos painéis no fim de vida?",
+          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2495,6 +2711,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "O PET reciclado é certificado?",
+          "answer": "Sim. Todos os painéis rPET são certificados OEKO-TEX® Standard 100 — verifica a ausência de substâncias nocivas. As emissões de COV são testadas pela classificação francesa A+ (a mais exigente classificação de qualidade do ar interior)."
+        },
+        "fireRating": {
+          "question": "Qual é a classificação ao fogo?",
+          "answer": "Todos os painéis rPET são classificados B-s1,d0 segundo a EN 13501-1 — a classificação prática mais alta para um material decorativo de interior, abaixo da classe A."
+        },
+        "processability": {
+          "question": "Os painéis rPET podem ser cortados, furados ou pintados?",
+          "answer": "Sim. O rPET comporta-se como MDF em maquinaria de carpintaria padrão: corte com serra circular ou fresadora CNC, furação com brocas helicoidais, pintura com acabamentos à base de água ou solvente. Não é necessário equipamento de proteção especial."
+        },
+        "colorRange": {
+          "question": "Quantas cores estão disponíveis?",
+          "answer": "12 cores designer são mantidas em stock para as linhas rPET Groove e Flex Groove; a linha rPET Panel está disponível em 16 cores. Podem ser produzidas cores personalizadas para projetos acima de 200 m²."
+        },
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "As cores em stock são expedidas em 2–3 semanas; as cores personalizadas exigem 5–6 semanas. Grandes projetos (>500 m²) são programados em lotes de produção — contacte-nos para uma data vinculativa."
+        }
+      }
     }
   },
   "legal": {

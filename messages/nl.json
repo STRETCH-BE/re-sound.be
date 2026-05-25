@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INSPIRATIE",
       "title": "Interior in de Praktijk"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadkleuren leveren we binnen 1–2 weken; maatwerk binnen 3–4 weken na orderbevestiging. Voor projecten boven 50 m² houd je rekening met 4–6 weken."
+        },
+        "washableCover": {
+          "question": "Is de stoffen hoes wasbaar?",
+          "answer": "Ja. De hoes is afneembaar en machinewasbaar op 30 °C. De kern van gerecycleerd textiel blijft in het paneel en wordt niet aangetast."
+        },
+        "absorptionRating": {
+          "question": "Wat is het verschil tussen αw 1.0 en NRC 0.95?",
+          "answer": "Beide meten absorptie, maar volgens verschillende standaarden. αw (ISO 11654) is de Europese eenmaatswaarde; NRC (ASTM C423) is de Amerikaanse equivalent. αw 1.0 en NRC 0.95 wijzen op dezelfde Klasse A-prestatie."
+        },
+        "breeamLeed": {
+          "question": "Komt dit product in aanmerking voor BREEAM- of LEED-credits?",
+          "answer": "Ja. Gerecycleerde inhoud, lage VOC-emissies en het terugnameprogramma dragen bij aan BREEAM Mat 03 en LEED MR credits. Een EPD is op aanvraag beschikbaar."
+        },
+        "installMethod": {
+          "question": "Hoe worden de panelen geïnstalleerd?",
+          "answer": "Interior gebruikt een verborgen modulaire rail; Solid werkt met verborgen haken; Divide is vrijstaand met een magnetische modulaire koppeling. Speciaal gereedschap is niet nodig."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INSPIRATIE",
       "title": "Solid in de Praktijk"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadkleuren leveren we binnen 1–2 weken; maatwerk binnen 3–4 weken na orderbevestiging. Voor projecten boven 50 m² houd je rekening met 4–6 weken."
+        },
+        "hookInstall": {
+          "question": "Hoe werkt de haakinstallatie?",
+          "answer": "Elk Solid-paneel wordt geleverd met verborgen stalen haken, vooraf gemonteerd op de achterzijde. Ze hangen aan schroeven op een waterpaslijn — installatie van een standaard 1200 × 600-paneel duurt minder dan vijf minuten per stuk."
+        },
+        "sizeCustomization": {
+          "question": "Kan de paneelmaat op maat gemaakt worden?",
+          "answer": "Ja. Aangepaste breedtes en hoogtes zijn beschikbaar voor projecten vanaf 20 m². Er gelden minimum hoeveelheden; neem contact op voor een offerte op maat."
+        },
+        "weightPerPanel": {
+          "question": "Hoeveel weegt een paneel?",
+          "answer": "Een standaard Solid-paneel van 1200 × 600 mm weegt ongeveer 4,5 kg. Door de lichte constructie hoeven wandbevestigingen zelden versterkt te worden."
+        },
+        "absorptionRating": {
+          "question": "Wat is het verschil tussen αw 1.0 en NRC 0.95?",
+          "answer": "Beide meten absorptie, maar volgens verschillende standaarden. αw (ISO 11654) is de Europese eenmaatswaarde; NRC (ASTM C423) is de Amerikaanse equivalent. αw 1.0 en NRC 0.95 wijzen op dezelfde Klasse A-prestatie."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INSPIRATIE",
       "title": "Divide in de Praktijk"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadkleuren leveren we binnen 1–2 weken; maatwerk binnen 3–4 weken na orderbevestiging. Voor projecten boven 50 m² houd je rekening met 4–6 weken."
+        },
+        "magneticConnection": {
+          "question": "Hoe werkt de magnetische verbinding?",
+          "answer": "Elk Divide-scherm heeft neodymiummagneten in het kantprofiel. Schermen klikken aan elkaar — eind-aan-eind of in 90 ° — en kun je op elk moment zonder gereedschap hergebruiken."
+        },
+        "dualSidedAbsorption": {
+          "question": "Absorbeert Divide geluid aan beide zijden?",
+          "answer": "Ja. De constructie is symmetrisch en beide zijden bieden gelijkwaardige absorptie — handig in open kantoren waar het scherm tussen twee werkzones staat."
+        },
+        "footStability": {
+          "question": "Hoe stabiel is de vrijstaande voet?",
+          "answer": "De gietijzeren voet is gewogen om het scherm stabiel te houden tot 2 m hoogte in normale binnencondities. Voor hogere schermen of drukke loopzones koppel je panelen via de magneetconnectoren voor extra stabiliteit."
+        },
+        "sizeCustomization": {
+          "question": "Kan de paneelmaat op maat gemaakt worden?",
+          "answer": "Ja. Aangepaste breedtes en hoogtes zijn beschikbaar voor projecten vanaf 20 m². Er gelden minimum hoeveelheden; neem contact op voor een offerte op maat."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1426,6 +1498,30 @@
     },
     "cta2": {
       "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Gerecycleerd"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Is het gerecycleerde PET gecertificeerd?",
+          "answer": "Ja. Alle rPET-panelen zijn OEKO-TEX® Standard 100 gecertificeerd — verifieert de afwezigheid van schadelijke stoffen. VOC-emissies zijn getest op het Franse A+ (de strengste binnenluchtgraad)."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "Alle rPET-panelen zijn beoordeeld op B-s1,d0 volgens EN 13501-1 — de hoogste praktische klasse voor een interieurdecoratief materiaal, op A-klasse na."
+        },
+        "processability": {
+          "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
+          "answer": "Ja. rPET gedraagt zich als MDF op standaard houtbewerkingsmachines: zagen met cirkelzaag of CNC-router, boren met spiraalboren, schilderen met water- of solventgebonden afwerkingen. Geen speciale beschermingsuitrusting nodig."
+        },
+        "colorRange": {
+          "question": "Hoeveel kleuren zijn er beschikbaar?",
+          "answer": "12 designerkleuren zijn op voorraad voor de rPET Groove- en Flex-Groove-lijnen; de rPET Panel-lijn is beschikbaar in 16 kleuren. Aangepaste kleuren kunnen geproduceerd worden voor projecten boven 200 m²."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1613,6 +1709,30 @@
     },
     "cta2": {
       "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Recycleerbaar"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Is het gerecycleerde PET gecertificeerd?",
+          "answer": "Ja. Alle rPET-panelen zijn OEKO-TEX® Standard 100 gecertificeerd — verifieert de afwezigheid van schadelijke stoffen. VOC-emissies zijn getest op het Franse A+ (de strengste binnenluchtgraad)."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "Alle rPET-panelen zijn beoordeeld op B-s1,d0 volgens EN 13501-1 — de hoogste praktische klasse voor een interieurdecoratief materiaal, op A-klasse na."
+        },
+        "processability": {
+          "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
+          "answer": "Ja. rPET gedraagt zich als MDF op standaard houtbewerkingsmachines: zagen met cirkelzaag of CNC-router, boren met spiraalboren, schilderen met water- of solventgebonden afwerkingen. Geen speciale beschermingsuitrusting nodig."
+        },
+        "colorRange": {
+          "question": "Hoeveel kleuren zijn er beschikbaar?",
+          "answer": "12 designerkleuren zijn op voorraad voor de rPET Groove- en Flex-Groove-lijnen; de rPET Panel-lijn is beschikbaar in 16 kleuren. Aangepaste kleuren kunnen geproduceerd worden voor projecten boven 200 m²."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1775,6 +1895,30 @@
     },
     "cta2": {
       "freeNote": "Gratis stalen • Gemaakt in Europa • FSC® gecertificeerd"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
+          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+        },
+        "installMethod": {
+          "question": "Hoe worden rWood-panelen geïnstalleerd?",
+          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+        },
+        "substrateCleanup": {
+          "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
+          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1930,6 +2074,30 @@
     },
     "cta": {
       "note": "Gratis stalen beschikbaar • Gemaakt in Europa • FSC® gecertificeerd • A2 brandklasse beschikbaar"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
+          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+        },
+        "installMethod": {
+          "question": "Hoe worden rWood-panelen geïnstalleerd?",
+          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+        },
+        "substrateCleanup": {
+          "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
+          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2097,6 +2265,30 @@
       "description2": "Vier perforatiedichtheden voor uw akoestische vereisten. Van vrijwel onzichtbare Nano-perforaties tot maximale absorptie Micro L-patronen — selecteer de perfecte balans tussen esthetiek en akoestische prestaties.",
       "pigmentedLacquer": "Gepigmenteerde Lak",
       "glossLevels": "Glansniveaus"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
+          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+        },
+        "installMethod": {
+          "question": "Hoe worden rWood-panelen geïnstalleerd?",
+          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+        },
+        "substrateCleanup": {
+          "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
+          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2328,6 +2520,30 @@
     },
     "downloads": {
       "productDataSheet": "Productfiche"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
+          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+        },
+        "installMethod": {
+          "question": "Hoe worden rWood-panelen geïnstalleerd?",
+          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+        },
+        "substrateCleanup": {
+          "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
+          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2495,6 +2711,30 @@
     },
     "cta2": {
       "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Gerecycleerd"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Is het gerecycleerde PET gecertificeerd?",
+          "answer": "Ja. Alle rPET-panelen zijn OEKO-TEX® Standard 100 gecertificeerd — verifieert de afwezigheid van schadelijke stoffen. VOC-emissies zijn getest op het Franse A+ (de strengste binnenluchtgraad)."
+        },
+        "fireRating": {
+          "question": "Wat is de brandklasse?",
+          "answer": "Alle rPET-panelen zijn beoordeeld op B-s1,d0 volgens EN 13501-1 — de hoogste praktische klasse voor een interieurdecoratief materiaal, op A-klasse na."
+        },
+        "processability": {
+          "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
+          "answer": "Ja. rPET gedraagt zich als MDF op standaard houtbewerkingsmachines: zagen met cirkelzaag of CNC-router, boren met spiraalboren, schilderen met water- of solventgebonden afwerkingen. Geen speciale beschermingsuitrusting nodig."
+        },
+        "colorRange": {
+          "question": "Hoeveel kleuren zijn er beschikbaar?",
+          "answer": "12 designerkleuren zijn op voorraad voor de rPET Groove- en Flex-Groove-lijnen; de rPET Panel-lijn is beschikbaar in 16 kleuren. Aangepaste kleuren kunnen geproduceerd worden voor projecten boven 200 m²."
+        },
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
+        }
+      }
     }
   },
   "legal": {

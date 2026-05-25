@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INNBLÁSTUR",
       "title": "Interior í notkun"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerlitir sendast innan 1–2 vikna; sérsmíðaðar útfærslur taka 3–4 vikur frá pöntunarstaðfestingu. Fyrir verkefni yfir 50 m² gerðu ráð fyrir 4–6 vikum."
+        },
+        "washableCover": {
+          "question": "Er hægt að þvo áklæðið?",
+          "answer": "Já. Áklæðið er aftakanlegt og hægt að þvo í þvottavél við 30 °C. Endurunni textílkjarninn er kyrr inni í plötunni og verður ekki fyrir áhrifum."
+        },
+        "absorptionRating": {
+          "question": "Hver er munurinn á αw 1,0 og NRC 0,95?",
+          "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi stöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvarið. αw 1,0 og NRC 0,95 lýsa sömu Klassi A-frammistöðu."
+        },
+        "breeamLeed": {
+          "question": "Kemur vara þessi til greina fyrir BREEAM- eða LEED-stig?",
+          "answer": "Já. Endurunnið innihald, lágar VOC-losanir og endurmóttökukerfið stuðla að BREEAM Mat 03 og LEED MR stigum. EPD er fáanleg að ósk."
+        },
+        "installMethod": {
+          "question": "Hvernig eru plöturnar settar upp?",
+          "answer": "Interior notar falda einingaskinnu; Solid notar falda króka; Divide stendur sjálfstætt með segul-einingatengingu. Engin sérverkfæri þarf."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INNBLÁSTUR",
       "title": "Solid í notkun"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerlitir sendast innan 1–2 vikna; sérsmíðaðar útfærslur taka 3–4 vikur frá pöntunarstaðfestingu. Fyrir verkefni yfir 50 m² gerðu ráð fyrir 4–6 vikum."
+        },
+        "hookInstall": {
+          "question": "Hvernig virkar krókauppsetningin?",
+          "answer": "Hver Solid plata kemur með falda stálkróka forsetta á bakhliðina. Þeir hanga á skrúfum á láréttri línu — uppsetning á staðlaðri 1200 × 600 plötu tekur innan við fimm mínútur á hverja."
+        },
+        "sizeCustomization": {
+          "question": "Er hægt að sérsníða stærð plötunnar?",
+          "answer": "Já. Sérsniðin breidd og hæð er í boði fyrir verkefni frá 20 m². Lágmarksmagn gildir; hafðu samband fyrir sérsniðið verðtilboð."
+        },
+        "weightPerPanel": {
+          "question": "Hve mikið vegur ein plata?",
+          "answer": "Stöðluð Solid plata 1200 × 600 mm vegur um 4,5 kg. Léttbygging gerir það að verkum að veggfestingar þurfa sjaldan að styrkjast."
+        },
+        "absorptionRating": {
+          "question": "Hver er munurinn á αw 1,0 og NRC 0,95?",
+          "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi stöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvarið. αw 1,0 og NRC 0,95 lýsa sömu Klassi A-frammistöðu."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INNBLÁSTUR",
       "title": "Divide í notkun"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerlitir sendast innan 1–2 vikna; sérsmíðaðar útfærslur taka 3–4 vikur frá pöntunarstaðfestingu. Fyrir verkefni yfir 50 m² gerðu ráð fyrir 4–6 vikum."
+        },
+        "magneticConnection": {
+          "question": "Hvernig virkar segulteningin?",
+          "answer": "Hver Divide skermur hefur neodým-segla innbyggða í kantsniðið. Skermar smella saman enda á enda eða í 90 °, og er hægt að endurraða hvenær sem er án verkfæra."
+        },
+        "dualSidedAbsorption": {
+          "question": "Gleypir Divide hljóð frá báðum hliðum?",
+          "answer": "Já. Byggingin er samhverf og báðar hliðar bjóða upp á jafngilt hljóðísog — gagnlegt í opnum skrifstofum þar sem skermurinn stendur milli tveggja vinnusvæða."
+        },
+        "footStability": {
+          "question": "Hve stöðug er sjálfstæða undirstaðan?",
+          "answer": "Pottjárnsfótur er hlaðinn til að halda skerminum stöðugum upp í 2 m hæð við venjulegar inniaðstæður. Fyrir hærri skerma eða annasamar umferðarleiðir er hægt að tengja plöturnar með segultengingunum til aukinnar stöðugleika."
+        },
+        "sizeCustomization": {
+          "question": "Er hægt að sérsníða stærð plötunnar?",
+          "answer": "Já. Sérsniðin breidd og hæð er í boði fyrir verkefni frá 20 m². Lágmarksmagn gildir; hafðu samband fyrir sérsniðið verðtilboð."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1429,6 +1501,30 @@
     },
     "related": {
       "title": "Tengdar Vörur"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Er endurunna PET-ið vottað?",
+          "answer": "Já. Allar rPET plötur eru OEKO-TEX® Standard 100-vottaðar — staðfestir fjarveru skaðlegra efna. VOC-losanir eru prófaðar gegn franska A+ (ströngustu inneftaftarflokkun)."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Allar rPET plötur eru flokkaðar B-s1,d0 samkvæmt EN 13501-1 — hæsta hagkvæma flokkun fyrir innréttingarefni, fyrir utan A-flokk."
+        },
+        "processability": {
+          "question": "Er hægt að saga, bora eða mála rPET plötur?",
+          "answer": "Já. rPET hagar sér eins og MDF í venjulegum tréiðnaðarvélum: sög með hringsög eða CNC-fræsara, bor með spírabor, mála með vatns- eða leysiefna-byggðum lökkum. Engin sérstök varnarbúnaður þarf."
+        },
+        "colorRange": {
+          "question": "Hve margir litir eru í boði?",
+          "answer": "12 hönnunarlitir eru í lager fyrir rPET Groove og Flex Groove línurnar; rPET Panel línan er fáanleg í 16 litum. Sérsniðnir litir eru framleiddir fyrir verkefni yfir 200 m²."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1616,6 +1712,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Er endurunna PET-ið vottað?",
+          "answer": "Já. Allar rPET plötur eru OEKO-TEX® Standard 100-vottaðar — staðfestir fjarveru skaðlegra efna. VOC-losanir eru prófaðar gegn franska A+ (ströngustu inneftaftarflokkun)."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Allar rPET plötur eru flokkaðar B-s1,d0 samkvæmt EN 13501-1 — hæsta hagkvæma flokkun fyrir innréttingarefni, fyrir utan A-flokk."
+        },
+        "processability": {
+          "question": "Er hægt að saga, bora eða mála rPET plötur?",
+          "answer": "Já. rPET hagar sér eins og MDF í venjulegum tréiðnaðarvélum: sög með hringsög eða CNC-fræsara, bor með spírabor, mála með vatns- eða leysiefna-byggðum lökkum. Engin sérstök varnarbúnaður þarf."
+        },
+        "colorRange": {
+          "question": "Hve margir litir eru í boði?",
+          "answer": "12 hönnunarlitir eru í lager fyrir rPET Groove og Flex Groove línurnar; rPET Panel línan er fáanleg í 16 litum. Sérsniðnir litir eru framleiddir fyrir verkefni yfir 200 m²."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1778,6 +1898,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Europe • FSC® Certified"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Hvaðan kemur FSC-vottaða spónlagið?",
+          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+        },
+        "installMethod": {
+          "question": "Hvernig eru rWood plötur settar upp?",
+          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+        },
+        "substrateCleanup": {
+          "question": "Hvað verður um plöturnar í lok líftímans?",
+          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1933,6 +2077,30 @@
     },
     "cta": {
       "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Hvaðan kemur FSC-vottaða spónlagið?",
+          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+        },
+        "installMethod": {
+          "question": "Hvernig eru rWood plötur settar upp?",
+          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+        },
+        "substrateCleanup": {
+          "question": "Hvað verður um plöturnar í lok líftímans?",
+          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2097,6 +2265,30 @@
       "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
       "pigmentedLacquer": "Litað lakk",
       "glossLevels": "Gljástig"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Hvaðan kemur FSC-vottaða spónlagið?",
+          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+        },
+        "installMethod": {
+          "question": "Hvernig eru rWood plötur settar upp?",
+          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+        },
+        "substrateCleanup": {
+          "question": "Hvað verður um plöturnar í lok líftímans?",
+          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2328,6 +2520,30 @@
     },
     "downloads": {
       "productDataSheet": "Vörugagnablað"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Hvaðan kemur FSC-vottaða spónlagið?",
+          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+        },
+        "installMethod": {
+          "question": "Hvernig eru rWood plötur settar upp?",
+          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+        },
+        "substrateCleanup": {
+          "question": "Hvað verður um plöturnar í lok líftímans?",
+          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2495,6 +2711,30 @@
     },
     "cta2": {
       "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Er endurunna PET-ið vottað?",
+          "answer": "Já. Allar rPET plötur eru OEKO-TEX® Standard 100-vottaðar — staðfestir fjarveru skaðlegra efna. VOC-losanir eru prófaðar gegn franska A+ (ströngustu inneftaftarflokkun)."
+        },
+        "fireRating": {
+          "question": "Hver er eldflokkunin?",
+          "answer": "Allar rPET plötur eru flokkaðar B-s1,d0 samkvæmt EN 13501-1 — hæsta hagkvæma flokkun fyrir innréttingarefni, fyrir utan A-flokk."
+        },
+        "processability": {
+          "question": "Er hægt að saga, bora eða mála rPET plötur?",
+          "answer": "Já. rPET hagar sér eins og MDF í venjulegum tréiðnaðarvélum: sög með hringsög eða CNC-fræsara, bor með spírabor, mála með vatns- eða leysiefna-byggðum lökkum. Engin sérstök varnarbúnaður þarf."
+        },
+        "colorRange": {
+          "question": "Hve margir litir eru í boði?",
+          "answer": "12 hönnunarlitir eru í lager fyrir rPET Groove og Flex Groove línurnar; rPET Panel línan er fáanleg í 16 litum. Sérsniðnir litir eru framleiddir fyrir verkefni yfir 200 m²."
+        },
+        "leadTime": {
+          "question": "Hver er staðlaði afhendingartíminn?",
+          "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
+        }
+      }
     }
   },
   "legal": {

@@ -984,6 +984,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Interior in der Praxis"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfarben werden innerhalb von 1–2 Wochen versendet; individuelle Konfigurationen benötigen 3–4 Wochen ab Auftragsbestätigung. Bei Projekten über 50 m² rechnen Sie mit 4–6 Wochen."
+        },
+        "washableCover": {
+          "question": "Ist der Textilbezug waschbar?",
+          "answer": "Ja. Der Bezug ist abnehmbar und bei 30 °C maschinenwaschbar. Der Kern aus recycelten Textilien verbleibt im Paneel und wird nicht beeinträchtigt."
+        },
+        "absorptionRating": {
+          "question": "Was ist der Unterschied zwischen αw 1.0 und NRC 0.95?",
+          "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Normen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw 1.0 und NRC 0.95 weisen auf dieselbe Klasse-A-Leistung hin."
+        },
+        "breeamLeed": {
+          "question": "Ist dieses Produkt für BREEAM- oder LEED-Punkte geeignet?",
+          "answer": "Ja. Recyclinganteil, geringe VOC-Emissionen und das Rücknahmeprogramm tragen zu BREEAM Mat 03 und LEED MR Punkten bei. Eine EPD ist auf Anfrage erhältlich."
+        },
+        "installMethod": {
+          "question": "Wie werden die Paneele installiert?",
+          "answer": "Interior verwendet eine verdeckte modulare Schiene; Solid arbeitet mit verdeckten Haken; Divide steht frei mit einer magnetischen modularen Verbindung. Spezialwerkzeug ist nicht erforderlich."
+        }
+      }
     }
   },
   "solidPage": {
@@ -1096,6 +1120,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Solid in der Praxis"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfarben werden innerhalb von 1–2 Wochen versendet; individuelle Konfigurationen benötigen 3–4 Wochen ab Auftragsbestätigung. Bei Projekten über 50 m² rechnen Sie mit 4–6 Wochen."
+        },
+        "hookInstall": {
+          "question": "Wie funktioniert die Hakenmontage?",
+          "answer": "Jedes Solid-Paneel wird mit verdeckten Stahlhaken geliefert, die rückseitig vormontiert sind. Sie hängen an Schrauben entlang einer Wasserwaagelinie — die Montage eines Standardpaneels 1200 × 600 dauert pro Stück weniger als fünf Minuten."
+        },
+        "sizeCustomization": {
+          "question": "Können die Paneelmaße individuell angepasst werden?",
+          "answer": "Ja. Maßgeschneiderte Breiten und Höhen sind bei Projekten ab 20 m² verfügbar. Mindestbestellmengen gelten; kontaktieren Sie uns für ein individuelles Angebot."
+        },
+        "weightPerPanel": {
+          "question": "Wie viel wiegt ein Paneel?",
+          "answer": "Ein Standard-Solid-Paneel 1200 × 600 mm wiegt etwa 4,5 kg. Durch die leichte Konstruktion müssen Wandbefestigungen selten verstärkt werden."
+        },
+        "absorptionRating": {
+          "question": "Was ist der Unterschied zwischen αw 1.0 und NRC 0.95?",
+          "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Normen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw 1.0 und NRC 0.95 weisen auf dieselbe Klasse-A-Leistung hin."
+        }
+      }
     }
   },
   "dividePage": {
@@ -1201,6 +1249,30 @@
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Divide in der Praxis"
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfarben werden innerhalb von 1–2 Wochen versendet; individuelle Konfigurationen benötigen 3–4 Wochen ab Auftragsbestätigung. Bei Projekten über 50 m² rechnen Sie mit 4–6 Wochen."
+        },
+        "magneticConnection": {
+          "question": "Wie funktioniert die magnetische Verbindung?",
+          "answer": "Jede Divide-Trennwand hat Neodym-Magnete in das Randprofil eingelassen. Trennwände rasten stirnseitig oder im 90°-Winkel ein und können jederzeit werkzeuglos neu konfiguriert werden."
+        },
+        "dualSidedAbsorption": {
+          "question": "Absorbiert Divide Schall beidseitig?",
+          "answer": "Ja. Die Konstruktion ist symmetrisch, und beide Seiten liefern gleichwertige Absorptionsleistung — nützlich in Großraumbüros, wo die Trennwand zwischen zwei Arbeitsbereichen steht."
+        },
+        "footStability": {
+          "question": "Wie stabil ist der freistehende Fuß?",
+          "answer": "Der gusseiserne Fuß ist beschwert, um die Trennwand bei normalen Innenbedingungen bis zu 2 m Höhe stabil zu halten. Für höhere Wände oder stark frequentierte Bereiche koppeln Sie Paneele über die Magnetverbinder für zusätzliche Stabilität."
+        },
+        "sizeCustomization": {
+          "question": "Können die Paneelmaße individuell angepasst werden?",
+          "answer": "Ja. Maßgeschneiderte Breiten und Höhen sind bei Projekten ab 20 m² verfügbar. Mindestbestellmengen gelten; kontaktieren Sie uns für ein individuelles Angebot."
+        }
+      }
     }
   },
   "rpetGroovePage": {
@@ -1426,6 +1498,30 @@
     },
     "cta2": {
       "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recycelt"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Ist das recycelte PET zertifiziert?",
+          "answer": "Ja. Alle rPET-Paneele sind nach OEKO-TEX® Standard 100 zertifiziert — bestätigt die Schadstofffreiheit. VOC-Emissionen werden auf französische A+-Klasse geprüft (die strengste Raumluftqualitätsstufe)."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Alle rPET-Paneele sind B-s1,d0 nach EN 13501-1 klassifiziert — die höchste praktische Klasse für Innenraum-Dekormaterial unterhalb der A-Klasse."
+        },
+        "processability": {
+          "question": "Können rPET-Paneele geschnitten, gebohrt oder lackiert werden?",
+          "answer": "Ja. rPET verhält sich auf üblichen Holzbearbeitungsmaschinen wie MDF: Schneiden mit Kreissäge oder CNC-Fräse, Bohren mit Spiralbohrern, Lackieren mit Wasser- oder Lösemittellacken. Keine Spezialschutzausrüstung erforderlich."
+        },
+        "colorRange": {
+          "question": "Wie viele Farben sind verfügbar?",
+          "answer": "12 Designerfarben sind für die Linien rPET Groove und Flex Groove auf Lager; die Linie rPET Panel ist in 16 Farben erhältlich. Sonderfarben sind für Projekte ab 200 m² produzierbar."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfarben werden innerhalb von 2–3 Wochen versendet; Sonderfarben benötigen 5–6 Wochen. Großprojekte (>500 m²) werden in Produktionschargen geplant — kontaktieren Sie uns für einen verbindlichen Termin."
+        }
+      }
     }
   },
   "rpetPanelPage": {
@@ -1613,6 +1709,30 @@
     },
     "cta2": {
       "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recyclierbar"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Ist das recycelte PET zertifiziert?",
+          "answer": "Ja. Alle rPET-Paneele sind nach OEKO-TEX® Standard 100 zertifiziert — bestätigt die Schadstofffreiheit. VOC-Emissionen werden auf französische A+-Klasse geprüft (die strengste Raumluftqualitätsstufe)."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Alle rPET-Paneele sind B-s1,d0 nach EN 13501-1 klassifiziert — die höchste praktische Klasse für Innenraum-Dekormaterial unterhalb der A-Klasse."
+        },
+        "processability": {
+          "question": "Können rPET-Paneele geschnitten, gebohrt oder lackiert werden?",
+          "answer": "Ja. rPET verhält sich auf üblichen Holzbearbeitungsmaschinen wie MDF: Schneiden mit Kreissäge oder CNC-Fräse, Bohren mit Spiralbohrern, Lackieren mit Wasser- oder Lösemittellacken. Keine Spezialschutzausrüstung erforderlich."
+        },
+        "colorRange": {
+          "question": "Wie viele Farben sind verfügbar?",
+          "answer": "12 Designerfarben sind für die Linien rPET Groove und Flex Groove auf Lager; die Linie rPET Panel ist in 16 Farben erhältlich. Sonderfarben sind für Projekte ab 200 m² produzierbar."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfarben werden innerhalb von 2–3 Wochen versendet; Sonderfarben benötigen 5–6 Wochen. Großprojekte (>500 m²) werden in Produktionschargen geplant — kontaktieren Sie uns für einen verbindlichen Termin."
+        }
+      }
     }
   },
   "rwoodGroovePage": {
@@ -1775,6 +1895,30 @@
     },
     "cta2": {
       "freeNote": "Kostenlose Muster • Hergestellt in Europa • FSC® zertifiziert"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Woher stammt das FSC-zertifizierte Furnier?",
+          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+        },
+        "installMethod": {
+          "question": "Wie werden rWood-Paneele installiert?",
+          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+        },
+        "substrateCleanup": {
+          "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
+          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+        }
+      }
     }
   },
   "rwoodPerfPage": {
@@ -1930,6 +2074,30 @@
     },
     "cta": {
       "note": "Kostenlose Muster verfügbar • Hergestellt in Europa • FSC® zertifiziert • A2 Brandschutz verfügbar"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Woher stammt das FSC-zertifizierte Furnier?",
+          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+        },
+        "installMethod": {
+          "question": "Wie werden rWood-Paneele installiert?",
+          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+        },
+        "substrateCleanup": {
+          "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
+          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+        }
+      }
     }
   },
   "rwoodMicroPage": {
@@ -2097,6 +2265,30 @@
       "description2": "Vier Perforationsdichten für Ihre akustischen Anforderungen. Von nahezu unsichtbaren Nano-Perforationen bis zu maximaler Absorptions-Micro-L-Mustern — wählen Sie die perfekte Balance zwischen Ästhetik und akustischer Leistung.",
       "pigmentedLacquer": "Pigmentierter Lack",
       "glossLevels": "Glanzstufen"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Woher stammt das FSC-zertifizierte Furnier?",
+          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+        },
+        "installMethod": {
+          "question": "Wie werden rWood-Paneele installiert?",
+          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+        },
+        "substrateCleanup": {
+          "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
+          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+        }
+      }
     }
   },
   "rwoodVeneerPage": {
@@ -2328,6 +2520,30 @@
     },
     "downloads": {
       "productDataSheet": "Produktdatenblatt"
+    },
+    "faq": {
+      "questions": {
+        "fscSource": {
+          "question": "Woher stammt das FSC-zertifizierte Furnier?",
+          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+        },
+        "installMethod": {
+          "question": "Wie werden rWood-Paneele installiert?",
+          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+        },
+        "substrateCleanup": {
+          "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
+          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+        }
+      }
     }
   },
   "rpetFlexGroovePage": {
@@ -2495,6 +2711,30 @@
     },
     "cta2": {
       "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recycelt"
+    },
+    "faq": {
+      "questions": {
+        "oekoTex": {
+          "question": "Ist das recycelte PET zertifiziert?",
+          "answer": "Ja. Alle rPET-Paneele sind nach OEKO-TEX® Standard 100 zertifiziert — bestätigt die Schadstofffreiheit. VOC-Emissionen werden auf französische A+-Klasse geprüft (die strengste Raumluftqualitätsstufe)."
+        },
+        "fireRating": {
+          "question": "Wie ist die Brandklasse?",
+          "answer": "Alle rPET-Paneele sind B-s1,d0 nach EN 13501-1 klassifiziert — die höchste praktische Klasse für Innenraum-Dekormaterial unterhalb der A-Klasse."
+        },
+        "processability": {
+          "question": "Können rPET-Paneele geschnitten, gebohrt oder lackiert werden?",
+          "answer": "Ja. rPET verhält sich auf üblichen Holzbearbeitungsmaschinen wie MDF: Schneiden mit Kreissäge oder CNC-Fräse, Bohren mit Spiralbohrern, Lackieren mit Wasser- oder Lösemittellacken. Keine Spezialschutzausrüstung erforderlich."
+        },
+        "colorRange": {
+          "question": "Wie viele Farben sind verfügbar?",
+          "answer": "12 Designerfarben sind für die Linien rPET Groove und Flex Groove auf Lager; die Linie rPET Panel ist in 16 Farben erhältlich. Sonderfarben sind für Projekte ab 200 m² produzierbar."
+        },
+        "leadTime": {
+          "question": "Wie lang ist die Standard-Lieferzeit?",
+          "answer": "Lagerfarben werden innerhalb von 2–3 Wochen versendet; Sonderfarben benötigen 5–6 Wochen. Großprojekte (>500 m²) werden in Produktionschargen geplant — kontaktieren Sie uns für einen verbindlichen Termin."
+        }
+      }
     }
   },
   "legal": {
