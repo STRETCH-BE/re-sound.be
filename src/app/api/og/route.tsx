@@ -2,15 +2,17 @@ import { ImageResponse } from 'next/og';
 import type { NextRequest } from 'next/server';
 
 /**
- * Dynamic OG image for the sitewide / homepage / non-product pages.
+ * Dynamic OG image — minimal version after v2 still rendered blank.
  *
- * Defensive design notes:
- *   - Solid background, no linear-gradient (Satori on edge runtime
- *     can render gradients as blank in some cases).
- *   - ASCII-only text (no recycle glyphs / middle dots) — Satori
- *     skips glyphs that the default font doesn't ship, and a single
- *     missing glyph can fail the whole render silently on edge.
- *   - System font stack so we never depend on a font being fetched.
+ * The previous attempts (with gradients + fontFamily fallback chain) failed
+ * on Vercel edge. This version strips everything to the basics that the
+ * Next.js docs guarantee works:
+ *   - no `fontFamily` (Satori uses its bundled default)
+ *   - solid background colour (no gradient)
+ *   - `no-store` cache so any earlier blank response is not served from CDN
+ *     while we debug
+ *
+ * Once this is confirmed rendering, we can layer styling back on.
  */
 
 export const runtime = 'edge';
@@ -20,7 +22,7 @@ const DARK = '#0a1628';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const locale = searchParams.get('locale') ?? 'en';
+  const locale = (searchParams.get('locale') ?? 'en').toUpperCase();
   const page = searchParams.get('page') ?? '';
 
   const titleByPage: Record<string, string> = {
@@ -30,11 +32,9 @@ export async function GET(req: NextRequest) {
     sustainability: 'Circular by Design',
     contact: 'Get in Touch',
     faq: 'Frequently Asked Questions',
-    blog: 'Insights & Articles',
+    blog: 'Insights and Articles',
   };
-
   const title = titleByPage[page] || 'Acoustics Made Circular';
-  const tagline = 'Recycled by Origin. Circular by Design.';
 
   return new ImageResponse(
     (
@@ -46,34 +46,22 @@ export async function GET(req: NextRequest) {
           flexDirection: 'column',
           justifyContent: 'space-between',
           padding: '64px 80px',
-          backgroundColor: BRAND,
-          backgroundImage: `linear-gradient(135deg, ${BRAND} 0%, ${DARK} 100%)`,
-          color: '#ffffff',
-          fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
+          background: BRAND,
+          color: 'white',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+          <div style={{ fontSize: 44, fontWeight: 800 }}>Re-Sound</div>
           <div
             style={{
-              fontSize: 40,
-              fontWeight: 800,
-              letterSpacing: '-0.02em',
-            }}
-          >
-            Re-Sound
-          </div>
-          <div
-            style={{
-              padding: '6px 14px',
-              border: '2px solid rgba(255,255,255,0.5)',
+              padding: '6px 16px',
+              border: '2px solid white',
               borderRadius: 999,
-              fontSize: 18,
-              fontWeight: 500,
-              letterSpacing: '0.08em',
-              textTransform: 'uppercase',
+              fontSize: 20,
+              fontWeight: 600,
             }}
           >
-            {locale.toUpperCase()}
+            {locale}
           </div>
         </div>
 
@@ -82,9 +70,7 @@ export async function GET(req: NextRequest) {
             style={{
               fontSize: 88,
               fontWeight: 800,
-              letterSpacing: '-0.03em',
               lineHeight: 1.05,
-              maxWidth: 1000,
             }}
           >
             {title}
@@ -93,11 +79,10 @@ export async function GET(req: NextRequest) {
             style={{
               marginTop: 24,
               fontSize: 28,
-              fontWeight: 400,
               opacity: 0.9,
             }}
           >
-            {tagline}
+            Recycled by Origin. Circular by Design.
           </div>
         </div>
 
@@ -105,13 +90,12 @@ export async function GET(req: NextRequest) {
           style={{
             display: 'flex',
             justifyContent: 'space-between',
-            alignItems: 'flex-end',
             fontSize: 22,
-            opacity: 0.8,
+            opacity: 0.85,
           }}
         >
           <div>re-sound.be</div>
-          <div>Recycled input / Made in Europe / Free take-back</div>
+          <div>Free take-back program</div>
         </div>
       </div>
     ),
@@ -119,7 +103,10 @@ export async function GET(req: NextRequest) {
       width: 1200,
       height: 630,
       headers: {
-        'Cache-Control': 'public, max-age=86400, s-maxage=604800',
+        // `no-store` while debugging — bypasses Vercel's CDN so any change
+        // here is reflected on the next request. Tighten to a real cache
+        // policy once this is confirmed rendering.
+        'Cache-Control': 'no-store, max-age=0',
       },
     }
   );
