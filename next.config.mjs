@@ -21,13 +21,34 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
     // Default deviceSizes and imageSizes cover this site's responsive needs
   },
-  
+
   // Strict mode for better development
   reactStrictMode: true,
-  
+
   // Environment variables available to the browser
   env: {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be',
+  },
+
+  // Platform-level redirect for the bare root URL.
+  //
+  // The next-intl middleware should redirect '/' to '/en' on its own, but
+  // on this deployment it isn't (likely a Vercel platform-routing quirk
+  // on the `new.re-sound.be` subdomain). Adding the redirect here makes
+  // Vercel handle it at the edge before any application code runs —
+  // guaranteed to work regardless of middleware state.
+  //
+  // Once the site lives at `re-sound.be` proper, you can leave this in
+  // place: a hard root → /en redirect is the right behaviour for the
+  // 10-locale setup either way.
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: false,
+      },
+    ];
   },
 };
 
