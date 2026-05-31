@@ -16,13 +16,13 @@ import type { NextRequest } from 'next/server';
  *   /api/og?page=products                  → products-listing layout
  *   /api/og?page=about|sustainability|...  → page-specific titles
  *   /api/og?product=rwood-groove           → product-specific layout
- *   /api/og?product=solo-flex              → STRETCH-branded booth layout
  *
  * All variants accept ?locale=en|nl|fr|de|... for the locale badge.
  *
- * Brand override: products with `brand: 'STRETCH'` (the booth family)
- * render with the STRETCH wordmark instead of Re-Sound. Kept as a single
- * route so we don't fragment OG infra across brands.
+ * Product families are colour-themed: textile uses the brand blue,
+ * rWood a warm brown, rPET a sustainability green, and booths the
+ * Re-Sound deep blue (sibling to brand blue, distinct enough to read
+ * as a separate range at a glance).
  */
 
 export const runtime = 'edge';
@@ -32,8 +32,6 @@ interface ProductMeta {
   category: string;
   spec: string;
   family: 'textile' | 'rwood' | 'rpet' | 'booth';
-  /** Wordmark override — defaults to "Re-Sound" if absent */
-  brand?: string;
 }
 
 const PRODUCTS: Record<string, ProductMeta> = {
@@ -47,17 +45,17 @@ const PRODUCTS: Record<string, ProductMeta> = {
   'rpet-panel':       { name: 'rPET Panel',       category: 'Flat recycled-PET acoustic panels',     spec: '100% recycled PET / OEKO-TEX',               family: 'rpet'    },
   'rpet-groove':      { name: 'rPET Groove',      category: 'Grooved recycled-PET panels',           spec: '12 colors / 3 thicknesses / B-s1,d0',        family: 'rpet'    },
   'rpet-flex-groove': { name: 'rPET Flex Groove', category: 'Flexible recycled-PET panels',          spec: 'Bendable / OEKO-TEX / Made in Belgium',     family: 'rpet'    },
-  // ---- STRETCH white-label soundbooth range ----
-  'solo-flex':        { name: 'Solo Flex',        category: 'Single-person soundbooth',              spec: '24 dB(A) reduction / 1 m² / 5yr warranty',    family: 'booth',  brand: 'STRETCH' },
-  'duo':              { name: 'Duo',              category: 'Two-configuration soundbooth',          spec: '26 dB(A) / Flex + Work modes / 5yr',          family: 'booth',  brand: 'STRETCH' },
-  'modular-xl':       { name: 'Modular XL',       category: 'Scalable meeting pod',                  spec: '25.9 dB(A) / Up to 10 people / Modular',      family: 'booth',  brand: 'STRETCH' },
+  // ---- Re-Sound soundbooth range ----
+  'solo-flex':        { name: 'Solo Flex',        category: 'Single-person acoustic soundbooth',     spec: '24 dB(A) reduction / 1 m² / 5yr warranty',    family: 'booth'   },
+  'duo':              { name: 'Duo',              category: 'Two-configuration acoustic soundbooth', spec: '26 dB(A) / Flex + Work modes / 5yr',          family: 'booth'   },
+  'modular-xl':       { name: 'Modular XL',       category: 'Scalable acoustic meeting pod',         spec: '25.9 dB(A) / Up to 10 people / Modular',      family: 'booth'   },
 };
 
 const FAMILY_BG: Record<ProductMeta['family'], string> = {
-  textile: '#197FC7',
-  rwood:   '#8b6235',
-  rpet:    '#2e8a6f',
-  booth:   '#14110D',
+  textile: '#197FC7', // brand blue
+  rwood:   '#8b6235', // warm wood
+  rpet:    '#2e8a6f', // sustainability green
+  booth:   '#0d3a5c', // deep blue (Re-Sound family, distinct from textile)
 };
 
 const PAGE_TITLES: Record<string, string> = {
@@ -82,9 +80,6 @@ export async function GET(req: NextRequest) {
   const bg = isProductVariant
     ? FAMILY_BG[product!.family]
     : '#197FC7';
-
-  // Wordmark — STRETCH for booth products, Re-Sound for everything else
-  const brand = product?.brand ?? 'Re-Sound';
 
   // For product variant: category label + product name + spec line
   // For page variant:    title + sitewide tagline
@@ -113,7 +108,7 @@ export async function GET(req: NextRequest) {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-          <div style={{ fontSize: 44, fontWeight: 800 }}>{brand}</div>
+          <div style={{ fontSize: 44, fontWeight: 800 }}>Re-Sound</div>
           <div
             style={{
               padding: '6px 16px',
