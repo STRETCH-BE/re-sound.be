@@ -53,7 +53,7 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
   const fullTitle = tMeta('soloFlexTitle');
-  const cleanName = fullTitle.replace(/\s*\|\s*STRETCH\s*$/, '');
+  const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('soloFlexDescription');
 
   const tProducts = await getTranslations({ locale, namespace: 'products' });
@@ -101,7 +101,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       <JsonLd
         data={breadcrumbSchema([
-          { name: 'STRETCH', url: `/${locale}` },
+          { name: 'Re-Sound', url: `/${locale}` },
           { name: tProducts('pageTitle'), url: `/${locale}/products` },
           { name: cleanName, url: `/${locale}/products/solo-flex` },
         ])}
