@@ -1065,7 +1065,12 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         }
         .cta-content { max-width: 720px; margin: 0 auto; }
         .cta-content h2 { color: white; font-size: 3rem; margin-bottom: 1rem; }
-        .cta-content > p { font-size: 1.15rem; opacity: 0.95; margin-bottom: 2.5rem; line-height: 1.75; }
+        .cta-content > p {
+          font-size: 1.15rem;
+          color: rgba(255, 255, 255, 0.92);
+          margin-bottom: 2.5rem;
+          line-height: 1.75;
+        }
         .cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
 
         :global(.booth-product-page) .cta-section :global(.btn-primary) { background: white; color: var(--brand-blue); }
@@ -1073,7 +1078,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         :global(.booth-product-page) .cta-section :global(.btn-secondary) { color: white; border-color: white; }
         :global(.booth-product-page) .cta-section :global(.btn-secondary:hover) { background: white; color: var(--brand-blue); }
 
-        .cta-note { font-size: 0.9rem; opacity: 0.85; }
+        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.78); }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
