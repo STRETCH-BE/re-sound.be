@@ -9,7 +9,7 @@ export default function Footer() {
   const tNav = useTranslations('nav');
 
   // Product names are brand identifiers and stay untranslated (per brand guidelines).
-  // Order: textile family, then rWood family, then rPET family.
+  // Order: textile family, rWood family, rPET family, then booth range.
   const productLinks = [
     { href: '/products/interior',         label: 'Interior' },
     { href: '/products/solid',            label: 'Solid' },
@@ -21,6 +21,9 @@ export default function Footer() {
     { href: '/products/rpet-panel',       label: 'rPET Panel' },
     { href: '/products/rpet-groove',      label: 'rPET Groove' },
     { href: '/products/rpet-flex-groove', label: 'rPET Flex Groove' },
+    { href: '/products/solo-flex',        label: 'Solo Flex' },
+    { href: '/products/duo',              label: 'Duo' },
+    { href: '/products/modular-xl',       label: 'Modular XL' },
     { href: '/products',                  label: t('allProducts') },
   ];
 
