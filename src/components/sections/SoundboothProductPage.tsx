@@ -8,17 +8,18 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 /**
- * Shared template for STRETCH white-label soundbooth product pages.
+ * Shared template for the Re-Sound soundbooth product pages.
  *
  * Each booth (Solo Flex, Duo, Modular XL) sets a translation namespace,
  * a slug, and per-product options (e.g. configurations for Duo). The shared
- * layout — hero → nav → overview → acoustics → use cases → specs → add-ons →
- * downloads → FAQ → CTA — comes from this template, identical to the
- * Re-Sound product-page architecture but themed in the STRETCH palette.
+ * layout — hero -> nav -> overview -> acoustics -> use cases -> specs ->
+ * add-ons -> downloads -> FAQ -> CTA — comes from this template.
  *
- * NB: brand vars (--stretch-*) are local to this component so they don't
- * collide with the Re-Sound globals.css variables, keeping the two brands
- * cleanly separated even though they share the codebase.
+ * Visual identity: pulls from globals.css design tokens so the booth pages
+ * read as part of the Re-Sound product family — same brand blue, pill
+ * buttons, Syne/DM Sans typography, cream/blue-pale section backgrounds.
+ * All booths render under the Re-Sound brand, sharing the same visual
+ * tokens as the panel range.
  */
 
 export interface BoothSpecRow {
@@ -194,8 +195,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     }
   };
 
-  // Currently selected configuration (Duo only). Image source defaults to hero
-  // if no config picked.
   const activeConfigObj = configurations?.find((c) => c.id === activeConfig);
   const displayHero = activeConfigObj?.image ?? heroImage;
 
@@ -245,10 +244,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
               style={{ objectFit: 'cover' }}
               priority
             />
-            <div className="hero-badge">
-              <span className="hero-badge-eyebrow">{tShared('hero.badgeEyebrow')}</span>
-              <span className="hero-badge-text">{t('hero.badge')}</span>
-            </div>
           </div>
         </div>
       </section>
@@ -414,30 +409,25 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
 
           <div className="growth-visualiser">
             <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Modular growth diagram">
-              {/* Base unit */}
               <g>
                 <rect x="40" y="80" width="240" height="160" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.45)" strokeWidth="2" />
                 <text x="160" y="170" textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="14" fontWeight="600">{t('modular.baseLabel')}</text>
                 <text x="160" y="190" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontSize="11">240 × 180 cm</text>
                 <text x="160" y="265" textAnchor="middle" fill="rgba(255,255,255,0.7)" fontSize="11" letterSpacing="2">{t('modular.baseTag')}</text>
               </g>
-              {/* + segment 1 */}
               <g>
                 <rect x="290" y="80" width="90" height="160" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.3)" strokeDasharray="4 4" strokeWidth="1.5" />
                 <text x="335" y="170" textAnchor="middle" fill="rgba(255,255,255,0.7)" fontSize="20" fontWeight="700">+</text>
                 <text x="335" y="190" textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize="10">90 cm</text>
               </g>
-              {/* + segment 2 */}
               <g>
                 <rect x="390" y="80" width="90" height="160" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.22)" strokeDasharray="4 4" strokeWidth="1.5" />
                 <text x="435" y="170" textAnchor="middle" fill="rgba(255,255,255,0.55)" fontSize="20" fontWeight="700">+</text>
                 <text x="435" y="190" textAnchor="middle" fill="rgba(255,255,255,0.4)" fontSize="10">90 cm</text>
               </g>
-              {/* + ellipsis */}
               <g>
                 <text x="520" y="170" textAnchor="middle" fill="rgba(255,255,255,0.4)" fontSize="28" fontWeight="700">…</text>
               </g>
-              {/* arrow */}
               <g>
                 <line x1="40" y1="50" x2="640" y2="50" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" />
                 <polygon points="640,50 634,46 634,54" fill="rgba(255,255,255,0.4)" />
@@ -605,94 +595,79 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
       </section>
 
       {/* ========== STYLES ==========
-          STRETCH white-label palette — kept local to this component so it
-          doesn't leak into Re-Sound globals. Cream backgrounds + deep ink +
-          rust accent (distinct from Re-Sound's #197FC7 blue). */}
+          Pulls from globals.css design tokens (--brand-blue, --deep-blue,
+          --cream, --font-heading, --radius-full etc.) so the booth pages
+          read as part of the same Re-Sound product family. No local brand
+          overrides — visual identity inherits from the rest of the site. */}
       <style jsx>{`
-        .booth-product-page {
-          --stretch-ink:      #14110D;
-          --stretch-ink-2:    #2A251E;
-          --stretch-cream:    #F5F3EE;
-          --stretch-cream-2:  #EEEAE0;
-          --stretch-paper:    #FAF8F4;
-          --stretch-rust:     #B8341A;
-          --stretch-rust-d:   #8C2614;
-          --stretch-muted:    #6B6357;
-          --stretch-line:     rgba(20, 17, 13, 0.12);
-
-          background: var(--stretch-paper);
-          color: var(--stretch-ink);
-        }
-
         /* ===== HERO ===== */
         .product-hero {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 4rem;
           padding: 8rem 4rem 4rem;
-          background: var(--stretch-cream);
+          background: linear-gradient(135deg, var(--brand-blue-pale) 0%, white 100%);
           min-height: 80vh;
           align-items: center;
         }
         .product-tag {
           display: inline-block;
+          background: var(--brand-blue);
+          color: white;
           font-size: 0.75rem;
           font-weight: 600;
-          color: var(--stretch-rust);
-          letter-spacing: 2px;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
           text-transform: uppercase;
-          margin-bottom: 1.25rem;
+          letter-spacing: 1px;
+          margin-bottom: 1rem;
         }
         .hero-content h1 {
           font-size: 4.5rem;
-          color: var(--stretch-ink);
-          line-height: 1;
-          margin-bottom: 0.75rem;
+          color: var(--deep-blue);
+          margin-bottom: 0.5rem;
           letter-spacing: -2px;
-          font-family: var(--font-heading, 'Syne', sans-serif);
+          font-family: var(--font-heading);
+          line-height: 1;
         }
         .hero-tagline {
-          font-size: 1.4rem;
-          color: var(--stretch-ink-2);
-          font-style: italic;
+          font-size: 1.5rem;
+          color: var(--brand-blue);
+          font-weight: 500;
           margin-bottom: 1.5rem;
-          font-weight: 400;
         }
         .hero-description {
-          font-size: 1.05rem;
-          color: var(--stretch-muted);
-          line-height: 1.75;
-          margin-bottom: 2.25rem;
+          font-size: 1.1rem;
+          color: #555;
+          line-height: 1.8;
+          margin-bottom: 2rem;
           max-width: 500px;
         }
         .hero-stats {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 0;
-          margin-bottom: 2.25rem;
-          border-top: 1px solid var(--stretch-line);
-          border-bottom: 1px solid var(--stretch-line);
+          gap: 1.5rem;
+          margin-bottom: 2rem;
           padding: 1.5rem 0;
+          border-top: 1px solid rgba(25, 127, 199, 0.18);
+          border-bottom: 1px solid rgba(25, 127, 199, 0.18);
         }
-        .hero-stat {
-          display: flex;
-          flex-direction: column;
-          padding-right: 1rem;
-        }
-        .hero-stat + .hero-stat { border-left: 1px solid var(--stretch-line); padding-left: 1rem; }
+        .hero-stat { display: flex; flex-direction: column; }
         .hero-stat-value {
           font-size: 2rem;
           font-weight: 700;
-          color: var(--stretch-ink);
+          color: var(--deep-blue);
           letter-spacing: -0.5px;
           margin-bottom: 0.25rem;
-          font-family: var(--font-heading, 'Syne', sans-serif);
+          font-family: var(--font-heading);
+          line-height: 1;
         }
         .hero-stat-label {
           font-size: 0.75rem;
-          color: var(--stretch-muted);
+          color: var(--brand-blue);
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 1.5px;
+          font-weight: 600;
         }
         .hero-ctas { display: flex; gap: 1rem; }
 
@@ -700,68 +675,51 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           display: inline-flex;
           align-items: center;
           padding: 1rem 2rem;
-          background: var(--stretch-ink);
+          background: var(--brand-blue);
           color: white;
           text-decoration: none;
-          border-radius: 0;
+          border-radius: var(--radius-full);
           font-weight: 600;
-          font-size: 0.9rem;
-          letter-spacing: 0.5px;
-          transition: background 0.2s ease;
+          font-size: 0.95rem;
+          transition: all var(--transition-normal, 0.3s ease);
           border: none;
           cursor: pointer;
         }
-        :global(.booth-product-page) :global(.btn-primary:hover) { background: var(--stretch-rust); }
-        :global(.booth-product-page) :global(.btn-primary.large) { padding: 1.25rem 2.5rem; font-size: 1rem; }
+        :global(.booth-product-page) :global(.btn-primary:hover) {
+          background: var(--brand-blue-dark);
+          transform: translateY(-3px);
+          box-shadow: 0 15px 40px rgba(25, 127, 199, 0.3);
+        }
+        :global(.booth-product-page) :global(.btn-primary.large) { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
 
         :global(.booth-product-page) :global(.btn-secondary) {
           display: inline-flex;
           align-items: center;
           padding: 1rem 2rem;
           background: transparent;
-          color: var(--stretch-ink);
+          color: var(--brand-blue);
           text-decoration: none;
-          border-radius: 0;
+          border-radius: var(--radius-full);
           font-weight: 600;
-          font-size: 0.9rem;
-          letter-spacing: 0.5px;
-          border: 1.5px solid var(--stretch-ink);
-          transition: all 0.2s ease;
+          font-size: 0.95rem;
+          border: 2px solid var(--brand-blue);
+          transition: all var(--transition-normal, 0.3s ease);
           cursor: pointer;
         }
-        :global(.booth-product-page) :global(.btn-secondary:hover) { background: var(--stretch-ink); color: white; }
-        :global(.booth-product-page) :global(.btn-secondary.large) { padding: 1.25rem 2.5rem; font-size: 1rem; }
+        :global(.booth-product-page) :global(.btn-secondary:hover) {
+          background: var(--brand-blue);
+          color: white;
+        }
+        :global(.booth-product-page) :global(.btn-secondary.large) { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
 
         .hero-image { position: relative; }
         .hero-image .image-container {
           position: relative;
           aspect-ratio: 4 / 5;
-          background: var(--stretch-cream-2);
+          background: var(--cream);
           overflow: hidden;
-        }
-        .hero-badge {
-          position: absolute;
-          bottom: 1.5rem;
-          left: 1.5rem;
-          background: rgba(20, 17, 13, 0.92);
-          color: white;
-          padding: 1rem 1.25rem;
-          backdrop-filter: blur(8px);
-          max-width: 260px;
-        }
-        .hero-badge-eyebrow {
-          display: block;
-          font-size: 0.65rem;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          opacity: 0.65;
-          margin-bottom: 0.35rem;
-        }
-        .hero-badge-text {
-          display: block;
-          font-size: 0.95rem;
-          font-weight: 500;
-          line-height: 1.4;
+          border-radius: var(--radius-md);
+          box-shadow: 0 30px 80px rgba(13, 58, 92, 0.15);
         }
 
         /* ===== STICKY NAV ===== */
@@ -769,9 +727,9 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           position: sticky;
           top: 0;
           z-index: 50;
-          background: rgba(245, 243, 238, 0.96);
+          background: rgba(255, 255, 255, 0.95);
           backdrop-filter: blur(12px);
-          border-bottom: 1px solid var(--stretch-line);
+          border-bottom: 1px solid rgba(13, 58, 92, 0.08);
         }
         .nav-inner {
           display: flex;
@@ -786,37 +744,42 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           background: none;
           border: none;
           border-bottom: 2px solid transparent;
-          font-size: 0.85rem;
-          letter-spacing: 0.5px;
-          color: var(--stretch-muted);
+          font-size: 0.9rem;
+          color: #666;
           font-weight: 500;
           cursor: pointer;
           white-space: nowrap;
-          transition: all 0.2s ease;
+          transition: all var(--transition-fast, 0.2s ease);
+          font-family: var(--font-body);
         }
-        .nav-item:hover { color: var(--stretch-ink); }
-        .nav-item.active { color: var(--stretch-ink); border-bottom-color: var(--stretch-rust); }
+        .nav-item:hover { color: var(--deep-blue); }
+        .nav-item.active { color: var(--brand-blue); border-bottom-color: var(--brand-blue); }
 
         /* ===== SECTIONS ===== */
         .content-section { padding: 6rem 4rem; }
-        .content-section.dark { background: var(--stretch-ink); color: var(--stretch-cream); }
+        .content-section.dark {
+          background: linear-gradient(135deg, var(--deep-blue) 0%, #0a1628 100%);
+          color: white;
+        }
         .section-tag {
           display: inline-block;
-          font-size: 0.75rem;
+          font-size: 0.85rem;
           font-weight: 600;
-          color: var(--stretch-rust);
+          color: var(--brand-blue);
           letter-spacing: 2px;
           text-transform: uppercase;
           margin-bottom: 1rem;
         }
-        .section-tag.light { color: rgba(245, 243, 238, 0.85); }
+        .section-tag.light { color: var(--brand-blue-light); }
         .content-section h2 {
-          font-size: 2.75rem;
+          font-size: 3rem;
+          color: var(--deep-blue);
           letter-spacing: -1px;
           line-height: 1.1;
           margin-bottom: 1rem;
-          font-family: var(--font-heading, 'Syne', sans-serif);
+          font-family: var(--font-heading);
         }
+        .content-section.dark h2 { color: white; }
         .section-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -828,10 +791,12 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         .section-image .image-container {
           position: relative;
           aspect-ratio: 4 / 5;
-          background: var(--stretch-cream-2);
+          background: var(--cream);
           overflow: hidden;
+          border-radius: var(--radius-md);
+          box-shadow: 0 20px 60px rgba(13, 58, 92, 0.12);
         }
-        .section-content .lead { font-size: 1.15rem; color: var(--stretch-muted); line-height: 1.75; margin-bottom: 1.75rem; }
+        .section-content .lead { font-size: 1.15rem; color: #555; line-height: 1.75; margin-bottom: 1.75rem; }
 
         .feature-list { list-style: none; padding: 0; margin: 0; }
         .feature-list li {
@@ -840,191 +805,275 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           gap: 0.75rem;
           padding: 0.6rem 0;
           font-size: 1rem;
-          color: var(--stretch-ink-2);
+          color: #444;
         }
         .check {
           flex-shrink: 0;
-          width: 22px;
-          height: 22px;
-          background: var(--stretch-ink);
+          width: 24px;
+          height: 24px;
+          background: var(--brand-blue);
           color: white;
           border-radius: 50%;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          font-size: 0.7rem;
+          font-size: 0.75rem;
           font-weight: 700;
         }
 
         /* ===== ACOUSTICS ===== */
         .acoustics-header { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
-        .acoustics-header p { font-size: 1.1rem; opacity: 0.8; line-height: 1.75; }
-        .acoustics-visual { display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .acoustics-header p { font-size: 1.1rem; opacity: 0.85; line-height: 1.75; }
+        .acoustics-visual {
+          display: grid;
+          grid-template-columns: 320px 1fr;
+          gap: 3rem;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
         .absorption-rating { text-align: center; }
         .rating-circle {
           width: 220px;
           height: 220px;
           border-radius: 50%;
-          background: var(--stretch-rust);
+          background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%);
           color: white;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           margin: 0 auto 1.25rem;
-          box-shadow: 0 20px 60px rgba(184, 52, 26, 0.35);
+          box-shadow: 0 20px 60px rgba(25, 127, 199, 0.4);
         }
-        .rating-value { font-size: 3.5rem; font-weight: 700; line-height: 1; font-family: var(--font-heading, 'Syne', sans-serif); }
+        .rating-value { font-size: 3.5rem; font-weight: 700; line-height: 1; font-family: var(--font-heading); }
         .rating-unit { font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 0.4rem; opacity: 0.9; }
-        .absorption-rating p { font-size: 0.95rem; opacity: 0.75; max-width: 260px; margin: 0 auto; }
+        .absorption-rating p { font-size: 0.95rem; opacity: 0.85; max-width: 260px; margin: 0 auto; }
 
         .acoustics-benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-        .benefit { background: rgba(255, 255, 255, 0.05); padding: 1.75rem; border-left: 2px solid var(--stretch-rust); }
+        .benefit {
+          background: rgba(255, 255, 255, 0.06);
+          padding: 1.75rem;
+          border-radius: var(--radius-md);
+          border-top: 3px solid var(--brand-blue);
+        }
         .benefit-icon { font-size: 1.75rem; display: block; margin-bottom: 0.75rem; }
-        .benefit h4 { font-size: 1.05rem; margin-bottom: 0.5rem; font-family: var(--font-heading, 'Syne', sans-serif); }
-        .benefit p { font-size: 0.9rem; opacity: 0.75; line-height: 1.65; }
+        .benefit h4 { font-size: 1.05rem; margin-bottom: 0.5rem; font-family: var(--font-heading); color: white; }
+        .benefit p { font-size: 0.9rem; opacity: 0.8; line-height: 1.65; }
 
         /* ===== CONFIGURATIONS ===== */
+        .configurations-section { background: var(--cream); }
         .configurations-header { text-align: center; max-width: 720px; margin: 0 auto 2.5rem; }
-        .configurations-header p { font-size: 1.1rem; color: var(--stretch-muted); line-height: 1.75; }
-        .config-switcher { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 3rem; }
+        .configurations-header p { font-size: 1.1rem; color: #555; line-height: 1.75; }
+        .config-switcher { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 3rem; flex-wrap: wrap; }
         .config-tab {
           display: flex;
           align-items: center;
-          gap: 1rem;
-          padding: 1rem 2rem;
-          background: transparent;
-          border: 1.5px solid var(--stretch-line);
+          gap: 0.85rem;
+          padding: 0.85rem 1.75rem;
+          background: white;
+          border: 2px solid rgba(13, 58, 92, 0.12);
+          border-radius: var(--radius-full);
           cursor: pointer;
-          transition: all 0.25s ease;
-          color: var(--stretch-ink);
+          transition: all var(--transition-normal, 0.3s ease);
+          color: var(--deep-blue);
+          font-family: var(--font-body);
         }
-        .config-tab:hover { border-color: var(--stretch-ink); }
-        .config-tab.active { background: var(--stretch-ink); color: white; border-color: var(--stretch-ink); }
+        .config-tab:hover { border-color: var(--brand-blue); }
+        .config-tab.active { background: var(--brand-blue); color: white; border-color: var(--brand-blue); box-shadow: 0 8px 24px rgba(25, 127, 199, 0.25); }
         .config-letter {
-          width: 36px;
-          height: 36px;
+          width: 32px;
+          height: 32px;
           border-radius: 50%;
-          background: var(--stretch-rust);
-          color: white;
+          background: var(--brand-blue-pale);
+          color: var(--brand-blue);
           display: inline-flex;
           align-items: center;
           justify-content: center;
           font-weight: 700;
-          font-size: 1rem;
-          font-family: var(--font-heading, 'Syne', sans-serif);
+          font-size: 0.95rem;
+          font-family: var(--font-heading);
         }
-        .config-name { font-weight: 600; font-size: 1rem; letter-spacing: 0.5px; }
+        .config-tab.active .config-letter { background: rgba(255, 255, 255, 0.25); color: white; }
+        .config-name { font-weight: 600; font-size: 0.95rem; }
         .config-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1400px; margin: 0 auto; align-items: center; }
-        .config-image .image-container { position: relative; aspect-ratio: 4 / 5; background: var(--stretch-cream-2); }
-        .config-text h3 { font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-heading, 'Syne', sans-serif); }
-        .config-text > p { font-size: 1.05rem; color: var(--stretch-muted); margin-bottom: 1.5rem; line-height: 1.75; }
-        .config-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--stretch-line); }
-        .meta-label { display: block; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--stretch-muted); margin-bottom: 0.3rem; }
-        .meta-value { font-size: 0.95rem; font-weight: 600; color: var(--stretch-ink); }
+        .config-image .image-container { position: relative; aspect-ratio: 4 / 5; background: white; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 20px 60px rgba(13, 58, 92, 0.12); }
+        .config-text h3 { font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-heading); color: var(--deep-blue); }
+        .config-text > p { font-size: 1.05rem; color: #555; margin-bottom: 1.5rem; line-height: 1.75; }
+        .config-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(13, 58, 92, 0.1); }
+        .meta-label { display: block; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--brand-blue); margin-bottom: 0.3rem; font-weight: 600; }
+        .meta-value { font-size: 0.95rem; font-weight: 600; color: var(--deep-blue); }
 
         /* ===== MODULAR / GROWTH ===== */
         .modular-header { text-align: center; max-width: 760px; margin: 0 auto 3rem; }
-        .modular-header p { font-size: 1.1rem; opacity: 0.8; line-height: 1.75; }
-        .growth-visualiser { max-width: 1000px; margin: 0 auto 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.03); }
+        .modular-header p { font-size: 1.1rem; opacity: 0.85; line-height: 1.75; }
+        .growth-visualiser {
+          max-width: 1000px;
+          margin: 0 auto 3rem;
+          padding: 2rem;
+          background: rgba(255, 255, 255, 0.04);
+          border-radius: var(--radius-md);
+        }
         .growth-visualiser svg { width: 100%; height: auto; }
         .modular-scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .scenario { background: rgba(255, 255, 255, 0.05); padding: 2rem; border-left: 2px solid var(--stretch-rust); }
-        .scenario-size { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--stretch-rust); display: block; margin-bottom: 0.75rem; }
-        .scenario h4 { font-size: 1.15rem; margin-bottom: 0.5rem; font-family: var(--font-heading, 'Syne', sans-serif); }
-        .scenario p { font-size: 0.9rem; opacity: 0.75; line-height: 1.65; }
+        .scenario {
+          background: rgba(255, 255, 255, 0.06);
+          padding: 2rem;
+          border-radius: var(--radius-md);
+          border-top: 3px solid var(--brand-blue);
+        }
+        .scenario-size { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--brand-blue-light); display: block; margin-bottom: 0.75rem; font-weight: 600; }
+        .scenario h4 { font-size: 1.15rem; margin-bottom: 0.5rem; font-family: var(--font-heading); color: white; }
+        .scenario p { font-size: 0.9rem; opacity: 0.8; line-height: 1.65; }
 
         /* ===== FEATURES GRID ===== */
+        .features-section { background: white; }
         .features-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
         .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
-        .feature-card { background: var(--stretch-cream); padding: 2rem; border-left: 2px solid var(--stretch-ink); }
-        .feature-icon { font-size: 1.75rem; display: block; margin-bottom: 1rem; }
-        .feature-card h4 { font-size: 1.15rem; margin-bottom: 0.6rem; font-family: var(--font-heading, 'Syne', sans-serif); }
-        .feature-card p { font-size: 0.95rem; color: var(--stretch-muted); line-height: 1.7; }
+        .feature-card {
+          background: var(--cream);
+          padding: 2rem;
+          border-radius: var(--radius-md);
+          transition: transform var(--transition-normal, 0.3s ease), box-shadow var(--transition-normal, 0.3s ease);
+        }
+        .feature-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 20px 50px rgba(13, 58, 92, 0.1);
+        }
+        .feature-icon {
+          font-size: 1.5rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          background: var(--brand-blue-pale);
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        }
+        .feature-card h4 { font-size: 1.15rem; margin-bottom: 0.6rem; font-family: var(--font-heading); color: var(--deep-blue); }
+        .feature-card p { font-size: 0.95rem; color: #555; line-height: 1.7; }
 
         /* ===== SPECS ===== */
+        .specs-section { background: var(--cream); }
         .specs-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
         .specs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
-        .spec-card { background: var(--stretch-cream); padding: 1.75rem; border-top: 3px solid var(--stretch-ink); }
-        .spec-card h4 { font-size: 1.05rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1.5px; font-family: var(--font-heading, 'Syne', sans-serif); }
+        .spec-card {
+          background: white;
+          padding: 1.75rem;
+          border-radius: var(--radius-md);
+          border-top: 3px solid var(--brand-blue);
+          box-shadow: 0 4px 12px rgba(13, 58, 92, 0.04);
+        }
+        .spec-card h4 { font-size: 1.05rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1.5px; font-family: var(--font-heading); color: var(--deep-blue); }
         .spec-card table { width: 100%; border-collapse: collapse; }
         .spec-card td {
           padding: 0.65rem 0;
           font-size: 0.92rem;
-          border-bottom: 1px solid var(--stretch-line);
+          border-bottom: 1px solid rgba(13, 58, 92, 0.08);
           vertical-align: top;
         }
-        .spec-card td:first-child { color: var(--stretch-muted); padding-right: 1rem; }
-        .spec-card td:last-child { color: var(--stretch-ink); font-weight: 500; text-align: right; }
+        .spec-card td:first-child { color: #666; padding-right: 1rem; }
+        .spec-card td:last-child { color: var(--deep-blue); font-weight: 500; text-align: right; }
         .spec-card tr:last-child td { border-bottom: none; }
 
         /* ===== ADD-ONS ===== */
+        .addons-section { background: white; }
         .addons-header { text-align: center; max-width: 760px; margin: 0 auto 3rem; }
-        .addons-header p { font-size: 1.05rem; color: var(--stretch-muted); line-height: 1.75; }
+        .addons-header p { font-size: 1.05rem; color: #555; line-height: 1.75; }
         .addons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .addon-card { background: var(--stretch-cream); display: grid; grid-template-columns: 180px 1fr; gap: 1.5rem; }
-        .addon-image .image-container { position: relative; aspect-ratio: 1; background: var(--stretch-cream-2); }
+        .addon-card {
+          background: var(--cream);
+          display: grid;
+          grid-template-columns: 180px 1fr;
+          gap: 1.5rem;
+          border-radius: var(--radius-md);
+          overflow: hidden;
+          transition: transform var(--transition-normal, 0.3s ease), box-shadow var(--transition-normal, 0.3s ease);
+        }
+        .addon-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 20px 50px rgba(13, 58, 92, 0.1);
+        }
+        .addon-image .image-container { position: relative; aspect-ratio: 1; background: white; }
         .addon-body { padding: 1.75rem 1.75rem 1.75rem 0; }
-        .addon-body h4 { font-size: 1.1rem; margin-bottom: 0.6rem; font-family: var(--font-heading, 'Syne', sans-serif); }
-        .addon-body p { font-size: 0.92rem; color: var(--stretch-muted); line-height: 1.7; }
+        .addon-body h4 { font-size: 1.1rem; margin-bottom: 0.6rem; font-family: var(--font-heading); color: var(--deep-blue); }
+        .addon-body p { font-size: 0.92rem; color: #555; line-height: 1.7; }
 
         /* ===== DOWNLOADS ===== */
-        .downloads-section { background: var(--stretch-cream); }
+        .downloads-section { background: var(--cream); }
         .downloads-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
         .downloads-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 1200px; margin: 0 auto; }
         .download-card {
           background: white;
-          border: 1px solid var(--stretch-line);
+          border: 1px solid rgba(13, 58, 92, 0.08);
           padding: 1.25rem 1.5rem;
           display: flex;
           align-items: center;
           gap: 1rem;
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: all var(--transition-normal, 0.3s ease);
           text-align: left;
-          color: var(--stretch-ink);
+          color: var(--deep-blue);
+          border-radius: var(--radius-md);
         }
-        .download-card:hover { background: var(--stretch-ink); color: white; border-color: var(--stretch-ink); }
+        .download-card:hover {
+          background: var(--brand-blue);
+          color: white;
+          border-color: var(--brand-blue);
+          transform: translateY(-2px);
+          box-shadow: 0 12px 30px rgba(25, 127, 199, 0.25);
+        }
         .download-icon { font-size: 1.5rem; }
         .download-info { flex: 1; }
-        .download-info h4 { font-size: 0.95rem; margin-bottom: 0.15rem; font-family: var(--font-heading, 'Syne', sans-serif); }
+        .download-info h4 { font-size: 0.95rem; margin-bottom: 0.15rem; font-family: var(--font-heading); }
         .download-info span { font-size: 0.75rem; opacity: 0.6; letter-spacing: 1px; }
         .download-arrow { font-size: 1.25rem; opacity: 0.5; }
         .download-card:hover .download-arrow { opacity: 1; }
 
         /* ===== CROSSLINKS ===== */
+        .crosslinks-section { background: white; }
         .crosslinks-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
         .crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 1200px; margin: 0 auto; }
         :global(.booth-product-page) :global(.crosslink-card) {
-          padding: 1.75rem;
-          background: var(--stretch-cream);
+          padding: 2rem;
+          background: var(--cream);
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
           text-decoration: none;
-          color: var(--stretch-ink);
-          border-left: 2px solid transparent;
-          transition: all 0.2s ease;
+          color: var(--deep-blue);
+          border-radius: var(--radius-md);
+          transition: all var(--transition-normal, 0.3s ease);
           position: relative;
         }
-        :global(.booth-product-page) :global(.crosslink-card:hover) { border-left-color: var(--stretch-rust); background: var(--stretch-cream-2); }
-        :global(.booth-product-page) :global(.crosslink-name) { font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading, 'Syne', sans-serif); }
-        :global(.booth-product-page) :global(.crosslink-tag) { font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--stretch-muted); }
-        :global(.booth-product-page) :global(.crosslink-arrow) { position: absolute; right: 1.75rem; top: 1.75rem; font-size: 1.5rem; color: var(--stretch-rust); }
+        :global(.booth-product-page) :global(.crosslink-card:hover) {
+          background: var(--brand-blue);
+          color: white;
+          transform: translateY(-4px);
+          box-shadow: 0 20px 50px rgba(25, 127, 199, 0.25);
+        }
+        :global(.booth-product-page) :global(.crosslink-name) { font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading); }
+        :global(.booth-product-page) :global(.crosslink-tag) { font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.7; font-weight: 500; }
+        :global(.booth-product-page) :global(.crosslink-arrow) { position: absolute; right: 2rem; top: 2rem; font-size: 1.5rem; }
 
         /* ===== CTA ===== */
-        .cta-section { background: var(--stretch-ink); color: white; text-align: center; }
+        .cta-section {
+          background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%);
+          color: white;
+          text-align: center;
+        }
         .cta-content { max-width: 720px; margin: 0 auto; }
-        .cta-content h2 { color: white; font-size: 2.75rem; margin-bottom: 1rem; }
-        .cta-content > p { font-size: 1.1rem; opacity: 0.8; margin-bottom: 2.5rem; line-height: 1.75; }
-        .cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
+        .cta-content h2 { color: white; font-size: 3rem; margin-bottom: 1rem; }
+        .cta-content > p { font-size: 1.15rem; opacity: 0.95; margin-bottom: 2.5rem; line-height: 1.75; }
+        .cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
 
-        :global(.booth-product-page) .cta-section :global(.btn-primary) { background: white; color: var(--stretch-ink); }
-        :global(.booth-product-page) .cta-section :global(.btn-primary:hover) { background: var(--stretch-rust); color: white; }
-        :global(.booth-product-page) .cta-section :global(.btn-secondary) { color: white; border-color: rgba(255,255,255,0.5); }
-        :global(.booth-product-page) .cta-section :global(.btn-secondary:hover) { background: white; color: var(--stretch-ink); border-color: white; }
+        :global(.booth-product-page) .cta-section :global(.btn-primary) { background: white; color: var(--brand-blue); }
+        :global(.booth-product-page) .cta-section :global(.btn-primary:hover) { background: var(--cream); color: var(--brand-blue-dark); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); }
+        :global(.booth-product-page) .cta-section :global(.btn-secondary) { color: white; border-color: white; }
+        :global(.booth-product-page) .cta-section :global(.btn-secondary:hover) { background: white; color: var(--brand-blue); }
 
-        .cta-note { font-size: 0.85rem; opacity: 0.5; letter-spacing: 0.5px; }
+        .cta-note { font-size: 0.9rem; opacity: 0.85; }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
@@ -1038,14 +1087,12 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           .nav-inner { padding: 0 2rem; }
         }
         @media (max-width: 640px) {
-          .hero-stats { grid-template-columns: 1fr; }
-          .hero-stat + .hero-stat { border-left: none; border-top: 1px solid var(--stretch-line); padding-left: 0; padding-top: 1rem; margin-top: 1rem; }
+          .hero-stats { grid-template-columns: 1fr; gap: 0.75rem; padding: 1rem 0; }
           .features-grid, .specs-grid, .downloads-grid, .crosslinks-grid, .modular-scenarios, .acoustics-benefits, .config-meta { grid-template-columns: 1fr; }
           .hero-ctas, .cta-buttons { flex-direction: column; }
           .addon-card { grid-template-columns: 1fr; }
           .addon-body { padding: 1.5rem; }
-          .config-switcher { flex-direction: column; }
-          .content-section h2 { font-size: 2rem; }
+          .content-section h2, .cta-content h2 { font-size: 2.25rem; }
         }
       `}</style>
     </div>

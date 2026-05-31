@@ -3,7 +3,7 @@
 import SoundboothProductPage from './SoundboothProductPage';
 
 /**
- * Duo — two-configuration STRETCH soundbooth.
+ * Duo — two-configuration Re-Sound soundbooth.
  * One shell; "Flex" config seats two for a meeting, "Work" config gives one
  * person a full-width desk. Adapts Box 2 Flex + Box 2 Work supplier pages
  * into a single white-label product page (same shell, switchable layout).

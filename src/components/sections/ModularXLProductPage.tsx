@@ -5,7 +5,7 @@ import SoundboothProductPage from './SoundboothProductPage';
 /**
  * Modular XL — meeting pod with modular extension.
  * Base seats up to 6; each +90cm segment adds capacity up to 10 people.
- * Adapts the supplier (Box XL) into STRETCH white-label branding.
+ * White-label adaptation of the supplier (Box XL), Re-Sound branded.
  */
 export default function ModularXLProductPage() {
   return (

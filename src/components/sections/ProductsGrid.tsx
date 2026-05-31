@@ -8,6 +8,14 @@ import ProductCard from './ProductCard';
 // ============================================
 const filterCategories = [
   {
+    id: 'use',
+    labelKey: 'filters.use',
+    options: [
+      { id: 'panel', labelKey: 'filters.panel' },
+      { id: 'booth', labelKey: 'filters.booth' },
+    ],
+  },
+  {
     id: 'finish',
     labelKey: 'filters.finish',
     options: [
@@ -31,100 +39,140 @@ const filterCategories = [
 // PRODUCTS DATA - Add tags here
 // ============================================
 const products = [
-  { 
-    slug: 'interior', 
+  {
+    slug: 'interior',
     image: '/images/products/interior/interior_card.webp',
     tags: {
+      use: ['panel'],
       finish: ['textile'],
       type: ['wall-panel'],
     },
   },
-  { 
-    slug: 'solid', 
+  {
+    slug: 'solid',
     image: '/images/products/solid/solid_card.webp',
     tags: {
+      use: ['panel'],
       finish: ['textile'],
       type: ['wall-panel'],
     },
   },
-  { 
-    slug: 'divide', 
+  {
+    slug: 'divide',
     image: '/images/products/divide/divide_card.webp',
     tags: {
+      use: ['panel'],
       finish: ['textile'],
       type: ['divider'],
     },
   },
-  { 
-    slug: 'rwood-groove', 
+  {
+    slug: 'rwood-groove',
     image: '/images/products/rwood-groove/hero-rWood-Groove.webp',
     tags: {
+      use: ['panel'],
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
   {
-    slug: 'rpet-groove', 
+    slug: 'rpet-groove',
     image: '/images/products/rpet-groove/hero-rpet-groove.webp',
     tags: {
+      use: ['panel'],
       finish: ['pet'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-    { 
-    slug: 'rpet-flex-groove', 
+  {
+    slug: 'rpet-flex-groove',
     image: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
     tags: {
+      use: ['panel'],
       finish: ['pet'],
       type: ['wall-panel'],
     },
   },
-  { 
-    slug: 'rpet-panel', 
+  {
+    slug: 'rpet-panel',
     image: '/images/products/rpet-panel/hero-rPET-Flat.webp',
     tags: {
+      use: ['panel'],
       finish: ['pet'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-  { 
-    slug: 'rpet-circle', 
+  {
+    slug: 'rpet-circle',
     image: '/images/products/rpet-circle/hero-rPET-Ceiling-Circle-grey.webp',
     tags: {
+      use: ['panel'],
       finish: ['pet'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-  { 
-    slug: 'rpet-divide', 
+  {
+    slug: 'rpet-divide',
     image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
     tags: {
+      use: ['panel'],
       finish: ['pet'],
       type: ['divider'],
     },
   },
-  { 
-    slug: 'rwood-perf', 
+  {
+    slug: 'rwood-perf',
     image: '/images/products/rwood-perf/hero-rwood-perf.webp',
     tags: {
+      use: ['panel'],
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-  { 
-    slug: 'rwood-micro', 
+  {
+    slug: 'rwood-micro',
     image: '/images/products/rwood-micro/hero-rwood-micro.webp',
     tags: {
+      use: ['panel'],
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-  { 
-    slug: 'rwood-veneer', 
+  {
+    slug: 'rwood-veneer',
     image: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
     tags: {
+      use: ['panel'],
       finish: ['wood'],
       type: ['wall-panel', 'ceiling-panel'],
+    },
+  },
+  // ============ Re-Sound soundbooth range ============
+  {
+    slug: 'solo-flex',
+    image: '/images/products/solo-flex/solo-flex_card.jpg',
+    tags: {
+      use: ['booth'],
+      finish: [],
+      type: [],
+    },
+  },
+  {
+    slug: 'duo',
+    image: '/images/products/duo/duo_card.jpg',
+    tags: {
+      use: ['booth'],
+      finish: [],
+      type: [],
+    },
+  },
+  {
+    slug: 'modular-xl',
+    image: '/images/products/modular-xl/modular-xl_card.jpg',
+    tags: {
+      use: ['booth'],
+      finish: [],
+      type: [],
     },
   },
 ];
@@ -135,8 +183,8 @@ interface ProductsGridProps {
 
 export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
   const t = useTranslations('products');
-  
-  // Active filters state: { finish: ['textile'], type: [] }
+
+  // Active filters state: { use: [], finish: ['textile'], type: [] }
   const [activeFilters, setActiveFilters] = useState<Record<string, string[]>>(() => {
     const initial: Record<string, string[]> = {};
     filterCategories.forEach(cat => {
@@ -150,7 +198,7 @@ export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
     setActiveFilters(prev => {
       const current = prev[categoryId] || [];
       const isActive = current.includes(optionId);
-      
+
       return {
         ...prev,
         [categoryId]: isActive
@@ -181,10 +229,10 @@ export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
     // Within a category, product must match AT LEAST ONE selected option (OR within category)
     return filterCategories.every(category => {
       const activeOptions = activeFilters[category.id] || [];
-      
+
       // If no options selected in this category, don't filter by it
       if (activeOptions.length === 0) return true;
-      
+
       // Check if product has any of the selected options
       const productTags = product.tags[category.id as keyof typeof product.tags] || [];
       return activeOptions.some(option => productTags.includes(option));

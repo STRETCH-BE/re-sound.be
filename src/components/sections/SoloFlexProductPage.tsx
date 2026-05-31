@@ -3,8 +3,8 @@
 import SoundboothProductPage from './SoundboothProductPage';
 
 /**
- * Solo Flex — single-person STRETCH soundbooth.
- * Adapts the supplier (Box 1 Flex) into STRETCH white-label branding.
+ * Solo Flex — single-person Re-Sound soundbooth.
+ * White-label adaptation of the supplier (Box 1 Flex), Re-Sound branded.
  */
 export default function SoloFlexProductPage() {
   return (
