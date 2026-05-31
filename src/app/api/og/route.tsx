@@ -16,13 +16,13 @@ import type { NextRequest } from 'next/server';
  *   /api/og?page=products                  → products-listing layout
  *   /api/og?page=about|sustainability|...  → page-specific titles
  *   /api/og?product=rwood-groove           → product-specific layout
+ *   /api/og?product=solo-flex              → STRETCH-branded booth layout
  *
  * All variants accept ?locale=en|nl|fr|de|... for the locale badge.
  *
- * Defensive design (after blank-render attempts on edge):
- *   - No fontFamily — Satori uses its bundled default
- *   - Solid background color (no linear-gradient)
- *   - Cache-Control: no-store while debugging; can be tightened later
+ * Brand override: products with `brand: 'STRETCH'` (the booth family)
+ * render with the STRETCH wordmark instead of Re-Sound. Kept as a single
+ * route so we don't fragment OG infra across brands.
  */
 
 export const runtime = 'edge';
@@ -31,7 +31,9 @@ interface ProductMeta {
   name: string;
   category: string;
   spec: string;
-  family: 'textile' | 'rwood' | 'rpet';
+  family: 'textile' | 'rwood' | 'rpet' | 'booth';
+  /** Wordmark override — defaults to "Re-Sound" if absent */
+  brand?: string;
 }
 
 const PRODUCTS: Record<string, ProductMeta> = {
@@ -45,12 +47,17 @@ const PRODUCTS: Record<string, ProductMeta> = {
   'rpet-panel':       { name: 'rPET Panel',       category: 'Flat recycled-PET acoustic panels',     spec: '100% recycled PET / OEKO-TEX',               family: 'rpet'    },
   'rpet-groove':      { name: 'rPET Groove',      category: 'Grooved recycled-PET panels',           spec: '12 colors / 3 thicknesses / B-s1,d0',        family: 'rpet'    },
   'rpet-flex-groove': { name: 'rPET Flex Groove', category: 'Flexible recycled-PET panels',          spec: 'Bendable / OEKO-TEX / Made in Belgium',     family: 'rpet'    },
+  // ---- STRETCH white-label soundbooth range ----
+  'solo-flex':        { name: 'Solo Flex',        category: 'Single-person soundbooth',              spec: '24 dB(A) reduction / 1 m² / 5yr warranty',    family: 'booth',  brand: 'STRETCH' },
+  'duo':              { name: 'Duo',              category: 'Two-configuration soundbooth',          spec: '26 dB(A) / Flex + Work modes / 5yr',          family: 'booth',  brand: 'STRETCH' },
+  'modular-xl':       { name: 'Modular XL',       category: 'Scalable meeting pod',                  spec: '25.9 dB(A) / Up to 10 people / Modular',      family: 'booth',  brand: 'STRETCH' },
 };
 
 const FAMILY_BG: Record<ProductMeta['family'], string> = {
   textile: '#197FC7',
   rwood:   '#8b6235',
   rpet:    '#2e8a6f',
+  booth:   '#14110D',
 };
 
 const PAGE_TITLES: Record<string, string> = {
@@ -76,6 +83,9 @@ export async function GET(req: NextRequest) {
     ? FAMILY_BG[product!.family]
     : '#197FC7';
 
+  // Wordmark — STRETCH for booth products, Re-Sound for everything else
+  const brand = product?.brand ?? 'Re-Sound';
+
   // For product variant: category label + product name + spec line
   // For page variant:    title + sitewide tagline
   const headline = isProductVariant ? product!.name : (PAGE_TITLES[page] || 'Acoustics Made Circular');
@@ -84,6 +94,9 @@ export async function GET(req: NextRequest) {
   const footerLeft = isProductVariant
     ? `re-sound.be/products/${productSlug}`
     : 're-sound.be';
+  const footerRight = product?.family === 'booth'
+    ? 'EU-wide delivery / 5yr warranty'
+    : 'Free take-back program';
 
   return new ImageResponse(
     (
@@ -100,7 +113,7 @@ export async function GET(req: NextRequest) {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-          <div style={{ fontSize: 44, fontWeight: 800 }}>Re-Sound</div>
+          <div style={{ fontSize: 44, fontWeight: 800 }}>{brand}</div>
           <div
             style={{
               padding: '6px 16px',
@@ -149,7 +162,7 @@ export async function GET(req: NextRequest) {
           }}
         >
           <div>{footerLeft}</div>
-          <div>Free take-back program</div>
+          <div>{footerRight}</div>
         </div>
       </div>
     ),
