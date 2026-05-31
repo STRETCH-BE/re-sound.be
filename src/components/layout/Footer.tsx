@@ -98,9 +98,9 @@ export default function Footer() {
         </div>
 
         {/* Products Column */}
-        <div className="footer-column">
+        <div className="footer-column footer-column--products">
           <h4>{t('products')}</h4>
-          <ul className="footer-links">
+          <ul className="footer-links footer-links--multi">
             {productLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href}>{link.label}</Link>
@@ -167,8 +167,8 @@ export default function Footer() {
 
         .footer-grid {
           display: grid;
-          grid-template-columns: 2fr 1fr 1fr 1fr;
-          gap: 4rem;
+          grid-template-columns: 1.6fr 2fr 1fr 1fr;
+          gap: 3rem;
           max-width: 1400px;
           margin: 0 auto 4rem;
         }
@@ -235,6 +235,17 @@ export default function Footer() {
           color: var(--brand-blue-light);
         }
 
+        /* Products column has many items — flow into two sub-columns so the
+           footer doesn't grow tall. break-inside avoids splitting a link
+           across columns on browsers that support it. */
+        .footer-links--multi {
+          column-count: 2;
+          column-gap: 2rem;
+        }
+        .footer-links--multi li {
+          break-inside: avoid;
+        }
+
         .footer-bottom {
           border-top: 1px solid rgba(255, 255, 255, 0.1);
           padding-top: 2rem;
@@ -295,6 +306,11 @@ export default function Footer() {
           .footer-brand {
             grid-column: span 2;
           }
+
+          /* Keep products as 2 sub-columns on tablet for compactness */
+          .footer-column--products {
+            grid-column: span 2;
+          }
         }
 
         @media (max-width: 576px) {
@@ -309,6 +325,14 @@ export default function Footer() {
 
           .footer-brand {
             grid-column: span 1;
+          }
+
+          .footer-column--products {
+            grid-column: span 1;
+          }
+          /* Phone screens: single column is more readable than 2-narrow */
+          .footer-links--multi {
+            column-count: 1;
           }
 
           .footer-bottom {
