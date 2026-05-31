@@ -8,6 +8,35 @@ import { locales, defaultLocale, type Locale } from './config';
 // parameter (deprecated), we read `await requestLocale` and validate it
 // ourselves. The returned config object MUST include `locale` — this becomes
 // required in next-intl 4.x.
+//
+// EN-fallback merge: a deep merge of the requested locale on top of EN so
+// that any namespace or key missing in a non-EN locale falls back to the EN
+// string instead of rendering a literal namespace.key on the page. This is
+// a defensive default for newly-added namespaces (e.g. when a product is
+// added to messages/en.json before being translated into the other 9
+// locales). For NL/FR/DE the existing translations remain authoritative
+// because they take priority in the merge.
+
+// Deep-merge `override` on top of `base`. Plain objects are merged
+// recursively; arrays and primitives in `override` replace the base.
+function deepMerge<T extends Record<string, unknown>>(base: T, override: Partial<T>): T {
+  const out: Record<string, unknown> = { ...base };
+  for (const [k, v] of Object.entries(override)) {
+    if (
+      v !== null &&
+      typeof v === 'object' &&
+      !Array.isArray(v) &&
+      typeof out[k] === 'object' &&
+      out[k] !== null &&
+      !Array.isArray(out[k])
+    ) {
+      out[k] = deepMerge(out[k] as Record<string, unknown>, v as Record<string, unknown>);
+    } else {
+      out[k] = v;
+    }
+  }
+  return out as T;
+}
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // Resolve the locale from the request, falling back to default if absent or invalid
@@ -16,7 +45,12 @@ export default getRequestConfig(async ({ requestLocale }) => {
     ? (requested as Locale)
     : defaultLocale;
 
-  const messages = (await import(`../../messages/${locale}.json`)).default;
+  // Always load EN as the fallback base. For EN itself, this is a no-op merge.
+  const baseMessages = (await import('../../messages/en.json')).default;
+  const localeMessages = locale === 'en'
+    ? baseMessages
+    : (await import(`../../messages/${locale}.json`)).default;
+  const messages = deepMerge(baseMessages, localeMessages);
 
   return {
     locale,
