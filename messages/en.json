@@ -34,11 +34,11 @@
     "rpetFlexGrooveDescription": "Flexible grooved acoustic panels made from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified.",
     "faqTitle": "FAQ — Re-Sound Acoustic Panels",
     "faqDescription": "Answers to common questions about Re-Sound acoustic panels: how absorption works, fire ratings, lead times, the circular take-back program, and product selection.",
-    "soloFlexTitle": "Solo Flex — Single-Person Soundbooth | STRETCH",
-    "soloFlexDescription": "Single-person acoustic phone booth for focus calls and deep work. 1 m² footprint, integrated sit-stand desk, 230V power, USB-C and ventilation. STRETCH white-label edition.",
-    "duoTitle": "Duo — Two-Configuration Soundbooth | STRETCH",
-    "duoDescription": "One soundbooth, two configurations: Flex seats two for a focused meeting; Work gives one person a full-width desk. 2 m² footprint, electric desk, 230V power, full ventilation.",
-    "modularXlTitle": "Modular XL — Scalable Meeting Pod | STRETCH",
+    "soloFlexTitle": "Solo Flex Single-Person Acoustic Soundbooth | Re-Sound",
+    "soloFlexDescription": "Single-person acoustic phone booth for focus calls and deep work. 1 m² footprint, integrated sit-stand desk, 230V power and USB-C, whisper-quiet ventilation. Part of the Re-Sound soundbooth range.",
+    "duoTitle": "Duo Two-Configuration Acoustic Soundbooth | Re-Sound",
+    "duoDescription": "One soundbooth, two configurations: Flex seats two for a focused meeting; Work gives one person a full-width desk. 2 m² footprint, electric desk, 230V power, full ventilation. Re-Sound acoustic range.",
+    "modularXlTitle": "Modular XL Scalable Acoustic Meeting Pod | Re-Sound",
     "modularXlDescription": "Scalable acoustic meeting pod. Base accommodates 6, expandable to 10 in 90-cm segments. 25.9 dB(A) speech reduction, full A/V provisions, accessible-by-design entry."
   },
   "nav": {
@@ -169,7 +169,10 @@
       "showingAll": "Showing all {count} products",
       "showingFiltered": "Showing {filtered} of {total} products",
       "noResults": "No products match your filters",
-      "clearAndShowAll": "Clear filters and show all"
+      "clearAndShowAll": "Clear filters and show all",
+      "use": "Use case",
+      "panel": "Acoustic Panels",
+      "booth": "Soundbooths"
     },
     "interior": {
       "title": "Interior",
@@ -258,6 +261,18 @@
         "title": "Custom Options",
         "description": "Available in 50+ colors and custom sizes to match your design vision."
       }
+    },
+    "solo-flex": {
+      "title": "Solo Flex",
+      "description": "Single-person acoustic booth for focus calls and deep work. 1 m² footprint, integrated sit-stand desk, 24 dB(A) speech reduction."
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "One soundbooth, two configurations. Flex seats two for a meeting; Work gives one person a full-width desk. 26 dB(A) reduction."
+    },
+    "modular-xl": {
+      "title": "Modular XL",
+      "description": "Scalable meeting pod. Base accommodates 6, expandable to 10 with 90 cm modular segments. 25.9 dB(A) speech reduction."
     }
   },
   "specs": {
@@ -2853,9 +2868,6 @@
       "addons": "Add-ons",
       "downloads": "Downloads"
     },
-    "hero": {
-      "badgeEyebrow": "Editorial Series"
-    },
     "cta": {
       "requestQuote": "Request a Quote",
       "viewSpecifications": "View Specifications",
@@ -2925,7 +2937,7 @@
     },
     "crosslinks": {
       "tag": "ALSO IN THE RANGE",
-      "title": "Other STRETCH soundbooths",
+      "title": "Other soundbooths in the range",
       "solo-flex": {
         "name": "Solo Flex",
         "tag": "Single-person booth"
@@ -2946,7 +2958,6 @@
       "title": "Solo Flex",
       "tagline": "A square metre of quiet, wherever you need it.",
       "description": "Solo Flex is a single-occupant acoustic booth built for focus calls, video meetings, and deep work. A small footprint, an honest desk that goes from sit to stand, and the kind of sound isolation that makes the open-plan office disappear.",
-      "badge": "Built for one. Spec'd for everything that one person actually does.",
       "statFootprint": "Footprint",
       "statWeight": "Net weight",
       "statWarranty": "Warranty"
@@ -3087,7 +3098,6 @@
       "title": "Duo",
       "tagline": "One shell. Two completely different rooms.",
       "description": "Duo is a single soundbooth that genuinely commits to two use cases. The Flex configuration places a small electric desk in the centre — two people, face to face, for a focused meeting. The Work configuration drops a full-width desk along one wall — one person, three monitors, a real workstation. You spec which one fits your floor.",
-      "badge": "Two product-grade configurations on the same shell. Not a compromise — a choice.",
       "statFootprint": "Footprint",
       "statWeight": "Net weight",
       "statConfigs": "Configurations"
@@ -3258,8 +3268,7 @@
       "tag": "SCALABLE MEETING POD",
       "title": "Modular XL",
       "tagline": "A meeting room that gets longer when you need more chairs.",
-      "description": "Modular XL is the largest booth in the STRETCH range — and the only one designed to grow after the install. The base unit comfortably seats six. From there, 90 cm modular segments extend the booth in either direction, up to a maximum capacity of ten. Same acoustic performance, same ventilation logic, scaled.",
-      "badge": "The only meeting pod in the range that extends after install. Designed for teams that don't stay the same size.",
+      "description": "Modular XL is the largest booth in the Re-Sound soundbooth range — and the only one designed to grow after the install. The base unit comfortably seats six. From there, 90 cm modular segments extend the booth in either direction, up to a maximum capacity of ten. Same acoustic performance, same ventilation logic, scaled.",
       "statFootprint": "Base footprint",
       "statWeight": "Base weight",
       "statCapacity": "Max capacity"
