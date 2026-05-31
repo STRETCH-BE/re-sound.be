@@ -33,7 +33,13 @@
     "rpetFlexGrooveTitle": "Painéis acústicos flexíveis rPET Flex Groove | Re-Sound",
     "rpetFlexGrooveDescription": "Painéis acústicos ranhurados flexíveis, feitos a partir de PET 100% reciclado. Dobráveis para superfícies curvas, colunas e instalações personalizadas. Certificação OEKO-TEX®.",
     "faqTitle": "FAQ — Painéis Acústicos Re-Sound",
-    "faqDescription": "Respostas a perguntas frequentes sobre os painéis acústicos Re-Sound: como funciona a absorção, classificações de fogo, prazos, programa circular de recolha e seleção de produtos."
+    "faqDescription": "Respostas a perguntas frequentes sobre os painéis acústicos Re-Sound: como funciona a absorção, classificações de fogo, prazos, programa circular de recolha e seleção de produtos.",
+    "duoDescription": "Uma cabine, duas configurações: Flex acomoda duas pessoas para uma reunião focada; Work oferece a uma pessoa uma secretária de largura total. Pegada de 2 m², secretária elétrica, tomada 230V, ventilação completa. Gama acústica Re-Sound.",
+    "soloFlexDescription": "Cabine telefónica acústica para uma pessoa, ideal para chamadas de concentração e trabalho profundo. Pegada de 1 m², secretária sentado-em pé integrada, tomada 230V, USB-C e ventilação silenciosa. Parte da gama de cabines Re-Sound.",
+    "modularXlDescription": "Pod de reunião acústico escalável. A base acomoda 6 pessoas, expansível até 10 com segmentos de 90 cm. Redução de voz de 25,9 dB(A), equipamento A/V completo, entrada acessível por design.",
+    "modularXlTitle": "Modular XL Pod de reunião acústico escalável | Re-Sound",
+    "duoTitle": "Duo Cabine acústica em duas configurações | Re-Sound",
+    "soloFlexTitle": "Solo Flex Cabine acústica individual | Re-Sound"
   },
   "nav": {
     "products": "Productos",
@@ -163,7 +169,10 @@
       "showingAll": "Mostrando todos los {count} productos",
       "showingFiltered": "Mostrando {filtered} de {total} productos",
       "noResults": "Ningún producto coincide con sus filtros",
-      "clearAndShowAll": "Borrar filtros y mostrar todos"
+      "clearAndShowAll": "Borrar filtros y mostrar todos",
+      "panel": "Painéis acústicos",
+      "use": "Utilização",
+      "booth": "Cabines"
     },
     "interior": {
       "title": "Interior",
@@ -252,6 +261,18 @@
         "title": "Opciones Personalizadas",
         "description": "Disponible en más de 50 colores y tamaños personalizados para adaptarse a su visión de diseño."
       }
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Uma cabine, duas configurações. Flex senta duas pessoas para uma reunião; Work oferece a uma pessoa uma secretária ampla. Redução de 26 dB(A)."
+    },
+    "solo-flex": {
+      "title": "Solo Flex",
+      "description": "Cabine acústica para uma pessoa, para chamadas de concentração e trabalho profundo. Pegada de 1 m², secretária sentado-em pé integrada, redução de voz de 24 dB(A)."
+    },
+    "modular-xl": {
+      "title": "Modular XL",
+      "description": "Pod de reunião escalável. Base para 6 pessoas, expansível até 10 com segmentos modulares de 90 cm. Redução de voz de 25,9 dB(A)."
     }
   },
   "specs": {
@@ -2836,6 +2857,574 @@
         "category": "commercial",
         "question": "Como solicito um orçamento?",
         "answer": "Use o formulário de contacto de uma página de produto ou o formulário geral, indicando: a linha de produto que lhe interessa, quantidades aproximadas ou planta, e o calendário do projeto. Respondemos em um dia útil com um orçamento à medida, proposta de amostras e cálculo da melhoria acústica esperada. Para projetos maiores podemos organizar uma visita ao local ou uma chamada de briefing."
+      }
+    }
+  },
+  "boothPage": {
+    "nav": {
+      "overview": "Visão geral",
+      "acoustics": "Acústica",
+      "configurations": "Configurações",
+      "modular": "Modular",
+      "features": "Características",
+      "specs": "Especificações",
+      "addons": "Opções",
+      "downloads": "Transferências"
+    },
+    "cta": {
+      "requestQuote": "Pedir orçamento",
+      "viewSpecifications": "Ver especificações",
+      "callUs": "Ligue-nos: +32 3 284 68 18",
+      "ctaTitle": "Pronto para configurar o seu espaço?",
+      "ctaSubtitle": "A nossa equipa ajuda-o a escolher a cabine certa, configurar opções e planear a entrega. Orçamentos geralmente devolvidos num dia útil.",
+      "deliveryNote": "Entrega em toda a UE · Instalação disponível · Garantia estrutural de 5 anos"
+    },
+    "acoustics": {
+      "benefitSpeech": {
+        "title": "Maior clareza da fala",
+        "desc": "A queda acentuada do ruído de fundo permite que cada palavra chegue — tanto dentro como fora da cabine."
+      },
+      "benefitFocus": {
+        "title": "Concentração reforçada",
+        "desc": "Um invólucro mais silencioso produz uma transição mensurável para uma atenção mais profunda em segundos após entrar."
+      },
+      "benefitStress": {
+        "title": "Menor carga cognitiva",
+        "desc": "Menos ruído ambiental reduz o esforço auditivo contínuo do cérebro — menos fadiga, mais rendimento."
+      }
+    },
+    "configurations": {
+      "capacity": "Capacidade",
+      "deskSize": "Tamanho da secretária",
+      "deskHeight": "Altura da secretária"
+    },
+    "specs": {
+      "externalDim": "Dimensões externas (L × P × A)",
+      "internalDim": "Dimensões internas (L × P × A)",
+      "doorWidth": "Largura da porta",
+      "weight": "Peso líquido",
+      "noiseReduction": "Redução de voz Dn,T,A",
+      "absorberMaterial": "Absorvente acústico",
+      "doorSeal": "Vedante da porta",
+      "airflow": "Caudal de ar",
+      "fanCount": "Número de ventiladores",
+      "occupancySensor": "Deteção de presença",
+      "powerSockets": "Tomadas",
+      "usb": "Carregamento USB",
+      "lighting": "Iluminação",
+      "totalConsumption": "Potência total",
+      "frame": "Estrutura",
+      "glass": "Envidraçamento",
+      "interior": "Revestimento interior",
+      "floor": "Pavimento",
+      "structural": "Garantia estrutural",
+      "electronics": "Garantia eletrónica",
+      "delivery": "Prazo padrão",
+      "segmentSize": "Dimensões do segmento",
+      "segmentWeight": "Peso do segmento",
+      "segmentFans": "Ventiladores por segmento",
+      "segmentPower": "Potência por segmento",
+      "ceilingHeight": "Altura mínima do tecto",
+      "sideClearance": "Espaço lateral",
+      "frontClearance": "Espaço frontal"
+    },
+    "downloads": {
+      "tag": "RECURSOS",
+      "title": "Documentação",
+      "productDataSheet": "Ficha técnica do produto",
+      "installationManual": "Manual de instalação",
+      "acousticTestReport": "Relatório de ensaio acústico",
+      "cadDrawing": "Desenho CAD (DWG)",
+      "warranty": "Certificado de garantia",
+      "sustainability": "Declaração de sustentabilidade"
+    },
+    "crosslinks": {
+      "tag": "TAMBÉM NA GAMA",
+      "title": "Outras cabines da gama",
+      "solo-flex": {
+        "name": "Solo Flex",
+        "tag": "Cabine individual"
+      },
+      "duo": {
+        "name": "Duo",
+        "tag": "Cabine em duas configurações"
+      },
+      "modular-xl": {
+        "name": "Modular XL",
+        "tag": "Pod de reunião escalável"
+      }
+    }
+  },
+  "soloFlexPage": {
+    "hero": {
+      "tag": "CABINE ACÚSTICA INDIVIDUAL",
+      "title": "Solo Flex",
+      "tagline": "Um metro quadrado de sossego, onde quer que precise.",
+      "description": "Solo Flex é uma cabine acústica monoposto concebida para chamadas de concentração, videoconferências e trabalho profundo. Uma pegada reduzida, uma secretária honesta que passa de sentado a em pé, e o tipo de isolamento acústico que faz desaparecer o open space.",
+      "statFootprint": "Pegada",
+      "statWeight": "Peso líquido",
+      "statWarranty": "Garantia"
+    },
+    "overview": {
+      "tag": "UMA CABINE, UMA PESSOA, SEM CONCESSÕES",
+      "title": "Concentração tornada tangível.",
+      "description": "Solo Flex foi concebida em torno de um limite simples: dar a uma pessoa tudo o que precisa para uma hora produtiva de trabalho, e nada que distraia. O resultado: uma cabine que cabe entre secretárias sem reorganizar o piso — e que não se sente como um cubículo.",
+      "feature1": "Pegada de 1 m² compatível com quase qualquer layout",
+      "feature2": "Secretária sentado-em pé regulável de 73 a 103 cm",
+      "feature3": "Tomada 230V mais USB-C e USB-A na secretária",
+      "feature4": "Ventilação silenciosa que se ativa ao entrar"
+    },
+    "acoustics": {
+      "tag": "DESEMPENHO ACÚSTICO",
+      "title": "O silêncio projeta-se.",
+      "description": "Uma envolvente multicamada — absorvente de PET reciclado, estrutura de aço, vidro laminado vedado — reduz a voz cerca de 24 dB(A). Para situar: uma voz normal do outro lado da parede da cabine soa lá dentro como um murmúrio distante.",
+      "dbValue": "24",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Redução de frequências da voz (Dn,T,A) medida segundo ISO 23351-1."
+    },
+    "features": {
+      "tag": "INTEGRADO",
+      "title": "O que vem de série, e porque importa.",
+      "ventilation": {
+        "title": "Ventilação silenciosa",
+        "desc": "Quatro ventiladores entregam 4,6 m³/min, mais que suficiente para uma pessoa. O nível sonoro mantém-se abaixo dos 30 dB(A) na posição do utilizador."
+      },
+      "electrics": {
+        "title": "Energia onde se senta",
+        "desc": "Tomada 230V, USB-C (PD 60W) e USB-A integrados no tampo. Sem extensões a atravessar a porta."
+      },
+      "lighting": {
+        "title": "Iluminação ajustável",
+        "desc": "LED dimerizável quente/frio com controlo manual. Calibrada para tons de pele limpos em câmara."
+      },
+      "comfort": {
+        "title": "Secretária sentado-em pé",
+        "desc": "Regulação manual de altura entre 73 e 103 cm. Tampo de 80 × 33 cm — espaço para portátil, bloco e café."
+      },
+      "accessibility": {
+        "title": "Entrada sem degrau",
+        "desc": "Soleira plana e 90 cm de largura livre cumprem as recomendações europeias de acessibilidade para escritórios."
+      },
+      "safety": {
+        "title": "Testada segundo norma",
+        "desc": "Marcação CE, classificação ao fogo EN 13501-1 B-s2,d0, eletricidade certificada segundo IEC 60598. Documentação incluída na entrega."
+      }
+    },
+    "specs": {
+      "tag": "TÉCNICO",
+      "title": "Especificações",
+      "dimensionsTitle": "Dimensões",
+      "externalDimValue": "1020 × 1020 × 2260 mm",
+      "internalDimValue": "910 × 910 × 2120 mm",
+      "doorWidthValue": "900 mm livres",
+      "weightValue": "280 kg",
+      "acousticsTitle": "Desempenho acústico",
+      "noiseReductionValue": "24 dB(A)",
+      "absorberValue": "Feltro acústico de PET reciclado, 24 mm",
+      "doorSealValue": "Magnético, compressão nos quatro lados",
+      "ventilationTitle": "Ventilação",
+      "airflowValue": "4,6 m³/min",
+      "fanCountValue": "4 × ventiladores EC silenciosos",
+      "occupancyValue": "Sensor PIR com temporização",
+      "electricsTitle": "Eletricidade",
+      "powerValue": "1 × Schuko 230V na secretária",
+      "usbValue": "1 × USB-C PD 60W · 1 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimerizável",
+      "consumptionValue": "~80W habitual, 220W máx.",
+      "materialsTitle": "Materiais",
+      "frameValue": "Aço com revestimento a pó",
+      "glassValue": "Vidro temperado de segurança 8 mm",
+      "interiorValue": "Feltro de PET reciclado, tratado ignífugo",
+      "floorValue": "Mosaicos de alcatifa uso comercial",
+      "warrantyTitle": "Garantia e entrega",
+      "structuralValue": "5 anos",
+      "electronicsValue": "2 anos",
+      "deliveryValue": "4–6 semanas a partir da encomenda"
+    },
+    "addons": {
+      "tag": "OPCIONAL",
+      "title": "Configure à sua medida",
+      "description": "Solo Flex é entregue totalmente equipada, mas as opções seguintes estão disponíveis para projetos que delas necessitem.",
+      "sitStandDesk": {
+        "title": "Secretária sentado-em pé elétrica",
+        "desc": "Atualize de regulação manual para regulação elétrica com posições de memória. Recomendado para cabines partilhadas."
+      },
+      "monitorMount": {
+        "title": "Braço para monitor",
+        "desc": "Braço individual compatível VESA com passagem de cabos pela secretária. Suporta até 27\"."
+      },
+      "cableManagement": {
+        "title": "Atualização de gestão de cabos",
+        "desc": "Canal-guia com tampa de libertação rápida. Adiciona um segundo circuito elétrico se necessário."
+      },
+      "shelf": {
+        "title": "Prateleira sobre a secretária",
+        "desc": "Prateleira flutuante para auscultadores, bloco ou plantas. Montada à altura dos olhos, 240 × 150 mm."
+      },
+      "extraFan": {
+        "title": "Ventilação reforçada",
+        "desc": "Dois ventiladores adicionais para uso em verão intenso ou instalações junto a envidraçamentos orientados a sul."
+      },
+      "fabricPanel": {
+        "title": "Tecido personalizado",
+        "desc": "Substitua o tecido exterior por uma cor da sua paleta de marca. Doze cores padrão; sob medida a pedido."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "De quatro a seis semanas a partir da confirmação da encomenda para configurações padrão. Tecido ou acabamento personalizado acrescenta duas a três semanas. Entrega expresso disponível para modelos em stock selecionados."
+        },
+        "noiseReduction": {
+          "question": "Quanto ruído bloqueia realmente a Solo Flex?",
+          "answer": "Aproximadamente 24 dB(A) de redução nas frequências da voz, medido segundo ISO 23351-1. Na prática: uma conversa em volume normal fora da cabine ouve-se lá dentro como um murmúrio distante, e vice-versa."
+        },
+        "installation": {
+          "question": "A instalação requer obra?",
+          "answer": "Não. Solo Flex é autoportante e liga a uma tomada Schuko padrão. Duas pessoas montam-na no local em menos de três horas. A instalação na UE é oferecida como opção padrão."
+        },
+        "ventilation": {
+          "question": "Como funciona a ventilação?",
+          "answer": "Quatro ventiladores EC funcionam continuamente quando a cabine está ocupada, renovando 4,6 m³/min de ar. Um sensor PIR desliga os ventiladores cerca de um minuto após ficar vazia. Este comportamento é ajustável a partir do painel de parede."
+        },
+        "warranty": {
+          "question": "O que cobre a garantia?",
+          "answer": "Cinco anos sobre a estrutura — armação, vidro, painéis, mecanismo de porta. Dois anos sobre eletrónica — ventiladores, sensores, driver LED. Peças de desgaste (vedantes da porta, tecido) excluídas. Condições completas na entrega."
+        }
+      }
+    }
+  },
+  "duoPage": {
+    "hero": {
+      "tag": "CABINE EM DUAS CONFIGURAÇÕES",
+      "title": "Duo",
+      "tagline": "Uma carcaça. Dois espaços completamente diferentes.",
+      "description": "Duo é uma única cabine que se compromete genuinamente com dois usos. A configuração Flex coloca uma pequena secretária elétrica ao centro — duas pessoas, frente a frente, para uma reunião focada. A configuração Work instala uma secretária de largura total numa parede — uma pessoa, três monitores, um posto de trabalho a sério. Escolhe-se qual encaixa no piso ao fazer a encomenda.",
+      "statFootprint": "Pegada",
+      "statWeight": "Peso líquido",
+      "statConfigs": "Configurações"
+    },
+    "overview": {
+      "tag": "UMA CABINE, DOIS ESPAÇOS",
+      "title": "Uma cabine que justifica o seu lugar duas vezes.",
+      "description": "A carcaça da Duo é idêntica entre configurações — mesma ventilação, mesma acústica, mesma eletricidade. O que muda é o interior: uma secretária elétrica central para reuniões a dois, ou uma secretária elétrica de parede para trabalho solo concentrado. A escolha faz-se na encomenda, não na instalação.",
+      "feature1": "Mesma pegada externa independentemente da configuração",
+      "feature2": "Secretária elétrica com altura regulável em ambos os modos",
+      "feature3": "Duas tomadas 230V e equipamento USB completo",
+      "feature4": "Resolve o dilema sala de chamadas / sala de foco numa só compra"
+    },
+    "acoustics": {
+      "tag": "DESEMPENHO ACÚSTICO",
+      "title": "Feita para a conversa, vedada contra tudo o resto.",
+      "description": "O maior volume da Duo exige isolamento proporcionalmente superior. A envolvente — absorvente de PET reciclado, estrutura de aço de dupla pele, vidro laminado vedado — entrega cerca de 26 dB(A) de redução de voz, plenamente em território de sala de reuniões.",
+      "dbValue": "26",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Redução de frequências da voz (Dn,T,A) medida segundo ISO 23351-1."
+    },
+    "configurations": {
+      "tag": "ESCOLHA O SEU LAYOUT",
+      "title": "Flex ou Work — mesma cabine, outra sala.",
+      "description": "Ambas as configurações são entregues como Duo. A única diferença é como a secretária está montada. Também pode trocar mais tarde — o kit de conversão é meia jornada de serviço no local.",
+      "flex": {
+        "letter": "f",
+        "name": "Flex",
+        "heading": "Duas pessoas, frente a frente.",
+        "description": "Uma pequena secretária elétrica fica ao centro da cabine, suficiente para dois portáteis e dois blocos. Bancos ou cadeiras flanqueiam-na — a maioria dos clientes escolhe os bancos integrados. Ideal para entrevistas, reuniões um-para-um e reuniões curtas em pé.",
+        "point1": "Secretária central, 45 × 46 cm, altura regulável eletricamente",
+        "point2": "Regulação contínua entre 80 e 120 cm",
+        "point3": "Eletricidade em ambas as extremidades do tampo",
+        "point4": "Bancos opcionais; uso em pé contemplado no design",
+        "capacity": "2 pessoas",
+        "deskSize": "45 × 46 cm",
+        "deskHeight": "80–120 cm"
+      },
+      "work": {
+        "letter": "w",
+        "name": "Work",
+        "heading": "Uma pessoa, uma secretária a sério.",
+        "description": "Uma secretária elétrica de largura total percorre uma parede, suficientemente profunda para três monitores ou um portátil com periféricos. A outra parede fica livre, o que evita que a cabine se torne opressiva mesmo após quatro horas.",
+        "point1": "Secretária de parede, 104 × 60 cm, altura regulável eletricamente",
+        "point2": "Regulação contínua entre 71 e 120 cm",
+        "point3": "Duas tomadas e USB na secretária",
+        "point4": "Passagem de cabos oculta pelo canal da perna",
+        "capacity": "1 pessoa",
+        "deskSize": "104 × 60 cm",
+        "deskHeight": "71–120 cm"
+      }
+    },
+    "features": {
+      "tag": "INTEGRADO",
+      "title": "O que vem de série em ambas as configurações.",
+      "switchable": {
+        "title": "Pronta a converter",
+        "desc": "As duas secretárias montam-se no mesmo carril interior. Mudar de configuração mais tarde é meia jornada de serviço no local — sem reconstrução, sem substituição."
+      },
+      "ventilation": {
+        "title": "Ventilação em duas zonas",
+        "desc": "Oito ventiladores entregam 9,2 m³/min — dimensionados para dois ocupantes em conversa ativa, o pior caso para acumulação de CO₂."
+      },
+      "electrics": {
+        "title": "Dois circuitos elétricos",
+        "desc": "Circuitos 230V independentes em cada parede. USB-C PD 60W e USB-A no tampo. Passagem de cabos oculta."
+      },
+      "lighting": {
+        "title": "Iluminação ao nível de reunião",
+        "desc": "LED dimerizável quente/frio adequada a videochamadas. Iluminação uniforme dos dois rostos no modo Flex — sem sombras nos olhos."
+      },
+      "accessibility": {
+        "title": "Entrada larga sem degrau",
+        "desc": "100 cm de largura livre de porta — cumpre as recomendações europeias de acessibilidade e admite cadeiras de rodas. Soleira plana."
+      },
+      "safety": {
+        "title": "Testada segundo norma",
+        "desc": "Marcação CE, classificação ao fogo EN 13501-1 B-s2,d0, eletricidade certificada segundo IEC 60598. Padrão em cada entrega."
+      }
+    },
+    "specs": {
+      "tag": "TÉCNICO",
+      "title": "Especificações",
+      "dimensionsTitle": "Dimensões",
+      "externalDimValue": "1640 × 1200 × 2260 mm",
+      "internalDimValue": "1530 × 1090 × 2120 mm",
+      "doorWidthValue": "1000 mm livres",
+      "weightValue": "420 kg",
+      "acousticsTitle": "Desempenho acústico",
+      "noiseReductionValue": "26 dB(A)",
+      "absorberValue": "Feltro acústico de PET reciclado, 24 mm",
+      "doorSealValue": "Magnético, compressão nos quatro lados",
+      "ventilationTitle": "Ventilação",
+      "airflowValue": "9,2 m³/min",
+      "fanCountValue": "8 × ventiladores EC silenciosos",
+      "occupancyValue": "Sensor PIR com temporização",
+      "electricsTitle": "Eletricidade",
+      "powerValue": "2 × Schuko 230V (circuitos independentes)",
+      "usbValue": "2 × USB-C PD 60W · 2 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimerizável",
+      "consumptionValue": "~140W habitual, 380W máx.",
+      "materialsTitle": "Materiais",
+      "frameValue": "Aço com revestimento a pó, dupla pele",
+      "glassValue": "Vidro temperado de segurança 8 mm",
+      "interiorValue": "Feltro de PET reciclado, tratado ignífugo",
+      "floorValue": "Mosaicos de alcatifa uso comercial",
+      "warrantyTitle": "Garantia e entrega",
+      "structuralValue": "5 anos",
+      "electronicsValue": "2 anos",
+      "deliveryValue": "4–6 semanas a partir da encomenda"
+    },
+    "addons": {
+      "tag": "OPCIONAL",
+      "title": "Configure à sua medida",
+      "description": "Duo é entregue totalmente equipada em qualquer das configurações. As opções seguintes alargam-na para usos específicos.",
+      "electricDesk": {
+        "title": "Secretária com posições de memória",
+        "desc": "Amplie a secretária elétrica com três posições de altura memorizadas — útil quando a cabine é partilhada por vários utilizadores."
+      },
+      "monitorMount": {
+        "title": "Braços para monitor (simples ou duplo)",
+        "desc": "Suportes compatíveis VESA com passagem de cabos. Recomendado para configuração Work com vários monitores."
+      },
+      "displaySystem": {
+        "title": "Ecrã integrado na parede",
+        "desc": "Ecrã 32\" integrado na parede traseira, entradas HDMI e USB-C. Concebido para videochamadas em configuração Flex."
+      },
+      "cableManagement": {
+        "title": "Atualização de gestão de cabos",
+        "desc": "Passagem oculta com tampa de libertação rápida. Adiciona um terceiro circuito elétrico e transmissão HDMI."
+      },
+      "extraSeating": {
+        "title": "Bancos integrados",
+        "desc": "Dois bancos revestidos em tecido acústico que encaixam na configuração Flex. Empilháveis junto à parede quando não estão em uso."
+      },
+      "fabricPanel": {
+        "title": "Tecido personalizado",
+        "desc": "Substitua o tecido exterior por uma cor da sua paleta de marca. Doze cores padrão; sob medida a pedido."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "De quatro a seis semanas a partir da confirmação da encomenda. Tecido ou acabamento personalizado acrescenta duas a três semanas. A escolha de configuração não afeta o prazo — ambas saem da mesma linha de produção."
+        },
+        "configChoice": {
+          "question": "Como escolho entre Flex e Work?",
+          "answer": "Se a sua equipa precisa de mais salas para reuniões um-para-um, escolha Flex. Se precisa de mais salas para trabalho de foco individual, escolha Work. A maioria dos clientes mistura ambas num piso. A nossa equipa pode ajudá-lo a modelar o rácio adequado para o seu efetivo."
+        },
+        "switchConfig": {
+          "question": "Posso mudar de Flex para Work mais tarde?",
+          "answer": "Sim. As duas secretárias montam-se no mesmo carril interior. Uma conversão no local demora aproximadamente meia jornada. O kit de conversão está disponível como compra separada."
+        },
+        "noiseReduction": {
+          "question": "Quão bem isola a Duo do ruído?",
+          "answer": "Cerca de 26 dB(A) de redução nas frequências da voz, segundo ISO 23351-1. Na prática: uma conversa em volume normal lá dentro fica no limite do audível lá fora. Duas pessoas podem manter uma reunião com confiança junto a uma secretária de open space."
+        },
+        "warranty": {
+          "question": "O que cobre a garantia?",
+          "answer": "Cinco anos sobre a estrutura — armação, vidro, painéis, mecanismo de porta. Dois anos sobre eletrónica — ventiladores, sensores, driver LED, motor da secretária elétrica. Peças de desgaste (vedantes da porta, tecido) excluídas. Condições completas na entrega."
+        }
+      }
+    }
+  },
+  "modularXlPage": {
+    "hero": {
+      "tag": "POD DE REUNIÃO ESCALÁVEL",
+      "title": "Modular XL",
+      "tagline": "Uma sala de reuniões que se alonga quando precisa de mais cadeiras.",
+      "description": "Modular XL é a maior cabine da gama Re-Sound — e a única concebida para crescer após a instalação. A base acomoda confortavelmente seis pessoas. A partir daí, segmentos modulares de 90 cm prolongam a cabine em qualquer direção, até uma capacidade máxima de dez. Mesmo desempenho acústico, mesma lógica de ventilação, à escala.",
+      "statFootprint": "Pegada base",
+      "statWeight": "Peso base",
+      "statCapacity": "Capacidade máx."
+    },
+    "overview": {
+      "tag": "À ESCALA DE SALA DE REUNIÕES",
+      "title": "Quando uma cabine tem de ser uma sala.",
+      "description": "Modular XL é construída para o tipo de conversas que não cabem numa cabine telefónica: apresentações a clientes, workshops internos, reuniões híbridas de equipa. A envolvente acústica isola o suficiente para que um debate aceso não chegue ao open space, e um workshop dentro não seja interrompido pela impressora lá fora.",
+      "feature1": "Módulo base acomoda até 6 pessoas sentadas",
+      "feature2": "Segmentos de 90 cm estendem a cabine até 10",
+      "feature3": "Redução de voz de 25,9 dB(A) — classe sala de reuniões",
+      "feature4": "Equipamento A/V completo e entrada acessível por design"
+    },
+    "acoustics": {
+      "tag": "DESEMPENHO ACÚSTICO",
+      "title": "Isolamento de sala de reuniões, numa carcaça móvel.",
+      "description": "O maior volume da Modular XL implica uma reverberação interior naturalmente menor — o som tem mais ar onde se dissipar. Combinado com a envolvente (absorvente de PET reciclado, estrutura de aço, vidro laminado vedado), entrega 25,9 dB(A) de redução de voz mesmo em configuração totalmente estendida.",
+      "dbValue": "25,9",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Redução de frequências da voz (Dn,T,A) medida segundo ISO 23351-1."
+    },
+    "modular": {
+      "tag": "ARQUITETURA MODULAR",
+      "title": "Adiciona 90 cm de cada vez. Tantos quantos a sala permita.",
+      "description": "Cada segmento é uma extensão autónoma de 90 cm que se aparafusa ao carril estrutural da cabine. O segmento traz a sua própria ventilação (quatro ventiladores de insuflação + quatro de extração) e iluminação, dimensionados para manter o conforto à medida que a ocupação cresce.",
+      "baseLabel": "Módulo base",
+      "baseTag": "BASE · 6 PAX",
+      "scaleLabel": "ESTENDER",
+      "scenario1": {
+        "size": "BASE",
+        "title": "Stand-up de equipa",
+        "description": "Seis pessoas em torno de uma mesa central. Adequado para stand-ups diárias, revisões de design e pequenas demos a clientes. Cabe na maioria dos pisos de escritório sem reorganização."
+      },
+      "scenario2": {
+        "size": "BASE + 1",
+        "title": "Workshop",
+        "description": "Oito pessoas, um segmento de extensão. Sentadas ou em pé. Comporta dois quadros brancos mais um ecrã de parede. Adequado para sessões de trabalho de meio dia."
+      },
+      "scenario3": {
+        "size": "BASE + 2",
+        "title": "All-hands",
+        "description": "Dez pessoas, dois segmentos de extensão. Disposição em ferradura em torno de um ecrã. A maior configuração; considere uma localização permanente neste tamanho."
+      }
+    },
+    "features": {
+      "tag": "INTEGRADO",
+      "title": "O que vem de série, antes de adicionar opções.",
+      "modular": {
+        "title": "Ampliável no local",
+        "desc": "Os segmentos aparafusam-se após a instalação. Acrescentar capacidade mais tarde não requer uma cabine nova — apenas meia jornada de serviço por segmento."
+      },
+      "ventilation": {
+        "title": "Ventilação à escala",
+        "desc": "16 ventiladores entregam 18,4 m³/min na base. Cada segmento adiciona 4 de insuflação + 4 de extração, pelo que o caudal escala com a ocupação."
+      },
+      "electrics": {
+        "title": "Energia distribuída",
+        "desc": "Vários circuitos 230V ao longo do carril da parede, com USB-C e USB-A em cada lugar. Cada segmento adiciona a sua própria zona elétrica."
+      },
+      "lighting": {
+        "title": "Iluminação de qualidade workshop",
+        "desc": "LED dimerizável quente/frio com zonas separadas para tarefas de ecrã e de escrita. Controlável a partir do painel de parede."
+      },
+      "accessibility": {
+        "title": "Acessível a cadeiras de rodas",
+        "desc": "110 cm de largura livre de porta e soleira plana são compatíveis com cadeiras de rodas. A distribuição interior reserva lugar para um utilizador em cadeira na mesa."
+      },
+      "safety": {
+        "title": "Testada segundo norma",
+        "desc": "Marcação CE, classificação ao fogo EN 13501-1 B-s2,d0, eletricidade certificada segundo IEC 60598. Documentação incluída na entrega."
+      }
+    },
+    "specs": {
+      "tag": "TÉCNICO",
+      "title": "Especificações",
+      "dimensionsTitle": "Dimensões base",
+      "externalDimValue": "2400 × 1800 × 2260 mm",
+      "internalDimValue": "2290 × 1690 × 2120 mm",
+      "doorWidthValue": "1100 mm livres",
+      "weightValue": "790 kg",
+      "extensionTitle": "Segmento de extensão",
+      "segmentSizeValue": "900 × 1800 × 2260 mm",
+      "segmentWeightValue": "280 kg",
+      "segmentFansValue": "4 insuflação + 4 extração",
+      "segmentPowerValue": "40W ativo",
+      "acousticsTitle": "Desempenho acústico",
+      "noiseReductionValue": "25,9 dB(A)",
+      "absorberValue": "Feltro acústico de PET reciclado, 24 mm",
+      "doorSealValue": "Magnético, compressão nos quatro lados",
+      "ventilationTitle": "Ventilação (base)",
+      "airflowValue": "18,4 m³/min",
+      "fanCountValue": "16 × ventiladores EC silenciosos",
+      "occupancyValue": "Sensor PIR com temporização",
+      "clearancesTitle": "Espaços livres de instalação",
+      "ceilingValue": "Mínimo 2600 mm",
+      "sideValue": "400 mm de cada lado",
+      "frontValue": "1100 mm em frente à porta",
+      "warrantyTitle": "Garantia e entrega",
+      "structuralValue": "5 anos",
+      "electronicsValue": "2 anos",
+      "deliveryValue": "6–8 semanas a partir da encomenda"
+    },
+    "addons": {
+      "tag": "OPCIONAL",
+      "title": "Configure à sua medida",
+      "description": "Modular XL é entregue pronta para reuniões na configuração base. As opções seguintes alargam-na para workshops, chamadas híbridas e apresentações.",
+      "meetingTable": {
+        "title": "Mesa de reuniões",
+        "desc": "Mesa com tampo maciço dimensionada para a sua configuração — redonda para o módulo base, oval ou em forma de boardroom para configurações estendidas."
+      },
+      "displaySystem": {
+        "title": "Ecrã de parede (55\"/65\"/75\")",
+        "desc": "Ecrã integrado na parede traseira com entradas HDMI, USB-C e sem fios. A maioria dos clientes escolhe 65\" para o módulo base."
+      },
+      "videoConference": {
+        "title": "Kit de videoconferência",
+        "desc": "Microfone de teto integrado, câmara 4K grande angular, altifalante de conferência. Certificado para Microsoft Teams Rooms e Zoom Rooms."
+      },
+      "cableManagement": {
+        "title": "Atualização de gestão de cabos",
+        "desc": "Passagem oculta sob a mesa com saídas em cada lugar. Adiciona transmissão HDMI e USB-C."
+      },
+      "whiteboard": {
+        "title": "Quadro de parede",
+        "desc": "Superfície magnética de apagar a seco numa parede inteira. Combina naturalmente com a disposição de workshop."
+      },
+      "fabricPanel": {
+        "title": "Tecido personalizado",
+        "desc": "Substitua o tecido exterior por uma cor da sua paleta de marca. Doze cores padrão; sob medida a pedido."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Qual é o prazo de entrega padrão?",
+          "answer": "De seis a oito semanas a partir da confirmação da encomenda para o módulo base. Cada segmento adicional acrescenta uma a duas semanas. Tecido ou acabamento personalizado acrescenta mais duas a três semanas."
+        },
+        "scaleUp": {
+          "question": "Posso adicionar segmentos mais tarde?",
+          "answer": "Sim — é exatamente para isso que a Modular XL foi concebida. Adicionar um segmento é meia jornada de serviço por segmento. A cabine é construída para pelo menos dois ciclos de extensão após a instalação inicial."
+        },
+        "ceilingHeight": {
+          "question": "Que altura de teto preciso?",
+          "answer": "Mínimo 2600 mm. A cabine tem 2260 mm de altura; recomendamos 340 mm de espaço livre acima do tejadilho para o fluxo de ar de ventilação. Tetos mais baixos são possíveis com número reduzido de ventiladores — contacte-nos primeiro."
+        },
+        "capacity": {
+          "question": "Qual é a capacidade realista por tamanho?",
+          "answer": "Módulo base: seis sentadas com conforto, oito em pé. Uma extensão: oito sentadas, dez em pé. Duas extensões: dez sentadas, doze em pé. A capacidade máxima assume utilização sentada; não recomendamos projetar para utilização exclusivamente em pé."
+        },
+        "warranty": {
+          "question": "O que cobre a garantia?",
+          "answer": "Cinco anos sobre a estrutura — armação, vidro, painéis, mecanismo de porta — em base e segmentos. Dois anos sobre eletrónica — ventiladores, sensores, driver LED. Peças de desgaste (vedantes da porta, tecido) excluídas. Condições completas na entrega."
+        }
       }
     }
   }

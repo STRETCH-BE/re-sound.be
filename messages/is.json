@@ -33,7 +33,13 @@
     "rpetFlexGrooveTitle": "rPET Flex Groove sveigjanleg hljóðplötur | Re-Sound",
     "rpetFlexGrooveDescription": "Sveigjanlegar rifluðar hljóðplötur úr 100% endurunnu PET. Beygjanlegar fyrir bogna fleti, súlur og sérsmíðaðar uppsetningar. OEKO-TEX®-vottaðar.",
     "faqTitle": "FAQ — Re-Sound Hljóðplötur",
-    "faqDescription": "Svör við algengum spurningum um Re-Sound hljóðplötur: hvernig ísog virkar, eldvarnarflokkanir, afhendingartímar, hringrásar-skilaforrit og vöruval."
+    "faqDescription": "Svör við algengum spurningum um Re-Sound hljóðplötur: hvernig ísog virkar, eldvarnarflokkanir, afhendingartímar, hringrásar-skilaforrit og vöruval.",
+    "duoDescription": "Einn klefi, tvær uppsetningar: Flex rúmar tvo til einbeitts fundar; Work veitir einum manni skrifborð í fullri breidd. 2 m² fótspor, rafdrifið skrifborð, 230V tengill, full loftræsting. Re-Sound hljóðlína.",
+    "soloFlexDescription": "Hljóðeinangraður símaklefi fyrir einn, hannaður fyrir einbeitt símtöl og djúpa vinnu. 1 m² fótspor, innbyggt sit-stand skrifborð, 230V tengill, USB-C og hljóðlát loftræsting. Hluti af Re-Sound klefaröðinni.",
+    "modularXlDescription": "Skalanlegur hljóðeinangraður fundarklefi. Grunnurinn rúmar 6 manns, hægt að stækka í 10 með 90 cm einingum. 25,9 dB(A) talskerðing, fullur A/V búnaður, aðgengilegur inngangur frá hönnun.",
+    "modularXlTitle": "Modular XL Skalanlegur hljóðeinangraður fundarklefi | Re-Sound",
+    "duoTitle": "Duo Hljóðeinangraður klefi í tveimur uppsetningum | Re-Sound",
+    "soloFlexTitle": "Solo Flex Hljóðeinangraður einmannsklefi | Re-Sound"
   },
   "nav": {
     "products": "Vörur",
@@ -163,7 +169,10 @@
       "showingAll": "Showing all {count} products",
       "showingFiltered": "Showing {filtered} of {total} products",
       "noResults": "Engar vörur passa við síurnar þínar",
-      "clearAndShowAll": "Hreinsa síur og sýna allt"
+      "clearAndShowAll": "Hreinsa síur og sýna allt",
+      "panel": "Hljóðplötur",
+      "use": "Notkun",
+      "booth": "Hljóðklefar"
     },
     "interior": {
       "title": "Interior",
@@ -252,6 +261,18 @@
         "title": "Custom Options",
         "description": "Available in 50+ colors and custom sizes to match your design vision."
       }
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Einn klefi, tvær uppsetningar. Flex sætir tvo á fund; Work veitir einum fullbúið skrifborð. 26 dB(A) skerðing."
+    },
+    "solo-flex": {
+      "title": "Solo Flex",
+      "description": "Hljóðeinangraður klefi fyrir einn, fyrir einbeitt símtöl og djúpa vinnu. 1 m² fótspor, innbyggt sit-stand skrifborð, 24 dB(A) talskerðing."
+    },
+    "modular-xl": {
+      "title": "Modular XL",
+      "description": "Skalanlegur fundarklefi. Grunnur fyrir 6, stækkar í 10 með 90 cm einingum. 25,9 dB(A) talskerðing."
     }
   },
   "specs": {
@@ -2836,6 +2857,574 @@
         "category": "commercial",
         "question": "Hvernig bið ég um tilboð?",
         "answer": "Notaðu samskiptaformið á vörusíðu eða almenna samskiptaformið með: vörulínunni sem þú hefur áhuga á, áætluðu magni eða grunnteikningu og verkefnatímalínunni þinni. Við svörum innan eins virkrar dags með sérsniðnu tilboði, sýnishornafyrirkomulagi og útreikningi á væntanlegri hljóðbót. Fyrir stærri verkefni getum við skipulagt heimsókn á staðinn eða stutta kynningu."
+      }
+    }
+  },
+  "boothPage": {
+    "nav": {
+      "overview": "Yfirlit",
+      "acoustics": "Hljóðvist",
+      "configurations": "Uppsetningar",
+      "modular": "Eininga­byggt",
+      "features": "Eiginleikar",
+      "specs": "Tækniupplýsingar",
+      "addons": "Valkostir",
+      "downloads": "Niðurhal"
+    },
+    "cta": {
+      "requestQuote": "Biðja um tilboð",
+      "viewSpecifications": "Sjá tækniupplýsingar",
+      "callUs": "Hringdu í okkur: +32 3 284 68 18",
+      "ctaTitle": "Tilbúin að hanna rýmið þitt?",
+      "ctaSubtitle": "Teymið okkar hjálpar þér að velja réttan klefa, stilla valkosti og skipuleggja afhendingu. Tilboð skila sér yfirleitt á einum virkum degi.",
+      "deliveryNote": "Afhending um alla ESB · Uppsetning í boði · 5 ára ábyrgð á grind"
+    },
+    "acoustics": {
+      "benefitSpeech": {
+        "title": "Skýrari talskilningur",
+        "desc": "Veruleg lækkun bakgrunnshávaða leyfir hverju orði að komast til skila — bæði innan og utan klefans."
+      },
+      "benefitFocus": {
+        "title": "Styrkt einbeiting",
+        "desc": "Hljóðlátari umgjörð kallar fram mælanleg umskipti í dýpri athygli innan sekúndna eftir að gengið er inn."
+      },
+      "benefitStress": {
+        "title": "Minni hugrænt álag",
+        "desc": "Minni umhverfishávaði dregur úr hlustunarviðleitni sem heilinn leggur stöðugt fram — minni þreyta, meiri afköst."
+      }
+    },
+    "configurations": {
+      "capacity": "Rýmd",
+      "deskSize": "Stærð skrifborðs",
+      "deskHeight": "Hæð skrifborðs"
+    },
+    "specs": {
+      "externalDim": "Ytri mál (B × D × H)",
+      "internalDim": "Innri mál (B × D × H)",
+      "doorWidth": "Hurðabreidd",
+      "weight": "Nettóþyngd",
+      "noiseReduction": "Talskerðing Dn,T,A",
+      "absorberMaterial": "Hljóðdeyfir",
+      "doorSeal": "Hurðaþéttihringur",
+      "airflow": "Loftflæði",
+      "fanCount": "Fjöldi viftna",
+      "occupancySensor": "Viðverustjórnari",
+      "powerSockets": "Tenglar",
+      "usb": "USB-hleðsla",
+      "lighting": "Lýsing",
+      "totalConsumption": "Heildaraflþörf",
+      "frame": "Grind",
+      "glass": "Gler",
+      "interior": "Innri klæðning",
+      "floor": "Gólf",
+      "structural": "Grindarábyrgð",
+      "electronics": "Rafeindaábyrgð",
+      "delivery": "Staðlaður afhendingartími",
+      "segmentSize": "Eininga­mál",
+      "segmentWeight": "Eininga­þyngd",
+      "segmentFans": "Viftur á einingu",
+      "segmentPower": "Afl á einingu",
+      "ceilingHeight": "Lágmarks lofthæð",
+      "sideClearance": "Hliðarrými",
+      "frontClearance": "Framrými"
+    },
+    "downloads": {
+      "tag": "GÖGN",
+      "title": "Skjöl",
+      "productDataSheet": "Vörublað",
+      "installationManual": "Uppsetningarleiðbeiningar",
+      "acousticTestReport": "Hljóðprófunarskýrsla",
+      "cadDrawing": "CAD-teikning (DWG)",
+      "warranty": "Ábyrgðarvottorð",
+      "sustainability": "Sjálfbærniyfirlýsing"
+    },
+    "crosslinks": {
+      "tag": "EINNIG Í RÖÐINNI",
+      "title": "Aðrir hljóðklefar í röðinni",
+      "solo-flex": {
+        "name": "Solo Flex",
+        "tag": "Einmannsklefi"
+      },
+      "duo": {
+        "name": "Duo",
+        "tag": "Klefi í tveimur uppsetningum"
+      },
+      "modular-xl": {
+        "name": "Modular XL",
+        "tag": "Skalanlegur fundarklefi"
+      }
+    }
+  },
+  "soloFlexPage": {
+    "hero": {
+      "tag": "HLJÓÐEINANGRAÐUR EINMANNSKLEFI",
+      "title": "Solo Flex",
+      "tagline": "Einn fermetri af kyrrð, hvar sem þú þarft hana.",
+      "description": "Solo Flex er hljóðeinangraður klefi fyrir einn, byggður fyrir einbeitt símtöl, fjarfundi og djúpa vinnu. Lítið fótspor, einlægt skrifborð sem fer úr sitjandi í standandi, og sú tegund hljóðeinangrunar sem lætur opna skrifstofuna hverfa.",
+      "statFootprint": "Fótspor",
+      "statWeight": "Nettóþyngd",
+      "statWarranty": "Ábyrgð"
+    },
+    "overview": {
+      "tag": "EINN KLEFI, EINN MAÐUR, ENGAR MÁLAMIÐLANIR",
+      "title": "Einbeiting gerð áþreifanleg.",
+      "description": "Solo Flex var hannaður út frá einum einföldum þætti: gefa einum manni allt sem þarf fyrir afkastamikla vinnustund, og ekkert sem truflar. Útkoman: klefi sem passar á milli skrifborða án þess að breyta hæðinni — og finnst ekki eins og kassi.",
+      "feature1": "1 m² fótspor passar í nær hvaða skrifstofuútlit sem er",
+      "feature2": "Sit-stand skrifborð stillanlegt frá 73 í 103 cm",
+      "feature3": "230V tengill auk USB-C og USB-A við skrifborðið",
+      "feature4": "Hljóðlát loftræsting kveikir sig við innkomu"
+    },
+    "acoustics": {
+      "tag": "HLJÓÐEIGINLEIKAR",
+      "title": "Kyrrð er hönnuð.",
+      "description": "Marglaga veggbygging — endurunnar PET-deyfir, stálgrind, þétt lagskipt gler — minnkar tal um u.þ.b. 24 dB(A). Til viðmiðunar: venjuleg rödd hinum megin við klefavegginn hljómar að innan eins og fjarlæg muldra.",
+      "dbValue": "24",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Talskerðing (Dn,T,A) mæld samkvæmt ISO 23351-1."
+    },
+    "features": {
+      "tag": "STAÐALBÚNAÐUR",
+      "title": "Hvað er staðalbúnaður og hvers vegna skiptir það máli.",
+      "ventilation": {
+        "title": "Hljóðlát loftræsting",
+        "desc": "Fjórar viftur skila 4,6 m³/mín, meira en nóg fyrir einn. Hljóðstig helst undir 30 dB(A) við notandastöðu."
+      },
+      "electrics": {
+        "title": "Rafmagn þar sem þú situr",
+        "desc": "230V tengill, USB-C (PD 60W) og USB-A felld inn í borðplötu. Engar framlengingarsnúrur í gegnum hurðina."
+      },
+      "lighting": {
+        "title": "Stillanleg lýsing",
+        "desc": "Hlý/köld dimmanleg LED-lýsing með handvirkri stýringu. Stillt fyrir hreina húðtóna í myndavél."
+      },
+      "comfort": {
+        "title": "Sit-stand skrifborð",
+        "desc": "Handvirk hæðarstilling milli 73 og 103 cm. Borðflötur 80 × 33 cm — nóg pláss fyrir fartölvu, glósubók og kaffi."
+      },
+      "accessibility": {
+        "title": "Þröskuldlaust aðgengi",
+        "desc": "Flatur þröskuldur og 90 cm laus hurðabreidd uppfylla evrópskar leiðbeiningar um aðgengi á skrifstofum."
+      },
+      "safety": {
+        "title": "Prófað samkvæmt staðli",
+        "desc": "CE-merkt, brunaflokkur EN 13501-1 B-s2,d0, rafmagn vottað samkvæmt IEC 60598. Skjöl fylgja við afhendingu."
+      }
+    },
+    "specs": {
+      "tag": "TÆKNI",
+      "title": "Tækniupplýsingar",
+      "dimensionsTitle": "Mál",
+      "externalDimValue": "1020 × 1020 × 2260 mm",
+      "internalDimValue": "910 × 910 × 2120 mm",
+      "doorWidthValue": "900 mm laust",
+      "weightValue": "280 kg",
+      "acousticsTitle": "Hljóðeiginleikar",
+      "noiseReductionValue": "24 dB(A)",
+      "absorberValue": "Hljóðfilt úr endurunnu PET, 24 mm",
+      "doorSealValue": "Segulmagnaður, fjórhliða þrýstiþéttihringur",
+      "ventilationTitle": "Loftræsting",
+      "airflowValue": "4,6 m³/mín",
+      "fanCountValue": "4 × hljóðlátar EC-viftur",
+      "occupancyValue": "PIR-skynjari með eftirgangstíma",
+      "electricsTitle": "Rafmagn",
+      "powerValue": "1 × Schuko 230V við skrifborðið",
+      "usbValue": "1 × USB-C PD 60W · 1 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimmanleg",
+      "consumptionValue": "~80W dæmigert, 220W hám.",
+      "materialsTitle": "Efni",
+      "frameValue": "Duftlakkað stál",
+      "glassValue": "8 mm hert öryggisgler",
+      "interiorValue": "Filt úr endurunnu PET, brunameðhöndlað",
+      "floorValue": "Teppaflísar í atvinnuhúsnæðisgæðum",
+      "warrantyTitle": "Ábyrgð og afhending",
+      "structuralValue": "5 ár",
+      "electronicsValue": "2 ár",
+      "deliveryValue": "4–6 vikur frá pöntun"
+    },
+    "addons": {
+      "tag": "VALKVÆMT",
+      "title": "Stilltu eftir þínum þörfum",
+      "description": "Solo Flex er afhentur fullbúinn, en eftirtaldir valkostir eru í boði fyrir verkefni sem þarfnast þeirra.",
+      "sitStandDesk": {
+        "title": "Rafdrifið sit-stand skrifborð",
+        "desc": "Uppfærsla úr handvirkri í rafdrifna hæðarstillingu með minnisstöðum. Mælt með fyrir samnýtta klefa."
+      },
+      "monitorMount": {
+        "title": "Skjáarmur",
+        "desc": "VESA-samhæfður einskjá-armur með snúruleiðun í gegnum skrifborð. Ber allt að 27\"."
+      },
+      "cableManagement": {
+        "title": "Aukin snúrustjórnun",
+        "desc": "Snúrurás með hraðlosandi loki. Bætir við annarri rafrás ef þörf er á."
+      },
+      "shelf": {
+        "title": "Hilla yfir skrifborði",
+        "desc": "Svifandi hilla fyrir heyrnartól, glósubók eða plöntur. Sett upp í augnhæð, 240 × 150 mm."
+      },
+      "extraFan": {
+        "title": "Aukin loftræsting",
+        "desc": "Tvær viðbótarviftur fyrir notkun í hásumri eða uppsetningar nálægt suðurglerjum."
+      },
+      "fabricPanel": {
+        "title": "Sérsniðið efni",
+        "desc": "Skiptu út ytra efni fyrir lit úr vörumerkjapaletti þínum. Tólf staðallitir; sérsmíði eftir beiðni."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er staðlaður afhendingartími?",
+          "answer": "Fjórar til sex vikur frá staðfestri pöntun fyrir staðlaðar uppsetningar. Sérefni eða -áferð bætir við tveimur til þremur vikum. Hraðafhending í boði fyrir valdar lagermyndir."
+        },
+        "noiseReduction": {
+          "question": "Hversu mikinn hávaða loka Solo Flex í raun úti?",
+          "answer": "Um það bil 24 dB(A) skerðing yfir taltíðnirnar, mælt samkvæmt ISO 23351-1. Í reynd: samtal í venjulegum hljóðstyrk utan klefans heyrist innan hans eins og fjarlæg muldra, og öfugt."
+        },
+        "installation": {
+          "question": "Krefst uppsetningin byggingavinnu?",
+          "answer": "Nei. Solo Flex er sjálfstæður og tengist venjulegum Schuko-tengli. Tveir geta sett hann upp á staðnum á innan við þremur klukkustundum. Uppsetning innan ESB er í boði sem staðlaður valkostur."
+        },
+        "ventilation": {
+          "question": "Hvernig virkar loftræstingin?",
+          "answer": "Fjórar EC-viftur ganga samfellt þegar klefinn er upptekinn og skipta 4,6 m³/mín af lofti. PIR-skynjari stöðvar viftur um það bil mínútu eftir að klefinn er yfirgefinn. Þessari hegðun má breyta í veggspjaldi."
+        },
+        "warranty": {
+          "question": "Hvað nær ábyrgðin yfir?",
+          "answer": "Fimm ár á grindina — grind, gler, plötur, hurðabúnað. Tvö ár á rafeindabúnað — viftur, skynjara, LED-rekara. Slitvarahlutir (hurðaþéttingar, efni) eru undanskildir. Full skilyrði fylgja við afhendingu."
+        }
+      }
+    }
+  },
+  "duoPage": {
+    "hero": {
+      "tag": "KLEFI Í TVEIMUR UPPSETNINGUM",
+      "title": "Duo",
+      "tagline": "Eitt skel. Tvö gjörólík rými.",
+      "description": "Duo er einn klefi sem skuldbindur sig raunverulega til tveggja notkunarmöguleika. Flex-uppsetningin setur lítið rafdrifið skrifborð miðlægt — tvo, andspænis hvor öðrum, fyrir einbeitt fund. Work-uppsetningin setur upp skrifborð í fullri breidd meðfram vegg — einn mann, þrjá skjái, alvöru vinnustöð. Þú velur við pöntun hvor passar við hæðina þína.",
+      "statFootprint": "Fótspor",
+      "statWeight": "Nettóþyngd",
+      "statConfigs": "Uppsetningar"
+    },
+    "overview": {
+      "tag": "EINN KLEFI, TVÖ RÝMI",
+      "title": "Klefi sem réttlætir plássið sitt tvöfalt.",
+      "description": "Skel Duo er eins milli uppsetninga — sama loftræsting, sömu hljóðeiginleikar, sama rafmagn. Það sem breytist er innréttingin: miðlægt rafdrifið skrifborð fyrir tvímannafundi, eða veggfest rafdrifið skrifborð fyrir einbeitta einyrkjavinnu. Valið er tekið við pöntun, ekki við uppsetningu.",
+      "feature1": "Sama ytri fótspor óháð uppsetningu",
+      "feature2": "Rafdrifið hæðarstillanlegt skrifborð í báðum stillingum",
+      "feature3": "Tveir 230V tenglar og fullur USB-búnaður",
+      "feature4": "Leysir vandann símastofa/einbeitingar­stofa með einni kaupgerð"
+    },
+    "acoustics": {
+      "tag": "HLJÓÐEIGINLEIKAR",
+      "title": "Byggt fyrir samtal, þétt gegn öllu öðru.",
+      "description": "Stærra rúmmál Duo krefst hlutfallslega betri einangrunar. Veggbyggingin — endurunnar PET-deyfir, tvíhliða stálgrind, þétt lagskipt gler — skilar um 26 dB(A) talskerðingu, vel inni á fundarherbergissvæði.",
+      "dbValue": "26",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Talskerðing (Dn,T,A) mæld samkvæmt ISO 23351-1."
+    },
+    "configurations": {
+      "tag": "VELDU ÚTLITIÐ ÞITT",
+      "title": "Flex eða Work — sami klefi, annað rými.",
+      "description": "Báðar uppsetningar eru afhentar sem Duo. Eini munurinn er hvernig skrifborðið er sett upp. Þú getur líka skipt seinna — umbreytingarpakkinn er hálfur dagur af þjónustu á staðnum.",
+      "flex": {
+        "letter": "f",
+        "name": "Flex",
+        "heading": "Tveir, andspænis hvor öðrum.",
+        "description": "Lítið rafdrifið skrifborð stendur miðlægt í klefanum, einmitt nógu stórt fyrir tvær fartölvur og tvær glósubækur. Stólar eða kollar flankera það — flestir viðskiptavinir velja innbyggðu kollana. Tilvalið fyrir einkasamtöl, viðtöl og stutta standandi fundi.",
+        "point1": "Miðlægt skrifborð, 45 × 46 cm, rafdrifin hæðarstilling",
+        "point2": "Þrepalaus stilling milli 80 og 120 cm",
+        "point3": "Rafmagn á báðum endum borðplötu",
+        "point4": "Kollar valkvæmir; standandi notkun innifalin í hönnun",
+        "capacity": "2 manns",
+        "deskSize": "45 × 46 cm",
+        "deskHeight": "80–120 cm"
+      },
+      "work": {
+        "letter": "w",
+        "name": "Work",
+        "heading": "Einn maður, alvöru skrifborð.",
+        "description": "Rafdrifið skrifborð í fullri breidd liggur meðfram einum vegg, nógu djúpt fyrir þrjá skjái eða fartölvu með tengikitri. Hinn veggurinn er laus, sem hindrar að klefinn finnist þrúgandi jafnvel eftir fjórar klukkustundir.",
+        "point1": "Veggskrifborð, 104 × 60 cm, rafdrifin hæðarstilling",
+        "point2": "Þrepalaus stilling milli 71 og 120 cm",
+        "point3": "Tveir tenglar og USB við skrifborðið",
+        "point4": "Snúruleiðun falin í gegnum fótlegg",
+        "capacity": "1 maður",
+        "deskSize": "104 × 60 cm",
+        "deskHeight": "71–120 cm"
+      }
+    },
+    "features": {
+      "tag": "STAÐALBÚNAÐUR",
+      "title": "Hvað er staðalbúnaður í báðum uppsetningum.",
+      "switchable": {
+        "title": "Tilbúinn til umbreytingar",
+        "desc": "Bæði skrifborðin festast á sömu innri brautina. Að skipta um uppsetningu síðar er hálfur dagur af þjónustu á staðnum — engin endurbygging, engin endurnýjun."
+      },
+      "ventilation": {
+        "title": "Tvísvæða loftræsting",
+        "desc": "Átta viftur skila 9,2 m³/mín — stærðarsetjnar fyrir tvo notendur í virku samtali, versta tilvik fyrir CO₂-uppsöfnun."
+      },
+      "electrics": {
+        "title": "Tvær rafrásir",
+        "desc": "Sjálfstæðar 230V rásir á hvorum vegg. USB-C PD 60W og USB-A í borðplötu. Snúruleiðun falin."
+      },
+      "lighting": {
+        "title": "Lýsing á fundarstigi",
+        "desc": "Hlý/köld dimmanleg LED-lýsing, hentug fyrir myndsímtöl. Jöfn lýsing beggja andlita í Flex-stillingu — engir augnskuggar."
+      },
+      "accessibility": {
+        "title": "Breitt þröskuldlaust aðgengi",
+        "desc": "100 cm laus hurðabreidd — uppfyllir evrópskar leiðbeiningar um aðgengi og tekur við hjólastólum. Þröskuldur er flatur."
+      },
+      "safety": {
+        "title": "Prófað samkvæmt staðli",
+        "desc": "CE-merkt, brunaflokkur EN 13501-1 B-s2,d0, rafmagn vottað samkvæmt IEC 60598. Staðall með hverri afhendingu."
+      }
+    },
+    "specs": {
+      "tag": "TÆKNI",
+      "title": "Tækniupplýsingar",
+      "dimensionsTitle": "Mál",
+      "externalDimValue": "1640 × 1200 × 2260 mm",
+      "internalDimValue": "1530 × 1090 × 2120 mm",
+      "doorWidthValue": "1000 mm laust",
+      "weightValue": "420 kg",
+      "acousticsTitle": "Hljóðeiginleikar",
+      "noiseReductionValue": "26 dB(A)",
+      "absorberValue": "Hljóðfilt úr endurunnu PET, 24 mm",
+      "doorSealValue": "Segulmagnaður, fjórhliða þrýstiþéttihringur",
+      "ventilationTitle": "Loftræsting",
+      "airflowValue": "9,2 m³/mín",
+      "fanCountValue": "8 × hljóðlátar EC-viftur",
+      "occupancyValue": "PIR-skynjari með eftirgangstíma",
+      "electricsTitle": "Rafmagn",
+      "powerValue": "2 × Schuko 230V (sjálfstæðar rásir)",
+      "usbValue": "2 × USB-C PD 60W · 2 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimmanleg",
+      "consumptionValue": "~140W dæmigert, 380W hám.",
+      "materialsTitle": "Efni",
+      "frameValue": "Duftlakkað stál, tvíhliða",
+      "glassValue": "8 mm hert öryggisgler",
+      "interiorValue": "Filt úr endurunnu PET, brunameðhöndlað",
+      "floorValue": "Teppaflísar í atvinnuhúsnæðisgæðum",
+      "warrantyTitle": "Ábyrgð og afhending",
+      "structuralValue": "5 ár",
+      "electronicsValue": "2 ár",
+      "deliveryValue": "4–6 vikur frá pöntun"
+    },
+    "addons": {
+      "tag": "VALKVÆMT",
+      "title": "Stilltu eftir þínum þörfum",
+      "description": "Duo er afhentur fullbúinn í hvorri uppsetningu sem er. Eftirtaldir valkostir bæta hann fyrir sérstaka notkun.",
+      "electricDesk": {
+        "title": "Skrifborð með minnisstöðum",
+        "desc": "Bættu við rafdrifna skrifborðinu þremur minnisstöðum hæðar — gagnlegt þegar klefinn er deildur milli notenda."
+      },
+      "monitorMount": {
+        "title": "Skjáarmar (einn eða tveir)",
+        "desc": "VESA-samhæfð festingar með snúruleiðun. Mælt með fyrir Work-uppsetningu með fleiri skjáum."
+      },
+      "displaySystem": {
+        "title": "Veggfestur skjár",
+        "desc": "Innbyggður 32\" skjár á aftari vegg, HDMI- og USB-C-inntak. Hannað fyrir myndsímtöl í Flex-uppsetningu."
+      },
+      "cableManagement": {
+        "title": "Aukin snúrustjórnun",
+        "desc": "Falin leiðun með hraðlosandi loki. Bætir við þriðju rafrásinni og HDMI-flutningi."
+      },
+      "extraSeating": {
+        "title": "Innbyggðir kollar",
+        "desc": "Tveir kollar klæddir hljóðfilti sem passa í Flex-uppsetningu. Staflanlegir gegn vegg þegar ekki er í notkun."
+      },
+      "fabricPanel": {
+        "title": "Sérsniðið efni",
+        "desc": "Skiptu út ytra efni fyrir lit úr vörumerkjapaletti þínum. Tólf staðallitir; sérsmíði eftir beiðni."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er staðlaður afhendingartími?",
+          "answer": "Fjórar til sex vikur frá staðfestri pöntun. Sérefni eða -áferð bætir við tveimur til þremur vikum. Val á uppsetningu hefur ekki áhrif á afhendingartíma — báðar koma af sömu framleiðslulínu."
+        },
+        "configChoice": {
+          "question": "Hvernig vel ég milli Flex og Work?",
+          "answer": "Ef teymið þitt þarf fleiri herbergi fyrir einkasamtöl, veldu Flex. Ef það þarf fleiri herbergi fyrir einbeitta einyrkjavinnu, veldu Work. Flestir viðskiptavinir blanda saman á einni hæð. Teymið okkar getur hjálpað þér að líkana réttu hlutfallið út frá starfsfjölda þínum."
+        },
+        "switchConfig": {
+          "question": "Get ég skipt úr Flex í Work seinna?",
+          "answer": "Já. Bæði skrifborð festast á sömu innri brautina. Umbreyting á staðnum tekur um hálfan dag. Umbreytingarpakkinn er fáanlegur sem sérstakt kaup."
+        },
+        "noiseReduction": {
+          "question": "Hversu vel einangrar Duo hávaða?",
+          "answer": "Um það bil 26 dB(A) skerðing yfir taltíðnirnar, samkvæmt ISO 23351-1. Í reynd: samtal í venjulegum hljóðstyrk innan er við heyranleikamörk utan. Tveir geta haldið fund með öryggi við opna skrifstofuborð."
+        },
+        "warranty": {
+          "question": "Hvað nær ábyrgðin yfir?",
+          "answer": "Fimm ár á grindina — grind, gler, plötur, hurðabúnað. Tvö ár á rafeindabúnað — viftur, skynjara, LED-rekara, mótor rafdrifins skrifborðs. Slitvarahlutir (hurðaþéttingar, efni) eru undanskildir. Full skilyrði fylgja við afhendingu."
+        }
+      }
+    }
+  },
+  "modularXlPage": {
+    "hero": {
+      "tag": "SKALANLEGUR FUNDARKLEFI",
+      "title": "Modular XL",
+      "tagline": "Fundarherbergi sem lengist þegar þú þarft fleiri stóla.",
+      "description": "Modular XL er stærsti klefinn í Re-Sound röðinni — og sá eini sem hannaður er til að vaxa eftir uppsetningu. Grunnurinn rúmar þægilega sex manns. Þaðan lengja 90 cm einingar klefann í báðar áttir, upp í hámarksrýmd tíu. Sömu hljóðeiginleikar, sama loftræstingarrökfræði, í stækkuðum mælikvarða.",
+      "statFootprint": "Grunnur fótspors",
+      "statWeight": "Grunnþyngd",
+      "statCapacity": "Hámarksrýmd"
+    },
+    "overview": {
+      "tag": "Í FUNDARHERBERGISSTÆRÐ",
+      "title": "Þegar klefi þarf að vera herbergi.",
+      "description": "Modular XL er byggður fyrir þá tegund samtala sem passa ekki í símaklefa: kynningar fyrir viðskiptavini, innri vinnustofur, blönduð teymisfund. Hljóðskelin einangrar nógu vel til að líflegar umræður berist ekki út í opna skrifstofuna, og vinnustofa innandyra sé ekki trufluð af prentaranum úti.",
+      "feature1": "Grunneining rúmar allt að 6 sitjandi manns",
+      "feature2": "90 cm einingar lengja klefann upp í 10",
+      "feature3": "25,9 dB(A) talskerðing — fundarherbergisflokkur",
+      "feature4": "Fullur A/V búnaður og aðgengilegur inngangur frá hönnun"
+    },
+    "acoustics": {
+      "tag": "HLJÓÐEIGINLEIKAR",
+      "title": "Fundarherbergiseinangrun, í færanlegri skel.",
+      "description": "Stærra rúmmál Modular XL þýðir náttúrulega lægri endurkast innandyra — hljóðið hefur meira loft til að dreifast í. Sameinað veggbyggingunni (endurunnar PET-deyfir, stálgrind, þétt lagskipt gler) skilar hún 25,9 dB(A) talskerðingu jafnvel í fullri stækkun.",
+      "dbValue": "25,9",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Talskerðing (Dn,T,A) mæld samkvæmt ISO 23351-1."
+    },
+    "modular": {
+      "tag": "EININGABYGGÐ ARKITEKTÚR",
+      "title": "Bætir við 90 cm í einu. Eins mikið og rýmið leyfir.",
+      "description": "Hver eining er sjálfstæð 90 cm stækkun sem boltast á grindarbraut klefans. Einingin kemur með sína eigin loftræstingu (fjórar tilfærslu- + fjórar útdráttarviftur) og lýsingu, stærðarsett til að halda þægindum eftir því sem fyllingin vex.",
+      "baseLabel": "Grunneining",
+      "baseTag": "GRUNNUR · 6 PAX",
+      "scaleLabel": "STÆKKA",
+      "scenario1": {
+        "size": "GRUNNUR",
+        "title": "Teymis-standup",
+        "description": "Sex manns í kringum miðlægt borð. Hentugt fyrir daglega standup, hönnunaryfirferðir og litlar viðskiptavinakynningar. Passar á flestar skrifstofuhæðir án endurskipulagningar."
+      },
+      "scenario2": {
+        "size": "GRUNNUR + 1",
+        "title": "Vinnustofa",
+        "description": "Átta manns, ein stækkunareining. Sitjandi eða standandi. Tekur tvær töflur auk veggfests skjás. Hentugt fyrir hálfsdagsvinnu."
+      },
+      "scenario3": {
+        "size": "GRUNNUR + 2",
+        "title": "All-hands",
+        "description": "Tíu manns, tvær stækkunareiningar. Skeifufyrirkomulag í kringum skjá. Stærsta uppsetningin; íhugaðu fasta staðsetningu við þessa stærð."
+      }
+    },
+    "features": {
+      "tag": "STAÐALBÚNAÐUR",
+      "title": "Hvað er staðalbúnaður, áður en valkostir bætast við.",
+      "modular": {
+        "title": "Stækkanlegt á staðnum",
+        "desc": "Einingar boltast á eftir uppsetningu. Að auka rýmd seinna krefst ekki nýs klefa — aðeins hálfs dags af þjónustu á einingu."
+      },
+      "ventilation": {
+        "title": "Stærðarsett loftræsting",
+        "desc": "16 viftur skila 18,4 m³/mín í grunneiningu. Hver eining bætir við 4 tilfærslu + 4 útdrætti, þannig að loftflæði stækkar með fyllingu."
+      },
+      "electrics": {
+        "title": "Dreift rafmagn",
+        "desc": "Margar 230V rásir meðfram veggbrautinni, með USB-C og USB-A á hverju sæti. Hver eining bætir við sínu eigin rafsvæði."
+      },
+      "lighting": {
+        "title": "Lýsing í vinnustofugæðum",
+        "desc": "Dimmanleg hlý/köld LED-lýsing með aðskildum svæðum fyrir skjá- og skriftarverkefni. Stýrt frá veggspjaldi."
+      },
+      "accessibility": {
+        "title": "Hjólastólaaðgengilegt",
+        "desc": "110 cm laus hurðabreidd og flatur þröskuldur er samhæft við hjólastóla. Innra fyrirkomulagið skilur eftir pláss fyrir einn hjólastólanotanda við borðið."
+      },
+      "safety": {
+        "title": "Prófað samkvæmt staðli",
+        "desc": "CE-merkt, brunaflokkur EN 13501-1 B-s2,d0, rafmagn vottað samkvæmt IEC 60598. Skjöl fylgja við afhendingu."
+      }
+    },
+    "specs": {
+      "tag": "TÆKNI",
+      "title": "Tækniupplýsingar",
+      "dimensionsTitle": "Grunnmál",
+      "externalDimValue": "2400 × 1800 × 2260 mm",
+      "internalDimValue": "2290 × 1690 × 2120 mm",
+      "doorWidthValue": "1100 mm laust",
+      "weightValue": "790 kg",
+      "extensionTitle": "Stækkunareining",
+      "segmentSizeValue": "900 × 1800 × 2260 mm",
+      "segmentWeightValue": "280 kg",
+      "segmentFansValue": "4 tilfærsla + 4 útdráttur",
+      "segmentPowerValue": "40W virkt",
+      "acousticsTitle": "Hljóðeiginleikar",
+      "noiseReductionValue": "25,9 dB(A)",
+      "absorberValue": "Hljóðfilt úr endurunnu PET, 24 mm",
+      "doorSealValue": "Segulmagnaður, fjórhliða þrýstiþéttihringur",
+      "ventilationTitle": "Loftræsting (grunnur)",
+      "airflowValue": "18,4 m³/mín",
+      "fanCountValue": "16 × hljóðlátar EC-viftur",
+      "occupancyValue": "PIR-skynjari með eftirgangstíma",
+      "clearancesTitle": "Uppsetningarrými",
+      "ceilingValue": "Lágmark 2600 mm",
+      "sideValue": "400 mm hvoru megin",
+      "frontValue": "1100 mm fyrir framan hurð",
+      "warrantyTitle": "Ábyrgð og afhending",
+      "structuralValue": "5 ár",
+      "electronicsValue": "2 ár",
+      "deliveryValue": "6–8 vikur frá pöntun"
+    },
+    "addons": {
+      "tag": "VALKVÆMT",
+      "title": "Stilltu eftir þínum þörfum",
+      "description": "Modular XL er afhentur tilbúinn fyrir fundi í grunnútgáfu. Eftirtaldir valkostir bæta hann fyrir vinnustofur, blönduð símtöl og kynningar.",
+      "meetingTable": {
+        "title": "Fundarborð",
+        "desc": "Borð með massívri borðplötu stærðarsettri fyrir uppsetningu þína — kringlótt fyrir grunneiningu, sporöskjulaga eða stjórnarforms fyrir stækkaðar útgáfur."
+      },
+      "displaySystem": {
+        "title": "Veggfestur skjár (55\"/65\"/75\")",
+        "desc": "Innbyggður skjár á aftari vegg með HDMI-, USB-C- og þráðlausu inntaki. Flestir viðskiptavinir velja 65\" fyrir grunneiningu."
+      },
+      "videoConference": {
+        "title": "Fjarfundabúnaður",
+        "desc": "Innbyggður þakmíkrófónn, 4K víðhornsmyndavél, ráðstefnuhátalari. Vottaður fyrir Microsoft Teams Rooms og Zoom Rooms."
+      },
+      "cableManagement": {
+        "title": "Aukin snúrustjórnun",
+        "desc": "Falin leiðun undir borði með úttökum á hverju sæti. Bætir við HDMI- og USB-C-flutningi."
+      },
+      "whiteboard": {
+        "title": "Veggfest tafla",
+        "desc": "Segulmagnað þurrkpláss yfir einum heilum vegg. Fer náttúrulega með vinnustofuuppsetningu."
+      },
+      "fabricPanel": {
+        "title": "Sérsniðið efni",
+        "desc": "Skiptu út ytra efni fyrir lit úr vörumerkjapaletti þínum. Tólf staðallitir; sérsmíði eftir beiðni."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er staðlaður afhendingartími?",
+          "answer": "Sex til átta vikur frá staðfestri pöntun fyrir grunneiningu. Hver viðbótareining bætir við einni til tveimur vikum. Sérefni eða -áferð bætir við tveimur til þremur vikum til viðbótar."
+        },
+        "scaleUp": {
+          "question": "Get ég bætt við einingum seinna?",
+          "answer": "Já — það er einmitt það sem Modular XL er hannaður fyrir. Að bæta við einingu er hálfur dagur af þjónustu á einingu. Klefinn er byggður fyrir að minnsta kosti tvær stækkunarlotur eftir fyrstu uppsetningu."
+        },
+        "ceilingHeight": {
+          "question": "Hvaða lofthæð þarf ég?",
+          "answer": "Lágmark 2600 mm. Klefinn sjálfur er 2260 mm hár; við mælum með 340 mm fríu plássi yfir þaki fyrir loftflæði loftræstingar. Lægri loft eru möguleg með færri viftum — hafðu samband við okkur fyrst."
+        },
+        "capacity": {
+          "question": "Hver er raunhæf rýmd á stærð?",
+          "answer": "Grunneining: sex sitjandi með þægindum, átta standandi. Ein stækkun: átta sitjandi, tíu standandi. Tvær stækkanir: tíu sitjandi, tólf standandi. Hámarksrýmd gerir ráð fyrir sitjandi notkun; við mælum ekki með að hanna fyrir eingöngu standandi notkun."
+        },
+        "warranty": {
+          "question": "Hvað nær ábyrgðin yfir?",
+          "answer": "Fimm ár á grindina — grind, gler, plötur, hurðabúnað — yfir grunn og einingar. Tvö ár á rafeindabúnað — viftur, skynjara, LED-rekara. Slitvarahlutir (hurðaþéttingar, efni) eru undanskildir. Full skilyrði fylgja við afhendingu."
+        }
       }
     }
   }

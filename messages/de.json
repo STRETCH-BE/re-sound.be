@@ -33,7 +33,13 @@
     "solidTitle": "Solid Akustische Wandpaneele | Re-Sound",
     "solidDescription": "Großformatige Akustik-Wandpaneele für wirkungsvolle Schallabsorption. 1200 × 600 mm, Hakenmontagesystem, 100% recycelte Materialien. Hergestellt in Belgien.",
     "faqTitle": "FAQ — Re-Sound Akustikplatten",
-    "faqDescription": "Antworten auf häufige Fragen zu Re-Sound Akustikplatten: wie Absorption funktioniert, Brandschutzklassen, Lieferzeiten, zirkuläres Rücknahmeprogramm und Produktauswahl."
+    "faqDescription": "Antworten auf häufige Fragen zu Re-Sound Akustikplatten: wie Absorption funktioniert, Brandschutzklassen, Lieferzeiten, zirkuläres Rücknahmeprogramm und Produktauswahl.",
+    "duoDescription": "Eine Kabine, zwei Konfigurationen: Flex bietet Platz für zwei Personen für ein fokussiertes Gespräch; Work gibt einer Person einen Schreibtisch über die gesamte Breite. 2 m² Stellfläche, elektrischer Schreibtisch, 230V-Steckdose, vollständige Belüftung. Re-Sound Akustikreihe.",
+    "soloFlexDescription": "Akustische Telefonkabine für eine Person, ideal für Fokusgespräche und konzentriertes Arbeiten. 1 m² Stellfläche, integrierter Sitz-Steh-Schreibtisch, 230V-Steckdose, USB-C und leise Belüftung. Teil der Re-Sound Sound-Booth-Reihe.",
+    "modularXlDescription": "Skalierbarer akustischer Meeting-Pod. Basis bietet Platz für 6 Personen, erweiterbar auf 10 in 90-cm-Segmenten. 25,9 dB(A) Sprachdämmung, vollständige A/V-Ausstattung, barrierefreier Eingang.",
+    "modularXlTitle": "Modular XL Skalierbarer Akustik-Meeting-Pod | Re-Sound",
+    "duoTitle": "Duo Akustikkabine mit zwei Konfigurationen | Re-Sound",
+    "soloFlexTitle": "Solo Flex Einzelpersonen-Akustikkabine | Re-Sound"
   },
   "nav": {
     "products": "Produkte",
@@ -176,7 +182,10 @@
       "showingAll": "{count} Produkte angezeigt",
       "showingFiltered": "{filtered} von {total} Produkten angezeigt",
       "noResults": "Keine Produkte entsprechen Ihren Filtern",
-      "clearAndShowAll": "Filter löschen und alle anzeigen"
+      "clearAndShowAll": "Filter löschen und alle anzeigen",
+      "panel": "Akustikpaneele",
+      "use": "Einsatz",
+      "booth": "Sound-Booths"
     },
     "titleHighlight": "für jeden Raum.",
     "rwood-perf": {
@@ -215,6 +224,18 @@
       "title": "rPET - Panel",
       "description": "Vielseitige recycelte PET-Akustikpaneele. Klares Design für Wände und Decken.",
       "fullDescription": "rPET - Panel bietet eine klare, minimalistische Ästhetik, vollständig aus recycelten PET-Flaschen hergestellt."
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Eine Kabine, zwei Konfigurationen. Flex setzt zwei Personen für ein Meeting; Work gibt einer Person einen vollwertigen Schreibtisch. 26 dB(A) Dämmung."
+    },
+    "solo-flex": {
+      "title": "Solo Flex",
+      "description": "Akustikkabine für eine Person, für Fokusgespräche und konzentriertes Arbeiten. 1 m² Stellfläche, integrierter Sitz-Steh-Schreibtisch, 24 dB(A) Sprachdämmung."
+    },
+    "modular-xl": {
+      "title": "Modular XL",
+      "description": "Skalierbarer Meeting-Pod. Basis für 6 Personen, erweiterbar auf 10 mit modularen 90-cm-Segmenten. 25,9 dB(A) Sprachdämmung."
     }
   },
   "specs": {
@@ -2836,6 +2857,574 @@
         "category": "commercial",
         "question": "Wie fordere ich ein Angebot an?",
         "answer": "Verwenden Sie das Kontaktformular auf einer Produktseite oder das allgemeine Kontaktformular, mit: der Produktlinie, die Sie interessiert, ungefähre Mengen oder Grundriss und Ihrem Projektzeitplan. Wir antworten innerhalb eines Werktags mit einem maßgeschneiderten Angebot, einer Musterregelung und einer Berechnung der erwarteten akustischen Verbesserung. Für größere Projekte können wir einen Vor-Ort-Termin oder einen Briefing-Call vereinbaren."
+      }
+    }
+  },
+  "boothPage": {
+    "nav": {
+      "overview": "Überblick",
+      "acoustics": "Akustik",
+      "configurations": "Konfigurationen",
+      "modular": "Modular",
+      "features": "Ausstattung",
+      "specs": "Spezifikationen",
+      "addons": "Optionen",
+      "downloads": "Downloads"
+    },
+    "cta": {
+      "requestQuote": "Angebot anfragen",
+      "viewSpecifications": "Spezifikationen ansehen",
+      "callUs": "Rufen Sie uns an: +32 3 284 68 18",
+      "ctaTitle": "Bereit, Ihren Raum zu planen?",
+      "ctaSubtitle": "Unser Team hilft Ihnen, die passende Kabine zu wählen, Optionen zu konfigurieren und die Lieferung zu planen. Angebote in der Regel innerhalb eines Werktages.",
+      "deliveryNote": "EU-weite Lieferung · Installation möglich · 5 Jahre Garantie auf die Struktur"
+    },
+    "acoustics": {
+      "benefitSpeech": {
+        "title": "Verbesserte Sprachverständlichkeit",
+        "desc": "Der deutliche Abfall der Hintergrundgeräusche lässt jedes Wort ankommen — innerhalb und außerhalb der Kabine."
+      },
+      "benefitFocus": {
+        "title": "Verstärkte Konzentration",
+        "desc": "Eine leisere Hülle führt innerhalb von Sekunden nach dem Eintreten zu einem messbaren Wechsel in tiefere Aufmerksamkeit."
+      },
+      "benefitStress": {
+        "title": "Geringere kognitive Belastung",
+        "desc": "Weniger Umgebungslärm reduziert die kontinuierliche Hörarbeit des Gehirns — weniger Erschöpfung, mehr Leistung."
+      }
+    },
+    "configurations": {
+      "capacity": "Kapazität",
+      "deskSize": "Schreibtischmaße",
+      "deskHeight": "Schreibtischhöhe"
+    },
+    "specs": {
+      "externalDim": "Außenmaße (B × T × H)",
+      "internalDim": "Innenmaße (B × T × H)",
+      "doorWidth": "Türbreite",
+      "weight": "Nettogewicht",
+      "noiseReduction": "Sprachdämmung Dn,T,A",
+      "absorberMaterial": "Akustikabsorber",
+      "doorSeal": "Türdichtung",
+      "airflow": "Luftdurchsatz",
+      "fanCount": "Anzahl Lüfter",
+      "occupancySensor": "Anwesenheitserkennung",
+      "powerSockets": "Steckdosen",
+      "usb": "USB-Anschlüsse",
+      "lighting": "Beleuchtung",
+      "totalConsumption": "Gesamtleistung",
+      "frame": "Rahmen",
+      "glass": "Verglasung",
+      "interior": "Innenverkleidung",
+      "floor": "Boden",
+      "structural": "Garantie Struktur",
+      "electronics": "Garantie Elektronik",
+      "delivery": "Standardlieferzeit",
+      "segmentSize": "Segmentabmessungen",
+      "segmentWeight": "Segmentgewicht",
+      "segmentFans": "Lüfter pro Segment",
+      "segmentPower": "Leistung pro Segment",
+      "ceilingHeight": "Mindestraumhöhe",
+      "sideClearance": "Seitlicher Abstand",
+      "frontClearance": "Frontaler Abstand"
+    },
+    "downloads": {
+      "tag": "RESSOURCEN",
+      "title": "Dokumentation",
+      "productDataSheet": "Produktdatenblatt",
+      "installationManual": "Installationsanleitung",
+      "acousticTestReport": "Akustik-Prüfbericht",
+      "cadDrawing": "CAD-Zeichnung (DWG)",
+      "warranty": "Garantiezertifikat",
+      "sustainability": "Nachhaltigkeitserklärung"
+    },
+    "crosslinks": {
+      "tag": "AUCH IN DER REIHE",
+      "title": "Weitere Sound-Booths der Reihe",
+      "solo-flex": {
+        "name": "Solo Flex",
+        "tag": "Einzelpersonen-Kabine"
+      },
+      "duo": {
+        "name": "Duo",
+        "tag": "Kabine mit zwei Konfigurationen"
+      },
+      "modular-xl": {
+        "name": "Modular XL",
+        "tag": "Skalierbarer Meeting-Pod"
+      }
+    }
+  },
+  "soloFlexPage": {
+    "hero": {
+      "tag": "EINZELPERSONEN-AKUSTIKKABINE",
+      "title": "Solo Flex",
+      "tagline": "Ein Quadratmeter Ruhe, wo immer Sie ihn brauchen.",
+      "description": "Solo Flex ist eine akustische Kabine für eine Person, gebaut für Fokusgespräche, Videokonferenzen und konzentriertes Arbeiten. Eine kleine Stellfläche, ein ehrlicher Schreibtisch, der vom Sitzen zum Stehen wechselt, und die Art von Schallisolierung, die das Großraumbüro verschwinden lässt.",
+      "statFootprint": "Stellfläche",
+      "statWeight": "Nettogewicht",
+      "statWarranty": "Garantie"
+    },
+    "overview": {
+      "tag": "EINE KABINE, EINE PERSON, KEIN KOMPROMISS",
+      "title": "Konzentration, greifbar gemacht.",
+      "description": "Solo Flex wurde um eine einfache Vorgabe herum entworfen: Geben Sie einer Person alles, was sie für eine produktive Arbeitsstunde braucht, und nichts, was ablenkt. Das Ergebnis: eine Kabine, die sich zwischen Schreibtische einfügt, ohne den Grundriss zu ändern — und die sich nicht wie eine Box anfühlt.",
+      "feature1": "1 m² Stellfläche passt in fast jedes Bürolayout",
+      "feature2": "Sitz-Steh-Schreibtisch verstellt sich von 73 bis 103 cm",
+      "feature3": "230V-Steckdose plus USB-C und USB-A am Schreibtisch",
+      "feature4": "Flüsterleise Belüftung aktiviert sich beim Betreten"
+    },
+    "acoustics": {
+      "tag": "AKUSTISCHE LEISTUNG",
+      "title": "Stille ist konstruiert.",
+      "description": "Eine mehrschichtige Wandkonstruktion — Absorber aus recyceltem PET, Stahlrahmen, abgedichtetes Verbundsicherheitsglas — senkt die Sprache um etwa 24 dB(A). Zum Vergleich: eine normale Stimme auf der anderen Seite der Kabinenwand klingt innen wie ein leises Murmeln.",
+      "dbValue": "24",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Sprachfrequenzdämmung (Dn,T,A) gemessen nach ISO 23351-1."
+    },
+    "features": {
+      "tag": "SERIENMÄSSIG",
+      "title": "Was Standard ist und warum es zählt.",
+      "ventilation": {
+        "title": "Leise Belüftung",
+        "desc": "Vier Lüfter liefern 4,6 m³/min, mehr als ausreichend für eine Person. Geräuschpegel bleibt unter 30 dB(A) am Arbeitsplatz."
+      },
+      "electrics": {
+        "title": "Strom direkt am Platz",
+        "desc": "230V-Steckdose, USB-C (PD 60W) und USB-A in der Tischplatte integriert. Keine Verlängerungskabel durch die Tür."
+      },
+      "lighting": {
+        "title": "Einstellbare Beleuchtung",
+        "desc": "Warm/Kalt dimmbare LED mit manueller Steuerung. Kalibriert für saubere Hauttöne auf Kamera."
+      },
+      "comfort": {
+        "title": "Sitz-Steh-Schreibtisch",
+        "desc": "Manuelle Höhenverstellung zwischen 73 und 103 cm. Tischfläche 80 × 33 cm — breit genug für Laptop, Notizbuch und Kaffee."
+      },
+      "accessibility": {
+        "title": "Stufenfreier Zugang",
+        "desc": "Flache Schwelle und 90 cm lichte Türbreite erfüllen die europäischen Empfehlungen zur Barrierefreiheit in Büros."
+      },
+      "safety": {
+        "title": "Nach Norm geprüft",
+        "desc": "CE-Kennzeichnung, Brandklasse EN 13501-1 B-s2,d0, Elektrik nach IEC 60598 zertifiziert. Dokumentation liegt der Lieferung bei."
+      }
+    },
+    "specs": {
+      "tag": "TECHNIK",
+      "title": "Spezifikationen",
+      "dimensionsTitle": "Abmessungen",
+      "externalDimValue": "1020 × 1020 × 2260 mm",
+      "internalDimValue": "910 × 910 × 2120 mm",
+      "doorWidthValue": "900 mm lichte Weite",
+      "weightValue": "280 kg",
+      "acousticsTitle": "Akustische Leistung",
+      "noiseReductionValue": "24 dB(A)",
+      "absorberValue": "Akustikfilz aus recyceltem PET, 24 mm",
+      "doorSealValue": "Magnetisch, vierseitig angedrückt",
+      "ventilationTitle": "Belüftung",
+      "airflowValue": "4,6 m³/min",
+      "fanCountValue": "4 × leise EC-Lüfter",
+      "occupancyValue": "PIR-Sensor mit Nachlauf",
+      "electricsTitle": "Elektrik",
+      "powerValue": "1 × Schuko 230V am Schreibtisch",
+      "usbValue": "1 × USB-C PD 60W · 1 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimmbar",
+      "consumptionValue": "~80W typisch, 220W max",
+      "materialsTitle": "Materialien",
+      "frameValue": "Pulverbeschichteter Stahl",
+      "glassValue": "8 mm gehärtetes Sicherheitsglas",
+      "interiorValue": "Filz aus recyceltem PET, brandhemmend behandelt",
+      "floorValue": "Teppichfliesen Objektqualität",
+      "warrantyTitle": "Garantie & Lieferung",
+      "structuralValue": "5 Jahre",
+      "electronicsValue": "2 Jahre",
+      "deliveryValue": "4–6 Wochen ab Bestellung"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Konfigurieren Sie nach Ihren Vorstellungen",
+      "description": "Solo Flex wird voll ausgestattet geliefert. Die folgenden Optionen stehen für Projekte zur Verfügung, die sie benötigen.",
+      "sitStandDesk": {
+        "title": "Elektrischer Sitz-Steh-Schreibtisch",
+        "desc": "Upgrade von manueller auf elektrische Höhenverstellung mit Memory-Positionen. Für geteilte Kabinen empfohlen."
+      },
+      "monitorMount": {
+        "title": "Monitorarm",
+        "desc": "VESA-kompatibler Einzel-Monitorarm mit Kabelführung durch den Schreibtisch. Für Bildschirme bis 27\"."
+      },
+      "cableManagement": {
+        "title": "Kabelmanagement-Upgrade",
+        "desc": "Kabelkanal mit schnell lösbarer Abdeckung. Fügt bei Bedarf einen zweiten Stromkreis hinzu."
+      },
+      "shelf": {
+        "title": "Regalbrett über dem Schreibtisch",
+        "desc": "Schwebendes Regal für Headset, Notizbuch oder Pflanzen. Auf Augenhöhe montiert, 240 × 150 mm."
+      },
+      "extraFan": {
+        "title": "Verstärkte Belüftung",
+        "desc": "Zwei zusätzliche Lüfter für den Sommerbetrieb oder Installationen an südseitiger Verglasung."
+      },
+      "fabricPanel": {
+        "title": "Stoff nach Wunsch",
+        "desc": "Ersetzen Sie den Außenstoff durch eine Farbe aus Ihrer Markenpalette. Zwölf Standardfarben; Sonderanfertigungen auf Anfrage."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Was ist die Standardlieferzeit?",
+          "answer": "Vier bis sechs Wochen ab bestätigter Bestellung für Standardkonfigurationen. Sonderfarben oder -ausführungen verlängern die Lieferzeit um zwei bis drei Wochen. Express-Lieferung ist für ausgewählte Lagermodelle möglich."
+        },
+        "noiseReduction": {
+          "question": "Wie viel Lärm hält Solo Flex tatsächlich draußen?",
+          "answer": "Etwa 24 dB(A) Dämmung über die Sprachfrequenzen, gemessen nach ISO 23351-1. Praktisch heißt das: ein Gespräch in normaler Lautstärke außerhalb der Kabine ist innen wie ein leises Murmeln, und umgekehrt."
+        },
+        "installation": {
+          "question": "Sind für die Installation Bauarbeiten nötig?",
+          "answer": "Nein. Solo Flex steht frei und wird an eine normale Schuko-Steckdose angeschlossen. Zwei Personen montieren sie vor Ort in weniger als drei Stunden. Installation EU-weit als Standardoption verfügbar."
+        },
+        "ventilation": {
+          "question": "Wie funktioniert die Belüftung?",
+          "answer": "Vier EC-Lüfter laufen kontinuierlich, wenn die Kabine besetzt ist, und tauschen 4,6 m³/min Luft aus. Ein PIR-Sensor schaltet die Lüfter etwa eine Minute nach dem Verlassen ab. Dieses Verhalten lässt sich am Wandbedienteil anpassen."
+        },
+        "warranty": {
+          "question": "Was deckt die Garantie ab?",
+          "answer": "Fünf Jahre auf die Struktur — Rahmen, Glas, Paneele, Türmechanik. Zwei Jahre auf die Elektronik — Lüfter, Sensoren, LED-Treiber. Verschleißteile (Türdichtungen, Stoff) sind ausgenommen. Vollständige Bedingungen liegen der Lieferung bei."
+        }
+      }
+    }
+  },
+  "duoPage": {
+    "hero": {
+      "tag": "KABINE MIT ZWEI KONFIGURATIONEN",
+      "title": "Duo",
+      "tagline": "Eine Hülle. Zwei vollkommen unterschiedliche Räume.",
+      "description": "Duo ist eine einzige Kabine, die sich konsequent auf zwei Nutzungsszenarien einlässt. Die Flex-Konfiguration platziert einen kleinen elektrischen Schreibtisch in der Mitte — zwei Personen, einander gegenüber, für ein fokussiertes Meeting. Die Work-Konfiguration setzt einen Schreibtisch über die gesamte Breite an eine Wand — eine Person, drei Monitore, ein echter Arbeitsplatz. Bei der Bestellung wählen Sie, welche zu Ihrer Etage passt.",
+      "statFootprint": "Stellfläche",
+      "statWeight": "Nettogewicht",
+      "statConfigs": "Konfigurationen"
+    },
+    "overview": {
+      "tag": "EINE KABINE, ZWEI RÄUME",
+      "title": "Eine Kabine, die ihre Stellfläche zweifach rechtfertigt.",
+      "description": "Die Hülle der Duo ist in beiden Konfigurationen identisch — gleiche Belüftung, gleiche Akustik, gleiche Elektrik. Was sich ändert, ist das Innenleben: ein zentraler elektrischer Schreibtisch für Meetings zu zweit, oder ein wandmontierter elektrischer Schreibtisch für konzentriertes Solo-Arbeiten. Die Entscheidung fällt bei der Bestellung, nicht bei der Installation.",
+      "feature1": "Gleiche Außenmaße unabhängig von der Konfiguration",
+      "feature2": "Elektrisch höhenverstellbarer Schreibtisch in beiden Modi",
+      "feature3": "Zwei 230V-Steckdosen und vollständige USB-Ausstattung",
+      "feature4": "Löst das Dilemma Telefonraum/Fokusraum in einem Kauf"
+    },
+    "acoustics": {
+      "tag": "AKUSTISCHE LEISTUNG",
+      "title": "Gebaut für Gespräche, abgedichtet gegen alles andere.",
+      "description": "Das größere Volumen der Duo verlangt nach entsprechend besserer Dämmung. Die Wandkonstruktion — Absorber aus recyceltem PET, doppelschalige Stahlrahmen, abgedichtetes Verbundsicherheitsglas — liefert etwa 26 dB(A) Sprachdämmung, klar im Bereich eines Besprechungsraums.",
+      "dbValue": "26",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Sprachfrequenzdämmung (Dn,T,A) gemessen nach ISO 23351-1."
+    },
+    "configurations": {
+      "tag": "WÄHLEN SIE IHR LAYOUT",
+      "title": "Flex oder Work — gleiche Kabine, anderer Raum.",
+      "description": "Beide Konfigurationen werden als Duo geliefert. Der einzige Unterschied liegt in der Montage des Schreibtisches. Sie können später auch wechseln — der Umbausatz ist ein halbtägiger Service vor Ort.",
+      "flex": {
+        "letter": "f",
+        "name": "Flex",
+        "heading": "Zwei Personen, einander gegenüber.",
+        "description": "Ein kleiner elektrischer Schreibtisch steht in der Mitte der Kabine, gerade groß genug für zwei Laptops und zwei Notizblöcke. Hocker oder Stühle flankieren ihn — die meisten Kunden wählen die integrierten Hocker. Ideal für Einzelgespräche, Interviews und kurze Stehmeetings.",
+        "point1": "Mittlerer Schreibtisch, 45 × 46 cm, elektrisch höhenverstellbar",
+        "point2": "Stufenlos verstellbar zwischen 80 und 120 cm",
+        "point3": "Strom an beiden Enden der Tischplatte",
+        "point4": "Hocker optional; Stehen ist im Design berücksichtigt",
+        "capacity": "2 Personen",
+        "deskSize": "45 × 46 cm",
+        "deskHeight": "80–120 cm"
+      },
+      "work": {
+        "letter": "w",
+        "name": "Work",
+        "heading": "Eine Person, ein echter Schreibtisch.",
+        "description": "Ein elektrischer Schreibtisch über die gesamte Breite verläuft entlang einer Wand, tief genug für drei Monitore oder einen Laptop mit Peripherie. Die gegenüberliegende Wand bleibt frei, was die Kabine auch nach vier Stunden nicht beengend wirken lässt.",
+        "point1": "Wandschreibtisch, 104 × 60 cm, elektrisch höhenverstellbar",
+        "point2": "Stufenlos verstellbar zwischen 71 und 120 cm",
+        "point3": "Zwei Steckdosen und USB am Schreibtisch",
+        "point4": "Kabelführung verdeckt durch den Beinkanal",
+        "capacity": "1 Person",
+        "deskSize": "104 × 60 cm",
+        "deskHeight": "71–120 cm"
+      }
+    },
+    "features": {
+      "tag": "SERIENMÄSSIG",
+      "title": "Was in beiden Konfigurationen Standard ist.",
+      "switchable": {
+        "title": "Umbaubereit",
+        "desc": "Beide Schreibtische montieren auf der gleichen Innenschiene. Ein späterer Wechsel der Konfiguration ist ein halbtägiger Service — kein Umbau, kein Ersatz."
+      },
+      "ventilation": {
+        "title": "Zwei-Zonen-Belüftung",
+        "desc": "Acht Lüfter liefern 9,2 m³/min — ausgelegt auf zwei Personen in aktivem Gespräch, dem ungünstigsten Fall für CO₂-Anstieg."
+      },
+      "electrics": {
+        "title": "Zwei Stromkreise",
+        "desc": "Unabhängige 230V-Kreise an beiden Wänden. USB-C PD 60W und USB-A in der Tischplatte. Kabelführung verdeckt."
+      },
+      "lighting": {
+        "title": "Beleuchtung auf Meeting-Niveau",
+        "desc": "Warm/Kalt dimmbare LED, geeignet für Videokonferenzen. Gleichmäßige Ausleuchtung beider Gesichter im Flex-Modus — keine Schatten unter den Augen."
+      },
+      "accessibility": {
+        "title": "Breiter, stufenfreier Zugang",
+        "desc": "100 cm lichte Türbreite — erfüllt die europäischen Empfehlungen zur Barrierefreiheit und ist rollstuhltauglich. Schwelle ist flach."
+      },
+      "safety": {
+        "title": "Nach Norm geprüft",
+        "desc": "CE-Kennzeichnung, Brandklasse EN 13501-1 B-s2,d0, Elektrik nach IEC 60598 zertifiziert. Standard bei jeder Lieferung."
+      }
+    },
+    "specs": {
+      "tag": "TECHNIK",
+      "title": "Spezifikationen",
+      "dimensionsTitle": "Abmessungen",
+      "externalDimValue": "1640 × 1200 × 2260 mm",
+      "internalDimValue": "1530 × 1090 × 2120 mm",
+      "doorWidthValue": "1000 mm lichte Weite",
+      "weightValue": "420 kg",
+      "acousticsTitle": "Akustische Leistung",
+      "noiseReductionValue": "26 dB(A)",
+      "absorberValue": "Akustikfilz aus recyceltem PET, 24 mm",
+      "doorSealValue": "Magnetisch, vierseitig angedrückt",
+      "ventilationTitle": "Belüftung",
+      "airflowValue": "9,2 m³/min",
+      "fanCountValue": "8 × leise EC-Lüfter",
+      "occupancyValue": "PIR-Sensor mit Nachlauf",
+      "electricsTitle": "Elektrik",
+      "powerValue": "2 × Schuko 230V (unabhängige Kreise)",
+      "usbValue": "2 × USB-C PD 60W · 2 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimmbar",
+      "consumptionValue": "~140W typisch, 380W max",
+      "materialsTitle": "Materialien",
+      "frameValue": "Pulverbeschichteter Stahl, doppelschalig",
+      "glassValue": "8 mm gehärtetes Sicherheitsglas",
+      "interiorValue": "Filz aus recyceltem PET, brandhemmend behandelt",
+      "floorValue": "Teppichfliesen Objektqualität",
+      "warrantyTitle": "Garantie & Lieferung",
+      "structuralValue": "5 Jahre",
+      "electronicsValue": "2 Jahre",
+      "deliveryValue": "4–6 Wochen ab Bestellung"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Konfigurieren Sie nach Ihren Vorstellungen",
+      "description": "Duo wird in beiden Konfigurationen voll ausgestattet geliefert. Die folgenden Optionen erweitern sie für spezifische Einsätze.",
+      "electricDesk": {
+        "title": "Schreibtisch mit Memory-Positionen",
+        "desc": "Erweitern Sie den elektrischen Schreibtisch um drei Höhen-Memory-Positionen — nützlich, wenn die Kabine von mehreren Nutzern geteilt wird."
+      },
+      "monitorMount": {
+        "title": "Monitorarme (einfach oder doppelt)",
+        "desc": "VESA-kompatible Halterungen mit Kabelführung. Empfohlen für Work-Konfigurationen mit mehreren Monitoren."
+      },
+      "displaySystem": {
+        "title": "Wandmontiertes Display",
+        "desc": "Integriertes 32\"-Display an der Rückwand, HDMI- und USB-C-Eingänge. Für Videokonferenzen in Flex-Konfiguration konzipiert."
+      },
+      "cableManagement": {
+        "title": "Kabelmanagement-Upgrade",
+        "desc": "Verdeckte Führung mit schnell lösbarer Abdeckung. Fügt einen dritten Stromkreis und HDMI-Durchgang hinzu."
+      },
+      "extraSeating": {
+        "title": "Integrierte Hocker",
+        "desc": "Zwei Hocker mit Akustikstoffbezug, passend zur Flex-Konfiguration. Stapelbar an der Wand, wenn nicht in Gebrauch."
+      },
+      "fabricPanel": {
+        "title": "Stoff nach Wunsch",
+        "desc": "Ersetzen Sie den Außenstoff durch eine Farbe aus Ihrer Markenpalette. Zwölf Standardfarben; Sonderanfertigungen auf Anfrage."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Was ist die Standardlieferzeit?",
+          "answer": "Vier bis sechs Wochen ab bestätigter Bestellung. Sonderstoffe oder -ausführungen verlängern die Lieferzeit um zwei bis drei Wochen. Die Wahl der Konfiguration beeinflusst die Lieferzeit nicht — beide laufen vom gleichen Band."
+        },
+        "configChoice": {
+          "question": "Wie entscheide ich zwischen Flex und Work?",
+          "answer": "Braucht Ihr Team mehr Räume für Einzelgespräche, wählen Sie Flex. Braucht es mehr Räume für konzentriertes Arbeiten, wählen Sie Work. Die meisten Kunden mischen beide auf einer Etage. Unser Team kann das passende Verhältnis für Ihre Mitarbeiterzahl modellieren."
+        },
+        "switchConfig": {
+          "question": "Kann ich später von Flex auf Work wechseln?",
+          "answer": "Ja. Beide Schreibtische montieren auf der gleichen Innenschiene. Ein Vor-Ort-Umbau dauert etwa einen halben Tag. Der Umbausatz ist als separater Kauf erhältlich."
+        },
+        "noiseReduction": {
+          "question": "Wie gut dämmt Duo Schall?",
+          "answer": "Etwa 26 dB(A) Dämmung über die Sprachfrequenzen, nach ISO 23351-1. Praktisch heißt das: ein Gespräch in normaler Lautstärke innerhalb liegt an der Hörschwelle außerhalb. Zwei Personen können neben einem Großraumarbeitsplatz souverän ein Meeting führen."
+        },
+        "warranty": {
+          "question": "Was deckt die Garantie ab?",
+          "answer": "Fünf Jahre auf die Struktur — Rahmen, Glas, Paneele, Türmechanik. Zwei Jahre auf die Elektronik — Lüfter, Sensoren, LED-Treiber, Motor des elektrischen Schreibtisches. Verschleißteile (Türdichtungen, Stoff) sind ausgenommen. Vollständige Bedingungen liegen der Lieferung bei."
+        }
+      }
+    }
+  },
+  "modularXlPage": {
+    "hero": {
+      "tag": "SKALIERBARER MEETING-POD",
+      "title": "Modular XL",
+      "tagline": "Ein Besprechungsraum, der länger wird, wenn Sie mehr Stühle brauchen.",
+      "description": "Modular XL ist die größte Kabine der Re-Sound-Reihe — und die einzige, die so entworfen wurde, dass sie nach der Installation wächst. Die Basis bietet komfortabel Platz für sechs Personen. Davon ausgehend verlängern modulare 90-cm-Segmente die Kabine in beide Richtungen, bis zu einer maximalen Kapazität von zehn. Gleiche akustische Leistung, gleiche Belüftungslogik, skaliert.",
+      "statFootprint": "Stellfläche Basis",
+      "statWeight": "Gewicht Basis",
+      "statCapacity": "Max. Kapazität"
+    },
+    "overview": {
+      "tag": "BESPRECHUNGSRAUM-FORMAT",
+      "title": "Wenn eine Kabine ein Raum sein muss.",
+      "description": "Modular XL ist für die Art von Gesprächen gebaut, die nicht in eine Telefonkabine passen: Kundenpräsentationen, interne Workshops, hybride Teammeetings. Die akustische Hülle isoliert den Raum ausreichend, sodass eine hitzige Diskussion nicht ins Großraumbüro dringt — und ein Workshop drinnen nicht vom Drucker draußen unterbrochen wird.",
+      "feature1": "Basismodul bietet Platz für bis zu 6 sitzende Personen",
+      "feature2": "90-cm-Segmente erweitern die Kabine auf 10 Personen",
+      "feature3": "25,9 dB(A) Sprachdämmung — Besprechungsraum-Klasse",
+      "feature4": "Vollständige A/V-Ausstattung und barrierefreier Eingang"
+    },
+    "acoustics": {
+      "tag": "AKUSTISCHE LEISTUNG",
+      "title": "Besprechungsraum-Dämmung in einer beweglichen Hülle.",
+      "description": "Das größere Volumen der Modular XL bedeutet standardmäßig geringeren Nachhall im Inneren — Schall hat mehr Luft, um sich zu zerstreuen. In Kombination mit der Wandkonstruktion (Absorber aus recyceltem PET, Stahlrahmen, abgedichtetes Verbundsicherheitsglas) liefert sie 25,9 dB(A) Sprachdämmung — selbst in voll ausgebauter Konfiguration.",
+      "dbValue": "25,9",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Sprachfrequenzdämmung (Dn,T,A) gemessen nach ISO 23351-1."
+    },
+    "modular": {
+      "tag": "MODULARE ARCHITEKTUR",
+      "title": "Fügt 90 cm pro Schritt hinzu. So viele, wie der Raum zulässt.",
+      "description": "Jedes Segment ist eine eigenständige 90-cm-Erweiterung, die auf die tragende Schiene der Kabine geschraubt wird. Das Segment bringt seine eigene Belüftung mit (vier Zu- + vier Abluftlüfter) und Beleuchtung — entsprechend skaliert, damit der Komfort mit der Belegung mitwächst.",
+      "baseLabel": "Basismodul",
+      "baseTag": "BASIS · 6 PERSONEN",
+      "scaleLabel": "ERWEITERN",
+      "scenario1": {
+        "size": "BASIS",
+        "title": "Team-Stand-up",
+        "description": "Sechs Personen um einen zentralen Tisch. Geeignet für tägliche Stand-ups, Design-Reviews und kleine Kundenpräsentationen. Passt auf die meisten Büroetagen ohne Umbau."
+      },
+      "scenario2": {
+        "size": "BASIS + 1",
+        "title": "Workshop",
+        "description": "Acht Personen, ein Erweiterungssegment. Sitzend oder stehend. Bringt zwei Whiteboards plus ein wandmontiertes Display. Ideal für halbtägige Arbeitssitzungen."
+      },
+      "scenario3": {
+        "size": "BASIS + 2",
+        "title": "All-Hands",
+        "description": "Zehn Personen, zwei Erweiterungssegmente. Hufeisen-Anordnung um ein Display. Die größte Konfiguration; bei dieser Größe ist eine feste Platzierung sinnvoll."
+      }
+    },
+    "features": {
+      "tag": "SERIENMÄSSIG",
+      "title": "Was Standard ist, bevor Optionen hinzukommen.",
+      "modular": {
+        "title": "Vor-Ort erweiterbar",
+        "desc": "Segmente werden nach der Installation angeschraubt. Mehr Kapazität später erfordert keine neue Kabine — nur einen halbtägigen Service pro Segment."
+      },
+      "ventilation": {
+        "title": "Skalierte Belüftung",
+        "desc": "16 Lüfter liefern 18,4 m³/min im Basismodul. Jedes Segment fügt 4 Zu- + 4 Abluftlüfter hinzu, sodass der Luftdurchsatz mit der Belegung skaliert."
+      },
+      "electrics": {
+        "title": "Verteilte Stromversorgung",
+        "desc": "Mehrere 230V-Kreise entlang der Wandschiene, mit USB-C und USB-A an jedem Platz. Jedes Segment fügt eine eigene Stromzone hinzu."
+      },
+      "lighting": {
+        "title": "Beleuchtung in Workshop-Qualität",
+        "desc": "Dimmbare Warm/Kalt-LED mit getrennten Zonen für Bildschirm- und Schreibaufgaben. Über das Wandbedienteil einstellbar."
+      },
+      "accessibility": {
+        "title": "Rollstuhltauglich",
+        "desc": "110 cm lichte Türbreite und flache Schwelle sind rollstuhltauglich. Das Innenlayout lässt Platz für eine rollstuhlnutzende Person am Tisch."
+      },
+      "safety": {
+        "title": "Nach Norm geprüft",
+        "desc": "CE-Kennzeichnung, Brandklasse EN 13501-1 B-s2,d0, Elektrik nach IEC 60598 zertifiziert. Dokumentation liegt der Lieferung bei."
+      }
+    },
+    "specs": {
+      "tag": "TECHNIK",
+      "title": "Spezifikationen",
+      "dimensionsTitle": "Basismaße",
+      "externalDimValue": "2400 × 1800 × 2260 mm",
+      "internalDimValue": "2290 × 1690 × 2120 mm",
+      "doorWidthValue": "1100 mm lichte Weite",
+      "weightValue": "790 kg",
+      "extensionTitle": "Erweiterungssegment",
+      "segmentSizeValue": "900 × 1800 × 2260 mm",
+      "segmentWeightValue": "280 kg",
+      "segmentFansValue": "4 Zuluft + 4 Abluft",
+      "segmentPowerValue": "40W aktiv",
+      "acousticsTitle": "Akustische Leistung",
+      "noiseReductionValue": "25,9 dB(A)",
+      "absorberValue": "Akustikfilz aus recyceltem PET, 24 mm",
+      "doorSealValue": "Magnetisch, vierseitig angedrückt",
+      "ventilationTitle": "Belüftung (Basis)",
+      "airflowValue": "18,4 m³/min",
+      "fanCountValue": "16 × leise EC-Lüfter",
+      "occupancyValue": "PIR-Sensor mit Nachlauf",
+      "clearancesTitle": "Installationsabstände",
+      "ceilingValue": "Mindestens 2600 mm",
+      "sideValue": "400 mm beidseitig",
+      "frontValue": "1100 mm vor der Tür",
+      "warrantyTitle": "Garantie & Lieferung",
+      "structuralValue": "5 Jahre",
+      "electronicsValue": "2 Jahre",
+      "deliveryValue": "6–8 Wochen ab Bestellung"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Konfigurieren Sie nach Ihren Vorstellungen",
+      "description": "Modular XL wird in Basisausführung besprechungsbereit geliefert. Die folgenden Optionen erweitern sie für Workshops, hybride Gespräche und Präsentationen.",
+      "meetingTable": {
+        "title": "Konferenztisch",
+        "desc": "Tisch mit Massivplatte, passend zur Konfiguration — rund für das Basismodul, oval oder Boardroom-Form für erweiterte Layouts."
+      },
+      "displaySystem": {
+        "title": "Wandmontiertes Display (55\"/65\"/75\")",
+        "desc": "Integriertes Display an der Rückwand mit HDMI-, USB-C- und drahtlosem Eingang. Die meisten Kunden wählen 65\" für das Basismodul."
+      },
+      "videoConference": {
+        "title": "Konferenz-Set",
+        "desc": "Integriertes Deckenmikrofon, 4K-Weitwinkelkamera, Konferenzlautsprecher. Zertifiziert für Microsoft Teams Rooms und Zoom Rooms."
+      },
+      "cableManagement": {
+        "title": "Kabelmanagement-Upgrade",
+        "desc": "Verdeckte Führung unter dem Tisch mit Durchführungen an jedem Platz. Fügt HDMI- und USB-C-Durchgang hinzu."
+      },
+      "whiteboard": {
+        "title": "Wand-Whiteboard",
+        "desc": "Magnetische, abwischbare Oberfläche über eine ganze Wand. Passt natürlich zum Workshop-Layout."
+      },
+      "fabricPanel": {
+        "title": "Stoff nach Wunsch",
+        "desc": "Ersetzen Sie den Außenstoff durch eine Farbe aus Ihrer Markenpalette. Zwölf Standardfarben; Sonderanfertigungen auf Anfrage."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Was ist die Standardlieferzeit?",
+          "answer": "Sechs bis acht Wochen ab bestätigter Bestellung für das Basismodul. Jedes zusätzliche Segment verlängert die Lieferzeit um eine bis zwei Wochen. Sonderstoffe oder -ausführungen verlängern sie um weitere zwei bis drei Wochen."
+        },
+        "scaleUp": {
+          "question": "Kann ich später Segmente hinzufügen?",
+          "answer": "Ja — genau dafür ist Modular XL gebaut. Ein Segment hinzuzufügen ist ein halbtägiger Service pro Segment. Die Kabine ist auf mindestens zwei Erweiterungszyklen nach der Erstinstallation ausgelegt."
+        },
+        "ceilingHeight": {
+          "question": "Welche Raumhöhe brauche ich?",
+          "answer": "Mindestens 2600 mm. Die Kabine selbst ist 2260 mm hoch; wir empfehlen 340 mm Freiraum über dem Dach für die Belüftungsluft. Niedrigere Decken sind mit reduzierter Lüfterzahl möglich — bitte sprechen Sie uns vorher an."
+        },
+        "capacity": {
+          "question": "Was ist die realistische Kapazität pro Größe?",
+          "answer": "Basismodul: sechs sitzend komfortabel, acht stehend. Eine Erweiterung: acht sitzend, zehn stehend. Zwei Erweiterungen: zehn sitzend, zwölf stehend. Die Max.-Kapazität bezieht sich auf sitzende Nutzung; wir empfehlen keine reine Stehnutzung als Auslegungsgrundlage."
+        },
+        "warranty": {
+          "question": "Was deckt die Garantie ab?",
+          "answer": "Fünf Jahre auf die Struktur — Rahmen, Glas, Paneele, Türmechanik — für Basis und Segmente. Zwei Jahre auf die Elektronik — Lüfter, Sensoren, LED-Treiber. Verschleißteile (Türdichtungen, Stoff) sind ausgenommen. Vollständige Bedingungen liegen der Lieferung bei."
+        }
       }
     }
   }

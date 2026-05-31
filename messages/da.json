@@ -33,7 +33,13 @@
     "rpetFlexGrooveTitle": "rPET Flex Groove fleksible akustikpaneler | Re-Sound",
     "rpetFlexGrooveDescription": "Fleksible rillede akustikpaneler fremstillet af 100% genbrugt PET. Bøjelige til buede flader, søjler og specialfremstillede installationer. OEKO-TEX® certificeret.",
     "faqTitle": "FAQ — Re-Sound Akustikpaneler",
-    "faqDescription": "Svar på ofte stillede spørgsmål om Re-Sound akustikpaneler: hvordan absorption virker, brandklassifikationer, leveringstider, cirkulært tilbagetagningsprogram og produktvalg."
+    "faqDescription": "Svar på ofte stillede spørgsmål om Re-Sound akustikpaneler: hvordan absorption virker, brandklassifikationer, leveringstider, cirkulært tilbagetagningsprogram og produktvalg.",
+    "duoDescription": "Én bås, to konfigurationer: Flex rummer to personer til et fokuseret møde; Work giver én person et skrivebord i fuld bredde. 2 m² fodaftryk, elektrisk skrivebord, 230V-stik, fuld ventilation. Re-Sound akustikserie.",
+    "soloFlexDescription": "Akustisk telefonbås til én person, designet til fokussamtaler og dybt arbejde. 1 m² fodaftryk, integreret hæve-sænke-skrivebord, 230V-stik, USB-C og lydsvag ventilation. Del af Re-Sound boothserien.",
+    "modularXlDescription": "Skalerbar akustisk mødepod. Basismodul rummer 6 personer, kan udvides til 10 med 90 cm-segmenter. 25,9 dB(A) talereduktion, fuldt A/V-udstyr, tilgængelig indgang ved design.",
+    "modularXlTitle": "Modular XL Skalerbar akustisk mødepod | Re-Sound",
+    "duoTitle": "Duo Akustisk bås i to konfigurationer | Re-Sound",
+    "soloFlexTitle": "Solo Flex Akustisk énmandsbås | Re-Sound"
   },
   "nav": {
     "products": "Produkter",
@@ -163,7 +169,10 @@
       "showingAll": "Showing all {count} products",
       "showingFiltered": "Showing {filtered} of {total} products",
       "noResults": "Ingen produkter matcher dine filtre",
-      "clearAndShowAll": "Ryd filtre og vis alle"
+      "clearAndShowAll": "Ryd filtre og vis alle",
+      "panel": "Akustikplader",
+      "use": "Brug",
+      "booth": "Lydbåse"
     },
     "interior": {
       "title": "Interior",
@@ -252,6 +261,18 @@
         "title": "Custom Options",
         "description": "Available in 50+ colors and custom sizes to match your design vision."
       }
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Én bås, to konfigurationer. Flex sætter to personer til et møde; Work giver én person et fuldværdigt skrivebord. 26 dB(A) reduktion."
+    },
+    "solo-flex": {
+      "title": "Solo Flex",
+      "description": "Akustisk bås til én person, til fokussamtaler og dybt arbejde. 1 m² fodaftryk, integreret hæve-sænke-skrivebord, 24 dB(A) talereduktion."
+    },
+    "modular-xl": {
+      "title": "Modular XL",
+      "description": "Skalerbar mødepod. Base til 6 personer, udvides til 10 med modulære 90 cm-segmenter. 25,9 dB(A) talereduktion."
     }
   },
   "specs": {
@@ -2836,6 +2857,574 @@
         "category": "commercial",
         "question": "Hvordan anmoder jeg om et tilbud?",
         "answer": "Brug kontaktformularen på en produktside eller den generelle kontaktformular med: den produktlinje, du er interesseret i, omtrentlige mængder eller plantegning og din projekttidsplan. Vi svarer inden for en arbejdsdag med et skræddersyet tilbud, prøveordning og en beregning af forventet akustisk forbedring. For større projekter kan vi arrangere et besøg på stedet eller en briefingopkald."
+      }
+    }
+  },
+  "boothPage": {
+    "nav": {
+      "overview": "Oversigt",
+      "acoustics": "Akustik",
+      "configurations": "Konfigurationer",
+      "modular": "Modulær",
+      "features": "Egenskaber",
+      "specs": "Specifikationer",
+      "addons": "Tilvalg",
+      "downloads": "Downloads"
+    },
+    "cta": {
+      "requestQuote": "Anmod om tilbud",
+      "viewSpecifications": "Se specifikationer",
+      "callUs": "Ring til os: +32 3 284 68 18",
+      "ctaTitle": "Klar til at planlægge dit rum?",
+      "ctaSubtitle": "Vores team hjælper dig med at vælge den rigtige bås, konfigurere tilvalg og planlægge levering. Tilbud returneres typisk inden for én arbejdsdag.",
+      "deliveryNote": "EU-dækkende levering · Installation tilgængelig · 5 års strukturel garanti"
+    },
+    "acoustics": {
+      "benefitSpeech": {
+        "title": "Klarere taleforståelse",
+        "desc": "Det markante fald i baggrundsstøj lader hvert ord komme igennem — både inden for og uden for båsen."
+      },
+      "benefitFocus": {
+        "title": "Styrket koncentration",
+        "desc": "En mere stille skal udløser et målbart skift til dybere opmærksomhed inden for sekunder efter indgang."
+      },
+      "benefitStress": {
+        "title": "Mindre kognitiv belastning",
+        "desc": "Mindre omgivende støj reducerer den lytteindsats, hjernen yder kontinuerligt — mindre udmattelse, mere output."
+      }
+    },
+    "configurations": {
+      "capacity": "Kapacitet",
+      "deskSize": "Skrivebordsmål",
+      "deskHeight": "Skrivebordshøjde"
+    },
+    "specs": {
+      "externalDim": "Udvendige mål (B × D × H)",
+      "internalDim": "Indvendige mål (B × D × H)",
+      "doorWidth": "Dørbredde",
+      "weight": "Nettovægt",
+      "noiseReduction": "Talereduktion Dn,T,A",
+      "absorberMaterial": "Akustisk absorber",
+      "doorSeal": "Dørpakning",
+      "airflow": "Luftstrøm",
+      "fanCount": "Antal ventilatorer",
+      "occupancySensor": "Tilstedeværelsessensor",
+      "powerSockets": "Stikkontakter",
+      "usb": "USB-opladning",
+      "lighting": "Belysning",
+      "totalConsumption": "Samlet effekt",
+      "frame": "Ramme",
+      "glass": "Glas",
+      "interior": "Indvendig beklædning",
+      "floor": "Gulv",
+      "structural": "Strukturel garanti",
+      "electronics": "Elektronik-garanti",
+      "delivery": "Standardlevering",
+      "segmentSize": "Segmentmål",
+      "segmentWeight": "Segmentvægt",
+      "segmentFans": "Ventilatorer pr. segment",
+      "segmentPower": "Effekt pr. segment",
+      "ceilingHeight": "Min. lofthøjde",
+      "sideClearance": "Sideafstand",
+      "frontClearance": "Frontafstand"
+    },
+    "downloads": {
+      "tag": "RESSOURCER",
+      "title": "Dokumentation",
+      "productDataSheet": "Produktdatablad",
+      "installationManual": "Installationsvejledning",
+      "acousticTestReport": "Akustisk testrapport",
+      "cadDrawing": "CAD-tegning (DWG)",
+      "warranty": "Garantibevis",
+      "sustainability": "Bæredygtighedsdeklaration"
+    },
+    "crosslinks": {
+      "tag": "OGSÅ I SERIEN",
+      "title": "Andre lydbåse i serien",
+      "solo-flex": {
+        "name": "Solo Flex",
+        "tag": "Énmandsbås"
+      },
+      "duo": {
+        "name": "Duo",
+        "tag": "Bås i to konfigurationer"
+      },
+      "modular-xl": {
+        "name": "Modular XL",
+        "tag": "Skalerbar mødepod"
+      }
+    }
+  },
+  "soloFlexPage": {
+    "hero": {
+      "tag": "AKUSTISK ÉNMANDSBÅS",
+      "title": "Solo Flex",
+      "tagline": "En kvadratmeter stilhed, hvor end du har brug for den.",
+      "description": "Solo Flex er en akustisk bås til én person, bygget til fokussamtaler, videomøder og dybt arbejde. Et lille fodaftryk, et ærligt skrivebord der går fra siddende til stående, og den slags lydisolering der får storrumskontoret til at forsvinde.",
+      "statFootprint": "Fodaftryk",
+      "statWeight": "Nettovægt",
+      "statWarranty": "Garanti"
+    },
+    "overview": {
+      "tag": "ÉN BÅS, ÉN PERSON, INGEN KOMPROMISER",
+      "title": "Koncentration gjort håndgribelig.",
+      "description": "Solo Flex blev designet omkring én simpel begrænsning: giv én person alt det nødvendige for en produktiv arbejdstime, og intet der distraherer. Resultatet: en bås der passer mellem skriveborde uden at omlægge etagen — og som ikke føles som en kasse.",
+      "feature1": "1 m² fodaftryk passer ind i næsten ethvert kontorlayout",
+      "feature2": "Hæve-sænke-skrivebord justerbart fra 73 til 103 cm",
+      "feature3": "230V-stik plus USB-C og USB-A ved skrivebordet",
+      "feature4": "Lydsvag ventilation aktiveres ved indgang"
+    },
+    "acoustics": {
+      "tag": "AKUSTISK YDEEVNE",
+      "title": "Stilhed er konstrueret.",
+      "description": "En flerlaget vægkonstruktion — absorber af genbrugs-PET, stålramme, tætnet lamineret glas — reducerer tale med cirka 24 dB(A). Som reference: en almindelig stemme på den anden side af båsens væg lyder indenfor som en fjern mumlen.",
+      "dbValue": "24",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Talefrekvensreduktion (Dn,T,A) målt iht. ISO 23351-1."
+    },
+    "features": {
+      "tag": "STANDARD",
+      "title": "Hvad der er standard, og hvorfor det betyder noget.",
+      "ventilation": {
+        "title": "Lydsvag ventilation",
+        "desc": "Fire ventilatorer leverer 4,6 m³/min, rigeligt til én person. Lydniveauet forbliver under 30 dB(A) i brugerposition."
+      },
+      "electrics": {
+        "title": "Strøm hvor du sidder",
+        "desc": "230V-stik, USB-C (PD 60W) og USB-A integreret i bordpladen. Ingen forlængerledninger gennem døren."
+      },
+      "lighting": {
+        "title": "Justerbar belysning",
+        "desc": "Varm/kold dæmpbar LED med manuel styring. Kalibreret til rene hudtoner på kamera."
+      },
+      "comfort": {
+        "title": "Hæve-sænke-skrivebord",
+        "desc": "Manuel højdejustering mellem 73 og 103 cm. Bordflade 80 × 33 cm — rigeligt til bærbar, notesblok og kaffe."
+      },
+      "accessibility": {
+        "title": "Trinfri adgang",
+        "desc": "Flad tærskel og 90 cm fri dørbredde opfylder europæiske anbefalinger for tilgængelighed på kontorer."
+      },
+      "safety": {
+        "title": "Testet efter norm",
+        "desc": "CE-mærket, brandklasse EN 13501-1 B-s2,d0, elektrik certificeret iht. IEC 60598. Dokumentation følger med levering."
+      }
+    },
+    "specs": {
+      "tag": "TEKNIK",
+      "title": "Specifikationer",
+      "dimensionsTitle": "Dimensioner",
+      "externalDimValue": "1020 × 1020 × 2260 mm",
+      "internalDimValue": "910 × 910 × 2120 mm",
+      "doorWidthValue": "900 mm frit",
+      "weightValue": "280 kg",
+      "acousticsTitle": "Akustisk ydeevne",
+      "noiseReductionValue": "24 dB(A)",
+      "absorberValue": "Akustisk filt af genbrugs-PET, 24 mm",
+      "doorSealValue": "Magnetisk, firesidet kompression",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "4,6 m³/min",
+      "fanCountValue": "4 × lydsvage EC-ventilatorer",
+      "occupancyValue": "PIR-sensor med efterløb",
+      "electricsTitle": "Elektrik",
+      "powerValue": "1 × Schuko 230V ved skrivebordet",
+      "usbValue": "1 × USB-C PD 60W · 1 × USB-A",
+      "lightingValue": "LED 2700–5000K, dæmpbar",
+      "consumptionValue": "~80W typisk, 220W maks.",
+      "materialsTitle": "Materialer",
+      "frameValue": "Pulverlakeret stål",
+      "glassValue": "8 mm hærdet sikkerhedsglas",
+      "interiorValue": "Genbrugs-PET-filt, flammehæmmende behandlet",
+      "floorValue": "Tæppefliser i erhvervskvalitet",
+      "warrantyTitle": "Garanti & levering",
+      "structuralValue": "5 år",
+      "electronicsValue": "2 år",
+      "deliveryValue": "4–6 uger fra bestilling"
+    },
+    "addons": {
+      "tag": "TILVALG",
+      "title": "Konfigurér efter dine behov",
+      "description": "Solo Flex leveres fuldt udstyret, men følgende tilvalg er tilgængelige for projekter, der har brug for dem.",
+      "sitStandDesk": {
+        "title": "Elektrisk hæve-sænke-skrivebord",
+        "desc": "Opgrader fra manuel til elektrisk højdejustering med hukommelsespositioner. Anbefales til delte båse."
+      },
+      "monitorMount": {
+        "title": "Skærmarm",
+        "desc": "VESA-kompatibel enkelt-skærmarm med kabelføring gennem skrivebordet. Bærer op til 27\"."
+      },
+      "cableManagement": {
+        "title": "Forbedret kabelhåndtering",
+        "desc": "Kabelkanal med hurtigaftageligt dæksel. Tilføjer et andet strømkredsløb om nødvendigt."
+      },
+      "shelf": {
+        "title": "Hylde over skrivebordet",
+        "desc": "Svævende hylde til headset, notesblok eller planter. Monteret i øjenhøjde, 240 × 150 mm."
+      },
+      "extraFan": {
+        "title": "Forstærket ventilation",
+        "desc": "To ekstra ventilatorer til brug i højsommer eller installationer ved sydvendte glaspartier."
+      },
+      "fabricPanel": {
+        "title": "Skræddersyet stof",
+        "desc": "Udskift udvendigt stof med en farve fra jeres brandpalet. Tolv standardfarver; specialfremstilling efter ønske."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hvad er standardleveringstiden?",
+          "answer": "Fire til seks uger fra bekræftet ordre for standardkonfigurationer. Specialstof eller -finish tilføjer to til tre uger. Eksprestlevering er tilgængelig for udvalgte lagermodeller."
+        },
+        "noiseReduction": {
+          "question": "Hvor meget støj blokerer Solo Flex reelt?",
+          "answer": "Cirka 24 dB(A) reduktion over talefrekvenserne, målt iht. ISO 23351-1. I praksis: en samtale i normalt lydniveau uden for båsen høres indenfor som en fjern mumlen, og omvendt."
+        },
+        "installation": {
+          "question": "Kræver installationen byggearbejde?",
+          "answer": "Nej. Solo Flex er fritstående og tilsluttes en almindelig Schuko-stikkontakt. To personer kan samle den på stedet på under tre timer. Installation i EU tilbydes som standardvalg."
+        },
+        "ventilation": {
+          "question": "Hvordan fungerer ventilationen?",
+          "answer": "Fire EC-ventilatorer kører kontinuerligt, mens båsen er optaget, og skifter 4,6 m³/min luft. En PIR-sensor standser ventilatorerne cirka et minut efter, båsen er forladt. Denne adfærd kan justeres fra vægpanelet."
+        },
+        "warranty": {
+          "question": "Hvad dækker garantien?",
+          "answer": "Fem år på strukturen — ramme, glas, paneler, dørmekanisme. To år på elektronik — ventilatorer, sensorer, LED-driver. Sliddele (dørpakninger, stof) er undtaget. Fulde vilkår leveres med."
+        }
+      }
+    }
+  },
+  "duoPage": {
+    "hero": {
+      "tag": "BÅS I TO KONFIGURATIONER",
+      "title": "Duo",
+      "tagline": "Én skal. To helt forskellige rum.",
+      "description": "Duo er én enkelt bås, der virkelig forpligter sig til to anvendelser. Flex-konfigurationen placerer et lille elektrisk skrivebord centralt — to personer, ansigt til ansigt, til et fokuseret møde. Work-konfigurationen installerer et skrivebord i fuld bredde langs en væg — én person, tre skærme, en rigtig arbejdsplads. Du vælger ved bestilling, hvilken der passer til din etage.",
+      "statFootprint": "Fodaftryk",
+      "statWeight": "Nettovægt",
+      "statConfigs": "Konfigurationer"
+    },
+    "overview": {
+      "tag": "ÉN BÅS, TO RUM",
+      "title": "En bås der retfærdiggør sin plads dobbelt.",
+      "description": "Duos skal er identisk mellem konfigurationer — samme ventilation, samme akustik, samme elektrik. Det der ændrer sig er det indre: et centralt elektrisk skrivebord til møder med to, eller et vægmonteret elektrisk skrivebord til fokuseret enkeltarbejde. Valget træffes ved bestilling, ikke ved installation.",
+      "feature1": "Samme udvendige mål uanset konfiguration",
+      "feature2": "Elektrisk højdejusterbart skrivebord i begge tilstande",
+      "feature3": "To 230V-stik og fuldt USB-udstyr",
+      "feature4": "Løser dilemmaet samtalerum/fokusrum i ét køb"
+    },
+    "acoustics": {
+      "tag": "AKUSTISK YDEEVNE",
+      "title": "Bygget til samtale, lukket for alt andet.",
+      "description": "Duos større volumen kræver proportionalt bedre isolering. Vægkonstruktionen — absorber af genbrugs-PET, dobbeltskallet stålramme, tætnet lamineret glas — leverer cirka 26 dB(A) talereduktion, klart i mødelokaleterritoriet.",
+      "dbValue": "26",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Talefrekvensreduktion (Dn,T,A) målt iht. ISO 23351-1."
+    },
+    "configurations": {
+      "tag": "VÆLG DIT LAYOUT",
+      "title": "Flex eller Work — samme bås, andet rum.",
+      "description": "Begge konfigurationer leveres som Duo. Den eneste forskel er hvordan skrivebordet monteres. Du kan også skifte senere — konverteringssættet er en halv dags service på stedet.",
+      "flex": {
+        "letter": "f",
+        "name": "Flex",
+        "heading": "To personer, ansigt til ansigt.",
+        "description": "Et lille elektrisk skrivebord står centralt i båsen, lige stort nok til to bærbare og to notesblokke. Skamler eller stole flankerer det — de fleste kunder vælger de integrerede skamler. Ideelt til en-til-en-samtaler, interviews og korte stående møder.",
+        "point1": "Centralt skrivebord, 45 × 46 cm, elektrisk højdejusterbart",
+        "point2": "Trinløs justering mellem 80 og 120 cm",
+        "point3": "Strøm i begge ender af bordpladen",
+        "point4": "Skamler valgfri; stående brug indarbejdet i designet",
+        "capacity": "2 personer",
+        "deskSize": "45 × 46 cm",
+        "deskHeight": "80–120 cm"
+      },
+      "work": {
+        "letter": "w",
+        "name": "Work",
+        "heading": "Én person, et rigtigt skrivebord.",
+        "description": "Et elektrisk skrivebord i fuld bredde løber langs én væg, dybt nok til tre skærme eller en bærbar med periferiudstyr. Den anden væg står fri, hvilket forhindrer båsen i at føles trykkende selv efter fire timer.",
+        "point1": "Vægskrivebord, 104 × 60 cm, elektrisk højdejusterbart",
+        "point2": "Trinløs justering mellem 71 og 120 cm",
+        "point3": "To stikkontakter og USB ved skrivebordet",
+        "point4": "Kabelføring skjult gennem benkanalen",
+        "capacity": "1 person",
+        "deskSize": "104 × 60 cm",
+        "deskHeight": "71–120 cm"
+      }
+    },
+    "features": {
+      "tag": "STANDARD",
+      "title": "Hvad der er standard i begge konfigurationer.",
+      "switchable": {
+        "title": "Klar til konvertering",
+        "desc": "Begge skriveborde monteres på den samme indvendige skinne. At skifte konfiguration senere er en halv dags service — ingen ombygning, ingen erstatning."
+      },
+      "ventilation": {
+        "title": "To-zonet ventilation",
+        "desc": "Otte ventilatorer leverer 9,2 m³/min — dimensioneret til to brugere i aktiv samtale, det værste tilfælde for CO₂-opbygning."
+      },
+      "electrics": {
+        "title": "To strømkredsløb",
+        "desc": "Uafhængige 230V-kredse på hver væg. USB-C PD 60W og USB-A i bordpladen. Kabelføring skjult."
+      },
+      "lighting": {
+        "title": "Belysning på mødeniveau",
+        "desc": "Varm/kold dæmpbar LED, egnet til videoopkald. Jævn belysning af begge ansigter i Flex-tilstand — ingen øjenskygger."
+      },
+      "accessibility": {
+        "title": "Bred trinfri adgang",
+        "desc": "100 cm fri dørbredde — opfylder europæiske anbefalinger for tilgængelighed og tager kørestole. Tærsklen er flad."
+      },
+      "safety": {
+        "title": "Testet efter norm",
+        "desc": "CE-mærket, brandklasse EN 13501-1 B-s2,d0, elektrik certificeret iht. IEC 60598. Standard ved hver levering."
+      }
+    },
+    "specs": {
+      "tag": "TEKNIK",
+      "title": "Specifikationer",
+      "dimensionsTitle": "Dimensioner",
+      "externalDimValue": "1640 × 1200 × 2260 mm",
+      "internalDimValue": "1530 × 1090 × 2120 mm",
+      "doorWidthValue": "1000 mm frit",
+      "weightValue": "420 kg",
+      "acousticsTitle": "Akustisk ydeevne",
+      "noiseReductionValue": "26 dB(A)",
+      "absorberValue": "Akustisk filt af genbrugs-PET, 24 mm",
+      "doorSealValue": "Magnetisk, firesidet kompression",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "9,2 m³/min",
+      "fanCountValue": "8 × lydsvage EC-ventilatorer",
+      "occupancyValue": "PIR-sensor med efterløb",
+      "electricsTitle": "Elektrik",
+      "powerValue": "2 × Schuko 230V (uafhængige kredse)",
+      "usbValue": "2 × USB-C PD 60W · 2 × USB-A",
+      "lightingValue": "LED 2700–5000K, dæmpbar",
+      "consumptionValue": "~140W typisk, 380W maks.",
+      "materialsTitle": "Materialer",
+      "frameValue": "Pulverlakeret stål, dobbeltskallet",
+      "glassValue": "8 mm hærdet sikkerhedsglas",
+      "interiorValue": "Genbrugs-PET-filt, flammehæmmende behandlet",
+      "floorValue": "Tæppefliser i erhvervskvalitet",
+      "warrantyTitle": "Garanti & levering",
+      "structuralValue": "5 år",
+      "electronicsValue": "2 år",
+      "deliveryValue": "4–6 uger fra bestilling"
+    },
+    "addons": {
+      "tag": "TILVALG",
+      "title": "Konfigurér efter dine behov",
+      "description": "Duo leveres fuldt udstyret i begge konfigurationer. Følgende tilvalg udvider den til specifikke anvendelser.",
+      "electricDesk": {
+        "title": "Skrivebord med hukommelsespositioner",
+        "desc": "Udvid det elektriske skrivebord med tre højde-hukommelsespositioner — nyttigt når båsen deles af flere brugere."
+      },
+      "monitorMount": {
+        "title": "Skærmarme (enkelt eller dobbelt)",
+        "desc": "VESA-kompatible beslag med kabelføring. Anbefales til Work-konfiguration med flere skærme."
+      },
+      "displaySystem": {
+        "title": "Vægmonteret skærm",
+        "desc": "Indbygget 32\"-skærm på bagvæggen, HDMI- og USB-C-indgange. Designet til videoopkald i Flex-konfiguration."
+      },
+      "cableManagement": {
+        "title": "Forbedret kabelhåndtering",
+        "desc": "Skjult føring med hurtigaftageligt dæksel. Tilføjer et tredje strømkredsløb og HDMI-gennemløb."
+      },
+      "extraSeating": {
+        "title": "Integrerede skamler",
+        "desc": "To skamler betrukket med akustisk stof, som passer i Flex-konfigurationen. Stables mod væggen når de ikke er i brug."
+      },
+      "fabricPanel": {
+        "title": "Skræddersyet stof",
+        "desc": "Udskift udvendigt stof med en farve fra jeres brandpalet. Tolv standardfarver; specialfremstilling efter ønske."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hvad er standardleveringstiden?",
+          "answer": "Fire til seks uger fra bekræftet ordre. Specialstof eller -finish tilføjer to til tre uger. Valget af konfiguration påvirker ikke leveringstiden — begge kommer fra samme produktionslinje."
+        },
+        "configChoice": {
+          "question": "Hvordan vælger jeg mellem Flex og Work?",
+          "answer": "Hvis dit team har brug for flere lokaler til en-til-en-møder, vælg Flex. Hvis det har brug for flere lokaler til individuelt fokusarbejde, vælg Work. De fleste kunder blander begge på én etage. Vores team kan hjælpe med at modellere det rette forhold ud fra jeres medarbejderantal."
+        },
+        "switchConfig": {
+          "question": "Kan jeg skifte fra Flex til Work senere?",
+          "answer": "Ja. Begge skriveborde monteres på den samme indvendige skinne. En konvertering på stedet tager cirka en halv dag. Konverteringssættet kan købes separat."
+        },
+        "noiseReduction": {
+          "question": "Hvor godt isolerer Duo støj?",
+          "answer": "Cirka 26 dB(A) reduktion over talefrekvenserne, iht. ISO 23351-1. I praksis: en samtale i normalt lydniveau indenfor ligger på tærsklen for hørbarhed udenfor. To personer kan trygt holde et møde ved siden af et storrumsskrivebord."
+        },
+        "warranty": {
+          "question": "Hvad dækker garantien?",
+          "answer": "Fem år på strukturen — ramme, glas, paneler, dørmekanisme. To år på elektronik — ventilatorer, sensorer, LED-driver, motor for elektrisk skrivebord. Sliddele (dørpakninger, stof) er undtaget. Fulde vilkår leveres med."
+        }
+      }
+    }
+  },
+  "modularXlPage": {
+    "hero": {
+      "tag": "SKALERBAR MØDEPOD",
+      "title": "Modular XL",
+      "tagline": "Et mødelokale, der bliver længere, når du har brug for flere stole.",
+      "description": "Modular XL er den største bås i Re-Sound-serien — og den eneste designet til at vokse efter installation. Basis rummer komfortabelt seks personer. Derfra forlænger modulære 90 cm-segmenter båsen i begge retninger, op til en maksimal kapacitet på ti. Samme akustiske ydeevne, samme ventilationslogik, skaleret.",
+      "statFootprint": "Basis-fodaftryk",
+      "statWeight": "Basisvægt",
+      "statCapacity": "Maks. kapacitet"
+    },
+    "overview": {
+      "tag": "I MØDELOKALESKALA",
+      "title": "Når en bås skal være et rum.",
+      "description": "Modular XL er bygget til den type samtaler, der ikke passer i en telefonbås: kundepræsentationer, interne workshops, hybride teammøder. Den akustiske skal isolerer tilstrækkeligt til, at en heftig diskussion ikke når storrummet, og en workshop indenfor ikke bliver afbrudt af printeren udenfor.",
+      "feature1": "Basismodul rummer op til 6 siddende personer",
+      "feature2": "90 cm-segmenter forlænger båsen op til 10",
+      "feature3": "25,9 dB(A) talereduktion — mødelokaleklasse",
+      "feature4": "Fuldt A/V-udstyr og tilgængelig indgang ved design"
+    },
+    "acoustics": {
+      "tag": "AKUSTISK YDEEVNE",
+      "title": "Mødelokaleisolering i en flytbar skal.",
+      "description": "Det større volumen i Modular XL betyder naturligt lavere efterklang indenfor — lyden har mere luft at sprede sig i. Kombineret med vægkonstruktionen (absorber af genbrugs-PET, stålramme, tætnet lamineret glas) leverer den 25,9 dB(A) talereduktion selv i fuldt udvidet konfiguration.",
+      "dbValue": "25,9",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Talefrekvensreduktion (Dn,T,A) målt iht. ISO 23351-1."
+    },
+    "modular": {
+      "tag": "MODULÆR ARKITEKTUR",
+      "title": "Tilføjer 90 cm ad gangen. Så mange som rummet tillader.",
+      "description": "Hvert segment er en selvstændig 90 cm-udvidelse, der boltes på båsens strukturelle skinne. Segmentet medbringer sin egen ventilation (fire indtags- + fire udsugningsventilatorer) og belysning, dimensioneret til at fastholde komfort efterhånden som belægning vokser.",
+      "baseLabel": "Basismodul",
+      "baseTag": "BASIS · 6 PAX",
+      "scaleLabel": "UDVID",
+      "scenario1": {
+        "size": "BASIS",
+        "title": "Team-stand-up",
+        "description": "Seks personer omkring et centralt bord. Egnet til daglige stand-ups, designreviews og små kundedemoer. Passer på de fleste kontoretager uden omlægning."
+      },
+      "scenario2": {
+        "size": "BASIS + 1",
+        "title": "Workshop",
+        "description": "Otte personer, ét udvidelsessegment. Siddende eller stående. Rummer to whiteboards plus en vægmonteret skærm. Egnet til halvdagsarbejdssessioner."
+      },
+      "scenario3": {
+        "size": "BASIS + 2",
+        "title": "All-hands",
+        "description": "Ti personer, to udvidelsessegmenter. Hesteskoopstilling omkring en skærm. Den største konfiguration; overvej en fast placering ved denne størrelse."
+      }
+    },
+    "features": {
+      "tag": "STANDARD",
+      "title": "Hvad der er standard, før tilvalg tilføjes.",
+      "modular": {
+        "title": "Udvideligt på stedet",
+        "desc": "Segmenter boltes på efter installation. Senere kapacitetsforøgelse kræver ikke en ny bås — kun en halv dags service pr. segment."
+      },
+      "ventilation": {
+        "title": "Skaleret ventilation",
+        "desc": "16 ventilatorer leverer 18,4 m³/min i basismodulet. Hvert segment tilføjer 4 indtag + 4 udsugning, så luftstrømmen skaleres med belægningen."
+      },
+      "electrics": {
+        "title": "Distribueret strøm",
+        "desc": "Flere 230V-kredse langs vægskinnen, med USB-C og USB-A ved hver plads. Hvert segment tilføjer sin egen elzone."
+      },
+      "lighting": {
+        "title": "Belysning i workshopkvalitet",
+        "desc": "Dæmpbar varm/kold LED med separate zoner til skærm- og skriveopgaver. Styres fra vægpanelet."
+      },
+      "accessibility": {
+        "title": "Kørestolstilgængelig",
+        "desc": "110 cm fri dørbredde og flad tærskel er kompatibel med kørestole. Det indvendige layout giver plads til én kørestolsbruger ved bordet."
+      },
+      "safety": {
+        "title": "Testet efter norm",
+        "desc": "CE-mærket, brandklasse EN 13501-1 B-s2,d0, elektrik certificeret iht. IEC 60598. Dokumentation følger med levering."
+      }
+    },
+    "specs": {
+      "tag": "TEKNIK",
+      "title": "Specifikationer",
+      "dimensionsTitle": "Basisdimensioner",
+      "externalDimValue": "2400 × 1800 × 2260 mm",
+      "internalDimValue": "2290 × 1690 × 2120 mm",
+      "doorWidthValue": "1100 mm frit",
+      "weightValue": "790 kg",
+      "extensionTitle": "Udvidelsessegment",
+      "segmentSizeValue": "900 × 1800 × 2260 mm",
+      "segmentWeightValue": "280 kg",
+      "segmentFansValue": "4 indtag + 4 udsugning",
+      "segmentPowerValue": "40W aktiv",
+      "acousticsTitle": "Akustisk ydeevne",
+      "noiseReductionValue": "25,9 dB(A)",
+      "absorberValue": "Akustisk filt af genbrugs-PET, 24 mm",
+      "doorSealValue": "Magnetisk, firesidet kompression",
+      "ventilationTitle": "Ventilation (basis)",
+      "airflowValue": "18,4 m³/min",
+      "fanCountValue": "16 × lydsvage EC-ventilatorer",
+      "occupancyValue": "PIR-sensor med efterløb",
+      "clearancesTitle": "Installationsafstande",
+      "ceilingValue": "Minimum 2600 mm",
+      "sideValue": "400 mm i hver side",
+      "frontValue": "1100 mm foran døren",
+      "warrantyTitle": "Garanti & levering",
+      "structuralValue": "5 år",
+      "electronicsValue": "2 år",
+      "deliveryValue": "6–8 uger fra bestilling"
+    },
+    "addons": {
+      "tag": "TILVALG",
+      "title": "Konfigurér efter dine behov",
+      "description": "Modular XL leveres møde-klar i basisudgaven. Følgende tilvalg udvider den til workshops, hybride opkald og præsentationer.",
+      "meetingTable": {
+        "title": "Mødebord",
+        "desc": "Bord med massivt bord dimensioneret til din konfiguration — rundt til basismodulet, ovalt eller bestyrelsesform til udvidede layouts."
+      },
+      "displaySystem": {
+        "title": "Vægmonteret skærm (55\"/65\"/75\")",
+        "desc": "Indbygget skærm på bagvæggen med HDMI-, USB-C- og trådløs indgang. De fleste kunder vælger 65\" til basismodulet."
+      },
+      "videoConference": {
+        "title": "Videokonferencesæt",
+        "desc": "Indbygget loftmikrofon, 4K vidvinkelkamera, konferencehøjttaler. Certificeret til Microsoft Teams Rooms og Zoom Rooms."
+      },
+      "cableManagement": {
+        "title": "Forbedret kabelhåndtering",
+        "desc": "Skjult føring under bordet med udtag ved hver plads. Tilføjer HDMI- og USB-C-gennemløb."
+      },
+      "whiteboard": {
+        "title": "Vægmonteret whiteboard",
+        "desc": "Magnetisk tør-aftørbar overflade over én hel væg. Passer naturligt til workshopopstilling."
+      },
+      "fabricPanel": {
+        "title": "Skræddersyet stof",
+        "desc": "Udskift udvendigt stof med en farve fra jeres brandpalet. Tolv standardfarver; specialfremstilling efter ønske."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hvad er standardleveringstiden?",
+          "answer": "Seks til otte uger fra bekræftet ordre for basismodulet. Hvert ekstra segment tilføjer en til to uger. Specialstof eller -finish tilføjer yderligere to til tre uger."
+        },
+        "scaleUp": {
+          "question": "Kan jeg tilføje segmenter senere?",
+          "answer": "Ja — det er præcis, hvad Modular XL er bygget til. At tilføje et segment er en halv dags service pr. segment. Båsen er bygget til mindst to udvidelsescyklusser efter den indledende installation."
+        },
+        "ceilingHeight": {
+          "question": "Hvilken lofthøjde har jeg brug for?",
+          "answer": "Minimum 2600 mm. Båsen er 2260 mm høj; vi anbefaler 340 mm frihøjde over taget til ventilationsluftstrøm. Lavere lofter er mulige med reduceret ventilatorantal — kontakt os først."
+        },
+        "capacity": {
+          "question": "Hvad er den realistiske kapacitet pr. størrelse?",
+          "answer": "Basismodul: seks komfortabelt siddende, otte stående. Én udvidelse: otte siddende, ti stående. To udvidelser: ti siddende, tolv stående. Maks. kapacitet forudsætter siddende brug; vi anbefaler ikke at dimensionere til kun stående brug."
+        },
+        "warranty": {
+          "question": "Hvad dækker garantien?",
+          "answer": "Fem år på strukturen — ramme, glas, paneler, dørmekanisme — på basis og segmenter. To år på elektronik — ventilatorer, sensorer, LED-driver. Sliddele (dørpakninger, stof) er undtaget. Fulde vilkår leveres med."
+        }
       }
     }
   }

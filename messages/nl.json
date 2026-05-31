@@ -33,7 +33,13 @@
     "solidTitle": "Solid Akoestische Wandpanelen | Re-Sound",
     "solidDescription": "Grootformaat akoestische wandpanelen voor krachtige geluidsabsorptie. 1200 × 600 mm, haakinstallatiesysteem, 100% gerecycleerde materialen. Gemaakt in België.",
     "faqTitle": "Veelgestelde vragen — Re-Sound Akoestische Panelen",
-    "faqDescription": "Antwoorden op veelgestelde vragen over Re-Sound akoestische panelen: hoe absorptie werkt, brandklassen, levertijden, circulair terugnameprogramma en productkeuze."
+    "faqDescription": "Antwoorden op veelgestelde vragen over Re-Sound akoestische panelen: hoe absorptie werkt, brandklassen, levertijden, circulair terugnameprogramma en productkeuze.",
+    "duoDescription": "Eén cabine, twee configuraties: Flex biedt plaats aan twee personen voor een gefocust gesprek; Work geeft één persoon een bureau over de volle breedte. 2 m² voetafdruk, elektrisch bureau, 230V stopcontact, volledige ventilatie. Re-Sound akoestiek-reeks.",
+    "soloFlexDescription": "Akoestische telefooncabine voor één persoon, ideaal voor focusgesprekken en geconcentreerd werk. 1 m² voetafdruk, geïntegreerd zit-stabureau, 230V stopcontact, USB-C en stille ventilatie. Onderdeel van de Re-Sound soundbooth-reeks.",
+    "modularXlDescription": "Schaalbare akoestische vergaderpod. Basis biedt plaats aan 6 personen, uitbreidbaar tot 10 met segmenten van 90 cm. 25,9 dB(A) spraakreductie, volledige A/V-voorzieningen, toegankelijk ontwerp.",
+    "modularXlTitle": "Modular XL Schaalbare Akoestische Vergaderpod | Re-Sound",
+    "duoTitle": "Duo Akoestische Cabine in Twee Configuraties | Re-Sound",
+    "soloFlexTitle": "Solo Flex Akoestische Cabine voor Één Persoon | Re-Sound"
   },
   "nav": {
     "products": "Producten",
@@ -176,7 +182,10 @@
       "showingAll": "{count} producten weergegeven",
       "showingFiltered": "{filtered} van {total} producten weergegeven",
       "noResults": "Geen producten komen overeen met je filters",
-      "clearAndShowAll": "Filters wissen en alles tonen"
+      "clearAndShowAll": "Filters wissen en alles tonen",
+      "panel": "Akoestische panelen",
+      "use": "Toepassing",
+      "booth": "Soundbooths"
     },
     "titleHighlight": "voor elke ruimte.",
     "rwood-perf": {
@@ -215,6 +224,18 @@
       "title": "rPET - Panel",
       "description": "Veelzijdige gerecycleerde PET akoestische panelen. Clean design voor wanden en plafonds met superieure geluidbeheersing.",
       "fullDescription": "rPET - Panel biedt een strakke, minimalistische esthetiek volledig gemaakt van gerecycleerde PET-flessen. Deze veelzijdige panelen bieden uitstekende akoestische prestaties voor elke interieurtoepasssing."
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Eén cabine, twee configuraties. Flex zet twee personen aan tafel voor een vergadering; Work geeft één persoon een volwaardig bureau. 26 dB(A) reductie."
+    },
+    "solo-flex": {
+      "title": "Solo Flex",
+      "description": "Akoestische cabine voor één persoon, voor focusgesprekken en geconcentreerd werk. 1 m² voetafdruk, geïntegreerd zit-stabureau, 24 dB(A) spraakreductie."
+    },
+    "modular-xl": {
+      "title": "Modular XL",
+      "description": "Schaalbare vergaderpod. Basis voor 6 personen, uitbreidbaar tot 10 met modulaire segmenten van 90 cm. 25,9 dB(A) spraakreductie."
     }
   },
   "specs": {
@@ -2836,6 +2857,574 @@
         "category": "commercial",
         "question": "Hoe vraag ik een offerte aan?",
         "answer": "Gebruik het contactformulier op elke productpagina of het algemene contactformulier, met: de productlijn die je interesseert, geschatte hoeveelheden of grondplan, en je projectplanning. We antwoorden binnen één werkdag met een offerte op maat, stalenregeling en een berekening van de verwachte akoestische verbetering. Voor grotere projecten gaan we ter plaatse of doen we een briefing-call."
+      }
+    }
+  },
+  "boothPage": {
+    "nav": {
+      "overview": "Overzicht",
+      "acoustics": "Akoestiek",
+      "configurations": "Configuraties",
+      "modular": "Modulair",
+      "features": "Kenmerken",
+      "specs": "Specificaties",
+      "addons": "Opties",
+      "downloads": "Downloads"
+    },
+    "cta": {
+      "requestQuote": "Vraag een offerte",
+      "viewSpecifications": "Bekijk specificaties",
+      "callUs": "Bel ons: +32 3 284 68 18",
+      "ctaTitle": "Klaar om je ruimte uit te tekenen?",
+      "ctaSubtitle": "Ons team helpt je de juiste cabine kiezen, opties configureren en levering plannen. Offertes meestal binnen één werkdag terug.",
+      "deliveryNote": "Levering in heel de EU · Installatie mogelijk · 5 jaar garantie op het frame"
+    },
+    "acoustics": {
+      "benefitSpeech": {
+        "title": "Heldere spraakverstaanbaarheid",
+        "desc": "De scherpe daling van achtergrondruis zorgt ervoor dat elk woord aankomt — zowel binnen als buiten de cabine."
+      },
+      "benefitFocus": {
+        "title": "Versterkte focus",
+        "desc": "Een stillere schil zorgt voor een meetbare overgang naar diepere concentratie binnen seconden na het binnenkomen."
+      },
+      "benefitStress": {
+        "title": "Lagere cognitieve belasting",
+        "desc": "Minder omgevingslawaai verlaagt de luisterinspanning die je hersenen continu leveren — minder uitputting, meer output."
+      }
+    },
+    "configurations": {
+      "capacity": "Capaciteit",
+      "deskSize": "Bureaumaat",
+      "deskHeight": "Bureauhoogte"
+    },
+    "specs": {
+      "externalDim": "Buitenafmetingen (B × D × H)",
+      "internalDim": "Binnenafmetingen (B × D × H)",
+      "doorWidth": "Deurbreedte",
+      "weight": "Netto gewicht",
+      "noiseReduction": "Spraakreductie Dn,T,A",
+      "absorberMaterial": "Akoestische absorber",
+      "doorSeal": "Deurafdichting",
+      "airflow": "Luchtdebiet",
+      "fanCount": "Aantal ventilatoren",
+      "occupancySensor": "Aanwezigheidsdetectie",
+      "powerSockets": "Stopcontacten",
+      "usb": "USB-oplaadpunten",
+      "lighting": "Verlichting",
+      "totalConsumption": "Totaal vermogen",
+      "frame": "Frame",
+      "glass": "Beglazing",
+      "interior": "Binnenbekleding",
+      "floor": "Vloer",
+      "structural": "Garantie op constructie",
+      "electronics": "Garantie op elektronica",
+      "delivery": "Standaard levertijd",
+      "segmentSize": "Afmetingen segment",
+      "segmentWeight": "Gewicht segment",
+      "segmentFans": "Ventilatoren per segment",
+      "segmentPower": "Vermogen per segment",
+      "ceilingHeight": "Minimale plafondhoogte",
+      "sideClearance": "Vrije ruimte zijkant",
+      "frontClearance": "Vrije ruimte voorkant"
+    },
+    "downloads": {
+      "tag": "RESOURCES",
+      "title": "Documentatie",
+      "productDataSheet": "Productdatablad",
+      "installationManual": "Installatiehandleiding",
+      "acousticTestReport": "Akoestisch testrapport",
+      "cadDrawing": "CAD-tekening (DWG)",
+      "warranty": "Garantiecertificaat",
+      "sustainability": "Duurzaamheidsverklaring"
+    },
+    "crosslinks": {
+      "tag": "OOK IN DE REEKS",
+      "title": "Andere soundbooths in de reeks",
+      "solo-flex": {
+        "name": "Solo Flex",
+        "tag": "Eenpersoonscabine"
+      },
+      "duo": {
+        "name": "Duo",
+        "tag": "Cabine in twee configuraties"
+      },
+      "modular-xl": {
+        "name": "Modular XL",
+        "tag": "Schaalbare vergaderpod"
+      }
+    }
+  },
+  "soloFlexPage": {
+    "hero": {
+      "tag": "AKOESTISCHE CABINE VOOR ÉÉN PERSOON",
+      "title": "Solo Flex",
+      "tagline": "Eén vierkante meter rust, waar je hem ook nodig hebt.",
+      "description": "Solo Flex is een akoestische cabine voor één persoon, gebouwd voor focusgesprekken, videovergaderingen en geconcentreerd werk. Een kleine voetafdruk, een eerlijk bureau dat van zit naar sta gaat, en de soort geluidsisolatie die het open kantoor doet verdwijnen.",
+      "statFootprint": "Voetafdruk",
+      "statWeight": "Netto gewicht",
+      "statWarranty": "Garantie"
+    },
+    "overview": {
+      "tag": "ÉÉN CABINE, ÉÉN PERSOON, GEEN COMPROMIS",
+      "title": "Focus, tastbaar gemaakt.",
+      "description": "Solo Flex is ontworpen rond één eenvoudig uitgangspunt: geef één persoon alles wat nodig is voor een productief uur werken, en niets dat afleidt. Het resultaat: een cabine die tussen bureaus past zonder de vloer te herindelen — en die niet aanvoelt als een hok.",
+      "feature1": "1 m² voetafdruk past in vrijwel elke kantoorinrichting",
+      "feature2": "Zit-stabureau verstelbaar van 73 tot 103 cm",
+      "feature3": "230V stopcontact plus USB-C en USB-A aan het bureau",
+      "feature4": "Fluisterstille ventilatie schakelt aan bij betreden"
+    },
+    "acoustics": {
+      "tag": "AKOESTISCHE PRESTATIES",
+      "title": "Stilte is engineering.",
+      "description": "Een meerlaagse wandopbouw — gerecycleerde-PET absorber, stalen frame, gelaagd glas met afdichting — verlaagt spraak met ongeveer 24 dB(A). Ter vergelijking: een normale stem aan de andere kant van de cabinewand klinkt binnen als een zacht gemurmel.",
+      "dbValue": "24",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Spraakfrequentie-reductie (Dn,T,A) gemeten volgens ISO 23351-1."
+    },
+    "features": {
+      "tag": "STANDAARD INBEGREPEN",
+      "title": "Wat standaard is, en waarom dat telt.",
+      "ventilation": {
+        "title": "Stille ventilatie",
+        "desc": "Vier ventilatoren leveren 4,6 m³/min, ruim voldoende voor één persoon. Geluidsniveau blijft onder 30 dB(A) op gebruikerspositie."
+      },
+      "electrics": {
+        "title": "Stroom waar je zit",
+        "desc": "230V stopcontact, USB-C (PD 60W) en USB-A geïntegreerd in het bureaublad. Geen verlengsnoeren door de deur."
+      },
+      "lighting": {
+        "title": "Instelbare verlichting",
+        "desc": "Warm/koel dimbare LED met handmatige bediening. Gekalibreerd voor zuivere huidtonen op camera."
+      },
+      "comfort": {
+        "title": "Zit-stabureau",
+        "desc": "Handmatig in hoogte verstelbaar tussen 73 en 103 cm. Bladoppervlak 80 × 33 cm — ruim genoeg voor laptop, notitieblok en koffie."
+      },
+      "accessibility": {
+        "title": "Drempelvrije toegang",
+        "desc": "Vlakke drempel en 90 cm vrije deurbreedte voldoen aan Europese toegankelijkheidsrichtlijnen voor kantoorvoorzieningen."
+      },
+      "safety": {
+        "title": "Getest volgens norm",
+        "desc": "CE-gemarkeerd, brandklasse EN 13501-1 B-s2,d0, elektrische installatie volgens IEC 60598. Documentatie wordt meegeleverd."
+      }
+    },
+    "specs": {
+      "tag": "TECHNISCH",
+      "title": "Specificaties",
+      "dimensionsTitle": "Afmetingen",
+      "externalDimValue": "1020 × 1020 × 2260 mm",
+      "internalDimValue": "910 × 910 × 2120 mm",
+      "doorWidthValue": "900 mm vrij",
+      "weightValue": "280 kg",
+      "acousticsTitle": "Akoestische prestaties",
+      "noiseReductionValue": "24 dB(A)",
+      "absorberValue": "Gerecycleerd-PET akoestisch vilt, 24 mm",
+      "doorSealValue": "Magnetisch, vierzijdige aandrukafdichting",
+      "ventilationTitle": "Ventilatie",
+      "airflowValue": "4,6 m³/min",
+      "fanCountValue": "4 × stille EC-ventilatoren",
+      "occupancyValue": "PIR-sensor met nalooptijd",
+      "electricsTitle": "Elektriciteit",
+      "powerValue": "1 × Schuko 230V aan het bureau",
+      "usbValue": "1 × USB-C PD 60W · 1 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimbaar",
+      "consumptionValue": "~80W typisch, 220W max",
+      "materialsTitle": "Materialen",
+      "frameValue": "Poedergecoat staal",
+      "glassValue": "8 mm gehard veiligheidsglas",
+      "interiorValue": "Gerecycleerd-PET vilt, brandvertragend behandeld",
+      "floorValue": "Tapijttegels van commerciële kwaliteit",
+      "warrantyTitle": "Garantie & levering",
+      "structuralValue": "5 jaar",
+      "electronicsValue": "2 jaar",
+      "deliveryValue": "4–6 weken vanaf bestelling"
+    },
+    "addons": {
+      "tag": "OPTIONEEL",
+      "title": "Stel het samen zoals jij wilt",
+      "description": "Solo Flex wordt volledig uitgerust geleverd, maar de volgende opties zijn beschikbaar voor projecten die ze nodig hebben.",
+      "sitStandDesk": {
+        "title": "Elektrisch zit-stabureau",
+        "desc": "Upgrade van handmatige naar elektrische hoogteverstelling met geheugenstanden. Aanbevolen voor gedeelde cabines."
+      },
+      "monitorMount": {
+        "title": "Monitorarm",
+        "desc": "VESA-compatibele monitorarm met kabelgeleiding door het bureau. Geschikt voor schermen tot 27\"."
+      },
+      "cableManagement": {
+        "title": "Kabelmanagement upgrade",
+        "desc": "Geleidekanaal met snel-loskoppelbare afdekking. Voegt een tweede stroomkring toe indien nodig."
+      },
+      "shelf": {
+        "title": "Plank boven bureau",
+        "desc": "Zwevende plank voor headset, notitieblok of planten. Gemonteerd op ooghoogte, 240 × 150 mm."
+      },
+      "extraFan": {
+        "title": "Uitgebreide ventilatie",
+        "desc": "Twee extra ventilatoren voor gebruik in hoogzomer of installaties bij zuidelijk gelegen glas."
+      },
+      "fabricPanel": {
+        "title": "Stof op maat",
+        "desc": "Vervang de buitenstof door een kleur uit jullie huisstijl. Twaalf standaardkleuren; maatwerk op aanvraag."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Vier tot zes weken vanaf bevestigde bestelling voor standaardconfiguraties. Stof of afwerking op maat voegt twee tot drie weken toe. Express-levering is beschikbaar voor geselecteerde stockmodellen."
+        },
+        "noiseReduction": {
+          "question": "Hoeveel geluid blokkeert Solo Flex echt?",
+          "answer": "Ongeveer 24 dB(A) reductie over de spraakfrequenties, gemeten volgens ISO 23351-1. In de praktijk: een gesprek op normaal volume buiten de cabine klinkt binnen als verre gemurmel, en omgekeerd."
+        },
+        "installation": {
+          "question": "Heeft de installatie bouwwerken nodig?",
+          "answer": "Nee. Solo Flex staat vrij en sluit aan op een gewoon Schuko-stopcontact. Twee personen monteren hem ter plaatse in minder dan drie uur. Installatie in de EU bieden we standaard aan als optie."
+        },
+        "ventilation": {
+          "question": "Hoe werkt de ventilatie?",
+          "answer": "Vier EC-ventilatoren draaien continu wanneer de cabine bezet is en wisselen 4,6 m³/min lucht. Een PIR-sensor stopt de ventilatoren ongeveer een minuut nadat de cabine leeg is. Dit gedrag kan je overrulen via het wandpaneel."
+        },
+        "warranty": {
+          "question": "Wat dekt de garantie?",
+          "answer": "Vijf jaar op de constructie — frame, glas, panelen, deurmechanisme. Twee jaar op elektronica — ventilatoren, sensoren, LED-driver. Slijtdelen (deurafdichtingen, stof) zijn uitgesloten. Volledige voorwaarden worden meegeleverd."
+        }
+      }
+    }
+  },
+  "duoPage": {
+    "hero": {
+      "tag": "CABINE IN TWEE CONFIGURATIES",
+      "title": "Duo",
+      "tagline": "Eén schil. Twee compleet verschillende ruimtes.",
+      "description": "Duo is één cabine die zich echt aan twee gebruiksscenario's wijdt. In de Flex-configuratie staat een klein elektrisch bureau centraal — twee personen, recht tegenover elkaar, voor een gefocust gesprek. In de Work-configuratie loopt een bureau over de volle breedte langs één wand — één persoon, drie monitoren, een echt werkstation. Bij de bestelling kies je welke past.",
+      "statFootprint": "Voetafdruk",
+      "statWeight": "Netto gewicht",
+      "statConfigs": "Configuraties"
+    },
+    "overview": {
+      "tag": "ÉÉN CABINE, TWEE RUIMTES",
+      "title": "Een cabine die zijn vloer dubbel verdient.",
+      "description": "De schil van Duo is identiek tussen configuraties — dezelfde ventilatie, dezelfde akoestiek, dezelfde elektriciteit. Wat verandert is de binnenruimte: een centraal elektrisch bureau voor vergaderingen met twee, of een wandgemonteerd elektrisch bureau voor solo-werk. De keuze gebeurt bij bestelling, niet bij installatie.",
+      "feature1": "Zelfde buitenafmetingen ongeacht de configuratie",
+      "feature2": "Elektrisch in hoogte verstelbaar bureau in beide modi",
+      "feature3": "Twee 230V stopcontacten en volledige USB-voorzieningen",
+      "feature4": "Lost het call-room/focus-room dilemma op in één aankoop"
+    },
+    "acoustics": {
+      "tag": "AKOESTISCHE PRESTATIES",
+      "title": "Gebouwd voor gesprek, afgesloten van al de rest.",
+      "description": "Het grotere volume van Duo vraagt om evenredig betere isolatie. De wandopbouw — gerecycleerd-PET absorber, dubbelwandig stalen frame, gelaagd glas met afdichting — levert circa 26 dB(A) spraakreductie, ruim in vergadergebied.",
+      "dbValue": "26",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Spraakfrequentie-reductie (Dn,T,A) gemeten volgens ISO 23351-1."
+    },
+    "configurations": {
+      "tag": "KIES JE INDELING",
+      "title": "Flex of Work — zelfde cabine, andere ruimte.",
+      "description": "Beide configuraties worden geleverd als Duo. Het enige verschil is hoe het bureau gemonteerd is. Je kan ook later switchen — de conversiekit is een halve dag servicewerk ter plaatse.",
+      "flex": {
+        "letter": "f",
+        "name": "Flex",
+        "heading": "Twee personen, oog in oog.",
+        "description": "Een klein elektrisch bureau staat centraal in de cabine, net groot genoeg voor twee laptops en twee notitieblokken. Krukjes of stoelen flankeren — de meeste klanten kiezen voor de geïntegreerde krukjes. Ideaal voor één-op-één-gesprekken, interviews en korte staande overleggen.",
+        "point1": "Centraal bureau, 45 × 46 cm, elektrisch in hoogte verstelbaar",
+        "point2": "Traploos verstelbaar tussen 80 en 120 cm",
+        "point3": "Stroom aan beide uiteinden van het bureaublad",
+        "point4": "Krukjes optioneel; staand gebruik is voorzien in het ontwerp",
+        "capacity": "2 personen",
+        "deskSize": "45 × 46 cm",
+        "deskHeight": "80–120 cm"
+      },
+      "work": {
+        "letter": "w",
+        "name": "Work",
+        "heading": "Eén persoon, een echt bureau.",
+        "description": "Een bureau over de volle breedte loopt langs één wand, diep genoeg voor drie monitoren of een laptop met randapparatuur. De andere wand blijft vrij, wat de cabine niet beklemmend laat aanvoelen, zelfs na een sessie van vier uur.",
+        "point1": "Wandbureau, 104 × 60 cm, elektrisch in hoogte verstelbaar",
+        "point2": "Traploos verstelbaar tussen 71 en 120 cm",
+        "point3": "Twee stopcontacten en USB aan het bureau",
+        "point4": "Kabelgeleiding verborgen door het poot-kanaal",
+        "capacity": "1 persoon",
+        "deskSize": "104 × 60 cm",
+        "deskHeight": "71–120 cm"
+      }
+    },
+    "features": {
+      "tag": "STANDAARD INBEGREPEN",
+      "title": "Wat standaard is, in beide configuraties.",
+      "switchable": {
+        "title": "Klaar om te wisselen",
+        "desc": "Beide bureaus monteren op dezelfde interne rail. Later wisselen tussen configuraties is een halve dag servicewerk — geen herbouw, geen vervangcabine."
+      },
+      "ventilation": {
+        "title": "Tweezone-ventilatie",
+        "desc": "Acht ventilatoren leveren 9,2 m³/min — ontworpen rond twee gebruikers in actief gesprek, het slechtste geval voor CO₂-opbouw."
+      },
+      "electrics": {
+        "title": "Twee stroomkringen",
+        "desc": "Onafhankelijke 230V kringen op beide wanden. USB-C PD 60W en USB-A aan het bureaublad. Kabelgeleiding verborgen."
+      },
+      "lighting": {
+        "title": "Verlichting op vergaderniveau",
+        "desc": "Warm/koel dimbare LED, geschikt voor videogesprekken. Gelijkmatige verlichting van beide gezichten in Flex-modus — geen schaduwen rond de ogen."
+      },
+      "accessibility": {
+        "title": "Brede drempelvrije toegang",
+        "desc": "100 cm vrije deurbreedte — voldoet aan Europese toegankelijkheidsrichtlijnen en geschikt voor rolstoelen. De drempel is vlak."
+      },
+      "safety": {
+        "title": "Getest volgens norm",
+        "desc": "CE-gemarkeerd, brandklasse EN 13501-1 B-s2,d0, elektriciteit volgens IEC 60598. Standaard bij elke levering."
+      }
+    },
+    "specs": {
+      "tag": "TECHNISCH",
+      "title": "Specificaties",
+      "dimensionsTitle": "Afmetingen",
+      "externalDimValue": "1640 × 1200 × 2260 mm",
+      "internalDimValue": "1530 × 1090 × 2120 mm",
+      "doorWidthValue": "1000 mm vrij",
+      "weightValue": "420 kg",
+      "acousticsTitle": "Akoestische prestaties",
+      "noiseReductionValue": "26 dB(A)",
+      "absorberValue": "Gerecycleerd-PET akoestisch vilt, 24 mm",
+      "doorSealValue": "Magnetisch, vierzijdige aandrukafdichting",
+      "ventilationTitle": "Ventilatie",
+      "airflowValue": "9,2 m³/min",
+      "fanCountValue": "8 × stille EC-ventilatoren",
+      "occupancyValue": "PIR-sensor met nalooptijd",
+      "electricsTitle": "Elektriciteit",
+      "powerValue": "2 × Schuko 230V (onafhankelijke kringen)",
+      "usbValue": "2 × USB-C PD 60W · 2 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimbaar",
+      "consumptionValue": "~140W typisch, 380W max",
+      "materialsTitle": "Materialen",
+      "frameValue": "Poedergecoat staal, dubbelwandig",
+      "glassValue": "8 mm gehard veiligheidsglas",
+      "interiorValue": "Gerecycleerd-PET vilt, brandvertragend behandeld",
+      "floorValue": "Tapijttegels van commerciële kwaliteit",
+      "warrantyTitle": "Garantie & levering",
+      "structuralValue": "5 jaar",
+      "electronicsValue": "2 jaar",
+      "deliveryValue": "4–6 weken vanaf bestelling"
+    },
+    "addons": {
+      "tag": "OPTIONEEL",
+      "title": "Stel het samen zoals jij wilt",
+      "description": "Duo wordt volledig uitgerust geleverd in beide configuraties. De volgende opties breiden het uit voor specifieke toepassingen.",
+      "electricDesk": {
+        "title": "Bureau met geheugenstanden",
+        "desc": "Upgrade het elektrische bureau met drie geheugenstanden, handig wanneer de cabine door meerdere gebruikers wordt gedeeld."
+      },
+      "monitorMount": {
+        "title": "Monitorarmen (enkel of dubbel)",
+        "desc": "VESA-compatibele houders met kabelgeleiding. Aanbevolen voor Work-configuratie met meerdere monitoren."
+      },
+      "displaySystem": {
+        "title": "Wandscherm",
+        "desc": "Geïntegreerd 32\" scherm op de achterwand, HDMI- en USB-C-ingangen. Ontworpen voor videogesprekken in Flex-configuratie."
+      },
+      "cableManagement": {
+        "title": "Kabelmanagement upgrade",
+        "desc": "Verborgen geleiding met snel-loskoppelbare afdekking. Voegt een derde stroomkring en HDMI-doorlus toe."
+      },
+      "extraSeating": {
+        "title": "Geïntegreerde krukjes",
+        "desc": "Twee krukjes met akoestische stoffering die in de Flex-configuratie passen. Stapelen tegen de wand wanneer niet in gebruik."
+      },
+      "fabricPanel": {
+        "title": "Stof op maat",
+        "desc": "Vervang de buitenstof door een kleur uit jullie huisstijl. Twaalf standaardkleuren; maatwerk op aanvraag."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Vier tot zes weken vanaf bevestigde bestelling. Stof of afwerking op maat voegt twee tot drie weken toe. De keuze van configuratie heeft geen invloed op de levertijd — beide komen van dezelfde productielijn."
+        },
+        "configChoice": {
+          "question": "Hoe kies ik tussen Flex en Work?",
+          "answer": "Heeft je team meer ruimte nodig voor één-op-één-gesprekken, kies dan Flex. Heb je meer plek nodig voor focus-werk, kies dan Work. De meeste klanten mengen beide op een verdieping. Ons team helpt je de juiste verhouding bepalen op basis van je personeelsbestand."
+        },
+        "switchConfig": {
+          "question": "Kan ik later van Flex naar Work overschakelen?",
+          "answer": "Ja. Beide bureaus monteren op dezelfde interne rail. Een service-conversie ter plaatse duurt ongeveer een halve dag. De conversiekit is apart aan te schaffen."
+        },
+        "noiseReduction": {
+          "question": "Hoe goed isoleert Duo geluid?",
+          "answer": "Ongeveer 26 dB(A) reductie over de spraakfrequenties, volgens ISO 23351-1. In de praktijk: een gesprek op normaal volume binnen ligt op de drempel van hoorbaarheid buiten. Twee personen kunnen vlot vergaderen naast een open-plan bureau."
+        },
+        "warranty": {
+          "question": "Wat dekt de garantie?",
+          "answer": "Vijf jaar op de constructie — frame, glas, panelen, deurmechanisme. Twee jaar op elektronica — ventilatoren, sensoren, LED-driver, motor van het elektrische bureau. Slijtdelen (deurafdichtingen, stof) zijn uitgesloten. Volledige voorwaarden worden meegeleverd."
+        }
+      }
+    }
+  },
+  "modularXlPage": {
+    "hero": {
+      "tag": "SCHAALBARE VERGADERPOD",
+      "title": "Modular XL",
+      "tagline": "Een vergaderruimte die langer wordt wanneer je meer stoelen nodig hebt.",
+      "description": "Modular XL is de grootste cabine in de Re-Sound soundbooth-reeks — en de enige die ontworpen is om na installatie te groeien. De basis biedt comfortabel plaats aan zes personen. Vanaf daar verlengen modulaire segmenten van 90 cm de cabine in beide richtingen, tot een maximumcapaciteit van tien. Dezelfde akoestische prestaties, dezelfde ventilatielogica, opgeschaald.",
+      "statFootprint": "Voetafdruk basis",
+      "statWeight": "Gewicht basis",
+      "statCapacity": "Max. capaciteit"
+    },
+    "overview": {
+      "tag": "OP VERGADERZAALSCHAAL",
+      "title": "Wanneer een cabine een ruimte moet zijn.",
+      "description": "Modular XL is gebouwd voor het soort gesprekken dat niet in een telefooncabine past: klantpresentaties, interne workshops, hybride teamvergaderingen. De akoestische schil isoleert de ruimte voldoende dat een verhitte discussie het open kantoor niet bereikt, en een workshop binnen niet onderbroken wordt door de printer buiten.",
+      "feature1": "Basismodule biedt plaats aan maximaal 6 zittende personen",
+      "feature2": "Segmenten van 90 cm verlengen de cabine tot 10",
+      "feature3": "25,9 dB(A) spraakreductie — vergaderzaal-klasse",
+      "feature4": "Volledige A/V-voorzieningen en toegankelijk ontwerp"
+    },
+    "acoustics": {
+      "tag": "AKOESTISCHE PRESTATIES",
+      "title": "Vergaderzaal-isolatie, in een verplaatsbare schil.",
+      "description": "Het grotere volume van Modular XL betekent standaard lagere nagalm — geluid heeft meer lucht om in te dissipperen. In combinatie met de wandopbouw (gerecycleerd-PET absorber, stalen frame, gelaagd glas met afdichting) levert dit 25,9 dB(A) spraakreductie, zelfs in volledig uitgebreide configuratie.",
+      "dbValue": "25,9",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Spraakfrequentie-reductie (Dn,T,A) gemeten volgens ISO 23351-1."
+    },
+    "modular": {
+      "tag": "MODULAIRE ARCHITECTUUR",
+      "title": "Voegt 90 cm per keer toe. Zoveel als de ruimte toelaat.",
+      "description": "Elk segment is een zelfstandige uitbreiding van 90 cm die op de structuurrail van de cabine wordt geschroefd. Het segment heeft eigen ventilatie (vier aanvoer- + vier afvoerventilatoren) en verlichting, op schaal gebracht om comfort te behouden naarmate de bezetting groeit.",
+      "baseLabel": "Basismodule",
+      "baseTag": "BASIS · 6 PAX",
+      "scaleLabel": "UITBREIDEN",
+      "scenario1": {
+        "size": "BASIS",
+        "title": "Team-standup",
+        "description": "Zes personen rond een centrale tafel. Geschikt voor dagelijkse standups, designreviews en kleine klantdemo's. Past op de meeste kantoorvloeren zonder herindeling."
+      },
+      "scenario2": {
+        "size": "BASIS + 1",
+        "title": "Workshop",
+        "description": "Acht personen, één uitbreidingssegment. Zittend of staand. Krijgt twee whiteboards plus een wandscherm. Geschikt voor werksessies van een halve dag."
+      },
+      "scenario3": {
+        "size": "BASIS + 2",
+        "title": "All-hands",
+        "description": "Tien personen, twee uitbreidingssegmenten. Hoefijzeropstelling rond een scherm. De grootste configuratie; overweeg vaste plaatsing op deze grootte."
+      }
+    },
+    "features": {
+      "tag": "STANDAARD INBEGREPEN",
+      "title": "Wat standaard is, voor je opties toevoegt.",
+      "modular": {
+        "title": "Veld-uitbreidbaar",
+        "desc": "Segmenten worden na installatie aangeschroefd. Later capaciteit toevoegen vraagt geen nieuwe cabine — alleen een halve dag servicewerk per segment."
+      },
+      "ventilation": {
+        "title": "Opgeschaalde ventilatie",
+        "desc": "16 ventilatoren leveren 18,4 m³/min in de basis. Elk segment voegt 4 aanvoer- + 4 afvoerventilatoren toe, dus het debiet schaalt mee met de bezetting."
+      },
+      "electrics": {
+        "title": "Gedistribueerde stroom",
+        "desc": "Meerdere 230V kringen langs de wandrail, met USB-C en USB-A bij elke zit. Elk segment voegt een eigen elektriciteitszone toe."
+      },
+      "lighting": {
+        "title": "Verlichting op workshop-niveau",
+        "desc": "Dimbare warm/koele LED met aparte zones voor scherm- en schrijftaken. Bedienbaar via het wandpaneel."
+      },
+      "accessibility": {
+        "title": "Rolstoeltoegankelijk",
+        "desc": "110 cm vrije deurbreedte en vlakke drempel zijn geschikt voor rolstoelen. De binnenindeling laat ruimte voor één rolstoelgebruiker aan tafel."
+      },
+      "safety": {
+        "title": "Getest volgens norm",
+        "desc": "CE-gemarkeerd, brandklasse EN 13501-1 B-s2,d0, elektriciteit volgens IEC 60598. Documentatie wordt meegeleverd."
+      }
+    },
+    "specs": {
+      "tag": "TECHNISCH",
+      "title": "Specificaties",
+      "dimensionsTitle": "Basisafmetingen",
+      "externalDimValue": "2400 × 1800 × 2260 mm",
+      "internalDimValue": "2290 × 1690 × 2120 mm",
+      "doorWidthValue": "1100 mm vrij",
+      "weightValue": "790 kg",
+      "extensionTitle": "Uitbreidingssegment",
+      "segmentSizeValue": "900 × 1800 × 2260 mm",
+      "segmentWeightValue": "280 kg",
+      "segmentFansValue": "4 aanvoer + 4 afvoer",
+      "segmentPowerValue": "40W actief",
+      "acousticsTitle": "Akoestische prestaties",
+      "noiseReductionValue": "25,9 dB(A)",
+      "absorberValue": "Gerecycleerd-PET akoestisch vilt, 24 mm",
+      "doorSealValue": "Magnetisch, vierzijdige aandrukafdichting",
+      "ventilationTitle": "Ventilatie (basis)",
+      "airflowValue": "18,4 m³/min",
+      "fanCountValue": "16 × stille EC-ventilatoren",
+      "occupancyValue": "PIR-sensor met nalooptijd",
+      "clearancesTitle": "Installatie-vrijruimtes",
+      "ceilingValue": "Minimum 2600 mm",
+      "sideValue": "400 mm aan elke zijde",
+      "frontValue": "1100 mm voor de deur",
+      "warrantyTitle": "Garantie & levering",
+      "structuralValue": "5 jaar",
+      "electronicsValue": "2 jaar",
+      "deliveryValue": "6–8 weken vanaf bestelling"
+    },
+    "addons": {
+      "tag": "OPTIONEEL",
+      "title": "Stel het samen zoals jij wilt",
+      "description": "Modular XL wordt vergaderzaal-klaar geleverd in basisuitvoering. De volgende opties breiden hem uit voor workshops, hybride gesprekken en presentaties.",
+      "meetingTable": {
+        "title": "Vergadertafel",
+        "desc": "Tafel met massief blad op maat van je configuratie — rond voor de basismodule, ovaal of bestuursvorm voor uitgebreide indelingen."
+      },
+      "displaySystem": {
+        "title": "Wandscherm (55\"/65\"/75\")",
+        "desc": "Geïntegreerd scherm op de achterwand, met HDMI-, USB-C- en draadloze ingang. De meeste klanten kiezen 65\" voor de basismodule."
+      },
+      "videoConference": {
+        "title": "Video-conferentiekit",
+        "desc": "Geïntegreerde plafondmicrofoon, 4K groothoekcamera, conferentiespeaker. Gecertificeerd voor Microsoft Teams Rooms en Zoom Rooms."
+      },
+      "cableManagement": {
+        "title": "Kabelmanagement upgrade",
+        "desc": "Verborgen geleiding onder de tafel met doorvoeren bij elke zit. Voegt HDMI- en USB-C-doorlus toe."
+      },
+      "whiteboard": {
+        "title": "Wand-whiteboard",
+        "desc": "Magnetisch droogwisbaar oppervlak over één volledige wandzijde. Combineert natuurlijk met de workshop-opstelling."
+      },
+      "fabricPanel": {
+        "title": "Stof op maat",
+        "desc": "Vervang de buitenstof door een kleur uit jullie huisstijl. Twaalf standaardkleuren; maatwerk op aanvraag."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de standaard levertijd?",
+          "answer": "Zes tot acht weken vanaf bevestigde bestelling voor de basismodule. Elk extra segment voegt één tot twee weken toe. Stof of afwerking op maat voegt nog eens twee tot drie weken toe."
+        },
+        "scaleUp": {
+          "question": "Kan ik later segmenten toevoegen?",
+          "answer": "Ja — daar is Modular XL precies voor ontworpen. Een segment toevoegen kost een halve dag servicewerk per segment. De cabine is gebouwd voor minstens twee uitbreidingscycli na de eerste installatie."
+        },
+        "ceilingHeight": {
+          "question": "Welke plafondhoogte heb ik nodig?",
+          "answer": "Minimum 2600 mm. De cabine zelf is 2260 mm hoog; we raden 340 mm vrije ruimte boven het dak aan voor ventilatie-luchtstroom. Lagere plafonds zijn mogelijk met een kleiner aantal ventilatoren — neem eerst contact met ons op."
+        },
+        "capacity": {
+          "question": "Wat is de realistische capaciteit per maat?",
+          "answer": "Basismodule: zes comfortabel zittend, acht staand. Eén uitbreiding: acht zittend, tien staand. Twee uitbreidingen: tien zittend, twaalf staand. De \"max. capaciteit\" gaat uit van zittend gebruik; we raden niet aan om voor staand-only gebruik te ontwerpen."
+        },
+        "warranty": {
+          "question": "Wat dekt de garantie?",
+          "answer": "Vijf jaar op de constructie — frame, glas, panelen, deurmechanisme — over basis en segmenten heen. Twee jaar op elektronica — ventilatoren, sensoren, LED-driver. Slijtdelen (deurafdichtingen, stof) zijn uitgesloten. Volledige voorwaarden worden meegeleverd."
+        }
       }
     }
   }
