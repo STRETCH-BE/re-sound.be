@@ -33,7 +33,13 @@
     "rpetFlexGrooveTitle": "rPET Flex Groove Flexible Acoustic Panels | Re-Sound",
     "rpetFlexGrooveDescription": "Flexible grooved acoustic panels made from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified.",
     "faqTitle": "FAQ — Re-Sound Acoustic Panels",
-    "faqDescription": "Answers to common questions about Re-Sound acoustic panels: how absorption works, fire ratings, lead times, the circular take-back program, and product selection."
+    "faqDescription": "Answers to common questions about Re-Sound acoustic panels: how absorption works, fire ratings, lead times, the circular take-back program, and product selection.",
+    "soloFlexTitle": "Solo Flex — Single-Person Soundbooth | STRETCH",
+    "soloFlexDescription": "Single-person acoustic phone booth for focus calls and deep work. 1 m² footprint, integrated sit-stand desk, 230V power, USB-C and ventilation. STRETCH white-label edition.",
+    "duoTitle": "Duo — Two-Configuration Soundbooth | STRETCH",
+    "duoDescription": "One soundbooth, two configurations: Flex seats two for a focused meeting; Work gives one person a full-width desk. 2 m² footprint, electric desk, 230V power, full ventilation.",
+    "modularXlTitle": "Modular XL — Scalable Meeting Pod | STRETCH",
+    "modularXlDescription": "Scalable acoustic meeting pod. Base accommodates 6, expandable to 10 in 90-cm segments. 25.9 dB(A) speech reduction, full A/V provisions, accessible-by-design entry."
   },
   "nav": {
     "products": "Products",
@@ -2833,6 +2839,580 @@
         "category": "commercial",
         "question": "How do I request a quote?",
         "answer": "Use the contact form on any product page, or the general contact form, with: the product line you are interested in, approximate quantities or floor plan, and your project timeline. We will respond within one working day with a tailored quote, sample arrangement, and a calculation of expected acoustic improvement. For larger projects we can attend a site visit or briefing call."
+      }
+    }
+  },
+  "boothPage": {
+    "nav": {
+      "overview": "Overview",
+      "acoustics": "Acoustics",
+      "configurations": "Configurations",
+      "modular": "Modular",
+      "features": "Features",
+      "specs": "Specifications",
+      "addons": "Add-ons",
+      "downloads": "Downloads"
+    },
+    "hero": {
+      "badgeEyebrow": "Editorial Series"
+    },
+    "cta": {
+      "requestQuote": "Request a Quote",
+      "viewSpecifications": "View Specifications",
+      "callUs": "Call us: +32 3 284 68 18",
+      "ctaTitle": "Ready to spec your space?",
+      "ctaSubtitle": "Our team helps you choose the right booth, configure add-ons, and plan delivery. Quotes typically returned within one working day.",
+      "deliveryNote": "EU-wide delivery · Installation available · 5-year structural warranty"
+    },
+    "acoustics": {
+      "benefitSpeech": {
+        "title": "Improved speech clarity",
+        "desc": "Sharp falloff of background noise lets every word land — both inside and outside the booth."
+      },
+      "benefitFocus": {
+        "title": "Enhanced focus",
+        "desc": "A quieter shell triggers a measurable shift into deeper attention within seconds of stepping in."
+      },
+      "benefitStress": {
+        "title": "Reduced cognitive load",
+        "desc": "Lower ambient noise reduces the listening effort the brain runs continuously — less drain, more output."
+      }
+    },
+    "configurations": {
+      "capacity": "Capacity",
+      "deskSize": "Desk size",
+      "deskHeight": "Desk height"
+    },
+    "specs": {
+      "externalDim": "External dimensions (W × D × H)",
+      "internalDim": "Internal dimensions (W × D × H)",
+      "doorWidth": "Door width",
+      "weight": "Net weight",
+      "noiseReduction": "Speech reduction Dn,T,A",
+      "absorberMaterial": "Acoustic absorber",
+      "doorSeal": "Door seal",
+      "airflow": "Airflow rate",
+      "fanCount": "Fan count",
+      "occupancySensor": "Occupancy detection",
+      "powerSockets": "Power sockets",
+      "usb": "USB charging",
+      "lighting": "Lighting",
+      "totalConsumption": "Total power draw",
+      "frame": "Frame",
+      "glass": "Glazing",
+      "interior": "Interior lining",
+      "floor": "Floor",
+      "structural": "Structural warranty",
+      "electronics": "Electronic warranty",
+      "delivery": "Standard delivery",
+      "segmentSize": "Segment dimensions",
+      "segmentWeight": "Segment weight",
+      "segmentFans": "Fans per segment",
+      "segmentPower": "Power per segment",
+      "ceilingHeight": "Minimum ceiling height",
+      "sideClearance": "Side clearance",
+      "frontClearance": "Front clearance"
+    },
+    "downloads": {
+      "tag": "RESOURCES",
+      "title": "Documentation",
+      "productDataSheet": "Product data sheet",
+      "installationManual": "Installation manual",
+      "acousticTestReport": "Acoustic test report",
+      "cadDrawing": "CAD drawing (DWG)",
+      "warranty": "Warranty certificate",
+      "sustainability": "Sustainability declaration"
+    },
+    "crosslinks": {
+      "tag": "ALSO IN THE RANGE",
+      "title": "Other STRETCH soundbooths",
+      "solo-flex": {
+        "name": "Solo Flex",
+        "tag": "Single-person booth"
+      },
+      "duo": {
+        "name": "Duo",
+        "tag": "Two-configuration booth"
+      },
+      "modular-xl": {
+        "name": "Modular XL",
+        "tag": "Scalable meeting pod"
+      }
+    }
+  },
+  "soloFlexPage": {
+    "hero": {
+      "tag": "SINGLE-PERSON SOUNDBOOTH",
+      "title": "Solo Flex",
+      "tagline": "A square metre of quiet, wherever you need it.",
+      "description": "Solo Flex is a single-occupant acoustic booth built for focus calls, video meetings, and deep work. A small footprint, an honest desk that goes from sit to stand, and the kind of sound isolation that makes the open-plan office disappear.",
+      "badge": "Built for one. Spec'd for everything that one person actually does.",
+      "statFootprint": "Footprint",
+      "statWeight": "Net weight",
+      "statWarranty": "Warranty"
+    },
+    "overview": {
+      "tag": "ONE BOOTH, ONE PERSON, NO COMPROMISE",
+      "title": "Focus, made tangible.",
+      "description": "Solo Flex was designed around a simple constraint: give a single person everything they need for a productive hour of work, and nothing they don't. The result is a booth you can place between desks without rearranging the floor — and one that doesn't feel like a pod.",
+      "feature1": "1 m² footprint fits almost any office layout",
+      "feature2": "Sit-stand desk shifts from 73 to 103 cm",
+      "feature3": "230V outlet plus USB-C and USB-A at the desk",
+      "feature4": "Whisper-quiet ventilation activates on entry"
+    },
+    "acoustics": {
+      "tag": "ACOUSTIC PERFORMANCE",
+      "title": "Silence is engineered.",
+      "description": "A multi-layer wall assembly — recycled-PET absorber, steel frame, sealed laminated glass — drops conversational speech by roughly 24 dB(A). For context: a normal voice on the other side of the booth wall registers as a soft murmur.",
+      "dbValue": "24",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Speech-frequency reduction (Dn,T,A) measured under ISO 23351-1."
+    },
+    "features": {
+      "tag": "BUILT-IN",
+      "title": "What's standard, and why it matters.",
+      "ventilation": {
+        "title": "Quiet ventilation",
+        "desc": "Four fans deliver 4.6 m³/min, more than enough for one person. Sound rating stays below 30 dB(A) at the user position."
+      },
+      "electrics": {
+        "title": "Power where you sit",
+        "desc": "230V outlet, USB-C (PD 60W), and USB-A integrated into the desk top. No extension cords trailing through the door."
+      },
+      "lighting": {
+        "title": "Tunable lighting",
+        "desc": "Warm/cool dimmable LED with manual control. Calibrated to render on-camera skin tones cleanly."
+      },
+      "comfort": {
+        "title": "Sit-stand desk",
+        "desc": "Manual height adjustment between 73 and 103 cm. Desk surface is 80 × 33 cm — wide enough for a laptop, notebook and coffee."
+      },
+      "accessibility": {
+        "title": "Step-free entry",
+        "desc": "Flat threshold and 90 cm clear door width meet European accessibility guidance for office facilities."
+      },
+      "safety": {
+        "title": "Tested to standard",
+        "desc": "CE-marked, fire-rated to EN 13501-1 B-s2,d0, electrics certified to IEC 60598. Documentation included with delivery."
+      }
+    },
+    "specs": {
+      "tag": "TECHNICAL",
+      "title": "Specifications",
+      "dimensionsTitle": "Dimensions",
+      "externalDimValue": "1020 × 1020 × 2260 mm",
+      "internalDimValue": "910 × 910 × 2120 mm",
+      "doorWidthValue": "900 mm clear",
+      "weightValue": "280 kg",
+      "acousticsTitle": "Acoustic performance",
+      "noiseReductionValue": "24 dB(A)",
+      "absorberValue": "Recycled-PET acoustic felt, 24 mm",
+      "doorSealValue": "Magnetic, four-sided compression",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "4.6 m³/min",
+      "fanCountValue": "4 × silent EC fans",
+      "occupancyValue": "PIR sensor with delay-off",
+      "electricsTitle": "Electrics",
+      "powerValue": "1 × Schuko 230V at desk",
+      "usbValue": "1 × USB-C PD 60W · 1 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimmable",
+      "consumptionValue": "~80W typical, 220W max",
+      "materialsTitle": "Materials",
+      "frameValue": "Powder-coated steel",
+      "glassValue": "8 mm tempered safety glass",
+      "interiorValue": "Recycled-PET felt, FR-treated",
+      "floorValue": "Commercial-grade carpet tile",
+      "warrantyTitle": "Warranty & delivery",
+      "structuralValue": "5 years",
+      "electronicsValue": "2 years",
+      "deliveryValue": "4–6 weeks from order"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Spec it your way",
+      "description": "Solo Flex ships fully equipped, but the following options are available for projects that need them.",
+      "sitStandDesk": {
+        "title": "Electric sit-stand desk",
+        "desc": "Upgrade from manual to electric height adjustment with memory presets. Recommended for shared booths."
+      },
+      "monitorMount": {
+        "title": "Monitor arm",
+        "desc": "VESA-compatible single monitor arm with cable routing through the desk. Supports up to 27\"."
+      },
+      "cableManagement": {
+        "title": "Cable management upgrade",
+        "desc": "Routed channel with quick-release cover. Adds a second power circuit if needed."
+      },
+      "shelf": {
+        "title": "Above-desk shelf",
+        "desc": "Floating shelf for headset, notebook, or plants. Mounted at eye level, 240 × 150 mm."
+      },
+      "extraFan": {
+        "title": "Boosted ventilation",
+        "desc": "Two additional fans for high-summer use or installations near south-facing glass."
+      },
+      "fabricPanel": {
+        "title": "Custom fabric panel",
+        "desc": "Replace the exterior fabric with one from your brand palette. Twelve standard colours; bespoke on request."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What's the standard lead time?",
+          "answer": "Four to six weeks from confirmed order for standard configurations. Custom fabric or finishes add two to three weeks. Express delivery is available on selected stock units."
+        },
+        "noiseReduction": {
+          "question": "How much noise does Solo Flex actually block?",
+          "answer": "Approximately 24 dB(A) reduction across speech frequencies, measured per ISO 23351-1. In practical terms: a normal-volume conversation outside the booth sounds like distant murmur from inside, and vice versa."
+        },
+        "installation": {
+          "question": "Does installation require building work?",
+          "answer": "No. Solo Flex is freestanding and plugs into a standard Schuko outlet. Two people can assemble it on site in under three hours. We include installation in the EU as a standard option."
+        },
+        "ventilation": {
+          "question": "How does the ventilation work?",
+          "answer": "Four EC fans run continuously when the booth is occupied, exchanging air at 4.6 m³/min. A PIR sensor stops the fans about a minute after the booth empties. You can override this behaviour from the wall panel."
+        },
+        "warranty": {
+          "question": "What's covered by the warranty?",
+          "answer": "Five years on the structural shell — frame, glass, panels, door mechanism. Two years on electronics — fans, sensors, LED driver. Wear parts (door seals, fabric) are excluded. Full terms ship with delivery."
+        }
+      }
+    }
+  },
+  "duoPage": {
+    "hero": {
+      "tag": "TWO-CONFIGURATION SOUNDBOOTH",
+      "title": "Duo",
+      "tagline": "One shell. Two completely different rooms.",
+      "description": "Duo is a single soundbooth that genuinely commits to two use cases. The Flex configuration places a small electric desk in the centre — two people, face to face, for a focused meeting. The Work configuration drops a full-width desk along one wall — one person, three monitors, a real workstation. You spec which one fits your floor.",
+      "badge": "Two product-grade configurations on the same shell. Not a compromise — a choice.",
+      "statFootprint": "Footprint",
+      "statWeight": "Net weight",
+      "statConfigs": "Configurations"
+    },
+    "overview": {
+      "tag": "ONE BOOTH, TWO ROOMS",
+      "title": "A booth that earns its floor space twice.",
+      "description": "Duo's shell is identical between configurations — same ventilation, same acoustics, same electrics. What changes is the interior: a central electric desk for two-person meetings, or a wall-mounted electric desk for solo deep work. The choice happens at order, not at install.",
+      "feature1": "Same external footprint regardless of configuration",
+      "feature2": "Electric height-adjustable desk in both modes",
+      "feature3": "Two 230V outlets and full USB provisions",
+      "feature4": "Reduces the call-room/focus-room dilemma to one purchase"
+    },
+    "acoustics": {
+      "tag": "ACOUSTIC PERFORMANCE",
+      "title": "Built for conversation, sealed against everything else.",
+      "description": "Duo's larger volume needs proportionally better isolation. The wall assembly — recycled-PET absorber, double-skin steel frame, sealed laminated glass — delivers around 26 dB(A) speech reduction, well into meeting-room territory.",
+      "dbValue": "26",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Speech-frequency reduction (Dn,T,A) measured under ISO 23351-1."
+    },
+    "configurations": {
+      "tag": "PICK YOUR LAYOUT",
+      "title": "Flex or Work — same booth, different room.",
+      "description": "Both configurations ship as Duo. The only difference is how the desk is mounted. You can also switch later — the conversion kit is a half-day field service.",
+      "flex": {
+        "letter": "f",
+        "name": "Flex",
+        "heading": "Two people, face to face.",
+        "description": "A small electric desk sits in the centre of the booth, just large enough for two laptops and two notepads. Stools or chairs flank it — most clients spec the integrated stools. Best for one-to-ones, interviews, and short standing meetings.",
+        "point1": "Central desk, 45 × 46 cm, electric height adjust",
+        "point2": "Adjusts continuously between 80 and 120 cm",
+        "point3": "Power on both ends of the desk top",
+        "point4": "Stools optional; standing use designed-in",
+        "capacity": "2 people",
+        "deskSize": "45 × 46 cm",
+        "deskHeight": "80–120 cm"
+      },
+      "work": {
+        "letter": "w",
+        "name": "Work",
+        "heading": "One person, a real desk.",
+        "description": "A full-width electric desk runs along one wall, deep enough for three monitors or a laptop with peripherals. The other wall stays clear, which keeps the booth from feeling enclosed even after a four-hour stretch.",
+        "point1": "Wall desk, 104 × 60 cm, electric height adjust",
+        "point2": "Adjusts continuously between 71 and 120 cm",
+        "point3": "Two power outlets and USB at the desk",
+        "point4": "Cable routing concealed through the leg channel",
+        "capacity": "1 person",
+        "deskSize": "104 × 60 cm",
+        "deskHeight": "71–120 cm"
+      }
+    },
+    "features": {
+      "tag": "BUILT-IN",
+      "title": "What's standard across both configurations.",
+      "switchable": {
+        "title": "Conversion-ready",
+        "desc": "Both desks mount to the same internal track. Switching configurations later takes a half-day field service — no rebuild, no replacement booth."
+      },
+      "ventilation": {
+        "title": "Two-zone ventilation",
+        "desc": "Eight fans delivering 9.2 m³/min — designed around two occupants in active conversation, the worst case for CO₂ buildup."
+      },
+      "electrics": {
+        "title": "Two power circuits",
+        "desc": "Independent 230V circuits on each wall. USB-C PD 60W and USB-A at the desk top. Cable routing concealed."
+      },
+      "lighting": {
+        "title": "Meeting-grade lighting",
+        "desc": "Warm/cool dimmable LED rated for video calls. Even illumination on both faces in Flex mode — no shadowed eyes."
+      },
+      "accessibility": {
+        "title": "Wide step-free entry",
+        "desc": "100 cm clear door width — meets European accessibility guidance and accommodates wheelchairs. Threshold is flat."
+      },
+      "safety": {
+        "title": "Tested to standard",
+        "desc": "CE-marked, fire-rated to EN 13501-1 B-s2,d0, electrics certified to IEC 60598. Standard with every delivery."
+      }
+    },
+    "specs": {
+      "tag": "TECHNICAL",
+      "title": "Specifications",
+      "dimensionsTitle": "Dimensions",
+      "externalDimValue": "1640 × 1200 × 2260 mm",
+      "internalDimValue": "1530 × 1090 × 2120 mm",
+      "doorWidthValue": "1000 mm clear",
+      "weightValue": "420 kg",
+      "acousticsTitle": "Acoustic performance",
+      "noiseReductionValue": "26 dB(A)",
+      "absorberValue": "Recycled-PET acoustic felt, 24 mm",
+      "doorSealValue": "Magnetic, four-sided compression",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "9.2 m³/min",
+      "fanCountValue": "8 × silent EC fans",
+      "occupancyValue": "PIR sensor with delay-off",
+      "electricsTitle": "Electrics",
+      "powerValue": "2 × Schuko 230V (independent circuits)",
+      "usbValue": "2 × USB-C PD 60W · 2 × USB-A",
+      "lightingValue": "LED 2700–5000K, dimmable",
+      "consumptionValue": "~140W typical, 380W max",
+      "materialsTitle": "Materials",
+      "frameValue": "Powder-coated steel, double-skin",
+      "glassValue": "8 mm tempered safety glass",
+      "interiorValue": "Recycled-PET felt, FR-treated",
+      "floorValue": "Commercial-grade carpet tile",
+      "warrantyTitle": "Warranty & delivery",
+      "structuralValue": "5 years",
+      "electronicsValue": "2 years",
+      "deliveryValue": "4–6 weeks from order"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Spec it your way",
+      "description": "Duo ships fully equipped in either configuration. The following options extend it for specific use cases.",
+      "electricDesk": {
+        "title": "Memory-preset desk",
+        "desc": "Upgrade the electric desk with three height memory presets, useful when the booth is shared across many users."
+      },
+      "monitorMount": {
+        "title": "Monitor arms (single or dual)",
+        "desc": "VESA-compatible mounts with cable routing. Recommended for Work configuration with multi-monitor setups."
+      },
+      "displaySystem": {
+        "title": "Wall-mounted display",
+        "desc": "Integrated 32\" display on the rear wall, HDMI and USB-C inputs. Designed for Flex configuration video calls."
+      },
+      "cableManagement": {
+        "title": "Cable management upgrade",
+        "desc": "Concealed routing with quick-release cover. Adds a third power circuit and HDMI passthrough."
+      },
+      "extraSeating": {
+        "title": "Integrated stools",
+        "desc": "Two acoustic-fabric stools that fit the Flex configuration. Stack against the wall when not in use."
+      },
+      "fabricPanel": {
+        "title": "Custom fabric panel",
+        "desc": "Replace the exterior fabric with one from your brand palette. Twelve standard colours; bespoke on request."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What's the standard lead time?",
+          "answer": "Four to six weeks from confirmed order. Custom fabric or finishes add two to three weeks. The configuration choice doesn't affect lead time — both ship from the same production line."
+        },
+        "configChoice": {
+          "question": "How do I decide between Flex and Work?",
+          "answer": "If your team needs more one-to-one meeting rooms, choose Flex. If they need more individual focus rooms, choose Work. Most clients mix both across a floor. Our team can help model the right ratio for your headcount."
+        },
+        "switchConfig": {
+          "question": "Can I switch from Flex to Work later?",
+          "answer": "Yes. Both desks mount to the same internal track inside the booth. A field-service conversion takes about half a day. The conversion kit is available as a separate purchase."
+        },
+        "noiseReduction": {
+          "question": "How well does Duo isolate sound?",
+          "answer": "Approximately 26 dB(A) reduction across speech frequencies, per ISO 23351-1. In practice: a normal-volume conversation inside is at the threshold of audibility outside. Two people can have a confident meeting next to an open-plan desk."
+        },
+        "warranty": {
+          "question": "What's covered by the warranty?",
+          "answer": "Five years on the structural shell — frame, glass, panels, door mechanism. Two years on electronics — fans, sensors, LED driver, electric desk motor. Wear parts (door seals, fabric) are excluded. Full terms ship with delivery."
+        }
+      }
+    }
+  },
+  "modularXlPage": {
+    "hero": {
+      "tag": "SCALABLE MEETING POD",
+      "title": "Modular XL",
+      "tagline": "A meeting room that gets longer when you need more chairs.",
+      "description": "Modular XL is the largest booth in the STRETCH range — and the only one designed to grow after the install. The base unit comfortably seats six. From there, 90 cm modular segments extend the booth in either direction, up to a maximum capacity of ten. Same acoustic performance, same ventilation logic, scaled.",
+      "badge": "The only meeting pod in the range that extends after install. Designed for teams that don't stay the same size.",
+      "statFootprint": "Base footprint",
+      "statWeight": "Base weight",
+      "statCapacity": "Max capacity"
+    },
+    "overview": {
+      "tag": "MEETING-ROOM SCALE",
+      "title": "When a booth needs to be a room.",
+      "description": "Modular XL is built for the kinds of conversations that don't fit in a phone booth: client presentations, internal workshops, hybrid team meetings. The acoustic shell isolates the room enough that a heated debate doesn't reach the open-plan office, and a workshop inside doesn't get interrupted by the printer outside.",
+      "feature1": "Base unit accommodates up to 6 people seated",
+      "feature2": "90 cm segments extend the booth to 10",
+      "feature3": "25.9 dB(A) speech reduction — meeting-room class",
+      "feature4": "Full A/V provisions and accessible-by-design entry"
+    },
+    "acoustics": {
+      "tag": "ACOUSTIC PERFORMANCE",
+      "title": "Meeting-room isolation, in a moveable shell.",
+      "description": "Modular XL's larger volume means lower interior reverberation by default — sound has more air to dissipate into. Combined with the wall assembly (recycled-PET absorber, steel frame, sealed laminated glass), it delivers 25.9 dB(A) speech reduction even in the fully-extended configuration.",
+      "dbValue": "25.9",
+      "dbUnit": "dB(A)",
+      "dbCaption": "Speech-frequency reduction (Dn,T,A) measured under ISO 23351-1."
+    },
+    "modular": {
+      "tag": "MODULAR ARCHITECTURE",
+      "title": "Adds 90 cm at a time. As many as the room allows.",
+      "description": "Each segment is a self-contained 90 cm extension that bolts onto the booth's structural rail. The segment carries its own ventilation (four supply + four extract fans) and lighting, scaled to maintain comfort as occupancy grows.",
+      "baseLabel": "Base unit",
+      "baseTag": "BASE · 6 PAX",
+      "scaleLabel": "EXTEND",
+      "scenario1": {
+        "size": "BASE",
+        "title": "Team standup",
+        "description": "Six people seated around a centre table. Good for daily standups, design reviews, and small client demos. Fits most office floors without rearranging."
+      },
+      "scenario2": {
+        "size": "BASE + 1",
+        "title": "Workshop",
+        "description": "Eight people, one extension segment. Standing or seated. Pulls in two whiteboards plus a wall-mounted display. Best for half-day working sessions."
+      },
+      "scenario3": {
+        "size": "BASE + 2",
+        "title": "All-hands",
+        "description": "Ten people, two extension segments. A horseshoe arrangement around a display. The largest configuration; consider permanent placement at this size."
+      }
+    },
+    "features": {
+      "tag": "BUILT-IN",
+      "title": "What's standard, before any add-ons.",
+      "modular": {
+        "title": "Field-extendable",
+        "desc": "Segments bolt on after installation. Adding capacity later doesn't require a new booth — just a field-service half-day per segment."
+      },
+      "ventilation": {
+        "title": "Scaled ventilation",
+        "desc": "16 fans delivering 18.4 m³/min in the base unit. Each segment adds 4 supply + 4 extract fans, so airflow scales with occupancy."
+      },
+      "electrics": {
+        "title": "Distributed power",
+        "desc": "Multiple 230V circuits along the wall rail, with USB-C and USB-A at every seat. Each segment adds its own electrical zone."
+      },
+      "lighting": {
+        "title": "Workshop-grade lighting",
+        "desc": "Dimmable warm/cool LED with separate zones for screen and writing tasks. Adjustable from the wall panel."
+      },
+      "accessibility": {
+        "title": "Wheelchair-accessible",
+        "desc": "110 cm clear door width and flat threshold accommodate wheelchairs. Interior layout leaves room for one chair-using participant at the table."
+      },
+      "safety": {
+        "title": "Tested to standard",
+        "desc": "CE-marked, fire-rated to EN 13501-1 B-s2,d0, electrics certified to IEC 60598. Documentation included with delivery."
+      }
+    },
+    "specs": {
+      "tag": "TECHNICAL",
+      "title": "Specifications",
+      "dimensionsTitle": "Base dimensions",
+      "externalDimValue": "2400 × 1800 × 2260 mm",
+      "internalDimValue": "2290 × 1690 × 2120 mm",
+      "doorWidthValue": "1100 mm clear",
+      "weightValue": "790 kg",
+      "extensionTitle": "Extension segment",
+      "segmentSizeValue": "900 × 1800 × 2260 mm",
+      "segmentWeightValue": "280 kg",
+      "segmentFansValue": "4 supply + 4 extract",
+      "segmentPowerValue": "40W active",
+      "acousticsTitle": "Acoustic performance",
+      "noiseReductionValue": "25.9 dB(A)",
+      "absorberValue": "Recycled-PET acoustic felt, 24 mm",
+      "doorSealValue": "Magnetic, four-sided compression",
+      "ventilationTitle": "Ventilation (base)",
+      "airflowValue": "18.4 m³/min",
+      "fanCountValue": "16 × silent EC fans",
+      "occupancyValue": "PIR sensor with delay-off",
+      "clearancesTitle": "Installation clearances",
+      "ceilingValue": "Minimum 2600 mm",
+      "sideValue": "400 mm each side",
+      "frontValue": "1100 mm in front of door",
+      "warrantyTitle": "Warranty & delivery",
+      "structuralValue": "5 years",
+      "electronicsValue": "2 years",
+      "deliveryValue": "6–8 weeks from order"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Spec it your way",
+      "description": "Modular XL ships meeting-room ready in its base configuration. The following options extend it for workshops, hybrid calls, and presentations.",
+      "meetingTable": {
+        "title": "Meeting table",
+        "desc": "Solid-surface table sized to your configuration — round for the base unit, oval or boardroom for extended layouts."
+      },
+      "displaySystem": {
+        "title": "Wall-mounted display (55\"/65\"/75\")",
+        "desc": "Integrated display on the rear wall with HDMI, USB-C, and wireless input. Most clients spec 65\" for the base unit."
+      },
+      "videoConference": {
+        "title": "Conferencing kit",
+        "desc": "Integrated ceiling mic, 4K wide-angle camera, speakerphone. Certified for Microsoft Teams Rooms and Zoom Rooms."
+      },
+      "cableManagement": {
+        "title": "Cable management upgrade",
+        "desc": "Concealed routing under the table with grommets at each seat. Adds HDMI and USB-C passthrough."
+      },
+      "whiteboard": {
+        "title": "Wall whiteboard",
+        "desc": "Magnetic dry-erase surface across one full wall panel. Pairs naturally with the workshop layout."
+      },
+      "fabricPanel": {
+        "title": "Custom fabric panel",
+        "desc": "Replace the exterior fabric with one from your brand palette. Twelve standard colours; bespoke on request."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What's the standard lead time?",
+          "answer": "Six to eight weeks from confirmed order for the base unit. Each additional segment adds one to two weeks. Custom fabric or finishes add a further two to three weeks."
+        },
+        "scaleUp": {
+          "question": "Can I add segments later?",
+          "answer": "Yes — that's exactly what Modular XL is designed for. Adding a segment takes a half-day field service per segment. The booth is engineered for at least two scale-up cycles after first install."
+        },
+        "ceilingHeight": {
+          "question": "What ceiling height do I need?",
+          "answer": "A minimum of 2600 mm. The booth itself is 2260 mm; we recommend 340 mm of clearance for ventilation airflow above the roof. Lower ceilings are possible with reduced fan count — talk to us first."
+        },
+        "capacity": {
+          "question": "What's the realistic capacity at each size?",
+          "answer": "Base unit: six seated comfortably, eight standing. One extension: eight seated, ten standing. Two extensions: ten seated, twelve standing. The 'max capacity' figure assumes seated; we don't recommend designing for standing-only use."
+        },
+        "warranty": {
+          "question": "What's covered by the warranty?",
+          "answer": "Five years on the structural shell — frame, glass, panels, door mechanism — across base and segments. Two years on electronics — fans, sensors, LED driver. Wear parts (door seals, fabric) are excluded. Full terms ship with delivery."
+        }
       }
     }
   }
