@@ -35,7 +35,7 @@ export default function ProductsMosaic() {
     {
       slug: 'rpet-groove',
       series: 'rPET Series · RPET-W-M',
-      image: '/images/products/rpet-groove/hero-rpet-groove.webp',
+      image: '/images/products/rpet-groove/gallery-3.jpg',
       tall: false,
     },
   ];
