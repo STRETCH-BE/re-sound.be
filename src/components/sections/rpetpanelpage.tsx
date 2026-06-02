@@ -25,7 +25,7 @@ const thicknessOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
+const defaultHeroImage = '/images/products/rpet-panel/rPET - Panel - 7.png';
 
 
 export default function RPETPanelProductPage() {
