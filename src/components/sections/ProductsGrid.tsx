@@ -77,7 +77,7 @@ const products = [
   },
   {
     slug: 'rpet-groove',
-    image: '/images/products/rpet-groove/rPET - Groove - Grey.jpg',
+    image: '/images/products/rpet-groove/gallery-1.jpg',
     tags: {
       use: ['panel'],
       finish: ['pet'],
@@ -95,7 +95,7 @@ const products = [
   },
   {
     slug: 'rpet-panel',
-    image: '/images/products/rpet-panel/rPET - Panel - 1.png',
+    image: '/images/products/rpet-panel/rPET - Panel - 2.png',
     tags: {
       use: ['panel'],
       finish: ['pet'],
