@@ -31,7 +31,7 @@ const thicknessOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-groove/rPET-Groove-Beige-Home_offce.png';
+const defaultHeroImage = '/images/products/rpet-groove/gallery-1.jpg';
 
 
 export default function RPetGrooveProductPage() {
@@ -937,7 +937,7 @@ export default function RPetGrooveProductPage() {
         </div>
 
         <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {[1, 2, 3].map((i) => (
             <div key={i} className="gallery-item">
               <div className="image-container gallery">
                 <Image
