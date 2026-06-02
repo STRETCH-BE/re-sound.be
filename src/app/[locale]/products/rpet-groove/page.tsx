@@ -89,7 +89,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           locale,
           name: cleanName,
           description,
-          image: '/images/products/rpet-groove/hero-rPET-Groove.webp',
+          image: '/images/products/rpet-groove/rPET - Groove - Grey.jpg',
           category: 'Acoustic PET panels',
           countryOfOrigin: 'BE',
           material: '100% recycled PET',
