@@ -39,7 +39,11 @@
     "modularXlDescription": "Pod de reunión acústico escalable. La base acomoda a 6 personas, ampliable hasta 10 mediante segmentos de 90 cm. Reducción de voz de 25,9 dB(A), equipamiento A/V completo, entrada accesible por diseño.",
     "modularXlTitle": "Modular XL Pod de reunión acústico escalable | Re-Sound",
     "duoTitle": "Duo Cabina acústica en dos configuraciones | Re-Sound",
-    "soloFlexTitle": "Solo Flex Cabina acústica individual | Re-Sound"
+    "soloFlexTitle": "Solo Flex Cabina acústica individual | Re-Sound",
+    "whereToBuyTitle": "Dónde ver y comprar Re-Sound",
+    "whereToBuyDescription": "Conoce Re-Sound en persona en nuestro showroom de Beveren-Waas, solicita un kit de muestras gratis, reserva una visita por vídeo en directo o concierta una demostración a domicilio en cualquier punto del Benelux.",
+    "partnerTitle": "Programa de partners · programa trade y distribuidor",
+    "partnerDescription": "Programa trade y de partners Re-Sound para arquitectos, diseñadores, distribuidores y mayoristas en toda Europa. Documentación lista para la prescripción, protección regional de cuentas y soporte directo de las personas que diseñaron la gama."
   },
   "nav": {
     "products": "Productos",
@@ -47,7 +51,9 @@
     "sustainability": "Sostenibilidad",
     "contact": "Contacto",
     "cta": "Solicitar Presupuesto",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "whereToBuy": "Dónde comprar",
+    "partner": "Partners"
   },
   "hero": {
     "badge": "Acústica 100% Circular",
@@ -3426,6 +3432,237 @@
           "answer": "Cinco años sobre la estructura — bastidor, vidrio, paneles, mecanismo de puerta — en base y segmentos. Dos años sobre electrónica — ventiladores, sensores, driver LED. Las piezas de desgaste (juntas de puerta, tejido) quedan excluidas. Condiciones completas en la entrega."
         }
       }
+    }
+  },
+  "partnerPage": {
+    "hero": {
+      "tag": "PROGRAMA TRADE Y DE PARTNERS",
+      "title": "Construyámoslo juntos.",
+      "tagline": "Un programa para quienes ponen Re-Sound en espacios reales.",
+      "description": "Trabajamos directamente con arquitectos, diseñadores de interiores, distribuidores y mayoristas en toda Europa. Tanto si prescribes un único proyecto como si construyes un territorio, el programa está montado para hacer que Re-Sound sea fácil de recomendar, fácil de vender y fácil de mantener.",
+      "ctaPrimary": "Solicitar entrada",
+      "ctaSecondary": "Hablamos primero"
+    },
+    "why": {
+      "tag": "POR QUÉ ASOCIARSE CON RE-SOUND",
+      "title": "Seis razones para descolgar el teléfono.",
+      "item1": {
+        "title": "Hecho en Bélgica y Europa",
+        "desc": "Las líneas textiles se fabrican en Bélgica; rWood en Europa; rPET en Polonia. Cadenas de suministro cortas, origen transparente y una calidad que puedes defender en un concurso."
+      },
+      "item2": {
+        "title": "Una gama clara y honesta",
+        "desc": "Tres familias de paneles y tres tamaños de cabinas. Sin paja de catálogo. Fáciles de prescribir, fáciles de recordar, fáciles de combinar."
+      },
+      "item3": {
+        "title": "Documentación lista para prescribir",
+        "desc": "BIM (.rvt, .ifc), CAD (.dwg), fichas técnicas, informes de ensayos al fuego y acústicos, y DAP disponibles a través del portal de partners."
+      },
+      "item4": {
+        "title": "Margen real, protección real",
+        "desc": "Niveles competitivos de precios trade y protección regional de cuentas sobre los leads registrados. No metemos a nuestros partners en una guerra de precios."
+      },
+      "item5": {
+        "title": "Plazos rápidos",
+        "desc": "La mayoría de los pedidos salen en 4–6 semanas desde nuestra base de producción europea. Opciones exprés en artículos seleccionados en stock. Sin esperas de doce semanas a un contenedor."
+      },
+      "item6": {
+        "title": "Línea directa con los fabricantes",
+        "desc": "Un equipo, un número de teléfono, sin capas entre tú y las personas que toman las decisiones. Las preguntas técnicas se responden el mismo día."
+      }
+    },
+    "tracks": {
+      "tag": "ELIGE TU VÍA",
+      "title": "Tres formas de trabajar con nosotros.",
+      "description": "La vía adecuada depende de lo que haces a diario. Elige la que encaje — la confirmamos al entrar.",
+      "specifier": {
+        "badge": "VÍA PRESCRIPTOR",
+        "name": "Para arquitectos y diseñadores",
+        "description": "Para estudios que prescriben paneles acústicos y cabinas en proyectos de cliente. Sin obligación de venta — el programa está montado para hacer Re-Sound fácil de prescribir, con la documentación y las muestras que necesitas.",
+        "point1": "Membresía gratuita en el programa",
+        "point2": "Kit de muestras A4 gratis con cada familia de paneles",
+        "point3": "Acceso a BIM (.rvt, .ifc), CAD (.dwg) y modelos 3D",
+        "point4": "Línea directa al soporte de prescripción",
+        "point5": "Primer vistazo a nuevos acabados y lanzamientos",
+        "fee": "Alta gratuita",
+        "apply": "Solicitar como prescriptor"
+      },
+      "dealer": {
+        "badge": "DISTRIBUIDOR AUTORIZADO",
+        "name": "Para revendedores y dealers de contrato",
+        "description": "Para distribuidores de mobiliario de contrato y especialistas acústicos que revenden al mercado europeo de oficinas. Nos compras a precios trade y revendes con margen.",
+        "point1": "Niveles de precios trade según volumen anual",
+        "point2": "Protección regional de cuentas en leads registrados",
+        "point3": "Pack de marketing: fotografía, recursos de marca, materiales conjuntos",
+        "point4": "Formación trimestral de producto y previo de roadmap",
+        "point5": "Enrutamiento de leads desde re-sound.be al distribuidor en la región del cliente",
+        "fee": "Umbral de volumen aplicable",
+        "apply": "Solicitar como distribuidor"
+      },
+      "distributor": {
+        "badge": "MAYORISTA",
+        "name": "Para partners de país o región",
+        "description": "Para partners que asumen un país o región en exclusiva. Estructura completa de margen, condiciones de stock y crédito, y relación directa con nuestro equipo directivo.",
+        "point1": "Acuerdo de exclusividad territorial",
+        "point2": "Estructura de margen completa, stock y condiciones de crédito",
+        "point3": "Formación de marca y capacitación comercial",
+        "point4": "Presupuesto conjunto de marketing y apoyo en eventos",
+        "point5": "Relación directa con la dirección de STRETCH-BE",
+        "fee": "A petición",
+        "apply": "Solicitar como mayorista"
+      }
+    },
+    "benefits": {
+      "tag": "LO QUE OBTIENES",
+      "title": "El cuadro operativo.",
+      "description": "La membresía del programa va más allá de una lista de precios. Cada vía recibe el apoyo operativo que hace que recomendar Re-Sound sea una decisión sencilla.",
+      "item1": {
+        "title": "Precios trade",
+        "desc": "Una estructura de descuentos clara y sin sorpresas. Niveles según volumen anual; precio estable durante el año contractual."
+      },
+      "item2": {
+        "title": "Pack de marketing",
+        "desc": "Fotografía en alta resolución, guía de marca, recursos sociales e impresos listos para tus canales."
+      },
+      "item3": {
+        "title": "Kit de muestras",
+        "desc": "Muestras físicas de cada acabado en todas las familias de paneles. Renovado anualmente conforme evoluciona la gama."
+      },
+      "item4": {
+        "title": "Biblioteca BIM/CAD",
+        "desc": "Archivos listos para prescribir de cada panel y cabina: Revit, IFC, DWG y modelos 3D. Actualizados cuando cambia la gama."
+      },
+      "item5": {
+        "title": "Enrutamiento de leads",
+        "desc": "Leads cualificados desde re-sound.be al partner adecuado. La protección regional significa que una consulta registrada sigue siendo tuya."
+      },
+      "item6": {
+        "title": "Un solo contacto",
+        "desc": "Un equipo gestiona tu cuenta, las preguntas técnicas y los pedidos. Sin cola, sin números de ticket, sin pasarte de un sitio a otro."
+      }
+    },
+    "process": {
+      "tag": "CÓMO FUNCIONA",
+      "title": "Cuatro pasos. Dos días laborables.",
+      "description": "La solicitud es deliberadamente breve. Queremos hablar pronto, no recolectar formularios.",
+      "step1": {
+        "number": "01",
+        "title": "Solicitud",
+        "desc": "Formulario corto en la página de contacto. Dos minutos. Cuéntanos sobre tu estudio o empresa, dónde operas y en qué estás trabajando."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Revisión",
+        "desc": "Volvemos en dos días laborables. Lo habitual: con una vía que encaja; a veces con alguna pregunta; ocasionalmente con una contrapropuesta."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Alta",
+        "desc": "Credenciales del portal, acceso a la biblioteca, una llamada de inicio de 30 minutos con nuestro equipo de partners y tu primer envío de muestras."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Lanzamiento",
+        "desc": "Presupuestas tu primer proyecto con precios trade en vigor. Soporte continuo, formación y enrutamiento de leads desde ese momento."
+      }
+    },
+    "resources": {
+      "tag": "RECURSOS TRADE",
+      "title": "Documentación, a demanda.",
+      "description": "El portal de partners se abre con el alta. Los siguientes elementos están disponibles antes de solicitar, para que puedas revisar el programa a tu ritmo.",
+      "partnerPack": "Pack del programa de partners (PDF)",
+      "brandGuidelines": "Guía de marca y marketing (PDF)",
+      "sampleKit": "Solicitar un kit físico de muestras",
+      "bimCad": "Acceso a biblioteca BIM/CAD (tras el alta)",
+      "caseStudies": "Casos de estudio y proyectos de referencia",
+      "pricing": "Estructura de precios trade (tras confirmar encaje)"
+    },
+    "cta": {
+      "title": "¿Listo para asociarte con Re-Sound?",
+      "subtitle": "Un formulario, dos días laborables y estás dentro.",
+      "primary": "Solicitar ahora",
+      "secondary": "Hablamos primero"
+    }
+  },
+  "whereToBuyPage": {
+    "hero": {
+      "tag": "DÓNDE VER Y COMPRAR",
+      "title": "Velo. Escúchalo. Pídelo.",
+      "tagline": "Los lugares donde experimentar Re-Sound — y las formas de llevártelo a casa.",
+      "description": "Re-Sound se vende directo en Bélgica y a través de una red creciente de distribuidores y partners por toda Europa. El listado de abajo muestra dónde encontrar los productos en persona — y qué hacer cuando aún no hay un showroom cerca de ti."
+    },
+    "hq": {
+      "tag": "SHOWROOM DEL CUARTEL GENERAL",
+      "title": "Beveren-Waas, Bélgica",
+      "subtitle": "Nuestra base. Pásate.",
+      "description": "La gama completa de paneles y los tres tamaños de cabinas están instalados y acústicamente activos. Ven a escuchar la diferencia entre materiales, siéntate dentro de Modular XL con un café y conversa sobre tu proyecto con las personas que diseñaron la gama.",
+      "addressLabel": "Dirección",
+      "addressLine1": "STRETCH-BE BV (Re-Sound)",
+      "addressLine2": "Gentseweg 309 A3",
+      "addressLine3": "9120 Beveren-Waas, Bélgica",
+      "hoursLabel": "Horario",
+      "hoursValue": "Lu–Vi, 09:00–17:00 · con cita",
+      "contactLabel": "Contacto",
+      "phoneValue": "+32 3 284 68 18",
+      "emailValue": "info@re-sound.be",
+      "experienceTitle": "Qué puedes experimentar aquí",
+      "experience1": "Demos en vivo de cada familia de paneles — Interior, Solid, Divide, rWood, rPET",
+      "experience2": "Las tres cabinas instaladas: Solo Flex, Duo, Modular XL",
+      "experience3": "Comparación lado a lado de materiales y acabados",
+      "experience4": "Medición acústica bajo petición",
+      "ctaPrimary": "Reservar visita",
+      "ctaSecondary": "Cómo llegar"
+    },
+    "partners": {
+      "tag": "RED DE PARTNERS",
+      "title": "Una red europea en crecimiento.",
+      "description": "Estamos ampliando la red de showrooms partners trimestre a trimestre. El listado de abajo muestra los mercados donde ya puedes ver Re-Sound en un distribuidor o partner. Si no encuentras tu país aún, las alternativas más abajo cubren la mayoría de necesidades sin coger un vuelo.",
+      "statusActive": "Showrooms de partners activos",
+      "statusComingSoon": "En camino este año",
+      "comingSoon": "El listado de la red de partners se publicará en 2026 conforme se confirmen los acuerdos. Por ahora, contáctanos y te orientamos a la opción más cercana.",
+      "ctaTitle": "¿Eres distribuidor o prescriptor?",
+      "ctaDescription": "Estamos ampliando activamente la red de partners. Si quieres alojar Re-Sound en tu showroom o representar la marca en tu mercado, nos encantará hablar.",
+      "ctaButton": "Hazte partner"
+    },
+    "alternatives": {
+      "tag": "¿NO PUEDES VISITARNOS EN PERSONA?",
+      "title": "Tres formas más de experimentar Re-Sound.",
+      "description": "La mayoría de las decisiones acústicas no necesitan una visita en persona — pero toda decisión gana con muestras físicas o una conversación de verdad. Elige la opción que encaje con tu fase.",
+      "samples": {
+        "tag": "GRATIS",
+        "title": "Kit de muestras",
+        "desc": "Muestras A4 de cada familia de paneles enviadas por correo. El kit incluye Interior, Solid, Divide, rWood y rPET, con cada acabado. Envío en 3 días laborables en toda la UE.",
+        "cta": "Solicitar kit de muestras"
+      },
+      "video": {
+        "tag": "EN DIRECTO",
+        "title": "Visita por vídeo al showroom",
+        "desc": "Recorrido en vivo de 30 minutos por el showroom HQ con alguien del equipo de diseño. Útil para elegir acabados, resolver preguntas específicas del proyecto y mostrar la gama a un equipo cliente en remoto.",
+        "cta": "Reservar visita por vídeo"
+      },
+      "onsite": {
+        "tag": "CON CITA",
+        "title": "Demostración a domicilio",
+        "desc": "Llevamos paneles y una cabina de muestra portátil a tu oficina. Disponible de serie en Bélgica, Países Bajos, Luxemburgo y Norte de Francia. Más lejos con desplazamiento concertado.",
+        "cta": "Concertar demostración"
+      }
+    },
+    "contact": {
+      "tag": "HABLAR CON VENTAS",
+      "title": "¿Proyecto grande? ¿Consulta de distribución?",
+      "description": "Para despliegues de varias plantas, consultas de distribución o cualquier cosa que se beneficie de una conversación directa, nuestro equipo es la vía más rápida. Cogemos el teléfono.",
+      "phoneLabel": "Teléfono",
+      "phoneValue": "+32 3 284 68 18",
+      "emailLabel": "Email",
+      "emailValue": "info@re-sound.be",
+      "hoursLabel": "Horario",
+      "hoursValue": "Lu–Vi, 09:00–17:00 CET"
+    },
+    "cta": {
+      "title": "¿Quieres venir a verlo?",
+      "subtitle": "Reserva una visita en HQ, pide muestras o concierta una demostración a domicilio — lo que mejor te venga.",
+      "primary": "Reservar visita",
+      "secondary": "Pedir muestras"
     }
   }
 }

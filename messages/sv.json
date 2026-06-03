@@ -39,7 +39,11 @@
     "modularXlDescription": "Skalbar akustisk mötespod. Basmodul rymmer 6 personer, kan utökas till 10 med 90 cm-segment. 25,9 dB(A) talreducering, fullt A/V-utbud, tillgänglig ingång genom design.",
     "modularXlTitle": "Modular XL Skalbar akustisk mötespod | Re-Sound",
     "duoTitle": "Duo Akustisk bås i två konfigurationer | Re-Sound",
-    "soloFlexTitle": "Solo Flex Akustisk enpersonsbås | Re-Sound"
+    "soloFlexTitle": "Solo Flex Akustisk enpersonsbås | Re-Sound",
+    "whereToBuyTitle": "Var du kan se och köpa Re-Sound",
+    "whereToBuyDescription": "Upplev Re-Sound på plats i vår showroom i Beveren-Waas, beställ ett kostnadsfritt provkit, boka en live-videorundtur eller ordna en demonstration på plats i hela Benelux.",
+    "partnerTitle": "Partnerprogram · trade- och återförsäljarprogram",
+    "partnerDescription": "Re-Sound trade- och partnerprogram för arkitekter, designers, återförsäljare och distributörer i hela Europa. Förskrivningsfärdig dokumentation, regionalt kontoskydd och direkt support från personerna som tagit fram serien."
   },
   "nav": {
     "products": "Produkter",
@@ -47,7 +51,9 @@
     "sustainability": "Hållbarhet",
     "contact": "Kontakt",
     "cta": "Begär offert",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "whereToBuy": "Var köper jag",
+    "partner": "Partner"
   },
   "hero": {
     "badge": "100% Cirkulär Akustik",
@@ -3426,6 +3432,237 @@
           "answer": "Fem år på strukturen — stomme, glas, paneler, dörrmekanism — på bas och segment. Två år på elektronik — fläktar, sensorer, LED-driver. Slitdelar (dörrtätningar, tyg) är undantagna. Fullständiga villkor levereras med."
         }
       }
+    }
+  },
+  "partnerPage": {
+    "hero": {
+      "tag": "TRADE- OCH PARTNERPROGRAM",
+      "title": "Låt oss bygga det tillsammans.",
+      "tagline": "Ett program för dem som tar Re-Sound in i verkliga rum.",
+      "description": "Vi arbetar direkt med arkitekter, inredningsarkitekter, återförsäljare och distributörer i hela Europa. Vare sig du förskriver ett enskilt projekt eller bygger upp ett territorium är programmet utformat för att Re-Sound ska vara lätt att rekommendera, lätt att sälja och lätt att stötta.",
+      "ctaPrimary": "Ansök till programmet",
+      "ctaSecondary": "Vi pratar först"
+    },
+    "why": {
+      "tag": "VARFÖR BLI PARTNER MED RE-SOUND",
+      "title": "Sex skäl att lyfta luren.",
+      "item1": {
+        "title": "Tillverkat i Belgien och Europa",
+        "desc": "Textillinjerna tillverkas i Belgien; rWood i Europa; rPET i Polen. Korta leveranskedjor, transparent ursprung och kvalitet du kan stå för i en upphandling."
+      },
+      "item2": {
+        "title": "En tydlig, ärlig serie",
+        "desc": "Tre panelfamiljer och tre boothstorlekar. Ingen katalogutfyllnad. Lätt att förskriva, lätt att minnas, lätt att kombinera."
+      },
+      "item3": {
+        "title": "Förskrivningsfärdig dokumentation",
+        "desc": "BIM (.rvt, .ifc), CAD (.dwg), datablad, brand- och akustiska testrapporter samt EPD:er tillgängliga via partnerportalen."
+      },
+      "item4": {
+        "title": "Riktig marginal, riktigt skydd",
+        "desc": "Konkurrenskraftiga trade-prisnivåer och regionalt kontoskydd på registrerade leads. Vi sätter inte våra partner i priskrig mot varandra."
+      },
+      "item5": {
+        "title": "Snabb leveranstid",
+        "desc": "De flesta order lämnar oss på 4–6 veckor från vår europeiska produktionsbas. Expressalternativ på utvalda lagervaror. Inga tolv veckors containerväntan."
+      },
+      "item6": {
+        "title": "Direktlinje till tillverkarna",
+        "desc": "Ett team, ett telefonnummer, inga lager mellan dig och dem som fattar besluten. Tekniska frågor besvaras samma dag."
+      }
+    },
+    "tracks": {
+      "tag": "VÄLJ DIN VÄG",
+      "title": "Tre sätt att arbeta med oss på.",
+      "description": "Rätt väg beror på vad du gör dagligen. Välj den som passar — vi bekräftar på vägen in.",
+      "specifier": {
+        "badge": "FÖRSKRIVNINGSVÄG",
+        "name": "För arkitekter & designers",
+        "description": "För byråer som förskriver akustikpaneler och bås i kundprojekt. Ingen försäljningsskyldighet — programmet är upplagt för att göra Re-Sound lätt att förskriva, med dokumentationen och proverna du behöver.",
+        "point1": "Kostnadsfritt programmedlemskap",
+        "point2": "Kostnadsfritt A4-provkit med varje panelfamilj",
+        "point3": "Tillgång till BIM (.rvt, .ifc), CAD (.dwg) och 3D-modeller",
+        "point4": "Direktlinje till förskrivningssupport",
+        "point5": "Förhandstitt på nya ytor och produktlanseringar",
+        "fee": "Gratis att gå med",
+        "apply": "Ansök som förskrivare"
+      },
+      "dealer": {
+        "badge": "AUKTORISERAD ÅTERFÖRSÄLJARE",
+        "name": "För återförsäljare & kontraktshandlare",
+        "description": "För kontraktsmöbeläterförsäljare och akustikspecialister som säljer vidare till den europeiska kontorsmarknaden. Du köper hos oss till trade-pris och säljer vidare med marginal.",
+        "point1": "Trade-prisnivåer baserade på årsvolym",
+        "point2": "Regionalt kontoskydd på registrerade leads",
+        "point3": "Marknadsföringspaket: fotografi, varumärkesresurser, samarbetsmaterial",
+        "point4": "Kvartalsvis produktutbildning och roadmap-förhandstitt",
+        "point5": "Lead-routing från re-sound.be till återförsäljare i kundens region",
+        "fee": "Volymtröskel gäller",
+        "apply": "Ansök som återförsäljare"
+      },
+      "distributor": {
+        "badge": "DISTRIBUTÖR",
+        "name": "För lands- & regionspartner",
+        "description": "För partner som tar över ett land eller en region exklusivt. Fullständig marginalstruktur, lager- och kreditvillkor samt direkt relation med vår ledning.",
+        "point1": "Territoriellt exklusivt avtal",
+        "point2": "Fullständig marginalstruktur, lager- och kreditvillkor",
+        "point3": "Varumärkesutbildning och säljkompetensutveckling",
+        "point4": "Gemensam marknadsföringsbudget och eventsupport",
+        "point5": "Direkt relation med STRETCH-BE:s ledning",
+        "fee": "Efter ansökan",
+        "apply": "Ansök som distributör"
+      }
+    },
+    "benefits": {
+      "tag": "VAD DU FÅR",
+      "title": "Den operativa bilden.",
+      "description": "Programmedlemskap omfattar mer än en prislista. Varje väg får det operativa stöd som gör Re-Sound till en lätt rekommendation.",
+      "item1": {
+        "title": "Trade-priser",
+        "desc": "En tydlig rabattstruktur utan dolda kostnader. Nivåer baserade på årsvolym; pris stabilt under avtalsåret."
+      },
+      "item2": {
+        "title": "Marknadsföringspaket",
+        "desc": "Högupplöst fotografi, varumärkesriktlinjer, färdiga sociala och tryckta resurser klara för dina egna kanaler."
+      },
+      "item3": {
+        "title": "Provkit",
+        "desc": "Fysiska prover av varje yta i alla panelfamiljer. Förnyas årligen i takt med att serien utvecklas."
+      },
+      "item4": {
+        "title": "BIM/CAD-bibliotek",
+        "desc": "Förskrivningsfärdiga filer för varje panel och bås: Revit, IFC, DWG och 3D-modeller. Uppdaterade när serien ändras."
+      },
+      "item5": {
+        "title": "Lead-routing",
+        "desc": "Kvalificerade leads från re-sound.be skickas till rätt partner. Regionalt skydd innebär att en registrerad förfrågan förblir din."
+      },
+      "item6": {
+        "title": "En kontakt",
+        "desc": "Ett team hanterar ditt konto, tekniska frågor och beställningar. Ingen kö, inga ticketnummer, ingen vidarekoppling."
+      }
+    },
+    "process": {
+      "tag": "SÅ HÄR FUNGERAR DET",
+      "title": "Fyra steg. Två arbetsdagar.",
+      "description": "Ansökan är medvetet kort. Vi vill prata snart, inte samla formulär.",
+      "step1": {
+        "number": "01",
+        "title": "Ansökan",
+        "desc": "Kort formulär på kontaktsidan. Två minuter. Berätta om din byrå eller ditt företag, var du är verksam och vad du jobbar med."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Granskning",
+        "desc": "Vi återkommer inom två arbetsdagar. Vanligen med en passande väg, ibland med några frågor, ibland med ett motförslag."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Onboarding",
+        "desc": "Portalbehörighet, biblioteksåtkomst, ett 30-minuters startmöte med vårt partnerteam och din första provsändning."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Lansering",
+        "desc": "Offerera ditt första projekt med trade-priser på plats. Löpande support, utbildning och lead-routing därifrån."
+      }
+    },
+    "resources": {
+      "tag": "TRADE-RESURSER",
+      "title": "Dokumentation, on demand.",
+      "description": "Partnerportalen öppnas vid onboarding. Posterna nedan är tillgängliga innan du ansöker, så att du kan utvärdera programmet i din egen takt.",
+      "partnerPack": "Partnerprogrampaket (PDF)",
+      "brandGuidelines": "Varumärkes- och marknadsföringsriktlinjer (PDF)",
+      "sampleKit": "Beställ ett fysiskt provkit",
+      "bimCad": "BIM/CAD-biblioteksåtkomst (efter onboarding)",
+      "caseStudies": "Fallstudier och referensprojekt",
+      "pricing": "Trade-prisstruktur (efter bekräftad matchning)"
+    },
+    "cta": {
+      "title": "Redo att bli partner med Re-Sound?",
+      "subtitle": "Ett formulär, två arbetsdagar, och du är inne.",
+      "primary": "Ansök nu",
+      "secondary": "Vi pratar först"
+    }
+  },
+  "whereToBuyPage": {
+    "hero": {
+      "tag": "VAR DU SER OCH KÖPER",
+      "title": "Se det. Hör det. Beställ det.",
+      "tagline": "Platserna där du upplever Re-Sound — och sätten att få det hem.",
+      "description": "Re-Sound säljs direkt i Belgien och via ett växande nätverk av återförsäljare och partner i hela Europa. Listan nedan visar var du hittar produkterna i verkligheten — och vad du kan göra när det ännu inte finns en showroom i din närhet."
+    },
+    "hq": {
+      "tag": "HUVUDKONTORETS SHOWROOM",
+      "title": "Beveren-Waas, Belgien",
+      "subtitle": "Vår bas. Titta gärna in.",
+      "description": "Hela panelserien och alla tre boothstorlekarna är installerade och akustiskt aktiva. Kom och hör skillnaden mellan materialen, sätt dig i Modular XL med en kopp kaffe och prata om ditt projekt med dem som tagit fram serien.",
+      "addressLabel": "Adress",
+      "addressLine1": "STRETCH-BE BV (Re-Sound)",
+      "addressLine2": "Gentseweg 309 A3",
+      "addressLine3": "9120 Beveren-Waas, Belgien",
+      "hoursLabel": "Öppettider",
+      "hoursValue": "Mån–fre, 09:00–17:00 · enligt överenskommelse",
+      "contactLabel": "Kontakt",
+      "phoneValue": "+32 3 284 68 18",
+      "emailValue": "info@re-sound.be",
+      "experienceTitle": "Vad du kan uppleva här",
+      "experience1": "Live-demos av varje panelfamilj — Interior, Solid, Divide, rWood, rPET",
+      "experience2": "Alla tre boothstorlekarna installerade: Solo Flex, Duo, Modular XL",
+      "experience3": "Material- och ytjämförelse sida vid sida",
+      "experience4": "Akustisk mätning på begäran",
+      "ctaPrimary": "Boka ett besök",
+      "ctaSecondary": "Vägbeskrivning"
+    },
+    "partners": {
+      "tag": "PARTNERNÄTVERK",
+      "title": "Ett växande europeiskt nätverk.",
+      "description": "Vi bygger ut nätverket av partner-showroomer kvartal för kvartal. Listan nedan visar de marknader där du redan kan se Re-Sound hos en återförsäljare eller partner. Om du inte ser ditt land ännu täcker alternativen längre ner de flesta behoven utan ett flyg.",
+      "statusActive": "Aktiva partner-showroomer",
+      "statusComingSoon": "På väg i år",
+      "comingSoon": "Listan över partnernätverket lanseras under 2026 i takt med att avtalen bekräftas. Tills dess: kontakta oss så pekar vi dig mot närmaste alternativ.",
+      "ctaTitle": "Är du återförsäljare eller förskrivare?",
+      "ctaDescription": "Vi utökar aktivt partnernätverket. Vill du ha Re-Sound i din showroom eller representera varumärket på din marknad pratar vi gärna.",
+      "ctaButton": "Bli partner"
+    },
+    "alternatives": {
+      "tag": "KAN INTE BESÖKA PERSONLIGEN?",
+      "title": "Tre andra sätt att uppleva Re-Sound.",
+      "description": "De flesta akustikbeslut kräver inte ett personligt besök — men varje beslut vinner på fysiska prover eller ett riktigt samtal. Välj det som passar din fas.",
+      "samples": {
+        "tag": "GRATIS",
+        "title": "Provkit",
+        "desc": "A4-prover av varje panelfamilj levererade med posten. Kitet täcker Interior, Solid, Divide, rWood och rPET, med varje yta inkluderad. Skickas inom 3 arbetsdagar i hela EU.",
+        "cta": "Beställ ett provkit"
+      },
+      "video": {
+        "tag": "LIVE",
+        "title": "Videorundtur i showroomen",
+        "desc": "30-minuters live-rundvisning av HQ-showroomen med någon från designteamet. Användbar för ytval, projektspecifika frågor och presentation av serien för ett kundteam på distans.",
+        "cta": "Boka en videorundtur"
+      },
+      "onsite": {
+        "tag": "ENLIGT BOKNING",
+        "title": "Demonstration på plats",
+        "desc": "Vi tar med paneler och ett portabelt boothprov till ditt kontor. Tillgängligt som standard i Belgien, Nederländerna, Luxemburg och Norra Frankrike. Längre bort med ordnad resa.",
+        "cta": "Ordna en demonstration"
+      }
+    },
+    "contact": {
+      "tag": "PRATA MED SÄLJ",
+      "title": "Större projekt? Distributörsfråga?",
+      "description": "För utrullningar över flera våningar, distributörsfrågor eller allt som vinner på ett direkt samtal är vårt team den snabbaste vägen. Vi svarar i telefon.",
+      "phoneLabel": "Telefon",
+      "phoneValue": "+32 3 284 68 18",
+      "emailLabel": "E-post",
+      "emailValue": "info@re-sound.be",
+      "hoursLabel": "Tider",
+      "hoursValue": "Mån–fre, 09:00–17:00 CET"
+    },
+    "cta": {
+      "title": "Vill du komma och se det?",
+      "subtitle": "Boka ett besök på HQ, beställ prover eller ordna en demonstration på plats — det som passar bäst.",
+      "primary": "Boka ett besök",
+      "secondary": "Beställ prover"
     }
   }
 }

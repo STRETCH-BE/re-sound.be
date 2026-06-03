@@ -39,7 +39,11 @@
     "modularXlDescription": "Skalanlegur hljóðeinangraður fundarklefi. Grunnurinn rúmar 6 manns, hægt að stækka í 10 með 90 cm einingum. 25,9 dB(A) talskerðing, fullur A/V búnaður, aðgengilegur inngangur frá hönnun.",
     "modularXlTitle": "Modular XL Skalanlegur hljóðeinangraður fundarklefi | Re-Sound",
     "duoTitle": "Duo Hljóðeinangraður klefi í tveimur uppsetningum | Re-Sound",
-    "soloFlexTitle": "Solo Flex Hljóðeinangraður einmannsklefi | Re-Sound"
+    "soloFlexTitle": "Solo Flex Hljóðeinangraður einmannsklefi | Re-Sound",
+    "whereToBuyTitle": "Hvar þú sérð og kaupir Re-Sound",
+    "whereToBuyDescription": "Upplifðu Re-Sound persónulega í sýningarsalnum okkar í Beveren-Waas, biddu um ókeypis sýnaspakka, bókaðu lifandi myndbandsskoðun eða skipuleggðu kynningu á staðnum hvar sem er á Benelux-svæðinu.",
+    "partnerTitle": "Samstarfsáætlun · trade- og söluaðiláætlun",
+    "partnerDescription": "Re-Sound trade- og samstarfsáætlun fyrir arkitekta, hönnuði, söluaðila og dreifingaraðila víðs vegar um Evrópu. Skjöl tilbúin fyrir útboð, svæðisbundin reikningsvernd og bein aðstoð frá fólkinu sem hannaði línuna."
   },
   "nav": {
     "products": "Vörur",
@@ -47,7 +51,9 @@
     "sustainability": "Sjálfbærni",
     "contact": "Samband",
     "cta": "Biðja um tilboð",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "whereToBuy": "Hvar kaupa",
+    "partner": "Samstarf"
   },
   "hero": {
     "badge": "100% Hringrásarlíðfræði",
@@ -3426,6 +3432,237 @@
           "answer": "Fimm ár á grindina — grind, gler, plötur, hurðabúnað — yfir grunn og einingar. Tvö ár á rafeindabúnað — viftur, skynjara, LED-rekara. Slitvarahlutir (hurðaþéttingar, efni) eru undanskildir. Full skilyrði fylgja við afhendingu."
         }
       }
+    }
+  },
+  "partnerPage": {
+    "hero": {
+      "tag": "TRADE- OG SAMSTARFSÁÆTLUN",
+      "title": "Byggjum þetta saman.",
+      "tagline": "Áætlun fyrir þá sem setja Re-Sound í raunveruleg rými.",
+      "description": "Við vinnum beint með arkitektum, innanhússhönnuðum, söluaðilum og dreifingaraðilum víðs vegar um Evrópu. Hvort sem þú útboðir eitt verkefni eða byggir upp svæði, er áætlunin sett upp til að gera Re-Sound auðvelt að mæla með, auðvelt að selja og auðvelt að styðja.",
+      "ctaPrimary": "Sækja um í áætlunina",
+      "ctaSecondary": "Tölum fyrst"
+    },
+    "why": {
+      "tag": "HVERS VEGNA AÐ GERAST SAMSTARFSAÐILI RE-SOUND",
+      "title": "Sex ástæður til að taka upp símann.",
+      "item1": {
+        "title": "Framleitt í Belgíu og Evrópu",
+        "desc": "Textíllínurnar eru framleiddar í Belgíu; rWood í Evrópu; rPET í Póllandi. Stuttar aðfangakeðjur, gegnsætt upprunaland og gæði sem þú getur staðið með í útboði."
+      },
+      "item2": {
+        "title": "Skýr, heiðarleg lína",
+        "desc": "Þrjár plötufjölskyldur og þrjár klefastærðir. Engin vörubók-fyllingar. Auðvelt að útboða, auðvelt að muna, auðvelt að sameina."
+      },
+      "item3": {
+        "title": "Skjöl tilbúin fyrir útboð",
+        "desc": "BIM (.rvt, .ifc), CAD (.dwg), gagnablöð, bruna- og hljóðprófunarskýrslur og EPD-skjöl aðgengileg gegnum samstarfsgáttina."
+      },
+      "item4": {
+        "title": "Raunveruleg framlegð, raunveruleg vernd",
+        "desc": "Samkeppnishæf trade-verðþrep og svæðisbundin reikningsvernd á skráðum tilboðum. Við látum samstarfsaðila okkar ekki keppast í verðstríði."
+      },
+      "item5": {
+        "title": "Hraður afhendingartími",
+        "desc": "Flestar pantanir fara út á 4–6 vikum frá evrópska framleiðslustöðinni okkar. Hraðvalkostir á völdum vörulagervöru. Engin tólf vikna gámabið."
+      },
+      "item6": {
+        "title": "Bein lína til framleiðenda",
+        "desc": "Eitt teymi, eitt símanúmer, engin lög á milli þín og þeirra sem taka ákvarðanir. Tæknilegum spurningum er svarað samdægurs."
+      }
+    },
+    "tracks": {
+      "tag": "VELDU ÞINA LEIÐ",
+      "title": "Þrjár leiðir til að vinna með okkur.",
+      "description": "Rétta leiðin fer eftir því sem þú gerir dags daglega. Veldu þá sem passar — við staðfestum á leiðinni inn.",
+      "specifier": {
+        "badge": "ÚTBOÐSLEIÐ",
+        "name": "Fyrir arkitekta og hönnuði",
+        "description": "Fyrir teiknistofur sem útboða hljóðplötur og klefa í verkefnum viðskiptavina. Engin sölukrafa — áætlunin er sett upp til að gera Re-Sound auðvelt að útboða, með skjölunum og sýnishornunum sem þú þarft.",
+        "point1": "Ókeypis aðild að áætluninni",
+        "point2": "Ókeypis A4-sýnaspakki með hverri plötufjölskyldu",
+        "point3": "Aðgangur að BIM (.rvt, .ifc), CAD (.dwg) og 3D-líkönum",
+        "point4": "Bein lína til útboðsstuðnings",
+        "point5": "Fyrstu fréttir af nýjum áferðum og vörukynningum",
+        "fee": "Ókeypis að skrá sig",
+        "apply": "Sækja um sem útboðari"
+      },
+      "dealer": {
+        "badge": "VOTTAÐUR SÖLUAÐILI",
+        "name": "Fyrir endursöluaðila og samningssöluaðila",
+        "description": "Fyrir samningshúsgagnasöluaðila og hljóðsérfræðinga sem endurselja á evrópskum skrifstofumarkaði. Þú kaupir hjá okkur á trade-verði og endurselur með framlegð.",
+        "point1": "Trade-verðþrep byggð á ársmagni",
+        "point2": "Svæðisbundin reikningsvernd á skráðum tilboðum",
+        "point3": "Markaðspakki: ljósmyndir, vörumerkjaeignir, samhönnuð efni",
+        "point4": "Vörukennsla á ársfjórðungi og forsýn á vegvísi",
+        "point5": "Tilboðsstjórnun frá re-sound.be til söluaðila á svæði viðskiptavinarins",
+        "fee": "Magnþröskuldur gildir",
+        "apply": "Sækja um sem söluaðili"
+      },
+      "distributor": {
+        "badge": "DREIFINGARAÐILI",
+        "name": "Fyrir lands- og svæðissamstarfsaðila",
+        "description": "Fyrir samstarfsaðila sem taka að sér land eða svæði einkarétt. Full framlegðaruppbygging, vörulager- og lánaskilmálar, og bein tengsl við stjórnendateymið okkar.",
+        "point1": "Svæðisbundinn einkaréttarsamningur",
+        "point2": "Full framlegðaruppbygging, vörulager- og lánaskilmálar",
+        "point3": "Vörumerkjakennsla og söluhæfing",
+        "point4": "Sameiginleg markaðsfjárhagsáætlun og viðburðastuðningur",
+        "point5": "Bein tengsl við forystu STRETCH-BE",
+        "fee": "Eftir umsókn",
+        "apply": "Sækja um sem dreifingaraðili"
+      }
+    },
+    "benefits": {
+      "tag": "HVAÐ ÞÚ FÆRÐ",
+      "title": "Reksturssýnin.",
+      "description": "Aðild að áætluninni nær lengra en verðskrá. Hver leið fær reksturssruðninginn sem gerir Re-Sound að einfaldri mæling.",
+      "item1": {
+        "title": "Trade-verð",
+        "desc": "Skýr afsláttarbygging án óvæntra kostnaða. Þrep byggð á ársmagni; verð helst stöðugt á samningsárinu."
+      },
+      "item2": {
+        "title": "Markaðspakki",
+        "desc": "Hárupplausnar ljósmyndir, vörumerkjaleiðbeiningar, tilbúnar samfélagsmiðla- og prentauðlindir tilbúnar fyrir þína eigin rásir."
+      },
+      "item3": {
+        "title": "Sýnaspakki",
+        "desc": "Líkamleg sýnishorn af hverri áferð á öllum plötufjölskyldum. Endurnýjað árlega eftir því sem línan þróast."
+      },
+      "item4": {
+        "title": "BIM/CAD-safn",
+        "desc": "Útboðsklár skrár fyrir hverja plötu og klefa: Revit, IFC, DWG og 3D-líkön. Uppfært þegar línan breytist."
+      },
+      "item5": {
+        "title": "Tilboðsstjórnun",
+        "desc": "Vottuð tilboð frá re-sound.be send til rétta samstarfsaðilans. Svæðisbundin vernd þýðir að skráð fyrirspurn er áfram þín."
+      },
+      "item6": {
+        "title": "Einn tengiliður",
+        "desc": "Eitt teymi sér um reikninginn þinn, tæknilegar spurningar og pantanir. Engin biðröð, engin miðanúmer, engin færsla á milli."
+      }
+    },
+    "process": {
+      "tag": "HVERNIG ÞAÐ VIRKAR",
+      "title": "Fjögur skref. Tveir virkir dagar.",
+      "description": "Umsóknin er vísvitandi stutt. Við viljum tala fljótt, ekki safna eyðublöðum.",
+      "step1": {
+        "number": "01",
+        "title": "Sækja um",
+        "desc": "Stutt eyðublað á tengiliðasíðunni. Tvær mínútur. Segðu okkur frá teiknistofunni þinni eða fyrirtækinu, hvar þú starfar og að hverju þú vinnur."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Yfirferð",
+        "desc": "Við komum til baka innan tveggja virkra daga. Yfirleitt með viðeigandi leið, stundum með nokkrum spurningum, stundum með mótboði."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Innleiðing",
+        "desc": "Gáttarinnskráning, safnsaðgangur, 30 mínútna upphafsfundur með samstarfsteyminu okkar og fyrsta sýnishornssendingin þín."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Sjósetning",
+        "desc": "Bjóddu fyrsta verkefnið með trade-verði til staðar. Áframhaldandi stuðningur, kennsla og tilboðsstjórnun þaðan í frá."
+      }
+    },
+    "resources": {
+      "tag": "TRADE-AUÐLINDIR",
+      "title": "Skjöl, þegar þú þarft.",
+      "description": "Samstarfsgáttin opnast við innleiðingu. Hlutirnir hér að neðan eru tiltækir áður en þú sækir um, svo þú getir metið áætlunina á þínum hraða.",
+      "partnerPack": "Samstarfsáætlunarpakki (PDF)",
+      "brandGuidelines": "Vörumerkja- og markaðsleiðbeiningar (PDF)",
+      "sampleKit": "Biðja um líkamlegan sýnaspakka",
+      "bimCad": "Aðgangur að BIM/CAD-safni (eftir innleiðingu)",
+      "caseStudies": "Tilviksrannsóknir og viðmiðunarverkefni",
+      "pricing": "Trade-verðbygging (eftir staðfestingu á samspili)"
+    },
+    "cta": {
+      "title": "Tilbúin að gerast samstarfsaðili Re-Sound?",
+      "subtitle": "Eitt eyðublað, tveir virkir dagar, og þú ert inni.",
+      "primary": "Sækja um núna",
+      "secondary": "Tölum fyrst"
+    }
+  },
+  "whereToBuyPage": {
+    "hero": {
+      "tag": "HVAR Á AÐ SJÁ OG KAUPA",
+      "title": "Sjáðu það. Heyrðu það. Pantaðu það.",
+      "tagline": "Staðirnir þar sem þú upplifir Re-Sound — og leiðirnar til að taka það heim.",
+      "description": "Re-Sound er selt beint í Belgíu og í gegnum vaxandi net söluaðila og samstarfsaðila um alla Evrópu. Listinn hér að neðan sýnir hvar á að finna vörurnar persónulega — og hvað skal gera þegar enginn sýningarsalur er enn í nágrenninu."
+    },
+    "hq": {
+      "tag": "SÝNINGARSALUR HÖFUÐSTÖÐVA",
+      "title": "Beveren-Waas, Belgía",
+      "subtitle": "Heimastöð okkar. Líttu við.",
+      "description": "Öll plötulínan og allar þrjár klefastærðir eru uppsettar og hljóðlega virkar. Komdu og heyrðu muninn á efnunum, sestu inn í Modular XL með kaffi og taktu samtal um verkefnið þitt við þá sem hönnuðu línuna.",
+      "addressLabel": "Heimilisfang",
+      "addressLine1": "STRETCH-BE BV (Re-Sound)",
+      "addressLine2": "Gentseweg 309 A3",
+      "addressLine3": "9120 Beveren-Waas, Belgía",
+      "hoursLabel": "Opnunartími",
+      "hoursValue": "Mán–fös, 09:00–17:00 · eftir samkomulagi",
+      "contactLabel": "Tengiliður",
+      "phoneValue": "+32 3 284 68 18",
+      "emailValue": "info@re-sound.be",
+      "experienceTitle": "Hvað þú getur upplifað hér",
+      "experience1": "Lifandi sýningar á hverri plötufjölskyldu — Interior, Solid, Divide, rWood, rPET",
+      "experience2": "Allar þrjár klefastærðir uppsettar: Solo Flex, Duo, Modular XL",
+      "experience3": "Efnis- og áferðarsamanburður hlið við hlið",
+      "experience4": "Hljóðmæling samkvæmt beiðni",
+      "ctaPrimary": "Bóka heimsókn",
+      "ctaSecondary": "Leiðarlýsing"
+    },
+    "partners": {
+      "tag": "SAMSTARFSNET",
+      "title": "Vaxandi evrópskt net.",
+      "description": "Við erum að byggja upp net samstarfsaðila-sýningarsala ársfjórðung eftir ársfjórðungi. Listinn hér að neðan sýnir markaði þar sem þú getur þegar séð Re-Sound hjá söluaðila eða samstarfsaðila. Ef þú sérð ekki landið þitt enn, dekka valkostirnir hér að neðan flestar þarfir án þess að taka flug.",
+      "statusActive": "Virkir samstarfssýningarsalir",
+      "statusComingSoon": "Á leiðinni í ár",
+      "comingSoon": "Listinn yfir samstarfsnetið fer í loftið árið 2026 eftir því sem samningar staðfestast. Þangað til: hafðu samband við okkur og við bendum þér á nálægasta valkostinn.",
+      "ctaTitle": "Ertu söluaðili eða útboðari?",
+      "ctaDescription": "Við erum að stækka samstarfsnetið virkjandi. Ef þú vilt hýsa Re-Sound í sýningarsalnum þínum eða vera fulltrúi vörumerkisins á markaðnum þínum, þá tölum við gjarnan.",
+      "ctaButton": "Gerast samstarfsaðili"
+    },
+    "alternatives": {
+      "tag": "KEMURÐU EKKI Í PERSÓNU?",
+      "title": "Þrjár aðrar leiðir til að upplifa Re-Sound.",
+      "description": "Flestar hljóðákvarðanir krefjast ekki persónulegrar heimsóknar — en hver ákvörðun batnar með líkamlegum sýnishornum eða raunverulegu samtali. Veldu það sem hentar þeirri stöðu sem þú ert í.",
+      "samples": {
+        "tag": "ÓKEYPIS",
+        "title": "Sýnaspakki",
+        "desc": "A4-sýnishorn af hverri plötufjölskyldu send með pósti. Pakkinn dekkur Interior, Solid, Divide, rWood og rPET, með hverri áferð innifalinni. Sent innan 3 virkra daga um alla ESB.",
+        "cta": "Biðja um sýnaspakka"
+      },
+      "video": {
+        "tag": "BEINT",
+        "title": "Myndbandsskoðun á sýningarsal",
+        "desc": "30 mínútna lifandi ganga um HQ-sýningarsalinn með einhverjum úr hönnunarteyminu. Gagnlegt fyrir áferðarval, sérverkefnaspurningar og að sýna línuna fyrir fjarstöddu viðskiptavinateymi.",
+        "cta": "Bóka myndbandsskoðun"
+      },
+      "onsite": {
+        "tag": "EFTIR SAMKOMULAGI",
+        "title": "Kynning á staðnum",
+        "desc": "Við komum með plötur og færanlegt klefasýnishorn á skrifstofuna þína. Tiltækt að jafnaði í Belgíu, Hollandi, Lúxemborg og Norður-Frakklandi. Lengra í burtu með skipulagðri ferð.",
+        "cta": "Skipuleggja kynningu"
+      }
+    },
+    "contact": {
+      "tag": "TALA VIÐ SÖLU",
+      "title": "Stærra verkefni? Dreifingarfyrirspurn?",
+      "description": "Fyrir margra hæða útbreiðslu, dreifingarfyrirspurnir eða allt sem hagnast af beinu samtali, er teymið okkar fljótlegasta leiðin. Við svörum símanum.",
+      "phoneLabel": "Sími",
+      "phoneValue": "+32 3 284 68 18",
+      "emailLabel": "Tölvupóstur",
+      "emailValue": "info@re-sound.be",
+      "hoursLabel": "Tími",
+      "hoursValue": "Mán–fös, 09:00–17:00 CET"
+    },
+    "cta": {
+      "title": "Viltu koma og sjá það?",
+      "subtitle": "Bókaðu heimsókn í HQ, biddu um sýnishorn eða skipuleggðu kynningu á staðnum — það sem hentar best.",
+      "primary": "Bóka heimsókn",
+      "secondary": "Biðja um sýnishorn"
     }
   }
 }

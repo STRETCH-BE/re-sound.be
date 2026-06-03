@@ -39,7 +39,11 @@
     "duoTitle": "Duo Two-Configuration Acoustic Soundbooth | Re-Sound",
     "duoDescription": "One soundbooth, two configurations: Flex seats two for a focused meeting; Work gives one person a full-width desk. 2 m² footprint, electric desk, 230V power, full ventilation. Re-Sound acoustic range.",
     "modularXlTitle": "Modular XL Scalable Acoustic Meeting Pod | Re-Sound",
-    "modularXlDescription": "Scalable acoustic meeting pod. Base accommodates 6, expandable to 10 in 90-cm segments. 25.9 dB(A) speech reduction, full A/V provisions, accessible-by-design entry."
+    "modularXlDescription": "Scalable acoustic meeting pod. Base accommodates 6, expandable to 10 in 90-cm segments. 25.9 dB(A) speech reduction, full A/V provisions, accessible-by-design entry.",
+    "partnerTitle": "Partner programme · trade and dealer programme",
+    "partnerDescription": "Re-Sound trade and partner programme for architects, designers, dealers, and distributors across Europe. Specifier-friendly documentation, regional account protection, and direct support from the people who designed the range.",
+    "whereToBuyTitle": "Where to see and buy Re-Sound",
+    "whereToBuyDescription": "See Re-Sound in person at our Beveren-Waas headquarters showroom, request a free sample kit, book a live video tour, or arrange an on-site demonstration anywhere in the Benelux."
   },
   "nav": {
     "products": "Products",
@@ -47,7 +51,9 @@
     "sustainability": "Sustainability",
     "contact": "Contact",
     "cta": "Request Quote",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "partner": "Partner",
+    "whereToBuy": "Where to buy"
   },
   "hero": {
     "badge": "100% Circular Acoustics",
@@ -3423,6 +3429,237 @@
           "answer": "Five years on the structural shell — frame, glass, panels, door mechanism — across base and segments. Two years on electronics — fans, sensors, LED driver. Wear parts (door seals, fabric) are excluded. Full terms ship with delivery."
         }
       }
+    }
+  },
+  "partnerPage": {
+    "hero": {
+      "tag": "TRADE AND PARTNER PROGRAMME",
+      "title": "Let's build it together.",
+      "tagline": "A programme for the people who put Re-Sound into real spaces.",
+      "description": "We work directly with architects, interior designers, dealers, and distributors across Europe. Whether you're specifying a single project or building a territory, the programme is set up to make Re-Sound easy to recommend, easy to sell, and easy to support.",
+      "ctaPrimary": "Apply to the programme",
+      "ctaSecondary": "Talk to us first"
+    },
+    "why": {
+      "tag": "WHY PARTNER WITH RE-SOUND",
+      "title": "Six reasons it's worth picking up the phone.",
+      "item1": {
+        "title": "Made in Belgium and Europe",
+        "desc": "Textile lines are made in Belgium; rWood is made in Europe; rPET is made in Poland. Short supply lines, transparent origin, and quality you can stand behind on a tender."
+      },
+      "item2": {
+        "title": "A clear, honest range",
+        "desc": "Three panel families and three booth sizes. No catalogue padding. Easy to specify, easy to remember, easy to combine."
+      },
+      "item3": {
+        "title": "Specifier-ready documentation",
+        "desc": "BIM (.rvt, .ifc), CAD (.dwg), data sheets, fire and acoustic test reports, and EPDs available through the partner portal."
+      },
+      "item4": {
+        "title": "Real margin, real protection",
+        "desc": "Competitive trade pricing tiers and regional account protection on registered leads. We do not race our partners to the bottom of a quote."
+      },
+      "item5": {
+        "title": "Fast turnaround",
+        "desc": "Most orders ship in 4–6 weeks from our European production base. Express options on selected stock items. No twelve-week container waits."
+      },
+      "item6": {
+        "title": "A direct line to the makers",
+        "desc": "One team, one phone number, no layers between you and the people who make the decisions. Technical questions answered the same day."
+      }
+    },
+    "tracks": {
+      "tag": "CHOOSE YOUR TRACK",
+      "title": "Three ways to work with us.",
+      "description": "The right track depends on what you do day-to-day. Pick the one that fits — we'll confirm on the way in.",
+      "specifier": {
+        "badge": "SPECIFIER TRACK",
+        "name": "For architects & designers",
+        "description": "For practices specifying acoustic panels and booths in client projects. No sales obligation — the programme is set up to make Re-Sound easy to specify, with the documentation and samples you need.",
+        "point1": "Free programme membership",
+        "point2": "Free A4 sample kit including every panel family",
+        "point3": "Access to BIM (.rvt, .ifc), CAD (.dwg), and 3D models",
+        "point4": "Direct line to specification support",
+        "point5": "First look at new finishes and product launches",
+        "fee": "Free to join",
+        "apply": "Apply as a specifier"
+      },
+      "dealer": {
+        "badge": "AUTHORISED DEALER",
+        "name": "For resellers & contract dealers",
+        "description": "For contract furniture dealers and acoustic specialists reselling into the European office market. You buy from us at trade pricing and sell on with margin.",
+        "point1": "Trade pricing tiers based on annual volume",
+        "point2": "Regional account protection on registered leads",
+        "point3": "Marketing pack: photography, brand assets, co-branded materials",
+        "point4": "Quarterly product training and roadmap previews",
+        "point5": "Lead routing from re-sound.be to dealers in the customer's region",
+        "fee": "Volume threshold applies",
+        "apply": "Apply as a dealer"
+      },
+      "distributor": {
+        "badge": "DISTRIBUTOR",
+        "name": "For country & regional partners",
+        "description": "For partners taking on a country or region exclusively. Full margin structure, stock and credit terms, and a direct relationship with our leadership team.",
+        "point1": "Territory-exclusive arrangement",
+        "point2": "Full margin structure, stock and credit terms",
+        "point3": "Brand training and sales enablement",
+        "point4": "Joint marketing budget and event support",
+        "point5": "Direct relationship with STRETCH-BE leadership",
+        "fee": "By application",
+        "apply": "Apply as a distributor"
+      }
+    },
+    "benefits": {
+      "tag": "WHAT YOU GET",
+      "title": "The operational picture.",
+      "description": "Programme membership covers more than a price list. Every track gets the operational support that makes recommending Re-Sound an easy decision.",
+      "item1": {
+        "title": "Trade pricing",
+        "desc": "A clear discount structure with no surprise costs. Tiers based on annual volume; price stays stable for the contract year."
+      },
+      "item2": {
+        "title": "Marketing pack",
+        "desc": "High-resolution photography, brand guidelines, finished social and print assets ready for your own channels."
+      },
+      "item3": {
+        "title": "Sample kit",
+        "desc": "Physical samples of every finish across all panel families. Refreshed annually as the range evolves."
+      },
+      "item4": {
+        "title": "BIM/CAD library",
+        "desc": "Specification-ready files for every panel and booth: Revit, IFC, DWG, and 3D models. Updated whenever the range changes."
+      },
+      "item5": {
+        "title": "Lead routing",
+        "desc": "Qualified leads from re-sound.be sent to the right partner. Regional protection means a registered enquiry stays yours."
+      },
+      "item6": {
+        "title": "One contact",
+        "desc": "One team handles your account, technical questions, and orders. No queue, no ticket numbers, no being passed around."
+      }
+    },
+    "process": {
+      "tag": "HOW IT WORKS",
+      "title": "Four steps. Two working days.",
+      "description": "The application is short by design. We want to talk soon, not collect forms.",
+      "step1": {
+        "number": "01",
+        "title": "Apply",
+        "desc": "Short form on the contact page. Two minutes. Tell us about your practice or business, where you operate, and what you're working on."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Review",
+        "desc": "We come back within two working days. Usually with a programme fit, sometimes with a few questions, occasionally with a counter-suggestion."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Onboard",
+        "desc": "Portal credentials, library access, a 30-minute kickoff call with our partner team, and your first sample shipment."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Launch",
+        "desc": "Quote your first project with trade pricing in place. Ongoing support, training, and lead routing from there."
+      }
+    },
+    "resources": {
+      "tag": "TRADE RESOURCES",
+      "title": "Documentation, on tap.",
+      "description": "The partner portal goes live at onboarding. The items below are available before you apply, so you can review the programme on your own terms.",
+      "partnerPack": "Partner programme pack (PDF)",
+      "brandGuidelines": "Brand and marketing guidelines (PDF)",
+      "sampleKit": "Request a physical sample kit",
+      "bimCad": "BIM/CAD library access (after onboarding)",
+      "caseStudies": "Case studies and reference projects",
+      "pricing": "Trade pricing structure (after fit confirmation)"
+    },
+    "cta": {
+      "title": "Ready to partner with Re-Sound?",
+      "subtitle": "One form, two working days, and you're in.",
+      "primary": "Apply now",
+      "secondary": "Talk to us first"
+    }
+  },
+  "whereToBuyPage": {
+    "hero": {
+      "tag": "WHERE TO SEE AND BUY",
+      "title": "See it. Hear it. Order it.",
+      "tagline": "The places to experience Re-Sound — and the ways to bring it home.",
+      "description": "Re-Sound is sold direct in Belgium and through a growing network of dealers and partners across Europe. The list below shows where to find the products in person — and what to do when there isn't a showroom near you yet."
+    },
+    "hq": {
+      "tag": "HEADQUARTERS SHOWROOM",
+      "title": "Beveren-Waas, Belgium",
+      "subtitle": "Our home base. Drop by.",
+      "description": "The full panel range and all three booth sizes are installed and acoustically active. Come hear the difference between materials, sit inside Modular XL with a coffee, and have a conversation about your project with the people who designed the range.",
+      "addressLabel": "Address",
+      "addressLine1": "STRETCH-BE BV (Re-Sound)",
+      "addressLine2": "Gentseweg 309 A3",
+      "addressLine3": "9120 Beveren-Waas, Belgium",
+      "hoursLabel": "Opening hours",
+      "hoursValue": "Mon–Fri, 09:00–17:00 · by appointment",
+      "contactLabel": "Contact",
+      "phoneValue": "+32 3 284 68 18",
+      "emailValue": "info@re-sound.be",
+      "experienceTitle": "What you can experience here",
+      "experience1": "Live demos of every panel family — Interior, Solid, Divide, rWood, rPET",
+      "experience2": "All three booth sizes installed: Solo Flex, Duo, Modular XL",
+      "experience3": "Side-by-side material and finish comparison",
+      "experience4": "Acoustic measurement on request",
+      "ctaPrimary": "Book a visit",
+      "ctaSecondary": "Get directions"
+    },
+    "partners": {
+      "tag": "PARTNER NETWORK",
+      "title": "A growing European network.",
+      "description": "We're building out the partner showroom network quarter by quarter. The list below shows the markets where you can already see Re-Sound at a dealer or partner location. If you don't see your country yet, the alternatives further down cover most needs without a flight.",
+      "statusActive": "Active partner showrooms",
+      "statusComingSoon": "Coming this year",
+      "comingSoon": "The partner network listing goes live in 2026 as agreements are confirmed. For now, contact us and we'll point you at the nearest option.",
+      "ctaTitle": "Are you a dealer or specifier?",
+      "ctaDescription": "We're actively expanding the partner network. If you'd like to host Re-Sound in your showroom or represent the brand in your market, we'd love to talk.",
+      "ctaButton": "Become a partner"
+    },
+    "alternatives": {
+      "tag": "CAN'T VISIT IN PERSON?",
+      "title": "Three other ways to experience Re-Sound.",
+      "description": "Most acoustic decisions don't need an in-person visit — but every decision benefits from physical samples or a real conversation. Pick whichever suits the stage you're at.",
+      "samples": {
+        "tag": "FREE",
+        "title": "Sample kit",
+        "desc": "A4 samples of every panel family delivered by post. The kit covers Interior, Solid, Divide, rWood, and rPET, with every finish included. Posted within 3 working days across the EU.",
+        "cta": "Request a sample kit"
+      },
+      "video": {
+        "tag": "LIVE",
+        "title": "Video showroom tour",
+        "desc": "30-minute live walkthrough of the HQ showroom with someone from the design team. Useful for finish selection, project-specific questions, and showing the range to a remote client team.",
+        "cta": "Book a video tour"
+      },
+      "onsite": {
+        "tag": "BY APPOINTMENT",
+        "title": "On-site demonstration",
+        "desc": "We bring panels and a portable booth sample to your office. Available across Belgium, Netherlands, Luxembourg, and Northern France as standard. Further afield with travel arranged.",
+        "cta": "Arrange a demonstration"
+      }
+    },
+    "contact": {
+      "tag": "TALK TO SALES",
+      "title": "Larger project? Distributor enquiry?",
+      "description": "For multi-floor rollouts, distributor enquiries, or anything that benefits from a direct conversation, our team is the fastest route. We answer the phone.",
+      "phoneLabel": "Phone",
+      "phoneValue": "+32 3 284 68 18",
+      "emailLabel": "Email",
+      "emailValue": "info@re-sound.be",
+      "hoursLabel": "Hours",
+      "hoursValue": "Mon–Fri, 09:00–17:00 CET"
+    },
+    "cta": {
+      "title": "Want to come see it?",
+      "subtitle": "Book a visit at HQ, request samples, or arrange an on-site demo — whichever works.",
+      "primary": "Book a visit",
+      "secondary": "Request samples"
     }
   }
 }
