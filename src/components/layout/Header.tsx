@@ -17,6 +17,8 @@ export default function Header() {
     { href: '/products', label: t('products') },
     { href: '/about', label: t('about') },
     { href: '/sustainability', label: t('sustainability') },
+    { href: '/where-to-buy', label: t('whereToBuy') },
+    { href: '/partner', label: t('partner') },
     { href: '/contact', label: t('contact') },
   ];
 

@@ -31,6 +31,8 @@ export default function Footer() {
     { href: '/about', label: tNav('about') },
     { href: '/sustainability', label: tNav('sustainability') },
     { href: '/blog', label: 'Blog' },
+    { href: '/where-to-buy', label: tNav('whereToBuy') },
+    { href: '/partner', label: tNav('partner') },
     { href: '/contact', label: tNav('contact') },
   ];
 
