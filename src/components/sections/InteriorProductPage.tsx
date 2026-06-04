@@ -36,12 +36,12 @@ export default function InteriorProductPage() {
 
 
   const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/interior/Resound_datasheet_INTERIOR.pdf' },
-    { id: 'installation-manual', name: tPage('downloads.installationManual'), icon: '📋', file: '/documents/interior/Resound_Installation_guide_Interior.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/interior/acoustic-test-report.pdf' },
-    { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/interior/Resound_Colour_Fabric_guide.pdf' },
-    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/interior/22_03153_01_L-variant.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/interior/Resound_Sustainability_Declaration.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/Interior/Resound_datasheet_INTERIOR.pdf' },
+    { id: 'installation-manual', name: tPage('downloads.installationManual'), icon: '📋', file: '/documents/Interior/Resound_Installation_guide_Interior.pdf' },
+    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/Interior/acoustic-test-report.pdf' },
+    { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/Interior/Resound_Colour_Fabric_guide.pdf' },
+    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/Interior/22_03153_01_L-variant.pdf' },
+    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/Interior/Resound_Sustainability_Declaration.pdf' },
   ];
 
   const handleDownloadClick = (fileUrl: string) => {
