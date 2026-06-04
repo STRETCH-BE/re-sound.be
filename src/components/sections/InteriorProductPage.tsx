@@ -36,7 +36,7 @@ export default function InteriorProductPage() {
 
 
   const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/interior/Resound_datasheet_SOLID.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/interior/Resound_datasheet_INTERIOR.pdf' },
     { id: 'installation-manual', name: tPage('downloads.installationManual'), icon: '📋', file: '/documents/interior/Resound_Installation_guide_Interior.pdf' },
     { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/interior/acoustic-test-report.pdf' },
     { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/interior/Resound_Colour_Fabric_guide.pdf' },
