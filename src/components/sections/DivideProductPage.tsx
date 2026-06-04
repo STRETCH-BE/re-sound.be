@@ -37,8 +37,8 @@ export default function DivideProductPage() {
 
   const downloads = [
     { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/divide/Resound_datasheet_DIVIDE.pdf' },
-    { id: 'configuration-guide', name: 'Configuration Guide', icon: '📋', file: '/documents/divide/configuration-guide.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/divide/acoustic-test-report.pdf' },
+    { id: 'configuration-guide', name: 'Configuration Guide', icon: '📋', file: '/documents/divide/Resound_datasheet_DIVIDE.pdf' },
+    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/divide/Resound_datasheet_DIVIDE.pdf' },
     { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/divide/Resound_Colour_Fabric_guide.pdf' },
     { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/divide/22_03153_01_L-variant.pdf' },
     { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/divide/Resound_Sustainability_Declaration.pdf' },
