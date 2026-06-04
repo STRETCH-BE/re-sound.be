@@ -60,10 +60,10 @@ export default function RWoodPerfProductPage() {
 
 
   const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-perf/product-data-sheet.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rWood - Perf/rWood-Perf_datasheet.pdf' },
     { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rwood-perf/installation-guide.pdf' },
     { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-perf/acoustic-test-report.pdf' },
-    { id: 'perforation-patterns', name: 'Perforation Patterns', icon: '🔘', file: '/documents/rwood-perf/perforation-patterns.pdf' },
+    { id: 'perforation-patterns', name: 'Perforation Patterns', icon: '🔘', file: '/documents/rWood - Perf/rWood-Finishes_chart.pdf' },
     { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-perf/fire-certificate.pdf' },
     { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-perf/sustainability-declaration.pdf' },
   ];
