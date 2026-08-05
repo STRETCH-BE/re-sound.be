@@ -112,10 +112,10 @@
       "name": "Voor- en achternaam",
       "email": "jij@email.com",
       "companyEmail": "jij@bedrijf.com",
-      "phone": "+31 ...",
+      "phone": "+32 ...",
       "company": "Je bedrijf",
       "address": "Straat, postcode, plaats",
-      "country": "Nederland",
+      "country": "België",
       "message": "Beschrijf je project — oppervlakte, locatie, alles wat nuttig is..."
     },
     "required": "*",
