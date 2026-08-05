@@ -1,70 +1,66 @@
-/**
- * Shared SEO helpers.
- *
- * Use these so every page derives its hreflang / canonical URLs from the
- * single source of truth (`src/i18n/config.ts`). Adding a new locale to
- * `locales` will automatically extend hreflang coverage everywhere.
- */
-import { locales, localeFullCodes, defaultLocale, type Locale } from '@/i18n/config';
+// ============================================================================
+// SEO helpers — DOMAIN-AWARE canonical + hreflang alternates.
+// Each locale lives on its own domain with unprefixed URLs, so:
+//   canonical  → https://<locale-domain><route>
+//   hreflang   → one entry per locale pointing at that locale's DOMAIN
+//   x-default  → the default-locale (en) domain
+// Derives entirely from i18n/config: adding/changing a locale or domain needs
+// no change here.
+// ============================================================================
+import type { Metadata } from 'next';
+import {
+  locales,
+  defaultLocale,
+  localeFullCodes,
+  originForLocale,
+  type Locale,
+} from '@/i18n/config';
+
+/** Normalize a route to a clean, leading-slash path with no trailing slash. */
+function normalizeRoute(route: string): string {
+  if (!route || route === '/') return '';
+  return ('/' + route.replace(/^\/+|\/+$/g, '')).replace(/\/+/g, '/');
+}
 
 /**
- * Build the `languages` map for `Metadata.alternates`.
- *
- * Returns one entry per configured locale, pointing at the same route
- * under each locale prefix, plus an `x-default` entry pointing at the
- * English version. Google requires `x-default` when there's no clear
- * default locale for international users — without it, GSC's
- * International Targeting report flags every page as ambiguous.
- *
- *   buildLanguageAlternates('/about')
- *   →  { en: '/en/about', nl: '/nl/about', ..., 'x-default': '/en/about' }
+ * Absolute base URL of a locale's own domain (no trailing slash), e.g.
+ * "https://stretchplafond.nl". Use `${localeBase(locale)}/products` wherever
+ * `${siteUrl}/${locale}/products` was used before.
  */
-export function buildLanguageAlternates(
-  route: string
-): Record<string, string> {
-  // Normalise route: ensure leading slash, no trailing slash (except for "/")
-  const cleanRoute =
-    route === '' || route === '/' ? '' : route.startsWith('/') ? route : `/${route}`;
+export function localeBase(locale: Locale): string {
+  return originForLocale(locale);
+}
+
+/** Absolute URL for a (locale, route) pair, e.g. https://stretchplafond.nl/products. */
+export function buildCanonical(locale: Locale, route: string): string {
+  // Home resolves to the bare origin; every other route is origin + path.
+  return `${originForLocale(locale)}${normalizeRoute(route)}`;
+}
+
+/**
+ * hreflang alternates for a route: one entry per locale (keyed by BCP 47 code,
+ * pointing at that locale's domain) plus x-default pointing at the
+ * default-locale domain.
+ */
+export function buildAlternates(locale: Locale, route: string): Metadata['alternates'] {
+  const languages: Record<string, string> = {};
+  for (const l of locales) {
+    languages[localeFullCodes[l] ?? l] = buildCanonical(l, route);
+  }
+  languages['x-default'] = buildCanonical(defaultLocale, route);
 
   return {
-    ...Object.fromEntries(
-      locales.map((loc) => [loc, `/${loc}${cleanRoute}`])
-    ),
-    // EN is the default for unspecified locales (matches `defaultLocale`).
-    'x-default': `/${defaultLocale}${cleanRoute}`,
+    canonical: buildCanonical(locale, route),
+    languages,
   };
 }
 
-/**
- * Build the full `alternates` object (canonical + languages) for a page.
- *
- *   buildAlternates('en', '/products/rwood-groove')
- */
-export function buildAlternates(locale: Locale | string, route: string) {
-  const cleanRoute =
-    route === '' || route === '/' ? '' : route.startsWith('/') ? route : `/${route}`;
-  return {
-    canonical: `/${locale}${cleanRoute}`,
-    languages: buildLanguageAlternates(cleanRoute),
-  };
-}
-
-/**
- * Map a routing-locale (e.g. 'en') to the OpenGraph `locale` value
- * (e.g. 'en_BE'). OpenGraph spec uses language_TERRITORY with an
- * underscore separator; our `localeFullCodes` use hyphens (BCP 47).
- */
-export function ogLocale(locale: Locale | string): string {
-  const code = (localeFullCodes as Record<string, string>)[locale];
-  return code ? code.replace('-', '_') : 'en_BE';
-}
-
-/**
- * Build the `alternateLocale` array for OpenGraph — every locale except
- * the current one, in the same underscored language_TERRITORY format.
- */
-export function ogAlternateLocales(locale: Locale | string): string[] {
-  return locales
+/** OG locale + alternateLocale for a given active locale (nl_BE style). */
+export function buildOgLocales(locale: Locale): { ogLocale: string; alternate: string[] } {
+  const fmt = (code: string) => code.replace('-', '_');
+  const ogLocale = fmt(localeFullCodes[locale] ?? 'en');
+  const alternate = locales
     .filter((l) => l !== locale)
-    .map((l) => localeFullCodes[l].replace('-', '_'));
+    .map((l) => fmt(localeFullCodes[l] ?? l));
+  return { ogLocale, alternate };
 }

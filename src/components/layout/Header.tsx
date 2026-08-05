@@ -1,219 +1,124 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+// Sticky site header: black utility bar (reseller/training/phone/language) + a
+// white nav row. Solutions and Technical each open a rich three-panel mega menu
+// (see MegaMenu). "Free quote" opens the lead modal.
+import { useEffect, useState } from 'react';
 import { Link, usePathname } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
+import { ChevronDown, ArrowUpRight } from 'lucide-react';
+import { contact } from '@/lib/site-config';
+import { ModalButton } from '@/components/ui/ModalButton';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileMenu from './MobileMenu';
+import MegaMenu, { useSolutionsMenu, useTechnicalMenu } from './MegaMenu';
+import { analytics } from '@/lib/analytics';
+
+type OpenMenu = 'solutions' | 'technical' | null;
 
 export default function Header() {
-  const t = useTranslations('nav');
+  const t = useTranslations('common');
+  const solutionsMenu = useSolutionsMenu();
+  const technicalMenu = useTechnicalMenu();
   const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [open, setOpen] = useState<OpenMenu>(null);
 
-  // Navigation links
-  const navLinks = [
-    { href: '/products', label: t('products') },
-    { href: '/about', label: t('about') },
-    { href: '/sustainability', label: t('sustainability') },
-    { href: '/where-to-buy', label: t('whereToBuy') },
-    { href: '/partner', label: t('partner') },
-    { href: '/contact', label: t('contact') },
-  ];
-
-  // Handle scroll effect
+  // Close any open mega menu whenever the route changes.
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
+    setOpen(null);
   }, [pathname]);
 
-  // Prevent body scroll when mobile menu is open
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isMobileMenuOpen]);
+  const close = () => setOpen(null);
 
   return (
-    <>
-      <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
-        {/* Logo */}
-        <Link href="/" className="logo">
-          Re<span>—</span>Sound
+    <header
+      onMouseLeave={close}
+      style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 60,
+        background: 'rgba(255,255,255,.96)',
+        backdropFilter: 'blur(10px)',
+        borderBottom: '1px solid var(--border)',
+      }}
+    >
+      {/* Utility bar */}
+      <div style={{ background: 'var(--black)', color: '#fff' }}>
+        <div className="container" style={{ height: 42, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 11.5, letterSpacing: '.16em', textTransform: 'uppercase', fontWeight: 600 }}>
+            <span style={{ width: 8, height: 8, background: 'var(--red)', display: 'inline-block' }} />
+            <span>{t('handMadeInBelgium')}</span>
+          </div>
+          <div className="only-desktop" style={{ display: 'flex', alignItems: 'center', gap: 26, fontSize: 11.5, letterSpacing: '.12em', textTransform: 'uppercase', fontWeight: 600 }}>
+            <Link href="/partners" className="lnk">{t('nav.reseller')}</Link>
+            <Link href="/installer-training" className="lnk">{t('nav.training')}</Link>
+            <Link href="/portal" className="lnk">{t('nav.clientLogin')}</Link>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <a href={contact.phoneHref} className="lnk" style={{ color: 'var(--red)' }} onClick={() => analytics.phoneClick('header_utility')}>
+              {contact.phoneDisplay}
+            </a>
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </div>
+
+      {/* Main nav */}
+      <div className="container" style={{ height: 'var(--header-h)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Link href="/" aria-label="STRETCH — home" onMouseEnter={close} style={{ display: 'flex', alignItems: 'baseline', gap: 2 }}>
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 27, letterSpacing: '-.02em', color: 'var(--black)' }}>STRETCH</span>
+          <span style={{ color: 'var(--red)', fontWeight: 900, fontSize: 16 }}>®</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <ul className="nav-links">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={pathname === link.href ? 'active' : ''}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav className="only-desktop" aria-label="Primary" style={{ display: 'flex', alignItems: 'center', gap: 30, fontSize: 13.5, fontWeight: 600, letterSpacing: '.03em', textTransform: 'uppercase' }}>
+          <NavDrop label={t('nav.solutions')} href="/products" active={open === 'solutions'} onEnter={() => setOpen('solutions')} />
+          <NavDrop label={t('nav.technical')} href="/products" active={open === 'technical'} onEnter={() => setOpen('technical')} />
+          <Link href="/inspiration" className="lnk" onMouseEnter={close}>{t('nav.inspiration')}</Link>
+          <Link href="/partners" className="lnk" onMouseEnter={close}>{t('nav.partners')}</Link>
+          <Link href="/faq" className="lnk" onMouseEnter={close}>{t('nav.faq')}</Link>
+          <Link href="/contact" className="lnk" onMouseEnter={close}>{t('nav.contact')}</Link>
+        </nav>
 
-        {/* Desktop Actions */}
-        <div className="nav-actions">
-          <LanguageSwitcher />
-          <Link href="/contact" className="nav-cta">
-            {t('cta')}
-          </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          <ModalButton type="quote" source="header" trackQuote className="btn btn--primary btn--sm only-desktop">
+            {t('cta.freeQuote')} <ArrowUpRight size={14} />
+          </ModalButton>
+          <MobileMenu />
         </div>
+      </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className={`mobile-menu-btn ${isMobileMenuOpen ? 'active' : ''}`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen}
+      {/* Mega menus */}
+      {open && (
+        <div
+          className="only-desktop"
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '100%',
+            background: '#fff',
+            borderTop: '1px solid var(--border)',
+            boxShadow: 'var(--shadow-md)',
+            zIndex: 60,
+          }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
+          <MegaMenu config={open === 'solutions' ? solutionsMenu : technicalMenu} onNavigate={close} />
+        </div>
+      )}
+    </header>
+  );
+}
 
-      {/* Mobile Navigation */}
-      <MobileMenu
-        isOpen={isMobileMenuOpen}
-        onClose={() => setIsMobileMenuOpen(false)}
-        navLinks={navLinks}
-      />
-
-      <style jsx>{`
-        .nav {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 100;
-          padding: 1.5rem 4rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background: transparent;
-          transition: all 0.4s ease;
-        }
-
-        .nav.scrolled {
-          background: rgba(253, 254, 255, 0.95);
-          backdrop-filter: blur(10px);
-          box-shadow: 0 2px 40px rgba(0, 0, 0, 0.05);
-        }
-
-        .nav-links {
-          display: flex;
-          gap: 3rem;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-
-        .nav-links a {
-          text-decoration: none;
-          color: var(--deep-blue);
-          font-size: 0.95rem;
-          font-weight: 500;
-          position: relative;
-          transition: color 0.3s ease;
-        }
-
-        .nav-links a::after {
-          content: '';
-          position: absolute;
-          bottom: -4px;
-          left: 0;
-          width: 0;
-          height: 2px;
-          background: var(--brand-blue);
-          transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-          width: 100%;
-        }
-
-        .nav-actions {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem;
-        }
-
-        .mobile-menu-btn {
-          display: none;
-          flex-direction: column;
-          gap: 5px;
-          background: none;
-          border: none;
-          cursor: pointer;
-          padding: 5px;
-          z-index: 101;
-        }
-
-        .mobile-menu-btn span {
-          width: 24px;
-          height: 2px;
-          background: var(--deep-blue);
-          transition: all 0.3s ease;
-          display: block;
-        }
-
-        .mobile-menu-btn.active span:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        .mobile-menu-btn.active span:nth-child(2) {
-          opacity: 0;
-        }
-
-        .mobile-menu-btn.active span:nth-child(3) {
-          transform: rotate(-45deg) translate(5px, -5px);
-        }
-
-        @media (max-width: 992px) {
-          .nav {
-            padding: 1rem 1.5rem;
-          }
-
-          .nav-links {
-            display: none;
-          }
-
-          .nav-actions {
-            display: none;
-          }
-
-          .mobile-menu-btn {
-            display: flex;
-          }
-        }
-
-        @media (max-width: 576px) {
-          .nav {
-            padding: 1rem;
-          }
-        }
-      `}</style>
-    </>
+// Nav item that is both a link (to its overview) and a mega-menu trigger on hover.
+function NavDrop({ label, href, active, onEnter }: { label: string; href: string; active: boolean; onEnter: () => void }) {
+  return (
+    <div
+      onMouseEnter={onEnter}
+      style={{ display: 'flex', alignItems: 'center', gap: 6, height: 'var(--header-h)', cursor: 'pointer', color: active ? 'var(--red)' : 'var(--black)' }}
+    >
+      <Link href={href} className="lnk" aria-expanded={active} style={{ color: 'inherit' }}>
+        {label}
+      </Link>
+      <ChevronDown size={13} style={{ transition: 'transform .2s', transform: active ? 'rotate(180deg)' : 'none', color: active ? 'var(--red)' : 'var(--text-faint-2)' }} />
+    </div>
   );
 }

@@ -1,135 +1,205 @@
 'use client';
 
+// Mobile navigation drawer (shown below 860px via the .only-mobile helper).
+// Full-screen overlay with the nav links, product list, and a quote CTA.
+import { useEffect, useState } from 'react';
+import { Link, usePathname } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
-import LanguageSwitcher from './LanguageSwitcher';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { products } from '@/lib/products';
+import { contact } from '@/lib/site-config';
+import { useLeadModal } from '@/components/LeadGenModal';
+import { analytics } from '@/lib/analytics';
 
-interface MobileMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
-  navLinks: { href: string; label: string }[];
-}
+export default function MobileMenu() {
+  const t = useTranslations('common');
+  const tc = useTranslations('catalog');
+  const pathname = usePathname();
+  const { open: openModal } = useLeadModal();
+  const [open, setOpen] = useState(false);
 
-export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
-  const t = useTranslations('nav');
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
 
   return (
-    <div className={`mobile-nav ${isOpen ? 'active' : ''}`}>
-      {navLinks.map((link, index) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className="mobile-nav-link"
-          onClick={onClose}
-          style={{ animationDelay: `${index * 0.1}s` }}
+    <div className="only-mobile" style={{ display: 'none' }}>
+      <button
+        type="button"
+        aria-label={t('openMenu')}
+        aria-expanded={open}
+        onClick={() => setOpen(true)}
+        style={{
+          background: 'none',
+          border: 'none',
+          cursor: 'pointer',
+          padding: 6,
+          display: 'flex',
+          color: 'var(--black)',
+        }}
+      >
+        <Menu size={26} />
+      </button>
+
+      {open && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 200,
+            background: '#fff',
+            display: 'flex',
+            flexDirection: 'column',
+            overflowY: 'auto',
+          }}
         >
-          {link.label}
-        </Link>
-      ))}
+          <div
+            className="container"
+            style={{
+              height: 'var(--header-h)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              borderBottom: '1px solid var(--border)',
+            }}
+          >
+            <span style={{ display: 'flex', alignItems: 'baseline', gap: 2 }}>
+              <span
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontWeight: 900,
+                  fontSize: 24,
+                  letterSpacing: '-.02em',
+                }}
+              >
+                STRETCH
+              </span>
+              <span style={{ color: 'var(--red)', fontWeight: 900, fontSize: 14 }}>®</span>
+            </span>
+            <button
+              type="button"
+              aria-label={t('closeMenu')}
+              onClick={() => setOpen(false)}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 6, display: 'flex' }}
+            >
+              <X size={26} />
+            </button>
+          </div>
 
-      <div className="mobile-nav-actions">
-        <LanguageSwitcher />
-        <Link href="/contact" className="nav-cta" onClick={onClose}>
-          {t('cta')}
-        </Link>
-      </div>
+          <nav
+            className="container"
+            style={{ paddingTop: 28, paddingBottom: 28, display: 'flex', flexDirection: 'column' }}
+          >
+            {[
+              { href: '/products', label: t('nav.solutions') },
+              { href: '/inspiration', label: t('nav.inspiration') },
+              { href: '/partners', label: t('nav.partners') },
+              { href: '/installer-training', label: t('nav.training') },
+              { href: '/faq', label: t('nav.faq') },
+              { href: '/about', label: t('nav.about') },
+              { href: '/contact', label: t('nav.contact') },
+              { href: '/portal', label: t('nav.clientLogin') },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontWeight: 800,
+                  fontSize: 26,
+                  textTransform: 'uppercase',
+                  letterSpacing: '-.02em',
+                  padding: '13px 0',
+                  borderBottom: '1px solid var(--border)',
+                }}
+              >
+                {item.label}
+              </Link>
+            ))}
 
-      <style jsx>{`
-        .mobile-nav {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: var(--warm-white);
-          z-index: 99;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 2rem;
-          opacity: 0;
-          pointer-events: none;
-          transition: opacity 0.3s ease;
-        }
+            <div
+              style={{
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: '.18em',
+                textTransform: 'uppercase',
+                color: 'var(--text-faint-2)',
+                margin: '26px 0 12px',
+              }}
+            >
+              {t('nav.allSolutions')}
+            </div>
+            {products.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/products/${p.slug}`}
+                style={{ padding: '9px 0', fontSize: 15, fontWeight: 600, color: 'var(--text-muted)' }}
+              >
+                {tc(`${p.key}.name`)}
+              </Link>
+            ))}
 
-        .mobile-nav.active {
-          opacity: 1;
-          pointer-events: all;
-        }
+            <div
+              style={{
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: '.18em',
+                textTransform: 'uppercase',
+                color: 'var(--text-faint-2)',
+                margin: '26px 0 12px',
+              }}
+            >
+              {t('nav.technical')}
+            </div>
+            {[
+              { href: '/samples', label: 'Request samples' },
+              { href: '/blog', label: 'Guides & specs' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                style={{ padding: '9px 0', fontSize: 15, fontWeight: 600, color: 'var(--text-muted)' }}
+              >
+                {item.label}
+              </Link>
+            ))}
 
-        .mobile-nav :global(.mobile-nav-link) {
-          font-family: var(--font-heading);
-          font-size: 1.5rem;
-          font-weight: 600;
-          color: var(--deep-blue);
-          text-decoration: none;
-          transition: color 0.3s ease;
-          opacity: 0;
-          transform: translateY(20px);
-        }
-
-        .mobile-nav.active :global(.mobile-nav-link) {
-          animation: fadeInUp 0.5s ease forwards;
-        }
-
-        @keyframes fadeInUp {
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .mobile-nav :global(.mobile-nav-link):hover {
-          color: var(--brand-blue);
-        }
-
-        .mobile-nav-actions {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1.5rem;
-          margin-top: 1rem;
-        }
-
-        .mobile-nav :global(.nav-cta) {
-          background: var(--brand-blue);
-          color: white;
-          padding: 0.8rem 1.8rem;
-          border-radius: 50px;
-          text-decoration: none;
-          font-weight: 500;
-          font-size: 0.9rem;
-          transition: all 0.3s ease;
-        }
-
-        .mobile-nav :global(.nav-cta):hover {
-          background: var(--brand-blue-dark);
-        }
-
-        @media (max-width: 992px) {
-          .mobile-nav {
-            display: flex;
-          }
-        }
-
-        @media (max-width: 576px) {
-          .mobile-nav :global(.mobile-nav-link) {
-            font-size: 1.3rem;
-          }
-        }
-
-        @media (max-height: 500px) and (orientation: landscape) {
-          .mobile-nav {
-            padding-top: 4rem;
-            gap: 1rem;
-          }
-
-          .mobile-nav :global(.mobile-nav-link) {
-            font-size: 1.1rem;
-          }
-        }
-      `}</style>
+            <button
+              type="button"
+              className="btn btn--primary"
+              style={{ marginTop: 28, justifyContent: 'center' }}
+              onClick={() => {
+                setOpen(false);
+                analytics.quoteClick(undefined, 'mobile_menu');
+                openModal('quote', { source: 'mobile_menu' });
+              }}
+            >
+              {t('cta.requestQuote')} <ArrowUpRight size={16} />
+            </button>
+            <a
+              href={contact.phoneHref}
+              onClick={() => analytics.phoneClick('mobile_menu')}
+              style={{
+                marginTop: 18,
+                textAlign: 'center',
+                fontFamily: 'var(--font-display)',
+                fontWeight: 800,
+                fontSize: 20,
+                color: 'var(--black)',
+              }}
+            >
+              {contact.phoneDisplay}
+            </a>
+          </nav>
+        </div>
+      )}
     </div>
   );
 }

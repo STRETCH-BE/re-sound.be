@@ -1,79 +1,79 @@
-/**
- * Granular cookie-consent state.
- *
- * Three categories:
- *  - necessary  (always true; site cannot function without them)
- *  - analytics  (GA4, Microsoft Clarity, etc.)
- *  - marketing  (Meta Pixel, Bing UET, retargeting)
- *
- * Persisted in localStorage as JSON under `consent-preferences`.
- * Change-events are broadcast on `window` as `CustomEvent<ConsentPreferences>`
- * named `consent-update`. Components listen for that event AND read the stored
- * value on mount.
- *
- * NOTE: the layout also writes a small inline script that calls
- * `gtag('consent', 'default'/'update', ...)` directly from this same
- * localStorage value, so the consent state must remain stable across reloads.
- *
- * Version bumps invalidate stored consent and prompt the user again — bump
- * `CONSENT_VERSION` whenever categories change.
- */
+// ============================================================================
+// CONSENT — state, persistence and events for the cookie banner + Consent
+// Mode v2. Stored in localStorage under `consent-preferences`. Bumping
+// CONSENT_VERSION invalidates stored preferences and re-prompts everyone.
+// ============================================================================
 
-export const CONSENT_VERSION = 1;
+export const CONSENT_VERSION = 1 as const;
 export const CONSENT_STORAGE_KEY = 'consent-preferences';
-export const CONSENT_EVENT = 'consent-update';
-export const CONSENT_OPEN_EVENT = 'consent-open-banner';
 
-export interface ConsentPreferences {
+// Custom DOM events used to coordinate banner <-> analytics without a library.
+export const CONSENT_UPDATE_EVENT = 'consent-update';
+export const CONSENT_OPEN_BANNER_EVENT = 'consent-open-banner';
+
+export type ConsentPreferences = {
+  version: number;
   necessary: true;
   analytics: boolean;
   marketing: boolean;
-  version: number;
-  timestamp: number;
-}
+  timestamp: string; // ISO
+};
 
+export const DENIED_PREFERENCES: Omit<ConsentPreferences, 'timestamp'> = {
+  version: CONSENT_VERSION,
+  necessary: true,
+  analytics: false,
+  marketing: false,
+};
+
+/** Read + validate stored preferences. Returns null if absent/stale/invalid. */
 export function getConsent(): ConsentPreferences | null {
   if (typeof window === 'undefined') return null;
   try {
     const raw = window.localStorage.getItem(CONSENT_STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as ConsentPreferences;
-    // Invalidate if version doesn't match current categories
-    if (parsed.version !== CONSENT_VERSION) return null;
+    if (!parsed || parsed.version !== CONSENT_VERSION) return null;
     return parsed;
   } catch {
     return null;
   }
 }
 
-export function setConsent(
-  preferences: Omit<ConsentPreferences, 'necessary' | 'version' | 'timestamp'>
-): ConsentPreferences {
+/** Persist preferences and broadcast a consent-update event. */
+export function setConsent(prefs: { analytics: boolean; marketing: boolean }): ConsentPreferences {
   const full: ConsentPreferences = {
-    necessary: true,
-    analytics: preferences.analytics,
-    marketing: preferences.marketing,
     version: CONSENT_VERSION,
-    timestamp: Date.now(),
+    necessary: true,
+    analytics: prefs.analytics,
+    marketing: prefs.marketing,
+    timestamp: new Date().toISOString(),
   };
-  if (typeof window !== 'undefined') {
+  try {
     window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(full));
-    window.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: full }));
-    // Push to Google Consent Mode v2 if gtag has loaded
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
-    if (typeof w.gtag === 'function') {
-      w.gtag('consent', 'update', {
-        analytics_storage: full.analytics ? 'granted' : 'denied',
-        ad_storage: full.marketing ? 'granted' : 'denied',
-        ad_user_data: full.marketing ? 'granted' : 'denied',
-        ad_personalization: full.marketing ? 'granted' : 'denied',
-      });
-    }
+  } catch {
+    /* storage may be unavailable (private mode) — still fire the event */
+  }
+  // Push the matching Consent Mode v2 update so GA reacts immediately.
+  try {
+    window.gtag?.('consent', 'update', {
+      analytics_storage: full.analytics ? 'granted' : 'denied',
+      ad_storage: full.marketing ? 'granted' : 'denied',
+      ad_user_data: full.marketing ? 'granted' : 'denied',
+      ad_personalization: full.marketing ? 'granted' : 'denied',
+    });
+  } catch {
+    /* gtag may not be present */
+  }
+  try {
+    window.dispatchEvent(new CustomEvent(CONSENT_UPDATE_EVENT, { detail: full }));
+  } catch {
+    /* no-op */
   }
   return full;
 }
 
-export function openConsentBanner(): void {
-  if (typeof window === 'undefined') return;
-  window.dispatchEvent(new CustomEvent(CONSENT_OPEN_EVENT));
+/** Has the user made any choice yet? */
+export function hasConsentDecision(): boolean {
+  return getConsent() !== null;
 }

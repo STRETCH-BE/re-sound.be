@@ -1,94 +1,43 @@
 'use client';
 
-import Script from 'next/script';
+// Meta (Facebook) Pixel. Gated on the MARKETING consent category. Disabled in
+// the brand brief today (meta_pixel: no) — built per the locked spec and inert
+// unless NEXT_PUBLIC_META_PIXEL_ID is set AND marketing consent is granted.
 import { useEffect, useState } from 'react';
-import {
-  CONSENT_EVENT,
-  getConsent,
-  type ConsentPreferences,
-} from '@/lib/consent';
+import { getConsent, CONSENT_UPDATE_EVENT, type ConsentPreferences } from '@/lib/consent';
 
-const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
-/**
- * Meta (Facebook) Pixel.
- *
- * Meta does not support Google's Consent Mode v2 directly, so the pixel
- * still uses the load-only-after-consent pattern. Gated on the `marketing`
- * category from <CookieConsent />.
- */
 export default function MetaPixel() {
-  const [hasConsent, setHasConsent] = useState(false);
+  const [allowed, setAllowed] = useState(false);
 
   useEffect(() => {
-    const stored = getConsent();
-    if (stored?.marketing) setHasConsent(true);
-
-    const handleConsent = (e: Event) => {
+    const sync = () => setAllowed(Boolean(getConsent()?.marketing));
+    sync();
+    const onUpdate = (e: Event) => {
       const detail = (e as CustomEvent<ConsentPreferences>).detail;
-      if (detail?.marketing) setHasConsent(true);
-      else setHasConsent(false);
+      setAllowed(Boolean(detail?.marketing ?? getConsent()?.marketing));
     };
-
-    window.addEventListener(CONSENT_EVENT, handleConsent);
-    return () => window.removeEventListener(CONSENT_EVENT, handleConsent);
+    window.addEventListener(CONSENT_UPDATE_EVENT, onUpdate);
+    return () => window.removeEventListener(CONSENT_UPDATE_EVENT, onUpdate);
   }, []);
 
-  if (!hasConsent || !META_PIXEL_ID) return null;
+  useEffect(() => {
+    if (!PIXEL_ID || !allowed) return;
+    if (document.getElementById('meta-pixel-script')) return;
+    const s = document.createElement('script');
+    s.id = 'meta-pixel-script';
+    s.innerHTML = `
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '${PIXEL_ID}');
+      fbq('track', 'PageView');
+    `;
+    document.head.appendChild(s);
+  }, [allowed]);
 
-  return (
-    <>
-      <Script id="meta-pixel" strategy="afterInteractive">
-        {`
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '${META_PIXEL_ID}');
-          fbq('track', 'PageView');
-        `}
-      </Script>
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          style={{ display: 'none' }}
-          src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
-          alt=""
-        />
-      </noscript>
-    </>
-  );
-}
-
-// Helper hook for Meta Pixel events
-export function useMetaPixel() {
-  const trackEvent = (eventName: string, params?: Record<string, unknown>) => {
-    if (typeof window === 'undefined') return;
-    const stored = getConsent();
-    if (!stored?.marketing) return;
-    const w = window as unknown as { fbq?: (...args: unknown[]) => void };
-    if (typeof w.fbq === 'function') {
-      w.fbq('track', eventName, params);
-    }
-  };
-
-  const trackCustomEvent = (
-    eventName: string,
-    params?: Record<string, unknown>
-  ) => {
-    if (typeof window === 'undefined') return;
-    const stored = getConsent();
-    if (!stored?.marketing) return;
-    const w = window as unknown as { fbq?: (...args: unknown[]) => void };
-    if (typeof w.fbq === 'function') {
-      w.fbq('trackCustom', eventName, params);
-    }
-  };
-
-  return { trackEvent, trackCustomEvent };
+  return null;
 }
