@@ -1,37 +1,39 @@
 {
-  "name": "stretch-website",
+  "name": "resound-website",
   "version": "1.0.0",
+  "description": "Re-Sound - Circular acoustic solutions from recycled materials",
   "private": true,
-  "description": "STRETCH — production marketing website (Next.js 14, App Router)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@supabase/ssr": "^0.12.0",
-    "@supabase/supabase-js": "^2.110.1",
-    "lucide-react": "^0.383.0",
-    "next": "14.2.15",
-    "next-intl": "^3.21.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "xlsx": "^0.18.5"
-  },
-  "optionalDependencies": {
-    "nodemailer": "^6.9.14",
-    "resend": "^3.5.0"
+    "next": "^14.2.0",
+    "next-intl": "^3.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.10",
-    "@types/nodemailer": "^6.4.15",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "typescript": "^5.5.3"
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18.17.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:STRETCH-BE/re-sound.be.git"
+  },
+  "author": "Re-Sound",
+  "license": "UNLICENSED"
 }

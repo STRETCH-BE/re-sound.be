@@ -1,42 +1,52 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
-// Point the plugin at the i18n request config (getMessages, etc.)
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  poweredByHeader: false,
-  // styled-jsx is bundled with Next.js — no extra config needed.
+  // Image optimization
+  // Previously had `unoptimized: true` which disabled ALL of next/image's
+  // benefits across the site even though every component uses <Image>.
+  // With it removed, Vercel's Image Optimization API now:
+  //   - serves AVIF / WebP based on Accept header (50-80% smaller than JPEG/PNG)
+  //   - resizes per device viewport (no more shipping 1920px hero to phones)
+  //   - lazy-loads off-screen images (deferred via the loading=lazy default)
+  //   - caches optimised variants at the edge for 1 year
+  // Source images >5 MB will still work but the cold-cache first-request will
+  // be slower than ideal — see the re-encode script for the worst offenders.
   images: {
-    // Serve modern formats first; Next falls back automatically.
+    // AVIF first (~30% smaller than WebP at equivalent quality), WebP fallback
     formats: ['image/avif', 'image/webp'],
-    remotePatterns: [
-      // One locale per domain — allow next/image to load assets referenced by
-      // absolute URL from any of the production domains. Keep in sync with
-      // `localeDomains` in src/i18n/config.ts.
-      { protocol: 'https', hostname: 'stretchplafond.com' },
-      { protocol: 'https', hostname: 'stretchplafond.be' },
-      { protocol: 'https', hostname: 'stretchplafond.nl' },
-      { protocol: 'https', hostname: 'stretchplafond.fr' },
-      { protocol: 'https', hostname: 'stretchplafond.pl' },
-      { protocol: 'https', hostname: 'stretchplafond.de' },
-      { protocol: 'https', hostname: 'stretchplafond.es' },
-      { protocol: 'https', hostname: 'stretchplafond.pt' },
-      { protocol: 'https', hostname: 'stretchplafond.dk' },
-      { protocol: 'https', hostname: 'stretchplafond.se' },
-      { protocol: 'https', hostname: 'stretchplafond.no' },
-      { protocol: 'https', hostname: 'stretchplafond.is' },
-    ],
+    // Cache optimised variants at the edge for a year
+    minimumCacheTTL: 31536000,
+    // Default deviceSizes and imageSizes cover this site's responsive needs
   },
-  async headers() {
+
+  // Strict mode for better development
+  reactStrictMode: true,
+
+  // Environment variables available to the browser
+  env: {
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be',
+  },
+
+  // Platform-level redirect for the bare root URL.
+  //
+  // The next-intl middleware should redirect '/' to '/en' on its own, but
+  // on this deployment it isn't (likely a Vercel platform-routing quirk
+  // on the `new.re-sound.be` subdomain). Adding the redirect here makes
+  // Vercel handle it at the edge before any application code runs —
+  // guaranteed to work regardless of middleware state.
+  //
+  // Once the site lives at `re-sound.be` proper, you can leave this in
+  // place: a hard root → /en redirect is the right behaviour for the
+  // 10-locale setup either way.
+  async redirects() {
     return [
       {
-        // Long-cache the immutable OG image responses.
-        source: '/api/og/:path*',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
+        source: '/',
+        destination: '/en',
+        permanent: false,
       },
     ];
   },
