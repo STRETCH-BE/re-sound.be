@@ -1,120 +1,438 @@
-// Privacy policy (/privacy). DRAFTED GDPR-oriented content — flagged in
-// CHANGES.md for review by the client's legal advisor before launch.
-import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
-import { isValidLocale, type Locale } from '@/i18n/config';
-import { siteUrl, brand, contact } from '@/lib/site-config';
-import { pageMetadata } from '@/lib/page-meta';
-import { breadcrumbSchema } from '@/lib/structured-data';
-import JsonLd from '@/components/seo/JsonLd';
-import { localeBase } from '@/lib/seo';
+/* eslint-disable react/no-unescaped-entities */
+import { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  return pageMetadata({ locale: params.locale, route: '/privacy', titleKey: 'privacyTitle', descKey: 'privacyDescription' });
+import { buildAlternates } from '@/lib/seo';
+
+interface PageProps {
+  params: { locale: string };
 }
 
-const UPDATED = 'January 2026';
+export async function generateMetadata({
+  params: { locale },
+}: PageProps): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'legal' });
 
-export default function PrivacyPage({ params }: { params: { locale: string } }) {
-  if (isValidLocale(params.locale)) setRequestLocale(params.locale as Locale);
-  const locale = (isValidLocale(params.locale) ? params.locale : 'en') as Locale;
+  return {
+    title: t('privacy.title'),
+    description: t('privacy.subtitle'),
+    alternates: buildAlternates(locale, '/privacy'),
+    robots: {
+      // Mark as draft — let search engines index the URL (so the cookie banner
+      // link is valid) but signal it's not finalised by not indexing for now.
+      index: false,
+      follow: true,
+    },
+  };
+}
 
-  const crumbs = breadcrumbSchema([
-    { name: 'Home', url: `${localeBase(locale)}` },
-    { name: 'Privacy', url: `${localeBase(locale)}/privacy` },
-  ]);
+export default async function PrivacyPage({ params: { locale } }: PageProps) {
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'legal' });
+
+  const lastUpdatedDate = '2026-05-23';
 
   return (
-    <>
-      <JsonLd data={crumbs} />
-      <section className="container section">
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <div style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '.16em', textTransform: 'uppercase', color: 'var(--red)', marginBottom: 16 }}>Legal</div>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 'clamp(32px,4.6vw,58px)', lineHeight: 0.98, letterSpacing: '-.03em', textTransform: 'uppercase', margin: '0 0 14px' }}>Privacy policy</h1>
-          <p style={{ fontSize: 13.5, color: 'var(--text-faint)', margin: '0 0 clamp(32px,4vw,48px)' }}>Last updated: {UPDATED}</p>
-
-          <div className="prose">
-            <p>
-              This privacy policy explains how {brand.legalName} (&ldquo;{brand.name}&rdquo;,
-              &ldquo;we&rdquo;, &ldquo;us&rdquo;) collects and uses personal data when you visit{' '}
-              {brand.domain} or contact us. We are the data controller for that processing.
-            </p>
-
-            <h2>What we collect</h2>
-            <p>
-              We only collect what we need. When you submit a form on this site — a quote request,
-              sample request, partner application, training booking, call-back request or the contact
-              form — we collect the details you provide, which may include your name, company, email
-              address, phone number, country and the contents of your message.
-            </p>
-            <p>
-              When you browse the site we may also collect standard technical and usage data (such as
-              device, browser and pages viewed) through cookies and similar technologies, but only to
-              the extent you have consented. You can review and change your choices at any time via the
-              &ldquo;Manage cookies&rdquo; link in the footer.
-            </p>
-
-            <h2>Why we use it</h2>
-            <p>
-              We use the details you submit to respond to your enquiry, prepare quotes, process partner
-              and training requests, and provide the products and services you ask about. This
-              processing is based on your request and our legitimate interest in responding to it, and —
-              where applicable — on taking steps to enter into a contract with you.
-            </p>
-            <p>
-              Where you have given consent, we use analytics and marketing technologies to understand
-              how the site is used and to improve it. This processing is based on your consent, which
-              you may withdraw at any time.
-            </p>
-
-            <h2>Cookies &amp; analytics</h2>
-            <p>
-              Non-essential cookies and analytics — including Google Analytics and Microsoft Clarity —
-              are only loaded after you accept them. Until then, they remain disabled by default through
-              consent mode. Essential cookies needed to operate the site and remember your cookie choice
-              do not require consent.
-            </p>
-
-            <h2>Who we share it with</h2>
-            <p>
-              We do not sell your personal data. We share it only with service providers who help us
-              operate the site and respond to you — for example our hosting provider, our email delivery
-              provider and, where consented, our analytics providers — and only as needed to perform
-              those services on our behalf. Some of these providers may process data outside the
-              European Economic Area, in which case appropriate safeguards apply.
-            </p>
-
-            <h2>How long we keep it</h2>
-            <p>
-              We keep enquiry and lead data for as long as needed to handle your request and for our
-              legitimate business and legal record-keeping purposes, after which it is deleted or
-              anonymised.
-            </p>
-
-            <h2>Your rights</h2>
-            <p>
-              Subject to applicable law, you have the right to access, correct, delete or restrict the
-              processing of your personal data, to object to processing, to data portability, and to
-              withdraw consent at any time. You also have the right to lodge a complaint with your local
-              data protection authority. In Belgium this is the Data Protection Authority
-              (Gegevensbeschermingsautoriteit).
-            </p>
-
-            <h2>Contact</h2>
-            <p>
-              To exercise any of these rights or to ask a question about this policy, contact us at{' '}
-              <a href={`mailto:${contact.email}`} className="lnk">{contact.email}</a> or by post at{' '}
-              {brand.legalName}, {contact.address.street}, {contact.address.postalCode}{' '}
-              {contact.address.city}, Belgium.
-            </p>
-
-            <p style={{ fontSize: 13.5, color: 'var(--text-faint)', borderTop: '1px solid var(--border)', paddingTop: 20, marginTop: 32 }}>
-              This policy is provided as a starting point and should be reviewed by a qualified legal
-              advisor before launch to ensure it reflects your actual data-processing practices.
-            </p>
-          </div>
+    <div className="legal-page">
+      <div className="container">
+        <div className="legal-draft-banner" role="note">
+          ⚠️ {t('draftBanner')}
         </div>
-      </section>
-    </>
+
+        <header className="legal-header">
+          <h1>{t('privacy.title')}</h1>
+          <p className="legal-subtitle">{t('privacy.subtitle')}</p>
+          <p className="legal-meta">
+            {t('lastUpdated')}: {lastUpdatedDate}
+          </p>
+        </header>
+
+        <article className="legal-body">
+          <section>
+            <h2>1. Who we are</h2>
+            <p>
+              Re-Sound is a brand of <strong>STRETCH-BE BV</strong> ("Re-Sound", "we",
+              "us"), registered in Belgium and operating the website{' '}
+              <a href="https://re-sound.be">re-sound.be</a>.
+            </p>
+            <p>
+              <strong>Data controller:</strong>
+              <br />
+              STRETCH-BE BV
+              <br />
+              Gentseweg 309 A3
+              <br />
+              9120 Beveren-Waas, Belgium
+              <br />
+              Email:{' '}
+              <a href="mailto:info@re-sound.be">info@re-sound.be</a>
+            </p>
+            <p>
+              If you have any question about how your personal data is handled,
+              you can contact us at the address above.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. What data we collect</h2>
+            <h3>Information you give us directly</h3>
+            <ul>
+              <li>
+                <strong>Contact form</strong> — name, email address, phone number
+                (optional), company name (optional), subject, and the content of
+                your message.
+              </li>
+              <li>
+                <strong>Lead capture forms</strong> (PDF downloads, sample
+                requests) — company name, first and last name, business email,
+                phone number, role/position, company type, and the document or
+                resource you requested.
+              </li>
+            </ul>
+
+            <h3>Information collected automatically</h3>
+            <ul>
+              <li>
+                <strong>Technical data</strong> — IP address (truncated for
+                analytics), browser type and version, device type, operating
+                system, referring URL, pages visited, and approximate location
+                derived from the IP address.
+              </li>
+              <li>
+                <strong>Cookies and similar technologies</strong> — see Section 6
+                below.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>3. Why we use your data (and our legal basis)</h2>
+            <table className="legal-table">
+              <thead>
+                <tr>
+                  <th>Purpose</th>
+                  <th>Legal basis (GDPR Art. 6)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Responding to inquiries submitted via the contact form
+                  </td>
+                  <td>
+                    Performance of pre-contractual steps and our legitimate
+                    interest in customer communication (Art. 6(1)(b) and (f))
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Delivering requested documents (product PDFs, brochures)
+                  </td>
+                  <td>
+                    Performance of pre-contractual steps at your request
+                    (Art. 6(1)(b))
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Following up on a lead with relevant product information
+                  </td>
+                  <td>
+                    Our legitimate interest in commercial outreach
+                    (Art. 6(1)(f)), balanced against your right to object
+                  </td>
+                </tr>
+                <tr>
+                  <td>Website analytics (anonymous)</td>
+                  <td>Your consent (Art. 6(1)(a))</td>
+                </tr>
+                <tr>
+                  <td>Marketing and advertising measurement</td>
+                  <td>Your consent (Art. 6(1)(a))</td>
+                </tr>
+                <tr>
+                  <td>Compliance with legal and accounting obligations</td>
+                  <td>Legal obligation (Art. 6(1)(c))</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2>4. How long we keep your data</h2>
+            <p>
+              We only keep your personal data for as long as needed for the
+              purposes set out above:
+            </p>
+            <ul>
+              <li>
+                <strong>Contact form messages</strong> — kept for [TO BE
+                DETERMINED, suggested: 24 months] after the last interaction,
+                unless a commercial relationship develops.
+              </li>
+              <li>
+                <strong>Lead data</strong> — kept for [TO BE DETERMINED,
+                suggested: 36 months] from collection, or longer if a commercial
+                relationship is active.
+              </li>
+              <li>
+                <strong>Customer and accounting records</strong> — kept for the
+                statutory retention period required under Belgian law
+                (typically 7–10 years).
+              </li>
+              <li>
+                <strong>Analytics data</strong> — Google Analytics retention is
+                set to [TO BE DETERMINED, suggested: 14 months]. Aggregate,
+                non-identifying data may be retained longer.
+              </li>
+            </ul>
+            <p className="legal-todo">
+              [Action item: confirm retention periods with legal counsel before
+              publishing.]
+            </p>
+          </section>
+
+          <section>
+            <h2>5. Who we share your data with</h2>
+            <p>
+              We do not sell your personal data. We share it only with the
+              processors and partners we need to operate the website and
+              respond to you:
+            </p>
+            <ul>
+              <li>
+                <strong>Microsoft Corporation</strong> (Power Automate, Office
+                365 / Outlook) — for processing contact and lead submissions
+                and delivering them as email to the Re-Sound team.
+              </li>
+              <li>
+                <strong>Google LLC / Google Ireland</strong> — Google Analytics
+                4, Google Consent Mode (analytics consent only).
+              </li>
+              <li>
+                <strong>Microsoft Clarity</strong> — usability analysis with
+                PII masking (analytics consent only).
+              </li>
+              <li>
+                <strong>Meta Platforms Ireland Ltd.</strong> — Meta (Facebook)
+                Pixel (marketing consent only).
+              </li>
+              <li>
+                <strong>Microsoft Bing / Microsoft Advertising</strong> —
+                Bing UET (marketing consent only).
+              </li>
+              <li>
+                <strong>Vercel Inc.</strong> — website hosting infrastructure.
+              </li>
+            </ul>
+            <p>
+              Some of these recipients are based outside the EU/EEA. We rely on
+              Standard Contractual Clauses approved by the European Commission
+              and, where available, adequacy decisions, to ensure your data
+              remains protected.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Cookies and similar technologies</h2>
+            <p>
+              We use cookies and similar technologies for three purposes:
+            </p>
+            <ul>
+              <li>
+                <strong>Necessary</strong> (always active) — these are required
+                for the website to function. They store technical settings such
+                as your selected language and your consent preferences. No
+                personal data is shared with third parties for these.
+              </li>
+              <li>
+                <strong>Analytics</strong> (with your consent) — Google
+                Analytics 4 and Microsoft Clarity, used to understand how
+                visitors interact with the site so we can improve it.
+              </li>
+              <li>
+                <strong>Marketing</strong> (with your consent) — Meta Pixel and
+                Bing UET, used to measure the effectiveness of advertising and
+                show you more relevant content on other platforms.
+              </li>
+            </ul>
+            <p>
+              You can change your cookie preferences at any time using the
+              "Manage cookies" link at the bottom of every page, or by clearing
+              your browser's local storage for this site.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Your rights</h2>
+            <p>Under the GDPR, you have the right to:</p>
+            <ul>
+              <li>
+                <strong>Access</strong> — obtain confirmation of whether we
+                process your personal data, and a copy of that data.
+              </li>
+              <li>
+                <strong>Rectification</strong> — have inaccurate or incomplete
+                data corrected.
+              </li>
+              <li>
+                <strong>Erasure ("right to be forgotten")</strong> — request
+                deletion of your personal data when there is no longer a valid
+                reason for us to keep it.
+              </li>
+              <li>
+                <strong>Restriction</strong> — ask us to pause processing while
+                a question is resolved.
+              </li>
+              <li>
+                <strong>Portability</strong> — receive the data you provided in
+                a structured, machine-readable format.
+              </li>
+              <li>
+                <strong>Objection</strong> — object to processing based on our
+                legitimate interest (including direct marketing).
+              </li>
+              <li>
+                <strong>Withdraw consent</strong> — withdraw consent for
+                analytics or marketing at any time, with no effect on
+                processing done before withdrawal.
+              </li>
+              <li>
+                <strong>Complaint</strong> — lodge a complaint with the Belgian
+                Data Protection Authority (Gegevensbeschermingsautoriteit /
+                Autorité de protection des données), Drukpersstraat 35, 1000
+                Brussels —{' '}
+                <a
+                  href="https://www.gegevensbeschermingsautoriteit.be/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.gegevensbeschermingsautoriteit.be
+                </a>
+                .
+              </li>
+            </ul>
+            <p>
+              To exercise any of these rights, contact us at{' '}
+              <a href="mailto:info@re-sound.be">info@re-sound.be</a>. We will
+              respond within one month.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Security</h2>
+            <p>
+              We apply appropriate technical and organisational measures to
+              protect personal data against loss, misuse, or unauthorised access.
+              All data is transmitted over encrypted HTTPS connections. Lead
+              and contact submissions are routed through Microsoft Power
+              Automate over an authenticated webhook.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Changes to this policy</h2>
+            <p>
+              We may update this policy from time to time. The "Last updated"
+              date at the top reflects the most recent revision. Material
+              changes will be communicated on the site.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <style>{`
+        .legal-page {
+          padding: 4rem 0 6rem;
+          background: #fafbfc;
+          min-height: 70vh;
+        }
+        .legal-page .container {
+          max-width: 820px;
+          margin: 0 auto;
+          padding: 0 1.5rem;
+        }
+        .legal-draft-banner {
+          background: #fff8e1;
+          border: 1px solid #f0c419;
+          color: #6a4a00;
+          padding: 1rem 1.25rem;
+          border-radius: 10px;
+          margin-bottom: 2.5rem;
+          font-size: 0.95rem;
+          font-weight: 500;
+        }
+        .legal-header {
+          margin-bottom: 3rem;
+          border-bottom: 1px solid #e3e8ec;
+          padding-bottom: 2rem;
+        }
+        .legal-header h1 {
+          font-size: 2.5rem;
+          color: var(--deep-blue, #0b2940);
+          margin: 0 0 0.5rem;
+        }
+        .legal-subtitle {
+          font-size: 1.1rem;
+          color: #4a5a68;
+          margin: 0 0 1rem;
+        }
+        .legal-meta {
+          font-size: 0.85rem;
+          color: #8090a0;
+          margin: 0;
+        }
+        .legal-body section { margin-bottom: 2.5rem; }
+        .legal-body h2 {
+          font-size: 1.4rem;
+          color: var(--deep-blue, #0b2940);
+          margin: 0 0 1rem;
+        }
+        .legal-body h3 {
+          font-size: 1.05rem;
+          color: var(--deep-blue, #0b2940);
+          margin: 1.5rem 0 0.5rem;
+        }
+        .legal-body p, .legal-body li {
+          color: #3a4a58;
+          line-height: 1.7;
+        }
+        .legal-body ul {
+          padding-left: 1.5rem;
+          margin: 0.75rem 0;
+        }
+        .legal-body li { margin-bottom: 0.5rem; }
+        .legal-body a {
+          color: var(--brand-blue, #197FC7);
+          text-decoration: underline;
+        }
+        .legal-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 1rem 0;
+          font-size: 0.92rem;
+        }
+        .legal-table th,
+        .legal-table td {
+          padding: 0.65rem 0.85rem;
+          text-align: left;
+          border-bottom: 1px solid #e3e8ec;
+          vertical-align: top;
+        }
+        .legal-table th {
+          background: #f0f4f7;
+          font-weight: 600;
+          color: var(--deep-blue, #0b2940);
+        }
+        .legal-todo {
+          background: #fff8e1;
+          border-left: 3px solid #f0c419;
+          padding: 0.5rem 0.85rem;
+          font-size: 0.85rem;
+          color: #6a4a00;
+          font-style: italic;
+        }
+      `}</style>
+    </div>
   );
 }

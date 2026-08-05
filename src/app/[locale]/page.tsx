@@ -1,42 +1,83 @@
-// Homepage. Assembles the home sections in mockup order (light → dark → red
-// rhythm) and emits Organization, WebSite and LocalBusiness JSON-LD. Metadata
-// for "/" comes from the locale layout; this route relies on that default.
-import { setRequestLocale } from 'next-intl/server';
-import { isValidLocale, type Locale } from '@/i18n/config';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Metadata } from 'next';
+
+import Hero from '@/components/sections/Hero';
+import Ticker from '@/components/sections/Ticker';
+import RWoodShowcase from '@/components/sections/RWoodShowcase';
+import ProductsMosaic from '@/components/sections/ProductsMosaic';
+import CircularLoop from '@/components/sections/CircularLoop';
+import WhyCards from '@/components/sections/WhyCards';
+import DualCTA from '@/components/sections/DualCTA';
+
 import JsonLd from '@/components/seo/JsonLd';
-import { organizationSchema, websiteSchema, localBusinessSchema } from '@/lib/structured-data';
+import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { organizationSchema, websiteSchema } from '@/lib/structured-data';
 
-import Hero from '@/components/sections/home/Hero';
-import { Ticker, Stats } from '@/components/sections/home/TickerStats';
-import WhyStretch from '@/components/sections/home/WhyStretch';
-import Solutions from '@/components/sections/home/Solutions';
-import Acoustics from '@/components/sections/home/Acoustics';
-import ApplicationAreas from '@/components/sections/home/ApplicationAreas';
-import InstallerPartner from '@/components/sections/home/InstallerPartner';
-import Gallery from '@/components/sections/home/Gallery';
-import Reviews from '@/components/sections/home/Reviews';
-import CtaBand from '@/components/sections/home/CtaBand';
+interface HomePageProps {
+  params: { locale: string };
+}
 
-export default function HomePage({ params }: { params: { locale: string } }) {
-  if (isValidLocale(params.locale)) setRequestLocale(params.locale as Locale);
+export async function generateMetadata({
+  params: { locale },
+}: HomePageProps): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'meta' });
+
+  const title = t('homeTitle');
+  const description = t('homeDescription');
+
+  return {
+    // Title already includes "Re-Sound" — bypass template wrap
+    title: { absolute: title },
+    description,
+    openGraph: {
+      title,
+      description,
+      // Dynamic homepage OG image (brand-blue background, title, tagline).
+      images: [`/api/og?locale=${locale}&page=home`],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+    alternates: buildAlternates(locale, '/'),
+  };
+}
+
+export default function HomePage({ params: { locale } }: HomePageProps) {
+  setRequestLocale(locale);
 
   return (
     <>
+      {/* Sitewide entity graph — Organization + WebSite together let Google
+          merge facts under a single Knowledge-Graph node instead of treating
+          the site as anonymous. WebSite is required for sitelinks. */}
       <JsonLd data={organizationSchema()} />
-      <JsonLd data={websiteSchema({ hasSearch: false })} />
-      <JsonLd data={localBusinessSchema()} />
+      <JsonLd data={websiteSchema()} />
 
+      {/* Dual-split fullscreen hero: rWood left / Circular right */}
       <Hero />
+
+      {/* Scrolling blue ticker strip */}
       <Ticker />
-      <Stats />
-      <WhyStretch />
-      <Solutions />
-      <Acoustics />
-      <ApplicationAreas />
-      <InstallerPartner />
-      <Gallery />
-      <Reviews />
-      <CtaBand />
+
+      {/* rWood hero image + veneer strip + specs + swatches */}
+      <RWoodShowcase />
+
+      {/* 5-product mosaic grid + application context strip */}
+      <ProductsMosaic />
+
+      {/* Dark circular economy section with spinning ring */}
+      <CircularLoop />
+
+      {/* 4-card why section */}
+      <WhyCards />
+
+      {/* Split image CTA: samples left / quote right */}
+      <DualCTA />
     </>
   );
 }

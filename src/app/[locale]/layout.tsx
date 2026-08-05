@@ -1,110 +1,169 @@
-// ROOT + locale layout (multi-domain i18n: all routes live under [locale], so
-// this is the app's root layout — it owns <html lang> per locale, fonts and
-// global styles). Validates the locale, provides messages to client components,
-// sets default metadata (title template, OG/robots defaults, metadataBase,
-// home alternates), and mounts the shared chrome: consent-mode defaults,
-// analytics, scroll tracking, header, footer, cookie banner, and the lead-modal
-// provider that powers every CTA.
-import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
-import { archivo } from '../fonts';
-import '../globals.css';
-import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
-import { locales, isValidLocale, localeFullCodes, type Locale } from '@/i18n/config';
-import { siteUrl, brand } from '@/lib/site-config';
-import { localeBase, buildAlternates, buildOgLocales } from '@/lib/seo';
-import { ConsentModeDefaults, ScrollTracker, AnalyticsScripts } from '@/components/analytics';
-import { LeadModalProvider } from '@/components/LeadGenModal';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
+import { Syne, DM_Sans } from 'next/font/google';
+
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/layout/CookieConsent';
+import {
+  ConsentModeDefaults,
+  GoogleAnalytics,
+  MetaPixel,
+  BingUET,
+  Clarity,
+  ScrollTracker,
+} from '@/components/analytics';
 
+import { locales, localeFullCodes, type Locale } from '@/i18n/config';
+import { ogLocale, ogAlternateLocales } from '@/lib/seo';
+
+import '@/app/globals.css';
+
+// Self-hosted fonts via next/font: eliminates the render-blocking request to
+// fonts.googleapis.com, automatically adds metric-adjusted fallbacks (zero CLS),
+// and preloads the woff2 from the same origin. Exposed as CSS variables that
+// globals.css composes with explicit named fallbacks.
+const syne = Syne({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-syne',
+  display: 'swap',
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-dmsans',
+  display: 'swap',
+});
+
+// Generate static params for all locales (for static export)
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
+interface LocaleLayoutProps {
+  children: React.ReactNode;
   params: { locale: string };
-}): Promise<Metadata> {
-  if (!isValidLocale(params.locale)) return {};
-  const locale = params.locale as Locale;
-  const t = await getTranslations({ locale, namespace: 'meta' });
-  const { ogLocale, alternate } = buildOgLocales(locale);
+}
 
+/**
+ * Per-locale default metadata. Per-page generateMetadata overrides
+ * title / description / images; this provides the baseline OG locale and
+ * `alternateLocale` array so social shares from any page advertise the
+ * right language_TERRITORY pair to LinkedIn / Slack / WhatsApp / X.
+ */
+export async function generateMetadata({
+  params: { locale },
+}: LocaleLayoutProps): Promise<Metadata> {
   return {
-    metadataBase: new URL(siteUrl),
     title: {
-      default: t('homeTitle'),
-      template: `%s | ${brand.name}`,
+      template: '%s | Re-Sound',
+      default: 'Re-Sound | Acoustics Made Circular',
     },
-    description: t('homeDescription'),
-    applicationName: brand.name,
-    robots: { index: true, follow: true },
-    alternates: buildAlternates(locale, '/'),
+    description:
+      'High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.',
+    keywords: [
+      'acoustic panels',
+      'circular economy',
+      'recycled materials',
+      'sound absorption',
+      'Belgium',
+      'sustainable',
+    ],
+    authors: [{ name: 'Re-Sound' }],
+    creator: 'Re-Sound',
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be'
+    ),
     openGraph: {
       type: 'website',
-      siteName: brand.name,
-      title: t('homeTitle'),
-      description: t('homeDescription'),
-      url: `${localeBase(locale)}`,
-      locale: ogLocale,
-      alternateLocale: alternate,
-      images: [{ url: `${localeBase(locale)}/api/og`, width: 1200, height: 630, alt: brand.name }],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
+      siteName: 'Re-Sound',
+      images: [
+        {
+          // Dynamic OG generated at runtime by /api/og — never 404s, no
+          // pre-built JPEG to keep in sync with copy or branding.
+          url: `/api/og?locale=${locale}`,
+          width: 1200,
+          height: 630,
+          alt: 'Re-Sound - Acoustics Made Circular',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: t('homeTitle'),
-      description: t('homeDescription'),
-      images: [`${localeBase(locale)}/api/og`],
     },
-    icons: {
-      icon: [{ url: '/favicon.ico' }, { url: '/favicon.svg', type: 'image/svg+xml' }],
-      apple: '/apple-touch-icon.png',
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
 
 export default async function LocaleLayout({
   children,
-  params,
-}: {
-  children: ReactNode;
-  params: { locale: string };
-}) {
-  if (!isValidLocale(params.locale)) notFound();
-  const locale = params.locale as Locale;
+  params: { locale },
+}: LocaleLayoutProps) {
+  // Enable static rendering
   setRequestLocale(locale);
+
+  // Validate that the incoming locale is valid
+  if (!locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  // Load translations for the current locale
   const messages = await getMessages();
 
+  // Get the full locale code for the HTML lang attribute (e.g. 'en-BE', 'es-ES')
+  const htmlLang = localeFullCodes[locale as Locale] ?? locale;
+
   return (
-    <html
-      lang={localeFullCodes[locale] ?? locale}
-      className={`${archivo.variable}`}
-      suppressHydrationWarning
-    >
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-      {/* Consent Mode v2 defaults — must run before analytics. */}
-      <ConsentModeDefaults />
-      <AnalyticsScripts />
+    <html lang={htmlLang} className={`${syne.variable} ${dmSans.variable}`}>
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-      <LeadModalProvider>
-        <a href="#main" className="skip-link">
-          Skip to content
-        </a>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
-        <CookieConsent />
-        <ScrollTracker />
-      </LeadModalProvider>
+        {/* Per-page hreflang is generated by each page's `alternates.languages`
+            in generateMetadata() via buildAlternates(). The previous root-level
+            loop was incorrect (it pointed every page's alternates at the locale
+            home page) and is intentionally not present here. */}
 
-          {/* Document language for assistive tech / hreflang consistency. */}
-          <span data-locale={localeFullCodes[locale]} hidden />
+        {/* Google Consent Mode v2 defaults — MUST run before any analytics tag.
+            Sets all categories to denied, then re-applies stored consent if present. */}
+        <ConsentModeDefaults />
+      </head>
+
+      <body className="font-body antialiased">
+        <NextIntlClientProvider messages={messages}>
+          {/* Analytics — gated by Consent Mode (GA) or per-category consent (Meta/Bing/Clarity).
+              Clarity and Bing only activate when their env vars are set. */}
+          <GoogleAnalytics />
+          <MetaPixel />
+          <BingUET />
+          <Clarity />
+
+          {/* Fires scroll-depth events (25/50/75/90 %) into the analytics
+              pipeline. No DOM output; resets on every pathname change. */}
+          <ScrollTracker />
+
+          {/* Header - consistent across all pages */}
+          <Header />
+
+          {/* Main content area */}
+          <main>{children}</main>
+
+          {/* Footer - consistent across all pages */}
+          <Footer />
+
+          {/* GDPR Cookie Consent Banner */}
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>
