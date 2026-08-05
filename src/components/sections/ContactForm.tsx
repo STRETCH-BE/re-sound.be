@@ -1,142 +1,245 @@
 'use client';
 
-// Standalone contact form (contact page). Mirrors the lead-modal submission
-// flow — client validation, honeypot, success/error states — but posts to
-// /api/contact and fires the contact-form analytics event. Uses no <form>-less
-// hacks: a real <form> with onSubmit, controlled only where needed.
 import { useState } from 'react';
-import { ArrowRight, Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
+import Input from '@/components/ui/Input';
+import Textarea from '@/components/ui/Textarea';
+import Select from '@/components/ui/Select';
 import { analytics } from '@/lib/analytics';
 
-type Status = 'idle' | 'sending' | 'sent' | 'error';
-
-function isEmail(v: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
-}
-
 export default function ContactForm() {
-  const t = useTranslations('forms');
-  const tc = useTranslations('contactPage.form');
-  const subjects = tc.raw('subjects') as string[];
-  const timelines = tc.raw('timelines') as string[];
-  const [status, setStatus] = useState<Status>('idle');
-  const [consent, setConsent] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const t = useTranslations('contact.form');
+  const locale = useLocale();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  const subjectOptions = [
+    { value: 'quote', label: t('subjects.quote') },
+    { value: 'info', label: t('subjects.info') },
+    { value: 'partnership', label: t('subjects.partnership') },
+    { value: 'other', label: t('subjects.other') },
+  ];
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const formData = new FormData(e.currentTarget);
     const data = {
-      name: String(fd.get('name') ?? '').trim(),
-      email: String(fd.get('email') ?? '').trim(),
-      phone: String(fd.get('phone') ?? '').trim(),
-      subject: String(fd.get('subject') ?? '').trim(),
-      timeline: String(fd.get('timeline') ?? '').trim(),
-      message: String(fd.get('message') ?? '').trim(),
-      _gotcha: String(fd.get('_gotcha') ?? ''),
+      name: formData.get('name'),
+      email: formData.get('email'),
+      company: formData.get('company'),
+      phone: formData.get('phone'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+      locale,
     };
 
-    const next: Record<string, string> = {};
-    if (!data.name) next.name = t('validation.required');
-    if (!data.email) next.email = t('validation.required');
-    else if (!isEmail(data.email)) next.email = t('validation.email');
-    if (!data.message) next.message = t('validation.required');
-    if (!consent) next.__consent = t('validation.consent');
-    setErrors(next);
-    if (Object.keys(next).length > 0) return;
-
-    setStatus('sending');
     try {
-      const res = await fetch('/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-      if (!res.ok) throw new Error('failed');
-      analytics.submitContactForm(true);
-      setStatus('sent');
-    } catch {
-      setStatus('error');
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        analytics.submitContactForm(true, String(data.subject ?? ''));
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setSubmitStatus('error');
+        analytics.submitContactForm(false, String(data.subject ?? ''));
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      analytics.submitContactForm(false, String(data.subject ?? ''));
+    } finally {
+      setIsSubmitting(false);
     }
-  }
-
-  if (status === 'sent') {
-    return (
-      <div style={{ border: '1px solid var(--border)', background: '#fff', padding: 'clamp(32px,4vw,52px)', textAlign: 'center' }}>
-        <span style={{ display: 'inline-flex', width: 56, height: 56, borderRadius: '50%', background: 'var(--red)', color: '#fff', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-          <Check size={26} />
-        </span>
-        <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 26, textTransform: 'uppercase', letterSpacing: '-.02em', margin: '0 0 10px' }}>
-          {t('successTitle')}
-        </h3>
-        <p style={{ color: 'var(--text-muted)', margin: 0 }}>{t('successMessage')}</p>
-      </div>
-    );
-  }
-
-  const labelStyle: React.CSSProperties = { display: 'block', fontSize: 12, fontWeight: 600, letterSpacing: '.06em', textTransform: 'uppercase', color: 'var(--text-muted-2)', marginBottom: 8 };
-  const errStyle: React.CSSProperties = { color: 'var(--red)', fontSize: 12, marginTop: 6 };
+  };
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" aria-hidden style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }} />
-      <div className="cf-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
-        <div style={{ gridColumn: '1 / -1' }}>
-          <label style={labelStyle} htmlFor="cf-name">{t('fields.name')}</label>
-          <input id="cf-name" name="name" className="field" placeholder={t('placeholders.name')} aria-invalid={!!errors.name} />
-          {errors.name && <div style={errStyle}>{errors.name}</div>}
-        </div>
-        <div>
-          <label style={labelStyle} htmlFor="cf-email">{t('fields.email')}</label>
-          <input id="cf-email" name="email" type="email" className="field" placeholder={t('placeholders.email')} aria-invalid={!!errors.email} />
-          {errors.email && <div style={errStyle}>{errors.email}</div>}
-        </div>
-        <div>
-          <label style={labelStyle} htmlFor="cf-phone">{t('fields.phone')}</label>
-          <input id="cf-phone" name="phone" type="tel" className="field" placeholder={t('placeholders.phone')} />
-        </div>
-        <div>
-          <label style={labelStyle} htmlFor="cf-subject">{t('fields.subject')}</label>
-          <select id="cf-subject" name="subject" className="field" defaultValue={subjects[0]}>
-            {subjects.map((s) => <option key={s}>{s}</option>)}
-          </select>
-        </div>
-        <div>
-          <label style={labelStyle} htmlFor="cf-timeline">{tc('timelineLabel')}</label>
-          <select id="cf-timeline" name="timeline" className="field" defaultValue={timelines[0]}>
-            {timelines.map((s) => <option key={s}>{s}</option>)}
-          </select>
-        </div>
-        <div style={{ gridColumn: '1 / -1' }}>
-          <label style={labelStyle} htmlFor="cf-message">{t('fields.message')}</label>
-          <textarea id="cf-message" name="message" className="field" rows={5} placeholder={t('placeholders.message')} aria-invalid={!!errors.message} style={{ resize: 'vertical' }} />
-          {errors.message && <div style={errStyle}>{errors.message}</div>}
-        </div>
+    <form onSubmit={handleSubmit} className="contact-form">
+      <div className="form-row">
+        <Input
+          name="name"
+          label={t('name')}
+          placeholder={t('namePlaceholder')}
+          required
+        />
+        <Input
+          name="email"
+          type="email"
+          label={t('email')}
+          placeholder={t('emailPlaceholder')}
+          required
+        />
       </div>
 
-      <label style={{ display: 'flex', gap: 11, alignItems: 'flex-start', marginTop: 18, cursor: 'pointer', fontSize: 13.5, lineHeight: 1.5, color: 'var(--text-muted)' }}>
-        <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} style={{ marginTop: 3, accentColor: 'var(--red)', width: 16, height: 16, flexShrink: 0 }} />
-        <span>
-          {tc('consentPrefix')}{' '}
-          <Link href="/privacy" className="lnk" style={{ color: 'var(--red)' }}>{tc('consentPrivacy')}</Link>.
-        </span>
-      </label>
-      {errors.__consent && <div style={errStyle}>{errors.__consent}</div>}
+      <div className="form-row">
+        <Input
+          name="company"
+          label={t('company')}
+          placeholder={t('companyPlaceholder')}
+        />
+        <Input
+          name="phone"
+          type="tel"
+          label={t('phone')}
+          placeholder={t('phonePlaceholder')}
+        />
+      </div>
 
-      {status === 'error' && (
-        <div style={{ marginTop: 16, padding: '12px 16px', background: '#fff', border: '1px solid var(--red)', color: 'var(--red)', fontSize: 13.5 }}>
-          {t('errorMessage')}
-        </div>
-      )}
+      <Select
+        name="subject"
+        label={t('subject')}
+        options={subjectOptions}
+        placeholder={t('subjectPlaceholder')}
+        required
+      />
 
-      <button type="submit" className="btn btn--primary" disabled={status === 'sending'} style={{ marginTop: 22, width: '100%', justifyContent: 'center', opacity: status === 'sending' ? 0.7 : 1 }}>
-        {status === 'sending' ? t('sending') : <>{tc('submit')} <ArrowRight size={16} /></>}
+      <Textarea
+        name="message"
+        label={t('message')}
+        placeholder={t('messagePlaceholder')}
+        rows={5}
+        required
+      />
+
+      {/* Honeypot: visually hidden but visible to bots. Real users skip it. */}
+      <div className="hp-field" aria-hidden="true">
+        <label htmlFor="website">Leave this field empty</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
+      <div className="form-status" role="status" aria-live="polite">
+        {submitStatus === 'success' && (
+          <div className="form-message success">
+            <span>✓</span> {t('successMessage')}
+          </div>
+        )}
+
+        {submitStatus === 'error' && (
+          <div className="form-message error">
+            <span>!</span> {t('errorMessage')}
+          </div>
+        )}
+      </div>
+
+      <button type="submit" className="btn-primary" disabled={isSubmitting}>
+        {isSubmitting ? t('sending') : t('submit')}
+        {!isSubmitting && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+          </svg>
+        )}
       </button>
-      <p style={{ marginTop: 14, fontSize: 12.5, color: 'var(--text-faint)', textAlign: 'center' }}>{t('reassurance')}</p>
 
-      <style dangerouslySetInnerHTML={{ __html: `@media (max-width: 560px){ .cf-grid { grid-template-columns: 1fr !important; } }` }} />
+      <p className="form-consent">
+        {t.rich('privacyNotice', {
+          link: (chunks) => (
+            <a href={`/${locale}/privacy`}>{chunks}</a>
+          ),
+        })}
+      </p>
+
+      <style jsx>{`
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .form-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+        }
+
+        .form-message {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 1rem 1.25rem;
+          border-radius: 12px;
+          font-size: 0.95rem;
+        }
+
+        .form-message.success {
+          background: #e6f7f0;
+          color: #059669;
+        }
+
+        .form-message.error {
+          background: #fef2f2;
+          color: #dc2626;
+        }
+
+        .form-message span {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+        }
+
+        .form-message.success span {
+          background: #059669;
+          color: white;
+        }
+
+        .form-message.error span {
+          background: #dc2626;
+          color: white;
+        }
+
+        .contact-form .btn-primary {
+          align-self: flex-start;
+        }
+
+        /* Visually-hidden honeypot — invisible to real users, parseable by bots */
+        .hp-field {
+          position: absolute;
+          left: -9999px;
+          top: -9999px;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+        }
+
+        .form-consent {
+          font-size: 0.85rem;
+          color: #666;
+          margin-top: 0.25rem;
+        }
+
+        .form-consent :global(a) {
+          color: var(--brand-blue);
+          text-decoration: underline;
+        }
+
+        @media (max-width: 576px) {
+          .form-row {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+          }
+
+          .contact-form .btn-primary {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      `}</style>
     </form>
   );
 }

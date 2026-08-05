@@ -1,597 +1,553 @@
 'use client';
 
-// ============================================================================
-// LEAD MODAL — the core conversion component. A context provider renders ONE
-// modal instance; any CTA calls useLeadModal().open(type) to show it. The modal
-// matches the CtaModal mockup (7 types). On success it fires Enhanced
-// Conversions (hashed, marketing-consent only), the unified generateLead event,
-// and Clarity tags — then posts to /api/lead.
-// ============================================================================
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useId,
-  useMemo,
-  useRef,
-  useState,
-  type ReactNode,
-} from 'react';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
-import { X, ArrowRight, Check } from 'lucide-react';
-import {
-  MODAL_CONFIGS,
-  TRAINING_DATE_DETAIL,
-  type ModalType,
-  type FormField,
-} from '@/lib/forms-config';
-import { localizeModalConfig, type ModalMessages } from '@/lib/localize-content';
-import { analytics, sha256, normalizeEmail, normalizePhone } from '@/lib/analytics';
-import { getConsent } from '@/lib/consent';
+import { useState, useEffect } from 'react';
 
-type OpenOptions = {
-  /** Tracking source label (e.g. 'hero', 'product_pvc', 'footer'). */
-  source?: string;
-  /** Product slug for analytics, when opened from a product context. */
-  product?: string;
-  /** For gated downloads: the file to deliver once the lead is submitted. */
-  download?: { url: string; filename: string; label: string };
-};
-
-/** Programmatically download a same-origin file (used after a gated submit). */
-function triggerDownload(url: string, filename: string) {
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  a.rel = 'noopener';
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
+// ==========================================
+// TYPES
+// ==========================================
+export interface LeadFormData {
+  companyName: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  position: string;
+  companyType: string;
 }
 
-type LeadModalContextValue = {
-  open: (type: ModalType, options?: OpenOptions) => void;
-  close: () => void;
-};
-
-const LeadModalContext = createContext<LeadModalContextValue | null>(null);
-
-export function useLeadModal(): LeadModalContextValue {
-  const ctx = useContext(LeadModalContext);
-  if (!ctx) throw new Error('useLeadModal must be used within <LeadModalProvider>');
-  return ctx;
-}
-
-type Status = 'form' | 'sending' | 'sent' | 'error';
-
-export function LeadModalProvider({ children }: { children: ReactNode }) {
-  const [type, setType] = useState<ModalType | null>(null);
-  const [opts, setOpts] = useState<OpenOptions>({});
-
-  const open = useCallback((t: ModalType, options: OpenOptions = {}) => {
-    setOpts(options);
-    setType(t);
-  }, []);
-  const close = useCallback(() => setType(null), []);
-
-  const value = useMemo(() => ({ open, close }), [open, close]);
-
-  return (
-    <LeadModalContext.Provider value={value}>
-      {children}
-      {type && <LeadGenModal type={type} options={opts} onClose={close} />}
-    </LeadModalContext.Provider>
-  );
-}
-
-// ---------------------------------------------------------------------------
-
-function LeadGenModal({
-  type,
-  options,
-  onClose,
-}: {
-  type: ModalType;
-  options: OpenOptions;
+interface LeadGenModalProps {
+  isOpen: boolean;
   onClose: () => void;
-}) {
-  const t = useTranslations('forms');
-  const tm = useTranslations('modals');
-  const cfg = localizeModalConfig(MODAL_CONFIGS[type], tm.raw(type) as ModalMessages);
-  const dialogRef = useRef<HTMLDivElement | null>(null);
-  const titleId = useId();
-  const descId = useId();
+  onSubmit: (data: LeadFormData) => Promise<void>;
+  downloadFile?: string;
+  isSubmitting?: boolean;
+}
 
-  const [status, setStatus] = useState<Status>('form');
+// ==========================================
+// DROPDOWN OPTIONS
+// ==========================================
+const companyTypes = [
+  { value: '', label: 'Select...' },
+  { value: 'architect', label: 'Architect / Design Firm' },
+  { value: 'interior-designer', label: 'Interior Designer' },
+  { value: 'contractor', label: 'General Contractor' },
+  { value: 'acoustic-consultant', label: 'Acoustic Consultant' },
+  { value: 'facility-manager', label: 'Facility Manager' },
+  { value: 'real-estate', label: 'Real Estate Developer' },
+  { value: 'manufacturer', label: 'Manufacturer / Distributor' },
+  { value: 'corporate', label: 'Corporate / End User' },
+  { value: 'other', label: 'Other' },
+];
+
+const positionOptions = [
+  { value: '', label: 'Select...' },
+  { value: 'owner', label: 'Owner / CEO' },
+  { value: 'director', label: 'Director / Manager' },
+  { value: 'architect', label: 'Architect' },
+  { value: 'designer', label: 'Designer' },
+  { value: 'engineer', label: 'Engineer' },
+  { value: 'project-manager', label: 'Project Manager' },
+  { value: 'procurement', label: 'Procurement / Purchasing' },
+  { value: 'consultant', label: 'Consultant' },
+  { value: 'other', label: 'Other' },
+];
+
+// ==========================================
+// COMPONENT
+// ==========================================
+export default function LeadGenModal({
+  isOpen,
+  onClose,
+  onSubmit,
+  downloadFile = '',
+  isSubmitting = false,
+}: LeadGenModalProps) {
+  const [formData, setFormData] = useState<LeadFormData>({
+    companyName: '',
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    position: '',
+    companyType: '',
+  });
+
+  const [errors, setErrors] = useState<Partial<LeadFormData>>({});
   const [consentChecked, setConsentChecked] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
 
-  // ESC to close + body scroll lock + focus into the dialog.
+  // Reset form when modal opens
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    document.addEventListener('keydown', onKey);
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    const firstField = dialogRef.current?.querySelector<HTMLElement>(
-      'input, select, textarea, button',
-    );
-    firstField?.focus();
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = prevOverflow;
-    };
-  }, [onClose]);
+    if (isOpen) {
+      setFormData({
+        companyName: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        position: '',
+        companyType: '',
+      });
+      setErrors({});
+      setConsentChecked(false);
+    }
+  }, [isOpen]);
 
-  // Simple focus trap.
-  const onKeyDownTrap = (e: React.KeyboardEvent) => {
-    if (e.key !== 'Tab') return;
-    const focusables = dialogRef.current?.querySelectorAll<HTMLElement>(
-      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled])',
-    );
-    if (!focusables || focusables.length === 0) return;
-    const first = focusables[0];
-    const last = focusables[focusables.length - 1];
-    if (e.shiftKey && document.activeElement === first) {
-      e.preventDefault();
-      last.focus();
-    } else if (!e.shiftKey && document.activeElement === last) {
-      e.preventDefault();
-      first.focus();
+  // Handle escape key
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) onClose();
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [isOpen, onClose]);
+
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name as keyof LeadFormData]) {
+      setErrors((prev) => ({ ...prev, [name]: '' }));
     }
   };
 
-  function validate(data: Record<string, string>): boolean {
-    const next: Record<string, string> = {};
-    for (const f of cfg.fields) {
-      if (f.required && !data[f.name]?.trim()) {
-        next[f.name] = t('validation.required');
-      }
-      if (f.inputType === 'email' && data[f.name] && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data[f.name])) {
-        next[f.name] = t('validation.email');
-      }
-    }
-    if (!consentChecked) next.__consent = t('validation.consent');
-    setErrors(next);
-    return Object.keys(next).length === 0;
-  }
+  const validateForm = (): boolean => {
+    const newErrors: Partial<LeadFormData> = {};
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    if (!formData.companyName.trim()) newErrors.companyName = 'Required';
+    if (!formData.firstName.trim()) newErrors.firstName = 'Required';
+    if (!formData.lastName.trim()) newErrors.lastName = 'Required';
+    if (!formData.email.trim()) {
+      newErrors.email = 'Required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Invalid email';
+    }
+    if (!formData.phone.trim()) newErrors.phone = 'Required';
+    if (!formData.position) newErrors.position = 'Required';
+    if (!formData.companyType) newErrors.companyType = 'Required';
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0 && consentChecked;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const form = e.currentTarget;
-    const fd = new FormData(form);
-    const data: Record<string, string> = {};
-    for (const f of cfg.fields) {
-      data[f.name] = String(fd.get(f.name) ?? '').trim();
+    if (validateForm()) {
+      await onSubmit(formData);
     }
-    if (!validate(data)) return;
+  };
 
-    setStatus('sending');
-    const source = options.source || type;
-    try {
-      const res = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          source,
-          product: options.product,
-          downloadedFile: options.download?.label,
-        }),
-      });
-      if (!res.ok) throw new Error('Request failed');
+  if (!isOpen) return null;
 
-      // Gated download: deliver the file now that the lead is captured.
-      if (options.download) {
-        triggerDownload(options.download.url, options.download.filename);
-      }
-
-      // ---- Conversion events (best-effort, never block the UI) ----
-      const consent = getConsent();
-      const email = data.email;
-      try {
-        if (consent?.marketing && window.gtag && email) {
-          await window.gtag('set', 'user_data', {
-            sha256_email_address: await sha256(normalizeEmail(email)),
-            sha256_phone_number: data.phone ? await sha256(normalizePhone(data.phone)) : undefined,
-          });
-        }
-      } catch {
-        /* no-op */
-      }
-      analytics.generateLead({ product: options.product, source });
-      if (type === 'samples') {
-        analytics.sampleRequest(data.colours || '', data.productLine || '');
-      }
-      try {
-        window.clarity?.('set', 'lead_status', 'submitted');
-        if (options.product) window.clarity?.('set', 'lead_product', options.product);
-        if (data.company || data.companyName) {
-          window.clarity?.('set', 'company', data.company || data.companyName);
-        }
-        if (email) window.clarity?.('identify', email);
-        window.clarity?.('upgrade', 'submitted_lead');
-      } catch {
-        /* no-op */
-      }
-
-      setStatus('sent');
-    } catch {
-      setStatus('error');
-    }
-  }
+  // Extract filename for display
+  const displayName = downloadFile?.split('/').pop()?.replace('.pdf', '').replace(/-/g, ' ') || 'Document';
 
   return (
-    <div
-      onClick={onClose}
-      onKeyDown={onKeyDownTrap}
+    <div 
       style={{
         position: 'fixed',
-        inset: 0,
-        zIndex: 1000,
-        background: 'rgba(10,10,10,.55)',
-        backdropFilter: 'blur(3px)',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(10, 22, 40, 0.85)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 18,
-        animation: 'ctamFade .18s ease',
+        padding: '1rem',
+        zIndex: 99999,
       }}
+      onClick={onClose}
     >
-      <div
-        ref={dialogRef}
-        onClick={(e) => e.stopPropagation()}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby={titleId}
-        aria-describedby={descId}
+      <div 
         style={{
-          background: '#fff',
+          backgroundColor: '#ffffff',
+          borderRadius: '20px',
+          maxWidth: '540px',
           width: '100%',
-          maxWidth: 560,
-          maxHeight: '92vh',
-          overflow: 'auto',
+          maxHeight: '90vh',
+          overflow: 'hidden',
           position: 'relative',
-          boxShadow: 'var(--shadow-lg)',
-          animation: 'ctamRise .22s ease',
+          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
         }}
+        onClick={(e) => e.stopPropagation()}
       >
-        <button
-          onClick={onClose}
-          aria-label={tm('close')}
-          className="ctam-x"
-          style={{
+        {/* Header */}
+        <div style={{
+          background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
+          padding: '2rem 2.5rem',
+          position: 'relative',
+          overflow: 'hidden',
+        }}>
+          {/* Decorative circles */}
+          <div style={{
             position: 'absolute',
-            right: 12,
-            top: 12,
-            width: 40,
-            height: 40,
-            border: 'none',
-            background: 'transparent',
-            cursor: 'pointer',
-            color: 'var(--black)',
+            top: '-50%',
+            right: '-20%',
+            width: '200px',
+            height: '200px',
+            background: 'rgba(255, 255, 255, 0.08)',
+            borderRadius: '50%',
+          }} />
+          
+          <button 
+            onClick={onClose}
+            style={{
+              position: 'absolute',
+              top: '1rem',
+              right: '1rem',
+              width: '36px',
+              height: '36px',
+              background: 'rgba(255, 255, 255, 0.15)',
+              border: 'none',
+              borderRadius: '50%',
+              color: 'white',
+              fontSize: '1.25rem',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 10,
+            }}
+          >
+            ✕
+          </button>
+
+          <div style={{
+            width: '52px',
+            height: '52px',
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '14px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            zIndex: 2,
-          }}
-        >
-          <X size={22} strokeWidth={2} />
-        </button>
+            marginBottom: '1rem',
+            position: 'relative',
+            zIndex: 1,
+          }}>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </div>
 
-        <div style={{ padding: 'clamp(26px,4vw,44px)' }}>
-          {status === 'sent' ? (
-            <div style={{ textAlign: 'center', padding: 'clamp(22px,3vw,44px) 6px' }}>
-              <div
+          <h3 style={{
+            fontFamily: 'Syne, sans-serif',
+            fontSize: '1.5rem',
+            fontWeight: 700,
+            color: 'white',
+            margin: '0 0 0.5rem',
+            position: 'relative',
+            zIndex: 1,
+          }}>
+            Download Technical Documentation
+          </h3>
+
+          <p style={{
+            fontSize: '0.95rem',
+            color: 'rgba(255, 255, 255, 0.85)',
+            margin: 0,
+            position: 'relative',
+            zIndex: 1,
+          }}>
+            Fill in your details to access our product specifications
+          </p>
+
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.35rem',
+            background: 'rgba(255, 255, 255, 0.2)',
+            padding: '0.35rem 0.75rem',
+            borderRadius: '20px',
+            fontSize: '0.8rem',
+            color: 'white',
+            marginTop: '0.75rem',
+            position: 'relative',
+            zIndex: 1,
+            textTransform: 'capitalize',
+          }}>
+            📄 {displayName}
+          </div>
+        </div>
+
+        {/* Body */}
+        <div style={{
+          padding: '2rem 2.5rem 2.5rem',
+          overflowY: 'auto',
+          maxHeight: 'calc(90vh - 200px)',
+        }}>
+          <form onSubmit={handleSubmit}>
+            {/* Company Name */}
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                Company Name <span style={{ color: '#e53935' }}>*</span>
+              </label>
+              <input
+                type="text"
+                name="companyName"
+                value={formData.companyName}
+                onChange={handleChange}
+                placeholder="Enter your company name"
                 style={{
-                  width: 62,
-                  height: 62,
-                  borderRadius: '50%',
-                  background: 'var(--red)',
-                  color: '#fff',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  margin: '0 auto 22px',
+                  width: '100%',
+                  padding: '0.9rem 1rem',
+                  border: `2px solid ${errors.companyName ? '#e53935' : '#e8ecf0'}`,
+                  borderRadius: '10px',
+                  fontSize: '0.95rem',
+                  background: errors.companyName ? '#fef2f2' : '#fafbfc',
+                  boxSizing: 'border-box',
                 }}
-              >
-                <Check size={28} strokeWidth={2.5} />
+              />
+              {errors.companyName && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.companyName}</span>}
+            </div>
+
+            {/* Name Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+              <div>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                  First Name <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="First name"
+                  style={{
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    border: `2px solid ${errors.firstName ? '#e53935' : '#e8ecf0'}`,
+                    borderRadius: '10px',
+                    fontSize: '0.95rem',
+                    background: errors.firstName ? '#fef2f2' : '#fafbfc',
+                    boxSizing: 'border-box',
+                  }}
+                />
+                {errors.firstName && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.firstName}</span>}
               </div>
-              <h3
-                id={titleId}
-                className="h2 h2--sm"
-                style={{ fontSize: 26, marginBottom: 12 }}
-              >
-                {cfg.sentTitle}
-              </h3>
-              <p
-                style={{
-                  fontSize: 14.5,
-                  lineHeight: 1.6,
-                  color: 'var(--text-muted)',
-                  maxWidth: 340,
-                  margin: '0 auto 24px',
-                }}
-              >
-                {cfg.sentMsg}
-              </p>
-              <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
-                {options.download && (
-                  <a
-                    href={options.download.url}
-                    download={options.download.filename}
-                    className="btn btn--primary btn--sm"
-                    style={{ textDecoration: 'none' }}
-                  >
-                    {tm('downloadDatasheet')} <ArrowRight size={15} />
-                  </a>
-                )}
-                <button onClick={onClose} className="btn btn--dark btn--sm">
-                  {tm('close')}
-                </button>
+              <div>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                  Last Name <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Last name"
+                  style={{
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    border: `2px solid ${errors.lastName ? '#e53935' : '#e8ecf0'}`,
+                    borderRadius: '10px',
+                    fontSize: '0.95rem',
+                    background: errors.lastName ? '#fef2f2' : '#fafbfc',
+                    boxSizing: 'border-box',
+                  }}
+                />
+                {errors.lastName && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.lastName}</span>}
               </div>
             </div>
-          ) : (
-            <>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 11, marginBottom: 12 }}>
-                <span style={{ width: 26, height: 2, background: 'var(--red)' }} />
-                <span
+
+            {/* Contact Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+              <div>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                  Email Address <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="your@email.com"
                   style={{
-                    fontSize: 11,
-                    fontWeight: 700,
-                    letterSpacing: '.18em',
-                    textTransform: 'uppercase',
-                    color: 'var(--text-faint-2)',
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    border: `2px solid ${errors.email ? '#e53935' : '#e8ecf0'}`,
+                    borderRadius: '10px',
+                    fontSize: '0.95rem',
+                    background: errors.email ? '#fef2f2' : '#fafbfc',
+                    boxSizing: 'border-box',
                   }}
-                >
-                  STRETCH&reg;
-                </span>
-              </div>
-              <h2
-                id={titleId}
-                className="h2 h2--sm"
-                style={{ fontSize: 'clamp(24px,3.2vw,33px)', lineHeight: 0.98, marginBottom: 10 }}
-              >
-                {cfg.title}
-              </h2>
-              <p
-                id={descId}
-                style={{
-                  fontSize: 14.5,
-                  lineHeight: 1.55,
-                  color: 'var(--text-muted)',
-                  margin: '0 0 24px',
-                }}
-              >
-                {cfg.subtitle}
-              </p>
-
-              {cfg.showDates && (
-                <div
-                  style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 22 }}
-                >
-                  {TRAINING_DATE_DETAIL.map((d, i) => ({
-                    date: (tm.raw('trainingDates') as string[])[i] ?? d.date,
-                    note: (tm.raw('trainingDateNotes') as string[])[i] ?? d.note,
-                  })).map((d) => (
-                    <div
-                      key={d.date}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        gap: 12,
-                        border: '1px solid var(--border)',
-                        padding: '13px 16px',
-                      }}
-                    >
-                      <span
-                        style={{
-                          fontFamily: 'var(--font-display)',
-                          fontWeight: 800,
-                          fontSize: 15,
-                          letterSpacing: '-.01em',
-                        }}
-                      >
-                        {d.date}
-                      </span>
-                      <span style={{ fontSize: 12.5, color: 'var(--text-faint)' }}>{d.note}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              <form onSubmit={handleSubmit} noValidate>
-                <div
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                    gap: 15,
-                    marginBottom: 18,
-                  }}
-                >
-                  {cfg.fields.map((f) => (
-                    <Field key={f.name} field={f} error={errors[f.name]} />
-                  ))}
-                </div>
-
-                <ConsentRow
-                  checked={consentChecked}
-                  onChange={setConsentChecked}
-                  error={errors.__consent}
-                  privacyLabel={t('consentPrivacy')}
-                  consentPrefix={t('consentPrefix')}
                 />
-
-                {status === 'error' && (
-                  <p className="field-error" role="alert" style={{ marginBottom: 12 }}>
-                    {t('errorMessage')}
-                  </p>
-                )}
-
-                <button
-                  type="submit"
-                  className="btn btn--primary"
-                  disabled={status === 'sending'}
-                  style={{ width: '100%', justifyContent: 'center', opacity: status === 'sending' ? 0.7 : 1 }}
-                >
-                  {status === 'sending' ? t('sending') : cfg.submitLabel}
-                  {status !== 'sending' && <ArrowRight size={16} />}
-                </button>
-                <p
+                {errors.email && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.email}</span>}
+              </div>
+              <div>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                  Phone Number <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="+32 XXX XX XX XX"
                   style={{
-                    fontSize: 11.5,
-                    color: 'var(--text-faint-2)',
-                    textAlign: 'center',
-                    margin: '14px 0 0',
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    border: `2px solid ${errors.phone ? '#e53935' : '#e8ecf0'}`,
+                    borderRadius: '10px',
+                    fontSize: '0.95rem',
+                    background: errors.phone ? '#fef2f2' : '#fafbfc',
+                    boxSizing: 'border-box',
+                  }}
+                />
+                {errors.phone && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.phone}</span>}
+              </div>
+            </div>
+
+            {/* Role Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+              <div>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                  Position / Role <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <select
+                  name="position"
+                  value={formData.position}
+                  onChange={handleChange}
+                  style={{
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    border: `2px solid ${errors.position ? '#e53935' : '#e8ecf0'}`,
+                    borderRadius: '10px',
+                    fontSize: '0.95rem',
+                    background: errors.position ? '#fef2f2' : '#fafbfc',
+                    boxSizing: 'border-box',
+                    cursor: 'pointer',
                   }}
                 >
-                  {t('reassurance')}
-                </p>
-              </form>
-            </>
-          )}
+                  {positionOptions.map((opt) => (
+                    <option key={opt.value} value={opt.value}>{opt.label}</option>
+                  ))}
+                </select>
+                {errors.position && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.position}</span>}
+              </div>
+              <div>
+                <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0a1628', display: 'block', marginBottom: '0.4rem' }}>
+                  Type of Company <span style={{ color: '#e53935' }}>*</span>
+                </label>
+                <select
+                  name="companyType"
+                  value={formData.companyType}
+                  onChange={handleChange}
+                  style={{
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    border: `2px solid ${errors.companyType ? '#e53935' : '#e8ecf0'}`,
+                    borderRadius: '10px',
+                    fontSize: '0.95rem',
+                    background: errors.companyType ? '#fef2f2' : '#fafbfc',
+                    boxSizing: 'border-box',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {companyTypes.map((opt) => (
+                    <option key={opt.value} value={opt.value}>{opt.label}</option>
+                  ))}
+                </select>
+                {errors.companyType && <span style={{ fontSize: '0.78rem', color: '#e53935' }}>{errors.companyType}</span>}
+              </div>
+            </div>
+
+            {/* Consent */}
+            <div style={{ marginTop: '1rem', marginBottom: '1.5rem' }}>
+              <label style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '0.75rem',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                color: '#4b5563',
+                lineHeight: 1.5,
+              }}>
+                <input
+                  type="checkbox"
+                  checked={consentChecked}
+                  onChange={(e) => setConsentChecked(e.target.checked)}
+                  style={{
+                    width: '20px',
+                    height: '20px',
+                    marginTop: '2px',
+                    accentColor: '#197FC7',
+                    cursor: 'pointer',
+                  }}
+                />
+                <span>
+                  I agree to receive communications from Re-Sound and accept the privacy policy.
+                </span>
+              </label>
+            </div>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              disabled={isSubmitting || !consentChecked}
+              style={{
+                width: '100%',
+                padding: '1rem 2rem',
+                background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '12px',
+                fontSize: '1rem',
+                fontWeight: 600,
+                fontFamily: 'Syne, sans-serif',
+                cursor: isSubmitting || !consentChecked ? 'not-allowed' : 'pointer',
+                opacity: isSubmitting || !consentChecked ? 0.7 : 1,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+              }}
+            >
+              {isSubmitting ? (
+                <>
+                  <span style={{
+                    width: '20px',
+                    height: '20px',
+                    border: '2px solid rgba(255, 255, 255, 0.3)',
+                    borderTopColor: 'white',
+                    borderRadius: '50%',
+                    animation: 'spin 0.8s linear infinite',
+                  }} />
+                  Processing...
+                </>
+              ) : (
+                <>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Download Now
+                </>
+              )}
+            </button>
+          </form>
         </div>
+
+        <style>{`
+          @keyframes spin {
+            to { transform: rotate(360deg); }
+          }
+        `}</style>
       </div>
-
-      <style jsx global>{`
-        @keyframes ctamFade {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        @keyframes ctamRise {
-          from {
-            opacity: 0;
-            transform: translateY(16px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .ctam-x:hover {
-          color: var(--red) !important;
-        }
-      `}</style>
-    </div>
-  );
-}
-
-function Field({ field, error }: { field: FormField; error?: string }) {
-  const tm = useTranslations('modals');
-  const id = `f-${field.name}`;
-  const invalid = Boolean(error);
-  const describedBy = invalid ? `${id}-err` : undefined;
-  return (
-    <div style={{ gridColumn: field.full ? '1 / -1' : 'auto' }}>
-      <label htmlFor={id} className="field-label">
-        {field.label}
-        {field.required && <span style={{ color: 'var(--red)' }}> *</span>}
-      </label>
-      {field.kind === 'text' && (
-        <input
-          id={id}
-          name={field.name}
-          className="field"
-          type={field.inputType || 'text'}
-          placeholder={field.placeholder}
-          aria-invalid={invalid}
-          aria-describedby={describedBy}
-          required={field.required}
-        />
-      )}
-      {field.kind === 'select' && (
-        <select
-          id={id}
-          name={field.name}
-          className="field"
-          defaultValue=""
-          aria-invalid={invalid}
-          aria-describedby={describedBy}
-        >
-          <option value="" disabled>
-            {tm('select')}
-          </option>
-          {field.options?.map((o) => (
-            <option key={o} value={o}>
-              {o}
-            </option>
-          ))}
-        </select>
-      )}
-      {field.kind === 'area' && (
-        <textarea
-          id={id}
-          name={field.name}
-          className="field"
-          placeholder={field.placeholder}
-          aria-invalid={invalid}
-          aria-describedby={describedBy}
-          style={{ minHeight: 92, resize: 'vertical' }}
-        />
-      )}
-      {invalid && (
-        <p id={`${id}-err`} className="field-error">
-          {error}
-        </p>
-      )}
-    </div>
-  );
-}
-
-function ConsentRow({
-  checked,
-  onChange,
-  error,
-  privacyLabel,
-  consentPrefix,
-}: {
-  checked: boolean;
-  onChange: (v: boolean) => void;
-  error?: string;
-  privacyLabel: string;
-  consentPrefix: string;
-}) {
-  return (
-    <div style={{ marginBottom: 18 }}>
-      <label
-        style={{
-          display: 'flex',
-          alignItems: 'flex-start',
-          gap: 10,
-          fontSize: 12.5,
-          lineHeight: 1.5,
-          color: 'var(--text-muted)',
-          cursor: 'pointer',
-        }}
-      >
-        <input
-          type="checkbox"
-          checked={checked}
-          onChange={(e) => onChange(e.target.checked)}
-          aria-invalid={Boolean(error)}
-          style={{ marginTop: 3, width: 16, height: 16, accentColor: 'var(--red)', flex: '0 0 auto' }}
-        />
-        <span>
-          {consentPrefix}{' '}
-          <Link href="/privacy" target="_blank" rel="noreferrer" style={{ color: 'var(--red)', textDecoration: 'underline' }}>
-            {privacyLabel}
-          </Link>
-          .
-        </span>
-      </label>
-      {error && (
-        <p className="field-error" role="alert">
-          {error}
-        </p>
-      )}
     </div>
   );
 }

@@ -1,241 +1,324 @@
 'use client';
 
-// GDPR consent banner + preference center. First-visit banner with Accept all /
-// Reject all / Customize. Customize reveals three toggles (Necessary always on,
-// Analytics, Marketing). Persists via setConsent (which also pushes the Consent
-// Mode v2 update + fires consent-update). Reopens on the consent-open-banner
-// event from the footer "Manage cookies" link.
-import { useEffect, useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
 import {
+  CONSENT_OPEN_EVENT,
   getConsent,
   setConsent,
-  hasConsentDecision,
-  CONSENT_OPEN_BANNER_EVENT,
 } from '@/lib/consent';
 
+/**
+ * Granular cookie consent banner.
+ *
+ * Three categories:
+ *  - Necessary   (always on; required for the site to function)
+ *  - Analytics   (GA4, Microsoft Clarity)
+ *  - Marketing   (Meta Pixel, Bing UET)
+ *
+ * Two views:
+ *  - Compact:  short description + "Accept all" / "Reject all" / "Customise"
+ *  - Settings: per-category toggles + "Save preferences"
+ *
+ * Reopens when any code dispatches the `consent-open-banner` event
+ * (the footer "Manage cookies" link does this).
+ */
 export default function CookieConsent() {
   const t = useTranslations('cookies');
-  const [visible, setVisible] = useState(false);
-  const [customizing, setCustomizing] = useState(false);
-  const [analyticsOn, setAnalyticsOn] = useState(true);
-  const [marketingOn, setMarketingOn] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
+  const [analytics, setAnalytics] = useState(false);
+  const [marketing, setMarketing] = useState(false);
 
+  // First-load: show only if no stored consent yet
   useEffect(() => {
-    if (!hasConsentDecision()) setVisible(true);
-    const reopen = () => {
-      const current = getConsent();
-      setAnalyticsOn(current?.analytics ?? true);
-      setMarketingOn(current?.marketing ?? true);
-      setCustomizing(true);
-      setVisible(true);
-    };
-    window.addEventListener(CONSENT_OPEN_BANNER_EVENT, reopen);
-    return () => window.removeEventListener(CONSENT_OPEN_BANNER_EVENT, reopen);
+    const stored = getConsent();
+    if (!stored) {
+      const timer = setTimeout(() => setIsVisible(true), 1500);
+      return () => clearTimeout(timer);
+    } else {
+      setAnalytics(stored.analytics);
+      setMarketing(stored.marketing);
+    }
   }, []);
 
-  function persist(analytics: boolean, marketing: boolean) {
-    setConsent({ analytics, marketing });
-    setVisible(false);
-    setCustomizing(false);
-  }
+  // Listen for "open banner" requests (e.g. footer link)
+  useEffect(() => {
+    const open = () => {
+      const stored = getConsent();
+      if (stored) {
+        setAnalytics(stored.analytics);
+        setMarketing(stored.marketing);
+      }
+      setShowSettings(true);
+      setIsVisible(true);
+    };
+    window.addEventListener(CONSENT_OPEN_EVENT, open);
+    return () => window.removeEventListener(CONSENT_OPEN_EVENT, open);
+  }, []);
 
-  if (!visible) return null;
+  const persist = useCallback((a: boolean, m: boolean) => {
+    setConsent({ analytics: a, marketing: m });
+    setIsVisible(false);
+    setShowSettings(false);
+  }, []);
+
+  if (!isVisible) return null;
 
   return (
     <div
+      className="cookie-banner"
       role="dialog"
-      aria-label={t('title')}
-      aria-live="polite"
-      style={{
-        position: 'fixed',
-        left: 0,
-        right: 0,
-        bottom: 0,
-        zIndex: 900,
-        background: '#fff',
-        borderTop: '2px solid var(--black)',
-        boxShadow: '0 -20px 50px rgba(0,0,0,.16)',
-      }}
+      aria-modal="false"
+      aria-labelledby="cookie-banner-title"
     >
-      <div
-        className="container"
-        style={{ paddingTop: 24, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 18 }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            gap: 28,
-            alignItems: 'flex-start',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-          }}
-        >
-          <div style={{ maxWidth: 560 }}>
-            <h2
-              className="h2 h2--sm"
-              style={{ fontSize: 20, marginBottom: 8 }}
-            >
-              {t('title')}
-            </h2>
-            <p style={{ fontSize: 13.5, lineHeight: 1.6, color: 'var(--text-muted)', margin: 0 }}>
-              {t('body')}{' '}
-              <Link href="/privacy" style={{ color: 'var(--red)', textDecoration: 'underline' }}>
-                {t('privacyLink')}
-              </Link>
-            </p>
-          </div>
-
-          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
-            {!customizing && (
-              <button
-                type="button"
-                className="btn btn--ghost btn--sm"
-                onClick={() => setCustomizing(true)}
-              >
-                {t('customize')}
-              </button>
-            )}
-            <button
-              type="button"
-              className="btn btn--ghost btn--sm"
-              onClick={() => persist(false, false)}
-            >
-              {t('rejectAll')}
-            </button>
-            <button
-              type="button"
-              className="btn btn--primary btn--sm"
-              onClick={() => persist(true, true)}
-            >
-              {t('acceptAll')}
-            </button>
-          </div>
+      <div className="cookie-content">
+        <div className="cookie-text">
+          <h3 id="cookie-banner-title">🍪 {t('title')}</h3>
+          <p>
+            {t('description')}{' '}
+            <a href="/privacy" className="cookie-link">
+              {t('readPolicy')}
+            </a>
+          </p>
         </div>
 
-        {customizing && (
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: 1,
-              background: 'var(--border)',
-              border: '1px solid var(--border)',
-            }}
-          >
-            <ToggleRow label={t('necessary')} desc={t('necessaryDesc')} state="locked" stateLabel={t('always')} />
-            <ToggleRow
-              label={t('analytics')}
-              desc={t('analyticsDesc')}
-              state={analyticsOn ? 'on' : 'off'}
-              onToggle={() => setAnalyticsOn((v) => !v)}
-            />
-            <ToggleRow
-              label={t('marketing')}
-              desc={t('marketingDesc')}
-              state={marketingOn ? 'on' : 'off'}
-              onToggle={() => setMarketingOn((v) => !v)}
-            />
-            <div
-              style={{
-                background: '#fff',
-                padding: 20,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <button
-                type="button"
-                className="btn btn--dark btn--sm"
-                style={{ width: '100%', justifyContent: 'center' }}
-                onClick={() => persist(analyticsOn, marketingOn)}
-              >
-                {t('save')}
-              </button>
-            </div>
+        {showSettings && (
+          <div className="cookie-settings">
+            <label className="cookie-row cookie-row-locked">
+              <span className="cookie-row-text">
+                <span className="cookie-row-title">{t('necessary.title')}</span>
+                <span className="cookie-row-desc">
+                  {t('necessary.description')}
+                </span>
+              </span>
+              <span className="cookie-toggle cookie-toggle-locked">
+                {t('alwaysOn')}
+              </span>
+            </label>
+
+            <label className="cookie-row">
+              <span className="cookie-row-text">
+                <span className="cookie-row-title">{t('analytics.title')}</span>
+                <span className="cookie-row-desc">
+                  {t('analytics.description')}
+                </span>
+              </span>
+              <input
+                type="checkbox"
+                checked={analytics}
+                onChange={(e) => setAnalytics(e.target.checked)}
+                aria-label={t('analytics.title')}
+              />
+            </label>
+
+            <label className="cookie-row">
+              <span className="cookie-row-text">
+                <span className="cookie-row-title">{t('marketing.title')}</span>
+                <span className="cookie-row-desc">
+                  {t('marketing.description')}
+                </span>
+              </span>
+              <input
+                type="checkbox"
+                checked={marketing}
+                onChange={(e) => setMarketing(e.target.checked)}
+                aria-label={t('marketing.title')}
+              />
+            </label>
           </div>
         )}
-      </div>
-    </div>
-  );
-}
 
-function ToggleRow({
-  label,
-  desc,
-  state,
-  stateLabel,
-  onToggle,
-}: {
-  label: string;
-  desc: string;
-  state: 'on' | 'off' | 'locked';
-  stateLabel?: string;
-  onToggle?: () => void;
-}) {
-  const on = state === 'on';
-  const locked = state === 'locked';
-  return (
-    <div style={{ background: '#fff', padding: 20 }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
-        <span
-          style={{
-            fontSize: 11.5,
-            fontWeight: 700,
-            letterSpacing: '.1em',
-            textTransform: 'uppercase',
-            color: 'var(--text)',
-          }}
-        >
-          {label}
-        </span>
-        {locked ? (
-          <span
-            style={{
-              fontSize: 10.5,
-              fontWeight: 700,
-              letterSpacing: '.1em',
-              textTransform: 'uppercase',
-              color: 'var(--text-faint-2)',
-            }}
-          >
-            {stateLabel}
-          </span>
-        ) : (
-          <button
-            type="button"
-            role="switch"
-            aria-checked={on}
-            aria-label={label}
-            onClick={onToggle}
-            style={{
-              width: 42,
-              height: 24,
-              border: 'none',
-              cursor: 'pointer',
-              background: on ? 'var(--red)' : '#cfccc6',
-              position: 'relative',
-              transition: 'background .2s',
-              flex: '0 0 auto',
-            }}
-          >
-            <span
-              style={{
-                position: 'absolute',
-                top: 3,
-                left: on ? 21 : 3,
-                width: 18,
-                height: 18,
-                background: '#fff',
-                transition: 'left .2s',
-              }}
-            />
-          </button>
-        )}
+        <div className="cookie-actions">
+          {!showSettings && (
+            <>
+              <button
+                type="button"
+                onClick={() => persist(true, true)}
+                className="btn-primary"
+              >
+                {t('acceptAll')}
+              </button>
+              <button
+                type="button"
+                onClick={() => persist(false, false)}
+                className="btn-secondary"
+              >
+                {t('rejectAll')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowSettings(true)}
+                className="btn-link"
+              >
+                {t('customise')}
+              </button>
+            </>
+          )}
+          {showSettings && (
+            <>
+              <button
+                type="button"
+                onClick={() => persist(analytics, marketing)}
+                className="btn-primary"
+              >
+                {t('savePreferences')}
+              </button>
+              <button
+                type="button"
+                onClick={() => persist(true, true)}
+                className="btn-secondary"
+              >
+                {t('acceptAll')}
+              </button>
+              <button
+                type="button"
+                onClick={() => persist(false, false)}
+                className="btn-link"
+              >
+                {t('rejectAll')}
+              </button>
+            </>
+          )}
+        </div>
       </div>
-      <p style={{ fontSize: 12.5, lineHeight: 1.5, color: 'var(--text-faint)', margin: 0 }}>{desc}</p>
+
+      <style jsx>{`
+        .cookie-banner {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: white;
+          padding: 1.5rem 2rem;
+          box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.12);
+          z-index: 1000;
+          animation: slideUp 0.4s ease;
+        }
+
+        @keyframes slideUp {
+          from { transform: translateY(100%); opacity: 0; }
+          to   { transform: translateY(0);    opacity: 1; }
+        }
+
+        .cookie-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+        }
+
+        .cookie-text h3 {
+          font-size: 1.1rem;
+          color: var(--deep-blue);
+          margin-bottom: 0.25rem;
+        }
+        .cookie-text p {
+          color: #555;
+          font-size: 0.95rem;
+          margin: 0;
+        }
+        .cookie-link {
+          color: var(--brand-blue);
+          text-decoration: underline;
+        }
+
+        .cookie-settings {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          padding: 1rem;
+          background: #f7f9fb;
+          border-radius: 12px;
+        }
+
+        .cookie-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+          padding: 0.5rem 0;
+          cursor: pointer;
+        }
+        .cookie-row-text {
+          display: flex;
+          flex-direction: column;
+          gap: 0.15rem;
+        }
+        .cookie-row-title {
+          font-weight: 600;
+          color: var(--deep-blue);
+          font-size: 0.95rem;
+        }
+        .cookie-row-desc {
+          color: #666;
+          font-size: 0.85rem;
+        }
+        .cookie-row input[type='checkbox'] {
+          width: 1.25rem;
+          height: 1.25rem;
+          accent-color: var(--brand-blue);
+        }
+
+        .cookie-toggle-locked {
+          font-size: 0.8rem;
+          padding: 0.25rem 0.6rem;
+          background: #c9d6e0;
+          color: #2a2a2a;
+          border-radius: 999px;
+          font-weight: 600;
+        }
+
+        .cookie-actions {
+          display: flex;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+        }
+
+        .cookie-actions .btn-primary,
+        .cookie-actions .btn-secondary {
+          padding: 0.65rem 1.25rem;
+          font-size: 0.9rem;
+        }
+
+        .cookie-actions .btn-link {
+          background: none;
+          border: none;
+          color: var(--brand-blue);
+          font-size: 0.9rem;
+          text-decoration: underline;
+          padding: 0.65rem 0.5rem;
+          cursor: pointer;
+        }
+
+        @media (min-width: 900px) {
+          .cookie-content {
+            grid-template-columns: 1fr auto;
+            grid-template-areas: 'text actions' 'settings settings';
+            align-items: center;
+            gap: 1.5rem 2rem;
+          }
+          .cookie-text { grid-area: text; }
+          .cookie-actions { grid-area: actions; flex-shrink: 0; }
+          .cookie-settings { grid-area: settings; }
+        }
+
+        @media (max-width: 768px) {
+          .cookie-banner {
+            padding: 1.25rem 1rem;
+          }
+          .cookie-actions {
+            justify-content: stretch;
+          }
+          .cookie-actions .btn-primary,
+          .cookie-actions .btn-secondary {
+            flex: 1;
+            justify-content: center;
+          }
+        }
+      `}</style>
     </div>
   );
 }
