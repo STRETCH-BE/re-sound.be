@@ -18,11 +18,17 @@ The catalog is organised into three material families. Each product page lists a
 - [rPET Panel — Flat recycled-PET acoustic panels](https://re-sound.be/en/products/rpet-panel): Versatile flat acoustic panels from 100% recycled PET (post-consumer bottles). Process like MDF — cut, mill, drill, paint. OEKO-TEX® certified. Class A+ VOC emissions. Made in Belgium.
 - [rPET Groove — Grooved recycled-PET acoustic panels](https://re-sound.be/en/products/rpet-groove): Grooved acoustic panels in 100% recycled PET. 12 designer colors. 3 thicknesses (12, 24, 36 mm). B-s1,d0 fire rating. OEKO-TEX® certified. Made in Belgium.
 - [rPET Flex Groove — Flexible recycled-PET panels](https://re-sound.be/en/products/rpet-flex-groove): Flexible grooved acoustic panels from 100% recycled PET. Bendable for curved surfaces, columns, and bespoke installations. OEKO-TEX® certified. Made in Belgium.
+- [Solo Flex — Single-person acoustic soundbooth](https://re-sound.be/en/products/solo-flex): Single-person acoustic phone booth for focus calls and deep work. 1 m² footprint, integrated sit-stand desk, 230V power and USB-C.
+- [Duo — Two-configuration acoustic soundbooth](https://re-sound.be/en/products/duo): One soundbooth, two configurations: Flex seats two for a focused meeting; Work gives one person a full-width desk. 2 m² footprint.
+- [Modular XL — Scalable acoustic meeting pod](https://re-sound.be/en/products/modular-xl): Scalable acoustic meeting pod. Base accommodates 6, expandable to 10 in 90-cm segments. 25.9 dB(A) speech reduction, full A/V provisions.
 
 ## About
 
 - [About Re-Sound](https://re-sound.be/en/about): Company background, manufacturing partners, certifications, and the founding story behind STRETCH-BE BV.
 - [Sustainability](https://re-sound.be/en/sustainability): Circular economy model, recycled-content figures per product line, take-back program, FSC and OEKO-TEX® certifications, end-of-life processing.
+- [FAQ](https://re-sound.be/en/faq): Answers to common questions about absorption, fire ratings, lead times, and the circular take-back program.
+- [Where to buy](https://re-sound.be/en/where-to-buy): Showroom visits at the Beveren-Waas headquarters, free sample kits, live video tours, and on-site consultations.
+- [Partner programme](https://re-sound.be/en/partner): Trade and dealer programme for architects, designers, dealers, and distributors across Europe.
 - [Blog](https://re-sound.be/en/blog): Articles on acoustics, circular economy, and sustainable interior design.
 
 ## Key facts
