@@ -37,7 +37,9 @@ export function organizationSchema() {
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/images/re-sound-logo.svg`,
+      url: `${SITE_URL}/images/re-sound-logo.png`,
+      width: 512,
+      height: 512,
     },
     description:
       'Belgian B2B manufacturer of circular acoustic panels made from recycled textiles, FSC-certified wood veneer, and recycled PET. Free take-back service.',
@@ -173,7 +175,14 @@ export function productSchema(input: ProductSchemaInput) {
     },
     category: input.category,
     brand: { '@type': 'Brand', name: 'Re-Sound' },
-    manufacturer: { '@id': `${SITE_URL}/#organization` },
+    // Self-describing reference: the full Organization node only exists on
+    // the homepage, so include name/url inline to avoid a dangling @id.
+    manufacturer: {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: 'Re-Sound',
+      url: SITE_URL,
+    },
   };
 
   if (input.countryOfOrigin) {
@@ -196,21 +205,30 @@ export function productSchema(input: ProductSchemaInput) {
     }));
   }
 
-  // Offers — always emit at least the availability + seller block. Google
-  // requires priceCurrency whenever lowPrice is set, plus priceValidUntil.
-  const offer = input.offer ?? {};
-  const offerNode: Record<string, unknown> = {
-    '@type': 'AggregateOffer',
-    priceCurrency: offer.priceCurrency ?? 'EUR',
-    availability: 'https://schema.org/InStock',
-    seller: { '@id': `${SITE_URL}/#organization` },
-    eligibleRegion: ['BE', 'NL', 'FR', 'DE', 'LU'],
-  };
-  if (offer.lowPrice) {
-    offerNode.lowPrice = offer.lowPrice;
-    offerNode.priceValidUntil = offer.priceValidUntil ?? '2026-12-31';
+  // Offers — only when a public price exists. Google requires lowPrice on
+  // AggregateOffer; emitting the block without it is flagged as invalid in
+  // Search Console and kills rich-result eligibility for the whole Product.
+  // Products with project-based pricing simply omit offers.
+  if (input.offer?.lowPrice) {
+    const offer = input.offer;
+    node.offers = {
+      '@type': 'AggregateOffer',
+      lowPrice: offer.lowPrice,
+      priceCurrency: offer.priceCurrency ?? 'EUR',
+      // Default: end of next calendar year, so the date never silently
+      // expires the way a hardcoded one would.
+      priceValidUntil:
+        offer.priceValidUntil ?? `${new Date().getFullYear() + 1}-12-31`,
+      availability: 'https://schema.org/InStock',
+      seller: {
+        '@type': 'Organization',
+        '@id': `${SITE_URL}/#organization`,
+        name: 'Re-Sound',
+        url: SITE_URL,
+      },
+      eligibleRegion: ['BE', 'NL', 'FR', 'DE', 'LU'],
+    };
   }
-  node.offers = offerNode;
 
   // Free take-back program → MerchantReturnPolicy. The take-back is
   // effectively lifetime, but schema.org expects either a finite-window
