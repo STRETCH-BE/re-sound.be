@@ -699,8 +699,9 @@
     "placeholder": "Indtast din e-mail",
     "subscribe": "Abonner",
     "subscribing": "Abonnerer...",
-    "success": "Thank you for subscribing! Check your inbox for confirmation.",
-    "privacy": "Vi respekterer dit privatliv. Afmeld til enhver tid."
+    "success": "Tak for din tilmelding!",
+    "privacy": "Vi respekterer dit privatliv. Afmeld til enhver tid.",
+    "error": "Noget gik galt. Prøv igen."
   },
   "footer": {
     "description": "Cirkulære akustikløsninger fremstillet af genanvendte materialer. Designet til planeten, fremstillet i Belgien.",

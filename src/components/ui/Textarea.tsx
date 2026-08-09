@@ -1,6 +1,6 @@
 "use client";
 
-import { TextareaHTMLAttributes, forwardRef } from 'react';
+import { TextareaHTMLAttributes, forwardRef, useId } from 'react';
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
@@ -11,7 +11,8 @@ interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 
 const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ label, error, helperText, fullWidth = true, className = '', id, ...props }, ref) => {
-    const textareaId = id || `textarea-${Math.random().toString(36).substr(2, 9)}`;
+    const generatedId = useId();
+    const textareaId = id || generatedId;
 
     return (
       <div className={`textarea-wrapper ${fullWidth ? 'full-width' : ''} ${className}`}>
@@ -90,7 +91,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
 
           .helper-text {
             font-size: 0.85rem;
-            color: #888;
+            color: #767676;
           }
         `}</style>
       </div>

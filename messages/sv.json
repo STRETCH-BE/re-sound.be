@@ -699,8 +699,9 @@
     "placeholder": "Ange din e-post",
     "subscribe": "Prenumerera",
     "subscribing": "Prenumererar...",
-    "success": "Thank you for subscribing! Check your inbox for confirmation.",
-    "privacy": "Vi respekterar din integritet. Avsluta prenumeration när som helst."
+    "success": "Tack för din prenumeration!",
+    "privacy": "Vi respekterar din integritet. Avsluta prenumeration när som helst.",
+    "error": "Något gick fel. Försök igen."
   },
   "footer": {
     "description": "Cirkulära akustiklösningar tillverkade av återvunna material. Designade för planeten, tillverkade i Belgien.",

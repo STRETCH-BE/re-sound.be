@@ -1,6 +1,6 @@
 "use client";
 
-import { SelectHTMLAttributes, forwardRef } from 'react';
+import { SelectHTMLAttributes, forwardRef, useId } from 'react';
 
 interface SelectOption {
   value: string;
@@ -18,7 +18,8 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 
 const Select = forwardRef<HTMLSelectElement, SelectProps>(
   ({ label, error, helperText, fullWidth = true, options, placeholder, className = '', id, ...props }, ref) => {
-    const selectId = id || `select-${Math.random().toString(36).substr(2, 9)}`;
+    const generatedId = useId();
+    const selectId = id || generatedId;
 
     return (
       <div className={`select-wrapper ${fullWidth ? 'full-width' : ''} ${className}`}>
@@ -115,7 +116,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             top: 50%;
             transform: translateY(-50%);
             pointer-events: none;
-            color: #888;
+            color: #767676;
           }
 
           .error-text {
@@ -125,7 +126,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
 
           .helper-text {
             font-size: 0.85rem;
-            color: #888;
+            color: #767676;
           }
         `}</style>
       </div>

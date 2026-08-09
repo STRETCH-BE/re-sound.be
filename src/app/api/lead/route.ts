@@ -202,7 +202,7 @@ function generateEmailHTML(data: LeadData, timestamp: string): string {
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                       <tr>
                         <td width="140" style="color: #888; font-size: 13px; vertical-align: top;">Samples</td>
-                        <td style="color: #333; font-size: 15px;">${escHtml(extraFields.requestedSamples)}</td>
+                        <td style="color: #333; font-size: 15px;">${extraFields.requestedSamples}</td>
                       </tr>
                     </table>
                   </td>
@@ -216,7 +216,7 @@ function generateEmailHTML(data: LeadData, timestamp: string): string {
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                       <tr>
                         <td width="140" style="color: #888; font-size: 13px; vertical-align: top;">Shipping to</td>
-                        <td style="color: #333; font-size: 15px; white-space: pre-line;">${escHtml(extraFields.shippingAddress)}</td>
+                        <td style="color: #333; font-size: 15px; white-space: pre-line;">${extraFields.shippingAddress}</td>
                       </tr>
                     </table>
                   </td>
@@ -230,7 +230,7 @@ function generateEmailHTML(data: LeadData, timestamp: string): string {
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                       <tr>
                         <td width="140" style="color: #888; font-size: 13px; vertical-align: top;">Notes</td>
-                        <td style="color: #333; font-size: 15px; font-style: italic; white-space: pre-wrap;">${escHtml(extraFields.notes)}</td>
+                        <td style="color: #333; font-size: 15px; font-style: italic; white-space: pre-wrap;">${extraFields.notes}</td>
                       </tr>
                     </table>
                   </td>
@@ -339,9 +339,20 @@ Automated lead from re-sound.be
 // ==========================================
 // API ROUTE HANDLER
 // ==========================================
+const MAX_FIELD_LENGTH = 500;
+const MAX_NOTES_LENGTH = 5000;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export async function POST(request: NextRequest) {
   try {
-    const data: LeadData = await request.json();
+    const raw: LeadData & { website?: string } = await request.json();
+
+    // Honeypot — same pattern as /api/contact. Real forms never render a
+    // `website` field; if it's filled, a bot did it. Respond 200 so the bot
+    // doesn't learn anything.
+    if (raw.website && raw.website.trim().length > 0) {
+      return NextResponse.json({ success: true });
+    }
 
     const {
       companyName,
@@ -353,7 +364,7 @@ export async function POST(request: NextRequest) {
       companyType,
       source,
       downloadedFile,
-    } = data;
+    } = raw;
 
     // Validate required fields
     if (!companyName || !firstName || !lastName || !email) {
@@ -362,6 +373,48 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    if (!EMAIL_RE.test(email)) {
+      return NextResponse.json(
+        { error: 'Invalid email address' },
+        { status: 400 }
+      );
+    }
+
+    const tooLong = [companyName, firstName, lastName, email, phone, position, companyType, source, downloadedFile]
+      .some((v) => (v ?? '').length > MAX_FIELD_LENGTH);
+    if (
+      tooLong ||
+      (raw.extraFields?.notes ?? '').length > MAX_NOTES_LENGTH ||
+      (raw.extraFields?.shippingAddress ?? '').length > MAX_NOTES_LENGTH ||
+      (raw.extraFields?.requestedSamples ?? '').length > MAX_FIELD_LENGTH
+    ) {
+      return NextResponse.json(
+        { error: 'Field too long' },
+        { status: 400 }
+      );
+    }
+
+    // Escape every user-controlled field once, up front — the HTML template
+    // interpolates these directly.
+    const data: LeadData = {
+      companyName: escHtml(companyName),
+      firstName: escHtml(firstName),
+      lastName: escHtml(lastName),
+      email: escHtml(email),
+      phone: escHtml(phone),
+      position: escHtml(position),
+      companyType: escHtml(companyType),
+      source: escHtml(source),
+      downloadedFile: escHtml(downloadedFile),
+      extraFields: raw.extraFields
+        ? {
+            shippingAddress: escHtml(raw.extraFields.shippingAddress),
+            requestedSamples: escHtml(raw.extraFields.requestedSamples),
+            notes: escHtml(raw.extraFields.notes),
+          }
+        : undefined,
+    };
 
     // Format timestamp
     const now = new Date();
@@ -376,7 +429,9 @@ export async function POST(request: NextRequest) {
 
     // Generate email content
     const htmlBody = generateEmailHTML(data, timestamp);
-    const textBody = generatePlainText(data, timestamp);
+    // Plain-text body needs no HTML escaping — use the raw values so the
+    // text alternative stays readable (no &amp; entities).
+    const textBody = generatePlainText(raw, timestamp);
 
     // Send to Power Automate webhook
     const webhookUrl = process.env.POWER_AUTOMATE_WEBHOOK_URL;

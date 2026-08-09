@@ -648,8 +648,9 @@
     "placeholder": "Voer uw e-mail in",
     "subscribe": "Abonneren",
     "subscribing": "Abonneren...",
-    "success": "Bedankt voor uw abonnement! Controleer uw inbox voor bevestiging.",
-    "privacy": "We respecteren uw privacy. Uitschrijven kan op elk moment."
+    "success": "Bedankt voor uw abonnement!",
+    "privacy": "We respecteren uw privacy. Uitschrijven kan op elk moment.",
+    "error": "Er is iets misgegaan. Probeer het opnieuw."
   },
   "footer": {
     "description": "Circulaire akoestische oplossingen gemaakt van gerecycleerde materialen. Ontworpen voor de planeet, gemaakt in België.",

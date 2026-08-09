@@ -648,8 +648,9 @@
     "placeholder": "Entrez votre email",
     "subscribe": "S'abonner",
     "subscribing": "Abonnement...",
-    "success": "Merci de vous être abonné ! Vérifiez votre boîte de réception pour confirmation.",
-    "privacy": "Nous respectons votre vie privée. Désabonnez-vous à tout moment."
+    "success": "Merci de vous être abonné !",
+    "privacy": "Nous respectons votre vie privée. Désabonnez-vous à tout moment.",
+    "error": "Une erreur est survenue. Veuillez réessayer."
   },
   "footer": {
     "description": "Solutions acoustiques circulaires fabriquées à partir de matériaux recyclés. Conçu pour la planète, fabriqué en Belgique.",

@@ -699,8 +699,9 @@
     "placeholder": "Skriv inn e-posten din",
     "subscribe": "Abonner",
     "subscribing": "Abonnerer...",
-    "success": "Thank you for subscribing! Check your inbox for confirmation.",
-    "privacy": "Vi respekterer ditt personvern. Avslutt abonnementet når som helst."
+    "success": "Takk for at du abonnerer!",
+    "privacy": "Vi respekterer ditt personvern. Avslutt abonnementet når som helst.",
+    "error": "Noe gikk galt. Prøv igjen."
   },
   "footer": {
     "description": "Sirkulære akustikkløsninger laget av gjenvunne materialer. Designet for planeten, laget i Belgia.",
