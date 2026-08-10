@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -13,8 +14,22 @@ interface MobileMenuProps {
 export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
   const t = useTranslations('nav');
 
+  // Close the open menu on Escape.
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+  }, [isOpen, onClose]);
+
   return (
-    <div className={`mobile-nav ${isOpen ? 'active' : ''}`}>
+    <div
+      id="mobile-nav-menu"
+      className={`mobile-nav ${isOpen ? 'active' : ''}`}
+      aria-hidden={!isOpen}
+    >
       {navLinks.map((link, index) => (
         <Link
           key={link.href}
@@ -49,12 +64,18 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
           align-items: center;
           gap: 2rem;
           opacity: 0;
+          /* visibility: hidden removes the closed menu from the accessibility
+             tree and tab order (its links were invisible focus targets).
+             The transition keeps the fade-out: visibility flips only after
+             the opacity animation completes. */
+          visibility: hidden;
           pointer-events: none;
-          transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
         }
 
         .mobile-nav.active {
           opacity: 1;
+          visibility: visible;
           pointer-events: all;
         }
 
@@ -90,6 +111,13 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
           align-items: center;
           gap: 1.5rem;
           margin-top: 1rem;
+        }
+
+        /* ≥44x44px tap target for the language switcher trigger (WCAG 2.5.8) */
+        .mobile-nav-actions :global(.lang-toggle) {
+          min-width: 44px;
+          min-height: 44px;
+          justify-content: center;
         }
 
         .mobile-nav :global(.nav-cta) {

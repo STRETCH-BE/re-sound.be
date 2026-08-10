@@ -1,11 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for rPET - Groove (12 colors)
 const colorOptions = [
@@ -224,6 +227,7 @@ export default function RPetGrooveProductPage() {
                 src={currentHeroImage}
                 alt={`rPET - Groove acoustic panel${selectedColor ? ` in ${selectedColor.name}` : ''}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
@@ -286,6 +290,7 @@ export default function RPetGrooveProductPage() {
                 src="/images/products/rpet-groove/rPET - Groove - Grey2.jpg"
                 alt="rPET - Groove acoustic panel in modern office"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -710,6 +715,7 @@ export default function RPetGrooveProductPage() {
                 src="/images/products/rpet-groove/processing-cnc.jpg"
                 alt="Panel installation process"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -726,6 +732,7 @@ export default function RPetGrooveProductPage() {
                 src="/images/products/rpet-groove/overview-recycled.jpg"
                 alt="Recycled materials"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -944,6 +951,7 @@ export default function RPetGrooveProductPage() {
                   src={`/images/products/rpet-groove/gallery-${i}.jpg`}
                   alt={`rPET - Groove installation example ${i}`}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 400px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -1221,7 +1229,7 @@ export default function RPetGrooveProductPage() {
         .selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1744,7 +1752,7 @@ export default function RPetGrooveProductPage() {
         .diagram-title {
           font-size: 0.85rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 2rem;
@@ -1830,7 +1838,7 @@ export default function RPetGrooveProductPage() {
 
         .layer-desc {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         /* Sound Waves Animation */
@@ -1864,7 +1872,7 @@ export default function RPetGrooveProductPage() {
 
         .wave-label {
           font-size: 0.65rem;
-          color: #888;
+          color: #767676;
           writing-mode: vertical-rl;
           text-orientation: mixed;
           transform: rotate(180deg);
@@ -1919,7 +1927,7 @@ export default function RPetGrooveProductPage() {
 
         .rating-content .rating-label {
           font-size: 0.85rem;
-          color: #888;
+          color: #767676;
         }
 
         .rating-badge {
@@ -1984,7 +1992,7 @@ export default function RPetGrooveProductPage() {
 
         .thickness-nrc {
           font-size: 0.75rem;
-          color: #888;
+          color: #767676;
         }
 
         .certification-note {
@@ -2215,7 +2223,7 @@ export default function RPetGrooveProductPage() {
 
         .download-icon { font-size: 2rem; }
         .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #888; }
+        .download-info span { font-size: 0.8rem; color: #767676; }
         .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
 
         /* Applications Section */

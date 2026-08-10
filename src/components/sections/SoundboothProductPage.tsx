@@ -1,11 +1,16 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Code-split: the lead modal only mounts on download-card click, so it is
+// excluded from the initial page bundle and never server-rendered.
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 /**
  * Shared template for the Re-Sound soundbooth product pages.
@@ -113,6 +118,9 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
   const [selectedDownload, setSelectedDownload] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [activeConfig, setActiveConfig] = useState(configurations?.[0]?.id ?? '');
+  // If a configuration-swapped hero image fails to load, fall back to the
+  // default hero. Reset whenever the user picks another configuration.
+  const [heroError, setHeroError] = useState(false);
 
   useEffect(() => {
     analytics.viewItem(slug, 'booth');
@@ -196,7 +204,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
   };
 
   const activeConfigObj = configurations?.find((c) => c.id === activeConfig);
-  const displayHero = activeConfigObj?.image ?? heroImage;
+  const displayHero = (!heroError && activeConfigObj?.image) || heroImage;
 
   return (
     <div className="booth-product-page">
@@ -241,8 +249,10 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
               src={displayHero}
               alt={t('hero.title')}
               fill
+              sizes="(max-width: 1024px) 100vw, 600px"
               style={{ objectFit: 'cover' }}
               priority
+              onError={() => setHeroError(true)}
             />
           </div>
         </div>
@@ -285,6 +295,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
                 src={`${imageDir}/overview.jpg`}
                 alt={t('overview.title')}
                 fill
+                sizes="(max-width: 1024px) 100vw, 700px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -343,7 +354,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
               <button
                 key={c.id}
                 className={`config-tab ${activeConfig === c.id ? 'active' : ''}`}
-                onClick={() => setActiveConfig(c.id)}
+                onClick={() => { setActiveConfig(c.id); setHeroError(false); }}
               >
                 <span className="config-letter">
                   {t(`configurations.${c.id}.letter`)}
@@ -363,6 +374,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
                     src={activeConfigObj.image}
                     alt={t(`configurations.${activeConfig}.name`)}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 700px"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
@@ -506,7 +518,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
               {a.image && (
                 <div className="addon-image">
                   <div className="image-container">
-                    <Image src={a.image} alt={t(`addons.${a.id}.title`)} fill style={{ objectFit: 'cover' }} />
+                    <Image src={a.image} alt={t(`addons.${a.id}.title`)} fill sizes="(max-width: 640px) 100vw, 180px" style={{ objectFit: 'cover' }} />
                   </div>
                 </div>
               )}

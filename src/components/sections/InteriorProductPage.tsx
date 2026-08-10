@@ -1,11 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Code-split the modal — it only renders after a download click.
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for the product
 const colorOptions = [
@@ -192,9 +196,17 @@ export default function InteriorProductPage() {
                 src={selectedColor.image}
                 alt={`Re-Sound Interior acoustic wall panels in ${selectedColor.name}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => {
+                  // Broken variant image — fall back to the default hero.
+                  setIsImageLoading(false);
+                  if (selectedColor.id !== colorOptions[0].id) {
+                    setSelectedColor(colorOptions[0]);
+                  }
+                }}
               />
             </div>
             {isImageLoading && (
@@ -255,6 +267,7 @@ export default function InteriorProductPage() {
                 src="/images/products/interior/overview.jpg"
                 alt="Interior panel complete package"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -317,6 +330,7 @@ export default function InteriorProductPage() {
                 src="/images/products/interior/circular.jpg"
                 alt="Circular design - recycled materials"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -330,9 +344,10 @@ export default function InteriorProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/interior/modular.jpg"
+                src="/images/products/interior/hero.webp"
                 alt="Modular wall panel configurations"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -391,6 +406,7 @@ export default function InteriorProductPage() {
                 src="/images/products/interior/maintenance.jpg"
                 alt="Easy maintenance with removable cover"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -602,6 +618,7 @@ export default function InteriorProductPage() {
                   src={`/images/products/interior/gallery-${i}.jpg`}
                   alt={`Interior panel installation example ${i}`}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 384px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -872,7 +889,7 @@ export default function InteriorProductPage() {
         .color-selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1210,7 +1227,7 @@ export default function InteriorProductPage() {
 
         .freq-range {
           font-size: 0.75rem;
-          color: #888;
+          color: #767676;
         }
 
         .absorption-rating {
@@ -1418,7 +1435,7 @@ export default function InteriorProductPage() {
 
         .download-info span {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         .download-arrow {

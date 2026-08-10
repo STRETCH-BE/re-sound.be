@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import FAQContent from '@/components/sections/FAQContent';
 import JsonLd from '@/components/seo/JsonLd';
+import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 
 interface PageProps {
@@ -39,6 +41,14 @@ export async function generateMetadata({
       title: t('faqTitle'),
       description: t('faqDescription'),
       type: 'website',
+      images: [
+        {
+          url: `/api/og?page=faq&locale=${locale}`,
+          width: 1200,
+          height: 630,
+          alt: t('faqTitle'),
+        },
+      ],
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
     },
@@ -71,10 +81,12 @@ export default async function Page({ params: { locale } }: PageProps) {
   };
 
   // Hand the component the list of question keys — it pulls translations itself
+  const messages = pickMessages(await getMessages(), ['faq']);
+
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd data={faqJsonLd} />
       <FAQContent questionKeys={QUESTION_KEYS as unknown as string[]} />
-    </>
+    </NextIntlClientProvider>
   );
 }

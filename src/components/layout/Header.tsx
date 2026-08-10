@@ -85,6 +85,7 @@ export default function Header() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-nav-menu"
         >
           <span></span>
           <span></span>
@@ -159,14 +160,27 @@ export default function Header() {
           gap: 1.5rem;
         }
 
+        /* ≥44x44px tap target for the language switcher trigger (WCAG 2.5.8) */
+        .nav-actions :global(.lang-toggle) {
+          min-width: 44px;
+          min-height: 44px;
+          justify-content: center;
+        }
+
         .mobile-menu-btn {
           display: none;
           flex-direction: column;
+          align-items: center;
+          justify-content: center;
           gap: 5px;
           background: none;
           border: none;
           cursor: pointer;
           padding: 5px;
+          /* ≥44x44px tap target (WCAG 2.5.8) — the hamburger glyph stays 24x16,
+             centered inside the larger hit area. */
+          min-width: 44px;
+          min-height: 44px;
           z-index: 101;
         }
 

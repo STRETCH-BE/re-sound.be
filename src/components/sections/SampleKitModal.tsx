@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Link } from '@/i18n/navigation';
 import { analytics } from '@/lib/analytics';
 
 export interface SampleFormData {
@@ -47,6 +48,61 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
   const [form, setForm] = useState<SampleFormData>(EMPTY);
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
+
+  // Close on Escape while the modal is open.
+  useEffect(() => {
+    if (!open) return;
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') handleClose();
+    };
+    document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
+
+  // Focus management: move focus into the dialog on open, trap Tab inside it,
+  // and restore focus to the previously focused element on close.
+  useEffect(() => {
+    if (!open) return;
+    previousFocusRef.current = document.activeElement as HTMLElement | null;
+
+    const getFocusable = () => {
+      const dialog = dialogRef.current;
+      if (!dialog) return [] as HTMLElement[];
+      return Array.from(
+        dialog.querySelectorAll<HTMLElement>('button, [href], input, select, textarea, [tabindex]')
+      ).filter((el) => el.tabIndex >= 0 && !el.hasAttribute('disabled'));
+    };
+
+    getFocusable()[0]?.focus();
+
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+      const els = getFocusable();
+      if (els.length === 0) return;
+      const first = els[0];
+      const last = els[els.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+      const inside = active ? dialogRef.current?.contains(active) : false;
+      if (e.shiftKey) {
+        if (active === first || !inside) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else if (active === last || !inside) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleTab);
+    return () => {
+      document.removeEventListener('keydown', handleTab);
+      previousFocusRef.current?.focus();
+    };
+  }, [open]);
 
   if (!open) return null;
 
@@ -123,9 +179,10 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
       onClick={(e) => e.target === e.currentTarget && handleClose()}
     >
       <div
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Order Sample Kit"
+        aria-labelledby="samplekit-modal-title"
         style={{
           background: '#fff', width: '100%', maxWidth: 540,
           height: '100dvh', overflowY: 'auto',
@@ -144,7 +201,7 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
             <span style={{ display: 'block', fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#8b6235', marginBottom: '0.35rem' }}>
               🪵 rWood · rPET · Textile
             </span>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.45rem', fontWeight: 800, letterSpacing: '-0.5px', color: 'var(--charcoal)', margin: '0 0 0.3rem' }}>
+            <h2 id="samplekit-modal-title" style={{ fontFamily: 'var(--font-heading)', fontSize: '1.45rem', fontWeight: 800, letterSpacing: '-0.5px', color: 'var(--charcoal)', margin: '0 0 0.3rem' }}>
               Order Your Sample Kit
             </h2>
             <p style={{ fontSize: '0.82rem', color: '#888', lineHeight: 1.5, margin: 0 }}>
@@ -193,22 +250,22 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
             {/* Contact */}
             <Section title="Contact details">
               <Row2>
-                <Field label="First name *"><input type="text" required placeholder="Marie" value={form.firstName} onChange={(e) => set('firstName', e.target.value)} /></Field>
-                <Field label="Last name *"><input type="text" required placeholder="Dupont" value={form.lastName} onChange={(e) => set('lastName', e.target.value)} /></Field>
+                <Field label="First name *" id="samplekit-firstname"><input type="text" required placeholder="Marie" value={form.firstName} onChange={(e) => set('firstName', e.target.value)} /></Field>
+                <Field label="Last name *" id="samplekit-lastname"><input type="text" required placeholder="Dupont" value={form.lastName} onChange={(e) => set('lastName', e.target.value)} /></Field>
               </Row2>
               <Row2>
-                <Field label="Email *"><input type="email" required placeholder="marie@studio.be" value={form.email} onChange={(e) => set('email', e.target.value)} /></Field>
-                <Field label="Phone"><input type="tel" placeholder="+32 ..." value={form.phone} onChange={(e) => set('phone', e.target.value)} /></Field>
+                <Field label="Email *" id="samplekit-email"><input type="email" required placeholder="marie@studio.be" value={form.email} onChange={(e) => set('email', e.target.value)} /></Field>
+                <Field label="Phone" id="samplekit-phone"><input type="tel" placeholder="+32 ..." value={form.phone} onChange={(e) => set('phone', e.target.value)} /></Field>
               </Row2>
-              <Field label="Company / Studio"><input type="text" placeholder="Studio Dupont" value={form.company} onChange={(e) => set('company', e.target.value)} /></Field>
+              <Field label="Company / Studio" id="samplekit-company"><input type="text" placeholder="Studio Dupont" value={form.company} onChange={(e) => set('company', e.target.value)} /></Field>
             </Section>
 
             {/* Shipping */}
             <Section title="Shipping address">
-              <Field label="Street & number *"><input type="text" required placeholder="Antwerpsesteenweg 42" value={form.address} onChange={(e) => set('address', e.target.value)} /></Field>
+              <Field label="Street & number *" id="samplekit-address"><input type="text" required placeholder="Antwerpsesteenweg 42" value={form.address} onChange={(e) => set('address', e.target.value)} /></Field>
               <Row2>
-                <Field label="City *"><input type="text" required placeholder="Gent" value={form.city} onChange={(e) => set('city', e.target.value)} /></Field>
-                <Field label="Country">
+                <Field label="City *" id="samplekit-city"><input type="text" required placeholder="Gent" value={form.city} onChange={(e) => set('city', e.target.value)} /></Field>
+                <Field label="Country" id="samplekit-country">
                   <select value={form.country} onChange={(e) => set('country', e.target.value)}>
                     <option>Belgium</option><option>Netherlands</option><option>Luxembourg</option>
                     <option>France</option><option>Germany</option><option>Other</option>
@@ -251,7 +308,7 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
             </Section>
 
             {/* Notes */}
-            <Field label="Additional notes" optional>
+            <Field label="Additional notes" id="samplekit-message" optional>
               <textarea rows={3} placeholder="E.g. I'm an architect specifying a 200m² office..." value={form.message} onChange={(e) => set('message', e.target.value)} />
             </Field>
 
@@ -261,7 +318,7 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
                 style={{ width: '1rem', height: '1rem', marginTop: '0.15rem', flexShrink: 0, accentColor: '#8b6235' }} />
               <span style={{ fontSize: '0.75rem', color: '#888', lineHeight: 1.5 }}>
                 I agree that Re-Sound may contact me about this request.{' '}
-                <a href="/privacy" target="_blank" style={{ color: '#8b6235', textDecoration: 'underline' }}>Privacy policy</a>
+                <Link href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#8b6235', textDecoration: 'underline' }}>Privacy policy</Link>
               </span>
             </label>
 
@@ -325,7 +382,7 @@ function Row2({ children }: { children: React.ReactNode }) {
   return <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>{children}</div>;
 }
 
-function Field({ label, optional, children }: { label: string; optional?: boolean; children: React.ReactNode }) {
+function Field({ label, id, optional, children }: { label: string; id: string; optional?: boolean; children: React.ReactNode }) {
   const inputStyle: React.CSSProperties = {
     border: '1.5px solid #e4e0d8', borderRadius: 8, padding: '0.58rem 0.85rem',
     fontSize: '0.85rem', fontFamily: 'var(--font-body)', color: 'var(--charcoal)',
@@ -334,14 +391,14 @@ function Field({ label, optional, children }: { label: string; optional?: boolea
   };
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.28rem' }}>
-      <label style={{ fontSize: '0.72rem', fontWeight: 700, color: '#555' }}>
+      <label htmlFor={id} style={{ fontSize: '0.72rem', fontWeight: 700, color: '#555' }}>
         {label}{optional && <span style={{ fontWeight: 400, color: '#aaa' }}> (optional)</span>}
       </label>
-      {/* Clone child with merged style */}
+      {/* Clone child with merged style + the id the label points at */}
       {Array.isArray(children)
         ? children
         : React.isValidElement(children)
-          ? React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, { style: { ...inputStyle, ...(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>).props.style } })
+          ? React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, { id, style: { ...inputStyle, ...(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>).props.style } })
           : children
       }
     </div>

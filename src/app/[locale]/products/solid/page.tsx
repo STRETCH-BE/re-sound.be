@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import SolidProductPage from '@/components/sections/SolidProductPage';
 import JsonLd from '@/components/seo/JsonLd';
+import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -81,6 +83,14 @@ export default async function Page({ params: { locale } }: PageProps) {
     })
     .filter((e): e is FaqEntry => e !== null);
 
+  // Only the namespaces the client components in this tree actually use —
+  // serializing the full catalog would bloat every page's HTML.
+  const messages = pickMessages(await getMessages(), [
+    'productPage',
+    'solidPage',
+    'leadModal',
+  ]);
+
   return (
     <>
       <JsonLd
@@ -89,7 +99,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           locale,
           name: cleanName,
           description,
-          image: '/images/products/solid/hero-solid.webp',
+          image: '/images/products/solid/hero-denim.webp',
           category: 'Acoustic textile wall panels',
           countryOfOrigin: 'BE',
           material: 'Recycled textile fibres',
@@ -113,7 +123,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <SolidProductPage />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <SolidProductPage />
+      </NextIntlClientProvider>
     </>
   );
 }

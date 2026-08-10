@@ -1,5 +1,7 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
+import { pickMessages } from '@/lib/i18n-messages';
 
 import Hero from '@/components/sections/Hero';
 import Ticker from '@/components/sections/Ticker';
@@ -47,11 +49,23 @@ export async function generateMetadata({
   };
 }
 
-export default function HomePage({ params: { locale } }: HomePageProps) {
+export default async function HomePage({ params: { locale } }: HomePageProps) {
   setRequestLocale(locale);
 
+  // The locale layout only provides nav/footer/cookies messages to client
+  // components — narrow the catalog to what this page's client tree needs.
+  const messages = pickMessages(await getMessages(), [
+    'circular',
+    'dualCta',
+    'hero',
+    'products',
+    'rwood',
+    'ticker',
+    'why',
+  ]);
+
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       {/* Sitewide entity graph — Organization + WebSite together let Google
           merge facts under a single Knowledge-Graph node instead of treating
           the site as anonymous. WebSite is required for sitelinks. */}
@@ -78,6 +92,6 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
 
       {/* Split image CTA: samples left / quote right */}
       <DualCTA />
-    </>
+    </NextIntlClientProvider>
   );
 }

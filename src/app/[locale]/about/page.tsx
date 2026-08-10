@@ -1,7 +1,9 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { pickMessages } from '@/lib/i18n-messages';
 
 import PageHero from '@/components/sections/PageHero';
 import AboutStory from '@/components/sections/AboutStory';
@@ -38,9 +40,10 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
   setRequestLocale(locale);
   
   const t = await getTranslations('about');
+  const messages = pickMessages(await getMessages(), ['about', 'cta']);
 
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       {/* Page Hero */}
       <PageHero
         tag={t('tag')}
@@ -105,6 +108,6 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
 
       {/* CTA */}
       <CTA />
-    </>
+    </NextIntlClientProvider>
   );
 }

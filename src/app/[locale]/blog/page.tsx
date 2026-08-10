@@ -1,7 +1,9 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { pickMessages } from '@/lib/i18n-messages';
 
 import PageHero from '@/components/sections/PageHero';
 import BlogGrid from '@/components/sections/BlogGrid';
@@ -23,6 +25,14 @@ export async function generateMetadata({
     openGraph: {
       title: `${t('blogTitle')} | Re-Sound`,
       description: t('blogDescription'),
+      images: [
+        {
+          url: `/api/og?page=blog&locale=${locale}`,
+          width: 1200,
+          height: 630,
+          alt: `${t('blogTitle')} | Re-Sound`,
+        },
+      ],
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
     },
@@ -35,9 +45,10 @@ export default async function BlogPage({ params: { locale } }: BlogPageProps) {
   setRequestLocale(locale);
   
   const t = await getTranslations('blog');
+  const messages = pickMessages(await getMessages(), ['blog', 'blogPosts', 'newsletter']);
 
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       {/* Page Hero */}
       <PageHero
         tag={t('tag')}
@@ -54,6 +65,6 @@ export default async function BlogPage({ params: { locale } }: BlogPageProps) {
 
       {/* Newsletter */}
       <Newsletter />
-    </>
+    </NextIntlClientProvider>
   );
 }

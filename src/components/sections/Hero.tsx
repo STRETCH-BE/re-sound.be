@@ -19,7 +19,7 @@ export default function Hero() {
             fill
             style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
             priority
-            sizes="50vw"
+            sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
         <div className="panel-overlay panel-overlay-warm" />
@@ -83,8 +83,10 @@ export default function Hero() {
             alt="Circular acoustic panels in a modern office"
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
-            priority
-            sizes="50vw"
+            // Eager so desktop paints both panels immediately, but NOT
+            // `priority` — only the first panel (the mobile LCP) preloads.
+            loading="eager"
+            sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
         <div className="panel-overlay panel-overlay-blue" />
@@ -94,10 +96,12 @@ export default function Hero() {
             <span>♻️</span> {t('circular.badge')}
           </div>
 
-          <h1>
+          {/* h2, not a second h1 — the left panel holds the page's sole h1.
+              .hero-title-b keeps the identical heading styling. */}
+          <h2 className="hero-title-b">
             {t('circular.title')}<br />
             <em>{t('circular.titleHighlight')}</em>
-          </h1>
+          </h2>
 
           <p>{t('circular.subtitle')}</p>
 
@@ -245,8 +249,10 @@ export default function Hero() {
           border: 1px solid rgba(25, 127, 199, 0.5);
         }
 
-        /* ── HEADINGS ── */
-        .panel-content h1 {
+        /* ── HEADINGS ──
+           .hero-title-b = the right panel's demoted h2, styled identically */
+        .panel-content h1,
+        .panel-content .hero-title-b {
           font-size: clamp(2.2rem, 3.4vw, 3.6rem);
           font-weight: 800;
           letter-spacing: -2px;
@@ -261,7 +267,7 @@ export default function Hero() {
           font-style: italic;
         }
 
-        .panel-right h1 em {
+        .panel-right .hero-title-b em {
           color: #7fc4f0;
           font-style: italic;
         }
@@ -478,7 +484,8 @@ export default function Hero() {
           .panel-content {
             padding: 0 1.5rem 2.5rem;
           }
-          .panel-content h1 {
+          .panel-content h1,
+          .panel-content .hero-title-b {
             font-size: 2rem;
             letter-spacing: -1.2px;
           }

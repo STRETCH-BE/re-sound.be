@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import InteriorProductPage from '@/components/sections/InteriorProductPage';
 import JsonLd from '@/components/seo/JsonLd';
+import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -81,6 +83,14 @@ export default async function Page({ params: { locale } }: PageProps) {
     })
     .filter((e): e is FaqEntry => e !== null);
 
+  // Only the namespaces the client components in this tree actually use —
+  // serializing the full catalog would bloat every page's HTML.
+  const messages = pickMessages(await getMessages(), [
+    'interiorPage',
+    'productPage',
+    'leadModal',
+  ]);
+
   return (
     <>
       <JsonLd
@@ -113,7 +123,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <InteriorProductPage />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <InteriorProductPage />
+      </NextIntlClientProvider>
     </>
   );
 }

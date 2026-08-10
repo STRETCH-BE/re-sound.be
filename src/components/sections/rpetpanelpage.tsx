@@ -1,20 +1,25 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
+
 // Color options for rPET - Panel
+// `image` maps each color to an existing swatch photo under
+// public/images/products/rpet-panel/ (null = keep the default hero).
 const colorOptions = [
-  { id: 'midnight', name: 'Midnight', color: '#1a1a1a', hex: '#1a1a1a', isDark: true, description: 'Deep black, reminiscent of a moonlit sky' },
-  { id: 'titan', name: 'Titan', color: '#4a4a4a', hex: '#4a4a4a', isDark: true, description: 'Characteristic dark gray, like steel' },
-  { id: 'silver', name: 'Silver', color: '#808080', hex: '#808080', isDark: false, description: 'Modern industrial elegance' },
-  { id: 'marble', name: 'Marble', color: '#b0b0b0', hex: '#b0b0b0', isDark: false, description: 'Minimalist light gray aesthetic' },
-  { id: 'frost', name: 'Frost', color: '#e8e8e8', hex: '#e8e8e8', isDark: false, description: 'Pure white simplicity' },
-  { id: 'custom', name: 'Custom RAL/NCS', color: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #ffeaa7 100%)', hex: '#rainbow', isDark: false, description: 'Any color from RAL or NCS palette' },
+  { id: 'midnight', name: 'Midnight', color: '#1a1a1a', hex: '#1a1a1a', isDark: true, description: 'Deep black, reminiscent of a moonlit sky', image: '/images/products/rpet-panel/rPET-Black.jpg' },
+  { id: 'titan', name: 'Titan', color: '#4a4a4a', hex: '#4a4a4a', isDark: true, description: 'Characteristic dark gray, like steel', image: '/images/products/rpet-panel/rPET-Anthraciet.jpg' },
+  { id: 'silver', name: 'Silver', color: '#808080', hex: '#808080', isDark: false, description: 'Modern industrial elegance', image: '/images/products/rpet-panel/rPET-DarkGrey.jpg' },
+  { id: 'marble', name: 'Marble', color: '#b0b0b0', hex: '#b0b0b0', isDark: false, description: 'Minimalist light gray aesthetic', image: '/images/products/rpet-panel/rPET-LightGrey.jpg' },
+  { id: 'frost', name: 'Frost', color: '#e8e8e8', hex: '#e8e8e8', isDark: false, description: 'Pure white simplicity', image: '/images/products/rpet-panel/rPET-White.jpg' },
+  { id: 'custom', name: 'Custom RAL/NCS', color: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #ffeaa7 100%)', hex: '#rainbow', isDark: false, description: 'Any color from RAL or NCS palette', image: null },
 ];
 
 // Thickness options
@@ -46,11 +51,14 @@ export default function RPETPanelProductPage() {
   const [selectedColor, setSelectedColor] = useState<typeof colorOptions[0] | null>(null);
   const [selectedThickness, setSelectedThickness] = useState(thicknessOptions[1]); // 18mm default
   const [isImageLoading, setIsImageLoading] = useState(false);
+  // Set when the selected color's image fails to load — hero falls back to
+  // the default image while the color selection (label/lead payload) sticks.
+  const [heroImageFailed, setHeroImageFailed] = useState(false);
 
   // Get the current hero image based on selected color
   const getHeroImage = () => {
-    if (!selectedColor || selectedColor.id === 'custom') return defaultHeroImage;
-    return `/images/products/rpet-panel/colors/${selectedColor.id}.jpg`;
+    if (heroImageFailed || !selectedColor || !selectedColor.image) return defaultHeroImage;
+    return selectedColor.image;
   };
 
   // Fire a single view_item event on mount so GA4 / Meta see
@@ -76,14 +84,20 @@ export default function RPETPanelProductPage() {
 
   const handleColorSelect = (color: typeof colorOptions[0]) => {
     if (!selectedColor || color.id !== selectedColor.id) {
-      setIsImageLoading(true);
+      // Only show the spinner when the hero src actually changes — an
+      // unchanged src fires no load event, which would strand the overlay.
+      const nextImage = color.image ?? defaultHeroImage;
+      if (nextImage !== getHeroImage()) {
+        setIsImageLoading(true);
+      }
+      setHeroImageFailed(false);
       setSelectedColor(color);
     }
   };
 
   const handleLeadSubmit = async (data: LeadFormData) => {
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch('/api/lead', {
         method: 'POST',
@@ -214,9 +228,14 @@ export default function RPETPanelProductPage() {
                 src={getHeroImage()}
                 alt={`rPET - Panel acoustic panel${selectedColor ? ` in ${selectedColor.name}` : ''}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => {
+                  setHeroImageFailed(true);
+                  setIsImageLoading(false);
+                }}
               />
             </div>
             {isImageLoading && (
@@ -276,6 +295,7 @@ export default function RPETPanelProductPage() {
                 src="/images/products/rpet-panel/overview-recycled.jpg"
                 alt="rPET - Panel recycled PET bottles transformation"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -432,6 +452,7 @@ export default function RPETPanelProductPage() {
                   src="/images/products/rpet-panel/gallery-1.webp"
                   alt="PET Acoustic walls in meeting pod"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 600px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -443,6 +464,7 @@ export default function RPETPanelProductPage() {
                   src="/images/products/rpet-panel/gallery-3.webp"
                   alt="Ceiling panels and table divider"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -454,6 +476,7 @@ export default function RPETPanelProductPage() {
                   src="/images/products/rpet-panel/gallery-12.webp"
                   alt="Acoustic treatment in restaurant"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -663,6 +686,7 @@ export default function RPETPanelProductPage() {
                 src="/images/products/rpet-panel/processing-cnc.webp"
                 alt="CNC processing of rPET panels"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -679,6 +703,7 @@ export default function RPETPanelProductPage() {
                 src="/images/products/rpet-panel/overview-recycled.jpg"
                 alt="Recycled PET bottles"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -884,6 +909,7 @@ export default function RPETPanelProductPage() {
                   src={`/images/products/rpet-panel/gallery-${i}.webp`}
                   alt={`rPET - Panel installation example ${i}`}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 400px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -931,9 +957,10 @@ export default function RPETPanelProductPage() {
           <div className="samples-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-panel/samples-package.jpg"
-                alt="rPET - Panel sample package"
+                src="/images/products/rpet-panel/rPET - Panel - 1.png"
+                alt="rPET - Panel sample panels"
                 fill
+                sizes="(max-width: 1024px) 100vw, 550px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -1153,7 +1180,7 @@ export default function RPETPanelProductPage() {
         .selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1402,7 +1429,7 @@ export default function RPETPanelProductPage() {
         }
 
         .color-info h4 { font-size: 1rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .color-info p { font-size: 0.8rem; color: #888; margin: 0; }
+        .color-info p { font-size: 0.8rem; color: #767676; margin: 0; }
 
         .finishing-teaser {
           display: flex;
@@ -1557,7 +1584,7 @@ export default function RPETPanelProductPage() {
         .diagram-title {
           font-size: 0.85rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 2rem;
@@ -1634,7 +1661,7 @@ export default function RPETPanelProductPage() {
 
         .layer-label span {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         .thickness-selector {
@@ -1647,7 +1674,7 @@ export default function RPETPanelProductPage() {
           display: block;
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
           margin-bottom: 1rem;
@@ -1688,7 +1715,7 @@ export default function RPETPanelProductPage() {
 
         .thickness-weight {
           font-size: 0.75rem;
-          color: #888;
+          color: #767676;
         }
 
         .performance-metrics {
@@ -1733,7 +1760,7 @@ export default function RPETPanelProductPage() {
 
         .rating-content .rating-label {
           font-size: 0.85rem;
-          color: #888;
+          color: #767676;
         }
 
         .rating-badge {
@@ -1774,7 +1801,7 @@ export default function RPETPanelProductPage() {
 
         .metric-label {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         .test-note {
@@ -1995,7 +2022,7 @@ export default function RPETPanelProductPage() {
 
         .download-icon { font-size: 2rem; }
         .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #888; }
+        .download-info span { font-size: 0.8rem; color: #767676; }
         .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--eco-green); }
 
         /* Samples Section */

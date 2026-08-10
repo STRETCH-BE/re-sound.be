@@ -165,7 +165,7 @@ export default function ProductDetail({ slug, title, description, gradient }: Pr
 
         .highlight span {
           font-size: 0.85rem;
-          color: #888;
+          color: #767676;
         }
 
         @media (max-width: 992px) {

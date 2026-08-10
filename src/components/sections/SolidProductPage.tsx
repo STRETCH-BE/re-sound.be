@@ -1,20 +1,36 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Color options for the Solid product
+// Code-split the modal — it only renders after a download click.
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
+
+// Color options for the Solid product.
+// Note: no "Sky" option here — /images/products/solid/hero-sky.webp does not
+// exist on disk, so offering it would 404 the hero swap.
 const colorOptions = [
   { id: 'denim', name: 'Denim', swatch: '/images/products/solid/swatches/denim.webp', image: '/images/products/solid/hero-denim.webp', isDark: true },
   { id: 'antracite', name: 'Antracite', swatch: '/images/products/solid/swatches/antracite.webp', image: '/images/products/solid/hero-antracite.webp', isDark: true },
   { id: 'silver', name: 'Silver', swatch: '/images/products/solid/swatches/silver.webp', image: '/images/products/solid/hero-silver.webp', isDark: false },
-  { id: 'sky', name: 'Sky', swatch: '/images/products/solid/swatches/sky.webp', image: '/images/products/solid/hero-sky.webp', isDark: false },
   { id: 'mint', name: 'Mint', swatch: '/images/products/solid/swatches/mint.webp', image: '/images/products/solid/hero-mint.webp', isDark: false },
   { id: 'taupe', name: 'Taupe', swatch: '/images/products/solid/swatches/taupe.webp', image: '/images/products/solid/hero-taupe.webp', isDark: false },
+];
+
+// Gallery images — gallery-6.jpg does not exist on disk, so the sixth slot
+// reuses gallery-1.jpg (placed non-adjacently in the grid).
+const galleryImages = [
+  '/images/products/solid/gallery-1.jpg',
+  '/images/products/solid/gallery-2.jpg',
+  '/images/products/solid/gallery-3.jpg',
+  '/images/products/solid/gallery-4.jpg',
+  '/images/products/solid/gallery-5.jpg',
+  '/images/products/solid/gallery-1.jpg',
 ];
 
 
@@ -192,9 +208,17 @@ export default function SolidProductPage() {
                 src={selectedColor.image}
                 alt={`Re-Sound Solid acoustic wall panel in ${selectedColor.name}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => {
+                  // Broken variant image — fall back to the default hero.
+                  setIsImageLoading(false);
+                  if (selectedColor.id !== colorOptions[0].id) {
+                    setSelectedColor(colorOptions[0]);
+                  }
+                }}
               />
             </div>
             {isImageLoading && (
@@ -252,9 +276,10 @@ export default function SolidProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/solid/overview.jpg"
+                src="/images/products/solid/solid_card.webp"
                 alt="Solid panel complete package"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -314,9 +339,10 @@ export default function SolidProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/solid/installation.jpg"
-                alt="Easy hook installation system"
+                src="/images/products/solid/gallery-5.jpg"
+                alt="Solid panel mounted on the wall with the easy hook system"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -330,9 +356,10 @@ export default function SolidProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/solid/maintenance.jpg"
-                alt="Removable cover for easy cleaning"
+                src="/images/products/solid/gallery-2.jpg"
+                alt="Removable fabric cover for easy cleaning"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -392,9 +419,10 @@ export default function SolidProductPage() {
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/solid/circular.jpg"
-                alt="Circular design - recycled materials"
+                src="/images/products/solid/hero-taupe.webp"
+                alt="Circular design - recycled textile materials"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -599,13 +627,14 @@ export default function SolidProductPage() {
         </div>
 
         <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="gallery-item">
+          {galleryImages.map((src, i) => (
+            <div key={`${src}-${i}`} className="gallery-item">
               <div className="image-container gallery">
                 <Image
-                  src={`/images/products/solid/gallery-${i}.jpg`}
-                  alt={`Solid panel installation example ${i}`}
+                  src={src}
+                  alt={`Solid panel installation example ${i + 1}`}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 384px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -876,7 +905,7 @@ export default function SolidProductPage() {
         .color-selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1215,7 +1244,7 @@ export default function SolidProductPage() {
 
         .freq-range {
           font-size: 0.75rem;
-          color: #888;
+          color: #767676;
         }
 
         .absorption-rating {
@@ -1423,7 +1452,7 @@ export default function SolidProductPage() {
 
         .download-info span {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         .download-arrow {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export interface LeadFormData {
   companyName: string;
@@ -11,6 +11,8 @@ export interface LeadFormData {
   phone: string;
   position: string;
   companyType: string;
+  /** Honeypot — must stay empty. /api/lead silently drops submissions where it's filled. */
+  website?: string;
 }
 
 interface LeadGenModalProps {
@@ -38,12 +40,15 @@ export default function LeadGenModal({
     phone: '',
     position: '',
     companyType: '',
+    website: '',
   });
   const [consentChecked, setConsentChecked] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (isOpen) {
-      setFormData({ companyName: '', firstName: '', lastName: '', email: '', phone: '', position: '', companyType: '' });
+      setFormData({ companyName: '', firstName: '', lastName: '', email: '', phone: '', position: '', companyType: '', website: '' });
       setConsentChecked(false);
     }
   }, [isOpen]);
@@ -58,6 +63,48 @@ export default function LeadGenModal({
     window.addEventListener('keydown', handleEsc);
     return () => window.removeEventListener('keydown', handleEsc);
   }, [isOpen, onClose]);
+
+  // Focus management: move focus into the dialog on open, trap Tab inside it,
+  // and restore focus to the previously focused element on close.
+  useEffect(() => {
+    if (!isOpen) return;
+    previousFocusRef.current = document.activeElement as HTMLElement | null;
+
+    const getFocusable = () => {
+      const modal = modalRef.current;
+      if (!modal) return [] as HTMLElement[];
+      return Array.from(
+        modal.querySelectorAll<HTMLElement>('button, [href], input, select, textarea, [tabindex]')
+      ).filter((el) => el.tabIndex >= 0 && !el.hasAttribute('disabled'));
+    };
+
+    getFocusable()[0]?.focus();
+
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+      const els = getFocusable();
+      if (els.length === 0) return;
+      const first = els[0];
+      const last = els[els.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+      const inside = active ? modalRef.current?.contains(active) : false;
+      if (e.shiftKey) {
+        if (active === first || !inside) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else if (active === last || !inside) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleTab);
+    return () => {
+      document.removeEventListener('keydown', handleTab);
+      previousFocusRef.current?.focus();
+    };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -116,11 +163,18 @@ export default function LeadGenModal({
 
   return (
     <div style={overlayStyle} onClick={onClose}>
-      <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="leadgen-modal-title"
+        style={modalStyle}
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Header */}
         <div style={headerStyle}>
           <div style={{ position: 'absolute', top: '-50%', right: '-20%', width: '200px', height: '200px', background: 'rgba(255, 255, 255, 0.08)', borderRadius: '50%' }} />
-          <button style={closeButtonStyle} onClick={onClose}>✕</button>
+          <button type="button" aria-label="Close" style={closeButtonStyle} onClick={onClose}>✕</button>
           <div style={{ width: '52px', height: '52px', background: 'rgba(255, 255, 255, 0.2)', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', position: 'relative', zIndex: 1 }}>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -128,7 +182,7 @@ export default function LeadGenModal({
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
           </div>
-          <h3 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'white', margin: '0 0 0.5rem', position: 'relative', zIndex: 1 }}>
+          <h3 id="leadgen-modal-title" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'white', margin: '0 0 0.5rem', position: 'relative', zIndex: 1 }}>
             {t('title')}
           </h3>
           <p style={{ fontSize: '0.95rem', color: 'rgba(255, 255, 255, 0.85)', margin: 0, position: 'relative', zIndex: 1 }}>
@@ -143,41 +197,41 @@ export default function LeadGenModal({
         <div style={bodyStyle}>
           <form id="lead-form" onSubmit={handleSubmit}>
             <div style={{ marginBottom: '1rem' }}>
-              <label style={labelStyle}>{t('companyName')} <span style={{ color: '#e53935' }}>*</span></label>
-              <input type="text" name="companyName" value={formData.companyName} onChange={handleChange}
+              <label htmlFor="leadgen-companyname" style={labelStyle}>{t('companyName')} <span style={{ color: '#e53935' }}>*</span></label>
+              <input id="leadgen-companyname" type="text" name="companyName" value={formData.companyName} onChange={handleChange}
                 placeholder={t('companyNamePlaceholder')} required style={inputStyle} />
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
               <div>
-                <label style={labelStyle}>{t('firstName')} <span style={{ color: '#e53935' }}>*</span></label>
-                <input type="text" name="firstName" value={formData.firstName} onChange={handleChange}
+                <label htmlFor="leadgen-firstname" style={labelStyle}>{t('firstName')} <span style={{ color: '#e53935' }}>*</span></label>
+                <input id="leadgen-firstname" type="text" name="firstName" value={formData.firstName} onChange={handleChange}
                   placeholder={t('firstNamePlaceholder')} required style={inputStyle} />
               </div>
               <div>
-                <label style={labelStyle}>{t('lastName')} <span style={{ color: '#e53935' }}>*</span></label>
-                <input type="text" name="lastName" value={formData.lastName} onChange={handleChange}
+                <label htmlFor="leadgen-lastname" style={labelStyle}>{t('lastName')} <span style={{ color: '#e53935' }}>*</span></label>
+                <input id="leadgen-lastname" type="text" name="lastName" value={formData.lastName} onChange={handleChange}
                   placeholder={t('lastNamePlaceholder')} required style={inputStyle} />
               </div>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
               <div>
-                <label style={labelStyle}>{t('email')} <span style={{ color: '#e53935' }}>*</span></label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange}
+                <label htmlFor="leadgen-email" style={labelStyle}>{t('email')} <span style={{ color: '#e53935' }}>*</span></label>
+                <input id="leadgen-email" type="email" name="email" value={formData.email} onChange={handleChange}
                   placeholder={t('emailPlaceholder')} required style={inputStyle} />
               </div>
               <div>
-                <label style={labelStyle}>{t('phone')} <span style={{ color: '#e53935' }}>*</span></label>
-                <input type="tel" name="phone" value={formData.phone} onChange={handleChange}
+                <label htmlFor="leadgen-phone" style={labelStyle}>{t('phone')} <span style={{ color: '#e53935' }}>*</span></label>
+                <input id="leadgen-phone" type="tel" name="phone" value={formData.phone} onChange={handleChange}
                   placeholder={t('phonePlaceholder')} required style={inputStyle} />
               </div>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
               <div>
-                <label style={labelStyle}>{t('position')} <span style={{ color: '#e53935' }}>*</span></label>
-                <select name="position" value={formData.position} onChange={handleChange} required style={{ ...inputStyle, cursor: 'pointer' }}>
+                <label htmlFor="leadgen-position" style={labelStyle}>{t('position')} <span style={{ color: '#e53935' }}>*</span></label>
+                <select id="leadgen-position" name="position" value={formData.position} onChange={handleChange} required style={{ ...inputStyle, cursor: 'pointer' }}>
                   <option value="">{t('positionPlaceholder')}</option>
                   <option value="owner">{t('positions.owner')}</option>
                   <option value="director">{t('positions.director')}</option>
@@ -191,8 +245,8 @@ export default function LeadGenModal({
                 </select>
               </div>
               <div>
-                <label style={labelStyle}>{t('companyType')} <span style={{ color: '#e53935' }}>*</span></label>
-                <select name="companyType" value={formData.companyType} onChange={handleChange} required style={{ ...inputStyle, cursor: 'pointer' }}>
+                <label htmlFor="leadgen-companytype" style={labelStyle}>{t('companyType')} <span style={{ color: '#e53935' }}>*</span></label>
+                <select id="leadgen-companytype" name="companyType" value={formData.companyType} onChange={handleChange} required style={{ ...inputStyle, cursor: 'pointer' }}>
                   <option value="">{t('companyTypePlaceholder')}</option>
                   <option value="architecture">{t('companyTypes.architecture')}</option>
                   <option value="interior-design">{t('companyTypes.interiorDesign')}</option>
@@ -207,6 +261,20 @@ export default function LeadGenModal({
                   <option value="other">{t('companyTypes.other')}</option>
                 </select>
               </div>
+            </div>
+
+            {/* Honeypot: visually hidden but visible to bots. Real users skip it. */}
+            <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px' }}>
+              <label htmlFor="leadgen-website">Leave this field empty</label>
+              <input
+                type="text"
+                id="leadgen-website"
+                name="website"
+                value={formData.website ?? ''}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+              />
             </div>
 
             <div style={{ marginTop: '0.5rem' }}>
