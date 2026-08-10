@@ -85,7 +85,7 @@ export default function BlogPostHeader({ slug }: BlogPostHeaderProps) {
           align-items: center;
           justify-content: center;
           gap: 0.75rem;
-          color: #888;
+          color: #767676;
           font-size: 0.95rem;
         }
 

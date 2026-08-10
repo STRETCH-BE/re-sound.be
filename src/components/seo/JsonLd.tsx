@@ -15,9 +15,12 @@ export default function JsonLd({ data }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"
-      // JSON.stringify already escapes "<" inside strings as needed; this is the
-      // standard pattern recommended by Next.js for JSON-LD injection.
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      // JSON.stringify does NOT escape "<", so a string containing
+      // "</script>" would break out of the tag. Escape it to < —
+      // still valid JSON, inert in HTML.
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data).replace(/</g, '\\u003c'),
+      }}
     />
   );
 }

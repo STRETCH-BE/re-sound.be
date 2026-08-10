@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import RWoodVeneerProductPage from '@/components/sections/rwoodveneerpage';
 import JsonLd from '@/components/seo/JsonLd';
+import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -54,6 +56,14 @@ export async function generateMetadata({
 export default async function Page({ params: { locale } }: PageProps) {
   setRequestLocale(locale);
 
+  // The locale layout only provides nav/footer/cookies messages to client
+  // components — narrow the catalog to what this page's client tree needs.
+  const messages = pickMessages(await getMessages(), [
+    'productPage',
+    'rwoodVeneerPage',
+    'leadModal',
+  ]);
+
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
   const fullTitle = tMeta('rwoodVeneerTitle');
@@ -82,14 +92,14 @@ export default async function Page({ params: { locale } }: PageProps) {
     .filter((e): e is FaqEntry => e !== null);
 
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd
         data={productSchema({
           slug: 'rwood-veneer',
           locale,
           name: cleanName,
           description,
-          image: '/images/products/rwood-veneer/hero-rWood-Veneer.webp',
+          image: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
           category: 'Acoustic wood panels',
           countryOfOrigin: 'EU',
           material: 'FSC-certified wood veneer',
@@ -114,6 +124,6 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RWoodVeneerProductPage />
-    </>
+    </NextIntlClientProvider>
   );
 }

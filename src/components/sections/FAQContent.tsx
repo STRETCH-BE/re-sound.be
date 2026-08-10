@@ -209,7 +209,7 @@ export default function FAQContent({ questionKeys }: FAQContentProps) {
         .faq-empty {
           padding: 2.5rem 1rem;
           text-align: center;
-          color: #888;
+          color: #767676;
         }
 
         .faq-item {

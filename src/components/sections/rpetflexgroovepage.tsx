@@ -1,26 +1,31 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Color options for rPET Flex-Groove (12 colors from Refined Collection)
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
+
+// Color options for rPET Flex-Groove (12 colors from Refined Collection).
+// No per-colour product photography exists yet, so colours are rendered as
+// CSS swatch dots only — the hero image stays fixed on the default photo.
 const colorOptions = [
-  { id: 'ash', name: 'Ash', swatch: '/images/products/rpet-flex-groove/swatches/ash.jpg', image: '/images/products/rpet-flex-groove/ash.jpg', colorHex: '#B8B5AC' },
-  { id: 'basalt', name: 'Basalt', swatch: '/images/products/rpet-flex-groove/swatches/basalt.jpg', image: '/images/products/rpet-flex-groove/basalt.jpg', colorHex: '#4A4A4A' },
-  { id: 'brown', name: 'Brown', swatch: '/images/products/rpet-flex-groove/swatches/brown.jpg', image: '/images/products/rpet-flex-groove/brown.jpg', colorHex: '#6B4423' },
-  { id: 'fog', name: 'Fog', swatch: '/images/products/rpet-flex-groove/swatches/fog.jpg', image: '/images/products/rpet-flex-groove/fog.jpg', colorHex: '#D3D3D3' },
-  { id: 'gravel', name: 'Gravel', swatch: '/images/products/rpet-flex-groove/swatches/gravel.jpg', image: '/images/products/rpet-flex-groove/gravel.jpg', colorHex: '#7A7A7A' },
-  { id: 'moss', name: 'Moss', swatch: '/images/products/rpet-flex-groove/swatches/moss.jpg', image: '/images/products/rpet-flex-groove/moss.jpg', colorHex: '#4A5D23' },
-  { id: 'navy', name: 'Navy', swatch: '/images/products/rpet-flex-groove/swatches/navy.jpg', image: '/images/products/rpet-flex-groove/navy.jpg', colorHex: '#1B2838' },
-  { id: 'pine', name: 'Pine', swatch: '/images/products/rpet-flex-groove/swatches/pine.jpg', image: '/images/products/rpet-flex-groove/pine.jpg', colorHex: '#2D5A3D' },
-  { id: 'polar', name: 'Polar', swatch: '/images/products/rpet-flex-groove/swatches/polar.jpg', image: '/images/products/rpet-flex-groove/polar.jpg', colorHex: '#F5F5F5' },
-  { id: 'steel-blue', name: 'Steel Blue', swatch: '/images/products/rpet-flex-groove/swatches/steel-blue.jpg', image: '/images/products/rpet-flex-groove/steel-blue.jpg', colorHex: '#4682B4' },
-  { id: 'tan', name: 'Tan', swatch: '/images/products/rpet-flex-groove/swatches/tan.jpg', image: '/images/products/rpet-flex-groove/tan.jpg', colorHex: '#C4A77D' },
-  { id: 'teal', name: 'Teal', swatch: '/images/products/rpet-flex-groove/swatches/teal.jpg', image: '/images/products/rpet-flex-groove/teal.jpg', colorHex: '#367588' },
+  { id: 'ash', name: 'Ash', colorHex: '#B8B5AC' },
+  { id: 'basalt', name: 'Basalt', colorHex: '#4A4A4A' },
+  { id: 'brown', name: 'Brown', colorHex: '#6B4423' },
+  { id: 'fog', name: 'Fog', colorHex: '#D3D3D3' },
+  { id: 'gravel', name: 'Gravel', colorHex: '#7A7A7A' },
+  { id: 'moss', name: 'Moss', colorHex: '#4A5D23' },
+  { id: 'navy', name: 'Navy', colorHex: '#1B2838' },
+  { id: 'pine', name: 'Pine', colorHex: '#2D5A3D' },
+  { id: 'polar', name: 'Polar', colorHex: '#F5F5F5' },
+  { id: 'steel-blue', name: 'Steel Blue', colorHex: '#4682B4' },
+  { id: 'tan', name: 'Tan', colorHex: '#C4A77D' },
+  { id: 'teal', name: 'Teal', colorHex: '#367588' },
 ];
 
 // Groove direction options
@@ -29,7 +34,8 @@ const directionOptions = [
   { id: 'width', name: 'Widthwise', description: 'Grooves run across the width of the panel' },
 ];
 
-// Default hero image (shown before any color is selected)
+// Hero image — fixed; colour selection does not swap it because no
+// per-colour photography exists for this product.
 const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
 
 // Lead Generation Form Modal
@@ -59,9 +65,6 @@ export default function RPETFlexGrooveProductPage() {
   const [selectedDirection, setSelectedDirection] = useState(directionOptions[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
-  // Get the current hero image - default or selected color
-  const currentHeroImage = selectedColor ? selectedColor.image : defaultHeroImage;
-
   // Fire a single view_item event on mount so GA4 / Meta see
   // the product impression. Empty deps array → fires once per page.
   useEffect(() => {
@@ -83,9 +86,10 @@ export default function RPETFlexGrooveProductPage() {
     setIsModalOpen(true);
   };
 
+  // Colour choice is a visual reference only — it never swaps the hero
+  // image (no per-colour photos exist), so no loading state is involved.
   const handleColorSelect = (color: typeof colorOptions[0]) => {
     if (!selectedColor || color.id !== selectedColor.id) {
-      setIsImageLoading(true);
       setSelectedColor(color);
     }
   };
@@ -156,7 +160,6 @@ export default function RPETFlexGrooveProductPage() {
     { id: 'acoustics', label: 'Acoustics' },
     { id: 'installation', label: 'Installation' },
     { id: 'specs', label: 'Specifications' },
-    { id: 'gallery', label: 'Gallery' },
     { id: 'downloads', label: 'Downloads' },
   ];
 
@@ -220,12 +223,14 @@ export default function RPETFlexGrooveProductPage() {
           <div className="image-container">
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
-                src={currentHeroImage}
-                alt={`rPET Flex-Groove acoustic panel${selectedColor ? ` in ${selectedColor.name}` : ''}`}
+                src={defaultHeroImage}
+                alt="rPET Flex-Groove acoustic panel"
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => setIsImageLoading(false)}
               />
             </div>
             {isImageLoading && (
@@ -282,6 +287,7 @@ export default function RPETFlexGrooveProductPage() {
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero.png"
                 alt="rPET Flex-Groove acoustic panel on curved surface"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -422,6 +428,7 @@ export default function RPETFlexGrooveProductPage() {
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_1.jpg"
                 alt="rPET Flex-Groove color options"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -532,6 +539,7 @@ export default function RPETFlexGrooveProductPage() {
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_2.jpg"
                 alt="Flex-Groove panel installation"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -548,6 +556,7 @@ export default function RPETFlexGrooveProductPage() {
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_3.jpg"
                 alt="Recycled PET bottles"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -740,29 +749,6 @@ export default function RPETFlexGrooveProductPage() {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{t('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="gallery-item">
-              <div className="image-container gallery">
-                <Image
-                  src={`/images/products/rpet-flex-groove/gallery-${i}.webp`}
-                  alt={`rPET Flex-Groove installation example ${i}`}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -1037,7 +1023,7 @@ export default function RPETFlexGrooveProductPage() {
         .selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1082,7 +1068,6 @@ export default function RPETFlexGrooveProductPage() {
 
         .selected-color-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
 
-        .image-container.gallery { aspect-ratio: 1; }
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
 
         .product-nav {
@@ -1542,20 +1527,6 @@ export default function RPETFlexGrooveProductPage() {
         .spec-card td:first-child { color: #666; }
         .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
 
-        /* Gallery Section */
-        .gallery-header { text-align: center; margin-bottom: 3rem; }
-        .gallery-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item { border-radius: 16px; overflow: hidden; }
-
         /* Downloads Section */
         .downloads-header { text-align: center; margin-bottom: 3rem; }
         .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
@@ -1589,7 +1560,7 @@ export default function RPETFlexGrooveProductPage() {
 
         .download-icon { font-size: 2rem; }
         .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #888; }
+        .download-info span { font-size: 0.8rem; color: #767676; }
         .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
 
         /* Applications Section */
@@ -1653,7 +1624,7 @@ export default function RPETFlexGrooveProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+          .specs-grid, .downloads-grid { grid-template-columns: repeat(2, 1fr); }
           .flexibility-benefits { grid-template-columns: 1fr; }
           .applications-grid { grid-template-columns: repeat(2, 1fr); }
           .acoustics-visual { flex-direction: column; gap: 3rem; }
@@ -1675,7 +1646,6 @@ export default function RPETFlexGrooveProductPage() {
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
           .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .applications-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }
           .direction-selector { flex-wrap: wrap; }

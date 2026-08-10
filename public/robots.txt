@@ -2,6 +2,9 @@
 
 User-agent: *
 Allow: /
+# /api/og serves every og:image on the site — keep it crawlable while
+# blocking the rest of the API surface.
+Allow: /api/og
 Disallow: /api/
 
 # Explicit AI crawler allowances — documents intent + signals openness.

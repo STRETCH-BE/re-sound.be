@@ -1,11 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Wood finish options for rWood - Groove
 const woodFinishOptions = [
@@ -210,9 +213,16 @@ export default function RWoodGrooveProductPage() {
                 src={currentHeroImage}
                 alt={`rWood - Groove acoustic panel${selectedFinish ? ` in ${selectedFinish.name}` : ''}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => {
+                  // A missing finish image would leave the spinner hanging
+                  // forever — fall back to the default hero and stop loading.
+                  setSelectedFinish(null);
+                  setIsImageLoading(false);
+                }}
               />
             </div>
             {isImageLoading && (
@@ -272,6 +282,7 @@ export default function RWoodGrooveProductPage() {
                 src="/images/products/rwood-groove/Where Nature Meets Design.webp"
                 alt="rWood - Groove acoustic panel in modern interior"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -352,11 +363,11 @@ export default function RWoodGrooveProductPage() {
             <div className="finish-categories">
               <div className="finish-category">
                 <h4>{t('oakCollection.title')}</h4>
-                <p>{t('materials.oilFinishesDesc')} Each brings out the distinctive oak grain in a unique way.</p>
+                <p>{t('materials.oilFinishesDesc')}</p>
               </div>
               <div className="finish-category">
                 <h4>{t('materials.walnutTitle')}</h4>
-                <p>{t('materials.walnutDesc')} The premium choice for sophisticated interiors.</p>
+                <p>{t('materials.walnutDesc')}</p>
               </div>
             </div>
 
@@ -382,6 +393,7 @@ export default function RWoodGrooveProductPage() {
                 src="/images/products/rwood-groove/rWood-Groove_detail.jpg"
                 alt="Wood finish samples"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -592,6 +604,7 @@ export default function RWoodGrooveProductPage() {
                 src="/images/products/rwood-groove/seamless installation.jpg"
                 alt="Panel installation process"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -608,6 +621,7 @@ export default function RWoodGrooveProductPage() {
                 src="/images/products/rwood-groove/FSC_CERT.webp"
                 alt="Sustainable forestry"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -821,6 +835,7 @@ export default function RWoodGrooveProductPage() {
                   src={`/images/products/rwood-groove/gallery-${i}.webp`}
                   alt={`rWood - Groove installation example ${i}`}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -1098,7 +1113,7 @@ export default function RWoodGrooveProductPage() {
         .selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1428,7 +1443,7 @@ export default function RWoodGrooveProductPage() {
         .diagram-title {
           font-size: 0.85rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 2rem;
@@ -1527,7 +1542,7 @@ export default function RWoodGrooveProductPage() {
 
         .layer-desc {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         /* Sound Waves Animation */
@@ -1561,7 +1576,7 @@ export default function RWoodGrooveProductPage() {
 
         .wave-label {
           font-size: 0.65rem;
-          color: #888;
+          color: #767676;
           writing-mode: vertical-rl;
           text-orientation: mixed;
           transform: rotate(180deg);
@@ -1616,7 +1631,7 @@ export default function RWoodGrooveProductPage() {
 
         .rating-content .rating-label {
           font-size: 0.85rem;
-          color: #888;
+          color: #767676;
         }
 
         .rating-badge {
@@ -1659,7 +1674,7 @@ export default function RWoodGrooveProductPage() {
 
         .metric-label {
           font-size: 0.8rem;
-          color: #888;
+          color: #767676;
         }
 
         .certification-note {
@@ -1853,7 +1868,7 @@ export default function RWoodGrooveProductPage() {
 
         .download-icon { font-size: 2rem; }
         .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #888; }
+        .download-info span { font-size: 0.8rem; color: #767676; }
         .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
 
         /* Accessories Section */

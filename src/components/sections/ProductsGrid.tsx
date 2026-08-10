@@ -102,24 +102,10 @@ const products = [
       type: ['wall-panel', 'ceiling-panel'],
     },
   },
-  {
-    slug: 'rpet-circle',
-    image: '/images/products/rpet-circle/hero-rPET-Ceiling-Circle-grey.webp',
-    tags: {
-      use: ['panel'],
-      finish: ['pet'],
-      type: ['wall-panel', 'ceiling-panel'],
-    },
-  },
-  {
-    slug: 'rpet-divide',
-    image: '/images/products/rpet-divide/hero-rPET-Flat-motiv-1-divider-hang.webp',
-    tags: {
-      use: ['panel'],
-      finish: ['pet'],
-      type: ['divider'],
-    },
-  },
+  // NOTE: rpet-circle and rpet-divide were removed from the grid — they have
+  // no product pages yet, so their cards linked to 404s in all 10 locales.
+  // Re-add the entries once /products/rpet-circle and /products/rpet-divide
+  // routes exist (their images are still under public/images/products/).
   {
     slug: 'rwood-perf',
     image: '/images/products/rwood-perf/hero-rwood-perf.webp',

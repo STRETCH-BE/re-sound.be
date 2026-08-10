@@ -136,7 +136,7 @@ export default function ContactInfo() {
 
         .info-label {
           font-size: 0.85rem;
-          color: #888;
+          color: #767676;
           margin-bottom: 0.25rem;
         }
 

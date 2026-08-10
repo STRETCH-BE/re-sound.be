@@ -1,7 +1,9 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { pickMessages } from '@/lib/i18n-messages';
 import PartnerPage from '@/components/sections/PartnerPage';
 
 interface PartnerRouteProps {
@@ -30,5 +32,12 @@ export async function generateMetadata({
 export default async function PartnerRoute({ params: { locale } }: PartnerRouteProps) {
   // Enable static rendering — must be called before any other next-intl functions
   setRequestLocale(locale);
-  return <PartnerPage />;
+
+  const messages = pickMessages(await getMessages(), ['partnerPage']);
+
+  return (
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <PartnerPage />
+    </NextIntlClientProvider>
+  );
 }

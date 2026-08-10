@@ -651,7 +651,7 @@ nav.scrolled {
 
 .feature-text p {
   font-size: 0.95rem;
-  color: #888;
+  color: #767676;
   margin: 0;
 }
 
@@ -2049,7 +2049,7 @@ footer {
 }
 
 .belgian-feature p {
-  color: #888;
+  color: #767676;
   font-size: 0.9rem;
   margin: 0;
 }
@@ -2467,5 +2467,51 @@ footer {
   .loop-animation {
     width: 220px;
     height: 220px;
+  }
+}
+
+/* ===========================================
+   ACCESSIBILITY
+   =========================================== */
+
+/* Skip-to-content link: visually hidden until keyboard-focused, then shown
+   above the fixed header. */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.75rem 1.25rem;
+  background: var(--deep-blue);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Visible focus indicator for keyboard navigation. Several components set
+   outline: none on swatches/cells; :focus-visible restores an indicator for
+   keyboard users only, without affecting mouse clicks. */
+:focus-visible {
+  outline: 3px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
+/* Respect the OS-level reduced-motion preference: collapse decorative
+   animations (marquee ticker, rotating loops, float, fade-ups) and smooth
+   scrolling to near-instant. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

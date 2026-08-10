@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Newsletter() {
   const t = useTranslations('newsletter');
+  const locale = useLocale();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -12,11 +13,26 @@ export default function Newsletter() {
     e.preventDefault();
     setStatus('loading');
 
-    // Simulate API call - in real app, connect to Mailchimp/ConvertKit/etc.
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    setStatus('success');
-    setEmail('');
+    // Delivered through the existing contact pipeline (Power Automate →
+    // inbox). Previously this handler faked a success and dropped the email.
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: 'Newsletter signup',
+          email,
+          subject: 'Newsletter subscription',
+          message: `Please add ${email} to the newsletter list. (Submitted via the newsletter form.)`,
+          locale,
+        }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setStatus('success');
+      setEmail('');
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -42,6 +58,7 @@ export default function Newsletter() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t('placeholder')}
+                  aria-label={t('placeholder')}
                   required
                   disabled={status === 'loading'}
                 />
@@ -53,6 +70,11 @@ export default function Newsletter() {
                   {status === 'loading' ? t('subscribing') : t('subscribe')}
                 </button>
               </div>
+              {status === 'error' && (
+                <p className="error-message" role="alert">
+                  {t('error')}
+                </p>
+              )}
               <p className="privacy-note">{t('privacy')}</p>
             </>
           )}
@@ -136,6 +158,15 @@ export default function Newsletter() {
           font-size: 0.85rem;
           opacity: 0.7;
           margin: 0;
+        }
+
+        .error-message {
+          margin: 0;
+          padding: 0.75rem 1rem;
+          background: rgba(255, 255, 255, 0.2);
+          border-left: 3px solid #ffd7d7;
+          border-radius: 6px;
+          font-size: 0.9rem;
         }
 
         .success-message {

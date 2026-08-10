@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import RpetPanelProductPage from '@/components/sections/rpetpanelpage';
+import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -81,15 +83,25 @@ export default async function Page({ params: { locale } }: PageProps) {
     })
     .filter((e): e is FaqEntry => e !== null);
 
+  // Narrow the client-side message payload to just the namespaces this
+  // page's client components use (see src/lib/i18n-messages.ts).
+  const messages = pickMessages(await getMessages(), [
+    'productPage',
+    'rpetPanelPage',
+    'leadModal',
+  ]);
+
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd
         data={productSchema({
           slug: 'rpet-panel',
           locale,
           name: cleanName,
           description,
-          image: '/images/products/rpet-panel/hero-rPET-Panel.webp',
+          // Real hero used by the section component ("rPET - Panel - 7.png"),
+          // with spaces URL-encoded for a valid schema.org image URL.
+          image: '/images/products/rpet-panel/rPET%20-%20Panel%20-%207.png',
           category: 'Acoustic PET panels',
           countryOfOrigin: 'BE',
           material: '100% recycled PET',
@@ -115,6 +127,6 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RpetPanelProductPage />
-    </>
+    </NextIntlClientProvider>
   );
 }

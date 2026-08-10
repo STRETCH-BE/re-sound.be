@@ -648,8 +648,9 @@
     "placeholder": "Geben Sie Ihre E-Mail ein",
     "subscribe": "Abonnieren",
     "subscribing": "Wird abonniert...",
-    "success": "Vielen Dank für Ihr Abonnement! Überprüfen Sie Ihren Posteingang zur Bestätigung.",
-    "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmelden."
+    "success": "Vielen Dank für Ihr Abonnement!",
+    "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmelden.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "footer": {
     "description": "Zirkuläre Akustiklösungen aus recycelten Materialien. Für den Planeten entwickelt, in Belgien hergestellt.",

@@ -52,7 +52,9 @@ export const localeFullCodes: Record<Locale, string> = {
   pt: 'pt-PT',
   da: 'da-DK',
   sv: 'sv-SE',
-  no: 'no-NO',
+  // Bokmål — 'no' is a macrolanguage; 'nb-NO' is the code Facebook/OG and
+  // hreflang validators actually recognise.
+  no: 'nb-NO',
   is: 'is-IS',
 };
 

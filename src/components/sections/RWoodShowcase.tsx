@@ -47,8 +47,10 @@ const VENEERS: Veneer[] = [
   {
     name: 'Ash White',
     code: 'RW-ASH',
-    heroImage: '/images/products/rwood-veneer/ASH-White-1.jpg',
-    swatchImage: '/images/products/rwood-veneer/ASH-White.jpg',
+    // The white-ash photo lives in rwood-micro/ under its original filename
+    // (spaces %20-escaped) — the old ASH-White*.jpg paths never existed.
+    heroImage: '/images/products/rwood-micro/White%20Quarter%20Cut%20Ash.jpg',
+    swatchImage: '/images/products/rwood-micro/White%20Quarter%20Cut%20Ash.jpg',
   },
   {
     name: 'Birch Sliced',
@@ -118,7 +120,6 @@ export default function RWoodShowcase() {
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
             sizes="100vw"
-            priority
           />
         </div>
         <div className="rwood-hero-overlay" />
@@ -196,7 +197,12 @@ export default function RWoodShowcase() {
               onClick={() => selectVeneer(v)}
               role="button"
               tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && selectVeneer(v)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault(); // Space must not scroll the page
+                  selectVeneer(v);
+                }
+              }}
               aria-label={`View ${v.name} veneer`}
               aria-pressed={isActive}
             >
@@ -205,7 +211,8 @@ export default function RWoodShowcase() {
                 alt={`${v.name} veneer`}
                 fill
                 style={{ objectFit: 'cover' }}
-                sizes="20vw"
+                // Strip is a full-width grid: 5 columns desktop, 3 below 1024px
+                sizes="(max-width: 1024px) 33vw, 20vw"
               />
               <div className="veneer-overlay" />
               <div className="veneer-label">
@@ -261,7 +268,12 @@ export default function RWoodShowcase() {
                   onClick={() => selectVeneer(v)}
                   role="button"
                   tabIndex={0}
-                  onKeyDown={(e) => e.key === 'Enter' && selectVeneer(v)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault(); // Space must not scroll the page
+                      selectVeneer(v);
+                    }
+                  }}
                   aria-label={`Select ${v.name}`}
                   aria-pressed={isActive}
                 >
@@ -271,7 +283,9 @@ export default function RWoodShowcase() {
                       alt={v.name}
                       fill
                       style={{ objectFit: 'cover' }}
-                      sizes="80px"
+                      // 4-col grid inside the half-width swatches panel on
+                      // desktop; the panel spans full width below 1024px
+                      sizes="(max-width: 1024px) 22vw, 10vw"
                     />
                     {isActive && (
                       <div className="swatch-check">
@@ -477,7 +491,8 @@ export default function RWoodShowcase() {
           position: relative;
           overflow: hidden;
           cursor: pointer;
-          outline: none;
+          /* no outline reset — the global :focus-visible style provides
+             the keyboard focus indicator */
         }
 
         .veneer-cell :global(img) {
@@ -623,7 +638,8 @@ export default function RWoodShowcase() {
           display: flex;
           flex-direction: column;
           gap: 0.35rem;
-          outline: none;
+          /* no outline reset — the global :focus-visible style provides
+             the keyboard focus indicator */
         }
 
         .swatch-img-wrap {

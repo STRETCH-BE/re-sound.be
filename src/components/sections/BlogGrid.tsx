@@ -118,7 +118,7 @@ export default function BlogGrid({ posts = defaultPosts }: BlogGridProps) {
 
         .blog-date {
           font-size: 0.85rem;
-          color: #888;
+          color: #767676;
         }
 
         .blog-content h3 {

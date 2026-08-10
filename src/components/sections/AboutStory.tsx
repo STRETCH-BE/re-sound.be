@@ -86,7 +86,7 @@ export default function AboutStory() {
         }
 
         .image-placeholder p {
-          color: #888;
+          color: #767676;
           font-size: 0.9rem;
         }
 

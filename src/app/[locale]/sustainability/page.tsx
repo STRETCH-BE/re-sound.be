@@ -1,7 +1,9 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { pickMessages } from '@/lib/i18n-messages';
 
 import PageHero from '@/components/sections/PageHero';
 import CircularProcess from '@/components/sections/CircularProcess';
@@ -38,9 +40,10 @@ export default async function SustainabilityPage({ params: { locale } }: Sustain
   setRequestLocale(locale);
   
   const t = await getTranslations('sustainability');
+  const messages = pickMessages(await getMessages(), ['cta', 'materials', 'sustainability']);
 
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       {/* Page Hero */}
       <PageHero
         tag={t('tag')}
@@ -132,6 +135,6 @@ export default async function SustainabilityPage({ params: { locale } }: Sustain
 
       {/* CTA */}
       <CTA variant="green" />
-    </>
+    </NextIntlClientProvider>
   );
 }

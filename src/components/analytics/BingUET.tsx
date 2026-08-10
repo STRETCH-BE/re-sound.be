@@ -38,7 +38,7 @@ export default function BingUET() {
   if (!hasConsent || !BING_UET_ID) return null;
 
   return (
-    <Script id="bing-uet" strategy="afterInteractive">
+    <Script id="bing-uet" strategy="lazyOnload">
       {`
         (function(w,d,t,r,u){
           var f,n,i;

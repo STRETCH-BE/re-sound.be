@@ -1,7 +1,9 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { pickMessages } from '@/lib/i18n-messages';
 
 import PageHero from '@/components/sections/PageHero';
 import ContactForm from '@/components/sections/ContactForm';
@@ -24,6 +26,14 @@ export async function generateMetadata({
     openGraph: {
       title: `${t('contactTitle')} | Re-Sound`,
       description: t('contactDescription'),
+      images: [
+        {
+          url: `/api/og?page=contact&locale=${locale}`,
+          width: 1200,
+          height: 630,
+          alt: `${t('contactTitle')} | Re-Sound`,
+        },
+      ],
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
     },
@@ -36,9 +46,10 @@ export default async function ContactPage({ params: { locale } }: ContactPagePro
   setRequestLocale(locale);
   
   const t = await getTranslations('contact');
+  const messages = pickMessages(await getMessages(), ['contact', 'newsletter']);
 
   return (
-    <>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       {/* Page Hero */}
       <PageHero
         tag={t('tag')}
@@ -59,6 +70,6 @@ export default async function ContactPage({ params: { locale } }: ContactPagePro
 
       {/* Newsletter */}
       <Newsletter />
-    </>
+    </NextIntlClientProvider>
   );
 }

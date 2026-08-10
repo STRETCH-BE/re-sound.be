@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import DuoProductPage from '@/components/sections/DuoProductPage';
+import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -73,6 +75,14 @@ export default async function Page({ params: { locale } }: PageProps) {
     })
     .filter((e): e is FaqEntry => e !== null);
 
+  // Narrow the catalog to the namespaces the client tree actually uses:
+  // duoPage (product copy), boothPage (shared booth template), leadModal.
+  const messages = pickMessages(await getMessages(), [
+    'duoPage',
+    'boothPage',
+    'leadModal',
+  ]);
+
   return (
     <>
       <JsonLd
@@ -81,7 +91,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           locale,
           name: cleanName,
           description,
-          image: '/images/products/duo/hero.jpg',
+          image: '/images/products/duo/hero-flex.jpg',
           category: 'Acoustic meeting booths',
           countryOfOrigin: 'EU',
           material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
@@ -105,7 +115,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <DuoProductPage />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <DuoProductPage />
+      </NextIntlClientProvider>
     </>
   );
 }

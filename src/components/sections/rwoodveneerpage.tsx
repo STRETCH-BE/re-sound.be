@@ -1,12 +1,17 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
-import SampleKitModal from './SampleKitModal';
 import { Link } from '@/i18n/navigation';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Code-split both modals — they only render after user interaction,
+// so they don't belong in the initial bundle.
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
+const SampleKitModal = dynamic(() => import('@/components/sections/SampleKitModal'), { ssr: false });
 
 // Veneer collection — keys are stable identifiers; display strings come from i18n
 // (see rwoodVeneerPage.collectionData.{categories,origins,grains} in messages/*.json)
@@ -225,9 +230,8 @@ export default function RWoodPanelProductPage() {
             </a>
           </div>
 
-          <p className="hero-price"> <strong> </strong> </p>
         </div>
-        
+
         <div className="hero-image">
           <div className="image-container hero-img">
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
@@ -235,9 +239,16 @@ export default function RWoodPanelProductPage() {
                 src={currentHeroImage}
                 alt={`rWood - Panel${selectedVeneer ? ` in ${selectedVeneer.name}` : ' prefinished veneer panel'}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => {
+                  // A missing veneer image would leave the spinner hanging
+                  // forever — fall back to the default hero and stop loading.
+                  setSelectedVeneer(null);
+                  setIsImageLoading(false);
+                }}
               />
             </div>
             {isImageLoading && (
@@ -302,6 +313,7 @@ export default function RWoodPanelProductPage() {
                 src="/images/products/rwood-veneer/overview-craftsmanship.webp"
                 alt="rWood - Panel veneered MDF panel close-up showing grain detail"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -356,7 +368,7 @@ export default function RWoodPanelProductPage() {
             <div className="comp-layer-info">
               <span className="comp-layer-number">01</span>
               <div>
-                <h4>{t('anatomy.layer1')}</h4>
+                <h3>{t('anatomy.layer1')}</h3>
                 <p>{t('anatomy.layer1Desc')}</p>
               </div>
             </div>
@@ -373,7 +385,7 @@ export default function RWoodPanelProductPage() {
             <div className="comp-layer-info">
               <span className="comp-layer-number">02</span>
               <div>
-                <h4>{t('anatomy.layer2')}</h4>
+                <h3>{t('anatomy.layer2')}</h3>
                 <p>{t('anatomy.layer2Desc')}</p>
               </div>
             </div>
@@ -390,7 +402,7 @@ export default function RWoodPanelProductPage() {
             <div className="comp-layer-info">
               <span className="comp-layer-number">03</span>
               <div>
-                <h4>{t('anatomy.layer3')}</h4>
+                <h3>{t('anatomy.layer3')}</h3>
                 <p>{t('anatomy.layer3Desc')}</p>
               </div>
             </div>
@@ -432,16 +444,24 @@ export default function RWoodPanelProductPage() {
         {/* Veneer cards grid */}
         <div className="veneer-grid">
           {displayedVeneers.map((veneer) => (
-            <div 
-              key={veneer.id} 
+            <div
+              key={veneer.id}
               className={`veneer-card ${selectedVeneer?.id === veneer.id ? 'active' : ''}`}
+              role="button"
+              tabIndex={0}
               onClick={() => handleVeneerSelect(veneer)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  if (e.key === ' ') e.preventDefault();
+                  handleVeneerSelect(veneer);
+                }
+              }}
             >
               <div className="veneer-card-image">
                 <div className="veneer-card-swatch" style={{ backgroundImage: `url(${veneer.swatch})` }} />
               </div>
               <div className="veneer-card-info">
-                <h4>{veneer.name}</h4>
+                <h3>{veneer.name}</h3>
                 <span className="veneer-origin">{t(`collection.origins.${veneer.originKey}`)}</span>
                 <p className="veneer-grain">{t(`collection.grains.${veneer.grainKey}`)}</p>
               </div>
@@ -487,7 +507,7 @@ export default function RWoodPanelProductPage() {
                 >
                   <span className="finish-type-icon">{finish.icon}</span>
                   <div className="finish-type-info">
-                    <h4>{finish.name}</h4>
+                    <h3>{finish.name}</h3>
                     <p>{finish.description}</p>
                   </div>
                 </button>
@@ -495,7 +515,7 @@ export default function RWoodPanelProductPage() {
             </div>
 
             <div className="finish-advantages">
-              <h4>{t('anatomy.keyAdvTitle')}</h4>
+              <h3>{t('anatomy.keyAdvTitle')}</h3>
               <div className="advantages-grid">
                 <div className="advantage">
                   <span className="adv-icon">🛡️</span>
@@ -522,6 +542,7 @@ export default function RWoodPanelProductPage() {
                 src="/images/products/rwood-veneer/finish-detail.webp"
                 alt="Close-up of lacquered veneer surface"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -544,7 +565,15 @@ export default function RWoodPanelProductPage() {
             <div
               key={format.id}
               className={`format-card ${selectedFormat.id === format.id ? 'active' : ''}`}
+              role="button"
+              tabIndex={0}
               onClick={() => setSelectedFormat(format)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  if (e.key === ' ') e.preventDefault();
+                  setSelectedFormat(format);
+                }
+              }}
             >
               <div className="format-visual">
                 <div className={`format-panel format-${format.id}`}>
@@ -553,7 +582,7 @@ export default function RWoodPanelProductPage() {
                 </div>
               </div>
               <div className="format-info">
-                <h4>{format.name}</h4>
+                <h3>{format.name}</h3>
                 <p>{format.description}</p>
                 <div className="format-specs">
                   <span>{format.width} × {format.length}</span>
@@ -585,7 +614,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M18 6V4"/>
               </svg>
             </div>
-            <h4>{t('applications.app1Title')}</h4>
+            <h3>{t('applications.app1Title')}</h3>
             <p>{t('applications.app1Desc')} {t('applications.app1Extra')}</p>
           </div>
           <div className="application-card">
@@ -596,7 +625,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M9 3v18"/>
               </svg>
             </div>
-            <h4>{t('applications.app2Title')}</h4>
+            <h3>{t('applications.app2Title')}</h3>
             <p>{t('applications.app2Desc')} {t('applications.app2Extra')}</p>
           </div>
           <div className="application-card">
@@ -607,7 +636,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M9 21v-6h6v6"/>
               </svg>
             </div>
-            <h4>{t('applications.app3Title')}</h4>
+            <h3>{t('applications.app3Title')}</h3>
             <p>{t('applications.app3Desc')} {t('applications.app3Extra')}</p>
           </div>
           <div className="application-card">
@@ -618,7 +647,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M2 12l10 5 10-5"/>
               </svg>
             </div>
-            <h4>{t('applications.app4Title')}</h4>
+            <h3>{t('applications.app4Title')}</h3>
             <p>{t('applications.app4Desc')}</p>
           </div>
         </div>
@@ -643,6 +672,7 @@ export default function RWoodPanelProductPage() {
                 src="/images/products/rwood-veneer/FSC_sustainability.webp"
                 alt="Sustainably managed forest"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -657,42 +687,42 @@ export default function RWoodPanelProductPage() {
               <div className="sustain-item">
                 <span className="sustain-icon">🌲</span>
                 <div>
-                  <h4>{t('sustainability.badge1')}</h4>
+                  <h3>{t('sustainability.badge1')}</h3>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>{t('sustainability.badge2')}</h4>
+                  <h3>{t('sustainability.badge2')}</h3>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🏭</span>
                 <div>
-                  <h4>{t('sustainability.badge3')}</h4>
+                  <h3>{t('sustainability.badge3')}</h3>
                   <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">📋</span>
                 <div>
-                  <h4>{t('sustainability.badge4')}</h4>
+                  <h3>{t('sustainability.badge4')}</h3>
                   <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">🌿</span>
                 <div>
-                  <h4>{t('sustainability.badge5')}</h4>
+                  <h3>{t('sustainability.badge5')}</h3>
                   <p>{t('sustainability.badge5Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <span className="sustain-icon">⚡</span>
                 <div>
-                  <h4>{t('sustainability.badge6')}</h4>
+                  <h3>{t('sustainability.badge6')}</h3>
                   <p>{t('sustainability.badge6Desc')}</p>
                 </div>
               </div>
@@ -712,7 +742,7 @@ export default function RWoodPanelProductPage() {
 
         <div className="specs-grid">
           <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>
+            <h3>{t('specs.dimensionsTitle')}</h3>
             <table>
               <tbody>
                 <tr><td>{t('specs.dimPanelWidth')}</td><td>1220 mm</td></tr>
@@ -725,7 +755,7 @@ export default function RWoodPanelProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.compositionTitle')}</h4>
+            <h3>{t('specs.compositionTitle')}</h3>
             <table>
               <tbody>
                 <tr><td>{t('specs.compTopLayer')}</td><td>{t('specs.compTopLayerVal')}</td></tr>
@@ -737,7 +767,7 @@ export default function RWoodPanelProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.finishTitle')}</h4>
+            <h3>{t('specs.finishTitle')}</h3>
             <table>
               <tbody>
                 <tr><td>{t('specs.finishLacquerType')}</td><td>{t('specs.finishLacquerVal')}</td></tr>
@@ -750,7 +780,7 @@ export default function RWoodPanelProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
+            <h3>{t('specs.fireTitle')}</h3>
             <table>
               <tbody>
                 <tr><td>{t('specs.fireStdMDF')}</td><td>D-s2, d0</td></tr>
@@ -761,7 +791,7 @@ export default function RWoodPanelProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.certsTitle')}</h4>
+            <h3>{t('specs.certsTitle')}</h3>
             <table>
               <tbody>
                 <tr><td>{t('specs.certWoodSourcing')}</td><td>{tPage('specs.fscCertified')}</td></tr>
@@ -773,13 +803,13 @@ export default function RWoodPanelProductPage() {
           </div>
 
           <div className="spec-card">
-            <h4>{t('specs.processingTitle')}</h4>
+            <h3>{t('specs.processingTitle')}</h3>
             <table>
               <tbody>
-                <tr><td>{t('specs.procSawing')}</td><td>{t('specs.procSawingVal')} woodworking tools</td></tr>
+                <tr><td>{t('specs.procSawing')}</td><td>{t('specs.procSawingVal')}</td></tr>
                 <tr><td>{t('specs.procEdgeBanding')}</td><td>{t('specs.procEdgeBandingVal')}</td></tr>
                 <tr><td>{t('specs.procCNC')}</td><td>Suitable</td></tr>
-                <tr><td>{t('specs.procEnvironment')}</td><td>{t('specs.procEnvironmentVal')} (dry areas)</td></tr>
+                <tr><td>{t('specs.procEnvironment')}</td><td>{t('specs.procEnvironmentVal')}</td></tr>
                 <tr><td>{t('specs.procMoisture')}</td><td>{t('specs.procMoistureVal')}</td></tr>
               </tbody>
             </table>
@@ -804,6 +834,9 @@ export default function RWoodPanelProductPage() {
                   src={`/images/products/rwood-veneer/gallery-${i}.webp`}
                   alt={`rWood - Panel interior project ${i}`}
                   fill
+                  sizes={i <= 2
+                    ? '(max-width: 1024px) 100vw, 50vw'
+                    : '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw'}
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -830,7 +863,7 @@ export default function RWoodPanelProductPage() {
             >
               <div className="download-icon">{download.icon}</div>
               <div className="download-info">
-                <h4>{download.name}</h4>
+                <h3>{download.name}</h3>
                 <span>PDF</span>
               </div>
               <span className="download-arrow">↓</span>
@@ -860,8 +893,8 @@ export default function RWoodPanelProductPage() {
                 <path d="M10 16h4" opacity="0.5"/>
               </svg>
             </div>
-            <h4>{t('accessories.item1Title')}</h4>
-            <p>{t('accessories.item1Desc')} for wall and ceiling feature zones</p>
+            <h3>{t('accessories.item1Title')}</h3>
+            <p>{t('accessories.item1Desc')}</p>
             <Link href="/products/rwood-groove" className="matching-link">{t('related.explore')}</Link>
           </div>
           <div className="matching-card">
@@ -872,7 +905,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M8 4v16"/>
               </svg>
             </div>
-            <h4>{t('accessories.item2Title')}</h4>
+            <h3>{t('accessories.item2Title')}</h3>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="matching-card">
@@ -881,7 +914,7 @@ export default function RWoodPanelProductPage() {
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
               </svg>
             </div>
-            <h4>{t('accessories.item3Title')}</h4>
+            <h3>{t('accessories.item3Title')}</h3>
             <p>{t('related.item3Desc')}</p>
             <button
               type="button"
@@ -1063,7 +1096,7 @@ export default function RWoodPanelProductPage() {
         }
 
         .selector-label {
-          font-size: 0.8rem; font-weight: 600; color: #888;
+          font-size: 0.8rem; font-weight: 600; color: #767676;
           text-transform: uppercase; letter-spacing: 0.5px;
         }
 
@@ -1232,7 +1265,7 @@ export default function RWoodPanelProductPage() {
           justify-content: center; flex-shrink: 0;
         }
 
-        .comp-layer-info h4 {
+        .comp-layer-info h3 {
           font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem;
         }
         .comp-layer-info p {
@@ -1299,7 +1332,7 @@ export default function RWoodPanelProductPage() {
         .veneer-card:hover .veneer-card-swatch { transform: scale(1.05); }
 
         .veneer-card-info { padding: 1.25rem; }
-        .veneer-card-info h4 { color: white; font-size: 1rem; margin: 0 0 0.25rem; }
+        .veneer-card-info h3 { color: white; font-size: 1rem; margin: 0 0 0.25rem; }
         .veneer-origin { font-size: 0.8rem; color: #7ec8f5; }
         .veneer-grain { font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin: 0.5rem 0 0; }
 
@@ -1339,14 +1372,14 @@ export default function RWoodPanelProductPage() {
           background: white; border-radius: 10px; flex-shrink: 0;
         }
 
-        .finish-type-info h4 {
+        .finish-type-info h3 {
           font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem;
         }
         .finish-type-info p {
           font-size: 0.85rem; color: #666; margin: 0; line-height: 1.5;
         }
 
-        .finish-advantages h4 {
+        .finish-advantages h3 {
           color: var(--deep-blue); margin-bottom: 1rem;
         }
 
@@ -1403,22 +1436,22 @@ export default function RWoodPanelProductPage() {
         .format-dim-w {
           position: absolute; bottom: -20px; left: 50%;
           transform: translateX(-50%); font-size: 0.65rem;
-          color: #888; white-space: nowrap;
+          color: #767676; white-space: nowrap;
         }
         .format-dim-l {
           position: absolute; right: -50px; top: 50%;
           transform: translateY(-50%) rotate(90deg);
-          font-size: 0.65rem; color: #888; white-space: nowrap;
+          font-size: 0.65rem; color: #767676; white-space: nowrap;
         }
 
-        .format-info h4 {
+        .format-info h3 {
           font-size: 1.1rem; color: var(--deep-blue); margin-bottom: 0.25rem;
         }
         .format-info p { font-size: 0.85rem; color: #666; margin: 0 0 1rem; }
 
         .format-specs {
           display: flex; flex-direction: column; gap: 0.25rem;
-          font-size: 0.8rem; color: #888;
+          font-size: 0.8rem; color: #767676;
         }
 
         /* ─── {t('applications.tag')} ─── */
@@ -1455,7 +1488,7 @@ export default function RWoodPanelProductPage() {
           color: #7ec8f5; margin-bottom: 1.25rem;
         }
 
-        .application-card h4 { color: white; margin-bottom: 0.5rem; font-size: 1.05rem; }
+        .application-card h3 { color: white; margin-bottom: 0.5rem; font-size: 1.05rem; }
         .application-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin: 0; line-height: 1.5; }
 
         .sector-badges {
@@ -1474,7 +1507,7 @@ export default function RWoodPanelProductPage() {
         }
         .sustain-item { display: flex; align-items: flex-start; gap: 1rem; }
         .sustain-icon { font-size: 1.5rem; flex-shrink: 0; }
-        .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
+        .sustain-item h3 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
 
         /* ─── SPECS ─── */
@@ -1487,7 +1520,7 @@ export default function RWoodPanelProductPage() {
         }
 
         .spec-card { background: var(--cream); padding: 1.5rem; border-radius: 16px; }
-        .spec-card h4 {
+        .spec-card h3 {
           font-size: 1rem; color: var(--brand-blue); margin-bottom: 1rem;
           text-transform: uppercase; letter-spacing: 0.5px;
         }
@@ -1533,8 +1566,8 @@ export default function RWoodPanelProductPage() {
         }
         .download-card:hover { background: var(--brand-blue-pale); transform: translateY(-2px); }
         .download-icon { font-size: 2rem; }
-        .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #888; }
+        .download-info h3 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
+        .download-info span { font-size: 0.8rem; color: #767676; }
         .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
 
         /* ─── MATCHING PRODUCTS ─── */
@@ -1564,7 +1597,7 @@ export default function RWoodPanelProductPage() {
           color: #7ec8f5; margin-bottom: 1.25rem;
         }
 
-        .matching-card h4 { color: white; margin-bottom: 0.5rem; }
+        .matching-card h3 { color: white; margin-bottom: 0.5rem; }
         .matching-card p {
           font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);
           margin: 0 0 1rem; line-height: 1.5;

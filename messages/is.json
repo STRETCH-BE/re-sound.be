@@ -699,8 +699,9 @@
     "placeholder": "Sláðu inn netfangið þitt",
     "subscribe": "Gerast áskrifandi",
     "subscribing": "Gerst áskrifandi...",
-    "success": "Thank you for subscribing! Check your inbox for confirmation.",
-    "privacy": "Við virðum friðhelgi þína. Hætta áskrift hvenær sem er."
+    "success": "Takk fyrir áskriftina!",
+    "privacy": "Við virðum friðhelgi þína. Hætta áskrift hvenær sem er.",
+    "error": "Eitthvað fór úrskeiðis. Reyndu aftur."
   },
   "footer": {
     "description": "Hringrásarlegar hljóðlausnir úr endurunnnum efnum. Hannaðar fyrir plánetuna, framleiddar í Belgíu.",

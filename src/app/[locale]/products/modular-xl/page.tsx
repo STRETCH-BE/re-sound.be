@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 import ModularXLProductPage from '@/components/sections/ModularXLProductPage';
+import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -72,6 +74,14 @@ export default async function Page({ params: { locale } }: PageProps) {
     })
     .filter((e): e is FaqEntry => e !== null);
 
+  // Narrow the catalog to the namespaces the client tree actually uses:
+  // modularXlPage (product copy), boothPage (shared booth template), leadModal.
+  const messages = pickMessages(await getMessages(), [
+    'modularXlPage',
+    'boothPage',
+    'leadModal',
+  ]);
+
   return (
     <>
       <JsonLd
@@ -104,7 +114,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <ModularXLProductPage />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <ModularXLProductPage />
+      </NextIntlClientProvider>
     </>
   );
 }

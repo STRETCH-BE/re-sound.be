@@ -1,11 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import LeadGenModal, { LeadFormData } from '@/components/LeadGenModal';
+import dynamic from 'next/dynamic';
+import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for the Divide product
 const colorOptions = [
@@ -187,9 +190,11 @@ export default function DivideProductPage() {
                 src={selectedColor.image}
                 alt={`Re-Sound Divide acoustic room divider in ${selectedColor.name}`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
+                onError={() => setIsImageLoading(false)}
               />
             </div>
             {isImageLoading && (
@@ -249,6 +254,7 @@ export default function DivideProductPage() {
                 src="/images/products/divide/overview.webp"
                 alt="Divide acoustic room divider"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -316,6 +322,7 @@ export default function DivideProductPage() {
                 src="/images/products/divide/integrated-base.webp"
                 alt="Divide integrated base detail"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -332,6 +339,7 @@ export default function DivideProductPage() {
                 src="/images/products/divide/magnetic-connection.webp"
                 alt="Magnetic connection detail"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -414,6 +422,7 @@ export default function DivideProductPage() {
                 src="/images/products/divide/modular.webp"
                 alt="Modular configurations"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -426,10 +435,13 @@ export default function DivideProductPage() {
         <div className="section-grid">
           <div className="section-image">
             <div className="image-container">
+              {/* circular.webp never shipped — divide_card.webp is the
+                  closest existing product shot for this section. */}
               <Image
-                src="/images/products/divide/circular.webp"
-                alt="Circular design - recycled materials"
+                src="/images/products/divide/divide_card.webp"
+                alt="Divide room divider made from recycled textile fibres"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
@@ -663,13 +675,16 @@ export default function DivideProductPage() {
         </div>
 
         <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="gallery-item">
+          {/* Showcase all six colourways — only the selected one is visible
+              in the hero, and dedicated gallery photos don't exist yet. */}
+          {colorOptions.map((color) => (
+            <div key={color.id} className="gallery-item">
               <div className="image-container gallery">
                 <Image
-                  src={`/images/products/divide/gallery-${i}.webp`}
-                  alt={`Divide room divider installation example ${i}`}
+                  src={color.image}
+                  alt={`Divide acoustic room divider in ${color.name}`}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -913,7 +928,7 @@ export default function DivideProductPage() {
         .color-selector-label {
           font-size: 0.8rem;
           font-weight: 600;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1194,7 +1209,7 @@ export default function DivideProductPage() {
 
         .side-label {
           font-size: 0.75rem;
-          color: #888;
+          color: #767676;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -1327,7 +1342,7 @@ export default function DivideProductPage() {
 
         .download-icon { font-size: 2rem; }
         .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #888; }
+        .download-info span { font-size: 0.8rem; color: #767676; }
         .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
 
         .cta-section {

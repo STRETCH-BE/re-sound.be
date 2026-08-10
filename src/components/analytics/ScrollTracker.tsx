@@ -26,7 +26,12 @@ export default function ScrollTracker() {
   }, [pathname]);
 
   useEffect(() => {
-    const onScroll = () => {
+    // rAF-throttled: scroll events fire far more often than frames render,
+    // and the handler reads layout (scrollHeight/clientHeight). Measure at
+    // most once per frame.
+    let ticking = false;
+    const measure = () => {
+      ticking = false;
       const h = document.documentElement;
       const max = h.scrollHeight - h.clientHeight;
       if (max <= 0) return;
@@ -37,6 +42,12 @@ export default function ScrollTracker() {
           analytics.scrollDepth(m, pathname);
         }
       });
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(measure);
+      }
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);

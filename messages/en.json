@@ -699,8 +699,9 @@
     "placeholder": "Enter your email",
     "subscribe": "Subscribe",
     "subscribing": "Subscribing...",
-    "success": "Thank you for subscribing! Check your inbox for confirmation.",
-    "privacy": "We respect your privacy. Unsubscribe at any time."
+    "success": "Thank you for subscribing!",
+    "privacy": "We respect your privacy. Unsubscribe at any time.",
+    "error": "Something went wrong. Please try again."
   },
   "footer": {
     "description": "Circular acoustic solutions crafted from recycled materials. Designed for the planet, made in Belgium.",
