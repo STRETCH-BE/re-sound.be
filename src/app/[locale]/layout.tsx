@@ -7,6 +7,7 @@ import { Syne, DM_Sans } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/layout/CookieConsent';
+import StyledJsxRegistry from '@/components/StyledJsxRegistry';
 import {
   ConsentModeDefaults,
   GoogleAnalytics,
@@ -158,6 +159,7 @@ export default async function LocaleLayout({
       </head>
 
       <body className="font-body antialiased">
+        <StyledJsxRegistry>
         <NextIntlClientProvider messages={messages}>
           {/* Keyboard users can jump past the fixed header. Styled in
               globals.css: visually hidden until focused. */}
@@ -188,6 +190,7 @@ export default async function LocaleLayout({
           {/* GDPR Cookie Consent Banner */}
           <CookieConsent />
         </NextIntlClientProvider>
+        </StyledJsxRegistry>
       </body>
     </html>
   );

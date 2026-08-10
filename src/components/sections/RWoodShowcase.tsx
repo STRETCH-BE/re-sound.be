@@ -280,7 +280,10 @@ export default function RWoodShowcase() {
                   <div className="swatch-img-wrap">
                     <Image
                       src={v.swatchImage}
-                      alt={v.name}
+                      // Decorative: the veneer name is the adjacent
+                      // .swatch-name text; repeating it in alt makes screen
+                      // readers announce it twice.
+                      alt=""
                       fill
                       style={{ objectFit: 'cover' }}
                       // 4-col grid inside the half-width swatches panel on
@@ -681,7 +684,7 @@ export default function RWoodShowcase() {
         .swatch-name {
           font-size: 0.6rem;
           font-weight: 600;
-          color: #999;
+          color: #767676;
           text-align: center;
           letter-spacing: 0.04em;
           transition: color 0.2s;

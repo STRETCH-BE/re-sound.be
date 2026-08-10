@@ -103,7 +103,8 @@ h1, h2, h3, h4, h5, h6 {
    BUTTONS
    =========================================== */
 .btn-primary {
-  background: var(--brand-blue);
+  /* brand-blue-dark: white text reaches WCAG AA (brand-blue was 3.7:1) */
+  background: var(--brand-blue-dark);
   color: white;
   padding: 1rem 2rem;
   border-radius: var(--radius-full);
@@ -119,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background: var(--brand-blue-dark);
+  background: #0f4c78;
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(25, 127, 199, 0.3);
 }
@@ -236,7 +237,7 @@ nav.scrolled {
 }
 
 .nav-cta {
-  background: var(--brand-blue);
+  background: var(--brand-blue-dark);
   color: white;
   padding: 0.8rem 1.8rem;
   border-radius: var(--radius-full);
@@ -247,7 +248,7 @@ nav.scrolled {
 }
 
 .nav-cta:hover {
-  background: var(--brand-blue-dark);
+  background: #0f4c78;
   transform: translateY(-2px);
 }
 

@@ -30,6 +30,12 @@
   "engines": {
     "node": ">=18.17.0"
   },
+  "browserslist": [
+    "chrome 111",
+    "edge 111",
+    "firefox 111",
+    "safari 16.4"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:STRETCH-BE/re-sound.be.git"

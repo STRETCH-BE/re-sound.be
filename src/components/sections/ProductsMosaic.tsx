@@ -84,7 +84,13 @@ export default function ProductsMosaic() {
               <span className="mc-series">{p.series}</span>
               <h3 className="mc-name">{t(`${p.slug}.title`)}</h3>
               <p className="mc-desc">{t(`${p.slug}.description`)}</p>
-              <Link href={`/products/${p.slug}`} className="mc-link">
+              <Link
+                href={`/products/${p.slug}`}
+                className="mc-link"
+                // Four cards share the visible label "Learn more →"; the
+                // aria-label distinguishes their destinations.
+                aria-label={`${t('learnMore')} — ${t(`${p.slug}.title`)}`}
+              >
                 {t('learnMore')} →
               </Link>
             </div>
@@ -281,7 +287,7 @@ export default function ProductsMosaic() {
 
         .mc-desc {
           font-size: 0.8rem;
-          color: rgba(255, 255, 255, 0.62);
+          color: rgba(255, 255, 255, 0.82);
           line-height: 1.5;
           margin-bottom: 0.85rem;
           max-width: 18rem;

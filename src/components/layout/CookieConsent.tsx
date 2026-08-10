@@ -220,7 +220,7 @@ export default function CookieConsent() {
           margin: 0;
         }
         .cookie-link {
-          color: var(--brand-blue);
+          color: var(--brand-blue-dark);
           text-decoration: underline;
         }
 

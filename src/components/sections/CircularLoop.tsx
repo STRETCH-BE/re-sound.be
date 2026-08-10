@@ -211,7 +211,7 @@ export default function CircularLoop() {
 
         .step-desc {
           font-size: 0.76rem;
-          color: rgba(255, 255, 255, 0.42);
+          color: rgba(255, 255, 255, 0.6);
           line-height: 1.55;
         }
 
@@ -339,7 +339,7 @@ export default function CircularLoop() {
           font-size: 0.55rem;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-          color: rgba(255, 255, 255, 0.48);
+          color: rgba(255, 255, 255, 0.66);
           white-space: nowrap;
         }
 

@@ -364,7 +364,7 @@ export default function Hero() {
           display: inline-flex;
           align-items: center;
           gap: 0.38rem;
-          background: var(--brand-blue);
+          background: var(--brand-blue-dark);
           color: #fff !important;
           font-weight: 700;
           font-size: 0.8rem;
@@ -375,7 +375,7 @@ export default function Hero() {
           white-space: nowrap;
         }
         :global(.hero-btn-blue:hover) {
-          background: var(--brand-blue-dark);
+          background: #0f4c78;
           transform: translateY(-2px);
           box-shadow: 0 10px 22px rgba(25, 127, 199, 0.38);
         }
