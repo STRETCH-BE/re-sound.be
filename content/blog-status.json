@@ -30,63 +30,63 @@
     "route": "/nl/blog/akoestische-panelen-restaurant"
   },
   "BP-007": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/fr/blog/cabine-acoustique-bureau-prix"
   },
   "BP-008": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/fr/blog/panneaux-acoustiques-pet-recycle"
   },
   "BP-009": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/fr/blog/combien-de-panneaux-acoustiques"
   },
   "BP-010": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/fr/blog/panneau-acoustique-bois-microperfore"
   },
   "BP-011": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/de/blog/telefonbox-buero-kosten"
   },
   "BP-012": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/de/blog/akustikpaneele-recyceltes-pet"
   },
   "BP-013": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/de/blog/din-18041-nachhallzeit-buero"
   },
   "BP-014": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet"
   },
   "BP-015": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/en/blog/office-phone-booth-prices"
   },
   "BP-016": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/en/blog/pet-acoustic-panels-vs-wood"
   },
   "BP-017": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/en/blog/how-many-acoustic-panels-do-i-need"
   },
   "BP-018": {
-    "status": "Briefed",
+    "status": "Review",
     "publishedDate": null,
-    "route": null
+    "route": "/en/blog/specifying-acoustic-panels-aw-nrc-class-a"
   }
 }
