@@ -55,9 +55,9 @@ crawls every locale page of a local production build):
 |---|---|---|
 | Pages crawled | 280 (10 locales) | 290 (6 locales in the sitemap, all 10 crawled) |
 | Forbidden strings | 47 pages | none |
-| English segments, indexable pages: es / pt | 15.8 % / 15.4 % | 0.2 % / 0.2 % |
-| English segments: nl / fr / de | 5.1 % / 6.0 % / 7.3 % | 0.3 % / 0.3 % / 0.3 % |
-| English segments: da / sv / no / is | 14.6 / 11.6 / 11.6 / 14.2 % | 0.2 / 0.2 / 0.3 / 0.2 % |
+| English segments, indexable pages: es / pt | 15.8 % / 15.4 % | 0.1 % / 0.1 % |
+| English segments: nl / fr / de | 5.1 % / 6.0 % / 7.3 % | 0.1 % / 0.1 % / 0.1 % |
+| English segments: da / sv / no / is | 14.6 / 11.6 / 11.6 / 14.2 % | 0.1 / 0.0 / 0.2 / 0.1 % |
 | Spanish text on /pt pages | yes (homepage and more) | none |
 | Products with JSON-LD `offers` | 1 of 13 (Interior only) | 13 of 13 (130 Product nodes across 10 locales, all with an Offer) |
 | Sitemap URLs / locales / distinct lastmod | 280 / 10 / 1 | 192 / 6 / 10 |
@@ -193,7 +193,7 @@ locales received these strings through the Task 5 translation pass.
 - Kept in English on purpose: FAQ category identifiers (compared in code),
   product/brand names, standards and codes.
 - English share per locale after the pass: see the table above. Remaining
-  English on es/pt indexable pages: four segments per locale (0.2 %), no page above the 3 % threshold, so the
+  English on es/pt indexable pages: one segment per locale (0.1 %), no page above the 3 % threshold, so the
   acceptance criterion is met; the survivors are product codes and standard
   names the stop-word heuristic reads as English.
 - Product/brand names, standards, codes and unit strings that are the same

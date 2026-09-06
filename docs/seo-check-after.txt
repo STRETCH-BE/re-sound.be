@@ -1,4 +1,4 @@
-Re-Sound SEO check — 2026-09-06T13:42:43.416Z
+Re-Sound SEO check — 2026-09-06T13:51:01.782Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
@@ -17,25 +17,17 @@ OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-da: 0.2% English (3/1296 segments over 29 pages)
-de: 0.3% English (4/1315 segments over 29 pages)
-es: 0.2% English (4/1616 segments over 29 pages)
-fr: 0.3% English (4/1523 segments over 29 pages)
-is: 0.2% English (3/1327 segments over 29 pages)
-nl: 0.3% English (4/1339 segments over 29 pages)
-no: 0.3% English (4/1299 segments over 29 pages)
-    3.6%  /no/products/rpet-panel  (3/84)
-pt: 0.2% English (4/1606 segments over 29 pages)
-sv: 0.2% English (3/1292 segments over 29 pages)
-    4.0%  /sv/products  (1/25)
+da: 0.1% English (1/1300 segments over 29 pages)
+de: 0.1% English (1/1318 segments over 29 pages)
+es: 0.1% English (1/1626 segments over 29 pages)
+fr: 0.1% English (1/1531 segments over 29 pages)
+is: 0.1% English (1/1330 segments over 29 pages)
+nl: 0.1% English (1/1342 segments over 29 pages)
+no: 0.2% English (2/1302 segments over 29 pages)
+pt: 0.1% English (1/1618 segments over 29 pages)
+sv: 0.0% English (0/1297 segments over 29 pages)
 
 -- sample English segments per flagged page (max 12 each)
-/sv/products:
-    · Discover our range of circular acoustic panels, each designed for specific applications while maintaining the highest standards of sustai…
-/no/products/rpet-panel:
-    · Any color from RAL or NCS palette
-    · Be om din prøvepakke
-    · Be om gratis prøver
 
 == (b2) Spanish text segments on /pt pages
 OK — none found
@@ -139,10 +131,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       40    148    1         7     yes    3          1/1  index         0.0  /nl/products/solid
 200     nl       50    151    1         7     yes    3          1/1  index         0.0  /nl/products/divide
 200     nl       59    146    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-groove
-200     nl       55    140    1         7     yes    3          1/1  index         1.3  /nl/products/rwood-micro
-200     nl       64    143    1         7     yes    3          1/1  index         1.1  /nl/products/rwood-perf
+200     nl       55    140    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-micro
+200     nl       64    143    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-perf
 200     nl       54    151    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-veneer
-200     nl       57    148    1         7     yes    3          1/1  index         2.4  /nl/products/rpet-panel
+200     nl       57    148    1         7     yes    3          1/1  index         1.2  /nl/products/rpet-panel
 200     nl       58    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-groove
 200     nl       62    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-flex-groove
 200     nl       59    152    1         7     yes    3          1/1  index         0.0  /nl/products/solo-flex
@@ -168,10 +160,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       44    155    1         7     yes    3          1/1  index         0.0  /fr/products/solid
 200     fr       52    153    1         7     yes    3          1/1  index         0.0  /fr/products/divide
 200     fr       63    147    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-groove
-200     fr       64    147    1         7     yes    3          1/1  index         1.0  /fr/products/rwood-micro
-200     fr       58    154    1         7     yes    3          1/1  index         1.0  /fr/products/rwood-perf
+200     fr       64    147    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-micro
+200     fr       58    154    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-perf
 200     fr       59    150    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-veneer
-200     fr       61    148    1         7     yes    3          1/1  index         2.2  /fr/products/rpet-panel
+200     fr       61    148    1         7     yes    3          1/1  index         1.1  /fr/products/rpet-panel
 200     fr       58    153    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-groove
 200     fr       65    149    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-flex-groove
 200     fr       59    154    1         7     yes    3          1/1  index         0.0  /fr/products/solo-flex
@@ -197,10 +189,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       39    151    1         7     yes    3          1/1  index         0.0  /de/products/solid
 200     de       48    146    1         7     yes    3          1/1  index         0.0  /de/products/divide
 200     de       64    146    1         7     yes    3          1/1  index         0.0  /de/products/rwood-groove
-200     de       61    151    1         7     yes    3          1/1  index         1.3  /de/products/rwood-micro
-200     de       55    150    1         7     yes    3          1/1  index         1.1  /de/products/rwood-perf
+200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/rwood-micro
+200     de       55    150    1         7     yes    3          1/1  index         0.0  /de/products/rwood-perf
 200     de       61    142    1         7     yes    3          1/1  index         0.0  /de/products/rwood-veneer
-200     de       57    145    1         7     yes    3          1/1  index         2.6  /de/products/rpet-panel
+200     de       57    145    1         7     yes    3          1/1  index         1.3  /de/products/rpet-panel
 200     de       63    145    1         7     yes    3          1/1  index         0.0  /de/products/rpet-groove
 200     de       64    132    1         7     yes    3          1/1  index         0.0  /de/products/rpet-flex-groove
 200     de       65    150    1         7     yes    3          1/1  index         0.0  /de/products/solo-flex
@@ -226,10 +218,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     es       43    147    1         7     yes    3          1/1  index         0.0  /es/products/solid
 200     es       53    149    1         7     yes    3          1/1  index         0.0  /es/products/divide
 200     es       63    154    1         7     yes    3          1/1  index         0.0  /es/products/rwood-groove
-200     es       58    152    1         7     yes    3          1/1  index         1.0  /es/products/rwood-micro
-200     es       61    155    1         7     yes    3          1/1  index         0.9  /es/products/rwood-perf
+200     es       58    152    1         7     yes    3          1/1  index         0.0  /es/products/rwood-micro
+200     es       61    155    1         7     yes    3          1/1  index         0.0  /es/products/rwood-perf
 200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/rwood-veneer
-200     es       55    148    1         7     yes    3          1/1  index         2.1  /es/products/rpet-panel
+200     es       55    148    1         7     yes    3          1/1  index         1.0  /es/products/rpet-panel
 200     es       59    147    1         7     yes    3          1/1  index         0.0  /es/products/rpet-groove
 200     es       61    145    1         7     yes    3          1/1  index         0.0  /es/products/rpet-flex-groove
 200     es       65    152    1         7     yes    3          1/1  index         0.0  /es/products/solo-flex
@@ -255,10 +247,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       44    154    1         7     yes    3          1/1  index         0.0  /pt/products/solid
 200     pt       52    147    1         7     yes    3          1/1  index         0.0  /pt/products/divide
 200     pt       64    151    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-groove
-200     pt       58    148    1         7     yes    3          1/1  index         1.0  /pt/products/rwood-micro
-200     pt       62    147    1         7     yes    3          1/1  index         0.9  /pt/products/rwood-perf
+200     pt       58    148    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-micro
+200     pt       62    147    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-perf
 200     pt       65    154    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-veneer
-200     pt       63    153    1         7     yes    3          1/1  index         2.2  /pt/products/rpet-panel
+200     pt       63    153    1         7     yes    3          1/1  index         1.1  /pt/products/rpet-panel
 200     pt       64    155    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-groove
 200     pt       61    141    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-flex-groove
 200     pt       65    147    1         7     yes    3          1/1  index         0.0  /pt/products/solo-flex
@@ -284,10 +276,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     da       37    143    1         7     yes    3          1/1  noindex       0.0  /da/products/solid
 200     da       43    136    1         7     yes    3          1/1  noindex       0.0  /da/products/divide
 200     da       64    155    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-groove
-200     da       62    147    1         7     yes    3          1/1  noindex       1.2  /da/products/rwood-micro
+200     da       62    147    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-micro
 200     da       56    145    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-perf
 200     da       62    149    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-veneer
-200     da       64    147    1         7     yes    3          1/1  noindex       2.4  /da/products/rpet-panel
+200     da       64    147    1         7     yes    3          1/1  noindex       1.2  /da/products/rpet-panel
 200     da       62    147    1         7     yes    3          1/1  noindex       0.0  /da/products/rpet-groove
 200     da       58    139    1         7     yes    3          1/1  noindex       0.0  /da/products/rpet-flex-groove
 200     da       56    150    1         7     yes    3          1/1  noindex       0.0  /da/products/solo-flex
@@ -298,9 +290,9 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     da       76    114    1         7     yes    2          0/0  noindex       0.0  /da/blog/recycled-materials-quality
 200     da       59     90    1         7     yes    2          0/0  noindex       0.0  /da/blog/sound-absorption-explained
 200     sv       64    154    1         7     yes    3          0/0  noindex       0.0  /sv
-200     sv       20    143    1         7     yes    1          0/0  noindex       4.0  /sv/products
+200     sv       20    143    1         7     yes    1          0/0  noindex       0.0  /sv/products
 200     sv       22    126    1         7     yes    0          0/0  noindex       0.0  /sv/about
-200     sv       21    121    1         7     yes    0          0/0  noindex       0.0  /sv/sustainability
+200     sv       21    122    1         7     yes    0          0/0  noindex       0.0  /sv/sustainability
 200     sv       42    148    1         7     yes    1          0/0  noindex       0.0  /sv/where-to-buy
 200     sv       59    151    1         7     yes    0          0/0  noindex       0.0  /sv/partner
 200     sv       29    134    1         7     yes    1          0/0  noindex       0.0  /sv/faq
@@ -313,10 +305,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     sv       42    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/solid
 200     sv       45    143    1         7     yes    3          1/1  noindex       0.0  /sv/products/divide
 200     sv       64    152    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-groove
-200     sv       59    141    1         7     yes    3          1/1  noindex       1.3  /sv/products/rwood-micro
+200     sv       59    141    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-micro
 200     sv       53    147    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-perf
 200     sv       64    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-veneer
-200     sv       65    149    1         7     yes    3          1/1  noindex       1.2  /sv/products/rpet-panel
+200     sv       65    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-panel
 200     sv       62    147    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-groove
 200     sv       56    132    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-flex-groove
 200     sv       64    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/solo-flex
@@ -342,10 +334,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     no       38    137    1         7     yes    3          1/1  noindex       0.0  /no/products/solid
 200     no       47    134    1         7     yes    3          1/1  noindex       0.0  /no/products/divide
 200     no       62    152    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-groove
-200     no       62    145    1         7     yes    3          1/1  noindex       1.2  /no/products/rwood-micro
+200     no       62    145    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-micro
 200     no       56    145    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-perf
 200     no       65    148    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-veneer
-200     no       64    145    1         7     yes    3          1/1  noindex       3.6  /no/products/rpet-panel
+200     no       64    145    1         7     yes    3          1/1  noindex       2.4  /no/products/rpet-panel
 200     no       63    143    1         7     yes    3          1/1  noindex       0.0  /no/products/rpet-groove
 200     no       59    141    1         7     yes    3          1/1  noindex       0.0  /no/products/rpet-flex-groove
 200     no       57    152    1         7     yes    3          1/1  noindex       0.0  /no/products/solo-flex
@@ -371,10 +363,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     is       47    141    1         7     yes    3          1/1  noindex       0.0  /is/products/solid
 200     is       45    137    1         7     yes    3          1/1  noindex       0.0  /is/products/divide
 200     is       62    143    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-groove
-200     is       59    138    1         7     yes    3          1/1  noindex       1.3  /is/products/rwood-micro
+200     is       59    138    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-micro
 200     is       56    130    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-perf
 200     is       65    153    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-veneer
-200     is       64    149    1         7     yes    3          1/1  noindex       1.2  /is/products/rpet-panel
+200     is       64    149    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-panel
 200     is       64    149    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-groove
 200     is       64    138    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-flex-groove
 200     is       60    155    1         7     yes    3          1/1  noindex       0.0  /is/products/solo-flex
