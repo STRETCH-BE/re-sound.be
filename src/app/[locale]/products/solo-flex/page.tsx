@@ -99,6 +99,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'boothPage',
     'leadModal',
     'manufacturer',
+    'order',
+    'footer',
   ]);
 
   const tBooth = await getTranslations({ locale, namespace: 'soloFlexPage' });

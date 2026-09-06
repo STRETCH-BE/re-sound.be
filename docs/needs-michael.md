@@ -18,6 +18,50 @@
 | 12 | Częstochowa address + phones | +48 730 700 333 (PL/EN) and +48 455 444 475 (PL/UA) on `/where-to-buy` and in the office LocalBusiness `telephone` |
 | 13 | confirmed | no change |
 
+## Online ordering — open points (added 6 September 2026)
+
+The order flow is live on Solo Flex, Duo, Modular XL, Interior and Divide
+(`docs/order-flow.md` explains it). These need a decision before the first
+real order arrives:
+
+26. **Set the e-mail plumbing.** Orders use the same Power Automate webhook as
+    the contact form (`POWER_AUTOMATE_WEBHOOK_URL`). Confirm it is set in
+    Vercel production, and set `ORDER_EMAIL` if orders should go somewhere
+    other than `info@re-sound.be`. Without it the buyer is told to contact you
+    directly, but you do not receive the order automatically.
+
+27. **Consumer withdrawal right.** A private buyer ordering at distance in the
+    EU normally has 14 days to withdraw, unless the goods are made to their
+    specification. The terms page does not mention this. Ask your lawyer what
+    the terms should say for booths and for panels made to a chosen colour or
+    size, and add it; the order dialog already links to the terms page.
+
+28. **VAT on cross-border sales to private buyers.** The flow charges 23 %
+    Polish VAT to private buyers everywhere, as you instructed. Once
+    cross-border B2C sales pass the EU one-stop-shop threshold (€ 10 000 a
+    year across the EU), the rate of the buyer's own country applies instead.
+    Confirm with your accountant when that switch is needed; it is one table
+    in `src/lib/order/vat.ts`.
+
+29. **Installation price for Duo and Interior.** Both are offered as "on
+    request" because no price is confirmed. Give the figures and they become
+    part of the online total.
+
+30. **Add-on prices.** Every add-on on the booth pages (sit-stand desk,
+    monitor arm, display, whiteboard, extra seating, fabric panel, and so on)
+    is currently "on request", so any order containing one is not a final
+    amount. A price list would make those orders self-service.
+
+31. **Order handling.** Decide who confirms orders and how fast; the buyer's
+    confirmation e-mail promises an answer with the transport cost "within one
+    working day". Change that sentence (`order.email.nextSteps` in
+    `messages/*.json`) if another promise fits better.
+
+32. **VIES verification.** VAT numbers are verified against the European
+    Commission's VIES service. When VIES is unreachable the order e-mail says
+    "CHECK BY HAND" — those orders must be verified before invoicing without
+    VAT.
+
 Still open: items 14–25 below (hero images, Google API key and place id, planned application pages, rWood Groove 60 % recycled content, translation notes) and the Google Business Profile checklist.
 
 Everything below is a fact, asset or decision the sprint could not settle from

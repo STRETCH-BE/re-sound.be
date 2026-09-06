@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
+import OrderButton from '@/components/order/OrderButton';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -167,9 +168,10 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           </div>
 
           <div className="hero-ctas">
+            <OrderButton slug={slug} namespace={namespace} className="btn-primary" />
             <Link
               href="/contact"
-              className="btn-primary"
+              className="btn-secondary"
               onClick={() => analytics.quoteClick(slug, 'product_cta')}
             >
               {tShared('cta.requestQuote')}

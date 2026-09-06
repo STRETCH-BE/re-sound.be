@@ -197,6 +197,19 @@ export const analytics = {
   quoteClick: (product?: string, location?: string) =>
     track('quote_click', { product, location }),
 
+  /** Order dialog opened from a product page */
+  orderStarted: (product: string) => track('order_started', { product }),
+
+  /** Order placed through the order dialog (no payment: Re-Sound confirms it) */
+  orderSubmitted: (data: { product: string; quantity: number; vatMode: string; valueCents: number }) =>
+    track('order_submitted', {
+      product: data.product,
+      quantity: data.quantity,
+      vat_mode: data.vatMode,
+      value: data.valueCents / 100,
+      currency: 'EUR',
+    }),
+
   /** Language switch — useful for understanding which locales convert */
   languageSwitch: (from: string, to: string, path: string) =>
     track('language_switch', { from, to, path }),

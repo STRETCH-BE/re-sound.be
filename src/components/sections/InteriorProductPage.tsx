@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
+import OrderButton from '@/components/order/OrderButton';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect, type ReactNode } from 'react';
 import Image from 'next/image';
@@ -111,7 +112,8 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
           </div>
 
           <div className="hero-ctas">
-            <Link href="/contact" className="btn-primary" onClick={() => analytics.quoteClick('interior', 'product_cta')}>
+            <OrderButton slug="interior" namespace="interiorPage" className="btn-primary" />
+            <Link href="/contact" className="btn-secondary" onClick={() => analytics.quoteClick('interior', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
             <a href="#specs" onClick={(e) => { e.preventDefault(); scrollToSection('specs'); }} className="btn-secondary">
