@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. All rights reserved.",
     "manageCookies": "Manage cookies",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "countryBelgium": "Belgium"
   },
   "cookies": {
     "title": "Cookie preferences",
@@ -952,7 +953,8 @@
       "selectFinish": "Select {name} finish",
       "selectVeneer": "Select {name} veneer",
       "select": "Select {name}"
-    }
+    },
+    "classA": "Class A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Modular configurations",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Divide room divider made from recycled textile fibres",
       "dividePanelCrossSection": "Divide panel cross-section"
+    },
+    "options": {
+      "perSide": "Per side"
     }
   },
   "rpetGroovePage": {
@@ -1608,6 +1613,19 @@
       "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove acoustic panel in modern office",
       "panelInstallationProcess": "Panel installation process",
       "recycledMaterials": "Recycled materials"
+    },
+    "options": {
+      "lineDesc": "Clean parallel lines",
+      "waveDesc": "Organic flowing curves",
+      "chevronDesc": "Dynamic V-pattern",
+      "gridDesc": "Modern intersecting lines",
+      "12mmDesc": "Standard absorption",
+      "24mmDesc": "Enhanced absorption",
+      "36mmDesc": "Maximum absorption",
+      "lineGrooves": "Vertical",
+      "waveGrooves": "Curved",
+      "chevronGrooves": "Angled",
+      "gridGrooves": "Cross-hatch"
     }
   },
   "rpetPanelPage": {
@@ -1828,6 +1846,18 @@
       "cncProcessingOfRpetPanels": "CNC processing of rPET panels",
       "recycledPetBottles": "Recycled PET bottles",
       "rpetPanelSamplePanels": "rPET - Panel sample panels"
+    },
+    "options": {
+      "midnightDesc": "Deep black, reminiscent of a moonlit sky",
+      "titanDesc": "Characteristic dark gray, like steel",
+      "silverDesc": "Modern industrial elegance",
+      "marbleDesc": "Minimalist light gray aesthetic",
+      "frostDesc": "Pure white simplicity",
+      "customDesc": "Any color from RAL or NCS palette",
+      "12mmDesc": "Lightweight solution",
+      "18mmDesc": "Balanced performance",
+      "24mmDesc": "Maximum absorption",
+      "maximumLabel": "Maximum"
     }
   },
   "rwoodGroovePage": {
@@ -2020,6 +2050,12 @@
       "woodFinishSamples": "Wood finish samples",
       "panelInstallationProcess": "Panel installation process",
       "sustainableForestry": "Sustainable forestry"
+    },
+    "options": {
+      "originalDesc": "Classic 6-lamella design",
+      "mixedDesc": "Dynamic mixed widths",
+      "4lamellaDesc": "Bold wide strips",
+      "3lamellaDesc": "Statement wide panels"
     }
   },
   "rwoodPerfPage": {
@@ -2205,6 +2241,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Perforated wood panel veneer surface detail",
       "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel concealed mounting system",
       "sustainableWoodSourcingAndProduction": "Sustainable wood sourcing and production"
+    },
+    "options": {
+      "pd8Desc": "Maximum absorption, large open area",
+      "ph10Desc": "High absorption, bold perforations",
+      "ph8Desc": "Balanced look and performance",
+      "ph5Desc": "Discreet pattern, subtle surface"
     }
   },
   "rwoodMicroPage": {
@@ -2400,6 +2442,22 @@
       "rwoodMicroPanelInstallationSystem": "rWood - Micro panel installation system",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Backlit micro-perforated panel creating light effect",
       "sustainableProduction": "Sustainable production"
+    },
+    "options": {
+      "veneerDesc": "Natural A-grade veneer",
+      "hplDesc": "High-pressure laminate",
+      "nanoDesc": "Virtually invisible perforations",
+      "microsDesc": "Subtle micro-perforations",
+      "micromDesc": "Balanced perforation pattern",
+      "microlDesc": "Maximum absorption pattern",
+      "nanoDetail": "The smallest perforation available—completely invisible to the naked eye, creating a flawless wood surface.",
+      "microsDetail": "Barely visible micro-holes that maintain a clean, uninterrupted surface appearance.",
+      "micromDetail": "An optimal balance between visual discretion and acoustic efficiency for most applications.",
+      "microlDetail": "The highest open area for maximum sound absorption in acoustically demanding spaces.",
+      "openAreaLabel": "Open area",
+      "absorptionLabel": "Absorption",
+      "thinnerLabel": "Thinner",
+      "veneerDrilled": "A-grade veneer with precision-drilled holes"
     }
   },
   "rwoodVeneerPage": {
@@ -2858,6 +2916,12 @@
       "rpetFlexGrooveColorOptions": "rPET Flex-Groove color options",
       "flexGroovePanelInstallation": "Flex-Groove panel installation",
       "recycledPetBottles": "Recycled PET bottles"
+    },
+    "options": {
+      "lengthDesc": "Grooves run along the length of the panel",
+      "widthDesc": "Grooves run across the width of the panel",
+      "lengthName": "Lengthwise",
+      "widthName": "Widthwise"
     }
   },
   "legal": {

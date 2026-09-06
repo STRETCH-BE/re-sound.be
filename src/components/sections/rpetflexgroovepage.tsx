@@ -26,8 +26,8 @@ const colorOptions = [
 
 // Groove direction options
 const directionOptions = [
-  { id: 'length', name: 'Lengthwise', description: 'Grooves run along the length of the panel' },
-  { id: 'width', name: 'Widthwise', description: 'Grooves run across the width of the panel' },
+  { id: 'length', nameKey: 'options.lengthName', descriptionKey: 'options.lengthDesc' },
+  { id: 'width', nameKey: 'options.widthName', descriptionKey: 'options.widthDesc' },
 ];
 
 // Hero image — fixed; colour selection does not swap it because no
@@ -350,7 +350,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
                     <span className={`direction-icon ${direction.id}`}>
                       {direction.id === 'length' ? '|||' : '≡'}
                     </span>
-                    <span className="direction-name">{direction.name}</span>
+                    <span className="direction-name">{t(direction.nameKey)}</span>
                   </button>
                 ))}
               </div>

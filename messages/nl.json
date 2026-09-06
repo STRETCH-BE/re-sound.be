@@ -4072,7 +4072,8 @@
       "country": "Land",
       "message": "Bijkomende opmerkingen",
       "messagePlaceholder": "Bv. Ik ben architect en werk aan een kantoor van 200 m²...",
-      "optional": "(optioneel)"
+      "optional": "(optioneel)",
+      "phonePlaceholder": "+32 ..."
     },
     "countries": {
       "belgium": "België",

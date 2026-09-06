@@ -16,17 +16,17 @@ const colorOptions = [
 
 // Groove pattern options
 const patternOptions = [
-  { id: 'line', name: 'Line', grooves: 'Vertical', spacing: '25mm', description: 'Clean parallel lines' },
-  { id: 'wave', name: 'Wave', grooves: 'Curved', spacing: '30mm', description: 'Organic flowing curves' },
-  { id: 'chevron', name: 'Chevron', grooves: 'Angled', spacing: '25mm', description: 'Dynamic V-pattern' },
-  { id: 'grid', name: 'Grid', grooves: 'Cross-hatch', spacing: '40mm', description: 'Modern intersecting lines' },
+  { id: 'line', name: 'Line', groovesKey: 'options.lineGrooves', spacing: '25mm', descriptionKey: 'options.lineDesc' },
+  { id: 'wave', name: 'Wave', groovesKey: 'options.waveGrooves', spacing: '30mm', descriptionKey: 'options.waveDesc' },
+  { id: 'chevron', name: 'Chevron', groovesKey: 'options.chevronGrooves', spacing: '25mm', descriptionKey: 'options.chevronDesc' },
+  { id: 'grid', name: 'Grid', groovesKey: 'options.gridGrooves', spacing: '40mm', descriptionKey: 'options.gridDesc' },
 ];
 
 // Thickness options
 const thicknessOptions = [
-  { id: '12mm', name: '12mm', nrc: '0.55', description: 'Standard absorption' },
-  { id: '24mm', name: '24mm', nrc: '0.75', description: 'Enhanced absorption' },
-  { id: '36mm', name: '36mm', nrc: '0.90', description: 'Maximum absorption' },
+  { id: '12mm', name: '12mm', nrc: '0.55', descriptionKey: 'options.12mmDesc' },
+  { id: '24mm', name: '24mm', nrc: '0.75', descriptionKey: 'options.24mmDesc' },
+  { id: '36mm', name: '36mm', nrc: '0.90', descriptionKey: 'options.36mmDesc' },
 ];
 
 // Default hero image
@@ -414,8 +414,8 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
               </div>
               <div className="pattern-info">
                 <h4>{pattern.name}</h4>
-                <span className="pattern-type">{pattern.grooves} {t('patterns.groovesLabel')}</span>
-                <p>{pattern.description}</p>
+                <span className="pattern-type">{t(pattern.groovesKey)} {t('patterns.groovesLabel')}</span>
+                <p>{t(pattern.descriptionKey)}</p>
                 <span className="pattern-spacing">{t('patterns.spacingLabel')} {pattern.spacing}</span>
               </div>
             </div>
@@ -515,7 +515,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
               </div>
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
-                <span className="badge-text">Class A</span>
+                <span className="badge-text">{tPage('classA')}</span>
               </div>
             </div>
 

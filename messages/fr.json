@@ -4072,7 +4072,8 @@
       "country": "Pays",
       "message": "Remarques complémentaires",
       "messagePlaceholder": "Ex. : je suis architecte et je prescris pour un bureau de 200 m²...",
-      "optional": "(facultatif)"
+      "optional": "(facultatif)",
+      "phonePlaceholder": "+32 ..."
     },
     "countries": {
       "belgium": "Belgique",

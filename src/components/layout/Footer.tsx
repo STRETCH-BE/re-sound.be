@@ -157,7 +157,7 @@ export default function Footer() {
               <span>9120 Beveren-Waas</span>
             </li>
             <li>
-              <span>Belgium</span>
+              <span>{t('countryBelgium')}</span>
             </li>
           </ul>
         </div>

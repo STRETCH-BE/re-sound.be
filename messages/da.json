@@ -15,13 +15,13 @@
     "interiorTitle": "Interior akustiske vægpaneler | Re-Sound",
     "interiorDescription": "Modulære akustiske vægpaneler af genanvendt tekstil: klasse A-absorption (αw 1,0), aftageligt vaskbart betræk, fremstillet i Belgien. Fra 387 € pr. sæt.",
     "solidTitle": "Solid akustiske vægpaneler | Re-Sound",
-    "solidDescription": "Store akustiske vægpaneler (1200 × 600 mm) til kraftfuld lydabsorption. Krogmontering, kerne af genanvendt tekstil, fremstillet i Belgien.",
+    "solidDescription": "Storformat akustiske vægpaneler (1200 × 600 mm) til kraftfuld lydabsorption. Krogmontering, kerne af genanvendt tekstil, fremstillet i Belgien.",
     "divideTitle": "Divide fritstående akustikskærme | Re-Sound",
     "divideDescription": "Fritstående akustikskærme med magnetisk modulær samling: tosidet absorption, ingen montering, genanvendt tekstil. Fremstillet i Belgien.",
     "rwoodGrooveTitle": "rWood Groove — rillede træakustikpaneler, eg & valnød | Re-Sound",
-    "rwoodGrooveDescription": "Rillede akustikpaneler i træ med FSC-certificeret eg- og valnøddefiner på en kerne af genanvendt filt. Klasse A-absorption, 4 lamelvarianter, 5 finish.",
+    "rwoodGrooveDescription": "Rillede akustikpaneler i træ med FSC-certificeret eg- og valnøddefiner på en kerne af genanvendt filt. Klasse A-absorption, 4 lamelvarianter, 5 overflader.",
     "rwoodPerfTitle": "rWood Perf — perforerede akustikpaneler i træ | Re-Sound",
-    "rwoodPerfDescription": "Perforerede akustikpaneler i træ med FSC-certificeret finer: fire perforeringsmønstre til bredbåndsabsorption, 8 finish, brandhæmmende kerne.",
+    "rwoodPerfDescription": "Perforerede akustikpaneler i træ med FSC-certificeret finer: fire perforeringsmønstre til bredbåndsabsorption, 8 overflader, brandhæmmende kerne.",
     "rwoodMicroTitle": "rWood Micro — mikroperforerede akustikpaneler i træ | Re-Sound",
     "rwoodMicroDescription": "Mikroperforerede akustikpaneler i træ (0,5 mm) med FSC-certificeret finer: næsten usynligt mønster, brandklasse B-s1,d0, mulighed for bagbelysning.",
     "rwoodVeneerTitle": "rWood Panel — træfiner-akustikpaneler, 10 træsorter | Re-Sound",
@@ -39,9 +39,9 @@
     "duoTitle": "Duo — kontortelefonboks og fokusboks til 2 personer | Re-Sound",
     "duoDescription": "Kontortelefonboks til to personer i to konfigurationer: Flex rummer to til et møde, Work giver én person et bord i fuld bredde. 2 m², 230 V, ventileret.",
     "modularXlTitle": "Modular XL — akustisk mødeboks til 6–10 personer | Re-Sound",
-    "modularXlDescription": "Akustisk mødeboks til 6-10 personer: udvid basen i 90 cm-segmenter, 25,9 dB(A) talereduktion, fuld A/V-forberedelse, tilgængelig indgang.",
+    "modularXlDescription": "Akustisk mødeboks til 6–10 personer: udvid basen i 90 cm-segmenter, 25,9 dB(A) talereduktion, fuld A/V-forberedelse, tilgængelig indgang.",
     "partnerTitle": "Partnerprogram · trade- og forhandlerprogram",
-    "partnerDescription": "Re-Sound partnerprogram for arkitekter, designere, forhandlere og distributører i Europa: projekteringsdokumentation, regional beskyttelse og support.",
+    "partnerDescription": "Re-Sound partnerprogram for arkitekter, designere, forhandlere og distributører i Europa: specifikationsmateriale, regional beskyttelse, direkte support.",
     "whereToBuyTitle": "Hvor du kan se og købe Re-Sound",
     "whereToBuyDescription": "Oplev Re-Sound i vores showroom i Beveren-Waas, bestil et gratis prøvesæt, book en live videorundvisning eller aftal en demo på stedet i hele Benelux."
   },
@@ -281,7 +281,7 @@
     },
     "modular-xl": {
       "title": "Modular XL",
-      "description": "Skalerbar akustisk mødeboks. Basen rummer 6 personer, kan udvides til 10 med modulære 90 cm-segmenter. 25,9 dB(A) talereduktion."
+      "description": "Skalerbar akustisk mødeboks. Basen rummer 6 personer og kan udvides til 10 med modulære 90 cm-segmenter. 25,9 dB(A) talereduktion."
     }
   },
   "specs": {
@@ -378,14 +378,14 @@
   "about": {
     "tag": "OM OS",
     "title": "Akustik gjort cirkulær",
-    "subtitle": "We're on a mission to prove that sustainable business is good business.",
+    "subtitle": "Vi har sat os for at bevise, at bæredygtig forretning er god forretning.",
     "story": {
       "tag": "VORES HISTORIE",
       "title": "Fra affald til vidunder",
       "paragraph1": "Re-Sound blev skabt ud fra et simpelt spørgsmål: hvad nu hvis vi kunne omdanne de bjerg af tekstilaffald, der produceres hvert år, til noget smukt og funktionelt?",
       "paragraph2": "{year, select, unknown {Grundlagt i Belgien satte vi os for at skabe akustikpaneler, der præsterer lige så godt som traditionelle materialer og er 100% cirkulære.} other {Grundlagt i Belgien i {year} satte vi os for at skabe akustikpaneler, der præsterer lige så godt som traditionelle materialer og er 100% cirkulære.}}",
       "paragraph3": "I dag har vi omdirigeret tons tekstiler fra lossepladser og skabt akustiske løsninger til hundredvis af projekter på tværs af Europa.",
-      "imagePlaceholder": "Re-Sound Production Facility",
+      "imagePlaceholder": "Re-Sounds produktionsanlæg",
       "founded": "Grundlagt i Beveren-Waas"
     },
     "values": {
@@ -397,21 +397,21 @@
       },
       "quality": {
         "title": "Kompromisløs kvalitet",
-        "description": "Sustainable doesn't mean settling—our panels meet the highest standards."
+        "description": "Bæredygtigt betyder ikke at gå på kompromis – vores paneler lever op til de højeste standarder."
       },
       "partnership": {
         "title": "Ægte partnerskab",
-        "description": "We work closely with clients to find the perfect acoustic solution."
+        "description": "Vi arbejder tæt sammen med vores kunder om at finde den perfekte akustiske løsning."
       },
       "innovation": {
         "title": "Kontinuerlig innovation",
-        "description": "We're always exploring new materials and improving our processes."
+        "description": "Vi udforsker hele tiden nye materialer og forbedrer vores processer."
       }
     },
     "team": {
       "tag": "VORES TEAM",
       "title": "Mød teamet",
-      "subtitle": "A passionate group dedicated to sustainable acoustics.",
+      "subtitle": "En passioneret gruppe med fokus på bæredygtig akustik.",
       "roles": {
         "founder": "Grundlægger og CEO",
         "operations": "Drift",
@@ -419,11 +419,11 @@
       }
     },
     "partners": {
-      "tag": "PARTNERS",
-      "title": "Working Together",
+      "tag": "PARTNERE",
+      "title": "Sammen om løsningen",
       "types": {
-        "supplier": "Material Supplier",
-        "research": "Research Partner",
+        "supplier": "Materialeleverandør",
+        "research": "Forskningspartner",
         "distribution": "Distribution",
         "certification": "Certificering"
       }
@@ -438,68 +438,68 @@
         "description": "Fabrikker i Beveren-Waas (BE) og Częstochowa (PL)"
       },
       "social": {
-        "title": "Social Enterprise",
-        "description": "Partnerships with social workshops"
+        "title": "Social virksomhed",
+        "description": "Partnerskaber med beskyttede værksteder"
       },
       "rd": {
-        "title": "Belgian R&D",
-        "description": "Continuous innovation locally"
+        "title": "Belgisk F&U",
+        "description": "Løbende lokal innovation"
       }
     }
   },
   "sustainability": {
     "tag": "BÆREDYGTIGHED",
     "title": "Ægte cirkulær akustik",
-    "subtitle": "We're not just reducing waste—we're eliminating it through a fully circular approach.",
+    "subtitle": "Vi reducerer ikke bare affald – vi eliminerer det gennem en fuldt cirkulær tilgang.",
     "intro": {
-      "title": "The Circular Economy",
+      "title": "Den cirkulære økonomi",
       "description": "Traditionelle akustikpaneler ender på lossepladsen. Vores begynder et nyt liv. Vores cirkulære model sikrer, at materialer flyder kontinuerligt.",
-      "endless": "Endless Cycle"
+      "endless": "Uendeligt kredsløb"
     },
     "process": {
-      "tag": "THE PROCESS",
+      "tag": "PROCESSEN",
       "title": "Sådan lukker vi cirklen",
       "collect": {
-        "title": "Collect Materials",
-        "description": "We source post-consumer and post-industrial textile waste from partners across Europe."
+        "title": "Indsamling af materialer",
+        "description": "Vi indsamler post-consumer- og post-industrielt tekstilaffald fra partnere i hele Europa."
       },
       "process": {
-        "title": "Process & Transform",
-        "description": "Materials are sorted, cleaned, and processed into acoustic-grade fiber."
+        "title": "Forarbejdning og transformation",
+        "description": "Materialerne sorteres, renses og forarbejdes til fibre i akustisk kvalitet."
       },
       "create": {
-        "title": "Create Panels",
-        "description": "Fibers are bonded and finished into beautiful, high-performance acoustic panels."
+        "title": "Produktion af paneler",
+        "description": "Fibrene bindes og efterbehandles til smukke, højtydende akustikpaneler."
       },
       "return": {
-        "title": "Return & Recycle",
-        "description": "At end of life, we pick up panels for free and recycle them into new products."
+        "title": "Retur og genanvendelse",
+        "description": "Når panelerne er udtjente, henter vi dem gratis og genanvender dem til nye produkter."
       }
     },
     "materials": {
-      "tag": "MATERIALS",
-      "title": "What We Transform",
-      "subtitle": "From discarded textiles to premium acoustic solutions."
+      "tag": "MATERIALER",
+      "title": "Det, vi transformerer",
+      "subtitle": "Fra kasserede tekstiler til akustiske løsninger i topkvalitet."
     },
     "impact": {
-      "tag": "OUR IMPACT",
-      "title": "Making a Difference",
-      "textilesSaved": "Textiles saved from landfill",
-      "panelsProduced": "Panels produced",
+      "tag": "VORES AFTRYK",
+      "title": "Vi gør en forskel",
+      "textilesSaved": "Tekstiler reddet fra deponi",
+      "panelsProduced": "Producerede paneler",
       "wasteToLandfill": "Affald til losseplads",
-      "returnRate": "Return program participation",
+      "returnRate": "Deltagelse i returordningen",
       "units": {
-        "tons": "tons"
+        "tons": "ton"
       }
     },
     "return": {
-      "tag": "RETURN PROGRAM",
-      "title": "Free Panel Return",
+      "tag": "RETURORDNING",
+      "title": "Gratis returnering af paneler",
       "description": "Når dine paneler når slutningen af deres levetid—uanset om det er ved renovering eller slitage—henter vi dem gratis og genanvender dem til nye produkter.",
-      "benefit1": "Free pickup anywhere in Belgium & Netherlands",
-      "benefit2": "Panels recycled into new products",
-      "benefit3": "Certificate of circular disposal",
-      "boxText": "Free Return Pickup"
+      "benefit1": "Gratis afhentning overalt i Belgien og Holland",
+      "benefit2": "Paneler genanvendes til nye produkter",
+      "benefit3": "Certifikat for cirkulær bortskaffelse",
+      "boxText": "Gratis returafhentning"
     }
   },
   "contact": {
@@ -562,18 +562,18 @@
   "blog": {
     "tag": "INDSIGT",
     "title": "Blog og nyheder",
-    "subtitle": "Thoughts on acoustics, sustainability, and design from our team.",
+    "subtitle": "Tanker om akustik, bæredygtighed og design fra vores team.",
     "readMore": "Læs artikel",
     "loadMore": "Indlæs flere artikler",
     "share": "Del denne artikel",
-    "relatedTag": "RELATED",
-    "relatedTitle": "Related Articles",
+    "relatedTag": "RELATERET",
+    "relatedTitle": "Relaterede artikler",
     "defaultAuthor": {
-      "name": "Re-Sound Team",
-      "role": "Circular Acoustics Experts"
+      "name": "Re-Sound-teamet",
+      "role": "Eksperter i cirkulær akustik"
     },
     "filters": {
-      "all": "All",
+      "all": "Alle",
       "sustainability": "Bæredygtighed",
       "products": "Produkter",
       "education": "Uddannelse",
@@ -591,110 +591,110 @@
   },
   "blogPosts": {
     "circular-economy-acoustics": {
-      "title": "The Circular Economy: A New Era for Acoustic Solutions",
-      "excerpt": "How circular design principles are transforming the acoustic panel industry and why it matters for the future.",
+      "title": "Den cirkulære økonomi: en ny æra for akustiske løsninger",
+      "excerpt": "Sådan transformerer cirkulære designprincipper akustikpanelbranchen – og hvorfor det er vigtigt for fremtiden.",
       "category": "sustainability",
       "date": "2024-01-15",
       "readTime": "5",
       "content": {
-        "intro": "The acoustic panel industry is undergoing a fundamental transformation. Traditional linear models—take, make, dispose—are giving way to circular approaches that keep materials in use indefinitely.",
+        "intro": "Akustikpanelbranchen gennemgår en grundlæggende forandring. Traditionelle lineære modeller – udvind, producér, kassér – viger for cirkulære tilgange, der holder materialerne i brug på ubestemt tid.",
         "section1": {
           "title": "Hvorfor cirkularitet betyder noget",
-          "text": "Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives, can take centuries to decompose. The circular economy offers an alternative: designing products that can be continuously recycled."
+          "text": "Hvert år ender millioner af tons akustiske materialer på lossepladser. Disse materialer, som ofte indeholder syntetiske fibre og klæbemidler, kan være århundreder om at nedbrydes. Den cirkulære økonomi tilbyder et alternativ: at designe produkter, der kan genanvendes igen og igen."
         },
         "section2": {
           "title": "Vores tilgang",
-          "text": "At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels can be fully recycled at end of life—becoming new panels rather than waste."
+          "text": "Hos Re-Sound har vi designet vores paneler til cirkularitet helt fra bunden. Da vi udelukkende bruger genanvendte tekstiler og biobaserede bindemidler, kan vores paneler genanvendes fuldt ud ved endt levetid – og blive til nye paneler i stedet for affald."
         },
-        "quote": "The best acoustic panel is one that never becomes waste.",
+        "quote": "Det bedste akustikpanel er det, der aldrig bliver til affald.",
         "section3": {
           "title": "Forretningscasen",
-          "text": "Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we build stronger relationships with customers while reducing material costs."
+          "text": "Cirkulært design er ikke kun godt for miljøet – det er også god forretning. Ved at skabe værdi af affald og tilbyde returordninger opbygger vi stærkere kunderelationer og reducerer samtidig materialeomkostningerne."
         },
         "conclusion": {
           "title": "Vi ser fremad",
-          "text": "The transition to circular acoustics is just beginning. As more companies adopt these principles, we'll see an industry transformed—one where acoustic comfort and environmental responsibility go hand in hand."
+          "text": "Overgangen til cirkulær akustik er kun lige begyndt. I takt med at flere virksomheder tager disse principper til sig, vil vi se en branche i forandring – en branche, hvor akustisk komfort og miljøansvar går hånd i hånd."
         }
       }
     },
     "office-acoustic-solutions": {
-      "title": "Creating the Perfect Acoustic Environment in Modern Offices",
-      "excerpt": "Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.",
+      "title": "Skab det perfekte akustiske miljø i moderne kontorer",
+      "excerpt": "Praktiske tips til bedre akustik i storrumskontorer, mødelokaler og samarbejdsområder.",
       "category": "products",
       "date": "2024-01-10",
       "readTime": "4",
       "content": {
-        "intro": "Open-plan offices present unique acoustic challenges. Without proper treatment, noise levels can reduce productivity by up to 66%. Here's how to create a balanced acoustic environment.",
+        "intro": "Storrumskontorer giver helt særlige akustiske udfordringer. Uden den rette akustiske behandling kan støjniveauet reducere produktiviteten med op til 66 %. Her får du opskriften på et afbalanceret akustisk miljø.",
         "section1": {
-          "title": "Understanding Office Acoustics",
-          "text": "Sound in offices comes from multiple sources: speech, equipment, HVAC systems, and external noise. Effective acoustic design addresses all these elements."
+          "title": "Forstå kontorets akustik",
+          "text": "Lyd i kontorer kommer fra mange kilder: tale, udstyr, ventilationsanlæg og støj udefra. Et effektivt akustisk design tager højde for alle disse elementer."
         },
         "section2": {
           "title": "Strategisk panelplacering",
-          "text": "Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers between desks."
+          "text": "Ikke alle overflader behøver behandling. Fokusér på loftsarealerne over arbejdspladserne, væggene mellem samarbejds- og fokuszoner samt skærmvæggene mellem skrivebordene."
         },
-        "quote": "Good acoustics is invisible—you only notice when it's missing.",
+        "quote": "God akustik er usynlig – man bemærker den først, når den mangler.",
         "section3": {
-          "title": "Balancing Absorption and Reflection",
-          "text": "Complete absorption creates an unnaturally 'dead' space. The goal is reducing reverberation while maintaining some natural ambience."
+          "title": "Balancen mellem absorption og refleksion",
+          "text": "Fuldstændig absorption skaber et unaturligt 'dødt' rum. Målet er at reducere efterklangen og samtidig bevare en vis naturlig rumfornemmelse."
         },
         "conclusion": {
           "title": "Start småt, mål resultater",
-          "text": "Begin with high-impact areas and measure the difference. Often, strategic placement of a few panels can transform a space."
+          "text": "Begynd med de områder, hvor effekten er størst, og mål forskellen. Ofte kan en strategisk placering af nogle få paneler forvandle et rum."
         }
       }
     },
     "recycled-materials-quality": {
-      "title": "Recycled Materials: Meeting and Exceeding Quality Standards",
-      "excerpt": "How we ensure our recycled textile panels match or exceed the performance of traditional materials.",
+      "title": "Genanvendte materialer: Kvalitetsstandarder opfyldt – og overgået",
+      "excerpt": "Sådan sikrer vi, at vores paneler af genanvendt tekstil matcher eller overgår ydeevnen i traditionelle materialer.",
       "category": "materials",
       "date": "2024-01-05",
       "readTime": "6",
       "content": {
-        "intro": "There's a persistent myth that recycled materials mean compromised quality. Our panels prove the opposite—recycled can mean superior.",
+        "intro": "Der findes en sejlivet myte om, at genanvendte materialer betyder et kompromis med kvaliteten. Vores paneler beviser det modsatte – genanvendt kan betyde bedre.",
         "section1": {
           "title": "Stringent materialevalg",
-          "text": "Not all recycled textiles are suitable for acoustic panels. We carefully select and sort materials to ensure consistent fiber quality and acoustic performance."
+          "text": "Ikke alle genanvendte tekstiler egner sig til akustikpaneler. Vi udvælger og sorterer materialerne omhyggeligt for at sikre ensartet fiberkvalitet og akustisk ydeevne."
         },
         "section2": {
           "title": "Avanceret bearbejdning",
-          "text": "Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-performance results."
+          "text": "Vores egenudviklede proces forvandler blandede tekstiler til ensartet akustisk fiber. Denne ensartethed er nøglen til forudsigelige resultater med høj ydeevne."
         },
-        "quote": "Sustainability and quality aren't trade-offs—they're complements.",
+        "quote": "Bæredygtighed og kvalitet er ikke modsætninger – de supplerer hinanden.",
         "section3": {
           "title": "Tredjepartstest",
-          "text": "Every batch undergoes acoustic testing to EN ISO 354 standards. We achieve Class A absorption ratings consistently, meeting the same standards as virgin material panels."
+          "text": "Hvert parti gennemgår akustisk test i henhold til EN ISO 354. Vi opnår konsekvent absorptionsklasse A og opfylder dermed de samme standarder som paneler af nyt materiale."
         },
         "conclusion": {
           "title": "Fremtiden er genbrugt",
-          "text": "As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use recycled—it's how quickly we can scale."
+          "text": "I takt med at forarbejdningsteknologien forbedres, vil genanvendte materialer i stigende grad overgå nye alternativer. Spørgsmålet er ikke, om man skal bruge genanvendt – men hvor hurtigt vi kan skalere."
         }
       }
     },
     "sound-absorption-explained": {
-      "title": "Sound Absorption Explained: A Guide for Architects",
-      "excerpt": "Everything you need to know about sound absorption coefficients and selecting the right panels.",
+      "title": "Lydabsorption forklaret: En guide til arkitekter",
+      "excerpt": "Alt, hvad du behøver at vide om lydabsorptionskoefficienter og valg af de rigtige paneler.",
       "category": "education",
       "date": "2024-01-01",
       "readTime": "7",
       "content": {
-        "intro": "Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.",
+        "intro": "Akustiske specifikationer kan være svære at gennemskue. Denne guide gennemgår de vigtigste nøgletal, og hvad de betyder for dit projekt.",
         "section1": {
           "title": "αw-koefficienten",
-          "text": "The weighted sound absorption coefficient (αw) is the most common metric. It ranges from 0 (no absorption) to 1 (complete absorption). Our panels achieve αw 0.95-1.00."
+          "text": "Den vægtede lydabsorptionskoefficient (αw) er det mest udbredte mål. Den går fra 0 (ingen absorption) til 1 (fuldstændig absorption). Vores paneler opnår αw 0.95-1.00."
         },
         "section2": {
           "title": "Frekvensovervejelser",
-          "text": "Different materials absorb different frequencies. Porous materials like ours excel at mid and high frequencies—the speech range—making them ideal for offices."
+          "text": "Forskellige materialer absorberer forskellige frekvenser. Porøse materialer som vores er særligt effektive ved mellem- og høje frekvenser – taleområdet – hvilket gør dem ideelle til kontorer."
         },
-        "quote": "The right absorption depends on the room's purpose.",
+        "quote": "Den rette absorption afhænger af rummets formål.",
         "section3": {
           "title": "Dækningsberegninger",
-          "text": "More isn't always better. The ideal coverage depends on room volume, surface materials, and intended use. We offer free acoustic consultations to help specify correctly."
+          "text": "Mere er ikke altid bedre. Den ideelle dækning afhænger af rummets volumen, overfladematerialer og anvendelse. Vi tilbyder gratis akustisk rådgivning, så specifikationen bliver korrekt."
         },
         "conclusion": {
           "title": "Ud over tallene",
-          "text": "While specifications matter, the best acoustic design considers the whole experience. Aesthetics, sustainability, and wellbeing all contribute to successful spaces."
+          "text": "Specifikationer er vigtige, men det bedste akustiske design tager hele oplevelsen i betragtning. Æstetik, bæredygtighed og trivsel bidrager alle til vellykkede rum."
         }
       }
     }
@@ -753,11 +753,11 @@
     "title": "Download teknisk dokumentation",
     "subtitle": "Udfyld dine oplysninger for at tilgå vores produktspecifikationer",
     "companyName": "Virksomhedsnavn",
-    "companyNamePlaceholder": "Enter your company name",
+    "companyNamePlaceholder": "Indtast virksomhedens navn",
     "firstName": "Fornavn",
-    "firstNamePlaceholder": "First name",
+    "firstNamePlaceholder": "Fornavn",
     "lastName": "Efternavn",
-    "lastNamePlaceholder": "Last name",
+    "lastNamePlaceholder": "Efternavn",
     "email": "E-mailadresse",
     "emailPlaceholder": "din@email.com",
     "phone": "Telefonnummer",
@@ -766,17 +766,17 @@
     "positionPlaceholder": "Vælg...",
     "companyType": "Virksomhedstype",
     "companyTypePlaceholder": "Vælg...",
-    "consent": "I agree to receive communications from Re-Sound and accept the privacy policy.",
+    "consent": "Jeg accepterer at modtage kommunikation fra Re-Sound og accepterer privatlivspolitikken.",
     "submit": "Download nu",
     "submitting": "Behandler...",
     "positions": {
-      "owner": "Owner / CEO",
-      "director": "Director / Manager",
+      "owner": "Ejer / CEO",
+      "director": "Direktør / Leder",
       "architect": "Arkitekt",
       "designer": "Designer",
       "engineer": "Ingeniør",
       "projectManager": "Projektleder",
-      "procurement": "Procurement / Purchasing",
+      "procurement": "Indkøb",
       "consultant": "Konsulent",
       "other": "Andet"
     },
@@ -787,7 +787,7 @@
       "acousticConsultant": "Akustikkonsulent",
       "realEstate": "Ejendomsmægler / Ejendom",
       "corporate": "Erhverv / Kontor",
-      "hospitality": "Hospitality / Hotels",
+      "hospitality": "Hospitality / Hoteller",
       "education": "Uddannelse / Skoler",
       "healthcare": "Sundhedsvæsen",
       "retail": "Detail",
@@ -956,7 +956,7 @@
   },
   "interiorPage": {
     "hero": {
-      "tag": "ACOUSTIC WALL PANELS",
+      "tag": "AKUSTISKE VÆGPANELER",
       "title": "Interior: modulære akustiske vægpaneler af genanvendt tekstil",
       "tagline": "Modulær akustik, cirkulær af design",
       "description": "Transformer dit rum med Re-Sound Interior—et komplet akustisk væggsystem fremstillet af genbrugsmaterialer.",
@@ -965,11 +965,11 @@
       "uspOrigin": "Fremstillet i Belgien",
       "priceFrom": "Fra",
       "priceValue": "€387",
-      "priceUnit": "excl. VAT per set of 3 modules",
+      "priceUnit": "ekskl. moms pr. sæt à 3 moduler",
       "colorSelector": "Vælg farve"
     },
     "overview": {
-      "tag": "COMPLETE SOLUTION",
+      "tag": "KOMPLET LØSNING",
       "title": "Alt du har brug for, i én pakke",
       "description": "Re-Sound Interior er en komplet akustisk forbedringssolution. Hvert startpakke inkluderer den akustiske kerne, stofbetræk og monteringsbeslag.",
       "feature1": "Akustisk kerne af genanvendte tekstiler",
@@ -989,7 +989,7 @@
       "stat3Label": "Genanvendelsescyklusser"
     },
     "modular": {
-      "tag": "DESIGN FREEDOM",
+      "tag": "DESIGNFRIHED",
       "title": "Modulær alsidighed",
       "description": "Med sit modulære design tilbyder Interior ubegrænsede kreative muligheder. Skab feature vægge, dæk hele overflader, eller bland farver for unikke mønstre.",
       "dimSize": "900 × 600",
@@ -998,7 +998,7 @@
       "dimSetUnit": "moduler pr. pakke"
     },
     "maintenance": {
-      "tag": "PRACTICAL",
+      "tag": "PRAKTISK",
       "title": "Let vedligeholdelse",
       "description": "Det aftagelige stofbetræk gør rengøringen nem. Bare lynlås op, vask, og sæt på igen—dine paneler vil se ud som nye.",
       "feature1": "Aftagelig betræk med lynlås",
@@ -1007,12 +1007,12 @@
       "feature4": "Reservebetræk tilgængelige"
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Overlegen lydabsorption",
       "description": "Med en vægtet lydabsorptionskoefficient (αw) på 1,0 leverer Re-Sound Interior maksimal akustisk ydelse."
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
       "dimensionsTitle": "Dimensioner",
       "moduleSizeValue": "900 × 600 mm",
@@ -1033,7 +1033,7 @@
       "recycledValue": "≥80%",
       "endOfLifeValue": "100% genanvendelig",
       "vocValue": "Lav / A+",
-      "installTitle": "Installation",
+      "installTitle": "Montering",
       "mountingValue": "Vægskinnebefæstigelse",
       "installTimeValue": "~5 min pr. modul",
       "toolsValue": "Bor, vaterpas"
@@ -1076,7 +1076,7 @@
   },
   "solidPage": {
     "hero": {
-      "tag": "ACOUSTIC WALL PANELS",
+      "tag": "AKUSTISKE VÆGPANELER",
       "title": "Solid: akustiske vægpaneler i storformat",
       "tagline": "Højtydende akustik, ubesværet installation",
       "description": "Mød Re-Sound Solid—din højtydende akustiske vægpanel designet til maksimal ydelse med minimal indsats.",
@@ -1085,11 +1085,11 @@
       "usp3": "Krogmontering",
       "colorSelector": "Vælg farve",
       "priceValue": "€407",
-      "priceUnit": "excl. VAT per panel",
+      "priceUnit": "ekskl. moms pr. panel",
       "priceFrom": "Fra"
     },
     "overview": {
-      "tag": "COMPLETE SOLUTION",
+      "tag": "KOMPLET LØSNING",
       "title": "Alt det nødvendige, én pakke",
       "description": "Re-Sound Solid giver dig alt, hvad du behøver for at optimere dit rums akustik. Dette store akustikpanel kombinerer elegant æstetik med fremragende ydelse.",
       "feature1": "Højtydende akustisk kerne",
@@ -1098,7 +1098,7 @@
       "feature4": "Stort format for maksimal effekt"
     },
     "installation": {
-      "tag": "EASE OF USE",
+      "tag": "BRUGERVENLIGHED",
       "title": "Ubesværet installation",
       "description": "Vores praktiske krogmonteringssystem gør installation nem. Ingen specialværktøj, ingen komplekse procedurer—bare hurtige, rene resultater.",
       "step1": "Monter skinnen",
@@ -1106,12 +1106,12 @@
       "step3": "Nyd stilheden"
     },
     "maintenance": {
-      "tag": "LOW MAINTENANCE",
+      "tag": "MINIMAL VEDLIGEHOLDELSE",
       "title": "Altid frisk udseende",
       "description": "Det aftagelige betræk gør rengøring nem. Fjern det bare, vask, og sæt det på igen—dine Solid paneler vil altid se perfekte ud.",
-      "feature1": "Removable fabric cover",
+      "feature1": "Aftageligt stofbetræk",
       "feature2": "Maskinvaskbar ved 30°C",
-      "feature3": "Stain-resistant options available",
+      "feature3": "Pletafvisende varianter tilgængelige",
       "feature4": "Reservebetræk tilgængelige"
     },
     "features": {
@@ -1132,20 +1132,20 @@
       "freqHigh": "2000-4000 Hz"
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Højtydende lydabsorption",
       "description": "Re-Sound Solid leverer fremragende akustisk ydelse med sine store dimensioner og højtydende materialer.",
       "benefit1": "Fremragende absorption ved alle frekvenser",
-      "benefit2Title": "Improved Speech Clarity",
-      "benefit2": "Reduce reverberation for clearer conversations",
-      "benefit3Title": "Enhanced Focus",
-      "benefit3": "Minimize distracting background noise",
+      "benefit2Title": "Bedre taleforståelighed",
+      "benefit2": "Reducér efterklang for klarere samtaler",
+      "benefit3Title": "Øget fokus",
+      "benefit3": "Minimér forstyrrende baggrundsstøj",
       "benefit4": "Stort format til højtydende resultater",
       "ratingValue": "αw 0.95",
       "ratingLabel": "Klasse A"
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
       "dimensionsTitle": "Dimensioner",
       "panelSizeValue": "1200 × 600 mm",
@@ -1164,14 +1164,14 @@
       "sustainTitle": "Bæredygtighed",
       "recycledValue": "≥80%",
       "endOfLifeValue": "100% genanvendelig",
-      "installTitle": "Installation",
+      "installTitle": "Montering",
       "mountingValue": "Krogskinnebefæstigelse",
       "toolsValue": "Bor, vaterpas",
-      "maxCoverageTitle": "Maximum Coverage",
+      "maxCoverageTitle": "Maksimal dækning",
       "maxCoverageDesc": "Stort format til højtydende resultater",
-      "binderValue": "Bio-based adhesive",
+      "binderValue": "Biobaseret klæbemiddel",
       "coverValue2": "Genanvendt stof",
-      "binderRow": "Binder",
+      "binderRow": "Bindemiddel",
       "endOfLife": "Slutbortskaffelse",
       "endOfLifeVal": "100% genanvendelig",
       "mounting": "Montering",
@@ -1222,48 +1222,48 @@
       "tag": "AKUSTISK RUMADSKILLER",
       "title": "Divide: fritstående akustiske skærmvægge",
       "tagline": "Klik for at omdefinere, del for stilen",
-      "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use.",
+      "description": "Mød Re-Sound Divide – den første fritstående akustiske skærmvæg designet til fleksibel brug.",
       "usp1": "Magnetisk forbindelse",
       "usp2": "Fuldt modulær",
       "usp3": "Fritstående",
       "priceFrom": "Fra",
       "priceValue": "€1,238",
-      "priceUnit": "excl. VAT",
+      "priceUnit": "ekskl. moms",
       "colorSelector": "Vælg farve"
     },
     "overview": {
       "tag": "INNOVATION",
-      "title": "Redefine Your Space",
+      "title": "Nytænk dit rum",
       "description": "Re-Sound Divide er det første fritstående akustiske produkt designet til ultimativ fleksibilitet. Skab rumopdelinger, privathedszoner eller unikke konfigurationer.",
       "feature1": "Fritstående design – ingen montering nødvendig",
-      "feature2": "Magnetic connection system",
-      "feature3": "Lightweight and easy to move",
+      "feature2": "Magnetisk samlesystem",
+      "feature3": "Let og nem at flytte",
       "feature4": "Cirkulær af design"
     },
     "base": {
-      "tag": "STABILITY",
+      "tag": "STABILITET",
       "title": "Integreret base",
       "description": "Takket være den integrerede base er Divide altid stabil og står frit på ethvert gulv. Den lette konstruktion gør den nem at flytte og omplacere.",
       "feature1": "Stabil på enhver overflade uden fastgørelse",
       "feature2": "Let at flytte og omplacere",
       "feature3": "Blød base beskytter alle gulvtyper",
       "item1Title": "Perfekt afbalanceret",
-      "item2Title": "Lightweight",
+      "item2Title": "Letvægt",
       "item3Title": "Gulvsikker"
     },
     "balanced": {
       "title": "Perfekt afbalanceret",
-      "description": "Lightweight yet stable. Divide's engineered base keeps your configuration secure without floor fixtures."
+      "description": "Let, men stabil. Divides gennemtænkte fod holder din opstilling sikkert på plads uden gulvbeslag."
     },
     "magnetic": {
-      "tag": "EFFORTLESS",
+      "tag": "UBESVÆRET",
       "title": "Magnetisk forbindelse",
       "description": "Modulerne forbinder sig nemt via diskrete magneter integreret i stoffet. Saml og adskil på sekunder uden værktøj.",
       "snapLabel": "Klik sammen",
       "autoAlign": "Automatisk justering"
     },
     "modular": {
-      "tag": "FLEXIBILITY",
+      "tag": "FLEKSIBILITET",
       "title": "Modulært system",
       "description": "Beslut selv layoutet af dit rum. Divide er et modulært system, der tilpasser sig dine behov. Hvad enten det er en lige, L-formet eller U-formet konfiguration.",
       "config1": "Enkelt",
@@ -1280,26 +1280,26 @@
       "recycleLabel": "Genanvendelsescyklusser"
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Tosidet lydabsorption",
       "description": "Re-Sound Divide absorberer lyd fra begge sider, hvilket gør den perfekt til at skabe akustisk privatliv i åbne rum.",
       "benefit1Title": "Støjreduktion",
-      "benefit1": "Block distracting background conversations",
+      "benefit1": "Afskærm forstyrrende baggrundssamtaler",
       "benefit2Title": "Privathedszoner",
-      "benefit2": "Create focused work areas in open spaces",
+      "benefit2": "Skab fokuserede arbejdsområder i åbne rum",
       "benefit3Title": "Bedre koncentration",
-      "benefit3": "Improve concentration and productivity",
+      "benefit3": "Forbedr koncentration og produktivitet",
       "extraBenefit": "Fremragende tosidet absorption",
       "soundAbsorbed": "Lyd absorberet",
       "perSide": "Pr. side"
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
       "acousticsTitle": "Akustisk Ydelse",
       "fireTitle": "Brandsikring",
       "sustainTitle": "Bæredygtighed",
-      "installTitle": "Mobility",
+      "installTitle": "Mobilitet",
       "materialsTitle": "Materialer",
       "featuresTitle": "Egenskaber",
       "dimensionsTitle": "Dimensioner",
@@ -1308,10 +1308,10 @@
       "fabricCore": "Genanvendt stof",
       "steelFrame": "Genanvendt stål",
       "magnets": "Magneter",
-      "magnetsVal": "Neodymium",
+      "magnetsVal": "Neodym",
       "endOfLife": "Slutbortskaffelse",
       "endOfLifeVal": "100% genanvendelig",
-      "connection": "Connection",
+      "connection": "Sammenkobling",
       "connectionVal": "Magnetisk klik",
       "setupTime": "Opsætningstid",
       "setupTimeVal": "Øjeblikkeligt",
@@ -1358,7 +1358,7 @@
   },
   "rpetGroovePage": {
     "hero": {
-      "tag": "RECYCLED PET ACOUSTIC PANELS",
+      "tag": "AKUSTIKPANELER AF GENANVENDT PET",
       "title": "rPET Groove: rillede PET-akustikpaneler i 12 farver",
       "tagline": "Fra Flasker til Stilhed",
       "description": "rPET - Groove paneler kombinerer moderne æstetik med fremragende akustisk ydelse. Lavet 100% af genbrugste PET-flasker, tilbyder disse højtætheds paneler klasse A lydabsorption, mens de afvikler plastikaffald fra lossepladser.",
@@ -1371,7 +1371,7 @@
     "overview": {
       "tag": "OVERSIGT",
       "title": "Cirkulær Stilhed",
-      "description": "rPET - Groove panels bring a contemporary touch to any space while reducing noise disturbances. The visible slat design creates visual depth and texture, perfect for modern offices, meeting rooms, lobbies, restaurants, and reception areas.",
+      "description": "rPET - Groove-paneler giver ethvert rum et moderne præg og dæmper samtidig støjgener. Det synlige lameldesign skaber visuel dybde og tekstur – perfekt til moderne kontorer, mødelokaler, lobbyer, restauranter og receptionsområder.",
       "feature1": "100% lavet af genbrugste post-forbruger PET-flasker",
       "feature2": "Klasse A lydabsorption (NRC op til 0,90)",
       "feature3": "Holdbar og farverig finish takket være dope-farvning",
@@ -1382,32 +1382,32 @@
       "tag": "REJSEN",
       "title": "Fra plastikflaske til akustikpanel",
       "step1Number": "01",
-      "step1Title": "Collection",
-      "step1Desc": "Post-consumer plastic bottles are collected and sorted",
+      "step1Title": "Indsamling",
+      "step1Desc": "Brugte plastflasker indsamles og sorteres",
       "step2Number": "02",
       "step2Title": "Bearbejdning",
-      "step2Desc": "Bottles are cleaned, shredded, and melted into PET fibers",
+      "step2Desc": "Flaskerne rengøres, findeles og smeltes til PET-fibre",
       "step3Number": "03",
-      "step3Title": "Felting",
-      "step3Desc": "Fibers are compressed into dense acoustic felt sheets",
+      "step3Title": "Filtning",
+      "step3Desc": "Fibrene presses sammen til tætte akustiske filtplader",
       "step4Number": "04",
-      "step4Title": "Finishing",
-      "step4Desc": "CNC precision cutting creates the signature groove patterns",
-      "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product.",
+      "step4Title": "Efterbehandling",
+      "step4Desc": "CNC-præcisionsskæring skaber de karakteristiske rillemønstre",
+      "description": "Hvert rPET - Groove-panel giver nyt liv til cirka 60 genanvendte plastflasker. Vores produktionsproces forvandler brugt PET-affald til højtydende akustisk filt og skaber dermed et ægte cirkulært produkt.",
       "statLabel": "Genbrugte flasker pr. panel",
       "description2": ""
     },
     "patterns": {
       "tag": "MØNSTRE",
       "title": "Vælg dit mønster",
-      "description": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency.",
-      "groovesLabel": "grooves",
-      "spacingLabel": "Spacing:",
+      "description": "Fire markante rillemønstre, der matcher enhver arkitektonisk vision. Fra rene parallelle linjer til dynamiske chevronmønstre – hvert mønster præcisionsskæres med CNC-teknologi for perfekt ensartethed.",
+      "groovesLabel": "riller",
+      "spacingLabel": "Afstand:",
       "description2": ""
     },
     "colors": {
       "title": "12 Levende Farver",
-      "subtitle": "From neutral tones to bold accents, our curated collection complements any interior.",
+      "subtitle": "Fra neutrale toner til markante accenter – vores udvalgte kollektion passer til ethvert interiør.",
       "tag": "FARVER",
       "feature1": "UV-resistent",
       "feature1Desc": "Massefarvet farve falmer ikke i sollys",
@@ -1415,8 +1415,8 @@
       "feature2Desc": "Pletresistent overflade, kan tørres af med en fugtig klud",
       "feature3": "Ingen Fading",
       "feature3Desc": "Farveprocessen sikrer ensartede farver over hele panelet",
-      "description2": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance.",
-      "description": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
+      "description2": "Fra neutrale toner til markante accenter – vores udvalgte farvepalet passer problemfrit ind i ethvert indretningskoncept. Alle farver opnås ved spindfarvning, hvilket sikrer fremragende farveægthed og UV-bestandighed.",
+      "description": "Fra neutrale toner til markante accenter – vores udvalgte farvepalet passer problemfrit ind i ethvert indretningskoncept. Alle farver opnås ved spindfarvning, hvilket sikrer fremragende farveægthed og UV-bestandighed."
     },
     "thickness": {
       "title": "Vælg tykkelse",
@@ -1427,7 +1427,7 @@
     "acoustics": {
       "tag": "AKUSTIK",
       "title": "Akustisk Ydelse",
-      "description": "The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye.",
+      "description": "Det unikke rilledesign kombineret med genanvendt PET-filt med høj densitet giver exceptionel lydabsorption. Reducer efterklang, fjern støj og skab rum, der er lige så behagelige for øret som for øjet.",
       "benefit1Title": "Ekko Reduktion",
       "benefit1": "Markant reduktion af rumklang i alle rum",
       "benefit2Title": "Forbedret Taleklarhed",
@@ -1436,13 +1436,13 @@
       "benefit3": "Absorberer forstyrrende lydfrekvenser for øget komfort",
       "diagramTitle": "Paneltværsnit",
       "layer1Name": "Rillet overflade",
-      "layer1Desc": "CNC-cut pattern for visual depth",
+      "layer1Desc": "CNC-skåret mønster for visuel dybde",
       "layer2Name": "Højdensitets-PET-kerne",
       "layer2Desc": "Lydabsorberingslag",
       "layer3Name": "Monteringsoverflade",
-      "layer3Desc": "Direct wall/ceiling attachment",
+      "layer3Desc": "Direkte montering på væg/loft",
       "waveLabel": "Lydbølger absorberet",
-      "certNote": "Tested according to ISO 354 & ASTM C423",
+      "certNote": "Testet i henhold til ISO 354 og ASTM C423",
       "description2": ""
     },
     "installation": {
@@ -1457,18 +1457,18 @@
       "step4Title": "Lad Det Hærde",
       "step4Desc": "Lad hærde i 24 timer for fuld vedhæftning",
       "mountingOptions": "Monteringsmuligheder",
-      "mounting1": "Adhesive",
-      "description": "rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the panels, and multiple mounting options give you flexibility for any project.",
-      "mounting2": "Z-clips",
-      "mounting3": "Screws",
-      "mounting4": "Battens",
+      "mounting1": "Lim",
+      "description": "rPET - Groove-paneler er designet til hurtig og enkel montering. Den lette konstruktion betyder, at én person kan håndtere panelerne, og flere monteringsmuligheder giver fleksibilitet til ethvert projekt.",
+      "mounting2": "Z-beslag",
+      "mounting3": "Skruer",
+      "mounting4": "Lægter",
       "description2": ""
     },
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
       "title": "Cirkulær fra Kilden",
-      "description": "rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of life. We offer free take-back to ensure nothing goes to waste.",
-      "badge1": "100% Recycled",
+      "description": "rPET - Groove-paneler er selve indbegrebet af cirkulær økonomi. De er fremstillet udelukkende af genanvendt post-consumer-plast og kan genanvendes igen efter endt levetid. Vi tilbyder en gratis returordning, så intet går til spilde.",
+      "badge1": "100 % genanvendt",
       "badge2": "Cirkulær Returnering",
       "badge3": "Belgisk Produktion",
       "badge4": "OEKO-TEX® Certificeret",
@@ -1489,19 +1489,19 @@
       "nrc24Value": "0.75",
       "nrc36": "NRC (36mm)",
       "nrc36Value": "0.90",
-      "testStandard": "Test standard",
+      "testStandard": "Teststandard",
       "testStandardValue": "ISO 354 / ASTM C423",
       "fireTitle": "Brandsikkerhed",
-      "fireEU": "European",
+      "fireEU": "Europæisk",
       "fireEUValue": "B-s1, d0",
-      "fireUS": "US (ASTM E-84)",
-      "fireUSValue": "Class A",
-      "fireUK": "UK (BS 476)",
-      "fireUKValue": "Class 0",
+      "fireUS": "USA (ASTM E-84)",
+      "fireUSValue": "Klasse A",
+      "fireUK": "Storbritannien (BS 476)",
+      "fireUKValue": "Klasse 0",
       "fireDE": "Tyskland (DIN 4102)",
       "fireDEValue": "B1",
       "certsTitle": "Certificeringer",
-      "certHealth": "Health",
+      "certHealth": "Sundhed",
       "certHealthValue": "OEKO-TEX® Standard 100",
       "certEnv": "Miljømæssig",
       "certEnvValue": "EPD tilgængelig",
@@ -1510,19 +1510,19 @@
       "certRecycled": "Genanvendt indhold",
       "certRecycledValue": "GRS-certificeret",
       "applicationsTitle": "Anvendelser",
-      "appInstall": "Installation",
+      "appInstall": "Montering",
       "appInstallValue": "Vægge og lofter",
       "appEnv": "Miljø",
       "appEnvValue": "Indendørs (tørre områder)",
       "appIdeal": "Ideel til",
-      "appIdealValue": "Offices, Meeting rooms, Lobbies",
+      "appIdealValue": "Kontorer, mødelokaler, lobbyer",
       "appSuitable": "Også velegnet",
       "appSuitableValue": "Restauranter, hoteller, skoler",
       "dimensionsTitle": "Dimensioner",
       "widthValue": "600 / 1200 mm",
       "lengthValue": "600 / 1200 / 2400 mm",
       "thicknessValue": "12 / 24 / 36 mm",
-      "weightValue": "2.5 - 7.5 kg/m²",
+      "weightValue": "2,5 - 7,5 kg/m²",
       "densityValue": "200-250 kg/m³",
       "materialTitle": "Materiale",
       "dimPanelWidth": "Panelbredde",
@@ -1534,16 +1534,16 @@
       "acNRC24": "NRC (24mm)",
       "acNRC36": "NRC (36mm)",
       "matComposition": "Sammensætning",
-      "matBinder": "Binder",
+      "matBinder": "Bindemiddel",
       "matRecycled": "Genanvendt indhold",
       "matFireClass": "Brandklasse",
-      "matEmissions": "VOC emissions",
+      "matEmissions": "VOC-emissioner",
       "fireCert": "Certificering",
       "appWalls": "Vægpaneler",
       "appCeilings": "Loftpaneler",
       "appEnvironment": "Miljø",
       "matRecycledPET": "100% genanvendt PET",
-      "matDensity": "Density",
+      "matDensity": "Densitet",
       "colorsLabel": "Farver",
       "colorsVal": "12 standardfarver",
       "customColors": "Specialfarver",
@@ -1551,7 +1551,7 @@
       "certEPD": "EPD tilgængelig",
       "certGRS": "GRS-certificeret",
       "appIdealFor": "Ideel til",
-      "appIdealVal": "Offices, Meeting rooms, Lobbies",
+      "appIdealVal": "Kontorer, mødelokaler, lobbyer",
       "appAlso": "Også velegnet",
       "appAlsoVal": "Restauranter, hoteller, skoler"
     },
@@ -1562,15 +1562,15 @@
     "applications": {
       "tag": "ALSIDIGT BRUG",
       "title": "Anvendelser",
-      "description": "rPET - Groove panels fit seamlessly into diverse environments",
-      "app1": "Offices",
+      "description": "rPET - Groove-paneler passer problemfrit ind i mange forskellige miljøer",
+      "app1": "Kontorer",
       "app2": "Hotel & restaurant",
       "app3": "Uddannelse",
       "app4": "Sundhedsvæsen",
-      "app1Desc": "Open plan workspaces, meeting rooms, focus zones",
-      "app2Desc": "Hotels, restaurants, lobbies, reception areas",
-      "app3Desc": "Schools, universities, libraries",
-      "app4Desc": "Waiting rooms, consultation rooms, corridors",
+      "app1Desc": "Åbne kontorlandskaber, mødelokaler, fokuszoner",
+      "app2Desc": "Hoteller, restauranter, lobbyer, receptionsområder",
+      "app3Desc": "Skoler, universiteter, biblioteker",
+      "app4Desc": "Venteværelser, konsultationsrum, gange",
       "description2": ""
     },
     "downloads": {
@@ -1618,7 +1618,7 @@
       "tag": "GENBRUGTE PET AKUSTIKPANELER",
       "title": "rPET Panel: akustikpanelet af genanvendt PET, som du bearbejder som MDF",
       "tagline": "Bæredygtig Stilhed, Uendelige Muligheder",
-      "description": "Transform any space with rPET - Panel acoustic panels. {pct, select, unknown {Made from recycled PET bottles, these} other {Made from {pct}% recycled PET bottles, these}} lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
+      "description": "Forvandl ethvert rum med rPET - Panel-akustikpaneler. {pct, select, unknown {Fremstillet af genanvendte PET-flasker leverer disse} other {Fremstillet af {pct} % genanvendte PET-flasker leverer disse}} lette, men kraftfulde lydabsorbenter maksimal akustisk ydeevne med minimal miljøpåvirkning.",
       "usp1": "100% Genanvendeligt PET",
       "usp2": "Klasse A αw 0,95",
       "usp3": "Let 3-4 kg/m²",
@@ -1629,61 +1629,61 @@
       "tag": "OVERSIGT",
       "title": "Genanvendt PET på sit Bedste",
       "reason1Title": "Let at håndtere",
-      "reason1": "Lightweight panels that anyone can install without heavy equipment",
+      "reason1": "Lette paneler, som alle kan montere uden tungt udstyr",
       "reason2Title": "Menneskevenlig",
-      "reason2": "OEKO-TEX® certified, safe for all environments including schools and healthcare",
+      "reason2": "OEKO-TEX®-certificeret og sikkert i alle miljøer, herunder skoler og sundhedssektoren",
       "reason3Title": "Uendelige muligheder",
-      "reason3": "CNC cuttable, millable, drillable—use it like MDF with none of the downsides",
+      "reason3": "Kan CNC-skæres, fræses og bores – brug det som MDF, men uden ulemperne",
       "reason4Title": "Udtryk din stil",
-      "reason4": "50+ colors to complement any interior design vision",
+      "reason4": "50+ farver, der passer til enhver indretningsvision",
       "reason5Title": "Vil du have flere muligheder?",
-      "reason5": "Combine with rPET Groove for a complete design system",
-      "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. Each panel diverts plastic waste from landfills while creating healthier, quieter environments. It's the sound-absorbing alternative to MDF—but at a fraction of the weight.",
-      "feature1": "{pct, select, unknown {Made from recycled PET bottles} other {Made from {pct}% recycled PET bottles}}",
-      "feature2": "100% recyclable at end of life",
+      "reason5": "Kombinér med rPET Groove for et komplet designsystem",
+      "description": "rPET - Panel forvandler genanvendte PET-flasker til højtydende akustikpaneler. Hvert panel holder plastaffald væk fra lossepladsen og skaber samtidig sundere og roligere miljøer. Det er det lydabsorberende alternativ til MDF – men med en brøkdel af vægten.",
+      "feature1": "{pct, select, unknown {Fremstillet af genanvendte PET-flasker} other {Fremstillet af {pct} % genanvendte PET-flasker}}",
+      "feature2": "100 % genanvendeligt efter endt levetid",
       "feature3": "Letvægt: kun 3-4 kg/m²",
       "feature4": "Fri for kemiske bindemidler"
     },
     "process": {
       "tag": "SÅDAN ER DET LAVET",
       "title": "Design, konstruer, byg",
-      "description": "rPET Panel can be processed exactly like MDF. Cut, mill, drill, bend—your fabricator will need zero new tools or techniques."
+      "description": "rPET Panel kan bearbejdes præcis som MDF. Skær, fræs, bor, buk – din montør har ikke brug for nye værktøjer eller teknikker."
     },
     "workability": {
       "tag": "BEARBEJDNING",
       "step1Title": "Savning",
-      "step1": "Precision shapes and profiles with standard CNC equipment",
+      "step1": "Præcise former og profiler med standard CNC-udstyr",
       "step2Title": "CNC-skæring og fræsning",
-      "step2": "Direct fixings without pre-drilling or special anchors",
+      "step2": "Direkte fastgørelse uden forboring eller specialdyvler",
       "step3Title": "Boring og skruning",
-      "step3": "Create curves and angles with simple V-cut technique",
-      "title": "Process Like MDF, Weighs Like Nothing",
-      "description": "rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the material handles beautifully with standard workshop tools.",
-      "step1Desc": "Manual or electric—clean cuts every time",
-      "step2Desc": "Precision shapes and custom profiles",
-      "step3Desc": "Secure fixing without splitting",
+      "step3": "Skab kurver og vinkler med enkel V-skæringsteknik",
+      "title": "Bearbejdes som MDF, vejer næsten ingenting",
+      "description": "rPET - Panel kombinerer MDF's bearbejdelighed med en utrolig lav vægt. Sav i det, fræs det på CNC, bor i det, V-skær det – materialet er en fornøjelse at arbejde med ved brug af almindeligt værkstedsværktøj.",
+      "step1Desc": "Manuelt eller elektrisk – rene snit hver gang",
+      "step2Desc": "Præcise former og specialprofiler",
+      "step3Desc": "Sikker fastgørelse uden flækning",
       "step4Title": "V-skæringsbøjning",
       "step4Desc": "Skab 3D-former og hjørner",
-      "quote": "You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board."
+      "quote": "Man opdager hurtigt, at rPET - Panel kan bearbejdes lige så hurtigt og nemt som en MDF-plade."
     },
     "acoustics": {
       "tag": "AKUSTIK",
       "title": "Maksimal Absorption",
       "benefit1Title": "Maksimal Ydelse",
-      "benefit1": "Dramatically improve intelligibility in meeting rooms and classrooms",
+      "benefit1": "Forbedrer taleforståeligheden markant i mødelokaler og klasseværelser",
       "benefit2Title": "Uafhængigt Certificeret",
-      "benefit2": "Create calmer environments that boost wellbeing and productivity",
+      "benefit2": "Skab roligere miljøer, der øger trivsel og produktivitet",
       "benefit3Title": "Bredbånd",
-      "benefit3": "Reduce sound transmission between spaces for confidential conversations",
-      "description": "rPET - Panel achieves the maximum possible acoustic absorption rating. The unique fiber structure traps and dissipates sound energy, dramatically reducing reverberation and improving speech clarity.",
+      "benefit3": "Reducer lydtransmission mellem rum af hensyn til fortrolige samtaler",
+      "description": "rPET - Panel opnår den højest mulige lydabsorptionsklasse. Den unikke fiberstruktur fanger og spreder lydenergien, hvilket reducerer efterklangen markant og forbedrer taleforståeligheden.",
       "howItWorks": "Sådan fungerer det",
       "fiberLabel": "Komprimerede PET-fibre",
-      "fiberSublabel": "Sound energy converted to heat",
+      "fiberSublabel": "Lydenergi omdannes til varme",
       "panelThickness": "Paneltykkelse",
       "soundAbsorbed": "Lyd absorberet",
       "testStandard": "Teststandard",
-      "testConfig": "Test Configuration: 24mm panel on 50mm frame with polyester wool insulation achieves αw 0.95",
-      "certNote": "Independently tested & certified to ISO 11654"
+      "testConfig": "Testopstilling: 24 mm panel på 50 mm ramme med polyesteruldsisolering opnår αw 0,95",
+      "certNote": "Uafhængigt testet og certificeret i henhold til ISO 11654"
     },
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
@@ -1692,11 +1692,11 @@
       "cert2": "Cirkulær Returnering",
       "cert3": "OEKO-TEX® Klasse 1",
       "cert4": "Klasse A+ emissioner",
-      "badge1Desc": "Made from post-consumer PET bottles",
-      "badge2Desc": "Full material recovery at end of life",
-      "description": "rPET - Panel embodies the circular economy. {pct, select, unknown {Each panel is made from recycled PET bottles} other {Each panel contains {pct}% recycled PET bottles}}, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
-      "cert3Desc": "Class 1 certified for human safety",
-      "cert4Desc": "No VOC or formaldehyde (ISO 16000)"
+      "badge1Desc": "Fremstillet af brugte PET-flasker",
+      "badge2Desc": "Fuld materialegenvinding efter endt levetid",
+      "description": "rPET - Panel er selve indbegrebet af cirkulær økonomi. {pct, select, unknown {Hvert panel er fremstillet af genanvendte PET-flasker} other {Hvert panel indeholder {pct} % genanvendte PET-flasker}}, og efter endt levetid kan hele panelet genanvendes igen. Intet spild, ingen kompromiser.",
+      "cert3Desc": "Klasse 1-certificeret for menneskers sikkerhed",
+      "cert4Desc": "Ingen VOC eller formaldehyd (ISO 16000)"
     },
     "specs": {
       "tag": "SPECIFIKATIONER",
@@ -1712,8 +1712,8 @@
       "dimThicknessOptions": "Tykkelsesmuligheder",
       "dimCustomThickness": "Specialtykkelse",
       "physMaterial": "Materiale",
-      "physWeight12": "Weight (12mm)",
-      "physWeight24": "Weight (24mm)",
+      "physWeight12": "Vægt (12 mm)",
+      "physWeight24": "Vægt (24 mm)",
       "fireEuClass": "Europæisk klassifikation",
       "fireGerman": "Tysk standard",
       "healthOekoTex": "OEKO-TEX®",
@@ -1723,13 +1723,13 @@
       "colorCustom": "Specialfarver",
       "finishOptions": "Finishmuligheder",
       "recyclability": "Genanvendelighed",
-      "vocEmissions": "VOC emissions",
+      "vocEmissions": "VOC-emissioner",
       "anyRalNcs": "Enhver RAL / NCS",
       "finishOptionsVal": "Stof, HPL, finér, tryk"
     },
     "sample": {
       "title": "Anmod om din prøvepakke",
-      "description": "Experience the quality of rPET - Panel firsthand. Our customized sample package includes color swatches, thickness options, and finishing samples to help you make the perfect choice.",
+      "description": "Oplev kvaliteten af rPET - Panel på første hånd. Vores skræddersyede prøvepakke indeholder farveprøver, tykkelsesmuligheder og overfladeprøver, så du kan træffe det perfekte valg.",
       "tag": "PRØVER",
       "cta": "Anmod om gratis prøver"
     },
@@ -1739,26 +1739,26 @@
     },
     "why": {
       "tag": "HVORFOR VÆLGE rPET",
-      "description": "Discover why architects, designers, and acoustic consultants choose rPET - Panel for their most demanding projects.",
+      "description": "Se, hvorfor arkitekter, designere og akustikrådgivere vælger rPET - Panel til deres mest krævende projekter.",
       "reason1Title": "100% Cirkulær",
-      "reason1": "Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.",
+      "reason1": "Fremstillet af genanvendte PET-flasker, fuldt genanvendeligt og et bidrag til den cirkulære økonomi.",
       "reason2Title": "Fremragende",
-      "reason2": "Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.",
+      "reason2": "Lydabsorption op til αw 1,00 – den højest mulige klasse for lydabsorption.",
       "reason3Title": "Nem Installation",
-      "reason3": "Lightweight and stable. Cut, drill, mill, and install with standard tools.",
+      "reason3": "Let og stabilt. Skær, bor, fræs og montér med almindeligt værktøj.",
       "reason4Title": "Sundt og Sikkert",
-      "reason4": "Anti-static, skin-friendly, anti-allergenic. No VOC or formaldehyde emissions.",
+      "reason4": "Antistatisk, hudvenlig, antiallergisk. Ingen VOC- eller formaldehydemissioner.",
       "reason5Title": "Uendelige Designmuligheder",
-      "reason5": "5 standard colors plus any RAL/NCS. Add fabric, laminate, veneer, or custom prints.",
+      "reason5": "5 standardfarver plus alle RAL/NCS-farver. Tilføj stof, laminat, træfiner eller individuelt print.",
       "title": "Fem grunde til at vælge rPET"
     },
     "colors": {
       "tag": "FARVER",
       "title": "5 Standardfarver + Brugerdefineret RAL/NCS",
-      "description": "Choose from 5 sophisticated standard colors or specify any custom color from the RAL or NCS palette. Every shade maintains the same outstanding acoustic performance.",
+      "description": "Vælg mellem 5 elegante standardfarver, eller angiv en hvilken som helst specialfarve fra RAL- eller NCS-paletten. Alle nuancer bevarer den samme fremragende akustiske ydeevne.",
       "anyColor": "Enhver farve",
       "moreOptionsTitle": "Vil du have flere muligheder?",
-      "moreOptionsDesc": "All base colors can be combined with finishing layers like acoustic fabrics, HPL laminate, real wood veneer, or custom prints—without compromising acoustic performance.",
+      "moreOptionsDesc": "Alle grundfarver kan kombineres med overfladelag som akustiske stoffer, HPL-laminat, ægte træfiner eller individuelt print – uden at gå på kompromis med den akustiske ydeevne.",
       "fabric1": "Akustiske stoffer",
       "fabric2": "HPL/CPL-laminat",
       "fabric3": "Ægte træfinér",
@@ -1767,17 +1767,17 @@
     "applications": {
       "tag": "ANVENDELSER",
       "title": "Anvendelser",
-      "description": "Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.",
+      "description": "Hver bygning og hvert rum er unikt. rPET - Panel tilpasser sig enhver akustisk udfordring med alsidige anvendelsesmuligheder.",
       "app1Name": "Vægpaneler",
       "app1Desc": "Lydabsorberende vægbeklædning",
       "app2Name": "Loftpaneler",
       "app2Desc": "Akustiske loftsløsninger",
       "app3Name": "Rumdelere",
       "app3Desc": "Funktionel rumadskillelse",
-      "app4Name": "Furniture",
+      "app4Name": "Møbler",
       "app4Desc": "Akustisk specialmøbler",
       "label1": "Mødepod",
-      "label2": "Offices",
+      "label2": "Kontorer",
       "label3": "Hotel & restaurant"
     },
     "nav": {
@@ -1792,12 +1792,12 @@
     },
     "downloads": {
       "installationGuide": "Installationsvejledning",
-      "acousticTestReport": "Acoustic Test Report (ISO 354)",
-      "fireCertificate": "Fire Certificate (EN 13501-1)",
+      "acousticTestReport": "Akustisk testrapport (ISO 354)",
+      "fireCertificate": "Brandcertifikat (EN 13501-1)",
       "oekoTexCert": "OEKO-TEX®-certifikat"
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
+      "freeNote": "Gratis prøver tilgængelige • Fremstillet i Polen • 100 % genanvendeligt"
     },
     "faq": {
       "questions": {
@@ -1835,10 +1835,10 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "ACOUSTIC WOOD PANELS",
+      "tag": "AKUSTISKE TRÆPANELER",
       "title": "rWood Groove: rillede akustiske træpaneler i eg og valnød",
       "tagline": "Naturlig skønhed, perfekt akustik",
-      "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
+      "description": "Giv ethvert rum naturlig varme og elegant stil med rWood - Groove akustikpaneler. Førsteklasses ege- og valnøddefiner kombineret med lydabsorberende filtbagside skaber harmoni mellem æstetik og akustik.",
       "usp1": "FSC® certificeret træ",
       "usp2": "Klasse A absorption",
       "usp3": "Gratis returordning"
@@ -1847,33 +1847,33 @@
       "tag": "HÅNDVÆRK",
       "title": "Hvor naturen møder design",
       "subtitle": "Premium-finish",
-      "description": "rWood - Groove panels transform any room into a sophisticated acoustic environment. The combination of precision-milled grooves and premium wood veneers creates a surface that is both visually stunning and acoustically effective.",
-      "feature1": "Premium A-grade oak and walnut veneers",
-      "feature2": "Integrated acoustic felt backing",
-      "feature3": "Seamless panel-to-panel connection",
-      "feature4": "Suitable for walls and ceilings",
-      "description2": "rWood - Groove panels transform any room into a space of natural beauty and acoustic comfort. Each panel features premium A-grade oak or walnut veneer, precisely grooved to create the signature linear aesthetic while maximizing sound absorption through integrated felt backing."
+      "description": "rWood - Groove-paneler forvandler ethvert rum til et raffineret akustisk miljø. Kombinationen af præcisionsfræsede riller og førsteklasses træfiner skaber en overflade, der er både visuelt imponerende og akustisk effektiv.",
+      "feature1": "Førsteklasses A-kvalitets ege- og valnøddefiner",
+      "feature2": "Integreret akustisk filtbagside",
+      "feature3": "Sømløs samling panel til panel",
+      "feature4": "Egnet til vægge og lofter",
+      "description2": "rWood - Groove-paneler forvandler ethvert rum til et sted med naturlig skønhed og akustisk komfort. Hvert panel har førsteklasses A-kvalitets ege- eller valnøddefiner, præcist rillet for at skabe det karakteristiske lineære udtryk, samtidig med at lydabsorptionen maksimeres via den integrerede filtbagside."
     },
     "oakCollection": {
       "title": "Egekollektion",
-      "description": "Natural oak veneer in multiple stain options, from raw blonde to deep smoked tones."
+      "description": "Naturlig egefiner i flere bejdsevarianter, fra rå lys eg til dybe røgede toner."
     },
     "feltBacking": {
       "title": "Filtbagsidemuligheder",
-      "description": "Natural grey, black, or colored acoustic felt visible through the grooves."
+      "description": "Naturgrå, sort eller farvet akustisk filt, der er synlig gennem rillerne."
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Overlegen lydabsorption",
       "benefit1Title": "Reduceret efterklang",
-      "benefit1": "Control echo and improve speech clarity in any room",
+      "benefit1": "Kontrollér ekko og forbedr taleforståeligheden i ethvert rum",
       "benefit2Title": "Øget komfort",
-      "benefit2": "Create calmer, more peaceful environments",
+      "benefit2": "Skab roligere og mere fredfyldte omgivelser",
       "benefit3Title": "Testet ydeevne",
-      "benefit3": "Independently verified acoustic data",
-      "description": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo and reverberation to create calm, productive spaces.",
+      "benefit3": "Uafhængigt verificerede akustiske data",
+      "description": "Det unikke rilledesign kombineret med akustisk filt af høj kvalitet giver enestående lydabsorption. Reducér ekko og efterklang, og skab rolige, produktive rum.",
       "ratingLabel": "Absorption",
-      "description2": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye.",
+      "description2": "Det unikke rilledesign kombineret med akustisk filt af høj kvalitet giver enestående lydabsorption. Reducér ekko, fjern støj, og skab rum, der er lige så behagelige for øret som for øjet.",
       "diagramTitle": "Paneltværsnit",
       "soundAbsorbed": "Lyd absorberet",
       "testStandard": "Teststandard"
@@ -1882,49 +1882,49 @@
       "tag": "NEM INSTALLATION",
       "title": "Sømløs installation",
       "step1Title": "Forbered overflade",
-      "step1Desc": "Mount battens or apply adhesive to clean, dry surface",
+      "step1Desc": "Montér lægter, eller påfør lim på en ren, tør overflade",
       "step2Title": "Placér første panel",
-      "step2Desc": "Start from corner, ensure level alignment",
+      "step2Desc": "Start fra et hjørne, og sørg for, at panelerne er i vater",
       "step3Title": "Forbind paneler",
-      "step3Desc": "Slide tongue into groove for seamless connection",
+      "step3Desc": "Skub feren ind i noten for en sømløs samling",
       "step4Title": "Færdiggør og afslut",
-      "step4Desc": "Add end mouldings for a professional result",
-      "description": "rWood - Groove panels feature an innovative tongue-and-groove connection for fast and easy installation.",
-      "description2": "rWood - Groove panels feature an innovative tongue-and-groove connection system that ensures invisible joints and a cohesive surface. Whether you're a professional installer or a skilled DIYer, our system makes installation straightforward."
+      "step4Desc": "Tilføj afslutningslister for et professionelt resultat",
+      "description": "rWood - Groove-paneler har en innovativ fer-og-not-samling, der gør montagen hurtig og enkel.",
+      "description2": "rWood - Groove-paneler har et innovativt fer-og-not-samlingssystem, der sikrer usynlige samlinger og en sammenhængende overflade. Uanset om De er professionel montør eller en dygtig gør-det-selv-håndværker, gør vores system montagen ligetil."
     },
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
       "title": "Ansvarligt indkøbt",
       "badge1": "FSC® certificeret",
-      "badge1Desc": "Wood from responsibly managed forests",
+      "badge1Desc": "Træ fra ansvarligt forvaltede skove",
       "badge2": "Genbrugt filt",
-      "badge2Desc": "Acoustic backing from recycled materials",
+      "badge2Desc": "Akustisk bagside af genanvendte materialer",
       "badge3": "Europæisk produktion",
       "badge3Desc": "Reducerede transportemissioner",
       "badge4": "EPD tilgængelig",
       "badge4Desc": "Fuld miljøproduktdeklaration",
-      "description": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certified wood comes from responsibly managed forests, and the acoustic backing uses recycled materials.",
-      "description2": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from responsibly managed forests that provide environmental, social, and economic benefits."
+      "description": "Hvert rWood - Groove-panel er fremstillet med bæredygtighed som kerne. Vores FSC®-certificerede træ kommer fra ansvarligt forvaltede skove, og den akustiske bagside er fremstillet af genanvendte materialer.",
+      "description2": "Hvert rWood - Groove-panel er fremstillet med bæredygtighed som kerne. Vores FSC®-certificering garanterer, at træet kommer fra ansvarligt forvaltede skove, der giver miljømæssige, sociale og økonomiske fordele."
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
       "acousticsTitle": "Akustisk ydeevne",
       "fireTitle": "Brandsikkerhed",
       "certsTitle": "Certificeringer",
       "applicationsTitle": "Anvendelser",
       "dimensionsTitle": "Dimensioner",
-      "materialsTitle": "Materials",
+      "materialsTitle": "Materialer",
       "dimPanelWidth": "Panelbredde",
       "dimPanelLength": "Panellængde",
       "dimThickness": "Tykkelse",
       "dimGrooveDepth": "Rilledybde",
       "dimGrooveWidth": "Rillebredde",
-      "matVeneer": "Veneer",
+      "matVeneer": "Finér",
       "matVeneerVal": "A-klasse eg / valnød",
       "matCore": "Kerne",
-      "matCoreVal": "MDF (standard / moisture-resistant / fire-retardant)",
-      "matBacking": "Backing",
+      "matCoreVal": "MDF (standard / fugtbestandig / brandhæmmende)",
+      "matBacking": "Bagside",
       "matBackingVal": "Genbrugt PET (3 mm)",
       "matFinish": "Overflade",
       "finishVal": "Olie / lak",
@@ -1933,49 +1933,49 @@
       "woodSourcing": "Trækilder",
       "feltCert": "Filtcertificering",
       "envLabel": "Miljømæssig",
-      "vocLabel": "VOC emissions",
-      "vocVal": "E1 / Low emission",
-      "appInstall": "Installation",
+      "vocLabel": "VOC-emissioner",
+      "vocVal": "E1 / lav emission",
+      "appInstall": "Montage",
       "appWalls": "Vægge og lofter",
       "appEnv": "Miljø",
       "appEnvVal": "Indendørs (tørre områder)",
       "appMoist": "Fugttæt",
       "appMoistVal": "Tilgængelig til fugtige områder",
-      "appConn": "Connection",
+      "appConn": "Samling",
       "appConnVal": "Not og fjeder"
     },
     "accessories": {
       "tag": "FULDFØR LOOKET",
-      "title": "Accessories",
+      "title": "Tilbehør",
       "endMouldings": "Endepaneler",
       "cornerProfiles": "Hjørneprofiler",
-      "description": "Professional finishing touches for a perfect result",
+      "description": "Professionelle afslutningsdetaljer for et perfekt resultat",
       "item1Title": "Endepaneler",
-      "item1Desc": "Clean edges where panels meet other surfaces",
+      "item1Desc": "Rene kanter, hvor panelerne møder andre overflader",
       "item2Title": "Hjørneprofiler",
-      "item2Desc": "Seamless internal and external corner solutions",
+      "item2Desc": "Sømløse løsninger til indvendige og udvendige hjørner",
       "item3Title": "Monteringslægter",
-      "item3Desc": "Hidden fixing system for walls and ceilings",
+      "item3Desc": "Skjult fastgørelsessystem til vægge og lofter",
       "item4Title": "Touch-up-sæt",
-      "item4Desc": "Matching oils for repairs and maintenance"
+      "item4Desc": "Matchende olier til reparation og vedligeholdelse"
     },
     "gallery": {
       "tag": "INSPIRATION",
       "title": "Projekter og Installationer"
     },
     "patterns": {
-      "tag": "DESIGN OPTIONS",
+      "tag": "DESIGNMULIGHEDER",
       "title": "Premium-finish",
-      "description": "Four distinct groove patterns to match any architectural vision. From classic batten to modern linear, each pattern transforms the wall into a dynamic surface.",
-      "description2": "Four distinct groove patterns to match any architectural vision. From classic balanced proportions to bold wide strips—find the perfect expression for your space."
+      "description": "Fire forskellige rillemønstre, der passer til enhver arkitektonisk vision. Fra klassisk lægtelook til moderne lineært udtryk – hvert mønster forvandler væggen til en dynamisk overflade.",
+      "description2": "Fire forskellige rillemønstre, der passer til enhver arkitektonisk vision. Fra klassisk afbalancerede proportioner til markante brede lameller – find det perfekte udtryk til Deres rum."
     },
     "materials": {
-      "tag": "MATERIALS",
+      "tag": "MATERIALER",
       "oilFinishesTitle": "Olieafdækninger",
-      "oilFinishesDesc": "Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.",
-      "walnutTitle": "Walnut",
-      "walnutDesc": "Rich, warm tones with distinctive grain patterns. The premium choice for high-end interiors.",
-      "description": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain and colour. The oil-finished surface is ready to install with no additional treatment required.",
+      "oilFinishesDesc": "Oliebehandlinger i natur, hvid, klar, brun, mørkebrun og sort. Hver olie trænger dybt ind i træet og giver varig, autentisk beskyttelse.",
+      "walnutTitle": "Valnød",
+      "walnutDesc": "Rige, varme toner med karakteristiske åremønstre. Det førsteklasses valg til eksklusive interiører.",
+      "description": "Hvert rWood - Groove-panel er fremstillet med finér i A-kvalitet, hvilket sikrer ensartet åretegning og farve. Den olierede overflade er klar til montage uden yderligere behandling.",
       "colorSelector": "Vælg træfinish",
       "layer1Name": "Eg / Valnød-finér",
       "layer1Desc": "Premium A-klasse naturligt træ",
@@ -1984,15 +1984,15 @@
       "layer3Name": "Akustisk filtbagside",
       "layer3Desc": "Genbrugt PET, 3 mm tyk",
       "waveLabel": "Lydbølger absorberet",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "description2": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range of oiled and painted finishes to perfectly complement your interior design."
+      "certNote": "Uafhængigt testet og certificeret i henhold til ISO 11654",
+      "description2": "Hvert rWood - Groove-panel er fremstillet med finér i A-kvalitet, hvilket sikrer ensartede åremønstre og overlegen kvalitet. Vælg mellem vores udvalg af olierede og malede overflader, der perfekt komplementerer Deres indretning."
     },
     "downloads": {
       "installationGuide": "Installationsvejledning",
       "colorChart": "Farve- og overfladesvejledning"
     },
     "cta2": {
-      "freeNote": "Free samples available • FSC® Certified"
+      "freeNote": "Gratis prøver tilgængelige • FSC®-certificeret"
     },
     "faq": {
       "questions": {
@@ -2030,63 +2030,63 @@
       "tag": "PERFOREREDE AKUSTISKE TRÆPANELER",
       "title": "rWood Perf: perforerede akustiske træpaneler",
       "tagline": "Præcisionsperforeringer, maksimal absorption",
-      "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control.",
+      "description": "Højtydende borede akustikpaneler, der forener træets naturlige skønhed med fremragende lydabsorption. En brandhæmmende MDF-kerne og finerede kanter giver det højeste niveau af brandsikkerhed og akustisk kontrol.",
       "usp1": "Runde perforeringer",
-      "usp2": "B2-s1, d0 Fire Rated",
+      "usp2": "Brandklasse B2-s1, d0",
       "usp3": "Op til klasse B",
-      "description2": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control for demanding public spaces."
+      "description2": "Højtydende borede akustikpaneler, der forener træets naturlige skønhed med fremragende lydabsorption. En brandhæmmende MDF-kerne og finerede kanter giver det højeste niveau af brandsikkerhed og akustisk kontrol til krævende offentlige rum."
     },
     "patterns": {
       "tag": "PERFORATIONSMØNSTRE",
       "title": "Vælg dit mønster",
-      "description": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for highest absorption to subtle micro-perforations for a clean wood aesthetic.",
+      "description": "Fire borede perforeringsmønstre med kalibrerede akustiske egenskaber. Fra maksimalt åbent areal for højeste absorption til diskrete mikroperforeringer for et rent træudtryk.",
       "coreMatchTitle": "Match kernen til dit finer, så perforeringerne forsvinder—eller gør dem til et designelement.",
       "coreColorTitle": "Kernfarve",
-      "coreMatchDesc": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a design statement.",
-      "description3": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for demanding acoustic spaces to more discreet patterns that prioritize visual refinement.",
-      "coreMatchDesc2": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a decorative effect."
+      "coreMatchDesc": "Afstem kernen med finéren, så perforeringerne falder i med overfladen, eller vælg en kontrastkerne som et designstatement.",
+      "description3": "Fire borede perforeringsmønstre med kalibrerede akustiske egenskaber. Fra maksimalt åbent areal til akustisk krævende rum til mere diskrete mønstre, der prioriterer visuel raffinement.",
+      "coreMatchDesc2": "Afstem kernen med finéren, så perforeringerne falder i med overfladen, eller vælg en kontrastkerne for en dekorativ effekt."
     },
     "coreColor": {
       "title": "Kernfarve",
       "description": "Sort eller naturfarvet akustisk filt synlig gennem perforeringerne—subtilt men virkningsfuldt."
     },
     "surfaces": {
-      "tag": "SURFACES",
+      "tag": "OVERFLADER",
       "title": "Premium træoverflader",
       "natureVeneers": "Nature-finerer",
-      "natureDesc": "Lively variations and characteristic expression associated with each wood species.",
+      "natureDesc": "Levende variationer og det karakteristiske udtryk, der kendetegner hver træsort.",
       "geminiVeneers": "Gemini-finerer",
-      "geminiDesc": "Even colour tone and structure for a more harmonious, uniform appearance.",
+      "geminiDesc": "Ensartet farvetone og struktur for et mere harmonisk, uniformt udseende.",
       "finishes": "Overfladefinish",
-      "description": "Every rWood - Perf panel is produced with over-veneered edges — a traditional craft technique that creates perfectly seamless joints and eliminates visible panel boundaries.",
+      "description": "Hvert rWood - Perf-panel fremstilles med finerede kanter – en traditionel håndværksteknik, der giver perfekt sømløse samlinger og eliminerer synlige panelgrænser.",
       "finish1": "Naturlig lak",
-      "finish2": "Pigmented",
+      "finish2": "Pigmenteret",
       "finish3": "HPL-laminat",
       "colorSelector": "Vælg træfinér",
-      "description3": "Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated around the panel before veneering. This gives each panel the appearance of being entirely of wood, with seamless joints across large surfaces."
+      "description3": "Hvert rWood - Perf-panel fremstilles med finerede kanter – en traditionel produktionsteknik, hvor en kantliste af massivt træ integreres rundt om panelet, før det fineres. Det giver hvert panel et udtryk af at være helt i træ, med sømløse samlinger over store flader."
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Designet til lyd",
       "benefit1Title": "Bredbåndsabsorption",
-      "benefit1": "Effective across the full frequency spectrum, from low to high",
+      "benefit1": "Effektiv i hele frekvensspektret, fra lave til høje frekvenser",
       "benefit2Title": "Højeste brandsikkerhed",
-      "benefit2": "B-s1, d0—the highest achievable class for wooden panels",
+      "benefit2": "B-s1, d0 – den højest opnåelige klasse for træpaneler",
       "benefit3Title": "Justerbar ydeevne",
-      "benefit3": "Four perforation patterns for tailored acoustic solutions",
-      "description": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the absorption layer beneath. The cavity behind the panel further enhances low-frequency absorption.",
+      "benefit3": "Fire perforeringsmønstre til skræddersyede akustiske løsninger",
+      "description": "Præcisionsborede perforeringer lader lydbølgerne trænge ind i panelet og videre til absorptionslaget bagved. Hulrummet bag panelet forbedrer yderligere absorptionen af lave frekvenser.",
       "layer1Name": "Træfinér + perforeringer",
-      "layer1Desc": "Over-veneered, precision-drilled surface",
-      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
-      "layer2Desc": "Fire Retardant, 0.45 kg/m³ density",
+      "layer1Desc": "Fineret, præcisionsboret overflade",
+      "layer2Name": "Brandhæmmende MDF-kerne",
+      "layer2Desc": "Brandhæmmende, densitet 0,45 kg/m³",
       "layer3Name": "Akustisk fleece",
       "layer3Desc": "Forhindrer fibervandring",
       "layer4Name": "Mineraluldskavitet",
-      "layer4Desc": "30–50 mm for broadband absorption",
+      "layer4Desc": "30–50 mm for bredbåndsabsorption",
       "waveLabel": "Lydbølger absorberet",
-      "certNote": "Independently tested & certified to ISO 11654",
+      "certNote": "Uafhængigt testet og certificeret i henhold til ISO 11654",
       "ratingLabel": "Absorption",
-      "description3": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the cavity behind. Combined with mineral wool insulation, rWood - Perf delivers outstanding broadband absorption across the full frequency spectrum—from low bass to high treble.",
+      "description3": "Præcisionsborede perforeringer lader lydbølgerne trænge ind i panelet og videre til hulrummet bagved. Kombineret med mineraluldsisolering leverer rWood - Perf fremragende bredbåndsabsorption i hele frekvensspektret – fra dyb bas til høj diskant.",
       "diagramTitle": "Paneltværsnit",
       "fireRating": "Brandklasse",
       "noiseReduction": "Støjreduktion"
@@ -2095,15 +2095,15 @@
       "tag": "SKJULT MONTERING",
       "title": "Sømløs installation",
       "step1Title": "Monter underramme",
-      "step1Desc": "Install metal rails to wall or ceiling structure",
+      "step1Desc": "Montér metalskinner på væg- eller loftkonstruktionen",
       "step2Title": "Anbring isolering",
-      "step2Desc": "Add mineral wool in the cavity for optimal absorption",
+      "step2Desc": "Læg mineraluld i hulrummet for optimal absorption",
       "step3Title": "Clipspaneler",
-      "step3Desc": "Concealed clip system for tool-free, zero-gap mounting",
+      "step3Desc": "Skjult clipssystem til værktøjsfri montage uden spalter",
       "step4Title": "Perfekt justering",
-      "step4Desc": "In-line perforation patterns with seamless over-veneered joints",
-      "description": "rWood - Perf panels are installed with a concealed clip system for an invisible, seamless look.",
-      "description3": "rWood - Perf panels are installed with a concealed clip system designed for precision, speed, and a flawless end result. The system ensures zero-spaced joints and perfectly aligned perforation patterns across multiple panels."
+      "step4Desc": "Gennemgående perforeringsmønstre med sømløse finerede samlinger",
+      "description": "rWood - Perf-paneler monteres med et skjult clipssystem for et usynligt, sømløst udtryk.",
+      "description3": "rWood - Perf-paneler monteres med et skjult clipssystem, der er udviklet til præcision, hastighed og et fejlfrit slutresultat. Systemet sikrer samlinger uden spalter og perfekt afstemte perforeringsmønstre på tværs af flere paneler."
     },
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
@@ -2112,17 +2112,17 @@
       "badge2": "17% genbrugsindhold",
       "badge3": "Europæisk produktion",
       "badge4": "Ultralave emissioner",
-      "badge1Desc": "Wood from responsibly managed forests",
-      "badge2Desc": "Post-consumer recycled material in core",
-      "badge3Desc": "Renewable energy sources, short supply chains",
-      "badge4Desc": "No added formaldehyde, EPD available",
-      "description": "rWood - Perf combines durable, natural materials with a responsible manufacturing approach.",
-      "description3": "rWood - Perf combines durable, natural materials with responsible sourcing. The fibre gypsum core is inherently low-emitting—no chemical impregnation is needed for fire performance—and our veneers come from sustainably managed forests."
+      "badge1Desc": "Træ fra ansvarligt forvaltede skove",
+      "badge2Desc": "Genanvendt post-consumer-materiale i kernen",
+      "badge3Desc": "Vedvarende energikilder, korte forsyningskæder",
+      "badge4Desc": "Intet tilsat formaldehyd, EPD tilgængelig",
+      "description": "rWood - Perf forener holdbare, naturlige materialer med en ansvarlig produktionstilgang.",
+      "description3": "rWood - Perf forener holdbare, naturlige materialer med ansvarlig sourcing. Fibergipskernen har i sig selv lav emission – der kræves ingen kemisk imprægnering for at opnå brandegenskaberne – og vores finér kommer fra bæredygtigt forvaltede skove."
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
-      "dimensionsTitle": "Dimensions — Walls and Ceilings",
+      "dimensionsTitle": "Dimensioner – vægge og lofter",
       "acousticsTitle": "Akustisk ydeevne",
       "perforationsTitle": "Perforeringsmuligheder",
       "fireTitle": "Brandsikkerhed",
@@ -2130,12 +2130,12 @@
       "customSizes": "Specialmål",
       "dimThickness": "Tykkelse",
       "dimWeight": "Vægt",
-      "matTitle": "Materials",
-      "matCustomColor": "Custom color tones with transparent or solid pigmentation",
-      "matLacquerFinish": "From super matte to high gloss UV-cured lacquer",
+      "matTitle": "Materialer",
+      "matCustomColor": "Individuelle farvetoner med transparent eller dækkende pigmentering",
+      "matLacquerFinish": "Fra supermat til højglans UV-hærdet lak",
       "surfaceLabel": "Overflade",
       "surfaceVal": "Finér / HPL / folie / maling",
-      "coreVal": "Medium Density Fiberboard core (brown / green / black)",
+      "coreVal": "MDF-kerne (brun / grøn / sort)",
       "edgesLabel": "Kanter",
       "edgesVal": "Overfineret massivt træ",
       "acousticFelt": "Akustisk filt",
@@ -2143,8 +2143,8 @@
       "reactionFire": "Brandreaktion",
       "resistanceFire": "Brandsikring",
       "fireRetardant": "Brandfortardende",
-      "vocLabel": "VOC emissions",
-      "vocVal": "TVOC approved (ISO 16000)",
+      "vocLabel": "VOC-emissioner",
+      "vocVal": "TVOC godkendt (ISO 16000)",
       "formaldehydeLabel": "Formaldehyd",
       "formaldehydeVal": "Ingen tilsat urinstof-formaldehyd",
       "envLabel": "Miljømæssig"
@@ -2155,29 +2155,29 @@
     },
     "overview": {
       "tag": "BEVIST YDELSE",
-      "description": "rWood - Perf panels are one of the most effective acoustic wall solutions. Precision-drilled perforations allow sound to pass through the decorative wood surface into the highly absorbent core.",
-      "feature1": "Fire Retardant Medium Density Fiberboard core (B2-s1, d0)",
-      "feature2": "Over-veneered edges for seamless joints",
-      "feature3": "Light or dark core for pattern discretion",
-      "feature4": "Custom formats up to 3050 × 1220 mm",
-      "description3": "rWood - Perf panels are one of the most effective and widely used solutions for acoustic walls and ceilings. The precisely drilled round perforations create a large open area that guarantees high levels of sound absorption, while premium wood veneer ensures a natural, warm appearance.",
-      "description4": "Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges for seamless joints, these panels are engineered for the highest demands in large public spaces—from atriums and concert halls to offices and schools."
+      "description": "rWood - Perf-paneler er en af de mest effektive akustiske vægløsninger. Præcisionsborede perforeringer lader lyden passere gennem den dekorative træoverflade og ind i den stærkt absorberende kerne.",
+      "feature1": "Brandhæmmende MDF-kerne (B2-s1, d0)",
+      "feature2": "Overfinerede kanter for usynlige samlinger",
+      "feature3": "Lys eller mørk kerne for et diskret mønster",
+      "feature4": "Specialformater op til 3050 × 1220 mm",
+      "description3": "rWood - Perf-paneler er en af de mest effektive og mest anvendte løsninger til akustiske vægge og lofter. De præcist borede runde perforeringer skaber et stort åbent areal, der garanterer høj lydabsorption, mens træfiner i premiumkvalitet sikrer et naturligt, varmt udtryk.",
+      "description4": "Kombineret med en brandhæmmende MDF-kerne og overfinerede kanter for usynlige samlinger er disse paneler konstrueret til de højeste krav i store offentlige rum – fra atrier og koncertsale til kontorer og skoler."
     },
     "accessories": {
       "tag": "FULDFØR LOOKET",
-      "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result",
+      "title": "Tilbehør",
+      "description": "Professionelle afslutningselementer for et fejlfrit resultat",
       "item1Title": "Kantprofiler",
-      "item1Desc": "Matching profiles for clean panel terminations",
+      "item1Desc": "Matchende profiler til rene panelafslutninger",
       "item2Title": "Hjørneløsninger",
-      "item2Desc": "Seamless internal and external corner transitions",
+      "item2Desc": "Usynlige overgange ved indvendige og udvendige hjørner",
       "item3Title": "Monteringsskinner",
-      "item3Desc": "Concealed aluminium subframe system",
+      "item3Desc": "Skjult underkonstruktion i aluminium",
       "item4Title": "Mineraluld",
-      "item4Desc": "30–50 mm insulation for optimal performance"
+      "item4Desc": "30–50 mm isolering for optimal ydeevne"
     },
     "cta": {
-      "note": "Free samples available • FSC® Certified • A2 fire rating available"
+      "note": "Gratis prøver • FSC®-certificeret • A2-brandklasse tilgængelig"
     },
     "faq": {
       "questions": {
@@ -2215,79 +2215,79 @@
       "tag": "MIKRO-PERFOREREDE AKUSTIKPANELER",
       "title": "rWood Micro: mikroperforerede akustiske træpaneler",
       "tagline": "Usynlig perforation, fremragende akustik",
-      "description": "Experience the beauty of natural wood with the acoustic performance of advanced micro-perforation technology. Virtually invisible holes deliver Class A sound absorption while preserving the pure, homogeneous look of premium wood veneer.",
+      "description": "Oplev skønheden ved naturligt træ kombineret med den akustiske ydeevne fra avanceret mikroperforeringsteknologi. Næsten usynlige huller giver lydabsorption i klasse A, samtidig med at det rene, homogene udtryk fra træfiner i premiumkvalitet bevares.",
       "usp1": "Usynlige perforeringer",
       "usp2": "Klasse A absorption",
-      "usp3": "B-s1, d0 Fire Rated",
+      "usp3": "Brandklasse B-s1, d0",
       "colorSelector": "Vælg træfinér"
     },
     "perforation": {
       "tag": "PERFORATIONSMØNSTRE",
       "title": "Vælg din perforation",
-      "description": "Different micro-perforation densities for fine-tuned acoustic control—from subtle to high-performance."
+      "description": "Forskellige mikroperforeringstætheder for finjusteret akustisk kontrol – fra diskret til højtydende."
     },
     "surfaces": {
-      "tag": "SURFACES",
+      "tag": "OVERFLADER",
       "title": "Premium overflader",
       "woodVeneer": "Træfinér",
-      "woodVeneerDesc": "Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available.",
+      "woodVeneerDesc": "A-kvalitetsfiner i eg, valnød, birk og meget mere. Fås i Nature- og Gemini-snit.",
       "hplLaminate": "HPL-laminat",
-      "hplLaminateDesc": "High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.",
+      "hplLaminateDesc": "Højtrykslaminatoverflader for ekstra holdbarhed. Fås i et bredt udvalg af farver og finish.",
       "surfaceType": "Overfladetype",
       "finishTreatments": "Finishbehandlinger",
-      "description": "Every rWood - Micro panel features over-veneered edges — a manufacturing technique that creates seamless panel joints for a continuous wood surface.",
-      "finish1Desc": "Custom color tones with transparent or solid pigmentation",
-      "finish2Desc": "From super matte to high gloss UV-cured lacquer",
-      "description2": "Every rWood - Micro panel features over-veneered edges—a manufacturing technique from traditional carpentry heritage. The result: stronger panels, seamless joints, and a continuous pattern regardless of panel format."
+      "description": "Alle rWood - Micro-paneler har overfinerede kanter – en produktionsteknik, der skaber usynlige panelsamlinger for en sammenhængende træoverflade.",
+      "finish1Desc": "Individuelle farvetoner med transparent eller dækkende pigmentering",
+      "finish2Desc": "Fra supermat til højglans UV-hærdet lak",
+      "description2": "Alle rWood - Micro-paneler har overfinerede kanter – en produktionsteknik med rødder i det traditionelle snedkerhåndværk. Resultatet: stærkere paneler, usynlige samlinger og et gennemgående mønster uanset panelformat."
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Overlegen lydabsorption",
       "benefit1Title": "Dobbelt akustisk mekanisme",
-      "benefit1": "Micro-holes and sound chambers work together for superior absorption",
+      "benefit1": "Mikrohuller og lydkamre arbejder sammen for overlegen absorption",
       "benefit2Title": "Pladsbesparende design",
-      "benefit2": "Less dependent on air gaps—thinner wall and ceiling build-ups",
+      "benefit2": "Mindre afhængig af luftspalter – tyndere væg- og loftsopbygninger",
       "benefit3Title": "Højeste brandsikkerhed",
-      "benefit3": "B-s1, d0 rating—the highest achievable for micro-perforated wood",
-      "description": "The combination of micro-perforations in the surface and thousands of larger sound-entry channels creates exceptional broadband absorption.",
-      "layer1Name": "A-grade veneer with precision-drilled holes",
-      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
-      "layer2Desc": "Fire Retardant, with sound chambers",
+      "benefit3": "Klassificering B-s1, d0 – den højest opnåelige for mikroperforeret træ",
+      "description": "Kombinationen af mikroperforeringer i overfladen og tusindvis af større lydindgangskanaler skaber enestående bredbåndsabsorption.",
+      "layer1Name": "A-kvalitetsfiner med præcisionsborede huller",
+      "layer2Name": "Brandhæmmende MDF-kerne",
+      "layer2Desc": "Brandhæmmende, med lydkamre",
       "layer3Name": "Akustisk fleece-bagside",
-      "layer3Desc": "Additional sound absorption layer",
+      "layer3Desc": "Ekstra lydabsorberende lag",
       "waveLabel": "Lydbølger absorberet",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "description2": "The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism. Less dependent on insulation and air gaps—meaning thinner walls and ceilings that save valuable space.",
+      "certNote": "Uafhængigt testet og certificeret i henhold til ISO 11654",
+      "description2": "Kombinationen af mikroperforeringer i overfladen og tusindvis af større lydkamre i kernen skaber en dobbelt akustisk mekanisme. Mindre afhængig af isolering og luftspalter – hvilket betyder tyndere vægge og lofter, der sparer værdifuld plads.",
       "diagramTitle": "Paneltværsnit",
       "soundAbsorbed": "Lyd absorberet",
       "fireRating": "Brandklasse",
       "testStandard": "Teststandard",
-      "thinner": "Thinner",
+      "thinner": "Tyndere",
       "wallBuildUp": "Vægopbygning"
     },
     "installation": {
       "tag": "INSTALLATIONSSYSTEM",
       "title": "Præcisionsinstallation",
       "step1Title": "Installer underramme",
-      "step1Desc": "Mount aluminium rails to wall or ceiling structure",
+      "step1Desc": "Montér aluminiumsskinner på væg- eller loftskonstruktionen",
       "step2Title": "Tilføj isolering",
-      "step2Desc": "Optional mineral wool for enhanced absorption",
+      "step2Desc": "Valgfri mineraluld for øget absorption",
       "step3Title": "Click & Fix paneler",
-      "step3Desc": "Concealed clip system for tool-free panel mounting",
+      "step3Desc": "Skjult clipssystem til værktøjsfri panelmontering",
       "step4Title": "Sømløst resultat",
-      "step4Desc": "Over-veneered edges create continuous wood surface",
-      "description": "rWood - Micro panels are installed with our concealed mounting system, ensuring invisible fixings and a flawless finish. The system allows for both wall and ceiling applications, with seamless panel-to-panel transitions through over-veneered edges."
+      "step4Desc": "Overfinerede kanter skaber en sammenhængende træoverflade",
+      "description": "rWood - Micro-paneler monteres med vores skjulte monteringssystem, der sikrer usynlige fastgørelser og en fejlfri finish. Systemet kan anvendes til både vægge og lofter med usynlige overgange fra panel til panel takket være de overfinerede kanter."
     },
     "bespoke": {
-      "tag": "DESIGN FREEDOM",
+      "tag": "DESIGNFRIHED",
       "title": "Skræddersyede muligheder",
       "backlitTitle": "Bagbelyste paneler",
-      "backlitDesc": "Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet remain invisible when the light is off.",
+      "backlitDesc": "Skab imponerende bagbelyste sektioner, hvor lyset skinner gennem mikroperforeringerne. Logoer og mønstre lyser smukt op, når lyset er tændt, og forbliver usynlige, når det er slukket.",
       "customDimTitle": "Specialmål",
-      "customDimDesc": "Panels produced to your exact specifications. Non-standard sizes and shapes for unique architectural requirements.",
+      "customDimDesc": "Paneler produceret efter dine præcise specifikationer. Ikke-standardstørrelser og -former til unikke arkitektoniske krav.",
       "patternTitle": "Kontinuerligt mønster",
-      "patternDesc": "Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.",
-      "description": "rWood - Micro panels can be customized and pre-fabricated according to your drawings. The micro-perforations open up unique design possibilities that go beyond standard acoustic panels."
+      "patternDesc": "Overfinerede paneler skaber usynlige overgange uanset format – for et homogent udtryk på enhver overflade.",
+      "description": "rWood - Micro-paneler kan tilpasses og præfabrikeres efter dine tegninger. Mikroperforeringerne åbner for unikke designmuligheder, der rækker ud over almindelige akustikpaneler."
     },
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
@@ -2296,24 +2296,24 @@
       "badge2": "Naturligt kernemateriale",
       "badge3": "Europæisk produktion",
       "badge4": "Lave VOC-emissioner",
-      "badge1Desc": "Wood from responsibly managed forests",
-      "badge2Desc": "Fiberboard core—a wood-based, fire-rated core",
+      "badge1Desc": "Træ fra ansvarligt forvaltede skove",
+      "badge2Desc": "MDF-kerne – en træbaseret, brandklassificeret kerne",
       "badge3Desc": "Manufactured in Europe, reducing transport emissions",
-      "badge4Desc": "E1-rated for healthier indoor air quality",
-      "description": "rWood - Micro panels are built with sustainability as a core principle. FSC® certified wood, low-emission finishes and responsibly sourced materials ensure environmental responsibility throughout the product lifecycle."
+      "badge4Desc": "E1-klassificeret for et sundere indeklima",
+      "description": "rWood - Micro-paneler er udviklet med bæredygtighed som et grundprincip. FSC®-certificeret træ, lavemissionsfinish og ansvarligt indkøbte materialer sikrer miljøansvar gennem hele produktets livscyklus."
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
-      "dimensionsTitle": "Dimensions — Walls and Ceilings",
-      "acousticsTitle": "Dimensions — Walls and Ceilings",
+      "dimensionsTitle": "Dimensioner – vægge og lofter",
+      "acousticsTitle": "Dimensioner – vægge og lofter",
       "customSizes": "Specialmål",
       "dimThickness": "Tykkelse",
       "dimWeight": "Vægt",
       "dimCoreDensity": "Kernetæthed",
       "perfsTitle": "Perforeringsmuligheder",
       "fireTitle": "Brandsikkerhed",
-      "matTitle": "Materials",
+      "matTitle": "Materialer",
       "appsTitle": "Anvendelser",
       "acWithMinWool": "Med 50 mm mineraluld",
       "reactionFire": "Brandreaktion",
@@ -2321,17 +2321,17 @@
       "fireRetardant": "Brandfortardende",
       "surfaceLabel": "Overflade",
       "surfaceVal": "Finér / HPL / folie / maling",
-      "coreVal": "Medium Density Fiberboard core (brown / green / black)",
+      "coreVal": "MDF-kerne (brun / grøn / sort)",
       "edgesLabel": "Kanter",
       "edgesVal": "Overfineret massivt træ",
       "acousticFelt": "Akustisk filt",
       "feltColor": "Sort / hvid",
-      "appInstall": "Installation",
+      "appInstall": "Montering",
       "appWalls": "Vægge og lofter",
       "appEnv": "Miljø",
       "appEnvVal": "Indendørs (tørre områder)",
       "backlitOption": "Baglysning tilvalg",
-      "backlitVal": "Available",
+      "backlitVal": "Tilgængelig",
       "mountingSystem": "Monteringssystem",
       "concealedClip": "Skjult klipsystem"
     },
@@ -2342,34 +2342,34 @@
     "overview": {
       "tag": "DEN USYNLIGE LØSNING",
       "title": "Designet til øjne og ører",
-      "description1": "rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perforations are completely invisible—what you see is a beautiful, homogeneous wood surface. What you hear is exceptional acoustic comfort.",
-      "description2": "The secret lies in the combination of two acoustic mechanisms: thousands of precisely engineered micro-holes in the surface and sound-absorbing chambers within the core material.",
-      "feature1": "Perforations invisible from normal viewing distance",
-      "feature2": "Non-combustible fibre gypsum core",
-      "feature3": "Over-veneered edges for seamless joints",
-      "feature4": "Suitable for walls and ceilings",
+      "description1": "rWood - Micro-paneler kombinerer avanceret mikroperforeringsteknologi med træfiner i premiumkvalitet. På normal betragtningsafstand er perforeringerne helt usynlige – det, du ser, er en smuk, homogen træoverflade. Det, du hører, er enestående akustisk komfort.",
+      "description2": "Hemmeligheden ligger i kombinationen af to akustiske mekanismer: tusindvis af præcist udformede mikrohuller i overfladen og lydabsorberende kamre i kernematerialet.",
+      "feature1": "Perforeringer usynlige på normal betragtningsafstand",
+      "feature2": "Ubrændbar fibergipskerne",
+      "feature3": "Overfinerede kanter for usynlige samlinger",
+      "feature4": "Velegnet til vægge og lofter",
       "feature5": "Tilgængelig som bagbelyste paneler"
     },
     "accessories": {
       "tag": "FULDFØR LOOKET",
-      "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result",
+      "title": "Tilbehør",
+      "description": "Professionelle afslutningselementer for et fejlfrit resultat",
       "item1Title": "Kantprofiler",
-      "item1Desc": "Matching profiles for clean panel terminations",
+      "item1Desc": "Matchende profiler til rene panelafslutninger",
       "item2Title": "Hjørneløsninger",
-      "item2Desc": "Seamless internal and external corner transitions",
+      "item2Desc": "Usynlige overgange ved indvendige og udvendige hjørner",
       "item3Title": "Monteringsskinner",
-      "item3Desc": "Concealed aluminium subframe system",
+      "item3Desc": "Skjult underkonstruktion i aluminium",
       "item4Title": "LED-bagbelysning",
-      "item4Desc": "Integrated lighting for backlit panel effects"
+      "item4Desc": "Integreret belysning til bagbelyste paneleffekter"
     },
     "patterns": {
-      "description": "Four perforation densities to match your acoustic requirements. From virtually invisible micro-perforations to generous open areas, each density delivers a different balance of aesthetics and performance.",
+      "description": "Fire perforeringstætheder, der matcher dine akustiske krav. Fra næsten usynlige mikroperforeringer til generøse åbne arealer – hver tæthed giver en forskellig balance mellem æstetik og ydeevne.",
       "magnifiedLabel": "10× forstørret",
       "holeDiameter": "Huldiameter",
       "openArea": "Åbent areal",
       "ratingLabel": "Absorption",
-      "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
+      "description2": "Fire perforeringstætheder, der matcher dine akustiske krav. Fra næsten usynlige Nano-perforeringer til Micro L-mønstre med maksimal absorption – vælg den perfekte balance mellem æstetik og akustisk ydeevne.",
       "pigmentedLacquer": "Pigmenteret lak",
       "glossLevels": "Glansniveauer"
     },
@@ -2526,7 +2526,7 @@
       "finishGlossVal": "Super-mat (3-5 GU)",
       "finishAntiFingerprint": "Anti-fingeraftryk",
       "finishScratch": "Ridsemodstand",
-      "fireStdMDF": "Standard MDF",
+      "fireStdMDF": "Standard-MDF",
       "fireFRMDF": "Brandhæmmende MDF",
       "certWoodSourcing": "Trækilder",
       "certEnvironmental": "Miljømæssig",
@@ -2571,7 +2571,7 @@
       "layer1": "Ægte Træfiner",
       "layer1Desc": "A-klasse ægte træfinér, børstet, bejdset og beskyttet med 6 lag UV-hærdet acrylat-urethan-lak. Soft-touch super matt finish.",
       "layer2": "MDF-kerne",
-      "layer2Desc": "700 kg/m³ FSC® certified MDF. Available in standard, moisture-resistant (MR) and fire-retardant (FR) grades.",
+      "layer2Desc": "700 kg/m³ FSC®-certificeret MDF. Fås i standard, fugtbestandig (MR) og brandhæmmende (FR) kvalitet.",
       "layer3": "Balancefiner",
       "layer3Desc": "Tilpasset finér-bagside sikrer dimensionel stabilitet og forhindrer skævhed. Færdige eller ubehandlede muligheder.",
       "keyAdvTitle": "Overfladefordele",
@@ -2670,7 +2670,7 @@
       "tag": "FLEKSIBLE AKUSTIKPANELER",
       "title": "rPET Flex Groove: fleksible PET-akustikpaneler til buede flader",
       "tagline": "Bøj uden at bryde",
-      "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt seamlessly to columns, curved walls, and any architectural form with a minimum radius of 500mm.",
+      "description": "Den ultimative akustiske løsning til buede flader. Fremstillet af genanvendt PET-filt med præcise V-fræsede riller tilpasser disse fleksible paneler sig problemfrit til søjler, buede vægge og enhver arkitektonisk form med en minimumsradius på 500 mm.",
       "usp1": "Min. radius 500mm",
       "usp2": "Brandfortardende",
       "usp3": "100% genanvendt PET",
@@ -2681,24 +2681,24 @@
     "overview": {
       "tag": "INNOVATION",
       "title": "Designet til buede overflader",
-      "description": "Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and outer radii, their flexible structure allows for seamless transitions along walls, columns, and other rounded architectural elements.",
+      "description": "Flex-Groove-paneler er en alsidig akustisk løsning til buede flader, der ubesværet tilpasser sig enhver form. De egner sig til både indvendige og udvendige radier, og deres fleksible struktur giver usynlige overgange langs vægge, søjler og andre afrundede arkitektoniske elementer.",
       "feature1": "Tilpasser sig enhver buet overflade",
-      "feature2": "Works with inner and outer radii",
-      "feature3": "Ribbed texture adds depth and rhythm",
-      "feature4": "Sound-dampening properties built-in",
+      "feature2": "Fungerer med indvendige og udvendige radier",
+      "feature3": "Riflet struktur tilføjer dybde og rytme",
+      "feature4": "Indbyggede lyddæmpende egenskaber",
       "description2": ""
     },
     "technology": {
       "tag": "TEKNOLOGI",
       "title": "V-Cut Fleksibilitetssystem",
-      "description": "Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — a series of linear grooves that enable flexibility while giving the surface a sculptural relief.",
+      "description": "Hvert panel er forsynet med præcise V-snit, så det kan bøjes uden at knække. Dette smarte snit skaber den karakteristiske riflede struktur – en række lineære riller, der giver fleksibilitet og samtidig giver overfladen et skulpturelt relief.",
       "minRadius": "Minimum bøjeradius",
       "feature1Title": "Præcisions-V-skæring",
-      "feature1Desc": "Engineered grooves for controlled flexibility",
+      "feature1Desc": "Konstruerede riller for kontrolleret fleksibilitet",
       "feature2Title": "Sømløse kurver",
-      "feature2Desc": "Smooth transitions on any curved surface",
+      "feature2Desc": "Glidende overgange på enhver buet flade",
       "feature3Title": "Minimalt affald",
-      "feature3Desc": "Efficient design reduces cutting waste",
+      "feature3Desc": "Effektivt design reducerer skærespild",
       "flatPanel": "Flad plade",
       "curvedApp": "Buet anvendelse",
       "description2": ""
@@ -2706,20 +2706,20 @@
     "colors": {
       "tag": "RAFFINERET KOLLEKTION",
       "title": "12 kuraterede farver",
-      "description": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance.",
+      "description": "Vores omhyggeligt sammensatte farvepalet giver alsidige muligheder til ethvert interiør. Fra bløde neutrale toner til markante statementfarver er hver nuance designet til at komplementere moderne arkitektoniske rum og samtidig levere fremragende akustisk ydeevne.",
       "grooveDir": "Rilleretning",
       "description2": ""
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
+      "tag": "YDEEVNE",
       "title": "Lyddæmpende egenskaber",
-      "description": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide effective sound absorption while maintaining visual continuity across curved surfaces. The grooved texture enhances acoustic performance.",
+      "description": "Flex-Groove-paneler er fremstillet af brandhæmmende genanvendt PET-filt og giver effektiv lydabsorption, samtidig med at den visuelle kontinuitet bevares hen over buede flader. Den riflede struktur forbedrer den akustiske ydeevne.",
       "feature1Title": "Lyddæmpning",
-      "feature1Desc": "Reduces echo and reverberation",
+      "feature1Desc": "Reducerer ekko og efterklang",
       "feature2Title": "Brandfortardende",
-      "feature2Desc": "Built-in fire safety properties",
-      "feature3Title": "100% Recycled",
-      "feature3Desc": "Made from recycled plastic bottles",
+      "feature2Desc": "Indbyggede brandsikre egenskaber",
+      "feature3Title": "100 % genanvendt",
+      "feature3Desc": "Fremstillet af genanvendte plastflasker",
       "layer1Label": "Genbrugt PET-filt",
       "layer2Label": "Præcisions-V-skæringer",
       "thicknessLabel": "Tykkelse",
@@ -2728,26 +2728,26 @@
     },
     "installation": {
       "tag": "NEM INSTALLATION",
-      "title": "Secure Mounting, Simple Installation",
-      "description": "Designed to span standard floor-to-ceiling heights, the panels simplify alignment and reduce installation time. The adaptable form makes them a practical solution for interiors requiring both sound absorption and design flexibility.",
+      "title": "Sikker fastgørelse, enkel montering",
+      "description": "Panelerne er designet til at dække standardhøjder fra gulv til loft, hvilket forenkler opretningen og reducerer monteringstiden. Den tilpasningsdygtige form gør dem til en praktisk løsning til interiører, der kræver både lydabsorption og designfleksibilitet.",
       "step1Title": "Forbered overflade",
-      "step1Desc": "Ensure the curved surface is clean and ready for mounting",
+      "step1Desc": "Sørg for, at den buede flade er ren og klar til montering",
       "step2Title": "Påfør lim",
-      "step2Desc": "Use recommended adhesive on the panel back",
+      "step2Desc": "Påfør den anbefalede lim på panelets bagside",
       "step3Title": "Placér og bøj",
-      "step3Desc": "Gently bend the panel to follow the curved surface",
+      "step3Desc": "Bøj forsigtigt panelet, så det følger den buede flade",
       "step4Title": "Sikr og afslut",
-      "step4Desc": "Press firmly to ensure full adhesion along the curve",
+      "step4Desc": "Tryk fast for at sikre fuld vedhæftning langs kurven",
       "description2": ""
     },
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
       "title": "Fra flasker til smukke rum",
-      "description": "Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensures that these panels can be recycled again at the end of their lifecycle.",
+      "description": "Hvert Flex-Groove-panel er fremstillet af 100 % genanvendte PET-plastflasker og giver nyt liv til affaldsmaterialer. Vores cirkulære tilgang sikrer, at panelerne kan genanvendes igen ved slutningen af deres livscyklus.",
       "badge1": "Genbrugt PET",
-      "badge1Desc": "Made from recycled plastic bottles",
+      "badge1Desc": "Fremstillet af genanvendte plastflasker",
       "badge2": "Fuldt genanvendelig",
-      "badge2Desc": "Can be recycled at end of life",
+      "badge2Desc": "Kan genanvendes ved endt levetid",
       "badge3": "Lavet i Polen",
       "badge4": "Lavt VOC",
       "badge3Desc": "Kort forsyningskæde fra vores polske facilitet",
@@ -2755,10 +2755,10 @@
       "description2": ""
     },
     "specs": {
-      "tag": "TECHNICAL",
+      "tag": "TEKNISK",
       "title": "Specifikationer",
       "dimensionsTitle": "Dimensioner",
-      "flexibilityTitle": "Flexibility",
+      "flexibilityTitle": "Fleksibilitet",
       "materialTitle": "Materiale",
       "fireTitle": "Brandsikkerhed",
       "certsTitle": "Certificeringer",
@@ -2767,14 +2767,14 @@
       "dimPanelWidth": "Panelbredde",
       "dimThickness": "Tykkelse",
       "dimWeight": "Vægt",
-      "dimDensity": "Density",
+      "dimDensity": "Densitet",
       "flexMinRadius": "Minimumradius",
       "flexBendDir": "Bøjeretning",
       "flexBendDirVal": "Indre og ydre radier",
       "flexCutType": "Skæretype",
       "flexCutTypeVal": "Præcisions-V-skæring",
       "matComposition": "Sammensætning",
-      "matCompositionVal": "FR PET Felt",
+      "matCompositionVal": "Brandhæmmende PET-filt",
       "matRecycled": "Genanvendt indhold",
       "matFireRetardant": "Brandhæmmende",
       "matFireRetardantVal": "Ja (indbygget)",
@@ -2783,19 +2783,19 @@
       "fireRating": "Brandklasse",
       "fireSmokeProduction": "Røgproduktion",
       "fireFlamingDroplets": "Brændende dråber",
-      "fireFlamingDropletsVal": "d0 (none)",
+      "fireFlamingDropletsVal": "d0 (ingen)",
       "certMaterial": "Materiale",
-      "certVOC": "VOC emissions",
+      "certVOC": "VOC-emissioner",
       "certVOCVal": "Lav emission",
       "certRecycled": "Genanvendt indhold",
       "certRecycledVal": "100% verificeret",
-      "appSurfaces": "Surfaces",
-      "appSurfacesVal": "Walls, columns, curved elements",
+      "appSurfaces": "Overflader",
+      "appSurfacesVal": "Vægge, søjler, buede elementer",
       "appEnvironment": "Miljø",
       "appEnvironmentVal": "Indendørs (tørre områder)",
-      "appInstallation": "Installation",
+      "appInstallation": "Montering",
       "appInstallationVal": "Limmontering",
-      "appOrientation": "Orientation",
+      "appOrientation": "Orientering",
       "appOrientationVal": "Langs / på tværs"
     },
     "gallery": {
@@ -2803,33 +2803,33 @@
       "title": "Projekter og Anvendelser"
     },
     "downloads": {
-      "tag": "RESOURCES",
+      "tag": "RESSOURCER",
       "title": "Downloads",
-      "perforationGuide": "Flex-Groove Guide"
+      "perforationGuide": "Flex-Groove-guide"
     },
     "applications": {
       "tag": "IDEEL TIL",
       "title": "Perfekte anvendelser",
-      "description": "Wherever curves meet acoustics",
-      "app1": "Columns",
+      "description": "Hvor kurver møder akustik",
+      "app1": "Søjler",
       "app2": "Buede vægge",
-      "app3": "Archways",
+      "app3": "Buegange",
       "app4": "Receptionsområder",
       "sectionTitle": "Perfekte anvendelser",
-      "sectionDesc": "Wherever curves meet acoustics",
-      "app1Desc": "Wrap structural columns with seamless acoustic coverage",
-      "app2Desc": "Follow organic wall shapes for continuous coverage",
-      "app3Desc": "Line curved openings and architectural features",
-      "app4Desc": "Create striking curved feature walls",
+      "sectionDesc": "Hvor kurver møder akustik",
+      "app1Desc": "Beklæd bærende søjler med sømløs akustisk dækning",
+      "app2Desc": "Følg organiske vægformer for kontinuerlig dækning",
+      "app3Desc": "Beklæd buede åbninger og arkitektoniske detaljer",
+      "app4Desc": "Skab markante buede accentvægge",
       "description2": ""
     },
     "cta": {
       "title": "Klar til at kurve din akustik?",
-      "description": "Get a personalized quote for your project. Our team will help you choose the perfect flex solution.",
-      "description2": "Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements."
+      "description": "Få et personligt tilbud på dit projekt. Vores team hjælper dig med at vælge den perfekte fleksible løsning.",
+      "description2": "Få et personligt tilbud på dit projekt. Vores team hjælper dig med at vælge den perfekte farve og beregne dit behov."
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+      "freeNote": "Gratis prøver tilgængelige • Fremstillet i Polen • 100 % genanvendt"
     },
     "faq": {
       "questions": {
@@ -3205,7 +3205,7 @@
   "duoPage": {
     "hero": {
       "tag": "TELEFONBOKS TIL KONTORET · 2 PERSONER",
-      "title": "Duo: telefonboksen og fokusboksen til to personer",
+      "title": "Duo: kontortelefonboksen og fokusboksen til to personer",
       "tagline": "Én skal. To helt forskellige rum.",
       "description": "Duo er én enkelt bås, der virkelig forpligter sig til to anvendelser. Flex-konfigurationen placerer et lille elektrisk skrivebord centralt — to personer, ansigt til ansigt, til et fokuseret møde. Work-konfigurationen installerer et skrivebord i fuld bredde langs en væg — én person, tre skærme, en rigtig arbejdsplads. Du vælger ved bestilling, hvilken der passer til din etage.",
       "statFootprint": "Fodaftryk",
@@ -3419,7 +3419,7 @@
       },
       "scenario3": {
         "size": "BASIS + 2",
-        "title": "All-hands",
+        "title": "Fællesmøde",
         "description": "Ti personer, to udvidelsessegmenter. Hesteskoopstilling omkring en skærm. Den største konfiguration; overvej en fast placering ved denne størrelse."
       }
     },
@@ -4072,7 +4072,8 @@
       "country": "Land",
       "message": "Yderligere bemærkninger",
       "messagePlaceholder": "F.eks. Jeg er arkitekt og projekterer et kontor på 200 m²...",
-      "optional": "(valgfrit)"
+      "optional": "(valgfrit)",
+      "phonePlaceholder": "+32 ..."
     },
     "countries": {
       "belgium": "Belgien",

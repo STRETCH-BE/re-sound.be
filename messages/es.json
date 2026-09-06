@@ -4072,7 +4072,8 @@
       "country": "País",
       "message": "Comentarios adicionales",
       "messagePlaceholder": "P. ej.: Soy arquitecto y estoy especificando una oficina de 200 m²...",
-      "optional": "(opcional)"
+      "optional": "(opcional)",
+      "phonePlaceholder": "+32 ..."
     },
     "countries": {
       "belgium": "Bélgica",

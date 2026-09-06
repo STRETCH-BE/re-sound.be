@@ -11,19 +11,19 @@ import { PRODUCTS } from '@/data/products';
 // `image` maps each color to an existing swatch photo under
 // public/images/products/rpet-panel/ (null = keep the default hero).
 const colorOptions = [
-  { id: 'midnight', name: 'Midnight', color: '#1a1a1a', hex: '#1a1a1a', isDark: true, description: 'Deep black, reminiscent of a moonlit sky', image: '/images/products/rpet-panel/rPET-Black.jpg' },
-  { id: 'titan', name: 'Titan', color: '#4a4a4a', hex: '#4a4a4a', isDark: true, description: 'Characteristic dark gray, like steel', image: '/images/products/rpet-panel/rPET-Anthraciet.jpg' },
-  { id: 'silver', name: 'Silver', color: '#808080', hex: '#808080', isDark: false, description: 'Modern industrial elegance', image: '/images/products/rpet-panel/rPET-DarkGrey.jpg' },
-  { id: 'marble', name: 'Marble', color: '#b0b0b0', hex: '#b0b0b0', isDark: false, description: 'Minimalist light gray aesthetic', image: '/images/products/rpet-panel/rPET-LightGrey.jpg' },
-  { id: 'frost', name: 'Frost', color: '#e8e8e8', hex: '#e8e8e8', isDark: false, description: 'Pure white simplicity', image: '/images/products/rpet-panel/rPET-White.jpg' },
-  { id: 'custom', name: 'Custom RAL/NCS', color: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #ffeaa7 100%)', hex: '#rainbow', isDark: false, description: 'Any color from RAL or NCS palette', image: null },
+  { id: 'midnight', name: 'Midnight', color: '#1a1a1a', hex: '#1a1a1a', isDark: true, descriptionKey: 'options.midnightDesc', image: '/images/products/rpet-panel/rPET-Black.jpg' },
+  { id: 'titan', name: 'Titan', color: '#4a4a4a', hex: '#4a4a4a', isDark: true, descriptionKey: 'options.titanDesc', image: '/images/products/rpet-panel/rPET-Anthraciet.jpg' },
+  { id: 'silver', name: 'Silver', color: '#808080', hex: '#808080', isDark: false, descriptionKey: 'options.silverDesc', image: '/images/products/rpet-panel/rPET-DarkGrey.jpg' },
+  { id: 'marble', name: 'Marble', color: '#b0b0b0', hex: '#b0b0b0', isDark: false, descriptionKey: 'options.marbleDesc', image: '/images/products/rpet-panel/rPET-LightGrey.jpg' },
+  { id: 'frost', name: 'Frost', color: '#e8e8e8', hex: '#e8e8e8', isDark: false, descriptionKey: 'options.frostDesc', image: '/images/products/rpet-panel/rPET-White.jpg' },
+  { id: 'custom', name: 'Custom RAL/NCS', color: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #ffeaa7 100%)', hex: '#rainbow', isDark: false, descriptionKey: 'options.customDesc', image: null },
 ];
 
 // Thickness options
 const thicknessOptions = [
-  { id: '12mm', value: 12, name: '12mm', weight: '3 kg/m²', description: 'Lightweight solution' },
-  { id: '18mm', value: 18, name: '18mm', weight: '3.5 kg/m²', description: 'Balanced performance' },
-  { id: '24mm', value: 24, name: '24mm', weight: '4 kg/m²', description: 'Maximum absorption' },
+  { id: '12mm', value: 12, name: '12mm', weight: '3 kg/m²', descriptionKey: 'options.12mmDesc' },
+  { id: '18mm', value: 18, name: '18mm', weight: '3.5 kg/m²', descriptionKey: 'options.18mmDesc' },
+  { id: '24mm', value: 24, name: '24mm', weight: '4 kg/m²', descriptionKey: 'options.24mmDesc' },
 ];
 
 // Default hero image
@@ -337,7 +337,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               </div>
               <div className="color-info">
                 <h4>{color.name}</h4>
-                <p>{color.description}</p>
+                <p>{t(color.descriptionKey)}</p>
               </div>
             </div>
           ))}
@@ -506,12 +506,12 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
                 </svg>
                 <div className="rating-content">
                   <span className="rating-value">αw 0.95</span>
-                  <span className="rating-label">Maximum</span>
+                  <span className="rating-label">{t('options.maximumLabel')}</span>
                 </div>
               </div>
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
-                <span className="badge-text">Class A</span>
+                <span className="badge-text">{tPage('classA')}</span>
               </div>
             </div>
 

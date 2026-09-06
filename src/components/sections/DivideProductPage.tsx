@@ -444,7 +444,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
           <div className="absorption-rating">
             <div className="rating-circle">
               <span className="rating-value">αw 0.85</span>
-              <span className="rating-label">Per side</span>
+              <span className="rating-label">{t('options.perSide')}</span>
             </div>
             <p>{t('acoustics.extraBenefit')}</p>
           </div>

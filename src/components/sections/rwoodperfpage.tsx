@@ -26,10 +26,10 @@ const coreColourOptions = [
 
 // Perforation pattern options (replaces lamella variants)
 const perforationOptions = [
-  { id: 'pd8', name: 'PD8', detail: '⌀8 mm · 24% open', description: 'Maximum absorption, large open area', acousticClass: 'B', aw: '0.85', dotCount: 16, gridCols: 4, dotSize: 10 },
-  { id: 'ph10', name: 'PH10', detail: '⌀10 mm · 18% open', description: 'High absorption, bold perforations', acousticClass: 'C', aw: '0.75', dotCount: 9, gridCols: 3, dotSize: 12 },
-  { id: 'ph8', name: 'PH8', detail: '⌀8 mm · 12% open', description: 'Balanced look and performance', acousticClass: 'D', aw: '0.55', dotCount: 25, gridCols: 5, dotSize: 7 },
-  { id: 'ph5', name: 'PH5', detail: '⌀5 mm · 5% open', description: 'Discreet pattern, subtle surface', acousticClass: 'D', aw: '0.35', dotCount: 36, gridCols: 6, dotSize: 5 },
+  { id: 'pd8', name: 'PD8', detail: '⌀8 mm · 24% open', descriptionKey: 'options.pd8Desc', acousticClass: 'B', aw: '0.85', dotCount: 16, gridCols: 4, dotSize: 10 },
+  { id: 'ph10', name: 'PH10', detail: '⌀10 mm · 18% open', descriptionKey: 'options.ph10Desc', acousticClass: 'C', aw: '0.75', dotCount: 9, gridCols: 3, dotSize: 12 },
+  { id: 'ph8', name: 'PH8', detail: '⌀8 mm · 12% open', descriptionKey: 'options.ph8Desc', acousticClass: 'D', aw: '0.55', dotCount: 25, gridCols: 5, dotSize: 7 },
+  { id: 'ph5', name: 'PH5', detail: '⌀5 mm · 5% open', descriptionKey: 'options.ph5Desc', acousticClass: 'D', aw: '0.35', dotCount: 36, gridCols: 6, dotSize: 5 },
 ];
 
 // Default hero image
@@ -296,7 +296,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
               <div className="variant-info">
                 <h3>{perf.name}</h3>
                 <span className="lamella-count">{perf.detail}</span>
-                <p>{perf.description}</p>
+                <p>{t(perf.descriptionKey)}</p>
                 <span className="lamella-width">αw {perf.aw} · Class {perf.acousticClass}</span>
               </div>
             </div>

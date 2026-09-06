@@ -4072,7 +4072,8 @@
       "country": "Land",
       "message": "Zusätzliche Anmerkungen",
       "messagePlaceholder": "Z. B. Ich bin Architekt und plane ein 200 m² großes Büro ...",
-      "optional": "(optional)"
+      "optional": "(optional)",
+      "phonePlaceholder": "+32 ..."
     },
     "countries": {
       "belgium": "Belgien",

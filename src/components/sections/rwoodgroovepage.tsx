@@ -23,10 +23,10 @@ const feltOptions = [
 
 // Panel variant options
 const variantOptions = [
-  { id: 'original', name: 'Original', lamellas: 6, lamellaWidth: '34mm', description: 'Classic 6-lamella design' },
-  { id: 'mixed', name: 'Mixed', lamellas: 6, lamellaWidth: '50/30/22mm', description: 'Dynamic mixed widths' },
-  { id: '4-lamella', name: '4-Lamella', lamellas: 4, lamellaWidth: '59mm', description: 'Bold wide strips' },
-  { id: '3-lamella', name: '3-Lamella', lamellas: 3, lamellaWidth: '84mm', description: 'Statement wide panels' },
+  { id: 'original', name: 'Original', lamellas: 6, lamellaWidth: '34mm', descriptionKey: 'options.originalDesc' },
+  { id: 'mixed', name: 'Mixed', lamellas: 6, lamellaWidth: '50/30/22mm', descriptionKey: 'options.mixedDesc' },
+  { id: '4-lamella', name: '4-Lamella', lamellas: 4, lamellaWidth: '59mm', descriptionKey: 'options.4lamellaDesc' },
+  { id: '3-lamella', name: '3-Lamella', lamellas: 3, lamellaWidth: '84mm', descriptionKey: 'options.3lamellaDesc' },
 ];
 
 // Default hero image (shown before any swatch is selected)
@@ -278,7 +278,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
               <div className="variant-info">
                 <h4>{variant.name}</h4>
                 <span className="lamella-count">{variant.lamellas} Lamellas</span>
-                <p>{variant.description}</p>
+                <p>{t(variant.descriptionKey)}</p>
                 <span className="lamella-width">Width: {variant.lamellaWidth}</span>
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
               </div>
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
-                <span className="badge-text">Class A</span>
+                <span className="badge-text">{tPage('classA')}</span>
               </div>
             </div>
 

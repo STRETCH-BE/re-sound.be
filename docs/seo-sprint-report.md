@@ -21,7 +21,11 @@ Commits, in order (one per task, prefixed as requested):
 | `ddd0a95` | 5 | i18n: move spec-table literals, hero pills and honeypot labels into messages |
 | `cc2823e` | 5 | i18n: complete es/pt, replace Spanish in pt, translate Nordic homepage and hub strings |
 | `4ff19be` | 7/0 | seo: link only existing product documents; fix the check's Spanish detector |
-| (last commit) | 9 | seo: after-sprint check, Lighthouse and this report |
+| `1436ce9` | 9 | seo: after-sprint check, Lighthouse and this report |
+| `453290a` | 5b | i18n: move image alt texts and assistive labels into message keys |
+| `a323a74` | 5b | i18n: make the sample-kit modal translatable |
+| `6e47f3b` | 5b | i18n: translate image alts, assistive labels and the sample-kit modal into all locales |
+| (last commit) | 5b | i18n: complete da/sv/no/is (all namespaces), updated check and report |
 
 ## Before / after
 
@@ -52,7 +56,7 @@ crawls every locale page of a local production build):
 | Forbidden strings | 47 pages | none |
 | English segments, indexable pages: es / pt | 15.8 % / 15.4 % | 0.2 % / 0.2 % |
 | English segments: nl / fr / de | 5.1 % / 6.0 % / 7.3 % | 0.3 % / 0.3 % / 0.3 % |
-| English segments: da / sv / no / is | 14.6 / 11.6 / 11.6 / 14.2 % | 5.0 / 4.9 / 5.0 / 6.5 % |
+| English segments: da / sv / no / is | 14.6 / 11.6 / 11.6 / 14.2 % | 0.2 / 0.2 / 0.3 / 0.2 % |
 | Spanish text on /pt pages | yes (homepage and more) | none |
 | Products with JSON-LD `offers` | 1 of 13 (Interior only) | 13 of 13 (130 Product nodes across 10 locales, all with an Offer) |
 | Sitemap URLs / locales / distinct lastmod | 280 / 10 / 1 | 192 / 6 / 10 |
@@ -194,10 +198,18 @@ locales received these strings through the Task 5 translation pass.
 - Product/brand names, standards, codes and unit strings that are the same
   in every language were deliberately left identical (≈25–33 four-word-plus
   keys per locale, e.g. "ISO 354 / ASTM C423", "600 / 1200 / 2400 mm").
+- Follow-up (5b, after Michael asked for 100 % local language in the Nordic
+  locales): a second pass translated every remaining English key in
+  da/sv/no/is across all namespaces (2,474 keys: product pages, blog
+  posts, sustainability, about, FAQ, partner, where-to-buy, lead modal,
+  cookies…). Only product names, codes, standards and units stay English.
+- Also in 5b, for every locale: the 45 image alt texts, gallery alt
+  patterns, colour/finish/veneer selector labels, nav/breadcrumb/FAQ
+  assistive labels and the whole sample-kit modal (46 strings) were
+  hard-coded English and now come from messages (999 translated keys).
 - Not translated: the privacy and terms pages (hardcoded legal text,
   noindex) — legal texts need Michael's approved translations, see the
-  needs-Michael list; and the product-specific namespaces of the Nordic
-  locales (they stay noindex).
+  needs-Michael list.
 
 ## Task 6 — range hub pages
 
@@ -317,12 +329,27 @@ Other decisions for Michael (raised by the translators while working):
   Group".
 - Blog "min read" and dates were hard-coded in English on every locale;
   now localised (`blog.minRead`, locale-aware date formatting).
+- rWood Perf copy says "B2-s1, d0" (hero USP and overview feature) — not a
+  valid EN 13501-1 class; the rest of the page says B-s1,d0.
+- rWood Perf "layer 2" density reads "0.45 kg/m³" — almost certainly
+  450 kg/m³.
+- rWood Perf and rWood Micro mention a "fibre gypsum core" in one
+  sentence while every other string on those pages describes a
+  fire-retardant MDF core.
+- rWood Micro spec table: the acoustics card title duplicates the
+  dimensions title in the English source.
+- Sustainability page says free pickup in Belgium & the Netherlands only,
+  while the homepage meta and FAQ promise a general free take-back.
+- Sample-kit form: the country list offers BE/NL/LU/FR/DE + Other (no
+  Nordic countries) and the example placeholders are Belgian (Marie
+  Dupont, Antwerpsesteenweg 42, Gent) in every locale.
 
 ## Not completed / caveats
 
 - LCP < 2.5 s in simulated Lighthouse: not reached (see Before / after).
-- Nordic locales: homepage, navigation, hubs and product-page chrome are
-  translated; product-specific copy stays English while they are noindex.
+- Nordic locales are now fully translated but still noindex and outside
+  the sitemap/hreflang: enabling them is one edit to SEO_LOCALES in
+  src/i18n/config.ts (left for Michael to decide).
 - Privacy/terms not translated (legal).
 - Titles over 65 characters remain on the blog posts in every locale (the
   post headlines plus " | Re-Sound", 66–82 characters) and on the titles
@@ -330,8 +357,6 @@ Other decisions for Michael (raised by the translators while working):
   call, not a mechanical one.
 - The check reports 116 "hreflang set has no self-reference" warnings on
   the Nordic pages: expected while those locales sit outside SEO_LOCALES.
-- Nordic locales still carry 5–6.5 % English overall (sustainability, blog,
-  about and the product-specific namespaces); they stay noindex.
 - The 60 missing PDFs are not linked anywhere until they are supplied; the
   Downloads block shows only files that exist.
 - Vercel builds run `git log` for sitemap lastmod; on a shallow clone the

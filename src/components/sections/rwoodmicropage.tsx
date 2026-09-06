@@ -20,16 +20,16 @@ const woodFinishOptions = [
 
 // Surface finish options
 const surfaceFinishOptions = [
-  { id: 'veneer', name: 'woodVeneer', description: 'Natural A-grade veneer' },
-  { id: 'hpl', name: 'hplLaminate', description: 'High-pressure laminate' },
+  { id: 'veneer', name: 'woodVeneer', descriptionKey: 'options.veneerDesc' },
+  { id: 'hpl', name: 'hplLaminate', descriptionKey: 'options.hplDesc' },
 ];
 
 // Perforation pattern options
 const perforationOptions = [
-  { id: 'nano', name: 'Nano', holeSize: '0.5mm', openArea: '2.5%', description: 'Virtually invisible perforations', visual: 'nano' },
-  { id: 'micro-s', name: 'Micro S', holeSize: '1.0mm', openArea: '5.2%', description: 'Subtle micro-perforations', visual: 'micro-s' },
-  { id: 'micro-m', name: 'Micro M', holeSize: '1.5mm', openArea: '8.4%', description: 'Balanced perforation pattern', visual: 'micro-m' },
-  { id: 'micro-l', name: 'Micro L', holeSize: '2.0mm', openArea: '10.6%', description: 'Maximum absorption pattern', visual: 'micro-l' },
+  { id: 'nano', name: 'Nano', holeSize: '0.5mm', openArea: '2.5%', descriptionKey: 'options.nanoDesc', visual: 'nano' },
+  { id: 'micro-s', name: 'Micro S', holeSize: '1.0mm', openArea: '5.2%', descriptionKey: 'options.microsDesc', visual: 'micro-s' },
+  { id: 'micro-m', name: 'Micro M', holeSize: '1.5mm', openArea: '8.4%', descriptionKey: 'options.micromDesc', visual: 'micro-m' },
+  { id: 'micro-l', name: 'Micro L', holeSize: '2.0mm', openArea: '10.6%', descriptionKey: 'options.microlDesc', visual: 'micro-l' },
 ];
 
 // Default hero image (optimised WebP of the same 1334×761 picture as rWood-Micro_hero.jpg)
@@ -312,7 +312,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
               <div className="perforation-info">
                 <h4>{perf.name}</h4>
                 <span className="perf-hole-size">⌀ {perf.holeSize}</span>
-                <p>{perf.description}</p>
+                <p>{t(perf.descriptionKey)}</p>
                 <span className="perf-open-area">Open area: {perf.openArea}</span>
               </div>
             </div>
@@ -357,14 +357,14 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
               </div>
               <div className="detail-stat">
                 <span className="stat-value">{selectedPerforation.openArea}</span>
-                <span className="stat-label">Open area</span>
+                <span className="stat-label">{t('options.openAreaLabel')}</span>
               </div>
               <div className="detail-stat">
-                <span className="stat-value">Class A</span>
-                <span className="stat-label">Absorption</span>
+                <span className="stat-value">{tPage('classA')}</span>
+                <span className="stat-label">{t('options.absorptionLabel')}</span>
               </div>
             </div>
-            <p className="detail-desc">{selectedPerforation.description}. {selectedPerforation.id === 'nano' ? 'The smallest perforation available—completely invisible to the naked eye, creating a flawless wood surface.' : selectedPerforation.id === 'micro-s' ? 'Barely visible micro-holes that maintain a clean, uninterrupted surface appearance.' : selectedPerforation.id === 'micro-m' ? 'An optimal balance between visual discretion and acoustic efficiency for most applications.' : 'The highest open area for maximum sound absorption in acoustically demanding spaces.'}</p>
+            <p className="detail-desc">{t(selectedPerforation.descriptionKey)}. {t(`options.${selectedPerforation.id.replace('-', '')}Detail`)}</p>
           </div>
         </div>
       </section>
@@ -402,7 +402,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                     <span className="surface-icon">{surface.id === 'veneer' ? '🪵' : '◻️'}</span>
                     <div className="surface-text">
                       <span className="surface-name">{surface.name}</span>
-                      <span className="surface-desc">{surface.description}</span>
+                      <span className="surface-desc">{t(surface.descriptionKey)}</span>
                     </div>
                   </button>
                 ))}
@@ -467,7 +467,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                 </div>
                 <div className="layer-info">
                   <span className="layer-name">{t('surfaces.woodVeneer')} + Micro-Perforations</span>
-                  <span className="layer-desc">A-grade veneer with precision-drilled holes</span>
+                  <span className="layer-desc">{t('options.veneerDrilled')}</span>
                 </div>
               </div>
               
@@ -537,7 +537,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
               </div>
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
-                <span className="badge-text">Class A</span>
+                <span className="badge-text">{tPage('classA')}</span>
               </div>
             </div>
 
@@ -558,7 +558,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                 <div className="metric-label">{t('acoustics.testStandard')}</div>
               </div>
               <div className="metric-card">
-                <div className="metric-value">Thinner</div>
+                <div className="metric-value">{t('options.thinnerLabel')}</div>
                 <div className="metric-label">{t('acoustics.wallBuildUp')}</div>
               </div>
             </div>
