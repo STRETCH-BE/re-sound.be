@@ -723,7 +723,8 @@
     "manageCookies": "Gestionar cookies",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "countryBelgium": "Bélgica"
+    "countryBelgium": "Bélgica",
+    "reviewUs": "Déjenos una reseña en Google"
   },
   "cookies": {
     "title": "Preferencias de cookies",
@@ -4175,5 +4176,12 @@
       "body": "Prepararemos su kit de muestras y lo enviaremos a <strong>{city}</strong> en un plazo de 3–5 días laborables. Revise su bandeja de entrada para ver la confirmación.",
       "close": "Cerrar"
     }
+  },
+  "testimonials": {
+    "tag": "Reseñas",
+    "title": "Lo que dicen nuestros clientes",
+    "googleReviews": "{count, plural, one {# reseña de Google} other {# reseñas de Google}}",
+    "viaGoogle": "vía Google",
+    "reviewUs": "Déjenos una reseña en Google"
   }
 }

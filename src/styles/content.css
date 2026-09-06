@@ -349,3 +349,104 @@
 }
 
 /* Production office block (where-to-buy) */
+.tm-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.tm-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tm-inner h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.tm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background: var(--cream, #f6f3ee);
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0 0 2rem;
+}
+
+.tm-badge strong {
+  font-size: 1.15rem;
+}
+
+.tm-stars {
+  color: #f5a623;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.tm-stars-off {
+  color: #ddd;
+}
+
+.tm-grid {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.tm-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--cream, #f6f3ee);
+}
+
+.tm-card blockquote {
+  margin: 0.75rem 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.tm-card footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.tm-author {
+  font-weight: 600;
+}
+
+.tm-meta {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.tm-rows {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.tm-cta a {
+  color: var(--brand-blue, #197fc7);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tm-cta a:hover {
+  text-decoration: underline;
+}

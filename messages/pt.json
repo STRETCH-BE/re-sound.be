@@ -723,7 +723,8 @@
     "manageCookies": "Gerir cookies",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "countryBelgium": "Bélgica"
+    "countryBelgium": "Bélgica",
+    "reviewUs": "Avalie-nos no Google"
   },
   "cookies": {
     "title": "Preferências de cookies",
@@ -4175,5 +4176,12 @@
       "body": "Vamos preparar o seu kit de amostras e enviá-lo para <strong>{city}</strong> no prazo de 3–5 dias úteis. Verifique a sua caixa de entrada para receber a confirmação.",
       "close": "Fechar"
     }
+  },
+  "testimonials": {
+    "tag": "Avaliações",
+    "title": "O que dizem os clientes",
+    "googleReviews": "{count, plural, one {# avaliação Google} other {# avaliações Google}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Avalie-nos no Google"
   }
 }

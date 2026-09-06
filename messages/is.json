@@ -723,7 +723,8 @@
     "manageCookies": "Stjórna vafrakökum",
     "privacy": "Persónuverndarstefna",
     "terms": "Þjónustuskilmálar",
-    "countryBelgium": "Belgía"
+    "countryBelgium": "Belgía",
+    "reviewUs": "Skrifaðu Google-umsögn um okkur"
   },
   "cookies": {
     "title": "Vafrakökustillingar",
@@ -4175,5 +4176,12 @@
       "body": "Við útbúum sýnishornapakkann og sendum hann til <strong>{city}</strong> innan 3–5 virkra daga. Athugið pósthólfið fyrir staðfestingu.",
       "close": "Loka"
     }
+  },
+  "testimonials": {
+    "tag": "Umsagnir",
+    "title": "Hvað viðskiptavinir segja",
+    "googleReviews": "{count, plural, one {# Google-umsögn} other {# Google-umsagnir}}",
+    "viaGoogle": "í gegnum Google",
+    "reviewUs": "Skrifaðu Google-umsögn um okkur"
   }
 }

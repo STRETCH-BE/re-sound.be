@@ -723,7 +723,8 @@
     "manageCookies": "Cookies verwalten",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "countryBelgium": "Belgien"
+    "countryBelgium": "Belgien",
+    "reviewUs": "Bewerten Sie uns auf Google"
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
@@ -4175,5 +4176,12 @@
       "body": "Wir stellen Ihr Muster-Kit zusammen und versenden es innerhalb von 3–5 Werktagen nach <strong>{city}</strong>. Eine Bestätigung finden Sie in Ihrem Posteingang.",
       "close": "Schließen"
     }
+  },
+  "testimonials": {
+    "tag": "Bewertungen",
+    "title": "Das sagen unsere Kunden",
+    "googleReviews": "{count, plural, one {# Google-Bewertung} other {# Google-Bewertungen}}",
+    "viaGoogle": "über Google",
+    "reviewUs": "Bewerten Sie uns auf Google"
   }
 }

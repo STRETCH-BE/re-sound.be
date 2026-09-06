@@ -12,6 +12,7 @@ import WhyCards from '@/components/sections/WhyCards';
 import DualCTA from '@/components/sections/DualCTA';
 
 import JsonLd from '@/components/seo/JsonLd';
+import Testimonials from '@/components/testimonials/Testimonials';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { localBusinessSchema, organizationSchema, websiteSchema } from '@/lib/structured-data';
 
@@ -95,6 +96,7 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
       <WhyCards />
 
       {/* Split image CTA: samples left / quote right */}
+      <Testimonials locale={locale} />
       <DualCTA />
     </NextIntlClientProvider>
   );

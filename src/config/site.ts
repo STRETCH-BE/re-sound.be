@@ -71,6 +71,19 @@ export const SHOWROOM = {
   priceRange: '€€',
 } as const;
 
+/**
+ * Google Business Profile listing (workbook Testimonials). The place id is
+ * unknown until scripts/fetch-google-reviews.mjs has run with an API key —
+ * TODO(needs-Michael): confirm the place id so the write-review link can use
+ * https://search.google.com/local/writereview?placeid=…; until then the
+ * footer links to the Maps listing by CID.
+ */
+export const GOOGLE_LISTING = {
+  cid: '14056110879742525405',
+  mapsUrl: 'https://maps.google.com/?cid=14056110879742525405',
+  writeReviewUrl: null as string | null,
+} as const;
+
 export interface Partner {
   name: string;
   /** e.g. 'Material supplier', 'Research partner' */

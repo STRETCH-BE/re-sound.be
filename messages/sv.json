@@ -723,7 +723,8 @@
     "manageCookies": "Hantera cookies",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
-    "countryBelgium": "Belgien"
+    "countryBelgium": "Belgien",
+    "reviewUs": "Recensera oss på Google"
   },
   "cookies": {
     "title": "Cookieinställningar",
@@ -4175,5 +4176,12 @@
       "body": "Vi förbereder ert provkit och skickar det till <strong>{city}</strong> inom 3–5 arbetsdagar. Kontrollera er inkorg för en bekräftelse.",
       "close": "Stäng"
     }
+  },
+  "testimonials": {
+    "tag": "RECENSIONER",
+    "title": "Vad våra kunder säger",
+    "googleReviews": "{count, plural, one {# Google-recension} other {# Google-recensioner}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Recensera oss på Google"
   }
 }

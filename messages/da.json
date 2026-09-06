@@ -723,7 +723,8 @@
     "manageCookies": "Administrer cookies",
     "privacy": "Privatlivspolitik",
     "terms": "Servicevilkår",
-    "countryBelgium": "Belgien"
+    "countryBelgium": "Belgien",
+    "reviewUs": "Anmeld os på Google"
   },
   "cookies": {
     "title": "Cookie-præferencer",
@@ -4175,5 +4176,12 @@
       "body": "Vi klargør dit prøvesæt og sender det til <strong>{city}</strong> inden for 3–5 hverdage. Tjek din indbakke for en bekræftelse.",
       "close": "Luk"
     }
+  },
+  "testimonials": {
+    "tag": "Anmeldelser",
+    "title": "Det siger vores kunder",
+    "googleReviews": "{count, plural, one {# Google-anmeldelse} other {# Google-anmeldelser}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Anmeld os på Google"
   }
 }

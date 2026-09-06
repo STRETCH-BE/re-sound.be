@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "prebuild": "node scripts/fetch-google-reviews.mjs",
     "content:import": "node scripts/content/import-workbook.mjs"
   },
   "dependencies": {

@@ -723,7 +723,8 @@
     "manageCookies": "Manage cookies",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "countryBelgium": "Belgium"
+    "countryBelgium": "Belgium",
+    "reviewUs": "Review us on Google"
   },
   "cookies": {
     "title": "Cookie preferences",
@@ -4172,5 +4173,12 @@
       "body": "We'll prepare your sample kit and ship it to <strong>{city}</strong> within 3–5 business days. Check your inbox for a confirmation.",
       "close": "Close"
     }
+  },
+  "testimonials": {
+    "tag": "REVIEWS",
+    "title": "What customers say",
+    "googleReviews": "{count, plural, one {# Google review} other {# Google reviews}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Review us on Google"
   }
 }

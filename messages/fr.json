@@ -723,7 +723,8 @@
     "manageCookies": "Gérer les cookies",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
-    "countryBelgium": "Belgique"
+    "countryBelgium": "Belgique",
+    "reviewUs": "Laissez-nous un avis Google"
   },
   "cookies": {
     "title": "Préférences de cookies",
@@ -4175,5 +4176,12 @@
       "body": "Nous préparons votre kit d'échantillons et l'expédions à <strong>{city}</strong> sous 3 à 5 jours ouvrables. Vérifiez votre boîte de réception pour la confirmation.",
       "close": "Fermer"
     }
+  },
+  "testimonials": {
+    "tag": "Avis",
+    "title": "Ce que disent nos clients",
+    "googleReviews": "{count, plural, one {# avis Google} other {# avis Google}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Laissez-nous un avis Google"
   }
 }

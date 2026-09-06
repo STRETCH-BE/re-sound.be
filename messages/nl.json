@@ -723,7 +723,8 @@
     "manageCookies": "Cookies beheren",
     "privacy": "Privacybeleid",
     "terms": "Algemene Voorwaarden",
-    "countryBelgium": "België"
+    "countryBelgium": "België",
+    "reviewUs": "Beoordeel ons op Google"
   },
   "cookies": {
     "title": "Cookievoorkeuren",
@@ -4175,5 +4176,12 @@
       "body": "Wij stellen uw stalenset samen en versturen die binnen 3–5 werkdagen naar <strong>{city}</strong>. Controleer uw mailbox voor een bevestiging.",
       "close": "Sluiten"
     }
+  },
+  "testimonials": {
+    "tag": "Reviews",
+    "title": "Wat klanten zeggen",
+    "googleReviews": "{count, plural, one {# Google-review} other {# Google-reviews}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Beoordeel ons op Google"
   }
 }

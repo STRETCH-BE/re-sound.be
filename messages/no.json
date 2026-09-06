@@ -723,7 +723,8 @@
     "manageCookies": "Administrer informasjonskapsler",
     "privacy": "Personvernpolicy",
     "terms": "Tjenestevilkår",
-    "countryBelgium": "Belgia"
+    "countryBelgium": "Belgia",
+    "reviewUs": "Gi oss en anmeldelse på Google"
   },
   "cookies": {
     "title": "Informasjonskapselinnstillinger",
@@ -4175,5 +4176,12 @@
       "body": "Vi klargjør prøvesettet ditt og sender det til <strong>{city}</strong> innen 3–5 virkedager. Sjekk innboksen din for en bekreftelse.",
       "close": "Lukk"
     }
+  },
+  "testimonials": {
+    "tag": "Anmeldelser",
+    "title": "Hva kundene sier",
+    "googleReviews": "{count, plural, one {# Google-anmeldelse} other {# Google-anmeldelser}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Gi oss en anmeldelse på Google"
   }
 }
