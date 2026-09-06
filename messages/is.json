@@ -3,9 +3,9 @@
     "homeTitle": "Re-Sound | Endurunnið frá uppruna. Hringrásarmiðuð hönnun.",
     "homeDescription": "Hávirkar hljóðlausnir úr endurunnnum efnum. Við breytum úrgangi í þögn – hannað fyrir plánetuna, framleitt í Belgíu.",
     "productsTitle": "Vörur",
-    "productsDescription": "Kannaðu úrval okkar af hringrásarlegum hljóðpanelar: Interior, Solid og Divide. 100% endurunnin, 100% endurvinnanleg, framleidd í Belgíu.",
+    "productsDescription": "Hringrásar hljóðvistarplötur og símaklefar úr eigin verksmiðjum: textíl (Interior, Solid, Divide), rWood, rPET og klefar (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "About Re-Sound",
-    "aboutDescription": "Learn about our mission to create circular acoustic solutions from recycled materials, proudly made in Belgium.",
+    "aboutDescription": "Kynntu þér markmið okkar: hringrásar hljóðlausnir úr endurunnum efnum, framleiddar í okkar eigin verksmiðjum í Belgíu og Póllandi.",
     "sustainabilityTitle": "Sjálfbærni",
     "sustainabilityDescription": "Uppgötvaðu hvernig við lokum hringrásina með fullkomlega hringrásarlegum hljóðpanelunum okkar — frá endurunnnum efnum til ókeypis endurheimt þjónustu.",
     "contactTitle": "Hafðu samband",
@@ -93,11 +93,11 @@
     "recycled": "Endurvinnanlegar efni",
     "classA": "Flokk A hljóðfrásog",
     "fire": "B-s1,d0 Fire Rated",
-    "belgium": "Framleitt í Belgíu",
     "takeback": "Ókeypis endurheimt forrit",
     "veneer": "Raunverulegt viðarfineera yfirborð",
     "colors": "Yfir 50 staðalitir",
-    "custom": "Sérsniðin stærð að beiðni"
+    "custom": "Sérsniðin stærð að beiðni",
+    "factories": "Úr eigin verksmiðjum"
   },
   "stats": {
     "absorption": "Hljóðfrásog",
@@ -227,13 +227,13 @@
     },
     "rwood-perf": {
       "title": "rWood - Perf",
-      "description": "Gataðar hljóðfræðilegar viðarpaneler sem sameina náttúrulega fegurð með nákvæmnisverkfræði. Yfirburða hljóðfrásog.",
-      "fullDescription": "rWood - Perf paneler hafa nákvæmar örgöt í gegnum FSC®-vottað viðarfineera, og skapa yfirburða hljóðfræðilega frásogslausn."
+      "description": "Götuð hljóðvistarplötur úr viði með FSC-vottaðri spón. Götunarmynstur stillt fyrir breiðbands hljóðdeyfingu og sterkan sjónrænan takt.",
+      "fullDescription": "rWood - Perf plötur sameina FSC-vottaða viðarspón og götuð mynstur sem hleypa hljóðinu í gegn að deyfandi kjarnanum. Götunin bætir við sjónrænni áferð og hámarkar hljóðstjórnun yfir breitt tíðnisvið."
     },
     "rwood-micro": {
       "title": "rWood - Micro",
-      "description": "Fínar örgrillaðar hljóðfræðilegar viðarpaneler. Hógvær áferð með framúrskarandi hljóðfræðilegri frammistöðu.",
-      "fullDescription": "rWood - Micro sameinar fíngerða fagurfræði við hávirka hljóðfræði. Örgrillamynstrið skapar sjónrænt flókin yfirborð."
+      "description": "Örgötuð hljóðvistarplötur úr viði með 0,5 mm götum. Nánast samfellt viðaryfirborð með mikilli hljóðdeyfingu fyrir vandaðar innréttingar.",
+      "fullDescription": "rWood - Micro sameinar fágaða fagurfræði og öfluga hljóðvist. 0,5 mm örgöt í gegnum FSC-vottaða viðarspón mynda nánast ósýnilegt mynstur sem heldur náttúrulegu viðarútliti en deyfir hljóð."
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
@@ -297,7 +297,6 @@
   "why": {
     "tag": "WHY RE-SOUND",
     "title": "Why Choose Circular Acoustic Panels?",
-    "titleHighlight": "plánetuna.",
     "belgianLabel": "Belgian",
     "subtitle": "Við trúum því að góð hljóðfræði ætti ekki að kosta plánetuna. Panelarnir okkar sanna að sjálfbærar valstilboð geta veitt frammistöðu í heimsklassa.",
     "diagramLabel": "Hringrásarlegur",
@@ -378,10 +377,10 @@
       "tag": "SAGA OKKAR",
       "title": "Úr úrgangi í furðu",
       "paragraph1": "Re-Sound fæddist úr einfaldri spurningu: hvað ef við gætum breytt fjöllunum af textílúrgangi sem framleiddir eru á hverju ári í eitthvað fallegt og virkt?",
-      "paragraph2": "Stofnað í Belgíu 2021, settum við okkur það markmið að búa til hljóðpanel sem standa jafnfætis hefðbundnum efnum á meðan þær eru 100% hringrásarlegar.",
+      "paragraph2": "{year, select, unknown {Stofnað í Belgíu settum við okkur það markmið að búa til hljóðvistarplötur sem standa jafnfætis hefðbundnum efnum á meðan þær eru 100% hringrásarlegar.} other {Stofnað í Belgíu {year}, settum við okkur það markmið að búa til hljóðpanel sem standa jafnfætis hefðbundnum efnum á meðan þær eru 100% hringrásarlegar.}}",
       "paragraph3": "Í dag höfum við beint tonnum af textíl frá urðunarsvæðum og búið til hljóðlausnir fyrir hundruð verkefna um alla Evrópu.",
       "imagePlaceholder": "Re-Sound Production Facility",
-      "founded": "Founded in Beveren-Waas"
+      "founded": "Stofnað í Beveren-Waas"
     },
     "values": {
       "tag": "GILDI OKKAR",
@@ -424,13 +423,13 @@
       }
     },
     "belgian": {
-      "tag": "FRAMLEITT Í BELGÍU",
-      "title": "Proudly Belgian",
-      "description": "All our panels are designed and manufactured in Belgium, supporting local employment and reducing transport emissions.",
-      "madeIn": "Framleitt í Belgíu 🇧🇪",
+      "tag": "EIGIN VERKSMIÐJUR",
+      "title": "Framleitt í eigin verksmiðjum",
+      "description": "Stuttar aðfangakeðjur, gagnsær uppruni og gæði sem við stöndum við í hverju verkefni.",
+      "madeIn": "Beveren-Waas · Częstochowa",
       "production": {
-        "title": "Local Production",
-        "description": "Manufacturing in Beveren-Waas"
+        "title": "Eigin framleiðsla",
+        "description": "Verksmiðjur í Beveren-Waas (BE) og Częstochowa (PL)"
       },
       "social": {
         "title": "Social Enterprise",
@@ -704,7 +703,7 @@
     "error": "Eitthvað fór úrskeiðis. Reyndu aftur."
   },
   "footer": {
-    "description": "Hringrásarlegar hljóðlausnir úr endurunnnum efnum. Hannaðar fyrir plánetuna, framleiddar í Belgíu.",
+    "description": "Hringrásarlegar hljóðlausnir úr endurunnum efnum.",
     "products": "Vörur",
     "company": "Fyrirtæki",
     "contact": "Samband",
@@ -933,7 +932,7 @@
       "description": "Umbreyttu rýminu þínu með Re-Sound Interior — fullkomið hljóðfræðilegt veggkerfi úr endurunnnum efnum.",
       "uspAbsorption": "αw 1,0 Frásog",
       "uspRecyclable": "100% Endurvinnanlegur",
-      "uspOrigin": "Framleitt í Evrópu",
+      "uspOrigin": "Framleitt í Belgíu",
       "priceFrom": "Frá",
       "priceValue": "€387",
       "priceUnit": "excl. VAT per set of 3 modules",
@@ -1192,7 +1191,7 @@
       "tag": "NÝSKÖPUN",
       "title": "Redefine Your Space",
       "description": "Re-Sound Divide er fyrsta frjálsstæðar hljóðfræðilegar varan hannað fyrir hámarks sveigjanleika. Búðu til rýmissskiptingar, friðhelgissvæði eða einstæðar stillingar.",
-      "feature1": "Freestanding design—no installation needed",
+      "feature1": "Frístandandi hönnun – engin uppsetning nauðsynleg",
       "feature2": "Magnetic connection system",
       "feature3": "Lightweight and easy to move",
       "feature4": "Hringrásarlegur af hönnun"
@@ -1560,7 +1559,7 @@
       "tag": "ENDURUNNIN PET HLJÓÐPANELER",
       "title": "rPET - Panel",
       "tagline": "Sjálfbær þögn, óendanlegar möguleikar",
-      "description": "Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
+      "description": "Transform any space with rPET - Panel acoustic panels. {pct, select, unknown {Made from recycled PET bottles, these} other {Made from {pct}% recycled PET bottles, these}} lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
       "usp1": "100% Endurvinnanlegur PET",
       "usp2": "Flokkur A αw 0,95",
       "usp3": "Létt 3-4 kg/m²",
@@ -1581,7 +1580,7 @@
       "reason5Title": "Viltu fleiri valkosti?",
       "reason5": "Combine with rPET Groove for a complete design system",
       "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. Each panel diverts plastic waste from landfills while creating healthier, quieter environments. It's the sound-absorbing alternative to MDF—but at a fraction of the weight.",
-      "feature1": "Made from up to 50% recycled PET bottles",
+      "feature1": "{pct, select, unknown {Made from recycled PET bottles} other {Made from {pct}% recycled PET bottles}}",
       "feature2": "100% recyclable at end of life",
       "feature3": "Léttvægt: aðeins 3-4 kg/m²",
       "feature4": "Án efnabindiefna"
@@ -1636,7 +1635,7 @@
       "cert4": "A+ flokkur losunar",
       "badge1Desc": "Made from post-consumer PET bottles",
       "badge2Desc": "Full material recovery at end of life",
-      "description": "rPET - Panel embodies the circular economy. Each panel contains up to 50% recycled PET bottles, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
+      "description": "rPET - Panel embodies the circular economy. {pct, select, unknown {Each panel is made from recycled PET bottles} other {Each panel contains {pct}% recycled PET bottles}}, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
       "cert3Desc": "Class 1 certified for human safety",
       "cert4Desc": "No VOC or formaldehyde (ISO 16000)"
     },
@@ -1774,7 +1773,7 @@
       "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
       "usp1": "FSC® vottað viður",
       "usp2": "Frásog í flokki A",
-      "usp3": "Framleitt í Evrópu"
+      "usp3": "Ókeypis endurheimtarkerfi"
     },
     "overview": {
       "tag": "HANDVERK",
@@ -1925,7 +1924,7 @@
       "colorChart": "Lita- og yfirborðsleiðbeiningar"
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Europe • FSC® Certified"
+      "freeNote": "Free samples available • FSC® Certified"
     },
     "faq": {
       "questions": {
@@ -2104,7 +2103,7 @@
       "item4Desc": "30–50 mm insulation for optimal performance"
     },
     "cta": {
-      "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
+      "note": "Free samples available • FSC® Certified • A2 fire rating available"
     },
     "faq": {
       "questions": {
@@ -2327,7 +2326,7 @@
       "description": "Vandaðar finerarMDF plötur, burstaðar, litaðar og lakkaðar — tilbúnar til uppsetningar. Fáanlegar í 10 finerartegundum og 3 yfirborðum. Framleitt í Belgíu.",
       "usp1": "Raunverulegt tréfineera",
       "usp2": "Forfrágengt og tilbúið til notkunar",
-      "usp3": "FSC® Vottað",
+      "usp3": "Ókeypis endurheimtarkerfi",
       "ctaSecondary": "Sjá Safn",
       "colorSelector": "Veldu Fineera"
     },
@@ -3665,5 +3664,15 @@
       "primary": "Bóka heimsókn",
       "secondary": "Biðja um sýnishorn"
     }
+  },
+  "manufacturer": {
+    "statement": "Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
+    "madeIn": {
+      "BE": "Framleitt í Belgíu",
+      "PL": "Framleitt í Póllandi"
+    },
+    "ownFactories": "Úr eigin verksmiðjum",
+    "ownFactoriesShort": "Eigin verksmiðjur",
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
   }
 }

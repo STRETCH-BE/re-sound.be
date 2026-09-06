@@ -264,16 +264,27 @@ async function ensureServer() {
     const r = spawnSync('npx', ['next', 'build'], { cwd: root, stdio: 'inherit' });
     if (r.status !== 0) throw new Error('next build failed');
   }
-  console.error(`[seo-check] starting next start on :${opts.port} …`);
-  server = spawn('npx', ['next', 'start', '-p', String(opts.port)], { cwd: root, stdio: ['ignore', 'ignore', 'inherit'] });
   const base = `http://localhost:${opts.port}`;
+  // A server that is already listening would be a stale one (old build in
+  // its memory cache) — refuse rather than report on the wrong build.
+  if (await waitFor(`${base}/robots.txt`, 1500)) {
+    throw new Error(`port ${opts.port} is already in use — stop that server or pass its URL explicitly`);
+  }
+  console.error(`[seo-check] starting next start on :${opts.port} …`);
+  // Spawn the next binary directly (not via npx) in its own process group so
+  // stopServer() can kill the whole tree — killing an `npx` wrapper leaves
+  // the real server running.
+  const nextBin = resolve(root, 'node_modules', 'next', 'dist', 'bin', 'next');
+  server = spawn(process.execPath, [nextBin, 'start', '-p', String(opts.port)], {
+    cwd: root, stdio: ['ignore', 'ignore', 'inherit'], detached: true,
+  });
   if (!(await waitFor(`${base}/robots.txt`, 60000))) throw new Error('server did not start');
   return base;
 }
 
 function stopServer() {
   if (server) {
-    try { server.kill('SIGTERM'); } catch {}
+    try { process.kill(-server.pid, 'SIGTERM'); } catch { try { server.kill('SIGTERM'); } catch {} }
     server = null;
   }
 }

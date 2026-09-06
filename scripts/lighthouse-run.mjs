@@ -53,9 +53,15 @@ let server = null;
 if (!(await up(`${base}/robots.txt`))) {
   const port = new URL(base).port || '3000';
   console.error(`[lighthouse] starting next start on :${port}`);
-  server = spawn('npx', ['next', 'start', '-p', port], { cwd: root, stdio: ['ignore', 'ignore', 'inherit'] });
+  // Spawn the next binary directly in its own process group so the whole
+  // tree is killed afterwards (killing an `npx` wrapper leaves a stale
+  // server behind, serving the previous build from its memory cache).
+  const nextBin = resolve(root, 'node_modules', 'next', 'dist', 'bin', 'next');
+  server = spawn(process.execPath, [nextBin, 'start', '-p', port], { cwd: root, stdio: ['ignore', 'ignore', 'inherit'], detached: true });
   const t0 = Date.now();
   while (Date.now() - t0 < 60000 && !(await up(`${base}/robots.txt`))) await new Promise((r) => setTimeout(r, 500));
+} else {
+  console.error(`[lighthouse] using the server already listening at ${base} — make sure it serves the current build`);
 }
 
 const chrome = chromePath();
@@ -99,7 +105,7 @@ for (const page of PAGES) {
   rows.push({ page, median, runs });
 }
 
-if (server) { try { server.kill('SIGTERM'); } catch {} }
+if (server) { try { process.kill(-server.pid, 'SIGTERM'); } catch { try { server.kill('SIGTERM'); } catch {} } }
 
 const ms = (v) => `${(v / 1000).toFixed(2)} s`;
 const lines = [];

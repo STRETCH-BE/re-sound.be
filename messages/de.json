@@ -3,16 +3,16 @@
     "homeTitle": "Re-Sound | Recycelt im Ursprung. Zirkulär im Design.",
     "homeDescription": "Hochleistungs-Akustiklösungen aus recycelten Materialien. Wir verwandeln Abfall in Stille—für den Planeten entwickelt, in Belgien hergestellt.",
     "productsTitle": "Produkte",
-    "productsDescription": "Entdecken Sie unsere Palette an zirkulären Akustikplatten: Interior, Solid und Divide. 100% recycelt, 100% recycelbar.",
+    "productsDescription": "Zirkuläre Akustikpaneele & Telefonboxen aus eigener Fertigung: Textil (Interior, Solid, Divide), rWood, rPET und Boxen (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "Über Re-Sound",
-    "aboutDescription": "Erfahren Sie mehr über unsere Mission, zirkuläre Akustiklösungen aus recycelten Materialien zu schaffen, stolz hergestellt in Belgien.",
+    "aboutDescription": "Unsere Mission: zirkuläre Akustiklösungen aus recycelten Materialien, gefertigt in unseren eigenen Werken in Belgien und Polen.",
     "sustainabilityTitle": "Nachhaltigkeit",
-    "sustainabilityDescription": "Entdecken Sie, wie wir mit unseren vollständig zirkulären Akustikplatten den Kreislauf schließen—von recycelten Materialien bis hin zu kostenlosen Rücknahmeprogrammen.",
+    "sustainabilityDescription": "Entdecken Sie, wie wir mit unseren vollständig zirkulären Akustikpaneele den Kreislauf schließen—von recycelten Materialien bis hin zu kostenlosen Rücknahmeprogrammen.",
     "contactTitle": "Kontakt",
     "contactDescription": "Kontaktieren Sie Re-Sound für Angebote, Fragen oder Partnerschaftsanfragen.",
     "blogTitle": "Blog",
     "blogDescription": "Einblicke in Kreislaufwirtschaft, Akustik und nachhaltiges Design vom Re-Sound-Team.",
-    "rwoodVeneerDescription": "Glatte Holzfurnier-Akustikpaneele. 10 kuratierte Holzarten, möbelqualität Konstruktion, EPD verfügbar. FSC zertifiziert. Hergestellt in Europa.",
+    "rwoodVeneerDescription": "Glatte Holzfurnier-Akustikpaneele. 10 kuratierte Holzarten, Konstruktion in Möbelqualität, EPD verfügbar. FSC zertifiziert. Hergestellt in Europa.",
     "rpetGrooveTitle": "rPET Groove Recycelte PET-Akustikpaneele | Re-Sound",
     "rpetGrooveDescription": "Gerillte Akustikpaneele aus 100% recycelten PET-Flaschen. 12 Designerfarben, 3 Stärken (12/24/36 mm), B-s1,d0 Brandschutz. Hergestellt in Polen.",
     "rwoodVeneerTitle": "rWood Panel Akustische Holzfurnierpaneele | Re-Sound",
@@ -32,8 +32,8 @@
     "interiorTitle": "Interior Akustische Wandpaneele | Re-Sound",
     "solidTitle": "Solid Akustische Wandpaneele | Re-Sound",
     "solidDescription": "Großformatige Akustik-Wandpaneele für wirkungsvolle Schallabsorption. 1200 × 600 mm, Hakenmontagesystem, 100% recycelte Materialien. Hergestellt in Belgien.",
-    "faqTitle": "FAQ — Re-Sound Akustikplatten",
-    "faqDescription": "Antworten auf häufige Fragen zu Re-Sound Akustikplatten: wie Absorption funktioniert, Brandschutzklassen, Lieferzeiten, zirkuläres Rücknahmeprogramm und Produktauswahl.",
+    "faqTitle": "FAQ — Re-Sound Akustikpaneele",
+    "faqDescription": "Antworten auf häufige Fragen zu Re-Sound Akustikpaneele: wie Absorption funktioniert, Brandschutzklassen, Lieferzeiten, zirkuläres Rücknahmeprogramm und Produktauswahl.",
     "duoDescription": "Eine Kabine, zwei Konfigurationen: Flex bietet Platz für zwei Personen für ein fokussiertes Gespräch; Work gibt einer Person einen Schreibtisch über die gesamte Breite. 2 m² Stellfläche, elektrischer Schreibtisch, 230V-Steckdose, vollständige Belüftung. Re-Sound Akustikreihe.",
     "soloFlexDescription": "Akustische Telefonkabine für eine Person, ideal für Fokusgespräche und konzentriertes Arbeiten. 1 m² Stellfläche, integrierter Sitz-Steh-Schreibtisch, 230V-Steckdose, USB-C und leise Belüftung. Teil der Re-Sound Sound-Booth-Reihe.",
     "modularXlDescription": "Skalierbarer akustischer Meeting-Pod. Basis bietet Platz für 6 Personen, erweiterbar auf 10 in 90-cm-Segmenten. 25,9 dB(A) Sprachdämmung, vollständige A/V-Ausstattung, barrierefreier Eingang.",
@@ -98,7 +98,7 @@
   "materials": {
     "tag": "WAS WIR VERWENDEN",
     "title": "Vom Abfall zum Wunder",
-    "subtitle": "Wir verwandeln verschiedene recycelte Materialien in Hochleistungs-Akustikplatten.",
+    "subtitle": "Wir verwandeln verschiedene recycelte Materialien in Hochleistungs-Akustikpaneele.",
     "jeans": "Jeans",
     "upholstery": "Polsterung",
     "clothing": "Kleidung",
@@ -113,7 +113,7 @@
     "title": "Akustiklösungen",
     "learnMore": "Mehr erfahren",
     "pageTitle": "Unsere Produkte",
-    "pageSubtitle": "Entdecken Sie unsere Palette an zirkulären Akustikplatten, die jeweils für spezifische Anwendungen entwickelt wurden und gleichzeitig unser Engagement für Nachhaltigkeit beibehalten.",
+    "pageSubtitle": "Entdecken Sie unsere Palette an zirkulären Akustikpaneele, die jeweils für spezifische Anwendungen entwickelt wurden und gleichzeitig unser Engagement für Nachhaltigkeit beibehalten.",
     "requestQuote": "Angebot Anfordern",
     "learnCircular": "Unser Kreislaufprozess",
     "relatedTag": "WEITERE PRODUKTE",
@@ -123,7 +123,7 @@
     "ctaPrimary": "Angebot Erhalten",
     "interior": {
       "title": "Interior",
-      "description": "Erweiterbare Akustikplatten für Wände und Decken. Perfekt für Büros, Restaurants und öffentliche Räume.",
+      "description": "Erweiterbare Akustikpaneele für Wände und Decken. Perfekt für Büros, Restaurants und öffentliche Räume.",
       "fullDescription": "Unsere Interior-Platten sind für die nahtlose Integration in jeden Raum konzipiert. Aus 100% recycelten Textilien hergestellt, bieten sie außergewöhnliche Schallabsorption und verleihen Ihrer Umgebung visuelle Wärme."
     },
     "solid": {
@@ -134,7 +134,7 @@
     "divide": {
       "title": "Divide",
       "description": "Freistehende Akustiktrennwände für flexible Raumgestaltung. Mobil und modular.",
-      "fullDescription": "Divide bietet flexible Raumgestaltung mit freistehenden Akustikplatten. Perfekt für offene Büros, können sie einfach bewegt und umkonfiguriert werden, wenn sich Ihre Bedürfnisse ändern."
+      "fullDescription": "Divide bietet flexible Raumgestaltung mit freistehenden Akustikpaneele. Perfekt für offene Büros, können sie einfach bewegt und umkonfiguriert werden, wenn sich Ihre Bedürfnisse ändern."
     },
     "highlights": {
       "absorption": {
@@ -171,8 +171,8 @@
     },
     "rwood-micro": {
       "title": "rWood - Micro",
-      "description": "Fein mikrogefurchte Akustik-Holzpaneele. Subtile Textur mit außergewöhnlicher Akustikleistung für Premiuminterieurs.",
-      "fullDescription": "rWood - Micro kombiniert raffinierte Ästhetik mit hochleistungsfähiger Akustik. Das Mikrofurchenmuster ist präzise in FSC-zertifiziertes Holzfurnier gefräst."
+      "description": "Mikroperforierte Akustikpaneele aus Holz mit 0,5 mm Perforationen. Eine nahezu fugenlose Holzoberfläche mit hoher Absorption für hochwertige Innenräume.",
+      "fullDescription": "rWood - Micro verbindet raffinierte Ästhetik mit leistungsstarker Akustik. 0,5 mm Mikroperforationen im FSC-zertifizierten Holzfurnier erzeugen ein fast unsichtbares Muster, das die natürliche Holzoptik bewahrt und gleichzeitig Schall absorbiert."
     },
     "filters": {
       "title": "Produkte Filtern",
@@ -196,8 +196,8 @@
     "titleHighlight": "für jeden Raum.",
     "rwood-perf": {
       "title": "rWood - Perf",
-      "description": "Perforierte Akustik-Holzpaneele, die natürliche Schönheit mit Präzisionstechnik verbinden.",
-      "fullDescription": "rWood - Perf Paneele verfügen über Präzisions-Mikroperforationen durch FSC-zertifiziertes Holzfurnier."
+      "description": "Perforierte Akustikpaneele aus Holz mit FSC-zertifiziertem Furnier. Lochmuster, abgestimmt auf breitbandige Absorption und einen klaren visuellen Rhythmus.",
+      "fullDescription": "rWood - Perf Paneele kombinieren FSC-zertifiziertes Holzfurnier mit perforierten Mustern, die den Schall bis zum absorbierenden Kern durchlassen. Die Perforation verleiht visuelle Struktur und optimiert die Schallkontrolle über einen breiten Frequenzbereich."
     },
     "rwood-groove": {
       "title": "rWood - Groove",
@@ -259,8 +259,8 @@
   },
   "why": {
     "tag": "WARUM RE-SOUND",
-    "title": "Warum Zirkuläre Akustikplatten Wählen?",
-    "subtitle": "Wir glauben, dass großartige Akustik die Erde nicht kosten sollte. Unsere Platten beweisen, dass nachhaltige Entscheidungen überlegene Leistung liefern können.",
+    "title": "Warum Zirkuläre Akustikpaneele Wählen?",
+    "subtitle": "Wir glauben, dass großartige Akustik die Erde nicht kosten sollte. Unsere Paneele beweisen, dass nachhaltige Entscheidungen überlegene Leistung liefern können.",
     "diagramLabel": "Zirkulär",
     "features": {
       "performance": {
@@ -280,7 +280,6 @@
         "description": "50+ Farben, individuelle Größen und verschiedene Montageoptionen."
       }
     },
-    "titleHighlight": "die Erde.",
     "belgianLabel": "Belgisch"
   },
   "circular": {
@@ -296,7 +295,7 @@
       },
       "transform": {
         "title": "Verwandeln",
-        "description": "Materialien werden zu Akustikplatten verarbeitet."
+        "description": "Materialien werden zu Akustikpaneele verarbeitet."
       },
       "install": {
         "title": "Installieren",
@@ -327,7 +326,7 @@
       "tag": "UNSERE GESCHICHTE",
       "title": "Vom Abfall zum Wunder",
       "paragraph1": "Re-Sound wurde aus einer einfachen Frage geboren: Was wäre, wenn wir die Berge von Textilabfällen in etwas Schönes und Nützliches verwandeln könnten?",
-      "paragraph2": "2021 in Belgien gegründet, machten wir uns daran, Akustikplatten zu schaffen, die genauso gut funktionieren wie traditionelle Produkte und dabei 100% zirkulär sind.",
+      "paragraph2": "{year, select, unknown {In Belgien gegründet, machten wir uns daran, Akustikpaneele zu schaffen, die genauso gut funktionieren wie traditionelle Produkte und dabei 100% zirkulär sind.} other {{year} in Belgien gegründet, machten wir uns daran, Akustikpaneele zu schaffen, die genauso gut funktionieren wie traditionelle Produkte und dabei 100% zirkulär sind.}}",
       "paragraph3": "Heute haben wir Tonnen von Textilien von Deponien abgelenkt und Akustiklösungen für Hunderte von Räumen in ganz Europa geschaffen.",
       "imagePlaceholder": "Re-Sound Produktionsstätte",
       "founded": "Gegründet in Beveren-Waas"
@@ -373,13 +372,13 @@
       }
     },
     "belgian": {
-      "tag": "MADE IN BELGIUM",
-      "title": "Stolz Belgisch",
-      "description": "Alle unsere Platten werden in Belgien entworfen und hergestellt, was lokale Beschäftigung unterstützt und Transportemissionen reduziert.",
-      "madeIn": "Hergestellt in Belgien 🇧🇪",
+      "tag": "EIGENE WERKE",
+      "title": "Aus eigener Fertigung",
+      "description": "Kurze Lieferwege, transparente Herkunft und Qualität, hinter der wir bei jedem Projekt stehen.",
+      "madeIn": "Beveren-Waas · Częstochowa",
       "production": {
-        "title": "Lokale Produktion",
-        "description": "Fertigung in Beveren-Waas"
+        "title": "Eigene Produktion",
+        "description": "Werke in Beveren-Waas (BE) und Częstochowa (PL)"
       },
       "social": {
         "title": "Sozialunternehmen",
@@ -397,7 +396,7 @@
     "subtitle": "Wir reduzieren nicht nur Abfall—wir eliminieren ihn durch einen vollständig zirkulären Ansatz.",
     "intro": {
       "title": "Die Kreislaufwirtschaft",
-      "description": "Traditionelle Akustikplatten landen auf Deponien. Unsere beginnen ein neues Leben. Unser zirkuläres Modell stellt sicher, dass Materialien kontinuierlich fließen und niemals zu Abfall werden.",
+      "description": "Traditionelle Akustikpaneele landen auf Deponien. Unsere beginnen ein neues Leben. Unser zirkuläres Modell stellt sicher, dass Materialien kontinuierlich fließen und niemals zu Abfall werden.",
       "endless": "Endloser Zyklus"
     },
     "process": {
@@ -413,7 +412,7 @@
       },
       "create": {
         "title": "Platten Erstellen",
-        "description": "Fasern werden gebunden und zu schönen, leistungsstarken Akustikplatten verarbeitet."
+        "description": "Fasern werden gebunden und zu schönen, leistungsstarken Akustikpaneele verarbeitet."
       },
       "return": {
         "title": "Zurückgeben & Recyceln",
@@ -534,12 +533,12 @@
   "blogPosts": {
     "circular-economy-acoustics": {
       "title": "Die Kreislaufwirtschaft: Eine Neue Ära für Akustiklösungen",
-      "excerpt": "Wie zirkuläre Designprinzipien die Akustikplattenindustrie transformieren und warum es für die Zukunft wichtig ist.",
+      "excerpt": "Wie zirkuläre Designprinzipien die Akustikpaneelindustrie transformieren und warum es für die Zukunft wichtig ist.",
       "category": "sustainability",
       "date": "2024-01-15",
       "readTime": "5",
       "content": {
-        "intro": "Die Akustikplattenindustrie durchläuft eine fundamentale Transformation. Traditionelle lineare Modelle—nehmen, herstellen, entsorgen—weichen zirkulären Ansätzen, die Materialien unbegrenzt in Gebrauch halten.",
+        "intro": "Die Akustikpaneelindustrie durchläuft eine fundamentale Transformation. Traditionelle lineare Modelle—nehmen, herstellen, entsorgen—weichen zirkulären Ansätzen, die Materialien unbegrenzt in Gebrauch halten.",
         "section1": {
           "title": "Warum Zirkularität Wichtig Ist",
           "text": "Jedes Jahr landen Millionen Tonnen Akustikmaterialien auf Deponien. Diese Materialien, oft mit synthetischen Fasern und Klebstoffen, können Jahrhunderte brauchen, um sich zu zersetzen. Die Kreislaufwirtschaft bietet eine Alternative: Produkte zu entwerfen, die kontinuierlich recycelt werden können."
@@ -548,7 +547,7 @@
           "title": "Unser Ansatz",
           "text": "Bei Re-Sound haben wir unsere Platten von Grund auf für Zirkularität entwickelt. Durch die Verwendung von nur recycelten Textilien und biobasierten Bindemitteln können unsere Platten am Lebensende vollständig recycelt werden—sie werden zu neuen Platten statt zu Abfall."
         },
-        "quote": "Die beste Akustikplatte ist eine, die niemals zu Abfall wird.",
+        "quote": "Die beste Akustikpaneel ist eine, die niemals zu Abfall wird.",
         "section3": {
           "title": "Der Business Case",
           "text": "Zirkuläres Design ist nicht nur gut für die Umwelt—es ist gutes Geschäft. Indem wir Wert aus Abfall schaffen und Rücknahmeprogramme anbieten, bauen wir stärkere Kundenbeziehungen auf und reduzieren gleichzeitig Materialkosten."
@@ -596,7 +595,7 @@
         "intro": "Es gibt einen hartnäckigen Mythos, dass recycelte Materialien kompromittierte Qualität bedeuten. Unsere Platten beweisen das Gegenteil—recycelt kann überlegen bedeuten.",
         "section1": {
           "title": "Rigorose Materialauswahl",
-          "text": "Nicht alle recycelten Textilien eignen sich für Akustikplatten. Wir wählen und sortieren Materialien sorgfältig aus, um konsistente Faserqualität und akustische Leistung zu gewährleisten."
+          "text": "Nicht alle recycelten Textilien eignen sich für Akustikpaneele. Wir wählen und sortieren Materialien sorgfältig aus, um konsistente Faserqualität und akustische Leistung zu gewährleisten."
         },
         "section2": {
           "title": "Fortschrittliche Verarbeitung",
@@ -653,7 +652,7 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "footer": {
-    "description": "Zirkuläre Akustiklösungen aus recycelten Materialien. Für den Planeten entwickelt, in Belgien hergestellt.",
+    "description": "Zirkuläre Akustiklösungen aus recycelten Materialien.",
     "products": "Produkte",
     "company": "Unternehmen",
     "contact": "Kontakt",
@@ -695,11 +694,11 @@
     "recycled": "Recycelte Materialien",
     "classA": "Klasse A Schallabsorption",
     "fire": "B-s1,d0 Brandschutzklasse",
-    "belgium": "Hergestellt in Belgien",
     "takeback": "Kostenloses Rücknahmeprogramm",
     "veneer": "Echte Holzfurnier-Oberflächen",
     "colors": "50+ Standardfarben",
-    "custom": "Sondermaße auf Anfrage"
+    "custom": "Sondermaße auf Anfrage",
+    "factories": "Aus eigener Fertigung"
   },
   "rwood": {
     "tag": "rWood-Serie — Natürliche Oberflächen",
@@ -933,7 +932,7 @@
       "description": "Verwandeln Sie Ihren Raum mit Re-Sound Interior — einem vollständigen akustischen Wandsystem aus recycelten Materialien. Vollständig anpassbar, einfach zu montieren und für die Wiederverwertung am Lebensende konzipiert.",
       "uspAbsorption": "αw 1.0 Absorption",
       "uspRecyclable": "100% Recyclierbar",
-      "uspOrigin": "Hergestellt in Europa",
+      "uspOrigin": "Hergestellt in Belgien",
       "priceFrom": "Ab",
       "priceValue": "€387",
       "priceUnit": "zzgl. MwSt. pro Set mit 3 Modulen",
@@ -1557,7 +1556,7 @@
       "tag": "RECYCELTE PET-AKUSTIKPANEELE",
       "title": "rPET - Panel",
       "tagline": "Nachhaltige Stille, Unendliche Möglichkeiten",
-      "description": "Verwandeln Sie jeden Raum mit rPET - Panel Akustikpaneelen. Aus 100% recycelten PET-Flaschen hergestellt, liefern diese leichten, aber leistungsstarken Schallabsorber maximale Akustikleistung bei minimaler Umweltbelastung.",
+      "description": "Verwandeln Sie jeden Raum mit rPET - Panel Akustikpaneelen. {pct, select, unknown {Aus recycelten PET-Flaschen hergestellt, liefern diese} other {Aus {pct}% recycelten PET-Flaschen hergestellt, liefern diese}} leichten, aber leistungsstarken Schallabsorber maximale Akustikleistung bei minimaler Umweltbelastung.",
       "usp1": "100% Recycelbares PET",
       "usp2": "αw bis 1,00",
       "usp3": "Nur 3-4 kg/m²",
@@ -1577,7 +1576,7 @@
       "reason4": "50+ Farben für jede Innenarchitekturvision",
       "reason5Title": "Mehr Optionen?",
       "reason5": "Mit rPET Groove für ein vollständiges Designsystem kombinieren",
-      "feature1": "Bis zu 50% aus recycelten PET-Flaschen",
+      "feature1": "{pct, select, unknown {Aus recycelten PET-Flaschen} other {Zu {pct}% aus recycelten PET-Flaschen}}",
       "feature2": "100% recyclierbar am Lebensende",
       "feature3": "Leicht: nur 3-4 kg/m²",
       "feature4": "Ohne chemische Bindemittel",
@@ -1601,7 +1600,7 @@
       "step3Desc": "Sichere Befestigung ohne Splittern",
       "step4Title": "V-Schnitt Biegen",
       "step4Desc": "3D-Formen und Ecken erstellen",
-      "title": "Bearbeitbar wie MDF, Leicht wie nichts",
+      "title": "Bearbeitbar wie MDF, federleicht",
       "description": "rPET - Panel kombiniert die Bearbeitbarkeit von MDF mit unglaublich leichtem Gewicht. Sägen, CNC-fräsen, bohren, V-schneiden — das Material verhält sich hervorragend mit Standard-Werkstattwerkzeugen.",
       "quote": "Sie stellen schnell fest, dass rPET - Panel genauso schnell und einfach wie eine MDF-Platte bearbeitet werden kann."
     },
@@ -1627,13 +1626,13 @@
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
       "title": "Akustischer Komfort, Umweltrespekt",
-      "cert1": "Bis zu 50% Recyclinganteil",
+      "cert1": "{pct, select, unknown {Recyceltes PET} other {{pct}% Recyclinganteil}}",
       "cert2": "100% Recyclierbar",
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Klasse A+ Emissionen",
       "badge1Desc": "Aus post-consumer PET-Flaschen hergestellt",
       "badge2Desc": "Vollständige Materialrückgewinnung am Lebensende",
-      "description": "rPET - Panel verkörpert die Kreislaufwirtschaft. Jedes Panel enthält bis zu 50% recycelte PET-Flaschen und am Lebensende kann das gesamte Panel erneut recycelt werden. Kein Abfall, kein Kompromiss.",
+      "description": "rPET - Panel verkörpert die Kreislaufwirtschaft. {pct, select, unknown {Jedes Paneel wird aus recycelten PET-Flaschen hergestellt} other {Jedes Paneel enthält {pct}% recycelte PET-Flaschen}} und am Lebensende kann das gesamte Paneel erneut recycelt werden. Kein Abfall, kein Kompromiss.",
       "cert3Desc": "Klasse 1 zertifiziert für menschliche Sicherheit",
       "cert4Desc": "Keine VOC oder Formaldehyd (ISO 16000)"
     },
@@ -1771,7 +1770,7 @@
       "description": "Bringen Sie natürliche Wärme und anspruchsvollen Stil in jeden Raum mit rWood - Groove Akustikpaneelen. Premium Eichen- und Walnussfurniere kombiniert mit schallabsorbierendem Filzrücken schaffen Harmonie zwischen Ästhetik und Akustik.",
       "usp1": "FSC® Zertifiziertes Holz",
       "usp2": "Klasse A Absorption",
-      "usp3": "Hergestellt in Europa"
+      "usp3": "Kostenloses Rücknahmeprogramm"
     },
     "overview": {
       "tag": "HANDWERKSKUNST",
@@ -1922,7 +1921,7 @@
       "colorChart": "Farb- & Oberflächenguide"
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Europa • FSC® zertifiziert"
+      "freeNote": "Kostenlose Muster • FSC® zertifiziert"
     },
     "faq": {
       "questions": {
@@ -2101,7 +2100,7 @@
       "item4Desc": "30–50 mm Dämmung für optimale Leistung"
     },
     "cta": {
-      "note": "Kostenlose Muster verfügbar • Hergestellt in Europa • FSC® zertifiziert • A2 Brandschutz verfügbar"
+      "note": "Kostenlose Muster verfügbar • FSC® zertifiziert • A2 Brandschutz verfügbar"
     },
     "faq": {
       "questions": {
@@ -2217,7 +2216,7 @@
       "badge5": "Grüne Energie",
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Faserplattenkem — ein holzbasierter, brandgeschützter Kern",
-      "badge3Desc": "In Europa hergestellt, geringere Transportemissionen",
+      "badge3Desc": "Kurze Lieferketten, die Transportemissionen gering halten",
       "badge4Desc": "E1-klassifiziert für gesündere Innenraumluft",
       "description": "rWood - Micro Paneele werden mit Nachhaltigkeit als Kernprinzip gebaut. FSC®-zertifiziertes Holz, emissionsarme Oberflächenbehandlungen und verantwortungsvoll beschaffte Materialien."
     },
@@ -2327,7 +2326,7 @@
       "description": "Vorbehandelte MDF-Paneele, gebürstet, gebeizt und lackiert — keine zusätzliche Veredelung erforderlich. Die authentische Schönheit von Massivholz ohne Kompromisse.",
       "usp1": "FSC® Zertifiziert",
       "usp2": "Vorbehandelt & Gebrauchsfertig",
-      "usp3": "Hergestellt in Europa",
+      "usp3": "Kostenloses Rücknahmeprogramm",
       "ctaSecondary": "Kollektion Entdecken",
       "colorSelector": "Furnier Wählen"
     },
@@ -2364,7 +2363,7 @@
     "advantages": {
       "tag": "VORTEILE",
       "title": "Hauptvorteile",
-      "adv1Title": "Panelformate",
+      "adv1Title": "Paneelformate",
       "adv1": "Mehrere Standardmaße; Sondermaße auf Anfrage",
       "adv2Title": "Grenzenlose Möglichkeiten",
       "adv2": "Für Wandverkleidung, Möbel, Retail-Displays und mehr verwenden"
@@ -2520,7 +2519,7 @@
     },
     "dimensions": {
       "tag": "ABMESSUNGEN",
-      "title": "Panelformate",
+      "title": "Paneelformate",
       "description": "Drei Formate für jede Anwendung — von raumhoher Wandverkleidung bis zu kompakten Möbelelementen.",
       "standardName": "Standard",
       "standardDesc": "Vielseitigstes Format",
@@ -2542,7 +2541,7 @@
       "item3Desc": "Fordern Sie Muster jeder Furnier- und Oberflächenkombination an."
     },
     "cta": {
-      "title": "Bereit, Ihr Projekt zu Elevieren?",
+      "title": "Bereit, Ihr Projekt auf ein neues Niveau zu heben?",
       "description": "Erhalten Sie ein persönliches Angebot, fordern Sie physische Muster an oder sprechen Sie mit unserem Spezifikationsteam über Ihr nächstes Projekt.",
       "circularNote": "Kreislaufrücknahme"
     },
@@ -2779,7 +2778,7 @@
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was Sie über Re-Sound Akustikplatten wissen müssen — von den Grundlagen der Raumakustik bis zu unserem zirkulären Rücknahmeservice.",
+    "subtitle": "Alles, was Sie über Re-Sound Akustikpaneele wissen müssen — von den Grundlagen der Raumakustik bis zu unserem zirkulären Rücknahmeservice.",
     "searchPlaceholder": "Fragen durchsuchen...",
     "noResults": "Keine Fragen passen zu Ihrer Suche.",
     "contact": {
@@ -2818,7 +2817,7 @@
       "howManyPanels": {
         "category": "acoustics",
         "question": "Wie viele Platten brauche ich für meinen Raum?",
-        "answer": "Als Faustregel planen Sie eine absorbierende Fläche, die etwa 20-30 % der Bodenfläche eines typischen Büros, Besprechungsraums oder Restaurants entspricht. Ein Raum von 30 m² profitiert also von etwa 6-9 m² Akustikplatten. Die genaue Zahl hängt von vorhandenen Oberflächen, Raumhöhe und Nutzung ab — für eine präzisere Berechnung führen wir gerne eine Sabine-Berechnung auf Basis Ihres Grundrisses durch. Senden Sie uns die Abmessungen und wir kommen mit einer Empfehlung zurück."
+        "answer": "Als Faustregel planen Sie eine absorbierende Fläche, die etwa 20-30 % der Bodenfläche eines typischen Büros, Besprechungsraums oder Restaurants entspricht. Ein Raum von 30 m² profitiert also von etwa 6-9 m² Akustikpaneele. Die genaue Zahl hängt von vorhandenen Oberflächen, Raumhöhe und Nutzung ab — für eine präzisere Berechnung führen wir gerne eine Sabine-Berechnung auf Basis Ihres Grundrisses durch. Senden Sie uns die Abmessungen und wir kommen mit einer Empfehlung zurück."
       },
       "whereCanUse": {
         "category": "products",
@@ -3448,8 +3447,8 @@
       "tag": "WARUM PARTNER VON RE-SOUND WERDEN",
       "title": "Sechs Gründe, den Hörer abzuheben.",
       "item1": {
-        "title": "Hergestellt in Belgien und Europa",
-        "desc": "Die Textillinien werden in Belgien gefertigt; rWood in Europa; rPET in Polen. Kurze Lieferketten, transparente Herkunft und eine Qualität, hinter der Sie bei einer Ausschreibung stehen können."
+        "title": "Aus eigenen Werken",
+        "desc": "Die Textillinien werden in unserem Werk in Beveren-Waas (Belgien) gefertigt, rPET in unserem Werk in Częstochowa (Polen); rWood wird in Europa produziert. Kurze Lieferketten, transparente Herkunft und eine Qualität, hinter der Sie bei einer Ausschreibung stehen können."
       },
       "item2": {
         "title": "Ein klares, ehrliches Sortiment",
@@ -3665,5 +3664,15 @@
       "primary": "Besuch buchen",
       "secondary": "Muster anfordern"
     }
+  },
+  "manufacturer": {
+    "statement": "Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
+    "madeIn": {
+      "BE": "Hergestellt in Belgien",
+      "PL": "Hergestellt in Polen"
+    },
+    "ownFactories": "Aus eigener Fertigung",
+    "ownFactoriesShort": "Eigene Werke",
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
   }
 }

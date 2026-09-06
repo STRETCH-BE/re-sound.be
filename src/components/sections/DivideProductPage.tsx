@@ -266,7 +266,7 @@ export default function DivideProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                {t('hero.usp3')} design—no installation needed
+                {t('overview.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>

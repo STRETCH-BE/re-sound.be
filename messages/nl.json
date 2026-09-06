@@ -3,9 +3,9 @@
     "homeTitle": "Re-Sound | Gerecycleerd van oorsprong. Circulair van ontwerp.",
     "homeDescription": "Hoogwaardige akoestische oplossingen gemaakt van gerecycleerde materialen. Wij transformeren afval tot stilte—ontworpen voor de planeet, gemaakt in België.",
     "productsTitle": "Producten",
-    "productsDescription": "Ontdek onze circulaire akoestische panelen: Interior, Solid en Divide. 100% gerecycleerd, 100% recyclebaar.",
+    "productsDescription": "Circulaire akoestische panelen & belcabines uit eigen productie: textiel (Interior, Solid, Divide), rWood, rPET en cabines (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "Over Re-Sound",
-    "aboutDescription": "Leer meer over onze missie om circulaire akoestische oplossingen te creëren uit gerecycleerde materialen, met trots gemaakt in België.",
+    "aboutDescription": "Ontdek onze missie: circulaire akoestische oplossingen uit gerecycleerde materialen, gemaakt in onze eigen fabrieken in België en Polen.",
     "sustainabilityTitle": "Duurzaamheid",
     "sustainabilityDescription": "Ontdek hoe we de cirkel sluiten met onze volledig circulaire akoestische panelen—van gerecycleerde materialen tot gratis retourprogramma's.",
     "contactTitle": "Contact",
@@ -24,7 +24,7 @@
     "rwoodMicroDescription": "Precisie micro-geperforeerde akoestische houtpanelen. Dubbel absorptiemechanisme, hoogste brandveiligheid, verlichtingsoptie beschikbaar. FSC gecertificeerd. Gemaakt in Europa.",
     "rwoodGrooveTitle": "rWood Groove Akoestische Houtpanelen | Re-Sound",
     "divideTitle": "Divide Vrijstaande Akoestische Schermen | Re-Sound",
-    "rwoodGrooveDescription": "Premium gegroeide akoestische panelen met FSC-gecertificeerd houtfineer op een gerecycleerde viltkern. Klasse A absorptie, naturel eiken en walnoten afwerkingen. Gemaakt in Europa.",
+    "rwoodGrooveDescription": "Premium gegroefde akoestische panelen met FSC-gecertificeerd houtfineer op een gerecycleerde viltkern. Klasse A absorptie, naturel eiken en walnoten afwerkingen. Gemaakt in Europa.",
     "interiorDescription": "Modulaire akoestische wandpanelen gemaakt van 100% gerecycleerd textiel. Klasse A geluidsabsorptie (αw 1.0), afneembare wasbare bekleding, gemaakt in België. Vanaf €387 per set.",
     "rpetPanelDescription": "Veelzijdige vlakke akoestische panelen van 100% gerecycleerd PET. Bewerkbaar als MDF, OEKO-TEX® gecertificeerd, Klasse A+ emissies. Wanden, plafonds, meubilair. Gemaakt in Polen.",
     "rpetFlexGrooveTitle": "rPET Flex Groove Flexibele Akoestische Panelen | Re-Sound",
@@ -79,7 +79,7 @@
     "rwood": {
       "badge": "rWood Serie · Natuurlijke Afwerklijn",
       "title": "Akoestische panelen met",
-      "titleHighlight": "een naturele ziel.",
+      "titleHighlight": "een natuurlijke ziel.",
       "subtitle": "Echt houtfineer op een hoogperformante gerecycleerde akoestische kern. Biofiele warmte en Klasse A geluidsabsorptie — prachtig gecombineerd.",
       "ctaPrimary": "Ontdek rWood",
       "ctaSecondary": "Bekijk Afwerkingen",
@@ -171,8 +171,8 @@
     },
     "rwood-micro": {
       "title": "rWood - Micro",
-      "description": "Fijne micro-gegroeide akoestische houtpanelen. Subtiele textuur met uitzonderlijke akoestische prestaties voor premium interieurs.",
-      "fullDescription": "rWood - Micro combineert verfijnde esthetiek met hoogperformante akoestiek. Het micro-groefpatroon is nauwkeurig gefreesd in FSC-gecertificeerd houtfineer, waardoor een subtiele textuur ontstaat die zowel het visuele karakter als de akoestische eigenschappen van elke ruimte verbetert."
+      "description": "Microgeperforeerde akoestische houtpanelen met perforaties van 0,5 mm. Een vrijwel naadloos houtoppervlak met hoge absorptie voor premium interieurs.",
+      "fullDescription": "rWood - Micro combineert verfijnde esthetiek met hoogwaardige akoestiek. Microperforaties van 0,5 mm door FSC-gecertificeerd houtfineer vormen een bijna onzichtbaar patroon dat de natuurlijke houtlook behoudt en tegelijk geluid absorbeert."
     },
     "filters": {
       "title": "Producten Filteren",
@@ -196,8 +196,8 @@
     "titleHighlight": "voor elke ruimte.",
     "rwood-perf": {
       "title": "rWood - Perf",
-      "description": "Geperforeerde akoestische houtpanelen die natuurlijke schoonheid combineren met precisietechniek. Superieure klankdiffusie door micro-perforaties.",
-      "fullDescription": "rWood - Perf panelen hebben precisie micro-perforaties door FSC-gecertificeerd houtfineer, waardoor een verfijnde akoestische oplossing ontstaat die absorptie en diffusie in balans brengt."
+      "description": "Geperforeerde akoestische houtpanelen met FSC-gecertificeerd fineer. Perforatiepatronen afgestemd op breedbandabsorptie en een sterk visueel ritme.",
+      "fullDescription": "rWood - Perf panelen combineren FSC-gecertificeerd houtfineer met geperforeerde patronen die het geluid tot in de absorberende kern laten doordringen. De perforatie voegt visuele textuur toe en optimaliseert de geluidsbeheersing over een breed frequentiebereik."
     },
     "rwood-groove": {
       "title": "rWood - Groove",
@@ -207,12 +207,12 @@
     "viewAll": "Alle producten bekijken",
     "rpet-flex-groove": {
       "title": "rPET - Flex Groove",
-      "description": "Flexibele gegroeide akoestische panelen van gerecycleerd PET. Veelzijdige installatieopties met moderne lineaire esthetiek.",
+      "description": "Flexibele gegroefde akoestische panelen van gerecycleerd PET. Veelzijdige installatieopties met moderne lineaire esthetiek.",
       "fullDescription": "rPET - Flex Groove biedt hetzelfde kenmerkende groefdesign als onze standaard rPET-panelen, met extra installatieflexibiliteit. Gemaakt van 100% gerecycleerde PET-flessen leveren deze panelen uitstekende akoestische prestaties terwijl ze zich aanpassen aan verschillende montageconfirguraties."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
-      "description": "Duurzame gegroeide akoestische panelen van gerecycleerd PET. Modern esthetiek met uitstekende akoestische prestaties.",
+      "description": "Duurzame gegroefde akoestische panelen van gerecycleerd PET. Modern esthetiek met uitstekende akoestische prestaties.",
       "fullDescription": "rPET - Groove panelen hebben een kenmerkend lineair patroon gemaakt van 100% gerecycleerde PET-flessen. Het groefdesign maximaliseert geluidsabsorptie terwijl het hedendaagse textuur toevoegt aan wanden en plafonds."
     },
     "rpet-divide": {
@@ -280,7 +280,6 @@
         "description": "50+ kleuren, aangepaste maten en diverse montageopties."
       }
     },
-    "titleHighlight": "de aarde.",
     "belgianLabel": "Belgisch"
   },
   "circular": {
@@ -327,7 +326,7 @@
       "tag": "ONS VERHAAL",
       "title": "Van Afval tot Wonder",
       "paragraph1": "Re-Sound werd geboren uit een simpele vraag: wat als we de bergen textielafval konden transformeren tot iets moois en nuttigs?",
-      "paragraph2": "Opgericht in België in 2021, wilden we akoestische panelen creëren die even goed presteren als traditionele producten terwijl ze 100% circulair zijn.",
+      "paragraph2": "{year, select, unknown {Opgericht in België, wilden we akoestische panelen creëren die even goed presteren als traditionele producten terwijl ze 100% circulair zijn.} other {Opgericht in België in {year}, wilden we akoestische panelen creëren die even goed presteren als traditionele producten terwijl ze 100% circulair zijn.}}",
       "paragraph3": "Vandaag hebben we tonnen textiel van stortplaatsen afgeleid en akoestische oplossingen gecreëerd voor honderden ruimtes in heel Europa.",
       "imagePlaceholder": "Re-Sound Productiefaciliteit",
       "founded": "Opgericht in Beveren-Waas"
@@ -373,13 +372,13 @@
       }
     },
     "belgian": {
-      "tag": "MADE IN BELGIUM",
-      "title": "Trots Belgisch",
-      "description": "Al onze panelen worden ontworpen en geproduceerd in België, wat lokale werkgelegenheid ondersteunt en transportemissies vermindert.",
-      "madeIn": "Gemaakt in België 🇧🇪",
+      "tag": "EIGEN FABRIEKEN",
+      "title": "Uit eigen productie",
+      "description": "Korte aanvoerlijnen, transparante herkomst en kwaliteit waar we bij elk project achter staan.",
+      "madeIn": "Beveren-Waas · Częstochowa",
       "production": {
-        "title": "Lokale Productie",
-        "description": "Productie in Beveren-Waas"
+        "title": "Eigen productie",
+        "description": "Fabrieken in Beveren-Waas (BE) en Częstochowa (PL)"
       },
       "social": {
         "title": "Sociale Onderneming",
@@ -653,7 +652,7 @@
     "error": "Er is iets misgegaan. Probeer het opnieuw."
   },
   "footer": {
-    "description": "Circulaire akoestische oplossingen gemaakt van gerecycleerde materialen. Ontworpen voor de planeet, gemaakt in België.",
+    "description": "Circulaire akoestische oplossingen gemaakt van gerecycleerde materialen.",
     "products": "Producten",
     "company": "Bedrijf",
     "contact": "Contact",
@@ -695,11 +694,11 @@
     "recycled": "Gerecycleerde Materialen",
     "classA": "Klasse A Geluidsabsorptie",
     "fire": "B-s1,d0 Brandklasse",
-    "belgium": "Gemaakt in België",
     "takeback": "Gratis Terugnameprogramma",
     "veneer": "Echte Houtfineer Afwerkingen",
     "colors": "50+ Standaard Kleuren",
-    "custom": "Maatwerk op Aanvraag"
+    "custom": "Maatwerk op Aanvraag",
+    "factories": "Uit eigen productie"
   },
   "rwood": {
     "tag": "rWood Serie — Natuurlijke Afwerklijn",
@@ -933,7 +932,7 @@
       "description": "Transformeer je ruimte met Re-Sound Interior — een compleet akoestisch wandsysteem gemaakt van gerecycleerde materialen. Volledig aanpasbaar, eenvoudig te installeren en ontworpen om aan het einde van zijn levensduur gerecycleerd te worden.",
       "uspAbsorption": "αw 1.0 Absorptie",
       "uspRecyclable": "100% Recycleerbaar",
-      "uspOrigin": "Gemaakt in Europa",
+      "uspOrigin": "Gemaakt in België",
       "priceFrom": "Vanaf",
       "priceValue": "€387",
       "priceUnit": "excl. btw per set van 3 modules",
@@ -1308,7 +1307,7 @@
       "tag": "GERECYCLEERDE PET AKOESTISCHE PANELEN",
       "title": "rPET - Groove",
       "tagline": "Van Flessen naar Stilte",
-      "description": "Transformeer je ruimte met rPET - Groove akoestische panelen. Gemaakt van 100% gerecycleerde plastic flessen, combineren deze elegante gegroeide panelen hedendaags design met uitzonderlijke geluidsabsorptie. Efficiëntie ontmoet elegantie.",
+      "description": "Transformeer je ruimte met rPET - Groove akoestische panelen. Gemaakt van 100% gerecycleerde plastic flessen, combineren deze elegante gegroefde panelen hedendaags design met uitzonderlijke geluidsabsorptie. Efficiëntie ontmoet elegantie.",
       "usp1": "100% Gerecycleerd PET",
       "usp2": "Tot NRC 0.90",
       "usp3": "12 Designerkleuren",
@@ -1557,7 +1556,7 @@
       "tag": "GERECYCLEERDE PET AKOESTISCHE PANELEN",
       "title": "rPET - Panel",
       "tagline": "Duurzame Stilte, Eindeloze Mogelijkheden",
-      "description": "Transformeer elke ruimte met rPET - Panel akoestische panelen. Gemaakt van 100% gerecycleerde PET-flessen leveren deze lichtgewicht maar krachtige geluidsabsorbers maximale akoestische prestaties met minimale milieu-impact.",
+      "description": "Transformeer elke ruimte met rPET - Panel akoestische panelen. {pct, select, unknown {Gemaakt van gerecycleerde PET-flessen leveren deze} other {Gemaakt van {pct}% gerecycleerde PET-flessen leveren deze}} lichtgewicht maar krachtige geluidsabsorbers maximale akoestische prestaties met minimale milieu-impact.",
       "usp1": "100% Recycleerbaar PET",
       "usp2": "αw tot 1,00",
       "usp3": "Slechts 3-4 kg/m²",
@@ -1577,7 +1576,7 @@
       "reason4": "50+ kleuren die aansluiten bij elke interieurbeleving",
       "reason5Title": "Meer Opties?",
       "reason5": "Combineer met rPET Groove voor een volledig designsysteem",
-      "feature1": "Gemaakt van tot 50% gerecycleerde PET-flessen",
+      "feature1": "{pct, select, unknown {Gemaakt van gerecycleerde PET-flessen} other {Gemaakt van {pct}% gerecycleerde PET-flessen}}",
       "feature2": "100% recycleerbaar aan einde levensduur",
       "feature3": "Lichtgewicht: slechts 3-4 kg/m²",
       "feature4": "Vrij van chemische bindmiddelen",
@@ -1626,14 +1625,14 @@
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
-      "title": "Akoestisch Comfort, Milieuresepct",
-      "cert1": "Tot 50% Gerecycleerde Inhoud",
+      "title": "Akoestisch Comfort, Milieurespect",
+      "cert1": "{pct, select, unknown {Gerecycleerd PET} other {{pct}% gerecycleerde inhoud}}",
       "cert2": "100% Recycleerbaar",
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Klasse A+ Emissies",
       "badge1Desc": "Gemaakt van post-consumer PET-flessen",
       "badge2Desc": "Volledige materiaalherstel aan einde levensduur",
-      "description": "rPET - Panel belichaamt de circulaire economie. Elk paneel bevat tot 50% gerecycleerde PET-flessen en aan het einde van zijn levensduur kan het volledige paneel opnieuw worden gerecycleerd. Geen afval, geen compromissen.",
+      "description": "rPET - Panel belichaamt de circulaire economie. {pct, select, unknown {Elk paneel is gemaakt van gerecycleerde PET-flessen} other {Elk paneel bevat {pct}% gerecycleerde PET-flessen}} en aan het einde van zijn levensduur kan het volledige paneel opnieuw worden gerecycleerd. Geen afval, geen compromissen.",
       "cert3Desc": "Klasse 1 gecertificeerd voor menselijke veiligheid",
       "cert4Desc": "Geen VOS of formaldehyde (ISO 16000)"
     },
@@ -1667,8 +1666,8 @@
       "finishOptionsVal": "Stof, HPL, Fineer, Print"
     },
     "sample": {
-      "title": "Vraag uw Staalpackage Aan",
-      "description": "Ervaar de kwaliteit van rPET - Panel zelf. Ons gepersonaliseerd staalpackage bevat kleurstalen, dikteoptis en afwerkingstalen om u te helpen de perfecte keuze te maken.",
+      "title": "Vraag uw stalenpakket aan",
+      "description": "Ervaar de kwaliteit van rPET - Panel zelf. Ons gepersonaliseerd stalenpakket bevat kleurstalen, dikteopties en afwerkingstalen om u te helpen de perfecte keuze te maken.",
       "tag": "AAN DE SLAG",
       "cta": "Gratis Stalen Aanvragen"
     },
@@ -1771,7 +1770,7 @@
       "description": "Breng naturele warmte en verfijnde stijl in elke ruimte met rWood - Groove akoestische panelen. Premium eiken en walnoten fineers gecombineerd met geluidsabsorberende viltbacking creëren harmonie tussen esthetiek en akoestiek.",
       "usp1": "FSC® Gecertificeerd Hout",
       "usp2": "Klasse A Absorptie",
-      "usp3": "Gemaakt in Europa"
+      "usp3": "Gratis terugnameprogramma"
     },
     "overview": {
       "tag": "VAKMANSCHAP",
@@ -1922,7 +1921,7 @@
       "colorChart": "Kleur & Afwerkinggids"
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in Europa • FSC® gecertificeerd"
+      "freeNote": "Gratis stalen • FSC® gecertificeerd"
     },
     "faq": {
       "questions": {
@@ -2101,7 +2100,7 @@
       "item4Desc": "30–50 mm isolatie voor optimale prestaties"
     },
     "cta": {
-      "note": "Gratis stalen beschikbaar • Gemaakt in Europa • FSC® gecertificeerd • A2 brandklasse beschikbaar"
+      "note": "Gratis stalen beschikbaar • FSC® gecertificeerd • A2 brandklasse beschikbaar"
     },
     "faq": {
       "questions": {
@@ -2217,7 +2216,7 @@
       "badge5": "Groene Energie",
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
       "badge2Desc": "Vezelbord kern — een houtig, brandvertragend kern",
-      "badge3Desc": "Vervaardigd in Europa, minder transportemissies",
+      "badge3Desc": "Korte aanvoerketens die transportemissies laag houden",
       "badge4Desc": "E1-klasse voor gezondere binnenlucht",
       "description": "rWood - Micro panelen zijn gebouwd met duurzaamheid als kernprincipe. FSC®-gecertificeerd hout, lage-emissie afwerkingen en verantwoord geproduceerde materialen."
     },
@@ -2327,7 +2326,7 @@
       "description": "Voorgefineerde MDF-panelen, geborsteld, gebeitst en gelakt — geen extra afwerking vereist. De authentieke schoonheid van massief hout zonder compromissen.",
       "usp1": "FSC® Gecertificeerd",
       "usp2": "Voorgefineerd & Gebruiksklaar",
-      "usp3": "Gemaakt in Europa",
+      "usp3": "Gratis terugnameprogramma",
       "ctaSecondary": "Ontdek de Collectie",
       "colorSelector": "Fineer Kiezen"
     },
@@ -2347,7 +2346,7 @@
       "description": "Van bleke Europese eik tot rijke Amerikaanse walnoot — elke houtsoort geselecteerd op neerfkarakter, beschikbaarheid en FSC-certificering."
     },
     "finishes": {
-      "title": "Touch & Bescherming",
+      "title": "Voelbaar & beschermd",
       "description": "De juiste afwerking haalt het beste uit elke houtsoort. Ons meerlaags afwerkingsproces levert een oppervlak dat even aangenaam is om aan te raken als duurzaam — beschermd tegen krassen, vocht en dagelijkse slijtage.",
       "tag": "OPPERVLAKAFWERKINGEN",
       "mattLacquerName": "Super Matte Lak",
@@ -2520,7 +2519,7 @@
     },
     "dimensions": {
       "tag": "AFMETINGEN",
-      "title": "Panelformaten",
+      "title": "Paneelformaten",
       "description": "Drie formaten voor elke toepassing — van wandbekleding op volledige hoogte tot compacte meubelementen.",
       "standardName": "Standaard",
       "standardDesc": "Meest veelzijdig formaat",
@@ -2542,7 +2541,7 @@
       "item3Desc": "Vraag stalen aan van elke fineer- en afwerkingscombinatie."
     },
     "cta": {
-      "title": "Klaar om uw Project te Verheffen?",
+      "title": "Klaar om uw project naar een hoger niveau te tillen?",
       "description": "Vraag een persoonlijke offerte aan, vraag fysieke stalen op of spreek met ons specificatieteam over uw volgende project.",
       "circularNote": "Circulaire Terugname"
     },
@@ -3448,8 +3447,8 @@
       "tag": "WAAROM PARTNER WORDEN MET RE-SOUND",
       "title": "Zes redenen om de telefoon op te pakken.",
       "item1": {
-        "title": "Gemaakt in België en Europa",
-        "desc": "De textiellijnen worden in België gemaakt; rWood in Europa; rPET in Polen. Korte aanvoerlijnen, transparante oorsprong en kwaliteit waar je achter kan staan in een tender."
+        "title": "Uit eigen fabrieken",
+        "desc": "De textiellijnen worden gemaakt in onze fabriek in Beveren-Waas (België) en rPET in onze fabriek in Częstochowa (Polen); rWood wordt in Europa geproduceerd. Korte aanvoerlijnen, transparante oorsprong en kwaliteit waar je achter kan staan in een tender."
       },
       "item2": {
         "title": "Een duidelijke, eerlijke reeks",
@@ -3665,5 +3664,15 @@
       "primary": "Boek een bezoek",
       "secondary": "Vraag samples aan"
     }
+  },
+  "manufacturer": {
+    "statement": "Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
+    "madeIn": {
+      "BE": "Gemaakt in België",
+      "PL": "Gemaakt in Polen"
+    },
+    "ownFactories": "Uit eigen productie",
+    "ownFactoriesShort": "Eigen fabrieken",
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
   }
 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import {
   CONSENT_OPEN_EVENT,
   getConsent,
@@ -77,9 +78,9 @@ export default function CookieConsent() {
           <h3 id="cookie-banner-title">🍪 {t('title')}</h3>
           <p>
             {t('description')}{' '}
-            <a href="/privacy" className="cookie-link">
+            <Link href="/privacy" className="cookie-link" prefetch={false}>
               {t('readPolicy')}
-            </a>
+            </Link>
           </p>
         </div>
 

@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import SoloFlexProductPage from '@/components/sections/SoloFlexProductPage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -95,7 +96,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/solo-flex/hero.jpg',
           category: 'Acoustic phone booths',
-          countryOfOrigin: 'EU',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['solo-flex'].madeIn ?? undefined,
           material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
           specs: [
             { name: 'External dimensions', value: '1020 × 1020 × 2260', unitText: 'mm' },

@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import type { NextRequest } from 'next/server';
+import { PRODUCTS as PRODUCT_DATA } from '@/data/products';
 
 /**
  * Unified dynamic OG image route.
@@ -34,20 +35,36 @@ interface ProductMeta {
   family: 'textile' | 'rwood' | 'rpet' | 'booth';
 }
 
+const MADE_IN: Record<string, string> = { BE: 'Made in Belgium', PL: 'Made in Poland' };
+
+/** "Made in …" only when the country is confirmed in product data. */
+function origin(slug: string): string[] {
+  const madeIn = PRODUCT_DATA[slug]?.madeIn;
+  return madeIn ? [MADE_IN[madeIn]] : [];
+}
+
+/** Recycled-content claim only when the figure is confirmed in product data. */
+function recycled(slug: string, material: string): string[] {
+  const pct = PRODUCT_DATA[slug]?.recycledContentPct;
+  return pct === null || pct === undefined ? [`Recycled ${material}`] : [`${pct}% recycled ${material}`];
+}
+
+const spec = (...parts: Array<string | string[]>) => parts.flat().join(' / ');
+
 const PRODUCTS: Record<string, ProductMeta> = {
-  interior:           { name: 'Interior',         category: 'Modular acoustic wall panels',         spec: 'Class A absorption / Made in Belgium',        family: 'textile' },
-  solid:              { name: 'Solid',            category: 'Large-format acoustic wall panels',    spec: 'Class A absorption / Hook install',           family: 'textile' },
-  divide:             { name: 'Divide',           category: 'Freestanding acoustic screens',         spec: 'Dual-sided / Magnetic modular',              family: 'textile' },
-  'rwood-groove':     { name: 'rWood Groove',     category: 'Grooved acoustic wood panels',          spec: 'FSC / Class A / Made in Europe',              family: 'rwood'   },
-  'rwood-perf':       { name: 'rWood Perf',       category: 'Perforated acoustic wood panels',       spec: 'FSC / Broadband absorption',                 family: 'rwood'   },
-  'rwood-micro':      { name: 'rWood Micro',      category: 'Micro-perforated wood panels',          spec: 'FSC / Dual absorption / Backlit option',     family: 'rwood'   },
-  'rwood-veneer':     { name: 'rWood Panel',      category: 'Wood-veneer acoustic panels',           spec: 'FSC / 10 species / Furniture-grade',         family: 'rwood'   },
-  'rpet-panel':       { name: 'rPET Panel',       category: 'Flat recycled-PET acoustic panels',     spec: '100% recycled PET / OEKO-TEX',               family: 'rpet'    },
-  'rpet-groove':      { name: 'rPET Groove',      category: 'Grooved recycled-PET panels',           spec: '12 colors / 3 thicknesses / B-s1,d0',        family: 'rpet'    },
-  'rpet-flex-groove': { name: 'rPET Flex Groove', category: 'Flexible recycled-PET panels',          spec: 'Bendable / OEKO-TEX / Made in Belgium',     family: 'rpet'    },
-  // ---- Re-Sound soundbooth range ----
-  'solo-flex':        { name: 'Solo Flex',        category: 'Single-person acoustic soundbooth',     spec: '24 dB(A) reduction / 1 m² / 5yr warranty',    family: 'booth'   },
-  'duo':              { name: 'Duo',              category: 'Two-configuration acoustic soundbooth', spec: '26 dB(A) / Flex + Work modes / 5yr',          family: 'booth'   },
+  interior:           { name: 'Interior',         category: 'Modular acoustic wall panels',         spec: spec('Class A absorption', origin('interior')),                  family: 'textile' },
+  solid:              { name: 'Solid',            category: 'Large-format acoustic wall panels',    spec: spec('Class A absorption', 'Hook install', origin('solid')),    family: 'textile' },
+  divide:             { name: 'Divide',           category: 'Freestanding acoustic screens',         spec: spec('Dual-sided', 'Magnetic modular', origin('divide')),       family: 'textile' },
+  'rwood-groove':     { name: 'rWood Groove',     category: 'Grooved acoustic wood panels',          spec: spec('FSC', 'Class A', origin('rwood-groove')),                 family: 'rwood'   },
+  'rwood-perf':       { name: 'rWood Perf',       category: 'Perforated acoustic wood panels',       spec: spec('FSC', 'Broadband absorption', origin('rwood-perf')),      family: 'rwood'   },
+  'rwood-micro':      { name: 'rWood Micro',      category: 'Micro-perforated wood panels',          spec: spec('FSC', 'Dual absorption', 'Backlit option'),               family: 'rwood'   },
+  'rwood-veneer':     { name: 'rWood Panel',      category: 'Wood-veneer acoustic panels',           spec: spec('FSC', '10 species', 'Furniture-grade'),                   family: 'rwood'   },
+  'rpet-panel':       { name: 'rPET Panel',       category: 'Flat recycled-PET acoustic panels',     spec: spec(recycled('rpet-panel', 'PET'), 'OEKO-TEX', origin('rpet-panel')), family: 'rpet' },
+  'rpet-groove':      { name: 'rPET Groove',      category: 'Grooved recycled-PET panels',           spec: spec('12 colors', '3 thicknesses', 'B-s1,d0', origin('rpet-groove')), family: 'rpet' },
+  'rpet-flex-groove': { name: 'rPET Flex Groove', category: 'Flexible recycled-PET panels',          spec: spec('Bendable', 'OEKO-TEX', origin('rpet-flex-groove')),       family: 'rpet'    },
+  // ---- Re-Sound phone booth range ----
+  'solo-flex':        { name: 'Solo Flex',        category: 'One-person office phone booth',         spec: '24 dB(A) reduction / 1 m² / 5yr warranty',    family: 'booth'   },
+  'duo':              { name: 'Duo',              category: 'Two-person office phone booth',         spec: 'Flex + Work modes / 2 m² / 5yr warranty',     family: 'booth'   },
   'modular-xl':       { name: 'Modular XL',       category: 'Scalable acoustic meeting pod',         spec: '25.9 dB(A) / Up to 10 people / Modular',      family: 'booth'   },
 };
 

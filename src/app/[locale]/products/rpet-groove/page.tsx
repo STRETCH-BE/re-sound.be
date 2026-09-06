@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import RpetGrooveProductPage from '@/components/sections/rpetgroovepage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -103,7 +104,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           // URL-encoded so the schema.org image URL is valid.
           image: '/images/products/rpet-groove/rPET%20-%20Groove%20-%20Grey.jpg',
           category: 'Acoustic PET panels',
-          countryOfOrigin: 'BE',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['rpet-groove'].madeIn ?? undefined,
           material: '100% recycled PET',
           specs: [
             { name: 'Sound absorption (αw)', value: '0.85', unitText: 'ISO 11654' },

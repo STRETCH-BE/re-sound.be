@@ -18,10 +18,12 @@
  */
 
 import { locales, type Locale, defaultLocale } from '@/i18n/config';
-
-const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be'
-).replace(/\/$/, '');
+import {
+  FOUNDING_YEAR,
+  PARENT_ORGANIZATION,
+  SITE_URL,
+  SOCIAL_LINKS_LIST,
+} from '@/config/site';
 
 // ---------------------------------------------------------------------------
 // Organization
@@ -42,8 +44,14 @@ export function organizationSchema() {
       height: 512,
     },
     description:
-      'Belgian B2B manufacturer of circular acoustic panels made from recycled textiles, FSC-certified wood veneer, and recycled PET. Free take-back service.',
-    foundingDate: '2024',
+      'Belgian B2B manufacturer of circular acoustic panels and office phone booths made from recycled textiles, FSC-certified wood veneer, and recycled PET. Own plants in Beveren-Waas (BE) and Częstochowa (PL). Free take-back service.',
+    // FOUNDING_YEAR is a placeholder (null) until confirmed — see config/site.ts.
+    ...(FOUNDING_YEAR !== null ? { foundingDate: String(FOUNDING_YEAR) } : {}),
+    parentOrganization: {
+      '@type': 'Organization',
+      name: PARENT_ORGANIZATION.name,
+      url: PARENT_ORGANIZATION.url,
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Gentseweg 309 A3',
@@ -60,10 +68,8 @@ export function organizationSchema() {
       // Full 10-locale coverage matches what the site actually serves.
       availableLanguage: locales as unknown as string[],
     },
-    sameAs: [
-      'https://www.instagram.com/resoundbe',
-      'https://www.linkedin.com/company/re-sound-be',
-    ],
+    // Same list the footer renders — one source of truth (config/site.ts).
+    sameAs: SOCIAL_LINKS_LIST,
   };
 }
 

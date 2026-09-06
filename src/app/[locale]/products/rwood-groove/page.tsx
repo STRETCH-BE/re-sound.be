@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 
 import RWoodGrooveProductPage from '@/components/sections/rwoodgroovepage';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -101,7 +102,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/rwood-groove/hero-rWood-Groove.webp',
           category: 'Acoustic wood panels',
-          countryOfOrigin: 'EU',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['rwood-groove'].madeIn ?? undefined,
           material: 'FSC-certified wood veneer on recycled-felt core',
           specs: [
             { name: 'Sound absorption (αw)', value: '0.85', unitText: 'ISO 11654' },

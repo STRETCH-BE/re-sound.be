@@ -58,6 +58,7 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
     'circular',
     'dualCta',
     'hero',
+    'manufacturer',
     'products',
     'rwood',
     'ticker',

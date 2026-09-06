@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
+import { FOUNDING_YEAR, PARTNERS, PLANTS } from '@/config/site';
 
 import PageHero from '@/components/sections/PageHero';
 import AboutStory from '@/components/sections/AboutStory';
@@ -38,8 +39,9 @@ export async function generateMetadata({
 export default async function AboutPage({ params: { locale } }: AboutPageProps) {
   // Enable static rendering - must be called before any other next-intl functions
   setRequestLocale(locale);
-  
+
   const t = await getTranslations('about');
+  const tm = await getTranslations('manufacturer');
   const messages = pickMessages(await getMessages(), ['about', 'cta']);
 
   return (
@@ -52,19 +54,20 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
       />
 
       {/* Our Story */}
-      <AboutStory />
+      <AboutStory foundingYear={FOUNDING_YEAR} />
 
       {/* Our Values */}
       <AboutValues />
 
-      {/* Belgian Quality Section */}
+      {/* Own factories — the one manufacturer statement, reused sitewide */}
       <section className="belgian-section">
         <div className="belgian-inner">
           <div className="belgian-content">
             <span className="section-tag">{t('belgian.tag')}</span>
             <h2>{t('belgian.title')}</h2>
+            <p>{tm('statement')}</p>
             <p>{t('belgian.description')}</p>
-            
+
             <div className="belgian-features">
               <div className="belgian-feature">
                 <span className="feature-icon">🏭</span>
@@ -73,7 +76,7 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
                   <p>{t('belgian.production.description')}</p>
                 </div>
               </div>
-              
+
               <div className="belgian-feature">
                 <span className="feature-icon">🤝</span>
                 <div>
@@ -81,7 +84,7 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
                   <p>{t('belgian.social.description')}</p>
                 </div>
               </div>
-              
+
               <div className="belgian-feature">
                 <span className="feature-icon">🔬</span>
                 <div>
@@ -91,20 +94,23 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
               </div>
             </div>
           </div>
-          
+
           <div className="belgian-visual">
-            <div className="belgium-flag">
-              <div className="flag-stripe black"></div>
-              <div className="flag-stripe yellow"></div>
-              <div className="flag-stripe red"></div>
-            </div>
+            <ul className="plant-list">
+              {PLANTS.map((plant) => (
+                <li key={plant.city}>
+                  <span className="plant-city">{plant.city}</span>
+                  <span className="plant-country">{plant.country}</span>
+                </li>
+              ))}
+            </ul>
             <p className="made-in">{t('belgian.madeIn')}</p>
           </div>
         </div>
       </section>
 
-      {/* Partners */}
-      <AboutPartners />
+      {/* Partners — hidden until PARTNERS in src/config/site.ts has real entries */}
+      <AboutPartners partners={PARTNERS} />
 
       {/* CTA */}
       <CTA />

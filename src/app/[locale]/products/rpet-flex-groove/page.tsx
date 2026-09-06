@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 
 import RpetFlexGrooveProductPage from '@/components/sections/rpetflexgroovepage';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -101,7 +102,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
           category: 'Acoustic PET panels',
-          countryOfOrigin: 'BE',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['rpet-flex-groove'].madeIn ?? undefined,
           material: '100% recycled PET',
           specs: [
             { name: 'Sound absorption (αw)', value: '0.80', unitText: 'ISO 11654' },

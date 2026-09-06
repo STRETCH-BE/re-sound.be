@@ -40,11 +40,13 @@ export default function ProductsMosaic() {
     },
   ];
 
+  // `alt` is a descriptive, emoji-free sentence (the visual label keeps its
+  // icon); it names the product family shown in each photo.
   const applications = [
-    { label: '⛹️‍♂️ Education - Sports', image: '/images/products/rwood-perf/gallery-7.webp' },
-    { label: '🏢 Office', image: '/images/products/rwood-perf/gallery-3.webp' },
-    { label: '🏡 Private', image: '/images/products/rwood-veneer/gallery-2.webp' },
-    { label: '🏥 Healthcare', image: '/images/products/rpet-panel/gallery-5.webp' },
+    { label: '⛹️‍♂️ Education - Sports', alt: 'rWood Perf perforated wood acoustic panels in a school sports hall', image: '/images/products/rwood-perf/gallery-7.webp' },
+    { label: '🏢 Office', alt: 'rWood Perf perforated wood acoustic panels in an open-plan office', image: '/images/products/rwood-perf/gallery-3.webp' },
+    { label: '🏡 Private', alt: 'rWood Panel wood veneer acoustic panels in a private residence', image: '/images/products/rwood-veneer/gallery-2.webp' },
+    { label: '🏥 Healthcare', alt: 'rPET Panel recycled PET acoustic panels in a healthcare waiting area', image: '/images/products/rpet-panel/gallery-5.webp' },
   ];
 
   return (
@@ -73,7 +75,7 @@ export default function ProductsMosaic() {
             <div className="mc-img">
               <Image
                 src={p.image}
-                alt={t(`${p.slug}.title`)}
+                alt={`${t(`${p.slug}.title`)} — ${t(`${p.slug}.description`)}`}
                 fill
                 style={{ objectFit: 'cover' }}
                 sizes={p.tall ? '(max-width: 768px) 100vw, 35vw' : '(max-width: 768px) 50vw, 22vw'}
@@ -99,7 +101,7 @@ export default function ProductsMosaic() {
             <div className="app-img">
               <Image
                 src={a.image}
-                alt={a.label}
+                alt={a.alt}
                 fill
                 style={{ objectFit: 'cover' }}
                 sizes="25vw"

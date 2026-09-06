@@ -2,8 +2,15 @@
 
 import { useTranslations } from 'next-intl';
 
-export default function AboutStory() {
+interface AboutStoryProps {
+  /** FOUNDING_YEAR from src/config/site.ts — null hides the year everywhere. */
+  foundingYear: number | null;
+}
+
+export default function AboutStory({ foundingYear }: AboutStoryProps) {
   const t = useTranslations('about.story');
+  // ICU select in messages: {year, select, unknown {…} other {… {year} …}}
+  const year = foundingYear === null ? 'unknown' : String(foundingYear);
 
   return (
     <section className="about-story">
@@ -12,7 +19,7 @@ export default function AboutStory() {
           <span className="section-tag">{t('tag')}</span>
           <h2>{t('title')}</h2>
           <p>{t('paragraph1')}</p>
-          <p>{t('paragraph2')}</p>
+          <p>{t('paragraph2', { year })}</p>
           <p>{t('paragraph3')}</p>
         </div>
 
@@ -24,7 +31,9 @@ export default function AboutStory() {
             </div>
           </div>
           <div className="story-stat">
-            <span className="stat-year">2021</span>
+            {foundingYear !== null && (
+              <span className="stat-year">{foundingYear}</span>
+            )}
             <span className="stat-label">{t('founded')}</span>
           </div>
         </div>

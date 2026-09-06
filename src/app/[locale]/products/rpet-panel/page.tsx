@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import RpetPanelProductPage from '@/components/sections/rpetpanelpage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -103,13 +104,18 @@ export default async function Page({ params: { locale } }: PageProps) {
           // with spaces URL-encoded for a valid schema.org image URL.
           image: '/images/products/rpet-panel/rPET%20-%20Panel%20-%207.png',
           category: 'Acoustic PET panels',
-          countryOfOrigin: 'BE',
-          material: '100% recycled PET',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['rpet-panel'].madeIn ?? undefined,
+          material: 'Recycled PET',
           specs: [
             { name: 'Sound absorption (αw)', value: '0.55', unitText: 'ISO 11654' },
             { name: 'NRC', value: '0.55', unitText: 'ASTM C423' },
             { name: 'Fire classification', value: 'B-s1,d0' },
-            { name: 'Recycled content', value: '100', unitText: '%' },
+            // Single source for the recycled-content figure (copy uses the same
+            // field); omitted while it is a placeholder in product data.
+            ...(PRODUCTS['rpet-panel'].recycledContentPct !== null
+              ? [{ name: 'Recycled content', value: String(PRODUCTS['rpet-panel'].recycledContentPct), unitText: '%' }]
+              : []),
             { name: 'VOC emissions', value: 'Class A+' },
             { name: 'Certification', value: 'OEKO-TEX®' },
           ],

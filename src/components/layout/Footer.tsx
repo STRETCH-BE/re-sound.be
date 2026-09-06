@@ -3,10 +3,12 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { openConsentBanner } from '@/lib/consent';
+import { SOCIAL_LINKS } from '@/config/site';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
+  const tm = useTranslations('manufacturer');
 
   // Product names are brand identifiers and stay untranslated (per brand guidelines).
   // Order: textile family, rWood family, rPET family, then booth range.
@@ -36,9 +38,11 @@ export default function Footer() {
     { href: '/contact', label: tNav('contact') },
   ];
 
+  // URLs come from SOCIAL_LINKS (config/site.ts) — the same list feeds the
+  // Organization JSON-LD `sameAs`, so the two can never drift apart again.
   const socialLinks = [
     {
-      href: 'https://www.instagram.com/resoundbe',
+      href: SOCIAL_LINKS.instagram,
       label: 'Instagram',
       icon: (
         <svg viewBox="0 0 24 24">
@@ -47,7 +51,7 @@ export default function Footer() {
       ),
     },
     {
-      href: 'https://www.facebook.com/resoundbe',
+      href: SOCIAL_LINKS.facebook,
       label: 'Facebook',
       icon: (
         <svg viewBox="0 0 24 24">
@@ -56,7 +60,7 @@ export default function Footer() {
       ),
     },
     {
-      href: 'https://www.linkedin.com/company/resoundbe',
+      href: SOCIAL_LINKS.linkedin,
       label: 'LinkedIn',
       icon: (
         <svg viewBox="0 0 24 24">
@@ -65,7 +69,7 @@ export default function Footer() {
       ),
     },
     {
-      href: 'https://www.youtube.com/@re-soundbe',
+      href: SOCIAL_LINKS.youtube,
       label: 'YouTube',
       icon: (
         <svg viewBox="0 0 24 24">
@@ -84,6 +88,7 @@ export default function Footer() {
             Re<span>—</span>Sound
           </Link>
           <p>{t('description')}</p>
+          <p className="footer-manufacturer">{tm('statement')}</p>
           <div className="footer-social">
             {socialLinks.map((social) => (
               <a
@@ -181,6 +186,12 @@ export default function Footer() {
           line-height: 1.7;
           max-width: 300px;
           margin-top: 1.5rem;
+        }
+
+        .footer-brand .footer-manufacturer {
+          font-size: 0.85rem;
+          margin-top: 0.75rem;
+          color: rgba(255, 255, 255, 0.5);
         }
 
         .footer-social {

@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import ModularXLProductPage from '@/components/sections/ModularXLProductPage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -92,7 +93,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/modular-xl/hero.jpg',
           category: 'Acoustic meeting pods',
-          countryOfOrigin: 'EU',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['modular-xl'].madeIn ?? undefined,
           material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
           specs: [
             { name: 'Base external dimensions', value: '2400 × 1800 × 2260', unitText: 'mm' },

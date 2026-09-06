@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import SampleKitModal from './SampleKitModal';
+import { PRODUCTS } from '@/data/products';
 
 interface Veneer {
   name: string;
@@ -69,6 +70,16 @@ const VENEERS: Veneer[] = [
 // The first 5 veneers appear in the strip (groove range — they have full-panel photos)
 const STRIP_VENEERS = VENEERS.slice(0, 5);
 
+// Veneers 0–4 are photographed on rWood Groove, the last three on rWood Panel.
+function veneerAlt(v: Veneer, kind: 'swatch' | 'panel'): string {
+  const product = VENEERS.indexOf(v) < 5 ? 'rWood Groove' : 'rWood Panel';
+  return kind === 'swatch'
+    ? `${v.name} veneer swatch — ${product}`
+    : `${v.name} veneer on ${product} acoustic panel`;
+}
+
+const RWOOD_GROOVE_DATASHEET = PRODUCTS['rwood-groove'].documents.find((d) => d.id === 'datasheet')!.file;
+
 const DEFAULT_HERO = '/images/products/rwood-groove/hero-rWood-Groove.webp';
 
 export default function RWoodShowcase() {
@@ -116,7 +127,7 @@ export default function RWoodShowcase() {
         <div className="rwood-hero-img" key={fadeKey}>
           <Image
             src={currentHero}
-            alt={activeVeneer ? `${activeVeneer.name} rWood acoustic panel` : 'rWood acoustic panel'}
+            alt={activeVeneer ? veneerAlt(activeVeneer, 'panel') : 'rWood Groove acoustic wood panel with natural veneer'}
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
             sizes="100vw"
@@ -174,7 +185,7 @@ export default function RWoodShowcase() {
               <div className="spec-swatch-img">
                 <Image
                   src={activeVeneer.swatchImage}
-                  alt={activeVeneer.name}
+                  alt={veneerAlt(activeVeneer, 'swatch')}
                   fill
                   style={{ objectFit: 'cover' }}
                   sizes="32px"
@@ -208,7 +219,7 @@ export default function RWoodShowcase() {
             >
               <Image
                 src={v.heroImage}
-                alt={`${v.name} veneer`}
+                alt={veneerAlt(v, 'panel')}
                 fill
                 style={{ objectFit: 'cover' }}
                 // Strip is a full-width grid: 5 columns desktop, 3 below 1024px
@@ -246,9 +257,11 @@ export default function RWoodShowcase() {
             <Link href="/products/rwood-groove" className="rwood-btn-warm">
               {t('ctaFullSpec')}
             </Link>
-            <Link href="/documents/rwood-groove/datasheet.pdf" className="rwood-btn-outline" target="_blank">
+            {/* Plain <a>: documents live outside the locale prefix. The path
+                comes from product data (see src/data/products.ts). */}
+            <a href={RWOOD_GROOVE_DATASHEET} className="rwood-btn-outline" target="_blank" rel="noopener">
               {t('ctaDatasheet')}
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -280,7 +293,7 @@ export default function RWoodShowcase() {
                   <div className="swatch-img-wrap">
                     <Image
                       src={v.swatchImage}
-                      alt={v.name}
+                      alt={veneerAlt(v, 'swatch')}
                       fill
                       style={{ objectFit: 'cover' }}
                       // 4-col grid inside the half-width swatches panel on

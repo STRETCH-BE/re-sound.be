@@ -60,10 +60,10 @@ export default function RWoodGrooveProductPage() {
 
 
   const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rWood-Groove/rWood_Groove_datasheet.pdf' },
+    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-groove/datasheet.pdf' },
     { id: 'installation-guide', name: t('downloads.installationGuide'), icon: '🔧', file: '/documents/rwood-groove/installation-guide.pdf' },
     { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-groove/acoustic-test-report.pdf' },
-    { id: 'color-finish-guide', name: 'Color & Finish Guide', icon: '🎨', file: '/documents/rWood-Groove/rWood-Finishes_chart.pdf' },
+    { id: 'color-finish-guide', name: 'Color & Finish Guide', icon: '🎨', file: '/documents/rwood-groove/colour-finish-guide.pdf' },
     { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-groove/fire-certificate.pdf' },
     { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-groove/sustainability-declaration.pdf' },
   ];
@@ -189,7 +189,7 @@ export default function RWoodGrooveProductPage() {
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🇪🇺</span>
+              <span className="usp-icon">🔄</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>

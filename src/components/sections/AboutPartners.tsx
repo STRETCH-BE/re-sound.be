@@ -1,16 +1,22 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import type { Partner } from '@/config/site';
 
-export default function AboutPartners() {
+interface AboutPartnersProps {
+  /** Real partners only — see PARTNERS in src/config/site.ts. */
+  partners: Partner[];
+}
+
+/**
+ * "Partners — Working Together" block. Renders nothing while the partner
+ * list is empty (the previous version showed "Partner 1 … Partner 4"
+ * placeholders on the live site).
+ */
+export default function AboutPartners({ partners }: AboutPartnersProps) {
   const t = useTranslations('about.partners');
 
-  const partners = [
-    { name: 'Partner 1', type: t('types.supplier') },
-    { name: 'Partner 2', type: t('types.research') },
-    { name: 'Partner 3', type: t('types.distribution') },
-    { name: 'Partner 4', type: t('types.certification') },
-  ];
+  if (partners.length === 0) return null;
 
   return (
     <section className="about-partners">
@@ -19,10 +25,18 @@ export default function AboutPartners() {
         <h2>{t('title')}</h2>
 
         <div className="partners-grid">
-          {partners.map((partner, index) => (
-            <div key={index} className="partner-card">
-              <div className="partner-logo">🤝</div>
-              <h3>{partner.name}</h3>
+          {partners.map((partner) => (
+            <div key={partner.name} className="partner-card">
+              <div className="partner-logo" aria-hidden="true">🤝</div>
+              <h3>
+                {partner.url ? (
+                  <a href={partner.url} target="_blank" rel="noopener noreferrer">
+                    {partner.name}
+                  </a>
+                ) : (
+                  partner.name
+                )}
+              </h3>
               <p>{partner.type}</p>
             </div>
           ))}
@@ -76,6 +90,11 @@ export default function AboutPartners() {
         .partner-card h3 {
           font-size: 1rem;
           margin-bottom: 0.25rem;
+        }
+
+        .partner-card h3 a {
+          color: inherit;
+          text-decoration: none;
         }
 
         .partner-card p {

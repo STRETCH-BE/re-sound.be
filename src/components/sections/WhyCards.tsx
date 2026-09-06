@@ -38,9 +38,9 @@ export default function WhyCards() {
 
         <div className="why-header">
           <div className="label-blue">{t('tag')}</div>
-          <h2>
-            {t('title')} <em>{t('titleHighlight')}</em>
-          </h2>
+          {/* The heading is the question only — the old <em>{titleHighlight}</em>
+              fragment ("the earth.") belonged to the subtitle sentence. */}
+          <h2>{t('title')}</h2>
           <p>{t('subtitle')}</p>
         </div>
 

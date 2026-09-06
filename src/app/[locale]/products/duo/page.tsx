@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import DuoProductPage from '@/components/sections/DuoProductPage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -93,7 +94,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/duo/hero-flex.jpg',
           category: 'Acoustic meeting booths',
-          countryOfOrigin: 'EU',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['duo'].madeIn ?? undefined,
           material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
           specs: [
             { name: 'External dimensions', value: '1640 × 1200 × 2260', unitText: 'mm' },

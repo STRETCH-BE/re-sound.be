@@ -7,6 +7,7 @@ import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { PRODUCTS } from '@/data/products';
 
 const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
@@ -32,6 +33,12 @@ const thicknessOptions = [
 // Default hero image
 const defaultHeroImage = '/images/products/rpet-panel/rPET - Panel - 7.png';
 
+
+// Recycled-content figure comes from product data so copy, meta and JSON-LD
+// can never disagree again. 'unknown' selects the figure-less ICU branch.
+const pct: string = PRODUCTS['rpet-panel'].recycledContentPct === null
+  ? 'unknown'
+  : String(PRODUCTS['rpet-panel'].recycledContentPct);
 
 export default function RPETPanelProductPage() {
   const t = useTranslations('rpetPanelPage');
@@ -191,7 +198,7 @@ export default function RPETPanelProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            {t('hero.description')}
+            {t('hero.description', { pct })}
           </p>
           
           <div className="hero-usps">
@@ -309,7 +316,7 @@ export default function RPETPanelProductPage() {
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                {t('overview.feature1')}
+                {t('overview.feature1', { pct })}
               </li>
               <li>
                 <span className="check">✓</span>
@@ -712,13 +719,13 @@ export default function RPETPanelProductPage() {
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>
-              {t('sustainability.description')}
+              {t('sustainability.description', { pct })}
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
                 <span className="sustain-icon">🍾</span>
                 <div>
-                  <h4>{t('sustainability.cert1')}</h4>
+                  <h4>{t('sustainability.cert1', { pct })}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>

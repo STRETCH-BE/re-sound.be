@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 
 import RWoodVeneerProductPage from '@/components/sections/rwoodveneerpage';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -101,7 +102,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
           category: 'Acoustic wood panels',
-          countryOfOrigin: 'EU',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['rwood-veneer'].madeIn ?? undefined,
           material: 'FSC-certified wood veneer',
           specs: [
             { name: 'Fire classification', value: 'B-s2,d0' },

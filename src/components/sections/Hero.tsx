@@ -106,7 +106,7 @@ export default function Hero() {
           <p>{t('circular.subtitle')}</p>
 
           <div className="pill-row">
-            {['♻️ 100% Recycled', '🔄 Free Take-Back', '🎨 50+ Colors', '🇧🇪 Belgium'].map((pill) => (
+            {['♻️ 100% Recycled', '🔄 Free Take-Back', '🎨 50+ Colors', '🏭 Own factories'].map((pill) => (
               <span key={pill} className="pill pill-blue">{pill}</span>
             ))}
           </div>

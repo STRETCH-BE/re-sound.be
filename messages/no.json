@@ -3,9 +3,9 @@
     "homeTitle": "Re-Sound | Resirkulert ved opprinnelse. Sirkulær i design.",
     "homeDescription": "Høytydende akustikkløsninger laget av gjenvunne materialer. Vi forvandler avfall til stillhet – designet for planeten, laget i Belgia.",
     "productsTitle": "Produkter",
-    "productsDescription": "Utforsk vårt sortiment av sirkulære akustikkpaneler: Interior, Solid og Divide. 100% gjenvunnet, 100% resirkulerbare, laget i Belgia.",
+    "productsDescription": "Sirkulære akustikkpaneler og telefonbokser fra egne fabrikker: tekstil (Interior, Solid, Divide), rWood, rPET og bokser (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "About Re-Sound",
-    "aboutDescription": "Learn about our mission to create circular acoustic solutions from recycled materials, proudly made in Belgium.",
+    "aboutDescription": "Bli kjent med vår misjon: sirkulære akustikkløsninger av gjenvunne materialer, produsert i våre egne fabrikker i Belgia og Polen.",
     "sustainabilityTitle": "Bærekraft",
     "sustainabilityDescription": "Oppdag hvordan vi lukker sirkelen med våre fullt sirkulære akustikkpaneler—fra gjenvunne materialer til gratis tilbaketakingsservice.",
     "contactTitle": "Kontakt oss",
@@ -93,11 +93,11 @@
     "recycled": "Gjenvunnede materialer",
     "classA": "Klasse A lydabsorpsjon",
     "fire": "B-s1,d0 Fire Rated",
-    "belgium": "Laget i Belgia",
     "takeback": "Gratis tilbaketakingsprogram",
     "veneer": "Ekte trefiner overflater",
     "colors": "Over 50 standardfarger",
-    "custom": "Spesialmål på forespørsel"
+    "custom": "Spesialmål på forespørsel",
+    "factories": "Fra egne fabrikker"
   },
   "stats": {
     "absorption": "Lydabsorpsjon",
@@ -227,13 +227,13 @@
     },
     "rwood-perf": {
       "title": "rWood - Perf",
-      "description": "Perforerte akustiske trepaneler som kombinerer naturlig skjønnhet med presisjonsteknologi. Overlegen lydabsorpsjon.",
-      "fullDescription": "rWood - Perf paneler har presisjons mikro-perforeringer gjennom FSC-sertifisert trefiner, og skaper en overlegen akustisk absorpsjonsløsning."
+      "description": "Perforerte akustikkpaneler i tre med FSC-sertifisert finér. Perforeringsmønstre tilpasset bredbåndsabsorpsjon og en tydelig visuell rytme.",
+      "fullDescription": "rWood - Perf paneler kombinerer FSC-sertifisert trefinér med perforerte mønstre som slipper lyden gjennom til den absorberende kjernen. Perforeringen gir visuell tekstur og optimaliserer lydkontrollen over et bredt frekvensområde."
     },
     "rwood-micro": {
       "title": "rWood - Micro",
-      "description": "Fine mikro-rillede akustiske trepaneler. Subtil tekstur med enestående akustisk ytelse.",
-      "fullDescription": "rWood - Micro kombinerer raffinert estetikk med høytydende akustikk. Mikro-rillemønsteret skaper en visuelt sofistikert overflate."
+      "description": "Mikroperforerte akustikkpaneler i tre med 0,5 mm perforeringer. En nesten sømløs treoverflate med høy absorpsjon for eksklusive interiører.",
+      "fullDescription": "rWood - Micro forener raffinert estetikk med høytytende akustikk. 0,5 mm mikroperforeringer gjennom FSC-sertifisert trefinér skaper et nesten usynlig mønster som bevarer det naturlige treuttrykket og samtidig absorberer lyd."
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
@@ -297,7 +297,6 @@
   "why": {
     "tag": "WHY RE-SOUND",
     "title": "Why Choose Circular Acoustic Panels?",
-    "titleHighlight": "planeten.",
     "belgianLabel": "Belgian",
     "subtitle": "Vi tror at god akustikk ikke bør koste planeten. Panelene våre beviser at bærekraftige valg kan levere verdensklasse ytelse.",
     "diagramLabel": "Sirkulær",
@@ -378,10 +377,10 @@
       "tag": "VÅR HISTORIE",
       "title": "Fra avfall til under",
       "paragraph1": "Re-Sound ble skapt fra et enkelt spørsmål: hva om vi kunne forvandle de fjellene av tekstilavfall som produseres hvert år til noe vakkert og funksjonelt?",
-      "paragraph2": "Grunnlagt i Belgia i 2021 satte vi oss fore å skape akustikkpaneler som yter like bra som tradisjonelle materialer og er 100% sirkulære.",
+      "paragraph2": "{year, select, unknown {Grunnlagt i Belgia satte vi oss fore å skape akustikkpaneler som yter like bra som tradisjonelle materialer og er 100% sirkulære.} other {Grunnlagt i Belgia i {year} satte vi oss fore å skape akustikkpaneler som yter like bra som tradisjonelle materialer og er 100% sirkulære.}}",
       "paragraph3": "I dag har vi omdirigert tonn med tekstiler fra deponier og skapt akustikkløsninger for hundrevis av prosjekter over hele Europa.",
       "imagePlaceholder": "Re-Sound Production Facility",
-      "founded": "Founded in Beveren-Waas"
+      "founded": "Grunnlagt i Beveren-Waas"
     },
     "values": {
       "tag": "VÅRE VERDIER",
@@ -424,13 +423,13 @@
       }
     },
     "belgian": {
-      "tag": "LAGET I BELGIA",
-      "title": "Proudly Belgian",
-      "description": "All our panels are designed and manufactured in Belgium, supporting local employment and reducing transport emissions.",
-      "madeIn": "Laget i Belgia 🇧🇪",
+      "tag": "EGNE FABRIKKER",
+      "title": "Produsert i egne fabrikker",
+      "description": "Korte forsyningskjeder, transparent opprinnelse og kvalitet vi står inne for i hvert prosjekt.",
+      "madeIn": "Beveren-Waas · Częstochowa",
       "production": {
-        "title": "Local Production",
-        "description": "Manufacturing in Beveren-Waas"
+        "title": "Egen produksjon",
+        "description": "Fabrikker i Beveren-Waas (BE) og Częstochowa (PL)"
       },
       "social": {
         "title": "Social Enterprise",
@@ -704,7 +703,7 @@
     "error": "Noe gikk galt. Prøv igjen."
   },
   "footer": {
-    "description": "Sirkulære akustikkløsninger laget av gjenvunne materialer. Designet for planeten, laget i Belgia.",
+    "description": "Sirkulære akustikkløsninger laget av gjenvunne materialer.",
     "products": "Produkter",
     "company": "Bedrift",
     "contact": "Kontakt",
@@ -933,7 +932,7 @@
       "description": "Transformer rommet ditt med Re-Sound Interior—et komplett akustisk veggsystem laget av gjenvunne materialer.",
       "uspAbsorption": "αw 1,0 Absorpsjon",
       "uspRecyclable": "100% Resirkulerbar",
-      "uspOrigin": "Laget i Europa",
+      "uspOrigin": "Laget i Belgia",
       "priceFrom": "Fra",
       "priceValue": "€387",
       "priceUnit": "excl. VAT per set of 3 modules",
@@ -1192,7 +1191,7 @@
       "tag": "INNOVASJON",
       "title": "Redefine Your Space",
       "description": "Re-Sound Divide er det første frittstående akustiske produktet designet for ultimate fleksibilitet. Lag rominndelinger, privathetssoner eller unike konfigurasjoner.",
-      "feature1": "Freestanding design—no installation needed",
+      "feature1": "Frittstående design – ingen montering nødvendig",
       "feature2": "Magnetic connection system",
       "feature3": "Lightweight and easy to move",
       "feature4": "Sirkulær av design"
@@ -1560,7 +1559,7 @@
       "tag": "GJENVUNNE PET AKUSTIKKPANELER",
       "title": "rPET - Panel",
       "tagline": "Bærekraftig Stillhet, Uendelige Muligheter",
-      "description": "Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
+      "description": "Transform any space with rPET - Panel acoustic panels. {pct, select, unknown {Made from recycled PET bottles, these} other {Made from {pct}% recycled PET bottles, these}} lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
       "usp1": "100% Resirkulerbart PET",
       "usp2": "Klasse A αw 0,95",
       "usp3": "Lett 3-4 kg/m²",
@@ -1581,7 +1580,7 @@
       "reason5Title": "Vil du ha flere alternativer?",
       "reason5": "Combine with rPET Groove for a complete design system",
       "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. Each panel diverts plastic waste from landfills while creating healthier, quieter environments. It's the sound-absorbing alternative to MDF—but at a fraction of the weight.",
-      "feature1": "Made from up to 50% recycled PET bottles",
+      "feature1": "{pct, select, unknown {Made from recycled PET bottles} other {Made from {pct}% recycled PET bottles}}",
       "feature2": "100% recyclable at end of life",
       "feature3": "Lettvekt: kun 3-4 kg/m²",
       "feature4": "Fri for kjemiske bindemidler"
@@ -1636,7 +1635,7 @@
       "cert4": "Klasse A+ utslipp",
       "badge1Desc": "Made from post-consumer PET bottles",
       "badge2Desc": "Full material recovery at end of life",
-      "description": "rPET - Panel embodies the circular economy. Each panel contains up to 50% recycled PET bottles, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
+      "description": "rPET - Panel embodies the circular economy. {pct, select, unknown {Each panel is made from recycled PET bottles} other {Each panel contains {pct}% recycled PET bottles}}, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
       "cert3Desc": "Class 1 certified for human safety",
       "cert4Desc": "No VOC or formaldehyde (ISO 16000)"
     },
@@ -1774,7 +1773,7 @@
       "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
       "usp1": "FSC® sertifisert tre",
       "usp2": "Klasse A absorpsjon",
-      "usp3": "Laget i Europa"
+      "usp3": "Gratis returordning"
     },
     "overview": {
       "tag": "HÅNDVERK",
@@ -1925,7 +1924,7 @@
       "colorChart": "Farve- og overflate veiledning"
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Europe • FSC® Certified"
+      "freeNote": "Free samples available • FSC® Certified"
     },
     "faq": {
       "questions": {
@@ -2104,7 +2103,7 @@
       "item4Desc": "30–50 mm insulation for optimal performance"
     },
     "cta": {
-      "note": "Free samples available • Made in Europe • FSC® Certified • A2 fire rating available"
+      "note": "Free samples available • FSC® Certified • A2 fire rating available"
     },
     "faq": {
       "questions": {
@@ -2327,7 +2326,7 @@
       "description": "Premium finerte MDF-paneler, børstede, beiset og lakkerte — klar til installasjon. Tilgjengelig i 10 trefinerarter og 3 overflater. Laget i Belgia.",
       "usp1": "Ekte Trefiner",
       "usp2": "Forhåndsbehandlet og Klar til Bruk",
-      "usp3": "FSC® Sertifisert",
+      "usp3": "Gratis returordning",
       "ctaSecondary": "Se Koleksjon",
       "colorSelector": "Velg Finer"
     },
@@ -3665,5 +3664,15 @@
       "primary": "Bestill et besøk",
       "secondary": "Be om prøver"
     }
+  },
+  "manufacturer": {
+    "statement": "Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).",
+    "madeIn": {
+      "BE": "Laget i Belgia",
+      "PL": "Laget i Polen"
+    },
+    "ownFactories": "Fra egne fabrikker",
+    "ownFactoriesShort": "Egne fabrikker",
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
   }
 }

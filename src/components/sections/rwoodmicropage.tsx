@@ -799,7 +799,7 @@ export default function RWoodMicroProductPage() {
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🇪🇺</span>
+                <span className="sustain-icon">🚚</span>
                 <div>
                   <h4>{t('sustainability.badge3')}</h4>
                   <p>{t('sustainability.badge3Desc')}</p>

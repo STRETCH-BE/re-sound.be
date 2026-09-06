@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 
 import DivideProductPage from '@/components/sections/DivideProductPage';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -101,7 +102,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/divide/hero-denim.webp',
           category: 'Freestanding acoustic dividers',
-          countryOfOrigin: 'BE',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['divide'].madeIn ?? undefined,
           material: 'Recycled textile fibres',
           specs: [
             { name: 'Sound absorption (αw)', value: '0.90', unitText: 'ISO 11654' },

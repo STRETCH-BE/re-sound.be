@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 export default function CircularLoop() {
   const t = useTranslations('circular');
+  const tm = useTranslations('manufacturer');
 
   const steps = [
     {
@@ -41,6 +42,8 @@ export default function CircularLoop() {
             {t('title')} <em>{t('titleHighlight')}</em>
           </h2>
           <p className="loop-intro">{t('subtitle')}</p>
+          {/* One manufacturer statement, reused sitewide (About, footer, products). */}
+          <p className="loop-manufacturer">{tm('statement')}</p>
 
           <div className="step-grid">
             {steps.map((s) => (
@@ -168,6 +171,14 @@ export default function CircularLoop() {
           font-size: 0.98rem;
           line-height: 1.8;
           color: rgba(255, 255, 255, 0.52);
+          max-width: 30rem;
+          margin-bottom: 1rem;
+        }
+
+        .loop-manufacturer {
+          font-size: 0.9rem;
+          line-height: 1.7;
+          color: rgba(255, 255, 255, 0.7);
           max-width: 30rem;
           margin-bottom: 2.5rem;
         }

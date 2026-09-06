@@ -172,7 +172,7 @@ export default function InteriorProductPage() {
               <span className="usp-text">{t('hero.uspRecyclable')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🇪🇺</span>
+              <span className="usp-icon">🇧🇪</span>
               <span className="usp-text">{t('hero.uspOrigin')}</span>
             </div>
           </div>

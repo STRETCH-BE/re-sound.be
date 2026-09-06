@@ -9,7 +9,7 @@ export default function Ticker() {
     { icon: '♻️', label: t('recycled') },
     { icon: '🔊', label: t('classA') },
     { icon: '🔥', label: t('fire') },
-    { icon: '🇧🇪', label: t('belgium') },
+    { icon: '🏭', label: t('factories') },
     { icon: '🔄', label: t('takeback') },
     { icon: '🪵', label: t('veneer') },
     { icon: '🎨', label: t('colors') },

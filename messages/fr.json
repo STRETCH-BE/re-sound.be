@@ -3,9 +3,9 @@
     "homeTitle": "Re-Sound | Recyclé à l'origine. Circulaire par conception.",
     "homeDescription": "Solutions acoustiques haute performance fabriquées à partir de matériaux recyclés. Nous transformons les déchets en silence—conçu pour la planète, fabriqué en Belgique.",
     "productsTitle": "Produits",
-    "productsDescription": "Découvrez notre gamme de panneaux acoustiques circulaires : Interior, Solid et Divide. 100% recyclés, 100% recyclables.",
+    "productsDescription": "Panneaux acoustiques circulaires et cabines de nos usines : textile (Interior, Solid, Divide), rWood, rPET et cabines (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "À propos de Re-Sound",
-    "aboutDescription": "Découvrez notre mission de créer des solutions acoustiques circulaires à partir de matériaux recyclés, fièrement fabriquées en Belgique.",
+    "aboutDescription": "Découvrez notre mission : des solutions acoustiques circulaires en matériaux recyclés, fabriquées dans nos propres usines en Belgique et en Pologne.",
     "sustainabilityTitle": "Durabilité",
     "sustainabilityDescription": "Découvrez comment nous bouclons la boucle avec nos panneaux acoustiques entièrement circulaires—des matériaux recyclés aux programmes de retour gratuits.",
     "contactTitle": "Contactez-nous",
@@ -171,8 +171,8 @@
     },
     "rwood-micro": {
       "title": "rWood - Micro",
-      "description": "Panneaux acoustiques en bois à micro-rainures fines. Texture subtile avec des performances acoustiques exceptionnelles pour les intérieurs premium.",
-      "fullDescription": "rWood - Micro combine une esthétique raffinée avec une acoustique haute performance. Le motif de micro-rainures est fraisé avec précision dans un placage bois certifié FSC."
+      "description": "Panneaux acoustiques en bois microperforé avec perforations de 0,5 mm. Une surface bois quasi continue à haute absorption pour les intérieurs haut de gamme.",
+      "fullDescription": "rWood - Micro allie une esthétique raffinée à une acoustique haute performance. Des microperforations de 0,5 mm dans un placage bois certifié FSC créent un motif presque invisible qui préserve l’aspect du bois naturel tout en absorbant le son."
     },
     "filters": {
       "title": "Filtrer les Produits",
@@ -196,8 +196,8 @@
     "titleHighlight": "pour chaque espace.",
     "rwood-perf": {
       "title": "rWood - Perf",
-      "description": "Panneaux acoustiques en bois perforé alliant beauté naturelle et ingénierie de précision.",
-      "fullDescription": "Les panneaux rWood - Perf comportent des micro-perforations de précision à travers un placage bois certifié FSC."
+      "description": "Panneaux acoustiques en bois perforé avec placage certifié FSC. Motifs de perforation étudiés pour une absorption large bande et un rythme visuel affirmé.",
+      "fullDescription": "Les panneaux rWood - Perf associent un placage bois certifié FSC à des motifs perforés qui laissent le son atteindre le noyau absorbant. La perforation apporte une texture visuelle tout en optimisant le contrôle acoustique sur une large plage de fréquences."
     },
     "rwood-groove": {
       "title": "rWood - Groove",
@@ -260,7 +260,7 @@
   "why": {
     "tag": "POURQUOI RE-SOUND",
     "title": "Pourquoi Choisir des Panneaux Acoustiques Circulaires ?",
-    "subtitle": "Nous croyons qu'une excellente acoustique ne doit pas coûter cher à la planète. Nos panneaux prouvent que les choix durables peuvent offrir des performances supérieures.",
+    "subtitle": "Nous croyons qu’une excellente acoustique ne doit pas coûter cher à la planète : nos panneaux prouvent que les choix durables peuvent offrir des performances supérieures.",
     "diagramLabel": "Circulaire",
     "features": {
       "performance": {
@@ -280,7 +280,6 @@
         "description": "50+ couleurs, tailles personnalisées et diverses options de montage."
       }
     },
-    "titleHighlight": "la planète.",
     "belgianLabel": "Belge"
   },
   "circular": {
@@ -327,10 +326,10 @@
       "tag": "NOTRE HISTOIRE",
       "title": "Du Déchet à la Merveille",
       "paragraph1": "Re-Sound est né d'une question simple : et si nous pouvions transformer les montagnes de déchets textiles en quelque chose de beau et d'utile ?",
-      "paragraph2": "Fondé en Belgique en 2021, nous avons entrepris de créer des panneaux acoustiques qui performent aussi bien que les produits traditionnels tout en étant 100% circulaires.",
+      "paragraph2": "{year, select, unknown {Fondée en Belgique, notre entreprise a entrepris de créer des panneaux acoustiques qui performent aussi bien que les produits traditionnels tout en étant 100% circulaires.} other {Fondé en Belgique en {year}, nous avons entrepris de créer des panneaux acoustiques qui performent aussi bien que les produits traditionnels tout en étant 100% circulaires.}}",
       "paragraph3": "Aujourd'hui, nous avons détourné des tonnes de textiles des décharges et créé des solutions acoustiques pour des centaines d'espaces à travers l'Europe.",
       "imagePlaceholder": "Installation de Production Re-Sound",
-      "founded": "Fondé à Beveren-Waas"
+      "founded": "Fondée à Beveren-Waas"
     },
     "values": {
       "tag": "NOS VALEURS",
@@ -373,13 +372,13 @@
       }
     },
     "belgian": {
-      "tag": "MADE IN BELGIUM",
-      "title": "Fièrement Belge",
-      "description": "Tous nos panneaux sont conçus et fabriqués en Belgique, soutenant l'emploi local et réduisant les émissions de transport.",
-      "madeIn": "Fabriqué en Belgique 🇧🇪",
+      "tag": "NOS PROPRES USINES",
+      "title": "Fabriqué dans nos propres usines",
+      "description": "Circuits courts, origine transparente et une qualité que nous assumons sur chaque projet.",
+      "madeIn": "Beveren-Waas · Częstochowa",
       "production": {
-        "title": "Production Locale",
-        "description": "Fabrication à Beveren-Waas"
+        "title": "Production propre",
+        "description": "Usines à Beveren-Waas (BE) et Częstochowa (PL)"
       },
       "social": {
         "title": "Entreprise Sociale",
@@ -653,7 +652,7 @@
     "error": "Une erreur est survenue. Veuillez réessayer."
   },
   "footer": {
-    "description": "Solutions acoustiques circulaires fabriquées à partir de matériaux recyclés. Conçu pour la planète, fabriqué en Belgique.",
+    "description": "Solutions acoustiques circulaires fabriquées à partir de matériaux recyclés.",
     "products": "Produits",
     "company": "Entreprise",
     "contact": "Contact",
@@ -695,17 +694,17 @@
     "recycled": "Matériaux Recyclés",
     "classA": "Absorption Sonore Classe A",
     "fire": "Classement au Feu B-s1,d0",
-    "belgium": "Fabriqué en Belgique",
     "takeback": "Programme de Reprise Gratuit",
     "veneer": "Finitions en Bois Véritable",
     "colors": "50+ Couleurs Standard",
-    "custom": "Dimensions Personnalisées sur Demande"
+    "custom": "Dimensions Personnalisées sur Demande",
+    "factories": "Fabriqué dans nos propres usines"
   },
   "rwood": {
     "tag": "Série rWood — Ligne de Finitions Naturelles",
     "heroTitle": "Là où la nature",
     "heroTitleHighlight": "rencontre l'acoustique.",
-    "heroSubtitle": "Un cœur acoustique recyclé habillé de vrai placage bois. Deux variantes : Massif pour une élégance sans couture, Perforé pour une absorption maximale.",
+    "heroSubtitle": "Un cœur acoustique recyclé habillé de vrai placage bois. Deux variantes : Massif pour une élégance sans joint visible, Perforé pour une absorption maximale.",
     "ctaExplore": "Découvrir rWood",
     "ctaSample": "Demander un Échantillon",
     "floatTag": "rWood · RW-W-M-OAK · Chêne Naturel",
@@ -933,7 +932,7 @@
       "description": "Transformez votre espace avec Re-Sound Interior — un système mural acoustique complet fabriqué à partir de matériaux recyclés. Entièrement personnalisable, facile à installer et conçu pour être recyclé en fin de vie.",
       "uspAbsorption": "αw 1.0 Absorption",
       "uspRecyclable": "100% Recyclable",
-      "uspOrigin": "Fabriqué en Europe",
+      "uspOrigin": "Fabriqué en Belgique",
       "priceFrom": "À partir de",
       "priceValue": "€387",
       "priceUnit": "HT par lot de 3 modules",
@@ -1557,7 +1556,7 @@
       "tag": "PANNEAUX ACOUSTIQUES EN PET RECYCLÉ",
       "title": "rPET - Panel",
       "tagline": "Silence Durable, Possibilités Infinies",
-      "description": "Transformez n'importe quel espace avec les panneaux acoustiques rPET - Panel. Fabriqués à partir de 100% de bouteilles PET recyclées, ces absorbeurs sonores légers mais puissants offrent des performances acoustiques maximales avec un impact environnemental minimal.",
+      "description": "Transformez n’importe quel espace avec les panneaux acoustiques rPET - Panel. {pct, select, unknown {Fabriqués à partir de bouteilles PET recyclées, ces} other {Fabriqués à partir de {pct}% de bouteilles PET recyclées, ces}} absorbeurs sonores légers mais puissants offrent des performances acoustiques maximales avec un impact environnemental minimal.",
       "usp1": "PET 100% Recyclable",
       "usp2": "αw jusqu'à 1.00",
       "usp3": "Seulement 3-4 kg/m²",
@@ -1577,7 +1576,7 @@
       "reason4": "50+ couleurs pour compléter toute vision de design d'intérieur",
       "reason5Title": "Plus d'Options ?",
       "reason5": "Combinez avec rPET Groove pour un système de design complet",
-      "feature1": "Fabriqué jusqu'à 50% à partir de bouteilles PET recyclées",
+      "feature1": "{pct, select, unknown {Fabriqué à partir de bouteilles PET recyclées} other {Fabriqué à {pct}% à partir de bouteilles PET recyclées}}",
       "feature2": "100% recyclable en fin de vie",
       "feature3": "Léger : seulement 3-4 kg/m²",
       "feature4": "Sans liants chimiques",
@@ -1627,13 +1626,13 @@
     "sustainability": {
       "tag": "DURABILITÉ",
       "title": "Confort Acoustique, Respect de l'Environnement",
-      "cert1": "Jusqu'à 50% de Contenu Recyclé",
+      "cert1": "{pct, select, unknown {PET recyclé} other {{pct}% de contenu recyclé}}",
       "cert2": "100% Recyclable",
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Émissions Classe A+",
       "badge1Desc": "Fabriqué à partir de bouteilles PET post-consommation",
       "badge2Desc": "Récupération totale des matériaux en fin de vie",
-      "description": "rPET - Panel incarne l'économie circulaire. Chaque panneau contient jusqu'à 50% de bouteilles PET recyclées et, en fin de vie, l'ensemble du panneau peut être recyclé à nouveau. Pas de déchets, pas de compromis.",
+      "description": "rPET - Panel incarne l’économie circulaire. {pct, select, unknown {Chaque panneau est fabriqué à partir de bouteilles PET recyclées} other {Chaque panneau contient {pct}% de bouteilles PET recyclées}} et, en fin de vie, l’ensemble du panneau peut être recyclé à nouveau. Pas de déchets, pas de compromis.",
       "cert3Desc": "Classe 1 certifié pour la sécurité humaine",
       "cert4Desc": "Pas de COV ni de formaldéhyde (ISO 16000)"
     },
@@ -1771,7 +1770,7 @@
       "description": "Apportez chaleur naturelle et style sophistiqué à tout espace avec les panneaux acoustiques rWood - Groove. Des placages premium de chêne et noyer combinés à un dos en feutre absorbant créent l'harmonie entre esthétique et acoustique.",
       "usp1": "Bois Certifié FSC®",
       "usp2": "Absorption Classe A",
-      "usp3": "Fabriqué en Europe"
+      "usp3": "Programme de reprise gratuit"
     },
     "overview": {
       "tag": "ARTISANAT",
@@ -1810,7 +1809,7 @@
     },
     "installation": {
       "tag": "INSTALLATION FACILE",
-      "title": "Installation Sans Couture",
+      "title": "Installation sans joint visible",
       "step1Title": "Préparer la Surface",
       "step1Desc": "Poser tasseaux ou appliquer colle sur surface propre et sèche",
       "step2Title": "Positionner le Premier Panneau",
@@ -1824,7 +1823,7 @@
     },
     "sustainability": {
       "tag": "DURABILITÉ",
-      "title": "Construit avec Intégrité",
+      "title": "Fabriqué avec soin",
       "badge1": "Certifié FSC®",
       "badge1Desc": "Bois issu de forêts gérées de façon responsable",
       "badge2": "Feutre Recyclé",
@@ -1922,7 +1921,7 @@
       "colorChart": "Guide Couleurs & Finitions"
     },
     "cta2": {
-      "freeNote": "Échantillons gratuits • Fabriqué en Europe • Certifié FSC®"
+      "freeNote": "Échantillons gratuits • Certifié FSC®"
     },
     "faq": {
       "questions": {
@@ -2017,7 +2016,7 @@
     },
     "installation": {
       "tag": "FIXATION DISSIMULÉE",
-      "title": "Installation Sans Couture",
+      "title": "Installation sans joint visible",
       "step1Title": "Monter la Sous-structure",
       "step1Desc": "Installer les rails métalliques sur la structure mur ou plafond",
       "step2Title": "Poser l'Isolation",
@@ -2101,7 +2100,7 @@
       "item4Desc": "Isolant 30–50 mm pour performances optimales"
     },
     "cta": {
-      "note": "Échantillons gratuits disponibles • Fabriqué en Europe • Certifié FSC® • Classement A2 disponible"
+      "note": "Échantillons gratuits disponibles • Certifié FSC® • Classement A2 disponible"
     },
     "faq": {
       "questions": {
@@ -2203,7 +2202,7 @@
       "step2Desc": "Laine minérale optionnelle pour une absorption accrue",
       "step3Title": "Clipser les Panneaux",
       "step3Desc": "Système de clips dissimulé pour montage sans outil",
-      "step4Title": "Résultat Sans Couture",
+      "step4Title": "Résultat sans joint visible",
       "step4Desc": "Les chants surépaissés créent une surface bois continue",
       "description": "Les panneaux rWood - Micro sont installés avec notre système de fixation dissimulée, garantissant des fixations invisibles et une finition impeccable. Le système permet des applications en mur et plafond, avec des transitions continues entre panneaux grâce aux chants surépaissés."
     },
@@ -2217,7 +2216,7 @@
       "badge5": "Énergie Verte",
       "badge1Desc": "Bois issu de forêts gérées de façon responsable",
       "badge2Desc": "Cœur en fibres — un cœur à base de bois, certifié au feu",
-      "badge3Desc": "Fabriqué en Europe, réduisant les émissions de transport",
+      "badge3Desc": "Circuits courts qui limitent les émissions liées au transport",
       "badge4Desc": "Classé E1 pour une meilleure qualité de l'air intérieur",
       "description": "Les panneaux rWood - Micro sont conçus avec la durabilité comme principe fondamental. Bois certifié FSC®, finitions à faibles émissions et matériaux d'approvisionnement responsable."
     },
@@ -2327,7 +2326,7 @@
       "description": "Panneaux MDF préfinis, brossés, teintés et laqués — sans finition supplémentaire requise. La beauté authentique du bois massif sans compromis.",
       "usp1": "Certifié FSC®",
       "usp2": "Préfini & Prêt à l'Emploi",
-      "usp3": "Fabriqué en Europe",
+      "usp3": "Programme de reprise gratuit",
       "ctaSecondary": "Explorer la Collection",
       "colorSelector": "Sélectionner le Placage"
     },
@@ -2603,7 +2602,7 @@
       "minRadius": "Rayon de Courbure Minimum",
       "feature1Title": "Découpe V Précise",
       "feature1Desc": "Rainures ingéniérées pour une flexibilité contrôlée",
-      "feature2Title": "Courbes Sans Couture",
+      "feature2Title": "Courbes sans joint visible",
       "feature2Desc": "Transitions douces sur toute surface courbe",
       "feature3Title": "Minimum de Chutes",
       "feature3Desc": "Design efficace réduit les chutes de découpe",
@@ -3448,8 +3447,8 @@
       "tag": "POURQUOI DEVENIR PARTENAIRE DE RE-SOUND",
       "title": "Six raisons de décrocher le téléphone.",
       "item1": {
-        "title": "Fabriqué en Belgique et en Europe",
-        "desc": "Les lignes textiles sont fabriquées en Belgique ; rWood en Europe ; rPET en Pologne. Chaînes d'approvisionnement courtes, origine transparente et qualité défendable en appel d'offres."
+        "title": "Fabriqué dans nos propres usines",
+        "desc": "Les lignes textiles sont fabriquées dans notre usine de Beveren-Waas (Belgique) et le rPET dans notre usine de Częstochowa (Pologne) ; rWood est produit en Europe. Chaînes d’approvisionnement courtes, origine transparente et qualité défendable en appel d’offres."
       },
       "item2": {
         "title": "Une gamme claire et honnête",
@@ -3665,5 +3664,15 @@
       "primary": "Réserver une visite",
       "secondary": "Demander des échantillons"
     }
+  },
+  "manufacturer": {
+    "statement": "Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne).",
+    "madeIn": {
+      "BE": "Fabriqué en Belgique",
+      "PL": "Fabriqué en Pologne"
+    },
+    "ownFactories": "Fabriqué dans nos propres usines",
+    "ownFactoriesShort": "Nos usines",
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
   }
 }

@@ -68,7 +68,7 @@ export async function generateMetadata({
       default: 'Re-Sound | Acoustics Made Circular',
     },
     description:
-      'High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.',
+      'Circular acoustic panels and office phone booths from recycled materials, made in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).',
     keywords: [
       'acoustic panels',
       'circular economy',
@@ -129,6 +129,7 @@ export default async function LocaleLayout({
     'nav',
     'footer',
     'cookies',
+    'manufacturer',
   ]);
 
   // Get the full locale code for the HTML lang attribute (e.g. 'en-BE', 'es-ES')

@@ -216,7 +216,7 @@ export default function RWoodPanelProductPage() {
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🇪🇺</span>
+              <span className="usp-icon">🔄</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>

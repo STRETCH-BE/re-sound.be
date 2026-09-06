@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 
 import InteriorProductPage from '@/components/sections/InteriorProductPage';
 import JsonLd from '@/components/seo/JsonLd';
+import { PRODUCTS } from '@/data/products';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -101,7 +102,8 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           image: '/images/products/interior/hero-antracite.webp',
           category: 'Acoustic textile wall panels',
-          countryOfOrigin: 'BE',
+          // ISO country from product data; omitted while the country is a placeholder
+          countryOfOrigin: PRODUCTS['interior'].madeIn ?? undefined,
           material: 'Recycled textile fibres',
           specs: [
             { name: 'Sound absorption (αw)', value: '1.0', unitText: 'ISO 11654' },
