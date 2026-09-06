@@ -5,13 +5,14 @@
  * single source of truth (`src/i18n/config.ts`). Adding a new locale to
  * `locales` will automatically extend hreflang coverage everywhere.
  */
-import { locales, localeFullCodes, defaultLocale, type Locale } from '@/i18n/config';
+import { locales, localeFullCodes, defaultLocale, SEO_LOCALES, type Locale } from '@/i18n/config';
 
 /**
  * Build the `languages` map for `Metadata.alternates`.
  *
- * Returns one entry per configured locale, pointing at the same route
- * under each locale prefix, plus an `x-default` entry pointing at the
+ * Returns one entry per indexable locale (SEO_LOCALES — the Nordic locales
+ * are noindex until their translations are complete), pointing at the same
+ * route under each locale prefix, plus an `x-default` entry pointing at the
  * English version. Google requires `x-default` when there's no clear
  * default locale for international users — without it, GSC's
  * International Targeting report flags every page as ambiguous.
@@ -28,7 +29,7 @@ export function buildLanguageAlternates(
 
   return {
     ...Object.fromEntries(
-      locales.map((loc) => [loc, `/${loc}${cleanRoute}`])
+      SEO_LOCALES.map((loc) => [loc, `/${loc}${cleanRoute}`])
     ),
     // EN is the default for unspecified locales (matches `defaultLocale`).
     'x-default': `/${defaultLocale}${cleanRoute}`,
@@ -46,6 +47,25 @@ export function buildAlternates(locale: Locale | string, route: string) {
   return {
     canonical: `/${locale}${cleanRoute}`,
     languages: buildLanguageAlternates(cleanRoute),
+  };
+}
+
+/**
+ * Like buildAlternates, but for routes whose path differs per locale
+ * (the range hubs with localised slugs):
+ *
+ *   buildAlternatesFor('nl', (loc) => hubPath('rpet', loc))
+ */
+export function buildAlternatesFor(
+  locale: Locale | string,
+  pathFor: (locale: string) => string
+) {
+  return {
+    canonical: `/${locale}${pathFor(locale)}`,
+    languages: {
+      ...Object.fromEntries(SEO_LOCALES.map((loc) => [loc, `/${loc}${pathFor(loc)}`])),
+      'x-default': `/${defaultLocale}${pathFor(defaultLocale)}`,
+    },
   };
 }
 

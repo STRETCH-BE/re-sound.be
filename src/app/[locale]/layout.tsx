@@ -17,7 +17,7 @@ import {
   ScrollTracker,
 } from '@/components/analytics';
 
-import { locales, localeFullCodes, type Locale } from '@/i18n/config';
+import { locales, localeFullCodes, isSeoLocale, type Locale } from '@/i18n/config';
 import { ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
 
@@ -106,8 +106,11 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
     },
+    // Nordic locales (da, sv, no, is) are noindex until their translations
+    // are complete — see SEO_LOCALES in src/i18n/config.ts for how to
+    // re-enable one. Pages inherit this unless they set their own `robots`.
     robots: {
-      index: true,
+      index: isSeoLocale(locale),
       follow: true,
     },
   };
