@@ -1,14 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Wood finish options for rWood - Groove
 const woodFinishOptions = [
@@ -34,16 +30,28 @@ const variantOptions = [
 ];
 
 // Default hero image (shown before any swatch is selected)
-const defaultHeroImage = '/images/products/rwood-groove/rWood-Groove_detail.jpg';
+const defaultHeroImage = '/images/products/rwood-groove/hero-rWood-Groove.webp';
 
 
-export default function RWoodGrooveProductPage() {
+/**
+ * Server-rendered sections handed in by the route page
+ * (src/app/[locale]/products/rwood-groove/page.tsx). Keeping them out of
+ * this client component means specs / downloads / gallery / FAQ / related
+ * models are plain HTML with no hydration cost.
+ */
+export interface RWoodGrooveProductPageSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  gallery?: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
+
+export default function RWoodGrooveProductPage({ specs, downloads, gallery, faq, otherModels }: RWoodGrooveProductPageSlots) {
   const t = useTranslations('rwoodGroovePage');
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedFinish, setSelectedFinish] = useState<typeof woodFinishOptions[0] | null>(null);
   const [selectedFelt, setSelectedFelt] = useState(feltOptions[0]);
   const [selectedVariant, setSelectedVariant] = useState(variantOptions[0]);
@@ -59,83 +67,10 @@ export default function RWoodGrooveProductPage() {
   }, []);
 
 
-  const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-groove/datasheet.pdf' },
-    { id: 'installation-guide', name: t('downloads.installationGuide'), icon: '🔧', file: '/documents/rwood-groove/installation-guide.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-groove/acoustic-test-report.pdf' },
-    { id: 'color-finish-guide', name: 'Color & Finish Guide', icon: '🎨', file: '/documents/rwood-groove/colour-finish-guide.pdf' },
-    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-groove/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-groove/sustainability-declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
   const handleFinishSelect = (finish: typeof woodFinishOptions[0]) => {
     if (!selectedFinish || finish.id !== selectedFinish.id) {
       setIsImageLoading(true);
       setSelectedFinish(finish);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'rWood - Groove Product Page',
-        }),
-      });
-
-      if (response.ok) {
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'rwood-groove', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('rwood-groove', fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'rwood-groove');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -178,6 +113,7 @@ export default function RWoodGrooveProductPage() {
           <p className="hero-description">
             {t('hero.description')}
           </p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -203,7 +139,6 @@ export default function RWoodGrooveProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">  <strong>  </strong> </p>
         </div>
         
         <div className="hero-image">
@@ -243,10 +178,8 @@ export default function RWoodGrooveProductPage() {
                   title={finish.name}
                   aria-label={`Select ${finish.name} finish`}
                 >
-                  <span 
-                    className="finish-swatch" 
-                    style={{ backgroundImage: `url(${finish.swatch})` }}
-                  />
+                  {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
+                  <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
                   {selectedFinish?.id === finish.id && (
                     <span className={`finish-check ${finish.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
                   )}
@@ -666,208 +599,14 @@ export default function RWoodGrooveProductPage() {
         </div>
       </section>
 
-      {/* Specifications Section */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (ProductSpecs) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.dimPanelWidth')}</td>
-                  <td>300 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimPanelLength')}</td>
-                  <td>2400 / 2780 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.thickness')}</td>
-                  <td>19 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimGrooveDepth')}</td>
-                  <td>15 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimGrooveWidth')}</td>
-                  <td>15 mm</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Projects & Installations — server-rendered (ProductGallery) */}
+      {gallery}
 
-          <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.absorptionCoeff')}</td>
-                  <td>0.90</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.absorptionClass')}</td>
-                  <td>Class A</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.testStandard')}</td>
-                  <td>ISO 354 / ISO 11654</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.materialsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.matVeneer')}</td>
-                  <td>{t('specs.matVeneerVal')}</td>
-                </tr>
-                <tr>
-                  <td>Core</td>
-                  <td>{t('specs.matCoreVal')}</td>
-                </tr>
-                <tr>
-                  <td>Felt</td>
-                  <td>{t('specs.matBackingVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.matFinish')}</td>
-                  <td>{t('specs.finishVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.stdPanels')}</td>
-                  <td>D-s2, d2</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.fireMdfVal')}</td>
-                  <td>B-s1, d0</td>
-                </tr>
-                <tr>
-                  <td>Felt</td>
-                  <td>B-s1, d0</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.testStandard')}</td>
-                  <td>EN 13501</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.certsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specLabels.woodSourcing')}</td>
-                  <td>{tPage('specLabels.fscCert')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.feltCert')}</td>
-                  <td>OEKO-TEX® Standard 100</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.envLabel')}</td>
-                  <td>{tPage('specLabels.epd')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.vocLabel')}</td>
-                  <td>{t('specs.vocVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.applicationsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.appInstall')}</td>
-                  <td>{t('specs.appWalls')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appEnv')}</td>
-                  <td>{t('specs.appEnvVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appMoist')}</td>
-                  <td>{t('specs.appMoistVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appConn')}</td>
-                  <td>{t('specs.appConnVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{tPage('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="gallery-item">
-              <div className="image-container gallery">
-                <Image
-                  src={`/images/products/rwood-groove/gallery-${i}.webp`}
-                  alt={`rWood - Groove installation example ${i}`}
-                  fill
-                  sizes="(max-width: 1024px) 50vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tPage('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{download.name}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* Downloads — server-rendered (ProductDownloads) */}
+      {downloads}
 
       {/* Accessories Section */}
       <section className="content-section accessories-section dark">
@@ -901,14 +640,11 @@ export default function RWoodGrooveProductPage() {
         </div>
       </section>
 
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
+      {/* FAQ — server-rendered (ProductFaq) */}
+      {faq}
+
+      {/* Other models in this range — server-rendered (OtherModels) */}
+      {otherModels}
 
       {/* CTA Section */}
       <section className="content-section cta-section">
@@ -1783,94 +1519,6 @@ export default function RWoodGrooveProductPage() {
         .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
 
-        /* Specs Section */
-        .specs-header { text-align: center; margin-bottom: 3rem; }
-        .specs-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .specs-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .spec-card {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 16px;
-        }
-
-        .spec-card h4 {
-          font-size: 1rem;
-          color: var(--brand-blue);
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .spec-card table { width: 100%; }
-
-        .spec-card td {
-          padding: 0.5rem 0;
-          font-size: 0.9rem;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .spec-card tr:last-child td { border-bottom: none; }
-        .spec-card td:first-child { color: #666; }
-        .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
-
-        /* Gallery Section */
-        .gallery-header { text-align: center; margin-bottom: 3rem; }
-        .gallery-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item { border-radius: 16px; overflow: hidden; }
-
-        /* Downloads Section */
-        .downloads-header { text-align: center; margin-bottom: 3rem; }
-        .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .downloads-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 1.5rem;
-          background: var(--cream);
-          border-radius: 12px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          border: none;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .download-card:hover {
-          background: var(--brand-blue-pale);
-          transform: translateY(-2px);
-        }
-
-        .download-icon { font-size: 2rem; }
-        .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #767676; }
-        .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
-
         /* Accessories Section */
         .accessories-header {
           text-align: center;
@@ -1935,7 +1583,6 @@ export default function RWoodGrooveProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .variants-grid { grid-template-columns: repeat(2, 1fr); }
           .accessories-grid { grid-template-columns: repeat(2, 1fr); }
           .finish-categories { grid-template-columns: 1fr; }
@@ -1970,8 +1617,6 @@ export default function RWoodGrooveProductPage() {
           .hero-usps { flex-direction: column; gap: 1rem; }
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
-          .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .variants-grid { grid-template-columns: 1fr; }
           .accessories-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }

@@ -56,13 +56,6 @@
     "partner": "Partner"
   },
   "hero": {
-    "badge": "100% Cirkulær Akustik",
-    "title": "Akustik gjort",
-    "titleHighlight": "cirkulær.",
-    "subtitle": "Højtydende akustikløsninger fremstillet af genbrugsmaterialer. Vi omdanner affald til stilhed.",
-    "ctaPrimary": "Opdag produkter",
-    "ctaSecondary": "Sådan fungerer det",
-    "panelTag": "Genbrugsmaterialer",
     "rwood": {
       "badge": "rWood Serie · Naturlig Overflade Linje",
       "title": "Akustikpaneler med",
@@ -98,12 +91,6 @@
     "colors": "Over 50 standardfarver",
     "custom": "Specialmål på forespørgsel",
     "factories": "Fra egne fabrikker"
-  },
-  "stats": {
-    "absorption": "Lydabsorption",
-    "colors": "Tilgængelige farver",
-    "waste": "Affald til losseplads",
-    "madeIn": "Fremstillet i Belgien"
   },
   "materials": {
     "tag": "WHAT WE USE",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Bæredygtighedserklæring",
       "technicalDrawing": "Teknisk tegning",
       "bimFile": "BIM File",
-      "epd": "Miljøproduktdeklaration (EPD)"
+      "epd": "Miljøproduktdeklaration (EPD)",
+      "colourFinishGuide": "Farve- og finishguide",
+      "warranty": "Garanticertifikat",
+      "cadDrawing": "CAD-tegning (DWG)",
+      "installationGuide": "Monteringsvejledning",
+      "gatedHint": "Fås på forespørgsel"
     },
     "specs": {
       "dimensions": "Dimensioner",
@@ -922,6 +914,14 @@
       "coreDensity": "Kernetæthed",
       "formaldehyde": "Formaldehyd",
       "fscCert": "FSC® certificeret"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Ofte stillede spørgsmål"
+    },
+    "related": {
+      "tag": "OGSÅ I SERIEN",
+      "title": "Andre modeller i serien"
     }
   },
   "interiorPage": {

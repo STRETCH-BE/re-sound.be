@@ -25,7 +25,7 @@ export default function WhyCards() {
       desc: t('features.customization.description'),
     },
     {
-      icon: '🇧🇪',
+      icon: '🏭',
       value: t('belgianLabel'),
       label: t('features.circular.title'),
       desc: t('features.circular.description'),

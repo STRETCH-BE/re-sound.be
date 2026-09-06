@@ -2,9 +2,15 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import OtherModels from '@/components/product/OtherModels';
+import ProductDownloads from '@/components/product/ProductDownloads';
+import ProductFaq from '@/components/product/ProductFaq';
+import ProductGallery from '@/components/product/ProductGallery';
+import ProductSpecs from '@/components/product/ProductSpecs';
 import InteriorProductPage from '@/components/sections/InteriorProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import specs from '@/data/specs/interior';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -22,6 +28,13 @@ interface PageProps {
 // each translation file under `messages/{locale}.json` provides the actual
 // Q&A copy under `interiorPage.faq.questions.<key>.question/.answer`.
 const FAQ_KEYS = ["leadTime", "washableCover", "absorptionRating", "breeamLeed", "installMethod"] as const;
+
+// "Projects & Installations" grid — same six images the client component
+// used to render inline, now a static server-rendered <ProductGallery>.
+const GALLERY_IMAGES = [1, 2, 3, 4, 5, 6].map((i) => ({
+  src: `/images/products/interior/gallery-${i}.jpg`,
+  alt: `Interior acoustic textile wall panels — project installation ${i}`,
+}));
 
 export async function generateMetadata({
   params: { locale },
@@ -65,6 +78,10 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tProducts = await getTranslations({ locale, namespace: 'products' });
 
+  // Root + productPage translators for the server-rendered section slots.
+  const t = await getTranslations({ locale });
+  const tPage = await getTranslations({ locale, namespace: 'productPage' });
+
   // FAQ entries — fall back gracefully if a question key isn't translated
   // (string returns the key, which we then filter out).
   const tFaq = await getTranslations({
@@ -89,7 +106,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const messages = pickMessages(await getMessages(), [
     'interiorPage',
     'productPage',
-    'leadModal',
+    'manufacturer',
   ]);
 
   return (
@@ -126,7 +143,31 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <InteriorProductPage />
+        <InteriorProductPage
+          specs={
+            <ProductSpecs
+              cards={specs}
+              tag={t('interiorPage.specs.tag')}
+              title={t('interiorPage.specs.title')}
+            />
+          }
+          gallery={
+            <ProductGallery
+              images={GALLERY_IMAGES}
+              tag={tPage('gallery.tag')}
+              title={t('interiorPage.gallery.title')}
+            />
+          }
+          downloads={
+            <ProductDownloads
+              product={PRODUCTS['interior']}
+              tag={tPage('downloads.tag')}
+              title={tPage('downloads.title')}
+            />
+          }
+          faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
+          otherModels={<OtherModels slug="interior" />}
+        />
       </NextIntlClientProvider>
     </>
   );

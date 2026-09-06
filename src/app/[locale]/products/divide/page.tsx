@@ -2,9 +2,15 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import OtherModels from '@/components/product/OtherModels';
+import ProductDownloads from '@/components/product/ProductDownloads';
+import ProductFaq from '@/components/product/ProductFaq';
+import ProductGallery from '@/components/product/ProductGallery';
+import ProductSpecs from '@/components/product/ProductSpecs';
 import DivideProductPage from '@/components/sections/DivideProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import specs from '@/data/specs/divide';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -22,6 +28,18 @@ interface PageProps {
 // each translation file under `messages/{locale}.json` provides the actual
 // Q&A copy under `dividePage.faq.questions.<key>.question/.answer`.
 const FAQ_KEYS = ["leadTime", "magneticConnection", "dualSidedAbsorption", "footStability", "sizeCustomization"] as const;
+
+// Gallery ("In Action"). Dedicated project photos don't exist yet, so — as
+// the old client section did — the grid showcases all six colourway heroes
+// (only the selected one is visible in the hero).
+const GALLERY_IMAGES = [
+  { src: '/images/products/divide/hero-denim.webp', name: 'Denim' },
+  { src: '/images/products/divide/hero-antracite.webp', name: 'Antracite' },
+  { src: '/images/products/divide/hero-silver.webp', name: 'Silver' },
+  { src: '/images/products/divide/hero-sky.webp', name: 'Sky' },
+  { src: '/images/products/divide/hero-mint.webp', name: 'Mint' },
+  { src: '/images/products/divide/hero-taupe.webp', name: 'Taupe' },
+];
 
 export async function generateMetadata({
   params: { locale },
@@ -62,7 +80,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const messages = pickMessages(await getMessages(), [
     'dividePage',
     'productPage',
-    'leadModal',
+    'manufacturer',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
@@ -72,6 +90,10 @@ export default async function Page({ params: { locale } }: PageProps) {
   const description = tMeta('divideDescription');
 
   const tProducts = await getTranslations({ locale, namespace: 'products' });
+
+  // Root + productPage translators for the server-rendered sections.
+  const t = await getTranslations({ locale });
+  const tPage = await getTranslations({ locale, namespace: 'productPage' });
 
   // FAQ entries — fall back gracefully if a question key isn't translated
   // (string returns the key, which we then filter out).
@@ -91,6 +113,11 @@ export default async function Page({ params: { locale } }: PageProps) {
       }
     })
     .filter((e): e is FaqEntry => e !== null);
+
+  const galleryImages = GALLERY_IMAGES.map((img, i) => ({
+    src: img.src,
+    alt: `Divide freestanding acoustic room divider in ${img.name} — colourway ${i + 1}`,
+  }));
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
@@ -125,7 +152,31 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <DivideProductPage />
+      <DivideProductPage
+        specs={
+          <ProductSpecs
+            cards={specs}
+            tag={t('dividePage.specs.tag')}
+            title={t('dividePage.specs.title')}
+          />
+        }
+        gallery={
+          <ProductGallery
+            images={galleryImages}
+            tag={tPage('gallery.tag')}
+            title={t('dividePage.gallery.title')}
+          />
+        }
+        downloads={
+          <ProductDownloads
+            product={PRODUCTS['divide']}
+            tag={tPage('downloads.tag')}
+            title={tPage('downloads.title')}
+          />
+        }
+        faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
+        otherModels={<OtherModels slug="divide" />}
+      />
     </NextIntlClientProvider>
   );
 }

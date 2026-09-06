@@ -2,15 +2,13 @@
 
 import { useTranslations } from 'next-intl';
 import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Code-split both modals — they only render after user interaction,
-// so they don't belong in the initial bundle.
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
+// Code-split the sample-kit modal — it only renders after user interaction,
+// so it doesn't belong in the initial bundle.
 const SampleKitModal = dynamic(() => import('@/components/sections/SampleKitModal'), { ssr: false });
 
 // Veneer collection — keys are stable identifiers; display strings come from i18n
@@ -50,10 +48,23 @@ const allVeneers = veneerCollections.flatMap(c => c.veneers);
 // Default hero image
 const defaultHeroImage = '/images/products/rwood-veneer/hero-rwood-veneer.webp';
 
+/**
+ * Server-rendered sections passed in as React nodes ("slots") by the route
+ * page — specs, downloads, gallery, FAQ and "other models" no longer live in
+ * this client component, so they are excluded from the hydration bundle.
+ */
+export interface RWoodPanelProductPageSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  gallery?: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
 
-export default function RWoodPanelProductPage() {
+export default function RWoodPanelProductPage({ specs, downloads, gallery, faq, otherModels }: RWoodPanelProductPageSlots) {
   const t = useTranslations('rwoodVeneerPage');
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
 
   // Panel format options (inside component so t() is available)
   const formatOptions = [
@@ -69,9 +80,6 @@ export default function RWoodPanelProductPage() {
     { id: 'raw', name: t('finishes.unfinishedName'), description: t('finishes.unfinishedDesc'), icon: '◇' },
   ];
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedVeneer, setSelectedVeneer] = useState<typeof allVeneers[0] | null>(null);
   const [activeCollection, setActiveCollection] = useState<string>('all');
   const [selectedFormat, setSelectedFormat] = useState(formatOptions[0]);
@@ -92,81 +100,10 @@ export default function RWoodPanelProductPage() {
   }, []);
 
 
-  const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-veneer/product-data-sheet.pdf' },
-    { id: 'veneer-collection-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/rwood-veneer/veneer-collection-guide.pdf' },
-    { id: 'processing-instructions', name: tPage('downloads.installationManual'), icon: '🔧', file: '/documents/rwood-veneer//processing-instructions.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-veneer/acoustic-test-report.pdf' },
-    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-veneer/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-veneer/sustainability-declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
   const handleVeneerSelect = (veneer: typeof allVeneers[0]) => {
     if (!selectedVeneer || veneer.id !== selectedVeneer.id) {
       setIsImageLoading(true);
       setSelectedVeneer(veneer);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'rWood - Panel Product Page',
-        }),
-      });
-      if (response.ok) {
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'rwood-veneer', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('rwood-veneer', fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'rwood-veneer');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -205,6 +142,7 @@ export default function RWoodPanelProductPage() {
           <p className="hero-description">
             {t('hero.description')}
           </p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -270,7 +208,7 @@ export default function RWoodPanelProductPage() {
                   title={veneer.name}
                   aria-label={`Select ${veneer.name} veneer`}
                 >
-                  <span className="veneer-swatch" style={{ backgroundImage: `url(${veneer.swatch})` }} />
+                  <Image src={veneer.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="veneer-swatch" style={{ objectFit: 'cover' }} />
                   {selectedVeneer?.id === veneer.id && (
                     <span className={`veneer-check ${veneer.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
                   )}
@@ -458,7 +396,7 @@ export default function RWoodPanelProductPage() {
               }}
             >
               <div className="veneer-card-image">
-                <div className="veneer-card-swatch" style={{ backgroundImage: `url(${veneer.swatch})` }} />
+                <Image src={veneer.swatch} alt={`${veneer.name} veneer`} fill sizes="(max-width: 640px) 100vw, 320px" quality={60} className="veneer-card-swatch" style={{ objectFit: 'cover' }} />
               </div>
               <div className="veneer-card-info">
                 <h3>{veneer.name}</h3>
@@ -731,146 +669,14 @@ export default function RWoodPanelProductPage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          SPECIFICATIONS
-          ═══════════════════════════════════ */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (see route page) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h3>{t('specs.dimensionsTitle')}</h3>
-            <table>
-              <tbody>
-                <tr><td>{t('specs.dimPanelWidth')}</td><td>1220 mm</td></tr>
-                <tr><td>{t('specs.dimPanelLength')}</td><td>2800 / 3050 mm</td></tr>
-                <tr><td>{t('specs.dimThicknessStd')}</td><td>19 mm</td></tr>
-                <tr><td>{t('specs.dimThicknessSlim')}</td><td>12 mm</td></tr>
-                <tr><td>{t('specs.dimWeight19')}</td><td>± 14.5 kg/m²</td></tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Gallery — server-rendered (see route page) */}
+      {gallery}
 
-          <div className="spec-card">
-            <h3>{t('specs.compositionTitle')}</h3>
-            <table>
-              <tbody>
-                <tr><td>{t('specs.compTopLayer')}</td><td>{t('specs.compTopLayerVal')}</td></tr>
-                <tr><td>{t('specs.compCore')}</td><td>{t('specs.compCoreVal')}</td></tr>
-                <tr><td>{t('specs.compBackLayer')}</td><td>{t('specs.compBackLayerVal')}</td></tr>
-                <tr><td>{t('specs.compBonding')}</td><td>{t('specs.compBondingVal')}</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h3>{t('specs.finishTitle')}</h3>
-            <table>
-              <tbody>
-                <tr><td>{t('specs.finishLacquerType')}</td><td>{t('specs.finishLacquerVal')}</td></tr>
-                <tr><td>{t('specs.finishLayers')}</td><td>6</td></tr>
-                <tr><td>{t('specs.finishGloss')}</td><td>{t('specs.finishGlossVal')}</td></tr>
-                <tr><td>{t('specs.finishAntiFingerprint')}</td><td>Yes</td></tr>
-                <tr><td>{t('specs.finishScratch')}</td><td>≥ 2N (ISO 1518)</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h3>{t('specs.fireTitle')}</h3>
-            <table>
-              <tbody>
-                <tr><td>{t('specs.fireStdMDF')}</td><td>D-s2, d0</td></tr>
-                <tr><td>{t('specs.fireFRMDF')}</td><td>B-s1, d0</td></tr>
-                <tr><td>{tPage('specs.testStandard')}</td><td>EN 13501-1</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h3>{t('specs.certsTitle')}</h3>
-            <table>
-              <tbody>
-                <tr><td>{t('specs.certWoodSourcing')}</td><td>{tPage('specs.fscCertified')}</td></tr>
-                <tr><td>{tPage('specs.vocEmissions')}</td><td>E1 / CARB 2 compliant</td></tr>
-                <tr><td>{t('specs.certEnvironmental')}</td><td>{tPage('specs.epd')}</td></tr>
-                <tr><td>{t('specs.certFelt')}</td><td>OEKO-TEX® Standard 100</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h3>{t('specs.processingTitle')}</h3>
-            <table>
-              <tbody>
-                <tr><td>{t('specs.procSawing')}</td><td>{t('specs.procSawingVal')}</td></tr>
-                <tr><td>{t('specs.procEdgeBanding')}</td><td>{t('specs.procEdgeBandingVal')}</td></tr>
-                <tr><td>{t('specs.procCNC')}</td><td>Suitable</td></tr>
-                <tr><td>{t('specs.procEnvironment')}</td><td>{t('specs.procEnvironmentVal')}</td></tr>
-                <tr><td>{t('specs.procMoisture')}</td><td>{t('specs.procMoistureVal')}</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════
-          GALLERY
-          ═══════════════════════════════════ */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{tPage('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
-            <div key={i} className={`gallery-item ${i <= 2 ? 'wide' : ''}`}>
-              <div className="image-container gallery">
-                <Image
-                  src={`/images/products/rwood-veneer/gallery-${i}.webp`}
-                  alt={`rWood - Panel interior project ${i}`}
-                  fill
-                  sizes={i <= 2
-                    ? '(max-width: 1024px) 100vw, 50vw'
-                    : '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw'}
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════
-          DOWNLOADS
-          ═══════════════════════════════════ */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tPage('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h3>{download.name}</h3>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* Downloads — server-rendered (see route page) */}
+      {downloads}
 
       {/* ═══════════════════════════════════
           MATCHING PRODUCTS
@@ -928,21 +734,18 @@ export default function RWoodPanelProductPage() {
         </div>
       </section>
 
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
-
       {/* Sample Kit Modal — opened by the "Order Sample Kit" link in the related/accessories card */}
       <SampleKitModal
         open={sampleModalOpen}
         onClose={() => setSampleModalOpen(false)}
         source="Sample Kit Request — rWood Veneer Product Page"
       />
+
+      {/* FAQ — server-rendered (see route page) */}
+      {faq}
+
+      {/* Other models in this range — server-rendered (see route page) */}
+      {otherModels}
 
       {/* ═══════════════════════════════════
           CTA
@@ -1510,66 +1313,6 @@ export default function RWoodPanelProductPage() {
         .sustain-item h3 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
 
-        /* ─── SPECS ─── */
-        .specs-header { text-align: center; margin-bottom: 3rem; }
-        .specs-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .specs-grid {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
-          max-width: 1200px; margin: 0 auto;
-        }
-
-        .spec-card { background: var(--cream); padding: 1.5rem; border-radius: 16px; }
-        .spec-card h3 {
-          font-size: 1rem; color: var(--brand-blue); margin-bottom: 1rem;
-          text-transform: uppercase; letter-spacing: 0.5px;
-        }
-        .spec-card table { width: 100%; }
-        .spec-card td {
-          padding: 0.5rem 0; font-size: 0.9rem; border-bottom: 1px solid #e0e0e0;
-        }
-        .spec-card tr:last-child td { border-bottom: none; }
-        .spec-card td:first-child { color: #666; }
-        .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
-
-        /* ─── GALLERY ─── */
-        .gallery-header { text-align: center; margin-bottom: 3rem; }
-        .gallery-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-auto-rows: 280px;
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item { border-radius: 16px; overflow: hidden; }
-        .gallery-item.wide { grid-column: span 2; }
-        .gallery-item .image-container.gallery { aspect-ratio: unset; height: 100%; max-width: none; }
-
-        /* ─── DOWNLOADS ─── */
-        .downloads-header { text-align: center; margin-bottom: 3rem; }
-        .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .downloads-grid {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
-          max-width: 1000px; margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex; align-items: center; gap: 1rem;
-          padding: 1.5rem; background: var(--cream); border-radius: 12px;
-          text-decoration: none; transition: all 0.3s ease;
-          border: none; cursor: pointer; text-align: left;
-        }
-        .download-card:hover { background: var(--brand-blue-pale); transform: translateY(-2px); }
-        .download-icon { font-size: 2rem; }
-        .download-info h3 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #767676; }
-        .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
-
         /* ─── MATCHING PRODUCTS ─── */
         .matching-header { text-align: center; margin-bottom: 3rem; }
         .matching-header h2 { font-size: 2.5rem; color: white; margin-bottom: 0.5rem; }
@@ -1634,13 +1377,10 @@ export default function RWoodPanelProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid { grid-template-columns: repeat(2, 1fr); }
           .applications-grid { grid-template-columns: repeat(2, 1fr); }
           .formats-grid { grid-template-columns: repeat(2, 1fr); }
           .matching-grid { grid-template-columns: 1fr; max-width: 500px; }
           .sustainability-features { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 240px; }
-          .gallery-item.wide { grid-column: span 2; }
 
           .comp-layer { flex-direction: column; text-align: center; }
           .comp-layer-visual { width: 100%; max-width: 280px; }
@@ -1656,11 +1396,8 @@ export default function RWoodPanelProductPage() {
           .hero-usps { flex-direction: column; gap: 1rem; }
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
-          .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
           .applications-grid { grid-template-columns: 1fr; }
           .formats-grid { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 200px; }
-          .gallery-item.wide { grid-column: span 1; }
           .cta-buttons { flex-direction: column; }
           .veneer-options { flex-wrap: wrap; justify-content: center; }
           .veneer-grid { grid-template-columns: repeat(2, 1fr); }

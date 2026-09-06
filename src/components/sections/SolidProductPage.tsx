@@ -1,15 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import Image from 'next/image';
-
-// Code-split the modal — it only renders after a download click.
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for the Solid product.
 // Note: no "Sky" option here — /images/products/solid/hero-sky.webp does not
@@ -22,25 +18,25 @@ const colorOptions = [
   { id: 'taupe', name: 'Taupe', swatch: '/images/products/solid/swatches/taupe.webp', image: '/images/products/solid/hero-taupe.webp', isDark: false },
 ];
 
-// Gallery images — gallery-6.jpg does not exist on disk, so the sixth slot
-// reuses gallery-1.jpg (placed non-adjacently in the grid).
-const galleryImages = [
-  '/images/products/solid/gallery-1.jpg',
-  '/images/products/solid/gallery-2.jpg',
-  '/images/products/solid/gallery-3.jpg',
-  '/images/products/solid/gallery-4.jpg',
-  '/images/products/solid/gallery-5.jpg',
-  '/images/products/solid/gallery-1.jpg',
-];
+/**
+ * Server-rendered sections handed in by the route page. Specifications,
+ * downloads, the gallery, the FAQ and the sibling-model cards are static
+ * HTML (see src/components/product/*) — only the hero, the colour
+ * configurator and the sticky nav need client JavaScript.
+ */
+export interface SolidProductPageSlots {
+  specs: ReactNode;
+  downloads: ReactNode;
+  gallery?: ReactNode;
+  faq: ReactNode;
+  otherModels: ReactNode;
+}
 
-
-export default function SolidProductPage() {
+export default function SolidProductPage({ specs, downloads, gallery, faq, otherModels }: SolidProductPageSlots) {
   const t = useTranslations('solidPage');
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedColor, setSelectedColor] = useState(colorOptions[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
@@ -50,89 +46,10 @@ export default function SolidProductPage() {
     analytics.viewItem('solid', 'textile');
   }, []);
 
-
-  const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/solid/product-data-sheet.pdf' },
-    { id: 'installation-manual', name: tPage('downloads.installationManual'), icon: '📋', file: '/documents/solid/installation-manual.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/solid/acoustic-test-report.pdf' },
-    { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/solid/color-fabric-guide.pdf' },
-    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/solid/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/solid/sustainability-declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
   const handleColorSelect = (color: typeof colorOptions[0]) => {
     if (color.id !== selectedColor.id) {
       setIsImageLoading(true);
       setSelectedColor(color);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'Solid Product Page',
-        }),
-      });
-
-      if (response.ok) {
-        // Close modal and trigger download
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'solid', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('solid', fileName);
-        } catch (err) {
-          // Never let analytics failure break the user's download.
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        // Lets us search recordings by lead_product / company.
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'solid');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        
-        // Create download link and trigger it
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -173,6 +90,7 @@ export default function SolidProductPage() {
           <p className="hero-description">
             {t('hero.description')}
           </p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -240,10 +158,8 @@ export default function SolidProductPage() {
                   title={color.name}
                   aria-label={`Select ${color.name} color`}
                 >
-                  <span 
-                    className="color-swatch" 
-                    style={{ backgroundImage: `url(${color.swatch})` }}
-                  />
+                  {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
+                  <Image src={color.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="color-swatch" style={{ objectFit: 'cover' }} />
                   {selectedColor.id === color.id && (
                     <span className={`color-check ${color.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
                   )}
@@ -493,189 +409,20 @@ export default function SolidProductPage() {
         </div>
       </section>
 
-      {/* Specifications Section */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (ProductSpecs) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h4>{tPage('specs.dimensions')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.panelSize')}</td>
-                  <td>{t('specs.panelSizeValue')}</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.thickness')}</td>
-                  <td>50 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.weight')}</td>
-                  <td>~5 kg per panel</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Gallery — server-rendered (ProductGallery) */}
+      {gallery}
 
-          <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.absorptionCoeff')}</td>
-                  <td>0.95</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.absorptionClass')}</td>
-                  <td>{tPage('acoustics.classA')}</td>
-                </tr>
-                <tr>
-                  <td>NRC</td>
-                  <td>0.90</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Downloads — server-rendered (ProductDownloads) */}
+      {downloads}
 
-          <div className="spec-card">
-            <h4>{t('specs.materialsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Core</td>
-                  <td>{t('specs.coreValue')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.binderRow')}</td>
-                  <td>{t('specs.binderValue')}</td>
-                </tr>
-                <tr>
-                  <td>Cover</td>
-                  <td>{t('specs.coverValue2')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* FAQ — server-rendered (ProductFaq) */}
+      {faq}
 
-          <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.fireRating')}</td>
-                  <td>B-s1, d0</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.standard')}</td>
-                  <td>EN 13501-1</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.sustainTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.recycledContent')}</td>
-                  <td>≥80%</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.endOfLife')}</td>
-                  <td>{t('specs.endOfLifeVal')}</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.vocEmissions') || 'VOC emissions'}</td>
-                  <td>Low / A+</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.installTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.mounting')}</td>
-                  <td>{t('specs.mountingVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.installTime')}</td>
-                  <td>{t('specs.installTimeVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.toolsRequired')}</td>
-                  <td>{t('specs.toolsVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{tPage('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {galleryImages.map((src, i) => (
-            <div key={`${src}-${i}`} className="gallery-item">
-              <div className="image-container gallery">
-                <Image
-                  src={src}
-                  alt={`Solid panel installation example ${i + 1}`}
-                  fill
-                  sizes="(max-width: 1024px) 50vw, 384px"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tPage('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{download.name}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
+      {/* Other models in this range — server-rendered (OtherModels) */}
+      {otherModels}
 
       {/* CTA Section */}
       <section className="content-section cta-section">
@@ -970,10 +717,6 @@ export default function SolidProductPage() {
           font-size: 0.9rem;
           font-weight: 600;
           color: var(--deep-blue);
-        }
-
-        .image-container.gallery {
-          aspect-ratio: 1;
         }
 
         .section-image .image-container {
@@ -1312,155 +1055,6 @@ export default function SolidProductPage() {
           margin: 0;
         }
 
-        /* Specs Section */
-        .specs-header {
-          text-align: center;
-          margin-bottom: 3rem;
-        }
-
-        .specs-header h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-        }
-
-        .specs-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .spec-card {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 16px;
-        }
-
-        .spec-card h4 {
-          font-size: 1rem;
-          color: var(--brand-blue);
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .spec-card table {
-          width: 100%;
-        }
-
-        .spec-card td {
-          padding: 0.5rem 0;
-          font-size: 0.9rem;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .spec-card tr:last-child td {
-          border-bottom: none;
-        }
-
-        .spec-card td:first-child {
-          color: #666;
-        }
-
-        .spec-card td:last-child {
-          text-align: right;
-          font-weight: 600;
-          color: var(--deep-blue);
-        }
-
-        /* Gallery Section */
-        .gallery-section {
-          background: var(--deep-blue);
-        }
-
-        .gallery-header {
-          text-align: center;
-          margin-bottom: 3rem;
-        }
-
-        .gallery-header h2 {
-          font-size: 2.5rem;
-          color: white;
-        }
-
-        .gallery-header .section-tag {
-          background: rgba(25, 127, 199, 0.3);
-          color: #7ec8f5;
-        }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item {
-          border-radius: 16px;
-          overflow: hidden;
-        }
-
-        /* Downloads Section */
-        .downloads-header {
-          text-align: center;
-          margin-bottom: 3rem;
-        }
-
-        .downloads-header h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-        }
-
-        .downloads-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 1.5rem;
-          background: var(--cream);
-          border-radius: 12px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          border: none;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .download-card:hover {
-          background: var(--brand-blue-pale);
-          transform: translateY(-2px);
-        }
-
-        .download-icon {
-          font-size: 2rem;
-        }
-
-        .download-info h4 {
-          font-size: 0.95rem;
-          color: var(--deep-blue);
-          margin-bottom: 0.25rem;
-        }
-
-        .download-info span {
-          font-size: 0.8rem;
-          color: #767676;
-        }
-
-        .download-arrow {
-          margin-left: auto;
-          font-size: 1.2rem;
-          color: var(--brand-blue);
-        }
-
         /* CTA Section */
         .cta-section {
           background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%);
@@ -1536,12 +1130,6 @@ export default function SolidProductPage() {
             direction: ltr;
           }
 
-          .specs-grid,
-          .downloads-grid,
-          .gallery-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-
           .acoustics-visual {
             flex-direction: column;
             gap: 3rem;
@@ -1587,15 +1175,6 @@ export default function SolidProductPage() {
 
           .section-content h2 {
             font-size: 2rem;
-          }
-
-          .specs-grid,
-          .downloads-grid {
-            grid-template-columns: 1fr;
-          }
-
-          .gallery-grid {
-            grid-template-columns: repeat(2, 1fr);
           }
 
           .cta-buttons {

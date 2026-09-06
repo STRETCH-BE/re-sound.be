@@ -56,13 +56,6 @@
     "partner": "Partner"
   },
   "hero": {
-    "badge": "100% Zirkuläre Akustik",
-    "title": "Akustik wird",
-    "titleHighlight": "zirkulär.",
-    "subtitle": "Hochleistungs-Akustiklösungen aus recycelten Materialien. Wir verwandeln Abfall in Stille—für den Planeten entwickelt, in Belgien hergestellt.",
-    "ctaPrimary": "Produkte Entdecken",
-    "ctaSecondary": "Wie Es Funktioniert",
-    "panelTag": "Recycelte Materialien",
     "circular": {
       "badge": "Kreislauf-Sortiment · Interior · Solid · Divide · rPET",
       "title": "Entworfen um zurückzukehren —",
@@ -88,12 +81,6 @@
       "statAbsorption": "Absorption",
       "statFire": "Brandschutzklasse"
     }
-  },
-  "stats": {
-    "absorption": "Schallabsorption",
-    "colors": "Verfügbare Farben",
-    "waste": "Abfall auf Deponien",
-    "madeIn": "Hergestellt in Belgien"
   },
   "materials": {
     "tag": "WAS WIR VERWENDEN",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Nachhaltigkeitserklärung",
       "technicalDrawing": "Technische Zeichnung",
       "bimFile": "BIM-Datei",
-      "epd": "Umweltproduktdeklaration (EPD)"
+      "epd": "Umweltproduktdeklaration (EPD)",
+      "colourFinishGuide": "Farb- & Oberflächenleitfaden",
+      "warranty": "Garantiezertifikat",
+      "cadDrawing": "CAD-Zeichnung (DWG)",
+      "installationGuide": "Montageanleitung",
+      "gatedHint": "Auf Anfrage erhältlich"
     },
     "specs": {
       "dimensions": "Abmessungen",
@@ -922,6 +914,14 @@
       "coreDensity": "Kerndichte",
       "formaldehyde": "Formaldehyd",
       "fscCert": "FSC® zertifiziert"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Häufige Fragen"
+    },
+    "related": {
+      "tag": "AUCH IN DIESER SERIE",
+      "title": "Weitere Modelle dieser Serie"
     }
   },
   "interiorPage": {

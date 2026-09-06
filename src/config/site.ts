@@ -87,6 +87,13 @@ export interface Partner {
 export const PARTNERS: Partner[] = [];
 
 /**
+ * TODO(needs-Michael): the blog posts have no named author. While this is
+ * null the BlogPosting schema credits the organisation instead of inventing
+ * a person; set `{ name: 'First Last', url?: 'https://…' }` to publish one.
+ */
+export const BLOG_AUTHOR: { name: string; url?: string } | null = null;
+
+/**
  * Prices that are still placeholders (see src/data/products.ts) are only
  * emitted in JSON-LD / shown in comparison tables when this flag is set, so
  * nothing false ships by accident. Confirmed prices always ship.

@@ -110,7 +110,7 @@ export default function Footer() {
           <ul className="footer-links footer-links--multi">
             {productLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href} prefetch={false}>{link.label}</Link>
               </li>
             ))}
           </ul>
@@ -122,7 +122,7 @@ export default function Footer() {
           <ul className="footer-links">
             {companyLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href} prefetch={false}>{link.label}</Link>
               </li>
             ))}
           </ul>
@@ -159,9 +159,9 @@ export default function Footer() {
           >
             {t('manageCookies')}
           </button>
-          <Link href="/privacy">{t('privacy')}</Link>
-          <Link href="/terms">{t('terms')}</Link>
-          <Link href="/faq">{tNav('faq')}</Link>
+          <Link href="/privacy" prefetch={false}>{t('privacy')}</Link>
+          <Link href="/terms" prefetch={false}>{t('terms')}</Link>
+          <Link href="/faq" prefetch={false}>{tNav('faq')}</Link>
         </div>
       </div>
 

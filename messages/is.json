@@ -56,13 +56,6 @@
     "partner": "Samstarf"
   },
   "hero": {
-    "badge": "100% Hringrásarlíðfræði",
-    "title": "Hljóðeinangrun gerð",
-    "titleHighlight": "hringrásarlega.",
-    "subtitle": "Hávirkar hljóðlausnir úr endurunnnum efnum. Við breytum úrgangi í þögn.",
-    "ctaPrimary": "Uppgötvaðu vörur",
-    "ctaSecondary": "Hvernig það virkar",
-    "panelTag": "Endurvinnanlegar efni",
     "rwood": {
       "badge": "rWood Röð · Náttúruleg Yfirborðslína",
       "title": "Hljóðpanels með",
@@ -98,12 +91,6 @@
     "colors": "Yfir 50 staðalitir",
     "custom": "Sérsniðin stærð að beiðni",
     "factories": "Úr eigin verksmiðjum"
-  },
-  "stats": {
-    "absorption": "Hljóðfrásog",
-    "colors": "Tiltækir litir",
-    "waste": "Úrgangur á urðunarsvæði",
-    "madeIn": "Framleitt í Belgíu"
   },
   "materials": {
     "tag": "WHAT WE USE",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Sjálfbærnisvíslýsing",
       "technicalDrawing": "Tæknileg teikning",
       "bimFile": "BIM File",
-      "epd": "Umhverfisframleiðsluyfirlýsing (EPD)"
+      "epd": "Umhverfisframleiðsluyfirlýsing (EPD)",
+      "colourFinishGuide": "Lita- og áferðarleiðbeiningar",
+      "warranty": "Ábyrgðarskírteini",
+      "cadDrawing": "CAD-teikning (DWG)",
+      "installationGuide": "Uppsetningarleiðbeiningar",
+      "gatedHint": "Fáanlegt eftir beiðni"
     },
     "specs": {
       "dimensions": "Mál",
@@ -922,6 +914,14 @@
       "coreDensity": "Kjarna þéttleiki",
       "formaldehyde": "Formaldehýð",
       "fscCert": "FSC® vottað"
+    },
+    "faq": {
+      "tag": "Spurningar",
+      "title": "Algengar spurningar"
+    },
+    "related": {
+      "tag": "EINNIG Í LÍNUNNI",
+      "title": "Aðrar gerðir í þessari línu"
     }
   },
   "interiorPage": {

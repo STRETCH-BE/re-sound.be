@@ -56,13 +56,6 @@
     "partner": "Partner"
   },
   "hero": {
-    "badge": "100% Cirkulär Akustik",
-    "title": "Akustik gjord",
-    "titleHighlight": "cirkulär.",
-    "subtitle": "Högpresterande akustiklösningar tillverkade av återvunna material. Vi omvandlar avfall till tystnad.",
-    "ctaPrimary": "Utforska produkter",
-    "ctaSecondary": "Hur det fungerar",
-    "panelTag": "Återvunna material",
     "rwood": {
       "badge": "rWood Serie · Naturlig Ytlinje",
       "title": "Akustikpaneler med",
@@ -98,12 +91,6 @@
     "colors": "Över 50 standardfärger",
     "custom": "Specialmått på begäran",
     "factories": "Från egna fabriker"
-  },
-  "stats": {
-    "absorption": "Ljudabsorption",
-    "colors": "Tillgängliga färger",
-    "waste": "Avfall till deponi",
-    "madeIn": "Tillverkad i Belgien"
   },
   "materials": {
     "tag": "WHAT WE USE",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Hållbarhetsdeklaration",
       "technicalDrawing": "Teknisk ritning",
       "bimFile": "BIM File",
-      "epd": "Miljövarudeklaration (EPD)"
+      "epd": "Miljövarudeklaration (EPD)",
+      "colourFinishGuide": "Färg- och ytguide",
+      "warranty": "Garanticertifikat",
+      "cadDrawing": "CAD-ritning (DWG)",
+      "installationGuide": "Monteringsanvisning",
+      "gatedHint": "Tillgänglig på begäran"
     },
     "specs": {
       "dimensions": "Dimensioner",
@@ -922,6 +914,14 @@
       "coreDensity": "Kärntäthet",
       "formaldehyde": "Formaldehyd",
       "fscCert": "FSC® certifierad"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Vanliga frågor"
+    },
+    "related": {
+      "tag": "OCKSÅ I SERIEN",
+      "title": "Andra modeller i serien"
     }
   },
   "interiorPage": {

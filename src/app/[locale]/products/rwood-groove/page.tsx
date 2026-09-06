@@ -2,9 +2,15 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import OtherModels from '@/components/product/OtherModels';
+import ProductDownloads from '@/components/product/ProductDownloads';
+import ProductFaq from '@/components/product/ProductFaq';
+import ProductGallery from '@/components/product/ProductGallery';
+import ProductSpecs from '@/components/product/ProductSpecs';
 import RWoodGrooveProductPage from '@/components/sections/rwoodgroovepage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import specs from '@/data/specs/rwood-groove';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -22,6 +28,12 @@ interface PageProps {
 // each translation file under `messages/{locale}.json` provides the actual
 // Q&A copy under `rwoodGroovePage.faq.questions.<key>.question/.answer`.
 const FAQ_KEYS = ["fscSource", "fireRating", "leadTime", "installMethod", "substrateCleanup"] as const;
+
+// "Projects & Installations" gallery — same five photos, in the same order,
+// as the former client-rendered <section id="gallery">.
+const GALLERY_IMAGES = [1, 2, 3, 4, 5].map(
+  (i) => `/images/products/rwood-groove/gallery-${i}.webp`
+);
 
 export async function generateMetadata({
   params: { locale },
@@ -62,7 +74,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const messages = pickMessages(await getMessages(), [
     'productPage',
     'rwoodGroovePage',
-    'leadModal',
+    'manufacturer',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
@@ -72,6 +84,15 @@ export default async function Page({ params: { locale } }: PageProps) {
   const description = tMeta('rwoodGrooveDescription');
 
   const tProducts = await getTranslations({ locale, namespace: 'products' });
+
+  // Root + productPage translators for the server-rendered sections.
+  const t = await getTranslations({ locale });
+  const tPage = await getTranslations({ locale, namespace: 'productPage' });
+
+  const galleryImages = GALLERY_IMAGES.map((src, i) => ({
+    src,
+    alt: `rWood Groove grooved acoustic wood panels — project installation ${i + 1}`,
+  }));
 
   // FAQ entries — fall back gracefully if a question key isn't translated
   // (string returns the key, which we then filter out).
@@ -126,7 +147,31 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <RWoodGrooveProductPage />
+      <RWoodGrooveProductPage
+        specs={
+          <ProductSpecs
+            cards={specs}
+            tag={t('rwoodGroovePage.specs.tag')}
+            title={t('rwoodGroovePage.specs.title')}
+          />
+        }
+        gallery={
+          <ProductGallery
+            images={galleryImages}
+            tag={tPage('gallery.tag')}
+            title={t('rwoodGroovePage.gallery.title')}
+          />
+        }
+        downloads={
+          <ProductDownloads
+            product={PRODUCTS['rwood-groove']}
+            tag={tPage('downloads.tag')}
+            title={tPage('downloads.title')}
+          />
+        }
+        faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
+        otherModels={<OtherModels slug="rwood-groove" />}
+      />
     </NextIntlClientProvider>
   );
 }

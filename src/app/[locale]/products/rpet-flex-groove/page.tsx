@@ -2,9 +2,14 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import OtherModels from '@/components/product/OtherModels';
+import ProductDownloads from '@/components/product/ProductDownloads';
+import ProductFaq from '@/components/product/ProductFaq';
+import ProductSpecs from '@/components/product/ProductSpecs';
 import RpetFlexGrooveProductPage from '@/components/sections/rpetflexgroovepage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import specs from '@/data/specs/rpet-flex-groove';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -59,10 +64,12 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   // The locale layout only provides nav/footer/cookies messages to client
   // components — narrow the catalog to what this page's client tree needs.
+  // (No gated documents on this product, so the lead modal — and its
+  // `leadModal` namespace — is no longer in the client tree.)
   const messages = pickMessages(await getMessages(), [
     'productPage',
     'rpetFlexGroovePage',
-    'leadModal',
+    'manufacturer',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
@@ -72,6 +79,10 @@ export default async function Page({ params: { locale } }: PageProps) {
   const description = tMeta('rpetFlexGrooveDescription');
 
   const tProducts = await getTranslations({ locale, namespace: 'products' });
+
+  // Root + productPage translators for the server-rendered sections.
+  const t = await getTranslations({ locale });
+  const tPage = await getTranslations({ locale, namespace: 'productPage' });
 
   // FAQ entries — fall back gracefully if a question key isn't translated
   // (string returns the key, which we then filter out).
@@ -126,7 +137,24 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <RpetFlexGrooveProductPage />
+      <RpetFlexGrooveProductPage
+        specs={
+          <ProductSpecs
+            cards={specs}
+            tag={t('rpetFlexGroovePage.specs.tag')}
+            title={t('rpetFlexGroovePage.specs.title')}
+          />
+        }
+        downloads={
+          <ProductDownloads
+            product={PRODUCTS['rpet-flex-groove']}
+            tag={tPage('downloads.tag')}
+            title={tPage('downloads.title')}
+          />
+        }
+        faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
+        otherModels={<OtherModels slug="rpet-flex-groove" />}
+      />
     </NextIntlClientProvider>
   );
 }

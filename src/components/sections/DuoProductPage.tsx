@@ -1,14 +1,14 @@
 'use client';
 
-import SoundboothProductPage from './SoundboothProductPage';
+import SoundboothProductPage, { type BoothSlots } from './SoundboothProductPage';
 
 /**
- * Duo — two-configuration Re-Sound soundbooth.
+ * Duo — two-person Re-Sound office phone booth / focus pod.
  * One shell; "Flex" config seats two for a meeting, "Work" config gives one
- * person a full-width desk. Adapts Box 2 Flex + Box 2 Work supplier pages
- * into a single white-label product page (same shell, switchable layout).
+ * person a full-width desk. Specifications, downloads, FAQ and "other
+ * models" arrive as server-rendered slots from the route page.
  */
-export default function DuoProductPage() {
+export default function DuoProductPage(slots: BoothSlots) {
   return (
     <SoundboothProductPage
       slug="duo"
@@ -32,41 +32,6 @@ export default function DuoProductPage() {
         { iconKey: '♿', key: 'accessibility' },
         { iconKey: '🛡️', key: 'safety' },
       ]}
-      specCards={[
-        { titleKey: 'dimensionsTitle', rows: [
-          { label: 'externalDim', value: 'externalDimValue' },
-          { label: 'internalDim', value: 'internalDimValue' },
-          { label: 'doorWidth',   value: 'doorWidthValue' },
-          { label: 'weight',      value: 'weightValue' },
-        ]},
-        { titleKey: 'acousticsTitle', rows: [
-          { label: 'noiseReduction', value: 'noiseReductionValue' },
-          { label: 'absorberMaterial', value: 'absorberValue' },
-          { label: 'doorSeal', value: 'doorSealValue' },
-        ]},
-        { titleKey: 'ventilationTitle', rows: [
-          { label: 'airflow', value: 'airflowValue' },
-          { label: 'fanCount', value: 'fanCountValue' },
-          { label: 'occupancySensor', value: 'occupancyValue' },
-        ]},
-        { titleKey: 'electricsTitle', rows: [
-          { label: 'powerSockets', value: 'powerValue' },
-          { label: 'usb', value: 'usbValue' },
-          { label: 'lighting', value: 'lightingValue' },
-          { label: 'totalConsumption', value: 'consumptionValue' },
-        ]},
-        { titleKey: 'materialsTitle', rows: [
-          { label: 'frame', value: 'frameValue' },
-          { label: 'glass', value: 'glassValue' },
-          { label: 'interior', value: 'interiorValue' },
-          { label: 'floor', value: 'floorValue' },
-        ]},
-        { titleKey: 'warrantyTitle', rows: [
-          { label: 'structural', value: 'structuralValue' },
-          { label: 'electronics', value: 'electronicsValue' },
-          { label: 'delivery', value: 'deliveryValue' },
-        ]},
-      ]}
       addons={[
         { id: 'electricDesk',    image: '/images/products/duo/addon-desk.jpg' },
         { id: 'monitorMount',    image: '/images/products/duo/addon-monitor.jpg' },
@@ -75,18 +40,7 @@ export default function DuoProductPage() {
         { id: 'extraSeating',    image: '/images/products/duo/addon-seating.jpg' },
         { id: 'fabricPanel',     image: '/images/products/duo/addon-fabric.jpg' },
       ]}
-      downloads={[
-        { id: 'datasheet',  labelKey: 'downloads.productDataSheet',    icon: '📄', file: '/documents/duo/product-data-sheet.pdf' },
-        { id: 'manual',     labelKey: 'downloads.installationManual',  icon: '📋', file: '/documents/duo/installation-manual.pdf' },
-        { id: 'acoustic',   labelKey: 'downloads.acousticTestReport',  icon: '📊', file: '/documents/duo/acoustic-test-report.pdf' },
-        { id: 'cad',        labelKey: 'downloads.cadDrawing',          icon: '📐', file: '/documents/duo/cad-drawing.dwg' },
-        { id: 'warranty',   labelKey: 'downloads.warranty',            icon: '🛡️', file: '/documents/duo/warranty.pdf' },
-        { id: 'sustain',    labelKey: 'downloads.sustainability',      icon: '♻️', file: '/documents/duo/sustainability.pdf' },
-      ]}
-      crossLinks={[
-        { slug: 'solo-flex',  href: '/products/solo-flex' },
-        { slug: 'modular-xl', href: '/products/modular-xl' },
-      ]}
+      {...slots}
     />
   );
 }

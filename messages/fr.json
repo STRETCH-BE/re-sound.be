@@ -56,13 +56,6 @@
     "partner": "Partenaire"
   },
   "hero": {
-    "badge": "Acoustique 100% Circulaire",
-    "title": "L'acoustique devient",
-    "titleHighlight": "circulaire.",
-    "subtitle": "Solutions acoustiques haute performance fabriquées à partir de matériaux recyclés. Nous transformons les déchets en silence—conçu pour la planète, fabriqué en Belgique.",
-    "ctaPrimary": "Découvrir les Produits",
-    "ctaSecondary": "Comment Ça Marche",
-    "panelTag": "Matériaux Recyclés",
     "circular": {
       "badge": "Gamme Circulaire · Interior · Solid · Divide · rPET",
       "title": "Conçu pour revenir —",
@@ -88,12 +81,6 @@
       "statAbsorption": "Absorption",
       "statFire": "Classement au feu"
     }
-  },
-  "stats": {
-    "absorption": "Absorption Sonore",
-    "colors": "Couleurs Disponibles",
-    "waste": "Déchets en Décharge",
-    "madeIn": "Fabriqué en Belgique"
   },
   "materials": {
     "tag": "CE QUE NOUS UTILISONS",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Déclaration de Durabilité",
       "technicalDrawing": "Dessin Technique",
       "bimFile": "Fichier BIM",
-      "epd": "Déclaration Environnementale de Produit (DEP)"
+      "epd": "Déclaration Environnementale de Produit (DEP)",
+      "colourFinishGuide": "Guide couleurs & finitions",
+      "warranty": "Certificat de garantie",
+      "cadDrawing": "Plan CAO (DWG)",
+      "installationGuide": "Guide d’installation",
+      "gatedHint": "Disponible sur demande"
     },
     "specs": {
       "dimensions": "Dimensions",
@@ -922,6 +914,14 @@
       "coreDensity": "Densité du cœur",
       "formaldehyde": "Formaldéhyde",
       "fscCert": "Certifié FSC®"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Questions fréquentes"
+    },
+    "related": {
+      "tag": "AUSSI DANS LA GAMME",
+      "title": "Autres modèles de la gamme"
     }
   },
   "interiorPage": {

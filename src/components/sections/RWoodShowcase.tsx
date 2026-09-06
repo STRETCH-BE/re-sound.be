@@ -142,7 +142,7 @@ export default function RWoodShowcase() {
           </h2>
           <p>{t('heroSubtitle')}</p>
           <div className="rwood-hero-cta">
-            <Link href="/products/rwood-groove" className="rwood-btn-warm">
+            <Link href="/products/rwood-groove" prefetch={false} className="rwood-btn-warm">
               {t('ctaExplore')}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
@@ -254,7 +254,7 @@ export default function RWoodShowcase() {
           </div>
 
           <div className="info-cta">
-            <Link href="/products/rwood-groove" className="rwood-btn-warm">
+            <Link href="/products/rwood-groove" prefetch={false} className="rwood-btn-warm">
               {t('ctaFullSpec')}
             </Link>
             {/* Plain <a>: documents live outside the locale prefix. The path

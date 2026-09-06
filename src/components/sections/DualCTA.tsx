@@ -55,7 +55,7 @@ export default function DualCTA() {
             <span className="cta-eyebrow">{t('right.eyebrow')}</span>
             <h3>{t('right.title')}</h3>
             <p>{t('right.subtitle')}</p>
-            <Link href="/contact" className="dcta-btn-blue">
+            <Link href="/contact" prefetch={false} className="dcta-btn-blue">
               {t('right.cta')}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />

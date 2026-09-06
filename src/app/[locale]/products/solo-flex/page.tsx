@@ -6,6 +6,11 @@ import SoloFlexProductPage from '@/components/sections/SoloFlexProductPage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import specs from '@/data/specs/solo-flex';
+import ProductSpecs from '@/components/product/ProductSpecs';
+import ProductDownloads from '@/components/product/ProductDownloads';
+import ProductFaq from '@/components/product/ProductFaq';
+import OtherModels from '@/components/product/OtherModels';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -84,7 +89,12 @@ export default async function Page({ params: { locale } }: PageProps) {
     'soloFlexPage',
     'boothPage',
     'leadModal',
+    'manufacturer',
   ]);
+
+  const tBooth = await getTranslations({ locale, namespace: 'soloFlexPage' });
+  const tShared = await getTranslations({ locale, namespace: 'boothPage' });
+  const tPage = await getTranslations({ locale, namespace: 'productPage' });
 
   return (
     <>
@@ -120,7 +130,12 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <SoloFlexProductPage />
+        <SoloFlexProductPage
+          specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
+          downloads={<ProductDownloads product={PRODUCTS['solo-flex']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}
+          faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
+          otherModels={<OtherModels slug="solo-flex" />}
+        />
       </NextIntlClientProvider>
     </>
   );

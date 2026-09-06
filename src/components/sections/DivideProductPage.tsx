@@ -1,14 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for the Divide product
 const colorOptions = [
@@ -21,13 +17,24 @@ const colorOptions = [
 ];
 
 
-export default function DivideProductPage() {
+/**
+ * Server-rendered sections handed in by the route page
+ * (src/app/[locale]/products/divide/page.tsx). Specifications, downloads,
+ * gallery, FAQ and "other models" no longer live in this client component.
+ */
+export interface DivideProductPageSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  gallery?: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
+
+export default function DivideProductPage({ specs, downloads, gallery, faq, otherModels }: DivideProductPageSlots) {
   const t = useTranslations('dividePage');
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedColor, setSelectedColor] = useState(colorOptions[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
@@ -38,83 +45,10 @@ export default function DivideProductPage() {
   }, []);
 
 
-  const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/divide/Resound_datasheet_DIVIDE.pdf' },
-    { id: 'configuration-guide', name: 'Configuration Guide', icon: '📋', file: '/documents/divide/Resound_datasheet_DIVIDE.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/divide/Resound_datasheet_DIVIDE.pdf' },
-    { id: 'color-fabric-guide', name: tPage('downloads.colorFabricGuide'), icon: '🎨', file: '/documents/divide/Resound_Colour_Fabric_guide.pdf' },
-    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/divide/22_03153_01_L-variant.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/divide/Resound_Sustainability_Declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
   const handleColorSelect = (color: typeof colorOptions[0]) => {
     if (color.id !== selectedColor.id) {
       setIsImageLoading(true);
       setSelectedColor(color);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'Divide Product Page',
-        }),
-      });
-
-      if (response.ok) {
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'divide', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('divide', fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'divide');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -155,6 +89,7 @@ export default function DivideProductPage() {
           <p className="hero-description">
             {t('hero.description')}
           </p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -215,10 +150,8 @@ export default function DivideProductPage() {
                   title={color.name}
                   aria-label={`Select ${color.name} color`}
                 >
-                  <span 
-                    className="color-swatch" 
-                    style={{ backgroundImage: `url(${color.swatch})` }}
-                  />
+                  {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
+                  <Image src={color.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="color-swatch" style={{ objectFit: 'cover' }} />
                   {selectedColor.id === color.id && (
                     <span className={`color-check ${color.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
                   )}
@@ -533,199 +466,20 @@ export default function DivideProductPage() {
         </div>
       </section>
 
-      {/* Specifications Section */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (ProductSpecs) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.moduleWidth')}</td>
-                  <td>800 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.moduleHeight')}</td>
-                  <td>1600 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.thickness')}</td>
-                  <td>45 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.weight')}</td>
-                  <td>~8 kg per module</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Gallery — server-rendered (ProductGallery) */}
+      {gallery}
 
-          <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.absorptionCoeff')}</td>
-                  <td>0.85</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.absorptionClass')}</td>
-                  <td>{tPage('acoustics.classA')}</td>
-                </tr>
-                <tr>
-                  <td>Dual-sided</td>
-                  <td>Yes</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Downloads — server-rendered (ProductDownloads) */}
+      {downloads}
 
-          <div className="spec-card">
-            <h4>{t('specs.materialsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Core</td>
-                  <td>Recycled textile fiber</td>
-                </tr>
-                <tr>
-                  <td>Cover</td>
-                  <td>{t('specs.fabricCore')}</td>
-                </tr>
-                <tr>
-                  <td>Base</td>
-                  <td>{t('specs.steelFrame')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.magnets')}</td>
-                  <td>{t('specs.magnetsVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* FAQ — server-rendered (ProductFaq) */}
+      {faq}
 
-          <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Fire rating</td>
-                  <td>B-s1, d0</td>
-                </tr>
-                <tr>
-                  <td>Standard</td>
-                  <td>EN 13501-1</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.sustainTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Recycled content</td>
-                  <td>≥80%</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.endOfLife')}</td>
-                  <td>{t('specs.endOfLifeVal')}</td>
-                </tr>
-                <tr>
-                  <td>VOC emissions</td>
-                  <td>Low / A+</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.featuresTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.connection')}</td>
-                  <td>{t('specs.connectionVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.setupTime')}</td>
-                  <td>{t('specs.setupTimeVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.toolsRequired')}</td>
-                  <td>None</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{tPage('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {/* Showcase all six colourways — only the selected one is visible
-              in the hero, and dedicated gallery photos don't exist yet. */}
-          {colorOptions.map((color) => (
-            <div key={color.id} className="gallery-item">
-              <div className="image-container gallery">
-                <Image
-                  src={color.image}
-                  alt={`Divide acoustic room divider in ${color.name}`}
-                  fill
-                  sizes="(max-width: 1024px) 50vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tPage('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{download.name}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
+      {/* Other models in this range — server-rendered (OtherModels) */}
+      {otherModels}
 
       {/* CTA Section */}
       <section className="content-section cta-section">
@@ -979,7 +733,6 @@ export default function DivideProductPage() {
 
         .selected-color-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
 
-        .image-container.gallery { aspect-ratio: 1; }
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
 
         .product-nav {
@@ -1258,93 +1011,6 @@ export default function DivideProductPage() {
         .benefit h4 { font-size: 1.1rem; color: var(--deep-blue); margin-bottom: 0.5rem; }
         .benefit p { font-size: 0.9rem; color: #666; margin: 0; }
 
-        .specs-header { text-align: center; margin-bottom: 3rem; }
-        .specs-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .specs-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .spec-card {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 16px;
-        }
-
-        .spec-card h4 {
-          font-size: 1rem;
-          color: var(--brand-blue);
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .spec-card table { width: 100%; }
-
-        .spec-card td {
-          padding: 0.5rem 0;
-          font-size: 0.9rem;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .spec-card tr:last-child td { border-bottom: none; }
-        .spec-card td:first-child { color: #666; }
-        .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
-
-        .gallery-section { background: var(--deep-blue); }
-        .gallery-header { text-align: center; margin-bottom: 3rem; }
-        .gallery-header h2 { font-size: 2.5rem; color: white; }
-        .gallery-header .section-tag { background: rgba(25, 127, 199, 0.3); color: #7ec8f5; }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item { border-radius: 16px; overflow: hidden; }
-
-        .downloads-header { text-align: center; margin-bottom: 3rem; }
-        .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .downloads-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 1.5rem;
-          background: var(--cream);
-          border-radius: 12px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          border: none;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .download-card:hover {
-          background: var(--brand-blue-pale);
-          transform: translateY(-2px);
-        }
-
-        .download-icon { font-size: 2rem; }
-        .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #767676; }
-        .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
-
         .cta-section {
           background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%);
           text-align: center;
@@ -1376,7 +1042,6 @@ export default function DivideProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .acoustics-visual { flex-direction: column; gap: 3rem; }
           .acoustics-benefits { grid-template-columns: 1fr; }
           .config-options { flex-wrap: wrap; justify-content: center; }
@@ -1390,8 +1055,6 @@ export default function DivideProductPage() {
           .hero-usps { flex-direction: column; gap: 1rem; }
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
-          .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .cta-buttons { flex-direction: column; }
           .circular-stats { flex-wrap: wrap; justify-content: center; }
           .connect-demo { flex-direction: column; }

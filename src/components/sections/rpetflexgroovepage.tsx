@@ -1,14 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for rPET Flex-Groove (12 colors from Refined Collection).
 // No per-colour product photography exists yet, so colours are rendered as
@@ -38,9 +34,20 @@ const directionOptions = [
 // per-colour photography exists for this product.
 const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
 
-// Lead Generation Form Modal
+/**
+ * Server-rendered sections are passed in as React nodes ("slots") so this
+ * client component only ships the hero / configurators; specs, downloads,
+ * FAQ and other models are plain HTML with no hydration cost.
+ */
+export interface RPETFlexGrooveProductPageSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  gallery?: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
 
-export default function RPETFlexGrooveProductPage() {
+export default function RPETFlexGrooveProductPage({ specs, downloads, faq, otherModels }: RPETFlexGrooveProductPageSlots) {
   const t = useTranslations('rpetFlexGroovePage');
   // Renders description2 below description only when distinct (handles the
   // pre-existing data state where some locales have the same content in both
@@ -57,10 +64,8 @@ export default function RPETFlexGrooveProductPage() {
   };
 
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedColor, setSelectedColor] = useState<typeof colorOptions[0] | null>(null);
   const [selectedDirection, setSelectedDirection] = useState(directionOptions[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
@@ -71,85 +76,11 @@ export default function RPETFlexGrooveProductPage() {
     analytics.viewItem('rpet-flex-groove', 'rpet');
   }, []);
 
-
-  const downloads = [
-    { id: 'product-data-sheet', name: 'Product Data Sheet', icon: '📄', file: '/documents/rpet-flex-groove/product-data-sheet.pdf' },
-    { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rpet-flex-groove/installation-guide.pdf' },
-    { id: 'technical-drawing', name: 'Technical Drawing', icon: '📐', file: '/documents/rpet-flex-groove/technical-drawing.pdf' },
-    { id: 'care-maintenance', name: 'Care & Maintenance', icon: '🧹', file: '/documents/rpet-flex-groove/care-maintenance.pdf' },
-    { id: 'fire-certificate', name: 'Fire Certificate', icon: '🔥', file: '/documents/rpet-flex-groove/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: 'Sustainability Declaration', icon: '♻️', file: '/documents/rpet-flex-groove/sustainability-declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
   // Colour choice is a visual reference only — it never swaps the hero
   // image (no per-colour photos exist), so no loading state is involved.
   const handleColorSelect = (color: typeof colorOptions[0]) => {
     if (!selectedColor || color.id !== selectedColor.id) {
       setSelectedColor(color);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'rPET Flex-Groove Product Page',
-        }),
-      });
-
-      if (response.ok) {
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'rpet-flex-groove', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('rpet-flex-groove', fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'rpet-flex-groove');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -191,6 +122,7 @@ export default function RPETFlexGrooveProductPage() {
           <p className="hero-description">
             {t('hero.description')}
           </p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -216,7 +148,6 @@ export default function RPETFlexGrooveProductPage() {
             </a>
           </div>
 
-          <p className="hero-price">  <strong> </strong>  </p>
         </div>
         
         <div className="hero-image">
@@ -602,180 +533,11 @@ export default function RPETFlexGrooveProductPage() {
         </div>
       </section>
 
-      {/* Specifications Section */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (ProductSpecs) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.dimPanelLength')}</td>
-                  <td>2880 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimPanelWidth')}</td>
-                  <td>1130 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.thickness')}</td>
-                  <td>9 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.weight')}</td>
-                  <td>4.4 kg</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimDensity')}</td>
-                  <td>1.35 kg/m²</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.flexibilityTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.flexMinRadius')}</td>
-                  <td>500 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.flexBendDir')}</td>
-                  <td>{t('specs.flexBendDirVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.flexCutType')}</td>
-                  <td>{t('specs.flexCutTypeVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.materialTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.matComposition')}</td>
-                  <td>{t('specs.matCompositionVal')}</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.recycledContent')}</td>
-                  <td>100%</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.matFireRetardant')}</td>
-                  <td>{t('specs.matFireRetardantVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.matColorVar')}</td>
-                  <td>{t('specs.matColorVarVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.fireRating') || t('specs.fireRating')}</td>
-                  <td>B-s1, d0</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.testStandard')}</td>
-                  <td>EN 13501-1</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.fireSmokeProduction')}</td>
-                  <td>s1 (low)</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.fireFlamingDroplets')}</td>
-                  <td>{t('specs.fireFlamingDropletsVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.certsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.certMaterial')}</td>
-                  <td>OEKO-TEX® Standard 100</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.certVOC')}</td>
-                  <td>{t('specs.certVOCVal')}</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.recycledContent')}</td>
-                  <td>{t('specs.certRecycledVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.applicationsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.appSurfaces')}</td>
-                  <td>{t('specs.appSurfacesVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appEnvironment')}</td>
-                  <td>{t('specs.appEnvironmentVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appInstallation')}</td>
-                  <td>{t('specs.appInstallationVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appOrientation')}</td>
-                  <td>{t('specs.appOrientationVal')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{t('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{download.name}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* Downloads — server-rendered (ProductDownloads) */}
+      {downloads}
 
       {/* Applications Section */}
       <section className="content-section applications-section dark">
@@ -809,14 +571,11 @@ export default function RPETFlexGrooveProductPage() {
         </div>
       </section>
 
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
+      {/* FAQ — server-rendered (ProductFaq) */}
+      {faq}
+
+      {/* Other models in this range — server-rendered (OtherModels) */}
+      {otherModels}
 
       {/* CTA Section */}
       <section className="content-section cta-section">
@@ -1489,80 +1248,6 @@ export default function RPETFlexGrooveProductPage() {
         .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
 
-        /* Specs Section */
-        .specs-header { text-align: center; margin-bottom: 3rem; }
-        .specs-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .specs-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .spec-card {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 16px;
-        }
-
-        .spec-card h4 {
-          font-size: 1rem;
-          color: var(--pet-teal);
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .spec-card table { width: 100%; }
-
-        .spec-card td {
-          padding: 0.5rem 0;
-          font-size: 0.9rem;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .spec-card tr:last-child td { border-bottom: none; }
-        .spec-card td:first-child { color: #666; }
-        .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
-
-        /* Downloads Section */
-        .downloads-header { text-align: center; margin-bottom: 3rem; }
-        .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .downloads-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 1.5rem;
-          background: var(--cream);
-          border-radius: 12px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          border: none;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .download-card:hover {
-          background: var(--brand-blue-pale);
-          transform: translateY(-2px);
-        }
-
-        .download-icon { font-size: 2rem; }
-        .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #767676; }
-        .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
-
         /* Applications Section */
         .applications-header {
           text-align: center;
@@ -1624,7 +1309,6 @@ export default function RPETFlexGrooveProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid { grid-template-columns: repeat(2, 1fr); }
           .flexibility-benefits { grid-template-columns: 1fr; }
           .applications-grid { grid-template-columns: repeat(2, 1fr); }
           .acoustics-visual { flex-direction: column; gap: 3rem; }
@@ -1645,7 +1329,6 @@ export default function RPETFlexGrooveProductPage() {
           .hero-usps { flex-direction: column; gap: 1rem; }
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
-          .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
           .applications-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }
           .direction-selector { flex-wrap: wrap; }

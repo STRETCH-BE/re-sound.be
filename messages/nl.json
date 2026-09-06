@@ -56,13 +56,6 @@
     "partner": "Partner"
   },
   "hero": {
-    "badge": "100% Circulaire Akoestiek",
-    "title": "Akoestiek wordt",
-    "titleHighlight": "circulair.",
-    "subtitle": "Hoogwaardige akoestische oplossingen gemaakt van gerecycleerde materialen. Wij transformeren afval tot stilte—ontworpen voor de planeet, gemaakt in België.",
-    "ctaPrimary": "Ontdek Producten",
-    "ctaSecondary": "Hoe Het Werkt",
-    "panelTag": "Gerecycleerde Materialen",
     "circular": {
       "badge": "Circulair Gamma · Interior · Solid · Divide · rPET",
       "title": "Ontworpen om terug te keren —",
@@ -88,12 +81,6 @@
       "statAbsorption": "Absorptie",
       "statFire": "Brandklasse"
     }
-  },
-  "stats": {
-    "absorption": "Geluidsabsorptie",
-    "colors": "Kleuren Beschikbaar",
-    "waste": "Afval naar Stort",
-    "madeIn": "Gemaakt in België"
   },
   "materials": {
     "tag": "WAT WE GEBRUIKEN",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Duurzaamheidsverklaring",
       "technicalDrawing": "Technische Tekening",
       "bimFile": "BIM-bestand",
-      "epd": "Milieuverlaring (EPD)"
+      "epd": "Milieuverlaring (EPD)",
+      "colourFinishGuide": "Kleur- & afwerkingsgids",
+      "warranty": "Garantiecertificaat",
+      "cadDrawing": "CAD-tekening (DWG)",
+      "installationGuide": "Installatiegids",
+      "gatedHint": "Op aanvraag beschikbaar"
     },
     "specs": {
       "dimensions": "Afmetingen",
@@ -922,6 +914,14 @@
       "coreDensity": "Kerndichtheid",
       "formaldehyde": "Formaldehyde",
       "fscCert": "FSC® gecertificeerd"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Veelgestelde vragen"
+    },
+    "related": {
+      "tag": "OOK IN DIT GAMMA",
+      "title": "Andere modellen in dit gamma"
     }
   },
   "interiorPage": {

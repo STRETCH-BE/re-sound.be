@@ -34,6 +34,7 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
         <Link
           key={link.href}
           href={link.href}
+          prefetch={false}
           className="mobile-nav-link"
           onClick={onClose}
           style={{ animationDelay: `${index * 0.1}s` }}
@@ -44,7 +45,7 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
 
       <div className="mobile-nav-actions">
         <LanguageSwitcher />
-        <Link href="/contact" className="nav-cta" onClick={onClose}>
+        <Link href="/contact" prefetch={false} className="nav-cta" onClick={onClose}>
           {t('cta')}
         </Link>
       </div>

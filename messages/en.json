@@ -56,13 +56,6 @@
     "whereToBuy": "Where to buy"
   },
   "hero": {
-    "badge": "100% Circular Acoustics",
-    "title": "Acoustics made",
-    "titleHighlight": "circular.",
-    "subtitle": "High-performance acoustic solutions crafted from recycled materials. We transform waste into silence—designed for the planet, made in Belgium.",
-    "ctaPrimary": "Discover Products",
-    "ctaSecondary": "How It Works",
-    "panelTag": "Recycled Materials",
     "rwood": {
       "badge": "rWood Series · Natural Finish Line",
       "title": "Acoustic panels with",
@@ -98,12 +91,6 @@
     "colors": "50+ Standard Colors",
     "custom": "Custom Sizes on Request",
     "factories": "Made in our own factories"
-  },
-  "stats": {
-    "absorption": "Sound Absorption",
-    "colors": "Colors Available",
-    "waste": "Waste to Landfill",
-    "madeIn": "Made in Belgium"
   },
   "materials": {
     "tag": "WHAT WE USE",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Sustainability Declaration",
       "technicalDrawing": "Technical Drawing",
       "bimFile": "BIM File",
-      "epd": "Environmental Product Declaration (EPD)"
+      "epd": "Environmental Product Declaration (EPD)",
+      "colourFinishGuide": "Colour & Finish Guide",
+      "warranty": "Warranty certificate",
+      "cadDrawing": "CAD drawing (DWG)",
+      "installationGuide": "Installation Guide",
+      "gatedHint": "Available on request"
     },
     "specs": {
       "dimensions": "Dimensions",
@@ -922,6 +914,14 @@
       "coreDensity": "Core density",
       "formaldehyde": "Formaldehyde",
       "fscCert": "FSC® certified"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Frequently asked questions"
+    },
+    "related": {
+      "tag": "ALSO IN THE RANGE",
+      "title": "Other models in this range"
     }
   },
   "interiorPage": {

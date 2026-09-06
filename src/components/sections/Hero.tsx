@@ -13,12 +13,17 @@ export default function Hero() {
       {/* ── LEFT PANEL: rWood / Natural ── */}
       <div className="panel panel-left">
         <div className="panel-img">
+          {/* The only `priority` image on the page: it is the mobile LCP
+              element. `sizes` mirrors the real slot (full width when the
+              panels stack below 1024px, half width on desktop); q55 keeps
+              the AVIF/WebP small enough to decode quickly on a phone. */}
           <Image
             src="/images/products/rwood-micro/finish-detail.webp"
-            alt="rWood acoustic panel with natural wood veneer"
+            alt="rWood Micro acoustic panel with natural wood veneer, close-up of the finish"
             fill
             style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
             priority
+            quality={55}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
@@ -49,7 +54,7 @@ export default function Hero() {
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/products/rwood-veneer" className="hero-btn-ghost-warm">
+            <Link href="/products/rwood-veneer" prefetch={false} className="hero-btn-ghost-warm">
               {t('rwood.ctaSecondary')}
             </Link>
           </div>
@@ -78,14 +83,15 @@ export default function Hero() {
       {/* ── RIGHT PANEL: Circular Range ── */}
       <div className="panel panel-right">
         <div className="panel-img">
+          {/* Second panel: below the fold on phones (the panels stack), so it
+              lazy-loads; on desktop the browser fetches it as soon as it is
+              in the viewport. Never `priority`/eager — one LCP image only. */}
           <Image
             src="/images/products/interior/hero.webp"
-            alt="Circular acoustic panels in a modern office"
+            alt="Interior circular acoustic panels in a modern office"
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
-            // Eager so desktop paints both panels immediately, but NOT
-            // `priority` — only the first panel (the mobile LCP) preloads.
-            loading="eager"
+            quality={55}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
@@ -118,7 +124,7 @@ export default function Hero() {
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/sustainability" className="hero-btn-ghost-blue">
+            <Link href="/sustainability" prefetch={false} className="hero-btn-ghost-blue">
               {t('circular.ctaSecondary')}
             </Link>
           </div>
@@ -454,10 +460,24 @@ export default function Hero() {
           pointer-events: none;
         }
 
-        /* ── ANIMATIONS ── */
+        /* ── ANIMATIONS ──
+           Transform only: the previous opacity:0 start (with fill-mode
+           "both") kept the h1 / paragraph — LCP candidates — invisible
+           until the animation ran. Motion-sensitive users get no motion. */
         @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to   { opacity: 1; transform: translateY(0); }
+          from { transform: translateY(20px); }
+          to   { transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .panel-badge,
+          .panel-content h1,
+          .panel-content .hero-title-b,
+          .panel-content > p,
+          .pill-row,
+          .cta-row,
+          .stat-row {
+            animation: none;
+          }
         }
 
         /* ── RESPONSIVE ── */

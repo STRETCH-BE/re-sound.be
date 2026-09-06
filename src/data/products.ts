@@ -149,6 +149,7 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/interior/hero.webp',
     cardImage: '/images/products/interior/interior_card.webp',
     documents: panelDocs('interior'),
+    // Page values (spec table). The old JSON-LD said B-s2,d0 — flagged in the report.
     specs: { kind: 'panel', format: '900 × 600 mm', thickness: '45 mm', alphaW: '1.0', nrc: '0.95', fireClass: 'B-s1,d0', finishCount: 6 },
     faqKeys: ['leadTime', 'washableCover', 'absorptionRating', 'breeamLeed', 'installMethod'],
     namespace: 'interiorPage',
@@ -168,7 +169,8 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/solid/hero-denim.webp',
     cardImage: '/images/products/solid/solid_card.webp',
     documents: panelDocs('solid'),
-    specs: { kind: 'panel', format: '1200 × 600 mm', thickness: '45 mm', alphaW: '0.95', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 5 },
+    // TODO(needs-Michael): page table says 50 mm, messages say 45 mm; JSON-LD said B-s2,d0.
+    specs: { kind: 'panel', format: '1200 × 600 mm', thickness: '50 mm', alphaW: '0.95', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 5 },
     faqKeys: ['leadTime', 'hookInstall', 'sizeCustomization', 'weightPerPanel', 'absorptionRating'],
     namespace: 'solidPage',
     metaKey: 'solid',
@@ -179,7 +181,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'textile',
     name: 'Divide',
     madeIn: 'BE',
-    recycledContentPct: null, // TODO(needs-Michael): copy says "100% recycled" (textile + steel frame) — confirm %
+    recycledContentPct: 80, // page spec table "≥80%"; the old meta said "100% recycled" — flagged
     material: 'Recycled textile fibres, recycled steel frame',
     certifications: [],
     // The page states "Starting from €1,238 excl. VAT" per screen.
@@ -188,7 +190,8 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/divide/hero-denim.webp',
     cardImage: '/images/products/divide/divide_card.webp',
     documents: panelDocs('divide'),
-    specs: { kind: 'panel', format: null, thickness: null, alphaW: null, nrc: null, fireClass: null, finishCount: 6 },
+    // αw 0.85 is per side (dual-sided screen). Old JSON-LD said αw 0.90 / B-s2,d0 — flagged.
+    specs: { kind: 'panel', format: '800 × 1600 mm', thickness: '45 mm', alphaW: '0.85', nrc: null, fireClass: 'B-s1,d0', finishCount: 6 },
     faqKeys: ['leadTime', 'magneticConnection', 'dualSidedAbsorption', 'footStability', 'sizeCustomization'],
     namespace: 'dividePage',
     metaKey: 'divide',
@@ -201,7 +204,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Groove',
     madeIn: null, // TODO(needs-Michael): site only said "Made in Europe"
-    recycledContentPct: 60, // JSON-LD spec: "Recycled content 60 %"
+    recycledContentPct: null, // TODO(needs-Michael): old JSON-LD claimed 60 %, nothing on the page supports a figure
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
     fromPrice: null, // TODO(needs-Michael)
@@ -209,7 +212,9 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rwood-groove/hero-rWood-Groove.webp',
     cardImage: '/images/products/rwood-groove/hero-rWood-Groove.webp',
     documents: panelDocs('rwood-groove'),
-    specs: { kind: 'panel', format: null, thickness: null, alphaW: '0.85', nrc: '0.80', fireClass: 'B-s2,d0', finishCount: 5 },
+    // Page: αw 0.90 (old JSON-LD 0.85); fire class depends on the core: standard MDF
+    // D-s2,d2, fire-retardant MDF B-s1,d0 (FAQ said B-s2,d0) — all flagged.
+    specs: { kind: 'panel', format: '300 × 2400 / 2780 mm', thickness: '19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0 (FR core) / D-s2,d2', finishCount: 5 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodGroovePage',
     metaKey: 'rwoodGroove',
@@ -228,7 +233,8 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rwood-micro/hero-rwood-micro.webp',
     cardImage: '/images/products/rwood-micro/hero-rwood-micro.webp',
     documents: panelDocs('rwood-micro'),
-    specs: { kind: 'panel', format: null, thickness: null, alphaW: null, nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
+    // αw 0.90 (up to 1.00 with 50 mm mineral wool). Old JSON-LD claimed NRC 0.85 / 60 % recycled — unsupported, dropped.
+    specs: { kind: 'panel', format: '100–3050 × 100–1220 mm (custom)', thickness: '8–19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodMicroPage',
     metaKey: 'rwoodMicro',
@@ -239,7 +245,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Perf',
     madeIn: null, // TODO(needs-Michael)
-    recycledContentPct: null, // TODO(needs-Michael)
+    recycledContentPct: 17, // page badge "17% Recycled Content" (old JSON-LD said 60 %) — TODO(needs-Michael) confirm
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
     fromPrice: null, // TODO(needs-Michael)
@@ -247,7 +253,9 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rwood-perf/hero-rwood-perf.webp',
     cardImage: '/images/products/rwood-perf/hero-rwood-perf.webp',
     documents: panelDocs('rwood-perf'),
-    specs: { kind: 'panel', format: null, thickness: null, alphaW: '0.85', nrc: null, fireClass: null, finishCount: 8 },
+    // αw depends on the perforation pattern (PD8 0.85 … PH5 0.35). Page says B-s1,d0
+    // (one message key mistypes it as "B2-s1, d0"); old JSON-LD said B-s2,d0.
+    specs: { kind: 'panel', format: '100–3050 × 100–1220 mm (custom)', thickness: '8–19 mm', alphaW: '0.35–0.85 (per pattern)', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodPerfPage',
     metaKey: 'rwoodPerf',
@@ -266,7 +274,9 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
     cardImage: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
     documents: panelDocs('rwood-veneer'),
-    specs: { kind: 'panel', format: '1220 × 2800 mm', thickness: '12 / 19 mm', alphaW: null, nrc: null, fireClass: null, finishCount: 8 },
+    // No αw/NRC anywhere on the page (the blurb's "Class A" is unsupported — flagged).
+    // TODO(needs-Michael): title says 10 wood species, the veneer collection lists 8.
+    specs: { kind: 'panel', format: '1220 × 2800 / 3050 mm', thickness: '12 / 19 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0 (FR MDF) / D-s2,d0', finishCount: 8 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodVeneerPage',
     metaKey: 'rwoodVeneer',
@@ -288,7 +298,10 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rpet-panel/hero-rPET-Flat.webp',
     cardImage: '/images/products/rpet-panel/rPET - Panel - 2.png',
     documents: panelDocs('rpet-panel'),
-    specs: { kind: 'panel', format: null, thickness: '12 / 18 / 24 mm', alphaW: '1.00', nrc: null, fireClass: null, finishCount: 16 },
+    // Page: "up to αw 1.00" (0.95 in the tested 24 mm-on-frame set-up); fire class B-s2,d0 in the
+    // spec table but B-s1,d0 in the FAQ/old JSON-LD — TODO(needs-Michael). Colour count follows the
+    // agreed title (16); the page itself lists 5 standard colours + RAL/NCS — TODO(needs-Michael).
+    specs: { kind: 'panel', format: '1200 × 2750 mm', thickness: '12 / 18 / 24 mm', alphaW: 'up to 1.00', nrc: null, fireClass: 'B-s2,d0', finishCount: 16 },
     faqKeys: RPET_FAQ,
     namespace: 'rpetPanelPage',
     metaKey: 'rpetPanel',
@@ -307,7 +320,8 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rpet-groove/hero-rpet-groove.webp',
     cardImage: '/images/products/rpet-groove/gallery-1.jpg',
     documents: panelDocs('rpet-groove'),
-    specs: { kind: 'panel', format: null, thickness: '12 / 24 / 36 mm', alphaW: null, nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 12 },
+    // NRC by thickness (12/24/36 mm). Old JSON-LD claimed αw 0.85 — unsupported, dropped.
+    specs: { kind: 'panel', format: '600 / 1200 mm wide', thickness: '12 / 24 / 36 mm', alphaW: null, nrc: '0.55 / 0.75 / 0.90', fireClass: 'B-s1,d0', finishCount: 12 },
     faqKeys: RPET_FAQ,
     namespace: 'rpetGroovePage',
     metaKey: 'rpetGroove',
@@ -326,7 +340,8 @@ export const PRODUCTS: Record<string, Product> = {
     heroImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
     cardImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
     documents: panelDocs('rpet-flex-groove'),
-    specs: { kind: 'panel', format: null, thickness: null, alphaW: null, nrc: null, fireClass: null, finishCount: 12 },
+    // Old JSON-LD claimed αw/NRC 0.80 — unsupported by the page, dropped.
+    specs: { kind: 'panel', format: '1130 × 2880 mm', thickness: '9 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0', finishCount: 12 },
     faqKeys: RPET_FAQ,
     namespace: 'rpetFlexGroovePage',
     metaKey: 'rpetFlexGroove',

@@ -2,10 +2,16 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import OtherModels from '@/components/product/OtherModels';
+import ProductDownloads from '@/components/product/ProductDownloads';
+import ProductFaq from '@/components/product/ProductFaq';
+import ProductGallery from '@/components/product/ProductGallery';
+import ProductSpecs from '@/components/product/ProductSpecs';
 import RpetPanelProductPage from '@/components/sections/rpetpanelpage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import specs from '@/data/specs/rpet-panel';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -22,6 +28,12 @@ interface PageProps {
 // each translation file under `messages/{locale}.json` provides the actual
 // Q&A copy under `rpetPanelPage.faq.questions.<key>.question/.answer`.
 const FAQ_KEYS = ["oekoTex", "fireRating", "processability", "colorRange", "leadTime"] as const;
+
+// "Projects & Installations" gallery — same images, same order, as the
+// former client-rendered gallery section (gallery-7 does not exist).
+const GALLERY_IMAGES = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12].map(
+  (i) => `/images/products/rpet-panel/gallery-${i}.webp`
+);
 
 export async function generateMetadata({
   params: { locale },
@@ -65,6 +77,15 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tProducts = await getTranslations({ locale, namespace: 'products' });
 
+  // Root + productPage translators for the server-rendered sections.
+  const t = await getTranslations({ locale });
+  const tPage = await getTranslations({ locale, namespace: 'productPage' });
+
+  const galleryImages = GALLERY_IMAGES.map((src, i) => ({
+    src,
+    alt: `rPET Panel recycled PET acoustic felt panels — project installation ${i + 1}`,
+  }));
+
   // FAQ entries — fall back gracefully if a question key isn't translated
   // (string returns the key, which we then filter out).
   const tFaq = await getTranslations({
@@ -89,7 +110,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const messages = pickMessages(await getMessages(), [
     'productPage',
     'rpetPanelPage',
-    'leadModal',
+    'manufacturer',
   ]);
 
   return (
@@ -132,7 +153,31 @@ export default async function Page({ params: { locale } }: PageProps) {
         ])}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
-      <RpetPanelProductPage />
+      <RpetPanelProductPage
+        specs={
+          <ProductSpecs
+            cards={specs}
+            tag={t('rpetPanelPage.specs.tag')}
+            title={t('rpetPanelPage.specs.title')}
+          />
+        }
+        gallery={
+          <ProductGallery
+            images={galleryImages}
+            tag={tPage('gallery.tag')}
+            title={t('rpetPanelPage.gallery.title')}
+          />
+        }
+        downloads={
+          <ProductDownloads
+            product={PRODUCTS['rpet-panel']}
+            tag={tPage('downloads.tag')}
+            title={tPage('downloads.title')}
+          />
+        }
+        faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
+        otherModels={<OtherModels slug="rpet-panel" />}
+      />
     </NextIntlClientProvider>
   );
 }

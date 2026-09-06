@@ -62,7 +62,7 @@ export default function ProductsMosaic() {
         </div>
         <div className="header-right">
           <p>{t('mosaicSubtitle')}</p>
-          <Link href="/products" className="view-all">
+          <Link href="/products" prefetch={false} className="view-all">
             {t('viewAll')} →
           </Link>
         </div>
@@ -86,7 +86,7 @@ export default function ProductsMosaic() {
               <span className="mc-series">{p.series}</span>
               <h3 className="mc-name">{t(`${p.slug}.title`)}</h3>
               <p className="mc-desc">{t(`${p.slug}.description`)}</p>
-              <Link href={`/products/${p.slug}`} className="mc-link">
+              <Link href={`/products/${p.slug}`} prefetch={false} className="mc-link">
                 {t('learnMore')} →
               </Link>
             </div>

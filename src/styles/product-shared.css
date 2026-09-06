@@ -1,0 +1,651 @@
+/* ============================================================
+   Shared product-page sections (server-rendered, no styled-jsx)
+   Used by src/components/product/*: Specs, Downloads, FAQ,
+   Gallery ("Projects & Installations"), Other models, and the
+   manufacturer line in product heroes.
+   Prefix: .ps-  (product shared)
+   ============================================================ */
+
+.ps-section {
+  padding: 6rem 4rem;
+}
+
+.ps-section.ps-specs,
+.ps-section.ps-faq {
+  background: var(--cream);
+}
+
+.ps-section.ps-downloads,
+.ps-section.ps-gallery,
+.ps-section.ps-related {
+  background: white;
+}
+
+.ps-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.ps-header h2 {
+  font-size: 2.5rem;
+  color: var(--deep-blue);
+  letter-spacing: -1px;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.ps-header p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ── Accordion (details/summary) ─────────────────────────── */
+
+.ps-accordion {
+  background: white;
+  border: 1px solid #e6ecf1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.ps-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ps-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.ps-accordion summary h3 {
+  font-size: 1.05rem;
+  color: var(--deep-blue);
+  margin: 0;
+}
+
+.ps-chevron {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--brand-blue);
+  border-bottom: 2px solid var(--brand-blue);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.ps-accordion[open] .ps-chevron {
+  transform: rotate(-135deg);
+}
+
+.ps-accordion summary:hover {
+  background: var(--brand-blue-pale);
+}
+
+/* ── Specifications ──────────────────────────────────────── */
+
+.ps-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.ps-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.ps-table th,
+.ps-table td {
+  padding: 0.7rem 1.5rem;
+  border-top: 1px solid #eef2f6;
+  font-size: 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.ps-table th {
+  font-weight: 500;
+  color: #666;
+  width: 48%;
+}
+
+.ps-table td {
+  color: var(--deep-blue);
+  font-weight: 600;
+}
+
+/* ── FAQ ─────────────────────────────────────────────────── */
+
+.ps-faq-list {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ps-faq-item > p {
+  padding: 0 1.5rem 1.25rem;
+  margin: 0;
+  color: #555;
+  line-height: 1.75;
+}
+
+/* ── Downloads ───────────────────────────────────────────── */
+
+.ps-downloads-grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.ps-download-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: var(--cream);
+  border: 1px solid #e6ecf1;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ps-download-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand-blue);
+  box-shadow: 0 12px 30px rgba(13, 58, 92, 0.08);
+}
+
+.ps-download-icon {
+  font-size: 1.6rem;
+  flex: none;
+}
+
+.ps-download-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.ps-download-label {
+  font-weight: 600;
+  color: var(--deep-blue);
+  font-size: 0.95rem;
+}
+
+.ps-download-meta {
+  font-size: 0.78rem;
+  color: #888;
+  letter-spacing: 0.04em;
+}
+
+.ps-download-arrow {
+  color: var(--brand-blue);
+  font-weight: 700;
+}
+
+/* ── Gallery ─────────────────────────────────────────────── */
+
+.ps-gallery-grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.ps-gallery-item {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--cream);
+}
+
+/* ── Other models ────────────────────────────────────────── */
+
+.ps-related-grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.ps-related-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid #e6ecf1;
+  background: white;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ps-related-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(13, 58, 92, 0.1);
+}
+
+.ps-related-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--cream);
+}
+
+.ps-related-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.ps-related-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--deep-blue);
+  font-size: 1.05rem;
+}
+
+.ps-related-desc {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.ps-related-cta {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-blue);
+}
+
+/* ── Product hero H1 ─────────────────────────────────────── */
+/* The H1s now carry the searched term ("rPET Panel: the recycled PET
+   acoustic panel you machine like MDF") instead of the bare model name,
+   so the 4.5rem display size set in each page's styled-jsx no longer fits.
+   !important is needed to beat the scoped styled-jsx selector. */
+.product-hero .hero-content h1 {
+  font-size: clamp(2.1rem, 4.2vw, 3.2rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -1px !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* ── Manufacturer line in product heroes ─────────────────── */
+
+.hero-manufacturer {
+  font-size: 0.92rem;
+  color: #6b7a86;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  max-width: 560px;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .ps-specs-grid,
+  .ps-downloads-grid,
+  .ps-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ps-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .ps-header h2 {
+    font-size: 2rem;
+  }
+
+  .ps-specs-grid,
+  .ps-downloads-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .ps-section {
+    padding: 3rem 1rem;
+  }
+
+  .ps-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-table th,
+  .ps-table td {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ps-chevron,
+  .ps-download-card,
+  .ps-related-card {
+    transition: none;
+  }
+}
+
+/* ============================================================
+   Range hub pages (src/components/hub/RangeHubPage.tsx)
+   ============================================================ */
+
+.hub-hero {
+  padding: 9rem 4rem 3rem;
+  background: var(--cream);
+  max-width: 100%;
+}
+
+.hub-hero h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--deep-blue);
+  max-width: 900px;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.hub-intro {
+  max-width: 820px;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+.hub-table-section {
+  background: white;
+}
+
+.hub-table-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #e6ecf1;
+  border-radius: var(--radius-md);
+}
+
+.hub-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.hub-table th,
+.hub-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.hub-table thead th {
+  background: var(--cream);
+  color: #555;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.hub-table tbody th {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--deep-blue);
+  white-space: nowrap;
+}
+
+.hub-table tbody th a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hub-table tbody th a:hover {
+  color: var(--brand-blue);
+}
+
+.hub-table tbody tr:last-child td,
+.hub-table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+.hub-table-footnote {
+  max-width: 1300px;
+  margin: 1rem auto 0;
+  font-size: 0.82rem;
+  color: #777;
+}
+
+.hub-models {
+  background: var(--cream);
+}
+
+.hub-why {
+  background: var(--deep-blue);
+  color: white;
+}
+
+.hub-why .ps-header h2,
+.hub-why .section-tag {
+  color: white;
+}
+
+.hub-why-grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.hub-why-grid li {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+}
+
+.hub-why-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.hub-why-grid h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.hub-why-grid p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hub-applications {
+  background: white;
+}
+
+.hub-applications-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 2rem;
+}
+
+.hub-applications-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.hub-applications-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--brand-blue);
+  font-weight: 700;
+}
+
+.hub-cta {
+  background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%);
+  color: white;
+  text-align: center;
+}
+
+.hub-cta .section-tag {
+  color: var(--brand-blue-pale);
+}
+
+.hub-cta h2 {
+  color: white;
+  font-size: 2.4rem;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.hub-cta p {
+  max-width: 620px;
+  margin: 0 auto 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+}
+
+.hub-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hub-cta .btn-primary {
+  background: white;
+  color: var(--brand-blue);
+}
+
+.hub-cta .btn-secondary {
+  color: white;
+  border-color: white;
+}
+
+/* ── Breadcrumbs ─────────────────────────────────────────── */
+
+.ps-breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: #777;
+}
+
+.ps-breadcrumbs li + li::before {
+  content: '›';
+  margin-right: 0.35rem;
+  color: #aaa;
+}
+
+.ps-breadcrumbs a {
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+
+.ps-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.ps-breadcrumbs [aria-current='page'] {
+  color: #555;
+}
+
+/* Floats over the top-left of a product hero (which keeps its own
+   8rem top padding for the fixed header). */
+.ps-breadcrumbs--overlay {
+  position: absolute;
+  top: 5.5rem;
+  left: 4rem;
+  z-index: 5;
+}
+
+.ps-breadcrumbs-host {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .hub-hero {
+    padding: 7rem 2rem 2.5rem;
+  }
+
+  .hub-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-breadcrumbs--overlay {
+    top: 4.75rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hub-hero {
+    padding: 6rem 1.5rem 2rem;
+  }
+
+  .hub-applications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-breadcrumbs--overlay {
+    top: 4.25rem;
+    left: 1.5rem;
+  }
+}

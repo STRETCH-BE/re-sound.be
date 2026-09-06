@@ -36,5 +36,10 @@
     "url": "git@github.com:STRETCH-BE/re-sound.be.git"
   },
   "author": "Re-Sound",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%"
+  ]
 }

@@ -1,16 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-// Code-split: the lead modal only mounts on download-card click, so it is
-// excluded from the initial page bundle and never server-rendered.
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 /**
  * Shared template for the Re-Sound soundbooth product pages.
@@ -18,7 +12,10 @@ const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'),
  * Each booth (Solo Flex, Duo, Modular XL) sets a translation namespace,
  * a slug, and per-product options (e.g. configurations for Duo). The shared
  * layout — hero -> nav -> overview -> acoustics -> use cases -> specs ->
- * add-ons -> downloads -> FAQ -> CTA — comes from this template.
+ * add-ons -> downloads -> FAQ -> other models -> CTA — comes from this
+ * template. Specifications, downloads, FAQ and "other models" are passed
+ * in as server-rendered slots (see src/components/product/*) so this
+ * client component only hydrates the interactive parts.
  *
  * Visual identity: pulls from globals.css design tokens so the booth pages
  * read as part of the Re-Sound product family — same brand blue, pill
@@ -26,17 +23,6 @@ const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'),
  * All booths render under the Re-Sound brand, sharing the same visual
  * tokens as the panel range.
  */
-
-export interface BoothSpecRow {
-  label: string;
-  value: string;
-}
-
-export interface BoothSpecCard {
-  /** translation key for the card heading, under `{namespace}.specs` */
-  titleKey: string;
-  rows: BoothSpecRow[];
-}
 
 export interface BoothConfiguration {
   id: string;
@@ -55,20 +41,20 @@ export interface BoothAddon {
   image?: string;
 }
 
-export interface BoothDownload {
-  id: string;
-  /** Translation key under `boothPage.downloads` (shared namespace) */
-  labelKey: string;
-  icon: string;
-  file: string;
-}
-
 export interface BoothStat {
   value: string;
   labelKey: string;
 }
 
-export interface SoundboothProductPageProps {
+/** Server-rendered sections handed to the client template as React nodes. */
+export interface BoothSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
+
+export interface SoundboothProductPageProps extends BoothSlots {
   /** URL slug, used for analytics + lead-source labels */
   slug: string;
   /** Translation namespace, e.g. 'soloFlexPage' */
@@ -83,16 +69,10 @@ export interface SoundboothProductPageProps {
   features: BoothFeature[];
   /** Six add-on items */
   addons: BoothAddon[];
-  /** Specs cards (max 6) */
-  specCards: BoothSpecCard[];
-  /** Downloads (PDFs gated by lead modal) */
-  downloads: BoothDownload[];
   /** Optional list of configurations (Duo only) */
   configurations?: BoothConfiguration[];
   /** Show the modular growth visualiser (Modular XL only) */
   showGrowthDiagram?: boolean;
-  /** Cross-links to other booths */
-  crossLinks: Array<{ slug: string; href: string }>;
 }
 
 export default function SoundboothProductPage(props: SoundboothProductPageProps) {
@@ -104,19 +84,18 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     heroStats,
     features,
     addons,
-    specCards,
-    downloads,
     configurations,
     showGrowthDiagram,
-    crossLinks,
+    specs,
+    downloads,
+    faq,
+    otherModels,
   } = props;
 
   const t = useTranslations(namespace);
   const tShared = useTranslations('boothPage');
+  const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [activeConfig, setActiveConfig] = useState(configurations?.[0]?.id ?? '');
   // If a configuration-swapped hero image fails to load, fall back to the
   // default hero. Reset whenever the user picks another configuration.
@@ -125,62 +104,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
   useEffect(() => {
     analytics.viewItem(slug, 'booth');
   }, [slug]);
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: `${slug} Product Page`,
-        }),
-      });
-
-      if (response.ok) {
-        setIsModalOpen(false);
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: slug, source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload(slug, fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', slug);
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch { /* Clarity may not be loaded */ }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const navItems = [
     { id: 'overview',  label: tShared('nav.overview') },
@@ -215,6 +138,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">{t('hero.description')}</p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
 
           <div className="hero-stats">
             {heroStats.map((stat, i) => (
@@ -478,31 +402,8 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         </div>
       </section>
 
-      {/* ========== SPECS ========== */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
-
-        <div className="specs-grid">
-          {specCards.map((card) => (
-            <div key={card.titleKey} className="spec-card">
-              <h4>{t(`specs.${card.titleKey}`)}</h4>
-              <table>
-                <tbody>
-                  {card.rows.map((row) => (
-                    <tr key={row.label}>
-                      <td>{tShared(`specs.${row.label}`)}</td>
-                      <td>{t(`specs.${row.value}`)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* ========== SPECS (server-rendered slot) ========== */}
+      {specs}
 
       {/* ========== ADD-ONS ========== */}
       <section id="addons" className="content-section addons-section">
@@ -531,55 +432,10 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         </div>
       </section>
 
-      {/* ========== DOWNLOADS ========== */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tShared('downloads.tag')}</span>
-          <h2>{tShared('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{tShared(download.labelKey)}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
-
-      {/* ========== CROSS-LINKS ========== */}
-      <section className="content-section crosslinks-section">
-        <div className="crosslinks-header">
-          <span className="section-tag">{tShared('crosslinks.tag')}</span>
-          <h2>{tShared('crosslinks.title')}</h2>
-        </div>
-        <div className="crosslinks-grid">
-          {crossLinks.map((c) => (
-            <Link key={c.slug} href={c.href} className="crosslink-card">
-              <span className="crosslink-name">{tShared(`crosslinks.${c.slug}.name`)}</span>
-              <span className="crosslink-tag">{tShared(`crosslinks.${c.slug}.tag`)}</span>
-              <span className="crosslink-arrow">→</span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* ========== DOWNLOADS / FAQ / OTHER MODELS (server-rendered slots) ========== */}
+      {downloads}
+      {faq}
+      {otherModels}
 
       {/* ========== CTA ========== */}
       <section className="content-section cta-section">
@@ -966,29 +822,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         .feature-card h4 { font-size: 1.15rem; margin-bottom: 0.6rem; font-family: var(--font-heading); color: var(--deep-blue); }
         .feature-card p { font-size: 0.95rem; color: #555; line-height: 1.7; }
 
-        /* ===== SPECS ===== */
-        .specs-section { background: var(--cream); }
-        .specs-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
-        .specs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
-        .spec-card {
-          background: white;
-          padding: 1.75rem;
-          border-radius: var(--radius-md);
-          border-top: 3px solid var(--brand-blue);
-          box-shadow: 0 4px 12px rgba(13, 58, 92, 0.04);
-        }
-        .spec-card h4 { font-size: 1.05rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1.5px; font-family: var(--font-heading); color: var(--deep-blue); }
-        .spec-card table { width: 100%; border-collapse: collapse; }
-        .spec-card td {
-          padding: 0.65rem 0;
-          font-size: 0.92rem;
-          border-bottom: 1px solid rgba(13, 58, 92, 0.08);
-          vertical-align: top;
-        }
-        .spec-card td:first-child { color: #666; padding-right: 1rem; }
-        .spec-card td:last-child { color: var(--deep-blue); font-weight: 500; text-align: right; }
-        .spec-card tr:last-child td { border-bottom: none; }
-
         /* ===== ADD-ONS ===== */
         .addons-section { background: white; }
         .addons-header { text-align: center; max-width: 760px; margin: 0 auto 3rem; }
@@ -1011,63 +844,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         .addon-body { padding: 1.75rem 1.75rem 1.75rem 0; }
         .addon-body h4 { font-size: 1.1rem; margin-bottom: 0.6rem; font-family: var(--font-heading); color: var(--deep-blue); }
         .addon-body p { font-size: 0.92rem; color: #555; line-height: 1.7; }
-
-        /* ===== DOWNLOADS ===== */
-        .downloads-section { background: var(--cream); }
-        .downloads-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
-        .downloads-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 1200px; margin: 0 auto; }
-        .download-card {
-          background: white;
-          border: 1px solid rgba(13, 58, 92, 0.08);
-          padding: 1.25rem 1.5rem;
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          cursor: pointer;
-          transition: all var(--transition-normal, 0.3s ease);
-          text-align: left;
-          color: var(--deep-blue);
-          border-radius: var(--radius-md);
-        }
-        .download-card:hover {
-          background: var(--brand-blue);
-          color: white;
-          border-color: var(--brand-blue);
-          transform: translateY(-2px);
-          box-shadow: 0 12px 30px rgba(25, 127, 199, 0.25);
-        }
-        .download-icon { font-size: 1.5rem; }
-        .download-info { flex: 1; }
-        .download-info h4 { font-size: 0.95rem; margin-bottom: 0.15rem; font-family: var(--font-heading); }
-        .download-info span { font-size: 0.75rem; opacity: 0.6; letter-spacing: 1px; }
-        .download-arrow { font-size: 1.25rem; opacity: 0.5; }
-        .download-card:hover .download-arrow { opacity: 1; }
-
-        /* ===== CROSSLINKS ===== */
-        .crosslinks-section { background: white; }
-        .crosslinks-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
-        .crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 1200px; margin: 0 auto; }
-        :global(.booth-product-page) :global(.crosslink-card) {
-          padding: 2rem;
-          background: var(--cream);
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-          text-decoration: none;
-          color: var(--deep-blue);
-          border-radius: var(--radius-md);
-          transition: all var(--transition-normal, 0.3s ease);
-          position: relative;
-        }
-        :global(.booth-product-page) :global(.crosslink-card:hover) {
-          background: var(--brand-blue);
-          color: white;
-          transform: translateY(-4px);
-          box-shadow: 0 20px 50px rgba(25, 127, 199, 0.25);
-        }
-        :global(.booth-product-page) :global(.crosslink-name) { font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading); }
-        :global(.booth-product-page) :global(.crosslink-tag) { font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.7; font-weight: 500; }
-        :global(.booth-product-page) :global(.crosslink-arrow) { position: absolute; right: 2rem; top: 2rem; font-size: 1.5rem; }
 
         /* ===== CTA ===== */
         .cta-section {
@@ -1097,7 +873,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           .product-hero { grid-template-columns: 1fr; padding: 6rem 2rem 3rem; gap: 2.5rem; }
           .hero-content h1 { font-size: 3rem; }
           .section-grid, .config-detail { grid-template-columns: 1fr; gap: 2.5rem; }
-          .features-grid, .specs-grid, .downloads-grid, .crosslinks-grid, .modular-scenarios, .acoustics-benefits { grid-template-columns: repeat(2, 1fr); }
+          .features-grid, .modular-scenarios, .acoustics-benefits { grid-template-columns: repeat(2, 1fr); }
           .addons-grid { grid-template-columns: 1fr; }
           .acoustics-visual { grid-template-columns: 1fr; }
           .content-section { padding: 4rem 2rem; }
@@ -1105,7 +881,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         }
         @media (max-width: 640px) {
           .hero-stats { grid-template-columns: 1fr; gap: 0.75rem; padding: 1rem 0; }
-          .features-grid, .specs-grid, .downloads-grid, .crosslinks-grid, .modular-scenarios, .acoustics-benefits, .config-meta { grid-template-columns: 1fr; }
+          .features-grid, .modular-scenarios, .acoustics-benefits, .config-meta { grid-template-columns: 1fr; }
           .hero-ctas, .cta-buttons { flex-direction: column; }
           .addon-card { grid-template-columns: 1fr; }
           .addon-body { padding: 1.5rem; }

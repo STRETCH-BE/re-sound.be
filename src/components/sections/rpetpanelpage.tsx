@@ -1,15 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { PRODUCTS } from '@/data/products';
-
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Color options for rPET - Panel
 // `image` maps each color to an existing swatch photo under
@@ -31,7 +27,7 @@ const thicknessOptions = [
 ];
 
 // Default hero image
-const defaultHeroImage = '/images/products/rpet-panel/rPET - Panel - 7.png';
+const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
 
 
 // Recycled-content figure comes from product data so copy, meta and JSON-LD
@@ -40,9 +36,23 @@ const pct: string = PRODUCTS['rpet-panel'].recycledContentPct === null
   ? 'unknown'
   : String(PRODUCTS['rpet-panel'].recycledContentPct);
 
-export default function RPETPanelProductPage() {
+/**
+ * Server-rendered sections are passed in as React nodes ("slots") so this
+ * client component only ships the hero / configurators; specs, downloads,
+ * gallery, FAQ and other models are plain HTML with no hydration cost.
+ */
+export interface RPETPanelProductPageSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  gallery?: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
+
+export default function RPETPanelProductPage({ specs, downloads, gallery, faq, otherModels }: RPETPanelProductPageSlots) {
   const t = useTranslations('rpetPanelPage');
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
 
   // Application options (inside component so t() is available)
   const applicationOptions = [
@@ -52,9 +62,6 @@ export default function RPETPanelProductPage() {
     { id: 'furniture', name: t('applications.app4Name'), icon: '🪑', description: t('applications.app4Desc') },
   ];
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedColor, setSelectedColor] = useState<typeof colorOptions[0] | null>(null);
   const [selectedThickness, setSelectedThickness] = useState(thicknessOptions[1]); // 18mm default
   const [isImageLoading, setIsImageLoading] = useState(false);
@@ -75,19 +82,6 @@ export default function RPETPanelProductPage() {
   }, []);
 
 
-  const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rpet-panel/product-data-sheet.pdf' },
-    { id: 'installation-guide', name: t('downloads.installationGuide'), icon: '🔧', file: '/documents/rpet-panel/installation-guide.pdf' },
-    { id: 'acoustic-test-report', name: t('downloads.acousticTestReport'), icon: '📊', file: '/documents/rpet-panel/acoustic-test-report.pdf' },
-    { id: 'fire-certificate', name: t('downloads.fireCertificate'), icon: '🔥', file: '/documents/rpet-panel/fire-certificate.pdf' },
-    { id: 'oeko-tex-certificate', name: t('downloads.oekoTexCert'), icon: '🏷️', file: '/documents/rpet-panel/oeko-tex-certificate.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rpet-panel/sustainability-declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
 
   const handleColorSelect = (color: typeof colorOptions[0]) => {
     if (!selectedColor || color.id !== selectedColor.id) {
@@ -99,65 +93,6 @@ export default function RPETPanelProductPage() {
       }
       setHeroImageFailed(false);
       setSelectedColor(color);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'rPET - Panel Product Page',
-        }),
-      });
-
-      if (response.ok) {
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'rpet-panel', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('rpet-panel', fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'rpet-panel');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -200,6 +135,7 @@ export default function RPETPanelProductPage() {
           <p className="hero-description">
             {t('hero.description', { pct })}
           </p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -225,7 +161,6 @@ export default function RPETPanelProductPage() {
             </a>
           </div>
 
-          <p className="hero-price"> <strong> </strong> </p>
         </div>
         
         <div className="hero-image">
@@ -755,200 +690,14 @@ export default function RPETPanelProductPage() {
         </div>
       </section>
 
-      {/* Specifications Section */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (ProductSpecs) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h4>{t('specs.dimensionsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.dimStandard')}</td>
-                  <td>1,200 × 2,750 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimCustomMax')}</td>
-                  <td>3,000 × 2,000 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimThicknessOptions')}</td>
-                  <td>12 / 18 / 24 mm</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimCustomThickness')}</td>
-                  <td>Up to 40 mm</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Projects & Installations — server-rendered (ProductGallery) */}
+      {gallery}
 
-          <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.absorptionCoeff')}</td>
-                  <td>Up to 1.00</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.absorptionClass')}</td>
-                  <td>Class A</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.testStandard')}</td>
-                  <td>ISO 354 / ISO 11654</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.physicalTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.physMaterial')}</td>
-                  <td>100% PET (polyester)</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.recycledContent')}</td>
-                  <td>Up to 50%</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.physWeight12')}</td>
-                  <td>3 kg/m²</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.physWeight24')}</td>
-                  <td>4 kg/m²</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.fireEuClass')}</td>
-                  <td>B-s2, d0</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.fireGerman')}</td>
-                  <td>Bs1 (DIN 4102)</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.testStandard')}</td>
-                  <td>EN 13501-1</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.healthTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.healthOekoTex')}</td>
-                  <td>Standard 100, Class 1</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.vocEmissions')}</td>
-                  <td>Class A+ (ISO 16000)</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.healthFormaldehyde')}</td>
-                  <td>None</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.healthBinders')}</td>
-                  <td>None</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.colorsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.colorStandard')}</td>
-                  <td>5 (Midnight to Frost)</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.colorCustom')}</td>
-                  <td>{t('specs.anyRalNcs')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.finishOptions')}</td>
-                  <td>{t('specs.finishOptionsVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.recyclability')}</td>
-                  <td>100%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{tPage('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12].map((i) => (
-            <div key={i} className="gallery-item">
-              <div className="image-container gallery">
-                <Image
-                  src={`/images/products/rpet-panel/gallery-${i}.webp`}
-                  alt={`rPET - Panel installation example ${i}`}
-                  fill
-                  sizes="(max-width: 1024px) 50vw, 400px"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tPage('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{download.name}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* Downloads — server-rendered (ProductDownloads) */}
+      {downloads}
 
       {/* Samples Section */}
       <section className="content-section samples-section dark">
@@ -975,14 +724,11 @@ export default function RPETPanelProductPage() {
         </div>
       </section>
 
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
+      {/* FAQ — server-rendered (ProductFaq) */}
+      {faq}
+
+      {/* Other models in this range — server-rendered (OtherModels) */}
+      {otherModels}
 
       {/* CTA Section */}
       <section className="content-section cta-section">
@@ -1944,94 +1690,6 @@ export default function RPETPanelProductPage() {
         .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
 
-        /* Specs Section */
-        .specs-header { text-align: center; margin-bottom: 3rem; }
-        .specs-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .specs-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .spec-card {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 16px;
-        }
-
-        .spec-card h4 {
-          font-size: 1rem;
-          color: var(--eco-green);
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .spec-card table { width: 100%; }
-
-        .spec-card td {
-          padding: 0.5rem 0;
-          font-size: 0.9rem;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .spec-card tr:last-child td { border-bottom: none; }
-        .spec-card td:first-child { color: #666; }
-        .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
-
-        /* Gallery Section */
-        .gallery-header { text-align: center; margin-bottom: 3rem; }
-        .gallery-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item { border-radius: 16px; overflow: hidden; }
-
-        /* Downloads Section */
-        .downloads-header { text-align: center; margin-bottom: 3rem; }
-        .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .downloads-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 1.5rem;
-          background: var(--cream);
-          border-radius: 12px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          border: none;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .download-card:hover {
-          background: var(--eco-green-light);
-          transform: translateY(-2px);
-        }
-
-        .download-icon { font-size: 2rem; }
-        .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #767676; }
-        .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--eco-green); }
-
         /* Samples Section */
         .samples-content {
           display: grid;
@@ -2083,7 +1741,6 @@ export default function RPETPanelProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .benefits-grid { grid-template-columns: repeat(3, 1fr); }
           .colors-grid { grid-template-columns: repeat(3, 1fr); }
           .applications-grid { grid-template-columns: repeat(2, 1fr); }
@@ -2105,8 +1762,6 @@ export default function RPETPanelProductPage() {
           .hero-usps { flex-direction: column; gap: 1rem; }
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
-          .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .benefits-grid { grid-template-columns: 1fr; }
           .colors-grid { grid-template-columns: repeat(2, 1fr); }
           .applications-grid { grid-template-columns: 1fr; }

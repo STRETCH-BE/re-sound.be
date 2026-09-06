@@ -56,13 +56,6 @@
     "partner": "Parceiros"
   },
   "hero": {
-    "badge": "Acústica 100% Circular",
-    "title": "Acústica hecha",
-    "titleHighlight": "circular.",
-    "subtitle": "Soluções acústicas de alto desempenho fabricadas com materiais reciclados. Transformamos resíduos em silêncio.",
-    "ctaPrimary": "Descubrir Productos",
-    "ctaSecondary": "Cómo Funciona",
-    "panelTag": "Materiales Reciclados",
     "rwood": {
       "badge": "Série rWood · Linha de Acabamento Natural",
       "title": "Paneles acústicos con",
@@ -98,12 +91,6 @@
     "colors": "Más de 50 Colores Estándar",
     "custom": "Tamaños Personalizados a Pedido",
     "factories": "Produção própria"
-  },
-  "stats": {
-    "absorption": "Absorción Sonora",
-    "colors": "Colores Disponibles",
-    "waste": "Residuos a Vertedero",
-    "madeIn": "Fabricado en Bélgica"
   },
   "materials": {
     "tag": "QUÉ USAMOS",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Declaración de Sostenibilidad",
       "technicalDrawing": "Dibujo Técnico",
       "bimFile": "Archivo BIM",
-      "epd": "Declaración Ambiental de Producto (DAP)"
+      "epd": "Declaración Ambiental de Producto (DAP)",
+      "colourFinishGuide": "Guia de cores e acabamentos",
+      "warranty": "Certificado de garantia",
+      "cadDrawing": "Desenho CAD (DWG)",
+      "installationGuide": "Guia de instalação",
+      "gatedHint": "Disponível a pedido"
     },
     "specs": {
       "dimensions": "Dimensiones",
@@ -922,6 +914,14 @@
       "coreDensity": "Densidad del núcleo",
       "formaldehyde": "Formaldehído",
       "fscCert": "Certificado FSC®"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Perguntas frequentes"
+    },
+    "related": {
+      "tag": "TAMBÉM NA GAMA",
+      "title": "Outros modelos da gama"
     }
   },
   "interiorPage": {

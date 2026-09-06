@@ -1,14 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
-import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
+import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'), { ssr: false });
 
 // Wood veneer options for rWood - Micro
 const woodFinishOptions = [
@@ -36,17 +32,29 @@ const perforationOptions = [
   { id: 'micro-l', name: 'Micro L', holeSize: '2.0mm', openArea: '10.6%', description: 'Maximum absorption pattern', visual: 'micro-l' },
 ];
 
-// Default hero image
-const defaultHeroImage = '/images/products/rwood-micro/rWood-Micro_hero.jpg';
+// Default hero image (optimised WebP of the same 1334×761 picture as rWood-Micro_hero.jpg)
+const defaultHeroImage = '/images/products/rwood-micro/hero-rwood-micro.webp';
 
 
-export default function RWoodMicroProductPage() {
+/**
+ * Server-rendered sections handed in by the route page
+ * (src/app/[locale]/products/rwood-micro/page.tsx). Keeping them out of
+ * this client component means specs / downloads / gallery / FAQ / related
+ * models are plain HTML with no hydration cost.
+ */
+export interface RWoodMicroProductPageSlots {
+  specs: React.ReactNode;
+  downloads: React.ReactNode;
+  gallery?: React.ReactNode;
+  faq: React.ReactNode;
+  otherModels: React.ReactNode;
+}
+
+export default function RWoodMicroProductPage({ specs, downloads, gallery, faq, otherModels }: RWoodMicroProductPageSlots) {
   const t = useTranslations('rwoodMicroPage');
   const tPage = useTranslations('productPage');
+  const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedDownload, setSelectedDownload] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedFinish, setSelectedFinish] = useState<typeof woodFinishOptions[0] | null>(null);
   const [selectedSurface, setSelectedSurface] = useState(surfaceFinishOptions[0]);
   const [selectedPerforation, setSelectedPerforation] = useState(perforationOptions[0]);
@@ -62,83 +70,10 @@ export default function RWoodMicroProductPage() {
   }, []);
 
 
-  const downloads = [
-    { id: 'product-data-sheet', name: tPage('downloads.productDataSheet'), icon: '📄', file: '/documents/rwood-micro/product-data-sheet.pdf' },
-    { id: 'installation-guide', name: 'Installation Guide', icon: '🔧', file: '/documents/rwood-micro/installation-guide.pdf' },
-    { id: 'acoustic-test-report', name: tPage('downloads.acousticTestReport'), icon: '📊', file: '/documents/rwood-micro/acoustic-test-report.pdf' },
-    { id: 'perforation-guide', name: 'Perforation Pattern Guide', icon: '🔘', file: '/documents/rwood-micro/perforation-guide.pdf' },
-    { id: 'fire-certificate', name: tPage('downloads.fireCertificate'), icon: '🔥', file: '/documents/rwood-micro/fire-certificate.pdf' },
-    { id: 'sustainability-declaration', name: tPage('downloads.sustainabilityDeclaration'), icon: '♻️', file: '/documents/rwood-micro/sustainability-declaration.pdf' },
-  ];
-
-  const handleDownloadClick = (fileUrl: string) => {
-    setSelectedDownload(fileUrl);
-    setIsModalOpen(true);
-  };
-
   const handleFinishSelect = (finish: typeof woodFinishOptions[0]) => {
     if (!selectedFinish || finish.id !== selectedFinish.id) {
       setIsImageLoading(true);
       setSelectedFinish(finish);
-    }
-  };
-
-  const handleLeadSubmit = async (data: LeadFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: selectedDownload.split('/').pop(),
-          source: 'rWood - Micro Product Page',
-        }),
-      });
-
-      if (response.ok) {
-        setIsModalOpen(false);
-        // ── Analytics ───────────────────────────────────
-        // Fire AFTER server confirms — never report a lead that
-        // never made it to Power Automate.
-        try {
-          await setEnhancedConversionsUserData(data.email, data.phone);
-          analytics.generateLead({ product: 'rwood-micro', source: 'pdf_download_modal' });
-          const fileName = selectedDownload.split('/').pop() || '';
-          analytics.fileDownload('rwood-micro', fileName);
-        } catch (err) {
-          console.warn('Analytics dispatch failed:', err);
-        }
-
-        // ── Microsoft Clarity custom tags ───────────────
-        try {
-          const w = window as unknown as { clarity?: (...a: unknown[]) => void };
-          if (typeof w.clarity === 'function') {
-            w.clarity('set', 'lead_status', 'submitted');
-            w.clarity('set', 'lead_product', 'rwood-micro');
-            if (data.companyName) w.clarity('set', 'company', data.companyName);
-            if (data.email) w.clarity('identify', data.email);
-            w.clarity('upgrade', 'submitted_lead');
-          }
-        } catch {
-          /* Clarity may not be loaded; no-op */
-        }
-
-        const link = document.createElement('a');
-        link.href = selectedDownload;
-        link.download = selectedDownload.split('/').pop() || 'download.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -179,6 +114,7 @@ export default function RWoodMicroProductPage() {
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">{t('hero.description')}</p>
+          <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
@@ -210,7 +146,6 @@ export default function RWoodMicroProductPage() {
             </a>
           </div>
 
-          <p className="hero-price"> <strong></strong> </p>
         </div>
         
         <div className="hero-image">
@@ -250,10 +185,8 @@ export default function RWoodMicroProductPage() {
                   title={finish.name}
                   aria-label={`Select ${finish.name} finish`}
                 >
-                  <span 
-                    className="finish-swatch" 
-                    style={{ backgroundImage: `url(${finish.swatch})` }}
-                  />
+                  {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
+                  <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
                   {selectedFinish?.id === finish.id && (
                     <span className={`finish-check ${finish.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
                   )}
@@ -828,208 +761,14 @@ export default function RWoodMicroProductPage() {
         </div>
       </section>
 
-      {/* Specifications Section */}
-      <section id="specs" className="content-section specs-section">
-        <div className="specs-header">
-          <span className="section-tag">{t('specs.tag')}</span>
-          <h2>{t('specs.title')}</h2>
-        </div>
+      {/* Specifications — server-rendered (ProductSpecs) */}
+      {specs}
 
-        <div className="specs-grid">
-          <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.customSizes')}</td>
-                  <td>100&ndash;3050 &times; 100&ndash;1220 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.thickness')}</td>
-                  <td>8 - 19 mm</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.weight')}</td>
-                  <td>~From 0,35 kg/m&sup2;</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.dimCoreDensity')}</td>
-                  <td>48,40 kg/m&sup3;</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      {/* Projects & Installations — server-rendered (ProductGallery) */}
+      {gallery}
 
-          <div className="spec-card">
-            <h4>{t('specs.acousticsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{tPage('specs.absorptionCoeff')}</td>
-                  <td>0.90</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.acWithMinWool')}</td>
-                  <td>Up to 1.00</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specs.absorptionClass')}</td>
-                  <td>Class A / C</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.testStandard')}</td>
-                  <td>ISO 354 / ISO 11654</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.perfsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Nano (⌀ 0.5mm)</td>
-                  <td>2.5% open area</td>
-                </tr>
-                <tr>
-                  <td>Micro S (⌀ 1.0mm)</td>
-                  <td>5.2% open area</td>
-                </tr>
-                <tr>
-                  <td>Micro M (⌀ 1.5mm)</td>
-                  <td>8.4% open area</td>
-                </tr>
-                <tr>
-                  <td>Micro L (⌀ 2.0mm)</td>
-                  <td>10.6% open area</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.fireTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.reactionFire')}</td>
-                  <td>B-s1, d0</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.resistanceFire')}</td>
-                  <td>K1-10 / K2-10</td>
-                </tr>
-                <tr>
-                  <td>Core</td>
-                  <td>{t('specs.fireRetardant')}</td>
-                </tr>
-                <tr>
-                  <td>{tPage('specLabels.testStandard')}</td>
-                  <td>EN 13501</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.matTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.surfaceLabel')}</td>
-                  <td>{t('specs.surfaceVal')}</td>
-                </tr>
-                <tr>
-                  <td>Core</td>
-                  <td>{t('specs.coreVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.edgesLabel')}</td>
-                  <td>{t('specs.edgesVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.acousticFelt')}</td>
-                  <td>{t('specs.feltColor')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="spec-card">
-            <h4>{t('specs.appsTitle')}</h4>
-            <table>
-              <tbody>
-                <tr>
-                  <td>{t('specs.appInstall')}</td>
-                  <td>{t('specs.appWalls')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.appEnv')}</td>
-                  <td>{t('specs.appEnvVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.backlitOption')}</td>
-                  <td>{t('specs.backlitVal')}</td>
-                </tr>
-                <tr>
-                  <td>{t('specs.mountingSystem')}</td>
-                  <td>{t('specs.concealedClip')}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="content-section gallery-section">
-        <div className="gallery-header">
-          <span className="section-tag">{t('gallery.tag')}</span>
-          <h2>{t('gallery.title')}</h2>
-        </div>
-
-        <div className="gallery-grid">
-          {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="gallery-item">
-              <div className="image-container gallery">
-                <Image
-                  src={`/images/products/rwood-micro/gallery-${i}.webp`}
-                  alt={`rWood - Micro installation example ${i}`}
-                  fill
-                  sizes="(max-width: 1024px) 50vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Downloads Section */}
-      <section id="downloads" className="content-section downloads-section">
-        <div className="downloads-header">
-          <span className="section-tag">{tPage('downloads.tag')}</span>
-          <h2>{tPage('downloads.title')}</h2>
-        </div>
-
-        <div className="downloads-grid">
-          {downloads.map((download) => (
-            <button
-              key={download.id}
-              onClick={() => handleDownloadClick(download.file)}
-              className="download-card"
-            >
-              <div className="download-icon">{download.icon}</div>
-              <div className="download-info">
-                <h4>{download.name}</h4>
-                <span>PDF</span>
-              </div>
-              <span className="download-arrow">↓</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* Downloads — server-rendered (ProductDownloads) */}
+      {downloads}
 
       {/* Accessories Section */}
       <section className="content-section accessories-section dark">
@@ -1063,14 +802,11 @@ export default function RWoodMicroProductPage() {
         </div>
       </section>
 
-      {/* Lead Generation Modal */}
-      <LeadGenModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleLeadSubmit}
-        downloadFile={selectedDownload}
-        isSubmitting={isSubmitting}
-      />
+      {/* FAQ — server-rendered (ProductFaq) */}
+      {faq}
+
+      {/* Other models in this range — server-rendered (OtherModels) */}
+      {otherModels}
 
       {/* CTA Section */}
       <section className="content-section cta-section">
@@ -1329,7 +1065,6 @@ export default function RWoodMicroProductPage() {
 
         .selected-finish-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
 
-        .image-container.gallery { aspect-ratio: 1; }
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
 
         /* ========================================
@@ -2217,100 +1952,6 @@ export default function RWoodMicroProductPage() {
         .sustain-item p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
 
         /* ========================================
-           SPECS SECTION
-           ======================================== */
-        .specs-header { text-align: center; margin-bottom: 3rem; }
-        .specs-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .specs-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .spec-card {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 16px;
-        }
-
-        .spec-card h4 {
-          font-size: 1rem;
-          color: var(--brand-blue);
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .spec-card table { width: 100%; }
-
-        .spec-card td {
-          padding: 0.5rem 0;
-          font-size: 0.9rem;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .spec-card tr:last-child td { border-bottom: none; }
-        .spec-card td:first-child { color: #666; }
-        .spec-card td:last-child { text-align: right; font-weight: 600; color: var(--deep-blue); }
-
-        /* ========================================
-           GALLERY SECTION
-           ======================================== */
-        .gallery-header { text-align: center; margin-bottom: 3rem; }
-        .gallery-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .gallery-item { border-radius: 16px; overflow: hidden; }
-
-        /* ========================================
-           DOWNLOADS SECTION
-           ======================================== */
-        .downloads-header { text-align: center; margin-bottom: 3rem; }
-        .downloads-header h2 { font-size: 2.5rem; color: var(--deep-blue); }
-
-        .downloads-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .download-card {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 1.5rem;
-          background: var(--cream);
-          border-radius: 12px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          border: none;
-          cursor: pointer;
-          text-align: left;
-        }
-
-        .download-card:hover {
-          background: var(--brand-blue-pale);
-          transform: translateY(-2px);
-        }
-
-        .download-icon { font-size: 2rem; }
-        .download-info h4 { font-size: 0.95rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .download-info span { font-size: 0.8rem; color: #767676; }
-        .download-arrow { margin-left: auto; font-size: 1.2rem; color: var(--brand-blue); }
-
-        /* ========================================
            ACCESSORIES SECTION
            ======================================== */
         .accessories-header {
@@ -2378,7 +2019,6 @@ export default function RWoodMicroProductPage() {
           .hero-content h1 { font-size: 3rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .specs-grid, .downloads-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .perforations-grid { grid-template-columns: repeat(2, 1fr); }
           .accessories-grid { grid-template-columns: repeat(2, 1fr); }
           .finish-categories { grid-template-columns: 1fr; }
@@ -2419,8 +2059,6 @@ export default function RWoodMicroProductPage() {
           .hero-usps { flex-direction: column; gap: 1rem; }
           .hero-ctas { flex-direction: column; }
           .section-content h2 { font-size: 2rem; }
-          .specs-grid, .downloads-grid { grid-template-columns: 1fr; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr); }
           .perforations-grid { grid-template-columns: 1fr; }
           .accessories-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }

@@ -56,13 +56,6 @@
     "partner": "Partner"
   },
   "hero": {
-    "badge": "100% Sirkulær Akustikk",
-    "title": "Akustikk gjort",
-    "titleHighlight": "sirkulær.",
-    "subtitle": "Høytydende akustikkløsninger laget av gjenvunne materialer. Vi forvandler avfall til stillhet.",
-    "ctaPrimary": "Oppdag produkter",
-    "ctaSecondary": "Slik fungerer det",
-    "panelTag": "Gjenvunnede materialer",
     "rwood": {
       "badge": "rWood Serie · Naturlig Overflate Linje",
       "title": "Akustikkpaneler med",
@@ -98,12 +91,6 @@
     "colors": "Over 50 standardfarger",
     "custom": "Spesialmål på forespørsel",
     "factories": "Fra egne fabrikker"
-  },
-  "stats": {
-    "absorption": "Lydabsorpsjon",
-    "colors": "Tilgjengelige farger",
-    "waste": "Avfall til deponi",
-    "madeIn": "Laget i Belgia"
   },
   "materials": {
     "tag": "WHAT WE USE",
@@ -837,7 +824,12 @@
       "sustainabilityDeclaration": "Bærekraftserklæring",
       "technicalDrawing": "Teknisk tegning",
       "bimFile": "BIM File",
-      "epd": "Miljøproduktdeklarasjon (EPD)"
+      "epd": "Miljøproduktdeklarasjon (EPD)",
+      "colourFinishGuide": "Farge- og overflateguide",
+      "warranty": "Garantisertifikat",
+      "cadDrawing": "CAD-tegning (DWG)",
+      "installationGuide": "Monteringsveiledning",
+      "gatedHint": "Tilgjengelig på forespørsel"
     },
     "specs": {
       "dimensions": "Dimensjoner",
@@ -922,6 +914,14 @@
       "coreDensity": "Kjernetetthet",
       "formaldehyde": "Formaldehyd",
       "fscCert": "FSC® sertifisert"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Ofte stilte spørsmål"
+    },
+    "related": {
+      "tag": "OGSÅ I SERIEN",
+      "title": "Andre modeller i serien"
     }
   },
   "interiorPage": {

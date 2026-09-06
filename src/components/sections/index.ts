@@ -1,6 +1,5 @@
 // Homepage sections
 export { default as Hero } from './Hero';
-export { default as StatsBar } from './StatsBar';
 export { default as Materials } from './Materials';
 export { default as ProductsSection } from './ProductsSection';
 export { default as ProductCard } from './ProductCard';
