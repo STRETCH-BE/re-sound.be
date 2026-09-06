@@ -3031,7 +3031,14 @@
         "answer": "Use el formulario de contacto de una página de producto o el formulario general, indicando: la línea de producto que le interesa, cantidades aproximadas o plano, y el calendario del proyecto. Respondemos en un día laborable con un presupuesto a medida, propuesta de muestras y cálculo de la mejora acústica esperada. Para proyectos mayores podemos organizar una visita al sitio o una llamada de briefing."
       }
     },
-    "categoriesLabel": "Categorías"
+    "categoriesLabel": "Categorías",
+    "groups": {
+      "Booths": "Cabinas telefónicas y pods de reuniones",
+      "rPET": "Paneles rPET",
+      "rWood": "Paneles rWood",
+      "General": "Acústica, materiales y sostenibilidad",
+      "Ordering": "Pedidos, precios e instalación"
+    }
   },
   "boothPage": {
     "nav": {

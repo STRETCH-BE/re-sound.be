@@ -3031,7 +3031,14 @@
         "answer": "Gebruik het contactformulier op elke productpagina of het algemene contactformulier, met: de productlijn die je interesseert, geschatte hoeveelheden of grondplan, en je projectplanning. We antwoorden binnen één werkdag met een offerte op maat, stalenregeling en een berekening van de verwachte akoestische verbetering. Voor grotere projecten gaan we ter plaatse of doen we een briefing-call."
       }
     },
-    "categoriesLabel": "Categorieën"
+    "categoriesLabel": "Categorieën",
+    "groups": {
+      "Booths": "Belcabines en vergaderpods",
+      "rPET": "rPET-panelen",
+      "rWood": "rWood-panelen",
+      "General": "Akoestiek, materialen en duurzaamheid",
+      "Ordering": "Bestellen, prijzen en installatie"
+    }
   },
   "boothPage": {
     "nav": {

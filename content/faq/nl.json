@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "Hoeveel geluid houdt een belcabine tegen?",
+    "answer": "Solo Flex reduceert het spraakniveau met ongeveer 24 dB(A) volgens ISO 23351-1, wat overeenkomt met klasse C: een gesprek buiten de cabine klinkt binnen als gemompel op afstand. Modular XL haalt 25,9 dB(A), eveneens klasse C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "Wat is het verschil tussen een belcabine en een vergaderpod?",
+    "answer": "Het grootste verschil is de grootte: een belcabine is ontworpen voor één persoon, een vergaderpod voor twee of meer personen. De meeste vergaderpods bieden plaats aan twee of vier personen. Met onze modulaire versie kan een vergaderpod worden uitgebreid tot zoveel zitplaatsen als u nodig hebt.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "Hoeveel kost een belcabine voor kantoor?",
+    "answer": "De belcabine Solo Flex is verkrijgbaar vanaf € 2.740 excl. btw zonder installatie, of € 3.605 excl. btw inclusief installatie. De prijs van de vergaderpod Duo is op aanvraag. Modular XL start vanaf € 15.000 excl. btw zonder installatie, of € 17.990 excl. btw inclusief installatie, plus € 7.264 inclusief installatie per extra element van 90 cm. De grootste Modular XL tot nu toe biedt plaats aan 20 personen. Prijzen zijn exclusief transport buiten België.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "Wat betekent ISO 23351-1 klasse A, B of C?",
+    "answer": "ISO 23351-1 meet hoeveel een cabine het spraakniveau tussen binnen en buiten verlaagt en deelt het resultaat in klassen in: A+ vanaf 33 dB, A vanaf 30 dB, B vanaf 27 dB, C vanaf 24 dB en D vanaf 21 dB. Solo Flex (ongeveer 24 dB(A)) en Modular XL (25,9 dB(A)) zijn beide klasse C. In de praktijk maakt klasse C van een normaal gesprek gemompel op afstand: duidelijk stiller, maar niet onhoorbaar.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Heeft een belcabine ventilatie nodig, en hoeveel geluid maakt die?",
+    "answer": "Ja: een belcabine is een gesloten ruimte, dus ventilatie is essentieel voor een goede luchtkwaliteit. Elke telefooncabine en vergaderpod van Re-Sound is geventileerd. Elektrische modellen gebruiken ons stille EC-ventilatorsysteem, dat in de Solo Flex 4,6 m³ lucht per minuut verplaatst.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Kan een cabine naar een andere verdieping of een ander kantoor worden verplaatst?",
+    "answer": "Ja. Elke cabine is opgebouwd als een bouwpakket (flat-pack) en kan dus worden gedemonteerd en opnieuw opgebouwd op een andere verdieping of in een ander kantoor. Een cabine uit elkaar halen en weer opbouwen gaat snel en eenvoudig.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Kunnen we een cabine leasen of uitproberen?",
+    "answer": "Nee, op dit moment niet. U kunt onze cabines wel vooraf testen in onze showroom in Beveren-Waas (België) voordat u bestelt; bezoeken zijn op afspraak, van maandag tot vrijdag van 08:00 tot 16:30.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "Hoelang duurt de installatie, en wie voert die uit?",
+    "answer": "De eigen installateurs van Re-Sound plaatsen uw cabine: een belcabine vraagt ongeveer 60 minuten, een vergaderpod ongeveer twee uur en een Modular XL twee tot zes uur. U kunt de Solo Flex ook zelf monteren: twee personen hebben daar minder dan drie uur voor nodig.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "Is de cabine rolstoeltoegankelijk?",
+    "answer": "Niet standaard: geen van onze cabines is in de standaardconfiguratie rolstoeltoegankelijk. Op aanvraag kunnen wij een cabine aanpassen zodat ze rolstoeltoegankelijk wordt. Neem contact met ons op om uw wensen te bespreken.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "Welke garantie geldt op een cabine?",
+    "answer": "Op elke cabine geldt 5 jaar garantie op het dragende frame en de behuizing, en 2 jaar garantie op elektronische componenten en andere slijtageonderdelen.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "Wat gebeurt er met een cabine aan het einde van haar levensduur?",
+    "answer": "Een cabine die niet langer nodig is, kan worden doorverkocht aan een andere partij of worden gedemonteerd voor recyclage. Omdat ze als een bouwpakket (flat-pack) is opgebouwd, kan ze uit elkaar worden gehaald in de afzonderlijke materialen, die elk recycleerbaar zijn. Onze akoestische panelen nemen wij via ons terugnameprogramma gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Is PET-vilt brandveilig?",
+    "answer": "Ja. Onze rPET-panelen zijn geclassificeerd als B-s1,d0 volgens EN 13501-1, waardoor ze geschikt zijn voor zowel privéwoningen als openbare gebouwen. Controleer de exacte vereiste voor uw project bij uw akoesticus of brandveiligheidsadviseur.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Kan ik rPET-panelen zagen en schilderen?",
+    "answer": "Ja, rPET-panelen kunnen zowel worden gesneden als geschilderd. Snijd ze met een mes (zelfs een keramisch keukenmes), een cirkelzaag, een paneelzaag of een haakse slijper met een metaalschijf. Re-Sound bedrukt rPET-panelen in eigen huis met UV-print, dus u kunt grafische ontwerpen op maat bestellen. U kunt de panelen ook zelf schilderen en als canvas gebruiken voor uw eigen akoestische kunstwerk.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "Hoeveel geluid absorbeert een PET-paneel van 24 mm?",
+    "answer": "Een rPET-paneel van 24 mm heeft een gewogen geluidsabsorptiecoëfficiënt αw van 0,85, wat overeenkomt met absorptieklasse B volgens ISO 11654. Montage met een luchtspouw achter het paneel verbetert de absorptie in de lage frequenties. Controleer de exacte vereiste voor uw ruimte bij uw akoesticus.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Microgeperforeerde of gegroefde houten akoestische panelen: welke absorberen het meest?",
+    "answer": "Zonder achterliggende absorber absorberen gegroefde rWood-panelen meer dan microgeperforeerde, omdat het vilt tussen de groeven extra absorptie toevoegt. Met een absorber achter het paneel, zoals akoestisch vilt, een rPET-paneel of minerale wol (rotswol of glaswol), bereiken beide systemen dezelfde absorptiewaarden.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Is het fineer FSC-gecertificeerd?",
+    "answer": "Ja. Re-Sound gebruikt uitsluitend FSC-gecertificeerd fineer voor zijn rWood-panelen. Dit geldt voor het volledige rWood-gamma, zowel gegroefd als microgeperforeerd.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Waar worden de panelen van Re-Sound geproduceerd?",
+    "answer": "Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen). De textielpanelen Interior, Solid en Divide worden geproduceerd in Beveren-Waas; de rWood- en rPET-panelen en de belcabines worden geproduceerd in Częstochowa. Alle grondstoffen worden binnen de Europese Unie aangekocht.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]

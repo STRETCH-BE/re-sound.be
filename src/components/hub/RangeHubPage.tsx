@@ -6,6 +6,7 @@ import ProductFaq from '@/components/product/ProductFaq';
 import JsonLd from '@/components/seo/JsonLd';
 import { SHOW_PLACEHOLDER_PRICES } from '@/config/site';
 import { HUBS, hubPath, type HubId } from '@/data/hubs';
+import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
 import { PRODUCTS, isoSpeechClass, type Product } from '@/data/products';
 import { Link } from '@/i18n/navigation';
 import {
@@ -42,8 +43,10 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
   const isBooth = hub.family === 'booth';
 
   const applications = Object.values(t.raw('applications') as Record<string, string>);
-  const faqEntries: FaqEntry[] = Object.values(
-    t.raw('faq') as Record<string, { question: string; answer: string }>
+  // Hub FAQ (messages) + the workbook rows tagged for this hub, without duplicates
+  const faqEntries: FaqEntry[] = mergeFaqEntries(
+    Object.values(t.raw('faq') as Record<string, { question: string; answer: string }>),
+    faqFor(locale, hubId).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   const crumbs = [

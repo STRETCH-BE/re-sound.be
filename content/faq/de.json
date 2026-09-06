@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "Wie viel Schall dämmt eine Telefonbox fürs Büro?",
+    "answer": "Die Solo Flex senkt den Sprachpegel nach ISO 23351-1 um rund 24 dB(A) und erreicht damit Klasse C: Ein Gespräch außerhalb der Akustikkabine klingt innen wie entferntes Gemurmel. Die Modular XL erreicht 25,9 dB(A), ebenfalls Klasse C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "Was ist der Unterschied zwischen einer Telefonbox und einem Meeting-Pod?",
+    "answer": "Der wesentliche Unterschied ist die Größe: Eine Telefonbox ist für eine Person ausgelegt, ein Meeting-Pod für zwei oder mehr Personen. Die meisten Meeting-Pods bieten Platz für zwei oder vier Personen. Mit unserer modularen Version lässt sich ein Meeting-Pod auf so viele Personen erweitern, wie Sie benötigen.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "Was kostet eine Telefonbox fürs Büro?",
+    "answer": "Die Telefonbox Solo Flex ist ab 2.740 € zzgl. MwSt. ohne Montage erhältlich oder ab 3.605 € zzgl. MwSt. inklusive Montage. Für den Meeting-Pod Duo erhalten Sie den Preis auf Anfrage. Die Modular XL beginnt bei 15.000 € zzgl. MwSt. ohne Montage bzw. 17.990 € zzgl. MwSt. inklusive Montage, zuzüglich 7.264 € inklusive Montage je zusätzlichem 90-cm-Element. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen. Die Preise verstehen sich ohne Transport außerhalb Belgiens.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "Was bedeutet ISO 23351-1 Klasse A, B oder C?",
+    "answer": "ISO 23351-1 misst, um wie viel eine Kabine den Sprachpegel zwischen innen und außen senkt, und teilt das Ergebnis in Klassen ein: A+ ab 33 dB, A ab 30 dB, B ab 27 dB, C ab 24 dB und D ab 21 dB. Solo Flex (rund 24 dB(A)) und Modular XL (25,9 dB(A)) sind beide Klasse C. In der Praxis macht Klasse C aus einem normalen Gespräch entferntes Gemurmel: deutlich leiser, aber nicht unhörbar.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Braucht eine Telefonbox eine Lüftung, und wie laut ist sie?",
+    "answer": "Ja: Eine Telefonbox ist ein geschlossener Raum, daher ist eine Lüftung für gute Luftqualität unverzichtbar. Jede Akustikkabine und jeder Meeting-Pod von Re-Sound ist belüftet. Elektrische Modelle nutzen unser leises EC-Lüftersystem, das in der Solo Flex 4,6 m³ Luft pro Minute fördert.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Kann eine Kabine in ein anderes Stockwerk oder Büro umgesetzt werden?",
+    "answer": "Ja. Jede Kabine ist als zerlegbarer Bausatz gefertigt und lässt sich daher demontieren und in einem anderen Stockwerk oder Büro wieder aufbauen. Der Ab- und Wiederaufbau ist schnell und unkompliziert.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Können wir eine Kabine leasen oder testen?",
+    "answer": "Nein, derzeit nicht. Gerne können Sie unsere Kabinen vor der Bestellung in unserem Showroom in Beveren-Waas (Belgien) ausprobieren; Besuche nach Terminvereinbarung, Montag bis Freitag 08:00–16:30 Uhr.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "Wie lange dauert die Montage, und wer führt sie durch?",
+    "answer": "Die eigenen Monteure von Re-Sound stellen Ihre Kabine auf: bei einer Telefonbox dauert das rund 60 Minuten, ein Meeting-Pod etwa zwei Stunden und eine Modular XL zwischen zwei und sechs Stunden. Alternativ kann die Solo Flex in Eigenmontage aufgebaut werden: Zwei Personen benötigen dafür weniger als drei Stunden.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "Ist die Kabine rollstuhlgerecht?",
+    "answer": "Nicht standardmäßig: Keine unserer Kabinen ist in der Standardkonfiguration rollstuhlgerecht. Auf Anfrage können wir eine Kabine so anpassen, dass sie mit dem Rollstuhl zugänglich ist. Kontaktieren Sie uns, um Ihre Anforderungen zu besprechen.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "Welche Garantie gilt für eine Kabine?",
+    "answer": "Auf jede Kabine gewähren wir 5 Jahre Garantie auf Tragstruktur und Korpus sowie 2 Jahre Garantie auf elektronische Komponenten und sonstige Verschleißteile.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "Was passiert mit einer Kabine am Ende ihrer Nutzungsdauer?",
+    "answer": "Eine nicht mehr benötigte Kabine kann weiterverkauft oder zum Recycling zerlegt werden. Da sie als zerlegbarer Bausatz konstruiert ist, lässt sie sich in ihre einzelnen Materialien trennen, die jeweils recycelbar sind. Unsere Akustikpaneele nehmen wir im Rahmen unseres Rücknahmeprogramms in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Ist PET-Filz brandsicher?",
+    "answer": "Ja. Unsere rPET-Paneele sind nach EN 13501-1 in B-s1,d0 eingestuft und eignen sich damit sowohl für Privatwohnungen als auch für öffentliche Gebäude. Prüfen Sie die genaue Anforderung für Ihr Projekt mit Ihrem Akustiker oder Brandschutzberater.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Kann ich rPET-Paneele zuschneiden und streichen?",
+    "answer": "Ja, rPET-Paneele lassen sich sowohl zuschneiden als auch streichen. Schneiden Sie sie mit einem Messer (sogar mit einem Keramik-Küchenmesser), einer Kreissäge, einer Plattensäge oder einem Winkelschleifer mit Metalltrennscheibe. Re-Sound bedruckt rPET-Paneele im eigenen Haus per UV-Druck, sodass Sie individuelle Grafiken bestellen können; alternativ streichen Sie die Paneele selbst und nutzen sie als Leinwand für Ihr eigenes akustisches Kunstwerk.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "Wie viel Schall absorbiert ein 24 mm PET-Paneel?",
+    "answer": "Ein 24 mm starkes rPET-Paneel hat einen bewerteten Schallabsorptionsgrad αw von 0,85, was der Absorptionsklasse B nach ISO 11654 entspricht. Eine Montage mit dahinterliegendem Luftspalt verbessert die Absorption bei tiefen Frequenzen. Prüfen Sie die genaue Anforderung für Ihren Raum mit Ihrem Akustiker.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Mikroperforierte oder genutete Holz-Akustikpaneele: Was absorbiert mehr?",
+    "answer": "Ohne rückseitigen Absorber absorbieren genutete rWood-Paneele mehr als mikroperforierte, weil der Filz zwischen den Nuten zusätzlich absorbiert. Mit einem Absorber hinter dem Paneel, etwa Akustikfilz, einem rPET-Paneel oder Mineralwolle (Stein- oder Glaswolle), erreichen beide Systeme dieselben Absorptionswerte.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Sind die Furniere FSC-zertifiziert?",
+    "answer": "Ja. Re-Sound verwendet für seine rWood-Paneele ausschließlich FSC-zertifizierte Furniere. Das gilt für die gesamte rWood-Reihe, sowohl genutet als auch mikroperforiert.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Wo werden Re-Sound-Paneele hergestellt?",
+    "answer": "Re-Sound-Paneele werden in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen) gefertigt. Die Textilpaneele Interior, Solid und Divide entstehen in Beveren-Waas; die rWood- und rPET-Paneele sowie die Telefonboxen werden in Częstochowa produziert. Alle Rohstoffe stammen aus der Europäischen Union.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]

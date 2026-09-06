@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "Hversu mikið hljóð hindrar símaklefi fyrir skrifstofur?",
+    "answer": "Solo Flex lækkar talhljóðstig um u.þ.b. 24 dB(A) samkvæmt ISO 23351-1, sem setur hann í flokk C: samtal fyrir utan klefann heyrist sem fjarlægt muldur inni í honum. Modular XL nær 25,9 dB(A), einnig í flokki C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "Hver er munurinn á símaklefa og fundarklefa?",
+    "answer": "Helsti munurinn er stærðin: símaklefi er hannaður fyrir einn einstakling en fundarklefi fyrir tvo eða fleiri. Flestir fundarklefar rúma tvo eða fjóra. Með einingaútgáfu okkar má stækka fundarklefa þannig að hann rúmi eins marga og þörf krefur.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "Hvað kostar símaklefi fyrir skrifstofur?",
+    "answer": "Solo Flex símaklefinn kostar frá 2.740 € án VSK, án uppsetningar, eða 3.605 € án VSK með uppsetningu. Verð á Duo fundarklefanum fæst eftir beiðni. Modular XL kostar frá 15.000 € án VSK, án uppsetningar, eða 17.990 € án VSK með uppsetningu, auk 7.264 € með uppsetningu fyrir hverja 90 cm viðbótareiningu. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns. Flutningur utan Belgíu er ekki innifalinn í verði.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "Hvað merkir flokkur A, B eða C samkvæmt ISO 23351-1?",
+    "answer": "ISO 23351-1 mælir hversu mikið klefi lækkar talhljóðstig milli innra og ytra rýmis og skiptir niðurstöðunni í flokka: A+ frá 33 dB, A frá 30 dB, B frá 27 dB, C frá 24 dB og D frá 21 dB. Solo Flex (u.þ.b. 24 dB(A)) og Modular XL (25,9 dB(A)) eru báðir í flokki C. Í reynd breytir flokkur C venjulegu samtali í fjarlægt muldur: greinilega lægra, en ekki óheyranlegt.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Þarf símaklefi loftræstingu og hversu hávær er hún?",
+    "answer": "Já: símaklefi er lokað rými og því er loftræsting nauðsynleg fyrir góð loftgæði. Allir símaklefar og fundarklefar frá Re-Sound eru loftræstir. Rafvæddar útgáfur nota hljóðláta EC-viftukerfið okkar, sem flytur 4,6 m³ af lofti á mínútu í Solo Flex.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Er hægt að flytja klefa á aðra hæð eða aðra skrifstofu?",
+    "answer": "Já. Allir klefar eru byggðir sem flatpakkaðar einingar og því má taka þá í sundur og setja upp aftur á annarri hæð eða á annarri skrifstofu. Að taka klefa í sundur og setja hann saman á ný er fljótlegt og einfalt.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Getum við leigt klefa eða prófað hann tímabundið?",
+    "answer": "Nei, ekki eins og er. Þér er velkomið að prófa klefana okkar í sýningarsal okkar í Beveren-Waas (Belgíu) áður en þú pantar; heimsóknir eru eftir samkomulagi, mánudaga til föstudaga kl. 08:00–16:30.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "Hversu langan tíma tekur uppsetning og hver sér um hana?",
+    "answer": "Eigið uppsetningarteymi Re-Sound setur klefann upp: símaklefi tekur um 60 mínútur, fundarklefi um tvær klukkustundir og Modular XL tvær til sex klukkustundir. Einnig er hægt að setja Solo Flex saman á eigin vegum: tveir einstaklingar þurfa innan við þrjár klukkustundir.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "Er klefinn aðgengilegur fyrir hjólastóla?",
+    "answer": "Ekki í staðalútfærslu: enginn klefanna okkar er aðgengilegur fyrir hjólastóla í staðlaðri uppsetningu. Eftir beiðni getum við aðlagað klefa þannig að hann verði aðgengilegur fyrir hjólastóla. Hafðu samband til að ræða þarfir þínar.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "Hver er ábyrgðin á klefa?",
+    "answer": "Öllum klefum fylgir 5 ára ábyrgð á burðargrind og ytra byrði og 2 ára ábyrgð á rafeindabúnaði og öðrum slithlutum.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "Hvað verður um klefa þegar líftíma hans lýkur?",
+    "answer": "Klefa sem ekki er lengur þörf fyrir má endurselja öðrum aðila eða taka í sundur til endurvinnslu. Þar sem hann er smíðaður sem flatpökkuð eining má aðskilja hann í einstök efni sem hvert um sig er endurvinnanlegt. Hljóðdeyfiplötur okkar tökum við til baka án endurgjalds í gegnum skilakerfi okkar í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Er PET-filt eldþolið?",
+    "answer": "Já. rPET-plötur okkar eru flokkaðar B-s1,d0 samkvæmt EN 13501-1, sem gerir þær hentugar bæði fyrir íbúðarhúsnæði og opinberar byggingar. Kannaðu nákvæmar kröfur fyrir verkefnið þitt hjá hljóðverkfræðingi eða brunavarnaráðgjafa.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Get ég skorið og málað rPET-plötur?",
+    "answer": "Já, rPET-plötur má bæði skera og mála. Skerðu þær með hníf (jafnvel keramík-eldhúshníf), hjólsög, plötusög eða vinkilslípivél með málmskurðarblaði. Re-Sound UV-prentar rPET-plötur í eigin verksmiðju, svo þú getur pantað sérsniðna grafík, eða málað plöturnar sjálfur og notað þær sem striga fyrir eigin hljóðdeyfandi listaverk.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "Hversu mikið hljóð gleypir 24 mm PET-plata?",
+    "answer": "24 mm rPET-plata hefur veginn hljóðísogsstuðul αw 0,85, sem samsvarar ísogsflokki B samkvæmt ISO 11654. Uppsetning með loftbili á bak við plötuna bætir ísog á lágum tíðnum. Kannaðu nákvæmar kröfur fyrir rýmið þitt hjá hljóðverkfræðingi.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Örgötuð eða riffluð hljóðdeyfiplata úr viði: hvor gleypir meira?",
+    "answer": "Án hljóðísogsefnis á bakhlið gleypa rifflaðar rWood-plötur meira en örgötaðar, því filtið milli rifflanna eykur ísogið. Með hljóðísogsefni á bak við plötuna, svo sem hljóðfilti, rPET-plötu eða steinefnaull (steinull eða glerull), ná bæði kerfin sömu ísogsgildum.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Er viðarspónninn FSC-vottaður?",
+    "answer": "Já. Re-Sound notar eingöngu FSC-vottaðan viðarspón í rWood-plötur sínar. Þetta á við um alla rWood-línuna, bæði rifflaðar og örgötaðar plötur.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Hvar eru Re-Sound plötur framleiddar?",
+    "answer": "Re-Sound plötur eru framleiddar í eigin verksmiðjum okkar í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). Textílplöturnar Interior, Solid og Divide eru framleiddar í Beveren-Waas; rWood- og rPET-plöturnar, sem og símaklefarnir, eru framleiddar í Częstochowa. Öll hráefni eru fengin innan Evrópusambandsins.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]

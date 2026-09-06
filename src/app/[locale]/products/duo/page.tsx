@@ -6,6 +6,7 @@ import DuoProductPage from '@/components/sections/DuoProductPage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/duo';
 import ProductSpecs from '@/components/product/ProductSpecs';
 import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
@@ -71,7 +72,9 @@ export default async function Page({ params: { locale } }: PageProps) {
     locale,
     namespace: 'duoPage.faq',
   });
-  const faqEntries: FaqEntry[] = FAQ_KEYS
+  // Product FAQ (messages) + the workbook rows tagged "duo", without duplicates
+  const faqEntries: FaqEntry[] = mergeFaqEntries(
+    FAQ_KEYS
     .map((key) => {
       try {
         return {
@@ -82,7 +85,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         return null;
       }
     })
-    .filter((e): e is FaqEntry => e !== null);
+    .filter((e): e is FaqEntry => e !== null),
+    faqFor(locale, 'duo').map((f) => ({ question: f.question, answer: f.answer }))
+  );
 
   // Narrow the catalog to the namespaces the client tree actually uses:
   // duoPage (product copy), boothPage (shared booth template), leadModal.

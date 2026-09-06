@@ -3031,7 +3031,14 @@
         "answer": "Notaðu samskiptaformið á vörusíðu eða almenna samskiptaformið með: vörulínunni sem þú hefur áhuga á, áætluðu magni eða grunnteikningu og verkefnatímalínunni þinni. Við svörum innan eins virkrar dags með sérsniðnu tilboði, sýnishornafyrirkomulagi og útreikningi á væntanlegri hljóðbót. Fyrir stærri verkefni getum við skipulagt heimsókn á staðinn eða stutta kynningu."
       }
     },
-    "categoriesLabel": "Flokkar"
+    "categoriesLabel": "Flokkar",
+    "groups": {
+      "Booths": "Símaklefar og fundarklefar",
+      "rPET": "rPET-plötur",
+      "rWood": "rWood-plötur",
+      "General": "Hljóðvist, efni og sjálfbærni",
+      "Ordering": "Pantanir, verð og uppsetning"
+    }
   },
   "boothPage": {
     "nav": {

@@ -3031,7 +3031,14 @@
         "answer": "Bruk kontaktskjemaet på en produktside eller det generelle kontaktskjemaet med: produktlinjen du er interessert i, omtrentlige mengder eller plantegning og prosjekttidsplanen din. Vi svarer innen en virkedag med et skreddersydd tilbud, prøveordning og en beregning av forventet akustisk forbedring. For større prosjekter kan vi arrangere et stedsbesøk eller en briefingsamtale."
       }
     },
-    "categoriesLabel": "Kategorier"
+    "categoriesLabel": "Kategorier",
+    "groups": {
+      "Booths": "Telefonbokser og møtepoder",
+      "rPET": "rPET-paneler",
+      "rWood": "rWood-paneler",
+      "General": "Akustikk, materialer og bærekraft",
+      "Ordering": "Bestilling, priser og montering"
+    }
   },
   "boothPage": {
     "nav": {

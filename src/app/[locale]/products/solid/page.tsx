@@ -12,6 +12,7 @@ import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumb
 import SolidProductPage from '@/components/sections/SolidProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/solid';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
@@ -95,7 +96,9 @@ export default async function Page({ params: { locale } }: PageProps) {
     locale,
     namespace: 'solidPage.faq',
   });
-  const faqEntries: FaqEntry[] = FAQ_KEYS
+  // Product FAQ (messages) + the workbook rows tagged "solid", without duplicates
+  const faqEntries: FaqEntry[] = mergeFaqEntries(
+    FAQ_KEYS
     .map((key) => {
       try {
         return {
@@ -106,7 +109,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         return null;
       }
     })
-    .filter((e): e is FaqEntry => e !== null);
+    .filter((e): e is FaqEntry => e !== null),
+    faqFor(locale, 'solid').map((f) => ({ question: f.question, answer: f.answer }))
+  );
 
   // Only the namespaces the client components in this tree actually use —
   // serializing the full catalog would bloat every page's HTML.

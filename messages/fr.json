@@ -3031,7 +3031,14 @@
         "answer": "Utilisez le formulaire de contact d'une page produit ou le formulaire général, en indiquant : la gamme qui vous intéresse, les quantités approximatives ou le plan, et le calendrier du projet. Nous répondons sous un jour ouvré avec un devis personnalisé, une proposition d'échantillons et un calcul de l'amélioration acoustique attendue. Pour les projets plus importants, nous pouvons organiser une visite sur site ou un appel de briefing."
       }
     },
-    "categoriesLabel": "Catégories"
+    "categoriesLabel": "Catégories",
+    "groups": {
+      "Booths": "Cabines téléphoniques et pods de réunion",
+      "rPET": "Panneaux rPET",
+      "rWood": "Panneaux rWood",
+      "General": "Acoustique, matériaux et durabilité",
+      "Ordering": "Commande, prix et installation"
+    }
   },
   "boothPage": {
     "nav": {

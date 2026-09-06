@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "Hur mycket ljud dämpar en telefonhytt för kontor?",
+    "answer": "Solo Flex sänker talnivån med cirka 24 dB(A) enligt ISO 23351-1, vilket motsvarar klass C: ett samtal utanför hytten upplevs som avlägset mummel inuti. Modular XL uppnår 25,9 dB(A), också klass C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "Vad är skillnaden mellan en telefonhytt och ett mötesbås?",
+    "answer": "Den största skillnaden är storleken: en telefonhytt är utformad för en person, medan ett mötesbås är avsett för två eller fler personer. De flesta mötesbås rymmer två eller fyra personer. Med vår modulära version kan ett mötesbås byggas ut för så många personer som ni behöver.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "Vad kostar en telefonhytt för kontor?",
+    "answer": "Telefonhytten Solo Flex kostar från 2 740 € exkl. moms utan installation, eller 3 605 € exkl. moms inklusive installation. Mötesbåset Duo prissätts på förfrågan. Modular XL kostar från 15 000 € exkl. moms utan installation, eller 17 990 € exkl. moms inklusive installation, plus 7 264 € inklusive installation per extra element om 90 cm. Den största Modular XL som hittills byggts rymmer 20 personer. Priserna exkluderar transport utanför Belgien.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "Vad betyder klass A, B eller C enligt ISO 23351-1?",
+    "answer": "ISO 23351-1 mäter hur mycket en hytt sänker talnivån mellan insida och utsida och delar in resultatet i klasser: A+ från 33 dB, A från 30 dB, B från 27 dB, C från 24 dB och D från 21 dB. Solo Flex (cirka 24 dB(A)) och Modular XL (25,9 dB(A)) är båda klass C. I praktiken förvandlar klass C ett normalt samtal till avlägset mummel: tydligt tystare, men inte ohörbart.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Behöver en telefonhytt ventilation, och hur mycket låter den?",
+    "answer": "Ja: en telefonhytt är ett slutet utrymme, så ventilation är nödvändig för god luftkvalitet. Alla hytter och mötesbås från Re-Sound är ventilerade. Elektriska modeller använder vårt tysta EC-fläktsystem, som i Solo Flex flyttar 4,6 m³ luft per minut.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Kan en hytt flyttas till ett annat våningsplan eller kontor?",
+    "answer": "Ja. Varje hytt har en flatpack-konstruktion och kan därför demonteras och byggas upp igen på ett annat våningsplan eller på ett annat kontor. Att ta isär och återmontera en hytt går snabbt och enkelt.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Kan vi leasa eller testa en hytt under en provperiod?",
+    "answer": "Nej, inte för närvarande. Ni är välkomna att testa våra hytter i showroomet i Beveren-Waas (Belgien) innan ni beställer; besök sker efter överenskommelse, måndag till fredag 08:00–16:30.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "Hur lång tid tar installationen, och vem utför den?",
+    "answer": "Re-Sounds egna montörer installerar er hytt: en telefonhytt tar omkring 60 minuter, ett mötesbås omkring två timmar och en Modular XL mellan två och sex timmar. Alternativt kan Solo Flex monteras på egen hand: två personer behöver mindre än tre timmar.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "Är hytten tillgänglig för rullstolsanvändare?",
+    "answer": "Inte som standard: ingen av våra hytter är rullstolsanpassad i standardutförande. På begäran kan vi anpassa en hytt så att den blir tillgänglig för rullstol. Kontakta oss för att diskutera era behov.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "Vilken garanti gäller för en hytt?",
+    "answer": "Varje hytt levereras med 5 års garanti på bärande stomme och hölje samt 2 års garanti på elektroniska komponenter och övriga slitdelar.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "Vad händer med en hytt när den har tjänat ut?",
+    "answer": "En hytt som inte längre behövs kan säljas vidare till en annan part eller demonteras för återvinning. Eftersom den är byggd som en flatpack-byggsats kan den tas isär i sina olika material, som vart och ett är återvinningsbart. Våra akustikpaneler tas tillbaka kostnadsfritt i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Är PET-filt brandsäker?",
+    "answer": "Ja. Våra rPET-paneler är klassificerade B-s1,d0 enligt EN 13501-1, vilket gör dem lämpliga för både privata bostäder och offentliga byggnader. Kontrollera det exakta kravet för ert projekt med er akustiker eller brandskyddsrådgivare.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Kan jag skära och måla rPET-paneler?",
+    "answer": "Ja, rPET-paneler kan både skäras och målas. Skär dem med kniv (även en keramisk kökskniv), cirkelsåg, panelsåg eller vinkelslip med metallklinga. Re-Sound UV-trycker rPET-paneler i egen regi, så ni kan beställa egen grafik – eller måla panelerna själva och använda dem som duk för ert eget akustiska konstverk.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "Hur mycket ljud absorberar en 24 mm PET-panel?",
+    "answer": "En 24 mm rPET-panel har en vägd ljudabsorptionsfaktor αw på 0,85, vilket motsvarar absorptionsklass B enligt ISO 11654. Montering med en luftspalt bakom panelen förbättrar absorptionen vid låga frekvenser. Kontrollera det exakta kravet för ert rum med er akustiker.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Mikroperforerade eller spårade träpaneler: vilka absorberar mest?",
+    "answer": "Utan bakomliggande absorbent absorberar spårade rWood-paneler mer än mikroperforerade, eftersom filten mellan spåren ger extra absorption. Med en absorbent bakom panelen, till exempel akustikfilt, en rPET-panel eller mineralull (stenull eller glasull), når båda systemen samma absorptionsvärden.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Är träfaneren FSC-certifierade?",
+    "answer": "Ja. Re-Sound använder enbart FSC-certifierade träfaner till sina rWood-paneler. Det gäller hela rWood-sortimentet, både spårade och mikroperforerade paneler.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Var tillverkas Re-Sounds paneler?",
+    "answer": "Re-Sounds paneler tillverkas i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). Textilpanelerna Interior, Solid och Divide produceras i Beveren-Waas; rWood- och rPET-panelerna samt telefonhytterna produceras i Częstochowa. Alla råmaterial köps in inom Europeiska unionen.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]

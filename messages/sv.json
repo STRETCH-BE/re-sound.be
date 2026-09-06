@@ -3031,7 +3031,14 @@
         "answer": "Använd kontaktformuläret på en produktsida eller det allmänna kontaktformuläret med: den produktlinje du är intresserad av, ungefärliga kvantiteter eller planritning och din projekttidsplan. Vi svarar inom en arbetsdag med en skräddarsydd offert, prov-arrangemang och en beräkning av förväntad akustisk förbättring. För större projekt kan vi ordna ett platsbesök eller ett briefingsamtal."
       }
     },
-    "categoriesLabel": "Kategorier"
+    "categoriesLabel": "Kategorier",
+    "groups": {
+      "Booths": "Telefonhytter och mötesbås",
+      "rPET": "rPET-paneler",
+      "rWood": "rWood-paneler",
+      "General": "Akustik, material och hållbarhet",
+      "Ordering": "Beställning, priser och montering"
+    }
   },
   "boothPage": {
     "nav": {

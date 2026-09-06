@@ -12,6 +12,7 @@ import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumb
 import RWoodVeneerProductPage from '@/components/sections/rwoodveneerpage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
+import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/rwood-veneer';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
@@ -104,7 +105,9 @@ export default async function Page({ params: { locale } }: PageProps) {
     locale,
     namespace: 'rwoodVeneerPage.faq',
   });
-  const faqEntries: FaqEntry[] = FAQ_KEYS
+  // Product FAQ (messages) + the workbook rows tagged "rwood-veneer", without duplicates
+  const faqEntries: FaqEntry[] = mergeFaqEntries(
+    FAQ_KEYS
     .map((key) => {
       try {
         return {
@@ -115,7 +118,9 @@ export default async function Page({ params: { locale } }: PageProps) {
         return null;
       }
     })
-    .filter((e): e is FaqEntry => e !== null);
+    .filter((e): e is FaqEntry => e !== null),
+    faqFor(locale, 'rwood-veneer').map((f) => ({ question: f.question, answer: f.answer }))
+  );
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

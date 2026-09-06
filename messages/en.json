@@ -3028,7 +3028,14 @@
         "answer": "Use the contact form on any product page, or the general contact form, with: the product line you are interested in, approximate quantities or floor plan, and your project timeline. We will respond within one working day with a tailored quote, sample arrangement, and a calculation of expected acoustic improvement. For larger projects we can attend a site visit or briefing call."
       }
     },
-    "categoriesLabel": "Categories"
+    "categoriesLabel": "Categories",
+    "groups": {
+      "Booths": "Phone booths and meeting pods",
+      "rPET": "rPET panels",
+      "rWood": "rWood panels",
+      "General": "Acoustics, materials and sustainability",
+      "Ordering": "Ordering, prices and installation"
+    }
   },
   "boothPage": {
     "nav": {

@@ -3031,7 +3031,14 @@
         "answer": "Verwenden Sie das Kontaktformular auf einer Produktseite oder das allgemeine Kontaktformular, mit: der Produktlinie, die Sie interessiert, ungefähre Mengen oder Grundriss und Ihrem Projektzeitplan. Wir antworten innerhalb eines Werktags mit einem maßgeschneiderten Angebot, einer Musterregelung und einer Berechnung der erwarteten akustischen Verbesserung. Für größere Projekte können wir einen Vor-Ort-Termin oder einen Briefing-Call vereinbaren."
       }
     },
-    "categoriesLabel": "Kategorien"
+    "categoriesLabel": "Kategorien",
+    "groups": {
+      "Booths": "Telefonboxen und Meeting-Pods",
+      "rPET": "rPET-Paneele",
+      "rWood": "rWood-Paneele",
+      "General": "Akustik, Materialien und Nachhaltigkeit",
+      "Ordering": "Bestellung, Preise und Montage"
+    }
   },
   "boothPage": {
     "nav": {

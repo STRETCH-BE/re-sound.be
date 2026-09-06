@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "Quelle atténuation sonore offre une cabine téléphonique de bureau ?",
+    "answer": "La Solo Flex réduit le niveau de la parole d'environ 24 dB(A) selon ISO 23351-1, ce qui la place en classe C : une conversation tenue à l'extérieur de la cabine est perçue à l'intérieur comme un murmure lointain. La Modular XL atteint 25,9 dB(A), également en classe C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "Quelle est la différence entre une cabine téléphonique et un pod de réunion ?",
+    "answer": "La principale différence est la taille : une cabine téléphonique est conçue pour une personne, tandis qu'un pod de réunion accueille deux personnes ou plus. La plupart des pods de réunion sont prévus pour deux ou quatre personnes. Avec notre version modulaire, un pod de réunion peut être agrandi pour accueillir autant de personnes que nécessaire.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "Combien coûte une cabine téléphonique de bureau ?",
+    "answer": "La cabine téléphonique de bureau Solo Flex est disponible dès 2 740 € HTVA sans installation, ou 3 605 € HTVA installation comprise. Le pod de réunion Duo est sur devis. La Modular XL démarre à 15 000 € HTVA sans installation, ou 17 990 € HTVA installation comprise, plus 7 264 € installation comprise par élément supplémentaire de 90 cm. La plus grande Modular XL construite à ce jour accueille 20 personnes. Transport hors Belgique non compris.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "Que signifient les classes A, B ou C selon ISO 23351-1 ?",
+    "answer": "ISO 23351-1 mesure la réduction du niveau de la parole entre l'intérieur et l'extérieur d'une cabine et classe le résultat : A+ dès 33 dB, A dès 30 dB, B dès 27 dB, C dès 24 dB et D dès 21 dB. La Solo Flex (environ 24 dB(A)) et la Modular XL (25,9 dB(A)) sont toutes deux en classe C. En pratique, la classe C ramène une conversation normale à un murmure lointain : nettement plus faible, mais pas inaudible.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Une cabine téléphonique doit-elle être ventilée, et est-ce bruyant ?",
+    "answer": "Oui : une cabine téléphonique est un espace fermé, la ventilation est donc indispensable pour une bonne qualité de l'air. Chaque cabine acoustique et chaque pod de réunion Re-Sound est ventilé. Les modèles électriques sont équipés de notre système silencieux à ventilateurs EC, qui renouvelle 4,6 m³ d'air par minute dans la Solo Flex.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Une cabine peut-elle être déplacée vers un autre étage ou un autre bureau ?",
+    "answer": "Oui. Chaque cabine repose sur une construction en kit démontable : elle peut donc être démontée et remontée à un autre étage ou dans un autre bureau. Le démontage et le remontage d'une cabine sont rapides et simples.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Pouvons-nous louer ou essayer une cabine ?",
+    "answer": "Non, pas pour le moment. Vous êtes toutefois les bienvenus pour tester nos cabines dans notre showroom de Beveren-Waas (Belgique) avant de commander ; les visites se font sur rendez-vous, du lundi au vendredi de 08h00 à 16h30.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "Combien de temps dure l'installation, et qui s'en charge ?",
+    "answer": "Nos propres installateurs Re-Sound placent votre cabine : comptez environ 60 minutes pour une cabine téléphonique, environ deux heures pour un pod de réunion et entre deux et six heures pour une Modular XL. Autre option : la Solo Flex peut être montée par vos soins ; deux personnes y consacrent moins de trois heures.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "La cabine est-elle accessible aux personnes en fauteuil roulant ?",
+    "answer": "Pas en standard : aucune de nos cabines n'est accessible en fauteuil roulant dans sa configuration de base. Sur demande, nous pouvons adapter une cabine pour la rendre accessible aux personnes en fauteuil roulant. Contactez-nous pour discuter de vos besoins.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "Quelle est la garantie sur une cabine ?",
+    "answer": "Chaque cabine bénéficie d'une garantie de 5 ans sur la structure porteuse et le corps de la cabine, et d'une garantie de 2 ans sur les composants électroniques et les autres pièces d'usure.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "Que devient une cabine en fin de vie ?",
+    "answer": "Une cabine devenue inutile peut être revendue à un tiers ou démontée en vue du recyclage. Conçue comme un kit démontable, elle se sépare en ses différents matériaux, chacun étant recyclable. Nos panneaux acoustiques sont repris gratuitement en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg dans le cadre de notre programme de reprise.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Le feutre PET offre-t-il une bonne sécurité incendie ?",
+    "answer": "Oui. Nos panneaux rPET sont classés B-s1,d0 selon EN 13501-1, ce qui les rend adaptés aussi bien aux habitations privées qu'aux bâtiments publics. Vérifiez l'exigence exacte de votre projet auprès de votre acousticien ou de votre conseiller en sécurité incendie.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Puis-je découper et peindre les panneaux rPET ?",
+    "answer": "Oui, les panneaux rPET peuvent être découpés et peints. Découpez-les au couteau (même un couteau de cuisine en céramique), à la scie circulaire, à la scie à panneaux ou à la meuleuse d'angle équipée d'un disque à métaux. Re-Sound imprime les panneaux rPET par UV en interne : vous pouvez donc commander des graphismes personnalisés, ou peindre vous-même les panneaux et en faire la toile de votre propre œuvre acoustique.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "Quelle absorption acoustique offre un panneau PET de 24 mm ?",
+    "answer": "Un panneau rPET de 24 mm présente un coefficient d'absorption acoustique pondéré αw de 0,85, ce qui correspond à la classe d'absorption B selon ISO 11654. Le montage du panneau avec une lame d'air à l'arrière améliore l'absorption dans les basses fréquences. Vérifiez l'exigence exacte pour votre local auprès de votre acousticien.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Panneaux en bois microperforés ou rainurés : lesquels absorbent le plus ?",
+    "answer": "Sans absorbant arrière, les panneaux rWood rainurés absorbent davantage que les panneaux microperforés, car le feutre entre les rainures apporte une absorption supplémentaire. Avec un absorbant placé derrière le panneau, comme du feutre acoustique, un panneau rPET ou de la laine minérale (laine de roche ou laine de verre), les deux systèmes atteignent les mêmes valeurs d'absorption.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Les placages sont-ils certifiés FSC ?",
+    "answer": "Oui. Re-Sound utilise exclusivement des placages certifiés FSC pour ses panneaux rWood. Cela vaut pour toute la gamme rWood, tant les panneaux rainurés que les panneaux microperforés.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Où les panneaux Re-Sound sont-ils fabriqués ?",
+    "answer": "Les panneaux Re-Sound sont fabriqués dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne). Les panneaux textiles Interior, Solid et Divide sont produits à Beveren-Waas ; les panneaux rWood et rPET, ainsi que les cabines téléphoniques, sont produits à Częstochowa. Toutes les matières premières proviennent de l'Union européenne.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]
