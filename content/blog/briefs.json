@@ -1,0 +1,194 @@
+[
+  {
+    "id": "BP-007",
+    "locale": "fr",
+    "market": "BE-FR",
+    "keyword": "cabine acoustique bureau prix",
+    "secondaryKeywords": [],
+    "intent": "compare",
+    "workingTitle": "Cabine acoustique de bureau : prix et guide d'achat 2026",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-10-13",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-008",
+    "locale": "fr",
+    "market": "BE-FR",
+    "keyword": "panneaux acoustiques pet recyclé",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "Panneaux acoustiques en PET recyclé : avantages, pose, prix",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-10-27",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-009",
+    "locale": "fr",
+    "market": "BE-FR",
+    "keyword": "combien de panneaux acoustiques",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "Combien de panneaux acoustiques pour une salle de réunion ?",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-11-10",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-010",
+    "locale": "fr",
+    "market": "BE-FR",
+    "keyword": "panneau acoustique bois microperforé",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "Panneaux acoustiques en bois microperforé : comment ça marche",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-11-24",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-011",
+    "locale": "de",
+    "market": "DE",
+    "keyword": "telefonbox büro kosten",
+    "secondaryKeywords": [],
+    "intent": "compare",
+    "workingTitle": "Was kostet eine Telefonbox fürs Büro? Preise und Klassen 2026",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-10-13",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-012",
+    "locale": "de",
+    "market": "DE",
+    "keyword": "akustikpaneele recyceltes pet",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "Akustikpaneele aus recyceltem PET: Vorteile, Montage, Preise",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-10-27",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-013",
+    "locale": "de",
+    "market": "DE",
+    "keyword": "din 18041 nachhallzeit büro",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "DIN 18041: Nachhallzeit im Büro richtig planen",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-11-10",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-014",
+    "locale": "de",
+    "market": "DE",
+    "keyword": "holz akustikpaneele mikroperforiert vs genutet",
+    "secondaryKeywords": [],
+    "intent": "compare",
+    "workingTitle": "Holz-Akustikpaneele: mikroperforiert oder genutet?",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-11-24",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-015",
+    "locale": "en",
+    "market": "EN",
+    "keyword": "office phone booth prices",
+    "secondaryKeywords": [],
+    "intent": "compare",
+    "workingTitle": "Office phone booth prices and ISO 23351-1 classes explained",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-10-13",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-016",
+    "locale": "en",
+    "market": "EN",
+    "keyword": "pet acoustic panels vs wood",
+    "secondaryKeywords": [],
+    "intent": "compare",
+    "workingTitle": "PET acoustic panels vs wood acoustic panels: which one where",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-10-27",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-017",
+    "locale": "en",
+    "market": "EN",
+    "keyword": "how many acoustic panels do i need",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "How many acoustic panels do I need? A calculation guide",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-11-10",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  },
+  {
+    "id": "BP-018",
+    "locale": "en",
+    "market": "EN",
+    "keyword": "acoustic panel specification architects",
+    "secondaryKeywords": [],
+    "intent": "learn",
+    "workingTitle": "Specifying acoustic panels: αw, NRC and Class A explained for architects",
+    "author": {
+      "name": "Michael Nicasens",
+      "jobTitle": "CEO Stretch Group"
+    },
+    "datePublished": "2026-11-24",
+    "wordCountTarget": 1200,
+    "status": "Briefed"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "locale": "nl",
+    "question": "Hoeveel geluid houdt een belcabine tegen?",
+    "answer": "Solo Flex reduceert spraak met ongeveer 24 dB(A) volgens ISO 23351-1 (klasse C): een gesprek buiten de cabine klinkt binnen als gemompel op afstand. Modular XL haalt 25,9 dB(A).",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "akoestische-belcabines"
+    ],
+    "schema": true,
+    "status": "Drafting"
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "locale": "en",
+    "question": "What is the difference between a phone booth and a meeting pod?",
+    "answer": "Mainly the size, a phonebooth is made for just one person, a meeting pod is made for multiple people starting from 2 up-to as many as you want if you use our modular version. Most meeting pods are made for 2 or 4 people",
+    "showOn": [
+      "acoustic-phone-booths",
+      "faq"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "locale": "en",
+    "question": "How much does an office phone booth cost?",
+    "answer": "Starts from 2740€ ex VAT without installation or 3605€ ex VAT including installation up-to 15000€ ex VAT for our Meeting pod ex installation or 17990€ ex VAT incl. installation +7264€ incl installation per extra ellement to create a big meeting pod. (biggest modular meeting pod we did by now is for 20 persons",
+    "showOn": [
+      "acoustic-phone-booths",
+      "guide"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "locale": "en",
+    "question": "What does ISO 23351-1 Class A, B or C mean?",
+    "answer": "",
+    "showOn": [
+      "acoustic-phone-booths",
+      "guide"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "locale": "en",
+    "question": "Does a phone booth need ventilation and how loud is it?",
+    "answer": "Yes, it is a closed space so ventilation is key for good airquality in the phonebooth. Our pods/booths are always setup with some sorth off ventilation, of elecrtrical then we use our silent ventilation system.",
+    "showOn": [
+      "acoustic-phone-booths"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "locale": "en",
+    "question": "Can a booth be moved to another floor or office?",
+    "answer": "Yes, they are made like a IKEA set, so the build-up is easy and fast",
+    "showOn": [
+      "acoustic-phone-booths"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "locale": "en",
+    "question": "Can we lease or trial a booth?",
+    "answer": "You can test the booth in our showroom, but leasing we dont do at the moment",
+    "showOn": [
+      "guide"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "locale": "en",
+    "question": "How long does installation take and who does it?",
+    "answer": "We install your booth in 60min for a call booth, a meeting pod can take 2 hours, the modularone takes 2-6 hours",
+    "showOn": [
+      "acoustic-phone-booths"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "locale": "en",
+    "question": "Is the booth wheelchair accessible?",
+    "answer": "Sandard it is not, but we can modify it to be accesable for a wheelchair",
+    "showOn": [
+      "modular-xl"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "locale": "en",
+    "question": "What is the warranty on a booth?",
+    "answer": "Warranty\n5 years: structural frame and body\n2 years: electronic components, and other wear parts",
+    "showOn": [
+      "acoustic-phone-booths"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "locale": "en",
+    "question": "What happens to the booth at end of life?",
+    "answer": "The booth can be sold to another party or the booth is build so each product is 100% recyclable",
+    "showOn": [
+      "acoustic-phone-booths",
+      "sustainability"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "locale": "en",
+    "question": "Is PET felt fire-safe?",
+    "answer": "Yes, we have for our rPET panels a Bs1, d0 fire certification. Meaning it can be used in a private home but also public spaces",
+    "showOn": [
+      "pet-acoustic-panels"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "locale": "en",
+    "question": "Can I cut and paint rPET panels?",
+    "answer": "You can cut a PET panel by knife, circular saw, a angle grinder with a blade to cut metal, panels saw, ceramic kitchen knife, etc. Painting is also possible, as we ourself print the PET panels with a UV-Printer you can also by yourself paint the rPET panels and use them as your canvas for your own art, this way you can create your own acoustic art works",
+    "showOn": [
+      "pet-acoustic-panels",
+      "rpet-panel"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "locale": "en",
+    "question": "How much sound does a 24 mm PET panel absorb?",
+    "answer": "",
+    "showOn": [
+      "pet-acoustic-panels"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "locale": "en",
+    "question": "Micro-perforated or grooved wood panels — which absorbs more?",
+    "answer": "Groove panels by itself without any aditional absorber have a higher absorbtion value then the micro-perforated rWood panels. This is due to the fact that we use a Felt between the grooves who'm improve the acoustical absorbtion. But with both systems we can create the same absorbtion values when we add a additional absorber in the back off the rWood panels. We can use: Acoustic felt, Acoustic PET (rPET) Panels, rockwool panels, gloasswool (like isover) insulation, knauf insulation, etc",
+    "showOn": [
+      "wood-acoustic-panels"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "locale": "en",
+    "question": "Are the veneers FSC-certified?",
+    "answer": "Yes, we only use FSC-Certified veneers",
+    "showOn": [
+      "wood-acoustic-panels"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "locale": "en",
+    "question": "Where are Re-Sound panels manufactured?",
+    "answer": "They are produced in Poland, in the city Czestochowa. All panels base materials are sourced within the european union and then later we create our products from the sourced materials.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true,
+    "status": "Backlog"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "google": {
+    "name": "Re-Sound",
+    "rating": 5,
+    "reviewCount": 4,
+    "cid": "14056110879742525405",
+    "mapsUrl": "https://maps.google.com/?cid=14056110879742525405",
+    "placeId": null,
+    "capturedOn": "2026-09-06",
+    "note": "Google listing on 6 Sep 2026: 'Re-Sound', 5,0 (4 reviews), category 'Hoofdkantoor', address Industriepark-West 75, 9100 Sint-Niklaas (old), no phone, no opening hours, reviews ≈4 years old. Update the profile (Gentseweg 309 A3, category Manufacturer/Fabrikant, hours 08:00–16:30, phone) and run a review campaign; do not add Review/AggregateRating schema for third-party Google reviews."
+  },
+  "reviews": [
+    {
+      "author": "JustNicolas",
+      "rating": 5,
+      "text": "Een bedrijf gerund door twee creatieve ondernemers met een uitstekende service. Zeker een aanrader!",
+      "source": "Google",
+      "url": "https://maps.google.com/?cid=14056110879742525405",
+      "date": "≈2022",
+      "locale": "nl",
+      "consent": false,
+      "showOn": [
+        "home",
+        "where-to-buy"
+      ]
+    },
+    {
+      "author": "Tim Van den bossche",
+      "rating": 5,
+      "text": "",
+      "source": "Google",
+      "url": "https://maps.google.com/?cid=14056110879742525405",
+      "date": "≈2022",
+      "locale": "nl",
+      "consent": false,
+      "showOn": []
+    },
+    {
+      "author": "Yassine Aernouts",
+      "rating": 5,
+      "text": "",
+      "source": "Google",
+      "url": "https://maps.google.com/?cid=14056110879742525405",
+      "date": "≈2022",
+      "locale": "nl",
+      "consent": false,
+      "showOn": []
+    },
+    {
+      "author": "(4th reviewer — not loaded)",
+      "rating": 5,
+      "text": "",
+      "source": "Google",
+      "url": "https://maps.google.com/?cid=14056110879742525405",
+      "date": "≈2022",
+      "locale": "nl",
+      "consent": false,
+      "showOn": []
+    }
+  ]
+}

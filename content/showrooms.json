@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Re-Sound HQ showroom",
+    "type": "HQ showroom",
+    "country": "BE",
+    "city": "Beveren-Waas",
+    "address": "Gentseweg 309 A3, 9120 Beveren-Waas",
+    "latitude": 51.1953188,
+    "longitude": 4.2239015,
+    "email": "info@re-sound.be",
+    "phone": "+32 3 284 68 18",
+    "website": "https://re-sound.be",
+    "openingHours": "Mon–Fri 08:00–16:30 by appointment",
+    "languages": [
+      "nl",
+      "fr",
+      "en",
+      "de"
+    ],
+    "products": [
+      "all panels",
+      "solo-flex",
+      "duo",
+      "modular-xl"
+    ],
+    "status": "Live"
+  },
+  {
+    "name": "Re-Sound Poland",
+    "type": "Production office",
+    "country": "PL",
+    "city": "Czestochowa",
+    "address": "ul. Legionow 59, 42-200 Czestochowa",
+    "latitude": null,
+    "longitude": null,
+    "email": "info@re-sound.be",
+    "phone": null,
+    "website": "https://re-sound.be",
+    "openingHours": "Mon–Fri 08:00–16:30 by appointment",
+    "languages": [
+      "nl",
+      "pl",
+      "ua",
+      "ru",
+      "en"
+    ],
+    "products": [
+      "all panels",
+      "solo-flex",
+      "duo",
+      "modular-xl"
+    ],
+    "status": "live"
+  }
+]
