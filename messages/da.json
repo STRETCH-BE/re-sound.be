@@ -3999,7 +3999,7 @@
       "finishesValue": "{count} overflader",
       "coloursValue": "{count} farver",
       "notAvailable": "—",
-      "fromPriceValue": "fra €{price} {unit}",
+      "fromPriceValue": "fra €{price, number} {unit}",
       "placeholderPrice": "pris på forespørgsel",
       "isoClassNote": "Klassegrænser i ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "HVORFOR RE-SOUND",

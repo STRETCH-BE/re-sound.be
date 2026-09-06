@@ -3999,7 +3999,7 @@
       "finishesValue": "{count} Oberflächen",
       "coloursValue": "{count} Farben",
       "notAvailable": "—",
-      "fromPriceValue": "ab {price} € {unit}",
+      "fromPriceValue": "ab {price, number} € {unit}",
       "placeholderPrice": "Preis auf Anfrage",
       "isoClassNote": "Klassengrenzen nach ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "WARUM RE-SOUND",

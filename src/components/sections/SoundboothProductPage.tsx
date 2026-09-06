@@ -54,6 +54,8 @@ export interface BoothSlots {
   downloads: React.ReactNode;
   faq: React.ReactNode;
   otherModels: React.ReactNode;
+  /** From-price KPI, formatted for the locale on the server (see src/components/product/boothPrice.ts) */
+  fromPrice?: { value: string; label: string; href?: string };
 }
 
 export interface SoundboothProductPageProps extends BoothSlots {
@@ -93,6 +95,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     downloads,
     faq,
     otherModels,
+    fromPrice,
   } = props;
 
   const t = useTranslations(namespace);
@@ -151,6 +154,16 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
                 <span className="hero-stat-label">{t(stat.labelKey)}</span>
               </div>
             ))}
+            {fromPrice && (
+              <div className="hero-stat hero-stat--price">
+                {fromPrice.href ? (
+                  <Link href={fromPrice.href} className="hero-stat-value" prefetch={false}>{fromPrice.value}</Link>
+                ) : (
+                  <span className="hero-stat-value">{fromPrice.value}</span>
+                )}
+                <span className="hero-stat-label">{fromPrice.label}</span>
+              </div>
+            )}
           </div>
 
           <div className="hero-ctas">
@@ -517,7 +530,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         }
         .hero-stats {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
           gap: 1.5rem;
           margin-bottom: 2rem;
           padding: 1.5rem 0;
@@ -534,6 +547,9 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           font-family: var(--font-heading);
           line-height: 1;
         }
+        .hero-stat--price .hero-stat-value { font-size: 1.5rem; padding-top: 0.35rem; }
+        a.hero-stat-value { text-decoration: none; }
+        a.hero-stat-value:hover { text-decoration: underline; text-underline-offset: 4px; }
         .hero-stat-label {
           font-size: 0.75rem;
           color: var(--brand-blue);

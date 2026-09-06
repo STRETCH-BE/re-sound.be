@@ -3996,7 +3996,7 @@
       "finishesValue": "{count} finishes",
       "coloursValue": "{count} colours",
       "notAvailable": "—",
-      "fromPriceValue": "from €{price} {unit}",
+      "fromPriceValue": "from €{price, number} {unit}",
       "placeholderPrice": "price on request",
       "isoClassNote": "ISO 23351-1 class thresholds: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "WHY RE-SOUND",

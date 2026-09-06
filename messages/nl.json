@@ -3999,7 +3999,7 @@
       "finishesValue": "{count} afwerkingen",
       "coloursValue": "{count} kleuren",
       "notAvailable": "—",
-      "fromPriceValue": "vanaf €{price} {unit}",
+      "fromPriceValue": "vanaf €{price, number} {unit}",
       "placeholderPrice": "prijs op aanvraag",
       "isoClassNote": "Klassegrenzen ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "WAAROM RE-SOUND",

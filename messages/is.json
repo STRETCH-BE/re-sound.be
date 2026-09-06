@@ -3999,7 +3999,7 @@
       "finishesValue": "{count} áferðir",
       "coloursValue": "{count} litir",
       "notAvailable": "—",
-      "fromPriceValue": "frá €{price} {unit}",
+      "fromPriceValue": "frá €{price, number} {unit}",
       "placeholderPrice": "verð samkvæmt beiðni",
       "isoClassNote": "Flokkamörk ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "HVERS VEGNA RE-SOUND",

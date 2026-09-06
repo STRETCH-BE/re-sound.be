@@ -7,12 +7,17 @@ import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileMenu from './MobileMenu';
 
+/** Routes (without locale prefix) whose first section is a deep-blue hero. */
+const DARK_HERO_PATHS = ['/partner'];
+
 export default function Header() {
   const t = useTranslations('nav');
   const tFooter = useTranslations('footer');
   const locale = useLocale();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  // Pages whose hero is deep blue: the transparent header switches to white text until scrolled.
+  const onDark = DARK_HERO_PATHS.includes(pathname) && !isScrolled;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // The three range hubs (localised slugs) shown under "Products".
@@ -60,7 +65,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
+      <nav className={`nav ${isScrolled ? 'scrolled' : ''} ${onDark ? 'on-dark' : ''}`}>
         {/* Logo */}
         <Link href="/" className="logo">
           Re<span>—</span>Sound
@@ -180,6 +185,15 @@ export default function Header() {
           background: transparent;
           transition: all 0.4s ease;
         }
+
+        /* Over a dark hero (see DARK_HERO_PATHS): white logo, links and language toggle */
+        .nav.on-dark :global(.logo) { color: white; }
+        .nav.on-dark :global(.logo span) { color: white; }
+        .nav.on-dark .nav-links > li > :global(a) { color: white; }
+        .nav.on-dark .nav-links > li > :global(a)::after { background: white; }
+        .nav.on-dark .nav-actions :global(.lang-toggle) { color: white; border-color: rgba(255, 255, 255, 0.6); }
+        .nav.on-dark .mobile-menu-btn span { background: white; }
+        .nav.on-dark .mobile-menu-btn.active span { background: var(--deep-blue); }
 
         .nav.scrolled {
           background: rgba(253, 254, 255, 0.95);

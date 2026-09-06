@@ -14,6 +14,7 @@ import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
 import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
+import { boothFromPrice } from '@/components/product/boothPrice';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -101,6 +102,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const tBooth = await getTranslations({ locale, namespace: 'duoPage' });
   const tShared = await getTranslations({ locale, namespace: 'boothPage' });
   const tPage = await getTranslations({ locale, namespace: 'productPage' });
+  const tHubs = await getTranslations({ locale, namespace: 'hubs.shared' });
 
   return (
     <>
@@ -119,6 +121,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <DuoProductPage
+          fromPrice={boothFromPrice(locale, 'duo', tHubs('col.fromPrice'))}
           breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['duo']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}

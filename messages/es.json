@@ -3999,7 +3999,7 @@
       "finishesValue": "{count} acabados",
       "coloursValue": "{count} colores",
       "notAvailable": "—",
-      "fromPriceValue": "desde {price} € {unit}",
+      "fromPriceValue": "desde {price, number} € {unit}",
       "placeholderPrice": "precio bajo petición",
       "isoClassNote": "Umbrales de clase ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "POR QUÉ RE-SOUND",
