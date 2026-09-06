@@ -17,12 +17,12 @@ heroImageMissing: "/images/blog/telefonbox-buero-kosten.jpg"
 heroAlt: "Telefonbox Solo Flex von Re-Sound für eine Person, aufgestellt in einem offenen Büro"
 internalLinks: ["/de/products/solo-flex","/de/products/duo","/de/products/modular-xl","/de/products/telefonboxen","/de/products/pet-akustikpaneele","/de/where-to-buy","/de/contact","/de/guides/telefonbox-preise"]
 cta: "Fordern Sie ein Angebot für Solo Flex an – wir antworten mit Preis, Lieferzeit und Montageoption für Ihre Adresse."
-sources: "ISO 23351-1:2020 (Sprachpegelminderung geschlossener Bürokabinen); VDI 2569 (Büroakustik), ISO 22955 (Akustik offener Büros) und DIN 18041 (Hörsamkeit) als Hinweise; ISO 11654 (Absorptionsklassen); W.C. Sabine (Nachhallformel); Produktdaten Re-Sound Solo Flex, Duo und Modular XL; Marktpreise September 2026: mute-labs.com (SOLO, 2.990 € netto), workwithisland.com (Island Solo, 3.990 € zzgl. MwSt.), brandnewoffice.be (BNO Booth, 9.320 € zzgl. MwSt.)."
-faq: [{"question":"Was kostet eine Telefonbox fürs Büro 2026?","answer":"Für eine Einpersonenkabine reichen die öffentlichen Preise im September 2026 von 2.990 € netto (SOLO von mute-labs) über 3.990 € zzgl. MwSt. (Island Solo) bis 9.320 € zzgl. MwSt. (BNO Booth). Solo Flex von Re-Sound kostet 2.740 € zzgl. MwSt. ohne Montage und 3.605 € zzgl. MwSt. mit Montage; der Transport außerhalb Belgiens kommt hinzu."},{"question":"Reicht eine Telefonbox der Klasse C aus?","answer":"Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Sprachpegelminderung hören Ihre Kollegen noch ein fernes Murmeln, aber kein Wort. Für vertrauliche Besprechungen direkt neben einer stark belegten Fläche wählen Sie eine höhere Klasse oder einen geschlossenen Raum; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie schnell steht die Telefonbox in meinem Büro?","answer":"Vier bis sechs Wochen nach Auftragsbestätigung für eine Standardkonfiguration. Zwei Personen bauen Solo Flex in unter drei Stunden selbst auf; übernimmt unser Team die Montage, rechnen Sie mit etwa einer Stunde für eine Einzelkabine, zwei Stunden für einen Meeting-Pod und zwei bis sechs Stunden für Modular XL."}]
+sources: "ISO 23351-1:2020 (Sprachpegelminderung geschlossener Bürokabinen); VDI 2569 (Büroakustik), ISO 22955 (Akustik offener Büros) und DIN 18041 (Hörsamkeit) als Hinweise; ISO 11654 (Absorptionsklassen); W.C. Sabine (Nachhallformel); Produktdaten Re-Sound Solo Flex, Duo und Modular XL; öffentliche Preise von drei Wettbewerbern, September 2026 (2.990 € netto, 3.990 € und 9.320 € zzgl. MwSt. für eine Einpersonenkabine)."
+faq: [{"question":"Was kostet eine Telefonbox fürs Büro 2026?","answer":"Für eine Einpersonenkabine reichen die öffentlichen Preise der Wettbewerber im September 2026 von 2.990 € netto über 3.990 € zzgl. MwSt. bis 9.320 € zzgl. MwSt. Solo Flex von Re-Sound kostet 2.740 € zzgl. MwSt. ohne Montage und 3.605 € zzgl. MwSt. mit Montage; der Transport außerhalb Belgiens kommt hinzu."},{"question":"Reicht eine Telefonbox der Klasse C aus?","answer":"Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Sprachpegelminderung hören Ihre Kollegen noch ein fernes Murmeln, aber kein Wort. Für vertrauliche Besprechungen direkt neben einer stark belegten Fläche wählen Sie eine höhere Klasse oder einen geschlossenen Raum; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie schnell steht die Telefonbox in meinem Büro?","answer":"Vier bis sechs Wochen nach Auftragsbestätigung für eine Standardkonfiguration. Zwei Personen bauen Solo Flex in unter drei Stunden selbst auf; übernimmt unser Team die Montage, rechnen Sie mit etwa einer Stunde für eine Einzelkabine, zwei Stunden für einen Meeting-Pod und zwei bis sechs Stunden für Modular XL."}]
 draft: true
 status: "Review"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
-wordCount: 1390
+wordCount: 1382
 ---
 
 **Eine Telefonbox fürs Büro kostet bei Re-Sound ab 2.740 € zzgl. MwSt. ohne Montage oder 3.605 € zzgl. MwSt. inklusive Montage.** Das ist der Preis von [Solo Flex](/de/products/solo-flex), unserer Akustikkabine für eine Person, mit Lüftung, Beleuchtung und Stromanschluss. Hier lesen Sie, was der Betrag abdeckt, welche Größe passt, was die ISO-23351-1-Klassen bedeuten und worauf Sie bei der Aufstellung achten – vom Hersteller, ohne Zwischenhandel.
@@ -34,15 +34,15 @@ Im September 2026 kostet eine Einpersonen-Telefonzelle fürs Büro zwischen rund
 | Kabine | Anbieter | Preis zzgl. MwSt. |
 |---|---|---|
 | Solo Flex | Re-Sound | 2.740 € ohne Montage · 3.605 € mit Montage |
-| SOLO | mute-labs | 2.990 € netto |
-| Island Solo | Work With Island | 3.990 € zzgl. MwSt. |
-| BNO Booth | Brand New Office | 9.320 € zzgl. MwSt. |
+| Einpersonenkabine | Wettbewerber 1 | 2.990 € netto |
+| Einpersonenkabine | Wettbewerber 2 | 3.990 € zzgl. MwSt. |
+| Einpersonenkabine | Wettbewerber 3 | 9.320 € zzgl. MwSt. |
 
 Re-Sound-Preise gelten zzgl. MwSt.; der Transport außerhalb Belgiens – also nach Deutschland – ist nicht inbegriffen.
 
 Solo Flex ist die günstigste Kabine der Tabelle, weil wir sie selbst bauen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).
 
-Für zwei Personen bieten wir [Duo](/de/products/duo) an, Preis auf Anfrage. Für sechs bis zehn Personen beginnt [Modular XL](/de/products/modular-xl) bei 15.000 € zzgl. MwSt. ohne Montage oder 17.990 € zzgl. MwSt. mit Montage, plus 7.264 € je zusätzlichem 90-cm-Element inklusive Montage. Mit einem Element mehr rechnen Sie also 17.990 € + 7.264 € = 25.254 € zzgl. MwSt.
+Für zwei Personen bieten wir [Duo](/de/products/duo) ab 7.615 € zzgl. MwSt. an. Für sechs bis zehn Personen beginnt [Modular XL](/de/products/modular-xl) bei 15.000 € zzgl. MwSt. ohne Montage oder 17.990 € zzgl. MwSt. mit Montage, plus 7.264 € je zusätzlichem 90-cm-Element inklusive Montage. Mit einem Element mehr rechnen Sie also 17.990 € + 7.264 € = 25.254 € zzgl. MwSt.
 
 ## Was im Preis enthalten ist – und was nicht
 
@@ -121,7 +121,7 @@ Testen Sie die Kabinen in unserer Ausstellung in Beveren-Waas (nach Vereinbarung
 ## Häufige Fragen
 
 **Was kostet eine Telefonbox fürs Büro 2026?**
-Für eine Einpersonenkabine reichen die öffentlichen Preise im September 2026 von 2.990 € netto (SOLO von mute-labs) über 3.990 € zzgl. MwSt. (Island Solo) bis 9.320 € zzgl. MwSt. (BNO Booth). Solo Flex von Re-Sound kostet 2.740 € zzgl. MwSt. ohne Montage und 3.605 € zzgl. MwSt. mit Montage; der Transport außerhalb Belgiens kommt hinzu.
+Für eine Einpersonenkabine reichen die öffentlichen Preise der Wettbewerber im September 2026 von 2.990 € netto über 3.990 € zzgl. MwSt. bis 9.320 € zzgl. MwSt. Solo Flex von Re-Sound kostet 2.740 € zzgl. MwSt. ohne Montage und 3.605 € zzgl. MwSt. mit Montage; der Transport außerhalb Belgiens kommt hinzu.
 
 **Reicht eine Telefonbox der Klasse C aus?**
 Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Sprachpegelminderung hören Ihre Kollegen noch ein fernes Murmeln, aber kein Wort. Für vertrauliche Besprechungen direkt neben einer stark belegten Fläche wählen Sie eine höhere Klasse oder einen geschlossenen Raum; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
@@ -129,4 +129,4 @@ Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Spra
 **Wie schnell steht die Telefonbox in meinem Büro?**
 Vier bis sechs Wochen nach Auftragsbestätigung für eine Standardkonfiguration. Zwei Personen bauen Solo Flex in unter drei Stunden selbst auf; übernimmt unser Team die Montage, rechnen Sie mit etwa einer Stunde für eine Einzelkabine, zwei Stunden für einen Meeting-Pod und zwei bis sechs Stunden für Modular XL.
 
-*Quellen: ISO 23351-1:2020 (Sprachpegelminderung geschlossener Bürokabinen); VDI 2569 (Büroakustik), ISO 22955 (Akustik offener Büros) und DIN 18041 (Hörsamkeit) als Hinweise; ISO 11654 (Absorptionsklassen); W.C. Sabine (Nachhallformel); Produktdaten Re-Sound Solo Flex, Duo und Modular XL; Marktpreise September 2026: mute-labs.com (SOLO, 2.990 € netto), workwithisland.com (Island Solo, 3.990 € zzgl. MwSt.), brandnewoffice.be (BNO Booth, 9.320 € zzgl. MwSt.).*
+*Quellen: ISO 23351-1:2020 (Sprachpegelminderung geschlossener Bürokabinen); VDI 2569 (Büroakustik), ISO 22955 (Akustik offener Büros) und DIN 18041 (Hörsamkeit) als Hinweise; ISO 11654 (Absorptionsklassen); W.C. Sabine (Nachhallformel); Produktdaten Re-Sound Solo Flex, Duo und Modular XL; öffentliche Preise von drei Wettbewerbern, September 2026 (2.990 € netto, 3.990 € und 9.320 € zzgl. MwSt. für eine Einpersonenkabine).*

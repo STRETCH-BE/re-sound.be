@@ -101,6 +101,29 @@ function injectLinks(body, links, locale, id) {
   return lines.join('\n');
 }
 
+// Editorial fixes requested by Michael on 6 Sep 2026 (competitor brand names removed, Duo price), applied to the workbook text.
+const TEXT_FIXES = {
+  "BP-001": [
+    [
+      "Ter vergelijking: een Duitse fabrikant vraagt voor zijn eenpersoonscabine € 2.990 netto, een Franse fabrikant € 3.990 excl. btw.",
+      "Ter vergelijking: concurrenten vragen voor een eenpersoonscabine € 2.990 netto tot € 3.990 excl. btw."
+    ],
+    [
+      "Een Belgische kantoorinrichter biedt zijn eenpersoonscabine aan voor € 9.320 excl. btw, plaatsing inbegrepen.",
+      "Een andere concurrent biedt zijn eenpersoonscabine aan voor € 9.320 excl. btw, plaatsing inbegrepen."
+    ],
+    [
+      "marktprijzen september 2026: mute-labs.com (SOLO, € 2.990 netto), workwithisland.com (Island Solo, € 3.990 excl. btw), brandnewoffice.be (BNO Booth, € 9.320 excl. btw).",
+      "prijzen van drie concurrenten, september 2026 (€ 2.990 netto, € 3.990 en € 9.320 excl. btw voor een eenpersoonscabine)."
+    ],
+    [
+      "Voor twee personen ([Duo](/nl/products/duo)) en voor vergaderpods tot tien personen ([Modular XL](/nl/products/modular-xl)) werken we met een offerte op maat, omdat de configuratie (bureau, zitplaatsen, A/V) de prijs bepaalt.",
+      "Voor twee personen start [Duo](/nl/products/duo) vanaf € 7.615 excl. btw; voor vergaderpods tot tien personen ([Modular XL](/nl/products/modular-xl)) werken we met een offerte op maat, omdat de configuratie (bureau, zitplaatsen, A/V) de prijs bepaalt."
+    ]
+  ]
+};
+const applyFixes = (id, text) => (TEXT_FIXES[id] || []).reduce((t, [a, b]) => t.split(a).join(b), text);
+
 // Publication dates: content/blog-status.json remembers when a post first went live.
 const today = new Date().toISOString().slice(0, 10);
 const statusPath = resolve(root, 'content/blog-status.json');
@@ -141,7 +164,7 @@ for (const r of rows('Blog_Posts')) {
   const h1FromBody = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
   const bodyNoH1 = body.replace(/^#\s+.+\n+/, '');
   const internalLinks = list(r['Internal links (hub / product / case study)']);
-  const bodyLinked = injectLinks(bodyNoH1, internalLinks, locale, id);
+  const bodyLinked = applyFixes(id, injectLinks(bodyNoH1, internalLinks, locale, id));
   const heroRel = clean(r['Hero image']).replace(/^\/?/, '/');
   const heroExists = existsSync(resolve(root, 'public', heroRel.replace(/^\//, '')));
   const slug = SLUGS[id];
@@ -151,8 +174,8 @@ for (const r of rows('Blog_Posts')) {
     // Live today: datePublished is the real publication date (a future calendar date would be an invalid BlogPosting date); the calendar date stays in plannedDate.
     author, plannedDate: base.datePublished, datePublished: previousStatus[id]?.publishedDate ?? today, dateModified: previousStatus[id]?.publishedDate ?? today,
     heroImage: heroExists ? heroRel : HERO_FALLBACK[id], heroImageMissing: heroExists ? null : heroRel, heroAlt: clean(r['Hero alt']),
-    internalLinks, cta: clean(r.CTA), sources: clean(r.Sources),
-    faq: parseFaq(r['FAQ (2–3 Q&A)']), draft: false, wordCount: bodyNoH1.split(/\s+/).filter(Boolean).length,
+    internalLinks, cta: clean(r.CTA), sources: applyFixes(id, clean(r.Sources)),
+    faq: parseFaq(r['FAQ (2–3 Q&A)']), draft: false, wordCount: bodyLinked.split(/\s+/).filter(Boolean).length,
   };
   const front = Object.entries(fm).map(([k, v]) => `${k}: ${yaml(v)}`).join('\n');
   write(`content/blog/${locale}/${slug}.md`, `---\n${front}\n---\n\n${bodyLinked}\n`);
@@ -203,6 +226,8 @@ const boothGuide = {
   })),
   guide: guideRow ? { locale: 'nl', title: clean(guideRow['Guide title tag (≤65)']), description: clean(guideRow['Guide meta (≤155)']), h1: clean(guideRow['Guide H1']), faqQuestions: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => clean(guideRow[`Guide FAQ Q${i}`])).filter(Boolean) } : null,
 };
+// Confirmed by Michael on 6 Sep 2026 but not yet in the workbook: Duo € 7 615 excl. VAT.
+for (const m of boothGuide.models) if (m.model === 'Duo' && m.priceExclVat === null) m.priceExclVat = 7615;
 write('content/booth-guide.json', JSON.stringify(boothGuide, null, 2) + '\n');
 console.log(`booth guide: ${boothGuide.models.map((m) => `${m.model}=${m.priceExclVat ?? 'n/a'}`).join(', ')}`);
 
@@ -214,7 +239,7 @@ const dedup = new Map();
 for (const r of sr) dedup.set(clean(r.Name) + clean(r.Type), r); // last row wins
 const showrooms = [...dedup.values()].map((r) => ({
   name: clean(r.Name), type: clean(r.Type), country: clean(r.Country), city: clean(r.City), address: clean(r.Address),
-  latitude: num(r.Latitude), longitude: num(r.Longitude), email: clean(r.Email) || null, phone: clean(r.Phone) || null, website: clean(r.Website) || null,
+  latitude: num(r.Latitude), longitude: num(r.Longitude), email: clean(r.Email) || null, phone: clean(r.Phone) || (/Poland/.test(clean(r.Name)) ? '+48 730 700 333 (PL/EN), +48 455 444 475 (PL/UA)' : null) /* Michael, 6 Sep 2026 */, website: clean(r.Website) || null,
   openingHours: clean(r['Opening hours']), languages: list(r['Languages spoken']), products: list(r['Products displayed']), status: clean(r.Status),
 }));
 write('content/showrooms.json', JSON.stringify(showrooms, null, 2) + '\n');

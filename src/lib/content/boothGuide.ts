@@ -31,7 +31,7 @@ export interface BoothGuideData {
 /** Installation prices from the workbook facts (excl. VAT). */
 export const BOOTH_PRICES = {
   'solo-flex': { exclInstallation: 2740, inclInstallation: 3605, installation: 865 },
-  duo: { exclInstallation: null, inclInstallation: null, installation: null },
+  duo: { exclInstallation: 7615, inclInstallation: null, installation: null }, // Michael, 6 Sep 2026: € 7 615 excl. VAT; installation price not given
   'modular-xl': { exclInstallation: 15000, inclInstallation: 17990, extraElementIncl: 7264 },
 } as const;
 

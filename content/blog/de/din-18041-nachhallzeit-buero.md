@@ -22,7 +22,7 @@ faq: [{"question":"Welche Nachhallzeit verlangt DIN 18041 für ein Büro?","answ
 draft: true
 status: "Review"
 model: "akoestiek-open-kantoor-verbeteren, nagalmtijd-klaslokaal-normen"
-wordCount: 1347
+wordCount: 1349
 ---
 
 **DIN 18041 gibt die Soll-Nachhallzeit im Büro über das Raumvolumen vor: Für Besprechungs- und Konferenzräume (Kategorie A, Gruppe A3 „Unterricht/Kommunikation“) gilt T_soll = 0,32·lg(V) − 0,17 s, also rund 0,39 s bei 56 m³; Großraumbüros werden als Räume der Kategorie B über das Verhältnis von Absorptionsfläche zu Raumvolumen geplant, ergänzt durch VDI 2569 und ISO 22955.** Hier beide Rechnungen und die passenden Maßnahmen.
@@ -89,7 +89,7 @@ Nur mit Wandpaneelen wären das 69 / 0,85 = 81 m². Besser verteilt:
 
 **3. Zonieren mit Divide.** Vierzig Arbeitsplätze sind akustisch ein einziger Raum. [Divide](/de/products/divide) sind freistehende, beidseitig absorbierende Stellwände (αw 1,0, Klasse A) mit integriertem Fuß, magnetisch koppelbar, ohne Montage.
 
-**4. Telefonboxen für Telefonate und Videokonferenzen.** Telefonate auf der Fläche stören am meisten; dagegen hilft eine [Telefonbox](/de/products/telefonboxen). Eine Akustikkabine wie [Solo Flex](/de/products/solo-flex) braucht 1 m², lüftet mit 4,6 m³/min und mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1. Ab 2.740 € zzgl. MwSt. ohne Montage, 3.605 € zzgl. MwSt. mit Montage, zzgl. Transport nach Deutschland; eine Kabine je acht bis zehn Arbeitsplätze. Für zwei Personen: [Duo](/de/products/duo), Preis auf Anfrage. Vergleich: [Preisleitfaden für Telefonboxen](/de/guides/telefonbox-preise).
+**4. Telefonboxen für Telefonate und Videokonferenzen.** Telefonate auf der Fläche stören am meisten; dagegen hilft eine [Telefonbox](/de/products/telefonboxen). Eine Akustikkabine wie [Solo Flex](/de/products/solo-flex) braucht 1 m², lüftet mit 4,6 m³/min und mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1. Ab 2.740 € zzgl. MwSt. ohne Montage, 3.605 € zzgl. MwSt. mit Montage, zzgl. Transport nach Deutschland; eine Kabine je acht bis zehn Arbeitsplätze. Für zwei Personen: [Duo](/de/products/duo) ab 7.615 € zzgl. MwSt. Vergleich: [Preisleitfaden für Telefonboxen](/de/guides/telefonbox-preise).
 
 **5. Meeting-Pods.** Fehlen Besprechungsräume, landen Besprechungen auf der Fläche. [Modular XL](/de/products/modular-xl) ist ein Raum-in-Raum-System für sechs bis zehn Personen, erweiterbar in 90-cm-Elementen, 25,9 dB(A) Sprachpegelminderung (Klasse C), ab 15.000 € zzgl. MwSt. ohne Montage (17.990 € mit Montage), freistehend aufgestellt.
 

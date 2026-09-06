@@ -544,3 +544,7 @@
   white-space: nowrap;
   border: 0;
 }
+
+.office-phone {
+  display: block;
+}

@@ -1,5 +1,25 @@
 # Needs Michael — content sprint 2
 
+## Answers received on 6 September 2026 (applied)
+
+| # | Answer | What changed |
+|---|---|---|
+| 1 | "Wide step-free door" | Modular XL, Duo and Solo Flex door copy reworded in all ten locales (`modularXlPage.overview.feature4`, `*.features.accessibility`, `meta.modularXlDescription`, booths hub FAQ q4); no accessibility promise anywhere |
+| 2 | Duo € 7 615 excl. VAT | `src/data/products.ts` (`fromPrice` → Product Offer), `src/lib/content/boothGuide.ts`, `content/booth-guide.json`, FAQ-003 in ten locales, the four booth posts; installation price for Duo still unknown → "on request" in the guide table |
+| 3 | "Can we try a booth before we order?" → Yes | FAQ-007 rewritten in ten locales; no leasing/trial wording left |
+| 4 | Today's date is fine | no change |
+| 5 | ok | Google reviews stay as shown |
+| 6 | ok | made-in confirmed |
+| 7 | B-s1,d0 | rWood Groove fire class set to B-s1,d0 (page, hub table, JSON-LD); the 60 % recycled content stays open |
+| 8 | PER_SET | Interior back to "€387 per set" |
+| 9 | no dB level yet | FAQ-005 unchanged |
+| 10 | ok | FAQ wording confirmed |
+| 11 | no competitor brand names | the four booth posts (nl/fr/de/en) now say "competitors ask …" with the same three figures; brand names and their domains removed from bodies, tables, FAQ answers and Sources lines (mirrored in the importer so a re-import keeps it) |
+| 12 | Częstochowa address + phones | +48 730 700 333 (PL/EN) and +48 455 444 475 (PL/UA) on `/where-to-buy` and in the office LocalBusiness `telephone` |
+| 13 | confirmed | no change |
+
+Still open: items 14–25 below (hero images, Google API key and place id, planned application pages, rWood Groove 60 % recycled content, translation notes) and the Google Business Profile checklist.
+
 Everything below is a fact, asset or decision the sprint could not settle from
 the workbook (`content/re-sound-content-data-templates.xlsx`), from
 `src/data/products.ts` or from the sprint brief. Where a value was missing the

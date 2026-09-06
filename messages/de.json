@@ -39,7 +39,7 @@
     "duoTitle": "Duo — Telefonbox für 2 Personen & Fokus-Pod fürs Büro | Re-Sound",
     "duoDescription": "Telefonbox für zwei Personen mit zwei Konfigurationen: Flex bietet zwei Plätze für ein Gespräch, Work einen Tisch in voller Breite. 2 m², 230 V, belüftet.",
     "modularXlTitle": "Modular XL — Akustik-Meeting-Pod für 6–10 Personen | Re-Sound",
-    "modularXlDescription": "Akustik-Meeting-Pod für 6 bis 10 Personen: Basis in 90-cm-Segmenten erweiterbar, 25,9 dB(A) Sprachminderung, A/V-Ausstattung, barrierefreier Eingang.",
+    "modularXlDescription": "Akustik-Meeting-Pod für 6 bis 10 Personen: Basis in 90-cm-Segmenten erweiterbar, 25,9 dB(A) Sprachminderung, A/V-Ausstattung, breite schwellenlose Tür.",
     "partnerTitle": "Partnerprogramm · Trade- und Händlerprogramm",
     "partnerDescription": "Re-Sound Partnerprogramm für Architekten, Designer, Händler und Distributoren in Europa: ausschreibungsfertige Dokumentation, Gebietsschutz, Support.",
     "whereToBuyTitle": "Wo Re-Sound zu sehen und zu kaufen",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Stufenfreier Zugang",
-        "desc": "Flache Schwelle und 90 cm lichte Türbreite erfüllen die europäischen Empfehlungen zur Barrierefreiheit in Büros."
+        "desc": "Flache Schwelle und 90 cm lichte Türbreite."
       },
       "safety": {
         "title": "Nach Norm geprüft",
@@ -3357,8 +3357,8 @@
         "desc": "Warm/Kalt dimmbare LED, geeignet für Videokonferenzen. Gleichmäßige Ausleuchtung beider Gesichter im Flex-Modus — keine Schatten unter den Augen."
       },
       "accessibility": {
-        "title": "Breiter, stufenfreier Zugang",
-        "desc": "100 cm lichte Türbreite — erfüllt die europäischen Empfehlungen zur Barrierefreiheit und ist rollstuhltauglich. Schwelle ist flach."
+        "title": "Breite, schwellenlose Tür",
+        "desc": "100 cm lichte Türbreite und flache Schwelle."
       },
       "safety": {
         "title": "Nach Norm geprüft",
@@ -3467,7 +3467,7 @@
       "feature1": "Basismodul bietet Platz für bis zu 6 sitzende Personen",
       "feature2": "90-cm-Segmente erweitern die Kabine auf 10 Personen",
       "feature3": "25,9 dB(A) Sprachdämmung — Besprechungsraum-Klasse",
-      "feature4": "Vollständige A/V-Ausstattung und barrierefreier Eingang"
+      "feature4": "Vollständige A/V-Ausstattung und breite, schwellenlose Tür"
     },
     "acoustics": {
       "tag": "AKUSTISCHE LEISTUNG",
@@ -3520,8 +3520,8 @@
         "desc": "Dimmbare Warm/Kalt-LED mit getrennten Zonen für Bildschirm- und Schreibaufgaben. Über das Wandbedienteil einstellbar."
       },
       "accessibility": {
-        "title": "Rollstuhltauglich",
-        "desc": "110 cm lichte Türbreite und flache Schwelle sind rollstuhltauglich. Das Innenlayout lässt Platz für eine rollstuhlnutzende Person am Tisch."
+        "title": "Breite, schwellenlose Tür",
+        "desc": "110 cm lichte Türbreite und flache Schwelle."
       },
       "safety": {
         "title": "Nach Norm geprüft",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Mo–Fr, 08:00–16:30 Uhr · nach Terminvereinbarung",
       "languagesLabel": "Sprachen",
       "languagesValue": "Niederländisch, Polnisch, Ukrainisch, Russisch, Englisch",
-      "contactLabel": "Kontakt"
+      "contactLabel": "Kontakt",
+      "phoneLabel": "Telefon"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Welcher Meeting-Pod eignet sich für sechs Personen oder mehr?",
-          "answer": "Modular XL: Die Basiseinheit bietet Platz für sechs Personen, und jedes 90-cm-Segment erweitert die Kapazität auf bis zu zehn Personen – mit A/V-Vorrüstung und barrierefreiem Zugang."
+          "answer": "Modular XL: Die Basiseinheit bietet Platz für sechs Personen, und jedes 90-cm-Segment erweitert die Kapazität auf bis zu zehn Personen – mit A/V-Vorrüstung und breiter, schwellenloser Tür."
         },
         "q5": {
           "question": "Wie lang sind Lieferzeit und Garantie bei einer Telefonbox?",

@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hoeveel kost een belcabine voor kantoor?",
-    "answer": "De belcabine Solo Flex is verkrijgbaar vanaf € 2.740 excl. btw zonder installatie, of € 3.605 excl. btw inclusief installatie. De prijs van de vergaderpod Duo is op aanvraag. Modular XL start vanaf € 15.000 excl. btw zonder installatie, of € 17.990 excl. btw inclusief installatie, plus € 7.264 inclusief installatie per extra element van 90 cm. De grootste Modular XL tot nu toe biedt plaats aan 20 personen. Prijzen zijn exclusief transport buiten België.",
+    "answer": "De belcabine Solo Flex is verkrijgbaar vanaf € 2.740 excl. btw zonder installatie, of € 3.605 excl. btw inclusief installatie. De vergaderpod Duo is verkrijgbaar vanaf € 7.615 excl. btw. Modular XL start vanaf € 15.000 excl. btw zonder installatie, of € 17.990 excl. btw inclusief installatie, plus € 7.264 inclusief installatie per extra element van 90 cm. De grootste Modular XL tot nu toe biedt plaats aan 20 personen. Prijzen zijn exclusief transport buiten België.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Kunnen we een cabine leasen of uitproberen?",
-    "answer": "Nee, op dit moment niet. U kunt onze cabines wel vooraf testen in onze showroom in Beveren-Waas (België) voordat u bestelt; bezoeken zijn op afspraak, van maandag tot vrijdag van 08:00 tot 16:30.",
+    "question": "Kunnen we een cabine uitproberen voor we bestellen?",
+    "answer": "Ja. U kunt elk model vooraf testen in onze showroom in Beveren-Waas (België) voordat u bestelt; bezoeken zijn op afspraak, van maandag tot vrijdag van 08:00 tot 16:30.",
     "showOn": [
       "guide",
       "faq"

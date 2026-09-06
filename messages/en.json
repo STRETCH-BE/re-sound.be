@@ -39,7 +39,7 @@
     "duoTitle": "Duo — 2-Person Office Phone Booth & Focus Pod | Re-Sound",
     "duoDescription": "Two-person office phone booth with two configurations: Flex seats two for a meeting, Work gives one person a full-width desk. 2 m², 230 V, ventilated.",
     "modularXlTitle": "Modular XL — 6–10 Person Acoustic Meeting Pod | Re-Sound",
-    "modularXlDescription": "Acoustic meeting pod for 6 to 10 people: extend the base in 90 cm segments, 25.9 dB(A) speech reduction, full A/V provisions, accessible entry.",
+    "modularXlDescription": "Acoustic meeting pod for 6 to 10 people: extend the base in 90 cm segments, 25.9 dB(A) speech reduction, full A/V provisions, wide step-free door.",
     "partnerTitle": "Partner programme · trade and dealer programme",
     "partnerDescription": "Re-Sound partner programme for architects, designers, dealers and distributors across Europe: specifier documentation, regional protection, direct support.",
     "whereToBuyTitle": "Where to see and buy Re-Sound",
@@ -3184,7 +3184,7 @@
       },
       "accessibility": {
         "title": "Step-free entry",
-        "desc": "Flat threshold and 90 cm clear door width meet European accessibility guidance for office facilities."
+        "desc": "Flat threshold and 90 cm clear door width."
       },
       "safety": {
         "title": "Tested to standard",
@@ -3354,8 +3354,8 @@
         "desc": "Warm/cool dimmable LED rated for video calls. Even illumination on both faces in Flex mode — no shadowed eyes."
       },
       "accessibility": {
-        "title": "Wide step-free entry",
-        "desc": "100 cm clear door width — meets European accessibility guidance and accommodates wheelchairs. Threshold is flat."
+        "title": "Wide step-free door",
+        "desc": "100 cm clear door width and a flat threshold."
       },
       "safety": {
         "title": "Tested to standard",
@@ -3464,7 +3464,7 @@
       "feature1": "Base unit accommodates up to 6 people seated",
       "feature2": "90 cm segments extend the booth to 10",
       "feature3": "25.9 dB(A) speech reduction — meeting-room class",
-      "feature4": "Full A/V provisions and accessible-by-design entry"
+      "feature4": "Full A/V provisions and a wide step-free door"
     },
     "acoustics": {
       "tag": "ACOUSTIC PERFORMANCE",
@@ -3517,8 +3517,8 @@
         "desc": "Dimmable warm/cool LED with separate zones for screen and writing tasks. Adjustable from the wall panel."
       },
       "accessibility": {
-        "title": "Wheelchair-accessible",
-        "desc": "110 cm clear door width and flat threshold accommodate wheelchairs. Interior layout leaves room for one chair-using participant at the table."
+        "title": "Wide step-free door",
+        "desc": "110 cm clear door width and a flat threshold."
       },
       "safety": {
         "title": "Tested to standard",
@@ -3849,7 +3849,8 @@
       "hoursValue": "Mon–Fri, 08:00–16:30 · by appointment",
       "languagesLabel": "Languages",
       "languagesValue": "Dutch, Polish, Ukrainian, Russian, English",
-      "contactLabel": "Contact"
+      "contactLabel": "Contact",
+      "phoneLabel": "Phone"
     }
   },
   "manufacturer": {
@@ -4128,7 +4129,7 @@
         },
         "q4": {
           "question": "Which meeting pod fits six people or more?",
-          "answer": "Modular XL: the base unit seats six and each 90 cm segment adds capacity up to ten, with A/V provisions and an accessible entry."
+          "answer": "Modular XL: the base unit seats six and each 90 cm segment adds capacity up to ten, with A/V provisions and a wide step-free door."
         },
         "q5": {
           "question": "What are the lead time and warranty for a phone booth?",

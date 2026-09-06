@@ -39,7 +39,7 @@
     "duoTitle": "Duo – símaklefi fyrir tvo og einbeitingarklefi | Re-Sound",
     "duoDescription": "Símaklefi fyrir tvo á skrifstofuna með tveimur útfærslum: Flex rúmar tvo á fundi, Work gefur einum skrifborð í fullri breidd. 2 m², 230 V, loftræstur.",
     "modularXlTitle": "Modular XL – hljóðeinangraður fundarklefi fyrir 6–10 | Re-Sound",
-    "modularXlDescription": "Hljóðeinangraður fundarklefi fyrir 6 til 10 manns: stækkaðu grunninn í 90 cm einingum, 25,9 dB(A) taldeyfing, fullur A/V-búnaður, aðgengilegur inngangur.",
+    "modularXlDescription": "Hljóðeinangraður fundarklefi fyrir 6 til 10 manns: stækkaðu grunninn í 90 cm einingum, 25,9 dB(A) taldeyfing, fullur A/V-búnaður, þröskuldslausar dyr.",
     "partnerTitle": "Samstarfsáætlun · trade- og söluaðiláætlun",
     "partnerDescription": "Samstarfsáætlun Re-Sound fyrir arkitekta, hönnuði, söluaðila og dreifingaraðila um alla Evrópu: útboðsgögn, svæðisvernd, bein aðstoð.",
     "whereToBuyTitle": "Hvar þú sérð og kaupir Re-Sound",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Þröskuldlaust aðgengi",
-        "desc": "Flatur þröskuldur og 90 cm laus hurðabreidd uppfylla evrópskar leiðbeiningar um aðgengi á skrifstofum."
+        "desc": "Flatur þröskuldur og 90 cm laus hurðabreidd."
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
@@ -3357,8 +3357,8 @@
         "desc": "Hlý/köld dimmanleg LED-lýsing, hentug fyrir myndsímtöl. Jöfn lýsing beggja andlita í Flex-stillingu — engir augnskuggar."
       },
       "accessibility": {
-        "title": "Breitt þröskuldlaust aðgengi",
-        "desc": "100 cm laus hurðabreidd — uppfyllir evrópskar leiðbeiningar um aðgengi og tekur við hjólastólum. Þröskuldur er flatur."
+        "title": "Breiðar þröskuldslausar dyr",
+        "desc": "100 cm laus hurðabreidd og flatur þröskuldur."
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
@@ -3467,7 +3467,7 @@
       "feature1": "Grunneining rúmar allt að 6 sitjandi manns",
       "feature2": "90 cm einingar lengja klefann upp í 10",
       "feature3": "25,9 dB(A) talskerðing — fundarherbergisflokkur",
-      "feature4": "Fullur A/V búnaður og aðgengilegur inngangur frá hönnun"
+      "feature4": "Fullur A/V búnaður og breiðar þröskuldslausar dyr"
     },
     "acoustics": {
       "tag": "HLJÓÐEIGINLEIKAR",
@@ -3520,8 +3520,8 @@
         "desc": "Dimmanleg hlý/köld LED-lýsing með aðskildum svæðum fyrir skjá- og skriftarverkefni. Stýrt frá veggspjaldi."
       },
       "accessibility": {
-        "title": "Hjólastólaaðgengilegt",
-        "desc": "110 cm laus hurðabreidd og flatur þröskuldur er samhæft við hjólastóla. Innra fyrirkomulagið skilur eftir pláss fyrir einn hjólastólanotanda við borðið."
+        "title": "Breiðar þröskuldslausar dyr",
+        "desc": "110 cm laus hurðabreidd og flatur þröskuldur."
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Mán–fös, 08:00–16:30 · eftir samkomulagi",
       "languagesLabel": "Tungumál",
       "languagesValue": "Hollenska, pólska, úkraínska, rússneska, enska",
-      "contactLabel": "Tengiliður"
+      "contactLabel": "Tengiliður",
+      "phoneLabel": "Sími"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Hvaða fundarklefi rúmar sex manns eða fleiri?",
-          "answer": "Modular XL: grunneiningin rúmar sex manns og hver 90 cm hluti eykur rýmið upp í tíu manns, með undirbúningi fyrir A/V-búnað og aðgengilegum inngangi."
+          "answer": "Modular XL: grunneiningin rúmar sex manns og hver 90 cm hluti eykur rýmið upp í tíu manns, með undirbúningi fyrir A/V-búnað og breiðum þröskuldslausum dyrum."
         },
         "q5": {
           "question": "Hver er afhendingartíminn og ábyrgðin á símaklefa?",

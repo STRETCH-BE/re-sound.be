@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Combien coûte une cabine téléphonique de bureau ?",
-    "answer": "La cabine téléphonique de bureau Solo Flex est disponible dès 2 740 € HTVA sans installation, ou 3 605 € HTVA installation comprise. Le pod de réunion Duo est sur devis. La Modular XL démarre à 15 000 € HTVA sans installation, ou 17 990 € HTVA installation comprise, plus 7 264 € installation comprise par élément supplémentaire de 90 cm. La plus grande Modular XL construite à ce jour accueille 20 personnes. Transport hors Belgique non compris.",
+    "answer": "La cabine téléphonique de bureau Solo Flex est disponible dès 2 740 € HTVA sans installation, ou 3 605 € HTVA installation comprise. Le pod Duo démarre à 7 615 € HTVA. La Modular XL démarre à 15 000 € HTVA sans installation, ou 17 990 € HTVA installation comprise, plus 7 264 € installation comprise par élément supplémentaire de 90 cm. La plus grande Modular XL construite à ce jour accueille 20 personnes. Transport hors Belgique non compris.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Pouvons-nous louer ou essayer une cabine ?",
-    "answer": "Non, pas pour le moment. Vous êtes toutefois les bienvenus pour tester nos cabines dans notre showroom de Beveren-Waas (Belgique) avant de commander ; les visites se font sur rendez-vous, du lundi au vendredi de 08h00 à 16h30.",
+    "question": "Pouvons-nous essayer une cabine avant de commander ?",
+    "answer": "Oui. Vous êtes les bienvenus pour tester chaque modèle dans notre showroom de Beveren-Waas (Belgique) avant de commander ; les visites se font sur rendez-vous, du lundi au vendredi de 08h00 à 16h30.",
     "showOn": [
       "guide",
       "faq"

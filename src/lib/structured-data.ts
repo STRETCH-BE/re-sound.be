@@ -179,6 +179,7 @@ export function productionOfficeSchema() {
       addressCountry: PRODUCTION_OFFICE.addressCountry,
     },
     email: PRODUCTION_OFFICE.email,
+    telephone: PRODUCTION_OFFICE.phones.map((p) => p.number),
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',

@@ -39,7 +39,7 @@
     "duoTitle": "Duo — belcabine voor 2 personen & focuspod | Re-Sound",
     "duoDescription": "Belcabine voor twee met twee configuraties: Flex biedt plaats aan twee voor een gesprek, Work geeft één persoon een breed bureau. 2 m², 230 V, ventilatie.",
     "modularXlTitle": "Modular XL — akoestische vergaderpod, 6–10 personen | Re-Sound",
-    "modularXlDescription": "Akoestische vergaderpod voor 6 tot 10 personen: basis uitbreidbaar per 90 cm, 25,9 dB(A) spraakreductie, A/V-voorzieningen, toegankelijke ingang.",
+    "modularXlDescription": "Akoestische vergaderpod voor 6 tot 10 personen: basis uitbreidbaar per 90 cm, 25,9 dB(A) spraakreductie, A/V-voorzieningen, brede drempelloze deur.",
     "partnerTitle": "Partnerprogramma · trade- en dealerprogramma",
     "partnerDescription": "Re-Sound partnerprogramma voor architecten, ontwerpers, dealers en distributeurs in Europa: specificatiedocumentatie, regiobescherming, directe support.",
     "whereToBuyTitle": "Waar je Re-Sound kan zien en kopen",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Drempelvrije toegang",
-        "desc": "Vlakke drempel en 90 cm vrije deurbreedte voldoen aan Europese toegankelijkheidsrichtlijnen voor kantoorvoorzieningen."
+        "desc": "Vlakke drempel en 90 cm vrije deurbreedte."
       },
       "safety": {
         "title": "Getest volgens norm",
@@ -3357,8 +3357,8 @@
         "desc": "Warm/koel dimbare LED, geschikt voor videogesprekken. Gelijkmatige verlichting van beide gezichten in Flex-modus — geen schaduwen rond de ogen."
       },
       "accessibility": {
-        "title": "Brede drempelvrije toegang",
-        "desc": "100 cm vrije deurbreedte — voldoet aan Europese toegankelijkheidsrichtlijnen en geschikt voor rolstoelen. De drempel is vlak."
+        "title": "Brede, drempelloze deur",
+        "desc": "100 cm vrije deurbreedte en een vlakke drempel."
       },
       "safety": {
         "title": "Getest volgens norm",
@@ -3467,7 +3467,7 @@
       "feature1": "Basismodule biedt plaats aan maximaal 6 zittende personen",
       "feature2": "Segmenten van 90 cm verlengen de cabine tot 10",
       "feature3": "25,9 dB(A) spraakreductie — vergaderzaal-klasse",
-      "feature4": "Volledige A/V-voorzieningen en toegankelijk ontwerp"
+      "feature4": "Volledige A/V-voorzieningen en een brede, drempelloze deur"
     },
     "acoustics": {
       "tag": "AKOESTISCHE PRESTATIES",
@@ -3520,8 +3520,8 @@
         "desc": "Dimbare warm/koele LED met aparte zones voor scherm- en schrijftaken. Bedienbaar via het wandpaneel."
       },
       "accessibility": {
-        "title": "Rolstoeltoegankelijk",
-        "desc": "110 cm vrije deurbreedte en vlakke drempel zijn geschikt voor rolstoelen. De binnenindeling laat ruimte voor één rolstoelgebruiker aan tafel."
+        "title": "Brede, drempelloze deur",
+        "desc": "110 cm vrije deurbreedte en een vlakke drempel."
       },
       "safety": {
         "title": "Getest volgens norm",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Ma–vr, 08:00–16:30 · op afspraak",
       "languagesLabel": "Talen",
       "languagesValue": "Nederlands, Pools, Oekraïens, Russisch, Engels",
-      "contactLabel": "Contact"
+      "contactLabel": "Contact",
+      "phoneLabel": "Telefoon"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Welke vergaderpod is geschikt voor zes personen of meer?",
-          "answer": "Modular XL: de basisunit biedt plaats aan zes personen en elk segment van 90 cm breidt de capaciteit uit tot tien, met A/V-voorzieningen en een toegankelijke ingang."
+          "answer": "Modular XL: de basisunit biedt plaats aan zes personen en elk segment van 90 cm breidt de capaciteit uit tot tien, met A/V-voorzieningen en een brede, drempelloze deur."
         },
         "q5": {
           "question": "Wat zijn de levertermijn en de garantie van een belcabine?",

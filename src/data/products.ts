@@ -149,7 +149,7 @@ export const PRODUCTS: Record<string, Product> = {
     certifications: [],
     // The page states "Starting from €387 per set" — the only confirmed price.
     fromPrice: 387,
-    priceUnit: PER_PIECE, // workbook: per stuk (site said "per set")
+    priceUnit: PER_SET, // Michael, 6 Sep 2026: €387 is the price per set
     heroImage: '/images/products/interior/hero.webp',
     cardImage: '/images/products/interior/interior_card.webp',
     documents: panelDocs('interior'),
@@ -202,7 +202,7 @@ export const PRODUCTS: Record<string, Product> = {
     updatedAt: '2026-09-06',
   },
 
-  // ───────────── rWood (country of manufacture: TODO(needs-Michael)) ─────────────
+  // ───────────── rWood (made in Częstochowa — confirmed by Michael, 6 Sep 2026) ─────────────
   'rwood-groove': {
     slug: 'rwood-groove',
     family: 'rwood',
@@ -218,7 +218,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-groove'),
     // Page: αw 0.90 (old JSON-LD 0.85); fire class depends on the core: standard MDF
     // D-s2,d2, fire-retardant MDF B-s1,d0 (FAQ said B-s2,d0) — all flagged.
-    specs: { kind: 'panel', format: '300 × 2400 / 2780 mm', thickness: '19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0 (FR core) / D-s2,d2', finishCount: 5 },
+    specs: { kind: 'panel', format: '300 × 2400 / 2780 mm', thickness: '19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 5 }, // fire class confirmed by Michael, 6 Sep 2026
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodGroovePage',
     metaKey: 'rwoodGroove',
@@ -379,7 +379,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: 7615, // Michael, 6 Sep 2026: € 7 615 excl. VAT (not yet in the workbook)
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/duo/hero-duo.webp',
     cardImage: '/images/products/duo/duo_card.webp',

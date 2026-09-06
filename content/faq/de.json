@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Was kostet eine Telefonbox fürs Büro?",
-    "answer": "Die Telefonbox Solo Flex ist ab 2.740 € zzgl. MwSt. ohne Montage erhältlich oder ab 3.605 € zzgl. MwSt. inklusive Montage. Für den Meeting-Pod Duo erhalten Sie den Preis auf Anfrage. Die Modular XL beginnt bei 15.000 € zzgl. MwSt. ohne Montage bzw. 17.990 € zzgl. MwSt. inklusive Montage, zuzüglich 7.264 € inklusive Montage je zusätzlichem 90-cm-Element. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen. Die Preise verstehen sich ohne Transport außerhalb Belgiens.",
+    "answer": "Die Telefonbox Solo Flex ist ab 2.740 € zzgl. MwSt. ohne Montage erhältlich oder ab 3.605 € zzgl. MwSt. inklusive Montage. Der Meeting-Pod Duo ist ab 7.615 € zzgl. MwSt. erhältlich. Die Modular XL beginnt bei 15.000 € zzgl. MwSt. ohne Montage bzw. 17.990 € zzgl. MwSt. inklusive Montage, zuzüglich 7.264 € inklusive Montage je zusätzlichem 90-cm-Element. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen. Die Preise verstehen sich ohne Transport außerhalb Belgiens.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Können wir eine Kabine leasen oder testen?",
-    "answer": "Nein, derzeit nicht. Gerne können Sie unsere Kabinen vor der Bestellung in unserem Showroom in Beveren-Waas (Belgien) ausprobieren; Besuche nach Terminvereinbarung, Montag bis Freitag 08:00–16:30 Uhr.",
+    "question": "Können wir eine Kabine vor der Bestellung ausprobieren?",
+    "answer": "Ja. Gerne können Sie jedes Modell vor der Bestellung in unserem Showroom in Beveren-Waas (Belgien) testen; Besuche nach Terminvereinbarung, Montag bis Freitag 08:00–16:30 Uhr.",
     "showOn": [
       "guide",
       "faq"

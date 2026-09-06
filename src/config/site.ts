@@ -83,6 +83,11 @@ export const PRODUCTION_OFFICE = {
   addressLocality: 'Częstochowa',
   addressCountry: 'PL',
   email: 'info@re-sound.be',
+  // Michael, 6 Sep 2026
+  phones: [
+    { number: '+48 730 700 333', languages: 'PL/EN' },
+    { number: '+48 455 444 475', languages: 'PL/UA' },
+  ],
   openingDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
   opens: '08:00',
   closes: '16:30',

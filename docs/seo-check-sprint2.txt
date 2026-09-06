@@ -1,11 +1,11 @@
-Re-Sound SEO check — 2026-09-06T17:14:25.221Z
+Re-Sound SEO check — 2026-09-06T19:22:36.566Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
 URLs in sitemap: 202
 Per locale: en=30, nl=36, fr=30, de=30, es=29, pt=29, documents=18
 lastmod distribution (by day): 2024-01-01=6, 2024-01-05=6, 2024-01-10=6, 2024-01-15=6, 2026-08-10=18, 2026-09-06=160
-distinct lastmod values: 11
+distinct lastmod values: 12
 single-locale URLs (no hreflang by design): 6
 hreflang alternates per URL: min 0, max 7
 document entries (pdf/dwg): 18
@@ -14,19 +14,19 @@ also crawling da, sv, no, is: 29 pages each (mirrored from the English sitemap e
 Crawling 300 pages …
 
 == (a) Forbidden strings
-FAIL /en/products/modular-xl: forbidden string "accessible-by-design"
+OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-da: 0.2% English (3/1410 segments over 29 pages)
-de: 0.3% English (4/1499 segments over 30 pages)
-es: 0.2% English (3/1747 segments over 29 pages)
-fr: 0.2% English (4/1759 segments over 30 pages)
-is: 0.2% English (3/1440 segments over 29 pages)
-nl: 0.2% English (4/2000 segments over 36 pages)
-no: 0.3% English (4/1411 segments over 29 pages)
-pt: 0.2% English (3/1709 segments over 29 pages)
-sv: 0.1% English (2/1410 segments over 29 pages)
+da: 0.2% English (3/1412 segments over 29 pages)
+de: 0.3% English (4/1501 segments over 30 pages)
+es: 0.2% English (3/1749 segments over 29 pages)
+fr: 0.2% English (4/1761 segments over 30 pages)
+is: 0.2% English (3/1442 segments over 29 pages)
+nl: 0.2% English (4/2002 segments over 36 pages)
+no: 0.3% English (4/1413 segments over 29 pages)
+pt: 0.2% English (3/1711 segments over 29 pages)
+sv: 0.1% English (2/1412 segments over 29 pages)
 
 -- sample English segments per flagged page (max 12 each)
 
@@ -41,7 +41,7 @@ OK — none found
 
 == (d) JSON-LD
 blocks: 656, parse errors: 0
-types: Question=1326, Answer=1326, ListItem=960, PropertyValue=750, Organization=236, BreadcrumbList=210, ImageObject=186, FAQPage=180, Product=130, Brand=130, Offer=130, MerchantReturnPolicy=130, Country=130, BlogPosting=46, PostalAddress=40, ItemList=40, UnitPriceSpecification=40, LocalBusiness=30, OpeningHoursSpecification=30, CollectionPage=30, GeoCoordinates=20, ContactPoint=10, WebSite=10, Person=6
+types: Question=1326, Answer=1326, ListItem=960, PropertyValue=750, Organization=236, BreadcrumbList=210, ImageObject=186, FAQPage=180, Product=130, Brand=130, Offer=130, MerchantReturnPolicy=130, Country=130, UnitPriceSpecification=50, BlogPosting=46, PostalAddress=40, ItemList=40, LocalBusiness=30, OpeningHoursSpecification=30, CollectionPage=30, GeoCoordinates=20, ContactPoint=10, WebSite=10, Person=6
 Product nodes: 130, with offers: 130  OK
 
 == (f) Internal links returning 404 (from crawled pages + sitemap document entries)
@@ -114,7 +114,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     en       69    139    1         7     yes    3          1/1  index           —  /en/products/rpet-flex-groove
 200     en       67    144    1         7     yes    3          1/1  index           —  /en/products/solo-flex
 200     en       56    150    1         7     yes    3          1/1  index           —  /en/products/duo
-200     en       56    143    1         7     yes    3          1/1  index           —  /en/products/modular-xl
+200     en       56    146    1         7     yes    3          1/1  index           —  /en/products/modular-xl
 200     en       65    110    1         7     yes    2          0/0  index           —  /en/blog/circular-economy-acoustics
 200     en       70    101    1         7     yes    2          0/0  index           —  /en/blog/office-acoustic-solutions
 200     en       70     99    1         7     yes    2          0/0  index           —  /en/blog/recycled-materials-quality
@@ -123,7 +123,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       20    152    1         7     yes    1          0/0  index         0.0  /nl/products
 200     nl       24    136    1         7     yes    0          0/0  index         0.0  /nl/about
 200     nl       23    139    1         7     yes    0          0/0  index         0.0  /nl/sustainability
-200     nl       45    145    1         7     yes    2          0/0  index         2.2  /nl/where-to-buy
+200     nl       45    145    1         7     yes    2          0/0  index         2.1  /nl/where-to-buy
 200     nl       55    152    1         7     yes    0          0/0  index         0.0  /nl/partner
 200     nl       50    147    1         7     yes    1          0/0  index         0.0  /nl/faq
 200     nl       18     77    1         7     yes    0          0/0  index         0.0  /nl/contact
@@ -144,7 +144,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       62    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-flex-groove
 200     nl       59    152    1         7     yes    3          1/1  index         0.0  /nl/products/solo-flex
 200     nl       53    154    1         7     yes    3          1/1  index         0.0  /nl/products/duo
-200     nl       62    145    1         7     yes    3          1/1  index         0.0  /nl/products/modular-xl
+200     nl       62    147    1         7     yes    3          1/1  index         0.0  /nl/products/modular-xl
 200     nl       60    145    1         0     yes    3          0/0  index         0.0  /nl/blog/pet-vilt-of-houten-akoestische-panelen
 200     nl       63    155    1         0     yes    3          0/0  index         0.0  /nl/blog/nagalmtijd-klaslokaal-normen
 200     nl       64    154    1         0     yes    3          0/0  index         0.0  /nl/blog/hoeveel-akoestische-panelen-nodig
@@ -159,7 +159,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       19    147    1         7     yes    1          0/0  index         0.0  /fr/products
 200     fr       31    148    1         7     yes    0          0/0  index         0.0  /fr/about
 200     fr       21    153    1         7     yes    0          0/0  index         0.0  /fr/sustainability
-200     fr       38    154    1         7     yes    2          0/0  index         2.0  /fr/where-to-buy
+200     fr       38    154    1         7     yes    2          0/0  index         1.9  /fr/where-to-buy
 200     fr       62    151    1         7     yes    0          0/0  index         0.0  /fr/partner
 200     fr       35    154    1         7     yes    1          0/0  index         0.0  /fr/faq
 200     fr       25     80    1         7     yes    0          0/0  index         0.0  /fr/contact
@@ -180,7 +180,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       65    149    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-flex-groove
 200     fr       59    154    1         7     yes    3          1/1  index         0.0  /fr/products/solo-flex
 200     fr       58    150    1         7     yes    3          1/1  index         0.0  /fr/products/duo
-200     fr       64    151    1         7     yes    3          1/1  index         0.0  /fr/products/modular-xl
+200     fr       64    155    1         7     yes    3          1/1  index         0.0  /fr/products/modular-xl
 200     fr       82    139    1         7     yes    2          0/0  index         0.0  /fr/blog/circular-economy-acoustics
 200     fr       77    116    1         7     yes    2          0/0  index         0.0  /fr/blog/office-acoustic-solutions
 200     fr       75    131    1         7     yes    2          0/0  index         0.0  /fr/blog/recycled-materials-quality
@@ -189,7 +189,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       19    148    1         7     yes    1          0/0  index         0.0  /de/products
 200     de       24    127    1         7     yes    0          0/0  index         0.0  /de/about
 200     de       25    153    1         7     yes    0          0/0  index         0.0  /de/sustainability
-200     de       45    150    1         7     yes    2          0/0  index         2.2  /de/where-to-buy
+200     de       45    150    1         7     yes    2          0/0  index         2.1  /de/where-to-buy
 200     de       55    149    1         7     yes    0          0/0  index         0.0  /de/partner
 200     de       29    144    1         7     yes    1          0/0  index         0.0  /de/faq
 200     de       18     75    1         7     yes    0          0/0  index         0.0  /de/contact
@@ -210,7 +210,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       64    132    1         7     yes    3          1/1  index         0.0  /de/products/rpet-flex-groove
 200     de       65    150    1         7     yes    3          1/1  index         0.0  /de/products/solo-flex
 200     de       64    154    1         7     yes    3          1/1  index         0.0  /de/products/duo
-200     de       61    149    1         7     yes    3          1/1  index         0.0  /de/products/modular-xl
+200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/modular-xl
 200     de       69    114    1         7     yes    2          0/0  index         0.0  /de/blog/circular-economy-acoustics
 200     de       70    109    1         7     yes    2          0/0  index         0.0  /de/blog/office-acoustic-solutions
 200     de       77    127    1         7     yes    2          0/0  index         0.0  /de/blog/recycled-materials-quality
@@ -219,7 +219,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     es       20    147    1         7     yes    1          0/0  index         0.0  /es/products
 200     es       25    142    1         7     yes    0          0/0  index         0.0  /es/about
 200     es       25    152    1         7     yes    0          0/0  index         0.0  /es/sustainability
-200     es       39    151    1         7     yes    2          0/0  index         1.9  /es/where-to-buy
+200     es       39    151    1         7     yes    2          0/0  index         1.8  /es/where-to-buy
 200     es       63    148    1         7     yes    0          0/0  index         0.0  /es/partner
 200     es       32    153    1         7     yes    1          0/0  index         0.0  /es/faq
 200     es       22     90    1         7     yes    0          0/0  index         0.0  /es/contact
@@ -239,7 +239,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     es       61    145    1         7     yes    3          1/1  index         0.0  /es/products/rpet-flex-groove
 200     es       65    152    1         7     yes    3          1/1  index         0.0  /es/products/solo-flex
 200     es       61    149    1         7     yes    3          1/1  index         0.0  /es/products/duo
-200     es       64    149    1         7     yes    3          1/1  index         0.0  /es/products/modular-xl
+200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/modular-xl
 200     es       76    128    1         7     yes    2          0/0  index         0.0  /es/blog/circular-economy-acoustics
 200     es       75    110    1         7     yes    2          0/0  index         0.0  /es/blog/office-acoustic-solutions
 200     es       77    124    1         7     yes    2          0/0  index         0.0  /es/blog/recycled-materials-quality
@@ -248,7 +248,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       20    155    1         7     yes    1          0/0  index         0.0  /pt/products
 200     pt       27    134    1         7     yes    0          0/0  index         0.0  /pt/about
 200     pt       25    147    1         7     yes    0          0/0  index         0.0  /pt/sustainability
-200     pt       38    152    1         7     yes    2          0/0  index         2.0  /pt/where-to-buy
+200     pt       38    152    1         7     yes    2          0/0  index         1.9  /pt/where-to-buy
 200     pt       62    154    1         7     yes    0          0/0  index         0.0  /pt/partner
 200     pt       32    153    1         7     yes    1          0/0  index         0.0  /pt/faq
 200     pt       23     81    1         7     yes    0          0/0  index         0.0  /pt/contact
@@ -268,7 +268,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       61    141    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-flex-groove
 200     pt       65    147    1         7     yes    3          1/1  index         0.0  /pt/products/solo-flex
 200     pt       63    154    1         7     yes    3          1/1  index         0.0  /pt/products/duo
-200     pt       62    154    1         7     yes    3          1/1  index         0.0  /pt/products/modular-xl
+200     pt       62    153    1         7     yes    3          1/1  index         0.0  /pt/products/modular-xl
 200     pt       71    133    1         7     yes    2          0/0  index         0.0  /pt/blog/circular-economy-acoustics
 200     pt       69    112    1         7     yes    2          0/0  index         0.0  /pt/blog/office-acoustic-solutions
 200     pt       73    117    1         7     yes    2          0/0  index         0.0  /pt/blog/recycled-materials-quality
@@ -277,7 +277,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     da       20    146    1         7     yes    1          0/0  noindex       0.0  /da/products
 200     da       22    131    1         7     yes    0          0/0  noindex       0.0  /da/about
 200     da       24    131    1         7     yes    0          0/0  noindex       0.0  /da/sustainability
-200     da       42    150    1         7     yes    2          0/0  noindex       2.2  /da/where-to-buy
+200     da       42    150    1         7     yes    2          0/0  noindex       2.1  /da/where-to-buy
 200     da       55    153    1         7     yes    0          0/0  noindex       0.0  /da/partner
 200     da       29    146    1         7     yes    1          0/0  noindex       0.0  /da/faq
 200     da       21     71    1         7     yes    0          0/0  noindex       0.0  /da/contact
@@ -297,7 +297,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     da       58    139    1         7     yes    3          1/1  noindex       0.0  /da/products/rpet-flex-groove
 200     da       56    150    1         7     yes    3          1/1  noindex       0.0  /da/products/solo-flex
 200     da       62    152    1         7     yes    3          1/1  noindex       0.0  /da/products/duo
-200     da       59    137    1         7     yes    3          1/1  noindex       0.0  /da/products/modular-xl
+200     da       59    134    1         7     yes    3          1/1  noindex       0.0  /da/products/modular-xl
 200     da       67    110    1         7     yes    2          0/0  noindex       0.0  /da/blog/circular-economy-acoustics
 200     da       63     86    1         7     yes    2          0/0  noindex       0.0  /da/blog/office-acoustic-solutions
 200     da       76    114    1         7     yes    2          0/0  noindex       0.0  /da/blog/recycled-materials-quality
@@ -306,7 +306,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     sv       20    143    1         7     yes    1          0/0  noindex       0.0  /sv/products
 200     sv       22    126    1         7     yes    0          0/0  noindex       0.0  /sv/about
 200     sv       21    122    1         7     yes    0          0/0  noindex       0.0  /sv/sustainability
-200     sv       42    148    1         7     yes    2          0/0  noindex       2.2  /sv/where-to-buy
+200     sv       42    148    1         7     yes    2          0/0  noindex       2.1  /sv/where-to-buy
 200     sv       59    151    1         7     yes    0          0/0  noindex       0.0  /sv/partner
 200     sv       29    134    1         7     yes    1          0/0  noindex       0.0  /sv/faq
 200     sv       23     71    1         7     yes    0          0/0  noindex       0.0  /sv/contact
@@ -326,7 +326,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     sv       56    132    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-flex-groove
 200     sv       64    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/solo-flex
 200     sv       62    150    1         7     yes    3          1/1  noindex       0.0  /sv/products/duo
-200     sv       60    146    1         7     yes    3          1/1  noindex       0.0  /sv/products/modular-xl
+200     sv       60    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/modular-xl
 200     sv       65    102    1         7     yes    2          0/0  noindex       0.0  /sv/blog/circular-economy-acoustics
 200     sv       70     86    1         7     yes    2          0/0  noindex       0.0  /sv/blog/office-acoustic-solutions
 200     sv       78    120    1         7     yes    2          0/0  noindex       0.0  /sv/blog/recycled-materials-quality
@@ -335,7 +335,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     no       20    149    1         7     yes    1          0/0  noindex       0.0  /no/products
 200     no       22    129    1         7     yes    0          0/0  noindex       0.0  /no/about
 200     no       20    133    1         7     yes    0          0/0  noindex       0.0  /no/sustainability
-200     no       43    154    1         7     yes    2          0/0  noindex       2.3  /no/where-to-buy
+200     no       43    154    1         7     yes    2          0/0  noindex       2.2  /no/where-to-buy
 200     no       55    150    1         7     yes    0          0/0  noindex       0.0  /no/partner
 200     no       30    141    1         7     yes    1          0/0  noindex       0.0  /no/faq
 200     no       22     69    1         7     yes    0          0/0  noindex       0.0  /no/contact
@@ -355,7 +355,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     no       59    141    1         7     yes    3          1/1  noindex       0.0  /no/products/rpet-flex-groove
 200     no       57    152    1         7     yes    3          1/1  noindex       0.0  /no/products/solo-flex
 200     no       61    153    1         7     yes    3          1/1  noindex       0.0  /no/products/duo
-200     no       58    148    1         7     yes    3          1/1  noindex       0.0  /no/products/modular-xl
+200     no       58    147    1         7     yes    3          1/1  noindex       0.0  /no/products/modular-xl
 200     no       62    108    1         7     yes    2          0/0  noindex       0.0  /no/blog/circular-economy-acoustics
 200     no       75     86    1         7     yes    2          0/0  noindex       0.0  /no/blog/office-acoustic-solutions
 200     no       77    114    1         7     yes    2          0/0  noindex       0.0  /no/blog/recycled-materials-quality
@@ -364,7 +364,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     is       16    150    1         7     yes    1          0/0  noindex       0.0  /is/products
 200     is       22    130    1         7     yes    0          0/0  noindex       0.0  /is/about
 200     is       21    150    1         7     yes    0          0/0  noindex       0.0  /is/sustainability
-200     is       42    152    1         7     yes    2          0/0  noindex       2.4  /is/where-to-buy
+200     is       42    152    1         7     yes    2          0/0  noindex       2.3  /is/where-to-buy
 200     is       53    133    1         7     yes    0          0/0  noindex       0.0  /is/partner
 200     is       26    135    1         7     yes    1          0/0  noindex       1.5  /is/faq
 200     is       24     80    1         7     yes    0          0/0  noindex       0.0  /is/contact
@@ -384,13 +384,13 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     is       64    138    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-flex-groove
 200     is       60    155    1         7     yes    3          1/1  noindex       0.0  /is/products/solo-flex
 200     is       57    150    1         7     yes    3          1/1  noindex       0.0  /is/products/duo
-200     is       63    153    1         7     yes    3          1/1  noindex       0.0  /is/products/modular-xl
+200     is       63    150    1         7     yes    3          1/1  noindex       0.0  /is/products/modular-xl
 200     is       56    114    1         7     yes    2          0/0  noindex       0.0  /is/blog/circular-economy-acoustics
 200     is       50     92    1         7     yes    2          0/0  noindex       0.0  /is/blog/office-acoustic-solutions
 200     is       61    125    1         7     yes    2          0/0  noindex       0.0  /is/blog/recycled-materials-quality
 200     is       59     69    1         7     yes    2          0/0  noindex       0.0  /is/blog/sound-absorption-explained
 
-== Summary: 300 pages, 1 failures, 159 warnings
+== Summary: 300 pages, 0 failures, 159 warnings
 warn /nl/blog/pet-vilt-of-houten-akoestische-panelen: single-locale page: no hreflang by design
 warn /nl/blog/nagalmtijd-klaslokaal-normen: single-locale page: no hreflang by design
 warn /nl/blog/hoeveel-akoestische-panelen-nodig: single-locale page: no hreflang by design

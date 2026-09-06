@@ -39,7 +39,7 @@
     "duoTitle": "Duo — cabine acoustique 2 personnes & phone box | Re-Sound",
     "duoDescription": "Cabine acoustique deux personnes, deux configurations : Flex accueille deux personnes en réunion, Work offre un bureau pleine largeur. 2 m², ventilée.",
     "modularXlTitle": "Modular XL — pod de réunion acoustique 6–10 personnes | Re-Sound",
-    "modularXlDescription": "Pod de réunion acoustique pour 6 à 10 personnes : base extensible par segments de 90 cm, réduction de 25,9 dB(A), équipement A/V complet, accès facile.",
+    "modularXlDescription": "Pod de réunion acoustique pour 6 à 10 personnes : base extensible par segments de 90 cm, réduction de 25,9 dB(A), équipement A/V complet, porte sans seuil.",
     "partnerTitle": "Programme partenaire · programme trade et revendeur",
     "partnerDescription": "Programme partenaire Re-Sound pour architectes, designers, revendeurs et distributeurs en Europe : documentation, protection régionale, support direct.",
     "whereToBuyTitle": "Où voir et acheter Re-Sound",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Accès sans seuil",
-        "desc": "Seuil plat et largeur de porte libre de 90 cm conformes aux recommandations européennes d'accessibilité pour les locaux de bureaux."
+        "desc": "Seuil plat et largeur de porte libre de 90 cm."
       },
       "safety": {
         "title": "Testée selon les normes",
@@ -3357,8 +3357,8 @@
         "desc": "LED variable chaud/froid adaptée aux visioconférences. Éclairage uniforme des deux visages en mode Flex — pas d'yeux ombrés."
       },
       "accessibility": {
-        "title": "Accès large sans seuil",
-        "desc": "Largeur de porte libre de 100 cm — conforme aux recommandations européennes d'accessibilité et compatible avec les fauteuils roulants. Seuil plat."
+        "title": "Porte large sans seuil",
+        "desc": "Largeur de porte libre de 100 cm et seuil plat."
       },
       "safety": {
         "title": "Testée selon les normes",
@@ -3467,7 +3467,7 @@
       "feature1": "Module de base accueille jusqu'à 6 personnes assises",
       "feature2": "Segments de 90 cm prolongent la cabine jusqu'à 10",
       "feature3": "Réduction de la parole de 25,9 dB(A) — classe salle de réunion",
-      "feature4": "Équipement A/V complet et entrée pensée pour l'accessibilité"
+      "feature4": "Équipement A/V complet et porte large sans seuil"
     },
     "acoustics": {
       "tag": "PERFORMANCE ACOUSTIQUE",
@@ -3520,8 +3520,8 @@
         "desc": "LED variable chaud/froid avec zones séparées pour les écrans et l'écriture. Pilotable depuis le panneau mural."
       },
       "accessibility": {
-        "title": "Accessible aux fauteuils roulants",
-        "desc": "Largeur de porte libre de 110 cm et seuil plat compatibles avec les fauteuils roulants. L'aménagement intérieur réserve une place pour un participant en fauteuil à la table."
+        "title": "Porte large sans seuil",
+        "desc": "Largeur de porte libre de 110 cm et seuil plat."
       },
       "safety": {
         "title": "Testée selon les normes",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Lun–ven, 08h00–16h30 · sur rendez-vous",
       "languagesLabel": "Langues",
       "languagesValue": "Néerlandais, polonais, ukrainien, russe, anglais",
-      "contactLabel": "Contact"
+      "contactLabel": "Contact",
+      "phoneLabel": "Téléphone"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Quel pod de réunion convient à six personnes ou plus ?",
-          "answer": "Modular XL : l'unité de base accueille six personnes et chaque segment de 90 cm augmente la capacité jusqu'à dix, avec des préparations A/V et une entrée accessible."
+          "answer": "Modular XL : l'unité de base accueille six personnes et chaque segment de 90 cm augmente la capacité jusqu'à dix, avec des préparations A/V et une porte large sans seuil."
         },
         "q5": {
           "question": "Quels sont le délai de livraison et la garantie d'une cabine téléphonique ?",

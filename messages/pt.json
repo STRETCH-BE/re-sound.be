@@ -39,7 +39,7 @@
     "duoTitle": "Duo — Cabine Telefónica de Escritório para 2 Pessoas | Re-Sound",
     "duoDescription": "Cabine de escritório para 2 pessoas, 2 configurações: Flex acomoda duas para reunir, Work dá a uma pessoa uma secretária completa. 2 m², 230 V, ventilada.",
     "modularXlTitle": "Modular XL — Pod de Reuniões Acústico, 6–10 Pessoas | Re-Sound",
-    "modularXlDescription": "Pod de reuniões acústico para 6 a 10 pessoas: base ampliável em segmentos de 90 cm, redução de voz 25,9 dB(A), provisões A/V completas, entrada acessível.",
+    "modularXlDescription": "Pod de reuniões acústico para 6 a 10 pessoas: base ampliável em segmentos de 90 cm, redução de voz 25,9 dB(A), provisões A/V completas, porta sem degrau.",
     "partnerTitle": "Programa de parceiros · programa trade e revendedor",
     "partnerDescription": "Programa de parceiros Re-Sound para arquitetos, designers, revendedores e distribuidores na Europa: documentação técnica, proteção regional, apoio direto.",
     "whereToBuyTitle": "Onde ver e comprar Re-Sound",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Entrada sem degrau",
-        "desc": "Soleira plana e 90 cm de largura livre cumprem as recomendações europeias de acessibilidade para escritórios."
+        "desc": "Soleira plana e 90 cm de largura livre de porta."
       },
       "safety": {
         "title": "Testada segundo norma",
@@ -3357,8 +3357,8 @@
         "desc": "LED dimerizável quente/frio adequada a videochamadas. Iluminação uniforme dos dois rostos no modo Flex — sem sombras nos olhos."
       },
       "accessibility": {
-        "title": "Entrada larga sem degrau",
-        "desc": "100 cm de largura livre de porta — cumpre as recomendações europeias de acessibilidade e admite cadeiras de rodas. Soleira plana."
+        "title": "Porta larga sem degrau",
+        "desc": "100 cm de largura livre de porta e soleira plana."
       },
       "safety": {
         "title": "Testada segundo norma",
@@ -3467,7 +3467,7 @@
       "feature1": "Módulo base acomoda até 6 pessoas sentadas",
       "feature2": "Segmentos de 90 cm estendem a cabine até 10",
       "feature3": "Redução de voz de 25,9 dB(A) — classe sala de reuniões",
-      "feature4": "Equipamento A/V completo e entrada acessível por design"
+      "feature4": "Equipamento A/V completo e porta larga sem degrau"
     },
     "acoustics": {
       "tag": "DESEMPENHO ACÚSTICO",
@@ -3520,8 +3520,8 @@
         "desc": "LED dimerizável quente/frio com zonas separadas para tarefas de ecrã e de escrita. Controlável a partir do painel de parede."
       },
       "accessibility": {
-        "title": "Acessível a cadeiras de rodas",
-        "desc": "110 cm de largura livre de porta e soleira plana são compatíveis com cadeiras de rodas. A distribuição interior reserva lugar para um utilizador em cadeira na mesa."
+        "title": "Porta larga sem degrau",
+        "desc": "110 cm de largura livre de porta e soleira plana."
       },
       "safety": {
         "title": "Testada segundo norma",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Seg–Sex, 08:00–16:30 · mediante marcação",
       "languagesLabel": "Idiomas",
       "languagesValue": "Neerlandês, polaco, ucraniano, russo, inglês",
-      "contactLabel": "Contacto"
+      "contactLabel": "Contacto",
+      "phoneLabel": "Telefone"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Que pod de reuniões acomoda seis pessoas ou mais?",
-          "answer": "A Modular XL: a unidade base acomoda seis pessoas e cada segmento de 90 cm aumenta a capacidade até dez, com pré-instalação A/V e uma entrada acessível."
+          "answer": "A Modular XL: a unidade base acomoda seis pessoas e cada segmento de 90 cm aumenta a capacidade até dez, com pré-instalação A/V e uma porta larga sem degrau."
         },
         "q5": {
           "question": "Qual é o prazo de entrega e a garantia de uma cabine telefónica?",

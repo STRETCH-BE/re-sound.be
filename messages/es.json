@@ -39,7 +39,7 @@
     "duoTitle": "Duo — Cabina telefónica de oficina para 2 personas | Re-Sound",
     "duoDescription": "Cabina telefónica de oficina con dos configuraciones: Flex sienta a dos para reunirse, Work da a una persona una mesa amplia. 2 m², 230 V, ventilada.",
     "modularXlTitle": "Modular XL — Pod de reuniones acústico, 6–10 personas | Re-Sound",
-    "modularXlDescription": "Pod de reuniones acústico para 6 a 10 personas: base ampliable en segmentos de 90 cm, 25,9 dB(A) de reducción de voz, A/V completo, acceso accesible.",
+    "modularXlDescription": "Pod de reuniones acústico para 6 a 10 personas: base ampliable en segmentos de 90 cm, 25,9 dB(A) de reducción de voz, A/V completo, puerta sin escalón.",
     "partnerTitle": "Programa de partners · programa trade y distribuidor",
     "partnerDescription": "Programa de partners Re-Sound para arquitectos, diseñadores y distribuidores en Europa: documentación técnica, protección regional, soporte directo.",
     "whereToBuyTitle": "Dónde ver y comprar Re-Sound",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Entrada sin escalón",
-        "desc": "Umbral plano y 90 cm de anchura libre cumplen las recomendaciones europeas de accesibilidad para oficinas."
+        "desc": "Umbral plano y 90 cm de anchura libre de puerta."
       },
       "safety": {
         "title": "Probada según norma",
@@ -3357,8 +3357,8 @@
         "desc": "LED regulable cálido/frío apta para videollamadas. Iluminación uniforme de ambos rostros en modo Flex — sin sombras bajo los ojos."
       },
       "accessibility": {
-        "title": "Entrada ancha sin escalón",
-        "desc": "100 cm de anchura libre de puerta — cumple las recomendaciones europeas de accesibilidad y permite sillas de ruedas. Umbral plano."
+        "title": "Puerta ancha sin escalón",
+        "desc": "100 cm de anchura libre de puerta y umbral plano."
       },
       "safety": {
         "title": "Probada según norma",
@@ -3467,7 +3467,7 @@
       "feature1": "Módulo base acomoda hasta 6 personas sentadas",
       "feature2": "Segmentos de 90 cm extienden la cabina hasta 10",
       "feature3": "Reducción de voz de 25,9 dB(A) — categoría sala de reuniones",
-      "feature4": "Equipamiento A/V completo y entrada accesible por diseño"
+      "feature4": "Equipamiento A/V completo y puerta ancha sin escalón"
     },
     "acoustics": {
       "tag": "RENDIMIENTO ACÚSTICO",
@@ -3520,8 +3520,8 @@
         "desc": "LED regulable cálido/frío con zonas separadas para tareas de pantalla y de escritura. Controlable desde el panel de pared."
       },
       "accessibility": {
-        "title": "Accesible para sillas de ruedas",
-        "desc": "110 cm de anchura libre de puerta y umbral plano son compatibles con sillas de ruedas. La distribución interior reserva espacio para una persona en silla en la mesa."
+        "title": "Puerta ancha sin escalón",
+        "desc": "110 cm de anchura libre de puerta y umbral plano."
       },
       "safety": {
         "title": "Probada según norma",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Lun–Vie, 08:00–16:30 · con cita previa",
       "languagesLabel": "Idiomas",
       "languagesValue": "Neerlandés, polaco, ucraniano, ruso, inglés",
-      "contactLabel": "Contacto"
+      "contactLabel": "Contacto",
+      "phoneLabel": "Teléfono"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "¿Qué pod de reuniones admite seis personas o más?",
-          "answer": "Modular XL: la unidad base tiene capacidad para seis personas y cada segmento de 90 cm amplía la capacidad hasta diez, con preinstalación A/V y acceso adaptado."
+          "answer": "Modular XL: la unidad base tiene capacidad para seis personas y cada segmento de 90 cm amplía la capacidad hasta diez, con preinstalación A/V y una puerta ancha sin escalón."
         },
         "q5": {
           "question": "¿Cuáles son el plazo de entrega y la garantía de una cabina telefónica?",

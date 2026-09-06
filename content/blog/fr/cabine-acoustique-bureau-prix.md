@@ -17,12 +17,12 @@ heroImageMissing: "/images/blog/cabine-acoustique-bureau-prix.jpg"
 heroAlt: "Cabine acoustique Solo Flex avec bureau assis-debout installée dans un bureau ouvert"
 internalLinks: ["/fr/products/solo-flex","/fr/products/duo","/fr/products/modular-xl","/fr/products/cabines-acoustiques","/fr/products/panneaux-acoustiques-pet","/fr/where-to-buy","/fr/contact","/fr/guides/prix-cabines-acoustiques"]
 cta: "Demandez un devis pour Solo Flex ou commandez notre kit d'échantillons."
-sources: "ISO 23351-1:2020 ; ISO 22955 et ISO 3382-3 ; données produit Re-Sound ; prix du marché septembre 2026 : mute-labs.com (SOLO, 2 990 € net), workwithisland.com (Island Solo, 3 990 € hors TVA), brandnewoffice.be (BNO Booth, 9 320 € hors TVA)."
-faq: [{"question":"Combien coûte une cabine acoustique de bureau en 2026 ?","answer":"Pour une cabine individuelle, les prix publics relevés en septembre 2026 chez d'autres marques vont de 2 990 € net (SOLO de mute-labs) à 9 320 € hors TVA (BNO Booth). Solo Flex de Re-Sound coûte 2 740 € hors TVA sans pose et 3 605 € hors TVA pose comprise."},{"question":"Une cabine acoustique de classe C est-elle assez silencieuse ?","answer":"Pour téléphoner et tenir des visioconférences dans un bureau ouvert, oui : à environ 24 dB(A) de réduction, vos collègues perçoivent un murmure lointain, mais aucun mot. Pour une réunion confidentielle près d'un plateau très occupé, choisissez une classe supérieure ou un local fermé ; vérifiez l'exigence exacte avec votre acousticien."},{"question":"En combien de temps une cabine acoustique est-elle installée ?","answer":"Quatre à six semaines pour une configuration standard. Deux personnes montent Solo Flex en moins de trois heures ; si notre équipe pose la cabine, comptez environ une heure pour une cabine individuelle, deux heures pour une cabine de réunion et deux à six heures pour un Modular XL."}]
+sources: "ISO 23351-1:2020 ; ISO 22955 et ISO 3382-3 ; données produit Re-Sound ; prix publics de trois concurrents, septembre 2026 (2 990 € net, 3 990 € et 9 320 € hors TVA pour une cabine individuelle)."
+faq: [{"question":"Combien coûte une cabine acoustique de bureau en 2026 ?","answer":"Pour une cabine individuelle, les prix publics relevés en septembre 2026 chez les concurrents vont de 2 990 € net à 9 320 € hors TVA. Solo Flex de Re-Sound coûte 2 740 € hors TVA sans pose et 3 605 € hors TVA pose comprise."},{"question":"Une cabine acoustique de classe C est-elle assez silencieuse ?","answer":"Pour téléphoner et tenir des visioconférences dans un bureau ouvert, oui : à environ 24 dB(A) de réduction, vos collègues perçoivent un murmure lointain, mais aucun mot. Pour une réunion confidentielle près d'un plateau très occupé, choisissez une classe supérieure ou un local fermé ; vérifiez l'exigence exacte avec votre acousticien."},{"question":"En combien de temps une cabine acoustique est-elle installée ?","answer":"Quatre à six semaines pour une configuration standard. Deux personnes montent Solo Flex en moins de trois heures ; si notre équipe pose la cabine, comptez environ une heure pour une cabine individuelle, deux heures pour une cabine de réunion et deux à six heures pour un Modular XL."}]
 draft: true
 status: "Review"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
-wordCount: 1388
+wordCount: 1383
 ---
 
 **Une cabine acoustique de bureau coûte chez Re-Sound à partir de 2 740 € hors TVA sans pose, ou 3 605 € hors TVA pose comprise.** C'est le prix de [Solo Flex](/fr/products/solo-flex), notre cabine pour une personne, avec bureau assis-debout, ventilation, éclairage et prise de courant. Ce guide détaille ce que couvre ce montant, comment choisir la taille, ce que valent les classes ISO 23351-1 et à quoi veiller au placement. Par le fabricant, sans marge d'intermédiaire.
@@ -31,18 +31,18 @@ wordCount: 1388
 
 En septembre 2026, une cabine téléphonique de bureau pour une personne se vend de moins de 3 000 € à plus de 9 000 € hors TVA :
 
-| Cabine | Marque | Prix hors TVA |
+| Cabine | Fournisseur | Prix hors TVA |
 |---|---|---|
 | Solo Flex | Re-Sound | 2 740 € sans pose · 3 605 € pose comprise |
-| SOLO | mute-labs | 2 990 € net |
-| Island Solo | Work With Island | 3 990 € hors TVA |
-| BNO Booth | Brand New Office | 9 320 € hors TVA |
+| Cabine individuelle | Concurrent 1 | 2 990 € net |
+| Cabine individuelle | Concurrent 2 | 3 990 € hors TVA |
+| Cabine individuelle | Concurrent 3 | 9 320 € hors TVA |
 
 Prix Re-Sound hors transport pour les livraisons en dehors de la Belgique.
 
 Solo Flex figure parmi les moins chères, avec un équipement digne du haut du tableau, parce que nous la construisons nous-mêmes. Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne).
 
-Pour deux personnes, [Duo](/fr/products/duo) se chiffre sur devis. Pour six à dix personnes, [Modular XL](/fr/products/modular-xl) démarre à 15 000 € hors TVA sans pose ou 17 990 € hors TVA pose comprise, plus 7 264 € par élément supplémentaire de 90 cm, pose comprise : avec un élément de plus, 17 990 € + 7 264 € = 25 254 € hors TVA.
+Pour deux personnes, [Duo](/fr/products/duo) est disponible dès 7 615 € hors TVA. Pour six à dix personnes, [Modular XL](/fr/products/modular-xl) démarre à 15 000 € hors TVA sans pose ou 17 990 € hors TVA pose comprise, plus 7 264 € par élément supplémentaire de 90 cm, pose comprise : avec un élément de plus, 17 990 € + 7 264 € = 25 254 € hors TVA.
 
 ## Ce que comprend le prix (et ce qu'il ne comprend pas)
 
@@ -110,7 +110,7 @@ Testez nos cabines dans notre salle d'exposition de Beveren-Waas (Gentseweg 309 
 ## Questions fréquentes
 
 **Combien coûte une cabine acoustique de bureau en 2026 ?**
-Pour une cabine individuelle, les prix publics relevés en septembre 2026 chez d'autres marques vont de 2 990 € net (SOLO de mute-labs) à 9 320 € hors TVA (BNO Booth). Solo Flex de Re-Sound coûte 2 740 € hors TVA sans pose et 3 605 € hors TVA pose comprise.
+Pour une cabine individuelle, les prix publics relevés en septembre 2026 chez les concurrents vont de 2 990 € net à 9 320 € hors TVA. Solo Flex de Re-Sound coûte 2 740 € hors TVA sans pose et 3 605 € hors TVA pose comprise.
 
 **Une cabine acoustique de classe C est-elle assez silencieuse ?**
 Pour téléphoner et tenir des visioconférences dans un bureau ouvert, oui : à environ 24 dB(A) de réduction, vos collègues perçoivent un murmure lointain, mais aucun mot. Pour une réunion confidentielle près d'un plateau très occupé, choisissez une classe supérieure ou un local fermé ; vérifiez l'exigence exacte avec votre acousticien.
@@ -118,4 +118,4 @@ Pour téléphoner et tenir des visioconférences dans un bureau ouvert, oui : à
 **En combien de temps une cabine acoustique est-elle installée ?**
 Quatre à six semaines pour une configuration standard. Deux personnes montent Solo Flex en moins de trois heures ; si notre équipe pose la cabine, comptez environ une heure pour une cabine individuelle, deux heures pour une cabine de réunion et deux à six heures pour un Modular XL.
 
-*Sources : ISO 23351-1:2020 ; ISO 22955 et ISO 3382-3 ; données produit Re-Sound ; prix du marché septembre 2026 : mute-labs.com (SOLO, 2 990 € net), workwithisland.com (Island Solo, 3 990 € hors TVA), brandnewoffice.be (BNO Booth, 9 320 € hors TVA).*
+*Sources : ISO 23351-1:2020 ; ISO 22955 et ISO 3382-3 ; données produit Re-Sound ; prix publics de trois concurrents, septembre 2026 (2 990 € net, 3 990 € et 9 320 € hors TVA pour une cabine individuelle).*

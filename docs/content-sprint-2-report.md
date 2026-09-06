@@ -214,3 +214,13 @@ guide description was shortened to 153 characters.
 
 Not done in this sprint (workbook Backlog): technical pages, case studies,
 application pages, dealer list, directory listings.
+
+## Follow-up (6 September 2026)
+
+Michael's answers to needs-Michael items 1–13 were applied in one commit on
+top of the sprint (see the table at the top of `docs/needs-michael.md`):
+door wording without accessibility claims, Duo from € 7 615 excl. VAT
+(Offer, guide, FAQ-003, booth posts), FAQ-007 "Can we try a booth before we
+order? Yes", rWood Groove B-s1,d0, Interior per set, competitor brand names
+removed from the booth posts, Częstochowa phone numbers. After this the
+check reports 0 failures.

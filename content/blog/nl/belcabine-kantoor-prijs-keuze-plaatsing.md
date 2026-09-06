@@ -18,10 +18,10 @@ heroImageMissing: "/images/blog/belcabine-kantoor-prijs.jpg"
 heroAlt: "Solo Flex belcabine met zit-stabureau in een open kantoor"
 internalLinks: ["/nl/products/akoestische-belcabines","/nl/products/solo-flex","/nl/products/duo","/nl/products/modular-xl","/nl/guides/prijzen-belcabines","/nl/where-to-buy"]
 cta: "Vraag een offerte voor Solo Flex"
-sources: "ISO 23351-1:2020 (spraakniveaureductie van gesloten kantoorcabines); productgegevens Re-Sound Solo Flex, Duo en Modular XL; marktprijzen september 2026: mute-labs.com (SOLO, € 2.990 netto), workwithisland.com (Island Solo, € 3.990 excl. btw), brandnewoffice.be (BNO Booth, € 9.320 excl. btw)."
+sources: "ISO 23351-1:2020 (spraakniveaureductie van gesloten kantoorcabines); productgegevens Re-Sound Solo Flex, Duo en Modular XL; prijzen van drie concurrenten, september 2026 (€ 2.990 netto, € 3.990 en € 9.320 excl. btw voor een eenpersoonscabine)."
 faq: [{"question":"Wat kost een belcabine voor kantoor gemiddeld?","answer":"In 2026 betaal je voor een eenpersoonscabine van een fabrikant € 3.000 à € 5.000 excl. btw; instapmodellen zitten rond € 2.000 à € 3.000, premium- en dealerprijzen tussen € 8.000 en € 12.000. Solo Flex van Re-Sound kost € 2.740 excl. btw zonder plaatsing en € 3.605 excl. btw met plaatsing."},{"question":"Is een belcabine van klasse C stil genoeg?","answer":"Voor bellen en videocalls in een open kantoor wel: bij ongeveer 24 dB(A) reductie horen collega's nog gemompel van ver, maar geen woorden. Voor vertrouwelijke vergaderingen naast een drukke vloer kies je een hogere klasse of een gesloten ruimte."},{"question":"Hoe snel staat een belcabine in mijn kantoor?","answer":"Vier tot zes weken voor een standaardconfiguratie; maatwerk in stof of afwerking vraagt twee tot drie weken extra. De montage duurt minder dan drie uur met twee personen, of wij plaatsen ze voor je."}]
 draft: false
-wordCount: 1423
+wordCount: 1421
 ---
 
 **Een [belcabine](/nl/products/akoestische-belcabines) voor kantoor kost bij Re-Sound vanaf € 2.740 excl. btw zonder plaatsing, of € 3.605 excl. btw inclusief plaatsing.** Dat is de prijs van [Solo Flex](/nl/products/solo-flex), onze cabine voor één persoon, met zit-stabureau, ventilatie, verlichting en stroom inbegrepen. In dit artikel lees je wat je voor dat bedrag krijgt, hoe je de juiste maat kiest, wat de akoestische klassen van ISO 23351-1 betekenen en waar je op let bij de plaatsing. Geschreven door de fabrikant, dus zonder tussenhandel in de prijs.
@@ -31,12 +31,12 @@ wordCount: 1423
 De markt voor belcabines loopt in september 2026 uiteen van ongeveer € 2.000 tot meer dan € 10.000 per cabine voor één persoon. Grofweg zie je drie lagen:
 
 - **Instapmodellen en importcabines**: € 2.000 à € 3.000 excl. btw. Vaak zonder eigen ventilatie of met een dunne wandopbouw; de akoestische klasse wordt zelden vermeld.
-- **Fabrikanten met een eigen ontwerp**: € 3.000 à € 5.000 excl. btw. Ter vergelijking: een Duitse fabrikant vraagt voor zijn eenpersoonscabine € 2.990 netto, een Franse fabrikant € 3.990 excl. btw.
-- **Premium en dealerprijzen**: € 8.000 à € 12.000 excl. btw. Een Belgische kantoorinrichter biedt zijn eenpersoonscabine aan voor € 9.320 excl. btw, plaatsing inbegrepen.
+- **Fabrikanten met een eigen ontwerp**: € 3.000 à € 5.000 excl. btw. Ter vergelijking: concurrenten vragen voor een eenpersoonscabine € 2.990 netto tot € 3.990 excl. btw.
+- **Premium en dealerprijzen**: € 8.000 à € 12.000 excl. btw. Een andere concurrent biedt zijn eenpersoonscabine aan voor € 9.320 excl. btw, plaatsing inbegrepen.
 
 Solo Flex zit met **€ 2.740 excl. btw (zonder plaatsing)** of **€ 3.605 excl. btw (met plaatsing)** in de tweede laag, met een uitrusting die je normaal alleen in de derde laag vindt. Dat kan omdat we de cabine zelf bouwen: Re-Sound is een merk van Stretch Group en produceert in eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
 
-Voor twee personen ([Duo](/nl/products/duo)) en voor vergaderpods tot tien personen ([Modular XL](/nl/products/modular-xl)) werken we met een offerte op maat, omdat de configuratie (bureau, zitplaatsen, A/V) de prijs bepaalt.
+Voor twee personen start [Duo](/nl/products/duo) vanaf € 7.615 excl. btw; voor vergaderpods tot tien personen ([Modular XL](/nl/products/modular-xl)) werken we met een offerte op maat, omdat de configuratie (bureau, zitplaatsen, A/V) de prijs bepaalt.
 
 ## Wat zit er in die prijs (en wat niet)
 
@@ -114,4 +114,4 @@ Voor bellen en videocalls in een open kantoor wel: bij ongeveer 24 dB(A) reducti
 **Hoe snel staat een belcabine in mijn kantoor?**
 Vier tot zes weken voor een standaardconfiguratie; maatwerk in stof of afwerking vraagt twee tot drie weken extra. De montage duurt minder dan drie uur met twee personen, of wij plaatsen ze voor je.
 
-*Bronnen: ISO 23351-1:2020 (spraakniveaureductie van gesloten kantoorcabines); productgegevens Re-Sound Solo Flex, Duo en Modular XL; marktprijzen september 2026: mute-labs.com (SOLO, € 2.990 netto), workwithisland.com (Island Solo, € 3.990 excl. btw), brandnewoffice.be (BNO Booth, € 9.320 excl. btw).*
+*Bronnen: ISO 23351-1:2020 (spraakniveaureductie van gesloten kantoorcabines); productgegevens Re-Sound Solo Flex, Duo en Modular XL; prijzen van drie concurrenten, september 2026 (€ 2.990 netto, € 3.990 en € 9.320 excl. btw voor een eenpersoonscabine).*

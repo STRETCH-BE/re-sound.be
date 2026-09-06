@@ -39,7 +39,7 @@
     "duoTitle": "Duo — kontortelefonboks og fokuspod for 2 personer | Re-Sound",
     "duoDescription": "Kontortelefonboks for to personer med to konfigurasjoner: Flex gir plass til to i møte, Work gir én person et bord i full bredde. 2 m², 230 V, ventilert.",
     "modularXlTitle": "Modular XL — akustisk møtepod for 6–10 personer | Re-Sound",
-    "modularXlDescription": "Akustisk møtepod for 6 til 10 personer: utvid basen i 90 cm-segmenter, 25,9 dB(A) talereduksjon, komplett A/V-tilrettelegging, tilgjengelig inngang.",
+    "modularXlDescription": "Akustisk møtepod for 6 til 10 personer: utvid basen i 90 cm-segmenter, 25,9 dB(A) talereduksjon, komplett A/V-tilrettelegging, bred terskelfri dør.",
     "partnerTitle": "Partnerprogram · trade- og forhandlerprogram",
     "partnerDescription": "Re-Sound partnerprogram for arkitekter, designere, forhandlere og distributører i Europa: prosjekteringsdokumentasjon, regionalt vern, direkte støtte.",
     "whereToBuyTitle": "Hvor du kan se og kjøpe Re-Sound",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Terskelfri tilgang",
-        "desc": "Flat terskel og 90 cm fri dørbredde oppfyller europeiske anbefalinger for tilgjengelighet på kontorer."
+        "desc": "Flat terskel og 90 cm fri dørbredde."
       },
       "safety": {
         "title": "Testet etter norm",
@@ -3357,8 +3357,8 @@
         "desc": "Varm/kald dimbar LED, egnet for videoanrop. Jevn belysning av begge ansikter i Flex-modus — ingen øyenskygger."
       },
       "accessibility": {
-        "title": "Bred terskelfri tilgang",
-        "desc": "100 cm fri dørbredde — oppfyller europeiske anbefalinger for tilgjengelighet og passer rullestoler. Terskelen er flat."
+        "title": "Bred terskelfri dør",
+        "desc": "100 cm fri dørbredde og flat terskel."
       },
       "safety": {
         "title": "Testet etter norm",
@@ -3467,7 +3467,7 @@
       "feature1": "Basismodul rommer opptil 6 sittende personer",
       "feature2": "90 cm-segmenter forlenger båsen opptil 10",
       "feature3": "25,9 dB(A) talereduksjon — møterom-klasse",
-      "feature4": "Fullt A/V-utstyr og tilgjengelig inngang fra design"
+      "feature4": "Fullt A/V-utstyr og bred terskelfri dør"
     },
     "acoustics": {
       "tag": "AKUSTISK YTELSE",
@@ -3520,8 +3520,8 @@
         "desc": "Dimbar varm/kald LED med separate soner for skjerm- og skriveoppgaver. Styres fra veggpanelet."
       },
       "accessibility": {
-        "title": "Rullestolstilgjengelig",
-        "desc": "110 cm fri dørbredde og flat terskel er kompatibel med rullestoler. Det innvendige layoutet gir plass til én rullestolsbruker ved bordet."
+        "title": "Bred terskelfri dør",
+        "desc": "110 cm fri dørbredde og flat terskel."
       },
       "safety": {
         "title": "Testet etter norm",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Man–fre, 08:00–16:30 · etter avtale",
       "languagesLabel": "Språk",
       "languagesValue": "Nederlandsk, polsk, ukrainsk, russisk, engelsk",
-      "contactLabel": "Kontakt"
+      "contactLabel": "Kontakt",
+      "phoneLabel": "Telefon"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Hvilken møtepod passer for seks personer eller flere?",
-          "answer": "Modular XL: grunnenheten har plass til seks, og hvert 90 cm-segment øker kapasiteten opp til ti personer, med A/V-forberedelse og universelt utformet inngang."
+          "answer": "Modular XL: grunnenheten har plass til seks, og hvert 90 cm-segment øker kapasiteten opp til ti personer, med A/V-forberedelse og bred terskelfri dør."
         },
         "q5": {
           "question": "Hva er leveringstiden og garantien for en telefonboks?",

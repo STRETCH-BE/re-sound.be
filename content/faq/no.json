@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hva koster en telefonboks for kontor?",
-    "answer": "Telefonboksen Solo Flex koster fra 2 740 € ekskl. mva uten montering, eller 3 605 € ekskl. mva inkludert montering. Møtepoden Duo prises på forespørsel. Modular XL koster fra 15 000 € ekskl. mva uten montering, eller 17 990 € ekskl. mva inkludert montering, pluss 7 264 € inkludert montering per ekstra 90 cm-element. Den største Modular XL som er bygget så langt, har plass til 20 personer. Prisene er ekskl. transport utenfor Belgia.",
+    "answer": "Telefonboksen Solo Flex koster fra 2 740 € ekskl. mva uten montering, eller 3 605 € ekskl. mva inkludert montering. Møtepoden Duo koster fra 7 615 € ekskl. mva. Modular XL koster fra 15 000 € ekskl. mva uten montering, eller 17 990 € ekskl. mva inkludert montering, pluss 7 264 € inkludert montering per ekstra 90 cm-element. Den største Modular XL som er bygget så langt, har plass til 20 personer. Prisene er ekskl. transport utenfor Belgia.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Kan vi lease eller prøve en boks?",
-    "answer": "Nei, ikke for øyeblikket. Dere er velkommen til å teste boksene våre i showrommet vårt i Beveren-Waas (Belgia) før dere bestiller; besøk skjer etter avtale, mandag til fredag 08:00–16:30.",
+    "question": "Kan vi prøve en boks før vi bestiller?",
+    "answer": "Ja. Dere er velkommen til å teste alle modellene i showrommet vårt i Beveren-Waas (Belgia) før dere bestiller; besøk skjer etter avtale, mandag til fredag 08:00–16:30.",
     "showOn": [
       "guide",
       "faq"

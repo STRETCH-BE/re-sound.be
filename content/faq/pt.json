@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Quanto custa uma cabine telefónica de escritório?",
-    "answer": "A cabine telefónica de escritório Solo Flex parte de 2 740 € sem IVA sem instalação, ou 3 605 € sem IVA com instalação. O pod de reuniões Duo tem preço sob consulta. A Modular XL parte de 15 000 € sem IVA sem instalação, ou 17 990 € sem IVA com instalação, mais 7 264 € com instalação por elemento adicional de 90 cm. A maior Modular XL até hoje acomoda 20 pessoas. Preços sem transporte fora da Bélgica.",
+    "answer": "A cabine Solo Flex parte de 2 740 € sem IVA sem instalação, ou 3 605 € sem IVA com instalação. O pod Duo parte de 7 615 € sem IVA. A Modular XL parte de 15 000 € sem IVA sem instalação, ou 17 990 € sem IVA com instalação, mais 7 264 € com instalação por elemento adicional de 90 cm. A maior Modular XL até hoje acomoda 20 pessoas. Preços sem transporte fora da Bélgica.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Podemos alugar ou experimentar uma cabine?",
-    "answer": "Não, de momento não. Convidamo-lo a testar as nossas cabines no showroom de Beveren-Waas (Bélgica) antes de encomendar; as visitas realizam-se mediante marcação, de segunda a sexta-feira, das 08:00 às 16:30.",
+    "question": "Podemos experimentar uma cabine antes de encomendar?",
+    "answer": "Sim. Convidamo-lo a testar todos os modelos no nosso showroom de Beveren-Waas (Bélgica) antes de encomendar; as visitas realizam-se mediante marcação, de segunda a sexta-feira, das 08:00 às 16:30.",
     "showOn": [
       "guide",
       "faq"

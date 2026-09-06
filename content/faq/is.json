@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hvað kostar símaklefi fyrir skrifstofur?",
-    "answer": "Solo Flex símaklefinn kostar frá 2.740 € án VSK, án uppsetningar, eða 3.605 € án VSK með uppsetningu. Verð á Duo fundarklefanum fæst eftir beiðni. Modular XL kostar frá 15.000 € án VSK, án uppsetningar, eða 17.990 € án VSK með uppsetningu, auk 7.264 € með uppsetningu fyrir hverja 90 cm viðbótareiningu. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns. Flutningur utan Belgíu er ekki innifalinn í verði.",
+    "answer": "Solo Flex símaklefinn kostar frá 2.740 € án VSK, án uppsetningar, eða 3.605 € án VSK með uppsetningu. Duo fundarklefinn kostar frá 7.615 € án VSK. Modular XL kostar frá 15.000 € án VSK, án uppsetningar, eða 17.990 € án VSK með uppsetningu, auk 7.264 € með uppsetningu fyrir hverja 90 cm viðbótareiningu. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns. Flutningur utan Belgíu er ekki innifalinn í verði.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Getum við leigt klefa eða prófað hann tímabundið?",
-    "answer": "Nei, ekki eins og er. Þér er velkomið að prófa klefana okkar í sýningarsal okkar í Beveren-Waas (Belgíu) áður en þú pantar; heimsóknir eru eftir samkomulagi, mánudaga til föstudaga kl. 08:00–16:30.",
+    "question": "Getum við prófað klefa áður en við pöntum?",
+    "answer": "Já. Þér er velkomið að prófa allar gerðir í sýningarsal okkar í Beveren-Waas (Belgíu) áður en þú pantar; heimsóknir eru eftir samkomulagi, mánudaga til föstudaga kl. 08:00–16:30.",
     "showOn": [
       "guide",
       "faq"

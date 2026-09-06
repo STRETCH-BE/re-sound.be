@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "How much does an office phone booth cost?",
-    "answer": "The Solo Flex office phone booth starts from € 2 740 excl. VAT without installation, or € 3 605 excl. VAT including installation. The Duo meeting pod is priced on request. Modular XL starts from € 15 000 excl. VAT without installation, or € 17 990 excl. VAT including installation, plus € 7 264 including installation per extra 90 cm element. The largest Modular XL built so far seats 20 people. Prices exclude transport outside Belgium.",
+    "answer": "The Solo Flex office phone booth starts from € 2 740 excl. VAT without installation, or € 3 605 excl. VAT including installation. The Duo meeting pod starts from € 7 615 excl. VAT. Modular XL starts from € 15 000 excl. VAT without installation, or € 17 990 excl. VAT including installation, plus € 7 264 including installation per extra 90 cm element. The largest Modular XL built so far seats 20 people. Prices exclude transport outside Belgium.",
     "showOn": [
       "booths",
       "guide",
@@ -72,8 +72,8 @@
   {
     "id": "FAQ-007",
     "category": "Booths",
-    "question": "Can we lease or trial a booth?",
-    "answer": "No, not at the moment. You are welcome to test our booths in the showroom in Beveren-Waas (Belgium) before you order; visits are by appointment, Monday to Friday 08:00–16:30.",
+    "question": "Can we try a booth before we order?",
+    "answer": "Yes. You are welcome to test every model in our showroom in Beveren-Waas (Belgium) before you order; visits are by appointment, Monday to Friday 08:00–16:30.",
     "showOn": [
       "guide",
       "faq"

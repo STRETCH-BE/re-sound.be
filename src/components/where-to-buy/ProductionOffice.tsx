@@ -35,6 +35,16 @@ export default async function ProductionOffice({ locale }: { locale: string }) {
             <dd>{t('languagesValue')}</dd>
           </div>
           <div>
+            <dt>{t('phoneLabel')}</dt>
+            <dd>
+              {PRODUCTION_OFFICE.phones.map((p) => (
+                <span key={p.number} className="office-phone">
+                  <a href={`tel:${p.number.replace(/\s+/g, '')}`}>{p.number}</a> ({p.languages})
+                </span>
+              ))}
+            </dd>
+          </div>
+          <div>
             <dt>{t('contactLabel')}</dt>
             <dd>
               <a href={`mailto:${PRODUCTION_OFFICE.email}`}>{PRODUCTION_OFFICE.email}</a>

@@ -39,7 +39,7 @@
     "duoTitle": "Duo – telefonhytt & fokusbås för kontor, 2 personer | Re-Sound",
     "duoDescription": "Telefonhytt för två personer med två konfigurationer: Flex rymmer två vid ett möte, Work ger en person ett bord i full bredd. 2 m², 230 V, ventilerad.",
     "modularXlTitle": "Modular XL – akustiskt mötesbås för 6–10 personer | Re-Sound",
-    "modularXlDescription": "Akustiskt mötesbås för 6 till 10 personer: förläng basen i 90 cm-segment, 25,9 dB(A) talreduktion, kompletta A/V-förberedelser, tillgänglig entré.",
+    "modularXlDescription": "Akustiskt mötesbås för 6 till 10 personer: förläng basen i 90 cm-segment, 25,9 dB(A) talreduktion, kompletta A/V-förberedelser, bred tröskelfri dörr.",
     "partnerTitle": "Partnerprogram · trade- och återförsäljarprogram",
     "partnerDescription": "Re-Sounds partnerprogram för arkitekter, designers, återförsäljare och distributörer i Europa: föreskrivningsunderlag, regionalt skydd, direkt support.",
     "whereToBuyTitle": "Var du kan se och köpa Re-Sound",
@@ -3187,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Tröskelfri tillgång",
-        "desc": "Flat tröskel och 90 cm fri dörrbredd uppfyller europeiska rekommendationer för tillgänglighet på kontor."
+        "desc": "Flat tröskel och 90 cm fri dörrbredd."
       },
       "safety": {
         "title": "Testad enligt norm",
@@ -3357,8 +3357,8 @@
         "desc": "Varm/kall dimbar LED, lämplig för videosamtal. Jämn belysning av båda ansiktena i Flex-läge — inga ögonskuggor."
       },
       "accessibility": {
-        "title": "Bred tröskelfri tillgång",
-        "desc": "100 cm fri dörrbredd — uppfyller europeiska rekommendationer för tillgänglighet och tar rullstolar. Tröskeln är flat."
+        "title": "Bred tröskelfri dörr",
+        "desc": "100 cm fri dörrbredd och flat tröskel."
       },
       "safety": {
         "title": "Testad enligt norm",
@@ -3467,7 +3467,7 @@
       "feature1": "Basmodul rymmer upp till 6 sittande personer",
       "feature2": "90 cm-segment förlänger båset upp till 10",
       "feature3": "25,9 dB(A) talreducering — mötesrumsklass",
-      "feature4": "Fullt A/V-utbud och tillgänglig ingång genom design"
+      "feature4": "Fullt A/V-utbud och bred tröskelfri dörr"
     },
     "acoustics": {
       "tag": "AKUSTISK PRESTANDA",
@@ -3520,8 +3520,8 @@
         "desc": "Dimbar varm/kall LED med separata zoner för skärm- och skrivuppgifter. Styrs från väggpanelen."
       },
       "accessibility": {
-        "title": "Rullstolstillgänglig",
-        "desc": "110 cm fri dörrbredd och flat tröskel är kompatibel med rullstolar. Den invändiga layouten lämnar plats för en rullstolsanvändare vid bordet."
+        "title": "Bred tröskelfri dörr",
+        "desc": "110 cm fri dörrbredd och flat tröskel."
       },
       "safety": {
         "title": "Testad enligt norm",
@@ -3852,7 +3852,8 @@
       "hoursValue": "Mån–fre, 08:00–16:30 · efter överenskommelse",
       "languagesLabel": "Språk",
       "languagesValue": "Nederländska, polska, ukrainska, ryska, engelska",
-      "contactLabel": "Kontakt"
+      "contactLabel": "Kontakt",
+      "phoneLabel": "Telefon"
     }
   },
   "manufacturer": {
@@ -4131,7 +4132,7 @@
         },
         "q4": {
           "question": "Vilket mötesbås rymmer sex personer eller fler?",
-          "answer": "Modular XL: basenheten rymmer sex personer och varje segment om 90 cm ökar kapaciteten upp till tio, med förberedelse för A/V och en tillgänglighetsanpassad entré."
+          "answer": "Modular XL: basenheten rymmer sex personer och varje segment om 90 cm ökar kapaciteten upp till tio, med förberedelse för A/V och en bred tröskelfri dörr."
         },
         "q5": {
           "question": "Vad är leveranstiden och garantin för en telefonhytt?",
