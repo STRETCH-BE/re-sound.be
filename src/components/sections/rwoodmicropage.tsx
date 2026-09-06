@@ -186,7 +186,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                   className={`finish-option ${selectedFinish?.id === finish.id ? 'active' : ''}`}
                   onClick={() => handleFinishSelect(finish)}
                   title={finish.name}
-                  aria-label={`Select ${finish.name} finish`}
+                  aria-label={tPage('a11y.selectFinish', { name: finish.name })}
                 >
                   {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
                   <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
@@ -223,7 +223,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-micro/overview-detail.webp"
-                alt="rWood - Micro panel close-up showing invisible perforations"
+                alt={t('alt.rwoodMicroPanelCloseUpShowingInvisiblePerforations')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -433,7 +433,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-micro/surface-detail.jpg"
-                alt="Micro-perforated wood panel surface detail"
+                alt={t('alt.microPerforatedWoodPanelSurfaceDetail')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -653,7 +653,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-micro/installation-detail.jpg"
-                alt="rWood - Micro panel installation system"
+                alt={t('alt.rwoodMicroPanelInstallationSystem')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -670,7 +670,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-micro/bespoke.jpg"
-                alt="Backlit micro-perforated panel creating light effect"
+                alt={t('alt.backlitMicroPerforatedPanelCreatingLightEffect')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -754,7 +754,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-micro/FSC_sustainability.webp"
-                alt="Sustainable production"
+                alt={t('alt.sustainableProduction')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}

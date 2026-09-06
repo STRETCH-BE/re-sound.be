@@ -126,7 +126,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={selectedColor.image}
-                alt={`Re-Sound Divide acoustic room divider in ${selectedColor.name}`}
+                alt={t('alt.heroInColour', { colour: selectedColor.name })}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -151,7 +151,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
                   className={`color-option ${selectedColor.id === color.id ? 'active' : ''}`}
                   onClick={() => handleColorSelect(color)}
                   title={color.name}
-                  aria-label={`Select ${color.name} color`}
+                  aria-label={tPage('a11y.selectColour', { name: color.name })}
                 >
                   {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
                   <Image src={color.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="color-swatch" style={{ objectFit: 'cover' }} />
@@ -188,7 +188,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             <div className="image-container">
               <Image
                 src="/images/products/divide/overview.webp"
-                alt="Divide acoustic room divider"
+                alt={t('alt.divideAcousticRoomDivider')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -256,7 +256,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             <div className="image-container">
               <Image
                 src="/images/products/divide/integrated-base.webp"
-                alt="Divide integrated base detail"
+                alt={t('alt.divideIntegratedBaseDetail')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -273,7 +273,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             <div className="image-container">
               <Image
                 src="/images/products/divide/magnetic-connection.webp"
-                alt="Magnetic connection detail"
+                alt={t('alt.magneticConnectionDetail')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -356,7 +356,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             <div className="image-container">
               <Image
                 src="/images/products/divide/modular.webp"
-                alt="Modular configurations"
+                alt={t('alt.modularConfigurations')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -375,7 +375,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
                   closest existing product shot for this section. */}
               <Image
                 src="/images/products/divide/divide_card.webp"
-                alt="Divide room divider made from recycled textile fibres"
+                alt={t('alt.divideRoomDividerMadeFromRecycledTextileFibres')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -427,7 +427,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             <div className="divider-panel">
               <Image
                 src="/images/products/divide/panel-section.png"
-                alt="Divide panel cross-section"
+                alt={t('alt.dividePanelCrossSection')}
                 width={80}
                 height={200}
                 style={{ objectFit: 'contain' }}

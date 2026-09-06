@@ -199,7 +199,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
                   className={`color-option ${selectedColor?.id === color.id ? 'active' : ''}`}
                   onClick={() => handleColorSelect(color)}
                   title={color.name}
-                  aria-label={`Select ${color.name} color`}
+                  aria-label={tPage('a11y.selectColour', { name: color.name })}
                 >
                   <span 
                     className="color-swatch" 
@@ -238,7 +238,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rpet-panel/overview-recycled.jpg"
-                alt="rPET - Panel recycled PET bottles transformation"
+                alt={t('alt.rpetPanelRecycledPetBottlesTransformation')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -395,7 +395,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               <div className="image-container">
                 <Image
                   src="/images/products/rpet-panel/gallery-1.webp"
-                  alt="PET Acoustic walls in meeting pod"
+                  alt={t('alt.petAcousticWallsInMeetingPod')}
                   fill
                   sizes="(max-width: 1024px) 100vw, 600px"
                   style={{ objectFit: 'cover' }}
@@ -407,7 +407,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               <div className="image-container">
                 <Image
                   src="/images/products/rpet-panel/gallery-3.webp"
-                  alt="Ceiling panels and table divider"
+                  alt={t('alt.ceilingPanelsAndTableDivider')}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px"
                   style={{ objectFit: 'cover' }}
@@ -419,7 +419,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               <div className="image-container">
                 <Image
                   src="/images/products/rpet-panel/gallery-12.webp"
-                  alt="Acoustic treatment in restaurant"
+                  alt={t('alt.acousticTreatmentInRestaurant')}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px"
                   style={{ objectFit: 'cover' }}
@@ -629,7 +629,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rpet-panel/processing-cnc.webp"
-                alt="CNC processing of rPET panels"
+                alt={t('alt.cncProcessingOfRpetPanels')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -646,7 +646,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rpet-panel/overview-recycled.jpg"
-                alt="Recycled PET bottles"
+                alt={t('alt.recycledPetBottles')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -717,7 +717,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rpet-panel/rPET - Panel - 1.png"
-                alt="rPET - Panel sample panels"
+                alt={t('alt.rpetPanelSamplePanels')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 550px"
                 style={{ objectFit: 'cover' }}

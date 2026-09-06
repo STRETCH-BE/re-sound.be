@@ -214,7 +214,7 @@ export default function RWoodShowcase() {
                   selectVeneer(v);
                 }
               }}
-              aria-label={`View ${v.name} veneer`}
+              aria-label={t('viewVeneer', { name: v.name })}
               aria-pressed={isActive}
             >
               <Image
@@ -287,7 +287,7 @@ export default function RWoodShowcase() {
                       selectVeneer(v);
                     }
                   }}
-                  aria-label={`Select ${v.name}`}
+                  aria-label={t('selectVeneer', { name: v.name })}
                   aria-pressed={isActive}
                 >
                   <div className="swatch-img-wrap">

@@ -56,7 +56,9 @@
     "whereToBuy": "Where to buy",
     "rangeRpet": "PET acoustic panels",
     "rangeRwood": "Wood acoustic panels",
-    "rangeBooths": "Acoustic phone booths"
+    "rangeBooths": "Acoustic phone booths",
+    "toggleMenu": "Toggle menu",
+    "selectLanguage": "Select language"
   },
   "hero": {
     "rwood": {
@@ -72,7 +74,8 @@
       "statFire": "Fire rating",
       "pill1": "Real Wood Veneer",
       "pill2": "Recycled Core",
-      "pill3": "Solid & Perforated"
+      "pill3": "Solid & Perforated",
+      "imageAlt": "rWood Micro acoustic panel with natural wood veneer, close-up of the finish"
     },
     "circular": {
       "badge": "Circular Range · Interior · Solid · Divide · rPET",
@@ -89,7 +92,8 @@
       "pill1": "100% Recycled",
       "pill2": "Free Take-Back",
       "pill3": "50+ Colors",
-      "pill4": "Own factories"
+      "pill4": "Own factories",
+      "imageAlt": "Interior circular acoustic panels in a modern office"
     }
   },
   "ticker": {
@@ -140,7 +144,9 @@
     "swatchesBody": "Five wood species, each with its own character. All applied over a 100% recycled acoustic core.",
     "ctaFullSpec": "Full Specifications",
     "ctaDatasheet": "Download Datasheet",
-    "ctaOrderSamples": "Order Sample Kit"
+    "ctaOrderSamples": "Order Sample Kit",
+    "viewVeneer": "View {name} veneer",
+    "selectVeneer": "Select {name}"
   },
   "products": {
     "tag": "OUR PRODUCTS",
@@ -344,7 +350,8 @@
         "title": "Return",
         "description": "Free pickup and recycling into new panels."
       }
-    }
+    },
+    "imageAlt": "Circular economy — acoustic panels recycling process"
   },
   "dualCta": {
     "left": {
@@ -358,7 +365,9 @@
       "title": "Get a custom quote",
       "subtitle": "Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.",
       "cta": "Request Quote"
-    }
+    },
+    "samplesAlt": "rWood natural veneer acoustic panel samples",
+    "spaceAlt": "Modern space with Re-Sound circular acoustic panels"
   },
   "cta": {
     "title": "Ready to Transform Your Space?",
@@ -873,7 +882,8 @@
     },
     "gallery": {
       "tag": "INSPIRATION",
-      "title": "In Action"
+      "title": "In Action",
+      "altPattern": "{product} — project installation {n}"
     },
     "acoustics": {
       "low": "Low",
@@ -936,6 +946,12 @@
       "tag": "ALSO IN THE RANGE",
       "title": "Other models in this range",
       "rangeLink": "See the whole {range} range"
+    },
+    "a11y": {
+      "selectColour": "Select {name} colour",
+      "selectFinish": "Select {name} finish",
+      "selectVeneer": "Select {name} veneer",
+      "select": "Select {name}"
     }
   },
   "interiorPage": {
@@ -1049,6 +1065,13 @@
           "answer": "Interior uses a hidden modular rail; Solid uses concealed hooks; Divide is freestanding with a magnetic modular connection. No specialist tools required."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Interior acoustic wall panels in {colour}",
+      "interiorPanelCompletePackage": "Interior panel complete package",
+      "circularDesignRecycledMaterials": "Circular design - recycled materials",
+      "modularWallPanelConfigurations": "Modular wall panel configurations",
+      "easyMaintenanceWithRemovableCover": "Easy maintenance with removable cover"
     }
   },
   "solidPage": {
@@ -1185,6 +1208,13 @@
           "answer": "Both measure absorption but use different test standards. αw (ISO 11654) is the European single-number value; NRC (ASTM C423) is the American equivalent. αw 1.0 and NRC 0.95 indicate the same Class A performance."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Solid acoustic wall panel in {colour}",
+      "solidPanelCompletePackage": "Solid panel complete package",
+      "solidPanelMountedOnTheWallWithThe": "Solid panel mounted on the wall with the easy hook system",
+      "removableFabricCoverForEasyCleaning": "Removable fabric cover for easy cleaning",
+      "circularDesignRecycledTextileMaterials": "Circular design - recycled textile materials"
     }
   },
   "dividePage": {
@@ -1289,7 +1319,8 @@
     },
     "gallery": {
       "tag": "INSPIRATION",
-      "title": "Divide in Action"
+      "title": "Divide in Action",
+      "altPattern": "{product} in {colour} — colourway {n}"
     },
     "faq": {
       "questions": {
@@ -1314,6 +1345,15 @@
           "answer": "Yes. Custom widths and heights are available on projects from 20 m². Minimum order quantities apply; contact us for a tailored quote."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Divide acoustic room divider in {colour}",
+      "divideAcousticRoomDivider": "Divide acoustic room divider",
+      "divideIntegratedBaseDetail": "Divide integrated base detail",
+      "magneticConnectionDetail": "Magnetic connection detail",
+      "modularConfigurations": "Modular configurations",
+      "divideRoomDividerMadeFromRecycledTextileFibres": "Divide room divider made from recycled textile fibres",
+      "dividePanelCrossSection": "Divide panel cross-section"
     }
   },
   "rpetGroovePage": {
@@ -1563,6 +1603,11 @@
           "answer": "Stock colors ship within 2–3 weeks; custom colors require 5–6 weeks. Large projects (>500 m²) are scheduled in production batches — contact us for a binding date."
         }
       }
+    },
+    "alt": {
+      "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove acoustic panel in modern office",
+      "panelInstallationProcess": "Panel installation process",
+      "recycledMaterials": "Recycled materials"
     }
   },
   "rpetPanelPage": {
@@ -1774,6 +1819,15 @@
           "answer": "Stock colors ship within 2–3 weeks; custom colors require 5–6 weeks. Large projects (>500 m²) are scheduled in production batches — contact us for a binding date."
         }
       }
+    },
+    "alt": {
+      "rpetPanelRecycledPetBottlesTransformation": "rPET - Panel recycled PET bottles transformation",
+      "petAcousticWallsInMeetingPod": "PET Acoustic walls in meeting pod",
+      "ceilingPanelsAndTableDivider": "Ceiling panels and table divider",
+      "acousticTreatmentInRestaurant": "Acoustic treatment in restaurant",
+      "cncProcessingOfRpetPanels": "CNC processing of rPET panels",
+      "recycledPetBottles": "Recycled PET bottles",
+      "rpetPanelSamplePanels": "rPET - Panel sample panels"
     }
   },
   "rwoodGroovePage": {
@@ -1960,6 +2014,12 @@
           "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
         }
       }
+    },
+    "alt": {
+      "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove acoustic panel in modern interior",
+      "woodFinishSamples": "Wood finish samples",
+      "panelInstallationProcess": "Panel installation process",
+      "sustainableForestry": "Sustainable forestry"
     }
   },
   "rwoodPerfPage": {
@@ -2139,6 +2199,12 @@
           "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
         }
       }
+    },
+    "alt": {
+      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf panel close-up showing round perforations",
+      "perforatedWoodPanelVeneerSurfaceDetail": "Perforated wood panel veneer surface detail",
+      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel concealed mounting system",
+      "sustainableWoodSourcingAndProduction": "Sustainable wood sourcing and production"
     }
   },
   "rwoodMicroPage": {
@@ -2327,6 +2393,13 @@
           "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
         }
       }
+    },
+    "alt": {
+      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro panel close-up showing invisible perforations",
+      "microPerforatedWoodPanelSurfaceDetail": "Micro-perforated wood panel surface detail",
+      "rwoodMicroPanelInstallationSystem": "rWood - Micro panel installation system",
+      "backlitMicroPerforatedPanelCreatingLightEffect": "Backlit micro-perforated panel creating light effect",
+      "sustainableProduction": "Sustainable production"
     }
   },
   "rwoodVeneerPage": {
@@ -2582,6 +2655,11 @@
           "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
         }
       }
+    },
+    "alt": {
+      "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel veneered MDF panel close-up showing grain detail",
+      "closeUpOfLacqueredVeneerSurface": "Close-up of lacquered veneer surface",
+      "sustainablyManagedForest": "Sustainably managed forest"
     }
   },
   "rpetFlexGroovePage": {
@@ -2773,6 +2851,13 @@
           "answer": "Stock colors ship within 2–3 weeks; custom colors require 5–6 weeks. Large projects (>500 m²) are scheduled in production batches — contact us for a binding date."
         }
       }
+    },
+    "alt": {
+      "rpetFlexGrooveAcousticPanel": "rPET Flex-Groove acoustic panel",
+      "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove acoustic panel on curved surface",
+      "rpetFlexGrooveColorOptions": "rPET Flex-Groove color options",
+      "flexGroovePanelInstallation": "Flex-Groove panel installation",
+      "recycledPetBottles": "Recycled PET bottles"
     }
   },
   "legal": {
@@ -2875,7 +2960,8 @@
         "question": "How do I request a quote?",
         "answer": "Use the contact form on any product page, or the general contact form, with: the product line you are interested in, approximate quantities or floor plan, and your project timeline. We will respond within one working day with a tailored quote, sample arrangement, and a calculation of expected acoustic improvement. For larger projects we can attend a site visit or briefing call."
       }
-    }
+    },
+    "categoriesLabel": "Categories"
   },
   "boothPage": {
     "nav": {
@@ -2970,7 +3056,8 @@
         "name": "Modular XL",
         "tag": "Scalable meeting pod"
       }
-    }
+    },
+    "growthDiagramLabel": "Modular growth diagram"
   },
   "soloFlexPage": {
     "hero": {
@@ -3836,7 +3923,8 @@
       "ctaTitle": "See and feel the material",
       "ctaText": "Order a free sample kit or send us your drawings for a quote — our team answers within one working day.",
       "ctaSampleKit": "Order a sample kit",
-      "ctaQuote": "Request a quote"
+      "ctaQuote": "Request a quote",
+      "breadcrumbLabel": "Breadcrumb"
     },
     "rpet": {
       "title": "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound",

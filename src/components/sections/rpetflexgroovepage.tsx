@@ -158,7 +158,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={defaultHeroImage}
-                alt="rPET Flex-Groove acoustic panel"
+                alt={t('alt.rpetFlexGrooveAcousticPanel')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -183,7 +183,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
                   className={`color-option ${selectedColor?.id === color.id ? 'active' : ''}`}
                   onClick={() => handleColorSelect(color)}
                   title={color.name}
-                  aria-label={`Select ${color.name} color`}
+                  aria-label={tPage('a11y.selectColour', { name: color.name })}
                   style={{ backgroundColor: color.colorHex }}
                 >
                   {selectedColor?.id === color.id && (
@@ -219,7 +219,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <div className="image-container">
               <Image
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero.png"
-                alt="rPET Flex-Groove acoustic panel on curved surface"
+                alt={t('alt.rpetFlexGrooveAcousticPanelOnCurvedSurface')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -360,7 +360,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <div className="image-container">
               <Image
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_1.jpg"
-                alt="rPET Flex-Groove color options"
+                alt={t('alt.rpetFlexGrooveColorOptions')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -471,7 +471,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <div className="image-container">
               <Image
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_2.jpg"
-                alt="Flex-Groove panel installation"
+                alt={t('alt.flexGroovePanelInstallation')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -488,7 +488,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <div className="image-container">
               <Image
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_3.jpg"
-                alt="Recycled PET bottles"
+                alt={t('alt.recycledPetBottles')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}

@@ -187,7 +187,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
                   className={`color-option ${selectedColor?.id === color.id ? 'active' : ''}`}
                   onClick={() => handleColorSelect(color)}
                   title={color.name}
-                  aria-label={`Select ${color.name}`}
+                  aria-label={tPage('a11y.select', { name: color.name })}
                 >
                   <span 
                     className="color-swatch" 
@@ -226,7 +226,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rpet-groove/rPET - Groove - Grey2.jpg"
-                alt="rPET - Groove acoustic panel in modern office"
+                alt={t('alt.rpetGrooveAcousticPanelInModernOffice')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -651,7 +651,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rpet-groove/processing-cnc.jpg"
-                alt="Panel installation process"
+                alt={t('alt.panelInstallationProcess')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -668,7 +668,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rpet-groove/overview-recycled.jpg"
-                alt="Recycled materials"
+                alt={t('alt.recycledMaterials')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}

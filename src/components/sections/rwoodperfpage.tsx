@@ -182,7 +182,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
                   className={`finish-option ${selectedFinish?.id === finish.id ? 'active' : ''}`}
                   onClick={() => handleFinishSelect(finish)}
                   title={finish.name}
-                  aria-label={`Select ${finish.name} finish`}
+                  aria-label={tPage('a11y.selectFinish', { name: finish.name })}
                 >
                   {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
                   <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
@@ -219,7 +219,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rwood-perf/overview-detail.webp"
-                alt="rWood - Perf panel close-up showing round perforations"
+                alt={t('alt.rwoodPerfPanelCloseUpShowingRoundPerforations')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -369,7 +369,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rwood-perf/surface-detail.jpg"
-                alt="Perforated wood panel veneer surface detail"
+                alt={t('alt.perforatedWoodPanelVeneerSurfaceDetail')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -592,7 +592,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rwood-perf/installation-detail.jpg"
-                alt="rWood - Perf panel concealed mounting system"
+                alt={t('alt.rwoodPerfPanelConcealedMountingSystem')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -609,7 +609,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             <div className="image-container">
               <Image
                 src="/images/products/rwood-perf/FSC_sustainability.webp"
-                alt="Sustainable wood sourcing and production"
+                alt={t('alt.sustainableWoodSourcingAndProduction')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}

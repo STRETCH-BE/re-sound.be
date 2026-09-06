@@ -94,7 +94,7 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const galleryImages = GALLERY_IMAGES.map((src, i) => ({
     src,
-    alt: `rWood Groove grooved acoustic wood panels — project installation ${i + 1}`,
+    alt: tPage('gallery.altPattern', { product: cleanName, n: i + 1 }),
   }));
 
   // FAQ entries — fall back gracefully if a question key isn't translated

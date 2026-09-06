@@ -119,7 +119,7 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const galleryImages = GALLERY_IMAGES.map((img, i) => ({
     src: img.src,
-    alt: `Divide freestanding acoustic room divider in ${img.name} — colourway ${i + 1}`,
+    alt: t('dividePage.gallery.altPattern', { product: cleanName, colour: img.name, n: i + 1 }),
   }));
 
   return (

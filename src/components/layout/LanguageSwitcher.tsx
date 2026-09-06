@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { locales, localeNames, localeFlags, type Locale } from '@/i18n/config';
 import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
@@ -18,6 +18,7 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const locale = useLocale();
+  const tNav = useTranslations('nav');
   const router = useRouter();
   const pathname = usePathname();
 
@@ -62,7 +63,7 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
-        aria-label="Select language"
+        aria-label={tNav('selectLanguage')}
       >
         <span className="lang-flag">{currentLocale.flag}</span>
         <span className="lang-code">{currentLocale.code.toUpperCase()}</span>
@@ -82,7 +83,7 @@ export default function LanguageSwitcher() {
       <ul
         className={`lang-dropdown ${isOpen ? 'open' : ''}`}
         role="listbox"
-        aria-label="Select language"
+        aria-label={tNav('selectLanguage')}
       >
         {localeList.map((loc) => (
           <li key={loc.code} role="option" aria-selected={loc.code === locale}>

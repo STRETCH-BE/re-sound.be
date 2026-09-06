@@ -59,7 +59,7 @@ export default function FAQContent({ questionKeys }: FAQContentProps) {
           className="faq-search"
         />
 
-        <div className="faq-filters" role="tablist" aria-label="Categories">
+        <div className="faq-filters" role="tablist" aria-label={t('categoriesLabel')}>
           {CATEGORY_KEYS.map((cat) => (
             <button
               key={cat}

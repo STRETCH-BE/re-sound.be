@@ -104,7 +104,7 @@ export default function Header() {
         <button
           className={`mobile-menu-btn ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={t('toggleMenu')}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-nav-menu"
         >

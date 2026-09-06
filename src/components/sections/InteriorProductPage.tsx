@@ -127,7 +127,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={selectedColor.image}
-                alt={`Re-Sound Interior acoustic wall panels in ${selectedColor.name}`}
+                alt={t('alt.heroInColour', { colour: selectedColor.name })}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -159,7 +159,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
                   className={`color-option ${selectedColor.id === color.id ? 'active' : ''}`}
                   onClick={() => handleColorSelect(color)}
                   title={color.name}
-                  aria-label={`Select ${color.name} color`}
+                  aria-label={tPage('a11y.selectColour', { name: color.name })}
                 >
                   {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
                   <Image src={color.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="color-swatch" style={{ objectFit: 'cover' }} />
@@ -196,7 +196,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
             <div className="image-container">
               <Image
                 src="/images/products/interior/overview.jpg"
-                alt="Interior panel complete package"
+                alt={t('alt.interiorPanelCompletePackage')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -259,7 +259,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
             <div className="image-container">
               <Image
                 src="/images/products/interior/circular.jpg"
-                alt="Circular design - recycled materials"
+                alt={t('alt.circularDesignRecycledMaterials')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -276,7 +276,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
             <div className="image-container">
               <Image
                 src="/images/products/interior/hero.webp"
-                alt="Modular wall panel configurations"
+                alt={t('alt.modularWallPanelConfigurations')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -335,7 +335,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
             <div className="image-container">
               <Image
                 src="/images/products/interior/maintenance.jpg"
-                alt="Easy maintenance with removable cover"
+                alt={t('alt.easyMaintenanceWithRemovableCover')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}

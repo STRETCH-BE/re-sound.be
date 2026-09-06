@@ -127,7 +127,7 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={selectedColor.image}
-                alt={`Re-Sound Solid acoustic wall panel in ${selectedColor.name}`}
+                alt={t('alt.heroInColour', { colour: selectedColor.name })}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -159,7 +159,7 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
                   className={`color-option ${selectedColor.id === color.id ? 'active' : ''}`}
                   onClick={() => handleColorSelect(color)}
                   title={color.name}
-                  aria-label={`Select ${color.name} color`}
+                  aria-label={tPage('a11y.selectColour', { name: color.name })}
                 >
                   {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
                   <Image src={color.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="color-swatch" style={{ objectFit: 'cover' }} />
@@ -196,7 +196,7 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
             <div className="image-container">
               <Image
                 src="/images/products/solid/solid_card.webp"
-                alt="Solid panel complete package"
+                alt={t('alt.solidPanelCompletePackage')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -259,7 +259,7 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
             <div className="image-container">
               <Image
                 src="/images/products/solid/gallery-5.jpg"
-                alt="Solid panel mounted on the wall with the easy hook system"
+                alt={t('alt.solidPanelMountedOnTheWallWithThe')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -276,7 +276,7 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
             <div className="image-container">
               <Image
                 src="/images/products/solid/gallery-2.jpg"
-                alt="Removable fabric cover for easy cleaning"
+                alt={t('alt.removableFabricCoverForEasyCleaning')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -339,7 +339,7 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
             <div className="image-container">
               <Image
                 src="/images/products/solid/hero-taupe.webp"
-                alt="Circular design - recycled textile materials"
+                alt={t('alt.circularDesignRecycledTextileMaterials')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}

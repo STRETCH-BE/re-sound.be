@@ -33,10 +33,7 @@ const FAQ_KEYS = ["leadTime", "washableCover", "absorptionRating", "breeamLeed",
 
 // "Projects & Installations" grid — same six images the client component
 // used to render inline, now a static server-rendered <ProductGallery>.
-const GALLERY_IMAGES = [1, 2, 3, 4, 5, 6].map((i) => ({
-  src: `/images/products/interior/gallery-${i}.jpg`,
-  alt: `Interior acoustic textile wall panels — project installation ${i}`,
-}));
+const GALLERY_IMAGES = [1, 2, 3, 4, 5, 6].map((i) => `/images/products/interior/gallery-${i}.jpg`);
 
 export async function generateMetadata({
   params: { locale },
@@ -84,6 +81,11 @@ export default async function Page({ params: { locale } }: PageProps) {
   // Root + productPage translators for the server-rendered section slots.
   const t = await getTranslations({ locale });
   const tPage = await getTranslations({ locale, namespace: 'productPage' });
+
+  const galleryImages = GALLERY_IMAGES.map((src, i) => ({
+    src,
+    alt: tPage('gallery.altPattern', { product: cleanName, n: i + 1 }),
+  }));
 
   // FAQ entries — fall back gracefully if a question key isn't translated
   // (string returns the key, which we then filter out).
@@ -139,7 +141,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           }
           gallery={
             <ProductGallery
-              images={GALLERY_IMAGES}
+              images={galleryImages}
               tag={tPage('gallery.tag')}
               title={t('interiorPage.gallery.title')}
             />

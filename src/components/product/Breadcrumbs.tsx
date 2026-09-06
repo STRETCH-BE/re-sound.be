@@ -1,3 +1,5 @@
+import { getTranslations } from 'next-intl/server';
+
 import { Link } from '@/i18n/navigation';
 
 export interface Crumb {
@@ -16,9 +18,10 @@ interface BreadcrumbsProps {
  * Visible breadcrumb trail (server component). The matching BreadcrumbList
  * JSON-LD is emitted by the page with the same items.
  */
-export default function Breadcrumbs({ items, variant = 'inline' }: BreadcrumbsProps) {
+export default async function Breadcrumbs({ items, variant = 'inline' }: BreadcrumbsProps) {
+  const t = await getTranslations('hubs.shared');
   return (
-    <nav className={`ps-breadcrumbs ps-breadcrumbs--${variant}`} aria-label="Breadcrumb">
+    <nav className={`ps-breadcrumbs ps-breadcrumbs--${variant}`} aria-label={t('breadcrumbLabel')}>
       <ol>
         {items.map((item, i) => (
           <li key={i}>

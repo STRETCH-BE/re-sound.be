@@ -74,7 +74,7 @@ export default function CircularLoop() {
             <div className="ring-img">
               <Image
                 src="/images/products/interior/circular.jpg"
-                alt="Circular economy — acoustic panels recycling process"
+                alt={t('imageAlt')}
                 fill
                 style={{ objectFit: 'cover' }}
                 sizes="(max-width: 768px) 80vw, 35vw"

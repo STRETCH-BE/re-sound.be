@@ -179,7 +179,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
                   className={`finish-option ${selectedFinish?.id === finish.id ? 'active' : ''}`}
                   onClick={() => handleFinishSelect(finish)}
                   title={finish.name}
-                  aria-label={`Select ${finish.name} finish`}
+                  aria-label={tPage('a11y.selectFinish', { name: finish.name })}
                 >
                   {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
                   <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
@@ -216,7 +216,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             <div className="image-container">
               <Image
                 src="/images/products/rwood-groove/Where Nature Meets Design.webp"
-                alt="rWood - Groove acoustic panel in modern interior"
+                alt={t('alt.rwoodGrooveAcousticPanelInModernInterior')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -327,7 +327,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             <div className="image-container">
               <Image
                 src="/images/products/rwood-groove/rWood-Groove_detail.jpg"
-                alt="Wood finish samples"
+                alt={t('alt.woodFinishSamples')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -538,7 +538,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             <div className="image-container">
               <Image
                 src="/images/products/rwood-groove/seamless installation.jpg"
-                alt="Panel installation process"
+                alt={t('alt.panelInstallationProcess')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -555,7 +555,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             <div className="image-container">
               <Image
                 src="/images/products/rwood-groove/FSC_CERT.webp"
-                alt="Sustainable forestry"
+                alt={t('alt.sustainableForestry')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}

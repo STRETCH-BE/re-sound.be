@@ -209,7 +209,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
                   className={`veneer-option ${selectedVeneer?.id === veneer.id ? 'active' : ''}`}
                   onClick={() => handleVeneerSelect(veneer)}
                   title={veneer.name}
-                  aria-label={`Select ${veneer.name} veneer`}
+                  aria-label={tPage('a11y.selectVeneer', { name: veneer.name })}
                 >
                   <Image src={veneer.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="veneer-swatch" style={{ objectFit: 'cover' }} />
                   {selectedVeneer?.id === veneer.id && (
@@ -252,7 +252,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-veneer/overview-craftsmanship.webp"
-                alt="rWood - Panel veneered MDF panel close-up showing grain detail"
+                alt={t('alt.rwoodPanelVeneeredMdfPanelCloseUpShowing')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -481,7 +481,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-veneer/finish-detail.webp"
-                alt="Close-up of lacquered veneer surface"
+                alt={t('alt.closeUpOfLacqueredVeneerSurface')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -611,7 +611,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             <div className="image-container">
               <Image
                 src="/images/products/rwood-veneer/FSC_sustainability.webp"
-                alt="Sustainably managed forest"
+                alt={t('alt.sustainablyManagedForest')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}

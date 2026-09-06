@@ -19,7 +19,7 @@ export default function DualCTA() {
           <div className="cta-img">
             <Image
               src="/images/products/rwood-groove/gallery-1.webp"
-              alt="rWood natural veneer acoustic panel samples"
+              alt={t('samplesAlt')}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
               sizes="50vw"
@@ -44,7 +44,7 @@ export default function DualCTA() {
           <div className="cta-img">
             <Image
               src="/images/products/interior/overview.jpg"
-              alt="Modern space with Re-Sound circular acoustic panels"
+              alt={t('spaceAlt')}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
               sizes="50vw"

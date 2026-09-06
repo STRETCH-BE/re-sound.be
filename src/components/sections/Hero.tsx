@@ -19,7 +19,7 @@ export default function Hero() {
               the AVIF/WebP small enough to decode quickly on a phone. */}
           <Image
             src="/images/products/rwood-micro/finish-detail.webp"
-            alt="rWood Micro acoustic panel with natural wood veneer, close-up of the finish"
+            alt={t('rwood.imageAlt')}
             fill
             style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
             priority
@@ -88,7 +88,7 @@ export default function Hero() {
               in the viewport. Never `priority`/eager — one LCP image only. */}
           <Image
             src="/images/products/interior/hero.webp"
-            alt="Interior circular acoustic panels in a modern office"
+            alt={t('circular.imageAlt')}
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
             quality={55}

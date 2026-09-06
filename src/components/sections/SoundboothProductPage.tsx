@@ -348,7 +348,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           </div>
 
           <div className="growth-visualiser">
-            <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Modular growth diagram">
+            <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label={tShared('growthDiagramLabel')}>
               <g>
                 <rect x="40" y="80" width="240" height="160" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.45)" strokeWidth="2" />
                 <text x="160" y="170" textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="14" fontWeight="600">{t('modular.baseLabel')}</text>
