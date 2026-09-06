@@ -22,7 +22,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodPerfPage.specs.customSizes'), value: '100–3050 × 100–1220 mm' },
       { label: key('productPage.specLabels.thickness'), value: '8 - 19 mm' },
-      { label: key('productPage.specLabels.weight'), value: '~From 0,35 kg/m²' },
+      { label: key('productPage.specLabels.weight'), value: key('productData.specValues.fromWeight035') },
       { label: key('productPage.specLabels.coreDensity'), value: '48,40 kg/m³' },
     ],
   },
@@ -30,18 +30,18 @@ const specs: SpecTableDef = [
     title: key('rwoodPerfPage.specs.acousticsTitle'),
     rows: [
       { label: key('productPage.specs.absorptionCoeff'), value: '0.90' },
-      { label: 'With 50mm mineral wool', value: 'Up to 1.00' },
-      { label: key('productPage.specs.absorptionClass'), value: 'Class A / C' },
+      { label: key('productData.specValues.withMineralWool50'), value: 'Up to 1.00' },
+      { label: key('productPage.specs.absorptionClass'), value: key('productData.specValues.classAC') },
       { label: key('productPage.specLabels.testStandard'), value: 'ISO 354 / ISO 11654' },
     ],
   },
   {
     title: key('rwoodPerfPage.specs.perforationsTitle'),
     rows: [
-      { label: 'PD8 (⌀8 mm double)', value: '24% open — αw 0.85' },
-      { label: 'PH10 (⌀10 mm)', value: '18% open — αw 0.75' },
-      { label: 'PH8 (⌀8 mm)', value: '12% open — αw 0.55' },
-      { label: 'PH5 (⌀5 mm)', value: '5% open — αw 0.35' },
+      { label: key('productData.specValues.pd8Double'), value: key('productData.specValues.open24Aw085') },
+      { label: 'PH10 (⌀10 mm)', value: key('productData.specValues.open18Aw075') },
+      { label: 'PH8 (⌀8 mm)', value: key('productData.specValues.open12Aw055') },
+      { label: 'PH5 (⌀5 mm)', value: key('productData.specValues.open5Aw035') },
     ],
   },
   {

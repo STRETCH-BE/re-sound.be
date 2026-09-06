@@ -70,7 +70,11 @@
       "statLandfill": "Stortplaatsafval",
       "statFreeLabel": "Gratis",
       "statTakeback": "Terugname",
-      "statColors": "Kleuren"
+      "statColors": "Kleuren",
+      "pill1": "100% gerecycleerd",
+      "pill2": "Gratis terugname",
+      "pill3": "50+ kleuren",
+      "pill4": "Eigen fabrieken"
     },
     "rwood": {
       "badge": "rWood Serie · Natuurlijke Afwerklijn",
@@ -82,7 +86,10 @@
       "statVeneers": "Fineersoorten",
       "statThickness": "Dikte",
       "statAbsorption": "Absorptie",
-      "statFire": "Brandklasse"
+      "statFire": "Brandklasse",
+      "pill1": "Echt houtfineer",
+      "pill2": "Gerecycleerde kern",
+      "pill3": "Massief & geperforeerd"
     }
   },
   "materials": {
@@ -464,7 +471,8 @@
         "partnership": "Samenwerkingsaanvraag",
         "other": "Anders"
       },
-      "privacyNotice": "Door dit formulier in te dienen, ga je akkoord met ons <link>privacybeleid</link>."
+      "privacyNotice": "Door dit formulier in te dienen, ga je akkoord met ons <link>privacybeleid</link>.",
+      "honeypot": "Laat dit veld leeg"
     },
     "info": {
       "title": "Contactgegevens",
@@ -774,7 +782,8 @@
       "healthcare": "Gezondheidszorg",
       "retail": "Retail",
       "other": "Andere"
-    }
+    },
+    "honeypot": "Laat dit veld leeg"
   },
   "productPage": {
     "nav": {

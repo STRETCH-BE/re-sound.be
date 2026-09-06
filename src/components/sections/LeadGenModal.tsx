@@ -265,7 +265,7 @@ export default function LeadGenModal({
 
             {/* Honeypot: visually hidden but visible to bots. Real users skip it. */}
             <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px' }}>
-              <label htmlFor="leadgen-website">Leave this field empty</label>
+              <label htmlFor="leadgen-website">{t('honeypot')}</label>
               <input
                 type="text"
                 id="leadgen-website"

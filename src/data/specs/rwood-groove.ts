@@ -32,7 +32,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodGroovePage.specs.matVeneer'), value: key('rwoodGroovePage.specs.matVeneerVal') },
       { label: key('productPage.specs.core'), value: key('rwoodGroovePage.specs.matCoreVal') },
-      { label: 'Felt', value: key('rwoodGroovePage.specs.matBackingVal') },
+      { label: key('productData.specValues.felt'), value: key('rwoodGroovePage.specs.matBackingVal') },
       { label: key('rwoodGroovePage.specs.matFinish'), value: key('rwoodGroovePage.specs.finishVal') },
     ],
   },
@@ -41,7 +41,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodGroovePage.specs.stdPanels'), value: 'D-s2, d2' },
       { label: key('rwoodGroovePage.specs.fireMdfVal'), value: 'B-s1, d0' },
-      { label: 'Felt', value: 'B-s1, d0' },
+      { label: key('productData.specValues.felt'), value: 'B-s1, d0' },
       { label: key('productPage.specs.testStandard'), value: 'EN 13501' },
     ],
   },

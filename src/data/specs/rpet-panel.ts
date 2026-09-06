@@ -29,7 +29,7 @@ const specs: SpecTableDef = [
   {
     title: key('rpetPanelPage.specs.physicalTitle'),
     rows: [
-      { label: key('rpetPanelPage.specs.physMaterial'), value: '100% PET (polyester)' },
+      { label: key('rpetPanelPage.specs.physMaterial'), value: key('productData.specValues.pet100Polyester') },
       { label: key('productPage.specs.recycledContent'), value: 'Up to 50%' },
       { label: key('rpetPanelPage.specs.physWeight12'), value: '3 kg/m²' },
       { label: key('rpetPanelPage.specs.physWeight24'), value: '4 kg/m²' },
@@ -46,16 +46,16 @@ const specs: SpecTableDef = [
   {
     title: key('rpetPanelPage.specs.healthTitle'),
     rows: [
-      { label: key('rpetPanelPage.specs.healthOekoTex'), value: 'Standard 100, Class 1' },
-      { label: key('rpetPanelPage.specs.vocEmissions'), value: 'Class A+ (ISO 16000)' },
-      { label: key('rpetPanelPage.specs.healthFormaldehyde'), value: 'None' },
-      { label: key('rpetPanelPage.specs.healthBinders'), value: 'None' },
+      { label: key('rpetPanelPage.specs.healthOekoTex'), value: key('productData.specValues.oekoStandard100Class1') },
+      { label: key('rpetPanelPage.specs.vocEmissions'), value: key('productData.specValues.classAPlusIso16000') },
+      { label: key('rpetPanelPage.specs.healthFormaldehyde'), value: key('productData.specValues.none') },
+      { label: key('rpetPanelPage.specs.healthBinders'), value: key('productData.specValues.none') },
     ],
   },
   {
     title: key('rpetPanelPage.specs.colorsTitle'),
     rows: [
-      { label: key('rpetPanelPage.specs.colorStandard'), value: '5 (Midnight to Frost)' },
+      { label: key('rpetPanelPage.specs.colorStandard'), value: key('productData.specValues.fiveMidnightToFrost') },
       { label: key('rpetPanelPage.specs.colorCustom'), value: key('rpetPanelPage.specs.anyRalNcs') },
       { label: key('rpetPanelPage.specs.finishOptions'), value: key('rpetPanelPage.specs.finishOptionsVal') },
       { label: key('rpetPanelPage.specs.recyclability'), value: '100%' },

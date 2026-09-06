@@ -110,7 +110,7 @@ export default function ContactForm() {
 
       {/* Honeypot: visually hidden but visible to bots. Real users skip it. */}
       <div className="hp-field" aria-hidden="true">
-        <label htmlFor="website">Leave this field empty</label>
+        <label htmlFor="website">{t('honeypot')}</label>
         <input
           type="text"
           id="website"

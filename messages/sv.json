@@ -69,7 +69,10 @@
       "statVeneers": "Fanérträsorter",
       "statThickness": "Tjocklek",
       "statAbsorption": "Absorption",
-      "statFire": "Brandklass"
+      "statFire": "Brandklass",
+      "pill1": "Äkta träfaner",
+      "pill2": "Återvunnen kärna",
+      "pill3": "Massiv & perforerad"
     },
     "circular": {
       "badge": "Cirkulär Serie · Interior · Solid · Divide · rPET",
@@ -82,7 +85,11 @@
       "statLandfill": "Landfill waste",
       "statFreeLabel": "Free",
       "statTakeback": "Återtagning",
-      "statColors": "Färger"
+      "statColors": "Färger",
+      "pill1": "100 % återvunnet",
+      "pill2": "Kostnadsfritt återtag",
+      "pill3": "50+ färger",
+      "pill4": "Egna fabriker"
     }
   },
   "ticker": {
@@ -515,7 +522,8 @@
         "partnership": "Partnership Inquiry",
         "other": "Annat"
       },
-      "privacyNotice": "Genom att skicka detta formulär godkänner du vår <link>integritetspolicy</link>."
+      "privacyNotice": "Genom att skicka detta formulär godkänner du vår <link>integritetspolicy</link>.",
+      "honeypot": "Lämna det här fältet tomt"
     },
     "info": {
       "title": "Kontaktuppgifter",
@@ -774,7 +782,8 @@
       "healthcare": "Sjukvård",
       "retail": "Detaljhandel",
       "other": "Annat"
-    }
+    },
+    "honeypot": "Lämna det här fältet tomt"
   },
   "productPage": {
     "nav": {

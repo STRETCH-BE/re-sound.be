@@ -70,7 +70,11 @@
       "statLandfill": "Deponie-Abfall",
       "statFreeLabel": "Kostenlos",
       "statTakeback": "Rücknahme",
-      "statColors": "Farben"
+      "statColors": "Farben",
+      "pill1": "100 % recycelt",
+      "pill2": "Kostenlose Rücknahme",
+      "pill3": "50+ Farben",
+      "pill4": "Eigene Werke"
     },
     "rwood": {
       "badge": "rWood-Serie · Natürliche Oberflächen",
@@ -82,7 +86,10 @@
       "statVeneers": "Furnierarten",
       "statThickness": "Stärke",
       "statAbsorption": "Absorption",
-      "statFire": "Brandschutzklasse"
+      "statFire": "Brandschutzklasse",
+      "pill1": "Echtholzfurnier",
+      "pill2": "Recycelter Kern",
+      "pill3": "Massiv & perforiert"
     }
   },
   "materials": {
@@ -464,7 +471,8 @@
         "partnership": "Partnerschaftsanfrage",
         "other": "Sonstiges"
       },
-      "privacyNotice": "Mit dem Absenden dieses Formulars akzeptieren Sie unsere <link>Datenschutzerklärung</link>."
+      "privacyNotice": "Mit dem Absenden dieses Formulars akzeptieren Sie unsere <link>Datenschutzerklärung</link>.",
+      "honeypot": "Dieses Feld bitte leer lassen"
     },
     "info": {
       "title": "Kontaktinformationen",
@@ -774,7 +782,8 @@
       "healthcare": "Gesundheitswesen",
       "retail": "Einzelhandel",
       "other": "Sonstiges"
-    }
+    },
+    "honeypot": "Dieses Feld bitte leer lassen"
   },
   "productPage": {
     "nav": {

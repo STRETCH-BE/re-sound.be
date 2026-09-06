@@ -14,7 +14,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.panelSize'), value: key('solidPage.specs.panelSizeValue') },
       { label: key('productPage.specs.thickness'), value: '50 mm' },
-      { label: key('productPage.specs.weight'), value: '~5 kg per panel' },
+      { label: key('productPage.specs.weight'), value: key('productData.specValues.weightPerPanel5') },
     ],
   },
   {
@@ -45,7 +45,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.recycledContent'), value: '≥80%' },
       { label: key('solidPage.specs.endOfLife'), value: key('solidPage.specs.endOfLifeVal') },
-      { label: key('productPage.specs.vocEmissions'), value: 'Low / A+' },
+      { label: key('productPage.specs.vocEmissions'), value: key('productData.specValues.lowAPlus') },
     ],
   },
   {

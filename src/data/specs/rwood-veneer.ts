@@ -34,7 +34,7 @@ const specs: SpecTableDef = [
       { label: key('rwoodVeneerPage.specs.finishLacquerType'), value: key('rwoodVeneerPage.specs.finishLacquerVal') },
       { label: key('rwoodVeneerPage.specs.finishLayers'), value: '6' },
       { label: key('rwoodVeneerPage.specs.finishGloss'), value: key('rwoodVeneerPage.specs.finishGlossVal') },
-      { label: key('rwoodVeneerPage.specs.finishAntiFingerprint'), value: 'Yes' },
+      { label: key('rwoodVeneerPage.specs.finishAntiFingerprint'), value: key('productData.specValues.yes') },
       { label: key('rwoodVeneerPage.specs.finishScratch'), value: '≥ 2N (ISO 1518)' },
     ],
   },
@@ -50,7 +50,7 @@ const specs: SpecTableDef = [
     title: key('rwoodVeneerPage.specs.certsTitle'),
     rows: [
       { label: key('rwoodVeneerPage.specs.certWoodSourcing'), value: key('productPage.specs.fscCertified') },
-      { label: key('productPage.specs.vocEmissions'), value: 'E1 / CARB 2 compliant' },
+      { label: key('productPage.specs.vocEmissions'), value: key('productData.specValues.e1Carb2Compliant') },
       { label: key('rwoodVeneerPage.specs.certEnvironmental'), value: key('productPage.specs.epd') },
       { label: key('rwoodVeneerPage.specs.certFelt'), value: 'OEKO-TEX® Standard 100' },
     ],
@@ -60,7 +60,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodVeneerPage.specs.procSawing'), value: key('rwoodVeneerPage.specs.procSawingVal') },
       { label: key('rwoodVeneerPage.specs.procEdgeBanding'), value: key('rwoodVeneerPage.specs.procEdgeBandingVal') },
-      { label: key('rwoodVeneerPage.specs.procCNC'), value: 'Suitable' },
+      { label: key('rwoodVeneerPage.specs.procCNC'), value: key('productData.specValues.suitable') },
       { label: key('rwoodVeneerPage.specs.procEnvironment'), value: key('rwoodVeneerPage.specs.procEnvironmentVal') },
       { label: key('rwoodVeneerPage.specs.procMoisture'), value: key('rwoodVeneerPage.specs.procMoistureVal') },
     ],

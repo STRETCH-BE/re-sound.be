@@ -505,9 +505,12 @@ try {
 
   // (b) English share
   log('== (b) English text segments on non-English pages (unique segments >= 4 words)');
+  log('   (indexable pages only; noindex pages such as privacy/terms are listed separately below)');
   const nonEn = results.filter((p) => p.status === 200 && p.locale !== 'en');
   const perLocale = {};
+  const noindexPages = [];
   for (const p of nonEn) {
+    if (/noindex/i.test(p.robots)) { noindexPages.push(p); continue; }
     const l = (perLocale[p.locale] ??= { pages: 0, seg: 0, en: 0, worst: [] });
     l.pages++; l.seg += p.segments; l.en += p.englishSegments;
     l.worst.push(p);
@@ -517,6 +520,11 @@ try {
     log(`${loc}: ${share.toFixed(1)}% English (${l.en}/${l.seg} segments over ${l.pages} pages)`);
     const worst = l.worst.filter((p) => p.englishShare >= 0.03).sort((a, b) => b.englishShare - a.englishShare);
     for (const p of worst) log(`  ${(100 * p.englishShare).toFixed(1).padStart(5)}%  ${p.path}  (${p.englishSegments}/${p.segments})`);
+  }
+  const noindexEnglish = noindexPages.filter((p) => p.englishShare >= 0.03).sort((a, b) => b.englishShare - a.englishShare);
+  if (noindexEnglish.length) {
+    log('-- noindex pages with English text (not counted above)');
+    for (const p of noindexEnglish) log(`  ${(100 * p.englishShare).toFixed(1).padStart(5)}%  ${p.path}  (${p.englishSegments}/${p.segments}, ${p.robots})`);
   }
   log('');
   log('-- sample English segments per flagged page (max 12 each)');

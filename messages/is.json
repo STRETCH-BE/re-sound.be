@@ -69,7 +69,10 @@
       "statVeneers": "Tré-fineertegund",
       "statThickness": "Þykkt",
       "statAbsorption": "Frásog",
-      "statFire": "Brunaflokkun"
+      "statFire": "Brunaflokkun",
+      "pill1": "Ekta viðarspónn",
+      "pill2": "Endurunninn kjarni",
+      "pill3": "Heilt & götuð"
     },
     "circular": {
       "badge": "Hringrásarröð · Interior · Solid · Divide · rPET",
@@ -82,7 +85,11 @@
       "statLandfill": "Landfill waste",
       "statFreeLabel": "Free",
       "statTakeback": "Til baka",
-      "statColors": "Litir"
+      "statColors": "Litir",
+      "pill1": "100 % endurunnið",
+      "pill2": "Ókeypis skil",
+      "pill3": "50+ litir",
+      "pill4": "Eigin verksmiðjur"
     }
   },
   "ticker": {
@@ -515,7 +522,8 @@
         "partnership": "Partnership Inquiry",
         "other": "Annað"
       },
-      "privacyNotice": "Með því að senda þetta eyðublað samþykkir þú <link>persónuverndarstefnu okkar</link>."
+      "privacyNotice": "Með því að senda þetta eyðublað samþykkir þú <link>persónuverndarstefnu okkar</link>.",
+      "honeypot": "Skildu þennan reit eftir auðan"
     },
     "info": {
       "title": "Sambandsupplýsingar",
@@ -774,7 +782,8 @@
       "healthcare": "Heilsugæsla",
       "retail": "Smásala",
       "other": "Annað"
-    }
+    },
+    "honeypot": "Skildu þennan reit eftir auðan"
   },
   "productPage": {
     "nav": {

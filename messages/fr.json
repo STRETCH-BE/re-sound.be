@@ -70,7 +70,11 @@
       "statLandfill": "Déchets en décharge",
       "statFreeLabel": "Gratuit",
       "statTakeback": "Reprise",
-      "statColors": "Couleurs"
+      "statColors": "Couleurs",
+      "pill1": "100 % recyclé",
+      "pill2": "Reprise gratuite",
+      "pill3": "50+ coloris",
+      "pill4": "Nos propres usines"
     },
     "rwood": {
       "badge": "Série rWood · Ligne de Finitions Naturelles",
@@ -82,7 +86,10 @@
       "statVeneers": "Essences de placage",
       "statThickness": "Épaisseur",
       "statAbsorption": "Absorption",
-      "statFire": "Classement au feu"
+      "statFire": "Classement au feu",
+      "pill1": "Placage bois véritable",
+      "pill2": "Âme recyclée",
+      "pill3": "Plein & perforé"
     }
   },
   "materials": {
@@ -464,7 +471,8 @@
         "partnership": "Demande de Partenariat",
         "other": "Autre"
       },
-      "privacyNotice": "En soumettant ce formulaire, vous acceptez notre <link>politique de confidentialité</link>."
+      "privacyNotice": "En soumettant ce formulaire, vous acceptez notre <link>politique de confidentialité</link>.",
+      "honeypot": "Laissez ce champ vide"
     },
     "info": {
       "title": "Informations de Contact",
@@ -774,7 +782,8 @@
       "healthcare": "Santé",
       "retail": "Commerce de Détail",
       "other": "Autre"
-    }
+    },
+    "honeypot": "Laissez ce champ vide"
   },
   "productPage": {
     "nav": {

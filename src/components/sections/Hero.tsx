@@ -42,7 +42,7 @@ export default function Hero() {
           <p>{t('rwood.subtitle')}</p>
 
           <div className="pill-row">
-            {['🪵 Real Wood Veneer', '♻️ Recycled Core', '⊞ Solid & Perforated', 'αw 0.95'].map((pill) => (
+            {[`🪵 ${t('rwood.pill1')}`, `♻️ ${t('rwood.pill2')}`, `⊞ ${t('rwood.pill3')}`, 'αw 0.95'].map((pill) => (
               <span key={pill} className="pill pill-warm">{pill}</span>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function Hero() {
           <p>{t('circular.subtitle')}</p>
 
           <div className="pill-row">
-            {['♻️ 100% Recycled', '🔄 Free Take-Back', '🎨 50+ Colors', '🏭 Own factories'].map((pill) => (
+            {[`♻️ ${t('circular.pill1')}`, `🔄 ${t('circular.pill2')}`, `🎨 ${t('circular.pill3')}`, `🏭 ${t('circular.pill4')}`].map((pill) => (
               <span key={pill} className="pill pill-blue">{pill}</span>
             ))}
           </div>

@@ -15,7 +15,7 @@ const specs: SpecTableDef = [
       { label: key('dividePage.specs.moduleWidth'), value: '800 mm' },
       { label: key('dividePage.specs.moduleHeight'), value: '1600 mm' },
       { label: key('productPage.specs.thickness'), value: '45 mm' },
-      { label: key('productPage.specs.weight'), value: '~8 kg per module' },
+      { label: key('productPage.specs.weight'), value: key('productData.specValues.weightPerModule8') },
     ],
   },
   {
@@ -23,15 +23,15 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.absorptionCoeff'), value: '0.85' },
       { label: key('productPage.specs.absorptionClass'), value: key('productPage.acoustics.classA') },
-      { label: 'Dual-sided', value: 'Yes' },
+      { label: key('productData.specValues.dualSided'), value: key('productData.specValues.yes') },
     ],
   },
   {
     title: key('dividePage.specs.materialsTitle'),
     rows: [
-      { label: key('productPage.specs.core'), value: 'Recycled textile fiber' },
+      { label: key('productPage.specs.core'), value: key('productData.specValues.recycledTextileFiber') },
       { label: key('productPage.specs.cover'), value: key('dividePage.specs.fabricCore') },
-      { label: 'Base', value: key('dividePage.specs.steelFrame') },
+      { label: key('productData.specValues.base'), value: key('dividePage.specs.steelFrame') },
       { label: key('dividePage.specs.magnets'), value: key('dividePage.specs.magnetsVal') },
     ],
   },
@@ -47,7 +47,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.recycledContent'), value: '≥80%' },
       { label: key('dividePage.specs.endOfLife'), value: key('dividePage.specs.endOfLifeVal') },
-      { label: key('productPage.specs.vocEmissions'), value: 'Low / A+' },
+      { label: key('productPage.specs.vocEmissions'), value: key('productData.specValues.lowAPlus') },
     ],
   },
   {
@@ -55,7 +55,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('dividePage.specs.connection'), value: key('dividePage.specs.connectionVal') },
       { label: key('dividePage.specs.setupTime'), value: key('dividePage.specs.setupTimeVal') },
-      { label: key('dividePage.specs.toolsRequired'), value: 'None' },
+      { label: key('dividePage.specs.toolsRequired'), value: key('productData.specValues.none') },
     ],
   },
 ];

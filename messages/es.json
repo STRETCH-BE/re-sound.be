@@ -69,7 +69,10 @@
       "statVeneers": "Especies de chapa",
       "statThickness": "Espesor",
       "statAbsorption": "Absorción",
-      "statFire": "Clasificación al fuego"
+      "statFire": "Clasificación al fuego",
+      "pill1": "Chapa de madera auténtica",
+      "pill2": "Núcleo reciclado",
+      "pill3": "Liso y perforado"
     },
     "circular": {
       "badge": "Gama Circular · Interior · Solid · Divide · rPET",
@@ -82,7 +85,11 @@
       "statLandfill": "Residuos en vertedero",
       "statFreeLabel": "Gratis",
       "statTakeback": "Devolución",
-      "statColors": "Colores"
+      "statColors": "Colores",
+      "pill1": "100 % reciclado",
+      "pill2": "Recogida gratuita",
+      "pill3": "50+ colores",
+      "pill4": "Fábricas propias"
     }
   },
   "ticker": {
@@ -515,7 +522,8 @@
         "partnership": "Consulta de Asociación",
         "other": "Otro"
       },
-      "privacyNotice": "Al enviar este formulario, aceptas nuestra <link>política de privacidad</link>."
+      "privacyNotice": "Al enviar este formulario, aceptas nuestra <link>política de privacidad</link>.",
+      "honeypot": "Deje este campo vacío"
     },
     "info": {
       "title": "Información de Contacto",
@@ -774,7 +782,8 @@
       "healthcare": "Salud",
       "retail": "Comercio Minorista",
       "other": "Otro"
-    }
+    },
+    "honeypot": "Deje este campo vacío"
   },
   "productPage": {
     "nav": {

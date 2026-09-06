@@ -18,7 +18,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodMicroPage.specs.customSizes'), value: '100–3050 × 100–1220 mm' },
       { label: key('productPage.specLabels.thickness'), value: '8 - 19 mm' },
-      { label: key('productPage.specLabels.weight'), value: '~From 0,35 kg/m²' },
+      { label: key('productPage.specLabels.weight'), value: key('productData.specValues.fromWeight035') },
       { label: key('rwoodMicroPage.specs.dimCoreDensity'), value: '48,40 kg/m³' },
     ],
   },
@@ -27,17 +27,17 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.absorptionCoeff'), value: '0.90' },
       { label: key('rwoodMicroPage.specs.acWithMinWool'), value: 'Up to 1.00' },
-      { label: key('productPage.specs.absorptionClass'), value: 'Class A / C' },
+      { label: key('productPage.specs.absorptionClass'), value: key('productData.specValues.classAC') },
       { label: key('productPage.specLabels.testStandard'), value: 'ISO 354 / ISO 11654' },
     ],
   },
   {
     title: key('rwoodMicroPage.specs.perfsTitle'),
     rows: [
-      { label: 'Nano (⌀ 0.5mm)', value: '2.5% open area' },
-      { label: 'Micro S (⌀ 1.0mm)', value: '5.2% open area' },
-      { label: 'Micro M (⌀ 1.5mm)', value: '8.4% open area' },
-      { label: 'Micro L (⌀ 2.0mm)', value: '10.6% open area' },
+      { label: key('productData.specValues.perfNano'), value: key('productData.specValues.openArea25') },
+      { label: key('productData.specValues.perfMicroS'), value: key('productData.specValues.openArea52') },
+      { label: key('productData.specValues.perfMicroM'), value: key('productData.specValues.openArea84') },
+      { label: key('productData.specValues.perfMicroL'), value: key('productData.specValues.openArea106') },
     ],
   },
   {

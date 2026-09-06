@@ -44,7 +44,7 @@ const specs: SpecTableDef = [
       // productPage key is the one that was actually displayed.
       { label: key('productPage.specs.fireRating'), value: 'B-s1, d0' },
       { label: key('productPage.specLabels.testStandard'), value: 'EN 13501-1' },
-      { label: key('rpetFlexGroovePage.specs.fireSmokeProduction'), value: 's1 (low)' },
+      { label: key('rpetFlexGroovePage.specs.fireSmokeProduction'), value: key('productData.specValues.s1Low') },
       { label: key('rpetFlexGroovePage.specs.fireFlamingDroplets'), value: key('rpetFlexGroovePage.specs.fireFlamingDropletsVal') },
     ],
   },
