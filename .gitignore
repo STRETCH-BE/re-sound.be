@@ -28,3 +28,6 @@ yarn-error.log*
 
 # Vercel
 .vercel
+
+# Lighthouse raw reports (large); the summaries are committed
+/docs/lighthouse/*.json
