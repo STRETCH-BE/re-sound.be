@@ -1,0 +1,39 @@
+{
+  "placeId": null,
+  "rating": 5,
+  "reviewCount": 4,
+  "mapsUrl": "https://maps.google.com/?cid=14056110879742525405",
+  "writeReviewUrl": null,
+  "fetchedAt": "2026-09-06T00:00:00.000Z",
+  "source": "workbook",
+  "reviews": [
+    {
+      "author": "JustNicolas",
+      "rating": 5,
+      "relativeTime": "≈2022",
+      "text": "Een bedrijf gerund door twee creatieve ondernemers met een uitstekende service. Zeker een aanrader!",
+      "language": "nl"
+    },
+    {
+      "author": "Tim Van den bossche",
+      "rating": 5,
+      "relativeTime": "≈2022",
+      "text": "",
+      "language": "nl"
+    },
+    {
+      "author": "Yassine Aernouts",
+      "rating": 5,
+      "relativeTime": "≈2022",
+      "text": "",
+      "language": "nl"
+    },
+    {
+      "author": "(4th reviewer — not loaded)",
+      "rating": 5,
+      "relativeTime": "≈2022",
+      "text": "",
+      "language": "nl"
+    }
+  ]
+}

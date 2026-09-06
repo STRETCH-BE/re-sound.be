@@ -1,0 +1,92 @@
+{
+  "BP-001": {
+    "status": "Live",
+    "publishedDate": "2026-09-06",
+    "route": "/nl/blog/belcabine-kantoor-prijs-keuze-plaatsing"
+  },
+  "BP-002": {
+    "status": "Live",
+    "publishedDate": "2026-09-06",
+    "route": "/nl/blog/akoestiek-open-kantoor-verbeteren"
+  },
+  "BP-003": {
+    "status": "Live",
+    "publishedDate": "2026-09-06",
+    "route": "/nl/blog/pet-vilt-of-houten-akoestische-panelen"
+  },
+  "BP-004": {
+    "status": "Live",
+    "publishedDate": "2026-09-06",
+    "route": "/nl/blog/hoeveel-akoestische-panelen-nodig"
+  },
+  "BP-005": {
+    "status": "Live",
+    "publishedDate": "2026-09-06",
+    "route": "/nl/blog/nagalmtijd-klaslokaal-normen"
+  },
+  "BP-006": {
+    "status": "Live",
+    "publishedDate": "2026-09-06",
+    "route": "/nl/blog/akoestische-panelen-restaurant"
+  },
+  "BP-007": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/fr/blog/cabine-acoustique-bureau-prix"
+  },
+  "BP-008": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/fr/blog/panneaux-acoustiques-pet-recycle"
+  },
+  "BP-009": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/fr/blog/combien-de-panneaux-acoustiques"
+  },
+  "BP-010": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/fr/blog/panneau-acoustique-bois-microperfore"
+  },
+  "BP-011": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/de/blog/telefonbox-buero-kosten"
+  },
+  "BP-012": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/de/blog/akustikpaneele-recyceltes-pet"
+  },
+  "BP-013": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/de/blog/din-18041-nachhallzeit-buero"
+  },
+  "BP-014": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet"
+  },
+  "BP-015": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/en/blog/office-phone-booth-prices"
+  },
+  "BP-016": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/en/blog/pet-acoustic-panels-vs-wood"
+  },
+  "BP-017": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/en/blog/how-many-acoustic-panels-do-i-need"
+  },
+  "BP-018": {
+    "status": "Review",
+    "publishedDate": null,
+    "route": "/en/blog/specifying-acoustic-panels-aw-nrc-class-a"
+  }
+}

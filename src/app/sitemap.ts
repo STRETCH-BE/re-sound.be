@@ -3,8 +3,10 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { MetadataRoute } from 'next';
 
+import { BOOTH_GUIDE, GUIDE_LOCALES, guidePath, isGuideLocale } from '@/data/guides';
 import { HUB_IDS, HUBS, hubPath } from '@/data/hubs';
 import { PRODUCTS, PRODUCT_SLUGS } from '@/data/products';
+import { getContentPosts } from '@/lib/content/blog';
 import { SEO_LOCALES, defaultLocale } from '@/i18n/config';
 
 import enMessages from '../../messages/en.json';
@@ -135,6 +137,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
+    // Booth price guide: exists in GUIDE_LOCALES only, so its hreflang set is
+    // restricted to those locales (src/data/guides.ts).
+    if (isGuideLocale(locale)) {
+      entries.push({
+        url: `${base}/${locale}${guidePath(locale)}`,
+        lastModified: lastModified(
+          ['src/components/guides/BoothPriceGuide.tsx', 'src/app/[locale]/guides/phone-booth-prices/page.tsx', 'content/booth-guide.json'],
+          BOOTH_GUIDE.updatedAt
+        ),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(GUIDE_LOCALES.map((loc) => [loc, `${base}/${loc}${guidePath(loc)}`])),
+            'x-default': `${base}/${defaultLocale}${guidePath(defaultLocale)}`,
+          },
+        },
+      });
+    }
+
     // Product pages
     for (const slug of PRODUCT_SLUGS) {
       const product = PRODUCTS[slug];
@@ -147,6 +169,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly',
         priority: 0.8,
         alternates: alternatesFor(base, () => `/products/${slug}`),
+      });
+    }
+
+    // Editorial posts (content/blog/<locale>/*.md): single-locale, so no
+    // hreflang alternates; drafts are excluded.
+    for (const post of getContentPosts(locale)) {
+      entries.push({
+        url: `${base}/${locale}/blog/${post.slug}`,
+        lastModified: new Date(post.dateModified || post.datePublished),
+        changeFrequency: 'monthly',
+        priority: 0.6,
       });
     }
 

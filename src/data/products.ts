@@ -41,7 +41,8 @@ export interface ProductDocument {
 export type PriceUnit =
   | { unitCode: 'MTK'; unitText: 'per m²' }
   | { unitCode: 'C62'; unitText: 'per booth' }
-  | { unitCode: 'SET'; unitText: 'per set' };
+  | { unitCode: 'SET'; unitText: 'per set' }
+  | { unitCode: 'C62'; unitText: 'per piece' };
 
 export interface PanelSpecs {
   kind: 'panel';
@@ -125,6 +126,9 @@ const boothDocs = (slug: string): ProductDocument[] => [
 const PER_M2: PriceUnit = { unitCode: 'MTK', unitText: 'per m²' };
 const PER_BOOTH: PriceUnit = { unitCode: 'C62', unitText: 'per booth' };
 const PER_SET: PriceUnit = { unitCode: 'SET', unitText: 'per set' };
+/** Textile panels are priced per piece (workbook: "per stuk"); same UN/CEFACT code C62 as the booths. */
+const PER_PIECE: PriceUnit = { unitCode: 'C62', unitText: 'per piece' };
+void PER_SET;
 
 const RWOOD_FAQ = ['fscSource', 'fireRating', 'leadTime', 'installMethod', 'substrateCleanup'] as const;
 const RPET_FAQ = ['oekoTex', 'fireRating', 'processability', 'colorRange', 'leadTime'] as const;
@@ -145,7 +149,7 @@ export const PRODUCTS: Record<string, Product> = {
     certifications: [],
     // The page states "Starting from €387 per set" — the only confirmed price.
     fromPrice: 387,
-    priceUnit: PER_SET,
+    priceUnit: PER_SET, // Michael, 6 Sep 2026: €387 is the price per set
     heroImage: '/images/products/interior/hero.webp',
     cardImage: '/images/products/interior/interior_card.webp',
     documents: panelDocs('interior'),
@@ -165,12 +169,12 @@ export const PRODUCTS: Record<string, Product> = {
     material: 'Recycled textile fibres',
     certifications: [],
     fromPrice: null, // TODO(needs-Michael)
-    priceUnit: PER_M2,
+    priceUnit: PER_PIECE, // workbook: per stuk
     heroImage: '/images/products/solid/hero-denim.webp',
     cardImage: '/images/products/solid/solid_card.webp',
     documents: panelDocs('solid'),
     // TODO(needs-Michael): page table says 50 mm, messages say 45 mm; JSON-LD said B-s2,d0.
-    specs: { kind: 'panel', format: '1200 × 600 mm', thickness: '50 mm', alphaW: '0.95', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 5 },
+    specs: { kind: 'panel', format: '1200 × 600 mm', thickness: '50 mm', alphaW: '1.0', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 5 }, // αw 1.0 / class A per Products_Data
     faqKeys: ['leadTime', 'hookInstall', 'sizeCustomization', 'weightPerPanel', 'absorptionRating'],
     namespace: 'solidPage',
     metaKey: 'solid',
@@ -186,25 +190,25 @@ export const PRODUCTS: Record<string, Product> = {
     certifications: [],
     // The page states "Starting from €1,238 excl. VAT" per screen.
     fromPrice: 1238,
-    priceUnit: PER_SET,
+    priceUnit: PER_PIECE, // workbook: per stuk
     heroImage: '/images/products/divide/hero-denim.webp',
     cardImage: '/images/products/divide/divide_card.webp',
     documents: panelDocs('divide'),
     // αw 0.85 is per side (dual-sided screen). Old JSON-LD said αw 0.90 / B-s2,d0 — flagged.
-    specs: { kind: 'panel', format: '800 × 1600 mm', thickness: '45 mm', alphaW: '0.85', nrc: null, fireClass: 'B-s1,d0', finishCount: 6 },
+    specs: { kind: 'panel', format: '800 × 1600 mm', thickness: '45 mm', alphaW: '1.0', nrc: null, fireClass: 'B-s1,d0', finishCount: 6 }, // αw 1.0 / class A per Products_Data (page said 0.85 per side)
     faqKeys: ['leadTime', 'magneticConnection', 'dualSidedAbsorption', 'footStability', 'sizeCustomization'],
     namespace: 'dividePage',
     metaKey: 'divide',
     updatedAt: '2026-09-06',
   },
 
-  // ───────────── rWood (country of manufacture: TODO(needs-Michael)) ─────────────
+  // ───────────── rWood (made in Częstochowa — confirmed by Michael, 6 Sep 2026) ─────────────
   'rwood-groove': {
     slug: 'rwood-groove',
     family: 'rwood',
     name: 'rWood Groove',
-    madeIn: null, // TODO(needs-Michael): site only said "Made in Europe"
-    recycledContentPct: null, // TODO(needs-Michael): old JSON-LD claimed 60 %, nothing on the page supports a figure
+    madeIn: 'PL', // Products_Data: made in Częstochowa
+    recycledContentPct: 60, // Products_Data (status Backlog) — TODO(needs-Michael): confirm
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
     fromPrice: null, // TODO(needs-Michael)
@@ -214,7 +218,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-groove'),
     // Page: αw 0.90 (old JSON-LD 0.85); fire class depends on the core: standard MDF
     // D-s2,d2, fire-retardant MDF B-s1,d0 (FAQ said B-s2,d0) — all flagged.
-    specs: { kind: 'panel', format: '300 × 2400 / 2780 mm', thickness: '19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0 (FR core) / D-s2,d2', finishCount: 5 },
+    specs: { kind: 'panel', format: '300 × 2400 / 2780 mm', thickness: '19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 5 }, // fire class confirmed by Michael, 6 Sep 2026
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodGroovePage',
     metaKey: 'rwoodGroove',
@@ -224,7 +228,7 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'rwood-micro',
     family: 'rwood',
     name: 'rWood Micro',
-    madeIn: null, // TODO(needs-Michael)
+    madeIn: 'PL', // Products_Data: made in Częstochowa
     recycledContentPct: null, // TODO(needs-Michael)
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
@@ -244,7 +248,7 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'rwood-perf',
     family: 'rwood',
     name: 'rWood Perf',
-    madeIn: null, // TODO(needs-Michael)
+    madeIn: 'PL', // Products_Data: made in Częstochowa
     recycledContentPct: 17, // page badge "17% Recycled Content" (old JSON-LD said 60 %) — TODO(needs-Michael) confirm
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
@@ -265,7 +269,7 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'rwood-veneer',
     family: 'rwood',
     name: 'rWood Panel',
-    madeIn: null, // TODO(needs-Michael)
+    madeIn: 'PL', // Products_Data: made in Częstochowa
     recycledContentPct: null, // TODO(needs-Michael)
     material: 'FSC-certified wood veneer',
     certifications: ['FSC', 'EPD'],
@@ -289,8 +293,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rpet',
     name: 'rPET Panel',
     madeIn: 'PL',
-    // TODO(needs-Michael): copy said "up to 50%", title/meta/schema said "100%".
-    recycledContentPct: null,
+    recycledContentPct: 100, // Products_Data (old page copy said "up to 50%" — see docs/needs-michael.md)
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
     fromPrice: null, // TODO(needs-Michael)
@@ -332,7 +335,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rpet',
     name: 'rPET Flex Groove',
     madeIn: 'PL',
-    recycledContentPct: 100, // TODO(needs-Michael): confirm
+    recycledContentPct: 100, // Products_Data
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
     fromPrice: null, // TODO(needs-Michael)
@@ -353,11 +356,11 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'solo-flex',
     family: 'booth',
     name: 'Solo Flex',
-    madeIn: null, // TODO(needs-Michael): component comment calls it a white-label supplier product
+    madeIn: 'PL', // Products_Data: made in Częstochowa
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: 2740, // Booth_Guide: € 2 740 excl. VAT without installation (€ 3 605 incl.)
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/solo-flex/hero-solo-flex.webp',
     cardImage: '/images/products/solo-flex/solo-flex_card.webp',
@@ -372,11 +375,11 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'duo',
     family: 'booth',
     name: 'Duo',
-    madeIn: null, // TODO(needs-Michael)
+    madeIn: 'PL', // Products_Data: made in Częstochowa
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: 7615, // Michael, 6 Sep 2026: € 7 615 excl. VAT (not yet in the workbook)
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/duo/hero-duo.webp',
     cardImage: '/images/products/duo/duo_card.webp',
@@ -393,11 +396,11 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'modular-xl',
     family: 'booth',
     name: 'Modular XL',
-    madeIn: null, // TODO(needs-Michael)
+    madeIn: 'PL', // Products_Data: made in Częstochowa
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: 15000, // Booth_Guide: € 15 000 excl. VAT without installation (€ 17 990 incl.; +€ 7 264 per extra 90 cm element)
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/modular-xl/hero-modular-xl.webp',
     cardImage: '/images/products/modular-xl/modular-xl_card.webp',

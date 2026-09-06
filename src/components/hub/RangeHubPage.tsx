@@ -5,7 +5,9 @@ import Breadcrumbs from '@/components/product/Breadcrumbs';
 import ProductFaq from '@/components/product/ProductFaq';
 import JsonLd from '@/components/seo/JsonLd';
 import { SHOW_PLACEHOLDER_PRICES } from '@/config/site';
+import { guidePath, isGuideLocale } from '@/data/guides';
 import { HUBS, hubPath, type HubId } from '@/data/hubs';
+import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
 import { PRODUCTS, isoSpeechClass, type Product } from '@/data/products';
 import { Link } from '@/i18n/navigation';
 import {
@@ -22,6 +24,9 @@ interface RangeHubPageProps {
 }
 
 const NA = '—';
+
+/** Price unit text → hubs.shared.units.* key (translated per locale). */
+const UNIT_KEYS: Record<Product['priceUnit']['unitText'], string> = { 'per m²': 'm2', 'per booth': 'booth', 'per set': 'set', 'per piece': 'piece' };
 
 /**
  * Range hub page (server component): H1 → intro → comparison table → model
@@ -42,8 +47,10 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
   const isBooth = hub.family === 'booth';
 
   const applications = Object.values(t.raw('applications') as Record<string, string>);
-  const faqEntries: FaqEntry[] = Object.values(
-    t.raw('faq') as Record<string, { question: string; answer: string }>
+  // Hub FAQ (messages) + the workbook rows tagged for this hub, without duplicates
+  const faqEntries: FaqEntry[] = mergeFaqEntries(
+    Object.values(t.raw('faq') as Record<string, { question: string; answer: string }>),
+    faqFor(locale, hubId).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   const crumbs = [
@@ -53,9 +60,10 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
   ];
 
   // From-price cell: confirmed prices always; placeholders only behind the flag.
+  const unitOf = (p: Product) => ts(`units.${UNIT_KEYS[p.priceUnit.unitText]}`);
   const priceOf = (p: Product): string | null => {
-    if (p.fromPrice !== null) return ts('fromPriceValue', { price: p.fromPrice, unit: p.priceUnit.unitText });
-    if (SHOW_PLACEHOLDER_PRICES) return ts('fromPriceValue', { price: PLACEHOLDER_FROM_PRICE, unit: p.priceUnit.unitText }) + ' *';
+    if (p.fromPrice !== null) return ts('fromPriceValue', { price: p.fromPrice, unit: unitOf(p) });
+    if (SHOW_PLACEHOLDER_PRICES) return ts('fromPriceValue', { price: PLACEHOLDER_FROM_PRICE, unit: unitOf(p) }) + ' *';
     return null;
   };
   const showPrice = models.some((p) => priceOf(p) !== null);
@@ -169,6 +177,11 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
             </table>
           </div>
           {isBooth && <p className="hub-table-footnote">{ts('isoClassNote')}</p>}
+          {isBooth && isGuideLocale(locale) && (
+            <p className="hub-table-footnote">
+              <Link href={guidePath(locale)} prefetch={false}>{ts('priceGuideLink')} →</Link>
+            </p>
+          )}
         </section>
 
         {/* ── Model cards ──────────────────────────────────────────── */}

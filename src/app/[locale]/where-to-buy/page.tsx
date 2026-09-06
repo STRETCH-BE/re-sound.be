@@ -5,6 +5,8 @@ import { Metadata } from 'next';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
 import WhereToBuyPage from '@/components/sections/WhereToBuyPage';
+import ProductionOffice from '@/components/where-to-buy/ProductionOffice';
+import Testimonials from '@/components/testimonials/Testimonials';
 import JsonLd from '@/components/seo/JsonLd';
 import { localBusinessSchema } from '@/lib/structured-data';
 
@@ -42,6 +44,9 @@ export default async function WhereToBuyRoute({ params: { locale } }: WhereToBuy
       {/* The Beveren-Waas showroom is the physical place to see the range */}
       <JsonLd data={localBusinessSchema()} />
       <WhereToBuyPage />
+      {/* Second location from the content workbook (Dealers_Showrooms) */}
+      <ProductionOffice locale={locale} />
+      <Testimonials locale={locale} />
     </NextIntlClientProvider>
   );
 }

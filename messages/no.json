@@ -39,7 +39,7 @@
     "duoTitle": "Duo — kontortelefonboks og fokuspod for 2 personer | Re-Sound",
     "duoDescription": "Kontortelefonboks for to personer med to konfigurasjoner: Flex gir plass til to i møte, Work gir én person et bord i full bredde. 2 m², 230 V, ventilert.",
     "modularXlTitle": "Modular XL — akustisk møtepod for 6–10 personer | Re-Sound",
-    "modularXlDescription": "Akustisk møtepod for 6 til 10 personer: utvid basen i 90 cm-segmenter, 25,9 dB(A) talereduksjon, komplett A/V-tilrettelegging, tilgjengelig inngang.",
+    "modularXlDescription": "Akustisk møtepod for 6 til 10 personer: utvid basen i 90 cm-segmenter, 25,9 dB(A) talereduksjon, komplett A/V-tilrettelegging, bred terskelfri dør.",
     "partnerTitle": "Partnerprogram · trade- og forhandlerprogram",
     "partnerDescription": "Re-Sound partnerprogram for arkitekter, designere, forhandlere og distributører i Europa: prosjekteringsdokumentasjon, regionalt vern, direkte støtte.",
     "whereToBuyTitle": "Hvor du kan se og kjøpe Re-Sound",
@@ -540,7 +540,7 @@
       "phone": "Telefon",
       "address": "Adresse",
       "hours": "Åpningstider",
-      "hoursValue": "Mandag - Fredag: 9:00 - 17:00"
+      "hoursValue": "Mandag - Fredag: 8:00 - 16:30"
     },
     "faq": {
       "title": "Ofte stilte spørsmål",
@@ -587,7 +587,10 @@
       "company": "Bedrift",
       "design": "Design"
     },
-    "minRead": "{minutes} min lesing"
+    "minRead": "{minutes} min lesing",
+    "draftBanner": "Utkast til gjennomgang – ikke publisert, ikke indeksert.",
+    "by": "Av",
+    "ctaQuote": "Be om tilbud"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -720,7 +723,9 @@
     "manageCookies": "Administrer informasjonskapsler",
     "privacy": "Personvernpolicy",
     "terms": "Tjenestevilkår",
-    "countryBelgium": "Belgia"
+    "countryBelgium": "Belgia",
+    "reviewUs": "Gi oss en anmeldelse på Google",
+    "priceGuide": "Priser på telefonbokser"
   },
   "cookies": {
     "title": "Informasjonskapselinnstillinger",
@@ -946,7 +951,8 @@
     "related": {
       "tag": "OGSÅ I SERIEN",
       "title": "Andre modeller i serien",
-      "rangeLink": "Se hele {range}-serien"
+      "rangeLink": "Se hele {range}-serien",
+      "priceGuide": "Sammenlign priser og ISO-klasser for telefonbokser i prisguiden"
     },
     "a11y": {
       "selectColour": "Velg fargen {name}",
@@ -1706,7 +1712,7 @@
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Sirkulær i Kjernen",
-      "cert1": "Laget av Gjenvunne Flasker",
+      "cert1": "{pct, select, unknown {Innhold av resirkulert PET} other {{pct} % resirkulert innhold}}",
       "cert2": "Sirkulær Retur",
       "cert3": "OEKO-TEX® Klasse 1",
       "cert4": "Klasse A+ utslipp",
@@ -2340,7 +2346,7 @@
       "badge4": "Lave VOC-utslipp",
       "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
       "badge2Desc": "Fiberplatekjerne – en trebasert, brannklassifisert kjerne",
-      "badge3Desc": "Manufactured in Europe, reducing transport emissions",
+      "badge3Desc": "Korte forsyningskjeder som holder transportutslippene lave",
       "badge4Desc": "E1-klassifisert for sunnere inneluft",
       "description": "rWood - Micro-paneler er utviklet med bærekraft som et grunnprinsipp. FSC®-sertifisert tre, lavemitterende overflatebehandlinger og ansvarlig innkjøpte materialer sikrer miljøansvar gjennom hele produktets livssyklus."
     },
@@ -3028,7 +3034,14 @@
         "answer": "Bruk kontaktskjemaet på en produktside eller det generelle kontaktskjemaet med: produktlinjen du er interessert i, omtrentlige mengder eller plantegning og prosjekttidsplanen din. Vi svarer innen en virkedag med et skreddersydd tilbud, prøveordning og en beregning av forventet akustisk forbedring. For større prosjekter kan vi arrangere et stedsbesøk eller en briefingsamtale."
       }
     },
-    "categoriesLabel": "Kategorier"
+    "categoriesLabel": "Kategorier",
+    "groups": {
+      "Booths": "Telefonbokser og møtepoder",
+      "rPET": "rPET-paneler",
+      "rWood": "rWood-paneler",
+      "General": "Akustikk, materialer og bærekraft",
+      "Ordering": "Bestilling, priser og montering"
+    }
   },
   "boothPage": {
     "nav": {
@@ -3174,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Terskelfri tilgang",
-        "desc": "Flat terskel og 90 cm fri dørbredde oppfyller europeiske anbefalinger for tilgjengelighet på kontorer."
+        "desc": "Flat terskel og 90 cm fri dørbredde."
       },
       "safety": {
         "title": "Testet etter norm",
@@ -3344,8 +3357,8 @@
         "desc": "Varm/kald dimbar LED, egnet for videoanrop. Jevn belysning av begge ansikter i Flex-modus — ingen øyenskygger."
       },
       "accessibility": {
-        "title": "Bred terskelfri tilgang",
-        "desc": "100 cm fri dørbredde — oppfyller europeiske anbefalinger for tilgjengelighet og passer rullestoler. Terskelen er flat."
+        "title": "Bred terskelfri dør",
+        "desc": "100 cm fri dørbredde og flat terskel."
       },
       "safety": {
         "title": "Testet etter norm",
@@ -3454,7 +3467,7 @@
       "feature1": "Basismodul rommer opptil 6 sittende personer",
       "feature2": "90 cm-segmenter forlenger båsen opptil 10",
       "feature3": "25,9 dB(A) talereduksjon — møterom-klasse",
-      "feature4": "Fullt A/V-utstyr og tilgjengelig inngang fra design"
+      "feature4": "Fullt A/V-utstyr og bred terskelfri dør"
     },
     "acoustics": {
       "tag": "AKUSTISK YTELSE",
@@ -3507,8 +3520,8 @@
         "desc": "Dimbar varm/kald LED med separate soner for skjerm- og skriveoppgaver. Styres fra veggpanelet."
       },
       "accessibility": {
-        "title": "Rullestolstilgjengelig",
-        "desc": "110 cm fri dørbredde og flat terskel er kompatibel med rullestoler. Det innvendige layoutet gir plass til én rullestolsbruker ved bordet."
+        "title": "Bred terskelfri dør",
+        "desc": "110 cm fri dørbredde og flat terskel."
       },
       "safety": {
         "title": "Testet etter norm",
@@ -3612,8 +3625,8 @@
       "tag": "HVORFOR BLI PARTNER MED RE-SOUND",
       "title": "Seks grunner til å ta opp telefonen.",
       "item1": {
-        "title": "Laget i Belgia og Europa",
-        "desc": "Tekstillinjene produseres i Belgia; rWood i Europa; rPET i Polen. Korte forsyningskjeder, transparent opprinnelse og en kvalitet du kan stå inne for i en anbudsrunde."
+        "title": "Produsert i våre egne fabrikker",
+        "desc": "Tekstillinjene produseres i fabrikken vår i Beveren-Waas (Belgia) og rPET i fabrikken vår i Częstochowa (Polen); rWood produseres i Europa. Korte forsyningskjeder, transparent opprinnelse og en kvalitet du kan stå inne for i en anbudsrunde."
       },
       "item2": {
         "title": "En klar, ærlig serie",
@@ -3766,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Belgia",
       "hoursLabel": "Åpningstider",
-      "hoursValue": "Man–fre, 09:00–17:00 · etter avtale",
+      "hoursValue": "Man–fre, 08:00–16:30 · etter avtale",
       "contactLabel": "Kontakt",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3821,13 +3834,26 @@
       "emailLabel": "E-post",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Tider",
-      "hoursValue": "Man–fre, 09:00–17:00 CET"
+      "hoursValue": "Man–fre, 08:00–16:30 CET"
     },
     "cta": {
       "title": "Vil du komme og se det?",
       "subtitle": "Bestill et besøk på HQ, be om prøver eller avtal en demonstrasjon på stedet — det som passer best.",
       "primary": "Bestill et besøk",
       "secondary": "Be om prøver"
+    },
+    "office": {
+      "tag": "Produksjonskontor",
+      "title": "Re-Sound Polen – Częstochowa",
+      "description": "rWood- og rPET-panelene våre og alle boksene bygges i vår egen fabrikk i Częstochowa. Produksjonskontoret tar imot prosjektbesøk og fabrikkomvisninger etter avtale.",
+      "addressLabel": "Adresse",
+      "country": "Polen",
+      "hoursLabel": "Åpningstider",
+      "hoursValue": "Man–fre, 08:00–16:30 · etter avtale",
+      "languagesLabel": "Språk",
+      "languagesValue": "Nederlandsk, polsk, ukrainsk, russisk, engelsk",
+      "contactLabel": "Kontakt",
+      "phoneLabel": "Telefon"
     }
   },
   "manufacturer": {
@@ -3991,7 +4017,14 @@
       "ctaText": "Bestill et gratis prøvesett eller send oss tegningene dine for et tilbud – teamet vårt svarer innen én virkedag.",
       "ctaSampleKit": "Bestill prøvesett",
       "ctaQuote": "Be om tilbud",
-      "breadcrumbLabel": "Brødsmulesti"
+      "breadcrumbLabel": "Brødsmulesti",
+      "priceGuideLink": "Alle priser på telefonbokser, ISO-klasser og monteringsalternativer i prisguiden",
+      "units": {
+        "m2": "per m²",
+        "booth": "per boks",
+        "set": "per sett",
+        "piece": "per stk."
+      }
     },
     "rpet": {
       "title": "PET-akustikkpaneler av resirkulerte flasker | Re-Sound",
@@ -4072,7 +4105,7 @@
     "booths": {
       "title": "Akustiske telefonbokser og møtepods – Solo, Duo, XL | Re-Sound",
       "description": "Kontortelefonbokser og møtepods: Solo Flex (1 person), Duo (2 personer), Modular XL (6–10). ISO 23351-1-talereduksjon, stille ventilasjon, 230 V, USB-C.",
-      "h1": "Telefonbokser og møtepods for kontoret, bygget i Belgia",
+      "h1": "Telefonbokser og møtepods til kontoret fra egne fabrikker",
       "breadcrumb": "Telefonbokser",
       "intro": "En telefonboks for kontoret gir én person et stille, ventilert sted for samtaler og videomøter i et åpent kontorlandskap; en møtepod gjør det samme for et team. Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen). Boksserien finnes i tre størrelser. Solo Flex er telefonboksen for én person: 1 m² gulvflate, hev-senk-bord, 230 V og USB-C-strøm, stille EC-vifter og 24 dB(A) reduksjon av talenivå målt i henhold til ISO 23351-1. Duo er den akustiske telefonboksen for to personer med to konfigurasjoner – Flex for en samtale med to seter, Work for én person med bord i full bredde. Modular XL er den akustiske møtepoden for seks til ti personer: grunnenheten forlenges i segmenter på 90 cm og oppnår 25,9 dB(A) reduksjon av talenivå. Alle bokser leveres med 5 års konstruksjonsgaranti og leveres i hele EU, med montering inkludert på forespørsel. Sammenlign telefonboksene for kontoret nedenfor, og åpne deretter en modellside for tilbehør og nedlastinger.",
       "whyCertsDesc": "5 års konstruksjonsgaranti og 2 års garanti på elektronikk på alle bokser; reduksjon av talenivå oppgitt i henhold til ISO 23351-1.",
@@ -4099,7 +4132,7 @@
         },
         "q4": {
           "question": "Hvilken møtepod passer for seks personer eller flere?",
-          "answer": "Modular XL: grunnenheten har plass til seks, og hvert 90 cm-segment øker kapasiteten opp til ti personer, med A/V-forberedelse og universelt utformet inngang."
+          "answer": "Modular XL: grunnenheten har plass til seks, og hvert 90 cm-segment øker kapasiteten opp til ti personer, med A/V-forberedelse og bred terskelfri dør."
         },
         "q5": {
           "question": "Hva er leveringstiden og garantien for en telefonboks?",
@@ -4165,5 +4198,86 @@
       "body": "Vi klargjør prøvesettet ditt og sender det til <strong>{city}</strong> innen 3–5 virkedager. Sjekk innboksen din for en bekreftelse.",
       "close": "Lukk"
     }
+  },
+  "testimonials": {
+    "tag": "Anmeldelser",
+    "title": "Hva kundene sier",
+    "googleReviews": "{count, plural, one {# Google-anmeldelse} other {# Google-anmeldelser}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Gi oss en anmeldelse på Google"
+  },
+  "boothGuide": {
+    "title": "Telefonboks til kontor – priser og ISO-klasser 2026 | Re-Sound",
+    "description": "Hva koster en telefonboks? Solo Flex fra 2 740 € ekskl. mva., Modular XL fra 15 000 €. ISO 23351-1-klasser, ventilasjon, montering, levering og garanti.",
+    "h1": "Telefonbokser til kontor: priser, klasser og hvordan du velger",
+    "intro": "En akustisk telefonboks fra Re-Sound koster fra 2 740 € ekskl. mva. uten montering (Solo Flex), og en Modular XL møtepod fra 15 000 €. Nedenfor finner du alle prisene vi publiserer, hva som er inkludert, ISO 23351-1-klassene for talenivå oppgitt ærlig, og hvordan montering, testing og garanti fungerer. Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).",
+    "breadcrumb": "Priser på telefonbokser",
+    "priceTag": "Priser 2026",
+    "priceTitle": "Priser per modell (ekskl. mva.)",
+    "priceNote": "Prisene er ekskl. mva. og, utenfor Belgia, transport. Montering av vårt eget team er valgfritt; Solo Flex kan også monteres av to personer på under tre timer.",
+    "col": {
+      "model": "Modell",
+      "capacity": "Kapasitet",
+      "footprint": "Gulvflate",
+      "dimensions": "Utvendige mål (B×D×H)",
+      "priceExcl": "Fra, uten montering",
+      "priceIncl": "Fra, med montering",
+      "extra": "Ekstra 90 cm-element",
+      "iso": "ISO 23351-1",
+      "ventilation": "Ventilasjon",
+      "power": "Strøm",
+      "weight": "Vekt",
+      "assembly": "Montering",
+      "leadTime": "Leveringstid",
+      "warranty": "Garanti"
+    },
+    "onRequest": "På forespørsel",
+    "persons": "{count, plural, one {# person} other {# personer}}",
+    "personsRange": "6–10 personer (største bygget hittil: 20)",
+    "classLabel": "Klasse {class}",
+    "weeks": "{weeks} uker",
+    "warrantyValue": "5 år på konstruksjon · 2 år på elektronikk",
+    "includedTag": "Dette får du",
+    "includedTitle": "Hva som er inkludert i prisen",
+    "includedText": "Hver boks leveres som en komplett, ventilert enhet: skall med dør, dimbar LED-belysning, strøm ved bordet (230 V og USB-C på Solo Flex) og, på Solo Flex, det manuelle hev-senk-bordet. Ventilasjonen bruker stillegående EC-vifter; Solo Flex flytter 4,6 m³/min, og PIR-sensoren slår på viftene når noen er inne i boksen.",
+    "installationTag": "Montering",
+    "installationTitle": "Montering av Re-Sound eller egenmontering",
+    "installationText": "Montørene våre setter opp en telefonboks på rundt 60 minutter, en møtepod på rundt 2 timer og en Modular XL på 2 til 6 timer. Solo Flex kan også monteres av to personer på under tre timer: boksen er en flatpakket konstruksjon, så den kan demonteres og settes opp igjen i en annen etasje senere.",
+    "testingTag": "Prøv først",
+    "testingTitle": "Test en boks i showroomet vårt",
+    "testingText": "Du kan sette deg inn i alle modellene i showroomet vårt i Beveren-Waas (man–fre 08:00–16:30, etter avtale) og høre forskjellen selv før du bestiller.",
+    "classesTag": "Akustikk",
+    "classesTitle": "Hva ISO 23351-1-klassene betyr",
+    "classesText": "ISO 23351-1 måler hvor mye en lukket boks senker nivået på talen som slipper ut av den. Solo Flex reduserer tale med rundt 24 dB(A) og Modular XL med 25,9 dB(A): begge er klasse C. Det hindrer at vanlige samtaler og videomøter forstyrrer kontorlandskapet; klassene B, A og A+ reduserer talen ytterligere.",
+    "classCol": {
+      "class": "Klasse",
+      "threshold": "Reduksjon av talenivå",
+      "models": "Re-Sound-modeller"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "minst {db} dB",
+    "endOfLifeTitle": "Ved endt levetid",
+    "endOfLifeText": "En boks kan selges videre eller demonteres for gjenvinning: hvert materiale er gjenvinnbart.",
+    "faqTag": "FAQ",
+    "faqTitle": "Ofte stilte spørsmål om priser på telefonbokser",
+    "ctaTag": "Neste steg",
+    "ctaTitle": "Få et tilbud eller besøk showroomet",
+    "ctaText": "Send oss plantegningen og antall bokser, så svarer vi med et tilbud inkludert levering og montering.",
+    "ctaQuote": "Be om tilbud",
+    "ctaShowroom": "Planlegg et showroombesøk",
+    "tableCaption": "Priser og spesifikasjoner for telefonbokser per modell",
+    "assembly": {
+      "solo-flex": "Rundt 60 minutter av montørene våre, eller to personer på under 3 timer",
+      "duo": "Rundt 2 timer av montørene våre",
+      "modular-xl": "2 til 6 timer av montørene våre"
+    },
+    "classesNote": "Terskler: minste reduksjon av talenivå per klasse. Duo er ennå ikke målt.",
+    "endOfLifeTag": "Sirkulær"
   }
 }

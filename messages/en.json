@@ -39,7 +39,7 @@
     "duoTitle": "Duo — 2-Person Office Phone Booth & Focus Pod | Re-Sound",
     "duoDescription": "Two-person office phone booth with two configurations: Flex seats two for a meeting, Work gives one person a full-width desk. 2 m², 230 V, ventilated.",
     "modularXlTitle": "Modular XL — 6–10 Person Acoustic Meeting Pod | Re-Sound",
-    "modularXlDescription": "Acoustic meeting pod for 6 to 10 people: extend the base in 90 cm segments, 25.9 dB(A) speech reduction, full A/V provisions, accessible entry.",
+    "modularXlDescription": "Acoustic meeting pod for 6 to 10 people: extend the base in 90 cm segments, 25.9 dB(A) speech reduction, full A/V provisions, wide step-free door.",
     "partnerTitle": "Partner programme · trade and dealer programme",
     "partnerDescription": "Re-Sound partner programme for architects, designers, dealers and distributors across Europe: specifier documentation, regional protection, direct support.",
     "whereToBuyTitle": "Where to see and buy Re-Sound",
@@ -540,7 +540,7 @@
       "phone": "Phone",
       "address": "Address",
       "hours": "Business Hours",
-      "hoursValue": "Monday - Friday: 9:00 - 17:00"
+      "hoursValue": "Monday - Friday: 8:00 - 16:30"
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -587,7 +587,10 @@
       "company": "Company",
       "design": "Design"
     },
-    "minRead": "{minutes} min read"
+    "minRead": "{minutes} min read",
+    "draftBanner": "Draft for review — not published, not indexed.",
+    "by": "By",
+    "ctaQuote": "Request a quote"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -720,7 +723,9 @@
     "manageCookies": "Manage cookies",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "countryBelgium": "Belgium"
+    "countryBelgium": "Belgium",
+    "reviewUs": "Review us on Google",
+    "priceGuide": "Phone booth prices"
   },
   "cookies": {
     "title": "Cookie preferences",
@@ -946,7 +951,8 @@
     "related": {
       "tag": "ALSO IN THE RANGE",
       "title": "Other models in this range",
-      "rangeLink": "See the whole {range} range"
+      "rangeLink": "See the whole {range} range",
+      "priceGuide": "Compare booth prices and ISO classes in the price guide"
     },
     "a11y": {
       "selectColour": "Select {name} colour",
@@ -3025,7 +3031,14 @@
         "answer": "Use the contact form on any product page, or the general contact form, with: the product line you are interested in, approximate quantities or floor plan, and your project timeline. We will respond within one working day with a tailored quote, sample arrangement, and a calculation of expected acoustic improvement. For larger projects we can attend a site visit or briefing call."
       }
     },
-    "categoriesLabel": "Categories"
+    "categoriesLabel": "Categories",
+    "groups": {
+      "Booths": "Phone booths and meeting pods",
+      "rPET": "rPET panels",
+      "rWood": "rWood panels",
+      "General": "Acoustics, materials and sustainability",
+      "Ordering": "Ordering, prices and installation"
+    }
   },
   "boothPage": {
     "nav": {
@@ -3171,7 +3184,7 @@
       },
       "accessibility": {
         "title": "Step-free entry",
-        "desc": "Flat threshold and 90 cm clear door width meet European accessibility guidance for office facilities."
+        "desc": "Flat threshold and 90 cm clear door width."
       },
       "safety": {
         "title": "Tested to standard",
@@ -3341,8 +3354,8 @@
         "desc": "Warm/cool dimmable LED rated for video calls. Even illumination on both faces in Flex mode — no shadowed eyes."
       },
       "accessibility": {
-        "title": "Wide step-free entry",
-        "desc": "100 cm clear door width — meets European accessibility guidance and accommodates wheelchairs. Threshold is flat."
+        "title": "Wide step-free door",
+        "desc": "100 cm clear door width and a flat threshold."
       },
       "safety": {
         "title": "Tested to standard",
@@ -3451,7 +3464,7 @@
       "feature1": "Base unit accommodates up to 6 people seated",
       "feature2": "90 cm segments extend the booth to 10",
       "feature3": "25.9 dB(A) speech reduction — meeting-room class",
-      "feature4": "Full A/V provisions and accessible-by-design entry"
+      "feature4": "Full A/V provisions and a wide step-free door"
     },
     "acoustics": {
       "tag": "ACOUSTIC PERFORMANCE",
@@ -3504,8 +3517,8 @@
         "desc": "Dimmable warm/cool LED with separate zones for screen and writing tasks. Adjustable from the wall panel."
       },
       "accessibility": {
-        "title": "Wheelchair-accessible",
-        "desc": "110 cm clear door width and flat threshold accommodate wheelchairs. Interior layout leaves room for one chair-using participant at the table."
+        "title": "Wide step-free door",
+        "desc": "110 cm clear door width and a flat threshold."
       },
       "safety": {
         "title": "Tested to standard",
@@ -3763,7 +3776,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Belgium",
       "hoursLabel": "Opening hours",
-      "hoursValue": "Mon–Fri, 09:00–17:00 · by appointment",
+      "hoursValue": "Mon–Fri, 08:00–16:30 · by appointment",
       "contactLabel": "Contact",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3818,13 +3831,26 @@
       "emailLabel": "Email",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Hours",
-      "hoursValue": "Mon–Fri, 09:00–17:00 CET"
+      "hoursValue": "Mon–Fri, 08:00–16:30 CET"
     },
     "cta": {
       "title": "Want to come see it?",
       "subtitle": "Book a visit at HQ, request samples, or arrange an on-site demo — whichever works.",
       "primary": "Book a visit",
       "secondary": "Request samples"
+    },
+    "office": {
+      "tag": "PRODUCTION OFFICE",
+      "title": "Re-Sound Poland — Częstochowa",
+      "description": "Our rWood and rPET panels and all booths are built in our own plant in Częstochowa. The production office welcomes project visits and factory tours by appointment.",
+      "addressLabel": "Address",
+      "country": "Poland",
+      "hoursLabel": "Opening hours",
+      "hoursValue": "Mon–Fri, 08:00–16:30 · by appointment",
+      "languagesLabel": "Languages",
+      "languagesValue": "Dutch, Polish, Ukrainian, Russian, English",
+      "contactLabel": "Contact",
+      "phoneLabel": "Phone"
     }
   },
   "manufacturer": {
@@ -3988,7 +4014,14 @@
       "ctaText": "Order a free sample kit or send us your drawings for a quote — our team answers within one working day.",
       "ctaSampleKit": "Order a sample kit",
       "ctaQuote": "Request a quote",
-      "breadcrumbLabel": "Breadcrumb"
+      "breadcrumbLabel": "Breadcrumb",
+      "priceGuideLink": "All booth prices, ISO classes and installation options in the price guide",
+      "units": {
+        "m2": "per m²",
+        "booth": "per booth",
+        "set": "per set",
+        "piece": "per piece"
+      }
     },
     "rpet": {
       "title": "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound",
@@ -4069,7 +4102,7 @@
     "booths": {
       "title": "Acoustic Phone Booths & Office Pods — Solo, Duo, Modular XL | Re-Sound",
       "description": "Office phone booths and meeting pods: Solo Flex (1 person), Duo (2 persons), Modular XL (6–10). ISO 23351-1 speech reduction, silent ventilation, 230 V.",
-      "h1": "Office phone booths and meeting pods, built in Belgium",
+      "h1": "Office phone booths and meeting pods, from our own factories",
       "breadcrumb": "Booths",
       "intro": "An office phone booth gives one person a quiet, ventilated place for calls and video meetings inside an open-plan floor; a meeting pod does the same for a team. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The booth range has three sizes. Solo Flex is the one-person office phone booth: a 1 m² footprint, a sit-stand desk, 230 V and USB-C power, silent EC fans and a 24 dB(A) speech level reduction measured under ISO 23351-1. Duo is the two-person acoustic phone booth with two configurations — Flex for a two-seat conversation, Work for one person with a full-width desk. Modular XL is the acoustic meeting pod for six to ten people: the base unit extends in 90 cm segments and reaches 25.9 dB(A) speech level reduction. All booths come with a 5-year structural warranty and are delivered EU-wide, installation included on request. Compare the office phone booths below, then open a model page for add-ons and downloads.",
       "whyCertsDesc": "5-year structural warranty and 2-year electronics warranty on every booth; speech level reduction quoted per ISO 23351-1.",
@@ -4096,7 +4129,7 @@
         },
         "q4": {
           "question": "Which meeting pod fits six people or more?",
-          "answer": "Modular XL: the base unit seats six and each 90 cm segment adds capacity up to ten, with A/V provisions and an accessible entry."
+          "answer": "Modular XL: the base unit seats six and each 90 cm segment adds capacity up to ten, with A/V provisions and a wide step-free door."
         },
         "q5": {
           "question": "What are the lead time and warranty for a phone booth?",
@@ -4162,5 +4195,86 @@
       "body": "We'll prepare your sample kit and ship it to <strong>{city}</strong> within 3–5 business days. Check your inbox for a confirmation.",
       "close": "Close"
     }
+  },
+  "testimonials": {
+    "tag": "REVIEWS",
+    "title": "What customers say",
+    "googleReviews": "{count, plural, one {# Google review} other {# Google reviews}}",
+    "viaGoogle": "via Google",
+    "reviewUs": "Review us on Google"
+  },
+  "boothGuide": {
+    "title": "Office phone booth prices & ISO classes 2026 | Re-Sound",
+    "description": "Office phone booth prices: Solo Flex from €2,740 excl. VAT, Modular XL from €15,000. ISO 23351-1 classes, installation, lead time and warranty explained.",
+    "h1": "Office phone booths: prices, classes and how to choose",
+    "intro": "A Re-Sound office phone booth costs from €2,740 excl. VAT without installation (Solo Flex) and a Modular XL meeting pod from €15,000. Below you find every price we publish, what is included, the ISO 23351-1 speech-level classes stated honestly, and how installation, testing and warranty work. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).",
+    "breadcrumb": "Phone booth prices",
+    "priceTag": "PRICES 2026",
+    "priceTitle": "Prices per model (excl. VAT)",
+    "priceNote": "Prices exclude VAT and, outside Belgium, transport. Installation by our own team is optional; Solo Flex can also be assembled by two people in under three hours.",
+    "col": {
+      "model": "Model",
+      "capacity": "Capacity",
+      "footprint": "Footprint",
+      "dimensions": "External dimensions (W×D×H)",
+      "priceExcl": "From, without installation",
+      "priceIncl": "From, with installation",
+      "extra": "Extra 90 cm element",
+      "iso": "ISO 23351-1",
+      "ventilation": "Ventilation",
+      "power": "Power",
+      "weight": "Weight",
+      "assembly": "Assembly",
+      "leadTime": "Lead time",
+      "warranty": "Warranty"
+    },
+    "onRequest": "On request",
+    "persons": "{count, plural, one {# person} other {# persons}}",
+    "personsRange": "6–10 persons (largest built so far: 20)",
+    "classLabel": "Class {class}",
+    "weeks": "{weeks} weeks",
+    "warrantyValue": "5 years structure · 2 years electronics",
+    "includedTag": "WHAT YOU GET",
+    "includedTitle": "What is included in the price",
+    "includedText": "Every booth ships as a complete, ventilated unit: shell with door, dimmable LED lighting, power at the desk (230 V and USB-C on Solo Flex) and, on Solo Flex, the manual sit-stand desk. Ventilation uses silent EC fans; Solo Flex moves 4.6 m³/min and its PIR sensor switches the fans on when someone is inside.",
+    "installationTag": "INSTALLATION",
+    "installationTitle": "Installation by Re-Sound or self-assembly",
+    "installationText": "Our installers place a call booth in about 60 minutes, a meeting pod in about 2 hours and a Modular XL in 2 to 6 hours. Solo Flex can also be assembled by two people in under three hours: the booth is a flat-pack construction, so it can be demounted and rebuilt on another floor later.",
+    "testingTag": "TRY IT FIRST",
+    "testingTitle": "Test a booth in our showroom",
+    "testingText": "You can sit inside every model in our Beveren-Waas showroom (Mon–Fri 08:00–16:30, by appointment) and hear the difference for yourself before you order.",
+    "classesTag": "ACOUSTICS",
+    "classesTitle": "What the ISO 23351-1 classes mean",
+    "classesText": "ISO 23351-1 measures how much a closed booth lowers the level of speech coming out of it. Solo Flex reduces speech by about 24 dB(A) and Modular XL by 25.9 dB(A): both are Class C. That keeps normal calls and video meetings from disturbing the floor; classes B, A and A+ reduce speech further.",
+    "classCol": {
+      "class": "Class",
+      "threshold": "Speech-level reduction",
+      "models": "Re-Sound models"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "at least {db} dB",
+    "endOfLifeTitle": "End of life",
+    "endOfLifeText": "A booth can be resold or taken apart for recycling: each material is recyclable.",
+    "faqTag": "FAQ",
+    "faqTitle": "Frequently asked questions about booth prices",
+    "ctaTag": "NEXT STEP",
+    "ctaTitle": "Get a quote or visit the showroom",
+    "ctaText": "Send us your floor plan and the number of booths; we reply with a quote including delivery and installation.",
+    "ctaQuote": "Request a quote",
+    "ctaShowroom": "Plan a showroom visit",
+    "tableCaption": "Booth prices and specifications per model",
+    "assembly": {
+      "solo-flex": "About 60 minutes by our installers, or two people in under 3 hours",
+      "duo": "About 2 hours by our installers",
+      "modular-xl": "2 to 6 hours by our installers"
+    },
+    "classesNote": "Thresholds: the minimum speech-level reduction per class. Duo has not been measured yet.",
+    "endOfLifeTag": "CIRCULAR"
   }
 }

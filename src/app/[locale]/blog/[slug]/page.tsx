@@ -6,8 +6,10 @@ import { Metadata } from 'next';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
 import { blogPostingSchema, breadcrumbSchema } from '@/lib/structured-data';
+import { getContentPost, getContentPosts } from '@/lib/content/blog';
 import JsonLd from '@/components/seo/JsonLd';
 
+import ContentPost from '@/components/blog/ContentPost';
 import BlogPostHeader from '@/components/sections/BlogPostHeader';
 import BlogPostContent from '@/components/sections/BlogPostContent';
 import BlogPostAuthor from '@/components/sections/BlogPostAuthor';
@@ -21,9 +23,7 @@ interface BlogPostPageProps {
   };
 }
 
-// The complete set of published posts. Any other slug is a hard 404 —
-// without this check the route returned HTTP 200 with raw i18n keys for
-// every conceivable URL, an infinite soft-404 space for crawlers.
+// The legacy (message-driven) posts, published in every locale.
 const BLOG_SLUGS = [
   'circular-economy-acoustics',
   'office-acoustic-solutions',
@@ -31,18 +31,43 @@ const BLOG_SLUGS = [
   'sound-absorption-explained',
 ];
 
-// Static params for blog posts
-export function generateStaticParams() {
-  return BLOG_SLUGS.map((slug) => ({ slug }));
+/**
+ * Static params per locale: the four legacy posts everywhere, plus the
+ * editorial posts of that locale (content/blog/<locale>/*.md, drafts
+ * included so they can be previewed). Any other slug is a hard 404.
+ */
+export function generateStaticParams({ params }: { params: { locale: string } }) {
+  const editorial = getContentPosts(params.locale, { includeDrafts: true }).map((p) => ({ slug: p.slug }));
+  return [...BLOG_SLUGS.map((slug) => ({ slug })), ...editorial];
 }
 
-// Unknown slugs 404 instead of rendering an empty shell.
 export const dynamicParams = false;
 
-// Generate metadata for SEO
 export async function generateMetadata({
   params: { locale, slug },
 }: BlogPostPageProps): Promise<Metadata> {
+  const post = getContentPost(locale, slug);
+  if (post) {
+    // Single-locale editorial post: canonical to itself, no hreflang
+    // alternates (it is not translated). Drafts are noindex.
+    return {
+      title: { absolute: post.title },
+      description: post.description,
+      robots: post.draft ? { index: false, follow: false } : { index: true, follow: true },
+      openGraph: {
+        title: post.h1,
+        description: post.description,
+        type: 'article',
+        publishedTime: post.datePublished,
+        modifiedTime: post.dateModified,
+        authors: [post.author.name],
+        locale: ogLocale(locale),
+        images: [{ url: post.heroImage, width: 1600, height: 900, alt: post.heroAlt }],
+      },
+      alternates: { canonical: `/${locale}/blog/${post.slug}` },
+    };
+  }
+
   if (!BLOG_SLUGS.includes(slug)) {
     return {};
   }
@@ -77,12 +102,25 @@ export async function generateMetadata({
 }
 
 export default async function BlogPostPage({ params: { locale, slug } }: BlogPostPageProps) {
+  setRequestLocale(locale);
+
+  const post = getContentPost(locale, slug);
+  if (post) {
+    const related = getContentPosts(locale).filter((p) => p.slug !== post.slug).slice(0, 3);
+    const messages = pickMessages(await getMessages(), ['newsletter']);
+    return (
+      <>
+        <ContentPost post={post} related={related} />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Newsletter />
+        </NextIntlClientProvider>
+      </>
+    );
+  }
+
   if (!BLOG_SLUGS.includes(slug)) {
     notFound();
   }
-
-  // Enable static rendering - must be called before any other next-intl functions
-  setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'blogPosts' });
   const tBlog = await getTranslations({ locale, namespace: 'blog' });

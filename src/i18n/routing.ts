@@ -1,5 +1,6 @@
 import { defineRouting } from 'next-intl/routing';
 
+import { guidePathnames } from '@/data/guides';
 import { hubPathnames } from '@/data/hubs';
 import { defaultLocale, locales } from './config';
 
@@ -20,5 +21,5 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix: 'always',
-  pathnames: hubPathnames(),
+  pathnames: { ...hubPathnames(), ...guidePathnames() },
 });

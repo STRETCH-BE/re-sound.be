@@ -39,7 +39,7 @@
     "duoTitle": "Duo — Cabina telefónica de oficina para 2 personas | Re-Sound",
     "duoDescription": "Cabina telefónica de oficina con dos configuraciones: Flex sienta a dos para reunirse, Work da a una persona una mesa amplia. 2 m², 230 V, ventilada.",
     "modularXlTitle": "Modular XL — Pod de reuniones acústico, 6–10 personas | Re-Sound",
-    "modularXlDescription": "Pod de reuniones acústico para 6 a 10 personas: base ampliable en segmentos de 90 cm, 25,9 dB(A) de reducción de voz, A/V completo, acceso accesible.",
+    "modularXlDescription": "Pod de reuniones acústico para 6 a 10 personas: base ampliable en segmentos de 90 cm, 25,9 dB(A) de reducción de voz, A/V completo, puerta sin escalón.",
     "partnerTitle": "Programa de partners · programa trade y distribuidor",
     "partnerDescription": "Programa de partners Re-Sound para arquitectos, diseñadores y distribuidores en Europa: documentación técnica, protección regional, soporte directo.",
     "whereToBuyTitle": "Dónde ver y comprar Re-Sound",
@@ -540,7 +540,7 @@
       "phone": "Teléfono",
       "address": "Dirección",
       "hours": "Horario Comercial",
-      "hoursValue": "Lunes - Viernes: 9:00 - 17:00"
+      "hoursValue": "Lunes - Viernes: 8:00 - 16:30"
     },
     "faq": {
       "title": "Preguntas Frecuentes",
@@ -587,7 +587,10 @@
       "company": "Empresa",
       "design": "Diseño"
     },
-    "minRead": "{minutes} min de lectura"
+    "minRead": "{minutes} min de lectura",
+    "draftBanner": "Borrador para revisión: no publicado, no indexado.",
+    "by": "Por",
+    "ctaQuote": "Solicitar presupuesto"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -720,7 +723,9 @@
     "manageCookies": "Gestionar cookies",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "countryBelgium": "Bélgica"
+    "countryBelgium": "Bélgica",
+    "reviewUs": "Déjenos una reseña en Google",
+    "priceGuide": "Precios de cabinas telefónicas"
   },
   "cookies": {
     "title": "Preferencias de cookies",
@@ -946,7 +951,8 @@
     "related": {
       "tag": "TAMBIÉN EN LA GAMA",
       "title": "Otros modelos de la gama",
-      "rangeLink": "Ver toda la gama {range}"
+      "rangeLink": "Ver toda la gama {range}",
+      "priceGuide": "Compare los precios de las cabinas y las clases ISO en la guía de precios"
     },
     "a11y": {
       "selectColour": "Seleccionar el color {name}",
@@ -1706,7 +1712,7 @@
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
       "title": "Circular en el Núcleo",
-      "cert1": "Hecho con Botellas Recicladas",
+      "cert1": "{pct, select, unknown {Contenido de PET reciclado} other {{pct}% de contenido reciclado}}",
       "cert2": "Devolución Circular",
       "cert3": "OEKO-TEX® Clase 1",
       "cert4": "Emisiones Clase A+",
@@ -3028,7 +3034,14 @@
         "answer": "Use el formulario de contacto de una página de producto o el formulario general, indicando: la línea de producto que le interesa, cantidades aproximadas o plano, y el calendario del proyecto. Respondemos en un día laborable con un presupuesto a medida, propuesta de muestras y cálculo de la mejora acústica esperada. Para proyectos mayores podemos organizar una visita al sitio o una llamada de briefing."
       }
     },
-    "categoriesLabel": "Categorías"
+    "categoriesLabel": "Categorías",
+    "groups": {
+      "Booths": "Cabinas telefónicas y pods de reuniones",
+      "rPET": "Paneles rPET",
+      "rWood": "Paneles rWood",
+      "General": "Acústica, materiales y sostenibilidad",
+      "Ordering": "Pedidos, precios e instalación"
+    }
   },
   "boothPage": {
     "nav": {
@@ -3174,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Entrada sin escalón",
-        "desc": "Umbral plano y 90 cm de anchura libre cumplen las recomendaciones europeas de accesibilidad para oficinas."
+        "desc": "Umbral plano y 90 cm de anchura libre de puerta."
       },
       "safety": {
         "title": "Probada según norma",
@@ -3344,8 +3357,8 @@
         "desc": "LED regulable cálido/frío apta para videollamadas. Iluminación uniforme de ambos rostros en modo Flex — sin sombras bajo los ojos."
       },
       "accessibility": {
-        "title": "Entrada ancha sin escalón",
-        "desc": "100 cm de anchura libre de puerta — cumple las recomendaciones europeas de accesibilidad y permite sillas de ruedas. Umbral plano."
+        "title": "Puerta ancha sin escalón",
+        "desc": "100 cm de anchura libre de puerta y umbral plano."
       },
       "safety": {
         "title": "Probada según norma",
@@ -3454,7 +3467,7 @@
       "feature1": "Módulo base acomoda hasta 6 personas sentadas",
       "feature2": "Segmentos de 90 cm extienden la cabina hasta 10",
       "feature3": "Reducción de voz de 25,9 dB(A) — categoría sala de reuniones",
-      "feature4": "Equipamiento A/V completo y entrada accesible por diseño"
+      "feature4": "Equipamiento A/V completo y puerta ancha sin escalón"
     },
     "acoustics": {
       "tag": "RENDIMIENTO ACÚSTICO",
@@ -3507,8 +3520,8 @@
         "desc": "LED regulable cálido/frío con zonas separadas para tareas de pantalla y de escritura. Controlable desde el panel de pared."
       },
       "accessibility": {
-        "title": "Accesible para sillas de ruedas",
-        "desc": "110 cm de anchura libre de puerta y umbral plano son compatibles con sillas de ruedas. La distribución interior reserva espacio para una persona en silla en la mesa."
+        "title": "Puerta ancha sin escalón",
+        "desc": "110 cm de anchura libre de puerta y umbral plano."
       },
       "safety": {
         "title": "Probada según norma",
@@ -3766,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Bélgica",
       "hoursLabel": "Horario",
-      "hoursValue": "Lu–Vi, 09:00–17:00 · con cita",
+      "hoursValue": "Lu–Vi, 08:00–16:30 · con cita",
       "contactLabel": "Contacto",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3821,13 +3834,26 @@
       "emailLabel": "Correo electrónico",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Horario",
-      "hoursValue": "Lu–Vi, 09:00–17:00 CET"
+      "hoursValue": "Lu–Vi, 08:00–16:30 CET"
     },
     "cta": {
       "title": "¿Quieres venir a verlo?",
       "subtitle": "Reserva una visita en HQ, pide muestras o concierta una demostración a domicilio — lo que mejor te venga.",
       "primary": "Reservar visita",
       "secondary": "Pedir muestras"
+    },
+    "office": {
+      "tag": "Oficina de producción",
+      "title": "Re-Sound Polonia — Częstochowa",
+      "description": "Nuestros paneles rWood y rPET y todas las cabinas se fabrican en nuestra propia planta de Częstochowa. La oficina de producción recibe visitas de proyecto y visitas a la fábrica con cita previa.",
+      "addressLabel": "Dirección",
+      "country": "Polonia",
+      "hoursLabel": "Horario de apertura",
+      "hoursValue": "Lun–Vie, 08:00–16:30 · con cita previa",
+      "languagesLabel": "Idiomas",
+      "languagesValue": "Neerlandés, polaco, ucraniano, ruso, inglés",
+      "contactLabel": "Contacto",
+      "phoneLabel": "Teléfono"
     }
   },
   "manufacturer": {
@@ -3991,7 +4017,14 @@
       "ctaText": "Solicite un kit de muestras gratuito o envíenos sus planos para recibir un presupuesto: nuestro equipo le responde en un día laborable.",
       "ctaSampleKit": "Solicitar un kit de muestras",
       "ctaQuote": "Solicitar presupuesto",
-      "breadcrumbLabel": "Ruta de navegación"
+      "breadcrumbLabel": "Ruta de navegación",
+      "priceGuideLink": "Todos los precios de las cabinas, las clases ISO y las opciones de instalación en la guía de precios",
+      "units": {
+        "m2": "por m²",
+        "booth": "por cabina",
+        "set": "por juego",
+        "piece": "por unidad"
+      }
     },
     "rpet": {
       "title": "Paneles acústicos PET de botellas recicladas | Re-Sound",
@@ -4072,7 +4105,7 @@
     "booths": {
       "title": "Cabinas acústicas y pods: Solo, Duo, Modular XL | Re-Sound",
       "description": "Cabinas telefónicas de oficina y pods de reuniones: Solo Flex (1 pers.), Duo (2), Modular XL (6–10). Reducción de voz ISO 23351-1, ventilación silenciosa.",
-      "h1": "Cabinas telefónicas de oficina y pods de reuniones, fabricados en Bélgica",
+      "h1": "Cabinas telefónicas y pods de reuniones para oficina, de fabricación propia",
       "breadcrumb": "Cabinas",
       "intro": "Una cabina telefónica de oficina ofrece a una persona un espacio silencioso y ventilado para llamadas y videorreuniones dentro de una planta diáfana; un pod de reuniones hace lo mismo para un equipo. Re-Sound es una marca de STRETCH Group. Fabricamos en nuestras fábricas propias de Beveren-Waas (Bélgica) y Częstochowa (Polonia). La gama de cabinas tiene tres tamaños. Solo Flex es la cabina telefónica de oficina individual: 1 m² de superficie, mesa regulable en altura, alimentación de 230 V y USB-C, ventiladores EC silenciosos y una reducción del nivel de voz de 24 dB(A) medida según ISO 23351-1. Duo es la cabina acústica para dos personas con dos configuraciones: Flex para una conversación a dos y Work para una persona con mesa de ancho completo. Modular XL es el pod de reuniones acústico para seis a diez personas: la unidad base se amplía en segmentos de 90 cm y alcanza una reducción del nivel de voz de 25,9 dB(A). Todas las cabinas incluyen una garantía estructural de 5 años y se entregan en toda la UE, con instalación incluida bajo petición. Compare las cabinas telefónicas de oficina a continuación y abra la página de cada modelo para ver accesorios y descargas.",
       "whyCertsDesc": "Garantía estructural de 5 años y garantía de 2 años para la electrónica en todas las cabinas; reducción del nivel de voz indicada según ISO 23351-1.",
@@ -4099,7 +4132,7 @@
         },
         "q4": {
           "question": "¿Qué pod de reuniones admite seis personas o más?",
-          "answer": "Modular XL: la unidad base tiene capacidad para seis personas y cada segmento de 90 cm amplía la capacidad hasta diez, con preinstalación A/V y acceso adaptado."
+          "answer": "Modular XL: la unidad base tiene capacidad para seis personas y cada segmento de 90 cm amplía la capacidad hasta diez, con preinstalación A/V y una puerta ancha sin escalón."
         },
         "q5": {
           "question": "¿Cuáles son el plazo de entrega y la garantía de una cabina telefónica?",
@@ -4165,5 +4198,86 @@
       "body": "Prepararemos su kit de muestras y lo enviaremos a <strong>{city}</strong> en un plazo de 3–5 días laborables. Revise su bandeja de entrada para ver la confirmación.",
       "close": "Cerrar"
     }
+  },
+  "testimonials": {
+    "tag": "Reseñas",
+    "title": "Lo que dicen nuestros clientes",
+    "googleReviews": "{count, plural, one {# reseña de Google} other {# reseñas de Google}}",
+    "viaGoogle": "vía Google",
+    "reviewUs": "Déjenos una reseña en Google"
+  },
+  "boothGuide": {
+    "title": "Cabinas telefónicas de oficina: precios e ISO 2026 | Re-Sound",
+    "description": "¿Cuánto cuesta una cabina telefónica de oficina? Solo Flex desde 2.740 € sin IVA, Modular XL desde 15.000 €. Clases ISO 23351-1, instalación y garantía.",
+    "h1": "Cabinas telefónicas de oficina: precios, clases y cómo elegir",
+    "intro": "Una cabina telefónica de oficina Re-Sound cuesta desde 2.740 € sin IVA sin instalación (Solo Flex) y un pod de reuniones Modular XL desde 15.000 €. A continuación encontrará todos los precios que publicamos, qué está incluido, las clases de nivel de voz ISO 23351-1 indicadas con honestidad y cómo funcionan la instalación, las pruebas y la garantía. Re-Sound es una marca de Stretch Group. Fabricamos en nuestras propias plantas de Beveren-Waas (Bélgica) y Częstochowa (Polonia).",
+    "breadcrumb": "Precios de cabinas telefónicas",
+    "priceTag": "Precios 2026",
+    "priceTitle": "Precios por modelo (sin IVA)",
+    "priceNote": "Los precios no incluyen IVA ni, fuera de Bélgica, el transporte. La instalación por nuestro propio equipo es opcional; Solo Flex también puede ser montada por dos personas en menos de tres horas.",
+    "col": {
+      "model": "Modelo",
+      "capacity": "Capacidad",
+      "footprint": "Superficie",
+      "dimensions": "Dimensiones exteriores (An×Pr×Al)",
+      "priceExcl": "Desde, sin instalación",
+      "priceIncl": "Desde, con instalación",
+      "extra": "Elemento adicional de 90 cm",
+      "iso": "ISO 23351-1",
+      "ventilation": "Ventilación",
+      "power": "Alimentación",
+      "weight": "Peso",
+      "assembly": "Montaje",
+      "leadTime": "Plazo de entrega",
+      "warranty": "Garantía"
+    },
+    "onRequest": "Bajo pedido",
+    "persons": "{count, plural, one {# persona} other {# personas}}",
+    "personsRange": "6–10 personas (la mayor fabricada hasta ahora: 20)",
+    "classLabel": "Clase {class}",
+    "weeks": "{weeks} semanas",
+    "warrantyValue": "5 años estructura · 2 años electrónica",
+    "includedTag": "Qué recibe",
+    "includedTitle": "Qué incluye el precio",
+    "includedText": "Cada cabina se entrega como una unidad completa y ventilada: estructura con puerta, iluminación LED regulable, alimentación en la mesa (230 V y USB-C en Solo Flex) y, en Solo Flex, la mesa manual de altura regulable. La ventilación utiliza ventiladores EC silenciosos; Solo Flex mueve 4,6 m³/min y su sensor PIR activa los ventiladores cuando hay alguien dentro.",
+    "installationTag": "Instalación",
+    "installationTitle": "Instalación por Re-Sound o automontaje",
+    "installationText": "Nuestros instaladores colocan una cabina de llamadas en unos 60 minutos, un pod de reuniones en unas 2 horas y una Modular XL en 2 a 6 horas. Solo Flex también puede ser montada por dos personas en menos de tres horas: la cabina es una construcción desmontable, por lo que más adelante puede desmontarse y volver a montarse en otra planta.",
+    "testingTag": "Pruébela primero",
+    "testingTitle": "Pruebe una cabina en nuestro showroom",
+    "testingText": "Puede sentarse dentro de cada modelo en nuestro showroom de Beveren-Waas (lun–vie 08:00–16:30, con cita previa) y comprobar la diferencia por sí mismo antes de hacer el pedido.",
+    "classesTag": "Acústica",
+    "classesTitle": "Qué significan las clases ISO 23351-1",
+    "classesText": "ISO 23351-1 mide cuánto reduce una cabina cerrada el nivel de la voz que sale de ella. Solo Flex reduce la voz unos 24 dB(A) y Modular XL 25,9 dB(A): ambas son de clase C. Esto evita que las llamadas normales y las videoconferencias molesten al resto de la planta; las clases B, A y A+ reducen la voz aún más.",
+    "classCol": {
+      "class": "Clase",
+      "threshold": "Reducción del nivel de voz",
+      "models": "Modelos Re-Sound"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "al menos {db} dB",
+    "endOfLifeTitle": "Fin de vida útil",
+    "endOfLifeText": "Una cabina puede revenderse o desmontarse para su reciclaje: cada material es reciclable.",
+    "faqTag": "Preguntas frecuentes",
+    "faqTitle": "Preguntas frecuentes sobre los precios de las cabinas",
+    "ctaTag": "Siguiente paso",
+    "ctaTitle": "Solicite un presupuesto o visite el showroom",
+    "ctaText": "Envíenos su plano de planta y el número de cabinas; le responderemos con un presupuesto que incluye entrega e instalación.",
+    "ctaQuote": "Solicitar presupuesto",
+    "ctaShowroom": "Concertar una visita al showroom",
+    "tableCaption": "Precios y especificaciones de las cabinas por modelo",
+    "assembly": {
+      "solo-flex": "Unos 60 minutos con nuestros instaladores, o dos personas en menos de 3 horas",
+      "duo": "Unas 2 horas con nuestros instaladores",
+      "modular-xl": "De 2 a 6 horas con nuestros instaladores"
+    },
+    "classesNote": "Umbrales: la reducción mínima del nivel de voz por clase. Duo aún no se ha medido.",
+    "endOfLifeTag": "Circular"
   }
 }

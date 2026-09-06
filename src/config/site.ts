@@ -66,9 +66,45 @@ export const SHOWROOM = {
   telephoneHref: 'tel:+3232846818',
   email: 'info@re-sound.be',
   openingDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-  opens: '09:00',
-  closes: '17:00',
+  // Workbook Dealers_Showrooms: Mon–Fri 08:00–16:30 by appointment
+  opens: '08:00',
+  closes: '16:30',
   priceRange: '€€',
+} as const;
+
+/**
+ * Re-Sound Poland — production office (workbook Dealers_Showrooms). No
+ * coordinates in the workbook, so no geo is emitted; visitors by appointment.
+ */
+export const PRODUCTION_OFFICE = {
+  name: 'Re-Sound Poland — production office',
+  streetAddress: 'ul. Legionów 59',
+  postalCode: '42-200',
+  addressLocality: 'Częstochowa',
+  addressCountry: 'PL',
+  email: 'info@re-sound.be',
+  // Michael, 6 Sep 2026
+  phones: [
+    { number: '+48 730 700 333', languages: 'PL/EN' },
+    { number: '+48 455 444 475', languages: 'PL/UA' },
+  ],
+  openingDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+  opens: '08:00',
+  closes: '16:30',
+  languages: ['nl', 'pl', 'uk', 'ru', 'en'],
+} as const;
+
+/**
+ * Google Business Profile listing (workbook Testimonials). The place id is
+ * unknown until scripts/fetch-google-reviews.mjs has run with an API key —
+ * TODO(needs-Michael): confirm the place id so the write-review link can use
+ * https://search.google.com/local/writereview?placeid=…; until then the
+ * footer links to the Maps listing by CID.
+ */
+export const GOOGLE_LISTING = {
+  cid: '14056110879742525405',
+  mapsUrl: 'https://maps.google.com/?cid=14056110879742525405',
+  writeReviewUrl: null as string | null,
 } as const;
 
 export interface Partner {

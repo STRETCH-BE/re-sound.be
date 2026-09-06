@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "Hvor meget lyd dæmper en telefonboks til kontoret?",
+    "answer": "Solo Flex reducerer taleniveauet med ca. 24 dB(A) i henhold til ISO 23351-1, hvilket placerer den i klasse C: en samtale uden for boksen lyder som en fjern mumlen indeni. Modular XL opnår 25,9 dB(A), ligeledes klasse C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "Hvad er forskellen på en telefonboks og en mødeboks?",
+    "answer": "Den vigtigste forskel er størrelsen: en telefonboks er designet til én person, mens en mødeboks er designet til to eller flere personer. De fleste mødebokse har plads til to eller fire personer. Med vores modulære version kan en mødeboks udvides til lige så mange personer, som I har brug for.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "Hvad koster en telefonboks til kontoret?",
+    "answer": "Telefonboksen Solo Flex fås fra 2.740 € ekskl. moms uden montering eller 3.605 € ekskl. moms inkl. montering. Mødeboksen Duo fås fra 7.615 € ekskl. moms. Modular XL fås fra 15.000 € ekskl. moms uden montering eller 17.990 € ekskl. moms inkl. montering, plus 7.264 € inkl. montering pr. ekstra 90 cm-element. Den største Modular XL bygget til dato har plads til 20 personer. Priserne er ekskl. transport uden for Belgien.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "Hvad betyder ISO 23351-1 klasse A, B eller C?",
+    "answer": "ISO 23351-1 måler, hvor meget en boks reducerer taleniveauet mellem inde og ude, og inddeler resultatet i klasser: A+ fra 33 dB, A fra 30 dB, B fra 27 dB, C fra 24 dB og D fra 21 dB. Solo Flex (ca. 24 dB(A)) og Modular XL (25,9 dB(A)) er begge klasse C. I praksis forvandler klasse C en normal samtale til en fjern mumlen: tydeligt dæmpet, men ikke uhørlig.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Har en telefonboks brug for ventilation, og hvor meget støjer den?",
+    "answer": "Ja: en telefonboks er et lukket rum, så ventilation er afgørende for en god luftkvalitet. Alle Re-Sounds telefonbokse og mødebokse er ventilerede. De elektriske modeller bruger vores lydsvage EC-ventilatorsystem, som flytter 4,6 m³ luft i minuttet i Solo Flex.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Kan en boks flyttes til en anden etage eller et andet kontor?",
+    "answer": "Ja. Alle bokse er bygget som et samlesæt, så de kan demonteres og genopbygges på en anden etage eller i et andet kontor. Det er hurtigt og enkelt at skille en boks ad og samle den igen.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Kan vi afprøve en boks, før vi bestiller?",
+    "answer": "Ja. I er velkomne til at teste alle modeller i vores showroom i Beveren-Waas (Belgien), inden I bestiller; besøg efter aftale, mandag til fredag kl. 08:00–16:30.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "Hvor lang tid tager monteringen, og hvem udfører den?",
+    "answer": "Re-Sounds egne montører opstiller jeres boks: en telefonboks tager omkring 60 minutter, en mødeboks omkring to timer og en Modular XL mellem to og seks timer. Alternativt kan Solo Flex samles af jer selv: to personer bruger under tre timer.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "Er boksen tilgængelig for kørestolsbrugere?",
+    "answer": "Ikke som standard: ingen af vores bokse er kørestolstilgængelige i standardkonfigurationen. På forespørgsel kan vi tilpasse en boks, så den bliver tilgængelig for kørestolsbrugere. Kontakt os for at drøfte jeres behov.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "Hvilken garanti er der på en boks?",
+    "answer": "Alle bokse leveres med 5 års garanti på den bærende ramme og kabinettet samt 2 års garanti på elektroniske komponenter og andre sliddele.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "Hvad sker der med en boks, når den er udtjent?",
+    "answer": "En boks, der ikke længere er brug for, kan videresælges til en anden part eller skilles ad til genanvendelse. Da den er bygget som et samlesæt, kan den adskilles i sine enkelte materialer, som hver især kan genanvendes. Via vores returordning tages akustikpaneler retur uden beregning i Belgien, Nederlandene, Frankrig, Tyskland og Luxembourg.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Er PET-filt brandsikkert?",
+    "answer": "Ja. Vores rPET-paneler er klassificeret B-s1,d0 i henhold til EN 13501-1, hvilket gør dem egnede til både private boliger og offentlige bygninger. Afklar det præcise krav til jeres projekt med jeres akustiker eller brandrådgiver.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Kan jeg skære og male rPET-paneler?",
+    "answer": "Ja, rPET-paneler kan både skæres og males. Skær dem med en kniv (selv en keramisk køkkenkniv), en rundsav, en pladesav eller en vinkelsliber med metalskæreskive. Re-Sound UV-printer rPET-paneler på egen fabrik, så I kan bestille grafik efter eget design, eller I kan selv male panelerne og bruge dem som lærred til jeres eget akustiske kunstværk.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "Hvor meget lyd absorberer et 24 mm PET-panel?",
+    "answer": "Et 24 mm rPET-panel har en vægtet lydabsorptionskoefficient αw på 0,85, hvilket svarer til absorptionsklasse B i henhold til ISO 11654. Monteres panelet med et luftmellemrum bagved, forbedres absorptionen ved lave frekvenser. Afklar det præcise krav til jeres rum med jeres akustiker.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Mikroperforerede eller rillede akustikpaneler i træ: hvilke absorberer mest?",
+    "answer": "Uden bagvedliggende absorbent absorberer rillede rWood-paneler mere end mikroperforerede, fordi filten mellem rillerne bidrager med ekstra absorption. Med en absorbent bag panelet, f.eks. akustisk filt, et rPET-panel eller mineraluld (stenuld eller glasuld), opnår begge systemer de samme absorptionsværdier.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Er træfineren FSC-certificeret?",
+    "answer": "Ja. Re-Sound anvender udelukkende FSC-certificeret træfiner til sine rWood-paneler. Det gælder hele rWood-sortimentet, både rillede og mikroperforerede paneler.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Hvor produceres Re-Sound-paneler?",
+    "answer": "Re-Sound-paneler fremstilles på vores egne fabrikker i Beveren-Waas (Belgien) og Częstochowa (Polen). Tekstilpanelerne Interior, Solid og Divide produceres i Beveren-Waas; rWood- og rPET-panelerne samt telefonboksene produceres i Częstochowa. Alle råmaterialer indkøbes inden for EU.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]

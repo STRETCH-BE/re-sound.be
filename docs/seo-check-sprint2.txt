@@ -1,0 +1,515 @@
+Re-Sound SEO check — 2026-09-06T19:22:36.566Z
+Base URL: http://localhost:3999
+
+== (e) Sitemap
+URLs in sitemap: 202
+Per locale: en=30, nl=36, fr=30, de=30, es=29, pt=29, documents=18
+lastmod distribution (by day): 2024-01-01=6, 2024-01-05=6, 2024-01-10=6, 2024-01-15=6, 2026-08-10=18, 2026-09-06=160
+distinct lastmod values: 12
+single-locale URLs (no hreflang by design): 6
+hreflang alternates per URL: min 0, max 7
+document entries (pdf/dwg): 18
+
+also crawling da, sv, no, is: 29 pages each (mirrored from the English sitemap entries; 1 locale-restricted entries skipped)
+Crawling 300 pages …
+
+== (a) Forbidden strings
+OK — none found
+
+== (b) English text segments on non-English pages (unique segments >= 4 words)
+   (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
+da: 0.2% English (3/1412 segments over 29 pages)
+de: 0.3% English (4/1501 segments over 30 pages)
+es: 0.2% English (3/1749 segments over 29 pages)
+fr: 0.2% English (4/1761 segments over 30 pages)
+is: 0.2% English (3/1442 segments over 29 pages)
+nl: 0.2% English (4/2002 segments over 36 pages)
+no: 0.3% English (4/1413 segments over 29 pages)
+pt: 0.2% English (3/1711 segments over 29 pages)
+sv: 0.1% English (2/1412 segments over 29 pages)
+
+-- sample English segments per flagged page (max 12 each)
+
+== (b2) Spanish text segments on /pt pages
+OK — none found
+
+== (c) hreflang + canonical per page
+174 pages: 7 hreflang, canonical present
+116 pages: 7 hreflang, canonical present, noindex
+6 pages: 0 hreflang, canonical present — /nl/blog/pet-vilt-of-houten-akoestische-panelen, /nl/blog/nagalmtijd-klaslokaal-normen, /nl/blog/hoeveel-akoestische-panelen-nodig, /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing, /nl/blog/akoestische-panelen-restaurant, /nl/blog/akoestiek-open-kantoor-verbeteren
+4 pages: 5 hreflang, canonical present — /en/guides/phone-booth-prices, /nl/guides/prijzen-belcabines, /fr/guides/prix-cabines-acoustiques, /de/guides/telefonbox-preise
+
+== (d) JSON-LD
+blocks: 656, parse errors: 0
+types: Question=1326, Answer=1326, ListItem=960, PropertyValue=750, Organization=236, BreadcrumbList=210, ImageObject=186, FAQPage=180, Product=130, Brand=130, Offer=130, MerchantReturnPolicy=130, Country=130, UnitPriceSpecification=50, BlogPosting=46, PostalAddress=40, ItemList=40, LocalBusiness=30, OpeningHoursSpecification=30, CollectionPage=30, GeoCoordinates=20, ContactPoint=10, WebSite=10, Person=6
+Product nodes: 130, with offers: 130  OK
+
+== (f) Internal links returning 404 (from crawled pages + sitemap document entries)
+checked 438 distinct internal URLs, 0 broken
+
+== (g) Title / meta description lengths (warn > 65 / > 155)
+titles > 65 chars: 37; descriptions > 155 chars: 0
+WARN title  67  /en/products/pet-acoustic-panels  "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound"
+WARN title  71  /en/products/wood-acoustic-panels  "Wood Acoustic Panels — Veneer, Perforated & Micro-perforated | Re-Sound"
+WARN title  70  /en/products/acoustic-phone-booths  "Acoustic Phone Booths & Office Pods — Solo, Duo, Modular XL | Re-Sound"
+WARN title  68  /en/products/rwood-groove  "rWood Groove — Grooved Wood Acoustic Panels, Oak & Walnut | Re-Sound"
+WARN title  69  /en/products/rpet-flex-groove  "rPET Flex Groove — Flexible PET Acoustic Panels for Curves | Re-Sound"
+WARN title  67  /en/products/solo-flex  "Solo Flex — 1-Person Acoustic Phone Booth for the Office | Re-Sound"
+WARN title  70  /en/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
+WARN title  70  /en/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
+WARN title  72  /nl/products/pet-akoestische-panelen  "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound"
+WARN title  80  /nl/products/houten-akoestische-panelen  "Houten akoestische panelen — fineer, geperforeerd & microgeperforeerd | Re-Sound"
+WARN title  82  /nl/blog/circular-economy-acoustics  "De Circulaire Economie: Een Nieuw Tijdperk voor Akoestische Oplossingen | Re-Sound"
+WARN title  71  /nl/blog/office-acoustic-solutions  "De Perfecte Akoestische Omgeving Creëren in Moderne Kantoren | Re-Sound"
+WARN title  74  /nl/blog/recycled-materials-quality  "Gerecycleerde Materialen: Kwaliteitsnormen Halen en Overtreffen | Re-Sound"
+WARN title  73  /fr  "Panneaux acoustiques & cabines téléphoniques — fabricant belge | Re-Sound"
+WARN title  75  /fr/products/panneaux-acoustiques-bois  "Panneaux acoustiques en bois — placage, perforés & microperforés | Re-Sound"
+WARN title  82  /fr/blog/circular-economy-acoustics  "L'Économie Circulaire : Une Nouvelle Ère pour les Solutions Acoustiques | Re-Sound"
+WARN title  77  /fr/blog/office-acoustic-solutions  "Créer l'Environnement Acoustique Parfait dans les Bureaux Modernes | Re-Sound"
+WARN title  75  /fr/blog/recycled-materials-quality  "Matériaux Recyclés : Atteindre et Dépasser les Normes de Qualité | Re-Sound"
+WARN title  72  /fr/blog/sound-absorption-explained  "L'Absorption Sonore Expliquée : Un Guide pour les Architectes | Re-Sound"
+WARN title  66  /de/products/pet-akustikpaneele  "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound"
+WARN title  70  /de/products/holz-akustikpaneele  "Holz-Akustikpaneele — Furnier, perforiert & mikroperforiert | Re-Sound"
+WARN title  69  /de/blog/circular-economy-acoustics  "Die Kreislaufwirtschaft: Eine Neue Ära für Akustiklösungen | Re-Sound"
+WARN title  70  /de/blog/office-acoustic-solutions  "Die Perfekte Akustische Umgebung in Modernen Büros Schaffen | Re-Sound"
+WARN title  77  /de/blog/recycled-materials-quality  "Recycelte Materialien: Qualitätsstandards Erfüllen und Übertreffen | Re-Sound"
+WARN title  66  /de/blog/sound-absorption-explained  "Schallabsorption Erklärt: Ein Leitfaden für Architekten | Re-Sound"
+WARN title  76  /es/blog/circular-economy-acoustics  "La economía circular: una nueva era para las soluciones acústicas | Re-Sound"
+WARN title  75  /es/blog/office-acoustic-solutions  "Cómo crear el entorno acústico perfecto en las oficinas modernas | Re-Sound"
+WARN title  77  /es/blog/recycled-materials-quality  "Materiales reciclados: cumplir y superar los estándares de calidad | Re-Sound"
+WARN title  71  /pt/blog/circular-economy-acoustics  "A Economia Circular: Uma Nova Era para as Soluções Acústicas | Re-Sound"
+WARN title  69  /pt/blog/office-acoustic-solutions  "Criar o Ambiente Acústico Perfeito em Escritórios Modernos | Re-Sound"
+WARN title  73  /pt/blog/recycled-materials-quality  "Materiais Reciclados: Cumprir e Superar as Normas de Qualidade | Re-Sound"
+WARN title  67  /da/blog/circular-economy-acoustics  "Den cirkulære økonomi: en ny æra for akustiske løsninger | Re-Sound"
+WARN title  76  /da/blog/recycled-materials-quality  "Genanvendte materialer: Kvalitetsstandarder opfyldt – og overgået | Re-Sound"
+WARN title  70  /sv/blog/office-acoustic-solutions  "Så skapar du den perfekta akustiska miljön i moderna kontor | Re-Sound"
+WARN title  78  /sv/blog/recycled-materials-quality  "Återvunna material: uppfyller och överträffar kvalitetsstandarderna | Re-Sound"
+WARN title  75  /no/blog/office-acoustic-solutions  "Slik skaper du det perfekte akustiske miljøet i moderne kontorer | Re-Sound"
+WARN title  77  /no/blog/recycled-materials-quality  "Resirkulerte materialer: oppfyller og overgår kvalitetsstandardene | Re-Sound"
+
+== Per-page summary
+status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%  path
+200     en       65    141    1         7     yes    3          0/0  index           —  /en
+200     en       19    155    1         7     yes    1          0/0  index           —  /en/products
+200     en       25    132    1         7     yes    0          0/0  index           —  /en/about
+200     en       25    119    1         7     yes    0          0/0  index           —  /en/sustainability
+200     en       40    149    1         7     yes    2          0/0  index           —  /en/where-to-buy
+200     en       57    155    1         7     yes    0          0/0  index           —  /en/partner
+200     en       30    147    1         7     yes    1          0/0  index           —  /en/faq
+200     en       21     75    1         7     yes    0          0/0  index           —  /en/contact
+200     en       15     87    1         7     yes    0          0/0  index           —  /en/blog
+200     en       67    151    1         7     yes    3          0/0  index           —  /en/products/pet-acoustic-panels
+200     en       71    149    1         7     yes    3          0/0  index           —  /en/products/wood-acoustic-panels
+200     en       70    152    1         7     yes    3          0/0  index           —  /en/products/acoustic-phone-booths
+200     en       55    153    1         5     yes    2          0/0  index           —  /en/guides/phone-booth-prices
+200     en       40    142    1         7     yes    3          1/1  index           —  /en/products/interior
+200     en       37    142    1         7     yes    3          1/1  index           —  /en/products/solid
+200     en       47    138    1         7     yes    3          1/1  index           —  /en/products/divide
+200     en       68    146    1         7     yes    3          1/1  index           —  /en/products/rwood-groove
+200     en       62    139    1         7     yes    3          1/1  index           —  /en/products/rwood-micro
+200     en       55    143    1         7     yes    3          1/1  index           —  /en/products/rwood-perf
+200     en       64    146    1         7     yes    3          1/1  index           —  /en/products/rwood-veneer
+200     en       63    139    1         7     yes    3          1/1  index           —  /en/products/rpet-panel
+200     en       64    144    1         7     yes    3          1/1  index           —  /en/products/rpet-groove
+200     en       69    139    1         7     yes    3          1/1  index           —  /en/products/rpet-flex-groove
+200     en       67    144    1         7     yes    3          1/1  index           —  /en/products/solo-flex
+200     en       56    150    1         7     yes    3          1/1  index           —  /en/products/duo
+200     en       56    146    1         7     yes    3          1/1  index           —  /en/products/modular-xl
+200     en       65    110    1         7     yes    2          0/0  index           —  /en/blog/circular-economy-acoustics
+200     en       70    101    1         7     yes    2          0/0  index           —  /en/blog/office-acoustic-solutions
+200     en       70     99    1         7     yes    2          0/0  index           —  /en/blog/recycled-materials-quality
+200     en       61     95    1         7     yes    2          0/0  index           —  /en/blog/sound-absorption-explained
+200     nl       65    145    1         7     yes    3          0/0  index         1.7  /nl
+200     nl       20    152    1         7     yes    1          0/0  index         0.0  /nl/products
+200     nl       24    136    1         7     yes    0          0/0  index         0.0  /nl/about
+200     nl       23    139    1         7     yes    0          0/0  index         0.0  /nl/sustainability
+200     nl       45    145    1         7     yes    2          0/0  index         2.1  /nl/where-to-buy
+200     nl       55    152    1         7     yes    0          0/0  index         0.0  /nl/partner
+200     nl       50    147    1         7     yes    1          0/0  index         0.0  /nl/faq
+200     nl       18     77    1         7     yes    0          0/0  index         0.0  /nl/contact
+200     nl       15     88    1         7     yes    0          0/0  index         0.0  /nl/blog
+200     nl       72    153    1         7     yes    3          0/0  index         0.0  /nl/products/pet-akoestische-panelen
+200     nl       80    150    1         7     yes    3          0/0  index         0.0  /nl/products/houten-akoestische-panelen
+200     nl       63    143    1         7     yes    3          0/0  index         0.0  /nl/products/akoestische-belcabines
+200     nl       57    144    1         5     yes    2          0/0  index         1.7  /nl/guides/prijzen-belcabines
+200     nl       43    152    1         7     yes    3          1/1  index         0.0  /nl/products/interior
+200     nl       40    148    1         7     yes    3          1/1  index         0.0  /nl/products/solid
+200     nl       50    151    1         7     yes    3          1/1  index         0.0  /nl/products/divide
+200     nl       59    146    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-groove
+200     nl       55    140    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-micro
+200     nl       64    143    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-perf
+200     nl       54    151    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-veneer
+200     nl       57    148    1         7     yes    3          1/1  index         1.2  /nl/products/rpet-panel
+200     nl       58    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-groove
+200     nl       62    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-flex-groove
+200     nl       59    152    1         7     yes    3          1/1  index         0.0  /nl/products/solo-flex
+200     nl       53    154    1         7     yes    3          1/1  index         0.0  /nl/products/duo
+200     nl       62    147    1         7     yes    3          1/1  index         0.0  /nl/products/modular-xl
+200     nl       60    145    1         0     yes    3          0/0  index         0.0  /nl/blog/pet-vilt-of-houten-akoestische-panelen
+200     nl       63    155    1         0     yes    3          0/0  index         0.0  /nl/blog/nagalmtijd-klaslokaal-normen
+200     nl       64    154    1         0     yes    3          0/0  index         0.0  /nl/blog/hoeveel-akoestische-panelen-nodig
+200     nl       63    152    1         0     yes    3          0/0  index         0.0  /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing
+200     nl       62    150    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-restaurant
+200     nl       59    146    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestiek-open-kantoor-verbeteren
+200     nl       82    122    1         7     yes    2          0/0  index         0.0  /nl/blog/circular-economy-acoustics
+200     nl       71    108    1         7     yes    2          0/0  index         0.0  /nl/blog/office-acoustic-solutions
+200     nl       74    125    1         7     yes    2          0/0  index         0.0  /nl/blog/recycled-materials-quality
+200     nl       64     98    1         7     yes    2          0/0  index         0.0  /nl/blog/sound-absorption-explained
+200     fr       73    149    1         7     yes    3          0/0  index         1.4  /fr
+200     fr       19    147    1         7     yes    1          0/0  index         0.0  /fr/products
+200     fr       31    148    1         7     yes    0          0/0  index         0.0  /fr/about
+200     fr       21    153    1         7     yes    0          0/0  index         0.0  /fr/sustainability
+200     fr       38    154    1         7     yes    2          0/0  index         1.9  /fr/where-to-buy
+200     fr       62    151    1         7     yes    0          0/0  index         0.0  /fr/partner
+200     fr       35    154    1         7     yes    1          0/0  index         0.0  /fr/faq
+200     fr       25     80    1         7     yes    0          0/0  index         0.0  /fr/contact
+200     fr       15     96    1         7     yes    0          0/0  index         0.0  /fr/blog
+200     fr       58    153    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-pet
+200     fr       75    155    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-bois
+200     fr       52    153    1         7     yes    3          0/0  index         0.0  /fr/products/cabines-acoustiques
+200     fr       63    155    1         5     yes    2          0/0  index         1.4  /fr/guides/prix-cabines-acoustiques
+200     fr       47    155    1         7     yes    3          1/1  index         0.0  /fr/products/interior
+200     fr       44    155    1         7     yes    3          1/1  index         0.0  /fr/products/solid
+200     fr       52    153    1         7     yes    3          1/1  index         0.0  /fr/products/divide
+200     fr       63    147    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-groove
+200     fr       64    147    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-micro
+200     fr       58    154    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-perf
+200     fr       59    150    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-veneer
+200     fr       61    148    1         7     yes    3          1/1  index         1.0  /fr/products/rpet-panel
+200     fr       58    153    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-groove
+200     fr       65    149    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-flex-groove
+200     fr       59    154    1         7     yes    3          1/1  index         0.0  /fr/products/solo-flex
+200     fr       58    150    1         7     yes    3          1/1  index         0.0  /fr/products/duo
+200     fr       64    155    1         7     yes    3          1/1  index         0.0  /fr/products/modular-xl
+200     fr       82    139    1         7     yes    2          0/0  index         0.0  /fr/blog/circular-economy-acoustics
+200     fr       77    116    1         7     yes    2          0/0  index         0.0  /fr/blog/office-acoustic-solutions
+200     fr       75    131    1         7     yes    2          0/0  index         0.0  /fr/blog/recycled-materials-quality
+200     fr       72    101    1         7     yes    2          0/0  index         0.0  /fr/blog/sound-absorption-explained
+200     de       65    134    1         7     yes    3          0/0  index         1.7  /de
+200     de       19    148    1         7     yes    1          0/0  index         0.0  /de/products
+200     de       24    127    1         7     yes    0          0/0  index         0.0  /de/about
+200     de       25    153    1         7     yes    0          0/0  index         0.0  /de/sustainability
+200     de       45    150    1         7     yes    2          0/0  index         2.1  /de/where-to-buy
+200     de       55    149    1         7     yes    0          0/0  index         0.0  /de/partner
+200     de       29    144    1         7     yes    1          0/0  index         0.0  /de/faq
+200     de       18     75    1         7     yes    0          0/0  index         0.0  /de/contact
+200     de       15     84    1         7     yes    0          0/0  index         0.0  /de/blog
+200     de       66    148    1         7     yes    3          0/0  index         0.0  /de/products/pet-akustikpaneele
+200     de       70    149    1         7     yes    3          0/0  index         0.0  /de/products/holz-akustikpaneele
+200     de       56    151    1         7     yes    3          0/0  index         0.0  /de/products/telefonboxen
+200     de       58    152    1         5     yes    2          0/0  index         1.7  /de/guides/telefonbox-preise
+200     de       42    153    1         7     yes    3          1/1  index         0.0  /de/products/interior
+200     de       39    151    1         7     yes    3          1/1  index         0.0  /de/products/solid
+200     de       48    146    1         7     yes    3          1/1  index         0.0  /de/products/divide
+200     de       64    146    1         7     yes    3          1/1  index         0.0  /de/products/rwood-groove
+200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/rwood-micro
+200     de       55    150    1         7     yes    3          1/1  index         0.0  /de/products/rwood-perf
+200     de       61    142    1         7     yes    3          1/1  index         0.0  /de/products/rwood-veneer
+200     de       57    145    1         7     yes    3          1/1  index         1.2  /de/products/rpet-panel
+200     de       63    145    1         7     yes    3          1/1  index         0.0  /de/products/rpet-groove
+200     de       64    132    1         7     yes    3          1/1  index         0.0  /de/products/rpet-flex-groove
+200     de       65    150    1         7     yes    3          1/1  index         0.0  /de/products/solo-flex
+200     de       64    154    1         7     yes    3          1/1  index         0.0  /de/products/duo
+200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/modular-xl
+200     de       69    114    1         7     yes    2          0/0  index         0.0  /de/blog/circular-economy-acoustics
+200     de       70    109    1         7     yes    2          0/0  index         0.0  /de/blog/office-acoustic-solutions
+200     de       77    127    1         7     yes    2          0/0  index         0.0  /de/blog/recycled-materials-quality
+200     de       66    103    1         7     yes    2          0/0  index         0.0  /de/blog/sound-absorption-explained
+200     es       59    152    1         7     yes    3          0/0  index         1.4  /es
+200     es       20    147    1         7     yes    1          0/0  index         0.0  /es/products
+200     es       25    142    1         7     yes    0          0/0  index         0.0  /es/about
+200     es       25    152    1         7     yes    0          0/0  index         0.0  /es/sustainability
+200     es       39    151    1         7     yes    2          0/0  index         1.8  /es/where-to-buy
+200     es       63    148    1         7     yes    0          0/0  index         0.0  /es/partner
+200     es       32    153    1         7     yes    1          0/0  index         0.0  /es/faq
+200     es       22     90    1         7     yes    0          0/0  index         0.0  /es/contact
+200     es       15     90    1         7     yes    0          0/0  index         0.0  /es/blog
+200     es       55    155    1         7     yes    3          0/0  index         0.0  /es/products/pet-acoustic-panels
+200     es       58    151    1         7     yes    3          0/0  index         0.0  /es/products/wood-acoustic-panels
+200     es       58    154    1         7     yes    3          0/0  index         0.0  /es/products/acoustic-phone-booths
+200     es       46    152    1         7     yes    3          1/1  index         0.0  /es/products/interior
+200     es       43    147    1         7     yes    3          1/1  index         0.0  /es/products/solid
+200     es       53    149    1         7     yes    3          1/1  index         0.0  /es/products/divide
+200     es       63    154    1         7     yes    3          1/1  index         0.0  /es/products/rwood-groove
+200     es       58    152    1         7     yes    3          1/1  index         0.0  /es/products/rwood-micro
+200     es       61    155    1         7     yes    3          1/1  index         0.0  /es/products/rwood-perf
+200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/rwood-veneer
+200     es       55    148    1         7     yes    3          1/1  index         1.0  /es/products/rpet-panel
+200     es       59    147    1         7     yes    3          1/1  index         0.0  /es/products/rpet-groove
+200     es       61    145    1         7     yes    3          1/1  index         0.0  /es/products/rpet-flex-groove
+200     es       65    152    1         7     yes    3          1/1  index         0.0  /es/products/solo-flex
+200     es       61    149    1         7     yes    3          1/1  index         0.0  /es/products/duo
+200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/modular-xl
+200     es       76    128    1         7     yes    2          0/0  index         0.0  /es/blog/circular-economy-acoustics
+200     es       75    110    1         7     yes    2          0/0  index         0.0  /es/blog/office-acoustic-solutions
+200     es       77    124    1         7     yes    2          0/0  index         0.0  /es/blog/recycled-materials-quality
+200     es       65    111    1         7     yes    2          0/0  index         0.0  /es/blog/sound-absorption-explained
+200     pt       61    152    1         7     yes    3          0/0  index         1.4  /pt
+200     pt       20    155    1         7     yes    1          0/0  index         0.0  /pt/products
+200     pt       27    134    1         7     yes    0          0/0  index         0.0  /pt/about
+200     pt       25    147    1         7     yes    0          0/0  index         0.0  /pt/sustainability
+200     pt       38    152    1         7     yes    2          0/0  index         1.9  /pt/where-to-buy
+200     pt       62    154    1         7     yes    0          0/0  index         0.0  /pt/partner
+200     pt       32    153    1         7     yes    1          0/0  index         0.0  /pt/faq
+200     pt       23     81    1         7     yes    0          0/0  index         0.0  /pt/contact
+200     pt       15     89    1         7     yes    0          0/0  index         0.0  /pt/blog
+200     pt       58    152    1         7     yes    3          0/0  index         0.0  /pt/products/pet-acoustic-panels
+200     pt       61    152    1         7     yes    3          0/0  index         0.0  /pt/products/wood-acoustic-panels
+200     pt       59    154    1         7     yes    3          0/0  index         0.0  /pt/products/acoustic-phone-booths
+200     pt       47    150    1         7     yes    3          1/1  index         0.0  /pt/products/interior
+200     pt       44    154    1         7     yes    3          1/1  index         0.0  /pt/products/solid
+200     pt       52    147    1         7     yes    3          1/1  index         0.0  /pt/products/divide
+200     pt       64    151    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-groove
+200     pt       58    148    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-micro
+200     pt       62    147    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-perf
+200     pt       65    154    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-veneer
+200     pt       63    153    1         7     yes    3          1/1  index         1.0  /pt/products/rpet-panel
+200     pt       64    155    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-groove
+200     pt       61    141    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-flex-groove
+200     pt       65    147    1         7     yes    3          1/1  index         0.0  /pt/products/solo-flex
+200     pt       63    154    1         7     yes    3          1/1  index         0.0  /pt/products/duo
+200     pt       62    153    1         7     yes    3          1/1  index         0.0  /pt/products/modular-xl
+200     pt       71    133    1         7     yes    2          0/0  index         0.0  /pt/blog/circular-economy-acoustics
+200     pt       69    112    1         7     yes    2          0/0  index         0.0  /pt/blog/office-acoustic-solutions
+200     pt       73    117    1         7     yes    2          0/0  index         0.0  /pt/blog/recycled-materials-quality
+200     pt       61     97    1         7     yes    2          0/0  index         0.0  /pt/blog/sound-absorption-explained
+200     da       63    154    1         7     yes    3          0/0  noindex       1.6  /da
+200     da       20    146    1         7     yes    1          0/0  noindex       0.0  /da/products
+200     da       22    131    1         7     yes    0          0/0  noindex       0.0  /da/about
+200     da       24    131    1         7     yes    0          0/0  noindex       0.0  /da/sustainability
+200     da       42    150    1         7     yes    2          0/0  noindex       2.1  /da/where-to-buy
+200     da       55    153    1         7     yes    0          0/0  noindex       0.0  /da/partner
+200     da       29    146    1         7     yes    1          0/0  noindex       0.0  /da/faq
+200     da       21     71    1         7     yes    0          0/0  noindex       0.0  /da/contact
+200     da       15     78    1         7     yes    0          0/0  noindex       0.0  /da/blog
+200     da       60    148    1         7     yes    3          0/0  noindex       0.0  /da/products/pet-acoustic-panels
+200     da       63    145    1         7     yes    3          0/0  noindex       0.0  /da/products/wood-acoustic-panels
+200     da       59    146    1         7     yes    3          0/0  noindex       0.0  /da/products/acoustic-phone-booths
+200     da       40    152    1         7     yes    3          1/1  noindex       0.0  /da/products/interior
+200     da       37    143    1         7     yes    3          1/1  noindex       0.0  /da/products/solid
+200     da       43    136    1         7     yes    3          1/1  noindex       0.0  /da/products/divide
+200     da       64    155    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-groove
+200     da       62    147    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-micro
+200     da       56    145    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-perf
+200     da       62    149    1         7     yes    3          1/1  noindex       0.0  /da/products/rwood-veneer
+200     da       64    147    1         7     yes    3          1/1  noindex       1.2  /da/products/rpet-panel
+200     da       62    147    1         7     yes    3          1/1  noindex       0.0  /da/products/rpet-groove
+200     da       58    139    1         7     yes    3          1/1  noindex       0.0  /da/products/rpet-flex-groove
+200     da       56    150    1         7     yes    3          1/1  noindex       0.0  /da/products/solo-flex
+200     da       62    152    1         7     yes    3          1/1  noindex       0.0  /da/products/duo
+200     da       59    134    1         7     yes    3          1/1  noindex       0.0  /da/products/modular-xl
+200     da       67    110    1         7     yes    2          0/0  noindex       0.0  /da/blog/circular-economy-acoustics
+200     da       63     86    1         7     yes    2          0/0  noindex       0.0  /da/blog/office-acoustic-solutions
+200     da       76    114    1         7     yes    2          0/0  noindex       0.0  /da/blog/recycled-materials-quality
+200     da       59     90    1         7     yes    2          0/0  noindex       0.0  /da/blog/sound-absorption-explained
+200     sv       64    154    1         7     yes    3          0/0  noindex       1.6  /sv
+200     sv       20    143    1         7     yes    1          0/0  noindex       0.0  /sv/products
+200     sv       22    126    1         7     yes    0          0/0  noindex       0.0  /sv/about
+200     sv       21    122    1         7     yes    0          0/0  noindex       0.0  /sv/sustainability
+200     sv       42    148    1         7     yes    2          0/0  noindex       2.1  /sv/where-to-buy
+200     sv       59    151    1         7     yes    0          0/0  noindex       0.0  /sv/partner
+200     sv       29    134    1         7     yes    1          0/0  noindex       0.0  /sv/faq
+200     sv       23     71    1         7     yes    0          0/0  noindex       0.0  /sv/contact
+200     sv       16     78    1         7     yes    0          0/0  noindex       0.0  /sv/blog
+200     sv       64    149    1         7     yes    3          0/0  noindex       0.0  /sv/products/pet-acoustic-panels
+200     sv       62    152    1         7     yes    3          0/0  noindex       0.0  /sv/products/wood-acoustic-panels
+200     sv       59    149    1         7     yes    3          0/0  noindex       0.0  /sv/products/acoustic-phone-booths
+200     sv       45    152    1         7     yes    3          1/1  noindex       0.0  /sv/products/interior
+200     sv       42    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/solid
+200     sv       45    143    1         7     yes    3          1/1  noindex       0.0  /sv/products/divide
+200     sv       64    152    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-groove
+200     sv       59    141    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-micro
+200     sv       53    147    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-perf
+200     sv       64    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/rwood-veneer
+200     sv       65    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-panel
+200     sv       62    147    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-groove
+200     sv       56    132    1         7     yes    3          1/1  noindex       0.0  /sv/products/rpet-flex-groove
+200     sv       64    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/solo-flex
+200     sv       62    150    1         7     yes    3          1/1  noindex       0.0  /sv/products/duo
+200     sv       60    149    1         7     yes    3          1/1  noindex       0.0  /sv/products/modular-xl
+200     sv       65    102    1         7     yes    2          0/0  noindex       0.0  /sv/blog/circular-economy-acoustics
+200     sv       70     86    1         7     yes    2          0/0  noindex       0.0  /sv/blog/office-acoustic-solutions
+200     sv       78    120    1         7     yes    2          0/0  noindex       0.0  /sv/blog/recycled-materials-quality
+200     sv       60     84    1         7     yes    2          0/0  noindex       0.0  /sv/blog/sound-absorption-explained
+200     no       59    151    1         7     yes    3          0/0  noindex       1.6  /no
+200     no       20    149    1         7     yes    1          0/0  noindex       0.0  /no/products
+200     no       22    129    1         7     yes    0          0/0  noindex       0.0  /no/about
+200     no       20    133    1         7     yes    0          0/0  noindex       0.0  /no/sustainability
+200     no       43    154    1         7     yes    2          0/0  noindex       2.2  /no/where-to-buy
+200     no       55    150    1         7     yes    0          0/0  noindex       0.0  /no/partner
+200     no       30    141    1         7     yes    1          0/0  noindex       0.0  /no/faq
+200     no       22     69    1         7     yes    0          0/0  noindex       0.0  /no/contact
+200     no       16     80    1         7     yes    0          0/0  noindex       0.0  /no/blog
+200     no       54    151    1         7     yes    3          0/0  noindex       0.0  /no/products/pet-acoustic-panels
+200     no       64    155    1         7     yes    3          0/0  noindex       0.0  /no/products/wood-acoustic-panels
+200     no       62    152    1         7     yes    3          0/0  noindex       0.0  /no/products/acoustic-phone-booths
+200     no       41    146    1         7     yes    3          1/1  noindex       0.0  /no/products/interior
+200     no       38    137    1         7     yes    3          1/1  noindex       0.0  /no/products/solid
+200     no       47    134    1         7     yes    3          1/1  noindex       0.0  /no/products/divide
+200     no       62    152    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-groove
+200     no       62    145    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-micro
+200     no       56    145    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-perf
+200     no       65    148    1         7     yes    3          1/1  noindex       0.0  /no/products/rwood-veneer
+200     no       64    145    1         7     yes    3          1/1  noindex       2.3  /no/products/rpet-panel
+200     no       63    143    1         7     yes    3          1/1  noindex       0.0  /no/products/rpet-groove
+200     no       59    141    1         7     yes    3          1/1  noindex       0.0  /no/products/rpet-flex-groove
+200     no       57    152    1         7     yes    3          1/1  noindex       0.0  /no/products/solo-flex
+200     no       61    153    1         7     yes    3          1/1  noindex       0.0  /no/products/duo
+200     no       58    147    1         7     yes    3          1/1  noindex       0.0  /no/products/modular-xl
+200     no       62    108    1         7     yes    2          0/0  noindex       0.0  /no/blog/circular-economy-acoustics
+200     no       75     86    1         7     yes    2          0/0  noindex       0.0  /no/blog/office-acoustic-solutions
+200     no       77    114    1         7     yes    2          0/0  noindex       0.0  /no/blog/recycled-materials-quality
+200     no       58     80    1         7     yes    2          0/0  noindex       0.0  /no/blog/sound-absorption-explained
+200     is       61    150    1         7     yes    3          0/0  noindex       1.6  /is
+200     is       16    150    1         7     yes    1          0/0  noindex       0.0  /is/products
+200     is       22    130    1         7     yes    0          0/0  noindex       0.0  /is/about
+200     is       21    150    1         7     yes    0          0/0  noindex       0.0  /is/sustainability
+200     is       42    152    1         7     yes    2          0/0  noindex       2.3  /is/where-to-buy
+200     is       53    133    1         7     yes    0          0/0  noindex       0.0  /is/partner
+200     is       26    135    1         7     yes    1          0/0  noindex       1.5  /is/faq
+200     is       24     80    1         7     yes    0          0/0  noindex       0.0  /is/contact
+200     is       16     81    1         7     yes    0          0/0  noindex       0.0  /is/blog
+200     is       53    154    1         7     yes    3          0/0  noindex       0.0  /is/products/pet-acoustic-panels
+200     is       59    155    1         7     yes    3          0/0  noindex       0.0  /is/products/wood-acoustic-panels
+200     is       62    142    1         7     yes    3          0/0  noindex       0.0  /is/products/acoustic-phone-booths
+200     is       50    149    1         7     yes    3          1/1  noindex       0.0  /is/products/interior
+200     is       47    141    1         7     yes    3          1/1  noindex       0.0  /is/products/solid
+200     is       45    137    1         7     yes    3          1/1  noindex       0.0  /is/products/divide
+200     is       62    143    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-groove
+200     is       59    138    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-micro
+200     is       56    130    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-perf
+200     is       65    153    1         7     yes    3          1/1  noindex       0.0  /is/products/rwood-veneer
+200     is       64    149    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-panel
+200     is       64    149    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-groove
+200     is       64    138    1         7     yes    3          1/1  noindex       0.0  /is/products/rpet-flex-groove
+200     is       60    155    1         7     yes    3          1/1  noindex       0.0  /is/products/solo-flex
+200     is       57    150    1         7     yes    3          1/1  noindex       0.0  /is/products/duo
+200     is       63    150    1         7     yes    3          1/1  noindex       0.0  /is/products/modular-xl
+200     is       56    114    1         7     yes    2          0/0  noindex       0.0  /is/blog/circular-economy-acoustics
+200     is       50     92    1         7     yes    2          0/0  noindex       0.0  /is/blog/office-acoustic-solutions
+200     is       61    125    1         7     yes    2          0/0  noindex       0.0  /is/blog/recycled-materials-quality
+200     is       59     69    1         7     yes    2          0/0  noindex       0.0  /is/blog/sound-absorption-explained
+
+== Summary: 300 pages, 0 failures, 159 warnings
+warn /nl/blog/pet-vilt-of-houten-akoestische-panelen: single-locale page: no hreflang by design
+warn /nl/blog/nagalmtijd-klaslokaal-normen: single-locale page: no hreflang by design
+warn /nl/blog/hoeveel-akoestische-panelen-nodig: single-locale page: no hreflang by design
+warn /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing: single-locale page: no hreflang by design
+warn /nl/blog/akoestische-panelen-restaurant: single-locale page: no hreflang by design
+warn /nl/blog/akoestiek-open-kantoor-verbeteren: single-locale page: no hreflang by design
+warn /da: hreflang set has no self-reference (da)
+warn /da/products: hreflang set has no self-reference (da)
+warn /da/about: hreflang set has no self-reference (da)
+warn /da/sustainability: hreflang set has no self-reference (da)
+warn /da/where-to-buy: hreflang set has no self-reference (da)
+warn /da/partner: hreflang set has no self-reference (da)
+warn /da/faq: hreflang set has no self-reference (da)
+warn /da/contact: hreflang set has no self-reference (da)
+warn /da/blog: hreflang set has no self-reference (da)
+warn /da/products/pet-acoustic-panels: hreflang set has no self-reference (da)
+warn /da/products/wood-acoustic-panels: hreflang set has no self-reference (da)
+warn /da/products/acoustic-phone-booths: hreflang set has no self-reference (da)
+warn /da/products/interior: hreflang set has no self-reference (da)
+warn /da/products/solid: hreflang set has no self-reference (da)
+warn /da/products/divide: hreflang set has no self-reference (da)
+warn /da/products/rwood-groove: hreflang set has no self-reference (da)
+warn /da/products/rwood-micro: hreflang set has no self-reference (da)
+warn /da/products/rwood-perf: hreflang set has no self-reference (da)
+warn /da/products/rwood-veneer: hreflang set has no self-reference (da)
+warn /da/products/rpet-panel: hreflang set has no self-reference (da)
+warn /da/products/rpet-groove: hreflang set has no self-reference (da)
+warn /da/products/rpet-flex-groove: hreflang set has no self-reference (da)
+warn /da/products/solo-flex: hreflang set has no self-reference (da)
+warn /da/products/duo: hreflang set has no self-reference (da)
+warn /da/products/modular-xl: hreflang set has no self-reference (da)
+warn /da/blog/circular-economy-acoustics: hreflang set has no self-reference (da)
+warn /da/blog/office-acoustic-solutions: hreflang set has no self-reference (da)
+warn /da/blog/recycled-materials-quality: hreflang set has no self-reference (da)
+warn /da/blog/sound-absorption-explained: hreflang set has no self-reference (da)
+warn /sv: hreflang set has no self-reference (sv)
+warn /sv/products: hreflang set has no self-reference (sv)
+warn /sv/about: hreflang set has no self-reference (sv)
+warn /sv/sustainability: hreflang set has no self-reference (sv)
+warn /sv/where-to-buy: hreflang set has no self-reference (sv)
+warn /sv/partner: hreflang set has no self-reference (sv)
+warn /sv/faq: hreflang set has no self-reference (sv)
+warn /sv/contact: hreflang set has no self-reference (sv)
+warn /sv/blog: hreflang set has no self-reference (sv)
+warn /sv/products/pet-acoustic-panels: hreflang set has no self-reference (sv)
+warn /sv/products/wood-acoustic-panels: hreflang set has no self-reference (sv)
+warn /sv/products/acoustic-phone-booths: hreflang set has no self-reference (sv)
+warn /sv/products/interior: hreflang set has no self-reference (sv)
+warn /sv/products/solid: hreflang set has no self-reference (sv)
+warn /sv/products/divide: hreflang set has no self-reference (sv)
+warn /sv/products/rwood-groove: hreflang set has no self-reference (sv)
+warn /sv/products/rwood-micro: hreflang set has no self-reference (sv)
+warn /sv/products/rwood-perf: hreflang set has no self-reference (sv)
+warn /sv/products/rwood-veneer: hreflang set has no self-reference (sv)
+warn /sv/products/rpet-panel: hreflang set has no self-reference (sv)
+warn /sv/products/rpet-groove: hreflang set has no self-reference (sv)
+warn /sv/products/rpet-flex-groove: hreflang set has no self-reference (sv)
+warn /sv/products/solo-flex: hreflang set has no self-reference (sv)
+warn /sv/products/duo: hreflang set has no self-reference (sv)
+warn /sv/products/modular-xl: hreflang set has no self-reference (sv)
+warn /sv/blog/circular-economy-acoustics: hreflang set has no self-reference (sv)
+warn /sv/blog/office-acoustic-solutions: hreflang set has no self-reference (sv)
+warn /sv/blog/recycled-materials-quality: hreflang set has no self-reference (sv)
+warn /sv/blog/sound-absorption-explained: hreflang set has no self-reference (sv)
+warn /no: hreflang set has no self-reference (no)
+warn /no/products: hreflang set has no self-reference (no)
+warn /no/about: hreflang set has no self-reference (no)
+warn /no/sustainability: hreflang set has no self-reference (no)
+warn /no/where-to-buy: hreflang set has no self-reference (no)
+warn /no/partner: hreflang set has no self-reference (no)
+warn /no/faq: hreflang set has no self-reference (no)
+warn /no/contact: hreflang set has no self-reference (no)
+warn /no/blog: hreflang set has no self-reference (no)
+warn /no/products/pet-acoustic-panels: hreflang set has no self-reference (no)
+warn /no/products/wood-acoustic-panels: hreflang set has no self-reference (no)
+warn /no/products/acoustic-phone-booths: hreflang set has no self-reference (no)
+warn /no/products/interior: hreflang set has no self-reference (no)
+warn /no/products/solid: hreflang set has no self-reference (no)
+warn /no/products/divide: hreflang set has no self-reference (no)
+warn /no/products/rwood-groove: hreflang set has no self-reference (no)
+warn /no/products/rwood-micro: hreflang set has no self-reference (no)
+warn /no/products/rwood-perf: hreflang set has no self-reference (no)
+warn /no/products/rwood-veneer: hreflang set has no self-reference (no)
+warn /no/products/rpet-panel: hreflang set has no self-reference (no)
+warn /no/products/rpet-groove: hreflang set has no self-reference (no)
+warn /no/products/rpet-flex-groove: hreflang set has no self-reference (no)
+warn /no/products/solo-flex: hreflang set has no self-reference (no)
+warn /no/products/duo: hreflang set has no self-reference (no)
+warn /no/products/modular-xl: hreflang set has no self-reference (no)
+warn /no/blog/circular-economy-acoustics: hreflang set has no self-reference (no)
+warn /no/blog/office-acoustic-solutions: hreflang set has no self-reference (no)
+warn /no/blog/recycled-materials-quality: hreflang set has no self-reference (no)
+warn /no/blog/sound-absorption-explained: hreflang set has no self-reference (no)
+warn /is: hreflang set has no self-reference (is)
+warn /is/products: hreflang set has no self-reference (is)
+warn /is/about: hreflang set has no self-reference (is)
+warn /is/sustainability: hreflang set has no self-reference (is)
+warn /is/where-to-buy: hreflang set has no self-reference (is)
+warn /is/partner: hreflang set has no self-reference (is)
+warn /is/faq: hreflang set has no self-reference (is)
+warn /is/contact: hreflang set has no self-reference (is)
+warn /is/blog: hreflang set has no self-reference (is)
+warn /is/products/pet-acoustic-panels: hreflang set has no self-reference (is)
+warn /is/products/wood-acoustic-panels: hreflang set has no self-reference (is)
+warn /is/products/acoustic-phone-booths: hreflang set has no self-reference (is)
+warn /is/products/interior: hreflang set has no self-reference (is)
+warn /is/products/solid: hreflang set has no self-reference (is)
+warn /is/products/divide: hreflang set has no self-reference (is)
+warn /is/products/rwood-groove: hreflang set has no self-reference (is)
+warn /is/products/rwood-micro: hreflang set has no self-reference (is)
+warn /is/products/rwood-perf: hreflang set has no self-reference (is)
+warn /is/products/rwood-veneer: hreflang set has no self-reference (is)
+warn /is/products/rpet-panel: hreflang set has no self-reference (is)
+warn /is/products/rpet-groove: hreflang set has no self-reference (is)
+warn /is/products/rpet-flex-groove: hreflang set has no self-reference (is)
+warn /is/products/solo-flex: hreflang set has no self-reference (is)
+warn /is/products/duo: hreflang set has no self-reference (is)
+warn /is/products/modular-xl: hreflang set has no self-reference (is)
+warn /is/blog/circular-economy-acoustics: hreflang set has no self-reference (is)
+warn /is/blog/office-acoustic-solutions: hreflang set has no self-reference (is)
+warn /is/blog/recycled-materials-quality: hreflang set has no self-reference (is)
+warn /is/blog/sound-absorption-explained: hreflang set has no self-reference (is)

@@ -82,6 +82,8 @@ const FORBIDDEN = [
   { needle: 'möbelqualität', scope: 'text' },
   { needle: 'Sans Couture', scope: 'text' },
   { needle: 'soundbooth', scope: 'titleH1' },
+  // Sprint 2: wheelchair access is not standard on any booth (needs-Michael) — the old Modular XL claim must not spread.
+  { needle: 'accessible-by-design', scope: 'text' },
 ];
 
 // ---------------------------------------------------------------------------
@@ -334,6 +336,9 @@ function localeOf(pathname) {
   return /^[a-z]{2}$/.test(seg) ? seg : 'en';
 }
 
+/** Sitemap URLs listed without alternates (single-locale pages). Filled before the crawl. */
+const SINGLE_LOCALE = new Set();
+
 async function analysePage(base, url) {
   const u = new URL(url);
   const local = `${base}${u.pathname}${u.search}`;
@@ -370,7 +375,11 @@ async function analysePage(base, url) {
     const got = (() => { try { return new URL(page.canonical, base).pathname.replace(/\/$/, '') || '/'; } catch { return page.canonical; } })();
     if (got !== want) page.problems.push(`canonical points to ${page.canonical}`);
   }
-  if (page.hreflang.length === 0 && !/noindex/i.test(page.robots)) page.problems.push('no hreflang links');
+  if (page.hreflang.length === 0 && !/noindex/i.test(page.robots)) {
+    // Single-locale editorial posts (content/blog/<locale>) carry a canonical only — no hreflang by design.
+    if (SINGLE_LOCALE.has(u.pathname.replace(/\/$/, ''))) page.warnings.push('single-locale page: no hreflang by design');
+    else page.problems.push('no hreflang links');
+  }
   if (page.hreflang.length > 0 && !page.hreflang.some((h) => h.hreflang === 'x-default')) page.warnings.push('hreflang set has no x-default');
   if (page.hreflang.length > 0 && !page.hreflang.some((h) => h.hreflang === locale)) page.warnings.push(`hreflang set has no self-reference (${locale})`);
 
@@ -498,6 +507,8 @@ try {
   log(`distinct lastmod values: ${distinctLastmod}${withoutLastmod ? `, ${withoutLastmod} URLs without lastmod` : ''}`);
   if (distinctLastmod <= 1 && sitemapUrls.length > 1) log('WARN: every URL carries the same lastmod (build time?) — not a real last-modified signal');
   const hreflangCounts = sitemapUrls.map((u) => u.alternates.length);
+  for (const u of sitemapUrls) if (u.alternates.length === 0 && !/\.(pdf|dwg|zip)$/i.test(u.loc)) SINGLE_LOCALE.add(new URL(u.loc).pathname.replace(/\/$/, ''));
+  log(`single-locale URLs (no hreflang by design): ${SINGLE_LOCALE.size}`);
   log(`hreflang alternates per URL: min ${Math.min(...hreflangCounts)}, max ${Math.max(...hreflangCounts)}`);
   const nonHtml = sitemapUrls.filter((u) => /\.(pdf|dwg|zip)$/i.test(u.loc)).length;
   if (nonHtml) log(`document entries (pdf/dwg): ${nonHtml}`);
@@ -507,9 +518,15 @@ try {
   let pages = sitemapUrls.filter((u) => !/\.(pdf|dwg|zip|xml)$/i.test(u.loc)).map((u) => u.loc);
   if (opts.locales) pages = pages.filter((p) => opts.locales.includes(localeOf(new URL(p).pathname)));
   if (opts.alsoLocales) {
-    const enPages = pages.filter((p) => localeOf(new URL(p).pathname) === 'en');
+    // Mirror only the English entries that exist in every sitemap locale; a
+    // page with a restricted hreflang set (e.g. the booth price guide, en/nl/fr/de
+    // only) has no counterpart in the noindex locales and would 404 by design.
+    const sitemapLocales = Object.keys(byLocale).filter((l) => l !== 'documents');
+    const byLoc = new Map(sitemapUrls.map((u) => [u.loc, u]));
+    const allEn = pages.filter((p) => localeOf(new URL(p).pathname) === 'en');
+    const enPages = allEn.filter((p) => { const u = byLoc.get(p); return u && u.alternates.length > 0 && sitemapLocales.every((l) => u.alternates.some((a) => a.hreflang === l)); });
     for (const loc of opts.alsoLocales) for (const p of enPages) pages.push(p.replace(/\/en(\/|$)/, `/${loc}$1`));
-    log(`also crawling ${opts.alsoLocales.join(', ')}: ${enPages.length} pages each (mirrored from the English sitemap entries)`);
+    log(`also crawling ${opts.alsoLocales.join(', ')}: ${enPages.length} pages each (mirrored from the English sitemap entries; ${allEn.length - enPages.length} locale-restricted entries skipped)`);
   }
   pages = pages.slice(0, opts.maxPages);
   log(`Crawling ${pages.length} pages …`);

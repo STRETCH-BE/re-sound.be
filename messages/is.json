@@ -39,7 +39,7 @@
     "duoTitle": "Duo – símaklefi fyrir tvo og einbeitingarklefi | Re-Sound",
     "duoDescription": "Símaklefi fyrir tvo á skrifstofuna með tveimur útfærslum: Flex rúmar tvo á fundi, Work gefur einum skrifborð í fullri breidd. 2 m², 230 V, loftræstur.",
     "modularXlTitle": "Modular XL – hljóðeinangraður fundarklefi fyrir 6–10 | Re-Sound",
-    "modularXlDescription": "Hljóðeinangraður fundarklefi fyrir 6 til 10 manns: stækkaðu grunninn í 90 cm einingum, 25,9 dB(A) taldeyfing, fullur A/V-búnaður, aðgengilegur inngangur.",
+    "modularXlDescription": "Hljóðeinangraður fundarklefi fyrir 6 til 10 manns: stækkaðu grunninn í 90 cm einingum, 25,9 dB(A) taldeyfing, fullur A/V-búnaður, þröskuldslausar dyr.",
     "partnerTitle": "Samstarfsáætlun · trade- og söluaðiláætlun",
     "partnerDescription": "Samstarfsáætlun Re-Sound fyrir arkitekta, hönnuði, söluaðila og dreifingaraðila um alla Evrópu: útboðsgögn, svæðisvernd, bein aðstoð.",
     "whereToBuyTitle": "Hvar þú sérð og kaupir Re-Sound",
@@ -540,7 +540,7 @@
       "phone": "Sími",
       "address": "Heimilisfang",
       "hours": "Opnunartímar",
-      "hoursValue": "Mánudagur - Föstudagur: 9:00 - 17:00"
+      "hoursValue": "Mánudagur - Föstudagur: 8:00 - 16:30"
     },
     "faq": {
       "title": "Algengar spurningar",
@@ -587,7 +587,10 @@
       "company": "Fyrirtæki",
       "design": "Hönnun"
     },
-    "minRead": "{minutes} mín. lestur"
+    "minRead": "{minutes} mín. lestur",
+    "draftBanner": "Drög til yfirlestrar — ekki birt, ekki skráð af leitarvélum.",
+    "by": "Eftir",
+    "ctaQuote": "Óska eftir tilboði"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -720,7 +723,9 @@
     "manageCookies": "Stjórna vafrakökum",
     "privacy": "Persónuverndarstefna",
     "terms": "Þjónustuskilmálar",
-    "countryBelgium": "Belgía"
+    "countryBelgium": "Belgía",
+    "reviewUs": "Skrifaðu Google-umsögn um okkur",
+    "priceGuide": "Verð á símaklefum"
   },
   "cookies": {
     "title": "Vafrakökustillingar",
@@ -946,7 +951,8 @@
     "related": {
       "tag": "EINNIG Í LÍNUNNI",
       "title": "Aðrar gerðir í þessari línu",
-      "rangeLink": "Sjá alla {range} línuna"
+      "rangeLink": "Sjá alla {range} línuna",
+      "priceGuide": "Berðu saman verð á klefum og ISO-flokka í verðleiðbeiningunum"
     },
     "a11y": {
       "selectColour": "Velja litinn {name}",
@@ -1706,7 +1712,7 @@
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur í kjarna",
-      "cert1": "Gerður úr endurunnnum flöskum",
+      "cert1": "{pct, select, unknown {Endurunnið PET-innihald} other {{pct}% endurunnið efni}}",
       "cert2": "Hringrásarleg skilagreiðsla",
       "cert3": "OEKO-TEX® Flokkur 1",
       "cert4": "A+ flokkur losunar",
@@ -2340,7 +2346,7 @@
       "badge4": "Lágar VOC losanir",
       "badge1Desc": "Viður úr skógum sem er stjórnað á ábyrgan hátt",
       "badge2Desc": "Trefjaplötukjarni – viðarbundinn, brunaflokkaður kjarni",
-      "badge3Desc": "Manufactured in Europe, reducing transport emissions",
+      "badge3Desc": "Stuttar aðfangakeðjur sem halda losun vegna flutninga í lágmarki",
       "badge4Desc": "E1-flokkað fyrir heilnæmara inniloft",
       "description": "rWood - Micro plötur eru byggðar á sjálfbærni sem grundvallarreglu. FSC®-vottaður viður, áferðarefni með lága losun og ábyrgt aðfengin efni tryggja umhverfisábyrgð allan líftíma vörunnar."
     },
@@ -3028,7 +3034,14 @@
         "answer": "Notaðu samskiptaformið á vörusíðu eða almenna samskiptaformið með: vörulínunni sem þú hefur áhuga á, áætluðu magni eða grunnteikningu og verkefnatímalínunni þinni. Við svörum innan eins virkrar dags með sérsniðnu tilboði, sýnishornafyrirkomulagi og útreikningi á væntanlegri hljóðbót. Fyrir stærri verkefni getum við skipulagt heimsókn á staðinn eða stutta kynningu."
       }
     },
-    "categoriesLabel": "Flokkar"
+    "categoriesLabel": "Flokkar",
+    "groups": {
+      "Booths": "Símaklefar og fundarklefar",
+      "rPET": "rPET-plötur",
+      "rWood": "rWood-plötur",
+      "General": "Hljóðvist, efni og sjálfbærni",
+      "Ordering": "Pantanir, verð og uppsetning"
+    }
   },
   "boothPage": {
     "nav": {
@@ -3174,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Þröskuldlaust aðgengi",
-        "desc": "Flatur þröskuldur og 90 cm laus hurðabreidd uppfylla evrópskar leiðbeiningar um aðgengi á skrifstofum."
+        "desc": "Flatur þröskuldur og 90 cm laus hurðabreidd."
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
@@ -3344,8 +3357,8 @@
         "desc": "Hlý/köld dimmanleg LED-lýsing, hentug fyrir myndsímtöl. Jöfn lýsing beggja andlita í Flex-stillingu — engir augnskuggar."
       },
       "accessibility": {
-        "title": "Breitt þröskuldlaust aðgengi",
-        "desc": "100 cm laus hurðabreidd — uppfyllir evrópskar leiðbeiningar um aðgengi og tekur við hjólastólum. Þröskuldur er flatur."
+        "title": "Breiðar þröskuldslausar dyr",
+        "desc": "100 cm laus hurðabreidd og flatur þröskuldur."
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
@@ -3454,7 +3467,7 @@
       "feature1": "Grunneining rúmar allt að 6 sitjandi manns",
       "feature2": "90 cm einingar lengja klefann upp í 10",
       "feature3": "25,9 dB(A) talskerðing — fundarherbergisflokkur",
-      "feature4": "Fullur A/V búnaður og aðgengilegur inngangur frá hönnun"
+      "feature4": "Fullur A/V búnaður og breiðar þröskuldslausar dyr"
     },
     "acoustics": {
       "tag": "HLJÓÐEIGINLEIKAR",
@@ -3507,8 +3520,8 @@
         "desc": "Dimmanleg hlý/köld LED-lýsing með aðskildum svæðum fyrir skjá- og skriftarverkefni. Stýrt frá veggspjaldi."
       },
       "accessibility": {
-        "title": "Hjólastólaaðgengilegt",
-        "desc": "110 cm laus hurðabreidd og flatur þröskuldur er samhæft við hjólastóla. Innra fyrirkomulagið skilur eftir pláss fyrir einn hjólastólanotanda við borðið."
+        "title": "Breiðar þröskuldslausar dyr",
+        "desc": "110 cm laus hurðabreidd og flatur þröskuldur."
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
@@ -3612,8 +3625,8 @@
       "tag": "HVERS VEGNA AÐ GERAST SAMSTARFSAÐILI RE-SOUND",
       "title": "Sex ástæður til að taka upp símann.",
       "item1": {
-        "title": "Framleitt í Belgíu og Evrópu",
-        "desc": "Textíllínurnar eru framleiddar í Belgíu; rWood í Evrópu; rPET í Póllandi. Stuttar aðfangakeðjur, gegnsætt upprunaland og gæði sem þú getur staðið með í útboði."
+        "title": "Framleitt í okkar eigin verksmiðjum",
+        "desc": "Textíllínurnar eru framleiddar í verksmiðju okkar í Beveren-Waas (Belgíu) og rPET í verksmiðju okkar í Częstochowa (Póllandi); rWood er framleitt í Evrópu. Stuttar aðfangakeðjur, gagnsær uppruni og gæði sem þú getur staðið við í útboði."
       },
       "item2": {
         "title": "Skýr, heiðarleg lína",
@@ -3766,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Belgía",
       "hoursLabel": "Opnunartími",
-      "hoursValue": "Mán–fös, 09:00–17:00 · eftir samkomulagi",
+      "hoursValue": "Mán–fös, 08:00–16:30 · eftir samkomulagi",
       "contactLabel": "Tengiliður",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3821,13 +3834,26 @@
       "emailLabel": "Tölvupóstur",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Tími",
-      "hoursValue": "Mán–fös, 09:00–17:00 CET"
+      "hoursValue": "Mán–fös, 08:00–16:30 CET"
     },
     "cta": {
       "title": "Viltu koma og sjá það?",
       "subtitle": "Bókaðu heimsókn í HQ, biddu um sýnishorn eða skipuleggðu kynningu á staðnum — það sem hentar best.",
       "primary": "Bóka heimsókn",
       "secondary": "Biðja um sýnishorn"
+    },
+    "office": {
+      "tag": "Framleiðsluskrifstofa",
+      "title": "Re-Sound Pólland — Częstochowa",
+      "description": "rWood- og rPET-plöturnar okkar og allir klefar eru smíðaðir í okkar eigin verksmiðju í Częstochowa. Framleiðsluskrifstofan tekur á móti verkefnaheimsóknum og verksmiðjuskoðunum eftir samkomulagi.",
+      "addressLabel": "Heimilisfang",
+      "country": "Pólland",
+      "hoursLabel": "Opnunartími",
+      "hoursValue": "Mán–fös, 08:00–16:30 · eftir samkomulagi",
+      "languagesLabel": "Tungumál",
+      "languagesValue": "Hollenska, pólska, úkraínska, rússneska, enska",
+      "contactLabel": "Tengiliður",
+      "phoneLabel": "Sími"
     }
   },
   "manufacturer": {
@@ -3991,7 +4017,14 @@
       "ctaText": "Pantaðu ókeypis sýnishornasett eða sendu okkur teikningarnar þínar til að fá tilboð — teymið okkar svarar innan eins virks dags.",
       "ctaSampleKit": "Panta sýnishornasett",
       "ctaQuote": "Óska eftir tilboði",
-      "breadcrumbLabel": "Brauðmolaslóð"
+      "breadcrumbLabel": "Brauðmolaslóð",
+      "priceGuideLink": "Öll verð á klefum, ISO-flokkar og uppsetningarkostir í verðleiðbeiningunum",
+      "units": {
+        "m2": "per m²",
+        "booth": "per klefa",
+        "set": "per sett",
+        "piece": "per stykki"
+      }
     },
     "rpet": {
       "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
@@ -4072,7 +4105,7 @@
     "booths": {
       "title": "Hljóðeinangraðir símaklefar – Solo, Duo, Modular XL | Re-Sound",
       "description": "Símaklefar og fundarklefar: Solo Flex (1 manns), Duo (2), Modular XL (6–10). Talminnkun skv. ISO 23351-1, hljóðlaus loftræsting, 230 V, USB-C.",
-      "h1": "Símaklefar og fundarklefar fyrir skrifstofur, smíðaðir í Belgíu",
+      "h1": "Símaklefar og fundarklefar fyrir skrifstofur úr eigin verksmiðjum",
       "breadcrumb": "Klefar",
       "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Re-Sound er vörumerki Stretch Group. Við framleiðum í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). Klefalínan er í þremur stærðum. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Öllum klefum fylgir 5 ára ábyrgð á burðarvirki og þeir eru afhentir um allt ESB, með uppsetningu sé þess óskað. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
       "whyCertsDesc": "5 ára ábyrgð á burðarvirki og 2 ára ábyrgð á rafbúnaði á öllum klefum; lækkun talstyrks gefin upp samkvæmt ISO 23351-1.",
@@ -4099,7 +4132,7 @@
         },
         "q4": {
           "question": "Hvaða fundarklefi rúmar sex manns eða fleiri?",
-          "answer": "Modular XL: grunneiningin rúmar sex manns og hver 90 cm hluti eykur rýmið upp í tíu manns, með undirbúningi fyrir A/V-búnað og aðgengilegum inngangi."
+          "answer": "Modular XL: grunneiningin rúmar sex manns og hver 90 cm hluti eykur rýmið upp í tíu manns, með undirbúningi fyrir A/V-búnað og breiðum þröskuldslausum dyrum."
         },
         "q5": {
           "question": "Hver er afhendingartíminn og ábyrgðin á símaklefa?",
@@ -4165,5 +4198,86 @@
       "body": "Við útbúum sýnishornapakkann og sendum hann til <strong>{city}</strong> innan 3–5 virkra daga. Athugið pósthólfið fyrir staðfestingu.",
       "close": "Loka"
     }
+  },
+  "testimonials": {
+    "tag": "Umsagnir",
+    "title": "Hvað viðskiptavinir segja",
+    "googleReviews": "{count, plural, one {# Google-umsögn} other {# Google-umsagnir}}",
+    "viaGoogle": "í gegnum Google",
+    "reviewUs": "Skrifaðu Google-umsögn um okkur"
+  },
+  "boothGuide": {
+    "title": "Skrifstofusímaklefar: verð og ISO-flokkar 2026 | Re-Sound",
+    "description": "Hvað kostar símaklefi? Solo Flex frá 2.740 € án vsk., Modular XL frá 15.000 €. ISO-flokkar, loftræsting, uppsetning, afhending og ábyrgð frá framleiðanda.",
+    "h1": "Símaklefar fyrir skrifstofur: verð, flokkar og hvernig á að velja",
+    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá 2.740 € án vsk. án uppsetningar (Solo Flex) og Modular XL fundarklefi frá 15.000 €. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
+    "breadcrumb": "Verð á símaklefum",
+    "priceTag": "Verð 2026",
+    "priceTitle": "Verð eftir gerð (án vsk.)",
+    "priceNote": "Verð eru án vsk. og, utan Belgíu, án flutnings. Uppsetning af okkar eigin teymi er valkvæð; Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum.",
+    "col": {
+      "model": "Gerð",
+      "capacity": "Fjöldi",
+      "footprint": "Grunnflötur",
+      "dimensions": "Ytri mál (B×D×H)",
+      "priceExcl": "Frá, án uppsetningar",
+      "priceIncl": "Frá, með uppsetningu",
+      "extra": "Auka 90 cm eining",
+      "iso": "ISO 23351-1",
+      "ventilation": "Loftræsting",
+      "power": "Rafmagn",
+      "weight": "Þyngd",
+      "assembly": "Samsetning",
+      "leadTime": "Afhendingartími",
+      "warranty": "Ábyrgð"
+    },
+    "onRequest": "Eftir beiðni",
+    "persons": "{count, plural, one {# manneskja} other {# manns}}",
+    "personsRange": "6–10 manns (stærsti hingað til: 20)",
+    "classLabel": "Flokkur {class}",
+    "weeks": "{weeks} vikur",
+    "warrantyValue": "5 ár á burðarvirki · 2 ár á rafbúnaði",
+    "includedTag": "Það sem fylgir",
+    "includedTitle": "Hvað er innifalið í verðinu",
+    "includedText": "Hver klefi er afhentur sem fullbúin, loftræst eining: skel með hurð, deyfanleg LED-lýsing, rafmagn við borðið (230 V og USB-C á Solo Flex) og, á Solo Flex, handstillanlegt sitjandi/standandi borð. Loftræstingin notar hljóðlátar EC-viftur; Solo Flex flytur 4,6 m³/min og PIR-skynjari hans kveikir á viftunum þegar einhver er inni.",
+    "installationTag": "Uppsetning",
+    "installationTitle": "Uppsetning af Re-Sound eða eigin samsetning",
+    "installationText": "Uppsetningarteymið okkar setur upp símaklefa á um 60 mínútum, fundarklefa á um 2 klukkustundum og Modular XL á 2 til 6 klukkustundum. Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum: klefinn er flatpökkuð smíði og því má taka hann í sundur og setja upp aftur á annarri hæð síðar.",
+    "testingTag": "Prófaðu fyrst",
+    "testingTitle": "Prófaðu klefa í sýningarsal okkar",
+    "testingText": "Þú getur sest inn í allar gerðir í sýningarsal okkar í Beveren-Waas (mán–fös 08:00–16:30, eftir samkomulagi) og heyrt muninn með eigin eyrum áður en þú pantar.",
+    "classesTag": "Hljóðvist",
+    "classesTitle": "Hvað ISO 23351-1 flokkarnir þýða",
+    "classesText": "ISO 23351-1 mælir hversu mikið lokaður klefi lækkar tal sem berst út úr honum. Solo Flex lækkar tal um u.þ.b. 24 dB(A) og Modular XL um 25,9 dB(A): báðir eru í flokki C. Það kemur í veg fyrir að venjuleg símtöl og myndfundir trufli aðra á hæðinni; flokkar B, A og A+ lækka tal enn frekar.",
+    "classCol": {
+      "class": "Flokkur",
+      "threshold": "Lækkun talhljóðs",
+      "models": "Re-Sound gerðir"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "að minnsta kosti {db} dB",
+    "endOfLifeTitle": "Við lok líftíma",
+    "endOfLifeText": "Klefa má endurselja eða taka í sundur til endurvinnslu: hvert efni er endurvinnanlegt.",
+    "faqTag": "Algengar spurningar",
+    "faqTitle": "Algengar spurningar um verð á klefum",
+    "ctaTag": "Næsta skref",
+    "ctaTitle": "Fáðu tilboð eða heimsæktu sýningarsalinn",
+    "ctaText": "Sendu okkur grunnteikninguna og fjölda klefa; við svörum með tilboði sem innifelur afhendingu og uppsetningu.",
+    "ctaQuote": "Óska eftir tilboði",
+    "ctaShowroom": "Bóka heimsókn í sýningarsal",
+    "tableCaption": "Verð og tæknilýsingar klefa eftir gerð",
+    "assembly": {
+      "solo-flex": "Um 60 mínútur með uppsetningarteymi okkar, eða tveir einstaklingar á innan við 3 klst.",
+      "duo": "Um 2 klst. með uppsetningarteymi okkar",
+      "modular-xl": "2 til 6 klst. með uppsetningarteymi okkar"
+    },
+    "classesNote": "Viðmiðunarmörk: lágmarkslækkun talhljóðs fyrir hvern flokk. Duo hefur ekki enn verið mældur.",
+    "endOfLifeTag": "Hringrás"
   }
 }

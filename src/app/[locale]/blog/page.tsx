@@ -4,9 +4,11 @@ import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
+import { getContentPosts } from '@/lib/content/blog';
 
 import PageHero from '@/components/sections/PageHero';
 import BlogGrid from '@/components/sections/BlogGrid';
+import { LEGACY_POSTS, type BlogGridPost } from '@/data/legacy-posts';
 import Newsletter from '@/components/sections/Newsletter';
 
 interface BlogPageProps {
@@ -47,6 +49,18 @@ export default async function BlogPage({ params: { locale } }: BlogPageProps) {
   const t = await getTranslations('blog');
   const messages = pickMessages(await getMessages(), ['blog', 'blogPosts', 'newsletter']);
 
+  // Editorial posts of this locale (single-locale, no drafts) come first.
+  const editorial: BlogGridPost[] = getContentPosts(locale).map((post) => ({
+    slug: post.slug,
+    category: post.category,
+    date: post.datePublished,
+    title: post.h1,
+    excerpt: post.description,
+    image: post.heroImage,
+    imageAlt: post.heroAlt,
+  }));
+  const posts = [...editorial, ...LEGACY_POSTS];
+
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       {/* Page Hero */}
@@ -59,7 +73,7 @@ export default async function BlogPage({ params: { locale } }: BlogPageProps) {
       {/* Blog Grid */}
       <section className="blog-content">
         <div className="blog-inner">
-          <BlogGrid />
+          <BlogGrid posts={posts} />
         </div>
       </section>
 

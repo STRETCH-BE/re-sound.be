@@ -1,0 +1,550 @@
+/* Editorial content: blog posts from the content workbook, FAQ page, booth
+   price guide, testimonials. Plain global CSS (server components). */
+
+.post {
+  --post-max: 780px;
+}
+
+.post-hero {
+  padding: 7rem 2rem 2.5rem;
+  background: var(--cream, #f6f3ee);
+}
+
+.post-hero-inner {
+  max-width: var(--post-max);
+  margin: 0 auto;
+}
+
+.post-hero .section-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.post-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--deep-blue, #0d3a5c);
+}
+
+.post-hero .post-lead {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0 0 1rem;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.post-figure {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  transform: translateY(-1.5rem);
+}
+
+.post-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.post-body {
+  max-width: var(--post-max);
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+}
+
+.prose {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--charcoal, #222);
+}
+
+.prose > p:first-child {
+  font-size: 1.15rem;
+}
+
+.prose h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--deep-blue, #0d3a5c);
+  margin: 2.5rem 0 0.9rem;
+  line-height: 1.25;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  color: var(--deep-blue, #0d3a5c);
+  margin: 1.8rem 0 0.6rem;
+}
+
+.prose p {
+  margin: 0 0 1.2rem;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 1.2rem;
+  padding-left: 1.4rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+.prose a {
+  color: var(--brand-blue, #197fc7);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.25rem;
+  border-left: 4px solid var(--brand-blue, #197fc7);
+  color: #444;
+}
+
+.prose-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e3ded6;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: var(--cream, #f6f3ee);
+  font-weight: 600;
+}
+
+.prose em:last-child {
+  color: #666;
+}
+
+.post-cta {
+  max-width: var(--post-max);
+  margin: 0 auto 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--deep-blue, #0d3a5c);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.post-cta p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.post-cta .btn-primary {
+  white-space: nowrap;
+}
+
+.post-author {
+  max-width: var(--post-max);
+  margin: 0 auto 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--cream, #f6f3ee);
+  border-radius: 16px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.post-author-name {
+  display: block;
+  font-weight: 700;
+}
+
+.post-author-role {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.post-draft-banner {
+  background: #fff3cd;
+  color: #664d03;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 5rem;
+}
+
+.post-draft-banner + .post-hero {
+  padding-top: 2.5rem;
+}
+
+.post-related {
+  max-width: 1040px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.post-related h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.post-related-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.post-related-grid a {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--cream, #f6f3ee);
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-related-grid a:hover h3 {
+  color: var(--brand-blue, #197fc7);
+}
+
+.post-related-grid h3 {
+  font-size: 1.05rem;
+  margin: 0.4rem 0 0.5rem;
+}
+
+.post-related-grid time {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Native FAQ accordions (details/summary) shared by FAQ page, hubs, guide */
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-list details {
+  border-bottom: 1px solid #e3ded6;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  padding: 1rem 0;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: '+';
+  color: var(--brand-blue, #197fc7);
+  flex: none;
+}
+
+.faq-list details[open] summary::after {
+  content: '−';
+}
+
+.faq-list details p {
+  margin: 0 0 1rem;
+  color: #444;
+  line-height: 1.65;
+}
+
+.faq-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 7rem 2rem 4rem;
+}
+
+.faq-page h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin: 0 0 0.5rem;
+}
+
+.faq-page-intro {
+  color: #555;
+  margin: 0 0 2rem;
+}
+
+.faq-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-toc a {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: var(--cream, #f6f3ee);
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.faq-group {
+  margin: 0 0 2.5rem;
+}
+
+.faq-group h2 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .post-hero {
+    padding: 6rem 1.25rem 2rem;
+  }
+
+  .post-figure,
+  .post-body,
+  .post-related {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .faq-page {
+    padding: 6rem 1.25rem 3rem;
+  }
+}
+
+/* Production office block (where-to-buy) */
+.office-section {
+  padding: 3rem 2rem 4rem;
+  background: var(--cream, #f6f3ee);
+}
+
+.office-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.office-inner h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.office-description {
+  color: #555;
+  max-width: 640px;
+  margin: 0 0 1.5rem;
+}
+
+.office-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin: 0;
+}
+
+.office-meta dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #777;
+  margin-bottom: 0.3rem;
+}
+
+.office-meta dd {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Testimonials (Google reviews) */
+.tm-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.tm-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tm-inner h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.tm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background: var(--cream, #f6f3ee);
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0 0 2rem;
+}
+
+.tm-badge strong {
+  font-size: 1.15rem;
+}
+
+.tm-stars {
+  color: #f5a623;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.tm-stars-off {
+  color: #ddd;
+}
+
+.tm-grid {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.tm-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--cream, #f6f3ee);
+}
+
+.tm-card blockquote {
+  margin: 0.75rem 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.tm-card footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.tm-author {
+  font-weight: 600;
+}
+
+.tm-meta {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.tm-rows {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.tm-cta a {
+  color: var(--brand-blue, #197fc7);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tm-cta a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   Booth price guide (src/components/guides/BoothPriceGuide.tsx)
+   ============================================================ */
+
+.guide-page .hub-hero .ps-breadcrumbs {
+  margin-bottom: 0.5rem;
+}
+
+.guide-text-section {
+  background: white;
+}
+
+.guide-text-section--alt {
+  background: var(--cream, #f7f4ee);
+}
+
+.guide-text {
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.guide-table tbody th {
+  white-space: normal;
+  min-width: 11rem;
+}
+
+.guide-class-table {
+  max-width: 860px;
+}
+
+.guide-class-current td,
+.guide-class-current th {
+  background: #eef6fc;
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.office-phone {
+  display: block;
+}

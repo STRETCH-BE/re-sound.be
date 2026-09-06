@@ -1,0 +1,198 @@
+[
+  {
+    "id": "FAQ-001",
+    "category": "Booths",
+    "question": "How much sound does an office phone booth block?",
+    "answer": "Solo Flex reduces speech level by approximately 24 dB(A) according to ISO 23351-1, which places it in Class C: a conversation outside the booth sounds like distant murmuring inside. Modular XL achieves 25.9 dB(A), also Class C.",
+    "showOn": [
+      "solo-flex",
+      "faq",
+      "booths",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-002",
+    "category": "Booths",
+    "question": "What is the difference between a phone booth and a meeting pod?",
+    "answer": "The main difference is size: a phone booth is designed for one person, while a meeting pod is designed for two or more people. Most meeting pods seat two or four people. With our modular version, a meeting pod can be extended to seat as many people as you need.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-003",
+    "category": "Booths",
+    "question": "How much does an office phone booth cost?",
+    "answer": "The Solo Flex office phone booth starts from € 2 740 excl. VAT without installation, or € 3 605 excl. VAT including installation. The Duo meeting pod starts from € 7 615 excl. VAT. Modular XL starts from € 15 000 excl. VAT without installation, or € 17 990 excl. VAT including installation, plus € 7 264 including installation per extra 90 cm element. The largest Modular XL built so far seats 20 people. Prices exclude transport outside Belgium.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-004",
+    "category": "Booths",
+    "question": "What does ISO 23351-1 Class A, B or C mean?",
+    "answer": "ISO 23351-1 measures how much a booth reduces the level of speech between inside and outside, and groups the result into classes: A+ from 33 dB, A from 30 dB, B from 27 dB, C from 24 dB and D from 21 dB. Solo Flex (approximately 24 dB(A)) and Modular XL (25.9 dB(A)) are both Class C. In practice, Class C turns a normal conversation into distant murmuring: clearly quieter, but not inaudible.",
+    "showOn": [
+      "booths",
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-005",
+    "category": "Booths",
+    "question": "Does a phone booth need ventilation, and how loud is it?",
+    "answer": "Yes: a phone booth is a closed space, so ventilation is essential for good air quality. Every Re-Sound booth and meeting pod is ventilated. Electrical models use our silent EC-fan system, which moves 4.6 m³ of air per minute in the Solo Flex.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-006",
+    "category": "Booths",
+    "question": "Can a booth be moved to another floor or office?",
+    "answer": "Yes. Every booth uses a flat-pack construction, so it can be demounted and rebuilt on another floor or in another office. Taking a booth apart and rebuilding it is quick and straightforward.",
+    "showOn": [
+      "booths",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-007",
+    "category": "Booths",
+    "question": "Can we try a booth before we order?",
+    "answer": "Yes. You are welcome to test every model in our showroom in Beveren-Waas (Belgium) before you order; visits are by appointment, Monday to Friday 08:00–16:30.",
+    "showOn": [
+      "guide",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-008",
+    "category": "Booths",
+    "question": "How long does installation take, and who does it?",
+    "answer": "Re-Sound's own installers place your booth: a call booth takes around 60 minutes, a meeting pod around two hours and a Modular XL between two and six hours. Alternatively, the Solo Flex can be self-assembled: two people need less than three hours.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-009",
+    "category": "Booths",
+    "question": "Is the booth wheelchair accessible?",
+    "answer": "Not as standard: none of our booths is wheelchair accessible in its standard configuration. On request, we can modify a booth to make it wheelchair accessible. Contact us to discuss your requirements.",
+    "showOn": [
+      "modular-xl",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-010",
+    "category": "Booths",
+    "question": "What is the warranty on a booth?",
+    "answer": "Every booth comes with a 5-year warranty on the structural frame and body, and a 2-year warranty on electronic components and other wear parts.",
+    "showOn": [
+      "booths",
+      "faq",
+      "guide"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-011",
+    "category": "Booths",
+    "question": "What happens to a booth at the end of its life?",
+    "answer": "A booth that is no longer needed can be resold to another party or dismantled for recycling. Because it is built as a flat-pack kit, it can be taken apart into its separate materials, each of which is recyclable. Our acoustic panels are taken back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg.",
+    "showOn": [
+      "booths",
+      "sustainability",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-012",
+    "category": "rPET",
+    "question": "Is PET felt fire-safe?",
+    "answer": "Yes. Our rPET panels are classified B-s1,d0 according to EN 13501-1, which makes them suitable for both private homes and public buildings. Check the exact requirement for your project with your acoustician or fire-safety adviser.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-013",
+    "category": "rPET",
+    "question": "Can I cut and paint rPET panels?",
+    "answer": "Yes, rPET panels can be both cut and painted. Cut them with a knife (even a ceramic kitchen knife), a circular saw, a panel saw or an angle grinder fitted with a metal-cutting blade. Re-Sound UV-prints rPET panels in-house, so you can order custom graphics, or you can paint the panels yourself and use them as a canvas for your own acoustic artwork.",
+    "showOn": [
+      "rpet",
+      "rpet-panel",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-014",
+    "category": "rPET",
+    "question": "How much sound does a 24 mm PET panel absorb?",
+    "answer": "A 24 mm rPET panel has a weighted sound absorption coefficient αw of 0.85, which corresponds to absorption class B according to ISO 11654. Mounting the panel with an air gap behind it improves absorption at low frequencies. Check the exact requirement for your room with your acoustician.",
+    "showOn": [
+      "rpet",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-015",
+    "category": "rWood",
+    "question": "Micro-perforated or grooved wood panels: which absorbs more?",
+    "answer": "Without a backing absorber, grooved rWood panels absorb more than micro-perforated ones, because the felt between the grooves adds absorption. With a backing absorber behind the panel, such as acoustic felt, an rPET panel or mineral wool (rock wool or glass wool), both systems reach the same absorption values.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-016",
+    "category": "rWood",
+    "question": "Are the veneers FSC-certified?",
+    "answer": "Yes. Re-Sound uses only FSC-certified veneers for its rWood panels. This applies to the whole rWood range, both grooved and micro-perforated.",
+    "showOn": [
+      "rwood",
+      "faq"
+    ],
+    "schema": true
+  },
+  {
+    "id": "FAQ-017",
+    "category": "General",
+    "question": "Where are Re-Sound panels manufactured?",
+    "answer": "Re-Sound panels are made in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The Interior, Solid and Divide textile panels are produced in Beveren-Waas; the rWood and rPET panels, as well as the phone booths, are produced in Częstochowa. All raw materials are sourced within the European Union.",
+    "showOn": [
+      "faq",
+      "about"
+    ],
+    "schema": true
+  }
+]

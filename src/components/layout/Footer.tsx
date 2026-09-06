@@ -3,7 +3,8 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { openConsentBanner } from '@/lib/consent';
-import { SOCIAL_LINKS } from '@/config/site';
+import { GOOGLE_LISTING, SOCIAL_LINKS } from '@/config/site';
+import { guidePath, isGuideLocale } from '@/data/guides';
 import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
 
 export default function Footer() {
@@ -121,6 +122,11 @@ export default function Footer() {
                 <Link href={link.href} prefetch={false}>{link.label}</Link>
               </li>
             ))}
+            {isGuideLocale(locale) && (
+              <li>
+                <Link href={guidePath(locale)} prefetch={false}>{t('priceGuide')}</Link>
+              </li>
+            )}
           </ul>
           <ul className="footer-links footer-links--multi">
             {productLinks.map((link) => (
@@ -177,6 +183,7 @@ export default function Footer() {
           <Link href="/privacy" prefetch={false}>{t('privacy')}</Link>
           <Link href="/terms" prefetch={false}>{t('terms')}</Link>
           <Link href="/faq" prefetch={false}>{tNav('faq')}</Link>
+          <a href={GOOGLE_LISTING.writeReviewUrl ?? GOOGLE_LISTING.mapsUrl} target="_blank" rel="noopener noreferrer">{t('reviewUs')}</a>
         </div>
       </div>
 

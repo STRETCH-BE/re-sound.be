@@ -39,7 +39,7 @@
     "duoTitle": "Duo — Telefonbox für 2 Personen & Fokus-Pod fürs Büro | Re-Sound",
     "duoDescription": "Telefonbox für zwei Personen mit zwei Konfigurationen: Flex bietet zwei Plätze für ein Gespräch, Work einen Tisch in voller Breite. 2 m², 230 V, belüftet.",
     "modularXlTitle": "Modular XL — Akustik-Meeting-Pod für 6–10 Personen | Re-Sound",
-    "modularXlDescription": "Akustik-Meeting-Pod für 6 bis 10 Personen: Basis in 90-cm-Segmenten erweiterbar, 25,9 dB(A) Sprachminderung, A/V-Ausstattung, barrierefreier Eingang.",
+    "modularXlDescription": "Akustik-Meeting-Pod für 6 bis 10 Personen: Basis in 90-cm-Segmenten erweiterbar, 25,9 dB(A) Sprachminderung, A/V-Ausstattung, breite schwellenlose Tür.",
     "partnerTitle": "Partnerprogramm · Trade- und Händlerprogramm",
     "partnerDescription": "Re-Sound Partnerprogramm für Architekten, Designer, Händler und Distributoren in Europa: ausschreibungsfertige Dokumentation, Gebietsschutz, Support.",
     "whereToBuyTitle": "Wo Re-Sound zu sehen und zu kaufen",
@@ -540,7 +540,7 @@
       "phone": "Telefon",
       "address": "Adresse",
       "hours": "Geschäftszeiten",
-      "hoursValue": "Montag - Freitag: 9:00 - 17:00"
+      "hoursValue": "Montag - Freitag: 8:00 - 16:30"
     },
     "faq": {
       "title": "Häufig Gestellte Fragen",
@@ -587,7 +587,10 @@
       "company": "Unternehmen",
       "design": "Design"
     },
-    "minRead": "{minutes} Min. Lesezeit"
+    "minRead": "{minutes} Min. Lesezeit",
+    "draftBanner": "Entwurf zur Prüfung – nicht veröffentlicht, nicht indexiert.",
+    "by": "Von",
+    "ctaQuote": "Angebot anfragen"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -720,7 +723,9 @@
     "manageCookies": "Cookies verwalten",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "countryBelgium": "Belgien"
+    "countryBelgium": "Belgien",
+    "reviewUs": "Bewerten Sie uns auf Google",
+    "priceGuide": "Telefonbox-Preise"
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
@@ -946,7 +951,8 @@
     "related": {
       "tag": "AUCH IN DIESER SERIE",
       "title": "Weitere Modelle dieser Serie",
-      "rangeLink": "Die ganze {range}-Reihe ansehen"
+      "rangeLink": "Die ganze {range}-Reihe ansehen",
+      "priceGuide": "Kabinenpreise und ISO-Klassen in der Preisübersicht vergleichen"
     },
     "a11y": {
       "selectColour": "Farbe {name} auswählen",
@@ -3028,7 +3034,14 @@
         "answer": "Verwenden Sie das Kontaktformular auf einer Produktseite oder das allgemeine Kontaktformular, mit: der Produktlinie, die Sie interessiert, ungefähre Mengen oder Grundriss und Ihrem Projektzeitplan. Wir antworten innerhalb eines Werktags mit einem maßgeschneiderten Angebot, einer Musterregelung und einer Berechnung der erwarteten akustischen Verbesserung. Für größere Projekte können wir einen Vor-Ort-Termin oder einen Briefing-Call vereinbaren."
       }
     },
-    "categoriesLabel": "Kategorien"
+    "categoriesLabel": "Kategorien",
+    "groups": {
+      "Booths": "Telefonboxen und Meeting-Pods",
+      "rPET": "rPET-Paneele",
+      "rWood": "rWood-Paneele",
+      "General": "Akustik, Materialien und Nachhaltigkeit",
+      "Ordering": "Bestellung, Preise und Montage"
+    }
   },
   "boothPage": {
     "nav": {
@@ -3174,7 +3187,7 @@
       },
       "accessibility": {
         "title": "Stufenfreier Zugang",
-        "desc": "Flache Schwelle und 90 cm lichte Türbreite erfüllen die europäischen Empfehlungen zur Barrierefreiheit in Büros."
+        "desc": "Flache Schwelle und 90 cm lichte Türbreite."
       },
       "safety": {
         "title": "Nach Norm geprüft",
@@ -3344,8 +3357,8 @@
         "desc": "Warm/Kalt dimmbare LED, geeignet für Videokonferenzen. Gleichmäßige Ausleuchtung beider Gesichter im Flex-Modus — keine Schatten unter den Augen."
       },
       "accessibility": {
-        "title": "Breiter, stufenfreier Zugang",
-        "desc": "100 cm lichte Türbreite — erfüllt die europäischen Empfehlungen zur Barrierefreiheit und ist rollstuhltauglich. Schwelle ist flach."
+        "title": "Breite, schwellenlose Tür",
+        "desc": "100 cm lichte Türbreite und flache Schwelle."
       },
       "safety": {
         "title": "Nach Norm geprüft",
@@ -3454,7 +3467,7 @@
       "feature1": "Basismodul bietet Platz für bis zu 6 sitzende Personen",
       "feature2": "90-cm-Segmente erweitern die Kabine auf 10 Personen",
       "feature3": "25,9 dB(A) Sprachdämmung — Besprechungsraum-Klasse",
-      "feature4": "Vollständige A/V-Ausstattung und barrierefreier Eingang"
+      "feature4": "Vollständige A/V-Ausstattung und breite, schwellenlose Tür"
     },
     "acoustics": {
       "tag": "AKUSTISCHE LEISTUNG",
@@ -3507,8 +3520,8 @@
         "desc": "Dimmbare Warm/Kalt-LED mit getrennten Zonen für Bildschirm- und Schreibaufgaben. Über das Wandbedienteil einstellbar."
       },
       "accessibility": {
-        "title": "Rollstuhltauglich",
-        "desc": "110 cm lichte Türbreite und flache Schwelle sind rollstuhltauglich. Das Innenlayout lässt Platz für eine rollstuhlnutzende Person am Tisch."
+        "title": "Breite, schwellenlose Tür",
+        "desc": "110 cm lichte Türbreite und flache Schwelle."
       },
       "safety": {
         "title": "Nach Norm geprüft",
@@ -3766,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Belgien",
       "hoursLabel": "Öffnungszeiten",
-      "hoursValue": "Mo–Fr, 09:00–17:00 · nach Vereinbarung",
+      "hoursValue": "Mo–Fr, 08:00–16:30 · nach Vereinbarung",
       "contactLabel": "Kontakt",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3821,13 +3834,26 @@
       "emailLabel": "E-Mail",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Zeiten",
-      "hoursValue": "Mo–Fr, 09:00–17:00 MEZ"
+      "hoursValue": "Mo–Fr, 08:00–16:30 MEZ"
     },
     "cta": {
       "title": "Möchten Sie es sich ansehen?",
       "subtitle": "Buchen Sie einen Besuch im HQ, fordern Sie Muster an oder vereinbaren Sie eine Vor-Ort-Demonstration — was am besten passt.",
       "primary": "Besuch buchen",
       "secondary": "Muster anfordern"
+    },
+    "office": {
+      "tag": "Produktionsbüro",
+      "title": "Re-Sound Polen – Częstochowa",
+      "description": "Unsere rWood- und rPET-Paneele sowie alle Kabinen werden in unserem eigenen Werk in Częstochowa gefertigt. Projektbesuche und Werksführungen im Produktionsbüro sind nach Terminvereinbarung willkommen.",
+      "addressLabel": "Adresse",
+      "country": "Polen",
+      "hoursLabel": "Öffnungszeiten",
+      "hoursValue": "Mo–Fr, 08:00–16:30 Uhr · nach Terminvereinbarung",
+      "languagesLabel": "Sprachen",
+      "languagesValue": "Niederländisch, Polnisch, Ukrainisch, Russisch, Englisch",
+      "contactLabel": "Kontakt",
+      "phoneLabel": "Telefon"
     }
   },
   "manufacturer": {
@@ -3991,7 +4017,14 @@
       "ctaText": "Bestellen Sie ein kostenloses Muster-Kit oder senden Sie uns Ihre Zeichnungen für ein Angebot – unser Team antwortet innerhalb eines Werktags.",
       "ctaSampleKit": "Muster-Kit bestellen",
       "ctaQuote": "Angebot anfragen",
-      "breadcrumbLabel": "Brotkrumennavigation"
+      "breadcrumbLabel": "Brotkrumennavigation",
+      "priceGuideLink": "Alle Kabinenpreise, ISO-Klassen und Montageoptionen in der Preisübersicht",
+      "units": {
+        "m2": "pro m²",
+        "booth": "pro Kabine",
+        "set": "pro Set",
+        "piece": "pro Stück"
+      }
     },
     "rpet": {
       "title": "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound",
@@ -4072,7 +4105,7 @@
     "booths": {
       "title": "Akustik-Telefonboxen & Meeting-Pods fürs Büro | Re-Sound",
       "description": "Büro-Telefonboxen & Meeting-Pods: Solo Flex (1 Pers.), Duo (2 Pers.), Modular XL (6–10). Sprachpegelminderung ISO 23351-1, leise Lüftung, 230 V, USB-C.",
-      "h1": "Telefonboxen und Meeting-Pods fürs Büro, gebaut in Belgien",
+      "h1": "Telefonboxen und Meeting-Pods fürs Büro aus eigener Fertigung",
       "breadcrumb": "Telefonboxen",
       "intro": "Eine Telefonbox fürs Büro bietet einer Person einen ruhigen, belüfteten Platz für Telefonate und Videomeetings mitten im Großraumbüro; ein Meeting-Pod leistet dasselbe für ein Team. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die Serie umfasst drei Größen. Solo Flex ist die Telefonbox für eine Person: 1 m² Stellfläche, Sitz-Steh-Tisch, 230 V und USB-C, leise EC-Lüfter und eine Sprachpegelminderung von 24 dB(A), gemessen nach ISO 23351-1. Duo ist die Akustikkabine für zwei Personen mit zwei Konfigurationen – Flex für ein Gespräch zu zweit, Work für eine Person mit Tisch über die gesamte Breite. Modular XL ist der akustische Meeting-Pod für sechs bis zehn Personen: Die Grundeinheit lässt sich in 90-cm-Segmenten erweitern und erreicht 25,9 dB(A) Sprachpegelminderung. Alle Boxen kommen mit 5 Jahren Garantie auf die Konstruktion und werden EU-weit geliefert, auf Wunsch inklusive Montage. Vergleichen Sie unten die Telefonboxen fürs Büro und öffnen Sie anschließend eine Modellseite für Zubehör und Downloads.",
       "whyCertsDesc": "5 Jahre Garantie auf die Konstruktion und 2 Jahre auf die Elektronik bei jeder Box; Sprachpegelminderung angegeben nach ISO 23351-1.",
@@ -4099,7 +4132,7 @@
         },
         "q4": {
           "question": "Welcher Meeting-Pod eignet sich für sechs Personen oder mehr?",
-          "answer": "Modular XL: Die Basiseinheit bietet Platz für sechs Personen, und jedes 90-cm-Segment erweitert die Kapazität auf bis zu zehn Personen – mit A/V-Vorrüstung und barrierefreiem Zugang."
+          "answer": "Modular XL: Die Basiseinheit bietet Platz für sechs Personen, und jedes 90-cm-Segment erweitert die Kapazität auf bis zu zehn Personen – mit A/V-Vorrüstung und breiter, schwellenloser Tür."
         },
         "q5": {
           "question": "Wie lang sind Lieferzeit und Garantie bei einer Telefonbox?",
@@ -4165,5 +4198,86 @@
       "body": "Wir stellen Ihr Muster-Kit zusammen und versenden es innerhalb von 3–5 Werktagen nach <strong>{city}</strong>. Eine Bestätigung finden Sie in Ihrem Posteingang.",
       "close": "Schließen"
     }
+  },
+  "testimonials": {
+    "tag": "Bewertungen",
+    "title": "Das sagen unsere Kunden",
+    "googleReviews": "{count, plural, one {# Google-Bewertung} other {# Google-Bewertungen}}",
+    "viaGoogle": "über Google",
+    "reviewUs": "Bewerten Sie uns auf Google"
+  },
+  "boothGuide": {
+    "title": "Telefonbox fürs Büro: Preise & ISO-Klassen 2026 | Re-Sound",
+    "description": "Büro-Telefonbox: Preise vom Hersteller. Solo Flex ab 2.740 € netto, Modular XL ab 15.000 €. ISO 23351-1-Klassen, Lüftung, Montage, Lieferzeit, Garantie.",
+    "h1": "Telefonboxen fürs Büro: Preise, Klassen und Auswahlhilfe",
+    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab 2.740 € zzgl. MwSt. ohne Montage (Solo Flex), ein Modular XL Meeting-Pod ab 15.000 €. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
+    "breadcrumb": "Telefonbox-Preise",
+    "priceTag": "Preise 2026",
+    "priceTitle": "Preise pro Modell (zzgl. MwSt.)",
+    "priceNote": "Preise verstehen sich zzgl. MwSt. und, außerhalb Belgiens, zzgl. Transport. Die Montage durch unser eigenes Team ist optional; Solo Flex kann auch von zwei Personen in unter drei Stunden aufgebaut werden.",
+    "col": {
+      "model": "Modell",
+      "capacity": "Kapazität",
+      "footprint": "Stellfläche",
+      "dimensions": "Außenmaße (B×T×H)",
+      "priceExcl": "Ab-Preis ohne Montage",
+      "priceIncl": "Ab-Preis mit Montage",
+      "extra": "Zusätzliches 90-cm-Element",
+      "iso": "ISO 23351-1",
+      "ventilation": "Lüftung",
+      "power": "Strom",
+      "weight": "Gewicht",
+      "assembly": "Aufbau",
+      "leadTime": "Lieferzeit",
+      "warranty": "Garantie"
+    },
+    "onRequest": "Auf Anfrage",
+    "persons": "{count, plural, one {# Person} other {# Personen}}",
+    "personsRange": "6–10 Personen (bisher größte Ausführung: 20)",
+    "classLabel": "Klasse {class}",
+    "weeks": "{weeks} Wochen",
+    "warrantyValue": "5 Jahre auf die Konstruktion · 2 Jahre auf die Elektronik",
+    "includedTag": "Lieferumfang",
+    "includedTitle": "Was im Preis enthalten ist",
+    "includedText": "Jede Kabine wird als komplette, belüftete Einheit geliefert: Korpus mit Tür, dimmbare LED-Beleuchtung, Stromversorgung am Tisch (230 V und USB-C bei Solo Flex) und bei Solo Flex der manuell höhenverstellbare Sitz-Steh-Tisch. Die Lüftung arbeitet mit leisen EC-Ventilatoren; Solo Flex fördert 4,6 m³/min, und der PIR-Sensor schaltet die Ventilatoren ein, sobald jemand in der Kabine ist.",
+    "installationTag": "Montage",
+    "installationTitle": "Montage durch Re-Sound oder Selbstaufbau",
+    "installationText": "Unsere Monteure stellen eine Telefonbox in etwa 60 Minuten auf, einen Meeting-Pod in etwa 2 Stunden und einen Modular XL in 2 bis 6 Stunden. Solo Flex kann auch von zwei Personen in unter drei Stunden aufgebaut werden: Die Kabine ist eine Flat-Pack-Konstruktion und lässt sich später demontieren und auf einer anderen Etage wieder aufbauen.",
+    "testingTag": "Erst ausprobieren",
+    "testingTitle": "Testen Sie eine Kabine in unserem Showroom",
+    "testingText": "In unserem Showroom in Beveren-Waas (Mo–Fr 08:00–16:30 Uhr, nach Terminvereinbarung) können Sie in jedem Modell Platz nehmen und den Unterschied selbst hören, bevor Sie bestellen.",
+    "classesTag": "Akustik",
+    "classesTitle": "Was die ISO 23351-1-Klassen bedeuten",
+    "classesText": "ISO 23351-1 misst, um wie viel eine geschlossene Kabine den Pegel der nach außen dringenden Sprache senkt. Solo Flex reduziert Sprache um etwa 24 dB(A), Modular XL um 25,9 dB(A): Beide sind Klasse C. Damit stören normale Telefonate und Videomeetings die Bürofläche nicht; die Klassen B, A und A+ reduzieren Sprache noch stärker.",
+    "classCol": {
+      "class": "Klasse",
+      "threshold": "Sprachpegelreduktion",
+      "models": "Re-Sound-Modelle"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "mindestens {db} dB",
+    "endOfLifeTitle": "Ende der Nutzungsdauer",
+    "endOfLifeText": "Eine Kabine kann weiterverkauft oder zum Recycling zerlegt werden: Jedes Material ist recycelbar.",
+    "faqTag": "FAQ",
+    "faqTitle": "Häufige Fragen zu Kabinenpreisen",
+    "ctaTag": "Nächster Schritt",
+    "ctaTitle": "Angebot anfragen oder Showroom besuchen",
+    "ctaText": "Senden Sie uns Ihren Grundriss und die Anzahl der Kabinen; wir antworten mit einem Angebot inklusive Lieferung und Montage.",
+    "ctaQuote": "Angebot anfragen",
+    "ctaShowroom": "Showroom-Besuch planen",
+    "tableCaption": "Kabinenpreise und Spezifikationen pro Modell",
+    "assembly": {
+      "solo-flex": "Etwa 60 Minuten durch unsere Monteure oder zwei Personen in unter 3 Stunden",
+      "duo": "Etwa 2 Stunden durch unsere Monteure",
+      "modular-xl": "2 bis 6 Stunden durch unsere Monteure"
+    },
+    "classesNote": "Schwellenwerte: die minimale Sprachpegelreduktion pro Klasse. Duo wurde noch nicht gemessen.",
+    "endOfLifeTag": "Zirkulär"
   }
 }
