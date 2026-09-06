@@ -56,7 +56,9 @@
     "whereToBuy": "Waar te koop",
     "rangeRpet": "PET akoestische panelen",
     "rangeRwood": "Houten akoestische panelen",
-    "rangeBooths": "Akoestische belcabines"
+    "rangeBooths": "Akoestische belcabines",
+    "toggleMenu": "Menu openen of sluiten",
+    "selectLanguage": "Taal selecteren"
   },
   "hero": {
     "rwood": {
@@ -72,7 +74,8 @@
       "statFire": "Brandklasse",
       "pill1": "Echt houtfineer",
       "pill2": "Gerecycleerde kern",
-      "pill3": "Massief & geperforeerd"
+      "pill3": "Massief & geperforeerd",
+      "imageAlt": "rWood Micro akoestisch paneel met natuurlijk houtfineer, close-up van de afwerking"
     },
     "circular": {
       "badge": "Circulair Gamma · Interior · Solid · Divide · rPET",
@@ -89,7 +92,8 @@
       "pill1": "100% gerecycleerd",
       "pill2": "Gratis terugname",
       "pill3": "50+ kleuren",
-      "pill4": "Eigen fabrieken"
+      "pill4": "Eigen fabrieken",
+      "imageAlt": "Interior circulaire akoestische panelen in een modern kantoor"
     }
   },
   "ticker": {
@@ -140,7 +144,9 @@
     "swatchesBody": "Vijf houtsoorten, elk met zijn eigen karakter. Allemaal aangebracht op een 100% gerecycleerde akoestische kern.",
     "ctaFullSpec": "Volledige Specificaties",
     "ctaDatasheet": "Datasheet Downloaden",
-    "ctaOrderSamples": "Staalkit Bestellen"
+    "ctaOrderSamples": "Staalkit Bestellen",
+    "viewVeneer": "Fineer {name} bekijken",
+    "selectVeneer": "{name} selecteren"
   },
   "products": {
     "tag": "ONZE PRODUCTEN",
@@ -344,7 +350,8 @@
         "title": "Retourneren",
         "description": "Gratis ophaling en recycling tot nieuwe panelen."
       }
-    }
+    },
+    "imageAlt": "Circulaire economie — recyclageproces van akoestische panelen"
   },
   "dualCta": {
     "left": {
@@ -358,7 +365,9 @@
       "title": "Vraag een offerte op maat aan",
       "subtitle": "Vertel ons over je ruimte — wij raden de juiste akoestische oplossing aan en bezorgen je een offerte op maat.",
       "cta": "Offerte Aanvragen"
-    }
+    },
+    "samplesAlt": "Stalen van rWood akoestische panelen met natuurlijk houtfineer",
+    "spaceAlt": "Moderne ruimte met circulaire akoestische panelen van Re-Sound"
   },
   "cta": {
     "title": "Klaar om Uw Ruimte te Transformeren?",
@@ -873,7 +882,8 @@
     },
     "gallery": {
       "tag": "INSPIRATIE",
-      "title": "In de Praktijk"
+      "title": "In de Praktijk",
+      "altPattern": "{product} — projectinstallatie {n}"
     },
     "acoustics": {
       "low": "Laag",
@@ -936,6 +946,12 @@
       "tag": "OOK IN DIT GAMMA",
       "title": "Andere modellen in dit gamma",
       "rangeLink": "Bekijk het volledige {range}-gamma"
+    },
+    "a11y": {
+      "selectColour": "Kleur {name} selecteren",
+      "selectFinish": "Afwerking {name} selecteren",
+      "selectVeneer": "Fineer {name} selecteren",
+      "select": "{name} selecteren"
     }
   },
   "interiorPage": {
@@ -1049,6 +1065,13 @@
           "answer": "Interior gebruikt een verborgen modulaire rail; Solid werkt met verborgen haken; Divide is vrijstaand met een magnetische modulaire koppeling. Speciaal gereedschap is niet nodig."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Interior akoestische wandpanelen in {colour}",
+      "interiorPanelCompletePackage": "Interior paneel, compleet pakket",
+      "circularDesignRecycledMaterials": "Circulair ontwerp - gerecycleerde materialen",
+      "modularWallPanelConfigurations": "Modulaire configuraties van wandpanelen",
+      "easyMaintenanceWithRemovableCover": "Eenvoudig onderhoud dankzij de afneembare hoes"
     }
   },
   "solidPage": {
@@ -1185,6 +1208,13 @@
           "answer": "Beide meten absorptie, maar volgens verschillende standaarden. αw (ISO 11654) is de Europese eenmaatswaarde; NRC (ASTM C423) is de Amerikaanse equivalent. αw 1.0 en NRC 0.95 wijzen op dezelfde Klasse A-prestatie."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Solid akoestisch wandpaneel in {colour}",
+      "solidPanelCompletePackage": "Solid paneel, compleet pakket",
+      "solidPanelMountedOnTheWallWithThe": "Solid paneel aan de wand gemonteerd met het eenvoudige haaksysteem",
+      "removableFabricCoverForEasyCleaning": "Afneembare stoffen hoes voor eenvoudige reiniging",
+      "circularDesignRecycledTextileMaterials": "Circulair ontwerp - gerecycleerde textielmaterialen"
     }
   },
   "dividePage": {
@@ -1289,7 +1319,8 @@
     },
     "gallery": {
       "tag": "INSPIRATIE",
-      "title": "Divide in de Praktijk"
+      "title": "Divide in de Praktijk",
+      "altPattern": "{product} in {colour} — kleurstelling {n}"
     },
     "faq": {
       "questions": {
@@ -1314,6 +1345,15 @@
           "answer": "Ja. Aangepaste breedtes en hoogtes zijn beschikbaar voor projecten vanaf 20 m². Er gelden minimum hoeveelheden; neem contact op voor een offerte op maat."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Divide akoestische scheidingswand in {colour}",
+      "divideAcousticRoomDivider": "Divide akoestische scheidingswand",
+      "divideIntegratedBaseDetail": "Detail van de geïntegreerde voet van Divide",
+      "magneticConnectionDetail": "Detail van de magnetische verbinding",
+      "modularConfigurations": "Modulaire configuraties",
+      "divideRoomDividerMadeFromRecycledTextileFibres": "Divide scheidingswand gemaakt van gerecycleerde textielvezels",
+      "dividePanelCrossSection": "Dwarsdoorsnede van het Divide paneel"
     }
   },
   "rpetGroovePage": {
@@ -1563,6 +1603,11 @@
           "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
         }
       }
+    },
+    "alt": {
+      "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove akoestisch paneel in een modern kantoor",
+      "panelInstallationProcess": "Installatieproces van het paneel",
+      "recycledMaterials": "Gerecycleerde materialen"
     }
   },
   "rpetPanelPage": {
@@ -1774,6 +1819,15 @@
           "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
         }
       }
+    },
+    "alt": {
+      "rpetPanelRecycledPetBottlesTransformation": "rPET - Panel: transformatie van gerecycleerde PET-flessen",
+      "petAcousticWallsInMeetingPod": "Akoestische PET-wanden in een vergaderpod",
+      "ceilingPanelsAndTableDivider": "Plafondpanelen en tafelscheidingswand",
+      "acousticTreatmentInRestaurant": "Akoestische behandeling in een restaurant",
+      "cncProcessingOfRpetPanels": "CNC-bewerking van rPET-panelen",
+      "recycledPetBottles": "Gerecycleerde PET-flessen",
+      "rpetPanelSamplePanels": "rPET - Panel staalpanelen"
     }
   },
   "rwoodGroovePage": {
@@ -1960,6 +2014,12 @@
           "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
         }
       }
+    },
+    "alt": {
+      "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove akoestisch paneel in een modern interieur",
+      "woodFinishSamples": "Stalen van houtafwerkingen",
+      "panelInstallationProcess": "Installatieproces van het paneel",
+      "sustainableForestry": "Duurzame bosbouw"
     }
   },
   "rwoodPerfPage": {
@@ -2139,6 +2199,12 @@
           "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
         }
       }
+    },
+    "alt": {
+      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf paneel, close-up van de ronde perforaties",
+      "perforatedWoodPanelVeneerSurfaceDetail": "Detail van het fineeroppervlak van een geperforeerd houten paneel",
+      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf paneel met onzichtbaar bevestigingssysteem",
+      "sustainableWoodSourcingAndProduction": "Duurzame houtwinning en productie"
     }
   },
   "rwoodMicroPage": {
@@ -2330,6 +2396,13 @@
           "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
         }
       }
+    },
+    "alt": {
+      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro paneel, close-up van de onzichtbare perforaties",
+      "microPerforatedWoodPanelSurfaceDetail": "Detail van het oppervlak van een microgeperforeerd houten paneel",
+      "rwoodMicroPanelInstallationSystem": "rWood - Micro paneel installatiesysteem",
+      "backlitMicroPerforatedPanelCreatingLightEffect": "Microgeperforeerd paneel met achterverlichting dat een lichteffect creëert",
+      "sustainableProduction": "Duurzame productie"
     }
   },
   "rwoodVeneerPage": {
@@ -2585,6 +2658,11 @@
           "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
         }
       }
+    },
+    "alt": {
+      "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel gefineerd MDF-paneel, close-up van de houtnerf",
+      "closeUpOfLacqueredVeneerSurface": "Close-up van het gelakte fineeroppervlak",
+      "sustainablyManagedForest": "Duurzaam beheerd bos"
     }
   },
   "rpetFlexGroovePage": {
@@ -2776,6 +2854,13 @@
           "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
         }
       }
+    },
+    "alt": {
+      "rpetFlexGrooveAcousticPanel": "rPET Flex-Groove akoestisch paneel",
+      "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove akoestisch paneel op een gebogen oppervlak",
+      "rpetFlexGrooveColorOptions": "Kleuropties van rPET Flex-Groove",
+      "flexGroovePanelInstallation": "Installatie van het Flex-Groove paneel",
+      "recycledPetBottles": "Gerecycleerde PET-flessen"
     }
   },
   "legal": {
@@ -2878,7 +2963,8 @@
         "question": "Hoe vraag ik een offerte aan?",
         "answer": "Gebruik het contactformulier op elke productpagina of het algemene contactformulier, met: de productlijn die je interesseert, geschatte hoeveelheden of grondplan, en je projectplanning. We antwoorden binnen één werkdag met een offerte op maat, stalenregeling en een berekening van de verwachte akoestische verbetering. Voor grotere projecten gaan we ter plaatse of doen we een briefing-call."
       }
-    }
+    },
+    "categoriesLabel": "Categorieën"
   },
   "boothPage": {
     "nav": {
@@ -2973,7 +3059,8 @@
         "name": "Modular XL",
         "tag": "Schaalbare vergaderpod"
       }
-    }
+    },
+    "growthDiagramLabel": "Diagram van modulaire uitbreiding"
   },
   "soloFlexPage": {
     "hero": {
@@ -3821,6 +3908,7 @@
       },
       "finishesValue": "{count} afwerkingen",
       "coloursValue": "{count} kleuren",
+      "notAvailable": "—",
       "fromPriceValue": "vanaf €{price} {unit}",
       "placeholderPrice": "prijs op aanvraag",
       "isoClassNote": "Klassegrenzen ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
@@ -3839,7 +3927,7 @@
       "ctaText": "Bestel een gratis stalenset of stuur ons uw tekeningen voor een offerte — ons team antwoordt binnen één werkdag.",
       "ctaSampleKit": "Bestel een stalenset",
       "ctaQuote": "Vraag een offerte aan",
-      "notAvailable": "—"
+      "breadcrumbLabel": "Kruimelpad"
     },
     "rpet": {
       "title": "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound",
@@ -3954,6 +4042,63 @@
           "answer": "Solo Flex en Duo worden 4–6 weken na bestelling verzonden, Modular XL 6–8 weken voor de basisunit; maatwerkstoffen vragen 2–3 weken extra. De structurele garantie bedraagt 5 jaar, de elektronica 2 jaar, met levering en installatie in de hele EU beschikbaar."
         }
       }
+    }
+  },
+  "sampleKit": {
+    "eyebrow": "rWood · rPET · Textiel",
+    "title": "Bestel uw stalenset",
+    "subtitle": "Vul uw gegevens in en wij versturen binnen 3–5 werkdagen gratis een stalenset.",
+    "close": "Sluiten",
+    "sections": {
+      "contact": "Contactgegevens",
+      "shipping": "Verzendadres",
+      "samples": "Welke stalen wenst u? *",
+      "samplesHint": "Selecteer alles wat van toepassing is — minimum 1"
+    },
+    "fields": {
+      "firstName": "Voornaam *",
+      "firstNamePlaceholder": "Marie",
+      "lastName": "Naam *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "E-mail *",
+      "emailPlaceholder": "marie@studio.be",
+      "phone": "Telefoon",
+      "company": "Bedrijf / Studio",
+      "companyPlaceholder": "Studio Dupont",
+      "address": "Straat en nummer *",
+      "addressPlaceholder": "Antwerpsesteenweg 42",
+      "city": "Gemeente *",
+      "cityPlaceholder": "Gent",
+      "country": "Land",
+      "message": "Bijkomende opmerkingen",
+      "messagePlaceholder": "Bv. Ik ben architect en werk aan een kantoor van 200 m²...",
+      "optional": "(optioneel)"
+    },
+    "countries": {
+      "belgium": "België",
+      "netherlands": "Nederland",
+      "luxembourg": "Luxemburg",
+      "france": "Frankrijk",
+      "germany": "Duitsland",
+      "other": "Andere"
+    },
+    "samples": {
+      "interior": "Interior",
+      "solid": "Solid",
+      "divide": "Divide",
+      "rwoodGroove": "rWood – Groove",
+      "rwoodPerf": "rWood – Perf",
+      "rpetGroove": "rPET – Groove",
+      "rpetPanel": "rPET – Panel"
+    },
+    "consent": "Ik ga ermee akkoord dat Re-Sound mij mag contacteren over deze aanvraag. <link>Privacybeleid</link>",
+    "error": "Er is iets misgegaan. Mail ons op <link>{email}</link>",
+    "submit": "Stalenaanvraag versturen",
+    "sending": "Versturen…",
+    "success": {
+      "title": "Aanvraag ontvangen!",
+      "body": "Wij stellen uw stalenset samen en versturen die binnen 3–5 werkdagen naar <strong>{city}</strong>. Controleer uw mailbox voor een bevestiging.",
+      "close": "Sluiten"
     }
   }
 }

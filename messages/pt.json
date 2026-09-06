@@ -56,7 +56,9 @@
     "whereToBuy": "Onde comprar",
     "rangeRpet": "Painéis acústicos em PET",
     "rangeRwood": "Painéis acústicos em madeira",
-    "rangeBooths": "Cabines acústicas"
+    "rangeBooths": "Cabines acústicas",
+    "toggleMenu": "Abrir/fechar menu",
+    "selectLanguage": "Selecionar idioma"
   },
   "hero": {
     "rwood": {
@@ -72,7 +74,8 @@
       "statFire": "Reação ao fogo",
       "pill1": "Folheado de madeira genuíno",
       "pill2": "Núcleo reciclado",
-      "pill3": "Liso e perfurado"
+      "pill3": "Liso e perfurado",
+      "imageAlt": "Painel acústico rWood Micro com folheado de madeira natural, pormenor do acabamento"
     },
     "circular": {
       "badge": "Gama Circular · Interior · Solid · Divide · rPET",
@@ -89,7 +92,8 @@
       "pill1": "100 % reciclado",
       "pill2": "Retoma gratuita",
       "pill3": "50+ cores",
-      "pill4": "Fábricas próprias"
+      "pill4": "Fábricas próprias",
+      "imageAlt": "Painéis acústicos circulares Interior num escritório moderno"
     }
   },
   "ticker": {
@@ -140,7 +144,9 @@
     "swatchesBody": "Cinco espécies de madeira, cada uma com o seu próprio carácter. Todas aplicadas sobre um núcleo acústico 100% reciclado.",
     "ctaFullSpec": "Especificações Completas",
     "ctaDatasheet": "Descarregar Ficha Técnica",
-    "ctaOrderSamples": "Encomendar Kit de Amostras"
+    "ctaOrderSamples": "Encomendar Kit de Amostras",
+    "viewVeneer": "Ver folheado {name}",
+    "selectVeneer": "Selecionar {name}"
   },
   "products": {
     "tag": "OS NOSSOS PRODUTOS",
@@ -344,7 +350,8 @@
         "title": "Devolver",
         "description": "Recolha gratuita e reciclagem em painéis novos."
       }
-    }
+    },
+    "imageAlt": "Economia circular — processo de reciclagem de painéis acústicos"
   },
   "dualCta": {
     "left": {
@@ -358,7 +365,9 @@
       "title": "Obtenha um orçamento personalizado",
       "subtitle": "Fale-nos do seu espaço — recomendaremos a solução acústica adequada e enviaremos um orçamento à medida.",
       "cta": "Pedir Orçamento"
-    }
+    },
+    "samplesAlt": "Amostras de painéis acústicos rWood com folheado de madeira natural",
+    "spaceAlt": "Espaço moderno com painéis acústicos circulares Re-Sound"
   },
   "cta": {
     "title": "Pronto para Transformar o Seu Espaço?",
@@ -873,7 +882,8 @@
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
-      "title": "Em Ação"
+      "title": "Em Ação",
+      "altPattern": "{product} — instalação em projeto {n}"
     },
     "acoustics": {
       "low": "Bajo",
@@ -936,6 +946,12 @@
       "tag": "TAMBÉM NA GAMA",
       "title": "Outros modelos da gama",
       "rangeLink": "Ver toda a gama {range}"
+    },
+    "a11y": {
+      "selectColour": "Selecionar a cor {name}",
+      "selectFinish": "Selecionar o acabamento {name}",
+      "selectVeneer": "Selecionar o folheado {name}",
+      "select": "Selecionar {name}"
     }
   },
   "interiorPage": {
@@ -1049,6 +1065,13 @@
           "answer": "O Interior utiliza uma calha modular oculta; o Solid utiliza ganchos ocultos; o Divide é independente com ligação modular magnética. Não é necessária ferramenta especializada."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Painéis acústicos de parede Re-Sound Interior em {colour}",
+      "interiorPanelCompletePackage": "Conjunto completo do painel Interior",
+      "circularDesignRecycledMaterials": "Design circular - materiais reciclados",
+      "modularWallPanelConfigurations": "Configurações modulares de painéis de parede",
+      "easyMaintenanceWithRemovableCover": "Manutenção fácil com capa amovível"
     }
   },
   "solidPage": {
@@ -1185,6 +1208,13 @@
           "answer": "Ambos medem absorção, mas segundo normas diferentes. αw (ISO 11654) é o valor único europeu; NRC (ASTM C423) é o equivalente americano. αw 1.0 e NRC 0.95 indicam o mesmo desempenho Classe A."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Painel acústico de parede Re-Sound Solid em {colour}",
+      "solidPanelCompletePackage": "Conjunto completo do painel Solid",
+      "solidPanelMountedOnTheWallWithThe": "Painel Solid montado na parede com o sistema de fixação por gancho",
+      "removableFabricCoverForEasyCleaning": "Capa em tecido amovível para uma limpeza fácil",
+      "circularDesignRecycledTextileMaterials": "Design circular - materiais têxteis reciclados"
     }
   },
   "dividePage": {
@@ -1289,7 +1319,8 @@
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
-      "title": "Divide em ação"
+      "title": "Divide em ação",
+      "altPattern": "{product} em {colour} — variante de cor {n}"
     },
     "faq": {
       "questions": {
@@ -1314,6 +1345,15 @@
           "answer": "Sim. Larguras e alturas personalizadas estão disponíveis para projetos a partir de 20 m². Aplicam-se quantidades mínimas; contacte-nos para um orçamento à medida."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Divisória acústica Re-Sound Divide em {colour}",
+      "divideAcousticRoomDivider": "Divisória acústica Divide",
+      "divideIntegratedBaseDetail": "Pormenor da base integrada do Divide",
+      "magneticConnectionDetail": "Pormenor da ligação magnética",
+      "modularConfigurations": "Configurações modulares",
+      "divideRoomDividerMadeFromRecycledTextileFibres": "Divisória Divide fabricada com fibras têxteis recicladas",
+      "dividePanelCrossSection": "Corte transversal do painel Divide"
     }
   },
   "rpetGroovePage": {
@@ -1564,6 +1604,11 @@
         }
       }
     },
+    "alt": {
+      "rpetGrooveAcousticPanelInModernOffice": "Painel acústico rPET - Groove num escritório moderno",
+      "panelInstallationProcess": "Processo de instalação do painel",
+      "recycledMaterials": "Materiais reciclados"
+    },
     "related": {
       "title": "Produtos Relacionados"
     }
@@ -1777,6 +1822,15 @@
           "answer": "As cores em stock são expedidas em 2–3 semanas; as cores personalizadas exigem 5–6 semanas. Grandes projetos (>500 m²) são programados em lotes de produção — contacte-nos para uma data vinculativa."
         }
       }
+    },
+    "alt": {
+      "rpetPanelRecycledPetBottlesTransformation": "rPET - Panel: transformação de garrafas PET recicladas",
+      "petAcousticWallsInMeetingPod": "Paredes acústicas em PET num pod de reuniões",
+      "ceilingPanelsAndTableDivider": "Painéis de teto e divisória de mesa",
+      "acousticTreatmentInRestaurant": "Tratamento acústico num restaurante",
+      "cncProcessingOfRpetPanels": "Maquinação CNC de painéis rPET",
+      "recycledPetBottles": "Garrafas PET recicladas",
+      "rpetPanelSamplePanels": "Painéis de amostra rPET - Panel"
     }
   },
   "rwoodGroovePage": {
@@ -1963,6 +2017,12 @@
           "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
         }
       }
+    },
+    "alt": {
+      "rwoodGrooveAcousticPanelInModernInterior": "Painel acústico rWood - Groove num interior moderno",
+      "woodFinishSamples": "Amostras de acabamentos em madeira",
+      "panelInstallationProcess": "Processo de instalação do painel",
+      "sustainableForestry": "Silvicultura sustentável"
     }
   },
   "rwoodPerfPage": {
@@ -2142,6 +2202,12 @@
           "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
         }
       }
+    },
+    "alt": {
+      "rwoodPerfPanelCloseUpShowingRoundPerforations": "Pormenor do painel rWood - Perf com as perfurações redondas",
+      "perforatedWoodPanelVeneerSurfaceDetail": "Pormenor da superfície em folheado de madeira do painel perfurado",
+      "rwoodPerfPanelConcealedMountingSystem": "Sistema de fixação oculto do painel rWood - Perf",
+      "sustainableWoodSourcingAndProduction": "Aprovisionamento e produção sustentáveis de madeira"
     }
   },
   "rwoodMicroPage": {
@@ -2330,6 +2396,13 @@
           "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
         }
       }
+    },
+    "alt": {
+      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "Pormenor do painel rWood - Micro com as perfurações invisíveis",
+      "microPerforatedWoodPanelSurfaceDetail": "Pormenor da superfície do painel de madeira microperfurado",
+      "rwoodMicroPanelInstallationSystem": "Sistema de instalação do painel rWood - Micro",
+      "backlitMicroPerforatedPanelCreatingLightEffect": "Painel microperfurado retroiluminado a criar um efeito de luz",
+      "sustainableProduction": "Produção sustentável"
     }
   },
   "rwoodVeneerPage": {
@@ -2585,6 +2658,11 @@
           "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
         }
       }
+    },
+    "alt": {
+      "rwoodPanelVeneeredMdfPanelCloseUpShowing": "Pormenor do painel rWood - Panel em MDF folheado com o detalhe do veio da madeira",
+      "closeUpOfLacqueredVeneerSurface": "Pormenor da superfície em folheado lacado",
+      "sustainablyManagedForest": "Floresta gerida de forma sustentável"
     }
   },
   "rpetFlexGroovePage": {
@@ -2776,6 +2854,13 @@
           "answer": "As cores em stock são expedidas em 2–3 semanas; as cores personalizadas exigem 5–6 semanas. Grandes projetos (>500 m²) são programados em lotes de produção — contacte-nos para uma data vinculativa."
         }
       }
+    },
+    "alt": {
+      "rpetFlexGrooveAcousticPanel": "Painel acústico rPET Flex-Groove",
+      "rpetFlexGrooveAcousticPanelOnCurvedSurface": "Painel acústico rPET Flex-Groove numa superfície curva",
+      "rpetFlexGrooveColorOptions": "Opções de cor do rPET Flex-Groove",
+      "flexGroovePanelInstallation": "Instalação do painel Flex-Groove",
+      "recycledPetBottles": "Garrafas PET recicladas"
     }
   },
   "legal": {
@@ -2878,7 +2963,8 @@
         "question": "Como solicito um orçamento?",
         "answer": "Use o formulário de contacto de uma página de produto ou o formulário geral, indicando: a linha de produto que lhe interessa, quantidades aproximadas ou planta, e o calendário do projeto. Respondemos em um dia útil com um orçamento à medida, proposta de amostras e cálculo da melhoria acústica esperada. Para projetos maiores podemos organizar uma visita ao local ou uma chamada de briefing."
       }
-    }
+    },
+    "categoriesLabel": "Categorias"
   },
   "boothPage": {
     "nav": {
@@ -2973,7 +3059,8 @@
         "name": "Modular XL",
         "tag": "Pod de reunião escalável"
       }
-    }
+    },
+    "growthDiagramLabel": "Diagrama de crescimento modular"
   },
   "soloFlexPage": {
     "hero": {
@@ -3821,6 +3908,7 @@
       },
       "finishesValue": "{count} acabamentos",
       "coloursValue": "{count} cores",
+      "notAvailable": "—",
       "fromPriceValue": "desde {price} € {unit}",
       "placeholderPrice": "preço sob consulta",
       "isoClassNote": "Limiares das classes ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
@@ -3839,7 +3927,7 @@
       "ctaText": "Encomende um kit de amostras gratuito ou envie-nos os seus desenhos para orçamento — a nossa equipa responde no prazo de um dia útil.",
       "ctaSampleKit": "Encomendar um kit de amostras",
       "ctaQuote": "Pedir orçamento",
-      "notAvailable": "—"
+      "breadcrumbLabel": "Navegação estrutural"
     },
     "rpet": {
       "title": "Painéis Acústicos em PET Reciclado — Fabricante | Re-Sound",
@@ -3954,6 +4042,63 @@
           "answer": "A Solo Flex e a Duo são expedidas 4–6 semanas após a encomenda, a Modular XL em 6–8 semanas para a unidade base; os tecidos personalizados acrescentam 2–3 semanas. A garantia estrutural é de 5 anos e a da eletrónica de 2 anos, com entrega e instalação disponíveis em toda a UE."
         }
       }
+    }
+  },
+  "sampleKit": {
+    "eyebrow": "rWood · rPET · Têxtil",
+    "title": "Encomende o seu kit de amostras",
+    "subtitle": "Preencha os seus dados e enviaremos um kit de amostras gratuito no prazo de 3–5 dias úteis.",
+    "close": "Fechar",
+    "sections": {
+      "contact": "Dados de contacto",
+      "shipping": "Morada de envio",
+      "samples": "Que amostras pretende receber? *",
+      "samplesHint": "Selecione todas as que pretender — mínimo 1"
+    },
+    "fields": {
+      "firstName": "Nome *",
+      "firstNamePlaceholder": "Marie",
+      "lastName": "Apelido *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "E-mail *",
+      "emailPlaceholder": "marie@studio.be",
+      "phone": "Telefone",
+      "company": "Empresa / Atelier",
+      "companyPlaceholder": "Studio Dupont",
+      "address": "Rua e número *",
+      "addressPlaceholder": "Antwerpsesteenweg 42",
+      "city": "Localidade *",
+      "cityPlaceholder": "Gent",
+      "country": "País",
+      "message": "Observações adicionais",
+      "messagePlaceholder": "Ex.: Sou arquiteto e estou a especificar um escritório de 200 m²...",
+      "optional": "(opcional)"
+    },
+    "countries": {
+      "belgium": "Bélgica",
+      "netherlands": "Países Baixos",
+      "luxembourg": "Luxemburgo",
+      "france": "França",
+      "germany": "Alemanha",
+      "other": "Outro"
+    },
+    "samples": {
+      "interior": "Interior",
+      "solid": "Solid",
+      "divide": "Divide",
+      "rwoodGroove": "rWood – Groove",
+      "rwoodPerf": "rWood – Perf",
+      "rpetGroove": "rPET – Groove",
+      "rpetPanel": "rPET – Panel"
+    },
+    "consent": "Autorizo que a Re-Sound me contacte a respeito deste pedido. <link>Política de privacidade</link>",
+    "error": "Ocorreu um erro. Contacte-nos por e-mail: <link>{email}</link>",
+    "submit": "Enviar pedido de amostras",
+    "sending": "A enviar…",
+    "success": {
+      "title": "Pedido recebido!",
+      "body": "Vamos preparar o seu kit de amostras e enviá-lo para <strong>{city}</strong> no prazo de 3–5 dias úteis. Verifique a sua caixa de entrada para receber a confirmação.",
+      "close": "Fechar"
     }
   }
 }

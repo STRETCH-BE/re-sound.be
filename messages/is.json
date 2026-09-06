@@ -56,7 +56,9 @@
     "whereToBuy": "Hvar kaupa",
     "rangeRpet": "PET hljóðdeyfiplötur",
     "rangeRwood": "Hljóðdeyfiplötur úr viði",
-    "rangeBooths": "Hljóðeinangraðir símaklefar"
+    "rangeBooths": "Hljóðeinangraðir símaklefar",
+    "toggleMenu": "Opna eða loka valmynd",
+    "selectLanguage": "Veldu tungumál"
   },
   "hero": {
     "rwood": {
@@ -72,7 +74,8 @@
       "statFire": "Brunaflokkun",
       "pill1": "Ekta viðarspónn",
       "pill2": "Endurunninn kjarni",
-      "pill3": "Heilt & götuð"
+      "pill3": "Heilt & götuð",
+      "imageAlt": "rWood Micro hljóðdeyfiplata með náttúrulegum viðarspæni, nærmynd af áferðinni"
     },
     "circular": {
       "badge": "Hringrásarröð · Interior · Solid · Divide · rPET",
@@ -89,7 +92,8 @@
       "pill1": "100 % endurunnið",
       "pill2": "Ókeypis skil",
       "pill3": "50+ litir",
-      "pill4": "Eigin verksmiðjur"
+      "pill4": "Eigin verksmiðjur",
+      "imageAlt": "Interior hringrásar-hljóðdeyfiplötur á nútímalegri skrifstofu"
     }
   },
   "ticker": {
@@ -140,7 +144,9 @@
     "swatchesBody": "Fimm viðartegundir, hver með sinn karakter. Allar lagðar á 100% endurunninn hljóðkjarna.",
     "ctaFullSpec": "Full tæknilýsing",
     "ctaDatasheet": "Hlaða niður gagnablaði",
-    "ctaOrderSamples": "Panta sýnishorn"
+    "ctaOrderSamples": "Panta sýnishorn",
+    "viewVeneer": "Skoða {name} viðarspón",
+    "selectVeneer": "Velja {name}"
   },
   "products": {
     "tag": "VÖRUR OKKAR",
@@ -344,7 +350,8 @@
         "title": "Skila",
         "description": "Ókeypis sótt og endurunnið í ný panel."
       }
-    }
+    },
+    "imageAlt": "Hringrásarhagkerfi — endurvinnsluferli hljóðdeyfiplatna"
   },
   "dualCta": {
     "left": {
@@ -358,7 +365,9 @@
       "title": "Fáðu sérsniðið tilboð",
       "subtitle": "Segðu okkur frá rýminu þínu — við mælum með réttu hljóðlausninni og sendum þér sérsniðið tilboð.",
       "cta": "Biðja um tilboð"
-    }
+    },
+    "samplesAlt": "Sýnishorn af rWood hljóðdeyfiplötum með náttúrulegum viðarspæni",
+    "spaceAlt": "Nútímalegt rými með hringrásar-hljóðdeyfiplötum frá Re-Sound"
   },
   "cta": {
     "title": "Tilbúinn að umbreyta rýminu þínu?",
@@ -873,7 +882,8 @@
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
-      "title": "Í notkun"
+      "title": "Í notkun",
+      "altPattern": "{product} — uppsetning í verkefni {n}"
     },
     "acoustics": {
       "low": "Lág",
@@ -936,6 +946,12 @@
       "tag": "EINNIG Í LÍNUNNI",
       "title": "Aðrar gerðir í þessari línu",
       "rangeLink": "Sjá alla {range} línuna"
+    },
+    "a11y": {
+      "selectColour": "Velja litinn {name}",
+      "selectFinish": "Velja áferðina {name}",
+      "selectVeneer": "Velja viðarspóninn {name}",
+      "select": "Velja {name}"
     }
   },
   "interiorPage": {
@@ -1049,6 +1065,13 @@
           "answer": "Interior notar falda einingaskinnu; Solid notar falda króka; Divide stendur sjálfstætt með segul-einingatengingu. Engin sérverkfæri þarf."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Interior hljóðdeyfiplötur á vegg í litnum {colour}",
+      "interiorPanelCompletePackage": "Interior plata – heildarpakki",
+      "circularDesignRecycledMaterials": "Hringrásarhönnun – endurunnin efni",
+      "modularWallPanelConfigurations": "Einingaskiptar uppsetningar veggplatna",
+      "easyMaintenanceWithRemovableCover": "Auðvelt viðhald með afrífanlegu áklæði"
     }
   },
   "solidPage": {
@@ -1185,6 +1208,13 @@
           "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi stöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvarið. αw 1,0 og NRC 0,95 lýsa sömu Klassi A-frammistöðu."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Solid hljóðdeyfiplata á vegg í litnum {colour}",
+      "solidPanelCompletePackage": "Solid plata – heildarpakki",
+      "solidPanelMountedOnTheWallWithThe": "Solid plata fest á vegg með einfalda krókakerfinu",
+      "removableFabricCoverForEasyCleaning": "Afrífanlegt textíláklæði fyrir auðvelda þrif",
+      "circularDesignRecycledTextileMaterials": "Hringrásarhönnun – endurunnin textílefni"
     }
   },
   "dividePage": {
@@ -1289,7 +1319,8 @@
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
-      "title": "Divide í notkun"
+      "title": "Divide í notkun",
+      "altPattern": "{product} í litnum {colour} — litaafbrigði {n}"
     },
     "faq": {
       "questions": {
@@ -1314,6 +1345,15 @@
           "answer": "Já. Sérsniðin breidd og hæð er í boði fyrir verkefni frá 20 m². Lágmarksmagn gildir; hafðu samband fyrir sérsniðið verðtilboð."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Divide hljóðdeyfandi rýmisskilrúm í litnum {colour}",
+      "divideAcousticRoomDivider": "Divide hljóðdeyfandi rýmisskilrúm",
+      "divideIntegratedBaseDetail": "Nærmynd af innbyggðum fæti Divide",
+      "magneticConnectionDetail": "Nærmynd af segultengingu",
+      "modularConfigurations": "Einingaskiptar uppsetningar",
+      "divideRoomDividerMadeFromRecycledTextileFibres": "Divide rýmisskilrúm úr endurunnum textíltrefjum",
+      "dividePanelCrossSection": "Þversnið af Divide plötu"
     }
   },
   "rpetGroovePage": {
@@ -1564,6 +1604,11 @@
         }
       }
     },
+    "alt": {
+      "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove hljóðdeyfiplata á nútímalegri skrifstofu",
+      "panelInstallationProcess": "Uppsetningarferli platna",
+      "recycledMaterials": "Endurunnin efni"
+    },
     "related": {
       "title": "Tengdar Vörur"
     }
@@ -1777,6 +1822,15 @@
           "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
         }
       }
+    },
+    "alt": {
+      "rpetPanelRecycledPetBottlesTransformation": "rPET - Panel: umbreyting endurunninna PET-flaskna",
+      "petAcousticWallsInMeetingPod": "Hljóðdeyfandi PET-veggir í fundarklefa",
+      "ceilingPanelsAndTableDivider": "Loftplötur og borðskilrúm",
+      "acousticTreatmentInRestaurant": "Hljóðvistarlausn á veitingastað",
+      "cncProcessingOfRpetPanels": "CNC-vinnsla á rPET plötum",
+      "recycledPetBottles": "Endurunnar PET-flöskur",
+      "rpetPanelSamplePanels": "rPET - Panel sýnishornaplötur"
     }
   },
   "rwoodGroovePage": {
@@ -1963,6 +2017,12 @@
           "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
         }
       }
+    },
+    "alt": {
+      "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove hljóðdeyfiplata í nútímalegu innanrými",
+      "woodFinishSamples": "Sýnishorn af viðaráferðum",
+      "panelInstallationProcess": "Uppsetningarferli platna",
+      "sustainableForestry": "Sjálfbær skógrækt"
     }
   },
   "rwoodPerfPage": {
@@ -2142,6 +2202,12 @@
           "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
         }
       }
+    },
+    "alt": {
+      "rwoodPerfPanelCloseUpShowingRoundPerforations": "Nærmynd af rWood - Perf plötu sem sýnir kringlótt göt",
+      "perforatedWoodPanelVeneerSurfaceDetail": "Nærmynd af viðarspónsyfirborði gataðrar viðarplötu",
+      "rwoodPerfPanelConcealedMountingSystem": "Falið festingarkerfi rWood - Perf plötu",
+      "sustainableWoodSourcingAndProduction": "Sjálfbær öflun viðar og framleiðsla"
     }
   },
   "rwoodMicroPage": {
@@ -2330,6 +2396,13 @@
           "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
         }
       }
+    },
+    "alt": {
+      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "Nærmynd af rWood - Micro plötu sem sýnir ósýnileg göt",
+      "microPerforatedWoodPanelSurfaceDetail": "Nærmynd af yfirborði örgataðrar viðarplötu",
+      "rwoodMicroPanelInstallationSystem": "Uppsetningarkerfi rWood - Micro plötu",
+      "backlitMicroPerforatedPanelCreatingLightEffect": "Baklýst örgötuð plata sem skapar ljósáhrif",
+      "sustainableProduction": "Sjálfbær framleiðsla"
     }
   },
   "rwoodVeneerPage": {
@@ -2585,6 +2658,11 @@
           "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
         }
       }
+    },
+    "alt": {
+      "rwoodPanelVeneeredMdfPanelCloseUpShowing": "Nærmynd af rWood - Panel spónlagðri MDF-plötu sem sýnir viðaræðarnar",
+      "closeUpOfLacqueredVeneerSurface": "Nærmynd af lökkuðu viðarspónsyfirborði",
+      "sustainablyManagedForest": "Skógur í sjálfbærri umsjón"
     }
   },
   "rpetFlexGroovePage": {
@@ -2776,6 +2854,13 @@
           "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
         }
       }
+    },
+    "alt": {
+      "rpetFlexGrooveAcousticPanel": "rPET Flex-Groove hljóðdeyfiplata",
+      "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove hljóðdeyfiplata á bogadregnu yfirborði",
+      "rpetFlexGrooveColorOptions": "Litavalkostir rPET Flex-Groove",
+      "flexGroovePanelInstallation": "Uppsetning Flex-Groove plötu",
+      "recycledPetBottles": "Endurunnar PET-flöskur"
     }
   },
   "legal": {
@@ -2878,7 +2963,8 @@
         "question": "Hvernig bið ég um tilboð?",
         "answer": "Notaðu samskiptaformið á vörusíðu eða almenna samskiptaformið með: vörulínunni sem þú hefur áhuga á, áætluðu magni eða grunnteikningu og verkefnatímalínunni þinni. Við svörum innan eins virkrar dags með sérsniðnu tilboði, sýnishornafyrirkomulagi og útreikningi á væntanlegri hljóðbót. Fyrir stærri verkefni getum við skipulagt heimsókn á staðinn eða stutta kynningu."
       }
-    }
+    },
+    "categoriesLabel": "Flokkar"
   },
   "boothPage": {
     "nav": {
@@ -2973,7 +3059,8 @@
         "name": "Modular XL",
         "tag": "Skalanlegur fundarklefi"
       }
-    }
+    },
+    "growthDiagramLabel": "Skýringarmynd af einingaskiptri stækkun"
   },
   "soloFlexPage": {
     "hero": {
@@ -3821,6 +3908,7 @@
       },
       "finishesValue": "{count} áferðir",
       "coloursValue": "{count} litir",
+      "notAvailable": "—",
       "fromPriceValue": "frá €{price} {unit}",
       "placeholderPrice": "verð samkvæmt beiðni",
       "isoClassNote": "Flokkamörk ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
@@ -3839,7 +3927,7 @@
       "ctaText": "Pantaðu ókeypis sýnishornasett eða sendu okkur teikningarnar þínar til að fá tilboð — teymið okkar svarar innan eins virks dags.",
       "ctaSampleKit": "Panta sýnishornasett",
       "ctaQuote": "Óska eftir tilboði",
-      "notAvailable": "—"
+      "breadcrumbLabel": "Brauðmolaslóð"
     },
     "rpet": {
       "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
@@ -3954,6 +4042,63 @@
           "answer": "Solo Flex og Duo eru afhentir 4–6 vikum frá pöntun, grunneining Modular XL á 6–8 vikum; sérvalin áklæði bæta við 2–3 vikum. Ábyrgð á burðarvirki er 5 ár og á rafbúnaði 2 ár, með afhendingu og uppsetningu um allt ESB."
         }
       }
+    }
+  },
+  "sampleKit": {
+    "eyebrow": "rWood · rPET · Textíl",
+    "title": "Pantið sýnishornapakka",
+    "subtitle": "Fyllið inn upplýsingarnar og við sendum ókeypis sýnishornapakka innan 3–5 virkra daga.",
+    "close": "Loka",
+    "sections": {
+      "contact": "Tengiliðaupplýsingar",
+      "shipping": "Sendingarheimilisfang",
+      "samples": "Hvaða sýnishorn viljið þér fá? *",
+      "samplesHint": "Veljið allt sem við á — að lágmarki 1"
+    },
+    "fields": {
+      "firstName": "Fornafn *",
+      "firstNamePlaceholder": "Marie",
+      "lastName": "Eftirnafn *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Netfang *",
+      "emailPlaceholder": "marie@studio.be",
+      "phone": "Sími",
+      "company": "Fyrirtæki / Stofa",
+      "companyPlaceholder": "Studio Dupont",
+      "address": "Gata og húsnúmer *",
+      "addressPlaceholder": "Antwerpsesteenweg 42",
+      "city": "Borg/bær *",
+      "cityPlaceholder": "Gent",
+      "country": "Land",
+      "message": "Frekari athugasemdir",
+      "messagePlaceholder": "T.d. Ég er arkitekt að vinna að 200m² skrifstofu...",
+      "optional": "(valfrjálst)"
+    },
+    "countries": {
+      "belgium": "Belgía",
+      "netherlands": "Holland",
+      "luxembourg": "Lúxemborg",
+      "france": "Frakkland",
+      "germany": "Þýskaland",
+      "other": "Annað"
+    },
+    "samples": {
+      "interior": "Interior",
+      "solid": "Solid",
+      "divide": "Divide",
+      "rwoodGroove": "rWood – Groove",
+      "rwoodPerf": "rWood – Perf",
+      "rpetGroove": "rPET – Groove",
+      "rpetPanel": "rPET – Panel"
+    },
+    "consent": "Ég samþykki að Re-Sound megi hafa samband við mig vegna þessarar beiðni. <link>Persónuverndarstefna</link>",
+    "error": "Eitthvað fór úrskeiðis. Sendið okkur tölvupóst á <link>{email}</link>",
+    "submit": "Senda beiðni um sýnishorn",
+    "sending": "Sendi…",
+    "success": {
+      "title": "Beiðni móttekin!",
+      "body": "Við útbúum sýnishornapakkann og sendum hann til <strong>{city}</strong> innan 3–5 virkra daga. Athugið pósthólfið fyrir staðfestingu.",
+      "close": "Loka"
     }
   }
 }

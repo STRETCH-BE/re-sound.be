@@ -56,7 +56,9 @@
     "whereToBuy": "Hvor køber jeg",
     "rangeRpet": "PET-akustikpaneler",
     "rangeRwood": "Akustikpaneler i træ",
-    "rangeBooths": "Akustiske telefonbokse"
+    "rangeBooths": "Akustiske telefonbokse",
+    "toggleMenu": "Åbn/luk menu",
+    "selectLanguage": "Vælg sprog"
   },
   "hero": {
     "rwood": {
@@ -72,7 +74,8 @@
       "statFire": "Brandklasse",
       "pill1": "Ægte træfiner",
       "pill2": "Genbrugt kerne",
-      "pill3": "Massiv & perforeret"
+      "pill3": "Massiv & perforeret",
+      "imageAlt": "rWood Micro akustikpanel med naturlig træfiner, nærbillede af overfladen"
     },
     "circular": {
       "badge": "Cirkulær Serie · Interior · Solid · Divide · rPET",
@@ -89,7 +92,8 @@
       "pill1": "100 % genanvendt",
       "pill2": "Gratis returordning",
       "pill3": "50+ farver",
-      "pill4": "Egne fabrikker"
+      "pill4": "Egne fabrikker",
+      "imageAlt": "Interior cirkulære akustikpaneler i et moderne kontor"
     }
   },
   "ticker": {
@@ -140,7 +144,9 @@
     "swatchesBody": "Fem træsorter, hver med sin egen karakter. Alle lagt på en 100 % genanvendt akustisk kerne.",
     "ctaFullSpec": "Fulde specifikationer",
     "ctaDatasheet": "Download datablad",
-    "ctaOrderSamples": "Bestil prøvesæt"
+    "ctaOrderSamples": "Bestil prøvesæt",
+    "viewVeneer": "Se {name} finer",
+    "selectVeneer": "Vælg {name}"
   },
   "products": {
     "tag": "VORES PRODUKTER",
@@ -344,7 +350,8 @@
         "title": "Returner",
         "description": "Gratis afhentning og genanvendelse til nye paneler."
       }
-    }
+    },
+    "imageAlt": "Cirkulær økonomi — genanvendelsesproces for akustikpaneler"
   },
   "dualCta": {
     "left": {
@@ -358,7 +365,9 @@
       "title": "Få et skræddersyet tilbud",
       "subtitle": "Fortæl os om dit rum – vi anbefaler den rette akustiske løsning og vender tilbage med et skræddersyet tilbud.",
       "cta": "Anmod om tilbud"
-    }
+    },
+    "samplesAlt": "Prøver af rWood akustikpaneler med naturlig træfiner",
+    "spaceAlt": "Moderne rum med cirkulære akustikpaneler fra Re-Sound"
   },
   "cta": {
     "title": "Klar til at transformere dit rum?",
@@ -873,7 +882,8 @@
     },
     "gallery": {
       "tag": "INSPIRATION",
-      "title": "I brug"
+      "title": "I brug",
+      "altPattern": "{product} — projektinstallation {n}"
     },
     "acoustics": {
       "low": "Lav",
@@ -936,6 +946,12 @@
       "tag": "OGSÅ I SERIEN",
       "title": "Andre modeller i serien",
       "rangeLink": "Se hele {range}-serien"
+    },
+    "a11y": {
+      "selectColour": "Vælg farven {name}",
+      "selectFinish": "Vælg overfladen {name}",
+      "selectVeneer": "Vælg fineren {name}",
+      "select": "Vælg {name}"
     }
   },
   "interiorPage": {
@@ -1049,6 +1065,13 @@
           "answer": "Interior bruger en skjult modulskinne; Solid bruger skjulte kroge; Divide står frit med en magnetisk modulær forbindelse. Specialværktøj er ikke nødvendigt."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Interior akustiske vægpaneler i {colour}",
+      "interiorPanelCompletePackage": "Interior-panel, komplet pakke",
+      "circularDesignRecycledMaterials": "Cirkulært design – genanvendte materialer",
+      "modularWallPanelConfigurations": "Modulære konfigurationer af vægpaneler",
+      "easyMaintenanceWithRemovableCover": "Nem vedligeholdelse med aftageligt betræk"
     }
   },
   "solidPage": {
@@ -1185,6 +1208,13 @@
           "answer": "Begge måler absorption, men efter forskellige standarder. αw (ISO 11654) er den europæiske enkeltværdi; NRC (ASTM C423) er den amerikanske pendant. αw 1,0 og NRC 0,95 angiver samme Klasse A-ydeevne."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Solid akustisk vægpanel i {colour}",
+      "solidPanelCompletePackage": "Solid-panel, komplet pakke",
+      "solidPanelMountedOnTheWallWithThe": "Solid-panel monteret på væggen med det enkle krogsystem",
+      "removableFabricCoverForEasyCleaning": "Aftageligt stofbetræk til nem rengøring",
+      "circularDesignRecycledTextileMaterials": "Cirkulært design – genanvendte tekstilmaterialer"
     }
   },
   "dividePage": {
@@ -1289,7 +1319,8 @@
     },
     "gallery": {
       "tag": "INSPIRATION",
-      "title": "Divide i brug"
+      "title": "Divide i brug",
+      "altPattern": "{product} i {colour} — farvevariant {n}"
     },
     "faq": {
       "questions": {
@@ -1314,6 +1345,15 @@
           "answer": "Ja. Brugerdefinerede bredder og højder tilbydes på projekter fra 20 m². Minimumsmængder gælder; kontakt os for et skræddersyet tilbud."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Divide akustisk rumdeler i {colour}",
+      "divideAcousticRoomDivider": "Divide akustisk rumdeler",
+      "divideIntegratedBaseDetail": "Detalje af Divides integrerede fod",
+      "magneticConnectionDetail": "Detalje af magnetisk samling",
+      "modularConfigurations": "Modulære konfigurationer",
+      "divideRoomDividerMadeFromRecycledTextileFibres": "Divide rumdeler fremstillet af genanvendte tekstilfibre",
+      "dividePanelCrossSection": "Tværsnit af Divide-panel"
     }
   },
   "rpetGroovePage": {
@@ -1564,6 +1604,11 @@
         }
       }
     },
+    "alt": {
+      "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove akustikpanel i moderne kontor",
+      "panelInstallationProcess": "Montering af panelerne",
+      "recycledMaterials": "Genanvendte materialer"
+    },
     "related": {
       "title": "Relaterede Produkter"
     }
@@ -1777,6 +1822,15 @@
           "answer": "Lagerfarver leveres på 2–3 uger; tilpassede farver kræver 5–6 uger. Store projekter (>500 m²) planlægges i produktionsbatches — kontakt os for en bindende dato."
         }
       }
+    },
+    "alt": {
+      "rpetPanelRecycledPetBottlesTransformation": "rPET - Panel: forvandling af genanvendte PET-flasker",
+      "petAcousticWallsInMeetingPod": "Akustiske PET-vægge i mødeboks",
+      "ceilingPanelsAndTableDivider": "Loftpaneler og bordskærm",
+      "acousticTreatmentInRestaurant": "Akustisk regulering i restaurant",
+      "cncProcessingOfRpetPanels": "CNC-bearbejdning af rPET-paneler",
+      "recycledPetBottles": "Genanvendte PET-flasker",
+      "rpetPanelSamplePanels": "rPET - Panel prøvepaneler"
     }
   },
   "rwoodGroovePage": {
@@ -1963,6 +2017,12 @@
           "answer": "Re-Sound tager paneler tilbage gratis i BE/NL/FR/DE/LU. Fineren adskilles fra det genbrugte filt-substrat; begge strømme indgår igen i vores forsyningskæde i stedet for at gå til deponi."
         }
       }
+    },
+    "alt": {
+      "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove akustikpanel i moderne interiør",
+      "woodFinishSamples": "Prøver af træoverflader",
+      "panelInstallationProcess": "Montering af panelerne",
+      "sustainableForestry": "Bæredygtigt skovbrug"
     }
   },
   "rwoodPerfPage": {
@@ -2142,6 +2202,12 @@
           "answer": "Re-Sound tager paneler tilbage gratis i BE/NL/FR/DE/LU. Fineren adskilles fra det genbrugte filt-substrat; begge strømme indgår igen i vores forsyningskæde i stedet for at gå til deponi."
         }
       }
+    },
+    "alt": {
+      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf panel, nærbillede af de runde perforeringer",
+      "perforatedWoodPanelVeneerSurfaceDetail": "Detalje af finéroverfladen på perforeret træpanel",
+      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel med skjult monteringssystem",
+      "sustainableWoodSourcingAndProduction": "Bæredygtig indkøb af træ og produktion"
     }
   },
   "rwoodMicroPage": {
@@ -2330,6 +2396,13 @@
           "answer": "Re-Sound tager paneler tilbage gratis i BE/NL/FR/DE/LU. Fineren adskilles fra det genbrugte filt-substrat; begge strømme indgår igen i vores forsyningskæde i stedet for at gå til deponi."
         }
       }
+    },
+    "alt": {
+      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro panel, nærbillede af de usynlige perforeringer",
+      "microPerforatedWoodPanelSurfaceDetail": "Detalje af overfladen på mikroperforeret træpanel",
+      "rwoodMicroPanelInstallationSystem": "rWood - Micro panel, monteringssystem",
+      "backlitMicroPerforatedPanelCreatingLightEffect": "Bagbelyst mikroperforeret panel, der skaber en lyseffekt",
+      "sustainableProduction": "Bæredygtig produktion"
     }
   },
   "rwoodVeneerPage": {
@@ -2585,6 +2658,11 @@
           "answer": "Re-Sound tager paneler tilbage gratis i BE/NL/FR/DE/LU. Fineren adskilles fra det genbrugte filt-substrat; begge strømme indgår igen i vores forsyningskæde i stedet for at gå til deponi."
         }
       }
+    },
+    "alt": {
+      "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel finérbelagt MDF-panel, nærbillede af åretegningen",
+      "closeUpOfLacqueredVeneerSurface": "Nærbillede af lakeret finéroverflade",
+      "sustainablyManagedForest": "Bæredygtigt forvaltet skov"
     }
   },
   "rpetFlexGroovePage": {
@@ -2776,6 +2854,13 @@
           "answer": "Lagerfarver leveres på 2–3 uger; tilpassede farver kræver 5–6 uger. Store projekter (>500 m²) planlægges i produktionsbatches — kontakt os for en bindende dato."
         }
       }
+    },
+    "alt": {
+      "rpetFlexGrooveAcousticPanel": "rPET Flex-Groove akustikpanel",
+      "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove akustikpanel på buet overflade",
+      "rpetFlexGrooveColorOptions": "rPET Flex-Groove farvemuligheder",
+      "flexGroovePanelInstallation": "Montering af Flex-Groove-panel",
+      "recycledPetBottles": "Genanvendte PET-flasker"
     }
   },
   "legal": {
@@ -2878,7 +2963,8 @@
         "question": "Hvordan anmoder jeg om et tilbud?",
         "answer": "Brug kontaktformularen på en produktside eller den generelle kontaktformular med: den produktlinje, du er interesseret i, omtrentlige mængder eller plantegning og din projekttidsplan. Vi svarer inden for en arbejdsdag med et skræddersyet tilbud, prøveordning og en beregning af forventet akustisk forbedring. For større projekter kan vi arrangere et besøg på stedet eller en briefingopkald."
       }
-    }
+    },
+    "categoriesLabel": "Kategorier"
   },
   "boothPage": {
     "nav": {
@@ -2973,7 +3059,8 @@
         "name": "Modular XL",
         "tag": "Skalerbar mødepod"
       }
-    }
+    },
+    "growthDiagramLabel": "Diagram over modulær udvidelse"
   },
   "soloFlexPage": {
     "hero": {
@@ -3821,6 +3908,7 @@
       },
       "finishesValue": "{count} overflader",
       "coloursValue": "{count} farver",
+      "notAvailable": "—",
       "fromPriceValue": "fra €{price} {unit}",
       "placeholderPrice": "pris på forespørgsel",
       "isoClassNote": "Klassegrænser i ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
@@ -3839,7 +3927,7 @@
       "ctaText": "Bestil et gratis prøvesæt, eller send os jeres tegninger til et tilbud — vores team svarer inden for én arbejdsdag.",
       "ctaSampleKit": "Bestil et prøvesæt",
       "ctaQuote": "Anmod om tilbud",
-      "notAvailable": "—"
+      "breadcrumbLabel": "Brødkrummesti"
     },
     "rpet": {
       "title": "PET-akustikpaneler af genbrugsflasker — producent | Re-Sound",
@@ -3954,6 +4042,63 @@
           "answer": "Solo Flex og Duo afsendes 4–6 uger efter bestilling, Modular XL 6–8 uger for basisenheden; specialstoffer lægger 2–3 uger til. Garantien på konstruktionen er 5 år, på elektronikken 2 år, med levering og montering i hele EU."
         }
       }
+    }
+  },
+  "sampleKit": {
+    "eyebrow": "rWood · rPET · Tekstil",
+    "title": "Bestil dit prøvesæt",
+    "subtitle": "Udfyld dine oplysninger, så sender vi et gratis prøvesæt inden for 3–5 hverdage.",
+    "close": "Luk",
+    "sections": {
+      "contact": "Kontaktoplysninger",
+      "shipping": "Leveringsadresse",
+      "samples": "Hvilke prøver ønsker du? *",
+      "samplesHint": "Vælg alle relevante — mindst 1"
+    },
+    "fields": {
+      "firstName": "Fornavn *",
+      "firstNamePlaceholder": "Marie",
+      "lastName": "Efternavn *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "E-mail *",
+      "emailPlaceholder": "marie@studio.be",
+      "phone": "Telefon",
+      "company": "Virksomhed / Studio",
+      "companyPlaceholder": "Studio Dupont",
+      "address": "Gade og nummer *",
+      "addressPlaceholder": "Antwerpsesteenweg 42",
+      "city": "By *",
+      "cityPlaceholder": "Gent",
+      "country": "Land",
+      "message": "Yderligere bemærkninger",
+      "messagePlaceholder": "F.eks. Jeg er arkitekt og projekterer et kontor på 200 m²...",
+      "optional": "(valgfrit)"
+    },
+    "countries": {
+      "belgium": "Belgien",
+      "netherlands": "Nederlandene",
+      "luxembourg": "Luxembourg",
+      "france": "Frankrig",
+      "germany": "Tyskland",
+      "other": "Andet"
+    },
+    "samples": {
+      "interior": "Interior",
+      "solid": "Solid",
+      "divide": "Divide",
+      "rwoodGroove": "rWood – Groove",
+      "rwoodPerf": "rWood – Perf",
+      "rpetGroove": "rPET – Groove",
+      "rpetPanel": "rPET – Panel"
+    },
+    "consent": "Jeg accepterer, at Re-Sound må kontakte mig vedrørende denne forespørgsel. <link>Privatlivspolitik</link>",
+    "error": "Noget gik galt. Send os en e-mail på <link>{email}</link>",
+    "submit": "Send prøveforespørgsel",
+    "sending": "Sender…",
+    "success": {
+      "title": "Forespørgsel modtaget!",
+      "body": "Vi klargør dit prøvesæt og sender det til <strong>{city}</strong> inden for 3–5 hverdage. Tjek din indbakke for en bekræftelse.",
+      "close": "Luk"
     }
   }
 }

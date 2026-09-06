@@ -56,7 +56,9 @@
     "whereToBuy": "Bezugsquellen",
     "rangeRpet": "PET-Akustikpaneele",
     "rangeRwood": "Holz-Akustikpaneele",
-    "rangeBooths": "Akustik-Telefonboxen"
+    "rangeBooths": "Akustik-Telefonboxen",
+    "toggleMenu": "Menü ein-/ausblenden",
+    "selectLanguage": "Sprache auswählen"
   },
   "hero": {
     "rwood": {
@@ -72,7 +74,8 @@
       "statFire": "Brandschutzklasse",
       "pill1": "Echtholzfurnier",
       "pill2": "Recycelter Kern",
-      "pill3": "Massiv & perforiert"
+      "pill3": "Massiv & perforiert",
+      "imageAlt": "rWood Micro Akustikpaneel mit natürlichem Holzfurnier, Nahaufnahme der Oberfläche"
     },
     "circular": {
       "badge": "Kreislauf-Sortiment · Interior · Solid · Divide · rPET",
@@ -89,7 +92,8 @@
       "pill1": "100 % recycelt",
       "pill2": "Kostenlose Rücknahme",
       "pill3": "50+ Farben",
-      "pill4": "Eigene Werke"
+      "pill4": "Eigene Werke",
+      "imageAlt": "Zirkuläre Interior Akustikpaneele in einem modernen Büro"
     }
   },
   "ticker": {
@@ -140,7 +144,9 @@
     "swatchesBody": "Fünf Holzarten, jede mit eigenem Charakter. Alle auf einem 100% recycelten Akustikkern aufgetragen.",
     "ctaFullSpec": "Vollständige Spezifikationen",
     "ctaDatasheet": "Datenblatt Herunterladen",
-    "ctaOrderSamples": "Musterkit Bestellen"
+    "ctaOrderSamples": "Musterkit Bestellen",
+    "viewVeneer": "Furnier {name} ansehen",
+    "selectVeneer": "{name} auswählen"
   },
   "products": {
     "tag": "UNSERE PRODUKTE",
@@ -344,7 +350,8 @@
         "title": "Zurückgeben",
         "description": "Kostenlose Abholung und Recycling zu neuen Platten."
       }
-    }
+    },
+    "imageAlt": "Kreislaufwirtschaft – Recyclingprozess von Akustikpaneelen"
   },
   "dualCta": {
     "left": {
@@ -358,7 +365,9 @@
       "title": "Individuelles Angebot einholen",
       "subtitle": "Erzählen Sie uns von Ihrem Raum — wir empfehlen die passende Akustiklösung und erstellen Ihnen ein maßgeschneidertes Angebot.",
       "cta": "Angebot Anfordern"
-    }
+    },
+    "samplesAlt": "Muster von rWood Akustikpaneelen mit Naturfurnier",
+    "spaceAlt": "Moderner Raum mit zirkulären Akustikpaneelen von Re-Sound"
   },
   "cta": {
     "title": "Bereit, Ihren Raum zu Verwandeln?",
@@ -873,7 +882,8 @@
     },
     "gallery": {
       "tag": "INSPIRATION",
-      "title": "In der Praxis"
+      "title": "In der Praxis",
+      "altPattern": "{product} – Projektinstallation {n}"
     },
     "acoustics": {
       "low": "Tief",
@@ -936,6 +946,12 @@
       "tag": "AUCH IN DIESER SERIE",
       "title": "Weitere Modelle dieser Serie",
       "rangeLink": "Die ganze {range}-Reihe ansehen"
+    },
+    "a11y": {
+      "selectColour": "Farbe {name} auswählen",
+      "selectFinish": "Oberfläche {name} auswählen",
+      "selectVeneer": "Furnier {name} auswählen",
+      "select": "{name} auswählen"
     }
   },
   "interiorPage": {
@@ -1049,6 +1065,13 @@
           "answer": "Interior verwendet eine verdeckte modulare Schiene; Solid arbeitet mit verdeckten Haken; Divide steht frei mit einer magnetischen modularen Verbindung. Spezialwerkzeug ist nicht erforderlich."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Interior Akustik-Wandpaneele in {colour}",
+      "interiorPanelCompletePackage": "Komplettpaket Interior Paneel",
+      "circularDesignRecycledMaterials": "Zirkuläres Design – recycelte Materialien",
+      "modularWallPanelConfigurations": "Modulare Konfigurationen der Wandpaneele",
+      "easyMaintenanceWithRemovableCover": "Einfache Pflege dank abnehmbarem Bezug"
     }
   },
   "solidPage": {
@@ -1185,6 +1208,13 @@
           "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Normen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw 1.0 und NRC 0.95 weisen auf dieselbe Klasse-A-Leistung hin."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Solid Akustik-Wandpaneel in {colour}",
+      "solidPanelCompletePackage": "Komplettpaket Solid Paneel",
+      "solidPanelMountedOnTheWallWithThe": "Solid Paneel, mit dem einfachen Hakensystem an der Wand montiert",
+      "removableFabricCoverForEasyCleaning": "Abnehmbarer Stoffbezug für einfache Reinigung",
+      "circularDesignRecycledTextileMaterials": "Zirkuläres Design – recycelte Textilmaterialien"
     }
   },
   "dividePage": {
@@ -1289,7 +1319,8 @@
     },
     "gallery": {
       "tag": "INSPIRATION",
-      "title": "Divide in der Praxis"
+      "title": "Divide in der Praxis",
+      "altPattern": "{product} in {colour} – Farbvariante {n}"
     },
     "faq": {
       "questions": {
@@ -1314,6 +1345,15 @@
           "answer": "Ja. Maßgeschneiderte Breiten und Höhen sind bei Projekten ab 20 m² verfügbar. Mindestbestellmengen gelten; kontaktieren Sie uns für ein individuelles Angebot."
         }
       }
+    },
+    "alt": {
+      "heroInColour": "Re-Sound Divide Akustik-Raumteiler in {colour}",
+      "divideAcousticRoomDivider": "Divide Akustik-Raumteiler",
+      "divideIntegratedBaseDetail": "Detail des integrierten Standfußes von Divide",
+      "magneticConnectionDetail": "Detail der magnetischen Verbindung",
+      "modularConfigurations": "Modulare Konfigurationen",
+      "divideRoomDividerMadeFromRecycledTextileFibres": "Divide Raumteiler aus recycelten Textilfasern",
+      "dividePanelCrossSection": "Querschnitt des Divide Paneels"
     }
   },
   "rpetGroovePage": {
@@ -1563,6 +1603,11 @@
           "answer": "Lagerfarben werden innerhalb von 2–3 Wochen versendet; Sonderfarben benötigen 5–6 Wochen. Großprojekte (>500 m²) werden in Produktionschargen geplant — kontaktieren Sie uns für einen verbindlichen Termin."
         }
       }
+    },
+    "alt": {
+      "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove Akustikpaneel in einem modernen Büro",
+      "panelInstallationProcess": "Montage der Paneele",
+      "recycledMaterials": "Recycelte Materialien"
     }
   },
   "rpetPanelPage": {
@@ -1774,6 +1819,15 @@
           "answer": "Lagerfarben werden innerhalb von 2–3 Wochen versendet; Sonderfarben benötigen 5–6 Wochen. Großprojekte (>500 m²) werden in Produktionschargen geplant — kontaktieren Sie uns für einen verbindlichen Termin."
         }
       }
+    },
+    "alt": {
+      "rpetPanelRecycledPetBottlesTransformation": "rPET - Panel: Verwandlung recycelter PET-Flaschen",
+      "petAcousticWallsInMeetingPod": "PET-Akustikwände in einem Meeting-Pod",
+      "ceilingPanelsAndTableDivider": "Deckenpaneele und Tischtrennwand",
+      "acousticTreatmentInRestaurant": "Akustische Ausstattung in einem Restaurant",
+      "cncProcessingOfRpetPanels": "CNC-Bearbeitung von rPET-Paneelen",
+      "recycledPetBottles": "Recycelte PET-Flaschen",
+      "rpetPanelSamplePanels": "rPET - Panel Musterpaneele"
     }
   },
   "rwoodGroovePage": {
@@ -1960,6 +2014,12 @@
           "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
         }
       }
+    },
+    "alt": {
+      "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove Akustikpaneel in einem modernen Interieur",
+      "woodFinishSamples": "Muster der Holzoberflächen",
+      "panelInstallationProcess": "Montage der Paneele",
+      "sustainableForestry": "Nachhaltige Forstwirtschaft"
     }
   },
   "rwoodPerfPage": {
@@ -2139,6 +2199,12 @@
           "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
         }
       }
+    },
+    "alt": {
+      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf Paneel, Nahaufnahme mit runden Perforationen",
+      "perforatedWoodPanelVeneerSurfaceDetail": "Detail der Furnieroberfläche eines perforierten Holzpaneels",
+      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf Paneel mit verdecktem Montagesystem",
+      "sustainableWoodSourcingAndProduction": "Nachhaltige Holzbeschaffung und Produktion"
     }
   },
   "rwoodMicroPage": {
@@ -2330,6 +2396,13 @@
           "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
         }
       }
+    },
+    "alt": {
+      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro Paneel, Nahaufnahme mit unsichtbaren Perforationen",
+      "microPerforatedWoodPanelSurfaceDetail": "Oberflächendetail eines mikroperforierten Holzpaneels",
+      "rwoodMicroPanelInstallationSystem": "rWood - Micro Paneel Montagesystem",
+      "backlitMicroPerforatedPanelCreatingLightEffect": "Hinterleuchtetes mikroperforiertes Paneel mit Lichteffekt",
+      "sustainableProduction": "Nachhaltige Produktion"
     }
   },
   "rwoodVeneerPage": {
@@ -2585,6 +2658,11 @@
           "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
         }
       }
+    },
+    "alt": {
+      "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel furnierte MDF-Platte, Nahaufnahme der Maserung",
+      "closeUpOfLacqueredVeneerSurface": "Nahaufnahme der lackierten Furnieroberfläche",
+      "sustainablyManagedForest": "Nachhaltig bewirtschafteter Wald"
     }
   },
   "rpetFlexGroovePage": {
@@ -2776,6 +2854,13 @@
           "answer": "Lagerfarben werden innerhalb von 2–3 Wochen versendet; Sonderfarben benötigen 5–6 Wochen. Großprojekte (>500 m²) werden in Produktionschargen geplant — kontaktieren Sie uns für einen verbindlichen Termin."
         }
       }
+    },
+    "alt": {
+      "rpetFlexGrooveAcousticPanel": "rPET Flex-Groove Akustikpaneel",
+      "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove Akustikpaneel auf gewölbter Fläche",
+      "rpetFlexGrooveColorOptions": "rPET Flex-Groove Farboptionen",
+      "flexGroovePanelInstallation": "Montage des Flex-Groove Paneels",
+      "recycledPetBottles": "Recycelte PET-Flaschen"
     }
   },
   "legal": {
@@ -2878,7 +2963,8 @@
         "question": "Wie fordere ich ein Angebot an?",
         "answer": "Verwenden Sie das Kontaktformular auf einer Produktseite oder das allgemeine Kontaktformular, mit: der Produktlinie, die Sie interessiert, ungefähre Mengen oder Grundriss und Ihrem Projektzeitplan. Wir antworten innerhalb eines Werktags mit einem maßgeschneiderten Angebot, einer Musterregelung und einer Berechnung der erwarteten akustischen Verbesserung. Für größere Projekte können wir einen Vor-Ort-Termin oder einen Briefing-Call vereinbaren."
       }
-    }
+    },
+    "categoriesLabel": "Kategorien"
   },
   "boothPage": {
     "nav": {
@@ -2973,7 +3059,8 @@
         "name": "Modular XL",
         "tag": "Skalierbarer Meeting-Pod"
       }
-    }
+    },
+    "growthDiagramLabel": "Diagramm zur modularen Erweiterung"
   },
   "soloFlexPage": {
     "hero": {
@@ -3821,6 +3908,7 @@
       },
       "finishesValue": "{count} Oberflächen",
       "coloursValue": "{count} Farben",
+      "notAvailable": "—",
       "fromPriceValue": "ab {price} € {unit}",
       "placeholderPrice": "Preis auf Anfrage",
       "isoClassNote": "Klassengrenzen nach ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
@@ -3839,7 +3927,7 @@
       "ctaText": "Bestellen Sie ein kostenloses Muster-Kit oder senden Sie uns Ihre Zeichnungen für ein Angebot – unser Team antwortet innerhalb eines Werktags.",
       "ctaSampleKit": "Muster-Kit bestellen",
       "ctaQuote": "Angebot anfragen",
-      "notAvailable": "—"
+      "breadcrumbLabel": "Brotkrumennavigation"
     },
     "rpet": {
       "title": "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound",
@@ -3954,6 +4042,63 @@
           "answer": "Solo Flex und Duo werden 4–6 Wochen nach Bestellung geliefert, Modular XL 6–8 Wochen für die Basiseinheit; Sonderstoffe verlängern die Lieferzeit um 2–3 Wochen. Die Garantie beträgt 5 Jahre auf die Konstruktion und 2 Jahre auf die Elektronik; Lieferung und Montage sind EU-weit verfügbar."
         }
       }
+    }
+  },
+  "sampleKit": {
+    "eyebrow": "rWood · rPET · Textil",
+    "title": "Muster-Kit bestellen",
+    "subtitle": "Füllen Sie Ihre Angaben aus, und wir versenden Ihr kostenloses Muster-Kit innerhalb von 3–5 Werktagen.",
+    "close": "Schließen",
+    "sections": {
+      "contact": "Kontaktdaten",
+      "shipping": "Lieferadresse",
+      "samples": "Welche Muster möchten Sie erhalten? *",
+      "samplesHint": "Alle zutreffenden auswählen – mindestens 1"
+    },
+    "fields": {
+      "firstName": "Vorname *",
+      "firstNamePlaceholder": "Marie",
+      "lastName": "Nachname *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "E-Mail *",
+      "emailPlaceholder": "marie@studio.be",
+      "phone": "Telefon",
+      "company": "Unternehmen / Studio",
+      "companyPlaceholder": "Studio Dupont",
+      "address": "Straße & Hausnummer *",
+      "addressPlaceholder": "Antwerpsesteenweg 42",
+      "city": "Ort *",
+      "cityPlaceholder": "Gent",
+      "country": "Land",
+      "message": "Zusätzliche Anmerkungen",
+      "messagePlaceholder": "Z. B. Ich bin Architekt und plane ein 200 m² großes Büro ...",
+      "optional": "(optional)"
+    },
+    "countries": {
+      "belgium": "Belgien",
+      "netherlands": "Niederlande",
+      "luxembourg": "Luxemburg",
+      "france": "Frankreich",
+      "germany": "Deutschland",
+      "other": "Sonstiges"
+    },
+    "samples": {
+      "interior": "Interior",
+      "solid": "Solid",
+      "divide": "Divide",
+      "rwoodGroove": "rWood – Groove",
+      "rwoodPerf": "rWood – Perf",
+      "rpetGroove": "rPET – Groove",
+      "rpetPanel": "rPET – Panel"
+    },
+    "consent": "Ich bin damit einverstanden, dass Re-Sound mich bezüglich dieser Anfrage kontaktiert. <link>Datenschutzerklärung</link>",
+    "error": "Etwas ist schiefgelaufen. Schreiben Sie uns an <link>{email}</link>",
+    "submit": "Musteranfrage senden",
+    "sending": "Wird gesendet …",
+    "success": {
+      "title": "Anfrage erhalten!",
+      "body": "Wir stellen Ihr Muster-Kit zusammen und versenden es innerhalb von 3–5 Werktagen nach <strong>{city}</strong>. Eine Bestätigung finden Sie in Ihrem Posteingang.",
+      "close": "Schließen"
     }
   }
 }
