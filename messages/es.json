@@ -1712,7 +1712,7 @@
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
       "title": "Circular en el Núcleo",
-      "cert1": "Hecho con Botellas Recicladas",
+      "cert1": "{pct, select, unknown {Contenido de PET reciclado} other {{pct}% de contenido reciclado}}",
       "cert2": "Devolución Circular",
       "cert3": "OEKO-TEX® Clase 1",
       "cert4": "Emisiones Clase A+",

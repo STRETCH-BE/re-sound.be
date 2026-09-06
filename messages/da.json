@@ -1712,7 +1712,7 @@
     "sustainability": {
       "tag": "BÆREDYGTIGHED",
       "title": "Cirkulær i Kernen",
-      "cert1": "Lavet af Genbrugste Flasker",
+      "cert1": "{pct, select, unknown {Indhold af genanvendt PET} other {{pct}% genanvendt materiale}}",
       "cert2": "Cirkulær Returnering",
       "cert3": "OEKO-TEX® Klasse 1",
       "cert4": "Klasse A+ emissioner",
@@ -2346,7 +2346,7 @@
       "badge4": "Lave VOC-emissioner",
       "badge1Desc": "Træ fra ansvarligt forvaltede skove",
       "badge2Desc": "MDF-kerne – en træbaseret, brandklassificeret kerne",
-      "badge3Desc": "Manufactured in Europe, reducing transport emissions",
+      "badge3Desc": "Korte forsyningskæder, der holder transportemissionerne lave",
       "badge4Desc": "E1-klassificeret for et sundere indeklima",
       "description": "rWood - Micro-paneler er udviklet med bæredygtighed som et grundprincip. FSC®-certificeret træ, lavemissionsfinish og ansvarligt indkøbte materialer sikrer miljøansvar gennem hele produktets livscyklus."
     },
@@ -3625,8 +3625,8 @@
       "tag": "HVORFOR BLIVE PARTNER MED RE-SOUND",
       "title": "Seks grunde til at tage telefonen.",
       "item1": {
-        "title": "Lavet i Belgien og Europa",
-        "desc": "Tekstillinjerne fremstilles i Belgien; rWood i Europa; rPET i Polen. Korte forsyningskæder, gennemsigtig oprindelse og en kvalitet, du kan stå inde for i et udbud."
+        "title": "Fremstillet på vores egne fabrikker",
+        "desc": "Tekstilserierne fremstilles på vores fabrik i Beveren-Waas (Belgien) og rPET på vores fabrik i Częstochowa (Polen); rWood produceres i Europa. Korte forsyningskæder, gennemsigtig oprindelse og en kvalitet, du kan stå inde for i et udbud."
       },
       "item2": {
         "title": "En klar, ærlig serie",

@@ -1712,7 +1712,7 @@
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur í kjarna",
-      "cert1": "Gerður úr endurunnnum flöskum",
+      "cert1": "{pct, select, unknown {Endurunnið PET-innihald} other {{pct}% endurunnið efni}}",
       "cert2": "Hringrásarleg skilagreiðsla",
       "cert3": "OEKO-TEX® Flokkur 1",
       "cert4": "A+ flokkur losunar",
@@ -2346,7 +2346,7 @@
       "badge4": "Lágar VOC losanir",
       "badge1Desc": "Viður úr skógum sem er stjórnað á ábyrgan hátt",
       "badge2Desc": "Trefjaplötukjarni – viðarbundinn, brunaflokkaður kjarni",
-      "badge3Desc": "Manufactured in Europe, reducing transport emissions",
+      "badge3Desc": "Stuttar aðfangakeðjur sem halda losun vegna flutninga í lágmarki",
       "badge4Desc": "E1-flokkað fyrir heilnæmara inniloft",
       "description": "rWood - Micro plötur eru byggðar á sjálfbærni sem grundvallarreglu. FSC®-vottaður viður, áferðarefni með lága losun og ábyrgt aðfengin efni tryggja umhverfisábyrgð allan líftíma vörunnar."
     },
@@ -3625,8 +3625,8 @@
       "tag": "HVERS VEGNA AÐ GERAST SAMSTARFSAÐILI RE-SOUND",
       "title": "Sex ástæður til að taka upp símann.",
       "item1": {
-        "title": "Framleitt í Belgíu og Evrópu",
-        "desc": "Textíllínurnar eru framleiddar í Belgíu; rWood í Evrópu; rPET í Póllandi. Stuttar aðfangakeðjur, gegnsætt upprunaland og gæði sem þú getur staðið með í útboði."
+        "title": "Framleitt í okkar eigin verksmiðjum",
+        "desc": "Textíllínurnar eru framleiddar í verksmiðju okkar í Beveren-Waas (Belgíu) og rPET í verksmiðju okkar í Częstochowa (Póllandi); rWood er framleitt í Evrópu. Stuttar aðfangakeðjur, gagnsær uppruni og gæði sem þú getur staðið við í útboði."
       },
       "item2": {
         "title": "Skýr, heiðarleg lína",

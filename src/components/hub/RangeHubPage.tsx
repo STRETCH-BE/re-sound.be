@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/product/Breadcrumbs';
 import ProductFaq from '@/components/product/ProductFaq';
 import JsonLd from '@/components/seo/JsonLd';
 import { SHOW_PLACEHOLDER_PRICES } from '@/config/site';
-import { guidePath } from '@/data/guides';
+import { guidePath, isGuideLocale } from '@/data/guides';
 import { HUBS, hubPath, type HubId } from '@/data/hubs';
 import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
 import { PRODUCTS, isoSpeechClass, type Product } from '@/data/products';
@@ -177,7 +177,7 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
             </table>
           </div>
           {isBooth && <p className="hub-table-footnote">{ts('isoClassNote')}</p>}
-          {isBooth && (
+          {isBooth && isGuideLocale(locale) && (
             <p className="hub-table-footnote">
               <Link href={guidePath(locale)} prefetch={false}>{ts('priceGuideLink')} →</Link>
             </p>

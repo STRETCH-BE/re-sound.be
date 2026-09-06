@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { Link } from '@/i18n/navigation';
-import { guidePath } from '@/data/guides';
+import { guidePath, isGuideLocale } from '@/data/guides';
 import { hubForFamily, hubPath } from '@/data/hubs';
 import { FAMILY_PRODUCTS, PRODUCTS } from '@/data/products';
 
@@ -69,7 +69,7 @@ export default async function OtherModels({ slug, locale }: OtherModelsProps) {
           </Link>
         </p>
       )}
-      {product.family === 'booth' && (
+      {product.family === 'booth' && isGuideLocale(locale) && (
         <p className="ps-related-range">
           <Link href={guidePath(locale)} prefetch={false}>{t('priceGuide')} →</Link>
         </p>
