@@ -5,6 +5,8 @@ import { Metadata } from 'next';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
 import WhereToBuyPage from '@/components/sections/WhereToBuyPage';
+import JsonLd from '@/components/seo/JsonLd';
+import { localBusinessSchema } from '@/lib/structured-data';
 
 interface WhereToBuyRouteProps {
   params: { locale: string };
@@ -37,6 +39,8 @@ export default async function WhereToBuyRoute({ params: { locale } }: WhereToBuy
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      {/* The Beveren-Waas showroom is the physical place to see the range */}
+      <JsonLd data={localBusinessSchema()} />
       <WhereToBuyPage />
     </NextIntlClientProvider>
   );

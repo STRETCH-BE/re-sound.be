@@ -2,10 +2,12 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import RpetFlexGrooveProductPage from '@/components/sections/rpetflexgroovepage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
@@ -78,7 +80,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('rpetFlexGrooveDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'rpet-flex-groove', cleanName);
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -107,37 +110,19 @@ export default async function Page({ params: { locale } }: PageProps) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd
         data={productSchema({
-          slug: 'rpet-flex-groove',
+          product: PRODUCTS['rpet-flex-groove'],
           locale,
           name: cleanName,
           description,
-          image: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
-          category: 'Acoustic PET panels',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['rpet-flex-groove'].madeIn ?? undefined,
-          material: '100% recycled PET',
-          specs: [
-            { name: 'Sound absorption (αw)', value: '0.80', unitText: 'ISO 11654' },
-            { name: 'NRC', value: '0.80', unitText: 'ASTM C423' },
-            { name: 'Fire classification', value: 'B-s1,d0' },
-            { name: 'Recycled content', value: '100', unitText: '%' },
-            { name: 'Bendable', value: 'Yes' },
-            { name: 'Certification', value: 'OEKO-TEX®' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.rpet'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/rpet-flex-groove` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RpetFlexGrooveProductPage
+        breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
         specs={
           <ProductSpecs
             cards={specs}
@@ -153,7 +138,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           />
         }
         faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-        otherModels={<OtherModels slug="rpet-flex-groove" />}
+        otherModels={<OtherModels slug="rpet-flex-groove" locale={locale} />}
       />
     </NextIntlClientProvider>
   );

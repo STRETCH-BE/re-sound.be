@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
-import { breadcrumbSchema, SITE_URL } from '@/lib/structured-data';
+import { blogPostingSchema, breadcrumbSchema } from '@/lib/structured-data';
 import JsonLd from '@/components/seo/JsonLd';
 
 import BlogPostHeader from '@/components/sections/BlogPostHeader';
@@ -86,6 +86,7 @@ export default async function BlogPostPage({ params: { locale, slug } }: BlogPos
 
   const t = await getTranslations({ locale, namespace: 'blogPosts' });
   const tBlog = await getTranslations({ locale, namespace: 'blog' });
+  const tHome = await getTranslations({ locale, namespace: 'hubs.shared' });
   const title = t(`${slug}.title`);
   const excerpt = t(`${slug}.excerpt`);
 
@@ -97,31 +98,21 @@ export default async function BlogPostPage({ params: { locale, slug } }: BlogPos
 
   return (
     <>
+      {/* datePublished comes from the post's own date field; the author is the
+          organisation until BLOG_AUTHOR in src/config/site.ts is confirmed. */}
       <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'BlogPosting',
-          '@id': `${SITE_URL}/${locale}/blog/${slug}#article`,
+        data={blogPostingSchema({
+          locale,
+          slug,
           headline: title,
           description: excerpt,
-          inLanguage: locale,
-          mainEntityOfPage: `${SITE_URL}/${locale}/blog/${slug}`,
-          author: { '@type': 'Organization', name: 'Re-Sound', url: SITE_URL },
-          publisher: {
-            '@type': 'Organization',
-            '@id': `${SITE_URL}/#organization`,
-            name: 'Re-Sound',
-            url: SITE_URL,
-            logo: {
-              '@type': 'ImageObject',
-              url: `${SITE_URL}/images/re-sound-logo.png`,
-            },
-          },
-        }}
+          datePublished: t(`${slug}.date`),
+          image: `/api/og?page=blog&locale=${locale}`,
+        })}
       />
       <JsonLd
         data={breadcrumbSchema([
-          { name: 'Home', url: `/${locale}` },
+          { name: tHome('breadcrumbHome'), url: `/${locale}` },
           { name: tBlog('title'), url: `/${locale}/blog` },
           { name: title, url: `/${locale}/blog/${slug}` },
         ])}

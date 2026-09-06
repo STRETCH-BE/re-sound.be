@@ -9,21 +9,41 @@
  * Types produced:
  *   - Organization      → sitewide entity; emitted once on the homepage
  *   - WebSite           → sitewide entity; emitted once on the homepage
- *   - Product           → per product page (with offers / specs / return policy)
- *   - BreadcrumbList    → per product page; helps Google show breadcrumbs in SERP
- *   - FAQPage           → per product page (when an FAQ block is present)
+ *   - LocalBusiness     → the Beveren-Waas showroom (homepage, where-to-buy)
+ *   - Product           → per product page, with one Offer built from
+ *                         src/data/products.ts (price / unit / availability)
+ *   - ItemList          → /products listing and the range hubs
+ *   - CollectionPage    → range hubs (wraps the ItemList)
+ *   - BreadcrumbList    → per product/hub page
+ *   - FAQPage           → per product/hub page (only for visible FAQs)
+ *   - BlogPosting       → per blog post
  *
- * Each builder returns a plain JS object. Render it through <JsonLd> which
- * serialises to a single `<script type="application/ld+json">` tag.
+ * Every fact comes from src/config/site.ts or src/data/products.ts — never
+ * from a literal in a page file — so copy, meta and schema cannot disagree.
+ * Each builder returns a plain JS object. Render it through <JsonLd>.
  */
 
-import { locales, type Locale, defaultLocale } from '@/i18n/config';
+import { locales, SEO_LOCALES, type Locale, defaultLocale } from '@/i18n/config';
 import {
+  BLOG_AUTHOR,
   FOUNDING_YEAR,
+  LEGAL_NAME,
   PARENT_ORGANIZATION,
+  SHOWROOM,
+  SHOW_PLACEHOLDER_PRICES,
   SITE_URL,
   SOCIAL_LINKS_LIST,
 } from '@/config/site';
+import { isoSpeechClass, PRODUCTS, type Product } from '@/data/products';
+
+const ORG_ID = `${SITE_URL}/#organization`;
+
+/**
+ * Placeholder "from" price used ONLY when NEXT_PUBLIC_SHOW_PRICES is set and
+ * a product has no confirmed price yet. Deliberately impossible-looking so it
+ * can never be mistaken for a real quote if it ever leaks.
+ */
+export const PLACEHOLDER_FROM_PRICE = 0;
 
 // ---------------------------------------------------------------------------
 // Organization
@@ -33,9 +53,9 @@ export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': `${SITE_URL}/#organization`,
+    '@id': ORG_ID,
     name: 'Re-Sound',
-    legalName: 'STRETCH-BE BV',
+    legalName: LEGAL_NAME,
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -54,16 +74,17 @@ export function organizationSchema() {
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Gentseweg 309 A3',
-      postalCode: '9120',
-      addressLocality: 'Beveren-Waas',
-      addressCountry: 'BE',
+      streetAddress: SHOWROOM.streetAddress,
+      postalCode: SHOWROOM.postalCode,
+      addressLocality: SHOWROOM.addressLocality,
+      addressRegion: SHOWROOM.addressRegion,
+      addressCountry: SHOWROOM.addressCountry,
     },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
-      email: 'info@re-sound.be',
-      telephone: '+32-3-284-68-18',
+      email: SHOWROOM.email,
+      telephone: SHOWROOM.telephone,
       areaServed: ['BE', 'NL', 'FR', 'DE', 'LU', 'EU'],
       // Full 10-locale coverage matches what the site actually serves.
       availableLanguage: locales as unknown as string[],
@@ -91,10 +112,50 @@ export function websiteSchema() {
     '@id': `${SITE_URL}/#website`,
     name: 'Re-Sound',
     url: SITE_URL,
-    inLanguage: locales as unknown as string[],
-    publisher: { '@id': `${SITE_URL}/#organization` },
+    inLanguage: SEO_LOCALES as unknown as string[],
+    publisher: { '@id': ORG_ID },
     description:
-      'Circular acoustic panels — wall, ceiling, and freestanding solutions from recycled textiles, FSC wood veneer, and recycled PET.',
+      'Circular acoustic panels and office phone booths — wall, ceiling, and freestanding solutions from recycled textiles, FSC wood veneer, and recycled PET.',
+  };
+}
+
+// ---------------------------------------------------------------------------
+// LocalBusiness — the showroom in Beveren-Waas
+// ---------------------------------------------------------------------------
+
+export function localBusinessSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${SITE_URL}/#showroom`,
+    name: SHOWROOM.name,
+    url: `${SITE_URL}/${defaultLocale}/where-to-buy`,
+    image: `${SITE_URL}/images/re-sound-logo.png`,
+    telephone: SHOWROOM.telephone,
+    email: SHOWROOM.email,
+    priceRange: SHOWROOM.priceRange,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: SHOWROOM.streetAddress,
+      postalCode: SHOWROOM.postalCode,
+      addressLocality: SHOWROOM.addressLocality,
+      addressRegion: SHOWROOM.addressRegion,
+      addressCountry: SHOWROOM.addressCountry,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: SHOWROOM.latitude,
+      longitude: SHOWROOM.longitude,
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: SHOWROOM.openingDays,
+        opens: SHOWROOM.opens,
+        closes: SHOWROOM.closes,
+      },
+    ],
+    parentOrganization: { '@id': ORG_ID },
   };
 }
 
@@ -111,57 +172,159 @@ export interface ProductSpec {
   unitText?: string;
 }
 
-export interface ProductOffer {
-  /** Lower bound of the price range as a stringified number, e.g. '387'.
-   *  Omit when no public price is published — Google accepts AggregateOffer
-   *  without a lowPrice provided availability + priceCurrency are present. */
-  lowPrice?: string;
-  /** Defaults to 'EUR' */
-  priceCurrency?: string;
-  /** ISO-8601 date; Google requires this whenever lowPrice is set. */
-  priceValidUntil?: string;
+/**
+ * Legacy call shape (slug + hand-written specs) still used by a few route
+ * pages while they are being migrated; resolved to the data-driven shape
+ * inside productSchema(). Remove once every page passes `product`.
+ */
+export interface LegacyProductSchemaInput {
+  slug: string;
+  locale: Locale | string;
+  name: string;
+  description: string;
+  image: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  category: string;
+  countryOfOrigin?: string;
+  material?: string;
+  specs?: ProductSpec[];
+  offer?: { lowPrice?: string; priceCurrency?: string; priceValidUntil?: string };
 }
 
 export interface ProductSchemaInput {
-  /** kebab-case slug, e.g. 'rwood-groove' */
-  slug: string;
-  /** Routing locale of the current page (e.g. 'en', 'nl'). Required —
-   *  previously hardcoded to 'en', which made every locale page declare
-   *  the EN URL as its canonical inside JSON-LD. */
+  /** Product record from src/data/products.ts — drives offer, origin, material, specs */
+  product: Product;
+  /** Routing locale of the current page (e.g. 'en', 'nl') */
   locale: Locale | string;
   /** Localised product name without trailing " | Re-Sound" */
   name: string;
   /** Localised product description */
   description: string;
-  /** Path to a primary product image, relative to site root */
-  image: string;
-  /** Optional image dimensions; defaults to 1920×1080 (site convention) */
+  /** Localised category, e.g. 'Acoustic wood panels' / 'Houten akoestische panelen' */
+  category: string;
+  /** Optional override of the primary image (defaults to product.heroImage) */
+  image?: string;
   imageWidth?: number;
   imageHeight?: number;
-  /** Category in human language, e.g. 'Acoustic wood panels' */
-  category: string;
-  /** Optional ISO country code where this product is manufactured */
-  countryOfOrigin?: string;
-  /** Optional material(s) for AI search matching */
-  material?: string;
-  /** Optional structured specs (αw, NRC, fire class, thickness, %) */
-  specs?: ProductSpec[];
-  /** Optional offer data (price + currency + validity) */
-  offer?: ProductOffer;
+  /** Extra localised specs to append to the ones derived from product data */
+  extraSpecs?: ProductSpec[];
+}
+
+/** The free take-back programme, expressed as a MerchantReturnPolicy. */
+function returnPolicy() {
+  return {
+    '@type': 'MerchantReturnPolicy',
+    returnPolicyCategory: 'https://schema.org/MerchantReturnUnlimitedWindow',
+    returnMethod: 'https://schema.org/ReturnByMail',
+    returnFees: 'https://schema.org/FreeReturn',
+    applicableCountry: ['BE', 'NL', 'FR', 'DE', 'LU'],
+  };
 }
 
 /**
- * Build a Product JSON-LD payload.
+ * One Offer per product.
+ *
+ * Confirmed prices (product.fromPrice) always ship. Products whose price is
+ * still a placeholder get an Offer without a price unless
+ * NEXT_PUBLIC_SHOW_PRICES is set, in which case PLACEHOLDER_FROM_PRICE is
+ * emitted — so nothing false ships to production by accident.
+ */
+export function productOffer(product: Product, url: string) {
+  const price =
+    product.fromPrice !== null
+      ? product.fromPrice
+      : SHOW_PLACEHOLDER_PRICES
+        ? PLACEHOLDER_FROM_PRICE
+        : null;
+
+  const offer: Record<string, unknown> = {
+    '@type': 'Offer',
+    url,
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/InStock',
+    itemCondition: 'https://schema.org/NewCondition',
+    seller: { '@id': ORG_ID },
+    eligibleRegion: ['BE', 'NL', 'FR', 'DE', 'LU'],
+    hasMerchantReturnPolicy: returnPolicy(),
+  };
+
+  if (price !== null) {
+    offer.price = String(price);
+    offer.priceSpecification = {
+      '@type': 'UnitPriceSpecification',
+      price: String(price),
+      priceCurrency: 'EUR',
+      unitCode: product.priceUnit.unitCode,
+      unitText: product.priceUnit.unitText,
+      valueAddedTaxIncluded: false,
+    };
+    // End of next calendar year, so the date never silently expires.
+    offer.priceValidUntil = `${new Date().getFullYear() + 1}-12-31`;
+  }
+
+  return offer;
+}
+
+/** Specs derived from the normalised fields in product data. */
+function dataSpecs(product: Product): ProductSpec[] {
+  const out: ProductSpec[] = [];
+  const s = product.specs;
+  if (s.kind === 'panel') {
+    if (s.alphaW) out.push({ name: 'Sound absorption (αw)', value: s.alphaW, unitText: 'ISO 11654' });
+    if (s.nrc) out.push({ name: 'NRC', value: s.nrc, unitText: 'ASTM C423' });
+    if (s.fireClass) out.push({ name: 'Fire classification', value: s.fireClass, unitText: 'EN 13501-1' });
+    if (s.thickness) out.push({ name: 'Thickness', value: s.thickness });
+    if (s.format) out.push({ name: 'Panel format', value: s.format });
+  } else {
+    out.push({ name: 'Capacity', value: `${s.capacity} ${s.capacity === '1' ? 'person' : 'persons'}` });
+    out.push({ name: 'Footprint', value: s.footprint });
+    out.push({ name: 'External dimensions', value: s.externalDimensions });
+    if (s.speechLevelReductionDbA !== null) {
+      out.push({ name: 'Speech level reduction (ISO 23351-1)', value: String(s.speechLevelReductionDbA), unitText: 'dB(A)' });
+      const cls = isoSpeechClass(s.speechLevelReductionDbA);
+      if (cls) out.push({ name: 'ISO 23351-1 class', value: cls });
+    }
+    out.push({ name: 'Ventilation', value: s.ventilation });
+    out.push({ name: 'Net weight', value: s.weight });
+  }
+  if (product.recycledContentPct !== null) {
+    out.push({ name: 'Recycled content', value: String(product.recycledContentPct), unitText: '%' });
+  }
+  for (const c of product.certifications) out.push({ name: 'Certification', value: c });
+  return out;
+}
+
+/**
+ * Build a Product JSON-LD payload from product data.
  *
  * Includes:
  *   - ImageObject (not bare URL) so Google can pick the right rich-card crop
- *   - AggregateOffer with availability + seller (and lowPrice when known)
+ *   - one Offer with UnitPriceSpecification (see productOffer)
+ *   - countryOfOrigin as a real ISO country, only when confirmed
  *   - additionalProperty PropertyValue entries for acoustic / technical specs
- *   - hasMerchantReturnPolicy reflecting the free take-back program
  *   - material string for AI search ("acoustic panel made from recycled PET")
  */
-export function productSchema(input: ProductSchemaInput) {
-  const url = `${SITE_URL}/${input.locale}/products/${input.slug}`;
+export function productSchema(raw: ProductSchemaInput | LegacyProductSchemaInput) {
+  // Legacy adapter: look the product up by slug and drop the hand-written
+  // origin/offer/specs (they were the source of the copy-vs-schema
+  // contradictions the audit found); data-driven values take over.
+  const input: ProductSchemaInput =
+    'product' in raw
+      ? raw
+      : {
+          product: PRODUCTS[raw.slug],
+          locale: raw.locale,
+          name: raw.name,
+          description: raw.description,
+          category: raw.category,
+          image: raw.image,
+          imageWidth: raw.imageWidth,
+          imageHeight: raw.imageHeight,
+        };
+  const { product } = input;
+  const url = `${SITE_URL}/${input.locale}/products/${product.slug}`;
+  const image = input.image ?? product.heroImage;
   const imgWidth = input.imageWidth ?? 1920;
   const imgHeight = input.imageHeight ?? 1080;
 
@@ -172,9 +335,10 @@ export function productSchema(input: ProductSchemaInput) {
     name: input.name,
     description: input.description,
     url,
+    sku: product.slug,
     image: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}${input.image}`,
+      url: `${SITE_URL}${encodeURI(image)}`,
       width: imgWidth,
       height: imgHeight,
       caption: input.name,
@@ -185,25 +349,22 @@ export function productSchema(input: ProductSchemaInput) {
     // the homepage, so include name/url inline to avoid a dangling @id.
     manufacturer: {
       '@type': 'Organization',
-      '@id': `${SITE_URL}/#organization`,
+      '@id': ORG_ID,
       name: 'Re-Sound',
       url: SITE_URL,
     },
+    material: product.material,
+    offers: productOffer(product, url),
   };
 
-  if (input.countryOfOrigin) {
-    node.countryOfOrigin = {
-      '@type': 'Country',
-      name: input.countryOfOrigin,
-    };
+  // Never "EU": either a confirmed ISO country from product data or nothing.
+  if (product.madeIn) {
+    node.countryOfOrigin = { '@type': 'Country', name: product.madeIn };
   }
 
-  if (input.material) {
-    node.material = input.material;
-  }
-
-  if (input.specs && input.specs.length > 0) {
-    node.additionalProperty = input.specs.map((s) => ({
+  const specs = [...dataSpecs(product), ...(input.extraSpecs ?? [])];
+  if (specs.length > 0) {
+    node.additionalProperty = specs.map((s) => ({
       '@type': 'PropertyValue',
       name: s.name,
       value: s.value,
@@ -211,45 +372,62 @@ export function productSchema(input: ProductSchemaInput) {
     }));
   }
 
-  // Offers — only when a public price exists. Google requires lowPrice on
-  // AggregateOffer; emitting the block without it is flagged as invalid in
-  // Search Console and kills rich-result eligibility for the whole Product.
-  // Products with project-based pricing simply omit offers.
-  if (input.offer?.lowPrice) {
-    const offer = input.offer;
-    node.offers = {
-      '@type': 'AggregateOffer',
-      lowPrice: offer.lowPrice,
-      priceCurrency: offer.priceCurrency ?? 'EUR',
-      // Default: end of next calendar year, so the date never silently
-      // expires the way a hardcoded one would.
-      priceValidUntil:
-        offer.priceValidUntil ?? `${new Date().getFullYear() + 1}-12-31`,
-      availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'Organization',
-        '@id': `${SITE_URL}/#organization`,
-        name: 'Re-Sound',
-        url: SITE_URL,
-      },
-      eligibleRegion: ['BE', 'NL', 'FR', 'DE', 'LU'],
-    };
-  }
-
-  // Free take-back program → MerchantReturnPolicy. The take-back is
-  // effectively lifetime, but schema.org expects either a finite-window
-  // category + days, or the Unlimited Window category. We use Unlimited
-  // Window here, since "panels last decades" doesn't fit a day count.
-  node.hasMerchantReturnPolicy = {
-    '@type': 'MerchantReturnPolicy',
-    returnPolicyCategory:
-      'https://schema.org/MerchantReturnUnlimitedWindow',
-    returnMethod: 'https://schema.org/ReturnByMail',
-    returnFees: 'https://schema.org/FreeReturn',
-    applicableCountry: ['BE', 'NL', 'FR', 'DE', 'LU'],
-  };
-
   return node;
+}
+
+// ---------------------------------------------------------------------------
+// ItemList / CollectionPage
+// ---------------------------------------------------------------------------
+
+export interface ListItemInput {
+  name: string;
+  /** Absolute or root-relative URL */
+  url: string;
+  image?: string;
+  description?: string;
+}
+
+const abs = (u: string) => (u.startsWith('http') ? u : `${SITE_URL}${u}`);
+
+export function itemListSchema(items: ListItemInput[], name?: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    ...(name ? { name } : {}),
+    numberOfItems: items.length,
+    itemListElement: items.map((item, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: item.name,
+      url: abs(item.url),
+      ...(item.image ? { image: abs(item.image) } : {}),
+    })),
+  };
+}
+
+export interface CollectionPageInput {
+  name: string;
+  description: string;
+  /** Root-relative page URL */
+  url: string;
+  locale: string;
+  items: ListItemInput[];
+}
+
+export function collectionPageSchema(input: CollectionPageInput) {
+  const { '@context': _ctx, ...list } = itemListSchema(input.items, input.name);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${abs(input.url)}#collection`,
+    name: input.name,
+    description: input.description,
+    url: abs(input.url),
+    inLanguage: input.locale,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    about: { '@id': ORG_ID },
+    mainEntity: list,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -270,13 +448,13 @@ export function breadcrumbSchema(items: BreadcrumbItem[]) {
       '@type': 'ListItem',
       position: idx + 1,
       name: item.name,
-      item: item.url.startsWith('http') ? item.url : `${SITE_URL}${item.url}`,
+      item: abs(item.url),
     })),
   };
 }
 
 // ---------------------------------------------------------------------------
-// FAQPage (per product, or generic)
+// FAQPage (per product, hub or generic)
 // ---------------------------------------------------------------------------
 
 export interface FaqEntry {
@@ -296,6 +474,57 @@ export function faqPageSchema(entries: FaqEntry[]) {
         text: e.answer,
       },
     })),
+  };
+}
+
+// ---------------------------------------------------------------------------
+// BlogPosting
+// ---------------------------------------------------------------------------
+
+export interface BlogPostingInput {
+  locale: string;
+  slug: string;
+  headline: string;
+  description: string;
+  /** ISO date, e.g. '2024-01-15' */
+  datePublished: string;
+  /** ISO date; defaults to datePublished */
+  dateModified?: string;
+  /** Root-relative or absolute image URL */
+  image: string;
+}
+
+export function blogPostingSchema(input: BlogPostingInput) {
+  const url = `${SITE_URL}/${input.locale}/blog/${input.slug}`;
+  // BLOG_AUTHOR is a placeholder (null) until a real author is confirmed;
+  // the organisation is then credited instead of an invented person.
+  const author = BLOG_AUTHOR
+    ? { '@type': 'Person', name: BLOG_AUTHOR.name, ...(BLOG_AUTHOR.url ? { url: BLOG_AUTHOR.url } : {}) }
+    : { '@type': 'Organization', '@id': ORG_ID, name: 'Re-Sound', url: SITE_URL };
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${url}#article`,
+    headline: input.headline,
+    description: input.description,
+    inLanguage: input.locale,
+    url,
+    mainEntityOfPage: url,
+    datePublished: input.datePublished,
+    dateModified: input.dateModified ?? input.datePublished,
+    image: abs(input.image),
+    author,
+    publisher: {
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: 'Re-Sound',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/images/re-sound-logo.png`,
+      },
+    },
   };
 }
 

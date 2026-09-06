@@ -13,7 +13,7 @@ import DualCTA from '@/components/sections/DualCTA';
 
 import JsonLd from '@/components/seo/JsonLd';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
-import { organizationSchema, websiteSchema } from '@/lib/structured-data';
+import { localBusinessSchema, organizationSchema, websiteSchema } from '@/lib/structured-data';
 
 interface HomePageProps {
   params: { locale: string };
@@ -72,6 +72,8 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
           the site as anonymous. WebSite is required for sitelinks. */}
       <JsonLd data={organizationSchema()} />
       <JsonLd data={websiteSchema()} />
+      {/* Showroom in Beveren-Waas: address, geo, opening hours, phone */}
+      <JsonLd data={localBusinessSchema()} />
 
       {/* Dual-split fullscreen hero: rWood left / Circular right */}
       <Hero />

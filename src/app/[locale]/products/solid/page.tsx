@@ -2,11 +2,13 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
 import ProductGallery from '@/components/product/ProductGallery';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import SolidProductPage from '@/components/sections/SolidProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
@@ -80,7 +82,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('solidDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'solid', cleanName);
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -122,37 +125,20 @@ export default async function Page({ params: { locale } }: PageProps) {
     <>
       <JsonLd
         data={productSchema({
-          slug: 'solid',
+          product: PRODUCTS['solid'],
           locale,
           name: cleanName,
           description,
-          image: '/images/products/solid/hero-denim.webp',
-          category: 'Acoustic textile wall panels',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['solid'].madeIn ?? undefined,
-          material: 'Recycled textile fibres',
-          specs: [
-            { name: 'Sound absorption (αw)', value: '0.95', unitText: 'ISO 11654' },
-            { name: 'NRC', value: '0.90', unitText: 'ASTM C423' },
-            { name: 'Fire classification', value: 'B-s2,d0' },
-            { name: 'Recycled content', value: '80', unitText: '%' },
-            { name: 'Panel format', value: '1200x600', unitText: 'mm' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.textile'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/solid` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <SolidProductPage
+          breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
           specs={
             <ProductSpecs
               cards={specs}
@@ -175,7 +161,7 @@ export default async function Page({ params: { locale } }: PageProps) {
             />
           }
           faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-          otherModels={<OtherModels slug="solid" />}
+          otherModels={<OtherModels slug="solid" locale={locale} />}
         />
       </NextIntlClientProvider>
     </>

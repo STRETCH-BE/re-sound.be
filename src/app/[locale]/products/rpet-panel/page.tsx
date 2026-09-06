@@ -2,11 +2,13 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
 import ProductGallery from '@/components/product/ProductGallery';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import RpetPanelProductPage from '@/components/sections/rpetpanelpage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
@@ -75,7 +77,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('rpetPanelDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'rpet-panel', cleanName);
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -117,43 +120,19 @@ export default async function Page({ params: { locale } }: PageProps) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd
         data={productSchema({
-          slug: 'rpet-panel',
+          product: PRODUCTS['rpet-panel'],
           locale,
           name: cleanName,
           description,
-          // Real hero used by the section component ("rPET - Panel - 7.png"),
-          // with spaces URL-encoded for a valid schema.org image URL.
-          image: '/images/products/rpet-panel/rPET%20-%20Panel%20-%207.png',
-          category: 'Acoustic PET panels',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['rpet-panel'].madeIn ?? undefined,
-          material: 'Recycled PET',
-          specs: [
-            { name: 'Sound absorption (αw)', value: '0.55', unitText: 'ISO 11654' },
-            { name: 'NRC', value: '0.55', unitText: 'ASTM C423' },
-            { name: 'Fire classification', value: 'B-s1,d0' },
-            // Single source for the recycled-content figure (copy uses the same
-            // field); omitted while it is a placeholder in product data.
-            ...(PRODUCTS['rpet-panel'].recycledContentPct !== null
-              ? [{ name: 'Recycled content', value: String(PRODUCTS['rpet-panel'].recycledContentPct), unitText: '%' }]
-              : []),
-            { name: 'VOC emissions', value: 'Class A+' },
-            { name: 'Certification', value: 'OEKO-TEX®' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.rpet'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/rpet-panel` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RpetPanelProductPage
+        breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
         specs={
           <ProductSpecs
             cards={specs}
@@ -176,7 +155,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           />
         }
         faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-        otherModels={<OtherModels slug="rpet-panel" />}
+        otherModels={<OtherModels slug="rpet-panel" locale={locale} />}
       />
     </NextIntlClientProvider>
   );

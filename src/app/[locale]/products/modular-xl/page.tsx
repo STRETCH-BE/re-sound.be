@@ -8,8 +8,10 @@ import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
 import specs from '@/data/specs/modular-xl';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -61,7 +63,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('modularXlDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'modular-xl', cleanName);
 
   const tFaq = await getTranslations({
     locale,
@@ -97,41 +100,24 @@ export default async function Page({ params: { locale } }: PageProps) {
     <>
       <JsonLd
         data={productSchema({
-          slug: 'modular-xl',
+          product: PRODUCTS['modular-xl'],
           locale,
           name: cleanName,
           description,
-          image: '/images/products/modular-xl/hero.jpg',
-          category: 'Acoustic meeting pods',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['modular-xl'].madeIn ?? undefined,
-          material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
-          specs: [
-            { name: 'Base external dimensions', value: '2400 × 1800 × 2260', unitText: 'mm' },
-            { name: 'Base net weight', value: '790', unitText: 'kg' },
-            { name: 'Speech reduction', value: '25.9', unitText: 'dB(A)' },
-            { name: 'Capacity', value: 'Up to 10 people' },
-            { name: 'Modular extension', value: '+900 mm per segment' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.booth'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/modular-xl` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <ModularXLProductPage
+          breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['modular-xl']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}
           faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-          otherModels={<OtherModels slug="modular-xl" />}
+          otherModels={<OtherModels slug="modular-xl" locale={locale} />}
         />
       </NextIntlClientProvider>
     </>

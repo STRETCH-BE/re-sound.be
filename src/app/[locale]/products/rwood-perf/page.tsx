@@ -2,11 +2,13 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
 import ProductGallery from '@/components/product/ProductGallery';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import RWoodPerfProductPage from '@/components/sections/rwoodperfpage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
@@ -83,7 +85,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('rwoodPerfDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'rwood-perf', cleanName);
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -117,37 +120,19 @@ export default async function Page({ params: { locale } }: PageProps) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd
         data={productSchema({
-          slug: 'rwood-perf',
+          product: PRODUCTS['rwood-perf'],
           locale,
           name: cleanName,
           description,
-          image: '/images/products/rwood-perf/hero-rwood-perf.webp',
-          category: 'Acoustic wood panels',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['rwood-perf'].madeIn ?? undefined,
-          material: 'FSC-certified wood veneer on recycled-felt core',
-          specs: [
-            { name: 'Sound absorption (αw)', value: '0.80', unitText: 'ISO 11654' },
-            { name: 'NRC', value: '0.80', unitText: 'ASTM C423' },
-            { name: 'Fire classification', value: 'B-s2,d0' },
-            { name: 'Recycled content', value: '60', unitText: '%' },
-            { name: 'Perforation patterns', value: '8/15/32 mm' },
-            { name: 'Certification', value: 'FSC' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.rwood'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/rwood-perf` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RWoodPerfProductPage
+        breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
         specs={
           <ProductSpecs
             cards={specs}
@@ -170,7 +155,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           />
         }
         faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-        otherModels={<OtherModels slug="rwood-perf" />}
+        otherModels={<OtherModels slug="rwood-perf" locale={locale} />}
       />
     </NextIntlClientProvider>
   );

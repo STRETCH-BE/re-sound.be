@@ -8,8 +8,10 @@ import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
 import specs from '@/data/specs/solo-flex';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -64,7 +66,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('soloFlexDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'solo-flex', cleanName);
 
   const tFaq = await getTranslations({
     locale,
@@ -100,41 +103,24 @@ export default async function Page({ params: { locale } }: PageProps) {
     <>
       <JsonLd
         data={productSchema({
-          slug: 'solo-flex',
+          product: PRODUCTS['solo-flex'],
           locale,
           name: cleanName,
           description,
-          image: '/images/products/solo-flex/hero.jpg',
-          category: 'Acoustic phone booths',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['solo-flex'].madeIn ?? undefined,
-          material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
-          specs: [
-            { name: 'External dimensions', value: '1020 × 1020 × 2260', unitText: 'mm' },
-            { name: 'Net weight', value: '280', unitText: 'kg' },
-            { name: 'Ventilation rate', value: '4.6', unitText: 'm³/min' },
-            { name: 'Capacity', value: '1 person' },
-            { name: 'Warranty (structural)', value: '5', unitText: 'years' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.booth'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/solo-flex` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <SoloFlexProductPage
+          breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['solo-flex']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}
           faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-          otherModels={<OtherModels slug="solo-flex" />}
+          otherModels={<OtherModels slug="solo-flex" locale={locale} />}
         />
       </NextIntlClientProvider>
     </>

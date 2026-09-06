@@ -4,9 +4,13 @@ import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
+import { itemListSchema } from '@/lib/structured-data';
+import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
+import { FAMILY_PRODUCTS, PRODUCTS, PRODUCT_SLUGS } from '@/data/products';
+import JsonLd from '@/components/seo/JsonLd';
 
 import PageHero from '@/components/sections/PageHero';
-import ProductsGrid from '@/components/sections/ProductsGrid';
+import ProductsGrid, { type ProductGroup } from '@/components/sections/ProductsGrid';
 import CTA from '@/components/sections/CTA';
 
 interface ProductsPageProps {
@@ -38,10 +42,36 @@ export default async function ProductsPage({ params: { locale } }: ProductsPageP
   setRequestLocale(locale);
   
   const t = await getTranslations('products');
+  const tNav = await getTranslations('nav');
+  const tData = await getTranslations('productData');
   const messages = pickMessages(await getMessages(), ['cta', 'products']);
+
+  // The three range hubs first, then the textile family (which has no hub).
+  const groups: ProductGroup[] = [
+    ...HUB_IDS.map((id) => ({
+      id,
+      title: tNav(`range${id.charAt(0).toUpperCase()}${id.slice(1)}`),
+      href: hubPath(HUBS[id], locale),
+      slugs: HUBS[id].models,
+    })),
+    { id: 'textile', title: tData('familyName.textile'), href: null, slugs: FAMILY_PRODUCTS.textile },
+  ];
+
+  // ItemList of the 13 products, in catalogue order, for the listing page.
+  const itemList = itemListSchema(
+    PRODUCT_SLUGS.map((slug) => ({
+      name: t(`${slug}.title`),
+      url: `/${locale}/products/${slug}`,
+      image: PRODUCTS[slug].cardImage,
+      description: t(`${slug}.description`),
+    })),
+    t('pageTitle')
+  );
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      <JsonLd data={itemList} />
+
       {/* Page Hero */}
       <PageHero
         tag={t('tag')}
@@ -52,7 +82,7 @@ export default async function ProductsPage({ params: { locale } }: ProductsPageP
       {/* All Products Grid */}
       <section className="products-page">
         <div className="products-page-inner">
-          <ProductsGrid showAll />
+          <ProductsGrid showAll groups={groups} />
         </div>
       </section>
 

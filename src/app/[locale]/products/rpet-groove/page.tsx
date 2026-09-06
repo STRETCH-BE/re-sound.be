@@ -4,9 +4,11 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 
 import RpetGrooveProductPage from '@/components/sections/rpetgroovepage';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductGallery from '@/components/product/ProductGallery';
 import ProductFaq from '@/components/product/ProductFaq';
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
@@ -73,7 +75,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('rpetGrooveDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'rpet-groove', cleanName);
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -118,40 +121,19 @@ export default async function Page({ params: { locale } }: PageProps) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <JsonLd
         data={productSchema({
-          slug: 'rpet-groove',
+          product: PRODUCTS['rpet-groove'],
           locale,
           name: cleanName,
           description,
-          // File exists on disk as "rPET - Groove - Grey.jpg"; spaces are
-          // URL-encoded so the schema.org image URL is valid.
-          image: '/images/products/rpet-groove/rPET%20-%20Groove%20-%20Grey.jpg',
-          category: 'Acoustic PET panels',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['rpet-groove'].madeIn ?? undefined,
-          material: '100% recycled PET',
-          specs: [
-            { name: 'Sound absorption (αw)', value: '0.85', unitText: 'ISO 11654' },
-            { name: 'NRC', value: '0.85', unitText: 'ASTM C423' },
-            { name: 'Fire classification', value: 'B-s1,d0' },
-            { name: 'Recycled content', value: '100', unitText: '%' },
-            { name: 'Available thicknesses', value: '12 / 24 / 36', unitText: 'mm' },
-            { name: 'Color options', value: '12' },
-            { name: 'Certification', value: 'OEKO-TEX®' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.rpet'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/rpet-groove` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RpetGrooveProductPage
+        breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
         specs={
           <ProductSpecs
             cards={specs}
@@ -174,7 +156,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           />
         }
         faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-        otherModels={<OtherModels slug="rpet-groove" />}
+        otherModels={<OtherModels slug="rpet-groove" locale={locale} />}
       />
     </NextIntlClientProvider>
   );

@@ -8,8 +8,10 @@ import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
 import specs from '@/data/specs/duo';
 import ProductSpecs from '@/components/product/ProductSpecs';
+import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
 import ProductDownloads from '@/components/product/ProductDownloads';
 import ProductFaq from '@/components/product/ProductFaq';
+import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
@@ -62,7 +64,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const description = tMeta('duoDescription');
 
-  const tProducts = await getTranslations({ locale, namespace: 'products' });
+  const tData = await getTranslations({ locale, namespace: 'productData' });
+  const crumbs = await productCrumbs(locale, 'duo', cleanName);
 
   const tFaq = await getTranslations({
     locale,
@@ -98,41 +101,24 @@ export default async function Page({ params: { locale } }: PageProps) {
     <>
       <JsonLd
         data={productSchema({
-          slug: 'duo',
+          product: PRODUCTS['duo'],
           locale,
           name: cleanName,
           description,
-          image: '/images/products/duo/hero-flex.jpg',
-          category: 'Acoustic meeting booths',
-          // ISO country from product data; omitted while the country is a placeholder
-          countryOfOrigin: PRODUCTS['duo'].madeIn ?? undefined,
-          material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
-          specs: [
-            { name: 'External dimensions', value: '1640 × 1200 × 2260', unitText: 'mm' },
-            { name: 'Net weight', value: '420', unitText: 'kg' },
-            { name: 'Ventilation rate', value: '9.2', unitText: 'm³/min' },
-            { name: 'Capacity', value: '1–2 people' },
-            { name: 'Configurations', value: 'Flex (meeting) · Work (focus)' },
-          ],
-          offer: {
-            priceCurrency: 'EUR',
-          },
+          category: tData('category.booth'),
         })}
       />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: 'Re-Sound', url: `/${locale}` },
-          { name: tProducts('pageTitle'), url: `/${locale}/products` },
-          { name: cleanName, url: `/${locale}/products/duo` },
-        ])}
+        data={breadcrumbSchema(crumbsToSchema(locale, crumbs))}
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <DuoProductPage
+          breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['duo']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}
           faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}
-          otherModels={<OtherModels slug="duo" />}
+          otherModels={<OtherModels slug="duo" locale={locale} />}
         />
       </NextIntlClientProvider>
     </>
