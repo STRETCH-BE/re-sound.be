@@ -587,7 +587,10 @@
       "company": "Bedrijf",
       "design": "Design"
     },
-    "minRead": "{minutes} min leestijd"
+    "minRead": "{minutes} min leestijd",
+    "draftBanner": "Concept ter beoordeling — niet gepubliceerd, niet geïndexeerd.",
+    "by": "Door",
+    "ctaQuote": "Offerte aanvragen"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

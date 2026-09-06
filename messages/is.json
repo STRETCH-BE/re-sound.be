@@ -587,7 +587,10 @@
       "company": "Fyrirtæki",
       "design": "Hönnun"
     },
-    "minRead": "{minutes} mín. lestur"
+    "minRead": "{minutes} mín. lestur",
+    "draftBanner": "Drög til yfirlestrar — ekki birt, ekki skráð af leitarvélum.",
+    "by": "Eftir",
+    "ctaQuote": "Óska eftir tilboði"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

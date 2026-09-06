@@ -5,6 +5,7 @@ import { MetadataRoute } from 'next';
 
 import { HUB_IDS, HUBS, hubPath } from '@/data/hubs';
 import { PRODUCTS, PRODUCT_SLUGS } from '@/data/products';
+import { getContentPosts } from '@/lib/content/blog';
 import { SEO_LOCALES, defaultLocale } from '@/i18n/config';
 
 import enMessages from '../../messages/en.json';
@@ -135,18 +136,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
-    // Product pages
-    for (const slug of PRODUCT_SLUGS) {
-      const product = PRODUCTS[slug];
+    // Editorial posts (content/blog/<locale>/*.md): single-locale, so no
+    // hreflang alternates; drafts are excluded.
+    for (const post of getContentPosts(locale)) {
       entries.push({
-        url: `${base}/${locale}/products/${slug}`,
-        lastModified: lastModified(
-          [`src/app/[locale]/products/${slug}/page.tsx`, `src/data/specs/${slug}.ts`, 'src/data/products.ts'],
-          product.updatedAt
-        ),
+        url: `${base}/${locale}/blog/${post.slug}`,
+        lastModified: new Date(post.dateModified || post.datePublished),
         changeFrequency: 'monthly',
-        priority: 0.8,
-        alternates: alternatesFor(base, () => `/products/${slug}`),
+        priority: 0.6,
       });
     }
 

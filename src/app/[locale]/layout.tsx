@@ -23,6 +23,7 @@ import { pickMessages } from '@/lib/i18n-messages';
 
 import '@/app/globals.css';
 import '@/styles/product-shared.css';
+import '@/styles/content.css';
 
 // Self-hosted fonts via next/font: eliminates the render-blocking request to
 // fonts.googleapis.com, automatically adds metric-adjusted fallbacks (zero CLS),

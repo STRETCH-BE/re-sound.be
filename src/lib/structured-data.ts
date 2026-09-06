@@ -492,14 +492,26 @@ export interface BlogPostingInput {
   dateModified?: string;
   /** Root-relative or absolute image URL */
   image: string;
+  /** Named author (editorial posts from the content workbook); falls back to BLOG_AUTHOR / the organisation */
+  author?: { name: string; jobTitle?: string; url?: string };
+  /** Word count of the article body, when known */
+  wordCount?: number;
 }
 
 export function blogPostingSchema(input: BlogPostingInput) {
   const url = `${SITE_URL}/${input.locale}/blog/${input.slug}`;
-  // BLOG_AUTHOR is a placeholder (null) until a real author is confirmed;
-  // the organisation is then credited instead of an invented person.
-  const author = BLOG_AUTHOR
-    ? { '@type': 'Person', name: BLOG_AUTHOR.name, ...(BLOG_AUTHOR.url ? { url: BLOG_AUTHOR.url } : {}) }
+  // A named author comes from the post itself (workbook: "Author (named
+  // person)"). BLOG_AUTHOR is a placeholder (null) until a real default
+  // author is confirmed; the organisation is then credited instead of an
+  // invented person.
+  const person = input.author ?? BLOG_AUTHOR;
+  const author = person
+    ? {
+        '@type': 'Person',
+        name: person.name,
+        ...('jobTitle' in person && person.jobTitle ? { jobTitle: person.jobTitle, worksFor: { '@id': ORG_ID } } : {}),
+        ...(person.url ? { url: person.url } : {}),
+      }
     : { '@type': 'Organization', '@id': ORG_ID, name: 'Re-Sound', url: SITE_URL };
 
   return {
@@ -514,6 +526,7 @@ export function blogPostingSchema(input: BlogPostingInput) {
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
     image: abs(input.image),
+    ...(input.wordCount ? { wordCount: input.wordCount } : {}),
     author,
     publisher: {
       '@type': 'Organization',

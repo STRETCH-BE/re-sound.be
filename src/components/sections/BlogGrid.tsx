@@ -1,28 +1,17 @@
 'use client';
 
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { localeFullCodes, type Locale } from '@/i18n/config';
 import { Link } from '@/i18n/navigation';
 
-interface BlogPost {
-  slug: string;
-  category: string;
-  date: string;
-}
-
-// Default posts list
-const defaultPosts: BlogPost[] = [
-  { slug: 'circular-economy-acoustics', category: 'sustainability', date: '2024-01-15' },
-  { slug: 'office-acoustic-solutions', category: 'products', date: '2024-01-10' },
-  { slug: 'recycled-materials-quality', category: 'materials', date: '2024-01-05' },
-  { slug: 'sound-absorption-explained', category: 'education', date: '2024-01-01' },
-];
+import { LEGACY_POSTS, type BlogGridPost } from '@/data/legacy-posts';
 
 interface BlogGridProps {
-  posts?: BlogPost[];
+  posts?: BlogGridPost[];
 }
 
-export default function BlogGrid({ posts = defaultPosts }: BlogGridProps) {
+export default function BlogGrid({ posts = LEGACY_POSTS }: BlogGridProps) {
   const t = useTranslations('blogPosts');
   const locale = useLocale();
   const dateLocale = localeFullCodes[locale as Locale] ?? 'en-BE';
@@ -44,12 +33,16 @@ export default function BlogGrid({ posts = defaultPosts }: BlogGridProps) {
           <Link href={`/blog/${post.slug}`} className="blog-card-link">
             <div className="blog-image">
               <span className="blog-category">{tCommon(`categories.${post.category}`)}</span>
-              <div className="image-placeholder">📄</div>
+              {post.image ? (
+                <Image src={post.image} alt={post.imageAlt ?? ''} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
+              ) : (
+                <div className="image-placeholder">📄</div>
+              )}
             </div>
             <div className="blog-content">
               <time className="blog-date">{formatDate(post.date)}</time>
-              <h3>{t(`${post.slug}.title`)}</h3>
-              <p>{t(`${post.slug}.excerpt`)}</p>
+              <h3>{post.title ?? t(`${post.slug}.title`)}</h3>
+              <p>{post.excerpt ?? t(`${post.slug}.excerpt`)}</p>
               <span className="read-more">
                 {tCommon('readMore')}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

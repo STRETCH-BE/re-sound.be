@@ -587,7 +587,10 @@
       "company": "Företag",
       "design": "Design"
     },
-    "minRead": "{minutes} min läsning"
+    "minRead": "{minutes} min läsning",
+    "draftBanner": "Utkast för granskning – inte publicerat, inte indexerat.",
+    "by": "Av",
+    "ctaQuote": "Begär offert"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

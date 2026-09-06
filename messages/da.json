@@ -587,7 +587,10 @@
       "company": "Virksomhed",
       "design": "Design"
     },
-    "minRead": "{minutes} min læsning"
+    "minRead": "{minutes} min læsning",
+    "draftBanner": "Udkast til gennemsyn – ikke offentliggjort, ikke indekseret.",
+    "by": "Af",
+    "ctaQuote": "Anmod om tilbud"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

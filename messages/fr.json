@@ -587,7 +587,10 @@
       "company": "Entreprise",
       "design": "Design"
     },
-    "minRead": "{minutes} min de lecture"
+    "minRead": "{minutes} min de lecture",
+    "draftBanner": "Brouillon en relecture — non publié, non indexé.",
+    "by": "Par",
+    "ctaQuote": "Demander un devis"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

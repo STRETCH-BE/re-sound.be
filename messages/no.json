@@ -587,7 +587,10 @@
       "company": "Bedrift",
       "design": "Design"
     },
-    "minRead": "{minutes} min lesing"
+    "minRead": "{minutes} min lesing",
+    "draftBanner": "Utkast til gjennomgang – ikke publisert, ikke indeksert.",
+    "by": "Av",
+    "ctaQuote": "Be om tilbud"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

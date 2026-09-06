@@ -587,7 +587,10 @@
       "company": "Empresa",
       "design": "Diseño"
     },
-    "minRead": "{minutes} min de leitura"
+    "minRead": "{minutes} min de leitura",
+    "draftBanner": "Rascunho para revisão — não publicado, não indexado.",
+    "by": "Por",
+    "ctaQuote": "Pedir orçamento"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

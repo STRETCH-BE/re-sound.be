@@ -1,0 +1,247 @@
+/* Editorial content: blog posts from the content workbook, FAQ page, booth
+   price guide, testimonials. Plain global CSS (server components). */
+
+.post {
+  --post-max: 780px;
+}
+
+.post-hero {
+  padding: 7rem 2rem 2.5rem;
+  background: var(--cream, #f6f3ee);
+}
+
+.post-hero-inner {
+  max-width: var(--post-max);
+  margin: 0 auto;
+}
+
+.post-hero .section-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.post-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--deep-blue, #0d3a5c);
+}
+
+.post-hero .post-lead {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0 0 1rem;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.post-figure {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  transform: translateY(-1.5rem);
+}
+
+.post-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.post-body {
+  max-width: var(--post-max);
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+}
+
+.prose {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--charcoal, #222);
+}
+
+.prose > p:first-child {
+  font-size: 1.15rem;
+}
+
+.prose h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--deep-blue, #0d3a5c);
+  margin: 2.5rem 0 0.9rem;
+  line-height: 1.25;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  color: var(--deep-blue, #0d3a5c);
+  margin: 1.8rem 0 0.6rem;
+}
+
+.prose p {
+  margin: 0 0 1.2rem;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 1.2rem;
+  padding-left: 1.4rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+.prose a {
+  color: var(--brand-blue, #197fc7);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.25rem;
+  border-left: 4px solid var(--brand-blue, #197fc7);
+  color: #444;
+}
+
+.prose-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e3ded6;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: var(--cream, #f6f3ee);
+  font-weight: 600;
+}
+
+.prose em:last-child {
+  color: #666;
+}
+
+.post-cta {
+  max-width: var(--post-max);
+  margin: 0 auto 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--deep-blue, #0d3a5c);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.post-cta p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.post-cta .btn-primary {
+  white-space: nowrap;
+}
+
+.post-author {
+  max-width: var(--post-max);
+  margin: 0 auto 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--cream, #f6f3ee);
+  border-radius: 16px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.post-author-name {
+  display: block;
+  font-weight: 700;
+}
+
+.post-author-role {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.post-draft-banner {
+  background: #fff3cd;
+  color: #664d03;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 5rem;
+}
+
+.post-draft-banner + .post-hero {
+  padding-top: 2.5rem;
+}
+
+.post-related {
+  max-width: 1040px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.post-related h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.post-related-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.post-related-grid a {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--cream, #f6f3ee);
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-related-grid a:hover h3 {
+  color: var(--brand-blue, #197fc7);
+}
+
+.post-related-grid h3 {
+  font-size: 1.05rem;
+  margin: 0.4rem 0 0.5rem;
+}
+
+.post-related-grid time {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Native FAQ accordions (details/summary) shared by FAQ page, hubs, guide */
