@@ -22,6 +22,8 @@
  * Options:
  *   --out <file>        also write the report to <file>
  *   --locales a,b,c     restrict to these locale prefixes (default: all in sitemap)
+ *   --also-locales x,y  also crawl these locale prefixes (not in the sitemap, e.g. noindex
+ *                       locales) by mirroring every English sitemap page
  *   --max-pages N       stop after N pages (debugging)
  *   --no-build          never run `next build` (fail if .next is missing)
  *   --port N            port for the self-started server (default 3999)
@@ -39,12 +41,13 @@ import { dirname, resolve } from 'node:path';
 // ---------------------------------------------------------------------------
 
 const argv = process.argv.slice(2);
-const opts = { out: null, locales: null, maxPages: Infinity, build: true, port: 3999, concurrency: 8 };
+const opts = { out: null, locales: null, alsoLocales: null, maxPages: Infinity, build: true, port: 3999, concurrency: 8 };
 let baseArg = null;
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
   if (a === '--out') opts.out = argv[++i];
   else if (a === '--locales') opts.locales = argv[++i].split(',').map((s) => s.trim()).filter(Boolean);
+  else if (a === '--also-locales') opts.alsoLocales = argv[++i].split(',').map((s) => s.trim()).filter(Boolean);
   else if (a === '--max-pages') opts.maxPages = Number(argv[++i]);
   else if (a === '--no-build') opts.build = false;
   else if (a === '--port') opts.port = Number(argv[++i]);
@@ -123,24 +126,35 @@ function stopwordsFor(locale) {
 
 // Spanish words that do not occur in (European) Portuguese — used to catch
 // Spanish copy leaking into /pt pages (the audit found the PT homepage body
-// rendered in Spanish). Shared words (para, que, como, sobre, cada …) are
-// deliberately left out.
+// rendered in Spanish). Words spelt the same in Portuguese (para, que, como,
+// sobre, cada, também, acústico, reciclado, solicitar …) are deliberately
+// left out.
 const SPANISH_MARKERS = new Set([
-  'el', 'los', 'las', 'del', 'con', 'una', 'y', 'en', 'es', 'más', 'también', 'sus',
+  'el', 'los', 'las', 'del', 'con', 'una', 'y', 'en', 'es', 'más', 'sus',
   'nuestros', 'nuestras', 'nuestro', 'nuestra', 'hasta', 'muy', 'sin', 'pero', 'al',
   'son', 'están', 'tiene', 'tienen', 'hacer', 'ahora', 'ya', 'usted', 'ustedes', 'aquí',
   'día', 'años', 'año', 'diseño', 'diseñado', 'diseñados', 'diseñada', 'cualquier',
-  'elegir', 'espacio', 'espacios', 'reciclado', 'reciclados', 'reciclada', 'recicladas',
-  'acústica', 'acústico', 'acústicos', 'acústicas', 'paneles', 'madera', 'ciclo',
-  'naturaleza', 'encuentra', 'soluciones', 'descubre', 'descubrir', 'solicitar',
+  'elegir', 'espacio', 'espacios', 'paneles', 'madera',
+  'naturaleza', 'encuentra', 'soluciones', 'descubre', 'descubrir',
 ]);
 
+// Words and spellings that only occur in Portuguese — a segment is only
+// "Spanish" when its Spanish-only evidence outweighs its Portuguese evidence.
+const PORTUGUESE_MARKERS = new Set(['não', 'com', 'uma', 'um', 'os', 'as', 'é', 'são', 'ao', 'aos', 'à', 'às', 'também', 'mais', 'muito', 'pelo', 'pela', 'pelos', 'pelas', 'nos', 'nas', 'no', 'na', 'dos', 'das', 'do', 'da', 'se', 'ou', 'em', 'isso', 'esta', 'este', 'estes', 'estas', 'nosso', 'nossa', 'nossos', 'nossas', 'seu', 'sua', 'seus', 'suas', 'onde', 'sobre', 'entre', 'ainda', 'já', 'até', 'desde', 'cada', 'toda', 'todo', 'todos', 'todas', 'qual', 'quais']);
 function isSpanishSegment(segment) {
-  const words = segment.toLowerCase().replace(/[^\p{L}\p{N}'’-]+/gu, ' ').split(/\s+/).filter(Boolean);
+  const lower = segment.toLowerCase();
+  const words = lower.replace(/[^\p{L}\p{N}'’-]+/gu, ' ').split(/\s+/).filter(Boolean);
   if (words.length < 4) return false;
-  let hits = 0;
-  for (const w of words) if (SPANISH_MARKERS.has(w)) hits++;
-  return hits >= 2 && hits / words.length >= 0.2;
+  let es = 0, pt = 0;
+  for (const w of words) {
+    if (SPANISH_MARKERS.has(w) && !PORTUGUESE_MARKERS.has(w)) es++;
+    if (PORTUGUESE_MARKERS.has(w) && !SPANISH_MARKERS.has(w)) pt++;
+  }
+  // Morphology only — function words are counted above (JS \b is ASCII-only,
+  // so word-boundary regexes misfire on accented words such as soluções).
+  if (/ção|ções|ão(?!\p{L})|õe|nh[ao]|lh[ao]/u.test(lower)) pt += 2;
+  if (/ción(?!\p{L})|ciones(?!\p{L})|ñ/u.test(lower)) es += 2;
+  return es >= 2 && es > pt;
 }
 
 function isEnglishSegment(segment, stopwords) {
@@ -316,6 +330,7 @@ async function readSitemap(base) {
 
 function localeOf(pathname) {
   const seg = pathname.split('/').filter(Boolean)[0] ?? '';
+  if (seg === 'documents') return 'documents';
   return /^[a-z]{2}$/.test(seg) ? seg : 'en';
 }
 
@@ -491,6 +506,11 @@ try {
   // pages to crawl: html sitemap entries (documents are link-checked instead)
   let pages = sitemapUrls.filter((u) => !/\.(pdf|dwg|zip|xml)$/i.test(u.loc)).map((u) => u.loc);
   if (opts.locales) pages = pages.filter((p) => opts.locales.includes(localeOf(new URL(p).pathname)));
+  if (opts.alsoLocales) {
+    const enPages = pages.filter((p) => localeOf(new URL(p).pathname) === 'en');
+    for (const loc of opts.alsoLocales) for (const p of enPages) pages.push(p.replace(/\/en(\/|$)/, `/${loc}$1`));
+    log(`also crawling ${opts.alsoLocales.join(', ')}: ${enPages.length} pages each (mirrored from the English sitemap entries)`);
+  }
   pages = pages.slice(0, opts.maxPages);
   log(`Crawling ${pages.length} pages …`);
   const results = await mapLimit(pages, opts.concurrency, (p) => analysePage(base, p));
@@ -505,12 +525,12 @@ try {
 
   // (b) English share
   log('== (b) English text segments on non-English pages (unique segments >= 4 words)');
-  log('   (indexable pages only; noindex pages such as privacy/terms are listed separately below)');
+  log('   (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)');
   const nonEn = results.filter((p) => p.status === 200 && p.locale !== 'en');
   const perLocale = {};
   const noindexPages = [];
   for (const p of nonEn) {
-    if (/noindex/i.test(p.robots)) { noindexPages.push(p); continue; }
+    if (/\/(privacy|terms)$/.test(p.path)) { noindexPages.push(p); continue; }
     const l = (perLocale[p.locale] ??= { pages: 0, seg: 0, en: 0, worst: [] });
     l.pages++; l.seg += p.segments; l.en += p.englishSegments;
     l.worst.push(p);
@@ -523,7 +543,7 @@ try {
   }
   const noindexEnglish = noindexPages.filter((p) => p.englishShare >= 0.03).sort((a, b) => b.englishShare - a.englishShare);
   if (noindexEnglish.length) {
-    log('-- noindex pages with English text (not counted above)');
+    log('-- legal pages (privacy/terms, noindex) with English text (not counted above)');
     for (const p of noindexEnglish) log(`  ${(100 * p.englishShare).toFixed(1).padStart(5)}%  ${p.path}  (${p.englishSegments}/${p.segments}, ${p.robots})`);
   }
   log('');

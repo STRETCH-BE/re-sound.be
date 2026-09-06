@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { getTranslations } from 'next-intl/server';
 
 import type { DocumentId, Product } from '@/data/products';
@@ -42,8 +44,15 @@ const ICON: Record<DocumentId, string> = {
  * Only gated files (BIM/DWG) go through the existing lead-gen modal, via
  * the small client component <GatedDownloadButton>.
  */
+/** Open files are only linked when they exist under public/ (see docs/missing-documents.md). */
+function isAvailable(file: string, gated?: boolean): boolean {
+  return Boolean(gated) || existsSync(join(process.cwd(), 'public', file));
+}
+
 export default async function ProductDownloads({ product, tag, title, intro }: ProductDownloadsProps) {
   const t = await getTranslations('productPage.downloads');
+  const documents = product.documents.filter((doc) => isAvailable(doc.file, doc.gated));
+  if (documents.length === 0) return null;
 
   return (
     <section id="downloads" className="ps-section ps-downloads">
@@ -54,7 +63,7 @@ export default async function ProductDownloads({ product, tag, title, intro }: P
       </div>
 
       <ul className="ps-downloads-grid">
-        {product.documents.map((doc) => {
+        {documents.map((doc) => {
           const label = t(LABEL_KEY[doc.id]);
           const ext = doc.file.split('.').pop()?.toUpperCase() ?? 'PDF';
           return (
