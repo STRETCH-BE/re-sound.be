@@ -4040,5 +4040,63 @@
         }
       }
     }
+  },
+  "sampleKit": {
+    "eyebrow": "rWood · rPET · Textile",
+    "title": "Order Your Sample Kit",
+    "subtitle": "Fill in your details and we'll ship a free sample kit within 3–5 business days.",
+    "close": "Close",
+    "sections": {
+      "contact": "Contact details",
+      "shipping": "Shipping address",
+      "samples": "Which samples would you like? *",
+      "samplesHint": "Select all that apply — minimum 1"
+    },
+    "fields": {
+      "firstName": "First name *",
+      "firstNamePlaceholder": "Marie",
+      "lastName": "Last name *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Email *",
+      "emailPlaceholder": "marie@studio.be",
+      "phone": "Phone",
+      "phonePlaceholder": "+32 ...",
+      "company": "Company / Studio",
+      "companyPlaceholder": "Studio Dupont",
+      "address": "Street & number *",
+      "addressPlaceholder": "Antwerpsesteenweg 42",
+      "city": "City *",
+      "cityPlaceholder": "Gent",
+      "country": "Country",
+      "message": "Additional notes",
+      "messagePlaceholder": "E.g. I'm an architect specifying a 200m² office...",
+      "optional": "(optional)"
+    },
+    "countries": {
+      "belgium": "Belgium",
+      "netherlands": "Netherlands",
+      "luxembourg": "Luxembourg",
+      "france": "France",
+      "germany": "Germany",
+      "other": "Other"
+    },
+    "samples": {
+      "interior": "Interior",
+      "solid": "Solid",
+      "divide": "Divide",
+      "rwoodGroove": "rWood – Groove",
+      "rwoodPerf": "rWood – Perf",
+      "rpetGroove": "rPET – Groove",
+      "rpetPanel": "rPET – Panel"
+    },
+    "consent": "I agree that Re-Sound may contact me about this request. <link>Privacy policy</link>",
+    "error": "Something went wrong. Email us at <link>{email}</link>",
+    "submit": "Send Sample Request",
+    "sending": "Sending…",
+    "success": {
+      "title": "Request received!",
+      "body": "We'll prepare your sample kit and ship it to <strong>{city}</strong> within 3–5 business days. Check your inbox for a confirmation.",
+      "close": "Close"
+    }
   }
 }

@@ -61,6 +61,7 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
     'manufacturer',
     'products',
     'rwood',
+    'sampleKit',
     'ticker',
     'why',
   ]);

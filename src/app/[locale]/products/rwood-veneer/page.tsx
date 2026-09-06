@@ -77,6 +77,7 @@ export default async function Page({ params: { locale } }: PageProps) {
     'productPage',
     'rwoodVeneerPage',
     'manufacturer',
+    'sampleKit',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.

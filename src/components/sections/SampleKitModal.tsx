@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { analytics } from '@/lib/analytics';
 
@@ -17,15 +18,31 @@ export interface SampleFormData {
   message: string;
 }
 
+// `id` is the stable identifier sent to the lead API / analytics; the visible
+// label comes from messages (sampleKit.samples.<labelKey>).
 const SAMPLE_OPTIONS = [
-  { id: 'interior',     label: 'Interior',       emoji: '🎨' },
-  { id: 'solid',        label: 'Solid',          emoji: '⬛' },
-  { id: 'divide',       label: 'Divide',         emoji: '📐' },
-  { id: 'rwood-groove', label: 'rWood – Groove', emoji: '🪵' },
-  { id: 'rwood-perf',   label: 'rWood – Perf',   emoji: '🔵' },
-  { id: 'rpet-groove',  label: 'rPET – Groove',  emoji: '♻️' },
-  { id: 'rpet-panel',   label: 'rPET – Panel',   emoji: '🟦' },
-];
+  { id: 'interior',     labelKey: 'interior',    emoji: '🎨' },
+  { id: 'solid',        labelKey: 'solid',       emoji: '⬛' },
+  { id: 'divide',       labelKey: 'divide',      emoji: '📐' },
+  { id: 'rwood-groove', labelKey: 'rwoodGroove', emoji: '🪵' },
+  { id: 'rwood-perf',   labelKey: 'rwoodPerf',   emoji: '🔵' },
+  { id: 'rpet-groove',  labelKey: 'rpetGroove',  emoji: '♻️' },
+  { id: 'rpet-panel',   labelKey: 'rpetPanel',   emoji: '🟦' },
+] as const;
+
+// `value` is the English name stored in form state and sent in the lead's
+// shipping address (unchanged from before); the visible label comes from
+// messages (sampleKit.countries.<labelKey>).
+const COUNTRY_OPTIONS = [
+  { value: 'Belgium',     labelKey: 'belgium' },
+  { value: 'Netherlands', labelKey: 'netherlands' },
+  { value: 'Luxembourg',  labelKey: 'luxembourg' },
+  { value: 'France',      labelKey: 'france' },
+  { value: 'Germany',     labelKey: 'germany' },
+  { value: 'Other',       labelKey: 'other' },
+] as const;
+
+const LEAD_EMAIL = 'leads@stretchgroup.be';
 
 const EMPTY: SampleFormData = {
   firstName: '', lastName: '', email: '', phone: '',
@@ -45,6 +62,7 @@ interface Props {
 }
 
 export default function SampleKitModal({ open, onClose, source = 'Sample Kit Request — Homepage' }: Props) {
+  const t = useTranslations('sampleKit');
   const [form, setForm] = useState<SampleFormData>(EMPTY);
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -199,18 +217,18 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
         }}>
           <div>
             <span style={{ display: 'block', fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#8b6235', marginBottom: '0.35rem' }}>
-              🪵 rWood · rPET · Textile
+              🪵 {t('eyebrow')}
             </span>
             <h2 id="samplekit-modal-title" style={{ fontFamily: 'var(--font-heading)', fontSize: '1.45rem', fontWeight: 800, letterSpacing: '-0.5px', color: 'var(--charcoal)', margin: '0 0 0.3rem' }}>
-              Order Your Sample Kit
+              {t('title')}
             </h2>
             <p style={{ fontSize: '0.82rem', color: '#888', lineHeight: 1.5, margin: 0 }}>
-              Fill in your details and we&apos;ll ship a free sample kit within 3&ndash;5 business days.
+              {t('subtitle')}
             </p>
           </div>
           <button
             onClick={handleClose}
-            aria-label="Close"
+            aria-label={t('close')}
             style={{
               flexShrink: 0, width: '2.2rem', height: '2.2rem', borderRadius: '50%',
               background: '#f4f1ec', border: 'none', cursor: 'pointer',
@@ -228,9 +246,12 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
         {status === 'success' ? (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '3rem 2.5rem', gap: '1rem' }}>
             <div style={{ fontSize: '3rem' }}>✅</div>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.4rem', fontWeight: 800, color: 'var(--charcoal)', margin: 0 }}>Request received!</h3>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.4rem', fontWeight: 800, color: 'var(--charcoal)', margin: 0 }}>{t('success.title')}</h3>
             <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.65, maxWidth: '22rem', margin: 0 }}>
-              We&apos;ll prepare your sample kit and ship it to <strong>{form.city}</strong> within 3&ndash;5 business days. Check your inbox for a confirmation.
+              {t.rich('success.body', {
+                city: form.city,
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
             <button
               onClick={handleClose}
@@ -241,41 +262,42 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
                 fontFamily: 'var(--font-body)',
               }}
             >
-              Close
+              {t('success.close')}
             </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} noValidate style={{ padding: '1.5rem 2rem 2.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }}>
 
             {/* Contact */}
-            <Section title="Contact details">
+            <Section title={t('sections.contact')}>
               <Row2>
-                <Field label="First name *" id="samplekit-firstname"><input type="text" required placeholder="Marie" value={form.firstName} onChange={(e) => set('firstName', e.target.value)} /></Field>
-                <Field label="Last name *" id="samplekit-lastname"><input type="text" required placeholder="Dupont" value={form.lastName} onChange={(e) => set('lastName', e.target.value)} /></Field>
+                <Field label={t('fields.firstName')} id="samplekit-firstname"><input type="text" required placeholder={t('fields.firstNamePlaceholder')} value={form.firstName} onChange={(e) => set('firstName', e.target.value)} /></Field>
+                <Field label={t('fields.lastName')} id="samplekit-lastname"><input type="text" required placeholder={t('fields.lastNamePlaceholder')} value={form.lastName} onChange={(e) => set('lastName', e.target.value)} /></Field>
               </Row2>
               <Row2>
-                <Field label="Email *" id="samplekit-email"><input type="email" required placeholder="marie@studio.be" value={form.email} onChange={(e) => set('email', e.target.value)} /></Field>
-                <Field label="Phone" id="samplekit-phone"><input type="tel" placeholder="+32 ..." value={form.phone} onChange={(e) => set('phone', e.target.value)} /></Field>
+                <Field label={t('fields.email')} id="samplekit-email"><input type="email" required placeholder={t('fields.emailPlaceholder')} value={form.email} onChange={(e) => set('email', e.target.value)} /></Field>
+                <Field label={t('fields.phone')} id="samplekit-phone"><input type="tel" placeholder={t('fields.phonePlaceholder')} value={form.phone} onChange={(e) => set('phone', e.target.value)} /></Field>
               </Row2>
-              <Field label="Company / Studio" id="samplekit-company"><input type="text" placeholder="Studio Dupont" value={form.company} onChange={(e) => set('company', e.target.value)} /></Field>
+              <Field label={t('fields.company')} id="samplekit-company"><input type="text" placeholder={t('fields.companyPlaceholder')} value={form.company} onChange={(e) => set('company', e.target.value)} /></Field>
             </Section>
 
             {/* Shipping */}
-            <Section title="Shipping address">
-              <Field label="Street & number *" id="samplekit-address"><input type="text" required placeholder="Antwerpsesteenweg 42" value={form.address} onChange={(e) => set('address', e.target.value)} /></Field>
+            <Section title={t('sections.shipping')}>
+              <Field label={t('fields.address')} id="samplekit-address"><input type="text" required placeholder={t('fields.addressPlaceholder')} value={form.address} onChange={(e) => set('address', e.target.value)} /></Field>
               <Row2>
-                <Field label="City *" id="samplekit-city"><input type="text" required placeholder="Gent" value={form.city} onChange={(e) => set('city', e.target.value)} /></Field>
-                <Field label="Country" id="samplekit-country">
+                <Field label={t('fields.city')} id="samplekit-city"><input type="text" required placeholder={t('fields.cityPlaceholder')} value={form.city} onChange={(e) => set('city', e.target.value)} /></Field>
+                <Field label={t('fields.country')} id="samplekit-country">
                   <select value={form.country} onChange={(e) => set('country', e.target.value)}>
-                    <option>Belgium</option><option>Netherlands</option><option>Luxembourg</option>
-                    <option>France</option><option>Germany</option><option>Other</option>
+                    {COUNTRY_OPTIONS.map((c) => (
+                      <option key={c.value} value={c.value}>{t(`countries.${c.labelKey}`)}</option>
+                    ))}
                   </select>
                 </Field>
               </Row2>
             </Section>
 
             {/* Sample selection */}
-            <Section title="Which samples would you like? *" hint="Select all that apply — minimum 1">
+            <Section title={t('sections.samples')} hint={t('sections.samplesHint')}>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem' }}>
                 {SAMPLE_OPTIONS.map((s) => {
                   const active = form.samples.includes(s.id);
@@ -297,7 +319,7 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
                       }}
                     >
                       <span>{s.emoji}</span>
-                      <span>{s.label}</span>
+                      <span>{t(`samples.${s.labelKey}`)}</span>
                       {active && (
                         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><path d="M20 6L9 17l-5-5" /></svg>
                       )}
@@ -308,8 +330,8 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
             </Section>
 
             {/* Notes */}
-            <Field label="Additional notes" id="samplekit-message" optional>
-              <textarea rows={3} placeholder="E.g. I'm an architect specifying a 200m² office..." value={form.message} onChange={(e) => set('message', e.target.value)} />
+            <Field label={t('fields.message')} id="samplekit-message" optionalLabel={t('fields.optional')}>
+              <textarea rows={3} placeholder={t('fields.messagePlaceholder')} value={form.message} onChange={(e) => set('message', e.target.value)} />
             </Field>
 
             {/* Consent */}
@@ -317,16 +339,23 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
               <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)}
                 style={{ width: '1rem', height: '1rem', marginTop: '0.15rem', flexShrink: 0, accentColor: '#8b6235' }} />
               <span style={{ fontSize: '0.75rem', color: '#888', lineHeight: 1.5 }}>
-                I agree that Re-Sound may contact me about this request.{' '}
-                <Link href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#8b6235', textDecoration: 'underline' }}>Privacy policy</Link>
+                {t.rich('consent', {
+                  link: (chunks) => (
+                    <Link href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#8b6235', textDecoration: 'underline' }}>{chunks}</Link>
+                  ),
+                })}
               </span>
             </label>
 
             {/* Error */}
             {status === 'error' && (
               <p style={{ fontSize: '0.8rem', color: '#c0392b', background: '#fdf0ee', border: '1px solid #f5c6c0', borderRadius: 8, padding: '0.7rem 1rem', margin: 0 }}>
-                Something went wrong. Email us at{' '}
-                <a href="mailto:leads@stretchgroup.be" style={{ color: '#c0392b', fontWeight: 600 }}>leads@stretchgroup.be</a>
+                {t.rich('error', {
+                  email: LEAD_EMAIL,
+                  link: (chunks) => (
+                    <a href={`mailto:${LEAD_EMAIL}`} style={{ color: '#c0392b', fontWeight: 600 }}>{chunks}</a>
+                  ),
+                })}
               </p>
             )}
 
@@ -344,8 +373,8 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
                 transition: 'background 0.2s, transform 0.2s',
               }}
             >
-              {status === 'sending' ? 'Sending…' : (
-                <>Send Sample Request <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14m-7-7l7 7-7 7" /></svg></>
+              {status === 'sending' ? t('sending') : (
+                <>{t('submit')} <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14m-7-7l7 7-7 7" /></svg></>
               )}
             </button>
           </form>
@@ -362,6 +391,8 @@ export default function SampleKitModal({ open, onClose, source = 'Sample Kit Req
 }
 
 // ─── tiny layout helpers (no styled-jsx, just inline) ───────────────────────
+// These receive already-translated strings as props so no hook is called
+// outside the main component.
 
 function Section({ title, hint, children }: { title: string; hint?: string; children: React.ReactNode }) {
   return (
@@ -382,7 +413,8 @@ function Row2({ children }: { children: React.ReactNode }) {
   return <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>{children}</div>;
 }
 
-function Field({ label, id, optional, children }: { label: string; id: string; optional?: boolean; children: React.ReactNode }) {
+/** `optionalLabel` — translated "(optional)" suffix; rendered after the label when given. */
+function Field({ label, id, optionalLabel, children }: { label: string; id: string; optionalLabel?: string; children: React.ReactNode }) {
   const inputStyle: React.CSSProperties = {
     border: '1.5px solid #e4e0d8', borderRadius: 8, padding: '0.58rem 0.85rem',
     fontSize: '0.85rem', fontFamily: 'var(--font-body)', color: 'var(--charcoal)',
@@ -392,7 +424,7 @@ function Field({ label, id, optional, children }: { label: string; id: string; o
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.28rem' }}>
       <label htmlFor={id} style={{ fontSize: '0.72rem', fontWeight: 700, color: '#555' }}>
-        {label}{optional && <span style={{ fontWeight: 400, color: '#aaa' }}> (optional)</span>}
+        {label}{optionalLabel && <span style={{ fontWeight: 400, color: '#aaa' }}> {optionalLabel}</span>}
       </label>
       {/* Clone child with merged style + the id the label points at */}
       {Array.isArray(children)
