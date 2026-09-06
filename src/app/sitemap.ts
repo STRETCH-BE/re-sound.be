@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { MetadataRoute } from 'next';
 
+import { BOOTH_GUIDE, GUIDE_LOCALES, guidePath, isGuideLocale } from '@/data/guides';
 import { HUB_IDS, HUBS, hubPath } from '@/data/hubs';
 import { PRODUCTS, PRODUCT_SLUGS } from '@/data/products';
 import { getContentPosts } from '@/lib/content/blog';
@@ -133,6 +134,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'weekly',
         priority: 0.9,
         alternates: alternatesFor(base, (loc) => hubPath(hub, loc)),
+      });
+    }
+
+    // Booth price guide: exists in GUIDE_LOCALES only, so its hreflang set is
+    // restricted to those locales (src/data/guides.ts).
+    if (isGuideLocale(locale)) {
+      entries.push({
+        url: `${base}/${locale}${guidePath(locale)}`,
+        lastModified: lastModified(
+          ['src/components/guides/BoothPriceGuide.tsx', 'src/app/[locale]/guides/phone-booth-prices/page.tsx', 'content/booth-guide.json'],
+          BOOTH_GUIDE.updatedAt
+        ),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(GUIDE_LOCALES.map((loc) => [loc, `${base}/${loc}${guidePath(loc)}`])),
+            'x-default': `${base}/${defaultLocale}${guidePath(defaultLocale)}`,
+          },
+        },
+      });
+    }
+
+    // Product pages
+    for (const slug of PRODUCT_SLUGS) {
+      const product = PRODUCTS[slug];
+      entries.push({
+        url: `${base}/${locale}/products/${slug}`,
+        lastModified: lastModified(
+          [`src/app/[locale]/products/${slug}/page.tsx`, `src/data/specs/${slug}.ts`, 'src/data/products.ts'],
+          product.updatedAt
+        ),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: alternatesFor(base, () => `/products/${slug}`),
       });
     }
 

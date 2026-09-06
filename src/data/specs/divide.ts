@@ -21,7 +21,7 @@ const specs: SpecTableDef = [
   {
     title: key('dividePage.specs.acousticsTitle'),
     rows: [
-      { label: key('productPage.specs.absorptionCoeff'), value: '0.85' },
+      { label: key('productPage.specs.absorptionCoeff'), value: '1.0' }, // Products_Data: αw 1.0, class A
       { label: key('productPage.specs.absorptionClass'), value: key('productPage.acoustics.classA') },
       { label: key('productData.specValues.dualSided'), value: key('productData.specValues.yes') },
     ],

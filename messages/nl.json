@@ -540,7 +540,7 @@
       "phone": "Telefoon",
       "address": "Adres",
       "hours": "Openingstijden",
-      "hoursValue": "Maandag - Vrijdag: 9:00 - 17:00"
+      "hoursValue": "Maandag - Vrijdag: 8:00 - 16:30"
     },
     "faq": {
       "title": "Veelgestelde Vragen",
@@ -724,7 +724,8 @@
     "privacy": "Privacybeleid",
     "terms": "Algemene Voorwaarden",
     "countryBelgium": "België",
-    "reviewUs": "Beoordeel ons op Google"
+    "reviewUs": "Beoordeel ons op Google",
+    "priceGuide": "Prijzen belcabines"
   },
   "cookies": {
     "title": "Cookievoorkeuren",
@@ -950,7 +951,8 @@
     "related": {
       "tag": "OOK IN DIT GAMMA",
       "title": "Andere modellen in dit gamma",
-      "rangeLink": "Bekijk het volledige {range}-gamma"
+      "rangeLink": "Bekijk het volledige {range}-gamma",
+      "priceGuide": "Vergelijk cabineprijzen en ISO-klassen in de prijsgids"
     },
     "a11y": {
       "selectColour": "Kleur {name} selecteren",
@@ -3777,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, België",
       "hoursLabel": "Openingsuren",
-      "hoursValue": "Ma–Vr, 09:00–17:00 · op afspraak",
+      "hoursValue": "Ma–Vr, 08:00–16:30 · op afspraak",
       "contactLabel": "Contact",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3832,13 +3834,25 @@
       "emailLabel": "E-mail",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Uren",
-      "hoursValue": "Ma–Vr, 09:00–17:00 CET"
+      "hoursValue": "Ma–Vr, 08:00–16:30 CET"
     },
     "cta": {
       "title": "Wil je het komen bekijken?",
       "subtitle": "Boek een bezoek aan HQ, vraag samples aan of regel een demonstratie ter plaatse — wat het beste past.",
       "primary": "Boek een bezoek",
       "secondary": "Vraag samples aan"
+    },
+    "office": {
+      "tag": "Productiekantoor",
+      "title": "Re-Sound Polen — Częstochowa",
+      "description": "Onze rWood- en rPET-panelen en alle cabines worden gebouwd in onze eigen fabriek in Częstochowa. In het productiekantoor bent u op afspraak welkom voor projectbezoeken en fabrieksrondleidingen.",
+      "addressLabel": "Adres",
+      "country": "Polen",
+      "hoursLabel": "Openingsuren",
+      "hoursValue": "Ma–vr, 08:00–16:30 · op afspraak",
+      "languagesLabel": "Talen",
+      "languagesValue": "Nederlands, Pools, Oekraïens, Russisch, Engels",
+      "contactLabel": "Contact"
     }
   },
   "manufacturer": {
@@ -4002,7 +4016,14 @@
       "ctaText": "Bestel een gratis stalenset of stuur ons uw tekeningen voor een offerte — ons team antwoordt binnen één werkdag.",
       "ctaSampleKit": "Bestel een stalenset",
       "ctaQuote": "Vraag een offerte aan",
-      "breadcrumbLabel": "Kruimelpad"
+      "breadcrumbLabel": "Kruimelpad",
+      "priceGuideLink": "Alle cabineprijzen, ISO-klassen en installatieopties in de prijsgids",
+      "units": {
+        "m2": "per m²",
+        "booth": "per cabine",
+        "set": "per set",
+        "piece": "per stuk"
+      }
     },
     "rpet": {
       "title": "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound",
@@ -4083,7 +4104,7 @@
     "booths": {
       "title": "Akoestische belcabines & telefooncellen voor kantoor | Re-Sound",
       "description": "Belcabines en vergaderpods: Solo Flex (1 pers.), Duo (2 pers.), Modular XL (6–10). ISO 23351-1 spraakreductie, stille ventilatie, 230 V, USB-C.",
-      "h1": "Belcabines en vergaderpods voor kantoor, gebouwd in België",
+      "h1": "Belcabines en vergaderpods voor kantoor, uit eigen productie",
       "breadcrumb": "Cabines",
       "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoorvloer; een vergaderpod doet hetzelfde voor een team. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen). Het cabinegamma telt drie formaten. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische telefooncel voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Alle cabines hebben 5 jaar structurele garantie en worden in de hele EU geleverd, op verzoek inclusief installatie. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
       "whyCertsDesc": "5 jaar structurele garantie en 2 jaar garantie op de elektronica voor elke cabine; spraakniveaureductie opgegeven volgens ISO 23351-1.",
@@ -4183,5 +4204,79 @@
     "googleReviews": "{count, plural, one {# Google-review} other {# Google-reviews}}",
     "viaGoogle": "via Google",
     "reviewUs": "Beoordeel ons op Google"
+  },
+  "boothGuide": {
+    "title": "Belcabine kantoor: prijzen en ISO-klassen 2026 | Re-Sound",
+    "description": "Wat kost een belcabine? Prijzen van Solo Flex, Duo en Modular XL, ISO 23351-1 klassen, ventilatie, levertijd en plaatsing. Fabrikant uit België.",
+    "h1": "Belcabines voor kantoor: prijzen, klassen en keuze",
+    "intro": "Een Re-Sound belcabine kost vanaf € 2.740 excl. btw zonder installatie (Solo Flex) en een Modular XL vergaderpod vanaf € 15.000. Hieronder vindt u elke prijs die wij publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken. Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
+    "breadcrumb": "Prijzen belcabines",
+    "priceTag": "Prijzen 2026",
+    "priceTitle": "Prijzen per model (excl. btw)",
+    "priceNote": "Prijzen zijn excl. btw en, buiten België, excl. transport. Installatie door ons eigen team is optioneel; Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd.",
+    "col": {
+      "model": "Model",
+      "capacity": "Capaciteit",
+      "footprint": "Voetafdruk",
+      "dimensions": "Buitenafmetingen (B×D×H)",
+      "priceExcl": "Vanaf, zonder installatie",
+      "priceIncl": "Vanaf, met installatie",
+      "extra": "Extra element van 90 cm",
+      "iso": "ISO 23351-1",
+      "ventilation": "Ventilatie",
+      "power": "Stroom",
+      "weight": "Gewicht",
+      "assembly": "Montage",
+      "leadTime": "Levertijd",
+      "warranty": "Garantie"
+    },
+    "onRequest": "Op aanvraag",
+    "persons": "{count, plural, one {# persoon} other {# personen}}",
+    "personsRange": "6–10 personen (grootste tot nu toe gebouwd: 20)",
+    "classLabel": "Klasse {class}",
+    "weeks": "{weeks} weken",
+    "warrantyValue": "5 jaar constructie · 2 jaar elektronica",
+    "includedTag": "Wat u krijgt",
+    "includedTitle": "Wat in de prijs inbegrepen is",
+    "includedText": "Elke cabine wordt geleverd als een complete, geventileerde eenheid: behuizing met deur, dimbare ledverlichting, stroom aan het bureau (230 V en USB-C op Solo Flex) en, op Solo Flex, het handmatig verstelbare zit-stabureau. De ventilatie werkt met stille EC-ventilatoren; Solo Flex verplaatst 4,6 m³/min en de PIR-sensor schakelt de ventilatoren in zodra iemand binnen is.",
+    "installationTag": "Installatie",
+    "installationTitle": "Installatie door Re-Sound of zelfmontage",
+    "installationText": "Onze installateurs plaatsen een belcabine in ongeveer 60 minuten, een vergaderpod in ongeveer 2 uur en een Modular XL in 2 tot 6 uur. Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd: de cabine is een demontabele flat-packconstructie, zodat ze later kan worden gedemonteerd en op een andere verdieping opnieuw kan worden opgebouwd.",
+    "testingTag": "Eerst uitproberen",
+    "testingTitle": "Test een cabine in onze showroom",
+    "testingText": "U kunt in elk model plaatsnemen in onze showroom in Beveren-Waas (ma–vr 08:00–16:30, op afspraak) en het verschil zelf horen voordat u bestelt.",
+    "classesTag": "Akoestiek",
+    "classesTitle": "Wat de ISO 23351-1-klassen betekenen",
+    "classesText": "ISO 23351-1 meet hoeveel een gesloten cabine het spraakniveau verlaagt dat naar buiten komt. Solo Flex vermindert spraak met ongeveer 24 dB(A) en Modular XL met 25,9 dB(A): beide zijn klasse C. Zo storen normale gesprekken en videovergaderingen de werkvloer niet; de klassen B, A en A+ verminderen spraak nog verder.",
+    "classCol": {
+      "class": "Klasse",
+      "threshold": "Spraakniveaureductie",
+      "models": "Re-Sound modellen"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "minstens {db} dB",
+    "endOfLifeTitle": "Einde levensduur",
+    "endOfLifeText": "Een cabine kan worden doorverkocht of gedemonteerd voor recyclage: elk materiaal is recycleerbaar.",
+    "faqTag": "FAQ",
+    "faqTitle": "Veelgestelde vragen over cabineprijzen",
+    "ctaTag": "Volgende stap",
+    "ctaTitle": "Vraag een offerte aan of bezoek de showroom",
+    "ctaText": "Stuur ons uw plattegrond en het aantal cabines; wij antwoorden met een offerte inclusief levering en installatie.",
+    "ctaQuote": "Offerte aanvragen",
+    "ctaShowroom": "Plan een showroombezoek",
+    "tableCaption": "Cabineprijzen en specificaties per model",
+    "assembly": {
+      "solo-flex": "Ongeveer 60 minuten door onze installateurs, of door twee personen in minder dan 3 uur",
+      "duo": "Ongeveer 2 uur door onze installateurs",
+      "modular-xl": "2 tot 6 uur door onze installateurs"
+    },
+    "classesNote": "Drempelwaarden: de minimale spraakniveaureductie per klasse. Duo is nog niet gemeten.",
+    "endOfLifeTag": "Circulair"
   }
 }

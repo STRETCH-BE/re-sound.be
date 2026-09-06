@@ -540,7 +540,7 @@
       "phone": "Teléfono",
       "address": "Endereço",
       "hours": "Horário de Funcionamento",
-      "hoursValue": "Segunda - Sexta: 9:00 - 17:00"
+      "hoursValue": "Segunda - Sexta: 8:00 - 16:30"
     },
     "faq": {
       "title": "Perguntas Frequentes",
@@ -724,7 +724,8 @@
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "countryBelgium": "Bélgica",
-    "reviewUs": "Avalie-nos no Google"
+    "reviewUs": "Avalie-nos no Google",
+    "priceGuide": "Preços de cabines telefónicas"
   },
   "cookies": {
     "title": "Preferências de cookies",
@@ -950,7 +951,8 @@
     "related": {
       "tag": "TAMBÉM NA GAMA",
       "title": "Outros modelos da gama",
-      "rangeLink": "Ver toda a gama {range}"
+      "rangeLink": "Ver toda a gama {range}",
+      "priceGuide": "Compare os preços das cabines e as classes ISO no guia de preços"
     },
     "a11y": {
       "selectColour": "Selecionar a cor {name}",
@@ -3777,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Bélgica",
       "hoursLabel": "Horário",
-      "hoursValue": "Seg–Sex, 09:00–17:00 · por marcação",
+      "hoursValue": "Seg–Sex, 08:00–16:30 · por marcação",
       "contactLabel": "Contacto",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3832,13 +3834,25 @@
       "emailLabel": "E-mail",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Horário",
-      "hoursValue": "Seg–Sex, 09:00–17:00 CET"
+      "hoursValue": "Seg–Sex, 08:00–16:30 CET"
     },
     "cta": {
       "title": "Quer vir ver?",
       "subtitle": "Marque uma visita à sede, peça amostras ou organize uma demonstração no local — o que melhor lhe servir.",
       "primary": "Marcar visita",
       "secondary": "Pedir amostras"
+    },
+    "office": {
+      "tag": "Escritório de produção",
+      "title": "Re-Sound Polónia — Częstochowa",
+      "description": "Os nossos painéis rWood e rPET e todas as cabines são fabricados na nossa própria fábrica em Częstochowa. O escritório de produção recebe visitas de projeto e visitas à fábrica mediante marcação.",
+      "addressLabel": "Morada",
+      "country": "Polónia",
+      "hoursLabel": "Horário de funcionamento",
+      "hoursValue": "Seg–Sex, 08:00–16:30 · mediante marcação",
+      "languagesLabel": "Idiomas",
+      "languagesValue": "Neerlandês, polaco, ucraniano, russo, inglês",
+      "contactLabel": "Contacto"
     }
   },
   "manufacturer": {
@@ -4002,7 +4016,14 @@
       "ctaText": "Encomende um kit de amostras gratuito ou envie-nos os seus desenhos para orçamento — a nossa equipa responde no prazo de um dia útil.",
       "ctaSampleKit": "Encomendar um kit de amostras",
       "ctaQuote": "Pedir orçamento",
-      "breadcrumbLabel": "Navegação estrutural"
+      "breadcrumbLabel": "Navegação estrutural",
+      "priceGuideLink": "Todos os preços das cabines, classes ISO e opções de instalação no guia de preços",
+      "units": {
+        "m2": "por m²",
+        "booth": "por cabine",
+        "set": "por conjunto",
+        "piece": "por unidade"
+      }
     },
     "rpet": {
       "title": "Painéis Acústicos em PET Reciclado — Fabricante | Re-Sound",
@@ -4083,7 +4104,7 @@
     "booths": {
       "title": "Cabines Acústicas e Pods — Solo, Duo, Modular XL | Re-Sound",
       "description": "Cabines telefónicas de escritório e pods de reuniões: Solo Flex (1 p.), Duo (2 p.), Modular XL (6–10). Redução da fala ISO 23351-1, ventilação silenciosa.",
-      "h1": "Cabines telefónicas de escritório e pods de reuniões, fabricados na Bélgica",
+      "h1": "Cabines telefónicas e pods de reuniões para escritório, de fabrico próprio",
       "breadcrumb": "Cabines",
       "intro": "Uma cabine telefónica de escritório proporciona a uma pessoa um espaço silencioso e ventilado para chamadas e videoconferências num piso em open space; um pod de reuniões faz o mesmo para uma equipa. A Re-Sound é uma marca do Stretch Group. Fabricamos nas nossas fábricas próprias em Beveren-Waas (Bélgica) e Częstochowa (Polónia). A gama de cabines tem três tamanhos. A Solo Flex é a cabine telefónica de escritório individual: 1 m² de área ocupada, secretária de altura regulável, alimentação 230 V e USB-C, ventiladores EC silenciosos e uma redução do nível da fala de 24 dB(A) medida segundo a ISO 23351-1. A Duo é a cabine acústica para duas pessoas, com duas configurações — Flex para uma conversa a dois lugares, Work para uma pessoa com secretária de largura total. A Modular XL é o pod de reuniões acústico para seis a dez pessoas: a unidade base amplia-se em segmentos de 90 cm e atinge 25,9 dB(A) de redução do nível da fala. Todas as cabines incluem uma garantia estrutural de 5 anos e são entregues em toda a UE, com instalação incluída mediante pedido. Compare as cabines telefónicas de escritório abaixo e, em seguida, abra a página de um modelo para consultar os acessórios e as transferências.",
       "whyCertsDesc": "Garantia estrutural de 5 anos e garantia de 2 anos para a eletrónica em todas as cabines; redução do nível da fala indicada segundo a ISO 23351-1.",
@@ -4183,5 +4204,79 @@
     "googleReviews": "{count, plural, one {# avaliação Google} other {# avaliações Google}}",
     "viaGoogle": "via Google",
     "reviewUs": "Avalie-nos no Google"
+  },
+  "boothGuide": {
+    "title": "Cabine telefónica de escritório: preços e classes 2026 | Re-Sound",
+    "description": "Quanto custa uma cabine telefónica de escritório? Solo Flex desde 2.740 € sem IVA, Modular XL desde 15.000 €. Classes ISO 23351-1, instalação e garantia.",
+    "h1": "Cabines telefónicas de escritório: preços, classes e como escolher",
+    "intro": "Uma cabine telefónica de escritório Re-Sound custa desde 2.740 € sem IVA, sem instalação (Solo Flex), e um pod de reuniões Modular XL desde 15.000 €. Abaixo encontra todos os preços que publicamos, o que está incluído, as classes de nível de fala ISO 23351-1 indicadas com honestidade e como funcionam a instalação, os testes e a garantia. A Re-Sound é uma marca do Stretch Group. Fabricamos nas nossas próprias fábricas em Beveren-Waas (Bélgica) e Częstochowa (Polónia).",
+    "breadcrumb": "Preços de cabines telefónicas",
+    "priceTag": "Preços 2026",
+    "priceTitle": "Preços por modelo (sem IVA)",
+    "priceNote": "Os preços não incluem IVA nem, fora da Bélgica, o transporte. A instalação pela nossa própria equipa é opcional; a Solo Flex também pode ser montada por duas pessoas em menos de três horas.",
+    "col": {
+      "model": "Modelo",
+      "capacity": "Capacidade",
+      "footprint": "Área ocupada",
+      "dimensions": "Dimensões exteriores (L×P×A)",
+      "priceExcl": "Desde, sem instalação",
+      "priceIncl": "Desde, com instalação",
+      "extra": "Elemento extra de 90 cm",
+      "iso": "ISO 23351-1",
+      "ventilation": "Ventilação",
+      "power": "Alimentação elétrica",
+      "weight": "Peso",
+      "assembly": "Montagem",
+      "leadTime": "Prazo de entrega",
+      "warranty": "Garantia"
+    },
+    "onRequest": "Sob consulta",
+    "persons": "{count, plural, one {# pessoa} other {# pessoas}}",
+    "personsRange": "6–10 pessoas (maior construída até à data: 20)",
+    "classLabel": "Classe {class}",
+    "weeks": "{weeks} semanas",
+    "warrantyValue": "5 anos estrutura · 2 anos eletrónica",
+    "includedTag": "O que recebe",
+    "includedTitle": "O que está incluído no preço",
+    "includedText": "Todas as cabines são entregues como uma unidade completa e ventilada: estrutura com porta, iluminação LED regulável, alimentação elétrica na secretária (230 V e USB-C na Solo Flex) e, na Solo Flex, a secretária manual de altura regulável. A ventilação utiliza ventiladores EC silenciosos; a Solo Flex movimenta 4,6 m³/min e o seu sensor PIR liga os ventiladores quando alguém está no interior.",
+    "installationTag": "Instalação",
+    "installationTitle": "Instalação pela Re-Sound ou montagem própria",
+    "installationText": "Os nossos instaladores colocam uma cabine para chamadas em cerca de 60 minutos, um pod de reuniões em cerca de 2 horas e uma Modular XL em 2 a 6 horas. A Solo Flex também pode ser montada por duas pessoas em menos de três horas: a cabine é uma construção desmontável, pelo que pode ser desmontada e voltar a ser montada noutro piso mais tarde.",
+    "testingTag": "Experimente primeiro",
+    "testingTitle": "Teste uma cabine no nosso showroom",
+    "testingText": "Pode sentar-se no interior de todos os modelos no nosso showroom em Beveren-Waas (Seg–Sex 08:00–16:30, mediante marcação) e ouvir a diferença por si próprio antes de encomendar.",
+    "classesTag": "Acústica",
+    "classesTitle": "O que significam as classes ISO 23351-1",
+    "classesText": "A ISO 23351-1 mede quanto uma cabine fechada reduz o nível da fala que sai dela. A Solo Flex reduz a fala em cerca de 24 dB(A) e a Modular XL em 25,9 dB(A): ambas são de Classe C. Isso evita que chamadas normais e videoconferências perturbem o espaço de trabalho; as classes B, A e A+ reduzem ainda mais a fala.",
+    "classCol": {
+      "class": "Classe",
+      "threshold": "Redução do nível de fala",
+      "models": "Modelos Re-Sound"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "pelo menos {db} dB",
+    "endOfLifeTitle": "Fim de vida",
+    "endOfLifeText": "Uma cabine pode ser revendida ou desmontada para reciclagem: todos os materiais são recicláveis.",
+    "faqTag": "FAQ",
+    "faqTitle": "Perguntas frequentes sobre os preços das cabines",
+    "ctaTag": "Próximo passo",
+    "ctaTitle": "Peça um orçamento ou visite o showroom",
+    "ctaText": "Envie-nos a sua planta e o número de cabines; respondemos com um orçamento que inclui entrega e instalação.",
+    "ctaQuote": "Pedir orçamento",
+    "ctaShowroom": "Marcar uma visita ao showroom",
+    "tableCaption": "Preços e especificações das cabines por modelo",
+    "assembly": {
+      "solo-flex": "Cerca de 60 minutos pelos nossos instaladores, ou duas pessoas em menos de 3 horas",
+      "duo": "Cerca de 2 horas pelos nossos instaladores",
+      "modular-xl": "2 a 6 horas pelos nossos instaladores"
+    },
+    "classesNote": "Limiares: a redução mínima do nível de fala por classe. A Duo ainda não foi medida.",
+    "endOfLifeTag": "Circular"
   }
 }

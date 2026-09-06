@@ -540,7 +540,7 @@
       "phone": "Telefon",
       "address": "Adress",
       "hours": "Öppettider",
-      "hoursValue": "Måndag - Fredag: 9:00 - 17:00"
+      "hoursValue": "Måndag - Fredag: 8:00 - 16:30"
     },
     "faq": {
       "title": "Vanliga frågor",
@@ -724,7 +724,8 @@
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
     "countryBelgium": "Belgien",
-    "reviewUs": "Recensera oss på Google"
+    "reviewUs": "Recensera oss på Google",
+    "priceGuide": "Priser på telefonhytter"
   },
   "cookies": {
     "title": "Cookieinställningar",
@@ -950,7 +951,8 @@
     "related": {
       "tag": "OCKSÅ I SERIEN",
       "title": "Andra modeller i serien",
-      "rangeLink": "Se hela {range}-serien"
+      "rangeLink": "Se hela {range}-serien",
+      "priceGuide": "Jämför hyttpriser och ISO-klasser i prisguiden"
     },
     "a11y": {
       "selectColour": "Välj färgen {name}",
@@ -3777,7 +3779,7 @@
       "addressLine2": "Gentseweg 309 A3",
       "addressLine3": "9120 Beveren-Waas, Belgien",
       "hoursLabel": "Öppettider",
-      "hoursValue": "Mån–fre, 09:00–17:00 · enligt överenskommelse",
+      "hoursValue": "Mån–fre, 08:00–16:30 · enligt överenskommelse",
       "contactLabel": "Kontakt",
       "phoneValue": "+32 3 284 68 18",
       "emailValue": "info@re-sound.be",
@@ -3832,13 +3834,25 @@
       "emailLabel": "E-post",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Tider",
-      "hoursValue": "Mån–fre, 09:00–17:00 CET"
+      "hoursValue": "Mån–fre, 08:00–16:30 CET"
     },
     "cta": {
       "title": "Vill du komma och se det?",
       "subtitle": "Boka ett besök på HQ, beställ prover eller ordna en demonstration på plats — det som passar bäst.",
       "primary": "Boka ett besök",
       "secondary": "Beställ prover"
+    },
+    "office": {
+      "tag": "PRODUKTIONSKONTOR",
+      "title": "Re-Sound Polen – Częstochowa",
+      "description": "Våra rWood- och rPET-paneler och alla hytter tillverkas i vår egen fabrik i Częstochowa. Produktionskontoret tar emot projektbesök och fabriksvisningar efter överenskommelse.",
+      "addressLabel": "Adress",
+      "country": "Polen",
+      "hoursLabel": "Öppettider",
+      "hoursValue": "Mån–fre, 08:00–16:30 · efter överenskommelse",
+      "languagesLabel": "Språk",
+      "languagesValue": "Nederländska, polska, ukrainska, ryska, engelska",
+      "contactLabel": "Kontakt"
     }
   },
   "manufacturer": {
@@ -4002,7 +4016,14 @@
       "ctaText": "Beställ ett kostnadsfritt provkit eller skicka oss dina ritningar för en offert — vårt team svarar inom en arbetsdag.",
       "ctaSampleKit": "Beställ ett provkit",
       "ctaQuote": "Begär offert",
-      "breadcrumbLabel": "Sökväg"
+      "breadcrumbLabel": "Sökväg",
+      "priceGuideLink": "Alla hyttpriser, ISO-klasser och monteringsalternativ i prisguiden",
+      "units": {
+        "m2": "per m²",
+        "booth": "per hytt",
+        "set": "per set",
+        "piece": "per styck"
+      }
     },
     "rpet": {
       "title": "PET-akustikpaneler av återvunna flaskor – tillverkare | Re-Sound",
@@ -4083,7 +4104,7 @@
     "booths": {
       "title": "Telefonhytter & mötesbås – Solo, Duo, Modular XL | Re-Sound",
       "description": "Telefonhytter & mötesbås för kontor: Solo Flex (1 pers.), Duo (2 pers.), Modular XL (6–10). ISO 23351-1-talreduktion, tyst ventilation, 230 V, USB-C.",
-      "h1": "Telefonhytter och mötesbås för kontor, byggda i Belgien",
+      "h1": "Telefonhytter och mötespods för kontoret från egna fabriker",
       "breadcrumb": "Hytter",
       "intro": "En telefonhytt för kontor ger en person en tyst, ventilerad plats för samtal och videomöten mitt i ett öppet kontorslandskap; ett mötesbås gör detsamma för ett team. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). Hyttsortimentet finns i tre storlekar. Solo Flex är telefonhytten för en person: 1 m² golvyta, höj- och sänkbart bord, 230 V och USB-C, tysta EC-fläktar och en talnivåreduktion på 24 dB(A) uppmätt enligt ISO 23351-1. Duo är den akustiska telefonhytten för två personer med två konfigurationer – Flex för ett samtal med två sittplatser, Work för en person med ett bord i full bredd. Modular XL är det akustiska mötesbåset för sex till tio personer: basenheten förlängs i segment om 90 cm och når 25,9 dB(A) talnivåreduktion. Alla hytter levereras med 5 års garanti på stommen och levereras i hela EU, med installation på begäran. Jämför telefonhytterna för kontor nedan och öppna sedan en modellsida för tillval och nedladdningar.",
       "whyCertsDesc": "5 års garanti på stommen och 2 års garanti på elektroniken för varje hytt; talnivåreduktion anges enligt ISO 23351-1.",
@@ -4183,5 +4204,79 @@
     "googleReviews": "{count, plural, one {# Google-recension} other {# Google-recensioner}}",
     "viaGoogle": "via Google",
     "reviewUs": "Recensera oss på Google"
+  },
+  "boothGuide": {
+    "title": "Telefonhytt för kontor: priser & ISO-klasser 2026 | Re-Sound",
+    "description": "Vad kostar en telefonhytt? Solo Flex från 2 740 € exkl. moms, Modular XL från 15 000 €. ISO 23351-1-klasser, ventilation, montering och garanti.",
+    "h1": "Telefonhytter för kontor: priser, klasser och hur ni väljer",
+    "intro": "En akustisk telefonhytt från Re-Sound kostar från 2 740 € exkl. moms utan montering (Solo Flex) och ett Modular XL-mötesbås från 15 000 €. Nedan hittar ni alla priser vi publicerar, vad som ingår, ISO 23351-1-klasserna för talnivå ärligt redovisade samt hur montering, provsittning och garanti fungerar. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen).",
+    "breadcrumb": "Priser på telefonhytter",
+    "priceTag": "PRISER 2026",
+    "priceTitle": "Priser per modell (exkl. moms)",
+    "priceNote": "Priserna är exklusive moms och, utanför Belgien, transport. Montering av vårt eget team är valfritt; Solo Flex kan även monteras av två personer på under tre timmar.",
+    "col": {
+      "model": "Modell",
+      "capacity": "Kapacitet",
+      "footprint": "Golvyta",
+      "dimensions": "Yttermått (B×D×H)",
+      "priceExcl": "Från, utan montering",
+      "priceIncl": "Från, med montering",
+      "extra": "Extra 90 cm-element",
+      "iso": "ISO 23351-1",
+      "ventilation": "Ventilation",
+      "power": "El",
+      "weight": "Vikt",
+      "assembly": "Montering",
+      "leadTime": "Leveranstid",
+      "warranty": "Garanti"
+    },
+    "onRequest": "På begäran",
+    "persons": "{count, plural, one {# person} other {# personer}}",
+    "personsRange": "6–10 personer (största hittills byggda: 20)",
+    "classLabel": "Klass {class}",
+    "weeks": "{weeks} veckor",
+    "warrantyValue": "5 år stomme · 2 år elektronik",
+    "includedTag": "DET NI FÅR",
+    "includedTitle": "Vad som ingår i priset",
+    "includedText": "Varje hytt levereras som en komplett, ventilerad enhet: stomme med dörr, dimbar LED-belysning, el vid arbetsbordet (230 V och USB-C på Solo Flex) samt, på Solo Flex, det manuellt höj- och sänkbara bordet. Ventilationen sker med tysta EC-fläktar; Solo Flex flyttar 4,6 m³/min och dess PIR-sensor slår på fläktarna när någon befinner sig i hytten.",
+    "installationTag": "MONTERING",
+    "installationTitle": "Montering av Re-Sound eller egen montering",
+    "installationText": "Våra montörer ställer upp en telefonhytt på cirka 60 minuter, ett mötesbås på cirka 2 timmar och en Modular XL på 2 till 6 timmar. Solo Flex kan även monteras av två personer på under tre timmar: hytten är en platt-packad konstruktion och kan därför demonteras och byggas upp igen på ett annat våningsplan senare.",
+    "testingTag": "PROVA FÖRST",
+    "testingTitle": "Prova en hytt i vårt showroom",
+    "testingText": "Ni kan sätta er i varje modell i vårt showroom i Beveren-Waas (mån–fre 08:00–16:30, efter överenskommelse) och själva höra skillnaden innan ni beställer.",
+    "classesTag": "AKUSTIK",
+    "classesTitle": "Vad ISO 23351-1-klasserna betyder",
+    "classesText": "ISO 23351-1 mäter hur mycket en sluten hytt sänker nivån på det tal som tränger ut ur den. Solo Flex dämpar tal med cirka 24 dB(A) och Modular XL med 25,9 dB(A): båda är klass C. Det hindrar vanliga samtal och videomöten från att störa kontoret; klasserna B, A och A+ dämpar talet ytterligare.",
+    "classCol": {
+      "class": "Klass",
+      "threshold": "Dämpning av talnivå",
+      "models": "Re-Sound-modeller"
+    },
+    "classRows": {
+      "aPlus": "A+",
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D"
+    },
+    "atLeast": "minst {db} dB",
+    "endOfLifeTitle": "Efter livslängden",
+    "endOfLifeText": "En hytt kan säljas vidare eller plockas isär för återvinning: varje material är återvinningsbart.",
+    "faqTag": "FAQ",
+    "faqTitle": "Vanliga frågor om hyttpriser",
+    "ctaTag": "NÄSTA STEG",
+    "ctaTitle": "Begär offert eller besök vårt showroom",
+    "ctaText": "Skicka oss er planritning och antalet hytter, så återkommer vi med en offert inklusive leverans och montering.",
+    "ctaQuote": "Begär offert",
+    "ctaShowroom": "Boka ett showroombesök",
+    "tableCaption": "Hyttpriser och specifikationer per modell",
+    "assembly": {
+      "solo-flex": "Cirka 60 minuter av våra montörer, eller två personer på under 3 timmar",
+      "duo": "Cirka 2 timmar av våra montörer",
+      "modular-xl": "2 till 6 timmar av våra montörer"
+    },
+    "classesNote": "Tröskelvärden: den lägsta dämpningen av talnivå per klass. Duo har ännu inte mätts.",
+    "endOfLifeTag": "CIRKULÄR"
   }
 }

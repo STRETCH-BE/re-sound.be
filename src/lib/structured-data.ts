@@ -29,7 +29,7 @@ import {
   FOUNDING_YEAR,
   LEGAL_NAME,
   PARENT_ORGANIZATION,
-  SHOWROOM,
+  PRODUCTION_OFFICE, SHOWROOM,
   SHOW_PLACEHOLDER_PRICES,
   SITE_URL,
   SOCIAL_LINKS_LIST,
@@ -156,6 +156,39 @@ export function localBusinessSchema() {
       },
     ],
     parentOrganization: { '@id': ORG_ID },
+  };
+}
+
+/**
+ * Second LocalBusiness node: the Częstochowa production office (workbook
+ * Dealers_Showrooms). No geo (not in the workbook); parentOrganization links
+ * it to the Organization node on the homepage.
+ */
+export function productionOfficeSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${SITE_URL}/#production-office`,
+    name: PRODUCTION_OFFICE.name,
+    parentOrganization: { '@id': ORG_ID },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: PRODUCTION_OFFICE.streetAddress,
+      postalCode: PRODUCTION_OFFICE.postalCode,
+      addressLocality: PRODUCTION_OFFICE.addressLocality,
+      addressCountry: PRODUCTION_OFFICE.addressCountry,
+    },
+    email: PRODUCTION_OFFICE.email,
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: PRODUCTION_OFFICE.openingDays,
+        opens: PRODUCTION_OFFICE.opens,
+        closes: PRODUCTION_OFFICE.closes,
+      },
+    ],
+    knowsLanguage: PRODUCTION_OFFICE.languages,
+    url: `${SITE_URL}/en/where-to-buy`,
   };
 }
 

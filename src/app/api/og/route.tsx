@@ -81,6 +81,7 @@ const PAGE_TITLES: Record<string, string> = {
   'hub-rpet': 'PET Acoustic Panels',
   'hub-rwood': 'Wood Acoustic Panels',
   'hub-booths': 'Office Phone Booths',
+  'booth-guide': 'Office Phone Booth Prices',
   about: 'About Re-Sound',
   sustainability: 'Circular by Design',
   contact: 'Get in Touch',

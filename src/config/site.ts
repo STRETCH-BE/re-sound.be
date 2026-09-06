@@ -66,9 +66,27 @@ export const SHOWROOM = {
   telephoneHref: 'tel:+3232846818',
   email: 'info@re-sound.be',
   openingDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-  opens: '09:00',
-  closes: '17:00',
+  // Workbook Dealers_Showrooms: Mon–Fri 08:00–16:30 by appointment
+  opens: '08:00',
+  closes: '16:30',
   priceRange: '€€',
+} as const;
+
+/**
+ * Re-Sound Poland — production office (workbook Dealers_Showrooms). No
+ * coordinates in the workbook, so no geo is emitted; visitors by appointment.
+ */
+export const PRODUCTION_OFFICE = {
+  name: 'Re-Sound Poland — production office',
+  streetAddress: 'ul. Legionów 59',
+  postalCode: '42-200',
+  addressLocality: 'Częstochowa',
+  addressCountry: 'PL',
+  email: 'info@re-sound.be',
+  openingDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+  opens: '08:00',
+  closes: '16:30',
+  languages: ['nl', 'pl', 'uk', 'ru', 'en'],
 } as const;
 
 /**

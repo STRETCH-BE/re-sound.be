@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { Link } from '@/i18n/navigation';
+import { guidePath } from '@/data/guides';
 import { hubForFamily, hubPath } from '@/data/hubs';
 import { FAMILY_PRODUCTS, PRODUCTS } from '@/data/products';
 
@@ -66,6 +67,11 @@ export default async function OtherModels({ slug, locale }: OtherModelsProps) {
           <Link href={hubPath(hub, locale)} prefetch={false}>
             {t('rangeLink', { range: tNav(`range${hub.id.charAt(0).toUpperCase()}${hub.id.slice(1)}`) })} →
           </Link>
+        </p>
+      )}
+      {product.family === 'booth' && (
+        <p className="ps-related-range">
+          <Link href={guidePath(locale)} prefetch={false}>{t('priceGuide')} →</Link>
         </p>
       )}
     </section>
