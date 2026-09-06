@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. Todos los derechos reservados.",
     "manageCookies": "Gestionar cookies",
     "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio"
+    "terms": "Términos de Servicio",
+    "countryBelgium": "Bélgica"
   },
   "cookies": {
     "title": "Preferencias de cookies",
@@ -952,7 +953,8 @@
       "selectFinish": "Seleccionar el acabado {name}",
       "selectVeneer": "Seleccionar la chapa {name}",
       "select": "Seleccionar {name}"
-    }
+    },
+    "classA": "Clase A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Configuraciones modulares",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Separador de ambientes Divide fabricado con fibras textiles recicladas",
       "dividePanelCrossSection": "Sección transversal del panel Divide"
+    },
+    "options": {
+      "perSide": "Por cara"
     }
   },
   "rpetGroovePage": {
@@ -1609,6 +1614,19 @@
       "panelInstallationProcess": "Proceso de instalación del panel",
       "recycledMaterials": "Materiales reciclados"
     },
+    "options": {
+      "lineDesc": "Líneas paralelas limpias",
+      "waveDesc": "Curvas orgánicas y fluidas",
+      "chevronDesc": "Dinámico patrón en V",
+      "gridDesc": "Líneas entrecruzadas modernas",
+      "12mmDesc": "Absorción estándar",
+      "24mmDesc": "Absorción mejorada",
+      "36mmDesc": "Absorción máxima",
+      "lineGrooves": "Verticales",
+      "waveGrooves": "Curvas",
+      "chevronGrooves": "En ángulo",
+      "gridGrooves": "Entrecruzadas"
+    },
     "related": {
       "title": "Productos Relacionados"
     }
@@ -1831,6 +1849,18 @@
       "cncProcessingOfRpetPanels": "Mecanizado CNC de paneles rPET",
       "recycledPetBottles": "Botellas de PET recicladas",
       "rpetPanelSamplePanels": "Paneles de muestra rPET - Panel"
+    },
+    "options": {
+      "midnightDesc": "Negro profundo, que evoca un cielo iluminado por la luna",
+      "titanDesc": "Gris oscuro característico, como el acero",
+      "silverDesc": "Elegancia industrial moderna",
+      "marbleDesc": "Estética minimalista en gris claro",
+      "frostDesc": "La sencillez del blanco puro",
+      "customDesc": "Cualquier color de la carta RAL o NCS",
+      "12mmDesc": "Solución ligera",
+      "18mmDesc": "Rendimiento equilibrado",
+      "24mmDesc": "Absorción máxima",
+      "maximumLabel": "Máximo"
     }
   },
   "rwoodGroovePage": {
@@ -2023,6 +2053,12 @@
       "woodFinishSamples": "Muestras de acabados de madera",
       "panelInstallationProcess": "Proceso de instalación del panel",
       "sustainableForestry": "Silvicultura sostenible"
+    },
+    "options": {
+      "originalDesc": "Diseño clásico de 6 lamas",
+      "mixedDesc": "Anchos mixtos dinámicos",
+      "4lamellaDesc": "Lamas anchas de gran presencia",
+      "3lamellaDesc": "Lamas extraanchas de gran impacto"
     }
   },
   "rwoodPerfPage": {
@@ -2208,6 +2244,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Detalle de la superficie de chapa de madera del panel perforado",
       "rwoodPerfPanelConcealedMountingSystem": "Sistema de montaje oculto del panel rWood - Perf",
       "sustainableWoodSourcingAndProduction": "Abastecimiento y producción sostenibles de madera"
+    },
+    "options": {
+      "pd8Desc": "Absorción máxima, gran área abierta",
+      "ph10Desc": "Alta absorción, perforaciones marcadas",
+      "ph8Desc": "Equilibrio entre estética y rendimiento",
+      "ph5Desc": "Patrón discreto, superficie sutil"
     }
   },
   "rwoodMicroPage": {
@@ -2403,6 +2445,22 @@
       "rwoodMicroPanelInstallationSystem": "Sistema de instalación del panel rWood - Micro",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Panel microperforado retroiluminado que crea un efecto de luz",
       "sustainableProduction": "Producción sostenible"
+    },
+    "options": {
+      "veneerDesc": "Chapa de madera natural de calidad A",
+      "hplDesc": "Laminado de alta presión",
+      "nanoDesc": "Perforaciones prácticamente invisibles",
+      "microsDesc": "Microperforaciones sutiles",
+      "micromDesc": "Patrón de perforación equilibrado",
+      "microlDesc": "Patrón de absorción máxima",
+      "nanoDetail": "La perforación más pequeña disponible: completamente invisible a simple vista, para una superficie de madera impecable.",
+      "microsDetail": "Microorificios apenas visibles que mantienen una superficie limpia y continua.",
+      "micromDetail": "Un equilibrio óptimo entre discreción visual y eficiencia acústica para la mayoría de las aplicaciones.",
+      "microlDetail": "La mayor área abierta para una absorción acústica máxima en espacios acústicamente exigentes.",
+      "openAreaLabel": "Área abierta",
+      "absorptionLabel": "Absorción",
+      "thinnerLabel": "Más fino",
+      "veneerDrilled": "Chapa de madera de calidad A con orificios taladrados con precisión"
     }
   },
   "rwoodVeneerPage": {
@@ -2861,6 +2919,12 @@
       "rpetFlexGrooveColorOptions": "Opciones de color de rPET Flex-Groove",
       "flexGroovePanelInstallation": "Instalación del panel Flex-Groove",
       "recycledPetBottles": "Botellas de PET recicladas"
+    },
+    "options": {
+      "lengthDesc": "Las ranuras recorren el panel a lo largo",
+      "widthDesc": "Las ranuras recorren el panel a lo ancho",
+      "lengthName": "Longitudinal",
+      "widthName": "Transversal"
     }
   },
   "legal": {
@@ -4063,6 +4127,7 @@
       "email": "Correo electrónico *",
       "emailPlaceholder": "marie@studio.be",
       "phone": "Teléfono",
+      "phonePlaceholder": "+32 ...",
       "company": "Empresa / Estudio",
       "companyPlaceholder": "Studio Dupont",
       "address": "Calle y número *",
@@ -4072,8 +4137,7 @@
       "country": "País",
       "message": "Comentarios adicionales",
       "messagePlaceholder": "P. ej.: Soy arquitecto y estoy especificando una oficina de 200 m²...",
-      "optional": "(opcional)",
-      "phonePlaceholder": "+32 ..."
+      "optional": "(opcional)"
     },
     "countries": {
       "belgium": "Bélgica",

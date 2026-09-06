@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. Allur réttur áskilinn.",
     "manageCookies": "Stjórna vafrakökum",
     "privacy": "Persónuverndarstefna",
-    "terms": "Þjónustuskilmálar"
+    "terms": "Þjónustuskilmálar",
+    "countryBelgium": "Belgía"
   },
   "cookies": {
     "title": "Vafrakökustillingar",
@@ -952,7 +953,8 @@
       "selectFinish": "Velja áferðina {name}",
       "selectVeneer": "Velja viðarspóninn {name}",
       "select": "Velja {name}"
-    }
+    },
+    "classA": "Flokkur A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Einingaskiptar uppsetningar",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Divide rýmisskilrúm úr endurunnum textíltrefjum",
       "dividePanelCrossSection": "Þversnið af Divide plötu"
+    },
+    "options": {
+      "perSide": "Á hvorri hlið"
     }
   },
   "rpetGroovePage": {
@@ -1609,6 +1614,19 @@
       "panelInstallationProcess": "Uppsetningarferli platna",
       "recycledMaterials": "Endurunnin efni"
     },
+    "options": {
+      "lineDesc": "Hreinar samsíða línur",
+      "waveDesc": "Lífrænar, mjúkar sveigjur",
+      "chevronDesc": "Kraftmikið V-mynstur",
+      "gridDesc": "Nútímalegar línur sem skerast",
+      "12mmDesc": "Staðlað hljóðísog",
+      "24mmDesc": "Aukið hljóðísog",
+      "36mmDesc": "Hámarkshljóðísog",
+      "lineGrooves": "Lóðréttar",
+      "waveGrooves": "Bogadregnar",
+      "chevronGrooves": "Skáhallar",
+      "gridGrooves": "Krosslagðar"
+    },
     "related": {
       "title": "Tengdar Vörur"
     }
@@ -1831,6 +1849,18 @@
       "cncProcessingOfRpetPanels": "CNC-vinnsla á rPET plötum",
       "recycledPetBottles": "Endurunnar PET-flöskur",
       "rpetPanelSamplePanels": "rPET - Panel sýnishornaplötur"
+    },
+    "options": {
+      "midnightDesc": "Djúpsvartur litur sem minnir á næturhimin í tunglsljósi",
+      "titanDesc": "Einkennandi dökkgrár litur, líkt og stál",
+      "silverDesc": "Nútímalegur, iðnaðarlegur glæsileiki",
+      "marbleDesc": "Mínimalískt ljósgrátt yfirbragð",
+      "frostDesc": "Hreinn, hvítur einfaldleiki",
+      "customDesc": "Hvaða litur sem er úr RAL- eða NCS-litakerfinu",
+      "12mmDesc": "Létt lausn",
+      "18mmDesc": "Jafnvæg frammistaða",
+      "24mmDesc": "Hámarkshljóðísog",
+      "maximumLabel": "Hámark"
     }
   },
   "rwoodGroovePage": {
@@ -2023,6 +2053,12 @@
       "woodFinishSamples": "Sýnishorn af viðaráferðum",
       "panelInstallationProcess": "Uppsetningarferli platna",
       "sustainableForestry": "Sjálfbær skógrækt"
+    },
+    "options": {
+      "originalDesc": "Klassísk hönnun með 6 rimlum",
+      "mixedDesc": "Kraftmiklar blandaðar breiddir",
+      "4lamellaDesc": "Djarfir, breiðir rimlar",
+      "3lamellaDesc": "Áberandi, extra breiðir rimlar"
     }
   },
   "rwoodPerfPage": {
@@ -2208,6 +2244,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Nærmynd af viðarspónsyfirborði gataðrar viðarplötu",
       "rwoodPerfPanelConcealedMountingSystem": "Falið festingarkerfi rWood - Perf plötu",
       "sustainableWoodSourcingAndProduction": "Sjálfbær öflun viðar og framleiðsla"
+    },
+    "options": {
+      "pd8Desc": "Hámarkshljóðísog, stórt opið flatarmál",
+      "ph10Desc": "Mikið hljóðísog, áberandi götun",
+      "ph8Desc": "Jafnvægi milli útlits og frammistöðu",
+      "ph5Desc": "Hógvært mynstur, fíngert yfirborð"
     }
   },
   "rwoodMicroPage": {
@@ -2403,6 +2445,22 @@
       "rwoodMicroPanelInstallationSystem": "Uppsetningarkerfi rWood - Micro plötu",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Baklýst örgötuð plata sem skapar ljósáhrif",
       "sustainableProduction": "Sjálfbær framleiðsla"
+    },
+    "options": {
+      "veneerDesc": "Náttúrulegur viðarspónn í A-gæðaflokki",
+      "hplDesc": "Háþrýstilaminat",
+      "nanoDesc": "Nánast ósýnileg götun",
+      "microsDesc": "Fíngerð örgötun",
+      "micromDesc": "Jafnvægt götunarmynstur",
+      "microlDesc": "Götunarmynstur fyrir hámarkshljóðísog",
+      "nanoDetail": "Minnsta götun sem í boði er – algjörlega ósýnileg berum augum og skapar gallalaust viðaryfirborð.",
+      "microsDetail": "Varla sýnileg örgöt sem viðhalda hreinu og órofnu yfirborði.",
+      "micromDetail": "Kjörið jafnvægi milli sjónrænnar hógværðar og hljóðfræðilegrar virkni fyrir flestar aðstæður.",
+      "microlDetail": "Stærsta opna flatarmálið fyrir hámarkshljóðísog í rýmum með miklar hljóðkröfur.",
+      "openAreaLabel": "Opið flatarmál",
+      "absorptionLabel": "Hljóðísog",
+      "thinnerLabel": "Þynnri",
+      "veneerDrilled": "Viðarspónn í A-gæðaflokki með nákvæmnisboruðum götum"
     }
   },
   "rwoodVeneerPage": {
@@ -2861,6 +2919,12 @@
       "rpetFlexGrooveColorOptions": "Litavalkostir rPET Flex-Groove",
       "flexGroovePanelInstallation": "Uppsetning Flex-Groove plötu",
       "recycledPetBottles": "Endurunnar PET-flöskur"
+    },
+    "options": {
+      "lengthDesc": "Raufarnar liggja eftir endilangri plötunni",
+      "widthDesc": "Raufarnar liggja þvert yfir breidd plötunnar",
+      "lengthName": "Langsum",
+      "widthName": "Þversum"
     }
   },
   "legal": {
@@ -4063,6 +4127,7 @@
       "email": "Netfang *",
       "emailPlaceholder": "marie@studio.be",
       "phone": "Sími",
+      "phonePlaceholder": "+32 ...",
       "company": "Fyrirtæki / Stofa",
       "companyPlaceholder": "Studio Dupont",
       "address": "Gata og húsnúmer *",
@@ -4072,8 +4137,7 @@
       "country": "Land",
       "message": "Frekari athugasemdir",
       "messagePlaceholder": "T.d. Ég er arkitekt að vinna að 200m² skrifstofu...",
-      "optional": "(valfrjálst)",
-      "phonePlaceholder": "+32 ..."
+      "optional": "(valfrjálst)"
     },
     "countries": {
       "belgium": "Belgía",

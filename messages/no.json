@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. Alle rettigheter forbeholdt.",
     "manageCookies": "Administrer informasjonskapsler",
     "privacy": "Personvernpolicy",
-    "terms": "Tjenestevilkår"
+    "terms": "Tjenestevilkår",
+    "countryBelgium": "Belgia"
   },
   "cookies": {
     "title": "Informasjonskapselinnstillinger",
@@ -952,7 +953,8 @@
       "selectFinish": "Velg overflaten {name}",
       "selectVeneer": "Velg fineren {name}",
       "select": "Velg {name}"
-    }
+    },
+    "classA": "Klasse A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Modulære konfigurasjoner",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Divide romdeler laget av resirkulerte tekstilfibre",
       "dividePanelCrossSection": "Tverrsnitt av Divide-panel"
+    },
+    "options": {
+      "perSide": "Per side"
     }
   },
   "rpetGroovePage": {
@@ -1609,6 +1614,19 @@
       "panelInstallationProcess": "Monteringsprosess for panelet",
       "recycledMaterials": "Resirkulerte materialer"
     },
+    "options": {
+      "lineDesc": "Rene parallelle linjer",
+      "waveDesc": "Organiske, flytende kurver",
+      "chevronDesc": "Dynamisk V-mønster",
+      "gridDesc": "Moderne kryssende linjer",
+      "12mmDesc": "Standard absorpsjon",
+      "24mmDesc": "Forbedret absorpsjon",
+      "36mmDesc": "Maksimal absorpsjon",
+      "lineGrooves": "Vertikale",
+      "waveGrooves": "Buede",
+      "chevronGrooves": "Skråstilte",
+      "gridGrooves": "Kryssmønster"
+    },
     "related": {
       "title": "Relaterte Produkter"
     }
@@ -1831,6 +1849,18 @@
       "cncProcessingOfRpetPanels": "CNC-bearbeiding av rPET-paneler",
       "recycledPetBottles": "Resirkulerte PET-flasker",
       "rpetPanelSamplePanels": "rPET - Panel prøvepaneler"
+    },
+    "options": {
+      "midnightDesc": "Dyp svart, som en måneskinnshimmel",
+      "titanDesc": "Karakteristisk mørk grå, som stål",
+      "silverDesc": "Moderne industriell eleganse",
+      "marbleDesc": "Minimalistisk lysegrå estetikk",
+      "frostDesc": "Ren, hvit enkelhet",
+      "customDesc": "Enhver farge fra RAL- eller NCS-paletten",
+      "12mmDesc": "Lettvektsløsning",
+      "18mmDesc": "Balansert ytelse",
+      "24mmDesc": "Maksimal absorpsjon",
+      "maximumLabel": "Maksimum"
     }
   },
   "rwoodGroovePage": {
@@ -2023,6 +2053,12 @@
       "woodFinishSamples": "Prøver av treoverflater",
       "panelInstallationProcess": "Monteringsprosess for panelet",
       "sustainableForestry": "Bærekraftig skogbruk"
+    },
+    "options": {
+      "originalDesc": "Klassisk design med 6 lameller",
+      "mixedDesc": "Dynamiske, varierende bredder",
+      "4lamellaDesc": "Markante, brede lister",
+      "3lamellaDesc": "Iøynefallende, brede paneler"
     }
   },
   "rwoodPerfPage": {
@@ -2208,6 +2244,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Detalj av trefineroverflaten på perforert trepanel",
       "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel med skjult monteringssystem",
       "sustainableWoodSourcingAndProduction": "Bærekraftig innkjøp av tre og produksjon"
+    },
+    "options": {
+      "pd8Desc": "Maksimal absorpsjon, stort åpent areal",
+      "ph10Desc": "Høy absorpsjon, markante perforeringer",
+      "ph8Desc": "Balanse mellom utseende og ytelse",
+      "ph5Desc": "Diskret mønster, subtil overflate"
     }
   },
   "rwoodMicroPage": {
@@ -2403,6 +2445,22 @@
       "rwoodMicroPanelInstallationSystem": "rWood - Micro panel monteringssystem",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Bakgrunnsbelyst mikroperforert panel som skaper en lyseffekt",
       "sustainableProduction": "Bærekraftig produksjon"
+    },
+    "options": {
+      "veneerDesc": "Naturlig trefiner i A-kvalitet",
+      "hplDesc": "Høytrykkslaminat",
+      "nanoDesc": "Praktisk talt usynlige perforeringer",
+      "microsDesc": "Subtile mikroperforeringer",
+      "micromDesc": "Balansert perforeringsmønster",
+      "microlDesc": "Mønster for maksimal absorpsjon",
+      "nanoDetail": "Den minste perforeringen som finnes – helt usynlig for det blotte øye, og gir en feilfri treoverflate.",
+      "microsDetail": "Knapt synlige mikrohull som bevarer et rent og uavbrutt overflateuttrykk.",
+      "micromDetail": "En optimal balanse mellom visuell diskresjon og akustisk effektivitet for de fleste bruksområder.",
+      "microlDetail": "Det største åpne arealet for maksimal lydabsorpsjon i akustisk krevende rom.",
+      "openAreaLabel": "Åpent areal",
+      "absorptionLabel": "Absorpsjon",
+      "thinnerLabel": "Tynnere",
+      "veneerDrilled": "Trefiner i A-kvalitet med presisjonsborede hull"
     }
   },
   "rwoodVeneerPage": {
@@ -2861,6 +2919,12 @@
       "rpetFlexGrooveColorOptions": "Fargealternativer for rPET Flex-Groove",
       "flexGroovePanelInstallation": "Montering av Flex-Groove-panel",
       "recycledPetBottles": "Resirkulerte PET-flasker"
+    },
+    "options": {
+      "lengthDesc": "Sporene går langs panelets lengde",
+      "widthDesc": "Sporene går på tvers av panelets bredde",
+      "lengthName": "På langs",
+      "widthName": "På tvers"
     }
   },
   "legal": {
@@ -4063,6 +4127,7 @@
       "email": "E-post *",
       "emailPlaceholder": "marie@studio.be",
       "phone": "Telefon",
+      "phonePlaceholder": "+32 ...",
       "company": "Firma / studio",
       "companyPlaceholder": "Studio Dupont",
       "address": "Gate og nummer *",
@@ -4072,8 +4137,7 @@
       "country": "Land",
       "message": "Tilleggsopplysninger",
       "messagePlaceholder": "F.eks. Jeg er arkitekt og prosjekterer et kontor på 200 m² ...",
-      "optional": "(valgfritt)",
-      "phonePlaceholder": "+32 ..."
+      "optional": "(valgfritt)"
     },
     "countries": {
       "belgium": "Belgia",

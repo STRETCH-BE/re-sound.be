@@ -25,7 +25,8 @@ Commits, in order (one per task, prefixed as requested):
 | `453290a` | 5b | i18n: move image alt texts and assistive labels into message keys |
 | `a323a74` | 5b | i18n: make the sample-kit modal translatable |
 | `6e47f3b` | 5b | i18n: translate image alts, assistive labels and the sample-kit modal into all locales |
-| (last commit) | 5b | i18n: complete da/sv/no/is (all namespaces), updated check and report |
+| `9a52471` | 5b | i18n: complete da/sv/no/is across all namespaces; move option texts into messages |
+| (last commit) | 5b | i18n: translate option texts into all locales; final check and report |
 
 ## Before / after
 
@@ -205,8 +206,10 @@ locales received these strings through the Task 5 translation pass.
   cookies…). Only product names, codes, standards and units stay English.
 - Also in 5b, for every locale: the 45 image alt texts, gallery alt
   patterns, colour/finish/veneer selector labels, nav/breadcrumb/FAQ
-  assistive labels and the whole sample-kit modal (46 strings) were
-  hard-coded English and now come from messages (999 translated keys).
+  assistive labels, the whole sample-kit modal (46 strings) and the
+  colour / thickness / pattern / perforation option descriptions in six
+  product templates (50 strings) were hard-coded English and now come
+  from messages (1,449 translated keys in total).
 - Not translated: the privacy and terms pages (hardcoded legal text,
   noindex) — legal texts need Michael's approved translations, see the
   needs-Michael list.
@@ -343,6 +346,11 @@ Other decisions for Michael (raised by the translators while working):
 - Sample-kit form: the country list offers BE/NL/LU/FR/DE + Other (no
   Nordic countries) and the example placeholders are Belgian (Marie
   Dupont, Antwerpsesteenweg 42, Gent) in every locale.
+- rWood Groove options: "Statement wide panels" (3-lamella) and "Bold
+  wide strips" (4-lamella) are near-duplicates; rWood Micro says the Nano
+  perforation is "virtually" and "completely" invisible in two adjacent
+  strings; the rPET Groove "Line" pattern is labelled "Vertical" although
+  orientation depends on mounting.
 
 ## Not completed / caveats
 

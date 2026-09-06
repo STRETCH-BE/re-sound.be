@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. Alla rättigheter förbehållna.",
     "manageCookies": "Hantera cookies",
     "privacy": "Integritetspolicy",
-    "terms": "Användarvillkor"
+    "terms": "Användarvillkor",
+    "countryBelgium": "Belgien"
   },
   "cookies": {
     "title": "Cookieinställningar",
@@ -952,7 +953,8 @@
       "selectFinish": "Välj ytfinishen {name}",
       "selectVeneer": "Välj träfaneret {name}",
       "select": "Välj {name}"
-    }
+    },
+    "classA": "Klass A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Modulära konfigurationer",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Divide rumsavdelare tillverkad av återvunna textilfibrer",
       "dividePanelCrossSection": "Tvärsnitt av Divide-panel"
+    },
+    "options": {
+      "perSide": "Per sida"
     }
   },
   "rpetGroovePage": {
@@ -1609,6 +1614,19 @@
       "panelInstallationProcess": "Montering av panel",
       "recycledMaterials": "Återvunna material"
     },
+    "options": {
+      "lineDesc": "Rena parallella linjer",
+      "waveDesc": "Organiska, mjukt böljande kurvor",
+      "chevronDesc": "Dynamiskt V-mönster",
+      "gridDesc": "Moderna korsande linjer",
+      "12mmDesc": "Standardabsorption",
+      "24mmDesc": "Förbättrad absorption",
+      "36mmDesc": "Maximal absorption",
+      "lineGrooves": "Vertikala",
+      "waveGrooves": "Böjda",
+      "chevronGrooves": "Vinklade",
+      "gridGrooves": "Korsmönster"
+    },
     "related": {
       "title": "Relaterade Produkter"
     }
@@ -1831,6 +1849,18 @@
       "cncProcessingOfRpetPanels": "CNC-bearbetning av rPET-paneler",
       "recycledPetBottles": "Återvunna PET-flaskor",
       "rpetPanelSamplePanels": "rPET - Panel provpaneler"
+    },
+    "options": {
+      "midnightDesc": "Djupt svart, som en månbelyst natthimmel",
+      "titanDesc": "Karakteristiskt mörkgrå, som stål",
+      "silverDesc": "Modern industriell elegans",
+      "marbleDesc": "Minimalistisk ljusgrå estetik",
+      "frostDesc": "Rent vit enkelhet",
+      "customDesc": "Valfri kulör från RAL- eller NCS-paletten",
+      "12mmDesc": "Lättviktslösning",
+      "18mmDesc": "Balanserad prestanda",
+      "24mmDesc": "Maximal absorption",
+      "maximumLabel": "Maximal"
     }
   },
   "rwoodGroovePage": {
@@ -2023,6 +2053,12 @@
       "woodFinishSamples": "Prover på träfinish",
       "panelInstallationProcess": "Montering av panel",
       "sustainableForestry": "Hållbart skogsbruk"
+    },
+    "options": {
+      "originalDesc": "Klassisk design med 6 lameller",
+      "mixedDesc": "Dynamiska blandade bredder",
+      "4lamellaDesc": "Kraftfulla breda ribbor",
+      "3lamellaDesc": "Breda paneler som gör intryck"
     }
   },
   "rwoodPerfPage": {
@@ -2208,6 +2244,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Ytdetalj av träfaner på perforerad träpanel",
       "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel med dolt monteringssystem",
       "sustainableWoodSourcingAndProduction": "Hållbar anskaffning av trä och hållbar produktion"
+    },
+    "options": {
+      "pd8Desc": "Maximal absorption, stor öppen yta",
+      "ph10Desc": "Hög absorption, markanta perforeringar",
+      "ph8Desc": "Balans mellan utseende och prestanda",
+      "ph5Desc": "Diskret mönster, subtil yta"
     }
   },
   "rwoodMicroPage": {
@@ -2403,6 +2445,22 @@
       "rwoodMicroPanelInstallationSystem": "rWood - Micro panel, monteringssystem",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Bakgrundsbelyst mikroperforerad panel som skapar en ljuseffekt",
       "sustainableProduction": "Hållbar produktion"
+    },
+    "options": {
+      "veneerDesc": "Naturligt träfaner av A-kvalitet",
+      "hplDesc": "Högtryckslaminat",
+      "nanoDesc": "Praktiskt taget osynliga perforeringar",
+      "microsDesc": "Subtila mikroperforeringar",
+      "micromDesc": "Balanserat perforeringsmönster",
+      "microlDesc": "Mönster för maximal absorption",
+      "nanoDetail": "Den minsta perforering som finns – helt osynlig för blotta ögat och ger en felfri träyta.",
+      "microsDetail": "Knappt synliga mikrohål som bevarar ett rent och obrutet ytintryck.",
+      "micromDetail": "En optimal balans mellan visuell diskretion och akustisk effektivitet för de flesta tillämpningar.",
+      "microlDetail": "Den största öppna ytan för maximal ljudabsorption i akustiskt krävande miljöer.",
+      "openAreaLabel": "Öppen yta",
+      "absorptionLabel": "Absorption",
+      "thinnerLabel": "Tunnare",
+      "veneerDrilled": "Träfaner av A-kvalitet med precisionsborrade hål"
     }
   },
   "rwoodVeneerPage": {
@@ -2861,6 +2919,12 @@
       "rpetFlexGrooveColorOptions": "Färgalternativ för rPET Flex-Groove",
       "flexGroovePanelInstallation": "Montering av Flex-Groove-panel",
       "recycledPetBottles": "Återvunna PET-flaskor"
+    },
+    "options": {
+      "lengthDesc": "Spåren löper längs panelens längd",
+      "widthDesc": "Spåren löper tvärs över panelens bredd",
+      "lengthName": "På längden",
+      "widthName": "På bredden"
     }
   },
   "legal": {
@@ -4063,6 +4127,7 @@
       "email": "E-post *",
       "emailPlaceholder": "marie@studio.be",
       "phone": "Telefon",
+      "phonePlaceholder": "+32 ...",
       "company": "Företag / Studio",
       "companyPlaceholder": "Studio Dupont",
       "address": "Gatuadress och nummer *",
@@ -4072,8 +4137,7 @@
       "country": "Land",
       "message": "Övriga kommentarer",
       "messagePlaceholder": "T.ex. Jag är arkitekt och projekterar ett kontor på 200 m²...",
-      "optional": "(valfritt)",
-      "phonePlaceholder": "+32 ..."
+      "optional": "(valfritt)"
     },
     "countries": {
       "belgium": "Belgien",

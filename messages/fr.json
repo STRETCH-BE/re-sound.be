@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. Tous droits réservés.",
     "manageCookies": "Gérer les cookies",
     "privacy": "Politique de Confidentialité",
-    "terms": "Conditions d'Utilisation"
+    "terms": "Conditions d'Utilisation",
+    "countryBelgium": "Belgique"
   },
   "cookies": {
     "title": "Préférences de cookies",
@@ -952,7 +953,8 @@
       "selectFinish": "Sélectionner la finition {name}",
       "selectVeneer": "Sélectionner le placage {name}",
       "select": "Sélectionner {name}"
-    }
+    },
+    "classA": "Classe A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Configurations modulaires",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Cloison Divide fabriquée à partir de fibres textiles recyclées",
       "dividePanelCrossSection": "Coupe transversale du panneau Divide"
+    },
+    "options": {
+      "perSide": "Par face"
     }
   },
   "rpetGroovePage": {
@@ -1608,6 +1613,19 @@
       "rpetGrooveAcousticPanelInModernOffice": "Panneau acoustique rPET - Groove dans un bureau moderne",
       "panelInstallationProcess": "Processus d'installation du panneau",
       "recycledMaterials": "Matériaux recyclés"
+    },
+    "options": {
+      "lineDesc": "Lignes parallèles épurées",
+      "waveDesc": "Courbes organiques et fluides",
+      "chevronDesc": "Motif en V dynamique",
+      "gridDesc": "Lignes croisées modernes",
+      "12mmDesc": "Absorption standard",
+      "24mmDesc": "Absorption renforcée",
+      "36mmDesc": "Absorption maximale",
+      "lineGrooves": "Verticales",
+      "waveGrooves": "Courbes",
+      "chevronGrooves": "Inclinées",
+      "gridGrooves": "Croisées"
     }
   },
   "rpetPanelPage": {
@@ -1828,6 +1846,18 @@
       "cncProcessingOfRpetPanels": "Usinage CNC de panneaux rPET",
       "recycledPetBottles": "Bouteilles PET recyclées",
       "rpetPanelSamplePanels": "rPET - Panel : panneaux d'échantillons"
+    },
+    "options": {
+      "midnightDesc": "Noir profond, évoquant un ciel au clair de lune",
+      "titanDesc": "Gris foncé caractéristique, comme l'acier",
+      "silverDesc": "Élégance industrielle moderne",
+      "marbleDesc": "Esthétique minimaliste gris clair",
+      "frostDesc": "La simplicité d'un blanc pur",
+      "customDesc": "Toute couleur des nuanciers RAL ou NCS",
+      "12mmDesc": "Solution légère",
+      "18mmDesc": "Performance équilibrée",
+      "24mmDesc": "Absorption maximale",
+      "maximumLabel": "Maximum"
     }
   },
   "rwoodGroovePage": {
@@ -2020,6 +2050,12 @@
       "woodFinishSamples": "Échantillons de finitions bois",
       "panelInstallationProcess": "Processus d'installation du panneau",
       "sustainableForestry": "Sylviculture durable"
+    },
+    "options": {
+      "originalDesc": "Design classique à 6 lamelles",
+      "mixedDesc": "Largeurs mixtes dynamiques",
+      "4lamellaDesc": "Larges lamelles affirmées",
+      "3lamellaDesc": "Larges lamelles à fort impact visuel"
     }
   },
   "rwoodPerfPage": {
@@ -2205,6 +2241,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Détail de la surface en placage bois d'un panneau perforé",
       "rwoodPerfPanelConcealedMountingSystem": "Système de fixation invisible du panneau rWood - Perf",
       "sustainableWoodSourcingAndProduction": "Approvisionnement et production de bois durables"
+    },
+    "options": {
+      "pd8Desc": "Absorption maximale, grande surface ouverte",
+      "ph10Desc": "Absorption élevée, perforations marquées",
+      "ph8Desc": "Équilibre entre esthétique et performance",
+      "ph5Desc": "Motif discret, surface subtile"
     }
   },
   "rwoodMicroPage": {
@@ -2403,6 +2445,22 @@
       "rwoodMicroPanelInstallationSystem": "Système d'installation du panneau rWood - Micro",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Panneau microperforé rétroéclairé créant un effet lumineux",
       "sustainableProduction": "Production durable"
+    },
+    "options": {
+      "veneerDesc": "Placage bois naturel de qualité A",
+      "hplDesc": "Stratifié haute pression",
+      "nanoDesc": "Perforations pratiquement invisibles",
+      "microsDesc": "Microperforations subtiles",
+      "micromDesc": "Motif de perforation équilibré",
+      "microlDesc": "Motif à absorption maximale",
+      "nanoDetail": "La plus petite perforation disponible : totalement invisible à l'œil nu, pour une surface bois parfaitement lisse.",
+      "microsDetail": "Des micro-trous à peine visibles qui préservent une surface nette et ininterrompue.",
+      "micromDetail": "Un équilibre optimal entre discrétion visuelle et efficacité acoustique pour la plupart des applications.",
+      "microlDetail": "La surface ouverte la plus élevée pour une absorption acoustique maximale dans les espaces acoustiquement exigeants.",
+      "openAreaLabel": "Surface ouverte",
+      "absorptionLabel": "Absorption",
+      "thinnerLabel": "Plus fin",
+      "veneerDrilled": "Placage de qualité A avec perforations de précision"
     }
   },
   "rwoodVeneerPage": {
@@ -2861,6 +2919,12 @@
       "rpetFlexGrooveColorOptions": "Options de couleurs rPET Flex-Groove",
       "flexGroovePanelInstallation": "Installation du panneau Flex-Groove",
       "recycledPetBottles": "Bouteilles PET recyclées"
+    },
+    "options": {
+      "lengthDesc": "Les rainures suivent la longueur du panneau",
+      "widthDesc": "Les rainures traversent la largeur du panneau",
+      "lengthName": "Dans la longueur",
+      "widthName": "Dans la largeur"
     }
   },
   "legal": {
@@ -4063,6 +4127,7 @@
       "email": "E-mail *",
       "emailPlaceholder": "marie@studio.be",
       "phone": "Téléphone",
+      "phonePlaceholder": "+32 ...",
       "company": "Entreprise / Studio",
       "companyPlaceholder": "Studio Dupont",
       "address": "Rue et numéro *",
@@ -4072,8 +4137,7 @@
       "country": "Pays",
       "message": "Remarques complémentaires",
       "messagePlaceholder": "Ex. : je suis architecte et je prescris pour un bureau de 200 m²...",
-      "optional": "(facultatif)",
-      "phonePlaceholder": "+32 ..."
+      "optional": "(facultatif)"
     },
     "countries": {
       "belgium": "Belgique",

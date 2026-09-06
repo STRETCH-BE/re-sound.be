@@ -719,7 +719,8 @@
     "copyright": "© {year} Re-Sound. Alle rechten voorbehouden.",
     "manageCookies": "Cookies beheren",
     "privacy": "Privacybeleid",
-    "terms": "Algemene Voorwaarden"
+    "terms": "Algemene Voorwaarden",
+    "countryBelgium": "België"
   },
   "cookies": {
     "title": "Cookievoorkeuren",
@@ -952,7 +953,8 @@
       "selectFinish": "Afwerking {name} selecteren",
       "selectVeneer": "Fineer {name} selecteren",
       "select": "{name} selecteren"
-    }
+    },
+    "classA": "Klasse A"
   },
   "interiorPage": {
     "hero": {
@@ -1354,6 +1356,9 @@
       "modularConfigurations": "Modulaire configuraties",
       "divideRoomDividerMadeFromRecycledTextileFibres": "Divide scheidingswand gemaakt van gerecycleerde textielvezels",
       "dividePanelCrossSection": "Dwarsdoorsnede van het Divide paneel"
+    },
+    "options": {
+      "perSide": "Per zijde"
     }
   },
   "rpetGroovePage": {
@@ -1608,6 +1613,19 @@
       "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove akoestisch paneel in een modern kantoor",
       "panelInstallationProcess": "Installatieproces van het paneel",
       "recycledMaterials": "Gerecycleerde materialen"
+    },
+    "options": {
+      "lineDesc": "Strakke parallelle lijnen",
+      "waveDesc": "Organische, vloeiende curven",
+      "chevronDesc": "Dynamisch V-patroon",
+      "gridDesc": "Moderne kruisende lijnen",
+      "12mmDesc": "Standaard absorptie",
+      "24mmDesc": "Verhoogde absorptie",
+      "36mmDesc": "Maximale absorptie",
+      "lineGrooves": "Verticaal",
+      "waveGrooves": "Gebogen",
+      "chevronGrooves": "Schuin",
+      "gridGrooves": "Gekruist"
     }
   },
   "rpetPanelPage": {
@@ -1828,6 +1846,18 @@
       "cncProcessingOfRpetPanels": "CNC-bewerking van rPET-panelen",
       "recycledPetBottles": "Gerecycleerde PET-flessen",
       "rpetPanelSamplePanels": "rPET - Panel staalpanelen"
+    },
+    "options": {
+      "midnightDesc": "Diep zwart, als een hemel bij maanlicht",
+      "titanDesc": "Karakteristiek donkergrijs, als staal",
+      "silverDesc": "Moderne industriële elegantie",
+      "marbleDesc": "Minimalistische lichtgrijze uitstraling",
+      "frostDesc": "Zuivere witte eenvoud",
+      "customDesc": "Elke kleur uit het RAL- of NCS-palet",
+      "12mmDesc": "Lichtgewicht oplossing",
+      "18mmDesc": "Uitgebalanceerde prestaties",
+      "24mmDesc": "Maximale absorptie",
+      "maximumLabel": "Maximaal"
     }
   },
   "rwoodGroovePage": {
@@ -2020,6 +2050,12 @@
       "woodFinishSamples": "Stalen van houtafwerkingen",
       "panelInstallationProcess": "Installatieproces van het paneel",
       "sustainableForestry": "Duurzame bosbouw"
+    },
+    "options": {
+      "originalDesc": "Klassiek ontwerp met 6 lamellen",
+      "mixedDesc": "Dynamische gemengde breedtes",
+      "4lamellaDesc": "Krachtige brede latten",
+      "3lamellaDesc": "Opvallende extra brede latten"
     }
   },
   "rwoodPerfPage": {
@@ -2205,6 +2241,12 @@
       "perforatedWoodPanelVeneerSurfaceDetail": "Detail van het fineeroppervlak van een geperforeerd houten paneel",
       "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf paneel met onzichtbaar bevestigingssysteem",
       "sustainableWoodSourcingAndProduction": "Duurzame houtwinning en productie"
+    },
+    "options": {
+      "pd8Desc": "Maximale absorptie, grote open oppervlakte",
+      "ph10Desc": "Hoge absorptie, uitgesproken perforaties",
+      "ph8Desc": "Evenwicht tussen uitstraling en prestaties",
+      "ph5Desc": "Discreet patroon, subtiel oppervlak"
     }
   },
   "rwoodMicroPage": {
@@ -2403,6 +2445,22 @@
       "rwoodMicroPanelInstallationSystem": "rWood - Micro paneel installatiesysteem",
       "backlitMicroPerforatedPanelCreatingLightEffect": "Microgeperforeerd paneel met achterverlichting dat een lichteffect creëert",
       "sustainableProduction": "Duurzame productie"
+    },
+    "options": {
+      "veneerDesc": "Natuurlijk houtfineer van A-kwaliteit",
+      "hplDesc": "Hogedruklaminaat",
+      "nanoDesc": "Vrijwel onzichtbare perforaties",
+      "microsDesc": "Subtiele microperforaties",
+      "micromDesc": "Uitgebalanceerd perforatiepatroon",
+      "microlDesc": "Patroon voor maximale absorptie",
+      "nanoDetail": "De kleinste perforatie die beschikbaar is: volledig onzichtbaar met het blote oog, voor een vlekkeloos houtoppervlak.",
+      "microsDetail": "Nauwelijks zichtbare microgaatjes die een strak, ononderbroken oppervlak behouden.",
+      "micromDetail": "Een optimaal evenwicht tussen visuele discretie en akoestische efficiëntie voor de meeste toepassingen.",
+      "microlDetail": "De grootste open oppervlakte voor maximale geluidsabsorptie in akoestisch veeleisende ruimtes.",
+      "openAreaLabel": "Open oppervlakte",
+      "absorptionLabel": "Absorptie",
+      "thinnerLabel": "Dunner",
+      "veneerDrilled": "Houtfineer van A-kwaliteit met precisiegeboorde gaatjes"
     }
   },
   "rwoodVeneerPage": {
@@ -2861,6 +2919,12 @@
       "rpetFlexGrooveColorOptions": "Kleuropties van rPET Flex-Groove",
       "flexGroovePanelInstallation": "Installatie van het Flex-Groove paneel",
       "recycledPetBottles": "Gerecycleerde PET-flessen"
+    },
+    "options": {
+      "lengthDesc": "De groeven lopen in de lengterichting van het paneel",
+      "widthDesc": "De groeven lopen in de breedterichting van het paneel",
+      "lengthName": "In de lengte",
+      "widthName": "In de breedte"
     }
   },
   "legal": {
@@ -4063,6 +4127,7 @@
       "email": "E-mail *",
       "emailPlaceholder": "marie@studio.be",
       "phone": "Telefoon",
+      "phonePlaceholder": "+32 ...",
       "company": "Bedrijf / Studio",
       "companyPlaceholder": "Studio Dupont",
       "address": "Straat en nummer *",
@@ -4072,8 +4137,7 @@
       "country": "Land",
       "message": "Bijkomende opmerkingen",
       "messagePlaceholder": "Bv. Ik ben architect en werk aan een kantoor van 200 m²...",
-      "optional": "(optioneel)",
-      "phonePlaceholder": "+32 ..."
+      "optional": "(optioneel)"
     },
     "countries": {
       "belgium": "België",
