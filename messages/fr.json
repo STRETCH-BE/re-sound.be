@@ -1,7 +1,7 @@
 {
   "meta": {
-    "homeTitle": "Re-Sound | Recyclé à l'origine. Circulaire par conception.",
-    "homeDescription": "Solutions acoustiques haute performance fabriquées à partir de matériaux recyclés. Nous transformons les déchets en silence—conçu pour la planète, fabriqué en Belgique.",
+    "homeTitle": "Panneaux acoustiques & cabines téléphoniques — fabricant belge | Re-Sound",
+    "homeDescription": "Panneaux acoustiques circulaires (textile, rWood, rPET) et cabines acoustiques fabriqués dans nos usines en Belgique et en Pologne. Reprise gratuite.",
     "productsTitle": "Produits",
     "productsDescription": "Panneaux acoustiques circulaires et cabines de nos usines : textile (Interior, Solid, Divide), rWood, rPET et cabines (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "À propos de Re-Sound",
@@ -12,38 +12,38 @@
     "contactDescription": "Contactez Re-Sound pour des devis, des questions ou des demandes de partenariat.",
     "blogTitle": "Blog",
     "blogDescription": "Perspectives sur l'économie circulaire, l'acoustique et le design durable par l'équipe Re-Sound.",
-    "rwoodVeneerDescription": "Panneaux acoustiques en placage bois lisse. 10 essences sélectionnées, construction qualité meuble, DEP disponible. Certifié FSC. Fabriqué en Europe.",
-    "rpetGrooveTitle": "rPET Groove Panneaux Acoustiques en PET Recyclé | Re-Sound",
-    "rpetGrooveDescription": "Panneaux acoustiques rainurés fabriqués à partir de 100% de bouteilles PET recyclées. 12 couleurs design, 3 épaisseurs (12/24/36 mm), classement feu B-s1,d0. Fabriqué en Pologne.",
-    "rwoodVeneerTitle": "rWood Panel Panneaux Acoustiques en Placage Bois | Re-Sound",
-    "rpetPanelTitle": "rPET Panel Panneaux Acoustiques en PET Recyclé | Re-Sound",
-    "rwoodPerfTitle": "rWood Perf Panneaux Acoustiques en Bois Perforé | Re-Sound",
-    "rwoodMicroTitle": "rWood Micro Panneaux Acoustiques en Bois Micro-Perforé | Re-Sound",
-    "rwoodPerfDescription": "Panneaux acoustiques en bois perforé classiques avec placage certifié FSC. Absorption large bande, performances réglables, plusieurs motifs de perforation. Fabriqué en Europe.",
-    "divideDescription": "Cloisons acoustiques autoportantes avec connexion modulaire magnétique. Gestion flexible de l'espace, absorption double face, 100% recyclé. Fabriqué en Belgique.",
-    "rwoodMicroDescription": "Panneaux acoustiques en bois micro-perforés de précision. Double mécanisme d'absorption, sécurité incendie maximale, option rétroéclairage disponible. Certifié FSC. Fabriqué en Europe.",
-    "rwoodGrooveTitle": "rWood Groove Panneaux Acoustiques en Bois | Re-Sound",
+    "rwoodVeneerDescription": "Panneaux acoustiques lisses en placage bois, 10 essences : qualité mobilier, certifiés FSC, EPD disponible. Brossés, teintés et vernis, prêts à poser.",
+    "rpetGrooveTitle": "rPET Groove — panneaux PET rainurés, 12 coloris | Re-Sound",
+    "rpetGrooveDescription": "Panneaux acoustiques en PET rainuré (bouteilles recyclées) : 12 coloris, 3 épaisseurs (12/24/36 mm), NRC jusqu’à 0,90, feu B-s1,d0. Fabriqués en Pologne.",
+    "rwoodVeneerTitle": "rWood Panel — panneaux placage bois, 10 essences | Re-Sound",
+    "rpetPanelTitle": "rPET Panel — panneau acoustique en PET, 16 coloris | Re-Sound",
+    "rwoodPerfTitle": "rWood Perf — panneaux acoustiques bois perforés | Re-Sound",
+    "rwoodMicroTitle": "rWood Micro — panneaux acoustiques bois microperforés | Re-Sound",
+    "rwoodPerfDescription": "Panneaux acoustiques en bois perforé avec placage certifié FSC : quatre motifs de perforation pour une absorption large bande, 8 finitions, âme ignifugée.",
+    "divideDescription": "Cloisons acoustiques autoportantes à connexion magnétique modulaire : absorption double face, sans installation, textile recyclé. Fabriquées en Belgique.",
+    "rwoodMicroDescription": "Panneaux acoustiques en bois microperforé (0,5 mm) avec placage certifié FSC : motif quasi invisible, classement feu B-s1,d0, option rétroéclairée.",
+    "rwoodGrooveTitle": "rWood Groove — panneaux bois rainurés, chêne & noyer | Re-Sound",
     "divideTitle": "Divide Cloisons Acoustiques Autoportantes | Re-Sound",
-    "rwoodGrooveDescription": "Panneaux acoustiques rainurés premium avec placage bois certifié FSC sur un cœur en feutre recyclé. Absorption Classe A, finitions chêne et noyer naturels. Fabriqué en Europe.",
-    "interiorDescription": "Panneaux muraux acoustiques modulaires fabriqués à partir de 100% de textiles recyclés. Absorption sonore Classe A (αw 1,0), revêtement lavable amovible, fabriqué en Belgique. À partir de €387 par lot.",
-    "rpetPanelDescription": "Panneaux acoustiques plats polyvalents en 100% PET recyclé. Usinable comme du MDF, certifié OEKO-TEX®, émissions Classe A+. Murs, plafonds, mobilier. Fabriqué en Pologne.",
-    "rpetFlexGrooveTitle": "Panneaux acoustiques flexibles rPET Flex Groove | Re-Sound",
-    "rpetFlexGrooveDescription": "Panneaux acoustiques rainurés flexibles, fabriqués à partir de PET 100% recyclé. Pliables pour surfaces courbes, colonnes et installations sur mesure. Certifiés OEKO-TEX®.",
+    "rwoodGrooveDescription": "Panneaux acoustiques en bois rainuré, placage chêne et noyer FSC sur âme en feutre recyclé. Absorption classe A, 4 variantes de lames, 5 finitions.",
+    "interiorDescription": "Panneaux muraux acoustiques modulaires en textile recyclé : absorption classe A (αw 1,0), housse amovible lavable, fabriqués en Belgique. Dès 387 € le lot.",
+    "rpetPanelDescription": "Panneau acoustique en PET recyclé à usiner comme du MDF : couper, fraiser, percer, peindre. 16 coloris, 12/18/24 mm, OEKO-TEX®. Fabriqué en Pologne.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove — panneaux PET flexibles pour courbes | Re-Sound",
+    "rpetFlexGrooveDescription": "Panneaux acoustiques en PET flexibles pour murs courbes, colonnes et plafonds : rainures en V, rayon minimal 500 mm, 12 coloris, certifiés OEKO-TEX®.",
     "interiorTitle": "Interior Panneaux Muraux Acoustiques | Re-Sound",
     "solidTitle": "Solid Panneaux Muraux Acoustiques | Re-Sound",
-    "solidDescription": "Panneaux muraux acoustiques grand format pour une absorption sonore performante. 1200 × 600 mm, système d'installation à crochets, 100% matériaux recyclés. Fabriqué en Belgique.",
+    "solidDescription": "Panneaux muraux acoustiques grand format (1200 × 600 mm) pour une absorption performante. Pose sur crochets, âme en textile recyclé, fabriqués en Belgique.",
     "faqTitle": "FAQ — Panneaux Acoustiques Re-Sound",
-    "faqDescription": "Réponses aux questions fréquentes sur les panneaux acoustiques Re-Sound : fonctionnement de l'absorption, classifications au feu, délais, programme de reprise circulaire et choix des produits.",
-    "duoDescription": "Une cabine, deux configurations : Flex accueille deux personnes pour une réunion en tête-à-tête ; Work offre à une seule personne un bureau pleine largeur. Emprise au sol de 2 m², bureau électrique, prise 230V, ventilation complète. Gamme acoustique Re-Sound.",
-    "soloFlexDescription": "Cabine téléphonique acoustique pour une personne, conçue pour les appels en concentration et le travail de fond. Emprise au sol de 1 m², bureau assis-debout intégré, prise 230V, USB-C et ventilation silencieuse. Fait partie de la gamme de cabines Re-Sound.",
-    "modularXlDescription": "Pod de réunion acoustique modulable. La base accueille 6 personnes, extensible jusqu'à 10 par segments de 90 cm. Réduction de la parole de 25,9 dB(A), équipement A/V complet, entrée pensée pour l'accessibilité.",
-    "modularXlTitle": "Modular XL Pod de réunion acoustique modulable | Re-Sound",
-    "duoTitle": "Duo Cabine acoustique en deux configurations | Re-Sound",
-    "soloFlexTitle": "Solo Flex Cabine acoustique individuelle | Re-Sound",
+    "faqDescription": "Réponses aux questions fréquentes sur les panneaux acoustiques et cabines Re-Sound : absorption, classement au feu, délais, reprise et choix des produits.",
+    "duoDescription": "Cabine acoustique deux personnes, deux configurations : Flex accueille deux personnes en réunion, Work offre un bureau pleine largeur. 2 m², ventilée.",
+    "soloFlexDescription": "Cabine acoustique pour une personne dédiée aux appels : emprise 1 m², bureau assis-debout, 230 V et USB-C, ventilation silencieuse, réduction de 24 dB(A).",
+    "modularXlDescription": "Pod de réunion acoustique pour 6 à 10 personnes : base extensible par segments de 90 cm, réduction de 25,9 dB(A), équipement A/V complet, accès facile.",
+    "modularXlTitle": "Modular XL — pod de réunion acoustique 6–10 personnes | Re-Sound",
+    "duoTitle": "Duo — cabine acoustique 2 personnes & phone box | Re-Sound",
+    "soloFlexTitle": "Solo Flex — cabine acoustique 1 personne, bureau | Re-Sound",
     "whereToBuyTitle": "Où voir et acheter Re-Sound",
-    "whereToBuyDescription": "Découvrez Re-Sound en personne dans notre showroom de Beveren-Waas, demandez un kit d'échantillons gratuit, réservez une visite vidéo en direct ou organisez une démonstration sur site partout au Benelux.",
+    "whereToBuyDescription": "Découvrez Re-Sound dans notre showroom de Beveren-Waas, demandez un kit d’échantillons gratuit, réservez une visite vidéo ou une démo sur site au Benelux.",
     "partnerTitle": "Programme partenaire · programme trade et revendeur",
-    "partnerDescription": "Programme trade et partenaire Re-Sound pour architectes, designers, revendeurs et distributeurs à travers l'Europe. Documentation prête pour la prescription, protection régionale des comptes et support direct des personnes qui ont conçu la gamme."
+    "partnerDescription": "Programme partenaire Re-Sound pour architectes, designers, revendeurs et distributeurs en Europe : documentation, protection régionale, support direct."
   },
   "nav": {
     "products": "Produits",
@@ -71,8 +71,8 @@
     },
     "rwood": {
       "badge": "Série rWood · Ligne de Finitions Naturelles",
-      "title": "Panneaux acoustiques avec",
-      "titleHighlight": "une âme naturelle.",
+      "title": "Panneaux acoustiques circulaires et cabines acoustiques,",
+      "titleHighlight": "fabriqués par nos soins",
       "subtitle": "Vrai placage bois sur un cœur acoustique recyclé haute performance. Chaleur biophilique et absorption sonore Classe A — parfaitement combinées.",
       "ctaPrimary": "Découvrir rWood",
       "ctaSecondary": "Voir les Finitions",
@@ -178,7 +178,7 @@
       "clearAndShowAll": "Effacer les filtres et tout afficher",
       "panel": "Panneaux acoustiques",
       "use": "Usage",
-      "booth": "Cabines"
+      "booth": "Cabines acoustiques"
     },
     "titleHighlight": "pour chaque espace.",
     "rwood-perf": {
@@ -220,15 +220,15 @@
     },
     "duo": {
       "title": "Duo",
-      "description": "Une cabine, deux configurations. Flex installe deux personnes pour une réunion ; Work offre à une seule personne un bureau pleine largeur. Réduction de 26 dB(A)."
+      "description": "Cabine acoustique deux personnes à deux configurations : Flex accueille deux personnes en réunion, Work offre un bureau pleine largeur."
     },
     "solo-flex": {
       "title": "Solo Flex",
-      "description": "Cabine acoustique pour une personne, pour les appels en concentration et le travail de fond. Emprise au sol de 1 m², bureau assis-debout intégré, réduction de la parole de 24 dB(A)."
+      "description": "Cabine acoustique une personne pour les appels et le travail concentré. Emprise 1 m², bureau assis-debout intégré, réduction de 24 dB(A)."
     },
     "modular-xl": {
       "title": "Modular XL",
-      "description": "Pod de réunion modulable. Base pour 6 personnes, extensible jusqu'à 10 par segments modulaires de 90 cm. Réduction de la parole de 25,9 dB(A)."
+      "description": "Pod de réunion acoustique modulable. La base accueille 6 personnes, extensible jusqu’à 10 par segments de 90 cm. Réduction de 25,9 dB(A)."
     }
   },
   "specs": {
@@ -267,7 +267,7 @@
         "description": "50+ couleurs, tailles personnalisées et diverses options de montage."
       }
     },
-    "belgianLabel": "Belge"
+    "belgianLabel": "Nos usines"
   },
   "circular": {
     "tag": "ÉCONOMIE CIRCULAIRE",
@@ -927,7 +927,7 @@
   "interiorPage": {
     "hero": {
       "tag": "PANNEAUX MURAUX ACOUSTIQUES",
-      "title": "Interior",
+      "title": "Interior : panneaux muraux acoustiques modulaires en textile recyclé",
       "tagline": "Acoustique Modulaire, Conçu pour le Circulaire",
       "description": "Transformez votre espace avec Re-Sound Interior — un système mural acoustique complet fabriqué à partir de matériaux recyclés. Entièrement personnalisable, facile à installer et conçu pour être recyclé en fin de vie.",
       "uspAbsorption": "αw 1.0 Absorption",
@@ -1040,7 +1040,7 @@
   "solidPage": {
     "hero": {
       "tag": "PANNEAUX MURAUX ACOUSTIQUES",
-      "title": "Solid",
+      "title": "Solid : panneaux muraux acoustiques grand format",
       "tagline": "Acoustique Performante, Installation Effortless",
       "description": "Découvrez Re-Sound Solid — votre panneau mural acoustique haute performance conçu pour une efficacité maximale avec un effort minimal. Panneaux grand format avec une absorption sonore exceptionnelle, une installation facile par crochets et des principes de conception circulaire.",
       "usp1": "Haute Absorption",
@@ -1176,7 +1176,7 @@
   "dividePage": {
     "hero": {
       "tag": "CLOISON ACOUSTIQUE",
-      "title": "Divide",
+      "title": "Divide : cloisons acoustiques autoportantes",
       "tagline": "Cliquez pour Délimiter, Divisez avec Style",
       "description": "Découvrez Re-Sound Divide — le premier écran acoustique autoportant conçu pour un usage flexible.",
       "usp1": "Connexion Magnétique",
@@ -1305,7 +1305,7 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "PANNEAUX ACOUSTIQUES EN PET RECYCLÉ",
-      "title": "rPET - Groove",
+      "title": "rPET Groove : panneaux acoustiques en PET rainuré, 12 coloris",
       "tagline": "Des Bouteilles au Silence",
       "description": "Transformez votre espace avec les panneaux acoustiques rPET - Groove. Fabriqués à partir de 100% de bouteilles plastiques recyclées, ces élégants panneaux rainurés allient design contemporain et absorption sonore exceptionnelle. L'efficacité rencontre l'élégance.",
       "usp1": "100% PET Recyclé",
@@ -1554,7 +1554,7 @@
   "rpetPanelPage": {
     "hero": {
       "tag": "PANNEAUX ACOUSTIQUES EN PET RECYCLÉ",
-      "title": "rPET - Panel",
+      "title": "rPET Panel : le panneau acoustique en PET recyclé qui s’usine comme du MDF",
       "tagline": "Silence Durable, Possibilités Infinies",
       "description": "Transformez n’importe quel espace avec les panneaux acoustiques rPET - Panel. {pct, select, unknown {Fabriqués à partir de bouteilles PET recyclées, ces} other {Fabriqués à partir de {pct}% de bouteilles PET recyclées, ces}} absorbeurs sonores légers mais puissants offrent des performances acoustiques maximales avec un impact environnemental minimal.",
       "usp1": "PET 100% Recyclable",
@@ -1765,7 +1765,7 @@
   "rwoodGroovePage": {
     "hero": {
       "tag": "PANNEAUX ACOUSTIQUES EN BOIS",
-      "title": "rWood - Groove",
+      "title": "rWood Groove : panneaux acoustiques en bois rainuré, chêne et noyer",
       "tagline": "Beauté Naturelle, Acoustique Parfaite",
       "description": "Apportez chaleur naturelle et style sophistiqué à tout espace avec les panneaux acoustiques rWood - Groove. Des placages premium de chêne et noyer combinés à un dos en feutre absorbant créent l'harmonie entre esthétique et acoustique.",
       "usp1": "Bois Certifié FSC®",
@@ -1951,7 +1951,7 @@
   "rwoodPerfPage": {
     "hero": {
       "tag": "PANNEAUX ACOUSTIQUES EN BOIS PERFORÉ",
-      "title": "rWood - Perf",
+      "title": "rWood Perf : panneaux acoustiques en bois perforé",
       "tagline": "Perforations de Précision, Absorption Maximale",
       "description": "Panneaux acoustiques percés haute performance alliant beauté du bois naturel et absorption sonore exceptionnelle. Un cœur MDF à retardant de flamme et des chants surépaissés offrent les niveaux les plus élevés de sécurité incendie et de contrôle acoustique.",
       "usp1": "Perforations Rondes",
@@ -2130,7 +2130,7 @@
   "rwoodMicroPage": {
     "hero": {
       "tag": "PANNEAUX ACOUSTIQUES MICRO-PERFORÉS",
-      "title": "rWood - Micro",
+      "title": "rWood Micro : panneaux acoustiques en bois microperforé",
       "tagline": "Perforation Invisible, Acoustique Exceptionnelle",
       "description": "Découvrez la beauté du bois naturel associée aux performances acoustiques d'une technologie de micro-perforation avancée. Des trous pratiquement invisibles offrent une absorption sonore Classe A tout en préservant l'aspect pur et homogène du placage bois premium.",
       "usp1": "Perforations Invisibles",
@@ -2321,7 +2321,7 @@
   "rwoodVeneerPage": {
     "hero": {
       "tag": "ARTISANAT",
-      "title": "rWood - Panel",
+      "title": "rWood Panel : panneaux acoustiques en placage bois, 10 essences",
       "tagline": "L'Élégance du Bois Véritable. Prêt à l'Emploi.",
       "description": "Panneaux MDF préfinis, brossés, teintés et laqués — sans finition supplémentaire requise. La beauté authentique du bois massif sans compromis.",
       "usp1": "Certifié FSC®",
@@ -2581,7 +2581,7 @@
       "usp1": "Rayon Min. 500mm",
       "usp2": "Retardant au Feu",
       "usp3": "100% PET Recyclé",
-      "title": "rPET Flex-Groove",
+      "title": "rPET Flex Groove : panneaux acoustiques en PET flexibles pour les courbes",
       "colorSelector": "Sélectionner la Couleur",
       "colorPlaceholder": "Sélectionner une couleur",
       "description2": ""
@@ -2946,7 +2946,7 @@
     },
     "crosslinks": {
       "tag": "AUSSI DANS LA GAMME",
-      "title": "Autres cabines de la gamme",
+      "title": "Autres cabines acoustiques de la gamme",
       "solo-flex": {
         "name": "Solo Flex",
         "tag": "Cabine individuelle"
@@ -2963,8 +2963,8 @@
   },
   "soloFlexPage": {
     "hero": {
-      "tag": "CABINE ACOUSTIQUE INDIVIDUELLE",
-      "title": "Solo Flex",
+      "tag": "CABINE ACOUSTIQUE · 1 PERSONNE",
+      "title": "Solo Flex : la cabine téléphonique de bureau pour une personne",
       "tagline": "Un mètre carré de calme, partout où vous en avez besoin.",
       "description": "Solo Flex est une cabine acoustique mono-poste conçue pour les appels en concentration, les visioconférences et le travail de fond. Une emprise au sol réduite, un bureau honnête qui passe d'assis à debout, et le type d'isolation phonique qui fait disparaître l'open space.",
       "statFootprint": "Emprise au sol",
@@ -3103,8 +3103,8 @@
   },
   "duoPage": {
     "hero": {
-      "tag": "CABINE EN DEUX CONFIGURATIONS",
-      "title": "Duo",
+      "tag": "CABINE ACOUSTIQUE · 2 PERSONNES",
+      "title": "Duo : la cabine acoustique deux places et phone box de concentration",
       "tagline": "Une coque. Deux espaces totalement différents.",
       "description": "Duo est une cabine unique qui assume vraiment deux usages. La configuration Flex place un petit bureau électrique au centre — deux personnes, face à face, pour une réunion concentrée. La configuration Work installe un bureau pleine largeur le long d'un mur — une personne, trois écrans, un vrai poste de travail. Vous choisissez celle qui correspond à votre étage à la commande.",
       "statFootprint": "Emprise au sol",
@@ -3274,8 +3274,8 @@
   },
   "modularXlPage": {
     "hero": {
-      "tag": "POD DE RÉUNION MODULABLE",
-      "title": "Modular XL",
+      "tag": "POD DE RÉUNION ACOUSTIQUE · 6–10 PERSONNES",
+      "title": "Modular XL : le pod de réunion acoustique pour 6 à 10 personnes",
       "tagline": "Une salle de réunion qui s'agrandit quand vous avez besoin de plus de chaises.",
       "description": "Modular XL est la plus grande cabine de la gamme Re-Sound — et la seule conçue pour grandir après l'installation. La base accueille confortablement six personnes. À partir de là, des segments modulaires de 90 cm prolongent la cabine dans une direction ou l'autre, jusqu'à une capacité maximale de dix. Mêmes performances acoustiques, même logique de ventilation, à l'échelle.",
       "statFootprint": "Emprise au sol (base)",
