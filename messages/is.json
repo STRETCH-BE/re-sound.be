@@ -1,49 +1,49 @@
 {
   "meta": {
-    "homeTitle": "Re-Sound | Endurunnið frá uppruna. Hringrásarmiðuð hönnun.",
-    "homeDescription": "Hávirkar hljóðlausnir úr endurunnnum efnum. Við breytum úrgangi í þögn – hannað fyrir plánetuna, framleitt í Belgíu.",
+    "homeTitle": "Hljóðdeyfiplötur og símaklefar, framleitt í Belgíu | Re-Sound",
+    "homeDescription": "Hringrásarmiðaðar hljóðdeyfiplötur (textíl, rWood spónn, rPET) og símaklefar, framleitt í eigin verksmiðjum í Belgíu og Póllandi. Ókeypis skilakerfi.",
     "productsTitle": "Vörur",
     "productsDescription": "Hringrásar hljóðvistarplötur og símaklefar úr eigin verksmiðjum: textíl (Interior, Solid, Divide), rWood, rPET og klefar (Solo Flex, Duo, Modular XL).",
-    "aboutTitle": "About Re-Sound",
+    "aboutTitle": "Um Re-Sound",
     "aboutDescription": "Kynntu þér markmið okkar: hringrásar hljóðlausnir úr endurunnum efnum, framleiddar í okkar eigin verksmiðjum í Belgíu og Póllandi.",
     "sustainabilityTitle": "Sjálfbærni",
     "sustainabilityDescription": "Uppgötvaðu hvernig við lokum hringrásina með fullkomlega hringrásarlegum hljóðpanelunum okkar — frá endurunnnum efnum til ókeypis endurheimt þjónustu.",
     "contactTitle": "Hafðu samband",
-    "contactDescription": "Get in touch with Re-Sound for quotes, questions, or partnership inquiries.",
-    "blogTitle": "Blog",
-    "blogDescription": "Insights on circular economy, acoustics, and sustainable design from the Re-Sound team.",
-    "interiorTitle": "Interior Acoustic Wall Panels | Re-Sound",
-    "interiorDescription": "Hlutbundin hljóðpanel fyrir veggi úr 100% endurunnnum textíl. Hljóðfrásog í flokki A (αw 1,0), fjarlægjanlegar hlífar, framleitt í Belgíu.",
-    "solidTitle": "Solid Acoustic Wall Panels | Re-Sound",
-    "solidDescription": "Stórsnið hljóðpanel fyrir veggi til kraftmikils hljóðfrásogs. 1200 × 600 mm, krókauppsetningarkerfi, hringrásarlegur hönnun.",
-    "divideTitle": "Divide Freestanding Acoustic Screens | Re-Sound",
-    "divideDescription": "Frjálsstæðar hljóðeinangrunarskiptar með seglamagntengingareiningu. Sveigjanlegur rýmisstjórnun, tvíhliða frásog.",
-    "rwoodGrooveTitle": "rWood Groove Hljóðfræðileg Viðarpanel | Re-Sound",
-    "rwoodGrooveDescription": "Úrvalsdrillaðar hljóðpaneler með FSC®-vottaðri viðarfineera á endurunnnum filtukjarna. Frásog í flokki A.",
-    "rwoodPerfTitle": "rWood Perf Gataðar Hljóðfræðilegar Viðarpanel | Re-Sound",
-    "rwoodPerfDescription": "Klassískar gataðar viðarhljóðpaneler með FSC®-vottuðu fineer. Breidbandsfrásog, stillanlegar gatamynstrið.",
-    "rwoodMicroTitle": "rWood Micro Örgataðar Hljóðfræðilegar Viðarpanel | Re-Sound",
-    "rwoodMicroDescription": "Nákvæmar örgataðar hljóðfræðilegar viðarpaneler. Tvöfaldur frásogsbúnaður, hæstu brunaöryggi.",
-    "rwoodVeneerTitle": "rWood Panel Hljóðfræðilegar Viðarfineerpaneler | Re-Sound",
-    "rwoodVeneerDescription": "Sléttar viðarfineerhljóðpaneler. 10 valdar viðartegundir, húsgagnabyggingargæði, EPD tiltækt.",
-    "rpetGrooveTitle": "rPET Groove Endurunnin PET Hljóðpanel | Re-Sound",
-    "rpetGrooveDescription": "Drillað hljóðpanel úr 100% endurunnnum PET-flöskum. 12 hönnunarliturlit, 3 þykktir (12/24/36 mm).",
-    "rpetPanelTitle": "rPET Panel Endurunnin PET Hljóðpanel | Re-Sound",
-    "rpetPanelDescription": "Fjölhæfar flettar hljóðpaneler úr 100% endurunnnum PET. Unnið eins og MDF, OEKO-TEX® vottað, flokkur A.",
-    "rpetFlexGrooveTitle": "rPET Flex Groove sveigjanleg hljóðplötur | Re-Sound",
-    "rpetFlexGrooveDescription": "Sveigjanlegar rifluðar hljóðplötur úr 100% endurunnu PET. Beygjanlegar fyrir bogna fleti, súlur og sérsmíðaðar uppsetningar. OEKO-TEX®-vottaðar.",
+    "contactDescription": "Hafðu samband við Re-Sound vegna tilboða, spurninga eða fyrirspurna um samstarf.",
+    "blogTitle": "Blogg",
+    "blogDescription": "Innsýn í hringrásarhagkerfið, hljóðvist og sjálfbæra hönnun frá Re-Sound teyminu.",
+    "interiorTitle": "Interior – hljóðdeyfiplötur fyrir veggi | Re-Sound",
+    "interiorDescription": "Einingaskiptar hljóðdeyfiplötur fyrir veggi úr endurunnu textíli: ísog í flokki A (αw 1,0), laust þvottahæft áklæði, framleitt í Belgíu. Frá €387 á sett.",
+    "solidTitle": "Solid – hljóðdeyfiplötur fyrir veggi | Re-Sound",
+    "solidDescription": "Stórar hljóðdeyfiplötur fyrir veggi (1200 × 600 mm) fyrir öflugt hljóðísog. Uppsetning á krókum, kjarni úr endurunnu textíli, framleitt í Belgíu.",
+    "divideTitle": "Divide – frístandandi hljóðskilrúm | Re-Sound",
+    "divideDescription": "Frístandandi hljóðskilrúm með segultengdum einingum: ísog á báðum hliðum, engin uppsetning, endurunnið textíl. Framleitt í Belgíu.",
+    "rwoodGrooveTitle": "rWood Groove – rifjaðar hljóðdeyfiplötur, eik/hnota | Re-Sound",
+    "rwoodGrooveDescription": "Rifjaðar viðarhljóðdeyfiplötur með FSC-vottuðum eikar- og hnotuspón á kjarna úr endurunnum filti. Ísog í flokki A, 4 listagerðir, 5 áferðir.",
+    "rwoodPerfTitle": "rWood Perf – götaðar hljóðdeyfiplötur úr viði | Re-Sound",
+    "rwoodPerfDescription": "Götaðar viðarhljóðdeyfiplötur með FSC-vottuðum spón: fjögur götunarmynstur fyrir breiðbandsísog, 8 áferðir, eldtefjandi kjarni.",
+    "rwoodMicroTitle": "rWood Micro – örgötaðar hljóðdeyfiplötur úr viði | Re-Sound",
+    "rwoodMicroDescription": "Örgötaðar viðarhljóðdeyfiplötur (0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur B-s1,d0, möguleiki á baklýsingu.",
+    "rwoodVeneerTitle": "rWood Panel – spónlagðar hljóðdeyfiplötur, 10 tegundir | Re-Sound",
+    "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 10 viðartegundum: húsgagnagæði, FSC-vottaðar, EPD fáanlegt. Burstaðar, litaðar og lakkaðar, tilbúnar í uppsetningu.",
+    "rpetGrooveTitle": "rPET Groove – rifjaðar PET hljóðdeyfiplötur, 12 litir | Re-Sound",
+    "rpetGrooveDescription": "Rifjaðar PET hljóðdeyfiplötur úr endurunnum flöskum: 12 litir, 3 þykktir (12/24/36 mm), NRC allt að 0,90, brunaflokkur B-s1,d0. Framleitt í Póllandi.",
+    "rpetPanelTitle": "rPET Panel – endurunnin PET hljóðdeyfiplata, 16 litir | Re-Sound",
+    "rpetPanelDescription": "Hljóðdeyfiplata úr endurunnu PET sem þú vinnur eins og MDF: saga, fræsa, bora og mála. 16 litir, 12/18/24 mm, OEKO-TEX® vottuð. Framleitt í Póllandi.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove – sveigjanlegar PET hljóðdeyfiplötur | Re-Sound",
+    "rpetFlexGrooveDescription": "Sveigjanlegar PET hljóðdeyfiplötur fyrir bogna veggi, súlur og loft: V-skornar rifur, lágmarksradíus 500 mm, 12 litir, OEKO-TEX® vottaðar.",
     "faqTitle": "FAQ — Re-Sound Hljóðplötur",
-    "faqDescription": "Svör við algengum spurningum um Re-Sound hljóðplötur: hvernig ísog virkar, eldvarnarflokkanir, afhendingartímar, hringrásar-skilaforrit og vöruval.",
-    "duoDescription": "Einn klefi, tvær uppsetningar: Flex rúmar tvo til einbeitts fundar; Work veitir einum manni skrifborð í fullri breidd. 2 m² fótspor, rafdrifið skrifborð, 230V tengill, full loftræsting. Re-Sound hljóðlína.",
-    "soloFlexDescription": "Hljóðeinangraður símaklefi fyrir einn, hannaður fyrir einbeitt símtöl og djúpa vinnu. 1 m² fótspor, innbyggt sit-stand skrifborð, 230V tengill, USB-C og hljóðlát loftræsting. Hluti af Re-Sound klefaröðinni.",
-    "modularXlDescription": "Skalanlegur hljóðeinangraður fundarklefi. Grunnurinn rúmar 6 manns, hægt að stækka í 10 með 90 cm einingum. 25,9 dB(A) talskerðing, fullur A/V búnaður, aðgengilegur inngangur frá hönnun.",
-    "modularXlTitle": "Modular XL Skalanlegur hljóðeinangraður fundarklefi | Re-Sound",
-    "duoTitle": "Duo Hljóðeinangraður klefi í tveimur uppsetningum | Re-Sound",
-    "soloFlexTitle": "Solo Flex Hljóðeinangraður einmannsklefi | Re-Sound",
-    "whereToBuyTitle": "Hvar þú sérð og kaupir Re-Sound",
-    "whereToBuyDescription": "Upplifðu Re-Sound persónulega í sýningarsalnum okkar í Beveren-Waas, biddu um ókeypis sýnaspakka, bókaðu lifandi myndbandsskoðun eða skipuleggðu kynningu á staðnum hvar sem er á Benelux-svæðinu.",
+    "faqDescription": "Svör við algengum spurningum um hljóðdeyfiplötur og símaklefa frá Re-Sound: ísog, brunaflokkar, afhendingartími, skilakerfi og vöruval.",
+    "soloFlexTitle": "Solo Flex – hljóðeinangraður símaklefi fyrir einn | Re-Sound",
+    "soloFlexDescription": "Hljóðeinangraður eins manns símaklefi fyrir einbeitt símtöl: 1 m² gólfflötur, sitja/standa-borð, 230 V og USB-C, hljóðlát loftræsting, 24 dB(A) taldeyfing.",
+    "duoTitle": "Duo – símaklefi fyrir tvo og einbeitingarklefi | Re-Sound",
+    "duoDescription": "Símaklefi fyrir tvo á skrifstofuna með tveimur útfærslum: Flex rúmar tvo á fundi, Work gefur einum skrifborð í fullri breidd. 2 m², 230 V, loftræstur.",
+    "modularXlTitle": "Modular XL – hljóðeinangraður fundarklefi fyrir 6–10 | Re-Sound",
+    "modularXlDescription": "Hljóðeinangraður fundarklefi fyrir 6 til 10 manns: stækkaðu grunninn í 90 cm einingum, 25,9 dB(A) taldeyfing, fullur A/V-búnaður, aðgengilegur inngangur.",
     "partnerTitle": "Samstarfsáætlun · trade- og söluaðiláætlun",
-    "partnerDescription": "Re-Sound trade- og samstarfsáætlun fyrir arkitekta, hönnuði, söluaðila og dreifingaraðila víðs vegar um Evrópu. Skjöl tilbúin fyrir útboð, svæðisbundin reikningsvernd og bein aðstoð frá fólkinu sem hannaði línuna."
+    "partnerDescription": "Samstarfsáætlun Re-Sound fyrir arkitekta, hönnuði, söluaðila og dreifingaraðila um alla Evrópu: útboðsgögn, svæðisvernd, bein aðstoð.",
+    "whereToBuyTitle": "Hvar þú sérð og kaupir Re-Sound",
+    "whereToBuyDescription": "Sjáðu Re-Sound í eigin persónu í sýningarsal okkar í Beveren-Waas, fáðu ókeypis sýnishornasett, bókaðu myndbandsskoðun eða kynningu á staðnum í Benelux."
   },
   "nav": {
     "products": "Vörur",
@@ -51,9 +51,9 @@
     "sustainability": "Sjálfbærni",
     "contact": "Samband",
     "cta": "Biðja um tilboð",
-    "faq": "FAQ",
-    "whereToBuy": "Hvar kaupa",
+    "faq": "Algengar spurningar",
     "partner": "Samstarf",
+    "whereToBuy": "Hvar kaupa",
     "rangeRpet": "PET hljóðdeyfiplötur",
     "rangeRwood": "Hljóðdeyfiplötur úr viði",
     "rangeBooths": "Hljóðeinangraðir símaklefar"
@@ -61,8 +61,8 @@
   "hero": {
     "rwood": {
       "badge": "rWood Röð · Náttúruleg Yfirborðslína",
-      "title": "Hljóðpanels með",
-      "titleHighlight": "náttúrulega sál.",
+      "title": "Hringrásarmiðaðar hljóðdeyfiplötur og símaklefar,",
+      "titleHighlight": "úr okkar eigin verksmiðjum",
       "subtitle": "Raunverulegt viðarfineera á hávirku endurunnnu hljóðkjarna. Lífræn hlýja og hljóðfrásog í flokki A í einu paneli.",
       "ctaPrimary": "Uppgötvaðu rWood",
       "ctaSecondary": "Skoða yfirborð",
@@ -82,8 +82,8 @@
       "ctaPrimary": "Sjá allar vörur",
       "ctaSecondary": "Hvernig það virkar",
       "statRecycled": "Endurunnin inntaka",
-      "statLandfill": "Landfill waste",
-      "statFreeLabel": "Free",
+      "statLandfill": "Urðunarúrgangur",
+      "statFreeLabel": "Ókeypis",
       "statTakeback": "Til baka",
       "statColors": "Litir",
       "pill1": "100 % endurunnið",
@@ -95,7 +95,7 @@
   "ticker": {
     "recycled": "Endurvinnanlegar efni",
     "classA": "Flokk A hljóðfrásog",
-    "fire": "B-s1,d0 Fire Rated",
+    "fire": "Brunaflokkur B-s1,d0",
     "takeback": "Ókeypis endurheimt forrit",
     "veneer": "Raunverulegt viðarfineera yfirborð",
     "colors": "Yfir 50 staðalitir",
@@ -103,7 +103,7 @@
     "factories": "Úr eigin verksmiðjum"
   },
   "materials": {
-    "tag": "WHAT WE USE",
+    "tag": "ÞAÐ SEM VIÐ NOTUM",
     "title": "Úr úrgangi í furðu",
     "subtitle": "Við breytum ýmsum endurunnnum efnum í hávirkt hljóðpanel.",
     "jeans": "Gallabuxur",
@@ -116,29 +116,29 @@
     "mattresses": "Dýnur"
   },
   "rwood": {
-    "tag": "rWood Series — Natural Finish Line",
-    "heroTitle": "Where nature",
-    "heroTitleHighlight": "meets acoustics.",
+    "tag": "rWood serían — náttúruleg áferðarlína",
+    "heroTitle": "Þar sem náttúran",
+    "heroTitleHighlight": "mætir hljóðvist.",
     "heroSubtitle": "Endurunninn hljóðkjarni klæddur með raunverulegu viðarfineera. Tvær útgáfur: Solid fyrir saumlausa glæsileika, Gatuð fyrir aukið frásog.",
-    "ctaExplore": "Explore rWood",
+    "ctaExplore": "Skoða rWood",
     "ctaSample": "Biðja um sýnishorn",
     "floatTag": "rWood · RW-W-M-OAK · Eik Náttúrulegur",
-    "specsTag": "Technical Specifications",
-    "specsTitle": "Engineered for acoustic perfection",
+    "specsTag": "Tæknilýsing",
+    "specsTitle": "Hannað fyrir fullkomna hljóðvist",
     "specsBody": "rWood-kjarni er gerður úr þjöppuðum endurunnnum textílþráðum — sama hávirka efnið og Interior- og Solid-panelarnar okkar, með klæðningu úr premium FSC®-vottuðu viðarfineera.",
     "specAbsorptionKey": "Hljóðfrásog",
     "specFireKey": "Brunamat",
     "specThicknessKey": "Þykkt",
     "specVariantsKey": "Útgáfur",
-    "specVariantsVal": "Solid & Perforated",
-    "specCoreKey": "Core Material",
-    "specCoreVal": "Recycled textile",
-    "specStandardKey": "Standard Sizes",
-    "specStandardVal": "Custom on request",
-    "swatchesTag": "Veneer Collection",
-    "swatchesTitle": "Choose your natural finish",
-    "swatchesBody": "Five wood species, each with its own character. All applied over a 100% recycled acoustic core.",
-    "ctaFullSpec": "Full Specifications",
+    "specVariantsVal": "Heilar og götaðar",
+    "specCoreKey": "Kjarnaefni",
+    "specCoreVal": "Endurunnið textíl",
+    "specStandardKey": "Staðalstærðir",
+    "specStandardVal": "Sérsmíði eftir óskum",
+    "swatchesTag": "Spónsafn",
+    "swatchesTitle": "Veldu þína náttúrulegu áferð",
+    "swatchesBody": "Fimm viðartegundir, hver með sinn karakter. Allar lagðar á 100% endurunninn hljóðkjarna.",
+    "ctaFullSpec": "Full tæknilýsing",
     "ctaDatasheet": "Hlaða niður gagnablaði",
     "ctaOrderSamples": "Panta sýnishorn"
   },
@@ -155,8 +155,8 @@
     "learnCircular": "Hringrásarferli okkar",
     "relatedTag": "FLEIRI VÖRUR",
     "relatedTitle": "Tengdar vörur",
-    "ctaTitle": "Ready to transform your space?",
-    "ctaSubtitle": "Contact us for a custom quote tailored to your acoustic needs.",
+    "ctaTitle": "Viltu umbreyta rýminu þínu?",
+    "ctaSubtitle": "Hafðu samband og fáðu sérsniðið tilboð sem hæfir þínum hljóðvistarþörfum.",
     "ctaPrimary": "Fá tilboð",
     "filters": {
       "title": "Sía vörur",
@@ -169,27 +169,27 @@
       "wallPanel": "Veggpanel",
       "ceilingPanel": "Loftpanel",
       "divider": "Skipting",
-      "showingAll": "Showing all {count} products",
-      "showingFiltered": "Showing {filtered} of {total} products",
+      "showingAll": "Sýni allar {count} vörur",
+      "showingFiltered": "Sýni {filtered} af {total} vörum",
       "noResults": "Engar vörur passa við síurnar þínar",
       "clearAndShowAll": "Hreinsa síur og sýna allt",
-      "panel": "Hljóðplötur",
       "use": "Notkun",
-      "booth": "Hljóðklefar"
+      "panel": "Hljóðplötur",
+      "booth": "Símaklefar fyrir skrifstofur"
     },
     "interior": {
       "title": "Interior",
-      "description": "Expandable acoustic panels for walls and ceilings. Perfect for offices, restaurants, and public spaces.",
+      "description": "Stækkanlegar hljóðdeyfiplötur fyrir veggi og loft. Fullkomnar fyrir skrifstofur, veitingastaði og almenningsrými.",
       "fullDescription": "Interior panelarnar okkar eru hannaðar fyrir óaðfinnanlega samþættingu í hvaða rými sem er. Gerðar úr 100% endurunnnum textíl og fáanlegar í yfir 50 litum."
     },
     "solid": {
       "title": "Solid",
-      "description": "Minimal, high-density panels for maximum acoustic performance. Ideal for demanding environments.",
+      "description": "Látlausar háþéttniplötur fyrir hámarks hljóðvist. Tilvaldar fyrir krefjandi umhverfi.",
       "fullDescription": "Solid paneler sameina lágmarks fagurfræði með hámarkshljóðfræðilegri frammistöðu. Háþéttleika uppbygging þeirra tryggir framúrskarandi hljóðfrásog."
     },
     "divide": {
       "title": "Divide",
-      "description": "Freestanding acoustic dividers for flexible space management. Mobile and modular.",
+      "description": "Frístandandi hljóðskilrúm fyrir sveigjanlega rýmisnýtingu. Færanleg og einingaskipt.",
       "fullDescription": "Divide býður upp á sveigjanlegar rýmisstjórnun með frjálsstæðum hljóðpanelum. Fullkomið fyrir opnar skrifstofur, samstarfsrými og viðburðarsvæði."
     },
     "rwood-groove": {
@@ -199,12 +199,12 @@
     },
     "rpet-groove": {
       "title": "rPET - Groove",
-      "description": "Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.",
+      "description": "Sjálfbærar rifjaðar hljóðdeyfiplötur úr endurunnu PET. Nútímalegt útlit með framúrskarandi hljóðvist.",
       "fullDescription": "rPET - Groove paneler hafa sérkennikegt línulegt mynstur búið til úr 100% endurunnnum PET-flöskum."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
-      "description": "Versatile recycled PET acoustic panels. Clean design for walls and ceilings with superior sound control.",
+      "description": "Fjölhæfar hljóðdeyfiplötur úr endurunnu PET. Hrein hönnun fyrir veggi og loft með yfirburða hljóðstjórnun.",
       "fullDescription": "rPET - Panel býður upp á hreina, lágmarks fagurfræði gerða alfarið úr endurunnnum PET-flöskum."
     },
     "rpet-circle": {
@@ -240,11 +240,11 @@
     "highlights": {
       "absorption": {
         "title": "Hljóðfrásog",
-        "value": "Up to αw 1.00"
+        "value": "Allt að αw 1,00"
       },
       "recyclable": {
         "title": "Endurvinnanlegur",
-        "value": "100% at end of life"
+        "value": "100% við lok líftíma"
       },
       "origin": {
         "title": "Uppruni",
@@ -253,34 +253,34 @@
     },
     "features": {
       "performance": {
-        "title": "High Performance",
-        "description": "Class A sound absorption for optimal acoustic comfort in any environment."
+        "title": "Mikil afköst",
+        "description": "Hljóðísog í flokki A fyrir bestu hljóðvist í hvaða umhverfi sem er."
       },
       "circular": {
-        "title": "Fully Circular",
-        "description": "Made from recycled materials and 100% recyclable at end of life."
+        "title": "Fullkomlega hringrásarmiðað",
+        "description": "Framleitt úr endurunnum efnum og 100% endurvinnanlegt við lok líftíma."
       },
       "customization": {
-        "title": "Custom Options",
-        "description": "Available in 50+ colors and custom sizes to match your design vision."
+        "title": "Sérsniðnir valkostir",
+        "description": "Fáanlegt í yfir 50 litum og sérstærðum til að passa við hönnunarsýn þína."
       }
-    },
-    "duo": {
-      "title": "Duo",
-      "description": "Einn klefi, tvær uppsetningar. Flex sætir tvo á fund; Work veitir einum fullbúið skrifborð. 26 dB(A) skerðing."
     },
     "solo-flex": {
       "title": "Solo Flex",
-      "description": "Hljóðeinangraður klefi fyrir einn, fyrir einbeitt símtöl og djúpa vinnu. 1 m² fótspor, innbyggt sit-stand skrifborð, 24 dB(A) talskerðing."
+      "description": "Símaklefi fyrir einn á skrifstofuna, fyrir einbeitt símtöl og djúpa vinnu. 1 m² gólfflötur, innbyggt sitja/standa-borð, 24 dB(A) taldeyfing."
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Símaklefi fyrir tvo á skrifstofuna með tveimur útfærslum: Flex rúmar tvo á fundi, Work gefur einum skrifborð í fullri breidd."
     },
     "modular-xl": {
       "title": "Modular XL",
-      "description": "Skalanlegur fundarklefi. Grunnur fyrir 6, stækkar í 10 með 90 cm einingum. 25,9 dB(A) talskerðing."
+      "description": "Stækkanlegur hljóðeinangraður fundarklefi. Grunnurinn rúmar 6, stækkanlegur í 10 með 90 cm einingum. 25,9 dB(A) taldeyfing."
     }
   },
   "specs": {
-    "tag": "SPECIFICATIONS",
-    "title": "Technical Details",
+    "tag": "TÆKNILÝSING",
+    "title": "Tæknilegar upplýsingar",
     "dimensions": "Mál",
     "thickness": "Þykkt",
     "weight": "Þyngd",
@@ -292,19 +292,19 @@
     "certifications": "Vottanir"
   },
   "why": {
-    "tag": "WHY RE-SOUND",
-    "title": "Why Choose Circular Acoustic Panels?",
+    "tag": "HVERS VEGNA RE-SOUND",
+    "title": "Hvers vegna að velja hringrásarmiðaðar hljóðdeyfiplötur?",
     "belgianLabel": "Eigin verksmiðjur",
     "subtitle": "Við trúum því að góð hljóðfræði ætti ekki að kosta plánetuna. Panelarnir okkar sanna að sjálfbærar valstilboð geta veitt frammistöðu í heimsklassa.",
     "diagramLabel": "Hringrásarlegur",
     "features": {
       "performance": {
         "title": "Framúrskarandi árangur",
-        "description": "Class A absorption rating (αw 0.95-1.00) for optimal acoustic comfort."
+        "description": "Ísogsflokkur A (αw 0,95–1,00) fyrir bestu hljóðvist."
       },
       "durability": {
         "title": "Byggt til að vara",
-        "description": "High-quality manufacturing ensures decades of performance."
+        "description": "Hágæða framleiðsla tryggir áratuga endingu."
       },
       "circular": {
         "title": "Sannarlega hringrásarlegur",
@@ -317,16 +317,16 @@
     }
   },
   "circular": {
-    "tag": "CIRCULAR ECONOMY",
+    "tag": "HRINGRÁSARHAGKERFI",
     "title": "Loka",
     "titleHighlight": "hringrásina.",
     "subtitle": "Panelarnir okkar byrja líf sitt sem úrgangur og geta snúið aftur til að verða nýjar paneler — og skapar þannig endalausan gildishring.",
-    "loopLabel": "Endless Cycle",
+    "loopLabel": "Endalaus hringrás",
     "cta": "Hvernig það virkar",
-    "statRecycled": "Recycled Input",
-    "statLandfill": "Landfill",
-    "statFreeLabel": "Free",
-    "statTakeback": "Take-Back",
+    "statRecycled": "Endurunnið hráefni",
+    "statLandfill": "Urðun",
+    "statFreeLabel": "Ókeypis",
+    "statTakeback": "Skilakerfi",
     "steps": {
       "collect": {
         "title": "Safna",
@@ -349,14 +349,14 @@
   "dualCta": {
     "left": {
       "eyebrow": "rWood Röð",
-      "title": "Discover natural acoustic finishes",
-      "subtitle": "Real wood veneer on a recycled core. Request a sample kit and find the right finish for your project.",
+      "title": "Uppgötvaðu náttúrulegar hljóðvistaráferðir",
+      "subtitle": "Ekta viðarspónn á endurunnum kjarna. Pantaðu sýnishornasett og finndu réttu áferðina fyrir verkefnið þitt.",
       "cta": "Panta sýnishorn"
     },
     "right": {
       "eyebrow": "Allar vörur",
-      "title": "Get a custom quote",
-      "subtitle": "Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.",
+      "title": "Fáðu sérsniðið tilboð",
+      "subtitle": "Segðu okkur frá rýminu þínu — við mælum með réttu hljóðlausninni og sendum þér sérsniðið tilboð.",
       "cta": "Biðja um tilboð"
     }
   },
@@ -496,30 +496,30 @@
   "contact": {
     "tag": "HAFÐU SAMBAND",
     "title": "Hafðu samband",
-    "subtitle": "Have questions about our products or want a custom quote? We'd love to hear from you.",
+    "subtitle": "Hefurðu spurningar um vörur okkar eða viltu sérsniðið tilboð? Við heyrum gjarnan frá þér.",
     "form": {
       "title": "Sendu okkur skilaboð",
-      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "subtitle": "Fylltu út eyðublaðið hér að neðan og við svörum þér innan 24 klukkustunda.",
       "name": "Nafn",
       "namePlaceholder": "Fullt nafn þitt",
       "email": "Netfang",
       "emailPlaceholder": "þín@netfang.is",
       "company": "Fyrirtæki",
-      "companyPlaceholder": "Your company name",
+      "companyPlaceholder": "Nafn fyrirtækis",
       "phone": "Sími",
       "phonePlaceholder": "+32 ...",
       "subject": "Efni",
-      "subjectPlaceholder": "Select a subject",
+      "subjectPlaceholder": "Veldu efni",
       "message": "Skilaboð",
-      "messagePlaceholder": "Tell us about your project or question...",
+      "messagePlaceholder": "Segðu okkur frá verkefninu þínu eða spurningunni...",
       "submit": "Senda skilaboð",
       "sending": "Sendir...",
-      "successMessage": "Thank you! We'll get back to you within 24 hours.",
-      "errorMessage": "Something went wrong. Please try again.",
+      "successMessage": "Takk fyrir! Við svörum þér innan 24 klukkustunda.",
+      "errorMessage": "Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur.",
       "subjects": {
         "quote": "Biðja um tilboð",
-        "info": "Product Information",
-        "partnership": "Partnership Inquiry",
+        "info": "Vöruupplýsingar",
+        "partnership": "Fyrirspurn um samstarf",
         "other": "Annað"
       },
       "privacyNotice": "Með því að senda þetta eyðublað samþykkir þú <link>persónuverndarstefnu okkar</link>.",
@@ -535,18 +535,18 @@
     },
     "faq": {
       "title": "Algengar spurningar",
-      "subtitle": "Quick answers to common questions.",
+      "subtitle": "Stutt svör við algengum spurningum.",
       "q1": {
-        "question": "What is your lead time?",
-        "answer": "Standard orders ship within 2-3 weeks. Custom colors and sizes may require 4-6 weeks."
+        "question": "Hver er afgreiðslutíminn ykkar?",
+        "answer": "Staðlaðar pantanir eru sendar innan 2-3 vikna. Sérlitir og sérstærðir geta tekið 4-6 vikur."
       },
       "q2": {
-        "question": "Do you ship internationally?",
-        "answer": "Yes! We ship throughout Europe. Contact us for shipping quotes outside the EU."
+        "question": "Sendið þið til útlanda?",
+        "answer": "Já! Við sendum um alla Evrópu. Hafðu samband til að fá tilboð í sendingar utan ESB."
       },
       "q3": {
-        "question": "Can I get samples?",
-        "answer": "Absolutely. We offer free sample kits with material swatches and color options."
+        "question": "Get ég fengið sýnishorn?",
+        "answer": "Að sjálfsögðu. Við bjóðum ókeypis sýnishornasett með efnisprufum og litavalkostum."
       }
     }
   },
@@ -577,7 +577,8 @@
       "education": "Menntun",
       "company": "Fyrirtæki",
       "design": "Design"
-    }
+    },
+    "minRead": "{minutes} mín. lestur"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -692,7 +693,7 @@
   "newsletter": {
     "tag": "VERTU UPPFÆRÐUR",
     "title": "Gerast áskrifandi að fréttabréfi okkar",
-    "subtitle": "Get the latest news on circular acoustics, new products, and sustainable design insights.",
+    "subtitle": "Fáðu nýjustu fréttir um hringrásarhljóðvist, nýjar vörur og innsýn í sjálfbæra hönnun.",
     "placeholder": "Sláðu inn netfangið þitt",
     "subscribe": "Gerast áskrifandi",
     "subscribing": "Gerst áskrifandi...",
@@ -706,7 +707,7 @@
     "company": "Fyrirtæki",
     "contact": "Samband",
     "allProducts": "Allar vörur",
-    "copyright": "© {year} Re-Sound. All rights reserved.",
+    "copyright": "© {year} Re-Sound. Allur réttur áskilinn.",
     "manageCookies": "Stjórna vafrakökum",
     "privacy": "Persónuverndarstefna",
     "terms": "Þjónustuskilmálar"
@@ -735,7 +736,7 @@
   },
   "notFound": {
     "title": "Síða finnst ekki",
-    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved or no longer exists.",
+    "description": "Því miður fundum við ekki síðuna sem þú leitar að. Hún gæti hafa verið færð eða er ekki lengur til.",
     "backHome": "Aftur á forsíðu",
     "contactUs": "Hafðu samband"
   },
@@ -799,21 +800,21 @@
       "installation": "Uppsetning"
     },
     "tags": {
-      "acousticWallPanels": "ACOUSTIC WALL PANELS",
-      "completeSolution": "COMPLETE SOLUTION",
+      "acousticWallPanels": "HLJÓÐDEYFIPLÖTUR Á VEGGI",
+      "completeSolution": "HEILDARLAUSN",
       "sustainability": "SJÁLFBÆRNI",
-      "designFreedom": "DESIGN FREEDOM",
-      "practical": "PRACTICAL",
-      "performance": "PERFORMANCE",
-      "technical": "TECHNICAL",
+      "designFreedom": "HÖNNUNARFRELSI",
+      "practical": "HAGNÝTT",
+      "performance": "AFKÖST",
+      "technical": "TÆKNILEGT",
       "inspiration": "INNBLÁSTUR",
-      "resources": "RESOURCES",
-      "circularDesign": "CIRCULAR DESIGN",
-      "designOptions": "DESIGN OPTIONS",
-      "recycledPetPanels": "RECYCLED PET ACOUSTIC PANELS",
-      "rwoodPanels": "ACOUSTIC WOOD PANELS",
-      "easeOfUse": "EASE OF USE",
-      "lowMaintenance": "LOW MAINTENANCE"
+      "resources": "SKJÖL OG GÖGN",
+      "circularDesign": "HRINGRÁSARHÖNNUN",
+      "designOptions": "HÖNNUNARVALKOSTIR",
+      "recycledPetPanels": "HLJÓÐDEYFIPLÖTUR ÚR ENDURUNNU PET",
+      "rwoodPanels": "HLJÓÐDEYFIPLÖTUR ÚR VIÐI",
+      "easeOfUse": "AUÐVELT Í NOTKUN",
+      "lowMaintenance": "LÍTIL VIÐHALDSÞÖRF"
     },
     "cta": {
       "requestQuote": "Biðja um tilboð",
@@ -827,7 +828,7 @@
     },
     "downloads": {
       "title": "Niðurhal",
-      "tag": "RESOURCES",
+      "tag": "SKJÖL OG GÖGN",
       "productDataSheet": "Vörugagnablað",
       "installationManual": "Uppsetningarleiðbeiningar",
       "acousticTestReport": "Hljóðfræðileg prófunarskýrsla",
@@ -835,7 +836,7 @@
       "fireCertificate": "Brannskírteini",
       "sustainabilityDeclaration": "Sjálfbærnisvíslýsing",
       "technicalDrawing": "Tæknileg teikning",
-      "bimFile": "BIM File",
+      "bimFile": "BIM-skrá",
       "epd": "Umhverfisframleiðsluyfirlýsing (EPD)",
       "colourFinishGuide": "Lita- og áferðarleiðbeiningar",
       "warranty": "Ábyrgðarskírteini",
@@ -849,21 +850,21 @@
       "panelSize": "Panel stærð",
       "thickness": "Þykkt",
       "weight": "Þyngd",
-      "absorptionCoeff": "Absorption coefficient (αw)",
-      "absorptionClass": "Absorption class",
+      "absorptionCoeff": "Hljóðísogsstuðull (αw)",
+      "absorptionClass": "Hljóðísogsflokkur",
       "nrc": "NRC",
       "fireRating": "Brunaflokkun",
-      "standard": "Standard",
+      "standard": "Staðall",
       "core": "Kjarni",
-      "absorber": "Absorber",
-      "cover": "Cover",
+      "absorber": "Hljóðísogsefni",
+      "cover": "Áklæði",
       "recycledContent": "Endurunnið efni",
       "endOfLife": "Lok líftíma",
-      "vocEmissions": "VOC emissions",
+      "vocEmissions": "VOC-losun",
       "mounting": "Uppsetning",
       "installationTime": "Uppsetningartími",
       "toolsRequired": "Nauðsynleg verkfæri",
-      "testStandard": "Test standard",
+      "testStandard": "Prófunarstaðall",
       "surface": "Yfirborð",
       "finish": "Yfirborð",
       "epd": "EPD tiltækt",
@@ -875,31 +876,31 @@
       "title": "Í notkun"
     },
     "acoustics": {
-      "low": "Low",
-      "mid": "Mid",
-      "high": "High",
-      "highestRating": "Highest absorption rating achievable",
+      "low": "Lág",
+      "mid": "Mið",
+      "high": "Há",
+      "highestRating": "Hæsta hljóðísogseinkunn sem hægt er að ná",
       "classA": "Flokkur A",
       "benefitSpeech": {
-        "title": "Improved Speech Clarity",
-        "desc": "Reduce reverberation for clearer conversations"
+        "title": "Skýrara tal",
+        "desc": "Dregur úr ómun fyrir skýrari samtöl"
       },
       "benefitFocus": {
-        "title": "Enhanced Focus",
-        "desc": "Minimize distracting background noise"
+        "title": "Aukin einbeiting",
+        "desc": "Lágmarkar truflandi bakgrunnshljóð"
       },
       "benefitStress": {
-        "title": "Reduced Stress",
-        "desc": "Create calmer, more comfortable environments"
+        "title": "Minni streita",
+        "desc": "Skapar rólegra og þægilegra umhverfi"
       }
     },
     "specLabels": {
       "thickness": "Þykkt",
       "weight": "Þyngd",
       "density": "Þéttleiki",
-      "testStandard": "Test standard",
+      "testStandard": "Prófunarstaðall",
       "envLabel": "Umhverfi",
-      "health": "Health",
+      "health": "Heilsa",
       "installation": "Uppsetning",
       "environment": "Umhverfi",
       "envVal": "Innandyra (þurr svæði)",
@@ -917,7 +918,7 @@
       "woodSourcing": "Viðaruppspretta",
       "feltCert": "Felt vottun",
       "epd": "EPD tiltækt",
-      "vocEmissions": "VOC emissions",
+      "vocEmissions": "VOC-losun",
       "moistureResistant": "Rakamótstæður",
       "connection": "Tenging",
       "backlitOption": "Bakljósamöguleiki",
@@ -940,7 +941,7 @@
   "interiorPage": {
     "hero": {
       "tag": "ACOUSTIC WALL PANELS",
-      "title": "Interior",
+      "title": "Interior: einingaskiptar hljóðdeyfiplötur á veggi úr endurunnu textíli",
       "tagline": "Hlutbundin hljóðeinangrun, hringrásarleg af hönnun",
       "description": "Umbreyttu rýminu þínu með Re-Sound Interior — fullkomið hljóðfræðilegt veggkerfi úr endurunnnum efnum.",
       "uspAbsorption": "αw 1,0 Frásog",
@@ -1053,7 +1054,7 @@
   "solidPage": {
     "hero": {
       "tag": "ACOUSTIC WALL PANELS",
-      "title": "Solid",
+      "title": "Solid: hljóðdeyfiplötur á veggi í stóru sniði",
       "tagline": "Hávirkt hljóð, auðveld uppsetning",
       "description": "Kynntu þér Re-Sound Solid — hávirkt hljóðpanel fyrir veggi hannað fyrir hámarks frammistöðu með lágmarks fyrirhöfn.",
       "usp1": "Hátt frásog",
@@ -1189,7 +1190,7 @@
   "dividePage": {
     "hero": {
       "tag": "HLJÓÐFRÆÐILEGUR RÝMISGREINER",
-      "title": "Divide",
+      "title": "Divide: frístandandi hljóðdeyfiskilrúm",
       "tagline": "Smelltu til að endurskilgreina, skiptu fyrir stílinn",
       "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use.",
       "usp1": "Segulmagntenging",
@@ -1318,7 +1319,7 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "RECYCLED PET ACOUSTIC PANELS",
-      "title": "rPET - Groove",
+      "title": "rPET Groove: rifjaðar PET-hljóðdeyfiplötur í 12 litum",
       "tagline": "Úr Flöskum í Þögn",
       "description": "rPET - Groove paneler sameina nútímalegar fagurfræði og framúrskarandi hljóðfræðilegar frammistöður. Gerðar 100% úr endurunnnum PET-flöskum, bjóða þessar háþéttleika paneler upp á hljóðfrásog í flokki A á meðan þær vísa plastúrgangi frá urðunarsvæðum.",
       "usp1": "100% endurunnið PET",
@@ -1539,9 +1540,6 @@
     "cta2": {
       "freeNote": "Ókeypis sýnishorn tiltæk • Framleitt í Póllandi • 100% Endurunnið"
     },
-    "related": {
-      "title": "Tengdar Vörur"
-    },
     "faq": {
       "questions": {
         "oekoTex": {
@@ -1565,12 +1563,15 @@
           "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
         }
       }
+    },
+    "related": {
+      "title": "Tengdar Vörur"
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "ENDURUNNIN PET HLJÓÐPANELER",
-      "title": "rPET - Panel",
+      "title": "rPET Panel: hljóðdeyfiplatan úr endurunnu PET sem þú vinnur eins og MDF",
       "tagline": "Sjálfbær þögn, óendanlegar möguleikar",
       "description": "Transform any space with rPET - Panel acoustic panels. {pct, select, unknown {Made from recycled PET bottles, these} other {Made from {pct}% recycled PET bottles, these}} lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
       "usp1": "100% Endurvinnanlegur PET",
@@ -1781,7 +1782,7 @@
   "rwoodGroovePage": {
     "hero": {
       "tag": "ACOUSTIC WOOD PANELS",
-      "title": "rWood - Groove",
+      "title": "rWood Groove: rifjaðar hljóðdeyfiplötur úr viði í eik og hnotu",
       "tagline": "Náttúruleg fegurð, fullkomin hljóðfræði",
       "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
       "usp1": "FSC® vottað viður",
@@ -1967,7 +1968,7 @@
   "rwoodPerfPage": {
     "hero": {
       "tag": "GATAÐAR HLJÓÐFRÆÐILEGAR VIÐARPANELER",
-      "title": "rWood - Perf",
+      "title": "rWood Perf: götaðar hljóðdeyfiplötur úr viði",
       "tagline": "Nákvæmar götur, hámarks frásog",
       "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control.",
       "usp1": "Kringlóttar götur",
@@ -2146,7 +2147,7 @@
   "rwoodMicroPage": {
     "hero": {
       "tag": "ÖRGATAÐAR HLJÓÐPANEL",
-      "title": "rWood - Micro",
+      "title": "rWood Micro: örgötuðar hljóðdeyfiplötur úr viði",
       "tagline": "Ósýnileg gat, framúrskarandi hljóðfræði",
       "description": "Experience the beauty of natural wood with the acoustic performance of advanced micro-perforation technology. Virtually invisible holes deliver Class A sound absorption while preserving the pure, homogeneous look of premium wood veneer.",
       "usp1": "Ósýnilegar götur",
@@ -2334,7 +2335,7 @@
   "rwoodVeneerPage": {
     "hero": {
       "tag": "HLJÓÐFRÆÐILEGAR TRÉPLÖTUR",
-      "title": "rWood - Panel",
+      "title": "rWood Panel: hljóðdeyfiplötur með viðarspæni í 10 viðartegundum",
       "tagline": "Frægi raunverulegrar trjár. Tilbúið til notkunar.",
       "description": "Vandaðar finerarMDF plötur, burstaðar, litaðar og lakkaðar — tilbúnar til uppsetningar. Fáanlegar í 10 finerartegundum og 3 yfirborðum. Framleitt í Belgíu.",
       "usp1": "Raunverulegt tréfineera",
@@ -2589,7 +2590,7 @@
   "rpetFlexGroovePage": {
     "hero": {
       "tag": "SVEIGJANLEG HLJÓÐPANEL",
-      "title": "rPET Flex-Groove",
+      "title": "rPET Flex Groove: sveigjanlegar PET-hljóðdeyfiplötur fyrir bogadregna fleti",
       "tagline": "Beygðu án þess að brjóta",
       "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt seamlessly to columns, curved walls, and any architectural form with a minimum radius of 500mm.",
       "usp1": "Lágm. geisli 500mm",
@@ -2959,7 +2960,7 @@
     },
     "crosslinks": {
       "tag": "EINNIG Í RÖÐINNI",
-      "title": "Aðrir hljóðklefar í röðinni",
+      "title": "Aðrir símaklefar í vörulínunni",
       "solo-flex": {
         "name": "Solo Flex",
         "tag": "Einmannsklefi"
@@ -2976,8 +2977,8 @@
   },
   "soloFlexPage": {
     "hero": {
-      "tag": "HLJÓÐEINANGRAÐUR EINMANNSKLEFI",
-      "title": "Solo Flex",
+      "tag": "SÍMAKLEFI FYRIR SKRIFSTOFUR · 1 MANNS",
+      "title": "Solo Flex: hljóðeinangraði símaklefinn fyrir einn á skrifstofuna",
       "tagline": "Einn fermetri af kyrrð, hvar sem þú þarft hana.",
       "description": "Solo Flex er hljóðeinangraður klefi fyrir einn, byggður fyrir einbeitt símtöl, fjarfundi og djúpa vinnu. Lítið fótspor, einlægt skrifborð sem fer úr sitjandi í standandi, og sú tegund hljóðeinangrunar sem lætur opna skrifstofuna hverfa.",
       "statFootprint": "Fótspor",
@@ -3116,8 +3117,8 @@
   },
   "duoPage": {
     "hero": {
-      "tag": "KLEFI Í TVEIMUR UPPSETNINGUM",
-      "title": "Duo",
+      "tag": "SÍMAKLEFI FYRIR SKRIFSTOFUR · 2 MANNS",
+      "title": "Duo: hljóðeinangraði símaklefinn og einbeitingarklefinn fyrir tvo á skrifstofuna",
       "tagline": "Eitt skel. Tvö gjörólík rými.",
       "description": "Duo er einn klefi sem skuldbindur sig raunverulega til tveggja notkunarmöguleika. Flex-uppsetningin setur lítið rafdrifið skrifborð miðlægt — tvo, andspænis hvor öðrum, fyrir einbeitt fund. Work-uppsetningin setur upp skrifborð í fullri breidd meðfram vegg — einn mann, þrjá skjái, alvöru vinnustöð. Þú velur við pöntun hvor passar við hæðina þína.",
       "statFootprint": "Fótspor",
@@ -3287,8 +3288,8 @@
   },
   "modularXlPage": {
     "hero": {
-      "tag": "SKALANLEGUR FUNDARKLEFI",
-      "title": "Modular XL",
+      "tag": "HLJÓÐEINANGRAÐUR FUNDARKLEFI · 6–10 MANNS",
+      "title": "Modular XL: hljóðeinangraði fundarklefinn fyrir 6–10 manns",
       "tagline": "Fundarherbergi sem lengist þegar þú þarft fleiri stóla.",
       "description": "Modular XL er stærsti klefinn í Re-Sound röðinni — og sá eini sem hannaður er til að vaxa eftir uppsetningu. Grunnurinn rúmar þægilega sex manns. Þaðan lengja 90 cm einingar klefann í báðar áttir, upp í hámarksrýmd tíu. Sömu hljóðeiginleikar, sama loftræstingarrökfræði, í stækkuðum mælikvarða.",
       "statFootprint": "Grunnur fótspors",
@@ -3687,5 +3688,272 @@
     "ownFactories": "Úr eigin verksmiðjum",
     "ownFactoriesShort": "Eigin verksmiðjur",
     "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+  },
+  "productData": {
+    "category": {
+      "textile": "Hljóðdeyfiplötur úr textíl",
+      "rwood": "Hljóðdeyfiplötur úr viði",
+      "rpet": "Hljóðdeyfiplötur úr PET",
+      "booth": "Símaklefar og fundarklefar fyrir skrifstofur"
+    },
+    "familyName": {
+      "textile": "Textíl",
+      "rwood": "rWood",
+      "rpet": "rPET",
+      "booth": "Klefar"
+    },
+    "interior": {
+      "mounting": "Falið veggbrautarkerfi",
+      "leadTime": "1–2 vikur (lagerlitir), 3–4 vikur sérpöntun"
+    },
+    "solid": {
+      "mounting": "Falin krókabraut",
+      "leadTime": "1–2 vikur (lagerlitir), 3–4 vikur sérpöntun"
+    },
+    "divide": {
+      "mounting": "Frístandandi, seguleiningatenging",
+      "leadTime": "1–2 vikur (lagerlitir), 3–4 vikur sérpöntun"
+    },
+    "rwood-groove": {
+      "mounting": "Listar eða lím, nót-og-fjöður samskeyti",
+      "leadTime": "3–4 vikur (lagerspónn), 6–8 vikur sérpöntun"
+    },
+    "rwood-micro": {
+      "mounting": "Falið klemmukerfi eða límfesting",
+      "leadTime": "3–4 vikur (lagerspónn), 6–8 vikur sérpöntun"
+    },
+    "rwood-perf": {
+      "mounting": "Falið klemmukerfi eða límfesting",
+      "leadTime": "3–4 vikur (lagerspónn), 6–8 vikur sérpöntun"
+    },
+    "rwood-veneer": {
+      "mounting": "Falið klemmukerfi eða límfesting",
+      "leadTime": "3–4 vikur (lagerspónn), 6–8 vikur sérpöntun"
+    },
+    "rpet-panel": {
+      "mounting": "Bein skrúffesting eða lím, engin forborun",
+      "leadTime": "2–3 vikur (lagerlitir), 5–6 vikur sérpöntun"
+    },
+    "rpet-groove": {
+      "mounting": "Lím, Z-klemmur, skrúfur eða listar",
+      "leadTime": "2–3 vikur (lagerlitir), 5–6 vikur sérpöntun"
+    },
+    "rpet-flex-groove": {
+      "mounting": "Límfesting á bogadregna fleti",
+      "leadTime": "2–3 vikur (lagerlitir), 5–6 vikur sérpöntun"
+    },
+    "solo-flex": {
+      "mounting": "Frístandandi, afhent samsett",
+      "leadTime": "4–6 vikur frá pöntun"
+    },
+    "duo": {
+      "mounting": "Frístandandi, afhent samsett",
+      "leadTime": "4–6 vikur frá pöntun"
+    },
+    "modular-xl": {
+      "mounting": "Frístandandi, sett saman á staðnum",
+      "leadTime": "6–8 vikur frá pöntun (grunneining)"
+    },
+    "specValues": {
+      "none": "Engin",
+      "yes": "Já",
+      "lowAPlus": "Lág / A+",
+      "classAC": "Flokkur A / C",
+      "felt": "Filt",
+      "fromWeight035": "~Frá 0,35 kg/m²",
+      "weightPerModule8": "~8 kg á einingu",
+      "weightPerPanel5": "~5 kg á plötu",
+      "s1Low": "s1 (lágt)",
+      "suitable": "Hentar",
+      "oekoStandard100Class1": "Standard 100, flokkur 1",
+      "recycledTextileFiber": "Endurunnar textíltrefjar",
+      "e1Carb2Compliant": "Uppfyllir E1 / CARB 2",
+      "classAPlusIso16000": "Flokkur A+ (ISO 16000)",
+      "fiveMidnightToFrost": "5 (frá Midnight til Frost)",
+      "pet100Polyester": "100% PET (pólýester)",
+      "openArea25": "2,5% opið flatarmál",
+      "openArea52": "5,2% opið flatarmál",
+      "openArea84": "8,4% opið flatarmál",
+      "openArea106": "10,6% opið flatarmál",
+      "open5Aw035": "5% opið — αw 0,35",
+      "open12Aw055": "12% opið — αw 0,55",
+      "open18Aw075": "18% opið — αw 0,75",
+      "open24Aw085": "24% opið — αw 0,85",
+      "withMineralWool50": "Með 50 mm steinull",
+      "dualSided": "Tvíhliða",
+      "base": "Grunnur",
+      "pd8Double": "PD8 (⌀8 mm tvöfalt)",
+      "perfNano": "Nano (⌀ 0,5 mm)",
+      "perfMicroS": "Micro S (⌀ 1,0 mm)",
+      "perfMicroM": "Micro M (⌀ 1,5 mm)",
+      "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    }
+  },
+  "hubs": {
+    "shared": {
+      "breadcrumbHome": "Forsíða",
+      "modelsTag": "GERÐIRNAR",
+      "modelsTitle": "Veldu þína gerð",
+      "viewModel": "Skoða gerð",
+      "tableTag": "SAMANBURÐUR",
+      "tableTitle": "Berðu gerðirnar saman",
+      "tableNote": "Gildi eins og þau eru birt á gerðasíðunum; mæld gildi eru gefin upp ásamt viðkomandi prófunarstaðli.",
+      "col": {
+        "model": "Gerð",
+        "format": "Snið",
+        "thickness": "Þykkt",
+        "alphaW": "αw (ISO 11654)",
+        "nrc": "NRC (ASTM C423)",
+        "fireClass": "Brunaflokkur (EN 13501-1)",
+        "recycled": "Hlutfall endurunnins efnis",
+        "finishes": "Áferðir / litir",
+        "mounting": "Uppsetning",
+        "leadTime": "Afhendingartími",
+        "fromPrice": "Verð frá (án VSK)",
+        "capacity": "Fjöldi manna",
+        "footprint": "Gólfflötur",
+        "dimensions": "Ytri mál (B × D × H)",
+        "speech": "Lækkun talhljóðs (ISO 23351-1)",
+        "isoClass": "Flokkur skv. ISO 23351-1",
+        "ventilation": "Loftræsting",
+        "power": "Rafmagn",
+        "weight": "Þyngd"
+      },
+      "finishesValue": "{count} áferðir",
+      "coloursValue": "{count} litir",
+      "fromPriceValue": "frá €{price} {unit}",
+      "placeholderPrice": "verð samkvæmt beiðni",
+      "isoClassNote": "Flokkamörk ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
+      "whyTag": "HVERS VEGNA RE-SOUND",
+      "whyTitle": "Hvers vegna Re-Sound",
+      "whyOwnFactoriesTitle": "Okkar eigin verksmiðjur",
+      "whyTakeBackTitle": "Ókeypis skilakerfi",
+      "whyTakeBackDesc": "Þegar líftíma lýkur sækjum við plöturnar og vinnum þær aftur í hráefni — án endurgjalds innan Belgíu, gegn flutningskostnaði annars staðar í ESB.",
+      "whyCertsTitle": "Vottað þar sem það skiptir máli",
+      "applicationsTag": "NOTKUNARSVIÐ",
+      "applicationsTitle": "Hvar þær eru notaðar",
+      "faqTag": "ALGENGAR SPURNINGAR",
+      "faqTitle": "Algengar spurningar",
+      "ctaTag": "NÆSTA SKREF",
+      "ctaTitle": "Sjáðu og snertu efnið",
+      "ctaText": "Pantaðu ókeypis sýnishornasett eða sendu okkur teikningarnar þínar til að fá tilboð — teymið okkar svarar innan eins virks dags.",
+      "ctaSampleKit": "Panta sýnishornasett",
+      "ctaQuote": "Óska eftir tilboði",
+      "notAvailable": "—"
+    },
+    "rpet": {
+      "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
+      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove og Flex Groove. 12–16 litir, B-s1,d0, OEKO-TEX®, framleiddar í eigin verksmiðju í Póllandi.",
+      "h1": "PET hljóðdeyfiplötur: rPET Panel, Groove og Flex Groove",
+      "breadcrumb": "rPET",
+      "intro": "PET hljóðdeyfiplötur breyta notuðum drykkjarflöskum í þétt pólýesterfilt sem gleypir hljóð, lætur vinna sig með CNC-fræsara eins og MDF og fæst í litavali sem arkitektar nota í raun og veru. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); rPET línan er framleidd í Częstochowa. Línan samanstendur af þremur gerðum. rPET Panel er slétta platan: hana má skera, fræsa, bora og mála fyrir veggi, loft og húsgögn. rPET Groove bætir við rifflaðri áferð í 12 litum og þremur þykktum fyrir meiri hljóðgleypni á veggjum og í lofti. rPET Flex Groove heldur rifflaða útlitinu en sveigist utan um súlur og bogadregna veggi niður í 500 mm radíus. Allar þrjár gerðirnar eru vottaðar samkvæmt OEKO-TEX® Standard 100, ná B-s1,d0 eða B-s2,d0 samkvæmt EN 13501-1 og má skila til endurvinnslu þegar líftíma lýkur. Notaðu töfluna hér að neðan til að bera PET hljóðdeyfiplötur saman eftir sniði, hljóðgleypni og afhendingartíma og opnaðu síðan gerðasíðuna til að sjá áferðir og niðurhal.",
+      "whyCertsDesc": "Allar rPET gerðir eru vottaðar samkvæmt OEKO-TEX® Standard 100; brunavottorð (EN 13501-1) eru á gerðasíðunum.",
+      "applications": {
+        "app1": "Opin skrifstofurými og þjónustuver",
+        "app2": "Skólar, fyrirlestrasalir og bókasöfn",
+        "app3": "Veitingastaðir og gistigeirinn",
+        "app4": "Biðsvæði í heilbrigðisþjónustu",
+        "app5": "Verslanir, sýningarsalir og sýningarbásar",
+        "app6": "Bogadregnir veggir og súlur (Flex Groove)"
+      },
+      "faq": {
+        "q1": {
+          "question": "Eru PET hljóðdeyfiplötur í raun gerðar úr endurunnum flöskum?",
+          "answer": "Já. Filtið er gert úr trefjum úr endurunnum PET-flöskum; rPET Groove og rPET Flex Groove eru úr 100 % endurunnu PET. Allar gerðir eru vottaðar samkvæmt OEKO-TEX® Standard 100 og efnið hentar því fyrir skóla og heilbrigðisstofnanir."
+        },
+        "q2": {
+          "question": "Hversu mikið hljóð gleypa PET hljóðdeyfiplötur?",
+          "answer": "Það fer eftir þykkt og uppsetningu: rPET Groove nær NRC 0,55 (12 mm), 0,75 (24 mm) og 0,90 (36 mm); rPET Panel nær allt að αw 1,00 þegar hún er sett upp á grind með loftbili. Plötur sem eru límdar beint á vegg gleypa minna hljóð en plötur með loftbili fyrir aftan."
+        },
+        "q3": {
+          "question": "Hvaða brunaflokk hafa hljóðdeyfiplötur úr endurunnu PET?",
+          "answer": "rPET Groove og rPET Flex Groove eru flokkaðar B-s1,d0 samkvæmt EN 13501-1; tæknilýsing rPET Panel gefur upp B-s2,d0. Brunavottorð hverrar gerðar er að finna í niðurhalsreitnum á gerðasíðunni."
+        },
+        "q4": {
+          "question": "Get ég skorið og málað PET hljóðdeyfiplötur á staðnum?",
+          "answer": "Já. rPET Panel hegðar sér eins og MDF: hana má skera, fræsa, bora og skrúfa með hefðbundnum verkfærum og mála í hvaða RAL- eða NCS-lit sem er. Rifflaðar plötur eru sniðnar til á staðnum með fíntenntu sagarblaði."
+        },
+        "q5": {
+          "question": "Hver er afhendingartími PET hljóðdeyfiplatna?",
+          "answer": "Lagerlitir eru sendir innan 2–3 vikna frá verksmiðju okkar í Częstochowa; sérlitir taka 5–6 vikur. Stór verkefni eru sett í framleiðslulotur — biddu okkur um bindandi dagsetningu áður en þú pantar."
+        }
+      }
+    },
+    "rwood": {
+      "title": "Hljóðdeyfiplötur úr viði — spónn, götuð, örgötuð | Re-Sound",
+      "description": "Hljóðdeyfiplötur úr viði með FSC-spæni: rifflaðar (rWood Groove), örgötaðar (Micro), götaðar (Perf) og sléttar (Panel). αw allt að 0,90, B-s1,d0 FR-kjarni.",
+      "h1": "Hljóðdeyfiplötur úr viði með FSC-spæni: rifflaðar, götaðar, örgötaðar, sléttar",
+      "breadcrumb": "rWood",
+      "intro": "Hljóðdeyfiplötur úr viði færa ekta viðarspón á veggi og loft án þess að fórna hljóðgleypni. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). rWood línan nær yfir fjórar yfirborðsgerðir sem byggja á sömu uppbyggingu: FSC-vottuðum viðarspæni yfir hljóðgleypnum kjarna. rWood Groove er línulega rimlaútlitið með eikar- og hnotuspæni á filtbaki (αw 0,90). rWood Micro er með 0,5 mm örgötum í gegnum spóninn þannig að viðurinn lítur út sem lokað yfirborð á meðan platan gleypir hljóð (αw 0,90, B-s1,d0). rWood Perf notar sýnileg götunarmynstur með 5 til 8 mm götum, stillt á bilinu αw 0,35 til 0,85. rWood Panel er slétta spónlagða platan fyrir svæði þar sem viðurinn, en ekki hljóðvistin, ræður ferðinni. Átta spónategundir eru í boði í línunni, frá Beech White Ash til Tobacco Walnut. Berðu hljóðdeyfiplötur úr viði saman hér að neðan eftir sniði, hljóðgleypni, brunaflokki og afhendingartíma og opnaðu síðan gerðasíðu til að sjá áferðir og niðurhal.",
+      "whyCertsDesc": "FSC®-vottaður viðarspónn á öllum rWood gerðum; fyrir rWood Panel er auk þess EPD fáanleg samkvæmt beiðni.",
+      "applications": {
+        "app1": "Stjórnarherbergi og skrifstofur stjórnenda",
+        "app2": "Ráðstefnusalir, leikhús og fyrirlestrasalir",
+        "app3": "Hótelanddyri og veitingastaðir",
+        "app4": "Móttökusvæði og gangar",
+        "app5": "Bókasöfn og menningarhús",
+        "app6": "Íbúðarrými"
+      },
+      "faq": {
+        "q1": {
+          "question": "Hvaða hljóðdeyfiplata úr viði dregur mest í sig hljóð?",
+          "answer": "rWood Groove og rWood Micro ná bæði αw 0,90 með filt- eða steinullarbaki. rWood Perf nær frá αw 0,35 (PH5) upp í 0,85 (PD8) eftir götunarmynstri. rWood Panel er slétt spónlögð plata sem er valin vegna útlits fremur en hljóðísogs."
+        },
+        "q2": {
+          "question": "Er viðarspónninn á hljóðdeyfiplötum úr viði FSC-vottaður?",
+          "answer": "Já — allar rWood-gerðir nota FSC®-vottaðan viðarspón og fyrir rWood Panel er einnig hægt að fá EPD sé þess óskað. Rekjanleikaskjöl (chain-of-custody) eru fáanleg vegna útboða."
+        },
+        "q3": {
+          "question": "Hvaða brunaflokki ná hljóðdeyfiplötur úr viði?",
+          "answer": "Með eldtefjandi kjarna eru rWood-gerðirnar flokkaðar B-s1,d0 samkvæmt EN 13501-1; með venjulegum MDF-kjarna er flokkunin D-s2. Tilgreinið FR-kjarna fyrir flóttaleiðir og opinberar byggingar."
+        },
+        "q4": {
+          "question": "Er hægt að baklýsa örgötuðar viðarplötur?",
+          "answer": "Já — rWood Micro fæst með baklýsingu: 0,5 mm götin hleypa ljósi í gegn á meðan yfirborðið lítur enn út eins og heill viður."
+        },
+        "q5": {
+          "question": "Hvernig eru hljóðdeyfiplötur úr viði festar upp og hver er afhendingartíminn?",
+          "answer": "Allar gerðir eru festar með földu klemmukerfi (eða límdar fyrir varanlegar uppsetningar); rWood Groove má einnig festa á lekta með nót- og fjöðursamskeytum. Lagerspónn er afhentur á 3–4 vikum; viðartegundir utan lagers og sérfrágangur á 6–8 vikum."
+        }
+      }
+    },
+    "booths": {
+      "title": "Hljóðeinangraðir símaklefar – Solo, Duo, Modular XL | Re-Sound",
+      "description": "Símaklefar og fundarklefar: Solo Flex (1 manns), Duo (2), Modular XL (6–10). Talminnkun skv. ISO 23351-1, hljóðlaus loftræsting, 230 V, USB-C.",
+      "h1": "Símaklefar og fundarklefar fyrir skrifstofur, smíðaðir í Belgíu",
+      "breadcrumb": "Klefar",
+      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Re-Sound er vörumerki Stretch Group. Við framleiðum í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). Klefalínan er í þremur stærðum. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Öllum klefum fylgir 5 ára ábyrgð á burðarvirki og þeir eru afhentir um allt ESB, með uppsetningu sé þess óskað. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
+      "whyCertsDesc": "5 ára ábyrgð á burðarvirki og 2 ára ábyrgð á rafbúnaði á öllum klefum; lækkun talstyrks gefin upp samkvæmt ISO 23351-1.",
+      "applications": {
+        "app1": "Opin skrifstofurými og samvinnurými",
+        "app2": "Símtöl og myndfundir á sveigjanlegum vinnustöðum",
+        "app3": "Trúnaðarsamtöl á sviði mannauðs, lögfræði og fjármála",
+        "app4": "Móttökur og gestasvæði",
+        "app5": "Bókasöfn og háskólar",
+        "app6": "Einbeitingarvinna og fundir lítilla teyma"
+      },
+      "faq": {
+        "q1": {
+          "question": "Hversu miklu hljóðlátari er símaklefi fyrir skrifstofur?",
+          "answer": "Lækkun talstyrks er mæld samkvæmt ISO 23351-1: Solo Flex nær um 24 dB(A) og Modular XL 25,9 dB(A), báðir í flokki C samkvæmt staðlinum (A+ ≥ 33, A ≥ 30, B ≥ 27, C ≥ 24, D ≥ 21 dB(A)). Í dæmigerðu opnu skrifstofurými kemur það í veg fyrir að venjulegt símtal sé skiljanlegt utan klefans."
+        },
+        "q2": {
+          "question": "Þurfa hljóðeinangraðir símaklefar rafmagnstengingu?",
+          "answer": "Já — hver klefi er tengdur við venjulega 230 V innstungu fyrir lýsingu, loftræstingu og tengla í borðinu (Schuko auk USB-C PD 60 W). Solo Flex notar um 80 W í notkun."
+        },
+        "q3": {
+          "question": "Hvernig er næðisklefi loftræstur?",
+          "answer": "Hljóðlausar EC-viftur skipta loftinu stöðugt út — 4,6 m³/mín í Solo Flex, 9,2 í Duo og 18,4 í grunneiningu Modular XL — stýrt af viðveruskynjara svo loftið í klefanum sé ferskt þegar einhver gengur inn."
+        },
+        "q4": {
+          "question": "Hvaða fundarklefi rúmar sex manns eða fleiri?",
+          "answer": "Modular XL: grunneiningin rúmar sex manns og hver 90 cm hluti eykur rýmið upp í tíu manns, með undirbúningi fyrir A/V-búnað og aðgengilegum inngangi."
+        },
+        "q5": {
+          "question": "Hver er afhendingartíminn og ábyrgðin á símaklefa?",
+          "answer": "Solo Flex og Duo eru afhentir 4–6 vikum frá pöntun, grunneining Modular XL á 6–8 vikum; sérvalin áklæði bæta við 2–3 vikum. Ábyrgð á burðarvirki er 5 ár og á rafbúnaði 2 ár, með afhendingu og uppsetningu um allt ESB."
+        }
+      }
+    }
   }
 }

@@ -1,6 +1,7 @@
 "use client";
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { localeFullCodes, type Locale } from '@/i18n/config';
 
 interface BlogPostHeaderProps {
   slug: string;
@@ -8,6 +9,9 @@ interface BlogPostHeaderProps {
 
 export default function BlogPostHeader({ slug }: BlogPostHeaderProps) {
   const t = useTranslations('blogPosts');
+  const locale = useLocale();
+  const dateLocale = localeFullCodes[locale as Locale] ?? 'en-BE';
+  const tBlog = useTranslations('blog');
   
   const title = t(`${slug}.title`);
   const excerpt = t(`${slug}.excerpt`);
@@ -16,7 +20,7 @@ export default function BlogPostHeader({ slug }: BlogPostHeaderProps) {
   const readTime = parseInt(t(`${slug}.readTime`), 10);
   const formatDate = (dateString: string) => {
     const d = new Date(dateString);
-    return d.toLocaleDateString('en-US', {
+    return d.toLocaleDateString(dateLocale, {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
@@ -32,7 +36,7 @@ export default function BlogPostHeader({ slug }: BlogPostHeaderProps) {
         <div className="post-meta">
           <time>{formatDate(date)}</time>
           <span className="meta-divider">•</span>
-          <span>{readTime} min read</span>
+          <span>{tBlog('minRead', { minutes: readTime })}</span>
         </div>
       </div>
 

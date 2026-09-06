@@ -577,7 +577,8 @@
       "education": "Education",
       "company": "Company",
       "design": "Design"
-    }
+    },
+    "minRead": "{minutes} min read"
   },
   "blogPosts": {
     "circular-economy-acoustics": {

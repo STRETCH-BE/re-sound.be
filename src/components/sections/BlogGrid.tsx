@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { localeFullCodes, type Locale } from '@/i18n/config';
 import { Link } from '@/i18n/navigation';
 
 interface BlogPost {
@@ -23,11 +24,13 @@ interface BlogGridProps {
 
 export default function BlogGrid({ posts = defaultPosts }: BlogGridProps) {
   const t = useTranslations('blogPosts');
+  const locale = useLocale();
+  const dateLocale = localeFullCodes[locale as Locale] ?? 'en-BE';
   const tCommon = useTranslations('blog');
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
+    return date.toLocaleDateString(dateLocale, {
       year: 'numeric',
       month: 'long',
       day: 'numeric',

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "homeTitle": "Re-Sound | Reciclado de origen. Circular por diseño.",
-    "homeDescription": "Soluciones acústicas de alto rendimiento fabricadas con materiales reciclados. Transformamos residuos en silencio, diseñadas para el planeta, fabricadas en Bélgica.",
+    "homeTitle": "Paneles acústicos y cabinas telefónicas, Bélgica | Re-Sound",
+    "homeDescription": "Paneles acústicos circulares (textil, chapa rWood, rPET) y cabinas telefónicas de oficina, de nuestras fábricas en Bélgica y Polonia. Recogida gratuita.",
     "productsTitle": "Productos",
     "productsDescription": "Paneles acústicos circulares y cabinas de fabricación propia: textil (Interior, Solid, Divide), rWood, rPET y cabinas (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "Sobre Re-Sound",
@@ -13,37 +13,37 @@
     "blogTitle": "Blog",
     "blogDescription": "Perspectivas sobre economía circular, acústica y diseño sostenible del equipo de Re-Sound.",
     "interiorTitle": "Paneles Acústicos de Pared Interior | Re-Sound",
-    "interiorDescription": "Paneles acústicos de pared modulares fabricados con textiles 100% reciclados. Absorción sonora clase A (αw 1,0), fundas extraíbles, fabricados en Bélgica.",
+    "interiorDescription": "Paneles acústicos de pared modulares de textil reciclado: absorción clase A (αw 1,0), funda extraíble y lavable, hechos en Bélgica. Desde 387 € por set.",
     "solidTitle": "Paneles Acústicos de Pared Solid | Re-Sound",
-    "solidDescription": "Paneles acústicos de pared de gran formato para máxima absorción sonora. 1200 × 600 mm, sistema de instalación con ganchos, diseño circular.",
+    "solidDescription": "Paneles acústicos de pared de gran formato (1200 × 600 mm) de alto impacto. Instalación con ganchos, núcleo de textil reciclado, hechos en Bélgica.",
     "divideTitle": "Separadores Acústicos Autoportantes Divide | Re-Sound",
-    "divideDescription": "Divisores acústicos autoportantes con conexión modular magnética. Gestión flexible del espacio, absorción por ambos lados.",
-    "rwoodGrooveTitle": "rWood Groove Paneles Acústicos de Madera | Re-Sound",
-    "rwoodGrooveDescription": "Paneles acústicos con ranuras premium con chapa de madera certificada FSC® sobre núcleo de fieltro reciclado. Absorción clase A.",
-    "rwoodPerfTitle": "rWood Perf Paneles Acústicos de Madera Perforada | Re-Sound",
-    "rwoodPerfDescription": "Paneles acústicos de madera perforada clásicos con chapa certificada FSC®. Absorción de banda ancha, patrones de perforación ajustables.",
-    "rwoodMicroTitle": "rWood Micro Paneles Acústicos de Madera Micro-Perforada | Re-Sound",
-    "rwoodMicroDescription": "Paneles acústicos de madera micro-perforados de precisión. Mecanismo de doble absorción, máxima seguridad contra incendios.",
-    "rwoodVeneerTitle": "rWood Panel Paneles Acústicos de Chapa de Madera | Re-Sound",
-    "rwoodVeneerDescription": "Paneles acústicos de chapa de madera lisa. 10 especies seleccionadas, construcción de calidad de muebles, DAP disponible.",
-    "rpetGrooveTitle": "rPET Groove Paneles Acústicos de PET Reciclado | Re-Sound",
-    "rpetGrooveDescription": "Paneles acústicos con ranuras fabricados con botellas PET 100% recicladas. 12 colores de diseñador, 3 espesores (12/24/36 mm).",
-    "rpetPanelTitle": "rPET Panel Paneles Acústicos de PET Reciclado | Re-Sound",
-    "rpetPanelDescription": "Paneles acústicos planos versátiles fabricados con PET 100% reciclado. Se procesa como MDF, certificado OEKO-TEX®, clase A.",
-    "rpetFlexGrooveTitle": "Paneles acústicos flexibles rPET Flex Groove | Re-Sound",
-    "rpetFlexGrooveDescription": "Paneles acústicos ranurados flexibles, fabricados con PET 100% reciclado. Plegables para superficies curvas, columnas e instalaciones a medida. Certificación OEKO-TEX®.",
+    "divideDescription": "Mamparas acústicas autoportantes con conexión modular magnética: absorción por ambas caras, sin instalación, textil reciclado. Fabricadas en Bélgica.",
+    "rwoodGrooveTitle": "rWood Groove — Paneles acústicos de madera ranurados | Re-Sound",
+    "rwoodGrooveDescription": "Paneles acústicos de madera ranurados con chapa de roble y nogal certificada FSC sobre núcleo de fieltro reciclado. Clase A, 4 tipos de lamas, 5 acabados.",
+    "rwoodPerfTitle": "rWood Perf — Paneles acústicos de madera perforada | Re-Sound",
+    "rwoodPerfDescription": "Paneles acústicos de madera perforada con chapa certificada FSC: cuatro patrones de perforación para absorción de banda ancha, 8 acabados, núcleo ignífugo.",
+    "rwoodMicroTitle": "rWood Micro — Paneles acústicos microperforados | Re-Sound",
+    "rwoodMicroDescription": "Paneles acústicos de madera microperforados (0,5 mm) con chapa certificada FSC: patrón casi invisible, reacción al fuego B-s1,d0, opción retroiluminada.",
+    "rwoodVeneerTitle": "rWood Panel — Paneles acústicos de chapa, 10 especies | Re-Sound",
+    "rwoodVeneerDescription": "Paneles acústicos de chapa lisa en 10 especies de madera: calidad mobiliario, FSC, EPD disponible. Cepillados, teñidos y lacados, listos para instalar.",
+    "rpetGrooveTitle": "rPET Groove — Paneles acústicos de PET ranurados | Re-Sound",
+    "rpetGrooveDescription": "Paneles acústicos de PET ranurados de botellas recicladas: 12 colores, 3 espesores (12/24/36 mm), NRC hasta 0,90, fuego B-s1,d0. Hechos en Polonia.",
+    "rpetPanelTitle": "rPET Panel — Panel acústico de PET reciclado | Re-Sound",
+    "rpetPanelDescription": "Panel acústico de PET reciclado que se mecaniza como MDF: corte, fresado, taladrado y pintado. 16 colores, 12/18/24 mm, OEKO-TEX®. Hecho en Polonia.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove — Paneles acústicos PET flexibles | Re-Sound",
+    "rpetFlexGrooveDescription": "Paneles acústicos de PET flexibles para paredes curvas, columnas y techos: ranuras en V, radio mínimo 500 mm, 12 colores, certificados OEKO-TEX®.",
     "faqTitle": "FAQ — Paneles Acústicos Re-Sound",
-    "faqDescription": "Respuestas a preguntas frecuentes sobre los paneles acústicos Re-Sound: cómo funciona la absorción, clasificaciones al fuego, plazos, programa circular de recogida y selección de productos.",
-    "duoDescription": "Una cabina, dos configuraciones: Flex acomoda a dos personas para una reunión enfocada; Work ofrece a una sola persona un escritorio de ancho completo. Huella de 2 m², escritorio eléctrico, enchufe 230V, ventilación completa. Gama acústica Re-Sound.",
-    "soloFlexDescription": "Cabina telefónica acústica para una persona, ideal para llamadas de concentración y trabajo profundo. Huella de 1 m², escritorio sentado-de pie integrado, enchufe 230V, USB-C y ventilación silenciosa. Parte de la gama de cabinas Re-Sound.",
-    "modularXlDescription": "Pod de reunión acústico escalable. La base acomoda a 6 personas, ampliable hasta 10 mediante segmentos de 90 cm. Reducción de voz de 25,9 dB(A), equipamiento A/V completo, entrada accesible por diseño.",
-    "modularXlTitle": "Modular XL Pod de reunión acústico escalable | Re-Sound",
-    "duoTitle": "Duo Cabina acústica en dos configuraciones | Re-Sound",
-    "soloFlexTitle": "Solo Flex Cabina acústica individual | Re-Sound",
-    "whereToBuyTitle": "Dónde ver y comprar Re-Sound",
-    "whereToBuyDescription": "Conoce Re-Sound en persona en nuestro showroom de Beveren-Waas, solicita un kit de muestras gratis, reserva una visita por vídeo en directo o concierta una demostración a domicilio en cualquier punto del Benelux.",
+    "faqDescription": "Respuestas a las preguntas frecuentes sobre paneles acústicos y cabinas telefónicas Re-Sound: absorción, reacción al fuego, plazos, recogida y selección.",
+    "soloFlexTitle": "Solo Flex — Cabina acústica individual para la oficina | Re-Sound",
+    "soloFlexDescription": "Cabina acústica individual para llamadas: 1 m² de huella, mesa regulable en altura, 230 V y USB-C, ventilación silenciosa, 24 dB(A) de reducción de voz.",
+    "duoTitle": "Duo — Cabina telefónica de oficina para 2 personas | Re-Sound",
+    "duoDescription": "Cabina telefónica de oficina con dos configuraciones: Flex sienta a dos para reunirse, Work da a una persona una mesa amplia. 2 m², 230 V, ventilada.",
+    "modularXlTitle": "Modular XL — Pod de reuniones acústico, 6–10 personas | Re-Sound",
+    "modularXlDescription": "Pod de reuniones acústico para 6 a 10 personas: base ampliable en segmentos de 90 cm, 25,9 dB(A) de reducción de voz, A/V completo, acceso accesible.",
     "partnerTitle": "Programa de partners · programa trade y distribuidor",
-    "partnerDescription": "Programa trade y de partners Re-Sound para arquitectos, diseñadores, distribuidores y mayoristas en toda Europa. Documentación lista para la prescripción, protección regional de cuentas y soporte directo de las personas que diseñaron la gama."
+    "partnerDescription": "Programa de partners Re-Sound para arquitectos, diseñadores y distribuidores en Europa: documentación técnica, protección regional, soporte directo.",
+    "whereToBuyTitle": "Dónde ver y comprar Re-Sound",
+    "whereToBuyDescription": "Vea Re-Sound en nuestro showroom de Beveren-Waas, pida un kit de muestras gratuito, reserve una visita por vídeo o una demo in situ en todo el Benelux."
   },
   "nav": {
     "products": "Productos",
@@ -52,8 +52,8 @@
     "contact": "Contacto",
     "cta": "Solicitar Presupuesto",
     "faq": "FAQ",
-    "whereToBuy": "Dónde comprar",
     "partner": "Partners",
+    "whereToBuy": "Dónde comprar",
     "rangeRpet": "Paneles acústicos de PET",
     "rangeRwood": "Paneles acústicos de madera",
     "rangeBooths": "Cabinas acústicas"
@@ -61,8 +61,8 @@
   "hero": {
     "rwood": {
       "badge": "Serie rWood · Línea de Acabado Natural",
-      "title": "Paneles acústicos con",
-      "titleHighlight": "alma natural.",
+      "title": "Paneles acústicos y cabinas telefónicas circulares,",
+      "titleHighlight": "de nuestras fábricas propias",
       "subtitle": "Chapa de madera real sobre un núcleo acústico reciclado de alto rendimiento. Calidez biofílica y absorción sonora clase A en un solo panel.",
       "ctaPrimary": "Descubrir rWood",
       "ctaSecondary": "Ver Acabados",
@@ -129,7 +129,7 @@
     "specAbsorptionKey": "Absorción Sonora",
     "specFireKey": "Clasificación al Fuego",
     "specThicknessKey": "Espesor",
-    "specVariantsKey": "Variants",
+    "specVariantsKey": "Variantes",
     "specVariantsVal": "Sólido y Perforado",
     "specCoreKey": "Material del Núcleo",
     "specCoreVal": "Textil reciclado",
@@ -173,9 +173,9 @@
       "showingFiltered": "Mostrando {filtered} de {total} productos",
       "noResults": "Ningún producto coincide con sus filtros",
       "clearAndShowAll": "Borrar filtros y mostrar todos",
-      "panel": "Paneles acústicos",
       "use": "Uso",
-      "booth": "Cabinas"
+      "panel": "Paneles acústicos",
+      "booth": "Cabinas telefónicas de oficina"
     },
     "interior": {
       "title": "Interior",
@@ -265,17 +265,17 @@
         "description": "Disponible en más de 50 colores y tamaños personalizados para adaptarse a su visión de diseño."
       }
     },
-    "duo": {
-      "title": "Duo",
-      "description": "Una cabina, dos configuraciones. Flex sienta a dos para una reunión; Work ofrece a una sola persona un escritorio amplio. Reducción de 26 dB(A)."
-    },
     "solo-flex": {
       "title": "Solo Flex",
-      "description": "Cabina acústica para una persona, para llamadas de concentración y trabajo profundo. Huella de 1 m², escritorio sentado-de pie integrado, reducción de voz de 24 dB(A)."
+      "description": "Cabina telefónica de oficina individual para llamadas concentradas y trabajo profundo. Huella de 1 m², mesa regulable en altura integrada, 24 dB(A) de reducción de voz."
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Cabina telefónica de oficina para dos personas con dos configuraciones: Flex sienta a dos para una reunión, Work ofrece a una persona una mesa de ancho completo."
     },
     "modular-xl": {
       "title": "Modular XL",
-      "description": "Pod de reunión escalable. Base para 6 personas, ampliable a 10 con segmentos modulares de 90 cm. Reducción de voz de 25,9 dB(A)."
+      "description": "Pod de reuniones acústico escalable. Base para 6 personas, ampliable a 10 con segmentos modulares de 90 cm. 25,9 dB(A) de reducción de voz."
     }
   },
   "specs": {
@@ -577,114 +577,115 @@
       "education": "Educación",
       "company": "Empresa",
       "design": "Diseño"
-    }
+    },
+    "minRead": "{minutes} min de lectura"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
-      "title": "The Circular Economy: A New Era for Acoustic Solutions",
-      "excerpt": "How circular design principles are transforming the acoustic panel industry and why it matters for the future.",
-      "category": "sustainability",
+      "title": "La economía circular: una nueva era para las soluciones acústicas",
+      "excerpt": "Cómo los principios del diseño circular están transformando el sector de los paneles acústicos y por qué importa para el futuro.",
+      "category": "sostenibilidad",
       "date": "2024-01-15",
       "readTime": "5",
       "content": {
-        "intro": "The acoustic panel industry is undergoing a fundamental transformation. Traditional linear models—take, make, dispose—are giving way to circular approaches that keep materials in use indefinitely.",
+        "intro": "El sector de los paneles acústicos vive una transformación de fondo. Los modelos lineales tradicionales —extraer, fabricar, desechar— están dejando paso a enfoques circulares que mantienen los materiales en uso de forma indefinida.",
         "section1": {
           "title": "Por qué importa la circularidad",
-          "text": "Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives, can take centuries to decompose. The circular economy offers an alternative: designing products that can be continuously recycled."
+          "text": "Cada año, millones de toneladas de materiales acústicos acaban en vertederos. Estos materiales, que a menudo contienen fibras sintéticas y adhesivos, pueden tardar siglos en descomponerse. La economía circular ofrece una alternativa: diseñar productos que puedan reciclarse una y otra vez."
         },
         "section2": {
           "title": "Nuestro enfoque",
-          "text": "At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels can be fully recycled at end of life—becoming new panels rather than waste."
+          "text": "En Re-Sound hemos diseñado nuestros paneles desde cero pensando en la circularidad. Al utilizar únicamente textiles reciclados y aglutinantes de base biológica, nuestros paneles pueden reciclarse por completo al final de su vida útil, convirtiéndose en nuevos paneles en lugar de en residuos."
         },
-        "quote": "The best acoustic panel is one that never becomes waste.",
+        "quote": "El mejor panel acústico es el que nunca se convierte en residuo.",
         "section3": {
           "title": "El argumento empresarial",
-          "text": "Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we build stronger relationships with customers while reducing material costs."
+          "text": "El diseño circular no solo es bueno para el medio ambiente: también es un buen negocio. Al crear valor a partir de los residuos y ofrecer programas de recogida, construimos relaciones más sólidas con los clientes y, al mismo tiempo, reducimos los costes de material."
         },
         "conclusion": {
           "title": "Mirando al futuro",
-          "text": "The transition to circular acoustics is just beginning. As more companies adopt these principles, we'll see an industry transformed—one where acoustic comfort and environmental responsibility go hand in hand."
+          "text": "La transición hacia la acústica circular acaba de empezar. A medida que más empresas adopten estos principios, veremos un sector transformado, en el que el confort acústico y la responsabilidad medioambiental irán de la mano."
         }
       }
     },
     "office-acoustic-solutions": {
-      "title": "Creating the Perfect Acoustic Environment in Modern Offices",
-      "excerpt": "Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.",
-      "category": "products",
+      "title": "Cómo crear el entorno acústico perfecto en las oficinas modernas",
+      "excerpt": "Consejos prácticos para mejorar la acústica en oficinas diáfanas, salas de reuniones y espacios colaborativos.",
+      "category": "productos",
       "date": "2024-01-10",
       "readTime": "4",
       "content": {
-        "intro": "Open-plan offices present unique acoustic challenges. Without proper treatment, noise levels can reduce productivity by up to 66%. Here's how to create a balanced acoustic environment.",
+        "intro": "Las oficinas diáfanas plantean retos acústicos particulares. Sin un tratamiento adecuado, los niveles de ruido pueden reducir la productividad hasta un 66 %. Le explicamos cómo crear un entorno acústico equilibrado.",
         "section1": {
-          "title": "Understanding Office Acoustics",
-          "text": "Sound in offices comes from multiple sources: speech, equipment, HVAC systems, and external noise. Effective acoustic design addresses all these elements."
+          "title": "Entender la acústica de la oficina",
+          "text": "El sonido en las oficinas procede de múltiples fuentes: el habla, los equipos, los sistemas de climatización y el ruido exterior. Un diseño acústico eficaz aborda todos estos elementos."
         },
         "section2": {
           "title": "Colocación estratégica de paneles",
-          "text": "Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers between desks."
+          "text": "No todas las superficies necesitan tratamiento. Céntrese en las zonas de techo sobre los puestos de trabajo, las paredes entre las zonas colaborativas y las de concentración, y los separadores entre mesas."
         },
-        "quote": "Good acoustics is invisible—you only notice when it's missing.",
+        "quote": "Una buena acústica es invisible: solo se nota cuando falta.",
         "section3": {
-          "title": "Balancing Absorption and Reflection",
-          "text": "Complete absorption creates an unnaturally 'dead' space. The goal is reducing reverberation while maintaining some natural ambience."
+          "title": "Equilibrar absorción y reflexión",
+          "text": "Una absorción total crea un espacio artificialmente «muerto». El objetivo es reducir la reverberación manteniendo cierta ambientación natural."
         },
         "conclusion": {
           "title": "Empezar pequeño, medir resultados",
-          "text": "Begin with high-impact areas and measure the difference. Often, strategic placement of a few panels can transform a space."
+          "text": "Empiece por las zonas de mayor impacto y mida la diferencia. A menudo, la colocación estratégica de unos pocos paneles puede transformar un espacio."
         }
       }
     },
     "recycled-materials-quality": {
-      "title": "Recycled Materials: Meeting and Exceeding Quality Standards",
-      "excerpt": "How we ensure our recycled textile panels match or exceed the performance of traditional materials.",
-      "category": "materials",
+      "title": "Materiales reciclados: cumplir y superar los estándares de calidad",
+      "excerpt": "Cómo garantizamos que nuestros paneles de textil reciclado igualan o superan el rendimiento de los materiales tradicionales.",
+      "category": "materiales",
       "date": "2024-01-05",
       "readTime": "6",
       "content": {
-        "intro": "There's a persistent myth that recycled materials mean compromised quality. Our panels prove the opposite—recycled can mean superior.",
+        "intro": "Persiste el mito de que los materiales reciclados implican una calidad inferior. Nuestros paneles demuestran lo contrario: reciclado puede significar superior.",
         "section1": {
           "title": "Selección rigurosa de materiales",
-          "text": "Not all recycled textiles are suitable for acoustic panels. We carefully select and sort materials to ensure consistent fiber quality and acoustic performance."
+          "text": "No todos los textiles reciclados sirven para fabricar paneles acústicos. Seleccionamos y clasificamos los materiales con cuidado para garantizar una calidad de fibra y un rendimiento acústico constantes."
         },
         "section2": {
           "title": "Procesado avanzado",
-          "text": "Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-performance results."
+          "text": "Nuestro proceso propio transforma textiles mixtos en una fibra acústica uniforme. Esta homogeneidad es clave para lograr resultados predecibles y de alto rendimiento."
         },
-        "quote": "Sustainability and quality aren't trade-offs—they're complements.",
+        "quote": "Sostenibilidad y calidad no son incompatibles: se complementan.",
         "section3": {
           "title": "Pruebas de terceros",
-          "text": "Every batch undergoes acoustic testing to EN ISO 354 standards. We achieve Class A absorption ratings consistently, meeting the same standards as virgin material panels."
+          "text": "Cada lote se somete a ensayos acústicos según la norma EN ISO 354. Alcanzamos de forma constante la clase A de absorción, cumpliendo los mismos estándares que los paneles de materiales vírgenes."
         },
         "conclusion": {
           "title": "El futuro es reciclado",
-          "text": "As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use recycled—it's how quickly we can scale."
+          "text": "A medida que mejore la tecnología de procesado, los materiales reciclados superarán cada vez más a las alternativas vírgenes. La cuestión no es si utilizar reciclado, sino con qué rapidez podemos escalarlo."
         }
       }
     },
     "sound-absorption-explained": {
-      "title": "Sound Absorption Explained: A Guide for Architects",
-      "excerpt": "Everything you need to know about sound absorption coefficients and selecting the right panels.",
-      "category": "education",
+      "title": "La absorción acústica explicada: guía para arquitectos",
+      "excerpt": "Todo lo que necesita saber sobre los coeficientes de absorción acústica y la elección de los paneles adecuados.",
+      "category": "formación",
       "date": "2024-01-01",
       "readTime": "7",
       "content": {
-        "intro": "Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.",
+        "intro": "Entender las especificaciones acústicas puede resultar complicado. Esta guía desglosa las métricas clave y lo que significan para su proyecto.",
         "section1": {
           "title": "El coeficiente αw",
-          "text": "The weighted sound absorption coefficient (αw) is the most common metric. It ranges from 0 (no absorption) to 1 (complete absorption). Our panels achieve αw 0.95-1.00."
+          "text": "El coeficiente de absorción acústica ponderado (αw) es la métrica más habitual. Va de 0 (sin absorción) a 1 (absorción total). Nuestros paneles alcanzan un αw de 0,95-1,00."
         },
         "section2": {
           "title": "Consideraciones de frecuencia",
-          "text": "Different materials absorb different frequencies. Porous materials like ours excel at mid and high frequencies—the speech range—making them ideal for offices."
+          "text": "Cada material absorbe frecuencias distintas. Los materiales porosos como los nuestros destacan en las frecuencias medias y altas —el rango del habla—, lo que los hace ideales para oficinas."
         },
-        "quote": "The right absorption depends on the room's purpose.",
+        "quote": "La absorción adecuada depende de la función de la sala.",
         "section3": {
           "title": "Cálculos de cobertura",
-          "text": "More isn't always better. The ideal coverage depends on room volume, surface materials, and intended use. We offer free acoustic consultations to help specify correctly."
+          "text": "Más no siempre es mejor. La cobertura ideal depende del volumen de la sala, los materiales de las superficies y el uso previsto. Ofrecemos asesoramiento acústico gratuito para ayudarle a prescribir correctamente."
         },
         "conclusion": {
           "title": "Más allá de los números",
-          "text": "While specifications matter, the best acoustic design considers the whole experience. Aesthetics, sustainability, and wellbeing all contribute to successful spaces."
+          "text": "Aunque las especificaciones importan, el mejor diseño acústico tiene en cuenta la experiencia completa. Estética, sostenibilidad y bienestar contribuyen por igual al éxito de un espacio."
         }
       }
     }
@@ -899,7 +900,7 @@
       "density": "Densidad",
       "testStandard": "Norma de prueba",
       "envLabel": "Medioambiental",
-      "health": "Health",
+      "health": "Salud",
       "installation": "Instalación",
       "environment": "Entorno",
       "envVal": "Interior (zonas secas)",
@@ -940,7 +941,7 @@
   "interiorPage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE PARED",
-      "title": "Interior",
+      "title": "Interior: paneles acústicos de pared modulares de textil reciclado",
       "tagline": "Acústica Modular, Circular por Diseño",
       "description": "Transforme su espacio con Re-Sound Interior — un sistema acústico de pared completo fabricado con materiales reciclados.",
       "uspAbsorption": "Absorción αw 1,0",
@@ -1053,7 +1054,7 @@
   "solidPage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE PARED",
-      "title": "Solid",
+      "title": "Solid: paneles acústicos de pared de gran formato",
       "tagline": "Acústica de Alto Impacto, Instalación Sin Esfuerzo",
       "description": "Conozca Re-Sound Solid — su panel acústico de pared de alto impacto diseñado para máximo rendimiento con mínimo esfuerzo.",
       "usp1": "Alta Absorción",
@@ -1147,7 +1148,7 @@
       "maxCoverageDesc": "Gran formato para resultados de alto impacto",
       "binderValue": "Adhesivo de base biológica",
       "coverValue2": "Tela reciclada",
-      "binderRow": "Binder",
+      "binderRow": "Aglutinante",
       "endOfLife": "Fin de vida útil",
       "endOfLifeVal": "100% reciclable",
       "mounting": "Montaje",
@@ -1189,7 +1190,7 @@
   "dividePage": {
     "hero": {
       "tag": "DIVISOR ACÚSTICO DE ESPACIOS",
-      "title": "Divide",
+      "title": "Divide: mamparas acústicas autoportantes",
       "tagline": "Encaje para Redefinir, Divida con Estilo",
       "description": "Conozca Re-Sound Divide — la primera pantalla acústica autoportante diseñada para uso flexible.",
       "usp1": "Conexión Magnética",
@@ -1318,7 +1319,7 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE PET RECICLADO",
-      "title": "rPET - Groove",
+      "title": "rPET Groove: paneles acústicos ranurados de PET en 12 colores",
       "tagline": "De Botellas al Silencio",
       "description": "Los paneles rPET - Groove combinan estética contemporánea con rendimiento acústico excepcional. Fabricados al 100% con botellas PET recicladas, estos paneles de alta densidad ofrecen absorción sonora de clase A al tiempo que diverten los residuos plásticos del vertedero.",
       "usp1": "100% PET Reciclado",
@@ -1330,7 +1331,7 @@
     "overview": {
       "tag": "VISIÓN GENERAL",
       "title": "Silencio Circular",
-      "description": "rPET - Groove panels bring a contemporary touch to any space while reducing noise disturbances. The visible slat design creates visual depth and texture, perfect for modern offices, meeting rooms, lobbies, restaurants, and reception areas.",
+      "description": "Los paneles rPET - Groove aportan un toque contemporáneo a cualquier espacio a la vez que reducen las molestias por ruido. El diseño de lamas visibles crea profundidad visual y textura, ideal para oficinas modernas, salas de reuniones, vestíbulos, restaurantes y zonas de recepción.",
       "feature1": "100% fabricado con botellas PET post-consumo recicladas",
       "feature2": "Absorción sonora clase A (NRC hasta 0,90)",
       "feature3": "Acabado duradero y colorido gracias al teñido dope",
@@ -1341,32 +1342,32 @@
       "tag": "EL VIAJE",
       "title": "De Botella Plástica a Panel Acústico",
       "step1Number": "01",
-      "step1Title": "Collection",
-      "step1Desc": "Post-consumer plastic bottles are collected and sorted",
+      "step1Title": "Recogida",
+      "step1Desc": "Las botellas de plástico posconsumo se recogen y se clasifican",
       "step2Number": "02",
       "step2Title": "Procesamiento",
-      "step2Desc": "Bottles are cleaned, shredded, and melted into PET fibers",
+      "step2Desc": "Las botellas se limpian, se trituran y se funden para obtener fibras de PET",
       "step3Number": "03",
-      "step3Title": "Felting",
-      "step3Desc": "Fibers are compressed into dense acoustic felt sheets",
+      "step3Title": "Fieltrado",
+      "step3Desc": "Las fibras se comprimen en densas láminas de fieltro acústico",
       "step4Number": "04",
-      "step4Title": "Finishing",
-      "step4Desc": "CNC precision cutting creates the signature groove patterns",
-      "description": "Each rPET - Groove panel gives new life to approximately 60 recycled plastic bottles. Our manufacturing process transforms post-consumer PET waste into high-performance acoustic felt, creating a truly circular product.",
+      "step4Title": "Acabado",
+      "step4Desc": "El corte de precisión CNC crea los característicos patrones de ranuras",
+      "description": "Cada panel rPET - Groove da una nueva vida a aproximadamente 60 botellas de plástico recicladas. Nuestro proceso de fabricación transforma residuos de PET posconsumo en fieltro acústico de alto rendimiento, creando un producto verdaderamente circular.",
       "statLabel": "Botellas recicladas por panel",
       "description2": ""
     },
     "patterns": {
       "tag": "PATRONES",
       "title": "Elige tu Patrón",
-      "description": "Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precision-cut using CNC technology for perfect consistency.",
-      "groovesLabel": "grooves",
-      "spacingLabel": "Spacing:",
+      "description": "Cuatro patrones de ranurado distintivos para adaptarse a cualquier visión arquitectónica. Desde líneas paralelas limpias hasta dinámicos chevrones, cada patrón se corta con precisión mediante tecnología CNC para una uniformidad perfecta.",
+      "groovesLabel": "ranuras",
+      "spacingLabel": "Separación:",
       "description2": ""
     },
     "colors": {
       "title": "12 Colores Vibrantes",
-      "subtitle": "From neutral tones to bold accents, our curated collection complements any interior.",
+      "subtitle": "Desde tonos neutros hasta acentos atrevidos, nuestra cuidada colección complementa cualquier interior.",
       "tag": "COLORES",
       "feature1": "Resistente a los Rayos UV",
       "feature1Desc": "El color teñido en masa no se desvanece con la luz solar",
@@ -1374,8 +1375,8 @@
       "feature2Desc": "Superficie resistente a las manchas, limpiable con un paño húmedo",
       "feature3": "Sin Decoloración",
       "feature3Desc": "El proceso de teñido garantiza colores coherentes en todo el panel",
-      "description2": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance.",
-      "description": "From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved through dope-dyeing, ensuring excellent color fastness and UV resistance."
+      "description2": "Desde tonos neutros hasta acentos atrevidos, nuestra cuidada paleta de colores se integra a la perfección en cualquier concepto de interiorismo. Todos los colores se obtienen mediante tintura en masa, lo que garantiza una excelente solidez del color y resistencia a los rayos UV.",
+      "description": "Desde tonos neutros hasta acentos atrevidos, nuestra cuidada paleta de colores se integra a la perfección en cualquier concepto de interiorismo. Todos los colores se obtienen mediante tintura en masa, lo que garantiza una excelente solidez del color y resistencia a los rayos UV."
     },
     "thickness": {
       "title": "Seleccionar Espesor",
@@ -1386,7 +1387,7 @@
     "acoustics": {
       "tag": "ACÚSTICA",
       "title": "Rendimiento Acústico",
-      "description": "The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye.",
+      "description": "El exclusivo diseño ranurado, combinado con fieltro de PET reciclado de alta densidad, ofrece una absorción acústica excepcional. Reduzca el eco, elimine el ruido y cree espacios tan agradables para el oído como para la vista.",
       "benefit1Title": "Reducción del Eco",
       "benefit1": "Reducción sustancial de la reverberación en cualquier espacio",
       "benefit2Title": "Mayor Claridad del Habla",
@@ -1395,13 +1396,13 @@
       "benefit3": "Absorbe las frecuencias sonoras perturbadoras para mayor comodidad",
       "diagramTitle": "Sección Transversal del Panel",
       "layer1Name": "Superficie ranurada",
-      "layer1Desc": "CNC-cut pattern for visual depth",
+      "layer1Desc": "Patrón cortado por CNC para aportar profundidad visual",
       "layer2Name": "Núcleo PET de alta densidad",
       "layer2Desc": "Capa de absorción acústica",
       "layer3Name": "Superficie de montaje",
-      "layer3Desc": "Direct wall/ceiling attachment",
+      "layer3Desc": "Fijación directa a pared/techo",
       "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Tested according to ISO 354 & ASTM C423",
+      "certNote": "Ensayado según ISO 354 y ASTM C423",
       "description2": ""
     },
     "installation": {
@@ -1416,18 +1417,18 @@
       "step4Title": "Dejarlo Fraguar",
       "step4Desc": "Deje curar durante 24 horas para una adhesión completa",
       "mountingOptions": "Opciones de Montaje",
-      "mounting1": "Adhesive",
-      "description": "rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the panels, and multiple mounting options give you flexibility for any project.",
-      "mounting2": "Z-clips",
-      "mounting3": "Screws",
-      "mounting4": "Battens",
+      "mounting1": "Adhesivo",
+      "description": "Los paneles rPET - Groove están diseñados para una instalación rápida y sencilla. Su construcción ligera permite que una sola persona manipule los paneles, y las múltiples opciones de montaje le ofrecen flexibilidad para cualquier proyecto.",
+      "mounting2": "Clips en Z",
+      "mounting3": "Tornillos",
+      "mounting4": "Rastreles",
       "description2": ""
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
       "title": "Circular desde el Origen",
-      "description": "rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of life. We offer free take-back to ensure nothing goes to waste.",
-      "badge1": "100% Recycled",
+      "description": "Los paneles rPET - Groove encarnan la economía circular. Fabricados íntegramente con plástico reciclado posconsumo, pueden reciclarse de nuevo al final de su vida útil. Ofrecemos un programa de recogida gratuito para garantizar que nada se desperdicie.",
+      "badge1": "100 % reciclado",
       "badge2": "Devolución Circular",
       "badge3": "Producción Belga",
       "badge4": "OEKO-TEX® Certificado",
@@ -1451,16 +1452,16 @@
       "testStandard": "Norma de prueba",
       "testStandardValue": "ISO 354 / ASTM C423",
       "fireTitle": "Seguridad al fuego",
-      "fireEU": "European",
+      "fireEU": "Europea",
       "fireEUValue": "B-s1, d0",
-      "fireUS": "US (ASTM E-84)",
-      "fireUSValue": "Class A",
-      "fireUK": "UK (BS 476)",
-      "fireUKValue": "Class 0",
+      "fireUS": "EE. UU. (ASTM E-84)",
+      "fireUSValue": "Clase A",
+      "fireUK": "Reino Unido (BS 476)",
+      "fireUKValue": "Clase 0",
       "fireDE": "Alemania (DIN 4102)",
       "fireDEValue": "B1",
       "certsTitle": "Certificaciones",
-      "certHealth": "Health",
+      "certHealth": "Salud",
       "certHealthValue": "OEKO-TEX® Standard 100",
       "certEnv": "Medioambiental",
       "certEnvValue": "DAP disponible",
@@ -1474,14 +1475,14 @@
       "appEnv": "Entorno",
       "appEnvValue": "Interior (zonas secas)",
       "appIdeal": "Ideal para",
-      "appIdealValue": "Offices, Meeting rooms, Lobbies",
+      "appIdealValue": "Oficinas, salas de reuniones, vestíbulos",
       "appSuitable": "También adecuado",
       "appSuitableValue": "Restaurantes, hoteles, escuelas",
       "dimensionsTitle": "Dimensiones",
       "widthValue": "600 / 1200 mm",
       "lengthValue": "600 / 1200 / 2400 mm",
       "thicknessValue": "12 / 24 / 36 mm",
-      "weightValue": "2.5 - 7.5 kg/m²",
+      "weightValue": "2,5 - 7,5 kg/m²",
       "densityValue": "200-250 kg/m³",
       "materialTitle": "Material",
       "dimPanelWidth": "Ancho del panel",
@@ -1493,7 +1494,7 @@
       "acNRC24": "NRC (24mm)",
       "acNRC36": "NRC (36mm)",
       "matComposition": "Composición",
-      "matBinder": "Binder",
+      "matBinder": "Aglutinante",
       "matRecycled": "Contenido reciclado",
       "matFireClass": "Clase al fuego",
       "matEmissions": "Emisiones de COV",
@@ -1502,7 +1503,7 @@
       "appCeilings": "Paneles de techo",
       "appEnvironment": "Entorno",
       "matRecycledPET": "100% PET Reciclado",
-      "matDensity": "Density",
+      "matDensity": "Densidad",
       "colorsLabel": "Colores",
       "colorsVal": "12 colores estándar",
       "customColors": "Colores personalizados",
@@ -1510,7 +1511,7 @@
       "certEPD": "DAP disponible",
       "certGRS": "Certificado GRS",
       "appIdealFor": "Ideal para",
-      "appIdealVal": "Offices, Meeting rooms, Lobbies",
+      "appIdealVal": "Oficinas, salas de reuniones, vestíbulos",
       "appAlso": "También adecuado",
       "appAlsoVal": "Restaurantes, hoteles, escuelas"
     },
@@ -1521,15 +1522,15 @@
     "applications": {
       "tag": "USO VERSÁTIL",
       "title": "Aplicaciones",
-      "description": "rPET - Groove panels fit seamlessly into diverse environments",
-      "app1": "Offices",
+      "description": "Los paneles rPET - Groove se integran a la perfección en entornos muy diversos",
+      "app1": "Oficinas",
       "app2": "Hostelería",
       "app3": "Educación",
       "app4": "Salud",
-      "app1Desc": "Open plan workspaces, meeting rooms, focus zones",
-      "app2Desc": "Hotels, restaurants, lobbies, reception areas",
-      "app3Desc": "Schools, universities, libraries",
-      "app4Desc": "Waiting rooms, consultation rooms, corridors",
+      "app1Desc": "Espacios de trabajo diáfanos, salas de reuniones, zonas de concentración",
+      "app2Desc": "Hoteles, restaurantes, vestíbulos, zonas de recepción",
+      "app3Desc": "Colegios, universidades, bibliotecas",
+      "app4Desc": "Salas de espera, consultas, pasillos",
       "description2": ""
     },
     "downloads": {
@@ -1538,9 +1539,6 @@
     },
     "cta2": {
       "freeNote": "Muestras gratuitas disponibles • Fabricado en Bélgica • 100% Reciclado"
-    },
-    "related": {
-      "title": "Productos Relacionados"
     },
     "faq": {
       "questions": {
@@ -1565,14 +1563,17 @@
           "answer": "Los colores en stock se envían en 2–3 semanas; los colores personalizados requieren 5–6 semanas. Los grandes proyectos (>500 m²) se planifican por lotes de producción — contáctenos para una fecha vinculante."
         }
       }
+    },
+    "related": {
+      "title": "Productos Relacionados"
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE PET RECICLADO",
-      "title": "rPET - Panel",
+      "title": "rPET Panel: el panel acústico de PET reciclado que se mecaniza como el MDF",
       "tagline": "Silencio Sostenible, Posibilidades Infinitas",
-      "description": "Transform any space with rPET - Panel acoustic panels. {pct, select, unknown {Made from recycled PET bottles, these} other {Made from {pct}% recycled PET bottles, these}} lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
+      "description": "Transforme cualquier espacio con los paneles acústicos rPET - Panel. {pct, select, unknown {Fabricados a partir de botellas de PET recicladas, estos} other {Fabricados con un {pct} % de botellas de PET recicladas, estos}} absorbentes acústicos ligeros pero potentes ofrecen el máximo rendimiento acústico con un impacto ambiental mínimo.",
       "usp1": "100% PET Reciclable",
       "usp2": "Clase A αw 0,95",
       "usp3": "Ligero 3-4 kg/m²",
@@ -1583,61 +1584,61 @@
       "tag": "DESCRIPCIÓN GENERAL",
       "title": "PET Reciclado en su Máxima Expresión",
       "reason1Title": "Fácil de manipular",
-      "reason1": "Lightweight panels that anyone can install without heavy equipment",
+      "reason1": "Paneles ligeros que cualquiera puede instalar sin equipos pesados",
       "reason2Title": "Saludable para las personas",
-      "reason2": "OEKO-TEX® certified, safe for all environments including schools and healthcare",
+      "reason2": "Certificado OEKO-TEX®, seguro para todos los entornos, incluidos colegios y centros sanitarios",
       "reason3Title": "Posibilidades infinitas",
-      "reason3": "CNC cuttable, millable, drillable—use it like MDF with none of the downsides",
+      "reason3": "Cortable por CNC, fresable, perforable: úselo como el MDF sin ninguno de sus inconvenientes",
       "reason4Title": "Expresa tu estilo",
-      "reason4": "50+ colors to complement any interior design vision",
+      "reason4": "Más de 50 colores para complementar cualquier visión de interiorismo",
       "reason5Title": "¿Quiere más opciones?",
-      "reason5": "Combine with rPET Groove for a complete design system",
-      "description": "rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. Each panel diverts plastic waste from landfills while creating healthier, quieter environments. It's the sound-absorbing alternative to MDF—but at a fraction of the weight.",
-      "feature1": "{pct, select, unknown {Made from recycled PET bottles} other {Made from {pct}% recycled PET bottles}}",
-      "feature2": "100% recyclable at end of life",
+      "reason5": "Combínelo con rPET Groove para obtener un sistema de diseño completo",
+      "description": "rPET - Panel transforma botellas de PET recicladas en paneles acústicos de alto rendimiento. Cada panel desvía residuos plásticos de los vertederos a la vez que crea entornos más saludables y silenciosos. Es la alternativa fonoabsorbente al MDF, pero con una fracción de su peso.",
+      "feature1": "{pct, select, unknown {Fabricado con botellas de PET recicladas} other {Fabricado con un {pct} % de botellas de PET recicladas}}",
+      "feature2": "100 % reciclable al final de su vida útil",
       "feature3": "Ligero: solo 3-4 kg/m²",
       "feature4": "Sin aglutinantes químicos"
     },
     "process": {
       "tag": "CÓMO SE HACE",
       "title": "Diseñar, Construir, Edificar",
-      "description": "rPET Panel can be processed exactly like MDF. Cut, mill, drill, bend—your fabricator will need zero new tools or techniques."
+      "description": "rPET Panel puede procesarse exactamente igual que el MDF. Cortar, fresar, taladrar, curvar: su fabricante no necesitará ninguna herramienta ni técnica nueva."
     },
     "workability": {
       "tag": "PROCESAMIENTO",
       "step1Title": "Aserrado",
-      "step1": "Precision shapes and profiles with standard CNC equipment",
+      "step1": "Formas y perfiles de precisión con equipos CNC estándar",
       "step2Title": "Corte y fresado CNC",
-      "step2": "Direct fixings without pre-drilling or special anchors",
+      "step2": "Fijaciones directas sin pretaladrado ni anclajes especiales",
       "step3Title": "Taladrado y atornillado",
-      "step3": "Create curves and angles with simple V-cut technique",
-      "title": "Process Like MDF, Weighs Like Nothing",
-      "description": "rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the material handles beautifully with standard workshop tools.",
-      "step1Desc": "Manual or electric—clean cuts every time",
-      "step2Desc": "Precision shapes and custom profiles",
-      "step3Desc": "Secure fixing without splitting",
+      "step3": "Cree curvas y ángulos con la sencilla técnica de corte en V",
+      "title": "Se procesa como el MDF, pesa casi nada",
+      "description": "rPET - Panel combina la trabajabilidad del MDF con un peso increíblemente ligero. Córtelo con una sierra, frésalo en CNC, taládrelo, hágale cortes en V: el material se trabaja de maravilla con las herramientas habituales de taller.",
+      "step1Desc": "Manual o eléctrica: cortes limpios en todo momento",
+      "step2Desc": "Formas de precisión y perfiles a medida",
+      "step3Desc": "Fijación segura sin que se agriete",
       "step4Title": "Doblado en V",
       "step4Desc": "Crear formas y esquinas 3D",
-      "quote": "You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board."
+      "quote": "Enseguida comprobará que rPET - Panel se puede procesar tan rápida y fácilmente como un tablero de MDF."
     },
     "acoustics": {
       "tag": "ACÚSTICA",
       "title": "Absorción Máxima",
       "benefit1Title": "Máximo Rendimiento",
-      "benefit1": "Dramatically improve intelligibility in meeting rooms and classrooms",
+      "benefit1": "Mejore drásticamente la inteligibilidad en salas de reuniones y aulas",
       "benefit2Title": "Certificado Independientemente",
-      "benefit2": "Create calmer environments that boost wellbeing and productivity",
+      "benefit2": "Cree entornos más tranquilos que favorecen el bienestar y la productividad",
       "benefit3Title": "Banda Ancha",
-      "benefit3": "Reduce sound transmission between spaces for confidential conversations",
-      "description": "rPET - Panel achieves the maximum possible acoustic absorption rating. The unique fiber structure traps and dissipates sound energy, dramatically reducing reverberation and improving speech clarity.",
+      "benefit3": "Reduzca la transmisión del sonido entre espacios para mantener conversaciones confidenciales",
+      "description": "rPET - Panel alcanza la máxima clasificación de absorción acústica posible. Su exclusiva estructura de fibras atrapa y disipa la energía sonora, reduciendo drásticamente la reverberación y mejorando la claridad del habla.",
       "howItWorks": "Cómo Funciona",
       "fiberLabel": "Fibras PET comprimidas",
-      "fiberSublabel": "Sound energy converted to heat",
+      "fiberSublabel": "Energía sonora convertida en calor",
       "panelThickness": "Grosor del panel",
       "soundAbsorbed": "Sonido Absorbido",
       "testStandard": "Norma de ensayo",
-      "testConfig": "Test Configuration: 24mm panel on 50mm frame with polyester wool insulation achieves αw 0.95",
-      "certNote": "Independently tested & certified to ISO 11654"
+      "testConfig": "Configuración de ensayo: un panel de 24 mm sobre bastidor de 50 mm con aislamiento de lana de poliéster alcanza αw 0.95",
+      "certNote": "Ensayado y certificado de forma independiente según ISO 11654"
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
@@ -1646,11 +1647,11 @@
       "cert2": "Devolución Circular",
       "cert3": "OEKO-TEX® Clase 1",
       "cert4": "Emisiones Clase A+",
-      "badge1Desc": "Made from post-consumer PET bottles",
-      "badge2Desc": "Full material recovery at end of life",
-      "description": "rPET - Panel embodies the circular economy. {pct, select, unknown {Each panel is made from recycled PET bottles} other {Each panel contains {pct}% recycled PET bottles}}, and at end of life, the entire panel can be recycled again. No waste, no compromise.",
-      "cert3Desc": "Class 1 certified for human safety",
-      "cert4Desc": "No VOC or formaldehyde (ISO 16000)"
+      "badge1Desc": "Fabricado con botellas de PET posconsumo",
+      "badge2Desc": "Recuperación total del material al final de su vida útil",
+      "description": "rPET - Panel encarna la economía circular. {pct, select, unknown {Cada panel se fabrica con botellas de PET recicladas} other {Cada panel contiene un {pct} % de botellas de PET recicladas}} y, al final de su vida útil, el panel completo puede reciclarse de nuevo. Sin residuos, sin concesiones.",
+      "cert3Desc": "Certificado Clase 1 para la seguridad de las personas",
+      "cert4Desc": "Sin COV ni formaldehído (ISO 16000)"
     },
     "specs": {
       "tag": "ESPECIFICACIONES",
@@ -1666,8 +1667,8 @@
       "dimThicknessOptions": "Opciones de grosor",
       "dimCustomThickness": "Grosor personalizado",
       "physMaterial": "Material",
-      "physWeight12": "Weight (12mm)",
-      "physWeight24": "Weight (24mm)",
+      "physWeight12": "Peso (12mm)",
+      "physWeight24": "Peso (24mm)",
       "fireEuClass": "Clasificación europea",
       "fireGerman": "Norma alemana",
       "healthOekoTex": "OEKO-TEX®",
@@ -1683,7 +1684,7 @@
     },
     "sample": {
       "title": "Solicite su Paquete de Muestras",
-      "description": "Experience the quality of rPET - Panel firsthand. Our customized sample package includes color swatches, thickness options, and finishing samples to help you make the perfect choice.",
+      "description": "Compruebe de primera mano la calidad de rPET - Panel. Nuestro paquete de muestras personalizado incluye muestrarios de color, opciones de grosor y muestras de acabados para ayudarle a tomar la decisión perfecta.",
       "tag": "MUESTRAS",
       "cta": "Solicitar Muestras Gratuitas"
     },
@@ -1693,26 +1694,26 @@
     },
     "why": {
       "tag": "POR QUÉ ELEGIR rPET",
-      "description": "Discover why architects, designers, and acoustic consultants choose rPET - Panel for their most demanding projects.",
+      "description": "Descubra por qué arquitectos, diseñadores y consultores acústicos eligen rPET - Panel para sus proyectos más exigentes.",
       "reason1Title": "100% Circular",
-      "reason1": "Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.",
+      "reason1": "Fabricado con botellas de PET recicladas, totalmente reciclable y contribuye a una economía circular.",
       "reason2Title": "Excelente",
-      "reason2": "Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.",
+      "reason2": "Absorción acústica de hasta αw 1.00: la clasificación más alta posible en absorción del sonido.",
       "reason3Title": "Fácil Instalación",
-      "reason3": "Lightweight and stable. Cut, drill, mill, and install with standard tools.",
+      "reason3": "Ligero y estable. Córtelo, taládrelo, frésalo e instálelo con herramientas estándar.",
       "reason4Title": "Sano y Seguro",
-      "reason4": "Anti-static, skin-friendly, anti-allergenic. No VOC or formaldehyde emissions.",
+      "reason4": "Antiestático, respetuoso con la piel y antialérgico. Sin emisiones de COV ni formaldehído.",
       "reason5Title": "Infinitas Posibilidades de Diseño",
-      "reason5": "5 standard colors plus any RAL/NCS. Add fabric, laminate, veneer, or custom prints.",
+      "reason5": "5 colores estándar más cualquier color RAL/NCS. Añada tejido, laminado, chapa de madera o impresiones personalizadas.",
       "title": "Cinco razones para elegir rPET"
     },
     "colors": {
       "tag": "COLORES",
       "title": "5 Colores Estándar + RAL/NCS Personalizado",
-      "description": "Choose from 5 sophisticated standard colors or specify any custom color from the RAL or NCS palette. Every shade maintains the same outstanding acoustic performance.",
+      "description": "Elija entre 5 elegantes colores estándar o especifique cualquier color personalizado de la carta RAL o NCS. Todos los tonos mantienen el mismo excelente rendimiento acústico.",
       "anyColor": "Cualquier color",
       "moreOptionsTitle": "¿Quiere más opciones?",
-      "moreOptionsDesc": "All base colors can be combined with finishing layers like acoustic fabrics, HPL laminate, real wood veneer, or custom prints—without compromising acoustic performance.",
+      "moreOptionsDesc": "Todos los colores base pueden combinarse con capas de acabado como tejidos acústicos, laminado HPL, chapa de madera natural o impresiones personalizadas, sin comprometer el rendimiento acústico.",
       "fabric1": "Tejidos acústicos",
       "fabric2": "Laminado HPL/CPL",
       "fabric3": "Chapa de madera real",
@@ -1721,17 +1722,17 @@
     "applications": {
       "tag": "APLICACIONES",
       "title": "Aplicaciones",
-      "description": "Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.",
+      "description": "Cada edificio y cada sala son únicos. rPET - Panel se adapta a cualquier reto acústico gracias a sus aplicaciones versátiles.",
       "app1Name": "Paneles de pared",
       "app1Desc": "Revestimiento de pared absorbente del sonido",
       "app2Name": "Paneles de techo",
       "app2Desc": "Soluciones acústicas de techo",
       "app3Name": "Divisores de espacios",
       "app3Desc": "Separación funcional del espacio",
-      "app4Name": "Furniture",
+      "app4Name": "Mobiliario",
       "app4Desc": "Mobiliario acústico a medida",
       "label1": "Cabina de reuniones",
-      "label2": "Offices",
+      "label2": "Oficinas",
       "label3": "Hostelería"
     },
     "nav": {
@@ -1746,12 +1747,12 @@
     },
     "downloads": {
       "installationGuide": "Guía de Instalación",
-      "acousticTestReport": "Acoustic Test Report (ISO 354)",
-      "fireCertificate": "Fire Certificate (EN 13501-1)",
+      "acousticTestReport": "Informe de ensayo acústico (ISO 354)",
+      "fireCertificate": "Certificado de reacción al fuego (EN 13501-1)",
       "oekoTexCert": "Certificado OEKO-TEX®"
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Poland • 100% Recyclable"
+      "freeNote": "Muestras gratuitas disponibles • Fabricado en Polonia • 100 % reciclable"
     },
     "faq": {
       "questions": {
@@ -1781,9 +1782,9 @@
   "rwoodGroovePage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE MADERA",
-      "title": "rWood - Groove",
+      "title": "rWood Groove: paneles acústicos de madera ranurados en roble y nogal",
       "tagline": "Belleza Natural, Acústica Perfecta",
-      "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
+      "description": "Aporte calidez natural y un estilo sofisticado a cualquier espacio con los paneles acústicos rWood - Groove. Chapas de roble y nogal de primera calidad combinadas con un respaldo de fieltro fonoabsorbente crean armonía entre estética y acústica.",
       "usp1": "Madera Certificada FSC®",
       "usp2": "Absorción Clase A",
       "usp3": "Programa de recogida gratuito"
@@ -1792,33 +1793,33 @@
       "tag": "ARTESANÍA",
       "title": "Donde la Naturaleza se Encuentra con el Diseño",
       "subtitle": "Acabados premium",
-      "description": "rWood - Groove panels transform any room into a sophisticated acoustic environment. The combination of precision-milled grooves and premium wood veneers creates a surface that is both visually stunning and acoustically effective.",
-      "feature1": "Premium A-grade oak and walnut veneers",
-      "feature2": "Integrated acoustic felt backing",
-      "feature3": "Seamless panel-to-panel connection",
-      "feature4": "Suitable for walls and ceilings",
-      "description2": "rWood - Groove panels transform any room into a space of natural beauty and acoustic comfort. Each panel features premium A-grade oak or walnut veneer, precisely grooved to create the signature linear aesthetic while maximizing sound absorption through integrated felt backing."
+      "description": "Los paneles rWood - Groove transforman cualquier sala en un entorno acústico sofisticado. La combinación de ranuras fresadas con precisión y chapas de madera de primera calidad crea una superficie tan impactante visualmente como eficaz acústicamente.",
+      "feature1": "Chapas de roble y nogal de primera calidad, grado A",
+      "feature2": "Respaldo de fieltro acústico integrado",
+      "feature3": "Unión continua entre paneles",
+      "feature4": "Apto para paredes y techos",
+      "description2": "Los paneles rWood - Groove transforman cualquier sala en un espacio de belleza natural y confort acústico. Cada panel incorpora chapa de roble o nogal de primera calidad, grado A, ranurada con precisión para crear la característica estética lineal y maximizar al mismo tiempo la absorción acústica gracias al respaldo de fieltro integrado."
     },
     "oakCollection": {
       "title": "Colección roble",
-      "description": "Natural oak veneer in multiple stain options, from raw blonde to deep smoked tones."
+      "description": "Chapa de roble natural en múltiples opciones de tinte, desde el rubio natural hasta los tonos ahumados profundos."
     },
     "feltBacking": {
       "title": "Opciones de respaldo de fieltro",
-      "description": "Natural grey, black, or colored acoustic felt visible through the grooves."
+      "description": "Fieltro acústico gris natural, negro o de color, visible a través de las ranuras."
     },
     "acoustics": {
       "tag": "RENDIMIENTO",
       "title": "Absorción Sonora Superior",
       "benefit1Title": "Reverberación reducida",
-      "benefit1": "Control echo and improve speech clarity in any room",
+      "benefit1": "Controle el eco y mejore la inteligibilidad de la palabra en cualquier sala",
       "benefit2Title": "Mayor confort",
-      "benefit2": "Create calmer, more peaceful environments",
+      "benefit2": "Cree entornos más tranquilos y serenos",
       "benefit3Title": "Rendimiento probado",
-      "benefit3": "Independently verified acoustic data",
-      "description": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo and reverberation to create calm, productive spaces.",
+      "benefit3": "Datos acústicos verificados de forma independiente",
+      "description": "El exclusivo diseño ranurado, combinado con fieltro acústico de alta calidad, ofrece una absorción acústica excepcional. Reduzca el eco y la reverberación para crear espacios tranquilos y productivos.",
       "ratingLabel": "Absorción",
-      "description2": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye.",
+      "description2": "El exclusivo diseño ranurado, combinado con fieltro acústico de alta calidad, ofrece una absorción acústica excepcional. Reduzca el eco, elimine el ruido y cree espacios tan agradables para el oído como para la vista.",
       "diagramTitle": "Sección Transversal del Panel",
       "soundAbsorbed": "Sonido Absorbido",
       "testStandard": "Norma de ensayo"
@@ -1827,29 +1828,29 @@
       "tag": "INSTALACIÓN FÁCIL",
       "title": "Instalación uniforme",
       "step1Title": "Preparar superficie",
-      "step1Desc": "Mount battens or apply adhesive to clean, dry surface",
+      "step1Desc": "Monte los rastreles o aplique adhesivo sobre una superficie limpia y seca",
       "step2Title": "Posicionar primer panel",
-      "step2Desc": "Start from corner, ensure level alignment",
+      "step2Desc": "Empiece desde una esquina y compruebe la nivelación",
       "step3Title": "Conectar paneles",
-      "step3Desc": "Slide tongue into groove for seamless connection",
+      "step3Desc": "Encaje la lengüeta en la ranura para una unión continua",
       "step4Title": "Completar y rematar",
-      "step4Desc": "Add end mouldings for a professional result",
-      "description": "rWood - Groove panels feature an innovative tongue-and-groove connection for fast and easy installation.",
-      "description2": "rWood - Groove panels feature an innovative tongue-and-groove connection system that ensures invisible joints and a cohesive surface. Whether you're a professional installer or a skilled DIYer, our system makes installation straightforward."
+      "step4Desc": "Añada las molduras de remate para un resultado profesional",
+      "description": "Los paneles rWood - Groove incorporan una innovadora unión machihembrada para una instalación rápida y sencilla.",
+      "description2": "Los paneles rWood - Groove incorporan un innovador sistema de unión machihembrada que garantiza juntas invisibles y una superficie uniforme. Tanto si es un instalador profesional como un aficionado experimentado, nuestro sistema hace que la instalación resulte sencilla."
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
       "title": "Procedencia Responsable",
       "badge1": "Certificado FSC®",
-      "badge1Desc": "Wood from responsibly managed forests",
+      "badge1Desc": "Madera procedente de bosques gestionados de forma responsable",
       "badge2": "Fieltro reciclado",
-      "badge2Desc": "Acoustic backing from recycled materials",
+      "badge2Desc": "Respaldo acústico fabricado con materiales reciclados",
       "badge3": "Producción europea",
       "badge3Desc": "Emisiones de transporte reducidas",
       "badge4": "EPD disponible",
       "badge4Desc": "Declaración ambiental de producto completa",
-      "description": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certified wood comes from responsibly managed forests, and the acoustic backing uses recycled materials.",
-      "description2": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from responsibly managed forests that provide environmental, social, and economic benefits."
+      "description": "Cada panel rWood - Groove se fabrica con la sostenibilidad como principio esencial. Nuestra madera con certificación FSC® procede de bosques gestionados de forma responsable, y el respaldo acústico utiliza materiales reciclados.",
+      "description2": "Cada panel rWood - Groove se fabrica con la sostenibilidad como principio esencial. Nuestra certificación FSC® garantiza que la madera procede de bosques gestionados de forma responsable que aportan beneficios medioambientales, sociales y económicos."
     },
     "specs": {
       "tag": "TÉCNICO",
@@ -1859,17 +1860,17 @@
       "certsTitle": "Certificaciones",
       "applicationsTitle": "Aplicaciones",
       "dimensionsTitle": "Dimensiones",
-      "materialsTitle": "Materials",
+      "materialsTitle": "Materiales",
       "dimPanelWidth": "Ancho del panel",
       "dimPanelLength": "Longitud del panel",
       "dimThickness": "Espesor",
       "dimGrooveDepth": "Profundidad de ranura",
       "dimGrooveWidth": "Anchura de ranura",
-      "matVeneer": "Veneer",
+      "matVeneer": "Chapa de madera",
       "matVeneerVal": "Roble / nogal de grado A",
       "matCore": "Núcleo",
-      "matCoreVal": "MDF (standard / moisture-resistant / fire-retardant)",
-      "matBacking": "Backing",
+      "matCoreVal": "MDF (estándar / hidrófugo / ignífugo)",
+      "matBacking": "Respaldo",
       "matBackingVal": "PET reciclado (3 mm)",
       "matFinish": "Acabado",
       "finishVal": "Aceite / laca",
@@ -1879,7 +1880,7 @@
       "feltCert": "Certificación del fieltro",
       "envLabel": "Medioambiental",
       "vocLabel": "Emisiones de COV",
-      "vocVal": "E1 / Low emission",
+      "vocVal": "E1 / Bajas emisiones",
       "appInstall": "Instalación",
       "appWalls": "Paredes y Techos",
       "appEnv": "Entorno",
@@ -1891,18 +1892,18 @@
     },
     "accessories": {
       "tag": "COMPLETA EL ESTILO",
-      "title": "Accessories",
+      "title": "Accesorios",
       "endMouldings": "Molduras de remate",
       "cornerProfiles": "Perfiles de esquina",
-      "description": "Professional finishing touches for a perfect result",
+      "description": "Remates profesionales para un resultado perfecto",
       "item1Title": "Molduras de remate",
-      "item1Desc": "Clean edges where panels meet other surfaces",
+      "item1Desc": "Bordes limpios donde los paneles se encuentran con otras superficies",
       "item2Title": "Perfiles de esquina",
-      "item2Desc": "Seamless internal and external corner solutions",
+      "item2Desc": "Soluciones continuas para esquinas interiores y exteriores",
       "item3Title": "Listones de montaje",
-      "item3Desc": "Hidden fixing system for walls and ceilings",
+      "item3Desc": "Sistema de fijación oculta para paredes y techos",
       "item4Title": "Kit de retoque",
-      "item4Desc": "Matching oils for repairs and maintenance"
+      "item4Desc": "Aceites a juego para reparaciones y mantenimiento"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
@@ -1911,16 +1912,16 @@
     "patterns": {
       "tag": "OPCIONES DE DISEÑO",
       "title": "Acabados premium",
-      "description": "Four distinct groove patterns to match any architectural vision. From classic batten to modern linear, each pattern transforms the wall into a dynamic surface.",
-      "description2": "Four distinct groove patterns to match any architectural vision. From classic balanced proportions to bold wide strips—find the perfect expression for your space."
+      "description": "Cuatro patrones de ranurado diferentes para adaptarse a cualquier visión arquitectónica. Desde el listón clásico hasta el lineal moderno, cada patrón convierte la pared en una superficie dinámica.",
+      "description2": "Cuatro patrones de ranurado diferentes para adaptarse a cualquier visión arquitectónica. Desde proporciones clásicas y equilibradas hasta lamas anchas de gran presencia: encuentre la expresión perfecta para su espacio."
     },
     "materials": {
       "tag": "MATERIALES",
       "oilFinishesTitle": "Acabados al aceite",
-      "oilFinishesDesc": "Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.",
-      "walnutTitle": "Walnut",
-      "walnutDesc": "Rich, warm tones with distinctive grain patterns. The premium choice for high-end interiors.",
-      "description": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain and colour. The oil-finished surface is ready to install with no additional treatment required.",
+      "oilFinishesDesc": "Acabados al aceite Natural, Blanco, Transparente, Marrón, Marrón oscuro y Negro. Cada uno penetra en profundidad en la madera para una protección duradera y auténtica.",
+      "walnutTitle": "Nogal",
+      "walnutDesc": "Tonos ricos y cálidos con vetas de gran carácter. La opción premium para interiores de alto nivel.",
+      "description": "Cada panel rWood - Groove se fabrica con chapa de madera de grado A, lo que garantiza una veta y un color uniformes. La superficie acabada al aceite está lista para instalar sin necesidad de tratamientos adicionales.",
       "colorSelector": "Seleccionar acabado de madera",
       "layer1Name": "Chapa de roble / nogal",
       "layer1Desc": "Madera natural premium de grado A",
@@ -1929,15 +1930,15 @@
       "layer3Name": "Respaldo de fieltro acústico",
       "layer3Desc": "PET reciclado, 3 mm de grosor",
       "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "description2": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range of oiled and painted finishes to perfectly complement your interior design."
+      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
+      "description2": "Cada panel rWood - Groove se fabrica con chapa de madera de grado A, lo que garantiza vetas uniformes y una calidad superior. Elija entre nuestra gama de acabados aceitados y lacados para complementar a la perfección su diseño interior."
     },
     "downloads": {
       "installationGuide": "Guía de Instalación",
       "colorChart": "Guía de Colores y Acabados"
     },
     "cta2": {
-      "freeNote": "Free samples available • FSC® Certified"
+      "freeNote": "Muestras gratuitas disponibles • Certificado FSC®"
     },
     "faq": {
       "questions": {
@@ -1967,65 +1968,65 @@
   "rwoodPerfPage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE MADERA PERFORADA",
-      "title": "rWood - Perf",
+      "title": "rWood Perf: paneles acústicos de madera perforados",
       "tagline": "Perforaciones de Precisión, Máxima Absorción",
-      "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control.",
+      "description": "Paneles acústicos perforados de alto rendimiento que combinan la belleza natural de la madera con una absorción acústica excepcional. Un núcleo de tablero de fibras de densidad media ignífugo y cantos chapados en continuidad ofrecen los máximos niveles de seguridad contra incendios y control acústico.",
       "usp1": "Perforaciones Redondas",
-      "usp2": "B2-s1, d0 Fire Rated",
+      "usp2": "Clasificación al fuego B2-s1, d0",
       "usp3": "Hasta Clase B",
-      "description2": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control for demanding public spaces."
+      "description2": "Paneles acústicos perforados de alto rendimiento que combinan la belleza natural de la madera con una absorción acústica excepcional. Un núcleo de tablero de fibras de densidad media ignífugo y cantos chapados en continuidad ofrecen los máximos niveles de seguridad contra incendios y control acústico para espacios públicos exigentes."
     },
     "patterns": {
       "tag": "PATRONES DE PERFORACIÓN",
       "title": "Elige tu Patrón",
-      "description": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for highest absorption to subtle micro-perforations for a clean wood aesthetic.",
+      "description": "Cuatro patrones de perforación con propiedades acústicas calibradas. Desde la máxima área abierta para la mayor absorción hasta sutiles microperforaciones para una estética de madera limpia.",
       "coreMatchTitle": "Adapte el núcleo a su chapa para que las perforaciones desaparezcan — o conviértalas en un elemento de diseño.",
       "coreColorTitle": "Color del Núcleo",
-      "coreMatchDesc": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a design statement.",
-      "description3": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for demanding acoustic spaces to more discreet patterns that prioritize visual refinement.",
-      "coreMatchDesc2": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a decorative effect."
+      "coreMatchDesc": "Elija un núcleo a juego con la chapa para que las perforaciones se integren, o un núcleo en contraste para un efecto de diseño llamativo.",
+      "description3": "Cuatro patrones de perforación con propiedades acústicas calibradas. Desde la máxima área abierta para espacios con exigencias acústicas elevadas hasta patrones más discretos que priorizan el refinamiento visual.",
+      "coreMatchDesc2": "Elija un núcleo a juego con la chapa para que las perforaciones se integren, o un núcleo en contraste para un efecto decorativo."
     },
     "coreColor": {
       "title": "Color del Núcleo",
       "description": "Fieltro acústico negro o natural visible a través de las perforaciones — sutil pero impactante."
     },
     "surfaces": {
-      "tag": "SURFACES",
+      "tag": "SUPERFICIES",
       "title": "Superficies de Madera Premium",
       "natureVeneers": "Chapas Nature",
-      "natureDesc": "Lively variations and characteristic expression associated with each wood species.",
+      "natureDesc": "Variaciones vivas y la expresión característica propia de cada especie de madera.",
       "geminiVeneers": "Chapas Gemini",
-      "geminiDesc": "Even colour tone and structure for a more harmonious, uniform appearance.",
+      "geminiDesc": "Tono de color y estructura homogéneos para un aspecto más armonioso y uniforme.",
       "finishes": "Acabados de superficie",
-      "description": "Every rWood - Perf panel is produced with over-veneered edges — a traditional craft technique that creates perfectly seamless joints and eliminates visible panel boundaries.",
+      "description": "Cada panel rWood - Perf se produce con cantos chapados en continuidad, una técnica artesanal tradicional que crea juntas perfectamente continuas y elimina los límites visibles entre paneles.",
       "finish1": "Laca natural",
-      "finish2": "Pigmented",
+      "finish2": "Pigmentado",
       "finish3": "Laminado HPL",
       "colorSelector": "Seleccionar chapa de madera",
-      "description3": "Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated around the panel before veneering. This gives each panel the appearance of being entirely of wood, with seamless joints across large surfaces."
+      "description3": "Cada panel rWood - Perf se produce con cantos chapados en continuidad, una técnica de fabricación tradicional en la que se integra un canto de madera maciza alrededor del panel antes del chapado. Así, cada panel parece estar hecho enteramente de madera, con juntas continuas en grandes superficies."
     },
     "acoustics": {
       "tag": "RENDIMIENTO",
       "title": "Diseñado para el Sonido",
       "benefit1Title": "Absorción de banda ancha",
-      "benefit1": "Effective across the full frequency spectrum, from low to high",
+      "benefit1": "Eficaz en todo el espectro de frecuencias, de graves a agudos",
       "benefit2Title": "Máxima seguridad al fuego",
-      "benefit2": "B-s1, d0—the highest achievable class for wooden panels",
+      "benefit2": "B-s1, d0: la clase más alta alcanzable para paneles de madera",
       "benefit3Title": "Rendimiento ajustable",
-      "benefit3": "Four perforation patterns for tailored acoustic solutions",
-      "description": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the absorption layer beneath. The cavity behind the panel further enhances low-frequency absorption.",
+      "benefit3": "Cuatro patrones de perforación para soluciones acústicas a medida",
+      "description": "Las perforaciones taladradas con precisión permiten que las ondas sonoras penetren en el panel y lleguen a la capa absorbente situada detrás. La cámara trasera del panel mejora además la absorción de las bajas frecuencias.",
       "layer1Name": "Chapa de madera + perforaciones",
-      "layer1Desc": "Over-veneered, precision-drilled surface",
-      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
-      "layer2Desc": "Fire Retardant, 0.45 kg/m³ density",
+      "layer1Desc": "Superficie chapada en continuidad y taladrada con precisión",
+      "layer2Name": "Núcleo de tablero de fibras de densidad media ignífugo",
+      "layer2Desc": "Ignífugo, densidad de 0,45 kg/m³",
       "layer3Name": "Velo acústico",
       "layer3Desc": "Evita la migración de fibras",
       "layer4Name": "Cavidad de lana mineral",
-      "layer4Desc": "30–50 mm for broadband absorption",
+      "layer4Desc": "30–50 mm para una absorción de banda ancha",
       "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Independently tested & certified to ISO 11654",
+      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
       "ratingLabel": "Absorción",
-      "description3": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the cavity behind. Combined with mineral wool insulation, rWood - Perf delivers outstanding broadband absorption across the full frequency spectrum—from low bass to high treble.",
+      "description3": "Las perforaciones taladradas con precisión permiten que las ondas sonoras penetren en el panel y lleguen a la cámara trasera. Combinado con aislamiento de lana mineral, rWood - Perf ofrece una absorción de banda ancha excepcional en todo el espectro de frecuencias, desde los graves más profundos hasta los agudos.",
       "diagramTitle": "Sección Transversal del Panel",
       "fireRating": "Clasificación al Fuego",
       "noiseReduction": "Reducción de Ruido"
@@ -2034,15 +2035,15 @@
       "tag": "MONTAJE OCULTO",
       "title": "Instalación uniforme",
       "step1Title": "Montar subestructura",
-      "step1Desc": "Install metal rails to wall or ceiling structure",
+      "step1Desc": "Instale los perfiles metálicos en la estructura de la pared o del techo",
       "step2Title": "Colocar aislamiento",
-      "step2Desc": "Add mineral wool in the cavity for optimal absorption",
+      "step2Desc": "Coloque lana mineral en la cámara para una absorción óptima",
       "step3Title": "Paneles clip",
-      "step3Desc": "Concealed clip system for tool-free, zero-gap mounting",
+      "step3Desc": "Sistema de clips ocultos para un montaje sin herramientas y sin juntas",
       "step4Title": "Alineación perfecta",
-      "step4Desc": "In-line perforation patterns with seamless over-veneered joints",
-      "description": "rWood - Perf panels are installed with a concealed clip system for an invisible, seamless look.",
-      "description3": "rWood - Perf panels are installed with a concealed clip system designed for precision, speed, and a flawless end result. The system ensures zero-spaced joints and perfectly aligned perforation patterns across multiple panels."
+      "step4Desc": "Patrones de perforación alineados con juntas continuas chapadas",
+      "description": "Los paneles rWood - Perf se instalan con un sistema de clips ocultos para un acabado invisible y continuo.",
+      "description3": "Los paneles rWood - Perf se instalan con un sistema de clips ocultos diseñado para ofrecer precisión, rapidez y un resultado final impecable. El sistema garantiza juntas sin separación y patrones de perforación perfectamente alineados entre varios paneles."
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
@@ -2051,17 +2052,17 @@
       "badge2": "17% contenido reciclado",
       "badge3": "Producción europea",
       "badge4": "Emisiones ultra bajas",
-      "badge1Desc": "Wood from responsibly managed forests",
-      "badge2Desc": "Post-consumer recycled material in core",
-      "badge3Desc": "Renewable energy sources, short supply chains",
-      "badge4Desc": "No added formaldehyde, EPD available",
-      "description": "rWood - Perf combines durable, natural materials with a responsible manufacturing approach.",
-      "description3": "rWood - Perf combines durable, natural materials with responsible sourcing. The fibre gypsum core is inherently low-emitting—no chemical impregnation is needed for fire performance—and our veneers come from sustainably managed forests."
+      "badge1Desc": "Madera procedente de bosques gestionados de forma responsable",
+      "badge2Desc": "Material reciclado posconsumo en el núcleo",
+      "badge3Desc": "Fuentes de energía renovables y cadenas de suministro cortas",
+      "badge4Desc": "Sin formaldehído añadido, EPD disponible",
+      "description": "rWood - Perf combina materiales naturales y duraderos con un enfoque de fabricación responsable.",
+      "description3": "rWood - Perf combina materiales naturales y duraderos con un abastecimiento responsable. El núcleo de yeso con fibras es de por sí de bajas emisiones (no requiere impregnación química para su comportamiento al fuego) y nuestras chapas proceden de bosques gestionados de forma sostenible."
     },
     "specs": {
       "tag": "TÉCNICO",
       "title": "Especificaciones",
-      "dimensionsTitle": "Dimensions — Walls and Ceilings",
+      "dimensionsTitle": "Dimensiones — Paredes y techos",
       "acousticsTitle": "Rendimiento acústico",
       "perforationsTitle": "Opciones de perforación",
       "fireTitle": "Seguridad al fuego",
@@ -2069,12 +2070,12 @@
       "customSizes": "Tamaños a medida",
       "dimThickness": "Espesor",
       "dimWeight": "Peso",
-      "matTitle": "Materials",
-      "matCustomColor": "Custom color tones with transparent or solid pigmentation",
-      "matLacquerFinish": "From super matte to high gloss UV-cured lacquer",
+      "matTitle": "Materiales",
+      "matCustomColor": "Tonos de color personalizados con pigmentación transparente u opaca",
+      "matLacquerFinish": "Laca curada por UV, desde supermate hasta alto brillo",
       "surfaceLabel": "Superficie",
       "surfaceVal": "Chapa / HPL / lámina / pintura",
-      "coreVal": "Medium Density Fiberboard core (brown / green / black)",
+      "coreVal": "Núcleo de tablero de fibras de densidad media (marrón / verde / negro)",
       "edgesLabel": "Cantos",
       "edgesVal": "Madera maciza con sobre-chapado",
       "acousticFelt": "Fieltro acústico",
@@ -2083,7 +2084,7 @@
       "resistanceFire": "Resistencia al fuego",
       "fireRetardant": "Retardante de Llama",
       "vocLabel": "Emisiones de COV",
-      "vocVal": "TVOC approved (ISO 16000)",
+      "vocVal": "TVOC aprobado (ISO 16000)",
       "formaldehydeLabel": "Formaldehído",
       "formaldehydeVal": "Sin urea formaldehído añadido",
       "envLabel": "Medioambiental"
@@ -2094,29 +2095,29 @@
     },
     "overview": {
       "tag": "RENDIMIENTO PROBADO",
-      "description": "rWood - Perf panels are one of the most effective acoustic wall solutions. Precision-drilled perforations allow sound to pass through the decorative wood surface into the highly absorbent core.",
-      "feature1": "Fire Retardant Medium Density Fiberboard core (B2-s1, d0)",
-      "feature2": "Over-veneered edges for seamless joints",
-      "feature3": "Light or dark core for pattern discretion",
-      "feature4": "Custom formats up to 3050 × 1220 mm",
-      "description3": "rWood - Perf panels are one of the most effective and widely used solutions for acoustic walls and ceilings. The precisely drilled round perforations create a large open area that guarantees high levels of sound absorption, while premium wood veneer ensures a natural, warm appearance.",
-      "description4": "Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges for seamless joints, these panels are engineered for the highest demands in large public spaces—from atriums and concert halls to offices and schools."
+      "description": "Los paneles rWood - Perf son una de las soluciones acústicas para pared más eficaces. Las perforaciones taladradas con precisión permiten que el sonido atraviese la superficie decorativa de madera y llegue al núcleo altamente absorbente.",
+      "feature1": "Núcleo de tablero de fibras de densidad media ignífugo (B2-s1, d0)",
+      "feature2": "Cantos chapados en continuidad para juntas invisibles",
+      "feature3": "Núcleo claro u oscuro para un patrón más discreto",
+      "feature4": "Formatos a medida de hasta 3050 × 1220 mm",
+      "description3": "Los paneles rWood - Perf son una de las soluciones más eficaces y extendidas para paredes y techos acústicos. Las perforaciones redondas taladradas con precisión crean una gran área abierta que garantiza altos niveles de absorción acústica, mientras que la chapa de madera de primera calidad aporta un aspecto natural y cálido.",
+      "description4": "Combinados con un núcleo de tablero de fibras de densidad media ignífugo y cantos chapados en continuidad para juntas invisibles, estos paneles están diseñados para las máximas exigencias de los grandes espacios públicos: desde atrios y auditorios hasta oficinas y colegios."
     },
     "accessories": {
       "tag": "COMPLETA EL ESTILO",
-      "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result",
+      "title": "Accesorios",
+      "description": "Elementos de remate profesionales para un resultado impecable",
       "item1Title": "Perfiles de borde",
-      "item1Desc": "Matching profiles for clean panel terminations",
+      "item1Desc": "Perfiles a juego para remates de panel limpios",
       "item2Title": "Soluciones de esquina",
-      "item2Desc": "Seamless internal and external corner transitions",
+      "item2Desc": "Transiciones perfectas en esquinas interiores y exteriores",
       "item3Title": "Rieles de montaje",
-      "item3Desc": "Concealed aluminium subframe system",
+      "item3Desc": "Sistema de subestructura de aluminio oculta",
       "item4Title": "Lana mineral",
-      "item4Desc": "30–50 mm insulation for optimal performance"
+      "item4Desc": "Aislamiento de 30–50 mm para un rendimiento óptimo"
     },
     "cta": {
-      "note": "Free samples available • FSC® Certified • A2 fire rating available"
+      "note": "Muestras gratuitas disponibles • Certificado FSC® • Clasificación al fuego A2 disponible"
     },
     "faq": {
       "questions": {
@@ -2146,81 +2147,81 @@
   "rwoodMicroPage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS MICRO-PERFORADOS",
-      "title": "rWood - Micro",
+      "title": "rWood Micro: paneles acústicos de madera microperforados",
       "tagline": "Perforación Invisible, Acústica Excepcional",
-      "description": "Experience the beauty of natural wood with the acoustic performance of advanced micro-perforation technology. Virtually invisible holes deliver Class A sound absorption while preserving the pure, homogeneous look of premium wood veneer.",
+      "description": "Disfrute de la belleza de la madera natural con el rendimiento acústico de la avanzada tecnología de microperforación. Unos orificios prácticamente invisibles ofrecen una absorción acústica de clase A, conservando el aspecto puro y homogéneo de la chapa de madera de primera calidad.",
       "usp1": "Perforaciones Invisibles",
       "usp2": "Absorción Clase A",
-      "usp3": "B-s1, d0 Fire Rated",
+      "usp3": "Clasificación al fuego B-s1, d0",
       "colorSelector": "Seleccionar chapa de madera"
     },
     "perforation": {
       "tag": "PATRONES DE PERFORACIÓN",
       "title": "Elija su Perforación",
-      "description": "Different micro-perforation densities for fine-tuned acoustic control—from subtle to high-performance."
+      "description": "Distintas densidades de microperforación para un control acústico preciso: de sutil a alto rendimiento."
     },
     "surfaces": {
-      "tag": "SURFACES",
+      "tag": "SUPERFICIES",
       "title": "Superficies Premium",
       "woodVeneer": "Chapa de madera",
-      "woodVeneerDesc": "Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available.",
+      "woodVeneerDesc": "Chapas de madera de grado A de primera calidad en roble, nogal, abedul y más. Disponibles en corte Nature y Gemini.",
       "hplLaminate": "Laminado HPL",
-      "hplLaminateDesc": "High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.",
+      "hplLaminateDesc": "Superficies de laminado de alta presión para una mayor durabilidad. Disponibles en una amplia gama de colores y acabados.",
       "surfaceType": "Tipo de superficie",
       "finishTreatments": "Tratamientos de acabado",
-      "description": "Every rWood - Micro panel features over-veneered edges — a manufacturing technique that creates seamless panel joints for a continuous wood surface.",
-      "finish1Desc": "Custom color tones with transparent or solid pigmentation",
-      "finish2Desc": "From super matte to high gloss UV-cured lacquer",
-      "description2": "Every rWood - Micro panel features over-veneered edges—a manufacturing technique from traditional carpentry heritage. The result: stronger panels, seamless joints, and a continuous pattern regardless of panel format."
+      "description": "Todos los paneles rWood - Micro cuentan con cantos rechapados, una técnica de fabricación que crea juntas invisibles entre paneles para una superficie de madera continua.",
+      "finish1Desc": "Tonos de color personalizados con pigmentación transparente o cubriente",
+      "finish2Desc": "Laca curada por UV, de supermate a alto brillo",
+      "description2": "Todos los paneles rWood - Micro cuentan con cantos rechapados, una técnica de fabricación heredada de la carpintería tradicional. El resultado: paneles más resistentes, juntas invisibles y un patrón continuo independientemente del formato del panel."
     },
     "acoustics": {
       "tag": "RENDIMIENTO",
       "title": "Absorción Sonora Superior",
       "benefit1Title": "Mecanismo acústico dual",
-      "benefit1": "Micro-holes and sound chambers work together for superior absorption",
+      "benefit1": "Los microorificios y las cámaras acústicas actúan conjuntamente para una absorción superior",
       "benefit2Title": "Diseño que ahorra espacio",
-      "benefit2": "Less dependent on air gaps—thinner wall and ceiling build-ups",
+      "benefit2": "Menor dependencia de las cámaras de aire: montajes de pared y techo más delgados",
       "benefit3Title": "Máxima seguridad al fuego",
-      "benefit3": "B-s1, d0 rating—the highest achievable for micro-perforated wood",
-      "description": "The combination of micro-perforations in the surface and thousands of larger sound-entry channels creates exceptional broadband absorption.",
-      "layer1Name": "A-grade veneer with precision-drilled holes",
-      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
-      "layer2Desc": "Fire Retardant, with sound chambers",
+      "benefit3": "Clasificación B-s1, d0: la más alta alcanzable para madera microperforada",
+      "description": "La combinación de microperforaciones en la superficie y miles de canales de entrada de sonido de mayor tamaño crea una absorción de banda ancha excepcional.",
+      "layer1Name": "Chapa de grado A con orificios taladrados con precisión",
+      "layer2Name": "Núcleo de tablero de fibra de densidad media ignífugo",
+      "layer2Desc": "Ignífugo, con cámaras acústicas",
       "layer3Name": "Respaldo de velo acústico",
-      "layer3Desc": "Additional sound absorption layer",
+      "layer3Desc": "Capa adicional de absorción acústica",
       "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "description2": "The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism. Less dependent on insulation and air gaps—meaning thinner walls and ceilings that save valuable space.",
+      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
+      "description2": "La combinación de microperforaciones en la superficie y miles de cámaras acústicas de mayor tamaño en el núcleo crea un doble mecanismo acústico. Menor dependencia del aislamiento y de las cámaras de aire, lo que se traduce en paredes y techos más delgados que ahorran un espacio valioso.",
       "diagramTitle": "Sección Transversal del Panel",
       "soundAbsorbed": "Sonido Absorbido",
       "fireRating": "Clasificación al Fuego",
       "testStandard": "Norma de ensayo",
-      "thinner": "Thinner",
+      "thinner": "Más delgado",
       "wallBuildUp": "Composición de pared"
     },
     "installation": {
       "tag": "SISTEMA DE INSTALACIÓN",
       "title": "Instalación de precisión",
       "step1Title": "Instalar subestructura",
-      "step1Desc": "Mount aluminium rails to wall or ceiling structure",
+      "step1Desc": "Fije los raíles de aluminio a la estructura de la pared o del techo",
       "step2Title": "Añadir aislamiento",
-      "step2Desc": "Optional mineral wool for enhanced absorption",
+      "step2Desc": "Lana mineral opcional para una mayor absorción",
       "step3Title": "Paneles Click & Fix",
-      "step3Desc": "Concealed clip system for tool-free panel mounting",
+      "step3Desc": "Sistema de clips oculto para el montaje de los paneles sin herramientas",
       "step4Title": "Resultado uniforme",
-      "step4Desc": "Over-veneered edges create continuous wood surface",
-      "description": "rWood - Micro panels are installed with our concealed mounting system, ensuring invisible fixings and a flawless finish. The system allows for both wall and ceiling applications, with seamless panel-to-panel transitions through over-veneered edges."
+      "step4Desc": "Los cantos rechapados crean una superficie de madera continua",
+      "description": "Los paneles rWood - Micro se instalan con nuestro sistema de montaje oculto, que garantiza fijaciones invisibles y un acabado impecable. El sistema permite aplicaciones tanto en pared como en techo, con transiciones perfectas entre paneles gracias a los cantos rechapados."
     },
     "bespoke": {
       "tag": "LIBERTAD DE DISEÑO",
       "title": "Posibilidades a Medida",
       "backlitTitle": "Paneles retroiluminados",
-      "backlitDesc": "Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet remain invisible when the light is off.",
+      "backlitDesc": "Cree espectaculares secciones retroiluminadas en las que la luz atraviesa las microperforaciones. Los logotipos y motivos brillan con gran belleza al iluminarse y permanecen invisibles cuando la luz está apagada.",
       "customDimTitle": "Dimensiones personalizadas",
-      "customDimDesc": "Panels produced to your exact specifications. Non-standard sizes and shapes for unique architectural requirements.",
+      "customDimDesc": "Paneles fabricados según sus especificaciones exactas. Tamaños y formas no estándar para requisitos arquitectónicos singulares.",
       "patternTitle": "Patrón continuo",
-      "patternDesc": "Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.",
-      "description": "rWood - Micro panels can be customized and pre-fabricated according to your drawings. The micro-perforations open up unique design possibilities that go beyond standard acoustic panels."
+      "patternDesc": "Los paneles rechapados crean transiciones perfectas independientemente del formato, para una impresión homogénea en cualquier superficie.",
+      "description": "Los paneles rWood - Micro pueden personalizarse y prefabricarse según sus planos. Las microperforaciones abren posibilidades de diseño únicas que van más allá de los paneles acústicos estándar."
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
@@ -2229,24 +2230,24 @@
       "badge2": "Material de núcleo natural",
       "badge3": "Producción europea",
       "badge4": "Bajas emisiones COV",
-      "badge1Desc": "Wood from responsibly managed forests",
-      "badge2Desc": "Fiberboard core—a wood-based, fire-rated core",
+      "badge1Desc": "Madera procedente de bosques gestionados de forma responsable",
+      "badge2Desc": "Núcleo de tablero de fibra: un núcleo a base de madera con clasificación al fuego",
       "badge3Desc": "Cadenas de suministro cortas que mantienen bajas las emisiones del transporte",
-      "badge4Desc": "E1-rated for healthier indoor air quality",
-      "description": "rWood - Micro panels are built with sustainability as a core principle. FSC® certified wood, low-emission finishes and responsibly sourced materials ensure environmental responsibility throughout the product lifecycle."
+      "badge4Desc": "Clasificación E1 para un aire interior más saludable",
+      "description": "Los paneles rWood - Micro se fabrican con la sostenibilidad como principio fundamental. La madera con certificación FSC®, los acabados de bajas emisiones y los materiales de origen responsable garantizan la responsabilidad medioambiental durante todo el ciclo de vida del producto."
     },
     "specs": {
       "tag": "TÉCNICO",
       "title": "Especificaciones",
-      "dimensionsTitle": "Dimensions — Walls and Ceilings",
-      "acousticsTitle": "Dimensions — Walls and Ceilings",
+      "dimensionsTitle": "Dimensiones — Paredes y techos",
+      "acousticsTitle": "Dimensiones — Paredes y techos",
       "customSizes": "Tamaños a medida",
       "dimThickness": "Espesor",
       "dimWeight": "Peso",
       "dimCoreDensity": "Densidad del núcleo",
       "perfsTitle": "Opciones de perforación",
       "fireTitle": "Seguridad al fuego",
-      "matTitle": "Materials",
+      "matTitle": "Materiales",
       "appsTitle": "Aplicaciones",
       "acWithMinWool": "Con lana mineral de 50 mm",
       "reactionFire": "Reacción al fuego",
@@ -2254,7 +2255,7 @@
       "fireRetardant": "Retardante de Llama",
       "surfaceLabel": "Superficie",
       "surfaceVal": "Chapa / HPL / lámina / pintura",
-      "coreVal": "Medium Density Fiberboard core (brown / green / black)",
+      "coreVal": "Núcleo de tablero de fibra de densidad media (marrón / verde / negro)",
       "edgesLabel": "Cantos",
       "edgesVal": "Madera maciza con sobre-chapado",
       "acousticFelt": "Fieltro acústico",
@@ -2264,7 +2265,7 @@
       "appEnv": "Entorno",
       "appEnvVal": "Interior (zonas secas)",
       "backlitOption": "Opción retroiluminada",
-      "backlitVal": "Available",
+      "backlitVal": "Disponible",
       "mountingSystem": "Sistema de montaje",
       "concealedClip": "Sistema de clips ocultos"
     },
@@ -2275,34 +2276,34 @@
     "overview": {
       "tag": "LA SOLUCIÓN INVISIBLE",
       "title": "Diseñado para Ojos y Oídos",
-      "description1": "rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perforations are completely invisible—what you see is a beautiful, homogeneous wood surface. What you hear is exceptional acoustic comfort.",
-      "description2": "The secret lies in the combination of two acoustic mechanisms: thousands of precisely engineered micro-holes in the surface and sound-absorbing chambers within the core material.",
-      "feature1": "Perforations invisible from normal viewing distance",
-      "feature2": "Non-combustible fibre gypsum core",
-      "feature3": "Over-veneered edges for seamless joints",
-      "feature4": "Suitable for walls and ceilings",
+      "description1": "Los paneles rWood - Micro combinan la avanzada tecnología de microperforación con chapas de madera de primera calidad. A una distancia de visión normal, las perforaciones son completamente invisibles: lo que se ve es una hermosa superficie de madera homogénea. Lo que se oye es un confort acústico excepcional.",
+      "description2": "El secreto reside en la combinación de dos mecanismos acústicos: miles de microorificios diseñados con precisión en la superficie y cámaras de absorción acústica en el material del núcleo.",
+      "feature1": "Perforaciones invisibles a una distancia de visión normal",
+      "feature2": "Núcleo de fibroyeso incombustible",
+      "feature3": "Cantos rechapados para juntas invisibles",
+      "feature4": "Apto para paredes y techos",
       "feature5": "Disponible como paneles retroiluminados"
     },
     "accessories": {
       "tag": "COMPLETA EL ESTILO",
-      "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result",
+      "title": "Accesorios",
+      "description": "Elementos de acabado profesionales para un resultado impecable",
       "item1Title": "Perfiles de borde",
-      "item1Desc": "Matching profiles for clean panel terminations",
+      "item1Desc": "Perfiles a juego para remates de panel limpios",
       "item2Title": "Soluciones de esquina",
-      "item2Desc": "Seamless internal and external corner transitions",
+      "item2Desc": "Transiciones perfectas en esquinas interiores y exteriores",
       "item3Title": "Rieles de montaje",
-      "item3Desc": "Concealed aluminium subframe system",
+      "item3Desc": "Sistema de subestructura de aluminio oculta",
       "item4Title": "Retroiluminación LED",
-      "item4Desc": "Integrated lighting for backlit panel effects"
+      "item4Desc": "Iluminación integrada para efectos de panel retroiluminado"
     },
     "patterns": {
-      "description": "Four perforation densities to match your acoustic requirements. From virtually invisible micro-perforations to generous open areas, each density delivers a different balance of aesthetics and performance.",
+      "description": "Cuatro densidades de perforación para adaptarse a sus requisitos acústicos. Desde microperforaciones prácticamente invisibles hasta generosas áreas abiertas, cada densidad ofrece un equilibrio distinto entre estética y rendimiento.",
       "magnifiedLabel": "Aumentado 10×",
       "holeDiameter": "Diámetro del agujero",
       "openArea": "Área abierta",
       "ratingLabel": "Absorción",
-      "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
+      "description2": "Cuatro densidades de perforación para adaptarse a sus requisitos acústicos. Desde las perforaciones Nano prácticamente invisibles hasta los patrones Micro L de máxima absorción: elija el equilibrio perfecto entre estética y rendimiento acústico.",
       "pigmentedLacquer": "Laca pigmentada",
       "glossLevels": "Niveles de brillo"
     },
@@ -2334,7 +2335,7 @@
   "rwoodVeneerPage": {
     "hero": {
       "tag": "PANELES DE MADERA ACÚSTICOS",
-      "title": "rWood - Panel",
+      "title": "rWood Panel: paneles acústicos de chapa de madera en 10 especies",
       "tagline": "La Elegancia de la Madera Real. Listo para Usar.",
       "description": "Paneles MDF chapados premium, cepillados, tintados y lacados — listos para instalar. Disponible en 10 chapas de madera y 3 acabados. Fabricado en Bélgica.",
       "usp1": "Chapa de Madera Real",
@@ -2440,7 +2441,7 @@
       "compTopLayer": "Capa superior",
       "compTopLayerVal": "Chapa grado A, teñida y lacada",
       "compCore": "Núcleo",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF 700 kg/m³ (estándar / MR / FR)",
       "compBackLayer": "Capa trasera",
       "compBackLayerVal": "Chapa de balance",
       "compBonding": "Adhesión",
@@ -2497,7 +2498,7 @@
       "layer1": "Chapa de Madera Natural",
       "layer1Desc": "Chapa de madera real grado A, cepillada, teñida y protegida con 6 capas de laca uretano acrilato curada por UV. Acabado súper mate al tacto suave.",
       "layer2": "Núcleo MDF",
-      "layer2Desc": "700 kg/m³ FSC® certified MDF. Available in standard, moisture-resistant (MR) and fire-retardant (FR) grades.",
+      "layer2Desc": "MDF de 700 kg/m³ con certificación FSC®. Disponible en calidades estándar, hidrófuga (MR) e ignífuga (FR).",
       "layer3": "Chapa de Equilibrio",
       "layer3Desc": "El respaldo de chapa a juego garantiza estabilidad dimensional y evita el alabeo. Opciones acabadas o sin acabar.",
       "keyAdvTitle": "Ventajas Clave del Acabado",
@@ -2589,9 +2590,9 @@
   "rpetFlexGroovePage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS FLEXIBLES",
-      "title": "rPET Flex-Groove",
+      "title": "rPET Flex Groove: paneles acústicos de PET flexibles para curvas",
       "tagline": "Doblar Sin Romper",
-      "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt seamlessly to columns, curved walls, and any architectural form with a minimum radius of 500mm.",
+      "description": "La solución acústica definitiva para superficies curvas. Fabricados en fieltro de PET reciclado con ranuras en V de precisión, estos paneles flexibles se adaptan a la perfección a columnas, paredes curvas y cualquier forma arquitectónica con un radio mínimo de 500 mm.",
       "usp1": "Radio Mín. 500mm",
       "usp2": "Retardante de Llama",
       "usp3": "100% PET Reciclado",
@@ -2602,24 +2603,24 @@
     "overview": {
       "tag": "INNOVACIÓN",
       "title": "Diseñado para Superficies Curvas",
-      "description": "Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and outer radii, their flexible structure allows for seamless transitions along walls, columns, and other rounded architectural elements.",
+      "description": "Los paneles Flex-Groove ofrecen una solución acústica versátil para superficies curvas, adaptándose sin esfuerzo a cualquier forma. Aptos para radios interiores y exteriores, su estructura flexible permite transiciones perfectas a lo largo de paredes, columnas y otros elementos arquitectónicos redondeados.",
       "feature1": "Se adapta a cualquier superficie curva",
-      "feature2": "Works with inner and outer radii",
-      "feature3": "Ribbed texture adds depth and rhythm",
-      "feature4": "Sound-dampening properties built-in",
+      "feature2": "Compatible con radios interiores y exteriores",
+      "feature3": "La textura acanalada aporta profundidad y ritmo",
+      "feature4": "Propiedades de amortiguación acústica integradas",
       "description2": ""
     },
     "technology": {
       "tag": "TECNOLOGÍA",
       "title": "Sistema de Flexibilidad V-Cut",
-      "description": "Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — a series of linear grooves that enable flexibility while giving the surface a sculptural relief.",
+      "description": "Cada panel se incide con cortes en V de precisión, lo que le permite curvarse sin romperse. Este ingenioso corte crea la característica textura acanalada: una serie de ranuras lineales que aportan flexibilidad a la vez que dan a la superficie un relieve escultural.",
       "minRadius": "Radio mínimo de doblado",
       "feature1Title": "Corte V de precisión",
-      "feature1Desc": "Engineered grooves for controlled flexibility",
+      "feature1Desc": "Ranuras diseñadas para una flexibilidad controlada",
       "feature2Title": "Curvas perfectas",
-      "feature2Desc": "Smooth transitions on any curved surface",
+      "feature2Desc": "Transiciones suaves en cualquier superficie curva",
       "feature3Title": "Residuos mínimos",
-      "feature3Desc": "Efficient design reduces cutting waste",
+      "feature3Desc": "Un diseño eficiente que reduce los residuos de corte",
       "flatPanel": "Panel plano",
       "curvedApp": "Aplicación curva",
       "description2": ""
@@ -2627,20 +2628,20 @@
     "colors": {
       "tag": "COLECCIÓN REFINADA",
       "title": "12 colores seleccionados",
-      "description": "Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is designed to complement modern architectural spaces while providing excellent acoustic performance.",
+      "description": "Nuestra cuidada paleta de colores ofrece opciones versátiles para cualquier interior. Desde neutros suaves hasta colores intensos y llamativos, cada tono está diseñado para complementar los espacios arquitectónicos modernos, ofreciendo al mismo tiempo un excelente rendimiento acústico.",
       "grooveDir": "Dirección de la ranura",
       "description2": ""
     },
     "acoustics": {
       "tag": "RENDIMIENTO",
       "title": "Propiedades de Amortiguación Sonora",
-      "description": "Made from fire-retardant recycled PET felt, Flex-Groove panels provide effective sound absorption while maintaining visual continuity across curved surfaces. The grooved texture enhances acoustic performance.",
+      "description": "Fabricados en fieltro de PET reciclado ignífugo, los paneles Flex-Groove proporcionan una absorción acústica eficaz manteniendo la continuidad visual en las superficies curvas. La textura ranurada mejora el rendimiento acústico.",
       "feature1Title": "Amortiguación del sonido",
-      "feature1Desc": "Reduces echo and reverberation",
+      "feature1Desc": "Reduce el eco y la reverberación",
       "feature2Title": "Retardante de Llama",
-      "feature2Desc": "Built-in fire safety properties",
-      "feature3Title": "100% Recycled",
-      "feature3Desc": "Made from recycled plastic bottles",
+      "feature2Desc": "Propiedades de seguridad contra incendios integradas",
+      "feature3Title": "100 % reciclado",
+      "feature3Desc": "Fabricado a partir de botellas de plástico recicladas",
       "layer1Label": "Fieltro PET reciclado",
       "layer2Label": "Cortes V de precisión",
       "thicknessLabel": "Espesor",
@@ -2649,26 +2650,26 @@
     },
     "installation": {
       "tag": "INSTALACIÓN FÁCIL",
-      "title": "Secure Mounting, Simple Installation",
-      "description": "Designed to span standard floor-to-ceiling heights, the panels simplify alignment and reduce installation time. The adaptable form makes them a practical solution for interiors requiring both sound absorption and design flexibility.",
+      "title": "Montaje seguro, instalación sencilla",
+      "description": "Diseñados para cubrir alturas estándar de suelo a techo, los paneles simplifican la alineación y reducen el tiempo de instalación. Su forma adaptable los convierte en una solución práctica para interiores que requieren tanto absorción acústica como flexibilidad de diseño.",
       "step1Title": "Preparar superficie",
-      "step1Desc": "Ensure the curved surface is clean and ready for mounting",
+      "step1Desc": "Asegúrese de que la superficie curva esté limpia y lista para el montaje",
       "step2Title": "Aplicar adhesivo",
-      "step2Desc": "Use recommended adhesive on the panel back",
+      "step2Desc": "Aplique el adhesivo recomendado en el dorso del panel",
       "step3Title": "Posicionar y doblar",
-      "step3Desc": "Gently bend the panel to follow the curved surface",
+      "step3Desc": "Curve suavemente el panel para que siga la superficie curva",
       "step4Title": "Fijar y rematar",
-      "step4Desc": "Press firmly to ensure full adhesion along the curve",
+      "step4Desc": "Presione con firmeza para garantizar una adhesión completa a lo largo de la curva",
       "description2": ""
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
       "title": "De Botellas a Espacios Hermosos",
-      "description": "Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensures that these panels can be recycled again at the end of their lifecycle.",
+      "description": "Cada panel Flex-Groove se fabrica a partir de botellas de plástico PET 100 % recicladas, dando una nueva vida a materiales de desecho. Nuestro enfoque circular garantiza que estos paneles puedan reciclarse de nuevo al final de su ciclo de vida.",
       "badge1": "PET reciclado",
-      "badge1Desc": "Made from recycled plastic bottles",
+      "badge1Desc": "Fabricado a partir de botellas de plástico recicladas",
       "badge2": "Totalmente reciclable",
-      "badge2Desc": "Can be recycled at end of life",
+      "badge2Desc": "Reciclable al final de su vida útil",
       "badge3": "Hecho en Polonia",
       "badge4": "Bajos COV",
       "badge3Desc": "Cadena de suministro corta desde nuestra planta polaca",
@@ -2679,7 +2680,7 @@
       "tag": "TÉCNICO",
       "title": "Especificaciones",
       "dimensionsTitle": "Dimensiones",
-      "flexibilityTitle": "Flexibility",
+      "flexibilityTitle": "Flexibilidad",
       "materialTitle": "Material",
       "fireTitle": "Seguridad al fuego",
       "certsTitle": "Certificaciones",
@@ -2688,14 +2689,14 @@
       "dimPanelWidth": "Ancho del panel",
       "dimThickness": "Espesor",
       "dimWeight": "Peso",
-      "dimDensity": "Density",
+      "dimDensity": "Densidad",
       "flexMinRadius": "Radio mínimo",
       "flexBendDir": "Dirección de doblado",
       "flexBendDirVal": "Radios interiores y exteriores",
       "flexCutType": "Tipo de corte",
       "flexCutTypeVal": "Corte V de precisión",
       "matComposition": "Composición",
-      "matCompositionVal": "FR PET Felt",
+      "matCompositionVal": "Fieltro de PET FR",
       "matRecycled": "Contenido reciclado",
       "matFireRetardant": "Ignífugo",
       "matFireRetardantVal": "Sí (integrado)",
@@ -2704,19 +2705,19 @@
       "fireRating": "Clasificación al fuego",
       "fireSmokeProduction": "Producción de humo",
       "fireFlamingDroplets": "Gotas inflamadas",
-      "fireFlamingDropletsVal": "d0 (none)",
+      "fireFlamingDropletsVal": "d0 (ninguna)",
       "certMaterial": "Material",
       "certVOC": "Emisiones de COV",
       "certVOCVal": "Bajas emisiones",
       "certRecycled": "Contenido reciclado",
       "certRecycledVal": "Verificado 100%",
-      "appSurfaces": "Surfaces",
-      "appSurfacesVal": "Walls, columns, curved elements",
+      "appSurfaces": "Superficies",
+      "appSurfacesVal": "Paredes, columnas, elementos curvos",
       "appEnvironment": "Entorno",
       "appEnvironmentVal": "Interior (zonas secas)",
       "appInstallation": "Instalación",
       "appInstallationVal": "Montaje con adhesivo",
-      "appOrientation": "Orientation",
+      "appOrientation": "Orientación",
       "appOrientationVal": "A lo largo / a lo ancho"
     },
     "gallery": {
@@ -2731,26 +2732,26 @@
     "applications": {
       "tag": "IDEAL PARA",
       "title": "Aplicaciones perfectas",
-      "description": "Wherever curves meet acoustics",
-      "app1": "Columns",
+      "description": "Donde las curvas se encuentran con la acústica",
+      "app1": "Columnas",
       "app2": "Paredes curvas",
-      "app3": "Archways",
+      "app3": "Arcos",
       "app4": "Áreas de recepción",
       "sectionTitle": "Aplicaciones perfectas",
-      "sectionDesc": "Wherever curves meet acoustics",
-      "app1Desc": "Wrap structural columns with seamless acoustic coverage",
-      "app2Desc": "Follow organic wall shapes for continuous coverage",
-      "app3Desc": "Line curved openings and architectural features",
-      "app4Desc": "Create striking curved feature walls",
+      "sectionDesc": "Donde las curvas se encuentran con la acústica",
+      "app1Desc": "Revista columnas estructurales con una cobertura acústica continua",
+      "app2Desc": "Siga las formas orgánicas de las paredes para una cobertura continua",
+      "app3Desc": "Revista aberturas curvas y elementos arquitectónicos",
+      "app4Desc": "Cree impactantes paredes curvas de diseño",
       "description2": ""
     },
     "cta": {
       "title": "¿Listo para Curvar su Acústica?",
-      "description": "Get a personalized quote for your project. Our team will help you choose the perfect flex solution.",
-      "description2": "Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements."
+      "description": "Solicite un presupuesto personalizado para su proyecto. Nuestro equipo le ayudará a elegir la solución flexible perfecta.",
+      "description2": "Solicite un presupuesto personalizado para su proyecto. Nuestro equipo le ayudará a elegir el color perfecto y a calcular sus necesidades."
     },
     "cta2": {
-      "freeNote": "Free samples available • Made in Poland • 100% Recycled"
+      "freeNote": "Muestras gratuitas disponibles • Fabricado en Polonia • 100 % reciclado"
     },
     "faq": {
       "questions": {
@@ -2959,7 +2960,7 @@
     },
     "crosslinks": {
       "tag": "TAMBIÉN EN LA GAMA",
-      "title": "Otras cabinas de la gama",
+      "title": "Otras cabinas telefónicas de la gama",
       "solo-flex": {
         "name": "Solo Flex",
         "tag": "Cabina individual"
@@ -2976,8 +2977,8 @@
   },
   "soloFlexPage": {
     "hero": {
-      "tag": "CABINA ACÚSTICA INDIVIDUAL",
-      "title": "Solo Flex",
+      "tag": "CABINA TELEFÓNICA DE OFICINA · 1 PERSONA",
+      "title": "Solo Flex: la cabina telefónica de oficina para una persona",
       "tagline": "Un metro cuadrado de silencio, donde lo necesites.",
       "description": "Solo Flex es una cabina acústica monoplaza diseñada para llamadas de concentración, videoconferencias y trabajo profundo. Una huella reducida, un escritorio honesto que pasa de sentado a de pie, y el tipo de aislamiento acústico que hace desaparecer la oficina abierta.",
       "statFootprint": "Huella",
@@ -3116,8 +3117,8 @@
   },
   "duoPage": {
     "hero": {
-      "tag": "CABINA EN DOS CONFIGURACIONES",
-      "title": "Duo",
+      "tag": "CABINA TELEFÓNICA DE OFICINA · 2 PERSONAS",
+      "title": "Duo: la cabina telefónica de oficina y pod de concentración para dos personas",
       "tagline": "Una carcasa. Dos espacios completamente diferentes.",
       "description": "Duo es una única cabina que se compromete de verdad con dos usos. La configuración Flex coloca un pequeño escritorio eléctrico en el centro — dos personas, cara a cara, para una reunión enfocada. La configuración Work instala un escritorio de ancho completo en una pared — una persona, tres monitores, un puesto de trabajo real. Eliges cuál encaja en tu planta al hacer el pedido.",
       "statFootprint": "Huella",
@@ -3287,8 +3288,8 @@
   },
   "modularXlPage": {
     "hero": {
-      "tag": "POD DE REUNIÓN ESCALABLE",
-      "title": "Modular XL",
+      "tag": "POD DE REUNIONES ACÚSTICO · 6–10 PERSONAS",
+      "title": "Modular XL: el pod de reuniones acústico para 6–10 personas",
       "tagline": "Una sala de reuniones que se alarga cuando necesitas más sillas.",
       "description": "Modular XL es la mayor cabina de la gama Re-Sound — y la única diseñada para crecer después de la instalación. La base acomoda cómodamente a seis personas. A partir de ahí, segmentos modulares de 90 cm prolongan la cabina en cualquier dirección, hasta una capacidad máxima de diez. Mismo rendimiento acústico, misma lógica de ventilación, a escala.",
       "statFootprint": "Huella base",
@@ -3331,7 +3332,7 @@
       },
       "scenario3": {
         "size": "BASE + 2",
-        "title": "All-hands",
+        "title": "Reunión de toda la plantilla",
         "description": "Diez personas, dos segmentos de extensión. Disposición en herradura alrededor de una pantalla. La configuración más grande; considera ubicación fija en este tamaño."
       }
     },
@@ -3666,7 +3667,7 @@
       "description": "Para despliegues de varias plantas, consultas de distribución o cualquier cosa que se beneficie de una conversación directa, nuestro equipo es la vía más rápida. Cogemos el teléfono.",
       "phoneLabel": "Teléfono",
       "phoneValue": "+32 3 284 68 18",
-      "emailLabel": "Email",
+      "emailLabel": "Correo electrónico",
       "emailValue": "info@re-sound.be",
       "hoursLabel": "Horario",
       "hoursValue": "Lu–Vi, 09:00–17:00 CET"
@@ -3687,5 +3688,272 @@
     "ownFactories": "Fabricación propia",
     "ownFactoriesShort": "Fábricas propias",
     "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+  },
+  "productData": {
+    "category": {
+      "textile": "Paneles acústicos textiles",
+      "rwood": "Paneles acústicos de madera",
+      "rpet": "Paneles acústicos de PET",
+      "booth": "Cabinas telefónicas de oficina y pods de reuniones"
+    },
+    "familyName": {
+      "textile": "Textil",
+      "rwood": "rWood",
+      "rpet": "rPET",
+      "booth": "Cabinas"
+    },
+    "interior": {
+      "mounting": "Sistema de rieles de pared ocultos",
+      "leadTime": "1–2 semanas (colores de stock), 3–4 semanas a medida"
+    },
+    "solid": {
+      "mounting": "Riel de colgado oculto",
+      "leadTime": "1–2 semanas (colores de stock), 3–4 semanas a medida"
+    },
+    "divide": {
+      "mounting": "Autoportante, unión modular magnética",
+      "leadTime": "1–2 semanas (colores de stock), 3–4 semanas a medida"
+    },
+    "rwood-groove": {
+      "mounting": "Rastreles o adhesivo, uniones machihembradas",
+      "leadTime": "3–4 semanas (chapas de stock), 6–8 semanas a medida"
+    },
+    "rwood-micro": {
+      "mounting": "Sistema de clips oculto o fijación con adhesivo",
+      "leadTime": "3–4 semanas (chapas de stock), 6–8 semanas a medida"
+    },
+    "rwood-perf": {
+      "mounting": "Sistema de clips oculto o fijación con adhesivo",
+      "leadTime": "3–4 semanas (chapas de stock), 6–8 semanas a medida"
+    },
+    "rwood-veneer": {
+      "mounting": "Sistema de clips oculto o fijación con adhesivo",
+      "leadTime": "3–4 semanas (chapas de stock), 6–8 semanas a medida"
+    },
+    "rpet-panel": {
+      "mounting": "Fijación directa con tornillos o adhesivo, sin taladrado previo",
+      "leadTime": "2–3 semanas (colores de stock), 5–6 semanas a medida"
+    },
+    "rpet-groove": {
+      "mounting": "Adhesivo, clips en Z, tornillos o rastreles",
+      "leadTime": "2–3 semanas (colores de stock), 5–6 semanas a medida"
+    },
+    "rpet-flex-groove": {
+      "mounting": "Montaje con adhesivo sobre superficies curvas",
+      "leadTime": "2–3 semanas (colores de stock), 5–6 semanas a medida"
+    },
+    "solo-flex": {
+      "mounting": "Autoportante, se entrega montada",
+      "leadTime": "4–6 semanas desde el pedido"
+    },
+    "duo": {
+      "mounting": "Autoportante, se entrega montada",
+      "leadTime": "4–6 semanas desde el pedido"
+    },
+    "modular-xl": {
+      "mounting": "Autoportante, montaje en obra",
+      "leadTime": "6–8 semanas desde el pedido (unidad base)"
+    },
+    "specValues": {
+      "none": "Ninguno",
+      "yes": "Sí",
+      "lowAPlus": "Bajas / A+",
+      "classAC": "Clase A / C",
+      "felt": "Fieltro",
+      "fromWeight035": "~Desde 0,35 kg/m²",
+      "weightPerModule8": "~8 kg por módulo",
+      "weightPerPanel5": "~5 kg por panel",
+      "s1Low": "s1 (baja)",
+      "suitable": "Adecuado",
+      "oekoStandard100Class1": "Standard 100, Clase 1",
+      "recycledTextileFiber": "Fibra textil reciclada",
+      "e1Carb2Compliant": "Conforme a E1 / CARB 2",
+      "classAPlusIso16000": "Clase A+ (ISO 16000)",
+      "fiveMidnightToFrost": "5 (de Midnight a Frost)",
+      "pet100Polyester": "100% PET (poliéster)",
+      "openArea25": "2,5% de superficie abierta",
+      "openArea52": "5,2% de superficie abierta",
+      "openArea84": "8,4% de superficie abierta",
+      "openArea106": "10,6% de superficie abierta",
+      "open5Aw035": "5% abierto — αw 0.35",
+      "open12Aw055": "12% abierto — αw 0.55",
+      "open18Aw075": "18% abierto — αw 0.75",
+      "open24Aw085": "24% abierto — αw 0.85",
+      "withMineralWool50": "Con lana mineral de 50 mm",
+      "dualSided": "A doble cara",
+      "base": "Base",
+      "pd8Double": "PD8 (⌀8 mm doble)",
+      "perfNano": "Nano (⌀ 0,5 mm)",
+      "perfMicroS": "Micro S (⌀ 1,0 mm)",
+      "perfMicroM": "Micro M (⌀ 1,5 mm)",
+      "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    }
+  },
+  "hubs": {
+    "shared": {
+      "breadcrumbHome": "Inicio",
+      "modelsTag": "LOS MODELOS",
+      "modelsTitle": "Elija su modelo",
+      "viewModel": "Ver modelo",
+      "tableTag": "COMPARAR",
+      "tableTitle": "Compare los modelos",
+      "tableNote": "Valores tal como se publican en las páginas de cada modelo; los valores medidos se indican con su norma de ensayo.",
+      "col": {
+        "model": "Modelo",
+        "format": "Formato",
+        "thickness": "Grosor",
+        "alphaW": "αw (ISO 11654)",
+        "nrc": "NRC (ASTM C423)",
+        "fireClass": "Clase de fuego (EN 13501-1)",
+        "recycled": "Contenido reciclado",
+        "finishes": "Acabados / colores",
+        "mounting": "Montaje",
+        "leadTime": "Plazo de entrega",
+        "fromPrice": "Precio desde (IVA no incluido)",
+        "capacity": "Capacidad",
+        "footprint": "Superficie ocupada",
+        "dimensions": "Dimensiones exteriores (An × Pr × Al)",
+        "speech": "Reducción del nivel de voz (ISO 23351-1)",
+        "isoClass": "Clase ISO 23351-1",
+        "ventilation": "Ventilación",
+        "power": "Alimentación eléctrica",
+        "weight": "Peso"
+      },
+      "finishesValue": "{count} acabados",
+      "coloursValue": "{count} colores",
+      "fromPriceValue": "desde {price} € {unit}",
+      "placeholderPrice": "precio bajo petición",
+      "isoClassNote": "Umbrales de clase ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
+      "whyTag": "POR QUÉ RE-SOUND",
+      "whyTitle": "Por qué Re-Sound",
+      "whyOwnFactoriesTitle": "Nuestras fábricas propias",
+      "whyTakeBackTitle": "Programa de recogida gratuito",
+      "whyTakeBackDesc": "Al final de su vida útil recogemos los paneles y los reprocesamos para convertirlos de nuevo en materia prima: de forma gratuita en Bélgica y al coste logístico en el resto de la UE.",
+      "whyCertsTitle": "Certificados donde importa",
+      "applicationsTag": "APLICACIONES",
+      "applicationsTitle": "Dónde se utilizan",
+      "faqTag": "FAQ",
+      "faqTitle": "Preguntas frecuentes",
+      "ctaTag": "SIGUIENTE PASO",
+      "ctaTitle": "Vea y toque el material",
+      "ctaText": "Solicite un kit de muestras gratuito o envíenos sus planos para recibir un presupuesto: nuestro equipo le responde en un día laborable.",
+      "ctaSampleKit": "Solicitar un kit de muestras",
+      "ctaQuote": "Solicitar presupuesto",
+      "notAvailable": "—"
+    },
+    "rpet": {
+      "title": "Paneles acústicos PET de botellas recicladas | Re-Sound",
+      "description": "Paneles acústicos PET de botellas recicladas: rPET Panel, Groove y Flex Groove. 12–16 colores, B-s1,d0, OEKO-TEX®, fabricados en nuestra planta de Polonia.",
+      "h1": "Paneles acústicos PET: rPET Panel, Groove y Flex Groove",
+      "breadcrumb": "rPET",
+      "intro": "Los paneles acústicos PET convierten botellas posconsumo en un fieltro denso de poliéster que absorbe el sonido, se mecaniza en CNC como el MDF y se ofrece en una paleta de colores que los arquitectos realmente utilizan. Re-Sound es una marca de Stretch Group. Fabricamos en nuestras propias plantas de Beveren-Waas (Bélgica) y Częstochowa (Polonia); la gama rPET se produce en Częstochowa. La gama consta de tres modelos. rPET Panel es la placa lisa: córtela, frésela, taládrela y píntela para paredes, techos y mobiliario. rPET Groove añade una superficie ranurada en 12 colores y tres grosores para una mayor absorción en paredes y techos. rPET Flex Groove conserva el aspecto ranurado pero se curva alrededor de columnas y paredes curvas hasta un radio de 500 mm. Los tres modelos cuentan con la certificación OEKO-TEX® Standard 100, alcanzan B-s1,d0 o B-s2,d0 según EN 13501-1 y pueden recogerse para su reciclaje al final de su vida útil. Utilice la tabla siguiente para comparar los paneles acústicos PET por formato, absorción y plazo de entrega, y abra después la página del modelo para ver acabados y descargas.",
+      "whyCertsDesc": "Todos los modelos rPET cuentan con la certificación OEKO-TEX® Standard 100; los certificados de fuego (EN 13501-1) están en las páginas de cada modelo.",
+      "applications": {
+        "app1": "Oficinas diáfanas y centros de atención telefónica",
+        "app2": "Colegios, aulas magnas y bibliotecas",
+        "app3": "Restaurantes y hostelería",
+        "app4": "Salas de espera en centros sanitarios",
+        "app5": "Comercio, showrooms y stands de exposición",
+        "app6": "Paredes curvas y columnas (Flex Groove)"
+      },
+      "faq": {
+        "q1": {
+          "question": "¿Los paneles acústicos PET están realmente hechos de botellas recicladas?",
+          "answer": "Sí. El fieltro se fabrica con fibra de botellas de PET recicladas; rPET Groove y rPET Flex Groove son 100 % PET reciclado. Todos los modelos cuentan con la certificación OEKO-TEX® Standard 100, por lo que el material es apto para colegios y centros sanitarios."
+        },
+        "q2": {
+          "question": "¿Cuánto sonido absorben los paneles acústicos PET?",
+          "answer": "Depende del grosor y del montaje: rPET Groove alcanza NRC 0.55 (12 mm), 0.75 (24 mm) y 0.90 (36 mm); rPET Panel alcanza hasta αw 1.00 montado sobre un bastidor con cámara de aire. Los paneles encolados directamente a la pared absorben menos que los paneles con una cámara detrás."
+        },
+        "q3": {
+          "question": "¿Qué clase de fuego tienen los paneles acústicos de PET reciclado?",
+          "answer": "rPET Groove y rPET Flex Groove están clasificados B-s1,d0 según EN 13501-1; la ficha técnica de rPET Panel indica B-s2,d0. El certificado de fuego de cada modelo está en su bloque de descargas."
+        },
+        "q4": {
+          "question": "¿Puedo cortar y pintar los paneles acústicos PET en obra?",
+          "answer": "Sí. rPET Panel se comporta como el MDF: córtelo, frésalo, taládrelo y atorníllelo con herramientas estándar, y píntelo en cualquier color RAL o NCS. Los paneles ranurados se cortan a medida en obra con una hoja de dientes finos."
+        },
+        "q5": {
+          "question": "¿Cuál es el plazo de entrega de los paneles acústicos PET?",
+          "answer": "Los colores de stock se envían en 2–3 semanas desde nuestra planta de Częstochowa; los colores personalizados requieren 5–6 semanas. Los proyectos grandes se programan en lotes de producción: pídanos una fecha en firme antes de realizar el pedido."
+        }
+      }
+    },
+    "rwood": {
+      "title": "Paneles acústicos de madera: chapa y perforados | Re-Sound",
+      "description": "Paneles acústicos de madera en chapa FSC: ranurados (rWood Groove), microperforados (Micro), perforados (Perf) y lisos (Panel). αw hasta 0.90, B-s1,d0.",
+      "h1": "Paneles acústicos de madera en chapa FSC: ranurados, perforados, microperforados y lisos",
+      "breadcrumb": "rWood",
+      "intro": "Los paneles acústicos de madera aportan una superficie de chapa de madera auténtica a paredes y techos sin renunciar a la absorción. Re-Sound es una marca de Stretch Group. Fabricamos en nuestras propias plantas de Beveren-Waas (Bélgica) y Częstochowa (Polonia). La gama rWood abarca cuatro superficies sobre un mismo principio constructivo: una chapa de madera con certificación FSC sobre un núcleo acústico. rWood Groove es el aspecto de lamas lineales con chapas de roble y nogal sobre un respaldo de fieltro (αw 0.90). rWood Micro perfora la chapa con microperforaciones de 0,5 mm, de modo que la madera se percibe como una superficie cerrada mientras el panel absorbe (αw 0.90, B-s1,d0). rWood Perf utiliza patrones de perforación visibles con orificios de 5 a 8 mm, ajustados entre αw 0.35 y 0.85. rWood Panel es la placa chapada lisa para zonas en las que manda la madera y no la acústica. Ocho chapas de madera recorren toda la gama, desde Beech White Ash hasta Tobacco Walnut. Compare a continuación los paneles acústicos de madera por formato, absorción, clase de fuego y plazo de entrega, y abra después la página de un modelo para ver acabados y descargas.",
+      "whyCertsDesc": "Chapa de madera con certificación FSC® en todos los modelos rWood; rWood Panel dispone además de una EPD bajo petición.",
+      "applications": {
+        "app1": "Salas de juntas y despachos de dirección",
+        "app2": "Auditorios, teatros y aulas magnas",
+        "app3": "Vestíbulos de hotel y restaurantes",
+        "app4": "Zonas de recepción y pasillos",
+        "app5": "Bibliotecas y edificios culturales",
+        "app6": "Espacios residenciales"
+      },
+      "faq": {
+        "q1": {
+          "question": "¿Qué panel acústico de madera absorbe más?",
+          "answer": "rWood Groove y rWood Micro alcanzan ambos αw 0.90 con un respaldo de fieltro o de lana mineral. rWood Perf va de αw 0.35 (PH5) a 0.85 (PD8) según el patrón de perforación. rWood Panel es una placa chapada lisa que se elige por su aspecto más que por su absorción."
+        },
+        "q2": {
+          "question": "¿La chapa de madera de los paneles acústicos tiene certificación FSC?",
+          "answer": "Sí: todos los modelos rWood utilizan chapa de madera con certificación FSC®, y rWood Panel dispone además de una EPD bajo petición. La documentación de cadena de custodia está disponible para licitaciones."
+        },
+        "q3": {
+          "question": "¿Qué clase de fuego alcanzan los paneles acústicos de madera?",
+          "answer": "Con el núcleo ignífugo, los modelos rWood están clasificados B-s1,d0 según EN 13501-1; sobre un núcleo de MDF estándar la clasificación es D-s2. Especifique el núcleo ignífugo para vías de evacuación y edificios públicos."
+        },
+        "q4": {
+          "question": "¿Los paneles de madera microperforados pueden retroiluminarse?",
+          "answer": "Sí: rWood Micro está disponible con opción retroiluminada; las perforaciones de 0,5 mm dejan pasar la luz mientras la superficie sigue percibiéndose como madera maciza."
+        },
+        "q5": {
+          "question": "¿Cómo se montan los paneles acústicos de madera y cuál es el plazo de entrega?",
+          "answer": "Todos los modelos se montan con un sistema de clips oculto (o encolado para instalaciones permanentes); rWood Groove también puede fijarse a rastreles con uniones machihembradas. Las chapas de stock se envían en 3–4 semanas; las especies fuera de stock y los acabados personalizados, en 6–8 semanas."
+        }
+      }
+    },
+    "booths": {
+      "title": "Cabinas acústicas y pods: Solo, Duo, Modular XL | Re-Sound",
+      "description": "Cabinas telefónicas de oficina y pods de reuniones: Solo Flex (1 pers.), Duo (2), Modular XL (6–10). Reducción de voz ISO 23351-1, ventilación silenciosa.",
+      "h1": "Cabinas telefónicas de oficina y pods de reuniones, fabricados en Bélgica",
+      "breadcrumb": "Cabinas",
+      "intro": "Una cabina telefónica de oficina ofrece a una persona un espacio silencioso y ventilado para llamadas y videorreuniones dentro de una planta diáfana; un pod de reuniones hace lo mismo para un equipo. Re-Sound es una marca de STRETCH Group. Fabricamos en nuestras fábricas propias de Beveren-Waas (Bélgica) y Częstochowa (Polonia). La gama de cabinas tiene tres tamaños. Solo Flex es la cabina telefónica de oficina individual: 1 m² de superficie, mesa regulable en altura, alimentación de 230 V y USB-C, ventiladores EC silenciosos y una reducción del nivel de voz de 24 dB(A) medida según ISO 23351-1. Duo es la cabina acústica para dos personas con dos configuraciones: Flex para una conversación a dos y Work para una persona con mesa de ancho completo. Modular XL es el pod de reuniones acústico para seis a diez personas: la unidad base se amplía en segmentos de 90 cm y alcanza una reducción del nivel de voz de 25,9 dB(A). Todas las cabinas incluyen una garantía estructural de 5 años y se entregan en toda la UE, con instalación incluida bajo petición. Compare las cabinas telefónicas de oficina a continuación y abra la página de cada modelo para ver accesorios y descargas.",
+      "whyCertsDesc": "Garantía estructural de 5 años y garantía de 2 años para la electrónica en todas las cabinas; reducción del nivel de voz indicada según ISO 23351-1.",
+      "applications": {
+        "app1": "Oficinas diáfanas y espacios de coworking",
+        "app2": "Llamadas y videorreuniones en entornos de trabajo ágiles",
+        "app3": "Conversaciones confidenciales en RR. HH., asesoría jurídica y finanzas",
+        "app4": "Zonas de recepción y hostelería",
+        "app5": "Bibliotecas y universidades",
+        "app6": "Trabajo concentrado y reuniones de equipos pequeños"
+      },
+      "faq": {
+        "q1": {
+          "question": "¿Cuánto más silenciosa es una cabina telefónica de oficina?",
+          "answer": "La reducción del nivel de voz se mide según ISO 23351-1: Solo Flex alcanza unos 24 dB(A) y Modular XL 25,9 dB(A), ambas de clase C según la norma (A+ ≥ 33, A ≥ 30, B ≥ 27, C ≥ 24, D ≥ 21 dB(A)). En una oficina diáfana típica, esto evita que una llamada normal resulte inteligible fuera de la cabina."
+        },
+        "q2": {
+          "question": "¿Necesitan las cabinas acústicas una conexión eléctrica?",
+          "answer": "Sí: cada cabina se conecta a una toma estándar de 230 V para la iluminación, la ventilación y las tomas de la mesa (Schuko y USB-C PD de 60 W). Solo Flex consume unos 80 W en uso."
+        },
+        "q3": {
+          "question": "¿Cómo se ventila un pod de privacidad?",
+          "answer": "Unos ventiladores EC silenciosos renuevan el aire de forma continua (4,6 m³/min en Solo Flex, 9,2 en Duo y 18,4 en la unidad base de Modular XL), controlados por un sensor de presencia para que la cabina esté fresca cuando alguien entra."
+        },
+        "q4": {
+          "question": "¿Qué pod de reuniones admite seis personas o más?",
+          "answer": "Modular XL: la unidad base tiene capacidad para seis personas y cada segmento de 90 cm amplía la capacidad hasta diez, con preinstalación A/V y acceso adaptado."
+        },
+        "q5": {
+          "question": "¿Cuáles son el plazo de entrega y la garantía de una cabina telefónica?",
+          "answer": "Solo Flex y Duo se envían en 4–6 semanas desde el pedido, y Modular XL en 6–8 semanas para la unidad base; los tejidos personalizados añaden 2–3 semanas. La garantía estructural es de 5 años y la de la electrónica de 2 años, con entrega e instalación disponibles en toda la UE."
+        }
+      }
+    }
   }
 }

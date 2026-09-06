@@ -1,49 +1,49 @@
 {
   "meta": {
-    "homeTitle": "Re-Sound | Återvunnen vid ursprunget. Cirkulär i designen.",
-    "homeDescription": "Högpresterande akustiklösningar tillverkade av återvunna material. Vi omvandlar avfall till tystnad – designade för planeten, tillverkade i Belgien.",
+    "homeTitle": "Akustikpaneler & telefonhytter, tillverkade i Belgien | Re-Sound",
+    "homeDescription": "Cirkulära akustikpaneler (textil, rWood-faner, rPET) och telefonhytter för kontor, tillverkade i egna fabriker i Belgien och Polen. Kostnadsfritt återtag.",
     "productsTitle": "Produkter",
     "productsDescription": "Cirkulära akustikpaneler och telefonbås från egna fabriker: textil (Interior, Solid, Divide), rWood, rPET och bås (Solo Flex, Duo, Modular XL).",
-    "aboutTitle": "About Re-Sound",
+    "aboutTitle": "Om Re-Sound",
     "aboutDescription": "Lär känna vår mission: cirkulära akustiklösningar av återvunna material, tillverkade i våra egna fabriker i Belgien och Polen.",
     "sustainabilityTitle": "Hållbarhet",
     "sustainabilityDescription": "Discover how we close the loop with our fully circular acoustic panels—from recycled materials to free take-back service.",
     "contactTitle": "Kontakta oss",
-    "contactDescription": "Get in touch with Re-Sound for quotes, questions, or partnership inquiries.",
-    "blogTitle": "Blog",
-    "blogDescription": "Insights on circular economy, acoustics, and sustainable design from the Re-Sound team.",
-    "interiorTitle": "Interior Acoustic Wall Panels | Re-Sound",
-    "interiorDescription": "Modulära akustiska väggpaneler tillverkade av 100% återvunna textilier. Klass A-ljudabsorption (αw 1,0), avtagbara klädslar, tillverkade i Belgien.",
-    "solidTitle": "Solid Acoustic Wall Panels | Re-Sound",
-    "solidDescription": "Storformat akustiska väggpaneler för kraftfull ljudabsorption. 1200 × 600 mm, krokmontageystem, cirkulär design.",
-    "divideTitle": "Divide Freestanding Acoustic Screens | Re-Sound",
-    "divideDescription": "Fristående akustiska avdelare med magnetisk modulär anslutning. Flexibel rumshantering, tvåsidig absorption.",
-    "rwoodGrooveTitle": "rWood Groove Akustiska Träpaneler | Re-Sound",
-    "rwoodGrooveDescription": "Premium ribbade akustikpaneler med FSC-certifierat träfaner på återvunnen filtkärna. Klass A absorption.",
-    "rwoodPerfTitle": "rWood Perf Perforerade Akustiska Träpaneler | Re-Sound",
-    "rwoodPerfDescription": "Klassiska perforerade träakustikpaneler med FSC-certifierat faner. Bredbandabsorption, justerbara perforationsmönster.",
-    "rwoodMicroTitle": "rWood Micro Mikro-Perforerade Akustiska Träpaneler | Re-Sound",
-    "rwoodMicroDescription": "Precisions mikro-perforerade akustiska träpaneler. Dubbel absorptionsmekanism, högsta brandsäkerhet.",
-    "rwoodVeneerTitle": "rWood Panel Akustiska Träfinerpaneler | Re-Sound",
-    "rwoodVeneerDescription": "Glatta träfaner akustikpaneler. 10 utvalda träsorter, möbelkvalitetskonstruktion, EPD tillgänglig.",
-    "rpetGrooveTitle": "rPET Groove Återvunna PET Akustikpaneler | Re-Sound",
-    "rpetGrooveDescription": "Ribbade akustikpaneler tillverkade av 100% återvunna PET-flaskor. 12 designerfärger, 3 tjocklekar (12/24/36 mm).",
-    "rpetPanelTitle": "rPET Panel Återvunna PET Akustikpaneler | Re-Sound",
-    "rpetPanelDescription": "Mångsidiga platta akustikpaneler tillverkade av 100% återvunnet PET. Bearbetas som MDF, OEKO-TEX® certifierade, klass A.",
-    "rpetFlexGrooveTitle": "rPET Flex Groove flexibla akustikpaneler | Re-Sound",
-    "rpetFlexGrooveDescription": "Flexibla räfflade akustikpaneler tillverkade av 100% återvunnen PET. Böjbara för kurvade ytor, pelare och skräddarsydda installationer. OEKO-TEX®-certifierade.",
+    "contactDescription": "Kontakta Re-Sound för offerter, frågor eller partnerskapsförfrågningar.",
+    "blogTitle": "Blogg",
+    "blogDescription": "Insikter om cirkulär ekonomi, akustik och hållbar design från Re-Sound-teamet.",
+    "interiorTitle": "Interior – akustikpaneler för vägg | Re-Sound",
+    "interiorDescription": "Modulära akustikpaneler för vägg av återvunnen textil: klass A-absorption (αw 1,0), avtagbart tvättbart överdrag. Tillverkade i Belgien. Från 387 €/set.",
+    "solidTitle": "Solid – akustikpaneler för vägg | Re-Sound",
+    "solidDescription": "Storformatiga akustikpaneler för vägg (1200 × 600 mm) för kraftfull ljudabsorption. Krokmontering, kärna av återvunnen textil, tillverkade i Belgien.",
+    "divideTitle": "Divide – fristående akustikskärmar | Re-Sound",
+    "divideDescription": "Fristående akustikskärmar med magnetisk modulär koppling: dubbelsidig absorption, ingen installation, återvunnen textil. Tillverkade i Belgien.",
+    "rwoodGrooveTitle": "rWood Groove – ribbade träakustikpaneler, ek & valnöt | Re-Sound",
+    "rwoodGrooveDescription": "Ribbade träakustikpaneler med FSC-certifierat ek- och valnötsfaner på kärna av återvunnen filt. Klass A-absorption, 4 lamellvarianter, 5 ytbehandlingar.",
+    "rwoodPerfTitle": "rWood Perf – perforerade träakustikpaneler | Re-Sound",
+    "rwoodPerfDescription": "Perforerade träakustikpaneler med FSC-certifierat faner: fyra perforeringsmönster för bredbandig absorption, 8 ytbehandlingar, brandhämmande kärna.",
+    "rwoodMicroTitle": "rWood Micro – mikroperforerade träakustikpaneler | Re-Sound",
+    "rwoodMicroDescription": "Mikroperforerade träakustikpaneler (0,5 mm) med FSC-certifierat faner: nästan osynligt mönster, brandklass B-s1,d0, möjlighet till bakgrundsbelysning.",
+    "rwoodVeneerTitle": "rWood Panel – akustikpaneler med träfaner, 10 träslag | Re-Sound",
+    "rwoodVeneerDescription": "Släta akustikpaneler med träfaner i 10 träslag: möbelkvalitet, FSC-certifierade, EPD tillgänglig. Borstade, betsade och lackerade, klara att montera.",
+    "rpetGrooveTitle": "rPET Groove – ribbade PET-akustikpaneler, 12 färger | Re-Sound",
+    "rpetGrooveDescription": "Ribbade PET-akustikpaneler av återvunna flaskor: 12 färger, 3 tjocklekar (12/24/36 mm), NRC upp till 0,90, brandklass B-s1,d0. Tillverkade i Polen.",
+    "rpetPanelTitle": "rPET Panel – akustikpanel av återvunnen PET, 16 färger | Re-Sound",
+    "rpetPanelDescription": "Akustikpanel av återvunnen PET som bearbetas som MDF: såga, fräsa, borra och måla. 16 färger, 12/18/24 mm, OEKO-TEX®-certifierad. Tillverkad i Polen.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove – böjbara PET-akustikpaneler | Re-Sound",
+    "rpetFlexGrooveDescription": "Flexibla PET-akustikpaneler för böjda väggar, pelare och tak: V-skurna spår, minsta radie 500 mm, 12 färger, OEKO-TEX®-certifierade.",
     "faqTitle": "FAQ — Re-Sound Akustikpaneler",
-    "faqDescription": "Svar på vanliga frågor om Re-Sound akustikpaneler: hur absorption fungerar, brandklassifikationer, leveranstider, cirkulärt återtagningsprogram och produktval.",
-    "duoDescription": "En bås, två konfigurationer: Flex rymmer två personer för ett fokuserat möte; Work ger en person ett skrivbord i full bredd. 2 m² fotavtryck, elektriskt skrivbord, 230V-uttag, full ventilation. Re-Sound akustikserie.",
-    "soloFlexDescription": "Akustisk telefonbås för en person, designad för fokussamtal och djupt arbete. 1 m² fotavtryck, integrerat sitt-stå-skrivbord, 230V-uttag, USB-C och tystgående ventilation. Del av Re-Sound boothserie.",
-    "modularXlDescription": "Skalbar akustisk mötespod. Basmodul rymmer 6 personer, kan utökas till 10 med 90 cm-segment. 25,9 dB(A) talreducering, fullt A/V-utbud, tillgänglig ingång genom design.",
-    "modularXlTitle": "Modular XL Skalbar akustisk mötespod | Re-Sound",
-    "duoTitle": "Duo Akustisk bås i två konfigurationer | Re-Sound",
-    "soloFlexTitle": "Solo Flex Akustisk enpersonsbås | Re-Sound",
-    "whereToBuyTitle": "Var du kan se och köpa Re-Sound",
-    "whereToBuyDescription": "Upplev Re-Sound på plats i vår showroom i Beveren-Waas, beställ ett kostnadsfritt provkit, boka en live-videorundtur eller ordna en demonstration på plats i hela Benelux.",
+    "faqDescription": "Svar på vanliga frågor om Re-Sounds akustikpaneler och telefonhytter: absorption, brandklasser, leveranstider, återtag och produktval.",
+    "soloFlexTitle": "Solo Flex – akustisk telefonhytt för kontor, 1 person | Re-Sound",
+    "soloFlexDescription": "Akustisk telefonhytt för en person och fokuserade samtal: 1 m² yta, höj- och sänkbart bord, 230 V och USB-C, tyst ventilation, 24 dB(A) talreduktion.",
+    "duoTitle": "Duo – telefonhytt & fokusbås för kontor, 2 personer | Re-Sound",
+    "duoDescription": "Telefonhytt för två personer med två konfigurationer: Flex rymmer två vid ett möte, Work ger en person ett bord i full bredd. 2 m², 230 V, ventilerad.",
+    "modularXlTitle": "Modular XL – akustiskt mötesbås för 6–10 personer | Re-Sound",
+    "modularXlDescription": "Akustiskt mötesbås för 6 till 10 personer: förläng basen i 90 cm-segment, 25,9 dB(A) talreduktion, kompletta A/V-förberedelser, tillgänglig entré.",
     "partnerTitle": "Partnerprogram · trade- och återförsäljarprogram",
-    "partnerDescription": "Re-Sound trade- och partnerprogram för arkitekter, designers, återförsäljare och distributörer i hela Europa. Förskrivningsfärdig dokumentation, regionalt kontoskydd och direkt support från personerna som tagit fram serien."
+    "partnerDescription": "Re-Sounds partnerprogram för arkitekter, designers, återförsäljare och distributörer i Europa: föreskrivningsunderlag, regionalt skydd, direkt support.",
+    "whereToBuyTitle": "Var du kan se och köpa Re-Sound",
+    "whereToBuyDescription": "Besök Re-Sound i vårt showroom i Beveren-Waas, beställ ett kostnadsfritt provkit, boka en live-videovisning eller ordna en demo på plats i Benelux."
   },
   "nav": {
     "products": "Produkter",
@@ -52,8 +52,8 @@
     "contact": "Kontakt",
     "cta": "Begär offert",
     "faq": "FAQ",
-    "whereToBuy": "Var köper jag",
     "partner": "Partner",
+    "whereToBuy": "Var köper jag",
     "rangeRpet": "PET-akustikpaneler",
     "rangeRwood": "Akustikpaneler i trä",
     "rangeBooths": "Akustiska telefonhytter"
@@ -61,8 +61,8 @@
   "hero": {
     "rwood": {
       "badge": "rWood Serie · Naturlig Ytlinje",
-      "title": "Akustikpaneler med",
-      "titleHighlight": "en naturlig själ.",
+      "title": "Cirkulära akustikpaneler och telefonhytter,",
+      "titleHighlight": "från våra egna fabriker",
       "subtitle": "Äkta träfaner på en högpresterande återvunnen akustisk kärna. Biofilisk värme och klass A-ljudabsorption i en panel.",
       "ctaPrimary": "Utforska rWood",
       "ctaSecondary": "Se ytor",
@@ -82,8 +82,8 @@
       "ctaPrimary": "Se alla produkter",
       "ctaSecondary": "Hur det fungerar",
       "statRecycled": "Återvunnet material",
-      "statLandfill": "Landfill waste",
-      "statFreeLabel": "Free",
+      "statLandfill": "Deponiavfall",
+      "statFreeLabel": "Kostnadsfritt",
       "statTakeback": "Återtagning",
       "statColors": "Färger",
       "pill1": "100 % återvunnet",
@@ -95,7 +95,7 @@
   "ticker": {
     "recycled": "Återvunna material",
     "classA": "Klass A ljudabsorption",
-    "fire": "B-s1,d0 Fire Rated",
+    "fire": "Brandklass B-s1,d0",
     "takeback": "Gratis återtagningsprogram",
     "veneer": "Äkta träfaner ytor",
     "colors": "Över 50 standardfärger",
@@ -103,7 +103,7 @@
     "factories": "Från egna fabriker"
   },
   "materials": {
-    "tag": "WHAT WE USE",
+    "tag": "DET VI ANVÄNDER",
     "title": "Från avfall till under",
     "subtitle": "Vi omvandlar olika återvunna material till högpresterande akustikpaneler.",
     "jeans": "Jeans",
@@ -116,29 +116,29 @@
     "mattresses": "Madrasser"
   },
   "rwood": {
-    "tag": "rWood Series — Natural Finish Line",
-    "heroTitle": "Where nature",
-    "heroTitleHighlight": "meets acoustics.",
+    "tag": "rWood-serien — naturliga ytbehandlingar",
+    "heroTitle": "Där naturen",
+    "heroTitleHighlight": "möter akustiken.",
     "heroSubtitle": "En återvunnen akustisk kärna beklädd med äkta träfaner. Två varianter: Solid för sömlös elegans, Perforerad för förbättrad absorption.",
-    "ctaExplore": "Explore rWood",
+    "ctaExplore": "Utforska rWood",
     "ctaSample": "Begär prov",
     "floatTag": "rWood · RW-W-M-OAK · Ek Naturlig",
-    "specsTag": "Technical Specifications",
-    "specsTitle": "Engineered for acoustic perfection",
+    "specsTag": "Tekniska specifikationer",
+    "specsTitle": "Konstruerad för akustisk perfektion",
     "specsBody": "rWood-kärnan är tillverkad av komprimerade återvunna textilfiber — samma högpresterande material som våra Interior- och Solid-paneler, med finish av premium FSC®-certifierat träfaner.",
     "specAbsorptionKey": "Ljudabsorption",
     "specFireKey": "Brandklass",
     "specThicknessKey": "Tjocklek",
     "specVariantsKey": "Varianter",
-    "specVariantsVal": "Solid & Perforated",
-    "specCoreKey": "Core Material",
-    "specCoreVal": "Recycled textile",
-    "specStandardKey": "Standard Sizes",
-    "specStandardVal": "Custom on request",
-    "swatchesTag": "Veneer Collection",
-    "swatchesTitle": "Choose your natural finish",
-    "swatchesBody": "Five wood species, each with its own character. All applied over a 100% recycled acoustic core.",
-    "ctaFullSpec": "Full Specifications",
+    "specVariantsVal": "Massiv & perforerad",
+    "specCoreKey": "Kärnmaterial",
+    "specCoreVal": "Återvunnen textil",
+    "specStandardKey": "Standardstorlekar",
+    "specStandardVal": "Anpassade mått på begäran",
+    "swatchesTag": "Fanerkollektion",
+    "swatchesTitle": "Välj naturlig ytbehandling",
+    "swatchesBody": "Fem träslag, vart och ett med sin egen karaktär. Alla applicerade på en 100 % återvunnen akustisk kärna.",
+    "ctaFullSpec": "Fullständiga specifikationer",
     "ctaDatasheet": "Ladda ner datablad",
     "ctaOrderSamples": "Beställ provset"
   },
@@ -155,41 +155,41 @@
     "learnCircular": "Vår cirkulära process",
     "relatedTag": "FLER PRODUKTER",
     "relatedTitle": "Relaterade produkter",
-    "ctaTitle": "Ready to transform your space?",
+    "ctaTitle": "Redo att förvandla era lokaler?",
     "ctaSubtitle": "Kontakta oss för en skräddarsydd offert anpassad till dina akustikbehov.",
     "ctaPrimary": "Få en offert",
     "filters": {
       "title": "Filtrera produkter",
       "clear": "Rensa allt",
       "finish": "Produktyta",
-      "textile": "Textile",
+      "textile": "Textil",
       "wood": "Trä",
       "pet": "PET",
-      "type": "Product Type",
+      "type": "Produkttyp",
       "wallPanel": "Väggpanel",
       "ceilingPanel": "Takpanel",
       "divider": "Avdelare",
-      "showingAll": "Showing all {count} products",
-      "showingFiltered": "Showing {filtered} of {total} products",
+      "showingAll": "Visar alla {count} produkter",
+      "showingFiltered": "Visar {filtered} av {total} produkter",
       "noResults": "Inga produkter matchar dina filter",
       "clearAndShowAll": "Rensa filter och visa alla",
-      "panel": "Akustikpaneler",
       "use": "Användning",
-      "booth": "Ljudbås"
+      "panel": "Akustikpaneler",
+      "booth": "Telefonhytter för kontor"
     },
     "interior": {
       "title": "Interior",
-      "description": "Expandable acoustic panels for walls and ceilings. Perfect for offices, restaurants, and public spaces.",
+      "description": "Utbyggbara akustikpaneler för väggar och tak. Perfekta för kontor, restauranger och offentliga miljöer.",
       "fullDescription": "Våra Interior paneler är designade för sömlös integration i alla utrymmen. Tillverkade av 100% återvunna textilier och tillgängliga i över 50 färger."
     },
     "solid": {
       "title": "Solid",
-      "description": "Minimal, high-density panels for maximum acoustic performance. Ideal for demanding environments.",
+      "description": "Minimalistiska paneler med hög densitet för maximal akustisk prestanda. Idealiska för krävande miljöer.",
       "fullDescription": "Solid paneler kombinerar minimalistisk estetik med maximal akustisk prestanda. Deras högdensitetskonstruktion säkerställer enastående ljudabsorption."
     },
     "divide": {
       "title": "Divide",
-      "description": "Freestanding acoustic dividers for flexible space management. Mobile and modular.",
+      "description": "Fristående akustiska avskärmningar för flexibel rumsindelning. Mobila och modulära.",
       "fullDescription": "Divide erbjuder flexibel rumshantering med fristående akustikpaneler. Perfekt för öppna kontor, coworking-utrymmen och evenemangszoner."
     },
     "rwood-groove": {
@@ -199,12 +199,12 @@
     },
     "rpet-groove": {
       "title": "rPET - Groove",
-      "description": "Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.",
+      "description": "Hållbara ribbade akustikpaneler av återvunnen PET. Modern estetik med utmärkt akustisk prestanda.",
       "fullDescription": "rPET - Groove paneler har ett karakteristiskt linjärt mönster skapat av 100% återvunna PET-flaskor."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
-      "description": "Versatile recycled PET acoustic panels. Clean design for walls and ceilings with superior sound control.",
+      "description": "Mångsidiga akustikpaneler av återvunnen PET. Ren design för väggar och tak med överlägsen ljudkontroll.",
       "fullDescription": "rPET - Panel erbjuder en ren, minimalistisk estetik tillverkad helt av återvunna PET-flaskor."
     },
     "rpet-circle": {
@@ -240,11 +240,11 @@
     "highlights": {
       "absorption": {
         "title": "Ljudabsorption",
-        "value": "Up to αw 1.00"
+        "value": "Upp till αw 1,00"
       },
       "recyclable": {
         "title": "Återvinningsbar",
-        "value": "100% at end of life"
+        "value": "100 % vid livslängdens slut"
       },
       "origin": {
         "title": "Ursprung",
@@ -253,38 +253,38 @@
     },
     "features": {
       "performance": {
-        "title": "High Performance",
-        "description": "Class A sound absorption for optimal acoustic comfort in any environment."
+        "title": "Hög prestanda",
+        "description": "Klass A-ljudabsorption för optimal akustisk komfort i alla miljöer."
       },
       "circular": {
-        "title": "Fully Circular",
-        "description": "Made from recycled materials and 100% recyclable at end of life."
+        "title": "Helt cirkulära",
+        "description": "Tillverkade av återvunna material och 100 % återvinningsbara vid livslängdens slut."
       },
       "customization": {
-        "title": "Custom Options",
-        "description": "Available in 50+ colors and custom sizes to match your design vision."
+        "title": "Anpassningsmöjligheter",
+        "description": "Finns i 50+ färger och anpassade storlekar som matchar er designvision."
       }
-    },
-    "duo": {
-      "title": "Duo",
-      "description": "En bås, två konfigurationer. Flex sätter två personer vid ett möte; Work ger en person ett fullvärdigt skrivbord. 26 dB(A) reducering."
     },
     "solo-flex": {
       "title": "Solo Flex",
-      "description": "Akustisk bås för en person, för fokussamtal och djupt arbete. 1 m² fotavtryck, integrerat sitt-stå-skrivbord, 24 dB(A) talreducering."
+      "description": "Telefonhytt för en person, för fokuserade samtal och koncentrerat arbete. 1 m² yta, integrerat höj- och sänkbart bord, 24 dB(A) talreduktion."
+    },
+    "duo": {
+      "title": "Duo",
+      "description": "Telefonhytt för två personer med två konfigurationer: Flex rymmer två vid ett möte, Work ger en person ett bord i full bredd."
     },
     "modular-xl": {
       "title": "Modular XL",
-      "description": "Skalbar mötespod. Bas för 6 personer, utbyggbar till 10 med modulära 90 cm-segment. 25,9 dB(A) talreducering."
+      "description": "Skalbart akustiskt mötesbås. Basen rymmer 6 personer, utbyggbar till 10 med modulära 90 cm-segment. 25,9 dB(A) talreduktion."
     }
   },
   "specs": {
-    "tag": "SPECIFICATIONS",
-    "title": "Technical Details",
+    "tag": "SPECIFIKATIONER",
+    "title": "Tekniska detaljer",
     "dimensions": "Dimensioner",
     "thickness": "Tjocklek",
     "weight": "Vikt",
-    "height": "Height",
+    "height": "Höjd",
     "absorption": "Absorptionskoefficient",
     "fireClass": "Brandklassificering",
     "material": "Material",
@@ -292,19 +292,19 @@
     "certifications": "Certifieringar"
   },
   "why": {
-    "tag": "WHY RE-SOUND",
-    "title": "Why Choose Circular Acoustic Panels?",
+    "tag": "VARFÖR RE-SOUND",
+    "title": "Varför välja cirkulära akustikpaneler?",
     "belgianLabel": "Egna fabriker",
     "subtitle": "Vi tror att god akustik inte bör kosta planeten. Våra paneler bevisar att hållbara val kan leverera världsklass prestanda.",
     "diagramLabel": "Cirkulär",
     "features": {
       "performance": {
         "title": "Överlägsen prestanda",
-        "description": "Class A absorption rating (αw 0.95-1.00) for optimal acoustic comfort."
+        "description": "Klass A-absorption (αw 0,95–1,00) för optimal akustisk komfort."
       },
       "durability": {
         "title": "Byggd för att hålla",
-        "description": "High-quality manufacturing ensures decades of performance."
+        "description": "Högkvalitativ tillverkning ger prestanda i årtionden."
       },
       "circular": {
         "title": "Äkta cirkulär",
@@ -317,16 +317,16 @@
     }
   },
   "circular": {
-    "tag": "CIRCULAR ECONOMY",
+    "tag": "CIRKULÄR EKONOMI",
     "title": "Stäng",
     "titleHighlight": "slingan.",
     "subtitle": "Våra paneler börjar livet som avfall och kan återvända för att bli nya paneler—och skapar därmed en oändlig värdecykel.",
-    "loopLabel": "Endless Cycle",
+    "loopLabel": "Oändligt kretslopp",
     "cta": "Hur det fungerar",
-    "statRecycled": "Recycled Input",
-    "statLandfill": "Landfill",
-    "statFreeLabel": "Free",
-    "statTakeback": "Take-Back",
+    "statRecycled": "Återvunnen råvara",
+    "statLandfill": "Deponi",
+    "statFreeLabel": "Kostnadsfritt",
+    "statTakeback": "Återtag",
     "steps": {
       "collect": {
         "title": "Samla in",
@@ -349,14 +349,14 @@
   "dualCta": {
     "left": {
       "eyebrow": "rWood Serie",
-      "title": "Discover natural acoustic finishes",
-      "subtitle": "Real wood veneer on a recycled core. Request a sample kit and find the right finish for your project.",
+      "title": "Upptäck naturliga akustiska ytskikt",
+      "subtitle": "Äkta träfaner på en återvunnen kärna. Beställ ett provkit och hitta rätt ytskikt för ditt projekt.",
       "cta": "Beställ provset"
     },
     "right": {
       "eyebrow": "Alla produkter",
-      "title": "Get a custom quote",
-      "subtitle": "Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.",
+      "title": "Få en skräddarsydd offert",
+      "subtitle": "Berätta om din lokal – vi rekommenderar rätt akustiklösning och återkommer med en skräddarsydd offert.",
       "cta": "Begär offert"
     }
   },
@@ -499,27 +499,27 @@
     "subtitle": "Har du spørgsmål om vores produkter eller ønsker et tilpasset tilbud? Vi hører gerne fra dig.",
     "form": {
       "title": "Skicka oss ett meddelande",
-      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "subtitle": "Fyll i formuläret nedan så återkommer vi inom 24 timmar.",
       "name": "Namn",
       "namePlaceholder": "Ditt fullständiga namn",
       "email": "E-post",
       "emailPlaceholder": "din@email.com",
       "company": "Företag",
-      "companyPlaceholder": "Your company name",
+      "companyPlaceholder": "Ditt företagsnamn",
       "phone": "Telefon",
       "phonePlaceholder": "+32 ...",
       "subject": "Ämne",
-      "subjectPlaceholder": "Select a subject",
+      "subjectPlaceholder": "Välj ett ämne",
       "message": "Meddelande",
-      "messagePlaceholder": "Tell us about your project or question...",
+      "messagePlaceholder": "Berätta om ditt projekt eller din fråga...",
       "submit": "Skicka meddelande",
       "sending": "Skickar...",
-      "successMessage": "Thank you! We'll get back to you within 24 hours.",
-      "errorMessage": "Something went wrong. Please try again.",
+      "successMessage": "Tack! Vi återkommer inom 24 timmar.",
+      "errorMessage": "Något gick fel. Försök igen.",
       "subjects": {
         "quote": "Begär offert",
-        "info": "Product Information",
-        "partnership": "Partnership Inquiry",
+        "info": "Produktinformation",
+        "partnership": "Partnerskapsförfrågan",
         "other": "Annat"
       },
       "privacyNotice": "Genom att skicka detta formulär godkänner du vår <link>integritetspolicy</link>.",
@@ -535,18 +535,18 @@
     },
     "faq": {
       "title": "Vanliga frågor",
-      "subtitle": "Quick answers to common questions.",
+      "subtitle": "Snabba svar på vanliga frågor.",
       "q1": {
-        "question": "What is your lead time?",
-        "answer": "Standard orders ship within 2-3 weeks. Custom colors and sizes may require 4-6 weeks."
+        "question": "Hur lång är er leveranstid?",
+        "answer": "Standardbeställningar skickas inom 2–3 veckor. Specialfärger och specialmått kan kräva 4–6 veckor."
       },
       "q2": {
-        "question": "Do you ship internationally?",
-        "answer": "Yes! We ship throughout Europe. Contact us for shipping quotes outside the EU."
+        "question": "Levererar ni internationellt?",
+        "answer": "Ja! Vi levererar i hela Europa. Kontakta oss för fraktoffert utanför EU."
       },
       "q3": {
-        "question": "Can I get samples?",
-        "answer": "Absolutely. We offer free sample kits with material swatches and color options."
+        "question": "Kan jag få prover?",
+        "answer": "Absolut. Vi erbjuder kostnadsfria provkit med materialprover och färgalternativ."
       }
     }
   },
@@ -577,7 +577,8 @@
       "education": "Utbildning",
       "company": "Företag",
       "design": "Design"
-    }
+    },
+    "minRead": "{minutes} min läsning"
   },
   "blogPosts": {
     "circular-economy-acoustics": {
@@ -692,7 +693,7 @@
   "newsletter": {
     "tag": "HÅLL DIG UPPDATERAD",
     "title": "Prenumerera på vårt nyhetsbrev",
-    "subtitle": "Get the latest news on circular acoustics, new products, and sustainable design insights.",
+    "subtitle": "Få de senaste nyheterna om cirkulär akustik, nya produkter och insikter om hållbar design.",
     "placeholder": "Ange din e-post",
     "subscribe": "Prenumerera",
     "subscribing": "Prenumererar...",
@@ -706,7 +707,7 @@
     "company": "Företag",
     "contact": "Kontakt",
     "allProducts": "Alla produkter",
-    "copyright": "© {year} Re-Sound. All rights reserved.",
+    "copyright": "© {year} Re-Sound. Alla rättigheter förbehållna.",
     "manageCookies": "Hantera cookies",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor"
@@ -735,7 +736,7 @@
   },
   "notFound": {
     "title": "Sidan hittades inte",
-    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved or no longer exists.",
+    "description": "Tyvärr kunde vi inte hitta sidan du letar efter. Den kan ha flyttats eller finns inte längre.",
     "backHome": "Tillbaka till startsidan",
     "contactUs": "Kontakta oss"
   },
@@ -796,29 +797,29 @@
       "colors": "Färger",
       "patterns": "Mönster",
       "sustainability": "Hållbarhet",
-      "installation": "Installation"
+      "installation": "Montering"
     },
     "tags": {
-      "acousticWallPanels": "ACOUSTIC WALL PANELS",
-      "completeSolution": "COMPLETE SOLUTION",
+      "acousticWallPanels": "AKUSTISKA VÄGGPANELER",
+      "completeSolution": "KOMPLETT LÖSNING",
       "sustainability": "HÅLLBARHET",
-      "designFreedom": "DESIGN FREEDOM",
-      "practical": "PRACTICAL",
-      "performance": "PERFORMANCE",
-      "technical": "TECHNICAL",
+      "designFreedom": "DESIGNFRIHET",
+      "practical": "PRAKTISKT",
+      "performance": "PRESTANDA",
+      "technical": "TEKNISKT",
       "inspiration": "INSPIRATION",
-      "resources": "RESOURCES",
-      "circularDesign": "CIRCULAR DESIGN",
-      "designOptions": "DESIGN OPTIONS",
-      "recycledPetPanels": "RECYCLED PET ACOUSTIC PANELS",
-      "rwoodPanels": "ACOUSTIC WOOD PANELS",
-      "easeOfUse": "EASE OF USE",
-      "lowMaintenance": "LOW MAINTENANCE"
+      "resources": "RESURSER",
+      "circularDesign": "CIRKULÄR DESIGN",
+      "designOptions": "DESIGNALTERNATIV",
+      "recycledPetPanels": "AKUSTIKPANELER I ÅTERVUNNEN PET",
+      "rwoodPanels": "AKUSTIKPANELER I TRÄ",
+      "easeOfUse": "ENKEL ATT ANVÄNDA",
+      "lowMaintenance": "LÅGT UNDERHÅLL"
     },
     "cta": {
       "requestQuote": "Begär offert",
       "viewSpecifications": "Se specifikationer",
-      "callUs": "Call Us: +32 3 284 68 18",
+      "callUs": "Ring oss: +32 3 284 68 18",
       "freeShippingNote": "Gratis frakt i Belgien • Retur för återvinning ingår",
       "ctaTitle": "Redo att transformera ditt utrymme?",
       "ctaSubtitle": "Få en skräddarsydd offert för ditt projekt. Vårt team hjälper dig att beräkna rätt antal paneler och hitta den perfekta lösningen.",
@@ -827,7 +828,7 @@
     },
     "downloads": {
       "title": "Nedladdningar",
-      "tag": "RESOURCES",
+      "tag": "RESURSER",
       "productDataSheet": "Produktdatablad",
       "installationManual": "Installationsmanual",
       "acousticTestReport": "Akustisk testrapport",
@@ -835,7 +836,7 @@
       "fireCertificate": "Brandcertifikat",
       "sustainabilityDeclaration": "Hållbarhetsdeklaration",
       "technicalDrawing": "Teknisk ritning",
-      "bimFile": "BIM File",
+      "bimFile": "BIM-fil",
       "epd": "Miljövarudeklaration (EPD)",
       "colourFinishGuide": "Färg- och ytguide",
       "warranty": "Garanticertifikat",
@@ -849,21 +850,21 @@
       "panelSize": "Panelstorlek",
       "thickness": "Tjocklek",
       "weight": "Vikt",
-      "absorptionCoeff": "Absorption coefficient (αw)",
-      "absorptionClass": "Absorption class",
+      "absorptionCoeff": "Absorptionskoefficient (αw)",
+      "absorptionClass": "Absorptionsklass",
       "nrc": "NRC",
       "fireRating": "Brandklass",
       "standard": "Standard",
       "core": "Kärna",
-      "absorber": "Absorber",
-      "cover": "Cover",
+      "absorber": "Absorbent",
+      "cover": "Ytskikt",
       "recycledContent": "Återvunnet innehåll",
       "endOfLife": "Livslängdens slut",
-      "vocEmissions": "VOC emissions",
+      "vocEmissions": "VOC-emissioner",
       "mounting": "Montering",
       "installationTime": "Installationstid",
       "toolsRequired": "Nödvändiga verktyg",
-      "testStandard": "Test standard",
+      "testStandard": "Provningsstandard",
       "surface": "Yta",
       "finish": "Yta",
       "epd": "EPD tillgänglig",
@@ -875,32 +876,32 @@
       "title": "I bruk"
     },
     "acoustics": {
-      "low": "Low",
-      "mid": "Mid",
-      "high": "High",
-      "highestRating": "Highest absorption rating achievable",
+      "low": "Låg",
+      "mid": "Mellan",
+      "high": "Hög",
+      "highestRating": "Högsta möjliga absorptionsklass",
       "classA": "Klass A",
       "benefitSpeech": {
-        "title": "Improved Speech Clarity",
-        "desc": "Reduce reverberation for clearer conversations"
+        "title": "Bättre taluppfattbarhet",
+        "desc": "Minskad efterklang för tydligare samtal"
       },
       "benefitFocus": {
-        "title": "Enhanced Focus",
-        "desc": "Minimize distracting background noise"
+        "title": "Bättre fokus",
+        "desc": "Minimera störande bakgrundsljud"
       },
       "benefitStress": {
-        "title": "Reduced Stress",
-        "desc": "Create calmer, more comfortable environments"
+        "title": "Mindre stress",
+        "desc": "Skapa lugnare och mer behagliga miljöer"
       }
     },
     "specLabels": {
       "thickness": "Tjocklek",
       "weight": "Vikt",
       "density": "Densitet",
-      "testStandard": "Test standard",
+      "testStandard": "Provningsstandard",
       "envLabel": "Miljö",
-      "health": "Health",
-      "installation": "Installation",
+      "health": "Hälsa",
+      "installation": "Montering",
       "environment": "Miljö",
       "envVal": "Inomhus (torra utrymmen)",
       "soundAbsorbed": "Ljud absorberat",
@@ -917,9 +918,9 @@
       "woodSourcing": "Träkällor",
       "feltCert": "Filtcertifiering",
       "epd": "EPD tillgänglig",
-      "vocEmissions": "VOC emissions",
+      "vocEmissions": "VOC-emissioner",
       "moistureResistant": "Fuktresistent",
-      "connection": "Connection",
+      "connection": "Sammankoppling",
       "backlitOption": "Bakgrundsbelysning",
       "mountingSystem": "Monteringssystem",
       "concealedClip": "Dolt klipsystem",
@@ -940,7 +941,7 @@
   "interiorPage": {
     "hero": {
       "tag": "ACOUSTIC WALL PANELS",
-      "title": "Interior",
+      "title": "Interior: modulära akustiska väggpaneler i återvunnen textil",
       "tagline": "Modulär akustik, cirkulär av design",
       "description": "Transformera ditt utrymme med Re-Sound Interior—ett komplett akustiskt väggsystem tillverkat av återvunna material.",
       "uspAbsorption": "αw 1,0 Absorption",
@@ -1053,7 +1054,7 @@
   "solidPage": {
     "hero": {
       "tag": "ACOUSTIC WALL PANELS",
-      "title": "Solid",
+      "title": "Solid: akustiska väggpaneler i storformat",
       "tagline": "Högpresterande akustik, enkel installation",
       "description": "Möt Re-Sound Solid—din högpresterande akustiska väggpanel designad för maximal prestanda med minimal ansträngning.",
       "usp1": "Hög absorption",
@@ -1189,7 +1190,7 @@
   "dividePage": {
     "hero": {
       "tag": "AKUSTISK RUMSAVDELARE",
-      "title": "Divide",
+      "title": "Divide: fristående akustikskärmar",
       "tagline": "Klicka för att omdefiniera, dela för stilen",
       "description": "Meet Re-Sound Divide—the first freestanding acoustic screen designed for flexible use.",
       "usp1": "Magnetisk anslutning",
@@ -1318,7 +1319,7 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "RECYCLED PET ACOUSTIC PANELS",
-      "title": "rPET - Groove",
+      "title": "rPET Groove: spårade PET-akustikpaneler i 12 färger",
       "tagline": "Från Flaskor till Tystnad",
       "description": "rPET - Groove paneler kombinerar modern estetik med enastående akustisk prestanda. Tillverkade av 100% återvunna PET-flaskor, erbjuder dessa högdensitetspaneler klass A-ljudabsorption medan de avleder plastavfall från deponier.",
       "usp1": "100% återvunnet PET",
@@ -1539,9 +1540,6 @@
     "cta2": {
       "freeNote": "Gratis prover tillgängliga • Tillverkad i Polen • 100% Återvunnet"
     },
-    "related": {
-      "title": "Relaterade Produkter"
-    },
     "faq": {
       "questions": {
         "oekoTex": {
@@ -1565,12 +1563,15 @@
           "answer": "Lagerfärger levereras inom 2–3 veckor; anpassade färger kräver 5–6 veckor. Större projekt (>500 m²) planeras i produktionsbatcher — kontakta oss för ett bindande datum."
         }
       }
+    },
+    "related": {
+      "title": "Relaterade Produkter"
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "ÅTERVUNNA PET AKUSTIKPANELER",
-      "title": "rPET - Panel",
+      "title": "rPET Panel: akustikpanelen i återvunnen PET som du bearbetar som MDF",
       "tagline": "Hållbar Tystnad, Oändliga Möjligheter",
       "description": "Transform any space with rPET - Panel acoustic panels. {pct, select, unknown {Made from recycled PET bottles, these} other {Made from {pct}% recycled PET bottles, these}} lightweight yet powerful sound absorbers deliver maximum acoustic performance with minimal environmental impact.",
       "usp1": "100% Återvinningsbart PET",
@@ -1781,7 +1782,7 @@
   "rwoodGroovePage": {
     "hero": {
       "tag": "ACOUSTIC WOOD PANELS",
-      "title": "rWood - Groove",
+      "title": "rWood Groove: spårade akustikpaneler i trä, i ek och valnöt",
       "tagline": "Naturlig skönhet, perfekt akustik",
       "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
       "usp1": "FSC® certifierat trä",
@@ -1967,7 +1968,7 @@
   "rwoodPerfPage": {
     "hero": {
       "tag": "PERFORERADE AKUSTISKA TRÄPANELER",
-      "title": "rWood - Perf",
+      "title": "rWood Perf: perforerade akustikpaneler i trä",
       "tagline": "Precisionsperforeringar, maximal absorption",
       "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control.",
       "usp1": "Runda perforeringar",
@@ -2146,7 +2147,7 @@
   "rwoodMicroPage": {
     "hero": {
       "tag": "MIKRO-PERFORERADE AKUSTIKPANELER",
-      "title": "rWood - Micro",
+      "title": "rWood Micro: mikroperforerade akustikpaneler i trä",
       "tagline": "Osynlig perforation, enastående akustik",
       "description": "Experience the beauty of natural wood with the acoustic performance of advanced micro-perforation technology. Virtually invisible holes deliver Class A sound absorption while preserving the pure, homogeneous look of premium wood veneer.",
       "usp1": "Osynliga perforeringar",
@@ -2334,7 +2335,7 @@
   "rwoodVeneerPage": {
     "hero": {
       "tag": "AKUSTISKA TRÄPANELER",
-      "title": "rWood - Panel",
+      "title": "rWood Panel: akustikpaneler med träfaner i 10 träslag",
       "tagline": "Elegansen av Äkta Trä. Redo att Använda.",
       "description": "Premium fanerade MDF-paneler, borstade, betsade och lackerade — klara att installera. Tillgängliga i 10 träfanerarter och 3 ytor. Tillverkade i Belgien.",
       "usp1": "Äkta Träfaner",
@@ -2589,7 +2590,7 @@
   "rpetFlexGroovePage": {
     "hero": {
       "tag": "FLEXIBLA AKUSTIKPANELER",
-      "title": "rPET Flex-Groove",
+      "title": "rPET Flex Groove: flexibla PET-akustikpaneler för böjda ytor",
       "tagline": "Böj utan att bryta",
       "description": "The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt seamlessly to columns, curved walls, and any architectural form with a minimum radius of 500mm.",
       "usp1": "Min. radie 500mm",
@@ -2959,7 +2960,7 @@
     },
     "crosslinks": {
       "tag": "OCKSÅ I SERIEN",
-      "title": "Andra ljudbås i serien",
+      "title": "Andra telefonhytter i sortimentet",
       "solo-flex": {
         "name": "Solo Flex",
         "tag": "Enpersonsbås"
@@ -2976,8 +2977,8 @@
   },
   "soloFlexPage": {
     "hero": {
-      "tag": "AKUSTISK ENPERSONSBÅS",
-      "title": "Solo Flex",
+      "tag": "TELEFONHYTT FÖR KONTOR · 1 PERSON",
+      "title": "Solo Flex: telefonhytten för kontoret – för en person",
       "tagline": "En kvadratmeter tystnad, där du än behöver den.",
       "description": "Solo Flex är en akustisk bås för en person, byggd för fokussamtal, videomöten och djupt arbete. Ett litet fotavtryck, ett ärligt skrivbord som går från sittande till stående, och den sortens ljudisolering som får kontorslandskapet att försvinna.",
       "statFootprint": "Fotavtryck",
@@ -3116,8 +3117,8 @@
   },
   "duoPage": {
     "hero": {
-      "tag": "BÅS I TVÅ KONFIGURATIONER",
-      "title": "Duo",
+      "tag": "TELEFONHYTT FÖR KONTOR · 2 PERSONER",
+      "title": "Duo: telefonhytt och fokusbås för två personer på kontoret",
       "tagline": "Ett skal. Två helt olika rum.",
       "description": "Duo är en enda bås som verkligen åtar sig två användningar. Flex-konfigurationen placerar ett litet elektriskt skrivbord centralt — två personer, mittemot varandra, för ett fokuserat möte. Work-konfigurationen monterar ett skrivbord i full bredd längs en vägg — en person, tre skärmar, en riktig arbetsplats. Du väljer vilken som passar din våning vid beställning.",
       "statFootprint": "Fotavtryck",
@@ -3287,8 +3288,8 @@
   },
   "modularXlPage": {
     "hero": {
-      "tag": "SKALBAR MÖTESPOD",
-      "title": "Modular XL",
+      "tag": "AKUSTISKT MÖTESBÅS · 6–10 PERSONER",
+      "title": "Modular XL: det akustiska mötesbåset för 6–10 personer",
       "tagline": "Ett mötesrum som blir längre när du behöver fler stolar.",
       "description": "Modular XL är den största båsen i Re-Sound-serien — och den enda designad för att växa efter installation. Basen rymmer komfortabelt sex personer. Därifrån förlänger modulära 90 cm-segment båset i båda riktningar, upp till en maximal kapacitet på tio. Samma akustiska prestanda, samma ventilationslogik, i skala.",
       "statFootprint": "Basens fotavtryck",
@@ -3687,5 +3688,272 @@
     "ownFactories": "Från egna fabriker",
     "ownFactoriesShort": "Egna fabriker",
     "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+  },
+  "productData": {
+    "category": {
+      "textile": "Akustikpaneler i textil",
+      "rwood": "Akustikpaneler i trä",
+      "rpet": "Akustikpaneler i PET",
+      "booth": "Telefonhytter och mötesbås för kontor"
+    },
+    "familyName": {
+      "textile": "Textil",
+      "rwood": "rWood",
+      "rpet": "rPET",
+      "booth": "Hytter"
+    },
+    "interior": {
+      "mounting": "Dolt väggskensystem",
+      "leadTime": "1–2 veckor (lagerfärger), 3–4 veckor vid specialbeställning"
+    },
+    "solid": {
+      "mounting": "Dold upphängningsskena",
+      "leadTime": "1–2 veckor (lagerfärger), 3–4 veckor vid specialbeställning"
+    },
+    "divide": {
+      "mounting": "Fristående, magnetisk modulär sammankoppling",
+      "leadTime": "1–2 veckor (lagerfärger), 3–4 veckor vid specialbeställning"
+    },
+    "rwood-groove": {
+      "mounting": "Läkt eller lim, not- och fjäderskarvar",
+      "leadTime": "3–4 veckor (lagerfaner), 6–8 veckor vid specialbeställning"
+    },
+    "rwood-micro": {
+      "mounting": "Dolt clipsystem eller limmontering",
+      "leadTime": "3–4 veckor (lagerfaner), 6–8 veckor vid specialbeställning"
+    },
+    "rwood-perf": {
+      "mounting": "Dolt clipsystem eller limmontering",
+      "leadTime": "3–4 veckor (lagerfaner), 6–8 veckor vid specialbeställning"
+    },
+    "rwood-veneer": {
+      "mounting": "Dolt clipsystem eller limmontering",
+      "leadTime": "3–4 veckor (lagerfaner), 6–8 veckor vid specialbeställning"
+    },
+    "rpet-panel": {
+      "mounting": "Direkt skruvmontering eller lim, ingen förborrning",
+      "leadTime": "2–3 veckor (lagerfärger), 5–6 veckor vid specialbeställning"
+    },
+    "rpet-groove": {
+      "mounting": "Lim, Z-clips, skruvar eller reglar",
+      "leadTime": "2–3 veckor (lagerfärger), 5–6 veckor för specialfärger"
+    },
+    "rpet-flex-groove": {
+      "mounting": "Limmontering på böjda underlag",
+      "leadTime": "2–3 veckor (lagerfärger), 5–6 veckor för specialfärger"
+    },
+    "solo-flex": {
+      "mounting": "Fristående, levereras monterad",
+      "leadTime": "4–6 veckor från beställning"
+    },
+    "duo": {
+      "mounting": "Fristående, levereras monterad",
+      "leadTime": "4–6 veckor från beställning"
+    },
+    "modular-xl": {
+      "mounting": "Fristående, monteras på plats",
+      "leadTime": "6–8 veckor från beställning (basenhet)"
+    },
+    "specValues": {
+      "none": "Ingen",
+      "yes": "Ja",
+      "lowAPlus": "Låg / A+",
+      "classAC": "Klass A / C",
+      "felt": "Filt",
+      "fromWeight035": "~Från 0,35 kg/m²",
+      "weightPerModule8": "~8 kg per modul",
+      "weightPerPanel5": "~5 kg per panel",
+      "s1Low": "s1 (låg)",
+      "suitable": "Lämplig",
+      "oekoStandard100Class1": "Standard 100, klass 1",
+      "recycledTextileFiber": "Återvunnen textilfiber",
+      "e1Carb2Compliant": "Uppfyller E1 / CARB 2",
+      "classAPlusIso16000": "Klass A+ (ISO 16000)",
+      "fiveMidnightToFrost": "5 (Midnight till Frost)",
+      "pet100Polyester": "100% PET (polyester)",
+      "openArea25": "2.5% öppen yta",
+      "openArea52": "5.2% öppen yta",
+      "openArea84": "8.4% öppen yta",
+      "openArea106": "10.6% öppen yta",
+      "open5Aw035": "5% öppen yta — αw 0.35",
+      "open12Aw055": "12% öppen yta — αw 0.55",
+      "open18Aw075": "18% öppen yta — αw 0.75",
+      "open24Aw085": "24% öppen yta — αw 0.85",
+      "withMineralWool50": "Med 50 mm mineralull",
+      "dualSided": "Dubbelsidig",
+      "base": "Bas",
+      "pd8Double": "PD8 (⌀8 mm dubbel)",
+      "perfNano": "Nano (⌀ 0.5mm)",
+      "perfMicroS": "Micro S (⌀ 1.0mm)",
+      "perfMicroM": "Micro M (⌀ 1.5mm)",
+      "perfMicroL": "Micro L (⌀ 2.0mm)"
+    }
+  },
+  "hubs": {
+    "shared": {
+      "breadcrumbHome": "Start",
+      "modelsTag": "MODELLERNA",
+      "modelsTitle": "Välj din modell",
+      "viewModel": "Visa modell",
+      "tableTag": "JÄMFÖR",
+      "tableTitle": "Jämför modellerna",
+      "tableNote": "Värden enligt modellsidorna; uppmätta värden anges tillsammans med sin provningsstandard.",
+      "col": {
+        "model": "Modell",
+        "format": "Format",
+        "thickness": "Tjocklek",
+        "alphaW": "αw (ISO 11654)",
+        "nrc": "NRC (ASTM C423)",
+        "fireClass": "Brandklass (EN 13501-1)",
+        "recycled": "Återvunnet innehåll",
+        "finishes": "Ytor / färger",
+        "mounting": "Montering",
+        "leadTime": "Leveranstid",
+        "fromPrice": "Pris från (exkl. moms)",
+        "capacity": "Kapacitet",
+        "footprint": "Golvyta",
+        "dimensions": "Yttermått (B × D × H)",
+        "speech": "Reduktion av talnivå (ISO 23351-1)",
+        "isoClass": "Klass enligt ISO 23351-1",
+        "ventilation": "Ventilation",
+        "power": "El",
+        "weight": "Vikt"
+      },
+      "finishesValue": "{count} ytor",
+      "coloursValue": "{count} färger",
+      "fromPriceValue": "från €{price} {unit}",
+      "placeholderPrice": "pris på begäran",
+      "isoClassNote": "Klassgränser enligt ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
+      "whyTag": "VARFÖR RE-SOUND",
+      "whyTitle": "Varför Re-Sound",
+      "whyOwnFactoriesTitle": "Våra egna fabriker",
+      "whyTakeBackTitle": "Kostnadsfritt återtagsprogram",
+      "whyTakeBackDesc": "Vid slutet av livscykeln hämtar vi panelerna och bearbetar dem tillbaka till råmaterial — kostnadsfritt inom Belgien, mot logistikkostnad i övriga EU.",
+      "whyCertsTitle": "Certifierat där det räknas",
+      "applicationsTag": "ANVÄNDNINGSOMRÅDEN",
+      "applicationsTitle": "Där de används",
+      "faqTag": "FAQ",
+      "faqTitle": "Vanliga frågor",
+      "ctaTag": "NÄSTA STEG",
+      "ctaTitle": "Se och känn på materialet",
+      "ctaText": "Beställ ett kostnadsfritt provkit eller skicka oss dina ritningar för en offert — vårt team svarar inom en arbetsdag.",
+      "ctaSampleKit": "Beställ ett provkit",
+      "ctaQuote": "Begär offert",
+      "notAvailable": "—"
+    },
+    "rpet": {
+      "title": "PET-akustikpaneler av återvunna flaskor – tillverkare | Re-Sound",
+      "description": "PET-akustikpaneler av återvunna flaskor: rPET Panel, Groove och Flex Groove. 12–16 färger, B-s1,d0, OEKO-TEX®, tillverkade i vår egen fabrik i Polen.",
+      "h1": "PET-akustikpaneler: rPET Panel, Groove och Flex Groove",
+      "breadcrumb": "rPET",
+      "intro": "PET-akustikpaneler förvandlar konsumentåtervunna flaskor till en tät polyesterfilt som absorberar ljud, kan CNC-skäras som MDF och finns i en färgpalett som arkitekter faktiskt använder. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen); rPET-sortimentet produceras i Częstochowa. Sortimentet består av tre modeller. rPET Panel är den plana skivan: skär, fräs, borra och måla den för väggar, tak och möbler. rPET Groove tillför en spårad yta i 12 färger och tre tjocklekar för högre absorption på väggar och i tak. rPET Flex Groove behåller det spårade utseendet men böjer sig runt pelare och böjda väggar ned till en radie på 500 mm. Alla tre är certifierade enligt OEKO-TEX® Standard 100, uppnår B-s1,d0 eller B-s2,d0 enligt EN 13501-1 och kan återtas för återvinning vid slutet av livscykeln. Använd tabellen nedan för att jämföra PET-akustikpaneler efter format, absorption och leveranstid, och öppna sedan modellsidan för ytor och nedladdningar.",
+      "whyCertsDesc": "Varje rPET-modell är certifierad enligt OEKO-TEX® Standard 100; brandcertifikat (EN 13501-1) finns på modellsidorna.",
+      "applications": {
+        "app1": "Öppna kontorslandskap och callcenter",
+        "app2": "Skolor, hörsalar och bibliotek",
+        "app3": "Restauranger och hotell",
+        "app4": "Väntrum inom vården",
+        "app5": "Butiker, showrooms och mässmontrar",
+        "app6": "Böjda väggar och pelare (Flex Groove)"
+      },
+      "faq": {
+        "q1": {
+          "question": "Är PET-akustikpaneler verkligen tillverkade av återvunna flaskor?",
+          "answer": "Ja. Filten tillverkas av fiber från återvunna PET-flaskor; rPET Groove och rPET Flex Groove består av 100 % återvunnen PET. Varje modell är certifierad enligt OEKO-TEX® Standard 100, så materialet lämpar sig för skolor och vårdmiljöer."
+        },
+        "q2": {
+          "question": "Hur mycket ljud absorberar PET-akustikpaneler?",
+          "answer": "Det beror på tjocklek och montering: rPET Groove når NRC 0.55 (12 mm), 0.75 (24 mm) och 0.90 (36 mm); rPET Panel når upp till αw 1.00 vid montering på ram med luftspalt. Paneler som limmas direkt på väggen absorberar mindre än paneler med en luftspalt bakom."
+        },
+        "q3": {
+          "question": "Vilken brandklass har akustikpaneler av återvunnen PET?",
+          "answer": "rPET Groove och rPET Flex Groove är klassade B-s1,d0 enligt EN 13501-1; produktbladet för rPET Panel anger B-s2,d0. Brandcertifikatet för varje modell finns i dess nedladdningssektion."
+        },
+        "q4": {
+          "question": "Kan jag kapa och måla PET-akustikpaneler på plats?",
+          "answer": "Ja. rPET Panel beter sig som MDF: kapa, fräs, borra och skruva den med standardverktyg och måla den i valfri RAL- eller NCS-färg. De spårade panelerna kapas till rätt mått på plats med ett fintandat blad."
+        },
+        "q5": {
+          "question": "Vad är leveranstiden för PET-akustikpaneler?",
+          "answer": "Lagerfärger skickas inom 2–3 veckor från vår fabrik i Częstochowa; specialfärger tar 5–6 veckor. Stora projekt planeras i produktionsomgångar — be oss om ett bindande leveransdatum innan du beställer."
+        }
+      }
+    },
+    "rwood": {
+      "title": "Akustikpaneler i trä – perforerad & mikroperforerad | Re-Sound",
+      "description": "Akustikpaneler i trä med FSC-faner: spårad (rWood Groove), mikroperforerad (Micro), perforerad (Perf), slät (Panel). αw upp till 0,90, B-s1,d0 FR-kärna.",
+      "h1": "Akustikpaneler i trä med FSC-faner: spårade, perforerade, mikroperforerade, släta",
+      "breadcrumb": "rWood",
+      "intro": "Akustikpaneler i trä ger väggar och tak en yta i äkta träfaner utan att ge avkall på absorptionen. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). rWood-sortimentet omfattar fyra ytor på en och samma konstruktionsprincip: FSC-certifierat träfaner över en akustisk kärna. rWood Groove är den linjära ribbpanelen med ek- och valnötsfaner på filtbaksida (αw 0,90). rWood Micro har 0,5 mm mikroperforeringar borrade genom fanern, så att träet upplevs som en sluten yta samtidigt som panelen absorberar (αw 0,90, B-s1,d0). rWood Perf använder synliga perforeringsmönster med 5 till 8 mm hål, avstämda mellan αw 0,35 och 0,85. rWood Panel är den släta fanerade skivan för ytor där träet, inte akustiken, står i centrum. Åtta faner löper genom hela sortimentet, från Beech White Ash till Tobacco Walnut. Jämför akustikpaneler i trä nedan efter format, absorption, brandklass och leveranstid, och öppna sedan en modellsida för ytbehandlingar och nedladdningar.",
+      "whyCertsDesc": "FSC®-certifierat träfaner på varje rWood-modell; för rWood Panel finns dessutom en EPD tillgänglig på begäran.",
+      "applications": {
+        "app1": "Styrelserum och ledningskontor",
+        "app2": "Auditorier, teatrar och föreläsningssalar",
+        "app3": "Hotellobbyer och restauranger",
+        "app4": "Receptioner och korridorer",
+        "app5": "Bibliotek och kulturbyggnader",
+        "app6": "Bostäder och vardagsrum"
+      },
+      "faq": {
+        "q1": {
+          "question": "Vilken akustikpanel i trä absorberar mest?",
+          "answer": "rWood Groove och rWood Micro når båda αw 0,90 med baksida av filt eller mineralull. rWood Perf ligger mellan αw 0,35 (PH5) och 0,85 (PD8) beroende på perforeringsmönster. rWood Panel är en slät fanerad skiva som väljs för sitt utseende snarare än sin absorption."
+        },
+        "q2": {
+          "question": "Är träfanern på akustikpaneler i trä FSC-certifierad?",
+          "answer": "Ja – varje rWood-modell använder FSC®-certifierat träfaner, och för rWood Panel finns även en EPD tillgänglig på begäran. Spårbarhetsdokumentation (chain of custody) finns för upphandlingar."
+        },
+        "q3": {
+          "question": "Vilken brandklass uppnår akustikpaneler i trä?",
+          "answer": "Med den brandhämmande kärnan är rWood-modellerna klassade B-s1,d0 enligt EN 13501-1; på en standardkärna av MDF är klassningen D-s2. Föreskriv FR-kärnan för utrymningsvägar och offentliga byggnader."
+        },
+        "q4": {
+          "question": "Kan mikroperforerade träpaneler bakgrundsbelysas?",
+          "answer": "Ja – rWood Micro finns med ett bakgrundsbelyst alternativ: 0,5 mm-perforeringarna släpper igenom ljus samtidigt som ytan fortfarande upplevs som massivt trä."
+        },
+        "q5": {
+          "question": "Hur monteras akustikpaneler i trä, och vad är leveranstiden?",
+          "answer": "Alla modeller monteras med ett dolt clipssystem (eller limmas för permanenta installationer); rWood Groove kan även fästas på läkt med not- och spontfogar. Lagerförda faner levereras inom 3–4 veckor; träslag utanför lagersortimentet och specialytor inom 6–8 veckor."
+        }
+      }
+    },
+    "booths": {
+      "title": "Telefonhytter & mötesbås – Solo, Duo, Modular XL | Re-Sound",
+      "description": "Telefonhytter & mötesbås för kontor: Solo Flex (1 pers.), Duo (2 pers.), Modular XL (6–10). ISO 23351-1-talreduktion, tyst ventilation, 230 V, USB-C.",
+      "h1": "Telefonhytter och mötesbås för kontor, byggda i Belgien",
+      "breadcrumb": "Hytter",
+      "intro": "En telefonhytt för kontor ger en person en tyst, ventilerad plats för samtal och videomöten mitt i ett öppet kontorslandskap; ett mötesbås gör detsamma för ett team. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). Hyttsortimentet finns i tre storlekar. Solo Flex är telefonhytten för en person: 1 m² golvyta, höj- och sänkbart bord, 230 V och USB-C, tysta EC-fläktar och en talnivåreduktion på 24 dB(A) uppmätt enligt ISO 23351-1. Duo är den akustiska telefonhytten för två personer med två konfigurationer – Flex för ett samtal med två sittplatser, Work för en person med ett bord i full bredd. Modular XL är det akustiska mötesbåset för sex till tio personer: basenheten förlängs i segment om 90 cm och når 25,9 dB(A) talnivåreduktion. Alla hytter levereras med 5 års garanti på stommen och levereras i hela EU, med installation på begäran. Jämför telefonhytterna för kontor nedan och öppna sedan en modellsida för tillval och nedladdningar.",
+      "whyCertsDesc": "5 års garanti på stommen och 2 års garanti på elektroniken för varje hytt; talnivåreduktion anges enligt ISO 23351-1.",
+      "applications": {
+        "app1": "Öppna kontorslandskap och coworking-ytor",
+        "app2": "Samtal och videomöten på agila arbetsplatser",
+        "app3": "Konfidentiella samtal inom HR, juridik och ekonomi",
+        "app4": "Receptioner och hotell- och restaurangmiljöer",
+        "app5": "Bibliotek och universitet",
+        "app6": "Fokusarbete och mindre teammöten"
+      },
+      "faq": {
+        "q1": {
+          "question": "Hur mycket tystare är en telefonhytt för kontor?",
+          "answer": "Talnivåreduktionen mäts enligt ISO 23351-1: Solo Flex når cirka 24 dB(A) och Modular XL 25,9 dB(A), båda klass C enligt standarden (A+ ≥ 33, A ≥ 30, B ≥ 27, C ≥ 24, D ≥ 21 dB(A)). I ett typiskt öppet kontorslandskap innebär det att ett normalt samtal inte går att uppfatta utanför hytten."
+        },
+        "q2": {
+          "question": "Behöver akustiska telefonhytter en elanslutning?",
+          "answer": "Ja – varje hytt ansluts till ett vanligt 230 V-uttag för belysning, ventilation och uttagen vid bordet (Schuko plus USB-C PD 60 W). Solo Flex förbrukar cirka 80 W i drift."
+        },
+        "q3": {
+          "question": "Hur ventileras en avskild hytt?",
+          "answer": "Tysta EC-fläktar byter luften kontinuerligt – 4,6 m³/min i Solo Flex, 9,2 i Duo och 18,4 i Modular XL-basenheten – styrda av en närvarosensor så att hytten är fräsch när någon kliver in."
+        },
+        "q4": {
+          "question": "Vilket mötesbås rymmer sex personer eller fler?",
+          "answer": "Modular XL: basenheten rymmer sex personer och varje segment om 90 cm ökar kapaciteten upp till tio, med förberedelse för A/V och en tillgänglighetsanpassad entré."
+        },
+        "q5": {
+          "question": "Vad är leveranstiden och garantin för en telefonhytt?",
+          "answer": "Solo Flex och Duo levereras 4–6 veckor efter beställning, Modular XL 6–8 veckor för basenheten; specialtyger lägger till 2–3 veckor. Garantin på stommen är 5 år, på elektroniken 2 år, med leverans och installation i hela EU."
+        }
+      }
+    }
   }
 }
