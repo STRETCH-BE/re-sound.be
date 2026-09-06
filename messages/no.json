@@ -53,7 +53,10 @@
     "cta": "Be om tilbud",
     "faq": "FAQ",
     "whereToBuy": "Hvor kjøper jeg",
-    "partner": "Partner"
+    "partner": "Partner",
+    "rangeRpet": "PET-akustikkpaneler",
+    "rangeRwood": "Akustikkpaneler i tre",
+    "rangeBooths": "Akustiske telefonbokser"
   },
   "hero": {
     "rwood": {
@@ -921,7 +924,8 @@
     },
     "related": {
       "tag": "OGSÅ I SERIEN",
-      "title": "Andre modeller i serien"
+      "title": "Andre modeller i serien",
+      "rangeLink": "Se hele {range}-serien"
     }
   },
   "interiorPage": {

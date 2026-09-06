@@ -25,6 +25,8 @@ const colorOptions = [
  * configurator and the sticky nav need client JavaScript.
  */
 export interface SolidProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: ReactNode;
   downloads: ReactNode;
   gallery?: ReactNode;
@@ -32,7 +34,7 @@ export interface SolidProductPageSlots {
   otherModels: ReactNode;
 }
 
-export default function SolidProductPage({ specs, downloads, gallery, faq, otherModels }: SolidProductPageSlots) {
+export default function SolidProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: SolidProductPageSlots) {
   const t = useTranslations('solidPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -83,6 +85,7 @@ export default function SolidProductPage({ specs, downloads, gallery, faq, other
     <div className="solid-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{tPage('tags.acousticWallPanels')}</span>
           <h1>{t('hero.title')}</h1>

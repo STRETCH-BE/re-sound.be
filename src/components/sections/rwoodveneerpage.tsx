@@ -54,6 +54,8 @@ const defaultHeroImage = '/images/products/rwood-veneer/hero-rwood-veneer.webp';
  * this client component, so they are excluded from the hydration bundle.
  */
 export interface RWoodPanelProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -61,7 +63,7 @@ export interface RWoodPanelProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function RWoodPanelProductPage({ specs, downloads, gallery, faq, otherModels }: RWoodPanelProductPageSlots) {
+export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: RWoodPanelProductPageSlots) {
   const t = useTranslations('rwoodVeneerPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -135,6 +137,7 @@ export default function RWoodPanelProductPage({ specs, downloads, gallery, faq, 
           HERO SECTION
           ═══════════════════════════════════ */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

@@ -40,6 +40,8 @@ const defaultHeroImage = '/images/products/rwood-groove/hero-rWood-Groove.webp';
  * models are plain HTML with no hydration cost.
  */
 export interface RWoodGrooveProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -47,7 +49,7 @@ export interface RWoodGrooveProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function RWoodGrooveProductPage({ specs, downloads, gallery, faq, otherModels }: RWoodGrooveProductPageSlots) {
+export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: RWoodGrooveProductPageSlots) {
   const t = useTranslations('rwoodGroovePage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -106,6 +108,7 @@ export default function RWoodGrooveProductPage({ specs, downloads, gallery, faq,
     <div className="rwood-groove-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

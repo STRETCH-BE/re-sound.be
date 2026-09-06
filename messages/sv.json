@@ -53,7 +53,10 @@
     "cta": "Begär offert",
     "faq": "FAQ",
     "whereToBuy": "Var köper jag",
-    "partner": "Partner"
+    "partner": "Partner",
+    "rangeRpet": "PET-akustikpaneler",
+    "rangeRwood": "Akustikpaneler i trä",
+    "rangeBooths": "Akustiska telefonhytter"
   },
   "hero": {
     "rwood": {
@@ -921,7 +924,8 @@
     },
     "related": {
       "tag": "OCKSÅ I SERIEN",
-      "title": "Andra modeller i serien"
+      "title": "Andra modeller i serien",
+      "rangeLink": "Se hela {range}-serien"
     }
   },
   "interiorPage": {

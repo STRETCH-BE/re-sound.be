@@ -42,6 +42,8 @@ const pct: string = PRODUCTS['rpet-panel'].recycledContentPct === null
  * gallery, FAQ and other models are plain HTML with no hydration cost.
  */
 export interface RPETPanelProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -49,7 +51,7 @@ export interface RPETPanelProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function RPETPanelProductPage({ specs, downloads, gallery, faq, otherModels }: RPETPanelProductPageSlots) {
+export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: RPETPanelProductPageSlots) {
   const t = useTranslations('rpetPanelPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -128,6 +130,7 @@ export default function RPETPanelProductPage({ specs, downloads, gallery, faq, o
     <div className="rpet-panel-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

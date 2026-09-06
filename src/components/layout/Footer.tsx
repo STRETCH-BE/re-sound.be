@@ -1,14 +1,22 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { openConsentBanner } from '@/lib/consent';
 import { SOCIAL_LINKS } from '@/config/site';
+import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
   const tm = useTranslations('manufacturer');
+  const locale = useLocale();
+
+  // Range hubs (localised slugs) — the same three links as the nav dropdown.
+  const rangeLinks = HUB_IDS.map((id) => ({
+    href: hubPath(HUBS[id], locale),
+    label: tNav(`range${id.charAt(0).toUpperCase()}${id.slice(1)}`),
+  }));
 
   // Product names are brand identifiers and stay untranslated (per brand guidelines).
   // Order: textile family, rWood family, rPET family, then booth range.
@@ -107,6 +115,13 @@ export default function Footer() {
         {/* Products Column */}
         <div className="footer-column footer-column--products">
           <h4>{t('products')}</h4>
+          <ul className="footer-links footer-links--ranges">
+            {rangeLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} prefetch={false}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
           <ul className="footer-links footer-links--multi">
             {productLinks.map((link) => (
               <li key={link.href}>
@@ -166,6 +181,15 @@ export default function Footer() {
       </div>
 
       <style jsx>{`
+        .footer-links--ranges {
+          margin-bottom: 0.9rem;
+          padding-bottom: 0.9rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-links--ranges :global(a) {
+          font-weight: 600;
+        }
         footer {
           background: var(--charcoal);
           color: white;

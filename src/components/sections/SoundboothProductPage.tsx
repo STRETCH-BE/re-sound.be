@@ -48,6 +48,8 @@ export interface BoothStat {
 
 /** Server-rendered sections handed to the client template as React nodes. */
 export interface BoothSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   faq: React.ReactNode;
@@ -77,6 +79,7 @@ export interface SoundboothProductPageProps extends BoothSlots {
 
 export default function SoundboothProductPage(props: SoundboothProductPageProps) {
   const {
+    breadcrumbs,
     slug,
     namespace,
     imageDir,
@@ -133,6 +136,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     <div className="booth-product-page">
       {/* ========== HERO ========== */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

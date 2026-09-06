@@ -53,7 +53,10 @@
     "cta": "Biðja um tilboð",
     "faq": "FAQ",
     "whereToBuy": "Hvar kaupa",
-    "partner": "Samstarf"
+    "partner": "Samstarf",
+    "rangeRpet": "PET hljóðdeyfiplötur",
+    "rangeRwood": "Hljóðdeyfiplötur úr viði",
+    "rangeBooths": "Hljóðeinangraðir símaklefar"
   },
   "hero": {
     "rwood": {
@@ -921,7 +924,8 @@
     },
     "related": {
       "tag": "EINNIG Í LÍNUNNI",
-      "title": "Aðrar gerðir í þessari línu"
+      "title": "Aðrar gerðir í þessari línu",
+      "rangeLink": "Sjá alla {range} línuna"
     }
   },
   "interiorPage": {

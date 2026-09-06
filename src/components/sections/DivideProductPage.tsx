@@ -23,6 +23,8 @@ const colorOptions = [
  * gallery, FAQ and "other models" no longer live in this client component.
  */
 export interface DivideProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -30,7 +32,7 @@ export interface DivideProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function DivideProductPage({ specs, downloads, gallery, faq, otherModels }: DivideProductPageSlots) {
+export default function DivideProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: DivideProductPageSlots) {
   const t = useTranslations('dividePage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -82,6 +84,7 @@ export default function DivideProductPage({ specs, downloads, gallery, faq, othe
     <div className="divide-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

@@ -43,6 +43,8 @@ const defaultHeroImage = '/images/products/rwood-micro/hero-rwood-micro.webp';
  * models are plain HTML with no hydration cost.
  */
 export interface RWoodMicroProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -50,7 +52,7 @@ export interface RWoodMicroProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function RWoodMicroProductPage({ specs, downloads, gallery, faq, otherModels }: RWoodMicroProductPageSlots) {
+export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: RWoodMicroProductPageSlots) {
   const t = useTranslations('rwoodMicroPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -109,6 +111,7 @@ export default function RWoodMicroProductPage({ specs, downloads, gallery, faq, 
     <div className="rwood-micro-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

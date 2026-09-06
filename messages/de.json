@@ -53,7 +53,10 @@
     "cta": "Angebot Anfordern",
     "faq": "FAQ",
     "whereToBuy": "Bezugsquellen",
-    "partner": "Partner"
+    "partner": "Partner",
+    "rangeRpet": "PET-Akustikpaneele",
+    "rangeRwood": "Holz-Akustikpaneele",
+    "rangeBooths": "Akustik-Telefonboxen"
   },
   "hero": {
     "circular": {
@@ -921,7 +924,8 @@
     },
     "related": {
       "tag": "AUCH IN DIESER SERIE",
-      "title": "Weitere Modelle dieser Serie"
+      "title": "Weitere Modelle dieser Serie",
+      "rangeLink": "Die ganze {range}-Reihe ansehen"
     }
   },
   "interiorPage": {

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { locales, localeNames, localeFlags, type Locale } from '@/i18n/config';
+import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
 import { analytics } from '@/lib/analytics';
 
 // Build the display list from config so adding a language only requires config.ts
@@ -47,7 +48,10 @@ export default function LanguageSwitcher() {
     // event otherwise, and locale switches are a key conversion signal
     // (which language do paying B2B leads actually come from?).
     analytics.languageSwitch(locale, newLocale, pathname);
-    router.replace(pathname, { locale: newLocale });
+    // Range hubs have a different slug per locale: translate the path
+    // instead of reusing the current one (which would 404 elsewhere).
+    const hub = HUB_IDS.map((id) => HUBS[id]).find((h) => hubPath(h, locale) === pathname);
+    router.replace(hub ? hubPath(hub, newLocale) : pathname, { locale: newLocale });
     setIsOpen(false);
   };
 

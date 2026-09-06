@@ -40,6 +40,8 @@ const defaultHeroImage = '/images/products/rpet-groove/gallery-1.jpg';
  * models are plain HTML with no hydration cost.
  */
 export interface RPetGrooveProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -47,7 +49,7 @@ export interface RPetGrooveProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function RPetGrooveProductPage({ specs, downloads, gallery, faq, otherModels }: RPetGrooveProductPageSlots) {
+export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: RPetGrooveProductPageSlots) {
   const t = useTranslations('rpetGroovePage');
   // Renders description2 below description only when distinct (handles the
   // pre-existing data state where some locales have the same content in both
@@ -120,6 +122,7 @@ export default function RPetGrooveProductPage({ specs, downloads, gallery, faq, 
     <div className="rpet-groove-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

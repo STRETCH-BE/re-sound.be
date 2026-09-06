@@ -53,7 +53,10 @@
     "cta": "Request Quote",
     "faq": "FAQ",
     "partner": "Partner",
-    "whereToBuy": "Where to buy"
+    "whereToBuy": "Where to buy",
+    "rangeRpet": "PET acoustic panels",
+    "rangeRwood": "Wood acoustic panels",
+    "rangeBooths": "Acoustic phone booths"
   },
   "hero": {
     "rwood": {
@@ -921,7 +924,8 @@
     },
     "related": {
       "tag": "ALSO IN THE RANGE",
-      "title": "Other models in this range"
+      "title": "Other models in this range",
+      "rangeLink": "See the whole {range} range"
     }
   },
   "interiorPage": {
@@ -3671,5 +3675,238 @@
     "ownFactories": "Made in our own factories",
     "ownFactoriesShort": "Own factories",
     "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+  },
+  "productData": {
+    "category": {
+      "textile": "Acoustic textile panels",
+      "rwood": "Acoustic wood panels",
+      "rpet": "Acoustic PET panels",
+      "booth": "Office phone booths and meeting pods"
+    },
+    "familyName": {
+      "textile": "Textile",
+      "rwood": "rWood",
+      "rpet": "rPET",
+      "booth": "Booths"
+    },
+    "interior": {
+      "mounting": "Hidden wall rail system",
+      "leadTime": "1–2 weeks (stock colours), 3–4 weeks custom"
+    },
+    "solid": {
+      "mounting": "Concealed hook rail",
+      "leadTime": "1–2 weeks (stock colours), 3–4 weeks custom"
+    },
+    "divide": {
+      "mounting": "Freestanding, magnetic modular connection",
+      "leadTime": "1–2 weeks (stock colours), 3–4 weeks custom"
+    },
+    "rwood-groove": {
+      "mounting": "Battens or adhesive, tongue & groove joints",
+      "leadTime": "3–4 weeks (stock veneers), 6–8 weeks custom"
+    },
+    "rwood-micro": {
+      "mounting": "Concealed clip system or glue-fixing",
+      "leadTime": "3–4 weeks (stock veneers), 6–8 weeks custom"
+    },
+    "rwood-perf": {
+      "mounting": "Concealed clip system or glue-fixing",
+      "leadTime": "3–4 weeks (stock veneers), 6–8 weeks custom"
+    },
+    "rwood-veneer": {
+      "mounting": "Concealed clip system or glue-fixing",
+      "leadTime": "3–4 weeks (stock veneers), 6–8 weeks custom"
+    },
+    "rpet-panel": {
+      "mounting": "Direct screw fixing or adhesive, no pre-drilling",
+      "leadTime": "2–3 weeks (stock colours), 5–6 weeks custom"
+    },
+    "rpet-groove": {
+      "mounting": "Adhesive, Z-clips, screws or battens",
+      "leadTime": "2–3 weeks (stock colours), 5–6 weeks custom"
+    },
+    "rpet-flex-groove": {
+      "mounting": "Adhesive mounting on curved substrates",
+      "leadTime": "2–3 weeks (stock colours), 5–6 weeks custom"
+    },
+    "solo-flex": {
+      "mounting": "Freestanding, delivered assembled",
+      "leadTime": "4–6 weeks from order"
+    },
+    "duo": {
+      "mounting": "Freestanding, delivered assembled",
+      "leadTime": "4–6 weeks from order"
+    },
+    "modular-xl": {
+      "mounting": "Freestanding, assembled on site",
+      "leadTime": "6–8 weeks from order (base unit)"
+    }
+  },
+  "hubs": {
+    "shared": {
+      "breadcrumbHome": "Home",
+      "modelsTag": "THE MODELS",
+      "modelsTitle": "Choose your model",
+      "viewModel": "View model",
+      "tableTag": "COMPARE",
+      "tableTitle": "Compare the models",
+      "tableNote": "Values as published on the model pages; measured values are quoted with their test standard.",
+      "col": {
+        "model": "Model",
+        "format": "Format",
+        "thickness": "Thickness",
+        "alphaW": "αw (ISO 11654)",
+        "nrc": "NRC (ASTM C423)",
+        "fireClass": "Fire class (EN 13501-1)",
+        "recycled": "Recycled content",
+        "finishes": "Finishes / colours",
+        "mounting": "Mounting",
+        "leadTime": "Lead time",
+        "fromPrice": "From price (excl. VAT)",
+        "capacity": "Capacity",
+        "footprint": "Footprint",
+        "dimensions": "External dimensions (W × D × H)",
+        "speech": "Speech level reduction (ISO 23351-1)",
+        "isoClass": "ISO 23351-1 class",
+        "ventilation": "Ventilation",
+        "power": "Power",
+        "weight": "Weight"
+      },
+      "finishesValue": "{count} finishes",
+      "coloursValue": "{count} colours",
+      "notAvailable": "—",
+      "fromPriceValue": "from €{price} {unit}",
+      "placeholderPrice": "price on request",
+      "isoClassNote": "ISO 23351-1 class thresholds: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
+      "whyTag": "WHY RE-SOUND",
+      "whyTitle": "Why Re-Sound",
+      "whyOwnFactoriesTitle": "Our own factories",
+      "whyTakeBackTitle": "Free take-back programme",
+      "whyTakeBackDesc": "At end of life we collect the panels and process them back into raw material — free of charge within Belgium, at logistics cost elsewhere in the EU.",
+      "whyCertsTitle": "Certified where it counts",
+      "applicationsTag": "APPLICATIONS",
+      "applicationsTitle": "Where they are used",
+      "faqTag": "FAQ",
+      "faqTitle": "Frequently asked questions",
+      "ctaTag": "NEXT STEP",
+      "ctaTitle": "See and feel the material",
+      "ctaText": "Order a free sample kit or send us your drawings for a quote — our team answers within one working day.",
+      "ctaSampleKit": "Order a sample kit",
+      "ctaQuote": "Request a quote"
+    },
+    "rpet": {
+      "title": "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound",
+      "description": "PET acoustic panels made from recycled bottles: rPET Panel, Groove and Flex Groove. 12–16 colours, B-s1,d0, OEKO-TEX®, made in our own plant in Poland.",
+      "h1": "PET acoustic panels: rPET Panel, Groove and Flex Groove",
+      "breadcrumb": "rPET",
+      "intro": "PET acoustic panels turn post-consumer bottles into a dense polyester felt that absorbs sound, takes a CNC cutter like MDF and comes in a colour palette architects actually use. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland); the rPET range is produced in Częstochowa. The range has three models. rPET Panel is the flat sheet: cut it, mill it, drill it and paint it for walls, ceilings and furniture. rPET Groove adds a grooved surface in 12 colours and three thicknesses for higher absorption on walls and ceilings. rPET Flex Groove keeps the grooved look but bends around columns and curved walls down to a 500 mm radius. All three are OEKO-TEX® Standard 100 certified, reach B-s1,d0 or B-s2,d0 under EN 13501-1 and can be taken back for recycling at end of life. Use the table below to compare PET acoustic panels by format, absorption and lead time, then open the model page for finishes and downloads.",
+      "whyCertsDesc": "Every rPET model is OEKO-TEX® Standard 100 certified; fire certificates (EN 13501-1) are on the model pages.",
+      "applications": {
+        "app1": "Open-plan offices and call centres",
+        "app2": "Schools, lecture halls and libraries",
+        "app3": "Restaurants and hospitality",
+        "app4": "Healthcare waiting areas",
+        "app5": "Retail, showrooms and exhibition stands",
+        "app6": "Curved walls and columns (Flex Groove)"
+      },
+      "faq": {
+        "q1": {
+          "question": "Are PET acoustic panels really made from recycled bottles?",
+          "answer": "Yes. The felt is made from recycled PET bottle fibre; rPET Groove and rPET Flex Groove are 100 % recycled PET. Every model is OEKO-TEX® Standard 100 certified, so the material is suitable for schools and healthcare."
+        },
+        "q2": {
+          "question": "How much sound do PET acoustic panels absorb?",
+          "answer": "It depends on thickness and mounting: rPET Groove reaches NRC 0.55 (12 mm), 0.75 (24 mm) and 0.90 (36 mm); rPET Panel reaches up to αw 1.00 when mounted on a frame with an air cavity. Panels glued directly to the wall absorb less than panels with a cavity behind them."
+        },
+        "q3": {
+          "question": "What fire class do recycled PET acoustic panels have?",
+          "answer": "rPET Groove and rPET Flex Groove are classified B-s1,d0 under EN 13501-1; the rPET Panel spec sheet states B-s2,d0. The fire certificate for each model is on its downloads block."
+        },
+        "q4": {
+          "question": "Can I cut and paint PET acoustic panels on site?",
+          "answer": "Yes. rPET Panel behaves like MDF: cut, mill, drill and screw it with standard tools, and paint it in any RAL or NCS colour. The grooved panels are cut to size on site with a fine-tooth blade."
+        },
+        "q5": {
+          "question": "What is the lead time for PET acoustic panels?",
+          "answer": "Stock colours ship in 2–3 weeks from our Częstochowa plant; custom colours take 5–6 weeks. Large projects are scheduled in production batches — ask us for a binding date before you order."
+        }
+      }
+    },
+    "rwood": {
+      "title": "Wood Acoustic Panels — Veneer, Perforated & Micro-perforated | Re-Sound",
+      "description": "Wood acoustic panels in FSC-certified veneer: grooved (rWood Groove), micro-perforated (Micro), perforated (Perf) and smooth (Panel). αw up to 0.90, B-s1,d0 FR core.",
+      "h1": "Wood acoustic panels in FSC veneer: grooved, perforated, micro-perforated, smooth",
+      "breadcrumb": "rWood",
+      "intro": "Wood acoustic panels bring a real veneer surface to walls and ceilings without giving up absorption. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The rWood range covers four surfaces on one construction principle: an FSC-certified veneer over an acoustic core. rWood Groove is the linear slat look with oak and walnut veneers on a felt backing (αw 0.90). rWood Micro drills 0.5 mm micro-perforations through the veneer, so the wood reads as a closed surface while the panel absorbs (αw 0.90, B-s1,d0). rWood Perf uses visible perforation patterns with 5 to 8 mm holes, tuned between αw 0.35 and 0.85. rWood Panel is the smooth veneered sheet for areas where the wood, not the acoustics, leads. Eight veneers run across the range, from Beech White Ash to Tobacco Walnut. Compare wood acoustic panels below by format, absorption, fire class and lead time, then open a model page for finishes and downloads.",
+      "whyCertsDesc": "FSC®-certified veneer on every rWood model; rWood Panel additionally has an EPD available on request.",
+      "applications": {
+        "app1": "Boardrooms and executive offices",
+        "app2": "Auditoria, theatres and lecture halls",
+        "app3": "Hotel lobbies and restaurants",
+        "app4": "Reception areas and corridors",
+        "app5": "Libraries and cultural buildings",
+        "app6": "Residential living spaces"
+      },
+      "faq": {
+        "q1": {
+          "question": "Which wood acoustic panel absorbs the most?",
+          "answer": "rWood Groove and rWood Micro both reach αw 0.90 with a felt or mineral-wool backing. rWood Perf ranges from αw 0.35 (PH5) to 0.85 (PD8) depending on the perforation pattern. rWood Panel is a smooth veneered board chosen for its look rather than its absorption."
+        },
+        "q2": {
+          "question": "Is the veneer on wood acoustic panels FSC-certified?",
+          "answer": "Yes — every rWood model uses FSC®-certified veneer, and rWood Panel also has an EPD available on request. Chain-of-custody documentation is available for tenders."
+        },
+        "q3": {
+          "question": "What fire class do wood acoustic panels achieve?",
+          "answer": "With the fire-retardant core the rWood models are classified B-s1,d0 under EN 13501-1; on a standard MDF core the classification is D-s2. Specify the FR core for escape routes and public buildings."
+        },
+        "q4": {
+          "question": "Can micro-perforated wood panels be backlit?",
+          "answer": "Yes — rWood Micro is available with a backlit option: the 0.5 mm perforations let light through while the surface still reads as solid wood."
+        },
+        "q5": {
+          "question": "How are wood acoustic panels mounted, and what is the lead time?",
+          "answer": "All models mount on a concealed clip system (or glue-fixing for permanent installations); rWood Groove can also be fixed to battens with tongue-and-groove joints. Stock veneers ship in 3–4 weeks; non-stock species and custom finishes in 6–8 weeks."
+        }
+      }
+    },
+    "booths": {
+      "title": "Acoustic Phone Booths & Office Pods — Solo, Duo, Modular XL | Re-Sound",
+      "description": "Office phone booths and meeting pods: Solo Flex (1 person), Duo (2 persons), Modular XL (6–10). ISO 23351-1 speech reduction, silent ventilation, 230 V, USB-C.",
+      "h1": "Office phone booths and meeting pods, built in Belgium",
+      "breadcrumb": "Booths",
+      "intro": "An office phone booth gives one person a quiet, ventilated place for calls and video meetings inside an open-plan floor; a meeting pod does the same for a team. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The booth range has three sizes. Solo Flex is the one-person office phone booth: a 1 m² footprint, a sit-stand desk, 230 V and USB-C power, silent EC fans and a 24 dB(A) speech level reduction measured under ISO 23351-1. Duo is the two-person acoustic phone booth with two configurations — Flex for a two-seat conversation, Work for one person with a full-width desk. Modular XL is the acoustic meeting pod for six to ten people: the base unit extends in 90 cm segments and reaches 25.9 dB(A) speech level reduction. All booths come with a 5-year structural warranty and are delivered EU-wide, installation included on request. Compare the office phone booths below, then open a model page for add-ons and downloads.",
+      "whyCertsDesc": "5-year structural warranty and 2-year electronics warranty on every booth; speech level reduction quoted per ISO 23351-1.",
+      "applications": {
+        "app1": "Open-plan offices and coworking floors",
+        "app2": "Call and video meetings in agile workplaces",
+        "app3": "Confidential conversations in HR, legal and finance",
+        "app4": "Reception and hospitality areas",
+        "app5": "Libraries and universities",
+        "app6": "Focus work and small team meetings"
+      },
+      "faq": {
+        "q1": {
+          "question": "How much quieter is an office phone booth?",
+          "answer": "Speech level reduction is measured under ISO 23351-1: Solo Flex reaches about 24 dB(A) and Modular XL 25.9 dB(A), both Class C under the standard (A+ ≥ 33, A ≥ 30, B ≥ 27, C ≥ 24, D ≥ 21 dB(A)). In a typical open-plan office that keeps a normal call from being intelligible outside the booth."
+        },
+        "q2": {
+          "question": "Do acoustic phone booths need a power connection?",
+          "answer": "Yes — each booth plugs into a standard 230 V socket for lighting, ventilation and the desk outlets (Schuko plus USB-C PD 60 W). Solo Flex draws about 80 W in use."
+        },
+        "q3": {
+          "question": "How is a privacy pod ventilated?",
+          "answer": "Silent EC fans exchange the air continuously — 4.6 m³/min in Solo Flex, 9.2 in Duo and 18.4 in the Modular XL base unit — controlled by an occupancy sensor so the booth is fresh when someone walks in."
+        },
+        "q4": {
+          "question": "Which meeting pod fits six people or more?",
+          "answer": "Modular XL: the base unit seats six and each 90 cm segment adds capacity up to ten, with A/V provisions and an accessible entry."
+        },
+        "q5": {
+          "question": "What are the lead time and warranty for a phone booth?",
+          "answer": "Solo Flex and Duo ship 4–6 weeks from order, Modular XL 6–8 weeks for the base unit; custom fabrics add 2–3 weeks. The structural warranty is 5 years, electronics 2 years, with EU-wide delivery and installation available."
+        }
+      }
+    }
   }
 }

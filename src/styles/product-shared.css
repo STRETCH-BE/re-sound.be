@@ -649,3 +649,24 @@
     left: 1.5rem;
   }
 }
+
+/* Positioning context for the breadcrumb overlay on every product hero. */
+.product-hero {
+  position: relative;
+}
+
+/* "See the whole range" link under the sibling cards */
+.ps-related-range {
+  margin: 1.5rem 0 0;
+  text-align: center;
+}
+
+.ps-related-range a {
+  color: var(--brand-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ps-related-range a:hover {
+  text-decoration: underline;
+}

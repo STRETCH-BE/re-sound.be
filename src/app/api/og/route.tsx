@@ -78,6 +78,9 @@ const FAMILY_BG: Record<ProductMeta['family'], string> = {
 const PAGE_TITLES: Record<string, string> = {
   home: 'Acoustics Made Circular',
   products: 'Circular Acoustic Panels',
+  'hub-rpet': 'PET Acoustic Panels',
+  'hub-rwood': 'Wood Acoustic Panels',
+  'hub-booths': 'Office Phone Booths',
   about: 'About Re-Sound',
   sustainability: 'Circular by Design',
   contact: 'Get in Touch',

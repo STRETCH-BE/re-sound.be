@@ -2,11 +2,14 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { Link } from '@/i18n/navigation';
+import { hubForFamily, hubPath } from '@/data/hubs';
 import { FAMILY_PRODUCTS, PRODUCTS } from '@/data/products';
 
 interface OtherModelsProps {
   /** Current product — its siblings in the same family are listed */
   slug: string;
+  /** Routing locale, needed for the localised range-hub link */
+  locale: string;
 }
 
 /**
@@ -16,10 +19,12 @@ interface OtherModelsProps {
  * rPET / booths), using the card image from product data and the short
  * blurb from the `products` namespace.
  */
-export default async function OtherModels({ slug }: OtherModelsProps) {
+export default async function OtherModels({ slug, locale }: OtherModelsProps) {
   const t = await getTranslations('productPage.related');
   const tProducts = await getTranslations('products');
+  const tNav = await getTranslations('nav');
   const product = PRODUCTS[slug];
+  const hub = hubForFamily(product.family);
   const siblings = FAMILY_PRODUCTS[product.family].filter((s) => s !== slug);
   if (siblings.length === 0) return null;
 
@@ -55,6 +60,14 @@ export default async function OtherModels({ slug }: OtherModelsProps) {
           );
         })}
       </ul>
+
+      {hub && (
+        <p className="ps-related-range">
+          <Link href={hubPath(hub, locale)} prefetch={false}>
+            {t('rangeLink', { range: tNav(`range${hub.id.charAt(0).toUpperCase()}${hub.id.slice(1)}`) })} →
+          </Link>
+        </p>
+      )}
     </section>
   );
 }

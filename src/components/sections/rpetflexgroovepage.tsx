@@ -40,6 +40,8 @@ const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
  * FAQ and other models are plain HTML with no hydration cost.
  */
 export interface RPETFlexGrooveProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
   downloads: React.ReactNode;
   gallery?: React.ReactNode;
@@ -47,7 +49,7 @@ export interface RPETFlexGrooveProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function RPETFlexGrooveProductPage({ specs, downloads, faq, otherModels }: RPETFlexGrooveProductPageSlots) {
+export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, downloads, faq, otherModels }: RPETFlexGrooveProductPageSlots) {
   const t = useTranslations('rpetFlexGroovePage');
   // Renders description2 below description only when distinct (handles the
   // pre-existing data state where some locales have the same content in both
@@ -115,6 +117,7 @@ export default function RPETFlexGrooveProductPage({ specs, downloads, faq, other
     <div className="rpet-flex-groove-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>

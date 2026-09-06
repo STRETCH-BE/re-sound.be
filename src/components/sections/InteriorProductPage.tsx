@@ -25,6 +25,8 @@ const colorOptions = [
  * sticky navigation.
  */
 export interface InteriorProductPageSlots {
+  /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
+  breadcrumbs?: React.ReactNode;
   specs: ReactNode;
   downloads: ReactNode;
   gallery?: ReactNode;
@@ -32,7 +34,7 @@ export interface InteriorProductPageSlots {
   otherModels: ReactNode;
 }
 
-export default function InteriorProductPage({ specs, downloads, gallery, faq, otherModels }: InteriorProductPageSlots) {
+export default function InteriorProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: InteriorProductPageSlots) {
   const t = useTranslations('interiorPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -83,6 +85,7 @@ export default function InteriorProductPage({ specs, downloads, gallery, faq, ot
     <div className="interior-product-page">
       {/* Hero Section */}
       <section className="product-hero">
+        {breadcrumbs}
         <div className="hero-content">
           <span className="product-tag">{tPage('tags.acousticWallPanels')}</span>
           <h1>{t('hero.title')}</h1>

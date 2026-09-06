@@ -53,7 +53,10 @@
     "cta": "Solicitar Presupuesto",
     "faq": "FAQ",
     "whereToBuy": "Onde comprar",
-    "partner": "Parceiros"
+    "partner": "Parceiros",
+    "rangeRpet": "Painéis acústicos em PET",
+    "rangeRwood": "Painéis acústicos em madeira",
+    "rangeBooths": "Cabines acústicas"
   },
   "hero": {
     "rwood": {
@@ -921,7 +924,8 @@
     },
     "related": {
       "tag": "TAMBÉM NA GAMA",
-      "title": "Outros modelos da gama"
+      "title": "Outros modelos da gama",
+      "rangeLink": "Ver toda a gama {range}"
     }
   },
   "interiorPage": {

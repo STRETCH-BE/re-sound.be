@@ -8,7 +8,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  navLinks: { href: string; label: string }[];
+  navLinks: { href: string; label: string; children?: { href: string; label: string }[] }[];
 }
 
 export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
@@ -31,16 +31,27 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
       aria-hidden={!isOpen}
     >
       {navLinks.map((link, index) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          prefetch={false}
-          className="mobile-nav-link"
-          onClick={onClose}
-          style={{ animationDelay: `${index * 0.1}s` }}
-        >
-          {link.label}
-        </Link>
+        <div key={link.href} className="mobile-nav-group" style={{ animationDelay: `${index * 0.1}s` }}>
+          <Link
+            href={link.href}
+            prefetch={false}
+            className="mobile-nav-link"
+            onClick={onClose}
+          >
+            {link.label}
+          </Link>
+          {link.children && (
+            <ul className="mobile-nav-sub">
+              {link.children.map((child) => (
+                <li key={child.href}>
+                  <Link href={child.href} prefetch={false} onClick={onClose}>
+                    {child.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       ))}
 
       <div className="mobile-nav-actions">
@@ -51,6 +62,28 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
       </div>
 
       <style jsx>{`
+        .mobile-nav-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.6rem;
+        }
+
+        .mobile-nav-sub {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.4rem;
+        }
+
+        .mobile-nav-sub :global(a) {
+          font-size: 1rem;
+          color: var(--text-secondary, #555);
+          text-decoration: none;
+        }
         .mobile-nav {
           display: none;
           position: fixed;

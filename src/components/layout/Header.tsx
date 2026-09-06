@@ -1,20 +1,29 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
+import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const t = useTranslations('nav');
+  const tFooter = useTranslations('footer');
+  const locale = useLocale();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // The three range hubs (localised slugs) shown under "Products".
+  const rangeLinks = HUB_IDS.map((id) => ({
+    href: hubPath(HUBS[id], locale),
+    label: t(`range${id.charAt(0).toUpperCase()}${id.slice(1)}`),
+  }));
+
   // Navigation links
   const navLinks = [
-    { href: '/products', label: t('products') },
+    { href: '/products', label: t('products'), children: [...rangeLinks, { href: '/products', label: tFooter('allProducts') }] },
     { href: '/about', label: t('about') },
     { href: '/sustainability', label: t('sustainability') },
     { href: '/where-to-buy', label: t('whereToBuy') },
@@ -60,13 +69,25 @@ export default function Header() {
         {/* Desktop Navigation */}
         <ul className="nav-links">
           {navLinks.map((link) => (
-            <li key={link.href}>
+            <li key={link.href} className={link.children ? 'has-dropdown' : ''}>
               <Link
                 href={link.href}
                 className={pathname === link.href ? 'active' : ''}
+                aria-haspopup={link.children ? 'true' : undefined}
               >
                 {link.label}
               </Link>
+              {link.children && (
+                <ul className="nav-dropdown" aria-label={link.label}>
+                  {link.children.map((child) => (
+                    <li key={child.href}>
+                      <Link href={child.href} prefetch={false} className={pathname === child.href ? 'active' : ''}>
+                        {child.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
@@ -101,6 +122,51 @@ export default function Header() {
       />
 
       <style jsx>{`
+        .has-dropdown {
+          position: relative;
+        }
+
+        .nav-dropdown {
+          position: absolute;
+          top: 100%;
+          left: -0.75rem;
+          min-width: 15rem;
+          margin: 0;
+          padding: 0.6rem 0;
+          list-style: none;
+          background: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          border-radius: 12px;
+          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(6px);
+          transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+        }
+
+        .has-dropdown:hover .nav-dropdown,
+        .has-dropdown:focus-within .nav-dropdown {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+
+        .nav-dropdown li {
+          display: block;
+        }
+
+        .nav-dropdown :global(a) {
+          display: block;
+          padding: 0.5rem 1.1rem;
+          font-size: 0.9rem;
+          white-space: nowrap;
+        }
+
+        .nav-dropdown li:last-child {
+          margin-top: 0.3rem;
+          border-top: 1px solid rgba(0, 0, 0, 0.06);
+          padding-top: 0.3rem;
+        }
         .nav {
           position: fixed;
           top: 0;

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import ProductCard from './ProductCard';
 
 // ============================================
@@ -163,11 +164,23 @@ const products = [
   },
 ];
 
-interface ProductsGridProps {
-  showAll?: boolean;
+export interface ProductGroup {
+  id: string;
+  /** Localised range name, e.g. "PET acoustic panels" */
+  title: string;
+  /** Range hub path (locale-specific slug) or null for ranges without a hub */
+  href: string | null;
+  /** Product slugs in catalogue order */
+  slugs: string[];
 }
 
-export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
+interface ProductsGridProps {
+  showAll?: boolean;
+  /** When given, the unfiltered view is grouped under these range headings */
+  groups?: ProductGroup[];
+}
+
+export default function ProductsGrid({ showAll = false, groups }: ProductsGridProps) {
   const t = useTranslations('products');
 
   // Active filters state: { use: [], finish: ['textile'], type: [] }
@@ -274,7 +287,22 @@ export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
         </span>
       </div>
 
-      {/* Products Grid */}
+      {/* Grouped by range (rPET / rWood / booths / textile) while no filter is active */}
+      {groups && !hasActiveFilters ? (
+        groups.map((group) => (
+          <section key={group.id} className="products-group" aria-labelledby={`group-${group.id}`}>
+            <h2 id={`group-${group.id}`} className="products-group-title">
+              {group.href ? <Link href={group.href} prefetch={false}>{group.title} →</Link> : group.title}
+            </h2>
+            <div className="products-grid">
+              {group.slugs.map((slug) => {
+                const product = products.find((p) => p.slug === slug);
+                return product ? <ProductCard key={slug} slug={slug} image={product.image} /> : null;
+              })}
+            </div>
+          </section>
+        ))
+      ) : (
       <div className="products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
@@ -289,6 +317,7 @@ export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
           </div>
         )}
       </div>
+      )}
 
       <style jsx>{`
         .products-grid-container {
@@ -396,6 +425,25 @@ export default function ProductsGrid({ showAll = false }: ProductsGridProps) {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
+        }
+
+        .products-group + .products-group {
+          margin-top: 3rem;
+        }
+
+        .products-group-title {
+          font-family: var(--font-heading);
+          font-size: 1.35rem;
+          margin: 0 0 1.25rem;
+        }
+
+        .products-group-title :global(a) {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .products-group-title :global(a:hover) {
+          color: var(--brand-blue);
         }
 
         .no-results {
