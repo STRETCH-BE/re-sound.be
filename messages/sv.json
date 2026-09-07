@@ -1712,7 +1712,7 @@
     "sustainability": {
       "tag": "HÅLLBARHET",
       "title": "Cirkulär i Kärnan",
-      "cert1": "{pct, select, unknown {Innehåll av återvunnen PET} other {{pct}% återvunnet material}}",
+      "cert1": "{pct, select, unknown {Innehåll av återvunnen PET} other {{pct} % återvunnet material}}",
       "cert2": "Cirkulär Retur",
       "cert3": "OEKO-TEX® Klass 1",
       "cert4": "Klass A+ utsläpp",
@@ -3626,7 +3626,7 @@
       "title": "Sex skäl att lyfta luren.",
       "item1": {
         "title": "Tillverkat i våra egna fabriker",
-        "desc": "Textillinjerna tillverkas i vår fabrik i Beveren-Waas (Belgien) och rPET i vår fabrik i Częstochowa (Polen); rWood produceras i Europa. Korta leveranskedjor, transparent ursprung och kvalitet ni kan stå för i en upphandling."
+        "desc": "Textillinjerna tillverkas i vår fabrik i Beveren-Waas (Belgien) och rPET i vår fabrik i Częstochowa (Polen); rWood produceras i Europa. Korta leveranskedjor, transparent ursprung och en kvalitet som håller i en upphandling."
       },
       "item2": {
         "title": "En tydlig, ärlig serie",
@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Tröskelvärden: den lägsta dämpningen av talnivå per klass. Duo har ännu inte mätts.",
     "endOfLifeTag": "CIRKULÄR"
+  },
+  "order": {
+    "cta": "Beställ online",
+    "title": "Beställ {product}",
+    "close": "Stäng",
+    "back": "Tillbaka",
+    "continue": "Fortsätt",
+    "step": "Steg {current} av {total}",
+    "stepsLabel": "Beställningssteg",
+    "steps": {
+      "configure": "Alternativ",
+      "details": "Era uppgifter",
+      "review": "Granska"
+    },
+    "units": {
+      "booth": "per hytt",
+      "set": "per set",
+      "piece": "per styck",
+      "m2": "per m²"
+    },
+    "configure": {
+      "title": "Välj er konfiguration",
+      "quantity": "Antal",
+      "decrease": "En färre",
+      "increase": "En till",
+      "optionsTitle": "Alternativ",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Montering av Re-Sound",
+        "note": "Våra egna montörer placerar och ansluter enheten på plats. Utan detta alternativ monterar ni den själva: två personer behöver under tre timmar för en Solo Flex."
+      },
+      "extraElement": {
+        "label": "Extra element på 90 cm",
+        "note": "Förlänger mötesbåset med 90 cm. Montering av extraelementet ingår i priset."
+      }
+    },
+    "details": {
+      "title": "Vart ska vi leverera?",
+      "customerType": "Jag beställer som",
+      "company": "Företag",
+      "private": "Privatperson",
+      "companyName": "Företagsnamn",
+      "vatNumber": "Momsregistreringsnummer",
+      "vatHint": "Med ett giltigt EU-momsnummer utanför Polen fakturerar vi utan moms (omvänd betalningsskyldighet). Vi kontrollerar numret i VIES.",
+      "vatInvalid": "Detta ser inte ut som ett giltigt momsregistreringsnummer. Ange landskoden, till exempel BE0123456789.",
+      "firstName": "Förnamn",
+      "lastName": "Efternamn",
+      "email": "E-post",
+      "phone": "Telefon",
+      "addressTitle": "Leveransadress",
+      "street": "Gata och nummer",
+      "postalCode": "Postnummer",
+      "city": "Ort",
+      "country": "Land",
+      "otherCountry": "Annat land",
+      "notes": "Något vi bör veta?",
+      "notesHint": "Valfritt: våningsplan, framkomlighet, önskad leveransvecka.",
+      "vatChecking": "Vi kontrollerar numret i VIES …",
+      "vatVerified": "Verifierat: omvänd skattskyldighet gäller, så vi fakturerar utan moms.",
+      "vatUnverified": "VIES-tjänsten svarade inte. Vi fakturerar 23 % polsk moms och krediterar den så snart numret har verifierats.",
+      "vatRejected": "VIES känner inte igen numret, därför faktureras beställningen med 23 % polsk moms.",
+      "vatNotEligible": "Ett polskt momsregistreringsnummer kan inte omfattas av omvänd skattskyldighet: varorna skickas från Polen, därför gäller 23 % polsk moms."
+    },
+    "review": {
+      "title": "Kontrollera er beställning",
+      "editConfig": "Ändra alternativ",
+      "editDetails": "Ändra uppgifter",
+      "deliveryTitle": "Leverans och fakturering",
+      "consent": "Jag lägger en bindande beställning. Re-Sound bekräftar den per e-post med transportkostnaden och eventuella alternativ med pris på begäran. Ingenting debiteras före den bekräftelsen.",
+      "submit": "Lägg beställning",
+      "submitting": "Skickar…",
+      "missingTitle": "Fyll i följande fält:"
+    },
+    "summary": {
+      "net": "Delsumma exkl. moms",
+      "total": "Totalt",
+      "onRequest": "Pris på begäran",
+      "onRequestNote": "Alternativ märkta ”pris på begäran” prissätts av vårt team. Ni får det slutliga beloppet innan beställningen bekräftas.",
+      "transportNote": "Transport ingår aldrig i dessa priser. Vi lämnar pris på leverans till er adress när vi bekräftar beställningen."
+    },
+    "vat": {
+      "domestic": "Moms {rate} %",
+      "reverseCharge": "Omvänd betalningsskyldighet för moms (0 %)",
+      "export": "Export, ingen moms (0 %)",
+      "polandNote": "Leverans inom Polen faktureras med 23 % polsk moms.",
+      "privateNote": "Er beställning skickas från vår fabrik i Polen och faktureras därför med 23 % polsk moms. Företag med ett giltigt EU-momsnummer utanför Polen faktureras utan moms.",
+      "needsNumberNote": "Ange ett giltigt EU-momsnummer så fakturerar vi utan moms (omvänd betalningsskyldighet). Utan ett sådant faktureras beställningen med 23 % polsk moms.",
+      "numberCountryNote": "Vi kontrollerar numret i VIES när ni lägger beställningen. Om det är giltigt för leveranslandet fakturerar vi utan moms.",
+      "reverseChargeNote": "Unionsintern leverans: vi fakturerar utan moms och ni redovisar den i ert eget land (art. 138 i EU:s mervärdesskattedirektiv).",
+      "exportNote": "Varorna lämnar EU och vi fakturerar därför utan moms. Importtullar och lokal moms betalas vid ankomsten.",
+      "pendingNote": "Ange ditt momsregistreringsnummer ovan, så kontrollerar vi det i VIES. Tills det är bekräftat innehåller totalsumman 23 % polsk moms."
+    },
+    "success": {
+      "eyebrow": "Beställning mottagen",
+      "title": "Tack för er beställning",
+      "referenceLabel": "Er referens",
+      "body": "Vi har skickat en kopia till er e-post. Vårt team bekräftar det slutliga beloppet, inklusive transport, inom en arbetsdag.",
+      "emailFallback": "Vi kunde inte skicka bekräftelsen per e-post. Kontakta info@re-sound.be och ange referens {reference}.",
+      "close": "Stäng",
+      "correctedTotal": "Den slutliga summan är {total}. Den skiljer sig från beloppet som visades vid beställningen eftersom ditt momsregistreringsnummer inte kunde bekräftas; vi krediterar momsen så snart det är bekräftat."
+    },
+    "error": {
+      "generic": "Vi kunde inte lägga er beställning. Försök igen eller kontakta info@re-sound.be.",
+      "network": "Anslutningsproblem. Kontrollera er anslutning och försök igen.",
+      "rate_limited": "För många beställningar från den här anslutningen. Kontakta info@re-sound.be.",
+      "invalid_product": "Den här produkten kan inte beställas online. Begär en offert.",
+      "invalid_country": "Välj ett leveransland i listan.",
+      "invalid_details": "Vissa uppgifter saknas eller är felaktiga. Kontrollera formuläret.",
+      "company_required": "Ange ditt företagsnamn.",
+      "consent_required": "Bekräfta villkoren för beställningen.",
+      "pricing_failed": "Vi kunde inte prissätta den här beställningen. Kontakta info@re-sound.be.",
+      "not_delivered": "Din beställning nådde oss inte. Ingenting har registrerats. Mejla info@re-sound.be så tar vi det därifrån.",
+      "server_error": "Något gick fel hos oss. Försök igen eller kontakta info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Ny beställning",
+      "customerHeading": "Beställning mottagen",
+      "customerSubject": "Er beställning hos Re-Sound {reference}",
+      "greeting": "Hej {name},",
+      "intro": "Tack för er beställning. Vi har registrerat den och bekräftar den per e-post, inklusive transportkostnaden.",
+      "referenceLabel": "Er referens",
+      "deliveryHeading": "Leveransadress",
+      "nextSteps": "Frågor om beställningen? Svara på detta e-postmeddelande eller ring +32 3 284 68 18. Re-Sound är ett varumärke inom Stretch Group; er beställning skickas från vår fabrik i Częstochowa (Polen)."
+    }
   }
 }

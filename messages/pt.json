@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Limiares: a redução mínima do nível de fala por classe. A Duo ainda não foi medida.",
     "endOfLifeTag": "Circular"
+  },
+  "order": {
+    "cta": "Encomendar online",
+    "title": "Encomendar {product}",
+    "close": "Fechar",
+    "back": "Voltar",
+    "continue": "Continuar",
+    "step": "Passo {current} de {total}",
+    "stepsLabel": "Passos da encomenda",
+    "steps": {
+      "configure": "Opções",
+      "details": "Os seus dados",
+      "review": "Revisão"
+    },
+    "units": {
+      "booth": "por cabine",
+      "set": "por conjunto",
+      "piece": "por unidade",
+      "m2": "por m²"
+    },
+    "configure": {
+      "title": "Escolha a sua configuração",
+      "quantity": "Quantidade",
+      "decrease": "Menos um",
+      "increase": "Mais um",
+      "optionsTitle": "Opções",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Instalação pela Re-Sound",
+        "note": "Os nossos instaladores colocam e ligam a unidade no local. Sem esta opção, a montagem fica a seu cargo: duas pessoas precisam de menos de três horas para uma Solo Flex."
+      },
+      "extraElement": {
+        "label": "Elemento adicional de 90 cm",
+        "note": "Prolonga o pod de reuniões em 90 cm. A instalação do elemento adicional está incluída neste preço."
+      }
+    },
+    "details": {
+      "title": "Onde devemos entregar?",
+      "customerType": "Encomendo enquanto",
+      "company": "Empresa",
+      "private": "Particular",
+      "companyName": "Nome da empresa",
+      "vatNumber": "Número de IVA",
+      "vatHint": "Com um número de IVA da UE válido fora da Polónia, faturamos sem IVA (autoliquidação). Verificamos o número no VIES.",
+      "vatInvalid": "Este não parece ser um número de IVA válido. Inclua o código do país, por exemplo BE0123456789.",
+      "firstName": "Nome próprio",
+      "lastName": "Apelido",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "addressTitle": "Morada de entrega",
+      "street": "Rua e número",
+      "postalCode": "Código postal",
+      "city": "Localidade",
+      "country": "País",
+      "otherCountry": "Outro país",
+      "notes": "Há algo que devamos saber?",
+      "notesHint": "Opcional: piso, acessos, semana de entrega preferida.",
+      "vatChecking": "A verificar este número no VIES…",
+      "vatVerified": "Confirmado: o IVA é objeto de autoliquidação, pelo que faturamos sem IVA.",
+      "vatUnverified": "O serviço VIES não respondeu. Faturamos 23 % de IVA polaco e creditamos esse valor assim que o número for validado.",
+      "vatRejected": "O VIES não reconhece este número, pelo que a encomenda é faturada com 23 % de IVA polaco.",
+      "vatNotEligible": "Um número de IVA polaco não pode ser objeto de autoliquidação: os bens são expedidos da Polónia, pelo que se aplicam 23 % de IVA polaco."
+    },
+    "review": {
+      "title": "Verifique a sua encomenda",
+      "editConfig": "Alterar opções",
+      "editDetails": "Alterar dados",
+      "deliveryTitle": "Entrega e faturação",
+      "consent": "Estou a efetuar uma encomenda vinculativa. A Re-Sound confirma-a por e-mail, com o custo de transporte e eventuais opções com preço sob consulta. Nada é cobrado antes dessa confirmação.",
+      "submit": "Efetuar encomenda",
+      "submitting": "A enviar…",
+      "missingTitle": "Preencha os seguintes campos:"
+    },
+    "summary": {
+      "net": "Subtotal sem IVA",
+      "total": "Total",
+      "onRequest": "Sob consulta",
+      "onRequestNote": "As opções assinaladas como «sob consulta» são orçamentadas pela nossa equipa. Receberá o valor final antes da confirmação da encomenda.",
+      "transportNote": "O transporte nunca está incluído nestes preços. Orçamentamos a entrega na sua morada quando confirmamos a encomenda."
+    },
+    "vat": {
+      "domestic": "IVA {rate} %",
+      "reverseCharge": "IVA autoliquidado (0 %)",
+      "export": "Exportação, sem IVA (0 %)",
+      "polandNote": "As entregas dentro da Polónia são faturadas com 23 % de IVA polaco.",
+      "privateNote": "A sua encomenda é expedida da nossa fábrica na Polónia, pelo que é faturada com 23 % de IVA polaco. As empresas com um número de IVA da UE válido fora da Polónia são faturadas sem IVA.",
+      "needsNumberNote": "Indique um número de IVA da UE válido e faturamos sem IVA (autoliquidação). Sem esse número, a encomenda é faturada com 23 % de IVA polaco.",
+      "numberCountryNote": "Verificamos este número no VIES quando efetuar a encomenda. Se for válido para o país de entrega, faturamos sem IVA.",
+      "reverseChargeNote": "Transmissão intracomunitária: faturamos sem IVA e o imposto é autoliquidado por si no seu país (artigo 138.º da Diretiva IVA da UE).",
+      "exportNote": "Os bens saem da UE, pelo que faturamos sem IVA. Os direitos de importação e o IVA local são devidos à chegada.",
+      "pendingNote": "Introduza acima o seu número de IVA e verificamo-lo no VIES. Até à confirmação, o total inclui 23 % de IVA polaco."
+    },
+    "success": {
+      "eyebrow": "Encomenda recebida",
+      "title": "Obrigado pela sua encomenda",
+      "referenceLabel": "A sua referência",
+      "body": "Enviámos-lhe uma cópia por e-mail. A nossa equipa confirma o valor final, incluindo o transporte, no prazo de um dia útil.",
+      "emailFallback": "Não foi possível enviar o e-mail de confirmação. Contacte info@re-sound.be indicando a referência {reference}.",
+      "close": "Fechar",
+      "correctedTotal": "O total final é {total}. Difere do valor apresentado durante a encomenda porque não foi possível confirmar o seu número de IVA; creditamos o IVA assim que este for confirmado."
+    },
+    "error": {
+      "generic": "Não foi possível registar a sua encomenda. Tente novamente ou contacte info@re-sound.be.",
+      "network": "Problema de ligação. Verifique a sua ligação e tente novamente.",
+      "rate_limited": "Demasiadas encomendas a partir desta ligação. Contacte info@re-sound.be.",
+      "invalid_product": "Este produto não pode ser encomendado online. Solicite um orçamento.",
+      "invalid_country": "Selecione um país de entrega na lista.",
+      "invalid_details": "Faltam alguns dados ou são inválidos. Verifique o formulário.",
+      "company_required": "Introduza o nome da sua empresa.",
+      "consent_required": "Confirme as condições da encomenda.",
+      "pricing_failed": "Não foi possível calcular o preço desta encomenda. Contacte info@re-sound.be.",
+      "not_delivered": "A sua encomenda não chegou até nós. Não foi registado nada. Envie um e-mail para info@re-sound.be para que possamos tratar do assunto.",
+      "server_error": "Ocorreu um problema do nosso lado. Tente novamente ou contacte info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Nova encomenda",
+      "customerHeading": "Encomenda recebida",
+      "customerSubject": "A sua encomenda Re-Sound {reference}",
+      "greeting": "Caro(a) {name},",
+      "intro": "Obrigado pela sua encomenda. Já a registámos e iremos confirmá-la por e-mail, incluindo o custo de transporte.",
+      "referenceLabel": "A sua referência",
+      "deliveryHeading": "Morada de entrega",
+      "nextSteps": "Tem questões sobre esta encomenda? Responda a este e-mail ou ligue para +32 3 284 68 18. A Re-Sound é uma marca do Stretch Group; a sua encomenda é expedida da nossa fábrica em Częstochowa (Polónia)."
+    }
   }
 }

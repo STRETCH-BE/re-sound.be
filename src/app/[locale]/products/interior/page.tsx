@@ -117,6 +117,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'interiorPage',
     'productPage',
     'manufacturer',
+    'order',
+    'footer',
   ]);
 
   return (

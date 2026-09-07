@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Schwellenwerte: die minimale Sprachpegelreduktion pro Klasse. Duo wurde noch nicht gemessen.",
     "endOfLifeTag": "Zirkulär"
+  },
+  "order": {
+    "cta": "Online bestellen",
+    "title": "{product} bestellen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "continue": "Weiter",
+    "step": "Schritt {current} von {total}",
+    "stepsLabel": "Bestellschritte",
+    "steps": {
+      "configure": "Optionen",
+      "details": "Ihre Daten",
+      "review": "Prüfen"
+    },
+    "units": {
+      "booth": "pro Kabine",
+      "set": "pro Set",
+      "piece": "pro Stück",
+      "m2": "pro m²"
+    },
+    "configure": {
+      "title": "Wählen Sie Ihre Konfiguration",
+      "quantity": "Menge",
+      "decrease": "Menge verringern",
+      "increase": "Menge erhöhen",
+      "optionsTitle": "Optionen",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Montage durch Re-Sound",
+        "note": "Unsere eigenen Monteure stellen alles vor Ort auf und schließen es an. Ohne diese Option montieren Sie selbst: Zwei Personen brauchen für eine Solo Flex weniger als drei Stunden."
+      },
+      "extraElement": {
+        "label": "Zusätzliches 90-cm-Element",
+        "note": "Verlängert den Meeting-Pod um 90 cm. Die Montage des zusätzlichen Elements ist in diesem Preis enthalten."
+      }
+    },
+    "details": {
+      "title": "Wohin sollen wir liefern?",
+      "customerType": "Ich bestelle als",
+      "company": "Unternehmen",
+      "private": "Privatperson",
+      "companyName": "Firmenname",
+      "vatNumber": "USt-IdNr.",
+      "vatHint": "Mit einer gültigen EU-USt-IdNr. aus einem anderen EU-Land als Polen stellen wir die Rechnung ohne Mehrwertsteuer aus (Reverse-Charge). Wir prüfen die Nummer über VIES.",
+      "vatInvalid": "Das scheint keine gültige USt-IdNr. zu sein. Bitte mit Ländercode angeben, zum Beispiel BE0123456789.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "addressTitle": "Lieferadresse",
+      "street": "Straße und Hausnummer",
+      "postalCode": "Postleitzahl",
+      "city": "Ort",
+      "country": "Land",
+      "otherCountry": "Anderes Land",
+      "notes": "Gibt es etwas, das wir wissen sollten?",
+      "notesHint": "Optional: Etage, Zufahrt, gewünschte Lieferwoche.",
+      "vatChecking": "Diese Nummer wird über VIES geprüft…",
+      "vatVerified": "Bestätigt: Es gilt das Reverse-Charge-Verfahren, daher stellen wir die Rechnung ohne Mehrwertsteuer aus.",
+      "vatUnverified": "Der VIES-Dienst hat nicht geantwortet. Wir stellen 23 % polnische Mehrwertsteuer in Rechnung und schreiben sie Ihnen gut, sobald die Nummer bestätigt ist.",
+      "vatRejected": "VIES erkennt diese Nummer nicht, daher wird die Bestellung mit 23 % polnischer Mehrwertsteuer in Rechnung gestellt.",
+      "vatNotEligible": "Bei einer polnischen USt-IdNr. ist das Reverse-Charge-Verfahren nicht möglich: Die Ware wird aus Polen versandt, daher fallen 23 % polnische Mehrwertsteuer an."
+    },
+    "review": {
+      "title": "Prüfen Sie Ihre Bestellung",
+      "editConfig": "Optionen ändern",
+      "editDetails": "Daten ändern",
+      "deliveryTitle": "Lieferung und Rechnungsstellung",
+      "consent": "Ich gebe eine verbindliche Bestellung ab. Re-Sound bestätigt sie per E-Mail mit den Transportkosten und dem Preis für jede auf Anfrage kalkulierte Option. Vor dieser Bestätigung wird nichts berechnet.",
+      "submit": "Bestellung abgeben",
+      "submitting": "Wird gesendet…",
+      "missingTitle": "Bitte füllen Sie diese Felder aus:"
+    },
+    "summary": {
+      "net": "Zwischensumme exkl. MwSt.",
+      "total": "Gesamt",
+      "onRequest": "Auf Anfrage",
+      "onRequestNote": "Optionen mit dem Vermerk „auf Anfrage“ kalkuliert unser Team. Sie erhalten den endgültigen Betrag, bevor die Bestellung bestätigt wird.",
+      "transportNote": "Der Transport ist in diesen Preisen nie enthalten. Die Kosten für die Lieferung an Ihre Adresse nennen wir Ihnen, wenn wir die Bestellung bestätigen."
+    },
+    "vat": {
+      "domestic": "MwSt. {rate} %",
+      "reverseCharge": "MwSt. Reverse-Charge (0 %)",
+      "export": "Ausfuhr, ohne MwSt. (0 %)",
+      "polandNote": "Lieferungen innerhalb Polens werden mit 23 % polnischer Mehrwertsteuer in Rechnung gestellt.",
+      "privateNote": "Ihre Bestellung wird ab unserem Werk in Polen versandt und daher mit 23 % polnischer Mehrwertsteuer in Rechnung gestellt. Unternehmen mit einer gültigen EU-USt-IdNr. aus einem anderen EU-Land als Polen erhalten eine Rechnung ohne Mehrwertsteuer.",
+      "needsNumberNote": "Geben Sie eine gültige EU-USt-IdNr. an, dann stellen wir die Rechnung ohne Mehrwertsteuer aus (Reverse-Charge). Ohne diese Nummer wird die Bestellung mit 23 % polnischer Mehrwertsteuer in Rechnung gestellt.",
+      "numberCountryNote": "Wir prüfen diese Nummer bei der Bestellung über VIES. Ist sie für das Lieferland gültig, stellen wir die Rechnung ohne Mehrwertsteuer aus.",
+      "reverseChargeNote": "Innergemeinschaftliche Lieferung: Wir stellen die Rechnung ohne Mehrwertsteuer aus; die Steuerschuld geht auf Sie über, und Sie melden die Umsatzsteuer in Ihrem Land an (Art. 138 der EU-Mehrwertsteuerrichtlinie).",
+      "exportNote": "Die Ware verlässt die EU, daher stellen wir die Rechnung ohne Mehrwertsteuer aus. Einfuhrabgaben und die Mehrwertsteuer des Bestimmungslands werden bei der Einfuhr fällig.",
+      "pendingNote": "Geben Sie oben Ihre USt-IdNr. ein, dann prüfen wir sie über VIES. Bis zur Bestätigung enthält der Gesamtbetrag 23 % polnische Mehrwertsteuer."
+    },
+    "success": {
+      "eyebrow": "Bestellung eingegangen",
+      "title": "Vielen Dank für Ihre Bestellung",
+      "referenceLabel": "Ihre Referenz",
+      "body": "Eine Kopie haben wir Ihnen per E-Mail geschickt. Unser Team bestätigt den endgültigen Betrag inklusive Transport innerhalb eines Werktags.",
+      "emailFallback": "Wir konnten die Bestätigungs-E-Mail nicht versenden. Bitte wenden Sie sich unter Angabe der Referenz {reference} an info@re-sound.be.",
+      "close": "Schließen",
+      "correctedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Er weicht von dem bei der Bestellung angezeigten Betrag ab, weil Ihre USt-IdNr. nicht bestätigt werden konnte; sobald die Nummer bestätigt ist, schreiben wir Ihnen die Mehrwertsteuer gut."
+    },
+    "error": {
+      "generic": "Ihre Bestellung konnte nicht übermittelt werden. Bitte versuchen Sie es erneut oder wenden Sie sich an info@re-sound.be.",
+      "network": "Verbindungsproblem. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+      "rate_limited": "Zu viele Bestellungen über diese Verbindung. Bitte wenden Sie sich an info@re-sound.be.",
+      "invalid_product": "Dieses Produkt kann nicht online bestellt werden. Bitte fordern Sie ein Angebot an.",
+      "invalid_country": "Bitte wählen Sie ein Lieferland aus der Liste aus.",
+      "invalid_details": "Einige Angaben fehlen oder sind ungültig. Bitte überprüfen Sie das Formular.",
+      "company_required": "Bitte geben Sie Ihren Firmennamen ein.",
+      "consent_required": "Bitte bestätigen Sie die Bestellbedingungen.",
+      "pricing_failed": "Wir konnten für diese Bestellung keinen Preis ermitteln. Bitte wenden Sie sich an info@re-sound.be.",
+      "not_delivered": "Ihre Bestellung hat uns nicht erreicht. Es wurde nichts erfasst. Bitte senden Sie eine E-Mail an info@re-sound.be, damit wir uns darum kümmern können.",
+      "server_error": "Auf unserer Seite ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder wenden Sie sich an info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Neue Bestellung",
+      "customerHeading": "Bestellung eingegangen",
+      "customerSubject": "Ihre Re-Sound-Bestellung {reference}",
+      "greeting": "Guten Tag {name},",
+      "intro": "Vielen Dank für Ihre Bestellung. Wir haben sie erfasst und bestätigen sie per E-Mail, inklusive der Transportkosten.",
+      "referenceLabel": "Ihre Referenz",
+      "deliveryHeading": "Lieferadresse",
+      "nextSteps": "Fragen zu dieser Bestellung? Antworten Sie auf diese E-Mail oder rufen Sie uns an: +32 3 284 68 18. Re-Sound ist eine Marke der Stretch Group; Ihre Bestellung wird ab unserem Werk in Częstochowa (Polen) versandt."
+    }
   }
 }

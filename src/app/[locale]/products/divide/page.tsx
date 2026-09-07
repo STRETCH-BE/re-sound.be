@@ -84,6 +84,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'dividePage',
     'productPage',
     'manufacturer',
+    'order',
+    'footer',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.

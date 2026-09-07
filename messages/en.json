@@ -4276,5 +4276,131 @@
     },
     "classesNote": "Thresholds: the minimum speech-level reduction per class. Duo has not been measured yet.",
     "endOfLifeTag": "CIRCULAR"
+  },
+  "order": {
+    "cta": "Order online",
+    "title": "Order {product}",
+    "close": "Close",
+    "back": "Back",
+    "continue": "Continue",
+    "step": "Step {current} of {total}",
+    "stepsLabel": "Order steps",
+    "steps": {
+      "configure": "Options",
+      "details": "Your details",
+      "review": "Review"
+    },
+    "units": {
+      "booth": "per booth",
+      "set": "per set",
+      "piece": "per piece",
+      "m2": "per m²"
+    },
+    "configure": {
+      "title": "Choose your configuration",
+      "quantity": "Quantity",
+      "decrease": "One less",
+      "increase": "One more",
+      "optionsTitle": "Options",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Installation by Re-Sound",
+        "note": "Our own installers place and connect the unit on site. Without this option you assemble it yourself: two people need under three hours for a Solo Flex."
+      },
+      "extraElement": {
+        "label": "Extra 90 cm element",
+        "note": "Extends the meeting pod by 90 cm. Installation of the extra element is included in this price."
+      }
+    },
+    "details": {
+      "title": "Where should we deliver?",
+      "customerType": "I am ordering as",
+      "company": "A business",
+      "private": "A private person",
+      "companyName": "Company name",
+      "vatNumber": "VAT number",
+      "vatHint": "With a valid EU VAT number outside Poland we invoice without VAT (reverse charge). We check the number with VIES.",
+      "vatInvalid": "This does not look like a valid VAT number. Include the country code, for example BE0123456789.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "addressTitle": "Delivery address",
+      "street": "Street and number",
+      "postalCode": "Postcode",
+      "city": "City",
+      "country": "Country",
+      "otherCountry": "Another country",
+      "notes": "Anything we should know?",
+      "notesHint": "Optional: floor, access, preferred delivery week.",
+      "vatChecking": "Checking this number with VIES…",
+      "vatVerified": "Verified: VAT is reverse charged, so we invoice without VAT.",
+      "vatUnverified": "The VIES service did not answer. We invoice 23 % Polish VAT and credit it once the number is verified.",
+      "vatRejected": "VIES does not recognise this number, so the order is invoiced with 23 % Polish VAT.",
+      "vatNotEligible": "A Polish VAT number cannot be reverse charged: the goods ship from Poland, so 23 % Polish VAT applies."
+    },
+    "review": {
+      "title": "Check your order",
+      "editConfig": "Change options",
+      "editDetails": "Change details",
+      "deliveryTitle": "Delivery and invoicing",
+      "consent": "I am placing a binding order. Re-Sound confirms it by e-mail with the transport cost and any option priced on request. Nothing is charged before that confirmation.",
+      "submit": "Place order",
+      "submitting": "Sending…",
+      "missingTitle": "Please complete these fields:"
+    },
+    "summary": {
+      "net": "Subtotal excl. VAT",
+      "total": "Total",
+      "onRequest": "On request",
+      "onRequestNote": "Options marked \"on request\" are priced by our team. You receive the final amount before the order is confirmed.",
+      "transportNote": "Transport is never included in these prices. We quote delivery to your address when we confirm the order."
+    },
+    "vat": {
+      "domestic": "VAT {rate} %",
+      "reverseCharge": "VAT reverse charged (0 %)",
+      "export": "Export, no VAT (0 %)",
+      "polandNote": "Delivery inside Poland is invoiced with 23 % Polish VAT.",
+      "privateNote": "Your order ships from our plant in Poland, so it is invoiced with 23 % Polish VAT. Businesses with a valid EU VAT number outside Poland are invoiced without VAT.",
+      "needsNumberNote": "Add a valid EU VAT number and we invoice without VAT (reverse charge). Without one, the order is invoiced with 23 % Polish VAT.",
+      "numberCountryNote": "We verify this number with VIES when you place the order. If it is valid for the delivery country, we invoice without VAT.",
+      "reverseChargeNote": "Intra-Community supply: we invoice without VAT and you account for it in your own country (Art. 138 of the EU VAT Directive).",
+      "exportNote": "The goods leave the EU, so we invoice without VAT. Import duties and local VAT are payable on arrival.",
+      "pendingNote": "Enter your VAT number above and we check it with VIES. Until it is confirmed the total includes 23 % Polish VAT."
+    },
+    "success": {
+      "eyebrow": "Order received",
+      "title": "Thank you for your order",
+      "referenceLabel": "Your reference",
+      "body": "We have e-mailed you a copy. Our team confirms the final amount, including transport, within one working day.",
+      "emailFallback": "We could not send the confirmation e-mail. Please contact info@re-sound.be quoting reference {reference}.",
+      "close": "Close",
+      "correctedTotal": "The final total is {total}. It differs from the amount shown while ordering because your VAT number could not be confirmed; we credit the VAT as soon as it is."
+    },
+    "error": {
+      "generic": "We could not place your order. Please try again or contact info@re-sound.be.",
+      "network": "Connection problem. Please check your connection and try again.",
+      "rate_limited": "Too many orders from this connection. Please contact info@re-sound.be.",
+      "invalid_product": "This product cannot be ordered online. Please request a quote.",
+      "invalid_country": "Please choose a delivery country from the list.",
+      "invalid_details": "Some details are missing or invalid. Please check the form.",
+      "company_required": "Please enter your company name.",
+      "consent_required": "Please confirm the order terms.",
+      "pricing_failed": "We could not price this order. Please contact info@re-sound.be.",
+      "not_delivered": "Your order did not reach us. Nothing has been registered. Please e-mail info@re-sound.be so we can take it from there.",
+      "server_error": "Something went wrong on our side. Please try again or contact info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "New order",
+      "customerHeading": "Order received",
+      "customerSubject": "Your Re-Sound order {reference}",
+      "greeting": "Hello {name},",
+      "intro": "Thank you for your order. We have registered it and will confirm it by e-mail, including the transport cost.",
+      "referenceLabel": "Your reference",
+      "deliveryHeading": "Delivery address",
+      "nextSteps": "Questions about this order? Reply to this e-mail or call +32 3 284 68 18. Re-Sound is a Stretch Group brand; your order ships from our plant in Częstochowa (Poland)."
+    }
   }
 }

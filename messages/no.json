@@ -1712,7 +1712,7 @@
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Sirkulær i Kjernen",
-      "cert1": "{pct, select, unknown {Innhold av resirkulert PET} other {{pct} % resirkulert innhold}}",
+      "cert1": "{pct, select, unknown {Resirkulert PET-innhold} other {{pct} % resirkulert innhold}}",
       "cert2": "Sirkulær Retur",
       "cert3": "OEKO-TEX® Klasse 1",
       "cert4": "Klasse A+ utslipp",
@@ -3625,8 +3625,8 @@
       "tag": "HVORFOR BLI PARTNER MED RE-SOUND",
       "title": "Seks grunner til å ta opp telefonen.",
       "item1": {
-        "title": "Produsert i våre egne fabrikker",
-        "desc": "Tekstillinjene produseres i fabrikken vår i Beveren-Waas (Belgia) og rPET i fabrikken vår i Częstochowa (Polen); rWood produseres i Europa. Korte forsyningskjeder, transparent opprinnelse og en kvalitet du kan stå inne for i en anbudsrunde."
+        "title": "Produsert ved våre egne fabrikker",
+        "desc": "Tekstillinjene produseres ved fabrikken vår i Beveren-Waas (Belgia) og rPET ved fabrikken vår i Częstochowa (Polen); rWood produseres i Europa. Korte forsyningslinjer, transparent opprinnelse og en kvalitet du kan stå inne for i en anbudskonkurranse."
       },
       "item2": {
         "title": "En klar, ærlig serie",
@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Terskler: minste reduksjon av talenivå per klasse. Duo er ennå ikke målt.",
     "endOfLifeTag": "Sirkulær"
+  },
+  "order": {
+    "cta": "Bestill på nett",
+    "title": "Bestill {product}",
+    "close": "Lukk",
+    "back": "Tilbake",
+    "continue": "Fortsett",
+    "step": "Trinn {current} av {total}",
+    "stepsLabel": "Bestillingstrinn",
+    "steps": {
+      "configure": "Alternativer",
+      "details": "Dine opplysninger",
+      "review": "Oppsummering"
+    },
+    "units": {
+      "booth": "per boks",
+      "set": "per sett",
+      "piece": "per stk.",
+      "m2": "per m²"
+    },
+    "configure": {
+      "title": "Velg konfigurasjon",
+      "quantity": "Antall",
+      "decrease": "Én mindre",
+      "increase": "Én mer",
+      "optionsTitle": "Alternativer",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Montering av Re-Sound",
+        "note": "Våre egne montører plasserer og kobler til enheten på stedet. Uten dette alternativet monterer du den selv: to personer bruker under tre timer på en Solo Flex."
+      },
+      "extraElement": {
+        "label": "Ekstra element på 90 cm",
+        "note": "Forlenger møtepoden med 90 cm. Montering av ekstraelementet er inkludert i denne prisen."
+      }
+    },
+    "details": {
+      "title": "Hvor skal vi levere?",
+      "customerType": "Jeg bestiller som",
+      "company": "Bedrift",
+      "private": "Privatperson",
+      "companyName": "Firmanavn",
+      "vatNumber": "MVA-nummer",
+      "vatHint": "Med et gyldig EU-MVA-nummer utenfor Polen fakturerer vi uten mva. (omvendt avgiftsplikt). Vi kontrollerer nummeret i VIES.",
+      "vatInvalid": "Dette ser ikke ut som et gyldig MVA-nummer. Ta med landkoden, for eksempel BE0123456789.",
+      "firstName": "Fornavn",
+      "lastName": "Etternavn",
+      "email": "E-post",
+      "phone": "Telefon",
+      "addressTitle": "Leveringsadresse",
+      "street": "Gate og nummer",
+      "postalCode": "Postnummer",
+      "city": "Poststed",
+      "country": "Land",
+      "otherCountry": "Annet land",
+      "notes": "Er det noe vi bør vite?",
+      "notesHint": "Valgfritt: etasje, adkomst, ønsket leveringsuke.",
+      "vatChecking": "Kontrollerer nummeret i VIES …",
+      "vatVerified": "Bekreftet: merverdiavgiften er omfattet av omvendt avgiftsplikt, og vi fakturerer derfor uten mva.",
+      "vatUnverified": "VIES-tjenesten svarte ikke. Vi fakturerer 23 % polsk mva. og krediterer beløpet så snart nummeret er bekreftet.",
+      "vatRejected": "VIES kjenner ikke igjen dette nummeret, og bestillingen faktureres derfor med 23 % polsk mva.",
+      "vatNotEligible": "Et polsk mva-nummer kan ikke omfattes av omvendt avgiftsplikt: varene sendes fra Polen, og derfor gjelder 23 % polsk mva."
+    },
+    "review": {
+      "title": "Kontroller bestillingen",
+      "editConfig": "Endre alternativer",
+      "editDetails": "Endre opplysninger",
+      "deliveryTitle": "Levering og fakturering",
+      "consent": "Jeg legger inn en bindende bestilling. Re-Sound bekrefter den på e-post med transportkostnaden og eventuelle alternativer med pris på forespørsel. Ingenting belastes før denne bekreftelsen.",
+      "submit": "Legg inn bestilling",
+      "submitting": "Sender …",
+      "missingTitle": "Fyll ut disse feltene:"
+    },
+    "summary": {
+      "net": "Delsum eks. mva.",
+      "total": "Totalt",
+      "onRequest": "På forespørsel",
+      "onRequestNote": "Alternativer merket «på forespørsel» prises av teamet vårt. Du får det endelige beløpet før bestillingen bekreftes.",
+      "transportNote": "Transport er aldri inkludert i disse prisene. Vi gir pris på levering til adressen din når vi bekrefter bestillingen."
+    },
+    "vat": {
+      "domestic": "Mva. {rate} %",
+      "reverseCharge": "Omvendt avgiftsplikt for mva. (0 %)",
+      "export": "Eksport, uten mva. (0 %)",
+      "polandNote": "Levering i Polen faktureres med 23 % polsk mva.",
+      "privateNote": "Bestillingen din sendes fra fabrikken vår i Polen og faktureres derfor med 23 % polsk mva. Bedrifter med et gyldig EU-MVA-nummer utenfor Polen faktureres uten mva.",
+      "needsNumberNote": "Legg inn et gyldig EU-MVA-nummer, så fakturerer vi uten mva. (omvendt avgiftsplikt). Uten et slikt nummer faktureres bestillingen med 23 % polsk mva.",
+      "numberCountryNote": "Vi kontrollerer dette nummeret i VIES når du legger inn bestillingen. Er det gyldig for leveringslandet, fakturerer vi uten mva.",
+      "reverseChargeNote": "EU-intern levering: vi fakturerer uten mva., og du beregner avgiften i ditt eget land (art. 138 i EUs merverdiavgiftsdirektiv).",
+      "exportNote": "Varene forlater EU, og vi fakturerer derfor uten mva. Importavgifter og lokal mva. påløper ved ankomst.",
+      "pendingNote": "Oppgi mva-nummeret ovenfor, så kontrollerer vi det i VIES. Inntil det er bekreftet, inkluderer totalsummen 23 % polsk mva."
+    },
+    "success": {
+      "eyebrow": "Bestilling mottatt",
+      "title": "Takk for bestillingen",
+      "referenceLabel": "Din referanse",
+      "body": "Vi har sendt deg en kopi på e-post. Teamet vårt bekrefter det endelige beløpet, inkludert transport, innen én virkedag.",
+      "emailFallback": "Vi klarte ikke å sende bekreftelsen på e-post. Kontakt info@re-sound.be og oppgi referanse {reference}.",
+      "close": "Lukk",
+      "correctedTotal": "Endelig totalsum er {total}. Den avviker fra beløpet som ble vist under bestillingen, fordi mva-nummeret ikke kunne bekreftes; vi krediterer merverdiavgiften så snart det er bekreftet."
+    },
+    "error": {
+      "generic": "Vi klarte ikke å registrere bestillingen din. Prøv igjen, eller kontakt info@re-sound.be.",
+      "network": "Tilkoblingsproblem. Kontroller forbindelsen og prøv igjen.",
+      "rate_limited": "For mange bestillinger fra denne tilkoblingen. Ta kontakt på info@re-sound.be.",
+      "invalid_product": "Dette produktet kan ikke bestilles på nett. Be om et tilbud.",
+      "invalid_country": "Velg et leveringsland fra listen.",
+      "invalid_details": "Enkelte opplysninger mangler eller er ugyldige. Kontroller skjemaet.",
+      "company_required": "Oppgi firmanavnet.",
+      "consent_required": "Bekreft bestillingsvilkårene.",
+      "pricing_failed": "Vi kunne ikke beregne prisen på denne bestillingen. Ta kontakt på info@re-sound.be.",
+      "not_delivered": "Bestillingen nådde ikke frem til oss. Ingenting er registrert. Send en e-post til info@re-sound.be, så tar vi det derfra.",
+      "server_error": "Noe gikk galt hos oss. Prøv igjen, eller ta kontakt på info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Ny bestilling",
+      "customerHeading": "Bestilling mottatt",
+      "customerSubject": "Din Re-Sound-bestilling {reference}",
+      "greeting": "Hei {name},",
+      "intro": "Takk for bestillingen. Vi har registrert den og bekrefter den på e-post, inkludert transportkostnaden.",
+      "referenceLabel": "Din referanse",
+      "deliveryHeading": "Leveringsadresse",
+      "nextSteps": "Har du spørsmål om denne bestillingen? Svar på denne e-posten eller ring +32 3 284 68 18. Re-Sound er et varemerke fra Stretch Group; bestillingen din sendes fra fabrikken vår i Częstochowa (Polen)."
+    }
   }
 }
