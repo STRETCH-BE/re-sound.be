@@ -139,8 +139,8 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     <div className="booth-product-page">
       {/* ========== HERO ========== */}
       <section className="product-hero">
-        {breadcrumbs}
         <div className="hero-content">
+          {breadcrumbs}
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>

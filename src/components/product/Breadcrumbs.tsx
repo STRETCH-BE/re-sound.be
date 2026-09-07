@@ -10,18 +10,20 @@ export interface Crumb {
 
 interface BreadcrumbsProps {
   items: Crumb[];
-  /** Visual variant: 'overlay' floats over a hero, 'inline' sits in the flow */
-  variant?: 'overlay' | 'inline';
 }
 
 /**
  * Visible breadcrumb trail (server component). The matching BreadcrumbList
  * JSON-LD is emitted by the page with the same items.
+ *
+ * The trail sits in the normal flow at the top of the hero content. It used
+ * to float over the hero, which put it in the same band as the product tag
+ * (and under the fixed header, so its links could not be clicked).
  */
-export default async function Breadcrumbs({ items, variant = 'inline' }: BreadcrumbsProps) {
+export default async function Breadcrumbs({ items }: BreadcrumbsProps) {
   const t = await getTranslations('hubs.shared');
   return (
-    <nav className={`ps-breadcrumbs ps-breadcrumbs--${variant}`} aria-label={t('breadcrumbLabel')}>
+    <nav className="ps-breadcrumbs" aria-label={t('breadcrumbLabel')}>
       <ol>
         {items.map((item, i) => (
           <li key={i}>

@@ -607,17 +607,17 @@
   color: #555;
 }
 
-/* Floats over the top-left of a product hero (which keeps its own
-   8rem top padding for the fixed header). */
-.ps-breadcrumbs--overlay {
-  position: absolute;
-  top: 5.5rem;
-  left: 4rem;
-  z-index: 5;
-}
-
-.ps-breadcrumbs-host {
-  position: relative;
+/* globals.css styles the bare `nav` element as the fixed site header
+   (position: fixed, top: 0, z-index: 100, 1.5rem 4rem padding, flex). The
+   breadcrumb trail is a nav too, so it inherited all of that and floated over
+   the hero on top of the product tag, under the header, with its links
+   unclickable. It is an ordinary in-flow block at the top of the hero. */
+nav.ps-breadcrumbs {
+  position: static;
+  display: block;
+  z-index: auto;
+  padding: 0 0 0.75rem;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {
@@ -627,11 +627,6 @@
 
   .hub-why-grid {
     grid-template-columns: 1fr;
-  }
-
-  .ps-breadcrumbs--overlay {
-    top: 4.75rem;
-    left: 2rem;
   }
 }
 
@@ -643,14 +638,9 @@
   .hub-applications-list {
     grid-template-columns: 1fr;
   }
-
-  .ps-breadcrumbs--overlay {
-    top: 4.25rem;
-    left: 1.5rem;
-  }
 }
 
-/* Positioning context for the breadcrumb overlay on every product hero. */
+/* Positioning context for the hero decorations on every product hero. */
 .product-hero {
   position: relative;
 }

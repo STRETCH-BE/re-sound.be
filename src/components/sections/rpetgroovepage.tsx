@@ -122,8 +122,8 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
     <div className="rpet-groove-product-page">
       {/* Hero Section */}
       <section className="product-hero">
-        {breadcrumbs}
         <div className="hero-content">
+          {breadcrumbs}
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>

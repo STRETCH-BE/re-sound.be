@@ -85,8 +85,8 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
     <div className="solid-product-page">
       {/* Hero Section */}
       <section className="product-hero">
-        {breadcrumbs}
         <div className="hero-content">
+          {breadcrumbs}
           <span className="product-tag">{tPage('tags.acousticWallPanels')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>

@@ -127,7 +127,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <RpetFlexGrooveProductPage
-        breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
+        breadcrumbs={<Breadcrumbs items={crumbs} />}
         specs={
           <ProductSpecs
             cards={specs}

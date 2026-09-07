@@ -111,8 +111,8 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
     <div className="rwood-groove-product-page">
       {/* Hero Section */}
       <section className="product-hero">
-        {breadcrumbs}
         <div className="hero-content">
+          {breadcrumbs}
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
