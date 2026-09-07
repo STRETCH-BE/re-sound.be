@@ -38,12 +38,29 @@ real order arrives:
     the terms should say for booths and for panels made to a chosen colour or
     size, and add it; the order dialog already links to the terms page.
 
-28. **VAT on cross-border sales to private buyers.** The flow charges 23 %
-    Polish VAT to private buyers everywhere, as you instructed. Once
-    cross-border B2C sales pass the EU one-stop-shop threshold (€ 10 000 a
-    year across the EU), the rate of the buyer's own country applies instead.
-    Confirm with your accountant when that switch is needed; it is one table
-    in `src/lib/order/vat.ts`.
+28. **VAT on cross-border sales to private buyers — ask your accountant
+    before the first one.** The flow charges 23 % Polish VAT to private
+    buyers everywhere, as you instructed. That is correct only below the EU
+    one-stop-shop threshold of € 10 000 a year across all cross-border B2C
+    sales. Above it, an intra-Community distance sale must carry the rate of
+    the buyer's own country (21 % in Belgium, 20 % in France, 19 % in
+    Germany) and be declared through OSS. With booths at € 2 740 to
+    € 15 000 that threshold is passed by the second or third consumer order
+    of the year, and the dialog takes binding orders on the Polish rate. If
+    your accountant says OSS applies, tell us and we add a per-country rate
+    table; until then a cross-border consumer order needs a manual check
+    before the invoice goes out.
+
+36. **Your Polish VAT registration.** Nothing in the order flow names the
+    Polish VAT number the 23 % is charged under. It has to appear on the
+    invoice. Give us the number if you also want it in the order
+    confirmation e-mail.
+
+37. **Transport is quoted separately and is taxed the same way.** The
+    confirmation says transport is not included. When you add it to the
+    invoice it carries the same VAT treatment as the goods, so the invoiced
+    VAT will be higher than the amount the buyer saw. Say if the
+    confirmation should spell that out.
 
 29. **Installation price for Duo and Interior.** Both are offered as "on
     request" because no price is confirmed. Give the figures and they become

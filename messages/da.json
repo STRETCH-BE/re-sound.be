@@ -4338,11 +4338,11 @@
       "otherCountry": "Andet land",
       "notes": "Er der noget, vi skal vide?",
       "notesHint": "Valgfrit: etage, adgangsforhold, ønsket leveringsuge.",
-      "vatChecking": "Kontrollerer dette nummer i VIES…",
-      "vatVerified": "Bekræftet: Der er omvendt betalingspligt for momsen, så vi fakturerer uden moms.",
-      "vatUnverified": "VIES-tjenesten svarede ikke. Vi fakturerer 23 % polsk moms og krediterer den, når nummeret er bekræftet.",
-      "vatRejected": "VIES genkender ikke dette nummer, så bestillingen faktureres med 23 % polsk moms.",
-      "vatNotEligible": "Et polsk momsnummer kan ikke omfattes af omvendt betalingspligt: Varerne sendes fra Polen, så der beregnes 23 % polsk moms."
+      "vatChecking": "Vi kontrollerer nummeret i VIES…",
+      "vatVerified": "Bekræftet: Momsen er omvendt betalingspligtig, så vi fakturerer uden moms.",
+      "vatUnverified": "VIES-tjenesten svarede ikke. Vi fakturerer 23 % polsk moms og krediterer beløbet, så snart nummeret er bekræftet.",
+      "vatRejected": "VIES genkender ikke dette nummer, så ordren faktureres med 23 % polsk moms.",
+      "vatNotEligible": "Et polsk momsnummer kan ikke omfattes af omvendt betalingspligt: Varerne afsendes fra Polen, så der gælder 23 % polsk moms."
     },
     "review": {
       "title": "Tjek din bestilling",
@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Vi verificerer nummeret i VIES, når du afgiver bestillingen. Hvis det er gyldigt for leveringslandet, fakturerer vi uden moms.",
       "reverseChargeNote": "Leverance inden for EU: vi fakturerer uden moms, og du afregner den i dit eget land (art. 138 i EU's momsdirektiv).",
       "exportNote": "Varerne forlader EU, så vi fakturerer uden moms. Importafgifter og lokal moms betales ved ankomsten.",
-      "pendingNote": "Indtast dit momsnummer ovenfor, så kontrollerer vi det i VIES. Indtil det er bekræftet, indeholder det samlede beløb 23 % polsk moms."
+      "pendingNote": "Indtast dit momsnummer ovenfor, så kontrollerer vi det i VIES. Indtil det er bekræftet, indeholder totalen 23 % polsk moms."
     },
     "success": {
       "eyebrow": "Bestilling modtaget",
@@ -4380,19 +4380,19 @@
       "body": "Vi har sendt dig en kopi pr. e-mail. Vores team bekræfter det endelige beløb inklusive transport inden for én arbejdsdag.",
       "emailFallback": "Vi kunne ikke sende bekræftelsesmailen. Kontakt venligst info@re-sound.be, og oplys referencen {reference}.",
       "close": "Luk",
-      "correctedTotal": "Det endelige beløb er {total}. Det afviger fra det beløb, der blev vist under bestillingen, fordi dit momsnummer ikke kunne bekræftes; vi krediterer momsen, så snart det bliver bekræftet."
+      "correctedTotal": "Den endelige total er {total}. Den afviger fra beløbet, der blev vist under bestillingen, fordi dit momsnummer ikke kunne bekræftes; vi krediterer momsen, så snart det sker."
     },
     "error": {
       "generic": "Vi kunne ikke afgive din bestilling. Prøv igen, eller kontakt info@re-sound.be.",
       "network": "Forbindelsesproblem. Kontrollér din forbindelse, og prøv igen.",
-      "rate_limited": "For mange bestillinger fra denne forbindelse. Kontakt venligst info@re-sound.be.",
+      "rate_limited": "For mange ordrer fra denne forbindelse. Kontakt venligst info@re-sound.be.",
       "invalid_product": "Dette produkt kan ikke bestilles online. Anmod venligst om et tilbud.",
       "invalid_country": "Vælg venligst et leveringsland på listen.",
       "invalid_details": "Nogle oplysninger mangler eller er ugyldige. Kontrollér venligst formularen.",
-      "company_required": "Angiv venligst dit virksomhedsnavn.",
-      "consent_required": "Bekræft venligst bestillingsbetingelserne.",
-      "pricing_failed": "Vi kunne ikke beregne prisen på denne bestilling. Kontakt venligst info@re-sound.be.",
-      "not_delivered": "Din bestilling nåede ikke frem til os. Der er ikke registreret noget. Send venligst en e-mail til info@re-sound.be, så vi kan tage os af det derfra.",
+      "company_required": "Indtast venligst dit firmanavn.",
+      "consent_required": "Bekræft venligst ordrebetingelserne.",
+      "pricing_failed": "Vi kunne ikke prisberegne denne ordre. Kontakt venligst info@re-sound.be.",
+      "not_delivered": "Din ordre nåede ikke frem til os. Intet er blevet registreret. Send venligst en e-mail til info@re-sound.be, så tager vi den derfra.",
       "server_error": "Der gik noget galt hos os. Prøv venligst igen, eller kontakt info@re-sound.be."
     },
     "email": {

@@ -4338,11 +4338,11 @@
       "otherCountry": "Annað land",
       "notes": "Er eitthvað sem við ættum að vita?",
       "notesHint": "Valfrjálst: hæð, aðgengi, æskileg afhendingarvika.",
-      "vatChecking": "Athugum þetta númer hjá VIES…",
-      "vatVerified": "Staðfest: öfug skattskylda gildir, svo við gefum út reikning án virðisaukaskatts.",
-      "vatUnverified": "VIES-þjónustan svaraði ekki. Við gerum reikning með 23 % pólskum virðisaukaskatti og gefum út kreditreikning fyrir honum þegar númerið hefur verið staðfest.",
+      "vatChecking": "Verið er að athuga þetta númer hjá VIES…",
+      "vatVerified": "Staðfest: virðisaukaskattur færist yfir á kaupanda (öfug skattskylda), svo við reikningsfærum án vsk.",
+      "vatUnverified": "VIES-þjónustan svaraði ekki. Við reikningsfærum 23 % pólskan virðisaukaskatt og endurgreiðum hann með kreditreikningi um leið og númerið er staðfest.",
       "vatRejected": "VIES þekkir ekki þetta númer og því er pöntunin reikningsfærð með 23 % pólskum virðisaukaskatti.",
-      "vatNotEligible": "Öfug skattskylda á ekki við um pólskt VSK-númer: varan er send frá Póllandi og því gildir 23 % pólskur virðisaukaskattur."
+      "vatNotEligible": "Pólskt vsk-númer fellur ekki undir öfuga skattskyldu: varan er send frá Póllandi og því gildir 23 % pólskur virðisaukaskattur."
     },
     "review": {
       "title": "Farðu yfir pöntunina",
@@ -4352,7 +4352,7 @@
       "consent": "Ég legg inn bindandi pöntun. Re-Sound staðfestir hana með tölvupósti ásamt flutningskostnaði og verði á þeim valkostum sem eru verðlagðir eftir fyrirspurn. Ekkert er innheimt fyrir þá staðfestingu.",
       "submit": "Leggja inn pöntun",
       "submitting": "Sendi…",
-      "missingTitle": "Vinsamlegast fyllið út þessa reiti:"
+      "missingTitle": "Vinsamlegast fylltu út þessa reiti:"
     },
     "summary": {
       "net": "Samtala án vsk.",
@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Við staðfestum þetta númer í VIES þegar þú leggur inn pöntunina. Sé það gilt fyrir afhendingarlandið gefum við út reikning án virðisaukaskatts.",
       "reverseChargeNote": "Sala innan ESB: við gefum út reikning án virðisaukaskatts og þú gerir grein fyrir skattinum í þínu eigin landi (138. gr. vsk-tilskipunar ESB).",
       "exportNote": "Varan fer út fyrir ESB og því gefum við út reikning án virðisaukaskatts. Aðflutningsgjöld og staðbundinn virðisaukaskattur greiðast við komu.",
-      "pendingNote": "Sláið VSK-númerið inn hér að ofan og við athugum það hjá VIES. Þar til það er staðfest inniheldur heildarupphæðin 23 % pólskan virðisaukaskatt."
+      "pendingNote": "Sláðu inn vsk-númerið þitt hér að ofan og við athugum það hjá VIES. Þar til það er staðfest inniheldur heildarupphæðin 23 % pólskan virðisaukaskatt."
     },
     "success": {
       "eyebrow": "Pöntun móttekin",
@@ -4380,20 +4380,20 @@
       "body": "Við höfum sent þér afrit í tölvupósti. Teymið okkar staðfestir endanlega upphæð, að flutningi meðtöldum, innan eins virks dags.",
       "emailFallback": "Okkur tókst ekki að senda staðfestingarpóstinn. Hafðu samband við info@re-sound.be og tilgreindu tilvísunina {reference}.",
       "close": "Loka",
-      "correctedTotal": "Endanleg heildarupphæð er {total}. Hún er önnur en upphæðin sem birtist við pöntun vegna þess að ekki tókst að staðfesta VSK-númerið; við gefum út kreditreikning fyrir virðisaukaskattinum um leið og það tekst."
+      "correctedTotal": "Endanleg heildarupphæð er {total}. Hún er önnur en upphæðin sem sýnd var við pöntun vegna þess að ekki tókst að staðfesta vsk-númerið þitt; við endurgreiðum virðisaukaskattinn með kreditreikningi um leið og það tekst."
     },
     "error": {
       "generic": "Okkur tókst ekki að leggja inn pöntunina. Reyndu aftur eða hafðu samband við info@re-sound.be.",
       "network": "Tengingarvandamál. Athugaðu nettenginguna og reyndu aftur.",
-      "rate_limited": "Of margar pantanir frá þessari tengingu. Vinsamlegast hafið samband við info@re-sound.be.",
-      "invalid_product": "Ekki er hægt að panta þessa vöru á netinu. Vinsamlegast óskið eftir verðtilboði.",
-      "invalid_country": "Vinsamlegast veljið afhendingarland af listanum.",
-      "invalid_details": "Sumar upplýsingar vantar eða eru ógildar. Vinsamlegast yfirfarið eyðublaðið.",
-      "company_required": "Vinsamlegast sláið inn nafn fyrirtækisins.",
-      "consent_required": "Vinsamlegast staðfestið skilmála pöntunarinnar.",
-      "pricing_failed": "Okkur tókst ekki að reikna verð fyrir þessa pöntun. Vinsamlegast hafið samband við info@re-sound.be.",
-      "not_delivered": "Pöntunin barst okkur ekki. Ekkert hefur verið skráð. Vinsamlegast sendið tölvupóst á info@re-sound.be svo við getum tekið við málinu.",
-      "server_error": "Eitthvað fór úrskeiðis hjá okkur. Vinsamlegast reynið aftur eða hafið samband við info@re-sound.be."
+      "rate_limited": "Of margar pantanir frá þessari tengingu. Vinsamlegast hafðu samband við info@re-sound.be.",
+      "invalid_product": "Ekki er hægt að panta þessa vöru á netinu. Vinsamlegast óskaðu eftir tilboði.",
+      "invalid_country": "Vinsamlegast veldu afhendingarland af listanum.",
+      "invalid_details": "Einhverjar upplýsingar vantar eða eru ógildar. Vinsamlegast yfirfarðu eyðublaðið.",
+      "company_required": "Vinsamlegast sláðu inn nafn fyrirtækisins.",
+      "consent_required": "Vinsamlegast staðfestu pöntunarskilmálana.",
+      "pricing_failed": "Okkur tókst ekki að verðleggja þessa pöntun. Vinsamlegast hafðu samband við info@re-sound.be.",
+      "not_delivered": "Pöntunin barst okkur ekki. Ekkert hefur verið skráð. Vinsamlegast sendu tölvupóst á info@re-sound.be svo við getum haldið málinu áfram.",
+      "server_error": "Eitthvað fór úrskeiðis hjá okkur. Vinsamlegast reyndu aftur eða hafðu samband við info@re-sound.be."
     },
     "email": {
       "internalHeading": "Ný pöntun",

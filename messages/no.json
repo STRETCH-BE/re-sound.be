@@ -4338,11 +4338,11 @@
       "otherCountry": "Annet land",
       "notes": "Er det noe vi bør vite?",
       "notesHint": "Valgfritt: etasje, adkomst, ønsket leveringsuke.",
-      "vatChecking": "Kontrollerer dette nummeret mot VIES…",
-      "vatVerified": "Bekreftet: Merverdiavgiften omfattes av omvendt avgiftsplikt, så vi fakturerer uten mva.",
-      "vatUnverified": "VIES-tjenesten svarte ikke. Vi fakturerer 23 % polsk mva og krediterer den så snart nummeret er bekreftet.",
-      "vatRejected": "VIES kjenner ikke igjen dette nummeret, så bestillingen faktureres med 23 % polsk mva.",
-      "vatNotEligible": "Et polsk mva-nummer kan ikke omfattes av omvendt avgiftsplikt: Varene sendes fra Polen, så det beregnes 23 % polsk mva."
+      "vatChecking": "Kontrollerer nummeret i VIES …",
+      "vatVerified": "Bekreftet: merverdiavgiften er omfattet av omvendt avgiftsplikt, og vi fakturerer derfor uten mva.",
+      "vatUnverified": "VIES-tjenesten svarte ikke. Vi fakturerer 23 % polsk mva. og krediterer beløpet så snart nummeret er bekreftet.",
+      "vatRejected": "VIES kjenner ikke igjen dette nummeret, og bestillingen faktureres derfor med 23 % polsk mva.",
+      "vatNotEligible": "Et polsk mva-nummer kan ikke omfattes av omvendt avgiftsplikt: varene sendes fra Polen, og derfor gjelder 23 % polsk mva."
     },
     "review": {
       "title": "Kontroller bestillingen",
@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Vi kontrollerer dette nummeret i VIES når du legger inn bestillingen. Er det gyldig for leveringslandet, fakturerer vi uten mva.",
       "reverseChargeNote": "EU-intern levering: vi fakturerer uten mva., og du beregner avgiften i ditt eget land (art. 138 i EUs merverdiavgiftsdirektiv).",
       "exportNote": "Varene forlater EU, og vi fakturerer derfor uten mva. Importavgifter og lokal mva. påløper ved ankomst.",
-      "pendingNote": "Oppgi mva-nummeret deres ovenfor, så kontrollerer vi det mot VIES. Fram til det er bekreftet, inkluderer totalsummen 23 % polsk mva."
+      "pendingNote": "Oppgi mva-nummeret ovenfor, så kontrollerer vi det i VIES. Inntil det er bekreftet, inkluderer totalsummen 23 % polsk mva."
     },
     "success": {
       "eyebrow": "Bestilling mottatt",
@@ -4380,20 +4380,20 @@
       "body": "Vi har sendt deg en kopi på e-post. Teamet vårt bekrefter det endelige beløpet, inkludert transport, innen én virkedag.",
       "emailFallback": "Vi klarte ikke å sende bekreftelsen på e-post. Kontakt info@re-sound.be og oppgi referanse {reference}.",
       "close": "Lukk",
-      "correctedTotal": "Den endelige totalsummen er {total}. Den avviker fra beløpet som ble vist under bestillingen, fordi mva-nummeret deres ikke kunne bekreftes; vi krediterer merverdiavgiften så snart det er bekreftet."
+      "correctedTotal": "Endelig totalsum er {total}. Den avviker fra beløpet som ble vist under bestillingen, fordi mva-nummeret ikke kunne bekreftes; vi krediterer merverdiavgiften så snart det er bekreftet."
     },
     "error": {
       "generic": "Vi klarte ikke å registrere bestillingen din. Prøv igjen, eller kontakt info@re-sound.be.",
       "network": "Tilkoblingsproblem. Kontroller forbindelsen og prøv igjen.",
-      "rate_limited": "For mange bestillinger fra denne tilkoblingen. Ta kontakt med info@re-sound.be.",
+      "rate_limited": "For mange bestillinger fra denne tilkoblingen. Ta kontakt på info@re-sound.be.",
       "invalid_product": "Dette produktet kan ikke bestilles på nett. Be om et tilbud.",
       "invalid_country": "Velg et leveringsland fra listen.",
       "invalid_details": "Enkelte opplysninger mangler eller er ugyldige. Kontroller skjemaet.",
-      "company_required": "Oppgi firmanavnet deres.",
+      "company_required": "Oppgi firmanavnet.",
       "consent_required": "Bekreft bestillingsvilkårene.",
-      "pricing_failed": "Vi kunne ikke beregne prisen for denne bestillingen. Ta kontakt med info@re-sound.be.",
-      "not_delivered": "Bestillingen deres nådde ikke fram til oss. Ingenting er registrert. Send en e-post til info@re-sound.be, så tar vi det derfra.",
-      "server_error": "Noe gikk galt hos oss. Prøv igjen, eller ta kontakt med info@re-sound.be."
+      "pricing_failed": "Vi kunne ikke beregne prisen på denne bestillingen. Ta kontakt på info@re-sound.be.",
+      "not_delivered": "Bestillingen nådde ikke frem til oss. Ingenting er registrert. Send en e-post til info@re-sound.be, så tar vi det derfra.",
+      "server_error": "Noe gikk galt hos oss. Prøv igjen, eller ta kontakt på info@re-sound.be."
     },
     "email": {
       "internalHeading": "Ny bestilling",

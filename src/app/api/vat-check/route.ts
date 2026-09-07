@@ -13,6 +13,8 @@ import { checkVatNumber } from '@/lib/order/vies';
  */
 
 export const runtime = 'nodejs';
+// One VIES round trip with a 6 s ceiling of its own.
+export const maxDuration = 15;
 
 const WINDOW_MS = 60 * 1000;
 const MAX_PER_WINDOW = 12;
@@ -47,13 +49,28 @@ function rateLimited(key: string): boolean {
 
 export async function POST(request: NextRequest) {
   try {
+    // Same-origin only. Without this the endpoint is an open VIES proxy, and
+    // exhausting the rate limit from outside would push every real business
+    // order back to 23 % VAT.
+    const origin = request.headers.get('origin');
+    if (origin) {
+      const host = request.headers.get('host');
+      let originHost = '';
+      try {
+        originHost = new URL(origin).host;
+      } catch {
+        originHost = '';
+      }
+      if (!host || originHost !== host) return NextResponse.json({ status: 'unverified' }, { status: 403 });
+    }
+
     if (rateLimited(clientKey(request))) {
       return NextResponse.json({ status: 'unverified' }, { status: 429 });
     }
 
     const body = (await request.json()) as { vatNumber?: string };
-    const raw = typeof body.vatNumber === 'string' ? body.vatNumber.slice(0, 20) : '';
-    const vatNumber = normaliseVatNumber(raw);
+    const raw = typeof body.vatNumber === 'string' ? body.vatNumber.slice(0, 64) : '';
+    const vatNumber = normaliseVatNumber(raw).slice(0, 20);
 
     if (!vatNumber) return NextResponse.json({ status: 'empty' });
 

@@ -4338,11 +4338,11 @@
       "otherCountry": "Autre pays",
       "notes": "Y a-t-il quelque chose à signaler ?",
       "notesHint": "Facultatif : étage, accès, semaine de livraison souhaitée.",
-      "vatChecking": "Vérification de ce numéro auprès de VIES…",
-      "vatVerified": "Vérifié : la TVA est autoliquidée, nous facturons donc sans TVA.",
-      "vatUnverified": "Le service VIES n'a pas répondu. Nous facturons la TVA polonaise de 23 % et la créditons dès que le numéro est vérifié.",
-      "vatRejected": "VIES ne reconnaît pas ce numéro ; la commande est donc facturée avec la TVA polonaise de 23 %.",
-      "vatNotEligible": "Un numéro de TVA polonais ne peut pas faire l'objet d'une autoliquidation : les marchandises sont expédiées depuis la Pologne, la TVA polonaise de 23 % s'applique donc."
+      "vatChecking": "Vérification de ce numéro dans VIES…",
+      "vatVerified": "Vérifié : la TVA est autoliquidée, nous facturons donc hors TVA.",
+      "vatUnverified": "Le service VIES n'a pas répondu. Nous facturons 23 % de TVA polonaise et la créditons une fois le numéro vérifié.",
+      "vatRejected": "VIES ne reconnaît pas ce numéro : la commande est donc facturée avec 23 % de TVA polonaise.",
+      "vatNotEligible": "Un numéro de TVA polonais ne peut pas faire l'objet d'une autoliquidation : les marchandises sont expédiées depuis la Pologne et sont donc facturées avec 23 % de TVA polonaise."
     },
     "review": {
       "title": "Vérifiez votre commande",
@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Nous vérifions ce numéro dans VIES lorsque vous passez la commande. S'il est valide pour le pays de livraison, nous facturons hors TVA.",
       "reverseChargeNote": "Livraison intracommunautaire : nous facturons hors TVA et vous en êtes redevable dans votre pays (art. 138 de la directive TVA de l'UE).",
       "exportNote": "Les marchandises quittent l'UE : nous facturons donc hors TVA. Les droits d'importation et la TVA locale sont dus à l'arrivée.",
-      "pendingNote": "Saisissez votre numéro de TVA ci-dessus et nous le vérifions auprès de VIES. Tant qu'il n'est pas confirmé, le total inclut la TVA polonaise de 23 %."
+      "pendingNote": "Indiquez votre numéro de TVA ci-dessus et nous le vérifions dans VIES. Tant qu'il n'est pas confirmé, le total comprend 23 % de TVA polonaise."
     },
     "success": {
       "eyebrow": "Commande reçue",
@@ -4380,7 +4380,7 @@
       "body": "Nous vous avons envoyé une copie par e-mail. Notre équipe confirme le montant définitif, frais de transport compris, dans un délai d'un jour ouvrable.",
       "emailFallback": "Nous n'avons pas pu envoyer l'e-mail de confirmation. Veuillez contacter info@re-sound.be en indiquant la référence {reference}.",
       "close": "Fermer",
-      "correctedTotal": "Le total final est de {total}. Il diffère du montant affiché lors de la commande car votre numéro de TVA n'a pas pu être confirmé ; nous créditons la TVA dès qu'il l'est."
+      "correctedTotal": "Le total définitif s'élève à {total}. Il diffère du montant affiché lors de la commande car votre numéro de TVA n'a pas pu être confirmé ; nous créditons la TVA dès qu'il le sera."
     },
     "error": {
       "generic": "Nous n'avons pas pu enregistrer votre commande. Veuillez réessayer ou contacter info@re-sound.be.",
@@ -4388,12 +4388,12 @@
       "rate_limited": "Trop de commandes depuis cette connexion. Veuillez contacter info@re-sound.be.",
       "invalid_product": "Ce produit ne peut pas être commandé en ligne. Veuillez demander un devis.",
       "invalid_country": "Veuillez choisir un pays de livraison dans la liste.",
-      "invalid_details": "Certaines informations sont manquantes ou invalides. Veuillez vérifier le formulaire.",
-      "company_required": "Veuillez indiquer le nom de votre société.",
+      "invalid_details": "Certaines informations sont manquantes ou incorrectes. Veuillez vérifier le formulaire.",
+      "company_required": "Veuillez indiquer le nom de votre entreprise.",
       "consent_required": "Veuillez confirmer les conditions de commande.",
       "pricing_failed": "Nous n'avons pas pu calculer le prix de cette commande. Veuillez contacter info@re-sound.be.",
-      "not_delivered": "Votre commande ne nous est pas parvenue. Rien n'a été enregistré. Veuillez écrire à info@re-sound.be afin que nous puissions prendre le relais.",
-      "server_error": "Une erreur s'est produite de notre côté. Veuillez réessayer ou contacter info@re-sound.be."
+      "not_delivered": "Votre commande ne nous est pas parvenue. Rien n'a été enregistré. Veuillez envoyer un e-mail à info@re-sound.be afin que nous puissions prendre le relais.",
+      "server_error": "Une erreur est survenue de notre côté. Veuillez réessayer ou contacter info@re-sound.be."
     },
     "email": {
       "internalHeading": "Nouvelle commande",

@@ -88,7 +88,18 @@ numbers. Amounts are handled in whole cents.
 
 Also on the route: honeypot field, required consent, per-address rate limit
 (5 orders per 10 minutes), field-length limits, control characters stripped,
-HTML-escaping of every buyer-supplied string in the e-mails, and `GET` refused.
+HTML-escaping of every buyer-supplied string in the e-mails, a same-origin
+check, and `GET` refused.
+
+Two limits worth knowing:
+
+- **The rate limit is per warm instance.** It runs in memory, so a serverless
+  platform that keeps several instances warm allows several buckets. It stops
+  a simple loop, not a distributed one. Move it to a shared store if abuse ever
+  becomes real.
+- **Delivery is confirmed only as far as the webhook.** A 2xx from Power
+  Automate means the flow accepted the message, not that the mailbox received
+  it. If orders ever go missing, check the flow's own run history first.
 
 ## Configuration
 

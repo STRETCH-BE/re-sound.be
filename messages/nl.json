@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Wij controleren dit nummer via VIES wanneer u de bestelling plaatst. Is het geldig voor het land van levering, dan factureren wij zonder btw.",
       "reverseChargeNote": "Intracommunautaire levering: wij factureren zonder btw en u geeft de btw aan in uw eigen land (art. 138 van de EU-btw-richtlijn).",
       "exportNote": "De goederen verlaten de EU, dus factureren wij zonder btw. Invoerrechten en lokale btw zijn bij aankomst verschuldigd.",
-      "pendingNote": "Vul hierboven uw btw-nummer in en wij controleren het via VIES. Zolang het niet bevestigd is, bevat het totaal 23 % Poolse btw."
+      "pendingNote": "Vul hierboven uw btw-nummer in, dan controleren wij het via VIES. Zolang het niet bevestigd is, bevat het totaal 23 % Poolse btw."
     },
     "success": {
       "eyebrow": "Bestelling ontvangen",
@@ -4380,20 +4380,20 @@
       "body": "We hebben u een kopie per e-mail gestuurd. Ons team bevestigt het definitieve bedrag, inclusief transport, binnen één werkdag.",
       "emailFallback": "We konden de bevestigingsmail niet versturen. Neem contact op met info@re-sound.be met vermelding van referentie {reference}.",
       "close": "Sluiten",
-      "correctedTotal": "Het definitieve totaal bedraagt {total}. Het verschilt van het bedrag dat tijdens het bestellen werd getoond omdat uw btw-nummer niet bevestigd kon worden; wij crediteren de btw zodra dat wel het geval is."
+      "correctedTotal": "Het definitieve totaal bedraagt {total}. Dat verschilt van het bedrag dat tijdens het bestellen werd getoond omdat uw btw-nummer niet bevestigd kon worden; wij crediteren de btw zodra dat wel het geval is."
     },
     "error": {
       "generic": "We konden uw bestelling niet plaatsen. Probeer het opnieuw of neem contact op met info@re-sound.be.",
       "network": "Verbindingsprobleem. Controleer uw verbinding en probeer het opnieuw.",
-      "rate_limited": "Te veel bestellingen vanaf deze verbinding. Neem contact op met info@re-sound.be.",
+      "rate_limited": "Te veel bestellingen vanaf deze verbinding. Neem contact op via info@re-sound.be.",
       "invalid_product": "Dit product kan niet online besteld worden. Vraag een offerte aan.",
       "invalid_country": "Kies een land van levering uit de lijst.",
       "invalid_details": "Sommige gegevens ontbreken of zijn ongeldig. Controleer het formulier.",
       "company_required": "Vul uw bedrijfsnaam in.",
       "consent_required": "Bevestig de bestelvoorwaarden.",
-      "pricing_failed": "We konden geen prijs berekenen voor deze bestelling. Neem contact op met info@re-sound.be.",
+      "pricing_failed": "Wij konden voor deze bestelling geen prijs berekenen. Neem contact op via info@re-sound.be.",
       "not_delivered": "Uw bestelling heeft ons niet bereikt. Er is niets geregistreerd. Stuur een e-mail naar info@re-sound.be, dan nemen wij het verder op.",
-      "server_error": "Er is iets misgegaan aan onze kant. Probeer het opnieuw of neem contact op met info@re-sound.be."
+      "server_error": "Er is bij ons iets misgegaan. Probeer het opnieuw of neem contact op via info@re-sound.be."
     },
     "email": {
       "internalHeading": "Nieuwe bestelling",

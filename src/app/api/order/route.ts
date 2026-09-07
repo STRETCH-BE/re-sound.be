@@ -29,6 +29,9 @@ import { defaultLocale, locales, localeFullCodes, type Locale } from '@/i18n/con
  */
 
 export const runtime = 'nodejs';
+// VIES (6 s) plus the two mail calls (8 s each, sent together) fit inside this;
+// the platform default would cut the request off mid-send.
+export const maxDuration = 30;
 
 interface OrderRequest {
   locale?: string;
@@ -232,7 +235,7 @@ function internalEmail(ctx: EmailContext, t: Translator): { html: string; text: 
   // the rate: an EU delivery outside Poland, with a non-Polish EU number that
   // is well formed. Anywhere else the order is already correct without it, so
   // flagging it would send Michael chasing nothing.
-  const numberCountry = customer.vatNumber.slice(0, 2).toUpperCase();
+  const numberCountry = splitVatNumber(customer.vatNumber)?.country ?? '';
   const verificationWouldMatter =
     vatFormatValid &&
     order.vatMode === 'domestic' &&
@@ -268,7 +271,7 @@ function internalEmail(ctx: EmailContext, t: Translator): { html: string; text: 
     ['VAT treatment', `${ctx.vatLabel} (${order.vatMode})`],
   ];
 
-  if (order.vatMode === 'reverse-charge' && vatNumberCountryDiffers(customer.country, customer.vatNumber.slice(0, 2))) {
+  if (order.vatMode === 'reverse-charge' && vatNumberCountryDiffers(customer.country, splitVatNumber(customer.vatNumber)?.country)) {
     rows.push([
       'CHECK',
       'VAT number issued by a country other than the delivery country - prepare the intra-Community paperwork accordingly',
@@ -362,6 +365,8 @@ ${esc(customer.street)}<br>${esc(`${customer.postalCode} ${customer.city}`)}<br>
     `  ${ctx.vatLabel}: ${formatCents(order.vatCents, ctx.localeTag)}`,
     `  ${t('order.summary.total')}: ${formatCents(order.grossCents, ctx.localeTag)}`,
     '',
+    order.vatMode === 'reverse-charge' ? t('order.vat.reverseChargeNote') : '',
+    order.vatMode === 'export' ? t('order.vat.exportNote') : '',
     t('order.summary.transportNote'),
     order.hasOnRequestItems ? t('order.summary.onRequestNote') : '',
     '',
@@ -448,7 +453,10 @@ export async function POST(request: NextRequest) {
     const postalCode = clean(raw.postalCode, 20);
     const city = clean(raw.city);
     const companyName = clean(raw.companyName);
-    const vatNumber = raw.vatNumber ? normaliseVatNumber(clean(raw.vatNumber, 20)) : '';
+    // Normalise before capping: the dialog strips spaces and dots before it
+    // validates, so capping the raw string first made a spaced-out number such
+    // as "BE 0123 456 789 " look different to the server than to the browser.
+    const vatNumber = raw.vatNumber ? normaliseVatNumber(clean(raw.vatNumber, 64)).slice(0, 20) : '';
 
     if (!firstName || !lastName || !EMAIL_RE.test(email) || !street || !postalCode || !city) {
       return NextResponse.json({ error: 'invalid_details' }, { status: 400 });
@@ -499,10 +507,10 @@ export async function POST(request: NextRequest) {
       timeZone: 'Europe/Brussels',
     });
 
+    // fallback: 'none' makes DisplayNames return undefined for a code ICU
+    // does not know (XI), instead of echoing the code back as its own name.
     const countryName =
-      countryCode === 'OTHER'
-        ? country.name
-        : new Intl.DisplayNames(['en'], { type: 'region' }).of(countryCode) ?? country.name;
+      new Intl.DisplayNames(['en'], { type: 'region', fallback: 'none' }).of(countryCode) ?? country.name;
 
     const customer: Customer = {
       type,

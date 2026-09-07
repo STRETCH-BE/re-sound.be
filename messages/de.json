@@ -4338,11 +4338,11 @@
       "otherCountry": "Anderes Land",
       "notes": "Gibt es etwas, das wir wissen sollten?",
       "notesHint": "Optional: Etage, Zufahrt, gewünschte Lieferwoche.",
-      "vatChecking": "Diese Nummer wird mit VIES geprüft…",
-      "vatVerified": "Bestätigt: Es gilt das Reverse-Charge-Verfahren, daher stellen wir ohne Mehrwertsteuer in Rechnung.",
-      "vatUnverified": "Der VIES-Dienst hat nicht geantwortet. Wir stellen 23 % polnische Mehrwertsteuer in Rechnung und schreiben sie gut, sobald die Nummer bestätigt ist.",
+      "vatChecking": "Diese Nummer wird über VIES geprüft…",
+      "vatVerified": "Bestätigt: Es gilt das Reverse-Charge-Verfahren, daher stellen wir die Rechnung ohne Mehrwertsteuer aus.",
+      "vatUnverified": "Der VIES-Dienst hat nicht geantwortet. Wir stellen 23 % polnische Mehrwertsteuer in Rechnung und schreiben sie Ihnen gut, sobald die Nummer bestätigt ist.",
       "vatRejected": "VIES erkennt diese Nummer nicht, daher wird die Bestellung mit 23 % polnischer Mehrwertsteuer in Rechnung gestellt.",
-      "vatNotEligible": "Bei einer polnischen Umsatzsteuer-Identifikationsnummer ist das Reverse-Charge-Verfahren nicht möglich: Die Ware wird aus Polen versandt, daher fallen 23 % polnische Mehrwertsteuer an."
+      "vatNotEligible": "Bei einer polnischen USt-IdNr. ist das Reverse-Charge-Verfahren nicht möglich: Die Ware wird aus Polen versandt, daher fallen 23 % polnische Mehrwertsteuer an."
     },
     "review": {
       "title": "Prüfen Sie Ihre Bestellung",
@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Wir prüfen diese Nummer bei der Bestellung über VIES. Ist sie für das Lieferland gültig, stellen wir die Rechnung ohne Mehrwertsteuer aus.",
       "reverseChargeNote": "Innergemeinschaftliche Lieferung: Wir stellen die Rechnung ohne Mehrwertsteuer aus; die Steuerschuld geht auf Sie über, und Sie melden die Umsatzsteuer in Ihrem Land an (Art. 138 der EU-Mehrwertsteuerrichtlinie).",
       "exportNote": "Die Ware verlässt die EU, daher stellen wir die Rechnung ohne Mehrwertsteuer aus. Einfuhrabgaben und die Mehrwertsteuer des Bestimmungslands werden bei der Einfuhr fällig.",
-      "pendingNote": "Geben Sie oben Ihre Umsatzsteuer-Identifikationsnummer ein, und wir prüfen sie mit VIES. Bis zur Bestätigung enthält der Gesamtbetrag 23 % polnische Mehrwertsteuer."
+      "pendingNote": "Geben Sie oben Ihre USt-IdNr. ein, dann prüfen wir sie über VIES. Bis zur Bestätigung enthält der Gesamtbetrag 23 % polnische Mehrwertsteuer."
     },
     "success": {
       "eyebrow": "Bestellung eingegangen",
@@ -4380,12 +4380,12 @@
       "body": "Eine Kopie haben wir Ihnen per E-Mail geschickt. Unser Team bestätigt den endgültigen Betrag inklusive Transport innerhalb eines Werktags.",
       "emailFallback": "Wir konnten die Bestätigungs-E-Mail nicht versenden. Bitte wenden Sie sich unter Angabe der Referenz {reference} an info@re-sound.be.",
       "close": "Schließen",
-      "correctedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Er weicht von dem bei der Bestellung angezeigten Betrag ab, weil Ihre Umsatzsteuer-Identifikationsnummer nicht bestätigt werden konnte; sobald sie bestätigt ist, schreiben wir Ihnen die Mehrwertsteuer gut."
+      "correctedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Er weicht von dem bei der Bestellung angezeigten Betrag ab, weil Ihre USt-IdNr. nicht bestätigt werden konnte; sobald die Nummer bestätigt ist, schreiben wir Ihnen die Mehrwertsteuer gut."
     },
     "error": {
       "generic": "Ihre Bestellung konnte nicht übermittelt werden. Bitte versuchen Sie es erneut oder wenden Sie sich an info@re-sound.be.",
       "network": "Verbindungsproblem. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
-      "rate_limited": "Zu viele Bestellungen von dieser Verbindung. Bitte wenden Sie sich an info@re-sound.be.",
+      "rate_limited": "Zu viele Bestellungen über diese Verbindung. Bitte wenden Sie sich an info@re-sound.be.",
       "invalid_product": "Dieses Produkt kann nicht online bestellt werden. Bitte fordern Sie ein Angebot an.",
       "invalid_country": "Bitte wählen Sie ein Lieferland aus der Liste aus.",
       "invalid_details": "Einige Angaben fehlen oder sind ungültig. Bitte überprüfen Sie das Formular.",

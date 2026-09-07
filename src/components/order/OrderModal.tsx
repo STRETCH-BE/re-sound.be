@@ -86,6 +86,9 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
   const product = getOrderable(slug);
   const [step, setStep] = useState<Step>('configure');
   const [quantity, setQuantity] = useState(1);
+  // The field keeps its own text so clearing it leaves an empty box instead of
+  // snapping back to 1, which turned "clear, type 2" into 12.
+  const [quantityText, setQuantityText] = useState('1');
   const [options, setOptions] = useState<Record<string, number>>({});
   const [customer, setCustomer] = useState<CustomerForm>(EMPTY_CUSTOMER);
   const [consent, setConsent] = useState(false);
@@ -98,6 +101,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     'idle' | 'checking' | 'valid' | 'invalid' | 'unverified' | 'format_invalid' | 'not_eligible'
   >('idle');
   const [vatCountry, setVatCountry] = useState<string | null>(null);
+  const [honeypot, setHoneypot] = useState('');
 
   const dialogRef = useRef<HTMLDivElement>(null);
   const previousFocus = useRef<HTMLElement | null>(null);
@@ -123,10 +127,13 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
       // reference and the delivery warning.
       if (e.key === 'Escape' && statusRef.current !== 'sending') closeRef.current();
       if (e.key !== 'Tab') return;
-      const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+      const all = dialogRef.current?.querySelectorAll<HTMLElement>(
         'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
       );
-      if (!focusable || focusable.length === 0) return;
+      const focusable = Array.from(all ?? []).filter(
+        (el) => el.tabIndex >= 0 && el.getAttribute('aria-hidden') !== 'true' && el.offsetParent !== null
+      );
+      if (focusable.length === 0) return;
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
       const active = document.activeElement as HTMLElement | null;
@@ -144,7 +151,6 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     document.addEventListener('keydown', onKey);
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    window.setTimeout(() => dialogRef.current?.querySelector<HTMLElement>('button, input, select')?.focus(), 30);
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = previousOverflow;
@@ -160,6 +166,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     if (result) {
       setStep('configure');
       setQuantity(1);
+      setQuantityText('1');
       setOptions({});
       setConsent(false);
       setResult(null);
@@ -260,17 +267,16 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
   const optionDescription = (option: OrderOption): string | null => {
     if (option.labelFrom === 'order') return option.hasNote ? t(`options.${option.id}.note`) : null;
-    try {
-      return tProduct(`addons.${option.id}.desc`);
-    } catch {
-      return null;
-    }
+    return tProduct.has(`addons.${option.id}.desc`) ? tProduct(`addons.${option.id}.desc`) : null;
   };
 
-  const optionPriceLabel = (option: OrderOption): string =>
-    option.priceExclVat === null
-      ? t('summary.onRequest')
-      : t('configure.optionPrice', { price: formatCents(option.priceExclVat * 100, localeTag) });
+  const optionPriceLabel = (option: OrderOption): string => {
+    if (option.priceExclVat === null) return t('summary.onRequest');
+    // A per-booth option is charged once per booth, so show what it actually
+    // adds to this order rather than the price of one.
+    const cents = Math.round(option.priceExclVat * 100) * (option.perUnit ? quantity : 1);
+    return t('configure.optionPrice', { price: formatCents(cents, localeTag) });
+  };
 
   const money = (cents: number) => formatCents(cents, localeTag);
 
@@ -278,7 +284,11 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     vatStatus === 'checking'
       ? t('details.vatChecking')
       : vatStatus === 'valid'
-        ? t('details.vatVerified')
+        ? priced.vatMode === 'reverse-charge'
+          ? t('details.vatVerified')
+          : priced.vatMode === 'export'
+            ? t('vat.exportNote')
+            : t('vat.polandNote')
         : vatStatus === 'invalid'
           ? t('details.vatRejected')
           : vatStatus === 'unverified'
@@ -346,11 +356,11 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
       const response = await fetch('/api/order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ locale, selection, customer, consent }),
+        body: JSON.stringify({ locale, selection, customer, consent, website: honeypot }),
       });
       const data = (await response.json()) as {
         reference?: string;
-        emailSent?: boolean;
+        confirmationSent?: boolean;
         error?: string;
         totals?: { grossCents: number; vatMode: string };
       };
@@ -373,7 +383,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         vatMode: data.totals?.vatMode ?? priced.vatMode,
         valueCents: serverGross ?? priced.grossCents,
       });
-      setResult({ reference: data.reference, emailSent: data.emailSent !== false, correctedTotal: corrected });
+      setResult({ reference: data.reference, emailSent: data.confirmationSent !== false, correctedTotal: corrected });
       setStatus('idle');
       goTo('done');
     } catch {
@@ -383,9 +393,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
   };
 
   const stepIndex = STEP_ORDER.indexOf(step);
+  // Never abandon an order that is already on its way to the server: the
+  // request completes either way, but the buyer would lose their reference.
+  const requestClose = () => {
+    if (status !== 'sending') onClose();
+  };
 
   return createPortal(
-    <div className="om-backdrop" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
+    <div className="om-backdrop" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && requestClose()}>
       <div
         ref={dialogRef}
         className="om-dialog"
@@ -398,7 +413,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
             <p className="om-eyebrow">{step === 'done' ? t('success.eyebrow') : t('step', { current: stepIndex + 1, total: STEP_ORDER.length })}</p>
             <h2 id="order-modal-title">{step === 'done' ? t('success.title') : t('title', { product: productName })}</h2>
           </div>
-          <button type="button" className="om-close" onClick={onClose} aria-label={t('close')}>
+          <button type="button" className="om-close" onClick={requestClose} aria-disabled={status === 'sending'} aria-label={t('close')}>
             ×
           </button>
         </header>
@@ -414,6 +429,19 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           </ol>
         )}
 
+        {/* Honeypot: never shown, never focusable. The route drops any order
+            that fills it in. */}
+        <input
+          type="text"
+          name="website"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="om-sr-only"
+        />
+
         <div className="om-body">
           {/* ── Step 1: configuration ─────────────────────────────── */}
           {step === 'configure' && (
@@ -423,7 +451,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
               <div className="om-qty">
                 <label htmlFor="order-qty">{t('configure.quantity')}</label>
                 <div className="om-qty-controls">
-                  <button type="button" onClick={() => setQuantity((q) => Math.max(1, q - 1))} aria-label={t('configure.decrease')}>
+                  <button type="button" onClick={() => { const next = Math.max(1, quantity - 1); setQuantity(next); setQuantityText(String(next)); }} aria-label={t('configure.decrease')}>
                     −
                   </button>
                   <input
@@ -431,10 +459,18 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                     type="number"
                     min={1}
                     max={product.maxQty}
-                    value={quantity}
-                    onChange={(e) => setQuantity(Math.min(product.maxQty, Math.max(1, Number(e.target.value) || 1)))}
+                    value={quantityText}
+                    onChange={(e) => {
+                      const text = e.target.value;
+                      setQuantityText(text);
+                      const parsed = Number(text);
+                      if (text.trim() !== '' && Number.isFinite(parsed)) {
+                        setQuantity(Math.min(product.maxQty, Math.max(1, Math.floor(parsed))));
+                      }
+                    }}
+                    onBlur={() => setQuantityText(String(quantity))}
                   />
-                  <button type="button" onClick={() => setQuantity((q) => Math.min(product.maxQty, q + 1))} aria-label={t('configure.increase')}>
+                  <button type="button" onClick={() => { const next = Math.min(product.maxQty, quantity + 1); setQuantity(next); setQuantityText(String(next)); }} aria-label={t('configure.increase')}>
                     +
                   </button>
                 </div>
@@ -530,6 +566,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                     id="order-vat"
                     label={t('details.vatNumber')}
                     hint={vatHint}
+                    live
                     invalid={vatStatus === 'format_invalid' || vatStatus === 'invalid'}
                   >
                     <input
@@ -668,7 +705,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
           {/* ── Confirmation ──────────────────────────────────────── */}
           {step === 'done' && result && (
-            <div className="om-done" tabIndex={-1} role="status">
+            <div className="om-done" tabIndex={-1}>
               <p className="om-done-icon" aria-hidden="true">
                 ✅
               </p>
@@ -688,7 +725,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         {/* ── Running total + navigation ──────────────────────────── */}
         {step !== 'done' && (
           <footer className="om-footer">
-            <div className="om-totals" aria-live="polite">
+            <div className="om-totals" aria-live="polite" aria-atomic="true">
               <div>
                 <span>{t('summary.net')}</span>
                 <span>{money(priced.netCents)}</span>
@@ -705,6 +742,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
               {priced.hasOnRequestItems && <p className="om-totals-note om-totals-note--warn">{t('summary.onRequestNote')}</p>}
             </div>
 
+            <p className="om-sr-only" role="status">{status === 'sending' ? t('review.submitting') : ''}</p>
             <div className="om-actions">
               {stepIndex > 0 && (
                 <button type="button" className="om-btn om-btn--ghost" onClick={() => goTo(STEP_ORDER[stepIndex - 1])}>
@@ -752,6 +790,17 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
       </div>
 
       <style jsx>{`
+        .om-sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
         .om-backdrop {
           position: fixed;
           inset: 0;
@@ -1205,11 +1254,11 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           background: #0f4a76;
         }
         .om-btn--primary[aria-disabled='true'] {
-          background: #7c93a8;
+          background: #5c7185;
         }
         .om-btn--ghost {
           background: transparent;
-          border-color: #cbd5e1;
+          border-color: #6b7d94;
           color: var(--deep-blue, #0d3a5c);
         }
         @media (max-width: 640px) {
@@ -1269,6 +1318,7 @@ function Field({
   required,
   invalid,
   wide,
+  live,
   children,
 }: {
   id: string;
@@ -1277,6 +1327,8 @@ function Field({
   required?: boolean;
   invalid?: boolean;
   wide?: boolean;
+  /** Announce hint changes: the VIES answer arrives after the field is left. */
+  live?: boolean;
   children: React.ReactElement;
 }) {
   const hintId = hint ? `${id}-hint` : undefined;
@@ -1291,7 +1343,14 @@ function Field({
       </label>
       {control}
       {hint && (
-        <p id={hintId} style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: invalid ? '#b91c1c' : '#5a6b7f', lineHeight: 1.5 }}>{hint}</p>
+        <p
+          id={hintId}
+          role={live ? 'status' : undefined}
+          aria-live={live ? 'polite' : undefined}
+          style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: invalid ? '#b91c1c' : '#5a6b7f', lineHeight: 1.5 }}
+        >
+          {hint}
+        </p>
       )}
       <style jsx>{`
         .om-field {

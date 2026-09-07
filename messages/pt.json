@@ -4339,10 +4339,10 @@
       "notes": "Há algo que devamos saber?",
       "notesHint": "Opcional: piso, acessos, semana de entrega preferida.",
       "vatChecking": "A verificar este número no VIES…",
-      "vatVerified": "Verificado: o IVA é autoliquidado, pelo que faturamos sem IVA.",
-      "vatUnverified": "O serviço VIES não respondeu. Faturamos 23 % de IVA polaco e creditamo-lo assim que o número for verificado.",
+      "vatVerified": "Confirmado: o IVA é objeto de autoliquidação, pelo que faturamos sem IVA.",
+      "vatUnverified": "O serviço VIES não respondeu. Faturamos 23 % de IVA polaco e creditamos esse valor assim que o número for validado.",
       "vatRejected": "O VIES não reconhece este número, pelo que a encomenda é faturada com 23 % de IVA polaco.",
-      "vatNotEligible": "Um número de IVA polaco não permite a autoliquidação: os bens são expedidos da Polónia, pelo que se aplicam 23 % de IVA polaco."
+      "vatNotEligible": "Um número de IVA polaco não pode ser objeto de autoliquidação: os bens são expedidos da Polónia, pelo que se aplicam 23 % de IVA polaco."
     },
     "review": {
       "title": "Verifique a sua encomenda",
@@ -4352,7 +4352,7 @@
       "consent": "Estou a efetuar uma encomenda vinculativa. A Re-Sound confirma-a por e-mail, com o custo de transporte e eventuais opções com preço sob consulta. Nada é cobrado antes dessa confirmação.",
       "submit": "Efetuar encomenda",
       "submitting": "A enviar…",
-      "missingTitle": "Preencha estes campos:"
+      "missingTitle": "Preencha os seguintes campos:"
     },
     "summary": {
       "net": "Subtotal sem IVA",
@@ -4371,7 +4371,7 @@
       "numberCountryNote": "Verificamos este número no VIES quando efetuar a encomenda. Se for válido para o país de entrega, faturamos sem IVA.",
       "reverseChargeNote": "Transmissão intracomunitária: faturamos sem IVA e o imposto é autoliquidado por si no seu país (artigo 138.º da Diretiva IVA da UE).",
       "exportNote": "Os bens saem da UE, pelo que faturamos sem IVA. Os direitos de importação e o IVA local são devidos à chegada.",
-      "pendingNote": "Indique acima o seu número de IVA e verificamo-lo no VIES. Até estar confirmado, o total inclui 23 % de IVA polaco."
+      "pendingNote": "Introduza acima o seu número de IVA e verificamo-lo no VIES. Até à confirmação, o total inclui 23 % de IVA polaco."
     },
     "success": {
       "eyebrow": "Encomenda recebida",
@@ -4380,7 +4380,7 @@
       "body": "Enviámos-lhe uma cópia por e-mail. A nossa equipa confirma o valor final, incluindo o transporte, no prazo de um dia útil.",
       "emailFallback": "Não foi possível enviar o e-mail de confirmação. Contacte info@re-sound.be indicando a referência {reference}.",
       "close": "Fechar",
-      "correctedTotal": "O total final é {total}. Difere do valor apresentado durante a encomenda porque não foi possível confirmar o seu número de IVA; creditamos o IVA assim que o for."
+      "correctedTotal": "O total final é {total}. Difere do valor apresentado durante a encomenda porque não foi possível confirmar o seu número de IVA; creditamos o IVA assim que este for confirmado."
     },
     "error": {
       "generic": "Não foi possível registar a sua encomenda. Tente novamente ou contacte info@re-sound.be.",
@@ -4388,12 +4388,12 @@
       "rate_limited": "Demasiadas encomendas a partir desta ligação. Contacte info@re-sound.be.",
       "invalid_product": "Este produto não pode ser encomendado online. Solicite um orçamento.",
       "invalid_country": "Selecione um país de entrega na lista.",
-      "invalid_details": "Alguns dados estão em falta ou são inválidos. Verifique o formulário.",
-      "company_required": "Indique o nome da sua empresa.",
+      "invalid_details": "Faltam alguns dados ou são inválidos. Verifique o formulário.",
+      "company_required": "Introduza o nome da sua empresa.",
       "consent_required": "Confirme as condições da encomenda.",
       "pricing_failed": "Não foi possível calcular o preço desta encomenda. Contacte info@re-sound.be.",
-      "not_delivered": "A sua encomenda não chegou até nós. Não foi registado nada. Envie um e-mail para info@re-sound.be para tratarmos do assunto.",
-      "server_error": "Ocorreu um erro do nosso lado. Tente novamente ou contacte info@re-sound.be."
+      "not_delivered": "A sua encomenda não chegou até nós. Não foi registado nada. Envie um e-mail para info@re-sound.be para que possamos tratar do assunto.",
+      "server_error": "Ocorreu um problema do nosso lado. Tente novamente ou contacte info@re-sound.be."
     },
     "email": {
       "internalHeading": "Nova encomenda",

@@ -222,5 +222,7 @@ export function resolveVat({
  */
 export function vatNumberCountryDiffers(deliveryCountry: string, vatNumberCountry?: string | null): boolean {
   if (!vatNumberCountry) return false;
+  // Both sides are ISO country codes here (splitVatNumber already maps the
+  // Greek VAT prefix EL to GR), so a Greek buyer is not flagged as a mismatch.
   return vatNumberCountry.toUpperCase() !== deliveryCountry.toUpperCase();
 }
