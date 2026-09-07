@@ -1712,7 +1712,7 @@
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur í kjarna",
-      "cert1": "{pct, select, unknown {Endurunnið PET-innihald} other {{pct}% endurunnið efni}}",
+      "cert1": "{pct, select, unknown {Endurunnið PET-efni} other {{pct}% endurunnið efni}}",
       "cert2": "Hringrásarleg skilagreiðsla",
       "cert3": "OEKO-TEX® Flokkur 1",
       "cert4": "A+ flokkur losunar",
@@ -2346,7 +2346,7 @@
       "badge4": "Lágar VOC losanir",
       "badge1Desc": "Viður úr skógum sem er stjórnað á ábyrgan hátt",
       "badge2Desc": "Trefjaplötukjarni – viðarbundinn, brunaflokkaður kjarni",
-      "badge3Desc": "Stuttar aðfangakeðjur sem halda losun vegna flutninga í lágmarki",
+      "badge3Desc": "Stuttar aðfangakeðjur sem halda losun frá flutningum í lágmarki",
       "badge4Desc": "E1-flokkað fyrir heilnæmara inniloft",
       "description": "rWood - Micro plötur eru byggðar á sjálfbærni sem grundvallarreglu. FSC®-vottaður viður, áferðarefni með lága losun og ábyrgt aðfengin efni tryggja umhverfisábyrgð allan líftíma vörunnar."
     },
@@ -3626,7 +3626,7 @@
       "title": "Sex ástæður til að taka upp símann.",
       "item1": {
         "title": "Framleitt í okkar eigin verksmiðjum",
-        "desc": "Textíllínurnar eru framleiddar í verksmiðju okkar í Beveren-Waas (Belgíu) og rPET í verksmiðju okkar í Częstochowa (Póllandi); rWood er framleitt í Evrópu. Stuttar aðfangakeðjur, gagnsær uppruni og gæði sem þú getur staðið við í útboði."
+        "desc": "Textíllínurnar eru framleiddar í verksmiðju okkar í Beveren-Waas (Belgíu) og rPET í verksmiðju okkar í Częstochowa (Póllandi); rWood er framleitt í Evrópu. Stuttar aðfangaleiðir, gagnsær uppruni og gæði sem standast kröfur í útboði."
       },
       "item2": {
         "title": "Skýr, heiðarleg lína",
@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Viðmiðunarmörk: lágmarkslækkun talhljóðs fyrir hvern flokk. Duo hefur ekki enn verið mældur.",
     "endOfLifeTag": "Hringrás"
+  },
+  "order": {
+    "cta": "Panta á netinu",
+    "title": "Panta {product}",
+    "close": "Loka",
+    "back": "Til baka",
+    "continue": "Áfram",
+    "step": "Skref {current} af {total}",
+    "stepsLabel": "Pöntunarskref",
+    "steps": {
+      "configure": "Valkostir",
+      "details": "Upplýsingar þínar",
+      "review": "Yfirlit"
+    },
+    "units": {
+      "booth": "per klefa",
+      "set": "per sett",
+      "piece": "per stykki",
+      "m2": "per m²"
+    },
+    "configure": {
+      "title": "Veldu útfærslu",
+      "quantity": "Fjöldi",
+      "decrease": "Fækka um einn",
+      "increase": "Fjölga um einn",
+      "optionsTitle": "Valkostir",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Uppsetning af hálfu Re-Sound",
+        "note": "Okkar eigin uppsetningarmenn koma einingunni fyrir og tengja hana á staðnum. Án þessa valkostar sérð þú sjálf um samsetninguna: tvo einstaklinga tekur innan við þrjár klukkustundir að setja saman Solo Flex."
+      },
+      "extraElement": {
+        "label": "Auka 90 cm eining",
+        "note": "Lengir fundarklefann um 90 cm. Uppsetning aukaeiningarinnar er innifalin í þessu verði."
+      }
+    },
+    "details": {
+      "title": "Hvert eigum við að afhenda?",
+      "customerType": "Ég panta sem",
+      "company": "Fyrirtæki",
+      "private": "Einstaklingur",
+      "companyName": "Nafn fyrirtækis",
+      "vatNumber": "VSK-númer",
+      "vatHint": "Með gildu VSK-númeri innan ESB utan Póllands gefum við út reikning án virðisaukaskatts (viðsnúin skattskylda, reverse charge). Við staðfestum númerið í VIES.",
+      "vatInvalid": "Þetta virðist ekki vera gilt VSK-númer. Hafðu landskóðann með, til dæmis BE0123456789.",
+      "firstName": "Fornafn",
+      "lastName": "Eftirnafn",
+      "email": "Netfang",
+      "phone": "Sími",
+      "addressTitle": "Afhendingarheimilisfang",
+      "street": "Gata og húsnúmer",
+      "postalCode": "Póstnúmer",
+      "city": "Staður",
+      "country": "Land",
+      "otherCountry": "Annað land",
+      "notes": "Er eitthvað sem við ættum að vita?",
+      "notesHint": "Valfrjálst: hæð, aðgengi, æskileg afhendingarvika.",
+      "vatChecking": "Athugum þetta númer hjá VIES…",
+      "vatVerified": "Staðfest: öfug skattskylda gildir, svo við gefum út reikning án virðisaukaskatts.",
+      "vatUnverified": "VIES-þjónustan svaraði ekki. Við gerum reikning með 23 % pólskum virðisaukaskatti og gefum út kreditreikning fyrir honum þegar númerið hefur verið staðfest.",
+      "vatRejected": "VIES þekkir ekki þetta númer og því er pöntunin reikningsfærð með 23 % pólskum virðisaukaskatti.",
+      "vatNotEligible": "Öfug skattskylda á ekki við um pólskt VSK-númer: varan er send frá Póllandi og því gildir 23 % pólskur virðisaukaskattur."
+    },
+    "review": {
+      "title": "Farðu yfir pöntunina",
+      "editConfig": "Breyta valkostum",
+      "editDetails": "Breyta upplýsingum",
+      "deliveryTitle": "Afhending og reikningsgerð",
+      "consent": "Ég legg inn bindandi pöntun. Re-Sound staðfestir hana með tölvupósti ásamt flutningskostnaði og verði á þeim valkostum sem eru verðlagðir eftir fyrirspurn. Ekkert er innheimt fyrir þá staðfestingu.",
+      "submit": "Leggja inn pöntun",
+      "submitting": "Sendi…",
+      "missingTitle": "Vinsamlegast fyllið út þessa reiti:"
+    },
+    "summary": {
+      "net": "Samtala án vsk.",
+      "total": "Samtals",
+      "onRequest": "Eftir fyrirspurn",
+      "onRequestNote": "Valkostir merktir „eftir fyrirspurn“ eru verðlagðir af teyminu okkar. Þú færð endanlega upphæð áður en pöntunin er staðfest.",
+      "transportNote": "Flutningur er aldrei innifalinn í þessum verðum. Við gerum tilboð í afhendingu á heimilisfangið þitt þegar við staðfestum pöntunina."
+    },
+    "vat": {
+      "domestic": "Vsk. {rate} %",
+      "reverseCharge": "Viðsnúin skattskylda, enginn vsk. (0 %)",
+      "export": "Útflutningur, enginn vsk. (0 %)",
+      "polandNote": "Afhending innan Póllands er reikningsfærð með 23 % pólskum virðisaukaskatti.",
+      "privateNote": "Pöntunin þín er send frá verksmiðju okkar í Póllandi og er því reikningsfærð með 23 % pólskum virðisaukaskatti. Fyrirtæki með gilt VSK-númer innan ESB utan Póllands fá reikning án virðisaukaskatts.",
+      "needsNumberNote": "Bættu við gildu VSK-númeri innan ESB og við gefum út reikning án virðisaukaskatts (viðsnúin skattskylda). Án þess er pöntunin reikningsfærð með 23 % pólskum virðisaukaskatti.",
+      "numberCountryNote": "Við staðfestum þetta númer í VIES þegar þú leggur inn pöntunina. Sé það gilt fyrir afhendingarlandið gefum við út reikning án virðisaukaskatts.",
+      "reverseChargeNote": "Sala innan ESB: við gefum út reikning án virðisaukaskatts og þú gerir grein fyrir skattinum í þínu eigin landi (138. gr. vsk-tilskipunar ESB).",
+      "exportNote": "Varan fer út fyrir ESB og því gefum við út reikning án virðisaukaskatts. Aðflutningsgjöld og staðbundinn virðisaukaskattur greiðast við komu.",
+      "pendingNote": "Sláið VSK-númerið inn hér að ofan og við athugum það hjá VIES. Þar til það er staðfest inniheldur heildarupphæðin 23 % pólskan virðisaukaskatt."
+    },
+    "success": {
+      "eyebrow": "Pöntun móttekin",
+      "title": "Takk fyrir pöntunina",
+      "referenceLabel": "Tilvísunarnúmer þitt",
+      "body": "Við höfum sent þér afrit í tölvupósti. Teymið okkar staðfestir endanlega upphæð, að flutningi meðtöldum, innan eins virks dags.",
+      "emailFallback": "Okkur tókst ekki að senda staðfestingarpóstinn. Hafðu samband við info@re-sound.be og tilgreindu tilvísunina {reference}.",
+      "close": "Loka",
+      "correctedTotal": "Endanleg heildarupphæð er {total}. Hún er önnur en upphæðin sem birtist við pöntun vegna þess að ekki tókst að staðfesta VSK-númerið; við gefum út kreditreikning fyrir virðisaukaskattinum um leið og það tekst."
+    },
+    "error": {
+      "generic": "Okkur tókst ekki að leggja inn pöntunina. Reyndu aftur eða hafðu samband við info@re-sound.be.",
+      "network": "Tengingarvandamál. Athugaðu nettenginguna og reyndu aftur.",
+      "rate_limited": "Of margar pantanir frá þessari tengingu. Vinsamlegast hafið samband við info@re-sound.be.",
+      "invalid_product": "Ekki er hægt að panta þessa vöru á netinu. Vinsamlegast óskið eftir verðtilboði.",
+      "invalid_country": "Vinsamlegast veljið afhendingarland af listanum.",
+      "invalid_details": "Sumar upplýsingar vantar eða eru ógildar. Vinsamlegast yfirfarið eyðublaðið.",
+      "company_required": "Vinsamlegast sláið inn nafn fyrirtækisins.",
+      "consent_required": "Vinsamlegast staðfestið skilmála pöntunarinnar.",
+      "pricing_failed": "Okkur tókst ekki að reikna verð fyrir þessa pöntun. Vinsamlegast hafið samband við info@re-sound.be.",
+      "not_delivered": "Pöntunin barst okkur ekki. Ekkert hefur verið skráð. Vinsamlegast sendið tölvupóst á info@re-sound.be svo við getum tekið við málinu.",
+      "server_error": "Eitthvað fór úrskeiðis hjá okkur. Vinsamlegast reynið aftur eða hafið samband við info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Ný pöntun",
+      "customerHeading": "Pöntun móttekin",
+      "customerSubject": "Re-Sound pöntunin þín {reference}",
+      "greeting": "Góðan dag {name},",
+      "intro": "Takk fyrir pöntunina. Við höfum skráð hana og staðfestum hana með tölvupósti, ásamt flutningskostnaði.",
+      "referenceLabel": "Tilvísunarnúmer þitt",
+      "deliveryHeading": "Afhendingarheimilisfang",
+      "nextSteps": "Spurningar um þessa pöntun? Svaraðu þessum tölvupósti eða hringdu í +32 3 284 68 18. Re-Sound er vörumerki Stretch Group; pöntunin þín er send frá verksmiðju okkar í Częstochowa (Póllandi)."
+    }
   }
 }

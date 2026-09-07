@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Grænseværdier: den mindste reduktion af taleniveauet pr. klasse. Duo er endnu ikke målt.",
     "endOfLifeTag": "Cirkulær"
+  },
+  "order": {
+    "cta": "Bestil online",
+    "title": "Bestil {product}",
+    "close": "Luk",
+    "back": "Tilbage",
+    "continue": "Fortsæt",
+    "step": "Trin {current} af {total}",
+    "stepsLabel": "Bestillingstrin",
+    "steps": {
+      "configure": "Tilvalg",
+      "details": "Dine oplysninger",
+      "review": "Gennemgang"
+    },
+    "units": {
+      "booth": "pr. boks",
+      "set": "pr. sæt",
+      "piece": "pr. stk.",
+      "m2": "pr. m²"
+    },
+    "configure": {
+      "title": "Vælg din konfiguration",
+      "quantity": "Antal",
+      "decrease": "Én mindre",
+      "increase": "Én mere",
+      "optionsTitle": "Tilvalg",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Montering af Re-Sound",
+        "note": "Vores egne montører placerer og tilslutter enheden på stedet. Uden dette tilvalg samler du den selv: to personer bruger under tre timer på en Solo Flex."
+      },
+      "extraElement": {
+        "label": "Ekstra 90 cm-element",
+        "note": "Forlænger mødeboksen med 90 cm. Montering af det ekstra element er inkluderet i denne pris."
+      }
+    },
+    "details": {
+      "title": "Hvor skal vi levere?",
+      "customerType": "Jeg bestiller som",
+      "company": "Virksomhed",
+      "private": "Privatperson",
+      "companyName": "Virksomhedsnavn",
+      "vatNumber": "Momsnummer",
+      "vatHint": "Med et gyldigt EU-momsnummer uden for Polen fakturerer vi uden moms (omvendt betalingspligt). Vi kontrollerer nummeret i VIES.",
+      "vatInvalid": "Dette ligner ikke et gyldigt momsnummer. Husk landekoden, for eksempel BE0123456789.",
+      "firstName": "Fornavn",
+      "lastName": "Efternavn",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "addressTitle": "Leveringsadresse",
+      "street": "Vej og husnummer",
+      "postalCode": "Postnummer",
+      "city": "By",
+      "country": "Land",
+      "otherCountry": "Andet land",
+      "notes": "Er der noget, vi skal vide?",
+      "notesHint": "Valgfrit: etage, adgangsforhold, ønsket leveringsuge.",
+      "vatChecking": "Kontrollerer dette nummer i VIES…",
+      "vatVerified": "Bekræftet: Der er omvendt betalingspligt for momsen, så vi fakturerer uden moms.",
+      "vatUnverified": "VIES-tjenesten svarede ikke. Vi fakturerer 23 % polsk moms og krediterer den, når nummeret er bekræftet.",
+      "vatRejected": "VIES genkender ikke dette nummer, så bestillingen faktureres med 23 % polsk moms.",
+      "vatNotEligible": "Et polsk momsnummer kan ikke omfattes af omvendt betalingspligt: Varerne sendes fra Polen, så der beregnes 23 % polsk moms."
+    },
+    "review": {
+      "title": "Tjek din bestilling",
+      "editConfig": "Skift tilvalg",
+      "editDetails": "Skift oplysninger",
+      "deliveryTitle": "Levering og fakturering",
+      "consent": "Jeg afgiver en bindende bestilling. Re-Sound bekræfter den pr. e-mail med transportomkostningerne og eventuelle tilvalg med pris efter forespørgsel. Der opkræves intet før denne bekræftelse.",
+      "submit": "Afgiv bestilling",
+      "submitting": "Sender…",
+      "missingTitle": "Udfyld venligst disse felter:"
+    },
+    "summary": {
+      "net": "Subtotal ekskl. moms",
+      "total": "I alt",
+      "onRequest": "Efter forespørgsel",
+      "onRequestNote": "Tilvalg markeret med \"efter forespørgsel\" prissættes af vores team. Du modtager det endelige beløb, før bestillingen bekræftes.",
+      "transportNote": "Transport er aldrig inkluderet i disse priser. Vi giver pris på levering til din adresse, når vi bekræfter bestillingen."
+    },
+    "vat": {
+      "domestic": "Moms {rate} %",
+      "reverseCharge": "Omvendt betalingspligt for moms (0 %)",
+      "export": "Eksport, ingen moms (0 %)",
+      "polandNote": "Levering i Polen faktureres med 23 % polsk moms.",
+      "privateNote": "Din bestilling sendes fra vores fabrik i Polen og faktureres derfor med 23 % polsk moms. Virksomheder med et gyldigt EU-momsnummer uden for Polen faktureres uden moms.",
+      "needsNumberNote": "Angiv et gyldigt EU-momsnummer, så fakturerer vi uden moms (omvendt betalingspligt). Uden et sådant faktureres bestillingen med 23 % polsk moms.",
+      "numberCountryNote": "Vi verificerer nummeret i VIES, når du afgiver bestillingen. Hvis det er gyldigt for leveringslandet, fakturerer vi uden moms.",
+      "reverseChargeNote": "Leverance inden for EU: vi fakturerer uden moms, og du afregner den i dit eget land (art. 138 i EU's momsdirektiv).",
+      "exportNote": "Varerne forlader EU, så vi fakturerer uden moms. Importafgifter og lokal moms betales ved ankomsten.",
+      "pendingNote": "Indtast dit momsnummer ovenfor, så kontrollerer vi det i VIES. Indtil det er bekræftet, indeholder det samlede beløb 23 % polsk moms."
+    },
+    "success": {
+      "eyebrow": "Bestilling modtaget",
+      "title": "Tak for din bestilling",
+      "referenceLabel": "Din reference",
+      "body": "Vi har sendt dig en kopi pr. e-mail. Vores team bekræfter det endelige beløb inklusive transport inden for én arbejdsdag.",
+      "emailFallback": "Vi kunne ikke sende bekræftelsesmailen. Kontakt venligst info@re-sound.be, og oplys referencen {reference}.",
+      "close": "Luk",
+      "correctedTotal": "Det endelige beløb er {total}. Det afviger fra det beløb, der blev vist under bestillingen, fordi dit momsnummer ikke kunne bekræftes; vi krediterer momsen, så snart det bliver bekræftet."
+    },
+    "error": {
+      "generic": "Vi kunne ikke afgive din bestilling. Prøv igen, eller kontakt info@re-sound.be.",
+      "network": "Forbindelsesproblem. Kontrollér din forbindelse, og prøv igen.",
+      "rate_limited": "For mange bestillinger fra denne forbindelse. Kontakt venligst info@re-sound.be.",
+      "invalid_product": "Dette produkt kan ikke bestilles online. Anmod venligst om et tilbud.",
+      "invalid_country": "Vælg venligst et leveringsland på listen.",
+      "invalid_details": "Nogle oplysninger mangler eller er ugyldige. Kontrollér venligst formularen.",
+      "company_required": "Angiv venligst dit virksomhedsnavn.",
+      "consent_required": "Bekræft venligst bestillingsbetingelserne.",
+      "pricing_failed": "Vi kunne ikke beregne prisen på denne bestilling. Kontakt venligst info@re-sound.be.",
+      "not_delivered": "Din bestilling nåede ikke frem til os. Der er ikke registreret noget. Send venligst en e-mail til info@re-sound.be, så vi kan tage os af det derfra.",
+      "server_error": "Der gik noget galt hos os. Prøv venligst igen, eller kontakt info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Ny bestilling",
+      "customerHeading": "Bestilling modtaget",
+      "customerSubject": "Din Re-Sound-bestilling {reference}",
+      "greeting": "Hej {name},",
+      "intro": "Tak for din bestilling. Vi har registreret den og bekræfter den pr. e-mail inklusive transportomkostningerne.",
+      "referenceLabel": "Din reference",
+      "deliveryHeading": "Leveringsadresse",
+      "nextSteps": "Spørgsmål til denne bestilling? Svar på denne e-mail, eller ring på +32 3 284 68 18. Re-Sound er et brand under Stretch Group; din bestilling sendes fra vores fabrik i Częstochowa (Polen)."
+    }
   }
 }

@@ -8,7 +8,7 @@
  *   - delivery inside Poland                       → 23 % Polish VAT
  *   - delivery in another EU country, business
  *     with a valid EU VAT number                   → 0 %, reverse charge
- *     (intra-Community supply, Art. 138 / 196 of the EU VAT Directive)
+ *     (intra-Community supply, Art. 138 of the EU VAT Directive)
  *   - delivery in another EU country, private
  *     buyer or business without a valid number     → 23 % Polish VAT
  *   - delivery outside the EU                      → 0 %, export
@@ -42,6 +42,10 @@ export interface Country {
  * Delivery countries offered in the order form: the EU VAT area plus the
  * European countries Re-Sound delivers to. Names are localised in the browser
  * with Intl.DisplayNames; `name` is the fallback.
+ *
+ * There is deliberately no "other country" entry: the rate depends on where
+ * the goods go, so an unnamed destination would have to be zero-rated as an
+ * export on the buyer's word. Anywhere else goes through the quote form.
  */
 export const COUNTRIES: Country[] = [
   { code: 'AT', name: 'Austria', eu: true },
@@ -79,7 +83,6 @@ export const COUNTRIES: Country[] = [
   { code: 'LI', name: 'Liechtenstein', eu: false },
   { code: 'RS', name: 'Serbia', eu: false },
   { code: 'UA', name: 'Ukraine', eu: false },
-  { code: 'OTHER', name: 'Another country', eu: false },
 ];
 
 const BY_CODE = new Map(COUNTRIES.map((c) => [c.code, c]));
@@ -170,16 +173,24 @@ export interface VatInput {
   customerType: 'company' | 'private';
   /** ISO code of the delivery address */
   deliveryCountry: string;
-  /** VAT number accepted (format, and VIES when the check could run) */
+  /**
+   * The VAT number is confirmed valid. On the server this means VIES answered
+   * "valid"; a number VIES rejected, or could not answer for, is not valid and
+   * the order is taxed in Poland.
+   */
   vatNumberValid: boolean;
-  /** VAT number's own country — the reverse charge needs it to match the delivery country */
+  /** The VAT number's own country: it has to be an EU country other than Poland */
   vatNumberCountry?: string | null;
 }
 
 /**
- * The rate and the reason for it. A business outside Poland only gets the
- * reverse charge when its VAT number is valid and issued by the country the
- * goods are delivered to; anything else stays taxable in Poland.
+ * The rate and the reason for it.
+ *
+ * Art. 138 of the VAT Directive asks for a customer identified for VAT in a
+ * Member State other than the one the goods leave, so the reverse charge
+ * needs a confirmed VAT number issued by an EU country other than Poland. It
+ * does not have to be the country the goods are delivered to; when the two
+ * differ the order is flagged so the paperwork can be prepared by hand.
  */
 export function resolveVat({
   customerType,
@@ -195,12 +206,21 @@ export function resolveVat({
   // Outside the EU: export, no Polish VAT (import duties are the buyer's).
   if (!isEuCountry(country)) return { rate: 0, mode: 'export' };
 
-  const numberMatchesDelivery =
-    !vatNumberCountry || vatNumberCountry.toUpperCase() === country;
+  const numberCountry = vatNumberCountry ? vatNumberCountry.toUpperCase() : null;
+  const numberIsForeignEu = !!numberCountry && numberCountry !== SHIP_FROM_COUNTRY && isEuCountry(numberCountry);
 
-  if (customerType === 'company' && vatNumberValid && numberMatchesDelivery) {
+  if (customerType === 'company' && vatNumberValid && numberIsForeignEu) {
     return { rate: 0, mode: 'reverse-charge' };
   }
 
   return { rate: DOMESTIC_VAT_RATE, mode: 'domestic' };
+}
+
+/**
+ * True when a reverse-charged order is delivered to a country other than the
+ * one that issued the VAT number — legal, but worth checking by hand.
+ */
+export function vatNumberCountryDiffers(deliveryCountry: string, vatNumberCountry?: string | null): boolean {
+  if (!vatNumberCountry) return false;
+  return vatNumberCountry.toUpperCase() !== deliveryCountry.toUpperCase();
 }

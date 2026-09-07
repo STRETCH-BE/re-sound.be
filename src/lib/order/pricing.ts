@@ -58,7 +58,7 @@ export function sanitiseSelection(input: unknown): OrderSelection | null {
   const submitted = (raw.options && typeof raw.options === 'object' ? raw.options : {}) as Record<string, unknown>;
 
   for (const option of product.options) {
-    const value = submitted[option.id];
+    const value = Object.prototype.hasOwnProperty.call(submitted, option.id) ? submitted[option.id] : undefined;
     if (value === undefined || value === null) continue;
     const max = option.kind === 'toggle' ? 1 : option.maxQty ?? 1;
     const qty = clampInt(value, 0, max);
@@ -73,6 +73,9 @@ function optionQuantity(option: OrderOption, optionQty: number, productQty: numb
   return option.perUnit ? productQty : optionQty;
 }
 
+/** Euro price to whole cents, without floating-point drift. */
+const toCents = (euros: number): number => Math.round(euros * 100);
+
 /** Line items for a selection, without VAT. */
 export function priceLines(product: OrderableProduct, selection: OrderSelection): PricedLine[] {
   const lines: PricedLine[] = [
@@ -81,8 +84,8 @@ export function priceLines(product: OrderableProduct, selection: OrderSelection)
       kind: 'product',
       labelFrom: 'product',
       quantity: selection.quantity,
-      unitPriceCents: product.unitPriceExclVat * 100,
-      totalCents: product.unitPriceExclVat * 100 * selection.quantity,
+      unitPriceCents: toCents(product.unitPriceExclVat),
+      totalCents: toCents(product.unitPriceExclVat) * selection.quantity,
     },
   ];
 
@@ -90,7 +93,7 @@ export function priceLines(product: OrderableProduct, selection: OrderSelection)
     const picked = selection.options[option.id] ?? 0;
     if (picked <= 0) continue;
     const quantity = optionQuantity(option, picked, selection.quantity);
-    const unitPriceCents = option.priceExclVat === null ? null : option.priceExclVat * 100;
+    const unitPriceCents = option.priceExclVat === null ? null : toCents(option.priceExclVat);
     lines.push({
       id: option.id,
       kind: 'option',

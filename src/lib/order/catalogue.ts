@@ -102,7 +102,7 @@ export const ORDERABLE: Record<string, OrderableProduct> = {
 export const ORDERABLE_SLUGS = Object.keys(ORDERABLE);
 
 export function isOrderable(slug: string): boolean {
-  return slug in ORDERABLE;
+  return Object.prototype.hasOwnProperty.call(ORDERABLE, slug);
 }
 
 /**
@@ -110,6 +110,9 @@ export function isOrderable(slug: string): boolean {
  * changes in one place can never silently disagree with the other.
  */
 export function getOrderable(slug: string): OrderableProduct | null {
+  // hasOwnProperty, not `in`: a slug like "constructor" or "toString" would
+  // otherwise resolve through the prototype chain.
+  if (!Object.prototype.hasOwnProperty.call(ORDERABLE, slug)) return null;
   const entry = ORDERABLE[slug];
   if (!entry) return null;
   const product = PRODUCTS[slug];

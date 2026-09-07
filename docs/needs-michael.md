@@ -24,11 +24,13 @@ The order flow is live on Solo Flex, Duo, Modular XL, Interior and Divide
 (`docs/order-flow.md` explains it). These need a decision before the first
 real order arrives:
 
-26. **Set the e-mail plumbing.** Orders use the same Power Automate webhook as
-    the contact form (`POWER_AUTOMATE_WEBHOOK_URL`). Confirm it is set in
-    Vercel production, and set `ORDER_EMAIL` if orders should go somewhere
-    other than `info@re-sound.be`. Without it the buyer is told to contact you
-    directly, but you do not receive the order automatically.
+26. **Set the e-mail plumbing — blocking.** Orders use the same Power
+    Automate webhook as the contact form (`POWER_AUTOMATE_WEBHOOK_URL`).
+    Confirm it is set in Vercel production, and set `ORDER_EMAIL` if orders
+    should go somewhere other than `info@re-sound.be`. Orders are not stored
+    anywhere: the e-mail is the only record, so while the webhook is missing
+    **no order can be placed at all** — the buyer is told the order did not
+    reach you and nothing was registered.
 
 27. **Consumer withdrawal right.** A private buyer ordering at distance in the
     EU normally has 14 days to withdraw, unless the goods are made to their
@@ -58,9 +60,27 @@ real order arrives:
     `messages/*.json`) if another promise fits better.
 
 32. **VIES verification.** VAT numbers are verified against the European
-    Commission's VIES service. When VIES is unreachable the order e-mail says
-    "CHECK BY HAND" — those orders must be verified before invoicing without
-    VAT.
+    Commission's VIES service, and a business is invoiced without VAT only
+    when VIES confirms the number. When VIES does not answer, the order is
+    invoiced at 23 % and the buyer is told the VAT is credited once the number
+    is confirmed — so those orders need a manual check and a credit note. If
+    you would rather zero-rate on the format alone and carry the risk, say so
+    and it is one line in `src/lib/order/vat.ts`.
+
+33. **Proof of dispatch.** Zero-rating an intra-Community supply or an export
+    is only valid with transport evidence on file. The order flow does not
+    collect it; make sure the carrier documents are kept with the invoice.
+
+34. **EU territories outside the VAT area.** Canary Islands, Ceuta and
+    Melilla, the French overseas departments, Åland, Büsingen, Livigno, Mount
+    Athos and the rest are treated as their member state, so an order there is
+    invoiced at 23 % and has to be corrected by hand. Tell us if these are
+    common enough to code a postcode rule.
+
+35. **Delivery countries.** The dialog offers the EU 27, Northern Ireland and
+    the United Kingdom, Switzerland, Norway, Iceland, Liechtenstein, Serbia
+    and Ukraine. There is deliberately no "other country" option. Name any
+    country you want added.
 
 Still open: items 14–25 below (hero images, Google API key and place id, planned application pages, rWood Groove 60 % recycled content, translation notes) and the Google Business Profile checklist.
 

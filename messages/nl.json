@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Drempelwaarden: de minimale spraakniveaureductie per klasse. Duo is nog niet gemeten.",
     "endOfLifeTag": "Circulair"
+  },
+  "order": {
+    "cta": "Online bestellen",
+    "title": "{product} bestellen",
+    "close": "Sluiten",
+    "back": "Terug",
+    "continue": "Volgende",
+    "step": "Stap {current} van {total}",
+    "stepsLabel": "Bestelstappen",
+    "steps": {
+      "configure": "Opties",
+      "details": "Uw gegevens",
+      "review": "Overzicht"
+    },
+    "units": {
+      "booth": "per cabine",
+      "set": "per set",
+      "piece": "per stuk",
+      "m2": "per m²"
+    },
+    "configure": {
+      "title": "Kies uw configuratie",
+      "quantity": "Aantal",
+      "decrease": "Eén minder",
+      "increase": "Eén meer",
+      "optionsTitle": "Opties",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Installatie door Re-Sound",
+        "note": "Ons eigen team plaatst de unit ter plaatse en zorgt voor de aansluiting. Zonder deze optie monteert u de unit zelf: twee personen doen dat voor een Solo Flex in minder dan drie uur."
+      },
+      "extraElement": {
+        "label": "Extra element van 90 cm",
+        "note": "Verlengt de vergaderpod met 90 cm. De installatie van het extra element is in deze prijs inbegrepen."
+      }
+    },
+    "details": {
+      "title": "Waar mogen we leveren?",
+      "customerType": "Ik bestel als",
+      "company": "Onderneming",
+      "private": "Particulier",
+      "companyName": "Bedrijfsnaam",
+      "vatNumber": "Btw-nummer",
+      "vatHint": "Met een geldig EU-btw-nummer van buiten Polen factureren wij zonder btw (btw verlegd). Wij controleren het nummer via VIES.",
+      "vatInvalid": "Dit lijkt geen geldig btw-nummer te zijn. Vermeld ook de landcode, bijvoorbeeld BE0123456789.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "addressTitle": "Leveringsadres",
+      "street": "Straat en nummer",
+      "postalCode": "Postcode",
+      "city": "Gemeente",
+      "country": "Land",
+      "otherCountry": "Ander land",
+      "notes": "Nog iets dat we moeten weten?",
+      "notesHint": "Optioneel: verdieping, toegang, gewenste leveringsweek.",
+      "vatChecking": "Wij controleren dit nummer via VIES…",
+      "vatVerified": "Geverifieerd: de btw wordt verlegd, dus factureren wij zonder btw.",
+      "vatUnverified": "De VIES-dienst gaf geen antwoord. Wij factureren 23 % Poolse btw en crediteren die zodra het nummer geverifieerd is.",
+      "vatRejected": "VIES herkent dit nummer niet, dus wordt de bestelling gefactureerd met 23 % Poolse btw.",
+      "vatNotEligible": "Bij een Pools btw-nummer kan de btw niet worden verlegd: de goederen vertrekken uit Polen, dus geldt 23 % Poolse btw."
+    },
+    "review": {
+      "title": "Controleer uw bestelling",
+      "editConfig": "Opties wijzigen",
+      "editDetails": "Gegevens wijzigen",
+      "deliveryTitle": "Levering en facturatie",
+      "consent": "Ik plaats een bindende bestelling. Re-Sound bevestigt ze per e-mail, met de transportkosten en de prijs van eventuele opties op aanvraag. Vóór die bevestiging wordt niets aangerekend.",
+      "submit": "Bestelling plaatsen",
+      "submitting": "Versturen…",
+      "missingTitle": "Vul deze velden in:"
+    },
+    "summary": {
+      "net": "Subtotaal excl. btw",
+      "total": "Totaal",
+      "onRequest": "Op aanvraag",
+      "onRequestNote": "Voor opties met de vermelding \"op aanvraag\" berekent ons team de prijs. U ontvangt het definitieve bedrag voordat de bestelling wordt bevestigd.",
+      "transportNote": "Transport is nooit in deze prijzen inbegrepen. Bij de bevestiging van uw bestelling bezorgen wij u de prijs voor levering tot op uw adres."
+    },
+    "vat": {
+      "domestic": "Btw {rate} %",
+      "reverseCharge": "Btw verlegd (0 %)",
+      "export": "Uitvoer, geen btw (0 %)",
+      "polandNote": "Levering binnen Polen wordt gefactureerd met 23 % Poolse btw.",
+      "privateNote": "Uw bestelling vertrekt uit onze fabriek in Polen en wordt daarom gefactureerd met 23 % Poolse btw. Aan ondernemingen buiten Polen met een geldig EU-btw-nummer factureren wij zonder btw.",
+      "needsNumberNote": "Vul een geldig EU-btw-nummer in en wij factureren zonder btw (btw verlegd). Zonder geldig nummer wordt de bestelling gefactureerd met 23 % Poolse btw.",
+      "numberCountryNote": "Wij controleren dit nummer via VIES wanneer u de bestelling plaatst. Is het geldig voor het land van levering, dan factureren wij zonder btw.",
+      "reverseChargeNote": "Intracommunautaire levering: wij factureren zonder btw en u geeft de btw aan in uw eigen land (art. 138 van de EU-btw-richtlijn).",
+      "exportNote": "De goederen verlaten de EU, dus factureren wij zonder btw. Invoerrechten en lokale btw zijn bij aankomst verschuldigd.",
+      "pendingNote": "Vul hierboven uw btw-nummer in en wij controleren het via VIES. Zolang het niet bevestigd is, bevat het totaal 23 % Poolse btw."
+    },
+    "success": {
+      "eyebrow": "Bestelling ontvangen",
+      "title": "Bedankt voor uw bestelling",
+      "referenceLabel": "Uw referentie",
+      "body": "We hebben u een kopie per e-mail gestuurd. Ons team bevestigt het definitieve bedrag, inclusief transport, binnen één werkdag.",
+      "emailFallback": "We konden de bevestigingsmail niet versturen. Neem contact op met info@re-sound.be met vermelding van referentie {reference}.",
+      "close": "Sluiten",
+      "correctedTotal": "Het definitieve totaal bedraagt {total}. Het verschilt van het bedrag dat tijdens het bestellen werd getoond omdat uw btw-nummer niet bevestigd kon worden; wij crediteren de btw zodra dat wel het geval is."
+    },
+    "error": {
+      "generic": "We konden uw bestelling niet plaatsen. Probeer het opnieuw of neem contact op met info@re-sound.be.",
+      "network": "Verbindingsprobleem. Controleer uw verbinding en probeer het opnieuw.",
+      "rate_limited": "Te veel bestellingen vanaf deze verbinding. Neem contact op met info@re-sound.be.",
+      "invalid_product": "Dit product kan niet online besteld worden. Vraag een offerte aan.",
+      "invalid_country": "Kies een land van levering uit de lijst.",
+      "invalid_details": "Sommige gegevens ontbreken of zijn ongeldig. Controleer het formulier.",
+      "company_required": "Vul uw bedrijfsnaam in.",
+      "consent_required": "Bevestig de bestelvoorwaarden.",
+      "pricing_failed": "We konden geen prijs berekenen voor deze bestelling. Neem contact op met info@re-sound.be.",
+      "not_delivered": "Uw bestelling heeft ons niet bereikt. Er is niets geregistreerd. Stuur een e-mail naar info@re-sound.be, dan nemen wij het verder op.",
+      "server_error": "Er is iets misgegaan aan onze kant. Probeer het opnieuw of neem contact op met info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Nieuwe bestelling",
+      "customerHeading": "Bestelling ontvangen",
+      "customerSubject": "Uw Re-Sound-bestelling {reference}",
+      "greeting": "Beste {name},",
+      "intro": "Bedankt voor uw bestelling. We hebben ze geregistreerd en bevestigen ze per e-mail, inclusief de transportkosten.",
+      "referenceLabel": "Uw referentie",
+      "deliveryHeading": "Leveringsadres",
+      "nextSteps": "Vragen over deze bestelling? Beantwoord deze e-mail of bel +32 3 284 68 18. Re-Sound is een merk van Stretch Group; uw bestelling vertrekt uit onze fabriek in Częstochowa (Polen)."
+    }
   }
 }

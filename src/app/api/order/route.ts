@@ -6,9 +6,11 @@ import { loadMessages, makeTranslator, type Translator } from '@/lib/order/messa
 import { formatCents, priceOrder, sanitiseSelection, type PricedOrder, type PricedLine } from '@/lib/order/pricing';
 import {
   findCountry,
+  isEuCountry,
   isVatNumberFormatValid,
   normaliseVatNumber,
   splitVatNumber,
+  vatNumberCountryDiffers,
   SHIP_FROM_COUNTRY,
 } from '@/lib/order/vat';
 import { checkVatNumber, type ViesResult } from '@/lib/order/vies';
@@ -80,6 +82,25 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_PER_WINDOW = 5;
 const hits = new Map<string, number[]>();
+
+/**
+ * Client address for the rate limiter. `x-forwarded-for` is set by the
+ * platform, but a client can prepend its own value, so the leftmost entry is
+ * not trustworthy: prefer the platform's own fields and otherwise take the
+ * last hop.
+ */
+function clientKey(request: NextRequest): string {
+  const direct = (request as NextRequest & { ip?: string }).ip;
+  if (direct) return direct;
+  const real = request.headers.get('x-real-ip');
+  if (real) return real.trim();
+  const forwarded = request.headers.get('x-forwarded-for');
+  if (forwarded) {
+    const hops = forwarded.split(',').map((h) => h.trim()).filter(Boolean);
+    if (hops.length) return hops[hops.length - 1];
+  }
+  return 'unknown';
+}
 
 function rateLimited(ip: string): boolean {
   const now = Date.now();
@@ -207,13 +228,27 @@ function noticeBlock(text: string): string {
 /** Copy for Re-Sound: everything needed to confirm and invoice the order. */
 function internalEmail(ctx: EmailContext, t: Translator): { html: string; text: string } {
   const { customer, order, reference, vies, vatFormatValid } = ctx;
+  // A number only needs a manual check when verifying it would have changed
+  // the rate: an EU delivery outside Poland, with a non-Polish EU number that
+  // is well formed. Anywhere else the order is already correct without it, so
+  // flagging it would send Michael chasing nothing.
+  const numberCountry = customer.vatNumber.slice(0, 2).toUpperCase();
+  const verificationWouldMatter =
+    vatFormatValid &&
+    order.vatMode === 'domestic' &&
+    customer.country !== SHIP_FROM_COUNTRY &&
+    isEuCountry(customer.country) &&
+    numberCountry !== SHIP_FROM_COUNTRY &&
+    isEuCountry(numberCountry);
   const vatStatus = !customer.vatNumber
     ? '-'
     : vies.checked
       ? vies.valid
         ? `VALID (VIES${vies.name ? `: ${vies.name}` : ''})`
         : 'INVALID per VIES - charged 23 % Polish VAT'
-      : `NOT VERIFIED (VIES unreachable) - format ${vatFormatValid ? 'valid' : 'invalid'}, CHECK BY HAND`;
+      : verificationWouldMatter
+        ? 'NOT VERIFIED (VIES unreachable) - format valid, CHECK BY HAND: if the number is good, credit the 23 % VAT'
+        : `NOT VERIFIED (VIES unreachable) - format ${vatFormatValid ? 'valid' : 'invalid'}, no effect on this order`;
 
   const rows: Array<[string, string]> = [
     ['Reference', reference],
@@ -232,6 +267,13 @@ function internalEmail(ctx: EmailContext, t: Translator): { html: string; text: 
     ],
     ['VAT treatment', `${ctx.vatLabel} (${order.vatMode})`],
   ];
+
+  if (order.vatMode === 'reverse-charge' && vatNumberCountryDiffers(customer.country, customer.vatNumber.slice(0, 2))) {
+    rows.push([
+      'CHECK',
+      'VAT number issued by a country other than the delivery country - prepare the intra-Community paperwork accordingly',
+    ]);
+  }
 
   const inner = `
 <tr><td style="padding:24px 40px 0;">
@@ -334,23 +376,32 @@ ${esc(customer.street)}<br>${esc(`${customer.postalCode} ${customer.city}`)}<br>
   };
 }
 
+const MAIL_TIMEOUT_MS = 8000;
+
 async function sendMail(to: string, subject: string, html: string, text: string): Promise<boolean> {
   const webhookUrl = process.env.POWER_AUTOMATE_WEBHOOK_URL;
   if (!webhookUrl) {
     console.warn('[order] POWER_AUTOMATE_WEBHOOK_URL not configured - e-mail not sent to', to);
     return false;
   }
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), MAIL_TIMEOUT_MS);
   try {
     const response = await fetch(webhookUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ to, subject, body: html, text }),
+      signal: controller.signal,
     });
-    if (!response.ok) console.error('[order] webhook failed', response.status, 'for', to);
+    // Log the domain only: an order log is not the place for buyer addresses.
+    const audience = to.includes('@') ? `…@${to.split('@')[1]}` : to;
+    if (!response.ok) console.error('[order] webhook failed', response.status, 'for', audience);
     return response.ok;
   } catch (error) {
-    console.error('[order] webhook error for', to, error);
+    console.error('[order] webhook error for', to.includes('@') ? `…@${to.split('@')[1]}` : to, error);
     return false;
+  } finally {
+    clearTimeout(timer);
   }
 }
 
@@ -358,25 +409,37 @@ export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as OrderRequest;
 
+    // Same-origin only: a binding order may not be placed by a third-party page
+    // riding on a visitor's session.
+    const origin = request.headers.get('origin');
+    if (origin) {
+      const host = request.headers.get('host');
+      let originHost = '';
+      try {
+        originHost = new URL(origin).host;
+      } catch {
+        originHost = '';
+      }
+      if (!host || originHost !== host) {
+        return NextResponse.json({ error: 'server_error' }, { status: 403 });
+      }
+    }
+
     // Honeypot: accept and drop.
     if (clean(body.website)) return NextResponse.json({ success: true, reference: null });
 
-    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
-    if (rateLimited(ip)) {
-      return NextResponse.json(
-        { error: 'Too many orders from this address. Please contact info@re-sound.be.' },
-        { status: 429 }
-      );
+    if (rateLimited(clientKey(request))) {
+      return NextResponse.json({ error: 'rate_limited' }, { status: 429 });
     }
 
     const selection = sanitiseSelection(body.selection);
-    if (!selection) return NextResponse.json({ error: 'Unknown or unorderable product' }, { status: 400 });
+    if (!selection) return NextResponse.json({ error: 'invalid_product' }, { status: 400 });
 
     const raw = body.customer ?? {};
     const type = raw.type === 'company' ? 'company' : 'private';
     const countryCode = clean(raw.country, 8).toUpperCase();
     const country = findCountry(countryCode);
-    if (!country) return NextResponse.json({ error: 'Unknown delivery country' }, { status: 400 });
+    if (!country) return NextResponse.json({ error: 'invalid_country' }, { status: 400 });
 
     const email = clean(raw.email);
     const firstName = clean(raw.firstName);
@@ -388,13 +451,13 @@ export async function POST(request: NextRequest) {
     const vatNumber = raw.vatNumber ? normaliseVatNumber(clean(raw.vatNumber, 20)) : '';
 
     if (!firstName || !lastName || !EMAIL_RE.test(email) || !street || !postalCode || !city) {
-      return NextResponse.json({ error: 'Missing or invalid customer details' }, { status: 400 });
+      return NextResponse.json({ error: 'invalid_details' }, { status: 400 });
     }
     if (type === 'company' && !companyName) {
-      return NextResponse.json({ error: 'Company name is required for a business order' }, { status: 400 });
+      return NextResponse.json({ error: 'company_required' }, { status: 400 });
     }
     if (body.consent !== true) {
-      return NextResponse.json({ error: 'The order terms have to be accepted' }, { status: 400 });
+      return NextResponse.json({ error: 'consent_required' }, { status: 400 });
     }
 
     // VAT: format first, then VIES. An unreachable VIES falls back to the
@@ -404,7 +467,10 @@ export async function POST(request: NextRequest) {
     if (vatNumber && vatFormatValid && type === 'company' && countryCode !== SHIP_FROM_COUNTRY) {
       vies = await checkVatNumber(vatNumber);
     }
-    const vatNumberValid = vatFormatValid && vies.valid !== false;
+    // A number VIES could not answer for is NOT valid: zero-rating it would
+    // leave Re-Sound owing the 23 % if the number turns out to be wrong. The
+    // buyer is told the reverse charge is applied once the number is verified.
+    const vatNumberValid = vatFormatValid && vies.checked && vies.valid === true;
     const vatNumberCountry = vatNumber ? splitVatNumber(vatNumber)?.country ?? null : null;
 
     const order = priceOrder(selection, {
@@ -413,7 +479,7 @@ export async function POST(request: NextRequest) {
       vatNumberValid,
       vatNumberCountry,
     });
-    if (!order) return NextResponse.json({ error: 'Could not price this order' }, { status: 400 });
+    if (!order) return NextResponse.json({ error: 'pricing_failed' }, { status: 400 });
 
     const submittedLocale = clean(body.locale, 8);
     const locale = (locales as readonly string[]).includes(submittedLocale) ? submittedLocale : defaultLocale;
@@ -486,18 +552,19 @@ export async function POST(request: NextRequest) {
     const internal = internalEmail(internalCtx, tEn);
     const confirmation = customerEmail(ctx, t);
 
-    const notified = await sendMail(
-      recipient,
-      `New order ${reference} - ${productName} x${selection.quantity} - ${customer.companyName || `${firstName} ${lastName}`}`,
-      internal.html,
-      internal.text
-    );
-    const confirmed = await sendMail(
-      email,
-      t('order.email.customerSubject', { reference }),
-      confirmation.html,
-      confirmation.text
-    );
+    // Both messages go out together: the buyer's copy must not be hostage to
+    // the internal one, and neither may stall the request.
+    const [notifiedResult, confirmedResult] = await Promise.allSettled([
+      sendMail(
+        recipient,
+        `New order ${reference} - ${productName} x${selection.quantity} - ${customer.companyName || `${firstName} ${lastName}`}`,
+        internal.html,
+        internal.text
+      ),
+      sendMail(email, t('order.email.customerSubject', { reference }), confirmation.html, confirmation.text),
+    ]);
+    const notified = notifiedResult.status === 'fulfilled' && notifiedResult.value;
+    const confirmed = confirmedResult.status === 'fulfilled' && confirmedResult.value;
 
     console.log(
       '=== NEW ORDER ===',
@@ -511,6 +578,13 @@ export async function POST(request: NextRequest) {
       'confirmed:',
       confirmed
     );
+
+    // There is no order database: the notification e-mail IS the record. If it
+    // did not go out, the order does not exist, so say so instead of handing
+    // the buyer a reference for an order nobody received.
+    if (!notified) {
+      return NextResponse.json({ error: 'not_delivered', reference }, { status: 502 });
+    }
 
     return NextResponse.json({
       success: true,
@@ -528,7 +602,7 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error('[order] failed:', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+    return NextResponse.json({ error: 'server_error' }, { status: 500 });
   }
 }
 

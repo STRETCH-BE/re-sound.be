@@ -4279,5 +4279,131 @@
     },
     "classesNote": "Seuils : la réduction minimale du niveau de parole par classe. La Duo n'a pas encore été mesurée.",
     "endOfLifeTag": "Circulaire"
+  },
+  "order": {
+    "cta": "Commander en ligne",
+    "title": "Commander {product}",
+    "close": "Fermer",
+    "back": "Retour",
+    "continue": "Continuer",
+    "step": "Étape {current} sur {total}",
+    "stepsLabel": "Étapes de la commande",
+    "steps": {
+      "configure": "Options",
+      "details": "Vos coordonnées",
+      "review": "Récapitulatif"
+    },
+    "units": {
+      "booth": "par cabine",
+      "set": "par lot",
+      "piece": "par pièce",
+      "m2": "par m²"
+    },
+    "configure": {
+      "title": "Choisissez votre configuration",
+      "quantity": "Quantité",
+      "decrease": "Un de moins",
+      "increase": "Un de plus",
+      "optionsTitle": "Options",
+      "optionPrice": "+{price}"
+    },
+    "options": {
+      "installation": {
+        "label": "Installation par Re-Sound",
+        "note": "Nos propres installateurs placent et raccordent l'unité sur site. Sans cette option, vous procédez vous-même au montage : deux personnes y consacrent moins de trois heures pour une Solo Flex."
+      },
+      "extraElement": {
+        "label": "Élément supplémentaire de 90 cm",
+        "note": "Allonge le pod de réunion de 90 cm. L'installation de l'élément supplémentaire est comprise dans ce prix."
+      }
+    },
+    "details": {
+      "title": "Où devons-nous livrer ?",
+      "customerType": "Je commande en tant que",
+      "company": "Entreprise",
+      "private": "Particulier",
+      "companyName": "Nom de l'entreprise",
+      "vatNumber": "Numéro de TVA",
+      "vatHint": "Avec un numéro de TVA intracommunautaire valide délivré hors de Pologne, nous facturons hors TVA (autoliquidation). Nous vérifions le numéro dans VIES.",
+      "vatInvalid": "Ce numéro de TVA ne semble pas valide. Indiquez le code pays, par exemple BE0123456789.",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "addressTitle": "Adresse de livraison",
+      "street": "Rue et numéro",
+      "postalCode": "Code postal",
+      "city": "Ville",
+      "country": "Pays",
+      "otherCountry": "Autre pays",
+      "notes": "Y a-t-il quelque chose à signaler ?",
+      "notesHint": "Facultatif : étage, accès, semaine de livraison souhaitée.",
+      "vatChecking": "Vérification de ce numéro auprès de VIES…",
+      "vatVerified": "Vérifié : la TVA est autoliquidée, nous facturons donc sans TVA.",
+      "vatUnverified": "Le service VIES n'a pas répondu. Nous facturons la TVA polonaise de 23 % et la créditons dès que le numéro est vérifié.",
+      "vatRejected": "VIES ne reconnaît pas ce numéro ; la commande est donc facturée avec la TVA polonaise de 23 %.",
+      "vatNotEligible": "Un numéro de TVA polonais ne peut pas faire l'objet d'une autoliquidation : les marchandises sont expédiées depuis la Pologne, la TVA polonaise de 23 % s'applique donc."
+    },
+    "review": {
+      "title": "Vérifiez votre commande",
+      "editConfig": "Modifier les options",
+      "editDetails": "Modifier les coordonnées",
+      "deliveryTitle": "Livraison et facturation",
+      "consent": "Je passe une commande ferme. Re-Sound la confirme par e-mail, avec les frais de transport et toute option dont le prix est fourni sur demande. Aucun montant n'est facturé avant cette confirmation.",
+      "submit": "Passer la commande",
+      "submitting": "Envoi en cours…",
+      "missingTitle": "Veuillez compléter ces champs :"
+    },
+    "summary": {
+      "net": "Sous-total hors TVA",
+      "total": "Total",
+      "onRequest": "Sur demande",
+      "onRequestNote": "Les options indiquées « sur demande » sont chiffrées par notre équipe. Vous recevez le montant définitif avant la confirmation de la commande.",
+      "transportNote": "Le transport n'est jamais compris dans ces prix. Nous chiffrons la livraison à votre adresse lors de la confirmation de la commande."
+    },
+    "vat": {
+      "domestic": "TVA {rate} %",
+      "reverseCharge": "TVA autoliquidée (0 %)",
+      "export": "Exportation, hors TVA (0 %)",
+      "polandNote": "Une livraison en Pologne est facturée avec 23 % de TVA polonaise.",
+      "privateNote": "Votre commande est expédiée depuis notre usine en Pologne : elle est donc facturée avec 23 % de TVA polonaise. Les entreprises hors de Pologne disposant d'un numéro de TVA intracommunautaire valide sont facturées hors TVA.",
+      "needsNumberNote": "Indiquez un numéro de TVA intracommunautaire valide et nous facturons hors TVA (autoliquidation). À défaut, la commande est facturée avec 23 % de TVA polonaise.",
+      "numberCountryNote": "Nous vérifions ce numéro dans VIES lorsque vous passez la commande. S'il est valide pour le pays de livraison, nous facturons hors TVA.",
+      "reverseChargeNote": "Livraison intracommunautaire : nous facturons hors TVA et vous en êtes redevable dans votre pays (art. 138 de la directive TVA de l'UE).",
+      "exportNote": "Les marchandises quittent l'UE : nous facturons donc hors TVA. Les droits d'importation et la TVA locale sont dus à l'arrivée.",
+      "pendingNote": "Saisissez votre numéro de TVA ci-dessus et nous le vérifions auprès de VIES. Tant qu'il n'est pas confirmé, le total inclut la TVA polonaise de 23 %."
+    },
+    "success": {
+      "eyebrow": "Commande reçue",
+      "title": "Merci pour votre commande",
+      "referenceLabel": "Votre référence",
+      "body": "Nous vous avons envoyé une copie par e-mail. Notre équipe confirme le montant définitif, frais de transport compris, dans un délai d'un jour ouvrable.",
+      "emailFallback": "Nous n'avons pas pu envoyer l'e-mail de confirmation. Veuillez contacter info@re-sound.be en indiquant la référence {reference}.",
+      "close": "Fermer",
+      "correctedTotal": "Le total final est de {total}. Il diffère du montant affiché lors de la commande car votre numéro de TVA n'a pas pu être confirmé ; nous créditons la TVA dès qu'il l'est."
+    },
+    "error": {
+      "generic": "Nous n'avons pas pu enregistrer votre commande. Veuillez réessayer ou contacter info@re-sound.be.",
+      "network": "Problème de connexion. Veuillez vérifier votre connexion et réessayer.",
+      "rate_limited": "Trop de commandes depuis cette connexion. Veuillez contacter info@re-sound.be.",
+      "invalid_product": "Ce produit ne peut pas être commandé en ligne. Veuillez demander un devis.",
+      "invalid_country": "Veuillez choisir un pays de livraison dans la liste.",
+      "invalid_details": "Certaines informations sont manquantes ou invalides. Veuillez vérifier le formulaire.",
+      "company_required": "Veuillez indiquer le nom de votre société.",
+      "consent_required": "Veuillez confirmer les conditions de commande.",
+      "pricing_failed": "Nous n'avons pas pu calculer le prix de cette commande. Veuillez contacter info@re-sound.be.",
+      "not_delivered": "Votre commande ne nous est pas parvenue. Rien n'a été enregistré. Veuillez écrire à info@re-sound.be afin que nous puissions prendre le relais.",
+      "server_error": "Une erreur s'est produite de notre côté. Veuillez réessayer ou contacter info@re-sound.be."
+    },
+    "email": {
+      "internalHeading": "Nouvelle commande",
+      "customerHeading": "Commande reçue",
+      "customerSubject": "Votre commande Re-Sound {reference}",
+      "greeting": "Bonjour {name},",
+      "intro": "Merci pour votre commande. Nous l'avons enregistrée et vous la confirmerons par e-mail, avec les frais de transport.",
+      "referenceLabel": "Votre référence",
+      "deliveryHeading": "Adresse de livraison",
+      "nextSteps": "Une question sur cette commande ? Répondez à cet e-mail ou appelez le +32 3 284 68 18. Re-Sound est une marque de Stretch Group ; votre commande est expédiée depuis notre usine de Częstochowa (Pologne)."
+    }
   }
 }

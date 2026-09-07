@@ -17,6 +17,8 @@ export interface ViesResult {
   name?: string;
   /** Registered address, when VIES returns one */
   address?: string;
+  /** VIES userError when the service itself could not answer (MS_UNAVAILABLE, TIMEOUT, …) */
+  serviceError?: string;
 }
 
 const VIES_URL = 'https://ec.europa.eu/taxation_customs/vies/rest-api/ms';
@@ -34,8 +36,19 @@ export async function checkVatNumber(vatNumber: string): Promise<ViesResult> {
       { signal: controller.signal, headers: { Accept: 'application/json' }, cache: 'no-store' }
     );
     if (!response.ok) return { checked: false, valid: null };
-    const data = (await response.json()) as { isValid?: boolean; name?: string; address?: string };
+    const data = (await response.json()) as {
+      isValid?: boolean;
+      userError?: string;
+      name?: string;
+      address?: string;
+    };
     if (typeof data.isValid !== 'boolean') return { checked: false, valid: null };
+    // VIES answers 200 with isValid:false and a userError such as MS_UNAVAILABLE,
+    // MS_MAX_CONCURRENT_REQ, SERVICE_UNAVAILABLE or TIMEOUT when the member
+    // state's own register is the problem rather than the number. That is "could
+    // not verify", not "invalid", and must not be billed as a rejection.
+    const answer = (data.userError ?? 'VALID').toUpperCase();
+    if (answer !== 'VALID' && answer !== 'INVALID') return { checked: false, valid: null, serviceError: answer };
     return {
       checked: true,
       valid: data.isValid,

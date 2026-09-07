@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { cloneElement, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 
@@ -74,6 +74,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
   const t = useTranslations('order');
   const tProduct = useTranslations(namespace);
   const tFooter = useTranslations('footer');
+  /** Error codes from the API; an unknown code falls back to the generic line. */
+  const tError = (code: string): string => {
+    const known = [
+      'rate_limited', 'invalid_product', 'invalid_country', 'invalid_details',
+      'company_required', 'consent_required', 'pricing_failed', 'not_delivered', 'server_error',
+    ];
+    return known.includes(code) ? t(`error.${code}` as 'error.generic') : t('error.generic');
+  };
 
   const product = getOrderable(slug);
   const [step, setStep] = useState<Step>('configure');
@@ -83,10 +91,23 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
-  const [result, setResult] = useState<{ reference: string; emailSent: boolean } | null>(null);
+  const [result, setResult] = useState<{ reference: string; emailSent: boolean; correctedTotal: string | null } | null>(null);
+  const [missing, setMissing] = useState<string[]>([]);
+  /** VIES answer for the typed VAT number; only 'valid' grants the reverse charge. */
+  const [vatStatus, setVatStatus] = useState<
+    'idle' | 'checking' | 'valid' | 'invalid' | 'unverified' | 'format_invalid' | 'not_eligible'
+  >('idle');
+  const [vatCountry, setVatCountry] = useState<string | null>(null);
 
   const dialogRef = useRef<HTMLDivElement>(null);
   const previousFocus = useRef<HTMLElement | null>(null);
+  // Kept in refs so the dialog effect below binds once per open: an inline
+  // `onClose` prop would otherwise tear down and rebuild the listener (and
+  // steal focus) on every parent render.
+  const closeRef = useRef(onClose);
+  const statusRef = useRef(status);
+  closeRef.current = onClose;
+  statusRef.current = status;
   // The dialog is portalled to <body>: product heroes create their own
   // stacking contexts, which would otherwise trap it under the cookie banner.
   const [mounted, setMounted] = useState(false);
@@ -97,7 +118,10 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     if (!open) return;
     previousFocus.current = document.activeElement as HTMLElement | null;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      // Never abandon an order that is already on its way to the server:
+      // the request would still complete but the buyer would lose the
+      // reference and the delivery warning.
+      if (e.key === 'Escape' && statusRef.current !== 'sending') closeRef.current();
       if (e.key !== 'Tab') return;
       const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
         'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
@@ -126,7 +150,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
       document.body.style.overflow = previousOverflow;
       previousFocus.current?.focus?.();
     };
-  }, [open, onClose]);
+  }, [open]);
 
   // Reset when the dialog is opened again after a finished order.
   useEffect(() => {
@@ -144,21 +168,65 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
+  // Move focus to the new step once it has rendered, so a screen reader
+  // announces the change instead of leaving the user on a button that is gone.
+  useEffect(() => {
+    if (!open) return;
+    const target = dialogRef.current?.querySelector<HTMLElement>('.om-done, .om-section-title');
+    target?.focus();
+  }, [step, open]);
+
   const selection: OrderSelection = useMemo(() => ({ slug, quantity, options }), [slug, quantity, options]);
 
   const vatNumberFormatValid = customer.vatNumber.trim().length > 0 && isVatNumberFormatValid(customer.vatNumber);
   const vatNumberCountry = customer.vatNumber ? splitVatNumber(customer.vatNumber)?.country ?? null : null;
+  // The server zero-rates only what VIES confirms, so the dialog does the same:
+  // the buyer never consents to a total the invoice will not match.
+  const vatNumberVerified = vatStatus === 'valid';
 
   const priced = useMemo(
     () =>
       priceOrder(selection, {
         customerType: customer.type,
         deliveryCountry: customer.country,
-        vatNumberValid: vatNumberFormatValid,
-        vatNumberCountry,
+        vatNumberValid: vatNumberVerified,
+        vatNumberCountry: vatCountry ?? vatNumberCountry,
       }),
-    [selection, customer.type, customer.country, vatNumberFormatValid, vatNumberCountry]
+    [selection, customer.type, customer.country, vatNumberVerified, vatCountry, vatNumberCountry]
   );
+
+  // Ask the server (and through it VIES) about the number the buyer typed.
+  const checkVat = async (value: string) => {
+    const trimmed = value.trim();
+    if (!trimmed) {
+      setVatStatus('idle');
+      setVatCountry(null);
+      return;
+    }
+    if (!isVatNumberFormatValid(trimmed)) {
+      setVatStatus('format_invalid');
+      setVatCountry(null);
+      return;
+    }
+    setVatStatus('checking');
+    try {
+      const response = await fetch('/api/vat-check', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ vatNumber: trimmed }),
+      });
+      const data = (await response.json()) as { status?: string; country?: string | null };
+      const next = data.status ?? 'unverified';
+      setVatStatus(
+        next === 'valid' || next === 'invalid' || next === 'not_eligible' || next === 'format_invalid'
+          ? (next as 'valid')
+          : 'unverified'
+      );
+      setVatCountry(data.country ?? null);
+    } catch {
+      setVatStatus('unverified');
+    }
+  };
 
   const countryLabel = useMemo(() => {
     let display: Intl.DisplayNames | null = null;
@@ -206,6 +274,21 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
   const money = (cents: number) => formatCents(cents, localeTag);
 
+  const vatHint =
+    vatStatus === 'checking'
+      ? t('details.vatChecking')
+      : vatStatus === 'valid'
+        ? t('details.vatVerified')
+        : vatStatus === 'invalid'
+          ? t('details.vatRejected')
+          : vatStatus === 'unverified'
+            ? t('details.vatUnverified')
+            : vatStatus === 'not_eligible'
+              ? t('details.vatNotEligible')
+              : vatStatus === 'format_invalid'
+                ? t('details.vatInvalid')
+                : t('details.vatHint');
+
   const vatLabel =
     priced.vatMode === 'reverse-charge'
       ? t('vat.reverseCharge')
@@ -213,14 +296,18 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         ? t('vat.export')
         : t('vat.domestic', { rate: Math.round(priced.vatRate * 100) });
 
-  const detailsValid =
-    customer.firstName.trim().length > 0 &&
-    customer.lastName.trim().length > 0 &&
-    EMAIL_RE.test(customer.email.trim()) &&
-    customer.street.trim().length > 0 &&
-    customer.postalCode.trim().length > 0 &&
-    customer.city.trim().length > 0 &&
-    (customer.type === 'private' || customer.companyName.trim().length > 0);
+  const detailFields: Array<{ id: string; label: string; ok: boolean }> = [
+    ...(customer.type === 'company'
+      ? [{ id: 'order-company', label: t('details.companyName'), ok: customer.companyName.trim().length > 0 }]
+      : []),
+    { id: 'order-first', label: t('details.firstName'), ok: customer.firstName.trim().length > 0 },
+    { id: 'order-last', label: t('details.lastName'), ok: customer.lastName.trim().length > 0 },
+    { id: 'order-email', label: t('details.email'), ok: EMAIL_RE.test(customer.email.trim()) },
+    { id: 'order-street', label: t('details.street'), ok: customer.street.trim().length > 0 },
+    { id: 'order-postal', label: t('details.postalCode'), ok: customer.postalCode.trim().length > 0 },
+    { id: 'order-city', label: t('details.city'), ok: customer.city.trim().length > 0 },
+  ];
+  const detailsValid = detailFields.every((f) => f.ok);
 
   const set = <K extends keyof CustomerForm>(field: K, value: CustomerForm[K]) =>
     setCustomer((current) => ({ ...current, [field]: value }));
@@ -235,7 +322,20 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
   const goTo = (next: Step) => {
     setStep(next);
+    setMissing([]);
     dialogRef.current?.scrollTo?.({ top: 0 });
+  };
+
+  /** Step 2 → 3: advance, or name the fields that are still empty. */
+  const continueFromDetails = () => {
+    const gaps = detailFields.filter((f) => !f.ok);
+    if (gaps.length === 0) {
+      goTo('review');
+      return;
+    }
+    setMissing(gaps.map((f) => f.label));
+    const first = gaps[0];
+    dialogRef.current?.querySelector<HTMLElement>(`#${first.id}`)?.focus();
   };
 
   // Arrow function: keeps the non-null narrowing of `priced` from the guard above.
@@ -248,14 +348,32 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ locale, selection, customer, consent }),
       });
-      const data = (await response.json()) as { reference?: string; emailSent?: boolean; error?: string };
-      if (!response.ok || !data.reference) {
+      const data = (await response.json()) as {
+        reference?: string;
+        emailSent?: boolean;
+        error?: string;
+        totals?: { grossCents: number; vatMode: string };
+      };
+      if (!response.ok || !data.reference || data.error) {
         setStatus('error');
-        setErrorMessage(data.error || t('error.generic'));
+        // The route answers with a code; anything unknown falls back to the
+        // generic message so the buyer never sees a raw English literal.
+        const code = data.error ?? '';
+        setErrorMessage(code ? tError(code) : t('error.generic'));
         return;
       }
-      analytics.orderSubmitted({ product: slug, quantity, vatMode: priced.vatMode, valueCents: priced.grossCents });
-      setResult({ reference: data.reference, emailSent: data.emailSent !== false });
+      // The server is the authority on the amount. If it differs from what the
+      // buyer just agreed to (an unverified VAT number, say), show the real one.
+      const serverGross = data.totals?.grossCents;
+      const corrected =
+        typeof serverGross === 'number' && serverGross !== priced.grossCents ? money(serverGross) : null;
+      analytics.orderSubmitted({
+        product: slug,
+        quantity,
+        vatMode: data.totals?.vatMode ?? priced.vatMode,
+        valueCents: serverGross ?? priced.grossCents,
+      });
+      setResult({ reference: data.reference, emailSent: data.emailSent !== false, correctedTotal: corrected });
       setStatus('idle');
       goTo('done');
     } catch {
@@ -289,7 +407,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           <ol className="om-steps" aria-label={t('stepsLabel')}>
             {STEP_ORDER.map((s, i) => (
               <li key={s} className={i === stepIndex ? 'current' : i < stepIndex ? 'done' : ''} aria-current={i === stepIndex ? 'step' : undefined}>
-                <span className="om-step-no">{i + 1}</span>
+                <span className="om-step-no" aria-hidden="true">{i < stepIndex ? '✓' : i + 1}</span>
                 {t(`steps.${s}`)}
               </li>
             ))}
@@ -300,7 +418,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           {/* ── Step 1: configuration ─────────────────────────────── */}
           {step === 'configure' && (
             <>
-              <h3 className="om-section-title">{t('configure.title')}</h3>
+              <h3 className="om-section-title" tabIndex={-1}>{t('configure.title')}</h3>
 
               <div className="om-qty">
                 <label htmlFor="order-qty">{t('configure.quantity')}</label>
@@ -363,15 +481,23 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 </fieldset>
               )}
 
-              <p className="om-note">{t('summary.transportNote')}</p>
-              {priced.hasOnRequestItems && <p className="om-note">{t('summary.onRequestNote')}</p>}
             </>
           )}
 
           {/* ── Step 2: customer details ──────────────────────────── */}
           {step === 'details' && (
             <>
-              <h3 className="om-section-title">{t('details.title')}</h3>
+              <h3 className="om-section-title" tabIndex={-1}>{t('details.title')}</h3>
+              {missing.length > 0 && (
+                <div className="om-error" role="alert">
+                  <p>{t('review.missingTitle')}</p>
+                  <ul>
+                    {missing.map((label) => (
+                      <li key={label}>{label}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <fieldset className="om-type">
                 <legend>{t('details.customerType')}</legend>
@@ -403,19 +529,19 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                   <Field
                     id="order-vat"
                     label={t('details.vatNumber')}
-                    hint={
-                      customer.vatNumber && !vatNumberFormatValid
-                        ? t('details.vatInvalid')
-                        : t('details.vatHint')
-                    }
-                    invalid={Boolean(customer.vatNumber) && !vatNumberFormatValid}
+                    hint={vatHint}
+                    invalid={vatStatus === 'format_invalid' || vatStatus === 'invalid'}
                   >
                     <input
                       id="order-vat"
                       value={customer.vatNumber}
                       placeholder="BE0123456789"
-                      onChange={(e) => set('vatNumber', e.target.value.toUpperCase())}
-                      aria-invalid={Boolean(customer.vatNumber) && !vatNumberFormatValid}
+                      onChange={(e) => {
+                        set('vatNumber', e.target.value.toUpperCase());
+                        setVatStatus('idle');
+                      }}
+                      onBlur={(e) => checkVat(e.target.value)}
+                      aria-invalid={vatStatus === 'format_invalid' || vatStatus === 'invalid'}
                     />
                   </Field>
                 </div>
@@ -462,14 +588,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 <textarea id="order-notes" rows={3} value={customer.notes} onChange={(e) => set('notes', e.target.value)} />
               </Field>
 
-              <p className="om-note">{vatExplanation(t, customer, priced.vatMode, vatNumberFormatValid)}</p>
+              <p className="om-note">{vatExplanation(t, customer, priced.vatMode, vatStatus)}</p>
             </>
           )}
 
           {/* ── Step 3: review ────────────────────────────────────── */}
           {step === 'review' && (
             <>
-              <h3 className="om-section-title">{t('review.title')}</h3>
+              <h3 className="om-section-title" tabIndex={-1}>{t('review.title')}</h3>
 
               <div className="om-review-block">
                 <div className="om-review-head">
@@ -527,6 +653,11 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 </Link>
               </p>
 
+              {missing.length > 0 && status !== 'error' && (
+                <p className="om-error" role="alert">
+                  {t('review.missingTitle')}
+                </p>
+              )}
               {status === 'error' && (
                 <p className="om-error" role="alert">
                   {errorMessage}
@@ -537,7 +668,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
           {/* ── Confirmation ──────────────────────────────────────── */}
           {step === 'done' && result && (
-            <div className="om-done">
+            <div className="om-done" tabIndex={-1} role="status">
               <p className="om-done-icon" aria-hidden="true">
                 ✅
               </p>
@@ -545,6 +676,9 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 {t('success.referenceLabel')}: <strong>{result.reference}</strong>
               </p>
               <p>{t('success.body')}</p>
+              {result.correctedTotal && (
+                <p className="om-note om-note--warn">{t('success.correctedTotal', { total: result.correctedTotal })}</p>
+              )}
               {!result.emailSent && <p className="om-note om-note--warn">{t('success.emailFallback', { reference: result.reference })}</p>}
               <p className="om-note">{t('summary.transportNote')}</p>
             </div>
@@ -568,6 +702,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 <span>{money(priced.grossCents)}</span>
               </div>
               <p className="om-totals-note">{t('summary.transportNote')}</p>
+              {priced.hasOnRequestItems && <p className="om-totals-note om-totals-note--warn">{t('summary.onRequestNote')}</p>}
             </div>
 
             <div className="om-actions">
@@ -582,12 +717,24 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 </button>
               )}
               {step === 'details' && (
-                <button type="button" className="om-btn om-btn--primary" onClick={() => goTo('review')} disabled={!detailsValid}>
+                <button type="button" className="om-btn om-btn--primary" onClick={continueFromDetails}>
                   {t('continue')}
                 </button>
               )}
               {step === 'review' && (
-                <button type="button" className="om-btn om-btn--primary" onClick={submit} disabled={!consent || status === 'sending'}>
+                <button
+                  type="button"
+                  className="om-btn om-btn--primary"
+                  onClick={() => {
+                    if (!consent) {
+                      setMissing([t('review.consent')]);
+                      dialogRef.current?.querySelector<HTMLElement>('.om-consent input')?.focus();
+                      return;
+                    }
+                    if (status !== 'sending') submit();
+                  }}
+                  aria-disabled={!consent || status === 'sending'}
+                >
                   {status === 'sending' ? t('review.submitting') : t('review.submit')}
                 </button>
               )}
@@ -643,7 +790,8 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           letter-spacing: 1.5px;
           text-transform: uppercase;
           font-weight: 700;
-          color: var(--brand-blue, #197fc7);
+          /* --brand-blue on white is 4.28:1; the dark token clears AA at this size */
+          color: var(--brand-blue-dark, #145f96);
         }
         .om-header h2 {
           margin: 0;
@@ -657,7 +805,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           border: 0;
           font-size: 1.8rem;
           line-height: 1;
-          color: #94a3b8;
+          color: #5a6b7f;
           cursor: pointer;
           min-width: 44px;
           min-height: 44px;
@@ -673,7 +821,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           padding: 0.9rem 1.75rem;
           background: var(--cream, #f7f9fb);
           font-size: 0.8rem;
-          color: #64748b;
+          color: #5a6b7f;
           flex-wrap: wrap;
         }
         .om-steps li {
@@ -696,6 +844,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           height: 20px;
           border-radius: 50%;
           background: #e2e8f0;
+          color: #334155;
           font-size: 0.7rem;
           font-weight: 700;
         }
@@ -704,7 +853,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           font-weight: 600;
         }
         .om-steps li.current .om-step-no {
-          background: var(--brand-blue, #197fc7);
+          background: var(--brand-blue-dark, #145f96);
           color: #fff;
         }
         .om-steps li.done .om-step-no {
@@ -715,6 +864,17 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           padding: 1.5rem 1.75rem;
           overflow-y: auto;
           flex: 1;
+        }
+        .om-section-title:focus {
+          outline: 2px solid var(--brand-blue-dark, #145f96);
+          outline-offset: 4px;
+        }
+        .om-done:focus {
+          outline: none;
+        }
+        .om-error ul {
+          margin: 0.4rem 0 0 1.1rem;
+          padding: 0;
         }
         .om-section-title {
           margin: 0 0 1.1rem;
@@ -745,7 +905,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         .om-qty-controls {
           display: flex;
           align-items: center;
-          border: 1px solid #cbd5e1;
+          border: 1px solid #6b7d94;
           border-radius: 10px;
           overflow: hidden;
         }
@@ -774,7 +934,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         }
         .om-qty-unit {
           font-size: 0.9rem;
-          color: #64748b;
+          color: #5a6b7f;
         }
         .om-options {
           border: 0;
@@ -805,7 +965,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         .om-option-qty {
           width: 62px;
           height: 40px;
-          border: 1px solid #cbd5e1;
+          border: 1px solid #6b7d94;
           border-radius: 8px;
           text-align: center;
           flex-shrink: 0;
@@ -818,14 +978,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           cursor: pointer;
         }
         .om-option-price {
-          color: var(--brand-blue, #197fc7);
+          color: var(--brand-blue-dark, #145f96);
           font-weight: 600;
           white-space: nowrap;
         }
         .om-option-text p {
           margin: 0.25rem 0 0;
           font-size: 0.85rem;
-          color: #64748b;
+          color: #5a6b7f;
           line-height: 1.55;
         }
         .om-note {
@@ -863,7 +1023,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           align-items: center;
           gap: 0.5rem;
           padding: 0.6rem 1rem;
-          border: 1px solid #cbd5e1;
+          border: 1px solid #6b7d94;
           border-radius: 50px;
           cursor: pointer;
           font-size: 0.92rem;
@@ -904,7 +1064,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         .om-link {
           background: none;
           border: 0;
-          color: var(--brand-blue, #197fc7);
+          color: var(--brand-blue-dark, #145f96);
           font-size: 0.85rem;
           font-weight: 600;
           cursor: pointer;
@@ -956,7 +1116,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           font-size: 0.8rem;
         }
         .om-legal :global(a) {
-          color: var(--brand-blue, #197fc7);
+          color: var(--brand-blue-dark, #145f96);
           text-decoration: underline;
         }
         .om-error {
@@ -1016,8 +1176,12 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         .om-totals-note {
           margin: 0.5rem 0 0;
           font-size: 0.78rem;
-          color: #64748b;
+          color: #5a6b7f;
           line-height: 1.5;
+        }
+        .om-totals-note--warn {
+          color: #8a4b00;
+          font-weight: 600;
         }
         .om-actions {
           display: flex;
@@ -1034,15 +1198,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           min-height: 44px;
         }
         .om-btn--primary {
-          background: var(--brand-blue, #197fc7);
+          background: var(--brand-blue-dark, #145f96);
           color: #fff;
         }
-        .om-btn--primary:hover:not(:disabled) {
-          background: var(--brand-blue-dark, #145f96);
+        .om-btn--primary:hover {
+          background: #0f4a76;
         }
-        .om-btn--primary:disabled {
-          background: #cbd5e1;
-          cursor: not-allowed;
+        .om-btn--primary[aria-disabled='true'] {
+          background: #7c93a8;
         }
         .om-btn--ghost {
           background: transparent;
@@ -1081,7 +1244,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         .om-dialog .om-field textarea {
           width: 100%;
           padding: 0.7rem 0.8rem;
-          border: 1px solid #cbd5e1;
+          border: 1px solid #6b7d94;
           border-radius: 10px;
           background: #fff;
         }
@@ -1114,17 +1277,21 @@ function Field({
   required?: boolean;
   invalid?: boolean;
   wide?: boolean;
-  children: React.ReactNode;
+  children: React.ReactElement;
 }) {
+  const hintId = hint ? `${id}-hint` : undefined;
+  // Tie the hint to the control so it is read out with the field rather than
+  // being a paragraph a screen-reader user only meets by chance.
+  const control = hintId ? cloneElement(children, { 'aria-describedby': hintId }) : children;
   return (
     <div className="om-field" style={wide ? { gridColumn: '1 / -1' } : undefined}>
       <label htmlFor={id}>
         {label}
         {required && <span aria-hidden="true"> *</span>}
       </label>
-      {children}
+      {control}
       {hint && (
-        <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: invalid ? '#b91c1c' : '#64748b', lineHeight: 1.5 }}>{hint}</p>
+        <p id={hintId} style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: invalid ? '#b91c1c' : '#5a6b7f', lineHeight: 1.5 }}>{hint}</p>
       )}
       <style jsx>{`
         .om-field {
@@ -1148,13 +1315,15 @@ function vatExplanation(
   t: ReturnType<typeof useTranslations<'order'>>,
   customer: CustomerForm,
   mode: string,
-  vatNumberFormatValid: boolean
+  vatStatus: string
 ): string {
   if (mode === 'reverse-charge') return t('vat.reverseChargeNote');
   if (mode === 'export') return t('vat.exportNote');
   if (customer.country === SHIP_FROM_COUNTRY) return t('vat.polandNote');
   if (customer.type === 'company' && isEuCountry(customer.country)) {
-    return vatNumberFormatValid ? t('vat.numberCountryNote') : t('vat.needsNumberNote');
+    if (vatStatus === 'unverified') return t('details.vatUnverified');
+    if (vatStatus === 'invalid') return t('details.vatRejected');
+    return customer.vatNumber ? t('vat.numberCountryNote') : t('vat.pendingNote');
   }
   return t('vat.privateNote');
 }
