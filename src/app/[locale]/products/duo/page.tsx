@@ -124,7 +124,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       <NextIntlClientProvider locale={locale} messages={messages}>
         <DuoProductPage
           fromPrice={boothFromPrice(locale, 'duo', tHubs('col.fromPrice'))}
-          breadcrumbs={<Breadcrumbs items={crumbs} variant="overlay" />}
+          breadcrumbs={<Breadcrumbs items={crumbs} />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['duo']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}
           faq={<ProductFaq entries={faqEntries} tag={tPage('faq.tag')} title={tPage('faq.title')} />}

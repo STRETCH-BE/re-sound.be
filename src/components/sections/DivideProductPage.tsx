@@ -85,8 +85,8 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
     <div className="divide-product-page">
       {/* Hero Section */}
       <section className="product-hero">
-        {breadcrumbs}
         <div className="hero-content">
+          {breadcrumbs}
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>

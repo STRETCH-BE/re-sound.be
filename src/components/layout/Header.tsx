@@ -284,7 +284,50 @@ export default function Header() {
           transform: rotate(-45deg) translate(5px, -5px);
         }
 
-        @media (max-width: 992px) {
+        /* Between the mobile breakpoint and 1440px the six links, the language
+           switcher and the CTA no longer fit on one line at the wide desktop
+           spacing: the bar wrapped to two rows (130px tall) and covered the top
+           of every product hero, including its breadcrumbs. Tighten the
+           spacing so the bar stays one row. */
+        @media (max-width: 1439px) and (min-width: 1025px) {
+          .nav {
+            padding: 1.25rem 2rem;
+          }
+
+          .nav-links {
+            gap: 1.6rem;
+          }
+
+          .nav-links a {
+            font-size: 0.9rem;
+          }
+
+          .nav-actions {
+            gap: 1rem;
+          }
+        }
+
+        /* Tightest band, just above the mobile breakpoint: the longer
+           languages (nl, fr, de, es, pt, da) need it up to 1200px. */
+        @media (max-width: 1199px) and (min-width: 1025px) {
+          .nav {
+            padding: 1rem 1.5rem;
+          }
+
+          .nav-links {
+            gap: 1rem;
+          }
+
+          .nav-links a {
+            font-size: 0.85rem;
+          }
+
+          .nav-actions {
+            gap: 0.75rem;
+          }
+        }
+
+        @media (max-width: 1024px) {
           .nav {
             padding: 1rem 1.5rem;
           }
