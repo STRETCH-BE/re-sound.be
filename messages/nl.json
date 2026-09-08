@@ -13,7 +13,7 @@
     "blogTitle": "Blog",
     "blogDescription": "Inzichten over circulaire economie, akoestiek en duurzaam ontwerp van het Re-Sound team.",
     "interiorTitle": "Interior Akoestische Wandpanelen | Re-Sound",
-    "interiorDescription": "Modulaire akoestische wandpanelen van gerecycleerd textiel: klasse A absorptie (αw 1,0), afneembare wasbare hoes, gemaakt in België. Vanaf €387 per set.",
+    "interiorDescription": "Modulaire akoestische wandpanelen van gerecycleerd textiel: klasse A absorptie (αw 1,0), afneembare wasbare hoes, gemaakt in België. Vanaf {fromPrice} per set.",
     "solidTitle": "Solid Akoestische Wandpanelen | Re-Sound",
     "solidDescription": "Grootformaat akoestische wandpanelen (1200 × 600 mm) voor krachtige geluidsabsorptie. Haakmontage, kern van gerecycleerd textiel, gemaakt in België.",
     "divideTitle": "Divide Vrijstaande Akoestische Schermen | Re-Sound",
@@ -972,7 +972,6 @@
       "uspRecyclable": "100% Recycleerbaar",
       "uspOrigin": "Gemaakt in België",
       "priceFrom": "Vanaf",
-      "priceValue": "€387",
       "priceUnit": "excl. btw per set van 3 modules",
       "colorSelector": "Kleur Kiezen"
     },
@@ -1092,7 +1091,6 @@
       "usp2": "1200 × 600 mm",
       "usp3": "Haaksysteem",
       "colorSelector": "Kleur Kiezen",
-      "priceValue": "€407",
       "priceUnit": "excl. btw per paneel",
       "priceFrom": "Vanaf"
     },
@@ -1235,7 +1233,6 @@
       "usp2": "Volledig Modulair",
       "usp3": "Vrijstaand",
       "priceFrom": "Vanaf",
-      "priceValue": "€1.238",
       "priceUnit": "excl. btw",
       "colorSelector": "Kleur Kiezen"
     },
@@ -4024,7 +4021,8 @@
         "booth": "per cabine",
         "set": "per set",
         "piece": "per stuk"
-      }
+      },
+      "fromPriceFormatted": "vanaf {amount} {unit}"
     },
     "rpet": {
       "title": "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound",
@@ -4210,7 +4208,7 @@
     "title": "Belcabine kantoor: prijzen en ISO-klassen 2026 | Re-Sound",
     "description": "Wat kost een belcabine? Prijzen van Solo Flex, Duo en Modular XL, ISO 23351-1 klassen, ventilatie, levertijd en plaatsing. Fabrikant uit België.",
     "h1": "Belcabines voor kantoor: prijzen, klassen en keuze",
-    "intro": "Een Re-Sound belcabine kost vanaf € 2.740 excl. btw zonder installatie (Solo Flex) en een Modular XL vergaderpod vanaf € 15.000. Hieronder vindt u elke prijs die wij publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken. Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
+    "intro": "Een Re-Sound belcabine kost vanaf {soloFlex} excl. btw zonder installatie (Solo Flex) en een Modular XL vergaderpod vanaf {modularXl}. Hieronder vindt u elke prijs die wij publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken. Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
     "breadcrumb": "Prijzen belcabines",
     "priceTag": "Prijzen 2026",
     "priceTitle": "Prijzen per model (excl. btw)",
@@ -4221,7 +4219,6 @@
       "footprint": "Voetafdruk",
       "dimensions": "Buitenafmetingen (B×D×H)",
       "priceExcl": "Vanaf, zonder installatie",
-      "priceIncl": "Vanaf, met installatie",
       "extra": "Extra element van 90 cm",
       "iso": "ISO 23351-1",
       "ventilation": "Ventilatie",
@@ -4305,7 +4302,15 @@
       "decrease": "Eén minder",
       "increase": "Eén meer",
       "optionsTitle": "Opties",
-      "optionPrice": "+{price}"
+      "optionPrice": "+{price}",
+      "model": "Model",
+      "fromPrice": "Vanaf {price}",
+      "included": "Inbegrepen",
+      "creditPrice": "−{price}",
+      "none": "Geen",
+      "perSegmentPrice": "+{price} per segment van 90 cm",
+      "segmentsLine": "× {segments} segmenten = {amount} {unit}",
+      "socketHint": "Afgestemd op het land van levering dat u in de volgende stap invult. Kies er hier één als u een ander type nodig hebt."
     },
     "options": {
       "installation": {
@@ -4352,14 +4357,18 @@
       "consent": "Ik plaats een bindende bestelling. Re-Sound bevestigt ze per e-mail, met de transportkosten en de prijs van eventuele opties op aanvraag. Vóór die bevestiging wordt niets aangerekend.",
       "submit": "Bestelling plaatsen",
       "submitting": "Versturen…",
-      "missingTitle": "Vul deze velden in:"
+      "missingTitle": "Vul deze velden in:",
+      "socketMatched": "Stopcontact afgestemd op uw land van levering: {socket}. Wijzig het onder \"Opties wijzigen\" als u een ander type nodig hebt.",
+      "socketDefault": "Voor uw land van levering staat geen landspecifiek stopcontact in onze lijst; het standaardtype is geselecteerd: {socket}. Wijzig het onder \"Opties wijzigen\" als u een ander type nodig hebt.",
+      "segmentsQty": "{quantity} × {segments} segmenten van 90 cm"
     },
     "summary": {
       "net": "Subtotaal excl. btw",
       "total": "Totaal",
       "onRequest": "Op aanvraag",
       "onRequestNote": "Voor opties met de vermelding \"op aanvraag\" berekent ons team de prijs. U ontvangt het definitieve bedrag voordat de bestelling wordt bevestigd.",
-      "transportNote": "Transport is nooit in deze prijzen inbegrepen. Bij de bevestiging van uw bestelling bezorgen wij u de prijs voor levering tot op uw adres."
+      "transportNote": "Transport is nooit in deze prijzen inbegrepen. Bij de bevestiging van uw bestelling bezorgen wij u de prijs voor levering tot op uw adres.",
+      "included": "Inbegrepen"
     },
     "vat": {
       "domestic": "Btw {rate} %",
@@ -4380,7 +4389,9 @@
       "body": "We hebben u een kopie per e-mail gestuurd. Ons team bevestigt het definitieve bedrag, inclusief transport, binnen één werkdag.",
       "emailFallback": "We konden de bevestigingsmail niet versturen. Neem contact op met info@re-sound.be met vermelding van referentie {reference}.",
       "close": "Sluiten",
-      "correctedTotal": "Het definitieve totaal bedraagt {total}. Dat verschilt van het bedrag dat tijdens het bestellen werd getoond omdat uw btw-nummer niet bevestigd kon worden; wij crediteren de btw zodra dat wel het geval is."
+      "correctedTotal": "Het definitieve totaal bedraagt {total}. Dat verschilt van het bedrag dat tijdens het bestellen werd getoond omdat uw btw-nummer niet bevestigd kon worden; wij crediteren de btw zodra dat wel het geval is.",
+      "vatVerifiedTotal": "Het definitieve totaal bedraagt {total}. Uw btw-nummer werd bij het plaatsen van de bestelling geverifieerd, dus er wordt geen btw aangerekend.",
+      "priceChangedTotal": "Het definitieve totaal bedraagt {total}. De prijslijst is gewijzigd tijdens het bestellen; de bevestigingsmail toont het bedrag dat wij factureren."
     },
     "error": {
       "generic": "We konden uw bestelling niet plaatsen. Probeer het opnieuw of neem contact op met info@re-sound.be.",
@@ -4393,7 +4404,9 @@
       "consent_required": "Bevestig de bestelvoorwaarden.",
       "pricing_failed": "Wij konden voor deze bestelling geen prijs berekenen. Neem contact op via info@re-sound.be.",
       "not_delivered": "Uw bestelling heeft ons niet bereikt. Er is niets geregistreerd. Stuur een e-mail naar info@re-sound.be, dan nemen wij het verder op.",
-      "server_error": "Er is bij ons iets misgegaan. Probeer het opnieuw of neem contact op via info@re-sound.be."
+      "server_error": "Er is bij ons iets misgegaan. Probeer het opnieuw of neem contact op via info@re-sound.be.",
+      "price_changed": "Onze prijzen zijn bijgewerkt tijdens het bestellen. Controleer het nieuwe totaal hieronder en bevestig uw bestelling opnieuw.",
+      "selection_outdated": "Enkele opties zijn gewijzigd tijdens het bestellen. Controleer uw configuratie opnieuw."
     },
     "email": {
       "internalHeading": "Nieuwe bestelling",
@@ -4403,7 +4416,9 @@
       "intro": "Bedankt voor uw bestelling. We hebben ze geregistreerd en bevestigen ze per e-mail, inclusief de transportkosten.",
       "referenceLabel": "Uw referentie",
       "deliveryHeading": "Leveringsadres",
-      "nextSteps": "Vragen over deze bestelling? Beantwoord deze e-mail of bel +32 3 284 68 18. Re-Sound is een merk van Stretch Group; uw bestelling vertrekt uit onze fabriek in Częstochowa (Polen)."
+      "nextSteps": "Vragen over deze bestelling? Beantwoord deze e-mail of bel +32 3 284 68 18. Re-Sound is een merk van Stretch Group; uw bestelling vertrekt uit onze fabriek in Częstochowa (Polen).",
+      "model": "Model",
+      "segments": "Segmenten"
     }
   }
 }

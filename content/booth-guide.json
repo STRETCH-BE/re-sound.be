@@ -6,8 +6,6 @@
       "capacity": "1",
       "footprintM2": "1",
       "externalDimensions": "1020×1020×2260",
-      "priceExclVat": 2740,
-      "options": [],
       "isoDbA": 24,
       "isoClass": "C",
       "ventilation": "4.6 m³/min, 4 EC fans, PIR sensor",
@@ -16,7 +14,6 @@
       "weightKg": 280,
       "assemblyTime": "60 min by our installers (2 people < 3 h DIY)",
       "leadTimeWeeks": "4–6",
-      "deliveryInstallation": "Installation option: +€865 (€3.605 excl. VAT incl. installation)",
       "warranty": "5 y structural / 2 y electronics",
       "trial": "Test in the Beveren-Waas showroom; no leasing at the moment"
     },
@@ -26,8 +23,6 @@
       "capacity": "2",
       "footprintM2": "2",
       "externalDimensions": "",
-      "priceExclVat": 7615,
-      "options": [],
       "isoDbA": null,
       "isoClass": null,
       "ventilation": "",
@@ -36,7 +31,6 @@
       "weightKg": null,
       "assemblyTime": "≈2 h by our installers",
       "leadTimeWeeks": "",
-      "deliveryInstallation": "",
       "warranty": "",
       "trial": ""
     },
@@ -46,11 +40,6 @@
       "capacity": "6–10 standard; largest built so far: 20 persons",
       "footprintM2": "",
       "externalDimensions": "",
-      "priceExclVat": 15000,
-      "options": [
-        "Installation: €17.990 excl. VAT incl. installation",
-        "Extra 90 cm element: +€7.264 incl. installation"
-      ],
       "isoDbA": 25.9,
       "isoClass": "C",
       "ventilation": "",
@@ -59,7 +48,6 @@
       "weightKg": null,
       "assemblyTime": "2–6 h by our installers",
       "leadTimeWeeks": "",
-      "deliveryInstallation": "",
       "warranty": "",
       "trial": ""
     }

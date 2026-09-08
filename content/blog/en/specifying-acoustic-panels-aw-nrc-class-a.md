@@ -82,7 +82,7 @@ At αw 0.85 (rPET Groove) that is 5.0 / 0.85 = **5.9 m²**: five panels of 2,400
 | NRC (ASTM C423) | 0.85 | 0.80 | see test report | see test report |
 | Fire (EN 13501-1) | B-s1,d0 | see datasheet | B-s1,d0 | see datasheet |
 
-Interior starts at €387 per set excl. VAT; [felt](/en/products/pet-acoustic-panels) and wood panels are quoted per m² excl. VAT, transport outside Belgium extra. Office phone booths are rated to ISO 23351-1 speech-level reduction instead: [Solo Flex](/en/products/solo-flex) (about 24 dB(A)) and [Modular XL](/en/products/modular-xl) (25.9 dB(A)) are Class C there; check the exact requirement with your acoustician.
+Interior starts at {{price:interior}} per set excl. VAT; [felt](/en/products/pet-acoustic-panels) and wood panels are quoted per m² excl. VAT, transport outside Belgium extra. Office phone booths are rated to ISO 23351-1 speech-level reduction instead: [Solo Flex](/en/products/solo-flex) (about 24 dB(A)) and [Modular XL](/en/products/modular-xl) (25.9 dB(A)) are Class C there; check the exact requirement with your acoustician.
 
 ## What to put in the specification clause
 

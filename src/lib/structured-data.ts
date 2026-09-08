@@ -10,8 +10,10 @@
  *   - Organization      → sitewide entity; emitted once on the homepage
  *   - WebSite           → sitewide entity; emitted once on the homepage
  *   - LocalBusiness     → the Beveren-Waas showroom (homepage, where-to-buy)
- *   - Product           → per product page, with one Offer built from
- *                         src/data/products.ts (price / unit / availability)
+ *   - Product           → per product page, with one Offer: unit and
+ *                         availability from src/data/products.ts, the price
+ *                         from the catalogue (src/lib/catalogue/load.ts),
+ *                         passed in by the page in integer cents
  *   - ItemList          → /products listing and the range hubs
  *   - CollectionPage    → range hubs (wraps the ItemList)
  *   - BreadcrumbList    → per product/hub page
@@ -35,6 +37,7 @@ import {
   SOCIAL_LINKS_LIST,
 } from '@/config/site';
 import { isoSpeechClass, PRODUCTS, type Product } from '@/data/products';
+import { centsToDecimal } from '@/lib/catalogue/pricing';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 
@@ -243,6 +246,11 @@ export interface ProductSchemaInput {
   imageHeight?: number;
   /** Extra localised specs to append to the ones derived from product data */
   extraSpecs?: ProductSpec[];
+  /**
+   * "From" price in integer cents from the catalogue (getFromPriceCents in
+   * src/lib/catalogue/load.ts). Omit or pass null for a product without one.
+   */
+  priceCents?: number | null;
 }
 
 /** The free take-back programme, expressed as a MerchantReturnPolicy. */
@@ -259,17 +267,18 @@ function returnPolicy() {
 /**
  * One Offer per product.
  *
- * Confirmed prices (product.fromPrice) always ship. Products whose price is
- * still a placeholder get an Offer without a price unless
- * NEXT_PUBLIC_SHOW_PRICES is set, in which case PLACEHOLDER_FROM_PRICE is
- * emitted — so nothing false ships to production by accident.
+ * `priceCents` is the "from" price the page read from the catalogue
+ * (getFromPriceCents), in integer cents; it is emitted as a decimal string
+ * ("4118.75"). A product without a catalogue price gets an Offer without a
+ * price unless NEXT_PUBLIC_SHOW_PRICES is set, in which case
+ * PLACEHOLDER_FROM_PRICE is emitted — so nothing false ships by accident.
  */
-export function productOffer(product: Product, url: string) {
-  const price =
-    product.fromPrice !== null
-      ? product.fromPrice
+export function productOffer(product: Product, url: string, priceCents?: number | null) {
+  const price: string | null =
+    priceCents !== null && priceCents !== undefined
+      ? centsToDecimal(priceCents)
       : SHOW_PLACEHOLDER_PRICES
-        ? PLACEHOLDER_FROM_PRICE
+        ? String(PLACEHOLDER_FROM_PRICE)
         : null;
 
   const offer: Record<string, unknown> = {
@@ -284,10 +293,10 @@ export function productOffer(product: Product, url: string) {
   };
 
   if (price !== null) {
-    offer.price = String(price);
+    offer.price = price;
     offer.priceSpecification = {
       '@type': 'UnitPriceSpecification',
-      price: String(price),
+      price,
       priceCurrency: 'EUR',
       unitCode: product.priceUnit.unitCode,
       unitText: product.priceUnit.unitText,
@@ -388,7 +397,7 @@ export function productSchema(raw: ProductSchemaInput | LegacyProductSchemaInput
       url: SITE_URL,
     },
     material: product.material,
-    offers: productOffer(product, url),
+    offers: productOffer(product, url, input.priceCents),
   };
 
   // Never "EU": either a confirmed ISO country from product data or nothing.

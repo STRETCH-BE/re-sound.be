@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hvað kostar símaklefi fyrir skrifstofur?",
-    "answer": "Solo Flex símaklefinn kostar frá 2.740 € án VSK, án uppsetningar, eða 3.605 € án VSK með uppsetningu. Duo fundarklefinn kostar frá 7.615 € án VSK. Modular XL kostar frá 15.000 € án VSK, án uppsetningar, eða 17.990 € án VSK með uppsetningu, auk 7.264 € með uppsetningu fyrir hverja 90 cm viðbótareiningu. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns. Flutningur utan Belgíu er ekki innifalinn í verði.",
+    "answer": "Solo Flex símaklefinn kostar frá {{price:solo-flex}} án VSK. Duo fundarklefinn kostar frá {{price:duo}} án VSK, og Modular XL frá {{price:modular-xl}} án VSK fyrir grunneininguna, auk {{price:article:RS-MX-AS1}} fyrir hverja 90 cm viðbótareiningu. Verð miðast við afhendingu frá verksmiðju: flutningur og uppsetning eru verðlögð sérstaklega. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns.",
     "showOn": [
       "booths",
       "guide",

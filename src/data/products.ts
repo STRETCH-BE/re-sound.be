@@ -86,8 +86,14 @@ export interface Product {
   /** What the recycled content is made of (for JSON-LD `material`) */
   material: string;
   certifications: Certification[];
-  /** "From" price in EUR excl. VAT. null = placeholder (needs-Michael). */
-  fromPrice: number | null;
+  /**
+   * Always null: prices live in the catalogue (Supabase, else
+   * src/data/catalogue.snapshot.json) and are read through
+   * src/lib/catalogue/load.ts — getFromPriceCents(slug) for a page's "from"
+   * price, getProductPrices() for the hub tables. The field stays so the
+   * Product type does not change; nothing may read a price from here.
+   */
+  fromPrice: null;
   priceUnit: PriceUnit;
   heroImage: string;
   cardImage: string;
@@ -147,8 +153,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 80, // specs copy: "≥80%"
     material: 'Recycled textile fibres',
     certifications: [],
-    // The page states "Starting from €387 per set" — the only confirmed price.
-    fromPrice: 387,
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_SET, // Michael, 6 Sep 2026: €387 is the price per set
     heroImage: '/images/products/interior/hero.webp',
     cardImage: '/images/products/interior/interior_card.webp',
@@ -168,7 +173,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 80,
     material: 'Recycled textile fibres',
     certifications: [],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_PIECE, // workbook: per stuk
     heroImage: '/images/products/solid/hero-denim.webp',
     cardImage: '/images/products/solid/solid_card.webp',
@@ -188,8 +193,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 80, // page spec table "≥80%"; the old meta said "100% recycled" — flagged
     material: 'Recycled textile fibres, recycled steel frame',
     certifications: [],
-    // The page states "Starting from €1,238 excl. VAT" per screen.
-    fromPrice: 1238,
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_PIECE, // workbook: per stuk
     heroImage: '/images/products/divide/hero-denim.webp',
     cardImage: '/images/products/divide/divide_card.webp',
@@ -211,7 +215,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 60, // Products_Data (status Backlog) — TODO(needs-Michael): confirm
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rwood-groove/hero-rWood-Groove.webp',
     cardImage: '/images/products/rwood-groove/hero-rWood-Groove.webp',
@@ -232,7 +236,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: null, // TODO(needs-Michael)
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rwood-micro/hero-rwood-micro.webp',
     cardImage: '/images/products/rwood-micro/hero-rwood-micro.webp',
@@ -252,7 +256,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 17, // page badge "17% Recycled Content" (old JSON-LD said 60 %) — TODO(needs-Michael) confirm
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rwood-perf/hero-rwood-perf.webp',
     cardImage: '/images/products/rwood-perf/hero-rwood-perf.webp',
@@ -273,7 +277,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: null, // TODO(needs-Michael)
     material: 'FSC-certified wood veneer',
     certifications: ['FSC', 'EPD'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
     cardImage: '/images/products/rwood-veneer/hero-rwood-veneer.webp',
@@ -296,7 +300,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 100, // Products_Data (old page copy said "up to 50%" — see docs/needs-michael.md)
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rpet-panel/hero-rPET-Flat.webp',
     cardImage: '/images/products/rpet-panel/rPET - Panel - 2.png',
@@ -318,7 +322,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 100, // TODO(needs-Michael): confirm — every page says "100% recycled PET bottles"
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rpet-groove/hero-rpet-groove.webp',
     cardImage: '/images/products/rpet-groove/gallery-1.jpg',
@@ -338,7 +342,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: 100, // Products_Data
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
-    fromPrice: null, // TODO(needs-Michael)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
     cardImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
@@ -360,7 +364,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: 2740, // Booth_Guide: € 2 740 excl. VAT without installation (€ 3 605 incl.)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/solo-flex/hero-solo-flex.webp',
     cardImage: '/images/products/solo-flex/solo-flex_card.webp',
@@ -379,7 +383,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: 7615, // Michael, 6 Sep 2026: € 7 615 excl. VAT (not yet in the workbook)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/duo/hero-duo.webp',
     cardImage: '/images/products/duo/duo_card.webp',
@@ -400,7 +404,7 @@ export const PRODUCTS: Record<string, Product> = {
     recycledContentPct: null,
     material: 'Steel frame, recycled-PET acoustic lining, tempered glass',
     certifications: [],
-    fromPrice: 15000, // Booth_Guide: € 15 000 excl. VAT without installation (€ 17 990 incl.; +€ 7 264 per extra 90 cm element)
+    fromPrice: null, // prices live in the catalogue
     priceUnit: PER_BOOTH,
     heroImage: '/images/products/modular-xl/hero-modular-xl.webp',
     cardImage: '/images/products/modular-xl/modular-xl_card.webp',

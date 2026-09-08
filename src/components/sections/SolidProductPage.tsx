@@ -25,6 +25,8 @@ const colorOptions = [
  * configurator and the sticky nav need client JavaScript.
  */
 export interface SolidProductPageSlots {
+  /** "From" price already formatted for the locale (catalogue); hidden when absent */
+  priceFrom?: string;
   /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
   breadcrumbs?: React.ReactNode;
   specs: ReactNode;
@@ -34,7 +36,7 @@ export interface SolidProductPageSlots {
   otherModels: ReactNode;
 }
 
-export default function SolidProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: SolidProductPageSlots) {
+export default function SolidProductPage({ priceFrom, breadcrumbs, specs, downloads, gallery, faq, otherModels }: SolidProductPageSlots) {
   const t = useTranslations('solidPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -119,7 +121,9 @@ export default function SolidProductPage({ breadcrumbs, specs, downloads, galler
             </a>
           </div>
 
-          <p className="hero-price">{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}</p>
+          {priceFrom && (
+            <p className="hero-price">{t('hero.priceFrom')} <strong>{priceFrom}</strong> {t('hero.priceUnit')}</p>
+          )}
         </div>
         
         <div className="hero-image">

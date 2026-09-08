@@ -13,7 +13,7 @@
     "blogTitle": "Blogg",
     "blogDescription": "Innsýn í hringrásarhagkerfið, hljóðvist og sjálfbæra hönnun frá Re-Sound teyminu.",
     "interiorTitle": "Interior – hljóðdeyfiplötur fyrir veggi | Re-Sound",
-    "interiorDescription": "Einingaskiptar hljóðdeyfiplötur á veggi úr endurunnum textíl: ísog í flokki A (αw 1,0), laust þvottahæft áklæði, framleitt í Belgíu. Frá €387 á sett.",
+    "interiorDescription": "Einingaskiptar hljóðdeyfiplötur á veggi úr endurunnum textíl: ísog í flokki A (αw 1,0), laust þvottahæft áklæði, framleitt í Belgíu. Frá {fromPrice} á sett.",
     "solidTitle": "Solid – hljóðdeyfiplötur fyrir veggi | Re-Sound",
     "solidDescription": "Stórar hljóðdeyfiplötur á veggi (1200 × 600 mm) fyrir öflugt hljóðísog. Uppsetning á krókum, kjarni úr endurunnum textíl, framleitt í Belgíu.",
     "divideTitle": "Divide – frístandandi hljóðskilrúm | Re-Sound",
@@ -972,7 +972,6 @@
       "uspRecyclable": "100% Endurvinnanlegur",
       "uspOrigin": "Framleitt í Belgíu",
       "priceFrom": "Frá",
-      "priceValue": "€387",
       "priceUnit": "án VSK fyrir sett með 3 einingum",
       "colorSelector": "Veldu lit"
     },
@@ -1092,7 +1091,6 @@
       "usp2": "1200 × 600 mm",
       "usp3": "Krókakerfi",
       "colorSelector": "Veldu lit",
-      "priceValue": "€407",
       "priceUnit": "án VSK fyrir hverja plötu",
       "priceFrom": "Frá"
     },
@@ -1235,7 +1233,6 @@
       "usp2": "Fullkomlega hlutbundinn",
       "usp3": "Frjálsstæður",
       "priceFrom": "Frá",
-      "priceValue": "€1,238",
       "priceUnit": "án VSK",
       "colorSelector": "Veldu lit"
     },
@@ -4024,7 +4021,8 @@
         "booth": "per klefa",
         "set": "per sett",
         "piece": "per stykki"
-      }
+      },
+      "fromPriceFormatted": "frá {amount} {unit}"
     },
     "rpet": {
       "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
@@ -4208,9 +4206,9 @@
   },
   "boothGuide": {
     "title": "Skrifstofusímaklefar: verð og ISO-flokkar 2026 | Re-Sound",
-    "description": "Hvað kostar símaklefi? Solo Flex frá 2.740 € án vsk., Modular XL frá 15.000 €. ISO-flokkar, loftræsting, uppsetning, afhending og ábyrgð frá framleiðanda.",
+    "description": "Hvað kostar símaklefi? Solo Flex frá {soloFlex} án vsk., Modular XL frá {modularXl}. ISO-flokkar, loftræsting, uppsetning, afhending og ábyrgð frá framleiðanda.",
     "h1": "Símaklefar fyrir skrifstofur: verð, flokkar og hvernig á að velja",
-    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá 2.740 € án vsk. án uppsetningar (Solo Flex) og Modular XL fundarklefi frá 15.000 €. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
+    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá {soloFlex} án vsk. án uppsetningar (Solo Flex) og Modular XL fundarklefi frá {modularXl}. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
     "breadcrumb": "Verð á símaklefum",
     "priceTag": "Verð 2026",
     "priceTitle": "Verð eftir gerð (án vsk.)",
@@ -4221,7 +4219,6 @@
       "footprint": "Grunnflötur",
       "dimensions": "Ytri mál (B×D×H)",
       "priceExcl": "Frá, án uppsetningar",
-      "priceIncl": "Frá, með uppsetningu",
       "extra": "Auka 90 cm eining",
       "iso": "ISO 23351-1",
       "ventilation": "Loftræsting",
@@ -4305,7 +4302,15 @@
       "decrease": "Fækka um einn",
       "increase": "Fjölga um einn",
       "optionsTitle": "Valkostir",
-      "optionPrice": "+{price}"
+      "optionPrice": "+{price}",
+      "model": "Gerð",
+      "fromPrice": "Frá {price}",
+      "included": "Innifalið",
+      "creditPrice": "−{price}",
+      "none": "Ekkert",
+      "perSegmentPrice": "+{price} per 90 cm einingu",
+      "segmentsLine": "× {segments} einingar = {amount} {unit}",
+      "socketHint": "Stillt eftir afhendingarlandinu sem þú gefur upp í næsta skrefi. Veldu tengil hér ef þú þarft aðra tegund."
     },
     "options": {
       "installation": {
@@ -4352,14 +4357,18 @@
       "consent": "Ég legg inn bindandi pöntun. Re-Sound staðfestir hana með tölvupósti ásamt flutningskostnaði og verði á þeim valkostum sem eru verðlagðir eftir fyrirspurn. Ekkert er innheimt fyrir þá staðfestingu.",
       "submit": "Leggja inn pöntun",
       "submitting": "Sendi…",
-      "missingTitle": "Vinsamlegast fylltu út þessa reiti:"
+      "missingTitle": "Vinsamlegast fylltu út þessa reiti:",
+      "socketMatched": "Tengill valinn í samræmi við afhendingarlandið þitt: {socket}. Breyttu honum undir „Breyta valkostum“ ef þú þarft aðra tegund.",
+      "socketDefault": "Á lista okkar er enginn sérstakur tengill fyrir afhendingarlandið þitt, svo staðaltengillinn var valinn: {socket}. Breyttu honum undir „Breyta valkostum“ ef þú þarft aðra tegund.",
+      "segmentsQty": "{quantity} × {segments} einingar á 90 cm"
     },
     "summary": {
       "net": "Samtala án vsk.",
       "total": "Samtals",
       "onRequest": "Eftir fyrirspurn",
       "onRequestNote": "Valkostir merktir „eftir fyrirspurn“ eru verðlagðir af teyminu okkar. Þú færð endanlega upphæð áður en pöntunin er staðfest.",
-      "transportNote": "Flutningur er aldrei innifalinn í þessum verðum. Við gerum tilboð í afhendingu á heimilisfangið þitt þegar við staðfestum pöntunina."
+      "transportNote": "Flutningur er aldrei innifalinn í þessum verðum. Við gerum tilboð í afhendingu á heimilisfangið þitt þegar við staðfestum pöntunina.",
+      "included": "Innifalið"
     },
     "vat": {
       "domestic": "Vsk. {rate} %",
@@ -4380,7 +4389,9 @@
       "body": "Við höfum sent þér afrit í tölvupósti. Teymið okkar staðfestir endanlega upphæð, að flutningi meðtöldum, innan eins virks dags.",
       "emailFallback": "Okkur tókst ekki að senda staðfestingarpóstinn. Hafðu samband við info@re-sound.be og tilgreindu tilvísunina {reference}.",
       "close": "Loka",
-      "correctedTotal": "Endanleg heildarupphæð er {total}. Hún er önnur en upphæðin sem sýnd var við pöntun vegna þess að ekki tókst að staðfesta vsk-númerið þitt; við endurgreiðum virðisaukaskattinn með kreditreikningi um leið og það tekst."
+      "correctedTotal": "Endanleg heildarupphæð er {total}. Hún er önnur en upphæðin sem sýnd var við pöntun vegna þess að ekki tókst að staðfesta vsk-númerið þitt; við endurgreiðum virðisaukaskattinn með kreditreikningi um leið og það tekst.",
+      "vatVerifiedTotal": "Endanleg heildarupphæð er {total}. VSK-númerið þitt var staðfest þegar pöntunin var lögð inn, svo enginn VSK er reiknaður.",
+      "priceChangedTotal": "Endanleg heildarupphæð er {total}. Verðlistinn breyttist á meðan þú pantaðir; staðfestingarpósturinn sýnir upphæðina sem við reikningsfærum."
     },
     "error": {
       "generic": "Okkur tókst ekki að leggja inn pöntunina. Reyndu aftur eða hafðu samband við info@re-sound.be.",
@@ -4393,7 +4404,9 @@
       "consent_required": "Vinsamlegast staðfestu pöntunarskilmálana.",
       "pricing_failed": "Okkur tókst ekki að verðleggja þessa pöntun. Vinsamlegast hafðu samband við info@re-sound.be.",
       "not_delivered": "Pöntunin barst okkur ekki. Ekkert hefur verið skráð. Vinsamlegast sendu tölvupóst á info@re-sound.be svo við getum haldið málinu áfram.",
-      "server_error": "Eitthvað fór úrskeiðis hjá okkur. Vinsamlegast reyndu aftur eða hafðu samband við info@re-sound.be."
+      "server_error": "Eitthvað fór úrskeiðis hjá okkur. Vinsamlegast reyndu aftur eða hafðu samband við info@re-sound.be.",
+      "price_changed": "Verð okkar voru uppfærð á meðan þú pantaðir. Vinsamlegast athugaðu nýju heildarupphæðina hér að neðan og staðfestu pöntunina aftur.",
+      "selection_outdated": "Sumir valkostir breyttust á meðan þú pantaðir. Vinsamlegast yfirfarðu útfærsluna aftur."
     },
     "email": {
       "internalHeading": "Ný pöntun",
@@ -4403,7 +4416,9 @@
       "intro": "Takk fyrir pöntunina. Við höfum skráð hana og staðfestum hana með tölvupósti, ásamt flutningskostnaði.",
       "referenceLabel": "Tilvísunarnúmer þitt",
       "deliveryHeading": "Afhendingarheimilisfang",
-      "nextSteps": "Spurningar um þessa pöntun? Svaraðu þessum tölvupósti eða hringdu í +32 3 284 68 18. Re-Sound er vörumerki Stretch Group; pöntunin þín er send frá verksmiðju okkar í Częstochowa (Póllandi)."
+      "nextSteps": "Spurningar um þessa pöntun? Svaraðu þessum tölvupósti eða hringdu í +32 3 284 68 18. Re-Sound er vörumerki Stretch Group; pöntunin þín er send frá verksmiðju okkar í Częstochowa (Póllandi).",
+      "model": "Gerð",
+      "segments": "Einingar"
     }
   }
 }

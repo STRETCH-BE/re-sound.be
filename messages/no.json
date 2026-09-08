@@ -13,7 +13,7 @@
     "blogTitle": "Blogg",
     "blogDescription": "Innsikt om sirkulær økonomi, akustikk og bærekraftig design fra Re-Sound-teamet.",
     "interiorTitle": "Interior akustiske veggpaneler | Re-Sound",
-    "interiorDescription": "Modulære akustiske veggpaneler av resirkulert tekstil: klasse A-absorpsjon (αw 1,0), avtakbart vaskbart trekk, laget i Belgia. Fra 387 € per sett.",
+    "interiorDescription": "Modulære akustiske veggpaneler av resirkulert tekstil: klasse A-absorpsjon (αw 1,0), avtakbart vaskbart trekk, laget i Belgia. Fra {fromPrice} per sett.",
     "solidTitle": "Solid akustiske veggpaneler | Re-Sound",
     "solidDescription": "Storformat akustiske veggpaneler (1200 × 600 mm) for kraftig lydabsorpsjon. Krokmontering, kjerne av resirkulert tekstil, laget i Belgia.",
     "divideTitle": "Divide frittstående akustikkskjermer | Re-Sound",
@@ -972,7 +972,6 @@
       "uspRecyclable": "100% Resirkulerbar",
       "uspOrigin": "Laget i Belgia",
       "priceFrom": "Fra",
-      "priceValue": "€387",
       "priceUnit": "ekskl. mva. per sett med 3 moduler",
       "colorSelector": "Velg farge"
     },
@@ -1092,7 +1091,6 @@
       "usp2": "1200 × 600 mm",
       "usp3": "Krokmontasje",
       "colorSelector": "Velg farge",
-      "priceValue": "€407",
       "priceUnit": "ekskl. mva. per panel",
       "priceFrom": "Fra"
     },
@@ -1235,7 +1233,6 @@
       "usp2": "Fullt modulær",
       "usp3": "Frittstående",
       "priceFrom": "Fra",
-      "priceValue": "€1,238",
       "priceUnit": "ekskl. mva.",
       "colorSelector": "Velg farge"
     },
@@ -4024,7 +4021,8 @@
         "booth": "per boks",
         "set": "per sett",
         "piece": "per stk."
-      }
+      },
+      "fromPriceFormatted": "fra {amount} {unit}"
     },
     "rpet": {
       "title": "PET-akustikkpaneler av resirkulerte flasker | Re-Sound",
@@ -4208,9 +4206,9 @@
   },
   "boothGuide": {
     "title": "Telefonboks til kontor – priser og ISO-klasser 2026 | Re-Sound",
-    "description": "Hva koster en telefonboks? Solo Flex fra 2 740 € ekskl. mva., Modular XL fra 15 000 €. ISO 23351-1-klasser, ventilasjon, montering, levering og garanti.",
+    "description": "Hva koster en telefonboks? Solo Flex fra {soloFlex} ekskl. mva., Modular XL fra {modularXl}. ISO 23351-1-klasser, ventilasjon, montering, levering og garanti.",
     "h1": "Telefonbokser til kontor: priser, klasser og hvordan du velger",
-    "intro": "En akustisk telefonboks fra Re-Sound koster fra 2 740 € ekskl. mva. uten montering (Solo Flex), og en Modular XL møtepod fra 15 000 €. Nedenfor finner du alle prisene vi publiserer, hva som er inkludert, ISO 23351-1-klassene for talenivå oppgitt ærlig, og hvordan montering, testing og garanti fungerer. Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).",
+    "intro": "En akustisk telefonboks fra Re-Sound koster fra {soloFlex} ekskl. mva. uten montering (Solo Flex), og en Modular XL møtepod fra {modularXl}. Nedenfor finner du alle prisene vi publiserer, hva som er inkludert, ISO 23351-1-klassene for talenivå oppgitt ærlig, og hvordan montering, testing og garanti fungerer. Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).",
     "breadcrumb": "Priser på telefonbokser",
     "priceTag": "Priser 2026",
     "priceTitle": "Priser per modell (ekskl. mva.)",
@@ -4221,7 +4219,6 @@
       "footprint": "Gulvflate",
       "dimensions": "Utvendige mål (B×D×H)",
       "priceExcl": "Fra, uten montering",
-      "priceIncl": "Fra, med montering",
       "extra": "Ekstra 90 cm-element",
       "iso": "ISO 23351-1",
       "ventilation": "Ventilasjon",
@@ -4305,7 +4302,15 @@
       "decrease": "Én mindre",
       "increase": "Én mer",
       "optionsTitle": "Alternativer",
-      "optionPrice": "+{price}"
+      "optionPrice": "+{price}",
+      "model": "Modell",
+      "fromPrice": "Fra {price}",
+      "included": "Inkludert",
+      "creditPrice": "−{price}",
+      "none": "Ingen",
+      "perSegmentPrice": "+{price} per segment på 90 cm",
+      "segmentsLine": "× {segments} segmenter = {amount} {unit}",
+      "socketHint": "Tilpasses leveringslandet du oppgir i neste trinn. Velg en her hvis du trenger en annen type."
     },
     "options": {
       "installation": {
@@ -4352,14 +4357,18 @@
       "consent": "Jeg legger inn en bindende bestilling. Re-Sound bekrefter den på e-post med transportkostnaden og eventuelle alternativer med pris på forespørsel. Ingenting belastes før denne bekreftelsen.",
       "submit": "Legg inn bestilling",
       "submitting": "Sender …",
-      "missingTitle": "Fyll ut disse feltene:"
+      "missingTitle": "Fyll ut disse feltene:",
+      "socketMatched": "Stikkontakt tilpasset leveringslandet ditt: {socket}. Endre den under «Endre alternativer» hvis du trenger en annen type.",
+      "socketDefault": "Leveringslandet ditt har ingen landsspesifikk stikkontakt på listen vår, så standardtypen ble valgt: {socket}. Endre den under «Endre alternativer» hvis du trenger en annen type.",
+      "segmentsQty": "{quantity} × {segments} segmenter à 90 cm"
     },
     "summary": {
       "net": "Delsum eks. mva.",
       "total": "Totalt",
       "onRequest": "På forespørsel",
       "onRequestNote": "Alternativer merket «på forespørsel» prises av teamet vårt. Du får det endelige beløpet før bestillingen bekreftes.",
-      "transportNote": "Transport er aldri inkludert i disse prisene. Vi gir pris på levering til adressen din når vi bekrefter bestillingen."
+      "transportNote": "Transport er aldri inkludert i disse prisene. Vi gir pris på levering til adressen din når vi bekrefter bestillingen.",
+      "included": "Inkludert"
     },
     "vat": {
       "domestic": "Mva. {rate} %",
@@ -4380,7 +4389,9 @@
       "body": "Vi har sendt deg en kopi på e-post. Teamet vårt bekrefter det endelige beløpet, inkludert transport, innen én virkedag.",
       "emailFallback": "Vi klarte ikke å sende bekreftelsen på e-post. Kontakt info@re-sound.be og oppgi referanse {reference}.",
       "close": "Lukk",
-      "correctedTotal": "Endelig totalsum er {total}. Den avviker fra beløpet som ble vist under bestillingen, fordi mva-nummeret ikke kunne bekreftes; vi krediterer merverdiavgiften så snart det er bekreftet."
+      "correctedTotal": "Endelig totalsum er {total}. Den avviker fra beløpet som ble vist under bestillingen, fordi mva-nummeret ikke kunne bekreftes; vi krediterer merverdiavgiften så snart det er bekreftet.",
+      "vatVerifiedTotal": "Det endelige beløpet er {total}. MVA-nummeret ditt ble bekreftet da bestillingen ble lagt inn, så vi fakturerer uten mva.",
+      "priceChangedTotal": "Det endelige beløpet er {total}. Prislisten ble endret mens du bestilte; e-postbekreftelsen viser beløpet vi fakturerer."
     },
     "error": {
       "generic": "Vi klarte ikke å registrere bestillingen din. Prøv igjen, eller kontakt info@re-sound.be.",
@@ -4393,7 +4404,9 @@
       "consent_required": "Bekreft bestillingsvilkårene.",
       "pricing_failed": "Vi kunne ikke beregne prisen på denne bestillingen. Ta kontakt på info@re-sound.be.",
       "not_delivered": "Bestillingen nådde ikke frem til oss. Ingenting er registrert. Send en e-post til info@re-sound.be, så tar vi det derfra.",
-      "server_error": "Noe gikk galt hos oss. Prøv igjen, eller ta kontakt på info@re-sound.be."
+      "server_error": "Noe gikk galt hos oss. Prøv igjen, eller ta kontakt på info@re-sound.be.",
+      "price_changed": "Prisene våre ble oppdatert mens du bestilte. Kontroller det nye beløpet nedenfor og bekreft bestillingen på nytt.",
+      "selection_outdated": "Enkelte alternativer ble endret mens du bestilte. Kontroller konfigurasjonen din på nytt."
     },
     "email": {
       "internalHeading": "Ny bestilling",
@@ -4403,7 +4416,9 @@
       "intro": "Takk for bestillingen. Vi har registrert den og bekrefter den på e-post, inkludert transportkostnaden.",
       "referenceLabel": "Din referanse",
       "deliveryHeading": "Leveringsadresse",
-      "nextSteps": "Har du spørsmål om denne bestillingen? Svar på denne e-posten eller ring +32 3 284 68 18. Re-Sound er et varemerke fra Stretch Group; bestillingen din sendes fra fabrikken vår i Częstochowa (Polen)."
+      "nextSteps": "Har du spørsmål om denne bestillingen? Svar på denne e-posten eller ring +32 3 284 68 18. Re-Sound er et varemerke fra Stretch Group; bestillingen din sendes fra fabrikken vår i Częstochowa (Polen).",
+      "model": "Modell",
+      "segments": "Segmenter"
     }
   }
 }

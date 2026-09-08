@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import FaqList from '@/components/faq/FaqList';
 import JsonLd from '@/components/seo/JsonLd';
-import { FAQ_CATEGORIES, faqByCategory, mergeFaqEntries, type FaqCategory } from '@/lib/content/faq';
+import { FAQ_CATEGORIES, faqByCategoryResolved, mergeFaqEntries, type FaqCategory } from '@/lib/content/faq';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { faqPageSchema, type FaqEntry } from '@/lib/structured-data';
 
@@ -46,7 +46,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   // Workbook entries grouped by category, then the legacy questions appended
   // to their category (same-question duplicates dropped).
   const groups = new Map<FaqCategory, FaqEntry[]>(FAQ_CATEGORIES.map((c) => [c, []]));
-  for (const g of faqByCategory(locale)) groups.get(g.category)!.push(...g.items.map((i) => ({ question: i.question, answer: i.answer })));
+  for (const g of (await faqByCategoryResolved(locale))) groups.get(g.category)!.push(...g.items.map((i) => ({ question: i.question, answer: i.answer })));
   for (const key of LEGACY_KEYS) {
     const category = LEGACY_CATEGORY[t(`questions.${key}.category`)] ?? 'General';
     groups.get(category)!.push({ question: t(`questions.${key}.question`), answer: t(`questions.${key}.answer`) });

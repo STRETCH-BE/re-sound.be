@@ -201,9 +201,11 @@ export const analytics = {
   orderStarted: (product: string) => track('order_started', { product }),
 
   /** Order placed through the order dialog (no payment: Re-Sound confirms it) */
-  orderSubmitted: (data: { product: string; quantity: number; vatMode: string; valueCents: number }) =>
+  orderSubmitted: (data: { product: string; model?: string; quantity: number; vatMode: string; valueCents: number }) =>
     track('order_submitted', {
       product: data.product,
+      // Catalogue product id of the configured model (duo-work, duo-flex …)
+      model: data.model,
       quantity: data.quantity,
       vat_mode: data.vatMode,
       value: data.valueCents / 100,

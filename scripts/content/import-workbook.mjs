@@ -212,7 +212,10 @@ write('content/testimonials.json', JSON.stringify(testimonials, null, 2) + '\n')
 console.log(`testimonials: ${testimonials.reviews.length} Google reviews`);
 
 // ---------------------------------------------------------------------------
-// Booth guide — the workbook's example row (Solo Flex at 3990 with leasing) is a template row
+// Booth guide — the workbook's example row (Solo Flex at 3990 with leasing) is a template row.
+// Facts only: the price and option-price columns are NOT imported. Every price
+// on the site comes from the catalogue (Supabase / src/data/catalogue.snapshot.json,
+// see scripts/db/price-list-to-sql.mjs), never from this file.
 // ---------------------------------------------------------------------------
 const bg = rows('Booth_Guide').filter((r) => /^(Solo Flex|Duo|Modular XL)$/.test(clean(r.Model)) && !/\(define\)/.test(clean(r['Trial / return'])));
 const num = (s) => { const n = Number(String(s).replace(/[^\d.]/g, '')); return Number.isFinite(n) && n > 0 ? n : null; };
@@ -220,16 +223,13 @@ const guideRow = rows('Booth_Guide').find((r) => clean(r['Guide locale']) === 'n
 const boothGuide = {
   models: bg.map((r) => ({
     model: clean(r.Model), slug: clean(r.Model).toLowerCase().replace(/\s+/g, '-'), capacity: clean(r.Capacity), footprintM2: clean(r['Footprint m²']), externalDimensions: clean(r['External W×D×H mm']),
-    priceExclVat: num(r['Price excl. VAT (EUR)']), options: [r['Option 1 + price'], r['Option 2 + price'], r['Option 3 + price']].map(clean).filter(Boolean),
     isoDbA: num(r['ISO 23351-1 dB(A)']), isoClass: clean(r['ISO class (formula)']) || null, ventilation: clean(r.Ventilation), power: clean(r['Power / connectivity']), lighting: clean(r.Lighting),
-    weightKg: num(r['Weight kg']), assemblyTime: clean(r['Assembly time']), leadTimeWeeks: clean(r['Lead time (weeks)']), deliveryInstallation: clean(r['Delivery & installation zone']), warranty: clean(r.Warranty), trial: clean(r['Trial / return']),
+    weightKg: num(r['Weight kg']), assemblyTime: clean(r['Assembly time']), leadTimeWeeks: clean(r['Lead time (weeks)']), warranty: clean(r.Warranty), trial: clean(r['Trial / return']),
   })),
   guide: guideRow ? { locale: 'nl', title: clean(guideRow['Guide title tag (≤65)']), description: clean(guideRow['Guide meta (≤155)']), h1: clean(guideRow['Guide H1']), faqQuestions: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => clean(guideRow[`Guide FAQ Q${i}`])).filter(Boolean) } : null,
 };
-// Confirmed by Michael on 6 Sep 2026 but not yet in the workbook: Duo € 7 615 excl. VAT.
-for (const m of boothGuide.models) if (m.model === 'Duo' && m.priceExclVat === null) m.priceExclVat = 7615;
 write('content/booth-guide.json', JSON.stringify(boothGuide, null, 2) + '\n');
-console.log(`booth guide: ${boothGuide.models.map((m) => `${m.model}=${m.priceExclVat ?? 'n/a'}`).join(', ')}`);
+console.log(`booth guide: ${boothGuide.models.map((m) => m.model).join(', ')} (facts only; prices come from the catalogue)`);
 
 // ---------------------------------------------------------------------------
 // Showrooms — keep the latest HQ row (08:00–16:30) and the Poland office

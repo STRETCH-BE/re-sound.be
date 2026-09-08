@@ -67,7 +67,7 @@ Een open kantoor van 40 werkplekken is akoestisch één ruimte. Verdeel ze in gr
 
 ## 4. Belcabines voor calls
 
-De meeste overlast in een open kantoor komt van gesprekken die er niet horen: telefoontjes en videocalls. Elke call die in een cabine gebeurt, is er een die niet over de vloer klinkt. Een **[Solo Flex](/nl/products/solo-flex)** belcabine neemt 1 m² in, heeft een zit-stabureau, ventilatie van 4,6 m³/min, stroom en USB-C, en reduceert spraak met ongeveer 24 dB(A) (ISO 23351-1). Kostprijs vanaf € 2.740 excl. btw; reken op één cabine per acht tot tien werkplekken waar veel gebeld wordt. In [Belcabine voor kantoor: prijs, keuze en plaatsing](/nl/blog/belcabine-kantoor-prijs-keuze-plaatsing) rekenen we dat verder uit.
+De meeste overlast in een open kantoor komt van gesprekken die er niet horen: telefoontjes en videocalls. Elke call die in een cabine gebeurt, is er een die niet over de vloer klinkt. Een **[Solo Flex](/nl/products/solo-flex)** belcabine neemt 1 m² in, heeft een zit-stabureau, ventilatie van 4,6 m³/min, stroom en USB-C, en reduceert spraak met ongeveer 24 dB(A) (ISO 23351-1). Kostprijs vanaf {{price:solo-flex}} excl. btw, zonder installatie; reken op één cabine per acht tot tien werkplekken waar veel gebeld wordt. In [Belcabine voor kantoor: prijs, keuze en plaatsing](/nl/blog/belcabine-kantoor-prijs-keuze-plaatsing) rekenen we dat verder uit.
 
 ## 5. Vergaderpods in plaats van vergaderzalen bijbouwen
 

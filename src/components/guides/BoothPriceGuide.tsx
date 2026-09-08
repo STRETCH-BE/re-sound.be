@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { getTranslations } from 'next-intl/server';
 
 import Breadcrumbs from '@/components/product/Breadcrumbs';
@@ -9,10 +10,29 @@ import Testimonials from '@/components/testimonials/Testimonials';
 import { guidePath } from '@/data/guides';
 import { HUBS, hubPath } from '@/data/hubs';
 import { PRODUCTS, isoSpeechClass } from '@/data/products';
-import { localeFullCodes, type Locale } from '@/i18n/config';
 import { Link } from '@/i18n/navigation';
-import { BOOTH_PRICES, getBoothGuide } from '@/lib/content/boothGuide';
-import { faqFor } from '@/lib/content/faq';
+import { formatPrice } from '@/lib/catalogue/format';
+import { getCatalogue } from '@/lib/catalogue/load';
+import { priceTokenCents } from '@/lib/catalogue/tokens';
+import type { Catalogue } from '@/lib/catalogue/types';
+
+/**
+ * The guide's intro and meta description name the Solo Flex and Modular XL
+ * "from" prices as ICU arguments ({soloFlex}, {modularXl}), filled here from
+ * the catalogue so the sentence never carries a stale figure.
+ */
+export function guidePriceArgs(catalogue: Catalogue, locale: string, onRequest: string): { soloFlex: string; modularXl: string } {
+  const fmt = (slug: string) => {
+    const cents = priceTokenCents(catalogue, undefined, slug);
+    return cents === null ? onRequest : formatPrice(cents, locale);
+  };
+  return { soloFlex: fmt('solo-flex'), modularXl: fmt('modular-xl') };
+}
+import { categoryLabel, lineLabel } from '@/lib/catalogue/pricing';
+import { articleSuffix, articlesFor } from '@/lib/catalogue/select';
+import type { CatalogueArticle } from '@/lib/catalogue/types';
+import { getBoothGuide } from '@/lib/content/boothGuide';
+import { faqForResolved } from '@/lib/content/faq';
 import { breadcrumbSchema, faqPageSchema, type FaqEntry } from '@/lib/structured-data';
 
 interface BoothPriceGuideProps {
@@ -30,14 +50,17 @@ const ISO_CLASSES = [
   { key: 'd', min: 21 },
 ] as const;
 
-type BoothSlug = keyof typeof BOOTH_PRICES;
-
 /**
  * Booth price guide (server component): H1 → intro → price/spec table →
  * what is included → installation → showroom → ISO classes → end of life →
- * FAQ (rows tagged "guide") → Google reviews → CTA. Prices come from
- * content/booth-guide.json (Booth_Guide sheet) and BOOTH_PRICES; specs from
- * src/data/products.ts. JSON-LD: BreadcrumbList + one FAQPage.
+ * FAQ (rows tagged "guide") → Google reviews → CTA.
+ *
+ * Every price comes from the catalogue (database, else the committed
+ * snapshot — src/lib/catalogue/load.ts): the lowest base price of the models
+ * sold from each page, the glass-backwall base price, the Modular XL
+ * extension articles and the installation line (on request until Re-Sound
+ * publishes a figure). Facts come from content/booth-guide.json (Booth_Guide
+ * sheet) and src/data/products.ts. JSON-LD: BreadcrumbList + one FAQPage.
  */
 export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) {
   const t = await getTranslations({ locale, namespace: 'boothGuide' });
@@ -46,15 +69,30 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
   const tData = await getTranslations({ locale, namespace: 'productData' });
 
   const guide = getBoothGuide();
+  const catalogue = await getCatalogue();
   const models = guide.models
-    .map((row) => ({ row, product: PRODUCTS[row.slug], prices: BOOTH_PRICES[row.slug as BoothSlug] }))
+    .map((row) => ({ row, product: PRODUCTS[row.slug] }))
     .filter((m) => m.product && m.product.specs.kind === 'booth');
-  const eur = new Intl.NumberFormat(localeFullCodes[locale as Locale] ?? 'en-BE', {
-    style: 'currency',
-    currency: 'EUR',
-    maximumFractionDigits: 0,
-  });
-  const price = (value: number | null | undefined) => (value ? eur.format(value) : t('onRequest'));
+  type Model = (typeof models)[number];
+  const money = (cents: number | null | undefined) =>
+    cents === null || cents === undefined ? t('onRequest') : formatPrice(cents, locale);
+
+  // Catalogue view per page slug: the models sold from that page and their articles.
+  const articlesOf = (slug: string) =>
+    catalogue.products.filter((p) => p.active && p.websiteSlug === slug).flatMap((p) => articlesFor(p.id, catalogue));
+  const lowest = (articles: CatalogueArticle[]) =>
+    articles.reduce<number | null>(
+      (min, a) => (a.priceCents !== null && (min === null || a.priceCents < min) ? a.priceCents : min),
+      null,
+    );
+  const basePrice = (slug: string) => lowest(articlesOf(slug).filter((a) => a.priceType === 'base'));
+  // Glass backwall: the base article whose code ends in -BG (RS-SF-BG …).
+  const glassArticles = (slug: string) => articlesOf(slug).filter((a) => a.priceType === 'base' && articleSuffix(a.code) === 'BG');
+  const extensions = (slug: string) => articlesOf(slug).filter((a) => a.categoryKey === 'additional_segments');
+  const installation = (slug: string) => articlesOf(slug).find((a) => a.categoryKey === 'installation');
+  // Labels of catalogue-defined rows come from the catalogue too (translated through its labels).
+  const glassLabelArticle = models.map((m) => glassArticles(m.row.slug)[0]).find((a) => a !== undefined);
+  const installationCategory = catalogue.categories.find((c) => c.key === 'installation');
 
   const hub = HUBS.booths;
   const path = guidePath(locale);
@@ -64,7 +102,7 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
     { name: t('breadcrumb'), href: path },
   ];
 
-  const faqEntries: FaqEntry[] = faqFor(locale, 'guide').map((f) => ({ question: f.question, answer: f.answer }));
+  const faqEntries: FaqEntry[] = (await faqForResolved(locale, 'guide')).map((f) => ({ question: f.question, answer: f.answer }));
 
   const classModels = (min: number, max: number | null) =>
     models
@@ -75,13 +113,35 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
       .map((m) => `${m.product.name} (${m.row.isoDbA ?? ''} dB(A))`)
       .join(' · ');
 
-  const rows: Array<{ label: string; cell: (m: (typeof models)[number]) => string }> = [
+  const rows: Array<{ label: string; cell: (m: Model) => ReactNode }> = [
     { label: t('col.capacity'), cell: (m) => (m.row.slug === 'modular-xl' ? t('personsRange') : t('persons', { count: Number(m.row.capacity) || 1 })) },
     { label: t('col.footprint'), cell: (m) => (m.product.specs.kind === 'booth' ? m.product.specs.footprint : NA) },
     { label: t('col.dimensions'), cell: (m) => (m.product.specs.kind === 'booth' ? m.product.specs.externalDimensions : NA) },
-    { label: t('col.priceExcl'), cell: (m) => price(m.prices?.exclInstallation) },
-    { label: t('col.priceIncl'), cell: (m) => price(m.prices?.inclInstallation) },
-    { label: t('col.extra'), cell: (m) => ('extraElementIncl' in m.prices ? price(m.prices.extraElementIncl) : NA) },
+    { label: t('col.priceExcl'), cell: (m) => money(basePrice(m.row.slug)) },
+    ...(glassLabelArticle
+      ? [{ label: lineLabel(glassLabelArticle, locale), cell: (m: Model) => money(lowest(glassArticles(m.row.slug))) }]
+      : []),
+    {
+      label: t('col.extra'),
+      cell: (m) => {
+        const ext = extensions(m.row.slug);
+        if (ext.length === 0) return NA;
+        return ext.map((a) => (
+          <span key={a.code} style={{ display: 'block' }}>
+            {lineLabel(a, locale)}: {money(a.priceCents)}
+          </span>
+        ));
+      },
+    },
+    ...(installationCategory
+      ? [{
+          label: categoryLabel(installationCategory, locale),
+          cell: (m: Model) => {
+            const line = installation(m.row.slug);
+            return line ? money(line.priceCents) : NA;
+          },
+        }]
+      : []),
     {
       label: t('col.iso'),
       cell: (m) => {
@@ -108,7 +168,7 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
         <header className="hub-hero">
           <Breadcrumbs items={crumbs} />
           <h1>{t('h1')}</h1>
-          <p className="hub-intro">{t('intro')}</p>
+          <p className="hub-intro">{t('intro', guidePriceArgs(catalogue, locale, t('onRequest')))}</p>
         </header>
 
         {/* ── Price table ──────────────────────────────────────────── */}

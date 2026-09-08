@@ -1,6 +1,11 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import matter from 'gray-matter';
+import { getTranslations } from 'next-intl/server';
+
+import { localeFullCodes, type Locale } from '@/i18n/config';
+import { getCatalogue } from '@/lib/catalogue/load';
+import { hasPriceTokens, resolvePriceTokens } from '@/lib/catalogue/tokens';
 
 /**
  * Editorial blog posts imported from the content workbook
@@ -81,6 +86,32 @@ function parse(locale: string, file: string): ContentPost | null {
     status: data.status ? String(data.status) : undefined,
     wordCount: Number(data.wordCount ?? 0) || content.split(/\s+/).filter(Boolean).length,
     body: content.trim(),
+  };
+}
+
+/**
+ * Fill in the price tokens ({{price:solo-flex}} …) a post carries, from the
+ * catalogue, formatted for the post's locale. Posts without tokens are
+ * returned as they are. Call this on anything that reaches a page: the
+ * meta description, the lead, the body and the FAQ front matter all may
+ * mention a price, and a figure edited in the database must show up here
+ * without anyone editing prose.
+ */
+export async function resolveContentPost(post: ContentPost): Promise<ContentPost> {
+  const texts = [post.title, post.h1, post.description, post.body, ...post.faq.flatMap((f) => [f.question, f.answer])];
+  if (!texts.some(hasPriceTokens)) return post;
+  const catalogue = await getCatalogue();
+  const t = await getTranslations({ locale: post.locale, namespace: 'order' });
+  const localeTag = localeFullCodes[post.locale as Locale] ?? 'en-BE';
+  const options = { onRequest: t('summary.onRequest') };
+  const fill = (s: string) => resolvePriceTokens(s, catalogue, localeTag, options).text;
+  return {
+    ...post,
+    title: fill(post.title),
+    h1: fill(post.h1),
+    description: fill(post.description),
+    body: fill(post.body),
+    faq: post.faq.map((f) => ({ question: fill(f.question), answer: fill(f.answer) })),
   };
 }
 

@@ -1,9 +1,12 @@
 # Online ordering — how it works
 
-Added 6 September 2026. Buyers can order the products whose price Re-Sound has
-confirmed, straight from the product page. There is no payment gateway: the
-order is a binding order request that Re-Sound confirms by e-mail with the
-transport cost.
+Added 6 September 2026; moved to the database catalogue on 8 September 2026.
+Buyers configure and order a product straight from its page. Every price
+comes from the catalogue (Supabase, else the committed snapshot — see
+`docs/database.md`), every order is stored in the database before the e-mails
+go out, and the e-mails list the article numbers the factory orders by. There
+is no payment gateway: the order is a binding order request that Re-Sound
+confirms by e-mail with the transport cost.
 
 ## What a buyer sees
 
@@ -16,10 +19,28 @@ transport cost.
 3. **Step 2 — Your details.** Business or private, company name and VAT number,
    contact name, e-mail, phone, delivery address and country, free-text notes.
    The VAT line in the total updates as the buyer types.
-4. **Step 3 — Review.** Line items, delivery address, links to the terms and
-   the privacy policy, and a checkbox confirming this is a binding order.
-5. **Confirmation.** An order reference (`RS-YYMMDD-XXXX`), a copy by e-mail to
-   the buyer, and the order to `info@re-sound.be`.
+4. **Step 3 — Review.** Line items (article code, label, `qty × unit price`
+   and the line total, so a total never reads as a unit price; fire
+   protection says where its `booths × segments` quantity comes from),
+   delivery address, links to the terms and the privacy policy, and a
+   checkbox confirming this is a binding order.
+5. **Confirmation.** The order reference assigned by the database
+   (`RS-2026-0001`, sequential per year), a copy by e-mail to the buyer, and
+   the order to `info@re-sound.be`. When the database could not confirm the
+   order the reference has the older shape `RS-YYMMDD-XXXX`, so the two are
+   told apart at a glance.
+
+The product page is static for up to an hour (ISR) while the route prices
+from the live catalogue, so the submit carries the amounts the buyer saw
+(`expected.netCents` / `grossCents`). When the route's net differs it answers
+`409 price_changed` with a fresh catalogue slice **before** anything is stored
+or mailed; the dialog swaps in the slice, shows the new total and asks the
+buyer to tick the consent box again. An article that went inactive since the
+page was rendered answers `400 selection_outdated` the same way, and the
+dialog repairs the configuration (choices that still exist stay, the rest
+default) and returns to step 1. Only the VAT part of the total may still
+differ at confirmation time (VIES answering differently at submit than while
+typing); the confirmation screen then says which way it went.
 
 Transport is stated as excluded at every step and in both e-mails.
 
@@ -64,27 +85,40 @@ because a country the rules cannot classify cannot be priced.
 
 ## Prices
 
-Only prices confirmed by Re-Sound are used (`src/lib/order/catalogue.ts`):
+Every amount the route charges comes from the catalogue (`getCatalogue()` in
+`src/lib/catalogue/load.ts`: the database when it answers within 4 s, the
+committed `src/data/catalogue.snapshot.json` otherwise). Nothing is priced
+from code or copy.
 
-| Product | Price excl. VAT | Options with a confirmed price |
-|---|---|---|
-| Solo Flex | € 2 740 per booth | installation + € 865 per booth |
-| Duo | € 7 615 per booth | installation: on request |
-| Modular XL | € 15 000 per pod | installation + € 2 990 per pod; extra 90 cm element + € 7 264 (installation included) |
-| Interior | € 387 per set | installation: on request |
-| Divide | € 1 238 per piece | — |
+The request carries a `selection`: `{ productId, quantity, articles: string[] }`
+— the product and the article codes the buyer picked (one per required
+single-choice category such as construction, colour, door or socket; any
+number from the multi-choice ones such as accessories and fire protection).
+`validateSelection()` (`src/lib/catalogue/select.ts`) checks it against the
+catalogue: unknown product or article, an article of another product, a
+duplicate, a missing or doubled required category, a product without a page
+(Solo ECO, Solo Stand, Modular 4) or a quantity outside 1..`max_qty` all answer
+`400 invalid_product`. Nothing is clamped or dropped silently: a tampered
+selection is refused, not repaired.
 
-Every other add-on shown on the product pages is offered as "on request".
-`getOrderable()` refuses to price a product whose catalogue price no longer
-matches `src/data/products.ts`, so the two can never drift apart silently.
+`priceSelection()` (`src/lib/catalogue/pricing.ts`) then applies the six
+rules documented in `src/lib/catalogue/types.ts`: one line per article at its
+catalogue price, line quantity = order quantity (× the booth's 0.9 m segments
+for Modular XL fire protection), credits negative, on-request articles
+(`price_cents` null) without an amount and the order flagged
+`hasOnRequestItems`, included articles (colour, door, socket …) as €0 lines so
+the factory gets their article numbers. VAT is applied to the net exactly as
+before.
 
 ## How the money is protected
 
 The browser computes the same totals only to show them. The API route
-(`src/app/api/order/route.ts`) ignores every amount in the request: it re-reads
-the catalogue, clamps quantities to the allowed range, drops unknown options,
-recomputes the net, resolves the VAT itself and builds both e-mails from those
-numbers. Amounts are handled in whole cents.
+(`src/app/api/order/route.ts`) ignores every amount in the request: it loads
+the catalogue, validates the selection against it, prices every line from it,
+resolves the VAT itself, stores the result and builds both e-mails from those
+numbers. Amounts are handled in whole cents and formatted per locale with
+`Intl.NumberFormat` (two decimals unless the amount is a whole euro; never
+rounded).
 
 Also on the route: honeypot field, required consent, per-address rate limit
 (5 orders per 10 minutes), field-length limits, control characters stripped,
@@ -101,26 +135,100 @@ Two limits worth knowing:
   Automate means the flow accepted the message, not that the mailbox received
   it. If orders ever go missing, check the flow's own run history first.
 
+## What the route does with an order
+
+In this order, after validation, pricing and VAT:
+
+1. **Database first.** `placeOrder()` (`src/lib/db/orders.ts`) calls the
+   `place_order()` function with the columns of `orders` and one row per
+   priced line (`article_code`, `category_key`, `description`, `price_type`,
+   `qty`, `unit_price_cents`, `line_total_cents`, `note`). The function assigns
+   the reference from a sequence. The call has one 4 s deadline and never
+   throws: any failure returns null and is logged once per distinct reason,
+   with addresses redacted.
+   - `idempotency_key` = sha256 of e-mail + selection (article codes sorted)
+     + gross + the sanitised customer block (name, company, VAT number,
+     address, notes) + the UTC hour, so a double click or a retry after a
+     timeout stores one order, while the same configuration for another
+     address, or an hour later, is a new one. A row that already existed
+     when the request arrived is flagged `replayed` in the response and the
+     internal e-mail says DUPLICATE SUBMISSION.
+   - `placeOrder()` answers `stored`, `refused` (the database answered and
+     rolled back: the order is not in the table) or `unknown` (no usable
+     answer: deadline, network, gateway 5xx — a late commit is possible). A
+     transport failure, and the duplicate-key race inside `place_order()`
+     (23505), are retried once with a fresh deadline; the key makes that
+     safe.
+   - `client_hash` = sha256 of the client address; the address itself is
+     never stored. `config` is the sanitised selection, never the raw body.
+   - `vat_number_status`: `valid` / `invalid` (VIES or format) / `unverified`
+     (VIES silent) / `not_eligible` (not checked: private buyer, or delivery
+     inside Poland); empty when no number was given.
+2. **E-mails second**, both from the same numbers, sent together. Every line
+   shows its article code, the label in the buyer's language (`lineLabel()`
+   from the catalogue `labels`, English for the internal copy), quantity,
+   unit price and line total; included articles read "Included", on-request
+   ones "On request", credits are negative. A **Model** row gives the product
+   and the base article code, and Modular XL adds the **segment count**. The
+   VAT rows, the CHECK BY HAND row, the transport note and the reference are
+   unchanged.
+3. **`mark_order_mailed()`** records on the stored row which e-mails went out.
+
+**When the database did not confirm the order** the route falls back to the
+older `RS-YYMMDD-XXXX` reference and the internal e-mail says so in its first
+line, in one of two ways: `NOT IN DATABASE` (subject suffix `- NOT IN
+DATABASE`) when the database refused the order — enter it by hand; `NOT
+CONFIRMED IN THE DATABASE` (suffix `- DATABASE NOT CONFIRMED`) when it did not
+answer — look for the idempotency key printed in the e-mail (or the buyer's
+address in the last hour) in the `orders` table before entering it by hand,
+because the row may well be there. Every internal e-mail also carries a
+**Priced from** row (`database` or `snapshot`, with the read time) and the
+stored `config` keeps the same under `pricedFrom`, so an order priced from
+the snapshot during an outage is recognisable later. **The order exists when
+it is in the database or the internal e-mail was delivered.** Only when both
+failed does the route answer `502 not_delivered` and the dialog tell the
+buyer nothing was registered. The buyer's own copy failing is never fatal.
+
+The response on success:
+
+```json
+{ "success": true, "reference": "RS-2026-0007", "stored": true, "replayed": false,
+  "emailSent": true, "confirmationSent": true,
+  "totals": { "netCents": 855000, "vatCents": 196650, "grossCents": 1051650,
+              "vatRate": 0.23, "vatMode": "domestic", "hasOnRequestItems": false } }
+```
+
+`stored` says whether the row was confirmed; the dialog reconciles its own
+total against `totals` (the net cannot differ — see `409 price_changed`
+above — so a different gross is the VAT treatment).
+
 ## Configuration
 
 | Variable | Purpose |
 |---|---|
+| `SUPABASE_URL`, `SUPABASE_ANON_KEY` | the catalogue and `place_order()`; server-side only (`src/lib/db/supabase.ts` and `src/lib/catalogue/load.ts` start with `import 'server-only'`, so a client import fails the build). The older `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` names are still read as a fallback (`docs/database.md`) |
+| `SUPABASE_SERVICE_ROLE_KEY` | optional; used instead of the anon key when set. Never `NEXT_PUBLIC_` |
 | `POWER_AUTOMATE_WEBHOOK_URL` | already used by the contact and lead forms; the order e-mails go through the same flow |
 | `ORDER_EMAIL` | optional; where orders are sent. Defaults to `info@re-sound.be` |
 
-**Orders are not stored anywhere.** The e-mail to `info@re-sound.be` is the
-only record, so if it cannot be delivered the API answers HTTP 502 and the
-dialog tells the buyer the order did not reach Re-Sound and nothing has been
-registered. The buyer is never shown a confirmation for an order that does not
-exist. The buyer's own copy failing is not fatal: the order is accepted and the
-confirmation says the copy could not be sent.
+Without the Supabase variables the site prices from the snapshot and orders
+are e-mail-only (every internal e-mail then says NOT CONFIRMED IN THE
+DATABASE, with the reason `SUPABASE_URL / SUPABASE_ANON_KEY not set`). Without the
+webhook, orders are still stored but nobody is mailed; the `orders` table
+shows them with `internal_email_sent` false.
 
-**The webhook must be configured in production**, or no order can be placed.
+`GET /api/health/catalogue` answers `{ source, configured, products,
+articles, priceList: { id, validFrom }, loadedAt }` with `Cache-Control:
+no-store` — no prices, no keys. After a deploy, `"source": "database"` is the
+proof the site reaches Supabase; `"snapshot"` with `"configured": true` means
+the host did not answer in time, `"configured": false` that the variables are
+missing.
 
-The route answers with a machine-readable `code` on every failure
-(`rate_limited`, `invalid_product`, `invalid_country`, `invalid_details`,
-`company_required`, `consent_required`, `pricing_failed`, `not_delivered`,
-`server_error`), which the dialog turns into a translated message.
+The route answers with a machine-readable `error` on every failure
+(`rate_limited`, `invalid_product`, `selection_outdated`, `invalid_country`,
+`invalid_details`, `company_required`, `consent_required`, `pricing_failed`,
+`price_changed` (409), `not_delivered`, `server_error`), which the dialog
+turns into a translated message.
 
 `POST /api/vat-check` verifies a VAT number on its own (used while the buyer
 types) and answers `empty`, `format_invalid`, `not_eligible` (a Polish number),
@@ -128,11 +236,20 @@ types) and answers `empty`, `format_invalid`, `not_eligible` (a Polish number),
 
 ## Changing a price or an option
 
-1. Price of a product: `src/data/products.ts` (`fromPrice`) **and**
-   `src/lib/order/catalogue.ts` (`unitPriceExclVat`) — they are checked against
-   each other.
-2. Price of an option: `src/lib/order/catalogue.ts`. `priceExclVat: null` means
-   "on request".
-3. A new orderable product: add an entry to `ORDERABLE` and drop
-   `<OrderButton slug="…" namespace="…" />` into its hero.
-4. The VAT rate or the country list: `src/lib/order/vat.ts`.
+Prices and options live in the database, not in code: see "Changing a price
+or an option" in `docs/database.md` (Supabase dashboard, `articles` table; the
+order dialog reads the change within a minute, the pages within an hour).
+
+1. A new orderable product: give it a `website_slug` in `products` and drop
+   `<OrderButton />` into the page's hero.
+2. The VAT rate or the country list: `src/lib/order/vat.ts`.
+3. The e-mail wording: `messages/<locale>.json` under `order.email` and
+   `order.summary`, in all ten locales.
+
+Two things worth doing on the database side (not done from the sandbox,
+which cannot reach Supabase): set `SUPABASE_SERVICE_ROLE_KEY` in production
+and revoke `execute` on `place_order()` / `mark_order_mailed()` from `anon`,
+so a leaked anon key cannot insert orders past the route's checks; and, if
+gap-free numbering matters, rewrite `place_order()` with
+`insert … on conflict (idempotency_key) do nothing` so the concurrent race no
+longer burns a sequence value (the route already retries it).

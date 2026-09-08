@@ -12,9 +12,11 @@ import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumb
 import SolidProductPage from '@/components/sections/SolidProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
-import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
+import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/solid';
 import { pickMessages } from '@/lib/i18n-messages';
+import { fromPriceText } from '@/components/product/boothPrice';
+import { getFromPriceCents } from '@/lib/catalogue/load';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -26,6 +28,13 @@ import {
 interface PageProps {
   params: { locale: string };
 }
+
+/**
+ * ISR: the "from" price comes from the catalogue (database), so a change
+ * reaches this page within the hour without a redeploy. Solid has no
+ * catalogue product yet, so the hero shows no price until one exists.
+ */
+export const revalidate = 3600;
 
 // Localised FAQ keys for this product. The keys are stable across locales;
 // each translation file under `messages/{locale}.json` provides the actual
@@ -85,6 +94,10 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'solid', cleanName);
+  // "From" price from the catalogue (database, else snapshot): hero + JSON-LD
+  // offer. Undefined/null while no catalogue product carries websiteSlug 'solid'.
+  const priceFrom = await fromPriceText(locale, 'solid');
+  const priceCents = await getFromPriceCents('solid');
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -110,7 +123,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       }
     })
     .filter((e): e is FaqEntry => e !== null),
-    faqFor(locale, 'solid').map((f) => ({ question: f.question, answer: f.answer }))
+    (await faqForResolved(locale, 'solid')).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   // Only the namespaces the client components in this tree actually use —
@@ -135,6 +148,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           name: cleanName,
           description,
           category: tData('category.textile'),
+          priceCents,
         })}
       />
       <JsonLd
@@ -143,6 +157,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <SolidProductPage
+          priceFrom={priceFrom}
           breadcrumbs={<Breadcrumbs items={crumbs} />}
           specs={
             <ProductSpecs

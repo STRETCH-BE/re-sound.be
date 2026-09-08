@@ -13,7 +13,7 @@
     "blogTitle": "Blog",
     "blogDescription": "Einblicke in Kreislaufwirtschaft, Akustik und nachhaltiges Design vom Re-Sound-Team.",
     "interiorTitle": "Interior Akustische Wandpaneele | Re-Sound",
-    "interiorDescription": "Modulare Akustik-Wandpaneele aus recyceltem Textil: Klasse-A-Absorption (αw 1,0), abnehmbarer waschbarer Bezug, hergestellt in Belgien. Ab 387 € pro Set.",
+    "interiorDescription": "Modulare Akustik-Wandpaneele aus recyceltem Textil: Klasse-A-Absorption (αw 1,0), abnehmbarer waschbarer Bezug, hergestellt in Belgien. Ab {fromPrice} pro Set.",
     "solidTitle": "Solid Akustische Wandpaneele | Re-Sound",
     "solidDescription": "Großformatige Akustik-Wandpaneele (1200 × 600 mm) für wirkungsvolle Schallabsorption. Hakenmontage, Kern aus recyceltem Textil, hergestellt in Belgien.",
     "divideTitle": "Divide Freistehende Akustiktrennwände | Re-Sound",
@@ -972,7 +972,6 @@
       "uspRecyclable": "100% Recyclierbar",
       "uspOrigin": "Hergestellt in Belgien",
       "priceFrom": "Ab",
-      "priceValue": "€387",
       "priceUnit": "zzgl. MwSt. pro Set mit 3 Modulen",
       "colorSelector": "Farbe Wählen"
     },
@@ -1092,7 +1091,6 @@
       "usp2": "1200 × 600 mm",
       "usp3": "Hakensystem",
       "colorSelector": "Farbe Wählen",
-      "priceValue": "€407",
       "priceUnit": "zzgl. MwSt. pro Panel",
       "priceFrom": "Ab"
     },
@@ -1235,7 +1233,6 @@
       "usp2": "Vollständig Modular",
       "usp3": "Freistehend",
       "priceFrom": "Ab",
-      "priceValue": "€1.238",
       "priceUnit": "zzgl. MwSt.",
       "colorSelector": "Farbe Wählen"
     },
@@ -4024,7 +4021,8 @@
         "booth": "pro Kabine",
         "set": "pro Set",
         "piece": "pro Stück"
-      }
+      },
+      "fromPriceFormatted": "ab {amount} {unit}"
     },
     "rpet": {
       "title": "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound",
@@ -4208,9 +4206,9 @@
   },
   "boothGuide": {
     "title": "Telefonbox fürs Büro: Preise & ISO-Klassen 2026 | Re-Sound",
-    "description": "Büro-Telefonbox: Preise vom Hersteller. Solo Flex ab 2.740 € netto, Modular XL ab 15.000 €. ISO 23351-1-Klassen, Lüftung, Montage, Lieferzeit, Garantie.",
+    "description": "Büro-Telefonbox: Preise vom Hersteller. Solo Flex ab {soloFlex} netto, Modular XL ab {modularXl}. ISO 23351-1-Klassen, Lüftung, Montage, Lieferzeit, Garantie.",
     "h1": "Telefonboxen fürs Büro: Preise, Klassen und Auswahlhilfe",
-    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab 2.740 € zzgl. MwSt. ohne Montage (Solo Flex), ein Modular XL Meeting-Pod ab 15.000 €. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
+    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab {soloFlex} zzgl. MwSt. ohne Montage (Solo Flex), ein Modular XL Meeting-Pod ab {modularXl}. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
     "breadcrumb": "Telefonbox-Preise",
     "priceTag": "Preise 2026",
     "priceTitle": "Preise pro Modell (zzgl. MwSt.)",
@@ -4221,7 +4219,6 @@
       "footprint": "Stellfläche",
       "dimensions": "Außenmaße (B×T×H)",
       "priceExcl": "Ab-Preis ohne Montage",
-      "priceIncl": "Ab-Preis mit Montage",
       "extra": "Zusätzliches 90-cm-Element",
       "iso": "ISO 23351-1",
       "ventilation": "Lüftung",
@@ -4305,7 +4302,15 @@
       "decrease": "Menge verringern",
       "increase": "Menge erhöhen",
       "optionsTitle": "Optionen",
-      "optionPrice": "+{price}"
+      "optionPrice": "+{price}",
+      "model": "Modell",
+      "fromPrice": "Ab {price}",
+      "included": "Inklusive",
+      "creditPrice": "−{price}",
+      "none": "Keine",
+      "perSegmentPrice": "+{price} pro Segment von 90 cm",
+      "segmentsLine": "× {segments} Segmente = {amount} {unit}",
+      "socketHint": "Wird auf das Lieferland abgestimmt, das Sie im nächsten Schritt angeben. Wählen Sie hier eine, wenn Sie einen anderen Typ benötigen."
     },
     "options": {
       "installation": {
@@ -4352,14 +4357,18 @@
       "consent": "Ich gebe eine verbindliche Bestellung ab. Re-Sound bestätigt sie per E-Mail mit den Transportkosten und dem Preis für jede auf Anfrage kalkulierte Option. Vor dieser Bestätigung wird nichts berechnet.",
       "submit": "Bestellung abgeben",
       "submitting": "Wird gesendet…",
-      "missingTitle": "Bitte füllen Sie diese Felder aus:"
+      "missingTitle": "Bitte füllen Sie diese Felder aus:",
+      "socketMatched": "Steckdose auf Ihr Lieferland abgestimmt: {socket}. Wenn Sie einen anderen Typ benötigen, ändern Sie dies unter „Optionen ändern“.",
+      "socketDefault": "Für Ihr Lieferland ist in unserer Liste keine länderspezifische Steckdose hinterlegt; die Standardausführung wurde gewählt: {socket}. Ändern Sie sie unter „Optionen ändern“, wenn Sie einen anderen Typ benötigen.",
+      "segmentsQty": "{quantity} × {segments} Segmente à 90 cm"
     },
     "summary": {
       "net": "Zwischensumme exkl. MwSt.",
       "total": "Gesamt",
       "onRequest": "Auf Anfrage",
       "onRequestNote": "Optionen mit dem Vermerk „auf Anfrage“ kalkuliert unser Team. Sie erhalten den endgültigen Betrag, bevor die Bestellung bestätigt wird.",
-      "transportNote": "Der Transport ist in diesen Preisen nie enthalten. Die Kosten für die Lieferung an Ihre Adresse nennen wir Ihnen, wenn wir die Bestellung bestätigen."
+      "transportNote": "Der Transport ist in diesen Preisen nie enthalten. Die Kosten für die Lieferung an Ihre Adresse nennen wir Ihnen, wenn wir die Bestellung bestätigen.",
+      "included": "Inklusive"
     },
     "vat": {
       "domestic": "MwSt. {rate} %",
@@ -4380,7 +4389,9 @@
       "body": "Eine Kopie haben wir Ihnen per E-Mail geschickt. Unser Team bestätigt den endgültigen Betrag inklusive Transport innerhalb eines Werktags.",
       "emailFallback": "Wir konnten die Bestätigungs-E-Mail nicht versenden. Bitte wenden Sie sich unter Angabe der Referenz {reference} an info@re-sound.be.",
       "close": "Schließen",
-      "correctedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Er weicht von dem bei der Bestellung angezeigten Betrag ab, weil Ihre USt-IdNr. nicht bestätigt werden konnte; sobald die Nummer bestätigt ist, schreiben wir Ihnen die Mehrwertsteuer gut."
+      "correctedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Er weicht von dem bei der Bestellung angezeigten Betrag ab, weil Ihre USt-IdNr. nicht bestätigt werden konnte; sobald die Nummer bestätigt ist, schreiben wir Ihnen die Mehrwertsteuer gut.",
+      "vatVerifiedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Ihre USt-IdNr. wurde bei der Bestellung bestätigt, daher wird keine Mehrwertsteuer berechnet.",
+      "priceChangedTotal": "Der endgültige Gesamtbetrag beträgt {total}. Die Preisliste hat sich während Ihrer Bestellung geändert; die Bestätigungs-E-Mail zeigt den Betrag, den wir in Rechnung stellen."
     },
     "error": {
       "generic": "Ihre Bestellung konnte nicht übermittelt werden. Bitte versuchen Sie es erneut oder wenden Sie sich an info@re-sound.be.",
@@ -4393,7 +4404,9 @@
       "consent_required": "Bitte bestätigen Sie die Bestellbedingungen.",
       "pricing_failed": "Wir konnten für diese Bestellung keinen Preis ermitteln. Bitte wenden Sie sich an info@re-sound.be.",
       "not_delivered": "Ihre Bestellung hat uns nicht erreicht. Es wurde nichts erfasst. Bitte senden Sie eine E-Mail an info@re-sound.be, damit wir uns darum kümmern können.",
-      "server_error": "Auf unserer Seite ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder wenden Sie sich an info@re-sound.be."
+      "server_error": "Auf unserer Seite ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder wenden Sie sich an info@re-sound.be.",
+      "price_changed": "Unsere Preise wurden während Ihrer Bestellung aktualisiert. Bitte prüfen Sie den neuen Gesamtbetrag unten und bestätigen Sie Ihre Bestellung erneut.",
+      "selection_outdated": "Einige Optionen haben sich während Ihrer Bestellung geändert. Bitte prüfen Sie Ihre Konfiguration erneut."
     },
     "email": {
       "internalHeading": "Neue Bestellung",
@@ -4403,7 +4416,9 @@
       "intro": "Vielen Dank für Ihre Bestellung. Wir haben sie erfasst und bestätigen sie per E-Mail, inklusive der Transportkosten.",
       "referenceLabel": "Ihre Referenz",
       "deliveryHeading": "Lieferadresse",
-      "nextSteps": "Fragen zu dieser Bestellung? Antworten Sie auf diese E-Mail oder rufen Sie uns an: +32 3 284 68 18. Re-Sound ist eine Marke der Stretch Group; Ihre Bestellung wird ab unserem Werk in Częstochowa (Polen) versandt."
+      "nextSteps": "Fragen zu dieser Bestellung? Antworten Sie auf diese E-Mail oder rufen Sie uns an: +32 3 284 68 18. Re-Sound ist eine Marke der Stretch Group; Ihre Bestellung wird ab unserem Werk in Częstochowa (Polen) versandt.",
+      "model": "Modell",
+      "segments": "Segmente"
     }
   }
 }

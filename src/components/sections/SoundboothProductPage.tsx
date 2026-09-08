@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import OrderButton from '@/components/order/OrderButton';
+import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -57,6 +58,8 @@ export interface BoothSlots {
   otherModels: React.ReactNode;
   /** From-price KPI, formatted for the locale on the server (see src/components/product/boothPrice.ts) */
   fromPrice?: { value: string; label: string; href?: string };
+  /** Catalogue slice for the order dialog (server-loaded); the button hides when absent or empty */
+  configurator?: ConfiguratorData | null;
 }
 
 export interface SoundboothProductPageProps extends BoothSlots {
@@ -97,6 +100,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     faq,
     otherModels,
     fromPrice,
+    configurator,
   } = props;
 
   const t = useTranslations(namespace);
@@ -168,7 +172,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           </div>
 
           <div className="hero-ctas">
-            <OrderButton slug={slug} namespace={namespace} className="btn-primary" />
+            <OrderButton slug={slug} configurator={configurator} className="btn-primary" />
             <Link
               href="/contact"
               className="btn-secondary"

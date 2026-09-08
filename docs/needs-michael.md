@@ -99,6 +99,91 @@ real order arrives:
     and Ukraine. There is deliberately no "other country" option. Name any
     country you want added.
 
+## The 2026 price list and the database (added 8 September 2026)
+
+The booth price list is in the site's own database (`docs/database.md`); every
+price on the site comes from it. These came out of the import:
+
+38. **Solo Flex was priced as Solo ECO.** The booth guide, FAQ-003 and the
+    four "phone booth prices" blog posts said Solo Flex starts at € 2 740.
+    On the 2026 list € 2 740 is the **Solo ECO** closed-backwall price;
+    Solo Flex is € 4 118,75 (the page's specs — 102 × 102 × 226 cm, sit-stand
+    table, 4.6 m³/min — are the Solo Flex ones, so the page was right and the
+    price was wrong). The site now shows the list price everywhere. The blog
+    posts compared Solo Flex to competitors at € 2 990, € 3 990 and € 9 320;
+    at € 4 118,75 it is no longer the cheapest, and the sentences that said
+    so were rewritten to state where the price sits. Read those four posts
+    once (nl, en, fr, de) and tell us if you want a different argument.
+
+39. **Installation prices are gone.** The list says "delivery and
+    installation: optional, quoted separately", so installation is "on
+    request" on every product. The € 865 (Solo Flex) and € 2 990 (Modular XL)
+    figures were derived from the guide's installation-inclusive prices,
+    which no longer exist. If you want installation priced online again,
+    give a figure per model and it is one cell in the `articles` table
+    (the `WEB-…-INST` rows).
+
+40. **Valid from 21 September 2026.** The list carries that date
+    (`price_lists.valid_from`). The site shows the list now, as instructed.
+    If the old prices should hold until the 21st, say so.
+
+41. **Modular XL capacity.** The list says the base module seats up to 4,
+    +1 element 6, +2 elements 8, +3 elements 10. The page hero says
+    "6–10 persons" and "the base unit comfortably seats six". The order
+    dialog follows the list; the page copy still says six. Confirm which is
+    right and the copy is changed in ten locales.
+
+42. **Modular XL fire protection** is priced per 0.9 m segment on the list
+    ("multiply by the number of segments"). The site counts the 180 cm base
+    module as two segments plus the chosen extension (so 2, 3, 4 or 5).
+    Confirm that reading; if the base counts as one, it is one number in
+    `articles.segments`.
+
+43. **Duo Work vs Duo Flex.** The Duo page now sells both models (a picker
+    at the top of the order dialog). The list flags that Ethernet is priced
+    differently on the two (€ 156,25 vs € 143,75); it is left as listed.
+
+44. **Solo ECO, Solo Stand and Modular 4** are in the catalogue with all
+    their options but have no product page, so they cannot be ordered
+    online. Say if you want pages for them.
+
+45. **Sofa fabrics** have no article codes on the list. The dialog orders
+    the sofa article as is; the fabric is settled in the confirmation.
+
+46. **Vercel environment variables — blocking for the database.** Add
+    `SUPABASE_URL` and `SUPABASE_ANON_KEY` to the re-sound-be project in
+    Vercel (values in `docs/database.md` and the Supabase dashboard, Project
+    settings → API) and redeploy. Until then the
+    site runs on the committed snapshot of the catalogue (identical prices)
+    and orders are e-mailed but not stored. `/api/health/catalogue` shows
+    which state the site is in.
+
+47. **Nothing from the supplier sheet is on the site** and nothing from it
+    may enter the repository, which is public. The purchase prices and
+    margins are in the `supplier_articles` table, readable only with the
+    service role. The workbook itself stays with you.
+
+48. **Solid at € 407 per panel.** The Solid page has said "Starting from
+    €407 excl. VAT per panel" since before this work, while the earlier price
+    request listed Solid as unpriced. The figure is now the catalogue article
+    `WEB-SOLID-PIECE` (source "website", so the page keeps showing what it
+    showed) and its note says it is unconfirmed. Confirm it, correct it, or
+    set the article inactive in the dashboard to take the price off the page.
+    Solid has no order button; say if it should get one.
+
+49. **Hardening once the database is live.** Two changes are documented but
+    not applied, because both need the service-role key in Vercel first:
+    revoking `execute` on `place_order()` / `mark_order_mailed()` from the
+    anon role (the anon key never leaves the server, so this is belt and
+    braces), and a scheduled check that mails a digest of stored orders whose
+    internal e-mail did not go out. Say when the service-role key is set.
+
+50. **Model descriptions in the order dialog.** The Duo dialog's model
+    picker shows each model's one-line description in English in every
+    language (the `products` table has no translated labels, unlike
+    `articles`). Nine short sentences to translate once you confirm the
+    English ones.
+
 Still open: items 14–25 below (hero images, Google API key and place id, planned application pages, rWood Groove 60 % recycled content, translation notes) and the Google Business Profile checklist.
 
 Everything below is a fact, asset or decision the sprint could not settle from

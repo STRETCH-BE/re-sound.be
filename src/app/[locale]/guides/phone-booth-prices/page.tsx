@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+import { guidePriceArgs } from '@/components/guides/BoothPriceGuide';
+import { getCatalogue } from '@/lib/catalogue/load';
+
 import BoothPriceGuide from '@/components/guides/BoothPriceGuide';
 import { GUIDE_LOCALES, guidePath, isGuideLocale } from '@/data/guides';
 import { ogAlternateLocales, ogLocale } from '@/lib/seo';
@@ -9,6 +12,12 @@ import { ogAlternateLocales, ogLocale } from '@/lib/seo';
 interface PageProps {
   params: { locale: string };
 }
+
+/**
+ * ISR: prices come from the catalogue (database), so a change reaches this
+ * page within the hour without a redeploy.
+ */
+export const revalidate = 3600;
 
 /**
  * Booth price guide (workbook Booth_Guide / Content_Calendar CC-008).
@@ -19,8 +28,11 @@ interface PageProps {
 export async function generateMetadata({ params: { locale } }: PageProps): Promise<Metadata> {
   if (!isGuideLocale(locale)) return { robots: { index: false, follow: false } };
   const t = await getTranslations({ locale, namespace: 'boothGuide' });
+  // The description names the Solo Flex and Modular XL "from" prices; they
+  // come from the catalogue like every other price on the site.
+  const priceArgs = guidePriceArgs(await getCatalogue(), locale, t('onRequest'));
   const title = t('title');
-  const description = t('description');
+  const description = t('description', priceArgs);
 
   return {
     // Title already ends in "| Re-Sound" — bypass the layout template.

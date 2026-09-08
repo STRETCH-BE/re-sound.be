@@ -7,9 +7,11 @@ import JsonLd from '@/components/seo/JsonLd';
 import { SHOW_PLACEHOLDER_PRICES } from '@/config/site';
 import { guidePath, isGuideLocale } from '@/data/guides';
 import { HUBS, hubPath, type HubId } from '@/data/hubs';
-import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
+import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import { PRODUCTS, isoSpeechClass, type Product } from '@/data/products';
 import { Link } from '@/i18n/navigation';
+import { formatPrice } from '@/lib/catalogue/format';
+import { getProductPrices } from '@/lib/catalogue/load';
 import {
   breadcrumbSchema,
   collectionPageSchema,
@@ -32,7 +34,8 @@ const UNIT_KEYS: Record<Product['priceUnit']['unitText'], string> = { 'per m²':
  * Range hub page (server component): H1 → intro → comparison table → model
  * cards → why Re-Sound → applications → FAQ → CTA, plus CollectionPage +
  * ItemList + BreadcrumbList + FAQPage JSON-LD. Everything is data-driven
- * from src/data/products.ts and the `hubs.*` message namespaces.
+ * from src/data/products.ts and the `hubs.*` message namespaces; the
+ * "from" prices come from the catalogue (database, else snapshot).
  */
 export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps) {
   const hub = HUBS[hubId];
@@ -43,6 +46,7 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
   const tm = await getTranslations({ locale, namespace: 'manufacturer' });
 
   const models = hub.models.map((slug) => PRODUCTS[slug]);
+  const prices = await getProductPrices();
   const path = hubPath(hub, locale);
   const isBooth = hub.family === 'booth';
 
@@ -50,7 +54,7 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
   // Hub FAQ (messages) + the workbook rows tagged for this hub, without duplicates
   const faqEntries: FaqEntry[] = mergeFaqEntries(
     Object.values(t.raw('faq') as Record<string, { question: string; answer: string }>),
-    faqFor(locale, hubId).map((f) => ({ question: f.question, answer: f.answer }))
+    (await faqForResolved(locale, hubId)).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   const crumbs = [
@@ -59,10 +63,18 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
     { name: t('breadcrumb'), href: path },
   ];
 
-  // From-price cell: confirmed prices always; placeholders only behind the flag.
+  // From-price cell: catalogue prices always (formatted here, not through the
+  // `fromPriceValue` message, whose `{price, number}` would print 7 612,50 as
+  // "7,612.5"); placeholders only behind the flag.
   const unitOf = (p: Product) => ts(`units.${UNIT_KEYS[p.priceUnit.unitText]}`);
   const priceOf = (p: Product): string | null => {
-    if (p.fromPrice !== null) return ts('fromPriceValue', { price: p.fromPrice, unit: unitOf(p) });
+    const cents = prices.get(p.slug) ?? null;
+    if (cents !== null) {
+      // "from {amount} {unit}": the amount arrives currency-formatted, so
+      // 7 612,50 keeps its cents (an ICU number argument would print 7,612.5).
+      const amount = formatPrice(cents, locale);
+      return ts.has('fromPriceFormatted') ? ts('fromPriceFormatted', { amount, unit: unitOf(p) }) : `${amount} ${unitOf(p)}`;
+    }
     if (SHOW_PLACEHOLDER_PRICES) return ts('fromPriceValue', { price: PLACEHOLDER_FROM_PRICE, unit: unitOf(p) }) + ' *';
     return null;
   };

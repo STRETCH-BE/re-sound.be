@@ -13,7 +13,7 @@
     "blogTitle": "Blog",
     "blogDescription": "Insights on circular economy, acoustics, and sustainable design from the Re-Sound team.",
     "interiorTitle": "Interior Acoustic Wall Panels | Re-Sound",
-    "interiorDescription": "Modular acoustic wall panels from recycled textile: Class A absorption (αw 1.0), removable washable cover, made in Belgium. From €387 per set.",
+    "interiorDescription": "Modular acoustic wall panels from recycled textile: Class A absorption (αw 1.0), removable washable cover, made in Belgium. From {fromPrice} per set.",
     "solidTitle": "Solid Acoustic Wall Panels | Re-Sound",
     "solidDescription": "Large-format acoustic wall panels (1200 × 600 mm) for high-impact sound absorption. Hook installation, recycled textile core, made in Belgium.",
     "divideTitle": "Divide Freestanding Acoustic Screens | Re-Sound",
@@ -972,7 +972,6 @@
       "uspRecyclable": "100% Recyclable",
       "uspOrigin": "Made in Belgium",
       "priceFrom": "Starting from",
-      "priceValue": "€387",
       "priceUnit": "excl. VAT per set of 3 modules",
       "colorSelector": "Select Color"
     },
@@ -1092,7 +1091,6 @@
       "usp2": "1200 × 600 mm",
       "usp3": "Hook System",
       "colorSelector": "Select Color",
-      "priceValue": "€407",
       "priceUnit": "excl. VAT per panel",
       "priceFrom": "Starting from"
     },
@@ -1235,7 +1233,6 @@
       "usp2": "Fully Modular",
       "usp3": "Freestanding",
       "priceFrom": "Starting from",
-      "priceValue": "€1,238",
       "priceUnit": "excl. VAT",
       "colorSelector": "Select Color"
     },
@@ -4021,7 +4018,8 @@
         "booth": "per booth",
         "set": "per set",
         "piece": "per piece"
-      }
+      },
+      "fromPriceFormatted": "from {amount} {unit}"
     },
     "rpet": {
       "title": "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound",
@@ -4205,9 +4203,9 @@
   },
   "boothGuide": {
     "title": "Office phone booth prices & ISO classes 2026 | Re-Sound",
-    "description": "Office phone booth prices: Solo Flex from €2,740 excl. VAT, Modular XL from €15,000. ISO 23351-1 classes, installation, lead time and warranty explained.",
+    "description": "Office phone booth prices: Solo Flex from {soloFlex} excl. VAT, Modular XL from {modularXl}. ISO 23351-1 classes, installation, lead time and warranty explained.",
     "h1": "Office phone booths: prices, classes and how to choose",
-    "intro": "A Re-Sound office phone booth costs from €2,740 excl. VAT without installation (Solo Flex) and a Modular XL meeting pod from €15,000. Below you find every price we publish, what is included, the ISO 23351-1 speech-level classes stated honestly, and how installation, testing and warranty work. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).",
+    "intro": "A Re-Sound office phone booth costs from {soloFlex} excl. VAT without installation (Solo Flex) and a Modular XL meeting pod from {modularXl}. Below you find every price we publish, what is included, the ISO 23351-1 speech-level classes stated honestly, and how installation, testing and warranty work. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).",
     "breadcrumb": "Phone booth prices",
     "priceTag": "PRICES 2026",
     "priceTitle": "Prices per model (excl. VAT)",
@@ -4218,7 +4216,6 @@
       "footprint": "Footprint",
       "dimensions": "External dimensions (W×D×H)",
       "priceExcl": "From, without installation",
-      "priceIncl": "From, with installation",
       "extra": "Extra 90 cm element",
       "iso": "ISO 23351-1",
       "ventilation": "Ventilation",
@@ -4302,7 +4299,15 @@
       "decrease": "One less",
       "increase": "One more",
       "optionsTitle": "Options",
-      "optionPrice": "+{price}"
+      "optionPrice": "+{price}",
+      "model": "Model",
+      "fromPrice": "From {price}",
+      "included": "Included",
+      "creditPrice": "−{price}",
+      "none": "None",
+      "perSegmentPrice": "+{price} per 90 cm segment",
+      "segmentsLine": "× {segments} segments = {amount} {unit}",
+      "socketHint": "Matched to the delivery country you enter in the next step. Pick one here if you need another type."
     },
     "options": {
       "installation": {
@@ -4349,14 +4354,18 @@
       "consent": "I am placing a binding order. Re-Sound confirms it by e-mail with the transport cost and any option priced on request. Nothing is charged before that confirmation.",
       "submit": "Place order",
       "submitting": "Sending…",
-      "missingTitle": "Please complete these fields:"
+      "missingTitle": "Please complete these fields:",
+      "socketMatched": "Power socket matched to your delivery country: {socket}. Change it under \"Change options\" if you need another type.",
+      "socketDefault": "Your delivery country has no country-specific socket in our list, so the standard one was selected: {socket}. Change it under \"Change options\" if you need another type.",
+      "segmentsQty": "{quantity} × {segments} segments of 90 cm"
     },
     "summary": {
       "net": "Subtotal excl. VAT",
       "total": "Total",
       "onRequest": "On request",
       "onRequestNote": "Options marked \"on request\" are priced by our team. You receive the final amount before the order is confirmed.",
-      "transportNote": "Transport is never included in these prices. We quote delivery to your address when we confirm the order."
+      "transportNote": "Transport is never included in these prices. We quote delivery to your address when we confirm the order.",
+      "included": "Included"
     },
     "vat": {
       "domestic": "VAT {rate} %",
@@ -4377,7 +4386,9 @@
       "body": "We have e-mailed you a copy. Our team confirms the final amount, including transport, within one working day.",
       "emailFallback": "We could not send the confirmation e-mail. Please contact info@re-sound.be quoting reference {reference}.",
       "close": "Close",
-      "correctedTotal": "The final total is {total}. It differs from the amount shown while ordering because your VAT number could not be confirmed; we credit the VAT as soon as it is."
+      "correctedTotal": "The final total is {total}. It differs from the amount shown while ordering because your VAT number could not be confirmed; we credit the VAT as soon as it is.",
+      "vatVerifiedTotal": "The final total is {total}. Your VAT number was verified when the order was placed, so no VAT is charged.",
+      "priceChangedTotal": "The final total is {total}. The price list changed while you were ordering; the confirmation e-mail shows the amount we will invoice."
     },
     "error": {
       "generic": "We could not place your order. Please try again or contact info@re-sound.be.",
@@ -4390,7 +4401,9 @@
       "consent_required": "Please confirm the order terms.",
       "pricing_failed": "We could not price this order. Please contact info@re-sound.be.",
       "not_delivered": "Your order did not reach us. Nothing has been registered. Please e-mail info@re-sound.be so we can take it from there.",
-      "server_error": "Something went wrong on our side. Please try again or contact info@re-sound.be."
+      "server_error": "Something went wrong on our side. Please try again or contact info@re-sound.be.",
+      "price_changed": "Our prices were updated while you were ordering. Please check the new total below and confirm your order again.",
+      "selection_outdated": "Some options changed while you were ordering. Please check your configuration again."
     },
     "email": {
       "internalHeading": "New order",
@@ -4400,7 +4413,9 @@
       "intro": "Thank you for your order. We have registered it and will confirm it by e-mail, including the transport cost.",
       "referenceLabel": "Your reference",
       "deliveryHeading": "Delivery address",
-      "nextSteps": "Questions about this order? Reply to this e-mail or call +32 3 284 68 18. Re-Sound is a Stretch Group brand; your order ships from our plant in Częstochowa (Poland)."
+      "nextSteps": "Questions about this order? Reply to this e-mail or call +32 3 284 68 18. Re-Sound is a Stretch Group brand; your order ships from our plant in Częstochowa (Poland).",
+      "model": "Model",
+      "segments": "Segments"
     }
   }
 }

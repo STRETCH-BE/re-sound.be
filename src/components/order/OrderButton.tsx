@@ -5,30 +5,31 @@ import { useLocale, useTranslations } from 'next-intl';
 
 import { analytics } from '@/lib/analytics';
 import { PRODUCTS } from '@/data/products';
-import { isOrderable } from '@/lib/order/catalogue';
+import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { localeFullCodes, type Locale } from '@/i18n/config';
 import OrderModal from './OrderModal';
 
 /**
- * "Order online" button plus its dialog. Renders nothing for a product that
- * has no confirmed price — those keep the quote route.
+ * "Order online" button plus its dialog. Renders nothing when the catalogue
+ * sells no model from this page — those keep the quote route.
  */
 export default function OrderButton({
   slug,
-  namespace,
+  configurator,
   className = 'btn-primary',
 }: {
+  /** Product page slug (the models' websiteSlug) */
   slug: string;
-  /** Translation namespace of the product page (add-on labels) */
-  namespace: string;
+  /** Models, categories and articles of this page, loaded on the server */
+  configurator: ConfiguratorData | null | undefined;
   className?: string;
 }) {
   const t = useTranslations('order');
   const locale = useLocale();
   const [open, setOpen] = useState(false);
 
-  if (!isOrderable(slug)) return null;
-  const productName = PRODUCTS[slug]?.name ?? slug;
+  if (!configurator || configurator.products.length === 0) return null;
+  const productName = PRODUCTS[slug]?.name ?? configurator.products[0].name;
 
   return (
     <>
@@ -47,7 +48,7 @@ export default function OrderButton({
         onClose={() => setOpen(false)}
         slug={slug}
         productName={productName}
-        namespace={namespace}
+        configurator={configurator}
         locale={locale}
         localeTag={localeFullCodes[locale as Locale] ?? 'en-BE'}
       />

@@ -53,7 +53,7 @@ Prenons une salle de réunion de 5 × 4 m sous 2,8 m de plafond, soit **56 m³**
 
 Avec du rPET Groove 24 mm (αw 0,85) : 5,0 / 0,85 = **5,9 m² de panneaux**. Un panneau de 2 400 × 600 mm couvre 1,44 m² ; cinq panneaux (5 × 1,44 = 7,2 m²) sur le mur face à l'écran et derrière les participants font l'affaire, à hauteur d'oreille.
 
-Les panneaux traitent la réverbération, pas les appels qui traversent un bureau ouvert ; il faut alors une [cabine acoustique](/fr/products/cabines-acoustiques) comme la Solo Flex, à partir de 2 740 € hors TVA.
+Les panneaux traitent la réverbération, pas les appels qui traversent un bureau ouvert ; il faut alors une [cabine acoustique](/fr/products/cabines-acoustiques) comme la Solo Flex, à partir de {{price:solo-flex}} hors TVA.
 
 ## Sécurité incendie et émissions : B-s1,d0 et OEKO-TEX
 
@@ -100,7 +100,7 @@ Côté prix, le tarif au m² dépend de l'épaisseur, de la couleur, de l'impres
 
 **Où le PET gagne** : couleur et graphisme, budget sur grande surface, façonnage par vos équipes, délai court, 100 % de recyclé, classe B-s1,d0 sur toute la gamme.
 
-**Où le bois gagne** : chaleur et prestige d'une réception, d'une salle de direction ou d'un restaurant ; continuité avec un mobilier en bois ; placages FSC. Le [rWood Micro](/fr/products/rwood-micro), microperforé, ajoute la classe B-s1,d0 pour les bâtiments publics. Si le cahier des charges impose la classe A, vérifiez l'exigence exacte avec votre acousticien ; Interior (αw 1,0, à partir de 387 € le lot) reste alors la voie directe.
+**Où le bois gagne** : chaleur et prestige d'une réception, d'une salle de direction ou d'un restaurant ; continuité avec un mobilier en bois ; placages FSC. Le [rWood Micro](/fr/products/rwood-micro), microperforé, ajoute la classe B-s1,d0 pour les bâtiments publics. Si le cahier des charges impose la classe A, vérifiez l'exigence exacte avec votre acousticien ; Interior (αw 1,0, à partir de {{price:interior}} le lot) reste alors la voie directe.
 
 Souvent, les deux se combinent : bois sur le mur que l'on regarde, PET ailleurs. Comparez les [panneaux acoustiques en bois](/fr/products/panneaux-acoustiques-bois), puis demandez le kit d'échantillons rPET ou un devis au m² : [contactez-nous](/fr/contact).
 

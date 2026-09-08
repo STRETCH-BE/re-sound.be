@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import OrderButton from '@/components/order/OrderButton';
+import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect, type ReactNode } from 'react';
 import Image from 'next/image';
@@ -26,6 +27,10 @@ const colorOptions = [
  * sticky navigation.
  */
 export interface InteriorProductPageSlots {
+  /** "From" price already formatted for the locale (catalogue); hidden when absent */
+  priceFrom?: string;
+  /** Catalogue slice for the order dialog (server-loaded); the button hides when absent or empty */
+  configurator?: ConfiguratorData | null;
   /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
   breadcrumbs?: React.ReactNode;
   specs: ReactNode;
@@ -35,7 +40,7 @@ export interface InteriorProductPageSlots {
   otherModels: ReactNode;
 }
 
-export default function InteriorProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: InteriorProductPageSlots) {
+export default function InteriorProductPage({ priceFrom, configurator, breadcrumbs, specs, downloads, gallery, faq, otherModels }: InteriorProductPageSlots) {
   const t = useTranslations('interiorPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -112,7 +117,7 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
           </div>
 
           <div className="hero-ctas">
-            <OrderButton slug="interior" namespace="interiorPage" className="btn-primary" />
+            <OrderButton slug="interior" configurator={configurator} className="btn-primary" />
             <Link href="/contact" className="btn-secondary" onClick={() => analytics.quoteClick('interior', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
@@ -121,7 +126,9 @@ export default function InteriorProductPage({ breadcrumbs, specs, downloads, gal
             </a>
           </div>
 
-          <p className="hero-price">{t('hero.priceFrom')} <strong>€387</strong> {t('hero.priceUnit')}</p>
+          {priceFrom && (
+            <p className="hero-price">{t('hero.priceFrom')} <strong>{priceFrom}</strong> {t('hero.priceUnit')}</p>
+          )}
         </div>
         
         <div className="hero-image">

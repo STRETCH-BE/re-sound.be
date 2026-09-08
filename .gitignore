@@ -31,3 +31,9 @@ yarn-error.log*
 
 # Lighthouse raw reports (large); the summaries are committed
 /docs/lighthouse/*.json
+
+# Price-list imports: the workbook carries supplier margins and the internal seed holds them — neither may enter this public repository
+*.xlsx
+!content/*.xlsx
+supabase/seed/supplier-*.sql
+supabase/seed/*internal*

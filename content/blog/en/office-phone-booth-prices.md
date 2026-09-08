@@ -3,7 +3,7 @@ id: "BP-015"
 slug: "office-phone-booth-prices"
 locale: "en"
 title: "Office phone booth prices and ISO 23351-1 classes | Re-Sound"
-description: "Office phone booth prices: Solo Flex from €2,740 excl. VAT. Plus ISO 23351-1 classes, ventilation, placement and lead time, from the manufacturer."
+description: "Office phone booth prices: Solo Flex from {{price:solo-flex}} excl. VAT. Plus ISO 23351-1 classes, ventilation, placement and lead time, from the manufacturer."
 h1: "Office phone booth prices and ISO 23351-1 classes explained (2026)"
 keyword: "office phone booth prices"
 secondaryKeywords: ["acoustic phone booth price","office phone booth cost","privacy pod price","meeting pod cost"]
@@ -18,31 +18,31 @@ heroAlt: "Solo Flex office phone booth for one person from Re-Sound, placed in a
 internalLinks: ["/en/products/acoustic-phone-booths","/en/products/solo-flex","/en/products/duo","/en/products/modular-xl","/en/products/pet-acoustic-panels","/en/where-to-buy","/en/contact","/en/guides/phone-booth-prices"]
 cta: "Request a quote for Solo Flex and we reply with the price, lead time and installation option for your address."
 sources: "ISO 23351-1:2020 (speech level reduction of enclosed office pods); ISO 22955, ISO 3382-3 and BS 8233 as pointers; ISO 11654; W.C. Sabine; Re-Sound product data; published prices of three competitors, September 2026 (€2,990 net, €3,990 and €9,320 excl. VAT for a one-person booth)."
-faq: [{"question":"How much does an office phone booth cost in 2026?","answer":"Published prices for a one-person booth in September 2026 at competitors run from €2,990 net through €3,990 excl. VAT to €9,320 excl. VAT. Solo Flex from Re-Sound costs €2,740 excl. VAT without installation and €3,605 excl. VAT with installation; transport outside Belgium is charged separately."},{"question":"Is a Class C phone booth quiet enough?","answer":"For calls and video meetings in an open-plan office, yes: at around 24 dB(A) speech level reduction, colleagues outside hear a distant murmur but no words. For confidential meetings right next to a busy floor, choose a higher class or a closed room, and check the exact requirement with your acoustician."},{"question":"How quickly can a phone booth be in my office?","answer":"Four to six weeks after order confirmation for a standard configuration. Two people can assemble Solo Flex themselves in under three hours; if our team installs it, allow about an hour for a single booth, two hours for a meeting pod and two to six hours for Modular XL."}]
+faq: [{"question":"How much does an office phone booth cost in 2026?","answer":"Published prices for a one-person booth in September 2026 at competitors run from €2,990 net through €3,990 excl. VAT to €9,320 excl. VAT. Solo Flex from Re-Sound costs {{price:solo-flex}} excl. VAT without installation; installation is quoted separately, as is transport outside Belgium."},{"question":"Is a Class C phone booth quiet enough?","answer":"For calls and video meetings in an open-plan office, yes: at around 24 dB(A) speech level reduction, colleagues outside hear a distant murmur but no words. For confidential meetings right next to a busy floor, choose a higher class or a closed room, and check the exact requirement with your acoustician."},{"question":"How quickly can a phone booth be in my office?","answer":"Four to six weeks after order confirmation for a standard configuration. Two people can assemble Solo Flex themselves in under three hours; if our team installs it, allow about an hour for a single booth, two hours for a meeting pod and two to six hours for Modular XL."}]
 draft: true
 status: "Review"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
 wordCount: 1387
 ---
 
-**An [office phone booth](/en/products/acoustic-phone-booths) from Re-Sound costs from €2,740 excl. VAT without installation, or €3,605 excl. VAT with installation.** That is the price of [Solo Flex](/en/products/solo-flex), our acoustic phone booth for one person. Here is what that covers, which size to choose, what the ISO 23351-1 classes mean and what to check before you order, from the manufacturer.
+**An [office phone booth](/en/products/acoustic-phone-booths) from Re-Sound costs from {{price:solo-flex}} excl. VAT without installation; installation is quoted separately.** That is the price of [Solo Flex](/en/products/solo-flex), our acoustic phone booth for one person. Here is what that covers, which size to choose, what the ISO 23351-1 classes mean and what to check before you order, from the manufacturer.
 
 ## What does an office phone booth cost in 2026?
 
-In September 2026, published prices for a one-person acoustic phone booth run from €2,740 to €9,320 excl. VAT (one competitor quotes net):
+In September 2026, published prices for a one-person acoustic phone booth run from €2,990 to €9,320 excl. VAT (one competitor quotes net):
 
 | Booth | Supplier | Price excl. VAT |
 |---|---|---|
-| Solo Flex | Re-Sound | €2,740 without installation · €3,605 with installation |
+| Solo Flex | Re-Sound | {{price:solo-flex}} without installation · installation quoted separately |
 | One-person booth | Competitor 1 | €2,990 net |
 | One-person booth | Competitor 2 | €3,990 excl. VAT |
 | One-person booth | Competitor 3 | €9,320 excl. VAT |
 
 Re-Sound prices are in euros excl. VAT; transport outside Belgium is quoted separately.
 
-Solo Flex costs less because we build it ourselves. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).
+Solo Flex sits between Competitor 2 and Competitor 3 in this comparison; we build it ourselves. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).
 
-For two people, [Duo](/en/products/duo) starts at €7,615 excl. VAT. For six to ten people, [Modular XL](/en/products/modular-xl) starts at €15,000 excl. VAT without installation or €17,990 with installation, plus €7,264 per additional 90 cm element including installation. One extra element: €17,990 + €7,264 = €25,254 excl. VAT.
+For two people, [Duo](/en/products/duo) starts at {{price:duo}} excl. VAT. For four to ten people, [Modular XL](/en/products/modular-xl) starts at {{price:modular-xl}} excl. VAT without installation, plus {{price:article:RS-MX-AS1}} per additional 90 cm element; installation is quoted separately. One extra element: {{price:modular-xl}} + {{price:article:RS-MX-AS1}} excl. VAT.
 
 ## What is included in the price, and what is not
 
@@ -53,9 +53,9 @@ Solo Flex comes as standard with:
 - **LED lighting** on the same sensor.
 - **Warranty**: five years on the structural frame and body, two years on electronics and wear parts.
 
-The price without installation excludes carrying the booth to your floor and assembling it. Two people do that in under three hours, or you choose the price with installation (€865 difference) and our team does it in about an hour. Wheelchair access is not standard on any booth, but can be modified on request.
+The price without installation excludes carrying the booth to your floor and assembling it. Two people do that in under three hours, or our team does it in about an hour; installation is quoted separately. Wheelchair access is not standard on any booth, but can be modified on request.
 
-## Which size: 1, 2 or 6–10 people
+## Which size: 1, 2 or 4–10 people
 
 Size follows from what goes wrong on the floor, not from what would fit. Count the colleagues on a call at the same moment at peak hours; that is your number of one-person booths.
 
@@ -63,7 +63,7 @@ Size follows from what goes wrong on the floor, not from what would fit. Count t
 
 **Two people (Duo, 2 m²).** For a one-to-one conversation or two colleagues dialling into the same call. With a 230 V socket and an electric desk; no ISO 23351-1 measurement yet.
 
-**Six to ten people (Modular XL).** A meeting pod as a room within a room, extendable in 90 cm elements, with full audio and video provisions; the largest built so far seats twenty.
+**Four to ten people (Modular XL).** A meeting pod as a room within a room, extendable in 90 cm elements (base module up to four people, each element adds two, up to ten with three elements), with full audio and video provisions; the largest built so far seats twenty.
 
 ## Acoustics: what the ISO 23351-1 classes mean
 
@@ -121,7 +121,7 @@ Solo Flex, Duo and Modular XL stand in our showroom in Beveren-Waas, Monday to F
 ## Frequently asked questions
 
 **How much does an office phone booth cost in 2026?**
-Published prices for a one-person booth in September 2026 at competitors run from €2,990 net through €3,990 excl. VAT to €9,320 excl. VAT. Solo Flex from Re-Sound costs €2,740 excl. VAT without installation and €3,605 excl. VAT with installation; transport outside Belgium is charged separately.
+Published prices for a one-person booth in September 2026 at competitors run from €2,990 net through €3,990 excl. VAT to €9,320 excl. VAT. Solo Flex from Re-Sound costs {{price:solo-flex}} excl. VAT without installation; installation is quoted separately, as is transport outside Belgium.
 
 **Is a Class C phone booth quiet enough?**
 For calls and video meetings in an open-plan office, yes: at around 24 dB(A) speech level reduction, colleagues outside hear a distant murmur but no words. For confidential meetings right next to a busy floor, choose a higher class or a closed room, and check the exact requirement with your acoustician.

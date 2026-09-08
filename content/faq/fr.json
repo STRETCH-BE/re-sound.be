@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Combien coûte une cabine téléphonique de bureau ?",
-    "answer": "La cabine téléphonique de bureau Solo Flex est disponible dès 2 740 € HTVA sans installation, ou 3 605 € HTVA installation comprise. Le pod Duo démarre à 7 615 € HTVA. La Modular XL démarre à 15 000 € HTVA sans installation, ou 17 990 € HTVA installation comprise, plus 7 264 € installation comprise par élément supplémentaire de 90 cm. La plus grande Modular XL construite à ce jour accueille 20 personnes. Transport hors Belgique non compris.",
+    "answer": "La cabine téléphonique de bureau Solo Flex est disponible dès {{price:solo-flex}} HTVA. Le pod Duo démarre à {{price:duo}} HTVA, et la Modular XL à {{price:modular-xl}} HTVA pour le module de base, plus {{price:article:RS-MX-AS1}} par élément supplémentaire de 90 cm. Les prix s'entendent départ usine : la livraison et l'installation font l'objet d'un devis séparé. La plus grande Modular XL construite à ce jour accueille 20 personnes.",
     "showOn": [
       "booths",
       "guide",

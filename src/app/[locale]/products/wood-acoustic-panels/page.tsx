@@ -8,6 +8,12 @@ interface PageProps {
   params: { locale: string };
 }
 
+/**
+ * ISR: prices come from the catalogue (database), so a change reaches this
+ * page within the hour without a redeploy.
+ */
+export const revalidate = 3600;
+
 // Range hub: "rwood". The external URL is localised per locale via
 // next-intl pathnames (see src/data/hubs.ts); this English slug is the
 // internal route.

@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hvad koster en telefonboks til kontoret?",
-    "answer": "Telefonboksen Solo Flex fås fra 2.740 € ekskl. moms uden montering eller 3.605 € ekskl. moms inkl. montering. Mødeboksen Duo fås fra 7.615 € ekskl. moms. Modular XL fås fra 15.000 € ekskl. moms uden montering eller 17.990 € ekskl. moms inkl. montering, plus 7.264 € inkl. montering pr. ekstra 90 cm-element. Den største Modular XL bygget til dato har plads til 20 personer. Priserne er ekskl. transport uden for Belgien.",
+    "answer": "Telefonboksen Solo Flex fås fra {{price:solo-flex}} ekskl. moms. Mødeboksen Duo fås fra {{price:duo}} ekskl. moms, og Modular XL fra {{price:modular-xl}} ekskl. moms for basismodulet, plus {{price:article:RS-MX-AS1}} pr. ekstra 90 cm-element. Priserne er ab fabrik: der afgives separat tilbud på levering og montering. Den største Modular XL bygget til dato har plads til 20 personer.",
     "showOn": [
       "booths",
       "guide",

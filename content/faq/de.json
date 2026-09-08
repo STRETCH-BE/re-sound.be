@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Was kostet eine Telefonbox fürs Büro?",
-    "answer": "Die Telefonbox Solo Flex ist ab 2.740 € zzgl. MwSt. ohne Montage erhältlich oder ab 3.605 € zzgl. MwSt. inklusive Montage. Der Meeting-Pod Duo ist ab 7.615 € zzgl. MwSt. erhältlich. Die Modular XL beginnt bei 15.000 € zzgl. MwSt. ohne Montage bzw. 17.990 € zzgl. MwSt. inklusive Montage, zuzüglich 7.264 € inklusive Montage je zusätzlichem 90-cm-Element. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen. Die Preise verstehen sich ohne Transport außerhalb Belgiens.",
+    "answer": "Die Telefonbox Solo Flex ist ab {{price:solo-flex}} zzgl. MwSt. erhältlich. Der Meeting-Pod Duo ist ab {{price:duo}} zzgl. MwSt. erhältlich, die Modular XL ab {{price:modular-xl}} zzgl. MwSt. für das Basismodul, zuzüglich {{price:article:RS-MX-AS1}} je zusätzlichem 90-cm-Element. Die Preise verstehen sich ab Werk: Lieferung und Montage werden separat angeboten. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen.",
     "showOn": [
       "booths",
       "guide",

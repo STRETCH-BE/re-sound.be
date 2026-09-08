@@ -3,7 +3,7 @@ id: "BP-001"
 slug: "belcabine-kantoor-prijs-keuze-plaatsing"
 locale: "nl"
 title: "Belcabine kantoor: prijs, keuze en plaatsing in 2026 | Re-Sound"
-description: "Wat kost een belcabine voor kantoor? Solo Flex vanaf € 2.740 excl. btw. Plus ISO 23351-1-klassen, ventilatie, plaatsing en levertijd, door de fabrikant."
+description: "Wat kost een belcabine voor kantoor? Solo Flex vanaf {{price:solo-flex}} excl. btw. Plus ISO 23351-1-klassen, ventilatie, plaatsing en levertijd, door de fabrikant."
 h1: "Belcabine voor kantoor: prijs, keuze en plaatsing (2026)"
 keyword: "belcabine kantoor prijs"
 secondaryKeywords: ["belcel prijs","telefooncabine kantoor kopen","akoestische telefooncel prijs","belcabine kopen"]
@@ -19,12 +19,12 @@ heroAlt: "Solo Flex belcabine met zit-stabureau in een open kantoor"
 internalLinks: ["/nl/products/akoestische-belcabines","/nl/products/solo-flex","/nl/products/duo","/nl/products/modular-xl","/nl/guides/prijzen-belcabines","/nl/where-to-buy"]
 cta: "Vraag een offerte voor Solo Flex"
 sources: "ISO 23351-1:2020 (spraakniveaureductie van gesloten kantoorcabines); productgegevens Re-Sound Solo Flex, Duo en Modular XL; prijzen van drie concurrenten, september 2026 (€ 2.990 netto, € 3.990 en € 9.320 excl. btw voor een eenpersoonscabine)."
-faq: [{"question":"Wat kost een belcabine voor kantoor gemiddeld?","answer":"In 2026 betaal je voor een eenpersoonscabine van een fabrikant € 3.000 à € 5.000 excl. btw; instapmodellen zitten rond € 2.000 à € 3.000, premium- en dealerprijzen tussen € 8.000 en € 12.000. Solo Flex van Re-Sound kost € 2.740 excl. btw zonder plaatsing en € 3.605 excl. btw met plaatsing."},{"question":"Is een belcabine van klasse C stil genoeg?","answer":"Voor bellen en videocalls in een open kantoor wel: bij ongeveer 24 dB(A) reductie horen collega's nog gemompel van ver, maar geen woorden. Voor vertrouwelijke vergaderingen naast een drukke vloer kies je een hogere klasse of een gesloten ruimte."},{"question":"Hoe snel staat een belcabine in mijn kantoor?","answer":"Vier tot zes weken voor een standaardconfiguratie; maatwerk in stof of afwerking vraagt twee tot drie weken extra. De montage duurt minder dan drie uur met twee personen, of wij plaatsen ze voor je."}]
+faq: [{"question":"Wat kost een belcabine voor kantoor gemiddeld?","answer":"In 2026 betaal je voor een eenpersoonscabine van een fabrikant € 3.000 à € 5.000 excl. btw; instapmodellen zitten rond € 2.000 à € 3.000, premium- en dealerprijzen tussen € 8.000 en € 12.000. Solo Flex van Re-Sound kost {{price:solo-flex}} excl. btw zonder plaatsing; de plaatsing wordt apart geoffreerd."},{"question":"Is een belcabine van klasse C stil genoeg?","answer":"Voor bellen en videocalls in een open kantoor wel: bij ongeveer 24 dB(A) reductie horen collega's nog gemompel van ver, maar geen woorden. Voor vertrouwelijke vergaderingen naast een drukke vloer kies je een hogere klasse of een gesloten ruimte."},{"question":"Hoe snel staat een belcabine in mijn kantoor?","answer":"Vier tot zes weken voor een standaardconfiguratie; maatwerk in stof of afwerking vraagt twee tot drie weken extra. De montage duurt minder dan drie uur met twee personen, of wij plaatsen ze voor je."}]
 draft: false
 wordCount: 1421
 ---
 
-**Een [belcabine](/nl/products/akoestische-belcabines) voor kantoor kost bij Re-Sound vanaf € 2.740 excl. btw zonder plaatsing, of € 3.605 excl. btw inclusief plaatsing.** Dat is de prijs van [Solo Flex](/nl/products/solo-flex), onze cabine voor één persoon, met zit-stabureau, ventilatie, verlichting en stroom inbegrepen. In dit artikel lees je wat je voor dat bedrag krijgt, hoe je de juiste maat kiest, wat de akoestische klassen van ISO 23351-1 betekenen en waar je op let bij de plaatsing. Geschreven door de fabrikant, dus zonder tussenhandel in de prijs.
+**Een [belcabine](/nl/products/akoestische-belcabines) voor kantoor kost bij Re-Sound vanaf {{price:solo-flex}} excl. btw zonder plaatsing; de plaatsing wordt apart geoffreerd.** Dat is de prijs van [Solo Flex](/nl/products/solo-flex), onze cabine voor één persoon, met zit-stabureau, ventilatie, verlichting en stroom inbegrepen. In dit artikel lees je wat je voor dat bedrag krijgt, hoe je de juiste maat kiest, wat de akoestische klassen van ISO 23351-1 betekenen en waar je op let bij de plaatsing. Geschreven door de fabrikant, dus zonder tussenhandel in de prijs.
 
 ## Wat kost een belcabine? De prijzen in 2026
 
@@ -34,9 +34,9 @@ De markt voor belcabines loopt in september 2026 uiteen van ongeveer € 2.000 t
 - **Fabrikanten met een eigen ontwerp**: € 3.000 à € 5.000 excl. btw. Ter vergelijking: concurrenten vragen voor een eenpersoonscabine € 2.990 netto tot € 3.990 excl. btw.
 - **Premium en dealerprijzen**: € 8.000 à € 12.000 excl. btw. Een andere concurrent biedt zijn eenpersoonscabine aan voor € 9.320 excl. btw, plaatsing inbegrepen.
 
-Solo Flex zit met **€ 2.740 excl. btw (zonder plaatsing)** of **€ 3.605 excl. btw (met plaatsing)** in de tweede laag, met een uitrusting die je normaal alleen in de derde laag vindt. Dat kan omdat we de cabine zelf bouwen: Re-Sound is een merk van Stretch Group en produceert in eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
+Solo Flex zit met **{{price:solo-flex}} excl. btw (zonder plaatsing; de plaatsing wordt apart geoffreerd)** in de tweede laag, met een uitrusting die je normaal alleen in de derde laag vindt. Dat kan omdat we de cabine zelf bouwen: Re-Sound is een merk van Stretch Group en produceert in eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
 
-Voor twee personen start [Duo](/nl/products/duo) vanaf € 7.615 excl. btw; voor vergaderpods tot tien personen ([Modular XL](/nl/products/modular-xl)) werken we met een offerte op maat, omdat de configuratie (bureau, zitplaatsen, A/V) de prijs bepaalt.
+Voor twee personen start [Duo](/nl/products/duo) vanaf {{price:duo}} excl. btw; voor vergaderpods tot tien personen ([Modular XL](/nl/products/modular-xl)) werken we met een offerte op maat, omdat de configuratie (bureau, zitplaatsen, A/V) de prijs bepaalt.
 
 ## Wat zit er in die prijs (en wat niet)
 
@@ -49,7 +49,7 @@ Een prijs zegt weinig zonder de lijst van wat erin zit. Bij Solo Flex is dit sta
 - **Stalen frame, gehard glas en een akoestische bekleding uit gerecycleerd PET.**
 - **Garantie**: vijf jaar op de structuur (frame, glas, panelen, deurmechanisme) en twee jaar op de elektronica.
 
-Wat er niet in zit bij de prijs zonder plaatsing: het transport tot op de verdieping en de montage. Twee mensen zetten de cabine in minder dan drie uur in elkaar; wie dat liever aan ons overlaat, kiest de prijs inclusief plaatsing (€ 865 verschil). Maatwerk in stof of afwerking is mogelijk en voegt twee tot drie weken aan de levertijd toe.
+Wat er niet in de prijs zit: het transport tot op de verdieping en de montage. Twee mensen zetten de cabine in minder dan drie uur in elkaar; wie dat liever aan ons overlaat, krijgt voor de plaatsing een aparte offerte. Maatwerk in stof of afwerking is mogelijk en voegt twee tot drie weken aan de levertijd toe.
 
 ## Welke maat: 1, 2 of 4+ personen
 
@@ -59,7 +59,7 @@ De juiste maat volgt uit wat er nu misloopt op de vloer, niet uit wat er nog pas
 
 **Twee personen (Duo, 2 m²).** Twee configuraties in één cabine: *Flex* met twee zitplaatsen voor een gesprek onder vier ogen, of *Work* met een bureau over de volle breedte voor één persoon. Handig voor HR-gesprekken, korte overlegjes en hybride calls waar twee collega's samen inbellen.
 
-**Zes tot tien personen (Modular XL).** Een vergaderruimte in een verplaatsbare schil: de basis biedt plaats aan zes, en groeit per segment van 90 cm tot tien personen. Met volledige A/V-voorzieningen en een toegankelijke instap. Vaak goedkoper en sneller dan een vergaderzaal bijbouwen.
+**Vier tot tien personen (Modular XL).** Een vergaderruimte in een verplaatsbare schil: de basis biedt plaats aan vier, en groeit per segment van 90 cm tot tien personen. Met volledige A/V-voorzieningen en een toegankelijke instap. Vaak goedkoper en sneller dan een vergaderzaal bijbouwen.
 
 ## Akoestiek: wat ISO 23351-1-klassen betekenen
 
@@ -97,7 +97,7 @@ Na de akoestiek beslist de ventilatie of een cabine gebruikt wordt. Eén persoon
 
 ## Kopen bij de fabrikant: levertijd, garantie en terugname
 
-Standaardconfiguraties leveren we **vier tot zes weken** na orderbevestiging; op geselecteerde voorraadmodellen is een snellere levering mogelijk. Plaatsing in de EU bieden we als standaardoptie aan. Aan het einde van de levensduur nemen we de cabine terug in België, Nederland, Frankrijk, Duitsland en Luxemburg — de staalstructuur en de PET-bekleding gaan terug onze keten in, niet naar het stort.
+Standaardconfiguraties leveren we **vier tot zes weken** na orderbevestiging; op geselecteerde voorraadmodellen is een snellere levering mogelijk. Plaatsing in de EU bieden we op aanvraag aan; die wordt apart geoffreerd. Aan het einde van de levensduur nemen we de cabine terug in België, Nederland, Frankrijk, Duitsland en Luxemburg — de staalstructuur en de PET-bekleding gaan terug onze keten in, niet naar het stort.
 
 Wil je de cabine eerst zien en horen? In onze [showroom](/nl/where-to-buy) in Beveren-Waas staan Solo Flex, Duo en Modular XL geïnstalleerd en akoestisch actief. Je kan ook een live videotour boeken of een demonstratie op locatie aanvragen in België, Nederland, Luxemburg en Noord-Frankrijk.
 
@@ -106,7 +106,7 @@ Wil je de cabine eerst zien en horen? In onze [showroom](/nl/where-to-buy) in Be
 ## Veelgestelde vragen
 
 **Wat kost een belcabine voor kantoor gemiddeld?**
-In 2026 betaal je voor een eenpersoonscabine van een fabrikant € 3.000 à € 5.000 excl. btw; instapmodellen zitten rond € 2.000 à € 3.000, premium- en dealerprijzen tussen € 8.000 en € 12.000. Solo Flex van Re-Sound kost € 2.740 excl. btw zonder plaatsing en € 3.605 excl. btw met plaatsing.
+In 2026 betaal je voor een eenpersoonscabine van een fabrikant € 3.000 à € 5.000 excl. btw; instapmodellen zitten rond € 2.000 à € 3.000, premium- en dealerprijzen tussen € 8.000 en € 12.000. Solo Flex van Re-Sound kost {{price:solo-flex}} excl. btw zonder plaatsing; de plaatsing wordt apart geoffreerd.
 
 **Is een belcabine van klasse C stil genoeg?**
 Voor bellen en videocalls in een open kantoor wel: bij ongeveer 24 dB(A) reductie horen collega's nog gemompel van ver, maar geen woorden. Voor vertrouwelijke vergaderingen naast een drukke vloer kies je een hogere klasse of een gesloten ruimte.

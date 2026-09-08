@@ -11,7 +11,7 @@ import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumb
 import RpetFlexGrooveProductPage from '@/components/sections/rpetflexgroovepage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
-import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
+import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/rpet-flex-groove';
 import { pickMessages } from '@/lib/i18n-messages';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
@@ -108,7 +108,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       }
     })
     .filter((e): e is FaqEntry => e !== null),
-    faqFor(locale, 'rpet-flex-groove').map((f) => ({ question: f.question, answer: f.answer }))
+    (await faqForResolved(locale, 'rpet-flex-groove')).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   return (

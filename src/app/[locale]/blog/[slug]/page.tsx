@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
 import { blogPostingSchema, breadcrumbSchema } from '@/lib/structured-data';
-import { getContentPost, getContentPosts } from '@/lib/content/blog';
+import { getContentPost, getContentPosts, resolveContentPost } from '@/lib/content/blog';
 import JsonLd from '@/components/seo/JsonLd';
 
 import ContentPost from '@/components/blog/ContentPost';
@@ -46,8 +46,10 @@ export const dynamicParams = false;
 export async function generateMetadata({
   params: { locale, slug },
 }: BlogPostPageProps): Promise<Metadata> {
-  const post = getContentPost(locale, slug);
-  if (post) {
+  const draftPost = getContentPost(locale, slug);
+  if (draftPost) {
+    // Prices in the description come from the catalogue, not the markdown.
+    const post = await resolveContentPost(draftPost);
     // Single-locale editorial post: canonical to itself, no hreflang
     // alternates (it is not translated). Drafts are noindex.
     return {
@@ -104,9 +106,13 @@ export async function generateMetadata({
 export default async function BlogPostPage({ params: { locale, slug } }: BlogPostPageProps) {
   setRequestLocale(locale);
 
-  const post = getContentPost(locale, slug);
-  if (post) {
-    const related = getContentPosts(locale).filter((p) => p.slug !== post.slug).slice(0, 3);
+  const rawPost = getContentPost(locale, slug);
+  if (rawPost) {
+    // Price tokens in the body, lead and FAQ are filled from the catalogue.
+    const post = await resolveContentPost(rawPost);
+    const related = await Promise.all(
+      getContentPosts(locale).filter((p) => p.slug !== post.slug).slice(0, 3).map(resolveContentPost)
+    );
     const messages = pickMessages(await getMessages(), ['newsletter']);
     return (
       <>

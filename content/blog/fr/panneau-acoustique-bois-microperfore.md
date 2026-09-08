@@ -70,7 +70,7 @@ Dans une école, un restaurant ou un bâtiment accessible au public, la classe d
 
 Les normes fixent des objectifs de réverbération ou d'intelligibilité, pas un nombre de panneaux : vérifiez l'exigence exacte avec votre acousticien.
 
-En bureau ouvert, les panneaux abaissent la réverbération mais n'isolent pas un appel du reste du plateau ; pour cela, il faut une [cabine acoustique](/fr/products/cabines-acoustiques) comme notre [Solo Flex](/fr/products/solo-flex), à partir de 2 740 € hors TVA.
+En bureau ouvert, les panneaux abaissent la réverbération mais n'isolent pas un appel du reste du plateau ; pour cela, il faut une [cabine acoustique](/fr/products/cabines-acoustiques) comme notre [Solo Flex](/fr/products/solo-flex), à partir de {{price:solo-flex}} hors TVA.
 
 ## Combien de m² ? Un exemple chiffré avec la formule de Sabine
 

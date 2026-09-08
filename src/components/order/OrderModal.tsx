@@ -7,28 +7,55 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 import { analytics } from '@/lib/analytics';
-import { getOrderable, type OrderOption } from '@/lib/order/catalogue';
-import { formatCents, priceOrder, type OrderSelection } from '@/lib/order/pricing';
-import { COUNTRIES, isVatNumberFormatValid, splitVatNumber, isEuCountry, SHIP_FROM_COUNTRY } from '@/lib/order/vat';
+import type { ConfiguratorData } from '@/lib/catalogue/load';
+import { categoryLabel, lineLabel } from '@/lib/catalogue/pricing';
+import {
+  defaultSelection,
+  POWER_SOCKET_CATEGORY,
+  productById,
+  socketMatchForCountry,
+  validateSelection,
+  type CatalogueSlice,
+} from '@/lib/catalogue/select';
+import type { PricedLine, Selection } from '@/lib/catalogue/types';
+import {
+  COUNTRIES,
+  findCountry,
+  isVatNumberFormatValid,
+  splitVatNumber,
+  isEuCountry,
+  resolveVat,
+  SHIP_FROM_COUNTRY,
+  type VatInput,
+} from '@/lib/order/vat';
+
+import Configurator from './Configurator';
+import { carryOver, money as formatMoney, priceWithVat, withSocketFor } from './configurator';
 
 /**
  * Order dialog: configure → your details → review → confirmation.
  *
- * Prices shown here are the same functions the API route runs again on the
- * submitted order, so the buyer sees what Re-Sound will invoice. Nothing is
- * paid online: the order is confirmed by Re-Sound, who add transport, which
- * is never part of the listed price.
+ * Step 1 is a configurator driven by the catalogue slice the product page
+ * loaded on the server (models, categories, articles). The amounts shown
+ * here come from the same pure pricing helpers the API route runs again on
+ * the submitted selection, so the buyer sees what Re-Sound will invoice.
+ * The page can be up to an hour older than the route's catalogue, so the
+ * submit carries the amounts the buyer consented to: when the route prices
+ * differently it answers 409 with a fresh slice, the dialog swaps its slice
+ * for it and asks the buyer to confirm the new total before anything is
+ * stored. Nothing is paid online: the order is confirmed by Re-Sound, who
+ * add transport, which is never part of the listed price.
  */
 
 interface Props {
   open: boolean;
   onClose: () => void;
-  /** Product slug — has to be in the order catalogue */
+  /** Product page slug — the websiteSlug of the models in `configurator` */
   slug: string;
-  /** Product name as shown on the page */
+  /** Product name as shown on the page (dialog title) */
   productName: string;
-  /** Translation namespace of the product page, for the add-on labels */
-  namespace: string;
+  /** Models, categories and articles sold from this page */
+  configurator: ConfiguratorData;
   /** Routing locale */
   locale: string;
   /** BCP 47 tag for currency and country names */
@@ -70,31 +97,44 @@ const EMPTY_CUSTOMER: CustomerForm = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-export default function OrderModal({ open, onClose, slug, productName, namespace, locale, localeTag }: Props) {
+export default function OrderModal({ open, onClose, slug, productName, configurator, locale, localeTag }: Props) {
   const t = useTranslations('order');
-  const tProduct = useTranslations(namespace);
   const tFooter = useTranslations('footer');
   /** Error codes from the API; an unknown code falls back to the generic line. */
   const tError = (code: string): string => {
     const known = [
       'rate_limited', 'invalid_product', 'invalid_country', 'invalid_details',
       'company_required', 'consent_required', 'pricing_failed', 'not_delivered', 'server_error',
+      'price_changed', 'selection_outdated',
     ];
     return known.includes(code) ? t(`error.${code}` as 'error.generic') : t('error.generic');
   };
 
-  const product = getOrderable(slug);
+  // The catalogue slice this page sells from: models (one, or Duo Work and
+  // Duo Flex), every category, and the articles of those models. State, not
+  // the prop: the route hands back a fresher slice when the page's is stale.
+  const [slice, setSlice] = useState<CatalogueSlice>(configurator);
+  const models = slice.products;
+  const byCode = useMemo(() => new Map(slice.articles.map((a) => [a.code, a])), [slice.articles]);
+
   const [step, setStep] = useState<Step>('configure');
+  const [productId, setProductId] = useState(models[0]?.id ?? '');
   const [quantity, setQuantity] = useState(1);
-  // The field keeps its own text so clearing it leaves an empty box instead of
-  // snapping back to 1, which turned "clear, type 2" into 12.
-  const [quantityText, setQuantityText] = useState('1');
-  const [options, setOptions] = useState<Record<string, number>>({});
+  const [articles, setArticles] = useState<string[]>(() => (models[0] ? defaultSelection(models[0], slice).articles : []));
+  /** The buyer chose a socket by hand; the delivery country no longer changes it. */
+  const [socketTouched, setSocketTouched] = useState(false);
+  /** The buyer chose a delivery country (the form opens on Belgium). */
+  const [countryTouched, setCountryTouched] = useState(false);
   const [customer, setCustomer] = useState<CustomerForm>(EMPTY_CUSTOMER);
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
-  const [result, setResult] = useState<{ reference: string; emailSent: boolean; correctedTotal: string | null } | null>(null);
+  const [result, setResult] = useState<{
+    reference: string;
+    emailSent: boolean;
+    /** The server's total when it differs from the one the buyer saw, with why */
+    corrected: { total: string; reason: 'vat_unverified' | 'vat_verified' | 'price_changed' } | null;
+  } | null>(null);
   const [missing, setMissing] = useState<string[]>([]);
   /** VIES answer for the typed VAT number; only 'valid' grants the reverse charge. */
   const [vatStatus, setVatStatus] = useState<
@@ -165,9 +205,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     setErrorMessage('');
     if (result) {
       setStep('configure');
+      const first = models[0];
+      if (first) {
+        setProductId(first.id);
+        setArticles(defaultSelection(first, slice).articles);
+      }
       setQuantity(1);
-      setQuantityText('1');
-      setOptions({});
+      setSocketTouched(false);
+      setCountryTouched(false);
       setConsent(false);
       setResult(null);
     }
@@ -183,7 +228,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     target?.focus();
   }, [step, open]);
 
-  const selection: OrderSelection = useMemo(() => ({ slug, quantity, options }), [slug, quantity, options]);
+  const selection: Selection = useMemo(() => ({ productId, quantity, articles }), [productId, quantity, articles]);
 
   const vatNumberFormatValid = customer.vatNumber.trim().length > 0 && isVatNumberFormatValid(customer.vatNumber);
   const vatNumberCountry = customer.vatNumber ? splitVatNumber(customer.vatNumber)?.country ?? null : null;
@@ -191,16 +236,19 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
   // the buyer never consents to a total the invoice will not match.
   const vatNumberVerified = vatStatus === 'valid';
 
-  const priced = useMemo(
-    () =>
-      priceOrder(selection, {
-        customerType: customer.type,
-        deliveryCountry: customer.country,
-        vatNumberValid: vatNumberVerified,
-        vatNumberCountry: vatCountry ?? vatNumberCountry,
-      }),
-    [selection, customer.type, customer.country, vatNumberVerified, vatCountry, vatNumberCountry]
+  const vatInput = useMemo<VatInput>(
+    () => ({
+      customerType: customer.type,
+      deliveryCountry: customer.country,
+      vatNumberValid: vatNumberVerified,
+      vatNumberCountry: vatCountry ?? vatNumberCountry,
+    }),
+    [customer.type, customer.country, vatNumberVerified, vatCountry, vatNumberCountry]
   );
+  const vat = useMemo(() => resolveVat(vatInput), [vatInput]);
+  // Catalogue rules for the net, vat.ts for the rate — null only when the
+  // selection no longer validates against the slice (never, by construction).
+  const priced = useMemo(() => priceWithVat(selection, slice, vatInput), [selection, slice, vatInput]);
 
   // Ask the server (and through it VIES) about the number the buyer typed.
   const checkVat = async (value: string) => {
@@ -238,14 +286,18 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
   const countryLabel = useMemo(() => {
     let display: Intl.DisplayNames | null = null;
     try {
-      display = new Intl.DisplayNames([locale], { type: 'region' });
+      // fallback: 'none' → undefined for a code ICU does not know (XI,
+      // Northern Ireland) instead of the code echoed back as its own name,
+      // so the English name from the country list is used for it.
+      display = new Intl.DisplayNames([locale], { type: 'region', fallback: 'none' });
     } catch {
       display = null;
     }
     return (code: string, fallback: string) => {
       if (code === 'OTHER') return t('details.otherCountry');
       try {
-        return display?.of(code) ?? fallback;
+        const name = display?.of(code);
+        return name && name !== code ? name : fallback;
       } catch {
         return fallback;
       }
@@ -260,33 +312,45 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     [countryLabel, locale]
   );
 
-  if (!open || !mounted || !product || !priced) return null;
+  const product = productById(productId, slice);
+  if (!open || !mounted || !product) return null;
 
-  const optionLabel = (option: OrderOption): string =>
-    option.labelFrom === 'order' ? t(`options.${option.id}.label`) : tProduct(`addons.${option.id}.title`);
+  const money = (cents: number) => formatMoney(cents, localeTag);
 
-  const optionDescription = (option: OrderOption): string | null => {
-    if (option.labelFrom === 'order') return option.hasNote ? t(`options.${option.id}.note`) : null;
-    return tProduct.has(`addons.${option.id}.desc`) ? tProduct(`addons.${option.id}.desc`) : null;
+  /** Amount of one review line: "On request", "Included" for a zero line, else the total. */
+  const lineAmount = (line: PricedLine): string =>
+    line.lineTotalCents === null
+      ? t('summary.onRequest')
+      : line.lineTotalCents === 0
+        ? t('configure.included')
+        : money(line.lineTotalCents);
+
+  /**
+   * "2 × €13,781.25" in front of a line total, so the total never reads as a
+   * unit price; "2 ×" alone for an included or on-request line; nothing for a
+   * single unit.
+   */
+  const lineQty = (line: PricedLine): string => {
+    if (line.qty <= 1) return '';
+    return line.unitPriceCents !== null && line.lineTotalCents !== 0 ? `${line.qty} × ${money(line.unitPriceCents)}` : `${line.qty} ×`;
   };
 
-  const optionPriceLabel = (option: OrderOption): string => {
-    if (option.priceExclVat === null) return t('summary.onRequest');
-    // A per-booth option is charged once per booth, so show what it actually
-    // adds to this order rather than the price of one.
-    const cents = Math.round(option.priceExclVat * 100) * (option.perUnit ? quantity : 1);
-    return t('configure.optionPrice', { price: formatCents(cents, localeTag) });
-  };
-
-  const money = (cents: number) => formatCents(cents, localeTag);
+  // The socket the country logic chose (default, or re-matched when the
+  // buyer picked a delivery country) — named on the review step. Only a
+  // country in the socket map counts as "matched"; anywhere else got the
+  // type F default and the note says so.
+  const matchedSocket = socketTouched
+    ? null
+    : articles.map((code) => byCode.get(code)).find((a) => a?.categoryKey === POWER_SOCKET_CATEGORY) ?? null;
+  const socketIsMatch = socketMatchForCountry(customer.country) !== null;
 
   const vatHint =
     vatStatus === 'checking'
       ? t('details.vatChecking')
       : vatStatus === 'valid'
-        ? priced.vatMode === 'reverse-charge'
+        ? vat.mode === 'reverse-charge'
           ? t('details.vatVerified')
-          : priced.vatMode === 'export'
+          : vat.mode === 'export'
             ? t('vat.exportNote')
             : t('vat.polandNote')
         : vatStatus === 'invalid'
@@ -300,11 +364,11 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 : t('details.vatHint');
 
   const vatLabel =
-    priced.vatMode === 'reverse-charge'
+    vat.mode === 'reverse-charge'
       ? t('vat.reverseCharge')
-      : priced.vatMode === 'export'
+      : vat.mode === 'export'
         ? t('vat.export')
-        : t('vat.domestic', { rate: Math.round(priced.vatRate * 100) });
+        : t('vat.domestic', { rate: Math.round(vat.rate * 100) });
 
   const detailFields: Array<{ id: string; label: string; ok: boolean }> = [
     ...(customer.type === 'company'
@@ -317,23 +381,62 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     { id: 'order-postal', label: t('details.postalCode'), ok: customer.postalCode.trim().length > 0 },
     { id: 'order-city', label: t('details.city'), ok: customer.city.trim().length > 0 },
   ];
-  const detailsValid = detailFields.every((f) => f.ok);
 
   const set = <K extends keyof CustomerForm>(field: K, value: CustomerForm[K]) =>
     setCustomer((current) => ({ ...current, [field]: value }));
 
-  const setOption = (id: string, value: number) =>
-    setOptions((current) => {
-      const next = { ...current };
-      if (value <= 0) delete next[id];
-      else next[id] = value;
-      return next;
-    });
+  /**
+   * A delivery country also decides the socket: unless the buyer already
+   * picked one, the selection follows the country (type E for Belgium and
+   * France, G for the UK, Ireland, Malta and Cyprus, J for Switzerland and
+   * Liechtenstein, K for Denmark, F for the Schuko countries; Italy gets F
+   * as a default and the review step says so).
+   */
+  const chooseCountry = (code: string) => {
+    set('country', code);
+    setCountryTouched(true);
+    if (!socketTouched) setArticles((current) => withSocketFor(current, product, slice, code));
+  };
+
+  /**
+   * Another model (Duo Work ↔ Duo Flex): keep every choice the new model
+   * also has (colour, felt, table, door, socket, accessories), default the
+   * rest — an arrow-key slip on the model radio must not wipe the
+   * configuration.
+   */
+  const chooseModel = (id: string) => {
+    const next = productById(id, slice);
+    if (!next || next.id === productId) return;
+    setProductId(id);
+    setArticles((current) => carryOver(current, next, slice, countryTouched ? customer.country : undefined));
+    setQuantity((q) => Math.min(q, next.maxQty));
+  };
+
+  const applySelection = (next: Selection) => {
+    setQuantity(next.quantity);
+    setArticles(next.articles);
+  };
 
   const goTo = (next: Step) => {
     setStep(next);
     setMissing([]);
+    // The body scrolls on desktop; on a phone the whole dialog scrolls
+    // inside the backdrop, so reset both.
     dialogRef.current?.scrollTo?.({ top: 0 });
+    dialogRef.current?.parentElement?.scrollTo?.({ top: 0 });
+  };
+
+  /** Step 1 → 2: advance, or name the category that still needs a choice. */
+  const continueFromConfigure = () => {
+    const check = validateSelection(selection, slice);
+    if (check.ok) {
+      goTo('details');
+      return;
+    }
+    const key = check.reason.split(':')[1] ?? '';
+    const category = slice.categories.find((c) => c.key === key);
+    setMissing([category ? categoryLabel(category, locale) : t('error.pricing_failed')]);
+    dialogRef.current?.querySelector<HTMLElement>(key ? `#order-cat-${key} input` : '.om-error')?.focus();
   };
 
   /** Step 2 → 3: advance, or name the fields that are still empty. */
@@ -348,21 +451,48 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
     dialogRef.current?.querySelector<HTMLElement>(`#${first.id}`)?.focus();
   };
 
-  // Arrow function: keeps the non-null narrowing of `priced` from the guard above.
+  /**
+   * The route found the page's slice stale. Take the fresh one; for an
+   * outdated selection also repair the configuration (choices that still
+   * exist stay, the rest default) and send the buyer back to step 1.
+   */
+  const adoptFreshSlice = (fresh: CatalogueSlice, repair: boolean) => {
+    setSlice(fresh);
+    if (!repair) return;
+    const next = productById(productId, fresh) ?? fresh.products[0];
+    if (!next) return;
+    setProductId(next.id);
+    setArticles((current) => carryOver(current, next, fresh, countryTouched ? customer.country : undefined));
+    setQuantity((q) => Math.min(q, next.maxQty));
+  };
+
+  // Arrow function: keeps the non-null narrowing of `product` from the guard above.
   const submit = async () => {
+    if (!priced) return;
     setStatus('sending');
     setErrorMessage('');
+    setMissing([]);
     try {
       const response = await fetch('/api/order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ locale, selection, customer, consent, website: honeypot }),
+        body: JSON.stringify({
+          locale,
+          selection,
+          customer,
+          consent,
+          website: honeypot,
+          // What the buyer is agreeing to: the route refuses to store a
+          // different net without a second look from the buyer.
+          expected: { netCents: priced.netCents, grossCents: priced.grossCents, vatMode: priced.vatMode },
+        }),
       });
       const data = (await response.json()) as {
         reference?: string;
         confirmationSent?: boolean;
         error?: string;
-        totals?: { grossCents: number; vatMode: string };
+        totals?: { netCents?: number; grossCents: number; vatMode: string };
+        catalogue?: CatalogueSlice;
       };
       if (!response.ok || !data.reference || data.error) {
         setStatus('error');
@@ -370,20 +500,42 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
         // generic message so the buyer never sees a raw English literal.
         const code = data.error ?? '';
         setErrorMessage(code ? tError(code) : t('error.generic'));
+        if (data.catalogue && (code === 'price_changed' || code === 'selection_outdated')) {
+          adoptFreshSlice(data.catalogue, code === 'selection_outdated');
+          // Consent was given to the old amount or configuration: ask again.
+          setConsent(false);
+          if (code === 'selection_outdated') {
+            setStep('configure');
+            setMissing([]);
+          }
+        }
         return;
       }
-      // The server is the authority on the amount. If it differs from what the
-      // buyer just agreed to (an unverified VAT number, say), show the real one.
+      // The server is the authority on the amount; the net cannot differ
+      // (the route answers 409 instead), so a different gross is the VAT
+      // treatment changing at submit time — say which way.
       const serverGross = data.totals?.grossCents;
+      const serverMode = data.totals?.vatMode ?? priced.vatMode;
       const corrected =
-        typeof serverGross === 'number' && serverGross !== priced.grossCents ? money(serverGross) : null;
+        typeof serverGross === 'number' && serverGross !== priced.grossCents
+          ? {
+              total: money(serverGross),
+              reason:
+                data.totals?.netCents !== undefined && data.totals.netCents !== priced.netCents
+                  ? ('price_changed' as const)
+                  : serverMode === 'domestic' && priced.vatMode !== 'domestic'
+                    ? ('vat_unverified' as const)
+                    : ('vat_verified' as const),
+            }
+          : null;
       analytics.orderSubmitted({
         product: slug,
+        model: productId,
         quantity,
-        vatMode: data.totals?.vatMode ?? priced.vatMode,
+        vatMode: serverMode,
         valueCents: serverGross ?? priced.grossCents,
       });
-      setResult({ reference: data.reference, emailSent: data.confirmationSent !== false, correctedTotal: corrected });
+      setResult({ reference: data.reference, emailSent: data.confirmationSent !== false, corrected });
       setStatus('idle');
       goTo('done');
     } catch {
@@ -447,76 +599,33 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           {step === 'configure' && (
             <>
               <h3 className="om-section-title" tabIndex={-1}>{t('configure.title')}</h3>
-
-              <div className="om-qty">
-                <label htmlFor="order-qty">{t('configure.quantity')}</label>
-                <div className="om-qty-controls">
-                  <button type="button" onClick={() => { const next = Math.max(1, quantity - 1); setQuantity(next); setQuantityText(String(next)); }} aria-label={t('configure.decrease')}>
-                    −
-                  </button>
-                  <input
-                    id="order-qty"
-                    type="number"
-                    min={1}
-                    max={product.maxQty}
-                    value={quantityText}
-                    onChange={(e) => {
-                      const text = e.target.value;
-                      setQuantityText(text);
-                      const parsed = Number(text);
-                      if (text.trim() !== '' && Number.isFinite(parsed)) {
-                        setQuantity(Math.min(product.maxQty, Math.max(1, Math.floor(parsed))));
-                      }
-                    }}
-                    onBlur={() => setQuantityText(String(quantity))}
-                  />
-                  <button type="button" onClick={() => { const next = Math.min(product.maxQty, quantity + 1); setQuantity(next); setQuantityText(String(next)); }} aria-label={t('configure.increase')}>
-                    +
-                  </button>
+              {missing.length > 0 && (
+                <div className="om-error" role="alert">
+                  <p>{t('review.missingTitle')}</p>
+                  <ul>
+                    {missing.map((label) => (
+                      <li key={label}>{label}</li>
+                    ))}
+                  </ul>
                 </div>
-                <span className="om-qty-unit">
-                  {t(`units.${product.unitKey}`)} · {money(product.unitPriceExclVat * 100)}
-                </span>
-              </div>
-
-              {product.options.length > 0 && (
-                <fieldset className="om-options">
-                  <legend>{t('configure.optionsTitle')}</legend>
-                  {product.options.map((option) => {
-                    const description = optionDescription(option);
-                    const inputId = `order-option-${option.id}`;
-                    return (
-                      <div key={option.id} className="om-option">
-                        {option.kind === 'toggle' ? (
-                          <input
-                            id={inputId}
-                            type="checkbox"
-                            checked={(options[option.id] ?? 0) > 0}
-                            onChange={(e) => setOption(option.id, e.target.checked ? 1 : 0)}
-                          />
-                        ) : (
-                          <input
-                            id={inputId}
-                            className="om-option-qty"
-                            type="number"
-                            min={0}
-                            max={option.maxQty ?? 1}
-                            value={options[option.id] ?? 0}
-                            onChange={(e) => setOption(option.id, Math.min(option.maxQty ?? 1, Math.max(0, Number(e.target.value) || 0)))}
-                          />
-                        )}
-                        <div className="om-option-text">
-                          <label htmlFor={inputId}>
-                            {optionLabel(option)} <span className="om-option-price">{optionPriceLabel(option)}</span>
-                          </label>
-                          {description && <p>{description}</p>}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </fieldset>
               )}
-
+              {status === 'error' && errorMessage && (
+                <p className="om-error" role="alert">
+                  {errorMessage}
+                </p>
+              )}
+              <Configurator
+                slice={slice}
+                models={models}
+                product={product}
+                selection={selection}
+                priced={priced}
+                locale={locale}
+                localeTag={localeTag}
+                onModel={chooseModel}
+                onSelect={applySelection}
+                onSocketTouched={() => setSocketTouched(true)}
+              />
             </>
           )}
 
@@ -611,7 +720,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                   <input id="order-city" value={customer.city} autoComplete="address-level2" onChange={(e) => set('city', e.target.value)} required />
                 </Field>
                 <Field id="order-country" label={t('details.country')} required wide>
-                  <select id="order-country" value={customer.country} autoComplete="country" onChange={(e) => set('country', e.target.value)}>
+                  <select id="order-country" value={customer.country} autoComplete="country" onChange={(e) => chooseCountry(e.target.value)}>
                     {countryOptions.map((c) => (
                       <option key={c.code} value={c.code}>
                         {c.label}
@@ -625,7 +734,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 <textarea id="order-notes" rows={3} value={customer.notes} onChange={(e) => set('notes', e.target.value)} />
               </Field>
 
-              <p className="om-note">{vatExplanation(t, customer, priced.vatMode, vatStatus)}</p>
+              <p className="om-note">{vatExplanation(t, customer, vat.mode, vatStatus)}</p>
             </>
           )}
 
@@ -636,21 +745,44 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
               <div className="om-review-block">
                 <div className="om-review-head">
-                  <h4>{productName}</h4>
+                  <h4>
+                    {product.name} × {quantity}
+                  </h4>
                   <button type="button" className="om-link" onClick={() => goTo('configure')}>
                     {t('review.editConfig')}
                   </button>
                 </div>
-                <ul className="om-review-lines">
-                  {priced.lines.map((line) => (
-                    <li key={line.id}>
-                      <span>
-                        {line.quantity}× {line.labelFrom === 'product' ? productName : line.labelFrom === 'order' ? t(`options.${line.id}.label`) : tProduct(`addons.${line.id}.title`)}
-                      </span>
-                      <span>{line.totalCents === null ? t('summary.onRequest') : money(line.totalCents)}</span>
-                    </li>
-                  ))}
-                </ul>
+                {priced && (
+                  <ul className="om-review-lines">
+                    {priced.lines.map((line) => {
+                      const article = byCode.get(line.code);
+                      const qtyText = lineQty(line);
+                      // Fire protection: its qty is booths × 0.9 m segments, which
+                      // the buyer never typed — say where the 6 comes from.
+                      const perSegment = article?.perSegment && priced.segments !== null;
+                      return (
+                        <li key={line.code}>
+                          <span className="om-line-label">
+                            <code className="om-code">{line.code}</code>{' '}
+                            {article ? lineLabel(article, locale) : line.description}
+                          </span>
+                          {qtyText && <span className="om-line-qty">{qtyText}</span>}
+                          <span className="om-line-amount">{lineAmount(line)}</span>
+                          {perSegment && (
+                            <span className="om-line-hint">
+                              {t('review.segmentsQty', { quantity, segments: priced.segments ?? 0 })}
+                            </span>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+                {matchedSocket && (
+                  <p className="om-review-note">
+                    {t(socketIsMatch ? 'review.socketMatched' : 'review.socketDefault', { socket: lineLabel(matchedSocket, locale) })}
+                  </p>
+                )}
               </div>
 
               <div className="om-review-block">
@@ -668,7 +800,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                   {'\n'}
                   {customer.postalCode} {customer.city}
                   {'\n'}
-                  {countryLabel(customer.country, customer.country)}
+                  {countryLabel(customer.country, findCountry(customer.country)?.name ?? customer.country)}
                   {'\n'}
                   {customer.email}
                   {customer.phone ? `\n${customer.phone}` : ''}
@@ -677,7 +809,15 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
               </div>
 
               <label className="om-consent">
-                <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
+                <input
+                  type="checkbox"
+                  checked={consent}
+                  onChange={(e) => {
+                    setConsent(e.target.checked);
+                    // The "please complete" alert named this box: ticking it answers it.
+                    if (e.target.checked) setMissing([]);
+                  }}
+                />
                 <span>{t('review.consent')}</span>
               </label>
               <p className="om-legal">
@@ -691,9 +831,14 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
               </p>
 
               {missing.length > 0 && status !== 'error' && (
-                <p className="om-error" role="alert">
-                  {t('review.missingTitle')}
-                </p>
+                <div className="om-error" role="alert">
+                  <p>{t('review.missingTitle')}</p>
+                  <ul>
+                    {missing.map((label) => (
+                      <li key={label}>{label}</li>
+                    ))}
+                  </ul>
+                </div>
               )}
               {status === 'error' && (
                 <p className="om-error" role="alert">
@@ -713,8 +858,17 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 {t('success.referenceLabel')}: <strong>{result.reference}</strong>
               </p>
               <p>{t('success.body')}</p>
-              {result.correctedTotal && (
-                <p className="om-note om-note--warn">{t('success.correctedTotal', { total: result.correctedTotal })}</p>
+              {result.corrected && (
+                <p className="om-note om-note--warn">
+                  {t(
+                    result.corrected.reason === 'vat_unverified'
+                      ? 'success.correctedTotal'
+                      : result.corrected.reason === 'vat_verified'
+                        ? 'success.vatVerifiedTotal'
+                        : 'success.priceChangedTotal',
+                    { total: result.corrected.total }
+                  )}
+                </p>
               )}
               {!result.emailSent && <p className="om-note om-note--warn">{t('success.emailFallback', { reference: result.reference })}</p>}
               <p className="om-note">{t('summary.transportNote')}</p>
@@ -724,22 +878,35 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
 
         {/* ── Running total + navigation ──────────────────────────── */}
         {step !== 'done' && (
-          <footer className="om-footer">
-            <div className="om-totals" aria-live="polite" aria-atomic="true">
-              <div>
-                <span>{t('summary.net')}</span>
-                <span>{money(priced.netCents)}</span>
+          <footer className={`om-footer${step === 'review' ? '' : ' om-footer--compact'}`}>
+            {/* Only the amounts are live: the static notes below sit outside
+                the region so a screen reader does not re-read them on every
+                option change. On a phone, steps 1 and 2 show the total only. */}
+            <div className="om-totals">
+              <div className="om-totals-live" aria-live="polite" aria-atomic="true">
+                {priced ? (
+                  <>
+                    <div className="om-subtotal">
+                      <span>{t('summary.net')}</span>
+                      <span>{money(priced.netCents)}</span>
+                    </div>
+                    <div className="om-subtotal">
+                      <span>{vatLabel}</span>
+                      <span>{money(priced.vatCents)}</span>
+                    </div>
+                    <div className="om-total">
+                      <span>{t('summary.total')}</span>
+                      <span>{money(priced.grossCents)}</span>
+                    </div>
+                  </>
+                ) : (
+                  <p className="om-totals-note om-totals-note--warn">{t('error.pricing_failed')}</p>
+                )}
               </div>
-              <div>
-                <span>{vatLabel}</span>
-                <span>{money(priced.vatCents)}</span>
-              </div>
-              <div className="om-total">
-                <span>{t('summary.total')}</span>
-                <span>{money(priced.grossCents)}</span>
-              </div>
-              <p className="om-totals-note">{t('summary.transportNote')}</p>
-              {priced.hasOnRequestItems && <p className="om-totals-note om-totals-note--warn">{t('summary.onRequestNote')}</p>}
+              <p className="om-totals-note om-totals-note--transport">{t('summary.transportNote')}</p>
+              <p className="om-totals-note om-totals-note--warn" aria-live="polite">
+                {priced?.hasOnRequestItems ? t('summary.onRequestNote') : ''}
+              </p>
             </div>
 
             <p className="om-sr-only" role="status">{status === 'sending' ? t('review.submitting') : ''}</p>
@@ -750,7 +917,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                 </button>
               )}
               {step === 'configure' && (
-                <button type="button" className="om-btn om-btn--primary" onClick={() => goTo('details')}>
+                <button type="button" className="om-btn om-btn--primary" onClick={continueFromConfigure} aria-disabled={!priced}>
                   {t('continue')}
                 </button>
               )}
@@ -771,7 +938,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
                     }
                     if (status !== 'sending') submit();
                   }}
-                  aria-disabled={!consent || status === 'sending'}
+                  aria-disabled={!consent || !priced || status === 'sending'}
                 >
                   {status === 'sending' ? t('review.submitting') : t('review.submit')}
                 </button>
@@ -938,105 +1105,6 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           text-transform: uppercase;
           color: #64748b;
         }
-        .om-qty {
-          display: flex;
-          align-items: center;
-          gap: 0.9rem;
-          flex-wrap: wrap;
-          padding-bottom: 1.2rem;
-          border-bottom: 1px solid #eef2f6;
-        }
-        .om-qty label {
-          font-weight: 600;
-          color: var(--deep-blue, #0d3a5c);
-          font-size: 0.95rem;
-        }
-        .om-qty-controls {
-          display: flex;
-          align-items: center;
-          border: 1px solid #6b7d94;
-          border-radius: 10px;
-          overflow: hidden;
-        }
-        .om-qty-controls button {
-          width: 44px;
-          height: 44px;
-          border: 0;
-          background: #f8fafc;
-          font-size: 1.2rem;
-          cursor: pointer;
-          color: var(--deep-blue, #0d3a5c);
-        }
-        .om-qty-controls button:hover {
-          background: #e8f4fc;
-        }
-        .om-qty-controls input {
-          width: 64px;
-          height: 44px;
-          border: 0;
-          border-left: 1px solid #e2e8f0;
-          border-right: 1px solid #e2e8f0;
-          text-align: center;
-          font-size: 1rem;
-          font-weight: 600;
-          color: var(--deep-blue, #0d3a5c);
-        }
-        .om-qty-unit {
-          font-size: 0.9rem;
-          color: #5a6b7f;
-        }
-        .om-options {
-          border: 0;
-          margin: 1.3rem 0 0;
-          padding: 0;
-        }
-        .om-options legend {
-          font-size: 0.78rem;
-          letter-spacing: 1.2px;
-          text-transform: uppercase;
-          color: #64748b;
-          margin-bottom: 0.6rem;
-          padding: 0;
-        }
-        .om-option {
-          display: flex;
-          gap: 0.8rem;
-          padding: 0.75rem 0;
-          border-bottom: 1px solid #f1f5f9;
-        }
-        .om-option input[type='checkbox'] {
-          width: 20px;
-          height: 20px;
-          margin-top: 0.15rem;
-          accent-color: var(--brand-blue, #197fc7);
-          flex-shrink: 0;
-        }
-        .om-option-qty {
-          width: 62px;
-          height: 40px;
-          border: 1px solid #6b7d94;
-          border-radius: 8px;
-          text-align: center;
-          flex-shrink: 0;
-        }
-        .om-option-text label {
-          display: block;
-          font-size: 0.95rem;
-          color: var(--deep-blue, #0d3a5c);
-          font-weight: 500;
-          cursor: pointer;
-        }
-        .om-option-price {
-          color: var(--brand-blue-dark, #145f96);
-          font-weight: 600;
-          white-space: nowrap;
-        }
-        .om-option-text p {
-          margin: 0.25rem 0 0;
-          font-size: 0.85rem;
-          color: #5a6b7f;
-          line-height: 1.55;
-        }
         .om-note {
           margin: 1.1rem 0 0;
           padding: 0.75rem 0.9rem;
@@ -1127,15 +1195,48 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           font-size: 0.92rem;
         }
         .om-review-lines li {
-          display: flex;
-          justify-content: space-between;
-          gap: 1rem;
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto auto;
+          align-items: baseline;
+          gap: 0.2rem 0.9rem;
           padding: 0.4rem 0;
           border-bottom: 1px solid #f1f5f9;
           color: #334155;
         }
         .om-review-lines li:last-child {
           border-bottom: 0;
+        }
+        .om-code {
+          display: inline-block;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+          font-size: 0.76rem;
+          color: #334155;
+          background: #f1f5f9;
+          border-radius: 4px;
+          padding: 0.05rem 0.35rem;
+          margin-right: 0.45rem;
+          white-space: nowrap;
+        }
+        .om-line-qty {
+          color: #5a6b7f;
+          white-space: nowrap;
+        }
+        .om-line-amount {
+          text-align: right;
+          white-space: nowrap;
+          font-variant-numeric: tabular-nums;
+          font-weight: 600;
+        }
+        .om-line-hint {
+          grid-column: 1 / -1;
+          font-size: 0.8rem;
+          color: #5a6b7f;
+        }
+        .om-review-note {
+          margin: 0.7rem 0 0;
+          font-size: 0.82rem;
+          color: #5a6b7f;
+          line-height: 1.5;
         }
         .om-review-address {
           margin: 0;
@@ -1208,7 +1309,7 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           color: #475569;
           margin-bottom: 0.9rem;
         }
-        .om-totals > div {
+        .om-totals-live > div {
           display: flex;
           justify-content: space-between;
           gap: 1rem;
@@ -1227,6 +1328,9 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           font-size: 0.78rem;
           color: #5a6b7f;
           line-height: 1.5;
+        }
+        .om-totals-note:empty {
+          display: none;
         }
         .om-totals-note--warn {
           color: #8a4b00;
@@ -1262,6 +1366,57 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           color: var(--deep-blue, #0d3a5c);
         }
         @media (max-width: 640px) {
+          /* A phone gets the whole screen: the dialog scrolls as one page
+             inside the backdrop (no fixed-height body), the header is
+             compact, and the footer sticks to the bottom with the total. */
+          .om-backdrop {
+            /* Block, not flex: a flex row would stretch the dialog to the
+               viewport height and let the overflowing content run past its
+               white background. As a block the dialog is as tall as its
+               content and at least one screen. */
+            display: block;
+            padding: 0;
+          }
+          .om-dialog {
+            width: 100%;
+            min-height: 100%;
+            max-height: none;
+            border-radius: 0;
+            overflow: visible;
+          }
+          .om-body {
+            overflow: visible;
+            flex: 1 0 auto;
+          }
+          .om-footer {
+            position: sticky;
+            bottom: 0;
+            z-index: 1;
+            padding-top: 0.75rem;
+            padding-bottom: 0.9rem;
+          }
+          .om-header {
+            padding-top: 0.9rem;
+            padding-bottom: 0.6rem;
+          }
+          .om-header h2 {
+            font-size: 1.1rem;
+          }
+          .om-eyebrow {
+            margin-bottom: 0.15rem;
+          }
+          .om-steps {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 0.72rem;
+            gap: 0.35rem;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+          }
+          .om-steps li + li::before {
+            width: 10px;
+          }
           .om-grid {
             grid-template-columns: 1fr;
           }
@@ -1271,6 +1426,30 @@ export default function OrderModal({ open, onClose, slug, productName, namespace
           .om-steps {
             padding-left: 1.1rem;
             padding-right: 1.1rem;
+          }
+          .om-body {
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+          }
+          .om-review-lines li {
+            grid-template-columns: minmax(0, 1fr) auto;
+          }
+          .om-review-lines .om-line-label {
+            grid-column: 1 / -1;
+          }
+          /* Steps 1 and 2: total only; subtotal, VAT and the transport note
+             wait for the review step, where the buyer reads them anyway. */
+          .om-footer--compact .om-subtotal,
+          .om-footer--compact .om-totals-note--transport {
+            display: none;
+          }
+          .om-footer--compact .om-total {
+            border-top: 0;
+            margin-top: 0;
+            padding-top: 0 !important;
+          }
+          .om-footer--compact .om-totals {
+            margin-bottom: 0.6rem;
           }
           .om-actions {
             flex-direction: column-reverse;

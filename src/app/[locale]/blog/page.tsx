@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import { pickMessages } from '@/lib/i18n-messages';
-import { getContentPosts } from '@/lib/content/blog';
+import { getContentPosts, resolveContentPost } from '@/lib/content/blog';
 
 import PageHero from '@/components/sections/PageHero';
 import BlogGrid from '@/components/sections/BlogGrid';
@@ -50,7 +50,9 @@ export default async function BlogPage({ params: { locale } }: BlogPageProps) {
   const messages = pickMessages(await getMessages(), ['blog', 'blogPosts', 'newsletter']);
 
   // Editorial posts of this locale (single-locale, no drafts) come first.
-  const editorial: BlogGridPost[] = getContentPosts(locale).map((post) => ({
+  // The excerpt is the description, which may carry a price token.
+  const editorialPosts = await Promise.all(getContentPosts(locale).map(resolveContentPost));
+  const editorial: BlogGridPost[] = editorialPosts.map((post) => ({
     slug: post.slug,
     category: post.category,
     date: post.datePublished,

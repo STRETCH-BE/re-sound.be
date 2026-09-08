@@ -12,9 +12,12 @@ import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumb
 import InteriorProductPage from '@/components/sections/InteriorProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
-import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
+import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/interior';
 import { pickMessages } from '@/lib/i18n-messages';
+import { fromPriceText } from '@/components/product/boothPrice';
+import { getFromPriceCents } from '@/lib/catalogue/load';
+import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -26,6 +29,12 @@ import {
 interface PageProps {
   params: { locale: string };
 }
+
+/**
+ * ISR: prices come from the catalogue (database), so a change reaches this
+ * page within the hour without a redeploy.
+ */
+export const revalidate = 3600;
 
 // Localised FAQ keys for this product. The keys are stable across locales;
 // each translation file under `messages/{locale}.json` provides the actual
@@ -42,7 +51,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta' });
 
   const title = t('interiorTitle');
-  const description = t('interiorDescription');
+  // The description quotes the "from" price, read from the catalogue.
+  const description = t('interiorDescription', { fromPrice: (await fromPriceText(locale, 'interior')) ?? '' });
 
   return {
     // Title already contains "| Re-Sound" — bypass the layout template
@@ -74,10 +84,15 @@ export default async function Page({ params: { locale } }: PageProps) {
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
   const fullTitle = tMeta('interiorTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
-  const description = tMeta('interiorDescription');
+  const priceFrom = await fromPriceText(locale, 'interior');
+  const description = tMeta('interiorDescription', { fromPrice: priceFrom ?? '' });
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'interior', cleanName);
+  // "From" price from the catalogue (database, else snapshot): hero + JSON-LD offer.
+  const priceCents = await getFromPriceCents('interior');
+  // Models, categories and articles for the order dialog (same catalogue read).
+  const configurator = await loadConfigurator('interior');
 
   // Root + productPage translators for the server-rendered section slots.
   const t = await getTranslations({ locale });
@@ -108,7 +123,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       }
     })
     .filter((e): e is FaqEntry => e !== null),
-    faqFor(locale, 'interior').map((f) => ({ question: f.question, answer: f.answer }))
+    (await faqForResolved(locale, 'interior')).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   // Only the namespaces the client components in this tree actually use —
@@ -130,6 +145,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           name: cleanName,
           description,
           category: tData('category.textile'),
+          priceCents,
         })}
       />
       <JsonLd
@@ -138,6 +154,8 @@ export default async function Page({ params: { locale } }: PageProps) {
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <InteriorProductPage
+          priceFrom={priceFrom}
+          configurator={configurator}
           breadcrumbs={<Breadcrumbs items={crumbs} />}
           specs={
             <ProductSpecs

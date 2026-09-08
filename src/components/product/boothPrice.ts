@@ -1,19 +1,24 @@
 import { guidePath, isGuideLocale } from '@/data/guides';
-import { PRODUCTS } from '@/data/products';
-import { localeFullCodes, type Locale } from '@/i18n/config';
+import { formatPrice } from '@/lib/catalogue/format';
+import { getFromPriceCents } from '@/lib/catalogue/load';
 
 /**
- * "From price" KPI for a booth hero: the confirmed excl.-VAT price from
- * src/data/products.ts, formatted for the locale, linking to the price guide
- * where the guide exists. Returns undefined while a price is unconfirmed.
+ * "From price" KPI for a booth hero: the lowest base price of the models sold
+ * from the page, read from the catalogue (database, else snapshot), formatted
+ * for the locale, linking to the price guide where the guide exists. Returns
+ * undefined while the page has no priced model.
+ *
+ * Server only (reads the catalogue); the value is passed to the client hero
+ * as a plain object.
  */
-export function boothFromPrice(locale: string, slug: string, label: string) {
-  const product = PRODUCTS[slug];
-  if (!product || product.fromPrice === null) return undefined;
-  const value = new Intl.NumberFormat(localeFullCodes[locale as Locale] ?? 'en-BE', {
-    style: 'currency',
-    currency: 'EUR',
-    maximumFractionDigits: 0,
-  }).format(product.fromPrice);
-  return { value, label, href: isGuideLocale(locale) ? guidePath(locale) : undefined };
+export async function boothFromPrice(locale: string, slug: string, label: string) {
+  const cents = await getFromPriceCents(slug);
+  if (cents === null) return undefined;
+  return { value: formatPrice(cents, locale), label, href: isGuideLocale(locale) ? guidePath(locale) : undefined };
+}
+
+/** The same "from" amount as text only ("€ 387"), for the textile heroes. */
+export async function fromPriceText(locale: string, slug: string): Promise<string | undefined> {
+  const cents = await getFromPriceCents(slug);
+  return cents === null ? undefined : formatPrice(cents, locale);
 }

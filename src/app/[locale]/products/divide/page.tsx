@@ -12,9 +12,12 @@ import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumb
 import DivideProductPage from '@/components/sections/DivideProductPage';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
-import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
+import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/divide';
 import { pickMessages } from '@/lib/i18n-messages';
+import { fromPriceText } from '@/components/product/boothPrice';
+import { getFromPriceCents } from '@/lib/catalogue/load';
+import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -26,6 +29,12 @@ import {
 interface PageProps {
   params: { locale: string };
 }
+
+/**
+ * ISR: prices come from the catalogue (database), so a change reaches this
+ * page within the hour without a redeploy.
+ */
+export const revalidate = 3600;
 
 // Localised FAQ keys for this product. The keys are stable across locales;
 // each translation file under `messages/{locale}.json` provides the actual
@@ -96,6 +105,11 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'divide', cleanName);
+  // "From" price from the catalogue (database, else snapshot): hero + JSON-LD offer.
+  const priceCents = await getFromPriceCents('divide');
+  // Models, categories and articles for the order dialog (same catalogue read).
+  const configurator = await loadConfigurator('divide');
+  const priceFrom = await fromPriceText(locale, 'divide');
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -121,7 +135,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       }
     })
     .filter((e): e is FaqEntry => e !== null),
-    faqFor(locale, 'divide').map((f) => ({ question: f.question, answer: f.answer }))
+    (await faqForResolved(locale, 'divide')).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   const galleryImages = GALLERY_IMAGES.map((img, i) => ({
@@ -138,6 +152,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           name: cleanName,
           description,
           category: tData('category.textile'),
+          priceCents,
         })}
       />
       <JsonLd
@@ -145,6 +160,8 @@ export default async function Page({ params: { locale } }: PageProps) {
       />
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <DivideProductPage
+        priceFrom={priceFrom}
+        configurator={configurator}
         breadcrumbs={<Breadcrumbs items={crumbs} />}
         specs={
           <ProductSpecs

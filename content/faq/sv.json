@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Vad kostar en telefonhytt för kontor?",
-    "answer": "Telefonhytten Solo Flex kostar från 2 740 € exkl. moms utan installation, eller 3 605 € exkl. moms inklusive installation. Mötesbåset Duo kostar från 7 615 € exkl. moms. Modular XL kostar från 15 000 € exkl. moms utan installation, eller 17 990 € exkl. moms inklusive installation, plus 7 264 € inklusive installation per extra element om 90 cm. Den största Modular XL som hittills byggts rymmer 20 personer. Priserna exkluderar transport utanför Belgien.",
+    "answer": "Telefonhytten Solo Flex kostar från {{price:solo-flex}} exkl. moms. Mötesbåset Duo kostar från {{price:duo}} exkl. moms, och Modular XL från {{price:modular-xl}} exkl. moms för basmodulen, plus {{price:article:RS-MX-AS1}} per extra element om 90 cm. Priserna gäller fritt fabrik: leverans och installation offereras separat. Den största Modular XL som hittills byggts rymmer 20 personer.",
     "showOn": [
       "booths",
       "guide",

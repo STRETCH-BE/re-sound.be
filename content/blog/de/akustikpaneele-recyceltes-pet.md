@@ -57,7 +57,7 @@ Prüfen Sie die genaue Anforderung mit Ihrem Akustiker. Die Sabine-Formel liefer
 
 Nur mit rPET Groove 24 mm (αw 0,85) an den Wänden wären das 28,4 / 0,85 = **33,4 m² Paneele**, also 24 Paneele von 2.400 × 600 mm (24 × 1,44 = 34,6 m²). Praktischer ist die Kombination: **30 m² absorbierende Decke** der Klasse A (angenommen αw 0,9; etwa eine [Akustik-Spanndecke](https://stretchplafond.be/products/acoustic-stretch-system) unseres Schwesterunternehmens STRETCH) bringen 30 × 0,9 = 27,0 m² Sabine, dazu **vier Paneele rPET Groove** an der Rückwand (4 × 1,44 = 5,8 m² × 0,85 = 4,9 m² Sabine). Zusammen 31,9 m² Sabine, mehr als die nötigen 28,4; der Raum landet bei 0,161 × 179 / (24,0 + 31,9) = **0,52 s**.
 
-Paneele dämpfen den Nachhall, nicht das Telefonat, das durch das Großraumbüro trägt. Dafür brauchen Sie eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie die [Solo Flex](/de/products/solo-flex), ab 2.740 € ohne bzw. 3.605 € mit Montage, zzgl. MwSt. und Transport nach Deutschland.
+Paneele dämpfen den Nachhall, nicht das Telefonat, das durch das Großraumbüro trägt. Dafür brauchen Sie eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie die [Solo Flex](/de/products/solo-flex), ab {{price:solo-flex}} zzgl. MwSt. ohne Montage (die Montage wird gesondert angeboten), zzgl. Transport nach Deutschland.
 
 ## Brandschutz und Emissionen: B-s1,d0 und OEKO-TEX
 
@@ -87,7 +87,7 @@ Lieferzeiten ab Werk:
 
 Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die rPET-Paneele kommen aus dem polnischen Werk, die Rohstoffe aus der EU.
 
-Der Quadratmeterpreis hängt von Stärke, Farbe, Druck und Menge ab und wird per Angebot ermittelt, zzgl. MwSt. Recyceltes PET liegt bei gleicher Fläche dennoch klar unter furniertem Holz. Zur Einordnung: Unsere Textilreihe Interior beginnt bei 387 € zzgl. MwSt. pro Set. Schicken Sie uns Ihre Quadratmeter – oder wenden Sie sich an einen [Händler](/de/where-to-buy) in Ihrer Nähe.
+Der Quadratmeterpreis hängt von Stärke, Farbe, Druck und Menge ab und wird per Angebot ermittelt, zzgl. MwSt. Recyceltes PET liegt bei gleicher Fläche dennoch klar unter furniertem Holz. Zur Einordnung: Unsere Textilreihe Interior beginnt bei {{price:interior}} zzgl. MwSt. pro Set. Schicken Sie uns Ihre Quadratmeter – oder wenden Sie sich an einen [Händler](/de/where-to-buy) in Ihrer Nähe.
 
 ## PET oder Holz: Vergleich und Entscheidungstabelle
 

@@ -6,7 +6,7 @@ import SoloFlexProductPage from '@/components/sections/SoloFlexProductPage';
 import { pickMessages } from '@/lib/i18n-messages';
 import JsonLd from '@/components/seo/JsonLd';
 import { PRODUCTS } from '@/data/products';
-import { faqFor, mergeFaqEntries } from '@/lib/content/faq';
+import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/solo-flex';
 import ProductSpecs from '@/components/product/ProductSpecs';
 import { crumbsToSchema, productCrumbs } from '@/components/product/productCrumbs';
@@ -15,6 +15,8 @@ import ProductFaq from '@/components/product/ProductFaq';
 import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { boothFromPrice } from '@/components/product/boothPrice';
+import { getFromPriceCents } from '@/lib/catalogue/load';
+import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -26,6 +28,12 @@ import {
 interface PageProps {
   params: { locale: string };
 }
+
+/**
+ * ISR: prices come from the catalogue (database), so a change reaches this
+ * page within the hour without a redeploy.
+ */
+export const revalidate = 3600;
 
 // Localised FAQ keys for this product. The keys are stable across locales;
 // each translation file under `messages/{locale}.json` provides the actual
@@ -89,7 +97,7 @@ export default async function Page({ params: { locale } }: PageProps) {
       }
     })
     .filter((e): e is FaqEntry => e !== null),
-    faqFor(locale, 'solo-flex').map((f) => ({ question: f.question, answer: f.answer }))
+    (await faqForResolved(locale, 'solo-flex')).map((f) => ({ question: f.question, answer: f.answer }))
   );
 
   // Narrow the catalog to the namespaces the client tree actually uses:
@@ -107,6 +115,11 @@ export default async function Page({ params: { locale } }: PageProps) {
   const tShared = await getTranslations({ locale, namespace: 'boothPage' });
   const tPage = await getTranslations({ locale, namespace: 'productPage' });
   const tHubs = await getTranslations({ locale, namespace: 'hubs.shared' });
+  // "From" price from the catalogue (database, else snapshot): hero KPI + JSON-LD offer.
+  const priceCents = await getFromPriceCents('solo-flex');
+  // Models, categories and articles for the order dialog (same catalogue read).
+  const configurator = await loadConfigurator('solo-flex');
+  const fromPrice = await boothFromPrice(locale, 'solo-flex', tHubs('col.fromPrice'));
 
   return (
     <>
@@ -117,6 +130,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           name: cleanName,
           description,
           category: tData('category.booth'),
+          priceCents,
         })}
       />
       <JsonLd
@@ -125,7 +139,8 @@ export default async function Page({ params: { locale } }: PageProps) {
       {faqEntries.length > 0 && <JsonLd data={faqPageSchema(faqEntries)} />}
       <NextIntlClientProvider locale={locale} messages={messages}>
         <SoloFlexProductPage
-          fromPrice={boothFromPrice(locale, 'solo-flex', tHubs('col.fromPrice'))}
+          fromPrice={fromPrice}
+          configurator={configurator}
           breadcrumbs={<Breadcrumbs items={crumbs} />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['solo-flex']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}

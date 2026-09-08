@@ -9,10 +9,13 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "prebuild": "node scripts/fetch-google-reviews.mjs",
-    "content:import": "node scripts/content/import-workbook.mjs"
+    "prebuild": "node scripts/fetch-google-reviews.mjs && node scripts/db/catalogue-snapshot.mjs",
+    "content:import": "node scripts/content/import-workbook.mjs",
+    "catalogue:snapshot": "node scripts/db/catalogue-snapshot.mjs",
+    "catalogue:check": "node scripts/db/pricing-check.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.116.0",
     "gray-matter": "^4.0.3",
     "next": "^14.2.0",
     "next-intl": "^3.11.0",

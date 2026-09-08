@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "¿Cuánto cuesta una cabina telefónica de oficina?",
-    "answer": "La cabina telefónica de oficina Solo Flex cuesta desde 2.740 € sin instalación o 3.605 € con instalación, IVA no incluido. El pod Duo cuesta desde 7.615 € sin IVA. La Modular XL cuesta desde 15.000 € sin instalación o 17.990 € con instalación, IVA no incluido, más 7.264 € con instalación por cada elemento adicional de 90 cm. La mayor Modular XL fabricada hasta ahora acoge a 20 personas. Los precios no incluyen el transporte fuera de Bélgica.",
+    "answer": "La cabina telefónica de oficina Solo Flex cuesta desde {{price:solo-flex}} sin IVA. El pod Duo cuesta desde {{price:duo}} sin IVA, y la Modular XL desde {{price:modular-xl}} sin IVA por el módulo base, más {{price:article:RS-MX-AS1}} por cada elemento adicional de 90 cm. Los precios son franco fábrica: la entrega y la instalación se presupuestan por separado. La mayor Modular XL fabricada hasta ahora acoge a 20 personas.",
     "showOn": [
       "booths",
       "guide",

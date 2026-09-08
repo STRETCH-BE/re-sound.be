@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import OrderButton from '@/components/order/OrderButton';
+import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -24,6 +25,10 @@ const colorOptions = [
  * gallery, FAQ and "other models" no longer live in this client component.
  */
 export interface DivideProductPageSlots {
+  /** "From" price already formatted for the locale (catalogue); hidden when absent */
+  priceFrom?: string;
+  /** Catalogue slice for the order dialog (server-loaded); the button hides when absent or empty */
+  configurator?: ConfiguratorData | null;
   /** Visible breadcrumb trail (Home › Products › range › model), floated over the hero */
   breadcrumbs?: React.ReactNode;
   specs: React.ReactNode;
@@ -33,7 +38,7 @@ export interface DivideProductPageSlots {
   otherModels: React.ReactNode;
 }
 
-export default function DivideProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: DivideProductPageSlots) {
+export default function DivideProductPage({ priceFrom, configurator, breadcrumbs, specs, downloads, gallery, faq, otherModels }: DivideProductPageSlots) {
   const t = useTranslations('dividePage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
@@ -111,7 +116,7 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
           </div>
 
           <div className="hero-ctas">
-            <OrderButton slug="divide" namespace="dividePage" className="btn-primary" />
+            <OrderButton slug="divide" configurator={configurator} className="btn-primary" />
             <Link href="/contact" className="btn-secondary" onClick={() => analytics.quoteClick('divide', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
@@ -120,7 +125,9 @@ export default function DivideProductPage({ breadcrumbs, specs, downloads, galle
             </a>
           </div>
 
-          <p className="hero-price">{t('hero.priceFrom')} <strong>{t('hero.priceValue')}</strong> {t('hero.priceUnit')}</p>
+          {priceFrom && (
+            <p className="hero-price">{t('hero.priceFrom')} <strong>{priceFrom}</strong> {t('hero.priceUnit')}</p>
+          )}
         </div>
         
         <div className="hero-image">

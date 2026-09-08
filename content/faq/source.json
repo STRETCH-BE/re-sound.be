@@ -31,7 +31,7 @@
     "category": "Booths",
     "locale": "en",
     "question": "How much does an office phone booth cost?",
-    "answer": "Starts from 2740€ ex VAT without installation or 3605€ ex VAT including installation up-to 15000€ ex VAT for our Meeting pod ex installation or 17990€ ex VAT incl. installation +7264€ incl installation per extra ellement to create a big meeting pod. (biggest modular meeting pod we did by now is for 20 persons",
+    "answer": "The Solo Flex office phone booth starts from {{price:solo-flex}} excl. VAT. The Duo meeting pod starts from {{price:duo}} excl. VAT, and Modular XL from {{price:modular-xl}} excl. VAT for the base module, plus {{price:article:RS-MX-AS1}} per extra 90 cm element. Prices are ex works: delivery and installation are quoted separately. The largest Modular XL built so far seats 20 people.",
     "showOn": [
       "acoustic-phone-booths",
       "guide"
