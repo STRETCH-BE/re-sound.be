@@ -143,9 +143,10 @@ price on the site comes from it. These came out of the import:
     at the top of the order dialog). The list flags that Ethernet is priced
     differently on the two (€ 156,25 vs € 143,75); it is left as listed.
 
-44. **Solo ECO, Solo Stand and Modular 4** are in the catalogue with all
-    their options but have no product page, so they cannot be ordered
-    online. Say if you want pages for them.
+44. **Solo Stand and Modular 4** are in the catalogue with all their
+    options but have no product page, so they cannot be ordered online. Say
+    if you want pages for them. (Solo ECO has a page since 8 September, see
+    items 51–53.)
 
 45. **Sofa fabrics** have no article codes on the list. The dialog orders
     the sofa article as is; the fabric is settled in the confirmation.
@@ -183,6 +184,31 @@ price on the site comes from it. These came out of the import:
     language (the `products` table has no translated labels, unlike
     `articles`). Nine short sentences to translate once you confirm the
     English ones.
+
+51. **Solo ECO photos.** The new `/products/solo-eco` page uses the Solo
+    Flex photos as placeholders (`public/images/products/solo-eco/hero.jpg`,
+    `overview.jpg`, `solo-eco_card.jpg/.webp`, `hero-solo-eco.webp`). Drop
+    the ECO photos over those five files and the page, the product grid,
+    the hub cards and the social preview update.
+
+52. **Solo ECO facts the list does not give.** The page states only what
+    the 2026 price list states: dimensions, standing table, weight, 8 mm
+    enamelled glass, ventilation up to 4 m³/min, 2 W / 22 W, 5-year spare-
+    part warranty, 4 weeks production, white exterior, beige felt, door
+    hinged left, closed or glass back wall, stool option. Missing, and so
+    not on the page: the ISO 23351-1 speech reduction (the acoustics
+    section and the hub's ISO column are blank for ECO), clear door width,
+    fan count, lighting, occupancy sensor, fire class and certifications,
+    installation time (the price guide says "on request"), and which plant
+    builds it (the page says Częstochowa like the other booths; the list
+    names no plant). Send the figures and they go into `soloEcoPage.specs`
+    and `src/data/products.ts`.
+
+53. **Solo ECO copy to read once.** Hero, overview, six features, two
+    options and six FAQ answers were written from the list and translated
+    into the nine other languages; the "difference to Solo Flex" answer
+    compares the two models on the list's figures. Tell us if the
+    positioning ("entry model", "kept simple") is not how you sell it.
 
 Still open: items 14–25 below (hero images, Google API key and place id, planned application pages, rWood Groove 60 % recycled content, translation notes) and the Google Business Profile checklist.
 

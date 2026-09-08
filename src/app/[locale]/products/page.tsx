@@ -57,7 +57,7 @@ export default async function ProductsPage({ params: { locale } }: ProductsPageP
     { id: 'textile', title: tData('familyName.textile'), href: null, slugs: FAMILY_PRODUCTS.textile },
   ];
 
-  // ItemList of the 13 products, in catalogue order, for the listing page.
+  // ItemList of the 14 products, in catalogue order, for the listing page.
   const itemList = itemListSchema(
     PRODUCT_SLUGS.map((slug) => ({
       name: t(`${slug}.title`),

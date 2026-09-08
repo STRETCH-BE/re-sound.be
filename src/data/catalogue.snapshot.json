@@ -78,7 +78,7 @@
       ],
       "notes": [],
       "sourceFile": "4743dfbd-resound_booths_price_list_2026.xlsx",
-      "importedAt": "2026-09-08T21:24:22.328Z"
+      "importedAt": "2026-09-08T22:45:21.162Z"
     }
   ],
   "products": [
@@ -90,7 +90,7 @@
       "description": "Soundproof phone booth for one person",
       "kind": "booth",
       "unit": "booth",
-      "websiteSlug": null,
+      "websiteSlug": "solo-eco",
       "maxQty": 25,
       "refPage": 4,
       "tech": [
@@ -6092,6 +6092,6 @@
       "active": true
     }
   ],
-  "loadedAt": "2026-09-08T21:24:22.328Z",
+  "loadedAt": "2026-09-08T22:45:21.162Z",
   "source": "snapshot"
 }

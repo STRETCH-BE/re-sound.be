@@ -40,6 +40,8 @@
     "duoDescription": "Telefonhytt för två personer med två konfigurationer: Flex rymmer två vid ett möte, Work ger en person ett bord i full bredd. 2 m², 230 V, ventilerad.",
     "modularXlTitle": "Modular XL – akustiskt mötesbås för 6–10 personer | Re-Sound",
     "modularXlDescription": "Akustiskt mötesbås för 6 till 10 personer: förläng basen i 90 cm-segment, 25,9 dB(A) talreduktion, kompletta A/V-förberedelser, bred tröskelfri dörr.",
+    "soloEcoTitle": "Solo ECO – telefonhytt för 1 person, instegsmodell | Re-Sound",
+    "soloEcoDescription": "Telefonhytt för en person, instegsmodell: 1,1 m² yta, ståbord, 230 V-uttag med USB, ventilation upp till 4 m³/min, sluten bakvägg eller bakvägg i glas.",
     "partnerTitle": "Partnerprogram · trade- och återförsäljarprogram",
     "partnerDescription": "Re-Sounds partnerprogram för arkitekter, designers, återförsäljare och distributörer i Europa: föreskrivningsunderlag, regionalt skydd, direkt support.",
     "whereToBuyTitle": "Var du kan se och köpa Re-Sound",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Skalbart akustiskt mötesbås. Basen rymmer 6 personer, utbyggbar till 10 med modulära 90 cm-segment. 25,9 dB(A) talreduktion."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Telefonhytt för en person, instegsmodell: 1,1 m² yta, ståbord, landsspecifikt uttag med USB, sluten bakvägg eller bakvägg i glas."
     }
   },
   "specs": {
@@ -3132,6 +3138,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Skalbar mötespod"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Enpersonsbås, instegsmodell"
       }
     },
     "growthDiagramLabel": "Diagram över modulär utbyggnad"
@@ -3961,6 +3971,10 @@
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
       "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    },
+    "solo-eco": {
+      "mounting": "Fristående; montering av Re-Sound på begäran",
+      "leadTime": "4 veckors produktion"
     }
   },
   "hubs": {
@@ -4102,11 +4116,11 @@
     },
     "booths": {
       "title": "Telefonhytter & mötesbås – Solo, Duo, Modular XL | Re-Sound",
-      "description": "Telefonhytter & mötesbås för kontor: Solo Flex (1 pers.), Duo (2 pers.), Modular XL (6–10). ISO 23351-1-talreduktion, tyst ventilation, 230 V, USB-C.",
+      "description": "Telefonhytter & mötesbås för kontor: Solo ECO och Solo Flex (1 pers.), Duo (2), Modular XL (6–10). ISO 23351-1-talreduktion på Flex och XL, 230 V.",
       "h1": "Telefonhytter och mötespods för kontoret från egna fabriker",
       "breadcrumb": "Hytter",
-      "intro": "En telefonhytt för kontor ger en person en tyst, ventilerad plats för samtal och videomöten mitt i ett öppet kontorslandskap; ett mötesbås gör detsamma för ett team. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). Hyttsortimentet finns i tre storlekar. Solo Flex är telefonhytten för en person: 1 m² golvyta, höj- och sänkbart bord, 230 V och USB-C, tysta EC-fläktar och en talnivåreduktion på 24 dB(A) uppmätt enligt ISO 23351-1. Duo är den akustiska telefonhytten för två personer med två konfigurationer – Flex för ett samtal med två sittplatser, Work för en person med ett bord i full bredd. Modular XL är det akustiska mötesbåset för sex till tio personer: basenheten förlängs i segment om 90 cm och når 25,9 dB(A) talnivåreduktion. Alla hytter levereras med 5 års garanti på stommen och levereras i hela EU, med installation på begäran. Jämför telefonhytterna för kontor nedan och öppna sedan en modellsida för tillval och nedladdningar.",
-      "whyCertsDesc": "5 års garanti på stommen och 2 års garanti på elektroniken för varje hytt; talnivåreduktion anges enligt ISO 23351-1.",
+      "intro": "En telefonhytt för kontor ger en person en tyst, ventilerad plats för samtal och videomöten mitt i ett öppet kontorslandskap; ett mötesbås gör detsamma för ett team. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). Hyttsortimentet omfattar fyra modeller. Solo ECO är instegsmodellen: en hytt för en person med ståbord, ett landsspecifikt uttag med USB-A och USB-C (enbart uttag i Danmark), ventilation upp till 4 m³/min och en sluten bakvägg eller bakvägg i glas. Solo Flex är telefonhytten för en person: 1 m² golvyta, höj- och sänkbart bord, 230 V och USB-C, tysta EC-fläktar och en talnivåreduktion på 24 dB(A) uppmätt enligt ISO 23351-1. Duo är den akustiska telefonhytten för två personer med två konfigurationer – Flex för ett samtal med två sittplatser, Work för en person med ett bord i full bredd. Modular XL är det akustiska mötesbåset för sex till tio personer: basenheten förlängs i segment om 90 cm och når 25,9 dB(A) talnivåreduktion. Solo Flex, Duo och Modular XL har 5 års garanti på stommen och Solo ECO 5 års reservdelsgaranti; alla levereras i hela EU, med installation på begäran. Jämför telefonhytterna för kontor nedan och öppna sedan en modellsida för tillval och nedladdningar.",
+      "whyCertsDesc": "5 års garanti på varje hytt (på stommen för Solo Flex, Duo och Modular XL; på reservdelar för Solo ECO); talnivåreduktion anges enligt ISO 23351-1 där den är uppmätt.",
       "applications": {
         "app1": "Öppna kontorslandskap och coworking-ytor",
         "app2": "Samtal och videomöten på agila arbetsplatser",
@@ -4122,7 +4136,7 @@
         },
         "q2": {
           "question": "Behöver akustiska telefonhytter en elanslutning?",
-          "answer": "Ja – varje hytt ansluts till ett vanligt 230 V-uttag för belysning, ventilation och uttagen vid bordet (Schuko plus USB-C PD 60 W). Solo Flex förbrukar cirka 80 W i drift."
+          "answer": "Ja – varje hytt ansluts till ett vanligt 230 V-uttag för belysning, ventilation och uttagen vid bordet (Schuko plus USB-C PD 60 W). Solo Flex förbrukar cirka 80 W i drift. Solo ECO har ett landsspecifikt uttag med USB-A och USB-C (enbart uttag på den danska versionen) och förbrukar 22 W i drift."
         },
         "q3": {
           "question": "Hur ventileras en avskild hytt?",
@@ -4134,7 +4148,7 @@
         },
         "q5": {
           "question": "Vad är leveranstiden och garantin för en telefonhytt?",
-          "answer": "Solo Flex och Duo levereras 4–6 veckor efter beställning, Modular XL 6–8 veckor för basenheten; specialtyger lägger till 2–3 veckor. Garantin på stommen är 5 år, på elektroniken 2 år, med leverans och installation i hela EU."
+          "answer": "Solo ECO har 4 veckors produktionstid och 5 års reservdelsgaranti. Solo Flex och Duo levereras 4–6 veckor efter beställning, Modular XL 6–8 veckor för basenheten; specialtyger lägger till 2–3 veckor. Garantin på stommen är 5 år, på elektroniken 2 år, med leverans och installation i hela EU."
         }
       }
     }
@@ -4206,13 +4220,13 @@
   },
   "boothGuide": {
     "title": "Telefonhytt för kontor: priser & ISO-klasser 2026 | Re-Sound",
-    "description": "Vad kostar en telefonhytt? Solo Flex från {soloFlex} exkl. moms, Modular XL från {modularXl}. ISO 23351-1-klasser, ventilation, montering och garanti.",
+    "description": "Telefonhyttpriser exkl. moms: Solo ECO från {soloEco}, Solo Flex från {soloFlex}, Modular XL från {modularXl}. ISO 23351-1, montering, leveranstid, garanti.",
     "h1": "Telefonhytter för kontor: priser, klasser och hur ni väljer",
-    "intro": "En akustisk telefonhytt från Re-Sound kostar från {soloFlex} exkl. moms utan montering (Solo Flex) och ett Modular XL-mötesbås från {modularXl}. Nedan hittar ni alla priser vi publicerar, vad som ingår, ISO 23351-1-klasserna för talnivå ärligt redovisade samt hur montering, provsittning och garanti fungerar. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen).",
+    "intro": "En akustisk telefonhytt från Re-Sound kostar från {soloEco} exkl. moms utan montering (Solo ECO), Solo Flex från {soloFlex} och ett Modular XL-mötesbås från {modularXl}. Nedan hittar ni alla priser vi publicerar, vad som ingår, ISO 23351-1-klasserna för talnivå ärligt redovisade samt hur montering, provsittning och garanti fungerar. Re-Sound är ett varumärke inom Stretch Group. Vi tillverkar i våra egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen).",
     "breadcrumb": "Priser på telefonhytter",
     "priceTag": "PRISER 2026",
     "priceTitle": "Priser per modell (exkl. moms)",
-    "priceNote": "Priserna är exklusive moms och, utanför Belgien, transport. Montering av vårt eget team är valfritt; Solo Flex kan även monteras av två personer på under tre timmar.",
+    "priceNote": "Priserna är exklusive moms, transport och montering (fritt fabrik). Montering av vårt eget team är valfritt; Solo Flex kan även monteras av två personer på under tre timmar.",
     "col": {
       "model": "Modell",
       "capacity": "Kapacitet",
@@ -4236,7 +4250,7 @@
     "warrantyValue": "5 år stomme · 2 år elektronik",
     "includedTag": "DET NI FÅR",
     "includedTitle": "Vad som ingår i priset",
-    "includedText": "Varje hytt levereras som en komplett, ventilerad enhet: stomme med dörr, dimbar LED-belysning, el vid arbetsbordet (230 V och USB-C på Solo Flex) samt, på Solo Flex, det manuellt höj- och sänkbara bordet. Ventilationen sker med tysta EC-fläktar; Solo Flex flyttar 4,6 m³/min och dess PIR-sensor slår på fläktarna när någon befinner sig i hytten.",
+    "includedText": "Varje hytt levereras som en komplett, ventilerad enhet: stomme med dörr och el vid arbetsbordet. Solo ECO: ett fast ståbord, ett landsspecifikt uttag med USB-A och USB-C (enbart uttag i Danmark) och ventilation upp till 4 m³/min. Solo Flex: dimbar LED-belysning, 230 V och USB-C, det manuellt höj- och sänkbara bordet och tysta EC-fläktar som flyttar 4,6 m³/min, med en PIR-sensor som slår på fläktarna när någon befinner sig i hytten.",
     "installationTag": "MONTERING",
     "installationTitle": "Montering av Re-Sound eller egen montering",
     "installationText": "Våra montörer ställer upp en telefonhytt på cirka 60 minuter, ett mötesbås på cirka 2 timmar och en Modular XL på 2 till 6 timmar. Solo Flex kan även monteras av två personer på under tre timmar: hytten är en platt-packad konstruktion och kan därför demonteras och byggas upp igen på ett annat våningsplan senare.",
@@ -4272,10 +4286,14 @@
     "assembly": {
       "solo-flex": "Cirka 60 minuter av våra montörer, eller två personer på under 3 timmar",
       "duo": "Cirka 2 timmar av våra montörer",
-      "modular-xl": "2 till 6 timmar av våra montörer"
+      "modular-xl": "2 till 6 timmar av våra montörer",
+      "solo-eco": "På begäran"
     },
-    "classesNote": "Tröskelvärden: den lägsta dämpningen av talnivå per klass. Duo har ännu inte mätts.",
-    "endOfLifeTag": "CIRKULÄR"
+    "classesNote": "Tröskelvärden: den lägsta dämpningen av talnivå per klass. Solo ECO och Duo har ännu inget publicerat värde.",
+    "endOfLifeTag": "CIRKULÄR",
+    "warrantyByModel": {
+      "solo-eco": "5 års reservdelsgaranti"
+    }
   },
   "order": {
     "cta": "Beställ online",
@@ -4419,6 +4437,130 @@
       "nextSteps": "Frågor om beställningen? Svara på detta e-postmeddelande eller ring +32 3 284 68 18. Re-Sound är ett varumärke inom Stretch Group; er beställning skickas från vår fabrik i Częstochowa (Polen).",
       "model": "Modell",
       "segments": "Segment"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "TELEFONHYTT FÖR KONTOR · 1 PERSON · INSTEGSMODELL",
+      "title": "Solo ECO: telefonhytten för en person, i sin enklaste form",
+      "tagline": "Det väsentliga för ett ostört samtal, till seriens lägsta pris.",
+      "description": "Solo ECO är instegsmodellen i Re-Sounds hyttsortiment: en akustisk hytt för en person med ståbord, ett landsspecifikt 230 V-uttag (med USB-A och USB-C på alla utom den danska versionen), ventilation och en sluten bakvägg eller bakvägg i glas. Samma fabrik och samma femåriga reservdelsgaranti som Solo Flex, med färre val att göra.",
+      "statFootprint": "Fotavtryck",
+      "statWeight": "Nettovikt",
+      "statWarranty": "Garanti"
+    },
+    "overview": {
+      "tag": "EN HYTT, EN PERSON, EN FÄRGSÄTTNING",
+      "title": "Tystnad, utan det överflödiga.",
+      "description": "Solo ECO behåller det ett telefonsamtal behöver och utelämnar det som inte behövs. Hytten står på 1,1 m², levereras i vitt med beige filt invändigt och kommer komplett på en pall: stomme, dörr, ståbord, uttag och ventilation. Välj den slutna bakväggen för mest avskildhet eller bakväggen i glas för att behålla utsikten.",
+      "feature1": "1,1 m² fotavtryck: 105 × 108 cm utvändigt, 208 cm hög",
+      "feature2": "Ståbord på 95 × 30 cm i 105 cm höjd",
+      "feature3": "230 V-uttag i ert lands format, plus USB-A och USB-C (enbart uttag i Danmark)",
+      "feature4": "Ventilation upp till 4 m³/min; 22 W i drift, 2 W i standby"
+    },
+    "features": {
+      "tag": "STANDARD",
+      "title": "Vad som är standard, och varför det spelar roll.",
+      "ventilation": {
+        "title": "Ventilation",
+        "desc": "Upp till 4 m³/min frisk luft för en person. Hytten drar 22 W i drift och 2 W i standby."
+      },
+      "electrics": {
+        "title": "Ström och USB",
+        "desc": "Ett 230 V-uttag i leveranslandets format (typ E, F, G, J eller K) med USB-A och USB-C. Den danska versionen har enbart uttaget."
+      },
+      "glass": {
+        "title": "Akustikglas",
+        "desc": "8 mm emaljerat akustikglas; den valfria bakväggen i glas använder samma glas."
+      },
+      "table": {
+        "title": "Ståbord",
+        "desc": "Ett fast ståbord på 95 × 30 cm i 105 cm höjd: plats för en laptop och ett anteckningsblock."
+      },
+      "interior": {
+        "title": "Invändig filt",
+        "desc": "Beige akustisk filt invändigt, vitt RAL 9016 utvändigt. Dörren är vänsterhängd."
+      },
+      "warranty": {
+        "title": "Fem års garanti",
+        "desc": "Fem års reservdelsgaranti, byggd i vår egen fabrik i Częstochowa. Produktionen tar fyra veckor."
+      }
+    },
+    "specs": {
+      "tag": "TEKNIK",
+      "title": "Specifikationer",
+      "dimensionsTitle": "Dimensioner",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Ståbord",
+      "tableValue": "950 × 300 mm, 1050 mm högt",
+      "weightValue": "280 kg netto · 330 kg brutto",
+      "packagingLabel": "Förpackning",
+      "packagingValue": "1 enhet per pall, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "Upp till 4 m³/min",
+      "electricsTitle": "Elektricitet",
+      "powerValue": "1 × 230 V-uttag, typ E, F, G, J eller K beroende på land",
+      "usbValue": "1 × USB-A · 1 × USB-C (inte på typ K-versionen)",
+      "consumptionValue": "2 W standby · 22 W i drift",
+      "materialsTitle": "Material och finish",
+      "glassValue": "8 mm emaljerat akustikglas",
+      "interiorValue": "Beige akustisk filt",
+      "exteriorLabel": "Utsida",
+      "exteriorValue": "Vit RAL 9016",
+      "backWallLabel": "Bakvägg",
+      "backWallValue": "Sluten (standard) eller glas",
+      "doorLabel": "Dörr",
+      "doorValue": "Vänsterhängd (DIN vänster)",
+      "warrantyTitle": "Garanti & leverans",
+      "sparePartsLabel": "Reservdelsgaranti",
+      "sparePartsValue": "5 år",
+      "deliveryValue": "4 veckors produktion, fritt fabrik Częstochowa",
+      "weightLabel": "Vikt (netto / brutto)"
+    },
+    "addons": {
+      "tag": "TILLVAL",
+      "title": "Två tillval, prissatta i beställningsdialogen",
+      "description": "Solo ECO levereras komplett. Dessa två tillval finns i prislistan för 2026 och kan läggas till när ni beställer online.",
+      "stool": {
+        "title": "Pall",
+        "desc": "En pall till ståbordet, beställd tillsammans med hytten."
+      },
+      "glassBackWall": {
+        "title": "Bakvägg i glas",
+        "desc": "Ersätter den slutna bakväggen med samma 8 mm emaljerade akustikglas. Den är upptagen som en separat basartikel, så priset visas så snart ni väljer den."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Vad är leveranstiden för Solo ECO?",
+          "answer": "Produktionen tar fyra veckor från bekräftad order. Transport offereras separat; hytten skickas från vår fabrik i Częstochowa på en pall om 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "Vad är skillnaden mellan Solo ECO och Solo Flex?",
+          "answer": "Solo Flex har ett höj- och sänkbart bord, 10 mm laminerat akustikglas, ventilation upp till 4,6 m³/min och valfri utvändig färg, filtfärg och dörrhängning. Solo ECO har ett fast ståbord, 8 mm emaljerat akustikglas, ventilation upp till 4 m³/min, en enda färgsättning och en vänsterhängd dörr, till ett lägre pris. Båda har samma femåriga reservdelsgaranti."
+        },
+        "backWall": {
+          "question": "Sluten bakvägg eller bakvägg i glas?",
+          "answer": "Standardutförandet av Solo ECO har en sluten bakvägg. Bakväggen i glas ersätter den med samma 8 mm emaljerade akustikglas och prissätts som en separat basartikel i beställningsdialogen."
+        },
+        "power": {
+          "question": "Vilket uttag levereras hytten med?",
+          "answer": "Ett 230 V-uttag i leveranslandets format: typ E för Belgien och Frankrike, typ F för Tyskland, Österrike, Nederländerna och Luxemburg, typ J för Schweiz, typ G för Storbritannien och typ K för Danmark. Alla utom den danska versionen har dessutom en USB-A- och en USB-C-port."
+        },
+        "ventilation": {
+          "question": "Hur ventileras Solo ECO?",
+          "answer": "Fläktsystemet flyttar upp till 4 m³/min luft, tillräckligt för en person i ett samtal. I drift drar hytten 22 W; i standby 2 W."
+        },
+        "warranty": {
+          "question": "Vad täcker garantin?",
+          "answer": "Fem års reservdelsgaranti på hytten, från fabrik. Be oss om de fullständiga villkoren innan ni beställer."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Fritt fabrik, 4 veckors produktion · Leverans och montering offereras på begäran · 5 års reservdelsgaranti"
     }
   }
 }

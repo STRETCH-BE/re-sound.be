@@ -11,7 +11,7 @@ import Image from 'next/image';
 /**
  * Shared template for the Re-Sound soundbooth product pages.
  *
- * Each booth (Solo Flex, Duo, Modular XL) sets a translation namespace,
+ * Each booth (Solo ECO, Solo Flex, Duo, Modular XL) sets a translation namespace,
  * a slug, and per-product options (e.g. configurations for Duo). The shared
  * layout — hero -> nav -> overview -> acoustics -> use cases -> specs ->
  * add-ons -> downloads -> FAQ -> other models -> CTA — comes from this
@@ -79,6 +79,8 @@ export interface SoundboothProductPageProps extends BoothSlots {
   addons: BoothAddon[];
   /** Optional list of configurations (Duo only) */
   configurations?: BoothConfiguration[];
+  /** Acoustics section (dB figure). Off for a model without a published ISO 23351-1 figure. Default true. */
+  showAcoustics?: boolean;
   /** Show the modular growth visualiser (Modular XL only) */
   showGrowthDiagram?: boolean;
 }
@@ -94,6 +96,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     features,
     addons,
     configurations,
+    showAcoustics = true,
     showGrowthDiagram,
     specs,
     downloads,
@@ -118,12 +121,12 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
 
   const navItems = [
     { id: 'overview',  label: tShared('nav.overview') },
-    { id: 'acoustics', label: tShared('nav.acoustics') },
+    ...(showAcoustics ? [{ id: 'acoustics', label: tShared('nav.acoustics') }] : []),
     ...(configurations ? [{ id: 'configurations', label: tShared('nav.configurations') }] : []),
     ...(showGrowthDiagram ? [{ id: 'modular', label: tShared('nav.modular') }] : []),
     { id: 'features',  label: tShared('nav.features') },
     { id: 'specs',     label: tShared('nav.specs') },
-    { id: 'addons',    label: tShared('nav.addons') },
+    ...(addons.length > 0 ? [{ id: 'addons', label: tShared('nav.addons') }] : []),
     { id: 'downloads', label: tShared('nav.downloads') },
   ];
 
@@ -251,6 +254,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
       </section>
 
       {/* ========== ACOUSTICS ========== */}
+      {showAcoustics && (
       <section id="acoustics" className="content-section acoustics-section dark">
         <div className="acoustics-header">
           <span className="section-tag light">{t('acoustics.tag')}</span>
@@ -286,6 +290,8 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           </div>
         </div>
       </section>
+
+      )}
 
       {/* ========== CONFIGURATIONS (Duo only) ========== */}
       {configurations && (
@@ -429,6 +435,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
       {specs}
 
       {/* ========== ADD-ONS ========== */}
+      {addons.length > 0 && (
       <section id="addons" className="content-section addons-section">
         <div className="addons-header">
           <span className="section-tag">{t('addons.tag')}</span>
@@ -454,6 +461,8 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           ))}
         </div>
       </section>
+
+      )}
 
       {/* ========== DOWNLOADS / FAQ / OTHER MODELS (server-rendered slots) ========== */}
       {downloads}
@@ -481,7 +490,8 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
               {tShared('cta.callUs')}
             </a>
           </div>
-          <p className="cta-note">{tShared('cta.deliveryNote')}</p>
+          {/* A model may word its own note (Solo ECO: ex works, spare-part warranty); else the shared one. */}
+          <p className="cta-note">{t.has('cta.deliveryNote') ? t('cta.deliveryNote') : tShared('cta.deliveryNote')}</p>
         </div>
       </section>
 

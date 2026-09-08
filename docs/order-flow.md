@@ -10,7 +10,7 @@ confirms by e-mail with the transport cost.
 
 ## What a buyer sees
 
-1. **Order online** on the product page (Solo Flex, Duo, Modular XL, Interior,
+1. **Order online** on the product page (Solo ECO, Solo Flex, Duo, Modular XL, Interior,
    Divide). Products without a confirmed price keep "Request a quote".
 2. **Step 1 — Options.** Quantity plus the options for that product. Prices
    that Re-Sound has confirmed are added to a running total; options without a
@@ -97,7 +97,7 @@ number from the multi-choice ones such as accessories and fire protection).
 `validateSelection()` (`src/lib/catalogue/select.ts`) checks it against the
 catalogue: unknown product or article, an article of another product, a
 duplicate, a missing or doubled required category, a product without a page
-(Solo ECO, Solo Stand, Modular 4) or a quantity outside 1..`max_qty` all answer
+(Solo Stand, Modular 4) or a quantity outside 1..`max_qty` all answer
 `400 invalid_product`. Nothing is clamped or dropped silently: a tampered
 selection is refused, not repaired.
 

@@ -43,7 +43,9 @@
     "partnerTitle": "Partnerprogramma · trade- en dealerprogramma",
     "partnerDescription": "Re-Sound partnerprogramma voor architecten, ontwerpers, dealers en distributeurs in Europa: specificatiedocumentatie, regiobescherming, directe support.",
     "whereToBuyTitle": "Waar je Re-Sound kan zien en kopen",
-    "whereToBuyDescription": "Zie Re-Sound in het echt in onze showroom in Beveren-Waas, vraag een gratis stalenpakket aan, boek een videotour of regel een demo in de Benelux."
+    "whereToBuyDescription": "Zie Re-Sound in het echt in onze showroom in Beveren-Waas, vraag een gratis stalenpakket aan, boek een videotour of regel een demo in de Benelux.",
+    "soloEcoTitle": "Solo ECO — belcabine voor 1 persoon, instapmodel | Re-Sound",
+    "soloEcoDescription": "Belcabine voor één persoon, instapmodel: 1,1 m² voetafdruk, statafel, 230 V-stopcontact met USB, ventilatie tot 4 m³/min, gesloten of glazen achterwand."
   },
   "nav": {
     "products": "Producten",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Schaalbare akoestische vergaderpod. Basis voor 6 personen, uitbreidbaar tot 10 met modulaire segmenten van 90 cm. 25,9 dB(A) spraakreductie."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Belcabine voor één persoon, instapmodel: 1,1 m² voetafdruk, statafel, landspecifiek stopcontact met USB, gesloten of glazen achterwand."
     }
   },
   "specs": {
@@ -3132,6 +3138,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Schaalbare vergaderpod"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Eenpersoonscabine, instapmodel"
       }
     },
     "growthDiagramLabel": "Diagram van modulaire uitbreiding"
@@ -3961,6 +3971,10 @@
       "perfMicroS": "Micro S (⌀ 1.0mm)",
       "perfMicroM": "Micro M (⌀ 1.5mm)",
       "perfMicroL": "Micro L (⌀ 2.0mm)"
+    },
+    "solo-eco": {
+      "mounting": "Vrijstaand; installatie door Re-Sound op aanvraag",
+      "leadTime": "4 weken productie"
     }
   },
   "hubs": {
@@ -4102,11 +4116,11 @@
     },
     "booths": {
       "title": "Akoestische belcabines & telefooncellen voor kantoor | Re-Sound",
-      "description": "Belcabines en vergaderpods: Solo Flex (1 pers.), Duo (2 pers.), Modular XL (6–10). ISO 23351-1 spraakreductie, stille ventilatie, 230 V, USB-C.",
+      "description": "Belcabines en vergaderpods: Solo ECO en Solo Flex (1 pers.), Duo (2), Modular XL (6–10). ISO 23351-1 spraakreductie op Flex en XL, 230 V.",
       "h1": "Belcabines en vergaderpods voor kantoor, uit eigen productie",
       "breadcrumb": "Cabines",
-      "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoorvloer; een vergaderpod doet hetzelfde voor een team. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen). Het cabinegamma telt drie formaten. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische telefooncel voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Alle cabines hebben 5 jaar structurele garantie en worden in de hele EU geleverd, op verzoek inclusief installatie. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
-      "whyCertsDesc": "5 jaar structurele garantie en 2 jaar garantie op de elektronica voor elke cabine; spraakniveaureductie opgegeven volgens ISO 23351-1.",
+      "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoorvloer; een vergaderpod doet hetzelfde voor een team. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen). Het cabinegamma telt vier modellen. Solo ECO is het instapmodel: een cabine voor één persoon met een statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact), ventilatie tot 4 m³/min en een gesloten of glazen achterwand. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische telefooncel voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Solo Flex, Duo en Modular XL hebben 5 jaar structurele garantie en Solo ECO 5 jaar garantie op wisselstukken; alle modellen worden in de hele EU geleverd, met installatie op aanvraag. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
+      "whyCertsDesc": "5 jaar garantie op elke cabine (structureel voor Solo Flex, Duo en Modular XL; op wisselstukken voor Solo ECO); spraakniveaureductie opgegeven volgens ISO 23351-1 waar gemeten.",
       "applications": {
         "app1": "Open kantoren en coworkingvloeren",
         "app2": "Bel- en videovergaderingen in agile werkplekken",
@@ -4122,7 +4136,7 @@
         },
         "q2": {
           "question": "Hebben akoestische telefooncellen een stroomaansluiting nodig?",
-          "answer": "Ja — elke cabine wordt aangesloten op een standaard 230 V-stopcontact voor de verlichting, de ventilatie en de stopcontacten in het bureau (Schuko plus USB-C PD 60 W). Solo Flex verbruikt in gebruik ongeveer 80 W."
+          "answer": "Ja — elke cabine wordt aangesloten op een standaard 230 V-stopcontact voor de verlichting, de ventilatie en de stopcontacten in het bureau (Schuko plus USB-C PD 60 W). Solo Flex verbruikt in gebruik ongeveer 80 W. Solo ECO heeft één landspecifiek stopcontact met USB-A en USB-C (op de Deense versie enkel het stopcontact) en verbruikt in gebruik 22 W."
         },
         "q3": {
           "question": "Hoe wordt een privacypod geventileerd?",
@@ -4134,7 +4148,7 @@
         },
         "q5": {
           "question": "Wat zijn de levertermijn en de garantie van een belcabine?",
-          "answer": "Solo Flex en Duo worden 4–6 weken na bestelling verzonden, Modular XL 6–8 weken voor de basisunit; maatwerkstoffen vragen 2–3 weken extra. De structurele garantie bedraagt 5 jaar, de elektronica 2 jaar, met levering en installatie in de hele EU beschikbaar."
+          "answer": "Solo ECO vraagt 4 weken productie en heeft 5 jaar garantie op wisselstukken. Solo Flex en Duo worden 4–6 weken na bestelling verzonden, Modular XL 6–8 weken voor de basisunit; maatwerkstoffen vragen 2–3 weken extra. De structurele garantie bedraagt 5 jaar, de elektronica 2 jaar, met levering en installatie in de hele EU beschikbaar."
         }
       }
     }
@@ -4206,13 +4220,13 @@
   },
   "boothGuide": {
     "title": "Belcabine kantoor: prijzen en ISO-klassen 2026 | Re-Sound",
-    "description": "Wat kost een belcabine? Prijzen van Solo Flex, Duo en Modular XL, ISO 23351-1 klassen, ventilatie, levertijd en plaatsing. Fabrikant uit België.",
+    "description": "Prijzen belcabines excl. btw: Solo ECO vanaf {soloEco}, Solo Flex vanaf {soloFlex}, Modular XL vanaf {modularXl}. ISO 23351-1, installatie, levertijd, garantie.",
     "h1": "Belcabines voor kantoor: prijzen, klassen en keuze",
-    "intro": "Een Re-Sound belcabine kost vanaf {soloFlex} excl. btw zonder installatie (Solo Flex) en een Modular XL vergaderpod vanaf {modularXl}. Hieronder vindt u elke prijs die wij publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken. Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
+    "intro": "Een Re-Sound belcabine kost vanaf {soloEco} excl. btw zonder installatie (Solo ECO), Solo Flex vanaf {soloFlex} en een Modular XL vergaderpod vanaf {modularXl}. Hieronder vindt u elke prijs die wij publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken. Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
     "breadcrumb": "Prijzen belcabines",
     "priceTag": "Prijzen 2026",
     "priceTitle": "Prijzen per model (excl. btw)",
-    "priceNote": "Prijzen zijn excl. btw en, buiten België, excl. transport. Installatie door ons eigen team is optioneel; Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd.",
+    "priceNote": "Prijzen zijn excl. btw, transport en installatie (af fabriek). Installatie door ons eigen team is optioneel; Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd.",
     "col": {
       "model": "Model",
       "capacity": "Capaciteit",
@@ -4236,7 +4250,7 @@
     "warrantyValue": "5 jaar constructie · 2 jaar elektronica",
     "includedTag": "Wat u krijgt",
     "includedTitle": "Wat in de prijs inbegrepen is",
-    "includedText": "Elke cabine wordt geleverd als een complete, geventileerde eenheid: behuizing met deur, dimbare ledverlichting, stroom aan het bureau (230 V en USB-C op Solo Flex) en, op Solo Flex, het handmatig verstelbare zit-stabureau. De ventilatie werkt met stille EC-ventilatoren; Solo Flex verplaatst 4,6 m³/min en de PIR-sensor schakelt de ventilatoren in zodra iemand binnen is.",
+    "includedText": "Elke cabine wordt geleverd als een complete, geventileerde eenheid: behuizing met deur en stroom aan het bureau. Solo ECO: een vaste statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact) en ventilatie tot 4 m³/min. Solo Flex: dimbare ledverlichting, 230 V en USB-C, het handmatig verstelbare zit-stabureau en stille EC-ventilatoren die 4,6 m³/min verplaatsen, met een PIR-sensor die de ventilatoren inschakelt zodra iemand binnen is.",
     "installationTag": "Installatie",
     "installationTitle": "Installatie door Re-Sound of zelfmontage",
     "installationText": "Onze installateurs plaatsen een belcabine in ongeveer 60 minuten, een vergaderpod in ongeveer 2 uur en een Modular XL in 2 tot 6 uur. Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd: de cabine is een demontabele flat-packconstructie, zodat ze later kan worden gedemonteerd en op een andere verdieping opnieuw kan worden opgebouwd.",
@@ -4272,10 +4286,14 @@
     "assembly": {
       "solo-flex": "Ongeveer 60 minuten door onze installateurs, of door twee personen in minder dan 3 uur",
       "duo": "Ongeveer 2 uur door onze installateurs",
-      "modular-xl": "2 tot 6 uur door onze installateurs"
+      "modular-xl": "2 tot 6 uur door onze installateurs",
+      "solo-eco": "Op aanvraag"
     },
-    "classesNote": "Drempelwaarden: de minimale spraakniveaureductie per klasse. Duo is nog niet gemeten.",
-    "endOfLifeTag": "Circulair"
+    "classesNote": "Drempelwaarden: de minimale spraakniveaureductie per klasse. Voor Solo ECO en Duo is nog geen cijfer gepubliceerd.",
+    "endOfLifeTag": "Circulair",
+    "warrantyByModel": {
+      "solo-eco": "5 jaar garantie op wisselstukken"
+    }
   },
   "order": {
     "cta": "Online bestellen",
@@ -4419,6 +4437,130 @@
       "nextSteps": "Vragen over deze bestelling? Beantwoord deze e-mail of bel +32 3 284 68 18. Re-Sound is een merk van Stretch Group; uw bestelling vertrekt uit onze fabriek in Częstochowa (Polen).",
       "model": "Model",
       "segments": "Segmenten"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "BELCABINE · 1 PERSOON · INSTAPMODEL",
+      "title": "Solo ECO: de belcabine voor één persoon, eenvoudig gehouden",
+      "tagline": "De essentie van een rustig gesprek, tegen de laagste prijs in het gamma.",
+      "description": "Solo ECO is het instapmodel van het Re-Sound cabinegamma: een akoestische cabine voor één persoon met een statafel, een landspecifiek 230 V-stopcontact (met USB-A en USB-C op alle versies behalve de Deense), ventilatie en een gesloten of glazen achterwand. Dezelfde fabriek en dezelfde garantie van vijf jaar op wisselstukken als Solo Flex, maar met minder keuzes die u hoeft te maken.",
+      "statFootprint": "Voetafdruk",
+      "statWeight": "Netto gewicht",
+      "statWarranty": "Garantie"
+    },
+    "overview": {
+      "tag": "ÉÉN CABINE, ÉÉN PERSOON, ÉÉN KLEURENCOMBINATIE",
+      "title": "Stilte, zonder de extra's.",
+      "description": "Solo ECO behoudt wat een telefoongesprek nodig heeft en laat weg wat niet nodig is. De cabine staat op 1,1 m², is wit met een beige vilten interieur en wordt compleet geleverd op één pallet: behuizing, deur, statafel, stopcontact en ventilatie. Kies de gesloten achterwand voor maximale privacy of de glazen achterwand om het zicht te behouden.",
+      "feature1": "1,1 m² voetafdruk: 105 × 108 cm buitenmaat, 208 cm hoog",
+      "feature2": "Statafel van 95 × 30 cm op 105 cm hoogte",
+      "feature3": "230 V-stopcontact in het formaat van uw land, plus USB-A en USB-C (in Denemarken enkel het stopcontact)",
+      "feature4": "Ventilatie tot 4 m³/min; 22 W in gebruik, 2 W in stand-by"
+    },
+    "features": {
+      "tag": "STANDAARD INBEGREPEN",
+      "title": "Wat standaard is, en waarom dat telt.",
+      "ventilation": {
+        "title": "Ventilatie",
+        "desc": "Tot 4 m³/min verse lucht voor één persoon. De cabine verbruikt 22 W in gebruik en 2 W in stand-by."
+      },
+      "electrics": {
+        "title": "Stroom en USB",
+        "desc": "Eén 230 V-stopcontact in het formaat van het land van levering (type E, F, G, J of K) met USB-A en USB-C. De Deense versie heeft enkel het stopcontact."
+      },
+      "glass": {
+        "title": "Akoestisch glas",
+        "desc": "8 mm geëmailleerd akoestisch glas; de optionele glazen achterwand gebruikt hetzelfde glas."
+      },
+      "table": {
+        "title": "Statafel",
+        "desc": "Een vaste statafel van 95 × 30 cm op 105 cm hoogte: plaats voor een laptop en een notitieblok."
+      },
+      "interior": {
+        "title": "Vilten interieur",
+        "desc": "Beige akoestisch vilt binnenin, wit RAL 9016 buiten. De deur scharniert links."
+      },
+      "warranty": {
+        "title": "Vijf jaar garantie",
+        "desc": "Vijf jaar garantie op wisselstukken, gebouwd in onze eigen fabriek in Częstochowa. De productie duurt vier weken."
+      }
+    },
+    "specs": {
+      "tag": "TECHNISCH",
+      "title": "Specificaties",
+      "dimensionsTitle": "Afmetingen",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Statafel",
+      "tableValue": "950 × 300 mm, 1050 mm hoog",
+      "weightValue": "280 kg netto · 330 kg bruto",
+      "packagingLabel": "Verpakking",
+      "packagingValue": "1 stuk per pallet, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Ventilatie",
+      "airflowValue": "Tot 4 m³/min",
+      "electricsTitle": "Elektriciteit",
+      "powerValue": "1 × 230 V-stopcontact, type E, F, G, J of K volgens land",
+      "usbValue": "1 × USB-A · 1 × USB-C (niet op de type K-versie)",
+      "consumptionValue": "2 W stand-by · 22 W in gebruik",
+      "materialsTitle": "Materialen en afwerking",
+      "glassValue": "8 mm geëmailleerd akoestisch glas",
+      "interiorValue": "Beige akoestisch vilt",
+      "exteriorLabel": "Buitenzijde",
+      "exteriorValue": "Wit RAL 9016",
+      "backWallLabel": "Achterwand",
+      "backWallValue": "Gesloten (standaard) of glas",
+      "doorLabel": "Deur",
+      "doorValue": "Linksdraaiend (DIN links)",
+      "warrantyTitle": "Garantie & levering",
+      "sparePartsLabel": "Garantie op wisselstukken",
+      "sparePartsValue": "5 jaar",
+      "deliveryValue": "4 weken productie, af fabriek Częstochowa",
+      "weightLabel": "Gewicht (netto / bruto)"
+    },
+    "addons": {
+      "tag": "OPTIONEEL",
+      "title": "Twee opties, geprijsd in het bestelvenster",
+      "description": "Solo ECO wordt compleet geleverd. Deze twee opties staan op de prijslijst 2026 en kunnen worden toegevoegd wanneer u online bestelt.",
+      "stool": {
+        "title": "Kruk",
+        "desc": "Een kruk voor de statafel, die u samen met de cabine bestelt."
+      },
+      "glassBackWall": {
+        "title": "Glazen achterwand",
+        "desc": "Vervangt de gesloten achterwand door hetzelfde 8 mm geëmailleerde akoestische glas. De glazen achterwand staat als apart basisartikel in de lijst, zodat de prijs verschijnt zodra u die selecteert."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wat is de levertijd van Solo ECO?",
+          "answer": "De productie duurt vier weken vanaf de bevestigde bestelling. Transport wordt apart geoffreerd; de cabine vertrekt uit onze fabriek in Częstochowa op één pallet van 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "Wat is het verschil tussen Solo ECO en Solo Flex?",
+          "answer": "Solo Flex heeft een zit-stabureau, 10 mm gelaagd akoestisch glas, ventilatie tot 4,6 m³/min en keuze uit buitenkleur, viltkleur en draairichting van de deur. Solo ECO heeft een vaste statafel, 8 mm geëmailleerd akoestisch glas, ventilatie tot 4 m³/min, één kleurencombinatie en een linksdraaiende deur, tegen een lagere prijs. Beide hebben dezelfde garantie van vijf jaar op wisselstukken."
+        },
+        "backWall": {
+          "question": "Gesloten of glazen achterwand?",
+          "answer": "De standaard Solo ECO heeft een gesloten achterwand. De glazen achterwand vervangt die door hetzelfde 8 mm geëmailleerde akoestische glas en wordt in het bestelvenster als apart basisartikel geprijsd."
+        },
+        "power": {
+          "question": "Met welk stopcontact wordt de cabine geleverd?",
+          "answer": "Eén 230 V-stopcontact in het formaat van het land van levering: type E voor België en Frankrijk, type F voor Duitsland, Oostenrijk, Nederland en Luxemburg, type J voor Zwitserland, type G voor het Verenigd Koninkrijk en type K voor Denemarken. Alle versies behalve de Deense hebben daarnaast een USB-A- en een USB-C-poort."
+        },
+        "ventilation": {
+          "question": "Hoe wordt Solo ECO geventileerd?",
+          "answer": "Het ventilatiesysteem verplaatst tot 4 m³/min lucht, genoeg voor één persoon in gesprek. In gebruik verbruikt de cabine 22 W; in stand-by 2 W."
+        },
+        "warranty": {
+          "question": "Wat dekt de garantie?",
+          "answer": "Vijf jaar garantie op wisselstukken voor de cabine, af fabriek. Vraag ons de volledige voorwaarden voordat u bestelt."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Af fabriek, 4 weken productie · Levering en installatie op aanvraag geoffreerd · 5 jaar garantie op wisselstukken"
     }
   }
 }

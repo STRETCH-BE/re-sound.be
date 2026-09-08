@@ -136,6 +136,15 @@ const products = [
   },
   // ============ Re-Sound soundbooth range ============
   {
+    slug: 'solo-eco',
+    image: '/images/products/solo-eco/solo-eco_card.jpg',
+    tags: {
+      use: ['booth'],
+      finish: [],
+      type: [],
+    },
+  },
+  {
     slug: 'solo-flex',
     image: '/images/products/solo-flex/solo-flex_card.jpg',
     tags: {

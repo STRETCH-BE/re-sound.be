@@ -43,7 +43,9 @@
     "partnerTitle": "Samstarfsáætlun · trade- og söluaðiláætlun",
     "partnerDescription": "Samstarfsáætlun Re-Sound fyrir arkitekta, hönnuði, söluaðila og dreifingaraðila um alla Evrópu: útboðsgögn, svæðisvernd, bein aðstoð.",
     "whereToBuyTitle": "Hvar þú sérð og kaupir Re-Sound",
-    "whereToBuyDescription": "Sjáðu Re-Sound í sýningarsal okkar í Beveren-Waas, fáðu ókeypis sýnishornasett, bókaðu myndskoðun í beinni eða kynningu á staðnum hvar sem er í Benelux."
+    "whereToBuyDescription": "Sjáðu Re-Sound í sýningarsal okkar í Beveren-Waas, fáðu ókeypis sýnishornasett, bókaðu myndskoðun í beinni eða kynningu á staðnum hvar sem er í Benelux.",
+    "soloEcoTitle": "Solo ECO – símaklefi fyrir einn, grunngerð | Re-Sound",
+    "soloEcoDescription": "Símaklefi fyrir einn, grunngerð: 1,1 m² gólfflötur, standborð, 230 V tengill með USB, loftræsting allt að 4 m³/mín, lokaður bakveggur eða úr gleri."
   },
   "nav": {
     "products": "Vörur",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Stækkanlegur hljóðeinangraður fundarklefi. Grunnurinn rúmar 6, stækkanlegur í 10 með 90 cm einingum. 25,9 dB(A) taldeyfing."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Símaklefi fyrir einn á skrifstofuna, grunngerð: 1,1 m² gólfflötur, standborð, tengill að hætti hvers lands með USB, lokaður bakveggur eða úr gleri."
     }
   },
   "specs": {
@@ -3132,6 +3138,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Skalanlegur fundarklefi"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Einmannsklefi, grunngerð"
       }
     },
     "growthDiagramLabel": "Skýringarmynd af einingaskiptri stækkun"
@@ -3961,6 +3971,10 @@
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
       "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    },
+    "solo-eco": {
+      "mounting": "Frístandandi; uppsetning af Re-Sound eftir beiðni",
+      "leadTime": "4 vikna framleiðslutími"
     }
   },
   "hubs": {
@@ -4102,11 +4116,11 @@
     },
     "booths": {
       "title": "Hljóðeinangraðir símaklefar – Solo, Duo, Modular XL | Re-Sound",
-      "description": "Símaklefar og fundarklefar: Solo Flex (1 manns), Duo (2), Modular XL (6–10). Talminnkun skv. ISO 23351-1, hljóðlaus loftræsting, 230 V, USB-C.",
+      "description": "Símaklefar og fundarklefar: Solo ECO og Solo Flex (1 manns), Duo (2), Modular XL (6–10). Talminnkun skv. ISO 23351-1 á Flex og XL, 230 V.",
       "h1": "Símaklefar og fundarklefar fyrir skrifstofur úr eigin verksmiðjum",
       "breadcrumb": "Klefar",
-      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Re-Sound er vörumerki Stretch Group. Við framleiðum í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). Klefalínan er í þremur stærðum. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Öllum klefum fylgir 5 ára ábyrgð á burðarvirki og þeir eru afhentir um allt ESB, með uppsetningu sé þess óskað. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
-      "whyCertsDesc": "5 ára ábyrgð á burðarvirki og 2 ára ábyrgð á rafbúnaði á öllum klefum; lækkun talstyrks gefin upp samkvæmt ISO 23351-1.",
+      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Re-Sound er vörumerki Stretch Group. Við framleiðum í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). Klefalínan telur fjórar gerðir. Solo ECO er grunngerðin: eins manns klefi með standborði, tengli að hætti hvers lands með USB-A og USB-C (aðeins tengill fyrir Danmörku), loftræstingu allt að 4 m³/mín og lokuðum bakvegg eða bakvegg úr gleri. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Solo Flex, Duo og Modular XL fylgir 5 ára ábyrgð á burðarvirki og Solo ECO 5 ára varahlutaábyrgð; allir eru afhentir um allt ESB, með uppsetningu í boði sé þess óskað. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
+      "whyCertsDesc": "5 ára ábyrgð á öllum klefum (á burðarvirki á Solo Flex, Duo og Modular XL; varahlutaábyrgð á Solo ECO); lækkun talstyrks gefin upp samkvæmt ISO 23351-1 þar sem hún hefur verið mæld.",
       "applications": {
         "app1": "Opin skrifstofurými og samvinnurými",
         "app2": "Símtöl og myndfundir á sveigjanlegum vinnustöðum",
@@ -4122,7 +4136,7 @@
         },
         "q2": {
           "question": "Þurfa hljóðeinangraðir símaklefar rafmagnstengingu?",
-          "answer": "Já — hver klefi er tengdur við venjulega 230 V innstungu fyrir lýsingu, loftræstingu og tengla í borðinu (Schuko auk USB-C PD 60 W). Solo Flex notar um 80 W í notkun."
+          "answer": "Já — hver klefi er tengdur við venjulega 230 V innstungu fyrir lýsingu, loftræstingu og tengla í borðinu (Schuko auk USB-C PD 60 W). Solo Flex notar um 80 W í notkun. Solo ECO er með einn tengil að hætti hvers lands með USB-A og USB-C (aðeins tengill á dönsku útgáfunni) og notar 22 W í notkun."
         },
         "q3": {
           "question": "Hvernig er næðisklefi loftræstur?",
@@ -4134,7 +4148,7 @@
         },
         "q5": {
           "question": "Hver er afhendingartíminn og ábyrgðin á símaklefa?",
-          "answer": "Solo Flex og Duo eru afhentir 4–6 vikum frá pöntun, grunneining Modular XL á 6–8 vikum; sérvalin áklæði bæta við 2–3 vikum. Ábyrgð á burðarvirki er 5 ár og á rafbúnaði 2 ár, með afhendingu og uppsetningu um allt ESB."
+          "answer": "Solo ECO tekur 4 vikur í framleiðslu og er með 5 ára varahlutaábyrgð. Solo Flex og Duo eru afhentir 4–6 vikum frá pöntun, grunneining Modular XL á 6–8 vikum; sérvalin áklæði bæta við 2–3 vikum. Ábyrgð á burðarvirki er 5 ár og á rafbúnaði 2 ár, með afhendingu og uppsetningu um allt ESB."
         }
       }
     }
@@ -4206,13 +4220,13 @@
   },
   "boothGuide": {
     "title": "Skrifstofusímaklefar: verð og ISO-flokkar 2026 | Re-Sound",
-    "description": "Hvað kostar símaklefi? Solo Flex frá {soloFlex} án vsk., Modular XL frá {modularXl}. ISO-flokkar, loftræsting, uppsetning, afhending og ábyrgð frá framleiðanda.",
+    "description": "Hvað kostar símaklefi? Solo ECO frá {soloEco}, Solo Flex frá {soloFlex} án vsk., Modular XL frá {modularXl}. ISO-flokkar, uppsetning, afhending og ábyrgð.",
     "h1": "Símaklefar fyrir skrifstofur: verð, flokkar og hvernig á að velja",
-    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá {soloFlex} án vsk. án uppsetningar (Solo Flex) og Modular XL fundarklefi frá {modularXl}. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
+    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá {soloEco} án vsk. án uppsetningar (Solo ECO), Solo Flex frá {soloFlex} og Modular XL fundarklefi frá {modularXl}. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
     "breadcrumb": "Verð á símaklefum",
     "priceTag": "Verð 2026",
     "priceTitle": "Verð eftir gerð (án vsk.)",
-    "priceNote": "Verð eru án vsk. og, utan Belgíu, án flutnings. Uppsetning af okkar eigin teymi er valkvæð; Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum.",
+    "priceNote": "Verð eru án vsk., flutnings og uppsetningar (frá verksmiðju). Uppsetning af okkar eigin teymi er valkvæð; Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum.",
     "col": {
       "model": "Gerð",
       "capacity": "Fjöldi",
@@ -4236,7 +4250,7 @@
     "warrantyValue": "5 ár á burðarvirki · 2 ár á rafbúnaði",
     "includedTag": "Það sem fylgir",
     "includedTitle": "Hvað er innifalið í verðinu",
-    "includedText": "Hver klefi er afhentur sem fullbúin, loftræst eining: skel með hurð, deyfanleg LED-lýsing, rafmagn við borðið (230 V og USB-C á Solo Flex) og, á Solo Flex, handstillanlegt sitjandi/standandi borð. Loftræstingin notar hljóðlátar EC-viftur; Solo Flex flytur 4,6 m³/min og PIR-skynjari hans kveikir á viftunum þegar einhver er inni.",
+    "includedText": "Hver klefi er afhentur sem fullbúin, loftræst eining: skel með hurð og rafmagn við borðið. Solo ECO: fast standborð, tengill að hætti hvers lands með USB-A og USB-C (aðeins tengill í Danmörku) og loftræsting allt að 4 m³/mín. Solo Flex: deyfanleg LED-lýsing, 230 V og USB-C, handstillanlegt sitjandi/standandi borð og hljóðlátar EC-viftur sem flytja 4,6 m³/mín, með PIR-skynjara sem kveikir á viftunum þegar einhver er inni.",
     "installationTag": "Uppsetning",
     "installationTitle": "Uppsetning af Re-Sound eða eigin samsetning",
     "installationText": "Uppsetningarteymið okkar setur upp símaklefa á um 60 mínútum, fundarklefa á um 2 klukkustundum og Modular XL á 2 til 6 klukkustundum. Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum: klefinn er flatpökkuð smíði og því má taka hann í sundur og setja upp aftur á annarri hæð síðar.",
@@ -4272,10 +4286,14 @@
     "assembly": {
       "solo-flex": "Um 60 mínútur með uppsetningarteymi okkar, eða tveir einstaklingar á innan við 3 klst.",
       "duo": "Um 2 klst. með uppsetningarteymi okkar",
-      "modular-xl": "2 til 6 klst. með uppsetningarteymi okkar"
+      "modular-xl": "2 til 6 klst. með uppsetningarteymi okkar",
+      "solo-eco": "Eftir beiðni"
     },
-    "classesNote": "Viðmiðunarmörk: lágmarkslækkun talhljóðs fyrir hvern flokk. Duo hefur ekki enn verið mældur.",
-    "endOfLifeTag": "Hringrás"
+    "classesNote": "Viðmiðunarmörk: lágmarkslækkun talhljóðs fyrir hvern flokk. Fyrir Solo ECO og Duo liggur enn engin birt tala fyrir.",
+    "endOfLifeTag": "Hringrás",
+    "warrantyByModel": {
+      "solo-eco": "5 ára varahlutaábyrgð"
+    }
   },
   "order": {
     "cta": "Panta á netinu",
@@ -4419,6 +4437,130 @@
       "nextSteps": "Spurningar um þessa pöntun? Svaraðu þessum tölvupósti eða hringdu í +32 3 284 68 18. Re-Sound er vörumerki Stretch Group; pöntunin þín er send frá verksmiðju okkar í Częstochowa (Póllandi).",
       "model": "Gerð",
       "segments": "Einingar"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "SÍMAKLEFI FYRIR SKRIFSTOFUR · 1 MANNS · GRUNNGERÐ",
+      "title": "Solo ECO: símaklefinn fyrir einn, einfaldur í sniðum",
+      "tagline": "Allt sem þarf fyrir rólegt símtal, á lægsta verðinu í línunni.",
+      "description": "Solo ECO er grunngerðin í klefalínu Re-Sound: hljóðeinangraður klefi fyrir einn með standborði, 230 V tengli að hætti hvers lands (með USB-A og USB-C á öllum útgáfum nema þeirri dönsku), loftræstingu og lokuðum bakvegg eða bakvegg úr gleri. Sama verksmiðja og sama fimm ára varahlutaábyrgð og á Solo Flex, en færri ákvarðanir að taka.",
+      "statFootprint": "Fótspor",
+      "statWeight": "Nettóþyngd",
+      "statWarranty": "Ábyrgð"
+    },
+    "overview": {
+      "tag": "EINN KLEFI, EINN MAÐUR, EIN LITASAMSETNING",
+      "title": "Kyrrð, án aukahluta.",
+      "description": "Solo ECO heldur því sem símtal þarf og sleppir hinu. Klefinn stendur á 1,1 m², kemur hvítur með beislituðu filti að innan og er afhentur fullbúinn á einu bretti: skel, hurð, standborð, tengill og loftræsting. Veldu lokaðan bakvegg fyrir mest næði eða bakvegg úr gleri til að halda útsýninu.",
+      "feature1": "1,1 m² fótspor: 105 × 108 cm að utan, 208 cm á hæð",
+      "feature2": "Standborð, 95 × 30 cm í 105 cm hæð",
+      "feature3": "230 V tengill í sniði þíns lands, auk USB-A og USB-C (aðeins tengill í Danmörku)",
+      "feature4": "Loftræsting allt að 4 m³/mín; 22 W í notkun, 2 W í biðstöðu"
+    },
+    "features": {
+      "tag": "STAÐALBÚNAÐUR",
+      "title": "Hvað er staðalbúnaður og hvers vegna skiptir það máli.",
+      "ventilation": {
+        "title": "Loftræsting",
+        "desc": "Allt að 4 m³/mín af fersku lofti fyrir einn. Klefinn notar 22 W í notkun og 2 W í biðstöðu."
+      },
+      "electrics": {
+        "title": "Rafmagn og USB",
+        "desc": "Einn 230 V tengill í sniði afhendingarlandsins (gerð E, F, G, J eða K) með USB-A og USB-C. Danska útgáfan er aðeins með tengil."
+      },
+      "glass": {
+        "title": "Hljóðeinangrandi gler",
+        "desc": "8 mm emalerað hljóðeinangrandi gler; valfrjálsi bakveggurinn úr gleri notar sama gler."
+      },
+      "table": {
+        "title": "Standborð",
+        "desc": "Fast standborð, 95 × 30 cm í 105 cm hæð: pláss fyrir fartölvu og glósubók."
+      },
+      "interior": {
+        "title": "Filt að innan",
+        "desc": "Beislitað hljóðfilt að innan, hvítt RAL 9016 að utan. Hurðin er hengd vinstra megin."
+      },
+      "warranty": {
+        "title": "Fimm ára ábyrgð",
+        "desc": "Fimm ára varahlutaábyrgð, smíðað í okkar eigin verksmiðju í Częstochowa. Framleiðslan tekur fjórar vikur."
+      }
+    },
+    "specs": {
+      "tag": "TÆKNI",
+      "title": "Tækniupplýsingar",
+      "dimensionsTitle": "Mál",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Standborð",
+      "tableValue": "950 × 300 mm, 1050 mm á hæð",
+      "weightValue": "280 kg nettó · 330 kg brúttó",
+      "packagingLabel": "Umbúðir",
+      "packagingValue": "1 eining á bretti, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Loftræsting",
+      "airflowValue": "Allt að 4 m³/mín",
+      "electricsTitle": "Rafmagn",
+      "powerValue": "1 × 230 V tengill, gerð E, F, G, J eða K eftir landi",
+      "usbValue": "1 × USB-A · 1 × USB-C (ekki á útgáfu af gerð K)",
+      "consumptionValue": "2 W í biðstöðu · 22 W í notkun",
+      "materialsTitle": "Efni og áferð",
+      "glassValue": "8 mm emalerað hljóðeinangrandi gler",
+      "interiorValue": "Beislitað hljóðfilt",
+      "exteriorLabel": "Að utan",
+      "exteriorValue": "Hvítt RAL 9016",
+      "backWallLabel": "Bakveggur",
+      "backWallValue": "Lokaður (staðlað) eða úr gleri",
+      "doorLabel": "Hurð",
+      "doorValue": "Hengd vinstra megin (DIN vinstri)",
+      "warrantyTitle": "Ábyrgð og afhending",
+      "sparePartsLabel": "Varahlutaábyrgð",
+      "sparePartsValue": "5 ár",
+      "deliveryValue": "4 vikna framleiðslutími, frá verksmiðju í Częstochowa",
+      "weightLabel": "Þyngd (nettó / brúttó)"
+    },
+    "addons": {
+      "tag": "VALKVÆMT",
+      "title": "Tveir valkostir, verðlagðir í pöntunarglugganum",
+      "description": "Solo ECO er afhentur fullbúinn. Þessir tveir valkostir eru á verðlista 2026 og þeim má bæta við þegar þú pantar á netinu.",
+      "stool": {
+        "title": "Kollur",
+        "desc": "Kollur við standborðið, pantaður með klefanum."
+      },
+      "glassBackWall": {
+        "title": "Bakveggur úr gleri",
+        "desc": "Kemur í stað lokaða bakveggjarins með sama 8 mm emaleraða hljóðeinangrandi glerinu. Hann er skráður sem sérstök grunnvara, svo verðið birtist um leið og þú velur hann."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hver er afhendingartími Solo ECO?",
+          "answer": "Framleiðslan tekur fjórar vikur frá staðfestri pöntun. Flutningur er verðlagður sérstaklega; klefinn er sendur frá verksmiðju okkar í Częstochowa á einu bretti, 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "Hver er munurinn á Solo ECO og Solo Flex?",
+          "answer": "Solo Flex er með sit-stand skrifborð, 10 mm lagskipt hljóðeinangrandi gler, loftræstingu allt að 4,6 m³/mín og val um ytri lit, filtlit og hurðarhengingu. Solo ECO er með fast standborð, 8 mm emalerað hljóðeinangrandi gler, loftræstingu allt að 4 m³/mín, eina litasamsetningu og hurð hengda vinstra megin, á lægra verði. Báðum fylgir sama fimm ára varahlutaábyrgðin."
+        },
+        "backWall": {
+          "question": "Lokaður bakveggur eða úr gleri?",
+          "answer": "Staðlaður Solo ECO er með lokaðan bakvegg. Bakveggurinn úr gleri kemur í hans stað með sama 8 mm emaleraða hljóðeinangrandi glerinu og er verðlagður sem sérstök grunnvara í pöntunarglugganum."
+        },
+        "power": {
+          "question": "Hvaða tengill fylgir klefanum?",
+          "answer": "Einn 230 V tengill í sniði afhendingarlandsins: gerð E fyrir Belgíu og Frakkland, gerð F fyrir Þýskaland, Austurríki, Holland og Lúxemborg, gerð J fyrir Sviss, gerð G fyrir Bretland og gerð K fyrir Danmörku. Allar útgáfur nema sú danska bæta við USB-A og USB-C tengi."
+        },
+        "ventilation": {
+          "question": "Hvernig er Solo ECO loftræstur?",
+          "answer": "Viftukerfið flytur allt að 4 m³/mín af lofti, nóg fyrir einn í símtali. Í notkun notar klefinn 22 W; í biðstöðu 2 W."
+        },
+        "warranty": {
+          "question": "Hvað nær ábyrgðin yfir?",
+          "answer": "Fimm ára varahlutaábyrgð á klefanum, frá verksmiðju. Biddu okkur um full skilyrði áður en þú pantar."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Frá verksmiðju, 4 vikna framleiðslutími · Afhending og uppsetning verðlögð eftir beiðni · 5 ára varahlutaábyrgð"
     }
   }
 }

@@ -63,6 +63,7 @@ const PRODUCTS: Record<string, ProductMeta> = {
   'rpet-groove':      { name: 'rPET Groove',      category: 'Grooved recycled-PET panels',           spec: spec('12 colors', '3 thicknesses', 'B-s1,d0', origin('rpet-groove')), family: 'rpet' },
   'rpet-flex-groove': { name: 'rPET Flex Groove', category: 'Flexible recycled-PET panels',          spec: spec('Bendable', 'OEKO-TEX', origin('rpet-flex-groove')),       family: 'rpet'    },
   // ---- Re-Sound phone booth range ----
+  'solo-eco':         { name: 'Solo ECO',         category: 'Entry-level one-person office phone booth', spec: 'Standing table / 1.1 m² / 5yr warranty',     family: 'booth'   },
   'solo-flex':        { name: 'Solo Flex',        category: 'One-person office phone booth',         spec: '24 dB(A) reduction / 1 m² / 5yr warranty',    family: 'booth'   },
   'duo':              { name: 'Duo',              category: 'Two-person office phone booth',         spec: 'Flex + Work modes / 2 m² / 5yr warranty',     family: 'booth'   },
   'modular-xl':       { name: 'Modular XL',       category: 'Scalable acoustic meeting pod',         spec: '25.9 dB(A) / Up to 10 people / Modular',      family: 'booth'   },

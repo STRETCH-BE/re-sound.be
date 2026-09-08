@@ -104,7 +104,7 @@ const MESSAGES = Object.fromEntries(SITE_LOCALES.map((l) => {
 
 /** Model sheets → product ids, with the page each model is sold from. */
 const MODELS = [
-  { sheet: 'Solo ECO Stand', id: 'solo-eco', code: 'SE', websiteSlug: null },
+  { sheet: 'Solo ECO Stand', id: 'solo-eco', code: 'SE', websiteSlug: 'solo-eco' },
   { sheet: 'Solo Flex', id: 'solo-flex', code: 'SF', websiteSlug: 'solo-flex' },
   { sheet: 'Solo Stand', id: 'solo-stand', code: 'SS', websiteSlug: null },
   { sheet: 'Duo Work', id: 'duo-work', code: 'DW', websiteSlug: 'duo' },

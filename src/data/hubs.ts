@@ -67,9 +67,9 @@ export const HUBS: Record<HubId, Hub> = {
       fr: 'cabines-acoustiques',
       de: 'telefonboxen',
     },
-    models: ['solo-flex', 'duo', 'modular-xl'],
+    models: ['solo-eco', 'solo-flex', 'duo', 'modular-xl'],
     namespace: 'hubs.booths',
-    updatedAt: '2026-09-06',
+    updatedAt: '2026-09-08',
   },
 };
 

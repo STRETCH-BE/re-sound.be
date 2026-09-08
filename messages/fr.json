@@ -43,7 +43,9 @@
     "partnerTitle": "Programme partenaire · programme trade et revendeur",
     "partnerDescription": "Programme partenaire Re-Sound pour architectes, designers, revendeurs et distributeurs en Europe : documentation, protection régionale, support direct.",
     "whereToBuyTitle": "Où voir et acheter Re-Sound",
-    "whereToBuyDescription": "Découvrez Re-Sound dans notre showroom de Beveren-Waas, demandez un kit d’échantillons gratuit, réservez une visite vidéo ou une démo sur site au Benelux."
+    "whereToBuyDescription": "Découvrez Re-Sound dans notre showroom de Beveren-Waas, demandez un kit d’échantillons gratuit, réservez une visite vidéo ou une démo sur site au Benelux.",
+    "soloEcoTitle": "Solo ECO — cabine acoustique 1 personne, prix d'entrée | Re-Sound",
+    "soloEcoDescription": "Cabine acoustique une personne d'entrée de gamme : emprise 1,1 m², table haute, prise 230 V avec USB, ventilation 4 m³/min, paroi arrière fermée ou vitrée."
   },
   "nav": {
     "products": "Produits",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Pod de réunion acoustique modulable. La base accueille 6 personnes, extensible jusqu’à 10 par segments de 90 cm. Réduction de 25,9 dB(A)."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Cabine acoustique une personne d'entrée de gamme. Emprise 1,1 m², table haute, prise adaptée au pays avec USB, paroi arrière fermée ou vitrée."
     }
   },
   "specs": {
@@ -3132,6 +3138,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Pod de réunion modulable"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Cabine individuelle d'entrée de gamme"
       }
     },
     "growthDiagramLabel": "Schéma d'extension modulaire"
@@ -3961,6 +3971,10 @@
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
       "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    },
+    "solo-eco": {
+      "mounting": "Autoportante ; installation par Re-Sound sur demande",
+      "leadTime": "4 semaines de production"
     }
   },
   "hubs": {
@@ -4102,11 +4116,11 @@
     },
     "booths": {
       "title": "Cabines acoustiques & phone box de bureau | Re-Sound",
-      "description": "Cabines téléphoniques de bureau et pods de réunion : Solo Flex (1 p.), Duo (2 p.), Modular XL (6–10). ISO 23351-1, ventilation silencieuse, 230 V, USB-C.",
+      "description": "Cabines téléphoniques de bureau et pods de réunion : Solo ECO et Solo Flex (1 p.), Duo (2 p.), Modular XL (6–10). Réduction ISO 23351-1 sur Flex et XL, 230 V.",
       "h1": "Cabines téléphoniques et pods de réunion pour le bureau, fabriqués par nos soins",
       "breadcrumb": "Cabines",
-      "intro": "Une cabine téléphonique de bureau offre à une personne un espace calme et ventilé pour ses appels et ses visioconférences au sein d'un plateau ouvert ; un pod de réunion fait de même pour une équipe. Re-Sound est une marque de Stretch Group. Nous fabriquons dans nos propres usines de Beveren-Waas (Belgique) et de Częstochowa (Pologne). La gamme de cabines compte trois tailles. Solo Flex est la cabine téléphonique de bureau pour une personne : une emprise au sol de 1 m², un bureau assis-debout, une alimentation 230 V et USB-C, des ventilateurs EC silencieux et une réduction du niveau de parole de 24 dB(A) mesurée selon l'ISO 23351-1. Duo est la cabine acoustique pour deux personnes, avec deux configurations — Flex pour une conversation à deux places, Work pour une personne avec un bureau sur toute la largeur. Modular XL est le pod de réunion acoustique pour six à dix personnes : l'unité de base s'étend par segments de 90 cm et atteint une réduction du niveau de parole de 25,9 dB(A). Toutes les cabines bénéficient d'une garantie structurelle de 5 ans et sont livrées dans toute l'UE, installation comprise sur demande. Comparez ci-dessous les cabines téléphoniques de bureau, puis ouvrez la page d'un modèle pour les options et les téléchargements.",
-      "whyCertsDesc": "Garantie structurelle de 5 ans et garantie de 2 ans sur l'électronique pour chaque cabine ; réduction du niveau de parole indiquée selon l'ISO 23351-1.",
+      "intro": "Une cabine téléphonique de bureau offre à une personne un espace calme et ventilé pour ses appels et ses visioconférences au sein d'un plateau ouvert ; un pod de réunion fait de même pour une équipe. Re-Sound est une marque de Stretch Group. Nous fabriquons dans nos propres usines de Beveren-Waas (Belgique) et de Częstochowa (Pologne). La gamme de cabines compte quatre modèles. Solo ECO est le modèle d'entrée de gamme : une cabine pour une personne avec une table haute, une prise adaptée au pays avec USB-A et USB-C (prise seule au Danemark), une ventilation jusqu'à 4 m³/min et une paroi arrière fermée ou vitrée. Solo Flex est la cabine téléphonique de bureau pour une personne : une emprise au sol de 1 m², un bureau assis-debout, une alimentation 230 V et USB-C, des ventilateurs EC silencieux et une réduction du niveau de parole de 24 dB(A) mesurée selon l'ISO 23351-1. Duo est la cabine acoustique pour deux personnes, avec deux configurations — Flex pour une conversation à deux places, Work pour une personne avec un bureau sur toute la largeur. Modular XL est le pod de réunion acoustique pour six à dix personnes : l'unité de base s'étend par segments de 90 cm et atteint une réduction du niveau de parole de 25,9 dB(A). Solo Flex, Duo et Modular XL bénéficient d'une garantie structurelle de 5 ans et Solo ECO d'une garantie pièces de rechange de 5 ans ; toutes sont livrées dans l'ensemble de l'UE, installation possible sur demande. Comparez ci-dessous les cabines téléphoniques de bureau, puis ouvrez la page d'un modèle pour les options et les téléchargements.",
+      "whyCertsDesc": "Garantie de 5 ans sur chaque cabine (structurelle sur Solo Flex, Duo et Modular XL ; pièces de rechange sur Solo ECO) ; réduction du niveau de parole indiquée selon l'ISO 23351-1 lorsqu'elle a été mesurée.",
       "applications": {
         "app1": "Bureaux paysagers et espaces de coworking",
         "app2": "Appels et visioconférences dans les environnements de travail agiles",
@@ -4122,7 +4136,7 @@
         },
         "q2": {
           "question": "Les cabines acoustiques ont-elles besoin d'un raccordement électrique ?",
-          "answer": "Oui — chaque cabine se branche sur une prise standard 230 V pour l'éclairage, la ventilation et les prises du bureau (Schuko plus USB-C PD 60 W). Solo Flex consomme environ 80 W en utilisation."
+          "answer": "Oui — chaque cabine se branche sur une prise standard 230 V pour l'éclairage, la ventilation et les prises du bureau (Schuko plus USB-C PD 60 W). Solo Flex consomme environ 80 W en utilisation. Solo ECO dispose d'une prise adaptée au pays avec USB-A et USB-C (prise seule sur la version danoise) et consomme 22 W en utilisation."
         },
         "q3": {
           "question": "Comment un pod de confidentialité est-il ventilé ?",
@@ -4134,7 +4148,7 @@
         },
         "q5": {
           "question": "Quels sont le délai de livraison et la garantie d'une cabine téléphonique ?",
-          "answer": "Solo Flex et Duo sont expédiés 4 à 6 semaines après la commande, Modular XL 6 à 8 semaines pour l'unité de base ; les tissus personnalisés ajoutent 2 à 3 semaines. La garantie structurelle est de 5 ans, celle de l'électronique de 2 ans, avec livraison et installation possibles dans toute l'UE."
+          "answer": "Solo ECO demande 4 semaines de production et bénéficie d'une garantie pièces de rechange de 5 ans. Solo Flex et Duo sont expédiés 4 à 6 semaines après la commande, Modular XL 6 à 8 semaines pour l'unité de base ; les tissus personnalisés ajoutent 2 à 3 semaines. La garantie structurelle est de 5 ans, celle de l'électronique de 2 ans, avec livraison et installation possibles dans toute l'UE."
         }
       }
     }
@@ -4206,13 +4220,13 @@
   },
   "boothGuide": {
     "title": "Prix cabine téléphonique de bureau, classes ISO 2026 | Re-Sound",
-    "description": "Prix cabine téléphonique de bureau : Solo Flex dès {soloFlex} HT, Modular XL dès {modularXl}. Classes ISO 23351-1, ventilation, installation, délais et garantie.",
+    "description": "Prix cabine téléphonique de bureau : Solo ECO dès {soloEco}, Solo Flex dès {soloFlex} HT, Modular XL dès {modularXl}. ISO 23351-1, pose, délais, garantie.",
     "h1": "Cabines téléphoniques de bureau : prix, classes et comment choisir",
-    "intro": "Une cabine téléphonique de bureau Re-Sound coûte à partir de {soloFlex} HT hors installation (Solo Flex) et un pod de réunion Modular XL à partir de {modularXl}. Vous trouverez ci-dessous tous les prix que nous publions, ce qui est inclus, les classes de niveau de parole ISO 23351-1 présentées en toute transparence, et le fonctionnement de l'installation, des essais et de la garantie. Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne).",
+    "intro": "Une cabine téléphonique de bureau Re-Sound coûte à partir de {soloEco} HT hors installation (Solo ECO), Solo Flex à partir de {soloFlex} et un pod de réunion Modular XL à partir de {modularXl}. Vous trouverez ci-dessous tous les prix que nous publions, ce qui est inclus, les classes de niveau de parole ISO 23351-1 présentées en toute transparence, et le fonctionnement de l'installation, des essais et de la garantie. Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne).",
     "breadcrumb": "Prix des cabines téléphoniques",
     "priceTag": "Prix 2026",
     "priceTitle": "Prix par modèle (HT)",
-    "priceNote": "Les prix s'entendent hors TVA et, en dehors de la Belgique, hors transport. L'installation par notre propre équipe est optionnelle ; la Solo Flex peut aussi être montée par deux personnes en moins de trois heures.",
+    "priceNote": "Les prix s'entendent hors TVA, hors transport et hors installation (départ usine). L'installation par notre propre équipe est optionnelle ; la Solo Flex peut aussi être montée par deux personnes en moins de trois heures.",
     "col": {
       "model": "Modèle",
       "capacity": "Capacité",
@@ -4236,7 +4250,7 @@
     "warrantyValue": "5 ans structure · 2 ans électronique",
     "includedTag": "Ce que vous recevez",
     "includedTitle": "Ce qui est inclus dans le prix",
-    "includedText": "Chaque cabine est livrée comme une unité complète et ventilée : structure avec porte, éclairage LED à intensité variable, alimentation au plateau (230 V et USB-C sur la Solo Flex) et, sur la Solo Flex, le bureau assis-debout manuel. La ventilation repose sur des ventilateurs EC silencieux ; la Solo Flex brasse 4,6 m³/min et son capteur PIR enclenche les ventilateurs dès que quelqu'un est à l'intérieur.",
+    "includedText": "Chaque cabine est livrée comme une unité complète et ventilée : structure avec porte et alimentation au plateau. Solo ECO : une table haute fixe, une prise adaptée au pays avec USB-A et USB-C (prise seule au Danemark) et une ventilation jusqu'à 4 m³/min. Solo Flex : un éclairage LED à intensité variable, 230 V et USB-C, le bureau assis-debout manuel et des ventilateurs EC silencieux qui brassent 4,6 m³/min, avec un capteur PIR qui enclenche les ventilateurs dès que quelqu'un est à l'intérieur.",
     "installationTag": "Installation",
     "installationTitle": "Installation par Re-Sound ou montage par vos soins",
     "installationText": "Nos installateurs posent une cabine d'appel en 60 minutes environ, un pod de réunion en 2 heures environ et une Modular XL en 2 à 6 heures. La Solo Flex peut aussi être montée par deux personnes en moins de trois heures : la cabine est une construction en kit, qui peut donc être démontée et remontée plus tard à un autre étage.",
@@ -4272,10 +4286,14 @@
     "assembly": {
       "solo-flex": "Environ 60 minutes par nos installateurs, ou deux personnes en moins de 3 heures",
       "duo": "Environ 2 heures par nos installateurs",
-      "modular-xl": "2 à 6 heures par nos installateurs"
+      "modular-xl": "2 à 6 heures par nos installateurs",
+      "solo-eco": "Sur demande"
     },
-    "classesNote": "Seuils : la réduction minimale du niveau de parole par classe. La Duo n'a pas encore été mesurée.",
-    "endOfLifeTag": "Circulaire"
+    "classesNote": "Seuils : la réduction minimale du niveau de parole par classe. La Solo ECO et la Duo n'ont pas encore de valeur publiée.",
+    "endOfLifeTag": "Circulaire",
+    "warrantyByModel": {
+      "solo-eco": "5 ans de garantie pièces de rechange"
+    }
   },
   "order": {
     "cta": "Commander en ligne",
@@ -4419,6 +4437,130 @@
       "nextSteps": "Une question sur cette commande ? Répondez à cet e-mail ou appelez le +32 3 284 68 18. Re-Sound est une marque de Stretch Group ; votre commande est expédiée depuis notre usine de Częstochowa (Pologne).",
       "model": "Modèle",
       "segments": "Segments"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "CABINE ACOUSTIQUE · 1 PERSONNE · ENTRÉE DE GAMME",
+      "title": "Solo ECO : la cabine téléphonique pour une personne, réduite à l'essentiel",
+      "tagline": "L'essentiel d'un appel au calme, au prix le plus bas de la gamme.",
+      "description": "Solo ECO est le modèle d'entrée de gamme des cabines Re-Sound : une cabine acoustique mono-poste avec une table haute, une prise 230 V adaptée au pays de livraison (avec USB-A et USB-C, sauf sur la version danoise), une ventilation et une paroi arrière fermée ou vitrée. La même usine et la même garantie pièces de rechange de cinq ans que Solo Flex, avec moins de choix à faire.",
+      "statFootprint": "Emprise au sol",
+      "statWeight": "Poids net",
+      "statWarranty": "Garantie"
+    },
+    "overview": {
+      "tag": "UNE CABINE, UNE PERSONNE, UN SEUL COLORIS",
+      "title": "Le calme, sans les extras.",
+      "description": "Solo ECO garde ce dont un appel a besoin et laisse le reste de côté. La cabine occupe 1,1 m², existe en blanc avec un intérieur en feutre beige et est livrée complète sur une seule palette : coque, porte, table haute, prise et ventilation. Choisissez la paroi arrière fermée pour un maximum d'intimité ou la paroi arrière vitrée pour conserver la vue.",
+      "feature1": "Emprise au sol de 1,1 m² : 105 × 108 cm hors tout, 208 cm de hauteur",
+      "feature2": "Table haute de 95 × 30 cm à 105 cm de hauteur",
+      "feature3": "Prise 230 V au format de votre pays, plus USB-A et USB-C (prise seule au Danemark)",
+      "feature4": "Ventilation jusqu'à 4 m³/min ; 22 W en usage, 2 W en veille"
+    },
+    "features": {
+      "tag": "INTÉGRÉ",
+      "title": "Ce qui est de série, et pourquoi c'est important.",
+      "ventilation": {
+        "title": "Ventilation",
+        "desc": "Jusqu'à 4 m³/min d'air frais pour une personne. La cabine consomme 22 W en usage et 2 W en veille."
+      },
+      "electrics": {
+        "title": "Alimentation et USB",
+        "desc": "Une prise 230 V au format du pays de livraison (type E, F, G, J ou K) avec USB-A et USB-C. La version danoise comporte uniquement la prise."
+      },
+      "glass": {
+        "title": "Verre acoustique",
+        "desc": "Verre acoustique émaillé de 8 mm ; la paroi arrière vitrée, en option, utilise le même verre."
+      },
+      "table": {
+        "title": "Table haute",
+        "desc": "Une table haute fixe de 95 × 30 cm à 105 cm de hauteur : de la place pour un ordinateur portable et un carnet."
+      },
+      "interior": {
+        "title": "Intérieur en feutre",
+        "desc": "Feutre acoustique beige à l'intérieur, blanc RAL 9016 à l'extérieur. Les charnières de la porte sont à gauche."
+      },
+      "warranty": {
+        "title": "Garantie de cinq ans",
+        "desc": "Cinq ans de garantie pièces de rechange, pour une cabine fabriquée dans notre propre usine de Częstochowa. La production prend quatre semaines."
+      }
+    },
+    "specs": {
+      "tag": "TECHNIQUE",
+      "title": "Spécifications",
+      "dimensionsTitle": "Dimensions",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Table haute",
+      "tableValue": "950 × 300 mm, 1050 mm de hauteur",
+      "weightValue": "280 kg net · 330 kg brut",
+      "packagingLabel": "Emballage",
+      "packagingValue": "1 unité par palette, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "Jusqu'à 4 m³/min",
+      "electricsTitle": "Électricité",
+      "powerValue": "1 × prise 230 V, type E, F, G, J ou K selon le pays",
+      "usbValue": "1 × USB-A · 1 × USB-C (pas sur la version type K)",
+      "consumptionValue": "2 W en veille · 22 W en usage",
+      "materialsTitle": "Matériaux et finition",
+      "glassValue": "Verre acoustique émaillé 8 mm",
+      "interiorValue": "Feutre acoustique beige",
+      "exteriorLabel": "Extérieur",
+      "exteriorValue": "Blanc RAL 9016",
+      "backWallLabel": "Paroi arrière",
+      "backWallValue": "Fermée (standard) ou vitrée",
+      "doorLabel": "Porte",
+      "doorValue": "Charnières à gauche (DIN left)",
+      "warrantyTitle": "Garantie & livraison",
+      "sparePartsLabel": "Garantie pièces de rechange",
+      "sparePartsValue": "5 ans",
+      "deliveryValue": "4 semaines de production, départ usine Częstochowa",
+      "weightLabel": "Poids (net / brut)"
+    },
+    "addons": {
+      "tag": "EN OPTION",
+      "title": "Deux options, chiffrées dans le formulaire de commande",
+      "description": "Solo ECO est livrée complète. Ces deux options figurent sur la liste de prix 2026 et peuvent être ajoutées lors de votre commande en ligne.",
+      "stool": {
+        "title": "Tabouret",
+        "desc": "Un tabouret pour la table haute, à commander avec la cabine."
+      },
+      "glassBackWall": {
+        "title": "Paroi arrière vitrée",
+        "desc": "Remplace la paroi arrière fermée par le même verre acoustique émaillé de 8 mm. Elle est référencée comme article de base distinct : le prix s'affiche dès que vous la sélectionnez."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Quel est le délai de livraison de Solo ECO ?",
+          "answer": "La production prend quatre semaines à partir de la confirmation de commande. Le transport est chiffré séparément ; la cabine part de notre usine de Częstochowa sur une palette de 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "Quelle est la différence entre Solo ECO et Solo Flex ?",
+          "answer": "Solo Flex dispose d'un bureau assis-debout, d'un verre acoustique feuilleté de 10 mm, d'une ventilation jusqu'à 4,6 m³/min et d'un choix de couleur extérieure, de couleur de feutre et de sens d'ouverture de la porte. Solo ECO a une table haute fixe, un verre acoustique émaillé de 8 mm, une ventilation jusqu'à 4 m³/min, un seul coloris et une porte à charnières à gauche, pour un prix inférieur. Les deux bénéficient de la même garantie pièces de rechange de cinq ans."
+        },
+        "backWall": {
+          "question": "Paroi arrière fermée ou vitrée ?",
+          "answer": "La Solo ECO standard a une paroi arrière fermée. La paroi arrière vitrée la remplace par le même verre acoustique émaillé de 8 mm et est chiffrée comme article de base distinct dans le formulaire de commande."
+        },
+        "power": {
+          "question": "Avec quelle prise la cabine est-elle livrée ?",
+          "answer": "Une prise 230 V au format du pays de livraison : type E pour la Belgique et la France, type F pour l'Allemagne, l'Autriche, les Pays-Bas et le Luxembourg, type J pour la Suisse, type G pour le Royaume-Uni et type K pour le Danemark. Toutes les versions sauf la danoise ajoutent un port USB-A et un port USB-C."
+        },
+        "ventilation": {
+          "question": "Comment Solo ECO est-elle ventilée ?",
+          "answer": "Le système de ventilation déplace jusqu'à 4 m³/min d'air, suffisant pour une personne en appel. En usage, la cabine consomme 22 W ; en veille, 2 W."
+        },
+        "warranty": {
+          "question": "Que couvre la garantie ?",
+          "answer": "Cinq ans de garantie pièces de rechange sur la cabine, départ usine. Demandez-nous les conditions complètes avant de commander."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Départ usine, 4 semaines de production · Livraison et installation chiffrées sur demande · Garantie pièces de rechange de 5 ans"
     }
   }
 }

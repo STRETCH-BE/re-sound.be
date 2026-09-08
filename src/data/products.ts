@@ -356,6 +356,27 @@ export const PRODUCTS: Record<string, Product> = {
   },
 
   // ───────────── Booths ─────────────
+  'solo-eco': {
+    slug: 'solo-eco',
+    family: 'booth',
+    name: 'Solo ECO',
+    madeIn: 'PL', // Products_Data / order VAT rules: booths ship from Częstochowa (the price list itself names no plant)
+    recycledContentPct: null,
+    material: 'Acoustic felt lining, 8 mm enamelled acoustic glass', // price list 2026 tech sheet
+    certifications: [],
+    fromPrice: null, // prices live in the catalogue
+    priceUnit: PER_BOOTH,
+    // Placeholders: the Solo Flex photos until Re-Sound supplies ECO photography (docs/needs-michael.md)
+    heroImage: '/images/products/solo-eco/hero-solo-eco.webp',
+    cardImage: '/images/products/solo-eco/solo-eco_card.webp',
+    documents: boothDocs('solo-eco'),
+    // Price list 2026 tech sheet. No ISO 23351-1 figure is published for this model — TODO(needs-Michael)
+    specs: { kind: 'booth', capacity: '1', footprint: '1.1 m²', externalDimensions: '1050 × 1080 × 2080 mm', speechLevelReductionDbA: null, ventilation: 'up to 4 m³/min', power: '1 × 230 V (type by country), USB-A + USB-C except DK', weight: '280 kg' },
+    faqKeys: ['leadTime', 'difference', 'backWall', 'power', 'ventilation', 'warranty'],
+    namespace: 'soloEcoPage',
+    metaKey: 'soloEco',
+    updatedAt: '2026-09-08',
+  },
   'solo-flex': {
     slug: 'solo-flex',
     family: 'booth',
@@ -423,7 +444,7 @@ export const FAMILY_PRODUCTS: Record<ProductFamily, string[]> = {
   textile: ['interior', 'solid', 'divide'],
   rwood: ['rwood-groove', 'rwood-micro', 'rwood-perf', 'rwood-veneer'],
   rpet: ['rpet-panel', 'rpet-groove', 'rpet-flex-groove'],
-  booth: ['solo-flex', 'duo', 'modular-xl'],
+  booth: ['solo-eco', 'solo-flex', 'duo', 'modular-xl'],
 };
 
 export function getProduct(slug: string): Product {

@@ -43,7 +43,9 @@
     "partnerTitle": "Partnerprogram · trade- og forhandlerprogram",
     "partnerDescription": "Re-Sound partnerprogram for arkitekter, designere, forhandlere og distributører i Europa: specifikationsmateriale, regional beskyttelse, direkte support.",
     "whereToBuyTitle": "Hvor du kan se og købe Re-Sound",
-    "whereToBuyDescription": "Oplev Re-Sound i vores showroom i Beveren-Waas, bestil et gratis prøvesæt, book en live videorundvisning eller aftal en demo på stedet i hele Benelux."
+    "whereToBuyDescription": "Oplev Re-Sound i vores showroom i Beveren-Waas, bestil et gratis prøvesæt, book en live videorundvisning eller aftal en demo på stedet i hele Benelux.",
+    "soloEcoTitle": "Solo ECO — telefonboks til 1 person, indstigningsmodel | Re-Sound",
+    "soloEcoDescription": "Kontortelefonboks til én person, indstigningsmodel: 1,1 m² fodaftryk, ståbord, 230 V-stikkontakt med USB, ventilation op til 4 m³/min, lukket bagvæg eller glas."
   },
   "nav": {
     "products": "Produkter",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Skalerbar akustisk mødeboks. Basen rummer 6 personer og kan udvides til 10 med modulære 90 cm-segmenter. 25,9 dB(A) talereduktion."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Telefonboks til kontoret til én person, indstigningsmodel: 1,1 m² fodaftryk, ståbord, landespecifik stikkontakt med USB, lukket bagvæg eller bagvæg i glas."
     }
   },
   "specs": {
@@ -3132,6 +3138,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Skalerbar mødepod"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Énmandsbås, indstigningsmodel"
       }
     },
     "growthDiagramLabel": "Diagram over modulær udvidelse"
@@ -3961,6 +3971,10 @@
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
       "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    },
+    "solo-eco": {
+      "mounting": "Fritstående; montering af Re-Sound efter forespørgsel",
+      "leadTime": "4 ugers produktion"
     }
   },
   "hubs": {
@@ -4102,11 +4116,11 @@
     },
     "booths": {
       "title": "Telefonbokse & mødebokse – Solo, Duo, Modular XL | Re-Sound",
-      "description": "Telefonbokse og mødebokse: Solo Flex (1 person), Duo (2 personer), Modular XL (6–10). ISO 23351-1 talereduktion, lydløs ventilation, 230 V, USB-C.",
+      "description": "Telefonbokse og mødebokse: Solo ECO og Solo Flex (1 person), Duo (2), Modular XL (6–10). ISO 23351-1 talereduktion på Flex og XL, 230 V.",
       "h1": "Telefonbokse og mødepods til kontoret fra egne fabrikker",
       "breadcrumb": "Bokse",
-      "intro": "En telefonboks til kontoret giver én person et roligt, ventileret sted til opkald og videomøder midt i et åbent kontorlandskab; en mødeboks gør det samme for et team. Re-Sound er et brand under Stretch Group. Vi producerer på vores egne fabrikker i Beveren-Waas (Belgien) og Częstochowa (Polen). Boksserien fås i tre størrelser. Solo Flex er telefonboksen til én person: et fodaftryk på 1 m², hæve-sænkebord, 230 V og USB-C-strøm, lydløse EC-ventilatorer og en talereduktion på 24 dB(A) målt i henhold til ISO 23351-1. Duo er den akustiske telefonboks til to personer med to konfigurationer – Flex til en samtale med to siddepladser, Work til én person med et bord i fuld bredde. Modular XL er den akustiske mødeboks til seks til ti personer: basisenheden forlænges i segmenter på 90 cm og når en talereduktion på 25,9 dB(A). Alle bokse leveres med 5 års garanti på konstruktionen og leveres i hele EU, montering inkluderet efter ønske. Sammenlign telefonboksene til kontoret nedenfor, og åbn derefter en modelside for tilbehør og downloads.",
-      "whyCertsDesc": "5 års garanti på konstruktionen og 2 års garanti på elektronikken på alle bokse; talereduktion angivet i henhold til ISO 23351-1.",
+      "intro": "En telefonboks til kontoret giver én person et roligt, ventileret sted til opkald og videomøder midt i et åbent kontorlandskab; en mødeboks gør det samme for et team. Re-Sound er et brand under Stretch Group. Vi producerer på vores egne fabrikker i Beveren-Waas (Belgien) og Częstochowa (Polen). Boksserien fås i fire modeller. Solo ECO er indstigningsmodellen: en boks til én person med ståbord, en landespecifik stikkontakt med USB-A og USB-C (kun stikkontakt i Danmark), ventilation op til 4 m³/min og en lukket bagvæg eller bagvæg i glas. Solo Flex er telefonboksen til én person: et fodaftryk på 1 m², hæve-sænkebord, 230 V og USB-C-strøm, lydløse EC-ventilatorer og en talereduktion på 24 dB(A) målt i henhold til ISO 23351-1. Duo er den akustiske telefonboks til to personer med to konfigurationer – Flex til en samtale med to siddepladser, Work til én person med et bord i fuld bredde. Modular XL er den akustiske mødeboks til seks til ti personer: basisenheden forlænges i segmenter på 90 cm og når en talereduktion på 25,9 dB(A). Solo Flex, Duo og Modular XL har 5 års garanti på konstruktionen og Solo ECO 5 års reservedelsgaranti; alle leveres i hele EU, og montering tilbydes efter forespørgsel. Sammenlign telefonboksene til kontoret nedenfor, og åbn derefter en modelside for tilbehør og downloads.",
+      "whyCertsDesc": "5 års garanti på alle bokse (konstruktionsgaranti på Solo Flex, Duo og Modular XL; reservedelsgaranti på Solo ECO); talereduktion angivet i henhold til ISO 23351-1, hvor den er målt.",
       "applications": {
         "app1": "Åbne kontorlandskaber og coworking-etager",
         "app2": "Opkald og videomøder på agile arbejdspladser",
@@ -4122,7 +4136,7 @@
         },
         "q2": {
           "question": "Kræver akustiske telefonbokse en strømtilslutning?",
-          "answer": "Ja – hver boks tilsluttes en almindelig 230 V-stikkontakt til belysning, ventilation og bordets udtag (Schuko samt USB-C PD 60 W). Solo Flex bruger ca. 80 W under brug."
+          "answer": "Ja – hver boks tilsluttes en almindelig 230 V-stikkontakt til belysning, ventilation og bordets udtag (Schuko samt USB-C PD 60 W). Solo Flex bruger ca. 80 W under brug. Solo ECO har én landespecifik stikkontakt med USB-A og USB-C (kun stikkontakt på den danske version) og bruger 22 W under brug."
         },
         "q3": {
           "question": "Hvordan ventileres en privacy pod?",
@@ -4134,7 +4148,7 @@
         },
         "q5": {
           "question": "Hvad er leveringstiden og garantien på en telefonboks?",
-          "answer": "Solo Flex og Duo afsendes 4–6 uger efter bestilling, Modular XL 6–8 uger for basisenheden; specialstoffer lægger 2–3 uger til. Garantien på konstruktionen er 5 år, på elektronikken 2 år, med levering og montering i hele EU."
+          "answer": "Solo ECO har en produktionstid på 4 uger og 5 års reservedelsgaranti. Solo Flex og Duo afsendes 4–6 uger efter bestilling, Modular XL 6–8 uger for basisenheden; specialstoffer lægger 2–3 uger til. Garantien på konstruktionen er 5 år, på elektronikken 2 år, med levering og montering i hele EU."
         }
       }
     }
@@ -4206,13 +4220,13 @@
   },
   "boothGuide": {
     "title": "Telefonboks til kontor: priser & ISO-klasser 2026 | Re-Sound",
-    "description": "Telefonboks til kontoret: Solo Flex fra {soloFlex} ekskl. moms, Modular XL fra {modularXl}. ISO 23351-1-klasser, ventilation, montering, leveringstid og garanti.",
+    "description": "Telefonbokspriser ekskl. moms: Solo ECO fra {soloEco}, Solo Flex fra {soloFlex}, Modular XL fra {modularXl}. ISO 23351-1, montering, leveringstid, garanti.",
     "h1": "Telefonbokse til kontoret: priser, klasser og valg",
-    "intro": "En akustisk telefonboks til kontoret fra Re-Sound koster fra {soloFlex} ekskl. moms uden montering (Solo Flex), og en Modular XL-mødeboks fra {modularXl}. Nedenfor finder du alle de priser, vi offentliggør, hvad der er inkluderet, ISO 23351-1-taleniveauklasserne angivet ærligt, og hvordan montering, test og garanti fungerer. Re-Sound er et brand fra Stretch Group. Vi producerer på vores egne fabrikker i Beveren-Waas (Belgien) og Częstochowa (Polen).",
+    "intro": "En akustisk telefonboks til kontoret fra Re-Sound koster fra {soloEco} ekskl. moms uden montering (Solo ECO), Solo Flex fra {soloFlex} og en Modular XL-mødeboks fra {modularXl}. Nedenfor finder du alle de priser, vi offentliggør, hvad der er inkluderet, ISO 23351-1-taleniveauklasserne angivet ærligt, og hvordan montering, test og garanti fungerer. Re-Sound er et brand fra Stretch Group. Vi producerer på vores egne fabrikker i Beveren-Waas (Belgien) og Częstochowa (Polen).",
     "breadcrumb": "Priser på telefonbokse",
     "priceTag": "Priser 2026",
     "priceTitle": "Priser pr. model (ekskl. moms)",
-    "priceNote": "Priserne er ekskl. moms og, uden for Belgien, transport. Montering udført af vores eget team er valgfri; Solo Flex kan også samles af to personer på under tre timer.",
+    "priceNote": "Priserne er ekskl. moms, transport og montering (ab fabrik). Montering udført af vores eget team er valgfri; Solo Flex kan også samles af to personer på under tre timer.",
     "col": {
       "model": "Model",
       "capacity": "Kapacitet",
@@ -4236,7 +4250,7 @@
     "warrantyValue": "5 år på konstruktionen · 2 år på elektronikken",
     "includedTag": "Det får du",
     "includedTitle": "Det er inkluderet i prisen",
-    "includedText": "Hver boks leveres som en komplet, ventileret enhed: kabine med dør, dæmpbar LED-belysning, strøm ved bordet (230 V og USB-C på Solo Flex) og, på Solo Flex, det manuelle hæve-sænkebord. Ventilationen bruger lydløse EC-ventilatorer; Solo Flex flytter 4,6 m³/min, og dens PIR-sensor tænder ventilatorerne, når der er nogen inde i boksen.",
+    "includedText": "Hver boks leveres som en komplet, ventileret enhed: kabine med dør og strøm ved bordet. Solo ECO: et fast ståbord, en landespecifik stikkontakt med USB-A og USB-C (kun stikkontakt i Danmark) og ventilation op til 4 m³/min. Solo Flex: dæmpbar LED-belysning, 230 V og USB-C, det manuelle hæve-sænkebord og lydløse EC-ventilatorer, der flytter 4,6 m³/min, med en PIR-sensor, der tænder ventilatorerne, når der er nogen inde i boksen.",
     "installationTag": "Montering",
     "installationTitle": "Montering af Re-Sound eller selvmontering",
     "installationText": "Vores montører opstiller en telefonboks på ca. 60 minutter, en mødeboks på ca. 2 timer og en Modular XL på 2 til 6 timer. Solo Flex kan også samles af to personer på under tre timer: boksen er en flatpack-konstruktion, så den senere kan skilles ad og genopbygges på en anden etage.",
@@ -4272,10 +4286,14 @@
     "assembly": {
       "solo-flex": "Ca. 60 minutter med vores montører, eller to personer på under 3 timer",
       "duo": "Ca. 2 timer med vores montører",
-      "modular-xl": "2 til 6 timer med vores montører"
+      "modular-xl": "2 til 6 timer med vores montører",
+      "solo-eco": "Efter forespørgsel"
     },
-    "classesNote": "Grænseværdier: den mindste reduktion af taleniveauet pr. klasse. Duo er endnu ikke målt.",
-    "endOfLifeTag": "Cirkulær"
+    "classesNote": "Grænseværdier: den mindste reduktion af taleniveauet pr. klasse. Solo ECO og Duo har endnu ingen offentliggjort måleværdi.",
+    "endOfLifeTag": "Cirkulær",
+    "warrantyByModel": {
+      "solo-eco": "5 års reservedelsgaranti"
+    }
   },
   "order": {
     "cta": "Bestil online",
@@ -4419,6 +4437,130 @@
       "nextSteps": "Spørgsmål til denne bestilling? Svar på denne e-mail, eller ring på +32 3 284 68 18. Re-Sound er et brand under Stretch Group; din bestilling sendes fra vores fabrik i Częstochowa (Polen).",
       "model": "Model",
       "segments": "Segmenter"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "TELEFONBOKS TIL KONTORET · 1 PERSON · INDSTIGNINGSMODEL",
+      "title": "Solo ECO: kontortelefonboksen til én person i sin enkleste form",
+      "tagline": "Det væsentlige for et roligt opkald, til seriens laveste pris.",
+      "description": "Solo ECO er indstigningsmodellen i Re-Sounds boksserie: en akustisk bås til én person med ståbord, en landespecifik 230 V-stikkontakt (med USB-A og USB-C på alle versioner undtagen den danske), ventilation og en lukket bagvæg eller bagvæg i glas. Samme fabrik og samme fem års reservedelsgaranti som Solo Flex, med færre valg at træffe.",
+      "statFootprint": "Fodaftryk",
+      "statWeight": "Nettovægt",
+      "statWarranty": "Garanti"
+    },
+    "overview": {
+      "tag": "ÉN BÅS, ÉN PERSON, ÉN FARVEKOMBINATION",
+      "title": "Stilhed, uden det overflødige.",
+      "description": "Solo ECO beholder det, et telefonopkald har brug for, og udelader det, det ikke har. Båsen står på 1,1 m², leveres i hvid med beige filt indvendigt og afsendes komplet på én palle: kabine, dør, ståbord, stikkontakt og ventilation. Vælg den lukkede bagvæg for mest privathed eller bagvæggen i glas for at bevare udsynet.",
+      "feature1": "1,1 m² fodaftryk: 105 × 108 cm udvendigt, 208 cm høj",
+      "feature2": "Ståbord på 95 × 30 cm i 105 cm højde",
+      "feature3": "230 V-stikkontakt i dit lands format, plus USB-A og USB-C (kun stikkontakt i Danmark)",
+      "feature4": "Ventilation op til 4 m³/min; 22 W i brug, 2 W på standby"
+    },
+    "features": {
+      "tag": "INDBYGGET",
+      "title": "Hvad der er standard, og hvorfor det betyder noget.",
+      "ventilation": {
+        "title": "Ventilation",
+        "desc": "Op til 4 m³/min frisk luft til én person. Båsen bruger 22 W i brug og 2 W på standby."
+      },
+      "electrics": {
+        "title": "Strøm og USB",
+        "desc": "Én 230 V-stikkontakt i leveringslandets format (type E, F, G, J eller K) med USB-A og USB-C. Den danske version har kun stikkontakten."
+      },
+      "glass": {
+        "title": "Akustikglas",
+        "desc": "8 mm emaljeret akustikglas; den valgfri bagvæg i glas bruger samme glas."
+      },
+      "table": {
+        "title": "Ståbord",
+        "desc": "Et fast ståbord på 95 × 30 cm i 105 cm højde: plads til en bærbar og en notesblok."
+      },
+      "interior": {
+        "title": "Filt indvendigt",
+        "desc": "Beige akustisk filt indvendigt, hvid RAL 9016 udvendigt. Døren er hængslet i venstre side."
+      },
+      "warranty": {
+        "title": "Fem års garanti",
+        "desc": "Fem års reservedelsgaranti, bygget på vores egen fabrik i Częstochowa. Produktionen tager fire uger."
+      }
+    },
+    "specs": {
+      "tag": "TEKNIK",
+      "title": "Specifikationer",
+      "dimensionsTitle": "Dimensioner",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Ståbord",
+      "tableValue": "950 × 300 mm, 1050 mm høj",
+      "weightValue": "280 kg netto · 330 kg brutto",
+      "packagingLabel": "Emballage",
+      "packagingValue": "1 enhed pr. palle, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "Op til 4 m³/min",
+      "electricsTitle": "Elektrik",
+      "powerValue": "1 × 230 V-stikkontakt, type E, F, G, J eller K efter land",
+      "usbValue": "1 × USB-A · 1 × USB-C (ikke på type K-versionen)",
+      "consumptionValue": "2 W standby · 22 W i brug",
+      "materialsTitle": "Materialer og finish",
+      "glassValue": "8 mm emaljeret akustikglas",
+      "interiorValue": "Beige akustisk filt",
+      "exteriorLabel": "Udvendigt",
+      "exteriorValue": "Hvid RAL 9016",
+      "backWallLabel": "Bagvæg",
+      "backWallValue": "Lukket (standard) eller glas",
+      "doorLabel": "Dør",
+      "doorValue": "Venstrehængt (DIN venstre)",
+      "warrantyTitle": "Garanti & levering",
+      "sparePartsLabel": "Reservedelsgaranti",
+      "sparePartsValue": "5 år",
+      "deliveryValue": "4 ugers produktion, ab fabrik Częstochowa",
+      "weightLabel": "Vægt (netto / brutto)"
+    },
+    "addons": {
+      "tag": "TILVALG",
+      "title": "To tilvalg, prissat i bestillingsdialogen",
+      "description": "Solo ECO leveres komplet. Disse to tilvalg står på prislisten for 2026 og kan tilføjes, når du bestiller online.",
+      "stool": {
+        "title": "Taburet",
+        "desc": "En taburet til ståbordet, som bestilles sammen med båsen."
+      },
+      "glassBackWall": {
+        "title": "Bagvæg i glas",
+        "desc": "Erstatter den lukkede bagvæg med samme 8 mm emaljerede akustikglas. Den er opført som en separat basisartikel, så prisen vises, så snart du vælger den."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Hvad er leveringstiden for Solo ECO?",
+          "answer": "Produktionen tager fire uger fra bekræftet ordre. Transport tilbydes separat; båsen afsendes fra vores fabrik i Częstochowa på én palle på 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "Hvad er forskellen på Solo ECO og Solo Flex?",
+          "answer": "Solo Flex har et hæve-sænke-bord, 10 mm lamineret akustikglas, ventilation op til 4,6 m³/min og valgfri udvendig farve, filtfarve og dørretning. Solo ECO har et fast ståbord, 8 mm emaljeret akustikglas, ventilation op til 4 m³/min, én farvekombination og en venstrehængt dør, til en lavere pris. Begge har samme fem års reservedelsgaranti."
+        },
+        "backWall": {
+          "question": "Lukket bagvæg eller bagvæg i glas?",
+          "answer": "Standardudgaven af Solo ECO har en lukket bagvæg. Bagvæggen i glas erstatter den med samme 8 mm emaljerede akustikglas og prissættes som en separat basisartikel i bestillingsdialogen."
+        },
+        "power": {
+          "question": "Hvilken stikkontakt leveres båsen med?",
+          "answer": "Én 230 V-stikkontakt i leveringslandets format: type E til Belgien og Frankrig, type F til Tyskland, Østrig, Nederlandene og Luxembourg, type J til Schweiz, type G til Storbritannien og type K til Danmark. Alle undtagen den danske version har desuden en USB-A- og en USB-C-port."
+        },
+        "ventilation": {
+          "question": "Hvordan ventileres Solo ECO?",
+          "answer": "Ventilatorsystemet flytter op til 4 m³/min luft, nok til én person i et opkald. I brug bruger båsen 22 W; på standby 2 W."
+        },
+        "warranty": {
+          "question": "Hvad dækker garantien?",
+          "answer": "Fem års reservedelsgaranti på båsen, fra fabrikken. Spørg os om de fulde vilkår, før du bestiller."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Ab fabrik, 4 ugers produktion · Levering og montering tilbydes efter forespørgsel · 5 års reservedelsgaranti"
     }
   }
 }

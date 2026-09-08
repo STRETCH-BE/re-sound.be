@@ -112,7 +112,7 @@ Also in `docs/needs-michael.md`, items 38–47.
 | Modular XL fire protection: is the base module **2 segments** (180 cm ÷ 90)? | the fire-protection line on every Modular XL order |
 | Ethernet costs **€ 156,25 on Duo Work and € 143,75 on Duo Flex** — intended? | the Duo dialog |
 | Sofa fabric codes are not fixed | sofa lines on orders |
-| Solo ECO, Solo Stand and Modular 4 have no page — want them? | three models that cannot be ordered |
+| Solo Stand and Modular 4 have no page — want them? | two models that cannot be ordered (Solo ECO has a page since 8 September) |
 
 ---
 

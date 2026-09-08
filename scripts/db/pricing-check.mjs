@@ -178,7 +178,7 @@ console.log('\n# selection (src/lib/catalogue/select.ts)');
   const ok = defaultSelection(sf, snapshot, 'BE');
   const reasons = [
     ['unknown product', { ...ok, productId: 'nope' }],
-    ['product not sold on a page', { ...defaultSelection(product('solo-eco'), snapshot, 'BE') }],
+    ['product not sold on a page', { ...defaultSelection(product('solo-stand'), snapshot, 'BE') }],
     ['quantity 0', { ...ok, quantity: 0 }],
     ['quantity above max', { ...ok, quantity: 26 }],
     ['quantity fractional', { ...ok, quantity: 1.5 }],
@@ -237,7 +237,7 @@ try {
   check('unconfigured → snapshot', [c1.source, c1.products.length, c1.categories.length, c1.articles.length],
     ['snapshot', snapshot.products.filter((p) => p.active).length, snapshot.categories.length, snapshot.articles.filter((a) => a.active).length]);
   check('getFromPriceCents(solo-flex) = 411875', await load.getFromPriceCents('solo-flex'), 411875);
-  check('getProductPrices()', Object.fromEntries(await load.getProductPrices()), { 'solo-flex': 411875, duo: 761250, 'modular-xl': 1378125, interior: 38700, divide: 123800, solid: 40700 });
+  check('getProductPrices()', Object.fromEntries(await load.getProductPrices()), { 'solo-eco': 274000, 'solo-flex': 411875, duo: 761250, 'modular-xl': 1378125, interior: 38700, divide: 123800, solid: 40700 });
   const duo = await load.getConfiguratorData('duo');
   check('getConfiguratorData(duo)', [duo.products.map((p) => p.id), duo.categories.length, duo.articles.length, duo.priceList],
     [['duo-work', 'duo-flex'], 12, snapshot.articles.filter((a) => a.active && (a.productId === 'duo-work' || a.productId === 'duo-flex')).length, { id: 'booths-2026', validFrom: '2026-09-21' }]);

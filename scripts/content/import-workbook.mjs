@@ -64,7 +64,7 @@ const LINK_NAMES = {
   '/products/rpet-groove': ['rPET Groove'], '/products/rpet-panel': ['rPET Panel'], '/products/rpet-flex-groove': ['rPET Flex Groove'],
   '/products/rwood-groove': ['rWood Groove'], '/products/rwood-micro': ['rWood Micro'], '/products/rwood-veneer': ['rWood Panel'], '/products/rwood-perf': ['rWood Perf'],
   '/products/interior': ['Interior'], '/products/solid': ['Solid'], '/products/divide': ['Divide'],
-  '/products/solo-flex': ['Solo Flex'], '/products/duo': ['Duo'], '/products/modular-xl': ['Modular XL'],
+  '/products/solo-eco': ['Solo ECO'], '/products/solo-flex': ['Solo Flex'], '/products/duo': ['Duo'], '/products/modular-xl': ['Modular XL'],
   '/products/pet-akoestische-panelen': ['PET-panelen', 'PET-vilt'], '/products/houten-akoestische-panelen': ['houten akoestische panelen', 'houten panelen'],
   '/products/akoestische-belcabines': ['belcabines', 'belcabine'],
   '/where-to-buy': ['showroom'], '/faq': ['FAQ'],
@@ -228,6 +228,14 @@ const boothGuide = {
   })),
   guide: guideRow ? { locale: 'nl', title: clean(guideRow['Guide title tag (≤65)']), description: clean(guideRow['Guide meta (≤155)']), h1: clean(guideRow['Guide H1']), faqQuestions: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => clean(guideRow[`Guide FAQ Q${i}`])).filter(Boolean) } : null,
 };
+// Solo ECO is not on the Booth_Guide sheet; its facts come from the 2026 price
+// list tech sheet (scripts/db/price-list-to-sql.mjs). No ISO 23351-1 figure is
+// published for it, so the guide shows its speech class as "—".
+boothGuide.models.unshift({
+  model: 'Solo ECO', slug: 'solo-eco', capacity: '1', footprintM2: '1.1', externalDimensions: '1050×1080×2080',
+  isoDbA: null, isoClass: null, ventilation: 'up to 4 m³/min', power: '230 V, USB-A + USB-C (not DK)', lighting: '',
+  weightKg: 280, assemblyTime: '', leadTimeWeeks: '4', warranty: '5 y spare parts', trial: '',
+});
 write('content/booth-guide.json', JSON.stringify(boothGuide, null, 2) + '\n');
 console.log(`booth guide: ${boothGuide.models.map((m) => m.model).join(', ')} (facts only; prices come from the catalogue)`);
 

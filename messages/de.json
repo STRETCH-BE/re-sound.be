@@ -43,7 +43,9 @@
     "partnerTitle": "Partnerprogramm · Trade- und Händlerprogramm",
     "partnerDescription": "Re-Sound Partnerprogramm für Architekten, Designer, Händler und Distributoren in Europa: ausschreibungsfertige Dokumentation, Gebietsschutz, Support.",
     "whereToBuyTitle": "Wo Re-Sound zu sehen und zu kaufen",
-    "whereToBuyDescription": "Erleben Sie Re-Sound in unserem Showroom in Beveren-Waas, fordern Sie ein Musterpaket an, buchen Sie eine Videotour oder eine Demo vor Ort im Benelux."
+    "whereToBuyDescription": "Erleben Sie Re-Sound in unserem Showroom in Beveren-Waas, fordern Sie ein Musterpaket an, buchen Sie eine Videotour oder eine Demo vor Ort im Benelux.",
+    "soloEcoTitle": "Solo ECO — Telefonbox für 1 Person, Einstiegsmodell | Re-Sound",
+    "soloEcoDescription": "Telefonbox für eine Person, Einstiegsmodell: 1,1 m² Stellfläche, Stehtisch, 230-V-Steckdose mit USB, Lüftung bis 4 m³/min, Rückwand geschlossen oder aus Glas."
   },
   "nav": {
     "products": "Produkte",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Skalierbarer Akustik-Meeting-Pod. Basis für 6 Personen, erweiterbar auf 10 mit 90-cm-Segmenten. 25,9 dB(A) Sprachminderung."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Telefonbox für eine Person, Einstiegsmodell: 1,1 m² Stellfläche, Stehtisch, länderspezifische Steckdose mit USB, geschlossene Rückwand oder Glasrückwand."
     }
   },
   "specs": {
@@ -3132,6 +3138,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Skalierbarer Meeting-Pod"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Einzelpersonen-Kabine, Einstiegsmodell"
       }
     },
     "growthDiagramLabel": "Diagramm zur modularen Erweiterung"
@@ -3961,6 +3971,10 @@
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
       "perfMicroL": "Micro L (⌀ 2,0 mm)"
+    },
+    "solo-eco": {
+      "mounting": "Freistehend, Montage durch Re-Sound auf Anfrage",
+      "leadTime": "4 Wochen Produktion"
     }
   },
   "hubs": {
@@ -4102,11 +4116,11 @@
     },
     "booths": {
       "title": "Akustik-Telefonboxen & Meeting-Pods fürs Büro | Re-Sound",
-      "description": "Büro-Telefonboxen & Meeting-Pods: Solo Flex (1 Pers.), Duo (2 Pers.), Modular XL (6–10). Sprachpegelminderung ISO 23351-1, leise Lüftung, 230 V, USB-C.",
+      "description": "Büro-Telefonboxen & Meeting-Pods: Solo ECO und Solo Flex (1 Pers.), Duo (2), Modular XL (6–10). Sprachpegelminderung ISO 23351-1 bei Flex und XL, 230 V.",
       "h1": "Telefonboxen und Meeting-Pods fürs Büro aus eigener Fertigung",
       "breadcrumb": "Telefonboxen",
-      "intro": "Eine Telefonbox fürs Büro bietet einer Person einen ruhigen, belüfteten Platz für Telefonate und Videomeetings mitten im Großraumbüro; ein Meeting-Pod leistet dasselbe für ein Team. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die Serie umfasst drei Größen. Solo Flex ist die Telefonbox für eine Person: 1 m² Stellfläche, Sitz-Steh-Tisch, 230 V und USB-C, leise EC-Lüfter und eine Sprachpegelminderung von 24 dB(A), gemessen nach ISO 23351-1. Duo ist die Akustikkabine für zwei Personen mit zwei Konfigurationen – Flex für ein Gespräch zu zweit, Work für eine Person mit Tisch über die gesamte Breite. Modular XL ist der akustische Meeting-Pod für sechs bis zehn Personen: Die Grundeinheit lässt sich in 90-cm-Segmenten erweitern und erreicht 25,9 dB(A) Sprachpegelminderung. Alle Boxen kommen mit 5 Jahren Garantie auf die Konstruktion und werden EU-weit geliefert, auf Wunsch inklusive Montage. Vergleichen Sie unten die Telefonboxen fürs Büro und öffnen Sie anschließend eine Modellseite für Zubehör und Downloads.",
-      "whyCertsDesc": "5 Jahre Garantie auf die Konstruktion und 2 Jahre auf die Elektronik bei jeder Box; Sprachpegelminderung angegeben nach ISO 23351-1.",
+      "intro": "Eine Telefonbox fürs Büro bietet einer Person einen ruhigen, belüfteten Platz für Telefonate und Videomeetings mitten im Großraumbüro; ein Meeting-Pod leistet dasselbe für ein Team. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die Serie umfasst vier Modelle. Solo ECO ist das Einstiegsmodell: eine Kabine für eine Person mit Stehtisch, länderspezifischer Steckdose mit USB-A und USB-C (für Dänemark nur Steckdose), Lüftung bis 4 m³/min und geschlossener Rückwand oder Glasrückwand. Solo Flex ist die Telefonbox für eine Person: 1 m² Stellfläche, Sitz-Steh-Tisch, 230 V und USB-C, leise EC-Lüfter und eine Sprachpegelminderung von 24 dB(A), gemessen nach ISO 23351-1. Duo ist die Akustikkabine für zwei Personen mit zwei Konfigurationen – Flex für ein Gespräch zu zweit, Work für eine Person mit Tisch über die gesamte Breite. Modular XL ist der akustische Meeting-Pod für sechs bis zehn Personen: Die Grundeinheit lässt sich in 90-cm-Segmenten erweitern und erreicht 25,9 dB(A) Sprachpegelminderung. Solo Flex, Duo und Modular XL kommen mit 5 Jahren Garantie auf die Konstruktion, Solo ECO mit 5 Jahren Ersatzteilgarantie; alle werden EU-weit geliefert, Montage auf Anfrage möglich. Vergleichen Sie unten die Telefonboxen fürs Büro und öffnen Sie anschließend eine Modellseite für Zubehör und Downloads.",
+      "whyCertsDesc": "5 Jahre Garantie bei jeder Box (auf die Konstruktion bei Solo Flex, Duo und Modular XL; auf Ersatzteile bei Solo ECO); Sprachpegelminderung angegeben nach ISO 23351-1, wo gemessen.",
       "applications": {
         "app1": "Großraumbüros und Coworking-Flächen",
         "app2": "Telefonate und Videomeetings in agilen Arbeitsumgebungen",
@@ -4122,7 +4136,7 @@
         },
         "q2": {
           "question": "Brauchen Akustikkabinen einen Stromanschluss?",
-          "answer": "Ja – jede Box wird an eine normale 230-V-Steckdose angeschlossen, für Beleuchtung, Lüftung und die Steckdosen am Tisch (Schuko plus USB-C PD 60 W). Solo Flex nimmt im Betrieb etwa 80 W auf."
+          "answer": "Ja – jede Box wird an eine normale 230-V-Steckdose angeschlossen, für Beleuchtung, Lüftung und die Steckdosen am Tisch (Schuko plus USB-C PD 60 W). Solo Flex nimmt im Betrieb etwa 80 W auf. Solo ECO hat eine länderspezifische Steckdose mit USB-A und USB-C (bei der dänischen Ausführung nur Steckdose) und nimmt im Betrieb 22 W auf."
         },
         "q3": {
           "question": "Wie wird ein Privacy-Pod belüftet?",
@@ -4134,7 +4148,7 @@
         },
         "q5": {
           "question": "Wie lang sind Lieferzeit und Garantie bei einer Telefonbox?",
-          "answer": "Solo Flex und Duo werden 4–6 Wochen nach Bestellung geliefert, Modular XL 6–8 Wochen für die Basiseinheit; Sonderstoffe verlängern die Lieferzeit um 2–3 Wochen. Die Garantie beträgt 5 Jahre auf die Konstruktion und 2 Jahre auf die Elektronik; Lieferung und Montage sind EU-weit verfügbar."
+          "answer": "Solo ECO hat 4 Wochen Produktionszeit und 5 Jahre Ersatzteilgarantie. Solo Flex und Duo werden 4–6 Wochen nach Bestellung geliefert, Modular XL 6–8 Wochen für die Basiseinheit; Sonderstoffe verlängern die Lieferzeit um 2–3 Wochen. Die Garantie beträgt 5 Jahre auf die Konstruktion und 2 Jahre auf die Elektronik; Lieferung und Montage sind EU-weit verfügbar."
         }
       }
     }
@@ -4206,13 +4220,13 @@
   },
   "boothGuide": {
     "title": "Telefonbox fürs Büro: Preise & ISO-Klassen 2026 | Re-Sound",
-    "description": "Büro-Telefonbox: Preise vom Hersteller. Solo Flex ab {soloFlex} netto, Modular XL ab {modularXl}. ISO 23351-1-Klassen, Lüftung, Montage, Lieferzeit, Garantie.",
+    "description": "Büro-Telefonbox: Preise. Solo ECO ab {soloEco}, Solo Flex ab {soloFlex} netto, Modular XL ab {modularXl}. ISO 23351-1-Klassen, Montage, Lieferzeit, Garantie.",
     "h1": "Telefonboxen fürs Büro: Preise, Klassen und Auswahlhilfe",
-    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab {soloFlex} zzgl. MwSt. ohne Montage (Solo Flex), ein Modular XL Meeting-Pod ab {modularXl}. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
+    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab {soloEco} zzgl. MwSt. ohne Montage (Solo ECO), Solo Flex ab {soloFlex} und ein Modular XL Meeting-Pod ab {modularXl}. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
     "breadcrumb": "Telefonbox-Preise",
     "priceTag": "Preise 2026",
     "priceTitle": "Preise pro Modell (zzgl. MwSt.)",
-    "priceNote": "Preise verstehen sich zzgl. MwSt. und, außerhalb Belgiens, zzgl. Transport. Die Montage durch unser eigenes Team ist optional; Solo Flex kann auch von zwei Personen in unter drei Stunden aufgebaut werden.",
+    "priceNote": "Preise verstehen sich zzgl. MwSt., Transport und Montage (ab Werk). Die Montage durch unser eigenes Team ist optional; Solo Flex kann auch von zwei Personen in unter drei Stunden aufgebaut werden.",
     "col": {
       "model": "Modell",
       "capacity": "Kapazität",
@@ -4236,7 +4250,7 @@
     "warrantyValue": "5 Jahre auf die Konstruktion · 2 Jahre auf die Elektronik",
     "includedTag": "Lieferumfang",
     "includedTitle": "Was im Preis enthalten ist",
-    "includedText": "Jede Kabine wird als komplette, belüftete Einheit geliefert: Korpus mit Tür, dimmbare LED-Beleuchtung, Stromversorgung am Tisch (230 V und USB-C bei Solo Flex) und bei Solo Flex der manuell höhenverstellbare Sitz-Steh-Tisch. Die Lüftung arbeitet mit leisen EC-Ventilatoren; Solo Flex fördert 4,6 m³/min, und der PIR-Sensor schaltet die Ventilatoren ein, sobald jemand in der Kabine ist.",
+    "includedText": "Jede Kabine wird als komplette, belüftete Einheit geliefert: Korpus mit Tür und Stromversorgung am Tisch. Solo ECO: ein fester Stehtisch, eine länderspezifische Steckdose mit USB-A und USB-C (in Dänemark nur Steckdose) und Lüftung bis 4 m³/min. Solo Flex: dimmbare LED-Beleuchtung, 230 V und USB-C, der manuell höhenverstellbare Sitz-Steh-Tisch und leise EC-Ventilatoren, die 4,6 m³/min fördern, mit einem PIR-Sensor, der die Ventilatoren einschaltet, sobald jemand in der Kabine ist.",
     "installationTag": "Montage",
     "installationTitle": "Montage durch Re-Sound oder Selbstaufbau",
     "installationText": "Unsere Monteure stellen eine Telefonbox in etwa 60 Minuten auf, einen Meeting-Pod in etwa 2 Stunden und einen Modular XL in 2 bis 6 Stunden. Solo Flex kann auch von zwei Personen in unter drei Stunden aufgebaut werden: Die Kabine ist eine Flat-Pack-Konstruktion und lässt sich später demontieren und auf einer anderen Etage wieder aufbauen.",
@@ -4272,10 +4286,14 @@
     "assembly": {
       "solo-flex": "Etwa 60 Minuten durch unsere Monteure oder zwei Personen in unter 3 Stunden",
       "duo": "Etwa 2 Stunden durch unsere Monteure",
-      "modular-xl": "2 bis 6 Stunden durch unsere Monteure"
+      "modular-xl": "2 bis 6 Stunden durch unsere Monteure",
+      "solo-eco": "Auf Anfrage"
     },
-    "classesNote": "Schwellenwerte: die minimale Sprachpegelreduktion pro Klasse. Duo wurde noch nicht gemessen.",
-    "endOfLifeTag": "Zirkulär"
+    "classesNote": "Schwellenwerte: die minimale Sprachpegelreduktion pro Klasse. Für Solo ECO und Duo liegt noch kein veröffentlichter Messwert vor.",
+    "endOfLifeTag": "Zirkulär",
+    "warrantyByModel": {
+      "solo-eco": "5 Jahre Ersatzteilgarantie"
+    }
   },
   "order": {
     "cta": "Online bestellen",
@@ -4419,6 +4437,130 @@
       "nextSteps": "Fragen zu dieser Bestellung? Antworten Sie auf diese E-Mail oder rufen Sie uns an: +32 3 284 68 18. Re-Sound ist eine Marke der Stretch Group; Ihre Bestellung wird ab unserem Werk in Częstochowa (Polen) versandt.",
       "model": "Modell",
       "segments": "Segmente"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "TELEFONBOX · 1 PERSON · EINSTIEGSMODELL",
+      "title": "Solo ECO: die Telefonbox für eine Person, auf das Wesentliche reduziert",
+      "tagline": "Das Wesentliche für ein ruhiges Gespräch, zum niedrigsten Preis der Serie.",
+      "description": "Solo ECO ist das Einstiegsmodell der Kabinenserie von Re-Sound: eine akustische Kabine für eine Person mit Stehtisch, einer länderspezifischen 230-V-Steckdose (mit USB-A und USB-C bei allen Ausführungen außer der dänischen), Belüftung und einer geschlossenen Rückwand oder einer Glasrückwand. Dasselbe Werk und dieselbe fünfjährige Ersatzteilgarantie wie bei Solo Flex — nur mit weniger Entscheidungen, die Sie treffen müssen.",
+      "statFootprint": "Stellfläche",
+      "statWeight": "Nettogewicht",
+      "statWarranty": "Garantie"
+    },
+    "overview": {
+      "tag": "EINE KABINE, EINE PERSON, EINE FARBKOMBINATION",
+      "title": "Ruhe, ohne die Extras.",
+      "description": "Solo ECO behält, was ein Telefonat braucht, und lässt weg, was es nicht braucht. Die Kabine steht auf 1,1 m², kommt in Weiß mit beigem Filz-Innenraum und wird komplett auf einer Palette geliefert: Korpus, Tür, Stehtisch, Steckdose und Belüftung. Wählen Sie die geschlossene Rückwand für maximale Privatsphäre oder die Glasrückwand, um den Blick nach draußen zu behalten.",
+      "feature1": "1,1 m² Stellfläche: 105 × 108 cm außen, 208 cm hoch",
+      "feature2": "Stehtisch von 95 × 30 cm auf 105 cm Höhe",
+      "feature3": "230-V-Steckdose im Format Ihres Landes, plus USB-A und USB-C (in Dänemark nur Steckdose)",
+      "feature4": "Belüftung bis 4 m³/min; 22 W im Betrieb, 2 W im Standby"
+    },
+    "features": {
+      "tag": "SERIENMÄSSIG",
+      "title": "Was Standard ist und warum es zählt.",
+      "ventilation": {
+        "title": "Belüftung",
+        "desc": "Bis zu 4 m³/min Frischluft für eine Person. Die Kabine nimmt im Betrieb 22 W auf, im Standby 2 W."
+      },
+      "electrics": {
+        "title": "Strom und USB",
+        "desc": "Eine 230-V-Steckdose im Format des Lieferlands (Typ E, F, G, J oder K) mit USB-A und USB-C. Die dänische Ausführung hat nur die Steckdose."
+      },
+      "glass": {
+        "title": "Akustikglas",
+        "desc": "8 mm emailliertes Akustikglas; die optionale Glasrückwand besteht aus demselben Glas."
+      },
+      "table": {
+        "title": "Stehtisch",
+        "desc": "Ein fester Stehtisch von 95 × 30 cm auf 105 cm Höhe: Platz für Laptop und Notizbuch."
+      },
+      "interior": {
+        "title": "Innenraum aus Filz",
+        "desc": "Innen beiger Akustikfilz, außen Weiß RAL 9016. Die Tür ist links angeschlagen."
+      },
+      "warranty": {
+        "title": "Fünf Jahre Garantie",
+        "desc": "Fünf Jahre Ersatzteilgarantie; gebaut wird die Kabine in unserem eigenen Werk in Częstochowa. Die Produktion dauert vier Wochen."
+      }
+    },
+    "specs": {
+      "tag": "TECHNIK",
+      "title": "Spezifikationen",
+      "dimensionsTitle": "Abmessungen",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Stehtisch",
+      "tableValue": "950 × 300 mm, 1050 mm hoch",
+      "weightValue": "280 kg netto · 330 kg brutto",
+      "packagingLabel": "Verpackung",
+      "packagingValue": "1 Stück pro Palette, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Belüftung",
+      "airflowValue": "Bis zu 4 m³/min",
+      "electricsTitle": "Elektrik",
+      "powerValue": "1 × Steckdose 230 V, Typ E, F, G, J oder K je nach Land",
+      "usbValue": "1 × USB-A · 1 × USB-C (nicht bei der Ausführung Typ K)",
+      "consumptionValue": "2 W Standby · 22 W Betrieb",
+      "materialsTitle": "Materialien und Oberfläche",
+      "glassValue": "8 mm emailliertes Akustikglas",
+      "interiorValue": "Beiger Akustikfilz",
+      "exteriorLabel": "Außen",
+      "exteriorValue": "Weiß RAL 9016",
+      "backWallLabel": "Rückwand",
+      "backWallValue": "Geschlossen (Standard) oder Glas",
+      "doorLabel": "Tür",
+      "doorValue": "Links angeschlagen (DIN links)",
+      "warrantyTitle": "Garantie & Lieferung",
+      "sparePartsLabel": "Ersatzteilgarantie",
+      "sparePartsValue": "5 Jahre",
+      "deliveryValue": "4 Wochen Produktion, ab Werk Częstochowa",
+      "weightLabel": "Gewicht (netto / brutto)"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Zwei Optionen, mit Preis im Bestelldialog",
+      "description": "Solo ECO wird komplett geliefert. Diese beiden Optionen stehen auf der Preisliste 2026 und können bei der Online-Bestellung hinzugefügt werden.",
+      "stool": {
+        "title": "Hocker",
+        "desc": "Ein Hocker zum Stehtisch, zusammen mit der Kabine bestellt."
+      },
+      "glassBackWall": {
+        "title": "Glasrückwand",
+        "desc": "Ersetzt die geschlossene Rückwand durch dasselbe 8 mm emaillierte Akustikglas. Sie wird als eigener Basisartikel geführt, sodass der Preis erscheint, sobald Sie sie auswählen."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "Wie lang ist die Lieferzeit für Solo ECO?",
+          "answer": "Die Produktion dauert vier Wochen ab bestätigter Bestellung. Der Transport wird separat angeboten; die Kabine verlässt unser Werk in Częstochowa auf einer Palette von 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "Was ist der Unterschied zwischen Solo ECO und Solo Flex?",
+          "answer": "Solo Flex hat einen Sitz-Steh-Tisch, 10 mm Akustik-Verbundglas, Belüftung bis 4,6 m³/min und die Wahl von Außenfarbe, Filzfarbe und Türanschlag. Solo ECO hat einen festen Stehtisch, 8 mm emailliertes Akustikglas, Belüftung bis 4 m³/min, eine Farbkombination und eine links angeschlagene Tür — zu einem niedrigeren Preis. Beide haben dieselbe fünfjährige Ersatzteilgarantie."
+        },
+        "backWall": {
+          "question": "Geschlossene Rückwand oder Glasrückwand?",
+          "answer": "Solo ECO hat serienmäßig eine geschlossene Rückwand. Die Glasrückwand ersetzt sie durch dasselbe 8 mm emaillierte Akustikglas und wird im Bestelldialog als eigener Basisartikel bepreist."
+        },
+        "power": {
+          "question": "Mit welcher Steckdose wird die Kabine geliefert?",
+          "answer": "Eine 230-V-Steckdose im Format des Lieferlands: Typ E für Belgien und Frankreich, Typ F für Deutschland, Österreich, die Niederlande und Luxemburg, Typ J für die Schweiz, Typ G für das Vereinigte Königreich und Typ K für Dänemark. Alle außer der dänischen Ausführung haben zusätzlich einen USB-A- und einen USB-C-Anschluss."
+        },
+        "ventilation": {
+          "question": "Wie wird Solo ECO belüftet?",
+          "answer": "Das Lüftersystem bewegt bis zu 4 m³/min Luft — genug für eine Person im Gespräch. Im Betrieb nimmt die Kabine 22 W auf, im Standby 2 W."
+        },
+        "warranty": {
+          "question": "Was deckt die Garantie ab?",
+          "answer": "Fünf Jahre Ersatzteilgarantie des Herstellers auf die Kabine. Fragen Sie uns vor der Bestellung nach den vollständigen Bedingungen."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Ab Werk, 4 Wochen Produktion · Lieferung und Montage auf Anfrage · 5 Jahre Ersatzteilgarantie"
     }
   }
 }

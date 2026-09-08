@@ -43,7 +43,9 @@
     "partnerTitle": "Partner programme · trade and dealer programme",
     "partnerDescription": "Re-Sound partner programme for architects, designers, dealers and distributors across Europe: specifier documentation, regional protection, direct support.",
     "whereToBuyTitle": "Where to see and buy Re-Sound",
-    "whereToBuyDescription": "See Re-Sound in person at our Beveren-Waas showroom, request a free sample kit, book a live video tour or arrange an on-site demo across the Benelux."
+    "whereToBuyDescription": "See Re-Sound in person at our Beveren-Waas showroom, request a free sample kit, book a live video tour or arrange an on-site demo across the Benelux.",
+    "soloEcoTitle": "Solo ECO — Entry-Level 1-Person Office Phone Booth | Re-Sound",
+    "soloEcoDescription": "Entry-level one-person office phone booth: 1.1 m² footprint, standing table, 230 V socket with USB, ventilation up to 4 m³/min, closed or glass back wall."
   },
   "nav": {
     "products": "Products",
@@ -282,6 +284,10 @@
     "modular-xl": {
       "title": "Modular XL",
       "description": "Scalable acoustic meeting pod. Base seats 6, expandable to 10 with 90 cm modular segments. 25.9 dB(A) speech reduction."
+    },
+    "solo-eco": {
+      "title": "Solo ECO",
+      "description": "Entry-level one-person office phone booth: 1.1 m² footprint, standing table, country-specific socket with USB, closed or glass back wall."
     }
   },
   "specs": {
@@ -3129,6 +3135,10 @@
       "modular-xl": {
         "name": "Modular XL",
         "tag": "Scalable meeting pod"
+      },
+      "solo-eco": {
+        "name": "Solo ECO",
+        "tag": "Entry-level single-person booth"
       }
     },
     "growthDiagramLabel": "Modular growth diagram"
@@ -3958,6 +3968,10 @@
       "perfMicroS": "Micro S (⌀ 1.0mm)",
       "perfMicroM": "Micro M (⌀ 1.5mm)",
       "perfMicroL": "Micro L (⌀ 2.0mm)"
+    },
+    "solo-eco": {
+      "mounting": "Freestanding; installation by Re-Sound on request",
+      "leadTime": "4 weeks production"
     }
   },
   "hubs": {
@@ -4099,11 +4113,11 @@
     },
     "booths": {
       "title": "Acoustic Phone Booths & Office Pods — Solo, Duo, Modular XL | Re-Sound",
-      "description": "Office phone booths and meeting pods: Solo Flex (1 person), Duo (2 persons), Modular XL (6–10). ISO 23351-1 speech reduction, silent ventilation, 230 V.",
+      "description": "Office phone booths and meeting pods: Solo ECO and Solo Flex (1 person), Duo (2), Modular XL (6–10). ISO 23351-1 speech reduction on Flex and XL, 230 V.",
       "h1": "Office phone booths and meeting pods, from our own factories",
       "breadcrumb": "Booths",
-      "intro": "An office phone booth gives one person a quiet, ventilated place for calls and video meetings inside an open-plan floor; a meeting pod does the same for a team. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The booth range has three sizes. Solo Flex is the one-person office phone booth: a 1 m² footprint, a sit-stand desk, 230 V and USB-C power, silent EC fans and a 24 dB(A) speech level reduction measured under ISO 23351-1. Duo is the two-person acoustic phone booth with two configurations — Flex for a two-seat conversation, Work for one person with a full-width desk. Modular XL is the acoustic meeting pod for six to ten people: the base unit extends in 90 cm segments and reaches 25.9 dB(A) speech level reduction. All booths come with a 5-year structural warranty and are delivered EU-wide, installation included on request. Compare the office phone booths below, then open a model page for add-ons and downloads.",
-      "whyCertsDesc": "5-year structural warranty and 2-year electronics warranty on every booth; speech level reduction quoted per ISO 23351-1.",
+      "intro": "An office phone booth gives one person a quiet, ventilated place for calls and video meetings inside an open-plan floor; a meeting pod does the same for a team. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The booth range has four models. Solo ECO is the entry model: a one-person booth with a standing table, a country-specific socket with USB-A and USB-C (socket only for Denmark), ventilation up to 4 m³/min and a closed or glass back wall. Solo Flex is the one-person office phone booth: a 1 m² footprint, a sit-stand desk, 230 V and USB-C power, silent EC fans and a 24 dB(A) speech level reduction measured under ISO 23351-1. Duo is the two-person acoustic phone booth with two configurations — Flex for a two-seat conversation, Work for one person with a full-width desk. Modular XL is the acoustic meeting pod for six to ten people: the base unit extends in 90 cm segments and reaches 25.9 dB(A) speech level reduction. Solo Flex, Duo and Modular XL carry a 5-year structural warranty and Solo ECO a 5-year spare-part warranty; all are delivered EU-wide, with installation available on request. Compare the office phone booths below, then open a model page for add-ons and downloads.",
+      "whyCertsDesc": "5-year warranty on every booth (structural on Solo Flex, Duo and Modular XL; spare parts on Solo ECO); speech level reduction quoted per ISO 23351-1 where measured.",
       "applications": {
         "app1": "Open-plan offices and coworking floors",
         "app2": "Call and video meetings in agile workplaces",
@@ -4119,7 +4133,7 @@
         },
         "q2": {
           "question": "Do acoustic phone booths need a power connection?",
-          "answer": "Yes — each booth plugs into a standard 230 V socket for lighting, ventilation and the desk outlets (Schuko plus USB-C PD 60 W). Solo Flex draws about 80 W in use."
+          "answer": "Yes — each booth plugs into a standard 230 V socket for lighting, ventilation and the desk outlets (Schuko plus USB-C PD 60 W). Solo Flex draws about 80 W in use. Solo ECO has one country-specific socket with USB-A and USB-C (socket only on the Danish version) and draws 22 W in use."
         },
         "q3": {
           "question": "How is a privacy pod ventilated?",
@@ -4131,7 +4145,7 @@
         },
         "q5": {
           "question": "What are the lead time and warranty for a phone booth?",
-          "answer": "Solo Flex and Duo ship 4–6 weeks from order, Modular XL 6–8 weeks for the base unit; custom fabrics add 2–3 weeks. The structural warranty is 5 years, electronics 2 years, with EU-wide delivery and installation available."
+          "answer": "Solo ECO takes 4 weeks of production and carries a 5-year spare-part warranty. Solo Flex and Duo ship 4–6 weeks from order, Modular XL 6–8 weeks for the base unit; custom fabrics add 2–3 weeks. The structural warranty is 5 years, electronics 2 years, with EU-wide delivery and installation available."
         }
       }
     }
@@ -4203,13 +4217,13 @@
   },
   "boothGuide": {
     "title": "Office phone booth prices & ISO classes 2026 | Re-Sound",
-    "description": "Office phone booth prices: Solo Flex from {soloFlex} excl. VAT, Modular XL from {modularXl}. ISO 23351-1 classes, installation, lead time and warranty explained.",
+    "description": "Office phone booth prices: Solo ECO from {soloEco}, Solo Flex from {soloFlex} excl. VAT, Modular XL from {modularXl}. ISO 23351-1 classes, installation, lead time and warranty explained.",
     "h1": "Office phone booths: prices, classes and how to choose",
-    "intro": "A Re-Sound office phone booth costs from {soloFlex} excl. VAT without installation (Solo Flex) and a Modular XL meeting pod from {modularXl}. Below you find every price we publish, what is included, the ISO 23351-1 speech-level classes stated honestly, and how installation, testing and warranty work. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).",
+    "intro": "A Re-Sound office phone booth costs from {soloEco} excl. VAT without installation (Solo ECO), Solo Flex from {soloFlex} and a Modular XL meeting pod from {modularXl}. Below you find every price we publish, what is included, the ISO 23351-1 speech-level classes stated honestly, and how installation, testing and warranty work. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).",
     "breadcrumb": "Phone booth prices",
     "priceTag": "PRICES 2026",
     "priceTitle": "Prices per model (excl. VAT)",
-    "priceNote": "Prices exclude VAT and, outside Belgium, transport. Installation by our own team is optional; Solo Flex can also be assembled by two people in under three hours.",
+    "priceNote": "Prices exclude VAT, transport and installation (ex works). Installation by our own team is optional; Solo Flex can also be assembled by two people in under three hours.",
     "col": {
       "model": "Model",
       "capacity": "Capacity",
@@ -4233,7 +4247,7 @@
     "warrantyValue": "5 years structure · 2 years electronics",
     "includedTag": "WHAT YOU GET",
     "includedTitle": "What is included in the price",
-    "includedText": "Every booth ships as a complete, ventilated unit: shell with door, dimmable LED lighting, power at the desk (230 V and USB-C on Solo Flex) and, on Solo Flex, the manual sit-stand desk. Ventilation uses silent EC fans; Solo Flex moves 4.6 m³/min and its PIR sensor switches the fans on when someone is inside.",
+    "includedText": "Every booth ships as a complete, ventilated unit: shell with door and power at the desk. Solo ECO: a fixed standing table, a country-specific socket with USB-A and USB-C (socket only in Denmark) and ventilation up to 4 m³/min. Solo Flex: dimmable LED lighting, 230 V and USB-C, the manual sit-stand desk and silent EC fans moving 4.6 m³/min, with a PIR sensor that switches the fans on when someone is inside.",
     "installationTag": "INSTALLATION",
     "installationTitle": "Installation by Re-Sound or self-assembly",
     "installationText": "Our installers place a call booth in about 60 minutes, a meeting pod in about 2 hours and a Modular XL in 2 to 6 hours. Solo Flex can also be assembled by two people in under three hours: the booth is a flat-pack construction, so it can be demounted and rebuilt on another floor later.",
@@ -4269,10 +4283,14 @@
     "assembly": {
       "solo-flex": "About 60 minutes by our installers, or two people in under 3 hours",
       "duo": "About 2 hours by our installers",
-      "modular-xl": "2 to 6 hours by our installers"
+      "modular-xl": "2 to 6 hours by our installers",
+      "solo-eco": "On request"
     },
-    "classesNote": "Thresholds: the minimum speech-level reduction per class. Duo has not been measured yet.",
-    "endOfLifeTag": "CIRCULAR"
+    "classesNote": "Thresholds: the minimum speech-level reduction per class. Solo ECO and Duo have no published figure yet.",
+    "endOfLifeTag": "CIRCULAR",
+    "warrantyByModel": {
+      "solo-eco": "5 years spare-part warranty"
+    }
   },
   "order": {
     "cta": "Order online",
@@ -4416,6 +4434,130 @@
       "nextSteps": "Questions about this order? Reply to this e-mail or call +32 3 284 68 18. Re-Sound is a Stretch Group brand; your order ships from our plant in Częstochowa (Poland).",
       "model": "Model",
       "segments": "Segments"
+    }
+  },
+  "soloEcoPage": {
+    "hero": {
+      "tag": "OFFICE PHONE BOOTH · 1 PERSON · ENTRY MODEL",
+      "title": "Solo ECO: the one-person phone booth, kept simple",
+      "tagline": "The essentials of a quiet call, at the lowest price in the range.",
+      "description": "Solo ECO is the entry model of the Re-Sound booth range: a single-occupant acoustic booth with a standing table, a country-specific 230 V socket (with USB-A and USB-C on all but the Danish version), ventilation and a closed or glass back wall. Same factory and the same five-year spare-part warranty as Solo Flex, with fewer choices to make.",
+      "statFootprint": "Footprint",
+      "statWeight": "Net weight",
+      "statWarranty": "Warranty"
+    },
+    "overview": {
+      "tag": "ONE BOOTH, ONE PERSON, ONE COLOUR SCHEME",
+      "title": "Quiet, without the extras.",
+      "description": "Solo ECO keeps what a phone call needs and leaves out what it does not. The booth stands on 1.1 m², comes in white with a beige felt interior and ships complete on one pallet: shell, door, standing table, socket and ventilation. Choose the closed back wall for the most privacy or the glass back wall to keep the view.",
+      "feature1": "1.1 m² footprint: 105 × 108 cm outside, 208 cm high",
+      "feature2": "Standing table of 95 × 30 cm at 105 cm height",
+      "feature3": "230 V socket in your country's format, plus USB-A and USB-C (socket only in Denmark)",
+      "feature4": "Ventilation up to 4 m³/min; 22 W in use, 2 W on standby"
+    },
+    "features": {
+      "tag": "BUILT-IN",
+      "title": "What's standard, and why it matters.",
+      "ventilation": {
+        "title": "Ventilation",
+        "desc": "Up to 4 m³/min of fresh air for one person. The booth draws 22 W while in use and 2 W on standby."
+      },
+      "electrics": {
+        "title": "Power and USB",
+        "desc": "One 230 V socket in the format of the delivery country (type E, F, G, J or K) with USB-A and USB-C. The Danish version has the socket only."
+      },
+      "glass": {
+        "title": "Acoustic glass",
+        "desc": "8 mm enamelled acoustic glass; the optional glass back wall uses the same glass."
+      },
+      "table": {
+        "title": "Standing table",
+        "desc": "A fixed standing table of 95 × 30 cm at 105 cm height: room for a laptop and a notebook."
+      },
+      "interior": {
+        "title": "Felt interior",
+        "desc": "Beige acoustic felt inside, white RAL 9016 outside. The door is hinged on the left."
+      },
+      "warranty": {
+        "title": "Five-year warranty",
+        "desc": "Five years spare-part warranty, built in our own plant in Częstochowa. Production takes four weeks."
+      }
+    },
+    "specs": {
+      "tag": "TECHNICAL",
+      "title": "Specifications",
+      "dimensionsTitle": "Dimensions",
+      "externalDimValue": "1050 × 1080 × 2080 mm",
+      "internalDimValue": "890 × 990 × 1990 mm",
+      "tableLabel": "Standing table",
+      "tableValue": "950 × 300 mm, 1050 mm high",
+      "weightValue": "280 kg net · 330 kg gross",
+      "packagingLabel": "Packaging",
+      "packagingValue": "1 unit per pallet, 230 × 120 × 70 cm, 330 kg",
+      "ventilationTitle": "Ventilation",
+      "airflowValue": "Up to 4 m³/min",
+      "electricsTitle": "Electrics",
+      "powerValue": "1 × 230 V socket, type E, F, G, J or K by country",
+      "usbValue": "1 × USB-A · 1 × USB-C (not on the type K version)",
+      "consumptionValue": "2 W standby · 22 W active",
+      "materialsTitle": "Materials and finish",
+      "glassValue": "8 mm enamelled acoustic glass",
+      "interiorValue": "Beige acoustic felt",
+      "exteriorLabel": "Exterior",
+      "exteriorValue": "White RAL 9016",
+      "backWallLabel": "Back wall",
+      "backWallValue": "Closed (standard) or glass",
+      "doorLabel": "Door",
+      "doorValue": "Hinged left (DIN left)",
+      "warrantyTitle": "Warranty & delivery",
+      "sparePartsLabel": "Spare-part warranty",
+      "sparePartsValue": "5 years",
+      "deliveryValue": "4 weeks production, ex works Częstochowa",
+      "weightLabel": "Weight (net / gross)"
+    },
+    "addons": {
+      "tag": "OPTIONAL",
+      "title": "Two options, priced in the order dialog",
+      "description": "Solo ECO ships complete. These two options are on the 2026 price list and can be added when you order online.",
+      "stool": {
+        "title": "Stool",
+        "desc": "A stool for the standing table, ordered together with the booth."
+      },
+      "glassBackWall": {
+        "title": "Glass back wall",
+        "desc": "Replaces the closed back wall with the same 8 mm enamelled acoustic glass. It is listed as a separate base article, so the price shows as soon as you select it."
+      }
+    },
+    "faq": {
+      "questions": {
+        "leadTime": {
+          "question": "What is the lead time for Solo ECO?",
+          "answer": "Production takes four weeks from confirmed order. Transport is quoted separately; the booth ships from our plant in Częstochowa on one pallet of 230 × 120 × 70 cm."
+        },
+        "difference": {
+          "question": "What is the difference between Solo ECO and Solo Flex?",
+          "answer": "Solo Flex has a sit-stand table, 10 mm laminated acoustic glass, ventilation up to 4.6 m³/min and a choice of exterior colour, felt colour and door orientation. Solo ECO has a fixed standing table, 8 mm enamelled acoustic glass, ventilation up to 4 m³/min, one colour scheme and a left-hinged door, at a lower price. Both carry the same five-year spare-part warranty."
+        },
+        "backWall": {
+          "question": "Closed or glass back wall?",
+          "answer": "The standard Solo ECO has a closed back wall. The glass back wall replaces it with the same 8 mm enamelled acoustic glass and is priced as a separate base article in the order dialog."
+        },
+        "power": {
+          "question": "Which socket does the booth come with?",
+          "answer": "One 230 V socket in the format of the delivery country: type E for Belgium and France, type F for Germany, Austria, the Netherlands and Luxembourg, type J for Switzerland, type G for the United Kingdom and type K for Denmark. All but the Danish version add a USB-A and a USB-C port."
+        },
+        "ventilation": {
+          "question": "How is Solo ECO ventilated?",
+          "answer": "The fan system moves up to 4 m³/min of air, enough for one person on a call. In use the booth draws 22 W; on standby 2 W."
+        },
+        "warranty": {
+          "question": "What does the warranty cover?",
+          "answer": "Five years spare-part warranty on the booth, from the factory. Ask us for the full conditions before you order."
+        }
+      }
+    },
+    "cta": {
+      "deliveryNote": "Ex works, 4 weeks production · Delivery and installation quoted on request · 5-year spare-part warranty"
     }
   }
 }

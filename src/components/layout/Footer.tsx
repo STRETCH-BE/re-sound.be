@@ -32,6 +32,7 @@ export default function Footer() {
     { href: '/products/rpet-panel',       label: 'rPET Panel' },
     { href: '/products/rpet-groove',      label: 'rPET Groove' },
     { href: '/products/rpet-flex-groove', label: 'rPET Flex Groove' },
+    { href: '/products/solo-eco',         label: 'Solo ECO' },
     { href: '/products/solo-flex',        label: 'Solo Flex' },
     { href: '/products/duo',              label: 'Duo' },
     { href: '/products/modular-xl',       label: 'Modular XL' },

@@ -1,6 +1,23 @@
 {
   "models": [
     {
+      "model": "Solo ECO",
+      "slug": "solo-eco",
+      "capacity": "1",
+      "footprintM2": "1.1",
+      "externalDimensions": "1050×1080×2080",
+      "isoDbA": null,
+      "isoClass": null,
+      "ventilation": "up to 4 m³/min",
+      "power": "230 V, USB-A, USB-C",
+      "lighting": "",
+      "weightKg": 280,
+      "assemblyTime": "",
+      "leadTimeWeeks": "4",
+      "warranty": "5 y spare parts",
+      "trial": ""
+    },
+    {
       "model": "Solo Flex",
       "slug": "solo-flex",
       "capacity": "1",

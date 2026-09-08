@@ -17,16 +17,17 @@ import { priceTokenCents } from '@/lib/catalogue/tokens';
 import type { Catalogue } from '@/lib/catalogue/types';
 
 /**
- * The guide's intro and meta description name the Solo Flex and Modular XL
- * "from" prices as ICU arguments ({soloFlex}, {modularXl}), filled here from
+ * The guide's intro and meta description name the Solo ECO, Solo Flex and
+ * Modular XL "from" prices as ICU arguments ({soloEco}, {soloFlex},
+ * {modularXl}), filled here from
  * the catalogue so the sentence never carries a stale figure.
  */
-export function guidePriceArgs(catalogue: Catalogue, locale: string, onRequest: string): { soloFlex: string; modularXl: string } {
+export function guidePriceArgs(catalogue: Catalogue, locale: string, onRequest: string): { soloEco: string; soloFlex: string; modularXl: string } {
   const fmt = (slug: string) => {
     const cents = priceTokenCents(catalogue, undefined, slug);
     return cents === null ? onRequest : formatPrice(cents, locale);
   };
-  return { soloFlex: fmt('solo-flex'), modularXl: fmt('modular-xl') };
+  return { soloEco: fmt('solo-eco'), soloFlex: fmt('solo-flex'), modularXl: fmt('modular-xl') };
 }
 import { categoryLabel, lineLabel } from '@/lib/catalogue/pricing';
 import { articleSuffix, articlesFor } from '@/lib/catalogue/select';
@@ -155,7 +156,8 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
     { label: t('col.weight'), cell: (m) => (m.product.specs.kind === 'booth' ? m.product.specs.weight : NA) },
     { label: t('col.assembly'), cell: (m) => t(`assembly.${m.row.slug}` as 'assembly.solo-flex') },
     { label: t('col.leadTime'), cell: (m) => tData(`${m.row.slug}.leadTime`) },
-    { label: t('col.warranty'), cell: () => t('warrantyValue') },
+    // Per-model warranty where the list words it differently (Solo ECO: spare-part warranty), else the shared value.
+    { label: t('col.warranty'), cell: (m) => (t.has(`warrantyByModel.${m.row.slug}`) ? t(`warrantyByModel.${m.row.slug}`) : t('warrantyValue')) },
   ];
 
   return (
