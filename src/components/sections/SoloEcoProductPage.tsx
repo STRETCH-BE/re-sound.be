@@ -11,8 +11,9 @@ import SoundboothProductPage, { type BoothSlots } from './SoundboothProductPage'
  * "other models" arrive as server-rendered slots from the route page
  * (src/app/[locale]/products/solo-eco/page.tsx).
  *
- * Photos: the Solo ECO folder holds the Solo Flex photos as placeholders
- * until Re-Sound supplies ECO photography (docs/needs-michael.md).
+ * Photos (public/images/products/solo-eco): supplied by Re-Sound on
+ * 9 September 2026; hero = studio scene with the door open, overview = loft
+ * scene, add-on = the stool at the standing table.
  */
 export default function SoloEcoProductPage(slots: BoothSlots) {
   return (
@@ -36,7 +37,8 @@ export default function SoloEcoProductPage(slots: BoothSlots) {
         { iconKey: '🛡️', key: 'warranty' },
       ]}
       // The two list options (RS-SE-OCC stool, RS-SE-BG glass back wall); no page-only add-ons.
-      addons={[{ id: 'stool' }, { id: 'glassBackWall' }]}
+      // No photo of the glass back wall exists yet, so that card has no image.
+      addons={[{ id: 'stool', image: '/images/products/solo-eco/addon-stool.jpg' }, { id: 'glassBackWall' }]}
       {...slots}
     />
   );

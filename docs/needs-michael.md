@@ -185,11 +185,12 @@ price on the site comes from it. These came out of the import:
     `articles`). Nine short sentences to translate once you confirm the
     English ones.
 
-51. **Solo ECO photos.** The new `/products/solo-eco` page uses the Solo
-    Flex photos as placeholders (`public/images/products/solo-eco/hero.jpg`,
-    `overview.jpg`, `solo-eco_card.jpg/.webp`, `hero-solo-eco.webp`). Drop
-    the ECO photos over those five files and the page, the product grid,
-    the hub cards and the social preview update.
+51. **Solo ECO photos — done 9 September.** The four scene photos you sent
+    are on the page (hero, overview, product card, stool option) and on the
+    hub cards and social preview; file metadata was stripped and none carries
+    a logo. The plywood texture you sent with them is not used: there is no
+    material swatch on the booth pages. Still missing: a photo of the glass
+    back-wall version (that option card has no image).
 
 52. **Solo ECO facts the list does not give.** The page states only what
     the 2026 price list states: dimensions, standing table, weight, 8 mm

@@ -366,7 +366,7 @@ export const PRODUCTS: Record<string, Product> = {
     certifications: [],
     fromPrice: null, // prices live in the catalogue
     priceUnit: PER_BOOTH,
-    // Placeholders: the Solo Flex photos until Re-Sound supplies ECO photography (docs/needs-michael.md)
+    // Photos supplied by Re-Sound on 9 September 2026 (public/images/products/solo-eco)
     heroImage: '/images/products/solo-eco/hero-solo-eco.webp',
     cardImage: '/images/products/solo-eco/solo-eco_card.webp',
     documents: boothDocs('solo-eco'),
