@@ -1,1670 +1,288 @@
-Re-Sound SEO check — 2026-09-06T10:50:18.823Z
+Re-Sound SEO check — 2026-09-12T10:08:47.770Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
-URLs in sitemap: 280
-Per locale: en=28, nl=28, fr=28, de=28, es=28, pt=28, da=28, sv=28, no=28, is=28
-lastmod distribution (by day): 2026-09-06=280
-distinct lastmod values: 1
-WARN: every URL carries the same lastmod (build time?) — not a real last-modified signal
-hreflang alternates per URL: min 11, max 11
+URLs in sitemap: 208
+Per locale: en=31, nl=37, fr=31, de=31, es=30, pt=30, documents=18
+lastmod distribution (by day): 2024-01-01=6, 2024-01-05=6, 2024-01-10=6, 2024-01-15=6, 2026-08-10=18, 2026-09-06=42, 2026-09-08=34, 2026-09-09=90
+distinct lastmod values: 12
+single-locale URLs (no hreflang by design): 6
+hreflang alternates per URL: min 0, max 7
+document entries (pdf/dwg): 18
 
-Crawling 280 pages …
+Crawling 190 pages …
 
 == (a) Forbidden strings
-FAIL /en: forbidden string "the earth."
-FAIL /en/products: forbidden string "micro-grooved"
-FAIL /en/products/solo-flex: forbidden string "soundbooth" in <title>/<h1>
-FAIL /en/products/duo: forbidden string "soundbooth" in <title>/<h1>
-FAIL /en/about: forbidden string "Partner 1"
-FAIL /en/about: forbidden string "Partner 2"
-FAIL /nl: forbidden string "de aarde."
-FAIL /nl: forbidden string "gegroeide"
-FAIL /nl/products: forbidden string "gegroeide"
-FAIL /nl/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /nl/products/rpet-panel: forbidden string "Milieuresepct"
-FAIL /nl/products/rpet-panel: forbidden string "Staalpackage"
-FAIL /nl/products/rpet-groove: forbidden string "gegroeide"
-FAIL /nl/about: forbidden string "Partner 1"
-FAIL /nl/about: forbidden string "Partner 2"
-FAIL /fr: forbidden string "la planète."
-FAIL /fr: forbidden string "Sans Couture"
-FAIL /fr/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /fr/products/rwood-groove: forbidden string "Sans Couture"
-FAIL /fr/products/rwood-micro: forbidden string "Sans Couture"
-FAIL /fr/products/rwood-perf: forbidden string "Sans Couture"
-FAIL /fr/products/rpet-flex-groove: forbidden string "Sans Couture"
-FAIL /fr/about: forbidden string "Partner 1"
-FAIL /fr/about: forbidden string "Partner 2"
-FAIL /de: forbidden string "die Erde."
-FAIL /de/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /de/products/rwood-veneer: forbidden string "Elevieren"
-FAIL /de/about: forbidden string "Partner 1"
-FAIL /de/about: forbidden string "Partner 2"
-FAIL /es/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /es/about: forbidden string "Partner 1"
-FAIL /es/about: forbidden string "Partner 2"
-FAIL /pt/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /pt/about: forbidden string "Partner 1"
-FAIL /pt/about: forbidden string "Partner 2"
-FAIL /da/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /da/about: forbidden string "Partner 1"
-FAIL /da/about: forbidden string "Partner 2"
-FAIL /sv/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /sv/about: forbidden string "Partner 1"
-FAIL /sv/about: forbidden string "Partner 2"
-FAIL /no/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /no/about: forbidden string "Partner 1"
-FAIL /no/about: forbidden string "Partner 2"
-FAIL /is/products/divide: forbidden string "no installation needed" on non-EN page
-FAIL /is/about: forbidden string "Partner 1"
-FAIL /is/about: forbidden string "Partner 2"
+OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
-da: 14.6% English (155/1065 segments over 28 pages)
-   61.5%  /da/terms  (16/26)
-   45.6%  /da/privacy  (31/68)
-   42.9%  /da/blog  (6/14)
-   42.1%  /da/sustainability  (8/19)
-   38.9%  /da/blog/circular-economy-acoustics  (7/18)
-   29.4%  /da/blog/recycled-materials-quality  (5/17)
-   27.3%  /da/contact  (3/11)
-   24.4%  /da/products/rpet-flex-groove  (10/41)
-   23.5%  /da/blog/sound-absorption-explained  (4/17)
-   22.2%  /da/about  (4/18)
-   21.1%  /da/blog/office-acoustic-solutions  (4/19)
-   17.4%  /da/products  (4/23)
-   16.2%  /da/products/rpet-panel  (11/68)
-   15.2%  /da/products/rwood-groove  (7/46)
-   13.0%  /da  (7/54)
-   10.8%  /da/products/rwood-micro  (7/65)
-    9.3%  /da/products/rpet-groove  (5/54)
-    7.4%  /da/products/interior  (2/27)
-    7.0%  /da/products/rwood-perf  (5/71)
-    4.2%  /da/products/solid  (1/24)
-    4.2%  /da/products/divide  (1/24)
-    3.0%  /da/faq  (1/33)
-de: 7.3% English (76/1046 segments over 28 pages)
-   84.6%  /de/terms  (22/26)
-   69.1%  /de/privacy  (47/68)
-    9.1%  /de/contact  (1/11)
-    5.0%  /de/products/rpet-panel  (3/60)
-es: 15.8% English (201/1270 segments over 28 pages)
-   81.5%  /es/terms  (22/27)
-   62.3%  /es/privacy  (43/69)
-   47.4%  /es/blog/circular-economy-acoustics  (9/19)
-   38.1%  /es/blog/office-acoustic-solutions  (8/21)
-   35.7%  /es/blog  (5/14)
-   34.8%  /es/products/rpet-flex-groove  (16/46)
-   31.6%  /es/blog/sound-absorption-explained  (6/19)
-   30.4%  /es/products/rpet-panel  (24/79)
-   26.2%  /es/products/rwood-groove  (16/61)
-   25.6%  /es/products/rwood-micro  (20/78)
-   25.0%  /es/blog/recycled-materials-quality  (5/20)
-   19.5%  /es/products/rwood-perf  (17/87)
-   14.1%  /es/products/rpet-groove  (9/64)
-   10.0%  /es/contact  (1/10)
-fr: 6.0% English (73/1216 segments over 28 pages)
-   75.0%  /fr/terms  (21/28)
-   64.3%  /fr/privacy  (45/70)
-   10.0%  /fr/contact  (1/10)
-    4.2%  /fr/products/rpet-panel  (3/72)
-is: 14.2% English (153/1080 segments over 28 pages)
-   65.4%  /is/terms  (17/26)
-   45.6%  /is/privacy  (31/68)
-   42.9%  /is/blog  (6/14)
-   42.1%  /is/blog/circular-economy-acoustics  (8/19)
-   36.8%  /is/sustainability  (7/19)
-   30.0%  /is/products/rpet-flex-groove  (12/40)
-   29.4%  /is/blog/recycled-materials-quality  (5/17)
-   27.3%  /is/contact  (3/11)
-   23.5%  /is/blog/sound-absorption-explained  (4/17)
-   21.1%  /is/blog/office-acoustic-solutions  (4/19)
-   16.0%  /is/products/rwood-groove  (8/50)
-   14.7%  /is/products/rpet-panel  (10/68)
-   13.6%  /is/products/rwood-micro  (9/66)
-   13.0%  /is/products/rpet-groove  (7/54)
-   11.1%  /is  (6/54)
-   11.1%  /is/products/solid  (3/27)
-   11.1%  /is/about  (2/18)
-    8.7%  /is/products  (2/23)
-    8.2%  /is/products/rwood-perf  (6/73)
-    7.4%  /is/products/interior  (2/27)
-    3.0%  /is/faq  (1/33)
-nl: 5.1% English (55/1073 segments over 28 pages)
-   54.4%  /nl/privacy  (37/68)
-   42.3%  /nl/terms  (11/26)
-    9.1%  /nl/contact  (1/11)
-    4.5%  /nl/products/rpet-panel  (3/66)
-no: 11.6% English (124/1065 segments over 28 pages)
-   53.8%  /no/terms  (14/26)
-   44.1%  /no/privacy  (30/68)
-   36.8%  /no/sustainability  (7/19)
-   35.7%  /no/blog  (5/14)
-   33.3%  /no/blog/circular-economy-acoustics  (6/18)
-   23.5%  /no/blog/recycled-materials-quality  (4/17)
-   22.0%  /no/products/rpet-flex-groove  (9/41)
-   18.2%  /no/contact  (2/11)
-   17.6%  /no/blog/sound-absorption-explained  (3/17)
-   16.7%  /no/about  (3/18)
-   15.8%  /no/blog/office-acoustic-solutions  (3/19)
-   14.7%  /no/products/rpet-panel  (10/68)
-   13.0%  /no/products/rwood-groove  (6/46)
-    9.3%  /no  (5/54)
-    9.2%  /no/products/rwood-micro  (6/65)
-    8.7%  /no/products  (2/23)
-    7.4%  /no/products/rpet-groove  (4/54)
-    5.7%  /no/products/rwood-perf  (4/70)
-    3.7%  /no/products/interior  (1/27)
-pt: 15.4% English (195/1268 segments over 28 pages)
-   77.8%  /pt/terms  (21/27)
-   60.9%  /pt/privacy  (42/69)
-   45.0%  /pt/blog/circular-economy-acoustics  (9/20)
-   38.1%  /pt/blog/office-acoustic-solutions  (8/21)
-   35.7%  /pt/blog  (5/14)
-   35.6%  /pt/products/rpet-flex-groove  (16/45)
-   31.6%  /pt/blog/sound-absorption-explained  (6/19)
-   26.7%  /pt/products/rpet-panel  (20/75)
-   25.8%  /pt/products/rwood-groove  (16/62)
-   25.6%  /pt/products/rwood-micro  (20/78)
-   25.0%  /pt/blog/recycled-materials-quality  (5/20)
-   19.5%  /pt/products/rwood-perf  (17/87)
-   14.1%  /pt/products/rpet-groove  (9/64)
-   10.0%  /pt/contact  (1/10)
-sv: 11.6% English (123/1060 segments over 28 pages)
-   53.8%  /sv/terms  (14/26)
-   44.1%  /sv/privacy  (30/68)
-   36.8%  /sv/sustainability  (7/19)
-   35.7%  /sv/blog  (5/14)
-   33.3%  /sv/blog/circular-economy-acoustics  (6/18)
-   23.5%  /sv/blog/recycled-materials-quality  (4/17)
-   22.5%  /sv/products/rpet-flex-groove  (9/40)
-   18.2%  /sv/contact  (2/11)
-   17.6%  /sv/blog/sound-absorption-explained  (3/17)
-   16.7%  /sv/about  (3/18)
-   15.8%  /sv/blog/office-acoustic-solutions  (3/19)
-   13.3%  /sv/products/rwood-groove  (6/45)
-   13.0%  /sv/products  (3/23)
-   11.9%  /sv/products/rpet-panel  (8/67)
-    9.4%  /sv  (5/53)
-    9.4%  /sv/products/rwood-micro  (6/64)
-    7.4%  /sv/products/rpet-groove  (4/54)
-    5.6%  /sv/products/rwood-perf  (4/71)
-    3.7%  /sv/products/interior  (1/27)
+   (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
+de: 0.4% English (6/1588 segments over 31 pages)
+    3.0%  /de/guides/telefonbox-preise  (2/66)
+es: 0.2% English (4/1833 segments over 30 pages)
+fr: 0.3% English (6/1853 segments over 31 pages)
+nl: 0.3% English (6/2083 segments over 37 pages)
+pt: 0.2% English (4/1794 segments over 30 pages)
 
 -- sample English segments per flagged page (max 12 each)
-/de/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · All content on the Site — including text, graphics, photography, product designs, illustrations, logos, and code — is the property of Re-…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Use the Site for any unlawful purpose or in violation of applicable Belgian or EU law.
-    · Attempt to gain unauthorised access to the Site, its servers, or related systems.
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · We make reasonable efforts to keep product information, specifications, photographs, and prices accurate, but content on the Site is prov…
-    · Acoustic performance figures, fire ratings, and material composition data reflect the best information available at publication; refer to…
-/es/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · All content on the Site — including text, graphics, photography, product designs, illustrations, logos, and code — is the property of Re-…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Use the Site for any unlawful purpose or in violation of applicable Belgian or EU law.
-    · Attempt to gain unauthorised access to the Site, its servers, or related systems.
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · We make reasonable efforts to keep product information, specifications, photographs, and prices accurate, but content on the Site is prov…
-    · Acoustic performance figures, fire ratings, and material composition data reflect the best information available at publication; refer to…
-/pt/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · All content on the Site — including text, graphics, photography, product designs, illustrations, logos, and code — is the property of Re-…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Use the Site for any unlawful purpose or in violation of applicable Belgian or EU law.
-    · Attempt to gain unauthorised access to the Site, its servers, or related systems.
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · We make reasonable efforts to keep product information, specifications, photographs, and prices accurate, but content on the Site is prov…
-    · The Site may contain links to third-party websites. We provide these links for convenience and do not endorse, control, or take responsib…
-/fr/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · All content on the Site — including text, graphics, photography, product designs, illustrations, logos, and code — is the property of Re-…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Use the Site for any unlawful purpose or in violation of applicable Belgian or EU law.
-    · Attempt to gain unauthorised access to the Site, its servers, or related systems.
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · We make reasonable efforts to keep product information, specifications, photographs, and prices accurate, but content on the Site is prov…
-    · Acoustic performance figures, fire ratings, and material composition data reflect the best information available at publication; refer to…
-    · The Site may contain links to third-party websites. We provide these links for convenience and do not endorse, control, or take responsib…
-/de/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · ("Re-Sound", "we", "us"), registered in Belgium and operating the website
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · — name, email address, phone number (optional), company name (optional), subject, and the content of your message.
-    · — IP address (truncated for analytics), browser type and version, device type, operating system, referring URL, pages visited, and approx…
-    · Cookies and similar technologies
-    · 3. Why we use your data (and our legal basis)
-    · Responding to inquiries submitted via the contact form
-    · Performance of pre-contractual steps and our legitimate interest in customer communication (Art. 6(1)(b) and (f))
-/is/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Use the Site for any unlawful purpose or in violation of applicable Belgian or EU law.
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · The Site may contain links to third-party websites. We provide these links for convenience and do not endorse, control, or take responsib…
-    · 6. Disclaimer of warranties
-    · The Site is provided "as is" and "as available". To the maximum extent permitted by Belgian law, we make no warranties of any kind regard…
-    · 7. Limitation of liability
-/fr/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · ("Re-Sound", "we", "us"), registered in Belgium and operating the website
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · Cookies and similar technologies
-    · 3. Why we use your data (and our legal basis)
-    · Performance of pre-contractual steps and our legitimate interest in customer communication (Art. 6(1)(b) and (f))
-    · Performance of pre-contractual steps at your request (Art. 6(1)(b))
-    · Following up on a lead with relevant product information
-    · Our legitimate interest in commercial outreach (Art. 6(1)(f)), balanced against your right to object
-/es/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · ("Re-Sound", "we", "us"), registered in Belgium and operating the website
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · Cookies and similar technologies
-    · 3. Why we use your data (and our legal basis)
-    · Performance of pre-contractual steps and our legitimate interest in customer communication (Art. 6(1)(b) and (f))
-    · Performance of pre-contractual steps at your request (Art. 6(1)(b))
-    · Following up on a lead with relevant product information
-    · Our legitimate interest in commercial outreach (Art. 6(1)(f)), balanced against your right to object
-/da/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · All content on the Site — including text, graphics, photography, product designs, illustrations, logos, and code — is the property of Re-…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · 6. Disclaimer of warranties
-    · 7. Limitation of liability
-    · To the maximum extent permitted by applicable law, Re-Sound is not liable for any indirect, incidental, consequential, or punitive damage…
-    · Personal data submitted via the Site is handled in accordance with our
-/pt/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · ("Re-Sound", "we", "us"), registered in Belgium and operating the website
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · Cookies and similar technologies
-    · 3. Why we use your data (and our legal basis)
-    · Performance of pre-contractual steps and our legitimate interest in customer communication (Art. 6(1)(b) and (f))
-    · Following up on a lead with relevant product information
-    · Our legitimate interest in commercial outreach (Art. 6(1)(f)), balanced against your right to object
-    · Marketing and advertising measurement
-/nl/privacy:
-    · 1. Who we are
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · Cookies and similar technologies
-    · 3. Why we use your data (and our legal basis)
-    · Following up on a lead with relevant product information
-    · Marketing and advertising measurement
-    · Compliance with legal and accounting obligations
-    · 4. How long we keep your data
-    · We only keep your personal data for as long as needed for the purposes set out above:
-    · — kept for [TO BE DETERMINED, suggested: 24 months] after the last interaction, unless a commercial relationship develops.
-/sv/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · 6. Disclaimer of warranties
-    · 7. Limitation of liability
-    · To the maximum extent permitted by applicable law, Re-Sound is not liable for any indirect, incidental, consequential, or punitive damage…
-    · Personal data submitted via the Site is handled in accordance with our
-    · These terms are governed by Belgian law. Any dispute arising from or in connection with these terms or your use of the Site is subject to…
-/no/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Interfere with the Site's normal operation, including by introducing malware, automated scraping at scale, or actions that impose unreaso…
-    · Submit false, misleading, or fraudulent information through any form on the Site.
-    · 6. Disclaimer of warranties
-    · 7. Limitation of liability
-    · To the maximum extent permitted by applicable law, Re-Sound is not liable for any indirect, incidental, consequential, or punitive damage…
-    · Personal data submitted via the Site is handled in accordance with our
-    · These terms are governed by Belgian law. Any dispute arising from or in connection with these terms or your use of the Site is subject to…
-/es/blog/circular-economy-acoustics:
-    · The Circular Economy: A New Era for Acoustic Solutions | Re-Sound
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · The acoustic panel industry is undergoing a fundamental transformation. Traditional linear models—take, make, dispose—are giving way to c…
-    · Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives,…
-    · At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels…
-    · The best acoustic panel is one that never becomes waste.
-    · Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we …
-    · The transition to circular acoustics is just beginning. As more companies adopt these principles, we'll see an industry transformed—one w…
-/da/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · 3. Why we use your data (and our legal basis)
-    · Following up on a lead with relevant product information
-    · 4. How long we keep your data
-    · We only keep your personal data for as long as needed for the purposes set out above:
-    · [Action item: confirm retention periods with legal counsel before publishing.]
-    · 5. Who we share your data with
-    · We do not sell your personal data. We share it only with the processors and partners we need to operate the website and respond to you:
-/is/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · 3. Why we use your data (and our legal basis)
-    · Following up on a lead with relevant product information
-    · 4. How long we keep your data
-    · We only keep your personal data for as long as needed for the purposes set out above:
-    · — kept for [TO BE DETERMINED, suggested: 36 months] from collection, or longer if a commercial relationship is active.
-    · [Action item: confirm retention periods with legal counsel before publishing.]
-    · 5. Who we share your data with
-/pt/blog/circular-economy-acoustics:
-    · The Circular Economy: A New Era for Acoustic Solutions | Re-Sound
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · The acoustic panel industry is undergoing a fundamental transformation. Traditional linear models—take, make, dispose—are giving way to c…
-    · Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives,…
-    · At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels…
-    · The best acoustic panel is one that never becomes waste.
-    · Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we …
-    · The transition to circular acoustics is just beginning. As more companies adopt these principles, we'll see an industry transformed—one w…
-/sv/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · 3. Why we use your data (and our legal basis)
-    · Following up on a lead with relevant product information
-    · 4. How long we keep your data
-    · We only keep your personal data for as long as needed for the purposes set out above:
-    · [Action item: confirm retention periods with legal counsel before publishing.]
-    · 5. Who we share your data with
-    · We do not sell your personal data. We share it only with the processors and partners we need to operate the website and respond to you:
-/no/privacy:
-    · 1. Who we are
-    · Re-Sound is a brand of
-    · If you have any question about how your personal data is handled, you can contact us at the address above.
-    · 2. What data we collect
-    · Information you give us directly
-    · 3. Why we use your data (and our legal basis)
-    · Following up on a lead with relevant product information
-    · 4. How long we keep your data
-    · We only keep your personal data for as long as needed for the purposes set out above:
-    · [Action item: confirm retention periods with legal counsel before publishing.]
-    · 5. Who we share your data with
-    · We do not sell your personal data. We share it only with the processors and partners we need to operate the website and respond to you:
-/da/blog:
-    · Thoughts on acoustics, sustainability, and design from our team.
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-    · © 2026 Re-Sound. All rights reserved.
-/is/blog:
-    · Thoughts on acoustics, sustainability, and design from our team.
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/nl/terms:
-    · These terms govern your use of the website
-    · (the "Site"), operated by STRETCH-BE BV, Gentseweg 309 A3, 9120 Beveren-Waas, Belgium ("Re-Sound", "we", "us"). By accessing or using the…
-    · These terms cover the informational use of the Site only. Separate commercial terms apply to any purchase, quote, or contract for Re-Soun…
-    · You may view and download content for personal, non-commercial reference. Any other use — including reproduction, distribution, modificat…
-    · You agree not to:
-    · Attempt to gain unauthorised access to the Site, its servers, or related systems.
-    · The Site may contain links to third-party websites. We provide these links for convenience and do not endorse, control, or take responsib…
-    · To the maximum extent permitted by applicable law, Re-Sound is not liable for any indirect, incidental, consequential, or punitive damage…
-    · 9. Governing law and jurisdiction
-    · These terms are governed by Belgian law. Any dispute arising from or in connection with these terms or your use of the Site is subject to…
-    · For questions about these terms, contact
-/da/sustainability:
-    · We're not just reducing waste—we're eliminating it through a fully circular approach.
-    · Materials are sorted, cleaned, and processed into acoustic-grade fiber.
-    · Fibers are bonded and finished into beautiful, high-performance acoustic panels.
-    · At end of life, we pick up panels for free and recycle them into new products.
-    · Textiles saved from landfill
-    · Panels recycled into new products
-    · Certificate of circular disposal
-    · © 2026 Re-Sound. All rights reserved.
-/is/blog/circular-economy-acoustics:
-    · The Circular Economy: A New Era for Acoustic Solutions | Re-Sound
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives,…
-    · At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels…
-    · The best acoustic panel is one that never becomes waste.
-    · Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we …
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/da/blog/circular-economy-acoustics:
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives,…
-    · At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels…
-    · The best acoustic panel is one that never becomes waste.
-    · Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we …
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-    · © 2026 Re-Sound. All rights reserved.
-/es/blog/office-acoustic-solutions:
-    · Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.
-    · Open-plan offices present unique acoustic challenges. Without proper treatment, noise levels can reduce productivity by up to 66%. Here's…
-    · Sound in offices comes from multiple sources: speech, equipment, HVAC systems, and external noise. Effective acoustic design addresses al…
-    · Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers b…
-    · Good acoustics is invisible—you only notice when it's missing.
-    · Balancing Absorption and Reflection
-    · Begin with high-impact areas and measure the difference. Often, strategic placement of a few panels can transform a space.
-    · The Circular Economy: A New Era for Acoustic Solutions
-/pt/blog/office-acoustic-solutions:
-    · Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.
-    · Open-plan offices present unique acoustic challenges. Without proper treatment, noise levels can reduce productivity by up to 66%. Here's…
-    · Sound in offices comes from multiple sources: speech, equipment, HVAC systems, and external noise. Effective acoustic design addresses al…
-    · Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers b…
-    · Good acoustics is invisible—you only notice when it's missing.
-    · Balancing Absorption and Reflection
-    · Begin with high-impact areas and measure the difference. Often, strategic placement of a few panels can transform a space.
-    · The Circular Economy: A New Era for Acoustic Solutions
-/sv/sustainability:
-    · We're not just reducing waste—we're eliminating it through a fully circular approach.
-    · Materials are sorted, cleaned, and processed into acoustic-grade fiber.
-    · Fibers are bonded and finished into beautiful, high-performance acoustic panels.
-    · At end of life, we pick up panels for free and recycle them into new products.
-    · Textiles saved from landfill
-    · Panels recycled into new products
-    · Certificate of circular disposal
-/no/sustainability:
-    · We're not just reducing waste—we're eliminating it through a fully circular approach.
-    · Materials are sorted, cleaned, and processed into acoustic-grade fiber.
-    · Fibers are bonded and finished into beautiful, high-performance acoustic panels.
-    · At end of life, we pick up panels for free and recycle them into new products.
-    · Textiles saved from landfill
-    · Panels recycled into new products
-    · Certificate of circular disposal
-/is/sustainability:
-    · We're not just reducing waste—we're eliminating it through a fully circular approach.
-    · Materials are sorted, cleaned, and processed into acoustic-grade fiber.
-    · Fibers are bonded and finished into beautiful, high-performance acoustic panels.
-    · At end of life, we pick up panels for free and recycle them into new products.
-    · Textiles saved from landfill
-    · Panels recycled into new products
-    · Certificate of circular disposal
-/es/blog:
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-/pt/blog:
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · Practical tips for improving acoustics in open-plan offices, meeting rooms, and collaborative spaces.
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-/sv/blog:
-    · Thoughts on acoustics, sustainability, and design from our team.
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/no/blog:
-    · Thoughts on acoustics, sustainability, and design from our team.
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/pt/products/rpet-flex-groove:
-    · The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt…
-    · Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and …
-    · Works with inner and outer radii
-    · Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — …
-    · Engineered grooves for controlled flexibility
-    · Smooth transitions on any curved surface
-    · Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is…
-    · Reduces echo and reverberation
-    · Made from recycled plastic bottles
-    · Ensure the curved surface is clean and ready for mounting
-    · Use recommended adhesive on the panel back
-    · Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensu…
-/es/products/rpet-flex-groove:
-    · The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt…
-    · Flex-Groove panels provide a versatile acoustic solution for curved surfaces, effortlessly adapting to any shape. Suitable for inner and …
-    · Works with inner and outer radii
-    · Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — …
-    · Engineered grooves for controlled flexibility
-    · Smooth transitions on any curved surface
-    · Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is…
-    · Reduces echo and reverberation
-    · Made from recycled plastic bottles
-    · Ensure the curved surface is clean and ready for mounting
-    · Use recommended adhesive on the panel back
-    · Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensu…
-/sv/blog/circular-economy-acoustics:
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives,…
-    · At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels…
-    · The best acoustic panel is one that never becomes waste.
-    · Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we …
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/no/blog/circular-economy-acoustics:
-    · How circular design principles are transforming the acoustic panel industry and why it matters for the future.
-    · Every year, millions of tons of acoustic materials end up in landfills. These materials, often containing synthetic fibers and adhesives,…
-    · At Re-Sound, we've designed our panels from the ground up for circularity. Using only recycled textiles and bio-based binders, our panels…
-    · The best acoustic panel is one that never becomes waste.
-    · Circular design isn't just good for the environment—it's good business. By creating value from waste and offering take-back programs, we …
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/es/blog/sound-absorption-explained:
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.
-    · The weighted sound absorption coefficient (αw) is the most common metric. It ranges from 0 (no absorption) to 1 (complete absorption). Ou…
-    · More isn't always better. The ideal coverage depends on room volume, surface materials, and intended use. We offer free acoustic consulta…
-    · While specifications matter, the best acoustic design considers the whole experience. Aesthetics, sustainability, and wellbeing all contr…
-    · The Circular Economy: A New Era for Acoustic Solutions
-/pt/blog/sound-absorption-explained:
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.
-    · The weighted sound absorption coefficient (αw) is the most common metric. It ranges from 0 (no absorption) to 1 (complete absorption). Ou…
-    · More isn't always better. The ideal coverage depends on room volume, surface materials, and intended use. We offer free acoustic consulta…
-    · While specifications matter, the best acoustic design considers the whole experience. Aesthetics, sustainability, and wellbeing all contr…
-    · The Circular Economy: A New Era for Acoustic Solutions
-/es/products/rpet-panel:
-    · Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorber…
-    · rPET - Panel transforms recycled PET bottles into high-performance acoustic panels. Each panel diverts plastic waste from landfills while…
-    · Made from up to 50% recycled PET bottles
-    · 100% recyclable at end of life
-    · Discover why architects, designers, and acoustic consultants choose rPET - Panel for their most demanding projects.
-    · Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.
-    · Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.
-    · Lightweight and stable. Cut, drill, mill, and install with standard tools.
-    · Any color from RAL or NCS palette
-    · Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.
-    · Sound energy converted to heat
-    · Dramatically improve intelligibility in meeting rooms and classrooms
-/is/products/rpet-flex-groove:
-    · The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt…
-    · Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — …
-    · Engineered grooves for controlled flexibility
-    · Smooth transitions on any curved surface
-    · Our carefully curated color palette offers versatile options for any interior. From soft neutrals to bold statement colors, each shade is…
-    · Made from recycled plastic bottles
-    · Ensure the curved surface is clean and ready for mounting
-    · Use recommended adhesive on the panel back
-    · Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensu…
-    · Can be recycled at end of life
-    · Get a personalized quote for your project. Our team will help you choose the perfect flex solution.
-    · Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements.
-/da/blog/recycled-materials-quality:
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-…
-    · As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use…
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-    · © 2026 Re-Sound. All rights reserved.
-/is/blog/recycled-materials-quality:
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-…
-    · As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use…
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/da/contact:
-    · Leave this field empty
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-    · © 2026 Re-Sound. All rights reserved.
-/is/contact:
-    · Have questions about our products or want a custom quote? We'd love to hear from you.
-    · Leave this field empty
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/pt/products/rpet-panel:
-    · Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorber…
-    · Made from up to 50% recycled PET bottles
-    · Discover why architects, designers, and acoustic consultants choose rPET - Panel for their most demanding projects.
-    · Made from recycled PET bottles, fully recyclable, and contributing to a circular economy.
-    · Acoustic absorption up to αw 1.00—the highest rating possible for sound absorption.
-    · Lightweight and stable. Cut, drill, mill, and install with standard tools.
-    · Any color from RAL or NCS palette
-    · Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.
-    · Sound energy converted to heat
-    · Dramatically improve intelligibility in meeting rooms and classrooms
-    · Create calmer environments that boost wellbeing and productivity
-    · Reduce sound transmission between spaces for confidential conversationss
-/es/products/rwood-groove:
-    · Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined wi…
-    · Suitable for walls and ceilings
-    · Four distinct groove patterns to match any architectural vision. From classic balanced proportions to bold wide strips—find the perfect e…
-    · Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range…
-    · Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.
-    · The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo, eliminate noise, and…
-    · Control echo and improve speech clarity in any room
-    · Create calmer, more peaceful environments
-    · Slide tongue into groove for seamless connection
-    · Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from respons…
-    · Wood from responsibly managed forests
-    · Acoustic backing from recycled materials
-/pt/products/rwood-groove:
-    · Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined wi…
-    · Suitable for walls and ceilings
-    · Four distinct groove patterns to match any architectural vision. From classic balanced proportions to bold wide strips—find the perfect e…
-    · Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range…
-    · Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.
-    · The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo, eliminate noise, and…
-    · Control echo and improve speech clarity in any room
-    · Create calmer, more peaceful environments
-    · Slide tongue into groove for seamless connection
-    · Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from respons…
-    · Wood from responsibly managed forests
-    · Acoustic backing from recycled materials
-/es/products/rwood-micro:
-    · rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perfora…
-    · The secret lies in the combination of two acoustic mechanisms: thousands of precisely engineered micro-holes in the surface and sound-abs…
-    · Over-veneered edges for seamless joints
-    · Suitable for walls and ceilings
-    · Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L …
-    · Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available.
-    · High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.
-    · From super matte to high gloss UV-cured lacquer
-    · The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism…
-    · A-grade veneer with precision-drilled holes
-    · Fire Retardant, with sound chambers
-    · Micro-holes and sound chambers work together for superior absorption
-/pt/products/rwood-micro:
-    · rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perfora…
-    · The secret lies in the combination of two acoustic mechanisms: thousands of precisely engineered micro-holes in the surface and sound-abs…
-    · Over-veneered edges for seamless joints
-    · Suitable for walls and ceilings
-    · Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L …
-    · Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available.
-    · High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.
-    · From super matte to high gloss UV-cured lacquer
-    · The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism…
-    · A-grade veneer with precision-drilled holes
-    · Fire Retardant, with sound chambers
-    · Micro-holes and sound chambers work together for superior absorption
-/es/blog/recycled-materials-quality:
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Not all recycled textiles are suitable for acoustic panels. We carefully select and sort materials to ensure consistent fiber quality and…
-    · Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-…
-    · As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use…
-    · The Circular Economy: A New Era for Acoustic Solutions
-/pt/blog/recycled-materials-quality:
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Not all recycled textiles are suitable for acoustic panels. We carefully select and sort materials to ensure consistent fiber quality and…
-    · Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-…
-    · As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use…
-    · The Circular Economy: A New Era for Acoustic Solutions
-/da/products/rpet-flex-groove:
-    · The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt…
-    · Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — …
-    · Smooth transitions on any curved surface
-    · Made from recycled plastic bottles
-    · Use recommended adhesive on the panel back
-    · Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensu…
-    · Can be recycled at end of life
-    · Get a personalized quote for your project. Our team will help you choose the perfect flex solution.
-    · Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements.
-    · © 2026 Re-Sound. All rights reserved.
-/da/blog/sound-absorption-explained:
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-    · © 2026 Re-Sound. All rights reserved.
-/sv/blog/recycled-materials-quality:
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-…
-    · As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use…
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/no/blog/recycled-materials-quality:
-    · How we ensure our recycled textile panels match or exceed the performance of traditional materials.
-    · Our proprietary processing transforms mixed textiles into uniform acoustic fiber. This consistency is key to achieving predictable, high-…
-    · As processing technology improves, recycled materials will increasingly outperform virgin alternatives. The question isn't whether to use…
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/is/blog/sound-absorption-explained:
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/sv/products/rpet-flex-groove:
-    · The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt…
-    · Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — …
-    · Smooth transitions on any curved surface
-    · Made from recycled plastic bottles
-    · Use recommended adhesive on the panel back
-    · Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensu…
-    · Can be recycled at end of life
-    · Get a personalized quote for your project. Our team will help you choose the perfect flex solution.
-    · Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements.
-/da/about:
-    · We're on a mission to prove that sustainable business is good business.
-    · We're always exploring new materials and improving our processes.
-    · Partnerships with social workshops
-    · © 2026 Re-Sound. All rights reserved.
-/no/products/rpet-flex-groove:
-    · The ultimate acoustic solution for curved surfaces. Made from recycled PET felt with precision V-cut grooves, these flexible panels adapt…
-    · Each panel is incised with precision V-cuts, allowing it to bend without breaking. This smart cut creates the signature ribbed texture — …
-    · Smooth transitions on any curved surface
-    · Made from recycled plastic bottles
-    · Use recommended adhesive on the panel back
-    · Every Flex-Groove panel is crafted from 100% recycled PET plastic bottles, giving new life to waste materials. Our circular approach ensu…
-    · Can be recycled at end of life
-    · Get a personalized quote for your project. Our team will help you choose the perfect flex solution.
-    · Get a personalized quote for your project. Our team will help you choose the perfect color and calculate your requirements.
-/da/blog/office-acoustic-solutions:
-    · Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers b…
-    · Good acoustics is invisible—you only notice when it's missing.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-    · © 2026 Re-Sound. All rights reserved.
-/is/blog/office-acoustic-solutions:
-    · Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers b…
-    · Good acoustics is invisible—you only notice when it's missing.
-    · The Circular Economy: A New Era for Acoustic Solutions
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/es/products/rwood-perf:
-    · rWood - Perf panels are one of the most effective and widely used solutions for acoustic walls and ceilings. The precisely drilled round …
-    · Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges for seamless joints, these panels are engineered fo…
-    · Over-veneered edges for seamless joints
-    · Custom formats up to 3050 × 1220 mm
-    · Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for demanding acoustic spaces to more discr…
-    · Balanced look and performance
-    · Match the core to your veneer to make perforations blend in, or choose a contrasting core for a decorative effect.
-    · Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated…
-    · Lively variations and characteristic expression associated with each wood species.
-    · Even colour tone and structure for a more harmonious, uniform appearance.
-    · Effective across the full frequency spectrum, from low to high
-    · Add mineral wool in the cavity for optimal absorption
-/pt/products/rwood-perf:
-    · rWood - Perf panels are one of the most effective and widely used solutions for acoustic walls and ceilings. The precisely drilled round …
-    · Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges for seamless joints, these panels are engineered fo…
-    · Over-veneered edges for seamless joints
-    · Custom formats up to 3050 × 1220 mm
-    · Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for demanding acoustic spaces to more discr…
-    · Balanced look and performance
-    · Match the core to your veneer to make perforations blend in, or choose a contrasting core for a decorative effect.
-    · Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated…
-    · Lively variations and characteristic expression associated with each wood species.
-    · Even colour tone and structure for a more harmonious, uniform appearance.
-    · Effective across the full frequency spectrum, from low to high
-    · Add mineral wool in the cavity for optimal absorption
-/sv/contact:
-    · Leave this field empty
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/no/contact:
-    · Leave this field empty
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/sv/blog/sound-absorption-explained:
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/no/blog/sound-absorption-explained:
-    · Everything you need to know about sound absorption coefficients and selecting the right panels.
-    · Understanding acoustic specifications can be challenging. This guide breaks down the key metrics and what they mean for your project.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/da/products:
-    · Showing all 13 products
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Made from recycled materials and 100% recyclable at end of life.
-    · © 2026 Re-Sound. All rights reserved.
-/sv/about:
-    · We're on a mission to prove that sustainable business is good business.
-    · We're always exploring new materials and improving our processes.
-    · Partnerships with social workshops
-/no/about:
-    · We're on a mission to prove that sustainable business is good business.
-    · We're always exploring new materials and improving our processes.
-    · Partnerships with social workshops
-/da/products/rpet-panel:
-    · Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorber…
-    · Made from up to 50% recycled PET bottles
-    · Any color from RAL or NCS palette
-    · Vil du have flere muligheder?
-    · All base colors can be combined with finishing layers like acoustic fabrics, HPL laminate, real wood veneer, or custom prints—without com…
-    · Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.
-    · rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the mate…
-    · Secure fixing without splitting
-    · You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board.
-    · Made from post-consumer PET bottles
-    · © 2026 Re-Sound. All rights reserved.
-/is/products/rwood-groove:
-    · Suitable for walls and ceilings
-    · Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range…
-    · Create calmer, more peaceful environments
-    · Slide tongue into groove for seamless connection
-    · Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from respons…
-    · Wood from responsibly managed forests
-    · Acoustic backing from recycled materials
-    · Clean edges where panels meet other surfaces
-/sv/blog/office-acoustic-solutions:
-    · Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers b…
-    · Good acoustics is invisible—you only notice when it's missing.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/no/blog/office-acoustic-solutions:
-    · Not all surfaces need treatment. Focus on ceiling areas above workstations, walls between collaborative and focused zones, and dividers b…
-    · Good acoustics is invisible—you only notice when it's missing.
-    · Get the latest news on circular acoustics, new products, and sustainable design insights.
-/da/products/rwood-groove:
-    · Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range…
-    · Create calmer, more peaceful environments
-    · Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from respons…
-    · Wood from responsibly managed forests
-    · Acoustic backing from recycled materials
-    · Clean edges where panels meet other surfaces
-    · © 2026 Re-Sound. All rights reserved.
-/no/products/rpet-panel:
-    · Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorber…
-    · Made from up to 50% recycled PET bottles
-    · Any color from RAL or NCS palette
-    · Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.
-    · rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the mate…
-    · Secure fixing without splitting
-    · You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board.
-    · Made from post-consumer PET bottles
-    · Be om din prøvepakke
-    · Be om gratis prøver
-/is/products/rpet-panel:
-    · Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorber…
-    · Made from up to 50% recycled PET bottles
-    · Discover why architects, designers, and acoustic consultants choose rPET - Panel for their most demanding projects.
-    · Any color from RAL or NCS palette
-    · Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.
-    · Reduce sound transmission between spaces for confidential conversationss
-    · rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the mate…
-    · Secure fixing without splitting
-    · You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board.
-    · Made from post-consumer PET bottles
-/es/products/rpet-groove:
-    · Post-consumer plastic bottles are collected and sorted
-    · Bottles are cleaned, shredded, and melted into PET fibers
-    · Fibers are compressed into dense acoustic felt sheets
-    · From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved t…
-    · Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precis…
-    · The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise,…
-    · CNC-cut pattern for visual depth
-    · rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the pa…
-    · rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of…
-/pt/products/rpet-groove:
-    · Post-consumer plastic bottles are collected and sorted
-    · Bottles are cleaned, shredded, and melted into PET fibers
-    · Fibers are compressed into dense acoustic felt sheets
-    · From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved t…
-    · Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precis…
-    · The unique groove design combined with high-density recycled PET felt creates exceptional sound absorption. Reduce echo, eliminate noise,…
-    · CNC-cut pattern for visual depth
-    · rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the pa…
-    · rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of…
-/is/products/rwood-micro:
-    · rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perfora…
-    · Over-veneered edges for seamless joints
-    · Suitable for walls and ceilings
-    · A-grade veneer with precision-drilled holes
-    · Fire Retardant, with sound chambers
-    · rWood - Micro panels are installed with our concealed mounting system, ensuring invisible fixings and a flawless finish. The system allow…
-    · Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet rem…
-    · Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.
-    · Wood from responsibly managed forests
-/sv/products/rwood-groove:
-    · Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range…
-    · Create calmer, more peaceful environments
-    · Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from respons…
-    · Wood from responsibly managed forests
-    · Acoustic backing from recycled materials
-    · Clean edges where panels meet other surfaces
-/sv/products:
-    · Discover our range of circular acoustic panels, each designed for specific applications while maintaining the highest standards of sustai…
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Made from recycled materials and 100% recyclable at end of life.
-/no/products/rwood-groove:
-    · Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range…
-    · Create calmer, more peaceful environments
-    · Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from respons…
-    · Wood from responsibly managed forests
-    · Acoustic backing from recycled materials
-    · Clean edges where panels meet other surfaces
-/da:
-    · Choose your natural finish
-    · Five wood species, each with its own character. All applied over a 100% recycled acoustic core.
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Why Choose Circular Acoustic Panels?
-    · Get a custom quote
-    · Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.
-    · © 2026 Re-Sound. All rights reserved.
-/is/products/rpet-groove:
-    · Bottles are cleaned, shredded, and melted into PET fibers
-    · Fibers are compressed into dense acoustic felt sheets
-    · From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved t…
-    · Four distinctive groove patterns to match any architectural vision. From clean parallel lines to dynamic chevrons, each pattern is precis…
-    · CNC-cut pattern for visual depth
-    · rPET - Groove panels are designed for quick and easy installation. Their lightweight construction means a single person can handle the pa…
-    · rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of…
-/sv/products/rpet-panel:
-    · Transform any space with rPET - Panel acoustic panels. Made from 100% recycled PET bottles, these lightweight yet powerful sound absorber…
-    · Made from up to 50% recycled PET bottles
-    · Any color from RAL or NCS palette
-    · Every building and every room is unique. rPET - Panel adapts to any acoustic challenge with versatile applications.
-    · rPET - Panel combines the workability of MDF with incredibly light weight. Cut it with a saw, mill it on CNC, drill it, v-cut it—the mate…
-    · Secure fixing without splitting
-    · You soon find out that rPET - Panel can be processed as quickly and easily as an MDF board.
-    · Made from post-consumer PET bottles
-/is:
-    · Engineered for acoustic perfection
-    · Choose your natural finish
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Why Choose Circular Acoustic Panels?
-    · Get a custom quote
-    · Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.
-/is/products/solid:
-    · Large format for maximum impact
-    · Reduce reverberation for clearer conversations
-    · Large format for high-impact results
-/is/about:
-    · We're always exploring new materials and improving our processes.
-    · Partnerships with social workshops
-/da/products/rwood-micro:
-    · rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perfora…
-    · A-grade veneer with precision-drilled holes
-    · Fire Retardant, with sound chambers
-    · Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet rem…
-    · Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.
-    · Wood from responsibly managed forests
-    · © 2026 Re-Sound. All rights reserved.
-/fr/contact:
-    · Leave this field empty
-/es/contact:
-    · Leave this field empty
-/pt/contact:
-    · Leave this field empty
-/sv:
-    · Choose your natural finish
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Why Choose Circular Acoustic Panels?
-    · Get a custom quote
-    · Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.
-/sv/products/rwood-micro:
-    · rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perfora…
-    · A-grade veneer with precision-drilled holes
-    · Fire Retardant, with sound chambers
-    · Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet rem…
-    · Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.
-    · Wood from responsibly managed forests
-/da/products/rpet-groove:
-    · Bottles are cleaned, shredded, and melted into PET fibers
-    · Fibers are compressed into dense acoustic felt sheets
-    · From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved t…
-    · rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of…
-    · © 2026 Re-Sound. All rights reserved.
-/no:
-    · Choose your natural finish
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Why Choose Circular Acoustic Panels?
-    · Get a custom quote
-    · Tell us about your space — we will recommend the right acoustic solution and come back with a tailored quote.
-/no/products/rwood-micro:
-    · rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perfora…
-    · A-grade veneer with precision-drilled holes
-    · Fire Retardant, with sound chambers
-    · Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet rem…
-    · Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.
-    · Wood from responsibly managed forests
-/nl/contact:
-    · Leave this field empty
-/de/contact:
-    · Leave this field empty
-/no/products:
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Made from recycled materials and 100% recyclable at end of life.
-/is/products:
-    · Sustainable grooved acoustic panels made from recycled PET. Modern aesthetics with excellent acoustic performance.
-    · Made from recycled materials and 100% recyclable at end of life.
-/is/products/rwood-perf:
-    · Over-veneered edges for seamless joints
-    · Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for demanding acoustic spaces to more discr…
-    · Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated…
-    · Lively variations and characteristic expression associated with each wood species.
-    · Wood from responsibly managed forests
-    · With 50mm mineral wool
-/da/products/interior:
-    · Create calmer, more comfortable environments
-    · © 2026 Re-Sound. All rights reserved.
-/sv/products/rpet-groove:
-    · Bottles are cleaned, shredded, and melted into PET fibers
-    · Fibers are compressed into dense acoustic felt sheets
-    · From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved t…
-    · rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of…
-/no/products/rpet-groove:
-    · Bottles are cleaned, shredded, and melted into PET fibers
-    · Fibers are compressed into dense acoustic felt sheets
-    · From neutral tones to bold accents, our curated color palette fits seamlessly into any interior design concept. All colors are achieved t…
-    · rPET - Groove panels embody the circular economy. Made entirely from post-consumer recycled plastic, they can be recycled again at end of…
-/is/products/interior:
-    · Reduce reverberation for clearer conversations
-    · Create calmer, more comfortable environments
-/da/products/rwood-perf:
-    · Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated…
-    · Lively variations and characteristic expression associated with each wood species.
-    · Wood from responsibly managed forests
-    · With 50mm mineral wool
-    · © 2026 Re-Sound. All rights reserved.
-/no/products/rwood-perf:
-    · Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated…
-    · Lively variations and characteristic expression associated with each wood species.
-    · Wood from responsibly managed forests
-    · With 50mm mineral wool
-/sv/products/rwood-perf:
-    · Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated…
-    · Lively variations and characteristic expression associated with each wood species.
-    · Wood from responsibly managed forests
-    · With 50mm mineral wool
-/de/products/rpet-panel:
-    · Any color from RAL or NCS palette
-    · Up to 40 mm
-    · 5 (Midnight to Frost)
-/nl/products/rpet-panel:
-    · Any color from RAL or NCS palette
-    · Up to 40 mm
-    · 5 (Midnight to Frost)
-/fr/products/rpet-panel:
-    · Any color from RAL or NCS palette
-    · Up to 40 mm
-    · 5 (Midnight to Frost)
-/da/products/solid:
-    · © 2026 Re-Sound. All rights reserved.
-/da/products/divide:
-    · © 2026 Re-Sound. All rights reserved.
-/sv/products/interior:
-    · Create calmer, more comfortable environments
-/no/products/interior:
-    · Create calmer, more comfortable environments
-/da/faq:
-    · © 2026 Re-Sound. All rights reserved.
-/is/faq:
-    · Get ég pantað sýnishorn?
+/de/guides/telefonbox-preise:
+    · up to 4 m³/min
+    · (4th reviewer — not loaded)
+
+== (b2) Spanish text segments on /pt pages
+OK — none found
 
 == (c) hreflang + canonical per page
-260 pages: 11 hreflang, canonical present
-20 pages: 11 hreflang, canonical present, noindex
+180 pages: 7 hreflang, canonical present
+6 pages: 0 hreflang, canonical present — /nl/blog/pet-vilt-of-houten-akoestische-panelen, /nl/blog/nagalmtijd-klaslokaal-normen, /nl/blog/hoeveel-akoestische-panelen-nodig, /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing, /nl/blog/akoestische-panelen-restaurant, /nl/blog/akoestiek-open-kantoor-verbeteren
+4 pages: 5 hreflang, canonical present — /en/guides/phone-booth-prices, /nl/guides/prijzen-belcabines, /fr/guides/prix-cabines-acoustiques, /de/guides/telefonbox-preise
 
 == (d) JSON-LD
-blocks: 500, parse errors: 0
-types: Question=790, Answer=790, PropertyValue=720, ListItem=510, Organization=230, ImageObject=180, BreadcrumbList=170, FAQPage=140, Product=130, Brand=130, Country=130, MerchantReturnPolicy=130, BlogPosting=40, PostalAddress=10, ContactPoint=10, WebSite=10, AggregateOffer=10
-Product nodes: 130, with offers: 10  ← FAIL
-FAIL /en/products/solid: Product "Solid Acoustic Wall Panels" has no offers
-FAIL /en/products/divide: Product "Divide Freestanding Acoustic Screens" has no offers
-FAIL /en/products/rwood-groove: Product "rWood Groove Acoustic Wood Panels" has no offers
-FAIL /en/products/rwood-micro: Product "rWood Micro Micro-Perforated Acoustic Wood Panels" has no offers
-FAIL /en/products/rwood-perf: Product "rWood Perf Perforated Acoustic Wood Panels" has no offers
-FAIL /en/products/rwood-veneer: Product "rWood Panel Acoustic Wood Veneer Panels" has no offers
-FAIL /en/products/rpet-panel: Product "rPET Panel Recycled PET Acoustic Panels" has no offers
-FAIL /en/products/rpet-groove: Product "rPET Groove Recycled PET Acoustic Panels" has no offers
-FAIL /en/products/rpet-flex-groove: Product "rPET Flex Groove Flexible Acoustic Panels" has no offers
-FAIL /en/products/solo-flex: Product "Solo Flex Single-Person Acoustic Soundbooth" has no offers
-FAIL /en/products/duo: Product "Duo Two-Configuration Acoustic Soundbooth" has no offers
-FAIL /en/products/modular-xl: Product "Modular XL Scalable Acoustic Meeting Pod" has no offers
-FAIL /nl/products/solid: Product "Solid Akoestische Wandpanelen" has no offers
-FAIL /nl/products/divide: Product "Divide Vrijstaande Akoestische Schermen" has no offers
-FAIL /nl/products/rwood-groove: Product "rWood Groove Akoestische Houtpanelen" has no offers
-FAIL /nl/products/rwood-micro: Product "rWood Micro Micro-Geperforeerde Akoestische Houtpanelen" has no offers
-FAIL /nl/products/rwood-perf: Product "rWood Perf Geperforeerde Akoestische Houtpanelen" has no offers
-FAIL /nl/products/rwood-veneer: Product "rWood Panel Akoestische Houtfineer Panelen" has no offers
-FAIL /nl/products/rpet-panel: Product "rPET Panel Gerecycleerde PET Akoestische Panelen" has no offers
-FAIL /nl/products/rpet-groove: Product "rPET Groove Gerecycleerde PET Akoestische Panelen" has no offers
-FAIL /nl/products/rpet-flex-groove: Product "rPET Flex Groove Flexibele Akoestische Panelen" has no offers
-FAIL /nl/products/solo-flex: Product "Solo Flex Akoestische Cabine voor Één Persoon" has no offers
-FAIL /nl/products/duo: Product "Duo Akoestische Cabine in Twee Configuraties" has no offers
-FAIL /nl/products/modular-xl: Product "Modular XL Schaalbare Akoestische Vergaderpod" has no offers
-FAIL /fr/products/solid: Product "Solid Panneaux Muraux Acoustiques" has no offers
-FAIL /fr/products/divide: Product "Divide Cloisons Acoustiques Autoportantes" has no offers
-FAIL /fr/products/rwood-groove: Product "rWood Groove Panneaux Acoustiques en Bois" has no offers
-FAIL /fr/products/rwood-micro: Product "rWood Micro Panneaux Acoustiques en Bois Micro-Perforé" has no offers
-FAIL /fr/products/rwood-perf: Product "rWood Perf Panneaux Acoustiques en Bois Perforé" has no offers
-FAIL /fr/products/rwood-veneer: Product "rWood Panel Panneaux Acoustiques en Placage Bois" has no offers
-FAIL /fr/products/rpet-panel: Product "rPET Panel Panneaux Acoustiques en PET Recyclé" has no offers
-FAIL /fr/products/rpet-groove: Product "rPET Groove Panneaux Acoustiques en PET Recyclé" has no offers
-FAIL /fr/products/rpet-flex-groove: Product "Panneaux acoustiques flexibles rPET Flex Groove" has no offers
-FAIL /fr/products/solo-flex: Product "Solo Flex Cabine acoustique individuelle" has no offers
-FAIL /fr/products/duo: Product "Duo Cabine acoustique en deux configurations" has no offers
-FAIL /fr/products/modular-xl: Product "Modular XL Pod de réunion acoustique modulable" has no offers
-FAIL /de/products/solid: Product "Solid Akustische Wandpaneele" has no offers
-FAIL /de/products/divide: Product "Divide Freistehende Akustiktrennwände" has no offers
-FAIL /de/products/rwood-groove: Product "rWood Groove Akustische Holzpaneele" has no offers
-FAIL /de/products/rwood-micro: Product "rWood Micro Mikro-Perforierte Akustische Holzpaneele" has no offers
-FAIL /de/products/rwood-perf: Product "rWood Perf Perforierte Akustische Holzpaneele" has no offers
-FAIL /de/products/rwood-veneer: Product "rWood Panel Akustische Holzfurnierpaneele" has no offers
-FAIL /de/products/rpet-panel: Product "rPET Panel Recycelte PET-Akustikpaneele" has no offers
-FAIL /de/products/rpet-groove: Product "rPET Groove Recycelte PET-Akustikpaneele" has no offers
-FAIL /de/products/rpet-flex-groove: Product "rPET Flex Groove Flexible Akustikpaneele" has no offers
-FAIL /de/products/solo-flex: Product "Solo Flex Einzelpersonen-Akustikkabine" has no offers
-FAIL /de/products/duo: Product "Duo Akustikkabine mit zwei Konfigurationen" has no offers
-FAIL /de/products/modular-xl: Product "Modular XL Skalierbarer Akustik-Meeting-Pod" has no offers
-FAIL /es/products/solid: Product "Paneles Acústicos de Pared Solid" has no offers
-FAIL /es/products/divide: Product "Separadores Acústicos Autoportantes Divide" has no offers
-FAIL /es/products/rwood-groove: Product "rWood Groove Paneles Acústicos de Madera" has no offers
-FAIL /es/products/rwood-micro: Product "rWood Micro Paneles Acústicos de Madera Micro-Perforada" has no offers
-FAIL /es/products/rwood-perf: Product "rWood Perf Paneles Acústicos de Madera Perforada" has no offers
-FAIL /es/products/rwood-veneer: Product "rWood Panel Paneles Acústicos de Chapa de Madera" has no offers
-FAIL /es/products/rpet-panel: Product "rPET Panel Paneles Acústicos de PET Reciclado" has no offers
-FAIL /es/products/rpet-groove: Product "rPET Groove Paneles Acústicos de PET Reciclado" has no offers
-FAIL /es/products/rpet-flex-groove: Product "Paneles acústicos flexibles rPET Flex Groove" has no offers
-FAIL /es/products/solo-flex: Product "Solo Flex Cabina acústica individual" has no offers
-FAIL /es/products/duo: Product "Duo Cabina acústica en dos configuraciones" has no offers
-FAIL /es/products/modular-xl: Product "Modular XL Pod de reunión acústico escalable" has no offers
-FAIL /pt/products/solid: Product "Paneles Acústicos de Pared Solid" has no offers
-FAIL /pt/products/divide: Product "Separadores Acústicos Autoportantes Divide" has no offers
-FAIL /pt/products/rwood-groove: Product "rWood Groove Painéis Acústicos de Madeira" has no offers
-FAIL /pt/products/rwood-micro: Product "rWood Micro Painéis Acústicos de Madeira Micro-Perfurada" has no offers
-FAIL /pt/products/rwood-perf: Product "rWood Perf Painéis Acústicos de Madeira Perfurada" has no offers
-FAIL /pt/products/rwood-veneer: Product "rWood Panel Painéis Acústicos de Folha de Madeira" has no offers
-FAIL /pt/products/rpet-panel: Product "rPET Panel Painéis Acústicos de PET Reciclado" has no offers
-FAIL /pt/products/rpet-groove: Product "rPET Groove Painéis Acústicos de PET Reciclado" has no offers
-FAIL /pt/products/rpet-flex-groove: Product "Painéis acústicos flexíveis rPET Flex Groove" has no offers
-FAIL /pt/products/solo-flex: Product "Solo Flex Cabine acústica individual" has no offers
-FAIL /pt/products/duo: Product "Duo Cabine acústica em duas configurações" has no offers
-FAIL /pt/products/modular-xl: Product "Modular XL Pod de reunião acústico escalável" has no offers
-FAIL /da/products/solid: Product "Solid Acoustic Wall Panels" has no offers
-FAIL /da/products/divide: Product "Divide Freestanding Acoustic Screens" has no offers
-FAIL /da/products/rwood-groove: Product "rWood Groove Akustiske Træpaneler" has no offers
-FAIL /da/products/rwood-micro: Product "rWood Micro Mikro-Perforerede Akustiske Træpaneler" has no offers
-FAIL /da/products/rwood-perf: Product "rWood Perf Perforerede Akustiske Træpaneler" has no offers
-FAIL /da/products/rwood-veneer: Product "rWood Panel Akustiske Træfinerpaneler" has no offers
-FAIL /da/products/rpet-panel: Product "rPET Panel Genanvendt PET Akustikpaneler" has no offers
-FAIL /da/products/rpet-groove: Product "rPET Groove Genanvendt PET Akustikpaneler" has no offers
-FAIL /da/products/rpet-flex-groove: Product "rPET Flex Groove fleksible akustikpaneler" has no offers
-FAIL /da/products/solo-flex: Product "Solo Flex Akustisk énmandsbås" has no offers
-FAIL /da/products/duo: Product "Duo Akustisk bås i to konfigurationer" has no offers
-FAIL /da/products/modular-xl: Product "Modular XL Skalerbar akustisk mødepod" has no offers
-FAIL /sv/products/solid: Product "Solid Acoustic Wall Panels" has no offers
-FAIL /sv/products/divide: Product "Divide Freestanding Acoustic Screens" has no offers
-FAIL /sv/products/rwood-groove: Product "rWood Groove Akustiska Träpaneler" has no offers
-FAIL /sv/products/rwood-micro: Product "rWood Micro Mikro-Perforerade Akustiska Träpaneler" has no offers
-FAIL /sv/products/rwood-perf: Product "rWood Perf Perforerade Akustiska Träpaneler" has no offers
-FAIL /sv/products/rwood-veneer: Product "rWood Panel Akustiska Träfinerpaneler" has no offers
-FAIL /sv/products/rpet-panel: Product "rPET Panel Återvunna PET Akustikpaneler" has no offers
-FAIL /sv/products/rpet-groove: Product "rPET Groove Återvunna PET Akustikpaneler" has no offers
-FAIL /sv/products/rpet-flex-groove: Product "rPET Flex Groove flexibla akustikpaneler" has no offers
-FAIL /sv/products/solo-flex: Product "Solo Flex Akustisk enpersonsbås" has no offers
-FAIL /sv/products/duo: Product "Duo Akustisk bås i två konfigurationer" has no offers
-FAIL /sv/products/modular-xl: Product "Modular XL Skalbar akustisk mötespod" has no offers
-FAIL /no/products/solid: Product "Solid Acoustic Wall Panels" has no offers
-FAIL /no/products/divide: Product "Divide Freestanding Acoustic Screens" has no offers
-FAIL /no/products/rwood-groove: Product "rWood Groove Akustiske Trepaneler" has no offers
-FAIL /no/products/rwood-micro: Product "rWood Micro Mikro-Perforerte Akustiske Trepaneler" has no offers
-FAIL /no/products/rwood-perf: Product "rWood Perf Perforerte Akustiske Trepaneler" has no offers
-FAIL /no/products/rwood-veneer: Product "rWood Panel Akustiske Trefiner paneler" has no offers
-FAIL /no/products/rpet-panel: Product "rPET Panel Gjenvunnet PET Akustikkpaneler" has no offers
-FAIL /no/products/rpet-groove: Product "rPET Groove Gjenvunnet PET Akustikkpaneler" has no offers
-FAIL /no/products/rpet-flex-groove: Product "rPET Flex Groove fleksible akustikkpaneler" has no offers
-FAIL /no/products/solo-flex: Product "Solo Flex Akustisk enkeltbås" has no offers
-FAIL /no/products/duo: Product "Duo Akustisk bås i to konfigurasjoner" has no offers
-FAIL /no/products/modular-xl: Product "Modular XL Skalerbar akustisk møtepod" has no offers
-FAIL /is/products/solid: Product "Solid Acoustic Wall Panels" has no offers
-FAIL /is/products/divide: Product "Divide Freestanding Acoustic Screens" has no offers
-FAIL /is/products/rwood-groove: Product "rWood Groove Hljóðfræðileg Viðarpanel" has no offers
-FAIL /is/products/rwood-micro: Product "rWood Micro Örgataðar Hljóðfræðilegar Viðarpanel" has no offers
-FAIL /is/products/rwood-perf: Product "rWood Perf Gataðar Hljóðfræðilegar Viðarpanel" has no offers
-FAIL /is/products/rwood-veneer: Product "rWood Panel Hljóðfræðilegar Viðarfineerpaneler" has no offers
-FAIL /is/products/rpet-panel: Product "rPET Panel Endurunnin PET Hljóðpanel" has no offers
-FAIL /is/products/rpet-groove: Product "rPET Groove Endurunnin PET Hljóðpanel" has no offers
-FAIL /is/products/rpet-flex-groove: Product "rPET Flex Groove sveigjanleg hljóðplötur" has no offers
-FAIL /is/products/solo-flex: Product "Solo Flex Hljóðeinangraður einmannsklefi" has no offers
-FAIL /is/products/duo: Product "Duo Hljóðeinangraður klefi í tveimur uppsetningum" has no offers
-FAIL /is/products/modular-xl: Product "Modular XL Skalanlegur hljóðeinangraður fundarklefi" has no offers
+blocks: 422, parse errors: 0
+types: Question=850, Answer=850, ListItem=624, PropertyValue=480, Organization=150, BreadcrumbList=136, ImageObject=120, FAQPage=118, Product=84, Brand=84, Offer=84, MerchantReturnPolicy=84, Country=84, UnitPriceSpecification=42, BlogPosting=30, PostalAddress=24, ItemList=24, LocalBusiness=18, OpeningHoursSpecification=18, CollectionPage=18, GeoCoordinates=12, ContactPoint=6, WebSite=6, Person=6
+Product nodes: 84, with offers: 84  OK
 
 == (f) Internal links returning 404 (from crawled pages + sitemap document entries)
-FAIL 404 /en/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /en
-FAIL 404 /nl/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /nl
-FAIL 404 /fr/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /fr
-FAIL 404 /de/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /de
-FAIL 404 /es/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /es
-FAIL 404 /pt/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /pt
-FAIL 404 /da/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /da
-FAIL 404 /sv/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /sv
-FAIL 404 /no/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /no
-FAIL 404 /is/documents/rwood-groove/datasheet.pdf  ← linked from 1 page(s): /is
-checked 391 distinct internal URLs, 10 broken
-note: 1 links redirect (e.g. / → /en)
+checked 280 distinct internal URLs, 0 broken
 
 == (g) Title / meta description lengths (warn > 65 / > 155)
-titles > 65 chars: 28; descriptions > 155 chars: 96
+titles > 65 chars: 31; descriptions > 155 chars: 7
+WARN title  67  /en/products/pet-acoustic-panels  "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound"
+WARN title  71  /en/products/wood-acoustic-panels  "Wood Acoustic Panels — Veneer, Perforated & Micro-perforated | Re-Sound"
+WARN title  70  /en/products/acoustic-phone-booths  "Acoustic Phone Booths & Office Pods — Solo, Duo, Modular XL | Re-Sound"
+WARN title  68  /en/products/rwood-groove  "rWood Groove — Grooved Wood Acoustic Panels, Oak & Walnut | Re-Sound"
+WARN title  69  /en/products/rpet-flex-groove  "rPET Flex Groove — Flexible PET Acoustic Panels for Curves | Re-Sound"
+WARN title  67  /en/products/solo-flex  "Solo Flex — 1-Person Acoustic Phone Booth for the Office | Re-Sound"
 WARN title  70  /en/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
 WARN title  70  /en/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN title  66  /nl/products/rwood-micro  "rWood Micro Micro-Geperforeerde Akoestische Houtpanelen | Re-Sound"
+WARN title  72  /nl/products/pet-akoestische-panelen  "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound"
+WARN title  80  /nl/products/houten-akoestische-panelen  "Houten akoestische panelen — fineer, geperforeerd & microgeperforeerd | Re-Sound"
 WARN title  82  /nl/blog/circular-economy-acoustics  "De Circulaire Economie: Een Nieuw Tijdperk voor Akoestische Oplossingen | Re-Sound"
 WARN title  71  /nl/blog/office-acoustic-solutions  "De Perfecte Akoestische Omgeving Creëren in Moderne Kantoren | Re-Sound"
 WARN title  74  /nl/blog/recycled-materials-quality  "Gerecycleerde Materialen: Kwaliteitsnormen Halen en Overtreffen | Re-Sound"
+WARN title  73  /fr  "Panneaux acoustiques & cabines téléphoniques — fabricant belge | Re-Sound"
+WARN title  75  /fr/products/panneaux-acoustiques-bois  "Panneaux acoustiques en bois — placage, perforés & microperforés | Re-Sound"
 WARN title  82  /fr/blog/circular-economy-acoustics  "L'Économie Circulaire : Une Nouvelle Ère pour les Solutions Acoustiques | Re-Sound"
 WARN title  77  /fr/blog/office-acoustic-solutions  "Créer l'Environnement Acoustique Parfait dans les Bureaux Modernes | Re-Sound"
 WARN title  75  /fr/blog/recycled-materials-quality  "Matériaux Recyclés : Atteindre et Dépasser les Normes de Qualité | Re-Sound"
 WARN title  72  /fr/blog/sound-absorption-explained  "L'Absorption Sonore Expliquée : Un Guide pour les Architectes | Re-Sound"
+WARN title  66  /de/products/pet-akustikpaneele  "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound"
+WARN title  70  /de/products/holz-akustikpaneele  "Holz-Akustikpaneele — Furnier, perforiert & mikroperforiert | Re-Sound"
 WARN title  69  /de/blog/circular-economy-acoustics  "Die Kreislaufwirtschaft: Eine Neue Ära für Akustiklösungen | Re-Sound"
 WARN title  70  /de/blog/office-acoustic-solutions  "Die Perfekte Akustische Umgebung in Modernen Büros Schaffen | Re-Sound"
 WARN title  77  /de/blog/recycled-materials-quality  "Recycelte Materialien: Qualitätsstandards Erfüllen und Übertreffen | Re-Sound"
 WARN title  66  /de/blog/sound-absorption-explained  "Schallabsorption Erklärt: Ein Leitfaden für Architekten | Re-Sound"
-WARN title  66  /es/products/rwood-micro  "rWood Micro Paneles Acústicos de Madera Micro-Perforada | Re-Sound"
-WARN title  70  /es/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
-WARN title  70  /es/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN title  67  /pt/products/rwood-micro  "rWood Micro Painéis Acústicos de Madeira Micro-Perfurada | Re-Sound"
-WARN title  70  /pt/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
-WARN title  70  /pt/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN title  70  /da/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
-WARN title  70  /da/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN title  70  /sv/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
-WARN title  70  /sv/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN title  70  /no/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
-WARN title  70  /no/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN title  70  /is/blog/office-acoustic-solutions  "Creating the Perfect Acoustic Environment in Modern Offices | Re-Sound"
-WARN title  70  /is/blog/recycled-materials-quality  "Recycled Materials: Meeting and Exceeding Quality Standards | Re-Sound"
-WARN desc  171  /en/products/interior
-WARN desc  156  /en/products/rwood-groove
-WARN desc  156  /en/products/rwood-perf
-WARN desc  157  /en/products/rpet-panel
-WARN desc  196  /en/products/solo-flex
-WARN desc  200  /en/products/duo
-WARN desc  165  /en/products/modular-xl
-WARN desc  177  /en/where-to-buy
-WARN desc  226  /en/partner
-WARN desc  162  /en/faq
-WARN desc  177  /nl/products/interior
-WARN desc  158  /nl/products/solid
-WARN desc  162  /nl/products/divide
-WARN desc  180  /nl/products/rwood-groove
-WARN desc  176  /nl/products/rwood-micro
-WARN desc  169  /nl/products/rwood-perf
-WARN desc  178  /nl/products/rpet-panel
-WARN desc  172  /nl/products/rpet-flex-groove
-WARN desc  231  /nl/products/solo-flex
-WARN desc  253  /nl/products/duo
-WARN desc  193  /nl/products/modular-xl
-WARN desc  173  /nl/where-to-buy
-WARN desc  235  /nl/partner
-WARN desc  162  /nl/faq
-WARN desc  168  /fr
-WARN desc  201  /fr/products/interior
-WARN desc  177  /fr/products/solid
-WARN desc  161  /fr/products/divide
-WARN desc  175  /fr/products/rwood-groove
-WARN desc  184  /fr/products/rwood-micro
-WARN desc  175  /fr/products/rwood-perf
-WARN desc  170  /fr/products/rpet-panel
-WARN desc  178  /fr/products/rpet-groove
-WARN desc  171  /fr/products/rpet-flex-groove
-WARN desc  256  /fr/products/solo-flex
-WARN desc  259  /fr/products/duo
-WARN desc  210  /fr/products/modular-xl
-WARN desc  203  /fr/where-to-buy
-WARN desc  246  /fr/partner
-WARN desc  192  /fr/faq
-WARN desc  166  /de/products/interior
-WARN desc  156  /de/products/solid
-WARN desc  158  /de/products/divide
-WARN desc  184  /de/products/rwood-groove
-WARN desc  181  /de/products/rwood-micro
-WARN desc  168  /de/products/rwood-perf
-WARN desc  169  /de/products/rpet-panel
-WARN desc  230  /de/products/solo-flex
-WARN desc  276  /de/products/duo
-WARN desc  191  /de/products/modular-xl
-WARN desc  167  /de/sustainability
-WARN desc  223  /de/where-to-buy
-WARN desc  236  /de/partner
-WARN desc  168  /de/faq
-WARN desc  164  /es
-WARN desc  168  /es/products/rpet-flex-groove
-WARN desc  238  /es/products/solo-flex
-WARN desc  249  /es/products/duo
-WARN desc  201  /es/products/modular-xl
-WARN desc  212  /es/where-to-buy
-WARN desc  242  /es/partner
-WARN desc  189  /es/faq
-WARN desc  160  /pt
-WARN desc  175  /pt/products/rpet-flex-groove
-WARN desc  231  /pt/products/solo-flex
-WARN desc  236  /pt/products/duo
-WARN desc  188  /pt/products/modular-xl
-WARN desc  208  /pt/where-to-buy
-WARN desc  234  /pt/partner
-WARN desc  179  /pt/faq
-WARN desc  163  /da/products/rpet-flex-groove
-WARN desc  198  /da/products/solo-flex
-WARN desc  214  /da/products/duo
-WARN desc  173  /da/products/modular-xl
-WARN desc  173  /da/where-to-buy
-WARN desc  214  /da/partner
-WARN desc  174  /da/faq
-WARN desc  159  /sv/products/rpet-flex-groove
-WARN desc  199  /sv/products/solo-flex
-WARN desc  216  /sv/products/duo
-WARN desc  168  /sv/products/modular-xl
-WARN desc  170  /sv/where-to-buy
-WARN desc  223  /sv/partner
-WARN desc  159  /sv/faq
-WARN desc  159  /no/products/rpet-flex-groove
-WARN desc  197  /no/products/solo-flex
-WARN desc  214  /no/products/duo
-WARN desc  174  /no/products/modular-xl
-WARN desc  178  /no/where-to-buy
-WARN desc  215  /no/partner
-WARN desc  160  /no/faq
-WARN desc  206  /is/products/solo-flex
-WARN desc  205  /is/products/duo
-WARN desc  186  /is/products/modular-xl
-WARN desc  194  /is/where-to-buy
-WARN desc  213  /is/partner
+WARN title  76  /es/blog/circular-economy-acoustics  "La economía circular: una nueva era para las soluciones acústicas | Re-Sound"
+WARN title  75  /es/blog/office-acoustic-solutions  "Cómo crear el entorno acústico perfecto en las oficinas modernas | Re-Sound"
+WARN title  77  /es/blog/recycled-materials-quality  "Materiales reciclados: cumplir y superar los estándares de calidad | Re-Sound"
+WARN title  71  /pt/blog/circular-economy-acoustics  "A Economia Circular: Uma Nova Era para as Soluções Acústicas | Re-Sound"
+WARN title  69  /pt/blog/office-acoustic-solutions  "Criar o Ambiente Acústico Perfeito em Escritórios Modernos | Re-Sound"
+WARN title  73  /pt/blog/recycled-materials-quality  "Materiais Reciclados: Cumprir e Superar as Normas de Qualidade | Re-Sound"
+WARN desc  181  /en/guides/phone-booth-prices
+WARN desc  158  /nl/guides/prijzen-belcabines
+WARN desc  158  /fr/products/cabines-acoustiques
+WARN desc  158  /de/products/solo-eco
+WARN desc  160  /es/products/acoustic-phone-booths
+WARN desc  156  /es/products/solo-eco
+WARN desc  159  /pt/products/acoustic-phone-booths
 
 == Per-page summary
 status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%  path
-200     en       50    142    1        11     yes    2          0/0  index           —  /en
-200     en       19    107    1        11     yes    0          0/0  index           —  /en/products
-200     en       40    171    1        11     yes    3          1/1  index           —  /en/products/interior
-200     en       37    150    1        11     yes    3          1/0  index           —  /en/products/solid
-200     en       47    146    1        11     yes    3          1/0  index           —  /en/products/divide
-200     en       44    156    1        11     yes    3          1/0  index           —  /en/products/rwood-groove
-200     en       60    153    1        11     yes    3          1/0  index           —  /en/products/rwood-micro
-200     en       53    156    1        11     yes    3          1/0  index           —  /en/products/rwood-perf
-200     en       50    131    1        11     yes    3          1/0  index           —  /en/products/rwood-veneer
-200     en       50    157    1        11     yes    3          1/0  index           —  /en/products/rpet-panel
-200     en       51    146    1        11     yes    3          1/0  index           —  /en/products/rpet-groove
-200     en       52    148    1        11     yes    3          1/0  index           —  /en/products/rpet-flex-groove
-200     en       54    196    1        11     yes    3          1/0  index           —  /en/products/solo-flex
-200     en       52    200    1        11     yes    3          1/0  index           —  /en/products/duo
-200     en       51    165    1        11     yes    3          1/0  index           —  /en/products/modular-xl
-200     en       25    111    1        11     yes    0          0/0  index           —  /en/about
-200     en       25    119    1        11     yes    0          0/0  index           —  /en/sustainability
-200     en       40    177    1        11     yes    0          0/0  index           —  /en/where-to-buy
-200     en       57    226    1        11     yes    0          0/0  index           —  /en/partner
-200     en       30    162    1        11     yes    1          0/0  index           —  /en/faq
-200     en       21     75    1        11     yes    0          0/0  index           —  /en/contact
-200     en       15     87    1        11     yes    0          0/0  index           —  /en/blog
-200     en       25     60    1        11     yes    0          0/0  noindex         —  /en/privacy
-200     en       23     41    1        11     yes    0          0/0  noindex         —  /en/terms
-200     en       65    110    1        11     yes    2          0/0  index           —  /en/blog/circular-economy-acoustics
-200     en       70    101    1        11     yes    2          0/0  index           —  /en/blog/office-acoustic-solutions
-200     en       70     99    1        11     yes    2          0/0  index           —  /en/blog/recycled-materials-quality
-200     en       61     95    1        11     yes    2          0/0  index           —  /en/blog/sound-absorption-explained
-200     nl       61    155    1        11     yes    2          0/0  index         0.0  /nl
-200     nl       20    107    1        11     yes    0          0/0  index         0.0  /nl/products
-200     nl       43    177    1        11     yes    3          1/1  index         0.0  /nl/products/interior
-200     nl       40    158    1        11     yes    3          1/0  index         0.0  /nl/products/solid
-200     nl       50    162    1        11     yes    3          1/0  index         0.0  /nl/products/divide
-200     nl       47    180    1        11     yes    3          1/0  index         0.0  /nl/products/rwood-groove
-200     nl       66    176    1        11     yes    3          1/0  index         1.7  /nl/products/rwood-micro
-200     nl       59    169    1        11     yes    3          1/0  index         2.9  /nl/products/rwood-perf
-200     nl       53    149    1        11     yes    3          1/0  index         0.0  /nl/products/rwood-veneer
-200     nl       59    178    1        11     yes    3          1/0  index         4.5  /nl/products/rpet-panel
-200     nl       60    148    1        11     yes    3          1/0  index         0.0  /nl/products/rpet-groove
-200     nl       57    172    1        11     yes    3          1/0  index         0.0  /nl/products/rpet-flex-groove
-200     nl       56    231    1        11     yes    3          1/0  index         0.0  /nl/products/solo-flex
-200     nl       55    253    1        11     yes    3          1/0  index         0.0  /nl/products/duo
-200     nl       56    193    1        11     yes    3          1/0  index         0.0  /nl/products/modular-xl
-200     nl       24    134    1        11     yes    0          0/0  index         0.0  /nl/about
-200     nl       23    139    1        11     yes    0          0/0  index         0.0  /nl/sustainability
-200     nl       45    173    1        11     yes    0          0/0  index         0.0  /nl/where-to-buy
-200     nl       55    235    1        11     yes    0          0/0  index         0.0  /nl/partner
-200     nl       50    162    1        11     yes    1          0/0  index         0.0  /nl/faq
-200     nl       18     77    1        11     yes    0          0/0  index         9.1  /nl/contact
-200     nl       15     88    1        11     yes    0          0/0  index         0.0  /nl/blog
-200     nl       24     65    1        11     yes    0          0/0  noindex      54.4  /nl/privacy
-200     nl       30     52    1        11     yes    0          0/0  noindex      42.3  /nl/terms
-200     nl       82    122    1        11     yes    2          0/0  index         0.0  /nl/blog/circular-economy-acoustics
-200     nl       71    108    1        11     yes    2          0/0  index         0.0  /nl/blog/office-acoustic-solutions
-200     nl       74    125    1        11     yes    2          0/0  index         0.0  /nl/blog/recycled-materials-quality
-200     nl       64     98    1        11     yes    2          0/0  index         0.0  /nl/blog/sound-absorption-explained
-200     fr       58    168    1        11     yes    2          0/0  index         0.0  /fr
-200     fr       19    119    1        11     yes    0          0/0  index         0.0  /fr/products
-200     fr       47    201    1        11     yes    3          1/1  index         0.0  /fr/products/interior
-200     fr       44    177    1        11     yes    3          1/0  index         0.0  /fr/products/solid
-200     fr       52    161    1        11     yes    3          1/0  index         0.0  /fr/products/divide
-200     fr       52    175    1        11     yes    3          1/0  index         0.0  /fr/products/rwood-groove
-200     fr       65    184    1        11     yes    3          1/0  index         1.4  /fr/products/rwood-micro
-200     fr       58    175    1        11     yes    3          1/0  index         2.5  /fr/products/rwood-perf
-200     fr       59    149    1        11     yes    3          1/0  index         0.0  /fr/products/rwood-veneer
-200     fr       57    170    1        11     yes    3          1/0  index         4.2  /fr/products/rpet-panel
-200     fr       58    178    1        11     yes    3          1/0  index         0.0  /fr/products/rpet-groove
-200     fr       58    171    1        11     yes    3          1/0  index         0.0  /fr/products/rpet-flex-groove
-200     fr       51    256    1        11     yes    3          1/0  index         0.0  /fr/products/solo-flex
-200     fr       55    259    1        11     yes    3          1/0  index         0.0  /fr/products/duo
-200     fr       57    210    1        11     yes    3          1/0  index         0.0  /fr/products/modular-xl
-200     fr       31    136    1        11     yes    0          0/0  index         0.0  /fr/about
-200     fr       21    153    1        11     yes    0          0/0  index         0.0  /fr/sustainability
-200     fr       38    203    1        11     yes    0          0/0  index         0.0  /fr/where-to-buy
-200     fr       62    246    1        11     yes    0          0/0  index         0.0  /fr/partner
-200     fr       35    192    1        11     yes    1          0/0  index         0.0  /fr/faq
-200     fr       25     80    1        11     yes    0          0/0  index        10.0  /fr/contact
-200     fr       15     96    1        11     yes    0          0/0  index         0.0  /fr/blog
-200     fr       39     70    1        11     yes    0          0/0  noindex      64.3  /fr/privacy
-200     fr       35     41    1        11     yes    0          0/0  noindex      75.0  /fr/terms
-200     fr       82    139    1        11     yes    2          0/0  index         0.0  /fr/blog/circular-economy-acoustics
-200     fr       77    116    1        11     yes    2          0/0  index         0.0  /fr/blog/office-acoustic-solutions
-200     fr       75    131    1        11     yes    2          0/0  index         0.0  /fr/blog/recycled-materials-quality
-200     fr       72    101    1        11     yes    2          0/0  index         0.0  /fr/blog/sound-absorption-explained
-200     de       52    142    1        11     yes    2          0/0  index         0.0  /de
-200     de       19    118    1        11     yes    0          0/0  index         0.0  /de/products
-200     de       42    166    1        11     yes    3          1/1  index         0.0  /de/products/interior
-200     de       39    156    1        11     yes    3          1/0  index         0.0  /de/products/solid
-200     de       48    158    1        11     yes    3          1/0  index         0.0  /de/products/divide
-200     de       46    184    1        11     yes    3          1/0  index         0.0  /de/products/rwood-groove
-200     de       63    181    1        11     yes    3          1/0  index         1.7  /de/products/rwood-micro
-200     de       56    168    1        11     yes    3          1/0  index         2.9  /de/products/rwood-perf
-200     de       52    143    1        11     yes    3          1/0  index         0.0  /de/products/rwood-veneer
-200     de       50    169    1        11     yes    3          1/0  index         5.0  /de/products/rpet-panel
-200     de       51    144    1        11     yes    3          1/0  index         0.0  /de/products/rpet-groove
-200     de       51    155    1        11     yes    3          1/0  index         0.0  /de/products/rpet-flex-groove
-200     de       49    230    1        11     yes    3          1/0  index         0.0  /de/products/solo-flex
-200     de       53    276    1        11     yes    3          1/0  index         0.0  /de/products/duo
-200     de       54    191    1        11     yes    3          1/0  index         0.0  /de/products/modular-xl
-200     de       24    134    1        11     yes    0          0/0  index         0.0  /de/about
-200     de       25    167    1        11     yes    0          0/0  index         0.0  /de/sustainability
-200     de       45    223    1        11     yes    0          0/0  index         0.0  /de/where-to-buy
-200     de       55    236    1        11     yes    0          0/0  index         0.0  /de/partner
-200     de       29    168    1        11     yes    1          0/0  index         0.0  /de/faq
-200     de       18     75    1        11     yes    0          0/0  index         9.1  /de/contact
-200     de       15     84    1        11     yes    0          0/0  index         0.0  /de/blog
-200     de       31     71    1        11     yes    0          0/0  noindex      69.1  /de/privacy
-200     de       30     48    1        11     yes    0          0/0  noindex      84.6  /de/terms
-200     de       69    115    1        11     yes    2          0/0  index         0.0  /de/blog/circular-economy-acoustics
-200     de       70    109    1        11     yes    2          0/0  index         0.0  /de/blog/office-acoustic-solutions
-200     de       77    127    1        11     yes    2          0/0  index         0.0  /de/blog/recycled-materials-quality
-200     de       66    103    1        11     yes    2          0/0  index         0.0  /de/blog/sound-absorption-explained
-200     es       52    164    1        11     yes    2          0/0  index         0.0  /es
-200     es       20    137    1        11     yes    0          0/0  index         0.0  /es/products
-200     es       46    154    1        11     yes    3          1/1  index         0.0  /es/products/interior
-200     es       43    140    1        11     yes    3          1/0  index         0.0  /es/products/solid
-200     es       53    122    1        11     yes    3          1/0  index         0.0  /es/products/divide
-200     es       51    128    1        11     yes    3          1/0  index        26.2  /es/products/rwood-groove
-200     es       66    123    1        11     yes    3          1/0  index        25.6  /es/products/rwood-micro
-200     es       59    136    1        11     yes    3          1/0  index        19.5  /es/products/rwood-perf
-200     es       59    121    1        11     yes    3          1/0  index         0.0  /es/products/rwood-veneer
-200     es       56    123    1        11     yes    3          1/0  index        30.4  /es/products/rpet-panel
-200     es       57    126    1        11     yes    3          1/0  index        14.1  /es/products/rpet-groove
-200     es       55    168    1        11     yes    3          1/0  index        34.8  /es/products/rpet-flex-groove
-200     es       47    238    1        11     yes    3          1/0  index         0.0  /es/products/solo-flex
-200     es       53    249    1        11     yes    3          1/0  index         0.0  /es/products/duo
-200     es       55    201    1        11     yes    3          1/0  index         0.0  /es/products/modular-xl
-200     es       25    133    1        11     yes    0          0/0  index         0.0  /es/about
-200     es       25    152    1        11     yes    0          0/0  index         0.0  /es/sustainability
-200     es       39    212    1        11     yes    0          0/0  index         0.0  /es/where-to-buy
-200     es       63    242    1        11     yes    0          0/0  index         0.0  /es/partner
-200     es       32    189    1        11     yes    1          0/0  index         0.0  /es/faq
-200     es       22     90    1        11     yes    0          0/0  index        10.0  /es/contact
-200     es       15     90    1        11     yes    0          0/0  index        35.7  /es/blog
-200     es       33     62    1        11     yes    0          0/0  noindex      62.3  /es/privacy
-200     es       29     49    1        11     yes    0          0/0  noindex      81.5  /es/terms
-200     es       65    110    1        11     yes    2          0/0  index        47.4  /es/blog/circular-economy-acoustics
-200     es       70    101    1        11     yes    2          0/0  index        38.1  /es/blog/office-acoustic-solutions
-200     es       70     99    1        11     yes    2          0/0  index        25.0  /es/blog/recycled-materials-quality
-200     es       61     95    1        11     yes    2          0/0  index        31.6  /es/blog/sound-absorption-explained
-200     pt       52    160    1        11     yes    2          0/0  index         0.0  /pt
-200     pt       20    137    1        11     yes    0          0/0  index         0.0  /pt/products
-200     pt       46    153    1        11     yes    3          1/1  index         0.0  /pt/products/interior
-200     pt       43    141    1        11     yes    3          1/0  index         0.0  /pt/products/solid
-200     pt       53    116    1        11     yes    3          1/0  index         0.0  /pt/products/divide
-200     pt       52    127    1        11     yes    3          1/0  index        25.8  /pt/products/rwood-groove
-200     pt       67    121    1        11     yes    3          1/0  index        25.6  /pt/products/rwood-micro
-200     pt       60    135    1        11     yes    3          1/0  index        19.5  /pt/products/rwood-perf
-200     pt       60    124    1        11     yes    3          1/0  index         0.0  /pt/products/rwood-veneer
-200     pt       56    121    1        11     yes    3          1/0  index        26.7  /pt/products/rpet-panel
-200     pt       57    123    1        11     yes    3          1/0  index        14.1  /pt/products/rpet-groove
-200     pt       55    175    1        11     yes    3          1/0  index        35.6  /pt/products/rpet-flex-groove
-200     pt       47    231    1        11     yes    3          1/0  index         0.0  /pt/products/solo-flex
-200     pt       52    236    1        11     yes    3          1/0  index         0.0  /pt/products/duo
-200     pt       55    188    1        11     yes    3          1/0  index         0.0  /pt/products/modular-xl
-200     pt       25    133    1        11     yes    0          0/0  index         0.0  /pt/about
-200     pt       25    147    1        11     yes    0          0/0  index         0.0  /pt/sustainability
-200     pt       38    208    1        11     yes    0          0/0  index         0.0  /pt/where-to-buy
-200     pt       62    234    1        11     yes    0          0/0  index         0.0  /pt/partner
-200     pt       32    179    1        11     yes    1          0/0  index         0.0  /pt/faq
-200     pt       22     90    1        11     yes    0          0/0  index        10.0  /pt/contact
-200     pt       15     90    1        11     yes    0          0/0  index        35.7  /pt/blog
-200     pt       34     65    1        11     yes    0          0/0  noindex      60.9  /pt/privacy
-200     pt       31     42    1        11     yes    0          0/0  noindex      77.8  /pt/terms
-200     pt       65    110    1        11     yes    2          0/0  index        45.0  /pt/blog/circular-economy-acoustics
-200     pt       70    101    1        11     yes    2          0/0  index        38.1  /pt/blog/office-acoustic-solutions
-200     pt       70     99    1        11     yes    2          0/0  index        25.0  /pt/blog/recycled-materials-quality
-200     pt       61     95    1        11     yes    2          0/0  index        31.6  /pt/blog/sound-absorption-explained
-200     da       56    141    1        11     yes    2          0/0  index        13.0  /da
-200     da       20    140    1        11     yes    0          0/0  index        17.4  /da/products
-200     da       40    143    1        11     yes    3          1/1  index         7.4  /da/products/interior
-200     da       37    110    1        11     yes    3          1/0  index         4.2  /da/products/solid
-200     da       47    113    1        11     yes    3          1/0  index         4.2  /da/products/divide
-200     da       44    107    1        11     yes    3          1/0  index        15.2  /da/products/rwood-groove
-200     da       61    102    1        11     yes    3          1/0  index        10.8  /da/products/rwood-micro
-200     da       54    120    1        11     yes    3          1/0  index         7.0  /da/products/rwood-perf
-200     da       48     99    1        11     yes    3          1/0  index         1.9  /da/products/rwood-veneer
-200     da       51    123    1        11     yes    3          1/0  index        16.2  /da/products/rpet-panel
-200     da       52    106    1        11     yes    3          1/0  index         9.3  /da/products/rpet-groove
-200     da       52    163    1        11     yes    3          1/0  index        24.4  /da/products/rpet-flex-groove
-200     da       40    198    1        11     yes    3          1/0  index         2.0  /da/products/solo-flex
-200     da       48    214    1        11     yes    3          1/0  index         1.7  /da/products/duo
-200     da       48    173    1        11     yes    3          1/0  index         1.9  /da/products/modular-xl
-200     da       25    111    1        11     yes    0          0/0  index        22.2  /da/about
-200     da       24    131    1        11     yes    0          0/0  index        42.1  /da/sustainability
-200     da       42    173    1        11     yes    0          0/0  index         2.9  /da/where-to-buy
-200     da       55    214    1        11     yes    0          0/0  index         1.7  /da/partner
-200     da       29    174    1        11     yes    1          0/0  index         3.0  /da/faq
-200     da       21     75    1        11     yes    0          0/0  index        27.3  /da/contact
-200     da       15     87    1        11     yes    0          0/0  index        42.9  /da/blog
-200     da       28     70    1        11     yes    0          0/0  noindex      45.6  /da/privacy
-200     da       27     42    1        11     yes    0          0/0  noindex      61.5  /da/terms
-200     da       65    110    1        11     yes    2          0/0  index        38.9  /da/blog/circular-economy-acoustics
-200     da       70    101    1        11     yes    2          0/0  index        21.1  /da/blog/office-acoustic-solutions
-200     da       70     99    1        11     yes    2          0/0  index        29.4  /da/blog/recycled-materials-quality
-200     da       61     95    1        11     yes    2          0/0  index        23.5  /da/blog/sound-absorption-explained
-200     sv       58    148    1        11     yes    2          0/0  index         9.4  /sv
-200     sv       20    142    1        11     yes    0          0/0  index        13.0  /sv/products
-200     sv       40    147    1        11     yes    3          1/1  index         3.7  /sv/products/interior
-200     sv       37    112    1        11     yes    3          1/0  index         0.0  /sv/products/solid
-200     sv       47    108    1        11     yes    3          1/0  index         0.0  /sv/products/divide
-200     sv       44    104    1        11     yes    3          1/0  index        13.3  /sv/products/rwood-groove
-200     sv       61    100    1        11     yes    3          1/0  index         9.4  /sv/products/rwood-micro
-200     sv       54    118    1        11     yes    3          1/0  index         5.6  /sv/products/rwood-perf
-200     sv       48     98    1        11     yes    3          1/0  index         0.0  /sv/products/rwood-veneer
-200     sv       50    120    1        11     yes    3          1/0  index        11.9  /sv/products/rpet-panel
-200     sv       51    112    1        11     yes    3          1/0  index         7.4  /sv/products/rpet-groove
-200     sv       51    159    1        11     yes    3          1/0  index        22.5  /sv/products/rpet-flex-groove
-200     sv       42    199    1        11     yes    3          1/0  index         0.0  /sv/products/solo-flex
-200     sv       49    216    1        11     yes    3          1/0  index         0.0  /sv/products/duo
-200     sv       47    168    1        11     yes    3          1/0  index         0.0  /sv/products/modular-xl
-200     sv       25    111    1        11     yes    0          0/0  index        16.7  /sv/about
-200     sv       21    121    1        11     yes    0          0/0  index        36.8  /sv/sustainability
-200     sv       42    170    1        11     yes    0          0/0  index         0.0  /sv/where-to-buy
-200     sv       59    223    1        11     yes    0          0/0  index         0.0  /sv/partner
-200     sv       29    159    1        11     yes    1          0/0  index         0.0  /sv/faq
-200     sv       23     75    1        11     yes    0          0/0  index        18.2  /sv/contact
-200     sv       15     87    1        11     yes    0          0/0  index        35.7  /sv/blog
-200     sv       28     65    1        11     yes    0          0/0  noindex      44.1  /sv/privacy
-200     sv       26     45    1        11     yes    0          0/0  noindex      53.8  /sv/terms
-200     sv       65    110    1        11     yes    2          0/0  index        33.3  /sv/blog/circular-economy-acoustics
-200     sv       70    101    1        11     yes    2          0/0  index        15.8  /sv/blog/office-acoustic-solutions
-200     sv       70     99    1        11     yes    2          0/0  index        23.5  /sv/blog/recycled-materials-quality
-200     sv       61     95    1        11     yes    2          0/0  index        17.6  /sv/blog/sound-absorption-explained
-200     no       58    134    1        11     yes    2          0/0  index         9.3  /no
-200     no       20    133    1        11     yes    0          0/0  index         8.7  /no/products
-200     no       40    131    1        11     yes    3          1/1  index         3.7  /no/products/interior
-200     no       37    109    1        11     yes    3          1/0  index         0.0  /no/products/solid
-200     no       47    110    1        11     yes    3          1/0  index         0.0  /no/products/divide
-200     no       44    107    1        11     yes    3          1/0  index        13.0  /no/products/rwood-groove
-200     no       60    100    1        11     yes    3          1/0  index         9.2  /no/products/rwood-micro
-200     no       53    119    1        11     yes    3          1/0  index         5.7  /no/products/rwood-perf
-200     no       49    101    1        11     yes    3          1/0  index         0.0  /no/products/rwood-veneer
-200     no       52    114    1        11     yes    3          1/0  index        14.7  /no/products/rpet-panel
-200     no       53    106    1        11     yes    3          1/0  index         7.4  /no/products/rpet-groove
-200     no       53    159    1        11     yes    3          1/0  index        22.0  /no/products/rpet-flex-groove
-200     no       39    197    1        11     yes    3          1/0  index         0.0  /no/products/solo-flex
-200     no       48    214    1        11     yes    3          1/0  index         0.0  /no/products/duo
-200     no       48    174    1        11     yes    3          1/0  index         0.0  /no/products/modular-xl
-200     no       25    111    1        11     yes    0          0/0  index        16.7  /no/about
-200     no       20    133    1        11     yes    0          0/0  index        36.8  /no/sustainability
-200     no       43    178    1        11     yes    0          0/0  index         0.0  /no/where-to-buy
-200     no       55    215    1        11     yes    0          0/0  index         0.0  /no/partner
-200     no       30    160    1        11     yes    1          0/0  index         0.0  /no/faq
-200     no       22     75    1        11     yes    0          0/0  index        18.2  /no/contact
-200     no       15     87    1        11     yes    0          0/0  index        35.7  /no/blog
-200     no       30     73    1        11     yes    0          0/0  noindex      44.1  /no/privacy
-200     no       22     38    1        11     yes    0          0/0  noindex      53.8  /no/terms
-200     no       65    110    1        11     yes    2          0/0  index        33.3  /no/blog/circular-economy-acoustics
-200     no       70    101    1        11     yes    2          0/0  index        15.8  /no/blog/office-acoustic-solutions
-200     no       70     99    1        11     yes    2          0/0  index        23.5  /no/blog/recycled-materials-quality
-200     no       61     95    1        11     yes    2          0/0  index        17.6  /no/blog/sound-absorption-explained
-200     is       58    116    1        11     yes    2          0/0  index        11.1  /is
-200     is       16    137    1        11     yes    0          0/0  index         8.7  /is/products
-200     is       40    138    1        11     yes    3          1/1  index         7.4  /is/products/interior
-200     is       37    124    1        11     yes    3          1/0  index        11.1  /is/products/solid
-200     is       47    113    1        11     yes    3          1/0  index         0.0  /is/products/divide
-200     is       48    105    1        11     yes    3          1/0  index        16.0  /is/products/rwood-groove
-200     is       59     93    1        11     yes    3          1/0  index        13.6  /is/products/rwood-micro
-200     is       56    106    1        11     yes    3          1/0  index         8.2  /is/products/rwood-perf
-200     is       57     93    1        11     yes    3          1/0  index         0.0  /is/products/rwood-veneer
-200     is       47    103    1        11     yes    3          1/0  index        14.7  /is/products/rpet-panel
-200     is       48     97    1        11     yes    3          1/0  index        13.0  /is/products/rpet-groove
-200     is       51    144    1        11     yes    3          1/0  index        30.0  /is/products/rpet-flex-groove
-200     is       51    206    1        11     yes    3          1/0  index         0.0  /is/products/solo-flex
-200     is       60    205    1        11     yes    3          1/0  index         0.0  /is/products/duo
-200     is       62    186    1        11     yes    3          1/0  index         0.0  /is/products/modular-xl
-200     is       25    111    1        11     yes    0          0/0  index        11.1  /is/about
-200     is       21    150    1        11     yes    0          0/0  index        36.8  /is/sustainability
-200     is       42    194    1        11     yes    0          0/0  index         0.0  /is/where-to-buy
-200     is       53    213    1        11     yes    0          0/0  index         0.0  /is/partner
-200     is       26    147    1        11     yes    1          0/0  index         3.0  /is/faq
-200     is       24     75    1        11     yes    0          0/0  index        27.3  /is/contact
-200     is       15     87    1        11     yes    0          0/0  index        42.9  /is/blog
-200     is       31     66    1        11     yes    0          0/0  noindex      45.6  /is/privacy
-200     is       28     44    1        11     yes    0          0/0  noindex      65.4  /is/terms
-200     is       65    110    1        11     yes    2          0/0  index        42.1  /is/blog/circular-economy-acoustics
-200     is       70    101    1        11     yes    2          0/0  index        21.1  /is/blog/office-acoustic-solutions
-200     is       70     99    1        11     yes    2          0/0  index        29.4  /is/blog/recycled-materials-quality
-200     is       61     95    1        11     yes    2          0/0  index        23.5  /is/blog/sound-absorption-explained
+200     en       65    141    1         7     yes    3          0/0  index           —  /en
+200     en       19    155    1         7     yes    1          0/0  index           —  /en/products
+200     en       25    132    1         7     yes    0          0/0  index           —  /en/about
+200     en       25    119    1         7     yes    0          0/0  index           —  /en/sustainability
+200     en       40    149    1         7     yes    2          0/0  index           —  /en/where-to-buy
+200     en       57    155    1         7     yes    0          0/0  index           —  /en/partner
+200     en       30    147    1         7     yes    1          0/0  index           —  /en/faq
+200     en       21     75    1         7     yes    0          0/0  index           —  /en/contact
+200     en       15     87    1         7     yes    0          0/0  index           —  /en/blog
+200     en       67    151    1         7     yes    3          0/0  index           —  /en/products/pet-acoustic-panels
+200     en       71    149    1         7     yes    3          0/0  index           —  /en/products/wood-acoustic-panels
+200     en       70    152    1         7     yes    3          0/0  index           —  /en/products/acoustic-phone-booths
+200     en       55    181    1         5     yes    2          0/0  index           —  /en/guides/phone-booth-prices
+200     en       40    142    1         7     yes    3          1/1  index           —  /en/products/interior
+200     en       37    142    1         7     yes    3          1/1  index           —  /en/products/solid
+200     en       47    138    1         7     yes    3          1/1  index           —  /en/products/divide
+200     en       68    146    1         7     yes    3          1/1  index           —  /en/products/rwood-groove
+200     en       62    139    1         7     yes    3          1/1  index           —  /en/products/rwood-micro
+200     en       55    143    1         7     yes    3          1/1  index           —  /en/products/rwood-perf
+200     en       64    146    1         7     yes    3          1/1  index           —  /en/products/rwood-veneer
+200     en       63    139    1         7     yes    3          1/1  index           —  /en/products/rpet-panel
+200     en       64    144    1         7     yes    3          1/1  index           —  /en/products/rpet-groove
+200     en       69    139    1         7     yes    3          1/1  index           —  /en/products/rpet-flex-groove
+200     en       61    154    1         7     yes    3          1/1  index           —  /en/products/solo-eco
+200     en       67    144    1         7     yes    3          1/1  index           —  /en/products/solo-flex
+200     en       56    150    1         7     yes    3          1/1  index           —  /en/products/duo
+200     en       56    146    1         7     yes    3          1/1  index           —  /en/products/modular-xl
+200     en       65    110    1         7     yes    2          0/0  index           —  /en/blog/circular-economy-acoustics
+200     en       70    101    1         7     yes    2          0/0  index           —  /en/blog/office-acoustic-solutions
+200     en       70     99    1         7     yes    2          0/0  index           —  /en/blog/recycled-materials-quality
+200     en       61     95    1         7     yes    2          0/0  index           —  /en/blog/sound-absorption-explained
+200     nl       65    145    1         7     yes    3          0/0  index         1.7  /nl
+200     nl       20    152    1         7     yes    1          0/0  index         0.0  /nl/products
+200     nl       24    136    1         7     yes    0          0/0  index         0.0  /nl/about
+200     nl       23    139    1         7     yes    0          0/0  index         0.0  /nl/sustainability
+200     nl       45    145    1         7     yes    2          0/0  index         2.1  /nl/where-to-buy
+200     nl       55    152    1         7     yes    0          0/0  index         0.0  /nl/partner
+200     nl       50    147    1         7     yes    1          0/0  index         0.0  /nl/faq
+200     nl       18     77    1         7     yes    0          0/0  index         0.0  /nl/contact
+200     nl       15     88    1         7     yes    0          0/0  index         0.0  /nl/blog
+200     nl       72    153    1         7     yes    3          0/0  index         0.0  /nl/products/pet-akoestische-panelen
+200     nl       80    150    1         7     yes    3          0/0  index         0.0  /nl/products/houten-akoestische-panelen
+200     nl       63    137    1         7     yes    3          0/0  index         1.4  /nl/products/akoestische-belcabines
+200     nl       57    158    1         5     yes    2          0/0  index         3.0  /nl/guides/prijzen-belcabines
+200     nl       43    153    1         7     yes    3          1/1  index         0.0  /nl/products/interior
+200     nl       40    148    1         7     yes    3          1/1  index         0.0  /nl/products/solid
+200     nl       50    151    1         7     yes    3          1/1  index         0.0  /nl/products/divide
+200     nl       59    146    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-groove
+200     nl       55    140    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-micro
+200     nl       64    143    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-perf
+200     nl       54    151    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-veneer
+200     nl       57    148    1         7     yes    3          1/1  index         1.2  /nl/products/rpet-panel
+200     nl       58    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-groove
+200     nl       62    149    1         7     yes    3          1/1  index         0.0  /nl/products/rpet-flex-groove
+200     nl       59    152    1         7     yes    3          1/1  index         0.0  /nl/products/solo-eco
+200     nl       59    152    1         7     yes    3          1/1  index         0.0  /nl/products/solo-flex
+200     nl       53    154    1         7     yes    3          1/1  index         0.0  /nl/products/duo
+200     nl       62    147    1         7     yes    3          1/1  index         0.0  /nl/products/modular-xl
+200     nl       60    145    1         0     yes    3          0/0  index         0.0  /nl/blog/pet-vilt-of-houten-akoestische-panelen
+200     nl       63    155    1         0     yes    3          0/0  index         0.0  /nl/blog/nagalmtijd-klaslokaal-normen
+200     nl       64    154    1         0     yes    3          0/0  index         0.0  /nl/blog/hoeveel-akoestische-panelen-nodig
+200     nl       63    155    1         0     yes    3          0/0  index         0.0  /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing
+200     nl       62    150    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-restaurant
+200     nl       59    146    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestiek-open-kantoor-verbeteren
+200     nl       82    122    1         7     yes    2          0/0  index         0.0  /nl/blog/circular-economy-acoustics
+200     nl       71    108    1         7     yes    2          0/0  index         0.0  /nl/blog/office-acoustic-solutions
+200     nl       74    125    1         7     yes    2          0/0  index         0.0  /nl/blog/recycled-materials-quality
+200     nl       64     98    1         7     yes    2          0/0  index         0.0  /nl/blog/sound-absorption-explained
+200     fr       73    149    1         7     yes    3          0/0  index         1.4  /fr
+200     fr       19    147    1         7     yes    1          0/0  index         0.0  /fr/products
+200     fr       31    148    1         7     yes    0          0/0  index         0.0  /fr/about
+200     fr       21    153    1         7     yes    0          0/0  index         0.0  /fr/sustainability
+200     fr       38    154    1         7     yes    2          0/0  index         1.9  /fr/where-to-buy
+200     fr       62    151    1         7     yes    0          0/0  index         0.0  /fr/partner
+200     fr       35    154    1         7     yes    1          0/0  index         0.0  /fr/faq
+200     fr       25     80    1         7     yes    0          0/0  index         0.0  /fr/contact
+200     fr       15     96    1         7     yes    0          0/0  index         0.0  /fr/blog
+200     fr       58    153    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-pet
+200     fr       75    155    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-bois
+200     fr       52    158    1         7     yes    3          0/0  index         1.3  /fr/products/cabines-acoustiques
+200     fr       63    152    1         5     yes    2          0/0  index         2.5  /fr/guides/prix-cabines-acoustiques
+200     fr       47    155    1         7     yes    3          1/1  index         0.0  /fr/products/interior
+200     fr       44    155    1         7     yes    3          1/1  index         0.0  /fr/products/solid
+200     fr       52    153    1         7     yes    3          1/1  index         0.0  /fr/products/divide
+200     fr       63    147    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-groove
+200     fr       64    147    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-micro
+200     fr       58    154    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-perf
+200     fr       59    150    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-veneer
+200     fr       61    148    1         7     yes    3          1/1  index         1.0  /fr/products/rpet-panel
+200     fr       58    153    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-groove
+200     fr       65    149    1         7     yes    3          1/1  index         0.0  /fr/products/rpet-flex-groove
+200     fr       65    155    1         7     yes    3          1/1  index         0.0  /fr/products/solo-eco
+200     fr       59    154    1         7     yes    3          1/1  index         0.0  /fr/products/solo-flex
+200     fr       58    150    1         7     yes    3          1/1  index         0.0  /fr/products/duo
+200     fr       64    155    1         7     yes    3          1/1  index         0.0  /fr/products/modular-xl
+200     fr       82    139    1         7     yes    2          0/0  index         0.0  /fr/blog/circular-economy-acoustics
+200     fr       77    116    1         7     yes    2          0/0  index         0.0  /fr/blog/office-acoustic-solutions
+200     fr       75    131    1         7     yes    2          0/0  index         0.0  /fr/blog/recycled-materials-quality
+200     fr       72    101    1         7     yes    2          0/0  index         0.0  /fr/blog/sound-absorption-explained
+200     de       65    134    1         7     yes    3          0/0  index         1.7  /de
+200     de       19    148    1         7     yes    1          0/0  index         0.0  /de/products
+200     de       24    127    1         7     yes    0          0/0  index         0.0  /de/about
+200     de       25    153    1         7     yes    0          0/0  index         0.0  /de/sustainability
+200     de       45    150    1         7     yes    2          0/0  index         2.1  /de/where-to-buy
+200     de       55    149    1         7     yes    0          0/0  index         0.0  /de/partner
+200     de       29    144    1         7     yes    1          0/0  index         0.0  /de/faq
+200     de       18     75    1         7     yes    0          0/0  index         0.0  /de/contact
+200     de       15     84    1         7     yes    0          0/0  index         0.0  /de/blog
+200     de       66    148    1         7     yes    3          0/0  index         0.0  /de/products/pet-akustikpaneele
+200     de       70    149    1         7     yes    3          0/0  index         0.0  /de/products/holz-akustikpaneele
+200     de       56    152    1         7     yes    3          0/0  index         1.4  /de/products/telefonboxen
+200     de       58    155    1         5     yes    2          0/0  index         3.0  /de/guides/telefonbox-preise
+200     de       42    153    1         7     yes    3          1/1  index         0.0  /de/products/interior
+200     de       39    151    1         7     yes    3          1/1  index         0.0  /de/products/solid
+200     de       48    146    1         7     yes    3          1/1  index         0.0  /de/products/divide
+200     de       64    146    1         7     yes    3          1/1  index         0.0  /de/products/rwood-groove
+200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/rwood-micro
+200     de       55    150    1         7     yes    3          1/1  index         0.0  /de/products/rwood-perf
+200     de       61    142    1         7     yes    3          1/1  index         0.0  /de/products/rwood-veneer
+200     de       57    145    1         7     yes    3          1/1  index         1.2  /de/products/rpet-panel
+200     de       63    145    1         7     yes    3          1/1  index         0.0  /de/products/rpet-groove
+200     de       64    132    1         7     yes    3          1/1  index         0.0  /de/products/rpet-flex-groove
+200     de       62    158    1         7     yes    3          1/1  index         0.0  /de/products/solo-eco
+200     de       65    150    1         7     yes    3          1/1  index         0.0  /de/products/solo-flex
+200     de       64    154    1         7     yes    3          1/1  index         0.0  /de/products/duo
+200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/modular-xl
+200     de       69    114    1         7     yes    2          0/0  index         0.0  /de/blog/circular-economy-acoustics
+200     de       70    109    1         7     yes    2          0/0  index         0.0  /de/blog/office-acoustic-solutions
+200     de       77    127    1         7     yes    2          0/0  index         0.0  /de/blog/recycled-materials-quality
+200     de       66    103    1         7     yes    2          0/0  index         0.0  /de/blog/sound-absorption-explained
+200     es       59    152    1         7     yes    3          0/0  index         1.4  /es
+200     es       20    147    1         7     yes    1          0/0  index         0.0  /es/products
+200     es       25    142    1         7     yes    0          0/0  index         0.0  /es/about
+200     es       25    152    1         7     yes    0          0/0  index         0.0  /es/sustainability
+200     es       39    151    1         7     yes    2          0/0  index         1.8  /es/where-to-buy
+200     es       63    148    1         7     yes    0          0/0  index         0.0  /es/partner
+200     es       32    153    1         7     yes    1          0/0  index         0.0  /es/faq
+200     es       22     90    1         7     yes    0          0/0  index         0.0  /es/contact
+200     es       15     90    1         7     yes    0          0/0  index         0.0  /es/blog
+200     es       55    155    1         7     yes    3          0/0  index         0.0  /es/products/pet-acoustic-panels
+200     es       58    151    1         7     yes    3          0/0  index         0.0  /es/products/wood-acoustic-panels
+200     es       58    160    1         7     yes    3          0/0  index         1.4  /es/products/acoustic-phone-booths
+200     es       46    152    1         7     yes    3          1/1  index         0.0  /es/products/interior
+200     es       43    147    1         7     yes    3          1/1  index         0.0  /es/products/solid
+200     es       53    149    1         7     yes    3          1/1  index         0.0  /es/products/divide
+200     es       63    154    1         7     yes    3          1/1  index         0.0  /es/products/rwood-groove
+200     es       58    152    1         7     yes    3          1/1  index         0.0  /es/products/rwood-micro
+200     es       61    155    1         7     yes    3          1/1  index         0.0  /es/products/rwood-perf
+200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/rwood-veneer
+200     es       55    148    1         7     yes    3          1/1  index         1.0  /es/products/rpet-panel
+200     es       59    147    1         7     yes    3          1/1  index         0.0  /es/products/rpet-groove
+200     es       61    145    1         7     yes    3          1/1  index         0.0  /es/products/rpet-flex-groove
+200     es       61    156    1         7     yes    3          1/1  index         0.0  /es/products/solo-eco
+200     es       65    152    1         7     yes    3          1/1  index         0.0  /es/products/solo-flex
+200     es       61    149    1         7     yes    3          1/1  index         0.0  /es/products/duo
+200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/modular-xl
+200     es       76    128    1         7     yes    2          0/0  index         0.0  /es/blog/circular-economy-acoustics
+200     es       75    110    1         7     yes    2          0/0  index         0.0  /es/blog/office-acoustic-solutions
+200     es       77    124    1         7     yes    2          0/0  index         0.0  /es/blog/recycled-materials-quality
+200     es       65    111    1         7     yes    2          0/0  index         0.0  /es/blog/sound-absorption-explained
+200     pt       61    152    1         7     yes    3          0/0  index         1.4  /pt
+200     pt       20    155    1         7     yes    1          0/0  index         0.0  /pt/products
+200     pt       27    134    1         7     yes    0          0/0  index         0.0  /pt/about
+200     pt       25    147    1         7     yes    0          0/0  index         0.0  /pt/sustainability
+200     pt       38    152    1         7     yes    2          0/0  index         1.9  /pt/where-to-buy
+200     pt       62    154    1         7     yes    0          0/0  index         0.0  /pt/partner
+200     pt       32    153    1         7     yes    1          0/0  index         0.0  /pt/faq
+200     pt       23     81    1         7     yes    0          0/0  index         0.0  /pt/contact
+200     pt       15     89    1         7     yes    0          0/0  index         0.0  /pt/blog
+200     pt       58    152    1         7     yes    3          0/0  index         0.0  /pt/products/pet-acoustic-panels
+200     pt       61    152    1         7     yes    3          0/0  index         0.0  /pt/products/wood-acoustic-panels
+200     pt       59    159    1         7     yes    3          0/0  index         1.4  /pt/products/acoustic-phone-booths
+200     pt       47    150    1         7     yes    3          1/1  index         0.0  /pt/products/interior
+200     pt       44    154    1         7     yes    3          1/1  index         0.0  /pt/products/solid
+200     pt       52    147    1         7     yes    3          1/1  index         0.0  /pt/products/divide
+200     pt       64    151    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-groove
+200     pt       58    148    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-micro
+200     pt       62    147    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-perf
+200     pt       65    154    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-veneer
+200     pt       63    153    1         7     yes    3          1/1  index         1.0  /pt/products/rpet-panel
+200     pt       64    155    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-groove
+200     pt       61    141    1         7     yes    3          1/1  index         0.0  /pt/products/rpet-flex-groove
+200     pt       65    151    1         7     yes    3          1/1  index         0.0  /pt/products/solo-eco
+200     pt       65    147    1         7     yes    3          1/1  index         0.0  /pt/products/solo-flex
+200     pt       63    154    1         7     yes    3          1/1  index         0.0  /pt/products/duo
+200     pt       62    153    1         7     yes    3          1/1  index         0.0  /pt/products/modular-xl
+200     pt       71    133    1         7     yes    2          0/0  index         0.0  /pt/blog/circular-economy-acoustics
+200     pt       69    112    1         7     yes    2          0/0  index         0.0  /pt/blog/office-acoustic-solutions
+200     pt       73    117    1         7     yes    2          0/0  index         0.0  /pt/blog/recycled-materials-quality
+200     pt       61     97    1         7     yes    2          0/0  index         0.0  /pt/blog/sound-absorption-explained
 
-== Summary: 280 pages, 177 failures, 124 warnings
+== Summary: 190 pages, 0 failures, 44 warnings
+warn /nl/blog/pet-vilt-of-houten-akoestische-panelen: single-locale page: no hreflang by design
+warn /nl/blog/nagalmtijd-klaslokaal-normen: single-locale page: no hreflang by design
+warn /nl/blog/hoeveel-akoestische-panelen-nodig: single-locale page: no hreflang by design
+warn /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing: single-locale page: no hreflang by design
+warn /nl/blog/akoestische-panelen-restaurant: single-locale page: no hreflang by design
+warn /nl/blog/akoestiek-open-kantoor-verbeteren: single-locale page: no hreflang by design

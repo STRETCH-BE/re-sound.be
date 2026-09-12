@@ -26,8 +26,9 @@ const RUNS = runsIdx >= 0 ? Number(args[runsIdx + 1]) : 3;
 
 const PAGES = [
   { id: 'home', path: '/en' },
+  { id: 'home-nl', path: '/nl' },
   { id: 'solo-flex', path: '/en/products/solo-flex' },
-  { id: 'rwood-micro', path: '/en/products/rwood-micro' },
+  { id: 'booths-hub', path: '/en/products/acoustic-phone-booths' },
 ];
 
 const root = resolve(dirname(new URL(import.meta.url).pathname), '..');
