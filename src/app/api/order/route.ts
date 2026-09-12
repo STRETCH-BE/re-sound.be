@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { getCatalogue } from '@/lib/catalogue/load';
 import { formatCents, lineLabel, priceSelection } from '@/lib/catalogue/pricing';
-import { productById, validateSelection } from '@/lib/catalogue/select';
+import { articlesFor, canonicalSelection, productById, TRANSPORT_CATEGORY, validateSelection } from '@/lib/catalogue/select';
 import type { CatalogueArticle, PricedLine, PricedSelection, Selection } from '@/lib/catalogue/types';
 import {
   clientHash,
@@ -58,8 +58,15 @@ import { defaultLocale, locales, localeFullCodes, type Locale } from '@/i18n/con
  * database said no, "not confirmed" when it did not answer (a late commit is
  * possible, so the internal copy names the idempotency key to check first);
  * only when both fail does the buyer get 502 not_delivered. There is no
- * payment step: Re-Sound confirms the order and adds transport, which is
- * never included in the prices.
+ * payment step: Re-Sound confirms the order by e-mail.
+ *
+ * Transport (rule 8, src/lib/catalogue/types.ts): the selection is taken in
+ * canonical form before it is priced — its auto lines (the transport
+ * article for the delivery country, the installation of extra elements when
+ * installation is chosen) are dropped and re-added by rule, so a stale or
+ * tampered auto line never sets the price. Within mainland Europe transport
+ * is the flat line; for the islands in NON_MAINLAND_EUROPE the line is on
+ * request and quoted with the confirmation.
  */
 
 export const runtime = 'nodejs';
@@ -310,6 +317,12 @@ interface EmailContext {
   productName: string;
   /** Article code of the base (construction) line, for the Model row */
   baseCode: string;
+  /**
+   * Which transport note the e-mail carries: the mainland note for a product
+   * with transport articles (the booths sold online), the older "never
+   * included" note for the rest (panels) — the same rule as the dialog.
+   */
+  transportNoteKey: 'order.summary.transportMainlandNote' | 'order.summary.transportNote';
   vatLabel: string;
   vies: ViesResult;
   vatFormatValid: boolean;
@@ -469,7 +482,7 @@ ${rows
 <h2 style="margin:0 0 12px;color:#333;font-size:13px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #197FC7;padding-bottom:8px;display:inline-block;">${esc(ctx.productName)}</h2>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0">${lineRows(ctx.lines)}${totalsRows(ctx, t)}</table>
 </td></tr>
-${noticeBlock(t('order.summary.transportNote'))}
+${noticeBlock(t(ctx.transportNoteKey))}
 ${totals.hasOnRequestItems ? noticeBlock(t('order.summary.onRequestNote')) : ''}
 ${
   customer.notes
@@ -494,7 +507,7 @@ style="display:inline-block;background:#197FC7;color:#ffffff;text-decoration:non
     `  ${ctx.vatLabel}: ${formatCents(totals.vatCents, ctx.localeTag)}`,
     `  Total: ${formatCents(totals.grossCents, ctx.localeTag)}`,
     '',
-    t('order.summary.transportNote'),
+    t(ctx.transportNoteKey),
     totals.hasOnRequestItems ? t('order.summary.onRequestNote') : '',
     customer.notes ? `\nNotes:\n${customer.notes}` : '',
   ]
@@ -517,7 +530,7 @@ function customerEmail(ctx: EmailContext, t: Translator): { html: string; text: 
 <h2 style="margin:0 0 12px;color:#333;font-size:13px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #197FC7;padding-bottom:8px;display:inline-block;">${esc(ctx.productName)}</h2>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0">${modelRows(ctx, t)}${lineRows(ctx.lines)}${totalsRows(ctx, t)}</table>
 </td></tr>
-${noticeBlock(t('order.summary.transportNote'))}
+${noticeBlock(t(ctx.transportNoteKey))}
 ${totals.hasOnRequestItems ? noticeBlock(t('order.summary.onRequestNote')) : ''}
 ${totals.vatMode === 'reverse-charge' ? noticeBlock(t('order.vat.reverseChargeNote')) : ''}
 ${totals.vatMode === 'export' ? noticeBlock(t('order.vat.exportNote')) : ''}
@@ -551,7 +564,7 @@ ${esc(customer.street)}<br>${esc(`${customer.postalCode} ${customer.city}`)}<br>
     '',
     totals.vatMode === 'reverse-charge' ? t('order.vat.reverseChargeNote') : '',
     totals.vatMode === 'export' ? t('order.vat.exportNote') : '',
-    t('order.summary.transportNote'),
+    t(ctx.transportNoteKey),
     totals.hasOnRequestItems ? t('order.summary.onRequestNote') : '',
     '',
     t('order.email.nextSteps'),
@@ -698,11 +711,25 @@ export async function POST(request: NextRequest) {
               : 'invalid'
             : 'unverified';
 
-    // Pricing: the six rules of src/lib/catalogue/types.ts, then the VAT
+    // Rule 8: the canonical form of the selection — every auto line the
+    // dialog sent is dropped and the ones the rules give are appended (the
+    // transport article for the delivery country; the installation of extra
+    // elements when installation is chosen and an extension is selected).
+    // From here on `canonical` is what is priced, stored and e-mailed. It
+    // validates whenever the input did, unless the catalogue itself is off
+    // (two auto articles in one category), which is a pricing failure.
+    const canonical = canonicalSelection(selection, catalogue, countryCode);
+    const canonicalCheck = validateSelection(canonical, catalogue);
+    if (!canonicalCheck.ok) {
+      console.error('[order] canonical selection rejected:', canonicalCheck.reason);
+      return NextResponse.json({ error: 'pricing_failed' }, { status: 400 });
+    }
+
+    // Pricing: the rules of src/lib/catalogue/types.ts, then the VAT
     // treatment of src/lib/order/vat.ts on the net. Whole cents throughout.
     let priced: PricedSelection;
     try {
-      priced = priceSelection(selection, catalogue);
+      priced = priceSelection(canonical, catalogue);
     } catch (error) {
       console.error('[order] pricing failed:', error);
       return NextResponse.json({ error: 'pricing_failed' }, { status: 400 });
@@ -799,13 +826,13 @@ export async function POST(request: NextRequest) {
       country: countryCode,
       notes: customer.notes,
     };
-    const key = idempotencyKey({ email, selection, grossCents: totals.grossCents, customer: customerBlock, now });
+    const key = idempotencyKey({ email, selection: canonical, grossCents: totals.grossCents, customer: customerBlock, now });
     const record: OrderRecord = {
       locale,
       product_id: priced.product.id,
       website_slug: priced.product.websiteSlug,
       quantity: priced.quantity,
-      config: { ...selection, pricedFrom: { source: catalogue.source, loadedAt: catalogue.loadedAt } },
+      config: { ...canonical, pricedFrom: { source: catalogue.source, loadedAt: catalogue.loadedAt } },
       customer_type: type,
       company_name: companyName,
       vat_number: vatNumber,
@@ -831,9 +858,10 @@ export async function POST(request: NextRequest) {
       client_hash: clientHash(clientIp),
       user_agent: clean(request.headers.get('user-agent'), MAX_FIELD),
     };
+    const articlesByCode = new Map(catalogue.articles.map((a) => [a.code, a]));
     const placed = await placeOrder({
       order: record,
-      lines: toOrderLines(priced.lines, priced.segments, priced.quantity),
+      lines: toOrderLines(priced, articlesByCode),
     });
     const stored = placed.status === 'stored' ? placed.order : null;
     const reference = stored?.reference ?? fallbackReference(now);
@@ -856,9 +884,12 @@ export async function POST(request: NextRequest) {
           ? tr('order.vat.export')
           : tr('order.vat.domestic', { rate: Math.round(vatRate * 100) });
 
-    const articlesByCode = new Map(catalogue.articles.map((a) => [a.code, a]));
     const productName = priced.product.name;
     const baseCode = priced.lines.find((l) => l.priceType === 'base')?.code ?? priced.lines[0]?.code ?? '-';
+    // The booths sold online carry transport as a line (flat within mainland
+    // Europe, on request for the islands); a product without transport
+    // articles keeps the older note.
+    const hasTransportArticles = articlesFor(priced.product.id, catalogue).some((a) => a.categoryKey === TRANSPORT_CATEGORY);
     const ctx: EmailContext = {
       reference,
       stored: stored !== null,
@@ -870,6 +901,7 @@ export async function POST(request: NextRequest) {
       customer,
       productName,
       baseCode,
+      transportNoteKey: hasTransportArticles ? 'order.summary.transportMainlandNote' : 'order.summary.transportNote',
       vatLabel: vatLabelIn(t),
       vies,
       vatFormatValid,

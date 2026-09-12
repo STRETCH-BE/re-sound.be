@@ -11,7 +11,7 @@ intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-11-10"
-dateModified: "2026-11-10"
+dateModified: "2026-09-12"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/din-18041-nachhallzeit-buero.jpg"
 heroAlt: "Nahaufnahme eines Akustikpaneels rPET Groove aus grauem recyceltem PET-Filz mit tiefen Nuten"
@@ -89,9 +89,9 @@ Nur mit Wandpaneelen wären das 69 / 0,85 = 81 m². Besser verteilt:
 
 **3. Zonieren mit Divide.** Vierzig Arbeitsplätze sind akustisch ein einziger Raum. [Divide](/de/products/divide) sind freistehende, beidseitig absorbierende Stellwände (αw 1,0, Klasse A) mit integriertem Fuß, magnetisch koppelbar, ohne Montage.
 
-**4. Telefonboxen für Telefonate und Videokonferenzen.** Telefonate auf der Fläche stören am meisten; dagegen hilft eine [Telefonbox](/de/products/telefonboxen). Eine Akustikkabine wie [Solo Flex](/de/products/solo-flex) braucht 1 m², lüftet mit 4,6 m³/min und mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1. Ab {{price:solo-flex}} zzgl. MwSt. ohne Montage (Montage auf Anfrage), zzgl. Transport nach Deutschland; eine Kabine je acht bis zehn Arbeitsplätze. Für zwei Personen: [Duo](/de/products/duo) ab {{price:duo}} zzgl. MwSt. Vergleich: [Preisleitfaden für Telefonboxen](/de/guides/telefonbox-preise).
+**4. Telefonboxen für Telefonate und Videokonferenzen.** Telefonate auf der Fläche stören am meisten; dagegen hilft eine [Telefonbox](/de/products/telefonboxen). Eine Akustikkabine wie [Solo Flex](/de/products/solo-flex) braucht 1 m², lüftet mit 4,6 m³/min und mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1. Ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Montage durch unser Team {{price:article:WEB-SOLO-FLEX-INST}}, Transport auf dem europäischen Festland – also auch nach Deutschland – {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, jeweils zzgl. MwSt.; eine Kabine je acht bis zehn Arbeitsplätze. Für zwei Personen: [Duo](/de/products/duo) ab {{price:duo}} zzgl. MwSt. Vergleich: [Preisleitfaden für Telefonboxen](/de/guides/telefonbox-preise).
 
-**5. Meeting-Pods.** Fehlen Besprechungsräume, landen Besprechungen auf der Fläche. [Modular XL](/de/products/modular-xl) ist ein Raum-in-Raum-System für sechs bis zehn Personen, erweiterbar in 90-cm-Elementen, 25,9 dB(A) Sprachpegelminderung (Klasse C), ab {{price:modular-xl}} zzgl. MwSt. ohne Montage (Montage auf Anfrage), freistehend aufgestellt.
+**5. Meeting-Pods.** Fehlen Besprechungsräume, landen Besprechungen auf der Fläche. [Modular XL](/de/products/modular-xl) ist ein Raum-in-Raum-System für sechs bis zehn Personen, erweiterbar in 90-cm-Elementen, 25,9 dB(A) Sprachpegelminderung (Klasse C), ab {{price:modular-xl}} zzgl. MwSt. ohne Montage (Montage durch unser Team {{price:article:WEB-MODULAR-XL-INST}} für das Grundmodul plus {{price:article:WEB-MODULAR-XL-INST-EXT}} je zusätzlichem Element; Transport auf dem europäischen Festland {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}}, jeweils zzgl. MwSt.), freistehend aufgestellt.
 
 ## Fertigung, Lieferzeit und Rücknahme
 

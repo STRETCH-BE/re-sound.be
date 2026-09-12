@@ -15,6 +15,7 @@ import ProductFaq from '@/components/product/ProductFaq';
 import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { boothFromPrice } from '@/components/product/boothPrice';
+import { boothServicePrices } from '@/components/product/boothServices';
 import { getFromPriceCents } from '@/lib/catalogue/load';
 import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
@@ -79,27 +80,6 @@ export default async function Page({ params: { locale } }: PageProps) {
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'solo-flex', cleanName);
 
-  const tFaq = await getTranslations({
-    locale,
-    namespace: 'soloFlexPage.faq',
-  });
-  // Product FAQ (messages) + the workbook rows tagged "solo-flex", without duplicates
-  const faqEntries: FaqEntry[] = mergeFaqEntries(
-    FAQ_KEYS
-    .map((key) => {
-      try {
-        return {
-          question: tFaq(`questions.${key}.question`),
-          answer: tFaq(`questions.${key}.answer`),
-        };
-      } catch {
-        return null;
-      }
-    })
-    .filter((e): e is FaqEntry => e !== null),
-    (await faqForResolved(locale, 'solo-flex')).map((f) => ({ question: f.question, answer: f.answer }))
-  );
-
   // Narrow the catalog to the namespaces the client tree actually uses:
   // soloFlexPage (product copy), boothPage (shared booth template), leadModal.
   const messages = pickMessages(await getMessages(), [
@@ -120,6 +100,31 @@ export default async function Page({ params: { locale } }: PageProps) {
   // Models, categories and articles for the order dialog (same catalogue read).
   const configurator = await loadConfigurator('solo-flex');
   const fromPrice = await boothFromPrice(locale, 'solo-flex', tHubs('col.fromPrice'));
+  // Transport (mainland Europe) and installation figures for the CTA note, from the same slice.
+  const services = boothServicePrices(locale, configurator);
+
+  const tFaq = await getTranslations({
+    locale,
+    namespace: 'soloFlexPage.faq',
+  });
+  // Catalogue figures the FAQ copy interpolates: installation names the installation figure ({installation}); on request when the catalogue has none.
+  const faqValues = { installation: services.installation ?? tShared('cta.onRequest') };
+  // Product FAQ (messages) + the workbook rows tagged "solo-flex", without duplicates
+  const faqEntries: FaqEntry[] = mergeFaqEntries(
+    FAQ_KEYS
+    .map((key) => {
+      try {
+        return {
+          question: tFaq(`questions.${key}.question`),
+          answer: tFaq(`questions.${key}.answer`, faqValues),
+        };
+      } catch {
+        return null;
+      }
+    })
+    .filter((e): e is FaqEntry => e !== null),
+    (await faqForResolved(locale, 'solo-flex')).map((f) => ({ question: f.question, answer: f.answer }))
+  );
 
   return (
     <>
@@ -141,6 +146,7 @@ export default async function Page({ params: { locale } }: PageProps) {
         <SoloFlexProductPage
           fromPrice={fromPrice}
           configurator={configurator}
+          services={services}
           breadcrumbs={<Breadcrumbs items={crumbs} />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['solo-flex']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}

@@ -35,7 +35,7 @@ import 'server-only';
 
 import { createHash } from 'node:crypto';
 
-import type { PricedLine, Selection } from '@/lib/catalogue/types';
+import type { CatalogueArticle, PricedSelection, Selection } from '@/lib/catalogue/types';
 import { createServerClient, ENV_HINT, FETCH_TIMEOUT_MS } from '@/lib/db/supabase';
 import type { VatMode } from '@/lib/order/vat';
 
@@ -170,8 +170,17 @@ export function clientHash(ip: string): string {
   return sha256(ip.trim());
 }
 
-/** PricedLine[] (src/lib/catalogue/pricing.ts) → the rows place_order() writes. */
-export function toOrderLines(lines: PricedLine[], segments: number | null, quantity: number): OrderLineRecord[] {
+/**
+ * The priced lines (src/lib/catalogue/pricing.ts) → the rows place_order()
+ * writes, auto lines (transport, installation of extra elements) included.
+ * `articles` (by code) says which line is charged per extra element (rule 7),
+ * so its note explains the quantity like the per-segment one.
+ */
+export function toOrderLines(
+  priced: Pick<PricedSelection, 'lines' | 'segments' | 'extensionSegments' | 'quantity'>,
+  articles: ReadonlyMap<string, Pick<CatalogueArticle, 'perExtension'>>,
+): OrderLineRecord[] {
+  const { lines, segments, extensionSegments, quantity } = priced;
   return lines.map((line) => ({
     article_code: line.code,
     category_key: line.categoryKey,
@@ -180,8 +189,15 @@ export function toOrderLines(lines: PricedLine[], segments: number | null, quant
     qty: line.qty,
     unit_price_cents: line.unitPriceCents,
     line_total_cents: line.lineTotalCents,
-    // A per-segment line's qty is not the booth count; say why.
-    note: segments !== null && line.qty !== quantity ? `${segments} segments x ${quantity}` : null,
+    // A per-segment or per-extension line's qty is not the booth count; say why.
+    note:
+      line.qty === quantity
+        ? null
+        : articles.get(line.code)?.perExtension
+          ? `${extensionSegments} extra elements x ${quantity}`
+          : segments !== null
+            ? `${segments} segments x ${quantity}`
+            : null,
   }));
 }
 

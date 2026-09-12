@@ -3084,7 +3084,10 @@
       "callUs": "Ring oss: +32 3 284 68 18",
       "ctaTitle": "Redo att specificera ditt rum?",
       "ctaSubtitle": "Vårt team hjälper dig att välja rätt bås, konfigurera tillval och planera leverans. Offerter returneras oftast inom en arbetsdag.",
-      "deliveryNote": "EU-omfattande leverans · Installation tillgänglig · 5 års strukturell garanti"
+      "deliveryNote": "Transport inom det europeiska fastlandet {transport} · Montering av Re-Sound {installation} · 5 års garanti på stommen",
+      "deliveryNoteNoTransport": "Leverans och montering på begäran · 5 års garanti på stommen",
+      "perExtraElement": "+ {price} per extra element",
+      "onRequest": "på begäran"
     },
     "acoustics": {
       "benefitSpeech": {
@@ -3296,7 +3299,7 @@
         },
         "installation": {
           "question": "Kräver installationen byggarbete?",
-          "answer": "Nej. Solo Flex är fristående och kopplas till ett vanligt Schuko-uttag. Två personer kan montera den på plats på under tre timmar. EU-omfattande installation erbjuds som standardalternativ."
+          "answer": "Nej. Solo Flex är fristående och kopplas till ett vanligt Schuko-uttag. Två personer kan montera den på plats på under tre timmar, eller så monterar vårt eget team den för {installation} exkl. moms."
         },
         "ventilation": {
           "question": "Hur fungerar ventilationen?",
@@ -4003,7 +4006,7 @@
       "openArea5": "5% öppen yta"
     },
     "solo-eco": {
-      "mounting": "Fristående; montering av Re-Sound på begäran",
+      "mounting": "Fristående; montering av Re-Sound som tillval",
       "leadTime": "4 veckors produktion"
     }
   },
@@ -4149,7 +4152,7 @@
       "description": "Telefonhytter & mötesbås för kontor: Solo ECO och Solo Flex (1 pers.), Duo (2), Modular XL (6–10). ISO 23351-1-talreduktion på Flex och XL, 230 V.",
       "h1": "Telefonhytter och mötespods för kontoret från tillverkaren",
       "breadcrumb": "Hytter",
-      "intro": "En telefonhytt för kontor ger en person en tyst, ventilerad plats för samtal och videomöten mitt i ett öppet kontorslandskap; ett mötesbås gör detsamma för ett team. Re-Sounds hytter tillverkas i vår egen fabrik i Częstochowa (Polen), levereras och monteras av vårt eget team på begäran, med 5 års garanti på stommen (Solo ECO: 5 års reservdelsgaranti). Hyttsortimentet omfattar fyra modeller. Solo ECO är instegsmodellen: en hytt för en person med ståbord, ett landsspecifikt uttag med USB-A och USB-C (enbart uttag i Danmark), ventilation upp till 4 m³/min och en sluten bakvägg eller bakvägg i glas. Solo Flex är telefonhytten för en person: 1 m² golvyta, höj- och sänkbart bord, 230 V och USB-C, tysta EC-fläktar och en talnivåreduktion på 24 dB(A) uppmätt enligt ISO 23351-1. Duo är den akustiska telefonhytten för två personer med två konfigurationer – Flex för ett samtal med två sittplatser, Work för en person med ett bord i full bredd. Modular XL är det akustiska mötesbåset för sex till tio personer: basenheten förlängs i segment om 90 cm och når 25,9 dB(A) talnivåreduktion. Solo Flex, Duo och Modular XL har 5 års garanti på stommen och Solo ECO 5 års reservdelsgaranti; alla fyra levereras i hela EU. Jämför telefonhytterna för kontor nedan och öppna sedan en modellsida för tillval och nedladdningar.",
+      "intro": "En telefonhytt för kontor ger en person en tyst, ventilerad plats för samtal och videomöten mitt i ett öppet kontorslandskap; ett mötesbås gör detsamma för ett team. Re-Sounds hytter tillverkas i vår egen fabrik i Częstochowa (Polen), levereras och monteras av vårt eget team till fasta priser inom det europeiska fastlandet, med 5 års garanti på stommen (Solo ECO: 5 års reservdelsgaranti). Hyttsortimentet omfattar fyra modeller. Solo ECO är instegsmodellen: en hytt för en person med ståbord, ett landsspecifikt uttag med USB-A och USB-C (enbart uttag i Danmark), ventilation upp till 4 m³/min och en sluten bakvägg eller bakvägg i glas. Solo Flex är telefonhytten för en person: 1 m² golvyta, höj- och sänkbart bord, 230 V och USB-C, tysta EC-fläktar och en talnivåreduktion på 24 dB(A) uppmätt enligt ISO 23351-1. Duo är den akustiska telefonhytten för två personer med två konfigurationer – Flex för ett samtal med två sittplatser, Work för en person med ett bord i full bredd. Modular XL är det akustiska mötesbåset för sex till tio personer: basenheten förlängs i segment om 90 cm och når 25,9 dB(A) talnivåreduktion. Solo Flex, Duo och Modular XL har 5 års garanti på stommen och Solo ECO 5 års reservdelsgaranti; alla fyra levereras i hela EU. Jämför telefonhytterna för kontor nedan och öppna sedan en modellsida för tillval och nedladdningar.",
       "whyCertsDesc": "5 års garanti på varje hytt (på stommen för Solo Flex, Duo och Modular XL; på reservdelar för Solo ECO); talnivåreduktion anges enligt ISO 23351-1 där den är uppmätt.",
       "applications": {
         "app1": "Öppna kontorslandskap och coworking-ytor",
@@ -4181,7 +4184,7 @@
           "answer": "Solo ECO har 4 veckors produktionstid och 5 års reservdelsgaranti. Solo Flex och Duo levereras 4–6 veckor efter beställning, Modular XL 6–8 veckor för basenheten; specialtyger lägger till 2–3 veckor. Garantin på stommen är 5 år, på elektroniken 2 år, med leverans och installation i hela EU."
         }
       },
-      "whyOwnFactoriesDesc": "Alla fyra hytterna byggs i vår egen fabrik i Częstochowa (Polen) och levereras och monteras av vårt eget team på begäran."
+      "whyOwnFactoriesDesc": "Alla fyra hytterna byggs i vår egen fabrik i Częstochowa (Polen) och levereras och monteras av vårt eget team till fasta priser inom det europeiska fastlandet."
     }
   },
   "sampleKit": {
@@ -4257,7 +4260,7 @@
     "breadcrumb": "Priser på telefonhytter",
     "priceTag": "PRISER 2026",
     "priceTitle": "Priser per modell (exkl. moms)",
-    "priceNote": "Priserna är exklusive moms, transport och montering (fritt fabrik). Montering av vårt eget team är valfritt; Solo Flex kan även monteras av två personer på under tre timmar.",
+    "priceNote": "Priserna är exklusive moms. Transport inom det europeiska fastlandet och montering av vårt eget team är fasta belopp per modell och anges i tabellen; utanför det europeiska fastlandet offereras transporten.",
     "col": {
       "model": "Modell",
       "capacity": "Kapacitet",
@@ -4271,7 +4274,8 @@
       "weight": "Vikt",
       "assembly": "Montering",
       "leadTime": "Leveranstid",
-      "warranty": "Garanti"
+      "warranty": "Garanti",
+      "transport": "Transport (europeiska fastlandet)"
     },
     "onRequest": "På begäran",
     "persons": "{count, plural, one {# person} other {# personer}}",
@@ -4284,7 +4288,7 @@
     "includedText": "Varje hytt levereras som en komplett, ventilerad enhet: stomme med dörr och el vid arbetsbordet. Solo ECO: ett fast ståbord, ett landsspecifikt uttag med USB-A och USB-C (enbart uttag i Danmark) och ventilation upp till 4 m³/min. Solo Flex: dimbar LED-belysning, 230 V och USB-C, det manuellt höj- och sänkbara bordet och tysta EC-fläktar som flyttar 4,6 m³/min, med en PIR-sensor som slår på fläktarna när någon befinner sig i hytten.",
     "installationTag": "MONTERING",
     "installationTitle": "Montering av Re-Sound eller egen montering",
-    "installationText": "Våra montörer ställer upp en telefonhytt på cirka 60 minuter, ett mötesbås på cirka 2 timmar och en Modular XL på 2 till 6 timmar. Solo Flex kan även monteras av två personer på under tre timmar: hytten är en platt-packad konstruktion och kan därför demonteras och byggas upp igen på ett annat våningsplan senare.",
+    "installationText": "Våra montörer ställer upp en telefonhytt på cirka 60 minuter, ett mötesbås på cirka 2 timmar och en Modular XL på 2 till 6 timmar. Montering av Re-Sound kostar {soloEco} för Solo ECO, {soloFlex} för Solo Flex, {duo} för Duo och {modularXl} för Modular XL plus {modularXlExtra} per extra element, exkl. moms; transport inom det europeiska fastlandet är ett fast belopp per modell och anges i tabellen ovan. Solo Flex kan även monteras av två personer på under tre timmar: hytten är en platt-packad konstruktion och kan därför demonteras och byggas upp igen på ett annat våningsplan senare.",
     "testingTag": "PROVA FÖRST",
     "testingTitle": "Prova en hytt i vårt showroom",
     "testingText": "Ni kan sätta er i varje modell i vårt showroom i Beveren-Waas (mån–fre 08:00–16:30, efter överenskommelse) och själva höra skillnaden innan ni beställer.",
@@ -4310,7 +4314,7 @@
     "faqTitle": "Vanliga frågor om hyttpriser",
     "ctaTag": "NÄSTA STEG",
     "ctaTitle": "Begär offert eller besök vårt showroom",
-    "ctaText": "Skicka oss er planritning och antalet hytter, så återkommer vi med en offert inklusive leverans och montering.",
+    "ctaText": "Skicka oss er planritning och antalet hytter, så återkommer vi med en offert till de transport- och monteringspriser som anges ovan.",
     "ctaQuote": "Begär offert",
     "ctaShowroom": "Boka ett showroombesök",
     "tableCaption": "Hyttpriser och specifikationer per modell",
@@ -4325,7 +4329,7 @@
     "warrantyByModel": {
       "solo-eco": "5 års reservdelsgaranti"
     },
-    "manufactureLine": "Tillverkas i vår egen fabrik i Częstochowa (Polen); leverans och montering av vårt eget team offereras separat.",
+    "manufactureLine": "Tillverkas i vår egen fabrik i Częstochowa (Polen); levereras och monteras av vårt eget team till fasta priser inom det europeiska fastlandet.",
     "pricelist": {
       "tag": "Prislista",
       "title": "Ladda ner hela prislistan (PDF)",
@@ -4343,7 +4347,8 @@
       "successLink": "Öppna prislistan (PDF)",
       "errorInvalid": "Kontrollera dina uppgifter och försök igen.",
       "error": "Något gick fel. Försök igen om en stund."
-    }
+    },
+    "perExtraElement": "+ {price} per extra element"
   },
   "order": {
     "cta": "Beställ online",
@@ -4387,7 +4392,7 @@
       },
       "extraElement": {
         "label": "Extra element på 90 cm",
-        "note": "Förlänger mötesbåset med 90 cm. Montering av extraelementet ingår i priset."
+        "note": "Förlänger mötesbåset med 90 cm. Vid montering av Re-Sound tillkommer en egen monteringsrad för varje extra element."
       }
     },
     "details": {
@@ -4422,13 +4427,14 @@
       "editConfig": "Ändra alternativ",
       "editDetails": "Ändra uppgifter",
       "deliveryTitle": "Leverans och fakturering",
-      "consent": "Jag lägger en bindande beställning. Re-Sound bekräftar den per e-post med transportkostnaden och eventuella alternativ med pris på begäran. Ingenting debiteras före den bekräftelsen.",
+      "consent": "Jag lägger en bindande beställning. Re-Sound bekräftar den per e-post, inklusive allt som ännu har pris på begäran. Ingenting debiteras före den bekräftelsen.",
       "submit": "Lägg beställning",
       "submitting": "Skickar…",
       "missingTitle": "Fyll i följande fält:",
       "socketMatched": "Eluttag anpassat efter ert leveransland: {socket}. Ändra det under ”Ändra alternativ” om ni behöver en annan typ.",
       "socketDefault": "Ert leveransland har inget landsspecifikt eluttag i vår lista, så standardtypen valdes: {socket}. Ändra det under ”Ändra alternativ” om ni behöver en annan typ.",
-      "segmentsQty": "{quantity} × {segments} segment à 90 cm"
+      "segmentsQty": "{quantity} × {segments} segment à 90 cm",
+      "extensionQty": "{quantity} × {elements, plural, one {# extra element} other {# extra element}}"
     },
     "summary": {
       "net": "Delsumma exkl. moms",
@@ -4436,7 +4442,8 @@
       "onRequest": "Pris på begäran",
       "onRequestNote": "Alternativ märkta ”pris på begäran” prissätts av vårt team. Ni får det slutliga beloppet innan beställningen bekräftas.",
       "transportNote": "Transport ingår aldrig i dessa priser. Vi lämnar pris på leverans till er adress när vi bekräftar beställningen.",
-      "included": "Ingår"
+      "included": "Ingår",
+      "transportMainlandNote": "Transport inom det europeiska fastlandet ingår till det fasta priset per enhet som visas ovan. För Storbritannien, Irland, Malta, Cypern och Island lämnar vi pris på transporten när vi bekräftar beställningen."
     },
     "vat": {
       "domestic": "Moms {rate} %",
@@ -4454,7 +4461,7 @@
       "eyebrow": "Beställning mottagen",
       "title": "Tack för er beställning",
       "referenceLabel": "Er referens",
-      "body": "Vi har skickat en kopia till er e-post. Vårt team bekräftar det slutliga beloppet, inklusive transport, inom en arbetsdag.",
+      "body": "Vi har skickat en kopia till er e-post. Vårt team bekräftar det slutliga beloppet inom en arbetsdag.",
       "emailFallback": "Vi kunde inte skicka bekräftelsen per e-post. Kontakta info@re-sound.be och ange referens {reference}.",
       "close": "Stäng",
       "correctedTotal": "Den slutliga summan är {total}. Den skiljer sig från beloppet som visades vid beställningen eftersom ditt momsregistreringsnummer inte kunde bekräftas; vi krediterar momsen så snart det är bekräftat.",
@@ -4481,7 +4488,7 @@
       "customerHeading": "Beställning mottagen",
       "customerSubject": "Er beställning hos Re-Sound {reference}",
       "greeting": "Hej {name},",
-      "intro": "Tack för er beställning. Vi har registrerat den och bekräftar den per e-post, inklusive transportkostnaden.",
+      "intro": "Tack för er beställning. Vi har registrerat den och bekräftar den per e-post.",
       "referenceLabel": "Er referens",
       "deliveryHeading": "Leveransadress",
       "nextSteps": "Frågor om beställningen? Svara på detta e-postmeddelande eller ring +32 3 284 68 18. Re-Sound är ett varumärke inom Stretch Group; er beställning skickas från vår fabrik i Częstochowa (Polen).",
@@ -4586,7 +4593,7 @@
       "questions": {
         "leadTime": {
           "question": "Vad är leveranstiden för Solo ECO?",
-          "answer": "Produktionen tar fyra veckor från bekräftad order. Transport offereras separat; hytten skickas från vår fabrik i Częstochowa på en pall om 230 × 120 × 70 cm."
+          "answer": "Produktionen tar fyra veckor från bekräftad order. Transport inom det europeiska fastlandet kostar {transport} exkl. moms; hytten skickas från vår fabrik i Częstochowa på en pall om 230 × 120 × 70 cm."
         },
         "difference": {
           "question": "Vad är skillnaden mellan Solo ECO och Solo Flex?",
@@ -4611,7 +4618,8 @@
       }
     },
     "cta": {
-      "deliveryNote": "Fritt fabrik, 4 veckors produktion · Leverans och montering offereras på begäran · 5 års reservdelsgaranti"
+      "deliveryNote": "Fritt fabrik Częstochowa, 4 veckors produktion · Transport inom det europeiska fastlandet {transport} · Montering {installation} · 5 års reservdelsgaranti",
+      "deliveryNoteNoTransport": "Fritt fabrik Częstochowa, 4 veckors produktion · Leverans och montering på begäran · 5 års reservdelsgaranti"
     }
   },
   "manufacturing": {
@@ -4633,7 +4641,7 @@
       "PL": {
         "role": "rWood- och rPET-paneler, alla telefonhytter",
         "makes": "Akustikpaneler i trä med FSC-certifierat faner, PET-akustikpaneler i återvunnen PET-filt samt telefonhytterna och mötesbåsen.",
-        "note": "Produktionskontoret tar emot projektbesök och fabriksvisningar efter överenskommelse. Hytterna levereras och monteras av vårt eget team på begäran."
+        "note": "Produktionskontoret tar emot projektbesök och fabriksvisningar efter överenskommelse. Hytterna levereras och monteras av vårt eget team till fasta priser inom det europeiska fastlandet."
       }
     },
     "plantLabels": {
@@ -4685,7 +4693,7 @@
       },
       "installation": {
         "title": "Leverans och montering av vårt eget team",
-        "text": "Hytterna levereras och monteras av vårt eget team på begäran; leverans och montering offereras separat."
+        "text": "Hytterna levereras av vårt eget team till ett fast transportpris inom det europeiska fastlandet och monteras av våra egna montörer till ett fast pris per modell; båda anges tillsammans med hyttpriserna."
       },
       "warranty": {
         "title": "Garanti på varje hytt"

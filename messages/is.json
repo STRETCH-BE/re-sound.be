@@ -3084,7 +3084,10 @@
       "callUs": "Hringdu í okkur: +32 3 284 68 18",
       "ctaTitle": "Tilbúin að hanna rýmið þitt?",
       "ctaSubtitle": "Teymið okkar hjálpar þér að velja réttan klefa, stilla valkosti og skipuleggja afhendingu. Tilboð skila sér yfirleitt á einum virkum degi.",
-      "deliveryNote": "Afhending um alla ESB · Uppsetning í boði · 5 ára ábyrgð á grind"
+      "deliveryNote": "Flutningur innan meginlands Evrópu {transport} · Uppsetning af hálfu Re-Sound {installation} · 5 ára ábyrgð á burðarvirki",
+      "deliveryNoteNoTransport": "Afhending og uppsetning eftir beiðni · 5 ára ábyrgð á burðarvirki",
+      "perExtraElement": "+ {price} fyrir hverja aukaeiningu",
+      "onRequest": "eftir beiðni"
     },
     "acoustics": {
       "benefitSpeech": {
@@ -3296,7 +3299,7 @@
         },
         "installation": {
           "question": "Krefst uppsetningin byggingavinnu?",
-          "answer": "Nei. Solo Flex er sjálfstæður og tengist venjulegum Schuko-tengli. Tveir geta sett hann upp á staðnum á innan við þremur klukkustundum. Uppsetning innan ESB er í boði sem staðlaður valkostur."
+          "answer": "Nei. Solo Flex er sjálfstæður og tengist venjulegum Schuko-tengli. Tveir geta sett hann upp á staðnum á innan við þremur klukkustundum, eða okkar eigið teymi setur hann upp fyrir {installation} án vsk."
         },
         "ventilation": {
           "question": "Hvernig virkar loftræstingin?",
@@ -4003,7 +4006,7 @@
       "openArea5": "5% opið flatarmál"
     },
     "solo-eco": {
-      "mounting": "Frístandandi; uppsetning af Re-Sound eftir beiðni",
+      "mounting": "Frístandandi; uppsetning af hálfu Re-Sound valkvæð",
       "leadTime": "4 vikna framleiðslutími"
     }
   },
@@ -4149,7 +4152,7 @@
       "description": "Símaklefar og fundarklefar: Solo ECO og Solo Flex (1 manns), Duo (2), Modular XL (6–10). Talminnkun skv. ISO 23351-1 á Flex og XL, 230 V.",
       "h1": "Símaklefar og fundarklefar fyrir skrifstofur beint frá framleiðanda",
       "breadcrumb": "Klefar",
-      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Klefar Re-Sound eru framleiddir í eigin verksmiðju í Częstochowa (Póllandi), afhentir og settir upp af okkar eigin teymi sé þess óskað, með 5 ára ábyrgð á burðarvirki (Solo ECO: 5 ára varahlutaábyrgð). Klefalínan telur fjórar gerðir. Solo ECO er grunngerðin: eins manns klefi með standborði, tengli að hætti hvers lands með USB-A og USB-C (aðeins tengill fyrir Danmörku), loftræstingu allt að 4 m³/mín og lokuðum bakvegg eða bakvegg úr gleri. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Solo Flex, Duo og Modular XL fylgir 5 ára ábyrgð á burðarvirki og Solo ECO 5 ára varahlutaábyrgð; allir fjórir eru afhentir um allt ESB. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
+      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Klefar Re-Sound eru framleiddir í eigin verksmiðju í Częstochowa (Póllandi), afhentir og settir upp af okkar eigin teymi á föstu verði innan meginlands Evrópu, með 5 ára ábyrgð á burðarvirki (Solo ECO: 5 ára varahlutaábyrgð). Klefalínan telur fjórar gerðir. Solo ECO er grunngerðin: eins manns klefi með standborði, tengli að hætti hvers lands með USB-A og USB-C (aðeins tengill fyrir Danmörku), loftræstingu allt að 4 m³/mín og lokuðum bakvegg eða bakvegg úr gleri. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Solo Flex, Duo og Modular XL fylgir 5 ára ábyrgð á burðarvirki og Solo ECO 5 ára varahlutaábyrgð; allir fjórir eru afhentir um allt ESB. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
       "whyCertsDesc": "5 ára ábyrgð á öllum klefum (á burðarvirki á Solo Flex, Duo og Modular XL; varahlutaábyrgð á Solo ECO); lækkun talstyrks gefin upp samkvæmt ISO 23351-1 þar sem hún hefur verið mæld.",
       "applications": {
         "app1": "Opin skrifstofurými og samvinnurými",
@@ -4181,7 +4184,7 @@
           "answer": "Solo ECO tekur 4 vikur í framleiðslu og er með 5 ára varahlutaábyrgð. Solo Flex og Duo eru afhentir 4–6 vikum frá pöntun, grunneining Modular XL á 6–8 vikum; sérvalin áklæði bæta við 2–3 vikum. Ábyrgð á burðarvirki er 5 ár og á rafbúnaði 2 ár, með afhendingu og uppsetningu um allt ESB."
         }
       },
-      "whyOwnFactoriesDesc": "Allir fjórir klefarnir eru smíðaðir í eigin verksmiðju í Częstochowa (Póllandi) og afhentir og settir upp af okkar eigin teymi sé þess óskað."
+      "whyOwnFactoriesDesc": "Allir fjórir klefarnir eru smíðaðir í eigin verksmiðju í Częstochowa (Póllandi) og afhentir og settir upp af okkar eigin teymi á föstu verði innan meginlands Evrópu."
     }
   },
   "sampleKit": {
@@ -4257,7 +4260,7 @@
     "breadcrumb": "Verð á símaklefum",
     "priceTag": "Verð 2026",
     "priceTitle": "Verð eftir gerð (án vsk.)",
-    "priceNote": "Verð eru án vsk., flutnings og uppsetningar (frá verksmiðju). Uppsetning af okkar eigin teymi er valkvæð; Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum.",
+    "priceNote": "Verð eru án vsk. Flutningur innan meginlands Evrópu og uppsetning af okkar eigin teymi eru fastar upphæðir fyrir hverja gerð og eru tilgreindar í töflunni; utan meginlands Evrópu gerum við tilboð í flutning.",
     "col": {
       "model": "Gerð",
       "capacity": "Fjöldi",
@@ -4271,7 +4274,8 @@
       "weight": "Þyngd",
       "assembly": "Samsetning",
       "leadTime": "Afhendingartími",
-      "warranty": "Ábyrgð"
+      "warranty": "Ábyrgð",
+      "transport": "Flutningur (meginland Evrópu)"
     },
     "onRequest": "Eftir beiðni",
     "persons": "{count, plural, one {# manneskja} other {# manns}}",
@@ -4284,7 +4288,7 @@
     "includedText": "Hver klefi er afhentur sem fullbúin, loftræst eining: skel með hurð og rafmagn við borðið. Solo ECO: fast standborð, tengill að hætti hvers lands með USB-A og USB-C (aðeins tengill í Danmörku) og loftræsting allt að 4 m³/mín. Solo Flex: deyfanleg LED-lýsing, 230 V og USB-C, handstillanlegt sitjandi/standandi borð og hljóðlátar EC-viftur sem flytja 4,6 m³/mín, með PIR-skynjara sem kveikir á viftunum þegar einhver er inni.",
     "installationTag": "Uppsetning",
     "installationTitle": "Uppsetning af Re-Sound eða eigin samsetning",
-    "installationText": "Uppsetningarteymið okkar setur upp símaklefa á um 60 mínútum, fundarklefa á um 2 klukkustundum og Modular XL á 2 til 6 klukkustundum. Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum: klefinn er flatpökkuð smíði og því má taka hann í sundur og setja upp aftur á annarri hæð síðar.",
+    "installationText": "Uppsetningarteymið okkar setur upp símaklefa á um 60 mínútum, fundarklefa á um 2 klukkustundum og Modular XL á 2 til 6 klukkustundum. Uppsetning af hálfu Re-Sound kostar {soloEco} fyrir Solo ECO, {soloFlex} fyrir Solo Flex, {duo} fyrir Duo og {modularXl} fyrir Modular XL auk {modularXlExtra} fyrir hverja aukaeiningu, án vsk.; flutningur innan meginlands Evrópu er föst upphæð fyrir hverja gerð og er tilgreindur í töflunni hér að ofan. Solo Flex geta tveir einstaklingar einnig sett saman á innan við þremur klukkustundum: klefinn er flatpökkuð smíði og því má taka hann í sundur og setja upp aftur á annarri hæð síðar.",
     "testingTag": "Prófaðu fyrst",
     "testingTitle": "Prófaðu klefa í sýningarsal okkar",
     "testingText": "Þú getur sest inn í allar gerðir í sýningarsal okkar í Beveren-Waas (mán–fös 08:00–16:30, eftir samkomulagi) og heyrt muninn með eigin eyrum áður en þú pantar.",
@@ -4310,7 +4314,7 @@
     "faqTitle": "Algengar spurningar um verð á klefum",
     "ctaTag": "Næsta skref",
     "ctaTitle": "Fáðu tilboð eða heimsæktu sýningarsalinn",
-    "ctaText": "Sendu okkur grunnteikninguna og fjölda klefa; við svörum með tilboði sem innifelur afhendingu og uppsetningu.",
+    "ctaText": "Sendu okkur grunnteikninguna og fjölda klefa; við svörum með tilboði á þeim flutnings- og uppsetningarverðum sem tilgreind eru hér að ofan.",
     "ctaQuote": "Óska eftir tilboði",
     "ctaShowroom": "Bóka heimsókn í sýningarsal",
     "tableCaption": "Verð og tæknilýsingar klefa eftir gerð",
@@ -4325,7 +4329,7 @@
     "warrantyByModel": {
       "solo-eco": "5 ára varahlutaábyrgð"
     },
-    "manufactureLine": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi); afhending og uppsetning af okkar eigin teymi, verðlögð sérstaklega.",
+    "manufactureLine": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi); afhent og sett upp af okkar eigin teymi á föstu verði innan meginlands Evrópu.",
     "pricelist": {
       "tag": "Verðlisti",
       "title": "Sæktu allan verðlistann (PDF)",
@@ -4343,7 +4347,8 @@
       "successLink": "Opna verðlistann (PDF)",
       "errorInvalid": "Athugaðu upplýsingarnar þínar og reyndu aftur.",
       "error": "Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur eftir smástund."
-    }
+    },
+    "perExtraElement": "+ {price} fyrir hverja aukaeiningu"
   },
   "order": {
     "cta": "Panta á netinu",
@@ -4387,7 +4392,7 @@
       },
       "extraElement": {
         "label": "Auka 90 cm eining",
-        "note": "Lengir fundarklefann um 90 cm. Uppsetning aukaeiningarinnar er innifalin í þessu verði."
+        "note": "Lengir fundarklefann um 90 cm. Sé uppsetning af hálfu Re-Sound valin bætist sérstök uppsetningarlína við fyrir hverja aukaeiningu."
       }
     },
     "details": {
@@ -4422,13 +4427,14 @@
       "editConfig": "Breyta valkostum",
       "editDetails": "Breyta upplýsingum",
       "deliveryTitle": "Afhending og reikningsgerð",
-      "consent": "Ég legg inn bindandi pöntun. Re-Sound staðfestir hana með tölvupósti ásamt flutningskostnaði og verði á þeim valkostum sem eru verðlagðir eftir fyrirspurn. Ekkert er innheimt fyrir þá staðfestingu.",
+      "consent": "Ég legg inn bindandi pöntun. Re-Sound staðfestir hana með tölvupósti, ásamt öllu því sem enn er verðlagt eftir fyrirspurn. Ekkert er innheimt fyrir þá staðfestingu.",
       "submit": "Leggja inn pöntun",
       "submitting": "Sendi…",
       "missingTitle": "Vinsamlegast fylltu út þessa reiti:",
       "socketMatched": "Tengill valinn í samræmi við afhendingarlandið þitt: {socket}. Breyttu honum undir „Breyta valkostum“ ef þú þarft aðra tegund.",
       "socketDefault": "Á lista okkar er enginn sérstakur tengill fyrir afhendingarlandið þitt, svo staðaltengillinn var valinn: {socket}. Breyttu honum undir „Breyta valkostum“ ef þú þarft aðra tegund.",
-      "segmentsQty": "{quantity} × {segments} einingar á 90 cm"
+      "segmentsQty": "{quantity} × {segments} einingar á 90 cm",
+      "extensionQty": "{quantity} × {elements, plural, one {# aukaeining} other {# aukaeiningar}}"
     },
     "summary": {
       "net": "Samtala án vsk.",
@@ -4436,7 +4442,8 @@
       "onRequest": "Eftir fyrirspurn",
       "onRequestNote": "Valkostir merktir „eftir fyrirspurn“ eru verðlagðir af teyminu okkar. Þú færð endanlega upphæð áður en pöntunin er staðfest.",
       "transportNote": "Flutningur er aldrei innifalinn í þessum verðum. Við gerum tilboð í afhendingu á heimilisfangið þitt þegar við staðfestum pöntunina.",
-      "included": "Innifalið"
+      "included": "Innifalið",
+      "transportMainlandNote": "Flutningur innan meginlands Evrópu er innifalinn á því fasta verði fyrir hverja einingu sem sýnt er hér að ofan. Fyrir Bretland, Írland, Möltu, Kýpur og Ísland gerum við tilboð í flutning þegar við staðfestum pöntunina."
     },
     "vat": {
       "domestic": "Vsk. {rate} %",
@@ -4454,7 +4461,7 @@
       "eyebrow": "Pöntun móttekin",
       "title": "Takk fyrir pöntunina",
       "referenceLabel": "Tilvísunarnúmer þitt",
-      "body": "Við höfum sent þér afrit í tölvupósti. Teymið okkar staðfestir endanlega upphæð, að flutningi meðtöldum, innan eins virks dags.",
+      "body": "Við höfum sent þér afrit í tölvupósti. Teymið okkar staðfestir endanlega upphæð innan eins virks dags.",
       "emailFallback": "Okkur tókst ekki að senda staðfestingarpóstinn. Hafðu samband við info@re-sound.be og tilgreindu tilvísunina {reference}.",
       "close": "Loka",
       "correctedTotal": "Endanleg heildarupphæð er {total}. Hún er önnur en upphæðin sem sýnd var við pöntun vegna þess að ekki tókst að staðfesta vsk-númerið þitt; við endurgreiðum virðisaukaskattinn með kreditreikningi um leið og það tekst.",
@@ -4481,7 +4488,7 @@
       "customerHeading": "Pöntun móttekin",
       "customerSubject": "Re-Sound pöntunin þín {reference}",
       "greeting": "Góðan dag {name},",
-      "intro": "Takk fyrir pöntunina. Við höfum skráð hana og staðfestum hana með tölvupósti, ásamt flutningskostnaði.",
+      "intro": "Takk fyrir pöntunina. Við höfum skráð hana og staðfestum hana með tölvupósti.",
       "referenceLabel": "Tilvísunarnúmer þitt",
       "deliveryHeading": "Afhendingarheimilisfang",
       "nextSteps": "Spurningar um þessa pöntun? Svaraðu þessum tölvupósti eða hringdu í +32 3 284 68 18. Re-Sound er vörumerki Stretch Group; pöntunin þín er send frá verksmiðju okkar í Częstochowa (Póllandi).",
@@ -4586,7 +4593,7 @@
       "questions": {
         "leadTime": {
           "question": "Hver er afhendingartími Solo ECO?",
-          "answer": "Framleiðslan tekur fjórar vikur frá staðfestri pöntun. Flutningur er verðlagður sérstaklega; klefinn er sendur frá verksmiðju okkar í Częstochowa á einu bretti, 230 × 120 × 70 cm."
+          "answer": "Framleiðslan tekur fjórar vikur frá staðfestri pöntun. Flutningur innan meginlands Evrópu kostar {transport} án vsk.; klefinn er sendur frá verksmiðju okkar í Częstochowa á einu bretti, 230 × 120 × 70 cm."
         },
         "difference": {
           "question": "Hver er munurinn á Solo ECO og Solo Flex?",
@@ -4611,7 +4618,8 @@
       }
     },
     "cta": {
-      "deliveryNote": "Frá verksmiðju, 4 vikna framleiðslutími · Afhending og uppsetning verðlögð eftir beiðni · 5 ára varahlutaábyrgð"
+      "deliveryNote": "Frá verksmiðju í Częstochowa, 4 vikna framleiðslutími · Flutningur innan meginlands Evrópu {transport} · Uppsetning {installation} · 5 ára varahlutaábyrgð",
+      "deliveryNoteNoTransport": "Frá verksmiðju í Częstochowa, 4 vikna framleiðslutími · Afhending og uppsetning eftir beiðni · 5 ára varahlutaábyrgð"
     }
   },
   "manufacturing": {
@@ -4633,7 +4641,7 @@
       "PL": {
         "role": "rWood- og rPET-plötur, allir símaklefar",
         "makes": "Hljóðdeyfiplötur úr viði með FSC-vottuðum spón, PET-hljóðdeyfiplötur úr endurunnu PET-filti, auk símaklefanna og fundarklefanna.",
-        "note": "Framleiðsluskrifstofan tekur á móti verkefnaheimsóknum og verksmiðjuskoðunum eftir samkomulagi. Klefar eru afhentir og settir upp af okkar eigin teymi sé þess óskað."
+        "note": "Framleiðsluskrifstofan tekur á móti verkefnaheimsóknum og verksmiðjuskoðunum eftir samkomulagi. Klefar eru afhentir og settir upp af okkar eigin teymi á föstu verði innan meginlands Evrópu."
       }
     },
     "plantLabels": {
@@ -4685,7 +4693,7 @@
       },
       "installation": {
         "title": "Afhending og uppsetning af okkar eigin teymi",
-        "text": "Klefar eru afhentir og settir upp af okkar eigin teymi sé þess óskað; afhending og uppsetning eru verðlagðar sérstaklega."
+        "text": "Klefar eru afhentir af okkar eigin teymi á föstu flutningsverði innan meginlands Evrópu og settir upp af okkar eigin uppsetningarteymi á föstu verði fyrir hverja gerð; hvort tveggja er tilgreint með verðum klefanna."
       },
       "warranty": {
         "title": "Ábyrgð á hverjum klefa"

@@ -57,6 +57,28 @@ hub, price guide, blog posts, manufacturing page).
    without a company); the delivery address is optional. Tell us if private
    buyers should be able to order a kit, and whether "shipped within three
    working days in the EU" (from the brief) is the promise you want printed.
+8. **Transport and installation prices are live — confirm four readings.**
+   The figures you sent on 12 September are in the catalogue and on the site
+   (order dialog, price guide, PDF, product pages, FAQ, blog posts):
+   Solo ECO transport € 300 / installation € 875; Solo Flex € 500 / € 1 245;
+   Duo (Work and Flex) € 500 / € 1 245; Modular XL € 750 / € 1 645 for the
+   main module plus € 1 245 per extra element. Transport is now a line on
+   every online booth order; installation stays an option the buyer ticks.
+   Four things were read into your message rather than stated by it:
+   (a) both amounts are **excl. VAT**, like every other price on the site;
+   (b) both are **per unit** — an order of three booths carries three times
+   the transport and three times the installation amount;
+   (c) **"mainland Europe"** is taken geographically: every delivery country
+   the order form offers (item 35) except the islands — the United Kingdom,
+   Northern Ireland, Ireland, Malta, Cyprus and Iceland. For those six the
+   transport line reads "on request" and is quoted with the order
+   confirmation (`NON_MAINLAND_EUROPE` in `src/lib/catalogue/select.ts`);
+   (d) your "Solo" is read as **Solo Flex**, the Solo sold online; Solo ECO
+   had its own row. Solo Stand, Modular 4, Interior, Divide and Solid
+   received no figure: their installation stays "on request" and they carry
+   no transport line. Say if any of the four readings is wrong; each is one
+   cell in the `articles` table (`WEB-…-INST`, `WEB-…-INST-EXT`,
+   `WEB-…-TRANSPORT-EU`) or one entry in the country set.
 
 ## B. Confirmed price list (per model)
 
@@ -66,11 +88,11 @@ Every price on the site comes from the catalogue in the database
 
 | Model | Shown today | Open |
 |---|---|---|
-| Solo ECO | from € 2 740 excl. VAT (closed back wall; glass back wall € 3 015) | ISO 23351-1 value (none published) |
-| Solo Flex | from € 4 118,75 excl. VAT | installation price (was € 865, now "on request") |
-| Duo | from € 7 612,50 excl. VAT (Duo Work and Duo Flex equal) | **is Duo still price-on-request anywhere?** No — the list price is shown on the page, the hub, the guide, the PDF and in BP-001; confirm that is intended. ISO 23351-1 value (none on file; the old "26 dB(A)" was unsourced and is gone) |
-| Modular XL | from € 13 781,25 excl. VAT base; +€ 5 118,75 / € 10 237,50 / € 15 356,25 for one, two, three elements | installation price (was € 2 990); capacity wording (list: base 4, up to 10; page hero: "6–10") |
-| Interior | € 387 per set | — |
+| Solo ECO | from € 2 740 excl. VAT (closed back wall; glass back wall € 3 015); transport within mainland Europe € 300, installation € 875 (12 September) | ISO 23351-1 value (none published) |
+| Solo Flex | from € 4 118,75 excl. VAT; transport within mainland Europe € 500, installation € 1 245 (12 September; was € 865, then "on request") | the four readings in item A.8 |
+| Duo | from € 7 612,50 excl. VAT (Duo Work and Duo Flex equal); transport within mainland Europe € 500, installation € 1 245 (12 September) | **is Duo still price-on-request anywhere?** No — the list price is shown on the page, the hub, the guide, the PDF and in BP-001; confirm that is intended. ISO 23351-1 value (none on file; the old "26 dB(A)" was unsourced and is gone) |
+| Modular XL | from € 13 781,25 excl. VAT base; +€ 5 118,75 / € 10 237,50 / € 15 356,25 for one, two, three elements; transport within mainland Europe € 750, installation € 1 645 for the main module + € 1 245 per extra element (12 September; was € 2 990, then "on request") | capacity wording (list: base 4, up to 10; page hero: "6–10") |
+| Interior | € 387 per set | installation still "on request"; no transport line |
 | Solid | € 407 per panel (website line, unconfirmed) | confirm or deactivate |
 | Divide | catalogue | — |
 
@@ -202,24 +224,29 @@ real order arrives:
     invoice. Give us the number if you also want it in the order
     confirmation e-mail.
 
-37. **Transport is quoted separately and is taxed the same way.** The
-    confirmation says transport is not included. When you add it to the
-    invoice it carries the same VAT treatment as the goods, so the invoiced
-    VAT will be higher than the amount the buyer saw. Say if the
-    confirmation should spell that out.
+37. **Transport is a line on the order and is taxed the same way.** Since
+    12 September every online booth order carries the transport line for
+    mainland Europe (€ 300 / € 500 / € 500 / € 750 per unit, item A.8), so
+    the VAT the buyer sees already covers it. For the six island countries
+    the line is "on request" and transport is quoted with the confirmation;
+    when you add it to the invoice it carries the same VAT treatment as the
+    goods, so for those orders the invoiced VAT will be higher than the
+    amount the buyer saw. Say if the confirmation should spell that out.
 
-29. **Installation price for Duo and Interior.** Both are offered as "on
-    request" because no price is confirmed. Give the figures and they become
-    part of the online total.
+29. **Installation price for Duo and Interior.** Duo is priced since
+    12 September (€ 1 245 per unit, Duo Work and Duo Flex alike) and is part
+    of the online total. Interior is still offered as "on request" because
+    no price is confirmed; give the figure (per set, or a flat visit fee)
+    and it becomes part of the online total.
 
 30. **Add-on prices.** Every add-on on the booth pages (sit-stand desk,
     monitor arm, display, whiteboard, extra seating, fabric panel, and so on)
     is currently "on request", so any order containing one is not a final
     amount. A price list would make those orders self-service.
 
-31. **Order handling.** Decide who confirms orders and how fast; the buyer's
-    confirmation e-mail promises an answer with the transport cost "within one
-    working day". Change that sentence (`order.email.nextSteps` in
+31. **Order handling.** Decide who confirms orders and how fast; the
+    on-screen confirmation promises that "our team confirms the final amount
+    within one working day". Change that sentence (`order.success.body` in
     `messages/*.json`) if another promise fits better.
 
 32. **VIES verification.** VAT numbers are verified against the European
@@ -243,7 +270,8 @@ real order arrives:
 35. **Delivery countries.** The dialog offers the EU 27, Northern Ireland and
     the United Kingdom, Switzerland, Norway, Iceland, Liechtenstein, Serbia
     and Ukraine. There is deliberately no "other country" option. Name any
-    country you want added.
+    country you want added — and say whether it is mainland Europe for the
+    flat transport rate (item A.8).
 
 ### The 2026 price list and the database (added 8 September 2026)
 
@@ -261,13 +289,16 @@ price on the site comes from it. These came out of the import:
     so were rewritten to state where the price sits. Read those four posts
     once (nl, en, fr, de) and tell us if you want a different argument.
 
-39. **Installation prices are gone.** The list says "delivery and
-    installation: optional, quoted separately", so installation is "on
-    request" on every product. The € 865 (Solo Flex) and € 2 990 (Modular XL)
-    figures were derived from the guide's installation-inclusive prices,
-    which no longer exist. If you want installation priced online again,
-    give a figure per model and it is one cell in the `articles` table
-    (the `WEB-…-INST` rows).
+39. **Installation prices — resolved for the four booths on 12 September.**
+    The list said "delivery and installation: optional, quoted separately",
+    so installation was "on request" on every product; the € 865 (Solo Flex)
+    and € 2 990 (Modular XL) figures derived from the old guide were retired.
+    Your 12 September figures now price installation on Solo ECO (€ 875),
+    Solo Flex (€ 1 245), Duo (€ 1 245) and Modular XL (€ 1 645 for the main
+    module + € 1 245 per extra element), and transport within mainland
+    Europe alongside (item A.8). Still "on request": Solo Stand, Modular 4,
+    Interior, Divide and Solid. A figure for any of them is one cell in the
+    `articles` table (the `WEB-…-INST` rows).
 
 40. **Valid from 21 September 2026.** The list carries that date
     (`price_lists.valid_from`). The site shows the list now, as instructed.

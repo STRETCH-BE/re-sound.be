@@ -3081,7 +3081,10 @@
       "callUs": "Call us: +32 3 284 68 18",
       "ctaTitle": "Ready to spec your space?",
       "ctaSubtitle": "Our team helps you choose the right booth, configure add-ons, and plan delivery. Quotes typically returned within one working day.",
-      "deliveryNote": "EU-wide delivery · Installation available · 5-year structural warranty"
+      "deliveryNote": "Transport within mainland Europe {transport} · Installation by Re-Sound {installation} · 5-year structural warranty",
+      "deliveryNoteNoTransport": "Delivery and installation on request · 5-year structural warranty",
+      "perExtraElement": "+ {price} per extra element",
+      "onRequest": "on request"
     },
     "acoustics": {
       "benefitSpeech": {
@@ -3293,7 +3296,7 @@
         },
         "installation": {
           "question": "Does installation require building work?",
-          "answer": "No. Solo Flex is freestanding and plugs into a standard Schuko outlet. Two people can assemble it on site in under three hours. We include installation in the EU as a standard option."
+          "answer": "No. Solo Flex is freestanding and plugs into a standard Schuko outlet. Two people can assemble it on site in under three hours, or our own team installs it for {installation} excl. VAT."
         },
         "ventilation": {
           "question": "How does the ventilation work?",
@@ -4000,7 +4003,7 @@
       "openArea5": "5% open area"
     },
     "solo-eco": {
-      "mounting": "Freestanding; installation by Re-Sound on request",
+      "mounting": "Freestanding; installation by Re-Sound optional",
       "leadTime": "4 weeks production"
     }
   },
@@ -4146,7 +4149,7 @@
       "description": "Office phone booths and meeting pods: Solo ECO and Solo Flex (1 person), Duo (2), Modular XL (6–10). ISO 23351-1 speech reduction on Flex and XL, 230 V.",
       "h1": "Office phone booths and meeting pods from the manufacturer",
       "breadcrumb": "Booths",
-      "intro": "An office phone booth gives one person a quiet, ventilated place for calls and video meetings inside an open-plan floor; a meeting pod does the same for a team. Re-Sound's booths are manufactured in our own plant in Częstochowa (Poland), delivered and installed by our own team on request, with a 5-year structural warranty (Solo ECO: 5-year spare-part warranty). The booth range has four models. Solo ECO is the entry model: a one-person booth with a standing table, a country-specific socket with USB-A and USB-C (socket only for Denmark), ventilation up to 4 m³/min and a closed or glass back wall. Solo Flex is the one-person office phone booth: a 1 m² footprint, a sit-stand desk, 230 V and USB-C power, silent EC fans and a 24 dB(A) speech level reduction measured under ISO 23351-1. Duo is the two-person acoustic phone booth with two configurations — Flex for a two-seat conversation, Work for one person with a full-width desk. Modular XL is the acoustic meeting pod for six to ten people: the base unit extends in 90 cm segments and reaches 25.9 dB(A) speech level reduction. Solo Flex, Duo and Modular XL carry the 5-year structural warranty and Solo ECO the 5-year spare-part warranty; all four are delivered EU-wide. Compare the office phone booths below, then open a model page for add-ons and downloads.",
+      "intro": "An office phone booth gives one person a quiet, ventilated place for calls and video meetings inside an open-plan floor; a meeting pod does the same for a team. Re-Sound's booths are manufactured in our own plant in Częstochowa (Poland), delivered and installed by our own team at fixed prices within mainland Europe, with a 5-year structural warranty (Solo ECO: 5-year spare-part warranty). The booth range has four models. Solo ECO is the entry model: a one-person booth with a standing table, a country-specific socket with USB-A and USB-C (socket only for Denmark), ventilation up to 4 m³/min and a closed or glass back wall. Solo Flex is the one-person office phone booth: a 1 m² footprint, a sit-stand desk, 230 V and USB-C power, silent EC fans and a 24 dB(A) speech level reduction measured under ISO 23351-1. Duo is the two-person acoustic phone booth with two configurations — Flex for a two-seat conversation, Work for one person with a full-width desk. Modular XL is the acoustic meeting pod for six to ten people: the base unit extends in 90 cm segments and reaches 25.9 dB(A) speech level reduction. Solo Flex, Duo and Modular XL carry the 5-year structural warranty and Solo ECO the 5-year spare-part warranty; all four are delivered EU-wide. Compare the office phone booths below, then open a model page for add-ons and downloads.",
       "whyCertsDesc": "5-year warranty on every booth (structural on Solo Flex, Duo and Modular XL; spare parts on Solo ECO); speech level reduction quoted per ISO 23351-1 where measured.",
       "applications": {
         "app1": "Open-plan offices and coworking floors",
@@ -4178,7 +4181,7 @@
           "answer": "Solo ECO takes 4 weeks of production and carries a 5-year spare-part warranty. Solo Flex and Duo ship 4–6 weeks from order, Modular XL 6–8 weeks for the base unit; custom fabrics add 2–3 weeks. The structural warranty is 5 years, electronics 2 years, with EU-wide delivery and installation available."
         }
       },
-      "whyOwnFactoriesDesc": "All four booths are built in our own plant in Częstochowa (Poland) and delivered and installed by our own team on request."
+      "whyOwnFactoriesDesc": "All four booths are built in our own plant in Częstochowa (Poland) and delivered and installed by our own team at fixed prices within mainland Europe."
     }
   },
   "sampleKit": {
@@ -4254,7 +4257,7 @@
     "breadcrumb": "Phone booth prices",
     "priceTag": "PRICES 2026",
     "priceTitle": "Prices per model (excl. VAT)",
-    "priceNote": "Prices exclude VAT, transport and installation (ex works). Installation by our own team is optional; Solo Flex can also be assembled by two people in under three hours.",
+    "priceNote": "Prices exclude VAT. Transport within mainland Europe and installation by our own team are fixed amounts per model, listed in the table; outside mainland Europe transport is quoted.",
     "col": {
       "model": "Model",
       "capacity": "Capacity",
@@ -4268,7 +4271,8 @@
       "weight": "Weight",
       "assembly": "Assembly",
       "leadTime": "Lead time",
-      "warranty": "Warranty"
+      "warranty": "Warranty",
+      "transport": "Transport (mainland Europe)"
     },
     "onRequest": "On request",
     "persons": "{count, plural, one {# person} other {# persons}}",
@@ -4281,7 +4285,7 @@
     "includedText": "Every booth ships as a complete, ventilated unit: shell with door and power at the desk. Solo ECO: a fixed standing table, a country-specific socket with USB-A and USB-C (socket only in Denmark) and ventilation up to 4 m³/min. Solo Flex: dimmable LED lighting, 230 V and USB-C, the manual sit-stand desk and silent EC fans moving 4.6 m³/min, with a PIR sensor that switches the fans on when someone is inside.",
     "installationTag": "INSTALLATION",
     "installationTitle": "Installation by Re-Sound or self-assembly",
-    "installationText": "Our installers place a call booth in about 60 minutes, a meeting pod in about 2 hours and a Modular XL in 2 to 6 hours. Solo Flex can also be assembled by two people in under three hours: the booth is a flat-pack construction, so it can be demounted and rebuilt on another floor later.",
+    "installationText": "Our installers place a call booth in about 60 minutes, a meeting pod in about 2 hours and a Modular XL in 2 to 6 hours. Installation by Re-Sound costs {soloEco} for Solo ECO, {soloFlex} for Solo Flex, {duo} for Duo and {modularXl} for Modular XL plus {modularXlExtra} per extra element, excl. VAT; transport within mainland Europe is a fixed amount per model, listed in the table above. Solo Flex can also be assembled by two people in under three hours: the booth is a flat-pack construction, so it can be demounted and rebuilt on another floor later.",
     "testingTag": "TRY IT FIRST",
     "testingTitle": "Test a booth in our showroom",
     "testingText": "You can sit inside every model in our Beveren-Waas showroom (Mon–Fri 08:00–16:30, by appointment) and hear the difference for yourself before you order.",
@@ -4307,7 +4311,7 @@
     "faqTitle": "Frequently asked questions about booth prices",
     "ctaTag": "NEXT STEP",
     "ctaTitle": "Get a quote or visit the showroom",
-    "ctaText": "Send us your floor plan and the number of booths; we reply with a quote including delivery and installation.",
+    "ctaText": "Send us your floor plan and the number of booths; we reply with a quote at the transport and installation prices listed above.",
     "ctaQuote": "Request a quote",
     "ctaShowroom": "Plan a showroom visit",
     "tableCaption": "Booth prices and specifications per model",
@@ -4322,7 +4326,7 @@
     "warrantyByModel": {
       "solo-eco": "5 years spare-part warranty"
     },
-    "manufactureLine": "Manufactured in our own plant in Częstochowa (Poland); delivery and installation by our own team, quoted separately.",
+    "manufactureLine": "Manufactured in our own plant in Częstochowa (Poland); delivered and installed by our own team at fixed prices within mainland Europe.",
     "pricelist": {
       "tag": "Price list",
       "title": "Download the full price list (PDF)",
@@ -4340,7 +4344,8 @@
       "successLink": "Open the price list (PDF)",
       "errorInvalid": "Please check your details and try again.",
       "error": "Something went wrong. Please try again in a moment."
-    }
+    },
+    "perExtraElement": "+ {price} per extra element"
   },
   "order": {
     "cta": "Order online",
@@ -4384,7 +4389,7 @@
       },
       "extraElement": {
         "label": "Extra 90 cm element",
-        "note": "Extends the meeting pod by 90 cm. Installation of the extra element is included in this price."
+        "note": "Extends the meeting pod by 90 cm. With installation by Re-Sound, each extra element adds its own installation line."
       }
     },
     "details": {
@@ -4419,13 +4424,14 @@
       "editConfig": "Change options",
       "editDetails": "Change details",
       "deliveryTitle": "Delivery and invoicing",
-      "consent": "I am placing a binding order. Re-Sound confirms it by e-mail with the transport cost and any option priced on request. Nothing is charged before that confirmation.",
+      "consent": "I am placing a binding order. Re-Sound confirms it by e-mail, including anything still priced on request. Nothing is charged before that confirmation.",
       "submit": "Place order",
       "submitting": "Sending…",
       "missingTitle": "Please complete these fields:",
       "socketMatched": "Power socket matched to your delivery country: {socket}. Change it under \"Change options\" if you need another type.",
       "socketDefault": "Your delivery country has no country-specific socket in our list, so the standard one was selected: {socket}. Change it under \"Change options\" if you need another type.",
-      "segmentsQty": "{quantity} × {segments} segments of 90 cm"
+      "segmentsQty": "{quantity} × {segments} segments of 90 cm",
+      "extensionQty": "{quantity} × {elements, plural, one {# extra element} other {# extra elements}}"
     },
     "summary": {
       "net": "Subtotal excl. VAT",
@@ -4433,7 +4439,8 @@
       "onRequest": "On request",
       "onRequestNote": "Options marked \"on request\" are priced by our team. You receive the final amount before the order is confirmed.",
       "transportNote": "Transport is never included in these prices. We quote delivery to your address when we confirm the order.",
-      "included": "Included"
+      "included": "Included",
+      "transportMainlandNote": "Transport within mainland Europe is included at the flat rate per unit shown above. For the United Kingdom, Ireland, Malta, Cyprus and Iceland we quote transport when we confirm the order."
     },
     "vat": {
       "domestic": "VAT {rate} %",
@@ -4451,7 +4458,7 @@
       "eyebrow": "Order received",
       "title": "Thank you for your order",
       "referenceLabel": "Your reference",
-      "body": "We have e-mailed you a copy. Our team confirms the final amount, including transport, within one working day.",
+      "body": "We have e-mailed you a copy. Our team confirms the final amount within one working day.",
       "emailFallback": "We could not send the confirmation e-mail. Please contact info@re-sound.be quoting reference {reference}.",
       "close": "Close",
       "correctedTotal": "The final total is {total}. It differs from the amount shown while ordering because your VAT number could not be confirmed; we credit the VAT as soon as it is.",
@@ -4478,7 +4485,7 @@
       "customerHeading": "Order received",
       "customerSubject": "Your Re-Sound order {reference}",
       "greeting": "Hello {name},",
-      "intro": "Thank you for your order. We have registered it and will confirm it by e-mail, including the transport cost.",
+      "intro": "Thank you for your order. We have registered it and will confirm it by e-mail.",
       "referenceLabel": "Your reference",
       "deliveryHeading": "Delivery address",
       "nextSteps": "Questions about this order? Reply to this e-mail or call +32 3 284 68 18. Re-Sound is a Stretch Group brand; your order ships from our plant in Częstochowa (Poland).",
@@ -4583,7 +4590,7 @@
       "questions": {
         "leadTime": {
           "question": "What is the lead time for Solo ECO?",
-          "answer": "Production takes four weeks from confirmed order. Transport is quoted separately; the booth ships from our plant in Częstochowa on one pallet of 230 × 120 × 70 cm."
+          "answer": "Production takes four weeks from confirmed order. Transport within mainland Europe is {transport} excl. VAT; the booth ships from our plant in Częstochowa on one pallet of 230 × 120 × 70 cm."
         },
         "difference": {
           "question": "What is the difference between Solo ECO and Solo Flex?",
@@ -4608,7 +4615,8 @@
       }
     },
     "cta": {
-      "deliveryNote": "Ex works, 4 weeks production · Delivery and installation quoted on request · 5-year spare-part warranty"
+      "deliveryNote": "Ex works Częstochowa, 4 weeks production · Transport within mainland Europe {transport} · Installation {installation} · 5-year spare-part warranty",
+      "deliveryNoteNoTransport": "Ex works Częstochowa, 4 weeks production · Delivery and installation on request · 5-year spare-part warranty"
     }
   },
   "manufacturing": {
@@ -4630,7 +4638,7 @@
       "PL": {
         "role": "rWood and rPET panels, all phone booths",
         "makes": "Wood acoustic panels in FSC-certified veneer, PET acoustic panels in recycled PET felt, and the phone booths and meeting pods.",
-        "note": "The production office welcomes project visits and factory tours by appointment. Booths are delivered and installed by our own team on request."
+        "note": "The production office welcomes project visits and factory tours by appointment. Booths are delivered and installed by our own team at fixed prices within mainland Europe."
       }
     },
     "plantLabels": {
@@ -4682,7 +4690,7 @@
       },
       "installation": {
         "title": "Delivery and installation by our own team",
-        "text": "Booths are delivered and installed by our own team on request; delivery and installation are quoted separately."
+        "text": "Booths are delivered by our own team at a fixed transport price within mainland Europe and installed by our own installers at a fixed price per model; both are listed with the booth prices."
       },
       "warranty": {
         "title": "Warranty on every booth"

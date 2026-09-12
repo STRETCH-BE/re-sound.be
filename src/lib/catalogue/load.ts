@@ -62,14 +62,15 @@ interface CategoryRow {
 interface ArticleRow {
   code: string; product_id: string; category_key: string; sheet_category: string | null; group: string | null;
   description: string; labels: unknown; price_cents: number | null; price_type: string; per_segment: boolean;
-  segments: number | null; is_default: boolean; source: string; notes: string | null; sort: number; active: boolean;
+  per_extension: boolean; segments: number | null; is_default: boolean; source: string; notes: string | null;
+  sort: number; active: boolean;
 }
 
 const COLUMNS = {
   price_lists: 'id, name, currency, valid_from, price_basis, terms, packaging, contacts, notes, source_file, imported_at',
   products: 'id, price_list_id, model_code, name, description, kind, unit, website_slug, max_qty, ref_page, tech, sort, active',
   categories: 'key, name, labels, select_mode, required, sort',
-  articles: 'code, product_id, category_key, sheet_category, "group", description, labels, price_cents, price_type, per_segment, segments, is_default, source, notes, sort, active',
+  articles: 'code, product_id, category_key, sheet_category, "group", description, labels, price_cents, price_type, per_segment, per_extension, segments, is_default, source, notes, sort, active',
 } as const;
 
 const asRecord = (v: unknown): Record<string, string> => {
@@ -108,7 +109,7 @@ const mapCategory = (r: CategoryRow): CatalogueCategory => ({
 const mapArticle = (r: ArticleRow): CatalogueArticle => ({
   code: r.code, productId: r.product_id, categoryKey: r.category_key, sheetCategory: r.sheet_category ?? null,
   group: r.group ?? null, description: r.description, labels: asObject(r.labels), priceCents: r.price_cents ?? null,
-  priceType: r.price_type as PriceType, perSegment: Boolean(r.per_segment), segments: r.segments ?? null,
+  priceType: r.price_type as PriceType, perSegment: Boolean(r.per_segment), perExtension: Boolean(r.per_extension), segments: r.segments ?? null,
   isDefault: Boolean(r.is_default), source: r.source as ArticleSource, notes: r.notes ?? null, sort: r.sort,
   active: Boolean(r.active),
 });
@@ -124,12 +125,17 @@ function normalise(c: Catalogue): Catalogue {
   // The database queries fetch active rows only; the snapshot carries every
   // row (an inactive article stays in it so an old order still resolves), so
   // drop the inactive ones here and both sources serve the same catalogue.
+  // A snapshot written before `per_extension` existed has no perExtension
+  // field: read it as false so the old file still loads.
   return {
     ...c,
     priceLists: c.priceLists.filter((l) => (l as PriceList & { active?: boolean }).active !== false),
     products: c.products.filter((p) => p.active).sort(byProduct),
     categories: [...c.categories].sort(byCategory),
-    articles: c.articles.filter((a) => a.active).sort(byArticle),
+    articles: c.articles
+      .filter((a) => a.active)
+      .map((a) => ({ ...a, perExtension: Boolean((a as Partial<CatalogueArticle>).perExtension) }))
+      .sort(byArticle),
   };
 }
 

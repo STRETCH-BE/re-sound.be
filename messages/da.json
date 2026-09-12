@@ -3084,7 +3084,10 @@
       "callUs": "Ring til os: +32 3 284 68 18",
       "ctaTitle": "Klar til at planlægge dit rum?",
       "ctaSubtitle": "Vores team hjælper dig med at vælge den rigtige bås, konfigurere tilvalg og planlægge levering. Tilbud returneres typisk inden for én arbejdsdag.",
-      "deliveryNote": "EU-dækkende levering · Installation tilgængelig · 5 års strukturel garanti"
+      "deliveryNote": "Transport inden for det europæiske fastland {transport} · Montering af Re-Sound {installation} · 5 års strukturel garanti",
+      "deliveryNoteNoTransport": "Levering og montering efter forespørgsel · 5 års strukturel garanti",
+      "perExtraElement": "+ {price} pr. ekstra element",
+      "onRequest": "efter forespørgsel"
     },
     "acoustics": {
       "benefitSpeech": {
@@ -3296,7 +3299,7 @@
         },
         "installation": {
           "question": "Kræver installationen byggearbejde?",
-          "answer": "Nej. Solo Flex er fritstående og tilsluttes en almindelig Schuko-stikkontakt. To personer kan samle den på stedet på under tre timer. Installation i EU tilbydes som standardvalg."
+          "answer": "Nej. Solo Flex er fritstående og tilsluttes en almindelig Schuko-stikkontakt. To personer kan samle den på stedet på under tre timer, eller vores eget team installerer den for {installation} ekskl. moms."
         },
         "ventilation": {
           "question": "Hvordan fungerer ventilationen?",
@@ -4003,7 +4006,7 @@
       "openArea5": "5 % åbent areal"
     },
     "solo-eco": {
-      "mounting": "Fritstående; montering af Re-Sound efter forespørgsel",
+      "mounting": "Fritstående; montering af Re-Sound som tilvalg",
       "leadTime": "4 ugers produktion"
     }
   },
@@ -4149,7 +4152,7 @@
       "description": "Telefonbokse og mødebokse: Solo ECO og Solo Flex (1 person), Duo (2), Modular XL (6–10). ISO 23351-1 talereduktion på Flex og XL, 230 V.",
       "h1": "Telefonbokse og mødepods til kontoret fra producenten",
       "breadcrumb": "Bokse",
-      "intro": "En telefonboks til kontoret giver én person et roligt, ventileret sted til opkald og videomøder midt i et åbent kontorlandskab; en mødeboks gør det samme for et team. Re-Sounds bokse produceres på vores egen fabrik i Częstochowa (Polen), leveres og monteres af vores eget team efter forespørgsel og har 5 års garanti på konstruktionen (Solo ECO: 5 års reservedelsgaranti). Boksserien fås i fire modeller. Solo ECO er indstigningsmodellen: en boks til én person med ståbord, en landespecifik stikkontakt med USB-A og USB-C (kun stikkontakt i Danmark), ventilation op til 4 m³/min og en lukket bagvæg eller bagvæg i glas. Solo Flex er telefonboksen til én person: et fodaftryk på 1 m², hæve-sænkebord, 230 V og USB-C-strøm, lydløse EC-ventilatorer og en talereduktion på 24 dB(A) målt i henhold til ISO 23351-1. Duo er den akustiske telefonboks til to personer med to konfigurationer — Flex til en samtale med to siddepladser, Work til én person med et bord i fuld bredde. Modular XL er den akustiske mødeboks til seks til ti personer: basisenheden forlænges i segmenter på 90 cm og når en talereduktion på 25,9 dB(A). Solo Flex, Duo og Modular XL har 5 års garanti på konstruktionen og Solo ECO 5 års reservedelsgaranti; alle fire leveres i hele EU. Sammenlign telefonboksene til kontoret nedenfor, og åbn derefter en modelside for tilbehør og downloads.",
+      "intro": "En telefonboks til kontoret giver én person et roligt, ventileret sted til opkald og videomøder midt i et åbent kontorlandskab; en mødeboks gør det samme for et team. Re-Sounds bokse produceres på vores egen fabrik i Częstochowa (Polen), leveres og monteres af vores eget team til faste priser inden for det europæiske fastland og har 5 års garanti på konstruktionen (Solo ECO: 5 års reservedelsgaranti). Boksserien fås i fire modeller. Solo ECO er indstigningsmodellen: en boks til én person med ståbord, en landespecifik stikkontakt med USB-A og USB-C (kun stikkontakt i Danmark), ventilation op til 4 m³/min og en lukket bagvæg eller bagvæg i glas. Solo Flex er telefonboksen til én person: et fodaftryk på 1 m², hæve-sænkebord, 230 V og USB-C-strøm, lydløse EC-ventilatorer og en talereduktion på 24 dB(A) målt i henhold til ISO 23351-1. Duo er den akustiske telefonboks til to personer med to konfigurationer — Flex til en samtale med to siddepladser, Work til én person med et bord i fuld bredde. Modular XL er den akustiske mødeboks til seks til ti personer: basisenheden forlænges i segmenter på 90 cm og når en talereduktion på 25,9 dB(A). Solo Flex, Duo og Modular XL har 5 års garanti på konstruktionen og Solo ECO 5 års reservedelsgaranti; alle fire leveres i hele EU. Sammenlign telefonboksene til kontoret nedenfor, og åbn derefter en modelside for tilbehør og downloads.",
       "whyCertsDesc": "5 års garanti på alle bokse (konstruktionsgaranti på Solo Flex, Duo og Modular XL; reservedelsgaranti på Solo ECO); talereduktion angivet i henhold til ISO 23351-1, hvor den er målt.",
       "applications": {
         "app1": "Åbne kontorlandskaber og coworking-etager",
@@ -4181,7 +4184,7 @@
           "answer": "Solo ECO har en produktionstid på 4 uger og 5 års reservedelsgaranti. Solo Flex og Duo afsendes 4–6 uger efter bestilling, Modular XL 6–8 uger for basisenheden; specialstoffer lægger 2–3 uger til. Garantien på konstruktionen er 5 år, på elektronikken 2 år, med levering og montering i hele EU."
         }
       },
-      "whyOwnFactoriesDesc": "Alle fire bokse bygges på vores egen fabrik i Częstochowa (Polen) og leveres og monteres af vores eget team efter forespørgsel."
+      "whyOwnFactoriesDesc": "Alle fire bokse bygges på vores egen fabrik i Częstochowa (Polen) og leveres og monteres af vores eget team til faste priser inden for det europæiske fastland."
     }
   },
   "sampleKit": {
@@ -4257,7 +4260,7 @@
     "breadcrumb": "Priser på telefonbokse",
     "priceTag": "Priser 2026",
     "priceTitle": "Priser pr. model (ekskl. moms)",
-    "priceNote": "Priserne er ekskl. moms, transport og montering (ab fabrik). Montering udført af vores eget team er valgfri; Solo Flex kan også samles af to personer på under tre timer.",
+    "priceNote": "Priserne er ekskl. moms. Transport inden for det europæiske fastland og montering udført af vores eget team er faste beløb pr. model, som fremgår af tabellen; uden for det europæiske fastland gives der tilbud på transport.",
     "col": {
       "model": "Model",
       "capacity": "Kapacitet",
@@ -4271,7 +4274,8 @@
       "weight": "Vægt",
       "assembly": "Samling",
       "leadTime": "Leveringstid",
-      "warranty": "Garanti"
+      "warranty": "Garanti",
+      "transport": "Transport (det europæiske fastland)"
     },
     "onRequest": "Efter forespørgsel",
     "persons": "{count, plural, one {# person} other {# personer}}",
@@ -4284,7 +4288,7 @@
     "includedText": "Hver boks leveres som en komplet, ventileret enhed: kabine med dør og strøm ved bordet. Solo ECO: et fast ståbord, en landespecifik stikkontakt med USB-A og USB-C (kun stikkontakt i Danmark) og ventilation op til 4 m³/min. Solo Flex: dæmpbar LED-belysning, 230 V og USB-C, det manuelle hæve-sænkebord og lydløse EC-ventilatorer, der flytter 4,6 m³/min, med en PIR-sensor, der tænder ventilatorerne, når der er nogen inde i boksen.",
     "installationTag": "Montering",
     "installationTitle": "Montering af Re-Sound eller selvmontering",
-    "installationText": "Vores montører opstiller en telefonboks på ca. 60 minutter, en mødeboks på ca. 2 timer og en Modular XL på 2 til 6 timer. Solo Flex kan også samles af to personer på under tre timer: boksen er en flatpack-konstruktion, så den senere kan skilles ad og genopbygges på en anden etage.",
+    "installationText": "Vores montører opstiller en telefonboks på ca. 60 minutter, en mødeboks på ca. 2 timer og en Modular XL på 2 til 6 timer. Montering af Re-Sound koster {soloEco} for Solo ECO, {soloFlex} for Solo Flex, {duo} for Duo og {modularXl} for Modular XL plus {modularXlExtra} pr. ekstra element, ekskl. moms; transport inden for det europæiske fastland er et fast beløb pr. model, som fremgår af tabellen ovenfor. Solo Flex kan også samles af to personer på under tre timer: boksen er en flatpack-konstruktion, så den senere kan skilles ad og genopbygges på en anden etage.",
     "testingTag": "Prøv den først",
     "testingTitle": "Test en boks i vores showroom",
     "testingText": "Du kan sidde inde i alle modeller i vores showroom i Beveren-Waas (man–fre 08:00–16:30, efter aftale) og selv høre forskellen, før du bestiller.",
@@ -4310,7 +4314,7 @@
     "faqTitle": "Ofte stillede spørgsmål om bokspriser",
     "ctaTag": "Næste skridt",
     "ctaTitle": "Få et tilbud eller besøg showroomet",
-    "ctaText": "Send os din plantegning og antallet af bokse; vi svarer med et tilbud inklusive levering og montering.",
+    "ctaText": "Send os din plantegning og antallet af bokse; vi svarer med et tilbud til de transport- og monteringspriser, der er angivet ovenfor.",
     "ctaQuote": "Anmod om tilbud",
     "ctaShowroom": "Book et showroombesøg",
     "tableCaption": "Bokspriser og specifikationer pr. model",
@@ -4325,7 +4329,7 @@
     "warrantyByModel": {
       "solo-eco": "5 års reservedelsgaranti"
     },
-    "manufactureLine": "Produceret på vores egen fabrik i Częstochowa (Polen); levering og montering af vores eget team prissættes separat.",
+    "manufactureLine": "Produceret på vores egen fabrik i Częstochowa (Polen); leveres og monteres af vores eget team til faste priser inden for det europæiske fastland.",
     "pricelist": {
       "tag": "Prisliste",
       "title": "Download den fulde prisliste (PDF)",
@@ -4343,7 +4347,8 @@
       "successLink": "Åbn prislisten (PDF)",
       "errorInvalid": "Tjek venligst dine oplysninger, og prøv igen.",
       "error": "Noget gik galt. Prøv venligst igen om et øjeblik."
-    }
+    },
+    "perExtraElement": "+ {price} pr. ekstra element"
   },
   "order": {
     "cta": "Bestil online",
@@ -4387,7 +4392,7 @@
       },
       "extraElement": {
         "label": "Ekstra 90 cm-element",
-        "note": "Forlænger mødeboksen med 90 cm. Montering af det ekstra element er inkluderet i denne pris."
+        "note": "Forlænger mødeboksen med 90 cm. Ved montering af Re-Sound tilføjes der en separat monteringslinje for hvert ekstra element."
       }
     },
     "details": {
@@ -4422,13 +4427,14 @@
       "editConfig": "Skift tilvalg",
       "editDetails": "Skift oplysninger",
       "deliveryTitle": "Levering og fakturering",
-      "consent": "Jeg afgiver en bindende bestilling. Re-Sound bekræfter den pr. e-mail med transportomkostningerne og eventuelle tilvalg med pris efter forespørgsel. Der opkræves intet før denne bekræftelse.",
+      "consent": "Jeg afgiver en bindende bestilling. Re-Sound bekræfter den pr. e-mail, inklusive eventuelle poster, der stadig prissættes efter forespørgsel. Der opkræves intet før denne bekræftelse.",
       "submit": "Afgiv bestilling",
       "submitting": "Sender…",
       "missingTitle": "Udfyld venligst disse felter:",
       "socketMatched": "Stikkontakt tilpasset dit leveringsland: {socket}. Skift den under \"Skift tilvalg\", hvis du har brug for en anden type.",
       "socketDefault": "Dit leveringsland har ingen landespecifik stikkontakt på vores liste, så standardtypen er valgt: {socket}. Skift den under \"Skift tilvalg\", hvis du har brug for en anden type.",
-      "segmentsQty": "{quantity} × {segments} segmenter à 90 cm"
+      "segmentsQty": "{quantity} × {segments} segmenter à 90 cm",
+      "extensionQty": "{quantity} × {elements, plural, one {# ekstra element} other {# ekstra elementer}}"
     },
     "summary": {
       "net": "Subtotal ekskl. moms",
@@ -4436,7 +4442,8 @@
       "onRequest": "Efter forespørgsel",
       "onRequestNote": "Tilvalg markeret med \"efter forespørgsel\" prissættes af vores team. Du modtager det endelige beløb, før bestillingen bekræftes.",
       "transportNote": "Transport er aldrig inkluderet i disse priser. Vi giver pris på levering til din adresse, når vi bekræfter bestillingen.",
-      "included": "Inkluderet"
+      "included": "Inkluderet",
+      "transportMainlandNote": "Transport inden for det europæiske fastland er inkluderet til den faste sats pr. enhed, der er vist ovenfor. For Storbritannien, Irland, Malta, Cypern og Island giver vi pris på transport, når vi bekræfter bestillingen."
     },
     "vat": {
       "domestic": "Moms {rate} %",
@@ -4454,7 +4461,7 @@
       "eyebrow": "Bestilling modtaget",
       "title": "Tak for din bestilling",
       "referenceLabel": "Din reference",
-      "body": "Vi har sendt dig en kopi pr. e-mail. Vores team bekræfter det endelige beløb inklusive transport inden for én arbejdsdag.",
+      "body": "Vi har sendt dig en kopi pr. e-mail. Vores team bekræfter det endelige beløb inden for én arbejdsdag.",
       "emailFallback": "Vi kunne ikke sende bekræftelsesmailen. Kontakt venligst info@re-sound.be, og oplys referencen {reference}.",
       "close": "Luk",
       "correctedTotal": "Den endelige total er {total}. Den afviger fra beløbet, der blev vist under bestillingen, fordi dit momsnummer ikke kunne bekræftes; vi krediterer momsen, så snart det sker.",
@@ -4481,7 +4488,7 @@
       "customerHeading": "Bestilling modtaget",
       "customerSubject": "Din Re-Sound-bestilling {reference}",
       "greeting": "Hej {name},",
-      "intro": "Tak for din bestilling. Vi har registreret den og bekræfter den pr. e-mail inklusive transportomkostningerne.",
+      "intro": "Tak for din bestilling. Vi har registreret den og bekræfter den pr. e-mail.",
       "referenceLabel": "Din reference",
       "deliveryHeading": "Leveringsadresse",
       "nextSteps": "Spørgsmål til denne bestilling? Svar på denne e-mail, eller ring på +32 3 284 68 18. Re-Sound er et brand under Stretch Group; din bestilling sendes fra vores fabrik i Częstochowa (Polen).",
@@ -4586,7 +4593,7 @@
       "questions": {
         "leadTime": {
           "question": "Hvad er leveringstiden for Solo ECO?",
-          "answer": "Produktionen tager fire uger fra bekræftet ordre. Transport tilbydes separat; båsen afsendes fra vores fabrik i Częstochowa på én palle på 230 × 120 × 70 cm."
+          "answer": "Produktionen tager fire uger fra bekræftet ordre. Transport inden for det europæiske fastland koster {transport} ekskl. moms; båsen afsendes fra vores fabrik i Częstochowa på én palle på 230 × 120 × 70 cm."
         },
         "difference": {
           "question": "Hvad er forskellen på Solo ECO og Solo Flex?",
@@ -4611,7 +4618,8 @@
       }
     },
     "cta": {
-      "deliveryNote": "Ab fabrik, 4 ugers produktion · Levering og montering tilbydes efter forespørgsel · 5 års reservedelsgaranti"
+      "deliveryNote": "Ab fabrik Częstochowa, 4 ugers produktion · Transport inden for det europæiske fastland {transport} · Montering {installation} · 5 års reservedelsgaranti",
+      "deliveryNoteNoTransport": "Ab fabrik Częstochowa, 4 ugers produktion · Levering og montering efter forespørgsel · 5 års reservedelsgaranti"
     }
   },
   "manufacturing": {
@@ -4633,7 +4641,7 @@
       "PL": {
         "role": "rWood- og rPET-paneler, alle telefonbokse",
         "makes": "Akustikpaneler i træ med FSC-certificeret finér, PET-akustikpaneler i genbrugt PET-filt samt telefonboksene og mødepods.",
-        "note": "Produktionskontoret tager imod projektbesøg og fabriksrundvisninger efter aftale. Boksene leveres og monteres af vores eget team på forespørgsel."
+        "note": "Produktionskontoret tager imod projektbesøg og fabriksrundvisninger efter aftale. Boksene leveres og monteres af vores eget team til faste priser inden for det europæiske fastland."
       }
     },
     "plantLabels": {
@@ -4685,7 +4693,7 @@
       },
       "installation": {
         "title": "Levering og montering af vores eget team",
-        "text": "Boksene leveres og monteres af vores eget team på forespørgsel; levering og montering prissættes separat."
+        "text": "Boksene leveres af vores eget team til en fast transportpris inden for det europæiske fastland og monteres af vores egne montører til en fast pris pr. model; begge er angivet sammen med bokspriserne."
       },
       "warranty": {
         "title": "Garanti på hver boks"

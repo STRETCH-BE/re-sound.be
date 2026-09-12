@@ -3084,7 +3084,10 @@
       "callUs": "Bel ons: +32 3 284 68 18",
       "ctaTitle": "Klaar om je ruimte uit te tekenen?",
       "ctaSubtitle": "Ons team helpt je de juiste cabine kiezen, opties configureren en levering plannen. Offertes meestal binnen één werkdag terug.",
-      "deliveryNote": "Levering in heel de EU · Installatie mogelijk · 5 jaar garantie op het frame"
+      "deliveryNote": "Transport binnen het vasteland van Europa {transport} · Installatie door Re-Sound {installation} · 5 jaar structurele garantie",
+      "deliveryNoteNoTransport": "Levering en installatie op aanvraag · 5 jaar structurele garantie",
+      "perExtraElement": "+ {price} per extra element",
+      "onRequest": "op aanvraag"
     },
     "acoustics": {
       "benefitSpeech": {
@@ -3296,7 +3299,7 @@
         },
         "installation": {
           "question": "Heeft de installatie bouwwerken nodig?",
-          "answer": "Nee. Solo Flex staat vrij en sluit aan op een gewoon Schuko-stopcontact. Twee personen monteren hem ter plaatse in minder dan drie uur. Installatie in de EU bieden we standaard aan als optie."
+          "answer": "Nee. Solo Flex staat vrij en sluit aan op een gewoon Schuko-stopcontact. Twee personen monteren hem ter plaatse in minder dan drie uur, of ons eigen team installeert hem voor {installation} excl. btw."
         },
         "ventilation": {
           "question": "Hoe werkt de ventilatie?",
@@ -4003,7 +4006,7 @@
       "openArea5": "5% open oppervlak"
     },
     "solo-eco": {
-      "mounting": "Vrijstaand; installatie door Re-Sound op aanvraag",
+      "mounting": "Vrijstaand; installatie door Re-Sound optioneel",
       "leadTime": "4 weken productie"
     }
   },
@@ -4149,7 +4152,7 @@
       "description": "Belcabines en vergaderpods: Solo ECO en Solo Flex (1 pers.), Duo (2), Modular XL (6–10). ISO 23351-1 spraakreductie op Flex en XL, 230 V.",
       "h1": "Belcabines en vergaderpods voor kantoor, rechtstreeks van de fabrikant",
       "breadcrumb": "Cabines",
-      "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoor; een vergaderpod doet hetzelfde voor een team. De cabines van Re-Sound worden geproduceerd in onze eigen fabriek in Częstochowa (Polen), op aanvraag geleverd en geïnstalleerd door ons eigen team, met 5 jaar structurele garantie (Solo ECO: 5 jaar garantie op wisselstukken). Het cabinegamma telt vier modellen. Solo ECO is het instapmodel: een cabine voor één persoon met een statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact), ventilatie tot 4 m³/min en een gesloten of glazen achterwand. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische belcabine voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Solo Flex, Duo en Modular XL krijgen 5 jaar structurele garantie en Solo ECO 5 jaar garantie op wisselstukken; alle vier worden in de hele EU geleverd. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
+      "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoor; een vergaderpod doet hetzelfde voor een team. De cabines van Re-Sound worden geproduceerd in onze eigen fabriek in Częstochowa (Polen) en binnen het vasteland van Europa tegen vaste prijzen geleverd en geïnstalleerd door ons eigen team, met 5 jaar structurele garantie (Solo ECO: 5 jaar garantie op wisselstukken). Het cabinegamma telt vier modellen. Solo ECO is het instapmodel: een cabine voor één persoon met een statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact), ventilatie tot 4 m³/min en een gesloten of glazen achterwand. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische belcabine voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Solo Flex, Duo en Modular XL krijgen 5 jaar structurele garantie en Solo ECO 5 jaar garantie op wisselstukken; alle vier worden in de hele EU geleverd. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
       "whyCertsDesc": "5 jaar garantie op elke cabine (structureel voor Solo Flex, Duo en Modular XL; op wisselstukken voor Solo ECO); spraakniveaureductie opgegeven volgens ISO 23351-1 waar gemeten.",
       "applications": {
         "app1": "Open kantoren en coworkingvloeren",
@@ -4181,7 +4184,7 @@
           "answer": "Solo ECO vraagt 4 weken productie en heeft 5 jaar garantie op wisselstukken. Solo Flex en Duo worden 4–6 weken na bestelling verzonden, Modular XL 6–8 weken voor de basisunit; maatwerkstoffen vragen 2–3 weken extra. De structurele garantie bedraagt 5 jaar, de elektronica 2 jaar, met levering en installatie in de hele EU beschikbaar."
         }
       },
-      "whyOwnFactoriesDesc": "Alle vier de cabines worden gebouwd in onze eigen fabriek in Częstochowa (Polen) en op aanvraag geleverd en geïnstalleerd door ons eigen team."
+      "whyOwnFactoriesDesc": "Alle vier de cabines worden gebouwd in onze eigen fabriek in Częstochowa (Polen) en binnen het vasteland van Europa tegen vaste prijzen geleverd en geïnstalleerd door ons eigen team."
     }
   },
   "sampleKit": {
@@ -4257,7 +4260,7 @@
     "breadcrumb": "Prijzen belcabines",
     "priceTag": "Prijzen 2026",
     "priceTitle": "Prijzen per model (excl. btw)",
-    "priceNote": "Prijzen zijn excl. btw, transport en installatie (af fabriek). Installatie door ons eigen team is optioneel; Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd.",
+    "priceNote": "Prijzen zijn excl. btw. Transport binnen het vasteland van Europa en installatie door ons eigen team zijn vaste bedragen per model, vermeld in de tabel; buiten het vasteland van Europa wordt het transport geoffreerd.",
     "col": {
       "model": "Model",
       "capacity": "Capaciteit",
@@ -4271,7 +4274,8 @@
       "weight": "Gewicht",
       "assembly": "Montage",
       "leadTime": "Levertijd",
-      "warranty": "Garantie"
+      "warranty": "Garantie",
+      "transport": "Transport (vasteland van Europa)"
     },
     "onRequest": "Op aanvraag",
     "persons": "{count, plural, one {# persoon} other {# personen}}",
@@ -4284,7 +4288,7 @@
     "includedText": "Elke cabine wordt geleverd als een complete, geventileerde eenheid: behuizing met deur en stroom aan het bureau. Solo ECO: een vaste statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact) en ventilatie tot 4 m³/min. Solo Flex: dimbare ledverlichting, 230 V en USB-C, het handmatig verstelbare zit-stabureau en stille EC-ventilatoren die 4,6 m³/min verplaatsen, met een PIR-sensor die de ventilatoren inschakelt zodra iemand binnen is.",
     "installationTag": "Installatie",
     "installationTitle": "Installatie door Re-Sound of zelfmontage",
-    "installationText": "Onze installateurs plaatsen een belcabine in ongeveer 60 minuten, een vergaderpod in ongeveer 2 uur en een Modular XL in 2 tot 6 uur. Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd: de cabine is een demontabele flat-packconstructie, zodat ze later kan worden gedemonteerd en op een andere verdieping opnieuw kan worden opgebouwd.",
+    "installationText": "Onze installateurs plaatsen een belcabine in ongeveer 60 minuten, een vergaderpod in ongeveer 2 uur en een Modular XL in 2 tot 6 uur. Installatie door Re-Sound kost {soloEco} voor Solo ECO, {soloFlex} voor Solo Flex, {duo} voor Duo en {modularXl} voor Modular XL plus {modularXlExtra} per extra element, excl. btw; transport binnen het vasteland van Europa is een vast bedrag per model, vermeld in de tabel hierboven. Solo Flex kan ook door twee personen in minder dan drie uur worden gemonteerd: de cabine is een demontabele flat-packconstructie, zodat ze later kan worden gedemonteerd en op een andere verdieping opnieuw kan worden opgebouwd.",
     "testingTag": "Eerst uitproberen",
     "testingTitle": "Test een cabine in onze showroom",
     "testingText": "U kunt in elk model plaatsnemen in onze showroom in Beveren-Waas (ma–vr 08:00–16:30, op afspraak) en het verschil zelf horen voordat u bestelt.",
@@ -4310,7 +4314,7 @@
     "faqTitle": "Veelgestelde vragen over cabineprijzen",
     "ctaTag": "Volgende stap",
     "ctaTitle": "Vraag een offerte aan of bezoek de showroom",
-    "ctaText": "Stuur ons uw plattegrond en het aantal cabines; wij antwoorden met een offerte inclusief levering en installatie.",
+    "ctaText": "Stuur ons je plattegrond en het aantal cabines; wij antwoorden met een offerte tegen de transport- en installatieprijzen die hierboven vermeld staan.",
     "ctaQuote": "Offerte aanvragen",
     "ctaShowroom": "Plan een showroombezoek",
     "tableCaption": "Cabineprijzen en specificaties per model",
@@ -4325,7 +4329,7 @@
     "warrantyByModel": {
       "solo-eco": "5 jaar garantie op wisselstukken"
     },
-    "manufactureLine": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen); levering en installatie door ons eigen team, apart geoffreerd.",
+    "manufactureLine": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen); binnen het vasteland van Europa tegen vaste prijzen geleverd en geïnstalleerd door ons eigen team.",
     "pricelist": {
       "tag": "Prijslijst",
       "title": "Download de volledige prijslijst (pdf)",
@@ -4343,7 +4347,8 @@
       "successLink": "Open de prijslijst (pdf)",
       "errorInvalid": "Controleer je gegevens en probeer het opnieuw.",
       "error": "Er is iets misgegaan. Probeer het zo meteen opnieuw."
-    }
+    },
+    "perExtraElement": "+ {price} per extra element"
   },
   "order": {
     "cta": "Online bestellen",
@@ -4387,7 +4392,7 @@
       },
       "extraElement": {
         "label": "Extra element van 90 cm",
-        "note": "Verlengt de vergaderpod met 90 cm. De installatie van het extra element is in deze prijs inbegrepen."
+        "note": "Verlengt de vergaderpod met 90 cm. Bij installatie door Re-Sound wordt de installatie van elk extra element apart aangerekend."
       }
     },
     "details": {
@@ -4422,13 +4427,14 @@
       "editConfig": "Opties wijzigen",
       "editDetails": "Gegevens wijzigen",
       "deliveryTitle": "Levering en facturatie",
-      "consent": "Ik plaats een bindende bestelling. Re-Sound bevestigt ze per e-mail, met de transportkosten en de prijs van eventuele opties op aanvraag. Vóór die bevestiging wordt niets aangerekend.",
+      "consent": "Ik plaats een bindende bestelling. Re-Sound bevestigt die per e-mail, inclusief alles wat nog op aanvraag geprijsd wordt. Vóór die bevestiging wordt niets aangerekend.",
       "submit": "Bestelling plaatsen",
       "submitting": "Versturen…",
       "missingTitle": "Vul deze velden in:",
       "socketMatched": "Stopcontact afgestemd op uw land van levering: {socket}. Wijzig het onder \"Opties wijzigen\" als u een ander type nodig hebt.",
       "socketDefault": "Voor uw land van levering staat geen landspecifiek stopcontact in onze lijst; het standaardtype is geselecteerd: {socket}. Wijzig het onder \"Opties wijzigen\" als u een ander type nodig hebt.",
-      "segmentsQty": "{quantity} × {segments} segmenten van 90 cm"
+      "segmentsQty": "{quantity} × {segments} segmenten van 90 cm",
+      "extensionQty": "{quantity} × {elements, plural, one {# extra element} other {# extra elementen}}"
     },
     "summary": {
       "net": "Subtotaal excl. btw",
@@ -4436,7 +4442,8 @@
       "onRequest": "Op aanvraag",
       "onRequestNote": "Voor opties met de vermelding \"op aanvraag\" berekent ons team de prijs. U ontvangt het definitieve bedrag voordat de bestelling wordt bevestigd.",
       "transportNote": "Transport is nooit in deze prijzen inbegrepen. Bij de bevestiging van uw bestelling bezorgen wij u de prijs voor levering tot op uw adres.",
-      "included": "Inbegrepen"
+      "included": "Inbegrepen",
+      "transportMainlandNote": "Transport binnen het vasteland van Europa is inbegrepen tegen het vaste tarief per stuk dat hierboven staat. Voor het Verenigd Koninkrijk, Ierland, Malta, Cyprus en IJsland offreren we het transport bij de bevestiging van de bestelling."
     },
     "vat": {
       "domestic": "Btw {rate} %",
@@ -4454,7 +4461,7 @@
       "eyebrow": "Bestelling ontvangen",
       "title": "Bedankt voor uw bestelling",
       "referenceLabel": "Uw referentie",
-      "body": "We hebben u een kopie per e-mail gestuurd. Ons team bevestigt het definitieve bedrag, inclusief transport, binnen één werkdag.",
+      "body": "We hebben je een kopie per e-mail gestuurd. Ons team bevestigt het definitieve bedrag binnen één werkdag.",
       "emailFallback": "We konden de bevestigingsmail niet versturen. Neem contact op met info@re-sound.be met vermelding van referentie {reference}.",
       "close": "Sluiten",
       "correctedTotal": "Het definitieve totaal bedraagt {total}. Dat verschilt van het bedrag dat tijdens het bestellen werd getoond omdat uw btw-nummer niet bevestigd kon worden; wij crediteren de btw zodra dat wel het geval is.",
@@ -4481,7 +4488,7 @@
       "customerHeading": "Bestelling ontvangen",
       "customerSubject": "Uw Re-Sound-bestelling {reference}",
       "greeting": "Beste {name},",
-      "intro": "Bedankt voor uw bestelling. We hebben ze geregistreerd en bevestigen ze per e-mail, inclusief de transportkosten.",
+      "intro": "Bedankt voor je bestelling. We hebben die geregistreerd en sturen je de bevestiging per e-mail.",
       "referenceLabel": "Uw referentie",
       "deliveryHeading": "Leveringsadres",
       "nextSteps": "Vragen over deze bestelling? Beantwoord deze e-mail of bel +32 3 284 68 18. Re-Sound is een merk van Stretch Group; uw bestelling vertrekt uit onze fabriek in Częstochowa (Polen).",
@@ -4586,7 +4593,7 @@
       "questions": {
         "leadTime": {
           "question": "Wat is de levertijd van Solo ECO?",
-          "answer": "De productie duurt vier weken vanaf de bevestigde bestelling. Transport wordt apart geoffreerd; de cabine vertrekt uit onze fabriek in Częstochowa op één pallet van 230 × 120 × 70 cm."
+          "answer": "De productie duurt vier weken vanaf de bevestigde bestelling. Transport binnen het vasteland van Europa kost {transport} excl. btw; de cabine vertrekt uit onze fabriek in Częstochowa op één pallet van 230 × 120 × 70 cm."
         },
         "difference": {
           "question": "Wat is het verschil tussen Solo ECO en Solo Flex?",
@@ -4611,7 +4618,8 @@
       }
     },
     "cta": {
-      "deliveryNote": "Af fabriek, 4 weken productie · Levering en installatie op aanvraag geoffreerd · 5 jaar garantie op wisselstukken"
+      "deliveryNote": "Af fabriek Częstochowa, 4 weken productie · Transport binnen het vasteland van Europa {transport} · Installatie {installation} · 5 jaar garantie op wisselstukken",
+      "deliveryNoteNoTransport": "Af fabriek Częstochowa, 4 weken productie · Levering en installatie op aanvraag · 5 jaar garantie op wisselstukken"
     }
   },
   "manufacturing": {
@@ -4633,7 +4641,7 @@
       "PL": {
         "role": "rWood- en rPET-panelen, alle belcabines",
         "makes": "Houten akoestische panelen met FSC-gecertificeerd fineer, akoestische PET-panelen van gerecycleerd PET-vilt, en de belcabines en vergaderpods.",
-        "note": "Het productiekantoor ontvangt graag projectbezoeken en organiseert fabrieksrondleidingen op afspraak. Cabines worden op verzoek geleverd en geïnstalleerd door ons eigen team."
+        "note": "Het productiekantoor ontvangt graag projectbezoeken en organiseert fabrieksrondleidingen op afspraak. Cabines worden binnen het vasteland van Europa tegen vaste prijzen geleverd en geïnstalleerd door ons eigen team."
       }
     },
     "plantLabels": {
@@ -4685,7 +4693,7 @@
       },
       "installation": {
         "title": "Levering en installatie door ons eigen team",
-        "text": "Cabines worden op verzoek geleverd en geïnstalleerd door ons eigen team; levering en installatie worden apart geoffreerd."
+        "text": "Cabines worden door ons eigen team geleverd tegen een vaste transportprijs binnen het vasteland van Europa en door onze eigen installateurs geïnstalleerd tegen een vaste prijs per model; beide staan bij de cabineprijzen vermeld."
       },
       "warranty": {
         "title": "Garantie op elke cabine"

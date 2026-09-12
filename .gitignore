@@ -37,3 +37,4 @@ yarn-error.log*
 !content/*.xlsx
 supabase/seed/supplier-*.sql
 supabase/seed/*internal*
+messages/.en.lock

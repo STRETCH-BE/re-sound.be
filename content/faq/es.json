@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "¿Cuánto cuesta una cabina telefónica de oficina?",
-    "answer": "La cabina telefónica de oficina Solo Flex cuesta desde {{price:solo-flex}} sin IVA. El pod Duo cuesta desde {{price:duo}} sin IVA, y la Modular XL desde {{price:modular-xl}} sin IVA por el módulo base, más {{price:article:RS-MX-AS1}} por cada elemento adicional de 90 cm. Los precios son franco fábrica: la entrega y la instalación se presupuestan por separado. La mayor Modular XL fabricada hasta ahora acoge a 20 personas.",
+    "answer": "La cabina telefónica de oficina Solo ECO cuesta desde {{price:solo-eco}} sin IVA y la Solo Flex desde {{price:solo-flex}} sin IVA. El pod de reuniones Duo cuesta desde {{price:duo}} sin IVA, y la Modular XL desde {{price:modular-xl}} sin IVA por el módulo base, más {{price:article:RS-MX-AS1}} por cada elemento adicional de 90 cm. Los precios son franco fábrica. El transporte en Europa continental y la instalación por nuestro propio equipo son importes fijos por modelo: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} de transporte y {{price:article:WEB-SOLO-ECO-INST}} de instalación, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} y {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} y {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} y {{price:article:WEB-MODULAR-XL-INST}} por el módulo base más {{price:article:WEB-MODULAR-XL-INST-EXT}} por cada elemento adicional, todo sin IVA; fuera de Europa continental, el transporte se presupuesta aparte. La mayor Modular XL fabricada hasta ahora acoge a 20 personas.",
     "showOn": [
       "booths",
       "guide",
@@ -84,7 +84,7 @@
     "id": "FAQ-008",
     "category": "Booths",
     "question": "¿Cuánto dura la instalación y quién la realiza?",
-    "answer": "Los instaladores propios de Re-Sound colocan su cabina: una cabina telefónica se instala en unos 60 minutos, un pod de reuniones en unas dos horas y una Modular XL, entre dos y seis horas. Como alternativa, la Solo Flex puede montarla usted mismo: dos personas necesitan menos de tres horas.",
+    "answer": "Los instaladores propios de Re-Sound colocan su cabina: una cabina telefónica se instala en unos 60 minutos, un pod de reuniones en unas dos horas y una Modular XL, entre dos y seis horas. La instalación por Re-Sound cuesta {{price:article:WEB-SOLO-ECO-INST}} para Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} para Solo Flex, {{price:article:WEB-DUO-WORK-INST}} para Duo y {{price:article:WEB-MODULAR-XL-INST}} para el módulo base de Modular XL más {{price:article:WEB-MODULAR-XL-INST-EXT}} por cada elemento adicional, sin IVA. Como alternativa, la Solo Flex puede montarla usted mismo: dos personas necesitan menos de tres horas.",
     "showOn": [
       "booths",
       "faq",

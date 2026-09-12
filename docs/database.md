@@ -8,7 +8,7 @@ STRETCH one:
 | Project | `re-sound.be` — ref `toroqgofzsanxcisdbkn`, region eu-central-1 (Frankfurt) |
 | Organisation | STRETCH-BE's Org (the same one as the stretch-website project) |
 | Dashboard | https://supabase.com/dashboard/project/toroqgofzsanxcisdbkn |
-| Schema | `supabase/migrations/0001_catalogue_and_orders.sql`, `0002_place_order_conflict_safe.sql` (both applied) |
+| Schema | `supabase/migrations/0001_catalogue_and_orders.sql`, `0002_place_order_conflict_safe.sql` (both applied), `0003_transport_and_installation_prices.sql` (12 September 2026: `auto` categories, `per_extension`, transport and installation prices — to apply) |
 | Data | `supabase/seed/booths-2026.sql` (applied) — generated from the 2026 booth price list |
 
 Two things live there: **the catalogue** (every product, option and price the
@@ -24,8 +24,8 @@ the same way; this mirrors that pattern with the site's own tables.
 |---|---|---|---|
 | `price_lists` | one row per published list: name, currency, valid-from date, commercial terms, packaging table, contacts | anyone with the anon key | Michael, in the dashboard |
 | `products` | the 7 booth models from the list plus Interior, Divide and Solid (priced from the site, not the list); which product page sells each (`website_slug`) | anyone | Michael |
-| `categories` | the 12 configurator sections (construction, colours, table, door, socket, accessories, fire protection, installation) and whether each is single- or multi-choice | anyone | Michael |
-| `articles` | one row per article number: description, price in cents, price type, defaults, translations | anyone | Michael |
+| `categories` | the 12 configurator sections (construction, colours, table, door, socket, accessories, fire protection, installation) and whether each is single- or multi-choice, plus 2 `auto` categories (transport, installation of extra elements) whose lines the site adds by rule | anyone | Michael |
+| `articles` | one row per article number: description, price in cents, price type, defaults, translations; `per_extension` marks the Modular XL extra-element installation line | anyone | Michael |
 | `supplier_articles` | **internal** — purchase prices and margins from the supplier cross-reference | nobody but the service role | never from the site |
 | `orders` | one row per order: buyer, delivery address, VAT treatment, totals, status, whether the e-mails went out | nobody but the service role | the site, through `place_order()` |
 | `order_lines` | the lines of each order as they were shown to the buyer, with article codes | nobody but the service role | the site, through `place_order()` |
@@ -85,6 +85,39 @@ description use ICU arguments instead (`{soloFlex}`, `{modularXl}`,
 `{fromPrice}`) because `messages/*.json` strings are ICU messages. Either
 way: editing a price in the dashboard changes every sentence that quotes it.
 
+### Lines the site adds by itself (`auto` categories)
+
+`categories.select_mode` has three values. `single` and `multi` are what the
+configurator shows (one choice, any number). `auto` — added on 12 September
+2026 — is never shown: the site puts the article on the order by rule, and
+every caller (the order dialog, `/api/order`) runs the selection through
+`canonicalSelection()` in `src/lib/catalogue/select.ts` after each change and
+before pricing. Two categories use it:
+
+| Category | Rule | Rows |
+|---|---|---|
+| `transport` | the product's `…-TRANSPORT-EU` row when the delivery country is mainland Europe, its `…-TRANSPORT-XX` row (on request) for GB, XI, IE, MT, CY and IS; nothing when the product has no transport rows | `WEB-<MODEL>-TRANSPORT-EU` (flat rate per unit, `is_default`), `WEB-<MODEL>-TRANSPORT-XX` (empty price) for Solo ECO, Solo Flex, Duo Work, Duo Flex, Modular XL |
+| `installation_extension` | every row of that category when an `installation` row of the product is selected and the order has extra elements | `WEB-MODULAR-XL-INST-EXT` |
+
+Two pricing rules go with it (rules 7 and 8 in `src/lib/catalogue/types.ts`,
+the others are unchanged):
+
+- **rule 7, `articles.per_extension`** — line quantity = order quantity ×
+  extension segments, where extension segments is the sum of `segments` over
+  the selected `additional_segments` rows (Modular XL: `RS-MX-AS1` 1,
+  `RS-MX-AS2` 2, `RS-MX-AS3` 3). With no extension the line is left out.
+  So a Modular XL with +2 elements and installation is priced 1 645 (main
+  module, `WEB-MODULAR-XL-INST`) + 2 × 1 245 (`WEB-MODULAR-XL-INST-EXT`).
+- **rule 8, canonical form** — the auto rows are dropped from whatever the
+  buyer sent and re-added by the rules above; the buyer's own choices keep
+  their order, the auto rows follow. `validateSelection()` only refuses two
+  rows of one auto category; whether the right one is present is the
+  canonicalisation's job.
+
+`npm run catalogue:check` proves both against the committed snapshot
+(Modular XL + 2 elements + installation + transport = 28 903,75; Solo ECO
+default = 2 740 + 300; Solo ECO to Ireland → transport on request).
+
 ---
 
 ## Changing a price or an option
@@ -99,7 +132,9 @@ deploy is needed.
 | Add an option | `articles` → insert a row with the next article code, its `product_id`, `category_key`, `description`, `price_cents`, `price_type` (`base`, `included`, `option` or `credit`) and a `sort` value. |
 | Change which choice is pre-selected | `articles` → `is_default` (one per product and single-choice category). |
 | Sell a model from a product page | `products` → set `website_slug` to the page (`solo-eco`, `solo-flex`, `duo`, `modular-xl`, `interior`, `divide`, `solid`). Solo Stand and Modular 4 are in the catalogue but have no page yet, so they carry no slug. |
-| Change the installation price | `articles` → the `WEB-…-INST` row of that product → `price_cents`. It is on request today. |
+| Change the installation price | `articles` → the `WEB-…-INST` row of that product → `price_cents` (Michael, 12 Sep 2026: Solo ECO 87500, Solo Flex 124500, Duo Work and Duo Flex 124500, Modular XL 164500 for the main module). Modular XL's extra elements are the separate row `WEB-MODULAR-XL-INST-EXT` (124500 per element, `per_extension` true): it is added to an order automatically when installation is chosen and an extension is selected, at quantity × number of extra elements. Solo Stand, Modular 4, Interior, Divide and Solid are still on request (empty `price_cents`). |
+| Change a transport price | `articles` → `WEB-<MODEL>-TRANSPORT-EU` of that product → `price_cents` (12 Sep 2026: Solo ECO 30000, Solo Flex 50000, Duo Work and Duo Flex 50000, Modular XL 75000, per unit). The row is in the `transport` category (`select_mode` `auto`), so the buyer never picks it: the site adds it to every order delivered within mainland Europe. `WEB-<MODEL>-TRANSPORT-XX` (empty `price_cents`) is the line for the islands, on request. A product without transport rows (Interior, Divide, Solid …) gets no transport line at all. |
+| Add a country to the non-mainland list | Not in the database: `NON_MAINLAND_EUROPE` in `src/lib/catalogue/select.ts` (GB, XI, IE, MT, CY, IS today, ISO 3166-1 alpha-2). Add the code there; the order form's `…-TRANSPORT-XX` line then applies to that country. Needs a deploy. |
 | Translate a label | `articles.labels` / `categories.labels`: a JSON object keyed by locale, e.g. `{"nl": "Gesloten achterwand", "fr": "Paroi arrière pleine"}`. A missing locale falls back to the English `description`. Every article on the 2026 list is translated into the nine other site languages already; the source of those translations is `content/catalogue-labels.json` (keyed by the English text, so a new list that keeps the descriptions keeps the translations). |
 | Price a page add-on | The three booth pages advertise add-ons that are not on the 2026 list (wall-mounted display, whiteboard, cable management …). They are in `articles` as `WEB-<model>-<addon>` rows in the "Page add-ons" group, on request. Give them a `price_cents`, or set `active` false to stop offering them. Two are inactive already because the list covers them (the Solo Flex sit-stand table, the Duo desk). |
 
@@ -198,10 +233,16 @@ These are carried in `docs/needs-michael.md` as well:
 
 - The list is **valid from 21 September 2026** (`price_lists.valid_from`). The
   site shows it now, as instructed.
-- **Installation** is "optional, quoted separately" on the list, so every
-  installation option is on request. The earlier figures (€ 865 for Solo Flex,
-  € 2 990 for Modular XL) came from the booth guide, whose € 2 740 base price
-  turns out to be the Solo ECO price; they are not in the 2026 list.
+- **Installation and transport** are "optional, quoted separately" on the
+  list. On 12 September 2026 Michael priced both for the four booths sold
+  online (Solo ECO, Solo Flex, Duo, Modular XL — see "Lines the site adds by
+  itself" above); Solo Stand, Modular 4, Interior, Divide and Solid are still
+  on request. Read as excl. VAT, per unit, "mainland Europe" = every country
+  of the order form except GB, XI, IE, MT, CY and IS, and Michael's "Solo" =
+  Solo Flex — all four readings to be confirmed (`docs/needs-michael.md`).
+  The earlier figures (€ 865 for Solo Flex, € 2 990 for Modular XL) came from
+  the booth guide, whose € 2 740 base price turns out to be the Solo ECO
+  price; they are not in the 2026 list.
 - **Modular XL fire protection** is priced per 0.9 m segment. The site counts
   the base module as two segments (it is 180 cm deep) plus the chosen
   extension; confirm that reading.

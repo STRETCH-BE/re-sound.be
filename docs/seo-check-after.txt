@@ -1,4 +1,4 @@
-Re-Sound SEO check — 2026-09-12T14:20:20.719Z
+Re-Sound SEO check — 2026-09-12T20:55:20.175Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
@@ -17,11 +17,11 @@ OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-de: 0.4% English (7/1640 segments over 30 pages)
+de: 0.4% English (7/1641 segments over 30 pages)
 es: 0.3% English (5/1888 segments over 29 pages)
-fr: 0.4% English (8/1914 segments over 30 pages)
+fr: 0.4% English (8/1915 segments over 30 pages)
     3.0%  /fr  (2/66)
-nl: 0.5% English (10/2169 segments over 36 pages)
+nl: 0.5% English (10/2171 segments over 36 pages)
     3.6%  /nl  (2/56)
 pt: 0.3% English (5/1844 segments over 29 pages)
 
@@ -152,7 +152,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       72    173    1         7     yes    3          0/0  index         0.0  /nl/products/pet-akoestische-panelen
 200     nl       80    150    1         7     yes    3          0/0  index         0.0  /nl/products/houten-akoestische-panelen
 200     nl       71    137    1         7     yes    3          0/0  index         1.4  /nl/products/akoestische-belcabines
-200     nl       57    158    1         5     yes    2          0/0  index         2.8  /nl/guides/prijzen-belcabines
+200     nl       57    158    1         5     yes    2          0/0  index         2.7  /nl/guides/prijzen-belcabines
 200     nl       58    152    1         7     yes    4          0/0  index         0.0  /nl/productie
 200     nl       43    153    1         7     yes    3          1/1  index         0.0  /nl/products/interior
 200     nl       40    148    1         7     yes    3          1/1  index         0.0  /nl/products/solid

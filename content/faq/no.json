@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hva koster en telefonboks for kontor?",
-    "answer": "Telefonboksen Solo Flex koster fra {{price:solo-flex}} ekskl. mva. Møtepoden Duo koster fra {{price:duo}} ekskl. mva, og Modular XL fra {{price:modular-xl}} ekskl. mva for basismodulen, pluss {{price:article:RS-MX-AS1}} per ekstra 90 cm-element. Prisene gjelder fra fabrikk: det gis eget tilbud på levering og montering. Den største Modular XL som er bygget så langt, har plass til 20 personer.",
+    "answer": "Telefonboksen Solo ECO koster fra {{price:solo-eco}} ekskl. mva. og Solo Flex fra {{price:solo-flex}} ekskl. mva. Møtepoden Duo koster fra {{price:duo}} ekskl. mva., og Modular XL fra {{price:modular-xl}} ekskl. mva. for basismodulen, pluss {{price:article:RS-MX-AS1}} per ekstra 90 cm-element. Prisene gjelder fra fabrikk. Transport innenfor det europeiske fastlandet og montering av vårt eget team er faste beløp per modell: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} for transport og {{price:article:WEB-SOLO-ECO-INST}} for montering, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} og {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} og {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} og {{price:article:WEB-MODULAR-XL-INST}} for basismodulen pluss {{price:article:WEB-MODULAR-XL-INST-EXT}} per ekstra element, alt ekskl. mva.; utenfor det europeiske fastlandet gis det tilbud på transport. Den største Modular XL som er bygget så langt, har plass til 20 personer.",
     "showOn": [
       "booths",
       "guide",
@@ -84,7 +84,7 @@
     "id": "FAQ-008",
     "category": "Booths",
     "question": "Hvor lang tid tar monteringen, og hvem utfører den?",
-    "answer": "Re-Sounds egne montører setter opp boksen: en telefonboks tar rundt 60 minutter, en møtepod rundt to timer og en Modular XL mellom to og seks timer. Alternativt kan Solo Flex monteres selv: to personer trenger under tre timer.",
+    "answer": "Re-Sounds egne montører setter opp boksen: en telefonboks tar rundt 60 minutter, en møtepod rundt to timer og en Modular XL mellom to og seks timer. Montering av Re-Sound koster {{price:article:WEB-SOLO-ECO-INST}} for Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} for Solo Flex, {{price:article:WEB-DUO-WORK-INST}} for Duo og {{price:article:WEB-MODULAR-XL-INST}} for basismodulen til Modular XL pluss {{price:article:WEB-MODULAR-XL-INST-EXT}} per ekstra element, ekskl. mva. Alternativt kan Solo Flex monteres selv: to personer trenger under tre timer.",
     "showOn": [
       "booths",
       "faq",

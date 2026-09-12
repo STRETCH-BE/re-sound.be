@@ -13,7 +13,12 @@
 
 export type ProductKind = 'booth' | 'panel';
 export type ProductUnit = 'booth' | 'set' | 'piece' | 'm2';
-export type SelectMode = 'single' | 'multi';
+/**
+ * How a category's articles enter a selection: `single` (one choice),
+ * `multi` (any number) or `auto` — never offered as a choice; the site adds
+ * the line by rule (transport, installation of extra elements; rule 8).
+ */
+export type SelectMode = 'single' | 'multi' | 'auto';
 export type PriceType = 'base' | 'included' | 'option' | 'credit';
 export type ArticleSource = 'price-list' | 'website';
 
@@ -80,6 +85,11 @@ export interface CatalogueArticle {
   priceType: PriceType;
   /** Modular XL fire protection: charged once per 0.9 m segment of the booth */
   perSegment: boolean;
+  /**
+   * Installation of extra elements (Modular XL): charged once per extension
+   * segment, i.e. per element chosen from `additional_segments` (rule 7)
+   */
+  perExtension: boolean;
   /** 0.9 m segments this article contributes (base module 2, +1 element 1 …) */
   segments: number | null;
   isDefault: boolean;
@@ -127,6 +137,19 @@ export interface Selection {
  *  5. Net = sum of priced lines; VAT and gross follow src/lib/order/vat.ts.
  *  6. Included articles (priceCents 0) still appear as lines: the factory
  *     needs their article numbers (colour, door, socket) on the order.
+ *  7. A perExtension article (installation of an extra element) has line
+ *     quantity = selection.quantity × extension segments, where extension
+ *     segments = the sum of `segments` over the selected additional_segments
+ *     articles (Modular XL: AS1 = 1, AS2 = 2, AS3 = 3). When that sum is 0
+ *     the line is omitted. PricedSelection.extensionSegments carries the sum.
+ *  8. Articles of an `auto` category are never chosen by the buyer; the
+ *     callers canonicalise the selection (canonicalSelection in ./select.ts)
+ *     before pricing: every auto article is dropped and re-added by rule —
+ *     the transport article for the delivery country (…-TRANSPORT-EU for
+ *     mainland Europe, …-TRANSPORT-XX, on request, for the islands in
+ *     NON_MAINLAND_EUROPE) when the product has transport articles, and the
+ *     installation_extension articles when an installation article is
+ *     selected and the extension segments are more than 0.
  */
 export interface PricedLine {
   code: string;
@@ -146,4 +169,6 @@ export interface PricedSelection {
   hasOnRequestItems: boolean;
   /** 0.9 m segments in the configured booth (Modular XL), else null */
   segments: number | null;
+  /** Extension segments (sum over the selected additional_segments articles); 0 when none (rule 7) */
+  extensionSegments: number;
 }

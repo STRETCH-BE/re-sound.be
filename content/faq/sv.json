@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Vad kostar en telefonhytt för kontor?",
-    "answer": "Telefonhytten Solo Flex kostar från {{price:solo-flex}} exkl. moms. Mötesbåset Duo kostar från {{price:duo}} exkl. moms, och Modular XL från {{price:modular-xl}} exkl. moms för basmodulen, plus {{price:article:RS-MX-AS1}} per extra element om 90 cm. Priserna gäller fritt fabrik: leverans och installation offereras separat. Den största Modular XL som hittills byggts rymmer 20 personer.",
+    "answer": "Telefonhytten Solo ECO kostar från {{price:solo-eco}} exkl. moms och Solo Flex från {{price:solo-flex}} exkl. moms. Mötesbåset Duo kostar från {{price:duo}} exkl. moms, och Modular XL från {{price:modular-xl}} exkl. moms för basmodulen, plus {{price:article:RS-MX-AS1}} per extra element om 90 cm. Priserna gäller fritt fabrik. Transport inom det europeiska fastlandet och montering av vårt eget team är fasta belopp per modell: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} för transport och {{price:article:WEB-SOLO-ECO-INST}} för montering, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} och {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} och {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} och {{price:article:WEB-MODULAR-XL-INST}} för basmodulen plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element, allt exkl. moms; utanför det europeiska fastlandet offereras transporten. Den största Modular XL som hittills byggts rymmer 20 personer.",
     "showOn": [
       "booths",
       "guide",
@@ -83,8 +83,8 @@
   {
     "id": "FAQ-008",
     "category": "Booths",
-    "question": "Hur lång tid tar installationen, och vem utför den?",
-    "answer": "Re-Sounds egna montörer installerar er hytt: en telefonhytt tar omkring 60 minuter, ett mötesbås omkring två timmar och en Modular XL mellan två och sex timmar. Alternativt kan Solo Flex monteras på egen hand: två personer behöver mindre än tre timmar.",
+    "question": "Hur lång tid tar monteringen, och vem utför den?",
+    "answer": "Re-Sounds egna montörer ställer upp er hytt: en telefonhytt tar omkring 60 minuter, ett mötesbås omkring två timmar och en Modular XL mellan två och sex timmar. Montering av Re-Sound kostar {{price:article:WEB-SOLO-ECO-INST}} för Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} för Solo Flex, {{price:article:WEB-DUO-WORK-INST}} för Duo och {{price:article:WEB-MODULAR-XL-INST}} för basmodulen till Modular XL plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element, exkl. moms. Alternativt kan Solo Flex monteras på egen hand: två personer behöver mindre än tre timmar.",
     "showOn": [
       "booths",
       "faq",

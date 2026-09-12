@@ -5,8 +5,10 @@ database. The list answered most of the earlier questions: every booth
 construction, colour, table, door, socket, accessory and fire-protection
 article now has a price, and the order dialog charges exactly those. What is
 left is below. Fill in the right-hand column and send it back in any form.
-All prices **excluding VAT**, in euro, **ex works** — transport is always
-quoted separately.
+All prices **excluding VAT**, in euro, **ex works**. Since 12 September the
+four booths sold online carry a fixed transport price within mainland
+Europe (section A); everywhere else, and for every other product, transport
+is quoted separately.
 
 Where a price goes once you give it: the `articles` table in the Supabase
 dashboard (`docs/database.md`, "Changing a price or an option"). No deploy is
@@ -14,26 +16,40 @@ needed; the site reads it within the hour.
 
 ---
 
-## A. Installation — 9 prices, or one rule
+## A. Installation and transport — 4 models received, 3 installation prices open
 
-The list says "delivery and installation: optional, quoted separately", so
-installation is **on request** on every product today. Any order with
-installation ticked arrives without a final amount.
+**Received 12 September 2026** — in the catalogue and on the site (order
+dialog, price guide, PDF, product pages, FAQ, blog posts). Read as excl.
+VAT and per unit; "mainland Europe" = every delivery country the order form
+offers except the United Kingdom, Northern Ireland, Ireland, Malta, Cyprus
+and Iceland, where transport is quoted with the order confirmation. Your
+"Solo" was read as Solo Flex. Confirm those readings (`docs/needs-michael.md`,
+item A.8).
 
-| Product | Your installation price (excl. VAT) |
-|---|---|
-| Solo ECO | |
-| Solo Flex | |
-| Solo Stand | |
-| Duo Work | |
-| Duo Flex | |
-| Modular 4 | |
-| Modular XL — base module | |
-| Modular XL — per extra 90 cm element | |
-| Interior (per set, or a flat visit fee?) | |
+| Product | Installation by Re-Sound (excl. VAT) | Transport within mainland Europe (excl. VAT) |
+|---|---|---|
+| Solo ECO | € 875 | € 300 |
+| Solo Flex | € 1 245 | € 500 |
+| Duo Work | € 1 245 | € 500 |
+| Duo Flex | € 1 245 | € 500 |
+| Modular XL — main module | € 1 645 | € 750 |
+| Modular XL — per extra 90 cm element | € 1 245 (added automatically for every element when installation is ticked) | included in the € 750 |
 
-If it is one rule ("x % of the booth price" or "a flat fee per visit plus y
-per booth"), say the rule instead and we build it in.
+**Still open.** Installation is **on request** on the products below, so an
+order with installation ticked arrives without a final amount. They also
+carry no transport line: the site does not state a transport price for
+them.
+
+| Product | Your installation price (excl. VAT) | Your transport price within mainland Europe (excl. VAT) |
+|---|---|---|
+| Solo Stand (no page yet) | | |
+| Modular 4 (no page yet) | | |
+| Interior (per set, or a flat visit fee?) | | |
+| Divide | | |
+| Solid | | |
+
+If installation is one rule ("x % of the booth price" or "a flat fee per
+visit plus y per booth"), say the rule instead and we build it in.
 
 The earlier figures (€ 865 for Solo Flex, € 2 990 for Modular XL) were
 derived from the old guide's installation-inclusive prices, whose € 2 740
@@ -120,4 +136,6 @@ Also in `docs/needs-michael.md`, items 38–47.
 
 Everything on the 2026 list: 7 booth models, 152 articles, of which 35 priced
 options. Plus Interior € 387 per set and Divide € 1 238 per piece from the
-site. The supplier cross-reference is stored too, invisible to the site.
+site, and since 12 September the installation and mainland-Europe transport
+prices of Solo ECO, Solo Flex, Duo and Modular XL (section A). The supplier
+cross-reference is stored too, invisible to the site.

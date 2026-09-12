@@ -11,7 +11,7 @@ intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-10-27"
-dateModified: "2026-10-27"
+dateModified: "2026-09-12"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/akustikpaneele-recyceltes-pet.jpg"
 heroAlt: "Akustikpaneel rPET Groove aus grauem recyceltem PET-Filz, Nahaufnahme der Nuten und der Filzkante"
@@ -57,7 +57,7 @@ Prüfen Sie die genaue Anforderung mit Ihrem Akustiker. Die Sabine-Formel liefer
 
 Nur mit rPET Groove 24 mm (αw 0,85) an den Wänden wären das 28,4 / 0,85 = **33,4 m² Paneele**, also 24 Paneele von 2.400 × 600 mm (24 × 1,44 = 34,6 m²). Praktischer ist die Kombination: **30 m² absorbierende Decke** der Klasse A (angenommen αw 0,9; etwa eine [Akustik-Spanndecke](https://stretchplafond.be/products/acoustic-stretch-system) unseres Schwesterunternehmens STRETCH) bringen 30 × 0,9 = 27,0 m² Sabine, dazu **vier Paneele rPET Groove** an der Rückwand (4 × 1,44 = 5,8 m² × 0,85 = 4,9 m² Sabine). Zusammen 31,9 m² Sabine, mehr als die nötigen 28,4; der Raum landet bei 0,161 × 179 / (24,0 + 31,9) = **0,52 s**.
 
-Paneele dämpfen den Nachhall, nicht das Telefonat, das durch das Großraumbüro trägt. Dafür brauchen Sie eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie die [Solo Flex](/de/products/solo-flex), ab {{price:solo-flex}} zzgl. MwSt. ohne Montage (die Montage wird gesondert angeboten), zzgl. Transport nach Deutschland.
+Paneele dämpfen den Nachhall, nicht das Telefonat, das durch das Großraumbüro trägt. Dafür brauchen Sie eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie die [Solo Flex](/de/products/solo-flex), ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Montage durch unser Team {{price:article:WEB-SOLO-FLEX-INST}}, Transport auf dem europäischen Festland – also auch nach Deutschland – {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, jeweils zzgl. MwSt.
 
 ## Brandschutz und Emissionen: B-s1,d0 und OEKO-TEX
 

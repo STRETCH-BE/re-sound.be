@@ -11,10 +11,15 @@ import { analytics } from '@/lib/analytics';
 import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { categoryLabel, lineLabel } from '@/lib/catalogue/pricing';
 import {
+  articlesFor,
+  canonicalSelection,
+  chooseableArticles,
+  chooseableCategories,
   defaultSelection,
   POWER_SOCKET_CATEGORY,
   productById,
   socketMatchForCountry,
+  TRANSPORT_CATEGORY,
   validateSelection,
   type CatalogueSlice,
 } from '@/lib/catalogue/select';
@@ -44,9 +49,25 @@ import { carryOver, money as formatMoney, priceWithVat, withSocketFor } from './
  * submit carries the amounts the buyer consented to: when the route prices
  * differently it answers 409 with a fresh slice, the dialog swaps its slice
  * for it and asks the buyer to confirm the new total before anything is
- * stored. Nothing is paid online: the order is confirmed by Re-Sound, who
- * add transport, which is never part of the listed price.
+ * stored. Nothing is paid online: the order is confirmed by Re-Sound.
+ *
+ * Transport and the installation of extra elements are lines the site adds
+ * by rule (rule 8 in src/lib/catalogue/types.ts), never choices: the article
+ * list is kept in canonical form after every change — model switch, option
+ * toggle, delivery country, the fresh slice after a 409 — so the transport
+ * line follows the buyer's country (flat rate within mainland Europe, on
+ * request for the islands in NON_MAINLAND_EUROPE). Before the country is
+ * touched the form is on Belgium, so the mainland line applies.
  */
+
+/**
+ * Rule 8 for the dialog's article list: canonicalSelection() drops every
+ * auto line and appends the ones the rules give for the product and the
+ * delivery country. The quantity plays no part in it.
+ */
+function canonicalArticles(articles: string[], productId: string, slice: CatalogueSlice, country: string): string[] {
+  return canonicalSelection({ productId, quantity: 1, articles }, slice, country).articles;
+}
 
 interface Props {
   open: boolean;
@@ -121,6 +142,8 @@ export default function OrderModal({ open, onClose, slug, productName, configura
   const [step, setStep] = useState<Step>('configure');
   const [productId, setProductId] = useState(models[0]?.id ?? '');
   const [quantity, setQuantity] = useState(1);
+  // defaultSelection() is canonical: the transport line for Belgium (the
+  // country the form opens on) is already on it.
   const [articles, setArticles] = useState<string[]>(() => (models[0] ? defaultSelection(models[0], slice).articles : []));
   /** The buyer chose a socket by hand; the delivery country no longer changes it. */
   const [socketTouched, setSocketTouched] = useState(false);
@@ -209,7 +232,9 @@ export default function OrderModal({ open, onClose, slug, productName, configura
       const first = models[0];
       if (first) {
         setProductId(first.id);
-        setArticles(defaultSelection(first, slice).articles);
+        // The details survive a finished order, so the transport line follows
+        // the country still on the form rather than Belgium.
+        setArticles(canonicalArticles(defaultSelection(first, slice).articles, first.id, slice, customer.country));
       }
       setQuantity(1);
       setSocketTouched(false);
@@ -318,6 +343,22 @@ export default function OrderModal({ open, onClose, slug, productName, configura
 
   const money = (cents: number) => formatMoney(cents, localeTag);
 
+  // Step 1 shows what the buyer may choose: the auto categories (transport,
+  // installation of extra elements) and their articles are left out — the
+  // rules add them. The other models' articles stay so the model cards keep
+  // their from-price.
+  const chooseable: CatalogueSlice = {
+    products: slice.products,
+    categories: chooseableCategories(product, slice),
+    articles: [...chooseableArticles(product, slice), ...slice.articles.filter((a) => a.productId !== product.id)],
+  };
+
+  // The booths sold online carry transport as a line, so the note under the
+  // totals says what the flat rate covers; a product without transport
+  // articles (panels) keeps the older note. The same rule as the e-mails.
+  const hasTransportArticles = articlesFor(product.id, slice).some((a) => a.categoryKey === TRANSPORT_CATEGORY);
+  const transportNote = t(hasTransportArticles ? 'summary.transportMainlandNote' : 'summary.transportNote');
+
   /** Amount of one review line: "On request", "Included" for a zero line, else the total. */
   const lineAmount = (line: PricedLine): string =>
     line.lineTotalCents === null
@@ -396,7 +437,12 @@ export default function OrderModal({ open, onClose, slug, productName, configura
   const chooseCountry = (code: string) => {
     set('country', code);
     setCountryTouched(true);
-    if (!socketTouched) setArticles((current) => withSocketFor(current, product, slice, code));
+    // The socket follows the country unless the buyer picked one; the
+    // transport line always does (flat rate on the mainland, on request for
+    // the islands).
+    setArticles((current) =>
+      canonicalArticles(socketTouched ? current : withSocketFor(current, product, slice, code), productId, slice, code)
+    );
   };
 
   /**
@@ -409,13 +455,16 @@ export default function OrderModal({ open, onClose, slug, productName, configura
     const next = productById(id, slice);
     if (!next || next.id === productId) return;
     setProductId(id);
-    setArticles((current) => carryOver(current, next, slice, countryTouched ? customer.country : undefined));
+    setArticles((current) =>
+      canonicalArticles(carryOver(current, next, slice, countryTouched ? customer.country : undefined), next.id, slice, customer.country)
+    );
     setQuantity((q) => Math.min(q, next.maxQty));
   };
 
+  /** A change from step 1: the auto lines are re-derived (installation on → extra-element line). */
   const applySelection = (next: Selection) => {
     setQuantity(next.quantity);
-    setArticles(next.articles);
+    setArticles(canonicalArticles(next.articles, next.productId, slice, customer.country));
   };
 
   const goTo = (next: Step) => {
@@ -459,12 +508,22 @@ export default function OrderModal({ open, onClose, slug, productName, configura
    */
   const adoptFreshSlice = (fresh: CatalogueSlice, repair: boolean) => {
     setSlice(fresh);
-    if (!repair) return;
     const next = productById(productId, fresh) ?? fresh.products[0];
     if (!next) return;
-    setProductId(next.id);
-    setArticles((current) => carryOver(current, next, fresh, countryTouched ? customer.country : undefined));
-    setQuantity((q) => Math.min(q, next.maxQty));
+    if (repair) {
+      setProductId(next.id);
+      setQuantity((q) => Math.min(q, next.maxQty));
+    }
+    // Either way the auto lines come from the fresh slice: a transport price
+    // may be exactly what changed.
+    setArticles((current) =>
+      canonicalArticles(
+        repair ? carryOver(current, next, fresh, countryTouched ? customer.country : undefined) : current,
+        next.id,
+        fresh,
+        customer.country
+      )
+    );
   };
 
   // Arrow function: keeps the non-null narrowing of `product` from the guard above.
@@ -616,7 +675,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
                 </p>
               )}
               <Configurator
-                slice={slice}
+                slice={chooseable}
                 models={models}
                 product={product}
                 selection={selection}
@@ -761,6 +820,9 @@ export default function OrderModal({ open, onClose, slug, productName, configura
                       // Fire protection: its qty is booths × 0.9 m segments, which
                       // the buyer never typed — say where the 6 comes from.
                       const perSegment = article?.perSegment && priced.segments !== null;
+                      // Installation of extra elements: qty is booths × extra
+                      // elements (rule 7) — say so the same way.
+                      const perExtension = article?.perExtension && priced.extensionSegments > 0;
                       return (
                         <li key={line.code}>
                           <span className="om-line-label">
@@ -772,6 +834,11 @@ export default function OrderModal({ open, onClose, slug, productName, configura
                           {perSegment && (
                             <span className="om-line-hint">
                               {t('review.segmentsQty', { quantity, segments: priced.segments ?? 0 })}
+                            </span>
+                          )}
+                          {perExtension && (
+                            <span className="om-line-hint">
+                              {t('review.extensionQty', { quantity, elements: priced.extensionSegments })}
                             </span>
                           )}
                         </li>
@@ -872,7 +939,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
                 </p>
               )}
               {!result.emailSent && <p className="om-note om-note--warn">{t('success.emailFallback', { reference: result.reference })}</p>}
-              <p className="om-note">{t('summary.transportNote')}</p>
+              <p className="om-note">{transportNote}</p>
             </div>
           )}
         </div>
@@ -904,7 +971,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
                   <p className="om-totals-note om-totals-note--warn">{t('error.pricing_failed')}</p>
                 )}
               </div>
-              <p className="om-totals-note om-totals-note--transport">{t('summary.transportNote')}</p>
+              <p className="om-totals-note om-totals-note--transport">{transportNote}</p>
               <p className="om-totals-note om-totals-note--warn" aria-live="polite">
                 {priced?.hasOnRequestItems ? t('summary.onRequestNote') : ''}
               </p>

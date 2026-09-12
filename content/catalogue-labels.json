@@ -131,6 +131,28 @@
       "sv": "Montering",
       "no": "Montering",
       "is": "Uppsetning"
+    },
+    "installation_extension": {
+      "nl": "Installatie van extra elementen",
+      "fr": "Installation des éléments supplémentaires",
+      "de": "Montage zusätzlicher Elemente",
+      "es": "Instalación de elementos adicionales",
+      "pt": "Instalação de elementos adicionais",
+      "da": "Montering af ekstra elementer",
+      "sv": "Montering av extra element",
+      "no": "Montering av ekstra elementer",
+      "is": "Uppsetning aukaeininga"
+    },
+    "transport": {
+      "nl": "Transport",
+      "fr": "Transport",
+      "de": "Transport",
+      "es": "Transporte",
+      "pt": "Transporte",
+      "da": "Transport",
+      "sv": "Transport",
+      "no": "Transport",
+      "is": "Flutningur"
     }
   },
   "descriptions": {
@@ -562,6 +584,50 @@
       "sv": "Solid-akustikpanel, per styck",
       "no": "Solid-akustikkpanel, per stk.",
       "is": "Solid hljóðdeyfiplata, per stykki"
+    },
+    "Installation by Re-Sound (main module)": {
+      "nl": "Installatie door Re-Sound (basismodule)",
+      "fr": "Installation par Re-Sound (module de base)",
+      "de": "Montage durch Re-Sound (Basismodul)",
+      "es": "Instalación por Re-Sound (módulo base)",
+      "pt": "Instalação pela Re-Sound (módulo base)",
+      "da": "Montering af Re-Sound (basismodul)",
+      "sv": "Montering av Re-Sound (basmodul)",
+      "no": "Montering av Re-Sound (basismodul)",
+      "is": "Uppsetning af hálfu Re-Sound (grunneining)"
+    },
+    "Installation of an extra element": {
+      "nl": "Installatie van een extra element",
+      "fr": "Installation d'un élément supplémentaire",
+      "de": "Montage eines zusätzlichen Elements",
+      "es": "Instalación de un elemento adicional",
+      "pt": "Instalação de um elemento adicional",
+      "da": "Montering af et ekstra element",
+      "sv": "Montering av ett extra element",
+      "no": "Montering av et ekstra element",
+      "is": "Uppsetning á aukaeiningu"
+    },
+    "Transport within mainland Europe": {
+      "nl": "Transport binnen het vasteland van Europa",
+      "fr": "Transport en Europe continentale",
+      "de": "Transport innerhalb des europäischen Festlands",
+      "es": "Transporte en Europa continental",
+      "pt": "Transporte na Europa continental",
+      "da": "Transport inden for det europæiske fastland",
+      "sv": "Transport inom det europeiska fastlandet",
+      "no": "Transport innenfor det europeiske fastlandet",
+      "is": "Flutningur innan meginlands Evrópu"
+    },
+    "Transport outside mainland Europe": {
+      "nl": "Transport buiten het vasteland van Europa",
+      "fr": "Transport hors Europe continentale",
+      "de": "Transport außerhalb des europäischen Festlands",
+      "es": "Transporte fuera de Europa continental",
+      "pt": "Transporte fora da Europa continental",
+      "da": "Transport uden for det europæiske fastland",
+      "sv": "Transport utanför det europeiska fastlandet",
+      "no": "Transport utenfor det europeiske fastlandet",
+      "is": "Flutningur utan meginlands Evrópu"
     }
   }
 }

@@ -1,12 +1,15 @@
 /**
- * Pure pricing of a Selection — the six rules in ./types.ts, nothing else.
+ * Pure pricing of a Selection — rules 1–7 in ./types.ts, nothing else.
  * Runs unchanged in the browser (running total in the dialog) and on the
  * server (authoritative amounts in the API route). VAT is not applied here:
  * src/lib/order/vat.ts takes the net.
  *
  * Call validateSelection() first: an unknown product or article throws.
+ * Rule 8 (the auto lines — transport, installation of extra elements) is
+ * canonicalSelection() in ./select.ts; the callers apply it before pricing,
+ * this function prices whatever codes it is given.
  */
-import type { CatalogueSlice } from './select';
+import { extensionSegments as extensionSegmentsOf, type CatalogueSlice } from './select';
 import type { CatalogueArticle, CatalogueCategory, PricedLine, PricedSelection, Selection } from './types';
 
 export function priceSelection(selection: Selection, slice: CatalogueSlice): PricedSelection {
@@ -33,17 +36,23 @@ export function priceSelection(selection: Selection, slice: CatalogueSlice): Pri
   // Rule 2: segments = sum over the selected articles; null when none carries any.
   const withSegments = chosen.filter((a) => a.segments !== null);
   const segments = withSegments.length > 0 ? withSegments.reduce((sum, a) => sum + (a.segments ?? 0), 0) : null;
+  // Rule 7: extension segments = sum over the selected additional_segments articles.
+  const extensionSegments = extensionSegmentsOf(selection.articles, slice);
 
   const quantity = selection.quantity;
   let netCents = 0;
   let hasOnRequestItems = false;
-  const lines: PricedLine[] = chosen.map((a) => {
-    const qty = a.perSegment ? quantity * (segments ?? 0) : quantity;         // rule 2
+  const lines: PricedLine[] = [];
+  for (const a of chosen) {
+    if (a.perExtension && extensionSegments === 0) continue;                  // rule 7: no extension, no line
+    const qty = a.perSegment ? quantity * (segments ?? 0)                      // rule 2
+      : a.perExtension ? quantity * extensionSegments                          // rule 7
+      : quantity;
     const unitPriceCents = a.priceCents;                                       // rules 1, 3, 6
     const lineTotalCents = unitPriceCents === null ? null : unitPriceCents * qty; // rule 4
     if (lineTotalCents === null) hasOnRequestItems = true;
     else netCents += lineTotalCents;                                           // rule 5
-    return {
+    lines.push({
       code: a.code,
       categoryKey: a.categoryKey,
       description: a.description,
@@ -51,10 +60,10 @@ export function priceSelection(selection: Selection, slice: CatalogueSlice): Pri
       qty,
       unitPriceCents,
       lineTotalCents,
-    };
-  });
+    });
+  }
 
-  return { product, quantity, lines, netCents, hasOnRequestItems, segments };
+  return { product, quantity, lines, netCents, hasOnRequestItems, segments, extensionSegments };
 }
 
 // ---------------------------------------------------------------------------

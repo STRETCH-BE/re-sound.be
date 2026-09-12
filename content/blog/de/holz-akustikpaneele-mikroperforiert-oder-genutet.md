@@ -11,7 +11,7 @@ intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-11-24"
-dateModified: "2026-11-24"
+dateModified: "2026-09-12"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/holz-akustikpaneele-mikroperforiert-oder-genutet.jpg"
 heroAlt: "Mikroperforiertes Holz-Akustikpaneel rWood Micro mit FSC-Furnier, Nahaufnahme der nahezu geschlossenen Oberfläche"
@@ -59,7 +59,7 @@ Prüfen Sie die genaue Anforderung mit Ihrem Akustiker. Die Sabine-Formel liefer
 
 Mit rWood Groove (αw 0,85) sind das 13,1 / 0,85 = **15,4 m² Paneele**: die Längswand gegenüber dem Bildschirm (5 × 2,8 = 14,0 m²) plus ein Streifen von 1,4 m² an der Stirnwand hinter den Sprechern. Wählen Sie rWood Micro, planen Sie dieselben 15,4 m², aber zwingend mit Akustikfilz, rPET-Paneel oder Mineralwolle dahinter; ohne Absorber bräuchten Sie mehr Fläche.
 
-Paneele senken den Nachhall im Raum; das Telefonat, das durch das Großraumbüro trägt, stoppen sie nicht. Dafür ist eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie [Solo Flex](/de/products/solo-flex) da: ab {{price:solo-flex}} zzgl. MwSt. ohne Montage (die Montage wird gesondert angeboten), zzgl. Transport nach Deutschland.
+Paneele senken den Nachhall im Raum; das Telefonat, das durch das Großraumbüro trägt, stoppen sie nicht. Dafür ist eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie [Solo Flex](/de/products/solo-flex) da: ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Montage durch unser Team {{price:article:WEB-SOLO-FLEX-INST}}, Transport auf dem europäischen Festland – also auch nach Deutschland – {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, jeweils zzgl. MwSt.
 
 ## Optik und Interieur: Linienrhythmus oder ruhige Holzfläche
 

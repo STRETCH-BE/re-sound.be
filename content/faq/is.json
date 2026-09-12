@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hvað kostar símaklefi fyrir skrifstofur?",
-    "answer": "Solo Flex símaklefinn kostar frá {{price:solo-flex}} án VSK. Duo fundarklefinn kostar frá {{price:duo}} án VSK, og Modular XL frá {{price:modular-xl}} án VSK fyrir grunneininguna, auk {{price:article:RS-MX-AS1}} fyrir hverja 90 cm viðbótareiningu. Verð miðast við afhendingu frá verksmiðju: flutningur og uppsetning eru verðlögð sérstaklega. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns.",
+    "answer": "Solo ECO símaklefinn kostar frá {{price:solo-eco}} án VSK og Solo Flex frá {{price:solo-flex}} án VSK. Duo fundarklefinn kostar frá {{price:duo}} án VSK, og Modular XL frá {{price:modular-xl}} án VSK fyrir grunneininguna, auk {{price:article:RS-MX-AS1}} fyrir hverja 90 cm aukaeiningu. Verð miðast við afhendingu frá verksmiðju. Flutningur innan meginlands Evrópu og uppsetning af okkar eigin teymi eru fastar upphæðir fyrir hverja gerð: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} fyrir flutning og {{price:article:WEB-SOLO-ECO-INST}} fyrir uppsetningu, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} og {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} og {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} og {{price:article:WEB-MODULAR-XL-INST}} fyrir grunneininguna auk {{price:article:WEB-MODULAR-XL-INST-EXT}} fyrir hverja aukaeiningu, allt án VSK; utan meginlands Evrópu gerum við tilboð í flutning. Stærsti Modular XL sem smíðaður hefur verið til þessa rúmar 20 manns.",
     "showOn": [
       "booths",
       "guide",
@@ -84,7 +84,7 @@
     "id": "FAQ-008",
     "category": "Booths",
     "question": "Hversu langan tíma tekur uppsetning og hver sér um hana?",
-    "answer": "Eigið uppsetningarteymi Re-Sound setur klefann upp: símaklefi tekur um 60 mínútur, fundarklefi um tvær klukkustundir og Modular XL tvær til sex klukkustundir. Einnig er hægt að setja Solo Flex saman á eigin vegum: tveir einstaklingar þurfa innan við þrjár klukkustundir.",
+    "answer": "Eigið uppsetningarteymi Re-Sound setur klefann þinn upp: símaklefi tekur um 60 mínútur, fundarklefi um tvær klukkustundir og Modular XL tvær til sex klukkustundir. Uppsetning af hálfu Re-Sound kostar {{price:article:WEB-SOLO-ECO-INST}} fyrir Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} fyrir Solo Flex, {{price:article:WEB-DUO-WORK-INST}} fyrir Duo og {{price:article:WEB-MODULAR-XL-INST}} fyrir grunneiningu Modular XL auk {{price:article:WEB-MODULAR-XL-INST-EXT}} fyrir hverja aukaeiningu, án VSK. Einnig er hægt að setja Solo Flex saman á eigin vegum: tveir einstaklingar þurfa innan við þrjár klukkustundir.",
     "showOn": [
       "booths",
       "faq",

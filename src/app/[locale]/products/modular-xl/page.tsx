@@ -15,6 +15,7 @@ import ProductFaq from '@/components/product/ProductFaq';
 import Breadcrumbs from '@/components/product/Breadcrumbs';
 import OtherModels from '@/components/product/OtherModels';
 import { boothFromPrice } from '@/components/product/boothPrice';
+import { boothServicePrices } from '@/components/product/boothServices';
 import { getFromPriceCents } from '@/lib/catalogue/load';
 import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
@@ -117,6 +118,8 @@ export default async function Page({ params: { locale } }: PageProps) {
   // Models, categories and articles for the order dialog (same catalogue read).
   const configurator = await loadConfigurator('modular-xl');
   const fromPrice = await boothFromPrice(locale, 'modular-xl', tHubs('col.fromPrice'));
+  // Transport (mainland Europe) and installation figures for the CTA note, from the same slice.
+  const services = boothServicePrices(locale, configurator);
 
   return (
     <>
@@ -138,6 +141,7 @@ export default async function Page({ params: { locale } }: PageProps) {
         <ModularXLProductPage
           fromPrice={fromPrice}
           configurator={configurator}
+          services={services}
           breadcrumbs={<Breadcrumbs items={crumbs} />}
           specs={<ProductSpecs cards={specs} tag={tBooth('specs.tag')} title={tBooth('specs.title')} />}
           downloads={<ProductDownloads product={PRODUCTS['modular-xl']} tag={tShared('downloads.tag')} title={tShared('downloads.title')} />}

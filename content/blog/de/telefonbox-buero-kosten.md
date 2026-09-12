@@ -11,21 +11,21 @@ intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-10-13"
-dateModified: "2026-10-13"
+dateModified: "2026-09-12"
 heroImage: "/images/products/solo-flex/hero-solo-flex.webp"
 heroImageMissing: "/images/blog/telefonbox-buero-kosten.jpg"
 heroAlt: "Telefonbox Solo Flex von Re-Sound für eine Person, aufgestellt in einem offenen Büro"
 internalLinks: ["/de/products/solo-flex","/de/products/duo","/de/products/modular-xl","/de/products/telefonboxen","/de/products/pet-akustikpaneele","/de/where-to-buy","/de/contact","/de/guides/telefonbox-preise"]
 cta: "Fordern Sie ein Angebot für Solo Flex an – wir antworten mit Preis, Lieferzeit und Montageoption für Ihre Adresse."
 sources: "ISO 23351-1:2020 (Sprachpegelminderung geschlossener Bürokabinen); VDI 2569 (Büroakustik), ISO 22955 (Akustik offener Büros) und DIN 18041 (Hörsamkeit) als Hinweise; ISO 11654 (Absorptionsklassen); W.C. Sabine (Nachhallformel); Produktdaten Re-Sound Solo Flex, Duo und Modular XL; öffentliche Preise von drei Wettbewerbern, September 2026 (2.990 € netto, 3.990 € und 9.320 € zzgl. MwSt. für eine Einpersonenkabine)."
-faq: [{"question":"Was kostet eine Telefonbox fürs Büro 2026?","answer":"Für eine Einpersonenkabine reichen die öffentlichen Preise der Wettbewerber im September 2026 von 2.990 € netto über 3.990 € zzgl. MwSt. bis 9.320 € zzgl. MwSt. Solo Flex von Re-Sound kostet {{price:solo-flex}} zzgl. MwSt. ohne Montage; die Montage wird gesondert angeboten, der Transport außerhalb Belgiens kommt hinzu."},{"question":"Reicht eine Telefonbox der Klasse C aus?","answer":"Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Sprachpegelminderung hören Ihre Kollegen noch ein fernes Murmeln, aber kein Wort. Für vertrauliche Besprechungen direkt neben einer stark belegten Fläche wählen Sie eine höhere Klasse oder einen geschlossenen Raum; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie schnell steht die Telefonbox in meinem Büro?","answer":"Vier bis sechs Wochen nach Auftragsbestätigung für eine Standardkonfiguration. Zwei Personen bauen Solo Flex in unter drei Stunden selbst auf; übernimmt unser Team die Montage, rechnen Sie mit etwa einer Stunde für eine Einzelkabine, zwei Stunden für einen Meeting-Pod und zwei bis sechs Stunden für Modular XL."}]
+faq: [{"question":"Was kostet eine Telefonbox fürs Büro 2026?","answer":"Für eine Einpersonenkabine reichen die öffentlichen Preise der Wettbewerber im September 2026 von 2.990 € netto über 3.990 € zzgl. MwSt. bis 9.320 € zzgl. MwSt. Solo Flex von Re-Sound kostet {{price:solo-flex}} zzgl. MwSt. ohne Transport und Montage; der Transport auf dem europäischen Festland kostet {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, die Montage durch unser eigenes Team {{price:article:WEB-SOLO-FLEX-INST}}, jeweils zzgl. MwSt. Außerhalb des europäischen Festlands nennen wir Ihnen den Transportpreis mit der Auftragsbestätigung."},{"question":"Reicht eine Telefonbox der Klasse C aus?","answer":"Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Sprachpegelminderung hören Ihre Kollegen noch ein fernes Murmeln, aber kein Wort. Für vertrauliche Besprechungen direkt neben einer stark belegten Fläche wählen Sie eine höhere Klasse oder einen geschlossenen Raum; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie schnell steht die Telefonbox in meinem Büro?","answer":"Vier bis sechs Wochen nach Auftragsbestätigung für eine Standardkonfiguration. Zwei Personen bauen Solo Flex in unter drei Stunden selbst auf; übernimmt unser Team die Montage, rechnen Sie mit etwa einer Stunde für eine Einzelkabine, zwei Stunden für einen Meeting-Pod und zwei bis sechs Stunden für Modular XL."}]
 draft: true
 status: "Review"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
 wordCount: 1382
 ---
 
-**Eine Telefonbox fürs Büro kostet bei Re-Sound ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; die Montage wird gesondert angeboten.** Das ist der Preis von [Solo Flex](/de/products/solo-flex), unserer Akustikkabine für eine Person, mit Lüftung, Beleuchtung und Stromanschluss. Hier lesen Sie, was der Betrag abdeckt, welche Größe passt, was die ISO-23351-1-Klassen bedeuten und worauf Sie bei der Aufstellung achten – vom Hersteller, ohne Zwischenhandel.
+**Eine Telefonbox fürs Büro kostet bei Re-Sound ab {{price:solo-flex}} zzgl. MwSt.; die Montage durch unser eigenes Team kostet {{price:article:WEB-SOLO-FLEX-INST}}, der Transport auf dem europäischen Festland {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** Das ist der Preis von [Solo Flex](/de/products/solo-flex), unserer Akustikkabine für eine Person, mit Lüftung, Beleuchtung und Stromanschluss. Hier lesen Sie, was der Betrag abdeckt, welche Größe passt, was die ISO-23351-1-Klassen bedeuten und worauf Sie bei der Aufstellung achten – vom Hersteller, ohne Zwischenhandel.
 
 ## Was kostet eine Telefonbox fürs Büro 2026?
 
@@ -33,16 +33,16 @@ Im September 2026 kostet eine Einpersonen-Telefonzelle fürs Büro zwischen rund
 
 | Kabine | Anbieter | Preis zzgl. MwSt. |
 |---|---|---|
-| Solo Flex | Re-Sound | {{price:solo-flex}} ohne Montage · Montage wird gesondert angeboten |
+| Solo Flex | Re-Sound | {{price:solo-flex}} ohne Montage · Montage {{price:article:WEB-SOLO-FLEX-INST}} |
 | Einpersonenkabine | Wettbewerber 1 | 2.990 € netto |
 | Einpersonenkabine | Wettbewerber 2 | 3.990 € zzgl. MwSt. |
 | Einpersonenkabine | Wettbewerber 3 | 9.320 € zzgl. MwSt. |
 
-Re-Sound-Preise gelten zzgl. MwSt.; der Transport außerhalb Belgiens – also nach Deutschland – ist nicht inbegriffen.
+Re-Sound-Preise gelten zzgl. MwSt.; der Transport auf dem europäischen Festland – also auch nach Deutschland – kostet pauschal {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} je Solo Flex; außerhalb des europäischen Festlands nennen wir Ihnen den Transportpreis mit der Auftragsbestätigung.
 
 Solo Flex liegt preislich über Wettbewerber 1 und 2 und unter Wettbewerber 3; wir bauen sie selbst. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).
 
-Für zwei Personen bieten wir [Duo](/de/products/duo) ab {{price:duo}} zzgl. MwSt. an. Für vier bis zehn Personen beginnt [Modular XL](/de/products/modular-xl) bei {{price:modular-xl}} zzgl. MwSt. ohne Montage, plus {{price:article:RS-MX-AS1}} je zusätzlichem 90-cm-Element; die Montage wird gesondert angeboten. Mit einem Element mehr rechnen Sie also {{price:modular-xl}} + {{price:article:RS-MX-AS1}} zzgl. MwSt.
+Für zwei Personen bieten wir [Duo](/de/products/duo) ab {{price:duo}} zzgl. MwSt. an; der Transport auf dem europäischen Festland kostet {{price:article:WEB-DUO-WORK-TRANSPORT-EU}}, die Montage {{price:article:WEB-DUO-WORK-INST}}. Für vier bis zehn Personen beginnt [Modular XL](/de/products/modular-xl) bei {{price:modular-xl}} zzgl. MwSt. ohne Montage, plus {{price:article:RS-MX-AS1}} je zusätzlichem 90-cm-Element; der Transport auf dem europäischen Festland kostet {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}}, die Montage durch unser eigenes Team {{price:article:WEB-MODULAR-XL-INST}} für das Basismodul plus {{price:article:WEB-MODULAR-XL-INST-EXT}} je zusätzlichem Element. Mit einem Element mehr rechnen Sie also {{price:modular-xl}} + {{price:article:RS-MX-AS1}} zzgl. MwSt.
 
 ## Was im Preis enthalten ist – und was nicht
 
@@ -53,7 +53,7 @@ Zur Standardausstattung von Solo Flex gehören:
 - **LED-Beleuchtung** mit Bewegungsmelder.
 - **Garantie**: fünf Jahre auf Rahmen und Korpus, zwei Jahre auf Elektronik und Verschleißteile.
 
-Nicht im Preis: Transport bis auf die Etage und Aufbau. Zwei Personen bauen die Kabine in unter drei Stunden selbst auf, oder Sie lassen sich die Montage gesondert anbieten: Unser Team braucht dafür rund eine Stunde. Ein rollstuhlgerechter Zugang ist bei keiner Kabine Standard, lässt sich aber auf Anfrage umsetzen.
+Nicht im Preis: Transport bis auf die Etage und Aufbau. Zwei Personen bauen die Kabine in unter drei Stunden selbst auf, oder unser Team übernimmt die Montage für {{price:article:WEB-SOLO-FLEX-INST}} zzgl. MwSt. und braucht dafür rund eine Stunde. Ein rollstuhlgerechter Zugang ist bei keiner Kabine Standard, lässt sich aber auf Anfrage umsetzen.
 
 ## Welche Größe: 1, 2 oder 4 bis 10 Personen
 
@@ -121,7 +121,7 @@ Testen Sie die Kabinen in unserer Ausstellung in Beveren-Waas (nach Vereinbarung
 ## Häufige Fragen
 
 **Was kostet eine Telefonbox fürs Büro 2026?**
-Für eine Einpersonenkabine reichen die öffentlichen Preise der Wettbewerber im September 2026 von 2.990 € netto über 3.990 € zzgl. MwSt. bis 9.320 € zzgl. MwSt. Solo Flex von Re-Sound kostet {{price:solo-flex}} zzgl. MwSt. ohne Montage; die Montage wird gesondert angeboten, der Transport außerhalb Belgiens kommt hinzu.
+Für eine Einpersonenkabine reichen die öffentlichen Preise der Wettbewerber im September 2026 von 2.990 € netto über 3.990 € zzgl. MwSt. bis 9.320 € zzgl. MwSt. Solo Flex von Re-Sound kostet {{price:solo-flex}} zzgl. MwSt. ohne Transport und Montage; der Transport auf dem europäischen Festland kostet {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, die Montage durch unser eigenes Team {{price:article:WEB-SOLO-FLEX-INST}}, jeweils zzgl. MwSt. Außerhalb des europäischen Festlands nennen wir Ihnen den Transportpreis mit der Auftragsbestätigung.
 
 **Reicht eine Telefonbox der Klasse C aus?**
 Für Telefonate und Videokonferenzen im offenen Büro ja: Bei rund 24 dB(A) Sprachpegelminderung hören Ihre Kollegen noch ein fernes Murmeln, aber kein Wort. Für vertrauliche Besprechungen direkt neben einer stark belegten Fläche wählen Sie eine höhere Klasse oder einen geschlossenen Raum; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.

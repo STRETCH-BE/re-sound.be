@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import OrderButton from '@/components/order/OrderButton';
 import type { ConfiguratorData } from '@/lib/catalogue/load';
+import type { BoothServicePrices } from '@/components/product/boothServices';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -61,6 +62,12 @@ export interface BoothSlots {
   fromPrice?: { value: string; label: string; href?: string };
   /** Catalogue slice for the order dialog (server-loaded); the button hides when absent or empty */
   configurator?: ConfiguratorData | null;
+  /**
+   * Transport (mainland Europe) and installation figures for the CTA note,
+   * formatted on the server from the same catalogue read
+   * (src/components/product/boothServices.ts). Absent → the note without transport.
+   */
+  services?: BoothServicePrices;
 }
 
 export interface SoundboothProductPageProps extends BoothSlots {
@@ -105,6 +112,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
     otherModels,
     fromPrice,
     configurator,
+    services,
   } = props;
 
   const t = useTranslations(namespace);
@@ -119,6 +127,19 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
   useEffect(() => {
     analytics.viewItem(slug, 'booth');
   }, [slug]);
+
+  // CTA note: the catalogue's transport (mainland Europe) and installation
+  // figures; a figure the catalogue leaves empty reads "on request". Modular
+  // XL's installation carries the per-extra-element amount. Without a
+  // transport article the note names no transport. The model's own key wins
+  // over the shared boothPage one.
+  const onRequest = tShared('cta.onRequest');
+  const installation = services
+    ? `${services.installation ?? onRequest}${services.perExtraElement ? ` ${tShared('cta.perExtraElement', { price: services.perExtraElement })}` : ''}`
+    : onRequest;
+  const noteKey = services?.hasTransport ? 'cta.deliveryNote' : 'cta.deliveryNoteNoTransport';
+  const noteValues = { transport: services?.transport ?? onRequest, installation };
+  const deliveryNote = t.has(noteKey) ? t(noteKey, noteValues) : tShared(noteKey, noteValues);
 
   const navItems = [
     { id: 'overview',  label: tShared('nav.overview') },
@@ -488,7 +509,7 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
             </a>
           </div>
           {/* A model may word its own note (Solo ECO: ex works, spare-part warranty); else the shared one. */}
-          <p className="cta-note">{t.has('cta.deliveryNote') ? t('cta.deliveryNote') : tShared('cta.deliveryNote')}</p>
+          <p className="cta-note">{deliveryNote}</p>
         </div>
       </section>
 

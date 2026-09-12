@@ -31,7 +31,7 @@
     "category": "Booths",
     "locale": "en",
     "question": "How much does an office phone booth cost?",
-    "answer": "The Solo Flex office phone booth starts from {{price:solo-flex}} excl. VAT. The Duo meeting pod starts from {{price:duo}} excl. VAT, and Modular XL from {{price:modular-xl}} excl. VAT for the base module, plus {{price:article:RS-MX-AS1}} per extra 90 cm element. Prices are ex works: delivery and installation are quoted separately. The largest Modular XL built so far seats 20 people.",
+    "answer": "The Solo ECO office phone booth starts from {{price:solo-eco}} excl. VAT and the Solo Flex from {{price:solo-flex}} excl. VAT. The Duo meeting pod starts from {{price:duo}} excl. VAT, and Modular XL from {{price:modular-xl}} excl. VAT for the base module, plus {{price:article:RS-MX-AS1}} per extra 90 cm element. Prices are ex works. Transport within mainland Europe and installation by our own team are fixed amounts per model: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} transport and {{price:article:WEB-SOLO-ECO-INST}} installation, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} and {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} and {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} and {{price:article:WEB-MODULAR-XL-INST}} for the main module plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element, all excl. VAT; outside mainland Europe transport is quoted. The largest Modular XL built so far seats 20 people.",
     "showOn": [
       "acoustic-phone-booths",
       "guide"
@@ -93,7 +93,7 @@
     "category": "Booths",
     "locale": "en",
     "question": "How long does installation take and who does it?",
-    "answer": "We install your booth in 60min for a call booth, a meeting pod can take 2 hours, the modularone takes 2-6 hours",
+    "answer": "Our own installers place the booth: 60 min for a call booth, a meeting pod can take 2 hours, the Modular XL takes 2-6 hours. Installation by Re-Sound costs {{price:article:WEB-SOLO-ECO-INST}} for Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} for Solo Flex, {{price:article:WEB-DUO-WORK-INST}} for Duo and {{price:article:WEB-MODULAR-XL-INST}} for the main module of Modular XL plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element, excl. VAT.",
     "showOn": [
       "acoustic-phone-booths"
     ],

@@ -31,7 +31,14 @@ export function guidePriceArgs(catalogue: Catalogue, locale: string, onRequest: 
   return { soloEco: fmt('solo-eco'), soloFlex: fmt('solo-flex'), modularXl: fmt('modular-xl') };
 }
 import { categoryLabel, lineLabel } from '@/lib/catalogue/pricing';
-import { articleSuffix, articlesFor } from '@/lib/catalogue/select';
+import {
+  ADDITIONAL_SEGMENTS_CATEGORY,
+  INSTALLATION_CATEGORY,
+  INSTALLATION_EXTENSION_CATEGORY,
+  articleSuffix,
+  articlesFor,
+  transportArticleForCountry,
+} from '@/lib/catalogue/select';
 import type { CatalogueArticle } from '@/lib/catalogue/types';
 import { getBoothGuide } from '@/lib/content/boothGuide';
 import { faqForResolved } from '@/lib/content/faq';
@@ -60,9 +67,12 @@ const ISO_CLASSES = [
  * Every price comes from the catalogue (database, else the committed
  * snapshot — src/lib/catalogue/load.ts): the lowest base price of the models
  * sold from each page, the glass-backwall base price, the Modular XL
- * extension articles and the installation line (on request until Re-Sound
- * publishes a figure). Facts come from content/booth-guide.json (Booth_Guide
- * sheet) and src/data/products.ts. JSON-LD: BreadcrumbList + one FAQPage.
+ * extension articles, the transport line within mainland Europe
+ * (WEB-…-TRANSPORT-EU) and the installation line — for Modular XL with the
+ * per-extra-element amount of the installation_extension article. Models
+ * without a figure read "On request". Facts come from content/booth-guide.json
+ * (Booth_Guide sheet) and src/data/products.ts. JSON-LD: BreadcrumbList + one
+ * FAQPage.
  */
 export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) {
   const t = await getTranslations({ locale, namespace: 'boothGuide' });
@@ -91,11 +101,41 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
   const basePrice = (slug: string) => lowest(articlesOf(slug).filter((a) => a.priceType === 'base'));
   // Glass backwall: the base article whose code ends in -BG (RS-SF-BG …).
   const glassArticles = (slug: string) => articlesOf(slug).filter((a) => a.priceType === 'base' && articleSuffix(a.code) === 'BG');
-  const extensions = (slug: string) => articlesOf(slug).filter((a) => a.categoryKey === 'additional_segments');
-  const installation = (slug: string) => articlesOf(slug).find((a) => a.categoryKey === 'installation');
+  const extensions = (slug: string) => articlesOf(slug).filter((a) => a.categoryKey === ADDITIONAL_SEGMENTS_CATEGORY);
+  // Installation by Re-Sound: the lowest-priced installation line of the models sold from the page (Duo Work and
+  // Duo Flex both sell from /products/duo), the same "from" reading as the base price and the transport row.
+  const installation = (slug: string): CatalogueArticle | undefined =>
+    articlesOf(slug)
+      .filter((a) => a.categoryKey === INSTALLATION_CATEGORY)
+      .sort((x, y) => (x.priceCents ?? Number.POSITIVE_INFINITY) - (y.priceCents ?? Number.POSITIVE_INFINITY))[0];
+  // Installation of an extra element (Modular XL): the per_extension article, printed as a suffix of the installation cell.
+  const installationExtension = (slug: string) =>
+    articlesOf(slug).find((a) => a.categoryKey === INSTALLATION_EXTENSION_CATEGORY && a.perExtension);
+  // Transport within mainland Europe: the -EU transport articles (no country = mainland) of the models sold from the page;
+  // the cell shows the lowest one, the same reading as the from-price. Empty when no model has one.
+  const transportArticles = (slug: string) =>
+    catalogue.products
+      .filter((p) => p.active && p.websiteSlug === slug)
+      .map((p) => transportArticleForCountry(p, catalogue, null))
+      .filter((a): a is CatalogueArticle => a !== null);
   // Labels of catalogue-defined rows come from the catalogue too (translated through its labels).
   const glassLabelArticle = models.map((m) => glassArticles(m.row.slug)[0]).find((a) => a !== undefined);
-  const installationCategory = catalogue.categories.find((c) => c.key === 'installation');
+  const installationCategory = catalogue.categories.find((c) => c.key === INSTALLATION_CATEGORY);
+  // Installation cell: the figure, plus "+ … per extra element" where the model has an extension line.
+  const installationCell = (slug: string): string => {
+    const line = installation(slug);
+    if (!line) return NA;
+    const ext = installationExtension(slug);
+    return ext ? `${money(line.priceCents)} ${t('perExtraElement', { price: money(ext.priceCents) })}` : money(line.priceCents);
+  };
+  // Values for the installation paragraph: every figure from the catalogue, never typed.
+  const installationArgs = {
+    soloEco: money(installation('solo-eco')?.priceCents),
+    soloFlex: money(installation('solo-flex')?.priceCents),
+    duo: money(installation('duo')?.priceCents),
+    modularXl: money(installation('modular-xl')?.priceCents),
+    modularXlExtra: money(installationExtension('modular-xl')?.priceCents),
+  };
 
   const hub = HUBS.booths;
   const path = guidePath(locale);
@@ -125,6 +165,13 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
       ? [{ label: lineLabel(glassLabelArticle, locale), cell: (m: Model) => money(lowest(glassArticles(m.row.slug))) }]
       : []),
     {
+      label: t('col.transport'),
+      cell: (m) => {
+        const lines = transportArticles(m.row.slug);
+        return lines.length > 0 ? money(lowest(lines)) : NA;
+      },
+    },
+    {
       label: t('col.extra'),
       cell: (m) => {
         const ext = extensions(m.row.slug);
@@ -139,10 +186,7 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
     ...(installationCategory
       ? [{
           label: categoryLabel(installationCategory, locale),
-          cell: (m: Model) => {
-            const line = installation(m.row.slug);
-            return line ? money(line.priceCents) : NA;
-          },
+          cell: (m: Model) => installationCell(m.row.slug),
         }]
       : []),
     {
@@ -250,7 +294,7 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
             <span className="section-tag">{t('installationTag')}</span>
             <h2>{t('installationTitle')}</h2>
           </div>
-          <p className="guide-text">{t('installationText')}</p>
+          <p className="guide-text">{t('installationText', installationArgs)}</p>
         </section>
 
         <section className="ps-section guide-text-section" id="showroom">

@@ -79,7 +79,7 @@ const COLUMNS = {
   price_lists: 'id, name, currency, valid_from, price_basis, terms, packaging, contacts, notes, source_file, imported_at',
   products: 'id, price_list_id, model_code, name, description, kind, unit, website_slug, max_qty, ref_page, tech, sort, active',
   categories: 'key, name, labels, select_mode, required, sort',
-  articles: 'code, product_id, category_key, sheet_category, "group", description, labels, price_cents, price_type, per_segment, segments, is_default, source, notes, sort, active',
+  articles: 'code, product_id, category_key, sheet_category, "group", description, labels, price_cents, price_type, per_segment, per_extension, segments, is_default, source, notes, sort, active',
 };
 
 const asObject = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? v : {});
@@ -105,7 +105,7 @@ const mapCategory = (r) => ({
 const mapArticle = (r) => ({
   code: r.code, productId: r.product_id, categoryKey: r.category_key, sheetCategory: r.sheet_category ?? null, group: r.group ?? null,
   description: r.description, labels: asObject(r.labels), priceCents: r.price_cents ?? null, priceType: r.price_type,
-  perSegment: Boolean(r.per_segment), segments: r.segments ?? null, isDefault: Boolean(r.is_default), source: r.source,
+  perSegment: Boolean(r.per_segment), perExtension: Boolean(r.per_extension), segments: r.segments ?? null, isDefault: Boolean(r.is_default), source: r.source,
   notes: null, sort: r.sort, active: Boolean(r.active),
 });
 

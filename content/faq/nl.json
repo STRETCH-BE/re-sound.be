@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Hoeveel kost een belcabine voor kantoor?",
-    "answer": "De belcabine Solo Flex is verkrijgbaar vanaf {{price:solo-flex}} excl. btw. De vergaderpod Duo is verkrijgbaar vanaf {{price:duo}} excl. btw, en Modular XL vanaf {{price:modular-xl}} excl. btw voor de basismodule, plus {{price:article:RS-MX-AS1}} per extra element van 90 cm. Prijzen zijn af fabriek: levering en installatie worden apart geoffreerd. De grootste Modular XL tot nu toe biedt plaats aan 20 personen.",
+    "answer": "De belcabine Solo ECO is verkrijgbaar vanaf {{price:solo-eco}} excl. btw en de Solo Flex vanaf {{price:solo-flex}} excl. btw. De vergaderpod Duo is verkrijgbaar vanaf {{price:duo}} excl. btw, en Modular XL vanaf {{price:modular-xl}} excl. btw voor de basismodule, plus {{price:article:RS-MX-AS1}} per extra element van 90 cm. Prijzen zijn af fabriek. Transport binnen het vasteland van Europa en installatie door ons eigen team zijn vaste bedragen per model: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} transport en {{price:article:WEB-SOLO-ECO-INST}} installatie, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} en {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} en {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} en {{price:article:WEB-MODULAR-XL-INST}} voor de basismodule plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element, alles excl. btw; buiten het vasteland van Europa wordt het transport geoffreerd. De grootste Modular XL tot nu toe biedt plaats aan 20 personen.",
     "showOn": [
       "booths",
       "guide",
@@ -84,7 +84,7 @@
     "id": "FAQ-008",
     "category": "Booths",
     "question": "Hoelang duurt de installatie, en wie voert die uit?",
-    "answer": "De eigen installateurs van Re-Sound plaatsen uw cabine: een belcabine vraagt ongeveer 60 minuten, een vergaderpod ongeveer twee uur en een Modular XL twee tot zes uur. U kunt de Solo Flex ook zelf monteren: twee personen hebben daar minder dan drie uur voor nodig.",
+    "answer": "De eigen installateurs van Re-Sound plaatsen je cabine: een belcabine vraagt ongeveer 60 minuten, een vergaderpod ongeveer twee uur en een Modular XL twee tot zes uur. Installatie door Re-Sound kost {{price:article:WEB-SOLO-ECO-INST}} voor Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} voor Solo Flex, {{price:article:WEB-DUO-WORK-INST}} voor Duo en {{price:article:WEB-MODULAR-XL-INST}} voor de basismodule van Modular XL plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element, excl. btw. Je kunt de Solo Flex ook zelf monteren: twee personen hebben daar minder dan drie uur voor nodig.",
     "showOn": [
       "booths",
       "faq",

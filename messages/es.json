@@ -3084,7 +3084,10 @@
       "callUs": "Llámanos: +32 3 284 68 18",
       "ctaTitle": "¿Listo para diseñar tu espacio?",
       "ctaSubtitle": "Nuestro equipo te ayuda a elegir la cabina adecuada, configurar opciones y planificar la entrega. Presupuestos habitualmente en un día laborable.",
-      "deliveryNote": "Entrega en toda la UE · Instalación disponible · Garantía estructural de 5 años"
+      "deliveryNote": "Transporte en Europa continental {transport} · Instalación por Re-Sound {installation} · Garantía estructural de 5 años",
+      "deliveryNoteNoTransport": "Entrega e instalación bajo petición · Garantía estructural de 5 años",
+      "perExtraElement": "+ {price} por elemento adicional",
+      "onRequest": "bajo petición"
     },
     "acoustics": {
       "benefitSpeech": {
@@ -3296,7 +3299,7 @@
         },
         "installation": {
           "question": "¿La instalación requiere obra?",
-          "answer": "No. Solo Flex es autoportante y se conecta a un enchufe Schuko estándar. Dos personas pueden montarla en obra en menos de tres horas. La instalación en la UE se ofrece como opción estándar."
+          "answer": "No. Solo Flex es autoportante y se conecta a un enchufe Schuko estándar. Dos personas pueden montarla en obra en menos de tres horas, o bien nuestro propio equipo la instala por {installation} sin IVA."
         },
         "ventilation": {
           "question": "¿Cómo funciona la ventilación?",
@@ -4003,7 +4006,7 @@
       "openArea5": "5% de superficie abierta"
     },
     "solo-eco": {
-      "mounting": "Autoportante; instalación por Re-Sound bajo pedido",
+      "mounting": "Autoportante; instalación por Re-Sound opcional",
       "leadTime": "4 semanas de producción"
     }
   },
@@ -4149,7 +4152,7 @@
       "description": "Cabinas telefónicas de oficina y pods de reuniones: Solo ECO y Solo Flex (1 pers.), Duo (2), Modular XL (6–10). Reducción de voz ISO 23351-1 (Flex y XL), 230 V.",
       "h1": "Cabinas telefónicas de oficina y pods de reuniones, directamente del fabricante",
       "breadcrumb": "Cabinas",
-      "intro": "Una cabina telefónica de oficina ofrece a una persona un espacio silencioso y ventilado para llamadas y videorreuniones dentro de una planta diáfana; un pod de reuniones hace lo mismo para un equipo. Las cabinas de Re-Sound se fabrican en nuestra propia planta de Częstochowa (Polonia) y, bajo petición, nuestro propio equipo las entrega e instala, con una garantía estructural de 5 años (Solo ECO: garantía de piezas de repuesto de 5 años). La gama de cabinas tiene cuatro modelos. Solo ECO es el modelo de entrada: una cabina individual con mesa alta, enchufe según el país con USB-A y USB-C (solo enchufe para Dinamarca), ventilación de hasta 4 m³/min y pared trasera cerrada o de vidrio. Solo Flex es la cabina telefónica de oficina individual: 1 m² de superficie, mesa regulable en altura, alimentación de 230 V y USB-C, ventiladores EC silenciosos y una reducción del nivel de voz de 24 dB(A) medida según ISO 23351-1. Duo es la cabina acústica para dos personas con dos configuraciones: Flex para una conversación a dos y Work para una persona con mesa de ancho completo. Modular XL es el pod de reuniones acústico para seis a diez personas: la unidad base se amplía en segmentos de 90 cm y alcanza una reducción del nivel de voz de 25,9 dB(A). Solo Flex, Duo y Modular XL incluyen la garantía estructural de 5 años y Solo ECO la garantía de piezas de repuesto de 5 años; los cuatro modelos se entregan en toda la UE. Compare las cabinas telefónicas de oficina a continuación y abra la página de cada modelo para ver accesorios y descargas.",
+      "intro": "Una cabina telefónica de oficina ofrece a una persona un espacio silencioso y ventilado para llamadas y videorreuniones dentro de una planta diáfana; un pod de reuniones hace lo mismo para un equipo. Las cabinas de Re-Sound se fabrican en nuestra propia planta de Częstochowa (Polonia) y nuestro propio equipo las entrega e instala a precios fijos en Europa continental, con una garantía estructural de 5 años (Solo ECO: garantía de piezas de repuesto de 5 años). La gama de cabinas tiene cuatro modelos. Solo ECO es el modelo de entrada: una cabina individual con mesa alta, enchufe según el país con USB-A y USB-C (solo enchufe para Dinamarca), ventilación de hasta 4 m³/min y pared trasera cerrada o de vidrio. Solo Flex es la cabina telefónica de oficina individual: 1 m² de superficie, mesa regulable en altura, alimentación de 230 V y USB-C, ventiladores EC silenciosos y una reducción del nivel de voz de 24 dB(A) medida según ISO 23351-1. Duo es la cabina acústica para dos personas con dos configuraciones: Flex para una conversación a dos y Work para una persona con mesa de ancho completo. Modular XL es el pod de reuniones acústico para seis a diez personas: la unidad base se amplía en segmentos de 90 cm y alcanza una reducción del nivel de voz de 25,9 dB(A). Solo Flex, Duo y Modular XL incluyen la garantía estructural de 5 años y Solo ECO la garantía de piezas de repuesto de 5 años; los cuatro modelos se entregan en toda la UE. Compare las cabinas telefónicas de oficina a continuación y abra la página de cada modelo para ver accesorios y descargas.",
       "whyCertsDesc": "Garantía de 5 años en todas las cabinas (estructural en Solo Flex, Duo y Modular XL; de piezas de repuesto en Solo ECO); reducción del nivel de voz indicada según ISO 23351-1 donde se ha medido.",
       "applications": {
         "app1": "Oficinas diáfanas y espacios de coworking",
@@ -4181,7 +4184,7 @@
           "answer": "Solo ECO requiere 4 semanas de producción y lleva una garantía de piezas de repuesto de 5 años. Solo Flex y Duo se envían en 4–6 semanas desde el pedido, y Modular XL en 6–8 semanas para la unidad base; los tejidos personalizados añaden 2–3 semanas. La garantía estructural es de 5 años y la de la electrónica de 2 años, con entrega e instalación disponibles en toda la UE."
         }
       },
-      "whyOwnFactoriesDesc": "Las cuatro cabinas se fabrican en nuestra propia planta de Częstochowa (Polonia) y, bajo petición, nuestro propio equipo las entrega e instala."
+      "whyOwnFactoriesDesc": "Las cuatro cabinas se fabrican en nuestra propia planta de Częstochowa (Polonia) y nuestro propio equipo las entrega e instala a precios fijos en Europa continental."
     }
   },
   "sampleKit": {
@@ -4257,7 +4260,7 @@
     "breadcrumb": "Precios de cabinas telefónicas",
     "priceTag": "Precios 2026",
     "priceTitle": "Precios por modelo (sin IVA)",
-    "priceNote": "Los precios no incluyen IVA, transporte ni instalación (franco fábrica). La instalación por nuestro propio equipo es opcional; Solo Flex también puede ser montada por dos personas en menos de tres horas.",
+    "priceNote": "Los precios no incluyen IVA. El transporte en Europa continental y la instalación por nuestro propio equipo son importes fijos por modelo, indicados en la tabla; fuera de Europa continental, el transporte se presupuesta aparte.",
     "col": {
       "model": "Modelo",
       "capacity": "Capacidad",
@@ -4271,7 +4274,8 @@
       "weight": "Peso",
       "assembly": "Montaje",
       "leadTime": "Plazo de entrega",
-      "warranty": "Garantía"
+      "warranty": "Garantía",
+      "transport": "Transporte (Europa continental)"
     },
     "onRequest": "Bajo pedido",
     "persons": "{count, plural, one {# persona} other {# personas}}",
@@ -4284,7 +4288,7 @@
     "includedText": "Cada cabina se entrega como una unidad completa y ventilada: estructura con puerta y alimentación en la mesa. Solo ECO: una mesa alta fija, un enchufe según el país con USB-A y USB-C (solo enchufe en Dinamarca) y ventilación de hasta 4 m³/min. Solo Flex: iluminación LED regulable, 230 V y USB-C, la mesa manual de altura regulable y ventiladores EC silenciosos que mueven 4,6 m³/min, con un sensor PIR que activa los ventiladores cuando hay alguien dentro.",
     "installationTag": "Instalación",
     "installationTitle": "Instalación por Re-Sound o automontaje",
-    "installationText": "Nuestros instaladores colocan una cabina de llamadas en unos 60 minutos, un pod de reuniones en unas 2 horas y una Modular XL en 2 a 6 horas. Solo Flex también puede ser montada por dos personas en menos de tres horas: la cabina es una construcción desmontable, por lo que más adelante puede desmontarse y volver a montarse en otra planta.",
+    "installationText": "Nuestros instaladores colocan una cabina de llamadas en unos 60 minutos, un pod de reuniones en unas 2 horas y una Modular XL en 2 a 6 horas. La instalación por Re-Sound cuesta {soloEco} para Solo ECO, {soloFlex} para Solo Flex, {duo} para Duo y {modularXl} para Modular XL más {modularXlExtra} por cada elemento adicional, sin IVA; el transporte en Europa continental es un importe fijo por modelo, indicado en la tabla anterior. Solo Flex también puede ser montada por dos personas en menos de tres horas: la cabina es una construcción desmontable, por lo que más adelante puede desmontarse y volver a montarse en otra planta.",
     "testingTag": "Pruébela primero",
     "testingTitle": "Pruebe una cabina en nuestro showroom",
     "testingText": "Puede sentarse dentro de cada modelo en nuestro showroom de Beveren-Waas (lun–vie 08:00–16:30, con cita previa) y comprobar la diferencia por sí mismo antes de hacer el pedido.",
@@ -4310,7 +4314,7 @@
     "faqTitle": "Preguntas frecuentes sobre los precios de las cabinas",
     "ctaTag": "Siguiente paso",
     "ctaTitle": "Solicite un presupuesto o visite el showroom",
-    "ctaText": "Envíenos su plano de planta y el número de cabinas; le responderemos con un presupuesto que incluye entrega e instalación.",
+    "ctaText": "Envíenos su plano de planta y el número de cabinas; le responderemos con un presupuesto a los precios de transporte e instalación indicados más arriba.",
     "ctaQuote": "Solicitar presupuesto",
     "ctaShowroom": "Concertar una visita al showroom",
     "tableCaption": "Precios y especificaciones de las cabinas por modelo",
@@ -4325,7 +4329,7 @@
     "warrantyByModel": {
       "solo-eco": "5 años de garantía de piezas de repuesto"
     },
-    "manufactureLine": "Fabricación en nuestra propia planta de Częstochowa (Polonia); entrega e instalación a cargo de nuestro propio equipo, con presupuesto aparte.",
+    "manufactureLine": "Fabricación en nuestra propia planta de Częstochowa (Polonia); entrega e instalación a cargo de nuestro propio equipo, a precios fijos en Europa continental.",
     "pricelist": {
       "tag": "Lista de precios",
       "title": "Descargue la lista de precios completa (PDF)",
@@ -4343,7 +4347,8 @@
       "successLink": "Abrir la lista de precios (PDF)",
       "errorInvalid": "Compruebe sus datos e inténtelo de nuevo.",
       "error": "Se ha producido un error. Inténtelo de nuevo en unos instantes."
-    }
+    },
+    "perExtraElement": "+ {price} por elemento adicional"
   },
   "order": {
     "cta": "Pedir en línea",
@@ -4387,7 +4392,7 @@
       },
       "extraElement": {
         "label": "Elemento adicional de 90 cm",
-        "note": "Amplía el pod de reuniones en 90 cm. La instalación del elemento adicional está incluida en este precio."
+        "note": "Amplía el pod de reuniones en 90 cm. Con instalación por Re-Sound, cada elemento adicional añade su propia línea de instalación."
       }
     },
     "details": {
@@ -4422,13 +4427,14 @@
       "editConfig": "Cambiar opciones",
       "editDetails": "Cambiar datos",
       "deliveryTitle": "Entrega y facturación",
-      "consent": "Realizo un pedido en firme. Re-Sound lo confirma por correo electrónico con el coste de transporte y las opciones con precio bajo petición. No se cobra nada antes de esa confirmación.",
+      "consent": "Realizo un pedido en firme. Re-Sound lo confirma por correo electrónico, incluido cualquier concepto que aún tenga precio bajo petición. No se cobra nada antes de esa confirmación.",
       "submit": "Realizar pedido",
       "submitting": "Enviando…",
       "missingTitle": "Complete estos campos:",
       "socketMatched": "Enchufe adaptado a su país de entrega: {socket}. Si necesita otro tipo, cámbielo en «Cambiar opciones».",
       "socketDefault": "Su país de entrega no tiene un enchufe específico en nuestra lista, así que se ha seleccionado el estándar: {socket}. Cámbielo en «Cambiar opciones» si necesita otro tipo.",
-      "segmentsQty": "{quantity} × {segments} segmentos de 90 cm"
+      "segmentsQty": "{quantity} × {segments} segmentos de 90 cm",
+      "extensionQty": "{quantity} × {elements, plural, one {# elemento adicional} other {# elementos adicionales}}"
     },
     "summary": {
       "net": "Subtotal sin IVA",
@@ -4436,7 +4442,8 @@
       "onRequest": "Bajo petición",
       "onRequestNote": "Las opciones marcadas como «bajo petición» las valora nuestro equipo. Recibirá el importe final antes de que se confirme el pedido.",
       "transportNote": "El transporte nunca está incluido en estos precios. Presupuestamos la entrega en su dirección al confirmar el pedido.",
-      "included": "Incluido"
+      "included": "Incluido",
+      "transportMainlandNote": "El transporte en Europa continental está incluido a la tarifa fija por unidad indicada más arriba. Para el Reino Unido, Irlanda, Malta, Chipre e Islandia presupuestamos el transporte al confirmar el pedido."
     },
     "vat": {
       "domestic": "IVA {rate} %",
@@ -4454,7 +4461,7 @@
       "eyebrow": "Pedido recibido",
       "title": "Gracias por su pedido",
       "referenceLabel": "Su referencia",
-      "body": "Le hemos enviado una copia por correo electrónico. Nuestro equipo confirmará el importe final, transporte incluido, en un día laborable.",
+      "body": "Le hemos enviado una copia por correo electrónico. Nuestro equipo confirmará el importe final en un día laborable.",
       "emailFallback": "No hemos podido enviar el correo de confirmación. Póngase en contacto con info@re-sound.be indicando la referencia {reference}.",
       "close": "Cerrar",
       "correctedTotal": "El total definitivo es {total}. Difiere del importe mostrado durante el pedido porque no se ha podido confirmar su número de IVA; le abonaremos el IVA en cuanto se confirme.",
@@ -4481,7 +4488,7 @@
       "customerHeading": "Pedido recibido",
       "customerSubject": "Su pedido de Re-Sound {reference}",
       "greeting": "Hola {name}:",
-      "intro": "Gracias por su pedido. Lo hemos registrado y se lo confirmaremos por correo electrónico, incluido el coste de transporte.",
+      "intro": "Gracias por su pedido. Lo hemos registrado y se lo confirmaremos por correo electrónico.",
       "referenceLabel": "Su referencia",
       "deliveryHeading": "Dirección de entrega",
       "nextSteps": "¿Tiene preguntas sobre este pedido? Responda a este correo o llame al +32 3 284 68 18. Re-Sound es una marca de Stretch Group; su pedido se envía desde nuestra fábrica en Częstochowa (Polonia).",
@@ -4586,7 +4593,7 @@
       "questions": {
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega de Solo ECO?",
-          "answer": "La producción tarda cuatro semanas desde la confirmación del pedido. El transporte se presupuesta aparte; la cabina sale de nuestra planta de Częstochowa en un palé de 230 × 120 × 70 cm."
+          "answer": "La producción tarda cuatro semanas desde la confirmación del pedido. El transporte en Europa continental cuesta {transport} sin IVA; la cabina sale de nuestra planta de Częstochowa en un palé de 230 × 120 × 70 cm."
         },
         "difference": {
           "question": "¿Qué diferencia hay entre Solo ECO y Solo Flex?",
@@ -4611,7 +4618,8 @@
       }
     },
     "cta": {
-      "deliveryNote": "Franco fábrica, 4 semanas de producción · Entrega e instalación presupuestadas bajo petición · Garantía de piezas de repuesto de 5 años"
+      "deliveryNote": "Franco fábrica Częstochowa, 4 semanas de producción · Transporte en Europa continental {transport} · Instalación {installation} · Garantía de piezas de repuesto de 5 años",
+      "deliveryNoteNoTransport": "Franco fábrica Częstochowa, 4 semanas de producción · Entrega e instalación bajo petición · Garantía de piezas de repuesto de 5 años"
     }
   },
   "manufacturing": {
@@ -4633,7 +4641,7 @@
       "PL": {
         "role": "Paneles rWood y rPET, todas las cabinas telefónicas",
         "makes": "Paneles acústicos de madera con chapa certificada FSC, paneles acústicos de PET en fieltro de PET reciclado, y las cabinas telefónicas y los pods de reuniones.",
-        "note": "La oficina de producción recibe visitas de proyecto y visitas a la fábrica con cita previa. Bajo petición, nuestro propio equipo entrega e instala las cabinas."
+        "note": "La oficina de producción recibe visitas de proyecto y visitas a la fábrica con cita previa. Nuestro propio equipo entrega e instala las cabinas a precios fijos en Europa continental."
       }
     },
     "plantLabels": {
@@ -4685,7 +4693,7 @@
       },
       "installation": {
         "title": "Entrega e instalación por nuestro propio equipo",
-        "text": "Bajo petición, nuestro propio equipo entrega e instala las cabinas; la entrega y la instalación se presupuestan aparte."
+        "text": "Nuestro propio equipo entrega las cabinas a un precio de transporte fijo en Europa continental y nuestros propios instaladores las instalan a un precio fijo por modelo; ambos importes se indican junto a los precios de las cabinas."
       },
       "warranty": {
         "title": "Garantía en todas las cabinas"

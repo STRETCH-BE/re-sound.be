@@ -27,7 +27,7 @@
     "id": "FAQ-003",
     "category": "Booths",
     "question": "Was kostet eine Telefonbox fürs Büro?",
-    "answer": "Die Telefonbox Solo Flex ist ab {{price:solo-flex}} zzgl. MwSt. erhältlich. Der Meeting-Pod Duo ist ab {{price:duo}} zzgl. MwSt. erhältlich, die Modular XL ab {{price:modular-xl}} zzgl. MwSt. für das Basismodul, zuzüglich {{price:article:RS-MX-AS1}} je zusätzlichem 90-cm-Element. Die Preise verstehen sich ab Werk: Lieferung und Montage werden separat angeboten. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen.",
+    "answer": "Die Telefonbox Solo ECO ist ab {{price:solo-eco}} zzgl. MwSt. erhältlich, die Solo Flex ab {{price:solo-flex}} zzgl. MwSt. Der Meeting-Pod Duo ist ab {{price:duo}} zzgl. MwSt. erhältlich, die Modular XL ab {{price:modular-xl}} zzgl. MwSt. für das Basismodul, zuzüglich {{price:article:RS-MX-AS1}} je zusätzlichem 90-cm-Element. Die Preise verstehen sich ab Werk. Transport innerhalb des europäischen Festlands und Montage durch unser eigenes Team sind feste Beträge pro Modell: Solo ECO {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} Transport und {{price:article:WEB-SOLO-ECO-INST}} Montage, Solo Flex {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} und {{price:article:WEB-SOLO-FLEX-INST}}, Duo {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} und {{price:article:WEB-DUO-WORK-INST}}, Modular XL {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} und {{price:article:WEB-MODULAR-XL-INST}} für das Basismodul zuzüglich {{price:article:WEB-MODULAR-XL-INST-EXT}} je zusätzlichem Element, alle zzgl. MwSt.; außerhalb des europäischen Festlands erhalten Sie ein individuelles Transportangebot. Die bislang größte gebaute Modular XL bietet Platz für 20 Personen.",
     "showOn": [
       "booths",
       "guide",
@@ -84,7 +84,7 @@
     "id": "FAQ-008",
     "category": "Booths",
     "question": "Wie lange dauert die Montage, und wer führt sie durch?",
-    "answer": "Die eigenen Monteure von Re-Sound stellen Ihre Kabine auf: bei einer Telefonbox dauert das rund 60 Minuten, ein Meeting-Pod etwa zwei Stunden und eine Modular XL zwischen zwei und sechs Stunden. Alternativ kann die Solo Flex in Eigenmontage aufgebaut werden: Zwei Personen benötigen dafür weniger als drei Stunden.",
+    "answer": "Die eigenen Monteure von Re-Sound stellen Ihre Kabine auf: Bei einer Telefonbox dauert das rund 60 Minuten, bei einem Meeting-Pod etwa zwei Stunden und bei einer Modular XL zwischen zwei und sechs Stunden. Die Montage durch Re-Sound kostet {{price:article:WEB-SOLO-ECO-INST}} für Solo ECO, {{price:article:WEB-SOLO-FLEX-INST}} für Solo Flex, {{price:article:WEB-DUO-WORK-INST}} für Duo und {{price:article:WEB-MODULAR-XL-INST}} für das Basismodul der Modular XL zuzüglich {{price:article:WEB-MODULAR-XL-INST-EXT}} je zusätzlichem Element, zzgl. MwSt. Alternativ kann die Solo Flex in Eigenmontage aufgebaut werden: Zwei Personen benötigen dafür weniger als drei Stunden.",
     "showOn": [
       "booths",
       "faq",

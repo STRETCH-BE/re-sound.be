@@ -155,6 +155,40 @@ const PRICE_TYPE = { 'Base price': 'base', 'Included': 'included', 'Option': 'op
 const SEGMENTS = { 'RS-MX-BF': 2, 'RS-MX-BG': 2, 'RS-MX-AS1': 1, 'RS-MX-AS2': 2, 'RS-MX-AS3': 3 };
 const PER_SEGMENT = new Set(['RS-MX-FP']);
 
+/**
+ * Services priced by Michael on 12 Sep 2026 (not on the workbook): transport
+ * within mainland Europe and installation by Re-Sound, per unit, excl. VAT,
+ * for the booths sold online. Products absent here keep installation on
+ * request and get no transport line. The same rows are in
+ * supabase/migrations/0003_transport_and_installation_prices.sql; the seed
+ * emits them as the block "Services priced by Michael, 12 Sep 2026".
+ *
+ * `auto` categories are never offered as a choice: the site adds their line
+ * by rule (src/lib/catalogue/select.ts, canonicalSelection). The extension
+ * rule: the Modular XL extra-element installation line is per_extension —
+ * quantity × extension segments (RS-MX-AS1 = 1, AS2 = 2, AS3 = 3), and it is
+ * added only when installation is chosen and an extension is selected.
+ */
+const SERVICES = {
+  date: '12 Sep 2026',
+  installation: { 'solo-eco': 87500, 'solo-flex': 124500, 'duo-work': 124500, 'duo-flex': 124500, 'modular-xl': 164500 },
+  transport: { 'solo-eco': 30000, 'solo-flex': 50000, 'duo-work': 50000, 'duo-flex': 50000, 'modular-xl': 75000 },
+  extension: {
+    productId: 'modular-xl', code: 'WEB-MODULAR-XL-INST-EXT', priceCents: 124500,
+    mainModuleDescription: 'Installation by Re-Sound (main module)',
+    description: 'Installation of an extra element',
+    notes: 'Michael, 12 Sep 2026: € 1 245 per extra module; added automatically when installation is chosen',
+  },
+  categories: [
+    { key: 'installation_extension', name: 'Installation of extra elements', mode: 'auto', required: false, sort: 13 },
+    { key: 'transport', name: 'Transport', mode: 'auto', required: false, sort: 14 },
+  ],
+  transportDescription: { EU: 'Transport within mainland Europe', XX: 'Transport outside mainland Europe' },
+  transportNotesXX: 'Outside mainland Europe transport is quoted with the order confirmation',
+};
+/** 124500 → "€ 1 245", as the notes write it. */
+const euros = (cents) => `€ ${String(Math.round(cents / 100)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}`;
+
 // ---------------------------------------------------------------------------
 // Overview → reference pages
 // ---------------------------------------------------------------------------
@@ -267,8 +301,9 @@ for (const p of products) {
 
 // ---------------------------------------------------------------------------
 // The two textile products the site sells (not on the booth list) and the
-// installation service on every product — website-defined rows, priced on
-// request until Re-Sound confirms a figure.
+// installation service on every product — website-defined rows. Installation
+// is priced from SERVICES for the booths sold online and on request for the
+// rest until Re-Sound confirms a figure.
 // ---------------------------------------------------------------------------
 products.push(
   {
@@ -305,12 +340,47 @@ articles.push(
   },
 );
 for (const p of products) {
+  const priceCents = SERVICES.installation[p.id] ?? null;
+  const main = p.id === SERVICES.extension.productId;
   articles.push({
     code: `WEB-${p.id.toUpperCase()}-INST`, productId: p.id, categoryKey: 'installation', sheetCategory: null, group: 'Services',
-    description: 'Installation by Re-Sound', priceCents: null, priceType: 'option', perSegment: false, segments: null,
-    notes: 'Price list 2026: delivery and installation are optional and quoted separately. No confirmed figure yet.',
+    description: main ? SERVICES.extension.mainModuleDescription : 'Installation by Re-Sound', priceCents, priceType: 'option',
+    perSegment: false, segments: null,
+    notes: priceCents === null
+      ? 'Price list 2026: delivery and installation are optional and quoted separately. No confirmed figure yet.'
+      : `Michael, ${SERVICES.date}: ${euros(priceCents)} excl. VAT`,
     sort: 900, source: 'website',
   });
+}
+
+// ---------------------------------------------------------------------------
+// Services priced by Michael (SERVICES): the extra-element installation line
+// and the transport lines. Emitted as their own block so the seed reads like
+// the migration that introduced them.
+// ---------------------------------------------------------------------------
+const serviceArticles = [];
+{
+  const e = SERVICES.extension;
+  serviceArticles.push({
+    code: e.code, productId: e.productId, categoryKey: 'installation_extension', sheetCategory: null, group: 'Services',
+    description: e.description, priceCents: e.priceCents, priceType: 'option', perSegment: false, perExtension: true, segments: null,
+    isDefault: false, notes: e.notes, sort: 901, source: 'website',
+  });
+  for (const [productId, cents] of Object.entries(SERVICES.transport)) {
+    const prefix = `WEB-${productId.toUpperCase()}-TRANSPORT`;
+    serviceArticles.push(
+      {
+        code: `${prefix}-EU`, productId, categoryKey: 'transport', sheetCategory: null, group: 'Services',
+        description: SERVICES.transportDescription.EU, priceCents: cents, priceType: 'option', perSegment: false, perExtension: false,
+        segments: null, isDefault: true, notes: `Michael, ${SERVICES.date}: ${euros(cents)} within mainland Europe, per unit`, sort: 950, source: 'website',
+      },
+      {
+        code: `${prefix}-XX`, productId, categoryKey: 'transport', sheetCategory: null, group: 'Services',
+        description: SERVICES.transportDescription.XX, priceCents: null, priceType: 'option', perSegment: false, perExtension: false,
+        segments: null, isDefault: false, notes: SERVICES.transportNotesXX, sort: 951, source: 'website',
+      },
+    );
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -432,7 +502,7 @@ for (const s of supplier) {
   else if (a.priceCents !== s.salesCents) problems.push(`${s.code}: model sheet ${a.priceCents} ≠ supplier sheet ${s.salesCents}`);
 }
 const codes = new Set();
-for (const a of articles) {
+for (const a of [...articles, ...serviceArticles]) {
   if (codes.has(a.code)) problems.push(`duplicate article ${a.code}`);
   codes.add(a.code);
 }
@@ -472,12 +542,26 @@ on conflict (id) do update set price_list_id = excluded.price_list_id, model_cod
   description = excluded.description, kind = excluded.kind, unit = excluded.unit, website_slug = excluded.website_slug,
   max_qty = excluded.max_qty, ref_page = excluded.ref_page, tech = excluded.tech, sort = excluded.sort, active = true, updated_at = now();`);
 lines.push('');
-lines.push(`insert into public.articles (code, product_id, category_key, sheet_category, "group", description, labels, price_cents, price_type, per_segment, segments, is_default, source, notes, sort, active) values
-${articles.map((a) => `  (${q(a.code)}, ${q(a.productId)}, ${q(a.categoryKey)}, ${q(a.sheetCategory)}, ${q(a.group)}, ${q(a.description)}, ${j(a.labels ?? labelsFor(a.description))}, ${n(a.priceCents)}, ${q(a.priceType)}, ${b(a.perSegment)}, ${n(a.segments)}, ${b(a.isDefault)}, ${q(a.source)}, ${q(a.notes)}, ${a.sort}, ${b(a.active ?? true)})`).join(',\n')}
+const articleRow = (a) => `  (${q(a.code)}, ${q(a.productId)}, ${q(a.categoryKey)}, ${q(a.sheetCategory)}, ${q(a.group)}, ${q(a.description)}, ${j(a.labels ?? labelsFor(a.description))}, ${n(a.priceCents)}, ${q(a.priceType)}, ${b(a.perSegment)}, ${b(a.perExtension ?? false)}, ${n(a.segments)}, ${b(a.isDefault)}, ${q(a.source)}, ${q(a.notes)}, ${a.sort}, ${b(a.active ?? true)})`;
+const articlesInsert = (list) => `insert into public.articles (code, product_id, category_key, sheet_category, "group", description, labels, price_cents, price_type, per_segment, per_extension, segments, is_default, source, notes, sort, active) values
+${list.map(articleRow).join(',\n')}
 on conflict (code) do update set product_id = excluded.product_id, category_key = excluded.category_key, sheet_category = excluded.sheet_category,
   "group" = excluded."group", description = excluded.description, labels = excluded.labels, price_cents = excluded.price_cents, price_type = excluded.price_type,
-  per_segment = excluded.per_segment, segments = excluded.segments, is_default = excluded.is_default, source = excluded.source,
-  notes = excluded.notes, sort = excluded.sort, active = excluded.active, updated_at = now();`);
+  per_segment = excluded.per_segment, per_extension = excluded.per_extension, segments = excluded.segments, is_default = excluded.is_default, source = excluded.source,
+  notes = excluded.notes, sort = excluded.sort, active = excluded.active, updated_at = now();`;
+lines.push(articlesInsert(articles));
+lines.push('');
+lines.push(`-- ---------------------------------------------------------------------------
+-- Services priced by Michael, ${SERVICES.date} (scripts/db/price-list-to-sql.mjs, SERVICES):
+-- the two auto categories and the transport / extra-element lines. The
+-- WEB-…-INST prices above come from the same constant. Same rows as
+-- supabase/migrations/0003_transport_and_installation_prices.sql.
+-- ---------------------------------------------------------------------------
+insert into public.categories (key, name, labels, select_mode, required, sort) values
+${SERVICES.categories.map((c) => `  (${q(c.key)}, ${q(c.name)}, ${j(LABELS.categories?.[c.key] ?? {})}, ${q(c.mode)}, ${b(c.required)}, ${c.sort})`).join(',\n')}
+on conflict (key) do update set name = excluded.name, labels = excluded.labels, select_mode = excluded.select_mode, required = excluded.required, sort = excluded.sort;`);
+lines.push('');
+lines.push(articlesInsert(serviceArticles));
 lines.push('');
 lines.push('commit;');
 
@@ -512,13 +596,18 @@ const snapshot = {
     kind: p.kind, unit: p.unit, websiteSlug: p.websiteSlug, maxQty: p.maxQty, refPage: p.refPage,
     tech: p.tech, sort: p.sort, active: true,
   })),
-  categories: CATEGORIES.map((c, i) => ({
-    key: c.key, name: c.name, labels: LABELS.categories?.[c.key] ?? {}, selectMode: c.mode, required: c.required, sort: i + 1,
-  })),
-  articles: articles.map((a) => ({
+  categories: [
+    ...CATEGORIES.map((c, i) => ({
+      key: c.key, name: c.name, labels: LABELS.categories?.[c.key] ?? {}, selectMode: c.mode, required: c.required, sort: i + 1,
+    })),
+    ...SERVICES.categories.map((c) => ({
+      key: c.key, name: c.name, labels: LABELS.categories?.[c.key] ?? {}, selectMode: c.mode, required: c.required, sort: c.sort,
+    })),
+  ],
+  articles: [...articles, ...serviceArticles].map((a) => ({
     code: a.code, productId: a.productId, categoryKey: a.categoryKey, sheetCategory: a.sheetCategory, group: a.group,
     description: a.description, labels: a.labels ?? labelsFor(a.description), priceCents: a.priceCents, priceType: a.priceType,
-    perSegment: a.perSegment, segments: a.segments, isDefault: Boolean(a.isDefault), source: a.source,
+    perSegment: a.perSegment, perExtension: a.perExtension ?? false, segments: a.segments, isDefault: Boolean(a.isDefault), source: a.source,
     notes: null, sort: a.sort, active: a.active ?? true,
   })),
   loadedAt: generatedAt,

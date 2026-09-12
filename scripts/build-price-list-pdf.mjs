@@ -16,9 +16,16 @@
  *     per model = lowest active 'base' article of the catalogue products sold
  *     from that product page (lowestBase in src/lib/catalogue/tokens.ts);
  *     glass backwall = lowest 'base' article whose code ends in -BG; Modular XL
- *     extension elements = the additional_segments articles; the options
- *     section lists every active article with priceType 'option', grouped by
- *     catalogue category. Labels: article.labels[locale] / category.labels
+ *     extension elements = the additional_segments articles; transport within
+ *     mainland Europe = the transport article whose code ends in -EU (the
+ *     -XX line, "outside mainland Europe", is on request and covered by the
+ *     price note, so it is not printed); installation = the installation
+ *     article, with the per-extra-element amount of the installation_extension
+ *     article (per_extension) as a suffix. The options section lists every
+ *     other active article with priceType 'option', grouped by catalogue
+ *     category — minus the -XX transport lines and the extension line the
+ *     model table already shows, so no figure prints twice. Labels:
+ *     article.labels[locale] / category.labels
  *     [locale], else the English description/name (lineLabel, categoryLabel in
  *     src/lib/catalogue/pricing.ts).
  *   - src/data/products.ts — booth specs (capacity, footprint, external
@@ -70,7 +77,7 @@ const LABELS = {
   en: {
     title: 'Re-Sound booth price list {year}',
     intro: 'The prices below are the ones published on re-sound.be. Configure a booth on its product page for an exact quotation.',
-    priceNote: 'Prices exclude VAT, transport and installation (ex works).',
+    priceNote: 'Prices exclude VAT. Transport within mainland Europe and installation by our own team are fixed amounts per model, listed in the table; outside mainland Europe transport is quoted.',
     currencyNote: 'All prices in {currency}.',
     priceListRef: 'Price list',
     validFrom: 'Valid from',
@@ -80,6 +87,9 @@ const LABELS = {
     model: 'Model',
     fromPrice: 'From price excl. VAT',
     extension: 'Extra 90 cm element',
+    transport: 'Transport (mainland Europe)',
+    installation: 'Installation by Re-Sound',
+    perExtraElement: '+ {price} per extra element',
     capacity: 'Capacity',
     footprint: 'Footprint',
     dimensions: 'External dimensions (W×D×H)',
@@ -105,7 +115,7 @@ const LABELS = {
   nl: {
     title: 'Re-Sound prijslijst belcabines {year}',
     intro: 'De prijzen hieronder zijn de prijzen die op re-sound.be staan. Stel je cabine samen op de productpagina voor een exacte offerte.',
-    priceNote: 'Prijzen zijn excl. btw, transport en installatie (af fabriek).',
+    priceNote: 'Prijzen zijn excl. btw. Transport binnen het Europese vasteland en installatie door ons eigen team zijn vaste bedragen per model, zie de tabel; buiten het Europese vasteland wordt het transport apart geoffreerd.',
     currencyNote: 'Alle prijzen in {currency}.',
     priceListRef: 'Prijslijst',
     validFrom: 'Geldig vanaf',
@@ -115,6 +125,9 @@ const LABELS = {
     model: 'Model',
     fromPrice: 'Vanafprijs excl. btw',
     extension: 'Extra element van 90 cm',
+    transport: 'Transport (Europees vasteland)',
+    installation: 'Installatie door Re-Sound',
+    perExtraElement: '+ {price} per extra element',
     capacity: 'Capaciteit',
     footprint: 'Voetafdruk',
     dimensions: 'Buitenafmetingen (B×D×H)',
@@ -140,7 +153,7 @@ const LABELS = {
   fr: {
     title: 'Re-Sound liste de prix cabines acoustiques {year}',
     intro: 'Les prix ci-dessous sont ceux publiés sur re-sound.be. Configurez votre cabine sur sa page produit pour obtenir un devis exact.',
-    priceNote: "Les prix s'entendent hors TVA, hors transport et hors installation (départ usine).",
+    priceNote: "Les prix s'entendent hors TVA. Le transport en Europe continentale et l'installation par notre propre équipe sont des montants fixes par modèle, indiqués dans le tableau ; hors Europe continentale, le transport est établi sur devis.",
     currencyNote: 'Tous les prix sont en {currency}.',
     priceListRef: 'Liste de prix',
     validFrom: 'Valable à partir du',
@@ -150,6 +163,9 @@ const LABELS = {
     model: 'Modèle',
     fromPrice: 'Prix à partir de, hors TVA',
     extension: 'Élément supplémentaire de 90 cm',
+    transport: 'Transport (Europe continentale)',
+    installation: 'Installation par Re-Sound',
+    perExtraElement: '+ {price} par élément supplémentaire',
     capacity: 'Capacité',
     footprint: 'Emprise au sol',
     dimensions: 'Dimensions extérieures (L×P×H)',
@@ -175,7 +191,7 @@ const LABELS = {
   de: {
     title: 'Re-Sound Preisliste Telefonboxen {year}',
     intro: 'Die folgenden Preise sind die auf re-sound.be veröffentlichten Preise. Konfigurieren Sie Ihre Box auf der Produktseite, um ein genaues Angebot zu erhalten.',
-    priceNote: 'Preise verstehen sich zzgl. MwSt., Transport und Montage (ab Werk).',
+    priceNote: 'Preise verstehen sich zzgl. MwSt. Transport innerhalb Kontinentaleuropas und Montage durch unser eigenes Team sind feste Beträge je Modell, siehe Tabelle; außerhalb Kontinentaleuropas wird der Transport angeboten.',
     currencyNote: 'Alle Preise in {currency}.',
     priceListRef: 'Preisliste',
     validFrom: 'Gültig ab',
@@ -185,6 +201,9 @@ const LABELS = {
     model: 'Modell',
     fromPrice: 'Ab-Preis zzgl. MwSt.',
     extension: 'Zusätzliches 90-cm-Element',
+    transport: 'Transport (Kontinentaleuropa)',
+    installation: 'Montage durch Re-Sound',
+    perExtraElement: '+ {price} je zusätzliches Element',
     capacity: 'Kapazität',
     footprint: 'Stellfläche',
     dimensions: 'Außenmaße (B×T×H)',
@@ -304,6 +323,8 @@ function collect(catalogue, productsModule) {
     const bases = arts.filter((a) => a.priceType === 'base');
     const fromCents = lowest(bases);
     const glassArticles = bases.filter((a) => articleSuffix(a.code) === 'BG');
+    const transportArticles = arts.filter((a) => a.categoryKey === 'transport' && articleSuffix(a.code) === 'EU');
+    const installationArticles = arts.filter((a) => a.categoryKey === 'installation');
     return {
       slug: m.slug,
       name: m.name,
@@ -321,10 +342,19 @@ function collect(catalogue, productsModule) {
       glassCents: lowest(glassArticles),
       glassArticles,
       extensions: arts.filter((a) => a.categoryKey === 'additional_segments'),
+      // Transport within mainland Europe: the -EU transport article (the -XX one is on request); lowest across the page's models.
+      transportArticles,
+      transportCents: transportArticles.length > 0 ? lowest(transportArticles) : null,
+      // Installation by Re-Sound (lowest across the page's models) and, for Modular XL, the per-extra-element line.
+      installationArticles,
+      installationCents: installationArticles.length > 0 ? lowest(installationArticles) : null,
+      installationExtension: arts.find((a) => a.categoryKey === 'installation_extension' && a.perExtension) ?? null,
     };
   });
 
   const glassLabelArticle = rows.map((r) => r.glassArticles[0]).find((a) => a !== undefined) ?? null;
+  // Lines the model table already prints, so the options section leaves them out.
+  const shownInModelTable = new Set(rows.flatMap((r) => (r.installationExtension ? [r.installationExtension.code] : [])));
 
   // Options section: every catalogue product sold from a guide page, in catalogue order.
   const optionProducts = catalogue.products
@@ -332,7 +362,14 @@ function collect(catalogue, productsModule) {
     .map((p) => {
       const arts = articlesOfProduct(p.id);
       const bases = arts.filter((a) => a.priceType === 'base');
-      const options = arts.filter((a) => a.priceType === 'option');
+      // Options: every option article except the on-request "outside mainland Europe" transport line (the price
+      // note covers it) and the extension-installation line the model table already shows.
+      const options = arts.filter(
+        (a) =>
+          a.priceType === 'option' &&
+          !(a.categoryKey === 'transport' && articleSuffix(a.code) === 'XX') &&
+          !shownInModelTable.has(a.code),
+      );
       const groups = catalogue.categories
         .map((c) => ({ category: c, articles: options.filter((a) => a.categoryKey === c.key) }))
         .filter((g) => g.articles.length > 0);
@@ -545,6 +582,12 @@ function buildPdf(locale, localeTag, data, generatedAt) {
     return rest.length > 0 && head.trim() ? head.trim() : full;
   };
   const extensionCell = (r) => (r.extensions.length === 0 ? DASH : r.extensions.map((a) => `${shortLabel(a)}: ${money(a.priceCents)}`).join('\n'));
+  const transportCell = (r) => (r.transportArticles.length === 0 ? DASH : money(r.transportCents));
+  const installationCell = (r) => {
+    if (r.installationArticles.length === 0) return DASH;
+    const base = money(r.installationCents);
+    return r.installationExtension ? `${base} ${fmt(L.perExtraElement, { price: money(r.installationExtension.priceCents) })}` : base;
+  };
   const row = (label, cell, opts = {}) => ({
     cells: [{ text: label, bold: true }, ...rows.map((r) => ({ text: cell(r), ...opts }))],
   });
@@ -554,7 +597,9 @@ function buildPdf(locale, localeTag, data, generatedAt) {
     row(L.dimensions, (r) => spec(r, 'externalDimensions')),
     row(L.fromPrice, (r) => money(r.fromCents), { bold: true, color: COLORS.brand }),
     ...(glassLabelArticle ? [row(lineLabel(glassLabelArticle, locale), (r) => money(r.glassCents))] : []),
+    row(L.transport, transportCell),
     row(L.extension, extensionCell),
+    row(L.installation, installationCell),
     row(L.iso, iso),
     row(L.ventilation, (r) => spec(r, 'ventilation')),
     row(L.power, (r) => spec(r, 'power')),
@@ -678,7 +723,11 @@ async function main() {
     const from = r.fromArticles.map((a) => a.code).join('/') || DASH;
     const glass = r.glassArticles.map((a) => `${a.code}=${a.priceCents}`).join('/') || DASH;
     const ext = r.extensions.map((a) => `${a.code}=${a.priceCents}`).join(', ') || DASH;
+    const transport = r.transportArticles.map((a) => `${a.code}=${a.priceCents}`).join('/') || DASH;
+    const inst = r.installationArticles.map((a) => `${a.code}=${a.priceCents}`).join('/') || DASH;
+    const instExt = r.installationExtension ? ` + ${r.installationExtension.code}=${r.installationExtension.priceCents} per extra element` : '';
     console.log(`  ${r.name.padEnd(11)} from ${String(r.fromCents).padStart(8)} cents (${from}) · glass ${glass} · extensions ${ext}`);
+    console.log(`  ${''.padEnd(11)} transport ${transport} · installation ${inst}${instExt}`);
   }
   for (const op of data.optionProducts) {
     const n = op.groups.reduce((s, g) => s + g.articles.length, 0);
