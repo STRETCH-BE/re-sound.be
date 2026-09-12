@@ -1,8 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { unstable_cache } from 'next/cache';
 
-import { fetchGoogleReviews, type GoogleReviewsData } from '@/lib/google-reviews';
+import type { GoogleReviewsData } from '@/lib/google-reviews';
 
 /**
  * Testimonials: the workbook's Google reviews (content/testimonials.json)
@@ -43,25 +42,21 @@ function readTestimonials(live: GoogleReviewsData | null): TestimonialsData {
 }
 
 /**
- * Live data when GOOGLE_PLACES_API_KEY is set (cached a week under the
- * "google-reviews" tag so the weekly cron can refresh it), otherwise the
- * file written by scripts/fetch-google-reviews.mjs at build time, otherwise
- * the workbook reviews.
+ * Build-time data only. content/google-reviews.json is refreshed by
+ * scripts/fetch-google-reviews.mjs in `prebuild` (and committed as the
+ * fallback); the weekly cron (src/app/api/cron/google-reviews/route.ts)
+ * triggers a redeploy so that script runs again. Nothing in the render path
+ * calls the Places API: a Places round-trip at request time was the likeliest
+ * cause of the mobile score variance (see docs/lead-sprint-report.md).
  */
-const loadLive = unstable_cache(
-  async (): Promise<GoogleReviewsData | null> => {
-    const key = process.env.GOOGLE_PLACES_API_KEY;
-    if (key) {
-      const live = await fetchGoogleReviews(key);
-      if (live) return live;
-    }
-    const livePath = join(CONTENT, 'google-reviews.json');
-    return existsSync(livePath) ? (JSON.parse(readFileSync(livePath, 'utf8')) as GoogleReviewsData) : null;
-  },
-  ['google-reviews'],
-  { tags: ['google-reviews'], revalidate: 60 * 60 * 24 * 7 }
-);
+let liveCache: GoogleReviewsData | null | undefined;
+function loadLive(): GoogleReviewsData | null {
+  if (liveCache !== undefined) return liveCache;
+  const livePath = join(CONTENT, 'google-reviews.json');
+  liveCache = existsSync(livePath) ? (JSON.parse(readFileSync(livePath, 'utf8')) as GoogleReviewsData) : null;
+  return liveCache;
+}
 
 export async function getTestimonials(): Promise<TestimonialsData> {
-  return readTestimonials(await loadLive());
+  return readTestimonials(loadLive());
 }
