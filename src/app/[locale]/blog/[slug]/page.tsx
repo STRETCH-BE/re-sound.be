@@ -1,6 +1,6 @@
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
@@ -34,14 +34,16 @@ const BLOG_SLUGS = [
 /**
  * Static params per locale: the four legacy posts everywhere, plus the
  * editorial posts of that locale (content/blog/<locale>/*.md, drafts
- * included so they can be previewed). Any other slug is a hard 404.
+ * included so they can be previewed). Any other slug is rendered on demand
+ * and answers a permanent redirect to the locale's blog index (zero-404
+ * rule for legacy /post/<slug> links, see redirects.mjs).
  */
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   const editorial = getContentPosts(params.locale, { includeDrafts: true }).map((p) => ({ slug: p.slug }));
   return [...BLOG_SLUGS.map((slug) => ({ slug })), ...editorial];
 }
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export async function generateMetadata({
   params: { locale, slug },
@@ -84,6 +86,9 @@ export async function generateMetadata({
     // here previously produced "… | Re-Sound Blog | Re-Sound".
     title,
     description: excerpt,
+    // January-2024 placeholder content: kept reachable, kept out of the index
+    // and the sitemap until rewritten to current facts.
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description: excerpt,
@@ -125,7 +130,7 @@ export default async function BlogPostPage({ params: { locale, slug } }: BlogPos
   }
 
   if (!BLOG_SLUGS.includes(slug)) {
-    notFound();
+    permanentRedirect(`/${locale}/blog`);
   }
 
   const t = await getTranslations({ locale, namespace: 'blogPosts' });

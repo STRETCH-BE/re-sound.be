@@ -12,16 +12,16 @@ category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-12-15"
 datePublished: "2026-09-06"
-dateModified: "2026-09-06"
+dateModified: "2026-09-12"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/akoestische-panelen-restaurant.jpg"
 heroAlt: "Restaurant met rWood Micro wandpanelen in eik achter de banken en een akoestisch plafond"
 internalLinks: ["/nl/applications/horeca","/nl/products/houten-akoestische-panelen","/nl/products/rwood-micro","/nl/products/rwood-groove","/nl/products/rpet-groove","/nl/products/divide","/nl/products/interior","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag een demonstratie op locatie of het stalenpakket"
 sources: "ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); W.C. Sabine (nagalmformule); productgegevens en testrapporten Re-Sound."
-faq: [{"question":"Welke akoestische panelen zijn geschikt voor een restaurant?","answer":"Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), allemaal met brandklasse B-s1,d0 of B-s2,d0 en een certificaat voor je brandveiligheidsdossier."},{"question":"Hoeveel panelen heeft een restaurant van 100 m² nodig?","answer":"Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit."},{"question":"Kan de plaatsing tussen twee diensten?","answer":"Een akoestisch spanplafond wordt in één dag geplaatst zonder stof; wandpanelen plaatst een team in een halve dag; Divide-modules vragen geen montage."}]
+faq: [{"question":"Welke akoestische panelen zijn geschikt voor een restaurant?","answer":"Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), allemaal met brandklasse B-s1,d0 (rPET Panel: B-s2,d0) en een certificaat voor je brandveiligheidsdossier."},{"question":"Hoeveel panelen heeft een restaurant van 100 m² nodig?","answer":"Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit."},{"question":"Kan de plaatsing tussen twee diensten?","answer":"Een akoestisch spanplafond wordt in één dag geplaatst zonder stof; wandpanelen plaatst een team in een halve dag; Divide-modules vragen geen montage."}]
 draft: false
-wordCount: 1219
+wordCount: 1238
 ---
 
 **In een restaurant met een nagalmtijd boven 1 seconde praten gasten luider, blijven ze korter en schrijven ze het in hun review.** Akoestische panelen op het plafond en op de wanden achter de banken brengen de nagalm terug naar 0,6 à 0,8 seconden: gesprekken blijven aan de tafel, de sfeer blijft levendig, en de zaal klinkt vol zonder luid te zijn. Dit artikel legt uit welke nagalmtijd bij welk concept past, waar panelen het meest opbrengen, wat de brandklasse voor horeca vraagt en wat een zaal van 100 m² nodig heeft.
@@ -56,8 +56,8 @@ Vuistregel: 50 tot 70 % van het plafond absorberend maken lost het grootste deel
 Wandpanelen bepalen de sfeer én breken de reflecties tussen de lange wanden.
 
 - **[rWood Micro](/nl/products/rwood-micro)**: micro-geperforeerd houtfineer dat van op twee meter als een strak houten wand oogt. Brandklasse B-s1,d0, ook met verlichting van achteren mogelijk. De keuze voor fine dining en hotelrestaurants.
-- **[rWood Groove](/nl/products/rwood-groove)**: gegroefd eiken- of notenfineer op een kern van gerecycleerd vilt, αw 0,85. Warmte en ritme voor brasserie en bistro.
-- **[rPET Groove](/nl/products/rpet-groove)**: gerecycleerd PET-vilt in 12 kleuren, αw 0,85, B-s1,d0 — voor concepten met kleur, of achter banken waar hout te kwetsbaar is.
+- **[rWood Groove](/nl/products/rwood-groove)**: gegroefd eiken- of notenfineer op een kern van gerecycleerd vilt, αw 0,90. Warmte en ritme voor brasserie en bistro.
+- **[rPET Groove](/nl/products/rpet-groove)**: gerecycleerd PET-vilt in 12 kleuren (NRC 0,55 tot 0,90 naargelang de dikte), B-s1,d0 — voor concepten met kleur, of achter banken waar hout te kwetsbaar is.
 - **[Interior](/nl/products/interior)**: textielpanelen met afneembare, wasbare hoes (αw 1,0, klasse A) voor zones waar gemorst wordt.
 
 Plaats wandpanelen op oorhoogte van zittende gasten (0,9 tot 1,8 m) en vooral op de wand achter de banken en tegenover de bar of open keuken: daar komt het meeste geluid vandaan en daar reflecteert het het hardst.
@@ -70,7 +70,7 @@ Als het plafond en de wanden behandeld zijn en het blijft luid aan de grote tafe
 
 Horeca valt onder strenge brandvoorschriften, en de brandweer kijkt naar wand- en plafondbekleding.
 
-- **Brandklasse (EN 13501-1)**: rPET-panelen en rWood Micro zijn B-s1,d0 (beperkt brandbaar, weinig rook, geen brandende druppels); rWood Groove en Perf zijn B-s2,d0. Vraag altijd het certificaat en bewaar het in je brandveiligheidsdossier — wij leveren het mee.
+- **Brandklasse (EN 13501-1)**: rPET Groove, rPET Flex Groove en de rWood-reeks (Groove, Micro, Perf) zijn B-s1,d0 (beperkt brandbaar, weinig rook, geen brandende druppels); rPET Panel is B-s2,d0. Vraag altijd het certificaat en bewaar het in je brandveiligheidsdossier — wij leveren het mee.
 - **Vet en vocht**: geen absorberend paneel hoort recht boven een frituur of gril. Boven de open keuken werkt een akoestisch spanplafond op afstand beter dan panelen dichtbij.
 - **Reiniging**: PET-vilt stofzuig je en behandel je plaatselijk; hout behandel je als een meubel; de hoezen van Interior gaan in de wasmachine. Een beschadigd paneel vervang je per stuk.
 - **Emissies**: rPET is OEKO-TEX® Standard 100 gecertificeerd en getest volgens de Franse VOC-klasse A+.
@@ -85,7 +85,7 @@ Met de formule van Sabine (A = 0,161 × V / T):
 - A doel = 0,161 × 320 / 0,7 = **73,6 m² sabine**
 - Toe te voegen: **36,8 m² sabine**
 
-Voorstel: **35 m² plafond** van klasse A (αw 0,9 → 31,5 m² sabine) plus **8 m² rWood Micro** achter de banken (bij αw 0,85 zo'n 6,8 m² sabine) = 38,3 m² sabine. Vol bezet (50 gasten, ± 22 m² sabine extra) zakt de zaal tot ongeveer 0,5 s: fine-diningniveau tijdens de dienst, levendig genoeg bij het aperitief. De methode staat stap voor stap in [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig).
+Voorstel: **35 m² plafond** van klasse A (αw 0,9 → 31,5 m² sabine) plus **8 m² rWood Micro** achter de banken (bij αw 0,90 zo'n 7,2 m² sabine) = 38,7 m² sabine. Vol bezet (50 gasten, ± 22 m² sabine extra) zakt de zaal tot ongeveer 0,5 s: fine-diningniveau tijdens de dienst, levendig genoeg bij het aperitief. De methode staat stap voor stap in [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig).
 
 ## Fasering en budget
 
@@ -103,7 +103,7 @@ Levertijden uit eigen productie: rPET-voorraadkleuren in 2 à 3 weken, rWood-voo
 ## Veelgestelde vragen
 
 **Welke akoestische panelen zijn geschikt voor een restaurant?**
-Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), allemaal met brandklasse B-s1,d0 of B-s2,d0 en een certificaat voor je brandveiligheidsdossier.
+Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), allemaal met brandklasse B-s1,d0 (rPET Panel: B-s2,d0) en een certificaat voor je brandveiligheidsdossier.
 
 **Hoeveel panelen heeft een restaurant van 100 m² nodig?**
 Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit.

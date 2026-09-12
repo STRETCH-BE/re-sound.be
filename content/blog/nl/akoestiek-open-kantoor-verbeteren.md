@@ -12,16 +12,16 @@ category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-10-20"
 datePublished: "2026-09-06"
-dateModified: "2026-09-06"
+dateModified: "2026-09-12"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/akoestiek-open-kantoor.jpg"
 heroAlt: "Open kantoor met rPET Groove wandpanelen en een Solo Flex belcabine"
-internalLinks: ["/nl/applications/kantoor","/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/divide","/nl/products/solo-flex","/nl/products/modular-xl","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
+internalLinks: ["/nl/applications/kantoor","/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/divide","/nl/products/solo-eco","/nl/products/solo-flex","/nl/products/modular-xl","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag gratis akoestisch advies of een stalenpakket"
 sources: "ISO 22955:2021 (akoestische kwaliteit van open kantoren); ISO 3382-3 (spraakafname in open kantoren); ISO 3382-2 (nagalmtijdmeting); ISO 11654 (absorptieklassen); productgegevens Re-Sound."
 faq: [{"question":"Wat is een goede nagalmtijd voor een open kantoor?","answer":"Tussen 0,5 en 0,8 seconden, afhankelijk van de hoogte en de bezetting. Boven 1 seconde is absorptie (plafond, wanden) de eerste stap; rond 0,6 seconden en toch onrustig, dan helpen zoneren en belcabines meer."},{"question":"Helpen akoestische panelen tegen het lawaai van collega's?","answer":"Ja, op twee manieren: ze verkorten de nagalm zodat het achtergrondniveau daalt, en ze verlagen de afstand waarop je collega's nog verstaat. Ze maken een gesprek op de vloer niet onhoorbaar; daarvoor dienen belcabines en pods."},{"question":"Hoeveel panelen heeft een open kantoor nodig?","answer":"Als vuistregel 15 à 20 % van het vloeroppervlak aan absorptie van klasse A of B, bovenop een absorberend plafond. In [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig) rekenen we het voor drie ruimtes uit."}]
 draft: false
-wordCount: 1237
+wordCount: 1310
 ---
 
 Een open kantoor wordt niet luid door slechte wil, maar door harde materialen en te veel mensen die tegelijk verstaanbaar willen zijn. **De akoestiek verbeteren lukt bijna altijd met een combinatie van drie dingen: absorptie toevoegen (plafond en wanden), zones afschermen (scheidingswanden en cabines) en afspraken maken over waar gebeld en vergaderd wordt.** Hieronder de zeven maatregelen die we bij Re-Sound in de praktijk zien werken, in de volgorde waarin ze het meest opbrengen.
@@ -55,8 +55,8 @@ Vuistregel: 60 tot 80 % van het plafondoppervlak absorberend maken lost in de me
 
 Wanden komen na het plafond, maar niet zomaar overal. Geluid weerkaatst het hardst op de wanden tegenover de bron en op de lange wanden van een rechthoekige ruimte. Daar horen de panelen:
 
-- **[rPET Groove](/nl/products/rpet-groove)** (gegroefd, 12 kleuren, 12/24/36 mm) voor grote wandvlakken die kleur mogen hebben. Absorptie αw 0,85, brandklasse B-s1,d0.
-- **rWood Groove of rWood Micro** waar het interieur warmte vraagt: FSC-fineer op een kern van gerecycleerd vilt, αw 0,85.
+- **[rPET Groove](/nl/products/rpet-groove)** (gegroefd, 12 kleuren, 12/24/36 mm) voor grote wandvlakken die kleur mogen hebben. NRC 0,55 / 0,75 / 0,90 naargelang de dikte, brandklasse B-s1,d0.
+- **rWood Groove of rWood Micro** waar het interieur warmte vraagt: FSC-fineer op een kern van gerecycleerd vilt, αw 0,90 (klasse A).
 - **Interior**, onze modulaire textielpanelen met afneembare, wasbare hoes, voor zones waar panelen vaak vervangen of verplaatst worden.
 
 Hang panelen op oorhoogte tot ongeveer 2,2 m: daar gebeurt de reflectie van spraak. Een paneel boven de kasten doet veel minder dan hetzelfde paneel achter een bureau.
@@ -67,7 +67,7 @@ Een open kantoor van 40 werkplekken is akoestisch één ruimte. Verdeel ze in gr
 
 ## 4. Belcabines voor calls
 
-De meeste overlast in een open kantoor komt van gesprekken die er niet horen: telefoontjes en videocalls. Elke call die in een cabine gebeurt, is er een die niet over de vloer klinkt. Een **[Solo Flex](/nl/products/solo-flex)** belcabine neemt 1 m² in, heeft een zit-stabureau, ventilatie van 4,6 m³/min, stroom en USB-C, en reduceert spraak met ongeveer 24 dB(A) (ISO 23351-1). Kostprijs vanaf {{price:solo-flex}} excl. btw, zonder installatie; reken op één cabine per acht tot tien werkplekken waar veel gebeld wordt. In [Belcabine voor kantoor: prijs, keuze en plaatsing](/nl/blog/belcabine-kantoor-prijs-keuze-plaatsing) rekenen we dat verder uit.
+De meeste overlast in een open kantoor komt van gesprekken die er niet horen: telefoontjes en videocalls. Elke call die in een cabine gebeurt, is er een die niet over de vloer klinkt. Het instapmodel **[Solo ECO](/nl/products/solo-eco)** neemt 1,1 m² in, heeft een statafel, ventilatie tot 4 m³/min en een stopcontact met USB, en kost vanaf {{price:solo-eco}} excl. btw. Een **[Solo Flex](/nl/products/solo-flex)** belcabine neemt 1 m² in, heeft een zit-stabureau, ventilatie van 4,6 m³/min, stroom en USB-C, en reduceert spraak met 24 dB(A) (ISO 23351-1, klasse C); kostprijs vanaf {{price:solo-flex}} excl. btw. Beide zonder transport en plaatsing, die apart worden geoffreerd, en beide gebouwd in onze eigen fabriek in Częstochowa. Reken op één cabine per acht tot tien werkplekken waar veel gebeld wordt. In [Belcabine voor kantoor: prijs, keuze en plaatsing](/nl/blog/belcabine-kantoor-prijs-keuze-plaatsing) rekenen we dat verder uit.
 
 ## 5. Vergaderpods in plaats van vergaderzalen bijbouwen
 
@@ -75,7 +75,7 @@ Wie te weinig vergaderzalen heeft, ziet vergaderingen op de vloer landen. Een **
 
 ## 6. Zachte materialen en meubilair
 
-Tapijttegels, gestoffeerde stoelen, gordijnen en boekenkasten absorberen elk een beetje. Alleen tapijt in plaats van gietvloer scheelt in een groot kantoor al merkbaar in het contactgeluid van stappen en stoelen. Reken deze maatregelen niet mee als hoofdabsorptie — een tapijt haalt geen αw 0,85 — maar neem ze mee in elke herinrichting.
+Tapijttegels, gestoffeerde stoelen, gordijnen en boekenkasten absorberen elk een beetje. Alleen tapijt in plaats van gietvloer scheelt in een groot kantoor al merkbaar in het contactgeluid van stappen en stoelen. Reken deze maatregelen niet mee als hoofdabsorptie — een tapijt haalt geen αw 0,90 — maar neem ze mee in elke herinrichting.
 
 ## 7. Afspraken en indeling
 

@@ -61,7 +61,11 @@ export default async function BlogPage({ params: { locale } }: BlogPageProps) {
     image: post.heroImage,
     imageAlt: post.heroAlt,
   }));
-  const posts = [...editorial, ...LEGACY_POSTS];
+  // The four January-2024 posts are noindex placeholders (see
+  // src/data/legacy-posts.ts). A locale with editorial posts lists only
+  // those; a locale without any keeps the placeholders so the page is not
+  // empty until its own posts are published.
+  const posts = editorial.length > 0 ? editorial : LEGACY_POSTS;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

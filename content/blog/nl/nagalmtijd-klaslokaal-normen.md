@@ -12,7 +12,7 @@ category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-12-01"
 datePublished: "2026-09-06"
-dateModified: "2026-09-06"
+dateModified: "2026-09-12"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/nagalmtijd-klaslokaal.jpg"
 heroAlt: "Klaslokaal met rPET Groove panelen op de achterwand en een absorberend plafond"
@@ -21,7 +21,7 @@ cta: "Vraag de bestektekst en een stalenpakket voor je school"
 sources: "NBN S 01-400-2:2012 (akoestische criteria voor schoolgebouwen); DIN 18041:2016 (Hörsamkeit in Räumen); ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); productgegevens Re-Sound."
 faq: [{"question":"Welke nagalmtijd is verplicht in een klaslokaal?","answer":"NBN S 01-400-2 legt per lokaaltype en volume een maximale nominale nagalmtijd op; voor een standaardklas komt dat in de praktijk neer op ongeveer 0,6 tot 0,8 s (normaal comfort), strenger voor verhoogd comfort. Laat de exacte eis berekenen door je architect of akoesticus."},{"question":"Volstaan wandpanelen alleen in een klas?","answer":"Meestal niet zonder veel wandoppervlak in te nemen: het plafond is het grootste vlak en het efficiëntst. Plafond plus achterwand is de combinatie die in de meeste klassen de norm haalt."},{"question":"Hoe snel kan een school geplaatst worden?","answer":"Voorraadkleuren rPET leveren we in 2 à 3 weken; een gemiddelde klas plaatst een team op een halve dag. Bestel vóór eind mei om zeker in de zomervakantie te plaatsen."}]
 draft: false
-wordCount: 1250
+wordCount: 1286
 ---
 
 **In een klaslokaal beslist de nagalmtijd of leerlingen de leerkracht verstaan en of de leerkracht om 16 uur nog stem heeft.** De Belgische norm NBN S 01-400-2 legt voor schoolgebouwen maximale nagalmtijden vast; in de praktijk komt dat voor een gewoon klaslokaal neer op ongeveer 0,6 tot 0,8 seconden, terwijl een onbehandeld lokaal met gips, glas en een tegelvloer vaak boven 1 seconde zit. Dit artikel legt uit wat de norm vraagt, hoe je meet, hoeveel absorptie je nodig hebt en welke oplossingen tien schooljaren meegaan.
@@ -60,14 +60,14 @@ Met de formule van Sabine (A = 0,161 × V / T):
 - A doel = 0,161 × 179 / 0,6 = **48 m² sabine**
 - Toe te voegen: **24 m² sabine**
 
-Voorstel: **30 m² absorberend plafond** van klasse A (αw 0,9), goed voor 27 m² sabine, plus **vier panelen rPET Groove** van 2.400 × 600 mm op de achterwand (5,8 m², αw 0,85, 4,9 m² sabine). Samen 32 m² sabine: ruim boven de 24 die nodig zijn, zodat het lokaal ook leeg onder 0,6 s blijft en er marge is voor de lage tonen. Hoe je zelf rekent, staat in [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig).
+Voorstel: **30 m² absorberend plafond** van klasse A (αw 0,9), goed voor 27 m² sabine, plus **6 m² rWood Groove** op de achterwand (αw 0,90, 5,4 m² sabine). Samen ruim 32 m² sabine: ruim boven de 24 die nodig zijn, zodat het lokaal ook leeg onder 0,6 s blijft en er marge is voor de lage tonen. Hoe je zelf rekent, staat in [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig).
 
 ## Oplossingen die in een school standhouden
 
 Een school is geen kantoor: er wordt tegen de wand geleund, met stoelen geschoven en met natte sponzen gewerkt. Onze aanbevelingen per zone:
 
 - **Plafond eerst.** Een [akoestisch spanplafond](https://stretchplafond.be/products/acoustic-stretch-system) (naadloos, in één dag geplaatst door ons zusterbedrijf STRETCH) of plafondpanelen in gerecycleerd PET halen het grootste deel van de nagalm weg zonder wandoppervlak in te nemen.
-- **Achterwand en zijwand.** [rPET Groove](/nl/products/rpet-groove): 12 kleuren, 24 mm, αw 0,85, te bewerken als MDF en makkelijk te vervangen per paneel. Op oorhoogte van de leerlingen, niet boven de kasten.
+- **Achterwand en zijwand.** [rPET Groove](/nl/products/rpet-groove): 12 kleuren, 12 / 24 / 36 mm (NRC 0,55 tot 0,90), brandklasse B-s1,d0, te bewerken als MDF en makkelijk te vervangen per paneel. Op oorhoogte van de leerlingen, niet boven de kasten.
 - **Kleuterklassen en zorglokalen.** [Interior](/nl/products/interior): modulaire textielpanelen (αw 1,0, klasse A) met een afneembare, wasbare hoes.
 - **Refter, aula en polyvalente zaal.** [rWood Micro](/nl/products/rwood-micro): micro-geperforeerd houtfineer met brandklasse B-s1,d0, representatief genoeg voor de aula en absorberend genoeg voor de refter.
 - **Open leeromgevingen.** [Divide](/nl/products/divide): vrijstaande, magnetisch koppelbare scheidingswanden die leerzones afbakenen zonder muren te bouwen.
@@ -76,7 +76,7 @@ Een school is geen kantoor: er wordt tegen de wand geleund, met stoelen geschove
 
 Voor schoolgebouwen zijn de brandklasse en de binnenluchtkwaliteit even belangrijk als de akoestiek:
 
-- **Brandklasse (EN 13501-1)**: rPET-panelen en rWood Micro zijn B-s1,d0 — beperkt brandbaar, weinig rook, geen brandende druppels. rWood Groove en Perf zijn B-s2,d0.
+- **Brandklasse (EN 13501-1)**: rPET Groove, rPET Flex Groove en de rWood-reeks (Groove, Micro, Perf) zijn B-s1,d0 — beperkt brandbaar, weinig rook, geen brandende druppels. rPET Panel is B-s2,d0.
 - **Emissies**: rPET is OEKO-TEX® Standard 100 gecertificeerd en getest volgens de Franse VOC-klasse A+, de strengste voor binnenlucht.
 - **Onderhoud**: [PET-vilt](/nl/products/pet-akoestische-panelen) stofzuig je en behandel je plaatselijk bij vlekken; de hoezen van Interior gaan in de wasmachine. Beschadigde panelen vervang je per stuk, zonder de wand te herschilderen.
 - **Herkomst**: het fineer van rWood is FSC-gecertificeerd; het certificaatnummer leveren we op aanvraag per levering.

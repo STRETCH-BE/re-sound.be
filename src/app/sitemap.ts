@@ -5,11 +5,11 @@ import { MetadataRoute } from 'next';
 
 import { BOOTH_GUIDE, GUIDE_LOCALES, guidePath, isGuideLocale } from '@/data/guides';
 import { HUB_IDS, HUBS, hubPath } from '@/data/hubs';
+import { MANUFACTURING_LOCALES, isManufacturingLocale, manufacturingPath } from '@/data/manufacturing';
 import { PRODUCTS, PRODUCT_SLUGS } from '@/data/products';
 import { getContentPosts } from '@/lib/content/blog';
 import { SEO_LOCALES, defaultLocale } from '@/i18n/config';
 
-import enMessages from '../../messages/en.json';
 
 /**
  * Dynamic sitemap.
@@ -48,17 +48,9 @@ const STATIC_ROUTES: Array<{
   { path: '/faq',            changeFrequency: 'monthly', priority: 0.6, updated: SPRINT_DATE, files: ['src/app/[locale]/faq/page.tsx'] },
   { path: '/contact',        changeFrequency: 'monthly', priority: 0.6, updated: SPRINT_DATE, files: ['src/app/[locale]/contact/page.tsx'] },
   { path: '/blog',           changeFrequency: 'weekly',  priority: 0.6, updated: SPRINT_DATE, files: ['src/app/[locale]/blog/page.tsx', 'src/components/sections/BlogGrid.tsx'] },
+  { path: '/samples',        changeFrequency: 'monthly', priority: 0.7, updated: '2026-09-12', files: ['src/app/[locale]/samples/page.tsx', 'src/components/samples/SamplesForm.tsx'] },
+  { path: '/acoustic-calculator', changeFrequency: 'monthly', priority: 0.7, updated: '2026-09-12', files: ['src/app/[locale]/acoustic-calculator/page.tsx', 'src/components/calculator/Calculator.tsx', 'src/lib/acoustics/sabine.ts'] },
 ];
-
-// Keep in sync with `generateStaticParams` in `[locale]/blog/[slug]/page.tsx`
-const BLOG_SLUGS = [
-  'circular-economy-acoustics',
-  'office-acoustic-solutions',
-  'recycled-materials-quality',
-  'sound-absorption-explained',
-] as const;
-
-const blogPosts = enMessages.blogPosts as Record<string, { date: string }>;
 
 // ---------------------------------------------------------------------------
 // lastmod helpers
@@ -157,6 +149,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
+    // Manufacturing page: EN/NL/FR/DE/ES/PT only, localised slug per locale
+    // (src/data/manufacturing.ts); hreflang restricted to those locales.
+    if (isManufacturingLocale(locale)) {
+      entries.push({
+        url: `${base}/${locale}${manufacturingPath(locale)}`,
+        lastModified: lastModified(
+          ['src/app/[locale]/manufacturing/page.tsx', 'src/data/manufacturing.ts', 'src/data/products.ts'],
+          '2026-09-12'
+        ),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(MANUFACTURING_LOCALES.map((loc) => [loc, `${base}/${loc}${manufacturingPath(loc)}`])),
+            'x-default': `${base}/${defaultLocale}${manufacturingPath(defaultLocale)}`,
+          },
+        },
+      });
+    }
+
     // Product pages
     for (const slug of PRODUCT_SLUGS) {
       const product = PRODUCTS[slug];
@@ -183,16 +195,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
-    // Blog posts — lastmod is the post date until posts carry a dateModified
-    for (const slug of BLOG_SLUGS) {
-      entries.push({
-        url: `${base}/${locale}/blog/${slug}`,
-        lastModified: new Date(blogPosts[slug]?.date ?? SPRINT_DATE),
-        changeFrequency: 'monthly',
-        priority: 0.5,
-        alternates: alternatesFor(base, () => `/blog/${slug}`),
-      });
-    }
+    // The four message-driven posts of January 2024 (src/data/legacy-posts.ts)
+    // are deliberately absent: they are noindex and stay reachable only as
+    // links until they are rewritten to current facts.
   }
 
   // Product documents: open PDFs that actually exist (see docs/missing-documents.md)
