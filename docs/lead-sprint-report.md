@@ -73,6 +73,8 @@ Sequence run on the final tree (the last build, after the meta-tag trims): `npx 
 | invented junk paths → closest index / home | 35 | 35 | 0 |
 | **Total** | **619** | **619** | **0** |
 
+Production had the same failure before this sprint: Vercel's runtime-error log for the last seven days shows 636 occurrences of `RangeError: Incorrect locale information provided` on the `/[locale]` route (107 visitors, paths such as `/cord.php`, `/Resound_Studio_v2_0010.jpg`, `/disclaimer-en-privacy-beleid%5D.`), i.e. junk and legacy URLs reaching next-intl with a bogus first segment. The middleware and layout changes below remove that class of error.
+
 The first run (before the layout and middleware fixes) failed three unprefixed asset-like junk paths with a 500 (`RangeError: Incorrect locale information provided` — a bogus first segment reached next-intl); the middleware now sends any unprefixed file outside the public prefixes to the home page and the layout validates the locale before `setRequestLocale`.
 
 ### Lighthouse — mobile, simulated slow 4G, three runs per page (median-LCP run reported)
