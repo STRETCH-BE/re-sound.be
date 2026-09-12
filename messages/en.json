@@ -739,7 +739,8 @@
     "terms": "Terms of Service",
     "countryBelgium": "Belgium",
     "reviewUs": "Review us on Google",
-    "priceGuide": "Phone booth prices"
+    "priceGuide": "Phone booth prices",
+    "manufacturing": "Manufacturing"
   },
   "cookies": {
     "title": "Cookie preferences",
@@ -4604,6 +4605,94 @@
     },
     "cta": {
       "deliveryNote": "Ex works, 4 weeks production · Delivery and installation quoted on request · 5-year spare-part warranty"
+    }
+  },
+  "manufacturing": {
+    "navLabel": "Manufacturing",
+    "breadcrumb": "Manufacturing",
+    "title": "Acoustic Panel & Phone Booth Manufacturer | Re-Sound",
+    "description": "Re-Sound makes its own acoustic panels and phone booths in two plants: textile lines in Beveren-Waas (BE), rWood, rPET and the booths in Częstochowa (PL).",
+    "h1": "Acoustic panel and phone booth manufacturer: our two plants",
+    "intro": "Re-Sound designs and builds its own products rather than reselling someone else’s. Every acoustic panel and phone booth on this site is made in one of two plants we own: the textile lines in Beveren-Waas, Belgium; the rWood and rPET lines and the four booths in Częstochowa, Poland. All raw materials are sourced within the European Union.",
+    "plantsTag": "THE PLANTS",
+    "plantsTitle": "Two plants, one manufacturer",
+    "plantsIntro": "What each site makes and how to reach it. Visits are by appointment at both locations.",
+    "plant": {
+      "BE": {
+        "role": "Textile acoustic panels, head office and showroom",
+        "makes": "Acoustic panels and screens in recycled textile fibres.",
+        "note": "The showroom at this address has the full panel range and all three booth sizes installed and acoustically active, so you can hear the difference between materials before you specify."
+      },
+      "PL": {
+        "role": "rWood and rPET panels, all phone booths",
+        "makes": "Wood acoustic panels in FSC-certified veneer, PET acoustic panels in recycled PET felt, and the phone booths and meeting pods.",
+        "note": "The production office welcomes project visits and factory tours by appointment. Booths are delivered and installed by our own team on request."
+      }
+    },
+    "plantLabels": {
+      "makes": "Made here",
+      "address": "Address",
+      "hours": "Opening hours",
+      "hoursValue": "Mon–Fri, 08:00–16:30 · by appointment",
+      "phone": "Phone",
+      "email": "Email",
+      "country": {
+        "BE": "Belgium",
+        "PL": "Poland"
+      }
+    },
+    "originTag": "WHICH LINE IS MADE WHERE",
+    "originTitle": "Plant of origin per product line",
+    "originNote": "One row per product, generated from the same product data that feeds every model page. Lead times as published on the model pages.",
+    "col": {
+      "product": "Product",
+      "family": "Range",
+      "plant": "Plant",
+      "leadTime": "Lead time"
+    },
+    "certsTag": "CERTIFICATIONS",
+    "certsTitle": "Certifications and what they cover",
+    "certsIntro": "Only certifications that apply to a specific line are listed, each with the standard it refers to and the products it covers.",
+    "certs": {
+      "FSC": {
+        "name": "FSC chain-of-custody",
+        "scope": "rWood veneers"
+      },
+      "OEKO-TEX": {
+        "name": "OEKO-TEX Standard 100",
+        "scope": "rPET felt"
+      },
+      "EPD": {
+        "name": "Environmental Product Declaration",
+        "scope": "rWood Panel"
+      }
+    },
+    "certsAppliesTo": "Applies to",
+    "certsNote": "Fire classification (EN 13501-1), sound absorption (ISO 11654) and speech level reduction (ISO 23351-1) are test results rather than certifications; they are quoted per model on the product pages.",
+    "howTag": "HOW WE WORK",
+    "howTitle": "What making it ourselves changes for you",
+    "how": {
+      "origin": {
+        "title": "Transparent origin",
+        "text": "Every product page names the plant it comes from, and the table on this page is generated from the same product data, so copy and data cannot disagree."
+      },
+      "installation": {
+        "title": "Delivery and installation by our own team",
+        "text": "Booths are delivered and installed by our own team on request; delivery and installation are quoted separately."
+      },
+      "warranty": {
+        "title": "Warranty on every booth"
+      }
+    },
+    "linksTag": "GO FURTHER",
+    "linksTitle": "Ranges, technical documents and samples",
+    "links": {
+      "downloadsTitle": "Technical downloads",
+      "downloadsText": "Datasheets, installation guides and acoustic test reports on every product page; fire certificates and sustainability declarations for the panels, warranty terms and CAD drawings for the booths.",
+      "downloadsCta": "All products",
+      "samplesTitle": "Sample kit",
+      "samplesText": "Order a free sample kit and compare the materials and finishes on your own desk.",
+      "hubCta": "See the range"
     }
   },
   "calculator": {

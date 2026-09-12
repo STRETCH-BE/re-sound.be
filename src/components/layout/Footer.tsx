@@ -6,6 +6,8 @@ import { openConsentBanner } from '@/lib/consent';
 import { GOOGLE_LISTING, SOCIAL_LINKS } from '@/config/site';
 import { guidePath, isGuideLocale } from '@/data/guides';
 import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
+import { manufacturingPath } from '@/data/manufacturing';
+import { isSeoLocale } from '@/i18n/config';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -39,8 +41,11 @@ export default function Footer() {
     { href: '/products',                  label: t('allProducts') },
   ];
 
+  // The manufacturing page (localised slug) exists in the SEO locales only,
+  // so the link follows isSeoLocale like the price guide follows isGuideLocale.
   const companyLinks = [
     { href: '/about', label: tNav('about') },
+    ...(isSeoLocale(locale) ? [{ href: manufacturingPath(locale), label: t('manufacturing') }] : []),
     { href: '/sustainability', label: tNav('sustainability') },
     { href: '/blog', label: 'Blog' },
     { href: '/where-to-buy', label: tNav('whereToBuy') },

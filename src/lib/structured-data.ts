@@ -31,10 +31,12 @@ import {
   FOUNDING_YEAR,
   LEGAL_NAME,
   PARENT_ORGANIZATION,
+  PLANTS,
   PRODUCTION_OFFICE, SHOWROOM,
   SHOW_PLACEHOLDER_PRICES,
   SITE_URL,
   SOCIAL_LINKS_LIST,
+  type PlantCountry,
 } from '@/config/site';
 import { isoSpeechClass, PRODUCTS, type Product } from '@/data/products';
 import { centsToDecimal } from '@/lib/catalogue/pricing';
@@ -581,6 +583,83 @@ export function blogPostingSchema(input: BlogPostingInput) {
         url: `${SITE_URL}/images/re-sound-logo.png`,
       },
     },
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Manufacturing page — the Organization plus one LocalBusiness per plant
+// ---------------------------------------------------------------------------
+
+/** Stable @id of a plant's LocalBusiness node, e.g. https://re-sound.be/#plant-be */
+export function plantId(country: PlantCountry): string {
+  return `${SITE_URL}/#plant-${country.toLowerCase()}`;
+}
+
+export interface PlantSchemaInput {
+  country: PlantCountry;
+  /** Localised node name, e.g. 'Re-Sound — Beveren-Waas, Belgium' */
+  name: string;
+  /** Localised one-liner: what is made there */
+  description?: string;
+  /** Root-relative URL of the page documenting the plant (the manufacturing page) */
+  url: string;
+}
+
+/**
+ * One LocalBusiness per production plant (manufacturing page).
+ *
+ * Every address, phone and opening-hours value comes from config/site.ts:
+ * Beveren-Waas from SHOWROOM (head office + showroom at the same address),
+ * Częstochowa from PRODUCTION_OFFICE. Nothing else is asserted — no
+ * surface, headcount, capacity or founding date, none of which is confirmed
+ * — and geo is emitted only for the Belgian site (the Polish one has no
+ * coordinates in the workbook).
+ */
+export function plantSchema(input: PlantSchemaInput) {
+  const site = input.country === 'BE' ? SHOWROOM : PRODUCTION_OFFICE;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': plantId(input.country),
+    name: input.name,
+    ...(input.description ? { description: input.description } : {}),
+    url: abs(input.url),
+    parentOrganization: { '@id': ORG_ID },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: site.streetAddress,
+      postalCode: site.postalCode,
+      addressLocality: site.addressLocality,
+      ...('addressRegion' in site ? { addressRegion: site.addressRegion } : {}),
+      addressCountry: site.addressCountry,
+    },
+    email: site.email,
+    telephone: input.country === 'BE' ? SHOWROOM.telephone : PRODUCTION_OFFICE.phones.map((p) => p.number),
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: site.openingDays,
+        opens: site.opens,
+        closes: site.closes,
+      },
+    ],
+    ...(input.country === 'BE'
+      ? { geo: { '@type': 'GeoCoordinates', latitude: SHOWROOM.latitude, longitude: SHOWROOM.longitude } }
+      : {}),
+  };
+}
+
+/**
+ * The Organization node as emitted on the manufacturing page: the sitewide
+ * entity (same @id, legalName and parentOrganization STRETCH Group from
+ * organizationSchema()) plus `location` references to the two plant nodes,
+ * so crawlers tie the plants to the brand. LocalBusiness is both an
+ * Organization and a Place, so it is a valid `location` value.
+ */
+export function manufacturingOrganizationSchema() {
+  return {
+    ...organizationSchema(),
+    location: PLANTS.map((plant) => ({ '@id': plantId(plant.country) })),
   };
 }
 
