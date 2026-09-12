@@ -82,10 +82,11 @@ export default function PartnerPage() {
     { number: t('process.step4.number'), title: t('process.step4.title'), desc: t('process.step4.desc') },
   ];
 
-  const resources = [
+  const resources: { label: string; available: boolean; href?: string }[] = [
     { label: t('resources.partnerPack'), available: true },
     { label: t('resources.brandGuidelines'), available: true },
-    { label: t('resources.sampleKit'), available: true },
+    // The sample kit is the one resource with a page of its own.
+    { label: t('resources.sampleKit'), available: true, href: '/samples' },
     { label: t('resources.bimCad'), available: false },
     { label: t('resources.caseStudies'), available: true },
     { label: t('resources.pricing'), available: false },
@@ -225,7 +226,13 @@ export default function PartnerPage() {
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <polyline points="14 2 14 8 20 8" />
               </svg>
-              <span className="resource-label">{r.label}</span>
+              <span className="resource-label">
+                {r.href ? (
+                  <Link href={r.href} prefetch={false} className="resource-link">{r.label}</Link>
+                ) : (
+                  r.label
+                )}
+              </span>
               {r.available ? (
                 <span className="resource-status available">●</span>
               ) : (
@@ -577,6 +584,15 @@ export default function PartnerPage() {
         }
         .resource-label {
           flex: 1;
+        }
+        /* On a Link (rendered outside this component's scope), so global */
+        .resource-label :global(.resource-link) {
+          color: inherit;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+        .resource-label :global(.resource-link:hover) {
+          color: var(--brand-blue, #197FC7);
         }
         .resource-status {
           font-size: 0.85rem;

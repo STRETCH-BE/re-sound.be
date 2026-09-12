@@ -1,32 +1,33 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Icon, { type IconName } from '@/components/ui/Icon';
 
 export default function CircularProcess() {
   const t = useTranslations('sustainability.process');
 
-  const steps = [
+  const steps: { number: string; icon: IconName; title: string; description: string }[] = [
     {
       number: '01',
-      icon: '📦',
+      icon: 'box',
       title: t('collect.title'),
       description: t('collect.description'),
     },
     {
       number: '02',
-      icon: '⚙️',
+      icon: 'gear',
       title: t('process.title'),
       description: t('process.description'),
     },
     {
       number: '03',
-      icon: '🎨',
+      icon: 'palette',
       title: t('create.title'),
       description: t('create.description'),
     },
     {
       number: '04',
-      icon: '🔄',
+      icon: 'cycle',
       title: t('return.title'),
       description: t('return.description'),
     },
@@ -42,7 +43,7 @@ export default function CircularProcess() {
           {steps.map((step, index) => (
             <div key={index} className="process-step">
               <div className="step-number">{step.number}</div>
-              <div className="step-icon">{step.icon}</div>
+              <div className="step-icon"><Icon name={step.icon} /></div>
               <h3>{step.title}</h3>
               <p>{step.description}</p>
               {index < steps.length - 1 && <div className="step-connector" />}
@@ -104,8 +105,15 @@ export default function CircularProcess() {
         }
 
         .step-icon {
-          font-size: 3rem;
+          display: flex;
+          justify-content: center;
           margin: 1rem 0;
+          color: var(--brand-blue);
+        }
+
+        .step-icon :global(svg) {
+          width: 48px;
+          height: 48px;
         }
 
         .process-step h3 {

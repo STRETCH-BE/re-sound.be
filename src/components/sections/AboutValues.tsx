@@ -1,28 +1,29 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Icon, { type IconName } from '@/components/ui/Icon';
 
 export default function AboutValues() {
   const t = useTranslations('about.values');
 
-  const values = [
+  const values: { icon: IconName; title: string; description: string }[] = [
     {
-      icon: '♻️',
+      icon: 'recycle',
       title: t('circular.title'),
       description: t('circular.description'),
     },
     {
-      icon: '🎯',
+      icon: 'target',
       title: t('quality.title'),
       description: t('quality.description'),
     },
     {
-      icon: '🤝',
+      icon: 'handshake',
       title: t('partnership.title'),
       description: t('partnership.description'),
     },
     {
-      icon: '💡',
+      icon: 'bulb',
       title: t('innovation.title'),
       description: t('innovation.description'),
     },
@@ -37,7 +38,7 @@ export default function AboutValues() {
         <div className="values-grid">
           {values.map((value, index) => (
             <div key={index} className="value-card">
-              <span className="value-icon">{value.icon}</span>
+              <span className="value-icon"><Icon name={value.icon} /></span>
               <h3>{value.title}</h3>
               <p>{value.description}</p>
             </div>
@@ -83,9 +84,15 @@ export default function AboutValues() {
         }
 
         .value-icon {
-          font-size: 2.5rem;
-          display: block;
+          display: flex;
+          justify-content: center;
           margin-bottom: 1rem;
+          color: var(--brand-blue);
+        }
+
+        .value-icon :global(svg) {
+          width: 40px;
+          height: 40px;
         }
 
         .value-card h3 {

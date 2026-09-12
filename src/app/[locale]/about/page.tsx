@@ -11,6 +11,7 @@ import AboutStory from '@/components/sections/AboutStory';
 import AboutValues from '@/components/sections/AboutValues';
 import AboutPartners from '@/components/sections/AboutPartners';
 import CTA from '@/components/sections/CTA';
+import Icon from '@/components/ui/Icon';
 
 interface AboutPageProps {
   params: { locale: string };
@@ -70,7 +71,7 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
 
             <div className="belgian-features">
               <div className="belgian-feature">
-                <span className="feature-icon">🏭</span>
+                <span className="feature-icon"><Icon name="factory" /></span>
                 <div>
                   <h4>{t('belgian.production.title')}</h4>
                   <p>{t('belgian.production.description')}</p>
@@ -78,7 +79,7 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
               </div>
 
               <div className="belgian-feature">
-                <span className="feature-icon">🤝</span>
+                <span className="feature-icon"><Icon name="handshake" /></span>
                 <div>
                   <h4>{t('belgian.social.title')}</h4>
                   <p>{t('belgian.social.description')}</p>
@@ -86,7 +87,7 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
               </div>
 
               <div className="belgian-feature">
-                <span className="feature-icon">🔬</span>
+                <span className="feature-icon"><Icon name="flask" /></span>
                 <div>
                   <h4>{t('belgian.rd.title')}</h4>
                   <p>{t('belgian.rd.description')}</p>

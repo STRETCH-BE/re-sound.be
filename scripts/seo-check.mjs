@@ -13,6 +13,18 @@
  *   (e) sitemap URL count and `lastmod` distribution
  *   (f) internal links that return 404 (crawling every sitemap URL)
  *   (g) title / meta-description lengths (warn > 65 / > 155 chars)
+ *   (h) product claims against src/data/products.ts (lead sprint §1):
+ *       - blanket "100 % recycled" / "made in Belgium" strings are forbidden
+ *         everywhere except on the product page whose data supports them
+ *         (recycledContentPct === 100, madeIn === 'BE'); hubs, the FAQ and
+ *         every other page get no exemption
+ *       - every αw, NRC and fire-class figure in a product page's visible
+ *         text or JSON-LD must be one the product's data allows; a product
+ *         with alphaW/nrc/fireClass null must show no such figure at all
+ *       - "Class A" (klasse/classe/clase A) on a product page needs a data
+ *         αw of at least 0.90
+ *       The data file is TypeScript, so its fields are read with a regex per
+ *       product block (see readProductData); a parse failure is fatal.
  *
  * Usage:
  *   node scripts/seo-check.mjs                     # builds if needed, starts next on :3999
@@ -33,8 +45,10 @@
  */
 
 import { spawn, spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
+
+const ROOT = resolve(dirname(new URL(import.meta.url).pathname), '..');
 
 // ---------------------------------------------------------------------------
 // CLI
@@ -64,6 +78,14 @@ for (let i = 0; i < argv.length; i++) {
 //   scope: 'text'      – anywhere in the visible page text (case-insensitive)
 //          'nonEnText' – visible text, non-EN locales only
 //          'titleH1'   – inside <title> or any <h1>
+//   unless: 'recycled100' – allowed on the product page whose data says
+//                           recycledContentPct === 100 (rPET Panel, rPET Flex
+//                           Groove today); nowhere else
+//           'madeInBE'    – allowed on the product page whose data says
+//                           madeIn === 'BE' (the textile panels); nowhere else
+//   Matching is case-insensitive and "100 %" equals "100%" (see normClaim), so
+//   one entry covers "100% Recycled", "100 % recycled" and inflected forms
+//   such as "100% gerecycleerde" / "100 % recyclées" / "100% recycelten".
 // ---------------------------------------------------------------------------
 
 const FORBIDDEN = [
@@ -84,7 +106,217 @@ const FORBIDDEN = [
   { needle: 'soundbooth', scope: 'titleH1' },
   // Sprint 2: wheelchair access is not standard on any booth (needs-Michael) — the old Modular XL claim must not spread.
   { needle: 'accessible-by-design', scope: 'text' },
+  // Lead sprint §1: blanket recycled-content claims. Only a product whose data
+  // says recycledContentPct === 100 may say so, on its own page.
+  { needle: '100% recycled', scope: 'text', unless: 'recycled100' },
+  { needle: '100% gerecycleerd', scope: 'text', unless: 'recycled100' },
+  { needle: '100% recyclé', scope: 'text', unless: 'recycled100' },
+  { needle: '100% recycelt', scope: 'text', unless: 'recycled100' },
+  { needle: '100% reciclad', scope: 'text', unless: 'recycled100' }, // es/pt: reciclado, reciclada, reciclados, recicladas
+  { needle: '100% recyclado', scope: 'text', unless: 'recycled100' },
+  // Lead sprint §1: blanket origin claims. Only the textile panels are made in
+  // Beveren-Waas (madeIn 'BE'); rWood, rPET and the booths come from
+  // Częstochowa (PL). Nothing is made in Germany.
+  { needle: 'Made in Belgium', scope: 'text', unless: 'madeInBE' },
+  { needle: 'Gemaakt in België', scope: 'text', unless: 'madeInBE' },
+  { needle: 'Fabriqué en Belgique', scope: 'text', unless: 'madeInBE' },
+  { needle: 'Hergestellt in Belgien', scope: 'text', unless: 'madeInBE' },
+  { needle: 'Made in Germany', scope: 'text' },
 ];
+
+/** Case-insensitive, "100 %" → "100%", so needle and text compare the same way. */
+function normClaim(s) {
+  return s.toLowerCase().replace(/100\s*%/g, '100%');
+}
+
+/** Short excerpt around the first occurrence of `needle` in `haystack` (both already normalised). */
+function excerpt(haystack, needle, span = 40) {
+  const at = haystack.indexOf(needle);
+  if (at === -1) return '';
+  const from = Math.max(0, at - span);
+  const to = Math.min(haystack.length, at + needle.length + span);
+  return `${from > 0 ? '…' : ''}${haystack.slice(from, to)}${to < haystack.length ? '…' : ''}`;
+}
+
+// ---------------------------------------------------------------------------
+// Product data — src/data/products.ts is the single source of truth for
+// madeIn, recycledContentPct and the acoustic / fire specs. The script is
+// plain ESM and cannot import the TypeScript module, so the fields it needs
+// are read with a regex per product block. A parse failure throws (exit 2):
+// a claim check that silently ran without its reference data would pass
+// pages it should fail.
+// ---------------------------------------------------------------------------
+
+// Remove line and block comments outside string literals (comments mention old, wrong figures).
+function stripTsComments(src) {
+  let out = '';
+  let quote = null;
+  for (let i = 0; i < src.length; ) {
+    const c = src[i];
+    const n = src[i + 1];
+    if (quote) {
+      out += c;
+      if (c === '\\') { out += n ?? ''; i += 2; continue; }
+      if (c === quote) quote = null;
+      i++;
+      continue;
+    }
+    if (c === "'" || c === '"' || c === '`') { quote = c; out += c; i++; continue; }
+    if (c === '/' && n === '/') { while (i < src.length && src[i] !== '\n') i++; continue; }
+    if (c === '/' && n === '*') { const end = src.indexOf('*/', i + 2); i = end === -1 ? src.length : end + 2; continue; }
+    out += c;
+    i++;
+  }
+  return out;
+}
+
+/** Every decimal in a data string ('0.35–0.85 (per pattern)' → [0.35, 0.85]); null stays null (= nothing allowed). */
+function numbersIn(s) {
+  if (s === null || s === undefined) return null;
+  return [...s.matchAll(/\d+(?:[.,]\d{1,2})?/g)].map((m) => Number(m[0].replace(',', '.')));
+}
+
+/** Every EN 13501-1 class in a data string ('B-s1,d0 (FR MDF) / D-s2,d0' → ['B-s1,d0', 'D-s2,d0']). */
+function classesIn(s) {
+  if (s === null || s === undefined) return null;
+  return [...s.matchAll(/([A-F])-s([123]),\s*d([012])/g)].map((m) => `${m[1]}-s${m[2]},d${m[3]}`);
+}
+
+function readProductData() {
+  const file = resolve(ROOT, 'src', 'data', 'products.ts');
+  const src = stripTsComments(readFileSync(file, 'utf8'));
+  const start = src.indexOf('export const PRODUCTS');
+  const end = src.indexOf('export const PRODUCT_SLUGS');
+  if (start === -1 || end === -1 || end < start) throw new Error('products.ts: PRODUCTS block not found');
+  const body = src.slice(start, end);
+  const marks = [...body.matchAll(/\bslug:\s*'([a-z0-9-]+)'/g)].map((m) => ({ slug: m[1], at: m.index }));
+  if (marks.length === 0) throw new Error('products.ts: no `slug:` entries found');
+
+  const strField = (block, key) => {
+    const m = new RegExp(`\\b${key}:\\s*(?:'((?:[^'\\\\]|\\\\.)*)'|(null))`).exec(block);
+    if (!m) return undefined;
+    return m[2] ? null : m[1];
+  };
+  const numField = (block, key) => {
+    const m = new RegExp(`\\b${key}:\\s*(?:(\\d+(?:\\.\\d+)?)|(null))`).exec(block);
+    if (!m) return undefined;
+    return m[2] ? null : Number(m[1]);
+  };
+
+  const products = new Map();
+  marks.forEach((mark, i) => {
+    const block = body.slice(mark.at, marks[i + 1]?.at ?? body.length);
+    const madeIn = strField(block, 'madeIn');
+    const recycledContentPct = numField(block, 'recycledContentPct');
+    const kind = strField(block, 'kind');
+    if (madeIn === undefined || recycledContentPct === undefined || !kind) {
+      throw new Error(`products.ts: ${mark.slug}: madeIn / recycledContentPct / specs.kind not parsed`);
+    }
+    if (madeIn !== null && !/^[A-Z]{2}$/.test(madeIn)) throw new Error(`products.ts: ${mark.slug}: madeIn "${madeIn}" is not an ISO 3166-1 alpha-2 code`);
+    // Booth specs carry no αw / NRC / fire class: nothing is allowed on those pages.
+    let alphaW = null, nrc = null, fireClass = null;
+    if (kind === 'panel') {
+      alphaW = strField(block, 'alphaW');
+      nrc = strField(block, 'nrc');
+      fireClass = strField(block, 'fireClass');
+      if (alphaW === undefined || nrc === undefined || fireClass === undefined) throw new Error(`products.ts: ${mark.slug}: specs.alphaW / nrc / fireClass not parsed`);
+    }
+    products.set(mark.slug, {
+      slug: mark.slug, kind, madeIn, recycledContentPct,
+      raw: { alphaW, nrc, fireClass },
+      alphaW: numbersIn(alphaW), nrc: numbersIn(nrc), fireClasses: classesIn(fireClass),
+    });
+  });
+  if (products.size < 10) throw new Error(`products.ts: only ${products.size} products parsed — regex out of sync with the file?`);
+  return products;
+}
+
+const PRODUCT_DATA = readProductData();
+
+/** Product record for a product page URL (/<locale>/products/<slug>); null for hubs, listings and every other page. */
+function productFor(pathname) {
+  const m = /^\/[a-z]{2}\/products\/([a-z0-9-]+)\/?$/.exec(pathname);
+  return m ? PRODUCT_DATA.get(m[1]) ?? null : null;
+}
+
+function claimAllowed(product, unless) {
+  if (!product) return false;
+  if (unless === 'recycled100') return product.recycledContentPct === 100;
+  if (unless === 'madeInBE') return product.madeIn === 'BE';
+  return false;
+}
+
+// Figures on a page. The brief's core patterns are `αw\s*(?:up to\s*)?<decimal>`,
+// `NRC\s*(?:up to\s*)?<decimal>` and `[A-F]-s[123],d[012]`; they are widened
+// only for what the rendered pages actually produce: an optional standard in
+// brackets ("αw (ISO 11654) 0.90"), ":" / "=", the localised "up to", a range
+// ("0.95–1.00" → both numbers) and a space after the comma in a fire class.
+const DECIMAL = '([0-9][.,][0-9]{1,2})';
+const UP_TO = "(?:up to|jusqu[’']à|bis zu|bis|tot|hasta|até|op til|upp till|opp til|allt að)?";
+const RANGE_TAIL = `(?:\\s*[-–]\\s*${DECIMAL})?`;
+const ALPHA_W_RE = new RegExp(`αw\\s*(?:\\([^)]{0,16}\\)\\s*)?[:=]?\\s*${UP_TO}\\s*${DECIMAL}(?![0-9])${RANGE_TAIL}`, 'giu');
+const NRC_RE = new RegExp(`\\bNRC\\s*(?:\\([^)]{0,16}\\)\\s*)?[:=]?\\s*${UP_TO}\\s*${DECIMAL}(?![0-9])${RANGE_TAIL}`, 'giu');
+const FIRE_CLASS_RE = /(?<![A-Za-z0-9])([A-F])-s([123]),\s*d([012])(?![A-Za-z0-9])/g;
+// "Class A" (absorption class, αw ≥ 0.90). "A+" (emission class), "A1"/"A2"
+// (fire classes) and "Ab…" (a following word) are excluded by the lookahead.
+const CLASS_A_RE = /(?<![\p{L}\d])(?:class|klasse|klass|classe|clase)\s+A(?![\p{L}\d+])/giu;
+
+/** Visible text with "α w" (from α<sub>w</sub>) re-joined so the αw pattern matches. */
+function joinAlphaW(text) {
+  return text.replace(/α\s+w(?![\p{L}])/giu, 'αw');
+}
+
+function collectFigures(text, source, into) {
+  const t = joinAlphaW(text);
+  const add = (kind, figure, m) => {
+    const key = `${kind}:${figure}`;
+    if (!into.has(key)) into.set(key, { kind, figure, sources: new Set(), context: excerpt(t, m[0], 35) });
+    into.get(key).sources.add(source);
+  };
+  for (const m of t.matchAll(ALPHA_W_RE)) { add('αw', m[1], m); if (m[2]) add('αw', m[2], m); }
+  for (const m of t.matchAll(NRC_RE)) { add('NRC', m[1], m); if (m[2]) add('NRC', m[2], m); }
+  for (const m of t.matchAll(FIRE_CLASS_RE)) add('fire class', `${m[1]}-s${m[2]},d${m[3]}`, m);
+}
+
+/** Every string value in a parsed JSON-LD document. */
+function* jsonStrings(node) {
+  if (typeof node === 'string') yield node;
+  else if (Array.isArray(node)) for (const n of node) yield* jsonStrings(n);
+  else if (node && typeof node === 'object') for (const v of Object.values(node)) yield* jsonStrings(v);
+}
+
+const near = (a, b) => Math.abs(a - b) < 0.005;
+
+/**
+ * Compare the figures found on a product page with the product's data.
+ * Returns problem strings ("spec mismatch: …"); an empty array means the page
+ * only states what the data supports.
+ */
+function specProblems(product, figures, classAHits) {
+  const problems = [];
+  const show = (raw) => (raw === null ? 'none' : `'${raw}'`);
+  for (const f of figures.values()) {
+    const where = [...f.sources].join('+');
+    if (f.kind === 'fire class') {
+      const allowed = product.fireClasses;
+      if (allowed === null || allowed.length === 0) problems.push(`spec mismatch: fire class ${f.figure} on a product with no fire class in product data [${where}] — "${f.context}"`);
+      else if (!allowed.includes(f.figure)) problems.push(`spec mismatch: fire class ${f.figure} not in product data (${show(product.raw.fireClass)}) [${where}] — "${f.context}"`);
+      continue;
+    }
+    const allowed = f.kind === 'αw' ? product.alphaW : product.nrc;
+    const raw = f.kind === 'αw' ? product.raw.alphaW : product.raw.nrc;
+    const value = Number(f.figure.replace(',', '.'));
+    if (allowed === null || allowed.length === 0) problems.push(`spec mismatch: ${f.kind} ${f.figure} on a product with no ${f.kind} in product data [${where}] — "${f.context}"`);
+    else if (!allowed.some((a) => near(a, value))) problems.push(`spec mismatch: ${f.kind} ${f.figure} not in product data (${show(raw)}) [${where}] — "${f.context}"`);
+  }
+  if (classAHits.length) {
+    const max = product.alphaW && product.alphaW.length ? Math.max(...product.alphaW) : null;
+    const forms = [...new Set(classAHits)].join(', ');
+    if (max === null) problems.push(`spec mismatch: "${forms}" claim on a product with no αw in product data`);
+    else if (max < 0.9 - 1e-9) problems.push(`spec mismatch: "${forms}" claim but the highest αw in product data is ${product.raw.alphaW} (< 0.90)`);
+  }
+  return problems;
+}
 
 // ---------------------------------------------------------------------------
 // English detection
@@ -273,7 +505,7 @@ async function waitFor(url, ms) {
 let server = null;
 async function ensureServer() {
   if (baseArg) return baseArg;
-  const root = resolve(dirname(new URL(import.meta.url).pathname), '..');
+  const root = ROOT;
   if (!existsSync(resolve(root, '.next', 'BUILD_ID'))) {
     if (!opts.build) throw new Error('.next build missing and --no-build given');
     console.error('[seo-check] no .next build found — running `next build` …');
@@ -383,6 +615,12 @@ async function analysePage(base, url) {
   if (page.hreflang.length > 0 && !page.hreflang.some((h) => h.hreflang === 'x-default')) page.warnings.push('hreflang set has no x-default');
   if (page.hreflang.length > 0 && !page.hreflang.some((h) => h.hreflang === locale)) page.warnings.push(`hreflang set has no self-reference (${locale})`);
 
+  // (h) product page? → its data record drives the claim exemptions + spec checks
+  const product = productFor(u.pathname);
+  page.productSlug = product?.slug ?? null;
+  const figures = new Map();
+  const jsonLdText = [];
+
   // (d) JSON-LD
   page.jsonLd = { blocks: 0, types: [], products: 0, productsWithOffers: 0, parseErrors: 0 };
   for (const raw of jsonLdBlocks(html)) {
@@ -396,19 +634,61 @@ async function analysePage(base, url) {
         page.jsonLd.products++;
         if (node.offers) page.jsonLd.productsWithOffers++;
         else page.problems.push(`Product "${node.name ?? '?'}" has no offers`);
+        // (h) countryOfOrigin: an ISO 3166-1 alpha-2 code from product data or nothing — never "EU"
+        if (node.countryOfOrigin !== undefined) {
+          const origin = typeof node.countryOfOrigin === 'object' && node.countryOfOrigin ? node.countryOfOrigin.name : node.countryOfOrigin;
+          if (!/^[A-Z]{2}$/.test(String(origin))) page.problems.push(`spec mismatch: countryOfOrigin "${origin}" is not an ISO 3166-1 alpha-2 code`);
+          else if (product && product.madeIn !== origin) page.problems.push(`spec mismatch: countryOfOrigin ${origin} but product data madeIn is ${product.madeIn ?? 'null'}`);
+        }
+        // (h) structured specs: additionalProperty name/value pairs
+        if (product && Array.isArray(node.additionalProperty)) {
+          for (const p of node.additionalProperty) {
+            const name = String(p?.name ?? '');
+            const value = String(p?.value ?? '');
+            const kind = /αw/i.test(name) ? 'αw' : /\bNRC\b/i.test(name) ? 'NRC' : /fire/i.test(name) ? 'fire class' : null;
+            if (!kind) continue;
+            const found = kind === 'fire class' ? classesIn(value) : (value.match(/[0-9][.,][0-9]{1,2}/g) ?? []);
+            for (const figure of found) {
+              const key = `${kind}:${figure}`;
+              if (!figures.has(key)) figures.set(key, { kind, figure, sources: new Set(), context: `${name}: ${value}` });
+              figures.get(key).sources.add('json-ld');
+            }
+          }
+        }
       }
     }
+    if (product) jsonLdText.push(...jsonStrings(data));
   }
 
   // (a) forbidden strings
   const text = visibleText(html);
   const textLower = text.toLowerCase();
+  const textClaim = normClaim(text);
   const titleH1 = [page.title, ...page.h1s].join(' | ').toLowerCase();
+  const seen = new Set();
   for (const f of FORBIDDEN) {
     const needle = f.needle.toLowerCase();
-    if (f.scope === 'text' && textLower.includes(needle)) page.problems.push(`forbidden string "${f.needle}"`);
+    const claim = normClaim(f.needle);
+    const dedupe = `${f.scope}|${claim}`;
+    if (seen.has(dedupe)) continue;
+    seen.add(dedupe);
+    if (f.scope === 'text' && textClaim.includes(claim)) {
+      // A product page may carry the claim only when its own data supports it (see FORBIDDEN).
+      if (f.unless && claimAllowed(product, f.unless)) continue;
+      page.problems.push(`forbidden string "${f.needle}" — "${excerpt(textClaim, claim)}"`);
+    }
     if (f.scope === 'nonEnText' && locale !== 'en' && textLower.includes(needle)) page.problems.push(`forbidden string "${f.needle}" on non-EN page`);
     if (f.scope === 'titleH1' && titleH1.includes(needle)) page.problems.push(`forbidden string "${f.needle}" in <title>/<h1>`);
+  }
+
+  // (h) spec consistency + "Class A" on product pages
+  if (product) {
+    collectFigures(text, 'text', figures);
+    collectFigures(jsonLdText.join('\n'), 'json-ld', figures);
+    const classA = [...text.matchAll(CLASS_A_RE), ...jsonLdText.join('\n').matchAll(CLASS_A_RE)].map((m) => m[0]);
+    page.figures = [...figures.values()].map((f) => `${f.kind} ${f.figure}`);
+    const specs = specProblems(product, figures, classA);
+    page.problems.push(...specs);
   }
 
   // (b) English share
@@ -639,6 +919,20 @@ try {
   for (const p of results) for (const x of p.problems.filter((y) => /missing/.test(y))) log(`FAIL ${p.path}: ${x}`);
   log('');
 
+  // (h) product claims: spec consistency + "Class A" on product pages
+  log('== (h) Product claims — αw / NRC / fire class / "Class A" on product pages vs src/data/products.ts');
+  log(`product data: ${PRODUCT_DATA.size} products parsed from src/data/products.ts`);
+  log('  slug              made  recycled  αw                              NRC                   fire class');
+  for (const d of PRODUCT_DATA.values()) {
+    log(`  ${d.slug.padEnd(17)} ${String(d.madeIn ?? '—').padEnd(5)} ${(d.recycledContentPct === null ? '—' : `${d.recycledContentPct} %`).padEnd(9)} ${String(d.raw.alphaW ?? '—').padEnd(31)} ${String(d.raw.nrc ?? '—').padEnd(21)} ${d.raw.fireClass ?? '—'}`);
+  }
+  const productPages = results.filter((p) => p.status === 200 && p.productSlug);
+  const specFails = productPages.filter((p) => p.problems.some((x) => x.startsWith('spec mismatch')));
+  log(`product pages crawled: ${productPages.length}; pages with a spec mismatch: ${specFails.length}`);
+  if (productPages.length && !specFails.length) log('OK — every αw / NRC / fire class figure on the product pages is in the product data');
+  for (const p of specFails) for (const x of p.problems.filter((y) => y.startsWith('spec mismatch'))) log(`FAIL ${p.path}: ${x}`);
+  log('');
+
   // per-page table
   log('== Per-page summary');
   log('status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%  path');
@@ -660,6 +954,10 @@ try {
     ].join('  '));
   }
   log('');
+
+  const forbiddenHits = results.reduce((n, p) => n + p.problems.filter((x) => x.startsWith('forbidden')).length, 0);
+  const specMismatches = results.reduce((n, p) => n + p.problems.filter((x) => x.startsWith('spec mismatch')).length, 0);
+  log(`== Claims: ${forbiddenHits} forbidden-string hits, ${specMismatches} spec mismatches${forbiddenHits || specMismatches ? '  ← FAIL' : '  OK'}`);
 
   const failures = results.reduce((n, p) => n + p.problems.length, 0) + broken;
   const warnings = results.reduce((n, p) => n + p.warnings.length, 0);

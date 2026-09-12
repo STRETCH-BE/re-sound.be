@@ -1,7 +1,6 @@
 // Homepage sections
 export { default as Hero } from './Hero';
 export { default as Materials } from './Materials';
-export { default as ProductsSection } from './ProductsSection';
 export { default as ProductCard } from './ProductCard';
 export { default as WhySection } from './WhySection';
 export { default as CircularSection } from './CircularSection';
@@ -12,8 +11,6 @@ export { default as PageHero } from './PageHero';
 
 // Product sections
 export { default as ProductsGrid } from './ProductsGrid';
-export { default as ProductDetail } from './ProductDetail';
-export { default as ProductSpecs } from './ProductSpecs';
 export { default as RelatedProducts } from './RelatedProducts';
 export { default as InteriorProductPage } from './InteriorProductPage';
 

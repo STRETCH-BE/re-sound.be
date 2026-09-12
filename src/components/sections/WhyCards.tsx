@@ -5,28 +5,26 @@ import { useTranslations } from 'next-intl';
 export default function WhyCards() {
   const t = useTranslations('why');
 
+  // No per-product spec values here (αw, fire class differ by model and live
+  // on the product pages); the headline of each card is a range-wide fact.
   const cards = [
     {
-      icon: '🔊',
-      value: 'Class A',
+      value: 'ISO 11654',
       label: t('features.performance.title'),
       desc: t('features.performance.description'),
     },
     {
-      icon: '🔥',
-      value: 'B-s1,d0',
+      value: t('belgianLabel'),
       label: t('features.durability.title'),
       desc: t('features.durability.description'),
     },
     {
-      icon: '🎨',
       value: '50+',
       label: t('features.customization.title'),
       desc: t('features.customization.description'),
     },
     {
-      icon: '🏭',
-      value: t('belgianLabel'),
+      value: t('freeLabel'),
       label: t('features.circular.title'),
       desc: t('features.circular.description'),
     },
@@ -46,8 +44,7 @@ export default function WhyCards() {
 
         <div className="why-grid">
           {cards.map((c) => (
-            <div key={c.value} className="why-card">
-              <div className="card-icon">{c.icon}</div>
+            <div key={c.label} className="why-card">
               <div className="card-value">{c.value}</div>
               <div className="card-label">{c.label}</div>
               <p className="card-desc">{c.desc}</p>
@@ -141,18 +138,6 @@ export default function WhyCards() {
           border-color: rgba(25, 127, 199, 0.22);
           transform: translateY(-5px);
           box-shadow: 0 20px 45px rgba(25, 127, 199, 0.1);
-        }
-
-        .card-icon {
-          width: 2.8rem;
-          height: 2.8rem;
-          border-radius: var(--radius-md);
-          background: var(--brand-blue-pale);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.3rem;
-          margin-bottom: 1.2rem;
         }
 
         .card-value {

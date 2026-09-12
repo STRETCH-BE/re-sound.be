@@ -7,25 +7,29 @@
  *
  *   t('specs.x')      → key('interiorPage.specs.x')
  *   tPage('specs.x')  → key('productPage.specs.x')
+ *
+ * Governed figures (thickness, αw, class, NRC, fire class, recycled content)
+ * come from src/data/products.ts via spec(); the old interiorPage.specs.*Value
+ * message keys for them are no longer read.
  */
 import type { SpecTableDef } from './types';
-import { key } from './types';
+import { key, spec } from './types';
 
 const specs: SpecTableDef = [
   {
     title: key('productPage.specs.dimensions'),
     rows: [
       { label: key('productPage.specs.moduleSize'), value: key('interiorPage.specs.moduleSizeValue') },
-      { label: key('productPage.specs.thickness'), value: key('interiorPage.specs.thicknessValue') },
+      { label: key('productPage.specs.thickness'), value: spec('interior', 'thickness') },
       { label: key('productPage.specs.weight'), value: key('interiorPage.specs.weightValue') },
     ],
   },
   {
     title: key('interiorPage.specs.acousticsTitle'),
     rows: [
-      { label: key('productPage.specs.absorptionCoeff'), value: key('interiorPage.specs.alphaValue') },
-      { label: key('productPage.specs.absorptionClass'), value: key('interiorPage.specs.classValue') },
-      { label: key('productPage.specs.nrc'), value: key('interiorPage.specs.nrcValue') },
+      { label: key('productPage.specs.absorptionCoeff'), value: spec('interior', 'alphaW') },
+      { label: key('productPage.specs.absorptionClass'), value: spec('interior', 'absorptionClass') },
+      { label: key('productPage.specs.nrc'), value: spec('interior', 'nrc') },
     ],
   },
   {
@@ -39,14 +43,14 @@ const specs: SpecTableDef = [
   {
     title: key('interiorPage.specs.fireTitle'),
     rows: [
-      { label: key('productPage.specs.fireRating'), value: key('interiorPage.specs.fireRatingValue') },
+      { label: key('productPage.specs.fireRating'), value: spec('interior', 'fireClass') },
       { label: key('productPage.specs.standard'), value: key('interiorPage.specs.fireStandardValue') },
     ],
   },
   {
     title: key('interiorPage.specs.sustainTitle'),
     rows: [
-      { label: key('productPage.specs.recycledContent'), value: key('interiorPage.specs.recycledValue') },
+      { label: key('productPage.specs.recycledContent'), value: spec('interior', 'recycledContentPct') },
       { label: key('productPage.specs.endOfLife'), value: key('interiorPage.specs.endOfLifeValue') },
       { label: key('productPage.specs.vocEmissions'), value: key('interiorPage.specs.vocValue') },
     ],

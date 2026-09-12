@@ -5,6 +5,14 @@ import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { PRODUCTS } from '@/data/products';
+
+// Every figure below (recycled share, thickness) comes from product data so
+// copy, specs and JSON-LD can never disagree again. 'unknown' selects the
+// figure-less ICU branch; a null spec hides the element that would show it.
+const FLEX = PRODUCTS['rpet-flex-groove'];
+const flexSpecs = FLEX.specs.kind === 'panel' ? FLEX.specs : null;
+const pct: string = FLEX.recycledContentPct === null ? 'unknown' : String(FLEX.recycledContentPct);
 
 // Color options for rPET Flex-Groove (12 colors from Refined Collection).
 // No per-colour product photography exists yet, so colours are rendered as
@@ -55,10 +63,10 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
   // pre-existing data state where some locales have the same content in both
   // fields — those render as a single paragraph; locales with genuine
   // second paragraphs render two).
-  const desc2IfDistinct = (basePath: string): string | null => {
-    const a = t(`${basePath}.description`);
+  const desc2IfDistinct = (basePath: string, values?: Record<string, string>): string | null => {
+    const a = t(`${basePath}.description`, values);
     let b: string;
-    try { b = t(`${basePath}.description2`); } catch { return null; }
+    try { b = t(`${basePath}.description2`, values); } catch { return null; }
     // next-intl returns "namespace.key" as fallback for missing keys (per
     // getMessageFallback in i18n/request.ts). Detect that and treat as absent.
     if (!b || b === a || b.endsWith('.description2')) return null;
@@ -129,16 +137,13 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">🔄</span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🔥</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">♻️</span>
-              <span className="usp-text">{t('hero.usp3')}</span>
+              <span className="usp-text">{t('hero.usp3', { pct })}</span>
             </div>
           </div>
 
@@ -298,17 +303,14 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
 
         <div className="flexibility-benefits">
           <div className="benefit">
-            <span className="benefit-icon">📐</span>
             <h4>{t('technology.feature1Title')}</h4>
             <p>{t('technology.feature1Desc')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">🔄</span>
             <h4>{t('technology.feature2Title')}</h4>
             <p>{t('technology.feature2Desc')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">✂️</span>
             <h4>{t('technology.feature3Title')}</h4>
             <p>{t('technology.feature3Desc')}</p>
           </div>
@@ -399,7 +401,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
 
           <div className="material-info">
             <div className="material-circle">
-              <span className="material-value">9mm</span>
+              {flexSpecs?.thickness && <span className="material-value">{flexSpecs.thickness}</span>}
               <span className="material-label">{t('acoustics.thicknessLabel')}</span>
             </div>
             <p>{t('acoustics.materialLabel')}</p>
@@ -408,18 +410,15 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
 
         <div className="acoustics-benefits">
           <div className="benefit">
-            <span className="benefit-icon">🔇</span>
             <h4>{t('acoustics.feature1Title')}</h4>
             <p>{t('acoustics.feature1Desc')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">🔥</span>
             <h4>{t('acoustics.feature2Title')}</h4>
             <p>{t('acoustics.feature2Desc')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">♻️</span>
-            <h4>{t('sustainability.badge1')}</h4>
+            <h4>{t('acoustics.feature3Title', { pct })}</h4>
             <p>{t('acoustics.feature3Desc')}</p>
           </div>
         </div>
@@ -498,34 +497,30 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
-            <p>{t('sustainability.description')}</p>
-            {desc2IfDistinct('sustainability') && (
-              <p>{desc2IfDistinct('sustainability')}</p>
+            <p>{t('sustainability.description', { pct })}</p>
+            {desc2IfDistinct('sustainability', { pct }) && (
+              <p>{desc2IfDistinct('sustainability', { pct })}</p>
             )}
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">🍾</span>
                 <div>
-                  <h4>{t('sustainability.badge1')}</h4>
+                  <h4>{t('sustainability.badge1', { pct })}</h4>
                   <p>{t('acoustics.feature3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">♻️</span>
                 <div>
                   <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🏭</span>
                 <div>
                   <h4>{t('sustainability.badge3')}</h4>
                   <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🌱</span>
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
                   <p>{t('sustainability.badge4Desc')}</p>
@@ -552,22 +547,18 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
 
         <div className="applications-grid">
           <div className="application-card">
-            <div className="application-icon">🏛️</div>
             <h4>{t('applications.app1')}</h4>
-            <p>{t('applications.app1')}</p>
+            <p>{t('applications.app1Desc')}</p>
           </div>
           <div className="application-card">
-            <div className="application-icon">🌀</div>
             <h4>{t('applications.app2')}</h4>
-            <p>{t('applications.app2')}</p>
+            <p>{t('applications.app2Desc')}</p>
           </div>
           <div className="application-card">
-            <div className="application-icon">🚪</div>
             <h4>{t('applications.app3')}</h4>
             <p>{t('applications.app3Desc')}</p>
           </div>
           <div className="application-card">
-            <div className="application-icon">🎯</div>
             <h4>{t('applications.app4')}</h4>
             <p>{t('applications.app4Desc')}</p>
           </div>
@@ -597,7 +588,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             </a>
           </div>
           <p className="cta-note">
-            {t('cta2.freeNote')}
+            {t('cta2.freeNote', { pct })}
           </p>
         </div>
       </section>

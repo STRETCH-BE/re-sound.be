@@ -20,12 +20,12 @@ export default function SoloFlexProductPage(slots: BoothSlots) {
         { value: '5 yr', labelKey: 'hero.statWarranty' },
       ]}
       features={[
-        { iconKey: '🌬️', key: 'ventilation' },
-        { iconKey: '🔌', key: 'electrics' },
-        { iconKey: '💡', key: 'lighting' },
-        { iconKey: '🪑', key: 'comfort' },
-        { iconKey: '♿', key: 'accessibility' },
-        { iconKey: '🛡️', key: 'safety' },
+        { iconKey: 'ventilation', key: 'ventilation' },
+        { iconKey: 'electrics', key: 'electrics' },
+        { iconKey: 'lighting', key: 'lighting' },
+        { iconKey: 'comfort', key: 'comfort' },
+        { iconKey: 'accessibility', key: 'accessibility' },
+        { iconKey: 'safety', key: 'safety' },
       ]}
       addons={[
         { id: 'sitStandDesk',    image: '/images/products/solo-flex/addon-desk.jpg' },

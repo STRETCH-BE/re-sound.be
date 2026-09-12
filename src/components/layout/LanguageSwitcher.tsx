@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
-import { locales, localeNames, localeFlags, type Locale } from '@/i18n/config';
+import { locales, localeNames, type Locale } from '@/i18n/config';
 import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
 import { analytics } from '@/lib/analytics';
 
@@ -11,7 +11,6 @@ import { analytics } from '@/lib/analytics';
 const localeList = locales.map((code) => ({
   code,
   name: localeNames[code],
-  flag: localeFlags[code],
 }));
 
 export default function LanguageSwitcher() {
@@ -65,7 +64,6 @@ export default function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-label={tNav('selectLanguage')}
       >
-        <span className="lang-flag">{currentLocale.flag}</span>
         <span className="lang-code">{currentLocale.code.toUpperCase()}</span>
         <svg
           className={`lang-arrow ${isOpen ? 'open' : ''}`}
@@ -91,7 +89,6 @@ export default function LanguageSwitcher() {
               className={`lang-option ${loc.code === locale ? 'active' : ''}`}
               onClick={() => handleLocaleChange(loc.code)}
             >
-              <span className="lang-flag">{loc.flag}</span>
               <span className="lang-code">{loc.code.toUpperCase()}</span>
               <span className="lang-name">{loc.name}</span>
             </button>
@@ -121,10 +118,6 @@ export default function LanguageSwitcher() {
 
         .lang-toggle:hover {
           border-color: var(--brand-blue);
-        }
-
-        .lang-flag {
-          font-size: 1rem;
         }
 
         .lang-code {

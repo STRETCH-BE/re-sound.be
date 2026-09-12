@@ -4,9 +4,15 @@
  * Transcribed from src/components/sections/rwoodveneerpage.tsx,
  * the former <section id="specs"> (lines 737–820 of the pre-refactor file),
  * card by card and row by row, in the original order.
+ *
+ * Governed figures come from src/data/products.ts via spec(): the two
+ * thickness rows (standard / slim) became one row showing the stored
+ * "12 / 19 mm", the two fire rows (standard / FR MDF) became one row showing
+ * the stored per-core string. FSC and EPD rows are guarded by cert(). The felt
+ * certification row was removed (OEKO-TEX is not held for rWood).
  */
 import type { SpecTableDef } from './types';
-import { key } from './types';
+import { cert, key, spec } from './types';
 
 const specs: SpecTableDef = [
   {
@@ -14,8 +20,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodVeneerPage.specs.dimPanelWidth'), value: '1220 mm' },
       { label: key('rwoodVeneerPage.specs.dimPanelLength'), value: '2800 / 3050 mm' },
-      { label: key('rwoodVeneerPage.specs.dimThicknessStd'), value: '19 mm' },
-      { label: key('rwoodVeneerPage.specs.dimThicknessSlim'), value: '12 mm' },
+      { label: key('productPage.specLabels.thickness'), value: spec('rwood-veneer', 'thickness') },
       { label: key('rwoodVeneerPage.specs.dimWeight19'), value: '± 14.5 kg/m²' },
     ],
   },
@@ -41,18 +46,22 @@ const specs: SpecTableDef = [
   {
     title: key('rwoodVeneerPage.specs.fireTitle'),
     rows: [
-      { label: key('rwoodVeneerPage.specs.fireStdMDF'), value: 'D-s2, d0' },
-      { label: key('rwoodVeneerPage.specs.fireFRMDF'), value: 'B-s1, d0' },
+      { label: key('productPage.specLabels.reactionFire'), value: spec('rwood-veneer', 'fireClass') },
       { label: key('productPage.specs.testStandard'), value: 'EN 13501-1' },
     ],
   },
   {
     title: key('rwoodVeneerPage.specs.certsTitle'),
     rows: [
-      { label: key('rwoodVeneerPage.specs.certWoodSourcing'), value: key('productPage.specs.fscCertified') },
+      {
+        label: key('rwoodVeneerPage.specs.certWoodSourcing'),
+        value: cert('rwood-veneer', 'FSC', 'productPage.specs.fscCertified'),
+      },
       { label: key('productPage.specs.vocEmissions'), value: key('productData.specValues.e1Carb2Compliant') },
-      { label: key('rwoodVeneerPage.specs.certEnvironmental'), value: key('productPage.specs.epd') },
-      { label: key('rwoodVeneerPage.specs.certFelt'), value: 'OEKO-TEX® Standard 100' },
+      {
+        label: key('rwoodVeneerPage.specs.certEnvironmental'),
+        value: cert('rwood-veneer', 'EPD', 'productPage.specs.epd'),
+      },
     ],
   },
   {

@@ -1,14 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Icon, { type IconName } from '@/components/ui/Icon';
 
 export default function AboutTeam() {
   const t = useTranslations('about.team');
 
-  const team = [
-    { name: 'Team Member', role: t('roles.founder'), emoji: '👤' },
-    { name: 'Team Member', role: t('roles.operations'), emoji: '👤' },
-    { name: 'Team Member', role: t('roles.sales'), emoji: '👤' },
+  const team: { name: string; role: string; icon: IconName }[] = [
+    { name: 'Team Member', role: t('roles.founder'), icon: 'person' },
+    { name: 'Team Member', role: t('roles.operations'), icon: 'person' },
+    { name: 'Team Member', role: t('roles.sales'), icon: 'person' },
   ];
 
   return (
@@ -22,7 +23,7 @@ export default function AboutTeam() {
           {team.map((member, index) => (
             <div key={index} className="team-card">
               <div className="team-photo">
-                <span>{member.emoji}</span>
+                <Icon name={member.icon} />
               </div>
               <h3>{member.name}</h3>
               <p>{member.role}</p>
@@ -74,7 +75,12 @@ export default function AboutTeam() {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 4rem;
+          color: var(--brand-blue);
+        }
+
+        .team-photo :global(svg) {
+          width: 64px;
+          height: 64px;
         }
 
         .team-card h3 {
@@ -111,7 +117,11 @@ export default function AboutTeam() {
           .team-photo {
             width: 120px;
             height: 120px;
-            font-size: 3rem;
+          }
+
+          .team-photo :global(svg) {
+            width: 48px;
+            height: 48px;
           }
         }
       `}</style>

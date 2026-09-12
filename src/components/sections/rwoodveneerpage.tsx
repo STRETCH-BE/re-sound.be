@@ -1,15 +1,22 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Code-split the sample-kit modal — it only renders after user interaction,
-// so it doesn't belong in the initial bundle.
-const SampleKitModal = dynamic(() => import('@/components/sections/SampleKitModal'), { ssr: false });
+// Single source for every spec figure on this page (thickness, origin …):
+// src/data/products.ts. Nothing below may hard-code one of these values.
+const PRODUCT = PRODUCTS['rwood-veneer'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+// thickness is stored as '12 / 19 mm' → ['12 mm', '19 mm'] (slim first, standard last)
+const thicknessOptions = panelSpecs?.thickness
+  ? panelSpecs.thickness.replace(/\s*mm\s*$/, '').split('/').map((s) => `${s.trim()} mm`)
+  : [];
+const slimThickness = thicknessOptions[0] ?? '';
+const standardThickness = thicknessOptions[thicknessOptions.length - 1] ?? '';
 
 // Veneer collection — keys are stable identifiers; display strings come from i18n
 // (see rwoodVeneerPage.collectionData.{categories,origins,grains} in messages/*.json)
@@ -70,9 +77,9 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
 
   // Panel format options (inside component so t() is available)
   const formatOptions = [
-    { id: 'standard', name: t('dimensions.standardName'), width: '1220 mm', length: '2800 mm', thickness: '19 mm', description: t('dimensions.standardDesc') },
-    { id: 'large', name: t('dimensions.largeName'), width: '1220 mm', length: '3050 mm', thickness: '19 mm', description: t('dimensions.largeDesc') },
-    { id: 'slim', name: t('dimensions.slimName'), width: '1220 mm', length: '2800 mm', thickness: '12 mm', description: t('dimensions.slimDesc') },
+    { id: 'standard', name: t('dimensions.standardName'), width: '1220 mm', length: '2800 mm', thickness: standardThickness, description: t('dimensions.standardDesc') },
+    { id: 'large', name: t('dimensions.largeName'), width: '1220 mm', length: '3050 mm', thickness: standardThickness, description: t('dimensions.largeDesc') },
+    { id: 'slim', name: t('dimensions.slimName'), width: '1220 mm', length: '2800 mm', thickness: slimThickness, description: t('dimensions.slimDesc') },
   ];
 
   // Finish type options (inside component so t() is available)
@@ -87,7 +94,6 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
   const [selectedFormat, setSelectedFormat] = useState(formatOptions[0]);
   const [selectedFinish, setSelectedFinish] = useState(finishTypes[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
-  const [sampleModalOpen, setSampleModalOpen] = useState(false);
 
   const currentHeroImage = selectedVeneer ? selectedVeneer.image : defaultHeroImage;
 
@@ -149,15 +155,12 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">🌳</span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">✦</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🔄</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
@@ -459,19 +462,15 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
               <h3>{t('anatomy.keyAdvTitle')}</h3>
               <div className="advantages-grid">
                 <div className="advantage">
-                  <span className="adv-icon">🛡️</span>
                   <span>{t('finishes.adv1')}</span>
                 </div>
                 <div className="advantage">
-                  <span className="adv-icon">💧</span>
                   <span>{t('finishes.adv2')}</span>
                 </div>
                 <div className="advantage">
-                  <span className="adv-icon">👆</span>
                   <span>{t('finishes.adv3')}</span>
                 </div>
                 <div className="advantage">
-                  <span className="adv-icon">🧹</span>
                   <span>{t('finishes.adv4')}</span>
                 </div>
               </div>
@@ -626,42 +625,42 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">🌲</span>
                 <div>
                   <h3>{t('sustainability.badge1')}</h3>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">♻️</span>
                 <div>
                   <h3>{t('sustainability.badge2')}</h3>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
-              <div className="sustain-item">
-                <span className="sustain-icon">🏭</span>
-                <div>
-                  <h3>{t('sustainability.badge3')}</h3>
-                  <p>{t('sustainability.badge3Desc')}</p>
+              {/* Origin badge: only when the plant is confirmed in product data (PL → Częstochowa) */}
+              {PRODUCT.madeIn === 'PL' && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge3')}</h3>
+                    <p>{t('sustainability.badge3Desc')}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="sustain-item">
-                <span className="sustain-icon">📋</span>
-                <div>
-                  <h3>{t('sustainability.badge4')}</h3>
-                  <p>{t('sustainability.badge4Desc')}</p>
+              )}
+              {/* EPD badge only while the certification is in product data */}
+              {PRODUCT.certifications.includes('EPD') && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge4')}</h3>
+                    <p>{t('sustainability.badge4Desc')}</p>
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="sustain-item">
-                <span className="sustain-icon">🌿</span>
                 <div>
                   <h3>{t('sustainability.badge5')}</h3>
                   <p>{t('sustainability.badge5Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">⚡</span>
                 <div>
                   <h3>{t('sustainability.badge6')}</h3>
                   <p>{t('sustainability.badge6Desc')}</p>
@@ -725,24 +724,12 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             </div>
             <h3>{t('accessories.item3Title')}</h3>
             <p>{t('related.item3Desc')}</p>
-            <button
-              type="button"
-              className="matching-link"
-              onClick={() => setSampleModalOpen(true)}
-              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, font: 'inherit' }}
-            >
+            <Link href="/samples" prefetch={false} className="matching-link">
               {t('related.orderSamples')}
-            </button>
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Sample Kit Modal — opened by the "Order Sample Kit" link in the related/accessories card */}
-      <SampleKitModal
-        open={sampleModalOpen}
-        onClose={() => setSampleModalOpen(false)}
-        source="Sample Kit Request — rWood Veneer Product Page"
-      />
 
       {/* FAQ — server-rendered (see route page) */}
       {faq}
@@ -1349,11 +1336,12 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           margin: 0 0 1rem; line-height: 1.5;
         }
 
-        .matching-link {
+        /* Links render outside this component's styled-jsx scope */
+        .matching-card :global(.matching-link) {
           font-size: 0.9rem; color: #7ec8f5; text-decoration: none;
           font-weight: 600; transition: color 0.2s;
         }
-        .matching-link:hover { color: white; }
+        .matching-card :global(.matching-link:hover) { color: white; }
 
         /* ─── CTA ─── */
         .cta-section {

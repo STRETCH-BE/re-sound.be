@@ -4,12 +4,15 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
-import SampleKitModal from './SampleKitModal';
-import { PRODUCTS } from '@/data/products';
+import { PRODUCTS, type PanelSpecs } from '@/data/products';
+
+/** The rWood product each veneer is photographed on — drives the spec card. */
+type VeneerSlug = 'rwood-groove' | 'rwood-veneer';
 
 interface Veneer {
   name: string;
   code: string;
+  slug: VeneerSlug;
   heroImage: string;   // full-panel image shown in the hero when selected
   swatchImage: string; // small swatch image
 }
@@ -18,36 +21,42 @@ const VENEERS: Veneer[] = [
   {
     name: 'Silk Oak',
     code: 'RW-SILK',
+    slug: 'rwood-groove',
     heroImage: '/images/products/rwood-groove/silk-oak.jpg',
     swatchImage: '/images/products/rwood-groove/swatches/silk-oak.jpg',
   },
   {
     name: 'Straw Oak',
     code: 'RW-STRAW',
+    slug: 'rwood-groove',
     heroImage: '/images/products/rwood-groove/straw-oak.jpg',
     swatchImage: '/images/products/rwood-groove/swatches/straw-oak.jpg',
   },
   {
     name: 'Umber Oak',
     code: 'RW-UMBER',
+    slug: 'rwood-groove',
     heroImage: '/images/products/rwood-groove/umber-oak.jpg',
     swatchImage: '/images/products/rwood-groove/swatches/umber-oak.jpg',
   },
   {
     name: 'Tobacco Walnut',
     code: 'RW-TOB',
+    slug: 'rwood-groove',
     heroImage: '/images/products/rwood-groove/tobacco-walnut.jpg',
     swatchImage: '/images/products/rwood-groove/swatches/tobacco-walnut.jpg',
   },
   {
     name: 'Walnut',
     code: 'RW-WAL',
+    slug: 'rwood-groove',
     heroImage: '/images/products/rwood-groove/walnut.jpg',
     swatchImage: '/images/products/rwood-groove/swatches/walnut.jpg',
   },
   {
     name: 'Ash White',
     code: 'RW-ASH',
+    slug: 'rwood-veneer',
     // The white-ash photo lives in rwood-micro/ under its original filename
     // (spaces %20-escaped) — the old ASH-White*.jpg paths never existed.
     heroImage: '/images/products/rwood-micro/White%20Quarter%20Cut%20Ash.jpg',
@@ -56,12 +65,14 @@ const VENEERS: Veneer[] = [
   {
     name: 'Birch Sliced',
     code: 'RW-BIR',
+    slug: 'rwood-veneer',
     heroImage: '/images/products/rwood-veneer/Birch-Sliced.jpg',
     swatchImage: '/images/products/rwood-veneer/Birch-Sliced.jpg',
   },
   {
     name: 'Beech White',
     code: 'RW-BEECH',
+    slug: 'rwood-veneer',
     heroImage: '/images/products/rwood-veneer/Beech-White.jpg',
     swatchImage: '/images/products/rwood-veneer/Beech-White.jpg',
   },
@@ -70,9 +81,8 @@ const VENEERS: Veneer[] = [
 // The first 5 veneers appear in the strip (groove range — they have full-panel photos)
 const STRIP_VENEERS = VENEERS.slice(0, 5);
 
-// Veneers 0–4 are photographed on rWood Groove, the last three on rWood Panel.
 function veneerAlt(v: Veneer, kind: 'swatch' | 'panel'): string {
-  const product = VENEERS.indexOf(v) < 5 ? 'rWood Groove' : 'rWood Panel';
+  const product = PRODUCTS[v.slug].name;
   return kind === 'swatch'
     ? `${v.name} veneer swatch — ${product}`
     : `${v.name} veneer on ${product} acoustic panel`;
@@ -80,21 +90,26 @@ function veneerAlt(v: Veneer, kind: 'swatch' | 'panel'): string {
 
 const RWOOD_GROOVE_DATASHEET = PRODUCTS['rwood-groove'].documents.find((d) => d.id === 'datasheet')!.file;
 
+/**
+ * Spec values come only from src/data/products.ts — nothing is hard-coded
+ * here. A null value (e.g. rWood Panel has no αw yet) simply hides the row.
+ */
+function panelSpecs(slug: VeneerSlug): PanelSpecs | null {
+  const s = PRODUCTS[slug].specs;
+  return s.kind === 'panel' ? s : null;
+}
+
+/** True when the product's material (products.ts) names a recycled core. */
+function hasRecycledCore(slug: VeneerSlug): boolean {
+  return /recycled/i.test(PRODUCTS[slug].material);
+}
+
 const DEFAULT_HERO = '/images/products/rwood-groove/hero-rWood-Groove.webp';
 
 export default function RWoodShowcase() {
   const t = useTranslations('rwood');
   const [activeVeneer, setActiveVeneer] = useState<Veneer | null>(null);
   const [fadeKey, setFadeKey] = useState(0);
-  const [sampleModalOpen, setSampleModalOpen] = useState(false);
-  // Track which CTA opened the sample modal so the lead email's Source field
-  // can distinguish hero vs swatches panel — useful for measuring CTA pull.
-  const [sampleSource, setSampleSource] = useState('Sample Kit Request — rWood Section');
-
-  function openSampleModal(source: string) {
-    setSampleSource(source);
-    setSampleModalOpen(true);
-  }
 
   const currentHero = activeVeneer?.heroImage ?? DEFAULT_HERO;
   const currentLabel = activeVeneer
@@ -107,12 +122,28 @@ export default function RWoodShowcase() {
     setFadeKey((k) => k + 1); // triggers CSS fade animation
   }
 
+  // Measured rows for one product, from product data only (null → no row).
+  function measuredRows(slug: VeneerSlug): { key: string; val: string }[] {
+    const s = panelSpecs(slug);
+    if (!s) return [];
+    const rows: { key: string; val: string }[] = [];
+    if (s.alphaW) rows.push({ key: t('specAbsorptionKey'), val: `αw ${s.alphaW}` });
+    if (s.fireClass) rows.push({ key: t('specFireKey'), val: s.fireClass });
+    if (s.thickness) rows.push({ key: t('specThicknessKey'), val: s.thickness });
+    return rows;
+  }
+
+  // The floating card follows the selected veneer's product (rWood Groove or
+  // rWood Panel); the specification table below is rWood Groove's, which is
+  // what its "Full Specifications" / datasheet links point to.
+  const floatSlug: VeneerSlug = activeVeneer?.slug ?? 'rwood-groove';
+  const floatRows = measuredRows(floatSlug);
+  const floatHasCore = hasRecycledCore(floatSlug);
+
   const specs = [
-    { key: t('specAbsorptionKey'), val: 'αw 0.90 – 0.95' },
-    { key: t('specFireKey'), val: 'B-s1,d0' },
-    { key: t('specThicknessKey'), val: '40 mm' },
+    ...measuredRows('rwood-groove'),
     { key: t('specVariantsKey'), val: t('specVariantsVal') },
-    { key: t('specCoreKey'), val: t('specCoreVal') },
+    ...(hasRecycledCore('rwood-groove') ? [{ key: t('specCoreKey'), val: t('specCoreVal') }] : []),
     { key: t('specStandardKey'), val: t('specStandardVal') },
   ];
 
@@ -148,13 +179,9 @@ export default function RWoodShowcase() {
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <button
-              type="button"
-              className="rwood-btn-ghost"
-              onClick={() => openSampleModal('Sample Kit Request — rWood Hero')}
-            >
+            <Link href="/samples" prefetch={false} className="rwood-btn-ghost">
               {t('ctaSample')}
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -162,22 +189,18 @@ export default function RWoodShowcase() {
         <div className="spec-float">
           <div className="spec-float-tag">{currentLabel}</div>
           <div className="spec-float-grid">
-            <div className="sfg-cell">
-              <span className="sfg-k">{t('specAbsorptionKey')}</span>
-              <span className="sfg-v">αw 0.95</span>
-            </div>
-            <div className="sfg-cell">
-              <span className="sfg-k">{t('specFireKey')}</span>
-              <span className="sfg-v">B-s1,d0</span>
-            </div>
-            <div className="sfg-cell">
-              <span className="sfg-k">{t('specThicknessKey')}</span>
-              <span className="sfg-v">40 mm</span>
-            </div>
-            <div className="sfg-cell">
-              <span className="sfg-k">{t('specCoreKey')}</span>
-              <span className="sfg-v">{t('specCoreVal')}</span>
-            </div>
+            {floatRows.map((r) => (
+              <div key={r.key} className="sfg-cell">
+                <span className="sfg-k">{r.key}</span>
+                <span className="sfg-v">{r.val}</span>
+              </div>
+            ))}
+            {floatHasCore && (
+              <div className="sfg-cell">
+                <span className="sfg-k">{t('specCoreKey')}</span>
+                <span className="sfg-v">{t('specCoreVal')}</span>
+              </div>
+            )}
           </div>
           {/* Active veneer indicator */}
           {activeVeneer && (
@@ -314,16 +337,12 @@ export default function RWoodShowcase() {
             })}
           </div>
 
-          <button
-            type="button"
-            className="rwood-btn-primary sample-btn"
-            onClick={() => openSampleModal('Sample Kit Request — rWood Veneer Collection')}
-          >
+          <Link href="/samples" prefetch={false} className="rwood-btn-primary rwood-sample-btn">
             {t('ctaOrderSamples')}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14m-7-7l7 7-7 7" />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -705,7 +724,8 @@ export default function RWoodShowcase() {
           font-weight: 700;
         }
 
-        .sample-btn {
+        /* On a Link (rendered outside this component's scope), so global */
+        :global(.rwood-sample-btn) {
           width: 100%;
           justify-content: center;
         }
@@ -838,15 +858,6 @@ export default function RWoodShowcase() {
         }
       `}</style>
     </section>
-
-    {/* Sample-kit modal — triggered by both the hero "Request Sample" and the
-        "Order Sample Kit" button in the veneer-collection panel. The `source`
-        is set per click so the resulting lead email distinguishes which CTA fired. */}
-    <SampleKitModal
-      open={sampleModalOpen}
-      onClose={() => setSampleModalOpen(false)}
-      source={sampleSource}
-    />
     </>
   );
 }

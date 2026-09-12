@@ -5,11 +5,13 @@ import { useTranslations } from 'next-intl';
 export default function ImpactStats() {
   const t = useTranslations('sustainability.impact');
 
+  // The former fourth card ("100 %" return-programme participation) is gone:
+  // no participation figure is verified (see docs/needs-michael.md). Re-add
+  // it with `t('returnRate')` once a real figure exists.
   const stats = [
     { number: '50+', unit: t('units.tons'), label: t('textilesSaved') },
     { number: '10K+', unit: 'm²', label: t('panelsProduced') },
     { number: '0%', unit: '', label: t('wasteToLandfill') },
-    { number: '100%', unit: '', label: t('returnRate') },
   ];
 
   return (
@@ -55,7 +57,7 @@ export default function ImpactStats() {
 
         .impact-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
         }
 
@@ -93,7 +95,15 @@ export default function ImpactStats() {
 
         @media (max-width: 992px) {
           .impact-grid {
-            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+          }
+
+          .impact-card {
+            padding: 1.5rem 1rem;
+          }
+
+          .impact-number {
+            font-size: 2.75rem;
           }
         }
 

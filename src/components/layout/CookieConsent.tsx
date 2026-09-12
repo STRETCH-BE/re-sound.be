@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import Icon from '@/components/ui/Icon';
 import {
   CONSENT_OPEN_EVENT,
   getConsent,
@@ -75,7 +76,10 @@ export default function CookieConsent() {
     >
       <div className="cookie-content">
         <div className="cookie-text">
-          <h3 id="cookie-banner-title">🍪 {t('title')}</h3>
+          <h3 id="cookie-banner-title">
+            <Icon name="cookie" size={20} />
+            {t('title')}
+          </h3>
           <p>
             {t('description')}{' '}
             <Link href="/privacy" className="cookie-link" prefetch={false}>
@@ -211,9 +215,16 @@ export default function CookieConsent() {
         }
 
         .cookie-text h3 {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
           font-size: 1.1rem;
           color: var(--deep-blue);
           margin-bottom: 0.25rem;
+        }
+        .cookie-text h3 :global(svg) {
+          flex: none;
+          color: var(--brand-blue);
         }
         .cookie-text p {
           color: #555;

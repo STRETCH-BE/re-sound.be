@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "Hljóðdeyfiplötur og símaklefar, framleitt í Belgíu | Re-Sound",
+    "homeTitle": "Hljóðdeyfiplötur og símaklefar — belgískur framleiðandi | Re-Sound",
     "homeDescription": "Hringrásarmiðaðar hljóðdeyfiplötur (textíll, rWood spónn, rPET) og símaklefar, framleitt í eigin verksmiðjum í Belgíu og Póllandi. Ókeypis skilakerfi.",
     "productsTitle": "Vörur",
     "productsDescription": "Hringrásar hljóðvistarplötur og símaklefar úr eigin verksmiðjum: textíl (Interior, Solid, Divide), rWood, rPET og klefar (Solo Flex, Duo, Modular XL).",
@@ -13,7 +13,7 @@
     "blogTitle": "Blogg",
     "blogDescription": "Innsýn í hringrásarhagkerfið, hljóðvist og sjálfbæra hönnun frá Re-Sound teyminu.",
     "interiorTitle": "Interior – hljóðdeyfiplötur fyrir veggi | Re-Sound",
-    "interiorDescription": "Einingaskiptar hljóðdeyfiplötur á veggi úr endurunnum textíl: ísog í flokki A (αw 1,0), laust þvottahæft áklæði, framleitt í Belgíu. Frá {fromPrice} á sett.",
+    "interiorDescription": "Einingaskiptar hljóðdeyfiplötur á veggi úr endurunnum textíl: ísog í flokki A (αw {alphaW}), laust þvottahæft áklæði, framleitt í Belgíu. Frá {fromPrice} á sett.",
     "solidTitle": "Solid – hljóðdeyfiplötur fyrir veggi | Re-Sound",
     "solidDescription": "Stórar hljóðdeyfiplötur á veggi (1200 × 600 mm) fyrir öflugt hljóðísog. Uppsetning á krókum, kjarni úr endurunnum textíl, framleitt í Belgíu.",
     "divideTitle": "Divide – frístandandi hljóðskilrúm | Re-Sound",
@@ -23,7 +23,7 @@
     "rwoodPerfTitle": "rWood Perf – götaðar hljóðdeyfiplötur úr viði | Re-Sound",
     "rwoodPerfDescription": "Götaðar hljóðdeyfiplötur úr viði með FSC-vottuðum spón: fjögur götunarmynstur fyrir breiðbandsísog, 8 áferðir, eldtefjandi kjarni.",
     "rwoodMicroTitle": "rWood Micro – örgötaðar hljóðdeyfiplötur úr viði | Re-Sound",
-    "rwoodMicroDescription": "Örgötaðar hljóðdeyfiplötur úr viði (0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur B-s1,d0, möguleiki á baklýsingu.",
+    "rwoodMicroDescription": "Örgötaðar hljóðdeyfiplötur úr viði (0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur {fireClass}, möguleiki á baklýsingu.",
     "rwoodVeneerTitle": "rWood Panel – spónlagðar hljóðdeyfiplötur, 10 tegundir | Re-Sound",
     "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 10 viðartegundum: húsgagnagæði, FSC-vottaðar, EPD fáanlegt. Burstaðar, litaðar og lakkaðar, tilbúnar í uppsetningu.",
     "rpetGrooveTitle": "rPET Groove – rifjaðar PET hljóðdeyfiplötur, 12 litir | Re-Sound",
@@ -67,17 +67,18 @@
       "badge": "rWood Röð · Náttúruleg Yfirborðslína",
       "title": "Hringrásarmiðaðar hljóðdeyfiplötur og símaklefar,",
       "titleHighlight": "úr okkar eigin verksmiðjum",
-      "subtitle": "Raunverulegt viðarfineera á hávirku endurunnnu hljóðkjarna. Lífræn hlýja og hljóðfrásog í flokki A í einu paneli.",
+      "subtitle": "Ekta viðarspónn á endurunnum hljóðkjarna. Lífræn hlýja og hljóðísog, mælt fyrir hverja vöru — fallega sameinað.",
       "ctaPrimary": "Uppgötvaðu rWood",
       "ctaSecondary": "Skoða yfirborð",
       "statVeneers": "Tré-fineertegund",
-      "statThickness": "Þykkt",
-      "statAbsorption": "Frásog",
-      "statFire": "Brunaflokkun",
       "pill1": "Ekta viðarspónn",
       "pill2": "Endurunninn kjarni",
       "pill3": "Heilt & götuð",
-      "imageAlt": "rWood Micro hljóðdeyfiplata með náttúrulegum viðarspæni, nærmynd af áferðinni"
+      "imageAlt": "rWood Micro hljóðdeyfiplata með náttúrulegum viðarspæni, nærmynd af áferðinni",
+      "statCertified": "Vottaður spónn",
+      "statTypes": "Plötugerðir",
+      "statSizes": "Stærðir eftir óskum",
+      "statSizesValue": "Sérsniðið"
     },
     "circular": {
       "badge": "Hringrásarröð · Interior · Solid · Divide · rPET",
@@ -86,27 +87,27 @@
       "subtitle": "Endurunnin inntaka. Ókeypis skilagreiðsla við lok líftíma. Hringrásarkerfið okkar tryggir að hljóðfjárfesting þín verði aldrei úrgangur.",
       "ctaPrimary": "Sjá allar vörur",
       "ctaSecondary": "Hvernig það virkar",
-      "statRecycled": "Endurunnin inntaka",
       "statLandfill": "Urðunarúrgangur",
       "statFreeLabel": "Ókeypis",
       "statTakeback": "Til baka",
       "statColors": "Litir",
-      "pill1": "100 % endurunnið",
+      "pill1": "Endurunnið hráefni",
       "pill2": "Ókeypis skil",
       "pill3": "50+ litir",
       "pill4": "Eigin verksmiðjur",
-      "imageAlt": "Interior hringrásar-hljóðdeyfiplötur á nútímalegri skrifstofu"
+      "imageAlt": "Interior hringrásar-hljóðdeyfiplötur á nútímalegri skrifstofu",
+      "statPlants": "Eigin verksmiðjur, BE og PL"
     }
   },
   "ticker": {
     "recycled": "Endurvinnanlegar efni",
-    "classA": "Flokk A hljóðfrásog",
-    "fire": "Brunaflokkur B-s1,d0",
     "takeback": "Ókeypis endurheimt forrit",
     "veneer": "Raunverulegt viðarfineera yfirborð",
     "colors": "Yfir 50 staðalitir",
     "custom": "Sérsniðin stærð að beiðni",
-    "factories": "Úr eigin verksmiðjum"
+    "factories": "Framleitt í eigin verksmiðjum í Belgíu og Póllandi",
+    "tested": "Prófað fyrir hverja vöru: ISO 11654 / EN 13501-1",
+    "returnable": "Hannað til að koma aftur"
   },
   "materials": {
     "tag": "ÞAÐ SEM VIÐ NOTUM",
@@ -143,7 +144,7 @@
     "specStandardVal": "Sérsmíði eftir óskum",
     "swatchesTag": "Spónsafn",
     "swatchesTitle": "Veldu þína náttúrulegu áferð",
-    "swatchesBody": "Fimm viðartegundir, hver með sinn karakter. Allar lagðar á 100% endurunninn hljóðkjarna.",
+    "swatchesBody": "Fimm viðartegundir, hver með sinn karakter. Allar lagðar á endurunninn hljóðkjarna.",
     "ctaFullSpec": "Full tæknilýsing",
     "ctaDatasheet": "Hlaða niður gagnablaði",
     "ctaOrderSamples": "Panta sýnishorn",
@@ -154,7 +155,7 @@
     "tag": "VÖRUR OKKAR",
     "title": "Hljóðlausnir",
     "titleHighlight": "fyrir hvert rými.",
-    "mosaicSubtitle": "Frá hlutbundnum veggpanelum til frjálsstæðra skipta — allar úr 100% endurunnnum efnum, allar hannaðar til að koma aftur.",
+    "mosaicSubtitle": "Frá einingaskiptum veggplötum til frístandandi skilrúma — endurunnið efni í hverri vörulínu og allar hannaðar til að koma aftur.",
     "viewAll": "Sjá allar vörur",
     "learnMore": "Lærðu meira",
     "pageTitle": "Vörur okkar",
@@ -188,7 +189,7 @@
     "interior": {
       "title": "Interior",
       "description": "Stækkanlegar hljóðdeyfiplötur fyrir veggi og loft. Fullkomnar fyrir skrifstofur, veitingastaði og almenningsrými.",
-      "fullDescription": "Interior panelarnar okkar eru hannaðar fyrir óaðfinnanlega samþættingu í hvaða rými sem er. Gerðar úr 100% endurunnnum textíl og fáanlegar í yfir 50 litum."
+      "fullDescription": "Interior-plöturnar okkar eru hannaðar til að falla óaðfinnanlega inn í hvaða rými sem er. Þær eru gerðar úr endurunnum textíltrefjum, veita framúrskarandi hljóðísog og gefa umhverfinu um leið sjónræna hlýju."
     },
     "solid": {
       "title": "Solid",
@@ -203,12 +204,12 @@
     "rwood-groove": {
       "title": "rWood - Groove",
       "description": "Úrvals hljóðfræðilegar viðarpaneler með náttúrulegum eik- og valnötufineera. Glæsilegur hönnun með yfirburða hljóðstýringu.",
-      "fullDescription": "rWood - Groove paneler sameina náttúrulega fegurð FSC®-vottuðs viðar með framúrskarandi hljóðfræðilegri frammistöðu."
+      "fullDescription": "rWood - Groove plötur sameina náttúrulega fegurð FSC-vottaðs viðar og framúrskarandi hljóðvistareiginleika. Með nákvæmnisfræstum rifum og innbyggðu filtbaki umbreyta þessar plötur hvaða rými sem er með hlýju og stíl. Mælt hljóðísogsgildi er að finna á vörusíðunni."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
       "description": "Sjálfbærar rifjaðar hljóðdeyfiplötur úr endurunnu PET. Nútímalegt útlit með framúrskarandi hljóðvist.",
-      "fullDescription": "rPET - Groove paneler hafa sérkennikegt línulegt mynstur búið til úr 100% endurunnnum PET-flöskum."
+      "fullDescription": "rPET - Groove plötur hafa einkennandi línulegt mynstur sem er búið til úr endurunnum PET-flöskum. Rifjaða hönnunin hámarkar hljóðísog og gefur veggjum og loftum um leið nútímalega áferð."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
@@ -228,7 +229,7 @@
     "rpet-flex-groove": {
       "title": "rPET - Flex Groove",
       "description": "Sveigjanleg drillað hljóðpanel úr endurunnnum PET. Fjölhæfar uppsetningarmöguleikar með nútímalegri fagurfræði.",
-      "fullDescription": "rPET - Flex Groove býður upp á sama einkennilega drillað hönnun og staðlað rPET panelarnar okkar, með auknum uppsetningarflexbility."
+      "fullDescription": "rPET - Flex Groove býður upp á sömu einkennandi rifjuðu hönnun og staðal-rPET plöturnar okkar, með auknum sveigjanleika við uppsetningu. Þær eru gerðar úr endurunnum PET-flöskum, skila framúrskarandi hljóðvist og laga sig að fjölbreyttum uppsetningarmöguleikum."
     },
     "rwood-perf": {
       "title": "rWood - Perf",
@@ -242,7 +243,7 @@
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
-      "description": "Sléttar hljóðfræðilegar viðarfineerpaneler. Tímalaus glæsileiki með hljóðfrásog í flokki A fyrir úrvalrými.",
+      "description": "Hreinar, sléttar hljóðdeyfiplötur með viðarspæni. Tímalaus glæsileiki og hljóðlát þægindi fyrir vönduð rými.",
       "fullDescription": "rWood - Veneer býður upp á hreina, óslitna fegurð FSC®-vottuðs viðarfineera studd af hávirku hljóðfræðilegri frammistöðu."
     },
     "highlights": {
@@ -252,21 +253,21 @@
       },
       "recyclable": {
         "title": "Endurvinnanlegur",
-        "value": "100% við lok líftíma"
+        "value": "Ókeypis skil við lok líftíma"
       },
       "origin": {
         "title": "Uppruni",
-        "value": "Framleitt í Belgíu"
+        "value": "Eigin verksmiðjur í Belgíu og Póllandi"
       }
     },
     "features": {
       "performance": {
         "title": "Mikil afköst",
-        "description": "Hljóðísog í flokki A fyrir bestu hljóðvist í hvaða umhverfi sem er."
+        "description": "Hljóðísog mælt fyrir hverja vöru samkvæmt ISO 11654 — gildið er á hverri vörusíðu."
       },
       "circular": {
         "title": "Fullkomlega hringrásarmiðað",
-        "description": "Framleitt úr endurunnum efnum og 100% endurvinnanlegt við lok líftíma."
+        "description": "Framleitt úr endurunnum efnum og tekið til baka án endurgjalds við lok líftíma."
       },
       "customization": {
         "title": "Sérsniðnir valkostir",
@@ -288,6 +289,12 @@
     "solo-eco": {
       "title": "Solo ECO",
       "description": "Símaklefi fyrir einn á skrifstofuna, grunngerð: 1,1 m² gólfflötur, standborð, tengill að hætti hvers lands með USB, lokaður bakveggur eða úr gleri."
+    },
+    "applications": {
+      "educationSports": "Menntun og íþróttir",
+      "office": "Skrifstofa",
+      "private": "Einkarými",
+      "healthcare": "Heilbrigðisþjónusta"
     }
   },
   "specs": {
@@ -300,7 +307,7 @@
     "absorption": "Frásogsstuðull",
     "fireClass": "Brunaflokkun",
     "material": "Efni",
-    "recycledTextiles": "100% Endurunninn textíll",
+    "recycledTextiles": "Endurunnar textíltrefjar",
     "certifications": "Vottanir"
   },
   "why": {
@@ -312,7 +319,7 @@
     "features": {
       "performance": {
         "title": "Framúrskarandi árangur",
-        "description": "Ísogsflokkur A (αw 0,95–1,00) fyrir bestu hljóðvist."
+        "description": "Ísog mælt fyrir hverja vöru samkvæmt ISO 11654 — gildið er á hverri vörusíðu."
       },
       "durability": {
         "title": "Byggt til að vara",
@@ -326,7 +333,8 @@
         "title": "Fullkomlega sérsniðanlegur",
         "description": "Yfir 50 litir, sérsniðin stærð og ýmis festingarmöguleikar."
       }
-    }
+    },
+    "freeLabel": "Ókeypis"
   },
   "circular": {
     "tag": "HRINGRÁSARHAGKERFI",
@@ -335,7 +343,6 @@
     "subtitle": "Panelarnir okkar byrja líf sitt sem úrgangur og geta snúið aftur til að verða nýjar paneler — og skapar þannig endalausan gildishring.",
     "loopLabel": "Endalaus hringrás",
     "cta": "Hvernig það virkar",
-    "statRecycled": "Endurunnið hráefni",
     "statLandfill": "Urðun",
     "statFreeLabel": "Ókeypis",
     "statTakeback": "Skilakerfi",
@@ -357,7 +364,8 @@
         "description": "Ókeypis sótt og endurunnið í ný panel."
       }
     },
-    "imageAlt": "Hringrásarhagkerfi — endurvinnsluferli hljóðdeyfiplatna"
+    "imageAlt": "Hringrásarhagkerfi — endurvinnsluferli hljóðdeyfiplatna",
+    "statPlants": "Eigin verksmiðjur"
   },
   "dualCta": {
     "left": {
@@ -731,7 +739,8 @@
     "terms": "Þjónustuskilmálar",
     "countryBelgium": "Belgía",
     "reviewUs": "Skrifaðu Google-umsögn um okkur",
-    "priceGuide": "Verð á símaklefum"
+    "priceGuide": "Verð á símaklefum",
+    "manufacturing": "Framleiðsla"
   },
   "cookies": {
     "title": "Vafrakökustillingar",
@@ -890,7 +899,12 @@
       "finish": "Yfirborð",
       "epd": "EPD tiltækt",
       "fscCertified": "FSC® vottað",
-      "dimPanelWidth": "Panel breidd"
+      "dimPanelWidth": "Panel breidd",
+      "absorptionClassB": "Flokkur B",
+      "absorptionClassC": "Flokkur C",
+      "absorptionClassD": "Flokkur D",
+      "absorptionClassE": "Flokkur E",
+      "oekoTexStandard100": "OEKO-TEX® Standard 100"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -974,8 +988,8 @@
       "title": "Interior: einingaskiptar hljóðdeyfiplötur á veggi úr endurunnu textíli",
       "tagline": "Hlutbundin hljóðeinangrun, hringrásarleg af hönnun",
       "description": "Umbreyttu rýminu þínu með Re-Sound Interior — fullkomið hljóðfræðilegt veggkerfi úr endurunnnum efnum.",
-      "uspAbsorption": "αw 1,0 Frásog",
-      "uspRecyclable": "100% Endurvinnanlegur",
+      "uspAbsorption": "Ísog αw {alphaW}",
+      "uspRecyclable": "Endurvinnanlegt með ókeypis skilum",
       "uspOrigin": "Framleitt í Belgíu",
       "priceFrom": "Frá",
       "priceUnit": "án VSK fyrir sett með 3 einingum",
@@ -994,7 +1008,7 @@
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur að innanverðu, fallegur að utanverðu",
       "description": "Sérhvert Interior paneli byrjar líf sitt sem fleygðir textílar — föt, húsgagnaefni og iðnaðarlegur stofaúrgangur.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Endurunnið efni",
       "stat2Value": "0",
       "stat2Label": "Úrgangur á urðunarsvæði",
@@ -1022,7 +1036,7 @@
     "acoustics": {
       "tag": "AFKÖST",
       "title": "Framúrskarandi hljóðfrásog",
-      "description": "Með þyngdar hljóðfrásogsstuðul (αw) upp á 1,0, lætur Re-Sound Interior í té hámarks hljóðfræðilega frammistöðu."
+      "description": "Með veginn hljóðísogsstuðul (αw) upp á {alphaW} skilar Re-Sound Interior hámarks hljóðvistarárangri. Bæði há- og lágtíðnihljóð eru ísoguð á áhrifaríkan hátt, sem skapar þægileg og afkastamikil rými."
     },
     "specs": {
       "tag": "TÆKNILEGT",
@@ -1044,7 +1058,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Sjálfbærni",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% endurvinnanlegur",
+      "endOfLifeValue": "Ókeypis skil og endurvinnsla",
       "vocValue": "Lág / A+",
       "installTitle": "Uppsetning",
       "mountingValue": "Veggsporvísakerfi",
@@ -1066,12 +1080,12 @@
           "answer": "Já. Áklæðið er aftakanlegt og hægt að þvo í þvottavél við 30 °C. Endurunni textílkjarninn er kyrr inni í plötunni og verður ekki fyrir áhrifum."
         },
         "absorptionRating": {
-          "question": "Hver er munurinn á αw 1,0 og NRC 0,95?",
-          "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi stöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvarið. αw 1,0 og NRC 0,95 lýsa sömu Klassi A-frammistöðu."
+          "question": "Hver er munurinn á αw {alphaW} og NRC {nrc}?",
+          "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi prófunarstöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvörunin. αw {alphaW} og NRC {nrc} lýsa sömu frammistöðu í flokki A."
         },
         "breeamLeed": {
           "question": "Kemur vara þessi til greina fyrir BREEAM- eða LEED-stig?",
-          "answer": "Já. Endurunnið innihald, lágar VOC-losanir og endurmóttökukerfið stuðla að BREEAM Mat 03 og LEED MR stigum. EPD er fáanleg að ósk."
+          "answer": "Já. Endurunnið efni, lág VOC-losun og skilakerfið stuðla að BREEAM Mat 03 og LEED MR stigum."
         },
         "installMethod": {
           "question": "Hvernig eru plöturnar settar upp?",
@@ -1094,7 +1108,6 @@
       "tagline": "Hávirkt hljóð, auðveld uppsetning",
       "description": "Kynntu þér Re-Sound Solid — hávirkt hljóðpanel fyrir veggi hannað fyrir hámarks frammistöðu með lágmarks fyrirhöfn.",
       "usp1": "Hátt frásog",
-      "usp2": "1200 × 600 mm",
       "usp3": "Krókakerfi",
       "colorSelector": "Veldu lit",
       "priceUnit": "án VSK fyrir hverja plötu",
@@ -1130,7 +1143,7 @@
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur af hönnun",
       "description": "Re-Sound Solid er vandlega hannað með hringrásarleika sem kjarna. Úr endurunnnum textíl og í eðli sínu sjálfbært.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Endurunnið efni",
       "stat2Value": "0",
       "stat2Label": "Úrgangur á urðunarsvæði",
@@ -1153,7 +1166,7 @@
       "benefit3Title": "Aukin einbeiting",
       "benefit3": "Lágmarkar truflandi bakgrunnshávaða",
       "benefit4": "Stórt snið fyrir áhrifamiklar niðurstöður",
-      "ratingValue": "αw 0.95",
+      "ratingValue": "αw {alphaW}",
       "ratingLabel": "Flokkur A"
     },
     "specs": {
@@ -1164,7 +1177,7 @@
       "thicknessValue": "45 mm",
       "weightValue": "~4,5 kg á panel",
       "acousticsTitle": "Hljóðfræðileg Frammistaða",
-      "alphaValue": "0.95",
+      "alphaValue": "1.0",
       "classValue": "Flokkur A",
       "nrcValue": "0.90",
       "materialsTitle": "Efni",
@@ -1175,7 +1188,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Sjálfbærni",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% endurvinnanlegur",
+      "endOfLifeValue": "Ókeypis skil og endurvinnsla",
       "installTitle": "Uppsetning",
       "mountingValue": "Króka sporvísakerfi",
       "toolsValue": "Borvél, hallamál",
@@ -1185,7 +1198,7 @@
       "coverValue2": "Endurunnið stof",
       "binderRow": "Bindiefni",
       "endOfLife": "Lok líftíma",
-      "endOfLifeVal": "100% endurvinnanlegur",
+      "endOfLifeVal": "Ókeypis skil og endurvinnsla",
       "mounting": "Uppsetning",
       "mountingVal": "Krókakerfi",
       "installTime": "Uppsetningartími",
@@ -1216,8 +1229,8 @@
           "answer": "Stöðluð Solid plata 1200 × 600 mm vegur um 4,5 kg. Léttbygging gerir það að verkum að veggfestingar þurfa sjaldan að styrkjast."
         },
         "absorptionRating": {
-          "question": "Hver er munurinn á αw 1,0 og NRC 0,95?",
-          "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi stöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvarið. αw 1,0 og NRC 0,95 lýsa sömu Klassi A-frammistöðu."
+          "question": "Hver er munurinn á αw {alphaW} og NRC {nrc}?",
+          "answer": "Bæði mæla hljóðísog en samkvæmt mismunandi prófunarstöðlum. αw (ISO 11654) er evrópska einkennistalan; NRC (ASTM C423) er bandaríska samsvörunin. αw {alphaW} og NRC {nrc} lýsa sömu frammistöðu í flokki A."
         }
       }
     },
@@ -1271,7 +1284,8 @@
       "title": "Segulmagntenging",
       "description": "Einingarnar tengjast auðveldlega með faldlegum segulmögnuðum innbyggðum í stofið. Setja saman og taka í sundur á sekúndum án verkfæra.",
       "snapLabel": "Smelltu saman",
-      "autoAlign": "Sjálfvirk samræming"
+      "autoAlign": "Sjálfvirk samræming",
+      "doneLabel": "Tilbúið"
     },
     "modular": {
       "tag": "SVEIGJANLEIKI",
@@ -1288,7 +1302,8 @@
       "description": "Eins og öll Re-Sound vörur er Divide vandlega hannað með hringrásarleika sem kjarna. Úr endurunnnum efnum.",
       "recycledLabel": "Endurunnið efni",
       "wasteLabel": "Úrgangur á urðunarsvæði",
-      "recycleLabel": "Endurvinningarlot"
+      "recycleLabel": "Endurvinningarlot",
+      "stat1Value": "{pct} %"
     },
     "acoustics": {
       "tag": "AFKÖST",
@@ -1321,7 +1336,7 @@
       "magnets": "Seglar",
       "magnetsVal": "Neódýmíum",
       "endOfLife": "Lok líftíma",
-      "endOfLifeVal": "100% endurvinnanlegur",
+      "endOfLifeVal": "Ókeypis skil og endurvinnsla",
       "connection": "Tenging",
       "connectionVal": "Segulmagnlás",
       "setupTime": "Uppsetningartími",
@@ -1375,9 +1390,9 @@
       "tag": "HLJÓÐDEYFIPLÖTUR ÚR ENDURUNNU PET",
       "title": "rPET Groove: rifjaðar PET-hljóðdeyfiplötur í 12 litum",
       "tagline": "Úr Flöskum í Þögn",
-      "description": "rPET - Groove paneler sameina nútímalegar fagurfræði og framúrskarandi hljóðfræðilegar frammistöður. Gerðar 100% úr endurunnnum PET-flöskum, bjóða þessar háþéttleika paneler upp á hljóðfrásog í flokki A á meðan þær vísa plastúrgangi frá urðunarsvæðum.",
-      "usp1": "100% endurunnið PET",
-      "usp2": "Flokkur A",
+      "description": "Umbreyttu rýminu þínu með rPET - Groove hljóðdeyfiplötum. {pct, select, unknown {Gerðar úr endurunnum plastflöskum sameina þessar} other {Gerðar úr {pct} % endurunnum plastflöskum sameina þessar}} glæsilegu rifjuðu plötur nútímalega hönnun og framúrskarandi hljóðísog. Skilvirkni mætir glæsileika.",
+      "usp1": "{pct, select, unknown {Endurunnar PET-flöskur} other {{pct} % endurunnið PET}}",
+      "usp2": "Allt að NRC 0,90",
       "usp3": "12 Hönnunarliturlit",
       "colorSelector": "Veldu lit",
       "description2": ""
@@ -1386,7 +1401,7 @@
       "tag": "YFIRLIT",
       "title": "Hringrásarleg Þögn",
       "description": "rPET - Groove plötur gefa hvaða rými sem er nútímalegt yfirbragð um leið og þær draga úr hávaðatruflunum. Sýnilega rimlahönnunin skapar sjónræna dýpt og áferð og hentar fullkomlega í nútímaskrifstofur, fundarherbergi, anddyri, veitingastaði og móttökur.",
-      "feature1": "100% úr endurunnnum PET-flöskum eftir neyslu",
+      "feature1": "{pct, select, unknown {Framleitt úr endurunnum plastflöskum} other {Framleitt úr {pct} % endurunnum plastflöskum}}",
       "feature2": "Hljóðfrásog í flokki A (NRC allt að 0,90)",
       "feature3": "Endingargott og litríkt yfirborð þökk sé dope-litun",
       "feature4": "Fáanlegt í þykktinni 12 mm, 24 mm og 36 mm",
@@ -1481,15 +1496,15 @@
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur frá uppruna",
-      "description": "rPET - Groove plötur eru hringrásarhagkerfið í hnotskurn. Þær eru að öllu leyti framleiddar úr endurunnu plasti frá neytendum og má endurvinna aftur við lok líftíma. Við bjóðum ókeypis skilakerfi svo ekkert fari til spillis.",
-      "badge1": "100% endurunnið",
+      "description": "rPET - Groove plötur eru hringrásarhagkerfið í hnotskurn. {pct, select, unknown {Þær eru gerðar úr endurunnu plasti frá neytendum} other {Þær eru gerðar úr {pct} % endurunnu plasti frá neytendum}} og má endurvinna aftur við lok líftíma. Við bjóðum ókeypis skil svo ekkert fari til spillis.",
+      "badge1": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið}}",
       "badge2": "Hringrásarleg Skilagreiðsla",
       "badge3": "Belgísk Framleiðsla",
       "badge4": "OEKO-TEX® Vottað",
       "recycledBottlesLabel": "Endurunnar flöskur á plötu",
       "badge1Desc": "Gerður 100% úr endurunnnum PET-flöskum",
       "badge2Desc": "Ókeypis skilagreiðsla á panelar við lok líftíma",
-      "badge3Desc": "Framleitt í Belgíu með stuttum aðfangakeðjum",
+      "badge3Desc": "Við sækjum plötur til endurvinnslu",
       "badge4Desc": "Vottað fyrir öryggi manna",
       "description2": ""
     },
@@ -1522,7 +1537,7 @@
       "certVOC": "Lág losun / E1",
       "certVOCValue": "Lág losun / E1",
       "certRecycled": "Endurunnið efni",
-      "certRecycledValue": "GRS-vottað",
+      "certRecycledValue": "PET-flöskur frá neytendum",
       "applicationsTitle": "Notkun",
       "appInstall": "Uppsetning",
       "appInstallValue": "Veggar og loft",
@@ -1556,18 +1571,19 @@
       "appWalls": "Veggjaplötur",
       "appCeilings": "Loftplötur",
       "appEnvironment": "Umhverfi",
-      "matRecycledPET": "100% endurunnið PET",
+      "matRecycledPET": "Endurunnið PET-filt",
       "matDensity": "Þéttleiki",
       "colorsLabel": "Litir",
       "colorsVal": "12 staðallitir",
       "customColors": "Sérlitir",
       "customColorsVal": "Tiltækt (MOQ gildir)",
       "certEPD": "EPD tiltækt",
-      "certGRS": "GRS-vottað",
+      "certGRS": "PET-flöskur frá neytendum",
       "appIdealFor": "Tilvalið fyrir",
       "appIdealVal": "Skrifstofur, fundarherbergi, anddyri",
       "appAlso": "Einnig hentugt",
-      "appAlsoVal": "Veitingahús, hótel, skólar"
+      "appAlsoVal": "Veitingahús, hótel, skólar",
+      "nrcByThickness": "NRC (eftir þykkt)"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -1592,7 +1608,7 @@
       "colorChart": "Litatafla"
     },
     "cta2": {
-      "freeNote": "Ókeypis sýnishorn tiltæk • Framleitt í Póllandi • 100% Endurunnið"
+      "freeNote": "Ókeypis sýnishorn í boði • Framleitt í Póllandi • {pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}"
     },
     "faq": {
       "questions": {
@@ -1602,7 +1618,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Allar rPET plötur eru flokkaðar B-s1,d0 samkvæmt EN 13501-1 — hæsta hagkvæma flokkun fyrir innréttingarefni, fyrir utan A-flokk."
+          "answer": "Samkvæmt EN 13501-1 er rPET Groove flokkað {groove}. Brunavottorðið er í niðurhalshlutanum á þessari síðu; hinar rPET gerðirnar bera sína eigin flokkun á sínum síðum."
         },
         "processability": {
           "question": "Er hægt að saga, bora eða mála rPET plötur?",
@@ -1645,9 +1661,9 @@
       "tag": "ENDURUNNIN PET HLJÓÐPANELER",
       "title": "rPET Panel: hljóðdeyfiplatan úr endurunnu PET sem þú vinnur eins og MDF",
       "tagline": "Sjálfbær þögn, óendanlegar möguleikar",
-      "description": "Umbreyttu hvaða rými sem er með rPET - Panel hljóðdeyfiplötum. {pct, select, unknown {Þessir léttu en öflugu hljóðísogarar eru framleiddir úr endurunnum PET-flöskum og} other {Þessir léttu en öflugu hljóðísogarar eru framleiddir úr {pct}% endurunnum PET-flöskum og}} skila hámarks hljóðvistarárangri með lágmarks umhverfisáhrifum.",
-      "usp1": "100% Endurvinnanlegur PET",
-      "usp2": "Flokkur A αw 0,95",
+      "description": "Umbreyttu hvaða rými sem er með rPET - Panel hljóðdeyfiplötum. {pct, select, unknown {Þessir léttu en öflugu hljóðísogarar eru framleiddir úr endurunnum PET-flöskum og} other {Þessir léttu en öflugu hljóðísogarar eru framleiddir úr {pct} % endurunnum PET-flöskum og}} skila hámarks hljóðvistarárangri með lágmarks umhverfisáhrifum.",
+      "usp1": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}",
+      "usp2": "αw allt að 1,00",
       "usp3": "Létt 3-4 kg/m²",
       "colorSelector": "Veldu plötu lit",
       "colorSelectorPlaceholder": "Veldu lit"
@@ -1666,8 +1682,8 @@
       "reason5Title": "Viltu fleiri valkosti?",
       "reason5": "Sameinaðu með rPET Groove fyrir heildstætt hönnunarkerfi",
       "description": "rPET - Panel umbreytir endurunnum PET-flöskum í afkastamiklar hljóðdeyfiplötur. Hver plata beinir plastúrgangi frá urðun um leið og hún skapar heilnæmara og hljóðlátara umhverfi. Þetta er hljóðísogandi valkosturinn við MDF – en aðeins brot af þyngdinni.",
-      "feature1": "{pct, select, unknown {Framleitt úr endurunnum PET-flöskum} other {Framleitt úr {pct}% endurunnum PET-flöskum}}",
-      "feature2": "100% endurvinnanlegt við lok líftíma",
+      "feature1": "{pct, select, unknown {Framleitt úr endurunnum PET-flöskum} other {Framleitt úr {pct} % endurunnum PET-flöskum}}",
+      "feature2": "Að fullu endurvinnanlegt við lok líftíma",
       "feature3": "Léttvægt: aðeins 3-4 kg/m²",
       "feature4": "Án efnabindiefna"
     },
@@ -1707,21 +1723,21 @@
       "fiberLabel": "Þjappaðar PET trefjar",
       "fiberSublabel": "Hljóðorka breytist í varma",
       "panelThickness": "Þykkt plötu",
-      "soundAbsorbed": "Hljóð frásogað",
       "testStandard": "Prófunarstaðall",
-      "testConfig": "Prófunaruppsetning: 24mm plata á 50mm grind með pólýesterullareinangrun nær αw 0.95",
-      "certNote": "Óháð prófað og vottað samkvæmt ISO 11654"
+      "testConfig": "Prófunaruppsetning: 24 mm plata á 50 mm grind með pólýesterullareinangrun",
+      "certNote": "Óháð prófað og vottað samkvæmt ISO 11654",
+      "fireClassLabel": "Brunaflokkur (EN 13501-1)"
     },
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur í kjarna",
-      "cert1": "{pct, select, unknown {Endurunnið PET-efni} other {{pct}% endurunnið efni}}",
-      "cert2": "Hringrásarleg skilagreiðsla",
+      "cert1": "{pct, select, unknown {Endurunnið PET-efni} other {{pct} % endurunnið efni}}",
+      "cert2": "Að fullu endurvinnanlegt",
       "cert3": "OEKO-TEX® Flokkur 1",
       "cert4": "A+ flokkur losunar",
       "badge1Desc": "Framleitt úr PET-flöskum frá neytendum",
       "badge2Desc": "Full endurheimt efnis við lok líftíma",
-      "description": "rPET - Panel er hringrásarhagkerfið í hnotskurn. {pct, select, unknown {Hver plata er framleidd úr endurunnum PET-flöskum} other {Hver plata inniheldur {pct}% endurunnar PET-flöskur}} og við lok líftíma má endurvinna alla plötuna aftur. Enginn úrgangur, engar málamiðlanir.",
+      "description": "rPET - Panel er hringrásarhagkerfið í hnotskurn. {pct, select, unknown {Hver plata er framleidd úr endurunnum PET-flöskum} other {Hver plata inniheldur {pct} % endurunnar PET-flöskur}} og við lok líftíma má endurvinna alla plötuna aftur. Enginn úrgangur, engar málamiðlanir.",
       "cert3Desc": "Vottað í flokki 1 fyrir öryggi fólks",
       "cert4Desc": "Engin VOC eða formaldehýð (ISO 16000)"
     },
@@ -1824,7 +1840,7 @@
       "oekoTexCert": "OEKO-TEX®-vottorð"
     },
     "cta2": {
-      "freeNote": "Ókeypis sýnishorn í boði • Framleitt í Póllandi • 100% endurvinnanlegt"
+      "freeNote": "Ókeypis sýnishorn í boði • Framleitt í Póllandi • {pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}"
     },
     "faq": {
       "questions": {
@@ -1834,7 +1850,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Allar rPET plötur eru flokkaðar B-s1,d0 samkvæmt EN 13501-1 — hæsta hagkvæma flokkun fyrir innréttingarefni, fyrir utan A-flokk."
+          "answer": "Samkvæmt EN 13501-1 er rPET Panel flokkað {panel}. Brunavottorðið er í niðurhalshlutanum á þessari síðu; hinar rPET gerðirnar bera sína eigin flokkun á sínum síðum."
         },
         "processability": {
           "question": "Er hægt að saga, bora eða mála rPET plötur?",
@@ -1938,10 +1954,10 @@
       "badge1Desc": "Viður úr skógum í ábyrgri umsjón",
       "badge2": "Endurunnið flóki",
       "badge2Desc": "Hljóðdeyfibaklag úr endurunnum efnum",
-      "badge3": "Evrópsk framleiðsla",
-      "badge3Desc": "Minnkuð losun frá flutningum",
-      "badge4": "EPD tiltækt",
-      "badge4Desc": "Full umhverfisyfirlýsing fyrir vöru",
+      "badge3": "Framleitt í Póllandi",
+      "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
+      "badge4": "Ókeypis skil",
+      "badge4Desc": "Plöturnar koma aftur til okkar án endurgjalds við lok líftíma",
       "description": "Hver rWood - Groove plata er framleidd með sjálfbærni að leiðarljósi. FSC® vottaður viður okkar kemur úr skógum í ábyrgri umsjón og hljóðdeyfibaklagið er úr endurunnum efnum.",
       "description2": "Hver rWood - Groove plata er framleidd með sjálfbærni að leiðarljósi. FSC® vottun okkar tryggir að viðurinn kemur úr skógum í ábyrgri umsjón sem skila umhverfislegum, félagslegum og efnahagslegum ávinningi."
     },
@@ -2041,7 +2057,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1 — sá kjarni sem við tilgreinum fyrir flóttaleiðir og opinberar byggingar. Brunavottorðið er í niðurhalshlutanum á þessari síðu."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
@@ -2077,8 +2093,8 @@
       "tagline": "Nákvæmar götur, hámarks frásog",
       "description": "Afkastamiklar boraðar hljóðdeyfiplötur sem sameina náttúrulega fegurð viðar og framúrskarandi hljóðgleypni. Kjarni úr eldtefjandi MDF-trefjaplötu (Medium Density Fiberboard) og yfirspónlagðar brúnir tryggja hæsta stig brunaöryggis og hljóðstýringar.",
       "usp1": "Kringlóttar götur",
-      "usp2": "Brunaflokkur B2-s1, d0",
-      "usp3": "Allt að flokki B",
+      "usp2": "Brunaflokkur {fireClass}",
+      "usp3": "αw {alphaW} eftir mynstri",
       "description2": "Afkastamiklar boraðar hljóðdeyfiplötur sem sameina náttúrulega fegurð viðar og framúrskarandi hljóðgleypni. Kjarni úr eldtefjandi MDF-trefjaplötu (Medium Density Fiberboard) og yfirspónlagðar brúnir tryggja hæsta stig brunaöryggis og hljóðstýringar fyrir kröfuhörð opinber rými."
     },
     "patterns": {
@@ -2115,8 +2131,8 @@
       "title": "Hannað fyrir hljóð",
       "benefit1Title": "Breiðbands ísog",
       "benefit1": "Virkar á öllu tíðnisviðinu, frá lágum tónum til hárra",
-      "benefit2Title": "Hæsta eldvarnaröryggi",
-      "benefit2": "B-s1, d0 – hæsti flokkur sem viðarplötur geta náð",
+      "benefit2Title": "Brunaöryggi",
+      "benefit2": "Brunaflokkur {fireClass} með eldtefjandi MDF-kjarna (EN 13501-1)",
       "benefit3Title": "Stillanleg frammistaða",
       "benefit3": "Fjögur götunarmynstur fyrir sérsniðnar hljóðlausnir",
       "description": "Nákvæmlega boruð göt hleypa hljóðbylgjum inn í plötuna og áfram í gleypilagið þar fyrir aftan. Holrýmið aftan við plötuna eykur enn frekar gleypni lágra tíðna.",
@@ -2134,7 +2150,8 @@
       "description3": "Nákvæmlega boruð göt hleypa hljóðbylgjum inn í plötuna og áfram í holrýmið þar fyrir aftan. Ásamt steinullareinangrun skilar rWood - Perf framúrskarandi breiðbandsgleypni yfir allt tíðnisviðið – frá djúpum bassa til hæstu tóna.",
       "diagramTitle": "Panelþversnið",
       "fireRating": "Brunamat",
-      "noiseReduction": "Hávaðaminnkun"
+      "noiseReduction": "Hávaðaminnkun",
+      "ratingPerPattern": "eftir mynstri"
     },
     "installation": {
       "tag": "FALIN UPPSETNING",
@@ -2154,15 +2171,15 @@
       "tag": "SJÁLFBÆRNI",
       "title": "Byggt til að vara, byggt á ábyrgðan hátt",
       "badge1": "FSC® vottað",
-      "badge2": "17% endurunnið innihald",
-      "badge3": "Evrópsk framleiðsla",
+      "badge2": "{pct} % endurunnið efni",
+      "badge3": "Framleitt í Póllandi",
       "badge4": "Mjög lág losun",
       "badge1Desc": "Viður úr skógum í ábyrgri umsjón",
       "badge2Desc": "Endurunnið efni frá neytendum í kjarnanum",
-      "badge3Desc": "Endurnýjanlegir orkugjafar, stuttar aðfangakeðjur",
-      "badge4Desc": "Ekkert viðbætt formaldehýð, EPD fáanlegt",
+      "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi) — stuttar aðfangakeðjur",
+      "badge4Desc": "Ekkert viðbætt formaldehýð",
       "description": "rWood - Perf sameinar endingargóð, náttúruleg efni og ábyrga framleiðsluaðferð.",
-      "description3": "rWood - Perf sameinar endingargóð, náttúruleg efni og ábyrga öflun hráefna. Trefjagifskjarninn hefur í eðli sínu litla losun – engin efnafræðileg gegndreyping er nauðsynleg til að ná brunaeiginleikum – og spónninn okkar kemur úr skógum í sjálfbærri umsjón."
+      "description3": "rWood - Perf sameinar endingargóð, náttúruleg efni og ábyrga öflun hráefna: eldtefjandi MDF-kjarna án viðbætts formaldehýðs og spón úr skógum í sjálfbærri umsjón."
     },
     "specs": {
       "tag": "TÆKNILEGT",
@@ -2201,7 +2218,7 @@
     "overview": {
       "tag": "SÖNNUÐ FRAMMISTAÐA",
       "description": "rWood - Perf plötur eru meðal áhrifaríkustu hljóðlausna fyrir veggi. Nákvæmlega boruð göt hleypa hljóði í gegnum skreytandi viðaryfirborðið inn í mjög hljóðgleypinn kjarnann.",
-      "feature1": "Kjarni úr eldtefjandi MDF-trefjaplötu (B2-s1, d0)",
+      "feature1": "Eldtefjandi MDF-kjarni ({fireClass})",
       "feature2": "Yfirspónlagðar brúnir fyrir samfelld samskeyti",
       "feature3": "Ljós eða dökkur kjarni fyrir látlausara mynstur",
       "feature4": "Sérsniðin stærð allt að 3050 × 1220 mm",
@@ -2222,7 +2239,7 @@
       "item4Desc": "30–50 mm einangrun fyrir bestu afköst"
     },
     "cta": {
-      "note": "Ókeypis sýnishorn í boði • FSC® vottað • Brunaflokkur A2 fáanlegur"
+      "note": "Ókeypis sýnishorn í boði • FSC® vottað"
     },
     "faq": {
       "questions": {
@@ -2232,7 +2249,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1 — sá kjarni sem við tilgreinum fyrir flóttaleiðir og opinberar byggingar. Brunavottorðið er í niðurhalshlutanum á þessari síðu."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
@@ -2269,7 +2286,7 @@
       "description": "Upplifið fegurð náttúrulegs viðar með hljóðeiginleikum háþróaðrar örgötunartækni. Nánast ósýnileg göt skila hljóðgleypni í flokki A og varðveita um leið hreint, einsleitt útlit hágæða viðarspóns.",
       "usp1": "Ósýnilegar götur",
       "usp2": "Frásog í flokki A",
-      "usp3": "Brunaflokkur B-s1, d0",
+      "usp3": "Brunaflokkur {fireClass}",
       "colorSelector": "Veldu viðarspjald"
     },
     "perforation": {
@@ -2298,8 +2315,8 @@
       "benefit1": "Örgöt og hljóðhólf vinna saman og skila framúrskarandi hljóðísogi",
       "benefit2Title": "Plásshagkvæmt hönnun",
       "benefit2": "Minna háð loftbili – þynnri uppbygging veggja og lofta",
-      "benefit3Title": "Hæsta eldvarnaröryggi",
-      "benefit3": "Brunaflokkur B-s1, d0 – sá hæsti sem næst fyrir örgötuð viðarefni",
+      "benefit3Title": "Brunaöryggi",
+      "benefit3": "Brunaflokkur {fireClass} með eldtefjandi MDF-kjarna (EN 13501-1)",
       "description": "Samspil örgata í yfirborðinu og þúsunda stærri hljóðrása skapar einstakt breiðbands-hljóðísog.",
       "layer1Name": "A-gæðaspónn með nákvæmnisboruðum götum",
       "layer2Name": "Eldtefjandi MDF-kjarni (miðlungsþétt trefjaplata)",
@@ -2345,11 +2362,11 @@
       "title": "Ábyrgt framleidd",
       "badge1": "FSC®-vottað spjald",
       "badge2": "Náttúrulegt kjarnaefni",
-      "badge3": "Evrópsk framleiðsla",
+      "badge3": "Framleitt í Póllandi",
       "badge4": "Lágar VOC losanir",
       "badge1Desc": "Viður úr skógum sem er stjórnað á ábyrgan hátt",
       "badge2Desc": "Trefjaplötukjarni – viðarbundinn, brunaflokkaður kjarni",
-      "badge3Desc": "Stuttar aðfangakeðjur sem halda losun frá flutningum í lágmarki",
+      "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
       "badge4Desc": "E1-flokkað fyrir heilnæmara inniloft",
       "description": "rWood - Micro plötur eru byggðar á sjálfbærni sem grundvallarreglu. FSC®-vottaður viður, áferðarefni með lága losun og ábyrgt aðfengin efni tryggja umhverfisábyrgð allan líftíma vörunnar."
     },
@@ -2396,7 +2413,7 @@
       "description1": "rWood - Micro plötur sameina háþróaða örgötunartækni og hágæða viðarspón. Úr venjulegri fjarlægð eru götin algjörlega ósýnileg – það sem sést er fallegt, einsleitt viðaryfirborð. Það sem heyrist er einstök hljóðvist.",
       "description2": "Leyndarmálið liggur í samspili tveggja hljóðvirkra ferla: þúsunda nákvæmlega hannaðra örgata í yfirborðinu og hljóðísogandi hólfa í kjarnaefninu.",
       "feature1": "Götin ósýnileg úr venjulegri fjarlægð",
-      "feature2": "Óbrennanlegur trefjagifskjarni",
+      "feature2": "Eldtefjandi MDF-kjarni með hljóðhólfum",
       "feature3": "Spónlagðar brúnir fyrir samfelld samskeyti",
       "feature4": "Hentar fyrir veggi og loft",
       "feature5": "Fáanlegt sem lýstar plötur"
@@ -2432,7 +2449,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1 — sá kjarni sem við tilgreinum fyrir flóttaleiðir og opinberar byggingar. Brunavottorðið er í niðurhalshlutanum á þessari síðu."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
@@ -2477,7 +2494,7 @@
       "tag": "HLJÓÐFRÆÐILEGAR TRÉPLÖTUR",
       "title": "rWood Panel: hljóðdeyfiplötur með viðarspæni í 10 viðartegundum",
       "tagline": "Frægi raunverulegrar trjár. Tilbúið til notkunar.",
-      "description": "Vandaðar finerarMDF plötur, burstaðar, litaðar og lakkaðar — tilbúnar til uppsetningar. Fáanlegar í 10 finerartegundum og 3 yfirborðum. Framleitt í Belgíu.",
+      "description": "Vandaðar spónlagðar MDF-plötur, burstaðar, litaðar og lakkaðar — þurfa enga frekari yfirborðsmeðhöndlun. Ósvikin fegurð gegnheils viðar án málamiðlana.",
       "usp1": "Raunverulegt tréfineera",
       "usp2": "Forfrágengt og tilbúið til notkunar",
       "usp3": "Ókeypis endurheimtarkerfi",
@@ -2552,13 +2569,13 @@
       "title": "Ábyrgur viður",
       "badge1": "FSC® vottað",
       "badge2": "Hringrásarleg skilagreiðsla",
-      "badge3": "Evrópsk framleiðsla",
+      "badge3": "Framleitt í Póllandi",
       "badge4": "EPD tiltækt",
       "badge5": "Lágt VOC",
       "badge1Desc": "Allt timbur úr ábyrgt nýttum skógum",
       "badge2Desc": "Ókeypis skil og endurvinnsla platna í lok líftíma",
       "description": "Hvert rWood - Panel byrjar með ábyrgu viðarefni. Sem hluti af skuldbindingu Re-Sound við hringrásarhagkerfið hámörkum við notkun hvers stofns með því að vinna hann sem spjald — sem skilar allt að 40× meiri yfirborðsflöt en gegnumheilt timbur frá sama trénu.",
-      "badge3Desc": "Stuttar birgðakeðjur, minnkuð losun frá flutningum",
+      "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
       "badge4Desc": "Full umhverfisyfirlýsing fyrir vöru",
       "badge5Desc": "E1-flokkað, uppfyllir ströngustu losunarstaðla",
       "badge6": "Græn orka",
@@ -2710,7 +2727,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Stöðluð eldflokkun er B-s2,d0 samkvæmt EN 13501-1. rWood Micro-útgáfan nær B-s1,d0, hentug fyrir ströngustu kröfur í opinberum byggingum."
+          "answer": "Það fer eftir kjarnanum. Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1; með venjulegum MDF-kjarna er flokkunin D-s2,d0. Tilgreinið FR-kjarna fyrir flóttaleiðir og opinberar byggingar."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
@@ -2740,7 +2757,7 @@
       "description": "Fullkomna hljóðvistarlausnin fyrir bogadregna fleti. Þessar sveigjanlegu plötur eru úr endurunnu PET-filti með nákvæmum V-skornum raufum og laga sig áreynslulaust að súlum, bogadregnum veggjum og hvers kyns byggingarformum með lágmarksradíus 500mm.",
       "usp1": "Lágm. geisli 500mm",
       "usp2": "Brunahindrun",
-      "usp3": "100% endurunnið PET",
+      "usp3": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}",
       "colorSelector": "Veldu lit",
       "colorPlaceholder": "Veldu lit",
       "description2": ""
@@ -2785,7 +2802,7 @@
       "feature1Desc": "Dregur úr bergmáli og ómun",
       "feature2Title": "Brunahindrun",
       "feature2Desc": "Innbyggðir brunavarnareiginleikar",
-      "feature3Title": "100% endurunnið",
+      "feature3Title": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið}}",
       "feature3Desc": "Úr endurunnum plastflöskum",
       "layer1Label": "Endurunnið PET-flóki",
       "layer2Label": "Nákvæmnis V-skurðir",
@@ -2810,8 +2827,8 @@
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Úr flöskum í fallegar rýmar",
-      "description": "Hver Flex-Groove plata er unnin úr 100% endurunnum PET-plastflöskum og gefur úrgangsefnum nýtt líf. Hringræn nálgun okkar tryggir að plöturnar má endurvinna á ný við lok líftíma þeirra.",
-      "badge1": "Endurunnið PET",
+      "description": "Hver Flex-Groove plata er unnin úr {pct, select, unknown {endurunnum PET-plastflöskum} other {{pct} % endurunnum PET-plastflöskum}} og gefur úrgangsefnum nýtt líf. Hringræn nálgun okkar tryggir að plöturnar má endurvinna á ný við lok líftíma þeirra.",
+      "badge1": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}",
       "badge1Desc": "Úr endurunnum plastflöskum",
       "badge2": "Að fullu endurvinnanlegt",
       "badge2Desc": "Má endurvinna við lok líftíma",
@@ -2855,7 +2872,7 @@
       "certVOC": "VOC-losun",
       "certVOCVal": "Lág losun",
       "certRecycled": "Endurunnið efni",
-      "certRecycledVal": "100% staðfest",
+      "certRecycledVal": "100 %",
       "appSurfaces": "Fletir",
       "appSurfacesVal": "Veggir, súlur, bogadregnir hlutar",
       "appEnvironment": "Umhverfi",
@@ -2896,7 +2913,7 @@
       "description2": "Fáðu sérsniðið tilboð fyrir verkefnið þitt. Teymi okkar aðstoðar þig við að velja réttan lit og reikna út þarfir þínar."
     },
     "cta2": {
-      "freeNote": "Ókeypis sýnishorn í boði • Framleitt í Póllandi • 100% endurunnið"
+      "freeNote": "Ókeypis sýnishorn í boði • Framleitt í Póllandi • {pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}"
     },
     "faq": {
       "questions": {
@@ -2906,7 +2923,7 @@
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Allar rPET plötur eru flokkaðar B-s1,d0 samkvæmt EN 13501-1 — hæsta hagkvæma flokkun fyrir innréttingarefni, fyrir utan A-flokk."
+          "answer": "Samkvæmt EN 13501-1 er rPET Flex Groove flokkað {flex}. Brunavottorðið er í niðurhalshlutanum á þessari síðu; hinar rPET gerðirnar bera sína eigin flokkun á sínum síðum."
         },
         "processability": {
           "question": "Er hægt að saga, bora eða mála rPET plötur?",
@@ -2999,7 +3016,7 @@
       "rwoodVsRpetVsTextile": {
         "category": "products",
         "question": "Hver er munurinn á rWood, rPET og textílseríunni?",
-        "answer": "Þetta eru þrjár ólíkar efnisfjölskyldur fyrir mismunandi hönnunarstefnur. Textílserían (Interior, Solid, Divide) er gerð úr 100% endurunnum textíltrefjum með áklæði — mjúk, hlý, fáanleg í mörgum litum, framleidd í Belgíu. rPET serían (Panel, Groove, Flex Groove) er gerð úr 100% endurunnum PET flöskum, OEKO-TEX® vottuð, og hægt er að vinna hana eins og MDF (skera, fræsa, mála); tilvalin fyrir djarfa liti og sérsmíðaðar uppsetningar. rWood serían (Groove, Perf, Micro, Panel) sameinar FSC-vottuð viðarspjöld við kjarna úr endurunnum trefjum, sem gefur arkitektúr-frágang á hárri línu í meira en 8 viðartegundum; framleidd í Evrópu."
+        "answer": "Þetta eru þrjár ólíkar efnisfjölskyldur sem þjóna ólíkum hönnunarmarkmiðum. Textílserían (Interior, Solid, Divide) er gerð úr endurunnum textíltrefjum (að minnsta kosti 80 % endurunnið efni) með áklæði úr efni — mjúk, hlý, fáanleg í mörgum litum, framleidd í eigin verksmiðju í Beveren-Waas (Belgíu). rPET serían (Panel, Groove, Flex Groove) er gerð úr endurunnum PET-flöskum (rPET Panel og rPET Flex Groove eru að öllu leyti úr endurunnu PET), OEKO-TEX® vottuð og má vinna eins og MDF (skera, fræsa, mála); tilvalin fyrir djarfa liti og sérsniðnar uppsetningar. rWood serían (Groove, Perf, Micro, Panel) sameinar FSC-vottaðan viðarspón og kjarna úr endurunnu filti, sem gefur vandaðan arkitektónískan frágang í 8+ viðartegundum; framleidd í eigin verksmiðju í Częstochowa (Póllandi)."
       },
       "fireSafety": {
         "category": "products",
@@ -3014,7 +3031,7 @@
       "whatIsCircular": {
         "category": "sustainability",
         "question": "Hvað þýðir \"hringrás\" hjá Re-Sound?",
-        "answer": "Hringrás hjá Re-Sound þýðir þrjá hluti, innbyggða frá upphafi hönnunar. Í fyrsta lagi, innlegg: við notum endurunnin efni hvar sem akústísk frammistaða leyfir það — 100% endurunnar textíltrefjar í Interior/Solid/Divide seríunni, 100% endurunna PET í rPET seríunni og kjarna úr endurunnum trefjum undir FSC-vottuðu spjaldinu í rWood seríunni. Í öðru lagi, líftímalok: hverja Re-Sound plötu er hægt að skila í gegnum ókeypis skilaþjónustuna okkar, og efnin eru endurunnin í nýjar plötur eða nýtt hráefni í stað þess að fara á sorphauga. Í þriðja lagi, hönnun: tengingar (segulmagn, vélræn, krókakerfi) eru afturkræfar svo hægt er að fjarlægja plötur án eyðingar, sem gerir mögulegt að endurskipuleggja á líftíma byggingarinnar."
+        "answer": "Hringrás hjá Re-Sound þýðir þrjá hluti, innbyggða frá upphafi hönnunar. Í fyrsta lagi, hráefni: við notum endurunnin efni hvar sem hljóðvistarárangur leyfir — endurunnar textíltrefjar (að minnsta kosti 80 % endurunnið efni) í Interior/Solid/Divide seríunni, endurunnar PET-flöskur í rPET seríunni (rPET Panel og rPET Flex Groove eru að öllu leyti úr endurunnu PET) og kjarna úr endurunnu filti undir FSC-vottaða spóninum í rWood seríunni. Í öðru lagi, lok líftíma: hverja Re-Sound plötu er hægt að skila til okkar í gegnum ókeypis skilaþjónustuna okkar, og efnin eru endurunnin í nýjar plötur eða nýtt hráefni í stað þess að fara í urðun. Í þriðja lagi, hönnun: tengingar (segul-, vélrænar og krókakerfi) eru afturkræfar svo hægt er að fjarlægja plötur án þess að skemma þær, sem gerir kleift að endurskipuleggja á líftíma byggingarinnar."
       },
       "takeBack": {
         "category": "sustainability",
@@ -3024,7 +3041,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Hvert er endurunnið innihald í hverri vörulínu?",
-        "answer": "Endurunnið innihald er mismunandi eftir vörufjölskyldu. Textílserían (Interior, Solid, Divide) er gerð úr endurunnum textíltrefjum með háu endurunnu innihaldi. rPET serían notar 100% endurunna PET eftir notkun (sambærilegur fjöldi flaska er mismunandi eftir stærð plötu — um það bil 60 flöskur fyrir staðlaða Groove plötu). rWood serían notar kjarna með háu endurunnu trefjainnihaldi með FSC-vottuðu spjaldi á sýnilegu hliðinni. Ítarlegar efnisskýrslur og EPD skjöl eru tiltæk á hverri vörusíðu og á beiðni."
+        "answer": "Endurunnið efni er mismunandi eftir vörufjölskyldu. Textílserían (Interior, Solid, Divide) er gerð úr endurunnum textíltrefjum með háu hlutfalli endurunnins efnis. rPET serían notar endurunnið PET frá neytendum; rPET Panel og rPET Flex Groove eru að öllu leyti úr endurunnu PET (sambærilegur fjöldi flaskna er mismunandi eftir stærð plötu — um það bil 60 flöskur í staðlaða Groove plötu). rWood serían notar kjarna með háu hlutfalli endurunninna trefja og FSC-vottaðan spón á sýnilegu hliðinni. Ítarlegar efnissundurliðanir og EPD-skjöl eru fáanleg á hverri vörusíðu og sé þess óskað."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3112,7 +3129,9 @@
       "segmentPower": "Afl á einingu",
       "ceilingHeight": "Lágmarks lofthæð",
       "sideClearance": "Hliðarrými",
-      "frontClearance": "Framrými"
+      "frontClearance": "Framrými",
+      "madeIn": "Framleitt í",
+      "measurementPending": "ISO 23351-1 mæling væntanleg"
     },
     "downloads": {
       "tag": "GÖGN",
@@ -3198,7 +3217,7 @@
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
-        "desc": "CE-merkt, brunaflokkur EN 13501-1 B-s2,d0, rafmagn vottað samkvæmt IEC 60598. Skjöl fylgja við afhendingu."
+        "desc": "CE-merkt, rafmagn vottað samkvæmt IEC 60598. Skjöl fylgja við afhendingu."
       }
     },
     "specs": {
@@ -3369,7 +3388,7 @@
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
-        "desc": "CE-merkt, brunaflokkur EN 13501-1 B-s2,d0, rafmagn vottað samkvæmt IEC 60598. Staðall með hverri afhendingu."
+        "desc": "CE-merkt, rafmagn vottað samkvæmt IEC 60598. Staðalbúnaður með hverri afhendingu."
       }
     },
     "specs": {
@@ -3381,7 +3400,6 @@
       "doorWidthValue": "1000 mm laust",
       "weightValue": "420 kg",
       "acousticsTitle": "Hljóðeiginleikar",
-      "noiseReductionValue": "26 dB(A)",
       "absorberValue": "Hljóðfilt úr endurunnu PET, 24 mm",
       "doorSealValue": "Segulmagnaður, fjórhliða þrýstiþéttihringur",
       "ventilationTitle": "Loftræsting",
@@ -3532,7 +3550,7 @@
       },
       "safety": {
         "title": "Prófað samkvæmt staðli",
-        "desc": "CE-merkt, brunaflokkur EN 13501-1 B-s2,d0, rafmagn vottað samkvæmt IEC 60598. Skjöl fylgja við afhendingu."
+        "desc": "CE-merkt, rafmagn vottað samkvæmt IEC 60598. Skjöl fylgja við afhendingu."
       }
     },
     "specs": {
@@ -3871,7 +3889,11 @@
     },
     "ownFactories": "Úr eigin verksmiðjum",
     "ownFactoriesShort": "Eigin verksmiðjur",
-    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)",
+    "plant": {
+      "BE": "Beveren-Waas, Belgíu",
+      "PL": "Częstochowa, Póllandi"
+    }
   },
   "productData": {
     "category": {
@@ -3970,7 +3992,11 @@
       "perfNano": "Nano (⌀ 0,5 mm)",
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
-      "perfMicroL": "Micro L (⌀ 2,0 mm)"
+      "perfMicroL": "Micro L (⌀ 2,0 mm)",
+      "openArea24": "24% opið flatarmál",
+      "openArea18": "18% opið flatarmál",
+      "openArea12": "12% opið flatarmál",
+      "openArea5": "5% opið flatarmál"
     },
     "solo-eco": {
       "mounting": "Frístandandi; uppsetning af Re-Sound eftir beiðni",
@@ -4015,7 +4041,7 @@
       "isoClassNote": "Flokkamörk ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "HVERS VEGNA RE-SOUND",
       "whyTitle": "Hvers vegna Re-Sound",
-      "whyOwnFactoriesTitle": "Okkar eigin verksmiðjur",
+      "whyOwnFactoriesTitle": "Okkar eigin verksmiðja í Częstochowa",
       "whyTakeBackTitle": "Ókeypis skilakerfi",
       "whyTakeBackDesc": "Þegar líftíma lýkur sækjum við plöturnar og vinnum þær aftur í hráefni — án endurgjalds innan Belgíu, gegn flutningskostnaði annars staðar í ESB.",
       "whyCertsTitle": "Vottað þar sem það skiptir máli",
@@ -4040,7 +4066,7 @@
     },
     "rpet": {
       "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
-      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove og Flex Groove. 12–16 litir, B-s1,d0, OEKO-TEX®, framleiddar í eigin verksmiðju í Póllandi.",
+      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove, Flex Groove. 12–16 litir, OEKO-TEX®, B-s1,d0 eða B-s2,d0 eftir gerð. Framleiddar í verksmiðju okkar í Póllandi.",
       "h1": "PET hljóðdeyfiplötur: rPET Panel, Groove og Flex Groove",
       "breadcrumb": "rPET",
       "intro": "PET hljóðdeyfiplötur breyta notuðum drykkjarflöskum í þétt pólýesterfilt sem gleypir hljóð, lætur vinna sig með CNC-fræsara eins og MDF og fæst í litavali sem arkitektar nota í raun og veru. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); rPET línan er framleidd í Częstochowa. Línan samanstendur af þremur gerðum. rPET Panel er slétta platan: hana má skera, fræsa, bora og mála fyrir veggi, loft og húsgögn. rPET Groove bætir við rifflaðri áferð í 12 litum og þremur þykktum fyrir meiri hljóðgleypni á veggjum og í lofti. rPET Flex Groove heldur rifflaða útlitinu en sveigist utan um súlur og bogadregna veggi niður í 500 mm radíus. Allar þrjár gerðirnar eru vottaðar samkvæmt OEKO-TEX® Standard 100, ná B-s1,d0 eða B-s2,d0 samkvæmt EN 13501-1 og má skila til endurvinnslu þegar líftíma lýkur. Notaðu töfluna hér að neðan til að bera PET hljóðdeyfiplötur saman eftir sniði, hljóðgleypni og afhendingartíma og opnaðu síðan gerðasíðuna til að sjá áferðir og niðurhal.",
@@ -4056,7 +4082,7 @@
       "faq": {
         "q1": {
           "question": "Eru PET hljóðdeyfiplötur í raun gerðar úr endurunnum flöskum?",
-          "answer": "Já. Filtið er gert úr trefjum úr endurunnum PET-flöskum; rPET Groove og rPET Flex Groove eru úr 100 % endurunnu PET. Allar gerðir eru vottaðar samkvæmt OEKO-TEX® Standard 100 og efnið hentar því fyrir skóla og heilbrigðisstofnanir."
+          "answer": "Já. Filtið er gert úr trefjum úr PET-flöskum frá neytendum: rPET Panel og rPET Flex Groove eru að öllu leyti úr endurunnu PET og rPET Groove er gert úr sama endurunna PET-filtinu. Allar gerðir eru vottaðar samkvæmt OEKO-TEX® Standard 100 og efnið hentar því fyrir skóla og heilbrigðisstofnanir."
         },
         "q2": {
           "question": "Hversu mikið hljóð gleypa PET hljóðdeyfiplötur?",
@@ -4102,7 +4128,7 @@
         },
         "q3": {
           "question": "Hvaða brunaflokki ná hljóðdeyfiplötur úr viði?",
-          "answer": "Með eldtefjandi kjarna eru rWood-gerðirnar flokkaðar B-s1,d0 samkvæmt EN 13501-1; með venjulegum MDF-kjarna er flokkunin D-s2. Tilgreinið FR-kjarna fyrir flóttaleiðir og opinberar byggingar."
+          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood-gerðirnar flokkaðar B-s1,d0 samkvæmt EN 13501-1; með venjulegum MDF-kjarna er flokkunin D-s2,d0. Tilgreinið FR-kjarna fyrir flóttaleiðir og opinberar byggingar."
         },
         "q4": {
           "question": "Er hægt að baklýsa örgötuðar viðarplötur?",
@@ -4115,11 +4141,11 @@
       }
     },
     "booths": {
-      "title": "Hljóðeinangraðir símaklefar – Solo, Duo, Modular XL | Re-Sound",
+      "title": "Framleiðandi símaklefa fyrir skrifstofur: Solo, Duo, Modular XL | Re-Sound",
       "description": "Símaklefar og fundarklefar: Solo ECO og Solo Flex (1 manns), Duo (2), Modular XL (6–10). Talminnkun skv. ISO 23351-1 á Flex og XL, 230 V.",
-      "h1": "Símaklefar og fundarklefar fyrir skrifstofur úr eigin verksmiðjum",
+      "h1": "Símaklefar og fundarklefar fyrir skrifstofur beint frá framleiðanda",
       "breadcrumb": "Klefar",
-      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Re-Sound er vörumerki Stretch Group. Við framleiðum í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi). Klefalínan telur fjórar gerðir. Solo ECO er grunngerðin: eins manns klefi með standborði, tengli að hætti hvers lands með USB-A og USB-C (aðeins tengill fyrir Danmörku), loftræstingu allt að 4 m³/mín og lokuðum bakvegg eða bakvegg úr gleri. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Solo Flex, Duo og Modular XL fylgir 5 ára ábyrgð á burðarvirki og Solo ECO 5 ára varahlutaábyrgð; allir eru afhentir um allt ESB, með uppsetningu í boði sé þess óskað. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
+      "intro": "Hljóðeinangraður símaklefi veitir einum einstaklingi rólegan og loftræstan stað fyrir símtöl og myndfundi í opnu skrifstofurými; fundarklefi gerir það sama fyrir teymi. Klefar Re-Sound eru framleiddir í eigin verksmiðju í Częstochowa (Póllandi), afhentir og settir upp af okkar eigin teymi sé þess óskað, með 5 ára ábyrgð á burðarvirki (Solo ECO: 5 ára varahlutaábyrgð). Klefalínan telur fjórar gerðir. Solo ECO er grunngerðin: eins manns klefi með standborði, tengli að hætti hvers lands með USB-A og USB-C (aðeins tengill fyrir Danmörku), loftræstingu allt að 4 m³/mín og lokuðum bakvegg eða bakvegg úr gleri. Solo Flex er eins manns símaklefinn: 1 m² grunnflötur, hækkanlegt skrifborð, 230 V og USB-C tengi, hljóðlausar EC-viftur og 24 dB(A) lækkun talstyrks mæld samkvæmt ISO 23351-1. Duo er tveggja manna hljóðeinangraði símaklefinn í tveimur útfærslum — Flex fyrir samtal tveggja og Work fyrir einn með skrifborði í fullri breidd. Modular XL er hljóðeinangraði fundarklefinn fyrir sex til tíu manns: grunneiningin er lengd í 90 cm hlutum og nær 25,9 dB(A) lækkun talstyrks. Solo Flex, Duo og Modular XL fylgir 5 ára ábyrgð á burðarvirki og Solo ECO 5 ára varahlutaábyrgð; allir fjórir eru afhentir um allt ESB. Berið símaklefana saman hér að neðan og opnið svo síðu viðkomandi gerðar fyrir aukabúnað og niðurhal.",
       "whyCertsDesc": "5 ára ábyrgð á öllum klefum (á burðarvirki á Solo Flex, Duo og Modular XL; varahlutaábyrgð á Solo ECO); lækkun talstyrks gefin upp samkvæmt ISO 23351-1 þar sem hún hefur verið mæld.",
       "applications": {
         "app1": "Opin skrifstofurými og samvinnurými",
@@ -4150,7 +4176,8 @@
           "question": "Hver er afhendingartíminn og ábyrgðin á símaklefa?",
           "answer": "Solo ECO tekur 4 vikur í framleiðslu og er með 5 ára varahlutaábyrgð. Solo Flex og Duo eru afhentir 4–6 vikum frá pöntun, grunneining Modular XL á 6–8 vikum; sérvalin áklæði bæta við 2–3 vikum. Ábyrgð á burðarvirki er 5 ár og á rafbúnaði 2 ár, með afhendingu og uppsetningu um allt ESB."
         }
-      }
+      },
+      "whyOwnFactoriesDesc": "Allir fjórir klefarnir eru smíðaðir í eigin verksmiðju í Częstochowa (Póllandi) og afhentir og settir upp af okkar eigin teymi sé þess óskað."
     }
   },
   "sampleKit": {
@@ -4222,7 +4249,7 @@
     "title": "Skrifstofusímaklefar: verð og ISO-flokkar 2026 | Re-Sound",
     "description": "Hvað kostar símaklefi? Solo ECO frá {soloEco}, Solo Flex frá {soloFlex} án vsk., Modular XL frá {modularXl}. ISO-flokkar, uppsetning, afhending og ábyrgð.",
     "h1": "Símaklefar fyrir skrifstofur: verð, flokkar og hvernig á að velja",
-    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá {soloEco} án vsk. án uppsetningar (Solo ECO), Solo Flex frá {soloFlex} og Modular XL fundarklefi frá {modularXl}. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).",
+    "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá {soloEco} án vsk. án uppsetningar (Solo ECO), Solo Flex frá {soloFlex} og Modular XL fundarklefi frá {modularXl}. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka.",
     "breadcrumb": "Verð á símaklefum",
     "priceTag": "Verð 2026",
     "priceTitle": "Verð eftir gerð (án vsk.)",
@@ -4293,6 +4320,25 @@
     "endOfLifeTag": "Hringrás",
     "warrantyByModel": {
       "solo-eco": "5 ára varahlutaábyrgð"
+    },
+    "manufactureLine": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi); afhending og uppsetning af okkar eigin teymi, verðlögð sérstaklega.",
+    "pricelist": {
+      "tag": "Verðlisti",
+      "title": "Sæktu allan verðlistann (PDF)",
+      "text": "Skildu eftir upplýsingarnar þínar og verðlisti símaklefanna (PDF) hleðst niður strax.",
+      "firstName": "Fornafn",
+      "lastName": "Eftirnafn",
+      "company": "Fyrirtæki",
+      "email": "Netfang",
+      "honeypot": "Skildu þennan reit eftir auðan",
+      "consent": "Ég samþykki að Re-Sound megi hafa samband við mig vegna þessarar beiðni. <link>Persónuverndarstefna</link>",
+      "submit": "Sækja verðlistann",
+      "sending": "Undirbý niðurhalið…",
+      "successTitle": "Niðurhalið er hafið",
+      "successText": "Ef PDF-skjalið opnaðist ekki skaltu nota tengilinn hér að neðan.",
+      "successLink": "Opna verðlistann (PDF)",
+      "errorInvalid": "Athugaðu upplýsingarnar þínar og reyndu aftur.",
+      "error": "Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur eftir smástund."
     }
   },
   "order": {
@@ -4516,7 +4562,8 @@
       "sparePartsLabel": "Varahlutaábyrgð",
       "sparePartsValue": "5 ár",
       "deliveryValue": "4 vikna framleiðslutími, frá verksmiðju í Częstochowa",
-      "weightLabel": "Þyngd (nettó / brúttó)"
+      "weightLabel": "Þyngd (nettó / brúttó)",
+      "acousticsTitle": "Hljóðeiginleikar"
     },
     "addons": {
       "tag": "VALKVÆMT",
@@ -4561,6 +4608,267 @@
     },
     "cta": {
       "deliveryNote": "Frá verksmiðju, 4 vikna framleiðslutími · Afhending og uppsetning verðlögð eftir beiðni · 5 ára varahlutaábyrgð"
+    }
+  },
+  "manufacturing": {
+    "navLabel": "Framleiðsla",
+    "breadcrumb": "Framleiðsla",
+    "title": "Framleiðandi hljóðdeyfiplatna og símaklefa: verksmiðjurnar okkar tvær | Re-Sound",
+    "description": "Re-Sound er framleiðandi eigin hljóðdeyfiplatna og símaklefa fyrir skrifstofur: textíllínurnar eru framleiddar í Beveren-Waas (Belgíu), rWood, rPET og allir fjórir klefarnir í Częstochowa (Póllandi). Hvaða lína er framleidd hvar, afhendingartímar og vottanir.",
+    "h1": "Framleiðandi hljóðdeyfiplatna og símaklefa: verksmiðjurnar okkar tvær",
+    "intro": "Re-Sound hannar og framleiðir eigin vörur í stað þess að endurselja vörur annarra. Allar hljóðdeyfiplötur og allir símaklefar á þessari síðu eru framleidd í annarri af tveimur verksmiðjum í okkar eigu: textíllínurnar í Beveren-Waas í Belgíu; rWood- og rPET-línurnar og klefarnir fjórir í Częstochowa í Póllandi. Öll hráefni eru keypt innan Evrópusambandsins.",
+    "plantsTag": "VERKSMIÐJURNAR",
+    "plantsTitle": "Tvær verksmiðjur, einn framleiðandi",
+    "plantsIntro": "Hvað hvor staður framleiðir og hvernig þú nærð sambandi. Heimsóknir eru eftir samkomulagi á báðum stöðum.",
+    "plant": {
+      "BE": {
+        "role": "Hljóðdeyfiplötur úr textíl, höfuðstöðvar og sýningarsalur",
+        "makes": "Hljóðdeyfiplötur og skilrúm úr endurunnum textíltrefjum.",
+        "note": "Í sýningarsalnum á þessu heimilisfangi er öll plötuserían og allar þrjár klefastærðirnar uppsettar og hljóðvirkar, svo þú getur heyrt muninn á efnunum áður en þú velur fyrir verkefnið."
+      },
+      "PL": {
+        "role": "rWood- og rPET-plötur, allir símaklefar",
+        "makes": "Hljóðdeyfiplötur úr viði með FSC-vottuðum spón, PET-hljóðdeyfiplötur úr endurunnu PET-filti, auk símaklefanna og fundarklefanna.",
+        "note": "Framleiðsluskrifstofan tekur á móti verkefnaheimsóknum og verksmiðjuskoðunum eftir samkomulagi. Klefar eru afhentir og settir upp af okkar eigin teymi sé þess óskað."
+      }
+    },
+    "plantLabels": {
+      "makes": "Framleitt hér",
+      "address": "Heimilisfang",
+      "hours": "Opnunartímar",
+      "hoursValue": "Mán–fös, 08:00–16:30 · eftir samkomulagi",
+      "phone": "Sími",
+      "email": "Netfang",
+      "country": {
+        "BE": "Belgía",
+        "PL": "Pólland"
+      }
+    },
+    "originTag": "HVAÐA LÍNA ER FRAMLEIDD HVAR",
+    "originTitle": "Framleiðsluverksmiðja hverrar vörulínu",
+    "originNote": "Ein röð fyrir hverja vöru, unnin úr sömu vörugögnum og allar gerðasíðurnar. Afhendingartímar eins og þeir eru birtir á gerðasíðunum.",
+    "col": {
+      "product": "Vara",
+      "family": "Sería",
+      "plant": "Verksmiðja",
+      "leadTime": "Afhendingartími"
+    },
+    "certsTag": "VOTTANIR",
+    "certsTitle": "Vottanir og hvað þær ná yfir",
+    "certsIntro": "Aðeins vottanir sem eiga við tiltekna línu eru taldar upp, hver með þeim staðli sem hún vísar til og þeim vörum sem hún nær yfir.",
+    "certs": {
+      "FSC": {
+        "name": "FSC rekjanleikavottun (chain-of-custody)",
+        "scope": "rWood-spónn"
+      },
+      "OEKO-TEX": {
+        "name": "OEKO-TEX Standard 100",
+        "scope": "rPET-filt"
+      },
+      "EPD": {
+        "name": "Umhverfisyfirlýsing vöru (EPD)",
+        "scope": "rWood Panel"
+      }
+    },
+    "certsAppliesTo": "Gildir fyrir",
+    "certsNote": "Brunaflokkun (EN 13501-1), hljóðísog (ISO 11654) og lækkun talstyrks (ISO 23351-1) eru prófunarniðurstöður en ekki vottanir; þær eru gefnar upp fyrir hverja gerð á vörusíðunum.",
+    "howTag": "HVERNIG VIÐ VINNUM",
+    "howTitle": "Hverju það breytir fyrir þig að við framleiðum sjálf",
+    "how": {
+      "origin": {
+        "title": "Gagnsær uppruni",
+        "text": "Hver vörusíða nefnir verksmiðjuna sem varan kemur frá og taflan á þessari síðu er unnin úr sömu vörugögnum, svo texti og gögn geta ekki stangast á."
+      },
+      "installation": {
+        "title": "Afhending og uppsetning af okkar eigin teymi",
+        "text": "Klefar eru afhentir og settir upp af okkar eigin teymi sé þess óskað; afhending og uppsetning eru verðlagðar sérstaklega."
+      },
+      "warranty": {
+        "title": "Ábyrgð á hverjum klefa"
+      }
+    },
+    "linksTag": "KYNNTU ÞÉR MEIRA",
+    "linksTitle": "Seríur, tækniskjöl og sýnishorn",
+    "links": {
+      "downloadsTitle": "Tæknilegt niðurhal",
+      "downloadsText": "Gagnablöð, uppsetningarleiðbeiningar og hljóðprófunarskýrslur á hverri vörusíðu; brunavottorð og sjálfbærniyfirlýsingar fyrir plöturnar, ábyrgðarskilmálar og CAD-teikningar fyrir klefana.",
+      "downloadsCta": "Allar vörur",
+      "samplesTitle": "Sýnishornasett",
+      "samplesText": "Pantaðu ókeypis sýnishornasett og berðu saman efnin og áferðirnar á þínu eigin skrifborði.",
+      "hubCta": "Skoða úrvalið"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Ómtímareiknivél (RT60)",
+      "description": "Áætlaðu ómtíma rýmisins með Sabine-formúlunni, berðu hann saman við markgildið fyrir tegund rýmis og sjáðu hversu marga m² af Re-Sound hljóðdeyfiplötum þú þarft."
+    },
+    "hero": {
+      "tag": "Ókeypis verkfæri",
+      "title": "Ómtímareiknivél",
+      "subtitle": "Sláðu inn mál og yfirborðsefni rýmisins til að áætla RT60, bera hann saman við markgildið fyrir tegund rýmis og sjá hversu marga m² af hljóðdeyfiplötum þarf til að ná því."
+    },
+    "intro": {
+      "tag": "Svona virkar það",
+      "title": "Sabine-formúlan og markgildin",
+      "sabine": "Reiknivélin notar Sabine-formúluna á forminu T = V / (6 × A): T er ómtíminn í sekúndum, V rúmmál rýmisins í m³ og A heildarhljóðísogið í m² sabine — flatarmál hvers yfirborðs margfaldað með hljóðísogsstuðli þess α og lagt saman. Hvert áttundarband frá 125 Hz til 4000 Hz er reiknað sérstaklega með α-gildum valinna gólf-, loft- og veggefna.",
+      "headline": "Uppgefinn RT60 er meðaltal 500, 1000 og 2000 Hz bandanna — taltíðnanna — og það er gildið sem borið er saman við markgildið.",
+      "targets": "Markgildi ómtíma fyrir hverja tegund rýmis koma úr sömu heimildartöflu og hljóðísogsstuðlarnir: frá 0,4 s fyrir hljóðver upp í 1,5 s fyrir íþróttasal eða sundlaug; skrifstofa, fundarherbergi eða kennslustofa stefnir á 0,8 s.",
+      "note": "Sabine-formúlan gerir ráð fyrir að hljóðísogið dreifist jafnt um rýmið. Niðurstaðan er áætlun fyrir fyrstu hönnunarákvarðanir, ekki mæling.",
+      "targetsTableCaption": "Markgildi ómtíma eftir tegund rýmis",
+      "roomType": "Tegund rýmis",
+      "targetRt": "Markgildi T"
+    },
+    "form": {
+      "title": "Rýmið þitt",
+      "length": "Lengd",
+      "width": "Breidd",
+      "height": "Hæð",
+      "unitHint": "í m (2,8 eða 2.8)",
+      "floor": "Gólfefni",
+      "ceiling": "Loftefni",
+      "walls": "Veggefni",
+      "roomType": "Tegund rýmis",
+      "roomTypeOption": "{name} — markgildi {t} s"
+    },
+    "results": {
+      "title": "Niðurstaða",
+      "empty": "Sláðu inn lengd, breidd og hæð rýmisins til að sjá niðurstöðuna.",
+      "volume": "Rúmmál rýmis",
+      "volumeValue": "{v} m³",
+      "rtNow": "Áætlaður RT60 núna",
+      "rtNowHint": "Meðaltal 500, 1000 og 2000 Hz bandanna",
+      "seconds": "{s} s",
+      "target": "Markgildi fyrir {room}",
+      "met": "Markgildi náð",
+      "notMet": "Yfir markgildi",
+      "toAdd": "Hljóðísog sem þarf að bæta við",
+      "sabine": "{a} m² sabine",
+      "toAddHint": "Viðbótarhljóðísog sem þarf til að lækka RT60 niður í markgildið",
+      "bandTable": "Eftir áttundarbandi",
+      "band": "Tíðniband (Hz)",
+      "absorptionBand": "Hljóðísog A (m² sabine)",
+      "rtBand": "RT60 (s)",
+      "noneNeeded": "Rýmið þitt uppfyllir nú þegar markgildið fyrir þessa tegund rýmis — ekki þarf að bæta við hljóðísogi.",
+      "recommendTitle": "Re-Sound plötur til að ná markgildinu",
+      "recommendIntro": "m² af hverri plötu sem skila því hljóðísogi sem vantar, miðað við veginn hljóðísogsstuðul hennar αw. Veldu eina vöru; magntölurnar eru valkostir, ekki samtala.",
+      "productLine": "≈ {m2} m² af {product} (αw {alphaW})",
+      "productNoNumber": "{product} — mælt eftir mynstri / þykkt — sjá vörusíðu",
+      "productLink": "Vörusíða",
+      "evenNote": "Sabine-formúlan gerir ráð fyrir jafndreifðu hljóðísogi: áætlunin á best við þegar plötunum er dreift um rýmið frekar en að þær séu allar á einum fleti."
+    },
+    "faq": {
+      "tag": "Algengar spurningar",
+      "title": "Spurningar um útreikninginn",
+      "officeTarget": {
+        "question": "Hvaða ómtíma ætti skrifstofa að hafa?",
+        "answer": "Markgildistaflan sem reiknivélin notar setur 0,8 s fyrir skrifstofu, fundarherbergi, kennslustofu, leikskóla og stofu, 0,7 s fyrir símaver, veitingastað, kaffihús eða bar og 1,0 s fyrir móttöku eða biðstofu. Reiknivélin sýnir hvort áætlaður RT60 uppfyllir markgildið fyrir þá tegund rýmis sem þú velur."
+      },
+      "hardFinishes": {
+        "question": "Hvaða yfirborðsefni ísoga minnst hljóð?",
+        "answer": "Í töflunni hefur marmari hljóðísogsstuðulinn 0,01 í hverju áttundarbandi, steinsteypa 0,01 til 0,03 og múrhúð 0,01 til 0,05. Mjúk yfirborðsefni ísoga mun meira: teppi nær 0,37 við 4000 Hz og þung gluggatjöld 0,96 við 500 Hz. Rými með hörðum efnum á gólfi, lofti og veggjum hefur því langan ómtíma."
+      },
+      "howManyM2": {
+        "question": "Hversu marga m² af hljóðdeyfiplötum þarf ég?",
+        "answer": "Reiknivélin reiknar út það viðbótarhljóðísog í m² sabine sem lækkar uppgefinn RT60 — meðaltal 500, 1000 og 2000 Hz bandanna — niður í markgildið og deilir því síðan með vegnum hljóðísogsstuðli αw hverrar Re-Sound plötu sem hefur eitt birt gildi: 1 m² af plötu með αw 1,0 bætir við 1 m² sabine. Plötur þar sem αw fer eftir mynstri eða þykkt eru taldar upp án magns og tengja á vörusíðu þeirra."
+      }
+    },
+    "lead": {
+      "tag": "Næsta skref",
+      "title": "Sendu mér þennan útreikning og tilboð",
+      "subtitle": "Við sendum þér útreikninginn hér að ofan í tölvupósti og komum til baka með tilboð í ráðlagðar plötur.",
+      "firstName": "Fornafn",
+      "lastName": "Eftirnafn",
+      "company": "Fyrirtæki",
+      "email": "Netfang",
+      "honeypot": "Skildu þennan reit eftir auðan",
+      "submit": "Senda útreikning og óska eftir tilboði",
+      "sending": "Sendi...",
+      "success": "Takk fyrir — útreikningurinn er á leiðinni og við höfum samband með tilboð.",
+      "error": "Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur.",
+      "incomplete": "Ljúktu fyrst við útreikninginn hér að ofan.",
+      "privacyNotice": "Með því að senda þetta eyðublað samþykkir þú <link>persónuverndarstefnu okkar</link>."
+    }
+  },
+  "samples": {
+    "metaTitle": "Pantaðu sýnishornasett",
+    "metaDescription": "Óskaðu eftir sýnishornasetti Re-Sound: A4-efnisprufur af öllum seríum og áferðum, sendar innan þriggja virkra daga innan ESB.",
+    "hero": {
+      "tag": "Sýnishornasett",
+      "title": "Pantaðu sýnishornasettið þitt",
+      "subtitle": "A4-efnisprufur af öllum seríum og áferðum, sendar innan þriggja virkra daga innan ESB."
+    },
+    "kit": {
+      "tag": "Hvað er í settinu",
+      "title": "Allar seríur og áferðir í A4-stærð",
+      "swatchesTitle": "A4-efnisprufur",
+      "swatchesText": "Ein A4-efnisprufa af hverri seríu og áferð.",
+      "shippingTitle": "Þrír virkir dagar",
+      "shippingText": "Settið er sent innan þriggja virkra daga á heimilisföng innan ESB.",
+      "projectTitle": "Verkefnið þitt",
+      "projectText": "Segðu okkur hvaða seríur þú ert að skoða og um hvaða verkefni er að ræða.",
+      "cta": "Óska eftir settinu"
+    },
+    "ranges": {
+      "tag": "Seríur",
+      "title": "Seríurnar í settinu",
+      "text": "Efnisprufur af öllum áferðum í textíl-, rWood- og rPET-seríunum."
+    },
+    "families": {
+      "textile": "Textíl",
+      "rwood": "rWood",
+      "rpet": "rPET"
+    },
+    "form": {
+      "tag": "Beiðni",
+      "title": "Óskaðu eftir sýnishornasettinu þínu",
+      "text": "Fylltu út eyðublaðið hér að neðan. Reitir merktir * eru skyldureitir.",
+      "sections": {
+        "ranges": "Hvaða seríur hefurðu áhuga á?",
+        "project": "Verkefnið þitt",
+        "delivery": "Afhending"
+      },
+      "fields": {
+        "firstName": "Fornafn",
+        "lastName": "Eftirnafn",
+        "company": "Fyrirtæki",
+        "email": "Netfang",
+        "country": "Land",
+        "rangesHint": "Hakaðu við að minnsta kosti eina seríu.",
+        "rangesRequired": "Veldu að minnsta kosti eina seríu.",
+        "projectType": "Tegund verkefnis",
+        "projectTypePlaceholder": "Veldu tegund verkefnis",
+        "area": "Flatarmál (m²)",
+        "areaPlaceholder": "t.d. 120",
+        "address": "Afhendingarheimilisfang",
+        "addressPlaceholder": "Gata og húsnúmer, póstnúmer, staður",
+        "addressHint": "Gata, húsnúmer, póstnúmer og staður: nauðsynlegt til að senda settið.",
+        "honeypot": "Skildu þennan reit eftir auðan"
+      },
+      "projectTypes": {
+        "office": "Skrifstofa",
+        "education": "Menntun",
+        "healthcare": "Heilbrigðisþjónusta",
+        "hospitality": "Gestrisni / Hótel",
+        "residential": "Íbúðarhúsnæði",
+        "other": "Annað"
+      },
+      "submit": "Óska eftir sýnishornasettinu",
+      "success": {
+        "title": "Beiðni móttekin",
+        "body": "Takk fyrir, {firstName}. Sýnishornasettið er sent innan þriggja virkra daga innan ESB. Athugaðu pósthólfið þitt fyrir staðfestingu.",
+        "another": "Senda aðra beiðni"
+      }
+    },
+    "faq": {
+      "tag": "Algengar spurningar",
+      "title": "Spurningar um sýnishornasettið",
+      "q1": "Hvað er í sýnishornasettinu?",
+      "a1": "A4-efnisprufur af öllum seríum og áferðum: textíl, rWood og rPET.",
+      "q2": "Hversu langan tíma tekur sendingin?",
+      "a2": "Settið er sent innan þriggja virkra daga á heimilisföng innan ESB.",
+      "q3": "Þarf ég að velja ákveðnar seríur?",
+      "a3": "Settið inniheldur allar seríur og áferðir. Með því að haka við seríurnar sem þú hefur áhuga á segir þú okkur hverjar skipta máli fyrir verkefnið þitt."
     }
   }
 }

@@ -20,7 +20,7 @@ export default function WhereToBuyPage() {
       title: t('alternatives.samples.title'),
       desc: t('alternatives.samples.desc'),
       cta: t('alternatives.samples.cta'),
-      href: '/contact?topic=samples',
+      href: '/samples',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
           <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
@@ -257,7 +257,7 @@ export default function WhereToBuyPage() {
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
             </Link>
-            <Link href="/contact?topic=samples" className="btn-secondary">
+            <Link href="/samples" className="btn-secondary" prefetch={false}>
               {t('cta.secondary')}
             </Link>
           </div>

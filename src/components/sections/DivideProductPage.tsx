@@ -5,8 +5,16 @@ import { analytics } from '@/lib/analytics';
 import OrderButton from '@/components/order/OrderButton';
 import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Single source for every spec figure on this page (αw, recycled content …):
+// src/data/products.ts. Nothing below may hard-code one of these values.
+const PRODUCT = PRODUCTS['divide'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+const alphaW = panelSpecs?.alphaW ?? null;
+const recycledPct = PRODUCT.recycledContentPct;
 
 // Color options for the Divide product
 const colorOptions = [
@@ -102,15 +110,12 @@ export default function DivideProductPage({ priceFrom, configurator, breadcrumbs
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">🧲</span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🔄</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🦶</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
@@ -239,21 +244,18 @@ export default function DivideProductPage({ priceFrom, configurator, breadcrumbs
             <p>{t('base.description')}</p>
             <div className="feature-highlights">
               <div className="highlight">
-                <span className="highlight-icon">⚖️</span>
                 <div>
                   <h4>{t('base.item1Title')}</h4>
                   <p>{t('base.feature1')}</p>
                 </div>
               </div>
               <div className="highlight">
-                <span className="highlight-icon">🪶</span>
                 <div>
                   <h4>{t('base.item2Title')}</h4>
                   <p>{t('base.feature2')}</p>
                 </div>
               </div>
               <div className="highlight">
-                <span className="highlight-icon">🛡️</span>
                 <div>
                   <h4>{t('base.item3Title')}</h4>
                   <p>{t('base.feature3')}</p>
@@ -298,14 +300,14 @@ export default function DivideProductPage({ priceFrom, configurator, breadcrumbs
             <div className="connect-demo">
               <div className="connect-step">
                 <div className="step-visual snap">
-                  <span>🧲</span>
+                  <span>1</span>
                 </div>
                 <span className="step-label">{t('magnetic.snapLabel')}</span>
               </div>
               <div className="connect-arrow">→</div>
               <div className="connect-step">
                 <div className="step-visual align">
-                  <span>✨</span>
+                  <span>2</span>
                 </div>
                 <span className="step-label">{t('magnetic.autoAlign')}</span>
               </div>
@@ -314,7 +316,7 @@ export default function DivideProductPage({ priceFrom, configurator, breadcrumbs
                 <div className="step-visual done">
                   <span>✓</span>
                 </div>
-                <span className="step-label">Done!</span>
+                <span className="step-label">{t('magnetic.doneLabel')}</span>
               </div>
             </div>
           </div>
@@ -398,10 +400,12 @@ export default function DivideProductPage({ priceFrom, configurator, breadcrumbs
               {t('features.description')}
             </p>
             <div className="circular-stats">
-              <div className="stat">
-                <span className="stat-number">80%</span>
-                <span className="stat-label">{t('features.recycledLabel')}</span>
-              </div>
+              {recycledPct !== null && (
+                <div className="stat">
+                  <span className="stat-number">{t('features.stat1Value', { pct: recycledPct })}</span>
+                  <span className="stat-label">{t('features.recycledLabel')}</span>
+                </div>
+              )}
               <div className="stat">
                 <span className="stat-number">0</span>
                 <span className="stat-label">{t('features.wasteLabel')}</span>
@@ -450,28 +454,30 @@ export default function DivideProductPage({ priceFrom, configurator, breadcrumbs
             </div>
           </div>
 
-          <div className="absorption-rating">
-            <div className="rating-circle">
-              <span className="rating-value">αw 0.85</span>
-              <span className="rating-label">{t('options.perSide')}</span>
+          {alphaW && (
+            <div className="absorption-rating">
+              <div className="rating-circle">
+                {/* αw from src/data/products.ts (Products_Data: αw 1.0, class A — the
+                    old "0.85 per side" figure is not in the data); "Class A" only
+                    because that αw is ≥ 0.90 */}
+                <span className="rating-value">αw {alphaW}</span>
+                <span className="rating-label">{tPage('classA')}</span>
+              </div>
+              <p>{t('acoustics.extraBenefit')}</p>
             </div>
-            <p>{t('acoustics.extraBenefit')}</p>
-          </div>
+          )}
         </div>
 
         <div className="acoustics-benefits">
           <div className="benefit">
-            <span className="benefit-icon">🔇</span>
             <h4>{t('acoustics.benefit1Title')}</h4>
             <p>{t('acoustics.benefit1')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">🔒</span>
             <h4>{t('acoustics.benefit2Title')}</h4>
             <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">🎯</span>
             <h4>{t('acoustics.benefit3Title')}</h4>
             <p>{t('acoustics.benefit3')}</p>
           </div>

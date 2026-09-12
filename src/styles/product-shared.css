@@ -176,8 +176,9 @@
 }
 
 .ps-download-icon {
-  font-size: 1.6rem;
+  display: flex;
   flex: none;
+  color: var(--brand-blue);
 }
 
 .ps-download-info {
@@ -486,12 +487,6 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
   padding: 1.75rem;
-}
-
-.hub-why-icon {
-  font-size: 1.8rem;
-  display: block;
-  margin-bottom: 0.75rem;
 }
 
 .hub-why-grid h3 {

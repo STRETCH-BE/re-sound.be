@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { localeFullCodes, type Locale } from '@/i18n/config';
 import { Link } from '@/i18n/navigation';
+import Icon from '@/components/ui/Icon';
 
 import { LEGACY_POSTS, type BlogGridPost } from '@/data/legacy-posts';
 
@@ -36,7 +37,7 @@ export default function BlogGrid({ posts = LEGACY_POSTS }: BlogGridProps) {
               {post.image ? (
                 <Image src={post.image} alt={post.imageAlt ?? ''} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
               ) : (
-                <div className="image-placeholder">📄</div>
+                <div className="image-placeholder"><Icon name="document" /></div>
               )}
             </div>
             <div className="blog-content">
@@ -91,7 +92,12 @@ export default function BlogGrid({ posts = LEGACY_POSTS }: BlogGridProps) {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 3rem;
+          color: var(--brand-blue);
+        }
+
+        .image-placeholder :global(svg) {
+          width: 48px;
+          height: 48px;
         }
 
         .blog-category {

@@ -25,12 +25,12 @@ export default function DuoProductPage(slots: BoothSlots) {
         { id: 'work', image: '/images/products/duo/hero-work.jpg' },
       ]}
       features={[
-        { iconKey: '🔄', key: 'switchable' },
-        { iconKey: '🌬️', key: 'ventilation' },
-        { iconKey: '🔌', key: 'electrics' },
-        { iconKey: '💡', key: 'lighting' },
-        { iconKey: '♿', key: 'accessibility' },
-        { iconKey: '🛡️', key: 'safety' },
+        { iconKey: 'switchable', key: 'switchable' },
+        { iconKey: 'ventilation', key: 'ventilation' },
+        { iconKey: 'electrics', key: 'electrics' },
+        { iconKey: 'lighting', key: 'lighting' },
+        { iconKey: 'accessibility', key: 'accessibility' },
+        { iconKey: 'safety', key: 'safety' },
       ]}
       addons={[
         { id: 'electricDesk',    image: '/images/products/duo/addon-desk.jpg' },

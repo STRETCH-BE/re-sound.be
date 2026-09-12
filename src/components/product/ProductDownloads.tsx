@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 
 import type { DocumentId, Product } from '@/data/products';
 import GatedDownloadButton from './GatedDownloadButton';
+import Icon, { type IconName } from '@/components/ui/Icon';
 
 interface ProductDownloadsProps {
   product: Product;
@@ -25,16 +26,16 @@ const LABEL_KEY: Record<DocumentId, string> = {
   'cad-drawing': 'cadDrawing',
 };
 
-const ICON: Record<DocumentId, string> = {
-  datasheet: '📄',
-  'installation-guide': '🔧',
-  'installation-manual': '📋',
-  'acoustic-test-report': '📊',
-  'colour-finish-guide': '🎨',
-  'fire-certificate': '🔥',
-  'sustainability-declaration': '♻️',
-  warranty: '🛡️',
-  'cad-drawing': '📐',
+const ICON: Record<DocumentId, IconName> = {
+  datasheet: 'document',
+  'installation-guide': 'wrench',
+  'installation-manual': 'list',
+  'acoustic-test-report': 'chart',
+  'colour-finish-guide': 'palette',
+  'fire-certificate': 'flame',
+  'sustainability-declaration': 'recycle',
+  warranty: 'shield',
+  'cad-drawing': 'ruler',
 };
 
 /**
@@ -73,13 +74,13 @@ export default async function ProductDownloads({ product, tag, title, intro }: P
                   slug={product.slug}
                   file={doc.file}
                   label={label}
-                  icon={ICON[doc.id]}
+                  icon={<Icon name={ICON[doc.id]} size={26} />}
                   format={ext}
                   hint={t('gatedHint')}
                 />
               ) : (
                 <a href={doc.file} download className="ps-download-card">
-                  <span className="ps-download-icon" aria-hidden="true">{ICON[doc.id]}</span>
+                  <span className="ps-download-icon" aria-hidden="true"><Icon name={ICON[doc.id]} size={26} /></span>
                   <span className="ps-download-info">
                     <span className="ps-download-label">{label}</span>
                     <span className="ps-download-meta">{ext}</span>

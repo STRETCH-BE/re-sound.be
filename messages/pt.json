@@ -1,19 +1,19 @@
 {
   "meta": {
-    "homeTitle": "Painéis Acústicos e Cabines Telefónicas da Bélgica | Re-Sound",
+    "homeTitle": "Painéis acústicos e cabines — fabricante belga | Re-Sound",
     "homeDescription": "Painéis acústicos circulares (têxtil, folheado rWood, rPET) e cabines telefónicas, fabricados nas nossas fábricas na Bélgica e Polónia. Retoma gratuita.",
-    "productsTitle": "Productos",
+    "productsTitle": "Produtos",
     "productsDescription": "Painéis acústicos circulares e cabines acústicas de produção própria: têxtil (Interior, Solid, Divide), rWood, rPET e cabines (Solo Flex, Duo, Modular XL).",
     "aboutTitle": "Sobre a Re-Sound",
     "aboutDescription": "Conheça a nossa missão: soluções acústicas circulares de materiais reciclados, fabricadas nas nossas fábricas na Bélgica e na Polónia.",
-    "sustainabilityTitle": "Sostenibilidad",
+    "sustainabilityTitle": "Sustentabilidade",
     "sustainabilityDescription": "Descubra como fechamos o ciclo com os nossos painéis acústicos totalmente circulares: desde materiais reciclados até serviço gratuito de devolução.",
     "contactTitle": "Contacte-nos",
     "contactDescription": "Contacte a Re-Sound para pedidos de orçamento, questões ou propostas de parceria.",
     "blogTitle": "Blog",
     "blogDescription": "Perspetivas sobre economia circular, acústica e design sustentável, pela equipa Re-Sound.",
     "interiorTitle": "Painéis Acústicos de Parede Interior | Re-Sound",
-    "interiorDescription": "Painéis acústicos de parede modulares em têxtil reciclado: absorção classe A (αw 1,0), capa amovível lavável, fabrico belga. Desde {fromPrice} por conjunto.",
+    "interiorDescription": "Painéis acústicos de parede modulares em têxtil reciclado: absorção classe A (αw {alphaW}), capa amovível lavável, fabrico belga. Desde {fromPrice} por conjunto.",
     "solidTitle": "Painéis Acústicos de Parede Solid | Re-Sound",
     "solidDescription": "Painéis acústicos de parede de grande formato (1200 × 600 mm) para máxima absorção sonora. Instalação por ganchos, núcleo têxtil reciclado, fabrico belga.",
     "divideTitle": "Divisórias Acústicas Autoportantes Divide | Re-Sound",
@@ -23,7 +23,7 @@
     "rwoodPerfTitle": "rWood Perf — Painéis Acústicos de Madeira Perfurada | Re-Sound",
     "rwoodPerfDescription": "Painéis acústicos de madeira perfurada com folheado FSC: quatro padrões de perfuração para absorção de banda larga, 8 acabamentos, núcleo ignífugo.",
     "rwoodMicroTitle": "rWood Micro — Painéis Acústicos Microperfurados | Re-Sound",
-    "rwoodMicroDescription": "Painéis acústicos de madeira microperfurados (0,5 mm) com folheado FSC: padrão quase invisível, classificação ao fogo B-s1,d0, opção retroiluminada.",
+    "rwoodMicroDescription": "Painéis acústicos de madeira microperfurados (0,5 mm) com folheado certificado FSC: padrão quase invisível, classificação ao fogo {fireClass}, opção retroiluminada.",
     "rwoodVeneerTitle": "rWood Panel — Painéis Acústicos Folheados, 10 Madeiras | Re-Sound",
     "rwoodVeneerDescription": "Painéis acústicos folheados lisos, 10 madeiras: qualidade de mobiliário, certificação FSC, EPD disponível. Escovados, tingidos, lacados, prontos a montar.",
     "rpetGrooveTitle": "rPET Groove — Painel Acústico PET Ranhurado, 12 Cores | Re-Sound",
@@ -48,10 +48,10 @@
     "soloEcoDescription": "Cabine telefónica individual de entrada de gama: 1,1 m², mesa alta, tomada 230 V com USB, ventilação até 4 m³/min, parede traseira fechada ou em vidro."
   },
   "nav": {
-    "products": "Productos",
-    "about": "Acerca de",
-    "sustainability": "Sostenibilidad",
-    "contact": "Contacto",
+    "products": "Produtos",
+    "about": "Sobre nós",
+    "sustainability": "Sustentabilidade",
+    "contact": "Contactos",
     "cta": "Pedir Orçamento",
     "faq": "FAQ",
     "partner": "Parceiros",
@@ -67,17 +67,18 @@
       "badge": "Série rWood · Linha de Acabamento Natural",
       "title": "Painéis acústicos circulares e cabines telefónicas,",
       "titleHighlight": "das nossas fábricas próprias",
-      "subtitle": "Folha de madeira real sobre um núcleo acústico reciclado de alto desempenho. Calor biofílico e absorção sonora classe A num único painel.",
+      "subtitle": "Folheado de madeira real sobre um núcleo acústico reciclado. Calor biofílico e absorção sonora, medida por produto — numa combinação perfeita.",
       "ctaPrimary": "Descobrir rWood",
       "ctaSecondary": "Ver Acabamentos",
       "statVeneers": "Espécies de folheado",
-      "statThickness": "Espesor",
-      "statAbsorption": "Absorção",
-      "statFire": "Reação ao fogo",
       "pill1": "Folheado de madeira genuíno",
       "pill2": "Núcleo reciclado",
       "pill3": "Liso e perfurado",
-      "imageAlt": "Painel acústico rWood Micro com folheado de madeira natural, pormenor do acabamento"
+      "imageAlt": "Painel acústico rWood Micro com folheado de madeira natural, pormenor do acabamento",
+      "statCertified": "Folheado certificado",
+      "statTypes": "Tipos de painel",
+      "statSizes": "Medidas a pedido",
+      "statSizesValue": "À medida"
     },
     "circular": {
       "badge": "Gama Circular · Interior · Solid · Divide · rPET",
@@ -86,40 +87,40 @@
       "subtitle": "De entrada reciclada. Devolução gratuita no fim de vida. O nosso sistema circular garante que o seu investimento acústico nunca se torne resíduo.",
       "ctaPrimary": "Ver Todos os Produtos",
       "ctaSecondary": "Como Funciona",
-      "statRecycled": "Matéria-prima reciclada",
       "statLandfill": "Resíduos em aterro",
-      "statFreeLabel": "Gratis",
-      "statTakeback": "Devolución",
-      "statColors": "Colores",
-      "pill1": "100 % reciclado",
+      "statFreeLabel": "Gratuita",
+      "statTakeback": "Retoma",
+      "statColors": "Cores",
+      "pill1": "Matéria-prima reciclada",
       "pill2": "Retoma gratuita",
       "pill3": "50+ cores",
       "pill4": "Fábricas próprias",
-      "imageAlt": "Painéis acústicos circulares Interior num escritório moderno"
+      "imageAlt": "Painéis acústicos circulares Interior num escritório moderno",
+      "statPlants": "Fábricas próprias, BE e PL"
     }
   },
   "ticker": {
     "recycled": "Materiais Reciclados",
-    "classA": "Absorção Sonora Classe A",
-    "fire": "Reação ao Fogo B-s1,d0",
     "takeback": "Programa de Retoma Gratuito",
     "veneer": "Acabamentos em Folheado de Madeira Real",
     "colors": "Mais de 50 Cores Standard",
     "custom": "Medidas Personalizadas a Pedido",
-    "factories": "Produção própria"
+    "factories": "Fabricado nas nossas próprias fábricas na Bélgica e na Polónia",
+    "tested": "Testado por produto: ISO 11654 / EN 13501-1",
+    "returnable": "Concebido para ser devolvido"
   },
   "materials": {
     "tag": "O QUE USAMOS",
     "title": "Do Resíduo à Maravilha",
     "subtitle": "Transformamos diversos materiais reciclados em painéis acústicos de alto desempenho.",
-    "jeans": "Tejanos",
-    "upholstery": "Tapicería",
-    "clothing": "Ropa",
+    "jeans": "Ganga",
+    "upholstery": "Estofos",
+    "clothing": "Vestuário",
     "textiles": "Têxteis",
     "industrial": "Industrial",
-    "bags": "Bolsas",
-    "wool": "Lana",
-    "mattresses": "Colchones"
+    "bags": "Sacos",
+    "wool": "Lã",
+    "mattresses": "Colchões"
   },
   "rwood": {
     "tag": "Série rWood — Linha de Acabamento Natural",
@@ -134,7 +135,7 @@
     "specsBody": "O núcleo rWood é feito de fibras têxteis recicladas comprimidas — o mesmo material de alto desempenho que os nossos painéis Interior e Solid, acabado com folha de madeira FSC® certificada premium.",
     "specAbsorptionKey": "Absorção Sonora",
     "specFireKey": "Reação ao Fogo",
-    "specThicknessKey": "Espesor",
+    "specThicknessKey": "Espessura",
     "specVariantsKey": "Variantes",
     "specVariantsVal": "Liso e Perfurado",
     "specCoreKey": "Material do Núcleo",
@@ -143,7 +144,7 @@
     "specStandardVal": "Personalizadas a pedido",
     "swatchesTag": "Coleção de Folheados",
     "swatchesTitle": "Escolha o seu acabamento natural",
-    "swatchesBody": "Cinco espécies de madeira, cada uma com o seu próprio carácter. Todas aplicadas sobre um núcleo acústico 100% reciclado.",
+    "swatchesBody": "Cinco espécies de madeira, cada uma com o seu próprio carácter. Todas aplicadas sobre um núcleo acústico reciclado.",
     "ctaFullSpec": "Especificações Completas",
     "ctaDatasheet": "Descarregar Ficha Técnica",
     "ctaOrderSamples": "Encomendar Kit de Amostras",
@@ -154,7 +155,7 @@
     "tag": "OS NOSSOS PRODUTOS",
     "title": "Soluções Acústicas",
     "titleHighlight": "para cada espaço.",
-    "mosaicSubtitle": "Desde painéis de parede modulares até divisores autoportantes — todos fabricados com materiais 100% reciclados, todos concebidos para voltar.",
+    "mosaicSubtitle": "Desde painéis de parede modulares até divisores autoportantes — conteúdo reciclado em todas as gamas, e todos concebidos para voltar.",
     "viewAll": "Ver todos os produtos",
     "learnMore": "Saber mais",
     "pageTitle": "Os Nossos Produtos",
@@ -170,13 +171,13 @@
       "title": "Filtrar Produtos",
       "clear": "Limpar tudo",
       "finish": "Acabamento do Produto",
-      "textile": "Textil",
-      "wood": "Madera",
+      "textile": "Têxtil",
+      "wood": "Madeira",
       "pet": "PET",
       "type": "Tipo de Produto",
       "wallPanel": "Painel de Parede",
       "ceilingPanel": "Painel de Teto",
-      "divider": "Separador",
+      "divider": "Divisória",
       "showingAll": "A mostrar todos os {count} produtos",
       "showingFiltered": "A mostrar {filtered} de {total} produtos",
       "noResults": "Nenhum produto corresponde aos seus filtros",
@@ -188,7 +189,7 @@
     "interior": {
       "title": "Interior",
       "description": "Painéis acústicos expansíveis para paredes e tetos. Perfeitos para escritórios, restaurantes e espaços públicos.",
-      "fullDescription": "Os nossos painéis Interior são concebidos para integração perfeita em qualquer espaço. Fabricados com têxteis 100% reciclados e disponíveis em mais de 50 cores."
+      "fullDescription": "Os nossos painéis Interior são concebidos para uma integração perfeita em qualquer espaço. Fabricados com fibras têxteis recicladas, oferecem uma absorção sonora excecional e acrescentam calor visual ao seu ambiente."
     },
     "solid": {
       "title": "Solid",
@@ -203,12 +204,12 @@
     "rwood-groove": {
       "title": "rWood - Groove",
       "description": "Painéis acústicos de madeira premium com folhas naturais de carvalho e nogueira. Design elegante com controlo sonoro superior.",
-      "fullDescription": "Os painéis rWood - Groove combinam a beleza natural da madeira certificada FSC® com um desempenho acústico excecional."
+      "fullDescription": "Os painéis rWood - Groove combinam a beleza natural da madeira certificada FSC com um desempenho acústico excecional. Com ranhuras fresadas com precisão e feltro integrado no tardoz, estes painéis transformam qualquer espaço com calor e estilo. O valor de absorção medido está na página do produto."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
       "description": "Painéis acústicos ranhurados sustentáveis, fabricados em PET reciclado. Estética moderna com excelente desempenho acústico.",
-      "fullDescription": "Os painéis rPET - Groove apresentam um padrão linear distintivo criado com garrafas PET 100% recicladas."
+      "fullDescription": "Os painéis rPET - Groove apresentam um padrão linear distintivo criado a partir de garrafas PET recicladas. O design ranhurado maximiza a absorção sonora e acrescenta uma textura contemporânea a paredes e tetos."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
@@ -228,7 +229,7 @@
     "rpet-flex-groove": {
       "title": "rPET - Flex Groove",
       "description": "Painéis acústicos com ranhuras flexíveis fabricados com PET reciclado. Opções de instalação versáteis com estética moderna.",
-      "fullDescription": "rPET - Flex Groove oferece o mesmo design ranhurado distintivo que os nossos painéis rPET padrão, com maior flexibilidade de instalação."
+      "fullDescription": "O rPET - Flex Groove oferece o mesmo design ranhurado distintivo dos nossos painéis rPET padrão, com maior flexibilidade de instalação. Fabricados a partir de garrafas PET recicladas, estes painéis proporcionam um excelente desempenho acústico e adaptam-se a diversas configurações de montagem."
     },
     "rwood-perf": {
       "title": "rWood - Perf",
@@ -242,7 +243,7 @@
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
-      "description": "Painéis acústicos de folha de madeira lisa. Elegância atemporal com absorção sonora classe A para espaços premium.",
+      "description": "Painéis acústicos em folheado de madeira, lisos e depurados. Elegância atemporal e conforto silencioso para espaços premium.",
       "fullDescription": "rWood - Veneer oferece a pura beleza ininterrupta de folha de madeira certificada FSC® suportada por um desempenho acústico de alto desempenho."
     },
     "highlights": {
@@ -252,21 +253,21 @@
       },
       "recyclable": {
         "title": "Reciclável",
-        "value": "100% em fim de vida"
+        "value": "Retoma gratuita em fim de vida"
       },
       "origin": {
         "title": "Origem",
-        "value": "Fabricado na Bélgica"
+        "value": "Fábricas próprias na Bélgica e na Polónia"
       }
     },
     "features": {
       "performance": {
         "title": "Elevado Desempenho",
-        "description": "Absorção sonora de classe A para um conforto acústico ideal em qualquer ambiente."
+        "description": "Absorção sonora medida por produto segundo a ISO 11654 — o valor está em cada página de produto."
       },
       "circular": {
         "title": "Totalmente Circular",
-        "description": "Fabricado a partir de materiais reciclados e 100% reciclável em fim de vida."
+        "description": "Fabricado a partir de materiais reciclados e recolhido gratuitamente em fim de vida."
       },
       "customization": {
         "title": "Opções Personalizadas",
@@ -288,20 +289,26 @@
     "solo-eco": {
       "title": "Solo ECO",
       "description": "Cabine telefónica de escritório individual de entrada de gama: 1,1 m² de área ocupada, mesa alta, tomada específica do país com USB, parede traseira fechada ou em vidro."
+    },
+    "applications": {
+      "educationSports": "Educação e Desporto",
+      "office": "Escritório",
+      "private": "Residencial",
+      "healthcare": "Saúde"
     }
   },
   "specs": {
-    "tag": "ESPECIFICACIONES",
+    "tag": "ESPECIFICAÇÕES",
     "title": "Detalhes Técnicos",
-    "dimensions": "Dimensiones",
-    "thickness": "Espesor",
+    "dimensions": "Dimensões",
+    "thickness": "Espessura",
     "weight": "Peso",
     "height": "Altura",
     "absorption": "Coeficiente de Absorção",
     "fireClass": "Classificação ao Fogo",
     "material": "Material",
-    "recycledTextiles": "100% Têxteis Reciclados",
-    "certifications": "Certificaciones"
+    "recycledTextiles": "Fibras têxteis recicladas",
+    "certifications": "Certificações"
   },
   "why": {
     "tag": "PORQUÊ A RE-SOUND",
@@ -312,7 +319,7 @@
     "features": {
       "performance": {
         "title": "Desempenho Superior",
-        "description": "Classificação de absorção de classe A (αw 0,95-1,00) para um conforto acústico ideal."
+        "description": "Absorção medida por produto segundo a ISO 11654 — o valor está em cada página de produto."
       },
       "durability": {
         "title": "Feito para Durar",
@@ -326,7 +333,8 @@
         "title": "Totalmente Personalizável",
         "description": "Mais de 50 cores, dimensões personalizadas e várias opções de montagem."
       }
-    }
+    },
+    "freeLabel": "Gratuito"
   },
   "circular": {
     "tag": "ECONOMIA CIRCULAR",
@@ -335,13 +343,12 @@
     "subtitle": "Os nossos painéis começam a vida como resíduo e podem voltar para se tornarem novos painéis, criando um ciclo interminável de valor.",
     "loopLabel": "Ciclo Infinito",
     "cta": "Como Funciona",
-    "statRecycled": "Matéria-Prima Reciclada",
-    "statLandfill": "Vertedero",
-    "statFreeLabel": "Gratis",
-    "statTakeback": "Devolución",
+    "statLandfill": "Aterro",
+    "statFreeLabel": "Gratuita",
+    "statTakeback": "Retoma",
     "steps": {
       "collect": {
-        "title": "Recolectar",
+        "title": "Recolher",
         "description": "Recolhemos têxteis reciclados de diversas fontes."
       },
       "transform": {
@@ -357,7 +364,8 @@
         "description": "Recolha gratuita e reciclagem em painéis novos."
       }
     },
-    "imageAlt": "Economia circular — processo de reciclagem de painéis acústicos"
+    "imageAlt": "Economia circular — processo de reciclagem de painéis acústicos",
+    "statPlants": "Fábricas próprias"
   },
   "dualCta": {
     "left": {
@@ -420,12 +428,12 @@
       "subtitle": "Um grupo apaixonado, dedicado à acústica sustentável.",
       "roles": {
         "founder": "Fundador e CEO",
-        "operations": "Operaciones",
+        "operations": "Operações",
         "sales": "Vendas e Parcerias"
       }
     },
     "partners": {
-      "tag": "SOCIOS",
+      "tag": "PARCEIROS",
       "title": "Trabalhar em Conjunto",
       "types": {
         "supplier": "Fornecedor de Materiais",
@@ -454,7 +462,7 @@
     }
   },
   "sustainability": {
-    "tag": "SOSTENIBILIDAD",
+    "tag": "SUSTENTABILIDADE",
     "title": "Acústica Verdadeiramente Circular",
     "subtitle": "Não nos limitamos a reduzir os resíduos — eliminamo-los através de uma abordagem totalmente circular.",
     "intro": {
@@ -483,7 +491,7 @@
       }
     },
     "materials": {
-      "tag": "MATERIALES",
+      "tag": "MATERIAIS",
       "title": "O Que Transformamos",
       "subtitle": "De têxteis descartados a soluções acústicas premium."
     },
@@ -515,35 +523,35 @@
     "form": {
       "title": "Envie-nos uma Mensagem",
       "subtitle": "Preencha o formulário abaixo e responderemos no prazo de 24 horas.",
-      "name": "Nombre",
+      "name": "Nome",
       "namePlaceholder": "O seu nome completo",
-      "email": "Correo electrónico",
+      "email": "E-mail",
       "emailPlaceholder": "seu@email.com",
       "company": "Empresa",
       "companyPlaceholder": "Nome da sua empresa",
-      "phone": "Teléfono",
+      "phone": "Telefone",
       "phonePlaceholder": "+32 ...",
-      "subject": "Asunto",
+      "subject": "Assunto",
       "subjectPlaceholder": "Selecione um assunto",
-      "message": "Mensaje",
+      "message": "Mensagem",
       "messagePlaceholder": "Fale-nos do seu projeto ou da sua questão...",
       "submit": "Enviar Mensagem",
-      "sending": "Enviando...",
+      "sending": "A enviar...",
       "successMessage": "Obrigado! Responderemos no prazo de 24 horas.",
       "errorMessage": "Ocorreu um erro. Por favor, tente novamente.",
       "subjects": {
         "quote": "Pedir Orçamento",
         "info": "Informação sobre Produtos",
         "partnership": "Pedido de Parceria",
-        "other": "Otro"
+        "other": "Outro"
       },
       "privacyNotice": "Ao enviar este formulário, aceita a nossa <link>política de privacidade</link>.",
       "honeypot": "Deixe este campo vazio"
     },
     "info": {
       "title": "Informações de Contacto",
-      "email": "Correo electrónico",
-      "phone": "Teléfono",
+      "email": "E-mail",
+      "phone": "Telefone",
       "address": "Endereço",
       "hours": "Horário de Funcionamento",
       "hoursValue": "Segunda - Sexta: 8:00 - 16:30"
@@ -566,32 +574,32 @@
     }
   },
   "blog": {
-    "tag": "PERSPECTIVAS",
+    "tag": "PERSPETIVAS",
     "title": "Blog e Notícias",
     "subtitle": "Reflexões da nossa equipa sobre acústica, sustentabilidade e design.",
     "readMore": "Ler artigo",
     "loadMore": "Carregar Mais Artigos",
     "share": "Partilhar este artigo",
-    "relatedTag": "RELACIONADO",
+    "relatedTag": "RELACIONADOS",
     "relatedTitle": "Artigos Relacionados",
     "defaultAuthor": {
       "name": "Equipa Re-Sound",
       "role": "Especialistas em Acústica Circular"
     },
     "filters": {
-      "all": "Todo",
-      "sustainability": "Sostenibilidad",
-      "products": "Productos",
-      "education": "Educación",
+      "all": "Todos",
+      "sustainability": "Sustentabilidade",
+      "products": "Produtos",
+      "education": "Educação",
       "company": "Empresa"
     },
     "categories": {
-      "sustainability": "Sostenibilidad",
-      "products": "Productos",
+      "sustainability": "Sustentabilidade",
+      "products": "Produtos",
       "materials": "Materiais",
-      "education": "Educación",
+      "education": "Educação",
       "company": "Empresa",
-      "design": "Diseño"
+      "design": "Design"
     },
     "minRead": "{minutes} min de leitura",
     "draftBanner": "Rascunho para revisão — não publicado, não indexado.",
@@ -713,17 +721,17 @@
     "title": "Subscreva a Nossa Newsletter",
     "subtitle": "Receba as últimas novidades sobre acústica circular, novos produtos e ideias de design sustentável.",
     "placeholder": "Introduza o seu e-mail",
-    "subscribe": "Suscribirse",
-    "subscribing": "Suscribiéndose...",
+    "subscribe": "Subscrever",
+    "subscribing": "A subscrever...",
     "success": "Obrigado por subscrever!",
     "privacy": "Respeitamos a sua privacidade. Cancele a subscrição a qualquer momento.",
     "error": "Algo correu mal. Tente novamente."
   },
   "footer": {
     "description": "Soluções acústicas circulares fabricadas com materiais reciclados.",
-    "products": "Productos",
+    "products": "Produtos",
     "company": "Empresa",
-    "contact": "Contacto",
+    "contact": "Contactos",
     "allProducts": "Todos os Produtos",
     "copyright": "© {year} Re-Sound. Todos os direitos reservados.",
     "manageCookies": "Gerir cookies",
@@ -731,7 +739,8 @@
     "terms": "Termos de Serviço",
     "countryBelgium": "Bélgica",
     "reviewUs": "Avalie-nos no Google",
-    "priceGuide": "Preços de cabines telefónicas"
+    "priceGuide": "Preços de cabines telefónicas",
+    "manufacturing": "Produção"
   },
   "cookies": {
     "title": "Preferências de cookies",
@@ -780,17 +789,17 @@
     "companyTypePlaceholder": "Selecionar...",
     "consent": "Aceito receber comunicações da Re-Sound e aceito a política de privacidade.",
     "submit": "Transferir Agora",
-    "submitting": "Procesando...",
+    "submitting": "A processar...",
     "positions": {
       "owner": "Proprietário / CEO",
       "director": "Diretor / Gestor",
-      "architect": "Arquitecto",
-      "designer": "Diseñador",
-      "engineer": "Ingeniero",
+      "architect": "Arquiteto",
+      "designer": "Designer",
+      "engineer": "Engenheiro",
       "projectManager": "Gestor de Projeto",
       "procurement": "Compras / Aprovisionamento",
       "consultant": "Consultor",
-      "other": "Otro"
+      "other": "Outro"
     },
     "companyTypes": {
       "architecture": "Gabinete de Arquitetura",
@@ -801,32 +810,32 @@
       "corporate": "Empresa / Escritório",
       "hospitality": "Hotelaria / Hotéis",
       "education": "Educação / Escolas",
-      "healthcare": "Salud",
-      "retail": "Comercio Minorista",
-      "other": "Otro"
+      "healthcare": "Saúde",
+      "retail": "Retalho",
+      "other": "Outro"
     },
     "honeypot": "Deixe este campo vazio"
   },
   "productPage": {
     "nav": {
-      "overview": "Descripción General",
+      "overview": "Visão geral",
       "features": "Características",
       "acoustics": "Acústica",
-      "specs": "Especificaciones",
-      "gallery": "Galería",
-      "downloads": "Descargas",
-      "colors": "Colores",
-      "patterns": "Patrones",
-      "sustainability": "Sostenibilidad",
+      "specs": "Especificações",
+      "gallery": "Galeria",
+      "downloads": "Transferências",
+      "colors": "Cores",
+      "patterns": "Padrões",
+      "sustainability": "Sustentabilidade",
       "installation": "Instalação"
     },
     "tags": {
       "acousticWallPanels": "PAINÉIS ACÚSTICOS DE PAREDE",
       "completeSolution": "SOLUÇÃO COMPLETA",
-      "sustainability": "SOSTENIBILIDAD",
+      "sustainability": "SUSTENTABILIDADE",
       "designFreedom": "LIBERDADE DE DESIGN",
-      "practical": "PRÁCTICO",
-      "performance": "RENDIMIENTO",
+      "practical": "PRÁTICO",
+      "performance": "DESEMPENHO",
       "technical": "TÉCNICO",
       "inspiration": "INSPIRAÇÃO",
       "resources": "RECURSOS",
@@ -848,7 +857,7 @@
       "downloadDatasheet": "Transferir Ficha Técnica"
     },
     "downloads": {
-      "title": "Descargas",
+      "title": "Transferências",
       "tag": "RECURSOS",
       "productDataSheet": "Ficha Técnica do Produto",
       "installationManual": "Manual de Instalação",
@@ -866,31 +875,36 @@
       "gatedHint": "Disponível a pedido"
     },
     "specs": {
-      "dimensions": "Dimensiones",
+      "dimensions": "Dimensões",
       "moduleSize": "Dimensão do módulo",
       "panelSize": "Dimensão do painel",
-      "thickness": "Espesor",
+      "thickness": "Espessura",
       "weight": "Peso",
       "absorptionCoeff": "Coeficiente de absorção (αw)",
       "absorptionClass": "Classe de absorção",
       "nrc": "NRC",
       "fireRating": "Classificação ao fogo",
-      "standard": "Estándar",
+      "standard": "Norma",
       "core": "Núcleo",
-      "absorber": "Absorbente",
-      "cover": "Funda",
+      "absorber": "Absorvente",
+      "cover": "Capa",
       "recycledContent": "Conteúdo reciclado",
       "endOfLife": "Fim de vida",
       "vocEmissions": "Emissões de COV",
-      "mounting": "Montaje",
+      "mounting": "Montagem",
       "installationTime": "Tempo de instalação",
       "toolsRequired": "Ferramentas necessárias",
       "testStandard": "Norma de ensaio",
-      "surface": "Superficie",
-      "finish": "Acabado",
+      "surface": "Superfície",
+      "finish": "Acabamento",
       "epd": "EPD disponível",
       "fscCertified": "Certificado FSC®",
-      "dimPanelWidth": "Largura do painel"
+      "dimPanelWidth": "Largura do painel",
+      "absorptionClassB": "Classe B",
+      "absorptionClassC": "Classe C",
+      "absorptionClassD": "Classe D",
+      "absorptionClassE": "Classe E",
+      "oekoTexStandard100": "OEKO-TEX® Standard 100"
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
@@ -898,8 +912,8 @@
       "altPattern": "{product} — instalação em projeto {n}"
     },
     "acoustics": {
-      "low": "Bajo",
-      "mid": "Medio",
+      "low": "Baixo",
+      "mid": "Médio",
       "high": "Alto",
       "highestRating": "A classificação de absorção mais elevada possível",
       "classA": "Classe A",
@@ -917,7 +931,7 @@
       }
     },
     "specLabels": {
-      "thickness": "Espesor",
+      "thickness": "Espessura",
       "weight": "Peso",
       "density": "Densidade",
       "testStandard": "Norma de ensaio",
@@ -934,20 +948,20 @@
       "reactionFire": "Reação ao fogo",
       "resistanceFire": "Resistência ao fogo",
       "fireRetardant": "Retardador de Chama",
-      "surface": "Superficie",
-      "edges": "Cantos",
+      "surface": "Superfície",
+      "edges": "Arestas",
       "acousticFelt": "Feltro acústico",
       "woodSourcing": "Proveniência da madeira",
       "feltCert": "Certificação do feltro",
       "epd": "EPD disponível",
       "vocEmissions": "Emissões de COV",
-      "moistureResistant": "Resistente a la humedad",
-      "connection": "Conexión",
+      "moistureResistant": "Resistente à humidade",
+      "connection": "Ligação",
       "backlitOption": "Opção retroiluminada",
       "mountingSystem": "Sistema de montagem",
       "concealedClip": "Sistema de clipes ocultos",
       "coreDensity": "Densidade do núcleo",
-      "formaldehyde": "Formaldehído",
+      "formaldehyde": "Formaldeído",
       "fscCert": "Certificado FSC®"
     },
     "faq": {
@@ -974,8 +988,8 @@
       "title": "Interior: painéis acústicos de parede modulares em têxtil reciclado",
       "tagline": "Acústica Modular, Circular por Design",
       "description": "Transforme o seu espaço com Re-Sound Interior — um sistema acústico de parede completo fabricado com materiais reciclados.",
-      "uspAbsorption": "Absorção αw 1,0",
-      "uspRecyclable": "100% Reciclável",
+      "uspAbsorption": "Absorção αw {alphaW}",
+      "uspRecyclable": "Reciclável através da retoma gratuita",
       "uspOrigin": "Fabricado na Bélgica",
       "priceFrom": "A partir de",
       "priceUnit": "sem IVA por conjunto de 3 módulos",
@@ -991,10 +1005,10 @@
       "feature4": "Sem necessidade de ferramentas especializadas"
     },
     "features": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "Circular por Dentro, Bonito por Fora",
       "description": "Cada painel Interior começa a vida como têxteis descartados — roupa, estofamento e resíduos de tecido industrial.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Conteúdo reciclado",
       "stat2Value": "0",
       "stat2Label": "Resíduos para aterro",
@@ -1011,7 +1025,7 @@
       "dimSetUnit": "módulos por pacote"
     },
     "maintenance": {
-      "tag": "PRÁCTICO",
+      "tag": "PRÁTICO",
       "title": "Manutenção Fácil",
       "description": "A capa de tecido removível torna a limpeza fácil. Simplesmente desaperte, lave e coloque de volta — os seus painéis ficarão como novos.",
       "feature1": "Capa amovível com fecho de correr",
@@ -1020,14 +1034,14 @@
       "feature4": "Capas de substituição disponíveis"
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Absorção Sonora Superior",
-      "description": "Com um coeficiente de absorção sonora ponderado (αw) de 1,0, Re-Sound Interior oferece o máximo desempenho acústico."
+      "description": "Com um coeficiente de absorção sonora ponderado (αw) de {alphaW}, o Re-Sound Interior oferece o máximo desempenho acústico. Tanto as frequências altas como as baixas são absorvidas de forma eficaz, criando espaços confortáveis e produtivos."
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
-      "dimensionsTitle": "Dimensiones",
+      "title": "Especificações",
+      "dimensionsTitle": "Dimensões",
       "moduleSizeValue": "900 × 600 mm",
       "thicknessValue": "45 mm",
       "weightValue": "~3,5 kg por módulo",
@@ -1042,9 +1056,9 @@
       "fireTitle": "Segurança Contra Incêndio",
       "fireRatingValue": "B-s1, d0",
       "fireStandardValue": "EN 13501-1",
-      "sustainTitle": "Sostenibilidad",
+      "sustainTitle": "Sustentabilidade",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% reciclável",
+      "endOfLifeValue": "Retoma e reciclagem gratuitas",
       "vocValue": "Baixo / A+",
       "installTitle": "Instalação",
       "mountingValue": "Sistema de calha de parede",
@@ -1066,12 +1080,12 @@
           "answer": "Sim. A capa é removível e lavável à máquina a 30 °C. O núcleo de têxtil reciclado permanece dentro do painel e não é afetado."
         },
         "absorptionRating": {
-          "question": "Qual é a diferença entre αw 1.0 e NRC 0.95?",
-          "answer": "Ambos medem absorção, mas segundo normas diferentes. αw (ISO 11654) é o valor único europeu; NRC (ASTM C423) é o equivalente americano. αw 1.0 e NRC 0.95 indicam o mesmo desempenho Classe A."
+          "question": "Qual é a diferença entre αw {alphaW} e NRC {nrc}?",
+          "answer": "Ambos medem a absorção, mas segundo normas de ensaio diferentes. O αw (ISO 11654) é o valor único europeu; o NRC (ASTM C423) é o equivalente americano. αw {alphaW} e NRC {nrc} indicam o mesmo desempenho de classe A."
         },
         "breeamLeed": {
           "question": "Este produto é elegível para créditos BREEAM ou LEED?",
-          "answer": "Sim. O conteúdo reciclado, as baixas emissões de COV e o programa de retoma contribuem para os créditos BREEAM Mat 03 e LEED MR. Uma EPD está disponível mediante pedido."
+          "answer": "Sim. O conteúdo reciclado, as baixas emissões de COV e o programa de retoma contribuem para os créditos BREEAM Mat 03 e LEED MR."
         },
         "installMethod": {
           "question": "Como são instalados os painéis?",
@@ -1094,7 +1108,6 @@
       "tagline": "Acústica de Alto Impacto, Instalação Sem Esforço",
       "description": "Conheça Re-Sound Solid — o seu painel acústico de parede de alto impacto concebido para máximo desempenho com mínimo esforço.",
       "usp1": "Elevada Absorção",
-      "usp2": "1200 × 600 mm",
       "usp3": "Sistema de Ganchos",
       "colorSelector": "Selecionar Cor",
       "priceUnit": "excl. IVA por painel",
@@ -1127,10 +1140,10 @@
       "feature4": "Capas de substituição disponíveis"
     },
     "features": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "Circular por Conceção",
       "description": "Re-Sound Solid é cuidadosamente concebido com a circularidade como núcleo. Fabricado com têxteis reciclados e intrinsecamente sustentável.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Conteúdo reciclado",
       "stat2Value": "0",
       "stat2Label": "Resíduos para aterro",
@@ -1144,7 +1157,7 @@
       "freqHigh": "2000-4000 Hz"
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Absorção Sonora de Alto Impacto",
       "description": "Re-Sound Solid oferece um desempenho acústico excecional graças às suas dimensões consideráveis e materiais de alta qualidade.",
       "benefit1": "Excelente absorção em todas as frequências",
@@ -1153,18 +1166,18 @@
       "benefit3Title": "Maior Concentração",
       "benefit3": "Minimize o ruído de fundo perturbador",
       "benefit4": "Grande formato para resultados de alto impacto",
-      "ratingValue": "αw 0.95",
+      "ratingValue": "αw {alphaW}",
       "ratingLabel": "Classe A"
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
-      "dimensionsTitle": "Dimensiones",
+      "title": "Especificações",
+      "dimensionsTitle": "Dimensões",
       "panelSizeValue": "1200 × 600 mm",
       "thicknessValue": "45 mm",
       "weightValue": "~4,5 kg por painel",
       "acousticsTitle": "Desempenho Acústico",
-      "alphaValue": "0.95",
+      "alphaValue": "1.0",
       "classValue": "Classe A",
       "nrcValue": "0.90",
       "materialsTitle": "Materiais",
@@ -1173,9 +1186,9 @@
       "fireTitle": "Segurança Contra Incêndio",
       "fireRatingValue": "B-s1, d0",
       "fireStandardValue": "EN 13501-1",
-      "sustainTitle": "Sostenibilidad",
+      "sustainTitle": "Sustentabilidade",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% reciclável",
+      "endOfLifeValue": "Retoma e reciclagem gratuitas",
       "installTitle": "Instalação",
       "mountingValue": "Sistema de calha com ganchos",
       "toolsValue": "Berbequim, nível",
@@ -1185,8 +1198,8 @@
       "coverValue2": "Tecido reciclado",
       "binderRow": "Ligante",
       "endOfLife": "Fim de vida",
-      "endOfLifeVal": "100% reciclável",
-      "mounting": "Montaje",
+      "endOfLifeVal": "Retoma e reciclagem gratuitas",
+      "mounting": "Montagem",
       "mountingVal": "Sistema de ganchos",
       "installTime": "Tempo de instalação",
       "installTimeVal": "~3 min por painel",
@@ -1216,8 +1229,8 @@
           "answer": "Um painel Solid padrão de 1200 × 600 mm pesa cerca de 4,5 kg. A construção leve faz com que as fixações de parede raramente precisem de reforço."
         },
         "absorptionRating": {
-          "question": "Qual é a diferença entre αw 1.0 e NRC 0.95?",
-          "answer": "Ambos medem absorção, mas segundo normas diferentes. αw (ISO 11654) é o valor único europeu; NRC (ASTM C423) é o equivalente americano. αw 1.0 e NRC 0.95 indicam o mesmo desempenho Classe A."
+          "question": "Qual é a diferença entre αw {alphaW} e NRC {nrc}?",
+          "answer": "Ambos medem a absorção, mas segundo normas de ensaio diferentes. O αw (ISO 11654) é o valor único europeu; o NRC (ASTM C423) é o equivalente americano. αw {alphaW} e NRC {nrc} indicam o mesmo desempenho de classe A."
         }
       }
     },
@@ -1252,46 +1265,48 @@
       "feature4": "Circular por design"
     },
     "base": {
-      "tag": "ESTABILIDAD",
+      "tag": "ESTABILIDADE",
       "title": "Base Integrada",
       "description": "Graças à base integrada, Divide é sempre estável e mantém-se livre em qualquer chão. O peso leve da construção torna-o fácil de mover e reposicionar.",
       "feature1": "Estável em qualquer superfície, sem fixação",
       "feature2": "Fácil de deslocar e reposicionar",
       "feature3": "Base macia que protege todos os tipos de pavimento",
       "item1Title": "Perfeitamente Equilibrado",
-      "item2Title": "Ligero",
-      "item3Title": "Seguro para el Suelo"
+      "item2Title": "Leve",
+      "item3Title": "Protege o pavimento"
     },
     "balanced": {
       "title": "Perfeitamente Equilibrado",
       "description": "Leve, mas estável. A base concebida do Divide mantém a sua configuração segura sem fixações ao pavimento."
     },
     "magnetic": {
-      "tag": "SIN ESFUERZO",
+      "tag": "SEM ESFORÇO",
       "title": "Ligação Magnética",
       "description": "Os módulos ligam-se sem esforço através de ímanes subtis integrados no tecido. Monte e desmonte em segundos sem ferramentas.",
       "snapLabel": "Encaixe por clique",
-      "autoAlign": "Alineación automática"
+      "autoAlign": "Alinhamento automático",
+      "doneLabel": "Concluído"
     },
     "modular": {
-      "tag": "FLEXIBILIDAD",
+      "tag": "FLEXIBILIDADE",
       "title": "Sistema Modular",
       "description": "Decida você mesmo a disposição do seu espaço. Divide é um sistema modular que se adapta às suas necessidades. Seja em configuração em linha reta, em L ou em U.",
-      "config1": "Individual",
-      "config2": "Doble",
+      "config1": "Simples",
+      "config2": "Duplo",
       "config3": "Triplo",
-      "config4": "Esquina"
+      "config4": "Canto"
     },
     "features": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "Circular por Conceção",
       "description": "Como todos os produtos Re-Sound, Divide é cuidadosamente concebido com a circularidade como núcleo. Fabricado com materiais reciclados.",
       "recycledLabel": "Conteúdo reciclado",
       "wasteLabel": "Resíduos para aterro",
-      "recycleLabel": "Ciclos de reciclagem"
+      "recycleLabel": "Ciclos de reciclagem",
+      "stat1Value": "{pct} %"
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Absorção Sonora em Ambas as Faces",
       "description": "Re-Sound Divide absorve o som de ambos os lados, tornando-o perfeito para criar privacidade acústica em espaços abertos.",
       "benefit1Title": "Redução de Ruído",
@@ -1306,26 +1321,26 @@
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
+      "title": "Especificações",
       "acousticsTitle": "Desempenho Acústico",
       "fireTitle": "Segurança Contra Incêndio",
-      "sustainTitle": "Sostenibilidad",
-      "installTitle": "Movilidad",
+      "sustainTitle": "Sustentabilidade",
+      "installTitle": "Mobilidade",
       "materialsTitle": "Materiais",
       "featuresTitle": "Características",
-      "dimensionsTitle": "Dimensiones",
+      "dimensionsTitle": "Dimensões",
       "moduleWidth": "Largura do módulo",
       "moduleHeight": "Altura do módulo",
       "fabricCore": "Tecido reciclado",
       "steelFrame": "Aço reciclado",
       "magnets": "Ímanes",
-      "magnetsVal": "Neodimio",
+      "magnetsVal": "Neodímio",
       "endOfLife": "Fim de vida",
-      "endOfLifeVal": "100% reciclável",
-      "connection": "Conexión",
+      "endOfLifeVal": "Retoma e reciclagem gratuitas",
+      "connection": "Ligação",
       "connectionVal": "Encaixe magnético",
       "setupTime": "Tempo de montagem",
-      "setupTimeVal": "Instantáneo",
+      "setupTimeVal": "Instantâneo",
       "toolsRequired": "Ferramentas necessárias"
     },
     "gallery": {
@@ -1375,9 +1390,9 @@
       "tag": "PAINÉIS ACÚSTICOS EM PET RECICLADO",
       "title": "rPET Groove: painéis acústicos em PET com ranhuras em 12 cores",
       "tagline": "Das Garrafas ao Silêncio",
-      "description": "Os painéis rPET - Groove combinam estética contemporânea com desempenho acústico excepcional. Feitos 100% de garrafas PET recicladas, estes painéis de alta densidade oferecem absorção sonora classe A enquanto desviam resíduos plásticos do aterro.",
-      "usp1": "100% PET reciclado",
-      "usp2": "Classe A",
+      "description": "Transforme o seu espaço com os painéis acústicos rPET - Groove. {pct, select, unknown {Fabricados a partir de garrafas de plástico recicladas, estes} other {Fabricados a partir de {pct} % de garrafas de plástico recicladas, estes}} elegantes painéis ranhurados combinam design contemporâneo com uma absorção sonora excecional. Eficiência e elegância.",
+      "usp1": "{pct, select, unknown {Garrafas PET recicladas} other {{pct} % PET reciclado}}",
+      "usp2": "NRC até 0,90",
       "usp3": "12 Cores de Design",
       "colorSelector": "Selecionar cor",
       "description2": ""
@@ -1386,8 +1401,8 @@
       "tag": "VISÃO GERAL",
       "title": "Silêncio Circular",
       "description": "Os painéis rPET - Groove conferem um toque contemporâneo a qualquer espaço, ao mesmo tempo que reduzem o incómodo do ruído. O design de ripas visíveis cria profundidade visual e textura, ideal para escritórios modernos, salas de reunião, átrios, restaurantes e áreas de receção.",
-      "feature1": "100% feito de garrafas PET pós-consumo recicladas",
-      "feature2": "Absorção sonora classe A (NRC até 0,90)",
+      "feature1": "{pct, select, unknown {Fabricado a partir de garrafas de plástico recicladas} other {Fabricado a partir de {pct} % de garrafas de plástico recicladas}}",
+      "feature2": "Padrões de ranhuras cortados com precisão por CNC",
       "feature3": "Acabamento duradouro e colorido graças à tintura dope",
       "feature4": "Espessuras de 12 mm, 24 mm e 36 mm disponíveis",
       "description2": ""
@@ -1439,7 +1454,7 @@
       "sectionTitle": "Selecionar Espessura"
     },
     "acoustics": {
-      "tag": "ACÚSTICA",
+      "tag": "DESEMPENHO",
       "title": "Desempenho Acústico",
       "description": "O design único das ranhuras, combinado com o feltro de PET reciclado de alta densidade, cria uma absorção sonora excecional. Reduza o eco, elimine o ruído e crie espaços tão confortáveis para o ouvido como para a vista.",
       "benefit1Title": "Redução do Eco",
@@ -1481,15 +1496,15 @@
     "sustainability": {
       "tag": "SUSTENTABILIDADE",
       "title": "Circular desde a Origem",
-      "description": "Os painéis rPET - Groove são a expressão da economia circular. Fabricados integralmente a partir de plástico reciclado pós-consumo, podem ser novamente reciclados no fim de vida. Oferecemos um programa de retoma gratuito para garantir que nada é desperdiçado.",
-      "badge1": "100% reciclado",
+      "description": "Os painéis rPET - Groove são a expressão da economia circular. {pct, select, unknown {Fabricados a partir de plástico reciclado pós-consumo} other {Fabricados a partir de {pct} % de plástico reciclado pós-consumo}}, podem ser novamente reciclados no fim de vida. Oferecemos um programa de retoma gratuito para garantir que nada é desperdiçado.",
+      "badge1": "{pct, select, unknown {PET reciclado} other {{pct} % reciclado}}",
       "badge2": "Devolução Circular",
       "badge3": "Produção Belga",
       "badge4": "Fabricado na Polónia",
       "recycledBottlesLabel": "Garrafas recicladas por painel",
       "badge1Desc": "Fabricado 100% com garrafas PET recicladas",
       "badge2Desc": "Devolução gratuita de painéis no fim de vida útil",
-      "badge3Desc": "Fabricado na Bélgica com cadeias de fornecimento curtas",
+      "badge3Desc": "Recolhemos os painéis para reciclagem",
       "badge4Desc": "Certificado para segurança humana",
       "description2": ""
     },
@@ -1514,7 +1529,7 @@
       "fireUKValue": "Classe 0",
       "fireDE": "Alemanha (DIN 4102)",
       "fireDEValue": "B1",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificações",
       "certHealth": "Saúde",
       "certHealthValue": "OEKO-TEX® Standard 100",
       "certEnv": "Ambiental",
@@ -1522,7 +1537,7 @@
       "certVOC": "Baixas emissões / E1",
       "certVOCValue": "Baixas emissões / E1",
       "certRecycled": "Conteúdo reciclado",
-      "certRecycledValue": "Certificado GRS",
+      "certRecycledValue": "Garrafas PET pós-consumo",
       "applicationsTitle": "Aplicações",
       "appInstall": "Instalação",
       "appInstallValue": "Paredes e tetos",
@@ -1532,7 +1547,7 @@
       "appIdealValue": "Escritórios, salas de reunião, átrios",
       "appSuitable": "Também adequado",
       "appSuitableValue": "Restaurantes, hotéis, escolas",
-      "dimensionsTitle": "Dimensiones",
+      "dimensionsTitle": "Dimensões",
       "widthValue": "600 / 1200 mm",
       "lengthValue": "600 / 1200 / 2400 mm",
       "thicknessValue": "12 / 24 / 36 mm",
@@ -1541,7 +1556,7 @@
       "materialTitle": "Material",
       "dimPanelWidth": "Largura do painel",
       "dimPanelLength": "Comprimento do painel",
-      "dimThickness": "Espesor",
+      "dimThickness": "Espessura",
       "dimGrooveDepth": "Profundidade do sulco",
       "dimWeight": "Peso",
       "acNRC12": "NRC (12 mm)",
@@ -1556,18 +1571,19 @@
       "appWalls": "Painéis de parede",
       "appCeilings": "Painéis de teto",
       "appEnvironment": "Ambiente",
-      "matRecycledPET": "100% PET reciclado",
+      "matRecycledPET": "Feltro de PET reciclado",
       "matDensity": "Densidade",
-      "colorsLabel": "Colores",
+      "colorsLabel": "Cores",
       "colorsVal": "12 cores padrão",
       "customColors": "Cores personalizadas",
       "customColorsVal": "Disponível (MOQ aplica-se)",
       "certEPD": "EPD disponível",
-      "certGRS": "Certificado GRS",
+      "certGRS": "Garrafas PET pós-consumo",
       "appIdealFor": "Ideal para",
       "appIdealVal": "Escritórios, salas de reunião, átrios",
       "appAlso": "Também adequado",
-      "appAlsoVal": "Restaurantes, hotéis, escolas"
+      "appAlsoVal": "Restaurantes, hotéis, escolas",
+      "nrcByThickness": "NRC (por espessura)"
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
@@ -1579,8 +1595,8 @@
       "description": "Os painéis rPET - Groove integram-se harmoniosamente nos mais diversos ambientes",
       "app1": "Escritórios",
       "app2": "Hospitalidade",
-      "app3": "Educación",
-      "app4": "Salud",
+      "app3": "Educação",
+      "app4": "Saúde",
       "app1Desc": "Espaços de trabalho em open space, salas de reunião, zonas de concentração",
       "app2Desc": "Hotéis, restaurantes, átrios, áreas de receção",
       "app3Desc": "Escolas, universidades, bibliotecas",
@@ -1592,7 +1608,7 @@
       "colorChart": "Tabela de Cores"
     },
     "cta2": {
-      "freeNote": "Amostras gratuitas disponíveis • Fabricado na Bélgica • 100% Reciclado"
+      "freeNote": "Amostras gratuitas disponíveis • Fabricado na Polónia • {pct, select, unknown {PET reciclado} other {{pct} % PET reciclado}}"
     },
     "faq": {
       "questions": {
@@ -1602,7 +1618,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "Todos os painéis rPET são classificados B-s1,d0 segundo a EN 13501-1 — a classificação prática mais alta para um material decorativo de interior, abaixo da classe A."
+          "answer": "Segundo a EN 13501-1, o rPET Groove está classificado {groove}. O certificado de reação ao fogo está no bloco de transferências desta página; os outros modelos rPET indicam a respetiva classe nas suas páginas."
         },
         "processability": {
           "question": "Os painéis rPET podem ser cortados, furados ou pintados?",
@@ -1645,9 +1661,9 @@
       "tag": "PAINÉIS ACÚSTICOS DE PET RECICLADO",
       "title": "rPET Panel: o painel acústico em PET reciclado que se maquina como MDF",
       "tagline": "Silêncio Sustentável, Possibilidades Infinitas",
-      "description": "Transforme qualquer espaço com os painéis acústicos rPET - Panel. {pct, select, unknown {Fabricados a partir de garrafas de PET recicladas, estes} other {Fabricados a partir de {pct}% de garrafas de PET recicladas, estes}} absorsores sonoros leves mas potentes proporcionam o máximo desempenho acústico com o mínimo impacto ambiental.",
-      "usp1": "100% PET Reciclável",
-      "usp2": "Classe A αw 0,95",
+      "description": "Transforme qualquer espaço com os painéis acústicos rPET - Panel. {pct, select, unknown {Fabricados a partir de garrafas PET recicladas, estes} other {Fabricados a partir de {pct} % de garrafas PET recicladas, estes}} absorsores sonoros leves mas potentes proporcionam o máximo desempenho acústico com o mínimo impacto ambiental.",
+      "usp1": "{pct, select, unknown {PET reciclado} other {{pct} % PET reciclado}}",
+      "usp2": "αw até 1,00",
       "usp3": "Leve 3-4 kg/m²",
       "colorSelector": "Selecionar cor do painel",
       "colorSelectorPlaceholder": "Selecionar uma cor"
@@ -1666,8 +1682,8 @@
       "reason5Title": "Quer mais opções?",
       "reason5": "Combine com o rPET Groove para um sistema de design completo",
       "description": "O rPET - Panel transforma garrafas de PET recicladas em painéis acústicos de elevado desempenho. Cada painel desvia resíduos de plástico dos aterros, ao mesmo tempo que cria ambientes mais saudáveis e silenciosos. É a alternativa ao MDF com absorção sonora — mas com uma fração do peso.",
-      "feature1": "{pct, select, unknown {Fabricado a partir de garrafas de PET recicladas} other {Fabricado a partir de {pct}% de garrafas de PET recicladas}}",
-      "feature2": "100% reciclável no fim de vida",
+      "feature1": "{pct, select, unknown {Fabricado a partir de garrafas PET recicladas} other {Fabricado a partir de {pct} % de garrafas PET recicladas}}",
+      "feature2": "Totalmente reciclável em fim de vida",
       "feature3": "Leve: apenas 3-4 kg/m²",
       "feature4": "Sem aglutinantes químicos"
     },
@@ -1694,7 +1710,7 @@
       "quote": "Rapidamente se percebe que o rPET - Panel pode ser processado tão rápida e facilmente como uma placa de MDF."
     },
     "acoustics": {
-      "tag": "ACÚSTICA",
+      "tag": "DESEMPENHO",
       "title": "Absorção Máxima",
       "benefit1Title": "Desempenho Máximo",
       "benefit1": "Melhore drasticamente a inteligibilidade em salas de reunião e salas de aula",
@@ -1707,21 +1723,21 @@
       "fiberLabel": "Fibras de PET Comprimidas",
       "fiberSublabel": "Energia sonora convertida em calor",
       "panelThickness": "Espessura do painel",
-      "soundAbsorbed": "Som Absorvido",
       "testStandard": "Norma de ensaio",
-      "testConfig": "Configuração de ensaio: painel de 24mm sobre estrutura de 50mm com isolamento de lã de poliéster atinge αw 0.95",
-      "certNote": "Testado e certificado de forma independente segundo a norma ISO 11654"
+      "testConfig": "Configuração de ensaio: painel de 24 mm sobre estrutura de 50 mm com isolamento de lã de poliéster",
+      "certNote": "Testado e certificado de forma independente segundo a norma ISO 11654",
+      "fireClassLabel": "Classe de reação ao fogo (EN 13501-1)"
     },
     "sustainability": {
       "tag": "SUSTENTABILIDADE",
       "title": "Circular no Núcleo",
-      "cert1": "{pct, select, unknown {Conteúdo de PET reciclado} other {{pct}% de conteúdo reciclado}}",
-      "cert2": "Devolução Circular",
+      "cert1": "{pct, select, unknown {Conteúdo de PET reciclado} other {{pct} % de conteúdo reciclado}}",
+      "cert2": "Totalmente reciclável",
       "cert3": "OEKO-TEX® Classe 1",
       "cert4": "Emissões Classe A+",
       "badge1Desc": "Fabricado a partir de garrafas PET pós-consumo",
       "badge2Desc": "Recuperação total do material no fim de vida",
-      "description": "rPET - Panel personifica a economia circular. {pct, select, unknown {Cada painel é fabricado a partir de garrafas PET recicladas} other {Cada painel contém {pct}% de garrafas PET recicladas}} e, no fim de vida, todo o painel pode voltar a ser reciclado. Sem desperdício, sem compromissos.",
+      "description": "O rPET - Panel personifica a economia circular. {pct, select, unknown {Cada painel é fabricado a partir de garrafas PET recicladas} other {Cada painel contém {pct} % de garrafas PET recicladas}} e, no fim de vida, todo o painel pode voltar a ser reciclado. Sem desperdício, sem compromissos.",
       "cert3Desc": "Certificação de Classe 1 para segurança humana",
       "cert4Desc": "Sem COV nem formaldeído (ISO 16000)"
     },
@@ -1733,7 +1749,7 @@
       "fireTitle": "Segurança contra incêndio",
       "healthTitle": "Saúde e ambiente",
       "colorsTitle": "Cores e acabamentos",
-      "dimensionsTitle": "Dimensiones",
+      "dimensionsTitle": "Dimensões",
       "dimStandard": "Painel padrão",
       "dimCustomMax": "Máximo personalizado",
       "dimThicknessOptions": "Opções de espessura",
@@ -1744,7 +1760,7 @@
       "fireEuClass": "Classificação europeia",
       "fireGerman": "Norma alemã",
       "healthOekoTex": "OEKO-TEX®",
-      "healthFormaldehyde": "Formaldehído",
+      "healthFormaldehyde": "Formaldeído",
       "healthBinders": "Ligantes químicos",
       "colorStandard": "Cores padrão",
       "colorCustom": "Cores personalizadas",
@@ -1767,7 +1783,7 @@
     "why": {
       "tag": "PORQUÊ ESCOLHER rPET",
       "description": "Descubra por que razão arquitetos, designers e consultores acústicos escolhem o rPET - Panel para os seus projetos mais exigentes.",
-      "reason1Title": "100% Circular",
+      "reason1Title": "Ecológico",
       "reason1": "Fabricado a partir de garrafas PET recicladas, totalmente reciclável e um contributo para a economia circular.",
       "reason2Title": "Excelente",
       "reason2": "Absorção acústica até αw 1.00 — a classificação mais elevada possível em absorção sonora.",
@@ -1808,14 +1824,14 @@
       "label3": "Hospitalidade"
     },
     "nav": {
-      "overview": "Descripción General",
-      "colors": "Colores",
+      "overview": "Visão geral",
+      "colors": "Cores",
       "applications": "Aplicações",
       "acoustics": "Acústica",
       "processing": "Processamento",
-      "specifications": "Especificaciones",
-      "gallery": "Galería",
-      "downloads": "Descargas"
+      "specifications": "Especificações",
+      "gallery": "Galeria",
+      "downloads": "Transferências"
     },
     "downloads": {
       "installationGuide": "Guia de Instalação",
@@ -1824,7 +1840,7 @@
       "oekoTexCert": "Certificado OEKO-TEX®"
     },
     "cta2": {
-      "freeNote": "Amostras gratuitas disponíveis • Fabricado na Polónia • 100% Reciclável"
+      "freeNote": "Amostras gratuitas disponíveis • Fabricado na Polónia • {pct, select, unknown {PET reciclado} other {{pct} % PET reciclado}}"
     },
     "faq": {
       "questions": {
@@ -1834,7 +1850,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "Todos os painéis rPET são classificados B-s1,d0 segundo a EN 13501-1 — a classificação prática mais alta para um material decorativo de interior, abaixo da classe A."
+          "answer": "Segundo a EN 13501-1, o rPET Panel está classificado {panel}. O certificado de reação ao fogo está no bloco de transferências desta página; os outros modelos rPET indicam a respetiva classe nas suas páginas."
         },
         "processability": {
           "question": "Os painéis rPET podem ser cortados, furados ou pintados?",
@@ -1887,11 +1903,11 @@
       "title": "Onde a Natureza Encontra o Design",
       "subtitle": "Acabamentos premium",
       "description": "Os painéis rWood - Groove transformam qualquer divisão num ambiente acústico sofisticado. A combinação de ranhuras fresadas com precisão e folheados de madeira premium cria uma superfície simultaneamente deslumbrante e acusticamente eficaz.",
-      "feature1": "Folheados premium de carvalho e nogueira de classe A",
+      "feature1": "Folheados premium de carvalho e nogueira de grau A",
       "feature2": "Base de feltro acústico integrada",
       "feature3": "Ligação contínua entre painéis",
       "feature4": "Adequado para paredes e tetos",
-      "description2": "Os painéis rWood - Groove transformam qualquer divisão num espaço de beleza natural e conforto acústico. Cada painel apresenta folheado premium de carvalho ou nogueira de classe A, ranhurado com precisão para criar a estética linear característica, maximizando a absorção sonora através da base de feltro integrada."
+      "description2": "Os painéis rWood - Groove transformam qualquer divisão num espaço de beleza natural e conforto acústico. Cada painel apresenta folheado premium de carvalho ou nogueira de grau A, ranhurado com precisão para criar a estética linear característica, maximizando a absorção sonora através da base de feltro integrada."
     },
     "oakCollection": {
       "title": "Coleção carvalho",
@@ -1902,7 +1918,7 @@
       "description": "Feltro acústico cinzento natural, preto ou colorido, visível através das ranhuras."
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Absorção Sonora Superior",
       "benefit1Title": "Reverberação reduzida",
       "benefit1": "Controle o eco e melhore a inteligibilidade da fala em qualquer divisão",
@@ -1932,31 +1948,31 @@
       "description2": "Os painéis rWood - Groove dispõem de um inovador sistema de ligação macho-fêmea que garante juntas invisíveis e uma superfície coesa. Quer seja um instalador profissional ou um entusiasta experiente da bricolage, o nosso sistema torna a instalação simples."
     },
     "sustainability": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "Origem Responsável",
       "badge1": "Certificado FSC®",
       "badge1Desc": "Madeira de florestas geridas de forma responsável",
       "badge2": "Feltro reciclado",
       "badge2Desc": "Base acústica em materiais reciclados",
-      "badge3": "Produção europeia",
-      "badge3Desc": "Emissões de transporte reduzidas",
-      "badge4": "EPD disponível",
-      "badge4Desc": "Declaração ambiental de produto completa",
+      "badge3": "Fabricado na Polónia",
+      "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
+      "badge4": "Retoma gratuita",
+      "badge4Desc": "Os painéis voltam para nós gratuitamente em fim de vida",
       "description": "Cada painel rWood - Groove é fabricado com a sustentabilidade no centro. A nossa madeira certificada FSC® provém de florestas geridas de forma responsável e a base acústica utiliza materiais reciclados.",
       "description2": "Cada painel rWood - Groove é fabricado com a sustentabilidade no centro. A nossa certificação FSC® garante que a madeira provém de florestas geridas de forma responsável, que proporcionam benefícios ambientais, sociais e económicos."
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
+      "title": "Especificações",
       "acousticsTitle": "Desempenho acústico",
       "fireTitle": "Segurança contra incêndio",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificações",
       "applicationsTitle": "Aplicações",
-      "dimensionsTitle": "Dimensiones",
+      "dimensionsTitle": "Dimensões",
       "materialsTitle": "Materiais",
       "dimPanelWidth": "Largura do painel",
       "dimPanelLength": "Comprimento do painel",
-      "dimThickness": "Espesor",
+      "dimThickness": "Espessura",
       "dimGrooveDepth": "Profundidade do sulco",
       "dimGrooveWidth": "Largura do sulco",
       "matVeneer": "Folheado",
@@ -1965,7 +1981,7 @@
       "matCoreVal": "MDF (standard / hidrófugo / ignífugo)",
       "matBacking": "Base",
       "matBackingVal": "PET reciclado (3mm)",
-      "matFinish": "Acabado",
+      "matFinish": "Acabamento",
       "finishVal": "Óleo / laca",
       "stdPanels": "Painéis padrão",
       "fireMdfVal": "MDF retardador de fogo",
@@ -1974,13 +1990,13 @@
       "envLabel": "Ambiental",
       "vocLabel": "Emissões de COV",
       "vocVal": "E1 / Baixa emissão",
-      "appInstall": "Instalación",
+      "appInstall": "Instalação",
       "appWalls": "Paredes e Tetos",
       "appEnv": "Ambiente",
       "appEnvVal": "Interior (áreas secas)",
-      "appMoist": "Resistente a la humedad",
+      "appMoist": "Resistente à humidade",
       "appMoistVal": "Disponível para áreas húmidas",
-      "appConn": "Conexión",
+      "appConn": "Ligação",
       "appConnVal": "Macho e fêmea"
     },
     "accessories": {
@@ -1999,7 +2015,7 @@
       "item4Desc": "Óleos a condizer para reparações e manutenção"
     },
     "gallery": {
-      "tag": "INSPIRACIÓN",
+      "tag": "INSPIRAÇÃO",
       "title": "Projetos e Instalações"
     },
     "patterns": {
@@ -2009,12 +2025,12 @@
       "description2": "Quatro padrões de ranhuras distintos para corresponder a qualquer visão arquitetónica. Das proporções clássicas e equilibradas às tiras largas e arrojadas — encontre a expressão perfeita para o seu espaço."
     },
     "materials": {
-      "tag": "MATERIALES",
+      "tag": "MATERIAIS",
       "oilFinishesTitle": "Acabamentos a óleo",
       "oilFinishesDesc": "Acabamentos a óleo Natural, Branco, Incolor, Castanho, Castanho Escuro e Preto. Cada um penetra profundamente na madeira para uma proteção duradoura e autêntica.",
       "walnutTitle": "Nogueira",
       "walnutDesc": "Tons ricos e quentes com padrões de veio distintivos. A escolha premium para interiores de alta gama.",
-      "description": "Cada painel rWood - Groove é fabricado com folheado de classe A, garantindo veio e cor consistentes. A superfície acabada a óleo está pronta a instalar, sem necessidade de tratamento adicional.",
+      "description": "Cada painel rWood - Groove é fabricado com folheado de grau A, garantindo veio e cor consistentes. A superfície acabada a óleo está pronta a instalar, sem necessidade de tratamento adicional.",
       "colorSelector": "Selecionar acabamento de madeira",
       "layer1Name": "Folheado de carvalho / nogueira",
       "layer1Desc": "Madeira natural premium de grau A",
@@ -2024,7 +2040,7 @@
       "layer3Desc": "PET reciclado, 3 mm de espessura",
       "waveLabel": "Ondas sonoras absorvidas",
       "certNote": "Testado e certificado de forma independente segundo a norma ISO 11654",
-      "description2": "Cada painel rWood - Groove é fabricado com folheado de classe A, garantindo padrões de veio consistentes e qualidade superior. Escolha entre a nossa gama de acabamentos oleados e pintados para complementar na perfeição o seu design de interiores."
+      "description2": "Cada painel rWood - Groove é fabricado com folheado de grau A, garantindo padrões de veio consistentes e qualidade superior. Escolha entre a nossa gama de acabamentos oleados e pintados para complementar na perfeição o seu design de interiores."
     },
     "downloads": {
       "installationGuide": "Guia de Instalação",
@@ -2041,7 +2057,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+          "answer": "Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1 — o núcleo que especificamos para vias de evacuação e edifícios públicos. O certificado de reação ao fogo está no bloco de transferências desta página."
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega padrão?",
@@ -2077,8 +2093,8 @@
       "tagline": "Perfurações de Precisão, Máxima Absorção",
       "description": "Painéis acústicos perfurados de alto desempenho que aliam a beleza natural da madeira a uma absorção sonora excecional. Um núcleo de MDF ignífugo e arestas folheadas de forma envolvente proporcionam os mais elevados níveis de segurança contra incêndio e de controlo acústico.",
       "usp1": "Perfurações Redondas",
-      "usp2": "Classificação ao fogo B2-s1, d0",
-      "usp3": "Até Classe B",
+      "usp2": "Classificação ao fogo {fireClass}",
+      "usp3": "αw {alphaW} consoante o padrão",
       "description2": "Painéis acústicos perfurados de alto desempenho que aliam a beleza natural da madeira a uma absorção sonora excecional. Um núcleo de MDF ignífugo e arestas folheadas de forma envolvente proporcionam os mais elevados níveis de segurança contra incêndio e de controlo acústico para espaços públicos exigentes."
     },
     "patterns": {
@@ -2111,12 +2127,12 @@
       "description3": "Todos os painéis rWood - Perf são produzidos com bordos sobrefolheados — uma técnica de fabrico tradicional em que uma orla de madeira maciça é integrada à volta do painel antes do folheado. Assim, cada painel parece ser inteiramente de madeira, com juntas invisíveis em grandes superfícies."
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Concebido para o Som",
       "benefit1Title": "Absorção de banda larga",
       "benefit1": "Eficaz em todo o espetro de frequências, das graves às agudas",
-      "benefit2Title": "Máxima segurança ao fogo",
-      "benefit2": "B-s1, d0 — a classe mais elevada alcançável para painéis de madeira",
+      "benefit2Title": "Segurança contra incêndio",
+      "benefit2": "Reação ao fogo {fireClass} com o núcleo de MDF ignífugo (EN 13501-1)",
       "benefit3Title": "Desempenho ajustável",
       "benefit3": "Quatro padrões de perfuração para soluções acústicas à medida",
       "description": "As perfurações de precisão permitem que as ondas sonoras entrem no painel e atravessem até à camada de absorção subjacente. A caixa de ar atrás do painel reforça ainda mais a absorção das baixas frequências.",
@@ -2130,11 +2146,12 @@
       "layer4Desc": "30–50 mm para absorção de banda larga",
       "waveLabel": "Ondas sonoras absorvidas",
       "certNote": "Testado e certificado de forma independente segundo a ISO 11654",
-      "ratingLabel": "Absorción",
+      "ratingLabel": "Absorção",
       "description3": "As perfurações de precisão permitem que as ondas sonoras entrem no painel e atravessem até à caixa de ar posterior. Em combinação com isolamento em lã mineral, o rWood - Perf proporciona uma excelente absorção de banda larga em todo o espetro de frequências — dos graves mais profundos aos agudos mais altos.",
       "diagramTitle": "Corte transversal do painel",
       "fireRating": "Classificação ao fogo",
-      "noiseReduction": "Redução de ruído"
+      "noiseReduction": "Redução de ruído",
+      "ratingPerPattern": "consoante o padrão"
     },
     "installation": {
       "tag": "MONTAGEM OCULTA",
@@ -2151,37 +2168,37 @@
       "description3": "Os painéis rWood - Perf são instalados com um sistema de clipes ocultos concebido para precisão, rapidez e um resultado final impecável. O sistema garante juntas sem folgas e padrões de perfuração perfeitamente alinhados ao longo de vários painéis."
     },
     "sustainability": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "Construído para Durar, Construído Responsavelmente",
       "badge1": "Certificado FSC®",
-      "badge2": "17% conteúdo reciclado",
-      "badge3": "Produção europeia",
+      "badge2": "{pct} % de conteúdo reciclado",
+      "badge3": "Fabricado na Polónia",
       "badge4": "Emissões ultrabaixas",
       "badge1Desc": "Madeira de florestas geridas de forma responsável",
       "badge2Desc": "Material reciclado pós-consumo no núcleo",
-      "badge3Desc": "Fontes de energia renováveis, cadeias de abastecimento curtas",
-      "badge4Desc": "Sem formaldeído adicionado, EPD disponível",
+      "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia) — cadeias de abastecimento curtas",
+      "badge4Desc": "Sem formaldeído adicionado",
       "description": "O rWood - Perf combina materiais naturais e duradouros com uma abordagem de fabrico responsável.",
-      "description3": "O rWood - Perf combina materiais naturais e duradouros com um aprovisionamento responsável. O núcleo de gesso reforçado com fibras é intrinsecamente de baixas emissões — não é necessária qualquer impregnação química para o desempenho ao fogo — e os nossos folheados provêm de florestas geridas de forma sustentável."
+      "description3": "O rWood - Perf combina materiais naturais e duradouros com um aprovisionamento responsável: um núcleo de MDF ignífugo sem formaldeído adicionado e folheados provenientes de florestas geridas de forma sustentável."
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
+      "title": "Especificações",
       "dimensionsTitle": "Dimensões — Paredes e tetos",
       "acousticsTitle": "Desempenho acústico",
       "perforationsTitle": "Opções de perfuração",
       "fireTitle": "Segurança contra incêndio",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificações",
       "customSizes": "Tamanhos personalizados",
-      "dimThickness": "Espesor",
+      "dimThickness": "Espessura",
       "dimWeight": "Peso",
       "matTitle": "Materiais",
       "matCustomColor": "Tonalidades personalizadas com pigmentação transparente ou opaca",
       "matLacquerFinish": "Laca curada por UV, do super mate ao alto brilho",
-      "surfaceLabel": "Superficie",
+      "surfaceLabel": "Superfície",
       "surfaceVal": "Folheado / HPL / folha / pintura",
       "coreVal": "Núcleo de aglomerado de fibras de média densidade (MDF) (castanho / verde / preto)",
-      "edgesLabel": "Cantos",
+      "edgesLabel": "Arestas",
       "edgesVal": "Madeira maciça com sobre-folheado",
       "acousticFelt": "Feltro acústico",
       "feltColor": "Preto / branco",
@@ -2190,18 +2207,18 @@
       "fireRetardant": "Ignífugo",
       "vocLabel": "Emissões de COV",
       "vocVal": "TVOC aprovado (ISO 16000)",
-      "formaldehydeLabel": "Formaldehído",
+      "formaldehydeLabel": "Formaldeído",
       "formaldehydeVal": "Sem ureia-formaldeído adicionado",
       "envLabel": "Ambiental"
     },
     "gallery": {
-      "tag": "INSPIRACIÓN",
+      "tag": "INSPIRAÇÃO",
       "title": "Projetos e Instalações"
     },
     "overview": {
       "tag": "DESEMPENHO COMPROVADO",
       "description": "Os painéis rWood - Perf são uma das soluções acústicas de parede mais eficazes. As perfurações de precisão permitem que o som atravesse a superfície decorativa em madeira até ao núcleo altamente absorvente.",
-      "feature1": "Núcleo de aglomerado de fibras de média densidade (MDF) ignífugo (B2-s1, d0)",
+      "feature1": "Núcleo de MDF ignífugo ({fireClass})",
       "feature2": "Bordos sobrefolheados para juntas invisíveis",
       "feature3": "Núcleo claro ou escuro para maior discrição do padrão",
       "feature4": "Formatos personalizados até 3050 × 1220 mm",
@@ -2222,7 +2239,7 @@
       "item4Desc": "Isolamento de 30–50 mm para um desempenho ideal"
     },
     "cta": {
-      "note": "Amostras gratuitas disponíveis • Certificado FSC® • Classificação ao fogo A2 disponível"
+      "note": "Amostras gratuitas disponíveis • Certificado FSC®"
     },
     "faq": {
       "questions": {
@@ -2232,7 +2249,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+          "answer": "Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1 — o núcleo que especificamos para vias de evacuação e edifícios públicos. O certificado de reação ao fogo está no bloco de transferências desta página."
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega padrão?",
@@ -2269,7 +2286,7 @@
       "description": "Desfrute da beleza da madeira natural com o desempenho acústico da tecnologia avançada de microperfuração. Furos praticamente invisíveis proporcionam absorção sonora de Classe A, preservando o aspeto puro e homogéneo do folheado de madeira premium.",
       "usp1": "Perfurações Invisíveis",
       "usp2": "Absorção Classe A",
-      "usp3": "Classificação ao fogo B-s1, d0",
+      "usp3": "Classificação ao fogo {fireClass}",
       "colorSelector": "Selecionar folheado de madeira"
     },
     "perforation": {
@@ -2281,7 +2298,7 @@
       "tag": "SUPERFÍCIES",
       "title": "Superfícies Premium",
       "woodVeneer": "Folheado de madeira",
-      "woodVeneerDesc": "Folheados premium de classe A em carvalho, nogueira, bétula e muito mais. Disponíveis nos cortes Nature e Gemini.",
+      "woodVeneerDesc": "Folheados premium de grau A em carvalho, nogueira, bétula e muito mais. Disponíveis nos cortes Nature e Gemini.",
       "hplLaminate": "Laminado HPL",
       "hplLaminateDesc": "Superfícies em laminado de alta pressão para maior durabilidade. Disponíveis numa vasta gama de cores e acabamentos.",
       "surfaceType": "Tipo de superfície",
@@ -2292,16 +2309,16 @@
       "description2": "Todos os painéis rWood - Micro têm bordos sobrefolheados — uma técnica de fabrico herdada da marcenaria tradicional. O resultado: painéis mais resistentes, juntas invisíveis e um padrão contínuo, independentemente do formato do painel."
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Absorção sonora superior",
       "benefit1Title": "Mecanismo acústico duplo",
       "benefit1": "Microfuros e câmaras acústicas trabalham em conjunto para uma absorção superior",
       "benefit2Title": "Design que poupa espaço",
       "benefit2": "Menos dependente de caixas de ar — paredes e tetos com menor espessura",
-      "benefit3Title": "Máxima segurança ao fogo",
-      "benefit3": "Classificação B-s1, d0 — a mais elevada alcançável para madeira microperfurada",
+      "benefit3Title": "Segurança contra incêndio",
+      "benefit3": "Reação ao fogo {fireClass} com o núcleo de MDF ignífugo (EN 13501-1)",
       "description": "A combinação de microperfurações na superfície com milhares de canais de entrada de som de maior dimensão cria uma absorção de banda larga excecional.",
-      "layer1Name": "Folheado de classe A com furos de precisão",
+      "layer1Name": "Folheado de grau A com furação de precisão",
       "layer2Name": "Núcleo de aglomerado de fibras de média densidade (MDF) ignífugo",
       "layer2Desc": "Ignífugo, com câmaras acústicas",
       "layer3Name": "Fundo em velo acústico",
@@ -2341,25 +2358,25 @@
       "description": "Os painéis rWood - Micro podem ser personalizados e pré-fabricados de acordo com os seus desenhos. As microperfurações abrem possibilidades de design únicas, que vão além dos painéis acústicos convencionais."
     },
     "sustainability": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "Fabricado Responsavelmente",
       "badge1": "Folheado certificado FSC®",
       "badge2": "Material de núcleo natural",
-      "badge3": "Produção europeia",
+      "badge3": "Fabricado na Polónia",
       "badge4": "Baixas emissões COV",
       "badge1Desc": "Madeira de florestas geridas de forma responsável",
       "badge2Desc": "Núcleo de aglomerado de fibras — um núcleo à base de madeira, com classificação ao fogo",
-      "badge3Desc": "Cadeias de abastecimento curtas que mantêm baixas as emissões de transporte",
+      "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
       "badge4Desc": "Classificação E1 para uma qualidade do ar interior mais saudável",
       "description": "Os painéis rWood - Micro são concebidos com a sustentabilidade como princípio fundamental. Madeira certificada FSC®, acabamentos de baixas emissões e materiais de origem responsável garantem responsabilidade ambiental ao longo de todo o ciclo de vida do produto."
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
+      "title": "Especificações",
       "dimensionsTitle": "Dimensões — Paredes e tetos",
       "acousticsTitle": "Dimensões — Paredes e tetos",
       "customSizes": "Tamanhos personalizados",
-      "dimThickness": "Espesor",
+      "dimThickness": "Espessura",
       "dimWeight": "Peso",
       "dimCoreDensity": "Densidade do núcleo",
       "perfsTitle": "Opções de perfuração",
@@ -2370,14 +2387,14 @@
       "reactionFire": "Reação ao fogo",
       "resistanceFire": "Resistência ao fogo",
       "fireRetardant": "Ignífugo",
-      "surfaceLabel": "Superficie",
+      "surfaceLabel": "Superfície",
       "surfaceVal": "Folheado / HPL / folha / pintura",
       "coreVal": "Núcleo de aglomerado de fibras de média densidade (MDF) (castanho / verde / preto)",
-      "edgesLabel": "Cantos",
+      "edgesLabel": "Arestas",
       "edgesVal": "Madeira maciça com sobre-folheado",
       "acousticFelt": "Feltro acústico",
       "feltColor": "Preto / branco",
-      "appInstall": "Instalación",
+      "appInstall": "Instalação",
       "appWalls": "Paredes e tetos",
       "appEnv": "Ambiente",
       "appEnvVal": "Interior (áreas secas)",
@@ -2387,7 +2404,7 @@
       "concealedClip": "Sistema de clipes ocultos"
     },
     "gallery": {
-      "tag": "INSPIRACIÓN",
+      "tag": "INSPIRAÇÃO",
       "title": "Projetos e Instalações"
     },
     "overview": {
@@ -2396,7 +2413,7 @@
       "description1": "Os painéis rWood - Micro combinam tecnologia avançada de microperfuração com folheados de madeira premium. A uma distância de observação normal, as perfurações são completamente invisíveis: o que vê é uma superfície de madeira bonita e homogénea. O que ouve é um conforto acústico excecional.",
       "description2": "O segredo está na combinação de dois mecanismos acústicos: milhares de microfuros concebidos com precisão na superfície e câmaras de absorção sonora no interior do material do núcleo.",
       "feature1": "Perfurações invisíveis a uma distância de observação normal",
-      "feature2": "Núcleo de gesso reforçado com fibras, não combustível",
+      "feature2": "Núcleo de MDF ignífugo com câmaras acústicas",
       "feature3": "Arestas folheadas para juntas sem descontinuidades",
       "feature4": "Adequado para paredes e tetos",
       "feature5": "Disponível como painéis retroiluminados"
@@ -2419,7 +2436,7 @@
       "magnifiedLabel": "Ampliado 10×",
       "holeDiameter": "Diâmetro do furo",
       "openArea": "Área aberta",
-      "ratingLabel": "Absorción",
+      "ratingLabel": "Absorção",
       "description2": "Quatro densidades de perfuração para corresponder às suas exigências acústicas. Desde as perfurações Nano praticamente invisíveis até aos padrões Micro L de absorção máxima: selecione o equilíbrio perfeito entre estética e desempenho acústico.",
       "pigmentedLacquer": "Laca pigmentada",
       "glossLevels": "Níveis de brilho"
@@ -2432,7 +2449,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+          "answer": "Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1 — o núcleo que especificamos para vias de evacuação e edifícios públicos. O certificado de reação ao fogo está no bloco de transferências desta página."
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega padrão?",
@@ -2477,7 +2494,7 @@
       "tag": "PAINÉIS DE MADEIRA ACÚSTICOS",
       "title": "rWood Panel: painéis acústicos em folheado de madeira em 10 espécies",
       "tagline": "A Elegância da Madeira Real. Pronto a Usar.",
-      "description": "Painéis MDF folheados premium, escovados, tingidos e lacados — prontos a instalar. Disponível em 10 folhas de madeira e 3 acabamentos. Fabricado na Bélgica.",
+      "description": "Painéis MDF folheados premium, escovados, tingidos e lacados — sem necessidade de acabamento adicional. A beleza autêntica da madeira maciça sem compromissos.",
       "usp1": "Folha de Madeira Real",
       "usp2": "Pré-acabado e Pronto a Usar",
       "usp3": "Programa de retoma gratuito",
@@ -2543,22 +2560,22 @@
       "sector1": "Escritório",
       "sector2": "Hospitalidade",
       "sector3": "Residencial",
-      "sector4": "Comercio Minorista",
-      "sector5": "Salud",
-      "sector6": "Educación"
+      "sector4": "Retalho",
+      "sector5": "Saúde",
+      "sector6": "Educação"
     },
     "sustainability": {
       "tag": "SUSTENTABILIDADE",
       "title": "Madeira Responsável",
       "badge1": "Certificado FSC®",
       "badge2": "Devolução Circular",
-      "badge3": "Produção europeia",
+      "badge3": "Fabricado na Polónia",
       "badge4": "EPD disponível",
       "badge5": "Baixos COV",
       "badge1Desc": "Toda a madeira de florestas geridas de forma responsável",
       "badge2Desc": "Devolução e reciclagem gratuitas do painel no fim de vida",
       "description": "Cada rWood - Panel começa com madeira de origem responsável. Como parte do compromisso da Re-Sound com a economia circular, maximizamos o uso de cada tronco processando-o como folheado — obtendo até 40× mais área de superfície do que a madeira maciça da mesma árvore.",
-      "badge3Desc": "Cadeias de abastecimento curtas, emissões de transporte reduzidas",
+      "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
       "badge4Desc": "Declaração ambiental de produto completa",
       "badge5Desc": "Classificado E1, cumpre os padrões de emissão mais rigorosos",
       "badge6": "Energia verde",
@@ -2569,9 +2586,9 @@
       "title": "Especificações Técnicas",
       "compositionTitle": "Composição",
       "fireTitle": "Segurança contra incêndio",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificações",
       "dimensionsTitle": "Dimensões",
-      "finishTitle": "Acabado",
+      "finishTitle": "Acabamento",
       "processingTitle": "Processamento",
       "dimPanelWidth": "Largura do painel",
       "dimPanelLength": "Comprimento do painel",
@@ -2605,7 +2622,7 @@
       "procCNC": "Maquinagem CNC",
       "procEnvironment": "Ambiente",
       "procEnvironmentVal": "Uso interior (áreas secas)",
-      "procMoisture": "Resistente a la humedad",
+      "procMoisture": "Resistente à humidade",
       "procMoistureVal": "Núcleo MR disponível"
     },
     "related": {
@@ -2620,7 +2637,7 @@
       "item3Desc": "Encomende amostras físicas de folheado para comparar acabamentos, cores e texturas no seu espaço"
     },
     "gallery": {
-      "tag": "INSPIRACIÓN",
+      "tag": "INSPIRAÇÃO",
       "title": "rWood - Panel em Ação"
     },
     "overview": {
@@ -2672,10 +2689,10 @@
       }
     },
     "dimensions": {
-      "tag": "FORMATOS",
+      "tag": "DIMENSÕES",
       "title": "Formatos de Painel",
       "description": "Três formatos para cobrir cada aplicação — desde revestimentos de parede de altura total até elementos compactos de mobiliário.",
-      "standardName": "Estándar",
+      "standardName": "Padrão",
       "standardDesc": "Formato mais versátil",
       "largeName": "Grande formato",
       "largeDesc": "Menos juntas, visual mais grandioso",
@@ -2710,7 +2727,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "A classificação ao fogo padrão é B-s2,d0 segundo a EN 13501-1. A variante rWood Micro atinge B-s1,d0, adequada para os requisitos mais exigentes de edifícios públicos."
+          "answer": "Depende do núcleo. Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1; com um núcleo de MDF standard, a classificação é D-s2,d0. Especifique o núcleo FR para vias de evacuação e edifícios públicos."
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega padrão?",
@@ -2740,13 +2757,13 @@
       "description": "A solução acústica definitiva para superfícies curvas. Fabricados em feltro de PET reciclado com ranhuras em V de precisão, estes painéis flexíveis adaptam-se sem descontinuidades a colunas, paredes curvas e qualquer forma arquitetónica com um raio mínimo de 500 mm.",
       "usp1": "Raio Mín. 500mm",
       "usp2": "Retardante de fogo",
-      "usp3": "PET 100% reciclado",
+      "usp3": "{pct, select, unknown {PET reciclado} other {{pct} % PET reciclado}}",
       "colorSelector": "Selecionar cor",
       "colorPlaceholder": "Selecionar uma cor",
       "description2": ""
     },
     "overview": {
-      "tag": "INNOVACIÓN",
+      "tag": "INOVAÇÃO",
       "title": "Concebido para Superfícies Curvas",
       "description": "Os painéis Flex-Groove constituem uma solução acústica versátil para superfícies curvas, adaptando-se sem esforço a qualquer forma. Adequados para raios interiores e exteriores, a sua estrutura flexível permite transições contínuas ao longo de paredes, colunas e outros elementos arquitetónicos arredondados.",
       "feature1": "Adapta-se a qualquer superfície curva",
@@ -2778,18 +2795,18 @@
       "description2": ""
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
+      "tag": "DESEMPENHO",
       "title": "Propriedades de Amortecimento Sonoro",
       "description": "Fabricados em feltro de PET reciclado retardante de fogo, os painéis Flex-Groove proporcionam uma absorção sonora eficaz, mantendo a continuidade visual ao longo das superfícies curvas. A textura ranhurada melhora o desempenho acústico.",
       "feature1Title": "Amortecimento do som",
       "feature1Desc": "Reduz o eco e a reverberação",
       "feature2Title": "Retardante de fogo",
       "feature2Desc": "Propriedades de segurança contra incêndio integradas",
-      "feature3Title": "100% reciclado",
+      "feature3Title": "{pct, select, unknown {PET reciclado} other {{pct} % reciclado}}",
       "feature3Desc": "Fabricado a partir de garrafas de plástico recicladas",
       "layer1Label": "Feltro PET reciclado",
       "layer2Label": "Cortes V de precisão",
-      "thicknessLabel": "Espesor",
+      "thicknessLabel": "Espessura",
       "materialLabel": "Feltro PET retardador de fogo",
       "description2": ""
     },
@@ -2808,10 +2825,10 @@
       "description2": ""
     },
     "sustainability": {
-      "tag": "SOSTENIBILIDAD",
+      "tag": "SUSTENTABILIDADE",
       "title": "De Garrafas a Espaços Belos",
-      "description": "Cada painel Flex-Groove é fabricado a partir de garrafas de plástico PET 100% recicladas, dando nova vida a materiais residuais. A nossa abordagem circular garante que estes painéis podem voltar a ser reciclados no fim do seu ciclo de vida.",
-      "badge1": "PET reciclado",
+      "description": "Cada painel Flex-Groove é fabricado a partir de {pct, select, unknown {garrafas de plástico PET recicladas} other {{pct} % de garrafas de plástico PET recicladas}}, dando nova vida a materiais residuais. A nossa abordagem circular garante que estes painéis podem voltar a ser reciclados no fim do seu ciclo de vida.",
+      "badge1": "{pct, select, unknown {PET reciclado} other {{pct} % PET reciclado}}",
       "badge1Desc": "Fabricado a partir de garrafas de plástico recicladas",
       "badge2": "Totalmente reciclável",
       "badge2Desc": "Reciclável no fim de vida",
@@ -2823,16 +2840,16 @@
     },
     "specs": {
       "tag": "TÉCNICO",
-      "title": "Especificaciones",
-      "dimensionsTitle": "Dimensiones",
+      "title": "Especificações",
+      "dimensionsTitle": "Dimensões",
       "flexibilityTitle": "Flexibilidade",
       "materialTitle": "Material",
       "fireTitle": "Segurança contra incêndio",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificações",
       "applicationsTitle": "Aplicações",
       "dimPanelLength": "Comprimento do painel",
       "dimPanelWidth": "Largura do painel",
-      "dimThickness": "Espesor",
+      "dimThickness": "Espessura",
       "dimWeight": "Peso",
       "dimDensity": "Densidade",
       "flexMinRadius": "Raio mínimo",
@@ -2855,23 +2872,23 @@
       "certVOC": "Emissões de COV",
       "certVOCVal": "Baixas emissões",
       "certRecycled": "Conteúdo reciclado",
-      "certRecycledVal": "100% verificado",
+      "certRecycledVal": "100 %",
       "appSurfaces": "Superfícies",
       "appSurfacesVal": "Paredes, colunas, elementos curvos",
       "appEnvironment": "Ambiente",
       "appEnvironmentVal": "Interior (áreas secas)",
-      "appInstallation": "Instalación",
+      "appInstallation": "Instalação",
       "appInstallationVal": "Montagem com adesivo",
       "appOrientation": "Orientação",
       "appOrientationVal": "Comprimento / largura"
     },
     "gallery": {
-      "tag": "INSPIRACIÓN",
+      "tag": "INSPIRAÇÃO",
       "title": "Projetos e Aplicações"
     },
     "downloads": {
       "tag": "RECURSOS",
-      "title": "Descargas",
+      "title": "Transferências",
       "perforationGuide": "Guia Flex-Groove"
     },
     "applications": {
@@ -2896,7 +2913,7 @@
       "description2": "Obtenha um orçamento personalizado para o seu projeto. A nossa equipa ajudá-lo-á a escolher a cor perfeita e a calcular as quantidades necessárias."
     },
     "cta2": {
-      "freeNote": "Amostras gratuitas disponíveis • Fabricado na Polónia • 100% reciclado"
+      "freeNote": "Amostras gratuitas disponíveis • Fabricado na Polónia • {pct, select, unknown {PET reciclado} other {{pct} % PET reciclado}}"
     },
     "faq": {
       "questions": {
@@ -2906,7 +2923,7 @@
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "Todos os painéis rPET são classificados B-s1,d0 segundo a EN 13501-1 — a classificação prática mais alta para um material decorativo de interior, abaixo da classe A."
+          "answer": "Segundo a EN 13501-1, o rPET Flex Groove está classificado {flex}. O certificado de reação ao fogo está no bloco de transferências desta página; os outros modelos rPET indicam a respetiva classe nas suas páginas."
         },
         "processability": {
           "question": "Os painéis rPET podem ser cortados, furados ou pintados?",
@@ -2999,7 +3016,7 @@
       "rwoodVsRpetVsTextile": {
         "category": "products",
         "question": "Qual é a diferença entre rWood, rPET e a gama têxtil?",
-        "answer": "São três famílias de materiais para intenções de design distintas. A gama têxtil (Interior, Solid, Divide) é fabricada com fibras têxteis 100% recicladas com uma capa de tecido — macia, quente, disponível em várias cores, fabricada na Bélgica. A gama rPET (Panel, Groove, Flex Groove) é fabricada com garrafas PET 100% recicladas, certificada OEKO-TEX®, e pode ser trabalhada como MDF (cortar, fresar, pintar); ideal para cores intensas e instalações à medida. A gama rWood (Groove, Perf, Micro, Panel) combina folheado de madeira certificado FSC com um núcleo em fibras recicladas, oferecendo um acabamento arquitetónico premium em mais de 8 espécies de madeira; fabricada na Europa."
+        "answer": "São três famílias de materiais para intenções de design distintas. A gama têxtil (Interior, Solid, Divide) é fabricada com fibras têxteis recicladas (pelo menos 80 % de conteúdo reciclado) com uma capa de tecido — macia, quente, disponível em várias cores, fabricada na nossa própria fábrica em Beveren-Waas (Bélgica). A gama rPET (Panel, Groove, Flex Groove) é fabricada com garrafas PET recicladas (o rPET Panel e o rPET Flex Groove são fabricados integralmente a partir de PET reciclado), certificada OEKO-TEX®, e pode ser trabalhada como MDF (cortar, fresar, pintar); ideal para cores intensas e instalações à medida. A gama rWood (Groove, Perf, Micro, Panel) combina folheado de madeira certificado FSC com um núcleo em feltro reciclado, oferecendo um acabamento arquitetónico premium em mais de 8 espécies de madeira; fabricada na nossa própria fábrica em Częstochowa (Polónia)."
       },
       "fireSafety": {
         "category": "products",
@@ -3014,7 +3031,7 @@
       "whatIsCircular": {
         "category": "sustainability",
         "question": "O que significa \"circular\" na Re-Sound?",
-        "answer": "Circular significa três coisas na Re-Sound, integradas desde o design. Primeiro, entradas: usamos materiais reciclados sempre que o desempenho acústico o permite — fibras têxteis 100% recicladas em Interior/Solid/Divide, PET 100% reciclado na gama rPET e um núcleo em fibras recicladas sob o folheado FSC da gama rWood. Segundo, fim de vida: cada painel Re-Sound pode ser devolvido através do nosso serviço gratuito de recolha, e os materiais são reprocessados em novos painéis ou matéria-prima em vez de irem para aterro. Terceiro, design: as ligações (magnéticas, mecânicas, em gancho) são reversíveis para que os painéis possam ser retirados sem destruição, permitindo reconfiguração durante a vida útil do edifício."
+        "answer": "Circular significa três coisas na Re-Sound, integradas desde o design. Primeiro, as matérias-primas: usamos materiais reciclados sempre que o desempenho acústico o permite — fibras têxteis recicladas (pelo menos 80 % de conteúdo reciclado) na gama Interior/Solid/Divide, garrafas PET recicladas na gama rPET (o rPET Panel e o rPET Flex Groove são fabricados integralmente a partir de PET reciclado) e um núcleo em feltro reciclado sob o folheado certificado FSC da gama rWood. Segundo, fim de vida: cada painel Re-Sound pode ser devolvido através do nosso serviço gratuito de retoma, e os materiais são reprocessados em novos painéis ou em nova matéria-prima em vez de irem para aterro. Terceiro, design: as ligações (magnéticas, mecânicas, sistemas de gancho) são reversíveis para que os painéis possam ser retirados sem destruição, permitindo a reconfiguração durante a vida útil do edifício."
       },
       "takeBack": {
         "category": "sustainability",
@@ -3024,7 +3041,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Qual é o conteúdo reciclado de cada gama?",
-        "answer": "O conteúdo reciclado varia conforme a família de produtos. A gama têxtil (Interior, Solid, Divide) é fabricada com fibras têxteis recicladas com elevado teor de reciclado. A gama rPET utiliza PET 100% reciclado pós-consumo (o número equivalente de garrafas varia conforme o tamanho do painel — cerca de 60 garrafas por painel Groove padrão). A gama rWood usa um núcleo com elevado teor de fibras recicladas com folheado FSC na face visível. Discriminações detalhadas de materiais e documentação EPD estão disponíveis em cada página de produto e a pedido."
+        "answer": "O conteúdo reciclado varia conforme a família de produtos. A gama têxtil (Interior, Solid, Divide) é fabricada com fibras têxteis recicladas com elevado teor de reciclado. A gama rPET utiliza PET reciclado pós-consumo; o rPET Panel e o rPET Flex Groove são fabricados integralmente a partir de PET reciclado (o número equivalente de garrafas varia conforme o tamanho do painel — cerca de 60 garrafas por painel Groove padrão). A gama rWood usa um núcleo com elevado teor de fibras recicladas com folheado certificado FSC na face visível. Discriminações detalhadas de materiais e documentação EPD estão disponíveis em cada página de produto e a pedido."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3112,7 +3129,9 @@
       "segmentPower": "Potência por segmento",
       "ceilingHeight": "Altura mínima do tecto",
       "sideClearance": "Espaço lateral",
-      "frontClearance": "Espaço frontal"
+      "frontClearance": "Espaço frontal",
+      "madeIn": "Fabricado em",
+      "measurementPending": "Medição ISO 23351-1 pendente"
     },
     "downloads": {
       "tag": "RECURSOS",
@@ -3198,7 +3217,7 @@
       },
       "safety": {
         "title": "Testada segundo norma",
-        "desc": "Marcação CE, classificação ao fogo EN 13501-1 B-s2,d0, eletricidade certificada segundo IEC 60598. Documentação incluída na entrega."
+        "desc": "Marcação CE, componentes elétricos certificados segundo a IEC 60598. Documentação incluída na entrega."
       }
     },
     "specs": {
@@ -3369,7 +3388,7 @@
       },
       "safety": {
         "title": "Testada segundo norma",
-        "desc": "Marcação CE, classificação ao fogo EN 13501-1 B-s2,d0, eletricidade certificada segundo IEC 60598. Padrão em cada entrega."
+        "desc": "Marcação CE, componentes elétricos certificados segundo a IEC 60598. De série em cada entrega."
       }
     },
     "specs": {
@@ -3381,7 +3400,6 @@
       "doorWidthValue": "1000 mm livres",
       "weightValue": "420 kg",
       "acousticsTitle": "Desempenho acústico",
-      "noiseReductionValue": "26 dB(A)",
       "absorberValue": "Feltro acústico de PET reciclado, 24 mm",
       "doorSealValue": "Magnético, compressão nos quatro lados",
       "ventilationTitle": "Ventilação",
@@ -3532,7 +3550,7 @@
       },
       "safety": {
         "title": "Testada segundo norma",
-        "desc": "Marcação CE, classificação ao fogo EN 13501-1 B-s2,d0, eletricidade certificada segundo IEC 60598. Documentação incluída na entrega."
+        "desc": "Marcação CE, componentes elétricos certificados segundo a IEC 60598. Documentação incluída na entrega."
       }
     },
     "specs": {
@@ -3706,7 +3724,7 @@
         "desc": "Estrutura de desconto clara e sem surpresas. Escalões com base no volume anual; preço estável ao longo do ano contratual."
       },
       "item2": {
-        "title": "Pack de marketing",
+        "title": "Kit de marketing",
         "desc": "Fotografia em alta resolução, manual de marca, recursos sociais e impressos prontos para os seus canais."
       },
       "item3": {
@@ -3871,7 +3889,11 @@
     },
     "ownFactories": "Produção própria",
     "ownFactoriesShort": "Fábricas próprias",
-    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)",
+    "plant": {
+      "BE": "Beveren-Waas, Bélgica",
+      "PL": "Częstochowa, Polónia"
+    }
   },
   "productData": {
     "category": {
@@ -3970,7 +3992,11 @@
       "perfNano": "Nano (⌀ 0,5 mm)",
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
-      "perfMicroL": "Micro L (⌀ 2,0 mm)"
+      "perfMicroL": "Micro L (⌀ 2,0 mm)",
+      "openArea24": "24% de área aberta",
+      "openArea18": "18% de área aberta",
+      "openArea12": "12% de área aberta",
+      "openArea5": "5% de área aberta"
     },
     "solo-eco": {
       "mounting": "Autoportante; instalação pela Re-Sound sob consulta",
@@ -4010,12 +4036,12 @@
       "finishesValue": "{count} acabamentos",
       "coloursValue": "{count} cores",
       "notAvailable": "—",
-      "fromPriceValue": "desde {price, number} € {unit}",
+      "fromPriceValue": "a partir de {price, number} € {unit}",
       "placeholderPrice": "preço sob consulta",
       "isoClassNote": "Limiares das classes ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "PORQUÊ A RE-SOUND",
       "whyTitle": "Porquê a Re-Sound",
-      "whyOwnFactoriesTitle": "Fábricas próprias",
+      "whyOwnFactoriesTitle": "A nossa própria fábrica em Częstochowa",
       "whyTakeBackTitle": "Programa de retoma gratuito",
       "whyTakeBackDesc": "No fim de vida, recolhemos os painéis e reprocessamo-los em matéria-prima — gratuitamente na Bélgica e ao custo da logística no resto da UE.",
       "whyCertsTitle": "Certificados onde importa",
@@ -4036,11 +4062,11 @@
         "set": "por conjunto",
         "piece": "por unidade"
       },
-      "fromPriceFormatted": "desde {amount} {unit}"
+      "fromPriceFormatted": "a partir de {amount} {unit}"
     },
     "rpet": {
       "title": "Painéis Acústicos em PET Reciclado — Fabricante | Re-Sound",
-      "description": "Painéis acústicos PET de garrafas recicladas: rPET Panel, Groove e Flex Groove. 12–16 cores, B-s1,d0, OEKO-TEX®, fabricados na nossa fábrica na Polónia.",
+      "description": "Painéis acústicos PET de garrafas recicladas: rPET Panel, Groove, Flex Groove. 12–16 cores, OEKO-TEX®, B-s1,d0 ou B-s2,d0 consoante o modelo. Fabricados na nossa fábrica na Polónia.",
       "h1": "Painéis acústicos PET: rPET Panel, Groove e Flex Groove",
       "breadcrumb": "rPET",
       "intro": "Os painéis acústicos PET transformam garrafas pós-consumo num feltro de poliéster denso que absorve o som, aceita corte CNC como o MDF e está disponível numa paleta de cores que os arquitetos realmente utilizam. A Re-Sound é uma marca do Stretch Group. Fabricamos nas nossas fábricas próprias em Beveren-Waas (Bélgica) e Częstochowa (Polónia); a gama rPET é produzida em Częstochowa. A gama tem três modelos. O rPET Panel é a placa lisa: corte-a, frese-a, fure-a e pinte-a para paredes, tetos e mobiliário. O rPET Groove acrescenta uma superfície ranhurada em 12 cores e três espessuras, para maior absorção em paredes e tetos. O rPET Flex Groove mantém o aspeto ranhurado, mas curva-se em torno de colunas e paredes curvas até um raio de 500 mm. Os três têm certificação OEKO-TEX® Standard 100, atingem B-s1,d0 ou B-s2,d0 segundo a EN 13501-1 e podem ser retomados para reciclagem no fim de vida. Utilize a tabela abaixo para comparar os painéis acústicos PET por formato, absorção e prazo de entrega e, em seguida, abra a página do modelo para consultar acabamentos e downloads.",
@@ -4056,7 +4082,7 @@
       "faq": {
         "q1": {
           "question": "Os painéis acústicos PET são mesmo feitos de garrafas recicladas?",
-          "answer": "Sim. O feltro é feito de fibra de garrafas PET recicladas; o rPET Groove e o rPET Flex Groove são 100 % PET reciclado. Todos os modelos têm certificação OEKO-TEX® Standard 100, pelo que o material é adequado para escolas e unidades de saúde."
+          "answer": "Sim. O feltro é feito de fibra de garrafas PET pós-consumo: o rPET Panel e o rPET Flex Groove são fabricados integralmente a partir de PET reciclado, e o rPET Groove é fabricado com o mesmo feltro de PET reciclado. Todos os modelos têm certificação OEKO-TEX® Standard 100, pelo que o material é adequado para escolas e unidades de saúde."
         },
         "q2": {
           "question": "Quanto som absorvem os painéis acústicos PET?",
@@ -4102,7 +4128,7 @@
         },
         "q3": {
           "question": "Que classe de reação ao fogo atingem os painéis acústicos de madeira?",
-          "answer": "Com o núcleo ignífugo, os modelos rWood estão classificados B-s1,d0 segundo a EN 13501-1; com um núcleo de MDF standard, a classificação é D-s2. Especifique o núcleo FR para vias de evacuação e edifícios públicos."
+          "answer": "Com o núcleo de MDF ignífugo (FR), os modelos rWood estão classificados B-s1,d0 segundo a EN 13501-1; com um núcleo de MDF standard, a classificação é D-s2,d0. Especifique o núcleo FR para vias de evacuação e edifícios públicos."
         },
         "q4": {
           "question": "Os painéis de madeira microperfurados podem ser retroiluminados?",
@@ -4115,11 +4141,11 @@
       }
     },
     "booths": {
-      "title": "Cabines Acústicas e Pods — Solo, Duo, Modular XL | Re-Sound",
+      "title": "Fabricante de cabines telefónicas de escritório: Solo, Duo, Modular XL | Re-Sound",
       "description": "Cabines telefónicas de escritório e pods de reuniões: Solo ECO e Solo Flex (1 p.), Duo (2), Modular XL (6–10). Redução da fala ISO 23351-1 na Flex e XL, 230 V.",
-      "h1": "Cabines telefónicas e pods de reuniões para escritório, de fabrico próprio",
+      "h1": "Cabines telefónicas e pods de reuniões para escritório, diretamente do fabricante",
       "breadcrumb": "Cabines",
-      "intro": "Uma cabine telefónica de escritório proporciona a uma pessoa um espaço silencioso e ventilado para chamadas e videoconferências num piso em open space; um pod de reuniões faz o mesmo para uma equipa. A Re-Sound é uma marca do Stretch Group. Fabricamos nas nossas fábricas próprias em Beveren-Waas (Bélgica) e Częstochowa (Polónia). A gama de cabines tem quatro modelos. A Solo ECO é o modelo de entrada: uma cabine individual com mesa alta, tomada específica do país com USB-A e USB-C (na Dinamarca, apenas a tomada), ventilação até 4 m³/min e parede traseira fechada ou em vidro. A Solo Flex é a cabine telefónica de escritório individual: 1 m² de área ocupada, secretária de altura regulável, alimentação 230 V e USB-C, ventiladores EC silenciosos e uma redução do nível da fala de 24 dB(A) medida segundo a ISO 23351-1. A Duo é a cabine acústica para duas pessoas, com duas configurações — Flex para uma conversa a dois lugares, Work para uma pessoa com secretária de largura total. A Modular XL é o pod de reuniões acústico para seis a dez pessoas: a unidade base amplia-se em segmentos de 90 cm e atinge 25,9 dB(A) de redução do nível da fala. A Solo Flex, a Duo e a Modular XL incluem uma garantia estrutural de 5 anos e a Solo ECO uma garantia de 5 anos sobre peças sobresselentes; todas são entregues em toda a UE, com instalação disponível sob consulta. Compare as cabines telefónicas de escritório abaixo e, em seguida, abra a página de um modelo para consultar os acessórios e as transferências.",
+      "intro": "Uma cabine telefónica de escritório proporciona a uma pessoa um espaço silencioso e ventilado para chamadas e videoconferências num piso em open space; um pod de reuniões faz o mesmo para uma equipa. As cabines Re-Sound são fabricadas na nossa própria fábrica em Częstochowa (Polónia), entregues e instaladas pela nossa própria equipa a pedido, com uma garantia estrutural de 5 anos (Solo ECO: garantia de 5 anos sobre peças sobresselentes). A gama de cabines tem quatro modelos. A Solo ECO é o modelo de entrada: uma cabine individual com mesa alta, tomada específica do país com USB-A e USB-C (na Dinamarca, apenas a tomada), ventilação até 4 m³/min e parede traseira fechada ou em vidro. A Solo Flex é a cabine telefónica de escritório individual: 1 m² de área ocupada, secretária de altura regulável, alimentação 230 V e USB-C, ventiladores EC silenciosos e uma redução do nível da fala de 24 dB(A) medida segundo a ISO 23351-1. A Duo é a cabine acústica para duas pessoas, com duas configurações — Flex para uma conversa a dois lugares, Work para uma pessoa com secretária de largura total. A Modular XL é o pod de reuniões acústico para seis a dez pessoas: a unidade base amplia-se em segmentos de 90 cm e atinge 25,9 dB(A) de redução do nível da fala. A Solo Flex, a Duo e a Modular XL incluem a garantia estrutural de 5 anos e a Solo ECO a garantia de 5 anos sobre peças sobresselentes; as quatro são entregues em toda a UE. Compare as cabines telefónicas de escritório abaixo e, em seguida, abra a página de um modelo para consultar os acessórios e as transferências.",
       "whyCertsDesc": "Garantia de 5 anos em todas as cabines (estrutural na Solo Flex, Duo e Modular XL; peças sobresselentes na Solo ECO); redução do nível da fala indicada segundo a ISO 23351-1 quando medida.",
       "applications": {
         "app1": "Escritórios em open space e espaços de coworking",
@@ -4150,7 +4176,8 @@
           "question": "Qual é o prazo de entrega e a garantia de uma cabine telefónica?",
           "answer": "A Solo ECO demora 4 semanas de produção e inclui uma garantia de 5 anos sobre peças sobresselentes. A Solo Flex e a Duo são expedidas 4–6 semanas após a encomenda, a Modular XL em 6–8 semanas para a unidade base; os tecidos personalizados acrescentam 2–3 semanas. A garantia estrutural é de 5 anos e a da eletrónica de 2 anos, com entrega e instalação disponíveis em toda a UE."
         }
-      }
+      },
+      "whyOwnFactoriesDesc": "As quatro cabines são construídas na nossa própria fábrica em Częstochowa (Polónia) e entregues e instaladas pela nossa própria equipa a pedido."
     }
   },
   "sampleKit": {
@@ -4222,7 +4249,7 @@
     "title": "Cabine telefónica de escritório: preços e classes 2026 | Re-Sound",
     "description": "Preços de cabines telefónicas: Solo ECO desde {soloEco}, Solo Flex desde {soloFlex} sem IVA, Modular XL desde {modularXl}. ISO 23351-1, prazos e garantia.",
     "h1": "Cabines telefónicas de escritório: preços, classes e como escolher",
-    "intro": "Uma cabine telefónica de escritório Re-Sound custa desde {soloEco} sem IVA, sem instalação (Solo ECO), a Solo Flex desde {soloFlex} e um pod de reuniões Modular XL desde {modularXl}. Abaixo encontra todos os preços que publicamos, o que está incluído, as classes de nível de fala ISO 23351-1 indicadas com honestidade e como funcionam a instalação, os testes e a garantia. A Re-Sound é uma marca do Stretch Group. Fabricamos nas nossas próprias fábricas em Beveren-Waas (Bélgica) e Częstochowa (Polónia).",
+    "intro": "Uma cabine telefónica de escritório Re-Sound custa desde {soloEco} sem IVA, sem instalação (Solo ECO), a Solo Flex desde {soloFlex} e um pod de reuniões Modular XL desde {modularXl}. Abaixo encontra todos os preços que publicamos, o que está incluído, as classes de nível de fala ISO 23351-1 indicadas com honestidade e como funcionam a instalação, os testes e a garantia.",
     "breadcrumb": "Preços de cabines telefónicas",
     "priceTag": "Preços 2026",
     "priceTitle": "Preços por modelo (sem IVA)",
@@ -4257,7 +4284,7 @@
     "testingTag": "Experimente primeiro",
     "testingTitle": "Teste uma cabine no nosso showroom",
     "testingText": "Pode sentar-se no interior de todos os modelos no nosso showroom em Beveren-Waas (Seg–Sex 08:00–16:30, mediante marcação) e ouvir a diferença por si próprio antes de encomendar.",
-    "classesTag": "Acústica",
+    "classesTag": "ACÚSTICA",
     "classesTitle": "O que significam as classes ISO 23351-1",
     "classesText": "A ISO 23351-1 mede quanto uma cabine fechada reduz o nível da fala que sai dela. A Solo Flex reduz a fala em cerca de 24 dB(A) e a Modular XL em 25,9 dB(A): ambas são de Classe C. Isso evita que chamadas normais e videoconferências perturbem o espaço de trabalho; as classes B, A e A+ reduzem ainda mais a fala.",
     "classCol": {
@@ -4290,9 +4317,28 @@
       "solo-eco": "Sob consulta"
     },
     "classesNote": "Limiares: a redução mínima do nível de fala por classe. A Solo ECO e a Duo ainda não têm valor publicado.",
-    "endOfLifeTag": "Circular",
+    "endOfLifeTag": "CIRCULARIDADE",
     "warrantyByModel": {
       "solo-eco": "5 anos de garantia sobre peças sobresselentes"
+    },
+    "manufactureLine": "Fabricado na nossa própria fábrica em Częstochowa (Polónia); entrega e instalação pela nossa própria equipa, orçamentadas em separado.",
+    "pricelist": {
+      "tag": "Lista de preços",
+      "title": "Descarregar a lista de preços completa (PDF)",
+      "text": "Deixe os seus dados e a lista de preços das cabines (PDF) é transferida de imediato.",
+      "firstName": "Nome",
+      "lastName": "Apelido",
+      "company": "Empresa",
+      "email": "E-mail",
+      "honeypot": "Deixe este campo vazio",
+      "consent": "Aceito que a Re-Sound me contacte a propósito deste pedido. <link>Política de privacidade</link>",
+      "submit": "Descarregar a lista de preços",
+      "sending": "A preparar a transferência…",
+      "successTitle": "A transferência começou",
+      "successText": "Se o PDF não abriu, utilize a ligação abaixo.",
+      "successLink": "Abrir a lista de preços (PDF)",
+      "errorInvalid": "Verifique os seus dados e tente novamente.",
+      "error": "Algo correu mal. Tente novamente dentro de instantes."
     }
   },
   "order": {
@@ -4322,7 +4368,7 @@
       "optionsTitle": "Opções",
       "optionPrice": "+{price}",
       "model": "Modelo",
-      "fromPrice": "Desde {price}",
+      "fromPrice": "A partir de {price}",
       "included": "Incluído",
       "creditPrice": "−{price}",
       "none": "Nenhum",
@@ -4336,15 +4382,15 @@
         "note": "Os nossos instaladores colocam e ligam a unidade no local. Sem esta opção, a montagem fica a seu cargo: duas pessoas precisam de menos de três horas para uma Solo Flex."
       },
       "extraElement": {
-        "label": "Elemento adicional de 90 cm",
+        "label": "Elemento extra de 90 cm",
         "note": "Prolonga o pod de reuniões em 90 cm. A instalação do elemento adicional está incluída neste preço."
       }
     },
     "details": {
       "title": "Onde devemos entregar?",
       "customerType": "Encomendo enquanto",
-      "company": "Empresa",
-      "private": "Particular",
+      "company": "Uma empresa",
+      "private": "Um particular",
       "companyName": "Nome da empresa",
       "vatNumber": "Número de IVA",
       "vatHint": "Com um número de IVA da UE válido fora da Polónia, faturamos sem IVA (autoliquidação). Verificamos o número no VIES.",
@@ -4516,7 +4562,8 @@
       "sparePartsLabel": "Garantia de peças sobresselentes",
       "sparePartsValue": "5 anos",
       "deliveryValue": "4 semanas de produção, à saída da fábrica de Częstochowa",
-      "weightLabel": "Peso (líquido / bruto)"
+      "weightLabel": "Peso (líquido / bruto)",
+      "acousticsTitle": "Desempenho acústico"
     },
     "addons": {
       "tag": "OPCIONAL",
@@ -4561,6 +4608,267 @@
     },
     "cta": {
       "deliveryNote": "À saída da fábrica, 4 semanas de produção · Entrega e instalação sob consulta · Garantia de 5 anos sobre peças sobresselentes"
+    }
+  },
+  "manufacturing": {
+    "navLabel": "Produção",
+    "breadcrumb": "Produção",
+    "title": "Fabricante de painéis acústicos e cabines | Re-Sound",
+    "description": "A Re-Sound fabrica os seus painéis acústicos e cabines em duas fábricas próprias: têxteis em Beveren-Waas (BE), rWood, rPET e cabines em Częstochowa (PL).",
+    "h1": "Fabricante de painéis acústicos e cabines telefónicas: as nossas duas fábricas",
+    "intro": "A Re-Sound concebe e fabrica os seus próprios produtos, em vez de revender os de terceiros. Cada painel acústico e cada cabine telefónica deste site é fabricado numa de duas fábricas que nos pertencem: as linhas têxteis em Beveren-Waas, na Bélgica; as linhas rWood e rPET e as quatro cabines em Częstochowa, na Polónia. Todas as matérias-primas são adquiridas na União Europeia.",
+    "plantsTag": "AS FÁBRICAS",
+    "plantsTitle": "Duas fábricas, um fabricante",
+    "plantsIntro": "O que cada unidade fabrica e como chegar lá. As visitas são por marcação em ambos os locais.",
+    "plant": {
+      "BE": {
+        "role": "Painéis acústicos têxteis, sede e showroom",
+        "makes": "Painéis e biombos acústicos em fibras têxteis recicladas.",
+        "note": "O showroom nesta morada tem toda a gama de painéis e os três tamanhos de cabine instalados e acusticamente ativos, para que possa ouvir a diferença entre materiais antes de especificar."
+      },
+      "PL": {
+        "role": "Painéis rWood e rPET, todas as cabines telefónicas",
+        "makes": "Painéis acústicos de madeira em folheado certificado FSC, painéis acústicos em feltro de PET reciclado, e as cabines telefónicas e pods de reuniões.",
+        "note": "O escritório de produção recebe visitas de projeto e visitas à fábrica por marcação. As cabines são entregues e instaladas pela nossa própria equipa, a pedido."
+      }
+    },
+    "plantLabels": {
+      "makes": "Fabricado aqui",
+      "address": "Morada",
+      "hours": "Horário",
+      "hoursValue": "Seg–Sex, 08:00–16:30 · por marcação",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "country": {
+        "BE": "Bélgica",
+        "PL": "Polónia"
+      }
+    },
+    "originTag": "QUE LINHA É FABRICADA ONDE",
+    "originTitle": "Fábrica de origem por linha de produtos",
+    "originNote": "Uma linha por produto, gerada a partir dos mesmos dados de produto que alimentam cada página de modelo. Prazos de entrega conforme publicados nas páginas dos modelos.",
+    "col": {
+      "product": "Produto",
+      "family": "Gama",
+      "plant": "Fábrica",
+      "leadTime": "Prazo de entrega"
+    },
+    "certsTag": "CERTIFICAÇÕES",
+    "certsTitle": "Certificações e o que abrangem",
+    "certsIntro": "Só são listadas as certificações que se aplicam a uma linha específica, cada uma com a norma a que se refere e os produtos que abrange.",
+    "certs": {
+      "FSC": {
+        "name": "Cadeia de custódia FSC",
+        "scope": "Folheados rWood"
+      },
+      "OEKO-TEX": {
+        "name": "OEKO-TEX Standard 100",
+        "scope": "Feltro rPET"
+      },
+      "EPD": {
+        "name": "Declaração Ambiental de Produto",
+        "scope": "rWood Panel"
+      }
+    },
+    "certsAppliesTo": "Aplica-se a",
+    "certsNote": "A classificação de reação ao fogo (EN 13501-1), a absorção sonora (ISO 11654) e a redução do nível de fala (ISO 23351-1) são resultados de ensaio e não certificações; são indicados por modelo nas páginas de produto.",
+    "howTag": "COMO TRABALHAMOS",
+    "howTitle": "O que muda para si quando fabricamos nós próprios",
+    "how": {
+      "origin": {
+        "title": "Origem transparente",
+        "text": "Cada página de produto indica a fábrica de onde vem, e a tabela desta página é gerada a partir dos mesmos dados de produto, pelo que texto e dados não podem divergir."
+      },
+      "installation": {
+        "title": "Entrega e instalação pela nossa própria equipa",
+        "text": "As cabines são entregues e instaladas pela nossa própria equipa, a pedido; a entrega e a instalação são orçamentadas em separado."
+      },
+      "warranty": {
+        "title": "Garantia em todas as cabines"
+      }
+    },
+    "linksTag": "IR MAIS LONGE",
+    "linksTitle": "Gamas, documentos técnicos e amostras",
+    "links": {
+      "downloadsTitle": "Transferências técnicas",
+      "downloadsText": "Fichas técnicas, guias de instalação e relatórios de ensaio acústico em cada página de produto; certificados de reação ao fogo e declarações de sustentabilidade para os painéis, condições de garantia e desenhos CAD para as cabines.",
+      "downloadsCta": "Todos os produtos",
+      "samplesTitle": "Kit de amostras",
+      "samplesText": "Encomende um kit de amostras gratuito e compare os materiais e acabamentos na sua própria secretária.",
+      "hubCta": "Ver a gama"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Calculadora de tempo de reverberação (RT60)",
+      "description": "Estime o tempo de reverberação da sua sala com a fórmula de Sabine, compare-o com o valor-alvo para o tipo de sala e veja de quantos m² de painéis acústicos Re-Sound precisa."
+    },
+    "hero": {
+      "tag": "Ferramenta gratuita",
+      "title": "Calculadora de tempo de reverberação",
+      "subtitle": "Introduza as dimensões e os acabamentos da sua sala para estimar o RT60, compará-lo com o valor-alvo para o tipo de sala e descobrir quantos m² de painéis acústicos o colocam dentro do intervalo."
+    },
+    "intro": {
+      "tag": "Como funciona",
+      "title": "A fórmula de Sabine e os valores-alvo",
+      "sabine": "A calculadora utiliza a fórmula de Sabine na forma T = V / (6 × A): T é o tempo de reverberação em segundos, V o volume da sala em m³ e A a absorção total em m² sabine — a área de cada superfície multiplicada pelo respetivo coeficiente de absorção α, tudo somado. Cada banda de oitava, de 125 Hz a 4000 Hz, é calculada separadamente com os valores α dos acabamentos de pavimento, teto e paredes selecionados.",
+      "headline": "O RT60 principal é a média das bandas de 500, 1000 e 2000 Hz — as frequências da fala — e é esse o valor comparado com o valor-alvo.",
+      "targets": "Os tempos de reverberação alvo por tipo de sala provêm da mesma tabela de origem que os coeficientes de absorção: de 0,4 s para um estúdio de música a 1,5 s para um pavilhão desportivo ou uma piscina; um escritório, sala de reuniões ou sala de aula visa 0,8 s.",
+      "note": "A fórmula de Sabine pressupõe que a absorção está distribuída uniformemente pela sala. O resultado é uma estimativa para decisões iniciais de projeto, não uma medição.",
+      "targetsTableCaption": "Tempo de reverberação alvo por tipo de sala",
+      "roomType": "Tipo de sala",
+      "targetRt": "T alvo"
+    },
+    "form": {
+      "title": "A sua sala",
+      "length": "Comprimento",
+      "width": "Largura",
+      "height": "Altura",
+      "unitHint": "em m (2.8 ou 2,8)",
+      "floor": "Acabamento do pavimento",
+      "ceiling": "Acabamento do teto",
+      "walls": "Acabamento das paredes",
+      "roomType": "Tipo de sala",
+      "roomTypeOption": "{name} — alvo {t} s"
+    },
+    "results": {
+      "title": "Resultado",
+      "empty": "Introduza o comprimento, a largura e a altura da sala para ver o resultado.",
+      "volume": "Volume da sala",
+      "volumeValue": "{v} m³",
+      "rtNow": "RT60 estimado atual",
+      "rtNowHint": "Média das bandas de 500, 1000 e 2000 Hz",
+      "seconds": "{s} s",
+      "target": "Alvo para {room}",
+      "met": "Alvo atingido",
+      "notMet": "Acima do alvo",
+      "toAdd": "Absorção a acrescentar",
+      "sabine": "{a} m² sabine",
+      "toAddHint": "Absorção adicional necessária para baixar o RT60 até ao valor-alvo",
+      "bandTable": "Por banda de oitava",
+      "band": "Banda (Hz)",
+      "absorptionBand": "Absorção A (m² sabine)",
+      "rtBand": "RT60 (s)",
+      "noneNeeded": "A sua sala já cumpre o valor-alvo para este tipo de sala — não é necessária absorção adicional.",
+      "recommendTitle": "Painéis Re-Sound para atingir o alvo",
+      "recommendIntro": "m² de cada painel que fornecem a absorção em falta, com base no respetivo coeficiente de absorção ponderado αw. Escolha um produto; as quantidades são alternativas, não uma soma.",
+      "productLine": "≈ {m2} m² de {product} (αw {alphaW})",
+      "productNoNumber": "{product} — medido por padrão / espessura — ver página do produto",
+      "productLink": "Página do produto",
+      "evenNote": "A fórmula de Sabine pressupõe uma absorção distribuída uniformemente: a estimativa é mais fiável quando os painéis estão repartidos pela sala e não concentrados numa única superfície."
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Perguntas sobre o cálculo",
+      "officeTarget": {
+        "question": "Que tempo de reverberação deve ter um escritório?",
+        "answer": "A tabela de valores-alvo utilizada por esta calculadora define 0,8 s para um escritório, sala de reuniões, sala de aula, creche e sala de estar, 0,7 s para um call center, restaurante, café ou bar, e 1,0 s para uma receção ou sala de espera. A calculadora mostra se o seu RT60 estimado cumpre o valor-alvo para o tipo de sala que selecionar."
+      },
+      "hardFinishes": {
+        "question": "Que acabamentos absorvem menos som?",
+        "answer": "Na tabela, o mármore tem um coeficiente de absorção de 0,01 em todas as bandas de oitava, o betão de 0,01 a 0,03 e o reboco de 0,01 a 0,05. Os acabamentos macios absorvem muito mais: a alcatifa atinge 0,37 a 4000 Hz e as cortinas pesadas 0,96 a 500 Hz. Uma sala com acabamentos duros no pavimento, no teto e nas paredes tem, por isso, um tempo de reverberação longo."
+      },
+      "howManyM2": {
+        "question": "De quantos m² de painéis acústicos preciso?",
+        "answer": "A calculadora determina a absorção adicional em m² sabine que baixa o RT60 principal — a média das bandas de 500, 1000 e 2000 Hz — até ao valor-alvo e divide-a depois pelo coeficiente de absorção ponderado αw de cada painel Re-Sound com um valor único publicado: 1 m² de um painel com αw 1,0 acrescenta 1 m² sabine. Os painéis cujo αw depende do padrão ou da espessura são listados sem quantidade e com ligação para a respetiva página de produto."
+      }
+    },
+    "lead": {
+      "tag": "Próximo passo",
+      "title": "Enviem-me este cálculo e um orçamento",
+      "subtitle": "Enviamos-lhe por e-mail o cálculo acima e voltamos ao contacto com um orçamento para os painéis recomendados.",
+      "firstName": "Nome",
+      "lastName": "Apelido",
+      "company": "Empresa",
+      "email": "E-mail",
+      "honeypot": "Deixe este campo vazio",
+      "submit": "Enviar o cálculo e pedir orçamento",
+      "sending": "A enviar...",
+      "success": "Obrigado — o cálculo está a caminho e entraremos em contacto com um orçamento.",
+      "error": "Algo correu mal. Tente novamente.",
+      "incomplete": "Complete primeiro o cálculo acima.",
+      "privacyNotice": "Ao enviar este formulário, aceita a nossa <link>política de privacidade</link>."
+    }
+  },
+  "samples": {
+    "metaTitle": "Encomendar um kit de amostras",
+    "metaDescription": "Peça o kit de amostras Re-Sound: amostras A4 de todas as gamas e acabamentos, expedidas em três dias úteis na UE.",
+    "hero": {
+      "tag": "Kit de amostras",
+      "title": "Encomende o seu kit de amostras",
+      "subtitle": "Amostras A4 de todas as gamas e acabamentos, expedidas em três dias úteis na UE."
+    },
+    "kit": {
+      "tag": "O que contém o kit",
+      "title": "Todas as gamas e acabamentos, em formato A4",
+      "swatchesTitle": "Amostras A4",
+      "swatchesText": "Uma amostra A4 de cada gama e acabamento.",
+      "shippingTitle": "Três dias úteis",
+      "shippingText": "O kit é expedido em três dias úteis para moradas na UE.",
+      "projectTitle": "O seu projeto",
+      "projectText": "Diga-nos que gamas está a considerar e qual é o projeto.",
+      "cta": "Pedir o kit"
+    },
+    "ranges": {
+      "tag": "Gamas",
+      "title": "As gamas incluídas no kit",
+      "text": "Amostras de todos os acabamentos das gamas têxtil, rWood e rPET."
+    },
+    "families": {
+      "textile": "Têxtil",
+      "rwood": "rWood",
+      "rpet": "rPET"
+    },
+    "form": {
+      "tag": "Pedido",
+      "title": "Peça o seu kit de amostras",
+      "text": "Preencha o formulário abaixo. Os campos marcados com * são obrigatórios.",
+      "sections": {
+        "ranges": "Em que gamas está interessado?",
+        "project": "O seu projeto",
+        "delivery": "Entrega"
+      },
+      "fields": {
+        "firstName": "Nome",
+        "lastName": "Apelido",
+        "company": "Empresa",
+        "email": "E-mail",
+        "country": "País",
+        "rangesHint": "Assinale pelo menos uma gama.",
+        "rangesRequired": "Selecione pelo menos uma gama.",
+        "projectType": "Tipo de projeto",
+        "projectTypePlaceholder": "Selecione um tipo de projeto",
+        "area": "Área (m²)",
+        "areaPlaceholder": "ex.: 120",
+        "address": "Morada de entrega",
+        "addressPlaceholder": "Rua e número, código postal, localidade",
+        "addressHint": "Rua, número, código postal e localidade: necessários para expedir o kit.",
+        "honeypot": "Deixe este campo vazio"
+      },
+      "projectTypes": {
+        "office": "Escritório",
+        "education": "Educação",
+        "healthcare": "Saúde",
+        "hospitality": "Hotelaria",
+        "residential": "Residencial",
+        "other": "Outro"
+      },
+      "submit": "Pedir o kit de amostras",
+      "success": {
+        "title": "Pedido recebido",
+        "body": "Obrigado, {firstName}. O kit de amostras é expedido em três dias úteis na UE. Verifique a sua caixa de entrada para a confirmação.",
+        "another": "Enviar outro pedido"
+      }
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Perguntas sobre o kit de amostras",
+      "q1": "O que contém o kit de amostras?",
+      "a1": "Amostras A4 de todas as gamas e acabamentos: têxtil, rWood e rPET.",
+      "q2": "Quanto tempo demora a expedição?",
+      "a2": "O kit é expedido em três dias úteis para moradas na UE.",
+      "q3": "Tenho de escolher gamas específicas?",
+      "a3": "O kit contém todas as gamas e acabamentos. Ao assinalar as gamas que lhe interessam, indica-nos quais são relevantes para o seu projeto."
     }
   }
 }

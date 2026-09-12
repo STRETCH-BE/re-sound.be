@@ -9,19 +9,22 @@
  *   tPage('specs.x')        → key('productPage.specs.x')
  *   tPage('specLabels.x')   → key('productPage.specLabels.x')
  *
- * Literal numbers / units / standards stay literal. A few English phrases
- * were hard-coded in the JSX with no equivalent in `productPage` and are
- * kept verbatim (see untranslated literals in the refactor report).
+ * Governed figures (thickness, αw, class, fire class) come from
+ * src/data/products.ts via spec(); the FSC row is guarded by cert(). The
+ * absorption class is derived from the data αw — a per-pattern range gives
+ * none, so that row stays hidden. Removed: the "with mineral wool" αw row and
+ * the per-pattern αw figures (not in the data — the perforation card keeps
+ * only the open-area percentages) and "EPD available" (not held).
  */
 import type { SpecTableDef } from './types';
-import { key } from './types';
+import { cert, key, spec } from './types';
 
 const specs: SpecTableDef = [
   {
     title: key('rwoodPerfPage.specs.dimensionsTitle'),
     rows: [
       { label: key('rwoodPerfPage.specs.customSizes'), value: '100–3050 × 100–1220 mm' },
-      { label: key('productPage.specLabels.thickness'), value: '8 - 19 mm' },
+      { label: key('productPage.specLabels.thickness'), value: spec('rwood-perf', 'thickness') },
       { label: key('productPage.specLabels.weight'), value: key('productData.specValues.fromWeight035') },
       { label: key('productPage.specLabels.coreDensity'), value: '48,40 kg/m³' },
     ],
@@ -29,25 +32,24 @@ const specs: SpecTableDef = [
   {
     title: key('rwoodPerfPage.specs.acousticsTitle'),
     rows: [
-      { label: key('productPage.specs.absorptionCoeff'), value: '0.90' },
-      { label: key('productData.specValues.withMineralWool50'), value: 'Up to 1.00' },
-      { label: key('productPage.specs.absorptionClass'), value: key('productData.specValues.classAC') },
+      { label: key('productPage.specs.absorptionCoeff'), value: spec('rwood-perf', 'alphaW') },
+      { label: key('productPage.specs.absorptionClass'), value: spec('rwood-perf', 'absorptionClass') },
       { label: key('productPage.specLabels.testStandard'), value: 'ISO 354 / ISO 11654' },
     ],
   },
   {
     title: key('rwoodPerfPage.specs.perforationsTitle'),
     rows: [
-      { label: key('productData.specValues.pd8Double'), value: key('productData.specValues.open24Aw085') },
-      { label: 'PH10 (⌀10 mm)', value: key('productData.specValues.open18Aw075') },
-      { label: 'PH8 (⌀8 mm)', value: key('productData.specValues.open12Aw055') },
-      { label: 'PH5 (⌀5 mm)', value: key('productData.specValues.open5Aw035') },
+      { label: key('productData.specValues.pd8Double'), value: key('productData.specValues.openArea24') },
+      { label: 'PH10 (⌀10 mm)', value: key('productData.specValues.openArea18') },
+      { label: 'PH8 (⌀8 mm)', value: key('productData.specValues.openArea12') },
+      { label: 'PH5 (⌀5 mm)', value: key('productData.specValues.openArea5') },
     ],
   },
   {
     title: key('rwoodPerfPage.specs.fireTitle'),
     rows: [
-      { label: key('rwoodPerfPage.specs.reactionFire'), value: 'B-s1, d0' },
+      { label: key('rwoodPerfPage.specs.reactionFire'), value: spec('rwood-perf', 'fireClass') },
       { label: key('rwoodPerfPage.specs.resistanceFire'), value: 'K1-10 / K2-10' },
       { label: key('productPage.specs.core'), value: key('rwoodPerfPage.specs.fireRetardant') },
       { label: key('productPage.specLabels.testStandard'), value: 'EN 13501' },
@@ -65,10 +67,12 @@ const specs: SpecTableDef = [
   {
     title: key('rwoodPerfPage.specs.certsTitle'),
     rows: [
-      { label: key('productPage.specLabels.woodSourcing'), value: key('productPage.specLabels.fscCert') },
+      {
+        label: key('productPage.specLabels.woodSourcing'),
+        value: cert('rwood-perf', 'FSC', 'productPage.specLabels.fscCert'),
+      },
       { label: key('rwoodPerfPage.specs.vocLabel'), value: key('rwoodPerfPage.specs.vocVal') },
       { label: key('productPage.specLabels.formaldehyde'), value: key('rwoodPerfPage.specs.formaldehydeVal') },
-      { label: key('rwoodPerfPage.specs.envLabel'), value: key('productPage.specLabels.epd') },
     ],
   },
 ];

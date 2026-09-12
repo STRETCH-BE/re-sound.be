@@ -72,9 +72,9 @@ export default function WhySection() {
           <div className="circular-diagram">
             <div className="circle-outer" />
             <div className="circle-middle">
+              {/* No "100%" — recycled content is per product (src/data/products.ts) */}
               <div className="circle-center">
-                <span>100%</span>
-                <p>{t('diagramLabel')}</p>
+                <span>{t('diagramLabel')}</span>
               </div>
             </div>
             <div className="orbit-item orbit-1">

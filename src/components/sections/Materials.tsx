@@ -9,19 +9,10 @@ interface MaterialsProps {
 export default function Materials({ extended = false }: MaterialsProps) {
   const t = useTranslations('materials');
 
-  const materials = [
-    { icon: '👖', label: t('jeans') },
-    { icon: '🛋️', label: t('upholstery') },
-    { icon: '👕', label: t('clothing') },
-    { icon: '🧵', label: t('textiles') },
-    { icon: '🏭', label: t('industrial') },
-  ];
+  // Plain text labels only — no emoji (brief §1.5).
+  const materials = [t('jeans'), t('upholstery'), t('clothing'), t('textiles'), t('industrial')];
 
-  const extendedMaterials = [
-    { icon: '🎒', label: t('bags') },
-    { icon: '🧶', label: t('wool') },
-    { icon: '🛏️', label: t('mattresses') },
-  ];
+  const extendedMaterials = [t('bags'), t('wool'), t('mattresses')];
 
   const allMaterials = extended ? [...materials, ...extendedMaterials] : materials;
 
@@ -33,10 +24,9 @@ export default function Materials({ extended = false }: MaterialsProps) {
         <p>{t('subtitle')}</p>
 
         <div className="materials-grid">
-          {allMaterials.map((material, index) => (
+          {allMaterials.map((label, index) => (
             <div key={index} className="material-item">
-              <div className="material-icon">{material.icon}</div>
-              <span>{material.label}</span>
+              <span>{label}</span>
             </div>
           ))}
         </div>

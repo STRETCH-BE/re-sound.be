@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "Akoestische panelen & belcabines — fabrikant in België | Re-Sound",
+    "homeTitle": "Akoestische panelen & belcabines — fabrikant | Re-Sound",
     "homeDescription": "Circulaire akoestische panelen (textiel, rWood fineer, rPET) en belcabines, gemaakt in onze eigen fabrieken in België en Polen. Gratis terugname.",
     "productsTitle": "Producten",
     "productsDescription": "Circulaire akoestische panelen & belcabines uit eigen productie: textiel (Interior, Solid, Divide), rWood, rPET en cabines (Solo Flex, Duo, Modular XL).",
@@ -13,7 +13,7 @@
     "blogTitle": "Blog",
     "blogDescription": "Inzichten over circulaire economie, akoestiek en duurzaam ontwerp van het Re-Sound team.",
     "interiorTitle": "Interior Akoestische Wandpanelen | Re-Sound",
-    "interiorDescription": "Modulaire akoestische wandpanelen van gerecycleerd textiel: klasse A absorptie (αw 1,0), afneembare wasbare hoes, gemaakt in België. Vanaf {fromPrice} per set.",
+    "interiorDescription": "Modulaire akoestische wandpanelen van gerecycleerd textiel: klasse A absorptie (αw {alphaW}), afneembare wasbare hoes, gemaakt in België. Vanaf {fromPrice} per set.",
     "solidTitle": "Solid Akoestische Wandpanelen | Re-Sound",
     "solidDescription": "Grootformaat akoestische wandpanelen (1200 × 600 mm) voor krachtige geluidsabsorptie. Haakmontage, kern van gerecycleerd textiel, gemaakt in België.",
     "divideTitle": "Divide Vrijstaande Akoestische Schermen | Re-Sound",
@@ -23,7 +23,7 @@
     "rwoodPerfTitle": "rWood Perf — geperforeerde houten akoestische panelen | Re-Sound",
     "rwoodPerfDescription": "Geperforeerde houten akoestische panelen met FSC-fineer: vier perforatiepatronen voor breedbandabsorptie, 8 afwerkingen, brandvertragende kern.",
     "rwoodMicroTitle": "rWood Micro — microgeperforeerde houtpanelen | Re-Sound",
-    "rwoodMicroDescription": "Microgeperforeerde akoestische houtpanelen (0,5 mm) met FSC-fineer: vrijwel onzichtbaar patroon, brandklasse B-s1,d0, optie met verlichting.",
+    "rwoodMicroDescription": "Microgeperforeerde akoestische houtpanelen (0,5 mm) met FSC-gecertificeerd fineer: vrijwel onzichtbaar patroon, brandklasse {fireClass}, optie met verlichting.",
     "rwoodVeneerTitle": "rWood Panel — fineerpanelen, 10 houtsoorten | Re-Sound",
     "rwoodVeneerDescription": "Gladde akoestische fineerpanelen in 10 houtsoorten: meubelkwaliteit, FSC-gecertificeerd, EPD beschikbaar. Geborsteld, gebeitst en gelakt, montageklaar.",
     "rpetGrooveTitle": "rPET Groove — gegroefde PET-panelen, 12 kleuren | Re-Sound",
@@ -67,17 +67,18 @@
       "badge": "rWood Serie · Natuurlijke Afwerklijn",
       "title": "Circulaire akoestische panelen en belcabines,",
       "titleHighlight": "uit eigen productie",
-      "subtitle": "Echt houtfineer op een hoogperformante gerecycleerde akoestische kern. Biofiele warmte en Klasse A geluidsabsorptie — prachtig gecombineerd.",
+      "subtitle": "Echt houtfineer op een gerecycleerde akoestische kern. Biofiele warmte en geluidsabsorptie, gemeten per product — prachtig gecombineerd.",
       "ctaPrimary": "Ontdek rWood",
       "ctaSecondary": "Bekijk Afwerkingen",
       "statVeneers": "Fineersoorten",
-      "statThickness": "Dikte",
-      "statAbsorption": "Absorptie",
-      "statFire": "Brandklasse",
       "pill1": "Echt houtfineer",
       "pill2": "Gerecycleerde kern",
       "pill3": "Massief & geperforeerd",
-      "imageAlt": "rWood Micro akoestisch paneel met natuurlijk houtfineer, close-up van de afwerking"
+      "imageAlt": "rWood Micro akoestisch paneel met natuurlijk houtfineer, close-up van de afwerking",
+      "statCertified": "Gecertificeerd fineer",
+      "statTypes": "Paneeltypes",
+      "statSizes": "Maten op aanvraag",
+      "statSizesValue": "Maatwerk"
     },
     "circular": {
       "badge": "Circulair Gamma · Interior · Solid · Divide · rPET",
@@ -86,27 +87,27 @@
       "subtitle": "Gerecycleerde grondstof. Gratis terugname aan het einde van de levensduur. Ons circulair systeem zorgt ervoor dat jouw akoestische investering nooit op de stortplaats belandt.",
       "ctaPrimary": "Alle Producten Bekijken",
       "ctaSecondary": "Hoe het Werkt",
-      "statRecycled": "Gerecycleerde grondstof",
       "statLandfill": "Stortplaatsafval",
       "statFreeLabel": "Gratis",
       "statTakeback": "Terugname",
       "statColors": "Kleuren",
-      "pill1": "100% gerecycleerd",
+      "pill1": "Gerecycleerde grondstof",
       "pill2": "Gratis terugname",
       "pill3": "50+ kleuren",
       "pill4": "Eigen fabrieken",
-      "imageAlt": "Interior circulaire akoestische panelen in een modern kantoor"
+      "imageAlt": "Interior circulaire akoestische panelen in een modern kantoor",
+      "statPlants": "Eigen fabrieken, BE & PL"
     }
   },
   "ticker": {
     "recycled": "Gerecycleerde Materialen",
-    "classA": "Klasse A Geluidsabsorptie",
-    "fire": "B-s1,d0 Brandklasse",
     "takeback": "Gratis Terugnameprogramma",
     "veneer": "Echte Houtfineer Afwerkingen",
     "colors": "50+ Standaard Kleuren",
     "custom": "Maatwerk op Aanvraag",
-    "factories": "Uit eigen productie"
+    "factories": "Gemaakt in onze eigen fabrieken in België & Polen",
+    "tested": "Per product getest: ISO 11654 / EN 13501-1",
+    "returnable": "Ontworpen om terug te keren"
   },
   "materials": {
     "tag": "WAT WE GEBRUIKEN",
@@ -143,7 +144,7 @@
     "specStandardVal": "Maatwerk op aanvraag",
     "swatchesTag": "Fineercollectie",
     "swatchesTitle": "Kies je natuurlijke afwerking",
-    "swatchesBody": "Vijf houtsoorten, elk met zijn eigen karakter. Allemaal aangebracht op een 100% gerecycleerde akoestische kern.",
+    "swatchesBody": "Vijf houtsoorten, elk met zijn eigen karakter. Allemaal aangebracht op een gerecycleerde akoestische kern.",
     "ctaFullSpec": "Volledige Specificaties",
     "ctaDatasheet": "Datasheet Downloaden",
     "ctaOrderSamples": "Staalkit Bestellen",
@@ -154,7 +155,7 @@
     "tag": "ONZE PRODUCTEN",
     "title": "Akoestische Oplossingen",
     "titleHighlight": "voor elke ruimte.",
-    "mosaicSubtitle": "Van modulaire wandpanelen tot vrijstaande scheidingswanden — allemaal gemaakt van 100% gerecycleerde materialen, allemaal ontworpen om terug te komen.",
+    "mosaicSubtitle": "Van modulaire wandpanelen tot vrijstaande scheidingswanden — gerecycleerd materiaal in elk gamma, en allemaal ontworpen om terug te komen.",
     "viewAll": "Alle producten bekijken",
     "learnMore": "Meer info",
     "pageTitle": "Onze Producten",
@@ -188,7 +189,7 @@
     "interior": {
       "title": "Interior",
       "description": "Uitbreidbare akoestische panelen voor wanden en plafonds. Perfect voor kantoren, restaurants en openbare ruimtes.",
-      "fullDescription": "Onze Interior panelen zijn ontworpen voor naadloze integratie in elke ruimte. Gemaakt van 100% gerecycleerd textiel, bieden ze uitzonderlijke geluidsabsorptie terwijl ze visuele warmte toevoegen aan uw omgeving."
+      "fullDescription": "Onze Interior-panelen zijn ontworpen voor naadloze integratie in elke ruimte. Gemaakt van gerecycleerde textielvezels bieden ze uitzonderlijke geluidsabsorptie en voegen ze visuele warmte toe aan je omgeving."
     },
     "solid": {
       "title": "Solid",
@@ -203,12 +204,12 @@
     "rwood-groove": {
       "title": "rWood - Groove",
       "description": "Premium akoestische houtpanelen met naturel eiken en walnoten fineers. Elegant design ontmoet superieure geluidsabsorptie.",
-      "fullDescription": "rWood - Groove panelen combineren de naturele schoonheid van FSC-gecertificeerd hout met uitzonderlijke akoestische prestaties. Met precisiegefreesd groeven en geïntegreerde viltbacking transformeren deze panelen elke ruimte met warmte en stijl terwijl ze Klasse A geluidsabsorptie leveren."
+      "fullDescription": "rWood - Groove panelen combineren de natuurlijke schoonheid van FSC-gecertificeerd hout met uitzonderlijke akoestische prestaties. Met precisiegefreesde groeven en een geïntegreerde viltrug transformeren deze panelen elke ruimte met warmte en stijl. De gemeten absorptiewaarde vind je op de productpagina."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
       "description": "Duurzame gegroefde akoestische panelen van gerecycleerd PET. Modern esthetiek met uitstekende akoestische prestaties.",
-      "fullDescription": "rPET - Groove panelen hebben een kenmerkend lineair patroon gemaakt van 100% gerecycleerde PET-flessen. Het groefdesign maximaliseert geluidsabsorptie terwijl het hedendaagse textuur toevoegt aan wanden en plafonds."
+      "fullDescription": "rPET - Groove panelen hebben een kenmerkend lineair patroon, gemaakt van gerecycleerde PET-flessen. Het groefdesign maximaliseert de geluidsabsorptie en geeft wanden en plafonds een hedendaagse textuur."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
@@ -228,7 +229,7 @@
     "rpet-flex-groove": {
       "title": "rPET - Flex Groove",
       "description": "Flexibele gegroefde akoestische panelen van gerecycleerd PET. Veelzijdige installatieopties met moderne lineaire esthetiek.",
-      "fullDescription": "rPET - Flex Groove biedt hetzelfde kenmerkende groefdesign als onze standaard rPET-panelen, met extra installatieflexibiliteit. Gemaakt van 100% gerecycleerde PET-flessen leveren deze panelen uitstekende akoestische prestaties terwijl ze zich aanpassen aan verschillende montageconfirguraties."
+      "fullDescription": "rPET - Flex Groove biedt hetzelfde kenmerkende groefdesign als onze standaard rPET-panelen, met extra installatieflexibiliteit. Gemaakt van gerecycleerde PET-flessen leveren deze panelen uitstekende akoestische prestaties en passen ze zich aan verschillende montageconfiguraties aan."
     },
     "rwood-perf": {
       "title": "rWood - Perf",
@@ -242,7 +243,7 @@
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
-      "description": "Strakke, gladde houtfineer akoestische panelen. Tijdloze elegantie ontmoet Klasse A geluidsabsorptie voor premium ruimtes.",
+      "description": "Strakke, gladde akoestische panelen met houtfineer. Tijdloze elegantie en rustig comfort voor premium ruimtes.",
       "fullDescription": "rWood - Veneer biedt de pure, ononderbroken schoonheid van FSC-gecertificeerd houtfineer ondersteund door hoogperformant akoestisch vilt. Deze strakke, minimalistische panelen brengen naturele warmte in kantoren, horecagelegenheden en culturele ruimtes terwijl ze uitstekende geluidsabsorptie leveren."
     },
     "highlights": {
@@ -252,21 +253,21 @@
       },
       "recyclable": {
         "title": "Recyclebaar",
-        "value": "100% aan einde levensduur"
+        "value": "Gratis terugname aan einde levensduur"
       },
       "origin": {
         "title": "Herkomst",
-        "value": "Gemaakt in België"
+        "value": "Onze eigen fabrieken in België en Polen"
       }
     },
     "features": {
       "performance": {
         "title": "Hoge Prestaties",
-        "description": "Klasse A geluidsabsorptie voor optimaal akoestisch comfort in elke omgeving."
+        "description": "Geluidsabsorptie per product gemeten volgens ISO 11654 — de waarde staat op elke productpagina."
       },
       "circular": {
         "title": "Volledig Circulair",
-        "description": "Gemaakt van gerecycleerde materialen en 100% recyclebaar aan het einde van de levensduur."
+        "description": "Gemaakt van gerecycleerde materialen en gratis teruggenomen aan het einde van de levensduur."
       },
       "customization": {
         "title": "Op Maat",
@@ -288,6 +289,12 @@
     "solo-eco": {
       "title": "Solo ECO",
       "description": "Belcabine voor één persoon, instapmodel: 1,1 m² voetafdruk, statafel, landspecifiek stopcontact met USB, gesloten of glazen achterwand."
+    },
+    "applications": {
+      "educationSports": "Onderwijs & Sport",
+      "office": "Kantoor",
+      "private": "Particulier",
+      "healthcare": "Gezondheidszorg"
     }
   },
   "specs": {
@@ -300,7 +307,7 @@
     "absorption": "Absorptiecoëfficiënt",
     "fireClass": "Brandclassificatie",
     "material": "Materiaal",
-    "recycledTextiles": "100% Gerecycleerd Textiel",
+    "recycledTextiles": "Gerecycleerde textielvezels",
     "certifications": "Certificeringen"
   },
   "why": {
@@ -312,7 +319,7 @@
     "features": {
       "performance": {
         "title": "Superieure Prestaties",
-        "description": "Klasse A absorptiewaardering (αw 0.95-1.00) voor optimaal akoestisch comfort."
+        "description": "Absorptie per product gemeten volgens ISO 11654 — de waarde staat op elke productpagina."
       },
       "durability": {
         "title": "Gebouwd om te Duren",
@@ -326,7 +333,8 @@
         "title": "Volledig Aanpasbaar",
         "description": "50+ kleuren, aangepaste maten en diverse montageopties."
       }
-    }
+    },
+    "freeLabel": "Gratis"
   },
   "circular": {
     "tag": "CIRCULAIRE ECONOMIE",
@@ -335,7 +343,6 @@
     "subtitle": "Onze panelen beginnen hun leven als afval en kunnen terugkeren om nieuwe panelen te worden—een eindeloze cyclus van duurzame akoestische oplossingen.",
     "loopLabel": "Eindeloze Cyclus",
     "cta": "Hoe het Werkt",
-    "statRecycled": "Gerecycleerde Grondstof",
     "statLandfill": "Stortplaats",
     "statFreeLabel": "Gratis",
     "statTakeback": "Terugname",
@@ -357,7 +364,8 @@
         "description": "Gratis ophaling en recycling tot nieuwe panelen."
       }
     },
-    "imageAlt": "Circulaire economie — recyclageproces van akoestische panelen"
+    "imageAlt": "Circulaire economie — recyclageproces van akoestische panelen",
+    "statPlants": "Eigen fabrieken"
   },
   "dualCta": {
     "left": {
@@ -731,7 +739,8 @@
     "terms": "Algemene Voorwaarden",
     "countryBelgium": "België",
     "reviewUs": "Beoordeel ons op Google",
-    "priceGuide": "Prijzen belcabines"
+    "priceGuide": "Prijzen belcabines",
+    "manufacturing": "Productie"
   },
   "cookies": {
     "title": "Cookievoorkeuren",
@@ -890,7 +899,12 @@
       "finish": "Afwerking",
       "epd": "EPD beschikbaar",
       "fscCertified": "FSC® gecertificeerd",
-      "dimPanelWidth": "Breedte paneel"
+      "dimPanelWidth": "Breedte paneel",
+      "absorptionClassB": "Klasse B",
+      "absorptionClassC": "Klasse C",
+      "absorptionClassD": "Klasse D",
+      "absorptionClassE": "Klasse E",
+      "oekoTexStandard100": "OEKO-TEX® Standard 100"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -974,8 +988,8 @@
       "title": "Interior: modulaire akoestische wandpanelen van gerecycleerd textiel",
       "tagline": "Modulaire Akoestiek, Circulair van Ontwerp",
       "description": "Transformeer je ruimte met Re-Sound Interior — een compleet akoestisch wandsysteem gemaakt van gerecycleerde materialen. Volledig aanpasbaar, eenvoudig te installeren en ontworpen om aan het einde van zijn levensduur gerecycleerd te worden.",
-      "uspAbsorption": "αw 1.0 Absorptie",
-      "uspRecyclable": "100% Recycleerbaar",
+      "uspAbsorption": "αw {alphaW} absorptie",
+      "uspRecyclable": "Recycleerbaar via gratis terugname",
       "uspOrigin": "Gemaakt in België",
       "priceFrom": "Vanaf",
       "priceUnit": "excl. btw per set van 3 modules",
@@ -994,7 +1008,7 @@
       "tag": "DUURZAAMHEID",
       "title": "Circulair van Binnen, Mooi van Buiten",
       "description": "Elk Interior-paneel begint zijn leven als afgedankt textiel — kleding, bekleding en industrieel textielafval. We transformeren deze materialen tot hoogperformante akoestische kernen met bio-gebaseerde bindmiddelen, waardoor panelen ontstaan die prachtig presteren en volledig gerecycleerd kunnen worden aan het einde van hun leven.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Gerecycleerd materiaal",
       "stat2Value": "0",
       "stat2Label": "Afval naar stortplaats",
@@ -1022,7 +1036,7 @@
     "acoustics": {
       "tag": "PRESTATIES",
       "title": "Superieure Geluidsabsorptie",
-      "description": "Met een gewogen geluidsabsorptiecoëfficiënt (αw) van 1.0 levert Re-Sound Interior maximale akoestische prestaties. Zowel hoge als lage frequenties worden effectief geabsorbeerd, waardoor comfortabele, productieve ruimtes ontstaan."
+      "description": "Met een gewogen geluidsabsorptiecoëfficiënt (αw) van {alphaW} levert Re-Sound Interior maximale akoestische prestaties. Zowel hoge als lage frequenties worden effectief geabsorbeerd, waardoor comfortabele, productieve ruimtes ontstaan."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1044,7 +1058,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Duurzaamheid",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% recycleerbaar",
+      "endOfLifeValue": "Gratis terugname en recycling",
       "vocValue": "Laag / A+",
       "installTitle": "Installatie",
       "mountingValue": "Wandrailsysteem",
@@ -1066,12 +1080,12 @@
           "answer": "Ja. De hoes is afneembaar en machinewasbaar op 30 °C. De kern van gerecycleerd textiel blijft in het paneel en wordt niet aangetast."
         },
         "absorptionRating": {
-          "question": "Wat is het verschil tussen αw 1.0 en NRC 0.95?",
-          "answer": "Beide meten absorptie, maar volgens verschillende standaarden. αw (ISO 11654) is de Europese eenmaatswaarde; NRC (ASTM C423) is de Amerikaanse equivalent. αw 1.0 en NRC 0.95 wijzen op dezelfde Klasse A-prestatie."
+          "question": "Wat is het verschil tussen αw {alphaW} en NRC {nrc}?",
+          "answer": "Beide meten absorptie, maar volgens verschillende teststandaarden. αw (ISO 11654) is de Europese eengetalswaarde; NRC (ASTM C423) is het Amerikaanse equivalent. αw {alphaW} en NRC {nrc} wijzen op dezelfde Klasse A-prestatie."
         },
         "breeamLeed": {
           "question": "Komt dit product in aanmerking voor BREEAM- of LEED-credits?",
-          "answer": "Ja. Gerecycleerde inhoud, lage VOC-emissies en het terugnameprogramma dragen bij aan BREEAM Mat 03 en LEED MR credits. Een EPD is op aanvraag beschikbaar."
+          "answer": "Ja. Gerecycleerd materiaal, lage VOC-emissies en het terugnameprogramma dragen bij aan BREEAM Mat 03- en LEED MR-credits."
         },
         "installMethod": {
           "question": "Hoe worden de panelen geïnstalleerd?",
@@ -1094,7 +1108,6 @@
       "tagline": "Krachtige Akoestiek, Moeiteloze Installatie",
       "description": "Maak kennis met Re-Sound Solid — jouw krachtig akoestisch wandpaneel ontworpen voor maximale prestaties met minimale inspanning. Groot formaat panelen met uitzonderlijke geluidsabsorptie, eenvoudige haakinstallatie en circulaire ontwerpprincipes.",
       "usp1": "Hoge Absorptie",
-      "usp2": "1200 × 600 mm",
       "usp3": "Haaksysteem",
       "colorSelector": "Kleur Kiezen",
       "priceUnit": "excl. btw per paneel",
@@ -1130,7 +1143,7 @@
       "tag": "DUURZAAMHEID",
       "title": "Circulair van Ontwerp",
       "description": "Re-Sound Solid is zorgvuldig ontworpen met circulariteit als kern. Gemaakt van gerecycleerde textiel en industrieel afval, draagt elk paneel bij aan een duurzamere toekomst. Aan het einde van de levensduur kunnen panelen volledig gerecycleerd worden — de cirkel is rond.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Gerecycleerd materiaal",
       "stat2Value": "0",
       "stat2Label": "Afval naar stortplaats",
@@ -1153,7 +1166,7 @@
       "benefit3Title": "Verbeterde Focus",
       "benefit3": "Minder storende achtergrondgeluiden",
       "benefit4": "Groot formaat voor maximale impact",
-      "ratingValue": "αw 0.95",
+      "ratingValue": "αw {alphaW}",
       "ratingLabel": "Klasse A"
     },
     "specs": {
@@ -1164,7 +1177,7 @@
       "thicknessValue": "45 mm",
       "weightValue": "~4,5 kg per paneel",
       "acousticsTitle": "Akoestische Prestaties",
-      "alphaValue": "0.95",
+      "alphaValue": "1.0",
       "classValue": "Klasse A",
       "nrcValue": "0.90",
       "materialsTitle": "Materialen",
@@ -1175,7 +1188,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Duurzaamheid",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% recycleerbaar",
+      "endOfLifeValue": "Gratis terugname en recycling",
       "installTitle": "Installatie",
       "mountingValue": "Haakrailsysteem",
       "toolsValue": "Boor, waterpas",
@@ -1185,7 +1198,7 @@
       "coverValue2": "Gerecycleerde stof",
       "binderRow": "Bindmiddel",
       "endOfLife": "Einde levensduur",
-      "endOfLifeVal": "100% recycleerbaar",
+      "endOfLifeVal": "Gratis terugname en recycling",
       "mounting": "Bevestiging",
       "mountingVal": "Haaksysteem",
       "installTime": "Installatietijd",
@@ -1216,8 +1229,8 @@
           "answer": "Een standaard Solid-paneel van 1200 × 600 mm weegt ongeveer 4,5 kg. Door de lichte constructie hoeven wandbevestigingen zelden versterkt te worden."
         },
         "absorptionRating": {
-          "question": "Wat is het verschil tussen αw 1.0 en NRC 0.95?",
-          "answer": "Beide meten absorptie, maar volgens verschillende standaarden. αw (ISO 11654) is de Europese eenmaatswaarde; NRC (ASTM C423) is de Amerikaanse equivalent. αw 1.0 en NRC 0.95 wijzen op dezelfde Klasse A-prestatie."
+          "question": "Wat is het verschil tussen αw {alphaW} en NRC {nrc}?",
+          "answer": "Beide meten absorptie, maar volgens verschillende teststandaarden. αw (ISO 11654) is de Europese eengetalswaarde; NRC (ASTM C423) is het Amerikaanse equivalent. αw {alphaW} en NRC {nrc} wijzen op dezelfde Klasse A-prestatie."
         }
       }
     },
@@ -1271,7 +1284,8 @@
       "title": "Magnetische Verbinding",
       "description": "De modules verbinden moeiteloos via subtiele magneten geïntegreerd in de stof. Monteer en demonteer met gemak — onzichtbaar, subtiel verwerkt, maar sterk genoeg voor zorgeloos gebruik. Geen gereedschap, geen complexiteit, gewoon klikken en gaan.",
       "snapLabel": "Samenklappen",
-      "autoAlign": "Auto-uitlijning"
+      "autoAlign": "Auto-uitlijning",
+      "doneLabel": "Klaar"
     },
     "modular": {
       "tag": "FLEXIBILITEIT",
@@ -1288,7 +1302,8 @@
       "description": "Net als alle Re-Sound-producten is Divide zorgvuldig ontworpen met circulariteit als kern. Gemaakt van gerecycleerde textiel en industrieel afval, draagt het bij aan een duurzamere toekomst. Aan het einde van de levensduur geef je het gratis terug voor recycling.",
       "recycledLabel": "Gerecycleerd materiaal",
       "wasteLabel": "Afval naar stortplaats",
-      "recycleLabel": "Recycleerbare cycli"
+      "recycleLabel": "Recycleerbare cycli",
+      "stat1Value": "{pct} %"
     },
     "acoustics": {
       "tag": "PRESTATIES",
@@ -1321,7 +1336,7 @@
       "magnets": "Magneten",
       "magnetsVal": "Neodymium",
       "endOfLife": "Einde levensduur",
-      "endOfLifeVal": "100% recycleerbaar",
+      "endOfLifeVal": "Gratis terugname en recycling",
       "connection": "Verbinding",
       "connectionVal": "Magnetische klik",
       "setupTime": "Installatietijd",
@@ -1375,8 +1390,8 @@
       "tag": "GERECYCLEERDE PET AKOESTISCHE PANELEN",
       "title": "rPET Groove: gegroefde PET akoestische panelen in 12 kleuren",
       "tagline": "Van Flessen naar Stilte",
-      "description": "Transformeer je ruimte met rPET - Groove akoestische panelen. Gemaakt van 100% gerecycleerde plastic flessen, combineren deze elegante gegroefde panelen hedendaags design met uitzonderlijke geluidsabsorptie. Efficiëntie ontmoet elegantie.",
-      "usp1": "100% Gerecycleerd PET",
+      "description": "Transformeer je ruimte met rPET - Groove akoestische panelen. {pct, select, unknown {Gemaakt van gerecycleerde plastic flessen combineren deze} other {Gemaakt van {pct} % gerecycleerde plastic flessen combineren deze}} elegante gegroefde panelen hedendaags design met uitzonderlijke geluidsabsorptie. Efficiëntie ontmoet elegantie.",
+      "usp1": "{pct, select, unknown {Gerecycleerde PET-flessen} other {{pct} % gerecycleerd PET}}",
       "usp2": "Tot NRC 0.90",
       "usp3": "12 Designerkleuren",
       "colorSelector": "Kleur Kiezen",
@@ -1386,7 +1401,7 @@
       "tag": "CIRCULAIR ONTWERP",
       "title": "Design Ontmoet Duurzaamheid",
       "description": "rPET - Groove panelen brengen een eigentijdse touch in elke ruimte terwijl ze geluidsoverlast verminderen. Het zichtbare latdesign creëert visuele diepte en textuur, perfect voor moderne kantoren, vergaderruimtes, lobby's, restaurants en recepties.",
-      "feature1": "Gemaakt van 100% gerecycleerde plastic flessen",
+      "feature1": "{pct, select, unknown {Gemaakt van gerecycleerde plastic flessen} other {Gemaakt van {pct} % gerecycleerde plastic flessen}}",
       "feature2": "CNC-gesneden groefpatronen",
       "feature3": "Lichtgewicht en eenvoudig te hanteren",
       "feature4": "Geschikt voor wanden en plafonds",
@@ -1481,11 +1496,11 @@
     "sustainability": {
       "tag": "DUURZAAMHEID",
       "title": "Werkelijk Circulair",
-      "description": "rPET - Groove panelen belichamen de circulaire economie. Volledig gemaakt van post-consumer gerecycleerd plastic, kunnen ze aan het einde van hun levensduur opnieuw worden gerecycleerd.",
-      "badge1": "100% Gerecycleerd",
+      "description": "rPET - Groove panelen belichamen de circulaire economie. {pct, select, unknown {Gemaakt van post-consumer gerecycleerd plastic} other {Gemaakt van {pct} % post-consumer gerecycleerd plastic}}, kunnen ze aan het einde van hun levensduur opnieuw worden gerecycleerd. We bieden gratis terugname, zodat niets verloren gaat.",
+      "badge1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd}}",
       "badge2": "Volledig Recycleerbaar",
       "badge3": "Gratis Terugname",
-      "badge4": "Gemaakt in België",
+      "badge4": "Gemaakt in Polen",
       "recycledBottlesLabel": "Gerecycleerde flessen per paneel",
       "badge1Desc": "Gemaakt van post-consumer PET-flessen",
       "badge2Desc": "Kan worden gerecycleerd aan het einde van de levensduur",
@@ -1522,7 +1537,7 @@
       "certVOC": "Lage emissies / E1",
       "certVOCValue": "Lage emissie / E1",
       "certRecycled": "Gerecycleerd materiaal",
-      "certRecycledValue": "GRS gecertificeerd",
+      "certRecycledValue": "Post-consumer PET-flessen",
       "applicationsTitle": "Toepassingen",
       "appInstall": "Installatie",
       "appInstallValue": "Wanden & Plafonds",
@@ -1556,18 +1571,19 @@
       "appWalls": "Wandpanelen",
       "appCeilings": "Plafondpanelen",
       "appEnvironment": "Omgeving",
-      "matRecycledPET": "100% Gerecycleerd PET",
+      "matRecycledPET": "Gerecycleerd PET-vilt",
       "matDensity": "Dichtheid",
       "colorsLabel": "Kleuren",
       "colorsVal": "12 standaardkleuren",
       "customColors": "Aangepaste kleuren",
       "customColorsVal": "Beschikbaar (MOQ van toepassing)",
       "certEPD": "EPD beschikbaar",
-      "certGRS": "GRS gecertificeerd",
+      "certGRS": "Post-consumer PET-flessen",
       "appIdealFor": "Ideaal voor",
       "appIdealVal": "Kantoren, Vergaderzalen, Lobby's",
       "appAlso": "Ook geschikt",
-      "appAlsoVal": "Restaurants, Hotels, Scholen"
+      "appAlsoVal": "Restaurants, Hotels, Scholen",
+      "nrcByThickness": "NRC (per dikte)"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1592,7 +1608,7 @@
       "colorChart": "Kleurenkaart"
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Gerecycleerd"
+      "freeNote": "Gratis stalen beschikbaar • Gemaakt in Polen • {pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}"
     },
     "faq": {
       "questions": {
@@ -1602,7 +1618,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Alle rPET-panelen zijn beoordeeld op B-s1,d0 volgens EN 13501-1 — de hoogste praktische klasse voor een interieurdecoratief materiaal, op A-klasse na."
+          "answer": "Volgens EN 13501-1 is rPET Groove geclassificeerd als {groove}. Het brandcertificaat vind je in het downloadblok op deze pagina; de andere rPET-modellen vermelden hun eigen klasse op hun eigen pagina."
         },
         "processability": {
           "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
@@ -1642,8 +1658,8 @@
       "tag": "GERECYCLEERDE PET AKOESTISCHE PANELEN",
       "title": "rPET Panel: het gerecycleerde PET akoestische paneel dat u bewerkt als MDF",
       "tagline": "Duurzame Stilte, Eindeloze Mogelijkheden",
-      "description": "Transformeer elke ruimte met rPET - Panel akoestische panelen. {pct, select, unknown {Gemaakt van gerecycleerde PET-flessen leveren deze} other {Gemaakt van {pct}% gerecycleerde PET-flessen leveren deze}} lichtgewicht maar krachtige geluidsabsorbers maximale akoestische prestaties met minimale milieu-impact.",
-      "usp1": "100% Recycleerbaar PET",
+      "description": "Transformeer elke ruimte met rPET - Panel akoestische panelen. {pct, select, unknown {Gemaakt van gerecycleerde PET-flessen leveren deze} other {Gemaakt van {pct} % gerecycleerde PET-flessen leveren deze}} lichtgewicht maar krachtige geluidsabsorbers maximale akoestische prestaties met minimale milieu-impact.",
+      "usp1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}",
       "usp2": "αw tot 1,00",
       "usp3": "Slechts 3-4 kg/m²",
       "colorSelector": "Kleur Kiezen",
@@ -1663,8 +1679,8 @@
       "reason5Title": "Meer Opties?",
       "reason5": "Combineer met rPET Groove voor een volledig designsysteem",
       "description": "rPET - Panel transformeert gerecycleerde PET-flessen in hoogperformante akoestische panelen. Elk paneel houdt plastic afval weg van stortplaatsen terwijl het gezondere, stillere omgevingen creëert. Het is het geluidsabsorberende alternatief voor MDF — maar een fractie van het gewicht.",
-      "feature1": "{pct, select, unknown {Gemaakt van gerecycleerde PET-flessen} other {Gemaakt van {pct}% gerecycleerde PET-flessen}}",
-      "feature2": "100% recycleerbaar aan einde levensduur",
+      "feature1": "{pct, select, unknown {Gemaakt van gerecycleerde PET-flessen} other {Gemaakt van {pct} % gerecycleerde PET-flessen}}",
+      "feature2": "Volledig recycleerbaar aan het einde van de levensduur",
       "feature3": "Lichtgewicht: slechts 3-4 kg/m²",
       "feature4": "Vrij van chemische bindmiddelen"
     },
@@ -1704,21 +1720,21 @@
       "fiberLabel": "Gecomprimeerde PET-vezels",
       "fiberSublabel": "Geluidsenergie omgezet in warmte",
       "panelThickness": "Paneldikte",
-      "soundAbsorbed": "Geluid Geabsorbeerd",
       "testStandard": "Testnorm",
-      "testConfig": "Testconfiguratie: 24mm paneel op 50mm frame met polyesterwol isolatie bereikt αw 0,95",
-      "certNote": "Onafhankelijk getest en gecertificeerd volgens ISO 11654"
+      "testConfig": "Testconfiguratie: 24 mm paneel op een 50 mm frame met polyesterwol-isolatie",
+      "certNote": "Onafhankelijk getest en gecertificeerd volgens ISO 11654",
+      "fireClassLabel": "Brandklasse (EN 13501-1)"
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
       "title": "Akoestisch Comfort, Milieurespect",
-      "cert1": "{pct, select, unknown {Gerecycleerd PET} other {{pct}% gerecycleerde inhoud}}",
-      "cert2": "100% Recycleerbaar",
+      "cert1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd materiaal}}",
+      "cert2": "Volledig recycleerbaar",
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Klasse A+ Emissies",
       "badge1Desc": "Gemaakt van post-consumer PET-flessen",
       "badge2Desc": "Volledige materiaalherstel aan einde levensduur",
-      "description": "rPET - Panel belichaamt de circulaire economie. {pct, select, unknown {Elk paneel is gemaakt van gerecycleerde PET-flessen} other {Elk paneel bevat {pct}% gerecycleerde PET-flessen}} en aan het einde van zijn levensduur kan het volledige paneel opnieuw worden gerecycleerd. Geen afval, geen compromissen.",
+      "description": "rPET - Panel belichaamt de circulaire economie. {pct, select, unknown {Elk paneel is gemaakt van gerecycleerde PET-flessen} other {Elk paneel bevat {pct} % gerecycleerde PET-flessen}}, en aan het einde van zijn levensduur kan het volledige paneel opnieuw worden gerecycleerd. Geen afval, geen compromissen.",
       "cert3Desc": "Klasse 1 gecertificeerd voor menselijke veiligheid",
       "cert4Desc": "Geen VOS of formaldehyde (ISO 16000)"
     },
@@ -1821,7 +1837,7 @@
       "oekoTexCert": "OEKO-TEX® Certificaat"
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Recycleerbaar"
+      "freeNote": "Gratis stalen beschikbaar • Gemaakt in Polen • {pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}"
     },
     "faq": {
       "questions": {
@@ -1831,7 +1847,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Alle rPET-panelen zijn beoordeeld op B-s1,d0 volgens EN 13501-1 — de hoogste praktische klasse voor een interieurdecoratief materiaal, op A-klasse na."
+          "answer": "Volgens EN 13501-1 is rPET Panel geclassificeerd als {panel}. Het brandcertificaat vind je in het downloadblok op deze pagina; de andere rPET-modellen vermelden hun eigen klasse op hun eigen pagina."
         },
         "processability": {
           "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
@@ -1935,10 +1951,10 @@
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
       "badge2": "Gerecycleerd Vilt",
       "badge2Desc": "Akoestische backing van gerecyclede materialen",
-      "badge3": "Europese Productie",
-      "badge3Desc": "Verminderde transportemissies",
-      "badge4": "EPD Beschikbaar",
-      "badge4Desc": "Volledige milieuproductverklaring",
+      "badge3": "Gemaakt in Polen",
+      "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
+      "badge4": "Gratis terugname",
+      "badge4Desc": "Panelen komen aan het einde van hun levensduur gratis naar ons terug",
       "description": "Elk rWood - Groove paneel is ontworpen met duurzaamheid als kern. Ons FSC®-gecertificeerd hout komt uit verantwoord beheerde bossen.",
       "description2": "Elk rWood - Groove paneel is ontworpen met duurzaamheid als kern. Onze FSC®-certificering garandeert dat het hout afkomstig is uit verantwoord beheerde bossen die milieu-, sociale en economische voordelen bieden."
     },
@@ -2038,7 +2054,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+          "answer": "Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1 — de kern die we voorschrijven voor vluchtwegen en openbare gebouwen. Het brandcertificaat vind je in het downloadblok op deze pagina."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
@@ -2074,8 +2090,8 @@
       "tagline": "Precisieperforaties, Maximale Absorptie",
       "description": "Hoogperformante geboorde akoestische panelen die de schoonheid van naturel hout combineren met uitzonderlijke geluidsabsorptie. Een brandvertragend MDF-kern en overkante kanten bieden de hoogste niveaus van brandveiligheid en akoestische controle.",
       "usp1": "Ronde Perforaties",
-      "usp2": "Brandklasse B2-s1, d0",
-      "usp3": "Tot Klasse B",
+      "usp2": "Brandklasse {fireClass}",
+      "usp3": "αw {alphaW} per patroon",
       "description2": "Hoogperformante geboorde akoestische panelen die de schoonheid van naturel hout combineren met uitzonderlijke geluidsabsorptie. Een brandvertragend MDF-kern en overkante kanten bieden de hoogste niveaus van brandveiligheid en akoestische controle voor veeleisende openbare ruimtes."
     },
     "patterns": {
@@ -2112,8 +2128,8 @@
       "title": "Ontworpen voor Geluid",
       "benefit1Title": "Breedband Absorptie",
       "benefit1": "Effectief over het volledige frequentiespectrum",
-      "benefit2Title": "Hoogste Brandveiligheid",
-      "benefit2": "B-s1, d0 — de hoogst haalbare klasse voor houten panelen",
+      "benefit2Title": "Brandveiligheid",
+      "benefit2": "Brandgedrag {fireClass} met de brandvertragende MDF-kern (EN 13501-1)",
       "benefit3Title": "Afstelbare Prestaties",
       "benefit3": "Vier perforatiepatronen voor op maat gemaakte akoestische oplossingen",
       "description": "Precies geboorde perforaties laten geluidsgolven in het paneel stromen en naar de absorptielaag eronder.",
@@ -2131,7 +2147,8 @@
       "description3": "Precies geboorde perforaties laten geluidsgolven het paneel binnenstromen en naar de holte erachter gaan. Gecombineerd met minerale wol isolatie levert rWood - Perf uitstekende breedband absorptie.",
       "diagramTitle": "Dwarsdoorsnede",
       "fireRating": "Brandklasse",
-      "noiseReduction": "Geluidsreductie"
+      "noiseReduction": "Geluidsreductie",
+      "ratingPerPattern": "per patroon"
     },
     "installation": {
       "tag": "VERBORGEN MONTAGE",
@@ -2151,15 +2168,15 @@
       "tag": "DUURZAAMHEID",
       "title": "Gebouwd om te Duren, Verantwoord Gebouwd",
       "badge1": "FSC® Gecertificeerd",
-      "badge2": "17% Gerecycleerde Inhoud",
-      "badge3": "Europese Productie",
+      "badge2": "{pct} % gerecycleerd materiaal",
+      "badge3": "Gemaakt in Polen",
       "badge4": "Ultra Lage Emissies",
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
       "badge2Desc": "Post-consumer gerecycleerd materiaal in de kern",
-      "badge3Desc": "Hernieuwbare energiebronnen, korte ketens",
-      "badge4Desc": "Geen toegevoegd formaldehyde, EPD beschikbaar",
+      "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen) — korte toeleveringsketens",
+      "badge4Desc": "Geen toegevoegd formaldehyde",
       "description": "rWood - Perf combineert duurzame, natuurlijke materialen met een verantwoorde productiebenadering.",
-      "description3": "rWood - Perf combineert duurzame, natuurlijke materialen met verantwoorde inkoop. De vezelgipsachtige kern is inherent laag-emitterend — geen chemische impregnering is nodig voor brandprestaties."
+      "description3": "rWood - Perf combineert duurzame, natuurlijke materialen met verantwoorde inkoop: een brandvertragende MDF-kern zonder toegevoegd formaldehyde en fineer uit duurzaam beheerde bossen."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2198,7 +2215,7 @@
     "overview": {
       "tag": "BEWEZEN PRESTATIES",
       "description": "rWood - Perf panelen zijn een van de meest effectieve akoestische wandoplossingen. Precies geboorde perforaties laten geluid door het decoratieve houtoppervlak.",
-      "feature1": "Brandvertragend MDF-kern (B2-s1, d0)",
+      "feature1": "Brandvertragende MDF-kern ({fireClass})",
       "feature2": "Overkante kanten voor naadloze verbindingen",
       "feature3": "Lichte of donkere kern voor patroonkeuze",
       "feature4": "Aangepaste formaten tot 3050 × 1220 mm",
@@ -2219,7 +2236,7 @@
       "item4Desc": "30–50 mm isolatie voor optimale prestaties"
     },
     "cta": {
-      "note": "Gratis stalen beschikbaar • FSC® gecertificeerd • A2 brandklasse beschikbaar"
+      "note": "Gratis stalen beschikbaar • FSC® gecertificeerd"
     },
     "faq": {
       "questions": {
@@ -2229,7 +2246,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+          "answer": "Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1 — de kern die we voorschrijven voor vluchtwegen en openbare gebouwen. Het brandcertificaat vind je in het downloadblok op deze pagina."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
@@ -2266,7 +2283,7 @@
       "description": "Ervaar de schoonheid van naturel hout gecombineerd met de akoestische prestaties van geavanceerde micro-perforatietechnologie. Vrijwel onzichtbare gaatjes leveren Klasse A geluidsabsorptie terwijl het pure, homogene uiterlijk van premium houtfineer behouden blijft.",
       "usp1": "Onzichtbare Perforaties",
       "usp2": "Klasse A Absorptie",
-      "usp3": "Brandklasse B-s1, d0",
+      "usp3": "Brandklasse {fireClass}",
       "colorSelector": "Houtfineer Kiezen"
     },
     "perforation": {
@@ -2295,8 +2312,8 @@
       "benefit1": "Micro-gaatjes en geluidskamers werken samen voor superieure absorptie",
       "benefit2Title": "Ruimtebesparend Ontwerp",
       "benefit2": "Minder afhankelijk van luchtspouwen — dunnere wand- en plafondopbouw",
-      "benefit3Title": "Hoogste Brandveiligheid",
-      "benefit3": "Brandklasse B-s1, d0 — de hoogst haalbare voor micro-geperforeerd hout",
+      "benefit3Title": "Brandveiligheid",
+      "benefit3": "Brandgedrag {fireClass} met de brandvertragende MDF-kern (EN 13501-1)",
       "description": "De combinatie van micro-perforaties aan het oppervlak en duizenden grotere geluidstoetredingskanalen zorgt voor uitzonderlijke breedband absorptie.",
       "layer1Name": "A-kwaliteit fineer met precies geboorde gaten",
       "layer2Name": "Brandvertragend MDF-kern",
@@ -2342,11 +2359,11 @@
       "title": "Verantwoord Gemaakt",
       "badge1": "FSC® Gecertificeerd Fineer",
       "badge2": "Naturel Kernmateriaal",
-      "badge3": "Europese Productie",
+      "badge3": "Gemaakt in Polen",
       "badge4": "Lage VOS-emissies",
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
       "badge2Desc": "Vezelbord kern — een houtig, brandvertragend kern",
-      "badge3Desc": "Korte aanvoerketens die transportemissies laag houden",
+      "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
       "badge4Desc": "E1-klasse voor gezondere binnenlucht",
       "description": "rWood - Micro panelen zijn gebouwd met duurzaamheid als kernprincipe. FSC®-gecertificeerd hout, lage-emissie afwerkingen en verantwoord geproduceerde materialen.",
       "badge5": "Groene Energie"
@@ -2396,7 +2413,7 @@
       "description1": "rWood - Micro panelen combineren geavanceerde micro-perforatietechnologie met premium houtfineers. Op normale kijkafstand zijn de perforaties volledig onzichtbaar — wat je ziet is een prachtig, homogeen houtoppervlak. Wat je hoort is uitzonderlijk akoestisch comfort.",
       "description2": "Het geheim schuilt in de combinatie van twee akoestische mechanismen: duizenden precies gemaakte micro-gaatjes aan het oppervlak en geluidsabsorberende kamers in het kernmateriaal.",
       "feature1": "Perforaties onzichtbaar op normale kijkafstand",
-      "feature2": "Niet-brandbare vezelgipsken",
+      "feature2": "Brandvertragende MDF-kern met geluidskamers",
       "feature3": "Overkante kanten voor naadloze verbindingen",
       "feature4": "Geschikt voor wanden en plafonds",
       "feature5": "Beschikbaar als verlichte panelen"
@@ -2432,7 +2449,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+          "answer": "Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1 — de kern die we voorschrijven voor vluchtwegen en openbare gebouwen. Het brandcertificaat vind je in het downloadblok op deze pagina."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
@@ -2552,13 +2569,13 @@
       "title": "Verantwoord Gemaakt",
       "badge1": "FSC® Gecertificeerd",
       "badge2": "Circulaire Terugname",
-      "badge3": "Europese Productie",
+      "badge3": "Gemaakt in Polen",
       "badge4": "EPD Beschikbaar",
       "badge5": "Lage VOS",
       "badge1Desc": "Al het hout uit verantwoord beheerde bossen",
       "badge2Desc": "Gratis terugname en recycling van panelen aan einde levensduur",
       "description": "Elk rWood - Panel begint met verantwoord geproduceerd hout. Als onderdeel van Re-Sound's engagement voor de circulaire economie maximaliseren we het gebruik van elk stamhout door het als fineer te verwerken — tot 40× meer oppervlak dan massief hout van dezelfde boom.",
-      "badge3Desc": "Korte toeleveringsketens, verminderde transportemissies",
+      "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
       "badge4Desc": "Volledige milieuproductverklaring",
       "badge5Desc": "E1-geclassificeerd, voldoet aan strengste emissienormen",
       "badge6": "Groene Energie",
@@ -2710,7 +2727,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "De standaard brandclassificatie is B-s2,d0 volgens EN 13501-1. De rWood Micro-variant haalt B-s1,d0, geschikt voor de strengste eisen in openbare gebouwen."
+          "answer": "Dat hangt af van de kern. Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1; op een standaard MDF-kern is de classificatie D-s2,d0. Schrijf de FR-kern voor bij vluchtwegen en openbare gebouwen."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
@@ -2740,7 +2757,7 @@
       "description": "De ultieme akoestische oplossing voor gebogen oppervlakken. Gemaakt van gerecycleerd PET-vilt met precisie V-snede groeven, passen deze flexibele panelen naadloos aan kolommen, gebogen wanden en elke architecturale vorm met een minimale straal van 500mm.",
       "usp1": "Min. Straal 500mm",
       "usp2": "Brandvertragend",
-      "usp3": "100% Gerecycleerd PET",
+      "usp3": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}",
       "colorSelector": "Kleur Kiezen",
       "colorPlaceholder": "Kies een kleur",
       "description2": ""
@@ -2785,7 +2802,7 @@
       "feature1Desc": "Vermindert echo en nagalm",
       "feature2Title": "Brandvertragend",
       "feature2Desc": "Ingebouwde brandveiligheid",
-      "feature3Title": "100% Gerecycleerd",
+      "feature3Title": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd}}",
       "feature3Desc": "Gemaakt van gerecycleerde plastic flessen",
       "layer1Label": "Gerecycleerd PET-vilt",
       "layer2Label": "Precisie V-sneden",
@@ -2810,8 +2827,8 @@
     "sustainability": {
       "tag": "DUURZAAMHEID",
       "title": "Van Flessen naar Mooie Ruimtes",
-      "description": "Elk Flex-Groove paneel is gemaakt van 100% gerecycleerde PET plastic flessen, waardoor afvalmaterialen een nieuw leven krijgen.",
-      "badge1": "Gerecycleerd PET",
+      "description": "Elk Flex-Groove paneel is gemaakt van {pct, select, unknown {gerecycleerde plastic PET-flessen} other {{pct} % gerecycleerde plastic PET-flessen}}, waardoor afvalmaterialen een nieuw leven krijgen. Onze circulaire aanpak zorgt ervoor dat deze panelen aan het einde van hun levensduur opnieuw gerecycleerd kunnen worden.",
+      "badge1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}",
       "badge1Desc": "Gemaakt van gerecycleerde plastic flessen",
       "badge2": "Volledig Recycleerbaar",
       "badge2Desc": "Kan worden gerecycleerd aan einde levensduur",
@@ -2819,7 +2836,7 @@
       "badge4": "Lage VOS",
       "badge3Desc": "Korte aanvoerketen vanuit onze Poolse fabriek",
       "badge4Desc": "Veilig voor binnenomgevingen",
-      "description2": "Elk Flex-Groove paneel is gemaakt van 100% gerecycleerde PET plastic flessen, waardoor afvalmaterialen een nieuw leven krijgen. Onze circulaire aanpak zorgt ervoor dat deze panelen aan het einde van hun levensduur opnieuw gerecycleerd kunnen worden."
+      "description2": ""
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2855,7 +2872,7 @@
       "certVOC": "VOS-emissies",
       "certVOCVal": "Lage emissies",
       "certRecycled": "Gerecycleerd materiaal",
-      "certRecycledVal": "Geverifieerd 100%",
+      "certRecycledVal": "100 %",
       "appSurfaces": "Oppervlakken",
       "appSurfacesVal": "Wanden, kolommen, gebogen elementen",
       "appEnvironment": "Omgeving",
@@ -2896,7 +2913,7 @@
       "description2": "Vraag een offerte op maat voor uw project. Ons team helpt u de perfecte kleur te kiezen en uw behoeften te berekenen."
     },
     "cta2": {
-      "freeNote": "Gratis stalen • Gemaakt in Polen • 100% Gerecycleerd"
+      "freeNote": "Gratis stalen beschikbaar • Gemaakt in Polen • {pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}"
     },
     "faq": {
       "questions": {
@@ -2906,7 +2923,7 @@
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Alle rPET-panelen zijn beoordeeld op B-s1,d0 volgens EN 13501-1 — de hoogste praktische klasse voor een interieurdecoratief materiaal, op A-klasse na."
+          "answer": "Volgens EN 13501-1 is rPET Flex Groove geclassificeerd als {flex}. Het brandcertificaat vind je in het downloadblok op deze pagina; de andere rPET-modellen vermelden hun eigen klasse op hun eigen pagina."
         },
         "processability": {
           "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
@@ -2999,7 +3016,7 @@
       "rwoodVsRpetVsTextile": {
         "category": "products",
         "question": "Wat is het verschil tussen rWood, rPET en de textielreeks?",
-        "answer": "Dit zijn drie verschillende materiaalfamilies voor verschillende ontwerpintenties. De textielreeks (Interior, Solid, Divide) is gemaakt van 100% gerecycleerde textielvezels met een stoffen overtrek — zacht, warm, beschikbaar in meerdere kleuren, gemaakt in België. De rPET-reeks (Panel, Groove, Flex Groove) is gemaakt van 100% gerecycleerde PET-flessen, OEKO-TEX® gecertificeerd, en kan zoals MDF verwerkt worden (zagen, frezen, schilderen); ideaal voor opvallende kleuren en bespoke installaties. De rWood-reeks (Groove, Perf, Micro, Panel) combineert FSC-gecertificeerd houtfineer met een gerecycleerde vezelkern en geeft een architecturale topafwerking in 8+ houtsoorten; geproduceerd in Europa."
+        "answer": "Dit zijn drie verschillende materiaalfamilies voor verschillende ontwerpintenties. De textielreeks (Interior, Solid, Divide) is gemaakt van gerecycleerde textielvezels (minstens 80 % gerecycleerd materiaal) met een stoffen hoes — zacht, warm, beschikbaar in meerdere kleuren, geproduceerd in onze eigen fabriek in Beveren-Waas (België). De rPET-reeks (Panel, Groove, Flex Groove) is gemaakt van gerecycleerde PET-flessen (rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET), OEKO-TEX® gecertificeerd, en kan zoals MDF verwerkt worden (zagen, frezen, schilderen); ideaal voor opvallende kleuren en maatwerkinstallaties. De rWood-reeks (Groove, Perf, Micro, Panel) combineert FSC-gecertificeerd houtfineer met een kern van gerecycleerd vilt en geeft een architecturale topafwerking in 8+ houtsoorten; geproduceerd in onze eigen fabriek in Częstochowa (Polen)."
       },
       "fireSafety": {
         "category": "products",
@@ -3014,7 +3031,7 @@
       "whatIsCircular": {
         "category": "sustainability",
         "question": "Wat betekent \"circulair\" bij Re-Sound?",
-        "answer": "Circulair betekent bij Re-Sound drie dingen, ingebakken vanaf het ontwerp. Eén — inputs: we gebruiken gerecycleerde materialen waar de akoestische prestaties dat toelaten — 100% gerecycleerde textielvezels in Interior/Solid/Divide, 100% gerecycleerde PET in de rPET-reeks en een gerecycleerde vezelkern onder het FSC-gecertificeerde fineer van de rWood-reeks. Twee — einde levensduur: elk Re-Sound paneel kan via onze gratis terugnameservice naar ons terug, en de materialen worden verwerkt tot nieuwe panelen of nieuwe grondstof in plaats van naar het stort te gaan. Drie — ontwerp: verbindingen (magneten, mechanisch, haaksystemen) zijn omkeerbaar zodat panelen zonder vernieling kunnen worden verwijderd, wat herconfiguratie tijdens de levensduur van het gebouw mogelijk maakt."
+        "answer": "Circulair betekent bij Re-Sound drie dingen, ingebakken vanaf het ontwerp. Eén — grondstoffen: we gebruiken gerecycleerde materialen waar de akoestische prestaties dat toelaten — gerecycleerde textielvezels (minstens 80 % gerecycleerd materiaal) in het Interior/Solid/Divide-gamma, gerecycleerde PET-flessen in de rPET-reeks (rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET) en een kern van gerecycleerd vilt onder het FSC-gecertificeerde fineer van de rWood-reeks. Twee — einde levensduur: elk Re-Sound paneel kan via onze gratis terugnameservice naar ons terug, en de materialen worden verwerkt tot nieuwe panelen of nieuwe grondstof in plaats van op de stortplaats te belanden. Drie — ontwerp: verbindingen (magneten, mechanisch, haaksystemen) zijn omkeerbaar zodat panelen zonder beschadiging kunnen worden verwijderd, wat herconfiguratie tijdens de levensduur van het gebouw mogelijk maakt."
       },
       "takeBack": {
         "category": "sustainability",
@@ -3024,7 +3041,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Wat is het gerecycleerde gehalte per productreeks?",
-        "answer": "Het gerecycleerde gehalte verschilt per productfamilie. De textielreeks (Interior, Solid, Divide) is gemaakt van gerecycleerde textielvezels met een hoog gerecycleerd gehalte. De rPET-reeks gebruikt 100% post-consumer gerecycleerde PET (het equivalent aantal flessen varieert per paneelformaat — ongeveer 60 flessen per standaard Groove-paneel). De rWood-reeks gebruikt een kern met hoog gerecycleerd vezelgehalte met FSC-gecertificeerd fineer aan de zichtzijde. Gedetailleerde materiaalverdelingen en EPD-documentatie zijn beschikbaar op elke productpagina en op aanvraag."
+        "answer": "Het gerecycleerde gehalte verschilt per productfamilie. De textielreeks (Interior, Solid, Divide) is gemaakt van gerecycleerde textielvezels met een hoog gerecycleerd gehalte. De rPET-reeks gebruikt post-consumer gerecycleerd PET; rPET Panel en rPET Flex Groove zijn volledig gemaakt van gerecycleerd PET (het werkelijke aantal flesequivalenten varieert per paneelformaat — ongeveer 60 flessen per standaard Groove-paneel). De rWood-reeks gebruikt een kern met hoog gerecycleerd vezelgehalte met FSC-gecertificeerd fineer aan de zichtzijde. Gedetailleerde materiaalverdelingen en EPD-documentatie zijn beschikbaar op elke productpagina en op aanvraag."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3112,7 +3129,9 @@
       "segmentPower": "Vermogen per segment",
       "ceilingHeight": "Minimale plafondhoogte",
       "sideClearance": "Vrije ruimte zijkant",
-      "frontClearance": "Vrije ruimte voorkant"
+      "frontClearance": "Vrije ruimte voorkant",
+      "madeIn": "Geproduceerd in",
+      "measurementPending": "ISO 23351-1-meting volgt nog"
     },
     "downloads": {
       "tag": "DOCUMENTATIE",
@@ -3198,7 +3217,7 @@
       },
       "safety": {
         "title": "Getest volgens norm",
-        "desc": "CE-gemarkeerd, brandklasse EN 13501-1 B-s2,d0, elektrische installatie volgens IEC 60598. Documentatie wordt meegeleverd."
+        "desc": "CE-gemarkeerd, elektrische installatie gecertificeerd volgens IEC 60598. Documentatie wordt meegeleverd."
       }
     },
     "specs": {
@@ -3369,7 +3388,7 @@
       },
       "safety": {
         "title": "Getest volgens norm",
-        "desc": "CE-gemarkeerd, brandklasse EN 13501-1 B-s2,d0, elektriciteit volgens IEC 60598. Standaard bij elke levering."
+        "desc": "CE-gemarkeerd, elektrische installatie gecertificeerd volgens IEC 60598. Standaard bij elke levering."
       }
     },
     "specs": {
@@ -3381,7 +3400,6 @@
       "doorWidthValue": "1000 mm vrij",
       "weightValue": "420 kg",
       "acousticsTitle": "Akoestische prestaties",
-      "noiseReductionValue": "26 dB(A)",
       "absorberValue": "Gerecycleerd-PET akoestisch vilt, 24 mm",
       "doorSealValue": "Magnetisch, vierzijdige aandrukafdichting",
       "ventilationTitle": "Ventilatie",
@@ -3532,7 +3550,7 @@
       },
       "safety": {
         "title": "Getest volgens norm",
-        "desc": "CE-gemarkeerd, brandklasse EN 13501-1 B-s2,d0, elektriciteit volgens IEC 60598. Documentatie wordt meegeleverd."
+        "desc": "CE-gemarkeerd, elektrische installatie gecertificeerd volgens IEC 60598. Documentatie wordt meegeleverd."
       }
     },
     "specs": {
@@ -3871,7 +3889,11 @@
     },
     "ownFactories": "Uit eigen productie",
     "ownFactoriesShort": "Eigen fabrieken",
-    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)",
+    "plant": {
+      "BE": "Beveren-Waas, België",
+      "PL": "Częstochowa, Polen"
+    }
   },
   "productData": {
     "category": {
@@ -3970,7 +3992,11 @@
       "perfNano": "Nano (⌀ 0.5mm)",
       "perfMicroS": "Micro S (⌀ 1.0mm)",
       "perfMicroM": "Micro M (⌀ 1.5mm)",
-      "perfMicroL": "Micro L (⌀ 2.0mm)"
+      "perfMicroL": "Micro L (⌀ 2.0mm)",
+      "openArea24": "24% open oppervlak",
+      "openArea18": "18% open oppervlak",
+      "openArea12": "12% open oppervlak",
+      "openArea5": "5% open oppervlak"
     },
     "solo-eco": {
       "mounting": "Vrijstaand; installatie door Re-Sound op aanvraag",
@@ -4015,7 +4041,7 @@
       "isoClassNote": "Klassegrenzen ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "WAAROM RE-SOUND",
       "whyTitle": "Waarom Re-Sound",
-      "whyOwnFactoriesTitle": "Onze eigen fabrieken",
+      "whyOwnFactoriesTitle": "Onze eigen fabriek in Częstochowa",
       "whyTakeBackTitle": "Gratis terugnameprogramma",
       "whyTakeBackDesc": "Aan het einde van de levensduur halen wij de panelen op en verwerken we ze opnieuw tot grondstof — gratis binnen België, tegen logistieke kosten elders in de EU.",
       "whyCertsTitle": "Gecertificeerd waar het telt",
@@ -4040,7 +4066,7 @@
     },
     "rpet": {
       "title": "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound",
-      "description": "PET akoestische panelen van gerecycleerde flessen: rPET Panel, Groove en Flex Groove. 12–16 kleuren, B-s1,d0, OEKO-TEX®, uit onze eigen fabriek in Polen.",
+      "description": "PET akoestische panelen van gerecycleerde flessen: rPET Panel, Groove, Flex Groove. 12–16 kleuren, OEKO-TEX®, B-s1,d0 of B-s2,d0 per model. Gemaakt in onze fabriek in Polen.",
       "h1": "PET akoestische panelen: rPET Panel, Groove en Flex Groove",
       "breadcrumb": "rPET",
       "intro": "PET akoestische panelen zetten post-consumer flessen om in een dicht polyestervilt dat geluid absorbeert, zich net als MDF met een CNC-frees laat bewerken en verkrijgbaar is in een kleurenpalet dat architecten écht gebruiken. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen); het rPET-gamma wordt gemaakt in Częstochowa. Het gamma telt drie modellen. rPET Panel is de vlakke plaat: zagen, frezen, boren en schilderen voor wanden, plafonds en meubilair. rPET Groove voegt een gegroefd oppervlak toe in 12 kleuren en drie diktes, voor een hogere absorptie op wanden en plafonds. rPET Flex Groove behoudt de gegroefde look, maar buigt rond kolommen en gebogen wanden tot een straal van 500 mm. Alle drie zijn OEKO-TEX® Standard 100-gecertificeerd, halen B-s1,d0 of B-s2,d0 volgens EN 13501-1 en kunnen aan het einde van hun levensduur worden teruggenomen voor recyclage. Vergelijk in de tabel hieronder de PET akoestische panelen op formaat, absorptie en levertermijn en open daarna de modelpagina voor afwerkingen en downloads.",
@@ -4056,7 +4082,7 @@
       "faq": {
         "q1": {
           "question": "Zijn PET akoestische panelen echt gemaakt van gerecycleerde flessen?",
-          "answer": "Ja. Het vilt wordt gemaakt van vezels uit gerecycleerde PET-flessen; rPET Groove en rPET Flex Groove bestaan uit 100 % gerecycleerd PET. Elk model is OEKO-TEX® Standard 100-gecertificeerd, waardoor het materiaal geschikt is voor scholen en de zorgsector."
+          "answer": "Ja. Het vilt wordt gemaakt van vezels uit post-consumer PET-flessen: rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET, en rPET Groove wordt gemaakt van hetzelfde gerecycleerde PET-vilt. Elk model is OEKO-TEX® Standard 100-gecertificeerd, waardoor het materiaal geschikt is voor scholen en de zorgsector."
         },
         "q2": {
           "question": "Hoeveel geluid absorberen PET akoestische panelen?",
@@ -4102,7 +4128,7 @@
         },
         "q3": {
           "question": "Welke brandklasse halen houten akoestische panelen?",
-          "answer": "Met de brandvertragende kern zijn de rWood-modellen geclassificeerd als B-s1,d0 volgens EN 13501-1; op een standaard MDF-kern is de classificatie D-s2. Schrijf de FR-kern voor bij vluchtwegen en openbare gebouwen."
+          "answer": "Met de brandvertragende (FR) MDF-kern zijn de rWood-modellen geclassificeerd als B-s1,d0 volgens EN 13501-1; op een standaard MDF-kern is de classificatie D-s2,d0. Schrijf de FR-kern voor bij vluchtwegen en openbare gebouwen."
         },
         "q4": {
           "question": "Kunnen microgeperforeerde houten panelen van achteren worden verlicht?",
@@ -4115,11 +4141,11 @@
       }
     },
     "booths": {
-      "title": "Akoestische belcabines & telefooncellen voor kantoor | Re-Sound",
+      "title": "Fabrikant van belcabines voor kantoor: Solo, Duo, Modular XL | Re-Sound",
       "description": "Belcabines en vergaderpods: Solo ECO en Solo Flex (1 pers.), Duo (2), Modular XL (6–10). ISO 23351-1 spraakreductie op Flex en XL, 230 V.",
-      "h1": "Belcabines en vergaderpods voor kantoor, uit eigen productie",
+      "h1": "Belcabines en vergaderpods voor kantoor, rechtstreeks van de fabrikant",
       "breadcrumb": "Cabines",
-      "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoorvloer; een vergaderpod doet hetzelfde voor een team. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen). Het cabinegamma telt vier modellen. Solo ECO is het instapmodel: een cabine voor één persoon met een statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact), ventilatie tot 4 m³/min en een gesloten of glazen achterwand. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische telefooncel voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Solo Flex, Duo en Modular XL hebben 5 jaar structurele garantie en Solo ECO 5 jaar garantie op wisselstukken; alle modellen worden in de hele EU geleverd, met installatie op aanvraag. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
+      "intro": "Een belcabine geeft één persoon een rustige, geventileerde plek voor gesprekken en videovergaderingen midden in een open kantoor; een vergaderpod doet hetzelfde voor een team. De cabines van Re-Sound worden geproduceerd in onze eigen fabriek in Częstochowa (Polen), op aanvraag geleverd en geïnstalleerd door ons eigen team, met 5 jaar structurele garantie (Solo ECO: 5 jaar garantie op wisselstukken). Het cabinegamma telt vier modellen. Solo ECO is het instapmodel: een cabine voor één persoon met een statafel, een landspecifiek stopcontact met USB-A en USB-C (in Denemarken enkel het stopcontact), ventilatie tot 4 m³/min en een gesloten of glazen achterwand. Solo Flex is de eenpersoonsbelcabine: een vloeroppervlak van 1 m², een zit-stabureau, 230 V en USB-C-voeding, stille EC-ventilatoren en een spraakniveaureductie van 24 dB(A), gemeten volgens ISO 23351-1. Duo is de akoestische belcabine voor twee personen, in twee configuraties — Flex voor een gesprek met twee zitplaatsen, Work voor één persoon met een bureau over de volle breedte. Modular XL is de akoestische vergaderpod voor zes tot tien personen: de basisunit wordt uitgebreid in segmenten van 90 cm en haalt een spraakniveaureductie van 25.9 dB(A). Solo Flex, Duo en Modular XL krijgen 5 jaar structurele garantie en Solo ECO 5 jaar garantie op wisselstukken; alle vier worden in de hele EU geleverd. Vergelijk hieronder de belcabines voor kantoor en open daarna een modelpagina voor opties en downloads.",
       "whyCertsDesc": "5 jaar garantie op elke cabine (structureel voor Solo Flex, Duo en Modular XL; op wisselstukken voor Solo ECO); spraakniveaureductie opgegeven volgens ISO 23351-1 waar gemeten.",
       "applications": {
         "app1": "Open kantoren en coworkingvloeren",
@@ -4150,7 +4176,8 @@
           "question": "Wat zijn de levertermijn en de garantie van een belcabine?",
           "answer": "Solo ECO vraagt 4 weken productie en heeft 5 jaar garantie op wisselstukken. Solo Flex en Duo worden 4–6 weken na bestelling verzonden, Modular XL 6–8 weken voor de basisunit; maatwerkstoffen vragen 2–3 weken extra. De structurele garantie bedraagt 5 jaar, de elektronica 2 jaar, met levering en installatie in de hele EU beschikbaar."
         }
-      }
+      },
+      "whyOwnFactoriesDesc": "Alle vier de cabines worden gebouwd in onze eigen fabriek in Częstochowa (Polen) en op aanvraag geleverd en geïnstalleerd door ons eigen team."
     }
   },
   "sampleKit": {
@@ -4222,7 +4249,7 @@
     "title": "Belcabine kantoor: prijzen en ISO-klassen 2026 | Re-Sound",
     "description": "Prijzen belcabines excl. btw: Solo ECO vanaf {soloEco}, Solo Flex vanaf {soloFlex}, Modular XL vanaf {modularXl}. ISO 23351-1, installatie, levertijd, garantie.",
     "h1": "Belcabines voor kantoor: prijzen, klassen en keuze",
-    "intro": "Een Re-Sound belcabine kost vanaf {soloEco} excl. btw zonder installatie (Solo ECO), Solo Flex vanaf {soloFlex} en een Modular XL vergaderpod vanaf {modularXl}. Hieronder vindt u elke prijs die wij publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken. Re-Sound is een merk van Stretch Group. We produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).",
+    "intro": "Een Re-Sound belcabine kost vanaf {soloEco} excl. btw zonder installatie (Solo ECO), Solo Flex vanaf {soloFlex} en een Modular XL vergaderpod vanaf {modularXl}. Hieronder vind je elke prijs die we publiceren, wat inbegrepen is, de spraakniveauklassen volgens ISO 23351-1 eerlijk weergegeven, en hoe installatie, testen en garantie werken.",
     "breadcrumb": "Prijzen belcabines",
     "priceTag": "Prijzen 2026",
     "priceTitle": "Prijzen per model (excl. btw)",
@@ -4293,6 +4320,25 @@
     "endOfLifeTag": "Circulair",
     "warrantyByModel": {
       "solo-eco": "5 jaar garantie op wisselstukken"
+    },
+    "manufactureLine": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen); levering en installatie door ons eigen team, apart geoffreerd.",
+    "pricelist": {
+      "tag": "Prijslijst",
+      "title": "Download de volledige prijslijst (pdf)",
+      "text": "Laat je gegevens achter en de prijslijst van de belcabines (pdf) wordt meteen gedownload.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "company": "Bedrijf",
+      "email": "E-mail",
+      "honeypot": "Laat dit veld leeg",
+      "consent": "Ik ga ermee akkoord dat Re-Sound contact met mij mag opnemen over deze aanvraag. <link>Privacybeleid</link>",
+      "submit": "Download de prijslijst",
+      "sending": "Je download wordt voorbereid…",
+      "successTitle": "Je download is gestart",
+      "successText": "Is de pdf niet geopend? Gebruik dan de link hieronder.",
+      "successLink": "Open de prijslijst (pdf)",
+      "errorInvalid": "Controleer je gegevens en probeer het opnieuw.",
+      "error": "Er is iets misgegaan. Probeer het zo meteen opnieuw."
     }
   },
   "order": {
@@ -4516,7 +4562,8 @@
       "sparePartsLabel": "Garantie op wisselstukken",
       "sparePartsValue": "5 jaar",
       "deliveryValue": "4 weken productie, af fabriek Częstochowa",
-      "weightLabel": "Gewicht (netto / bruto)"
+      "weightLabel": "Gewicht (netto / bruto)",
+      "acousticsTitle": "Akoestische prestaties"
     },
     "addons": {
       "tag": "OPTIONEEL",
@@ -4561,6 +4608,267 @@
     },
     "cta": {
       "deliveryNote": "Af fabriek, 4 weken productie · Levering en installatie op aanvraag geoffreerd · 5 jaar garantie op wisselstukken"
+    }
+  },
+  "manufacturing": {
+    "navLabel": "Productie",
+    "breadcrumb": "Productie",
+    "title": "Fabrikant van akoestische panelen en belcabines | Re-Sound",
+    "description": "Re-Sound maakt zijn akoestische panelen en belcabines in twee eigen fabrieken: textiel in Beveren-Waas (BE), rWood, rPET en cabines in Częstochowa (PL).",
+    "h1": "Fabrikant van akoestische panelen en belcabines: onze twee fabrieken",
+    "intro": "Re-Sound ontwerpt en bouwt zijn eigen producten in plaats van die van iemand anders door te verkopen. Elk akoestisch paneel en elke belcabine op deze site wordt gemaakt in een van onze twee eigen fabrieken: de textiellijnen in Beveren-Waas, België; de rWood- en rPET-lijnen en de vier belcabines in Częstochowa, Polen. Alle grondstoffen komen uit de Europese Unie.",
+    "plantsTag": "DE FABRIEKEN",
+    "plantsTitle": "Twee fabrieken, één fabrikant",
+    "plantsIntro": "Wat elke vestiging maakt en hoe je ze bereikt. Bezoeken gebeuren op afspraak, op beide locaties.",
+    "plant": {
+      "BE": {
+        "role": "Akoestische textielpanelen, hoofdkantoor en showroom",
+        "makes": "Akoestische panelen en schermen van gerecycleerde textielvezels.",
+        "note": "In de showroom op dit adres staan het volledige panelengamma en alle drie de cabineformaten geïnstalleerd en akoestisch actief, zodat je het verschil tussen de materialen hoort voordat je je keuze vastlegt."
+      },
+      "PL": {
+        "role": "rWood- en rPET-panelen, alle belcabines",
+        "makes": "Houten akoestische panelen met FSC-gecertificeerd fineer, akoestische PET-panelen van gerecycleerd PET-vilt, en de belcabines en vergaderpods.",
+        "note": "Het productiekantoor ontvangt graag projectbezoeken en organiseert fabrieksrondleidingen op afspraak. Cabines worden op verzoek geleverd en geïnstalleerd door ons eigen team."
+      }
+    },
+    "plantLabels": {
+      "makes": "Hier gemaakt",
+      "address": "Adres",
+      "hours": "Openingstijden",
+      "hoursValue": "Ma–vr, 08:00–16:30 · op afspraak",
+      "phone": "Telefoon",
+      "email": "E-mail",
+      "country": {
+        "BE": "België",
+        "PL": "Polen"
+      }
+    },
+    "originTag": "WELKE LIJN WAAR WORDT GEMAAKT",
+    "originTitle": "Fabriek van herkomst per productlijn",
+    "originNote": "Eén rij per product, gegenereerd uit dezelfde productdata als elke modelpagina. Levertijden zoals gepubliceerd op de modelpagina’s.",
+    "col": {
+      "product": "Product",
+      "family": "Reeks",
+      "plant": "Fabriek",
+      "leadTime": "Levertijd"
+    },
+    "certsTag": "CERTIFICERINGEN",
+    "certsTitle": "Certificeringen en waarop ze van toepassing zijn",
+    "certsIntro": "Alleen certificeringen die op een specifieke lijn van toepassing zijn, staan vermeld, telkens met de norm waarnaar ze verwijzen en de producten die eronder vallen.",
+    "certs": {
+      "FSC": {
+        "name": "FSC chain-of-custody",
+        "scope": "rWood-fineer"
+      },
+      "OEKO-TEX": {
+        "name": "OEKO-TEX Standard 100",
+        "scope": "rPET-vilt"
+      },
+      "EPD": {
+        "name": "Milieuproductverklaring (EPD)",
+        "scope": "rWood Panel"
+      }
+    },
+    "certsAppliesTo": "Geldt voor",
+    "certsNote": "Brandclassificatie (EN 13501-1), geluidsabsorptie (ISO 11654) en spraakniveaureductie (ISO 23351-1) zijn testresultaten, geen certificeringen; ze worden per model vermeld op de productpagina’s.",
+    "howTag": "HOE WE WERKEN",
+    "howTitle": "Wat zelf produceren voor jou verandert",
+    "how": {
+      "origin": {
+        "title": "Transparante herkomst",
+        "text": "Elke productpagina vermeldt de fabriek waar het product vandaan komt, en de tabel op deze pagina wordt gegenereerd uit dezelfde productdata, zodat tekst en data nooit met elkaar in tegenspraak kunnen zijn."
+      },
+      "installation": {
+        "title": "Levering en installatie door ons eigen team",
+        "text": "Cabines worden op verzoek geleverd en geïnstalleerd door ons eigen team; levering en installatie worden apart geoffreerd."
+      },
+      "warranty": {
+        "title": "Garantie op elke cabine"
+      }
+    },
+    "linksTag": "VERDER ONTDEKKEN",
+    "linksTitle": "Reeksen, technische documenten en stalen",
+    "links": {
+      "downloadsTitle": "Technische downloads",
+      "downloadsText": "Datasheets, installatiehandleidingen en akoestische testrapporten op elke productpagina; brandcertificaten en duurzaamheidsverklaringen voor de panelen, garantievoorwaarden en CAD-tekeningen voor de cabines.",
+      "downloadsCta": "Alle producten",
+      "samplesTitle": "Stalenset",
+      "samplesText": "Bestel een gratis stalenset en vergelijk de materialen en afwerkingen op je eigen bureau.",
+      "hubCta": "Bekijk het gamma"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Nagalmtijdcalculator (RT60)",
+      "description": "Schat de nagalmtijd van je ruimte met de formule van Sabine, vergelijk die met de streefwaarde voor jouw ruimtetype en zie hoeveel m² akoestische panelen van Re-Sound je nodig hebt."
+    },
+    "hero": {
+      "tag": "Gratis tool",
+      "title": "Nagalmtijdcalculator",
+      "subtitle": "Voer de afmetingen en afwerkingen van je ruimte in om de RT60 te schatten, vergelijk die met de streefwaarde voor het ruimtetype en ontdek hoeveel m² akoestische panelen nodig zijn om binnen de marge te komen."
+    },
+    "intro": {
+      "tag": "Hoe het werkt",
+      "title": "De formule van Sabine en de streefwaarden",
+      "sabine": "De calculator gebruikt de formule van Sabine in de vorm T = V / (6 × A): T is de nagalmtijd in seconden, V het volume van de ruimte in m³ en A de totale absorptie in m² sabine — de oppervlakte van elk vlak vermenigvuldigd met zijn absorptiecoëfficiënt α, alles bij elkaar opgeteld. Elke octaafband van 125 Hz tot 4000 Hz wordt afzonderlijk berekend met de α-waarden van de gekozen vloer-, plafond- en wandafwerking.",
+      "headline": "De RT60-hoofdwaarde is het gemiddelde van de banden van 500, 1000 en 2000 Hz — de spraakfrequenties — en dat is de waarde die met de streefwaarde wordt vergeleken.",
+      "targets": "De streefwaarden voor de nagalmtijd per ruimtetype komen uit dezelfde brontabel als de absorptiecoëfficiënten: van 0,4 s voor een muziekstudio tot 1,5 s voor een sporthal of zwembad; een kantoor, vergaderzaal of leslokaal mikt op 0,8 s.",
+      "note": "De formule van Sabine gaat ervan uit dat de absorptie gelijkmatig over de ruimte verdeeld is. Het resultaat is een schatting voor vroege ontwerpbeslissingen, geen meting.",
+      "targetsTableCaption": "Streefwaarde nagalmtijd per ruimtetype",
+      "roomType": "Ruimtetype",
+      "targetRt": "Streefwaarde T"
+    },
+    "form": {
+      "title": "Jouw ruimte",
+      "length": "Lengte",
+      "width": "Breedte",
+      "height": "Hoogte",
+      "unitHint": "in m (2,8 of 2.8)",
+      "floor": "Vloerafwerking",
+      "ceiling": "Plafondafwerking",
+      "walls": "Wandafwerking",
+      "roomType": "Ruimtetype",
+      "roomTypeOption": "{name} — streefwaarde {t} s"
+    },
+    "results": {
+      "title": "Resultaat",
+      "empty": "Voer de lengte, breedte en hoogte van de ruimte in om het resultaat te zien.",
+      "volume": "Volume van de ruimte",
+      "volumeValue": "{v} m³",
+      "rtNow": "Geschatte RT60 nu",
+      "rtNowHint": "Gemiddelde van de banden van 500, 1000 en 2000 Hz",
+      "seconds": "{s} s",
+      "target": "Streefwaarde voor {room}",
+      "met": "Streefwaarde gehaald",
+      "notMet": "Boven de streefwaarde",
+      "toAdd": "Toe te voegen absorptie",
+      "sabine": "{a} m² sabine",
+      "toAddHint": "Extra absorptie die nodig is om de RT60 tot de streefwaarde te verlagen",
+      "bandTable": "Per octaafband",
+      "band": "Band (Hz)",
+      "absorptionBand": "Absorptie A (m² sabine)",
+      "rtBand": "RT60 (s)",
+      "noneNeeded": "Je ruimte haalt de streefwaarde voor dit ruimtetype al — er is geen extra absorptie nodig.",
+      "recommendTitle": "Re-Sound-panelen om de streefwaarde te halen",
+      "recommendIntro": "m² van elk paneel dat de ontbrekende absorptie levert, op basis van zijn gewogen absorptiecoëfficiënt αw. Kies één product; de hoeveelheden zijn alternatieven, geen som.",
+      "productLine": "≈ {m2} m² {product} (αw {alphaW})",
+      "productNoNumber": "{product} — gemeten per patroon / dikte — zie productpagina",
+      "productLink": "Productpagina",
+      "evenNote": "De formule van Sabine gaat uit van gelijkmatig verdeelde absorptie: de schatting klopt het best wanneer de panelen over de ruimte verspreid worden in plaats van geconcentreerd op één oppervlak."
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Vragen over de berekening",
+      "officeTarget": {
+        "question": "Welke nagalmtijd moet een kantoor hebben?",
+        "answer": "De streefwaardentabel die deze calculator gebruikt, hanteert 0,8 s voor een kantoorruimte, vergaderzaal, leslokaal, kinderdagverblijf en woonkamer, 0,7 s voor een callcenter, restaurant, café of bar, en 1,0 s voor een receptie of wachtlokaal. De calculator toont of je geschatte RT60 de streefwaarde haalt voor het ruimtetype dat je selecteert."
+      },
+      "hardFinishes": {
+        "question": "Welke afwerkingen absorberen het minste geluid?",
+        "answer": "In de tabel heeft marmer een absorptiecoëfficiënt van 0,01 in elke octaafband, beton 0,01 tot 0,03 en pleisterwerk 0,01 tot 0,05. Zachte afwerkingen absorberen veel meer: tapijt haalt 0,37 bij 4000 Hz en zware gordijnen 0,96 bij 500 Hz. Een ruimte met harde afwerkingen op vloer, plafond en wanden heeft daardoor een lange nagalmtijd."
+      },
+      "howManyM2": {
+        "question": "Hoeveel m² akoestische panelen heb ik nodig?",
+        "answer": "De calculator berekent de extra absorptie in m² sabine die de RT60-hoofdwaarde — het gemiddelde van de banden van 500, 1000 en 2000 Hz — tot de streefwaarde verlaagt, en deelt die door de gewogen absorptiecoëfficiënt αw van elk Re-Sound-paneel met één gepubliceerde waarde: 1 m² van een paneel met αw 1.0 voegt 1 m² sabine toe. Panelen waarvan de αw afhangt van het patroon of de dikte, staan zonder hoeveelheid vermeld en linken naar hun productpagina."
+      }
+    },
+    "lead": {
+      "tag": "Volgende stap",
+      "title": "Stuur me deze berekening en een offerte",
+      "subtitle": "We mailen je de berekening hierboven en komen bij je terug met een offerte voor de aanbevolen panelen.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "company": "Bedrijf",
+      "email": "E-mail",
+      "honeypot": "Laat dit veld leeg",
+      "submit": "Berekening versturen en offerte aanvragen",
+      "sending": "Versturen...",
+      "success": "Bedankt — de berekening is onderweg en we nemen contact met je op met een offerte.",
+      "error": "Er is iets misgegaan. Probeer het opnieuw.",
+      "incomplete": "Maak eerst de berekening hierboven af.",
+      "privacyNotice": "Door dit formulier te versturen ga je akkoord met ons <link>privacybeleid</link>."
+    }
+  },
+  "samples": {
+    "metaTitle": "Bestel een stalenset",
+    "metaDescription": "Vraag de Re-Sound-stalenset aan: A4-stalen van elke reeks en afwerking, binnen drie werkdagen verzonden in de EU.",
+    "hero": {
+      "tag": "Stalenset",
+      "title": "Bestel je stalenset",
+      "subtitle": "A4-stalen van elke reeks en afwerking, binnen drie werkdagen verzonden in de EU."
+    },
+    "kit": {
+      "tag": "Wat zit er in de set",
+      "title": "Elke reeks en afwerking, op A4-formaat",
+      "swatchesTitle": "A4-stalen",
+      "swatchesText": "Eén A4-staal van elke reeks en afwerking.",
+      "shippingTitle": "Drie werkdagen",
+      "shippingText": "De set wordt binnen drie werkdagen verzonden naar adressen in de EU.",
+      "projectTitle": "Jouw project",
+      "projectText": "Vertel ons naar welke reeksen je kijkt en wat het project is.",
+      "cta": "Vraag de set aan"
+    },
+    "ranges": {
+      "tag": "Reeksen",
+      "title": "De reeksen in de set",
+      "text": "Stalen van elke afwerking uit de reeksen textiel, rWood en rPET."
+    },
+    "families": {
+      "textile": "Textiel",
+      "rwood": "rWood",
+      "rpet": "rPET"
+    },
+    "form": {
+      "tag": "Aanvraag",
+      "title": "Vraag je stalenset aan",
+      "text": "Vul het onderstaande formulier in. Velden met * zijn verplicht.",
+      "sections": {
+        "ranges": "In welke reeksen ben je geïnteresseerd?",
+        "project": "Jouw project",
+        "delivery": "Levering"
+      },
+      "fields": {
+        "firstName": "Voornaam",
+        "lastName": "Achternaam",
+        "company": "Bedrijf",
+        "email": "E-mail",
+        "country": "Land",
+        "rangesHint": "Vink minstens één reeks aan.",
+        "rangesRequired": "Selecteer minstens één reeks.",
+        "projectType": "Projecttype",
+        "projectTypePlaceholder": "Selecteer een projecttype",
+        "area": "Oppervlakte (m²)",
+        "areaPlaceholder": "bv. 120",
+        "address": "Leveringsadres",
+        "addressPlaceholder": "Straat en nummer, postcode, plaats",
+        "addressHint": "Straat, nummer, postcode en plaats: nodig om de set te verzenden.",
+        "honeypot": "Laat dit veld leeg"
+      },
+      "projectTypes": {
+        "office": "Kantoor",
+        "education": "Onderwijs",
+        "healthcare": "Gezondheidszorg",
+        "hospitality": "Horeca",
+        "residential": "Residentieel",
+        "other": "Andere"
+      },
+      "submit": "Vraag de stalenset aan",
+      "success": {
+        "title": "Aanvraag ontvangen",
+        "body": "Bedankt, {firstName}. De stalenset wordt binnen drie werkdagen verzonden in de EU. Controleer je mailbox voor een bevestiging.",
+        "another": "Nog een aanvraag versturen"
+      }
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Vragen over de stalenset",
+      "q1": "Wat zit er in de stalenset?",
+      "a1": "A4-stalen van elke reeks en afwerking: textiel, rWood en rPET.",
+      "q2": "Hoelang duurt de verzending?",
+      "a2": "De set wordt binnen drie werkdagen verzonden naar adressen in de EU.",
+      "q3": "Moet ik specifieke reeksen kiezen?",
+      "a3": "De set bevat elke reeks en afwerking. Door de reeksen aan te vinken waarin je geïnteresseerd bent, weten we welke voor jouw project belangrijk zijn."
     }
   }
 }

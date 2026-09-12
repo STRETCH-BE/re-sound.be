@@ -3,8 +3,19 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Single source for every spec figure on this page (αw, fire class, recycled
+// content …): src/data/products.ts. Nothing below may hard-code one of them.
+const PRODUCT = PRODUCTS['rwood-perf'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+// alphaW is a range that depends on the perforation pattern, stored as
+// '0.35–0.85 (per pattern)'; the numeric range is what the page prints.
+const alphaWRange = panelSpecs?.alphaW ? panelSpecs.alphaW.replace(/\s*\(.*\)\s*$/, '') : null;
+const fireClass = panelSpecs?.fireClass ?? null;
+const recycledPct = PRODUCT.recycledContentPct;
 
 // Wood finish options for rWood - Perf
 const woodFinishOptions = [
@@ -24,12 +35,13 @@ const coreColourOptions = [
   { id: 'light', name: 'Light Core', color: '#c8c0b0' },
 ];
 
-// Perforation pattern options (replaces lamella variants)
+// Perforation pattern options (replaces lamella variants). No per-pattern αw
+// here: src/data/products.ts only carries the range for the whole product.
 const perforationOptions = [
-  { id: 'pd8', name: 'PD8', detail: '⌀8 mm · 24% open', descriptionKey: 'options.pd8Desc', acousticClass: 'B', aw: '0.85', dotCount: 16, gridCols: 4, dotSize: 10 },
-  { id: 'ph10', name: 'PH10', detail: '⌀10 mm · 18% open', descriptionKey: 'options.ph10Desc', acousticClass: 'C', aw: '0.75', dotCount: 9, gridCols: 3, dotSize: 12 },
-  { id: 'ph8', name: 'PH8', detail: '⌀8 mm · 12% open', descriptionKey: 'options.ph8Desc', acousticClass: 'D', aw: '0.55', dotCount: 25, gridCols: 5, dotSize: 7 },
-  { id: 'ph5', name: 'PH5', detail: '⌀5 mm · 5% open', descriptionKey: 'options.ph5Desc', acousticClass: 'D', aw: '0.35', dotCount: 36, gridCols: 6, dotSize: 5 },
+  { id: 'pd8', name: 'PD8', detail: '⌀8 mm · 24% open', descriptionKey: 'options.pd8Desc', dotCount: 16, gridCols: 4, dotSize: 10 },
+  { id: 'ph10', name: 'PH10', detail: '⌀10 mm · 18% open', descriptionKey: 'options.ph10Desc', dotCount: 9, gridCols: 3, dotSize: 12 },
+  { id: 'ph8', name: 'PH8', detail: '⌀8 mm · 12% open', descriptionKey: 'options.ph8Desc', dotCount: 25, gridCols: 5, dotSize: 7 },
+  { id: 'ph5', name: 'PH5', detail: '⌀5 mm · 5% open', descriptionKey: 'options.ph5Desc', dotCount: 36, gridCols: 6, dotSize: 5 },
 ];
 
 // Default hero image
@@ -123,17 +135,18 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">🔘</span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
-            <div className="usp">
-              <span className="usp-icon">🔥</span>
-              <span className="usp-text">{t('hero.usp2')}</span>
-            </div>
-            <div className="usp">
-              <span className="usp-icon">🔇</span>
-              <span className="usp-text">{t('hero.usp3')}</span>
-            </div>
+            {fireClass && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.usp2', { fireClass })}</span>
+              </div>
+            )}
+            {alphaWRange && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.usp3', { alphaW: alphaWRange })}</span>
+              </div>
+            )}
           </div>
 
           <div className="hero-ctas">
@@ -236,10 +249,12 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
               {t('overview.description4')}
             </p>
             <ul className="feature-list">
-              <li>
-                <span className="check">✓</span>
-                {t('overview.feature1')}
-              </li>
+              {fireClass && (
+                <li>
+                  <span className="check">✓</span>
+                  {t('overview.feature1', { fireClass })}
+                </li>
+              )}
               <li>
                 <span className="check">✓</span>
                 {t('overview.feature2')}
@@ -297,7 +312,6 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
                 <h3>{perf.name}</h3>
                 <span className="lamella-count">{perf.detail}</span>
                 <p>{t(perf.descriptionKey)}</p>
-                <span className="lamella-width">αw {perf.aw} · Class {perf.acousticClass}</span>
               </div>
             </div>
           ))}
@@ -481,25 +495,28 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
                   />
                 </svg>
                 <div className="rating-content">
-                  <span className="rating-value">αw 0.85</span>
-                  <span className="rating-label">{t('acoustics.ratingLabel')}</span>
+                  {/* αw range from src/data/products.ts (depends on the perforation pattern) */}
+                  <span className="rating-value">{alphaWRange ? `αw ${alphaWRange}` : '—'}</span>
+                  <span className="rating-label">{t('acoustics.ratingPerPattern')}</span>
                 </div>
               </div>
-              <div className="rating-badge">
-                <span className="badge-icon">★</span>
-                <span className="badge-text">{t('hero.usp3')}</span>
-              </div>
+              {/* No absorption-class badge: the data αw range (0.35–0.85) is below Class A */}
             </div>
 
             <div className="metric-cards">
-              <div className="metric-card">
-                <div className="metric-value">B-s1, d0</div>
-                <div className="metric-label">{t('acoustics.fireRating')}</div>
-              </div>
-              <div className="metric-card">
-                <div className="metric-value">NRC 0.90</div>
-                <div className="metric-label">{t('acoustics.noiseReduction')}</div>
-              </div>
+              {fireClass && (
+                <div className="metric-card">
+                  {/* Fire class from src/data/products.ts (FR core) */}
+                  <div className="metric-value">{fireClass}</div>
+                  <div className="metric-label">{t('acoustics.fireRating')}</div>
+                </div>
+              )}
+              {panelSpecs?.nrc && (
+                <div className="metric-card">
+                  <div className="metric-value">NRC {panelSpecs.nrc}</div>
+                  <div className="metric-label">{t('acoustics.noiseReduction')}</div>
+                </div>
+              )}
             </div>
 
             <div className="certification-note">
@@ -531,7 +548,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
               </svg>
             </div>
             <h3>{t('acoustics.benefit2Title')}</h3>
-            <p>{t('acoustics.benefit2')}</p>
+            {fireClass && <p>{t('acoustics.benefit2', { fireClass })}</p>}
           </div>
           <div className="benefit">
             <div className="benefit-icon-wrap">
@@ -624,28 +641,30 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">🌲</span>
                 <div>
                   <h3>{t('sustainability.badge1')}</h3>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
-              <div className="sustain-item">
-                <span className="sustain-icon">♻️</span>
-                <div>
-                  <h3>{t('sustainability.badge2')}</h3>
-                  <p>{t('sustainability.badge2Desc')}</p>
+              {/* Recycled-content badge only while the figure is confirmed in product data */}
+              {recycledPct !== null && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge2', { pct: recycledPct })}</h3>
+                    <p>{t('sustainability.badge2Desc')}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="sustain-item">
-                <span className="sustain-icon">🏭</span>
-                <div>
-                  <h3>{t('sustainability.badge3')}</h3>
-                  <p>{t('sustainability.badge3Desc')}</p>
+              )}
+              {/* Origin badge: only when the plant is confirmed in product data (PL → Częstochowa) */}
+              {PRODUCT.madeIn === 'PL' && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge3')}</h3>
+                    <p>{t('sustainability.badge3Desc')}</p>
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="sustain-item">
-                <span className="sustain-icon">📋</span>
                 <div>
                   <h3>{t('sustainability.badge4')}</h3>
                   <p>{t('sustainability.badge4Desc')}</p>
@@ -675,22 +694,18 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
 
         <div className="accessories-grid">
           <div className="accessory-card">
-            <div className="accessory-icon">📏</div>
             <h3>{t('accessories.item1Title')}</h3>
             <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">🔲</div>
             <h3>{t('accessories.item2Title')}</h3>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">⚙️</div>
             <h3>{t('accessories.item3Title')}</h3>
             <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">🧱</div>
             <h3>{t('accessories.item4Title')}</h3>
             <p>{t('accessories.item4Desc')}</p>
           </div>

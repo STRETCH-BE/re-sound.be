@@ -29,12 +29,12 @@ export default function SoloEcoProductPage(slots: BoothSlots) {
       ]}
       showAcoustics={false}
       features={[
-        { iconKey: '🌬️', key: 'ventilation' },
-        { iconKey: '🔌', key: 'electrics' },
-        { iconKey: '🪟', key: 'glass' },
-        { iconKey: '🧍', key: 'table' },
-        { iconKey: '🧵', key: 'interior' },
-        { iconKey: '🛡️', key: 'warranty' },
+        { iconKey: 'ventilation', key: 'ventilation' },
+        { iconKey: 'electrics', key: 'electrics' },
+        { iconKey: 'glass', key: 'glass' },
+        { iconKey: 'table', key: 'table' },
+        { iconKey: 'interior', key: 'interior' },
+        { iconKey: 'warranty', key: 'warranty' },
       ]}
       // The two list options (RS-SE-OCC stool, RS-SE-BG glass back wall); no page-only add-ons.
       // No photo of the glass back wall exists yet, so that card has no image.

@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Icon from '@/components/ui/Icon';
 
 interface AboutStoryProps {
   /** FOUNDING_YEAR from src/config/site.ts — null hides the year everywhere. */
@@ -26,7 +27,7 @@ export default function AboutStory({ foundingYear }: AboutStoryProps) {
         <div className="story-visual">
           <div className="story-image">
             <div className="image-placeholder">
-              <span>🏭</span>
+              <Icon name="factory" />
               <p>{t('imagePlaceholder')}</p>
             </div>
           </div>
@@ -89,9 +90,11 @@ export default function AboutStory({ foundingYear }: AboutStoryProps) {
           text-align: center;
         }
 
-        .image-placeholder span {
-          font-size: 4rem;
+        .image-placeholder :global(svg) {
+          width: 64px;
+          height: 64px;
           margin-bottom: 1rem;
+          color: var(--brand-blue);
         }
 
         .image-placeholder p {

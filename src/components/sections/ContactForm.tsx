@@ -47,6 +47,10 @@ export default function ContactForm() {
       if (response.ok) {
         setSubmitStatus('success');
         analytics.submitContactForm(true, String(data.subject ?? ''));
+        // Sprint lead event. The form has a subject (quote / info /
+        // partnership / other) but no product field, so the range is
+        // always 'general'.
+        analytics.leadQuote({ locale, product_range: 'general' });
         (e.target as HTMLFormElement).reset();
       } else {
         setSubmitStatus('error');

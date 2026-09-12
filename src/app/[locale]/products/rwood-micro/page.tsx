@@ -38,13 +38,17 @@ const GALLERY_IMAGES = [1, 2, 3, 4, 5].map(
   (i) => `/images/products/rwood-micro/gallery-${i}.webp`
 );
 
+// The fire class quoted in the meta description comes from product data only.
+const MICRO_SPECS = PRODUCTS['rwood-micro'].specs;
+const FIRE_CLASS = MICRO_SPECS.kind === 'panel' ? MICRO_SPECS.fireClass ?? '' : '';
+
 export async function generateMetadata({
   params: { locale },
 }: PageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
 
   const title = t('rwoodMicroTitle');
-  const description = t('rwoodMicroDescription');
+  const description = t('rwoodMicroDescription', { fireClass: FIRE_CLASS });
 
   return {
     // Title already contains "| Re-Sound" — bypass the layout template
@@ -84,7 +88,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
   const fullTitle = tMeta('rwoodMicroTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
-  const description = tMeta('rwoodMicroDescription');
+  const description = tMeta('rwoodMicroDescription', { fireClass: FIRE_CLASS });
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'rwood-micro', cleanName);

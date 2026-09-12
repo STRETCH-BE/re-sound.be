@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
+import { PLANTS } from '@/config/site';
 
 export default function CircularLoop() {
   const t = useTranslations('circular');
@@ -82,10 +83,11 @@ export default function CircularLoop() {
               <div className="ring-img-overlay" />
             </div>
 
-            {/* Floating stat pills */}
+            {/* Floating stat pills — recycled content is per product (see
+                src/data/products.ts), so no range-wide percentage here. */}
             <div className="stat-pill stat-top">
-              <span className="sp-num">100%</span>
-              <span className="sp-lbl">{t('statRecycled')}</span>
+              <span className="sp-num">{PLANTS.length}</span>
+              <span className="sp-lbl">{t('statPlants')}</span>
             </div>
             <div className="stat-pill stat-right">
               <span className="sp-num">0 kg</span>

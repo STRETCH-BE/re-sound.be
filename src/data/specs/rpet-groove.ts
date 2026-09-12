@@ -5,12 +5,16 @@
  * the former <section id="specs"> (lines 780–937 of the pre-refactor file),
  * card by card and row by row, in the original order.
  *
- * The Fire Safety card used to hard-code English labels/values although the
- * `rpetGroovePage.specs.fireEU…fireDEValue` keys exist (and are translated)
- * in every locale — those keys are used here instead.
+ * Governed figures come from src/data/products.ts via spec(): the three
+ * per-thickness NRC rows became one row showing the stored per-thickness
+ * string (same order as the thickness row); the fire class is the EN 13501-1
+ * value. The OEKO-TEX row is guarded by cert(); the recycled-content row is
+ * data-backed and stays hidden while the data value is null. Removed: the US
+ * / UK / DE fire classes (no such data fields), "EPD available" (not held)
+ * and the "Post-consumer PET bottles" text that sat under "Recycled content".
  */
 import type { SpecTableDef } from './types';
-import { key } from './types';
+import { cert, key, spec } from './types';
 
 const specs: SpecTableDef = [
   {
@@ -18,7 +22,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.dimPanelWidth'), value: '600 / 1200 mm' },
       { label: key('rpetGroovePage.specs.dimPanelLength'), value: '600 / 1200 / 2400 mm' },
-      { label: key('productPage.specLabels.thickness'), value: '12 / 24 / 36 mm' },
+      { label: key('productPage.specLabels.thickness'), value: spec('rpet-groove', 'thickness') },
       { label: key('rpetGroovePage.specs.dimGrooveDepth'), value: '6 / 12 / 18 mm' },
       { label: key('productPage.specLabels.weight'), value: '2.5 - 7.5 kg/m²' },
     ],
@@ -26,9 +30,7 @@ const specs: SpecTableDef = [
   {
     title: key('rpetGroovePage.specs.acousticsTitle'),
     rows: [
-      { label: key('rpetGroovePage.specs.acNRC12'), value: '0.55' },
-      { label: key('rpetGroovePage.specs.acNRC24'), value: '0.75' },
-      { label: key('rpetGroovePage.specs.acNRC36'), value: '0.90' },
+      { label: key('rpetGroovePage.specs.nrcByThickness'), value: spec('rpet-groove', 'nrc') },
       { label: key('productPage.specLabels.testStandard'), value: 'ISO 354 / ASTM C423' },
     ],
   },
@@ -44,19 +46,19 @@ const specs: SpecTableDef = [
   {
     title: key('rpetGroovePage.specs.fireTitle'),
     rows: [
-      { label: key('rpetGroovePage.specs.fireEU'), value: 'B-s1, d0' },
-      { label: key('rpetGroovePage.specs.fireUS'), value: key('rpetGroovePage.specs.fireUSValue') },
-      { label: key('rpetGroovePage.specs.fireUK'), value: key('rpetGroovePage.specs.fireUKValue') },
-      { label: key('rpetGroovePage.specs.fireDE'), value: 'B1' },
+      { label: key('productPage.specs.fireRating'), value: spec('rpet-groove', 'fireClass') },
+      { label: key('productPage.specLabels.testStandard'), value: 'EN 13501-1' },
     ],
   },
   {
     title: key('rpetGroovePage.specs.certsTitle'),
     rows: [
-      { label: key('rpetGroovePage.specs.certHealth'), value: 'OEKO-TEX® Standard 100' },
-      { label: key('rpetGroovePage.specs.certEnv'), value: key('rpetGroovePage.specs.certEPD') },
+      {
+        label: key('rpetGroovePage.specs.certHealth'),
+        value: cert('rpet-groove', 'OEKO-TEX', 'productPage.specs.oekoTexStandard100'),
+      },
       { label: key('rpetGroovePage.specs.matEmissions'), value: key('rpetGroovePage.specs.certVOC') },
-      { label: key('productPage.specs.recycledContent'), value: key('rpetGroovePage.specs.certGRS') },
+      { label: key('productPage.specs.recycledContent'), value: spec('rpet-groove', 'recycledContentPct') },
     ],
   },
   {

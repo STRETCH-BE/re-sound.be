@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import type { Partner } from '@/config/site';
+import Icon from '@/components/ui/Icon';
 
 interface AboutPartnersProps {
   /** Real partners only — see PARTNERS in src/config/site.ts. */
@@ -27,7 +28,7 @@ export default function AboutPartners({ partners }: AboutPartnersProps) {
         <div className="partners-grid">
           {partners.map((partner) => (
             <div key={partner.name} className="partner-card">
-              <div className="partner-logo" aria-hidden="true">🤝</div>
+              <div className="partner-logo" aria-hidden="true"><Icon name="handshake" /></div>
               <h3>
                 {partner.url ? (
                   <a href={partner.url} target="_blank" rel="noopener noreferrer">
@@ -83,8 +84,14 @@ export default function AboutPartners({ partners }: AboutPartnersProps) {
         }
 
         .partner-logo {
-          font-size: 2.5rem;
+          display: flex;
+          justify-content: center;
           margin-bottom: 1rem;
+        }
+
+        .partner-logo :global(svg) {
+          width: 40px;
+          height: 40px;
         }
 
         .partner-card h3 {

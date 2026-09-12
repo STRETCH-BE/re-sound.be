@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 import { Metadata } from 'next';
 import { Syne, DM_Sans } from 'next/font/google';
 
@@ -75,14 +75,6 @@ export async function generateMetadata({
     },
     description:
       'Circular acoustic panels and office phone booths from recycled materials, made in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).',
-    keywords: [
-      'acoustic panels',
-      'circular economy',
-      'recycled materials',
-      'sound absorption',
-      'Belgium',
-      'sustainable',
-    ],
     authors: [{ name: 'Re-Sound' }],
     creator: 'Re-Sound',
     metadataBase: new URL(
@@ -121,13 +113,19 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: LocaleLayoutProps) {
+  // Validate the locale BEFORE next-intl sees it: setRequestLocale() with a
+  // bogus segment throws (RangeError: Incorrect locale information) and the
+  // response becomes a 500. Page-like paths with a bogus first segment are
+  // redirected by the middleware before they get here; the ones that do
+  // arrive are asset-like misses it let through for the filesystem
+  // (/wp-login.php, /old-brochure.pdf). Zero-404 rule: send them to "/" so
+  // next-intl picks the visitor's language on the next hop.
+  if (!locales.includes(locale as Locale)) {
+    permanentRedirect('/');
+  }
+
   // Enable static rendering
   setRequestLocale(locale);
-
-  // Validate that the incoming locale is valid
-  if (!locales.includes(locale as Locale)) {
-    notFound();
-  }
 
   // Load translations for the current locale, narrowed to the namespaces
   // the layout's own client components (Header/Footer/CookieConsent) use.

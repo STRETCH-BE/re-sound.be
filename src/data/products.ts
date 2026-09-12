@@ -150,7 +150,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'textile',
     name: 'Interior',
     madeIn: 'BE',
-    recycledContentPct: 80, // specs copy: "≥80%"
+    recycledContentPct: 80, // spec sheet: "≥80 %"
     material: 'Recycled textile fibres',
     certifications: [],
     fromPrice: null, // prices live in the catalogue
@@ -170,7 +170,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'textile',
     name: 'Solid',
     madeIn: 'BE',
-    recycledContentPct: 80,
+    recycledContentPct: 80, // spec sheet: "≥80 %"
     material: 'Recycled textile fibres',
     certifications: [],
     fromPrice: null, // prices live in the catalogue
@@ -190,7 +190,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'textile',
     name: 'Divide',
     madeIn: 'BE',
-    recycledContentPct: 80, // page spec table "≥80%"; the old meta said "100% recycled" — flagged
+    recycledContentPct: 80, // spec sheet: "≥80 %" (the old meta said "100% recycled" — flagged)
     material: 'Recycled textile fibres, recycled steel frame',
     certifications: [],
     fromPrice: null, // prices live in the catalogue
@@ -212,7 +212,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Groove',
     madeIn: 'PL', // Products_Data: made in Częstochowa
-    recycledContentPct: 60, // Products_Data (status Backlog) — TODO(needs-Michael): confirm
+    recycledContentPct: null, // TODO(needs-Michael): the earlier 60 % came from a Products_Data row with status Backlog (unconfirmed) — nothing is shown until confirmed
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
     fromPrice: null, // prices live in the catalogue
@@ -253,7 +253,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Perf',
     madeIn: 'PL', // Products_Data: made in Częstochowa
-    recycledContentPct: 17, // page badge "17% Recycled Content" (old JSON-LD said 60 %) — TODO(needs-Michael) confirm
+    recycledContentPct: 17, // page badge "17% Recycled Content" (the old JSON-LD said 60 %) — TODO(needs-Michael): confirm
     material: 'FSC-certified wood veneer on recycled-felt core',
     certifications: ['FSC'],
     fromPrice: null, // prices live in the catalogue
@@ -297,7 +297,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rpet',
     name: 'rPET Panel',
     madeIn: 'PL',
-    recycledContentPct: 100, // Products_Data (old page copy said "up to 50%" — see docs/needs-michael.md)
+    recycledContentPct: 100, // Products_Data (the old page copy said "up to 50%" — see docs/needs-michael.md)
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
     fromPrice: null, // prices live in the catalogue
@@ -319,7 +319,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rpet',
     name: 'rPET Groove',
     madeIn: 'PL',
-    recycledContentPct: 100, // TODO(needs-Michael): confirm — every page says "100% recycled PET bottles"
+    recycledContentPct: null, // TODO(needs-Michael): the old page copy said "100% recycled PET bottles" but no data source confirms it — nothing is shown until confirmed
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
     fromPrice: null, // prices live in the catalogue

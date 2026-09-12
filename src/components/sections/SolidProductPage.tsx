@@ -3,9 +3,18 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import Image from 'next/image';
+
+// Single source for every spec figure on this page (αw, format, recycled
+// content …): src/data/products.ts. Nothing below may hard-code one of them.
+const PRODUCT = PRODUCTS['solid'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+const alphaW = panelSpecs?.alphaW ?? null;
+const panelFormat = panelSpecs?.format ?? null;
+const recycledPct = PRODUCT.recycledContentPct;
 
 // Color options for the Solid product.
 // Note: no "Sky" option here — /images/products/solid/hero-sky.webp does not
@@ -99,15 +108,15 @@ export default function SolidProductPage({ priceFrom, breadcrumbs, specs, downlo
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">🔊</span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
+            {panelFormat && (
+              <div className="usp">
+                {/* Panel format straight from src/data/products.ts */}
+                <span className="usp-text">{panelFormat}</span>
+              </div>
+            )}
             <div className="usp">
-              <span className="usp-icon">📐</span>
-              <span className="usp-text">{t('hero.usp2')}</span>
-            </div>
-            <div className="usp">
-              <span className="usp-icon">🔧</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
@@ -296,7 +305,7 @@ export default function SolidProductPage({ priceFrom, breadcrumbs, specs, downlo
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                Removable fabric cover
+                {t('maintenance.feature1')}
               </li>
               <li>
                 <span className="check">✓</span>
@@ -325,10 +334,12 @@ export default function SolidProductPage({ priceFrom, breadcrumbs, specs, downlo
               {t('features.description')}
             </p>
             <div className="circular-stats">
-              <div className="stat">
-                <span className="stat-number">80%</span>
-                <span className="stat-label">{t('features.recycledLabel')}</span>
-              </div>
+              {recycledPct !== null && (
+                <div className="stat">
+                  <span className="stat-number">{t('features.stat1Value', { pct: recycledPct })}</span>
+                  <span className="stat-label">{t('features.recycledLabel')}</span>
+                </div>
+              )}
               <div className="stat">
                 <span className="stat-number">0</span>
                 <span className="stat-label">{t('features.wasteLabel')}</span>
@@ -388,28 +399,28 @@ export default function SolidProductPage({ priceFrom, breadcrumbs, specs, downlo
             </div>
           </div>
 
-          <div className="absorption-rating">
-            <div className="rating-circle">
-              <span className="rating-value">{t('acoustics.ratingValue')}</span>
-              <span className="rating-label">{t('acoustics.ratingLabel')}</span>
+          {alphaW && (
+            <div className="absorption-rating">
+              <div className="rating-circle">
+                {/* αw from src/data/products.ts; "Class A" only because that αw is ≥ 0.90 */}
+                <span className="rating-value">{t('acoustics.ratingValue', { alphaW })}</span>
+                <span className="rating-label">{t('acoustics.ratingLabel')}</span>
+              </div>
+              <p>{t('acoustics.benefit1')}</p>
             </div>
-            <p>{t('acoustics.benefit1')}</p>
-          </div>
+          )}
         </div>
 
         <div className="acoustics-benefits">
           <div className="benefit">
-            <span className="benefit-icon">🗣️</span>
             <h4>{t('acoustics.benefit2Title')}</h4>
             <p>{t('acoustics.benefit2')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">🧠</span>
             <h4>{t('acoustics.benefit3Title')}</h4>
             <p>{t('acoustics.benefit3')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">📐</span>
             <h4>{t('specs.maxCoverageTitle')}</h4>
             <p>{t('acoustics.benefit4')}</p>
           </div>

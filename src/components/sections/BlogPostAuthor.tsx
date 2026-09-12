@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
+import Icon from '@/components/ui/Icon';
 
 interface BlogPostAuthorProps {
   authorName?: string;
@@ -16,7 +17,7 @@ export default function BlogPostAuthor({ authorName, authorRole }: BlogPostAutho
   return (
     <div className="blog-post-author">
       <div className="author-avatar">
-        <span>👤</span>
+        <Icon name="person" />
       </div>
       <div className="author-info">
         <span className="author-name">{name}</span>
@@ -42,7 +43,12 @@ export default function BlogPostAuthor({ authorName, authorRole }: BlogPostAutho
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 2rem;
+          color: var(--brand-blue);
+        }
+
+        .author-avatar :global(svg) {
+          width: 32px;
+          height: 32px;
         }
 
         .author-info {

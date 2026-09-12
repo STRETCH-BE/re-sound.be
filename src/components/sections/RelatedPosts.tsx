@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import Icon from '@/components/ui/Icon';
 
 interface RelatedPostsProps {
   currentSlug: string;
@@ -38,7 +39,7 @@ export default function RelatedPosts({ currentSlug, category }: RelatedPostsProp
                   <span className="related-category">
                     {tCommon(`categories.${post.category}`)}
                   </span>
-                  <div className="image-placeholder">📄</div>
+                  <div className="image-placeholder"><Icon name="document" /></div>
                 </div>
                 <h3>{t(`${post.slug}.title`)}</h3>
               </Link>
@@ -99,7 +100,12 @@ export default function RelatedPosts({ currentSlug, category }: RelatedPostsProp
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 2rem;
+          color: var(--brand-blue);
+        }
+
+        .image-placeholder :global(svg) {
+          width: 32px;
+          height: 32px;
         }
 
         .related-category {

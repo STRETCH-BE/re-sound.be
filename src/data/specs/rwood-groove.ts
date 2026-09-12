@@ -4,9 +4,15 @@
  * Transcribed from src/components/sections/rwoodgroovepage.tsx,
  * the former <section id="specs"> (lines 670–821 of the pre-refactor file),
  * card by card and row by row, in the original order.
+ *
+ * Governed figures (thickness, αw, class, fire class) come from
+ * src/data/products.ts via spec(); the FSC row is guarded by cert(). Rows the
+ * data does not support were removed: the per-core fire classes (the data
+ * holds one confirmed class), the felt's own fire class, the felt
+ * certification (OEKO-TEX is not held for rWood) and "EPD available".
  */
 import type { SpecTableDef } from './types';
-import { key } from './types';
+import { cert, key, spec } from './types';
 
 const specs: SpecTableDef = [
   {
@@ -14,7 +20,7 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rwoodGroovePage.specs.dimPanelWidth'), value: '300 mm' },
       { label: key('rwoodGroovePage.specs.dimPanelLength'), value: '2400 / 2780 mm' },
-      { label: key('productPage.specLabels.thickness'), value: '19 mm' },
+      { label: key('productPage.specLabels.thickness'), value: spec('rwood-groove', 'thickness') },
       { label: key('rwoodGroovePage.specs.dimGrooveDepth'), value: '15 mm' },
       { label: key('rwoodGroovePage.specs.dimGrooveWidth'), value: '15 mm' },
     ],
@@ -22,8 +28,8 @@ const specs: SpecTableDef = [
   {
     title: key('rwoodGroovePage.specs.acousticsTitle'),
     rows: [
-      { label: key('productPage.specs.absorptionCoeff'), value: '0.90' },
-      { label: key('productPage.specs.absorptionClass'), value: key('productPage.acoustics.classA') },
+      { label: key('productPage.specs.absorptionCoeff'), value: spec('rwood-groove', 'alphaW') },
+      { label: key('productPage.specs.absorptionClass'), value: spec('rwood-groove', 'absorptionClass') },
       { label: key('productPage.specs.testStandard'), value: 'ISO 354 / ISO 11654' },
     ],
   },
@@ -39,18 +45,17 @@ const specs: SpecTableDef = [
   {
     title: key('rwoodGroovePage.specs.fireTitle'),
     rows: [
-      { label: key('rwoodGroovePage.specs.stdPanels'), value: 'D-s2, d2' },
-      { label: key('rwoodGroovePage.specs.fireMdfVal'), value: 'B-s1, d0' },
-      { label: key('productData.specValues.felt'), value: 'B-s1, d0' },
+      { label: key('productPage.specLabels.reactionFire'), value: spec('rwood-groove', 'fireClass') },
       { label: key('productPage.specs.testStandard'), value: 'EN 13501' },
     ],
   },
   {
     title: key('rwoodGroovePage.specs.certsTitle'),
     rows: [
-      { label: key('productPage.specLabels.woodSourcing'), value: key('productPage.specLabels.fscCert') },
-      { label: key('rwoodGroovePage.specs.feltCert'), value: 'OEKO-TEX® Standard 100' },
-      { label: key('rwoodGroovePage.specs.envLabel'), value: key('productPage.specLabels.epd') },
+      {
+        label: key('productPage.specLabels.woodSourcing'),
+        value: cert('rwood-groove', 'FSC', 'productPage.specLabels.fscCert'),
+      },
       { label: key('rwoodGroovePage.specs.vocLabel'), value: key('rwoodGroovePage.specs.vocVal') },
     ],
   },

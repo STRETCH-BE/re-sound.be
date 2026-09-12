@@ -3,8 +3,18 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Single source for every spec figure on this page (αw, fire class …):
+// src/data/products.ts. Nothing below may hard-code one of these values.
+const PRODUCT = PRODUCTS['rwood-micro'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+const alphaW = panelSpecs?.alphaW ?? null;
+const fireClass = panelSpecs?.fireClass ?? null;
+// "Sound absorbed" metric is αw expressed as a percentage (0.90 → 90 %).
+const absorbedPct = alphaW && /^\d+(\.\d+)?$/.test(alphaW) ? Math.round(parseFloat(alphaW) * 100) : null;
 
 // Wood veneer options for rWood - Micro
 const woodFinishOptions = [
@@ -130,14 +140,15 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
               </span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
+            {/* "Class A absorption" — allowed only because the data αw (0.90) is ≥ 0.90 */}
             <div className="usp">
-              <span className="usp-icon">🔇</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
-            <div className="usp">
-              <span className="usp-icon">🔥</span>
-              <span className="usp-text">{t('hero.usp3')}</span>
-            </div>
+            {fireClass && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.usp3', { fireClass })}</span>
+              </div>
+            )}
           </div>
 
           <div className="hero-ctas">
@@ -359,10 +370,8 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                 <span className="stat-value">{selectedPerforation.openArea}</span>
                 <span className="stat-label">{t('options.openAreaLabel')}</span>
               </div>
-              <div className="detail-stat">
-                <span className="stat-value">{tPage('classA')}</span>
-                <span className="stat-label">{t('options.absorptionLabel')}</span>
-              </div>
+              {/* No per-pattern absorption figure exists in src/data/products.ts —
+                  the product-level αw is shown in the acoustics section instead. */}
             </div>
             <p className="detail-desc">{t(selectedPerforation.descriptionKey)}. {t(`options.${selectedPerforation.id.replace('-', '')}Detail`)}</p>
           </div>
@@ -399,7 +408,6 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                     className={`surface-option ${selectedSurface.id === surface.id ? 'active' : ''}`}
                     onClick={() => setSelectedSurface(surface)}
                   >
-                    <span className="surface-icon">{surface.id === 'veneer' ? '🪵' : '◻️'}</span>
                     <div className="surface-text">
                       <span className="surface-name">{surface.name}</span>
                       <span className="surface-desc">{t(surface.descriptionKey)}</span>
@@ -413,14 +421,12 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
               <h4>{t('surfaces.finishTreatments')}</h4>
               <div className="extras-grid">
                 <div className="extra-item">
-                  <span className="extra-icon">🎨</span>
                   <div>
                     <strong>{t('patterns.pigmentedLacquer')}</strong>
                     <p>{t('surfaces.finish1Desc')}</p>
                   </div>
                 </div>
                 <div className="extra-item">
-                  <span className="extra-icon">✨</span>
                   <div>
                     <strong>{t('patterns.glossLevels')}</strong>
                     <p>{t('surfaces.finish2Desc')}</p>
@@ -531,10 +537,12 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
                   />
                 </svg>
                 <div className="rating-content">
-                  <span className="rating-value">αw 0.90</span>
+                  {/* αw from src/data/products.ts */}
+                  <span className="rating-value">{alphaW ? `αw ${alphaW}` : '—'}</span>
                   <span className="rating-label">{t('patterns.ratingLabel')}</span>
                 </div>
               </div>
+              {/* "Class A" only because the data αw (0.90) is ≥ 0.90 */}
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
                 <span className="badge-text">{tPage('classA')}</span>
@@ -542,14 +550,19 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             </div>
 
             <div className="metric-cards">
-              <div className="metric-card">
-                <div className="metric-value">90%</div>
-                <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
-              </div>
-              <div className="metric-card">
-                <div className="metric-value">B-s1, d0</div>
-                <div className="metric-label">{t('acoustics.fireRating')}</div>
-              </div>
+              {absorbedPct !== null && (
+                <div className="metric-card">
+                  <div className="metric-value">{absorbedPct}%</div>
+                  <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
+                </div>
+              )}
+              {fireClass && (
+                <div className="metric-card">
+                  {/* Fire class from src/data/products.ts (FR core) */}
+                  <div className="metric-value">{fireClass}</div>
+                  <div className="metric-label">{t('acoustics.fireRating')}</div>
+                </div>
+              )}
             </div>
 
             <div className="metric-cards">
@@ -603,7 +616,7 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
               </svg>
             </div>
             <h4>{t('acoustics.benefit3Title')}</h4>
-            <p>{t('acoustics.benefit3')}</p>
+            {fireClass && <p>{t('acoustics.benefit3', { fireClass })}</p>}
           </div>
         </div>
       </section>
@@ -685,21 +698,18 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             </p>
             <div className="bespoke-features">
               <div className="bespoke-item">
-                <span className="bespoke-icon">💡</span>
                 <div>
                   <h4>{t('bespoke.backlitTitle')}</h4>
                   <p>{t('bespoke.backlitDesc')}</p>
                 </div>
               </div>
               <div className="bespoke-item">
-                <span className="bespoke-icon">📐</span>
                 <div>
                   <h4>{t('bespoke.customDimTitle')}</h4>
                   <p>{t('bespoke.customDimDesc')}</p>
                 </div>
               </div>
               <div className="bespoke-item">
-                <span className="bespoke-icon">🔄</span>
                 <div>
                   <h4>{t('bespoke.patternTitle')}</h4>
                   <p>{t('bespoke.patternDesc')}</p>
@@ -721,28 +731,27 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">🌲</span>
                 <div>
                   <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🏗️</span>
                 <div>
                   <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
-              <div className="sustain-item">
-                <span className="sustain-icon">🚚</span>
-                <div>
-                  <h4>{t('sustainability.badge3')}</h4>
-                  <p>{t('sustainability.badge3Desc')}</p>
+              {/* Origin badge: only when the plant is confirmed in product data (PL → Częstochowa) */}
+              {PRODUCT.madeIn === 'PL' && (
+                <div className="sustain-item">
+                  <div>
+                    <h4>{t('sustainability.badge3')}</h4>
+                    <p>{t('sustainability.badge3Desc')}</p>
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="sustain-item">
-                <span className="sustain-icon">📋</span>
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
                   <p>{t('sustainability.badge4Desc')}</p>
@@ -783,22 +792,18 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
 
         <div className="accessories-grid">
           <div className="accessory-card">
-            <div className="accessory-icon">📏</div>
             <h4>{t('accessories.item1Title')}</h4>
             <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">🔲</div>
             <h4>{t('accessories.item2Title')}</h4>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">⚙️</div>
             <h4>{t('accessories.item3Title')}</h4>
             <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">💡</div>
             <h4>{t('accessories.item4Title')}</h4>
             <p>{t('accessories.item4Desc')}</p>
           </div>

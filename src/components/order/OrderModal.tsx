@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/navigation';
+import Icon from '@/components/ui/Icon';
 
 import { analytics } from '@/lib/analytics';
 import type { ConfiguratorData } from '@/lib/catalogue/load';
@@ -399,7 +400,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
   };
 
   /**
-   * Another model (Duo Work ↔ Duo Flex): keep every choice the new model
+   * Another model (Duo Work / Duo Flex): keep every choice the new model
    * also has (colour, felt, table, door, socket, accessories), default the
    * rest — an arrow-key slip on the model radio must not wipe the
    * configuration.
@@ -852,7 +853,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
           {step === 'done' && result && (
             <div className="om-done" tabIndex={-1}>
               <p className="om-done-icon" aria-hidden="true">
-                ✅
+                <Icon name="check-circle" />
               </p>
               <p className="om-done-reference">
                 {t('success.referenceLabel')}: <strong>{result.reference}</strong>
@@ -1283,8 +1284,14 @@ export default function OrderModal({ open, onClose, slug, productName, configura
           padding: 1rem 0 0.5rem;
         }
         .om-done-icon {
-          font-size: 2.6rem;
+          display: flex;
+          justify-content: center;
           margin: 0 0 0.6rem;
+          color: #2e7d32;
+        }
+        .om-done-icon :global(svg) {
+          width: 42px;
+          height: 42px;
         }
         .om-done-reference {
           font-size: 1.05rem;

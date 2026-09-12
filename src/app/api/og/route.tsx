@@ -88,6 +88,9 @@ const PAGE_TITLES: Record<string, string> = {
   contact: 'Get in Touch',
   faq: 'Frequently Asked Questions',
   blog: 'Insights and Articles',
+  samples: 'Order a Sample Kit',
+  'acoustic-calculator': 'Reverberation Time Calculator',
+  manufacturing: 'Our Two Plants',
 };
 
 export async function GET(req: NextRequest) {

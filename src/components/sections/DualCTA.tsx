@@ -1,14 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
-import SampleKitModal from './SampleKitModal';
 
 export default function DualCTA() {
   const t = useTranslations('dualCta');
-  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
@@ -30,12 +27,12 @@ export default function DualCTA() {
             <span className="cta-eyebrow">{t('left.eyebrow')}</span>
             <h3>{t('left.title')}</h3>
             <p>{t('left.subtitle')}</p>
-            <button className="dcta-btn-warm" onClick={() => setModalOpen(true)}>
+            <Link href="/samples" prefetch={false} className="dcta-btn-warm">
               {t('left.cta')}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14m-7-7l7 7-7 7" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -64,9 +61,6 @@ export default function DualCTA() {
           </div>
         </div>
       </section>
-
-      {/* Modal (separate file — avoids styled-jsx mixed-mode panic) */}
-      <SampleKitModal open={modalOpen} onClose={() => setModalOpen(false)} />
 
       {/* All styles global — Link renders <a> so scoped hash never applies */}
       <style jsx global>{`
@@ -143,7 +137,7 @@ export default function DualCTA() {
           line-height: 1.65;
         }
 
-        /* ── Warm button — also used on <button> so needs global */
+        /* ── Warm button — on <Link> so needs global */
         .dcta-btn-warm {
           display: inline-flex;
           align-items: center;

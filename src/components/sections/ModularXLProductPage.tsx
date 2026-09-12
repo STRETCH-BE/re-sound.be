@@ -22,12 +22,12 @@ export default function ModularXLProductPage(slots: BoothSlots) {
       ]}
       showGrowthDiagram
       features={[
-        { iconKey: '📈', key: 'modular' },
-        { iconKey: '🌬️', key: 'ventilation' },
-        { iconKey: '🔌', key: 'electrics' },
-        { iconKey: '💡', key: 'lighting' },
-        { iconKey: '♿', key: 'accessibility' },
-        { iconKey: '🛡️', key: 'safety' },
+        { iconKey: 'modular', key: 'modular' },
+        { iconKey: 'ventilation', key: 'ventilation' },
+        { iconKey: 'electrics', key: 'electrics' },
+        { iconKey: 'lighting', key: 'lighting' },
+        { iconKey: 'accessibility', key: 'accessibility' },
+        { iconKey: 'safety', key: 'safety' },
       ]}
       addons={[
         { id: 'meetingTable',    image: '/images/products/modular-xl/addon-table.jpg' },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "Akustikkpaneler og telefonbokser, laget i Belgia | Re-Sound",
+    "homeTitle": "Akustikkpaneler og telefonbokser — belgisk produsent | Re-Sound",
     "homeDescription": "Sirkulære akustikkpaneler (tekstil, rWood-finer, rPET) og telefonbokser til kontor, laget i våre egne fabrikker i Belgia og Polen. Gratis returordning.",
     "productsTitle": "Produkter",
     "productsDescription": "Sirkulære akustikkpaneler og telefonbokser fra egne fabrikker: tekstil (Interior, Solid, Divide), rWood, rPET og bokser (Solo Flex, Duo, Modular XL).",
@@ -13,7 +13,7 @@
     "blogTitle": "Blogg",
     "blogDescription": "Innsikt om sirkulær økonomi, akustikk og bærekraftig design fra Re-Sound-teamet.",
     "interiorTitle": "Interior akustiske veggpaneler | Re-Sound",
-    "interiorDescription": "Modulære akustiske veggpaneler av resirkulert tekstil: klasse A-absorpsjon (αw 1,0), avtakbart vaskbart trekk, laget i Belgia. Fra {fromPrice} per sett.",
+    "interiorDescription": "Modulære akustiske veggpaneler av resirkulert tekstil: klasse A-absorpsjon (αw {alphaW}), avtakbart vaskbart trekk, laget i Belgia. Fra {fromPrice} per sett.",
     "solidTitle": "Solid akustiske veggpaneler | Re-Sound",
     "solidDescription": "Storformat akustiske veggpaneler (1200 × 600 mm) for kraftig lydabsorpsjon. Krokmontering, kjerne av resirkulert tekstil, laget i Belgia.",
     "divideTitle": "Divide frittstående akustikkskjermer | Re-Sound",
@@ -23,7 +23,7 @@
     "rwoodPerfTitle": "rWood Perf — perforerte akustikkpaneler i tre | Re-Sound",
     "rwoodPerfDescription": "Perforerte akustikkpaneler i tre med FSC-sertifisert finer: fire perforeringsmønstre for bredbåndsabsorpsjon, 8 overflater, brannhemmende kjerne.",
     "rwoodMicroTitle": "rWood Micro — mikroperforerte akustikkpaneler i tre | Re-Sound",
-    "rwoodMicroDescription": "Mikroperforerte akustikkpaneler i tre (0,5 mm) med FSC-sertifisert finer: nesten usynlig mønster, brannklasse B-s1,d0, mulighet for bakbelysning.",
+    "rwoodMicroDescription": "Mikroperforerte akustikkpaneler i tre (0,5 mm) med FSC-sertifisert finer: nesten usynlig mønster, brannklasse {fireClass}, mulighet for bakbelysning.",
     "rwoodVeneerTitle": "rWood Panel — akustikkpaneler i trefiner, 10 tresorter | Re-Sound",
     "rwoodVeneerDescription": "Glatte akustikkpaneler i trefiner i 10 tresorter: møbelkvalitet, FSC-sertifisert, EPD tilgjengelig. Børstet, beiset og lakkert, klare til montering.",
     "rpetGrooveTitle": "rPET Groove — rillede PET-akustikkpaneler, 12 farger | Re-Sound",
@@ -67,17 +67,18 @@
       "badge": "rWood Serie · Naturlig Overflate Linje",
       "title": "Sirkulære akustikkpaneler og telefonbokser,",
       "titleHighlight": "fra våre egne fabrikker",
-      "subtitle": "Ekte trefiner på en høytydende gjenvunnet akustisk kjerne. Biofilisk varme og klasse A lydabsorpsjon i ett panel.",
+      "subtitle": "Ekte trefiner på en gjenvunnet akustisk kjerne. Biofilisk varme og lydabsorpsjon, målt per produkt — vakkert kombinert.",
       "ctaPrimary": "Oppdag rWood",
       "ctaSecondary": "Se overflater",
       "statVeneers": "Finer-tresorter",
-      "statThickness": "Tykkelse",
-      "statAbsorption": "Absorpsjon",
-      "statFire": "Brannklasse",
       "pill1": "Ekte trefiner",
       "pill2": "Resirkulert kjerne",
       "pill3": "Massiv & perforert",
-      "imageAlt": "rWood Micro akustikkpanel med naturlig trefiner, nærbilde av overflaten"
+      "imageAlt": "rWood Micro akustikkpanel med naturlig trefiner, nærbilde av overflaten",
+      "statCertified": "Sertifisert finer",
+      "statTypes": "Paneltyper",
+      "statSizes": "Mål på forespørsel",
+      "statSizesValue": "Tilpasset"
     },
     "circular": {
       "badge": "Sirkulær Serie · Interior · Solid · Divide · rPET",
@@ -86,27 +87,27 @@
       "subtitle": "Gjenvunnet inngang. Gratis tilbaketaking ved endt levetid. Vårt sirkulære system sikrer at din akustiske investering aldri blir avfall.",
       "ctaPrimary": "Se alle produkter",
       "ctaSecondary": "Slik fungerer det",
-      "statRecycled": "Gjenvunnet inngang",
       "statLandfill": "Deponiavfall",
       "statFreeLabel": "Gratis",
       "statTakeback": "Tilbaketaking",
       "statColors": "Farger",
-      "pill1": "100 % resirkulert",
+      "pill1": "Resirkulert råstoff",
       "pill2": "Gratis returordning",
       "pill3": "50+ farger",
       "pill4": "Egne fabrikker",
-      "imageAlt": "Interior sirkulære akustikkpaneler i et moderne kontor"
+      "imageAlt": "Interior sirkulære akustikkpaneler i et moderne kontor",
+      "statPlants": "Egne fabrikker, BE og PL"
     }
   },
   "ticker": {
     "recycled": "Gjenvunnede materialer",
-    "classA": "Klasse A lydabsorpsjon",
-    "fire": "Brannklasse B-s1,d0",
     "takeback": "Gratis tilbaketakingsprogram",
     "veneer": "Ekte trefiner overflater",
     "colors": "Over 50 standardfarger",
     "custom": "Spesialmål på forespørsel",
-    "factories": "Fra egne fabrikker"
+    "factories": "Produsert i våre egne fabrikker i Belgia og Polen",
+    "tested": "Testet per produkt: ISO 11654 / EN 13501-1",
+    "returnable": "Designet for å komme tilbake"
   },
   "materials": {
     "tag": "DET VI BRUKER",
@@ -143,7 +144,7 @@
     "specStandardVal": "Spesialmål på forespørsel",
     "swatchesTag": "Finerkolleksjon",
     "swatchesTitle": "Velg din naturlige finish",
-    "swatchesBody": "Fem tresorter, hver med sin egen karakter. Alle lagt på en 100 % resirkulert akustisk kjerne.",
+    "swatchesBody": "Fem tresorter, hver med sin egen karakter. Alle lagt på en resirkulert akustisk kjerne.",
     "ctaFullSpec": "Fullstendige spesifikasjoner",
     "ctaDatasheet": "Last ned datablad",
     "ctaOrderSamples": "Bestill prøvesett",
@@ -154,7 +155,7 @@
     "tag": "VÅRE PRODUKTER",
     "title": "Akustikkløsninger",
     "titleHighlight": "for alle rom.",
-    "mosaicSubtitle": "Fra modulære veggpaneler til frittstående avdelere — alle laget av 100% gjenvunne materialer, alle designet for å returnere.",
+    "mosaicSubtitle": "Fra modulære veggpaneler til frittstående avdelere — resirkulert innhold i hver serie, og alle designet for å komme tilbake.",
     "viewAll": "Se alle produkter",
     "learnMore": "Les mer",
     "pageTitle": "Våre produkter",
@@ -188,7 +189,7 @@
     "interior": {
       "title": "Interior",
       "description": "Utvidbare akustikkpaneler for vegger og himlinger. Perfekt for kontorer, restauranter og offentlige rom.",
-      "fullDescription": "Våre Interior paneler er designet for sømløs integrasjon i alle rom. Laget av 100% gjenvunne tekstiler og tilgjengelig i over 50 farger."
+      "fullDescription": "Våre Interior paneler er designet for sømløs integrasjon i alle rom. Laget av resirkulerte tekstilfibre gir de eksepsjonell lydabsorpsjon samtidig som de tilfører rommet visuell varme."
     },
     "solid": {
       "title": "Solid",
@@ -203,12 +204,12 @@
     "rwood-groove": {
       "title": "rWood - Groove",
       "description": "Premium akustiske trepaneler med naturlige eik- og valnøttfiner. Elegant design med overlegen lydkontroll.",
-      "fullDescription": "rWood - Groove paneler kombinerer den naturlige skjønnheten til FSC-sertifisert tre med enestående akustisk ytelse."
+      "fullDescription": "rWood - Groove paneler kombinerer den naturlige skjønnheten til FSC-sertifisert tre med enestående akustisk ytelse. Med presisjonsfreste riller og integrert filtbakside forvandler disse panelene ethvert rom med varme og stil. Den målte absorpsjonsverdien finner du på produktsiden."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
       "description": "Bærekraftige rillede akustikkpaneler av resirkulert PET. Moderne estetikk med utmerket akustisk ytelse.",
-      "fullDescription": "rPET - Groove paneler har et karakteristisk lineært mønster skapt av 100% gjenvunne PET-flasker."
+      "fullDescription": "rPET - Groove paneler har et karakteristisk lineært mønster skapt av resirkulerte PET-flasker. Det rillede designet maksimerer lydabsorpsjonen samtidig som det gir vegger og himlinger en moderne tekstur."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
@@ -228,7 +229,7 @@
     "rpet-flex-groove": {
       "title": "rPET - Flex Groove",
       "description": "Fleksible rillede akustikkpaneler laget av gjenvunnet PET. Allsidige installasjonsalternativer med moderne estetikk.",
-      "fullDescription": "rPET - Flex Groove tilbyr det samme karakteristiske rillede designet som våre standard rPET-paneler, med ytterligere installasjonsfleksibilitet."
+      "fullDescription": "rPET - Flex Groove tilbyr det samme karakteristiske rillede designet som våre standard rPET-paneler, med ekstra installasjonsfleksibilitet. Laget av resirkulerte PET-flasker gir disse panelene utmerket akustisk ytelse samtidig som de tilpasser seg en rekke monteringskonfigurasjoner."
     },
     "rwood-perf": {
       "title": "rWood - Perf",
@@ -242,7 +243,7 @@
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
-      "description": "Glatte akustiske trefiner paneler. Tidløs eleganse med klasse A lydabsorpsjon for premium rom.",
+      "description": "Rene, glatte akustikkpaneler i trefiner. Tidløs eleganse og stille komfort for premium rom.",
       "fullDescription": "rWood - Veneer tilbyr den rene, uavbrutte skjønnheten til FSC-sertifisert trefiner støttet av høytydende akustisk ytelse."
     },
     "highlights": {
@@ -252,21 +253,21 @@
       },
       "recyclable": {
         "title": "Resirkulerbar",
-        "value": "100 % ved endt levetid"
+        "value": "Gratis retur ved endt levetid"
       },
       "origin": {
         "title": "Opprinnelse",
-        "value": "Laget i Belgia"
+        "value": "Våre egne fabrikker i Belgia og Polen"
       }
     },
     "features": {
       "performance": {
         "title": "Høy ytelse",
-        "description": "Klasse A-lydabsorpsjon for optimal akustisk komfort i ethvert miljø."
+        "description": "Lydabsorpsjon målt per produkt etter ISO 11654 — verdien står på hver produktside."
       },
       "circular": {
         "title": "Helt sirkulær",
-        "description": "Laget av resirkulerte materialer og 100 % resirkulerbar ved endt levetid."
+        "description": "Laget av resirkulerte materialer og tas kostnadsfritt i retur ved endt levetid."
       },
       "customization": {
         "title": "Tilpasningsmuligheter",
@@ -288,6 +289,12 @@
     "solo-eco": {
       "title": "Solo ECO",
       "description": "Telefonboks til kontor for én person, innstegsmodell: 1,1 m² fotavtrykk, ståbord, landsspesifikt uttak med USB, lukket bakvegg eller bakvegg i glass."
+    },
+    "applications": {
+      "educationSports": "Utdanning og idrett",
+      "office": "Kontor",
+      "private": "Privat",
+      "healthcare": "Helsevesen"
     }
   },
   "specs": {
@@ -300,7 +307,7 @@
     "absorption": "Absorpsjonskoeffisient",
     "fireClass": "Brannklassifisering",
     "material": "Materiale",
-    "recycledTextiles": "100% Gjenvunnede tekstiler",
+    "recycledTextiles": "Resirkulerte tekstilfibre",
     "certifications": "Sertifiseringer"
   },
   "why": {
@@ -312,7 +319,7 @@
     "features": {
       "performance": {
         "title": "Overlegen ytelse",
-        "description": "Klasse A-absorpsjon (αw 0,95–1,00) for optimal akustisk komfort."
+        "description": "Absorpsjon målt per produkt etter ISO 11654 — verdien står på hver produktside."
       },
       "durability": {
         "title": "Bygget for å vare",
@@ -326,7 +333,8 @@
         "title": "Fullt tilpassbar",
         "description": "Over 50 farver, specialmål og forskellige monteringsmuligheder."
       }
-    }
+    },
+    "freeLabel": "Gratis"
   },
   "circular": {
     "tag": "SIRKULÆR ØKONOMI",
@@ -335,7 +343,6 @@
     "subtitle": "Panelene våre begynner livet som avfall og kan returnere for å bli nye paneler—og skaper dermed en uendelig verdisirkel.",
     "loopLabel": "Uendelig kretsløp",
     "cta": "Slik fungerer det",
-    "statRecycled": "Resirkulert råstoff",
     "statLandfill": "Deponi",
     "statFreeLabel": "Gratis",
     "statTakeback": "Returordning",
@@ -357,7 +364,8 @@
         "description": "Gratis henting og resirkulering til nye paneler."
       }
     },
-    "imageAlt": "Sirkulær økonomi – gjenvinningsprosess for akustikkpaneler"
+    "imageAlt": "Sirkulær økonomi – gjenvinningsprosess for akustikkpaneler",
+    "statPlants": "Egne fabrikker"
   },
   "dualCta": {
     "left": {
@@ -731,7 +739,8 @@
     "terms": "Tjenestevilkår",
     "countryBelgium": "Belgia",
     "reviewUs": "Gi oss en anmeldelse på Google",
-    "priceGuide": "Priser på telefonbokser"
+    "priceGuide": "Priser på telefonbokser",
+    "manufacturing": "Produksjon"
   },
   "cookies": {
     "title": "Informasjonskapselinnstillinger",
@@ -890,7 +899,12 @@
       "finish": "Overflate",
       "epd": "EPD tilgjengelig",
       "fscCertified": "FSC® sertifisert",
-      "dimPanelWidth": "Panelbredde"
+      "dimPanelWidth": "Panelbredde",
+      "absorptionClassB": "Klasse B",
+      "absorptionClassC": "Klasse C",
+      "absorptionClassD": "Klasse D",
+      "absorptionClassE": "Klasse E",
+      "oekoTexStandard100": "OEKO-TEX® Standard 100"
     },
     "gallery": {
       "tag": "INSPIRASJON",
@@ -974,8 +988,8 @@
       "title": "Interior: modulære akustiske veggpaneler av resirkulert tekstil",
       "tagline": "Modulær akustikk, sirkulær av design",
       "description": "Transformer rommet ditt med Re-Sound Interior—et komplett akustisk veggsystem laget av gjenvunne materialer.",
-      "uspAbsorption": "αw 1,0 Absorpsjon",
-      "uspRecyclable": "100% Resirkulerbar",
+      "uspAbsorption": "αw {alphaW} absorpsjon",
+      "uspRecyclable": "Resirkulerbar via gratis retur",
       "uspOrigin": "Laget i Belgia",
       "priceFrom": "Fra",
       "priceUnit": "ekskl. mva. per sett med 3 moduler",
@@ -994,7 +1008,7 @@
       "tag": "BÆREKRAFT",
       "title": "Sirkulær innvendig, vakker utvendig",
       "description": "Hvert Interior panel begynner livet som kasserte tekstiler—klær, møbeltrekk og industrielt tøyavfall.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Gjenvunnet innhold",
       "stat2Value": "0",
       "stat2Label": "Avfall til deponi",
@@ -1022,7 +1036,7 @@
     "acoustics": {
       "tag": "YTELSE",
       "title": "Overlegen lydabsorpsjon",
-      "description": "Med en vektet lydabsorpsjonskoeffisient (αw) på 1,0 leverer Re-Sound Interior maksimal akustisk ytelse."
+      "description": "Med en vektet lydabsorpsjonskoeffisient (αw) på {alphaW} leverer Re-Sound Interior maksimal akustisk ytelse. Både høye og lave frekvenser absorberes effektivt, noe som skaper komfortable og produktive rom."
     },
     "specs": {
       "tag": "TEKNISK",
@@ -1044,7 +1058,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Bærekraft",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% resirkulerbar",
+      "endOfLifeValue": "Gratis retur og resirkulering",
       "vocValue": "Lav / A+",
       "installTitle": "Installasjon",
       "mountingValue": "Veggskinnesystem",
@@ -1066,12 +1080,12 @@
           "answer": "Ja. Trekket kan tas av og maskinvaskes på 30 °C. Kjernen av resirkulert tekstil blir værende i panelet og påvirkes ikke."
         },
         "absorptionRating": {
-          "question": "Hva er forskjellen mellom αw 1,0 og NRC 0,95?",
-          "answer": "Begge måler absorpsjon, men etter ulike standarder. αw (ISO 11654) er den europeiske enkeltverdien; NRC (ASTM C423) er den amerikanske motparten. αw 1,0 og NRC 0,95 angir samme Klasse A-ytelse."
+          "question": "Hva er forskjellen mellom αw {alphaW} og NRC {nrc}?",
+          "answer": "Begge måler absorpsjon, men etter ulike teststandarder. αw (ISO 11654) er den europeiske enkeltverdien; NRC (ASTM C423) er den amerikanske motparten. αw {alphaW} og NRC {nrc} angir samme klasse A-ytelse."
         },
         "breeamLeed": {
           "question": "Kvalifiserer dette produktet for BREEAM- eller LEED-poeng?",
-          "answer": "Ja. Resirkulert innhold, lave VOC-utslipp og tilbakeleveringsprogrammet bidrar til BREEAM Mat 03 og LEED MR-poeng. En EPD er tilgjengelig på forespørsel."
+          "answer": "Ja. Resirkulert innhold, lave VOC-utslipp og returordningen bidrar til BREEAM Mat 03- og LEED MR-poeng."
         },
         "installMethod": {
           "question": "Hvordan monteres panelene?",
@@ -1094,7 +1108,6 @@
       "tagline": "Høytytende akustikk, ubesværet installasjon",
       "description": "Møt Re-Sound Solid—din høytydende akustiske veggpanel designet for maksimal ytelse med minimal innsats.",
       "usp1": "Høy absorpsjon",
-      "usp2": "1200 × 600 mm",
       "usp3": "Krokmontasje",
       "colorSelector": "Velg farge",
       "priceUnit": "ekskl. mva. per panel",
@@ -1130,7 +1143,7 @@
       "tag": "BÆREKRAFT",
       "title": "Sirkulær av design",
       "description": "Re-Sound Solid er nøye designet med sirkularitet som kjernen. Laget av gjenvunne tekstiler og iboende bærekraftig.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Gjenvunnet innhold",
       "stat2Value": "0",
       "stat2Label": "Avfall til deponi",
@@ -1153,7 +1166,7 @@
       "benefit3Title": "Økt konsentrasjon",
       "benefit3": "Minimer forstyrrende bakgrunnsstøy",
       "benefit4": "Stort format til højtydende resultater",
-      "ratingValue": "αw 0,95",
+      "ratingValue": "αw {alphaW}",
       "ratingLabel": "Klasse A"
     },
     "specs": {
@@ -1164,7 +1177,7 @@
       "thicknessValue": "45 mm",
       "weightValue": "~4,5 kg per panel",
       "acousticsTitle": "Akustisk Ytelse",
-      "alphaValue": "0.95",
+      "alphaValue": "1.0",
       "classValue": "Klasse A",
       "nrcValue": "0.90",
       "materialsTitle": "Materialer",
@@ -1175,7 +1188,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Bærekraft",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% resirkulerbar",
+      "endOfLifeValue": "Gratis retur og resirkulering",
       "installTitle": "Installasjon",
       "mountingValue": "Krokskinesystem",
       "toolsValue": "Bor, vaterpas",
@@ -1185,7 +1198,7 @@
       "coverValue2": "Gjenvunnet stoff",
       "binderRow": "Bindemiddel",
       "endOfLife": "Endt levetid",
-      "endOfLifeVal": "100% resirkulerbar",
+      "endOfLifeVal": "Gratis retur og resirkulering",
       "mounting": "Montering",
       "mountingVal": "Krokmontasjesystem",
       "installTime": "Installasjonstid",
@@ -1216,8 +1229,8 @@
           "answer": "Et standard Solid-panel 1200 × 600 mm veier ca. 4,5 kg. Den lette konstruksjonen gjør at veggfester sjelden trenger forsterkning."
         },
         "absorptionRating": {
-          "question": "Hva er forskjellen mellom αw 1,0 og NRC 0,95?",
-          "answer": "Begge måler absorpsjon, men etter ulike standarder. αw (ISO 11654) er den europeiske enkeltverdien; NRC (ASTM C423) er den amerikanske motparten. αw 1,0 og NRC 0,95 angir samme Klasse A-ytelse."
+          "question": "Hva er forskjellen mellom αw {alphaW} og NRC {nrc}?",
+          "answer": "Begge måler absorpsjon, men etter ulike teststandarder. αw (ISO 11654) er den europeiske enkeltverdien; NRC (ASTM C423) er den amerikanske motparten. αw {alphaW} og NRC {nrc} angir samme klasse A-ytelse."
         }
       }
     },
@@ -1271,7 +1284,8 @@
       "title": "Magnetisk tilkobling",
       "description": "Modulene kobler seg enkelt via diskrete magneter integrert i stoffet. Sett sammen og ta fra hverandre på sekunder uten verktøy.",
       "snapLabel": "Klikk sammen",
-      "autoAlign": "Automatisk justering"
+      "autoAlign": "Automatisk justering",
+      "doneLabel": "Ferdig"
     },
     "modular": {
       "tag": "FLEKSIBILITET",
@@ -1288,7 +1302,8 @@
       "description": "Som alle Re-Sound produkter er Divide nøye designet med sirkularitet som kjernen. Laget av gjenvunne materialer.",
       "recycledLabel": "Gjenvunnet innhold",
       "wasteLabel": "Avfall til deponi",
-      "recycleLabel": "Resirkuleringsykler"
+      "recycleLabel": "Resirkuleringsykler",
+      "stat1Value": "{pct} %"
     },
     "acoustics": {
       "tag": "YTELSE",
@@ -1321,7 +1336,7 @@
       "magnets": "Magneter",
       "magnetsVal": "Neodym",
       "endOfLife": "Endt levetid",
-      "endOfLifeVal": "100% resirkulerbar",
+      "endOfLifeVal": "Gratis retur og resirkulering",
       "connection": "Kobling",
       "connectionVal": "Magnetisk lås",
       "setupTime": "Oppsettingstid",
@@ -1375,9 +1390,9 @@
       "tag": "AKUSTIKKPANELER AV RESIRKULERT PET",
       "title": "rPET Groove: rillede PET-akustikkpaneler i 12 farger",
       "tagline": "Fra Flasker til Stillhet",
-      "description": "rPET - Groove paneler kombinerer moderne estetikk med enestående akustisk ytelse. Laget 100% av gjenvunne PET-flasker, tilbyr disse høytetthetspanelene klasse A lydabsorpsjon mens de avleder plastavfall fra deponier.",
-      "usp1": "100% gjenvunnet PET",
-      "usp2": "Klasse A",
+      "description": "Forvandle rommet ditt med rPET - Groove akustikkpaneler. {pct, select, unknown {Laget av resirkulerte plastflasker} other {Laget av {pct} % resirkulerte plastflasker}} kombinerer disse elegante, rillede panelene moderne design med enestående lydabsorpsjon. Effektivitet møter eleganse.",
+      "usp1": "{pct, select, unknown {Resirkulerte PET-flasker} other {{pct} % resirkulert PET}}",
+      "usp2": "Opptil NRC 0,90",
       "usp3": "12 Designfarger",
       "colorSelector": "Velg farge",
       "description2": ""
@@ -1386,8 +1401,8 @@
       "tag": "OVERSIKT",
       "title": "Sirkulær Stillhet",
       "description": "rPET - Groove-paneler gir ethvert rom et moderne preg samtidig som de reduserer støyplager. Det synlige spiledesignet skaper visuell dybde og tekstur – perfekt for moderne kontorer, møterom, lobbyer, restauranter og resepsjonsområder.",
-      "feature1": "100% laget av gjenvunne post-forbruker PET-flasker",
-      "feature2": "Klasse A lydabsorpsjon (NRC opptil 0,90)",
+      "feature1": "{pct, select, unknown {Laget av resirkulerte plastflasker} other {Laget av {pct} % resirkulerte plastflasker}}",
+      "feature2": "CNC-presisjonsskårne rillemønstre",
       "feature3": "Holdbar og fargerik finish takket være dope-farging",
       "feature4": "Tilgjengelig i tykkelsene 12 mm, 24 mm og 36 mm",
       "description2": ""
@@ -1481,8 +1496,8 @@
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Sirkulær fra Kilden",
-      "description": "rPET - Groove-paneler legemliggjør den sirkulære økonomien. De er laget utelukkende av resirkulert plast etter forbrukerleddet og kan resirkuleres på nytt ved endt levetid. Vi tilbyr gratis returordning slik at ingenting går til spille.",
-      "badge1": "100 % resirkulert",
+      "description": "rPET - Groove-paneler legemliggjør den sirkulære økonomien. {pct, select, unknown {Laget av resirkulert plast etter forbrukerleddet} other {Laget av {pct} % resirkulert plast etter forbrukerleddet}} kan de resirkuleres på nytt ved endt levetid. Vi tilbyr gratis returordning slik at ingenting går til spille.",
+      "badge1": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert}}",
       "badge2": "Sirkulær Retur",
       "badge3": "Belgisk Produksjon",
       "badge4": "OEKO-TEX® Sertifisert",
@@ -1522,7 +1537,7 @@
       "certVOC": "Lav emisjon / E1",
       "certVOCValue": "Lav emisjon / E1",
       "certRecycled": "Gjenvunnet innhold",
-      "certRecycledValue": "GRS-sertifisert",
+      "certRecycledValue": "PET-flasker etter forbrukerleddet",
       "applicationsTitle": "Anvendelser",
       "appInstall": "Installasjon",
       "appInstallValue": "Vegger og tak",
@@ -1556,18 +1571,19 @@
       "appWalls": "Veggpaneler",
       "appCeilings": "Takpaneler",
       "appEnvironment": "Miljø",
-      "matRecycledPET": "100% gjenvunnet PET",
+      "matRecycledPET": "Resirkulert PET-filt",
       "matDensity": "Tetthet",
       "colorsLabel": "Farger",
       "colorsVal": "12 standardfarger",
       "customColors": "Spesialfarger",
       "customColorsVal": "Tilgjengelig (MOQ gjelder)",
       "certEPD": "EPD tilgjengelig",
-      "certGRS": "GRS-sertifisert",
+      "certGRS": "PET-flasker etter forbrukerleddet",
       "appIdealFor": "Ideell for",
       "appIdealVal": "Kontorer, møterom, lobbyer",
       "appAlso": "Også egnet",
-      "appAlsoVal": "Restauranter, hoteller, skoler"
+      "appAlsoVal": "Restauranter, hoteller, skoler",
+      "nrcByThickness": "NRC (etter tykkelse)"
     },
     "gallery": {
       "tag": "INSPIRASJON",
@@ -1592,7 +1608,7 @@
       "colorChart": "Fargekart"
     },
     "cta2": {
-      "freeNote": "Gratis prøver tilgjengelige • Laget i Polen • 100% Gjenvunnet"
+      "freeNote": "Gratis prøver tilgjengelig • Produsert i Polen • {pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}"
     },
     "faq": {
       "questions": {
@@ -1602,7 +1618,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Alle rPET-paneler er klassifisert B-s1,d0 etter EN 13501-1 — den høyeste praktiske klassifiseringen for et innvendig dekorativt materiale, bortsett fra klasse A."
+          "answer": "Etter EN 13501-1 er rPET Groove klassifisert {groove}. Brannsertifikatet ligger i nedlastingsblokken på denne siden; de andre rPET-modellene har sin egen klasse på sine sider."
         },
         "processability": {
           "question": "Kan rPET-paneler kuttes, bores eller males?",
@@ -1645,9 +1661,9 @@
       "tag": "GJENVUNNE PET AKUSTIKKPANELER",
       "title": "rPET Panel: akustikkpanelet av resirkulert PET som bearbeides som MDF",
       "tagline": "Bærekraftig Stillhet, Uendelige Muligheter",
-      "description": "Forvandle ethvert rom med rPET - Panel akustikkpaneler. {pct, select, unknown {Laget av resirkulerte PET-flasker, disse} other {Laget av {pct} % resirkulerte PET-flasker, disse}} lette, men kraftige lydabsorbentene gir maksimal akustisk ytelse med minimal miljøpåvirkning.",
-      "usp1": "100% Resirkulerbart PET",
-      "usp2": "Klasse A αw 0,95",
+      "description": "Forvandle ethvert rom med rPET - Panel akustikkpaneler. {pct, select, unknown {Laget av resirkulerte PET-flasker} other {Laget av {pct} % resirkulerte PET-flasker}} gir disse lette, men kraftige lydabsorbentene maksimal akustisk ytelse med minimal miljøpåvirkning.",
+      "usp1": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}",
+      "usp2": "αw opptil 1,00",
       "usp3": "Lett 3-4 kg/m²",
       "colorSelector": "Velg panelfarge",
       "colorSelectorPlaceholder": "Velg en farge"
@@ -1667,7 +1683,7 @@
       "reason5": "Kombiner med rPET Groove for et komplett designsystem",
       "description": "rPET - Panel omdanner resirkulerte PET-flasker til høytytende akustikkpaneler. Hvert panel holder plastavfall unna deponi og skaper samtidig sunnere og roligere miljøer. Det er det lydabsorberende alternativet til MDF – til en brøkdel av vekten.",
       "feature1": "{pct, select, unknown {Laget av resirkulerte PET-flasker} other {Laget av {pct} % resirkulerte PET-flasker}}",
-      "feature2": "100 % resirkulerbart ved endt levetid",
+      "feature2": "Fullt resirkulerbart ved endt levetid",
       "feature3": "Lettvekt: kun 3-4 kg/m²",
       "feature4": "Fri for kjemiske bindemidler"
     },
@@ -1707,16 +1723,16 @@
       "fiberLabel": "Komprimerte PET-fibre",
       "fiberSublabel": "Lydenergi omdannes til varme",
       "panelThickness": "Paneltykkelse",
-      "soundAbsorbed": "Lyd absorbert",
       "testStandard": "Teststandard",
-      "testConfig": "Testoppsett: 24 mm panel på 50 mm ramme med polyesterullisolasjon oppnår αw 0,95",
-      "certNote": "Uavhengig testet og sertifisert i henhold til ISO 11654"
+      "testConfig": "Testoppsett: 24 mm panel på 50 mm ramme med polyesterullisolasjon",
+      "certNote": "Uavhengig testet og sertifisert i henhold til ISO 11654",
+      "fireClassLabel": "Brannklasse (EN 13501-1)"
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Sirkulær i Kjernen",
       "cert1": "{pct, select, unknown {Resirkulert PET-innhold} other {{pct} % resirkulert innhold}}",
-      "cert2": "Sirkulær Retur",
+      "cert2": "Fullt resirkulerbar",
       "cert3": "OEKO-TEX® Klasse 1",
       "cert4": "Klasse A+ utslipp",
       "badge1Desc": "Laget av PET-flasker etter forbrukerleddet",
@@ -1824,7 +1840,7 @@
       "oekoTexCert": "OEKO-TEX®-sertifikat"
     },
     "cta2": {
-      "freeNote": "Gratis prøver tilgjengelig • Produsert i Polen • 100 % resirkulerbart"
+      "freeNote": "Gratis prøver tilgjengelig • Produsert i Polen • {pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}"
     },
     "faq": {
       "questions": {
@@ -1834,7 +1850,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Alle rPET-paneler er klassifisert B-s1,d0 etter EN 13501-1 — den høyeste praktiske klassifiseringen for et innvendig dekorativt materiale, bortsett fra klasse A."
+          "answer": "Etter EN 13501-1 er rPET Panel klassifisert {panel}. Brannsertifikatet ligger i nedlastingsblokken på denne siden; de andre rPET-modellene har sin egen klasse på sine sider."
         },
         "processability": {
           "question": "Kan rPET-paneler kuttes, bores eller males?",
@@ -1938,10 +1954,10 @@
       "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
       "badge2": "Resirkulert filt",
       "badge2Desc": "Akustisk bakside av resirkulerte materialer",
-      "badge3": "Europeisk produksjon",
-      "badge3Desc": "Reduserte transportutslipp",
-      "badge4": "EPD tilgjengelig",
-      "badge4Desc": "Fullstendig miljøproduktdeklarasjon",
+      "badge3": "Produsert i Polen",
+      "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen)",
+      "badge4": "Gratis returordning",
+      "badge4Desc": "Panelene kommer kostnadsfritt tilbake til oss ved endt levetid",
       "description": "Hvert rWood - Groove-panel er laget med bærekraft i kjernen. Vårt FSC®-sertifiserte tre kommer fra ansvarlig forvaltede skoger, og den akustiske baksiden er laget av resirkulerte materialer.",
       "description2": "Hvert rWood - Groove-panel er laget med bærekraft i kjernen. Vår FSC®-sertifisering garanterer at treet kommer fra ansvarlig forvaltede skoger som gir miljømessige, sosiale og økonomiske fordeler."
     },
@@ -2041,7 +2057,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Standard brannklassifisering er B-s2,d0 i henhold til EN 13501-1. rWood Micro-varianten oppnår B-s1,d0, egnet for de strengeste kravene i offentlige bygninger."
+          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1 — kjernen vi spesifiserer for rømningsveier og offentlige bygg. Brannsertifikatet ligger i nedlastingsblokken på denne siden."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
@@ -2077,8 +2093,8 @@
       "tagline": "Presisjonsperforeringer, maksimal absorpsjon",
       "description": "Høytytende borede akustikkpaneler som kombinerer naturlig treskjønnhet med fremragende lydabsorpsjon. En brannhemmende MDF-kjerne og overfinerte kanter gir høyeste nivå av brannsikkerhet og akustisk kontroll.",
       "usp1": "Runde perforeringer",
-      "usp2": "Brannklasse B2-s1, d0",
-      "usp3": "Opptil klasse B",
+      "usp2": "Brannklasse {fireClass}",
+      "usp3": "αw {alphaW} per mønster",
       "description2": "Høytytende borede akustikkpaneler som kombinerer naturlig treskjønnhet med fremragende lydabsorpsjon. En brannhemmende MDF-kjerne og overfinerte kanter gir høyeste nivå av brannsikkerhet og akustisk kontroll for krevende offentlige rom."
     },
     "patterns": {
@@ -2115,8 +2131,8 @@
       "title": "Designet for lyd",
       "benefit1Title": "Bredbåndsabsorpsjon",
       "benefit1": "Effektiv over hele frekvensspekteret, fra lave til høye frekvenser",
-      "benefit2Title": "Høyeste brannsikkerhet",
-      "benefit2": "B-s1, d0 – den høyeste oppnåelige klassen for trepaneler",
+      "benefit2Title": "Brannsikkerhet",
+      "benefit2": "Brannklasse {fireClass} med den brannhemmende MDF-kjernen (EN 13501-1)",
       "benefit3Title": "Justerbar ytelse",
       "benefit3": "Fire perforeringsmønstre for skreddersydde akustiske løsninger",
       "description": "Presisjonsborede perforeringer lar lydbølgene trenge inn i panelet og videre til absorpsjonslaget bak. Hulrommet bak panelet forsterker i tillegg absorpsjonen av lave frekvenser.",
@@ -2134,7 +2150,8 @@
       "description3": "Presisjonsborede perforeringer lar lydbølgene trenge inn i panelet og videre til hulrommet bak. Kombinert med mineralullisolasjon gir rWood - Perf fremragende bredbåndsabsorpsjon over hele frekvensspekteret – fra dyp bass til høy diskant.",
       "diagramTitle": "Panelsektion",
       "fireRating": "Brannklasse",
-      "noiseReduction": "Støyreduksjon"
+      "noiseReduction": "Støyreduksjon",
+      "ratingPerPattern": "per mønster"
     },
     "installation": {
       "tag": "SKJULT MONTERING",
@@ -2154,15 +2171,15 @@
       "tag": "BÆREKRAFT",
       "title": "Bygget for å vare, bygget ansvarlig",
       "badge1": "FSC® sertifisert",
-      "badge2": "17% resirkulert innhold",
-      "badge3": "Europeisk produksjon",
+      "badge2": "{pct} % resirkulert innhold",
+      "badge3": "Produsert i Polen",
       "badge4": "Ultralave utslipp",
       "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
       "badge2Desc": "Resirkulert materiale fra forbrukeravfall i kjernen",
-      "badge3Desc": "Fornybare energikilder, korte forsyningskjeder",
-      "badge4Desc": "Uten tilsatt formaldehyd, EPD tilgjengelig",
+      "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen) — korte forsyningskjeder",
+      "badge4Desc": "Uten tilsatt formaldehyd",
       "description": "rWood - Perf kombinerer slitesterke, naturlige materialer med en ansvarlig produksjonstilnærming.",
-      "description3": "rWood - Perf kombinerer slitesterke, naturlige materialer med ansvarlig innkjøp. Fibergipskjernen har naturlig lave utslipp – ingen kjemisk impregnering er nødvendig for brannegenskapene – og finerene våre kommer fra bærekraftig forvaltede skoger."
+      "description3": "rWood - Perf kombinerer slitesterke, naturlige materialer med ansvarlig innkjøp: en brannhemmende MDF-kjerne uten tilsatt formaldehyd og finer fra bærekraftig forvaltede skoger."
     },
     "specs": {
       "tag": "TEKNISK",
@@ -2201,7 +2218,7 @@
     "overview": {
       "tag": "BEVIST YTELSE",
       "description": "rWood - Perf-paneler er blant de mest effektive akustiske veggløsningene. Presisjonsborede perforeringer lar lyden passere gjennom den dekorative treoverflaten og inn i den høyabsorberende kjernen.",
-      "feature1": "Brannhemmende MDF-kjerne (B2-s1, d0)",
+      "feature1": "Brannhemmende MDF-kjerne ({fireClass})",
       "feature2": "Overfinerte kanter for sømløse skjøter",
       "feature3": "Lys eller mørk kjerne for et diskret mønster",
       "feature4": "Tilpassede formater opptil 3050 × 1220 mm",
@@ -2222,7 +2239,7 @@
       "item4Desc": "30–50 mm isolasjon for optimal ytelse"
     },
     "cta": {
-      "note": "Gratis prøver tilgjengelig • FSC®-sertifisert • Brannklasse A2 tilgjengelig"
+      "note": "Gratis prøver tilgjengelig • FSC®-sertifisert"
     },
     "faq": {
       "questions": {
@@ -2232,7 +2249,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Standard brannklassifisering er B-s2,d0 i henhold til EN 13501-1. rWood Micro-varianten oppnår B-s1,d0, egnet for de strengeste kravene i offentlige bygninger."
+          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1 — kjernen vi spesifiserer for rømningsveier og offentlige bygg. Brannsertifikatet ligger i nedlastingsblokken på denne siden."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
@@ -2269,7 +2286,7 @@
       "description": "Opplev skjønnheten i naturlig tre med den akustiske ytelsen til avansert mikroperforeringsteknologi. Nesten usynlige hull gir lydabsorpsjon i klasse A, samtidig som det rene, homogene uttrykket til førsteklasses trefiner bevares.",
       "usp1": "Usynlige perforeringer",
       "usp2": "Klasse A absorpsjon",
-      "usp3": "Brannklasse B-s1, d0",
+      "usp3": "Brannklasse {fireClass}",
       "colorSelector": "Velg trefinér"
     },
     "perforation": {
@@ -2298,8 +2315,8 @@
       "benefit1": "Mikrohull og lydkamre samarbeider for overlegen absorpsjon",
       "benefit2Title": "Plassbesparende design",
       "benefit2": "Mindre avhengig av luftspalter – tynnere vegg- og himlingsoppbygging",
-      "benefit3Title": "Høyeste brannsikkerhet",
-      "benefit3": "Brannklasse B-s1, d0 – den høyeste som kan oppnås for mikroperforert tre",
+      "benefit3Title": "Brannsikkerhet",
+      "benefit3": "Brannklasse {fireClass} med den brannhemmende MDF-kjernen (EN 13501-1)",
       "description": "Kombinasjonen av mikroperforeringer i overflaten og tusenvis av større lydinngangskanaler gir eksepsjonell bredbåndsabsorpsjon.",
       "layer1Name": "A-kvalitetsfiner med presisjonsborede hull",
       "layer2Name": "Brannhemmende MDF-kjerne",
@@ -2345,11 +2362,11 @@
       "title": "Ansvarlig produsert",
       "badge1": "FSC®-sertifisert finér",
       "badge2": "Naturlig kjernemateriale",
-      "badge3": "Europeisk produksjon",
+      "badge3": "Produsert i Polen",
       "badge4": "Lave VOC-utslipp",
       "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
       "badge2Desc": "Fiberplatekjerne – en trebasert, brannklassifisert kjerne",
-      "badge3Desc": "Korte forsyningskjeder som holder transportutslippene lave",
+      "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen)",
       "badge4Desc": "E1-klassifisert for sunnere inneluft",
       "description": "rWood - Micro-paneler er utviklet med bærekraft som et grunnprinsipp. FSC®-sertifisert tre, lavemitterende overflatebehandlinger og ansvarlig innkjøpte materialer sikrer miljøansvar gjennom hele produktets livssyklus."
     },
@@ -2396,7 +2413,7 @@
       "description1": "rWood - Micro-paneler kombinerer avansert mikroperforeringsteknologi med førsteklasses trefiner. Fra normal betraktningsavstand er perforeringene helt usynlige – det du ser, er en vakker, homogen treoverflate. Det du hører, er eksepsjonell akustisk komfort.",
       "description2": "Hemmeligheten ligger i kombinasjonen av to akustiske mekanismer: tusenvis av presist utformede mikrohull i overflaten og lydabsorberende kamre i kjernematerialet.",
       "feature1": "Perforeringer usynlige fra normal betraktningsavstand",
-      "feature2": "Ubrennbar fibergipskjerne",
+      "feature2": "Brannhemmende MDF-kjerne med lydkamre",
       "feature3": "Finerte kanter for sømløse skjøter",
       "feature4": "Egnet for vegger og himlinger",
       "feature5": "Tilgjengelig som bakbelyste paneler"
@@ -2432,7 +2449,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Standard brannklassifisering er B-s2,d0 i henhold til EN 13501-1. rWood Micro-varianten oppnår B-s1,d0, egnet for de strengeste kravene i offentlige bygninger."
+          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1 — kjernen vi spesifiserer for rømningsveier og offentlige bygg. Brannsertifikatet ligger i nedlastingsblokken på denne siden."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
@@ -2552,13 +2569,13 @@
       "title": "Ansvarlig Tre",
       "badge1": "FSC® sertifisert",
       "badge2": "Sirkulær tilbaketaking",
-      "badge3": "Europeisk produksjon",
+      "badge3": "Produsert i Polen",
       "badge4": "EPD tilgjengelig",
       "badge5": "Lav VOC",
       "badge1Desc": "Alt trevirke fra ansvarlig forvaltede skoger",
       "badge2Desc": "Gratis retur og resirkulering av paneler ved endt levetid",
       "description": "Hvert rWood - Panel starter med ansvarlig innkjøpt tømmer. Som en del av Re-Sounds forpliktelse til sirkulærøkonomien, maksimerer vi bruken av hver tømmerstokk ved å bearbeide den som finér — og oppnår opptil 40× mer overflateareal enn massivt tømmer fra samme tre.",
-      "badge3Desc": "Korte forsyningskjeder, reduserte transportutslipp",
+      "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen)",
       "badge4Desc": "Fullstendig miljøproduktdeklarasjon",
       "badge5Desc": "E1-klassifisert, oppfyller de strengeste utslippsstandardene",
       "badge6": "Grønn energi",
@@ -2710,7 +2727,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Standard brannklassifisering er B-s2,d0 i henhold til EN 13501-1. rWood Micro-varianten oppnår B-s1,d0, egnet for de strengeste kravene i offentlige bygninger."
+          "answer": "Det avhenger av kjernen. Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1; på standard MDF-kjerne er klassifiseringen D-s2,d0. Spesifiser FR-kjernen for rømningsveier og offentlige bygg."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
@@ -2740,7 +2757,7 @@
       "description": "Den ultimate akustiske løsningen for buede flater. Laget av resirkulert PET-filt med presise V-frestede spor, og disse fleksible panelene tilpasser seg sømløst søyler, buede vegger og enhver arkitektonisk form med en minimumsradius på 500 mm.",
       "usp1": "Min. radius 500mm",
       "usp2": "Branndempende",
-      "usp3": "100% gjenvunnet PET",
+      "usp3": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}",
       "colorSelector": "Velg farge",
       "colorPlaceholder": "Velg en farge",
       "description2": ""
@@ -2785,7 +2802,7 @@
       "feature1Desc": "Reduserer ekko og etterklang",
       "feature2Title": "Branndempende",
       "feature2Desc": "Innebygde brannsikkerhetsegenskaper",
-      "feature3Title": "100 % resirkulert",
+      "feature3Title": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert}}",
       "feature3Desc": "Laget av resirkulerte plastflasker",
       "layer1Label": "Resirkulert PET-filt",
       "layer2Label": "Presisjons-V-skjær",
@@ -2810,8 +2827,8 @@
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Fra flasker til vakre rom",
-      "description": "Hvert Flex-Groove-panel er laget av 100 % resirkulerte PET-plastflasker og gir avfallsmaterialer nytt liv. Vår sirkulære tilnærming sikrer at panelene kan resirkuleres på nytt ved endt levetid.",
-      "badge1": "Resirkulert PET",
+      "description": "Hvert Flex-Groove-panel er laget av {pct, select, unknown {resirkulerte PET-plastflasker} other {{pct} % resirkulerte PET-plastflasker}} og gir avfallsmaterialer nytt liv. Vår sirkulære tilnærming sikrer at panelene kan resirkuleres på nytt ved endt levetid.",
+      "badge1": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}",
       "badge1Desc": "Laget av resirkulerte plastflasker",
       "badge2": "Helt resirkulerbar",
       "badge2Desc": "Kan resirkuleres ved endt levetid",
@@ -2855,7 +2872,7 @@
       "certVOC": "VOC-utslipp",
       "certVOCVal": "Lav emisjon",
       "certRecycled": "Gjenvunnet innhold",
-      "certRecycledVal": "100% verifisert",
+      "certRecycledVal": "100 %",
       "appSurfaces": "Flater",
       "appSurfacesVal": "Vegger, søyler, buede elementer",
       "appEnvironment": "Miljø",
@@ -2896,7 +2913,7 @@
       "description2": "Få et tilpasset tilbud til prosjektet ditt. Teamet vårt hjelper deg med å velge riktig farge og beregne behovet ditt."
     },
     "cta2": {
-      "freeNote": "Gratis prøver tilgjengelig • Produsert i Polen • 100 % resirkulert"
+      "freeNote": "Gratis prøver tilgjengelig • Produsert i Polen • {pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}"
     },
     "faq": {
       "questions": {
@@ -2906,7 +2923,7 @@
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Alle rPET-paneler er klassifisert B-s1,d0 etter EN 13501-1 — den høyeste praktiske klassifiseringen for et innvendig dekorativt materiale, bortsett fra klasse A."
+          "answer": "Etter EN 13501-1 er rPET Flex Groove klassifisert {flex}. Brannsertifikatet ligger i nedlastingsblokken på denne siden; de andre rPET-modellene har sin egen klasse på sine sider."
         },
         "processability": {
           "question": "Kan rPET-paneler kuttes, bores eller males?",
@@ -2999,7 +3016,7 @@
       "rwoodVsRpetVsTextile": {
         "category": "products",
         "question": "Hva er forskjellen mellom rWood, rPET og tekstilserien?",
-        "answer": "Det er tre forskjellige materialfamilier for ulike designhensikter. Tekstilserien (Interior, Solid, Divide) er laget av 100 % resirkulerte tekstilfibre med et stofftrekk — myk, varm, tilgjengelig i flere farger, laget i Belgia. rPET-serien (Panel, Groove, Flex Groove) er laget av 100 % resirkulerte PET-flasker, OEKO-TEX®-sertifisert, og kan bearbeides som MDF (skjære, frese, male); ideell for kraftige farger og skreddersydde installasjoner. rWood-serien (Groove, Perf, Micro, Panel) kombinerer FSC-sertifisert trefinér med en kjerne av resirkulerte fibre, og gir en arkitektonisk premiumoverflate i mer enn 8 tresorter; produsert i Europa."
+        "answer": "Det er tre forskjellige materialfamilier for ulike designhensikter. Tekstilserien (Interior, Solid, Divide) er laget av resirkulerte tekstilfibre (minst 80 % resirkulert innhold) med et stofftrekk — myk, varm, tilgjengelig i flere farger, produsert i vår egen fabrikk i Beveren-Waas (Belgia). rPET-serien (Panel, Groove, Flex Groove) er laget av resirkulerte PET-flasker (rPET Panel og rPET Flex Groove er laget utelukkende av resirkulert PET), OEKO-TEX®-sertifisert, og kan bearbeides som MDF (skjære, frese, male); ideell for kraftige farger og skreddersydde installasjoner. rWood-serien (Groove, Perf, Micro, Panel) kombinerer FSC-sertifisert trefinér med en kjerne av resirkulert filt, og gir en arkitektonisk premiumoverflate i mer enn 8 tresorter; produsert i vår egen fabrikk i Częstochowa (Polen)."
       },
       "fireSafety": {
         "category": "products",
@@ -3014,7 +3031,7 @@
       "whatIsCircular": {
         "category": "sustainability",
         "question": "Hva betyr \"sirkulær\" hos Re-Sound?",
-        "answer": "Sirkulær hos Re-Sound betyr tre ting, innebygd fra starten av designet. For det første, innsatsmateriale: vi bruker resirkulerte materialer der den akustiske ytelsen tillater det — 100 % resirkulerte tekstilfibre i Interior/Solid/Divide-serien, 100 % resirkulert PET i rPET-serien og en kjerne av resirkulerte fibre under det FSC-sertifiserte finéret i rWood-serien. For det andre, slutten av livssyklusen: hvert Re-Sound panel kan returneres via vår gratis retur-tjeneste, og materialene gjenbrukes til nye paneler eller nytt råmateriale i stedet for å havne på fyllingen. For det tredje, design: forbindelser (magnetiske, mekaniske, kroksystemer) er reversible slik at paneler kan fjernes uten ødeleggelse, noe som muliggjør omkonfigurering i løpet av bygningens levetid."
+        "answer": "Sirkulær hos Re-Sound betyr tre ting, innebygd fra starten av designet. For det første, innsatsmateriale: vi bruker resirkulerte materialer der den akustiske ytelsen tillater det — resirkulerte tekstilfibre (minst 80 % resirkulert innhold) i Interior/Solid/Divide-serien, resirkulerte PET-flasker i rPET-serien (rPET Panel og rPET Flex Groove er laget utelukkende av resirkulert PET) og en kjerne av resirkulert filt under det FSC-sertifiserte finéret i rWood-serien. For det andre, slutten av livssyklusen: hvert Re-Sound panel kan returneres via vår gratis retur-tjeneste, og materialene gjenbrukes til nye paneler eller nytt råmateriale i stedet for å havne på fyllingen. For det tredje, design: forbindelser (magnetiske, mekaniske, kroksystemer) er reversible slik at paneler kan fjernes uten ødeleggelse, noe som muliggjør omkonfigurering i løpet av bygningens levetid."
       },
       "takeBack": {
         "category": "sustainability",
@@ -3024,7 +3041,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Hvilket resirkulert innhold har hver produktserie?",
-        "answer": "Det resirkulerte innholdet varierer mellom produktfamilier. Tekstilserien (Interior, Solid, Divide) er laget av resirkulerte tekstilfibre med høyt resirkulert innhold. rPET-serien bruker 100 % post-consumer resirkulert PET (det tilsvarende antall flasker varierer med panelstørrelse — omtrent 60 flasker per standard Groove-panel). rWood-serien bruker en kjerne med høyt resirkulert fiberinnhold med FSC-sertifisert finér på den synlige siden. Detaljerte materialnedbrytninger og EPD-dokumentasjon er tilgjengelig på hver produktside og på forespørsel."
+        "answer": "Det resirkulerte innholdet varierer mellom produktfamilier. Tekstilserien (Interior, Solid, Divide) er laget av resirkulerte tekstilfibre med høyt resirkulert innhold. rPET-serien bruker post-consumer resirkulert PET; rPET Panel og rPET Flex Groove er laget utelukkende av resirkulert PET (det tilsvarende antallet flasker varierer med panelstørrelse — omtrent 60 flasker per standard Groove-panel). rWood-serien bruker en kjerne med høyt resirkulert fiberinnhold med FSC-sertifisert finér på den synlige siden. Detaljerte materialoversikter og EPD-dokumentasjon er tilgjengelig på hver produktside og på forespørsel."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3112,7 +3129,9 @@
       "segmentPower": "Effekt per segment",
       "ceilingHeight": "Min. takhøyde",
       "sideClearance": "Sideavstand",
-      "frontClearance": "Frontavstand"
+      "frontClearance": "Frontavstand",
+      "madeIn": "Produsert i",
+      "measurementPending": "ISO 23351-1-måling avventes"
     },
     "downloads": {
       "tag": "RESSURSER",
@@ -3198,7 +3217,7 @@
       },
       "safety": {
         "title": "Testet etter norm",
-        "desc": "CE-merket, brannklasse EN 13501-1 B-s2,d0, elektrisk installasjon sertifisert etter IEC 60598. Dokumentasjon følger med leveransen."
+        "desc": "CE-merket, elektrisk installasjon sertifisert etter IEC 60598. Dokumentasjon følger med leveransen."
       }
     },
     "specs": {
@@ -3369,7 +3388,7 @@
       },
       "safety": {
         "title": "Testet etter norm",
-        "desc": "CE-merket, brannklasse EN 13501-1 B-s2,d0, elektrisk installasjon sertifisert etter IEC 60598. Standard ved hver leveranse."
+        "desc": "CE-merket, elektrisk installasjon sertifisert etter IEC 60598. Standard ved hver leveranse."
       }
     },
     "specs": {
@@ -3381,7 +3400,6 @@
       "doorWidthValue": "1000 mm fri",
       "weightValue": "420 kg",
       "acousticsTitle": "Akustisk ytelse",
-      "noiseReductionValue": "26 dB(A)",
       "absorberValue": "Akustisk filt av resirkulert PET, 24 mm",
       "doorSealValue": "Magnetisk, firesidig kompresjon",
       "ventilationTitle": "Ventilasjon",
@@ -3532,7 +3550,7 @@
       },
       "safety": {
         "title": "Testet etter norm",
-        "desc": "CE-merket, brannklasse EN 13501-1 B-s2,d0, elektrisk installasjon sertifisert etter IEC 60598. Dokumentasjon følger med leveransen."
+        "desc": "CE-merket, elektrisk installasjon sertifisert etter IEC 60598. Dokumentasjon følger med leveransen."
       }
     },
     "specs": {
@@ -3871,7 +3889,11 @@
     },
     "ownFactories": "Fra egne fabrikker",
     "ownFactoriesShort": "Egne fabrikker",
-    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)",
+    "plant": {
+      "BE": "Beveren-Waas, Belgia",
+      "PL": "Częstochowa, Polen"
+    }
   },
   "productData": {
     "category": {
@@ -3970,7 +3992,11 @@
       "perfNano": "Nano (⌀ 0,5 mm)",
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
-      "perfMicroL": "Micro L (⌀ 2,0 mm)"
+      "perfMicroL": "Micro L (⌀ 2,0 mm)",
+      "openArea24": "24 % åpen flate",
+      "openArea18": "18 % åpen flate",
+      "openArea12": "12 % åpen flate",
+      "openArea5": "5 % åpen flate"
     },
     "solo-eco": {
       "mounting": "Frittstående; montering av Re-Sound på forespørsel",
@@ -4015,7 +4041,7 @@
       "isoClassNote": "Klassegrenser i ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "HVORFOR RE-SOUND",
       "whyTitle": "Hvorfor Re-Sound",
-      "whyOwnFactoriesTitle": "Våre egne fabrikker",
+      "whyOwnFactoriesTitle": "Vår egen fabrikk i Częstochowa",
       "whyTakeBackTitle": "Gratis returordning",
       "whyTakeBackDesc": "Når panelene er utrangert, henter vi dem og gjenvinner dem til nytt råstoff – kostnadsfritt i Belgia, mot logistikkostnad ellers i EU.",
       "whyCertsTitle": "Sertifisert der det teller",
@@ -4040,7 +4066,7 @@
     },
     "rpet": {
       "title": "PET-akustikkpaneler av resirkulerte flasker | Re-Sound",
-      "description": "PET-akustikkpaneler av resirkulerte flasker: rPET Panel, Groove og Flex Groove. 12–16 farger, B-s1,d0, OEKO-TEX®, produsert i vår egen fabrikk i Polen.",
+      "description": "PET-akustikkpaneler av resirkulerte flasker: rPET Panel, Groove, Flex Groove. 12–16 farger, OEKO-TEX®, B-s1,d0 eller B-s2,d0 etter modell. Produsert i vår fabrikk i Polen.",
       "h1": "PET-akustikkpaneler: rPET Panel, Groove og Flex Groove",
       "breadcrumb": "rPET",
       "intro": "PET-akustikkpaneler gjør brukte drikkeflasker om til en tett polyesterfilt som absorberer lyd, kan bearbeides i CNC-fres som MDF og leveres i en fargepalett arkitekter faktisk bruker. Re-Sound er et merke i Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen); rPET-serien produseres i Częstochowa. Serien består av tre modeller. rPET Panel er den flate platen: kapp, fres, bor og mal den til vegger, himlinger og møbler. rPET Groove har en overflate med spor i 12 farger og tre tykkelser for høyere absorpsjon på vegger og i himlinger. rPET Flex Groove beholder det sporete uttrykket, men bøyer seg rundt søyler og buede vegger ned til 500 mm radius. Alle tre er OEKO-TEX® Standard 100-sertifisert, oppnår B-s1,d0 eller B-s2,d0 etter EN 13501-1 og kan leveres tilbake til gjenvinning når de er utrangert. Bruk tabellen nedenfor til å sammenligne PET-akustikkpaneler etter format, absorpsjon og leveringstid, og åpne deretter modellsiden for overflater og nedlastinger.",
@@ -4056,7 +4082,7 @@
       "faq": {
         "q1": {
           "question": "Er PET-akustikkpaneler virkelig laget av resirkulerte flasker?",
-          "answer": "Ja. Filten er laget av fiber fra resirkulerte PET-flasker; rPET Groove og rPET Flex Groove består av 100 % resirkulert PET. Alle modellene er OEKO-TEX® Standard 100-sertifisert, så materialet egner seg for skoler og helsebygg."
+          "answer": "Ja. Filten er laget av fiber fra PET-flasker etter forbrukerleddet: rPET Panel og rPET Flex Groove er laget utelukkende av resirkulert PET, og rPET Groove er laget av den samme resirkulerte PET-filten. Alle modellene er OEKO-TEX® Standard 100-sertifisert, så materialet egner seg for skoler og helsebygg."
         },
         "q2": {
           "question": "Hvor mye lyd absorberer PET-akustikkpaneler?",
@@ -4102,7 +4128,7 @@
         },
         "q3": {
           "question": "Hvilken brannklasse oppnår akustikkpaneler i tre?",
-          "answer": "Med brannhemmende kjerne er rWood-modellene klassifisert B-s1,d0 i henhold til EN 13501-1; på standard MDF-kjerne er klassifiseringen D-s2. Spesifiser FR-kjernen for rømningsveier og offentlige bygg."
+          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-modellene klassifisert B-s1,d0 i henhold til EN 13501-1; på standard MDF-kjerne er klassifiseringen D-s2,d0. Spesifiser FR-kjernen for rømningsveier og offentlige bygg."
         },
         "q4": {
           "question": "Kan mikroperforerte trepaneler bakbelyses?",
@@ -4115,11 +4141,11 @@
       }
     },
     "booths": {
-      "title": "Akustiske telefonbokser og møtepods – Solo, Duo, XL | Re-Sound",
+      "title": "Produsent av telefonbokser til kontor: Solo, Duo, Modular XL | Re-Sound",
       "description": "Kontortelefonbokser og møtepods: Solo ECO og Solo Flex (1 person), Duo (2), Modular XL (6–10). ISO 23351-1-talereduksjon på Flex og XL, 230 V.",
-      "h1": "Telefonbokser og møtepods til kontoret fra egne fabrikker",
+      "h1": "Telefonbokser og møtepods til kontoret fra produsenten",
       "breadcrumb": "Telefonbokser",
-      "intro": "En telefonboks for kontoret gir én person et stille, ventilert sted for samtaler og videomøter i et åpent kontorlandskap; en møtepod gjør det samme for et team. Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen). Boksserien finnes i fire modeller. Solo ECO er innstegsmodellen: en bås for én person med ståbord, et landsspesifikt uttak med USB-A og USB-C (kun uttak for Danmark), ventilasjon opptil 4 m³/min og lukket bakvegg eller bakvegg i glass. Solo Flex er telefonboksen for én person: 1 m² gulvflate, hev-senk-bord, 230 V og USB-C-strøm, stille EC-vifter og 24 dB(A) reduksjon av talenivå målt i henhold til ISO 23351-1. Duo er den akustiske telefonboksen for to personer med to konfigurasjoner – Flex for en samtale med to seter, Work for én person med bord i full bredde. Modular XL er den akustiske møtepoden for seks til ti personer: grunnenheten forlenges i segmenter på 90 cm og oppnår 25,9 dB(A) reduksjon av talenivå. Solo Flex, Duo og Modular XL leveres med 5 års konstruksjonsgaranti og Solo ECO med 5 års reservedelsgaranti; alle leveres i hele EU, med montering tilgjengelig på forespørsel. Sammenlign telefonboksene for kontoret nedenfor, og åpne deretter en modellside for tilbehør og nedlastinger.",
+      "intro": "En telefonboks for kontoret gir én person et stille, ventilert sted for samtaler og videomøter i et åpent kontorlandskap; en møtepod gjør det samme for et team. Re-Sounds bokser produseres i vår egen fabrikk i Częstochowa (Polen), leveres og monteres av vårt eget team på forespørsel, og har 5 års konstruksjonsgaranti (Solo ECO: 5 års reservedelsgaranti). Boksserien finnes i fire modeller. Solo ECO er innstegsmodellen: en boks for én person med ståbord, et landsspesifikt uttak med USB-A og USB-C (kun uttak for Danmark), ventilasjon opptil 4 m³/min og lukket bakvegg eller bakvegg i glass. Solo Flex er telefonboksen for én person: 1 m² gulvflate, hev-senk-bord, 230 V og USB-C-strøm, stille EC-vifter og 24 dB(A) reduksjon av talenivå målt i henhold til ISO 23351-1. Duo er den akustiske telefonboksen for to personer med to konfigurasjoner – Flex for en samtale med to seter, Work for én person med bord i full bredde. Modular XL er den akustiske møtepoden for seks til ti personer: grunnenheten forlenges i segmenter på 90 cm og oppnår 25,9 dB(A) reduksjon av talenivå. Solo Flex, Duo og Modular XL leveres med 5 års konstruksjonsgaranti og Solo ECO med 5 års reservedelsgaranti; alle fire leveres i hele EU. Sammenlign telefonboksene for kontoret nedenfor, og åpne deretter en modellside for tilbehør og nedlastinger.",
       "whyCertsDesc": "5 års garanti på alle bokser (konstruksjon på Solo Flex, Duo og Modular XL; reservedeler på Solo ECO); reduksjon av talenivå oppgitt i henhold til ISO 23351-1 der det er målt.",
       "applications": {
         "app1": "Åpne kontorlandskap og coworking-arealer",
@@ -4150,7 +4176,8 @@
           "question": "Hva er leveringstiden og garantien for en telefonboks?",
           "answer": "Solo ECO har 4 ukers produksjon og 5 års reservedelsgaranti. Solo Flex og Duo leveres 4–6 uker etter bestilling, Modular XL 6–8 uker for grunnenheten; spesialtekstiler legger til 2–3 uker. Konstruksjonsgarantien er 5 år, elektronikk 2 år, med levering og montering tilgjengelig i hele EU."
         }
-      }
+      },
+      "whyOwnFactoriesDesc": "Alle fire boksene bygges i vår egen fabrikk i Częstochowa (Polen) og leveres og monteres av vårt eget team på forespørsel."
     }
   },
   "sampleKit": {
@@ -4222,7 +4249,7 @@
     "title": "Telefonboks til kontor – priser og ISO-klasser 2026 | Re-Sound",
     "description": "Telefonbokspriser: Solo ECO fra {soloEco}, Solo Flex fra {soloFlex} ekskl. mva., Modular XL fra {modularXl}. ISO 23351-1, montering, leveringstid, garanti.",
     "h1": "Telefonbokser til kontor: priser, klasser og hvordan du velger",
-    "intro": "En akustisk telefonboks fra Re-Sound koster fra {soloEco} ekskl. mva. uten montering (Solo ECO), Solo Flex fra {soloFlex} og en Modular XL møtepod fra {modularXl}. Nedenfor finner du alle prisene vi publiserer, hva som er inkludert, ISO 23351-1-klassene for talenivå oppgitt ærlig, og hvordan montering, testing og garanti fungerer. Re-Sound er et merke fra Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).",
+    "intro": "En akustisk telefonboks fra Re-Sound koster fra {soloEco} ekskl. mva. uten montering (Solo ECO), Solo Flex fra {soloFlex} og en Modular XL møtepod fra {modularXl}. Nedenfor finner du alle prisene vi publiserer, hva som er inkludert, ISO 23351-1-klassene for talenivå oppgitt ærlig, og hvordan montering, testing og garanti fungerer.",
     "breadcrumb": "Priser på telefonbokser",
     "priceTag": "Priser 2026",
     "priceTitle": "Priser per modell (ekskl. mva.)",
@@ -4293,6 +4320,25 @@
     "endOfLifeTag": "Sirkulær",
     "warrantyByModel": {
       "solo-eco": "5 års reservedelsgaranti"
+    },
+    "manufactureLine": "Produsert i vår egen fabrikk i Częstochowa (Polen); levering og montering utføres av vårt eget team og prises separat.",
+    "pricelist": {
+      "tag": "Prisliste",
+      "title": "Last ned hele prislisten (PDF)",
+      "text": "Legg igjen opplysningene dine, så lastes prislisten for telefonbokser (PDF) ned med en gang.",
+      "firstName": "Fornavn",
+      "lastName": "Etternavn",
+      "company": "Bedrift",
+      "email": "E-post",
+      "honeypot": "La dette feltet stå tomt",
+      "consent": "Jeg samtykker til at Re-Sound kan kontakte meg angående denne forespørselen. <link>Personvernerklæring</link>",
+      "submit": "Last ned prislisten",
+      "sending": "Klargjør nedlastingen …",
+      "successTitle": "Nedlastingen har startet",
+      "successText": "Hvis PDF-en ikke åpnet seg, bruk lenken nedenfor.",
+      "successLink": "Åpne prislisten (PDF)",
+      "errorInvalid": "Kontroller opplysningene dine og prøv igjen.",
+      "error": "Noe gikk galt. Prøv igjen om et øyeblikk."
     }
   },
   "order": {
@@ -4516,7 +4562,8 @@
       "sparePartsLabel": "Reservedelsgaranti",
       "sparePartsValue": "5 år",
       "deliveryValue": "4 ukers produksjon, fra fabrikk i Częstochowa",
-      "weightLabel": "Vekt (netto / brutto)"
+      "weightLabel": "Vekt (netto / brutto)",
+      "acousticsTitle": "Akustisk ytelse"
     },
     "addons": {
       "tag": "TILLEGG",
@@ -4561,6 +4608,267 @@
     },
     "cta": {
       "deliveryNote": "Fra fabrikk, 4 ukers produksjon · Levering og montering tilbys på forespørsel · 5 års reservedelsgaranti"
+    }
+  },
+  "manufacturing": {
+    "navLabel": "Produksjon",
+    "breadcrumb": "Produksjon",
+    "title": "Produsent av akustikkpaneler og telefonbokser: våre to fabrikker | Re-Sound",
+    "description": "Re-Sound er produsent av sine egne akustikkpaneler og telefonbokser til kontor: tekstilseriene lages i Beveren-Waas (Belgia), rWood, rPET og alle fire boksene i Częstochowa (Polen). Hvilken serie som lages hvor, leveringstider og sertifiseringer.",
+    "h1": "Produsent av akustikkpaneler og telefonbokser: våre to fabrikker",
+    "intro": "Re-Sound designer og produserer sine egne produkter i stedet for å videreselge andres. Hvert akustikkpanel og hver telefonboks på dette nettstedet lages i en av to fabrikker vi selv eier: tekstilseriene i Beveren-Waas i Belgia, rWood- og rPET-seriene og de fire boksene i Częstochowa i Polen. Alle råvarer kjøpes inn innenfor EU.",
+    "plantsTag": "FABRIKKENE",
+    "plantsTitle": "To fabrikker, én produsent",
+    "plantsIntro": "Hva hvert anlegg lager, og hvordan du kommer dit. Besøk etter avtale på begge steder.",
+    "plant": {
+      "BE": {
+        "role": "Akustikkpaneler i tekstil, hovedkontor og showroom",
+        "makes": "Akustikkpaneler og skjermvegger i resirkulerte tekstilfibre.",
+        "note": "Showroomet på denne adressen har hele panelsortimentet og alle tre boksstørrelsene montert og akustisk aktive, så du kan høre forskjellen mellom materialene før du spesifiserer."
+      },
+      "PL": {
+        "role": "rWood- og rPET-paneler, alle telefonbokser",
+        "makes": "Akustikkpaneler i tre med FSC-sertifisert finér, akustikkpaneler i resirkulert PET-filt, samt telefonboksene og møtepodene.",
+        "note": "Produksjonskontoret tar imot prosjektbesøk og fabrikkomvisninger etter avtale. Boksene leveres og monteres av vårt eget team på forespørsel."
+      }
+    },
+    "plantLabels": {
+      "makes": "Lages her",
+      "address": "Adresse",
+      "hours": "Åpningstider",
+      "hoursValue": "Man–fre 08:00–16:30 · etter avtale",
+      "phone": "Telefon",
+      "email": "E-post",
+      "country": {
+        "BE": "Belgia",
+        "PL": "Polen"
+      }
+    },
+    "originTag": "HVILKEN SERIE LAGES HVOR",
+    "originTitle": "Produksjonssted per produktserie",
+    "originNote": "Én rad per produkt, generert fra de samme produktdataene som ligger bak hver modellside. Leveringstider som oppgitt på modellsidene.",
+    "col": {
+      "product": "Produkt",
+      "family": "Serie",
+      "plant": "Fabrikk",
+      "leadTime": "Leveringstid"
+    },
+    "certsTag": "SERTIFISERINGER",
+    "certsTitle": "Sertifiseringer og hva de dekker",
+    "certsIntro": "Bare sertifiseringer som gjelder en bestemt serie er tatt med, hver med standarden den viser til og produktene den dekker.",
+    "certs": {
+      "FSC": {
+        "name": "FSC-sporbarhetssertifisering (chain-of-custody)",
+        "scope": "rWood-finér"
+      },
+      "OEKO-TEX": {
+        "name": "OEKO-TEX Standard 100",
+        "scope": "rPET-filt"
+      },
+      "EPD": {
+        "name": "Miljødeklarasjon (EPD)",
+        "scope": "rWood Panel"
+      }
+    },
+    "certsAppliesTo": "Gjelder for",
+    "certsNote": "Brannklassifisering (EN 13501-1), lydabsorpsjon (ISO 11654) og reduksjon av talenivå (ISO 23351-1) er testresultater, ikke sertifiseringer; de oppgis per modell på produktsidene.",
+    "howTag": "SLIK JOBBER VI",
+    "howTitle": "Hva det betyr for deg at vi lager alt selv",
+    "how": {
+      "origin": {
+        "title": "Transparent opprinnelse",
+        "text": "Hver produktside oppgir fabrikken produktet kommer fra, og tabellen på denne siden genereres fra de samme produktdataene, så tekst og data kan ikke sprike."
+      },
+      "installation": {
+        "title": "Levering og montering av vårt eget team",
+        "text": "Boksene leveres og monteres av vårt eget team på forespørsel; levering og montering prises separat."
+      },
+      "warranty": {
+        "title": "Garanti på hver boks"
+      }
+    },
+    "linksTag": "GÅ VIDERE",
+    "linksTitle": "Serier, teknisk dokumentasjon og prøver",
+    "links": {
+      "downloadsTitle": "Tekniske nedlastinger",
+      "downloadsText": "Datablad, monteringsveiledninger og akustiske testrapporter på hver produktside; brannsertifikater og bærekraftserklæringer for panelene, garantivilkår og CAD-tegninger for boksene.",
+      "downloadsCta": "Alle produkter",
+      "samplesTitle": "Prøvesett",
+      "samplesText": "Bestill et gratis prøvesett og sammenlign materialer og overflater på ditt eget skrivebord.",
+      "hubCta": "Se sortimentet"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Etterklangstidskalkulator (RT60)",
+      "description": "Anslå etterklangstiden i rommet ditt med Sabines formel, sammenlign den med målverdien for romtypen og se hvor mange m² akustikkpaneler fra Re-Sound du trenger."
+    },
+    "hero": {
+      "tag": "Gratis verktøy",
+      "title": "Etterklangstidskalkulator",
+      "subtitle": "Legg inn rommets mål og overflater for å anslå RT60, sammenligne den med målverdien for romtypen og finne ut hvor mange m² akustikkpaneler som bringer den innenfor målet."
+    },
+    "intro": {
+      "tag": "Slik fungerer det",
+      "title": "Sabines formel og målverdiene",
+      "sabine": "Kalkulatoren bruker Sabines formel på formen T = V / (6 × A): T er etterklangstiden i sekunder, V rommets volum i m³ og A den totale absorpsjonen i m² sabine — hver flates areal multiplisert med absorpsjonskoeffisienten α, summert. Hvert oktavbånd fra 125 Hz til 4000 Hz beregnes separat med α-verdiene for de valgte gulv-, himlings- og veggoverflatene.",
+      "headline": "Hoved-RT60 er gjennomsnittet av båndene 500, 1000 og 2000 Hz — talefrekvensene — og det er denne verdien som sammenlignes med målverdien.",
+      "targets": "Målverdiene for etterklangstid per romtype kommer fra samme kildetabell som absorpsjonskoeffisientene: fra 0,4 s for et musikkstudio til 1,5 s for en idrettshall eller et svømmebasseng; et kontor, møterom eller klasserom sikter mot 0,8 s.",
+      "note": "Sabines formel forutsetter at absorpsjonen er jevnt fordelt i rommet. Resultatet er et estimat for tidlige designvalg, ikke en måling.",
+      "targetsTableCaption": "Målverdi for etterklangstid per romtype",
+      "roomType": "Romtype",
+      "targetRt": "Mål-T"
+    },
+    "form": {
+      "title": "Rommet ditt",
+      "length": "Lengde",
+      "width": "Bredde",
+      "height": "Høyde",
+      "unitHint": "i m (2.8 eller 2,8)",
+      "floor": "Gulvoverflate",
+      "ceiling": "Himlingsoverflate",
+      "walls": "Veggoverflate",
+      "roomType": "Romtype",
+      "roomTypeOption": "{name} — mål {t} s"
+    },
+    "results": {
+      "title": "Resultat",
+      "empty": "Legg inn rommets lengde, bredde og høyde for å se resultatet.",
+      "volume": "Romvolum",
+      "volumeValue": "{v} m³",
+      "rtNow": "Anslått RT60 nå",
+      "rtNowHint": "Gjennomsnitt av båndene 500, 1000 og 2000 Hz",
+      "seconds": "{s} s",
+      "target": "Mål for {room}",
+      "met": "Målet er nådd",
+      "notMet": "Over målet",
+      "toAdd": "Absorpsjon som må legges til",
+      "sabine": "{a} m² sabine",
+      "toAddHint": "Ekstra absorpsjon som trengs for å få RT60 ned til målverdien",
+      "bandTable": "Per oktavbånd",
+      "band": "Bånd (Hz)",
+      "absorptionBand": "Absorpsjon A (m² sabine)",
+      "rtBand": "RT60 (s)",
+      "noneNeeded": "Rommet ditt oppfyller allerede målet for denne romtypen — ingen ekstra absorpsjon er nødvendig.",
+      "recommendTitle": "Re-Sound-paneler for å nå målet",
+      "recommendIntro": "m² av hvert panel som dekker den manglende absorpsjonen, basert på panelets veide absorpsjonskoeffisient αw. Velg ett produkt; mengdene er alternativer, ikke en sum.",
+      "productLine": "≈ {m2} m² {product} (αw {alphaW})",
+      "productNoNumber": "{product} — målt per mønster / tykkelse — se produktsiden",
+      "productLink": "Produktside",
+      "evenNote": "Sabines formel forutsetter jevnt fordelt absorpsjon: estimatet stemmer best når panelene er spredt rundt i rommet i stedet for samlet på én flate."
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Spørsmål om beregningen",
+      "officeTarget": {
+        "question": "Hvilken etterklangstid bør et kontor ha?",
+        "answer": "Måltabellen som denne kalkulatoren bruker, setter 0,8 s for kontor, møterom, klasserom, barnehage og stue, 0,7 s for kundesenter, restaurant eller kafé/bar, og 1,0 s for resepsjon eller venterom. Kalkulatoren viser om din anslåtte RT60 oppfyller målet for romtypen du velger."
+      },
+      "hardFinishes": {
+        "question": "Hvilke overflater absorberer minst lyd?",
+        "answer": "I tabellen har marmor en absorpsjonskoeffisient på 0,01 i hvert oktavbånd, betong 0,01 til 0,03 og puss 0,01 til 0,05. Myke overflater absorberer langt mer: teppe når 0,37 ved 4000 Hz og tunge gardiner 0,96 ved 500 Hz. Et rom med harde overflater på gulv, himling og vegger har derfor lang etterklangstid."
+      },
+      "howManyM2": {
+        "question": "Hvor mange m² akustikkpaneler trenger jeg?",
+        "answer": "Kalkulatoren beregner den ekstra absorpsjonen i m² sabine som får hoved-RT60 — gjennomsnittet av båndene 500, 1000 og 2000 Hz — ned til målverdien, og deler den deretter på den veide absorpsjonskoeffisienten αw for hvert Re-Sound-panel med en publisert enkeltverdi: 1 m² av et panel med αw 1,0 gir 1 m² sabine. Paneler der αw avhenger av mønster eller tykkelse, oppføres uten mengde og lenker til produktsiden."
+      }
+    },
+    "lead": {
+      "tag": "Neste steg",
+      "title": "Send meg denne beregningen og et tilbud",
+      "subtitle": "Vi sender deg beregningen ovenfor på e-post og kommer tilbake med et tilbud på de anbefalte panelene.",
+      "firstName": "Fornavn",
+      "lastName": "Etternavn",
+      "company": "Bedrift",
+      "email": "E-post",
+      "honeypot": "La dette feltet stå tomt",
+      "submit": "Send beregningen og be om tilbud",
+      "sending": "Sender...",
+      "success": "Takk — beregningen er på vei, og vi tar kontakt med et tilbud.",
+      "error": "Noe gikk galt. Prøv igjen.",
+      "incomplete": "Fullfør beregningen ovenfor først.",
+      "privacyNotice": "Ved å sende inn dette skjemaet godtar du vår <link>personvernerklæring</link>."
+    }
+  },
+  "samples": {
+    "metaTitle": "Bestill et prøvesett",
+    "metaDescription": "Be om Re-Sounds prøvesett: A4-prøver av hver serie og overflate, sendt innen tre virkedager i EU.",
+    "hero": {
+      "tag": "Prøvesett",
+      "title": "Bestill prøvesettet ditt",
+      "subtitle": "A4-prøver av hver serie og overflate, sendt innen tre virkedager i EU."
+    },
+    "kit": {
+      "tag": "Dette er i settet",
+      "title": "Hver serie og overflate i A4-format",
+      "swatchesTitle": "A4-prøver",
+      "swatchesText": "Én A4-prøve av hver serie og overflate.",
+      "shippingTitle": "Tre virkedager",
+      "shippingText": "Settet sendes innen tre virkedager til adresser i EU.",
+      "projectTitle": "Prosjektet ditt",
+      "projectText": "Fortell oss hvilke serier du vurderer, og hva prosjektet gjelder.",
+      "cta": "Be om settet"
+    },
+    "ranges": {
+      "tag": "Serier",
+      "title": "Seriene i settet",
+      "text": "Prøver av hver overflate i tekstil-, rWood- og rPET-seriene."
+    },
+    "families": {
+      "textile": "Tekstil",
+      "rwood": "rWood",
+      "rpet": "rPET"
+    },
+    "form": {
+      "tag": "Forespørsel",
+      "title": "Be om prøvesettet ditt",
+      "text": "Fyll ut skjemaet nedenfor. Felt merket med * er obligatoriske.",
+      "sections": {
+        "ranges": "Hvilke serier er du interessert i?",
+        "project": "Prosjektet ditt",
+        "delivery": "Levering"
+      },
+      "fields": {
+        "firstName": "Fornavn",
+        "lastName": "Etternavn",
+        "company": "Bedrift",
+        "email": "E-post",
+        "country": "Land",
+        "rangesHint": "Kryss av for minst én serie.",
+        "rangesRequired": "Velg minst én serie.",
+        "projectType": "Prosjekttype",
+        "projectTypePlaceholder": "Velg en prosjekttype",
+        "area": "Areal (m²)",
+        "areaPlaceholder": "f.eks. 120",
+        "address": "Leveringsadresse",
+        "addressPlaceholder": "Gate og nummer, postnummer, poststed",
+        "addressHint": "Gate, nummer, postnummer og poststed: nødvendig for å sende settet.",
+        "honeypot": "La dette feltet stå tomt"
+      },
+      "projectTypes": {
+        "office": "Kontor",
+        "education": "Utdanning",
+        "healthcare": "Helsevesen",
+        "hospitality": "Hotell og servering",
+        "residential": "Bolig",
+        "other": "Annet"
+      },
+      "submit": "Be om prøvesettet",
+      "success": {
+        "title": "Forespørsel mottatt",
+        "body": "Takk, {firstName}. Prøvesettet sendes innen tre virkedager i EU. Sjekk innboksen din for en bekreftelse.",
+        "another": "Send en ny forespørsel"
+      }
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Spørsmål om prøvesettet",
+      "q1": "Hva inneholder prøvesettet?",
+      "a1": "A4-prøver av hver serie og overflate: tekstil, rWood og rPET.",
+      "q2": "Hvor lang tid tar forsendelsen?",
+      "a2": "Settet sendes innen tre virkedager til adresser i EU.",
+      "q3": "Må jeg velge bestemte serier?",
+      "a3": "Settet inneholder hver serie og overflate. Ved å krysse av for seriene du er interessert i, forteller du oss hvilke som er relevante for prosjektet ditt."
     }
   }
 }

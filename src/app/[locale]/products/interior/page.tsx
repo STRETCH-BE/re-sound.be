@@ -45,14 +45,21 @@ const FAQ_KEYS = ["leadTime", "washableCover", "absorptionRating", "breeamLeed",
 // used to render inline, now a static server-rendered <ProductGallery>.
 const GALLERY_IMAGES = [1, 2, 3, 4, 5, 6].map((i) => `/images/products/interior/gallery-${i}.jpg`);
 
+// Spec figures quoted in copy (meta description, FAQ) come from product data
+// only — passed as ICU arguments so no message carries a hard-coded value.
+const INTERIOR_SPECS = PRODUCTS['interior'].specs;
+const ALPHA_W = INTERIOR_SPECS.kind === 'panel' ? INTERIOR_SPECS.alphaW : null;
+const NRC = INTERIOR_SPECS.kind === 'panel' ? INTERIOR_SPECS.nrc : null;
+const SPEC_ARGS = { alphaW: ALPHA_W ?? '', nrc: NRC ?? '' };
+
 export async function generateMetadata({
   params: { locale },
 }: PageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
 
   const title = t('interiorTitle');
-  // The description quotes the "from" price, read from the catalogue.
-  const description = t('interiorDescription', { fromPrice: (await fromPriceText(locale, 'interior')) ?? '' });
+  // The description quotes the "from" price (catalogue) and αw (product data).
+  const description = t('interiorDescription', { fromPrice: (await fromPriceText(locale, 'interior')) ?? '', alphaW: ALPHA_W ?? '' });
 
   return {
     // Title already contains "| Re-Sound" — bypass the layout template
@@ -85,7 +92,7 @@ export default async function Page({ params: { locale } }: PageProps) {
   const fullTitle = tMeta('interiorTitle');
   const cleanName = fullTitle.replace(/\s*\|\s*Re-Sound\s*$/, '');
   const priceFrom = await fromPriceText(locale, 'interior');
-  const description = tMeta('interiorDescription', { fromPrice: priceFrom ?? '' });
+  const description = tMeta('interiorDescription', { fromPrice: priceFrom ?? '', alphaW: ALPHA_W ?? '' });
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'interior', cleanName);
@@ -112,11 +119,13 @@ export default async function Page({ params: { locale } }: PageProps) {
   // Product FAQ (messages) + the workbook rows tagged "interior", without duplicates
   const faqEntries: FaqEntry[] = mergeFaqEntries(
     FAQ_KEYS
+    // The αw / NRC question only makes sense while both figures are in product data.
+    .filter((key) => key !== 'absorptionRating' || (ALPHA_W && NRC))
     .map((key) => {
       try {
         return {
-          question: tFaq(`questions.${key}.question`),
-          answer: tFaq(`questions.${key}.answer`),
+          question: tFaq(`questions.${key}.question`, SPEC_ARGS),
+          answer: tFaq(`questions.${key}.answer`, SPEC_ARGS),
         };
       } catch {
         return null;

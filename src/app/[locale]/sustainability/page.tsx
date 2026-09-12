@@ -10,6 +10,7 @@ import CircularProcess from '@/components/sections/CircularProcess';
 import Materials from '@/components/sections/Materials';
 import ImpactStats from '@/components/sections/ImpactStats';
 import CTA from '@/components/sections/CTA';
+import Icon from '@/components/ui/Icon';
 
 interface SustainabilityPageProps {
   params: { locale: string };
@@ -66,7 +67,7 @@ export default async function SustainabilityPage({ params: { locale } }: Sustain
                 <div className="loop-arrow"></div>
               </div>
               <div className="loop-center">
-                <span>♻️</span>
+                <Icon name="recycle" />
                 <p>{t('intro.endless')}</p>
               </div>
             </div>
@@ -126,7 +127,7 @@ export default async function SustainabilityPage({ params: { locale } }: Sustain
           
           <div className="return-visual">
             <div className="return-box">
-              <span>📦</span>
+              <span><Icon name="box" size={64} /></span>
               <p>{t('return.boxText')}</p>
             </div>
           </div>

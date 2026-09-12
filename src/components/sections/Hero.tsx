@@ -3,9 +3,22 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
+import { FAMILY_PRODUCTS, PRODUCTS } from '@/data/products';
+import { PLANTS } from '@/config/site';
+
+// The rWood panel speaks for the whole series, so its stat bar carries no
+// per-product spec (αw, fire class, thickness differ by model — those live on
+// the product pages). Everything below is derived from src/data/products.ts.
+const RWOOD_SLUGS = FAMILY_PRODUCTS.rwood;
+const RWOOD_ALL_FSC = RWOOD_SLUGS.every((slug) => PRODUCTS[slug].certifications.includes('FSC'));
 
 export default function Hero() {
   const t = useTranslations('hero');
+
+  // Pills are plain text — no emoji (brief §1.5); arrays built from t() stay
+  // inside the component.
+  const rwoodPills = [t('rwood.pill1'), t('rwood.pill2'), t('rwood.pill3')];
+  const circularPills = [t('circular.pill1'), t('circular.pill2'), t('circular.pill3'), t('circular.pill4')];
 
   return (
     <section className="hero-split">
@@ -30,9 +43,7 @@ export default function Hero() {
         <div className="panel-overlay panel-overlay-warm" />
 
         <div className="panel-content">
-          <div className="panel-badge badge-warm">
-            <span>🪵</span> {t('rwood.badge')}
-          </div>
+          <div className="panel-badge badge-warm">{t('rwood.badge')}</div>
 
           <h1>
             {t('rwood.title')}<br />
@@ -42,7 +53,7 @@ export default function Hero() {
           <p>{t('rwood.subtitle')}</p>
 
           <div className="pill-row">
-            {[`🪵 ${t('rwood.pill1')}`, `♻️ ${t('rwood.pill2')}`, `⊞ ${t('rwood.pill3')}`, 'αw 0.95'].map((pill) => (
+            {rwoodPills.map((pill) => (
               <span key={pill} className="pill pill-warm">{pill}</span>
             ))}
           </div>
@@ -64,17 +75,19 @@ export default function Hero() {
               <span className="stat-num">5+</span>
               <span className="stat-lbl">{t('rwood.statVeneers')}</span>
             </div>
+            {RWOOD_ALL_FSC && (
+              <div className="stat">
+                <span className="stat-num">FSC</span>
+                <span className="stat-lbl">{t('rwood.statCertified')}</span>
+              </div>
+            )}
             <div className="stat">
-              <span className="stat-num">40mm</span>
-              <span className="stat-lbl">{t('rwood.statThickness')}</span>
+              <span className="stat-num">{RWOOD_SLUGS.length}</span>
+              <span className="stat-lbl">{t('rwood.statTypes')}</span>
             </div>
             <div className="stat">
-              <span className="stat-num">αw 0.95</span>
-              <span className="stat-lbl">{t('rwood.statAbsorption')}</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num">B-s1,d0</span>
-              <span className="stat-lbl">{t('rwood.statFire')}</span>
+              <span className="stat-num">{t('rwood.statSizesValue')}</span>
+              <span className="stat-lbl">{t('rwood.statSizes')}</span>
             </div>
           </div>
         </div>
@@ -98,9 +111,7 @@ export default function Hero() {
         <div className="panel-overlay panel-overlay-blue" />
 
         <div className="panel-content">
-          <div className="panel-badge badge-blue">
-            <span>♻️</span> {t('circular.badge')}
-          </div>
+          <div className="panel-badge badge-blue">{t('circular.badge')}</div>
 
           {/* h2, not a second h1 — the left panel holds the page's sole h1.
               .hero-title-b keeps the identical heading styling. */}
@@ -112,7 +123,7 @@ export default function Hero() {
           <p>{t('circular.subtitle')}</p>
 
           <div className="pill-row">
-            {[`♻️ ${t('circular.pill1')}`, `🔄 ${t('circular.pill2')}`, `🎨 ${t('circular.pill3')}`, `🏭 ${t('circular.pill4')}`].map((pill) => (
+            {circularPills.map((pill) => (
               <span key={pill} className="pill pill-blue">{pill}</span>
             ))}
           </div>
@@ -131,8 +142,8 @@ export default function Hero() {
 
           <div className="stat-row">
             <div className="stat">
-              <span className="stat-num">100%</span>
-              <span className="stat-lbl">{t('circular.statRecycled')}</span>
+              <span className="stat-num">{PLANTS.length}</span>
+              <span className="stat-lbl">{t('circular.statPlants')}</span>
             </div>
             <div className="stat">
               <span className="stat-num">0 kg</span>

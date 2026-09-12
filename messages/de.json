@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "Akustikpaneele & Telefonboxen — Hersteller aus Belgien | Re-Sound",
+    "homeTitle": "Akustikpaneele & Telefonboxen — Hersteller Belgien | Re-Sound",
     "homeDescription": "Zirkuläre Akustikpaneele (Textil, rWood-Furnier, rPET) und Telefonboxen aus eigenen Werken in Belgien und Polen. Kostenlose Rücknahme.",
     "productsTitle": "Produkte",
     "productsDescription": "Zirkuläre Akustikpaneele & Telefonboxen aus eigener Fertigung: Textil (Interior, Solid, Divide), rWood, rPET und Boxen (Solo Flex, Duo, Modular XL).",
@@ -13,7 +13,7 @@
     "blogTitle": "Blog",
     "blogDescription": "Einblicke in Kreislaufwirtschaft, Akustik und nachhaltiges Design vom Re-Sound-Team.",
     "interiorTitle": "Interior Akustische Wandpaneele | Re-Sound",
-    "interiorDescription": "Modulare Akustik-Wandpaneele aus recyceltem Textil: Klasse-A-Absorption (αw 1,0), abnehmbarer waschbarer Bezug, hergestellt in Belgien. Ab {fromPrice} pro Set.",
+    "interiorDescription": "Modulare Akustik-Wandpaneele aus recyceltem Textil: Klasse-A-Absorption (αw {alphaW}), abnehmbarer waschbarer Bezug, hergestellt in Belgien. Ab {fromPrice} pro Set.",
     "solidTitle": "Solid Akustische Wandpaneele | Re-Sound",
     "solidDescription": "Großformatige Akustik-Wandpaneele (1200 × 600 mm) für wirkungsvolle Schallabsorption. Hakenmontage, Kern aus recyceltem Textil, hergestellt in Belgien.",
     "divideTitle": "Divide Freistehende Akustiktrennwände | Re-Sound",
@@ -23,7 +23,7 @@
     "rwoodPerfTitle": "rWood Perf — perforierte Holz-Akustikpaneele | Re-Sound",
     "rwoodPerfDescription": "Perforierte Holz-Akustikpaneele mit FSC-zertifiziertem Furnier: vier Lochmuster für breitbandige Absorption, 8 Oberflächen, schwer entflammbarer Kern.",
     "rwoodMicroTitle": "rWood Micro — mikroperforierte Holz-Akustikpaneele | Re-Sound",
-    "rwoodMicroDescription": "Mikroperforierte Holz-Akustikpaneele (0,5 mm) mit FSC-zertifiziertem Furnier: nahezu unsichtbares Muster, Brandklasse B-s1,d0, hinterleuchtbare Option.",
+    "rwoodMicroDescription": "Mikroperforierte Holz-Akustikpaneele (0,5 mm) mit FSC-zertifiziertem Furnier: nahezu unsichtbares Muster, Brandklasse {fireClass}, optional hinterleuchtbar.",
     "rwoodVeneerTitle": "rWood Panel — Furnier-Akustikpaneele, 10 Holzarten | Re-Sound",
     "rwoodVeneerDescription": "Glatte Furnier-Akustikpaneele in 10 Holzarten: Möbelqualität, FSC-zertifiziert, EPD verfügbar. Gebürstet, gebeizt und lackiert, montagefertig.",
     "rpetGrooveTitle": "rPET Groove — genutete PET-Akustikpaneele, 12 Farben | Re-Sound",
@@ -67,17 +67,18 @@
       "badge": "rWood-Serie · Natürliche Oberflächen",
       "title": "Zirkuläre Akustikpaneele und Telefonboxen",
       "titleHighlight": "aus eigener Fertigung",
-      "subtitle": "Echtes Holzfurnier auf einem hochleistungsfähigen recycelten Akustikkern. Biophile Wärme und Klasse A Schallabsorption — perfekt vereint.",
+      "subtitle": "Echtes Holzfurnier auf einem recycelten Akustikkern. Biophile Wärme und Schallabsorption, pro Produkt gemessen — perfekt vereint.",
       "ctaPrimary": "rWood Entdecken",
       "ctaSecondary": "Oberflächen Ansehen",
       "statVeneers": "Furnierarten",
-      "statThickness": "Stärke",
-      "statAbsorption": "Absorption",
-      "statFire": "Brandschutzklasse",
       "pill1": "Echtholzfurnier",
       "pill2": "Recycelter Kern",
       "pill3": "Massiv & perforiert",
-      "imageAlt": "rWood Micro Akustikpaneel mit natürlichem Holzfurnier, Nahaufnahme der Oberfläche"
+      "imageAlt": "rWood Micro Akustikpaneel mit natürlichem Holzfurnier, Nahaufnahme der Oberfläche",
+      "statCertified": "Zertifiziertes Furnier",
+      "statTypes": "Paneeltypen",
+      "statSizes": "Größen auf Anfrage",
+      "statSizesValue": "Nach Maß"
     },
     "circular": {
       "badge": "Kreislauf-Sortiment · Interior · Solid · Divide · rPET",
@@ -86,27 +87,27 @@
       "subtitle": "Recycelter Rohstoff. Kostenlose Rücknahme am Lebensende. Unser Kreislaufsystem stellt sicher, dass Ihre akustische Investition niemals auf der Deponie landet.",
       "ctaPrimary": "Alle Produkte Ansehen",
       "ctaSecondary": "Wie es Funktioniert",
-      "statRecycled": "Recycelter Rohstoff",
       "statLandfill": "Deponie-Abfall",
       "statFreeLabel": "Kostenlos",
       "statTakeback": "Rücknahme",
       "statColors": "Farben",
-      "pill1": "100 % recycelt",
+      "pill1": "Recycelter Rohstoff",
       "pill2": "Kostenlose Rücknahme",
       "pill3": "50+ Farben",
       "pill4": "Eigene Werke",
-      "imageAlt": "Zirkuläre Interior Akustikpaneele in einem modernen Büro"
+      "imageAlt": "Zirkuläre Interior Akustikpaneele in einem modernen Büro",
+      "statPlants": "Eigene Werke, BE & PL"
     }
   },
   "ticker": {
     "recycled": "Recycelte Materialien",
-    "classA": "Klasse A Schallabsorption",
-    "fire": "B-s1,d0 Brandschutzklasse",
     "takeback": "Kostenloses Rücknahmeprogramm",
     "veneer": "Echte Holzfurnier-Oberflächen",
     "colors": "50+ Standardfarben",
     "custom": "Sondermaße auf Anfrage",
-    "factories": "Aus eigener Fertigung"
+    "factories": "Aus eigenen Werken in Belgien & Polen",
+    "tested": "Pro Produkt geprüft: ISO 11654 / EN 13501-1",
+    "returnable": "Für die Rücknahme konzipiert"
   },
   "materials": {
     "tag": "WAS WIR VERWENDEN",
@@ -143,7 +144,7 @@
     "specStandardVal": "Sondermaße auf Anfrage",
     "swatchesTag": "Furnierkollektion",
     "swatchesTitle": "Wählen Sie Ihre natürliche Oberfläche",
-    "swatchesBody": "Fünf Holzarten, jede mit eigenem Charakter. Alle auf einem 100% recycelten Akustikkern aufgetragen.",
+    "swatchesBody": "Fünf Holzarten, jede mit eigenem Charakter. Alle auf einem recycelten Akustikkern aufgebracht.",
     "ctaFullSpec": "Vollständige Spezifikationen",
     "ctaDatasheet": "Datenblatt Herunterladen",
     "ctaOrderSamples": "Musterkit Bestellen",
@@ -154,7 +155,7 @@
     "tag": "UNSERE PRODUKTE",
     "title": "Akustiklösungen",
     "titleHighlight": "für jeden Raum.",
-    "mosaicSubtitle": "Von modularen Wandpaneelen bis zu freistehenden Trennwänden — alle aus 100% recycelten Materialien, alle zum Zurückgeben konzipiert.",
+    "mosaicSubtitle": "Von modularen Wandpaneelen bis zu freistehenden Trennwänden — Recyclinganteil in jeder Serie, und alle für die Rücknahme konzipiert.",
     "viewAll": "Alle Produkte Ansehen",
     "learnMore": "Mehr erfahren",
     "pageTitle": "Unsere Produkte",
@@ -188,7 +189,7 @@
     "interior": {
       "title": "Interior",
       "description": "Erweiterbare Akustikpaneele für Wände und Decken. Perfekt für Büros, Restaurants und öffentliche Räume.",
-      "fullDescription": "Unsere Interior-Platten sind für die nahtlose Integration in jeden Raum konzipiert. Aus 100% recycelten Textilien hergestellt, bieten sie außergewöhnliche Schallabsorption und verleihen Ihrer Umgebung visuelle Wärme."
+      "fullDescription": "Unsere Interior-Paneele sind für die nahtlose Integration in jeden Raum konzipiert. Aus recycelten Textilfasern hergestellt, bieten sie außergewöhnliche Schallabsorption und verleihen Ihrer Umgebung visuelle Wärme."
     },
     "solid": {
       "title": "Solid",
@@ -203,12 +204,12 @@
     "rwood-groove": {
       "title": "rWood - Groove",
       "description": "Premium Akustik-Holzpaneele mit naturbelassenem Eichen- und Walnussfurnier.",
-      "fullDescription": "rWood - Groove Paneele kombinieren die natürliche Schönheit von FSC-zertifiziertem Holz mit außergewöhnlicher Akustikleistung."
+      "fullDescription": "rWood - Groove Paneele kombinieren die natürliche Schönheit von FSC-zertifiziertem Holz mit außergewöhnlicher Akustikleistung. Mit präzise gefrästen Rillen und integrierter Filzrückseite verwandeln diese Paneele jeden Raum mit Wärme und Stil. Der gemessene Absorptionswert steht auf der Produktseite."
     },
     "rpet-groove": {
       "title": "rPET - Groove",
       "description": "Nachhaltige gerillte Akustikpaneele aus recyceltem PET.",
-      "fullDescription": "rPET - Groove Paneele haben ein markantes lineares Muster aus 100% recycelten PET-Flaschen."
+      "fullDescription": "rPET - Groove Paneele haben ein markantes lineares Muster, das aus recycelten PET-Flaschen entsteht. Das Rillendesign maximiert die Schallabsorption und verleiht Wänden und Decken eine zeitgemäße Textur."
     },
     "rpet-panel": {
       "title": "rPET - Panel",
@@ -228,7 +229,7 @@
     "rpet-flex-groove": {
       "title": "rPET - Flex Groove",
       "description": "Flexible gerillte Akustikpaneele aus recyceltem PET. Vielseitige Montageoptionen.",
-      "fullDescription": "rPET - Flex Groove bietet dasselbe markante Rillendesign wie unsere Standard-rPET-Paneele mit zusätzlicher Montageflexibilität."
+      "fullDescription": "rPET - Flex Groove bietet dasselbe markante Rillendesign wie unsere Standard-rPET-Paneele, mit zusätzlicher Montageflexibilität. Aus recycelten PET-Flaschen hergestellt, liefern diese Paneele eine hervorragende Akustikleistung und passen sich einer Vielzahl von Montagekonfigurationen an."
     },
     "rwood-perf": {
       "title": "rWood - Perf",
@@ -242,7 +243,7 @@
     },
     "rwood-veneer": {
       "title": "rWood - Veneer",
-      "description": "Klare, glatte Holzfurnier-Akustikpaneele. Zeitlose Eleganz trifft Klasse A Schallabsorption.",
+      "description": "Klare, glatte Holzfurnier-Akustikpaneele. Zeitlose Eleganz und angenehme Ruhe für hochwertige Räume.",
       "fullDescription": "rWood - Veneer bietet die pure Schönheit von FSC-zertifiziertem Holzfurnier auf hochleistungsfähigem Akustikfilz."
     },
     "highlights": {
@@ -252,21 +253,21 @@
       },
       "recyclable": {
         "title": "Recycelbar",
-        "value": "100% am Lebensende"
+        "value": "Kostenlose Rücknahme am Lebensende"
       },
       "origin": {
         "title": "Herkunft",
-        "value": "Hergestellt in Belgien"
+        "value": "Unsere eigenen Werke in Belgien und Polen"
       }
     },
     "features": {
       "performance": {
         "title": "Hohe Leistung",
-        "description": "Klasse-A-Schallabsorption für optimalen akustischen Komfort in jeder Umgebung."
+        "description": "Schallabsorption pro Produkt nach ISO 11654 gemessen — der Wert steht auf jeder Produktseite."
       },
       "circular": {
         "title": "Vollständig Zirkulär",
-        "description": "Aus recycelten Materialien hergestellt und am Lebensende 100% recycelbar."
+        "description": "Aus recycelten Materialien hergestellt und am Lebensende kostenlos zurückgenommen."
       },
       "customization": {
         "title": "Individuelle Optionen",
@@ -288,6 +289,12 @@
     "solo-eco": {
       "title": "Solo ECO",
       "description": "Telefonbox für eine Person, Einstiegsmodell: 1,1 m² Stellfläche, Stehtisch, länderspezifische Steckdose mit USB, geschlossene Rückwand oder Glasrückwand."
+    },
+    "applications": {
+      "educationSports": "Bildung & Sport",
+      "office": "Büro",
+      "private": "Privat",
+      "healthcare": "Gesundheitswesen"
     }
   },
   "specs": {
@@ -300,7 +307,7 @@
     "absorption": "Absorptionskoeffizient",
     "fireClass": "Brandklassifizierung",
     "material": "Material",
-    "recycledTextiles": "100% Recycelte Textilien",
+    "recycledTextiles": "Recycelte Textilfasern",
     "certifications": "Zertifizierungen"
   },
   "why": {
@@ -312,7 +319,7 @@
     "features": {
       "performance": {
         "title": "Überlegene Leistung",
-        "description": "Klasse-A-Absorptionsbewertung (αw 0.95-1.00) für optimalen akustischen Komfort."
+        "description": "Absorption pro Produkt nach ISO 11654 gemessen — der Wert steht auf jeder Produktseite."
       },
       "durability": {
         "title": "Gebaut für die Ewigkeit",
@@ -326,7 +333,8 @@
         "title": "Vollständig Anpassbar",
         "description": "50+ Farben, individuelle Größen und verschiedene Montageoptionen."
       }
-    }
+    },
+    "freeLabel": "Kostenlos"
   },
   "circular": {
     "tag": "KREISLAUFWIRTSCHAFT",
@@ -335,7 +343,6 @@
     "subtitle": "Unsere Platten beginnen ihr Leben als Abfall und können zurückkehren, um neue Platten zu werden—ein endloser Zyklus nachhaltiger Akustiklösungen.",
     "loopLabel": "Endloser Zyklus",
     "cta": "Wie es Funktioniert",
-    "statRecycled": "Recycelter Rohstoff",
     "statLandfill": "Deponie",
     "statFreeLabel": "Kostenlos",
     "statTakeback": "Rücknahme",
@@ -357,7 +364,8 @@
         "description": "Kostenlose Abholung und Recycling zu neuen Platten."
       }
     },
-    "imageAlt": "Kreislaufwirtschaft – Recyclingprozess von Akustikpaneelen"
+    "imageAlt": "Kreislaufwirtschaft – Recyclingprozess von Akustikpaneelen",
+    "statPlants": "Eigene Werke"
   },
   "dualCta": {
     "left": {
@@ -731,7 +739,8 @@
     "terms": "Nutzungsbedingungen",
     "countryBelgium": "Belgien",
     "reviewUs": "Bewerten Sie uns auf Google",
-    "priceGuide": "Telefonbox-Preise"
+    "priceGuide": "Telefonbox-Preise",
+    "manufacturing": "Fertigung"
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
@@ -890,7 +899,12 @@
       "finish": "Oberflächenbehandlung",
       "epd": "EPD verfügbar",
       "fscCertified": "FSC® zertifiziert",
-      "dimPanelWidth": "Panelbreite"
+      "dimPanelWidth": "Panelbreite",
+      "absorptionClassB": "Klasse B",
+      "absorptionClassC": "Klasse C",
+      "absorptionClassD": "Klasse D",
+      "absorptionClassE": "Klasse E",
+      "oekoTexStandard100": "OEKO-TEX® Standard 100"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -974,8 +988,8 @@
       "title": "Interior: modulare Akustik-Wandpaneele aus recyceltem Textil",
       "tagline": "Modulare Akustik, Kreislaufgerecht Gestaltet",
       "description": "Verwandeln Sie Ihren Raum mit Re-Sound Interior — einem vollständigen akustischen Wandsystem aus recycelten Materialien. Vollständig anpassbar, einfach zu montieren und für die Wiederverwertung am Lebensende konzipiert.",
-      "uspAbsorption": "αw 1.0 Absorption",
-      "uspRecyclable": "100% Recyclierbar",
+      "uspAbsorption": "αw {alphaW} Absorption",
+      "uspRecyclable": "Recycelbar über kostenlose Rücknahme",
       "uspOrigin": "Hergestellt in Belgien",
       "priceFrom": "Ab",
       "priceUnit": "zzgl. MwSt. pro Set mit 3 Modulen",
@@ -994,7 +1008,7 @@
       "tag": "NACHHALTIGKEIT",
       "title": "Kreislauffähig Innen, Schön Außen",
       "description": "Jedes Interior-Panel beginnt sein Leben als Alttextilien — Kleidung, Polster und industrielle Textilabfälle. Wir verwandeln diese Materialien mit biobasierten Bindemitteln in hochleistungsfähige Akustikkerne, die hervorragend funktionieren und am Lebensende vollständig recycelt werden können.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Recyclinganteil",
       "stat2Value": "0",
       "stat2Label": "Abfall auf Deponien",
@@ -1022,7 +1036,7 @@
     "acoustics": {
       "tag": "LEISTUNG",
       "title": "Überlegene Schallabsorption",
-      "description": "Mit einem bewerteten Schallabsorptionsgrad (αw) von 1,0 liefert Re-Sound Interior maximale Akustikleistung. Sowohl hohe als auch tiefe Frequenzen werden effektiv absorbiert, was komfortable, produktive Räume schafft."
+      "description": "Mit einem bewerteten Schallabsorptionsgrad (αw) von {alphaW} liefert Re-Sound Interior maximale Akustikleistung. Sowohl hohe als auch tiefe Frequenzen werden effektiv absorbiert, was komfortable, produktive Räume schafft."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -1044,7 +1058,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Nachhaltigkeit",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% recyclierbar",
+      "endOfLifeValue": "Kostenlose Rücknahme und Recycling",
       "vocValue": "Niedrig / A+",
       "installTitle": "Montage",
       "mountingValue": "Wandschienensystem",
@@ -1066,12 +1080,12 @@
           "answer": "Ja. Der Bezug ist abnehmbar und bei 30 °C maschinenwaschbar. Der Kern aus recycelten Textilien verbleibt im Paneel und wird nicht beeinträchtigt."
         },
         "absorptionRating": {
-          "question": "Was ist der Unterschied zwischen αw 1.0 und NRC 0.95?",
-          "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Normen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw 1.0 und NRC 0.95 weisen auf dieselbe Klasse-A-Leistung hin."
+          "question": "Was ist der Unterschied zwischen αw {alphaW} und NRC {nrc}?",
+          "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Prüfnormen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw {alphaW} und NRC {nrc} weisen auf dieselbe Klasse-A-Leistung hin."
         },
         "breeamLeed": {
           "question": "Ist dieses Produkt für BREEAM- oder LEED-Punkte geeignet?",
-          "answer": "Ja. Recyclinganteil, geringe VOC-Emissionen und das Rücknahmeprogramm tragen zu BREEAM Mat 03 und LEED MR Punkten bei. Eine EPD ist auf Anfrage erhältlich."
+          "answer": "Ja. Recyclinganteil, geringe VOC-Emissionen und das Rücknahmeprogramm tragen zu Punkten unter BREEAM Mat 03 und LEED MR bei."
         },
         "installMethod": {
           "question": "Wie werden die Paneele installiert?",
@@ -1094,7 +1108,6 @@
       "tagline": "Wirkungsvolle Akustik, Mühelose Montage",
       "description": "Lernen Sie Re-Sound Solid kennen — Ihr wirkungsvolles Akustik-Wandpaneel für maximale Leistung mit minimalem Aufwand. Großformatige Paneele mit außergewöhnlicher Schallabsorption, einfacher Hakenmontage und kreislauffähigen Designprinzipien.",
       "usp1": "Hohe Absorption",
-      "usp2": "1200 × 600 mm",
       "usp3": "Hakensystem",
       "colorSelector": "Farbe Wählen",
       "priceUnit": "zzgl. MwSt. pro Panel",
@@ -1130,7 +1143,7 @@
       "tag": "NACHHALTIGKEIT",
       "title": "Kreislauffähig Gestaltet",
       "description": "Re-Sound Solid wurde sorgfältig mit Kreislauffähigkeit als Kern entworfen. Hergestellt aus recycelten Textilien und Industrieabfällen, trägt jedes Panel zu einer nachhaltigeren Zukunft bei. Am Lebensende können Paneele vollständig recycelt werden — der Kreislauf schließt sich.",
-      "stat1Value": "80%",
+      "stat1Value": "{pct} %",
       "stat1Label": "Recyclinganteil",
       "stat2Value": "0",
       "stat2Label": "Abfall auf Deponien",
@@ -1153,7 +1166,7 @@
       "benefit3Title": "Verbesserte Konzentration",
       "benefit3": "Ablenkende Hintergrundgeräusche minimieren",
       "benefit4": "Großformat für wirkungsvolle Ergebnisse",
-      "ratingValue": "αw 0.95",
+      "ratingValue": "αw {alphaW}",
       "ratingLabel": "Klasse A"
     },
     "specs": {
@@ -1164,7 +1177,7 @@
       "thicknessValue": "45 mm",
       "weightValue": "~4,5 kg pro Panel",
       "acousticsTitle": "Akustische Leistung",
-      "alphaValue": "0.95",
+      "alphaValue": "1.0",
       "classValue": "Klasse A",
       "nrcValue": "0.90",
       "materialsTitle": "Materialien",
@@ -1175,7 +1188,7 @@
       "fireStandardValue": "EN 13501-1",
       "sustainTitle": "Nachhaltigkeit",
       "recycledValue": "≥80%",
-      "endOfLifeValue": "100% recyclierbar",
+      "endOfLifeValue": "Kostenlose Rücknahme und Recycling",
       "installTitle": "Montage",
       "mountingValue": "Hakenschienensystem",
       "toolsValue": "Bohrmaschine, Wasserwaage",
@@ -1185,7 +1198,7 @@
       "coverValue2": "Recycelter Stoff",
       "binderRow": "Bindemittel",
       "endOfLife": "Lebensende",
-      "endOfLifeVal": "100% recyclierbar",
+      "endOfLifeVal": "Kostenlose Rücknahme und Recycling",
       "mounting": "Befestigung",
       "mountingVal": "Hakensystem",
       "installTime": "Montagezeit",
@@ -1216,8 +1229,8 @@
           "answer": "Ein Standard-Solid-Paneel 1200 × 600 mm wiegt etwa 4,5 kg. Durch die leichte Konstruktion müssen Wandbefestigungen selten verstärkt werden."
         },
         "absorptionRating": {
-          "question": "Was ist der Unterschied zwischen αw 1.0 und NRC 0.95?",
-          "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Normen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw 1.0 und NRC 0.95 weisen auf dieselbe Klasse-A-Leistung hin."
+          "question": "Was ist der Unterschied zwischen αw {alphaW} und NRC {nrc}?",
+          "answer": "Beide messen Schallabsorption, jedoch nach unterschiedlichen Prüfnormen. αw (ISO 11654) ist der europäische Einzahlwert; NRC (ASTM C423) das amerikanische Äquivalent. αw {alphaW} und NRC {nrc} weisen auf dieselbe Klasse-A-Leistung hin."
         }
       }
     },
@@ -1271,7 +1284,8 @@
       "title": "Magnetische Verbindung",
       "description": "Die Module verbinden sich mühelos über dezente Magnete, die in den Stoff integriert sind. Montieren und demontieren Sie mit Leichtigkeit — unsichtbar, dezent verarbeitet, aber stark genug für sorgenfreie Nutzung. Kein Werkzeug, keine Komplexität, einfach einrasten und los.",
       "snapLabel": "Zusammenklappen",
-      "autoAlign": "Automatische Ausrichtung"
+      "autoAlign": "Automatische Ausrichtung",
+      "doneLabel": "Fertig"
     },
     "modular": {
       "tag": "FLEXIBILITÄT",
@@ -1288,7 +1302,8 @@
       "description": "Wie alle Re-Sound-Produkte wurde Divide sorgfältig mit Kreislauffähigkeit als Kern entworfen. Hergestellt aus recycelten Textilien und Industrieabfällen, trägt es zu einer nachhaltigeren Zukunft bei. Am Lebensende geben Sie es uns kostenlos zum Recyceln zurück.",
       "recycledLabel": "Recyclinganteil",
       "wasteLabel": "Abfall auf Deponien",
-      "recycleLabel": "Recyclingzyklen"
+      "recycleLabel": "Recyclingzyklen",
+      "stat1Value": "{pct} %"
     },
     "acoustics": {
       "tag": "LEISTUNG",
@@ -1321,7 +1336,7 @@
       "magnets": "Magnete",
       "magnetsVal": "Neodym",
       "endOfLife": "Lebensende",
-      "endOfLifeVal": "100% recyclierbar",
+      "endOfLifeVal": "Kostenlose Rücknahme und Recycling",
       "connection": "Verbindung",
       "connectionVal": "Magnetischer Einrastverschluss",
       "setupTime": "Aufbauzeit",
@@ -1375,8 +1390,8 @@
       "tag": "RECYCELTE PET-AKUSTIKPANEELE",
       "title": "rPET Groove: genutete PET-Akustikpaneele in 12 Farben",
       "tagline": "Von Flaschen zur Stille",
-      "description": "Verwandeln Sie Ihren Raum mit rPET - Groove Akustikpaneelen. Aus 100% recycelten Kunststoffflaschen hergestellt, vereinen diese eleganten Rillenpaneele zeitgemäßes Design mit außergewöhnlicher Schallabsorption. Effizienz trifft Eleganz.",
-      "usp1": "100% Recyceltes PET",
+      "description": "Verwandeln Sie Ihren Raum mit rPET - Groove Akustikpaneelen. {pct, select, unknown {Aus recycelten Kunststoffflaschen hergestellt, vereinen diese} other {Zu {pct} % aus recycelten Kunststoffflaschen hergestellt, vereinen diese}} eleganten Rillenpaneele zeitgemäßes Design mit außergewöhnlicher Schallabsorption. Effizienz trifft Eleganz.",
+      "usp1": "{pct, select, unknown {Recycelte PET-Flaschen} other {{pct} % recyceltes PET}}",
       "usp2": "Bis zu NRC 0.90",
       "usp3": "12 Designerfarben",
       "colorSelector": "Farbe Wählen",
@@ -1386,7 +1401,7 @@
       "tag": "KREISLAUFDESIGN",
       "title": "Design Trifft Nachhaltigkeit",
       "description": "rPET - Groove Paneele bringen eine zeitgemäße Note in jeden Raum und reduzieren gleichzeitig Lärm. Das sichtbare Lamellendesign erzeugt optische Tiefe und Textur — perfekt für moderne Büros, Konferenzräume, Lobbys, Restaurants und Empfangsbereiche.",
-      "feature1": "Aus 100% recycelten Kunststoffflaschen",
+      "feature1": "{pct, select, unknown {Aus recycelten Kunststoffflaschen hergestellt} other {Zu {pct} % aus recycelten Kunststoffflaschen hergestellt}}",
       "feature2": "CNC-geschnittene Rillenmuster",
       "feature3": "Leicht und einfach zu handhaben",
       "feature4": "Geeignet für Wände und Decken",
@@ -1481,11 +1496,11 @@
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
       "title": "Wirklich Kreislauffähig",
-      "description": "rPET - Groove Paneele verkörpern die Kreislaufwirtschaft. Vollständig aus post-consumer recyceltem Kunststoff hergestellt, können sie am Lebensende erneut recycelt werden.",
-      "badge1": "100% Recycelt",
+      "description": "rPET - Groove Paneele verkörpern die Kreislaufwirtschaft. {pct, select, unknown {Aus recyceltem Post-Consumer-Kunststoff hergestellt} other {Zu {pct} % aus recyceltem Post-Consumer-Kunststoff hergestellt}}, können sie am Lebensende erneut recycelt werden. Wir bieten eine kostenlose Rücknahme an, damit nichts verschwendet wird.",
+      "badge1": "{pct, select, unknown {Recyceltes PET} other {{pct} % recycelt}}",
       "badge2": "Vollständig Recyclierbar",
       "badge3": "Kostenlose Rücknahme",
-      "badge4": "Hergestellt in Belgien",
+      "badge4": "Hergestellt in Polen",
       "recycledBottlesLabel": "Recycelte Flaschen pro Panel",
       "badge1Desc": "Aus post-consumer PET-Flaschen hergestellt",
       "badge2Desc": "Kann am Lebensende recycelt werden",
@@ -1522,7 +1537,7 @@
       "certVOC": "Niedrige Emissionen / E1",
       "certVOCValue": "Niedrige Emission / E1",
       "certRecycled": "Recyclinganteil",
-      "certRecycledValue": "GRS zertifiziert",
+      "certRecycledValue": "Post-Consumer-PET-Flaschen",
       "applicationsTitle": "Anwendungen",
       "appInstall": "Montage",
       "appInstallValue": "Wände & Decken",
@@ -1556,18 +1571,19 @@
       "appWalls": "Wandpaneele",
       "appCeilings": "Deckenpaneele",
       "appEnvironment": "Umgebung",
-      "matRecycledPET": "100% Recyceltes PET",
+      "matRecycledPET": "Recycelter PET-Filz",
       "matDensity": "Dichte",
       "colorsLabel": "Farben",
       "colorsVal": "12 Standardfarben",
       "customColors": "Sonderfarben",
       "customColorsVal": "Verfügbar (MOQ erforderlich)",
       "certEPD": "EPD verfügbar",
-      "certGRS": "GRS zertifiziert",
+      "certGRS": "Post-Consumer-PET-Flaschen",
       "appIdealFor": "Ideal für",
       "appIdealVal": "Büros, Konferenzräume, Lobbys",
       "appAlso": "Auch geeignet",
-      "appAlsoVal": "Restaurants, Hotels, Schulen"
+      "appAlsoVal": "Restaurants, Hotels, Schulen",
+      "nrcByThickness": "NRC (nach Stärke)"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1592,7 +1608,7 @@
       "colorChart": "Farbkarte"
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recycelt"
+      "freeNote": "Kostenlose Muster erhältlich • Hergestellt in Polen • {pct, select, unknown {Recyceltes PET} other {{pct} % recyceltes PET}}"
     },
     "faq": {
       "questions": {
@@ -1602,7 +1618,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Alle rPET-Paneele sind B-s1,d0 nach EN 13501-1 klassifiziert — die höchste praktische Klasse für Innenraum-Dekormaterial unterhalb der A-Klasse."
+          "answer": "Nach EN 13501-1 ist rPET Groove als {groove} klassifiziert. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite; die anderen rPET-Modelle weisen auf ihren eigenen Seiten ihre jeweilige Klasse aus."
         },
         "processability": {
           "question": "Können rPET-Paneele geschnitten, gebohrt oder lackiert werden?",
@@ -1642,8 +1658,8 @@
       "tag": "RECYCELTE PET-AKUSTIKPANEELE",
       "title": "rPET Panel: das Akustikpaneel aus recyceltem PET, das Sie wie MDF bearbeiten",
       "tagline": "Nachhaltige Stille, Unendliche Möglichkeiten",
-      "description": "Verwandeln Sie jeden Raum mit rPET - Panel Akustikpaneelen. {pct, select, unknown {Aus recycelten PET-Flaschen hergestellt, liefern diese} other {Aus {pct}% recycelten PET-Flaschen hergestellt, liefern diese}} leichten, aber leistungsstarken Schallabsorber maximale Akustikleistung bei minimaler Umweltbelastung.",
-      "usp1": "100% Recycelbares PET",
+      "description": "Verwandeln Sie jeden Raum mit rPET - Panel Akustikpaneelen. {pct, select, unknown {Aus recycelten PET-Flaschen hergestellt, liefern diese} other {Zu {pct} % aus recycelten PET-Flaschen hergestellt, liefern diese}} leichten, aber leistungsstarken Schallabsorber maximale Akustikleistung bei minimaler Umweltbelastung.",
+      "usp1": "{pct, select, unknown {Recyceltes PET} other {{pct} % recyceltes PET}}",
       "usp2": "αw bis 1,00",
       "usp3": "Nur 3-4 kg/m²",
       "colorSelector": "Farbe Wählen",
@@ -1663,8 +1679,8 @@
       "reason5Title": "Mehr Optionen?",
       "reason5": "Mit rPET Groove für ein vollständiges Designsystem kombinieren",
       "description": "rPET - Panel verwandelt recycelte PET-Flaschen in hochleistungsfähige Akustikpaneele. Jedes Panel hält Plastikmüll von Deponien fern und schafft dabei gesündere, ruhigere Umgebungen. Es ist die schallabsorbierende Alternative zu MDF — bei einem Bruchteil des Gewichts.",
-      "feature1": "{pct, select, unknown {Aus recycelten PET-Flaschen} other {Zu {pct}% aus recycelten PET-Flaschen}}",
-      "feature2": "100% recyclierbar am Lebensende",
+      "feature1": "{pct, select, unknown {Aus recycelten PET-Flaschen hergestellt} other {Zu {pct} % aus recycelten PET-Flaschen hergestellt}}",
+      "feature2": "Am Lebensende vollständig recycelbar",
       "feature3": "Leicht: nur 3-4 kg/m²",
       "feature4": "Ohne chemische Bindemittel"
     },
@@ -1704,21 +1720,21 @@
       "fiberLabel": "Komprimierte PET-Fasern",
       "fiberSublabel": "Schallenergie wird in Wärme umgewandelt",
       "panelThickness": "Panelstärke",
-      "soundAbsorbed": "Schall Absorbiert",
       "testStandard": "Prüfnorm",
-      "testConfig": "Testkonfiguration: 24mm Panel auf 50mm Rahmen mit Polyesterwoll-Dämmung erreicht αw 0,95",
-      "certNote": "Unabhängig getestet und zertifiziert nach ISO 11654"
+      "testConfig": "Prüfkonfiguration: 24 mm Paneel auf 50 mm Rahmen mit Polyesterwoll-Dämmung",
+      "certNote": "Unabhängig getestet und zertifiziert nach ISO 11654",
+      "fireClassLabel": "Brandklasse (EN 13501-1)"
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
       "title": "Akustischer Komfort, Umweltrespekt",
-      "cert1": "{pct, select, unknown {Recyceltes PET} other {{pct}% Recyclinganteil}}",
-      "cert2": "100% Recyclierbar",
+      "cert1": "{pct, select, unknown {Recycelter PET-Anteil} other {{pct} % Recyclinganteil}}",
+      "cert2": "Vollständig recycelbar",
       "cert3": "OEKO-TEX® Standard 100",
       "cert4": "Klasse A+ Emissionen",
       "badge1Desc": "Aus post-consumer PET-Flaschen hergestellt",
       "badge2Desc": "Vollständige Materialrückgewinnung am Lebensende",
-      "description": "rPET - Panel verkörpert die Kreislaufwirtschaft. {pct, select, unknown {Jedes Paneel wird aus recycelten PET-Flaschen hergestellt} other {Jedes Paneel enthält {pct}% recycelte PET-Flaschen}} und am Lebensende kann das gesamte Paneel erneut recycelt werden. Kein Abfall, kein Kompromiss.",
+      "description": "rPET - Panel verkörpert die Kreislaufwirtschaft. {pct, select, unknown {Jedes Paneel wird aus recycelten PET-Flaschen hergestellt} other {Jedes Paneel enthält {pct} % recycelte PET-Flaschen}}, und am Lebensende kann das gesamte Paneel erneut recycelt werden. Kein Abfall, kein Kompromiss.",
       "cert3Desc": "Klasse 1 zertifiziert für menschliche Sicherheit",
       "cert4Desc": "Keine VOC oder Formaldehyd (ISO 16000)"
     },
@@ -1821,7 +1837,7 @@
       "oekoTexCert": "OEKO-TEX® Zertifikat"
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recyclierbar"
+      "freeNote": "Kostenlose Muster erhältlich • Hergestellt in Polen • {pct, select, unknown {Recyceltes PET} other {{pct} % recyceltes PET}}"
     },
     "faq": {
       "questions": {
@@ -1831,7 +1847,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Alle rPET-Paneele sind B-s1,d0 nach EN 13501-1 klassifiziert — die höchste praktische Klasse für Innenraum-Dekormaterial unterhalb der A-Klasse."
+          "answer": "Nach EN 13501-1 ist rPET Panel als {panel} klassifiziert. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite; die anderen rPET-Modelle weisen auf ihren eigenen Seiten ihre jeweilige Klasse aus."
         },
         "processability": {
           "question": "Können rPET-Paneele geschnitten, gebohrt oder lackiert werden?",
@@ -1935,10 +1951,10 @@
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2": "Recycelter Filz",
       "badge2Desc": "Akustikrücken aus recycelten Materialien",
-      "badge3": "Europäische Produktion",
-      "badge3Desc": "Reduzierte Transportemissionen",
-      "badge4": "EPD Verfügbar",
-      "badge4Desc": "Vollständige Umweltproduktdeklaration",
+      "badge3": "Hergestellt in Polen",
+      "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
+      "badge4": "Kostenlose Rücknahme",
+      "badge4Desc": "Die Paneele kommen am Lebensende kostenlos zu uns zurück",
       "description": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unser FSC®-zertifiziertes Holz stammt aus verantwortungsvoll bewirtschafteten Wäldern.",
       "description2": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unsere FSC®-Zertifizierung garantiert, dass das Holz aus verantwortungsvoll bewirtschafteten Wäldern stammt, die Umwelt-, Sozial- und Wirtschaftsvorteile bieten."
     },
@@ -2038,7 +2054,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert — der Kern, den wir für Fluchtwege und öffentliche Gebäude vorsehen. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite."
         },
         "leadTime": {
           "question": "Wie lang ist die Standard-Lieferzeit?",
@@ -2074,8 +2090,8 @@
       "tagline": "Präzisionsperforationen, Maximale Absorption",
       "description": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten bieten höchste Brandschutz- und Akustikkontrolle.",
       "usp1": "Runde Perforationen",
-      "usp2": "Brandschutz B2-s1, d0",
-      "usp3": "Bis Klasse B",
+      "usp2": "Brandklasse {fireClass}",
+      "usp3": "αw {alphaW} je Lochbild",
       "description2": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten liefern höchste Brandschutz- und Akustikkontrolle für anspruchsvolle öffentliche Räume."
     },
     "patterns": {
@@ -2112,8 +2128,8 @@
       "title": "Für Klang Entwickelt",
       "benefit1Title": "Breitbandabsorption",
       "benefit1": "Effektiv über das gesamte Frequenzspektrum",
-      "benefit2Title": "Höchster Brandschutz",
-      "benefit2": "B-s1, d0 — die höchste erreichbare Klasse für Holzpaneele",
+      "benefit2Title": "Brandschutz",
+      "benefit2": "Brandverhalten {fireClass} mit dem brandhemmenden MDF-Kern (EN 13501-1)",
       "benefit3Title": "Abstimmbare Leistung",
       "benefit3": "Vier Perforationsmuster für maßgeschneiderte Akustiklösungen",
       "description": "Präzisionsgebohrte Perforationen lassen Schallwellen in das Panel eintreten und zur Absorptionsschicht darunter gelangen.",
@@ -2131,7 +2147,8 @@
       "description3": "Präzisionsgebohrte Perforationen lassen Schallwellen in das Panel eintreten und durch die Kavität dahinter strömen. Kombiniert mit Mineralwolle-Dämmung liefert rWood - Perf hervorragende Breitbandabsorption.",
       "diagramTitle": "Querschnitt",
       "fireRating": "Brandklasse",
-      "noiseReduction": "Lärmreduzierung"
+      "noiseReduction": "Lärmreduzierung",
+      "ratingPerPattern": "je Lochbild"
     },
     "installation": {
       "tag": "VERDECKTE BEFESTIGUNG",
@@ -2151,15 +2168,15 @@
       "tag": "NACHHALTIGKEIT",
       "title": "Gebaut um zu Dauern, Verantwortungsvoll Gebaut",
       "badge1": "FSC® Zertifiziert",
-      "badge2": "17% Recyclinganteil",
-      "badge3": "Europäische Produktion",
+      "badge2": "{pct} % Recyclinganteil",
+      "badge3": "Hergestellt in Polen",
       "badge4": "Ultra-Niedrige Emissionen",
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Post-consumer Recyclingmaterial im Kern",
-      "badge3Desc": "Erneuerbare Energiequellen, kurze Lieferketten",
-      "badge4Desc": "Kein zugesetztes Formaldehyd, EPD verfügbar",
+      "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen) — kurze Lieferketten",
+      "badge4Desc": "Kein zugesetztes Formaldehyd",
       "description": "rWood - Perf kombiniert langlebige, natürliche Materialien mit einem verantwortungsvollen Fertigungsansatz.",
-      "description3": "rWood - Perf kombiniert langlebige, natürliche Materialien mit verantwortungsvoller Beschaffung. Der Fasergipskern ist von Natur aus emissionsarm — keine chemische Imprägnierung ist für Brandschutzleistungen erforderlich."
+      "description3": "rWood - Perf kombiniert langlebige, natürliche Materialien mit verantwortungsvoller Beschaffung: ein brandhemmender MDF-Kern ohne zugesetztes Formaldehyd und Furniere aus nachhaltig bewirtschafteten Wäldern."
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2198,7 +2215,7 @@
     "overview": {
       "tag": "BEWÄHRTE LEISTUNG",
       "description": "rWood - Perf Paneele sind eine der wirksamsten Akustikwandlösungen. Präzisionsgebohrte Perforationen lassen Schall durch die dekorative Holzoberfläche.",
-      "feature1": "Brandhemmendem MDF-Kern (B2-s1, d0)",
+      "feature1": "Brandhemmender MDF-Kern ({fireClass})",
       "feature2": "Überfurnierte Kanten für nahtlose Verbindungen",
       "feature3": "Heller oder dunkler Kern für Musterdiskretion",
       "feature4": "Sonderformate bis 3050 × 1220 mm",
@@ -2219,7 +2236,7 @@
       "item4Desc": "30–50 mm Dämmung für optimale Leistung"
     },
     "cta": {
-      "note": "Kostenlose Muster verfügbar • FSC® zertifiziert • A2 Brandschutz verfügbar"
+      "note": "Kostenlose Muster erhältlich • FSC® zertifiziert"
     },
     "faq": {
       "questions": {
@@ -2229,7 +2246,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert — der Kern, den wir für Fluchtwege und öffentliche Gebäude vorsehen. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite."
         },
         "leadTime": {
           "question": "Wie lang ist die Standard-Lieferzeit?",
@@ -2266,7 +2283,7 @@
       "description": "Erleben Sie die Schönheit von Naturholz kombiniert mit der akustischen Leistung fortschrittlicher Mikroperforationstechnologie. Praktisch unsichtbare Löcher liefern Klasse A Schallabsorption und bewahren gleichzeitig das reine, homogene Aussehen des Premium-Holzfurniers.",
       "usp1": "Unsichtbare Perforationen",
       "usp2": "Klasse A Absorption",
-      "usp3": "Brandschutz B-s1, d0",
+      "usp3": "Brandklasse {fireClass}",
       "colorSelector": "Holzfurnier Wählen"
     },
     "perforation": {
@@ -2295,8 +2312,8 @@
       "benefit1": "Mikrolöcher und Schallkammern arbeiten für überlegene Absorption zusammen",
       "benefit2Title": "Platzsparendes Design",
       "benefit2": "Weniger abhängig von Luftspalten — dünnere Wand- und Deckenaufbauten",
-      "benefit3Title": "Höchster Brandschutz",
-      "benefit3": "B-s1, d0 Klassifizierung — die höchste für mikroperforiertes Holz",
+      "benefit3Title": "Brandschutz",
+      "benefit3": "Brandverhalten {fireClass} mit dem brandhemmenden MDF-Kern (EN 13501-1)",
       "description": "Die Kombination aus Mikro-Perforationen an der Oberfläche und tausenden größeren Schalleintrittskanälen schafft außergewöhnliche Breitbandabsorption.",
       "layer1Name": "A-Grad Furnier mit präzisionsgebohrten Löchern",
       "layer2Name": "Brandhemmender MDF-Kern",
@@ -2342,11 +2359,11 @@
       "title": "Verantwortungsvoll Hergestellt",
       "badge1": "FSC® Zertifiziertes Furnier",
       "badge2": "Natürliches Kernmaterial",
-      "badge3": "Europäische Produktion",
+      "badge3": "Hergestellt in Polen",
       "badge4": "Niedrige VOC-Emissionen",
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Faserplattenkem — ein holzbasierter, brandgeschützter Kern",
-      "badge3Desc": "Kurze Lieferketten, die Transportemissionen gering halten",
+      "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
       "badge4Desc": "E1-klassifiziert für gesündere Innenraumluft",
       "description": "rWood - Micro Paneele werden mit Nachhaltigkeit als Kernprinzip gebaut. FSC®-zertifiziertes Holz, emissionsarme Oberflächenbehandlungen und verantwortungsvoll beschaffte Materialien.",
       "badge5": "Grüne Energie"
@@ -2396,7 +2413,7 @@
       "description1": "rWood - Micro Paneele kombinieren fortschrittliche Mikroperforationstechnologie mit Premium-Holzfurnieren. Aus normaler Betrachtungsdistanz sind die Perforationen völlig unsichtbar — was Sie sehen, ist eine schöne, homogene Holzoberfläche. Was Sie hören, ist außergewöhnlicher akustischer Komfort.",
       "description2": "Das Geheimnis liegt in der Kombination zweier akustischer Mechanismen: Tausende präzise gefertigte Mikrolöcher an der Oberfläche und schallabsorbierende Kammern im Kernmaterial.",
       "feature1": "Perforationen aus normaler Betrachtungsdistanz unsichtbar",
-      "feature2": "Nicht brennbarer Fasergipskern",
+      "feature2": "Brandhemmender MDF-Kern mit Schallkammern",
       "feature3": "Überfurnierte Kanten für nahtlose Verbindungen",
       "feature4": "Geeignet für Wände und Decken",
       "feature5": "Als hinterleuchtete Paneele erhältlich"
@@ -2432,7 +2449,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert — der Kern, den wir für Fluchtwege und öffentliche Gebäude vorsehen. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite."
         },
         "leadTime": {
           "question": "Wie lang ist die Standard-Lieferzeit?",
@@ -2552,13 +2569,13 @@
       "title": "Verantwortungsvoll Hergestellt",
       "badge1": "FSC® Zertifiziert",
       "badge2": "Kreislaufrücknahme",
-      "badge3": "Europäische Produktion",
+      "badge3": "Hergestellt in Polen",
       "badge4": "EPD Verfügbar",
       "badge5": "Niedrige VOC",
       "badge1Desc": "Gesamtes Holz aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Kostenlose Paneel-Rücknahme und Recycling am Lebensende",
       "description": "Jedes rWood - Panel beginnt mit verantwortungsvoll gewonnenem Holz. Im Rahmen von Re-Sounds Kreislaufwirtschafts-Engagement maximieren wir die Nutzung jedes Stamms durch Furnierverarbeitung — bis zu 40× mehr Oberfläche als Massivholz aus demselben Baum.",
-      "badge3Desc": "Kurze Lieferketten, reduzierte Transportemissionen",
+      "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
       "badge4Desc": "Vollständige Umweltproduktdeklaration",
       "badge5Desc": "E1-klassifiziert, erfüllt strengste Emissionsnormen",
       "badge6": "Grüne Energie",
@@ -2710,7 +2727,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Die Standard-Brandklassifizierung ist B-s2,d0 nach EN 13501-1. Die rWood Micro-Variante erreicht B-s1,d0 und eignet sich für die strengsten Anforderungen öffentlicher Gebäude."
+          "answer": "Das hängt vom Kern ab. Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert; auf einem Standard-MDF-Kern lautet die Klassifizierung D-s2,d0. Für Fluchtwege und öffentliche Gebäude sollten Sie den FR-Kern vorschreiben."
         },
         "leadTime": {
           "question": "Wie lang ist die Standard-Lieferzeit?",
@@ -2740,7 +2757,7 @@
       "description": "Die ultimative Akustiklösung für gekrümmte Oberflächen. Aus recyceltem PET-Filz mit Präzisions-V-Schnitt-Rillen hergestellt, passen sich diese flexiblen Paneele nahtlos an Säulen, gekrümmte Wände und jede architektonische Form an.",
       "usp1": "Min. Radius 500mm",
       "usp2": "Brandhemmend",
-      "usp3": "100% Recyceltes PET",
+      "usp3": "{pct, select, unknown {Recyceltes PET} other {{pct} % recyceltes PET}}",
       "colorSelector": "Farbe Wählen",
       "colorPlaceholder": "Farbe auswählen",
       "description2": ""
@@ -2785,7 +2802,7 @@
       "feature1Desc": "Reduziert Echo und Nachhall",
       "feature2Title": "Brandhemmend",
       "feature2Desc": "Eingebaute Brandschutzigenschaften",
-      "feature3Title": "100% Recycelt",
+      "feature3Title": "{pct, select, unknown {Recyceltes PET} other {{pct} % recycelt}}",
       "feature3Desc": "Aus recycelten Kunststoffflaschen hergestellt",
       "layer1Label": "Recycelter PET-Filz",
       "layer2Label": "Präzisions-V-Schnitte",
@@ -2810,8 +2827,8 @@
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
       "title": "Von Flaschen zu Schönen Räumen",
-      "description": "Jedes Flex-Groove Panel wird aus 100% recycelten PET-Kunststoffflaschen hergestellt und gibt Abfallmaterialien ein neues Leben.",
-      "badge1": "Recyceltes PET",
+      "description": "Jedes Flex-Groove Paneel wird {pct, select, unknown {aus recycelten PET-Kunststoffflaschen} other {zu {pct} % aus recycelten PET-Kunststoffflaschen}} gefertigt und gibt Abfallmaterialien ein neues Leben. Unser kreislauforientierter Ansatz stellt sicher, dass diese Paneele am Ende ihres Lebenszyklus erneut recycelt werden können.",
+      "badge1": "{pct, select, unknown {Recyceltes PET} other {{pct} % recyceltes PET}}",
       "badge1Desc": "Aus recycelten Kunststoffflaschen hergestellt",
       "badge2": "Vollständig Recyclierbar",
       "badge2Desc": "Kann am Lebensende recycelt werden",
@@ -2819,7 +2836,7 @@
       "badge4": "Niedrige VOC",
       "badge3Desc": "Kurze Lieferkette aus unserem polnischen Werk",
       "badge4Desc": "Sicher für Innenräume",
-      "description2": "Jedes Flex-Groove Panel wird aus 100% recycelten PET-Kunststoffflaschen hergestellt und gibt Abfallmaterialien ein neues Leben. Unser kreislauffähiger Ansatz stellt sicher, dass diese Paneele am Lebensende erneut recycelt werden können."
+      "description2": ""
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2855,7 +2872,7 @@
       "certVOC": "VOC-Emissionen",
       "certVOCVal": "Niedrige Emissionen",
       "certRecycled": "Recyclinganteil",
-      "certRecycledVal": "Verifiziert 100%",
+      "certRecycledVal": "100 %",
       "appSurfaces": "Oberflächen",
       "appSurfacesVal": "Wände, Säulen, gebogene Elemente",
       "appEnvironment": "Umgebung",
@@ -2896,7 +2913,7 @@
       "description2": "Fordern Sie ein individuelles Angebot für Ihr Projekt an. Unser Team hilft Ihnen, die perfekte Farbe zu wählen und Ihren Bedarf zu berechnen."
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • Hergestellt in Polen • 100% Recycelt"
+      "freeNote": "Kostenlose Muster erhältlich • Hergestellt in Polen • {pct, select, unknown {Recyceltes PET} other {{pct} % recyceltes PET}}"
     },
     "faq": {
       "questions": {
@@ -2906,7 +2923,7 @@
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Alle rPET-Paneele sind B-s1,d0 nach EN 13501-1 klassifiziert — die höchste praktische Klasse für Innenraum-Dekormaterial unterhalb der A-Klasse."
+          "answer": "Nach EN 13501-1 ist rPET Flex Groove als {flex} klassifiziert. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite; die anderen rPET-Modelle weisen auf ihren eigenen Seiten ihre jeweilige Klasse aus."
         },
         "processability": {
           "question": "Können rPET-Paneele geschnitten, gebohrt oder lackiert werden?",
@@ -2999,7 +3016,7 @@
       "rwoodVsRpetVsTextile": {
         "category": "products",
         "question": "Was ist der Unterschied zwischen rWood, rPET und der Textilserie?",
-        "answer": "Es sind drei unterschiedliche Materialfamilien für unterschiedliche Designintentionen. Die Textilserie (Interior, Solid, Divide) besteht aus 100 % recycelten Textilfasern mit Stoffbezug — weich, warm, in mehreren Farben verfügbar, hergestellt in Belgien. Die rPET-Serie (Panel, Groove, Flex Groove) besteht aus 100 % recycelten PET-Flaschen, ist OEKO-TEX® zertifiziert und kann wie MDF verarbeitet werden (sägen, fräsen, lackieren); ideal für kräftige Farben und individuelle Installationen. Die rWood-Serie (Groove, Perf, Micro, Panel) kombiniert FSC-zertifiziertes Holzfurnier mit einem Kern aus recycelten Fasern und bietet eine architektonische Premium-Oberfläche in 8+ Holzarten; in Europa gefertigt."
+        "answer": "Es sind drei unterschiedliche Materialfamilien für unterschiedliche Designabsichten. Die Textilserie (Interior, Solid, Divide) besteht aus recycelten Textilfasern (mindestens 80 % Recyclinganteil) mit Stoffbezug — weich, warm, in mehreren Farben erhältlich, gefertigt in unserem eigenen Werk in Beveren-Waas (Belgien). Die rPET-Serie (Panel, Groove, Flex Groove) besteht aus recycelten PET-Flaschen (rPET Panel und rPET Flex Groove bestehen vollständig aus recyceltem PET), ist OEKO-TEX®-zertifiziert und lässt sich wie MDF verarbeiten (sägen, fräsen, lackieren); ideal für kräftige Farben und individuelle Installationen. Die rWood-Serie (Groove, Perf, Micro, Panel) kombiniert FSC-zertifiziertes Holzfurnier mit einem Kern aus recyceltem Filz und bietet eine architektonische Premium-Oberfläche in über 8 Holzarten; gefertigt in unserem eigenen Werk in Częstochowa (Polen)."
       },
       "fireSafety": {
         "category": "products",
@@ -3014,7 +3031,7 @@
       "whatIsCircular": {
         "category": "sustainability",
         "question": "Was bedeutet \"zirkulär\" bei Re-Sound?",
-        "answer": "Zirkulär bedeutet bei Re-Sound drei Dinge, die von Anfang an mitgedacht werden. Erstens, Inputs: Wir verwenden recycelte Materialien überall dort, wo die akustische Leistung es zulässt — 100 % recycelte Textilfasern in der Interior/Solid/Divide-Serie, 100 % recycelter PET in der rPET-Serie und ein Kern aus recycelten Fasern unter dem FSC-zertifizierten Furnier der rWood-Serie. Zweitens, Lebensende: Jede Re-Sound Platte kann über unseren kostenlosen Rücknahmeservice zurückgegeben werden, und die Materialien werden zu neuen Platten oder neuen Rohstoffen wiederaufbereitet, anstatt auf der Deponie zu landen. Drittens, Design: Verbindungen (magnetisch, mechanisch, Hakensysteme) sind umkehrbar, sodass Platten zerstörungsfrei entfernt werden können, was eine Neukonfiguration während der Lebensdauer des Gebäudes ermöglicht."
+        "answer": "Zirkulär bedeutet bei Re-Sound drei Dinge, die von Anfang an mitgedacht werden. Erstens, Rohstoffe: Wir verwenden recycelte Materialien überall dort, wo die akustische Leistung es zulässt — recycelte Textilfasern (mindestens 80 % Recyclinganteil) in der Interior/Solid/Divide-Serie, recycelte PET-Flaschen in der rPET-Serie (rPET Panel und rPET Flex Groove bestehen vollständig aus recyceltem PET) und einen Kern aus recyceltem Filz unter dem FSC-zertifizierten Furnier der rWood-Serie. Zweitens, Lebensende: Jede Re-Sound Platte kann über unseren kostenlosen Rücknahmeservice an uns zurückgegeben werden, und die Materialien werden zu neuen Platten oder neuen Rohstoffen wiederaufbereitet, anstatt auf der Deponie zu landen. Drittens, Design: Verbindungen (magnetisch, mechanisch, Hakensysteme) sind lösbar, sodass Platten zerstörungsfrei entfernt werden können, was eine Neukonfiguration während der Lebensdauer des Gebäudes ermöglicht."
       },
       "takeBack": {
         "category": "sustainability",
@@ -3024,7 +3041,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Welchen Rezyklatanteil hat jede Produktserie?",
-        "answer": "Der Rezyklatanteil variiert je nach Produktfamilie. Die Textilserie (Interior, Solid, Divide) besteht aus recycelten Textilfasern mit hohem Recyclinganteil. Die rPET-Serie verwendet 100 % post-consumer recyceltes PET (die entsprechende Flaschenzahl variiert je nach Plattengröße — etwa 60 Flaschen pro Standard-Groove-Platte). Die rWood-Serie verwendet einen Kern mit hohem Recyclingfaseranteil mit FSC-zertifiziertem Furnier auf der Sichtseite. Detaillierte Materialaufschlüsselungen und EPD-Dokumentation sind auf jeder Produktseite und auf Anfrage verfügbar."
+        "answer": "Der Rezyklatanteil variiert je nach Produktfamilie. Die Textilserie (Interior, Solid, Divide) besteht aus recycelten Textilfasern mit hohem Recyclinganteil. Die rPET-Serie verwendet recyceltes Post-Consumer-PET; rPET Panel und rPET Flex Groove bestehen vollständig aus recyceltem PET (die entsprechende Flaschenzahl variiert je nach Plattengröße — etwa 60 Flaschen pro Standard-Groove-Platte). Die rWood-Serie verwendet einen Kern mit hohem Recyclingfaseranteil mit FSC-zertifiziertem Furnier auf der Sichtseite. Detaillierte Materialaufschlüsselungen und EPD-Dokumentation sind auf jeder Produktseite und auf Anfrage verfügbar."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3112,7 +3129,9 @@
       "segmentPower": "Leistung pro Segment",
       "ceilingHeight": "Mindestraumhöhe",
       "sideClearance": "Seitlicher Abstand",
-      "frontClearance": "Frontaler Abstand"
+      "frontClearance": "Frontaler Abstand",
+      "madeIn": "Hergestellt in",
+      "measurementPending": "ISO 23351-1-Messung ausstehend"
     },
     "downloads": {
       "tag": "RESSOURCEN",
@@ -3198,7 +3217,7 @@
       },
       "safety": {
         "title": "Nach Norm geprüft",
-        "desc": "CE-Kennzeichnung, Brandklasse EN 13501-1 B-s2,d0, Elektrik nach IEC 60598 zertifiziert. Dokumentation liegt der Lieferung bei."
+        "desc": "CE-Kennzeichnung, Elektrik nach IEC 60598 zertifiziert. Dokumentation liegt der Lieferung bei."
       }
     },
     "specs": {
@@ -3369,7 +3388,7 @@
       },
       "safety": {
         "title": "Nach Norm geprüft",
-        "desc": "CE-Kennzeichnung, Brandklasse EN 13501-1 B-s2,d0, Elektrik nach IEC 60598 zertifiziert. Standard bei jeder Lieferung."
+        "desc": "CE-Kennzeichnung, Elektrik nach IEC 60598 zertifiziert. Standard bei jeder Lieferung."
       }
     },
     "specs": {
@@ -3381,7 +3400,6 @@
       "doorWidthValue": "1000 mm lichte Weite",
       "weightValue": "420 kg",
       "acousticsTitle": "Akustische Leistung",
-      "noiseReductionValue": "26 dB(A)",
       "absorberValue": "Akustikfilz aus recyceltem PET, 24 mm",
       "doorSealValue": "Magnetisch, vierseitig angedrückt",
       "ventilationTitle": "Belüftung",
@@ -3532,7 +3550,7 @@
       },
       "safety": {
         "title": "Nach Norm geprüft",
-        "desc": "CE-Kennzeichnung, Brandklasse EN 13501-1 B-s2,d0, Elektrik nach IEC 60598 zertifiziert. Dokumentation liegt der Lieferung bei."
+        "desc": "CE-Kennzeichnung, Elektrik nach IEC 60598 zertifiziert. Dokumentation liegt der Lieferung bei."
       }
     },
     "specs": {
@@ -3871,7 +3889,11 @@
     },
     "ownFactories": "Aus eigener Fertigung",
     "ownFactoriesShort": "Eigene Werke",
-    "plants": "Beveren-Waas (BE) · Częstochowa (PL)"
+    "plants": "Beveren-Waas (BE) · Częstochowa (PL)",
+    "plant": {
+      "BE": "Beveren-Waas, Belgien",
+      "PL": "Częstochowa, Polen"
+    }
   },
   "productData": {
     "category": {
@@ -3970,7 +3992,11 @@
       "perfNano": "Nano (⌀ 0,5 mm)",
       "perfMicroS": "Micro S (⌀ 1,0 mm)",
       "perfMicroM": "Micro M (⌀ 1,5 mm)",
-      "perfMicroL": "Micro L (⌀ 2,0 mm)"
+      "perfMicroL": "Micro L (⌀ 2,0 mm)",
+      "openArea24": "24 % Öffnungsanteil",
+      "openArea18": "18 % Öffnungsanteil",
+      "openArea12": "12 % Öffnungsanteil",
+      "openArea5": "5 % Öffnungsanteil"
     },
     "solo-eco": {
       "mounting": "Freistehend, Montage durch Re-Sound auf Anfrage",
@@ -4015,7 +4041,7 @@
       "isoClassNote": "Klassengrenzen nach ISO 23351-1: A+ ≥ 33 · A ≥ 30 · B ≥ 27 · C ≥ 24 · D ≥ 21 dB(A).",
       "whyTag": "WARUM RE-SOUND",
       "whyTitle": "Warum Re-Sound",
-      "whyOwnFactoriesTitle": "Unsere eigenen Werke",
+      "whyOwnFactoriesTitle": "Unser eigenes Werk in Częstochowa",
       "whyTakeBackTitle": "Kostenloses Rücknahmeprogramm",
       "whyTakeBackDesc": "Am Ende der Nutzungsdauer holen wir die Paneele ab und führen sie wieder in den Rohstoffkreislauf zurück – innerhalb Belgiens kostenlos, im übrigen EU-Raum zu den Logistikkosten.",
       "whyCertsTitle": "Zertifiziert, wo es darauf ankommt",
@@ -4040,7 +4066,7 @@
     },
     "rpet": {
       "title": "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound",
-      "description": "PET-Akustikpaneele aus recycelten Flaschen: rPET Panel, Groove und Flex Groove. 12–16 Farben, B-s1,d0, OEKO-TEX®, aus unserem eigenen Werk in Polen.",
+      "description": "PET-Akustikpaneele aus recycelten Flaschen: rPET Panel, Groove, Flex Groove. 12–16 Farben, OEKO-TEX®, B-s1,d0 oder B-s2,d0 je nach Modell. Hergestellt in unserem Werk in Polen.",
       "h1": "PET-Akustikpaneele: rPET Panel, Groove und Flex Groove",
       "breadcrumb": "rPET",
       "intro": "PET-Akustikpaneele verwandeln Post-Consumer-Flaschen in einen dichten Polyesterfilz, der Schall absorbiert, sich wie MDF auf der CNC-Fräse bearbeiten lässt und in einer Farbpalette erhältlich ist, mit der Architekten tatsächlich arbeiten. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen); die rPET-Serie wird in Częstochowa produziert. Die Serie umfasst drei Modelle. rPET Panel ist die glatte Platte: schneiden, fräsen, bohren und lackieren Sie sie für Wände, Decken und Möbel. rPET Groove ergänzt eine genutete Oberfläche in 12 Farben und drei Dicken für höhere Absorption an Wänden und Decken. rPET Flex Groove behält die genutete Optik bei, lässt sich aber bis zu einem Radius von 500 mm um Säulen und gebogene Wände formen. Alle drei Modelle sind nach OEKO-TEX® Standard 100 zertifiziert, erreichen B-s1,d0 bzw. B-s2,d0 nach EN 13501-1 und können am Ende der Nutzungsdauer zum Recycling zurückgenommen werden. Vergleichen Sie in der Tabelle unten PET-Akustikpaneele nach Format, Absorption und Lieferzeit und öffnen Sie anschließend die Modellseite für Oberflächen und Downloads.",
@@ -4056,7 +4082,7 @@
       "faq": {
         "q1": {
           "question": "Werden PET-Akustikpaneele wirklich aus recycelten Flaschen hergestellt?",
-          "answer": "Ja. Der Filz besteht aus Fasern recycelter PET-Flaschen; rPET Groove und rPET Flex Groove bestehen zu 100 % aus recyceltem PET. Jedes Modell ist nach OEKO-TEX® Standard 100 zertifiziert, sodass sich das Material für Schulen und das Gesundheitswesen eignet."
+          "answer": "Ja. Der Filz besteht aus Fasern von Post-Consumer-PET-Flaschen: rPET Panel und rPET Flex Groove bestehen vollständig aus recyceltem PET, und rPET Groove wird aus demselben recycelten PET-Filz gefertigt. Jedes Modell ist nach OEKO-TEX® Standard 100 zertifiziert, sodass sich das Material für Schulen und das Gesundheitswesen eignet."
         },
         "q2": {
           "question": "Wie viel Schall absorbieren PET-Akustikpaneele?",
@@ -4102,7 +4128,7 @@
         },
         "q3": {
           "question": "Welche Brandklasse erreichen Holz-Akustikpaneele?",
-          "answer": "Mit dem schwer entflammbaren Kern sind die rWood-Modelle nach EN 13501-1 in B-s1,d0 klassifiziert; auf einem Standard-MDF-Kern lautet die Klassifizierung D-s2. Für Fluchtwege und öffentliche Gebäude sollten Sie den FR-Kern vorschreiben."
+          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind die rWood-Modelle nach EN 13501-1 als B-s1,d0 klassifiziert; auf einem Standard-MDF-Kern lautet die Klassifizierung D-s2,d0. Für Fluchtwege und öffentliche Gebäude sollten Sie den FR-Kern vorschreiben."
         },
         "q4": {
           "question": "Können mikroperforierte Holzpaneele hinterleuchtet werden?",
@@ -4115,11 +4141,11 @@
       }
     },
     "booths": {
-      "title": "Akustik-Telefonboxen & Meeting-Pods fürs Büro | Re-Sound",
+      "title": "Hersteller von Büro-Telefonboxen: Solo, Duo, Modular XL | Re-Sound",
       "description": "Büro-Telefonboxen & Meeting-Pods: Solo ECO und Solo Flex (1 Pers.), Duo (2), Modular XL (6–10). Sprachpegelminderung ISO 23351-1 bei Flex und XL, 230 V.",
-      "h1": "Telefonboxen und Meeting-Pods fürs Büro aus eigener Fertigung",
+      "h1": "Telefonboxen und Meeting-Pods fürs Büro direkt vom Hersteller",
       "breadcrumb": "Telefonboxen",
-      "intro": "Eine Telefonbox fürs Büro bietet einer Person einen ruhigen, belüfteten Platz für Telefonate und Videomeetings mitten im Großraumbüro; ein Meeting-Pod leistet dasselbe für ein Team. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die Serie umfasst vier Modelle. Solo ECO ist das Einstiegsmodell: eine Kabine für eine Person mit Stehtisch, länderspezifischer Steckdose mit USB-A und USB-C (für Dänemark nur Steckdose), Lüftung bis 4 m³/min und geschlossener Rückwand oder Glasrückwand. Solo Flex ist die Telefonbox für eine Person: 1 m² Stellfläche, Sitz-Steh-Tisch, 230 V und USB-C, leise EC-Lüfter und eine Sprachpegelminderung von 24 dB(A), gemessen nach ISO 23351-1. Duo ist die Akustikkabine für zwei Personen mit zwei Konfigurationen – Flex für ein Gespräch zu zweit, Work für eine Person mit Tisch über die gesamte Breite. Modular XL ist der akustische Meeting-Pod für sechs bis zehn Personen: Die Grundeinheit lässt sich in 90-cm-Segmenten erweitern und erreicht 25,9 dB(A) Sprachpegelminderung. Solo Flex, Duo und Modular XL kommen mit 5 Jahren Garantie auf die Konstruktion, Solo ECO mit 5 Jahren Ersatzteilgarantie; alle werden EU-weit geliefert, Montage auf Anfrage möglich. Vergleichen Sie unten die Telefonboxen fürs Büro und öffnen Sie anschließend eine Modellseite für Zubehör und Downloads.",
+      "intro": "Eine Telefonbox fürs Büro bietet einer Person einen ruhigen, belüfteten Platz für Telefonate und Videomeetings mitten im Großraumbüro; ein Meeting-Pod leistet dasselbe für ein Team. Die Kabinen von Re-Sound werden in unserem eigenen Werk in Częstochowa (Polen) gefertigt und auf Wunsch von unserem eigenen Team geliefert und montiert, mit 5 Jahren Garantie auf die Konstruktion (Solo ECO: 5 Jahre Ersatzteilgarantie). Die Serie umfasst vier Modelle. Solo ECO ist das Einstiegsmodell: eine Kabine für eine Person mit Stehtisch, länderspezifischer Steckdose mit USB-A und USB-C (für Dänemark nur Steckdose), Lüftung bis 4 m³/min und geschlossener Rückwand oder Glasrückwand. Solo Flex ist die Telefonbox für eine Person: 1 m² Stellfläche, Sitz-Steh-Tisch, 230 V und USB-C, leise EC-Lüfter und eine Sprachpegelminderung von 24 dB(A), gemessen nach ISO 23351-1. Duo ist die Akustikkabine für zwei Personen mit zwei Konfigurationen — Flex für ein Gespräch zu zweit, Work für eine Person mit Tisch über die gesamte Breite. Modular XL ist der akustische Meeting-Pod für sechs bis zehn Personen: Die Grundeinheit lässt sich in 90-cm-Segmenten erweitern und erreicht 25,9 dB(A) Sprachpegelminderung. Für Solo Flex, Duo und Modular XL gelten 5 Jahre Garantie auf die Konstruktion, für Solo ECO 5 Jahre Ersatzteilgarantie; alle vier werden EU-weit geliefert. Vergleichen Sie unten die Telefonboxen fürs Büro und öffnen Sie anschließend eine Modellseite für Zubehör und Downloads.",
       "whyCertsDesc": "5 Jahre Garantie bei jeder Box (auf die Konstruktion bei Solo Flex, Duo und Modular XL; auf Ersatzteile bei Solo ECO); Sprachpegelminderung angegeben nach ISO 23351-1, wo gemessen.",
       "applications": {
         "app1": "Großraumbüros und Coworking-Flächen",
@@ -4150,7 +4176,8 @@
           "question": "Wie lang sind Lieferzeit und Garantie bei einer Telefonbox?",
           "answer": "Solo ECO hat 4 Wochen Produktionszeit und 5 Jahre Ersatzteilgarantie. Solo Flex und Duo werden 4–6 Wochen nach Bestellung geliefert, Modular XL 6–8 Wochen für die Basiseinheit; Sonderstoffe verlängern die Lieferzeit um 2–3 Wochen. Die Garantie beträgt 5 Jahre auf die Konstruktion und 2 Jahre auf die Elektronik; Lieferung und Montage sind EU-weit verfügbar."
         }
-      }
+      },
+      "whyOwnFactoriesDesc": "Alle vier Kabinen werden in unserem eigenen Werk in Częstochowa (Polen) gebaut und auf Wunsch von unserem eigenen Team geliefert und montiert."
     }
   },
   "sampleKit": {
@@ -4222,7 +4249,7 @@
     "title": "Telefonbox fürs Büro: Preise & ISO-Klassen 2026 | Re-Sound",
     "description": "Büro-Telefonbox: Preise. Solo ECO ab {soloEco}, Solo Flex ab {soloFlex} netto, Modular XL ab {modularXl}. ISO 23351-1-Klassen, Montage, Lieferzeit, Garantie.",
     "h1": "Telefonboxen fürs Büro: Preise, Klassen und Auswahlhilfe",
-    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab {soloEco} zzgl. MwSt. ohne Montage (Solo ECO), Solo Flex ab {soloFlex} und ein Modular XL Meeting-Pod ab {modularXl}. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen).",
+    "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab {soloEco} zzgl. MwSt. ohne Montage (Solo ECO), Solo Flex ab {soloFlex} und ein Modular XL Meeting-Pod ab {modularXl}. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen.",
     "breadcrumb": "Telefonbox-Preise",
     "priceTag": "Preise 2026",
     "priceTitle": "Preise pro Modell (zzgl. MwSt.)",
@@ -4293,6 +4320,25 @@
     "endOfLifeTag": "Zirkulär",
     "warrantyByModel": {
       "solo-eco": "5 Jahre Ersatzteilgarantie"
+    },
+    "manufactureLine": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen); Lieferung und Montage durch unser eigenes Team werden separat angeboten.",
+    "pricelist": {
+      "tag": "Preisliste",
+      "title": "Vollständige Preisliste herunterladen (PDF)",
+      "text": "Hinterlassen Sie Ihre Daten, und die Preisliste für Telefonboxen (PDF) wird sofort heruntergeladen.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "company": "Unternehmen",
+      "email": "E-Mail",
+      "honeypot": "Dieses Feld bitte leer lassen",
+      "consent": "Ich bin damit einverstanden, dass Re-Sound mich bezüglich dieser Anfrage kontaktiert. <link>Datenschutzerklärung</link>",
+      "submit": "Preisliste herunterladen",
+      "sending": "Ihr Download wird vorbereitet…",
+      "successTitle": "Ihr Download hat begonnen",
+      "successText": "Falls sich die PDF nicht geöffnet hat, verwenden Sie den Link unten.",
+      "successLink": "Preisliste öffnen (PDF)",
+      "errorInvalid": "Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es in Kürze erneut."
     }
   },
   "order": {
@@ -4516,7 +4562,8 @@
       "sparePartsLabel": "Ersatzteilgarantie",
       "sparePartsValue": "5 Jahre",
       "deliveryValue": "4 Wochen Produktion, ab Werk Częstochowa",
-      "weightLabel": "Gewicht (netto / brutto)"
+      "weightLabel": "Gewicht (netto / brutto)",
+      "acousticsTitle": "Akustische Leistung"
     },
     "addons": {
       "tag": "OPTIONAL",
@@ -4561,6 +4608,267 @@
     },
     "cta": {
       "deliveryNote": "Ab Werk, 4 Wochen Produktion · Lieferung und Montage auf Anfrage · 5 Jahre Ersatzteilgarantie"
+    }
+  },
+  "manufacturing": {
+    "navLabel": "Fertigung",
+    "breadcrumb": "Fertigung",
+    "title": "Hersteller von Akustikpaneelen und Telefonboxen | Re-Sound",
+    "description": "Re-Sound fertigt seine Akustikpaneele und Telefonboxen in zwei eigenen Werken: Textil in Beveren-Waas (BE), rWood, rPET und Boxen in Częstochowa (PL).",
+    "h1": "Hersteller von Akustikpaneelen und Telefonboxen: unsere zwei Werke",
+    "intro": "Re-Sound entwickelt und fertigt seine Produkte selbst, statt die Produkte anderer weiterzuverkaufen. Jedes Akustikpaneel und jede Telefonbox auf dieser Website entsteht in einem unserer beiden eigenen Werke: die Textilserien in Beveren-Waas, Belgien; die rWood- und rPET-Serien sowie die vier Kabinen in Częstochowa, Polen. Alle Rohstoffe werden innerhalb der Europäischen Union bezogen.",
+    "plantsTag": "DIE WERKE",
+    "plantsTitle": "Zwei Werke, ein Hersteller",
+    "plantsIntro": "Was an jedem Standort gefertigt wird und wie Sie ihn erreichen. Besuche sind an beiden Standorten nach Vereinbarung möglich.",
+    "plant": {
+      "BE": {
+        "role": "Textil-Akustikpaneele, Hauptsitz und Showroom",
+        "makes": "Akustikpaneele und Trennwände aus recycelten Textilfasern.",
+        "note": "Im Showroom an dieser Adresse sind das komplette Paneelsortiment und alle drei Kabinengrößen installiert und akustisch aktiv, sodass Sie den Unterschied zwischen den Materialien hören können, bevor Sie sich festlegen."
+      },
+      "PL": {
+        "role": "rWood- und rPET-Paneele, alle Telefonboxen",
+        "makes": "Holz-Akustikpaneele mit FSC-zertifiziertem Furnier, PET-Akustikpaneele aus recyceltem PET-Filz sowie die Telefonboxen und Meeting-Pods.",
+        "note": "Das Produktionsbüro bietet Projektbesuche und Werksführungen nach Vereinbarung an. Auf Wunsch werden die Kabinen von unserem eigenen Team geliefert und montiert."
+      }
+    },
+    "plantLabels": {
+      "makes": "Hier gefertigt",
+      "address": "Adresse",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Mo–Fr, 08:00–16:30 · nach Vereinbarung",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "country": {
+        "BE": "Belgien",
+        "PL": "Polen"
+      }
+    },
+    "originTag": "WELCHE SERIE WO GEFERTIGT WIRD",
+    "originTitle": "Herstellungswerk je Produktlinie",
+    "originNote": "Eine Zeile pro Produkt, erzeugt aus denselben Produktdaten, die auch jede Modellseite speisen. Lieferzeiten wie auf den Modellseiten veröffentlicht.",
+    "col": {
+      "product": "Produkt",
+      "family": "Serie",
+      "plant": "Werk",
+      "leadTime": "Lieferzeit"
+    },
+    "certsTag": "ZERTIFIZIERUNGEN",
+    "certsTitle": "Zertifizierungen und was sie abdecken",
+    "certsIntro": "Aufgeführt sind nur Zertifizierungen, die für eine bestimmte Serie gelten – jeweils mit der zugrunde liegenden Norm und den abgedeckten Produkten.",
+    "certs": {
+      "FSC": {
+        "name": "FSC-Produktkettenzertifizierung",
+        "scope": "rWood-Furniere"
+      },
+      "OEKO-TEX": {
+        "name": "OEKO-TEX Standard 100",
+        "scope": "rPET-Filz"
+      },
+      "EPD": {
+        "name": "Umweltproduktdeklaration (EPD)",
+        "scope": "rWood Panel"
+      }
+    },
+    "certsAppliesTo": "Gilt für",
+    "certsNote": "Brandklassifizierung (EN 13501-1), Schallabsorption (ISO 11654) und Sprachpegelminderung (ISO 23351-1) sind Prüfergebnisse und keine Zertifizierungen; sie werden je Modell auf den Produktseiten angegeben.",
+    "howTag": "SO ARBEITEN WIR",
+    "howTitle": "Was die eigene Fertigung für Sie ändert",
+    "how": {
+      "origin": {
+        "title": "Transparente Herkunft",
+        "text": "Jede Produktseite nennt das Werk, aus dem das Produkt stammt, und die Tabelle auf dieser Seite wird aus denselben Produktdaten erzeugt – Text und Daten können sich also nicht widersprechen."
+      },
+      "installation": {
+        "title": "Lieferung und Montage durch unser eigenes Team",
+        "text": "Auf Wunsch werden die Kabinen von unserem eigenen Team geliefert und montiert; Lieferung und Montage werden separat angeboten."
+      },
+      "warranty": {
+        "title": "Garantie auf jede Kabine"
+      }
+    },
+    "linksTag": "MEHR ENTDECKEN",
+    "linksTitle": "Serien, technische Dokumente und Muster",
+    "links": {
+      "downloadsTitle": "Technische Downloads",
+      "downloadsText": "Datenblätter, Montageanleitungen und akustische Prüfberichte auf jeder Produktseite; Brandschutzzertifikate und Nachhaltigkeitserklärungen für die Paneele, Garantiebedingungen und CAD-Zeichnungen für die Kabinen.",
+      "downloadsCta": "Alle Produkte",
+      "samplesTitle": "Muster-Kit",
+      "samplesText": "Bestellen Sie ein kostenloses Muster-Kit und vergleichen Sie die Materialien und Oberflächen an Ihrem eigenen Schreibtisch.",
+      "hubCta": "Zum Sortiment"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Nachhallzeit-Rechner (RT60)",
+      "description": "Schätzen Sie die Nachhallzeit Ihres Raums mit der Sabine-Formel, vergleichen Sie sie mit dem Zielwert für Ihren Raumtyp und erfahren Sie, wie viele m² Re-Sound Akustikpaneele Sie benötigen."
+    },
+    "hero": {
+      "tag": "Kostenloser Rechner",
+      "title": "Nachhallzeit-Rechner",
+      "subtitle": "Geben Sie die Abmessungen und Oberflächen Ihres Raums ein, um die RT60 zu schätzen, sie mit dem Zielwert für den Raumtyp zu vergleichen und zu erfahren, wie viele m² Akustikpaneele sie in den Zielbereich bringen."
+    },
+    "intro": {
+      "tag": "So funktioniert es",
+      "title": "Die Sabine-Formel und die Zielwerte",
+      "sabine": "Der Rechner verwendet die Sabine-Formel in der Form T = V / (6 × A): T ist die Nachhallzeit in Sekunden, V das Raumvolumen in m³ und A die Gesamtabsorption in m² sabine – jede Fläche multipliziert mit ihrem Absorptionsgrad α, aufsummiert. Jedes Oktavband von 125 Hz bis 4000 Hz wird separat mit den α-Werten der gewählten Boden-, Decken- und Wandoberflächen berechnet.",
+      "headline": "Die maßgebliche RT60 ist der Mittelwert der Bänder 500, 1000 und 2000 Hz – der Sprachfrequenzen – und dieser Wert wird mit dem Zielwert verglichen.",
+      "targets": "Die Ziel-Nachhallzeiten je Raumtyp stammen aus derselben Quelltabelle wie die Absorptionsgrade: von 0,4 s für ein Musikstudio bis 1,5 s für eine Sporthalle oder ein Schwimmbad; für ein Büro, einen Besprechungsraum oder ein Klassenzimmer liegt der Zielwert bei 0,8 s.",
+      "note": "Die Sabine-Formel setzt voraus, dass die Absorption gleichmäßig im Raum verteilt ist. Das Ergebnis ist eine Schätzung für frühe Planungsentscheidungen, keine Messung.",
+      "targetsTableCaption": "Ziel-Nachhallzeit je Raumtyp",
+      "roomType": "Raumtyp",
+      "targetRt": "Ziel-T"
+    },
+    "form": {
+      "title": "Ihr Raum",
+      "length": "Länge",
+      "width": "Breite",
+      "height": "Höhe",
+      "unitHint": "in m (2,8 oder 2.8)",
+      "floor": "Bodenbelag",
+      "ceiling": "Deckenoberfläche",
+      "walls": "Wandoberfläche",
+      "roomType": "Raumtyp",
+      "roomTypeOption": "{name} — Ziel {t} s"
+    },
+    "results": {
+      "title": "Ergebnis",
+      "empty": "Geben Sie Länge, Breite und Höhe des Raums ein, um das Ergebnis zu sehen.",
+      "volume": "Raumvolumen",
+      "volumeValue": "{v} m³",
+      "rtNow": "Aktuelle RT60 (Schätzung)",
+      "rtNowHint": "Mittelwert der Bänder 500, 1000 und 2000 Hz",
+      "seconds": "{s} s",
+      "target": "Zielwert für {room}",
+      "met": "Zielwert erreicht",
+      "notMet": "Über dem Zielwert",
+      "toAdd": "Zusätzlich benötigte Absorption",
+      "sabine": "{a} m² sabine",
+      "toAddHint": "Zusätzliche Absorption, die nötig ist, um die RT60 auf den Zielwert zu senken",
+      "bandTable": "Je Oktavband",
+      "band": "Oktavband (Hz)",
+      "absorptionBand": "Absorptionsfläche A (m² sabine)",
+      "rtBand": "RT60 (s)",
+      "noneNeeded": "Ihr Raum erreicht den Zielwert für diesen Raumtyp bereits – es ist keine zusätzliche Absorption nötig.",
+      "recommendTitle": "Re-Sound Paneele zum Erreichen des Zielwerts",
+      "recommendIntro": "m² je Paneel, die die fehlende Absorption liefern, berechnet mit dem bewerteten Schallabsorptionsgrad αw. Wählen Sie ein Produkt; die Mengen sind Alternativen, keine Summe.",
+      "productLine": "≈ {m2} m² {product} (αw {alphaW})",
+      "productNoNumber": "{product} — je nach Muster / Stärke gemessen — siehe Produktseite",
+      "productLink": "Produktseite",
+      "evenNote": "Die Sabine-Formel setzt gleichmäßig verteilte Absorption voraus: Die Schätzung trifft am besten zu, wenn die Paneele über den Raum verteilt und nicht auf einer einzigen Fläche konzentriert werden."
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Fragen zur Berechnung",
+      "officeTarget": {
+        "question": "Welche Nachhallzeit sollte ein Büro haben?",
+        "answer": "Die Zieltabelle dieses Rechners sieht 0,8 s für Büro, Besprechungsraum, Klassenzimmer, Kindergarten und Wohnzimmer vor, 0,7 s für ein Callcenter, ein Restaurant, ein Café oder eine Bar und 1,0 s für einen Empfang oder Wartebereich. Der Rechner zeigt, ob Ihre geschätzte RT60 den Zielwert für den gewählten Raumtyp erreicht."
+      },
+      "hardFinishes": {
+        "question": "Welche Oberflächen absorbieren am wenigsten Schall?",
+        "answer": "In der Tabelle hat Marmor in jedem Oktavband einen Absorptionsgrad von 0,01, Beton 0,01 bis 0,03 und Putz 0,01 bis 0,05. Weiche Oberflächen absorbieren deutlich mehr: Teppich erreicht 0,37 bei 4000 Hz und schwere Vorhänge 0,96 bei 500 Hz. Ein Raum mit harten Oberflächen an Boden, Decke und Wänden hat daher eine lange Nachhallzeit."
+      },
+      "howManyM2": {
+        "question": "Wie viele m² Akustikpaneele brauche ich?",
+        "answer": "Der Rechner ermittelt die zusätzliche Absorption in m² sabine, die die maßgebliche RT60 – den Mittelwert der Bänder 500, 1000 und 2000 Hz – auf den Zielwert senkt, und teilt sie durch den bewerteten Schallabsorptionsgrad αw jedes Re-Sound Paneels mit veröffentlichtem Einzelwert: 1 m² eines Paneels mit αw 1,0 liefert 1 m² sabine. Paneele, deren αw vom Muster oder von der Stärke abhängt, werden ohne Menge aufgeführt und verlinken auf ihre Produktseite."
+      }
+    },
+    "lead": {
+      "tag": "Nächster Schritt",
+      "title": "Senden Sie mir diese Berechnung und ein Angebot",
+      "subtitle": "Wir senden Ihnen die obige Berechnung per E-Mail und melden uns mit einem Angebot für die empfohlenen Paneele.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "company": "Unternehmen",
+      "email": "E-Mail",
+      "honeypot": "Dieses Feld bitte leer lassen",
+      "submit": "Berechnung senden und Angebot anfragen",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank – die Berechnung ist unterwegs, und wir melden uns mit einem Angebot.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "incomplete": "Vervollständigen Sie zuerst die Berechnung oben.",
+      "privacyNotice": "Mit dem Absenden dieses Formulars akzeptieren Sie unsere <link>Datenschutzerklärung</link>."
+    }
+  },
+  "samples": {
+    "metaTitle": "Muster-Kit bestellen",
+    "metaDescription": "Fordern Sie das Re-Sound Muster-Kit an: A4-Muster jeder Serie und Oberfläche, Versand innerhalb von drei Werktagen in der EU.",
+    "hero": {
+      "tag": "Muster-Kit",
+      "title": "Bestellen Sie Ihr Muster-Kit",
+      "subtitle": "A4-Muster jeder Serie und Oberfläche, Versand innerhalb von drei Werktagen in der EU."
+    },
+    "kit": {
+      "tag": "Das ist im Kit",
+      "title": "Jede Serie und Oberfläche im A4-Format",
+      "swatchesTitle": "A4-Muster",
+      "swatchesText": "Ein A4-Muster jeder Serie und Oberfläche.",
+      "shippingTitle": "Drei Werktage",
+      "shippingText": "Das Kit wird innerhalb von drei Werktagen an Adressen in der EU versandt.",
+      "projectTitle": "Ihr Projekt",
+      "projectText": "Sagen Sie uns, welche Serien Sie in Betracht ziehen und worum es bei Ihrem Projekt geht.",
+      "cta": "Kit anfordern"
+    },
+    "ranges": {
+      "tag": "Serien",
+      "title": "Die Serien im Kit",
+      "text": "Muster jeder Oberfläche der Textil-, rWood- und rPET-Serien."
+    },
+    "families": {
+      "textile": "Textil",
+      "rwood": "rWood",
+      "rpet": "rPET"
+    },
+    "form": {
+      "tag": "Anfrage",
+      "title": "Fordern Sie Ihr Muster-Kit an",
+      "text": "Füllen Sie das untenstehende Formular aus. Mit * markierte Felder sind Pflichtfelder.",
+      "sections": {
+        "ranges": "Für welche Serien interessieren Sie sich?",
+        "project": "Ihr Projekt",
+        "delivery": "Lieferung"
+      },
+      "fields": {
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "company": "Unternehmen",
+        "email": "E-Mail",
+        "country": "Land",
+        "rangesHint": "Kreuzen Sie mindestens eine Serie an.",
+        "rangesRequired": "Bitte wählen Sie mindestens eine Serie aus.",
+        "projectType": "Projekttyp",
+        "projectTypePlaceholder": "Projekttyp auswählen",
+        "area": "Fläche (m²)",
+        "areaPlaceholder": "z. B. 120",
+        "address": "Lieferadresse",
+        "addressPlaceholder": "Straße und Hausnummer, PLZ, Ort",
+        "addressHint": "Straße, Hausnummer, Postleitzahl und Ort: nötig für den Versand des Kits.",
+        "honeypot": "Dieses Feld bitte leer lassen"
+      },
+      "projectTypes": {
+        "office": "Büro",
+        "education": "Bildung",
+        "healthcare": "Gesundheitswesen",
+        "hospitality": "Gastgewerbe",
+        "residential": "Wohnen",
+        "other": "Sonstiges"
+      },
+      "submit": "Muster-Kit anfordern",
+      "success": {
+        "title": "Anfrage erhalten",
+        "body": "Vielen Dank, {firstName}. Das Muster-Kit wird innerhalb von drei Werktagen in der EU versandt. Eine Bestätigung finden Sie in Ihrem Posteingang.",
+        "another": "Weitere Anfrage senden"
+      }
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Fragen zum Muster-Kit",
+      "q1": "Was ist im Muster-Kit enthalten?",
+      "a1": "A4-Muster jeder Serie und Oberfläche: Textil, rWood und rPET.",
+      "q2": "Wie lange dauert der Versand?",
+      "a2": "Das Kit wird innerhalb von drei Werktagen an Adressen in der EU versandt.",
+      "q3": "Muss ich bestimmte Serien auswählen?",
+      "a3": "Das Kit enthält jede Serie und Oberfläche. Indem Sie die Serien ankreuzen, die Sie interessieren, erfahren wir, welche davon für Ihr Projekt relevant sind."
     }
   }
 }

@@ -234,17 +234,15 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
           </div>
           <ul className="hub-why-grid">
             <li>
-              <span className="hub-why-icon" aria-hidden="true">🏭</span>
               <h3>{ts('whyOwnFactoriesTitle')}</h3>
-              <p>{tm('statement')}</p>
+              {/* Hub-specific plant sentence (booths) in front of the shared group statement (manufacturer.statement, reused, never copied). */}
+              <p>{t.has('whyOwnFactoriesDesc') ? `${t('whyOwnFactoriesDesc')} ${tm('statement')}` : tm('statement')}</p>
             </li>
             <li>
-              <span className="hub-why-icon" aria-hidden="true">🔄</span>
               <h3>{ts('whyTakeBackTitle')}</h3>
               <p>{ts('whyTakeBackDesc')}</p>
             </li>
             <li>
-              <span className="hub-why-icon" aria-hidden="true">✅</span>
               <h3>{ts('whyCertsTitle')}</h3>
               <p>{t('whyCertsDesc')}</p>
             </li>
@@ -274,7 +272,7 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
             <h2>{ts('ctaTitle')}</h2>
             <p>{ts('ctaText')}</p>
             <div className="hub-cta-buttons">
-              <Link href="/contact?topic=samples" className="btn-primary" prefetch={false}>{ts('ctaSampleKit')}</Link>
+              <Link href="/samples" className="btn-primary" prefetch={false}>{ts('ctaSampleKit')}</Link>
               <Link href="/contact" className="btn-secondary" prefetch={false}>{ts('ctaQuote')}</Link>
             </div>
           </div>

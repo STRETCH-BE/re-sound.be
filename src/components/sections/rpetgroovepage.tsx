@@ -5,6 +5,17 @@ import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { PRODUCTS } from '@/data/products';
+
+// Every figure below (recycled share, NRC per thickness, fire class) comes
+// from product data so copy, specs and JSON-LD can never disagree again.
+// 'unknown' selects the figure-less ICU branch (the recycled share of this
+// model is not confirmed); a null spec hides the element that would show it.
+const GROOVE = PRODUCTS['rpet-groove'];
+const grooveSpecs = GROOVE.specs.kind === 'panel' ? GROOVE.specs : null;
+const pct: string = GROOVE.recycledContentPct === null ? 'unknown' : String(GROOVE.recycledContentPct);
+// specs.nrc is written '0.55 / 0.75 / 0.90' — one value per thickness (12 / 24 / 36 mm).
+const nrcByThickness: (string | null)[] = grooveSpecs?.nrc ? grooveSpecs.nrc.split(' / ').map((v) => v.trim()) : [];
 
 // Color options for rPET - Groove (12 colors)
 const colorOptions = [
@@ -22,11 +33,11 @@ const patternOptions = [
   { id: 'grid', name: 'Grid', groovesKey: 'options.gridGrooves', spacing: '40mm', descriptionKey: 'options.gridDesc' },
 ];
 
-// Thickness options
+// Thickness options — NRC per thickness from product data (null = not shown)
 const thicknessOptions = [
-  { id: '12mm', name: '12mm', nrc: '0.55', descriptionKey: 'options.12mmDesc' },
-  { id: '24mm', name: '24mm', nrc: '0.75', descriptionKey: 'options.24mmDesc' },
-  { id: '36mm', name: '36mm', nrc: '0.90', descriptionKey: 'options.36mmDesc' },
+  { id: '12mm', name: '12mm', nrc: nrcByThickness[0] ?? null, descriptionKey: 'options.12mmDesc' },
+  { id: '24mm', name: '24mm', nrc: nrcByThickness[1] ?? null, descriptionKey: 'options.24mmDesc' },
+  { id: '36mm', name: '36mm', nrc: nrcByThickness[2] ?? null, descriptionKey: 'options.36mmDesc' },
 ];
 
 // Default hero image
@@ -55,10 +66,10 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
   // pre-existing data state where some locales have the same content in both
   // fields — those render as a single paragraph; locales with genuine
   // second paragraphs render two).
-  const desc2IfDistinct = (basePath: string): string | null => {
-    const a = t(`${basePath}.description`);
+  const desc2IfDistinct = (basePath: string, values?: Record<string, string>): string | null => {
+    const a = t(`${basePath}.description`, values);
     let b: string;
-    try { b = t(`${basePath}.description2`); } catch { return null; }
+    try { b = t(`${basePath}.description2`, values); } catch { return null; }
     // next-intl returns "namespace.key" as fallback for missing keys (per
     // getMessageFallback in i18n/request.ts). Detect that and treat as absent.
     if (!b || b === a || b.endsWith('.description2')) return null;
@@ -128,21 +139,18 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
           <p className="hero-description">
-            {t('hero.description')}
+            {t('hero.description', { pct })}
           </p>
           <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">♻️</span>
-              <span className="usp-text">{t('hero.usp1')}</span>
+              <span className="usp-text">{t('hero.usp1', { pct })}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🔇</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🎨</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
@@ -243,7 +251,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
-                {t('overview.feature1')}
+                {t('overview.feature1', { pct })}
               </li>
               <li>
                 <span className="check">✓</span>
@@ -274,28 +282,24 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
           
           <div className="recycling-steps">
             <div className="recycling-step">
-              <div className="step-icon">🍾</div>
               <div className="step-number">01</div>
               <h4>{t('fromBottles.step1Title')}</h4>
               <p>{t('fromBottles.step1Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
-              <div className="step-icon">⚙️</div>
               <div className="step-number">02</div>
               <h4>{t('fromBottles.step2Title')}</h4>
               <p>{t('fromBottles.step2Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
-              <div className="step-icon">🧵</div>
               <div className="step-number">03</div>
               <h4>{t('fromBottles.step3Title')}</h4>
               <p>{t('fromBottles.step3Desc')}</p>
             </div>
             <div className="step-arrow">→</div>
             <div className="recycling-step">
-              <div className="step-icon">✨</div>
               <div className="step-number">04</div>
               <h4>{t('fromBottles.step4Title')}</h4>
               <p>{t('fromBottles.step4Desc')}</p>
@@ -342,17 +346,14 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
 
         <div className="color-features">
           <div className="color-feature">
-            <span className="feature-icon">☀️</span>
             <h4>{t('colors.feature1')}</h4>
             <p>{t('colors.feature1Desc')}</p>
           </div>
           <div className="color-feature">
-            <span className="feature-icon">🧹</span>
             <h4>{t('colors.feature2')}</h4>
             <p>{t('colors.feature2Desc')}</p>
           </div>
           <div className="color-feature">
-            <span className="feature-icon">🔄</span>
             <h4>{t('colors.feature3')}</h4>
             <p>{t('colors.feature3Desc')}</p>
           </div>
@@ -509,13 +510,9 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
                   />
                 </svg>
                 <div className="rating-content">
-                  <span className="rating-value">NRC 0.90</span>
-                  <span className="rating-label">{t('thickness.sectionTitle')}</span>
+                  {selectedThickness.nrc && <span className="rating-value">NRC {selectedThickness.nrc}</span>}
+                  <span className="rating-label">{selectedThickness.name}</span>
                 </div>
-              </div>
-              <div className="rating-badge">
-                <span className="badge-icon">★</span>
-                <span className="badge-text">{tPage('classA')}</span>
               </div>
             </div>
 
@@ -529,7 +526,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
                     onClick={() => setSelectedThickness(thickness)}
                   >
                     <span className="thickness-value">{thickness.name}</span>
-                    <span className="thickness-nrc">NRC {thickness.nrc}</span>
+                    {thickness.nrc && <span className="thickness-nrc">NRC {thickness.nrc}</span>}
                   </button>
                 ))}
               </div>
@@ -629,19 +626,15 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
               <h4>{t('installation.mountingOptions')}</h4>
               <div className="mounting-grid">
                 <div className="mounting-option">
-                  <span className="mounting-icon">🧲</span>
                   <span>{t('installation.mounting1')}</span>
                 </div>
                 <div className="mounting-option">
-                  <span className="mounting-icon">📎</span>
                   <span>{t('installation.mounting2')}</span>
                 </div>
                 <div className="mounting-option">
-                  <span className="mounting-icon">🔩</span>
                   <span>{t('installation.mounting3')}</span>
                 </div>
                 <div className="mounting-option">
-                  <span className="mounting-icon">🧱</span>
                   <span>{t('installation.mounting4')}</span>
                 </div>
               </div>
@@ -678,34 +671,30 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
-            <p>{t('sustainability.description')}</p>
-            {desc2IfDistinct('sustainability') && (
-              <p>{desc2IfDistinct('sustainability')}</p>
+            <p>{t('sustainability.description', { pct })}</p>
+            {desc2IfDistinct('sustainability', { pct }) && (
+              <p>{desc2IfDistinct('sustainability', { pct })}</p>
             )}
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">♻️</span>
                 <div>
-                  <h4>{t('sustainability.badge1')}</h4>
+                  <h4>{t('sustainability.badge1', { pct })}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🔄</span>
                 <div>
                   <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">📦</span>
                 <div>
                   <h4>{t('sustainability.badge3')}</h4>
                   <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🏭</span>
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
                   <p>{t('sustainability.badge4Desc')}</p>
@@ -732,22 +721,18 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
 
         <div className="applications-grid">
           <div className="application-card">
-            <div className="application-icon">🏢</div>
             <h4>{t('applications.app1')}</h4>
-            <p>{t('applications.app1')}</p>
+            <p>{t('applications.app1Desc')}</p>
           </div>
           <div className="application-card">
-            <div className="application-icon">🏨</div>
             <h4>{t('applications.app2')}</h4>
-            <p>{t('applications.app2')}</p>
+            <p>{t('applications.app2Desc')}</p>
           </div>
           <div className="application-card">
-            <div className="application-icon">🏫</div>
             <h4>{t('applications.app3')}</h4>
-            <p>{t('applications.app3')}, auditoriums</p>
+            <p>{t('applications.app3Desc')}</p>
           </div>
           <div className="application-card">
-            <div className="application-icon">🏥</div>
             <h4>{t('applications.app4')}</h4>
             <p>{t('applications.app4Desc')}</p>
           </div>
@@ -772,7 +757,7 @@ export default function RPetGrooveProductPage({ breadcrumbs, specs, downloads, g
             </a>
           </div>
           <p className="cta-note">
-            {t('cta2.freeNote')}
+            {t('cta2.freeNote', { pct })}
           </p>
         </div>
       </section>

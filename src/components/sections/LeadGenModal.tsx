@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect, useRef } from 'react';
+import Icon from '@/components/ui/Icon';
 
 export interface LeadFormData {
   companyName: string;
@@ -189,7 +190,8 @@ export default function LeadGenModal({
             {t('subtitle')}
           </p>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: 'rgba(255, 255, 255, 0.2)', padding: '0.35rem 0.75rem', borderRadius: '20px', fontSize: '0.8rem', color: 'white', marginTop: '0.75rem', position: 'relative', zIndex: 1, textTransform: 'capitalize' }}>
-            📄 {displayName}
+            <Icon name="document" size={14} />
+            {displayName}
           </div>
         </div>
 

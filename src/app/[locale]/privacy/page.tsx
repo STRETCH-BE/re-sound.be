@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { buildAlternates } from '@/lib/seo';
+import Icon from '@/components/ui/Icon';
 
 interface PageProps {
   params: { locale: string };
@@ -36,7 +37,8 @@ export default async function PrivacyPage({ params: { locale } }: PageProps) {
     <div className="legal-page">
       <div className="container">
         <div className="legal-draft-banner" role="note">
-          ⚠️ {t('draftBanner')}
+          <Icon name="warning" size={18} />
+          {t('draftBanner')}
         </div>
 
         <header className="legal-header">
@@ -353,6 +355,9 @@ export default async function PrivacyPage({ params: { locale } }: PageProps) {
           padding: 0 1.5rem;
         }
         .legal-draft-banner {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.6rem;
           background: #fff8e1;
           border: 1px solid #f0c419;
           color: #6a4a00;
@@ -361,6 +366,10 @@ export default async function PrivacyPage({ params: { locale } }: PageProps) {
           margin-bottom: 2.5rem;
           font-size: 0.95rem;
           font-weight: 500;
+        }
+        .legal-draft-banner svg {
+          flex: none;
+          margin-top: 0.15rem;
         }
         .legal-header {
           margin-bottom: 3rem;

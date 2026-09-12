@@ -40,13 +40,13 @@ export default function ProductsMosaic() {
     },
   ];
 
-  // `alt` is a descriptive, emoji-free sentence (the visual label keeps its
-  // icon); it names the product family shown in each photo.
+  // Labels are plain translated text (no emoji, brief §1.5); `alt` is a
+  // descriptive sentence naming the product family shown in each photo.
   const applications = [
-    { label: '⛹️‍♂️ Education - Sports', alt: 'rWood Perf perforated wood acoustic panels in a school sports hall', image: '/images/products/rwood-perf/gallery-7.webp' },
-    { label: '🏢 Office', alt: 'rWood Perf perforated wood acoustic panels in an open-plan office', image: '/images/products/rwood-perf/gallery-3.webp' },
-    { label: '🏡 Private', alt: 'rWood Panel wood veneer acoustic panels in a private residence', image: '/images/products/rwood-veneer/gallery-2.webp' },
-    { label: '🏥 Healthcare', alt: 'rPET Panel recycled PET acoustic panels in a healthcare waiting area', image: '/images/products/rpet-panel/gallery-5.webp' },
+    { id: 'educationSports', label: t('applications.educationSports'), alt: 'rWood Perf perforated wood acoustic panels in a school sports hall', image: '/images/products/rwood-perf/gallery-7.webp' },
+    { id: 'office', label: t('applications.office'), alt: 'rWood Perf perforated wood acoustic panels in an open-plan office', image: '/images/products/rwood-perf/gallery-3.webp' },
+    { id: 'private', label: t('applications.private'), alt: 'rWood Panel wood veneer acoustic panels in a private residence', image: '/images/products/rwood-veneer/gallery-2.webp' },
+    { id: 'healthcare', label: t('applications.healthcare'), alt: 'rPET Panel recycled PET acoustic panels in a healthcare waiting area', image: '/images/products/rpet-panel/gallery-5.webp' },
   ];
 
   return (
@@ -97,7 +97,7 @@ export default function ProductsMosaic() {
       {/* ── APPLICATION STRIP ── */}
       <div className="app-strip">
         {applications.map((a) => (
-          <div key={a.label} className="app-cell">
+          <div key={a.id} className="app-cell">
             <div className="app-img">
               <Image
                 src={a.image}

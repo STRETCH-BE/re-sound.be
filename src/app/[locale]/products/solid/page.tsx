@@ -52,6 +52,13 @@ const GALLERY_IMAGES = [
   '/images/products/solid/gallery-5.jpg',
 ];
 
+// Spec figures quoted in the FAQ come from product data only — passed as ICU
+// arguments so no message carries a hard-coded αw / NRC value.
+const SOLID_SPECS = PRODUCTS['solid'].specs;
+const ALPHA_W = SOLID_SPECS.kind === 'panel' ? SOLID_SPECS.alphaW : null;
+const NRC = SOLID_SPECS.kind === 'panel' ? SOLID_SPECS.nrc : null;
+const SPEC_ARGS = { alphaW: ALPHA_W ?? '', nrc: NRC ?? '' };
+
 export async function generateMetadata({
   params: { locale },
 }: PageProps): Promise<Metadata> {
@@ -112,11 +119,13 @@ export default async function Page({ params: { locale } }: PageProps) {
   // Product FAQ (messages) + the workbook rows tagged "solid", without duplicates
   const faqEntries: FaqEntry[] = mergeFaqEntries(
     FAQ_KEYS
+    // The αw / NRC question only makes sense while both figures are in product data.
+    .filter((key) => key !== 'absorptionRating' || (ALPHA_W && NRC))
     .map((key) => {
       try {
         return {
-          question: tFaq(`questions.${key}.question`),
-          answer: tFaq(`questions.${key}.answer`),
+          question: tFaq(`questions.${key}.question`, SPEC_ARGS),
+          answer: tFaq(`questions.${key}.answer`, SPEC_ARGS),
         };
       } catch {
         return null;

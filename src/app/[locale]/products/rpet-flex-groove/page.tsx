@@ -31,6 +31,20 @@ interface PageProps {
 // Q&A copy under `rpetFlexGroovePage.faq.questions.<key>.question/.answer`.
 const FAQ_KEYS = ["oekoTex", "fireRating", "processability", "colorRange", "leadTime"] as const;
 
+// EN 13501-1 class of every rPET model, read from product data: the shared
+// "fireRating" answer names all three. null while any class is unknown, in
+// which case that question is left out rather than shown with a blank.
+function rpetFireClasses(): { panel: string; groove: string; flex: string } | null {
+  const of = (slug: string) => {
+    const s = PRODUCTS[slug].specs;
+    return s.kind === 'panel' ? s.fireClass : null;
+  };
+  const panel = of('rpet-panel');
+  const groove = of('rpet-groove');
+  const flex = of('rpet-flex-groove');
+  return panel && groove && flex ? { panel, groove, flex } : null;
+}
+
 export async function generateMetadata({
   params: { locale },
 }: PageProps): Promise<Metadata> {
@@ -95,13 +109,15 @@ export default async function Page({ params: { locale } }: PageProps) {
     namespace: 'rpetFlexGroovePage.faq',
   });
   // Product FAQ (messages) + the workbook rows tagged "rpet-flex-groove", without duplicates
+  const fireClasses = rpetFireClasses();
   const faqEntries: FaqEntry[] = mergeFaqEntries(
     FAQ_KEYS
     .map((key) => {
+      if (key === 'fireRating' && !fireClasses) return null;
       try {
         return {
           question: tFaq(`questions.${key}.question`),
-          answer: tFaq(`questions.${key}.answer`),
+          answer: tFaq(`questions.${key}.answer`, key === 'fireRating' && fireClasses ? fireClasses : undefined),
         };
       } catch {
         return null;

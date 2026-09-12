@@ -22,6 +22,10 @@ interface ProductSpecsProps {
  * Renders one native <details> accordion per spec card. Nothing here needs
  * JavaScript: the browser handles open/close, the content is in the HTML
  * for crawlers, and the whole block is excluded from the client bundle.
+ *
+ * A row whose label or value resolves to null (a data-backed fact that is
+ * not on file, or a certification the product does not hold) is skipped; a
+ * card left without rows is skipped too, so nothing is ever shown as a blank.
  */
 export default async function ProductSpecs({
   cards,
@@ -32,6 +36,19 @@ export default async function ProductSpecs({
 }: ProductSpecsProps) {
   const t = await getTranslations();
 
+  const visible = cards.flatMap((card) => {
+    const heading = resolveMsg(t, card.title);
+    if (heading === null) return [];
+    const rows = card.rows.flatMap((row) => {
+      const label = resolveMsg(t, row.label);
+      const value = resolveMsg(t, row.value);
+      return label === null || value === null ? [] : [{ label, value }];
+    });
+    return rows.length === 0 ? [] : [{ heading, rows }];
+  });
+
+  if (visible.length === 0) return null;
+
   return (
     <section id="specs" className="ps-section ps-specs">
       <div className="ps-header">
@@ -41,27 +58,24 @@ export default async function ProductSpecs({
       </div>
 
       <div className="ps-specs-grid">
-        {cards.map((card, i) => {
-          const heading = resolveMsg(t, card.title);
-          return (
-            <details key={heading} className="ps-card ps-accordion" open={i < openCount}>
-              <summary>
-                <h3>{heading}</h3>
-                <span className="ps-chevron" aria-hidden="true" />
-              </summary>
-              <table className="ps-table">
-                <tbody>
-                  {card.rows.map((row, j) => (
-                    <tr key={j}>
-                      <th scope="row">{resolveMsg(t, row.label)}</th>
-                      <td>{resolveMsg(t, row.value)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </details>
-          );
-        })}
+        {visible.map((card, i) => (
+          <details key={card.heading} className="ps-card ps-accordion" open={i < openCount}>
+            <summary>
+              <h3>{card.heading}</h3>
+              <span className="ps-chevron" aria-hidden="true" />
+            </summary>
+            <table className="ps-table">
+              <tbody>
+                {card.rows.map((row, j) => (
+                  <tr key={j}>
+                    <th scope="row">{row.label}</th>
+                    <td>{row.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </details>
+        ))}
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { localeFullCodes, type Locale } from '@/i18n/config';
+import Icon from '@/components/ui/Icon';
 
 interface BlogPostHeaderProps {
   slug: string;
@@ -41,7 +42,7 @@ export default function BlogPostHeader({ slug }: BlogPostHeaderProps) {
       </div>
 
       <div className="header-image">
-        <div className="image-placeholder">📄</div>
+        <div className="image-placeholder"><Icon name="document" /></div>
       </div>
 
       <style jsx>{`
@@ -112,7 +113,12 @@ export default function BlogPostHeader({ slug }: BlogPostHeaderProps) {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 5rem;
+          color: var(--brand-blue);
+        }
+
+        .image-placeholder :global(svg) {
+          width: 80px;
+          height: 80px;
         }
 
         @media (max-width: 992px) {

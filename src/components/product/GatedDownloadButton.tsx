@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 
 import type { LeadFormData } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
@@ -13,7 +13,7 @@ interface GatedDownloadButtonProps {
   slug: string;
   file: string;
   label: string;
-  icon: string;
+  icon: ReactNode;
   format: string;
   /** e.g. "Available on request" */
   hint: string;

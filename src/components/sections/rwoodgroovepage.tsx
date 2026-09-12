@@ -3,8 +3,17 @@
 import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+
+// Single source for every spec figure on this page (αw …): src/data/products.ts.
+// Nothing below may hard-code one of these values.
+const PRODUCT = PRODUCTS['rwood-groove'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+const alphaW = panelSpecs?.alphaW ?? null;
+// "Sound absorbed" metric is αw expressed as a percentage (0.90 → 90 %).
+const absorbedPct = alphaW && /^\d+(\.\d+)?$/.test(alphaW) ? Math.round(parseFloat(alphaW) * 100) : null;
 
 // Wood finish options for rWood - Groove
 const woodFinishOptions = [
@@ -120,15 +129,13 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">🌳</span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
+            {/* "Class A absorption" — allowed only because the data αw (0.90) is ≥ 0.90 */}
             <div className="usp">
-              <span className="usp-icon">🔇</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🔄</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
@@ -424,10 +431,12 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
                   />
                 </svg>
                 <div className="rating-content">
-                  <span className="rating-value">αw 0.90</span>
+                  {/* αw from src/data/products.ts */}
+                  <span className="rating-value">{alphaW ? `αw ${alphaW}` : '—'}</span>
                   <span className="rating-label">{t('acoustics.ratingLabel')}</span>
                 </div>
               </div>
+              {/* "Class A" only because the data αw (0.90) is ≥ 0.90 */}
               <div className="rating-badge">
                 <span className="badge-icon">★</span>
                 <span className="badge-text">{tPage('classA')}</span>
@@ -435,10 +444,12 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             </div>
 
             <div className="metric-cards">
-              <div className="metric-card">
-                <div className="metric-value">90%</div>
-                <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
-              </div>
+              {absorbedPct !== null && (
+                <div className="metric-card">
+                  <div className="metric-value">{absorbedPct}%</div>
+                  <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
+                </div>
+              )}
               <div className="metric-card">
                 <div className="metric-value">ISO 354</div>
                 <div className="metric-label">{t('acoustics.testStandard')}</div>
@@ -570,28 +581,27 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">🌲</span>
                 <div>
                   <h4>{t('sustainability.badge1')}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">♻️</span>
                 <div>
                   <h4>{t('sustainability.badge2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
-              <div className="sustain-item">
-                <span className="sustain-icon">🏭</span>
-                <div>
-                  <h4>{t('sustainability.badge3')}</h4>
-                  <p>{t('sustainability.badge3Desc')}</p>
+              {/* Origin badge: only when the plant is confirmed in product data (PL → Częstochowa) */}
+              {PRODUCT.madeIn === 'PL' && (
+                <div className="sustain-item">
+                  <div>
+                    <h4>{t('sustainability.badge3')}</h4>
+                    <p>{t('sustainability.badge3Desc')}</p>
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="sustain-item">
-                <span className="sustain-icon">📋</span>
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
                   <p>{t('sustainability.badge4Desc')}</p>
@@ -621,22 +631,18 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
 
         <div className="accessories-grid">
           <div className="accessory-card">
-            <div className="accessory-icon">📏</div>
             <h4>{t('accessories.item1Title')}</h4>
             <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">🔲</div>
             <h4>{t('accessories.item2Title')}</h4>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">📐</div>
             <h4>{t('accessories.item3Title')}</h4>
             <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
-            <div className="accessory-icon">🎨</div>
             <h4>{t('accessories.item4Title')}</h4>
             <p>{t('accessories.item4Desc')}</p>
           </div>

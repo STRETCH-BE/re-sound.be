@@ -5,15 +5,17 @@ import { useTranslations } from 'next-intl';
 export default function Ticker() {
   const t = useTranslations('ticker');
 
+  // Plain text only (no emoji, brief §1.5) and only claims that hold for the
+  // whole range — per-product specs (αw, fire class) live on the product pages.
   const items = [
-    { icon: '♻️', label: t('recycled') },
-    { icon: '🔊', label: t('classA') },
-    { icon: '🔥', label: t('fire') },
-    { icon: '🏭', label: t('factories') },
-    { icon: '🔄', label: t('takeback') },
-    { icon: '🪵', label: t('veneer') },
-    { icon: '🎨', label: t('colors') },
-    { icon: '📐', label: t('custom') },
+    t('recycled'),
+    t('tested'),
+    t('returnable'),
+    t('factories'),
+    t('takeback'),
+    t('veneer'),
+    t('colors'),
+    t('custom'),
   ];
 
   // Duplicate for seamless infinite scroll
@@ -22,10 +24,10 @@ export default function Ticker() {
   return (
     <div className="ticker-bar">
       <div className="ticker-track">
-        {allItems.map((item, i) => (
+        {allItems.map((label, i) => (
           <span key={i} className="ticker-item">
             <span className="ticker-dot" aria-hidden="true" />
-            {item.icon} {item.label}
+            {label}
           </span>
         ))}
       </div>

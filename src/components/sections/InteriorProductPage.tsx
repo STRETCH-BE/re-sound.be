@@ -5,8 +5,16 @@ import { analytics } from '@/lib/analytics';
 import OrderButton from '@/components/order/OrderButton';
 import type { ConfiguratorData } from '@/lib/catalogue/load';
 import { Link } from '@/i18n/navigation';
+import { PRODUCTS } from '@/data/products';
 import { useState, useEffect, type ReactNode } from 'react';
 import Image from 'next/image';
+
+// Single source for every spec figure on this page (αw, recycled content …):
+// src/data/products.ts. Nothing below may hard-code one of these values.
+const PRODUCT = PRODUCTS['interior'];
+const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
+const alphaW = panelSpecs?.alphaW ?? null;
+const recycledPct = PRODUCT.recycledContentPct;
 
 // Color options for the product
 const colorOptions = [
@@ -102,18 +110,19 @@ export default function InteriorProductPage({ priceFrom, configurator, breadcrum
           <p className="hero-manufacturer">{tm('statement')}</p>
           
           <div className="hero-usps">
+            {alphaW && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.uspAbsorption', { alphaW })}</span>
+              </div>
+            )}
             <div className="usp">
-              <span className="usp-icon">🔊</span>
-              <span className="usp-text">{t('hero.uspAbsorption')}</span>
-            </div>
-            <div className="usp">
-              <span className="usp-icon">♻️</span>
               <span className="usp-text">{t('hero.uspRecyclable')}</span>
             </div>
-            <div className="usp">
-              <span className="usp-icon">🇧🇪</span>
-              <span className="usp-text">{t('hero.uspOrigin')}</span>
-            </div>
+            {PRODUCT.madeIn === 'BE' && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.uspOrigin')}</span>
+              </div>
+            )}
           </div>
 
           <div className="hero-ctas">
@@ -250,10 +259,12 @@ export default function InteriorProductPage({ priceFrom, configurator, breadcrum
               {t('features.description')}
             </p>
             <div className="circular-stats">
-              <div className="stat">
-                <span className="stat-number">{t('features.stat1Value')}</span>
-                <span className="stat-label">{t('features.stat1Label')}</span>
-              </div>
+              {recycledPct !== null && (
+                <div className="stat">
+                  <span className="stat-number">{t('features.stat1Value', { pct: recycledPct })}</span>
+                  <span className="stat-label">{t('features.stat1Label')}</span>
+                </div>
+              )}
               <div className="stat">
                 <span className="stat-number">{t('features.stat2Value')}</span>
                 <span className="stat-label">{t('features.stat2Label')}</span>
@@ -359,9 +370,11 @@ export default function InteriorProductPage({ priceFrom, configurator, breadcrum
         <div className="acoustics-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
-          <p>
-            {t('acoustics.description')}
-          </p>
+          {alphaW && (
+            <p>
+              {t('acoustics.description', { alphaW })}
+            </p>
+          )}
         </div>
 
         <div className="acoustics-visual">
@@ -389,28 +402,28 @@ export default function InteriorProductPage({ priceFrom, configurator, breadcrum
             </div>
           </div>
 
-          <div className="absorption-rating">
-            <div className="rating-circle">
-              <span className="rating-value">{t('specs.alphaValue')}</span>
-              <span className="rating-label">{t('specs.classValue')}</span>
+          {alphaW && (
+            <div className="absorption-rating">
+              <div className="rating-circle">
+                {/* αw from src/data/products.ts; "Class A" only because that αw is ≥ 0.90 */}
+                <span className="rating-value">{alphaW}</span>
+                <span className="rating-label">{t('specs.classValue')}</span>
+              </div>
+              <p>{tPage('acoustics.highestRating')}</p>
             </div>
-            <p>{tPage('acoustics.highestRating')}</p>
-          </div>
+          )}
         </div>
 
         <div className="acoustics-benefits">
           <div className="benefit">
-            <span className="benefit-icon">🗣️</span>
             <h4>{tPage('acoustics.benefitSpeech.title')}</h4>
             <p>{tPage('acoustics.benefitSpeech.desc')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">🧠</span>
             <h4>{tPage('acoustics.benefitFocus.title')}</h4>
             <p>{tPage('acoustics.benefitFocus.desc')}</p>
           </div>
           <div className="benefit">
-            <span className="benefit-icon">😌</span>
             <h4>{tPage('acoustics.benefitStress.title')}</h4>
             <p>{tPage('acoustics.benefitStress.desc')}</p>
           </div>

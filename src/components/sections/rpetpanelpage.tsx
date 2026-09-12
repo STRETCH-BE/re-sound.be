@@ -30,11 +30,12 @@ const thicknessOptions = [
 const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
 
 
-// Recycled-content figure comes from product data so copy, meta and JSON-LD
-// can never disagree again. 'unknown' selects the figure-less ICU branch.
-const pct: string = PRODUCTS['rpet-panel'].recycledContentPct === null
-  ? 'unknown'
-  : String(PRODUCTS['rpet-panel'].recycledContentPct);
+// Every figure below (recycled share, αw, fire class) comes from product data
+// so copy, meta, specs and JSON-LD can never disagree again. 'unknown' selects
+// the figure-less ICU branch; a null spec hides the element that would show it.
+const PANEL = PRODUCTS['rpet-panel'];
+const panelSpecs = PANEL.specs.kind === 'panel' ? PANEL.specs : null;
+const pct: string = PANEL.recycledContentPct === null ? 'unknown' : String(PANEL.recycledContentPct);
 
 /**
  * Server-rendered sections are passed in as React nodes ("slots") so this
@@ -58,10 +59,10 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
 
   // Application options (inside component so t() is available)
   const applicationOptions = [
-    { id: 'walls', name: t('applications.app1Name'), icon: '🧱', description: t('applications.app1Desc') },
-    { id: 'ceilings', name: t('applications.app2Name'), icon: '⬆️', description: t('applications.app2Desc') },
-    { id: 'dividers', name: t('applications.app3Name'), icon: '📏', description: t('applications.app3Desc') },
-    { id: 'furniture', name: t('applications.app4Name'), icon: '🪑', description: t('applications.app4Desc') },
+    { id: 'walls', name: t('applications.app1Name'), description: t('applications.app1Desc') },
+    { id: 'ceilings', name: t('applications.app2Name'), description: t('applications.app2Desc') },
+    { id: 'dividers', name: t('applications.app3Name'), description: t('applications.app3Desc') },
+    { id: 'furniture', name: t('applications.app4Name'), description: t('applications.app4Desc') },
   ];
   const [activeSection, setActiveSection] = useState('overview');
   const [selectedColor, setSelectedColor] = useState<typeof colorOptions[0] | null>(null);
@@ -142,15 +143,12 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           
           <div className="hero-usps">
             <div className="usp">
-              <span className="usp-icon">♻️</span>
-              <span className="usp-text">{t('hero.usp1')}</span>
+              <span className="usp-text">{t('hero.usp1', { pct })}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🔇</span>
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
             <div className="usp">
-              <span className="usp-icon">🪶</span>
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
           </div>
@@ -283,27 +281,22 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
 
         <div className="benefits-grid">
           <div className="benefit-card">
-            <div className="benefit-icon">🌱</div>
             <h4>{t('why.reason1Title')}</h4>
             <p>{t('why.reason1')}</p>
           </div>
           <div className="benefit-card">
-            <div className="benefit-icon">⭐</div>
             <h4>{t('why.reason2Title')}</h4>
             <p>{t('why.reason2')}</p>
           </div>
           <div className="benefit-card">
-            <div className="benefit-icon">🛠️</div>
             <h4>{t('why.reason3Title')}</h4>
             <p>{t('why.reason3')}</p>
           </div>
           <div className="benefit-card">
-            <div className="benefit-icon">💚</div>
             <h4>{t('why.reason4Title')}</h4>
             <p>{t('why.reason4')}</p>
           </div>
           <div className="benefit-card">
-            <div className="benefit-icon">🎨</div>
             <h4>{t('why.reason5Title')}</h4>
             <p>{t('why.reason5')}</p>
           </div>
@@ -352,19 +345,15 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           </div>
           <div className="finishing-options-preview">
             <div className="finish-chip">
-              <span className="finish-icon">🧶</span>
               <span>{t('colors.fabric1')}</span>
             </div>
             <div className="finish-chip">
-              <span className="finish-icon">📋</span>
               <span>{t('colors.fabric2')}</span>
             </div>
             <div className="finish-chip">
-              <span className="finish-icon">🌳</span>
               <span>{t('colors.fabric3')}</span>
             </div>
             <div className="finish-chip">
-              <span className="finish-icon">🖼️</span>
               <span>{t('colors.fabric4')}</span>
             </div>
           </div>
@@ -382,7 +371,6 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
         <div className="applications-grid">
           {applicationOptions.map((app) => (
             <div key={app.id} className="application-card">
-              <div className="app-icon">{app.icon}</div>
               <h4>{app.name}</h4>
               <p>{app.description}</p>
             </div>
@@ -505,7 +493,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
                   />
                 </svg>
                 <div className="rating-content">
-                  <span className="rating-value">αw 0.95</span>
+                  {panelSpecs?.alphaW && <span className="rating-value">αw {panelSpecs.alphaW}</span>}
                   <span className="rating-label">{t('options.maximumLabel')}</span>
                 </div>
               </div>
@@ -516,10 +504,12 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             </div>
 
             <div className="metric-cards">
-              <div className="metric-card">
-                <div className="metric-value">95%</div>
-                <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
-              </div>
+              {panelSpecs?.fireClass && (
+                <div className="metric-card">
+                  <div className="metric-value">{panelSpecs.fireClass}</div>
+                  <div className="metric-label">{t('acoustics.fireClassLabel')}</div>
+                </div>
+              )}
               <div className="metric-card">
                 <div className="metric-value">ISO 354</div>
                 <div className="metric-label">{t('acoustics.testStandard')}</div>
@@ -575,7 +565,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               </svg>
             </div>
             <h4>{t('acoustics.benefit3Title')}</h4>
-            <p>{t('acoustics.benefit3')}s</p>
+            <p>{t('acoustics.benefit3')}</p>
           </div>
         </div>
       </section>
@@ -592,28 +582,24 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             
             <div className="processing-methods">
               <div className="method">
-                <div className="method-icon">🪚</div>
                 <div className="method-content">
                   <h4>{t('workability.step1Title')}</h4>
                   <p>{t('workability.step1Desc')}</p>
                 </div>
               </div>
               <div className="method">
-                <div className="method-icon">⚙️</div>
                 <div className="method-content">
                   <h4>{t('workability.step2Title')}</h4>
                   <p>{t('workability.step2Desc')}</p>
                 </div>
               </div>
               <div className="method">
-                <div className="method-icon">🔩</div>
                 <div className="method-content">
                   <h4>{t('workability.step3Title')}</h4>
                   <p>{t('workability.step3Desc')}</p>
                 </div>
               </div>
               <div className="method">
-                <div className="method-icon">📐</div>
                 <div className="method-content">
                   <h4>{t('workability.step4Title')}</h4>
                   <p>{t('workability.step4Desc')}</p>
@@ -661,28 +647,24 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             </p>
             <div className="sustainability-features">
               <div className="sustain-item">
-                <span className="sustain-icon">🍾</span>
                 <div>
                   <h4>{t('sustainability.cert1', { pct })}</h4>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">♻️</span>
                 <div>
                   <h4>{t('sustainability.cert2')}</h4>
                   <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">🏷️</span>
                 <div>
                   <h4>{t('sustainability.cert3')}</h4>
                   <p>{t('sustainability.cert3Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
-                <span className="sustain-icon">💨</span>
                 <div>
                   <h4>{t('sustainability.cert4')}</h4>
                   <p>{t('sustainability.cert4Desc')}</p>
@@ -711,7 +693,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             <p>
               {t('sample.description')}
             </p>
-            <Link href="/contact?subject=samples" className="btn-primary">{t('sample.cta')}</Link>
+            <Link href="/samples" className="btn-primary" prefetch={false}>{t('sample.cta')}</Link>
           </div>
           <div className="samples-image">
             <div className="image-container">
@@ -748,7 +730,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             </a>
           </div>
           <p className="cta-note">
-            {t('cta2.freeNote')}
+            {t('cta2.freeNote', { pct })}
           </p>
         </div>
       </section>

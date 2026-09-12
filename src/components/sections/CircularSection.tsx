@@ -46,10 +46,10 @@ export default function CircularSection() {
               </svg>
               <span>{t('loopLabel')}</span>
             </div>
-            <div className="loop-node">📦</div>
-            <div className="loop-node">♻️</div>
-            <div className="loop-node">🏠</div>
-            <div className="loop-node">🔄</div>
+            {/* Step numbers instead of emoji (brief §1.5); they match the list on the left */}
+            {steps.map((step) => (
+              <div key={step.number} className="loop-node">{step.number}</div>
+            ))}
           </div>
         </div>
       </div>

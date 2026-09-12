@@ -33,6 +33,7 @@ export interface BoothConfiguration {
 }
 
 export interface BoothFeature {
+  /** Plain identifier only: the template renders no icon glyph (no emoji in visible text). */
   iconKey: string;
   /** translation key tail — resolved as `{namespace}.features.{key}` (title/desc) */
   key: string;
@@ -273,17 +274,14 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
 
           <div className="acoustics-benefits">
             <div className="benefit">
-              <span className="benefit-icon">🗣️</span>
               <h4>{tShared('acoustics.benefitSpeech.title')}</h4>
               <p>{tShared('acoustics.benefitSpeech.desc')}</p>
             </div>
             <div className="benefit">
-              <span className="benefit-icon">🧠</span>
               <h4>{tShared('acoustics.benefitFocus.title')}</h4>
               <p>{tShared('acoustics.benefitFocus.desc')}</p>
             </div>
             <div className="benefit">
-              <span className="benefit-icon">😌</span>
               <h4>{tShared('acoustics.benefitStress.title')}</h4>
               <p>{tShared('acoustics.benefitStress.desc')}</p>
             </div>
@@ -423,7 +421,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         <div className="features-grid">
           {features.map((f) => (
             <div key={f.key} className="feature-card">
-              <span className="feature-icon">{f.iconKey}</span>
               <h4>{t(`features.${f.key}.title`)}</h4>
               <p>{t(`features.${f.key}.desc`)}</p>
             </div>
@@ -761,7 +758,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
           border-radius: var(--radius-md);
           border-top: 3px solid var(--brand-blue);
         }
-        .benefit-icon { font-size: 1.75rem; display: block; margin-bottom: 0.75rem; }
         .benefit h4 { font-size: 1.05rem; margin-bottom: 0.5rem; font-family: var(--font-heading); color: white; }
         .benefit p { font-size: 0.9rem; opacity: 0.8; line-height: 1.65; }
 
@@ -843,17 +839,6 @@ export default function SoundboothProductPage(props: SoundboothProductPageProps)
         .feature-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 20px 50px rgba(13, 58, 92, 0.1);
-        }
-        .feature-icon {
-          font-size: 1.5rem;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 48px;
-          height: 48px;
-          background: var(--brand-blue-pale);
-          border-radius: 50%;
-          margin-bottom: 1rem;
         }
         .feature-card h4 { font-size: 1.15rem; margin-bottom: 0.6rem; font-family: var(--font-heading); color: var(--deep-blue); }
         .feature-card p { font-size: 0.95rem; color: #555; line-height: 1.7; }
