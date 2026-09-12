@@ -740,7 +740,8 @@
     "countryBelgium": "Belgía",
     "reviewUs": "Skrifaðu Google-umsögn um okkur",
     "priceGuide": "Verð á símaklefum",
-    "manufacturing": "Framleiðsla"
+    "manufacturing": "Framleiðsla",
+    "calculator": "Ómtímareiknir"
   },
   "cookies": {
     "title": "Vafrakökustillingar",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Flokkur C",
       "absorptionClassD": "Flokkur D",
       "absorptionClassE": "Flokkur E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "allt að {value}",
+      "perPattern": "eftir mynstri",
+      "baseUnit": "grunneining"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",

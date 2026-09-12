@@ -241,6 +241,7 @@ const byArticle = (a, b) => a.sort - b.sort || a.code.localeCompare(b.code);
 function loadCatalogue() {
   const raw = JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8'));
   return {
+    loadedAt: typeof raw.loadedAt === 'string' ? raw.loadedAt : null,
     priceLists: (raw.priceLists ?? []).filter((l) => l.active !== false),
     products: (raw.products ?? []).filter((p) => p.active).sort(byProduct),
     categories: [...(raw.categories ?? [])].sort(byCategory),
@@ -655,10 +656,13 @@ function buildPdf(locale, localeTag, data, generatedAt) {
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
-  const generatedAt = process.env.PRICELIST_GENERATED_AT?.trim() || new Date().toISOString();
+  const catalogue = loadCatalogue();
+  // generatedAt = the snapshot's own timestamp (or PRICELIST_GENERATED_AT), so
+  // the output is a pure function of its inputs and a rebuild on the same
+  // snapshot is byte-identical — no dirty tree after `npm run build`.
+  const generatedAt = process.env.PRICELIST_GENERATED_AT?.trim() || catalogue.loadedAt || new Date().toISOString();
   if (Number.isNaN(new Date(generatedAt).getTime())) throw new Error(`PRICELIST_GENERATED_AT is not a date: "${generatedAt}"`);
 
-  const catalogue = loadCatalogue();
   const productsModule = await importTs(PRODUCTS_TS);
   const i18n = await importTs(I18N_TS);
   const tags = i18n.localeFullCodes ?? {};

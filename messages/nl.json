@@ -740,7 +740,8 @@
     "countryBelgium": "België",
     "reviewUs": "Beoordeel ons op Google",
     "priceGuide": "Prijzen belcabines",
-    "manufacturing": "Productie"
+    "manufacturing": "Productie",
+    "calculator": "Nagalmcalculator"
   },
   "cookies": {
     "title": "Cookievoorkeuren",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Klasse C",
       "absorptionClassD": "Klasse D",
       "absorptionClassE": "Klasse E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "tot {value}",
+      "perPattern": "per patroon",
+      "baseUnit": "basismodule"
     },
     "gallery": {
       "tag": "INSPIRATIE",

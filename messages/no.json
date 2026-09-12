@@ -740,7 +740,8 @@
     "countryBelgium": "Belgia",
     "reviewUs": "Gi oss en anmeldelse på Google",
     "priceGuide": "Priser på telefonbokser",
-    "manufacturing": "Produksjon"
+    "manufacturing": "Produksjon",
+    "calculator": "Etterklangskalkulator"
   },
   "cookies": {
     "title": "Informasjonskapselinnstillinger",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Klasse C",
       "absorptionClassD": "Klasse D",
       "absorptionClassE": "Klasse E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "opptil {value}",
+      "perPattern": "avhengig av mønster",
+      "baseUnit": "basismodul"
     },
     "gallery": {
       "tag": "INSPIRASJON",

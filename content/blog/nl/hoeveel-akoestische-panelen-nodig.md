@@ -124,7 +124,7 @@ Sabine gaat uit van gelijkmatig verdeelde absorptie; in de praktijk haal je meer
 3. **Tegenover de geluidsbron**: de wand tegenover het scherm in een vergaderzaal, de wand tegenover de bar in een restaurant.
 4. **Verspreid over de ruimte** in plaats van één groot blok.
 
-Twijfel je over de berekening? Stuur ons de afmetingen (lengte, breedte, hoogte), de vloer- en plafondafwerking en, als je die hebt, de gemeten nagalmtijd. We rekenen het na en sturen een voorstel met het aantal panelen per wand. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas en Częstochowa, dus de berekening en het product komen van dezelfde mensen.
+Wil je het zelf proberen? De [nagalmcalculator](/nl/acoustic-calculator) rekent met dezelfde formule van Sabine en stelt meteen het aantal m² panelen voor. Twijfel je over de berekening? Stuur ons de afmetingen (lengte, breedte, hoogte), de vloer- en plafondafwerking en, als je die hebt, de gemeten nagalmtijd. We rekenen het na en sturen een voorstel met het aantal panelen per wand. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas en Częstochowa, dus de berekening en het product komen van dezelfde mensen.
 
 ## Veelgestelde vragen
 

@@ -34,9 +34,10 @@ const BLOG_SLUGS = [
 /**
  * Static params per locale: the four legacy posts everywhere, plus the
  * editorial posts of that locale (content/blog/<locale>/*.md, drafts
- * included so they can be previewed). Any other slug is rendered on demand
- * and answers a permanent redirect to the locale's blog index (zero-404
- * rule for legacy /post/<slug> links, see redirects.mjs).
+ * included so they can be previewed). Any other slug is sent to the locale's
+ * blog index by the middleware (src/lib/routes.ts reads the generated slug
+ * list); the permanentRedirect below is the fallback should one slip through
+ * (zero-404 rule for legacy /post/<slug> links, see redirects.mjs).
  */
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   const editorial = getContentPosts(params.locale, { includeDrafts: true }).map((p) => ({ slug: p.slug }));
@@ -73,6 +74,7 @@ export async function generateMetadata({
   }
 
   if (!BLOG_SLUGS.includes(slug)) {
+    // Unknown slug: the page redirects (normally the middleware already did).
     return {};
   }
 
@@ -130,6 +132,7 @@ export default async function BlogPostPage({ params: { locale, slug } }: BlogPos
   }
 
   if (!BLOG_SLUGS.includes(slug)) {
+    // Fallback only: the middleware redirects unknown slugs before rendering.
     permanentRedirect(`/${locale}/blog`);
   }
 

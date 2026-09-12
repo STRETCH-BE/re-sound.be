@@ -740,7 +740,8 @@
     "countryBelgium": "Belgien",
     "reviewUs": "Bewerten Sie uns auf Google",
     "priceGuide": "Telefonbox-Preise",
-    "manufacturing": "Fertigung"
+    "manufacturing": "Fertigung",
+    "calculator": "Nachhallrechner"
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Klasse C",
       "absorptionClassD": "Klasse D",
       "absorptionClassE": "Klasse E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "bis {value}",
+      "perPattern": "je nach Muster",
+      "baseUnit": "Basismodul"
     },
     "gallery": {
       "tag": "INSPIRATION",

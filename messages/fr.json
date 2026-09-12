@@ -740,7 +740,8 @@
     "countryBelgium": "Belgique",
     "reviewUs": "Laissez-nous un avis Google",
     "priceGuide": "Prix des cabines téléphoniques",
-    "manufacturing": "Fabrication"
+    "manufacturing": "Fabrication",
+    "calculator": "Calculateur de réverbération"
   },
   "cookies": {
     "title": "Préférences de cookies",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Classe C",
       "absorptionClassD": "Classe D",
       "absorptionClassE": "Classe E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "jusqu'à {value}",
+      "perPattern": "selon le motif",
+      "baseUnit": "module de base"
     },
     "gallery": {
       "tag": "INSPIRATION",

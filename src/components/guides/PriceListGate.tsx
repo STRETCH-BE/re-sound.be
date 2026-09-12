@@ -119,7 +119,10 @@ export default function PriceListGate({ locale, labels }: PriceListGateProps) {
         setDownload({ url, name });
       }
       setStatus('success');
-      analytics.leadPricelist({ locale, product_range: 'booths' });
+      // Count the lead only when the API confirms it reached the inbox.
+      if (res.headers.get('x-lead-forwarded') !== '0') {
+        analytics.leadPricelist({ locale, product_range: 'booths' });
+      }
     } catch {
       setErrorKey('error');
       setStatus('error');

@@ -26,9 +26,16 @@ export async function GET(request: Request) {
     return NextResponse.json({ ok: false, error: 'VERCEL_DEPLOY_HOOK_URL not set — no redeploy triggered' }, { status: 200 });
   }
   try {
+    new URL(hook);
+  } catch {
+    return NextResponse.json({ ok: false, error: 'VERCEL_DEPLOY_HOOK_URL is not a valid URL' }, { status: 200 });
+  }
+  try {
     const res = await fetch(hook, { method: 'POST' });
     return NextResponse.json({ ok: res.ok, status: res.status, triggeredAt: new Date().toISOString() });
   } catch (err) {
-    return NextResponse.json({ ok: false, error: err instanceof Error ? err.message : 'deploy hook failed' }, { status: 200 });
+    // The hook URL is a credential: log the error class only, never the message.
+    console.error('[cron/google-reviews] deploy hook request failed:', err instanceof Error ? err.name : 'error');
+    return NextResponse.json({ ok: false, error: 'deploy hook request failed' }, { status: 200 });
   }
 }

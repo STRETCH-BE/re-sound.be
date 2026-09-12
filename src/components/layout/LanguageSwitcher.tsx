@@ -5,6 +5,8 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { locales, localeNames, type Locale } from '@/i18n/config';
 import { HUBS, HUB_IDS, hubPath } from '@/data/hubs';
+import { BOOTH_GUIDE, guidePath, isGuideLocale } from '@/data/guides';
+import { MANUFACTURING_INTERNAL_PATH, isManufacturingLocale, manufacturingPath } from '@/data/manufacturing';
 import { analytics } from '@/lib/analytics';
 
 // Build the display list from config so adding a language only requires config.ts
@@ -51,7 +53,15 @@ export default function LanguageSwitcher() {
     // Range hubs have a different slug per locale: translate the path
     // instead of reusing the current one (which would 404 elsewhere).
     const hub = HUB_IDS.map((id) => HUBS[id]).find((h) => hubPath(h, locale) === pathname);
-    router.replace(hub ? hubPath(hub, newLocale) : pathname, { locale: newLocale });
+    // The price guide and the manufacturing page exist in some locales only:
+    // switching to a locale without them lands on that locale's home instead
+    // of a 404.
+    const onGuide = pathname === BOOTH_GUIDE.internalPath || pathname === guidePath(locale);
+    const onManufacturing = pathname === MANUFACTURING_INTERNAL_PATH || pathname === manufacturingPath(locale);
+    let target = hub ? hubPath(hub, newLocale) : pathname;
+    if (onGuide && !isGuideLocale(newLocale)) target = '/';
+    if (onManufacturing && !isManufacturingLocale(newLocale)) target = '/';
+    router.replace(target, { locale: newLocale });
     setIsOpen(false);
   };
 

@@ -49,6 +49,7 @@ export default function Footer() {
     { href: '/sustainability', label: tNav('sustainability') },
     { href: '/blog', label: 'Blog' },
     { href: '/where-to-buy', label: tNav('whereToBuy') },
+    { href: '/acoustic-calculator', label: t('calculator') },
     { href: '/partner', label: tNav('partner') },
     { href: '/contact', label: tNav('contact') },
   ];

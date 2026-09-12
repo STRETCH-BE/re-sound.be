@@ -2,7 +2,7 @@ import { getProduct, type Product } from '@/data/products';
 import type { Msg, ProductSlug, SpecField } from '@/data/specs/types';
 
 /** next-intl `t` created with `getTranslations()` (no namespace). */
-export type RootT = (key: string) => string;
+export type RootT = (key: string, values?: Record<string, string | number>) => string;
 
 /**
  * Resolves one spec-table message. Returns null when a data-backed value is
@@ -56,12 +56,24 @@ function parseSingleNumber(s: string | null | undefined): number | null {
   return m ? Number(m[1].replace(',', '.')) : null;
 }
 
-/** Stored text or number → cell text; empty/null → null (row hidden). */
-function asText(v: string | number | null | undefined, decimals?: number): string | null {
+/**
+ * Stored text or number → cell text; empty/null → null (row hidden). The
+ * few English phrases the data strings carry ("up to 4 m³/min",
+ * "0.35–0.85 (per pattern)", "… (base)") are rendered through message keys
+ * so the spec tables stay translated; every other string is shown as stored.
+ */
+function asText(t: RootT, v: string | number | null | undefined, decimals?: number): string | null {
   if (v === null || v === undefined) return null;
   if (typeof v === 'number') return decimals === undefined ? String(v) : v.toFixed(decimals);
   const s = v.trim();
-  return s === '' ? null : s;
+  if (s === '') return null;
+  const upTo = /^up to (.+)$/i.exec(s);
+  if (upTo) return t('productPage.specs.upTo', { value: upTo[1] });
+  const perPattern = /^(.+?) \(per pattern\)$/i.exec(s);
+  if (perPattern) return `${perPattern[1]} (${t('productPage.specs.perPattern')})`;
+  const base = /^(.+?) \(base\)$/i.exec(s);
+  if (base) return `${base[1]} (${t('productPage.specs.baseUnit')})`;
+  return s;
 }
 
 function resolveSpec(t: RootT, slug: ProductSlug, field: SpecField): string | null {
@@ -79,10 +91,10 @@ function resolveSpec(t: RootT, slug: ProductSlug, field: SpecField): string | nu
     }
     case 'alphaW':
     case 'nrc':
-      return p.specs.kind === 'panel' ? asText(p.specs[field], 2) : null;
+      return p.specs.kind === 'panel' ? asText(t, p.specs[field], 2) : null;
     case 'fireClass':
     case 'thickness':
-      return p.specs.kind === 'panel' ? asText(p.specs[field]) : null;
+      return p.specs.kind === 'panel' ? asText(t, p.specs[field]) : null;
     case 'speechLevelReductionDbA':
       return p.specs.kind === 'booth' && p.specs.speechLevelReductionDbA !== null
         ? `${p.specs.speechLevelReductionDbA} dB(A)`
@@ -92,6 +104,6 @@ function resolveSpec(t: RootT, slug: ProductSlug, field: SpecField): string | nu
     case 'weight':
     case 'externalDimensions':
     case 'footprint':
-      return p.specs.kind === 'booth' ? asText(p.specs[field]) : null;
+      return p.specs.kind === 'booth' ? asText(t, p.specs[field]) : null;
   }
 }

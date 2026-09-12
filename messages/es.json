@@ -740,7 +740,8 @@
     "countryBelgium": "Bélgica",
     "reviewUs": "Déjenos una reseña en Google",
     "priceGuide": "Precios de cabinas telefónicas",
-    "manufacturing": "Fabricación"
+    "manufacturing": "Fabricación",
+    "calculator": "Calculadora de reverberación"
   },
   "cookies": {
     "title": "Preferencias de cookies",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Clase C",
       "absorptionClassD": "Clase D",
       "absorptionClassE": "Clase E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "hasta {value}",
+      "perPattern": "según el patrón",
+      "baseUnit": "módulo base"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",

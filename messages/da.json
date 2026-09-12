@@ -740,7 +740,8 @@
     "countryBelgium": "Belgien",
     "reviewUs": "Anmeld os på Google",
     "priceGuide": "Priser på telefonbokse",
-    "manufacturing": "Produktion"
+    "manufacturing": "Produktion",
+    "calculator": "Efterklangsberegner"
   },
   "cookies": {
     "title": "Cookie-præferencer",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Klasse C",
       "absorptionClassD": "Klasse D",
       "absorptionClassE": "Klasse E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "op til {value}",
+      "perPattern": "afhængigt af mønster",
+      "baseUnit": "basismodul"
     },
     "gallery": {
       "tag": "INSPIRATION",

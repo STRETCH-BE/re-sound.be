@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { localeFullCodes, type Locale } from '@/i18n/config';
 
 import { getTestimonials } from '@/lib/content/testimonials';
 
@@ -24,7 +25,7 @@ export default async function Testimonials({ locale }: TestimonialsProps) {
   const data = await getTestimonials();
   const rating = data.google.rating ?? 5;
   const count = data.google.reviewCount ?? data.reviews.length;
-  const ratingLabel = rating.toLocaleString(locale === 'en' ? 'en-GB' : locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const ratingLabel = rating.toLocaleString(localeFullCodes[locale as Locale] ?? 'en-GB', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const withText = data.reviews.filter((r) => r.text);
   const ratingOnly = data.reviews.filter((r) => !r.text);
 

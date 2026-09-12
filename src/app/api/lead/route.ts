@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+import { clientKey, rateLimited, sameOrigin } from '@/lib/rate-limit';
+
 import {
   EMAIL_RE,
   MAX_FIELD_LENGTH,
@@ -19,7 +21,21 @@ import {
 // ==========================================
 export async function POST(request: NextRequest) {
   try {
-    const raw: LeadData & { website?: string } = await request.json();
+    if (!sameOrigin(request)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    }
+    if (rateLimited(clientKey(request))) {
+      return NextResponse.json({ error: 'Too many requests' }, { status: 429 });
+    }
+    let raw: LeadData & { website?: string };
+    try {
+      raw = (await request.json()) as LeadData & { website?: string };
+    } catch {
+      return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+    }
+    if (!raw || typeof raw !== 'object') {
+      return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+    }
 
     // Honeypot — same pattern as /api/contact. Real forms never render a
     // `website` field; if it's filled, a bot did it. Respond 200 so the bot

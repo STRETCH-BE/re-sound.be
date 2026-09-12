@@ -740,7 +740,8 @@
     "countryBelgium": "Belgien",
     "reviewUs": "Recensera oss på Google",
     "priceGuide": "Priser på telefonhytter",
-    "manufacturing": "Tillverkning"
+    "manufacturing": "Tillverkning",
+    "calculator": "Efterklangskalkylator"
   },
   "cookies": {
     "title": "Cookieinställningar",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Klass C",
       "absorptionClassD": "Klass D",
       "absorptionClassE": "Klass E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "upp till {value}",
+      "perPattern": "beroende på mönster",
+      "baseUnit": "basmodul"
     },
     "gallery": {
       "tag": "INSPIRATION",

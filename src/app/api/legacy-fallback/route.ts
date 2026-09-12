@@ -15,12 +15,18 @@ export const dynamic = 'force-dynamic';
 
 function redirectHome(request: Request) {
   const url = new URL(request.url);
-  const raw = request.headers.get('x-legacy-path') || url.searchParams.get('path') || '/';
-  const original = raw.startsWith('/') ? raw : `/${raw}`;
-  const locale = getLocaleFromPath(original);
-  const res = NextResponse.redirect(new URL(locale ? `/${locale}` : '/', url.origin), 301);
-  res.headers.set('x-legacy-fallback', original);
-  return res;
+  try {
+    const raw = request.headers.get('x-legacy-path') || url.searchParams.get('path') || '/';
+    const original = raw.startsWith('/') ? raw : `/${raw}`;
+    const locale = getLocaleFromPath(original);
+    const res = NextResponse.redirect(new URL(locale ? `/${locale}` : '/', url.origin), 301);
+    // Diagnostic only; header values must be Latin-1 without CR/LF, and the
+    // query string can carry anything.
+    res.headers.set('x-legacy-fallback', encodeURI(original).replace(/[\r\n]/g, '').slice(0, 512));
+    return res;
+  } catch {
+    return NextResponse.redirect(new URL('/', url.origin), 301);
+  }
 }
 
 export function GET(request: Request) {

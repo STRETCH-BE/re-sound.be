@@ -51,6 +51,8 @@
  */
 import { NextRequest, NextResponse } from 'next/server';
 
+import { clientKey, rateLimited, sameOrigin } from '@/lib/rate-limit';
+
 import priceList from '@/data/generated/booth-price-list.json';
 import {
   EMAIL_RE,
@@ -107,11 +109,15 @@ function downloadedFileFor(locale: PriceListLocale): string {
   return `booth-price-list-${locale}.pdf`;
 }
 
-function pdfResponse(locale: PriceListLocale): NextResponse {
+function pdfResponse(locale: PriceListLocale, leadForwarded = false): NextResponse {
   const bytes = pdfBytes(locale);
   return new NextResponse(bytes, {
     status: 200,
     headers: {
+      // "1" when the lead reached the Power Automate flow, "0" otherwise
+      // (webhook unset or failing, honeypot) — the gate skips its lead
+      // event on "0" so GA4 never counts a lead the inbox did not get.
+      'X-Lead-Forwarded': leadForwarded ? '1' : '0',
       'Content-Type': 'application/pdf',
       'Content-Length': String(bytes.byteLength),
       'Content-Disposition': `attachment; filename="re-sound-booth-price-list-${locale}.pdf"`,
@@ -126,6 +132,12 @@ const str = (v: unknown): string => (typeof v === 'string' ? v.trim() : '');
 
 export async function POST(request: NextRequest) {
   try {
+    if (!sameOrigin(request)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    }
+    if (rateLimited(clientKey(request))) {
+      return NextResponse.json({ error: 'Too many requests' }, { status: 429 });
+    }
     let raw: PricelistRequest;
     try {
       raw = (await request.json()) as PricelistRequest;
@@ -243,7 +255,7 @@ export async function POST(request: NextRequest) {
     console.log('Email sent:', emailSent);
     console.log('=============================');
 
-    return pdfResponse(locale);
+    return pdfResponse(locale, emailSent);
   } catch (error) {
     console.error('[pricelist] Error processing request:', error);
     return NextResponse.json({ error: 'Failed to process request' }, { status: 500 });

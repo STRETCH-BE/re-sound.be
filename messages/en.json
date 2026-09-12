@@ -740,7 +740,8 @@
     "countryBelgium": "Belgium",
     "reviewUs": "Review us on Google",
     "priceGuide": "Phone booth prices",
-    "manufacturing": "Manufacturing"
+    "manufacturing": "Manufacturing",
+    "calculator": "Reverberation calculator"
   },
   "cookies": {
     "title": "Cookie preferences",
@@ -904,7 +905,10 @@
       "absorptionClassC": "Class C",
       "absorptionClassD": "Class D",
       "absorptionClassE": "Class E",
-      "oekoTexStandard100": "OEKO-TEX® Standard 100"
+      "oekoTexStandard100": "OEKO-TEX® Standard 100",
+      "upTo": "up to {value}",
+      "perPattern": "per pattern",
+      "baseUnit": "base unit"
     },
     "gallery": {
       "tag": "INSPIRATION",

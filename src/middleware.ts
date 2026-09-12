@@ -5,7 +5,10 @@ import { defaultLocale, getLocaleFromPath, removeLocaleFromPath } from './i18n/c
 import { routing } from './i18n/routing';
 import { closestRoute, isKnownRoute, isPublicAssetPath } from './lib/routes';
 
-const intlMiddleware = createMiddleware(routing);
+// alternateLinks off: the header would advertise every locale for routes that
+// exist in some locales only (guide, manufacturing); each page's <head>
+// carries the correct hreflang set from generateMetadata.
+const intlMiddleware = createMiddleware(routing, { alternateLinks: false });
 
 // Anything with a file extension is asset-like: let the filesystem decide. A
 // real file in public/ (or a generated one such as /sitemap.xml) is served; a
@@ -49,7 +52,7 @@ export default function middleware(request: NextRequest) {
   const locale = getLocaleFromPath(pathname);
   const route = removeLocaleFromPath(pathname);
 
-  if (!isKnownRoute(route)) {
+  if (!isKnownRoute(route, locale ?? undefined)) {
     const target = closestRoute(route);
     // Unprefixed unknown paths go to "/" so next-intl's locale detection
     // picks the visitor's language on the next hop (two hops, both permanent

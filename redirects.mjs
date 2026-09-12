@@ -79,8 +79,25 @@ const PRODUCT_SLUGS = {
 };
 
 /**
- * Wix topic pages (Dutch and English slugs) → live page. Range hubs use the
- * English internal path; next-intl rewrites it to the localised slug.
+ * Range hub slugs per locale (keep in step with src/data/hubs.ts — the
+ * middleware cannot be imported here). A legacy hub URL goes straight to the
+ * localised slug, so the chain ends without next-intl's extra 307 hop.
+ */
+const HUB_SLUGS = {
+  '/products/pet-acoustic-panels': { en: 'pet-acoustic-panels', nl: 'pet-akoestische-panelen', fr: 'panneaux-acoustiques-pet', de: 'pet-akustikpaneele' },
+  '/products/wood-acoustic-panels': { en: 'wood-acoustic-panels', nl: 'houten-akoestische-panelen', fr: 'panneaux-acoustiques-bois', de: 'holz-akustikpaneele' },
+  '/products/acoustic-phone-booths': { en: 'acoustic-phone-booths', nl: 'akoestische-belcabines', fr: 'cabines-acoustiques', de: 'telefonboxen' },
+};
+const ALL_LOCALES = LOCALES.split('|');
+/** Live path for one locale: hubs get their localised slug, everything else is shared. */
+const liveFor = (live, locale) => {
+  const hub = HUB_SLUGS[live];
+  return hub ? `/products/${hub[locale] ?? hub.en}` : live;
+};
+
+/**
+ * Wix topic pages (Dutch and English slugs) → live page (internal path; hubs
+ * are localised per locale through liveFor()).
  */
 const TOPIC_PAGES = {
   // Dutch
@@ -128,9 +145,14 @@ for (const [wix, live] of Object.entries(PRODUCT_SLUGS)) {
   explicitRules.push(U(`/product-page/copy-of-${wix}`, `/en/products/${live}`));
 }
 for (const [wix, live] of Object.entries(TOPIC_PAGES)) {
-  explicitRules.push(L(`/${wix}`, live));
-  explicitRules.push(U(`/${wix}`, `/nl${live}`));
-  explicitRules.push(U(`/copy-of-${wix}`, `/nl${live}`));
+  if (HUB_SLUGS[live]) {
+    // one rule per locale so the destination is the localised hub slug
+    for (const locale of ALL_LOCALES) explicitRules.push(U(`/${locale}/${wix}`, `/${locale}${liveFor(live, locale)}`));
+  } else {
+    explicitRules.push(L(`/${wix}`, live));
+  }
+  explicitRules.push(U(`/${wix}`, `/nl${liveFor(live, 'nl')}`));
+  explicitRules.push(U(`/copy-of-${wix}`, `/nl${liveFor(live, 'nl')}`));
 }
 
 // ---------------------------------------------------------------------------
