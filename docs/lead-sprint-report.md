@@ -1,7 +1,10 @@
 # Lead sprint report — 12 September 2026
 
-Branch `seo/lead-sprint-sep12`, one commit per section. Nothing was pushed or
-deployed. Every number below comes from a local production build
+Branch `seo/lead-sprint-sep12`, one commit per section, plus a `fix:` commit
+from the pre-production review. On Michael's instruction the branch was then
+fast-forwarded into `main` (`6a9099f` → `a41f6d2`) and Vercel deployed it to
+production at 14:23 UTC on 12 September (see "Production deployment" at the
+end). Every number below comes from a local production build
 (`npx --offline next build`, `next start` on port 3999) unless a section says
 it could not be measured from the build environment.
 
@@ -32,7 +35,7 @@ it could not be measured from the build environment.
 - Booth price guide: e-mail-gated PDF price list, generated at build from the catalogue snapshot (`scripts/build-price-list-pdf.mjs`, EN/NL/FR/DE, pdfkit) and served by `POST /api/pricelist` after the lead is forwarded.
 - `/[locale]/acoustic-calculator`: Sabine RT60 per octave band with the STRETCH portal's finish and room-type tables (imported byte-identical from `stretch_website/src/lib/portal/acoustic-data.ts`; the arithmetic of `acoustic-summary.ts` was ported; the UI was rebuilt in React — the portal's 94 KB HTML tool is not importable), product recommendation from `products.ts` αw, lead form → `/api/lead`.
 - GA4 events `lead_quote`, `lead_sample`, `lead_pricelist`, `lead_calculator` with `locale` + `product_range`, consent-gated through the existing Consent Mode v2 defaults and lazy gtag loader; `isHtml: true` added to the contact/lead/pricelist webhook payloads.
-- Live Power Automate test: **not run** — the webhook URL exists only in Vercel and nothing was deployed.
+- Live Power Automate test: **not run from the build environment** — the webhook URL exists only in Vercel; now that the sprint is live, one test per form is item A.4 of `docs/needs-michael.md`.
 
 ### §5 Schema
 - Already in place and verified on the build: `price` + `UnitPriceSpecification` in every priced Offer, `hasMerchantReturnPolicy`, `ItemList` on `/products` and the hubs, `BreadcrumbList` on product/hub/blog pages, sitemap `lastmod` from git.
@@ -101,7 +104,7 @@ Targets: LCP < 2.5 s, TBT < 200 ms, CLS < 0.01, three consecutive runs within 5 
 
 ### Live form test
 
-Not run: the Power Automate webhook URL exists only in the Vercel project and this sprint was not deployed. Verified instead: `/api/pricelist` answers 405 to GET, 400 to an invalid e-mail, and returns a 38 KB `application/pdf` (honeypot request → PDF served, lead not forwarded); the four payloads (`/api/contact`, `/api/lead`, `/api/pricelist`, the calculator via `/api/lead`) send HTML in `body`, plain text in `text` and `isHtml: true`, recipient `leads@stretchgroup.be` hardcoded in the lead routes. One test per form is item A.4 of `docs/needs-michael.md`.
+Not run from the build environment: the Power Automate webhook URL exists only in the Vercel project (the build sandbox cannot reach it). Verified instead: `/api/pricelist` answers 405 to GET, 400 to an invalid e-mail, and returns a 38 KB `application/pdf` (honeypot request → PDF served, lead not forwarded); the four payloads (`/api/contact`, `/api/lead`, `/api/pricelist`, the calculator via `/api/lead`) send HTML in `body`, plain text in `text` and `isHtml: true`, recipient `leads@stretchgroup.be` hardcoded in the lead routes. One test per form is item A.4 of `docs/needs-michael.md`.
 
 ## Blog posts and prices
 
@@ -150,6 +153,22 @@ A second pass on the final tree — three review lenses (routing/edge, API and d
 - **Calculator discoverability.** Linked from the footer in every locale and from BP-004; it was an orphan page.
 - **Language switcher.** On the guide and manufacturing pages it goes to the target locale's home when that locale has no such page (browser-tested for da/es/fr/de/is targets); previously a 404-class miss for the Nordic and Iberian locales.
 - **Smaller.** Testimonial ratings formatted per locale; the generated price-list JSON is deterministic (`generatedAt` = catalogue snapshot time), so a rebuild no longer produces a spurious diff in the committed file.
+
+## Production deployment (12 September 2026, 14:23 UTC)
+
+`main` was fast-forwarded from `6a9099f` to `a41f6d2` (ten commits) and pushed; Vercel built deployment `dpl_DjMiRf7zRejnDznE59VHM5kvoVz2` from it in 55 s (prebuild: reviews, catalogue snapshot, price-list PDF, blog slugs; no `MISSING_MESSAGE`, no error) and aliased it to re-sound.be and www.re-sound.be. Checked on the live site straight after:
+
+| Request | Result |
+|---|---|
+| `/nl/productie` | 200, H1 "Fabrikant van akoestische panelen en belcabines: onze twee fabrieken", canonical `/nl/productie`, 7 hreflang links, Częstochowa named |
+| `/en/product-page/solid` (legacy Wix URL) | lands on `/en/products/solid`, 200 |
+| `/en/blog/unknown-slug-xyz` | lands on `/en/blog`, 200 (the middleware redirect) |
+| `/en/samples` | 200, form present, `index, follow`, 7 hreflang |
+| `/en/acoustic-calculator` | 200, FAQPage JSON-LD, linked from the footer |
+| `/nl/products/solo-eco` | 200, "tot 4 m³/min" ×7 and no English spec phrase, Offer price 2740, countryOfOrigin PL, no "Made in Belgium" |
+| `/api/health/catalogue` | first (cold) call served from the snapshot, second call `source: database`; 10 products, 186 articles, list `booths-2026` valid from 21 September |
+
+Runtime errors before the deploy (Vercel, last 7 days): one group, `RangeError: Incorrect locale information provided` on `/[locale]`, 112 occurrences for 24 users, the last at 14:04 UTC, triggered by requests such as `/en_us-sitemap.xml` and `/sitemap-index.xml` — exactly the class the exact public-file allow-list and the layout's locale validation remove. No occurrence on the new deployment at the time of writing; worth re-checking after a day of traffic.
 
 ## Redirect map (`redirects.mjs`, 266 rules, in evaluation order)
 

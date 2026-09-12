@@ -11,7 +11,7 @@ Booth origin is **not** open: the four booths are manufactured in
 Częstochowa and the site states that as fact throughout (spec tables,
 hub, price guide, blog posts, manufacturing page).
 
-## A. Decisions before the next deploy
+## A. Decisions now that the sprint is live (deployed 12 September, 14:23 UTC)
 
 1. **Competitor names are back in the Dutch booth post.** On 6 September you
    asked for no competitor brand names; the 12 September brief asked for a
@@ -36,8 +36,8 @@ hub, price guide, blog posts, manufacturing page).
    it cannot be done from the repository. The old `sample_request` /
    `generate_lead` events are no longer fired by the sample flow.
 4. **Live form test.** No test lead could be sent from the build environment
-   (the Power Automate URL exists only in Vercel and nothing was deployed).
-   After the deploy, submit one test on each of the four forms (contact,
+   (the Power Automate URL exists only in Vercel). The sprint is live now:
+   submit one test on each of the four forms (contact,
    sample kit, price-list download, calculator) and check
    leads@stretchgroup.be. All payloads send HTML in `body`, plain text in
    `text` and `isHtml: true`.
