@@ -1,24 +1,170 @@
-# Needs Michael — content sprint 2
+# Needs Michael — lead sprint, 12 September 2026
 
-## Answers received on 6 September 2026 (applied)
+Everything the sprint could not settle from the repository's product data
+(`src/data/products.ts`), the catalogue in the database, the workbook or the
+brief. The governing rule of the sprint was *never invent a fact*: where a
+value was unknown the site now shows nothing, "on request" or "measurement
+pending" rather than a number. Each item names what is shown today and what
+changes once you answer.
 
-| # | Answer | What changed |
+Booth origin is **not** open: the four booths are manufactured in
+Częstochowa and the site states that as fact throughout (spec tables,
+hub, price guide, blog posts, manufacturing page).
+
+## A. Decisions before the next deploy
+
+1. **Competitor names are back in the Dutch booth post.** On 6 September you
+   asked for no competitor brand names; the 12 September brief asked for a
+   named market table in BP-001 (`/nl/blog/belcabine-kantoor-prijs-keuze-plaatsing`).
+   The brief is the newer instruction, so the table now names mute-labs SOLO
+   (€ 2 990 net), Bosselino Uno (€ 2 999), Work With Island Island Solo
+   (€ 3 990 excl. VAT), Berlin Acoustics Focus (from € 4 299), VOX S
+   (€ 5 092), Quadra (€ 6 237), Hush Phone (€ 9 000), Brand New Office BNO
+   Booth (€ 9 320 excl. VAT) and HUSHFREE S (€ 11 660), all "September 2026,
+   as published". If you want the anonymous version back, say so and the
+   table becomes three price bands again. Re-check the figures quarterly.
+2. **www or apex.** The canonical host is the apex, `https://re-sound.be`
+   (every canonical tag, hreflang and sitemap URL already uses it). The code
+   now 308s `www.re-sound.be` to the apex. Two account actions remain
+   (`docs/legacy-urls.md`): set the www domain to "Redirect to re-sound.be"
+   in Vercel → Domains, and move the DNS zone from Wix to Combell (copy every
+   MX/TXT/DKIM record first) so the domain no longer depends on the Wix
+   subscription.
+3. **GA4 key events.** The site now fires `lead_quote`, `lead_sample`,
+   `lead_pricelist` and `lead_calculator` with `locale` and `product_range`.
+   Marking them as key events (conversions) is done in GA4 Admin → Events;
+   it cannot be done from the repository. The old `sample_request` /
+   `generate_lead` events are no longer fired by the sample flow.
+4. **Live form test.** No test lead could be sent from the build environment
+   (the Power Automate URL exists only in Vercel and nothing was deployed).
+   After the deploy, submit one test on each of the four forms (contact,
+   sample kit, price-list download, calculator) and check
+   leads@stretchgroup.be. All payloads send HTML in `body`, plain text in
+   `text` and `isHtml: true`.
+5. **Weekly review refresh.** Google reviews are fetched at build time only
+   now. The Monday cron calls a Vercel Deploy Hook so the build re-fetches
+   them: create the hook (Vercel → Settings → Git → Deploy Hooks) and store
+   its URL as `VERCEL_DEPLOY_HOOK_URL`. Without it the cron does nothing and
+   the committed `content/google-reviews.json` stays as it is.
+6. **The four January-2024 blog posts** (circular economy, office acoustic
+   solutions, recycled materials, sound absorption) are `noindex`, out of
+   the sitemap and off the Dutch blog index. They still show on the other
+   locales' blog index because those locales have no published post yet
+   (the FR/DE/EN drafts BP-007 to BP-018 are still "Review"). Say whether to
+   rewrite the four to current facts, publish the drafts after a price
+   sweep, or hide the placeholders everywhere.
+7. **Sample-kit form.** Company is now required (the lead API rejects a lead
+   without a company); the delivery address is optional. Tell us if private
+   buyers should be able to order a kit, and whether "shipped within three
+   working days in the EU" (from the brief) is the promise you want printed.
+
+## B. Confirmed price list (per model)
+
+Every price on the site comes from the catalogue in the database
+(`docs/database.md`); the 2026 list is loaded and valid from 21 September
+2026. Confirm:
+
+| Model | Shown today | Open |
 |---|---|---|
-| 1 | "Wide step-free door" | Modular XL, Duo and Solo Flex door copy reworded in all ten locales (`modularXlPage.overview.feature4`, `*.features.accessibility`, `meta.modularXlDescription`, booths hub FAQ q4); no accessibility promise anywhere |
-| 2 | Duo € 7 615 excl. VAT | `src/data/products.ts` (`fromPrice` → Product Offer), `src/lib/content/boothGuide.ts`, `content/booth-guide.json`, FAQ-003 in ten locales, the four booth posts; installation price for Duo still unknown → "on request" in the guide table |
-| 3 | "Can we try a booth before we order?" → Yes | FAQ-007 rewritten in ten locales; no leasing/trial wording left |
-| 4 | Today's date is fine | no change |
-| 5 | ok | Google reviews stay as shown |
-| 6 | ok | made-in confirmed |
-| 7 | B-s1,d0 | rWood Groove fire class set to B-s1,d0 (page, hub table, JSON-LD); the 60 % recycled content stays open |
-| 8 | PER_SET | Interior back to "€387 per set" |
-| 9 | no dB level yet | FAQ-005 unchanged |
-| 10 | ok | FAQ wording confirmed |
-| 11 | no competitor brand names | the four booth posts (nl/fr/de/en) now say "competitors ask …" with the same three figures; brand names and their domains removed from bodies, tables, FAQ answers and Sources lines (mirrored in the importer so a re-import keeps it) |
-| 12 | Częstochowa address + phones | +48 730 700 333 (PL/EN) and +48 455 444 475 (PL/UA) on `/where-to-buy` and in the office LocalBusiness `telephone` |
-| 13 | confirmed | no change |
+| Solo ECO | from € 2 740 excl. VAT (closed back wall; glass back wall € 3 015) | ISO 23351-1 value (none published) |
+| Solo Flex | from € 4 118,75 excl. VAT | installation price (was € 865, now "on request") |
+| Duo | from € 7 612,50 excl. VAT (Duo Work and Duo Flex equal) | **is Duo still price-on-request anywhere?** No — the list price is shown on the page, the hub, the guide, the PDF and in BP-001; confirm that is intended. ISO 23351-1 value (none on file; the old "26 dB(A)" was unsourced and is gone) |
+| Modular XL | from € 13 781,25 excl. VAT base; +€ 5 118,75 / € 10 237,50 / € 15 356,25 for one, two, three elements | installation price (was € 2 990); capacity wording (list: base 4, up to 10; page hero: "6–10") |
+| Interior | € 387 per set | — |
+| Solid | € 407 per panel (website line, unconfirmed) | confirm or deactivate |
+| Divide | catalogue | — |
 
-## Online ordering — open points (added 6 September 2026)
+The PDF price list on the booth guide is generated from the same catalogue
+snapshot at every build, in EN/NL/FR/DE.
+
+## C. Recycled content per line (data: `recycledContentPct`)
+
+| Product | Shown | Open |
+|---|---|---|
+| Interior, Solid, Divide | 80 % (spec sheet says "≥ 80 %") | confirm; say if "at least 80 %" should be printed |
+| rPET Panel, rPET Flex Groove | 100 % ("made entirely from recycled PET") | confirm |
+| rPET Groove | nothing (the old "100 %" had no source) | give the figure |
+| rWood Groove | nothing (the 60 % was a Backlog row) | give the figure |
+| rWood Perf | 17 % (page badge, unconfirmed) | confirm or it goes |
+| rWood Micro, rWood Panel | nothing | give the figures if known |
+| Booths | nothing | any figure? |
+
+## D. αw, NRC and fire class per product (data: `specs`)
+
+| Product | αw | NRC | Fire class (EN 13501-1) | Open |
+|---|---|---|---|---|
+| Interior | 1.0 | 0.95 | B-s1,d0 | — |
+| Solid | 1.0 | 0.90 | B-s1,d0 | old page said αw 0.95 / NRC 0.95 — confirm from the test report |
+| Divide | 1.0 | — | B-s1,d0 | old page said 0.85 per side — per side or overall? |
+| rWood Groove | 0.90 | — | B-s1,d0 | old table listed D-s2,d2 for a standard MDF core — is a non-FR core still sold? confirm 0.90 |
+| rWood Micro | 0.90 | — | B-s1,d0 | old table said "up to 1.00 with 50 mm mineral wool" and per-pattern Class A — confirm |
+| rWood Perf | 0.35–0.85 per pattern | — | B-s1,d0 | old cards listed PD8 0.85 / PH10 0.75 / PH8 0.55 / PH5 0.35 and NRC 0.90 — send the per-pattern table |
+| rWood Panel | none | — | B-s1,d0 (FR MDF) / D-s2,d0 | αw/NRC if tested |
+| rPET Panel | up to 1.00 | — | B-s2,d0 | the page used to say 0.95 (24 mm on frame) and the FAQ B-s1,d0 — which is on the certificate? |
+| rPET Groove | none | 0.55 / 0.75 / 0.90 (12/24/36 mm) | B-s1,d0 | αw (needed for any "Class A"), ASTM E84 rating (the "US Class A" row was removed) |
+| rPET Flex Groove | none | — | B-s1,d0 | αw |
+| Solo ECO | ISO 23351-1: none | | none | measurement pending on the page |
+| Solo Flex | 24 dB(A), class C | | none (the "B-s2,d0" on the safety card was unsourced and removed) | fire classification per booth, CE/IEC 60598 certificates |
+| Duo | ISO 23351-1: none | | none | measurement pending |
+| Modular XL | 25.9 dB(A) | | none | fire classification |
+
+Two of the four booths are sold without a measured ISO 23351-1 class.
+German competitors market the test as a badge ("Geprüfte Sprachschalldämmung
+nach ISO 23351-1:2020", "Schallschutz Klasse A"); a measured value for Solo
+ECO and Duo is worth having before the next campaign.
+
+## E. Countries of manufacture
+
+- rWood, rPET and the four booths: Częstochowa (PL) — stated as fact.
+- Textile lines: Beveren-Waas (BE).
+- The manufacturing page uses the head-office/showroom address for the
+  Belgian plant and the production-office address (ul. Legionów 59) for the
+  Polish one. Confirm both are the production sites.
+
+## F. Assets and facts still missing
+
+- **Plant photos** (both plants, exterior and production floor): none in
+  the repo; the manufacturing page shows neutral placeholders, the booth
+  pages have no plant photo.
+- **Founding year**: unknown; omitted from the manufacturing page and the
+  Organization schema.
+- **Plant surface, headcount, capacity, machinery**: not written.
+- **Blog hero images** (18 files, see the earlier list): still missing;
+  BP-001 now uses the Solo ECO photo.
+- **Missing PDFs**: see `docs/missing-documents.md` (datasheets, test
+  reports, fire certificates, installation guides per product).
+- **Solo ECO**: glass-back-wall photo; clear door width; fan count; lighting;
+  occupancy sensor; fire class; certifications.
+- **Google Places API key, cron secret, deploy hook** as Vercel env vars.
+- **Certifications with numbers**: FSC chain-of-custody certificate number
+  and scope; OEKO-TEX certificate number; the EPD for rWood Panel (file).
+  The manufacturing page lists only what the data holds.
+
+## G. Smaller open points from the accuracy pass
+
+(full raw list in the sprint report)
+
+- "50+ colours" (homepage) is not derivable from the data; left.
+- Sustainability page stats ("50+ tons textiles saved", "10K+ m² panels
+  produced", "0 % waste to landfill") are unverified; still shown.
+- rWood core described as "compressed recycled textile fibres — the same
+  material as Interior": unverified.
+- rWood Panel veneer count: page/meta say 10, hub/collection 8.
+- rWood Perf density "0.45 kg/m³" / "48,40 kg/m³" look like unit errors.
+- rPET Groove "~60 bottles per panel": not in the data.
+- Free take-back stated range-wide (incl. booths and the Polish lines):
+  confirm the programme's scope and countries (BE/NL/FR/DE/LU).
+- "Franse VOC-klasse A+" for rPET in the Dutch posts: not in the data.
+- rPET Groove standard panel length (posts no longer cite 2 400 × 600 mm).
+- Interior EPD ("available on request") was removed — does one exist?
+- Sample kit: none of this is a price question, but the kit contents
+  (A4 swatches of every range and finish) come from the brief.
+
+## H. Carried over from the earlier lists (still open, verbatim)
+
+Numbering below is the earlier list's own. Items answered on 6 and 8 September are not repeated.
+
+### Online ordering (added 6 September 2026)
 
 The order flow is live on Solo Flex, Duo, Modular XL, Interior and Divide
 (`docs/order-flow.md` explains it). These need a decision before the first
@@ -99,7 +245,7 @@ real order arrives:
     and Ukraine. There is deliberately no "other country" option. Name any
     country you want added.
 
-## The 2026 price list and the database (added 8 September 2026)
+### The 2026 price list and the database (added 8 September 2026)
 
 The booth price list is in the site's own database (`docs/database.md`); every
 price on the site comes from it. These came out of the import:
@@ -211,120 +357,7 @@ price on the site comes from it. These came out of the import:
     compares the two models on the list's figures. Tell us if the
     positioning ("entry model", "kept simple") is not how you sell it.
 
-Still open: items 14–25 below (hero images, Google API key and place id, planned application pages, rWood Groove 60 % recycled content, translation notes) and the Google Business Profile checklist.
-
-Everything below is a fact, asset or decision the sprint could not settle from
-the workbook (`content/re-sound-content-data-templates.xlsx`), from
-`src/data/products.ts` or from the sprint brief. Where a value was missing the
-site shows a neutral placeholder ("on request", a product hero instead of a
-blog image) rather than an invented figure. Items are grouped by what they
-block; each names the file to change once the answer is known.
-
-## A. Decisions that affect live copy
-
-1. **Modular XL accessibility claim (contradiction on the page).** The brief
-   states that wheelchair access is not standard on any booth and can only be
-   modified on request; FAQ-009 now says exactly that and is rendered on the
-   Modular XL page. The same page still carries the older copy
-   "Full A/V provisions and accessible-by-design entry"
-   (`messages/*.json` → `modularXlPage.overview.feature4`, in en/nl/fr/de) and a
-   "Wheelchair-accessible: 110 cm clear door width and flat threshold…" feature
-   card (`modularXlPage.features.accessibility`). Duo carries "100 cm clear door
-   width — meets European accessibility guidance and accommodates wheelchairs"
-   (`duoPage.features.accessibility`). Per the brief the claim was not repeated
-   anywhere new and `scripts/seo-check.mjs` now flags "accessible-by-design"
-   as a forbidden string, so the after-report shows one expected hit on
-   `/en/products/modular-xl`. Decide: remove the three claims, or confirm the
-   door widths and reword them as "wide step-free door" without the
-   accessibility promise.
-
-2. **Duo price.** Booth_Guide has no price for Duo. The price guide, the
-   booths hub and FAQ-003 say "on request"; the Duo Product JSON-LD carries no
-   `Offer`. Add the excl.-VAT price (with and without installation) to
-   `src/lib/content/boothGuide.ts` (`BOOTH_PRICES.duo`) and to Products_Data /
-   `src/data/products.ts` (`fromPrice`) and the page updates itself.
-
-3. **FAQ-007 wording.** The visitor's question in the FAQ sheet is "Can we
-   lease or trial a booth?". The answer no longer uses the words leasing or
-   trial ("No, not at the moment" + showroom by appointment), but the question
-   still does, in all six languages (`content/faq/*.json`). If you prefer the
-   question not to mention leasing at all, a neutral alternative is "Can we try
-   a booth before we order?".
-
-4. **Blog publication timing.** Content_Calendar plans the six Dutch posts
-   between 6 October and 15 December 2026. The brief asked to publish them
-   now, so every post carries `datePublished: 2026-09-06` (the real date; a
-   future date is an invalid `BlogPosting` date) and keeps the calendar date
-   as `plannedDate`. If you want the staggered release instead, set
-   `draft: true` in the six files under `content/blog/nl/` and flip it on the
-   planned day (`npm run content:import` keeps the first live date in
-   `content/blog-status.json`).
-
-5. **Google reviews and the consent column.** The Testimonials sheet marks all
-   four Google reviews "Consent to publish: N". The site shows the one review
-   with text (JustNicolas) and the three star-only reviews as rating rows, each
-   attributed "via Google" and linked to the listing, which is how Google's
-   Places display rules allow public reviews to be shown. If you want written
-   consent before any review is shown, set `consent` to `true` per review in
-   `content/google-reviews.json` and change the filter in
-   `src/lib/content/testimonials.ts` (one line).
-
-## B. Facts to confirm
-
-6. **Where each range is made (FAQ-017).** The FAQ sheet note said "produced
-   in Poland"; the published answer follows the brief: Interior, Solid and
-   Divide in Beveren-Waas; rWood, rPET and all booths in Częstochowa; raw
-   materials sourced in the EU. `src/data/products.ts` now carries
-   `madeIn: 'PL'` for rWood and the booths (Product JSON-LD `countryOfOrigin`).
-   Confirm both.
-
-7. **rWood Groove recycled content and fire class.** Products_Data lists 60 %
-   recycled content with status Backlog; the page and JSON-LD now show 60 %.
-   The old JSON-LD said B-s2,d0; the page says B-s1,d0 (fire-retardant core) /
-   D-s2,d2 (standard core). Confirm the 60 % and which fire class applies to
-   the standard product.
-
-8. **Interior price unit.** The site copy says "from €387 per set"; the
-   workbook says prices are per piece ("per stuk"). The hub table now reads
-   "from €387 per piece" (`hubs.shared.units.piece`, translated per locale).
-   Confirm that €387 is indeed the per-piece price; if it is per set, revert
-   `priceUnit` for Interior in `src/data/products.ts` to `PER_SET`.
-
-9. **Fan noise level (FAQ-005).** The question asks "how loud is it?"; no
-   dB(A) value exists in the workbook, so the answer only says "silent EC-fan
-   system, 4.6 m³/min on Solo Flex". Provide the measured value and it can be
-   added to FAQ-005 and the price guide.
-
-10. **FAQ editorial choices to confirm** (all in `content/faq/*.json`):
-    FAQ-004 explains Class C as "a normal conversation turns into distant
-    murmuring: clearly quieter, but not inaudible" (mirrors your Dutch
-    FAQ-001); FAQ-016 adds "this applies to the whole rWood range, grooved
-    and micro-perforated" (inferred from "only FSC-certified veneers");
-    FAQ-012 says "check with your acoustician or fire-safety adviser";
-    FAQ-013 keeps "even a ceramic kitchen knife"; FAQ-015 says "mineral wool
-    (rock wool or glass wool)" without the Isover/Knauf brand names.
-
-11. **Competitor prices** cited in the blog posts and the price guide FAQ
-    (mute-labs SOLO € 2 990 net, Work With Island Island Solo € 3 990 excl.
-    VAT, Brand New Office BNO Booth € 9 320 excl. VAT) are the September 2026
-    figures from the brief. Re-check them quarterly; they live in the post
-    bodies and in `content/faq/*.json` (FAQ-003 does not cite them).
-
-12. **Częstochowa production office.** Dealers_Showrooms gives the address
-    (ul. Legionów 59, 42-200 Częstochowa), hours Mon–Fri 08:00–16:30 and the
-    languages nl/pl/uk/ru/en, but no phone number and no coordinates. It is
-    now public on `/where-to-buy` and as a second `LocalBusiness` in the
-    JSON-LD (`src/lib/structured-data.ts`, `productionOfficeSchema`). Confirm
-    the office may be listed publicly, add a phone number if there is one
-    (`src/config/site.ts` → `PRODUCTION_OFFICE`), and confirm the spelling
-    with diacritics.
-
-13. **Solo Flex included equipment.** The price guide says every booth ships
-    with shell, door, dimmable LED lighting and power, and Solo Flex with the
-    manual sit-stand desk (electric desk is an add-on on the product page).
-    Confirm this matches the standard delivery for Duo and Modular XL.
-
-## C. Assets and accounts to provide
+### Assets and accounts (earlier items 14–17)
 
 14. **Blog hero images (18 files).** No image exists under
     `public/images/blog/`; each post uses a product hero as a fallback and
@@ -356,7 +389,7 @@ block; each names the file to change once the answer is known.
     names could be read on 6 September; the fourth is stored as a
     placeholder rating row and is replaced automatically by the live fetch.
 
-## D. Planned pages referenced by the workbook
+### Planned pages referenced by the workbook (18–19)
 
 18. The "Internal links" column of Blog_Posts points to application pages
     that do not exist yet (Content_Calendar CC-012 to CC-016, phase P2):
@@ -373,7 +406,7 @@ block; each names the file to change once the answer is known.
 19. **Case studies, technical pages, dealer list** (CC-005 to CC-011) are
     still Backlog in the workbook; nothing on the site links to them.
 
-## E. Google Business Profile checklist (not code)
+### Google Business Profile checklist (earlier version — superseded by section I below)
 
 Do this in the Google Business Profile manager for the "Re-Sound" listing;
 the site links to it from the footer and the reviews block.
@@ -401,7 +434,7 @@ the site links to it from the footer and the reviews block.
   (see item 16) to the buyer and the installer's contact; aim for one review
   per week for the first quarter. Never offer anything in return.
 
-## F. Flags from the translation pass
+### Flags from the earlier translation passes (20–25)
 
 The sprint-2 UI keys (price guide, reviews block, production office, FAQ
 group headings, price units, blog labels) were translated into nl, fr, de,
@@ -440,7 +473,7 @@ editor. Points the translators raised for you:
     heading was moved out of the text; the guide now shows FAQ-009
     ("Is the booth wheelchair accessible?") instead, in every language.
 
-## G. FR/DE/EN drafts — findings the writers could not settle
+### FR/DE/EN drafts — findings the writers could not settle
 
 Each draft went through a write pass, a verify-and-fix pass and a read-only
 final check against the facts list. What the final check still flagged, and
@@ -505,3 +538,20 @@ Hero images for the twelve drafts (item 14): `cabine-acoustique-bureau-prix.jpg`
 `office-phone-booth-prices.jpg`, `pet-acoustic-panels-vs-wood.jpg`,
 `how-many-acoustic-panels-do-i-need.jpg`,
 `specifying-acoustic-panels-aw-nrc-class-a.jpg` under `public/images/blog/`.
+
+## I. Google Business Profile (not code)
+
+Update the listing before any of this goes live:
+
+- Address: Gentseweg 309 A3, 9120 Beveren-Waas (the listing still shows
+  Industriepark-West 75, Sint-Niklaas, category "Hoofdkantoor", no phone,
+  no hours).
+- Primary category **Fabrikant**; secondary "Akoestisch adviseur",
+  "Kantoormeubelwinkel", "Bouwmaterialenwinkel".
+- Phone +32 3 284 68 18; hours Mon–Fri 08:00–16:30, by appointment.
+- 10+ photos (showroom, both plants, the booths, the panels; landscape, no
+  text overlays); the products with prices, each linked to its page.
+- A description that uses "akoestische panelen", "belcabines" and
+  "fabrikant" and starts with the manufacturer sentence.
+- Reply to the four existing reviews (about four years old), then send the
+  review link to the last 20 customers — recency counts.
