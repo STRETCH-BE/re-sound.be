@@ -9,16 +9,20 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "prebuild": "node scripts/fetch-google-reviews.mjs && node scripts/db/catalogue-snapshot.mjs",
+    "prebuild": "node scripts/fetch-google-reviews.mjs && node scripts/db/catalogue-snapshot.mjs && node scripts/build-price-list-pdf.mjs",
     "content:import": "node scripts/content/import-workbook.mjs",
     "catalogue:snapshot": "node scripts/db/catalogue-snapshot.mjs",
-    "catalogue:check": "node scripts/db/pricing-check.mjs"
+    "catalogue:check": "node scripts/db/pricing-check.mjs",
+    "pricelist:build": "node scripts/build-price-list-pdf.mjs",
+    "verify:redirects": "node scripts/verify-redirects.mjs",
+    "verify:redirects:build": "node scripts/verify-redirects-build.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",
     "gray-matter": "^4.0.3",
     "next": "^14.2.0",
     "next-intl": "^3.11.0",
+    "pdfkit": "^0.20.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^9.1.0",

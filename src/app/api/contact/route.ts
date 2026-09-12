@@ -296,6 +296,9 @@ export async function POST(request: NextRequest) {
             // `text` is the plain-text alternative if a non-HTML flow is used.
             body: htmlBody,
             text: textBody,
+            // Power Automate "Send an email (V2)" must have Is HTML = Yes; the flag
+            // travels with the payload so a flow can read it instead of hardcoding it.
+            isHtml: true,
             // Individual fields for Power Automate flexibility
             contactData: {
               name,

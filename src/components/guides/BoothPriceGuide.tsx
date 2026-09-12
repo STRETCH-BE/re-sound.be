@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { getTranslations } from 'next-intl/server';
 
+import PriceListGate from '@/components/guides/PriceListGate';
 import Breadcrumbs from '@/components/product/Breadcrumbs';
 import ProductFaq from '@/components/product/ProductFaq';
 import type { Crumb } from '@/components/product/Breadcrumbs';
@@ -68,6 +69,7 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
   const ts = await getTranslations({ locale, namespace: 'hubs.shared' });
   const tHub = await getTranslations({ locale, namespace: 'hubs.booths' });
   const tData = await getTranslations({ locale, namespace: 'productData' });
+  const tm = await getTranslations({ locale, namespace: 'manufacturer' });
 
   const guide = getBoothGuide();
   const catalogue = await getCatalogue();
@@ -171,6 +173,8 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
           <Breadcrumbs items={crumbs} />
           <h1>{t('h1')}</h1>
           <p className="hub-intro">{t('intro', guidePriceArgs(catalogue, locale, t('onRequest')))}</p>
+          {/* Manufacture line next to the price intro; the group statement is the shared manufacturer.statement key, never copied into this namespace. */}
+          <p className="hub-intro guide-manufacture">{t('manufactureLine')} {tm('statement')}</p>
         </header>
 
         {/* ── Price table ──────────────────────────────────────────── */}
@@ -206,6 +210,31 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
             </table>
           </div>
         </section>
+
+        {/* ── Price-list download (lead gate, client island) ───────── */}
+        <PriceListGate
+          locale={locale}
+          labels={{
+            tag: t('pricelist.tag'),
+            title: t('pricelist.title'),
+            text: t('pricelist.text'),
+            firstName: t('pricelist.firstName'),
+            lastName: t('pricelist.lastName'),
+            company: t('pricelist.company'),
+            email: t('pricelist.email'),
+            honeypot: t('pricelist.honeypot'),
+            consent: t.rich('pricelist.consent', {
+              link: (chunks) => <Link href="/privacy" prefetch={false}>{chunks}</Link>,
+            }),
+            submit: t('pricelist.submit'),
+            sending: t('pricelist.sending'),
+            successTitle: t('pricelist.successTitle'),
+            successText: t('pricelist.successText'),
+            successLink: t('pricelist.successLink'),
+            errorInvalid: t('pricelist.errorInvalid'),
+            error: t('pricelist.error'),
+          }}
+        />
 
         {/* ── Included / installation / showroom ───────────────────── */}
         <section className="ps-section guide-text-section" id="included">

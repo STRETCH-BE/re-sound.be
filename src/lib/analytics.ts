@@ -46,17 +46,34 @@ const META_EVENT_MAP: Record<string, string> = {
   contact: 'Contact',
   file_download: 'ViewContent',
   view_item: 'ViewContent',
-  sample_request: 'Lead',
+  // Sprint lead taxonomy: quote request, sample kit, price-list download and
+  // calculator hand-over — all "Lead" for Meta retargeting.
+  lead_quote: 'Lead',
+  lead_sample: 'Lead',
+  lead_pricelist: 'Lead',
+  lead_calculator: 'Lead',
 };
 
+/**
+ * Consent gating, per platform:
+ *   - GA4: gtag.js is only loaded after analytics consent (lazy loader in
+ *     src/components/analytics/GoogleAnalytics.tsx), so window.gtag is
+ *     undefined before that and the call below is a silent no-op. Once it
+ *     is loaded, the Consent Mode v2 defaults (every category denied until
+ *     the banner says otherwise) decide whether a hit is a cookieless,
+ *     modelled one or a full one. Nothing here checks consent for GA4.
+ *   - Meta Pixel and Bing UET: sent only with the "marketing" category.
+ *   - Clarity tags: set only with the "analytics" category.
+ */
 export function track(eventName: string, props?: EventProps): void {
   if (typeof window === 'undefined') return;
 
   const safeProps: EventProps = props ? { ...props } : {};
 
   // ── GA4 ────────────────────────────────────────────────────────────────
-  // Works even pre-consent: with Consent Mode v2 denied, GA4 still sends
-  // cookieless modelled hits that feed conversion modelling.
+  // No consent check here: gtag.js only exists after analytics consent (see
+  // the doc comment above); loaded in a denied state, Consent Mode v2 turns
+  // the hit into a cookieless, modelled one instead of dropping it.
   try {
     window.gtag?.('event', eventName, safeProps);
   } catch {
@@ -158,10 +175,42 @@ export async function setEnhancedConversionsUserData(
 }
 
 /**
+ * Product range a lead concerns: one of the four families, 'general' when
+ * the form names none (contact form), or a comma list ('textile,rwood') when
+ * the visitor picked several ranges (sample kit).
+ */
+export type LeadProductRange = 'textile' | 'rwood' | 'rpet' | 'booths' | 'general';
+
+export interface LeadEventProps {
+  /** Page locale (useLocale()) */
+  locale: string;
+  /** A LeadProductRange, or a comma list of them */
+  product_range: LeadProductRange | string;
+}
+
+const leadProps = (data: LeadEventProps): EventProps => ({
+  locale: data.locale,
+  product_range: data.product_range,
+});
+
+/**
  * Typed wrappers for the canonical events. Names follow GA4's
- * recommended-event taxonomy where one exists.
+ * recommended-event taxonomy where one exists. The four lead_* events are
+ * the sprint's lead taxonomy; each carries { locale, product_range }.
  */
 export const analytics = {
+  /** Quote request: the contact form on a successful submit */
+  leadQuote: (data: LeadEventProps) => track('lead_quote', leadProps(data)),
+
+  /** Sample-kit request from /samples (SamplesForm) */
+  leadSample: (data: LeadEventProps) => track('lead_sample', leadProps(data)),
+
+  /** Price-list PDF download from the booth price guide (PriceListGate) */
+  leadPricelist: (data: LeadEventProps) => track('lead_pricelist', leadProps(data)),
+
+  /** Acoustic-calculator result handed over as a lead */
+  leadCalculator: (data: LeadEventProps) => track('lead_calculator', leadProps(data)),
+
   /** GA4 recommended event — the canonical "lead captured" signal */
   generateLead: (data: { product: string; source: string; value?: number }) =>
     track('generate_lead', { ...data, currency: 'EUR' }),
@@ -176,13 +225,6 @@ export const analytics = {
       product,
       file_name: fileName,
       file_extension: 'pdf',
-    }),
-
-  /** Sample-kit request from SampleKitModal */
-  sampleRequest: (samples: string, productLines: string[]) =>
-    track('sample_request', {
-      samples,
-      product_lines: productLines.join(','),
     }),
 
   /** Phone CTA click (tel: link) */

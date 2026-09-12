@@ -4317,7 +4317,25 @@
     "warrantyByModel": {
       "solo-eco": "5 years spare-part warranty"
     },
-    "manufactureLine": "Manufactured in our own plant in Częstochowa (Poland); delivery and installation by our own team, quoted separately."
+    "manufactureLine": "Manufactured in our own plant in Częstochowa (Poland); delivery and installation by our own team, quoted separately.",
+    "pricelist": {
+      "tag": "Price list",
+      "title": "Download the full price list (PDF)",
+      "text": "Leave your details and the booth price list (PDF) downloads straight away.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "company": "Company",
+      "email": "E-mail",
+      "honeypot": "Leave this field empty",
+      "consent": "I agree that Re-Sound may contact me about this request. <link>Privacy policy</link>",
+      "submit": "Download the price list",
+      "sending": "Preparing your download…",
+      "successTitle": "Your download has started",
+      "successText": "If the PDF did not open, use the link below.",
+      "successLink": "Open the price list (PDF)",
+      "errorInvalid": "Please check your details and try again.",
+      "error": "Something went wrong. Please try again in a moment."
+    }
   },
   "order": {
     "cta": "Order online",
@@ -4586,6 +4604,179 @@
     },
     "cta": {
       "deliveryNote": "Ex works, 4 weeks production · Delivery and installation quoted on request · 5-year spare-part warranty"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Reverberation Time Calculator (RT60)",
+      "description": "Estimate your room's reverberation time (Sabine), compare it with the target for the room type and see how many m² of acoustic panels you need."
+    },
+    "hero": {
+      "tag": "Free tool",
+      "title": "Reverberation time calculator",
+      "subtitle": "Enter the dimensions and finishes of your room to estimate its RT60, compare it with the target for the room type and find out how many m² of acoustic panels bring it within range."
+    },
+    "intro": {
+      "tag": "How it works",
+      "title": "Sabine's formula and the targets",
+      "sabine": "The calculator uses Sabine's formula in the form T = V / (6 × A): T is the reverberation time in seconds, V the room volume in m³ and A the total absorption in m² sabine — every surface area multiplied by its absorption coefficient α, added up. Each octave band from 125 Hz to 4000 Hz is calculated separately with the α values of the selected floor, ceiling and wall finishes.",
+      "headline": "The headline RT60 is the mean of the 500, 1000 and 2000 Hz bands — the speech frequencies — and that is the value compared with the target.",
+      "targets": "The target reverberation times per room type come from the same source table as the absorption coefficients: from 0.4 s for a music studio to 1.5 s for a sports hall or swimming pool; an office, meeting room or classroom aims for 0.8 s.",
+      "note": "Sabine's formula assumes the absorption is spread evenly over the room. The result is an estimate for early design decisions, not a measurement.",
+      "targetsTableCaption": "Target reverberation time per room type",
+      "roomType": "Room type",
+      "targetRt": "Target T"
+    },
+    "form": {
+      "title": "Your room",
+      "length": "Length",
+      "width": "Width",
+      "height": "Height",
+      "unitHint": "in m (2.8 or 2,8)",
+      "floor": "Floor finish",
+      "ceiling": "Ceiling finish",
+      "walls": "Wall finish",
+      "roomType": "Room type",
+      "roomTypeOption": "{name} — target {t} s"
+    },
+    "results": {
+      "title": "Result",
+      "empty": "Enter the length, width and height of the room to see the result.",
+      "volume": "Room volume",
+      "volumeValue": "{v} m³",
+      "rtNow": "Estimated RT60 now",
+      "rtNowHint": "Mean of the 500, 1000 and 2000 Hz bands",
+      "seconds": "{s} s",
+      "target": "Target for {room}",
+      "met": "Target met",
+      "notMet": "Above target",
+      "toAdd": "Absorption to add",
+      "sabine": "{a} m² sabine",
+      "toAddHint": "Extra absorption needed to bring the RT60 down to the target",
+      "bandTable": "Per octave band",
+      "band": "Band (Hz)",
+      "absorptionBand": "Absorption A (m² sabine)",
+      "rtBand": "RT60 (s)",
+      "noneNeeded": "Your room already meets the target for this room type — no extra absorption is needed.",
+      "recommendTitle": "Re-Sound panels to reach the target",
+      "recommendIntro": "m² of each panel that supply the missing absorption, based on its weighted absorption coefficient αw. Choose one product; the quantities are alternatives, not a sum.",
+      "productLine": "≈ {m2} m² of {product} (αw {alphaW})",
+      "productNoNumber": "{product} — measured per pattern / thickness — see product page",
+      "productLink": "Product page",
+      "evenNote": "Sabine's formula assumes evenly distributed absorption: the estimate holds best when the panels are spread over the room rather than concentrated on one surface."
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Questions about the calculation",
+      "officeTarget": {
+        "question": "What reverberation time should an office have?",
+        "answer": "The target table used by this calculator sets 0.8 s for an office, meeting room, classroom, nursery and living room, 0.7 s for a call centre, restaurant or café or bar, and 1.0 s for a reception or waiting room. The calculator shows whether your estimated RT60 meets the target for the room type you select."
+      },
+      "hardFinishes": {
+        "question": "Which finishes absorb the least sound?",
+        "answer": "In the table, marble has an absorption coefficient of 0.01 in every octave band, concrete 0.01 to 0.03 and plaster 0.01 to 0.05. Soft finishes absorb far more: carpet reaches 0.37 at 4000 Hz and heavy curtains 0.96 at 500 Hz. A room with hard finishes on the floor, ceiling and walls therefore has a long reverberation time."
+      },
+      "howManyM2": {
+        "question": "How many m² of acoustic panels do I need?",
+        "answer": "The calculator works out the extra absorption in m² sabine that brings the headline RT60 — the mean of the 500, 1000 and 2000 Hz bands — down to the target, then divides it by the weighted absorption coefficient αw of each Re-Sound panel with a published single value: 1 m² of a panel with αw 1.0 adds 1 m² sabine. Panels whose αw depends on the pattern or thickness are listed without a quantity and link to their product page."
+      }
+    },
+    "lead": {
+      "tag": "Next step",
+      "title": "Send me this calculation and a quote",
+      "subtitle": "We e-mail you the calculation above and come back with a quote for the recommended panels.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "company": "Company",
+      "email": "E-mail",
+      "honeypot": "Leave this field empty",
+      "submit": "Send calculation and request a quote",
+      "sending": "Sending...",
+      "success": "Thank you — the calculation is on its way and we will be in touch with a quote.",
+      "error": "Something went wrong. Please try again.",
+      "incomplete": "Complete the calculation above first.",
+      "privacyNotice": "By submitting this form, you agree to our <link>privacy policy</link>."
+    }
+  },
+  "samples": {
+    "metaTitle": "Order a Sample Kit",
+    "metaDescription": "Request the Re-Sound sample kit: A4 swatches of every range and finish, shipped within three working days in the EU.",
+    "hero": {
+      "tag": "Sample kit",
+      "title": "Order your sample kit",
+      "subtitle": "A4 swatches of every range and finish, shipped within three working days in the EU."
+    },
+    "kit": {
+      "tag": "What is in the kit",
+      "title": "Every range and finish, at A4 size",
+      "swatchesTitle": "A4 swatches",
+      "swatchesText": "One A4 swatch of every range and finish.",
+      "shippingTitle": "Three working days",
+      "shippingText": "The kit ships within three working days to addresses in the EU.",
+      "projectTitle": "Your project",
+      "projectText": "Tell us which ranges you are looking at and what the project is.",
+      "cta": "Request the kit"
+    },
+    "ranges": {
+      "tag": "Ranges",
+      "title": "The ranges in the kit",
+      "text": "Swatches of every finish in the textile, rWood and rPET ranges."
+    },
+    "families": {
+      "textile": "Textile",
+      "rwood": "rWood",
+      "rpet": "rPET"
+    },
+    "form": {
+      "tag": "Request",
+      "title": "Request your sample kit",
+      "text": "Fill in the form below. Fields marked * are required.",
+      "sections": {
+        "ranges": "Which ranges are you interested in?",
+        "project": "Your project",
+        "delivery": "Delivery"
+      },
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "company": "Company",
+        "email": "E-mail",
+        "country": "Country",
+        "rangesHint": "Tick at least one range.",
+        "rangesRequired": "Select at least one range.",
+        "projectType": "Project type",
+        "projectTypePlaceholder": "Select a project type",
+        "area": "Surface area (m²)",
+        "areaPlaceholder": "e.g. 120",
+        "address": "Delivery address",
+        "addressPlaceholder": "Street and number, postcode, city",
+        "addressHint": "Street, number, postcode and city: needed to ship the kit.",
+        "honeypot": "Leave this field empty"
+      },
+      "projectTypes": {
+        "office": "Office",
+        "education": "Education",
+        "healthcare": "Healthcare",
+        "hospitality": "Hospitality",
+        "residential": "Residential",
+        "other": "Other"
+      },
+      "submit": "Request the sample kit",
+      "success": {
+        "title": "Request received",
+        "body": "Thank you, {firstName}. The sample kit ships within three working days in the EU. Check your inbox for a confirmation.",
+        "another": "Send another request"
+      }
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Sample kit questions",
+      "q1": "What is in the sample kit?",
+      "a1": "A4 swatches of every range and finish: textile, rWood and rPET.",
+      "q2": "How long does shipping take?",
+      "a2": "The kit ships within three working days to addresses in the EU.",
+      "q3": "Do I have to choose specific ranges?",
+      "a3": "The kit contains every range and finish. Ticking the ranges you are interested in tells us which ones matter for your project."
     }
   }
 }
