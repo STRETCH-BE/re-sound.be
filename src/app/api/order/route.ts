@@ -767,6 +767,10 @@ export async function POST(request: NextRequest) {
             vatMode: totals.vatMode,
             hasOnRequestItems: totals.hasOnRequestItems,
           },
+          // The codes the route priced (rule 8 applied): a dialog whose own
+          // rules lag behind the route's adopts them and converges after one
+          // round trip instead of resubmitting the same selection.
+          selection: canonical,
           catalogue: await loadConfigurator(priced.product.websiteSlug),
         },
         { status: 409 }

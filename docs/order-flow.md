@@ -81,7 +81,16 @@ Michael (12 September 2026) and live only in the catalogue.
   prices, stores and e-mails that canonical form. Every auto line the client
   sent is dropped first, so a stale or tampered transport line never sets the
   price; a mismatch with the amount the buyer consented to still answers
-  `409 price_changed`.
+  `409 price_changed`. Since 12 September the 409 body also carries
+  `selection` — the canonical codes the route priced — and the dialog adopts
+  them (through the same canonicalisation) before asking for consent again,
+  so a dialog whose rules lag behind the route's converges after one round
+  trip.
+- Deploy window: a product-page tab opened **before** the 12 September deploy
+  runs the old dialog bundle, which never adds the transport line and ignores
+  `selection`; its submit answers `409 price_changed` every time (nothing is
+  stored or mailed) until the buyer reloads the page. Later deploys do not
+  have this: the dialog now follows the route's `selection`.
 - Under the totals, on the confirmation screen and in both e-mails a product
   with transport articles shows `order.summary.transportMainlandNote`
   ("Transport within mainland Europe is included at the flat rate per unit

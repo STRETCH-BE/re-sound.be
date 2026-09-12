@@ -115,7 +115,7 @@ const LABELS = {
   nl: {
     title: 'Re-Sound prijslijst belcabines {year}',
     intro: 'De prijzen hieronder zijn de prijzen die op re-sound.be staan. Stel je cabine samen op de productpagina voor een exacte offerte.',
-    priceNote: 'Prijzen zijn excl. btw. Transport binnen het Europese vasteland en installatie door ons eigen team zijn vaste bedragen per model, zie de tabel; buiten het Europese vasteland wordt het transport apart geoffreerd.',
+    priceNote: 'Prijzen zijn excl. btw. Transport binnen het vasteland van Europa en installatie door ons eigen team zijn vaste bedragen per model, zie de tabel; buiten het vasteland van Europa wordt het transport apart geoffreerd.',
     currencyNote: 'Alle prijzen in {currency}.',
     priceListRef: 'Prijslijst',
     validFrom: 'Geldig vanaf',
@@ -125,7 +125,7 @@ const LABELS = {
     model: 'Model',
     fromPrice: 'Vanafprijs excl. btw',
     extension: 'Extra element van 90 cm',
-    transport: 'Transport (Europees vasteland)',
+    transport: 'Transport (vasteland van Europa)',
     installation: 'Installatie door Re-Sound',
     perExtraElement: '+ {price} per extra element',
     capacity: 'Capaciteit',
@@ -191,7 +191,7 @@ const LABELS = {
   de: {
     title: 'Re-Sound Preisliste Telefonboxen {year}',
     intro: 'Die folgenden Preise sind die auf re-sound.be veröffentlichten Preise. Konfigurieren Sie Ihre Box auf der Produktseite, um ein genaues Angebot zu erhalten.',
-    priceNote: 'Preise verstehen sich zzgl. MwSt. Transport innerhalb Kontinentaleuropas und Montage durch unser eigenes Team sind feste Beträge je Modell, siehe Tabelle; außerhalb Kontinentaleuropas wird der Transport angeboten.',
+    priceNote: 'Preise verstehen sich zzgl. MwSt. Transport innerhalb des europäischen Festlands und Montage durch unser eigenes Team sind feste Beträge je Modell, siehe Tabelle; außerhalb des europäischen Festlands erhalten Sie ein Angebot für den Transport.',
     currencyNote: 'Alle Preise in {currency}.',
     priceListRef: 'Preisliste',
     validFrom: 'Gültig ab',
@@ -201,7 +201,7 @@ const LABELS = {
     model: 'Modell',
     fromPrice: 'Ab-Preis zzgl. MwSt.',
     extension: 'Zusätzliches 90-cm-Element',
-    transport: 'Transport (Kontinentaleuropa)',
+    transport: 'Transport (europäisches Festland)',
     installation: 'Montage durch Re-Sound',
     perExtraElement: '+ {price} je zusätzliches Element',
     capacity: 'Kapazität',
@@ -362,13 +362,11 @@ function collect(catalogue, productsModule) {
     .map((p) => {
       const arts = articlesOfProduct(p.id);
       const bases = arts.filter((a) => a.priceType === 'base');
-      // Options: every option article except the on-request "outside mainland Europe" transport line (the price
-      // note covers it) and the extension-installation line the model table already shows.
+      // Options: every option article except the transport lines (the model table prints the mainland
+      // rate, the price note covers the on-request case) and the extension-installation line the model
+      // table already shows.
       const options = arts.filter(
-        (a) =>
-          a.priceType === 'option' &&
-          !(a.categoryKey === 'transport' && articleSuffix(a.code) === 'XX') &&
-          !shownInModelTable.has(a.code),
+        (a) => a.priceType === 'option' && a.categoryKey !== 'transport' && !shownInModelTable.has(a.code),
       );
       const groups = catalogue.categories
         .map((c) => ({ category: c, articles: options.filter((a) => a.categoryKey === c.key) }))

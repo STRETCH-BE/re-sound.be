@@ -553,6 +553,8 @@ export default function OrderModal({ open, onClose, slug, productName, configura
         error?: string;
         totals?: { netCents?: number; grossCents: number; vatMode: string };
         catalogue?: CatalogueSlice;
+        /** The codes the route priced (rule 8 applied), sent with a 409 */
+        selection?: { productId?: string; quantity?: number; articles?: unknown };
       };
       if (!response.ok || !data.reference || data.error) {
         setStatus('error');
@@ -561,7 +563,21 @@ export default function OrderModal({ open, onClose, slug, productName, configura
         const code = data.error ?? '';
         setErrorMessage(code ? tError(code) : t('error.generic'));
         if (data.catalogue && (code === 'price_changed' || code === 'selection_outdated')) {
-          adoptFreshSlice(data.catalogue, code === 'selection_outdated');
+          const fresh = data.catalogue;
+          adoptFreshSlice(fresh, code === 'selection_outdated');
+          // A 409 names the codes the route priced. Adopting them (through
+          // the same canonicalisation) means a dialog whose rules lag behind
+          // the route's converges after one round trip instead of resending
+          // the selection it already had.
+          const served = data.selection;
+          if (
+            code === 'price_changed' &&
+            served?.productId === productId &&
+            Array.isArray(served.articles) &&
+            served.articles.every((c): c is string => typeof c === 'string')
+          ) {
+            setArticles(canonicalArticles(served.articles, productId, fresh, customer.country));
+          }
           // Consent was given to the old amount or configuration: ask again.
           setConsent(false);
           if (code === 'selection_outdated') {
