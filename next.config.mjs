@@ -1,5 +1,7 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
+import { legacyRedirects } from './redirects.mjs';
+
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
@@ -20,11 +22,26 @@ const nextConfig = {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://re-sound.be',
   },
 
-  // NOTE: no redirects() for '/' here. The next-intl middleware
-  // (src/middleware.ts) handles the root URL with locale detection. The old
-  // config-level '/' → '/en' redirect existed only because middleware.ts sat
-  // at the repo root while the app lives in src/ — a location Next.js
-  // ignores — so the middleware never ran at all.
+  // NOTE: no redirect for '/' here. The next-intl middleware
+  // (src/middleware.ts) handles the root URL with locale detection.
+  //
+  // Legacy Wix URLs (redirects.mjs): www → apex, the explicit map and the
+  // prefix catch-alls. These run before the filesystem, so they never touch
+  // the site's own routes. Unknown page-like paths are handled by the
+  // middleware; unknown asset-like paths by the `fallback` rewrite below.
+  async redirects() {
+    return legacyRedirects;
+  },
+  async rewrites() {
+    return {
+      // Checked AFTER public files, pages and dynamic routes, right before the
+      // 404 page: whatever still matched nothing (a missing static asset, a
+      // stray .html, an unknown /api/* path — the middleware skips those on
+      // purpose) is handed to the fallback handler, which 301s to the
+      // visitor's localised home. Real files in public/ are served untouched.
+      fallback: [{ source: '/:path*', destination: '/api/legacy-fallback' }],
+    };
+  },
 
   async headers() {
     return [

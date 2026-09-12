@@ -1,0 +1,282 @@
+# ============================================================================
+# LEGACY URL INVENTORY — re-sound.be on Wix (before the Next.js rebuild).
+# One URL per line; text after "#" is provenance and is ignored by
+# scripts/verify-redirects.mjs. Every URL here must end in HTTP 200 through
+# the redirect chain with zero 4xx/5xx — that is the launch gate.
+#
+# HOW THIS FILE WAS BUILT (12 Sep 2026): the Wix site is gone and this build
+# environment cannot reach web.archive.org, so the set is (a) the URLs the
+# brief confirmed dead with real backlinks, (b) the Wix URL conventions
+# applied to every product and page the old site is known to have had, and
+# (c) the localised prefixes Wix used (/en, /nl, /fr, /de). Lines marked
+# "reconstructed" are candidates, not observed URLs: they cost nothing to
+# map and each lands on the closest live page. Add observed URLs from
+# Search Console (Pages → Not found) above the reconstructed block.
+# ============================================================================
+
+# --- (a) confirmed dead, with backlinks (kampc.be, mvovlaanderen.be, ergo-comfort.be) ---
+https://re-sound.be/en/product-page/solid  # confirmed 404, backlink; → /en/products/solid
+https://re-sound.be/en/akoestische-scheidingspanelen  # confirmed 404, backlink; → /en/products/divide
+https://www.re-sound.be/en/product-page/solid  # confirmed pattern on the www host
+https://www.re-sound.be/en/akoestische-scheidingspanelen  # confirmed pattern on the www host
+
+# --- (b) Wix product pages: /product-page/<slug>, with and without a locale prefix (reconstructed) ---
+https://re-sound.be/product-page/interior  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-interior  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/solid  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-solid  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/divide  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-divide  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rwood-groove  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rwood-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rwood-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rwood-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rwood-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rwood-groove  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rwood-micro  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rwood-micro  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rwood-micro  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rwood-micro  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rwood-micro  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rwood-micro  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rwood-perf  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rwood-perf  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rwood-perf  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rwood-perf  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rwood-perf  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rwood-perf  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rwood-veneer  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rwood-veneer  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rwood-veneer  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rwood-veneer  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rwood-veneer  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rwood-veneer  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rpet-panel  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rpet-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rpet-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rpet-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rpet-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rpet-panel  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rpet-groove  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rpet-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rpet-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rpet-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rpet-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rpet-groove  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rpet-flex-groove  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rpet-flex-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rpet-flex-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rpet-flex-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rpet-flex-groove  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rpet-flex-groove  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/solo-eco  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/solo-eco  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/solo-eco  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/solo-eco  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/solo-eco  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-solo-eco  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/solo-flex  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/solo-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/solo-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/solo-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/solo-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-solo-flex  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/duo  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/duo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/duo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/duo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/duo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-duo  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/modular-xl  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/modular-xl  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/modular-xl  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/modular-xl  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/modular-xl  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-modular-xl  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rwood-panel  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rwood-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rwood-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rwood-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rwood-panel  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rwood-panel  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/rpet-flex  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/rpet-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/rpet-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/rpet-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/rpet-flex  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-rpet-flex  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/solo  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/solo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/solo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/solo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/solo  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-solo  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/modular  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/modular  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/modular  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/modular  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/modular  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-modular  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/re-sound-interior  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/re-sound-interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/re-sound-interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/re-sound-interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/re-sound-interior  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-re-sound-interior  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/re-sound-solid  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/re-sound-solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/re-sound-solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/re-sound-solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/re-sound-solid  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-re-sound-solid  # reconstructed: Wix "copy-of" duplicate page
+https://re-sound.be/product-page/re-sound-divide  # reconstructed: Wix product-page pattern
+https://re-sound.be/en/product-page/re-sound-divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/nl/product-page/re-sound-divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/fr/product-page/re-sound-divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/de/product-page/re-sound-divide  # reconstructed: Wix product-page pattern, localised
+https://re-sound.be/en/product-page/copy-of-re-sound-divide  # reconstructed: Wix "copy-of" duplicate page
+
+# --- (c) Wix topic pages with Dutch or English slugs (reconstructed) ---
+https://re-sound.be/akoestische-scheidingspanelen  # reconstructed topic page → Divide (confirmed slug)
+https://re-sound.be/en/akoestische-scheidingspanelen  # reconstructed topic page, /en prefix → Divide (confirmed slug)
+https://re-sound.be/nl/akoestische-scheidingspanelen  # reconstructed topic page, /nl prefix → Divide (confirmed slug)
+https://re-sound.be/akoestische-wandpanelen  # reconstructed topic page → Interior
+https://re-sound.be/en/akoestische-wandpanelen  # reconstructed topic page, /en prefix → Interior
+https://re-sound.be/nl/akoestische-wandpanelen  # reconstructed topic page, /nl prefix → Interior
+https://re-sound.be/akoestische-panelen  # reconstructed topic page → products
+https://re-sound.be/en/akoestische-panelen  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/akoestische-panelen  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/houten-akoestische-panelen  # reconstructed topic page → rWood hub
+https://re-sound.be/en/houten-akoestische-panelen  # reconstructed topic page, /en prefix → rWood hub
+https://re-sound.be/nl/houten-akoestische-panelen  # reconstructed topic page, /nl prefix → rWood hub
+https://re-sound.be/pet-akoestische-panelen  # reconstructed topic page → rPET hub
+https://re-sound.be/en/pet-akoestische-panelen  # reconstructed topic page, /en prefix → rPET hub
+https://re-sound.be/nl/pet-akoestische-panelen  # reconstructed topic page, /nl prefix → rPET hub
+https://re-sound.be/akoestische-belcabines  # reconstructed topic page → booth hub
+https://re-sound.be/en/akoestische-belcabines  # reconstructed topic page, /en prefix → booth hub
+https://re-sound.be/nl/akoestische-belcabines  # reconstructed topic page, /nl prefix → booth hub
+https://re-sound.be/belcabines  # reconstructed topic page → booth hub
+https://re-sound.be/en/belcabines  # reconstructed topic page, /en prefix → booth hub
+https://re-sound.be/nl/belcabines  # reconstructed topic page, /nl prefix → booth hub
+https://re-sound.be/telefooncellen  # reconstructed topic page → booth hub
+https://re-sound.be/en/telefooncellen  # reconstructed topic page, /en prefix → booth hub
+https://re-sound.be/nl/telefooncellen  # reconstructed topic page, /nl prefix → booth hub
+https://re-sound.be/vergaderpods  # reconstructed topic page → booth hub
+https://re-sound.be/en/vergaderpods  # reconstructed topic page, /en prefix → booth hub
+https://re-sound.be/nl/vergaderpods  # reconstructed topic page, /nl prefix → booth hub
+https://re-sound.be/over-ons  # reconstructed topic page → about
+https://re-sound.be/en/over-ons  # reconstructed topic page, /en prefix → about
+https://re-sound.be/nl/over-ons  # reconstructed topic page, /nl prefix → about
+https://re-sound.be/about-us  # reconstructed topic page → about
+https://re-sound.be/en/about-us  # reconstructed topic page, /en prefix → about
+https://re-sound.be/nl/about-us  # reconstructed topic page, /nl prefix → about
+https://re-sound.be/about-1  # reconstructed topic page → about (Wix duplicate)
+https://re-sound.be/en/about-1  # reconstructed topic page, /en prefix → about (Wix duplicate)
+https://re-sound.be/nl/about-1  # reconstructed topic page, /nl prefix → about (Wix duplicate)
+https://re-sound.be/contact-1  # reconstructed topic page → contact (Wix duplicate)
+https://re-sound.be/en/contact-1  # reconstructed topic page, /en prefix → contact (Wix duplicate)
+https://re-sound.be/nl/contact-1  # reconstructed topic page, /nl prefix → contact (Wix duplicate)
+https://re-sound.be/duurzaamheid  # reconstructed topic page → sustainability
+https://re-sound.be/en/duurzaamheid  # reconstructed topic page, /en prefix → sustainability
+https://re-sound.be/nl/duurzaamheid  # reconstructed topic page, /nl prefix → sustainability
+https://re-sound.be/circulair  # reconstructed topic page → sustainability
+https://re-sound.be/en/circulair  # reconstructed topic page, /en prefix → sustainability
+https://re-sound.be/nl/circulair  # reconstructed topic page, /nl prefix → sustainability
+https://re-sound.be/producten  # reconstructed topic page → products
+https://re-sound.be/en/producten  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/producten  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/shop  # reconstructed topic page → products
+https://re-sound.be/en/shop  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/shop  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/downloads  # reconstructed topic page → products
+https://re-sound.be/en/downloads  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/downloads  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/projecten  # reconstructed topic page → products
+https://re-sound.be/en/projecten  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/projecten  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/realisaties  # reconstructed topic page → products
+https://re-sound.be/en/realisaties  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/realisaties  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/verkooppunten  # reconstructed topic page → where-to-buy
+https://re-sound.be/en/verkooppunten  # reconstructed topic page, /en prefix → where-to-buy
+https://re-sound.be/nl/verkooppunten  # reconstructed topic page, /nl prefix → where-to-buy
+https://re-sound.be/dealers  # reconstructed topic page → where-to-buy
+https://re-sound.be/en/dealers  # reconstructed topic page, /en prefix → where-to-buy
+https://re-sound.be/nl/dealers  # reconstructed topic page, /nl prefix → where-to-buy
+https://re-sound.be/showroom  # reconstructed topic page → where-to-buy
+https://re-sound.be/en/showroom  # reconstructed topic page, /en prefix → where-to-buy
+https://re-sound.be/nl/showroom  # reconstructed topic page, /nl prefix → where-to-buy
+https://re-sound.be/veelgestelde-vragen  # reconstructed topic page → faq
+https://re-sound.be/en/veelgestelde-vragen  # reconstructed topic page, /en prefix → faq
+https://re-sound.be/nl/veelgestelde-vragen  # reconstructed topic page, /nl prefix → faq
+https://re-sound.be/acoustic-panels  # reconstructed topic page → products
+https://re-sound.be/en/acoustic-panels  # reconstructed topic page, /en prefix → products
+https://re-sound.be/nl/acoustic-panels  # reconstructed topic page, /nl prefix → products
+https://re-sound.be/acoustic-dividers  # reconstructed topic page → Divide
+https://re-sound.be/en/acoustic-dividers  # reconstructed topic page, /en prefix → Divide
+https://re-sound.be/nl/acoustic-dividers  # reconstructed topic page, /nl prefix → Divide
+https://re-sound.be/room-dividers  # reconstructed topic page → Divide
+https://re-sound.be/en/room-dividers  # reconstructed topic page, /en prefix → Divide
+https://re-sound.be/nl/room-dividers  # reconstructed topic page, /nl prefix → Divide
+https://re-sound.be/acoustic-wall-panels  # reconstructed topic page → Interior
+https://re-sound.be/en/acoustic-wall-panels  # reconstructed topic page, /en prefix → Interior
+https://re-sound.be/nl/acoustic-wall-panels  # reconstructed topic page, /nl prefix → Interior
+https://re-sound.be/phone-booths  # reconstructed topic page → booth hub
+https://re-sound.be/en/phone-booths  # reconstructed topic page, /en prefix → booth hub
+https://re-sound.be/nl/phone-booths  # reconstructed topic page, /nl prefix → booth hub
+https://re-sound.be/office-pods  # reconstructed topic page → booth hub
+https://re-sound.be/en/office-pods  # reconstructed topic page, /en prefix → booth hub
+https://re-sound.be/nl/office-pods  # reconstructed topic page, /nl prefix → booth hub
+https://re-sound.be/blog-1  # reconstructed topic page → blog
+https://re-sound.be/en/blog-1  # reconstructed topic page, /en prefix → blog
+https://re-sound.be/nl/blog-1  # reconstructed topic page, /nl prefix → blog
+https://re-sound.be/nieuws  # reconstructed topic page → blog
+https://re-sound.be/en/nieuws  # reconstructed topic page, /en prefix → blog
+https://re-sound.be/nl/nieuws  # reconstructed topic page, /nl prefix → blog
+https://re-sound.be/news  # reconstructed topic page → blog
+https://re-sound.be/en/news  # reconstructed topic page, /en prefix → blog
+https://re-sound.be/nl/news  # reconstructed topic page, /nl prefix → blog
+
+# --- (d) Wix blog posts: /post/<slug> and /blog-1/<slug> (reconstructed; slugs unknown) ---
+https://re-sound.be/post/akoestiek-op-kantoor  # reconstructed Wix blog post
+https://re-sound.be/en/post/akoestiek-op-kantoor  # reconstructed Wix blog post, /en prefix
+https://re-sound.be/nl/post/akoestiek-op-kantoor  # reconstructed Wix blog post, /nl prefix
+https://re-sound.be/blog-1/akoestiek-op-kantoor  # reconstructed Wix blog listing child
+https://re-sound.be/post/nagalmtijd-verlagen  # reconstructed Wix blog post
+https://re-sound.be/en/post/nagalmtijd-verlagen  # reconstructed Wix blog post, /en prefix
+https://re-sound.be/nl/post/nagalmtijd-verlagen  # reconstructed Wix blog post, /nl prefix
+https://re-sound.be/blog-1/nagalmtijd-verlagen  # reconstructed Wix blog listing child
+https://re-sound.be/post/akoestische-panelen-kiezen  # reconstructed Wix blog post
+https://re-sound.be/en/post/akoestische-panelen-kiezen  # reconstructed Wix blog post, /en prefix
+https://re-sound.be/nl/post/akoestische-panelen-kiezen  # reconstructed Wix blog post, /nl prefix
+https://re-sound.be/blog-1/akoestische-panelen-kiezen  # reconstructed Wix blog listing child
+https://re-sound.be/post/belcabine-kantoor  # reconstructed Wix blog post
+https://re-sound.be/en/post/belcabine-kantoor  # reconstructed Wix blog post, /en prefix
+https://re-sound.be/nl/post/belcabine-kantoor  # reconstructed Wix blog post, /nl prefix
+https://re-sound.be/blog-1/belcabine-kantoor  # reconstructed Wix blog listing child
+https://re-sound.be/post/circulaire-akoestiek  # reconstructed Wix blog post
+https://re-sound.be/en/post/circulaire-akoestiek  # reconstructed Wix blog post, /en prefix
+https://re-sound.be/nl/post/circulaire-akoestiek  # reconstructed Wix blog post, /nl prefix
+https://re-sound.be/blog-1/circulaire-akoestiek  # reconstructed Wix blog listing child
+https://re-sound.be/post/wat-is-nagalmtijd  # reconstructed Wix blog post
+https://re-sound.be/en/post/wat-is-nagalmtijd  # reconstructed Wix blog post, /en prefix
+https://re-sound.be/nl/post/wat-is-nagalmtijd  # reconstructed Wix blog post, /nl prefix
+https://re-sound.be/blog-1/wat-is-nagalmtijd  # reconstructed Wix blog listing child
+
+# --- (e) hosts and variants the verifier also exercises: www, trailing slash, query strings ---
+https://www.re-sound.be/  # www host must 308 to the apex
+https://www.re-sound.be/nl/  # www + locale + trailing slash
+https://re-sound.be/en/product-page/solid/  # trailing slash variant
+https://re-sound.be/en/product-page/solid?utm_source=kampc  # query-string variant
