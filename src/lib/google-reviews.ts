@@ -27,20 +27,32 @@ export interface GoogleReviewsData {
   source: 'places-api' | 'workbook';
 }
 
-const SEARCH_QUERIES = ['Re-Sound Gentseweg 309 Beveren-Waas', 'Re-Sound Sint-Niklaas'];
+const SEARCH_QUERIES = [
+  'Re-Sound Gentseweg 309 Beveren-Waas',
+  'Re-Sound akoestische panelen Beveren',
+  'Re-Sound Sint-Niklaas',
+  'Re-Sound acoustic panels Belgium',
+];
 
-export async function fetchGoogleReviews(apiKey: string): Promise<GoogleReviewsData | null> {
+/**
+ * Which listing: the place whose Google Maps URL carries `knownCid` (the CID
+ * of the committed mapsUrl), else a name match. The first search result is
+ * never taken on trust: text search returns neighbours and namesakes too.
+ */
+export async function fetchGoogleReviews(apiKey: string, knownCid: string | null = null): Promise<GoogleReviewsData | null> {
   try {
     let placeId: string | null = null;
     for (const textQuery of SEARCH_QUERIES) {
       const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': apiKey, 'X-Goog-FieldMask': 'places.id,places.displayName' },
+        headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': apiKey, 'X-Goog-FieldMask': 'places.id,places.displayName,places.googleMapsUri' },
         body: JSON.stringify({ textQuery, languageCode: 'nl' }),
       });
       if (!res.ok) continue;
-      const data = (await res.json()) as { places?: Array<{ id: string; displayName?: { text?: string } }> };
-      const hit = data.places?.find((p) => /re-?sound/i.test(p.displayName?.text ?? '')) ?? data.places?.[0];
+      const data = (await res.json()) as { places?: Array<{ id: string; displayName?: { text?: string }; googleMapsUri?: string }> };
+      const places = data.places ?? [];
+      const byCid = knownCid ? places.find((p) => (p.googleMapsUri ?? '').includes(`cid=${knownCid}`)) : undefined;
+      const hit = byCid ?? places.find((p) => /re-?sound/i.test(p.displayName?.text ?? ''));
       if (hit?.id) { placeId = hit.id; break; }
     }
     if (!placeId) return null;
@@ -52,9 +64,11 @@ export async function fetchGoogleReviews(apiKey: string): Promise<GoogleReviewsD
       rating?: number; userRatingCount?: number; googleMapsUri?: string;
       reviews?: Array<{ rating?: number; relativePublishTimeDescription?: string; publishTime?: string; text?: { text?: string; languageCode?: string }; originalText?: { text?: string; languageCode?: string }; authorAttribution?: { displayName?: string } }>;
     };
+    // A listing without a rating gives the site nothing to show.
+    if (p.rating === undefined || p.rating === null) return null;
     return {
       placeId,
-      rating: p.rating ?? null,
+      rating: p.rating,
       reviewCount: p.userRatingCount ?? null,
       mapsUrl: p.googleMapsUri ?? null,
       writeReviewUrl: `https://search.google.com/local/writereview?placeid=${placeId}`,
