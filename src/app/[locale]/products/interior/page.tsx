@@ -96,10 +96,10 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'interior', cleanName);
-  // "From" price from the catalogue (database, else snapshot): hero + JSON-LD offer.
-  const priceCents = await getFromPriceCents('interior');
+  // "From" price from the catalogue (database, else snapshot), in the locale's currency: hero + JSON-LD offer.
+  const priceCents = await getFromPriceCents('interior', locale);
   // Models, categories and articles for the order dialog (same catalogue read).
-  const configurator = await loadConfigurator('interior');
+  const configurator = await loadConfigurator('interior', locale);
 
   // Root + productPage translators for the server-rendered section slots.
   const t = await getTranslations({ locale });
@@ -155,6 +155,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           category: tData('category.textile'),
           priceCents,
+          currency: configurator.currency,
         })}
       />
       <JsonLd

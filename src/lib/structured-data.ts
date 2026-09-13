@@ -13,7 +13,8 @@
  *   - Product           → per product page, with one Offer: unit and
  *                         availability from src/data/products.ts, the price
  *                         from the catalogue (src/lib/catalogue/load.ts),
- *                         passed in by the page in integer cents
+ *                         passed in by the page in integer minor units with
+ *                         the currency of the page locale's catalogue view
  *   - ItemList          → /products listing and the range hubs
  *   - CollectionPage    → range hubs (wraps the ItemList)
  *   - BreadcrumbList    → per product/hub page
@@ -40,6 +41,7 @@ import {
 } from '@/config/site';
 import { isoSpeechClass, PRODUCTS, type Product } from '@/data/products';
 import { centsToDecimal } from '@/lib/catalogue/pricing';
+import type { CurrencyCode } from '@/lib/catalogue/types';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 
@@ -249,10 +251,15 @@ export interface ProductSchemaInput {
   /** Extra localised specs to append to the ones derived from product data */
   extraSpecs?: ProductSpec[];
   /**
-   * "From" price in integer cents from the catalogue (getFromPriceCents in
-   * src/lib/catalogue/load.ts). Omit or pass null for a product without one.
+   * "From" price in integer minor units from the catalogue (getFromPriceCents
+   * in src/lib/catalogue/load.ts). Omit or pass null for a product without one.
    */
   priceCents?: number | null;
+  /**
+   * The currency `priceCents` is in — Catalogue.currency / ConfiguratorData.currency
+   * of the page locale's view. Euros when omitted.
+   */
+  currency?: CurrencyCode;
 }
 
 /** The free take-back programme, expressed as a MerchantReturnPolicy. */
@@ -270,15 +277,17 @@ function returnPolicy() {
  * One Offer per product.
  *
  * `priceCents` is the "from" price the page read from the catalogue
- * (getFromPriceCents), in integer cents; it is emitted as a decimal string
- * ("4118.75"). A product without a catalogue price gets an Offer without a
- * price unless NEXT_PUBLIC_SHOW_PRICES is set, in which case
+ * (getFromPriceCents), in integer minor units of `currency` — the currency of
+ * the page locale's catalogue view, euros unless the locale has an active
+ * currency of its own; it is emitted as a decimal string ("4118.75", "4500"
+ * for ISK) with that currency. A product without a catalogue price gets an
+ * Offer without a price unless NEXT_PUBLIC_SHOW_PRICES is set, in which case
  * PLACEHOLDER_FROM_PRICE is emitted — so nothing false ships by accident.
  */
-export function productOffer(product: Product, url: string, priceCents?: number | null) {
+export function productOffer(product: Product, url: string, priceCents?: number | null, currency: CurrencyCode = 'EUR') {
   const price: string | null =
     priceCents !== null && priceCents !== undefined
-      ? centsToDecimal(priceCents)
+      ? centsToDecimal(priceCents, currency)
       : SHOW_PLACEHOLDER_PRICES
         ? String(PLACEHOLDER_FROM_PRICE)
         : null;
@@ -286,7 +295,7 @@ export function productOffer(product: Product, url: string, priceCents?: number 
   const offer: Record<string, unknown> = {
     '@type': 'Offer',
     url,
-    priceCurrency: 'EUR',
+    priceCurrency: currency,
     availability: 'https://schema.org/InStock',
     itemCondition: 'https://schema.org/NewCondition',
     seller: { '@id': ORG_ID },
@@ -299,7 +308,7 @@ export function productOffer(product: Product, url: string, priceCents?: number 
     offer.priceSpecification = {
       '@type': 'UnitPriceSpecification',
       price,
-      priceCurrency: 'EUR',
+      priceCurrency: currency,
       unitCode: product.priceUnit.unitCode,
       unitText: product.priceUnit.unitText,
       valueAddedTaxIncluded: false,
@@ -399,7 +408,7 @@ export function productSchema(raw: ProductSchemaInput | LegacyProductSchemaInput
       url: SITE_URL,
     },
     material: product.material,
-    offers: productOffer(product, url, input.priceCents),
+    offers: productOffer(product, url, input.priceCents, input.currency),
   };
 
   // Never "EU": either a confirmed ISO country from product data or nothing.

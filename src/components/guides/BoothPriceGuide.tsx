@@ -20,13 +20,13 @@ import type { Catalogue } from '@/lib/catalogue/types';
 /**
  * The guide's intro and meta description name the Solo ECO, Solo Flex and
  * Modular XL "from" prices as ICU arguments ({soloEco}, {soloFlex},
- * {modularXl}), filled here from
- * the catalogue so the sentence never carries a stale figure.
+ * {modularXl}), filled here from the catalogue — the view for the locale,
+ * formatted in its currency — so the sentence never carries a stale figure.
  */
 export function guidePriceArgs(catalogue: Catalogue, locale: string, onRequest: string): { soloEco: string; soloFlex: string; modularXl: string } {
   const fmt = (slug: string) => {
     const cents = priceTokenCents(catalogue, undefined, slug);
-    return cents === null ? onRequest : formatPrice(cents, locale);
+    return cents === null ? onRequest : formatPrice(cents, locale, catalogue.currency);
   };
   return { soloEco: fmt('solo-eco'), soloFlex: fmt('solo-flex'), modularXl: fmt('modular-xl') };
 }
@@ -65,7 +65,8 @@ const ISO_CLASSES = [
  * FAQ (rows tagged "guide") → Google reviews → CTA.
  *
  * Every price comes from the catalogue (database, else the committed
- * snapshot — src/lib/catalogue/load.ts): the lowest base price of the models
+ * snapshot — src/lib/catalogue/load.ts), in the locale's currency (euros, or
+ * the locale's own currency once it is active): the lowest base price of the models
  * sold from each page, the glass-backwall base price, the Modular XL
  * extension articles, the transport line within mainland Europe
  * (WEB-…-TRANSPORT-EU) and the installation line — for Modular XL with the
@@ -82,13 +83,13 @@ export default async function BoothPriceGuide({ locale }: BoothPriceGuideProps) 
   const tm = await getTranslations({ locale, namespace: 'manufacturer' });
 
   const guide = getBoothGuide();
-  const catalogue = await getCatalogue();
+  const catalogue = await getCatalogue(locale);
   const models = guide.models
     .map((row) => ({ row, product: PRODUCTS[row.slug] }))
     .filter((m) => m.product && m.product.specs.kind === 'booth');
   type Model = (typeof models)[number];
   const money = (cents: number | null | undefined) =>
-    cents === null || cents === undefined ? t('onRequest') : formatPrice(cents, locale);
+    cents === null || cents === undefined ? t('onRequest') : formatPrice(cents, locale, catalogue.currency);
 
   // Catalogue view per page slug: the models sold from that page and their articles.
   const articlesOf = (slug: string) =>

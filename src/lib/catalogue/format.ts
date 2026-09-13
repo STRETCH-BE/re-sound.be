@@ -5,13 +5,18 @@
 import { localeFullCodes, type Locale } from '@/i18n/config';
 
 import { formatCents } from './pricing';
+import type { CurrencyCode } from './types';
 
 /** BCP 47 tag for a routing locale; unknown locales format as en-BE. */
 export function localeTag(locale: string): string {
   return localeFullCodes[locale as Locale] ?? 'en-BE';
 }
 
-/** Integer cents → currency text for a routing locale ("€ 4.118,75" in nl). */
-export function formatPrice(cents: number, locale: string): string {
-  return formatCents(cents, localeTag(locale));
+/**
+ * Minor units → currency text for a routing locale ("€ 4.118,75" in nl).
+ * Pass the currency of the catalogue view the amount came from
+ * (`catalogue.currency`); it defaults to EUR.
+ */
+export function formatPrice(cents: number, locale: string, currency: CurrencyCode = 'EUR'): string {
+  return formatCents(cents, localeTag(locale), currency);
 }

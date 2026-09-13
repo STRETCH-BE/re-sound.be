@@ -81,6 +81,57 @@
       "importedAt": "2026-09-08T22:45:21.162Z"
     }
   ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "minorUnit": 2,
+      "symbol": "€",
+      "locales": [],
+      "active": true,
+      "sort": 1
+    },
+    {
+      "code": "ISK",
+      "name": "Icelandic króna",
+      "minorUnit": 0,
+      "symbol": "kr.",
+      "locales": [
+        "is"
+      ],
+      "active": false,
+      "sort": 2
+    },
+    {
+      "code": "PLN",
+      "name": "Polish złoty",
+      "minorUnit": 2,
+      "symbol": "zł",
+      "locales": [
+        "pl"
+      ],
+      "active": false,
+      "sort": 3
+    },
+    {
+      "code": "CHF",
+      "name": "Swiss franc",
+      "minorUnit": 2,
+      "symbol": "CHF",
+      "locales": [],
+      "active": false,
+      "sort": 4
+    },
+    {
+      "code": "USD",
+      "name": "US dollar",
+      "minorUnit": 2,
+      "symbol": "$",
+      "locales": [],
+      "active": false,
+      "sort": 5
+    }
+  ],
   "products": [
     {
       "id": "solo-eco",
@@ -854,6 +905,13 @@
         "is": "Lokaður bakveggur"
       },
       "priceCents": 274000,
+      "prices": {
+        "EUR": 274000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -883,6 +941,13 @@
         "is": "Glerbakveggur"
       },
       "priceCents": 301500,
+      "prices": {
+        "EUR": 301500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -912,6 +977,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -941,6 +1013,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -970,6 +1049,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -999,6 +1085,13 @@
         "is": "Drapplitað"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1028,6 +1121,13 @@
         "is": "Kollur"
       },
       "priceCents": 15600,
+      "prices": {
+        "EUR": 15600,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1057,6 +1157,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1086,6 +1193,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1115,6 +1229,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1144,6 +1265,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1173,6 +1301,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1202,6 +1337,13 @@
         "is": "Lokaður bakveggur"
       },
       "priceCents": 411875,
+      "prices": {
+        "EUR": 411875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -1231,6 +1373,13 @@
         "is": "Glerbakveggur"
       },
       "priceCents": 453125,
+      "prices": {
+        "EUR": 453125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -1260,6 +1409,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1289,6 +1445,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1318,6 +1481,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1347,6 +1517,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1376,6 +1553,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1405,6 +1589,13 @@
         "is": "DIN hægri"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1434,6 +1625,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1463,6 +1661,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1492,6 +1697,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1521,6 +1733,13 @@
         "is": "Moving-Kit"
       },
       "priceCents": 35625,
+      "prices": {
+        "EUR": 35625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1550,6 +1769,13 @@
         "is": "Skjáfesting"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1579,6 +1805,13 @@
         "is": "Nettengi (RJ45)"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1608,6 +1841,13 @@
         "is": "Jafnvægiskollur"
       },
       "priceCents": 19375,
+      "prices": {
+        "EUR": 19375,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1637,6 +1877,13 @@
         "is": "Sófi"
       },
       "priceCents": 33125,
+      "prices": {
+        "EUR": 33125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1666,6 +1913,13 @@
         "is": "B1 Egger Flammex plötur"
       },
       "priceCents": 118125,
+      "prices": {
+        "EUR": 118125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -1695,6 +1949,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1724,6 +1985,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1753,6 +2021,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1782,6 +2057,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1811,6 +2093,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1840,6 +2129,13 @@
         "is": "Lokaður bakveggur"
       },
       "priceCents": 411875,
+      "prices": {
+        "EUR": 411875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -1869,6 +2165,13 @@
         "is": "Glerbakveggur"
       },
       "priceCents": 453125,
+      "prices": {
+        "EUR": 453125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -1898,6 +2201,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1927,6 +2237,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1956,6 +2273,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -1985,6 +2309,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2014,6 +2345,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2043,6 +2381,13 @@
         "is": "DIN hægri"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2072,6 +2417,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2101,6 +2453,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2130,6 +2489,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2159,6 +2525,13 @@
         "is": "Moving-Kit"
       },
       "priceCents": 35625,
+      "prices": {
+        "EUR": 35625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2188,6 +2561,13 @@
         "is": "Skjáfesting"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2217,6 +2597,13 @@
         "is": "Nettengi (RJ45)"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2246,6 +2633,13 @@
         "is": "Jafnvægiskollur"
       },
       "priceCents": 19375,
+      "prices": {
+        "EUR": 19375,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2275,6 +2669,13 @@
         "is": "B1 Egger Flammex plötur"
       },
       "priceCents": 118125,
+      "prices": {
+        "EUR": 118125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2304,6 +2705,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2333,6 +2741,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2362,6 +2777,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2391,6 +2813,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2420,6 +2849,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2449,6 +2885,13 @@
         "is": "Lokaður bakveggur"
       },
       "priceCents": 761250,
+      "prices": {
+        "EUR": 761250,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -2478,6 +2921,13 @@
         "is": "Glerbakveggur"
       },
       "priceCents": 836875,
+      "prices": {
+        "EUR": 836875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -2507,6 +2957,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2536,6 +2993,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2565,6 +3029,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2594,6 +3065,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2623,6 +3101,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2652,6 +3137,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2681,6 +3173,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2710,6 +3209,13 @@
         "is": "Án skrifborðs"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2739,6 +3245,13 @@
         "is": "Skrifborð, hvítt RAL 9016"
       },
       "priceCents": 78750,
+      "prices": {
+        "EUR": 78750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2768,6 +3281,13 @@
         "is": "Skrifborð, antrasít RAL 7021"
       },
       "priceCents": 78750,
+      "prices": {
+        "EUR": 78750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2797,6 +3317,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2826,6 +3353,13 @@
         "is": "DIN hægri"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -2855,6 +3389,13 @@
         "is": "Moving-Kit"
       },
       "priceCents": 50000,
+      "prices": {
+        "EUR": 50000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2884,6 +3425,13 @@
         "is": "Nettengi (RJ45)"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2913,6 +3461,13 @@
         "is": "Jafnvægiskollur"
       },
       "priceCents": 19375,
+      "prices": {
+        "EUR": 19375,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2942,6 +3497,13 @@
         "is": "B1 Egger Flammex plötur"
       },
       "priceCents": 228750,
+      "prices": {
+        "EUR": 228750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -2971,6 +3533,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3000,6 +3569,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3029,6 +3605,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3058,6 +3641,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3087,6 +3677,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3116,6 +3713,13 @@
         "is": "Lokaður bakveggur"
       },
       "priceCents": 761250,
+      "prices": {
+        "EUR": 761250,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -3145,6 +3749,13 @@
         "is": "Glerbakveggur"
       },
       "priceCents": 836875,
+      "prices": {
+        "EUR": 836875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -3174,6 +3785,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3203,6 +3821,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3232,6 +3857,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3261,6 +3893,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3290,6 +3929,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3319,6 +3965,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3348,6 +4001,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3377,6 +4037,13 @@
         "is": "Án borðs"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3406,6 +4073,13 @@
         "is": "Flex-borð, hvítt RAL 9016"
       },
       "priceCents": 78750,
+      "prices": {
+        "EUR": 78750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3435,6 +4109,13 @@
         "is": "Flex-borð, antrasít RAL 7021"
       },
       "priceCents": 78750,
+      "prices": {
+        "EUR": 78750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3464,6 +4145,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3493,6 +4181,13 @@
         "is": "DIN hægri"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3522,6 +4217,13 @@
         "is": "Moving-Kit"
       },
       "priceCents": 50000,
+      "prices": {
+        "EUR": 50000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3551,6 +4253,13 @@
         "is": "Nettengi (RJ45)"
       },
       "priceCents": 14375,
+      "prices": {
+        "EUR": 14375,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3580,6 +4289,13 @@
         "is": "Jafnvægiskollur"
       },
       "priceCents": 19375,
+      "prices": {
+        "EUR": 19375,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3609,6 +4325,13 @@
         "is": "Sófi"
       },
       "priceCents": 33125,
+      "prices": {
+        "EUR": 33125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3638,6 +4361,13 @@
         "is": "B1 Egger Flammex plötur"
       },
       "priceCents": 228750,
+      "prices": {
+        "EUR": 228750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -3667,6 +4397,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3696,6 +4433,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3725,6 +4469,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3754,6 +4505,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3783,6 +4541,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3812,6 +4577,13 @@
         "is": "Lokaður bakveggur"
       },
       "priceCents": 1021875,
+      "prices": {
+        "EUR": 1021875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -3841,6 +4613,13 @@
         "is": "Glerbakveggur"
       },
       "priceCents": 1097500,
+      "prices": {
+        "EUR": 1097500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -3870,6 +4649,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3899,6 +4685,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3928,6 +4721,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3957,6 +4757,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -3986,6 +4793,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4015,6 +4829,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4044,6 +4865,13 @@
         "is": "Án borðs"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4073,6 +4901,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4102,6 +4937,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4131,6 +4973,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4160,6 +5009,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4189,6 +5045,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4218,6 +5081,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4247,6 +5117,13 @@
         "is": "Önnur áklæði"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4276,6 +5153,13 @@
         "is": "Án sófa"
       },
       "priceCents": -85625,
+      "prices": {
+        "EUR": -85625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "credit",
       "perSegment": false,
       "perExtension": false,
@@ -4305,6 +5189,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4334,6 +5225,13 @@
         "is": "DIN hægri"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4363,6 +5261,13 @@
         "is": "Moving-Kit"
       },
       "priceCents": 50000,
+      "prices": {
+        "EUR": 50000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4392,6 +5297,13 @@
         "is": "Skjáfesting"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4421,6 +5333,13 @@
         "is": "Nettengi (RJ45)"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4450,6 +5369,13 @@
         "is": "B1 Egger Flammex plötur"
       },
       "priceCents": 281250,
+      "prices": {
+        "EUR": 281250,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4479,6 +5405,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4508,6 +5441,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4537,6 +5477,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4566,6 +5513,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4595,6 +5549,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4624,6 +5585,13 @@
         "is": "Lokaður bakveggur (grunneining, 180 cm djúp)"
       },
       "priceCents": 1378125,
+      "prices": {
+        "EUR": 1378125,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -4653,6 +5621,13 @@
         "is": "Glerbakveggur (grunneining, 180 cm djúp)"
       },
       "priceCents": 1446875,
+      "prices": {
+        "EUR": 1446875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -4682,6 +5657,13 @@
         "is": "+1 eining - heildardýpt 2,7 m, rúmar allt að 6 manns"
       },
       "priceCents": 511875,
+      "prices": {
+        "EUR": 511875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4711,6 +5693,13 @@
         "is": "+2 einingar - heildardýpt 3,6 m, rúmar allt að 8 manns"
       },
       "priceCents": 1023750,
+      "prices": {
+        "EUR": 1023750,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4740,6 +5729,13 @@
         "is": "+3 einingar - heildardýpt 4,5 m, rúmar allt að 10 manns"
       },
       "priceCents": 1535625,
+      "prices": {
+        "EUR": 1535625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -4769,6 +5765,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4798,6 +5801,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4827,6 +5837,13 @@
         "is": "Grátt (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4856,6 +5873,13 @@
         "is": "Ljósgrátt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4885,6 +5909,13 @@
         "is": "Kaffibrúnt"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4914,6 +5945,13 @@
         "is": "Hvítt RAL 9016"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4943,6 +5981,13 @@
         "is": "Antrasít RAL 7021"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -4972,6 +6017,13 @@
         "is": "DIN vinstri (staðlað)"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5001,6 +6053,13 @@
         "is": "DIN hægri"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5030,6 +6089,13 @@
         "is": "Skjáfesting"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5059,6 +6125,13 @@
         "is": "Nettengi (RJ45)"
       },
       "priceCents": 15625,
+      "prices": {
+        "EUR": 15625,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5088,6 +6161,13 @@
         "is": "B1 Egger Flammex plötur"
       },
       "priceCents": 206875,
+      "prices": {
+        "EUR": 206875,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": true,
       "perExtension": false,
@@ -5117,6 +6197,13 @@
         "is": "FR, BE - 1x Type E tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5146,6 +6233,13 @@
         "is": "DE, AT, NL, LUX - 1x Type F tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5175,6 +6269,13 @@
         "is": "CH - 1x Type J tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5204,6 +6305,13 @@
         "is": "DK - 1x Type K tengill"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5233,6 +6341,13 @@
         "is": "UK - 1x Type G tengill, 1x USB-A, 1x USB-C"
       },
       "priceCents": 0,
+      "prices": {
+        "EUR": 0,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "included",
       "perSegment": false,
       "perExtension": false,
@@ -5262,6 +6377,13 @@
         "is": "Interior hljóðdeyfiplata, per sett"
       },
       "priceCents": 38700,
+      "prices": {
+        "EUR": 38700,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -5291,6 +6413,13 @@
         "is": "Divide hljóðskilrúm, per stykki"
       },
       "priceCents": 123800,
+      "prices": {
+        "EUR": 123800,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -5320,6 +6449,13 @@
         "is": "Solid hljóðdeyfiplata, per stykki"
       },
       "priceCents": 40700,
+      "prices": {
+        "EUR": 40700,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "base",
       "perSegment": false,
       "perExtension": false,
@@ -5349,6 +6485,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": 87500,
+      "prices": {
+        "EUR": 87500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5378,6 +6521,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": 124500,
+      "prices": {
+        "EUR": 124500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5407,6 +6557,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5436,6 +6593,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": 124500,
+      "prices": {
+        "EUR": 124500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5465,6 +6629,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": 124500,
+      "prices": {
+        "EUR": 124500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5494,6 +6665,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5523,6 +6701,13 @@
         "is": "Uppsetning af hálfu Re-Sound (grunneining)"
       },
       "priceCents": 164500,
+      "prices": {
+        "EUR": 164500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5552,6 +6737,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5581,6 +6773,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5610,6 +6809,13 @@
         "is": "Uppsetning af hálfu Re-Sound"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5639,6 +6845,13 @@
         "is": "Rafdrifið sit-stand skrifborð"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5668,6 +6881,13 @@
         "is": "Skjáarmur"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5697,6 +6917,13 @@
         "is": "Aukin snúrustjórnun"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5726,6 +6953,13 @@
         "is": "Hilla yfir skrifborði"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5755,6 +6989,13 @@
         "is": "Aukin loftræsting"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5784,6 +7025,13 @@
         "is": "Sérsniðið efni"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5813,6 +7061,13 @@
         "is": "Skrifborð með minnisstöðum"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5842,6 +7097,13 @@
         "is": "Skjáarmar (einn eða tveir)"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5871,6 +7133,13 @@
         "is": "Veggfestur skjár"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5900,6 +7169,13 @@
         "is": "Aukin snúrustjórnun"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5929,6 +7205,13 @@
         "is": "Innbyggðir kollar"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5958,6 +7241,13 @@
         "is": "Sérsniðið efni"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -5987,6 +7277,13 @@
         "is": "Skrifborð með minnisstöðum"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6016,6 +7313,13 @@
         "is": "Skjáarmar (einn eða tveir)"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6045,6 +7349,13 @@
         "is": "Veggfestur skjár"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6074,6 +7385,13 @@
         "is": "Aukin snúrustjórnun"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6103,6 +7421,13 @@
         "is": "Innbyggðir kollar"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6132,6 +7457,13 @@
         "is": "Sérsniðið efni"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6161,6 +7493,13 @@
         "is": "Fundarborð"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6190,6 +7529,13 @@
         "is": "Veggfestur skjár (55\"/65\"/75\")"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6219,6 +7565,13 @@
         "is": "Fjarfundabúnaður"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6248,6 +7601,13 @@
         "is": "Aukin snúrustjórnun"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6277,6 +7637,13 @@
         "is": "Veggfest tafla"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6306,6 +7673,13 @@
         "is": "Sérsniðið efni"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6335,6 +7709,13 @@
         "is": "Uppsetning á aukaeiningu"
       },
       "priceCents": 124500,
+      "prices": {
+        "EUR": 124500,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": true,
@@ -6364,6 +7745,13 @@
         "is": "Flutningur innan meginlands Evrópu"
       },
       "priceCents": 30000,
+      "prices": {
+        "EUR": 30000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6393,6 +7781,13 @@
         "is": "Flutningur utan meginlands Evrópu"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6422,6 +7817,13 @@
         "is": "Flutningur innan meginlands Evrópu"
       },
       "priceCents": 50000,
+      "prices": {
+        "EUR": 50000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6451,6 +7853,13 @@
         "is": "Flutningur utan meginlands Evrópu"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6480,6 +7889,13 @@
         "is": "Flutningur innan meginlands Evrópu"
       },
       "priceCents": 50000,
+      "prices": {
+        "EUR": 50000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6509,6 +7925,13 @@
         "is": "Flutningur utan meginlands Evrópu"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6538,6 +7961,13 @@
         "is": "Flutningur innan meginlands Evrópu"
       },
       "priceCents": 50000,
+      "prices": {
+        "EUR": 50000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6567,6 +7997,13 @@
         "is": "Flutningur utan meginlands Evrópu"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6596,6 +8033,13 @@
         "is": "Flutningur innan meginlands Evrópu"
       },
       "priceCents": 75000,
+      "prices": {
+        "EUR": 75000,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,
@@ -6625,6 +8069,13 @@
         "is": "Flutningur utan meginlands Evrópu"
       },
       "priceCents": null,
+      "prices": {
+        "EUR": null,
+        "ISK": null,
+        "PLN": null,
+        "CHF": null,
+        "USD": null
+      },
       "priceType": "option",
       "perSegment": false,
       "perExtension": false,

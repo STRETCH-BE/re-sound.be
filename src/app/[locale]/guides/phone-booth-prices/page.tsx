@@ -29,8 +29,8 @@ export async function generateMetadata({ params: { locale } }: PageProps): Promi
   if (!isGuideLocale(locale)) return { robots: { index: false, follow: false } };
   const t = await getTranslations({ locale, namespace: 'boothGuide' });
   // The description names the Solo ECO, Solo Flex and Modular XL "from" prices; they
-  // come from the catalogue like every other price on the site.
-  const priceArgs = guidePriceArgs(await getCatalogue(), locale, t('onRequest'));
+  // come from the catalogue view of the locale (its currency) like every other price on the site.
+  const priceArgs = guidePriceArgs(await getCatalogue(locale), locale, t('onRequest'));
   const title = t('title');
   const description = t('description', priceArgs);
 

@@ -10,7 +10,7 @@
  * this function prices whatever codes it is given.
  */
 import { extensionSegments as extensionSegmentsOf, type CatalogueSlice } from './select';
-import type { CatalogueArticle, CatalogueCategory, PricedLine, PricedSelection, Selection } from './types';
+import { MINOR_UNITS, type CatalogueArticle, type CatalogueCategory, type CurrencyCode, type PricedLine, type PricedSelection, type Selection } from './types';
 
 export function priceSelection(selection: Selection, slice: CatalogueSlice): PricedSelection {
   const product = slice.products.find((p) => p.id === selection.productId);
@@ -86,25 +86,33 @@ export function categoryLabel(category: Pick<CatalogueCategory, 'labels' | 'name
 }
 
 /**
- * Integer cents → "€ 4.118,75" / "€ 2.740" for a BCP 47 tag (see
+ * Minor units → "€ 4.118,75" / "€ 2.740" for a BCP 47 tag (see
  * localeFullCodes in src/i18n/config.ts). Two decimals unless the amount is a
- * whole number of euros; never rounded.
+ * whole number of euros; never rounded. Minor-unit aware: ISK has none, so
+ * 450000 prints as "450.000 kr." in is-IS, never with decimals.
  */
-export function formatCents(cents: number, localeTag: string, currency = 'EUR'): string {
-  const whole = cents % 100 === 0;
+export function formatCents(cents: number, localeTag: string, currency: CurrencyCode = 'EUR'): string {
+  const digits = MINOR_UNITS[currency];
+  const scale = 10 ** digits;
+  const whole = cents % scale === 0;
   return new Intl.NumberFormat(localeTag, {
     style: 'currency',
     currency,
-    minimumFractionDigits: whole ? 0 : 2,
-    maximumFractionDigits: whole ? 0 : 2,
-  }).format(cents / 100);
+    minimumFractionDigits: whole ? 0 : digits,
+    maximumFractionDigits: whole ? 0 : digits,
+  }).format(cents / scale);
 }
 
-/** Integer cents → "4118.75" / "2740" — the plain decimal form for JSON-LD and APIs. */
-export function centsToDecimal(cents: number): string {
+/**
+ * Minor units → "4118.75" / "2740" (ISK: "450000") — the plain decimal form
+ * for JSON-LD and APIs.
+ */
+export function centsToDecimal(cents: number, currency: CurrencyCode = 'EUR'): string {
+  const digits = MINOR_UNITS[currency];
+  const scale = 10 ** digits;
   const sign = cents < 0 ? '-' : '';
   const abs = Math.abs(cents);
-  const euros = Math.floor(abs / 100);
-  const rest = abs % 100;
-  return rest === 0 ? `${sign}${euros}` : `${sign}${euros}.${String(rest).padStart(2, '0')}`;
+  const units = Math.floor(abs / scale);
+  const rest = abs % scale;
+  return rest === 0 ? `${sign}${units}` : `${sign}${units}.${String(rest).padStart(digits, '0')}`;
 }

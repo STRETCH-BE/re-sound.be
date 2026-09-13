@@ -11,8 +11,9 @@ import type { CatalogueArticle } from '@/lib/catalogue/types';
 /**
  * Transport and installation figures a booth page prints in its CTA note,
  * read from the catalogue slice the page already loads for the order dialog
- * (loadConfigurator) and formatted for the locale on the server, like the
- * from-price KPI (./boothPrice.ts).
+ * (loadConfigurator) and formatted for the locale on the server, in the
+ * slice's currency (ConfiguratorData.currency), like the from-price KPI
+ * (./boothPrice.ts).
  *
  * A page can sell several catalogue models (Duo: duo-work and duo-flex); each
  * figure is the lowest one among them, the same "from" reading as the KPI.
@@ -37,8 +38,8 @@ const lowest = (articles: CatalogueArticle[]): number | null =>
     null,
   );
 
-export function boothServicePrices(locale: string, slice: Pick<ConfiguratorData, 'products' | 'articles'>): BoothServicePrices {
-  const fmt = (cents: number | null) => (cents === null ? null : formatPrice(cents, locale));
+export function boothServicePrices(locale: string, slice: Pick<ConfiguratorData, 'products' | 'articles' | 'currency'>): BoothServicePrices {
+  const fmt = (cents: number | null) => (cents === null ? null : formatPrice(cents, locale, slice.currency));
   const products = slice.products.filter((p) => p.active);
   const ids = new Set(products.map((p) => p.id));
   const own = slice.articles.filter((a) => a.active && ids.has(a.productId));

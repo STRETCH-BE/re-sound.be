@@ -15,7 +15,7 @@ import {
   validateSelection,
   type CatalogueSlice,
 } from '@/lib/catalogue/select';
-import type { CatalogueArticle, CatalogueCategory, CatalogueProduct, PricedSelection, Selection } from '@/lib/catalogue/types';
+import type { CatalogueArticle, CatalogueCategory, CatalogueProduct, CurrencyCode, PricedSelection, Selection } from '@/lib/catalogue/types';
 import { resolveVat, type VatInput, type VatMode } from '@/lib/order/vat';
 
 /** A priced selection plus the VAT treatment of src/lib/order/vat.ts. */
@@ -158,5 +158,10 @@ export function layoutFor(articles: CatalogueArticle[], locale: string): 'chips'
   return articles.length <= 4 && short ? 'chips' : 'rows';
 }
 
-/** Money for the dialog: catalogue formatter, two decimals unless whole euros. */
-export const money = (cents: number, localeTag: string): string => formatCents(cents, localeTag);
+/**
+ * Money for the dialog: the catalogue formatter in the slice's currency
+ * (ConfiguratorData.currency) — two decimals unless the amount is whole,
+ * none at all for ISK.
+ */
+export const money = (cents: number, localeTag: string, currency: CurrencyCode = 'EUR'): string =>
+  formatCents(cents, localeTag, currency);

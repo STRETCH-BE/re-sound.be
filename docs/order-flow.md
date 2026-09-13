@@ -148,6 +148,23 @@ Every amount the route charges comes from the catalogue (`getCatalogue()` in
 committed `src/data/catalogue.snapshot.json` otherwise). Nothing is priced
 from code or copy.
 
+**Currency (13 September 2026).** The catalogue carries one price column per
+currency (`docs/database.md`, migration 0004: EUR, ISK, PLN, CHF, USD) and a
+`currencies` table that says which site locale is priced in which currency and
+whether it is switched on. Every page reads the catalogue view of its locale
+(`getCatalogue(locale)`: the active currency whose `locales` lists the locale,
+else euros) and shows, and lets the buyer consent to, amounts in that
+currency; an order is therefore placed in the locale's currency. The route
+resolves the same view from the `locale` the dialog sends **before** it
+prices, so `expected.netCents` and the route's net are in the same units, and
+`orders.currency` records the currency the `*_cents` columns are in; both
+e-mails format every amount with it (the internal copy carries a **Currency**
+row). A tab opened before a currency was activated still shows euros: its net
+differs from the route's, so it gets the usual `409 price_changed` with a
+fresh slice — which carries the currency — and the buyer sees the new total
+before anything is stored. Amounts stay integer minor units throughout
+(cents, grosze, rappen; whole krónur for ISK, which has no minor unit).
+
 The request carries a `selection`: `{ productId, quantity, articles: string[] }`
 — the product and the article codes the buyer picked (one per required
 single-choice category such as construction, colour, door or socket; any
@@ -284,8 +301,8 @@ webhook, orders are still stored but nobody is mailed; the `orders` table
 shows them with `internal_email_sent` false.
 
 `GET /api/health/catalogue` answers `{ source, configured, products,
-articles, priceList: { id, validFrom }, loadedAt }` with `Cache-Control:
-no-store` — no prices, no keys. After a deploy, `"source": "database"` is the
+articles, priceList: { id, validFrom }, currencies: [{ code, active, locales }],
+loadedAt }` with `Cache-Control: no-store` — no prices, no keys. After a deploy, `"source": "database"` is the
 proof the site reaches Supabase; `"snapshot"` with `"configured": true` means
 the host did not answer in time, `"configured": false` that the variables are
 missing.

@@ -105,10 +105,10 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'divide', cleanName);
-  // "From" price from the catalogue (database, else snapshot): hero + JSON-LD offer.
-  const priceCents = await getFromPriceCents('divide');
+  // "From" price from the catalogue (database, else snapshot), in the locale's currency: hero + JSON-LD offer.
+  const priceCents = await getFromPriceCents('divide', locale);
   // Models, categories and articles for the order dialog (same catalogue read).
-  const configurator = await loadConfigurator('divide');
+  const configurator = await loadConfigurator('divide', locale);
   const priceFrom = await fromPriceText(locale, 'divide');
 
   // Root + productPage translators for the server-rendered sections.
@@ -153,6 +153,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           category: tData('category.textile'),
           priceCents,
+          currency: configurator.currency,
         })}
       />
       <JsonLd

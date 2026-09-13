@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 
 import { categoryLabel, lineLabel } from '@/lib/catalogue/pricing';
 import { POWER_SOCKET_CATEGORY, type CatalogueSlice } from '@/lib/catalogue/select';
-import type { CatalogueArticle, CatalogueProduct, Selection } from '@/lib/catalogue/types';
+import type { CatalogueArticle, CatalogueProduct, CurrencyCode, Selection } from '@/lib/catalogue/types';
 
 import {
   chooseSingle,
@@ -35,6 +35,8 @@ interface Props {
   priced: PricedOrder | null;
   locale: string;
   localeTag: string;
+  /** The currency every amount of the slice is in (ConfiguratorData.currency) */
+  currency: CurrencyCode;
   onModel: (productId: string) => void;
   onSelect: (next: Selection) => void;
   /** The buyer picked a socket by hand: stop matching it to the country */
@@ -49,6 +51,7 @@ export default function Configurator({
   priced,
   locale,
   localeTag,
+  currency,
   onModel,
   onSelect,
   onSocketTouched,
@@ -58,7 +61,7 @@ export default function Configurator({
   // snapping back to 1, which turned "clear, type 2" into 12.
   const [quantityText, setQuantityText] = useState(String(selection.quantity));
 
-  const money = (cents: number) => formatMoney(cents, localeTag);
+  const money = (cents: number) => formatMoney(cents, localeTag, currency);
   const chosen = new Set(selection.articles);
   const groups = groupsFor(product, slice);
   const unit = t(`units.${product.unit}`);

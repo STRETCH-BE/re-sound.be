@@ -1,4 +1,5 @@
-import type { Catalogue, CatalogueArticle } from './types';
+import { formatCents } from './pricing';
+import type { Catalogue, CatalogueArticle, CurrencyCode } from './types';
 
 /**
  * Price tokens in prose.
@@ -13,23 +14,20 @@ import type { Catalogue, CatalogueArticle } from './types';
  *   {{price:product:duo-flex}}     lowest base price of one product id
  *   {{price:article:RS-MX-AS1}}    the price of one article
  *
- * Every token renders as a currency amount for the locale: "€4,118.75" in
- * English, "€ 4.118,75" in Dutch, "4 118,75 €" in French. Whole euros drop
- * the decimals. A token that cannot be priced renders the `onRequest` text so
- * the sentence still reads, and is reported in `unresolved`.
+ * Every token renders as a currency amount for the locale, in the currency
+ * of the catalogue view it is resolved against (`catalogue.currency` — pass
+ * the view for the page's locale, getCatalogue(locale)): "€4,118.75" in
+ * English, "€ 4.118,75" in Dutch, "4 118,75 €" in French, "450.000 kr." in
+ * Icelandic once ISK is active. Whole amounts drop the decimals. A token
+ * that cannot be priced renders the `onRequest` text so the sentence still
+ * reads, and is reported in `unresolved`.
  */
 
 const TOKEN = /\{\{price:(?:(article|product):)?([A-Za-z0-9-]+)\}\}/g;
 
-/** Currency for prose: two decimals unless the amount is whole euros. */
-export function formatEuroCents(cents: number, localeTag: string): string {
-  const whole = cents % 100 === 0;
-  return new Intl.NumberFormat(localeTag, {
-    style: 'currency',
-    currency: 'EUR',
-    minimumFractionDigits: whole ? 0 : 2,
-    maximumFractionDigits: whole ? 0 : 2,
-  }).format(cents / 100);
+/** Currency for prose: two decimals unless the amount is whole (ISK: never any). */
+export function formatMoney(cents: number, localeTag: string, currency: CurrencyCode = 'EUR'): string {
+  return formatCents(cents, localeTag, currency);
 }
 
 function lowestBase(articles: CatalogueArticle[], productIds: Set<string>): number | null {
@@ -61,7 +59,10 @@ export interface ResolvedText {
   unresolved: string[];
 }
 
-/** Replace every price token in `text`. Text without tokens is returned as is. */
+/**
+ * Replace every price token in `text`, formatting in `catalogue.currency`.
+ * Text without tokens is returned as is.
+ */
 export function resolvePriceTokens(
   text: string,
   catalogue: Catalogue,
@@ -76,7 +77,7 @@ export function resolvePriceTokens(
       unresolved.push(token);
       return options.onRequest;
     }
-    return formatEuroCents(cents, localeTag);
+    return formatMoney(cents, localeTag, catalogue.currency);
   });
   return { text: out, unresolved };
 }

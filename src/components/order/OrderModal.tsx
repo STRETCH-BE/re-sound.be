@@ -23,7 +23,7 @@ import {
   validateSelection,
   type CatalogueSlice,
 } from '@/lib/catalogue/select';
-import type { PricedLine, Selection } from '@/lib/catalogue/types';
+import type { CurrencyCode, PricedLine, Selection } from '@/lib/catalogue/types';
 import {
   COUNTRIES,
   findCountry,
@@ -58,6 +58,13 @@ import { carryOver, money as formatMoney, priceWithVat, withSocketFor } from './
  * line follows the buyer's country (flat rate within mainland Europe, on
  * request for the islands in NON_MAINLAND_EUROPE). Before the country is
  * touched the form is on Belgium, so the mainland line applies.
+ *
+ * Every amount is in the currency of the page locale's catalogue view
+ * (ConfiguratorData.currency): euros, or the locale's own currency once it is
+ * active. The route prices the same view for the `locale` the submit carries
+ * and records the currency on the order; a tab opened before a currency was
+ * switched on still shows euros, so its net differs and the 409 flow above
+ * brings it the fresh slice — with its currency — before anything is stored.
  */
 
 /**
@@ -68,6 +75,13 @@ import { carryOver, money as formatMoney, priceWithVat, withSocketFor } from './
 function canonicalArticles(articles: string[], productId: string, slice: CatalogueSlice, country: string): string[] {
   return canonicalSelection({ productId, quantity: 1, articles }, slice, country).articles;
 }
+
+/**
+ * The slice the route hands back with a 409 / 400: the configurator data of
+ * the route's own currency view. `currency` is optional only because it
+ * arrives as JSON from a route that may predate it.
+ */
+type FreshSlice = CatalogueSlice & { currency?: CurrencyCode };
 
 interface Props {
   open: boolean;
@@ -136,6 +150,9 @@ export default function OrderModal({ open, onClose, slug, productName, configura
   // Duo Flex), every category, and the articles of those models. State, not
   // the prop: the route hands back a fresher slice when the page's is stale.
   const [slice, setSlice] = useState<CatalogueSlice>(configurator);
+  // The currency every priceCents of the slice is in. It travels with the
+  // slice: a fresh one from the route brings its own.
+  const [currency, setCurrency] = useState<CurrencyCode>(configurator.currency);
   const models = slice.products;
   const byCode = useMemo(() => new Map(slice.articles.map((a) => [a.code, a])), [slice.articles]);
 
@@ -341,7 +358,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
   const product = productById(productId, slice);
   if (!open || !mounted || !product) return null;
 
-  const money = (cents: number) => formatMoney(cents, localeTag);
+  const money = (cents: number) => formatMoney(cents, localeTag, currency);
 
   // Step 1 shows what the buyer may choose: the auto categories (transport,
   // installation of extra elements) and their articles are left out — the
@@ -506,8 +523,9 @@ export default function OrderModal({ open, onClose, slug, productName, configura
    * outdated selection also repair the configuration (choices that still
    * exist stay, the rest default) and send the buyer back to step 1.
    */
-  const adoptFreshSlice = (fresh: CatalogueSlice, repair: boolean) => {
+  const adoptFreshSlice = (fresh: FreshSlice, repair: boolean) => {
     setSlice(fresh);
+    if (fresh.currency) setCurrency(fresh.currency);
     const next = productById(productId, fresh) ?? fresh.products[0];
     if (!next) return;
     if (repair) {
@@ -552,7 +570,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
         confirmationSent?: boolean;
         error?: string;
         totals?: { netCents?: number; grossCents: number; vatMode: string };
-        catalogue?: CatalogueSlice;
+        catalogue?: FreshSlice;
         /** The codes the route priced (rule 8 applied), sent with a 409 */
         selection?: { productId?: string; quantity?: number; articles?: unknown };
       };
@@ -610,6 +628,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
         quantity,
         vatMode: serverMode,
         valueCents: serverGross ?? priced.grossCents,
+        currency,
       });
       setResult({ reference: data.reference, emailSent: data.confirmationSent !== false, corrected });
       setStatus('idle');
@@ -698,6 +717,7 @@ export default function OrderModal({ open, onClose, slug, productName, configura
                 priced={priced}
                 locale={locale}
                 localeTag={localeTag}
+                currency={currency}
                 onModel={chooseModel}
                 onSelect={applySelection}
                 onSocketTouched={() => setSocketTouched(true)}

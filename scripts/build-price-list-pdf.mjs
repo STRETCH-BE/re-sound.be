@@ -12,7 +12,11 @@
  * section labels in LABELS below. Every figure comes from the same data the
  * guide page (src/components/guides/BoothPriceGuide.tsx) renders from:
  *
- *   - src/data/catalogue.snapshot.json — the committed catalogue. "From" price
+ *   - src/data/catalogue.snapshot.json — the committed catalogue, read in its
+ *     EUR view: each article's `prices.EUR` (minor units; an older snapshot
+ *     without `prices` carries the same euro cents in `priceCents`), with the
+ *     euro's minor unit from the snapshot's `currencies`. The PDF is always in
+ *     euros, whatever other currencies the catalogue carries. "From" price
  *     per model = lowest active 'base' article of the catalogue products sold
  *     from that product page (lowestBase in src/lib/catalogue/tokens.ts);
  *     glass backwall = lowest 'base' article whose code ends in -BG; Modular XL
@@ -33,7 +37,8 @@
  *     class thresholds (isoSpeechClass). Printed verbatim, as the guide does.
  *   - src/i18n/config.ts — the BCP 47 tag per locale, so prices format exactly
  *     as src/lib/catalogue/format.ts does on the site ("€ 2.740" in nl,
- *     "€2,740" in en, two decimals only when the amount is not whole euros).
+ *     "€2,740" in en, two decimals only when the amount is not whole euros;
+ *     the formatter is minor-unit aware like formatCents in pricing.ts).
  *
  * Both TypeScript files are loaded standalone: transpiled in memory with the
  * project's own `typescript` when it is installed, else imported directly
@@ -67,6 +72,8 @@ const rel = (p) => relative(REPO_ROOT, p);
 /** GUIDE_LOCALES in src/data/guides.ts — the locales the guide page exists in. */
 const LOCALES = ['en', 'nl', 'fr', 'de'];
 const WEBSITE = 're-sound.be';
+/** The PDF is the euro price list: the snapshot's EUR view, whatever else the catalogue is priced in. */
+const PDF_CURRENCY = 'EUR';
 
 // ---------------------------------------------------------------------------
 // Labels — the only hand-written text. Column/section labels, notes and the
@@ -257,14 +264,29 @@ const byProduct = (a, b) => a.sort - b.sort || a.id.localeCompare(b.id);
 const byCategory = (a, b) => a.sort - b.sort || a.key.localeCompare(b.key);
 const byArticle = (a, b) => a.sort - b.sort || a.code.localeCompare(b.code);
 
+/**
+ * The snapshot in its EUR view (catalogueInCurrency in src/lib/catalogue/load.ts):
+ * priceCents = prices.EUR. A snapshot written before `prices` / `currencies`
+ * existed already holds euro cents in priceCents and is read as is.
+ */
 function loadCatalogue() {
   const raw = JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8'));
+  const currencies = Array.isArray(raw.currencies) ? raw.currencies : [];
+  const euro = currencies.find((c) => c && c.code === PDF_CURRENCY) ?? null;
+  const minorUnit = euro && (euro.minorUnit === 0 || euro.minorUnit === 2) ? euro.minorUnit : 2;
+  const inEuro = (a) => {
+    const prices = a.prices && typeof a.prices === 'object' ? a.prices : null;
+    const cents = prices && PDF_CURRENCY in prices ? prices[PDF_CURRENCY] : a.priceCents;
+    return { ...a, priceCents: typeof cents === 'number' ? cents : null };
+  };
   return {
     loadedAt: typeof raw.loadedAt === 'string' ? raw.loadedAt : null,
+    currency: PDF_CURRENCY,
+    minorUnit,
     priceLists: (raw.priceLists ?? []).filter((l) => l.active !== false),
     products: (raw.products ?? []).filter((p) => p.active).sort(byProduct),
     categories: [...(raw.categories ?? [])].sort(byCategory),
-    articles: (raw.articles ?? []).filter((a) => a.active).sort(byArticle),
+    articles: (raw.articles ?? []).filter((a) => a.active).map(inEuro).sort(byArticle),
   };
 }
 
@@ -277,20 +299,23 @@ const lowest = (articles) => articles.reduce((min, a) => (a.priceCents !== null 
 
 // ---------------------------------------------------------------------------
 // Formatting — formatCents in src/lib/catalogue/pricing.ts, with the same tag
-// per locale (localeFullCodes). Intl inserts U+00A0 / U+202F around the
-// currency sign; a plain space renders identically in the PDF.
+// per locale (localeFullCodes). Minor-unit aware: `cents` are minor units of
+// `currency` (2 for the euro; 0 would print whole units, as for ISK). Intl
+// inserts U+00A0 / U+202F around the currency sign; a plain space renders
+// identically in the PDF.
 // ---------------------------------------------------------------------------
 const tidy = (s) => s.replace(/[  ]/g, ' ');
 
-function formatCents(cents, localeTag, currency) {
-  const whole = cents % 100 === 0;
+function formatCents(cents, localeTag, currency, minorUnit = 2) {
+  const factor = 10 ** minorUnit;
+  const whole = cents % factor === 0;
   return tidy(
     new Intl.NumberFormat(localeTag, {
       style: 'currency',
       currency,
-      minimumFractionDigits: whole ? 0 : 2,
-      maximumFractionDigits: whole ? 0 : 2,
-    }).format(cents / 100),
+      minimumFractionDigits: whole ? 0 : minorUnit,
+      maximumFractionDigits: whole ? 0 : minorUnit,
+    }).format(cents / factor),
   );
 }
 
@@ -381,7 +406,8 @@ function collect(catalogue, productsModule) {
   const validFrom = priceList.validFrom ?? priceList.valid_from ?? null;
   if (!validFrom) throw new Error(`price list ${priceList.id} has no valid_from`);
 
-  return { rows, glassLabelArticle, optionProducts, priceList, validFrom, currency: priceList.currency || 'EUR' };
+  // The PDF is the snapshot's EUR view (loadCatalogue), not the price list's own currency field.
+  return { rows, glassLabelArticle, optionProducts, priceList, validFrom, currency: catalogue.currency, minorUnit: catalogue.minorUnit };
 }
 
 // ---------------------------------------------------------------------------
@@ -511,10 +537,10 @@ function sectionTitle(flow, title) {
 
 function buildPdf(locale, localeTag, data, generatedAt) {
   const L = LABELS[locale];
-  const { rows, glassLabelArticle, optionProducts, priceList, validFrom, currency } = data;
+  const { rows, glassLabelArticle, optionProducts, priceList, validFrom, currency, minorUnit } = data;
   const year = validFrom.slice(0, 4);
   const title = fmt(L.title, { year });
-  const money = (cents) => (cents === null || cents === undefined ? L.onRequest : formatCents(cents, localeTag, currency));
+  const money = (cents) => (cents === null || cents === undefined ? L.onRequest : formatCents(cents, localeTag, currency, minorUnit));
   const generated = new Date(generatedAt);
   const metaLine = `${L.priceListRef} ${priceList.id} · ${L.validFrom} ${formatDate(validFrom, localeTag)} · ${L.generatedOn} ${formatDate(generatedAt, localeTag)}`;
 

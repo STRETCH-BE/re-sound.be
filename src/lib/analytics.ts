@@ -20,6 +20,7 @@
  * becomes a searchable filter in the Clarity dashboard.
  */
 
+import { MINOR_UNITS, type CurrencyCode } from '@/lib/catalogue/types';
 import { getConsent } from '@/lib/consent';
 
 type Primitive = string | number | boolean | null | undefined;
@@ -242,16 +243,21 @@ export const analytics = {
   /** Order dialog opened from a product page */
   orderStarted: (product: string) => track('order_started', { product }),
 
-  /** Order placed through the order dialog (no payment: Re-Sound confirms it) */
-  orderSubmitted: (data: { product: string; model?: string; quantity: number; vatMode: string; valueCents: number }) =>
+  /**
+   * Order placed through the order dialog (no payment: Re-Sound confirms it).
+   * `valueCents` is in minor units of `currency` — the currency of the
+   * catalogue view the dialog priced from (EUR, or the locale's own currency
+   * once it is active); ISK has no minor unit, so its value is the amount.
+   */
+  orderSubmitted: (data: { product: string; model?: string; quantity: number; vatMode: string; valueCents: number; currency?: CurrencyCode }) =>
     track('order_submitted', {
       product: data.product,
       // Catalogue product id of the configured model (duo-work, duo-flex …)
       model: data.model,
       quantity: data.quantity,
       vat_mode: data.vatMode,
-      value: data.valueCents / 100,
-      currency: 'EUR',
+      value: data.valueCents / 10 ** MINOR_UNITS[data.currency ?? 'EUR'],
+      currency: data.currency ?? 'EUR',
     }),
 
   /** Language switch — useful for understanding which locales convert */

@@ -5,13 +5,17 @@
  *
  *   npm run catalogue:check
  *
- * 1. Compiles src/lib/catalogue/{types,select,pricing,load}.ts and
+ * 1. Compiles src/lib/catalogue/{types,select,pricing,load,tokens}.ts and
  *    src/lib/db/supabase.ts with tsc to node_modules/.cache (CommonJS, so the
  *    real TypeScript is exercised — nothing is re-implemented here).
  * 2. Prices fixed selections against src/data/catalogue.snapshot.json and
  *    compares with the arithmetic on the 2026 price list.
  * 3. Loads the catalogue through load.ts with the database unconfigured and
  *    with an unreachable host: both must fall back to the snapshot.
+ * 4. Currencies: the snapshot's `currencies` / `prices`, the locale →
+ *    currency rule (currencyForLocale) and the per-currency views
+ *    (catalogueInCurrency) on a fixture with one ISK price; the EUR view must
+ *    be unchanged.
  *
  * Exit 1 on the first failed assertion.
  */
@@ -31,7 +35,7 @@ const require = createRequire(import.meta.url);
 mkdirSync(OUT, { recursive: true });
 // A throw-away tsconfig that extends the project's (so the "@/…" paths resolve)
 // but emits CommonJS into OUT instead of type-checking only.
-const FILES = ['src/lib/catalogue/types.ts', 'src/lib/catalogue/select.ts', 'src/lib/catalogue/pricing.ts', 'src/lib/catalogue/load.ts', 'src/lib/db/supabase.ts', 'src/lib/order/vat.ts'];
+const FILES = ['src/lib/catalogue/types.ts', 'src/lib/catalogue/select.ts', 'src/lib/catalogue/pricing.ts', 'src/lib/catalogue/load.ts', 'src/lib/catalogue/tokens.ts', 'src/lib/db/supabase.ts', 'src/lib/order/vat.ts'];
 const tsconfig = join(OUT, 'tsconfig.json');
 writeFileSync(tsconfig, JSON.stringify({
   extends: join(REPO, 'tsconfig.json'),
@@ -328,6 +332,22 @@ check('formatCents 761250 en-BE keeps two decimals', formatCents(761250, 'en-BE'
 check('formatCents 761250 fr-BE', formatCents(761250, 'fr-BE'), '7 612,50 €');
 check('formatCents credit', formatCents(-85625, 'en-BE'), '-€856.25');
 check('centsToDecimal', [centsToDecimal(411875), centsToDecimal(274000), centsToDecimal(-85625), centsToDecimal(5)], ['4118.75', '2740', '-856.25', '0.05']);
+// Other currencies. ISK has no minor unit: 450000 is 450 000 krónur and must
+// print without decimals whatever Intl's exact spelling ("450.000 kr." on
+// this ICU), so the check reads the digits and the symbol, not the string.
+//   is the no-break space ICU puts between amount and symbol.
+const isk = formatCents(450000, 'is-IS', 'ISK');
+check('formatCents 450000 is-IS ISK: krónur, no decimal separator', [/kr|ISK/i.test(isk), isk.replace(/\D/g, '')], [true, '450000']);
+check('formatCents 450001 is-IS ISK: still no decimals (no minor unit)', formatCents(450001, 'is-IS', 'ISK').replace(/\D/g, ''), '450001');
+check('formatCents 450000 en-BE ISK: same digits in another locale', formatCents(450000, 'en-BE', 'ISK').replace(/\D/g, ''), '450000');
+check('formatCents 411875 pl-PL PLN', formatCents(411875, 'pl-PL', 'PLN'), '4118,75 zł');
+check('formatCents 274000 pl-PL PLN drops the decimals', formatCents(274000, 'pl-PL', 'PLN'), '2740 zł');
+check('formatCents 411875 de-CH CHF', formatCents(411875, 'de-CH', 'CHF'), "CHF 4'118.75");
+check('formatCents 411875 en-US USD', formatCents(411875, 'en-US', 'USD'), '$4,118.75');
+check('formatCents 274000 en-US USD drops the decimals', formatCents(274000, 'en-US', 'USD'), '$2,740');
+check('formatCents: EUR is the default', formatCents(411875, 'nl-BE', 'EUR'), formatCents(411875, 'nl-BE'));
+check('centsToDecimal per currency', [centsToDecimal(450000, 'ISK'), centsToDecimal(-5, 'ISK'), centsToDecimal(411875, 'PLN'), centsToDecimal(411875, 'CHF'), centsToDecimal(5, 'USD'), centsToDecimal(411875, 'EUR')],
+  ['450000', '-5', '4118.75', '4118.75', '0.05', '4118.75']);
 check('lineLabel falls back to the description', lineLabel({ labels: {}, description: 'Glass backwall' }, 'nl'), 'Glass backwall');
 check('lineLabel uses the label', lineLabel({ labels: { nl: 'Glazen achterwand' }, description: 'Glass backwall' }, 'nl'), 'Glazen achterwand');
 
@@ -374,6 +394,61 @@ try {
   console.log(`     (fallback took ${elapsed} ms; warning: ${warnings[0]})`);
 } finally {
   console.warn = origWarn;
+}
+
+// ---------------------------------------------------------------------------
+// 4. Currencies: the snapshot's shape, the locale rule, the currency views
+// ---------------------------------------------------------------------------
+console.log('\n# currencies (src/lib/catalogue/load.ts and tokens.ts against the snapshot)');
+{
+  const { currencyForLocale, catalogueInCurrency } = load;
+  const { CURRENCY_CODES, MINOR_UNITS } = require(join(OUT, 'lib/catalogue/types.js'));
+  const { resolvePriceTokens, formatMoney } = require(join(OUT, 'lib/catalogue/tokens.js'));
+  check('CURRENCY_CODES / MINOR_UNITS', [CURRENCY_CODES, MINOR_UNITS], [['EUR', 'ISK', 'PLN', 'CHF', 'USD'], { EUR: 2, ISK: 0, PLN: 2, CHF: 2, USD: 2 }]);
+
+  // The committed file: five currency rows, only EUR active; prices on every article, EUR = priceCents
+  check('snapshot: the five currency rows in sort order, only EUR active, ISK for is, PLN for pl',
+    snapshot.currencies.map((c) => [c.code, c.active, c.minorUnit, c.locales]), [['EUR', true, 2, []], ['ISK', false, 0, ['is']], ['PLN', false, 2, ['pl']], ['CHF', false, 2, []], ['USD', false, 2, []]]);
+  check('snapshot: every article carries prices with the five keys, EUR = priceCents, the other four empty',
+    snapshot.articles.every((a) => JSON.stringify(Object.keys(a.prices)) === JSON.stringify(CURRENCY_CODES) && a.prices.EUR === a.priceCents && CURRENCY_CODES.slice(1).every((c) => a.prices[c] === null)), true);
+
+  // The loaded catalogue (memoised from the fallback above) is the EUR view
+  const eur = await load.getCatalogue();
+  check('the loaded catalogue is the EUR view and carries the five currencies', [eur.currency, eur.currencies.map((c) => c.code)], ['EUR', CURRENCY_CODES]);
+  check('… every loaded article: priceCents = prices.EUR', eur.articles.every((a) => a.priceCents === a.prices.EUR), true);
+
+  // currencyForLocale: the ACTIVE currency whose locales list the locale, else EUR
+  check('currencyForLocale: ISK inactive (today) → every locale is EUR, is included', ['is', 'pl', 'nl', 'en', 'xx', '', null, undefined].map((l) => currencyForLocale(eur, l)), ['EUR', 'EUR', 'EUR', 'EUR', 'EUR', 'EUR', 'EUR', 'EUR']);
+  const iskActive = { ...eur, currencies: eur.currencies.map((c) => (c.code === 'ISK' ? { ...c, active: true } : c)) };
+  check('currencyForLocale: ISK active → is = ISK, the other locales EUR', ['is', 'IS', 'pl', 'nl', 'xx', null].map((l) => currencyForLocale(iskActive, l)), ['ISK', 'ISK', 'EUR', 'EUR', 'EUR', 'EUR']);
+  check('currencyForLocale: PLN active → pl = PLN (no pl locale on the site today, the data is ready)', currencyForLocale({ currencies: eur.currencies.map((c) => (c.code === 'PLN' ? { ...c, active: true } : c)) }, 'pl'), 'PLN');
+  check('currencyForLocale: no currency rows at all → EUR', currencyForLocale({ currencies: [] }, 'is'), 'EUR');
+
+  // catalogueInCurrency on a fixture: ISK active, one article priced in krónur
+  const fixture = { ...iskActive, articles: eur.articles.map((a) => (a.code === 'RS-SE-BF' ? { ...a, prices: { ...a.prices, ISK: 450000 } } : a)) };
+  const isk = catalogueInCurrency(fixture, 'ISK');
+  check('catalogueInCurrency(ISK): currency set, same rows', [isk.currency, isk.articles.length, isk.products === fixture.products, isk.categories === fixture.categories, isk.currencies === fixture.currencies], ['ISK', fixture.articles.length, true, true, true]);
+  check('… the article with an ISK price is priced in krónur', isk.articles.find((a) => a.code === 'RS-SE-BF').priceCents, 450000);
+  check('… an article without one is on request (null)', isk.articles.find((a) => a.code === 'RS-SF-BF').priceCents, null);
+  check('… prices is carried over untouched', isk.articles.find((a) => a.code === 'RS-SE-BF').prices, { EUR: 274000, ISK: 450000, PLN: null, CHF: null, USD: null });
+  check('… pure: the source catalogue still reads EUR', [fixture.currency, fixture.articles.find((a) => a.code === 'RS-SE-BF').priceCents], ['EUR', 274000]);
+  check('… memoised: the same object for the same catalogue and currency', catalogueInCurrency(fixture, 'ISK') === isk, true);
+  check('… another currency is another view', catalogueInCurrency(fixture, 'PLN') !== isk, true);
+  check('… the EUR view of an EUR catalogue is the catalogue itself', catalogueInCurrency(fixture, 'EUR') === fixture, true);
+  check('… the committed snapshot has no ISK price: everything on request in its ISK view', catalogueInCurrency(eur, 'ISK').articles.every((a) => a.priceCents === null), true);
+  // The public helpers with a locale, ISK inactive: the EUR object itself, EUR amounts
+  check('getCatalogue(is) with ISK inactive is the EUR object', (await load.getCatalogue('is')) === eur, true);
+  check('getConfiguratorData(duo, is).currency, getFromPriceCents(solo-eco, is), getProductPrices(is) are EUR today',
+    [(await load.getConfiguratorData('duo', 'is')).currency, await load.getFromPriceCents('solo-eco', 'is'), (await load.getProductPrices('is')).get('solo-eco')], ['EUR', 274000, 274000]);
+  check('getConfiguratorData(duo) without a locale: EUR', (await load.getConfiguratorData('duo')).currency, 'EUR');
+  // The pricing rules read priceCents only: on the ISK view the base line is 450 000 kr. and every unpriced line is on request
+  const priced = priceSelection(configure('solo-eco', [], 1), isk);
+  check('priceSelection on the ISK view: net 450000 (base only), the unpriced lines on request', [priced.netCents, priced.hasOnRequestItems, priced.lines.find((l) => l.code === 'RS-SE-BF').unitPriceCents], [450000, true, 450000]);
+  // Prose tokens format in the view's currency
+  check('resolvePriceTokens formats in the view currency', resolvePriceTokens('from {{price:solo-eco}}', isk, 'is-IS', { onRequest: 'on request' }), { text: `from ${formatMoney(450000, 'is-IS', 'ISK')}`, unresolved: [] });
+  check('… krónur, no decimals', formatMoney(450000, 'is-IS', 'ISK').replace(/\D/g, ''), '450000');
+  check('… a token without an ISK price is on request', resolvePriceTokens('{{price:solo-flex}}', isk, 'is-IS', { onRequest: 'on request' }), { text: 'on request', unresolved: ['{{price:solo-flex}}'] });
+  check('… the EUR view resolves as before', resolvePriceTokens('{{price:solo-flex}}', eur, 'nl-BE', { onRequest: '?' }).text, '€ 4.118,75');
 }
 
 console.log(failures ? `\n${failures} check(s) FAILED` : '\nall checks passed');

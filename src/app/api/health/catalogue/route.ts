@@ -11,6 +11,9 @@ import { isSupabaseConfigured } from '@/lib/db/supabase';
  * says whether that is because the environment variables are missing or
  * because the host did not answer.
  *
+ * `currencies` lists the catalogue's currencies with their switch and the
+ * locales they apply to (ISK → is, PLN → pl), so "is it on yet" is one call.
+ *
  * No prices, no keys, no row content. Never cached: every call reflects the
  * instance's current 60 s catalogue memo.
  */
@@ -32,6 +35,7 @@ export async function GET() {
       products: catalogue.products.length,
       articles: catalogue.articles.length,
       priceList: list ? { id: list.id, validFrom: list.validFrom } : null,
+      currencies: catalogue.currencies.map((c) => ({ code: c.code, active: c.active, locales: c.locales })),
       loadedAt: catalogue.loadedAt,
     },
     { headers: { 'Cache-Control': 'no-store' } }

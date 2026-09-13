@@ -95,10 +95,10 @@ export default async function Page({ params: { locale } }: PageProps) {
   const tShared = await getTranslations({ locale, namespace: 'boothPage' });
   const tPage = await getTranslations({ locale, namespace: 'productPage' });
   const tHubs = await getTranslations({ locale, namespace: 'hubs.shared' });
-  // "From" price from the catalogue (database, else snapshot): hero KPI + JSON-LD offer.
-  const priceCents = await getFromPriceCents('solo-flex');
+  // "From" price from the catalogue (database, else snapshot), in the locale's currency: hero KPI + JSON-LD offer.
+  const priceCents = await getFromPriceCents('solo-flex', locale);
   // Models, categories and articles for the order dialog (same catalogue read).
-  const configurator = await loadConfigurator('solo-flex');
+  const configurator = await loadConfigurator('solo-flex', locale);
   const fromPrice = await boothFromPrice(locale, 'solo-flex', tHubs('col.fromPrice'));
   // Transport (mainland Europe) and installation figures for the CTA note, from the same slice.
   const services = boothServicePrices(locale, configurator);
@@ -136,6 +136,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           category: tData('category.booth'),
           priceCents,
+          currency: configurator.currency,
         })}
       />
       <JsonLd

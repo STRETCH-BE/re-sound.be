@@ -35,7 +35,7 @@ import 'server-only';
 
 import { createHash } from 'node:crypto';
 
-import type { CatalogueArticle, PricedSelection, Selection } from '@/lib/catalogue/types';
+import type { CatalogueArticle, CurrencyCode, PricedSelection, Selection } from '@/lib/catalogue/types';
 import { createServerClient, ENV_HINT, FETCH_TIMEOUT_MS } from '@/lib/db/supabase';
 import type { VatMode } from '@/lib/order/vat';
 
@@ -51,6 +51,12 @@ export interface PricedFrom {
 /** p_order — the columns of public.orders that place_order() reads. */
 export interface OrderRecord {
   locale: string;
+  /**
+   * orders.currency — the catalogue view the order was priced in, i.e. the
+   * currency of every *_cents column below (EUR, or the locale's own currency
+   * once it is active). Sent explicitly; the column's default is 'EUR'.
+   */
+  currency: CurrencyCode;
   product_id: string;
   website_slug: string | null;
   quantity: number;

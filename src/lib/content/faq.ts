@@ -54,7 +54,8 @@ export function faqByCategory(locale: string): Array<{ category: FaqCategory; it
 
 /**
  * The same entries with their price tokens ({{price:solo-flex}} …) filled in
- * from the catalogue, formatted for the locale. Answers such as FAQ-003 name
+ * from the catalogue view of the locale (its currency), formatted for the
+ * locale. Answers such as FAQ-003 name
  * prices this way so a figure edited in the database is what the page — and
  * the FAQPage JSON-LD built from the same entries — shows.
  */
@@ -69,7 +70,7 @@ export async function faqByCategoryResolved(locale: string): Promise<Array<{ cat
 
 async function resolveFaqPrices(items: FaqItem[], locale: string): Promise<FaqItem[]> {
   if (!items.some((i) => hasPriceTokens(i.answer) || hasPriceTokens(i.question))) return items;
-  const catalogue = await getCatalogue();
+  const catalogue = await getCatalogue(locale);
   const t = await getTranslations({ locale, namespace: 'order' });
   const localeTag = localeFullCodes[locale as Locale] ?? 'en-BE';
   const options = { onRequest: t('summary.onRequest') };

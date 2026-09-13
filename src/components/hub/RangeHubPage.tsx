@@ -11,7 +11,7 @@ import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import { PRODUCTS, isoSpeechClass, type Product } from '@/data/products';
 import { Link } from '@/i18n/navigation';
 import { formatPrice } from '@/lib/catalogue/format';
-import { getProductPrices } from '@/lib/catalogue/load';
+import { getCatalogue, getProductPrices } from '@/lib/catalogue/load';
 import {
   breadcrumbSchema,
   collectionPageSchema,
@@ -35,7 +35,8 @@ const UNIT_KEYS: Record<Product['priceUnit']['unitText'], string> = { 'per m²':
  * cards → why Re-Sound → applications → FAQ → CTA, plus CollectionPage +
  * ItemList + BreadcrumbList + FAQPage JSON-LD. Everything is data-driven
  * from src/data/products.ts and the `hubs.*` message namespaces; the
- * "from" prices come from the catalogue (database, else snapshot).
+ * "from" prices come from the catalogue (database, else snapshot) in the
+ * locale's currency.
  */
 export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps) {
   const hub = HUBS[hubId];
@@ -46,7 +47,8 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
   const tm = await getTranslations({ locale, namespace: 'manufacturer' });
 
   const models = hub.models.map((slug) => PRODUCTS[slug]);
-  const prices = await getProductPrices();
+  // The locale's catalogue view: its from-prices and the currency they are in.
+  const [prices, { currency }] = await Promise.all([getProductPrices(locale), getCatalogue(locale)]);
   const path = hubPath(hub, locale);
   const isBooth = hub.family === 'booth';
 
@@ -72,7 +74,7 @@ export default async function RangeHubPage({ hubId, locale }: RangeHubPageProps)
     if (cents !== null) {
       // "from {amount} {unit}": the amount arrives currency-formatted, so
       // 7 612,50 keeps its cents (an ICU number argument would print 7,612.5).
-      const amount = formatPrice(cents, locale);
+      const amount = formatPrice(cents, locale, currency);
       return ts.has('fromPriceFormatted') ? ts('fromPriceFormatted', { amount, unit: unitOf(p) }) : `${amount} ${unitOf(p)}`;
     }
     if (SHOW_PLACEHOLDER_PRICES) return ts('fromPriceValue', { price: PLACEHOLDER_FROM_PRICE, unit: unitOf(p) }) + ' *';

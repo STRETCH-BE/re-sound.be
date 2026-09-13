@@ -77,8 +77,39 @@ hub, price guide, blog posts, manufacturing page).
    had its own row. Solo Stand, Modular 4, Interior, Divide and Solid
    received no figure: their installation stays "on request" and they carry
    no transport line. Say if any of the four readings is wrong; each is one
-   cell in the `articles` table (`WEB-…-INST`, `WEB-…-INST-EXT`,
+   cell in the `prices` view (`WEB-…-INST`, `WEB-…-INST-EXT`,
    `WEB-…-TRANSPORT-EU`) or one entry in the country set.
+9. **Prices are edited in euros now; ISK, PLN, CHF and USD are ready but
+   empty (13 September).** In the Supabase dashboard the view `prices` shows
+   one row per article with `price_eur` as a plain amount (4118.75, no more
+   cents) next to `price_isk`, `price_pln`, `price_chf` and `price_usd`. The
+   euro figures are unchanged; the four other columns are empty everywhere,
+   because the site never converts a price. A currency reaches the site only
+   when both are true: its column is filled in for every article a buyer can
+   pick, and its row in the `currencies` table has `active` set to true. Until
+   then every locale keeps showing euros (`docs/database.md`, "Currencies").
+   To settle:
+   (a) **ISK.** The Icelandic pages (`/is`) switch to krónur the moment ISK
+   is active: "from" prices, the price guide, the order dialog, the Google
+   offers and the order itself (stored with `currency = ISK`, whole krónur).
+   An article without an ISK price shows "on request" there, so fill in the
+   whole column for the four booths sold online (base, options, installation)
+   before switching it on; transport to Iceland is on request either way
+   (item 8c). Say too whether an Icelandic order is to be invoiced in krónur
+   or in euros — the order record will say what the buyer saw, the invoice is
+   yours.
+   (b) **PLN is wired to a Polish locale (`pl`) that does not exist.** The
+   site has ten languages and Polish is not one of them; adding it is a
+   translation of every page, product text and blog post, not a switch. PLN
+   prices can be typed in now and are shown nowhere until that locale exists.
+   Say if you want Polish pages and it becomes a project.
+   (c) **CHF and USD have no locale.** No page is Swiss or American, so
+   neither currency is attached to anything. If a set of pages should show
+   francs or dollars, name the locales (the `locales` column of
+   `currencies` takes locale codes); otherwise the two columns are a place to
+   keep quote prices and nothing more.
+   (d) **Only whole krónur.** `price_isk` takes no decimals (ISK has no
+   minor unit); the other three take two.
 
 ## B. Confirmed price list (per model)
 
@@ -407,7 +438,10 @@ price on the site comes from it. These came out of the import:
     reviews captured on 6 September 2026 (`content/google-reviews.json`);
     with it, `npm run build` refreshes them and the weekly cron
     (`vercel.json`, Mondays 06:00 UTC, `/api/cron/google-reviews`) revalidates
-    the cached reviews. The key is never committed.
+    the cached reviews. The key is never committed. Both are set and working
+    since 13 September. The cron secret was pasted into a chat that day:
+    replace it with a fresh value (`openssl rand -hex 32`) in Vercel and
+    wherever the cron is called by hand, then redeploy.
 
 16. **Google place id — resolved 13 September.** The first live run of
     `scripts/fetch-google-reviews.mjs` matched the listing "Re-Sound"

@@ -16,7 +16,7 @@ import { faqForResolved, mergeFaqEntries } from '@/lib/content/faq';
 import specs from '@/data/specs/solid';
 import { pickMessages } from '@/lib/i18n-messages';
 import { fromPriceText } from '@/components/product/boothPrice';
-import { getFromPriceCents } from '@/lib/catalogue/load';
+import { getCatalogue, getFromPriceCents } from '@/lib/catalogue/load';
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
 import {
   breadcrumbSchema,
@@ -101,10 +101,12 @@ export default async function Page({ params: { locale } }: PageProps) {
 
   const tData = await getTranslations({ locale, namespace: 'productData' });
   const crumbs = await productCrumbs(locale, 'solid', cleanName);
-  // "From" price from the catalogue (database, else snapshot): hero + JSON-LD
+  // "From" price from the catalogue (database, else snapshot), in the locale's currency: hero + JSON-LD
   // offer. Undefined/null while no catalogue product carries websiteSlug 'solid'.
   const priceFrom = await fromPriceText(locale, 'solid');
-  const priceCents = await getFromPriceCents('solid');
+  const priceCents = await getFromPriceCents('solid', locale);
+  // The currency of that view (euros, or the locale's own once active), for the JSON-LD offer.
+  const { currency } = await getCatalogue(locale);
 
   // Root + productPage translators for the server-rendered sections.
   const t = await getTranslations({ locale });
@@ -158,6 +160,7 @@ export default async function Page({ params: { locale } }: PageProps) {
           description,
           category: tData('category.textile'),
           priceCents,
+          currency,
         })}
       />
       <JsonLd

@@ -4,7 +4,7 @@ import { loadConfigurator } from '@/components/order/loadConfigurator';
 import { getCatalogue } from '@/lib/catalogue/load';
 import { formatCents, lineLabel, priceSelection } from '@/lib/catalogue/pricing';
 import { articlesFor, canonicalSelection, productById, TRANSPORT_CATEGORY, validateSelection } from '@/lib/catalogue/select';
-import type { CatalogueArticle, PricedLine, PricedSelection, Selection } from '@/lib/catalogue/types';
+import type { CatalogueArticle, CurrencyCode, PricedLine, PricedSelection, Selection } from '@/lib/catalogue/types';
 import {
   clientHash,
   idempotencyKey,
@@ -67,6 +67,14 @@ import { defaultLocale, locales, localeFullCodes, type Locale } from '@/i18n/con
  * tampered auto line never sets the price. Within mainland Europe transport
  * is the flat line; for the islands in NON_MAINLAND_EUROPE the line is on
  * request and quoted with the confirmation.
+ *
+ * Currency: the catalogue is read in the view of the `locale` the dialog
+ * sends (euros, or the locale's own currency once it is active), BEFORE
+ * pricing, so `expected.netCents` and the route's net are in the same units.
+ * The currency is stored on the order (orders.currency) and formats every
+ * amount in both e-mails. A dialog still showing euros after a currency was
+ * switched on has a different net and lands in the 409 flow like any other
+ * stale page.
  */
 
 export const runtime = 'nodejs';
@@ -243,6 +251,7 @@ function renderLines(
   articles: Map<string, CatalogueArticle>,
   locale: string,
   localeTag: string,
+  currency: CurrencyCode,
   t: Translator
 ): RenderedLine[] {
   const included = t('order.summary.included');
@@ -260,8 +269,8 @@ function renderLines(
       code: line.code,
       label,
       qty: line.qty,
-      unit: formatCents(line.unitPriceCents, localeTag),
-      total: formatCents(line.lineTotalCents, localeTag),
+      unit: formatCents(line.unitPriceCents, localeTag, currency),
+      total: formatCents(line.lineTotalCents, localeTag, currency),
     };
   });
 }
@@ -328,6 +337,8 @@ interface EmailContext {
   vatFormatValid: boolean;
   locale: string;
   localeTag: string;
+  /** The currency every amount of the order is in (the catalogue view it was priced from) */
+  currency: CurrencyCode;
 }
 
 const shell = (title: string, heading: string, subtitle: string, inner: string) => `<!DOCTYPE html>
@@ -376,13 +387,13 @@ function modelRows(ctx: EmailContext, t: Translator): string {
 }
 
 function totalsRows(ctx: EmailContext, t: Translator): string {
-  const { totals, localeTag } = ctx;
+  const { totals, localeTag, currency } = ctx;
   return `<tr><td colspan="3" style="padding:12px 0 4px;color:#666;font-size:14px;">${esc(t('order.summary.net'))}</td>
-<td style="padding:12px 0 4px;text-align:right;color:#333;font-size:14px;white-space:nowrap;">${esc(formatCents(totals.netCents, localeTag))}</td></tr>
+<td style="padding:12px 0 4px;text-align:right;color:#333;font-size:14px;white-space:nowrap;">${esc(formatCents(totals.netCents, localeTag, currency))}</td></tr>
 <tr><td colspan="3" style="padding:4px 0;color:#666;font-size:14px;">${esc(ctx.vatLabel)}</td>
-<td style="padding:4px 0;text-align:right;color:#333;font-size:14px;white-space:nowrap;">${esc(formatCents(totals.vatCents, localeTag))}</td></tr>
+<td style="padding:4px 0;text-align:right;color:#333;font-size:14px;white-space:nowrap;">${esc(formatCents(totals.vatCents, localeTag, currency))}</td></tr>
 <tr><td colspan="3" style="padding:10px 0 0;color:#0d3a5c;font-size:16px;font-weight:700;">${esc(t('order.summary.total'))}</td>
-<td style="padding:10px 0 0;text-align:right;color:#0d3a5c;font-size:16px;font-weight:700;white-space:nowrap;">${esc(formatCents(totals.grossCents, localeTag))}</td></tr>`;
+<td style="padding:10px 0 0;text-align:right;color:#0d3a5c;font-size:16px;font-weight:700;white-space:nowrap;">${esc(formatCents(totals.grossCents, localeTag, currency))}</td></tr>`;
 }
 
 function noticeBlock(text: string): string {
@@ -440,6 +451,7 @@ function internalEmail(ctx: EmailContext, t: Translator): { html: string; text: 
     ['Reference', ctx.stored ? reference : `${reference} (fallback - not confirmed in the database)`],
     ['Date', ctx.timestamp],
     ['Priced from', ctx.storage.pricedFrom],
+    ['Currency', ctx.currency],
     ['Language', ctx.locale],
     ['Model', `${ctx.productName} (${ctx.baseCode})`],
     ['Quantity', String(ctx.priced.quantity)],
@@ -503,9 +515,9 @@ style="display:inline-block;background:#197FC7;color:#ffffff;text-decoration:non
     '',
     ctx.productName,
     ...ctx.lines.map(textLine),
-    `  Net: ${formatCents(totals.netCents, ctx.localeTag)}`,
-    `  ${ctx.vatLabel}: ${formatCents(totals.vatCents, ctx.localeTag)}`,
-    `  Total: ${formatCents(totals.grossCents, ctx.localeTag)}`,
+    `  Net: ${formatCents(totals.netCents, ctx.localeTag, ctx.currency)}`,
+    `  ${ctx.vatLabel}: ${formatCents(totals.vatCents, ctx.localeTag, ctx.currency)}`,
+    `  Total: ${formatCents(totals.grossCents, ctx.localeTag, ctx.currency)}`,
     '',
     t(ctx.transportNoteKey),
     totals.hasOnRequestItems ? t('order.summary.onRequestNote') : '',
@@ -558,9 +570,9 @@ ${esc(customer.street)}<br>${esc(`${customer.postalCode} ${customer.city}`)}<br>
     ctx.productName,
     ...modelLines,
     ...ctx.lines.map(textLine),
-    `  ${t('order.summary.net')}: ${formatCents(totals.netCents, ctx.localeTag)}`,
-    `  ${ctx.vatLabel}: ${formatCents(totals.vatCents, ctx.localeTag)}`,
-    `  ${t('order.summary.total')}: ${formatCents(totals.grossCents, ctx.localeTag)}`,
+    `  ${t('order.summary.net')}: ${formatCents(totals.netCents, ctx.localeTag, ctx.currency)}`,
+    `  ${ctx.vatLabel}: ${formatCents(totals.vatCents, ctx.localeTag, ctx.currency)}`,
+    `  ${t('order.summary.total')}: ${formatCents(totals.grossCents, ctx.localeTag, ctx.currency)}`,
     '',
     totals.vatMode === 'reverse-charge' ? t('order.vat.reverseChargeNote') : '',
     totals.vatMode === 'export' ? t('order.vat.exportNote') : '',
@@ -639,7 +651,12 @@ export async function POST(request: NextRequest) {
     // loader falls back to the committed snapshot on its own; it never throws.
     const selection = readSelection(body.selection);
     if (!selection) return NextResponse.json({ error: 'invalid_product' }, { status: 400 });
-    const catalogue = await getCatalogue();
+    // The locale selects the currency view the order is priced in — the same
+    // view the page's dialog showed — so it is resolved before the read.
+    const submittedLocale = clean(body.locale, 8);
+    const locale = (locales as readonly string[]).includes(submittedLocale) ? submittedLocale : defaultLocale;
+    const localeTag = localeFullCodes[locale as Locale] ?? 'en-BE';
+    const catalogue = await getCatalogue(locale);
     const expected = readExpected(body.expected);
     const valid = validateSelection(selection, catalogue);
     if (!valid.ok) {
@@ -651,7 +668,7 @@ export async function POST(request: NextRequest) {
       const page = productById(selection.productId, catalogue)?.websiteSlug ?? null;
       if (expected && page && OUTDATED_REASONS.test(valid.reason)) {
         return NextResponse.json(
-          { error: 'selection_outdated', catalogue: await loadConfigurator(page) },
+          { error: 'selection_outdated', catalogue: await loadConfigurator(page, locale) },
           { status: 400 }
         );
       }
@@ -752,8 +769,9 @@ export async function POST(request: NextRequest) {
 
     // The buyer consented to the dialog's net. The VAT part may legitimately
     // differ (VIES answered differently at submit time); the net may not: a
-    // different net means the catalogue changed under the page. Nothing is
-    // stored or mailed until the buyer has seen and accepted the new amount.
+    // different net means the catalogue changed under the page — a price, or
+    // the currency the locale is priced in. Nothing is stored or mailed until
+    // the buyer has seen and accepted the new amount.
     if (expected && expected.netCents !== totals.netCents && priced.product.websiteSlug) {
       console.warn('[order] price changed since the page was rendered:', expected.netCents, '->', totals.netCents);
       return NextResponse.json(
@@ -771,15 +789,12 @@ export async function POST(request: NextRequest) {
           // rules lag behind the route's adopts them and converges after one
           // round trip instead of resubmitting the same selection.
           selection: canonical,
-          catalogue: await loadConfigurator(priced.product.websiteSlug),
+          catalogue: await loadConfigurator(priced.product.websiteSlug, locale),
         },
         { status: 409 }
       );
     }
 
-    const submittedLocale = clean(body.locale, 8);
-    const locale = (locales as readonly string[]).includes(submittedLocale) ? submittedLocale : defaultLocale;
-    const localeTag = localeFullCodes[locale as Locale] ?? 'en-BE';
     const [localeMessages, englishMessages] = await Promise.all([loadMessages(locale), loadMessages('en')]);
     const t = makeTranslator(localeMessages, englishMessages);
     const tEn = makeTranslator(englishMessages, englishMessages);
@@ -833,6 +848,7 @@ export async function POST(request: NextRequest) {
     const key = idempotencyKey({ email, selection: canonical, grossCents: totals.grossCents, customer: customerBlock, now });
     const record: OrderRecord = {
       locale,
+      currency: catalogue.currency,
       product_id: priced.product.id,
       website_slug: priced.product.websiteSlug,
       quantity: priced.quantity,
@@ -901,7 +917,7 @@ export async function POST(request: NextRequest) {
       timestamp,
       priced,
       totals,
-      lines: renderLines(priced.lines, articlesByCode, locale, localeTag, t),
+      lines: renderLines(priced.lines, articlesByCode, locale, localeTag, catalogue.currency, t),
       customer,
       productName,
       baseCode,
@@ -911,10 +927,13 @@ export async function POST(request: NextRequest) {
       vatFormatValid,
       locale,
       localeTag,
+      currency: catalogue.currency,
     };
+    // English labels and en-BE number formatting for Re-Sound's copy; the
+    // amounts stay in the order's currency.
     const internalCtx: EmailContext = {
       ...ctx,
-      lines: renderLines(priced.lines, articlesByCode, 'en', 'en-BE', tEn),
+      lines: renderLines(priced.lines, articlesByCode, 'en', 'en-BE', catalogue.currency, tEn),
       localeTag: 'en-BE',
       vatLabel: vatLabelIn(tEn),
     };
@@ -958,7 +977,8 @@ export async function POST(request: NextRequest) {
       'confirmed:',
       confirmed,
       'catalogue:',
-      catalogue.source
+      catalogue.source,
+      catalogue.currency
     );
 
     // The order exists when it is in the database or the internal e-mail

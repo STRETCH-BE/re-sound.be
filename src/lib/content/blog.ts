@@ -91,7 +91,8 @@ function parse(locale: string, file: string): ContentPost | null {
 
 /**
  * Fill in the price tokens ({{price:solo-flex}} …) a post carries, from the
- * catalogue, formatted for the post's locale. Posts without tokens are
+ * catalogue view of the post's locale (its currency), formatted for that
+ * locale. Posts without tokens are
  * returned as they are. Call this on anything that reaches a page: the
  * meta description, the lead, the body and the FAQ front matter all may
  * mention a price, and a figure edited in the database must show up here
@@ -100,7 +101,7 @@ function parse(locale: string, file: string): ContentPost | null {
 export async function resolveContentPost(post: ContentPost): Promise<ContentPost> {
   const texts = [post.title, post.h1, post.description, post.body, ...post.faq.flatMap((f) => [f.question, f.answer])];
   if (!texts.some(hasPriceTokens)) return post;
-  const catalogue = await getCatalogue();
+  const catalogue = await getCatalogue(post.locale);
   const t = await getTranslations({ locale: post.locale, namespace: 'order' });
   const localeTag = localeFullCodes[post.locale as Locale] ?? 'en-BE';
   const options = { onRequest: t('summary.onRequest') };

@@ -8,7 +8,7 @@ STRETCH one:
 | Project | `re-sound.be` — ref `toroqgofzsanxcisdbkn`, region eu-central-1 (Frankfurt) |
 | Organisation | STRETCH-BE's Org (the same one as the stretch-website project) |
 | Dashboard | https://supabase.com/dashboard/project/toroqgofzsanxcisdbkn |
-| Schema | `supabase/migrations/0001_catalogue_and_orders.sql`, `0002_place_order_conflict_safe.sql` (both applied), `0003_transport_and_installation_prices.sql` (12 September 2026: `auto` categories, `per_extension`, transport and installation prices — to apply) |
+| Schema | `supabase/migrations/0001_catalogue_and_orders.sql`, `0002_place_order_conflict_safe.sql`, `0003_transport_and_installation_prices.sql` (12 September 2026: `auto` categories, `per_extension`, transport and installation prices), `0004_currencies.sql` (13 September 2026: prices in euros instead of cents, one column per currency, the `currencies` table and the `prices` view) — all applied |
 | Data | `supabase/seed/booths-2026.sql` (applied) — generated from the 2026 booth price list |
 
 Two things live there: **the catalogue** (every product, option and price the
@@ -25,13 +25,15 @@ the same way; this mirrors that pattern with the site's own tables.
 | `price_lists` | one row per published list: name, currency, valid-from date, commercial terms, packaging table, contacts | anyone with the anon key | Michael, in the dashboard |
 | `products` | the 7 booth models from the list plus Interior, Divide and Solid (priced from the site, not the list); which product page sells each (`website_slug`) | anyone | Michael |
 | `categories` | the 12 configurator sections (construction, colours, table, door, socket, accessories, fire protection, installation) and whether each is single- or multi-choice, plus 2 `auto` categories (transport, installation of extra elements) whose lines the site adds by rule | anyone | Michael |
-| `articles` | one row per article number: description, price in cents, price type, defaults, translations; `per_extension` marks the Modular XL extra-element installation line | anyone | Michael |
+| `articles` | one row per article number: description, price in euros (`price_eur`, decimal) and, when filled in, in krónur, złoty, francs and dollars (`price_isk`, `price_pln`, `price_chf`, `price_usd`), price type, defaults, translations; `per_extension` marks the Modular XL extra-element installation line. `price_cents` is a read-only mirror of `price_eur` | anyone | Michael, in the view `prices` |
+| `prices` (view) | the editing surface for prices: one row per article, the five currency columns side by side — a change here is a change in `articles` | anyone | Michael |
+| `currencies` | the five currencies (EUR, ISK, PLN, CHF, USD): which site locales are priced in each and whether it is switched on (`active`) | anyone | Michael |
 | `supplier_articles` | **internal** — purchase prices and margins from the supplier cross-reference | nobody but the service role | never from the site |
 | `orders` | one row per order: buyer, delivery address, VAT treatment, totals, status, whether the e-mails went out | nobody but the service role | the site, through `place_order()` |
 | `order_lines` | the lines of each order as they were shown to the buyer, with article codes | nobody but the service role | the site, through `place_order()` |
 
-Row-level security is on for every table. The anon key can read the four
-catalogue tables and nothing else. Orders are written by the database function
+Row-level security is on for every table. The anon key can read the five
+catalogue tables (and the `prices` view) and nothing else. Orders are written by the database function
 `place_order()`, which the site calls with the anon key: it assigns the
 reference `RS-2026-0001, 0002 …` from a sequence and writes the lines in the
 same transaction. The same submission sent twice (a retry after a timeout)
@@ -64,8 +66,40 @@ and otherwise keeps the committed copy. Product, hub and guide pages
 regenerate at most once an hour (ISR), so an edit in the dashboard is live on
 the pages within the hour and in the order dialog on the next page load.
 
-`GET /api/health/catalogue` says which source the running site is using and
-how many products and articles it sees. No prices, no secrets.
+`GET /api/health/catalogue` says which source the running site is using,
+how many products and articles it sees and which currencies are active. No
+prices, no secrets.
+
+### Currencies (13 September 2026)
+
+Every price is stored in euros and may also be stored in Icelandic krónur,
+Polish złoty, Swiss francs and US dollars — five columns on the same row,
+each typed by hand. The site never converts: a currency column that is
+empty means "no price in that currency".
+
+Which currency a visitor sees is decided by the `currencies` table:
+
+| `code` | `locales` | `active` | What it means |
+|---|---|---|---|
+| `EUR` | (empty) | true | the default: every locale not claimed by an active currency |
+| `ISK` | `{is}` | false | the Icelandic pages show krónur once this is true |
+| `PLN` | `{pl}` | false | ready for a Polish locale; the site has none yet (see `docs/needs-michael.md`) |
+| `CHF` | (empty) | false | no locale is wired to it; add one to `locales` to use it |
+| `USD` | (empty) | false | idem |
+
+The rule, in `currencyForLocale()` (`src/lib/catalogue/load.ts`): a locale's
+currency is the **active** currency whose `locales` contains it, otherwise
+EUR. Every page and the order dialog ask the catalogue for their locale's
+view (`getCatalogue(locale)`), so on `/is` with ISK active every "from"
+price, the guide, the order dialog, the JSON-LD offers and the order itself
+are in krónur; an article without an ISK price is "on request" there. The
+order stores its currency in `orders.currency`. Inside the code money stays
+in integer minor units (cents, grosze, rappen; a króna has none), so the
+field names `priceCents`, `netCents` … are unchanged.
+
+Switching a currency on is safe only when every article the buyers can
+choose has a price in it — check the `prices` view for empty cells in that
+column first.
 
 ### Prices inside sentences
 
@@ -127,16 +161,18 @@ deploy is needed.
 
 | Want to … | Do |
 |---|---|
-| Change a price | `articles` → find the row by `code` → edit `price_cents` (integer cents: € 4 118,75 = 411875). Negative for a credit. Empty = on request. |
+| Change a price | `prices` (a view, listed with the tables) → find the row by `code` → edit `price_eur` in euros with a decimal point (4118.75). Negative for a credit. Empty = on request. The cents mirror `price_cents` on `articles` follows by itself and is not editable. |
+| Price an article in ISK, PLN, CHF or USD | `prices` → the same row → `price_isk` (whole krónur, no decimals), `price_pln`, `price_chf` or `price_usd`. Typed by hand, never converted by the site; empty = no price in that currency, shown as on request once the currency is active. |
+| Show a currency on the site | `currencies` → set `active` true on the row (ISK is wired to the `is` locale, PLN to `pl`; CHF and USD have no locale yet — put locale codes in `locales` first, e.g. `{de,fr}` would price the German and French pages in francs). Do this only when every orderable article of that currency's column is filled in. Setting it back to false returns those pages to euros. |
 | Take an option off the site | `articles` → set `active` to false. Never delete a row: old orders refer to it. |
-| Add an option | `articles` → insert a row with the next article code, its `product_id`, `category_key`, `description`, `price_cents`, `price_type` (`base`, `included`, `option` or `credit`) and a `sort` value. |
+| Add an option | `articles` → insert a row with the next article code, its `product_id`, `category_key`, `description`, `price_eur`, `price_type` (`base`, `included`, `option` or `credit`) and a `sort` value. |
 | Change which choice is pre-selected | `articles` → `is_default` (one per product and single-choice category). |
 | Sell a model from a product page | `products` → set `website_slug` to the page (`solo-eco`, `solo-flex`, `duo`, `modular-xl`, `interior`, `divide`, `solid`). Solo Stand and Modular 4 are in the catalogue but have no page yet, so they carry no slug. |
-| Change the installation price | `articles` → the `WEB-…-INST` row of that product → `price_cents` (Michael, 12 Sep 2026: Solo ECO 87500, Solo Flex 124500, Duo Work and Duo Flex 124500, Modular XL 164500 for the main module). Modular XL's extra elements are the separate row `WEB-MODULAR-XL-INST-EXT` (124500 per element, `per_extension` true): it is added to an order automatically when installation is chosen and an extension is selected, at quantity × number of extra elements. Solo Stand, Modular 4, Interior, Divide and Solid are still on request (empty `price_cents`). |
-| Change a transport price | `articles` → `WEB-<MODEL>-TRANSPORT-EU` of that product → `price_cents` (12 Sep 2026: Solo ECO 30000, Solo Flex 50000, Duo Work and Duo Flex 50000, Modular XL 75000, per unit). The row is in the `transport` category (`select_mode` `auto`), so the buyer never picks it: the site adds it to every order delivered within mainland Europe. `WEB-<MODEL>-TRANSPORT-XX` (empty `price_cents`) is the line for the islands, on request. A product without transport rows (Interior, Divide, Solid …) gets no transport line at all. |
+| Change the installation price | `prices` → the `WEB-…-INST` row of that product → `price_eur` (Michael, 12 Sep 2026: Solo ECO 875, Solo Flex 1245, Duo Work and Duo Flex 1245, Modular XL 1645 for the main module). Modular XL's extra elements are the separate row `WEB-MODULAR-XL-INST-EXT` (1245 per element, `per_extension` true): it is added to an order automatically when installation is chosen and an extension is selected, at quantity × number of extra elements. Solo Stand, Modular 4, Interior, Divide and Solid are still on request (empty `price_eur`). |
+| Change a transport price | `prices` → `WEB-<MODEL>-TRANSPORT-EU` of that product → `price_eur` (12 Sep 2026: Solo ECO 300, Solo Flex 500, Duo Work and Duo Flex 500, Modular XL 750, per unit). The row is in the `transport` category (`select_mode` `auto`), so the buyer never picks it: the site adds it to every order delivered within mainland Europe. `WEB-<MODEL>-TRANSPORT-XX` (empty `price_eur`) is the line for the islands, on request. A product without transport rows (Interior, Divide, Solid …) gets no transport line at all. |
 | Add a country to the non-mainland list | Not in the database: `NON_MAINLAND_EUROPE` in `src/lib/catalogue/select.ts` (GB, XI, IE, MT, CY, IS today, ISO 3166-1 alpha-2). Add the code there; the order form's `…-TRANSPORT-XX` line then applies to that country. Needs a deploy. |
 | Translate a label | `articles.labels` / `categories.labels`: a JSON object keyed by locale, e.g. `{"nl": "Gesloten achterwand", "fr": "Paroi arrière pleine"}`. A missing locale falls back to the English `description`. Every article on the 2026 list is translated into the nine other site languages already; the source of those translations is `content/catalogue-labels.json` (keyed by the English text, so a new list that keeps the descriptions keeps the translations). |
-| Price a page add-on | The three booth pages advertise add-ons that are not on the 2026 list (wall-mounted display, whiteboard, cable management …). They are in `articles` as `WEB-<model>-<addon>` rows in the "Page add-ons" group, on request. Give them a `price_cents`, or set `active` false to stop offering them. Two are inactive already because the list covers them (the Solo Flex sit-stand table, the Duo desk). |
+| Price a page add-on | The three booth pages advertise add-ons that are not on the 2026 list (wall-mounted display, whiteboard, cable management …). They are in `articles` as `WEB-<model>-<addon>` rows in the "Page add-ons" group, on request. Give them a `price_eur`, or set `active` false to stop offering them. Two are inactive already because the list covers them (the Solo Flex sit-stand table, the Duo desk). |
 
 Prices are read again within a minute by the order dialog and within an hour
 by the pages.
@@ -159,7 +195,9 @@ option sales totals). It produces:
 - `supabase/seed/<list>.sql` — the public catalogue. Run it in the dashboard
   (**SQL editor**). Every statement is an upsert: existing article codes are
   updated in place, new ones added. Rows that vanished from the workbook are
-  **not** deleted; set them inactive by hand.
+  **not** deleted; set them inactive by hand. The seed writes `price_eur`
+  (euros) and leaves the other currency columns alone, so ISK, PLN, CHF and
+  USD prices typed in the dashboard survive a re-import.
 - `~/re-sound-internal/supplier-<year>.sql` — purchase prices and margins.
   Run it in the SQL editor too, and keep the file out of the repository.
 
@@ -185,7 +223,8 @@ is stored; a later price change never rewrites an old order.
 | `reference` | `RS-2026-0001`, sequential per year |
 | `status` | `received` → `confirmed` → `in_production` → `shipped`, or `cancelled`. Michael moves it in the dashboard. |
 | `config` | the exact selection submitted: product, quantity, article codes |
-| `vat_mode`, `vat_rate`, `net_cents`, `vat_cents`, `gross_cents` | the VAT treatment and totals as priced by the server |
+| `currency` | the currency the order was priced in (`EUR`, or the locale's active currency, e.g. `ISK` on the Icelandic pages) |
+| `vat_mode`, `vat_rate`, `net_cents`, `vat_cents`, `gross_cents` | the VAT treatment and totals as priced by the server, in minor units of `currency` (cents; whole krónur for ISK) |
 | `vat_number_status` | `valid` (VIES confirmed), `invalid`, `unverified` (VIES did not answer), `not_eligible` |
 | `has_on_request_items` | at least one line without a price — the total is not final |
 | `internal_email_sent`, `customer_email_sent` | which of the two e-mails went out; an order with `internal_email_sent` false was stored but not mailed and needs a look |

@@ -4,10 +4,14 @@
  * committed snapshot (src/data/catalogue.snapshot.json).
  *
  * Source of truth: Supabase project toroqgofzsanxcisdbkn, tables price_lists,
- * products, categories, articles (supabase/migrations/0001_catalogue_and_orders.sql),
- * seeded from the 2026 booth price list by scripts/db/price-list-to-sql.mjs.
+ * products, categories, articles (supabase/migrations/0001_catalogue_and_orders.sql)
+ * and currencies (0004_currencies.sql), seeded from the 2026 booth price list
+ * by scripts/db/price-list-to-sql.mjs.
  *
- * Money is integer cents. `null` means "on request": the article can be
+ * Money is an integer count of minor units of the catalogue currency: EUR
+ * cents, PLN grosze, CHF rappen, USD cents; ISK has no minor unit, so 1 = 1
+ * króna. The field names keep saying "cents" — `priceCents`, `netCents` … —
+ * whatever the currency. `null` means "on request": the article can be
  * ordered but Re-Sound quotes it before the order is confirmed.
  */
 
@@ -21,6 +25,30 @@ export type ProductUnit = 'booth' | 'set' | 'piece' | 'm2';
 export type SelectMode = 'single' | 'multi' | 'auto';
 export type PriceType = 'base' | 'included' | 'option' | 'credit';
 export type ArticleSource = 'price-list' | 'website';
+
+/**
+ * The currencies the catalogue can carry a price in (public.currencies).
+ * A locale is served in the active currency whose `locales` list it, else
+ * EUR; only EUR is active until Michael fills in another currency's prices.
+ */
+export type CurrencyCode = 'EUR' | 'ISK' | 'PLN' | 'CHF' | 'USD';
+export const CURRENCY_CODES: readonly CurrencyCode[] = ['EUR', 'ISK', 'PLN', 'CHF', 'USD'];
+/** Minor-unit exponent per currency (ISK 0, the rest 2). */
+export const MINOR_UNITS: Record<CurrencyCode, 0 | 2> = { EUR: 2, ISK: 0, PLN: 2, CHF: 2, USD: 2 };
+
+export interface CatalogueCurrency {
+  code: CurrencyCode;
+  /** 'Euro', 'Icelandic króna' … */
+  name: string;
+  minorUnit: 0 | 2;
+  /** '€', 'kr.' … — display only; Intl formats the amounts */
+  symbol: string | null;
+  /** Site locales served in this currency ('is' for ISK, 'pl' for PLN); [] for EUR */
+  locales: string[];
+  /** Only an active currency is served to a locale; inactive ones are being filled in */
+  active: boolean;
+  sort: number;
+}
 
 export interface PriceList {
   id: string;
@@ -80,8 +108,15 @@ export interface CatalogueArticle {
   /** English description from the price list */
   description: string;
   labels: Record<string, string>;
-  /** Integer cents excl. VAT; negative for a credit; null = on request */
+  /**
+   * Price excl. VAT in the catalogue view's currency (`Catalogue.currency`),
+   * in minor units; EUR cents in the raw catalogue. Negative for a credit;
+   * null = on request (no price in that currency). The pricing rules and the
+   * order flow read only this field.
+   */
   priceCents: number | null;
+  /** Minor units per currency; null = no price in that currency */
+  prices: Record<CurrencyCode, number | null>;
   priceType: PriceType;
   /** Modular XL fire protection: charged once per 0.9 m segment of the booth */
   perSegment: boolean;
@@ -101,9 +136,16 @@ export interface CatalogueArticle {
 
 export interface Catalogue {
   priceLists: PriceList[];
+  /** Every currency row, active or not, in `sort` order; EUR is always present */
+  currencies: CatalogueCurrency[];
   products: CatalogueProduct[];
   categories: CatalogueCategory[];
   articles: CatalogueArticle[];
+  /**
+   * The currency every `priceCents` in this object is expressed in. The raw
+   * catalogue is EUR; catalogueInCurrency() in ./load.ts derives the others.
+   */
+  currency: CurrencyCode;
   /** When these rows were read */
   loadedAt: string;
   /** Where they came from: the database, or the committed snapshot */
@@ -124,7 +166,9 @@ export interface Selection {
 
 /**
  * Pricing rules, implemented identically by the dialog (preview) and the API
- * route (authoritative):
+ * route (authoritative). Every amount is in minor units of the currency of
+ * the catalogue view the articles came from (Catalogue.currency); the rules
+ * never convert.
  *
  *  1. Every selected article is one line: unit price = article.priceCents.
  *  2. Line quantity = selection.quantity, except a perSegment article, whose
