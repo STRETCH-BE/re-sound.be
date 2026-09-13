@@ -409,12 +409,15 @@ price on the site comes from it. These came out of the import:
     (`vercel.json`, Mondays 06:00 UTC, `/api/cron/google-reviews`) revalidates
     the cached reviews. The key is never committed.
 
-16. **Google place id.** Only the listing's CID (14056110879742525405) is
-    known. The first run of `scripts/fetch-google-reviews.mjs` with a key
-    stores the place id; then set `writeReviewUrl` in `src/config/site.ts`
-    (`GOOGLE_LISTING`) to
-    `https://search.google.com/local/writereview?placeid=<id>` so "Review us
-    on Google" opens the review form instead of the Maps listing.
+16. **Google place id — resolved 13 September, one check left.** The first
+    live run of `scripts/fetch-google-reviews.mjs` matched the listing
+    "Re-Sound" (rating 5, 4 reviews, the workbook's figures) with place id
+    `ChIJRfRVoRjHw0cR3Z-HTW3DEMM`; "Review us on Google" now opens the review form
+    directly. The API reports the listing's Maps URL as
+    `https://maps.google.com/?cid=14055949311242903517`, while the workbook had
+    `https://maps.google.com/?cid=14056110879742525405`. Open both once and confirm
+    they show the same listing; if the workbook one is a second (duplicate)
+    profile, ask Google to merge it.
 
 17. **Fourth Google reviewer.** The listing shows four reviews but only three
     names could be read on 6 September; the fourth is stored as a

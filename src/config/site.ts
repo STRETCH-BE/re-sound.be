@@ -95,16 +95,18 @@ export const PRODUCTION_OFFICE = {
 } as const;
 
 /**
- * Google Business Profile listing (workbook Testimonials). The place id is
- * unknown until scripts/fetch-google-reviews.mjs has run with an API key —
- * TODO(needs-Michael): confirm the place id so the write-review link can use
- * https://search.google.com/local/writereview?placeid=…; until then the
- * footer links to the Maps listing by CID.
+ * Google Business Profile listing. Place id and Maps URL as the Places API
+ * (New) returned them on 13 September 2026 for the listing "Re-Sound"
+ * (rating 5, 4 reviews — the same figures the workbook recorded). The
+ * workbook's CID was 14056110879742525405; the API's is 14055949311242903517 —
+ * docs/needs-michael.md item 16 asks Michael to confirm both open the same
+ * listing. The write-review link opens the review form directly.
  */
 export const GOOGLE_LISTING = {
-  cid: '14056110879742525405',
-  mapsUrl: 'https://maps.google.com/?cid=14056110879742525405',
-  writeReviewUrl: null as string | null,
+  placeId: 'ChIJRfRVoRjHw0cR3Z-HTW3DEMM',
+  cid: '14055949311242903517',
+  mapsUrl: 'https://maps.google.com/?cid=14055949311242903517',
+  writeReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJRfRVoRjHw0cR3Z-HTW3DEMM' as string | null,
 } as const;
 
 export interface Partner {
