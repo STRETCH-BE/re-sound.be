@@ -108,7 +108,7 @@ Example: an open-plan office of 240 m² × 3 m = 720 m³, measured reverberation
 - A target = 0.161 × 720 / 0.7 = **165.6 m² Sabine**
 - To add: 165.6 − 96.6 = **69.0 m² Sabine**
 
-With [rPET acoustic panels](/en/products/pet-acoustic-panels) in absorption class B (αw 0.85 to ISO 11654) that is 69.0 / 0.85 = **81 m² of panels** on ceiling and walls, a first estimate; check the exact requirement with your acoustician. The booth comes on top, not instead.
+With 12 mm [rPET acoustic panels](/en/products/pet-acoustic-panels) on a 100 mm air cavity (αw 0.80, absorption class B to ISO 11654) that is 69.0 / 0.80 = **86 m² of panels** on ceiling and walls, a first estimate; check the exact requirement with your acoustician. The booth comes on top, not instead.
 
 ## Buying from the manufacturer: lead time, installation and end of life
 

@@ -18,7 +18,7 @@ heroAlt: "Floor plan of a meeting room with rPET Groove acoustic panels marked o
 internalLinks: ["/en/products/interior","/en/products/rpet-groove","/en/products/rwood-groove","/en/products/rwood-micro","/en/products/pet-acoustic-panels","/en/products/acoustic-phone-booths","https://stretchplafond.be/products/acoustic-stretch-system","/en/contact","/en/where-to-buy"]
 cta: "Send us the dimensions of your room and we will check the calculation and send a quote with the number of panels per wall."
 sources: "W.C. Sabine, Collected Papers on Acoustics (Sabine formula); ISO 11654 (absorption classes); ISO 22955 and ISO 3382-3 (open-plan offices); BB93 and BS 8233 (UK pointers); EN 13501-1 (fire classification); Re-Sound product data."
-faq: [{"question":"How many acoustic panels do I need for a 100 m² office?","answer":"Without an absorbent ceiling and a height of 3 m, allow 30 to 40 m² of class B wall panels (such as rPET Groove) to go from 1.2 to 0.7 s. With an absorbent ceiling, 10 to 15 m² on the walls is enough."},{"question":"Does the thickness of the panel matter much?","answer":"For speech (250–4,000 Hz) 24 mm panels do the job; thicker panels or an air gap behind them mainly help at low frequencies (building services, music). For an office or classroom, 24 mm is the standard choice."},{"question":"Can I hang too many panels?","answer":"Yes: below 0.4 s a room sounds dead and people talk louder because they no longer hear themselves. Aim for the guide value and spread the panels around the room."}]
+faq: [{"question":"How many acoustic panels do I need for a 100 m² office?","answer":"Without an absorbent ceiling and a height of 3 m, allow 30 to 40 m² of class B wall panels (such as the 12 mm rPET Panel on a 100 mm air cavity, αw 0.80) to go from 1.2 to 0.7 s. With an absorbent ceiling, 10 to 15 m² on the walls is enough."},{"question":"Does the thickness of the panel matter much?","answer":"Less than the mounting. The 12 mm rPET Panel measures αw 0.25 (class D) fixed directly to the wall, 0.80 (class B) on a 100 mm air cavity and 1.00 (class A) on a 50 mm cavity with 50 mm stone wool behind it. Thickness helps too: rPET Groove reaches NRC 0.55, 0.75 and 0.90 at 12, 24 and 36 mm. Calculate with the value for the mounting you will actually build."},{"question":"Can I hang too many panels?","answer":"Yes: below 0.4 s a room sounds dead and people talk louder because they no longer hear themselves. Aim for the guide value and spread the panels around the room."}]
 draft: true
 status: "Review"
 model: "hoeveel-akoestische-panelen-nodig"
@@ -68,9 +68,9 @@ The **αw** (ISO 11654) is a panel's weighted absorption coefficient, from 0 (re
 | D | 0.30 – 0.55 |
 | E | 0.15 – 0.25 |
 
-Our ranges: **[Interior](/en/products/interior)** (textile) αw 1.0, class A. **[rPET Groove](/en/products/rpet-groove)** and **[rWood Groove](/en/products/rwood-groove)** αw 0.85, class B. Specifications name an ISO 11654 class; check the exact requirement with your acoustician.
+Our ranges: **[Interior](/en/products/interior)** (textile) αw 1.0, class A. **[rWood Groove](/en/products/rwood-groove)** and **[rWood Micro](/en/products/rwood-micro)** αw 0.90, class A. The 12 mm **[rPET Panel](/en/products/pet-acoustic-panels)** depends on its mounting: αw 0.25 (class D) directly on the wall, 0.60 (class C) on a 50 mm air cavity, 0.80 (class B) on a 100 mm air cavity and 1.00 (class A) on a 50 mm cavity with 50 mm stone wool. **[rPET Groove](/en/products/rpet-groove)**, cut from that sheet, is published as NRC only (0.55, 0.75 and 0.90 at 12, 24 and 36 mm), so the examples below calculate with the rPET Panel and its mounting. Specifications name an ISO 11654 class; check the exact requirement with your acoustician.
 
-Calculate with the panel's effective area: rPET Groove 2,400 × 600 mm is 1.44 m², 1,200 × 600 mm is 0.72 m².
+Calculate with the panel's effective area: an rPET Panel of 2,800 × 1,220 mm is 3.42 m², 2,440 × 1,220 mm is 2.98 m²; an rWood Groove plank of 300 × 2,400 mm is 0.72 m², 300 × 2,780 mm is 0.83 m².
 
 ## Worked example 1: meeting room, 56 m³
 
@@ -80,7 +80,7 @@ Room of 5 × 4 m, 2.8 m high, carpet tiles, upholstered chairs, one glass wall. 
 - A target = 0.161 × 56 / 0.6 = **15.0 m² Sabine**
 - To add: **5.0 m² Sabine**
 
-With rPET Groove (αw 0.85): 5.0 / 0.85 = **5.9 m² of panels**: five panels of 2,400 × 600 mm (7.2 m²) on the wall opposite the screen and behind the speakers. With Interior (αw 1.0), 5 m² is enough. Roughly 30% of the floor area: normal for a small, hard room.
+With the 12 mm rPET Panel on a 100 mm air cavity (αw 0.80): 5.0 / 0.80 = **6.3 m² of panels**: two panels of 2,800 × 1,220 mm (6.84 m²) on the wall opposite the screen and behind the speakers. On a 50 mm cavity with 50 mm stone wool (αw 1.00), or with Interior (αw 1.0), 5 m² is enough. Roughly a third of the floor area: normal for a small, hard room.
 
 ## Worked example 2: open-plan office, 720 m³
 
@@ -90,11 +90,11 @@ Floor of 20 × 12 m, 3 m high, 30 workstations, resin floor, concrete ceiling. E
 - A target = 0.161 × 720 / 0.7 = **165.6 m² Sabine**
 - To add: **69.0 m² Sabine**
 
-Walls alone would take 69.0 / 0.85 = **81 m² of panels**, over half of both long walls. Better spread:
+Walls alone would take 69.0 / 0.80 = **86 m² of panels** (rPET Panel on a 100 mm air cavity, αw 0.80), over two-thirds of both long walls. Better spread:
 
 - **Ceiling**: 50 m² of class A absorbers (assume αw 0.9) = 45.0 m² Sabine. An [acoustic stretch ceiling](https://stretchplafond.be/products/acoustic-stretch-system) over the whole area does more.
-- **Walls**: 30 m² of rPET Groove (αw 0.85) = 25.5 m² Sabine.
-- Together **70.5 m² Sabine** — target met.
+- **Walls**: 30 m² of rPET Panel on a 100 mm air cavity (αw 0.80) = 24.0 m² Sabine.
+- Together **69.0 m² Sabine** — exactly the target; the same 30 m² on a 50 mm cavity with 50 mm stone wool (αw 1.00) gives 30.0 m² Sabine and a margin.
 
 For calls that still disturb colleagues, no panel helps; that is what an [office phone booth](/en/products/acoustic-phone-booths) is for.
 
@@ -106,7 +106,7 @@ Dining room of 15 × 10 m, 3.5 m high, tiled floor, lots of glass, 60 covers. Me
 - A target = 0.161 × 525 / 0.7 = **120.8 m² Sabine**
 - To add: **60.4 m² Sabine**
 
-Proposal: **55 m² of ceiling** in class A (αw 0.9, 49.5 m² Sabine) plus **15 m² of rWood Groove** behind the banquettes (αw 0.85, 12.8 m² Sabine) = 62.3 m² Sabine. [rWood Micro](/en/products/rwood-micro) reaches the same value over a backing absorber such as an rPET panel. Guests add absorption (0.4 to 0.5 m² Sabine per person), so at full occupancy the room drops below 0.6 s.
+Proposal: **55 m² of ceiling** in class A (αw 0.9, 49.5 m² Sabine) plus **15 m² of rWood Groove** behind the banquettes (αw 0.90, 13.5 m² Sabine) = 63.0 m² Sabine. [rWood Micro](/en/products/rwood-micro) sits in the same class A at αw 0.90 and reaches 1.00 with 50 mm mineral wool in the cavity behind it. Guests add absorption (0.4 to 0.5 m² Sabine per person), so at full occupancy the room drops below 0.6 s.
 
 ## Worked example 4: classroom, 179 m³
 
@@ -116,7 +116,7 @@ Classroom of 8 × 7 m, 3.2 m high, tiled floor, plasterboard ceiling, one glazed
 - A target = 0.161 × 179 / 0.6 = **48.0 m² Sabine**
 - To add: **24.0 m² Sabine**
 
-Proposal: **30 m² of absorbent ceiling** in class A (αw 0.9, 27.0 m² Sabine) plus **four rPET Groove panels** of 2,400 × 600 mm on the back wall (5.76 m², αw 0.85, 4.9 m² Sabine). Together 31.9 m² Sabine, above the 24.0 needed: the room stays under 0.6 s even when empty. For schools we specify [rPET](/en/products/pet-acoustic-panels): fire class B-s1,d0 in white, grey and black and B-s2,d0 in the other colours to EN 13501-1 (check the exact requirement with your acoustician), OEKO-TEX Standard 100, rPET Groove in ten stock colours, replaceable panel by panel.
+Proposal: **30 m² of absorbent ceiling** in class A (αw 0.9, 27.0 m² Sabine) plus **two rPET Panels** of 2,800 × 1,220 mm on the back wall, on a 100 mm air cavity (6.84 m², αw 0.80, 5.5 m² Sabine). Together 32.5 m² Sabine, above the 24.0 needed: the room stays under 0.6 s even when empty. For schools we specify [rPET](/en/products/pet-acoustic-panels): fire class B-s1,d0 in white, grey and black and B-s2,d0 in the other colours to EN 13501-1 (check the exact requirement with your acoustician), OEKO-TEX Standard 100, rPET Groove in ten stock colours, replaceable panel by panel.
 
 ## Rules of thumb and where to place the panels
 
@@ -139,10 +139,10 @@ Send us the dimensions, finishes and any measured reverberation time via the [co
 ## Frequently asked questions
 
 **How many acoustic panels do I need for a 100 m² office?**
-Without an absorbent ceiling and a height of 3 m, allow 30 to 40 m² of class B wall panels (such as rPET Groove) to go from 1.2 to 0.7 s. With an absorbent ceiling, 10 to 15 m² on the walls is enough.
+Without an absorbent ceiling and a height of 3 m, allow 30 to 40 m² of class B wall panels (such as the 12 mm rPET Panel on a 100 mm air cavity, αw 0.80) to go from 1.2 to 0.7 s. With an absorbent ceiling, 10 to 15 m² on the walls is enough.
 
 **Does the thickness of the panel matter much?**
-For speech (250–4,000 Hz) 24 mm panels do the job; thicker panels or an air gap behind them mainly help at low frequencies (building services, music). For an office or classroom, 24 mm is the standard choice.
+Less than the mounting. The 12 mm rPET Panel measures αw 0.25 (class D) fixed directly to the wall, 0.80 (class B) on a 100 mm air cavity and 1.00 (class A) on a 50 mm cavity with 50 mm stone wool behind it. Thickness helps too: rPET Groove reaches NRC 0.55, 0.75 and 0.90 at 12, 24 and 36 mm. Calculate with the value for the mounting you will actually build.
 
 **Can I hang too many panels?**
 Yes: below 0.4 s a room sounds dead and people talk louder because they no longer hear themselves. Aim for the guide value and spread the panels around the room.

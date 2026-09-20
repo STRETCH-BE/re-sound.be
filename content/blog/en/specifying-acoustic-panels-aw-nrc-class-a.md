@@ -18,7 +18,7 @@ heroAlt: "Close-up of an rWood Groove oak veneer acoustic panel beside a printed
 internalLinks: ["/en/products/rwood-groove","/en/products/rpet-groove","/en/products/interior","/en/products/rwood-micro","/en/products/pet-acoustic-panels","/en/products/wood-acoustic-panels","/en/products/solo-flex","/en/products/modular-xl","/en/sustainability","/en/contact","/en/where-to-buy"]
 cta: "Request the free sample kit, or send us your room schedule and we will return a quote with the datasheet and test report for each range."
 sources: "ISO 11654 (αw and classes); ASTM C423 (NRC); EN 13501-1 (reaction to fire); ISO 22955, ISO 3382-3, BB93 and BS 8233 as pointers; ISO 23351-1 (phone booths); W.C. Sabine; OEKO-TEX Standard 100; FSC; Re-Sound product data and test reports."
-faq: [{"question":"Is αw the same as NRC?","answer":"No. αw (ISO 11654) fits the measured curve from 250 to 4,000 Hz to a reference curve in 0.05 steps, capped at 1.00; NRC (ASTM C423) averages the coefficients at 250, 500, 1,000 and 2,000 Hz. rWood Groove is αw 0.85 but NRC 0.80. Specify one, name its standard, never convert."},{"question":"What does Class A mean for an acoustic panel?","answer":"Class A is the top band of ISO 11654, αw 0.90 to 1.00; Class B is 0.80 to 0.85, Class C 0.60 to 0.75. Interior, Solid and Divide are αw 1.0, Class A; rPET Groove and rWood Groove are αw 0.85, Class B. Which class a room needs depends on the standard applied; check the exact requirement with your acoustician."},{"question":"Which documents should the specification ask for?","answer":"The datasheet, the test report stating the mounting condition, the EN 13501-1 classification report, the OEKO-TEX Standard 100 or FSC certificate, a recycled content and take-back statement, and the installation guide. Write \"or equal approved\" only if a substitute must submit the same set."}]
+faq: [{"question":"Is αw the same as NRC?","answer":"No. αw (ISO 11654) fits the measured curve from 250 to 4,000 Hz to a reference curve in 0.05 steps, capped at 1.00; NRC (ASTM C423) averages the coefficients at 250, 500, 1,000 and 2,000 Hz. rWood Perf in the PD8 pattern is αw 0.85 but NRC 0.90. Specify one, name its standard, never convert."},{"question":"What does Class A mean for an acoustic panel?","answer":"Class A is the top band of ISO 11654, αw 0.90 to 1.00; Class B is 0.80 to 0.85, Class C 0.60 to 0.75. Interior, Solid and Divide are αw 1.0, Class A, and so are rWood Groove and rWood Micro at αw 0.90; the 12 mm rPET Panel is Class B (αw 0.80) on a 100 mm air cavity and Class A (αw 1.00) on a 50 mm cavity with 50 mm stone wool. Which class a room needs depends on the standard applied; check the exact requirement with your acoustician."},{"question":"Which documents should the specification ask for?","answer":"The datasheet, the test report stating the mounting condition, the EN 13501-1 classification report, the OEKO-TEX Standard 100 or FSC certificate, a recycled content and take-back statement, and the installation guide. Write \"or equal approved\" only if a substitute must submit the same set."}]
 draft: true
 status: "Review"
 model: "pet-vilt-of-houten-akoestische-panelen, hoeveel-akoestische-panelen-nodig"
@@ -35,7 +35,7 @@ Both come from the same kind of laboratory test: a large sample in a reverberati
 
 **NRC (ASTM C423)** averages the coefficients at 250, 500, 1,000 and 2,000 Hz, rounded to 0.05. An average forgives a weak band, and edge effects in the lab can push NRC above 1.00.
 
-They are not interchangeable: [rWood Groove](/en/products/rwood-groove) is αw 0.85 and NRC 0.80; [rPET Groove](/en/products/rpet-groove) is αw 0.85 and NRC 0.85. Specify one, name its standard, and never convert.
+They are not interchangeable: rWood Perf in the PD8 pattern is αw 0.85 and NRC 0.90; the 12 mm rPET Panel is αw 1.00 and NRC 0.95 on a 50 mm cavity with 50 mm stone wool, αw 0.80 and NRC 0.80 on a 100 mm air cavity. Some products publish only one: [rWood Groove](/en/products/rwood-groove) has αw 0.90 and no NRC, [rPET Groove](/en/products/rpet-groove) NRC only (0.55, 0.75 and 0.90 at 12, 24 and 36 mm). Specify one, name its standard, and never convert.
 
 ## What Class A, B and C mean
 
@@ -45,16 +45,16 @@ ISO 11654 sorts αw into five classes:
 - **Class B**: αw 0.80–0.85
 - **Class C**: αw 0.60–0.75
 
-The class is shorthand, not a requirement. Which one a room needs depends on volume, target reverberation time and the standard applied: ISO 22955 for open-plan offices, ISO 3382-3 for speech decay across an open floor, and for UK projects BB93 (schools) and BS 8233; check the exact requirement with your acoustician. Our textile panels [Interior](/en/products/interior), Solid and Divide are αw 1.0, Class A; rPET Groove and rWood Groove are αw 0.85, Class B.
+The class is shorthand, not a requirement. Which one a room needs depends on volume, target reverberation time and the standard applied: ISO 22955 for open-plan offices, ISO 3382-3 for speech decay across an open floor, and for UK projects BB93 (schools) and BS 8233; check the exact requirement with your acoustician. Our textile panels [Interior](/en/products/interior), Solid and Divide are αw 1.0, Class A; rWood Groove and rWood Micro are αw 0.90, Class A; the 12 mm rPET Panel is Class B (αw 0.80) on a 100 mm air cavity and Class A (αw 1.00) on a 50 mm cavity with 50 mm stone wool.
 
 ## Mounting conditions: type A versus an air gap
 
 The test report states how the sample was mounted, and the rating only holds for that mounting.
 
 - **Type A**: the panel sits directly on the hard surface, as when glued or clipped flat to a wall.
-- **Air gap**: tested off the surface, on battens or as a ceiling; a backing air gap improves low-frequency absorption, so the same panel scores higher.
+- **Air gap**: tested off the surface, on battens or as a ceiling; a backing air gap improves low-frequency absorption, so the same panel scores higher. The 12 mm rPET Panel shows the spread: αw 0.25 (Class D) directly on the wall, 0.60 (Class C) on a 50 mm air cavity, 0.80 (Class B) on a 100 mm air cavity, 1.00 (Class A) on a 50 mm cavity with 50 mm stone wool and 0.95 (Class A) on a 100 mm cavity with 100 mm stone wool.
 
-An air-gap value will not be reproduced by a panel glued to plasterboard, so the clause must carry value and condition together. [Wood acoustic panels](/en/products/wood-acoustic-panels) add a second condition: a grooved rWood panel absorbs more than a micro-perforated one without a backing absorber; with one (acoustic felt, an rPET panel or mineral wool) [rWood Micro](/en/products/rwood-micro) matches rWood Groove, so specify that backing layer.
+An air-gap value will not be reproduced by a panel glued to plasterboard, so the clause must carry value and condition together. [Wood acoustic panels](/en/products/wood-acoustic-panels) add a second condition: rWood Groove (αw 0.90, Class A) carries its own 3 mm felt backing, goes on battens or glue, and the cavity behind it can take an extra absorber (acoustic felt, an rPET panel or mineral wool); [rWood Micro](/en/products/rwood-micro) (αw 0.90, Class A) hangs on clips with a cavity behind it and reaches αw 1.00 with 50 mm mineral wool, so specify the cavity and what fills it.
 
 ## Why lab conditions matter: a worked example
 
@@ -64,7 +64,7 @@ Lab values come from a large, evenly mounted sample in a diffuse field; in a roo
 - A target = 0.161 × 56 / 0.6 = **15.0 m² Sabine**
 - To add: 15.0 − 10.0 = **5.0 m² Sabine**
 
-At αw 0.85 (rPET Groove) that is 5.0 / 0.85 = **5.9 m²**: five panels of 2,400 × 600 mm (5 × 1.44 = 7.2 m²). At αw 1.0 (Interior), 5.0 / 1.0 = **5.0 m²**. Substitute Class B for Class A without recalculating and the room gets 5.0 × 0.85 = 4.25 m² Sabine, a 15% shortfall.
+At αw 0.80 (the 12 mm rPET Panel on a 100 mm air cavity, Class B) that is 5.0 / 0.80 = **6.3 m²**: two panels of 2,800 × 1,220 mm (2 × 3.42 = 6.84 m²). At αw 1.0 (Interior, or the same rPET Panel on a 50 mm cavity with 50 mm stone wool), 5.0 / 1.0 = **5.0 m²**. Substitute Class B for Class A without recalculating and the room gets 5.0 × 0.80 = 4.0 m² Sabine, a 20% shortfall; glue the same 5.0 m² flat to the wall (αw 0.25) and it gets 1.25 m² Sabine, a quarter of what was specified.
 
 ## Fire, emissions and circularity
 
@@ -76,29 +76,29 @@ At αw 0.85 (rPET Groove) that is 5.0 / 0.85 = **5.9 m²**: five panels of 2,400
 
 ## Re-Sound ranges as worked examples
 
-| | rPET Groove | rWood Groove | rWood Micro | Interior / Solid / Divide |
+| | rPET Panel 12 mm | rWood Groove | rWood Micro | Interior / Solid / Divide |
 |---|---|---|---|---|
-| αw (ISO 11654) | 0.85, Class B | 0.85, Class B | as rWood Groove with backing absorber | 1.0, Class A |
-| NRC (ASTM C423) | 0.85 | 0.80 | see test report | see test report |
-| Fire (EN 13501-1) | B-s1,d0 | see datasheet | B-s1,d0 | see datasheet |
+| αw (ISO 11654) | 0.80, Class B on a 100 mm air cavity; 1.00, Class A on a 50 mm cavity with 50 mm stone wool | 0.90, Class A | 0.90, Class A; up to 1.00 with 50 mm mineral wool | 1.0, Class A |
+| NRC (ASTM C423) | 0.80 and 0.95 for the same two mountings | not published | not published | see test report |
+| Fire (EN 13501-1) | B-s1,d0 in white, grey and black; B-s2,d0 in the other colours | B-s1,d0 on the FR MDF core; D-s2,d2 on standard MDF | B-s1,d0 on the FR MDF core | see datasheet |
 
 Interior starts at {{price:interior}} per set excl. VAT; [felt](/en/products/pet-acoustic-panels) and wood panels are quoted per m² excl. VAT, transport outside Belgium extra. Office phone booths are rated to ISO 23351-1 speech-level reduction instead: [Solo Flex](/en/products/solo-flex) (about 24 dB(A)) and [Modular XL](/en/products/modular-xl) (25.9 dB(A)) are Class C there; check the exact requirement with your acoustician.
 
 ## What to put in the specification clause
 
-Example clause for a Class B felt wall panel:
+Example clause for a felt wall panel, Class A or Class B depending on the cavity:
 
-> Acoustic wall panel, PET felt, 100% recycled PET, 24 mm, 2,400 × 600 mm, from ten stock colours. αw 0.85, Class B to ISO 11654, in the mounting condition of the test report, matching the installed condition [direct to substrate / air gap of … mm]. Fire class B-s1,d0 (white, grey, black) or B-s2,d0 (other colours) to EN 13501-1. OEKO-TEX Standard 100. Clip-fixed; manufacturer take-back at end of life. Submit: datasheet, test report to the specified standard, EN 13501-1 classification report, certificates and installation guide. Reference: Re-Sound rPET Groove, or equal approved on the same documents.
+> Acoustic wall panel, PET felt, 100% recycled PET, 12 mm, 2,800 × 1,220 mm, from ten stock colours. αw 1.00, Class A to ISO 11654 on a 50 mm cavity with 50 mm stone wool [or: αw 0.80, Class B on a 100 mm air cavity], in the mounting condition of the test report, matching the installed condition [cavity of … mm / absorber …]. Fire class B-s1,d0 (white, grey, black) or B-s2,d0 (other colours) to EN 13501-1. OEKO-TEX Standard 100. Fixed with screws or adhesive; manufacturer take-back at end of life. Submit: datasheet, test report to the specified standard, EN 13501-1 classification report, certificates and installation guide. Reference: Re-Sound rPET Panel, or equal approved on the same documents.
 
-For Class A, swap in Interior, Solid or Divide; for a wood feature wall, rWood Groove, adding the backing absorber for rWood Micro.
+For a textile panel, swap in Interior, Solid or Divide (αw 1.0, Class A); for a wood feature wall, rWood Groove or rWood Micro (αw 0.90, Class A), naming the MDF core for the fire class and, for rWood Micro, the cavity and its mineral wool.
 
 ## Specification checklist
 
 | Item | Write |
 |---|---|
 | Absorption rating | αw and class (ISO 11654) or NRC (ASTM C423), never converted |
-| Mounting condition | Type A or air gap, as tested and as drawn |
-| Thickness, format, finish | e.g. 24 mm, 2,400 × 600 mm, colour or veneer |
+| Mounting condition | Type A, air cavity or cavity with absorber, as tested and as drawn |
+| Thickness, format, finish | e.g. 12 mm, 2,800 × 1,220 mm, colour or veneer |
 | Fire class | EN 13501-1, e.g. B-s1,d0 |
 | Certificates and circularity | OEKO-TEX Standard 100, FSC, recycled content, take-back |
 | Quantity | Sabine, A = 0.161 × V / T, at the specified αw |
@@ -109,10 +109,10 @@ Send us the room schedule for datasheets, test reports and a quote per range, or
 ## Frequently asked questions
 
 **Is αw the same as NRC?**
-No. αw (ISO 11654) fits the measured curve from 250 to 4,000 Hz to a reference curve in 0.05 steps, capped at 1.00; NRC (ASTM C423) averages the coefficients at 250, 500, 1,000 and 2,000 Hz. rWood Groove is αw 0.85 but NRC 0.80. Specify one, name its standard, never convert.
+No. αw (ISO 11654) fits the measured curve from 250 to 4,000 Hz to a reference curve in 0.05 steps, capped at 1.00; NRC (ASTM C423) averages the coefficients at 250, 500, 1,000 and 2,000 Hz. rWood Perf in the PD8 pattern is αw 0.85 but NRC 0.90. Specify one, name its standard, never convert.
 
 **What does Class A mean for an acoustic panel?**
-Class A is the top band of ISO 11654, αw 0.90 to 1.00; Class B is 0.80 to 0.85, Class C 0.60 to 0.75. Interior, Solid and Divide are αw 1.0, Class A; rPET Groove and rWood Groove are αw 0.85, Class B. Which class a room needs depends on the standard applied; check the exact requirement with your acoustician.
+Class A is the top band of ISO 11654, αw 0.90 to 1.00; Class B is 0.80 to 0.85, Class C 0.60 to 0.75. Interior, Solid and Divide are αw 1.0, Class A, and so are rWood Groove and rWood Micro at αw 0.90; the 12 mm rPET Panel is Class B (αw 0.80) on a 100 mm air cavity and Class A (αw 1.00) on a 50 mm cavity with 50 mm stone wool. Which class a room needs depends on the standard applied; check the exact requirement with your acoustician.
 
 **Which documents should the specification ask for?**
 The datasheet, the test report stating the mounting condition, the EN 13501-1 classification report, the OEKO-TEX Standard 100 or FSC certificate, a recycled content and take-back statement, and the installation guide. Write "or equal approved" only if a substitute must submit the same set.
