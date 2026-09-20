@@ -3,7 +3,7 @@ id: "BP-014"
 slug: "holz-akustikpaneele-mikroperforiert-oder-genutet"
 locale: "de"
 title: "Holz-Akustikpaneele: mikroperforiert oder genutet? | Re-Sound"
-description: "Holz-Akustikpaneele mikroperforiert oder genutet? Genutet absorbiert ohne Absorber mehr, mit Absorber gleich. FSC-Furniere, B-s1,d0, Lieferzeit, Tabelle."
+description: "Holz-Akustikpaneele mikroperforiert oder genutet? Beide αw 0,90, Klasse A; Micro mit Mineralwolle bis 1,00. Aufbau, FSC-Furniere, Brandklassen, Lieferzeit."
 h1: "Holz-Akustikpaneele: mikroperforiert oder genutet? Der Leitfaden"
 keyword: "holz akustikpaneele mikroperforiert vs genutet"
 secondaryKeywords: ["mikroperforierte akustikpaneele holz","genutete akustikpaneele holz","akustikpaneele holzfurnier fsc","holz akustikpaneele brandklasse"]
@@ -18,32 +18,32 @@ heroAlt: "Mikroperforiertes Holz-Akustikpaneel rWood Micro mit FSC-Furnier, Naha
 internalLinks: ["/de/products/holz-akustikpaneele","/de/products/rwood-groove","/de/products/rwood-micro","/de/products/rpet-panel","/de/products/telefonboxen","/de/products/solo-flex","/de/sustainability","/de/where-to-buy","/de/contact"]
 cta: "Fordern Sie das rWood-Musterpaket mit beiden Ausführungen oder ein Angebot pro m² für Ihren Raum an."
 sources: "ISO 11654 (Schallabsorptionsklassen); EN 13501-1 (Brandverhalten); FSC; DIN 18041 (Hörsamkeit in Räumen); VDI 2569 (Büroakustik); ISO 22955; W. C. Sabine (Nachhallformel); Datenblätter und Prüfberichte Re-Sound rWood und rPET."
-faq: [{"question":"Absorbiert ein mikroperforiertes Holzpaneel schlechter als ein genutetes?","answer":"Ohne rückseitigen Absorber ja: Das genutete rWood Groove erreicht aus sich heraus αw 0,85 (Klasse B nach ISO 11654), das mikroperforierte rWood Micro absorbiert allein weniger. Mit einem Absorber dahinter – Akustikfilz, rPET-Paneel oder Mineralwolle – erreichen beide dieselben Werte. Entscheiden Sie also nach Optik, Brandklasse, Lieferzeit und Budget, nicht nach der Akustik."},{"question":"Welcher Absorber gehört hinter ein mikroperforiertes Paneel?","answer":"Akustikfilz, ein rPET-Paneel oder Mineralwolle. Das rPET-Paneel besteht zu 100 % aus recyceltem PET, ist selbst B-s1,d0 nach EN 13501-1 und lässt sich vor Ort mit Messer oder Säge zuschneiden; ein Luftspalt dahinter verbessert die Absorption tiefer Frequenzen. Welche Kombination Ihr Raum braucht, hängt von der Soll-Nachhallzeit nach DIN 18041 ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie lange dauert die Lieferung von Holz-Akustikpaneelen?","answer":"Für rWood Groove liefern wir Lagerfurniere in 3 bis 4 Wochen ab Werk, Furniere außerhalb des Lagerprogramms in 6 bis 8 Wochen. Für rWood Micro nennen wir die Lieferzeit im Angebot; auch hier entscheidet das gewählte Furnier. Beide Reihen fertigen wir ausschließlich mit FSC-zertifizierten Furnieren in unserem eigenen Werk in Częstochowa (Polen)."}]
+faq: [{"question":"Absorbiert ein mikroperforiertes Holzpaneel schlechter als ein genutetes?","answer":"Nein. Beide erreichen laut Datenblatt αw 0,90, also Klasse A nach ISO 11654: das genutete rWood Groove mit seinem eigenen 3 mm starken rPET-Filz auf der Rückseite, das mikroperforierte rWood Micro mit Akustikvlies und Hohlraum hinter dem Paneel. Mit 50 mm Mineralwolle im Hohlraum steigt rWood Micro bis αw 1,00. Entscheiden Sie also nach Aufbau, Optik, Brandklasse, Lieferzeit und Budget, nicht nach der Absorptionsklasse."},{"question":"Welcher Absorber gehört hinter ein Holz-Akustikpaneel?","answer":"Keiner ist Pflicht: Beide Reihen erreichen Klasse A ohne zusätzlichen Absorber. rWood Micro sitzt auf Aluminiumschienen vor einem Hohlraum, in den wahlweise 50 mm Mineralwolle kommen; damit steigt αw bis 1,00. Bei rWood Groove auf Latten kann der Hohlraum Akustikfilz, ein rPET-Paneel oder Mineralwolle aufnehmen. Das rPET-Paneel besteht zu 100 % aus recyceltem PET, ist in Weiß, Grau und Schwarz B-s1,d0 und in den übrigen Farben B-s2,d0 nach EN 13501-1 und lässt sich vor Ort mit Messer oder Säge zuschneiden. Welche Kombination Ihr Raum braucht, hängt von der Soll-Nachhallzeit nach DIN 18041 ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie lange dauert die Lieferung von Holz-Akustikpaneelen?","answer":"Für rWood Micro liefern wir Lagerfurniere in 3 bis 4 Wochen ab Werk, Furniere außerhalb des Lagerprogramms und Sonderanfertigungen in 6 bis 8 Wochen. Für rWood Groove hängt die Lieferzeit vom Lagerbestand ab; wir bestätigen sie bei der Bestellung. Beide Reihen fertigen wir ausschließlich mit FSC-zertifizierten Furnieren in unserem eigenen Werk in Częstochowa (Polen)."}]
 draft: true
 status: "Review"
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1399
 ---
 
-**Genutete Holz-Akustikpaneele absorbieren ohne rückseitigen Absorber mehr Schall als mikroperforierte; liegt ein Absorber dahinter – Akustikfilz, ein rPET-Paneel oder Mineralwolle –, erreichen beide dieselben Werte, und Sie entscheiden nach Optik, Brandklasse, Lieferzeit und Budget.** Hier der Leitfaden mit den Zahlen von [rWood Groove](/de/products/rwood-groove) (genutet) und [rWood Micro](/de/products/rwood-micro) (mikroperforiert), einem Rechenbeispiel nach Sabine und einer Entscheidungstabelle.
+**Mikroperforierte und genutete Holz-Akustikpaneele absorbieren gleich gut: rWood Groove und rWood Micro erreichen beide αw 0,90, also Klasse A nach ISO 11654, rWood Micro mit 50 mm Mineralwolle im Hohlraum bis 1,00. Sie entscheiden deshalb nach Aufbau, Optik, Brandklasse, Lieferzeit und Budget.** Hier der Leitfaden mit den Zahlen von [rWood Groove](/de/products/rwood-groove) (genutet) und [rWood Micro](/de/products/rwood-micro) (mikroperforiert), einem Rechenbeispiel nach Sabine und einer Entscheidungstabelle.
 
 ## Wie genutete und mikroperforierte Paneele absorbieren
 
-Beide gehören zu unseren [Holz-Akustikpaneelen](/de/products/holz-akustikpaneele): ein FSC-zertifiziertes Furnier auf einem absorbierenden Kern. Das Holz ist das Gesicht, der Kern leistet die Arbeit. Der Unterschied liegt darin, wie viel Schall die Oberfläche bis zum Kern durchlässt.
+Beide gehören zu unseren [Holz-Akustikpaneelen](/de/products/holz-akustikpaneele): ein FSC-zertifiziertes A-Furnier auf einem MDF-Kern, dahinter eine absorbierende Schicht. Das Holz ist das Gesicht; die Arbeit leisten die Öffnungen in der Oberfläche und das, was hinter dem Paneel liegt. Der Unterschied liegt darin, wie die Oberfläche geöffnet ist und wie das Paneel aufgebaut wird.
 
-**Genutet (rWood Groove):** Die Nuten öffnen die Oberfläche über die gesamte Fläche. Der Schall trifft in den Nuten direkt auf den Kern, dringt ein und verliert dort seine Energie. Das Paneel arbeitet deshalb aus sich heraus: **αw 0,85 nach ISO 11654, also Klasse B, NRC 0,80.**
+**Genutet (rWood Groove):** Furnierte MDF-Lamellen sitzen auf einem 3 mm starken Filz aus recyceltem PET; die 15 mm breiten Nuten öffnen die Oberfläche über die gesamte Fläche. Der Schall trifft in den Nuten auf den Filz, dringt ein und verliert dort seine Energie. Das Paneel bringt seinen Absorber also mit: **αw 0,90 nach ISO 11654, also Klasse A** (gemessen nach EN ISO 354).
 
-**Mikroperforiert (rWood Micro):** Die Oberfläche bleibt nahezu geschlossen; nur die feine Perforation führt den Schall in den Aufbau. Ohne rückseitigen Absorber absorbiert das mikroperforierte Paneel weniger als das genutete. Mit einem Absorber dahinter – Akustikfilz, ein [rPET-Paneel](/de/products/rpet-panel) oder Mineralwolle – erreichen beide Ausführungen dieselben Werte.
+**Mikroperforiert (rWood Micro):** Die Oberfläche bleibt nahezu geschlossen; nur die feine Perforation (Löcher ab 0,5 mm Durchmesser, vier Dichten bis 2 mm) führt den Schall in den feuerhemmenden MDF-Kern mit Schallkammern und in das Akustikvlies auf der Rückseite. So erreicht das Paneel ebenfalls **αw 0,90, Klasse A**; mit 50 mm Mineralwolle im Hohlraum dahinter steigt der Wert **bis αw 1,00**. Die Werte hängen von Perforationsdichte, Hohlraumtiefe und dem Absorber hinter dem Paneel ab.
 
 ## Die entscheidende Frage: Was liegt hinter dem Paneel?
 
-Wer mikroperforiert und genutet vergleicht, vergleicht in Wahrheit zwei Aufbauten: Das genutete Paneel arbeitet als Einzelschicht auf der Wand, das mikroperforierte planen Sie immer mit einem Absorber im Rücken. Drei Möglichkeiten:
+Wer mikroperforiert und genutet vergleicht, vergleicht in Wahrheit zwei Aufbauten. rWood Groove bringt seinen Absorber mit – den 3 mm starken rPET-Filz auf der Rückseite – und wird mit Nut und Feder auf Latten befestigt oder direkt auf den Untergrund geklebt; auf Latten kann der Hohlraum dahinter einen zusätzlichen Absorber aufnehmen. rWood Micro wird mit einem verdeckten Clipsystem werkzeuglos auf Aluminiumschienen montiert, immer mit Hohlraum dahinter, in den wahlweise Mineralwolle kommt. Drei Absorber kommen für den Hohlraum in Frage:
 
 - **Akustikfilz**: die schlanke Lösung, wenn der Aufbau flach bleiben muss.
-- **rPET-Paneel**: 100 % recyceltes PET, in Weiß, Grau und Schwarz B-s1,d0 und in den übrigen Farben B-s2,d0 (EN 13501-1), vor Ort mit Messer, Kreissäge oder Plattensäge zuschneidbar. Die 12-mm-Platte erreicht direkt auf der Wand αw 0,25 und mit 50 mm Luftschicht und 50 mm Steinwolle dahinter αw 1,00 (EN ISO 354): der Hohlraum hinter dem Paneel entscheidet.
-- **Mineralwolle**: die übliche Wahl, wenn ohnehin eine Unterkonstruktion mit Hohlraum vorgesehen ist.
+- **[rPET-Paneel](/de/products/rpet-panel)**: 100 % recyceltes PET, in Weiß, Grau und Schwarz B-s1,d0 und in den übrigen Farben B-s2,d0 (EN 13501-1), vor Ort mit Messer, Kreissäge oder Plattensäge zuschneidbar. Die 12-mm-Platte erreicht direkt auf der Wand αw 0,25 und mit 50 mm Luftschicht und 50 mm Steinwolle dahinter αw 1,00 (EN ISO 354): der Hohlraum hinter dem Paneel entscheidet.
+- **Mineralwolle**: die übliche Wahl, wenn ohnehin eine Unterkonstruktion mit Hohlraum vorgesehen ist; hinter rWood Micro heben 50 mm Mineralwolle den Wert bis αw 1,00.
 
-Sitzt einer dieser Absorber hinter dem Furnier, ist der akustische Unterschied aufgehoben; übrig bleibt die Frage nach Aufbautiefe, Optik und Brandschutz. Ob Klasse B nach ISO 11654 für Ihr Projekt genügt, hängt von der Ausschreibung ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
+Beide Ausführungen liegen in Klasse A; ein Absorber im Hohlraum bringt zusätzliche Reserve, bei rWood Micro bis αw 1,00. Übrig bleibt die Frage nach Aufbautiefe, Optik und Brandschutz. Welche Werte Ihre Ausschreibung verlangt, prüfen Sie mit Ihrem Akustiker.
 
 ## Rechenbeispiel: Besprechungsraum mit 56 m³
 
@@ -57,7 +57,7 @@ Prüfen Sie die genaue Anforderung mit Ihrem Akustiker. Die Sabine-Formel liefer
 - A Ziel = 0,161 × 56 / 0,39 = **23,1 m² Sabine**
 - Hinzuzufügen: 23,1 − 10,0 = **13,1 m² Sabine**
 
-Mit rWood Groove (αw 0,85) sind das 13,1 / 0,85 = **15,4 m² Paneele**: die Längswand gegenüber dem Bildschirm (5 × 2,8 = 14,0 m²) plus ein Streifen von 1,4 m² an der Stirnwand hinter den Sprechern. Wählen Sie rWood Micro, planen Sie dieselben 15,4 m², aber zwingend mit Akustikfilz, rPET-Paneel oder Mineralwolle dahinter; ohne Absorber bräuchten Sie mehr Fläche.
+Mit rWood Groove oder rWood Micro (beide αw 0,90) sind das 13,1 / 0,90 = **14,6 m² Paneele**: die Längswand gegenüber dem Bildschirm (5 × 2,8 = 14,0 m²) plus ein Streifen von 0,6 m² an der Stirnwand hinter den Sprechern. Wählen Sie rWood Micro mit 50 mm Mineralwolle im Hohlraum (αw 1,00), genügen 13,1 m² – die Längswand allein reicht dann aus.
 
 Paneele senken den Nachhall im Raum; das Telefonat, das durch das Großraumbüro trägt, stoppen sie nicht. Dafür ist eine [Telefonbox](/de/products/telefonboxen) (Akustikkabine) wie [Solo Flex](/de/products/solo-flex) da: ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Montage durch unser Team {{price:article:WEB-SOLO-FLEX-INST}}, Transport auf dem europäischen Festland – also auch nach Deutschland – {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, jeweils zzgl. MwSt.
 
@@ -71,20 +71,20 @@ Bei beiden Reihen verwenden wir **ausschließlich FSC-zertifizierte Furniere**; 
 
 ## Brandschutz: B-s1,d0 für rWood Micro
 
-In Schulen, Verwaltungen und Versammlungsstätten ist das Brandverhalten nach EN 13501-1 meist eine harte Anforderung. **rWood Micro ist als B-s1,d0 klassifiziert**: schwerentflammbar, geringe Rauchentwicklung (s1), kein brennendes Abtropfen (d0). Das macht die mikroperforierte Ausführung zur ersten Wahl, wenn Holzoptik und strenge Brandschutzauflagen zusammenkommen.
+In Schulen, Verwaltungen und Versammlungsstätten ist das Brandverhalten nach EN 13501-1 meist eine harte Anforderung. **rWood Micro ist auf seinem feuerhemmenden MDF-Kern als B-s1,d0 klassifiziert**: schwerentflammbar, geringe Rauchentwicklung (s1), kein brennendes Abtropfen (d0). Die mikroperforierte Ausführung erfüllt diese Anforderung damit serienmäßig, wenn Holzoptik und strenge Brandschutzauflagen zusammenkommen.
 
-Für rWood Groove nennen wir die Klassifizierung im Datenblatt und im Prüfbericht zu Ihrem Aufbau. Der rückseitige Absorber gehört zur Brandschutzbetrachtung; das rPET-Paneel ist selbst B-s1,d0. Welche Klasse Ihr Bauvorhaben verlangt, hängt von Landesbauordnung und Nutzung ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker und dem Brandschutzplaner.
+Bei rWood Groove entscheidet der Kern: **B-s1,d0 mit FR-MDF-Kern, D-s2,d2 mit Standard-MDF-Kern**; der rPET-Filz auf der Rückseite ist B-s1,d0. Ein zusätzlicher Absorber im Hohlraum gehört zur Brandschutzbetrachtung; das rPET-Paneel ist in Weiß, Grau und Schwarz B-s1,d0, in den übrigen Farben B-s2,d0. Welche Klasse Ihr Bauvorhaben verlangt, hängt von Landesbauordnung und Nutzung ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker und dem Brandschutzplaner.
 
 ## Lieferzeit, Preis und Herkunft
 
-Die Lieferzeit hängt am Furnier. Für **rWood Groove** gilt ab Werk:
+Die Lieferzeit hängt am Furnier. Für **rWood Micro** gilt ab Werk:
 
 - **Lagerfurniere**: 3 bis 4 Wochen.
-- **Furniere außerhalb des Lagerprogramms**: 6 bis 8 Wochen.
+- **Furniere außerhalb des Lagerprogramms und Sonderanfertigungen**: 6 bis 8 Wochen.
 
-Für **rWood Micro** nennen wir die Lieferzeit im Angebot; auch hier verkürzt ein Lagerfurnier die Wartezeit.
+Für **rWood Groove** hängt die Lieferzeit vom Lagerbestand ab; wir bestätigen sie bei der Bestellung.
 
-Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die rWood-Paneele kommen aus dem polnischen Werk, die Rohstoffe stammen aus der EU. Am Ende der Nutzungsdauer nehmen wir die Paneele in Deutschland, Belgien, den Niederlanden, Frankreich und Luxemburg kostenlos zurück; mehr dazu unter [Nachhaltigkeit](/de/sustainability).
+Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die rWood-Paneele kommen aus dem polnischen Werk; die Furniere stammen aus Europa, Skandinavien und Nordamerika. Am Ende der Nutzungsdauer nehmen wir die Paneele in Deutschland, Belgien, den Niederlanden, Frankreich und Luxemburg kostenlos zurück; mehr dazu unter [Nachhaltigkeit](/de/sustainability).
 
 Der Quadratmeterpreis wird per Angebot ermittelt, zzgl. MwSt., und hängt von Ausführung, Furnier, Absorber und Menge ab. Furniertes Holz ist unser Premiumprodukt; wer für dieselbe Fläche weniger ausgeben will, kombiniert Holz an der Sichtwand mit rPET-Paneelen überall sonst. Schicken Sie uns Ihre Quadratmeter über [Kontakt](/de/contact) oder wenden Sie sich an einen [Händler](/de/where-to-buy) in Ihrer Nähe.
 
@@ -92,23 +92,24 @@ Der Quadratmeterpreis wird per Angebot ermittelt, zzgl. MwSt., und hängt von Au
 
 | Kriterium | rWood Groove (genutet) | rWood Micro (mikroperforiert) |
 |---|---|---|
-| Absorption ohne Absorber | αw 0,85, Klasse B (ISO 11654), NRC 0,80 | geringer als genutet |
-| Absorption mit Absorber (Akustikfilz, rPET-Paneel, Mineralwolle) | dieselben Werte | dieselben Werte |
-| Brandverhalten (EN 13501-1) | siehe Datenblatt und Prüfbericht | B-s1,d0 |
+| Absorption αw (ISO 11654) | 0,90, Klasse A – mit eigenem 3-mm-rPET-Filz auf der Rückseite | 0,90, Klasse A; mit 50 mm Mineralwolle im Hohlraum bis 1,00 |
+| NRC | nicht veröffentlicht | nicht veröffentlicht |
+| Aufbau und Montage | Furnier auf MDF-Lamellen und rPET-Filz; Nut und Feder, auf Latten oder geklebt; Hohlraum auf Latten kann Akustikfilz, rPET-Paneel oder Mineralwolle aufnehmen | Furnier auf FR-MDF-Kern mit Schallkammern und Akustikvlies; verdecktes Clipsystem auf Aluminiumschienen, Hohlraum wahlweise mit Mineralwolle |
+| Brandverhalten (EN 13501-1) | B-s1,d0 mit FR-MDF-Kern, D-s2,d2 mit Standard-MDF-Kern | B-s1,d0 (FR-MDF-Kern) |
 | Optik | sichtbare Nuten, Linienrhythmus | nahezu geschlossene Holzfläche |
 | Furnier | ausschließlich FSC-zertifiziert | ausschließlich FSC-zertifiziert |
-| Lieferzeit Lagerfurnier | 3 bis 4 Wochen | im Angebot |
-| Lieferzeit Furnier außerhalb des Lagerprogramms | 6 bis 8 Wochen | im Angebot |
+| Lieferzeit Lagerfurnier | je nach Lagerbestand, bestätigt bei Bestellung | 3 bis 4 Wochen |
+| Lieferzeit Furnier außerhalb des Lagerprogramms | je nach Lagerbestand, bestätigt bei Bestellung | 6 bis 8 Wochen |
 
 Und als Kurzentscheidung:
 
 | Ihre Situation | Empfehlung |
 |---|---|
-| Einzelschicht auf der Wand, kein Platz für einen Absorber | rWood Groove |
-| Ruhige Holzfläche, bündig mit Türen und Einbauten | rWood Micro mit Absorber |
-| B-s1,d0 in Schule, Verwaltung oder Versammlungsstätte | rWood Micro |
-| Ohnehin Unterkonstruktion mit Hohlraum geplant | beide; Absorber im Hohlraum einplanen |
-| Kürzeste Lieferzeit | Lagerfurnier (rWood Groove: 3 bis 4 Wochen) |
+| Flacher Aufbau, direkt auf den Untergrund geklebt | rWood Groove |
+| Ruhige Holzfläche, bündig mit Türen und Einbauten | rWood Micro |
+| B-s1,d0 in Schule, Verwaltung oder Versammlungsstätte | rWood Micro oder rWood Groove mit FR-MDF-Kern |
+| Ohnehin Unterkonstruktion mit Hohlraum geplant | beide; rWood Micro mit 50 mm Mineralwolle bis αw 1,00 |
+| Kürzeste Lieferzeit | rWood Micro in einem Lagerfurnier (3 bis 4 Wochen); rWood Groove je nach Lagerbestand |
 | Knappes Budget bei großer Fläche | Holz an der Sichtwand, rPET-Paneele überall sonst |
 
 Noch unentschieden? Das rWood-Musterpaket enthält beide Ausführungen; das Licht vor Ort entscheidet oft schneller als jeder Katalog.
@@ -116,12 +117,12 @@ Noch unentschieden? Das rWood-Musterpaket enthält beide Ausführungen; das Lich
 ## Häufige Fragen
 
 **Absorbiert ein mikroperforiertes Holzpaneel schlechter als ein genutetes?**
-Ohne rückseitigen Absorber ja: Das genutete rWood Groove erreicht aus sich heraus αw 0,85 (Klasse B nach ISO 11654), das mikroperforierte rWood Micro absorbiert allein weniger. Mit einem Absorber dahinter – Akustikfilz, rPET-Paneel oder Mineralwolle – erreichen beide dieselben Werte. Entscheiden Sie also nach Optik, Brandklasse, Lieferzeit und Budget, nicht nach der Akustik.
+Nein. Beide erreichen laut Datenblatt αw 0,90, also Klasse A nach ISO 11654: das genutete rWood Groove mit seinem eigenen 3 mm starken rPET-Filz auf der Rückseite, das mikroperforierte rWood Micro mit Akustikvlies und Hohlraum hinter dem Paneel. Mit 50 mm Mineralwolle im Hohlraum steigt rWood Micro bis αw 1,00. Entscheiden Sie also nach Aufbau, Optik, Brandklasse, Lieferzeit und Budget, nicht nach der Absorptionsklasse.
 
-**Welcher Absorber gehört hinter ein mikroperforiertes Paneel?**
-Akustikfilz, ein rPET-Paneel oder Mineralwolle. Das rPET-Paneel besteht zu 100 % aus recyceltem PET, ist selbst B-s1,d0 nach EN 13501-1 und lässt sich vor Ort mit Messer oder Säge zuschneiden; ein Luftspalt dahinter verbessert die Absorption tiefer Frequenzen. Welche Kombination Ihr Raum braucht, hängt von der Soll-Nachhallzeit nach DIN 18041 ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
+**Welcher Absorber gehört hinter ein Holz-Akustikpaneel?**
+Keiner ist Pflicht: Beide Reihen erreichen Klasse A ohne zusätzlichen Absorber. rWood Micro sitzt auf Aluminiumschienen vor einem Hohlraum, in den wahlweise 50 mm Mineralwolle kommen; damit steigt αw bis 1,00. Bei rWood Groove auf Latten kann der Hohlraum Akustikfilz, ein rPET-Paneel oder Mineralwolle aufnehmen. Das rPET-Paneel besteht zu 100 % aus recyceltem PET, ist in Weiß, Grau und Schwarz B-s1,d0 und in den übrigen Farben B-s2,d0 nach EN 13501-1 und lässt sich vor Ort mit Messer oder Säge zuschneiden. Welche Kombination Ihr Raum braucht, hängt von der Soll-Nachhallzeit nach DIN 18041 ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
 
 **Wie lange dauert die Lieferung von Holz-Akustikpaneelen?**
-Für rWood Groove liefern wir Lagerfurniere in 3 bis 4 Wochen ab Werk, Furniere außerhalb des Lagerprogramms in 6 bis 8 Wochen. Für rWood Micro nennen wir die Lieferzeit im Angebot; auch hier entscheidet das gewählte Furnier. Beide Reihen fertigen wir ausschließlich mit FSC-zertifizierten Furnieren in unserem eigenen Werk in Częstochowa (Polen).
+Für rWood Micro liefern wir Lagerfurniere in 3 bis 4 Wochen ab Werk, Furniere außerhalb des Lagerprogramms und Sonderanfertigungen in 6 bis 8 Wochen. Für rWood Groove hängt die Lieferzeit vom Lagerbestand ab; wir bestätigen sie bei der Bestellung. Beide Reihen fertigen wir ausschließlich mit FSC-zertifizierten Furnieren in unserem eigenen Werk in Częstochowa (Polen).
 
 *Quellen: ISO 11654 (Schallabsorptionsklassen); EN 13501-1 (Brandverhalten); FSC; DIN 18041 (Hörsamkeit in Räumen); VDI 2569 (Büroakustik); ISO 22955; W. C. Sabine (Nachhallformel); Datenblätter und Prüfberichte Re-Sound rWood und rPET.*

@@ -18,7 +18,7 @@ heroAlt: "Nahaufnahme eines Akustikpaneels rPET Groove aus grauem recyceltem PET
 internalLinks: ["/de/products/rpet-groove","/de/products/pet-akustikpaneele","/de/products/rwood-groove","/de/products/interior","/de/products/divide","/de/products/telefonboxen","/de/products/solo-flex","/de/products/duo","/de/guides/telefonbox-preise","/de/products/modular-xl","/de/contact","/de/where-to-buy","https://stretchplafond.be/products/acoustic-stretch-system"]
 cta: "Schicken Sie uns Grundriss und Raumhöhe – Sie erhalten eine erste Absorptionsrechnung und ein kostenloses Musterpaket."
 sources: "DIN 18041:2016-03 (Hörsamkeit in Räumen); VDI 2569 (Schallschutz und akustische Gestaltung im Büro); ISO 22955:2021 (akustische Qualität offener Büros); ISO 11654 (Absorptionsklassen); ISO 23351-1 (Sprachpegelminderung von Kabinen); EN 13501-1 (Brandverhalten); W. C. Sabine (Nachhallformel); Produktdaten Re-Sound."
-faq: [{"question":"Welche Nachhallzeit verlangt DIN 18041 für ein Büro?","answer":"Für Besprechungs- und Konferenzräume (Kategorie A, Gruppe A3) gilt T_soll = 0,32·lg(V) − 0,17 s: rund 0,39 s bei 56 m³, 0,57 s bei 200 m³. Großraumbüros zählen zur Kategorie B; dort empfiehlt die Norm ein Mindestverhältnis von Absorptionsfläche zu Raumvolumen, ergänzt durch VDI 2569 und ISO 22955. Prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie viel Absorption braucht ein Großraumbüro von 720 m³?","answer":"Von 1,2 s auf 0,7 s nach Sabine: 0,161 × 720 / 0,7 = 165,6 m² Sabine, vorhanden sind 96,6 m², also 69 m² Sabine zusätzlich – zum Beispiel 50 m² Deckenelemente der Klasse A und 30 m² rPET Groove. Telefonate auf der Fläche löst das nicht; dafür planen Sie Telefonboxen ein."},{"question":"Ersetzt eine Telefonbox die Akustikpaneele?","answer":"Nein. Paneele senken den Nachhall der ganzen Fläche, eine Telefonbox löst das Problem einer sprechenden Person. Solo Flex mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1 – und kostet ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Modular XL erreicht 25,9 dB(A), ebenfalls Klasse C. Ein gut geplantes Büro braucht beides."}]
+faq: [{"question":"Welche Nachhallzeit verlangt DIN 18041 für ein Büro?","answer":"Für Besprechungs- und Konferenzräume (Kategorie A, Gruppe A3) gilt T_soll = 0,32·lg(V) − 0,17 s: rund 0,39 s bei 56 m³, 0,57 s bei 200 m³. Großraumbüros zählen zur Kategorie B; dort empfiehlt die Norm ein Mindestverhältnis von Absorptionsfläche zu Raumvolumen, ergänzt durch VDI 2569 und ISO 22955. Prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie viel Absorption braucht ein Großraumbüro von 720 m³?","answer":"Von 1,2 s auf 0,7 s nach Sabine: 0,161 × 720 / 0,7 = 165,6 m² Sabine, vorhanden sind 96,6 m², also 69 m² Sabine zusätzlich – zum Beispiel 50 m² Deckenelemente der Klasse A und 30 m² rPET Panel 12 mm auf 100 mm Luftschicht (αw 0,80, Klasse B). Telefonate auf der Fläche löst das nicht; dafür planen Sie Telefonboxen ein."},{"question":"Ersetzt eine Telefonbox die Akustikpaneele?","answer":"Nein. Paneele senken den Nachhall der ganzen Fläche, eine Telefonbox löst das Problem einer sprechenden Person. Solo Flex mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1 – und kostet ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Modular XL erreicht 25,9 dB(A), ebenfalls Klasse C. Ein gut geplantes Büro braucht beides."}]
 draft: true
 status: "Review"
 model: "akoestiek-open-kantoor-verbeteren, nagalmtijd-klaslokaal-normen"
@@ -56,7 +56,7 @@ Besprechungsraum 5 × 4 m, 2,8 m hoch = 56 m³, Teppichfliesen, Glaswand, Bildsc
 - A Soll = 0,161 × 56 / 0,39 = **23,1 m² Sabine**
 - Hinzuzufügen: 23,1 − 10,0 = **13,1 m² Sabine**
 
-Vorschlag: **12 m² Deckensegel der Klasse A** (angenommen αw 0,9) = 10,8 m² Sabine, plus **zwei Paneele [rPET Groove](/de/products/rpet-groove)** 2.400 × 600 mm gegenüber dem Bildschirm: 2,88 m² × 0,85 = 2,4 m² Sabine. Neu 13,2 m², mit den vorhandenen 10,0 m² also 23,2 m²: T = 0,161 × 56 / 23,2 = **0,39 s** – Sollwert getroffen. Wer den Raum komplett mit Paneelen auskleidet, landet unter dem Toleranzband: Bei DIN 18041 ist mehr nicht automatisch besser. Die Frequenzabhängigkeit – tiefe Töne verlangen dickere Paneele oder einen Luftspalt dahinter – prüfen Sie mit Ihrem Akustiker.
+Vorschlag: **12 m² Deckensegel der Klasse A** (angenommen αw 0,9) = 10,8 m² Sabine, plus **eine Platte rPET Panel** (12 mm, 2.440 × 1.220 mm) auf 100 mm Luftschicht gegenüber dem Bildschirm: 2,98 m² × 0,80 = 2,4 m² Sabine. Neu 13,2 m², mit den vorhandenen 10,0 m² also 23,2 m²: T = 0,161 × 56 / 23,2 = **0,39 s** – Sollwert getroffen. Wer den Raum komplett mit Paneelen auskleidet, landet unter dem Toleranzband: Bei DIN 18041 ist mehr nicht automatisch besser. Die Frequenzabhängigkeit – tiefe Töne verlangen dickere Paneele oder einen Luftspalt dahinter – prüfen Sie mit Ihrem Akustiker.
 
 ## Großraumbüro: Kategorie B, VDI 2569 und ISO 22955
 
@@ -75,17 +75,17 @@ Fläche 20 × 12 m, 3 m hoch = 720 m³, Estrich, Betondecke. Geschätzt: **1,2 s
 - A Ziel = 0,161 × 720 / 0,7 = **165,6 m² Sabine**
 - Hinzuzufügen: 165,6 − 96,6 = **69 m² Sabine**
 
-Nur mit Wandpaneelen wären das 69 / 0,85 = 81 m². Besser verteilt:
+Nur mit Wandpaneelen – rPET Panel 12 mm auf 100 mm Luftschicht, αw 0,80 – wären das 69 / 0,80 = 86 m². Besser verteilt:
 
 - **Decke**: 50 m² Deckenelemente der Klasse A (angenommen αw 0,9) = 45 m² Sabine. Alternative: eine fugenlose [akustische Spanndecke](https://stretchplafond.be/products/acoustic-stretch-system), die unser Schwesterunternehmen STRETCH an einem Tag montiert.
-- **Wände**: 30 m² rPET Groove (αw 0,85) = 25,5 m² Sabine auf den Reflexionspunkten.
-- Zusammen **70,5 m² Sabine**: T = 0,161 × 720 / (96,6 + 70,5) = 0,69 s – Ziel erreicht.
+- **Wände**: 30 m² rPET Panel 12 mm auf 100 mm Luftschicht (αw 0,80, Klasse B) = 24,0 m² Sabine auf den Reflexionspunkten.
+- Zusammen **69,0 m² Sabine**: T = 0,161 × 720 / (96,6 + 69,0) = 0,70 s – Ziel erreicht.
 
 ## Maßnahmen in der Reihenfolge ihrer Wirkung
 
 **1. Decke zuerst.** Die größte zusammenhängende Fläche und die einzige, die jeder Arbeitsplatz „sieht“. 60 bis 80 % der Deckenfläche absorbierend – Spanndecke oder Deckenelemente aus rPET – lösen meist das Nachhallproblem.
 
-**2. Wandpaneele auf die Reflexionspunkte.** Schall reflektiert am stärksten an der Wand gegenüber der Quelle und an den Längswänden. Dort gehören [Akustikpaneele aus recyceltem PET](/de/products/pet-akustikpaneele) hin, in Ohrhöhe bis etwa 2,2 m – nicht über den Schränken. rPET Groove: zehn Lagerfarben und jede Farbe auf Bestellung, 12/24/36 mm, αw 0,85 (Klasse B nach ISO 11654), B-s1,d0 in Weiß, Grau und Schwarz und B-s2,d0 in den übrigen Farben nach EN 13501-1. Alternativen: [rWood Groove](/de/products/rwood-groove) mit FSC-Furnier (αw 0,85) und die Textilpaneele [Interior](/de/products/interior) (αw 1,0, Klasse A).
+**2. Wandpaneele auf die Reflexionspunkte.** Schall reflektiert am stärksten an der Wand gegenüber der Quelle und an den Längswänden. Dort gehören [Akustikpaneele aus recyceltem PET](/de/products/pet-akustikpaneele) hin, in Ohrhöhe bis etwa 2,2 m – nicht über den Schränken. [rPET Groove](/de/products/rpet-groove): zehn Lagerfarben und jede Farbe auf Bestellung, 12/24/36 mm mit NRC 0,55 / 0,75 / 0,90, B-s1,d0 in Weiß, Grau und Schwarz und B-s2,d0 in den übrigen Farben nach EN 13501-1; die glatte Platte rPET Panel (12 mm) erreicht je nach Montage αw 0,80 (Klasse B nach ISO 11654) mit 100 mm Luftschicht und 1,00 (Klasse A) mit 50 mm Luftschicht und 50 mm Steinwolle. Alternativen: [rWood Groove](/de/products/rwood-groove) mit FSC-Furnier (αw 0,90, Klasse A) und die Textilpaneele [Interior](/de/products/interior) (αw 1,0, Klasse A).
 
 **3. Zonieren mit Divide.** Vierzig Arbeitsplätze sind akustisch ein einziger Raum. [Divide](/de/products/divide) sind freistehende, beidseitig absorbierende Stellwände (αw 1,0, Klasse A) mit integriertem Fuß, magnetisch koppelbar, ohne Montage.
 
@@ -105,7 +105,7 @@ Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werke
 Für Besprechungs- und Konferenzräume (Kategorie A, Gruppe A3) gilt T_soll = 0,32·lg(V) − 0,17 s: rund 0,39 s bei 56 m³, 0,57 s bei 200 m³. Großraumbüros zählen zur Kategorie B; dort empfiehlt die Norm ein Mindestverhältnis von Absorptionsfläche zu Raumvolumen, ergänzt durch VDI 2569 und ISO 22955. Prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
 
 **Wie viel Absorption braucht ein Großraumbüro von 720 m³?**
-Von 1,2 s auf 0,7 s nach Sabine: 0,161 × 720 / 0,7 = 165,6 m² Sabine, vorhanden sind 96,6 m², also 69 m² Sabine zusätzlich – zum Beispiel 50 m² Deckenelemente der Klasse A und 30 m² rPET Groove. Telefonate auf der Fläche löst das nicht; dafür planen Sie Telefonboxen ein.
+Von 1,2 s auf 0,7 s nach Sabine: 0,161 × 720 / 0,7 = 165,6 m² Sabine, vorhanden sind 96,6 m², also 69 m² Sabine zusätzlich – zum Beispiel 50 m² Deckenelemente der Klasse A und 30 m² rPET Panel 12 mm auf 100 mm Luftschicht (αw 0,80, Klasse B). Telefonate auf der Fläche löst das nicht; dafür planen Sie Telefonboxen ein.
 
 **Ersetzt eine Telefonbox die Akustikpaneele?**
 Nein. Paneele senken den Nachhall der ganzen Fläche, eine Telefonbox löst das Problem einer sprechenden Person. Solo Flex mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1 – und kostet ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Modular XL erreicht 25,9 dB(A), ebenfalls Klasse C. Ein gut geplantes Büro braucht beides.

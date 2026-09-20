@@ -108,7 +108,7 @@ Beispiel: ein offenes Büro mit 240 m² × 3 m = 720 m³, gemessene Nachhallzeit
 - A Ziel = 0,161 × 720 / 0,7 = **165,6 m² Sabine**
 - Hinzuzufügen: 165,6 − 96,6 = **69 m² Sabine**
 
-Mit [rPET-Akustikpaneelen](/de/products/pet-akustikpaneele) der Klasse B (αw 0,85 nach ISO 11654; prüfen Sie die genaue Anforderung mit Ihrem Akustiker) sind das 69 / 0,85 = **81 m² Paneele** an Decke und Wänden. Die Kabine kommt dazu, nicht stattdessen.
+Mit [rPET-Akustikpaneelen](/de/products/pet-akustikpaneele) der Klasse B (rPET Panel 12 mm auf 100 mm Luftschicht, αw 0,80 nach ISO 11654; prüfen Sie die genaue Anforderung mit Ihrem Akustiker) sind das 69 / 0,80 = **86 m² Paneele** an Decke und Wänden. Die Kabine kommt dazu, nicht stattdessen.
 
 ## Kauf beim Hersteller: Lieferzeit, Montage und Rücknahme
 
