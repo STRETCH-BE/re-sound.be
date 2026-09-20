@@ -95,6 +95,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'manufacturer',
     'order',
     'footer',
+    // The document cards (ProductDownloads → LeadGenModal) read `leadModal` on the client.
+    'leadModal',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.

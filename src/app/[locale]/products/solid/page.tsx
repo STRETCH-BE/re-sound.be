@@ -143,6 +143,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'productPage',
     'solidPage',
     'manufacturer',
+    // The document cards (ProductDownloads → LeadGenModal) read `leadModal` on the client.
+    'leadModal',
   ]);
 
   const galleryImages = GALLERY_IMAGES.map((src, i) => ({

@@ -143,6 +143,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'manufacturer',
     'order',
     'footer',
+    // The document cards (ProductDownloads → LeadGenModal) read `leadModal` on the client.
+    'leadModal',
   ]);
 
   return (

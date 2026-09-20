@@ -135,6 +135,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'productPage',
     'rpetPanelPage',
     'manufacturer',
+    // The document cards (ProductDownloads → LeadGenModal) read `leadModal` on the client.
+    'leadModal',
   ]);
 
   return (

@@ -79,6 +79,8 @@ export default async function Page({ params: { locale } }: PageProps) {
     'rwoodVeneerPage',
     'manufacturer',
     'sampleKit',
+    // The document cards (ProductDownloads → LeadGenModal) read `leadModal` on the client.
+    'leadModal',
   ]);
 
   // Strip the trailing " | Re-Sound" so the Product schema name reads cleanly.
