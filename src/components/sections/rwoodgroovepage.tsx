@@ -1289,7 +1289,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           gap: 1.5rem;
           max-width: 1040px;
           margin: 0 auto;
-          align-items: stretch;
+          align-items: start;
         }
 
         .pattern-card {
@@ -1318,7 +1318,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
 
         .pattern-card.on-request { display: flex; flex-direction: column; gap: 1rem; }
         .pattern-card.on-request h3 { color: white; font-size: 1.1rem; margin: 0; }
-        .pattern-card.on-request p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); line-height: 1.6; margin: 0; flex: 1; }
+        .pattern-card.on-request p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); line-height: 1.6; margin: 0; }
         .pattern-card.on-request .btn-secondary { align-self: flex-start; padding: 0.75rem 1.5rem; font-size: 0.9rem; }
 
         .on-request-list {

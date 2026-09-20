@@ -19,7 +19,7 @@ heroAlt: "Restaurant met rWood Micro wandpanelen in eik achter de banken en een 
 internalLinks: ["/nl/applications/horeca","/nl/products/houten-akoestische-panelen","/nl/products/rwood-micro","/nl/products/rwood-groove","/nl/products/rpet-groove","/nl/products/divide","/nl/products/interior","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag een demonstratie op locatie of het stalenpakket"
 sources: "ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); W.C. Sabine (nagalmformule); productgegevens en testrapporten Re-Sound."
-faq: [{"question":"Welke akoestische panelen zijn geschikt voor een restaurant?","answer":"Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), allemaal met brandklasse B-s1,d0 (rPET Panel: B-s2,d0) en een certificaat voor je brandveiligheidsdossier."},{"question":"Hoeveel panelen heeft een restaurant van 100 m² nodig?","answer":"Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit."},{"question":"Kan de plaatsing tussen twee diensten?","answer":"Een akoestisch spanplafond wordt in één dag geplaatst zonder stof; wandpanelen plaatst een team in een halve dag; Divide-modules vragen geen montage."}]
+faq: [{"question":"Welke akoestische panelen zijn geschikt voor een restaurant?","answer":"Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), rWood met brandklasse B-s1,d0 op de brandvertragende MDF-kern, rPET B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren; het classificatierapport voor je brandveiligheidsdossier leveren we op aanvraag."},{"question":"Hoeveel panelen heeft een restaurant van 100 m² nodig?","answer":"Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit."},{"question":"Kan de plaatsing tussen twee diensten?","answer":"Een akoestisch spanplafond wordt in één dag geplaatst zonder stof; wandpanelen plaatst een team in een halve dag; Divide-modules vragen geen montage."}]
 draft: false
 wordCount: 1238
 ---
@@ -55,8 +55,8 @@ Vuistregel: 50 tot 70 % van het plafond absorberend maken lost het grootste deel
 
 Wandpanelen bepalen de sfeer én breken de reflecties tussen de lange wanden.
 
-- **[rWood Micro](/nl/products/rwood-micro)**: micro-geperforeerd houtfineer dat van op twee meter als een strak houten wand oogt. Brandklasse B-s1,d0, ook met verlichting van achteren mogelijk. De keuze voor fine dining en hotelrestaurants.
-- **[rWood Groove](/nl/products/rwood-groove)**: gegroefd eiken- of notenfineer op een kern van gerecycleerd vilt, αw 0,90. Warmte en ritme voor brasserie en bistro.
+- **[rWood Micro](/nl/products/rwood-micro)**: micro-geperforeerd houtfineer op een brandvertragende MDF-kern, dat van op twee meter als een strak houten wand oogt. αw 0,90 (klasse A), brandklasse B-s1,d0. De keuze voor fine dining en hotelrestaurants.
+- **[rWood Groove](/nl/products/rwood-groove)**: gegroefd eiken- of notenfineer op MDF-lamellen met 3 mm gerecycleerd PET-vilt aan de achterzijde, αw 0,90 (klasse A). Warmte en ritme voor brasserie en bistro.
 - **[rPET Groove](/nl/products/rpet-groove)**: gerecycleerd PET-vilt in tien voorraadkleuren en elke kleur op bestelling (NRC 0,55 tot 0,90 naargelang de dikte), B-s1,d0 in wit, grijs en zwart, B-s2,d0 in de andere kleuren — voor concepten met kleur, of achter banken waar hout te kwetsbaar is.
 - **[Interior](/nl/products/interior)**: textielpanelen met afneembare, wasbare hoes (αw 1,0, klasse A) voor zones waar gemorst wordt.
 
@@ -96,14 +96,14 @@ Niet elke zaak kan een week dicht. Een fasering die werkt:
 3. **Divide-modules** bij de grote tafels als sluitstuk, zonder montage.
 4. **Nameten** en het resultaat gebruiken in je communicatie — "je hoort elkaar" is een verkoopargument.
 
-Levertijden uit eigen productie: rPET in ongeveer 3 à 4 werkweken, rWood-voorraadfineren in 3 à 4 weken. Aan het einde van hun levensduur, of bij een nieuw concept, nemen we de panelen gratis terug in de Benelux, Frankrijk en Duitsland. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
+Levertijden uit eigen productie: rPET in ongeveer 3 à 4 werkweken, rWood Micro en Perf in voorraadfineren in 3 à 4 weken; de levertermijn van rWood Groove bevestigen we bij de bestelling. Aan het einde van hun levensduur, of bij een nieuw concept, nemen we de panelen gratis terug in de Benelux, Frankrijk en Duitsland. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
 
 **Wil je het effect horen voor je beslist?** We komen met panelen en een meetset naar je zaak in België, Nederland, Luxemburg en Noord-Frankrijk, of je bezoekt de [showroom](/nl/where-to-buy) in Beveren-Waas waar elke reeks geïnstalleerd staat. Het gratis stalenpakket met alle afwerkingen sturen we binnen drie werkdagen.
 
 ## Veelgestelde vragen
 
 **Welke akoestische panelen zijn geschikt voor een restaurant?**
-Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), allemaal met brandklasse B-s1,d0 (rPET Panel: B-s2,d0) en een certificaat voor je brandveiligheidsdossier.
+Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), rWood met brandklasse B-s1,d0 op de brandvertragende MDF-kern, rPET B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren; het classificatierapport voor je brandveiligheidsdossier leveren we op aanvraag.
 
 **Hoeveel panelen heeft een restaurant van 100 m² nodig?**
 Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit.

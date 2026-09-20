@@ -79,15 +79,15 @@ Voor schoolgebouwen zijn de brandklasse en de binnenluchtkwaliteit even belangri
 - **Brandklasse (EN 13501-1)**: de rPET-reeks (Panel, Groove, Flex Groove) is B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren — beperkt brandbaar, weinig rook, geen brandende druppels; de rWood-reeks (Groove, Micro, Perf) is B-s1,d0 op de brandvertragende MDF-kern.
 - **Emissies**: rPET is OEKO-TEX® Standard 100 gecertificeerd.
 - **Onderhoud**: [PET-vilt](/nl/products/pet-akoestische-panelen) stofzuig je en behandel je plaatselijk bij vlekken; de hoezen van Interior gaan in de wasmachine. Beschadigde panelen vervang je per stuk, zonder de wand te herschilderen.
-- **Herkomst**: het fineer van rWood is FSC-gecertificeerd; het certificaatnummer leveren we op aanvraag per levering.
+- **Herkomst**: het fineer van elk rWood-product is FSC®-gecertificeerd, chain-of-custody-certificaat C191539.
 
 ## Planning: zomervakantie, bestek en terugname
 
 De meeste scholen plaatsen akoestiek in de zomervakantie. Reken terug vanaf de eerste schooldag:
 
 1. **Meting en voorstel** in het voorjaar; goedkeuring door het schoolbestuur.
-2. **Bestek**: voor elk product leveren we een bestektekst met αw, klasse, brandklasse, formaat, dikte en gerecycleerd gehalte, zodat een aanbesteding zonder merknaam kan.
-3. **Bestelling vóór eind mei**: rPET leveren we in ongeveer 3 à 4 werkweken, rWood-voorraadfineren in 3 à 4 weken; maatkleuren op aanvraag, niet-voorraadfineren 6 à 8 weken.
+2. **Bestek**: voor elk product leveren we een bestektekst met αw, klasse, brandklasse, formaat, dikte en materiaal, zodat een aanbesteding zonder merknaam kan.
+3. **Bestelling vóór eind mei**: rPET leveren we in ongeveer 3 à 4 werkweken (maatkleuren op aanvraag); rWood Micro en Perf in voorraadfineren in 3 à 4 weken, niet-voorraadfineren in 6 à 8 weken; de levertermijn van rWood Groove bevestigen we bij de bestelling.
 4. **Plaatsing** in juli, meting in augustus, klaar voor september.
 
 Aan het einde van de levensduur — of bij een verbouwing — nemen we de panelen gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg; het materiaal gaat opnieuw onze productie in. Re-Sound is een merk van Stretch Group en produceert in eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).

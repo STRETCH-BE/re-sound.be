@@ -19,7 +19,7 @@ heroAlt: "rPET Groove in grijs naast rWood Groove in eikenfineer, close-up van d
 internalLinks: ["/nl/products/pet-akoestische-panelen","/nl/products/houten-akoestische-panelen","/nl/products/rpet-groove","/nl/products/rpet-panel","/nl/products/rwood-groove","/nl/products/rwood-micro","/nl/products/rwood-veneer","/nl/where-to-buy"]
 cta: "Vraag het gratis stalenpakket met beide materialen"
 sources: "ISO 11654 (geluidsabsorptieklassen); ASTM C423 (NRC); EN 13501-1 (brandclassificatie); OEKO-TEX® Standard 100; FSC; productgegevens en testrapporten Re-Sound rPET en rWood."
-faq: [{"question":"Absorbeert hout minder goed dan PET-vilt?","answer":"Nee. rWood Groove en rWood Micro halen αw 0,90 (ISO 11654, klasse A); rPET Groove wordt per dikte met een NRC opgegeven (0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm). Het verschil zit in het uitzicht, de brandklasse en de prijs, niet in de akoestiek."},{"question":"Kan ik PET-panelen en houten panelen combineren?","answer":"Ja, en dat is vaak de beste oplossing: hout op de wand die je ziet, PET op de lange wanden of het plafond. Beide zijn met hetzelfde clipsysteem te monteren en samen terug te nemen."},{"question":"Welk paneel is het duurzaamst?","answer":"rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET; rWood combineert FSC-fineer met een kern van gerecycleerd vilt en heeft voor rWood Panel een EPD. Beide nemen we aan het einde van hun levensduur gratis terug."}]
+faq: [{"question":"Absorbeert hout minder goed dan PET-vilt?","answer":"Nee. rWood Groove en rWood Micro halen αw 0,90 (ISO 11654, klasse A); rPET Groove wordt per dikte met een NRC opgegeven (0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm). Het verschil zit in het uitzicht, de brandklasse en de prijs, niet in de akoestiek."},{"question":"Kan ik PET-panelen en houten panelen combineren?","answer":"Ja, en dat is vaak de beste oplossing: hout op de wand die je ziet, PET op de lange wanden of het plafond. Beide reeksen nemen we aan het einde van hun levensduur gratis terug."},{"question":"Welk paneel is het duurzaamst?","answer":"rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET; rWood combineert FSC®-gecertificeerd fineer (certificaat C191539) met een MDF-kern en heeft voor rWood Panel een EPD. Beide nemen we aan het einde van hun levensduur gratis terug."}]
 draft: false
 wordCount: 1320
 ---
@@ -30,7 +30,7 @@ wordCount: 1320
 
 **PET-vilt** is een dicht vezelpaneel, geperst uit gerecycleerde PET-flessen. Geluid dringt in de vezels en verliest daar zijn energie. Het paneel absorbeert dus over zijn volledige oppervlak; hoe dikker, hoe beter in de lage tonen.
 
-**Houten akoestische panelen** zijn een fineer op een kern. Bij rWood is die kern gerecycleerd vilt, en zorgen groeven ([rWood Groove](/nl/products/rwood-groove)), perforaties (rWood Perf) of micro-perforaties van 0,5 mm ([rWood Micro](/nl/products/rwood-micro)) ervoor dat het geluid tot in de kern geraakt. Het hout is het gezicht; het vilt doet het werk.
+**Houten akoestische panelen** zijn een fineer op een kern. Bij rWood is die kern MDF. Bij [rWood Groove](/nl/products/rwood-groove) liggen MDF-lamellen op 3 mm vilt van gerecycleerd PET en leiden de groeven het geluid naar dat vilt; bij [rWood Micro](/nl/products/rwood-micro) en rWood Perf laten micro-perforaties (vanaf Ø 0,5 mm) of perforaties (Ø 5 tot 10 mm) het geluid door naar een brandvertragende MDF-kern met een akoestisch vlies erachter, bij Micro met geluidskamers in de kern. Het hout is het gezicht; de opbouw erachter doet het werk.
 
 Twee fysische wegen naar hetzelfde resultaat, met één praktisch verschil: bij PET absorbeert ook de rand en de achterzijde, bij hout enkel het bewerkte vlak. Daarom werkt PET iets vergevingsgezinder in vrijstaande toepassingen.
 
@@ -38,21 +38,21 @@ Twee fysische wegen naar hetzelfde resultaat, met één praktisch verschil: bij 
 
 | | rPET Groove | rWood Groove | rWood Micro |
 |---|---|---|---|
-| Geluidsabsorptie αw (ISO 11654) | — (zie NRC) | 0,90 | 0,90 |
+| Geluidsabsorptie αw (ISO 11654) | — (zie NRC) | 0,90 | 0,90 (tot 1,00 met 50 mm minerale wol) |
 | NRC (ASTM C423) | 0,55 / 0,75 / 0,90 (12 / 24 / 36 mm) | — | — |
 | Absorptieklasse (ISO 11654) | — | A | A |
-| Brandklasse (EN 13501-1) | B-s1,d0 | B-s1,d0 | B-s1,d0 |
-| Diktes | 12 / 24 / 36 mm | 19 mm | 8–19 mm |
+| Brandklasse (EN 13501-1) | B-s1,d0 (wit, grijs, zwart), B-s2,d0 (andere kleuren) | B-s1,d0 (brandvertragende MDF-kern) | B-s1,d0 (brandvertragende MDF-kern) |
+| Diktes | 12 / 24 / 36 mm | 10 / 19 mm | 10 / 19 mm |
 
-*αw (ISO 11654) en NRC (ASTM C423) zijn twee verschillende maatstaven en zijn niet één op één te vergelijken; de meetwaarden per product staan op de productpagina. rWood Micro combineert de absorptie van de viltkern met het Helmholtz-effect van duizenden micro-perforaties.
+*αw (ISO 11654) en NRC (ASTM C423) zijn twee verschillende maatstaven en zijn niet één op één te vergelijken; de meetwaarden per product staan op de productpagina. rWood Micro werkt met geluidskamers in de MDF-kern achter de micro-perforaties en een akoestisch vlies; met 50 mm minerale wol in de spouw stijgt de αw tot 1,00.
 
-Klasse A (αw ≥ 0,90) halen rWood Groove en rWood Micro, net als onze textielreeks Interior (αw 1,0); voor de meeste kantoren, scholen en horecazaken is klasse B (αw 0,80–0,85) al ruim voldoende. Dikkere panelen en een luchtspouw achter het paneel verbeteren vooral de lage tonen. Wil je weten hoeveel m² je nodig hebt, lees dan [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig).
+Klasse A (αw ≥ 0,90) halen rWood Groove en rWood Micro, net als onze textielreeks Interior (αw 1,0); voor de meeste kantoren, scholen en horecazaken is klasse B (αw 0,80–0,85) al ruim voldoende. Dikkere panelen en een luchtspouw achter het paneel verbeteren vooral de lage tonen: een rPET Panel van 12 mm gaat van αw 0,25 rechtstreeks op de wand naar 0,60 met een spouw van 50 mm en 1,00 met een spouw van 50 mm en 50 mm steenwol. Wil je weten hoeveel m² je nodig hebt, lees dan [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig).
 
 ## Uitzicht en interieur
 
 **PET** is kleur. [rPET Groove](/nl/products/rpet-groove) en [rPET Panel](/nl/products/rpet-panel) komen in tien voorraadkleuren en elke kleur op bestelling, en beide laten zich bedrukken en frezen. Het resultaat is grafisch en modern: een gekleurde wand in een open kantoor, een logo in het vilt, ronde vormen in een kinderdagverblijf. rPET Flex Groove buigt bovendien om kolommen en gebogen wanden.
 
-**Hout** is warmte. rWood Groove en Perf in eik en notelaar, [rWood Panel](/nl/products/rwood-veneer) in acht fineersoorten, rWood Micro met een bijna gesloten oppervlak dat van op twee meter als een strak houten paneel oogt. In directiekantoren, receptiezones, restaurants en aula's wint hout het bijna altijd op uitstraling, en het combineert met bestaande houten meubels en vloeren.
+**Hout** is warmte. rWood Groove in eik en notelaar (vijf voorraadfineren, elk ander fineer op bestelling), rWood Micro en Perf in acht voorraadfineren, [rWood Panel](/nl/products/rwood-veneer) in de twaalf fineren uit onze kleuren- en afwerkingsgids, en rWood Micro met een bijna gesloten oppervlak dat van op twee meter als een strak houten paneel oogt. In directiekantoren, receptiezones, restaurants en aula's wint hout het bijna altijd op uitstraling, en het combineert met bestaande houten meubels en vloeren.
 
 Vaak is het antwoord niet óf-óf: hout op de blikvangerwand, PET op de lange wanden en het plafond.
 
@@ -61,10 +61,10 @@ Vaak is het antwoord niet óf-óf: hout op de blikvangerwand, PET op de lange wa
 Voor publieke gebouwen is de brandklasse volgens EN 13501-1 vaak een harde eis.
 
 - **rPET Panel, Groove en Flex Groove**: B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren — beperkt brandbaar, weinig rookontwikkeling, geen brandende druppels. B-s1,d0 is de hoogste praktische klasse voor een decoratief interieurmateriaal onder de A-klasse.
-- **rWood Groove, Perf en Micro**: B-s1,d0, geschikt voor de strengste eisen in publieke gebouwen.
+- **rWood Groove, Perf en Micro**: B-s1,d0 op de brandvertragende MDF-kern, geschikt voor de strengste eisen in publieke gebouwen.
 - **rWood Panel**: B-s1,d0 op een brandvertragende MDF-kern, D-s2,d0 op standaard MDF.
 
-Voor de binnenlucht: rPET is OEKO-TEX® Standard 100 gecertificeerd. Voor het fineer van rWood werken we met FSC-gecertificeerd Europees hout; op aanvraag leveren we het chain-of-custody-certificaatnummer per levering.
+Voor de binnenlucht: rPET is OEKO-TEX® Standard 100 gecertificeerd. Voor rWood werken we uitsluitend met FSC®-gecertificeerd fineer (chain-of-custody-certificaat C191539); de fineren komen uit Europa, Scandinavië en Noord-Amerika.
 
 ## Duurzaamheid: gerecycleerd versus hernieuwbaar
 
@@ -72,15 +72,15 @@ Beide reeksen zijn circulair ontworpen, met een ander accent.
 
 **rPET** vertrekt van post-consumer PET-flessen die gesorteerd, gewassen, versnipperd en tot vezel gesmolten worden; rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET. Aan het einde van de levensduur nemen we de panelen gratis terug en gaan ze opnieuw de keten in.
 
-**rWood** combineert een hernieuwbare grondstof (FSC-fineer) met een kern van gerecycleerd vilt. Bij terugname scheiden we fineer en kern; voor rWood Panel is een EPD (milieuproductverklaring) beschikbaar, handig voor BREEAM- en WELL-dossiers.
+**rWood** vertrekt van een hernieuwbare grondstof: FSC®-gecertificeerd fineer (certificaat C191539) op een MDF-kern. Ook rWood nemen we aan het einde van de levensduur gratis terug; voor rWood Panel is een EPD (milieuproductverklaring) beschikbaar, handig voor BREEAM- en WELL-dossiers.
 
 Wie op één cijfer selecteert, kiest rPET Panel of rPET Flex Groove (volledig gerecycleerd PET). Wie een biobased uitstraling wil met een gedocumenteerde levenscyclus, kiest hout met EPD.
 
 ## Verwerking, montage en onderhoud
 
-**PET laat zich bewerken als MDF**: zagen met een cirkelzaag of CNC, boren, schilderen met water- of solventgedragen verf, zonder speciale bescherming. Dat maakt het de favoriet van schrijnwerkers en interieurbouwers die panelen op maat in kasten, balies en wanden verwerken. Montage met clips of lijm; rPET Groove weegt weinig, dus ook plafonds zijn haalbaar.
+**PET laat zich bewerken als MDF**: zagen met een cirkelzaag of CNC, boren, schilderen met water- of solventgedragen verf, zonder speciale bescherming. Dat maakt het de favoriet van schrijnwerkers en interieurbouwers die panelen op maat in kasten, balies en wanden verwerken. Montage met lijm, Z-clips, schroeven of op latten; rPET Groove weegt weinig, dus ook plafonds zijn haalbaar.
 
-**Hout vraagt precisie.** rWood Groove en Micro monteer je met een onzichtbaar clipsysteem (snel te plaatsen en te demonteren) of verlijmd voor vaste installaties. Over-gefineerde randen zorgen voor naadloze aansluitingen; zaagsneden op de werf zie je dus best te vermijden of vooraf in te plannen. Hout is gevoeliger voor stoten op hoeken en voor vocht.
+**Hout vraagt precisie.** rWood Groove bevestig je met tand-en-groef op latten of verlijm je op de ondergrond; rWood Micro en Perf klik je zonder gereedschap in een onzichtbaar clipsysteem op rails, met optioneel minerale wol in de spouw. Over-gefineerde randen zorgen voor naadloze aansluitingen; zaagsneden op de werf zie je dus best te vermijden of vooraf in te plannen. Hout is gevoeliger voor stoten op hoeken en voor vocht.
 
 **Onderhoud**: PET stofzuig je; vlekken behandel je plaatselijk. Hout stof je af en behandel je zoals een meubel. Beide reeksen zijn bedoeld om twintig jaar of langer mee te gaan.
 
@@ -89,7 +89,8 @@ Wie op één cijfer selecteert, kiest rPET Panel of rPET Flex Groove (volledig g
 Per vierkante meter is PET-vilt het budgetvriendelijkste van de twee, hout het premiumproduct; de exacte prijs hangt af van dikte, patroon, fineersoort en hoeveelheid, dus vraag een offerte met je oppervlakte. Levertijden uit eigen productie:
 
 - **rPET**: ongeveer 3 à 4 werkweken; maatkleuren op aanvraag.
-- **rWood**: voorraadfineren binnen 3 à 4 weken; niet-voorraadsoorten en maatwerk 6 à 8 weken.
+- **rWood Micro en Perf**: voorraadfineren binnen 3 à 4 weken; niet-voorraadsoorten en maatwerk 6 à 8 weken.
+- **rWood Groove**: levertermijn afhankelijk van de voorraad, bevestigd bij de bestelling.
 
 Grote projecten (vanaf 500 m²) plannen we in productiebatches met een bindende datum. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
 
@@ -100,7 +101,7 @@ Grote projecten (vanaf 500 m²) plannen we in productiebatches met een bindende 
 | Kleur, grafisch ontwerp, logo's, ronde vormen | rPET Groove / rPET Panel |
 | Gebogen wanden en kolommen | rPET Flex Groove |
 | Zelf verwerken in meubels, balies, kasten | rPET Panel |
-| Brandklasse B-s1,d0 vereist in een publiek gebouw | rPET Groove, rPET Flex Groove of rWood (Groove, Micro, Perf) |
+| Brandklasse B-s1,d0 vereist in een publiek gebouw | rPET in wit, grijs of zwart, of rWood (Groove, Micro, Perf) op de brandvertragende MDF-kern |
 | Representatieve ruimte, warmte, combinatie met houten interieur | rWood Groove / rWood Panel |
 | Aula, auditorium, restaurant met hoge eisen aan uitzicht én absorptie | rWood Micro |
 | Hoogste gerecycleerd gehalte | rPET Panel / rPET Flex Groove |
@@ -116,9 +117,9 @@ Nog twijfel? Het gratis stalenpakket bevat A4-stalen van elke reeks en elke afwe
 Nee. rWood Groove en rWood Micro halen αw 0,90 (ISO 11654, klasse A); rPET Groove wordt per dikte met een NRC opgegeven (0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm). Het verschil zit in het uitzicht, de brandklasse en de prijs, niet in de akoestiek.
 
 **Kan ik PET-panelen en houten panelen combineren?**
-Ja, en dat is vaak de beste oplossing: hout op de wand die je ziet, PET op de lange wanden of het plafond. Beide zijn met hetzelfde clipsysteem te monteren en samen terug te nemen.
+Ja, en dat is vaak de beste oplossing: hout op de wand die je ziet, PET op de lange wanden of het plafond. Beide reeksen nemen we aan het einde van hun levensduur gratis terug.
 
 **Welk paneel is het duurzaamst?**
-rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET; rWood combineert FSC-fineer met een kern van gerecycleerd vilt en heeft voor rWood Panel een EPD. Beide nemen we aan het einde van hun levensduur gratis terug.
+rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET; rWood combineert FSC®-gecertificeerd fineer (certificaat C191539) met een MDF-kern en heeft voor rWood Panel een EPD. Beide nemen we aan het einde van hun levensduur gratis terug.
 
 *Bronnen: ISO 11654 (geluidsabsorptieklassen); ASTM C423 (NRC); EN 13501-1 (brandclassificatie); OEKO-TEX® Standard 100; FSC; productgegevens en testrapporten Re-Sound rPET en rWood.*

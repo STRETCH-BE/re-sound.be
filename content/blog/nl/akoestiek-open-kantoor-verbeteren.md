@@ -56,7 +56,7 @@ Vuistregel: 60 tot 80 % van het plafondoppervlak absorberend maken lost in de me
 Wanden komen na het plafond, maar niet zomaar overal. Geluid weerkaatst het hardst op de wanden tegenover de bron en op de lange wanden van een rechthoekige ruimte. Daar horen de panelen:
 
 - **[rPET Groove](/nl/products/rpet-groove)** (gegroefd, tien voorraadkleuren en elke kleur op bestelling, 12/24/36 mm) voor grote wandvlakken die kleur mogen hebben. NRC 0,55 / 0,75 / 0,90 naargelang de dikte, brandklasse B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren.
-- **rWood Groove of rWood Micro** waar het interieur warmte vraagt: FSC-fineer op een kern van gerecycleerd vilt, αw 0,90 (klasse A).
+- **rWood Groove of rWood Micro** waar het interieur warmte vraagt: FSC®-gecertificeerd fineer op een MDF-kern (bij Groove MDF-lamellen op 3 mm vilt van gerecycleerd PET, bij Micro een brandvertragende MDF-kern met geluidskamers), αw 0,90 (klasse A).
 - **Interior**, onze modulaire textielpanelen met afneembare, wasbare hoes, voor zones waar panelen vaak vervangen of verplaatst worden.
 
 Hang panelen op oorhoogte tot ongeveer 2,2 m: daar gebeurt de reflectie van spraak. Een paneel boven de kasten doet veel minder dan hetzelfde paneel achter een bureau.
@@ -90,7 +90,7 @@ Een realistische volgorde voor een open kantoor van 300 m² met dertig werkplekk
 3. **Twee tot drie belcabines** en, als er vergaderzalen tekort zijn, één Duo of Modular XL.
 4. **Divide-modules** tussen de teams en afspraken over gebruik.
 
-Elke stap is los uit te voeren en te meten. Onze panelen leveren we uit voorraad in twee tot vier weken, cabines in vier tot zes weken, en aan het einde van hun levensduur nemen we alles gratis terug in de Benelux, Frankrijk en Duitsland. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas en Częstochowa, wat betekent dat je met de mensen praat die het product ontwerpen.
+Elke stap is los uit te voeren en te meten. rPET leveren we in ongeveer 3 à 4 werkweken, rWood Micro en Perf in voorraadfineren in 3 à 4 weken en rWood Groove met een levertermijn die we bij de bestelling bevestigen; cabines leveren we in vier tot zes weken, en aan het einde van hun levensduur nemen we alles gratis terug in de Benelux, Frankrijk en Duitsland. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas en Częstochowa, wat betekent dat je met de mensen praat die het product ontwerpen.
 
 **Wil je weten waar jouw kantoor staat?** Vraag een gratis stalenpakket aan of boek een bezoek aan de showroom in Beveren-Waas, waar alle panelen en cabines geïnstalleerd staan.
 

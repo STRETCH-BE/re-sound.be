@@ -16,10 +16,10 @@ dateModified: "2026-09-12"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/hoeveel-panelen-nodig.jpg"
 heroAlt: "Plattegrond van een vergaderzaal met ingetekende rPET Groove panelen op de lange wanden"
-internalLinks: ["/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/interior","/nl/products/houten-akoestische-panelen","https://stretchplafond.be/products/acoustic-stretch-system","/nl/faq","/nl/where-to-buy"]
+internalLinks: ["/nl/products/pet-akoestische-panelen","/nl/products/rpet-panel","/nl/products/rpet-groove","/nl/products/interior","/nl/products/houten-akoestische-panelen","https://stretchplafond.be/products/acoustic-stretch-system","/nl/faq","/nl/where-to-buy"]
 cta: "Stuur ons de afmetingen van je ruimte en we rekenen het na"
 sources: "W.C. Sabine, Collected Papers on Acoustics (formule van Sabine); ISO 11654 (absorptieklassen); ISO 3382-2 (meting van de nagalmtijd); NBN S 01-400-2 (akoestische criteria voor schoolgebouwen); productgegevens Re-Sound."
-faq: [{"question":"Hoeveel akoestische panelen heb ik nodig voor een kantoor van 100 m²?","answer":"Zonder absorberend plafond en met een hoogte van 3 m reken je op 30 à 35 m² wandpanelen van klasse A (zoals rWood Groove of Interior) om van 1,2 naar 0,7 s te gaan. Met een absorberend plafond volstaat 10 à 15 m² op de wanden."},{"question":"Maakt de dikte van het paneel veel uit?","answer":"Voor spraak (250–4000 Hz) doen 24 mm-panelen het werk; dikkere panelen of een luchtspouw erachter helpen vooral tegen lage tonen (installaties, muziek). Voor een kantoor of klas is 24 mm de standaardkeuze."},{"question":"Kan ik te veel panelen hangen?","answer":"Ja: onder 0,4 s klinkt een ruimte dof en gaan mensen luider praten omdat ze zichzelf niet meer horen. Mik op de richtwaarde en verdeel de panelen over de ruimte."}]
+faq: [{"question":"Hoeveel akoestische panelen heb ik nodig voor een kantoor van 100 m²?","answer":"Zonder absorberend plafond en met een hoogte van 3 m reken je op 30 à 35 m² wandpanelen van klasse A (zoals rWood Groove of Interior) om van 1,2 naar 0,7 s te gaan. Met een absorberend plafond volstaat 10 à 15 m² op de wanden."},{"question":"Maakt de dikte van het paneel veel uit?","answer":"Ja, en de montage maakt nog meer uit. Een rPET Panel van 12 mm haalt αw 0,25 rechtstreeks op de wand, 0,60 met een spouw van 50 mm, 0,80 met een spouw van 100 mm en 1,00 met een spouw van 50 mm en 50 mm steenwol erachter; bij rPET Groove stijgt de NRC met de dikte: 0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm. Een spouw of steenwol achter het paneel weegt vooral in de lage tonen door. Reken dus altijd met de waarde bij de montage die je gaat toepassen."},{"question":"Kan ik te veel panelen hangen?","answer":"Ja: onder 0,4 s klinkt een ruimte dof en gaan mensen luider praten omdat ze zichzelf niet meer horen. Mik op de richtwaarde en verdeel de panelen over de ruimte."}]
 draft: false
 wordCount: 1346
 ---
@@ -66,9 +66,9 @@ De **αw** (ISO 11654) is de gewogen absorptiecoëfficiënt van een paneel, van 
 | D | 0,30 – 0,55 |
 | E | 0,15 – 0,25 |
 
-Onze reeksen: **[Interior](/nl/products/interior)** (textiel) αw 1,0, klasse A. **[rWood Groove](/nl/products/rwood-groove)** en **rWood Micro** αw 0,90, klasse A. **[rPET Groove](/nl/products/rpet-groove)** wordt per dikte met een NRC opgegeven: 0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm. Dikkere panelen en een luchtspouw achter het paneel verbeteren vooral de lage tonen; voor spraak (250–4000 Hz) doen 24 mm-panelen het werk.
+Onze reeksen: **[Interior](/nl/products/interior)** (textiel) αw 1,0, klasse A. **[rWood Groove](/nl/products/rwood-groove)** en **rWood Micro** αw 0,90, klasse A. **[rPET Panel](/nl/products/rpet-panel)** van 12 mm hangt af van de montage: αw 0,25 (klasse D) rechtstreeks op de wand, 0,60 (C) met een spouw van 50 mm, 0,80 (B) met een spouw van 100 mm en 1,00 (A) met een spouw van 50 mm en 50 mm steenwol. **[rPET Groove](/nl/products/rpet-groove)** wordt per dikte met een NRC opgegeven (ASTM C423): 0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm; daarmee reken je niet in de formule van Sabine, want die vraagt een αw. Dikte en vooral montage bepalen dus wat een paneel absorbeert, en een spouw of steenwol achter het paneel weegt vooral in de lage tonen door: reken altijd met de waarde bij de montage die je gaat toepassen.
 
-Reken altijd met het effectieve oppervlak van het paneel: een Solid-paneel van 1.200 × 600 mm telt voor 0,72 m².
+Reken altijd met het effectieve oppervlak van het paneel: een Solid-paneel van 1.200 × 600 mm telt voor 0,72 m², een rPET Panel van 2.800 × 1.220 mm voor 3,42 m².
 
 ## Rekenvoorbeeld 1: vergaderzaal 56 m³
 
@@ -132,7 +132,7 @@ Wil je het zelf proberen? De [nagalmcalculator](/nl/acoustic-calculator) rekent 
 Zonder absorberend plafond en met een hoogte van 3 m reken je op 30 à 35 m² wandpanelen van klasse A (zoals rWood Groove of Interior) om van 1,2 naar 0,7 s te gaan. Met een absorberend plafond volstaat 10 à 15 m² op de wanden.
 
 **Maakt de dikte van het paneel veel uit?**
-Voor spraak (250–4000 Hz) doen 24 mm-panelen het werk; dikkere panelen of een luchtspouw erachter helpen vooral tegen lage tonen (installaties, muziek). Voor een kantoor of klas is 24 mm de standaardkeuze.
+Ja, en de montage maakt nog meer uit. Een rPET Panel van 12 mm haalt αw 0,25 rechtstreeks op de wand, 0,60 met een spouw van 50 mm, 0,80 met een spouw van 100 mm en 1,00 met een spouw van 50 mm en 50 mm steenwol erachter; bij rPET Groove stijgt de NRC met de dikte: 0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm. Een spouw of steenwol achter het paneel weegt vooral in de lage tonen door. Reken dus altijd met de waarde bij de montage die je gaat toepassen.
 
 **Kan ik te veel panelen hangen?**
 Ja: onder 0,4 s klinkt een ruimte dof en gaan mensen luider praten omdat ze zichzelf niet meer horen. Mik op de richtwaarde en verdeel de panelen over de ruimte.
