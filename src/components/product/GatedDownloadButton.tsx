@@ -1,9 +1,10 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import { useLocale } from 'next-intl';
 import { useState, type ReactNode } from 'react';
 
-import type { LeadFormData } from '@/components/sections/LeadGenModal';
+import type { LeadFormData, LeadModalResult } from '@/components/sections/LeadGenModal';
 import { analytics, setEnhancedConversionsUserData } from '@/lib/analytics';
 
 // Only mounts after a click, so the modal stays out of the initial bundle.
@@ -11,46 +12,68 @@ const LeadGenModal = dynamic(() => import('@/components/sections/LeadGenModal'),
 
 interface GatedDownloadButtonProps {
   slug: string;
-  file: string;
+  documentId: string;
   label: string;
   icon: ReactNode;
   format: string;
-  /** e.g. "Available on request" */
+  /** e.g. "Sent to your inbox" */
   hint: string;
 }
 
+interface DocumentResponse {
+  success?: boolean;
+  /** true when the visitor's copy went out through the mail flow */
+  emailSent?: boolean;
+  /** true when the lead reached the inbox at Re-Sound */
+  leadForwarded?: boolean;
+  /** the document's URL, only when the e-mail could not be sent */
+  file?: string;
+  fileName?: string;
+  error?: string;
+}
+
 /**
- * Lead-gated download (BIM / DWG only). PDFs are plain links — see
- * ProductDownloads. This is the one piece of the downloads block that still
- * needs client JavaScript, and it hydrates as a tiny island.
+ * A document card. Click → lead form → POST /api/document, which e-mails
+ * the document to the address given and the lead to Re-Sound → the modal
+ * confirms where the document went. When the mail flow is down the route
+ * hands back the file URL and the modal offers a direct download instead,
+ * so a visitor never leaves empty-handed.
  */
-export default function GatedDownloadButton({ slug, file, label, icon, format, hint }: GatedDownloadButtonProps) {
+export default function GatedDownloadButton({ slug, documentId, label, icon, format, hint }: GatedDownloadButtonProps) {
+  const locale = useLocale();
   const [open, setOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [result, setResult] = useState<LeadModalResult | null>(null);
+
+  const close = () => {
+    setOpen(false);
+    setResult(null);
+  };
 
   const handleSubmit = async (data: LeadFormData) => {
     setSubmitting(true);
+    setResult(null);
     try {
-      const response = await fetch('/api/lead', {
+      const response = await fetch('/api/document', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          downloadedFile: file.split('/').pop(),
-          source: `${slug} Product Page`,
-        }),
+        body: JSON.stringify({ ...data, slug, documentId, locale }),
       });
-
-      if (!response.ok) {
-        alert('Something went wrong. Please try again.');
+      let body: DocumentResponse = {};
+      try {
+        body = (await response.json()) as DocumentResponse;
+      } catch {
+        body = {};
+      }
+      if (!response.ok || !body.success) {
+        setResult({ status: 'error' });
         return;
       }
 
-      setOpen(false);
       try {
         await setEnhancedConversionsUserData(data.email, data.phone);
-        analytics.generateLead({ product: slug, source: 'gated_download_modal' });
-        analytics.fileDownload(slug, file.split('/').pop() || '');
+        if (body.leadForwarded !== false) analytics.generateLead({ product: slug, source: 'document_request' });
+        analytics.documentRequested(slug, documentId, body.emailSent ? 'email' : 'download');
       } catch (err) {
         console.warn('Analytics dispatch failed:', err);
       }
@@ -67,15 +90,14 @@ export default function GatedDownloadButton({ slug, file, label, icon, format, h
         /* Clarity may not be loaded */
       }
 
-      const link = document.createElement('a');
-      link.href = file;
-      link.download = file.split('/').pop() || 'download';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      setResult(
+        body.emailSent
+          ? { status: 'sent', email: data.email }
+          : { status: 'fallback', email: data.email, file: body.file ?? null, fileName: body.fileName ?? null }
+      );
     } catch (error) {
-      console.error('Error submitting lead:', error);
-      alert('Something went wrong. Please try again.');
+      console.error('Error requesting document:', error);
+      setResult({ status: 'error' });
     } finally {
       setSubmitting(false);
     }
@@ -94,10 +116,11 @@ export default function GatedDownloadButton({ slug, file, label, icon, format, h
       {open && (
         <LeadGenModal
           isOpen={open}
-          onClose={() => setOpen(false)}
+          onClose={close}
           onSubmit={handleSubmit}
-          downloadFile={file}
+          documentLabel={label}
           isSubmitting={submitting}
+          result={result}
         />
       )}
     </>

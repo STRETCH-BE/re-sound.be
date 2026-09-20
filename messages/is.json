@@ -772,8 +772,8 @@
     "contactUs": "Hafðu samband"
   },
   "leadModal": {
-    "title": "Hlaða niður tæknilegum gögnum",
-    "subtitle": "Fylltu inn upplýsingarnar þínar til að fá aðgang að vörulýsingunum okkar",
+    "title": "Fáðu skjalið sent í tölvupósti",
+    "subtitle": "Skildu eftir upplýsingarnar þínar og við sendum það í pósthólfið þitt innan nokkurra mínútna.",
     "companyName": "Nafn fyrirtækis",
     "companyNamePlaceholder": "Sláðu inn nafn fyrirtækis",
     "firstName": "Fornafn",
@@ -789,8 +789,8 @@
     "companyType": "Tegund fyrirtækis",
     "companyTypePlaceholder": "Velja...",
     "consent": "Ég samþykki að fá samskipti frá Re-Sound og samþykki persónuverndarstefnuna.",
-    "submit": "Hlaða niður núna",
-    "submitting": "Vinnur úr...",
+    "submit": "Senda mér skjalið",
+    "submitting": "Sendi…",
     "positions": {
       "owner": "Eigandi / Forstjóri",
       "director": "Framkvæmdastjóri",
@@ -815,7 +815,18 @@
       "retail": "Smásala",
       "other": "Annað"
     },
-    "honeypot": "Skildu þennan reit eftir auðan"
+    "honeypot": "Skildu þennan reit eftir auðan",
+    "privacyNote": "Við notum upplýsingarnar þínar til að senda skjalið og fylgja verkefninu þínu eftir. Ekkert fréttabréf án þíns samþykkis.",
+    "error": "Eitthvað fór úrskeiðis. Reyndu aftur eða sendu póst á info@re-sound.be og við sendum það handvirkt.",
+    "success": {
+      "title": "Athugaðu pósthólfið þitt",
+      "body": "Við höfum sent „{document}“ á {email}.",
+      "note": "Það berst yfirleitt innan nokkurra mínútna. Ef ekki, athugaðu ruslpóstmöppuna eða skrifaðu á info@re-sound.be.",
+      "fallbackTitle": "Sækja skjalið",
+      "fallbackBody": "Póstþjónustan okkar svarar ekki í augnablikinu svo við gátum ekki sent „{document}“ í tölvupósti. Þú getur sótt það hér í staðinn.",
+      "download": "Sækja PDF",
+      "close": "Loka"
+    }
   },
   "productPage": {
     "nav": {
@@ -828,7 +839,18 @@
       "colors": "Litir",
       "patterns": "Mynstur",
       "sustainability": "Sjálfbærni",
-      "installation": "Uppsetning"
+      "installation": "Uppsetning",
+      "buildUp": "Uppbygging",
+      "finishes": "Yfirborð",
+      "veneers": "Spónn",
+      "ordering": "Pöntun",
+      "processing": "Vinnsla",
+      "flexibility": "Sveigjanleiki",
+      "perforations": "Götun",
+      "formats": "Stærðir",
+      "applications": "Notkun",
+      "variants": "Útfærslur",
+      "technicalData": "Tæknilegar upplýsingar"
     },
     "tags": {
       "acousticWallPanels": "HLJÓÐDEYFIPLÖTUR Á VEGGI",
@@ -873,7 +895,10 @@
       "warranty": "Ábyrgðarskírteini",
       "cadDrawing": "CAD-teikning (DWG)",
       "installationGuide": "Uppsetningarleiðbeiningar",
-      "gatedHint": "Fáanlegt eftir beiðni"
+      "gatedHint": "Fáanlegt eftir beiðni",
+      "gatedIntro": "Skildu eftir upplýsingarnar þínar og við sendum þér skjalið í tölvupósti.",
+      "emailHint": "sent í tölvupósti",
+      "materialDatasheet": "Vörugagnablað rPET Panel (grunnefni)"
     },
     "specs": {
       "dimensions": "Mál",
@@ -984,7 +1009,27 @@
       "selectVeneer": "Velja viðarspóninn {name}",
       "select": "Velja {name}"
     },
-    "classA": "Flokkur A"
+    "classA": "Flokkur A",
+    "ordering": {
+      "tag": "PÖNTUN",
+      "leadTime": "Afhendingartími",
+      "minimumOrder": "Lágmarkspöntun",
+      "samples": "Sýnishorn",
+      "freeSamples": "Ókeypis sýnishorn",
+      "sizes": "Stærðir",
+      "prices": "Verð",
+      "onRequest": "Eftir fyrirspurn",
+      "delivery": "Afhending",
+      "versions": "Útgáfur",
+      "madeIn": "Framleitt í",
+      "endOfLife": "Lok líftíma",
+      "takeBack": "Re-Sound tekur við plötum án endurgjalds við lok líftíma í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg.",
+      "samplesQuotes": "Sýnishorn og tilboð",
+      "requestSamples": "Biðja um sýnishorn",
+      "requestQuote": "Biðja um tilboð",
+      "dataNote": "Upplýsingarnar endurspegla núverandi þekkingu okkar og geta breyst án fyrirvara.",
+      "calculatedNote": "Gildi merkt ≈ eru reiknuð."
+    }
   },
   "interiorPage": {
     "hero": {
@@ -4882,5 +4927,15 @@
       "q3": "Þarf ég að velja ákveðnar seríur?",
       "a3": "Settið inniheldur allar seríur og áferðir. Með því að haka við seríurnar sem þú hefur áhuga á segir þú okkur hverjar skipta máli fyrir verkefnið þitt."
     }
+  },
+  "documentEmail": {
+    "subject": "{document} fyrir {product}",
+    "heading": "{document}",
+    "greeting": "Halló {name},",
+    "intro": "Takk fyrir áhugann á {product}. Umbeðið skjal, {document}, er á bak við hnappinn hér að neðan.",
+    "button": "Opna skjalið",
+    "linkNote": "Ef hnappurinn virkar ekki skaltu afrita þennan tengil í vafrann þinn:",
+    "nextSteps": "Spurningar, sýnishorn eða tilboð? Svaraðu þessum pósti eða hringdu í +32 3 284 68 18. Vörusíðan:",
+    "signature": "Með kveðju,\nRe-Sound teymið\nVörumerki Stretch Group"
   }
 }

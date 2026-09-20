@@ -57,6 +57,12 @@ const nextConfig = {
         ],
       },
       {
+        // Product documents are e-mailed through the lead form; the files
+        // stay reachable for those e-mails but are not to be indexed.
+        source: '/documents/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex' }],
+      },
+      {
         source: '/:file(favicon.ico|apple-touch-icon.png|icon-192.png)',
         headers: [
           {

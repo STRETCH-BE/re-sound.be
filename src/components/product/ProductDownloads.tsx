@@ -1,8 +1,7 @@
-import { existsSync } from 'node:fs';
-import { join } from 'node:path';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import type { DocumentId, Product } from '@/data/products';
+import { resolveDocuments } from '@/lib/documents';
 import GatedDownloadButton from './GatedDownloadButton';
 import Icon, { type IconName } from '@/components/ui/Icon';
 
@@ -16,6 +15,7 @@ interface ProductDownloadsProps {
 /** Message keys (under `productPage.downloads`) per document id. */
 const LABEL_KEY: Record<DocumentId, string> = {
   datasheet: 'productDataSheet',
+  'material-datasheet': 'materialDatasheet',
   'installation-guide': 'installationGuide',
   'installation-manual': 'installationManual',
   'acoustic-test-report': 'acousticTestReport',
@@ -28,6 +28,7 @@ const LABEL_KEY: Record<DocumentId, string> = {
 
 const ICON: Record<DocumentId, IconName> = {
   datasheet: 'document',
+  'material-datasheet': 'document',
   'installation-guide': 'wrench',
   'installation-manual': 'list',
   'acoustic-test-report': 'chart',
@@ -41,18 +42,14 @@ const ICON: Record<DocumentId, IconName> = {
 /**
  * Downloads — server component.
  *
- * Every PDF is an open `<a href download>` link (crawlable, no lead form).
- * Only gated files (BIM/DWG) go through the existing lead-gen modal, via
- * the small client component <GatedDownloadButton>.
+ * One card per document that exists under public/documents (resolved for the
+ * page locale by src/lib/documents.ts). Every card opens the lead form; the
+ * document is then e-mailed to the visitor by /api/document, so no PDF is
+ * linked openly here. The card is the only client island of the block.
  */
-/** Open files are only linked when they exist under public/ (see docs/missing-documents.md). */
-function isAvailable(file: string, gated?: boolean): boolean {
-  return Boolean(gated) || existsSync(join(process.cwd(), 'public', file));
-}
-
 export default async function ProductDownloads({ product, tag, title, intro }: ProductDownloadsProps) {
-  const t = await getTranslations('productPage.downloads');
-  const documents = product.documents.filter((doc) => isAvailable(doc.file, doc.gated));
+  const [t, locale] = await Promise.all([getTranslations('productPage.downloads'), getLocale()]);
+  const documents = resolveDocuments(product, locale);
   if (documents.length === 0) return null;
 
   return (
@@ -60,37 +57,22 @@ export default async function ProductDownloads({ product, tag, title, intro }: P
       <div className="ps-header">
         <span className="section-tag">{tag}</span>
         <h2>{title}</h2>
-        {intro && <p>{intro}</p>}
+        <p>{intro ?? t('gatedIntro')}</p>
       </div>
 
       <ul className="ps-downloads-grid">
-        {documents.map((doc) => {
-          const label = t(LABEL_KEY[doc.id]);
-          const ext = doc.file.split('.').pop()?.toUpperCase() ?? 'PDF';
-          return (
-            <li key={doc.id}>
-              {doc.gated ? (
-                <GatedDownloadButton
-                  slug={product.slug}
-                  file={doc.file}
-                  label={label}
-                  icon={<Icon name={ICON[doc.id]} size={26} />}
-                  format={ext}
-                  hint={t('gatedHint')}
-                />
-              ) : (
-                <a href={doc.file} download className="ps-download-card">
-                  <span className="ps-download-icon" aria-hidden="true"><Icon name={ICON[doc.id]} size={26} /></span>
-                  <span className="ps-download-info">
-                    <span className="ps-download-label">{label}</span>
-                    <span className="ps-download-meta">{ext}</span>
-                  </span>
-                  <span className="ps-download-arrow" aria-hidden="true">↓</span>
-                </a>
-              )}
-            </li>
-          );
-        })}
+        {documents.map((doc) => (
+          <li key={doc.id}>
+            <GatedDownloadButton
+              slug={product.slug}
+              documentId={doc.id}
+              label={t(LABEL_KEY[doc.id])}
+              icon={<Icon name={ICON[doc.id]} size={26} />}
+              format={doc.format}
+              hint={t('emailHint')}
+            />
+          </li>
+        ))}
       </ul>
     </section>
   );

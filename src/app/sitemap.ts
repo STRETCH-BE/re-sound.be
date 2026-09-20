@@ -1,5 +1,4 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { MetadataRoute } from 'next';
 
@@ -19,8 +18,8 @@ import { SEO_LOCALES, defaultLocale } from '@/i18n/config';
  *   the crawl budget. Re-enable a locale in src/i18n/config.ts.
  * - Every URL carries hreflang alternates for the same locales + x-default.
  * - Range hubs use their localised slug per locale (src/data/hubs.ts).
- * - Product documents (open PDFs that exist under public/documents) are
- *   listed once; they are not localised.
+ * - Product documents (public/documents) are not listed: every document is
+ *   e-mailed through the lead form and /documents carries X-Robots-Tag noindex.
  * - lastmod is real: the last git commit that touched the page's source
  *   files, falling back to the content's `updatedAt` (products, hubs), the
  *   post date (blog) or the route's `updated` value when git history is not
@@ -198,22 +197,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // The four message-driven posts of January 2024 (src/data/legacy-posts.ts)
     // are deliberately absent: they are noindex and stay reachable only as
     // links until they are rewritten to current facts.
-  }
-
-  // Product documents: open PDFs that actually exist (see docs/missing-documents.md)
-  for (const slug of PRODUCT_SLUGS) {
-    const product = PRODUCTS[slug];
-    for (const doc of product.documents) {
-      if (doc.gated) continue;
-      const rel = join('public', doc.file);
-      if (!existsSync(join(process.cwd(), rel))) continue;
-      entries.push({
-        url: `${base}${doc.file}`,
-        lastModified: lastModified([rel], product.updatedAt),
-        changeFrequency: 'yearly',
-        priority: 0.3,
-      });
-    }
   }
 
   return entries;

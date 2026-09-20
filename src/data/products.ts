@@ -20,6 +20,8 @@ export type Certification = 'FSC' | 'OEKO-TEX' | 'EPD';
 
 export type DocumentId =
   | 'datasheet'
+  /** The datasheet of the panel a product is made from (rPET Groove and rPET Flex Groove: the rPET Panel) */
+  | 'material-datasheet'
   | 'installation-guide'
   | 'installation-manual'
   | 'acoustic-test-report'
@@ -29,12 +31,24 @@ export type DocumentId =
   | 'warranty'
   | 'cad-drawing';
 
+/**
+ * One downloadable document. Every document goes through the lead form and
+ * is e-mailed to the visitor (src/components/product/ProductDownloads.tsx,
+ * /api/document); nothing under /documents is linked openly or listed in the
+ * sitemap.
+ *
+ * `file` is the legacy location, /documents/<slug>/<id>.<ext>. The resolver in
+ * src/lib/documents.ts prefers Michael's upload naming in the same folder,
+ * re-sound-<slug or family>-<id>-<locale>.pdf (the page locale, else en), and
+ * falls back to `file`; a product without the file shows no card. `resolveAs`
+ * names the id to look for when the folder belongs to another product.
+ */
 export interface ProductDocument {
   id: DocumentId;
-  /** Root-relative path under public/, always /documents/<slug>/<doc>.<ext> */
+  /** Root-relative legacy path under public/, /documents/<slug>/<id>.<ext> */
   file: string;
-  /** Only BIM/DWG stays behind the lead-gen modal; PDFs are open links. */
-  gated?: boolean;
+  /** Document id used for the file lookup when it differs from `id` */
+  resolveAs?: DocumentId;
 }
 
 /** UN/CEFACT unit codes used by schema.org UnitPriceSpecification. */
@@ -120,11 +134,14 @@ const panelDocs = (slug: string): ProductDocument[] => [
   { id: 'sustainability-declaration', file: `/documents/${slug}/sustainability-declaration.pdf` },
 ];
 
+/** rPET Groove and rPET Flex Groove are cut from the rPET Panel: its datasheet is theirs too (Michael, 20 Sep 2026). */
+const RPET_PANEL_DATASHEET: ProductDocument = { id: 'material-datasheet', file: '/documents/rpet-panel/datasheet.pdf', resolveAs: 'datasheet' };
+
 const boothDocs = (slug: string): ProductDocument[] => [
   { id: 'datasheet', file: `/documents/${slug}/datasheet.pdf` },
   { id: 'installation-manual', file: `/documents/${slug}/installation-manual.pdf` },
   { id: 'acoustic-test-report', file: `/documents/${slug}/acoustic-test-report.pdf` },
-  { id: 'cad-drawing', file: `/documents/${slug}/cad-drawing.dwg`, gated: true },
+  { id: 'cad-drawing', file: `/documents/${slug}/cad-drawing.dwg` },
   { id: 'warranty', file: `/documents/${slug}/warranty.pdf` },
   { id: 'sustainability-declaration', file: `/documents/${slug}/sustainability-declaration.pdf` },
 ];
@@ -326,7 +343,7 @@ export const PRODUCTS: Record<string, Product> = {
     priceUnit: PER_M2,
     heroImage: '/images/products/rpet-groove/hero-rpet-groove.webp',
     cardImage: '/images/products/rpet-groove/gallery-1.jpg',
-    documents: panelDocs('rpet-groove'),
+    documents: [RPET_PANEL_DATASHEET, ...panelDocs('rpet-groove')],
     // NRC by thickness (12/24/36 mm). Old JSON-LD claimed αw 0.85 — unsupported, dropped.
     specs: { kind: 'panel', format: '600 / 1200 mm wide', thickness: '12 / 24 / 36 mm', alphaW: null, nrc: '0.55 / 0.75 / 0.90', fireClass: 'B-s1,d0', finishCount: 12 },
     faqKeys: RPET_FAQ,
@@ -346,7 +363,7 @@ export const PRODUCTS: Record<string, Product> = {
     priceUnit: PER_M2,
     heroImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
     cardImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
-    documents: panelDocs('rpet-flex-groove'),
+    documents: [RPET_PANEL_DATASHEET, ...panelDocs('rpet-flex-groove')],
     // Old JSON-LD claimed αw/NRC 0.80 — unsupported by the page, dropped.
     specs: { kind: 'panel', format: '1130 × 2880 mm', thickness: '9 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0', finishCount: 12 },
     faqKeys: RPET_FAQ,

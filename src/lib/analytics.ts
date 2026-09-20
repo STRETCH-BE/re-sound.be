@@ -228,6 +228,14 @@ export const analytics = {
       file_extension: 'pdf',
     }),
 
+  /**
+   * A product document requested through the lead form (datasheet, colour
+   * guide …). `delivery` says how the visitor got it: e-mailed by
+   * /api/document, or downloaded directly because the mail flow was down.
+   */
+  documentRequested: (product: string, documentId: string, delivery: 'email' | 'download') =>
+    track('document_request', { product, document: documentId, delivery }),
+
   /** Phone CTA click (tel: link) */
   phoneClick: (location: string) =>
     track('contact', { method: 'phone', location }),

@@ -16,20 +16,34 @@ export interface LeadFormData {
   website?: string;
 }
 
+/**
+ * What happened after the form was sent: the document went out by e-mail,
+ * the mail flow was down and a direct download is offered instead, or the
+ * request failed.
+ */
+export type LeadModalResult =
+  | { status: 'sent'; email: string }
+  | { status: 'fallback'; email: string; file: string | null; fileName: string | null }
+  | { status: 'error' };
+
 interface LeadGenModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (data: LeadFormData) => void;
-  downloadFile: string;
+  /** Translated name of the document, e.g. "Product data sheet" */
+  documentLabel: string;
   isSubmitting: boolean;
+  /** null while the form is open; set by the caller once /api/document answered */
+  result?: LeadModalResult | null;
 }
 
 export default function LeadGenModal({
   isOpen,
   onClose,
   onSubmit,
-  downloadFile,
+  documentLabel,
   isSubmitting,
+  result = null,
 }: LeadGenModalProps) {
   const t = useTranslations('leadModal');
 
@@ -109,7 +123,8 @@ export default function LeadGenModal({
 
   if (!isOpen) return null;
 
-  const displayName = downloadFile?.split('/').pop()?.replace('.pdf', '').replace(/-/g, ' ') || 'Document';
+  const displayName = documentLabel;
+  const done = result !== null && result.status !== 'error';
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -189,14 +204,71 @@ export default function LeadGenModal({
           <p style={{ fontSize: '0.95rem', color: 'rgba(255, 255, 255, 0.85)', margin: 0, position: 'relative', zIndex: 1 }}>
             {t('subtitle')}
           </p>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: 'rgba(255, 255, 255, 0.2)', padding: '0.35rem 0.75rem', borderRadius: '20px', fontSize: '0.8rem', color: 'white', marginTop: '0.75rem', position: 'relative', zIndex: 1, textTransform: 'capitalize' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: 'rgba(255, 255, 255, 0.2)', padding: '0.35rem 0.75rem', borderRadius: '20px', fontSize: '0.8rem', color: 'white', marginTop: '0.75rem', position: 'relative', zIndex: 1 }}>
             <Icon name="document" size={14} />
             {displayName}
           </div>
         </div>
 
+        {/* Confirmation: the document went out, or a direct download when the mail flow was down */}
+        {done && result && (
+          <div style={{ padding: '2rem 2.5rem 2.25rem' }} role="status" aria-live="polite">
+            <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#e8f4fc', color: '#197FC7', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                {result.status === 'sent' ? (
+                  <>
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </>
+                ) : (
+                  <>
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </>
+                )}
+              </svg>
+            </div>
+            <h4 style={{ margin: '0 0 0.5rem', fontSize: '1.25rem', color: '#0a1628' }}>
+              {result.status === 'sent' ? t('success.title') : t('success.fallbackTitle')}
+            </h4>
+            <p style={{ margin: '0 0 0.75rem', color: '#4b5563', lineHeight: 1.6 }}>
+              {result.status === 'sent'
+                ? t('success.body', { document: displayName, email: result.email })
+                : t('success.fallbackBody', { document: displayName })}
+            </p>
+            {result.status === 'sent' && (
+              <p style={{ margin: '0 0 1.25rem', color: '#6b7280', fontSize: '0.9rem', lineHeight: 1.6 }}>{t('success.note')}</p>
+            )}
+            {result.status === 'fallback' && result.file && (
+              <p style={{ margin: '0 0 1.25rem' }}>
+                <a
+                  href={result.file}
+                  download={result.fileName ?? undefined}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.85rem 1.5rem', background: 'linear-gradient(135deg, #197FC7 0%, #125a8c 100%)', color: 'white', borderRadius: '12px', fontWeight: 600, textDecoration: 'none' }}
+                >
+                  {t('success.download')}
+                </a>
+              </p>
+            )}
+            <button
+              type="button"
+              onClick={onClose}
+              style={{ padding: '0.75rem 1.25rem', background: '#fff', color: '#0a1628', border: '2px solid #e8ecf0', borderRadius: '10px', fontWeight: 600, cursor: 'pointer' }}
+            >
+              {t('success.close')}
+            </button>
+          </div>
+        )}
+
         {/* Body */}
+        {!done && (
         <div style={bodyStyle}>
+          {result?.status === 'error' && (
+            <p role="alert" style={{ margin: '0 0 1rem', padding: '0.75rem 1rem', background: '#fdecea', color: '#b3261e', borderRadius: '10px', fontSize: '0.9rem', lineHeight: 1.5 }}>
+              {t('error')}
+            </p>
+          )}
           <form id="lead-form" onSubmit={handleSubmit}>
             <div style={{ marginBottom: '1rem' }}>
               <label htmlFor="leadgen-companyname" style={labelStyle}>{t('companyName')} <span style={{ color: '#e53935' }}>*</span></label>
@@ -288,8 +360,10 @@ export default function LeadGenModal({
             </div>
           </form>
         </div>
+        )}
 
         {/* Footer */}
+        {!done && (
         <div style={footerStyle}>
           <button type="submit" form="lead-form" disabled={isSubmitting || !consentChecked} style={submitButtonStyle}>
             {isSubmitting ? (
@@ -299,16 +373,17 @@ export default function LeadGenModal({
               </>
             ) : (
               <>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
                 </svg>
                 {t('submit')}
               </>
             )}
           </button>
+          <p style={{ margin: '0.75rem 0 0', textAlign: 'center', color: '#6b7280', fontSize: '0.8rem' }}>{t('privacyNote')}</p>
         </div>
+        )}
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
     </div>

@@ -772,8 +772,8 @@
     "contactUs": "Contacteer Ons"
   },
   "leadModal": {
-    "title": "Technische Documentatie Downloaden",
-    "subtitle": "Vul je gegevens in om toegang te krijgen tot onze productspecificaties",
+    "title": "Ontvang het document per e-mail",
+    "subtitle": "Laat je gegevens achter en we sturen het binnen enkele minuten naar je inbox.",
     "companyName": "Bedrijfsnaam",
     "companyNamePlaceholder": "Vul je bedrijfsnaam in",
     "firstName": "Voornaam",
@@ -789,8 +789,8 @@
     "companyType": "Type Bedrijf",
     "companyTypePlaceholder": "Selecteer...",
     "consent": "Ik ga akkoord met het ontvangen van communicatie van Re-Sound en aanvaard het privacybeleid.",
-    "submit": "Nu Downloaden",
-    "submitting": "Verwerken...",
+    "submit": "Stuur mij het document",
+    "submitting": "Verzenden…",
     "positions": {
       "owner": "Eigenaar / CEO",
       "director": "Directeur / Manager",
@@ -815,7 +815,18 @@
       "retail": "Retail",
       "other": "Andere"
     },
-    "honeypot": "Laat dit veld leeg"
+    "honeypot": "Laat dit veld leeg",
+    "privacyNote": "We gebruiken je gegevens om het document te sturen en je project op te volgen. Geen nieuwsbrief zonder je toestemming.",
+    "error": "Er ging iets mis. Probeer het opnieuw of mail naar info@re-sound.be, dan sturen we het handmatig.",
+    "success": {
+      "title": "Kijk in je inbox",
+      "body": "We hebben “{document}” naar {email} gestuurd.",
+      "note": "Meestal komt het binnen enkele minuten aan. Zo niet, kijk dan in je spammap of mail naar info@re-sound.be.",
+      "fallbackTitle": "Download het document",
+      "fallbackBody": "Onze mailservice antwoordt momenteel niet, dus we konden “{document}” niet mailen. Je kunt het hier downloaden.",
+      "download": "Download de pdf",
+      "close": "Sluiten"
+    }
   },
   "productPage": {
     "nav": {
@@ -828,7 +839,18 @@
       "colors": "Kleuren",
       "patterns": "Patronen",
       "sustainability": "Duurzaamheid",
-      "installation": "Installatie"
+      "installation": "Installatie",
+      "buildUp": "Opbouw",
+      "finishes": "Afwerkingen",
+      "veneers": "Fineren",
+      "ordering": "Bestellen",
+      "processing": "Bewerken",
+      "flexibility": "Flexibiliteit",
+      "perforations": "Perforaties",
+      "formats": "Formaten",
+      "applications": "Toepassingen",
+      "variants": "Varianten",
+      "technicalData": "Technische gegevens"
     },
     "tags": {
       "acousticWallPanels": "AKOESTISCHE WANDPANELEN",
@@ -873,7 +895,10 @@
       "warranty": "Garantiecertificaat",
       "cadDrawing": "CAD-tekening (DWG)",
       "installationGuide": "Installatiegids",
-      "gatedHint": "Op aanvraag beschikbaar"
+      "gatedHint": "Op aanvraag beschikbaar",
+      "gatedIntro": "Laat je gegevens achter en we mailen je het document.",
+      "emailHint": "per e-mail",
+      "materialDatasheet": "Productfiche rPET Panel (basismateriaal)"
     },
     "specs": {
       "dimensions": "Afmetingen",
@@ -984,7 +1009,27 @@
       "selectVeneer": "Fineer {name} selecteren",
       "select": "{name} selecteren"
     },
-    "classA": "Klasse A"
+    "classA": "Klasse A",
+    "ordering": {
+      "tag": "BESTELLEN",
+      "leadTime": "Levertermijn",
+      "minimumOrder": "Minimale bestelling",
+      "samples": "Stalen",
+      "freeSamples": "Gratis stalen",
+      "sizes": "Afmetingen",
+      "prices": "Prijzen",
+      "onRequest": "Op aanvraag",
+      "delivery": "Levering",
+      "versions": "Versies",
+      "madeIn": "Gemaakt in",
+      "endOfLife": "Einde levensduur",
+      "takeBack": "Re-Sound neemt panelen aan het einde van hun levensduur gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg.",
+      "samplesQuotes": "Stalen en offertes",
+      "requestSamples": "Stalen aanvragen",
+      "requestQuote": "Offerte aanvragen",
+      "dataNote": "De gegevens geven onze huidige kennis weer en kunnen zonder kennisgeving veranderen.",
+      "calculatedNote": "Waarden met ≈ zijn berekend."
+    }
   },
   "interiorPage": {
     "hero": {
@@ -4882,5 +4927,15 @@
       "q3": "Moet ik specifieke reeksen kiezen?",
       "a3": "De set bevat elke reeks en afwerking. Door de reeksen aan te vinken waarin je geïnteresseerd bent, weten we welke voor jouw project belangrijk zijn."
     }
+  },
+  "documentEmail": {
+    "subject": "Je {document} voor {product}",
+    "heading": "Je {document}",
+    "greeting": "Hallo {name},",
+    "intro": "Bedankt voor je interesse in {product}. Het gevraagde document, {document}, staat achter de knop hieronder.",
+    "button": "Open {document}",
+    "linkNote": "Werkt de knop niet? Kopieer dan deze link in je browser:",
+    "nextSteps": "Vragen, stalen of een offerte? Antwoord op deze e-mail of bel +32 3 284 68 18. De productpagina:",
+    "signature": "Met vriendelijke groeten,\nHet Re-Sound-team\nEen merk van Stretch Group"
   }
 }

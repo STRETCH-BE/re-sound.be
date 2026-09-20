@@ -772,8 +772,8 @@
     "contactUs": "Contacte-nos"
   },
   "leadModal": {
-    "title": "Descarregar Documentação Técnica",
-    "subtitle": "Preencha os seus dados para aceder às nossas especificações de produto",
+    "title": "Receba o documento por e-mail",
+    "subtitle": "Deixe os seus dados e enviamo-lo para a sua caixa de entrada em poucos minutos.",
     "companyName": "Nome da Empresa",
     "companyNamePlaceholder": "Introduza o nome da sua empresa",
     "firstName": "Nome",
@@ -789,8 +789,8 @@
     "companyType": "Tipo de Empresa",
     "companyTypePlaceholder": "Selecionar...",
     "consent": "Aceito receber comunicações da Re-Sound e aceito a política de privacidade.",
-    "submit": "Transferir Agora",
-    "submitting": "A processar...",
+    "submit": "Enviar-me o documento",
+    "submitting": "A enviar…",
     "positions": {
       "owner": "Proprietário / CEO",
       "director": "Diretor / Gestor",
@@ -815,7 +815,18 @@
       "retail": "Retalho",
       "other": "Outro"
     },
-    "honeypot": "Deixe este campo vazio"
+    "honeypot": "Deixe este campo vazio",
+    "privacyNote": "Usamos os seus dados para enviar o documento e acompanhar o seu projeto. Sem newsletter sem o seu consentimento.",
+    "error": "Algo correu mal. Tente novamente ou escreva para info@re-sound.be e enviamos-lhe o documento manualmente.",
+    "success": {
+      "title": "Verifique a sua caixa de entrada",
+      "body": "Enviámos «{document}» para {email}.",
+      "note": "Normalmente chega em poucos minutos. Se não chegar, verifique a pasta de spam ou escreva para info@re-sound.be.",
+      "fallbackTitle": "Descarregue o documento",
+      "fallbackBody": "O nosso serviço de e-mail não está a responder neste momento, pelo que não conseguimos enviar «{document}». Pode descarregá-lo aqui.",
+      "download": "Descarregar o PDF",
+      "close": "Fechar"
+    }
   },
   "productPage": {
     "nav": {
@@ -828,7 +839,18 @@
       "colors": "Cores",
       "patterns": "Padrões",
       "sustainability": "Sustentabilidade",
-      "installation": "Instalação"
+      "installation": "Instalação",
+      "buildUp": "Composição",
+      "finishes": "Acabamentos",
+      "veneers": "Folheados",
+      "ordering": "Encomenda",
+      "processing": "Maquinação",
+      "flexibility": "Flexibilidade",
+      "perforations": "Perfurações",
+      "formats": "Formatos",
+      "applications": "Aplicações",
+      "variants": "Variantes",
+      "technicalData": "Dados técnicos"
     },
     "tags": {
       "acousticWallPanels": "PAINÉIS ACÚSTICOS DE PAREDE",
@@ -873,7 +895,10 @@
       "warranty": "Certificado de garantia",
       "cadDrawing": "Desenho CAD (DWG)",
       "installationGuide": "Guia de instalação",
-      "gatedHint": "Disponível a pedido"
+      "gatedHint": "Disponível a pedido",
+      "gatedIntro": "Deixe os seus dados e enviamos-lhe o documento por e-mail.",
+      "emailHint": "por e-mail",
+      "materialDatasheet": "Ficha técnica rPET Panel (material base)"
     },
     "specs": {
       "dimensions": "Dimensões",
@@ -984,7 +1009,27 @@
       "selectVeneer": "Selecionar o folheado {name}",
       "select": "Selecionar {name}"
     },
-    "classA": "Classe A"
+    "classA": "Classe A",
+    "ordering": {
+      "tag": "ENCOMENDA",
+      "leadTime": "Prazo de entrega",
+      "minimumOrder": "Encomenda mínima",
+      "samples": "Amostras",
+      "freeSamples": "Amostras gratuitas",
+      "sizes": "Dimensões",
+      "prices": "Preços",
+      "onRequest": "Sob consulta",
+      "delivery": "Entrega",
+      "versions": "Versões",
+      "madeIn": "Fabricado em",
+      "endOfLife": "Fim de vida",
+      "takeBack": "A Re-Sound recolhe gratuitamente os painéis no fim de vida na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo.",
+      "samplesQuotes": "Amostras e orçamentos",
+      "requestSamples": "Pedir amostras",
+      "requestQuote": "Pedir orçamento",
+      "dataNote": "Os dados refletem o nosso conhecimento atual e podem mudar sem aviso prévio.",
+      "calculatedNote": "Os valores assinalados com ≈ são calculados."
+    }
   },
   "interiorPage": {
     "hero": {
@@ -4882,5 +4927,15 @@
       "q3": "Tenho de escolher gamas específicas?",
       "a3": "O kit contém todas as gamas e acabamentos. Ao assinalar as gamas que lhe interessam, indica-nos quais são relevantes para o seu projeto."
     }
+  },
+  "documentEmail": {
+    "subject": "A sua {document} de {product}",
+    "heading": "A sua {document}",
+    "greeting": "Olá {name},",
+    "intro": "Obrigado pelo seu interesse em {product}. O documento pedido, {document}, está atrás do botão abaixo.",
+    "button": "Abrir o documento",
+    "linkNote": "Se o botão não funcionar, copie esta ligação para o seu navegador:",
+    "nextSteps": "Perguntas, amostras ou um orçamento? Responda a este e-mail ou ligue para +32 3 284 68 18. A página do produto:",
+    "signature": "Com os melhores cumprimentos,\nA equipa Re-Sound\nUma marca do Stretch Group"
   }
 }

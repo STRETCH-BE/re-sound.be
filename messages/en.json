@@ -772,8 +772,8 @@
     "contactUs": "Contact Us"
   },
   "leadModal": {
-    "title": "Download Technical Documentation",
-    "subtitle": "Fill in your details to access our product specifications",
+    "title": "Receive the document by e-mail",
+    "subtitle": "Leave your details and we send it to your inbox within a few minutes.",
     "companyName": "Company Name",
     "companyNamePlaceholder": "Enter your company name",
     "firstName": "First Name",
@@ -789,8 +789,8 @@
     "companyType": "Type of Company",
     "companyTypePlaceholder": "Select...",
     "consent": "I agree to receive communications from Re-Sound and accept the privacy policy.",
-    "submit": "Download Now",
-    "submitting": "Processing...",
+    "submit": "Send me the document",
+    "submitting": "Sending…",
     "positions": {
       "owner": "Owner / CEO",
       "director": "Director / Manager",
@@ -815,7 +815,18 @@
       "retail": "Retail",
       "other": "Other"
     },
-    "honeypot": "Leave this field empty"
+    "honeypot": "Leave this field empty",
+    "privacyNote": "We use your details to send the document and to follow up on your project. No newsletter without your consent.",
+    "error": "Something went wrong. Please try again, or e-mail info@re-sound.be and we send it by hand.",
+    "success": {
+      "title": "Check your inbox",
+      "body": "We have sent “{document}” to {email}.",
+      "note": "It usually arrives within a few minutes. If it does not, look in your spam folder or write to info@re-sound.be.",
+      "fallbackTitle": "Download the document",
+      "fallbackBody": "Our mail service is not answering right now, so we could not e-mail “{document}”. You can download it here instead.",
+      "download": "Download the PDF",
+      "close": "Close"
+    }
   },
   "productPage": {
     "nav": {
@@ -828,7 +839,18 @@
       "colors": "Colors",
       "patterns": "Patterns",
       "sustainability": "Sustainability",
-      "installation": "Installation"
+      "installation": "Installation",
+      "buildUp": "Build-up",
+      "finishes": "Finishes",
+      "veneers": "Veneers",
+      "ordering": "Ordering",
+      "processing": "Processing",
+      "flexibility": "Flexibility",
+      "perforations": "Perforations",
+      "formats": "Formats",
+      "applications": "Applications",
+      "variants": "Variants",
+      "technicalData": "Technical data"
     },
     "tags": {
       "acousticWallPanels": "ACOUSTIC WALL PANELS",
@@ -873,7 +895,10 @@
       "warranty": "Warranty certificate",
       "cadDrawing": "CAD drawing (DWG)",
       "installationGuide": "Installation Guide",
-      "gatedHint": "Available on request"
+      "gatedHint": "Available on request",
+      "gatedIntro": "Leave your details and we e-mail you the document.",
+      "emailHint": "sent by e-mail",
+      "materialDatasheet": "rPET Panel data sheet (base material)"
     },
     "specs": {
       "dimensions": "Dimensions",
@@ -984,7 +1009,27 @@
       "selectVeneer": "Select {name} veneer",
       "select": "Select {name}"
     },
-    "classA": "Class A"
+    "classA": "Class A",
+    "ordering": {
+      "tag": "ORDERING",
+      "leadTime": "Lead time",
+      "minimumOrder": "Minimum order",
+      "samples": "Samples",
+      "freeSamples": "Free samples",
+      "sizes": "Sizes",
+      "prices": "Prices",
+      "onRequest": "On request",
+      "delivery": "Delivery",
+      "versions": "Versions",
+      "madeIn": "Made in",
+      "endOfLife": "End of life",
+      "takeBack": "Re-Sound takes panels back free of charge at end of life in Belgium, the Netherlands, France, Germany and Luxembourg.",
+      "samplesQuotes": "Samples and quotes",
+      "requestSamples": "Request samples",
+      "requestQuote": "Request a quote",
+      "dataNote": "Data reflects our current knowledge and may change without notice.",
+      "calculatedNote": "Values marked ≈ are calculated."
+    }
   },
   "interiorPage": {
     "hero": {
@@ -4879,5 +4924,15 @@
       "q3": "Do I have to choose specific ranges?",
       "a3": "The kit contains every range and finish. Ticking the ranges you are interested in tells us which ones matter for your project."
     }
+  },
+  "documentEmail": {
+    "subject": "Your {document} for {product}",
+    "heading": "Your {document}",
+    "greeting": "Hello {name},",
+    "intro": "Thank you for your interest in {product}. The {document} you requested is behind the button below.",
+    "button": "Open the {document}",
+    "linkNote": "If the button does not work, copy this link into your browser:",
+    "nextSteps": "Questions, samples or a quote? Reply to this e-mail or call +32 3 284 68 18. The product page:",
+    "signature": "Kind regards,\nThe Re-Sound team\nA Stretch Group brand"
   }
 }

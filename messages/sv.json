@@ -772,8 +772,8 @@
     "contactUs": "Kontakta oss"
   },
   "leadModal": {
-    "title": "Ladda ner teknisk dokumentation",
-    "subtitle": "Fyll i dina uppgifter för att få tillgång till våra produktspecifikationer",
+    "title": "Få dokumentet via e-post",
+    "subtitle": "Fyll i dina uppgifter så skickar vi det till din inkorg inom några minuter.",
     "companyName": "Företagsnamn",
     "companyNamePlaceholder": "Ange ditt företagsnamn",
     "firstName": "Förnamn",
@@ -789,8 +789,8 @@
     "companyType": "Typ av företag",
     "companyTypePlaceholder": "Välj...",
     "consent": "Jag samtycker till att ta emot kommunikation från Re-Sound och godkänner integritetspolicyn.",
-    "submit": "Ladda ner nu",
-    "submitting": "Bearbetar...",
+    "submit": "Skicka dokumentet till mig",
+    "submitting": "Skickar…",
     "positions": {
       "owner": "Ägare / VD",
       "director": "Direktör / Chef",
@@ -815,7 +815,18 @@
       "retail": "Detaljhandel",
       "other": "Annat"
     },
-    "honeypot": "Lämna det här fältet tomt"
+    "honeypot": "Lämna det här fältet tomt",
+    "privacyNote": "Vi använder dina uppgifter för att skicka dokumentet och följa upp ditt projekt. Inget nyhetsbrev utan ditt samtycke.",
+    "error": "Något gick fel. Försök igen eller skriv till info@re-sound.be så skickar vi det manuellt.",
+    "success": {
+      "title": "Kontrollera din inkorg",
+      "body": "Vi har skickat ”{document}” till {email}.",
+      "note": "Det kommer oftast inom några minuter. Om inte, kontrollera skräpposten eller skriv till info@re-sound.be.",
+      "fallbackTitle": "Ladda ner dokumentet",
+      "fallbackBody": "Vår e-posttjänst svarar inte just nu, så vi kunde inte skicka ”{document}”. Du kan ladda ner det här i stället.",
+      "download": "Ladda ner PDF",
+      "close": "Stäng"
+    }
   },
   "productPage": {
     "nav": {
@@ -828,7 +839,18 @@
       "colors": "Färger",
       "patterns": "Mönster",
       "sustainability": "Hållbarhet",
-      "installation": "Montering"
+      "installation": "Montering",
+      "buildUp": "Uppbyggnad",
+      "finishes": "Ytbehandlingar",
+      "veneers": "Faner",
+      "ordering": "Beställning",
+      "processing": "Bearbetning",
+      "flexibility": "Flexibilitet",
+      "perforations": "Perforeringar",
+      "formats": "Format",
+      "applications": "Användningsområden",
+      "variants": "Varianter",
+      "technicalData": "Tekniska data"
     },
     "tags": {
       "acousticWallPanels": "AKUSTISKA VÄGGPANELER",
@@ -873,7 +895,10 @@
       "warranty": "Garanticertifikat",
       "cadDrawing": "CAD-ritning (DWG)",
       "installationGuide": "Monteringsanvisning",
-      "gatedHint": "Tillgänglig på begäran"
+      "gatedHint": "Tillgänglig på begäran",
+      "gatedIntro": "Fyll i dina uppgifter så mejlar vi dokumentet till dig.",
+      "emailHint": "skickas via e-post",
+      "materialDatasheet": "Produktdatablad rPET Panel (basmaterial)"
     },
     "specs": {
       "dimensions": "Dimensioner",
@@ -984,7 +1009,27 @@
       "selectVeneer": "Välj träfaneret {name}",
       "select": "Välj {name}"
     },
-    "classA": "Klass A"
+    "classA": "Klass A",
+    "ordering": {
+      "tag": "BESTÄLLNING",
+      "leadTime": "Leveranstid",
+      "minimumOrder": "Minsta beställning",
+      "samples": "Prover",
+      "freeSamples": "Kostnadsfria prover",
+      "sizes": "Mått",
+      "prices": "Priser",
+      "onRequest": "På begäran",
+      "delivery": "Leverans",
+      "versions": "Versioner",
+      "madeIn": "Tillverkad i",
+      "endOfLife": "Slutet av livslängden",
+      "takeBack": "Re-Sound tar kostnadsfritt tillbaka paneler vid slutet av livslängden i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg.",
+      "samplesQuotes": "Prover och offerter",
+      "requestSamples": "Beställ prover",
+      "requestQuote": "Begär offert",
+      "dataNote": "Uppgifterna speglar vår nuvarande kunskap och kan ändras utan föregående meddelande.",
+      "calculatedNote": "Värden märkta med ≈ är beräknade."
+    }
   },
   "interiorPage": {
     "hero": {
@@ -4882,5 +4927,15 @@
       "q3": "Måste jag välja specifika serier?",
       "a3": "Kitet innehåller varje serie och finish. Genom att kryssa i de serier du är intresserad av berättar du för oss vilka som är relevanta för ditt projekt."
     }
+  },
+  "documentEmail": {
+    "subject": "Ditt {document} för {product}",
+    "heading": "Ditt {document}",
+    "greeting": "Hej {name},",
+    "intro": "Tack för ditt intresse för {product}. Dokumentet du bad om, {document}, finns bakom knappen nedan.",
+    "button": "Öppna dokumentet",
+    "linkNote": "Om knappen inte fungerar kan du kopiera den här länken till din webbläsare:",
+    "nextSteps": "Frågor, prover eller en offert? Svara på det här mejlet eller ring +32 3 284 68 18. Produktsidan:",
+    "signature": "Vänliga hälsningar\nRe-Sound-teamet\nEtt varumärke inom Stretch Group"
   }
 }
