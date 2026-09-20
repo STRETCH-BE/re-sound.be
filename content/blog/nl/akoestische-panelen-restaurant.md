@@ -12,7 +12,7 @@ category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-12-15"
 datePublished: "2026-09-06"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/akoestische-panelen-restaurant.jpg"
 heroAlt: "Restaurant met rWood Micro wandpanelen in eik achter de banken en een akoestisch plafond"

@@ -11,7 +11,7 @@ intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-10-13"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/solo-flex/hero-solo-flex.webp"
 heroImageMissing: "/images/blog/office-phone-booth-prices.jpg"
 heroAlt: "Solo Flex office phone booth for one person from Re-Sound, placed in an open-plan office"

@@ -12,7 +12,7 @@ category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-12-01"
 datePublished: "2026-09-06"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/nagalmtijd-klaslokaal.jpg"
 heroAlt: "Klaslokaal met rPET Groove panelen op de achterwand en een absorberend plafond"

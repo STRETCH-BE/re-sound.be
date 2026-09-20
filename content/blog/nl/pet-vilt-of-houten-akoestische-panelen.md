@@ -12,7 +12,7 @@ category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-11-03"
 datePublished: "2026-09-06"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-groove/hero-rWood-Groove.webp"
 heroImageMissing: "/images/blog/pet-vilt-of-hout.jpg"
 heroAlt: "rPET Groove in grijs naast rWood Groove in eikenfineer, close-up van de groeven"

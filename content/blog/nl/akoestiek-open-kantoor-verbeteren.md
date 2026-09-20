@@ -12,7 +12,7 @@ category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-10-20"
 datePublished: "2026-09-06"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/akoestiek-open-kantoor.jpg"
 heroAlt: "Open kantoor met rPET Groove wandpanelen en een Solo Flex belcabine"

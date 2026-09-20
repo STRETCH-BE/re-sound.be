@@ -11,7 +11,7 @@ intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-10-13"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/solo-flex/hero-solo-flex.webp"
 heroImageMissing: "/images/blog/telefonbox-buero-kosten.jpg"
 heroAlt: "Telefonbox Solo Flex von Re-Sound für eine Person, aufgestellt in einem offenen Büro"

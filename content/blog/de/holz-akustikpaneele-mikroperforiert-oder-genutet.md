@@ -11,7 +11,7 @@ intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-11-24"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/holz-akustikpaneele-mikroperforiert-oder-genutet.jpg"
 heroAlt: "Mikroperforiertes Holz-Akustikpaneel rWood Micro mit FSC-Furnier, Nahaufnahme der nahezu geschlossenen Oberfläche"

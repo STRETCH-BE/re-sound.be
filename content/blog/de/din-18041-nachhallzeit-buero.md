@@ -11,7 +11,7 @@ intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 datePublished: "2026-11-10"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/din-18041-nachhallzeit-buero.jpg"
 heroAlt: "Nahaufnahme eines Akustikpaneels rPET Groove aus grauem recyceltem PET-Filz mit tiefen Nuten"

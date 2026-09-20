@@ -12,7 +12,7 @@ category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
 plannedDate: "2026-11-17"
 datePublished: "2026-09-06"
-dateModified: "2026-09-12"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/hoeveel-panelen-nodig.jpg"
 heroAlt: "Plattegrond van een vergaderzaal met ingetekende rPET Groove panelen op de lange wanden"
