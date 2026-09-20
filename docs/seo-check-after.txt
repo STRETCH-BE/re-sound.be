@@ -1,11 +1,11 @@
-Re-Sound SEO check — 2026-09-20T19:05:10.038Z
+Re-Sound SEO check — 2026-09-20T20:27:45.137Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
 URLs in sitemap: 184
 Per locale: en=30, nl=36, fr=30, de=30, es=29, pt=29
-lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=48, 2026-09-13=22, 2026-09-20=96
-distinct lastmod values: 6
+lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=37, 2026-09-13=22, 2026-09-20=107
+distinct lastmod values: 9
 single-locale URLs (no hreflang by design): 6
 hreflang alternates per URL: min 0, max 7
 
@@ -16,12 +16,12 @@ OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-de: 0.3% English (5/1770 segments over 30 pages)
-es: 0.1% English (3/2019 segments over 29 pages)
-fr: 0.3% English (6/2053 segments over 30 pages)
-nl: 0.3% English (8/2297 segments over 36 pages)
+de: 0.3% English (5/1776 segments over 30 pages)
+es: 0.1% English (3/2021 segments over 29 pages)
+fr: 0.3% English (6/2055 segments over 30 pages)
+nl: 0.3% English (8/2307 segments over 36 pages)
     3.4%  /nl  (2/58)
-pt: 0.2% English (3/1967 segments over 29 pages)
+pt: 0.2% English (3/1969 segments over 29 pages)
 
 -- sample English segments per flagged page (max 12 each)
 /nl:
