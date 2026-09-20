@@ -6,30 +6,69 @@ import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { PRODUCTS } from '@/data/products';
+import { SHOWROOM } from '@/config/site';
 
-// Every figure below (recycled share, thickness) comes from product data so
-// copy, specs and JSON-LD can never disagree again. 'unknown' selects the
-// figure-less ICU branch; a null spec hides the element that would show it.
+/**
+ * rPET Flex Groove — product page. The Flex Groove is cut from the 9 mm
+ * rPET Panel (Michael, 20 September 2026), so material, surface weight,
+ * colours, reaction to fire, processing and lead time follow the rPET Panel
+ * datasheet (EN · 09/2026, v1.0). The 9 mm panel's absorption has not been
+ * measured, so the acoustics copy stays qualitative. The minimum bending
+ * radius (500 mm) is the earlier page figure — no datasheet source.
+ *
+ * Governed figures (recycled share, thickness, fire class, colour count,
+ * plant) come from src/data/products.ts. 'unknown' selects the figure-less
+ * ICU branch; a null spec hides the element that would show it.
+ */
 const FLEX = PRODUCTS['rpet-flex-groove'];
 const flexSpecs = FLEX.specs.kind === 'panel' ? FLEX.specs : null;
 const pct: string = FLEX.recycledContentPct === null ? 'unknown' : String(FLEX.recycledContentPct);
+const thicknessFigure = flexSpecs?.thickness ? flexSpecs.thickness.replace(/\s*mm$/, '') : null;
 
-// Color options for rPET Flex-Groove (12 colors from Refined Collection).
-// No per-colour product photography exists yet, so colours are rendered as
-// CSS swatch dots only — the hero image stays fixed on the default photo.
-const colorOptions = [
-  { id: 'ash', name: 'Ash', colorHex: '#B8B5AC' },
-  { id: 'basalt', name: 'Basalt', colorHex: '#4A4A4A' },
-  { id: 'brown', name: 'Brown', colorHex: '#6B4423' },
-  { id: 'fog', name: 'Fog', colorHex: '#D3D3D3' },
-  { id: 'gravel', name: 'Gravel', colorHex: '#7A7A7A' },
-  { id: 'moss', name: 'Moss', colorHex: '#4A5D23' },
-  { id: 'navy', name: 'Navy', colorHex: '#1B2838' },
-  { id: 'pine', name: 'Pine', colorHex: '#2D5A3D' },
-  { id: 'polar', name: 'Polar', colorHex: '#F5F5F5' },
-  { id: 'steel-blue', name: 'Steel Blue', colorHex: '#4682B4' },
-  { id: 'tan', name: 'Tan', colorHex: '#C4A77D' },
-  { id: 'teal', name: 'Teal', colorHex: '#367588' },
+// Earlier page figure, kept until Michael confirms its source (report).
+const MIN_BENDING_RADIUS_MM = '500';
+// rPET Panel datasheet page 1: 9 mm surface weight.
+const SURFACE_WEIGHT_9MM = '1.8';
+
+/**
+ * The stored EN 13501-1 class is written by colour, e.g.
+ * 'B-s1,d0 (white, grey, black) / B-s2,d0 (other colours)'. The classes are
+ * read from it here so the colour labels can be translated on the page; a
+ * single stored class is shown as one card.
+ */
+function fireClassesByColour(value: string | null | undefined): { light: string; other: string } | { single: string } | null {
+  if (!value) return null;
+  const parts = value
+    .split(' / ')
+    .map((p) => p.replace(/\s*\([^)]*\)\s*$/, '').trim())
+    .filter(Boolean);
+  if (parts.length >= 2) return { light: parts[0], other: parts[1] };
+  if (parts.length === 1) return { single: parts[0] };
+  return null;
+}
+
+const fireByColour = fireClassesByColour(flexSpecs?.fireClass);
+const fireKpi = fireByColour === null ? null : 'single' in fireByColour ? fireByColour.single : `${fireByColour.light} · ${fireByColour.other}`;
+
+// The ten stock colours of the rPET Panel datasheet (page 3), in its order.
+interface StockColour {
+  number: string;
+  id: string;
+  key: string;
+  src: string;
+}
+
+const STOCK_COLOURS: StockColour[] = [
+  { number: '01', id: 'light-grey', key: 'c01', src: '/images/products/rpet-panel/swatches/01-light-grey.webp' },
+  { number: '02', id: 'off-white', key: 'c02', src: '/images/products/rpet-panel/swatches/02-off-white.webp' },
+  { number: '03', id: 'sand', key: 'c03', src: '/images/products/rpet-panel/swatches/03-sand.webp' },
+  { number: '04', id: 'dusty-rose', key: 'c04', src: '/images/products/rpet-panel/swatches/04-dusty-rose.webp' },
+  { number: '05', id: 'deep-red', key: 'c05', src: '/images/products/rpet-panel/swatches/05-deep-red.webp' },
+  { number: '06', id: 'olive-green', key: 'c06', src: '/images/products/rpet-panel/swatches/06-olive-green.webp' },
+  { number: '07', id: 'forest-green', key: 'c07', src: '/images/products/rpet-panel/swatches/07-forest-green.webp' },
+  { number: '08', id: 'slate-blue', key: 'c08', src: '/images/products/rpet-panel/swatches/08-slate-blue.webp' },
+  { number: '09', id: 'silver-grey', key: 'c09', src: '/images/products/rpet-panel/swatches/09-silver-grey.webp' },
+  { number: '10', id: 'charcoal', key: 'c10', src: '/images/products/rpet-panel/swatches/10-charcoal.webp' },
 ];
 
 // Groove direction options
@@ -38,9 +77,10 @@ const directionOptions = [
   { id: 'width', nameKey: 'options.widthName', descriptionKey: 'options.widthDesc' },
 ];
 
-// Hero image — fixed; colour selection does not swap it because no
-// per-colour photography exists for this product.
-const defaultHeroImage = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
+// Hero image — fixed; the colour choice shows the datasheet swatch as an
+// inset preview because no per-colour photography exists for this product.
+const DEFAULT_HERO_IMAGE = '/images/products/rpet-flex-groove/rPET-Flex.jpg';
+const PHONE_DISPLAY = '+32 3 284 68 18';
 
 /**
  * Server-rendered sections are passed in as React nodes ("slots") so this
@@ -76,9 +116,8 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [selectedColor, setSelectedColor] = useState<typeof colorOptions[0] | null>(null);
+  const [selectedColour, setSelectedColour] = useState<StockColour | 'custom' | null>(null);
   const [selectedDirection, setSelectedDirection] = useState(directionOptions[0]);
-  const [isImageLoading, setIsImageLoading] = useState(false);
 
   // Fire a single view_item event on mount so GA4 / Meta see
   // the product impression. Empty deps array → fires once per page.
@@ -86,22 +125,23 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
     analytics.viewItem('rpet-flex-groove', 'rpet');
   }, []);
 
-  // Colour choice is a visual reference only — it never swaps the hero
-  // image (no per-colour photos exist), so no loading state is involved.
-  const handleColorSelect = (color: typeof colorOptions[0]) => {
-    if (!selectedColor || color.id !== selectedColor.id) {
-      setSelectedColor(color);
-    }
-  };
+  const colourName = (c: StockColour) => tPage(`rpet.colours.${c.key}`);
+  const selectedLabel =
+    selectedColour === null
+      ? tPage('rpet.colours.choose')
+      : selectedColour === 'custom'
+        ? tPage('rpet.colours.custom')
+        : tPage('rpet.colours.selected', { number: selectedColour.number, name: colourName(selectedColour) });
 
   const navItems = [
-    { id: 'overview', label: 'Overview' },
-    { id: 'flexibility', label: 'Flexibility' },
-    { id: 'colors', label: 'Colors' },
-    { id: 'acoustics', label: 'Acoustics' },
-    { id: 'installation', label: 'Installation' },
-    { id: 'specs', label: 'Specifications' },
-    { id: 'downloads', label: 'Downloads' },
+    { id: 'overview', label: tPage('nav.overview') },
+    { id: 'flexibility', label: tPage('nav.flexibility') },
+    { id: 'colors', label: tPage('nav.colors') },
+    { id: 'acoustics', label: tPage('nav.acoustics') },
+    { id: 'installation', label: tPage('nav.installation') },
+    { id: 'specs', label: tPage('nav.technicalData') },
+    { id: 'ordering', label: tPage('nav.ordering') },
+    { id: 'downloads', label: tPage('nav.downloads') },
   ];
 
   const scrollToSection = (id: string) => {
@@ -134,7 +174,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             {t('hero.description')}
           </p>
           <p className="hero-manufacturer">{tm('statement')}</p>
-          
+
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-text">{t('hero.usp1')}</span>
@@ -155,52 +195,96 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
               {tPage('cta.viewSpecifications')}
             </a>
           </div>
-
         </div>
-        
+
         <div className="hero-image">
           <div className="image-container">
-            <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
-              <Image
-                src={defaultHeroImage}
-                alt={t('alt.rpetFlexGrooveAcousticPanel')}
-                fill
-                sizes="(max-width: 1024px) 100vw, 600px"
-                style={{ objectFit: 'cover' }}
-                priority
-                onLoad={() => setIsImageLoading(false)}
-                onError={() => setIsImageLoading(false)}
-              />
-            </div>
-            {isImageLoading && (
-              <div className="image-loading-overlay">
-                <div className="loading-spinner"></div>
-              </div>
+            <Image
+              src={DEFAULT_HERO_IMAGE}
+              alt={t('alt.rpetFlexGrooveAcousticPanel')}
+              fill
+              sizes="(max-width: 1024px) 100vw, 600px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+            {selectedColour !== null && selectedColour !== 'custom' && (
+              <figure className="swatch-preview">
+                <div className="swatch-preview-image">
+                  <Image
+                    src={selectedColour.src}
+                    alt={tPage('rpet.colours.swatchAlt', { number: selectedColour.number, name: colourName(selectedColour) })}
+                    fill
+                    sizes="120px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+                <figcaption>
+                  <span className="swatch-number">{selectedColour.number}</span>
+                  {colourName(selectedColour)}
+                </figcaption>
+              </figure>
             )}
           </div>
-          
+
           <div className="color-selector">
-            <span className="selector-label">{t('hero.colorSelector')}</span>
+            <span className="selector-label">{tPage('rpet.colours.stockLabel')}</span>
             <div className="color-options">
-              {colorOptions.map((color) => (
+              {STOCK_COLOURS.map((colour) => (
                 <button
-                  key={color.id}
-                  className={`color-option ${selectedColor?.id === color.id ? 'active' : ''}`}
-                  onClick={() => handleColorSelect(color)}
-                  title={color.name}
-                  aria-label={tPage('a11y.selectColour', { name: color.name })}
-                  style={{ backgroundColor: color.colorHex }}
+                  key={colour.id}
+                  type="button"
+                  className={`color-option ${selectedColour !== null && selectedColour !== 'custom' && selectedColour.id === colour.id ? 'active' : ''}`}
+                  onClick={() => setSelectedColour(colour)}
+                  title={`${colour.number} ${colourName(colour)}`}
+                  aria-label={tPage('a11y.selectColour', { name: `${colour.number} ${colourName(colour)}` })}
+                  aria-pressed={selectedColour !== null && selectedColour !== 'custom' && selectedColour.id === colour.id}
                 >
-                  {selectedColor?.id === color.id && (
-                    <span className="color-check">✓</span>
-                  )}
+                  <Image src={colour.src} alt="" fill sizes="48px" style={{ objectFit: 'cover' }} />
                 </button>
               ))}
+              <button
+                type="button"
+                className={`color-option custom ${selectedColour === 'custom' ? 'active' : ''}`}
+                onClick={() => setSelectedColour('custom')}
+                title={tPage('rpet.colours.custom')}
+                aria-label={tPage('a11y.selectColour', { name: tPage('rpet.colours.custom') })}
+                aria-pressed={selectedColour === 'custom'}
+              >
+                <span aria-hidden="true">+</span>
+              </button>
             </div>
-            <span className="selected-color-name">{selectedColor?.name || t('hero.colorPlaceholder')}</span>
+            <span className="selected-color-name">{selectedLabel}</span>
           </div>
         </div>
       </section>
+
+      {/* KPI band — the four figures */}
+      <div className="kpi-band">
+        <div className="kpi-inner">
+          {thicknessFigure && (
+            <div className="kpi">
+              <span className="kpi-value">{thicknessFigure}</span>
+              <span className="kpi-label">{tPage('rpet.kpi.thickness')}</span>
+            </div>
+          )}
+          <div className="kpi">
+            <span className="kpi-value">{SURFACE_WEIGHT_9MM}</span>
+            <span className="kpi-label">{tPage('rpet.kpi.surfaceWeight')}</span>
+          </div>
+          {fireKpi && (
+            <div className="kpi">
+              <span className="kpi-value">{fireKpi}</span>
+              <span className="kpi-label">{tPage('rpet.kpi.fire')}</span>
+            </div>
+          )}
+          {flexSpecs?.finishCount !== null && flexSpecs?.finishCount !== undefined && (
+            <div className="kpi">
+              <span className="kpi-value">{flexSpecs.finishCount}</span>
+              <span className="kpi-label">{tPage('rpet.kpi.stockColours')}</span>
+            </div>
+          )}
+        </div>
+      </div>
 
       {/* Sticky Navigation */}
       <nav className="product-nav">
@@ -235,9 +319,6 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
             <p>{t('overview.description')}</p>
-            {desc2IfDistinct('overview') && (
-              <p>{desc2IfDistinct('overview')}</p>
-            )}
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
@@ -266,13 +347,10 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           <span className="section-tag">{t('technology.tag')}</span>
           <h2>{t('technology.title')}</h2>
           <p>{t('technology.description')}</p>
-          {desc2IfDistinct('technology') && (
-            <p>{desc2IfDistinct('technology')}</p>
-          )}
         </div>
 
         <div className="flexibility-visual">
-          <div className="flex-demo">
+          <div className="flex-demo" aria-hidden="true">
             <div className="panel-flat">
               <div className="groove-lines">
                 {[...Array(12)].map((_, i) => (
@@ -294,135 +372,203 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
 
           <div className="radius-indicator">
             <div className="radius-circle">
-              <span className="radius-value">R500</span>
+              <span className="radius-value">R{MIN_BENDING_RADIUS_MM}</span>
               <span className="radius-unit">mm</span>
             </div>
             <p>{t('technology.minRadius')}</p>
           </div>
         </div>
 
-        <div className="flexibility-benefits">
-          <div className="benefit">
-            <h4>{t('technology.feature1Title')}</h4>
-            <p>{t('technology.feature1Desc')}</p>
+        {/* Build-up — numbered layers */}
+        <div className="buildup-grid">
+          <div className="buildup-item">
+            <span className="buildup-number">01</span>
+            <h4>{t('buildUp.layer1Title')}</h4>
+            <p>{t('buildUp.layer1Desc', { pct })}</p>
           </div>
-          <div className="benefit">
-            <h4>{t('technology.feature2Title')}</h4>
-            <p>{t('technology.feature2Desc')}</p>
+          <div className="buildup-item">
+            <span className="buildup-number">02</span>
+            <h4>{t('buildUp.layer2Title')}</h4>
+            <p>{t('buildUp.layer2Desc')}</p>
           </div>
-          <div className="benefit">
-            <h4>{t('technology.feature3Title')}</h4>
-            <p>{t('technology.feature3Desc')}</p>
+          <div className="buildup-item">
+            <span className="buildup-number">03</span>
+            <h4>{t('buildUp.layer3Title')}</h4>
+            <p>{t('buildUp.layer3Desc')}</p>
           </div>
         </div>
+        <p className="material-link">
+          <Link href="/products/rpet-panel">{tPage('rpet.material.panelLink')}</Link>
+        </p>
       </section>
 
-      {/* Colors Section */}
+      {/* Colours Section — ten stock colours, any colour to order */}
       <section id="colors" className="content-section colors-section">
-        <div className="section-grid">
-          <div className="section-content">
+        <div className="ds-wrap">
+          <div className="colors-header">
             <span className="section-tag">{t('colors.tag')}</span>
             <h2>{t('colors.title')}</h2>
             <p>{t('colors.description')}</p>
-            {desc2IfDistinct('colors') && (
-              <p>{desc2IfDistinct('colors')}</p>
-            )}
-            
-            <div className="color-grid">
-              {colorOptions.map((color) => (
-                <div key={color.id} className="color-item">
-                  <span 
-                    className="color-swatch-large" 
-                    style={{ backgroundColor: color.colorHex }}
-                  />
-                  <span className="color-name">{color.name}</span>
-                </div>
-              ))}
-            </div>
+          </div>
 
+          <div className="swatch-grid">
+            {STOCK_COLOURS.map((colour) => {
+              const active = selectedColour !== null && selectedColour !== 'custom' && selectedColour.id === colour.id;
+              return (
+                <button
+                  key={colour.id}
+                  type="button"
+                  className={`swatch-card ${active ? 'active' : ''}`}
+                  onClick={() => setSelectedColour(colour)}
+                  aria-pressed={active}
+                  aria-label={tPage('a11y.selectColour', { name: `${colour.number} ${colourName(colour)}` })}
+                >
+                  <span className="swatch-image">
+                    <Image
+                      src={colour.src}
+                      alt={tPage('rpet.colours.swatchAlt', { number: colour.number, name: colourName(colour) })}
+                      fill
+                      sizes="(max-width: 480px) 20vw, (max-width: 1024px) 18vw, 110px"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </span>
+                  <span className="swatch-number">{colour.number}</span>
+                  <span className="swatch-name">{colourName(colour)}</span>
+                </button>
+              );
+            })}
+            <button
+              type="button"
+              className={`swatch-card custom ${selectedColour === 'custom' ? 'active' : ''}`}
+              onClick={() => setSelectedColour('custom')}
+              aria-pressed={selectedColour === 'custom'}
+              aria-label={tPage('a11y.selectColour', { name: tPage('rpet.colours.custom') })}
+            >
+              <span className="swatch-image custom-face">
+                <span aria-hidden="true">RAL · NCS</span>
+              </span>
+              <span className="swatch-number">+</span>
+              <span className="swatch-name">{tPage('rpet.colours.custom')}</span>
+            </button>
+          </div>
+
+          <div className="colour-notes">
+            <div className="colour-note">
+              <h3>{tPage('rpet.colours.madeToOrderTitle')}</h3>
+              <p>{tPage('rpet.colours.madeToOrderText')}</p>
+            </div>
+            <div className="colour-note">
+              <h3>{tPage('rpet.colours.batchTitle')}</h3>
+              <p>{tPage('rpet.colours.batchText')}</p>
+            </div>
+          </div>
+
+          <div className="direction-row">
             <div className="direction-options">
               <h4>{t('colors.grooveDir')}</h4>
               <div className="direction-selector">
                 {directionOptions.map((direction) => (
                   <button
                     key={direction.id}
+                    type="button"
                     className={`direction-option ${selectedDirection.id === direction.id ? 'active' : ''}`}
                     onClick={() => setSelectedDirection(direction)}
+                    aria-pressed={selectedDirection.id === direction.id}
+                    title={t(direction.descriptionKey)}
                   >
-                    <span className={`direction-icon ${direction.id}`}>
+                    <span className={`direction-icon ${direction.id}`} aria-hidden="true">
                       {direction.id === 'length' ? '|||' : '≡'}
                     </span>
                     <span className="direction-name">{t(direction.nameKey)}</span>
                   </button>
                 ))}
               </div>
+              <p className="direction-desc">{t(selectedDirection.descriptionKey)}</p>
             </div>
-          </div>
-          <div className="section-image">
-            <div className="image-container">
-              <Image
-                src="/images/products/rpet-flex-groove/rPET-Flex-hero_1.jpg"
-                alt={t('alt.rpetFlexGrooveColorOptions')}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-              />
+            <div className="direction-image">
+              <div className="image-container">
+                <Image
+                  src="/images/products/rpet-flex-groove/rPET-Flex-hero_1.jpg"
+                  alt={t('alt.rpetFlexGrooveColorOptions')}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Acoustic Performance Section */}
+      {/* Acoustics — qualitative: the 9 mm panel is not yet measured */}
       <section id="acoustics" className="content-section acoustics-section">
-        <div className="acoustics-header">
+        <div className="ds-wrap">
           <span className="section-tag">{t('acoustics.tag')}</span>
-          <h2>{t('acoustics.title')}</h2>
-          <p>{t('acoustics.description')}</p>
-          {desc2IfDistinct('acoustics') && (
-            <p>{desc2IfDistinct('acoustics')}</p>
-          )}
-        </div>
+          <h2>{tPage('rpet.acoustics.title')}</h2>
+          <p className="ds-lead">{tPage('rpet.acoustics.intro')}</p>
+          <p className="ds-lead">{t('acoustics.description')}</p>
 
-        <div className="acoustics-visual">
-          <div className="panel-cross-section">
-            <div className="cross-section-diagram flex">
-              <div className="diagram-layer pet-felt">
-                <span className="layer-label">{t('acoustics.layer1Label')}</span>
-              </div>
-              <div className="diagram-layer v-cuts">
-                <div className="v-cut"></div>
-                <div className="v-cut"></div>
-                <div className="v-cut"></div>
-                <div className="v-cut"></div>
-                <span className="layer-label">{t('acoustics.layer2Label')}</span>
-              </div>
+          <div className="acoustics-benefits">
+            <div className="benefit">
+              <h4>{t('acoustics.feature1Title')}</h4>
+              <p>{t('acoustics.feature1Desc')}</p>
+            </div>
+            <div className="benefit">
+              <h4>{tPage('rpet.acoustics.notMeasuredTitle')}</h4>
+              <p>{tPage('rpet.acoustics.notMeasured9')}</p>
+            </div>
+            <div className="benefit">
+              <h4>{t('acoustics.feature3Title', { pct })}</h4>
+              <p>{t('acoustics.feature3Desc')}</p>
             </div>
           </div>
-
-          <div className="material-info">
-            <div className="material-circle">
-              {flexSpecs?.thickness && <span className="material-value">{flexSpecs.thickness}</span>}
-              <span className="material-label">{t('acoustics.thicknessLabel')}</span>
-            </div>
-            <p>{t('acoustics.materialLabel')}</p>
-          </div>
-        </div>
-
-        <div className="acoustics-benefits">
-          <div className="benefit">
-            <h4>{t('acoustics.feature1Title')}</h4>
-            <p>{t('acoustics.feature1Desc')}</p>
-          </div>
-          <div className="benefit">
-            <h4>{t('acoustics.feature2Title')}</h4>
-            <p>{t('acoustics.feature2Desc')}</p>
-          </div>
-          <div className="benefit">
-            <h4>{t('acoustics.feature3Title', { pct })}</h4>
-            <p>{t('acoustics.feature3Desc')}</p>
-          </div>
+          <p className="ds-footnote">
+            <Link href="/products/rpet-panel">{tPage('rpet.acoustics.panelTableLink')}</Link>
+          </p>
         </div>
       </section>
+
+      {/* Fire safety — by colour (rPET Panel datasheet page 2) */}
+      {fireByColour && (
+        <section id="fire" className="content-section fire-section">
+          <div className="ds-wrap">
+            <div className="fire-grid">
+              <div className="fire-text">
+                <span className="section-tag">{tPage('rpet.fire.tag')}</span>
+                <h2>{tPage('rpet.fire.title')}</h2>
+                {'single' in fireByColour ? (
+                  <p className="ds-lead">{tPage('rpet.fire.textSingle', { cls: fireByColour.single })}</p>
+                ) : (
+                  <p className="ds-lead">{tPage('rpet.fire.text', { light: fireByColour.light, other: fireByColour.other })}</p>
+                )}
+                <p className="ds-footnote">{tPage('rpet.fire.reports')}</p>
+              </div>
+              <div className="fire-cards">
+                {'single' in fireByColour ? (
+                  <div className="fire-card">
+                    <h3>{tPage('rpet.fire.allColours')}</h3>
+                    <span className="fire-standard">{tPage('rpet.fire.classTo')}</span>
+                    <span className="fire-class">{fireByColour.single}</span>
+                  </div>
+                ) : (
+                  <>
+                    <div className="fire-card">
+                      <h3>{tPage('rpet.fire.whiteGreyBlack')}</h3>
+                      <span className="fire-standard">{tPage('rpet.fire.classTo')}</span>
+                      <span className="fire-class">{fireByColour.light}</span>
+                    </div>
+                    <div className="fire-card">
+                      <h3>{tPage('rpet.fire.otherColours')}</h3>
+                      <span className="fire-standard">{tPage('rpet.fire.classTo')}</span>
+                      <span className="fire-class">{fireByColour.other}</span>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Installation Section */}
       <section id="installation" className="content-section installation-section dark">
@@ -434,7 +580,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             {desc2IfDistinct('installation') && (
               <p>{desc2IfDistinct('installation')}</p>
             )}
-            
+
             <div className="installation-steps">
               <div className="install-step">
                 <div className="step-number">1</div>
@@ -487,7 +633,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <div className="image-container">
               <Image
                 src="/images/products/rpet-flex-groove/rPET-Flex-hero_3.jpg"
-                alt={t('alt.recycledPetBottles')}
+                alt={t('alt.rpetFlexGrooveCurvedWalls')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -498,20 +644,17 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
             <p>{t('sustainability.description', { pct })}</p>
-            {desc2IfDistinct('sustainability', { pct }) && (
-              <p>{desc2IfDistinct('sustainability', { pct })}</p>
-            )}
             <div className="sustainability-features">
               <div className="sustain-item">
                 <div>
                   <h4>{t('sustainability.badge1', { pct })}</h4>
-                  <p>{t('acoustics.feature3Desc')}</p>
+                  <p>{t('sustainability.badge1Desc')}</p>
                 </div>
               </div>
               <div className="sustain-item">
                 <div>
                   <h4>{t('sustainability.badge2')}</h4>
-                  <p>{t('sustainability.badge2Desc')}</p>
+                  <p>{tPage('rpet.ordering.endOfLifeText')}</p>
                 </div>
               </div>
               <div className="sustain-item">
@@ -523,7 +666,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
               <div className="sustain-item">
                 <div>
                   <h4>{t('sustainability.badge4')}</h4>
-                  <p>{t('sustainability.badge4Desc')}</p>
+                  <p>{tPage('ordering.takeBack')}</p>
                 </div>
               </div>
             </div>
@@ -531,8 +674,99 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
         </div>
       </section>
 
-      {/* Specifications — server-rendered (ProductSpecs) */}
+      {/* Technical data — server-rendered (ProductSpecs, src/data/specs/rpet-flex-groove.ts) */}
       {specs}
+
+      {/* Ordering — lead time as the rPET Panel; the rest on request */}
+      <section id="ordering" className="content-section ordering-section">
+        <div className="ds-wrap">
+          <span className="section-tag">{tPage('ordering.tag')}</span>
+          <h2>{tPage('rpet.ordering.title')}</h2>
+          <p className="ds-lead">{t('ordering.description')}</p>
+
+          <div className="ordering-grid">
+            <div className="table-scroll">
+              <table className="ds-table">
+                <thead>
+                  <tr>
+                    <th scope="col" colSpan={2}>{tPage('rpet.ordering.orderHead')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.minimumOrder')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.sizes')}</th>
+                    <td>{t('ordering.sizesValue')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.prices')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.samples')}</th>
+                    <td>{tPage('rpet.ordering.samplesValue')}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="table-scroll">
+              <table className="ds-table">
+                <thead>
+                  <tr>
+                    <th scope="col" colSpan={2}>{tPage('rpet.ordering.supplyHead')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.leadTime')}</th>
+                    <td>{tPage('rpet.ordering.leadTimeValue')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.delivery')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  {FLEX.madeIn && (
+                    <tr>
+                      <th scope="row">{tPage('ordering.madeIn')}</th>
+                      <td>{tm(`plant.${FLEX.madeIn}`)}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="dark-band">
+            <div className="band-col">
+              <h3>{tPage('ordering.endOfLife')}</h3>
+              <p>
+                {tPage('rpet.ordering.endOfLifeText')} {tPage('ordering.takeBack')}
+              </p>
+            </div>
+            <div className="band-col">
+              <h3>{tPage('ordering.samplesQuotes')}</h3>
+              <p>
+                <a href={`mailto:${SHOWROOM.email}`}>{SHOWROOM.email}</a>
+                {' · '}
+                <a href={SHOWROOM.telephoneHref} onClick={() => analytics.phoneClick('product_ordering_rpet-flex-groove')}>{PHONE_DISPLAY}</a>
+              </p>
+              <p>
+                {tPage('rpet.ordering.showroom')}: {SHOWROOM.streetAddress}, {SHOWROOM.postalCode} {tm('plant.BE')}
+              </p>
+              <div className="band-ctas">
+                <Link href="/samples" className="btn-band-primary" prefetch={false}>{tPage('ordering.requestSamples')}</Link>
+                <Link href="/contact" className="btn-band-secondary" onClick={() => analytics.quoteClick('rpet-flex-groove', 'product_ordering')}>{tPage('ordering.requestQuote')}</Link>
+              </div>
+            </div>
+          </div>
+          <p className="ds-footnote">
+            {tPage('ordering.dataNote')} {tPage('ordering.calculatedNote')}
+          </p>
+        </div>
+      </section>
 
       {/* Downloads — server-rendered (ProductDownloads) */}
       {downloads}
@@ -576,14 +810,11 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
         <div className="cta-content">
           <h2>{t('cta.title')}</h2>
           <p>{t('cta.description')}</p>
-          {desc2IfDistinct('cta') && (
-            <p>{desc2IfDistinct('cta')}</p>
-          )}
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large" onClick={() => analytics.quoteClick('rpet-flex-groove', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
-            <a href="tel:+3232846818" className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_rpet-flex-groove')}>
+            <a href={SHOWROOM.telephoneHref} className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_rpet-flex-groove')}>
               {tPage('cta.callUs')}
             </a>
           </div>
@@ -598,78 +829,112 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           --brand-blue: #197FC7;
           --brand-blue-dark: #155d94;
           --brand-blue-pale: #e8f4fc;
-          --deep-blue: #0a1628;
-          --cream: #f8f6f3;
+          --brand-blue-soft: #9fd0f5;
+          --deep-blue: #0d3a5c;
+          --cream: #f7f9fb;
           --charcoal: #333;
-          --pet-teal: #367588;
-          --pet-light: #5BA3B5;
+          --line: #e6ecf1;
+          --table-head: #f3f6f9;
         }
 
+        /* ── Shared datasheet-style primitives ─────────────────── */
+        .ds-wrap { max-width: 1200px; margin: 0 auto; }
+        .ds-lead { font-size: 1.05rem; color: #444; line-height: 1.75; max-width: 820px; margin: 0 0 1.5rem; }
+        .ds-footnote { font-size: 0.8rem; color: #767676; line-height: 1.5; margin: 1rem 0 0; }
+        .ds-footnote a { color: var(--brand-blue); }
+
+        .section-tag {
+          display: inline-block;
+          font-family: var(--font-body);
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: var(--brand-blue);
+          text-transform: uppercase;
+          letter-spacing: 0.14em;
+          margin-bottom: 0.75rem;
+        }
+        .content-section.dark .section-tag { color: var(--brand-blue-soft); }
+
+        .rpet-flex-groove-product-page h2 {
+          font-family: var(--font-heading);
+          font-size: 2.25rem;
+          color: var(--deep-blue);
+          letter-spacing: -0.5px;
+          line-height: 1.15;
+          margin: 0 0 1.25rem;
+        }
+        .content-section.dark h2 { color: white; }
+
+        .table-scroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+        .ds-table { width: 100%; min-width: 320px; border-collapse: collapse; font-size: 0.95rem; }
+        .ds-table thead th {
+          background: var(--table-head);
+          color: #555;
+          font-weight: 500;
+          font-size: 0.85rem;
+          text-align: left;
+          padding: 0.7rem 0.9rem;
+          border-bottom: 2px solid var(--brand-blue);
+          white-space: nowrap;
+        }
+        .ds-table tbody th,
+        .ds-table tbody td {
+          padding: 0.75rem 0.9rem;
+          border-bottom: 1px solid var(--line);
+          text-align: left;
+          vertical-align: top;
+        }
+        .ds-table tbody th { font-weight: 400; color: #444; width: 40%; }
+        .ds-table tbody td { color: var(--deep-blue); font-weight: 600; }
+
+        /* ── Hero ───────────────────────────────────────────────── */
         .product-hero {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 4rem;
-          padding: 8rem 4rem 4rem;
-          background: linear-gradient(135deg, var(--cream) 0%, white 100%);
-          min-height: 80vh;
+          padding: 8rem 4rem 3rem;
+          background: white;
           align-items: center;
         }
 
         .product-tag {
           display: inline-block;
-          background: var(--pet-teal);
-          color: white;
           font-size: 0.75rem;
           font-weight: 600;
-          padding: 0.5rem 1rem;
-          border-radius: 20px;
+          color: var(--brand-blue);
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 0.14em;
           margin-bottom: 1rem;
         }
 
         .hero-content h1 {
-          font-size: 4.5rem;
+          font-family: var(--font-heading);
+          font-size: 3.5rem;
           color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-          letter-spacing: -2px;
+          margin-bottom: 0.75rem;
+          letter-spacing: -1.5px;
+          line-height: 1.05;
         }
 
         .hero-tagline {
-          font-size: 1.5rem;
-          color: var(--pet-teal);
+          font-family: var(--font-heading);
+          font-size: 1.35rem;
+          color: var(--brand-blue);
           font-weight: 500;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.25rem;
+          line-height: 1.35;
         }
 
-        .hero-description {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.8;
-          margin-bottom: 2rem;
-          max-width: 500px;
-        }
+        .hero-description { font-size: 1.05rem; color: #444; line-height: 1.75; margin-bottom: 1rem; max-width: 540px; }
+        .hero-manufacturer { font-size: 0.9rem; color: #767676; margin-bottom: 1.5rem; }
 
-        .hero-usps {
-          display: flex;
-          gap: 2rem;
-          margin-bottom: 2rem;
-        }
-
-        .usp {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-        }
-
-        .usp-icon { font-size: 1.5rem; }
+        .hero-usps { display: flex; flex-wrap: wrap; gap: 0.75rem 1.75rem; margin-bottom: 2rem; }
+        .usp { display: flex; align-items: center; gap: 0.5rem; }
+        .usp::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand-blue); }
         .usp-text { font-weight: 600; color: var(--deep-blue); font-size: 0.9rem; }
 
-        .hero-ctas {
-          display: flex;
-          gap: 1rem;
-          margin-bottom: 1.5rem;
-        }
+        .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
 
         .btn-primary {
           display: inline-flex;
@@ -684,12 +949,7 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           border: none;
           cursor: pointer;
         }
-
-        .btn-primary:hover {
-          background: var(--brand-blue-dark);
-          transform: translateY(-2px);
-        }
-
+        .btn-primary:hover { background: var(--brand-blue-dark); transform: translateY(-2px); }
         .btn-primary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
 
         .btn-secondary {
@@ -705,142 +965,110 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           transition: all 0.3s ease;
           cursor: pointer;
         }
-
-        .btn-secondary:hover {
-          background: var(--deep-blue);
-          color: white;
-        }
-
+        .btn-secondary:hover { background: var(--deep-blue); color: white; }
         .btn-secondary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
 
-        .hero-price { font-size: 0.95rem; color: #666; }
-        .hero-price strong { color: var(--deep-blue); font-size: 1.2rem; }
-
-        .hero-image {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 1.5rem;
-        }
+        .hero-image { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem; }
 
         .image-container {
           position: relative;
           width: 100%;
           max-width: 600px;
           aspect-ratio: 4/5;
-          border-radius: 24px;
+          border-radius: 20px;
           overflow: hidden;
           background: var(--cream);
         }
 
-        .image-wrapper {
+        .swatch-preview {
           position: absolute;
-          inset: 0;
-          transition: opacity 0.3s ease;
-        }
-
-        .image-wrapper.loading { opacity: 0.7; }
-
-        .image-loading-overlay {
-          position: absolute;
-          inset: 0;
+          left: 1rem;
+          bottom: 1rem;
+          margin: 0;
           display: flex;
           align-items: center;
-          justify-content: center;
-          background: rgba(255, 255, 255, 0.5);
+          gap: 0.75rem;
+          padding: 0.5rem 0.9rem 0.5rem 0.5rem;
+          background: rgba(255, 255, 255, 0.94);
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
-
-        .loading-spinner {
-          width: 40px;
-          height: 40px;
-          border: 3px solid var(--brand-blue-pale);
-          border-top-color: var(--brand-blue);
-          border-radius: 50%;
-          animation: spin 0.8s linear infinite;
-        }
-
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .swatch-preview-image { position: relative; width: 56px; height: 84px; border-radius: 6px; overflow: hidden; flex: none; }
+        .swatch-preview figcaption { display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
+        .swatch-preview .swatch-number { font-size: 0.75rem; color: var(--brand-blue); letter-spacing: 0.08em; }
 
         .color-selector {
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 0.75rem;
-          padding: 1.25rem 2rem;
+          padding: 1.1rem 1.5rem;
           background: white;
+          border: 1px solid var(--line);
           border-radius: 16px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          width: 100%;
+          max-width: 600px;
         }
-
-        .selector-label {
-          font-size: 0.8rem;
-          font-weight: 600;
-          color: #767676;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .color-options { 
-          display: flex; 
-          gap: 0.5rem;
-          flex-wrap: wrap;
-          justify-content: center;
-          max-width: 320px;
-        }
-
+        .selector-label { font-size: 0.75rem; font-weight: 600; color: #767676; text-transform: uppercase; letter-spacing: 0.1em; }
+        .color-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
         .color-option {
           position: relative;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          border: 3px solid transparent;
+          width: 34px;
+          height: 52px;
+          border-radius: 6px;
+          border: 2px solid transparent;
+          background: var(--cream);
           padding: 0;
+          overflow: hidden;
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
-        .color-option:hover { transform: scale(1.15); }
-
-        .color-option.active {
-          border-color: var(--brand-blue);
-          box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue);
-        }
-
-        .color-check {
-          position: absolute;
-          inset: 0;
+        .color-option:hover { transform: translateY(-2px); }
+        .color-option.active { border-color: var(--brand-blue); box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue); }
+        .color-option.custom {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 0.8rem;
-          font-weight: bold;
-          color: white;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+          border: 2px dashed #b9c6d2;
+          color: var(--brand-blue);
+          font-size: 1.25rem;
+          font-weight: 600;
         }
-
-        .selected-color-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
+        .color-option.custom.active { border-style: solid; }
+        .selected-color-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); text-align: center; }
 
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
 
+        /* ── KPI band ───────────────────────────────────────────── */
+        .kpi-band { padding: 0 4rem 2.5rem; background: white; }
+        .kpi-inner {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          padding: 2rem 2.5rem;
+          background: var(--deep-blue);
+          border-radius: 16px;
+          color: white;
+        }
+        .kpi { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+        .kpi-value { font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--brand-blue-soft); letter-spacing: -0.5px; line-height: 1.1; }
+        .kpi-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.85); line-height: 1.4; }
+
+        /* ── Sticky nav ─────────────────────────────────────────── */
         .product-nav {
           position: sticky;
           top: 80px;
           z-index: 90;
           background: white;
-          border-bottom: 1px solid #eee;
+          border-bottom: 1px solid var(--line);
+          border-top: 1px solid var(--line);
           padding: 0 4rem;
         }
-
-        .nav-inner {
-          display: flex;
-          gap: 0;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
+        .nav-inner { display: flex; gap: 0; max-width: 1200px; margin: 0 auto; }
         .nav-item {
-          padding: 1.25rem 1.25rem;
+          padding: 1.1rem 1.1rem;
           background: none;
           border: none;
           font-size: 0.9rem;
@@ -849,329 +1077,58 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           cursor: pointer;
           border-bottom: 3px solid transparent;
           transition: all 0.3s ease;
+          white-space: nowrap;
         }
-
         .nav-item:hover { color: var(--brand-blue); }
         .nav-item.active { color: var(--brand-blue); border-bottom-color: var(--brand-blue); }
 
-        .content-section { padding: 6rem 4rem; }
+        /* ── Sections ───────────────────────────────────────────── */
+        .content-section { padding: 5rem 4rem; }
         .content-section.dark { background: var(--deep-blue); color: white; }
-        .content-section.dark .section-content h2 { color: white; }
-        .content-section.dark .section-content p { color: rgba(255, 255, 255, 0.8); }
+        .content-section.dark .section-content p { color: rgba(255, 255, 255, 0.82); }
 
-        .section-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-          max-width: 1200px;
-          margin: 0 auto;
-          align-items: center;
-        }
-
+        .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; align-items: center; }
         .section-grid.reverse { direction: rtl; }
         .section-grid.reverse > * { direction: ltr; }
 
-        .section-tag {
-          display: inline-block;
-          background: var(--brand-blue-pale);
-          color: var(--brand-blue);
-          font-size: 0.75rem;
-          font-weight: 600;
-          padding: 0.4rem 0.8rem;
-          border-radius: 20px;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 1rem;
-        }
-
-        .content-section.dark .section-tag {
-          background: rgba(54, 117, 136, 0.3);
-          color: #7ec8d8;
-        }
-
-        .section-content h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-          margin-bottom: 1.5rem;
-          letter-spacing: -1px;
-        }
-
-        .section-content p {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.8;
-          margin-bottom: 1.5rem;
-        }
+        .section-content p { font-size: 1.05rem; color: #444; line-height: 1.75; margin-bottom: 1.5rem; }
 
         .feature-list { list-style: none; padding: 0; margin: 0; }
-
         .feature-list li {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           gap: 0.75rem;
-          padding: 0.75rem 0;
+          padding: 0.6rem 0;
           font-size: 1rem;
           color: var(--charcoal);
+          border-top: 1px solid var(--line);
         }
-
+        .feature-list li:first-child { border-top: none; }
         .content-section.dark .feature-list li { color: rgba(255, 255, 255, 0.9); }
-        .check { color: var(--pet-teal); font-weight: bold; }
+        .check { color: var(--brand-blue); font-weight: bold; }
 
-        /* Flexibility Section */
-        .flexibility-header {
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
-        }
+        /* ── Flexibility ────────────────────────────────────────── */
+        .flexibility-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+        .flexibility-header p { font-size: 1.05rem; color: rgba(255, 255, 255, 0.82); line-height: 1.75; }
 
-        .flexibility-header h2 {
-          font-size: 2.5rem;
-          color: white;
-          margin-bottom: 1rem;
-        }
-
-        .flexibility-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
-
-        .flexibility-visual {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 4rem;
-          margin-bottom: 4rem;
-        }
-
-        .flex-demo {
-          display: flex;
-          align-items: center;
-          gap: 2rem;
-        }
-
-        .panel-flat, .panel-curved {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1rem;
-        }
-
-        .groove-lines {
-          display: flex;
-          gap: 4px;
-          padding: 1rem;
-          background: linear-gradient(135deg, #C4A77D 0%, #8B6914 100%);
-          border-radius: 8px;
-        }
-
-        .groove-line {
-          width: 4px;
-          height: 80px;
-          background: rgba(0, 0, 0, 0.3);
-          border-radius: 2px;
-        }
-
+        .flexibility-visual { display: flex; justify-content: center; align-items: center; gap: 4rem; margin-bottom: 3.5rem; }
+        .flex-demo { display: flex; align-items: center; gap: 2rem; }
+        .panel-flat, .panel-curved { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+        .groove-lines { display: flex; gap: 4px; padding: 1rem; background: linear-gradient(135deg, #c9bfae 0%, #a89a83 100%); border-radius: 8px; }
+        .groove-line { width: 4px; height: 80px; background: rgba(0, 0, 0, 0.3); border-radius: 2px; }
         .curved-surface {
           display: flex;
           gap: 4px;
           padding: 1rem;
-          background: linear-gradient(135deg, #C4A77D 0%, #8B6914 100%);
+          background: linear-gradient(135deg, #c9bfae 0%, #a89a83 100%);
           border-radius: 8px 40px 40px 8px;
           transform: perspective(200px) rotateY(-15deg);
         }
-
-        .arrow {
-          font-size: 2rem;
-          color: var(--pet-teal);
-        }
-
-        .demo-label {
-          font-size: 0.85rem;
-          color: rgba(255, 255, 255, 0.7);
-        }
+        .arrow { font-size: 2rem; color: var(--brand-blue-soft); }
+        .demo-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); }
 
         .radius-indicator { text-align: center; }
-
         .radius-circle {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          background: var(--pet-teal);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 1rem;
-        }
-
-        .radius-value { font-size: 1.8rem; font-weight: 700; color: white; }
-        .radius-unit { font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); }
-        .radius-indicator > p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); }
-
-        .flexibility-benefits {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
-          max-width: 900px;
-          margin: 0 auto;
-        }
-
-        .benefit {
-          text-align: center;
-          padding: 2rem;
-          background: rgba(255, 255, 255, 0.05);
-          border-radius: 16px;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .content-section:not(.dark) .benefit {
-          background: white;
-          border: none;
-        }
-
-        .benefit-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
-        .benefit h4 { font-size: 1.1rem; color: white; margin-bottom: 0.5rem; }
-        .content-section:not(.dark) .benefit h4 { color: var(--deep-blue); }
-        .benefit p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
-        .content-section:not(.dark) .benefit p { color: #666; }
-
-        /* Colors Section */
-        .color-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 1rem;
-          margin-bottom: 2rem;
-        }
-
-        .color-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.5rem;
-        }
-
-        .color-swatch-large {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          border: 2px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .color-name {
-          font-size: 0.8rem;
-          color: #666;
-        }
-
-        .direction-options h4 {
-          color: var(--deep-blue);
-          margin-bottom: 1rem;
-        }
-
-        .direction-selector {
-          display: flex;
-          gap: 1rem;
-        }
-
-        .direction-option {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 1rem 1.5rem;
-          background: white;
-          border: 2px solid #e0e0e0;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-        }
-
-        .direction-option:hover { border-color: var(--brand-blue); }
-
-        .direction-option.active {
-          border-color: var(--brand-blue);
-          background: var(--brand-blue-pale);
-        }
-
-        .direction-icon {
-          font-size: 1.2rem;
-          font-weight: bold;
-          color: var(--pet-teal);
-        }
-
-        .direction-icon.length { letter-spacing: 2px; }
-
-        .direction-name { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); }
-
-        /* Acoustics Section */
-        .acoustics-section { background: var(--cream); }
-
-        .acoustics-header {
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
-        }
-
-        .acoustics-header h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-          margin-bottom: 1rem;
-        }
-
-        .acoustics-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
-
-        .acoustics-visual {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 6rem;
-          margin-bottom: 4rem;
-        }
-
-        .cross-section-diagram.flex {
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-          width: 250px;
-        }
-
-        .diagram-layer {
-          position: relative;
-          padding: 1rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .diagram-layer.pet-felt {
-          background: var(--pet-teal);
-          border-radius: 8px 8px 0 0;
-          height: 60px;
-        }
-
-        .diagram-layer.v-cuts {
-          background: var(--pet-teal);
-          height: 30px;
-          display: flex;
-          gap: 15px;
-          padding: 0 20px;
-          border-radius: 0 0 8px 8px;
-        }
-
-        .v-cut {
-          width: 0;
-          height: 0;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-top: 20px solid white;
-        }
-
-        .layer-label {
-          position: absolute;
-          right: -160px;
-          font-size: 0.8rem;
-          color: #666;
-          white-space: nowrap;
-        }
-
-        .material-info { text-align: center; }
-
-        .material-circle {
           width: 120px;
           height: 120px;
           border-radius: 50%;
@@ -1180,39 +1137,120 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin-bottom: 1rem;
+          margin: 0 auto 1rem;
         }
+        .radius-value { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: white; }
+        .radius-unit { font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); }
+        .radius-indicator > p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); }
 
-        .material-value { font-size: 1.8rem; font-weight: 700; color: white; }
-        .material-label { font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); }
-        .material-info > p { font-size: 0.9rem; color: #666; }
+        .buildup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .buildup-item { border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 1.25rem; }
+        .buildup-number { display: block; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--brand-blue-soft); margin-bottom: 0.5rem; }
+        .buildup-item h4 { color: white; font-size: 1.05rem; margin: 0 0 0.4rem; font-family: var(--font-heading); }
+        .buildup-item p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.78); margin: 0; line-height: 1.6; }
+        .material-link { max-width: 1200px; margin: 2rem auto 0; font-size: 0.95rem; }
+        .material-link a { color: var(--brand-blue-soft); text-decoration: underline; text-underline-offset: 3px; }
 
-        .acoustics-benefits {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
-          max-width: 900px;
-          margin: 0 auto;
-        }
+        /* ── Colours ────────────────────────────────────────────── */
+        .colors-header { max-width: 820px; margin: 0 0 2.5rem; }
+        .colors-header p { font-size: 1.05rem; color: #444; line-height: 1.75; margin: 0; }
 
-        /* Installation Section */
-        .installation-steps {
+        .swatch-grid { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); gap: 0.9rem; margin-bottom: 3rem; }
+        .swatch-card {
           display: flex;
           flex-direction: column;
-          gap: 1.5rem;
-          margin-top: 2rem;
-        }
-
-        .install-step {
-          display: flex;
           align-items: flex-start;
-          gap: 1rem;
+          gap: 0.2rem;
+          padding: 0;
+          background: none;
+          border: none;
+          cursor: pointer;
+          text-align: left;
+          font: inherit;
+          color: inherit;
         }
+        .swatch-image {
+          position: relative;
+          display: block;
+          width: 100%;
+          aspect-ratio: 260 / 675;
+          max-height: 200px;
+          border-radius: 4px;
+          overflow: hidden;
+          background: var(--cream);
+          box-shadow: 0 0 0 1px rgba(13, 58, 92, 0.08);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          margin-bottom: 0.35rem;
+        }
+        .swatch-card:hover .swatch-image { transform: translateY(-3px); }
+        .swatch-card.active .swatch-image { box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue); }
+        .swatch-card .swatch-number { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 700; color: var(--brand-blue); letter-spacing: 0.06em; }
+        .swatch-card .swatch-name { font-size: 0.85rem; color: var(--deep-blue); line-height: 1.25; }
+        .custom-face {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px dashed #b9c6d2;
+          background: white;
+          color: #767676;
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 0.06em;
+          text-align: center;
+          padding: 0.25rem;
+        }
+        .swatch-card.custom.active .custom-face { border-color: var(--brand-blue); box-shadow: none; }
 
+        .colour-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; max-width: 1000px; margin-bottom: 3rem; }
+        .colour-note h3 { font-family: var(--font-heading); font-size: 1.15rem; color: var(--brand-blue); margin: 0 0 0.5rem; }
+        .colour-note p { font-size: 0.98rem; color: #444; line-height: 1.7; margin: 0; }
+
+        .direction-row { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .direction-options h4 { color: var(--deep-blue); margin-bottom: 1rem; font-family: var(--font-heading); }
+        .direction-selector { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .direction-option {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.9rem 1.4rem;
+          background: white;
+          border: 2px solid var(--line);
+          border-radius: 12px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          font: inherit;
+        }
+        .direction-option:hover { border-color: var(--brand-blue); }
+        .direction-option.active { border-color: var(--brand-blue); background: var(--brand-blue-pale); }
+        .direction-icon { font-size: 1.2rem; font-weight: bold; color: var(--brand-blue); }
+        .direction-icon.length { letter-spacing: 2px; }
+        .direction-name { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); }
+        .direction-desc { font-size: 0.9rem; color: #666; margin: 1rem 0 0; }
+        .direction-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
+
+        /* ── Acoustics / fire ───────────────────────────────────── */
+        .acoustics-section { background: white; }
+        .acoustics-benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; max-width: 1000px; margin: 1rem 0 0; }
+        .benefit { padding: 1.5rem; background: var(--brand-blue-pale); border-radius: 12px; }
+        .benefit h4 { font-family: var(--font-heading); font-size: 1.05rem; color: var(--deep-blue); margin: 0 0 0.5rem; }
+        .benefit p { font-size: 0.9rem; color: #555; margin: 0; line-height: 1.6; }
+
+        .fire-section { background: var(--cream); }
+        .fire-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center; }
+        .fire-text .ds-lead { margin-bottom: 1rem; }
+        .fire-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+        .fire-card { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.35rem; }
+        .fire-card h3 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--brand-blue); margin: 0; }
+        .fire-standard { font-size: 0.8rem; color: #666; }
+        .fire-class { font-family: var(--font-heading); font-size: 1.9rem; font-weight: 700; color: var(--deep-blue); margin-top: 0.5rem; white-space: nowrap; }
+
+        /* ── Installation ───────────────────────────────────────── */
+        .installation-steps { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
+        .install-step { display: flex; align-items: flex-start; gap: 1rem; }
         .step-number {
           width: 40px;
           height: 40px;
-          background: var(--pet-teal);
+          background: var(--brand-blue);
           color: white;
           border-radius: 50%;
           display: flex;
@@ -1221,113 +1259,120 @@ export default function RPETFlexGrooveProductPage({ breadcrumbs, specs, download
           font-weight: 700;
           flex-shrink: 0;
         }
-
         .step-content h4 { color: white; margin: 0 0 0.25rem; }
-        .step-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
+        .step-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.72); margin: 0; }
 
-        /* Sustainability Section */
-        .sustainability-features {
+        /* ── Sustainability ─────────────────────────────────────── */
+        .sustainability-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+        .sustain-item { display: flex; align-items: flex-start; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+        .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
+        .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.55; }
+
+        /* ── Ordering ───────────────────────────────────────────── */
+        .ordering-section { background: white; }
+        .ordering-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+
+        .dark-band {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
-        }
-
-        .sustain-item {
-          display: flex;
-          align-items: flex-start;
-          gap: 1rem;
-        }
-
-        .sustain-icon { font-size: 1.5rem; flex-shrink: 0; }
-        .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
-        .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
-
-        /* Applications Section */
-        .applications-header {
-          text-align: center;
-          margin-bottom: 3rem;
-        }
-
-        .applications-header h2 { font-size: 2.5rem; color: white; margin-bottom: 0.5rem; }
-        .applications-header p { color: rgba(255, 255, 255, 0.7); }
-
-        .applications-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .application-card {
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          gap: 2.5rem;
+          background: var(--deep-blue);
+          color: white;
           border-radius: 16px;
-          padding: 2rem;
-          text-align: center;
+          padding: 2.25rem 2.5rem;
         }
+        .band-col h3 { font-family: var(--font-heading); font-size: 1.2rem; color: white; margin: 0 0 0.75rem; }
+        .band-col p { font-size: 0.95rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65; margin: 0 0 0.5rem; }
+        .band-col a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+        .band-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+        .btn-band-primary,
+        .btn-band-secondary {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.8rem 1.5rem;
+          border-radius: 50px;
+          font-weight: 600;
+          font-size: 0.95rem;
+          text-decoration: none !important;
+          transition: all 0.3s ease;
+        }
+        .btn-band-primary { background: white; color: var(--deep-blue) !important; }
+        .btn-band-primary:hover { background: var(--brand-blue-pale); }
+        .btn-band-secondary { border: 2px solid rgba(255, 255, 255, 0.7); color: white !important; }
+        .btn-band-secondary:hover { background: rgba(255, 255, 255, 0.12); }
 
-        .application-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        /* ── Applications ───────────────────────────────────────── */
+        .applications-header { text-align: center; margin-bottom: 3rem; }
+        .applications-header p { color: rgba(255, 255, 255, 0.75); }
+        .applications-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; max-width: 1200px; margin: 0 auto; }
+        .application-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 1.75rem; text-align: center; }
         .application-card h4 { color: white; margin-bottom: 0.5rem; }
-        .application-card p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.6); margin: 0; }
+        .application-card p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.65); margin: 0; }
 
-        /* CTA Section */
-        .cta-section {
-          background: linear-gradient(135deg, var(--pet-teal) 0%, #2a5a6a 100%);
-          text-align: center;
-        }
-
+        /* ── CTA ────────────────────────────────────────────────── */
+        .cta-section { background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%); text-align: center; }
         .cta-content { max-width: 700px; margin: 0 auto; }
-        .cta-content h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
-        .cta-content > p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; }
-
-        .cta-buttons {
-          display: flex;
-          gap: 1rem;
-          justify-content: center;
-          margin-bottom: 1.5rem;
-        }
-
-        .cta-section .btn-primary { background: white; color: var(--pet-teal); }
+        .cta-content h2 { color: white; margin-bottom: 1rem; }
+        .cta-content > p { font-size: 1.05rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; }
+        .cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
+        .cta-section .btn-primary { background: white; color: var(--brand-blue); }
         .cta-section .btn-primary:hover { background: var(--cream); }
         .cta-section .btn-secondary { border-color: white; color: white; }
-        .cta-section .btn-secondary:hover { background: white; color: var(--pet-teal); }
-        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); }
+        .cta-section .btn-secondary:hover { background: white; color: var(--brand-blue); }
+        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); }
 
+        /* ── Responsive ─────────────────────────────────────────── */
         @media (max-width: 1024px) {
-          .product-hero {
-            grid-template-columns: 1fr;
-            padding: 6rem 2rem 3rem;
-            min-height: auto;
-          }
-          .hero-content h1 { font-size: 3rem; }
+          .product-hero { grid-template-columns: 1fr; padding: 6rem 2rem 2rem; gap: 2.5rem; }
+          .hero-content h1 { font-size: 2.75rem; }
+          .kpi-band { padding: 0 2rem 2rem; }
+          .kpi-inner { grid-template-columns: repeat(2, 1fr); padding: 1.5rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .flexibility-benefits { grid-template-columns: 1fr; }
-          .applications-grid { grid-template-columns: repeat(2, 1fr); }
-          .acoustics-visual { flex-direction: column; gap: 3rem; }
-          .acoustics-benefits { grid-template-columns: 1fr; }
-          .color-grid { grid-template-columns: repeat(3, 1fr); }
-          .sustainability-features { grid-template-columns: 1fr; }
-          .layer-label { display: none; }
           .flexibility-visual { flex-direction: column; gap: 2rem; }
           .flex-demo { flex-direction: column; }
           .arrow { transform: rotate(90deg); }
+          .buildup-grid { grid-template-columns: 1fr; }
+          .swatch-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+          .direction-row { grid-template-columns: 1fr; }
+          .acoustics-benefits { grid-template-columns: 1fr; }
+          .fire-grid { grid-template-columns: 1fr; }
+          .sustainability-features { grid-template-columns: 1fr; }
+          .ordering-grid { grid-template-columns: 1fr; }
+          .dark-band { grid-template-columns: 1fr; }
+          .applications-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
           .content-section { padding: 4rem 1.5rem; }
+          .kpi-band { padding: 0 1.5rem 2rem; }
           .product-nav { padding: 0 1rem; overflow-x: auto; }
           .nav-inner { min-width: max-content; }
-          .nav-item { padding: 1rem; font-size: 0.85rem; }
-          .hero-usps { flex-direction: column; gap: 1rem; }
+          .nav-item { padding: 1rem 0.9rem; font-size: 0.85rem; }
           .hero-ctas { flex-direction: column; }
-          .section-content h2 { font-size: 2rem; }
+          .hero-ctas .btn-primary, .hero-ctas .btn-secondary { justify-content: center; }
+          .rpet-flex-groove-product-page h2 { font-size: 1.85rem; }
+          .swatch-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+          .colour-notes { grid-template-columns: 1fr; gap: 1.5rem; }
+          .fire-cards { grid-template-columns: 1fr; }
           .applications-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }
-          .direction-selector { flex-wrap: wrap; }
-          .color-options { max-width: 100%; }
-          .color-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        @media (max-width: 480px) {
+          .product-hero { padding: 5.5rem 1rem 1.5rem; }
+          .hero-content h1 { font-size: 2.2rem; letter-spacing: -1px; }
+          .content-section { padding: 3rem 1rem; }
+          .kpi-band { padding: 0 1rem 1.5rem; }
+          .kpi-inner { grid-template-columns: 1fr 1fr; gap: 1.25rem; padding: 1.25rem; }
+          .kpi-value { font-size: 1.5rem; }
+          .swatch-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; }
+          .swatch-image { max-height: 150px; }
+          .groove-lines, .curved-surface { padding: 0.75rem; }
+          .groove-line { height: 60px; }
+          .color-selector { padding: 1rem; }
+          .dark-band { padding: 1.5rem 1.25rem; }
+          .band-ctas a { width: 100%; justify-content: center; }
         }
       `}</style>
     </div>

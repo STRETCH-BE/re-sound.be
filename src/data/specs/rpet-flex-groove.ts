@@ -1,14 +1,22 @@
 /**
  * rPET Flex-Groove — specification tables.
  *
- * Transcribed from src/components/sections/rpetflexgroovepage.tsx,
- * the former <section id="specs"> (lines 606–753 of the pre-refactor file),
- * card by card and row by row, in the original order.
+ * The Flex Groove is cut from the 9 mm rPET Panel (Michael, 20 September
+ * 2026), so material, surface weight, density, colours, reaction to fire and
+ * end of life follow the rPET Panel datasheet (EN · 09/2026, v1.0). The
+ * former finished format (1 130 × 2 880 mm) cannot come from a 2 800 × 1 220
+ * or 2 440 × 1 220 mm panel and is replaced by the panel source plus
+ * "on request"; the former weight (4.4 kg) and "density 1.35 kg/m²" were
+ * contradicted by the datasheet's 1.8 kg/m² and removed. The minimum
+ * bending radius (500 mm) is the earlier page figure — no datasheet source
+ * (open question). The 9 mm panel's absorption is not yet measured, so no
+ * acoustic figure is shown.
  *
- * Governed figures (thickness, fire class, recycled content) come from
+ * Governed figures (thickness, fire class, recycled content, plant) come from
  * src/data/products.ts via spec(); the OEKO-TEX row is guarded by cert().
- * The duplicate recycled-content row in the certifications card was removed
- * (one data-backed row in the material card remains).
+ * Removed: the smoke / droplet rows derived from a flat B-s1,d0, the "fire
+ * retardant: yes (built-in)" row and the "VOC emissions: low" row — none is
+ * on the datasheet.
  */
 import type { SpecTableDef } from './types';
 import { cert, key, spec } from './types';
@@ -17,11 +25,11 @@ const specs: SpecTableDef = [
   {
     title: key('rpetFlexGroovePage.specs.dimensionsTitle'),
     rows: [
-      { label: key('rpetFlexGroovePage.specs.dimPanelLength'), value: '2880 mm' },
-      { label: key('rpetFlexGroovePage.specs.dimPanelWidth'), value: '1130 mm' },
+      { label: key('rpetFlexGroovePage.specs.dimSource'), value: key('rpetFlexGroovePage.specs.dimSourceVal') },
       { label: key('productPage.specLabels.thickness'), value: spec('rpet-flex-groove', 'thickness') },
-      { label: key('productPage.specLabels.weight'), value: '4.4 kg' },
-      { label: key('rpetFlexGroovePage.specs.dimDensity'), value: '1.35 kg/m²' },
+      { label: key('rpetFlexGroovePage.specs.dimSurfaceWeight'), value: '1.8 kg/m²' },
+      { label: key('productPage.specLabels.density'), value: '≈ 200 kg/m³' },
+      { label: key('rpetFlexGroovePage.specs.dimFinishedFormat'), value: key('productPage.ordering.onRequest') },
     ],
   },
   {
@@ -37,20 +45,17 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('rpetFlexGroovePage.specs.matComposition'), value: key('rpetFlexGroovePage.specs.matCompositionVal') },
       { label: key('productPage.specs.recycledContent'), value: spec('rpet-flex-groove', 'recycledContentPct') },
-      { label: key('rpetFlexGroovePage.specs.matFireRetardant'), value: key('rpetFlexGroovePage.specs.matFireRetardantVal') },
+      { label: key('rpetFlexGroovePage.specs.matColours'), value: key('productPage.rpet.colours.rangeValue') },
       { label: key('rpetFlexGroovePage.specs.matColorVar'), value: key('rpetFlexGroovePage.specs.matColorVarVal') },
+      { label: key('productPage.ordering.madeIn'), value: spec('rpet-flex-groove', 'madeIn') },
     ],
   },
   {
     title: key('rpetFlexGroovePage.specs.fireTitle'),
     rows: [
-      // The JSX read `tPage('specs.fireRating') || t('specs.fireRating')`; the
-      // fallback could never fire (next-intl always returns a string), so the
-      // productPage key is the one that was actually displayed.
-      { label: key('productPage.specs.fireRating'), value: spec('rpet-flex-groove', 'fireClass') },
+      { label: key('productPage.specLabels.reactionFire'), value: spec('rpet-flex-groove', 'fireClass') },
       { label: key('productPage.specLabels.testStandard'), value: 'EN 13501-1' },
-      { label: key('rpetFlexGroovePage.specs.fireSmokeProduction'), value: key('productData.specValues.s1Low') },
-      { label: key('rpetFlexGroovePage.specs.fireFlamingDroplets'), value: key('rpetFlexGroovePage.specs.fireFlamingDropletsVal') },
+      { label: key('rpetFlexGroovePage.specs.fireReports'), value: key('productPage.ordering.onRequest') },
     ],
   },
   {
@@ -60,7 +65,7 @@ const specs: SpecTableDef = [
         label: key('rpetFlexGroovePage.specs.certMaterial'),
         value: cert('rpet-flex-groove', 'OEKO-TEX', 'productPage.specs.oekoTexStandard100'),
       },
-      { label: key('rpetFlexGroovePage.specs.certVOC'), value: key('rpetFlexGroovePage.specs.certVOCVal') },
+      { label: key('productPage.specs.endOfLife'), value: key('productPage.rpet.ordering.endOfLifeText') },
     ],
   },
   {

@@ -182,6 +182,12 @@ function classesIn(s) {
   return [...s.matchAll(/([A-F])-s([123]),\s*d([012])/g)].map((m) => `${m[1]}-s${m[2]},d${m[3]}`);
 }
 
+/** Union of two allowed-value lists; null (nothing allowed) only when both are null. */
+function allowedUnion(a, b) {
+  if (a === null && b === null) return null;
+  return [...(a ?? []), ...(b ?? [])];
+}
+
 function readProductData() {
   const file = resolve(ROOT, 'src', 'data', 'products.ts');
   const src = stripTsComments(readFileSync(file, 'utf8'));
@@ -214,17 +220,23 @@ function readProductData() {
     }
     if (madeIn !== null && !/^[A-Z]{2}$/.test(madeIn)) throw new Error(`products.ts: ${mark.slug}: madeIn "${madeIn}" is not an ISO 3166-1 alpha-2 code`);
     // Booth specs carry no αw / NRC / fire class: nothing is allowed on those pages.
-    let alphaW = null, nrc = null, fireClass = null;
+    let alphaW = null, nrc = null, fireClass = null, alphaWWithAbsorber = null, fireClassStandardCore = null;
     if (kind === 'panel') {
       alphaW = strField(block, 'alphaW');
       nrc = strField(block, 'nrc');
       fireClass = strField(block, 'fireClass');
       if (alphaW === undefined || nrc === undefined || fireClass === undefined) throw new Error(`products.ts: ${mark.slug}: specs.alphaW / nrc / fireClass not parsed`);
+      // Optional datasheet figures next to the headline values (PanelSpecs):
+      // αw with the backing absorber, and the standard-core fire class.
+      alphaWWithAbsorber = strField(block, 'alphaWWithAbsorber') ?? null;
+      fireClassStandardCore = strField(block, 'fireClassStandardCore') ?? null;
     }
     products.set(mark.slug, {
       slug: mark.slug, kind, madeIn, recycledContentPct,
-      raw: { alphaW, nrc, fireClass },
-      alphaW: numbersIn(alphaW), nrc: numbersIn(nrc), fireClasses: classesIn(fireClass),
+      raw: { alphaW, nrc, fireClass, alphaWWithAbsorber, fireClassStandardCore },
+      alphaW: allowedUnion(numbersIn(alphaW), numbersIn(alphaWWithAbsorber)),
+      nrc: numbersIn(nrc),
+      fireClasses: allowedUnion(classesIn(fireClass), classesIn(fireClassStandardCore)),
     });
   });
   if (products.size < 10) throw new Error(`products.ts: only ${products.size} products parsed — regex out of sync with the file?`);
@@ -376,7 +388,9 @@ const SPANISH_MARKERS = new Set([
 // "Spanish" when its Spanish-only evidence outweighs its Portuguese evidence.
 const PORTUGUESE_MARKERS = new Set(['não', 'com', 'uma', 'um', 'os', 'as', 'é', 'são', 'ao', 'aos', 'à', 'às', 'também', 'mais', 'muito', 'pelo', 'pela', 'pelos', 'pelas', 'nos', 'nas', 'no', 'na', 'dos', 'das', 'do', 'da', 'se', 'ou', 'em', 'isso', 'esta', 'este', 'estes', 'estas', 'nosso', 'nossa', 'nossos', 'nossas', 'seu', 'sua', 'seus', 'suas', 'onde', 'sobre', 'entre', 'ainda', 'já', 'até', 'desde', 'cada', 'toda', 'todo', 'todos', 'todas', 'qual', 'quais']);
 function isSpanishSegment(segment) {
-  const lower = segment.toLowerCase();
+  // Standard designations ("EN ISO 354", "EN 13501-1", "ASTM C423") are not
+  // language: their "EN" would otherwise count as the Spanish preposition.
+  const lower = segment.replace(/\b(?:EN(?: ISO)?|ISO|ASTM|DIN|BS)\s+[A-Z]?\d[\d-]*/g, ' ').toLowerCase();
   const words = lower.replace(/[^\p{L}\p{N}'’-]+/gu, ' ').split(/\s+/).filter(Boolean);
   if (words.length < 4) return false;
   let es = 0, pt = 0;

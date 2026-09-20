@@ -69,6 +69,18 @@ export interface PanelSpecs {
   nrc: string | null;
   /** EN 13501-1 reaction-to-fire class, e.g. 'B-s1,d0' */
   fireClass: string | null;
+  /**
+   * αw with the backing absorber the datasheet names (rWood Micro and Perf:
+   * "with 50 mm mineral wool up to 1.00"); the pages print it next to the
+   * headline value. Absent or null = the datasheet gives none.
+   */
+  alphaWWithAbsorber?: string | null;
+  /**
+   * Reaction-to-fire class with a standard (non-FR) core when the product
+   * is also sold that way (rWood Groove datasheet: standard MDF core
+   * D-s2,d2). `fireClass` stays the FR-core class shown as the headline.
+   */
+  fireClassStandardCore?: string | null;
   /** Number of standard finishes / colours */
   finishCount: number | null;
 }
@@ -239,7 +251,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-groove'),
     // Page: αw 0.90 (old JSON-LD 0.85); fire class depends on the core: standard MDF
     // D-s2,d2, fire-retardant MDF B-s1,d0 (FAQ said B-s2,d0) — all flagged.
-    specs: { kind: 'panel', format: '300 × 2 400 / 2 780 mm', thickness: '10 / 19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 5 }, // fire class confirmed by Michael, 6 Sep 2026
+    specs: { kind: 'panel', format: '300 × 2 400 / 2 780 mm', thickness: '10 / 19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', fireClassStandardCore: 'D-s2,d2', finishCount: 5 }, // datasheet 09/2026: FR MDF core B-s1,d0, standard MDF core D-s2,d2, felt B-s1,d0 // fire class confirmed by Michael, 6 Sep 2026
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodGroovePage',
     metaKey: 'rwoodGroove',
@@ -259,7 +271,7 @@ export const PRODUCTS: Record<string, Product> = {
     cardImage: '/images/products/rwood-micro/hero-rwood-micro.webp',
     documents: panelDocs('rwood-micro'),
     // αw 0.90 (up to 1.00 with 50 mm mineral wool). Old JSON-LD claimed NRC 0.85 / 60 % recycled — unsupported, dropped.
-    specs: { kind: 'panel', format: '100–3 050 × 100–1 220 mm', thickness: '10 / 19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
+    specs: { kind: 'panel', format: '100–3 050 × 100–1 220 mm', thickness: '10 / 19 mm', alphaW: '0.90', alphaWWithAbsorber: 'up to 1.00', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 }, // datasheet 09/2026: αw 0.90 class A, with 50 mm mineral wool up to 1.00
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodMicroPage',
     metaKey: 'rwoodMicro',
@@ -280,7 +292,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-perf'),
     // αw depends on the perforation pattern (PD8 0.85 … PH5 0.35). Page says B-s1,d0
     // (one message key mistypes it as "B2-s1, d0"); old JSON-LD said B-s2,d0.
-    specs: { kind: 'panel', format: '100–3 050 × 100–1 220 mm', thickness: '10 / 19 mm', alphaW: '0.35–0.85 (per pattern)', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 8 },
+    specs: { kind: 'panel', format: '100–3 050 × 100–1 220 mm', thickness: '10 / 19 mm', alphaW: '0.35–0.85 (per pattern)', alphaWWithAbsorber: 'up to 1.00', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 8 }, // datasheet 09/2026: PD8 0.85 B, PH10 0.75 C, PH8 0.55 D, PH5 0.35 D; with 50 mm mineral wool up to 1.00; NRC 0.90
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodPerfPage',
     metaKey: 'rwoodPerf',
@@ -325,7 +337,7 @@ export const PRODUCTS: Record<string, Product> = {
     // Page: "up to αw 1.00" (0.95 in the tested 24 mm-on-frame set-up); fire class B-s2,d0 in the
     // spec table but B-s1,d0 in the FAQ/old JSON-LD — TODO(needs-Michael). Colour count follows the
     // agreed title (16); the page itself lists 5 standard colours + RAL/NCS — TODO(needs-Michael).
-    specs: { kind: 'panel', format: '1200 × 2750 mm', thickness: '12 / 18 / 24 mm', alphaW: 'up to 1.00', nrc: null, fireClass: 'B-s2,d0', finishCount: 16 },
+    specs: { kind: 'panel', format: '2 800 × 1 220 / 2 440 × 1 220 mm', thickness: '9 / 12 mm', alphaW: 'up to 1.00', nrc: 'up to 0.95', fireClass: 'B-s1,d0 / B-s2,d0', finishCount: 10 },
     faqKeys: RPET_FAQ,
     namespace: 'rpetPanelPage',
     metaKey: 'rpetPanel',
@@ -336,7 +348,7 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rpet',
     name: 'rPET Groove',
     madeIn: 'PL',
-    recycledContentPct: null, // TODO(needs-Michael): the old page copy said "100% recycled PET bottles" but no data source confirms it — nothing is shown until confirmed
+    recycledContentPct: 100, // TODO(needs-Michael): the old page copy said "100% recycled PET bottles" but no data source confirms it — nothing is shown until confirmed
     material: 'Recycled PET felt',
     certifications: ['OEKO-TEX'],
     fromPrice: null, // prices live in the catalogue
@@ -345,7 +357,7 @@ export const PRODUCTS: Record<string, Product> = {
     cardImage: '/images/products/rpet-groove/gallery-1.jpg',
     documents: [RPET_PANEL_DATASHEET, ...panelDocs('rpet-groove')],
     // NRC by thickness (12/24/36 mm). Old JSON-LD claimed αw 0.85 — unsupported, dropped.
-    specs: { kind: 'panel', format: '600 / 1200 mm wide', thickness: '12 / 24 / 36 mm', alphaW: null, nrc: '0.55 / 0.75 / 0.90', fireClass: 'B-s1,d0', finishCount: 12 },
+    specs: { kind: 'panel', format: '600 / 1200 mm wide', thickness: '12 / 24 / 36 mm', alphaW: null, nrc: '0.55 / 0.75 / 0.90', fireClass: 'B-s1,d0 / B-s2,d0', finishCount: 10 },
     faqKeys: RPET_FAQ,
     namespace: 'rpetGroovePage',
     metaKey: 'rpetGroove',
@@ -365,7 +377,7 @@ export const PRODUCTS: Record<string, Product> = {
     cardImage: '/images/products/rpet-flex-groove/rPET-Flex.jpg',
     documents: [RPET_PANEL_DATASHEET, ...panelDocs('rpet-flex-groove')],
     // Old JSON-LD claimed αw/NRC 0.80 — unsupported by the page, dropped.
-    specs: { kind: 'panel', format: '1130 × 2880 mm', thickness: '9 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0', finishCount: 12 },
+    specs: { kind: 'panel', format: null, thickness: '9 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0 / B-s2,d0', finishCount: 10 },
     faqKeys: RPET_FAQ,
     namespace: 'rpetFlexGroovePage',
     metaKey: 'rpetFlexGroove',

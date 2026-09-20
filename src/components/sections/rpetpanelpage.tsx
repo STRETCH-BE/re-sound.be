@@ -6,36 +6,94 @@ import { Link } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { PRODUCTS } from '@/data/products';
+import { SHOWROOM } from '@/config/site';
 
-// Color options for rPET - Panel
-// `image` maps each color to an existing swatch photo under
-// public/images/products/rpet-panel/ (null = keep the default hero).
-const colorOptions = [
-  { id: 'midnight', name: 'Midnight', color: '#1a1a1a', hex: '#1a1a1a', isDark: true, descriptionKey: 'options.midnightDesc', image: '/images/products/rpet-panel/rPET-Black.jpg' },
-  { id: 'titan', name: 'Titan', color: '#4a4a4a', hex: '#4a4a4a', isDark: true, descriptionKey: 'options.titanDesc', image: '/images/products/rpet-panel/rPET-Anthraciet.jpg' },
-  { id: 'silver', name: 'Silver', color: '#808080', hex: '#808080', isDark: false, descriptionKey: 'options.silverDesc', image: '/images/products/rpet-panel/rPET-DarkGrey.jpg' },
-  { id: 'marble', name: 'Marble', color: '#b0b0b0', hex: '#b0b0b0', isDark: false, descriptionKey: 'options.marbleDesc', image: '/images/products/rpet-panel/rPET-LightGrey.jpg' },
-  { id: 'frost', name: 'Frost', color: '#e8e8e8', hex: '#e8e8e8', isDark: false, descriptionKey: 'options.frostDesc', image: '/images/products/rpet-panel/rPET-White.jpg' },
-  { id: 'custom', name: 'Custom RAL/NCS', color: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #ffeaa7 100%)', hex: '#rainbow', isDark: false, descriptionKey: 'options.customDesc', image: null },
+/**
+ * rPET Panel — product page, laid out after the rPET Panel datasheet
+ * (EN · 09/2026, v1.0): hero + four-figure band, formats to scale, colours,
+ * applications, the mounting-dependent absorption table, reaction to fire by
+ * colour, processing, technical data (server slot), ordering.
+ *
+ * Governed figures (thickness, format, αw, NRC, fire class, recycled share,
+ * colour count, plant) come from src/data/products.ts. The per-mounting
+ * absorption rows and the per-thickness weights are locale-independent
+ * literals transcribed from the datasheet (pages 1 and 2).
+ */
+
+// The ten stock colours, in the datasheet's order (page 3). The swatch
+// photographs are the datasheet's; the names are translated (productPage.rpet.colours).
+interface StockColour {
+  number: string;
+  id: string;
+  key: string;
+  src: string;
+}
+
+const STOCK_COLOURS: StockColour[] = [
+  { number: '01', id: 'light-grey', key: 'c01', src: '/images/products/rpet-panel/swatches/01-light-grey.webp' },
+  { number: '02', id: 'off-white', key: 'c02', src: '/images/products/rpet-panel/swatches/02-off-white.webp' },
+  { number: '03', id: 'sand', key: 'c03', src: '/images/products/rpet-panel/swatches/03-sand.webp' },
+  { number: '04', id: 'dusty-rose', key: 'c04', src: '/images/products/rpet-panel/swatches/04-dusty-rose.webp' },
+  { number: '05', id: 'deep-red', key: 'c05', src: '/images/products/rpet-panel/swatches/05-deep-red.webp' },
+  { number: '06', id: 'olive-green', key: 'c06', src: '/images/products/rpet-panel/swatches/06-olive-green.webp' },
+  { number: '07', id: 'forest-green', key: 'c07', src: '/images/products/rpet-panel/swatches/07-forest-green.webp' },
+  { number: '08', id: 'slate-blue', key: 'c08', src: '/images/products/rpet-panel/swatches/08-slate-blue.webp' },
+  { number: '09', id: 'silver-grey', key: 'c09', src: '/images/products/rpet-panel/swatches/09-silver-grey.webp' },
+  { number: '10', id: 'charcoal', key: 'c10', src: '/images/products/rpet-panel/swatches/10-charcoal.webp' },
 ];
 
-// Thickness options
-const thicknessOptions = [
-  { id: '12mm', value: 12, name: '12mm', weight: '3 kg/m²', descriptionKey: 'options.12mmDesc' },
-  { id: '18mm', value: 18, name: '18mm', weight: '3.5 kg/m²', descriptionKey: 'options.18mmDesc' },
-  { id: '24mm', value: 24, name: '24mm', weight: '4 kg/m²', descriptionKey: 'options.24mmDesc' },
+// Datasheet page 1 — "Dimensions and weight". Values marked ≈ are calculated
+// from the nominal surface weight and the panel area (the datasheet's note).
+const SURFACE_WEIGHT = { '9': '1.8 kg/m²', '12': '2.4 kg/m²' } as const;
+const PANEL_WEIGHT_2800 = { '9': '≈ 6.1 kg', '12': '≈ 8.2 kg' } as const;
+const PANEL_WEIGHT_2440 = { '9': '≈ 5.4 kg', '12': '≈ 7.1 kg' } as const;
+const DENSITY = '≈ 200 kg/m³';
+const FORMATS = [
+  { size: '2 800 × 1 220 mm', area: '3.42 m²', w: 1220, h: 2800, swatch: STOCK_COLOURS[9] },
+  { size: '2 440 × 1 220 mm', area: '2.98 m²', w: 1220, h: 2440, swatch: STOCK_COLOURS[7] },
 ];
 
-// Default hero image
-const defaultHeroImage = '/images/products/rpet-panel/hero-rPET-Flat.webp';
+// Datasheet page 2 — "Sound absorption", measured on the 12 mm panel
+// (EN ISO 354; αw and class EN ISO 11654; NRC ASTM C423). 9 mm: not yet measured.
+const ABSORPTION_ROWS = [
+  { key: 'direct', alphaW: '0.25 (MH)', nrc: '0.40', cls: 'D' },
+  { key: 'cavity50', alphaW: '0.60 (MH)', nrc: '0.75', cls: 'C' },
+  { key: 'cavity50wool', alphaW: '1.00', nrc: '0.95', cls: 'A' },
+  { key: 'cavity100', alphaW: '0.80 (H)', nrc: '0.80', cls: 'B' },
+  { key: 'cavity100wool', alphaW: '0.95', nrc: '0.95', cls: 'A' },
+] as const;
 
+const PROCESSING_ITEMS = ['cutting', 'cnc', 'drilling', 'painting', 'uv', 'care'] as const;
 
-// Every figure below (recycled share, αw, fire class) comes from product data
-// so copy, meta, specs and JSON-LD can never disagree again. 'unknown' selects
-// the figure-less ICU branch; a null spec hides the element that would show it.
+const DEFAULT_HERO_IMAGE = '/images/products/rpet-panel/hero-rPET-Flat.webp';
+const PHONE_DISPLAY = '+32 3 284 68 18';
+
+// Every figure below (recycled share, thickness, fire class, colour count)
+// comes from product data so copy, meta, specs and JSON-LD can never
+// disagree. 'unknown' selects the figure-less ICU branch.
 const PANEL = PRODUCTS['rpet-panel'];
 const panelSpecs = PANEL.specs.kind === 'panel' ? PANEL.specs : null;
 const pct: string = PANEL.recycledContentPct === null ? 'unknown' : String(PANEL.recycledContentPct);
+
+/**
+ * The stored EN 13501-1 class is written by colour, e.g.
+ * 'B-s1,d0 (white, grey, black) / B-s2,d0 (other colours)'. The classes are
+ * read from it here so the colour labels can be translated on the page; a
+ * single stored class is shown as one card.
+ */
+function fireClassesByColour(value: string | null | undefined): { light: string; other: string } | { single: string } | null {
+  if (!value) return null;
+  const parts = value
+    .split(' / ')
+    .map((p) => p.replace(/\s*\([^)]*\)\s*$/, '').trim())
+    .filter(Boolean);
+  if (parts.length >= 2) return { light: parts[0], other: parts[1] };
+  if (parts.length === 1) return { single: parts[0] };
+  return null;
+}
+
+const fireByColour = fireClassesByColour(panelSpecs?.fireClass);
+const thicknessFigure = panelSpecs?.thickness ? panelSpecs.thickness.replace(/\s*mm$/, '').replace(/ \/ /g, ' · ') : null;
 
 /**
  * Server-rendered sections are passed in as React nodes ("slots") so this
@@ -57,26 +115,16 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
 
-  // Application options (inside component so t() is available)
   const applicationOptions = [
     { id: 'walls', name: t('applications.app1Name'), description: t('applications.app1Desc') },
     { id: 'ceilings', name: t('applications.app2Name'), description: t('applications.app2Desc') },
     { id: 'dividers', name: t('applications.app3Name'), description: t('applications.app3Desc') },
     { id: 'furniture', name: t('applications.app4Name'), description: t('applications.app4Desc') },
   ];
-  const [activeSection, setActiveSection] = useState('overview');
-  const [selectedColor, setSelectedColor] = useState<typeof colorOptions[0] | null>(null);
-  const [selectedThickness, setSelectedThickness] = useState(thicknessOptions[1]); // 18mm default
-  const [isImageLoading, setIsImageLoading] = useState(false);
-  // Set when the selected color's image fails to load — hero falls back to
-  // the default image while the color selection (label/lead payload) sticks.
-  const [heroImageFailed, setHeroImageFailed] = useState(false);
 
-  // Get the current hero image based on selected color
-  const getHeroImage = () => {
-    if (heroImageFailed || !selectedColor || !selectedColor.image) return defaultHeroImage;
-    return selectedColor.image;
-  };
+  const [activeSection, setActiveSection] = useState('overview');
+  // null = no choice yet; 'custom' = the made-to-order card
+  const [selectedColour, setSelectedColour] = useState<StockColour | 'custom' | null>(null);
 
   // Fire a single view_item event on mount so GA4 / Meta see
   // the product impression. Empty deps array → fires once per page.
@@ -84,28 +132,22 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
     analytics.viewItem('rpet-panel', 'rpet');
   }, []);
 
-
-
-  const handleColorSelect = (color: typeof colorOptions[0]) => {
-    if (!selectedColor || color.id !== selectedColor.id) {
-      // Only show the spinner when the hero src actually changes — an
-      // unchanged src fires no load event, which would strand the overlay.
-      const nextImage = color.image ?? defaultHeroImage;
-      if (nextImage !== getHeroImage()) {
-        setIsImageLoading(true);
-      }
-      setHeroImageFailed(false);
-      setSelectedColor(color);
-    }
-  };
+  const colourName = (c: StockColour) => tPage(`rpet.colours.${c.key}`);
+  const selectedLabel =
+    selectedColour === null
+      ? tPage('rpet.colours.choose')
+      : selectedColour === 'custom'
+        ? tPage('rpet.colours.custom')
+        : tPage('rpet.colours.selected', { number: selectedColour.number, name: colourName(selectedColour) });
 
   const navItems = [
     { id: 'overview', label: tPage('nav.overview') },
-    { id: 'colors', label: t('nav.colors') },
-    { id: 'applications', label: t('nav.applications') },
+    { id: 'formats', label: tPage('nav.formats') },
+    { id: 'colors', label: tPage('nav.colors') },
     { id: 'acoustics', label: tPage('nav.acoustics') },
-    { id: 'processing', label: t('nav.processing') },
-    { id: 'specs', label: t('nav.specifications') },
+    { id: 'processing', label: tPage('nav.processing') },
+    { id: 'specs', label: tPage('nav.technicalData') },
+    { id: 'ordering', label: tPage('nav.ordering') },
     { id: 'gallery', label: tPage('nav.gallery') },
     { id: 'downloads', label: tPage('nav.downloads') },
   ];
@@ -140,7 +182,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             {t('hero.description', { pct })}
           </p>
           <p className="hero-manufacturer">{tm('statement')}</p>
-          
+
           <div className="hero-usps">
             <div className="usp">
               <span className="usp-text">{t('hero.usp1', { pct })}</span>
@@ -161,58 +203,96 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               {tPage('cta.viewSpecifications')}
             </a>
           </div>
-
         </div>
-        
+
         <div className="hero-image">
           <div className="image-container">
-            <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
-              <Image
-                src={getHeroImage()}
-                alt={`rPET - Panel acoustic panel${selectedColor ? ` in ${selectedColor.name}` : ''}`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 600px"
-                style={{ objectFit: 'cover' }}
-                priority
-                onLoad={() => setIsImageLoading(false)}
-                onError={() => {
-                  setHeroImageFailed(true);
-                  setIsImageLoading(false);
-                }}
-              />
-            </div>
-            {isImageLoading && (
-              <div className="image-loading-overlay">
-                <div className="loading-spinner"></div>
-              </div>
+            <Image
+              src={DEFAULT_HERO_IMAGE}
+              alt={t('alt.rpetPanelHero')}
+              fill
+              sizes="(max-width: 1024px) 100vw, 600px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+            {selectedColour !== null && selectedColour !== 'custom' && (
+              <figure className="swatch-preview">
+                <div className="swatch-preview-image">
+                  <Image
+                    src={selectedColour.src}
+                    alt={tPage('rpet.colours.swatchAlt', { number: selectedColour.number, name: colourName(selectedColour) })}
+                    fill
+                    sizes="120px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+                <figcaption>
+                  <span className="swatch-number">{selectedColour.number}</span>
+                  {colourName(selectedColour)}
+                </figcaption>
+              </figure>
             )}
           </div>
-          
+
           <div className="color-selector">
-            <span className="selector-label">{t('hero.colorSelector')}</span>
+            <span className="selector-label">{tPage('rpet.colours.stockLabel')}</span>
             <div className="color-options">
-              {colorOptions.map((color) => (
+              {STOCK_COLOURS.map((colour) => (
                 <button
-                  key={color.id}
-                  className={`color-option ${selectedColor?.id === color.id ? 'active' : ''}`}
-                  onClick={() => handleColorSelect(color)}
-                  title={color.name}
-                  aria-label={tPage('a11y.selectColour', { name: color.name })}
+                  key={colour.id}
+                  type="button"
+                  className={`color-option ${selectedColour !== null && selectedColour !== 'custom' && selectedColour.id === colour.id ? 'active' : ''}`}
+                  onClick={() => setSelectedColour(colour)}
+                  title={`${colour.number} ${colourName(colour)}`}
+                  aria-label={tPage('a11y.selectColour', { name: `${colour.number} ${colourName(colour)}` })}
+                  aria-pressed={selectedColour !== null && selectedColour !== 'custom' && selectedColour.id === colour.id}
                 >
-                  <span 
-                    className="color-swatch" 
-                    style={{ background: color.color }}
-                  />
-                  {selectedColor?.id === color.id && (
-                    <span className={`color-check ${color.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
-                  )}
+                  <Image src={colour.src} alt="" fill sizes="48px" style={{ objectFit: 'cover' }} />
                 </button>
               ))}
+              <button
+                type="button"
+                className={`color-option custom ${selectedColour === 'custom' ? 'active' : ''}`}
+                onClick={() => setSelectedColour('custom')}
+                title={tPage('rpet.colours.custom')}
+                aria-label={tPage('a11y.selectColour', { name: tPage('rpet.colours.custom') })}
+                aria-pressed={selectedColour === 'custom'}
+              >
+                <span aria-hidden="true">+</span>
+              </button>
             </div>
-            <span className="selected-color-name">{selectedColor?.name || t('hero.colorSelectorPlaceholder')}</span>
+            <span className="selected-color-name">{selectedLabel}</span>
           </div>
         </div>
       </section>
+
+      {/* KPI band — the datasheet's four figures */}
+      <div className="kpi-band">
+        <div className="kpi-inner">
+          {thicknessFigure && (
+            <div className="kpi">
+              <span className="kpi-value">{thicknessFigure}</span>
+              <span className="kpi-label">{tPage('rpet.kpi.thickness')}</span>
+            </div>
+          )}
+          <div className="kpi">
+            <span className="kpi-value">1.8 · 2.4</span>
+            <span className="kpi-label">{tPage('rpet.kpi.surfaceWeight')}</span>
+          </div>
+          {PANEL.recycledContentPct !== null && (
+            <div className="kpi">
+              <span className="kpi-value">{PANEL.recycledContentPct} %</span>
+              <span className="kpi-label">{tPage('rpet.kpi.recycled')}</span>
+            </div>
+          )}
+          {panelSpecs?.finishCount !== null && panelSpecs?.finishCount !== undefined && (
+            <div className="kpi">
+              <span className="kpi-value">{panelSpecs.finishCount}</span>
+              <span className="kpi-label">{tPage('rpet.kpi.stockColours')}</span>
+            </div>
+          )}
+        </div>
+      </div>
 
       {/* Sticky Navigation */}
       <nav className="product-nav">
@@ -246,9 +326,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
             <h2>{t('overview.title')}</h2>
-            <p>
-              {t('overview.description')}
-            </p>
+            <p>{t('overview.description')}</p>
             <ul className="feature-list">
               <li>
                 <span className="check">✓</span>
@@ -271,90 +349,133 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
         </div>
       </section>
 
-      {/* Key Benefits Section */}
-      <section className="content-section benefits-section dark">
-        <div className="benefits-header">
-          <span className="section-tag">{t('why.tag')}</span>
-          <h2>{t('why.title')}</h2>
-          <p>{t('why.description')}</p>
-        </div>
+      {/* Formats to scale + dimensions and weight (datasheet page 1) */}
+      <section id="formats" className="content-section formats-section">
+        <div className="ds-wrap">
+          <div className="formats-grid">
+            <div className="formats-scale">
+              <span className="section-tag">{tPage('rpet.formats.eyebrow')}</span>
+              <div className="format-boards">
+                {FORMATS.map((f) => (
+                  <figure key={f.size} className="format-board" style={{ aspectRatio: `${f.w} / ${f.h}` }}>
+                    <div className="format-board-face">
+                      <Image
+                        src={f.swatch.src}
+                        alt={tPage('rpet.colours.swatchAlt', { number: f.swatch.number, name: colourName(f.swatch) })}
+                        fill
+                        sizes="(max-width: 480px) 40vw, 180px"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <figcaption>
+                      <strong>{f.size}</strong>
+                      <span>{f.area}</span>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
 
-        <div className="benefits-grid">
-          <div className="benefit-card">
-            <h4>{t('why.reason1Title')}</h4>
-            <p>{t('why.reason1')}</p>
-          </div>
-          <div className="benefit-card">
-            <h4>{t('why.reason2Title')}</h4>
-            <p>{t('why.reason2')}</p>
-          </div>
-          <div className="benefit-card">
-            <h4>{t('why.reason3Title')}</h4>
-            <p>{t('why.reason3')}</p>
-          </div>
-          <div className="benefit-card">
-            <h4>{t('why.reason4Title')}</h4>
-            <p>{t('why.reason4')}</p>
-          </div>
-          <div className="benefit-card">
-            <h4>{t('why.reason5Title')}</h4>
-            <p>{t('why.reason5')}</p>
+            <div className="formats-data">
+              <span className="section-tag">{t('formats.tag')}</span>
+              <h2>{t('formats.title')}</h2>
+              <p>{t('formats.description')}</p>
+              <div className="table-scroll">
+                <table className="ds-table ds-table-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">{tPage('rpet.formats.perThickness')}</th>
+                      <th scope="col">9 mm</th>
+                      <th scope="col">12 mm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">{tPage('rpet.formats.surfaceWeight')}</th>
+                      <td>{SURFACE_WEIGHT['9']}</td>
+                      <td>{SURFACE_WEIGHT['12']}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">{tPage('rpet.formats.panel')} 2 800 × 1 220 mm</th>
+                      <td>{PANEL_WEIGHT_2800['9']}</td>
+                      <td>{PANEL_WEIGHT_2800['12']}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">{tPage('rpet.formats.panel')} 2 440 × 1 220 mm</th>
+                      <td>{PANEL_WEIGHT_2440['9']}</td>
+                      <td>{PANEL_WEIGHT_2440['12']}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">{tPage('rpet.formats.density')}</th>
+                      <td colSpan={2}>{DENSITY}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="ds-footnote">{tPage('rpet.formats.calculatedNote')}</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Colors Section */}
+      {/* Colours Section — ten stock colours, any colour to order */}
       <section id="colors" className="content-section colors-section">
-        <div className="colors-header">
-          <span className="section-tag">{t('colors.tag')}</span>
-          <h2>{t('colors.title')}</h2>
-          <p>
-            {t('colors.description')}
-          </p>
-        </div>
-
-        <div className="colors-grid">
-          {colorOptions.map((color) => (
-            <div 
-              key={color.id} 
-              className={`color-card ${selectedColor?.id === color.id ? 'active' : ''}`}
-              onClick={() => handleColorSelect(color)}
-            >
-              <div 
-                className="color-preview"
-                style={{ background: color.color }}
-              >
-                {color.id === 'custom' && (
-                  <span className="custom-label">{t('colors.anyColor')}</span>
-                )}
-              </div>
-              <div className="color-info">
-                <h4>{color.name}</h4>
-                <p>{t(color.descriptionKey)}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="finishing-teaser">
-          <div className="teaser-content">
-            <h3>{t('colors.moreOptionsTitle')}</h3>
-            <p>
-              {t('colors.moreOptionsDesc')}
-            </p>
+        <div className="ds-wrap">
+          <div className="colors-header">
+            <span className="section-tag">{t('colors.tag')}</span>
+            <h2>{t('colors.title')}</h2>
+            <p>{t('colors.description')}</p>
           </div>
-          <div className="finishing-options-preview">
-            <div className="finish-chip">
-              <span>{t('colors.fabric1')}</span>
+
+          <div className="swatch-grid">
+            {STOCK_COLOURS.map((colour) => {
+              const active = selectedColour !== null && selectedColour !== 'custom' && selectedColour.id === colour.id;
+              return (
+                <button
+                  key={colour.id}
+                  type="button"
+                  className={`swatch-card ${active ? 'active' : ''}`}
+                  onClick={() => setSelectedColour(colour)}
+                  aria-pressed={active}
+                  aria-label={tPage('a11y.selectColour', { name: `${colour.number} ${colourName(colour)}` })}
+                >
+                  <span className="swatch-image">
+                    <Image
+                      src={colour.src}
+                      alt={tPage('rpet.colours.swatchAlt', { number: colour.number, name: colourName(colour) })}
+                      fill
+                      sizes="(max-width: 480px) 20vw, (max-width: 1024px) 18vw, 110px"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </span>
+                  <span className="swatch-number">{colour.number}</span>
+                  <span className="swatch-name">{colourName(colour)}</span>
+                </button>
+              );
+            })}
+            <button
+              type="button"
+              className={`swatch-card custom ${selectedColour === 'custom' ? 'active' : ''}`}
+              onClick={() => setSelectedColour('custom')}
+              aria-pressed={selectedColour === 'custom'}
+              aria-label={tPage('a11y.selectColour', { name: tPage('rpet.colours.custom') })}
+            >
+              <span className="swatch-image custom-face">
+                <span aria-hidden="true">RAL · NCS</span>
+              </span>
+              <span className="swatch-number">+</span>
+              <span className="swatch-name">{tPage('rpet.colours.custom')}</span>
+            </button>
+          </div>
+
+          <div className="colour-notes">
+            <div className="colour-note">
+              <h3>{tPage('rpet.colours.madeToOrderTitle')}</h3>
+              <p>{tPage('rpet.colours.madeToOrderText')}</p>
             </div>
-            <div className="finish-chip">
-              <span>{t('colors.fabric2')}</span>
-            </div>
-            <div className="finish-chip">
-              <span>{t('colors.fabric3')}</span>
-            </div>
-            <div className="finish-chip">
-              <span>{t('colors.fabric4')}</span>
+            <div className="colour-note">
+              <h3>{tPage('rpet.colours.batchTitle')}</h3>
+              <p>{tPage('rpet.colours.batchText')}</p>
             </div>
           </div>
         </div>
@@ -419,196 +540,98 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
         </div>
       </section>
 
-      {/* Acoustic Performance Section */}
+      {/* Acoustics — the datasheet's mounting table (12 mm panel) */}
       <section id="acoustics" className="content-section acoustics-section">
-        <div className="acoustics-header">
+        <div className="ds-wrap">
           <span className="section-tag">{t('acoustics.tag')}</span>
-          <h2>{t('acoustics.title')}</h2>
-          <p>
-            {t('acoustics.description')}
-          </p>
-        </div>
+          <h2>{tPage('rpet.acoustics.title')}</h2>
+          <p className="ds-lead">{tPage('rpet.acoustics.intro')}</p>
 
-        <div className="acoustics-main-grid">
-          {/* Left: Panel cross-section */}
-          <div className="panel-diagram">
-            <div className="diagram-title">{t('acoustics.howItWorks')}</div>
-            <div className="fiber-visualization">
-              <div className="sound-wave-entry">
-                <div className="wave"></div>
-                <div className="wave"></div>
-                <div className="wave"></div>
-              </div>
-              <div className="fiber-layer">
-                <div className="fiber-detail">
-                  <div className="fibers">
-                    {[...Array(20)].map((_, i) => (
-                      <div key={i} className="fiber" style={{ 
-                        transform: `rotate(${Math.random() * 180}deg)`,
-                        left: `${(i % 5) * 25}%`,
-                        top: `${Math.floor(i / 5) * 25}%`,
-                      }} />
-                    ))}
-                  </div>
-                </div>
-                <div className="layer-label">
-                  <strong>{t('acoustics.fiberLabel')}</strong>
-                  <span>{t('acoustics.fiberSublabel')}</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="thickness-selector">
-              <span className="selector-title">{t('acoustics.panelThickness')}</span>
-              <div className="thickness-options">
-                {thicknessOptions.map((thickness) => (
-                  <button
-                    key={thickness.id}
-                    className={`thickness-option ${selectedThickness.id === thickness.id ? 'active' : ''}`}
-                    onClick={() => setSelectedThickness(thickness)}
-                  >
-                    <span className="thickness-value">{thickness.name}</span>
-                    <span className="thickness-weight">{thickness.weight}</span>
-                  </button>
+          <div className="table-scroll">
+            <table className="ds-table ds-table-4">
+              <thead>
+                <tr>
+                  <th scope="col">{tPage('rpet.acoustics.mountingHead')}</th>
+                  <th scope="col">αw</th>
+                  <th scope="col">NRC</th>
+                  <th scope="col">{tPage('rpet.acoustics.classHead')}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ABSORPTION_ROWS.map((row) => (
+                  <tr key={row.key} className={row.cls === 'A' ? 'is-class-a' : undefined}>
+                    <th scope="row">{tPage(`rpet.acoustics.rows.${row.key}`)}</th>
+                    <td>{row.alphaW}</td>
+                    <td>{row.nrc}</td>
+                    <td>{row.cls}</td>
+                  </tr>
                 ))}
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
-
-          {/* Right: Performance metrics */}
-          <div className="performance-metrics">
-            <div className="main-rating">
-              <div className="rating-ring">
-                <svg viewBox="0 0 120 120">
-                  <circle cx="60" cy="60" r="54" fill="none" stroke="#e8f4fc" strokeWidth="8"/>
-                  <circle 
-                    cx="60" cy="60" r="54" 
-                    fill="none" 
-                    stroke="#197FC7" 
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                    strokeDasharray="339"
-                    strokeDashoffset="0"
-                    transform="rotate(-90 60 60)"
-                  />
-                </svg>
-                <div className="rating-content">
-                  {panelSpecs?.alphaW && <span className="rating-value">αw {panelSpecs.alphaW}</span>}
-                  <span className="rating-label">{t('options.maximumLabel')}</span>
-                </div>
-              </div>
-              <div className="rating-badge">
-                <span className="badge-icon">★</span>
-                <span className="badge-text">{tPage('classA')}</span>
-              </div>
-            </div>
-
-            <div className="metric-cards">
-              {panelSpecs?.fireClass && (
-                <div className="metric-card">
-                  <div className="metric-value">{panelSpecs.fireClass}</div>
-                  <div className="metric-label">{t('acoustics.fireClassLabel')}</div>
-                </div>
-              )}
-              <div className="metric-card">
-                <div className="metric-value">ISO 354</div>
-                <div className="metric-label">{t('acoustics.testStandard')}</div>
-              </div>
-            </div>
-
-            <div className="test-note">
-              <p>
-                {t('acoustics.testConfig')}
-              </p>
-            </div>
-
-            <div className="certification-note">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#197FC7" strokeWidth="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
-              </svg>
-              <span>{t('acoustics.certNote')}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="acoustics-benefits">
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                <line x1="12" y1="19" x2="12" y2="23"/>
-                <line x1="8" y1="23" x2="16" y2="23"/>
-              </svg>
-            </div>
-            <h4>{t('acoustics.benefit1Title')}</h4>
-            <p>{t('acoustics.benefit1')}</p>
-          </div>
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                <line x1="9" y1="9" x2="9.01" y2="9"/>
-                <line x1="15" y1="9" x2="15.01" y2="9"/>
-              </svg>
-            </div>
-            <h4>{t('acoustics.benefit2Title')}</h4>
-            <p>{t('acoustics.benefit2')}</p>
-          </div>
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-              </svg>
-            </div>
-            <h4>{t('acoustics.benefit3Title')}</h4>
-            <p>{t('acoustics.benefit3')}</p>
-          </div>
+          <p className="ds-footnote">{tPage('rpet.acoustics.footnote')}</p>
         </div>
       </section>
 
-      {/* Processing Section */}
+      {/* Fire safety — by colour (datasheet page 2) */}
+      {fireByColour && (
+        <section id="fire" className="content-section fire-section">
+          <div className="ds-wrap">
+            <div className="fire-grid">
+              <div className="fire-text">
+                <span className="section-tag">{tPage('rpet.fire.tag')}</span>
+                <h2>{tPage('rpet.fire.title')}</h2>
+                {'single' in fireByColour ? (
+                  <p className="ds-lead">{tPage('rpet.fire.textSingle', { cls: fireByColour.single })}</p>
+                ) : (
+                  <p className="ds-lead">{tPage('rpet.fire.text', { light: fireByColour.light, other: fireByColour.other })}</p>
+                )}
+                <p className="ds-footnote">{tPage('rpet.fire.reports')}</p>
+              </div>
+              <div className="fire-cards">
+                {'single' in fireByColour ? (
+                  <div className="fire-card">
+                    <h3>{tPage('rpet.fire.allColours')}</h3>
+                    <span className="fire-standard">{tPage('rpet.fire.classTo')}</span>
+                    <span className="fire-class">{fireByColour.single}</span>
+                  </div>
+                ) : (
+                  <>
+                    <div className="fire-card">
+                      <h3>{tPage('rpet.fire.whiteGreyBlack')}</h3>
+                      <span className="fire-standard">{tPage('rpet.fire.classTo')}</span>
+                      <span className="fire-class">{fireByColour.light}</span>
+                    </div>
+                    <div className="fire-card">
+                      <h3>{tPage('rpet.fire.otherColours')}</h3>
+                      <span className="fire-standard">{tPage('rpet.fire.classTo')}</span>
+                      <span className="fire-class">{fireByColour.other}</span>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Processing — works like a wood-based board (datasheet page 2) */}
       <section id="processing" className="content-section processing-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
-            <span className="section-tag">{t('workability.tag')}</span>
-            <h2>{t('workability.title')}</h2>
-            <p>
-              {t('workability.description')}
-            </p>
-            
-            <div className="processing-methods">
-              <div className="method">
-                <div className="method-content">
-                  <h4>{t('workability.step1Title')}</h4>
-                  <p>{t('workability.step1Desc')}</p>
-                </div>
-              </div>
-              <div className="method">
-                <div className="method-content">
-                  <h4>{t('workability.step2Title')}</h4>
-                  <p>{t('workability.step2Desc')}</p>
-                </div>
-              </div>
-              <div className="method">
-                <div className="method-content">
-                  <h4>{t('workability.step3Title')}</h4>
-                  <p>{t('workability.step3Desc')}</p>
-                </div>
-              </div>
-              <div className="method">
-                <div className="method-content">
-                  <h4>{t('workability.step4Title')}</h4>
-                  <p>{t('workability.step4Desc')}</p>
-                </div>
-              </div>
-            </div>
+            <span className="section-tag">{tPage('rpet.processing.tag')}</span>
+            <h2>{tPage('rpet.processing.title')}</h2>
+            <p>{t('workability.description')}</p>
 
-            <div className="processing-quote">
-              <p>{t('workability.quote')}</p>
+            <div className="processing-methods">
+              {PROCESSING_ITEMS.map((item) => (
+                <div key={item} className="method">
+                  <div className="method-content">
+                    <h4>{tPage(`rpet.processing.${item}`)}</h4>
+                    <p>{tPage(`rpet.processing.${item}Desc`)}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="section-image">
@@ -631,8 +654,8 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           <div className="section-image">
             <div className="image-container">
               <Image
-                src="/images/products/rpet-panel/overview-recycled.jpg"
-                alt={t('alt.recycledPetBottles')}
+                src="/images/products/rpet-panel/rPET - Panel - 1.png"
+                alt={t('alt.rpetPanelSamplePanels')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -642,9 +665,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
-            <p>
-              {t('sustainability.description', { pct })}
-            </p>
+            <p>{t('sustainability.description', { pct })}</p>
             <div className="sustainability-features">
               <div className="sustain-item">
                 <div>
@@ -667,7 +688,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
               <div className="sustain-item">
                 <div>
                   <h4>{t('sustainability.cert4')}</h4>
-                  <p>{t('sustainability.cert4Desc')}</p>
+                  <p>{tPage('ordering.takeBack')}</p>
                 </div>
               </div>
             </div>
@@ -675,39 +696,110 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
         </div>
       </section>
 
-      {/* Specifications — server-rendered (ProductSpecs) */}
+      {/* Technical data — server-rendered (ProductSpecs, src/data/specs/rpet-panel.ts) */}
       {specs}
+
+      {/* Ordering — minimum order and lead time (datasheet page 3) */}
+      <section id="ordering" className="content-section ordering-section">
+        <div className="ds-wrap">
+          <span className="section-tag">{tPage('ordering.tag')}</span>
+          <h2>{tPage('rpet.ordering.title')}</h2>
+
+          <div className="ordering-grid">
+            <div className="table-scroll">
+              <table className="ds-table">
+                <thead>
+                  <tr>
+                    <th scope="col" colSpan={2}>{tPage('rpet.ordering.orderHead')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.minimumOrder')}</th>
+                    <td>{tPage('rpet.ordering.minimumOrderPanel')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.versions')}</th>
+                    <td>{tPage('rpet.ordering.versionsValue')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.prices')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.samples')}</th>
+                    <td>{tPage('rpet.ordering.samplesValue')}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="table-scroll">
+              <table className="ds-table">
+                <thead>
+                  <tr>
+                    <th scope="col" colSpan={2}>{tPage('rpet.ordering.supplyHead')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.leadTime')}</th>
+                    <td>{tPage('rpet.ordering.leadTimeValue')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.delivery')}</th>
+                    <td>{tPage('rpet.ordering.deliveryValue')}</td>
+                  </tr>
+                  {panelSpecs?.format && (
+                    <tr>
+                      <th scope="row">{tPage('ordering.sizes')}</th>
+                      <td>{panelSpecs.format}</td>
+                    </tr>
+                  )}
+                  {PANEL.madeIn && (
+                    <tr>
+                      <th scope="row">{tPage('ordering.madeIn')}</th>
+                      <td>{tm(`plant.${PANEL.madeIn}`)}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="dark-band">
+            <div className="band-col">
+              <h3>{tPage('ordering.endOfLife')}</h3>
+              <p>
+                {tPage('rpet.ordering.endOfLifeText')} {tPage('ordering.takeBack')}
+              </p>
+            </div>
+            <div className="band-col">
+              <h3>{tPage('ordering.samplesQuotes')}</h3>
+              <p>
+                <a href={`mailto:${SHOWROOM.email}`}>{SHOWROOM.email}</a>
+                {' · '}
+                <a href={SHOWROOM.telephoneHref} onClick={() => analytics.phoneClick('product_ordering_rpet-panel')}>{PHONE_DISPLAY}</a>
+              </p>
+              <p>
+                {tPage('rpet.ordering.showroom')}: {SHOWROOM.streetAddress}, {SHOWROOM.postalCode} {tm('plant.BE')}
+              </p>
+              <div className="band-ctas">
+                <Link href="/samples" className="btn-band-primary" prefetch={false}>{tPage('ordering.requestSamples')}</Link>
+                <Link href="/contact" className="btn-band-secondary" onClick={() => analytics.quoteClick('rpet-panel', 'product_ordering')}>{tPage('ordering.requestQuote')}</Link>
+              </div>
+            </div>
+          </div>
+          <p className="ds-footnote">
+            {tPage('ordering.dataNote')} {tPage('ordering.calculatedNote')}
+          </p>
+        </div>
+      </section>
 
       {/* Projects & Installations — server-rendered (ProductGallery) */}
       {gallery}
 
       {/* Downloads — server-rendered (ProductDownloads) */}
       {downloads}
-
-      {/* Samples Section */}
-      <section className="content-section samples-section dark">
-        <div className="samples-content">
-          <div className="samples-text">
-            <span className="section-tag">{t('sample.tag')}</span>
-            <h2>{t('sample.title')}</h2>
-            <p>
-              {t('sample.description')}
-            </p>
-            <Link href="/samples" className="btn-primary" prefetch={false}>{t('sample.cta')}</Link>
-          </div>
-          <div className="samples-image">
-            <div className="image-container">
-              <Image
-                src="/images/products/rpet-panel/rPET - Panel - 1.png"
-                alt={t('alt.rpetPanelSamplePanels')}
-                fill
-                sizes="(max-width: 1024px) 100vw, 550px"
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ — server-rendered (ProductFaq) */}
       {faq}
@@ -725,7 +817,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
             <Link href="/contact" className="btn-primary large" onClick={() => analytics.quoteClick('rpet-panel', 'product_cta')}>
               {tPage('cta.requestQuote')}
             </Link>
-            <a href="tel:+3232846818" className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_rpet-panel')}>
+            <a href={SHOWROOM.telephoneHref} className="btn-secondary large" onClick={() => analytics.phoneClick('product_cta_rpet-panel')}>
               {tPage('cta.callUs')}
             </a>
           </div>
@@ -740,78 +832,134 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           --brand-blue: #197FC7;
           --brand-blue-dark: #155d94;
           --brand-blue-pale: #e8f4fc;
-          --deep-blue: #0a1628;
-          --cream: #f8f6f3;
+          --brand-blue-soft: #9fd0f5;
+          --deep-blue: #0d3a5c;
+          --cream: #f7f9fb;
           --charcoal: #333;
-          --eco-green: #2e7d32;
-          --eco-green-light: #e8f5e9;
+          --line: #e6ecf1;
+          --table-head: #f3f6f9;
         }
 
+        /* ── Shared datasheet-style primitives ─────────────────── */
+        .ds-wrap { max-width: 1200px; margin: 0 auto; }
+        .ds-lead { font-size: 1.05rem; color: #444; line-height: 1.75; max-width: 820px; margin: 0 0 2rem; }
+        .ds-footnote { font-size: 0.8rem; color: #767676; line-height: 1.5; margin: 1rem 0 0; }
+
+        .section-tag {
+          display: inline-block;
+          font-family: var(--font-body);
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: var(--brand-blue);
+          text-transform: uppercase;
+          letter-spacing: 0.14em;
+          margin-bottom: 0.75rem;
+        }
+        .content-section.dark .section-tag { color: var(--brand-blue-soft); }
+
+        .rpet-panel-product-page h2 {
+          font-family: var(--font-heading);
+          font-size: 2.25rem;
+          color: var(--deep-blue);
+          letter-spacing: -0.5px;
+          line-height: 1.15;
+          margin: 0 0 1.25rem;
+        }
+        .content-section.dark h2 { color: white; }
+
+        .table-scroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+        .ds-table {
+          width: 100%;
+          min-width: 320px;
+          border-collapse: collapse;
+          font-size: 0.95rem;
+        }
+        .ds-table thead th {
+          background: var(--table-head);
+          color: #555;
+          font-weight: 500;
+          font-size: 0.85rem;
+          text-align: left;
+          padding: 0.7rem 0.9rem;
+          border-bottom: 2px solid var(--brand-blue);
+          white-space: nowrap;
+        }
+        .ds-table tbody th,
+        .ds-table tbody td {
+          padding: 0.75rem 0.9rem;
+          border-bottom: 1px solid var(--line);
+          text-align: left;
+          vertical-align: top;
+        }
+        .ds-table tbody th { font-weight: 400; color: #444; }
+        .ds-table tbody td { color: var(--deep-blue); font-weight: 600; white-space: nowrap; }
+        .ds-table-3 thead th:not(:first-child),
+        .ds-table-3 tbody td { text-align: right; }
+        .ds-table-4 thead th:not(:first-child),
+        .ds-table-4 tbody td { text-align: center; }
+        .ds-table tr.is-class-a td { color: var(--brand-blue); }
+
+        /* ── Hero ───────────────────────────────────────────────── */
         .product-hero {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 4rem;
-          padding: 8rem 4rem 4rem;
-          background: linear-gradient(135deg, var(--cream) 0%, white 100%);
-          min-height: 80vh;
+          padding: 8rem 4rem 3rem;
+          background: white;
           align-items: center;
         }
 
         .product-tag {
           display: inline-block;
-          background: var(--eco-green);
-          color: white;
           font-size: 0.75rem;
           font-weight: 600;
-          padding: 0.5rem 1rem;
-          border-radius: 20px;
+          color: var(--brand-blue);
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 0.14em;
           margin-bottom: 1rem;
         }
 
         .hero-content h1 {
-          font-size: 4.5rem;
+          font-family: var(--font-heading);
+          font-size: 3.5rem;
           color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-          letter-spacing: -2px;
+          margin-bottom: 0.75rem;
+          letter-spacing: -1.5px;
+          line-height: 1.05;
         }
 
         .hero-tagline {
-          font-size: 1.5rem;
-          color: var(--eco-green);
+          font-family: var(--font-heading);
+          font-size: 1.35rem;
+          color: var(--brand-blue);
           font-weight: 500;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.25rem;
+          line-height: 1.35;
         }
 
         .hero-description {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.8;
-          margin-bottom: 2rem;
-          max-width: 500px;
+          font-size: 1.05rem;
+          color: #444;
+          line-height: 1.75;
+          margin-bottom: 1rem;
+          max-width: 540px;
         }
+
+        .hero-manufacturer { font-size: 0.9rem; color: #767676; margin-bottom: 1.5rem; }
 
         .hero-usps {
           display: flex;
-          gap: 2rem;
+          flex-wrap: wrap;
+          gap: 0.75rem 1.75rem;
           margin-bottom: 2rem;
         }
 
-        .usp {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-        }
-
-        .usp-icon { font-size: 1.5rem; }
+        .usp { display: flex; align-items: center; gap: 0.5rem; }
+        .usp::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand-blue); }
         .usp-text { font-weight: 600; color: var(--deep-blue); font-size: 0.9rem; }
 
-        .hero-ctas {
-          display: flex;
-          gap: 1rem;
-          margin-bottom: 1.5rem;
-        }
+        .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
 
         .btn-primary {
           display: inline-flex;
@@ -826,12 +974,7 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           border: none;
           cursor: pointer;
         }
-
-        .btn-primary:hover {
-          background: var(--brand-blue-dark);
-          transform: translateY(-2px);
-        }
-
+        .btn-primary:hover { background: var(--brand-blue-dark); transform: translateY(-2px); }
         .btn-primary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
 
         .btn-secondary {
@@ -847,23 +990,15 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           transition: all 0.3s ease;
           cursor: pointer;
         }
-
-        .btn-secondary:hover {
-          background: var(--deep-blue);
-          color: white;
-        }
-
+        .btn-secondary:hover { background: var(--deep-blue); color: white; }
         .btn-secondary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
-
-        .hero-price { font-size: 0.95rem; color: #666; }
-        .hero-price strong { color: var(--deep-blue); font-size: 1.2rem; }
 
         .hero-image {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 1.5rem;
+          gap: 1.25rem;
         }
 
         .image-container {
@@ -871,123 +1006,131 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           width: 100%;
           max-width: 600px;
           aspect-ratio: 4/5;
-          border-radius: 24px;
+          border-radius: 20px;
           overflow: hidden;
           background: var(--cream);
         }
 
-        .image-wrapper {
+        .swatch-preview {
           position: absolute;
-          inset: 0;
-          transition: opacity 0.3s ease;
-        }
-
-        .image-wrapper.loading { opacity: 0.7; }
-
-        .image-loading-overlay {
-          position: absolute;
-          inset: 0;
+          left: 1rem;
+          bottom: 1rem;
+          margin: 0;
           display: flex;
           align-items: center;
-          justify-content: center;
-          background: rgba(255, 255, 255, 0.5);
+          gap: 0.75rem;
+          padding: 0.5rem 0.9rem 0.5rem 0.5rem;
+          background: rgba(255, 255, 255, 0.94);
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
-
-        .loading-spinner {
-          width: 40px;
-          height: 40px;
-          border: 3px solid var(--brand-blue-pale);
-          border-top-color: var(--brand-blue);
-          border-radius: 50%;
-          animation: spin 0.8s linear infinite;
+        .swatch-preview-image {
+          position: relative;
+          width: 56px;
+          height: 84px;
+          border-radius: 6px;
+          overflow: hidden;
+          flex: none;
         }
-
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .swatch-preview figcaption {
+          display: flex;
+          flex-direction: column;
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--deep-blue);
+        }
+        .swatch-preview .swatch-number { font-size: 0.75rem; color: var(--brand-blue); letter-spacing: 0.08em; }
 
         .color-selector {
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 0.75rem;
-          padding: 1.25rem 2rem;
+          padding: 1.1rem 1.5rem;
           background: white;
+          border: 1px solid var(--line);
           border-radius: 16px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          width: 100%;
+          max-width: 600px;
         }
 
         .selector-label {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           font-weight: 600;
           color: #767676;
           text-transform: uppercase;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.1em;
         }
 
-        .color-options { display: flex; gap: 0.6rem; }
+        .color-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
 
         .color-option {
           position: relative;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: 3px solid transparent;
-          background: none;
+          width: 34px;
+          height: 52px;
+          border-radius: 6px;
+          border: 2px solid transparent;
+          background: var(--cream);
           padding: 0;
+          overflow: hidden;
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
-        .color-option:hover { transform: scale(1.1); }
-
-        .color-option.active {
-          border-color: var(--brand-blue);
-          box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue);
-        }
-
-        .color-swatch {
-          display: block;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .color-check {
-          position: absolute;
-          inset: 0;
+        .color-option:hover { transform: translateY(-2px); }
+        .color-option.active { border-color: var(--brand-blue); box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue); }
+        .color-option.custom {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 0.9rem;
-          font-weight: bold;
+          border: 2px dashed #b9c6d2;
+          color: var(--brand-blue);
+          font-size: 1.25rem;
+          font-weight: 600;
         }
+        .color-option.custom.active { border-style: solid; }
 
-        .color-check.on-dark { color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-        .color-check.on-light { color: var(--deep-blue); text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); }
+        .selected-color-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); text-align: center; }
 
-        .selected-color-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
-
-        .image-container.gallery { aspect-ratio: 1; }
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
 
+        /* ── KPI band ───────────────────────────────────────────── */
+        .kpi-band { padding: 0 4rem 2.5rem; background: white; }
+        .kpi-inner {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          padding: 2rem 2.5rem;
+          background: var(--deep-blue);
+          border-radius: 16px;
+          color: white;
+        }
+        .kpi { display: flex; flex-direction: column; gap: 0.35rem; }
+        .kpi-value {
+          font-family: var(--font-heading);
+          font-size: 2.25rem;
+          font-weight: 700;
+          color: var(--brand-blue-soft);
+          letter-spacing: -0.5px;
+          line-height: 1;
+          white-space: nowrap;
+        }
+        .kpi-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.85); line-height: 1.4; }
+
+        /* ── Sticky nav ─────────────────────────────────────────── */
         .product-nav {
           position: sticky;
           top: 80px;
           z-index: 90;
           background: white;
-          border-bottom: 1px solid #eee;
+          border-bottom: 1px solid var(--line);
+          border-top: 1px solid var(--line);
           padding: 0 4rem;
         }
-
-        .nav-inner {
-          display: flex;
-          gap: 0;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
+        .nav-inner { display: flex; gap: 0; max-width: 1200px; margin: 0 auto; }
         .nav-item {
-          padding: 1.25rem 1.25rem;
+          padding: 1.1rem 1.1rem;
           background: none;
           border: none;
           font-size: 0.9rem;
@@ -996,15 +1139,15 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           cursor: pointer;
           border-bottom: 3px solid transparent;
           transition: all 0.3s ease;
+          white-space: nowrap;
         }
-
         .nav-item:hover { color: var(--brand-blue); }
         .nav-item.active { color: var(--brand-blue); border-bottom-color: var(--brand-blue); }
 
-        .content-section { padding: 6rem 4rem; }
+        /* ── Sections ───────────────────────────────────────────── */
+        .content-section { padding: 5rem 4rem; }
         .content-section.dark { background: var(--deep-blue); color: white; }
-        .content-section.dark .section-content h2 { color: white; }
-        .content-section.dark .section-content p { color: rgba(255, 255, 255, 0.8); }
+        .content-section.dark .section-content p { color: rgba(255, 255, 255, 0.82); }
 
         .section-grid {
           display: grid;
@@ -1014,749 +1157,344 @@ export default function RPETPanelProductPage({ breadcrumbs, specs, downloads, ga
           margin: 0 auto;
           align-items: center;
         }
-
         .section-grid.reverse { direction: rtl; }
         .section-grid.reverse > * { direction: ltr; }
 
-        .section-tag {
-          display: inline-block;
-          background: var(--eco-green-light);
-          color: var(--eco-green);
-          font-size: 0.75rem;
-          font-weight: 600;
-          padding: 0.4rem 0.8rem;
-          border-radius: 20px;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 1rem;
-        }
-
-        .content-section.dark .section-tag {
-          background: rgba(46, 125, 50, 0.3);
-          color: #81c784;
-        }
-
-        .section-content h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-          margin-bottom: 1.5rem;
-          letter-spacing: -1px;
-        }
-
-        .section-content p {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.8;
-          margin-bottom: 1.5rem;
-        }
+        .section-content p { font-size: 1.05rem; color: #444; line-height: 1.75; margin-bottom: 1.5rem; }
 
         .feature-list { list-style: none; padding: 0; margin: 0; }
-
         .feature-list li {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           gap: 0.75rem;
-          padding: 0.75rem 0;
+          padding: 0.6rem 0;
           font-size: 1rem;
           color: var(--charcoal);
+          border-top: 1px solid var(--line);
         }
+        .feature-list li:first-child { border-top: none; }
+        .check { color: var(--brand-blue); font-weight: bold; }
 
-        .content-section.dark .feature-list li { color: rgba(255, 255, 255, 0.9); }
-        .check { color: var(--eco-green); font-weight: bold; }
-
-        /* Benefits Section */
-        .benefits-header {
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
-        }
-
-        .benefits-header h2 {
-          font-size: 2.5rem;
-          color: white;
-          margin-bottom: 1rem;
-        }
-
-        .benefits-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
-
-        .benefits-grid {
+        /* ── Formats ────────────────────────────────────────────── */
+        .formats-section { background: var(--cream); }
+        .formats-grid {
           display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto;
+          grid-template-columns: 1fr 1.4fr;
+          gap: 3rem;
+          align-items: start;
         }
-
-        .benefit-card {
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          border-radius: 16px;
-          padding: 2rem 1.5rem;
-          text-align: center;
-          transition: all 0.3s ease;
-        }
-
-        .benefit-card:hover {
-          background: rgba(255, 255, 255, 0.1);
-          transform: translateY(-4px);
-        }
-
-        .benefit-card .benefit-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-        .benefit-card h4 { color: white; font-size: 1rem; margin-bottom: 0.5rem; }
-        .benefit-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0; line-height: 1.5; }
-
-        /* Colors Section */
-        .colors-header {
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
-        }
-
-        .colors-header h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-          margin-bottom: 1rem;
-        }
-
-        .colors-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
-
-        .colors-grid {
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          gap: 1.5rem;
-          max-width: 1200px;
-          margin: 0 auto 4rem;
-        }
-
-        .color-card {
+        .formats-scale {
           background: white;
+          border: 1px solid var(--line);
           border-radius: 16px;
+          padding: 1.5rem;
+        }
+        .format-boards {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 2rem;
+          padding: 1rem 0 0;
+        }
+        .format-board {
+          margin: 0;
+          width: 38%;
+          max-width: 170px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+        }
+        .format-board-face {
+          position: relative;
+          flex: 1;
+          border-radius: 4px;
           overflow: hidden;
+          box-shadow: 0 8px 24px rgba(13, 58, 92, 0.18);
+        }
+        .format-board figcaption {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          padding-top: 0.6rem;
+          text-align: center;
+          font-size: 0.85rem;
+          line-height: 1.4;
+          white-space: nowrap;
+        }
+        .format-board figcaption strong { display: block; color: var(--deep-blue); }
+        .format-board figcaption span { color: #767676; }
+        .format-boards::after { content: ''; display: block; width: 100%; height: 3.5rem; }
+
+        .formats-data h2 { margin-bottom: 0.75rem; }
+        .formats-data > p { font-size: 1rem; color: #444; line-height: 1.7; margin: 0 0 1.5rem; max-width: 620px; }
+        .formats-data .ds-table { background: white; }
+
+        /* ── Colours ────────────────────────────────────────────── */
+        .colors-header { max-width: 820px; margin: 0 0 2.5rem; }
+        .colors-header p { font-size: 1.05rem; color: #444; line-height: 1.75; margin: 0; }
+
+        .swatch-grid {
+          display: grid;
+          grid-template-columns: repeat(11, minmax(0, 1fr));
+          gap: 0.9rem;
+          margin-bottom: 3rem;
+        }
+        .swatch-card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.2rem;
+          padding: 0;
+          background: none;
+          border: none;
           cursor: pointer;
-          transition: all 0.3s ease;
-          border: 2px solid transparent;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          font: inherit;
+          color: inherit;
         }
-
-        .color-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        .swatch-image {
+          position: relative;
+          display: block;
+          width: 100%;
+          aspect-ratio: 260 / 675;
+          max-height: 200px;
+          border-radius: 4px;
+          overflow: hidden;
+          background: var(--cream);
+          box-shadow: 0 0 0 1px rgba(13, 58, 92, 0.08);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          margin-bottom: 0.35rem;
         }
-
-        .color-card.active {
-          border-color: var(--brand-blue);
+        .swatch-card:hover .swatch-image { transform: translateY(-3px); }
+        .swatch-card.active .swatch-image { box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue); }
+        .swatch-card .swatch-number {
+          font-family: var(--font-heading);
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: var(--brand-blue);
+          letter-spacing: 0.06em;
         }
-
-        .color-preview {
-          height: 120px;
+        .swatch-card .swatch-name { font-size: 0.85rem; color: var(--deep-blue); line-height: 1.25; }
+        .custom-face {
           display: flex;
           align-items: center;
           justify-content: center;
-        }
-
-        .custom-label {
-          font-size: 0.9rem;
-          font-weight: 600;
-          color: white;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        .color-info {
-          padding: 1rem;
-          text-align: center;
-        }
-
-        .color-info h4 { font-size: 1rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
-        .color-info p { font-size: 0.8rem; color: #767676; margin: 0; }
-
-        .finishing-teaser {
-          display: flex;
-          align-items: center;
-          gap: 3rem;
-          padding: 2rem;
-          background: var(--cream);
-          border-radius: 16px;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .teaser-content { flex: 1; }
-        .teaser-content h3 { font-size: 1.25rem; color: var(--deep-blue); margin-bottom: 0.5rem; }
-        .teaser-content p { font-size: 0.95rem; color: #666; margin: 0; }
-
-        .finishing-options-preview {
-          display: flex;
-          gap: 0.75rem;
-          flex-wrap: wrap;
-        }
-
-        .finish-chip {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.5rem 1rem;
+          border: 2px dashed #b9c6d2;
           background: white;
-          border-radius: 20px;
-          font-size: 0.85rem;
-          color: var(--deep-blue);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Applications Section */
-        .applications-header {
+          color: #767676;
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 0.06em;
           text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
+          padding: 0.25rem;
         }
+        .swatch-card.custom.active .custom-face { border-color: var(--brand-blue); box-shadow: none; }
 
-        .applications-header h2 {
-          font-size: 2.5rem;
-          color: white;
-          margin-bottom: 1rem;
+        .colour-notes {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2.5rem;
+          max-width: 1000px;
         }
+        .colour-note h3 { font-family: var(--font-heading); font-size: 1.15rem; color: var(--brand-blue); margin: 0 0 0.5rem; }
+        .colour-note p { font-size: 0.98rem; color: #444; line-height: 1.7; margin: 0; }
 
-        .applications-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
+        /* ── Applications ───────────────────────────────────────── */
+        .applications-header { max-width: 820px; margin: 0 auto 3rem; text-align: center; }
+        .applications-header p { font-size: 1.05rem; color: rgba(255, 255, 255, 0.82); line-height: 1.75; }
 
         .applications-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          gap: 1.5rem;
+          gap: 1.25rem;
           max-width: 1000px;
-          margin: 0 auto 4rem;
+          margin: 0 auto 3rem;
         }
-
         .application-card {
           background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          border-radius: 16px;
-          padding: 2rem;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 12px;
+          padding: 1.5rem;
           text-align: center;
-          transition: all 0.3s ease;
         }
+        .application-card h4 { color: white; margin-bottom: 0.4rem; font-size: 1rem; }
+        .application-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.72); margin: 0; }
 
-        .application-card:hover {
-          background: rgba(255, 255, 255, 0.1);
-        }
-
-        .app-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-        .application-card h4 { color: white; margin-bottom: 0.5rem; }
-        .application-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
-
-        .application-showcase {
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .showcase-grid {
-          display: grid;
-          grid-template-columns: 2fr 1fr 1fr;
-          gap: 1.5rem;
-        }
-
-        .showcase-item {
-          position: relative;
-          border-radius: 16px;
-          overflow: hidden;
-        }
-
-        .showcase-item .image-container {
-          aspect-ratio: 16/10;
-          border-radius: 16px;
-        }
-
-        .showcase-item.large .image-container {
-          aspect-ratio: 4/3;
-        }
-
+        .application-showcase { max-width: 1200px; margin: 0 auto; }
+        .showcase-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1.25rem; }
+        .showcase-item { position: relative; border-radius: 12px; overflow: hidden; }
+        .showcase-item .image-container { aspect-ratio: 16/10; border-radius: 12px; }
+        .showcase-item.large .image-container { aspect-ratio: 4/3; }
         .showcase-label {
           position: absolute;
           bottom: 1rem;
           left: 1rem;
-          background: rgba(0, 0, 0, 0.7);
+          background: rgba(13, 58, 92, 0.85);
           color: white;
-          padding: 0.5rem 1rem;
-          border-radius: 8px;
-          font-size: 0.9rem;
+          padding: 0.4rem 0.9rem;
+          border-radius: 6px;
+          font-size: 0.85rem;
           font-weight: 500;
         }
 
-        /* Acoustics Section */
-        .acoustics-section {
-          background: var(--cream);
-        }
+        /* ── Acoustics / fire ───────────────────────────────────── */
+        .acoustics-section { background: white; }
+        .acoustics-section .ds-table { max-width: 900px; }
 
-        .acoustics-header {
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
-        }
-
-        .acoustics-header h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-          margin-bottom: 1rem;
-        }
-
-        .acoustics-header p {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.8;
-        }
-
-        .acoustics-main-grid {
+        .fire-section { background: var(--cream); padding-top: 0; }
+        .fire-grid {
           display: grid;
-          grid-template-columns: 1.2fr 1fr;
-          gap: 4rem;
-          max-width: 1100px;
-          margin: 0 auto 4rem;
+          grid-template-columns: 1.1fr 1fr;
+          gap: 3rem;
           align-items: center;
+          padding-top: 4rem;
+          border-top: 1px solid var(--line);
         }
-
-        .panel-diagram {
-          background: white;
-          border-radius: 24px;
-          padding: 2.5rem;
-          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-        }
-
-        .diagram-title {
-          font-size: 0.85rem;
-          font-weight: 600;
-          color: #767676;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 2rem;
-          text-align: center;
-        }
-
-        .fiber-visualization {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          margin-bottom: 2rem;
-        }
-
-        .sound-wave-entry {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-          align-items: center;
-        }
-
-        .sound-wave-entry .wave {
-          width: 4px;
-          background: var(--brand-blue);
-          border-radius: 2px;
-          animation: wave-pulse 1.5s ease-in-out infinite;
-        }
-
-        .sound-wave-entry .wave:nth-child(1) { height: 20px; animation-delay: 0s; }
-        .sound-wave-entry .wave:nth-child(2) { height: 30px; animation-delay: 0.2s; }
-        .sound-wave-entry .wave:nth-child(3) { height: 24px; animation-delay: 0.4s; }
-
-        @keyframes wave-pulse {
-          0%, 100% { transform: scaleY(0.6); opacity: 0.4; }
-          50% { transform: scaleY(1); opacity: 0.8; }
-        }
-
-        .fiber-layer {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-
-        .fiber-detail {
-          height: 100px;
-          background: linear-gradient(135deg, #808080 0%, #606060 100%);
-          border-radius: 8px;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .fibers {
-          position: absolute;
-          inset: 0;
-        }
-
-        .fiber {
-          position: absolute;
-          width: 30px;
-          height: 2px;
-          background: rgba(255, 255, 255, 0.3);
-          border-radius: 1px;
-        }
-
-        .layer-label {
-          text-align: center;
-        }
-
-        .layer-label strong {
-          display: block;
-          font-size: 0.95rem;
-          color: var(--deep-blue);
-        }
-
-        .layer-label span {
-          font-size: 0.8rem;
-          color: #767676;
-        }
-
-        .thickness-selector {
-          background: var(--cream);
-          padding: 1.5rem;
-          border-radius: 12px;
-        }
-
-        .selector-title {
-          display: block;
-          font-size: 0.8rem;
-          font-weight: 600;
-          color: #767676;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          margin-bottom: 1rem;
-          text-align: center;
-        }
-
-        .thickness-options {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 0.75rem;
-        }
-
-        .thickness-option {
-          padding: 0.75rem;
-          background: white;
-          border: 2px solid #e0e0e0;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-          text-align: center;
-        }
-
-        .thickness-option:hover {
-          border-color: var(--brand-blue);
-        }
-
-        .thickness-option.active {
-          border-color: var(--brand-blue);
+        .fire-text .ds-lead { margin-bottom: 1rem; }
+        .fire-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+        .fire-card {
           background: var(--brand-blue-pale);
-        }
-
-        .thickness-value {
-          display: block;
-          font-size: 1rem;
-          font-weight: 600;
-          color: var(--deep-blue);
-        }
-
-        .thickness-weight {
-          font-size: 0.75rem;
-          color: #767676;
-        }
-
-        .performance-metrics {
+          border-radius: 12px;
+          padding: 1.5rem;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          gap: 2rem;
+          gap: 0.35rem;
         }
-
-        .main-rating {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1rem;
-        }
-
-        .rating-ring {
-          position: relative;
-          width: 160px;
-          height: 160px;
-        }
-
-        .rating-ring svg {
-          width: 100%;
-          height: 100%;
-        }
-
-        .rating-content {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .rating-content .rating-value {
-          font-size: 1.75rem;
+        .fire-card h3 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--brand-blue); margin: 0; }
+        .fire-standard { font-size: 0.8rem; color: #666; }
+        .fire-class {
+          font-family: var(--font-heading);
+          font-size: 1.9rem;
           font-weight: 700;
           color: var(--deep-blue);
+          margin-top: 0.5rem;
+          white-space: nowrap;
         }
 
-        .rating-content .rating-label {
-          font-size: 0.85rem;
-          color: #767676;
-        }
-
-        .rating-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          background: linear-gradient(135deg, var(--eco-green) 0%, #1b5e20 100%);
-          color: white;
-          padding: 0.5rem 1.25rem;
-          border-radius: 20px;
-          font-weight: 600;
-          font-size: 0.9rem;
-        }
-
-        .badge-icon { font-size: 1rem; }
-
-        .metric-cards {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-          width: 100%;
-        }
-
-        .metric-card {
-          background: white;
-          padding: 1.25rem;
-          border-radius: 12px;
-          text-align: center;
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-        }
-
-        .metric-value {
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: var(--brand-blue);
-          margin-bottom: 0.25rem;
-        }
-
-        .metric-label {
-          font-size: 0.8rem;
-          color: #767676;
-        }
-
-        .test-note {
-          padding: 1rem;
-          background: white;
-          border-radius: 12px;
-          width: 100%;
-        }
-
-        .test-note p {
-          font-size: 0.85rem;
-          color: #666;
-          margin: 0;
-          line-height: 1.5;
-        }
-
-        .certification-note {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 1rem 1.5rem;
-          background: rgba(46, 125, 50, 0.08);
-          border-radius: 12px;
-          font-size: 0.9rem;
-          color: var(--deep-blue);
-        }
-
-        .acoustics-benefits {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .benefit {
-          text-align: center;
-          padding: 2.5rem 2rem;
-          background: white;
-          border-radius: 20px;
-          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .benefit:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-        }
-
-        .benefit-icon-wrap {
-          width: 64px;
-          height: 64px;
-          margin: 0 auto 1.25rem;
-          background: var(--eco-green-light);
-          border-radius: 16px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--eco-green);
-        }
-
-        .benefit h4 {
-          font-size: 1.1rem;
-          color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-        }
-
-        .benefit p {
-          font-size: 0.9rem;
-          color: #666;
-          margin: 0;
-          line-height: 1.6;
-        }
-
-        /* Processing Section */
+        /* ── Processing ─────────────────────────────────────────── */
         .processing-methods {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
-          margin-top: 2rem;
+          gap: 1.25rem 2rem;
+          margin-top: 1rem;
         }
+        .method { display: flex; align-items: flex-start; gap: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.18); }
+        .method-content h4 { color: var(--brand-blue-soft); margin: 0 0 0.3rem; font-size: 1rem; font-family: var(--font-heading); }
+        .method-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.78); margin: 0; line-height: 1.55; }
 
-        .method {
-          display: flex;
-          align-items: flex-start;
-          gap: 1rem;
-        }
-
-        .method-icon {
-          width: 48px;
-          height: 48px;
-          background: rgba(25, 127, 199, 0.2);
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.5rem;
-          flex-shrink: 0;
-        }
-
-        .method-content h4 { color: white; margin: 0 0 0.25rem; font-size: 1rem; }
-        .method-content p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
-
-        .processing-quote {
-          margin-top: 2rem;
-          padding: 1.5rem;
-          background: rgba(255, 255, 255, 0.05);
-          border-left: 3px solid var(--brand-blue);
-          border-radius: 0 12px 12px 0;
-        }
-
-        .processing-quote p {
-          font-style: italic;
-          font-size: 1rem;
-          color: rgba(255, 255, 255, 0.9);
-          margin: 0;
-        }
-
-        /* Sustainability Section */
-        .sustainability-features {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
-        }
-
-        .sustain-item {
-          display: flex;
-          align-items: flex-start;
-          gap: 1rem;
-        }
-
-        .sustain-icon { font-size: 1.5rem; flex-shrink: 0; }
+        /* ── Sustainability ─────────────────────────────────────── */
+        .sustainability-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+        .sustain-item { display: flex; align-items: flex-start; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
         .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
-        .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
+        .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.55; }
 
-        /* Samples Section */
-        .samples-content {
+        /* ── Ordering ───────────────────────────────────────────── */
+        .ordering-section { background: white; }
+        .ordering-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-          max-width: 1100px;
-          margin: 0 auto;
-          align-items: center;
+          gap: 2rem;
+          margin-bottom: 2.5rem;
         }
+        .ordering-grid .ds-table tbody th { width: 40%; }
 
-        .samples-text h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
-        .samples-text p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem; line-height: 1.8; }
-
-        .samples-image .image-container {
-          aspect-ratio: 4/3;
+        .dark-band {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2.5rem;
+          background: var(--deep-blue);
+          color: white;
           border-radius: 16px;
+          padding: 2.25rem 2.5rem;
         }
+        .band-col h3 { font-family: var(--font-heading); font-size: 1.2rem; color: white; margin: 0 0 0.75rem; }
+        .band-col p { font-size: 0.95rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65; margin: 0 0 0.5rem; }
+        .band-col a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+        .band-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+        .btn-band-primary,
+        .btn-band-secondary {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.8rem 1.5rem;
+          border-radius: 50px;
+          font-weight: 600;
+          font-size: 0.95rem;
+          text-decoration: none !important;
+          transition: all 0.3s ease;
+        }
+        .btn-band-primary { background: white; color: var(--deep-blue) !important; }
+        .btn-band-primary:hover { background: var(--brand-blue-pale); }
+        .btn-band-secondary { border: 2px solid rgba(255, 255, 255, 0.7); color: white !important; }
+        .btn-band-secondary:hover { background: rgba(255, 255, 255, 0.12); }
 
-        /* CTA Section */
+        /* ── CTA ────────────────────────────────────────────────── */
         .cta-section {
           background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%);
           text-align: center;
         }
-
         .cta-content { max-width: 700px; margin: 0 auto; }
-        .cta-content h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
-        .cta-content > p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; }
-
-        .cta-buttons {
-          display: flex;
-          gap: 1rem;
-          justify-content: center;
-          margin-bottom: 1.5rem;
-        }
-
+        .cta-content h2 { color: white; margin-bottom: 1rem; }
+        .cta-content > p { font-size: 1.05rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; }
+        .cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
         .cta-section .btn-primary { background: white; color: var(--brand-blue); }
         .cta-section .btn-primary:hover { background: var(--cream); }
         .cta-section .btn-secondary { border-color: white; color: white; }
         .cta-section .btn-secondary:hover { background: white; color: var(--brand-blue); }
-        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); }
+        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); }
 
-        /* Responsive Styles */
+        /* ── Responsive ─────────────────────────────────────────── */
         @media (max-width: 1024px) {
-          .product-hero {
-            grid-template-columns: 1fr;
-            padding: 6rem 2rem 3rem;
-            min-height: auto;
-          }
-          .hero-content h1 { font-size: 3rem; }
+          .product-hero { grid-template-columns: 1fr; padding: 6rem 2rem 2rem; gap: 2.5rem; }
+          .hero-content h1 { font-size: 2.75rem; }
+          .kpi-band { padding: 0 2rem 2rem; }
+          .kpi-inner { grid-template-columns: repeat(2, 1fr); padding: 1.5rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .benefits-grid { grid-template-columns: repeat(3, 1fr); }
-          .colors-grid { grid-template-columns: repeat(3, 1fr); }
+          .formats-grid { grid-template-columns: 1fr; }
+          .swatch-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
           .applications-grid { grid-template-columns: repeat(2, 1fr); }
           .showcase-grid { grid-template-columns: 1fr 1fr; }
           .showcase-item.large { grid-column: span 2; }
+          .fire-grid { grid-template-columns: 1fr; }
           .sustainability-features { grid-template-columns: 1fr; }
-          .acoustics-main-grid { grid-template-columns: 1fr; gap: 3rem; }
-          .panel-diagram { max-width: 500px; margin: 0 auto; }
-          .acoustics-benefits { grid-template-columns: 1fr; max-width: 400px; }
-          .samples-content { grid-template-columns: 1fr; }
-          .finishing-teaser { flex-direction: column; text-align: center; }
+          .ordering-grid { grid-template-columns: 1fr; }
+          .dark-band { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
           .content-section { padding: 4rem 1.5rem; }
+          .kpi-band { padding: 0 1.5rem 2rem; }
           .product-nav { padding: 0 1rem; overflow-x: auto; }
           .nav-inner { min-width: max-content; }
-          .nav-item { padding: 1rem; font-size: 0.85rem; }
-          .hero-usps { flex-direction: column; gap: 1rem; }
+          .nav-item { padding: 1rem 0.9rem; font-size: 0.85rem; }
           .hero-ctas { flex-direction: column; }
-          .section-content h2 { font-size: 2rem; }
-          .benefits-grid { grid-template-columns: 1fr; }
-          .colors-grid { grid-template-columns: repeat(2, 1fr); }
+          .hero-ctas .btn-primary, .hero-ctas .btn-secondary { justify-content: center; }
+          .rpet-panel-product-page h2 { font-size: 1.85rem; }
+          .swatch-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+          .colour-notes { grid-template-columns: 1fr; gap: 1.5rem; }
           .applications-grid { grid-template-columns: 1fr; }
           .showcase-grid { grid-template-columns: 1fr; }
           .showcase-item.large { grid-column: span 1; }
-          .cta-buttons { flex-direction: column; }
-          .color-options { flex-wrap: wrap; justify-content: center; }
+          .fire-cards { grid-template-columns: 1fr; }
           .processing-methods { grid-template-columns: 1fr; }
-          .metric-cards { grid-template-columns: 1fr; }
-          .thickness-options { grid-template-columns: 1fr; }
+          .cta-buttons { flex-direction: column; }
+        }
+
+        @media (max-width: 480px) {
+          .product-hero { padding: 5.5rem 1rem 1.5rem; }
+          .hero-content h1 { font-size: 2.2rem; letter-spacing: -1px; }
+          .content-section { padding: 3rem 1rem; }
+          .kpi-band { padding: 0 1rem 1.5rem; }
+          .kpi-inner { grid-template-columns: 1fr 1fr; gap: 1.25rem; padding: 1.25rem; }
+          .kpi-value { font-size: 1.75rem; }
+          .swatch-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; }
+          .swatch-image { max-height: 150px; }
+          .format-boards { gap: 1.25rem; }
+          .format-board figcaption { font-size: 0.75rem; }
+          .color-selector { padding: 1rem; }
+          .dark-band { padding: 1.5rem 1.25rem; }
+          .band-ctas a { width: 100%; justify-content: center; }
         }
       `}</style>
     </div>

@@ -178,6 +178,42 @@ hub, price guide, blog posts, manufacturing page).
    (d) The guide's options (HPL, foil, paint, core colours brown/green/black,
    Nature and Gemini ranges) are shown on Micro, Perf and Panel because the
    guide says it applies to them — confirm they are orderable on each.
+12. **Questions the rPET Panel datasheet raised (20 September).** The three
+   rPET pages now carry the datasheet: formats 2 800 × 1 220 and 2 440 ×
+   1 220 mm, 9 and 12 mm, 1,8 / 2,4 kg/m², density ≈ 200 kg/m³, the ten
+   stock colours with their photographs, the 12 mm absorption table by
+   mounting, the fire class by colour, the processing list, ≈ 3–4 working
+   weeks, minimum 1 panel, EXW Częstochowa. Gone: 1 200 × 2 750 mm, 12/18/24
+   mm, 3–4 kg/m², "16" and "50+" colours, the 24 mm test set-up, VOC A+,
+   "no formaldehyde", "no binders", fabric/HPL/veneer finishes, "60 bottles",
+   "UV resistant", "batch consistency guaranteed", the US/UK/DE fire
+   ratings, "custom above 200 m²", the Flex Groove's 1 130 × 2 880 mm, 4,4 kg
+   and 1,35 kg/m². To settle:
+   (a) **OEKO-TEX Standard 100** is not on the datasheet but still shown for
+   the three rPET products (an earlier decision): give the certificate
+   number or it goes from all three.
+   (b) **Fire class by colour:** which of the ten stock colours count as
+   "white, grey and black" for B-s1,d0 — 02 Off-white, 01 Light grey, 09
+   Silver grey, 10 Charcoal? The data holds "B-s1,d0 / B-s2,d0" and the
+   pages print the datasheet's rule; the classification reports and the
+   EN ISO 354 test report would fill two empty download cards.
+   (c) **rPET Groove:** the rPET Panel exists in 9 and 12 mm — how are the
+   24 and 36 mm groove panels built (laminated 12 mm panels)? Do the NRC
+   figures 0,55 / 0,75 / 0,90 by thickness, the formats 600 / 1 200 × 600 /
+   1 200 / 2 400 mm, the weight 2,5–7,5 kg/m², the groove depths 6 / 12 /
+   18 mm and the four patterns (Line 25, Wave 30, Chevron 25, Grid 40 mm)
+   still stand? None of them is on a datasheet; they are shown as before.
+   Is the Groove cut from the Standard or the FR panel? The Black and
+   Anthracite product photos do not match a stock colour — say which
+   number each photo shows or reshoot.
+   (d) **rPET Flex Groove:** what is the finished format (2 880 mm cannot
+   be cut from a 2 800 mm panel — a slip for 2 800?), where does the 500 mm
+   bending radius come from, Standard or FR panel, do "minimum 1 panel" and
+   "EXW Częstochowa" apply, and is the photographed colour 03 Sand? The
+   9 mm panel is not yet measured, so the page gives no absorption figure —
+   say when it will be.
+   (e) Minimum quantities for made-to-order colours ("on request" now) and
+   the mounting strings in the product data (earlier data, untouched).
 
 ## B. Confirmed price list (per model)
 

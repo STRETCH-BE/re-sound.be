@@ -26,12 +26,12 @@
     "rwoodMicroDescription": "Paneles acústicos de madera microperforados (desde 0,5 mm) con chapa certificada FSC: patrón casi invisible, reacción al fuego {fireClass}, a medida hasta 3 050 × 1 220 mm.",
     "rwoodVeneerTitle": "rWood Panel — Paneles acústicos chapados, 12 chapas de madera | Re-Sound",
     "rwoodVeneerDescription": "Paneles acústicos chapados lisos en 12 chapas de madera natural, gama Nature o Gemini: certificación FSC®, laca natural o pigmentada, HPL, lámina o pintura. Acabados en fábrica, cualquier chapa por encargo.",
-    "rpetGrooveTitle": "rPET Groove — Paneles acústicos de PET ranurados | Re-Sound",
-    "rpetGrooveDescription": "Paneles acústicos de PET ranurados de botellas recicladas: 12 colores, 3 espesores (12/24/36 mm), NRC hasta 0,90, fuego B-s1,d0. Hechos en Polonia.",
-    "rpetPanelTitle": "rPET Panel — Panel acústico de PET reciclado | Re-Sound",
-    "rpetPanelDescription": "Panel acústico de PET reciclado que se mecaniza como MDF: corte, fresado, taladrado y pintado. 16 colores, 12/18/24 mm, OEKO-TEX®. Hecho en Polonia.",
-    "rpetFlexGrooveTitle": "rPET Flex Groove — Paneles acústicos PET flexibles | Re-Sound",
-    "rpetFlexGrooveDescription": "Paneles acústicos de PET flexibles para paredes curvas, columnas y techos: ranuras en V, radio mínimo 500 mm, 12 colores, certificados OEKO-TEX®.",
+    "rpetGrooveTitle": "rPET Groove — paneles de PET ranurados, 10 colores de stock | Re-Sound",
+    "rpetGrooveDescription": "Paneles acústicos de PET ranurados, mecanizados a partir del rPET Panel: 10 colores de stock y cualquier color por encargo, 12/24/36 mm, NRC hasta 0,90, reacción al fuego según el color (EN 13501-1). Fabricado en Polonia.",
+    "rpetPanelTitle": "rPET Panel — panel acústico de PET reciclado, 10 colores de stock | Re-Sound",
+    "rpetPanelDescription": "Panel acústico de PET reciclado que se mecaniza como el MDF: cortar, fresar, taladrar, pintar o imprimir en UV. 10 colores de stock y cualquier color por encargo, 9/12 mm, 2 800 × 1 220 o 2 440 × 1 220 mm, certificado OEKO-TEX®. Fabricado en Polonia.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove — paneles de PET flexibles, curvas | Re-Sound",
+    "rpetFlexGrooveDescription": "Paneles acústicos de PET flexibles para paredes curvas, columnas y techos, cortados del rPET Panel de 9 mm: cortes en V, radio mínimo 500 mm, 10 colores de stock y cualquier color por encargo, certificado OEKO-TEX®.",
     "faqTitle": "FAQ — Paneles Acústicos Re-Sound",
     "faqDescription": "Respuestas a las preguntas frecuentes sobre paneles acústicos y cabinas telefónicas Re-Sound: absorción, reacción al fuego, plazos, recogida y selección.",
     "soloFlexTitle": "Solo Flex — Cabina acústica individual para la oficina | Re-Sound",
@@ -1029,6 +1029,107 @@
       "requestQuote": "Solicitar presupuesto",
       "dataNote": "Los datos reflejan nuestros conocimientos actuales y pueden cambiar sin previo aviso.",
       "calculatedNote": "Los valores marcados con ≈ son calculados."
+    },
+    "rpet": {
+      "kpi": {
+        "thickness": "mm de espesor",
+        "surfaceWeight": "kg/m² de peso superficial",
+        "recycled": "PET reciclado",
+        "stockColours": "colores de stock, cualquier color por encargo",
+        "nrcByThickness": "NRC por espesor",
+        "fire": "reacción al fuego según el color (EN 13501-1)"
+      },
+      "formats": {
+        "eyebrow": "Formatos de panel · a escala",
+        "perThickness": "Por espesor",
+        "surfaceWeight": "Peso superficial",
+        "panel": "Panel",
+        "density": "Densidad (ambos)",
+        "calculatedNote": "≈ Calculado a partir del peso superficial nominal y la superficie del panel."
+      },
+      "colours": {
+        "c01": "Gris claro",
+        "c02": "Blanco roto",
+        "c03": "Arena",
+        "c04": "Rosa empolvado",
+        "c05": "Rojo intenso",
+        "c06": "Verde oliva",
+        "c07": "Verde bosque",
+        "c08": "Azul pizarra",
+        "c09": "Gris plata",
+        "c10": "Antracita",
+        "custom": "Cualquier color por encargo",
+        "rangeValue": "10 colores de stock + a medida",
+        "stockLabel": "Color de stock",
+        "choose": "Elija un color de stock",
+        "selected": "Color de stock {number} · {name}",
+        "swatchAlt": "Color de stock rPET {number} {name}, fotografía de la muestra",
+        "madeToOrderTitle": "Por encargo",
+        "madeToOrderText": "Los colores de stock 01–10 están siempre disponibles, desde un panel. Cualquier otro color se fabrica por encargo: envíenos una referencia RAL o NCS o una muestra física. Cantidades mínimas para colores por encargo bajo petición.",
+        "batchTitle": "Color y lote",
+        "batchText": "Fabricado con fibras recicladas, por lo que ligeras diferencias de tono entre lotes son normales. Pida juntos los paneles de una misma superficie y móntelos en el mismo sentido. Las muestras son fotografías: solicite muestras físicas antes de prescribir."
+      },
+      "fire": {
+        "tag": "Seguridad contra incendios",
+        "title": "Reacción al fuego",
+        "text": "La reacción al fuego según EN 13501-1 depende del color: el blanco, el gris y el negro alcanzan {light}; todos los demás colores, {other}, tanto en la versión Standard como en la FR.",
+        "textSingle": "Reacción al fuego según EN 13501-1: {cls}, tanto en la versión Standard como en la FR.",
+        "whiteGreyBlack": "Blanco, gris, negro",
+        "otherColours": "Otros colores",
+        "allColours": "Todos los colores",
+        "classTo": "Clase según EN 13501-1",
+        "reports": "Informes de clasificación bajo petición."
+      },
+      "acoustics": {
+        "title": "Absorción acústica",
+        "intro": "El fieltro de PET es un absorbente poroso: el sonido entra en la estructura abierta de fibras y se convierte en calor. Cuánto absorbe un panel depende de su espesor y, sobre todo, de cómo se monta. Fijado directamente a la pared trata sobre todo las frecuencias medias y altas; con una cámara de aire o lana mineral detrás, la absorción aumenta notablemente y alcanza frecuencias más bajas.",
+        "mountingHead": "Montaje · panel de 12 mm",
+        "classHead": "Clase de absorción",
+        "rows": {
+          "direct": "Directamente sobre la pared",
+          "cavity50": "Cámara de aire de 50 mm",
+          "cavity50wool": "Cámara de 50 mm + lana de roca de 50 mm",
+          "cavity100": "Cámara de aire de 100 mm",
+          "cavity100wool": "Cámara de 100 mm + lana de roca de 100 mm"
+        },
+        "footnote": "Medido según EN ISO 354 en fieltro de PET de 12 mm de especificación idéntica (2,4 kg/m²); αw y clase según EN ISO 11654, NRC según ASTM C423. Panel de 9 mm: aún sin medir.",
+        "notMeasured": "Aún sin medir",
+        "notMeasuredTitle": "9 mm: aún sin medir",
+        "notMeasured9": "El rPET Panel de 9 mm aún no se ha medido, por lo que no damos ningún valor de absorción para rPET Flex Groove. La tabla del material de 12 mm en la página de rPET Panel muestra cómo se comporta el fieltro de PET según el montaje.",
+        "panelTableLink": "Tabla de absorción del material rPET Panel (12 mm, por montaje)"
+      },
+      "processing": {
+        "tag": "Mecanizado",
+        "title": "Se trabaja como un tablero de madera",
+        "cutting": "Corte",
+        "cuttingDesc": "Con cuchilla, sierra circular, sierra de paneles o amoladora angular con disco para metal.",
+        "cnc": "Fresado CNC",
+        "cncDesc": "Formas, recortes y ranuras; los cortes en V permiten plegar esquinas y formas 3D.",
+        "drilling": "Taladrado y fijación",
+        "drillingDesc": "Se taladra y admite tornillos sin astillarse.",
+        "painting": "Pintura",
+        "paintingDesc": "Admite pinturas al agua y al disolvente.",
+        "uv": "Impresión UV",
+        "uvDesc": "Gráficos personalizados, impresos internamente por Re-Sound.",
+        "care": "Mantenimiento",
+        "careDesc": "Aspirar con un cepillo suave; tratar las manchas localmente."
+      },
+      "material": {
+        "fromPanelTitle": "Fabricado a partir del rPET Panel",
+        "panelLink": "rPET Panel: formatos, datos técnicos y la tabla de absorción completa"
+      },
+      "ordering": {
+        "title": "Pedido mínimo y plazo de entrega",
+        "orderHead": "Pedido",
+        "supplyHead": "Suministro",
+        "minimumOrderPanel": "1 panel",
+        "versionsValue": "Standard · FR (ignífugo)",
+        "leadTimeValue": "≈ 3–4 semanas laborables",
+        "deliveryValue": "EXW Częstochowa, Polonia",
+        "samplesValue": "Muestras físicas bajo petición",
+        "endOfLifeText": "100 % PET, un solo material, reciclable al final de su vida útil.",
+        "showroom": "Showroom"
+      }
     }
   },
   "interiorPage": {
@@ -1437,43 +1538,22 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE PET RECICLADO",
-      "title": "rPET Groove: paneles acústicos ranurados de PET en 12 colores",
-      "tagline": "De Botellas al Silencio",
-      "description": "Transforme su espacio con los paneles acústicos rPET - Groove. {pct, select, unknown {Fabricados con botellas de plástico recicladas, estos} other {Fabricados con un {pct} % de botellas de plástico recicladas, estos}} elegantes paneles ranurados combinan diseño contemporáneo con una absorción sonora excepcional. Eficiencia y elegancia.",
+      "title": "rPET Groove: paneles acústicos de PET ranurados, diez colores de stock y cualquier color por encargo",
+      "tagline": "Paneles acústicos ranurados, mecanizados a partir del rPET Panel.",
+      "description": "rPET Groove se mecaniza en CNC a partir del rPET Panel, un fieltro acústico rígido {pct, select, unknown {fabricado con botellas de PET recicladas} other {fabricado con {pct} % de botellas de PET recicladas}}. Los patrones de ranuras visibles dan profundidad y textura a paredes y techos mientras el fieltro absorbe el sonido.",
       "usp1": "{pct, select, unknown {Botellas de PET recicladas} other {{pct} % de PET reciclado}}",
-      "usp2": "NRC hasta 0,90",
-      "usp3": "12 Colores de Diseño",
-      "colorSelector": "Seleccionar Color",
-      "description2": ""
+      "usp2": "Mecanizado a partir del rPET Panel",
+      "usp3": "{count, select, unknown {Colores de stock, cualquier color por encargo} other {{count} colores de stock, cualquier color por encargo}}",
+      "photoStrip": "Fotos del producto"
     },
     "overview": {
       "tag": "VISIÓN GENERAL",
       "title": "Silencio Circular",
-      "description": "Los paneles rPET - Groove aportan un toque contemporáneo a cualquier espacio a la vez que reducen las molestias por ruido. El diseño de lamas visibles crea profundidad visual y textura, ideal para oficinas modernas, salas de reuniones, vestíbulos, restaurantes y zonas de recepción.",
+      "description": "rPET Groove aporta textura a oficinas, salas de reuniones, vestíbulos, restaurantes y zonas de recepción a la vez que reduce la reverberación. Las ranuras se mecanizan en el rPET Panel, por lo que material, colores, mecanizado y reacción al fuego son los del panel.",
       "feature1": "{pct, select, unknown {Fabricado con botellas de plástico recicladas} other {Fabricado con un {pct} % de botellas de plástico recicladas}}",
       "feature2": "Patrones de ranuras cortados por CNC con precisión",
-      "feature3": "Acabado duradero y colorido gracias al teñido dope",
-      "feature4": "Rangos de espesores de 12 mm, 24 mm y 36 mm",
-      "description2": ""
-    },
-    "fromBottles": {
-      "tag": "EL VIAJE",
-      "title": "De Botella Plástica a Panel Acústico",
-      "step1Number": "01",
-      "step1Title": "Recogida",
-      "step1Desc": "Las botellas de plástico posconsumo se recogen y se clasifican",
-      "step2Number": "02",
-      "step2Title": "Procesamiento",
-      "step2Desc": "Las botellas se limpian, se trituran y se funden para obtener fibras de PET",
-      "step3Number": "03",
-      "step3Title": "Fieltrado",
-      "step3Desc": "Las fibras se comprimen en densas láminas de fieltro acústico",
-      "step4Number": "04",
-      "step4Title": "Acabado",
-      "step4Desc": "El corte de precisión CNC crea los característicos patrones de ranuras",
-      "description": "Cada panel rPET - Groove da una nueva vida a aproximadamente 60 botellas de plástico recicladas. Nuestro proceso de fabricación transforma residuos de PET posconsumo en fieltro acústico de alto rendimiento, creando un producto verdaderamente circular.",
-      "statLabel": "Botellas recicladas por panel",
-      "description2": ""
+      "feature3": "Pesa una fracción de un tablero de madera",
+      "feature4": "Rangos de espesores de 12 mm, 24 mm y 36 mm"
     },
     "patterns": {
       "tag": "PATRONES",
@@ -1484,44 +1564,14 @@
       "description2": ""
     },
     "colors": {
-      "title": "12 Colores Vibrantes",
-      "subtitle": "Desde tonos neutros hasta acentos atrevidos, nuestra cuidada colección complementa cualquier interior.",
-      "tag": "COLORES",
-      "feature1": "Resistente a los Rayos UV",
-      "feature1Desc": "El color teñido en masa no se desvanece con la luz solar",
-      "feature2": "Fácil Limpieza",
-      "feature2Desc": "Superficie resistente a las manchas, limpiable con un paño húmedo",
-      "feature3": "Sin Decoloración",
-      "feature3Desc": "El proceso de teñido garantiza colores coherentes en todo el panel",
-      "description2": "Desde tonos neutros hasta acentos atrevidos, nuestra cuidada paleta de colores se integra a la perfección en cualquier concepto de interiorismo. Todos los colores se obtienen mediante tintura en masa, lo que garantiza una excelente solidez del color y resistencia a los rayos UV.",
-      "description": "Desde tonos neutros hasta acentos atrevidos, nuestra cuidada paleta de colores se integra a la perfección en cualquier concepto de interiorismo. Todos los colores se obtienen mediante tintura en masa, lo que garantiza una excelente solidez del color y resistencia a los rayos UV."
-    },
-    "thickness": {
-      "title": "Seleccionar Espesor",
-      "subtitle": "Tres espesores para diferentes necesidades acústicas",
-      "tag": "SELECCIONAR ESPESOR",
-      "sectionTitle": "Seleccionar Espesor"
+      "title": "Diez colores de stock, cualquier color por encargo",
+      "tag": "Colores",
+      "description": "La gama de colores es la del rPET Panel: diez colores de stock, numerados 01–10, y cualquier otro color por encargo. Las fotos del producto de arriba muestran colores anteriores; prescriba a partir de las muestras numeradas."
     },
     "acoustics": {
-      "tag": "ACÚSTICA",
-      "title": "Rendimiento Acústico",
-      "description": "El exclusivo diseño ranurado, combinado con fieltro de PET reciclado de alta densidad, ofrece una absorción acústica excepcional. Reduzca el eco, elimine el ruido y cree espacios tan agradables para el oído como para la vista.",
-      "benefit1Title": "Reducción del Eco",
-      "benefit1": "Reducción sustancial de la reverberación en cualquier espacio",
-      "benefit2Title": "Mayor Claridad del Habla",
-      "benefit2": "Mejora la inteligibilidad del habla para comunicaciones más claras",
-      "benefit3Title": "Reducción del Ruido",
-      "benefit3": "Absorbe las frecuencias sonoras perturbadoras para mayor comodidad",
-      "diagramTitle": "Sección Transversal del Panel",
-      "layer1Name": "Superficie ranurada",
-      "layer1Desc": "Patrón cortado por CNC para aportar profundidad visual",
-      "layer2Name": "Núcleo PET de alta densidad",
-      "layer2Desc": "Capa de absorción acústica",
-      "layer3Name": "Superficie de montaje",
-      "layer3Desc": "Fijación directa a pared/techo",
-      "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Ensayado según ISO 354 y ASTM C423",
-      "description2": ""
+      "tag": "Acústica",
+      "description": "Coeficiente de reducción de ruido (NRC) por espesor de panel, según nuestros datos de producto. El fieltro se comporta como se describe para el rPET Panel: el montaje y la cámara detrás del panel determinan cuánto se absorbe.",
+      "certNote": "Ensayado según ISO 354 y ASTM C423"
     },
     "installation": {
       "tag": "INSTALACIÓN FÁCIL",
@@ -1550,89 +1600,36 @@
       "badge2": "Devolución Circular",
       "badge3": "Producción Belga",
       "badge4": "OEKO-TEX® Certificado",
-      "recycledBottlesLabel": "Botellas recicladas por panel",
       "badge1Desc": "Fabricado al 100% con botellas PET recicladas",
-      "badge2Desc": "Devolución gratuita de paneles al final de su vida útil",
-      "badge3Desc": "Recogemos los paneles para su reciclaje",
-      "badge4Desc": "Certificado para la seguridad humana",
-      "description2": ""
+      "badge4Desc": "Certificado para la seguridad humana"
     },
     "specs": {
       "tag": "ESPECIFICACIONES",
       "title": "Especificaciones Técnicas",
       "acousticsTitle": "Rendimiento acústico",
-      "nrc12": "NRC (12mm)",
-      "nrc12Value": "0.55",
-      "nrc24": "NRC (24mm)",
-      "nrc24Value": "0.75",
-      "nrc36": "NRC (36mm)",
-      "nrc36Value": "0.90",
-      "testStandard": "Norma de prueba",
-      "testStandardValue": "ISO 354 / ASTM C423",
       "fireTitle": "Seguridad al fuego",
-      "fireEU": "Europea",
-      "fireEUValue": "B-s1, d0",
-      "fireUS": "EE. UU. (ASTM E-84)",
-      "fireUSValue": "Clase A",
-      "fireUK": "Reino Unido (BS 476)",
-      "fireUKValue": "Clase 0",
-      "fireDE": "Alemania (DIN 4102)",
-      "fireDEValue": "B1",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificaciones y fin de vida",
       "certHealth": "Salud",
-      "certHealthValue": "OEKO-TEX® Standard 100",
-      "certEnv": "Medioambiental",
-      "certEnvValue": "DAP disponible",
-      "certVOC": "Bajas emisiones / E1",
-      "certVOCValue": "Bajas emisiones / E1",
-      "certRecycled": "Contenido reciclado",
-      "certRecycledValue": "Botellas de PET posconsumo",
       "applicationsTitle": "Aplicaciones",
       "appInstall": "Instalación",
-      "appInstallValue": "Paredes y Techos",
-      "appEnv": "Entorno",
-      "appEnvValue": "Interior (zonas secas)",
-      "appIdeal": "Ideal para",
-      "appIdealValue": "Oficinas, salas de reuniones, vestíbulos",
-      "appSuitable": "También adecuado",
-      "appSuitableValue": "Restaurantes, hoteles, escuelas",
       "dimensionsTitle": "Dimensiones",
-      "widthValue": "600 / 1200 mm",
-      "lengthValue": "600 / 1200 / 2400 mm",
-      "thicknessValue": "12 / 24 / 36 mm",
-      "weightValue": "2,5 - 7,5 kg/m²",
-      "densityValue": "200-250 kg/m³",
       "materialTitle": "Material",
       "dimPanelWidth": "Ancho del panel",
       "dimPanelLength": "Longitud del panel",
-      "dimThickness": "Espesor",
       "dimGrooveDepth": "Profundidad de ranura",
-      "dimWeight": "Peso",
-      "acNRC12": "NRC (12mm)",
-      "acNRC24": "NRC (24mm)",
-      "acNRC36": "NRC (36mm)",
       "matComposition": "Composición",
-      "matBinder": "Aglutinante",
-      "matRecycled": "Contenido reciclado",
-      "matFireClass": "Clase al fuego",
-      "matEmissions": "Emisiones de COV",
-      "fireCert": "Certificación",
-      "appWalls": "Paneles de pared",
-      "appCeilings": "Paneles de techo",
       "appEnvironment": "Entorno",
-      "matRecycledPET": "Fieltro de PET reciclado",
+      "matRecycledPET": "Fieltro de PET 100 % reciclado (rPET Panel)",
       "matDensity": "Densidad",
       "colorsLabel": "Colores",
-      "colorsVal": "12 colores estándar",
       "customColors": "Colores personalizados",
-      "customColorsVal": "Disponible (se aplica MOQ)",
-      "certEPD": "DAP disponible",
-      "certGRS": "Botellas de PET posconsumo",
+      "customColorsVal": "Por encargo a partir de una referencia RAL o NCS o de una muestra; cantidades mínimas bajo petición",
       "appIdealFor": "Ideal para",
       "appIdealVal": "Oficinas, salas de reuniones, vestíbulos",
       "appAlso": "También adecuado",
       "appAlsoVal": "Restaurantes, hoteles, escuelas",
-      "nrcByThickness": "NRC (según espesor)"
+      "nrcByThickness": "NRC (según espesor)",
+      "fireReports": "Informes de clasificación"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
@@ -1663,198 +1660,129 @@
       "questions": {
         "oekoTex": {
           "question": "¿Está certificado el PET reciclado?",
-          "answer": "Sí. Todos los paneles rPET están certificados OEKO-TEX® Standard 100 — verifica la ausencia de sustancias nocivas. Las emisiones de COV se ensayan según la categoría francesa A+ (la calificación más estricta de calidad de aire interior)."
+          "answer": "Sí. Los paneles rPET cuentan con un certificado OEKO-TEX® Standard 100, disponible bajo petición. El panel es fieltro de PET 100 % reciclado: un solo material, reciclable al final de su vida útil."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
-          "answer": "Según EN 13501-1, rPET Groove está clasificado {groove}. El certificado de fuego se encuentra en el bloque de descargas de esta página; los demás modelos rPET indican su propia clase en sus respectivas páginas."
+          "answer": "Según EN 13501-1, la clase depende del color: rPET Groove está clasificado {groove}, como el rPET Panel del que se mecaniza. Informes de clasificación bajo petición."
         },
         "processability": {
           "question": "¿Pueden los paneles rPET cortarse, taladrarse o pintarse?",
-          "answer": "Sí. El rPET se comporta como MDF en maquinaria estándar de carpintería: cortar con sierra circular o fresadora CNC, taladrar con brocas helicoidales, pintar con acabados al agua o al disolvente. No se requiere equipo de protección especial."
+          "answer": "Sí. rPET Groove se mecaniza a partir del rPET Panel y se trabaja igual: corte con sierra o amoladora angular con disco para metal, fresado CNC, taladrado y atornillado sin astillarse, pintura al agua o al disolvente."
         },
         "colorRange": {
           "question": "¿Cuántos colores hay disponibles?",
-          "answer": "Se mantienen en stock 12 colores diseñador para las líneas rPET Groove y Flex Groove; la línea rPET Panel está disponible en 16 colores. Se pueden producir colores personalizados para proyectos superiores a 200 m²."
+          "answer": "Diez colores de stock (01–10) están siempre disponibles, desde un panel. Cualquier otro color se fabrica por encargo a partir de una referencia RAL o NCS o de una muestra física; cantidades mínimas bajo petición. La gama es la misma para rPET Panel, rPET Groove y rPET Flex Groove."
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los colores en stock se envían en 2–3 semanas; los colores personalizados requieren 5–6 semanas. Los grandes proyectos (>500 m²) se planifican por lotes de producción — contáctenos para una fecha vinculante."
+          "answer": "Unas 3–4 semanas laborables, como para el rPET Panel. El pedido mínimo es un panel, los precios son bajo petición y la entrega es EXW Częstochowa, Polonia."
         }
       }
     },
     "alt": {
       "rpetGrooveAcousticPanelInModernOffice": "Panel acústico rPET - Groove en una oficina moderna",
       "panelInstallationProcess": "Proceso de instalación del panel",
-      "recycledMaterials": "Materiales reciclados"
+      "recycledMaterials": "Materiales reciclados",
+      "productPhoto": "Foto del producto rPET Groove {n}"
     },
     "options": {
       "lineDesc": "Líneas paralelas limpias",
       "waveDesc": "Curvas orgánicas y fluidas",
       "chevronDesc": "Dinámico patrón en V",
       "gridDesc": "Líneas entrecruzadas modernas",
-      "12mmDesc": "Absorción estándar",
-      "24mmDesc": "Absorción mejorada",
-      "36mmDesc": "Absorción máxima",
       "lineGrooves": "Verticales",
       "waveGrooves": "Curvas",
       "chevronGrooves": "En ángulo",
-      "gridGrooves": "Entrecruzadas"
+      "gridGrooves": "Entrecruzadas",
+      "lineName": "Línea",
+      "waveName": "Onda",
+      "chevronName": "Chevrón",
+      "gridName": "Retícula"
     },
     "related": {
       "title": "Productos Relacionados"
+    },
+    "material": {
+      "tag": "Material",
+      "description": "Cada panel rPET Groove empieza como un rPET Panel: fieltro rígido de botellas de PET recicladas, que se trabaja como un tablero de madera. El patrón de ranuras se fresa en él.",
+      "layer1Title": "Fieltro rPET Panel",
+      "layer1Desc": "{pct, select, unknown {Fieltro de PET reciclado} other {Fieltro de PET {pct} % reciclado}}, unos 200 kg/m³, en versión Standard o ignífuga (FR).",
+      "layer2Title": "Ranuras fresadas en CNC",
+      "layer2Desc": "El patrón se fresa en el fieltro: cuatro patrones, véase más abajo.",
+      "layer3Title": "Color",
+      "layer3Desc": "Diez colores de stock desde un panel; cualquier otro color por encargo a partir de una referencia RAL o NCS."
+    },
+    "ordering": {
+      "description": "Pedido mínimo, plazo y entrega siguen los del rPET Panel en el que se mecanizan las ranuras."
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "PANELES ACÚSTICOS DE PET RECICLADO",
       "title": "rPET Panel: el panel acústico de PET reciclado que se mecaniza como el MDF",
-      "tagline": "Silencio Sostenible, Posibilidades Infinitas",
-      "description": "Transforme cualquier espacio con los paneles acústicos rPET - Panel. {pct, select, unknown {Fabricados a partir de botellas de PET recicladas, estos} other {Fabricados con un {pct} % de botellas de PET recicladas, estos}} absorbentes acústicos ligeros pero potentes ofrecen el máximo rendimiento acústico con un impacto ambiental mínimo.",
+      "tagline": "El panel de fieltro de PET reciclado que se mecaniza como el MDF.",
+      "description": "rPET Panel es un tablero acústico rígido de fieltro fabricado con {pct, select, unknown {botellas de PET recicladas} other {{pct} % de botellas de PET recicladas}}. Absorbe el sonido en toda su superficie, pesa una fracción de un tablero de madera y se trabaja con herramientas de taller estándar: sierre, frese y taladre, y después píntelo o imprímalo en UV.",
       "usp1": "{pct, select, unknown {PET reciclado} other {{pct} % de PET reciclado}}",
-      "usp2": "αw hasta 1,00",
-      "usp3": "Ligero 3-4 kg/m²",
-      "colorSelector": "Seleccionar color del panel",
-      "colorSelectorPlaceholder": "Seleccionar un color"
+      "usp2": "Se mecaniza como el MDF",
+      "usp3": "Versión Standard y FR"
     },
     "overview": {
-      "tag": "DESCRIPCIÓN GENERAL",
-      "title": "PET Reciclado en su Máxima Expresión",
-      "reason1Title": "Fácil de manipular",
-      "reason1": "Paneles ligeros que cualquiera puede instalar sin equipos pesados",
-      "reason2Title": "Saludable para las personas",
-      "reason2": "Certificado OEKO-TEX®, seguro para todos los entornos, incluidos colegios y centros sanitarios",
-      "reason3Title": "Posibilidades infinitas",
-      "reason3": "Cortable por CNC, fresable, perforable: úselo como el MDF sin ninguno de sus inconvenientes",
-      "reason4Title": "Expresa tu estilo",
-      "reason4": "Más de 50 colores para complementar cualquier visión de interiorismo",
-      "reason5Title": "¿Quiere más opciones?",
-      "reason5": "Combínelo con rPET Groove para obtener un sistema de diseño completo",
-      "description": "rPET - Panel transforma botellas de PET recicladas en paneles acústicos de alto rendimiento. Cada panel desvía residuos plásticos de los vertederos a la vez que crea entornos más saludables y silenciosos. Es la alternativa fonoabsorbente al MDF, pero con una fracción de su peso.",
+      "tag": "Descripción",
+      "title": "Paredes, techos, divisores de espacio y mobiliario acústico",
+      "description": "Se utiliza para paneles de pared y techo, divisores de espacio y mobiliario acústico. Dos espesores, dos formatos, una versión Standard y una ignífuga (FR). Fabricado en Polonia (Częstochowa).",
       "feature1": "{pct, select, unknown {Fabricado con botellas de PET recicladas} other {Fabricado con un {pct} % de botellas de PET recicladas}}",
-      "feature2": "Totalmente reciclable al final de su vida útil",
-      "feature3": "Ligero: solo 3-4 kg/m²",
-      "feature4": "Sin aglutinantes químicos"
-    },
-    "process": {
-      "tag": "CÓMO SE HACE",
-      "title": "Diseñar, Construir, Edificar",
-      "description": "rPET Panel puede procesarse exactamente igual que el MDF. Cortar, fresar, taladrar, curvar: su fabricante no necesitará ninguna herramienta ni técnica nueva."
+      "feature2": "Absorbe el sonido en toda su superficie",
+      "feature3": "Pesa una fracción de un tablero de madera",
+      "feature4": "Sierre, frese, taladre, pinte o imprima en UV con herramientas de taller estándar"
     },
     "workability": {
-      "tag": "PROCESAMIENTO",
-      "step1Title": "Aserrado",
-      "step1": "Formas y perfiles de precisión con equipos CNC estándar",
-      "step2Title": "Corte y fresado CNC",
-      "step2": "Fijaciones directas sin pretaladrado ni anclajes especiales",
-      "step3Title": "Taladrado y atornillado",
-      "step3": "Cree curvas y ángulos con la sencilla técnica de corte en V",
-      "title": "Se procesa como el MDF, pesa casi nada",
-      "description": "rPET - Panel combina la trabajabilidad del MDF con un peso increíblemente ligero. Córtelo con una sierra, frésalo en CNC, taládrelo, hágale cortes en V: el material se trabaja de maravilla con las herramientas habituales de taller.",
-      "step1Desc": "Manual o eléctrica: cortes limpios en todo momento",
-      "step2Desc": "Formas de precisión y perfiles a medida",
-      "step3Desc": "Fijación segura sin que se agriete",
-      "step4Title": "Doblado en V",
-      "step4Desc": "Crear formas y esquinas 3D",
-      "quote": "Enseguida comprobará que rPET - Panel se puede procesar tan rápida y fácilmente como un tablero de MDF."
+      "description": "rPET Panel se trabaja con herramientas de taller estándar, igual que un tablero de madera."
     },
     "acoustics": {
-      "tag": "ACÚSTICA",
-      "title": "Absorción Máxima",
-      "benefit1Title": "Máximo Rendimiento",
-      "benefit1": "Mejore drásticamente la inteligibilidad en salas de reuniones y aulas",
-      "benefit2Title": "Certificado Independientemente",
-      "benefit2": "Cree entornos más tranquilos que favorecen el bienestar y la productividad",
-      "benefit3Title": "Banda Ancha",
-      "benefit3": "Reduzca la transmisión del sonido entre espacios para mantener conversaciones confidenciales",
-      "description": "rPET - Panel alcanza la máxima clasificación de absorción acústica posible. Su exclusiva estructura de fibras atrapa y disipa la energía sonora, reduciendo drásticamente la reverberación y mejorando la claridad del habla.",
-      "howItWorks": "Cómo Funciona",
-      "fiberLabel": "Fibras PET comprimidas",
-      "fiberSublabel": "Energía sonora convertida en calor",
-      "panelThickness": "Grosor del panel",
-      "testStandard": "Norma de ensayo",
-      "testConfig": "Configuración de ensayo: panel de 24 mm sobre bastidor de 50 mm con aislamiento de lana de poliéster",
-      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
-      "fireClassLabel": "Clase de fuego (EN 13501-1)"
+      "tag": "Acústica"
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
       "title": "Circular en el Núcleo",
       "cert1": "{pct, select, unknown {Contenido de PET reciclado} other {{pct} % de contenido reciclado}}",
       "cert2": "Totalmente reciclable",
-      "cert3": "OEKO-TEX® Clase 1",
-      "cert4": "Emisiones Clase A+",
+      "cert3": "Un solo material",
+      "cert4": "Recogida gratuita",
       "badge1Desc": "Fabricado con botellas de PET posconsumo",
       "badge2Desc": "Recuperación total del material al final de su vida útil",
-      "description": "rPET - Panel encarna la economía circular. {pct, select, unknown {Cada panel se fabrica con botellas de PET recicladas} other {Cada panel contiene un {pct} % de botellas de PET recicladas}} y, al final de su vida útil, el panel completo puede reciclarse de nuevo. Sin residuos, sin concesiones.",
-      "cert3Desc": "Certificado Clase 1 para la seguridad de las personas",
-      "cert4Desc": "Sin COV ni formaldehído (ISO 16000)"
+      "description": "{pct, select, unknown {Fabricado con botellas de PET recicladas} other {Fabricado con {pct} % de botellas de PET recicladas}} y 100 % PET: un solo material, reciclable al final de su vida útil, y Re-Sound recoge los paneles.",
+      "cert3Desc": "100 % PET, un solo material, reciclable al final de su vida útil."
     },
     "specs": {
       "tag": "ESPECIFICACIONES",
       "title": "Especificaciones Técnicas",
-      "acousticsTitle": "Rendimiento acústico",
-      "physicalTitle": "Propiedades físicas",
-      "fireTitle": "Seguridad al fuego",
-      "healthTitle": "Salud y medio ambiente",
-      "colorsTitle": "Colores y acabados",
-      "dimensionsTitle": "Dimensiones",
-      "dimStandard": "Panel estándar",
-      "dimCustomMax": "Máximo personalizado",
-      "dimThicknessOptions": "Opciones de grosor",
-      "dimCustomThickness": "Grosor personalizado",
+      "acousticsTitle": "Acústica (panel de 12 mm)",
+      "fireTitle": "Reacción al fuego",
+      "healthTitle": "Certificaciones y fin de vida",
+      "dimensionsTitle": "Dimensiones y peso",
       "physMaterial": "Material",
-      "physWeight12": "Peso (12mm)",
-      "physWeight24": "Peso (24mm)",
-      "fireEuClass": "Clasificación europea",
-      "fireGerman": "Norma alemana",
       "healthOekoTex": "OEKO-TEX®",
-      "healthFormaldehyde": "Formaldehído",
-      "healthBinders": "Aglutinantes químicos",
       "colorStandard": "Colores estándar",
-      "colorCustom": "Colores personalizados",
-      "finishOptions": "Opciones de acabado",
-      "recyclability": "Reciclabilidad",
-      "vocEmissions": "Emisiones de COV",
-      "anyRalNcs": "Cualquier RAL / NCS",
-      "finishOptionsVal": "Tejido, HPL, chapa, impresión"
-    },
-    "sample": {
-      "title": "Solicite su Paquete de Muestras",
-      "description": "Compruebe de primera mano la calidad de rPET - Panel. Nuestro paquete de muestras personalizado incluye muestrarios de color, opciones de grosor y muestras de acabados para ayudarle a tomar la decisión perfecta.",
-      "tag": "MUESTRAS",
-      "cta": "Solicitar Muestras Gratuitas"
+      "generalTitle": "General",
+      "formats": "Formatos",
+      "surfaceWeight": "Peso superficial (9 / 12 mm)",
+      "panelWeight2800": "Panel 2 800 × 1 220 mm (9 / 12 mm)",
+      "panelWeight2440": "Panel 2 440 × 1 220 mm (9 / 12 mm)",
+      "physMaterialVal": "Fieltro de PET 100 % reciclado",
+      "acousticsMounting": "Medido en",
+      "acousticsMountingVal": "Panel de 12 mm (2,4 kg/m²); máximo con cámara de 50 mm y lana de roca de 50 mm",
+      "acoustics9mm": "Panel de 9 mm",
+      "fireReports": "Informes de clasificación"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
       "title": "rPET - Panel en Acción"
     },
-    "why": {
-      "tag": "POR QUÉ ELEGIR rPET",
-      "description": "Descubra por qué arquitectos, diseñadores y consultores acústicos eligen rPET - Panel para sus proyectos más exigentes.",
-      "reason1Title": "100% Circular",
-      "reason1": "Fabricado con botellas de PET recicladas, totalmente reciclable y contribuye a una economía circular.",
-      "reason2Title": "Excelente",
-      "reason2": "Absorción acústica de hasta αw 1.00: la clasificación más alta posible en absorción del sonido.",
-      "reason3Title": "Fácil Instalación",
-      "reason3": "Ligero y estable. Córtelo, taládrelo, frésalo e instálelo con herramientas estándar.",
-      "reason4Title": "Sano y Seguro",
-      "reason4": "Antiestático, respetuoso con la piel y antialérgico. Sin emisiones de COV ni formaldehído.",
-      "reason5Title": "Infinitas Posibilidades de Diseño",
-      "reason5": "5 colores estándar más cualquier color RAL/NCS. Añada tejido, laminado, chapa de madera o impresiones personalizadas.",
-      "title": "Cinco razones para elegir rPET"
-    },
     "colors": {
-      "tag": "COLORES",
-      "title": "5 Colores Estándar + RAL/NCS Personalizado",
-      "description": "Elija entre 5 elegantes colores estándar o especifique cualquier color personalizado de la carta RAL o NCS. Todos los tonos mantienen el mismo excelente rendimiento acústico.",
-      "anyColor": "Cualquier color",
-      "moreOptionsTitle": "¿Quiere más opciones?",
-      "moreOptionsDesc": "Todos los colores base pueden combinarse con capas de acabado como tejidos acústicos, laminado HPL, chapa de madera natural o impresiones personalizadas, sin comprometer el rendimiento acústico.",
-      "fabric1": "Tejidos acústicos",
-      "fabric2": "Laminado HPL/CPL",
-      "fabric3": "Chapa de madera real",
-      "fabric4": "Impresión personalizada"
+      "tag": "Colores",
+      "title": "Diez colores de stock, cualquier color por encargo",
+      "description": "La gama de colores de la ficha técnica de rPET Panel: diez colores de stock, numerados 01–10, y cualquier otro color por encargo."
     },
     "applications": {
       "tag": "APLICACIONES",
@@ -1872,16 +1800,6 @@
       "label2": "Oficinas",
       "label3": "Hostelería"
     },
-    "nav": {
-      "overview": "Descripción General",
-      "colors": "Colores",
-      "applications": "Aplicaciones",
-      "acoustics": "Acústica",
-      "processing": "Procesamiento",
-      "specifications": "Especificaciones",
-      "gallery": "Galería",
-      "downloads": "Descargas"
-    },
     "downloads": {
       "installationGuide": "Guía de Instalación",
       "acousticTestReport": "Informe de ensayo acústico (ISO 354)",
@@ -1895,23 +1813,23 @@
       "questions": {
         "oekoTex": {
           "question": "¿Está certificado el PET reciclado?",
-          "answer": "Sí. Todos los paneles rPET están certificados OEKO-TEX® Standard 100 — verifica la ausencia de sustancias nocivas. Las emisiones de COV se ensayan según la categoría francesa A+ (la calificación más estricta de calidad de aire interior)."
+          "answer": "Sí. Los paneles rPET cuentan con un certificado OEKO-TEX® Standard 100, disponible bajo petición. El panel es fieltro de PET 100 % reciclado: un solo material, reciclable al final de su vida útil."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
-          "answer": "Según EN 13501-1, rPET Panel está clasificado {panel}. El certificado de fuego se encuentra en el bloque de descargas de esta página; los demás modelos rPET indican su propia clase en sus respectivas páginas."
+          "answer": "Según EN 13501-1, la clase depende del color: rPET Panel está clasificado {panel}, tanto en la versión Standard como en la FR. Informes de clasificación bajo petición."
         },
         "processability": {
           "question": "¿Pueden los paneles rPET cortarse, taladrarse o pintarse?",
-          "answer": "Sí. El rPET se comporta como MDF en maquinaria estándar de carpintería: cortar con sierra circular o fresadora CNC, taladrar con brocas helicoidales, pintar con acabados al agua o al disolvente. No se requiere equipo de protección especial."
+          "answer": "Sí. rPET Panel se trabaja como un tablero de madera: córtelo con cuchilla, sierra circular, sierra de paneles o amoladora angular con disco para metal; frese formas, recortes y ranuras en CNC; taládrelo y atorníllelo sin que se astille; píntelo con pinturas al agua o al disolvente, o encargue la impresión UV a Re-Sound."
         },
         "colorRange": {
           "question": "¿Cuántos colores hay disponibles?",
-          "answer": "Se mantienen en stock 12 colores diseñador para las líneas rPET Groove y Flex Groove; la línea rPET Panel está disponible en 16 colores. Se pueden producir colores personalizados para proyectos superiores a 200 m²."
+          "answer": "Diez colores de stock (01–10) están siempre disponibles, desde un panel. Cualquier otro color se fabrica por encargo a partir de una referencia RAL o NCS o de una muestra física; cantidades mínimas para colores por encargo bajo petición. La misma gama se aplica a rPET Groove y rPET Flex Groove."
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los colores en stock se envían en 2–3 semanas; los colores personalizados requieren 5–6 semanas. Los grandes proyectos (>500 m²) se planifican por lotes de producción — contáctenos para una fecha vinculante."
+          "answer": "Unas 3–4 semanas laborables. El pedido mínimo es un panel, los precios son bajo petición y la entrega es EXW Częstochowa, Polonia."
         }
       }
     },
@@ -1922,19 +1840,13 @@
       "acousticTreatmentInRestaurant": "Tratamiento acústico en un restaurante",
       "cncProcessingOfRpetPanels": "Mecanizado CNC de paneles rPET",
       "recycledPetBottles": "Botellas de PET recicladas",
-      "rpetPanelSamplePanels": "Paneles de muestra rPET - Panel"
+      "rpetPanelSamplePanels": "Paneles de muestra rPET - Panel",
+      "rpetPanelHero": "Paneles acústicos de fieltro rPET Panel en verde oliva en una pared tras un sofá"
     },
-    "options": {
-      "midnightDesc": "Negro profundo, que evoca un cielo iluminado por la luna",
-      "titanDesc": "Gris oscuro característico, como el acero",
-      "silverDesc": "Elegancia industrial moderna",
-      "marbleDesc": "Estética minimalista en gris claro",
-      "frostDesc": "La sencillez del blanco puro",
-      "customDesc": "Cualquier color de la carta RAL o NCS",
-      "12mmDesc": "Solución ligera",
-      "18mmDesc": "Rendimiento equilibrado",
-      "24mmDesc": "Absorción máxima",
-      "maximumLabel": "Máximo"
+    "formats": {
+      "tag": "Datos técnicos",
+      "title": "Dimensiones y peso",
+      "description": "Dos formatos y dos espesores, en versión Standard e ignífuga (FR)."
     }
   },
   "rwoodGroovePage": {
@@ -2855,67 +2767,53 @@
     "hero": {
       "tag": "PANELES ACÚSTICOS FLEXIBLES",
       "title": "rPET Flex Groove: paneles acústicos de PET flexibles para curvas",
-      "tagline": "Doblar Sin Romper",
-      "description": "La solución acústica definitiva para superficies curvas. Fabricados en fieltro de PET reciclado con ranuras en V de precisión, estos paneles flexibles se adaptan a la perfección a columnas, paredes curvas y cualquier forma arquitectónica con un radio mínimo de 500 mm.",
-      "usp1": "Radio Mín. 500mm",
-      "usp2": "Retardante de Llama",
-      "usp3": "{pct, select, unknown {PET reciclado} other {{pct} % de PET reciclado}}",
-      "colorSelector": "Seleccionar Color",
-      "colorPlaceholder": "Seleccionar un color",
-      "description2": ""
+      "tagline": "Paneles acústicos con cortes en V para curvas, cortados del rPET Panel de 9 mm.",
+      "description": "rPET Flex Groove se corta del rPET Panel de 9 mm: fieltro rígido de botellas de PET recicladas, con cortes en V para que se curve alrededor de columnas, paredes curvas y otros elementos redondeados. Los cortes en V dejan la superficie acanalada que da carácter al panel.",
+      "usp1": "Radio de curvatura mínimo 500 mm",
+      "usp2": "Cortado del rPET Panel de 9 mm",
+      "usp3": "{pct, select, unknown {PET reciclado} other {{pct} % de PET reciclado}}"
     },
     "overview": {
       "tag": "INNOVACIÓN",
       "title": "Diseñado para Superficies Curvas",
-      "description": "Los paneles Flex-Groove ofrecen una solución acústica versátil para superficies curvas, adaptándose sin esfuerzo a cualquier forma. Aptos para radios interiores y exteriores, su estructura flexible permite transiciones perfectas a lo largo de paredes, columnas y otros elementos arquitectónicos redondeados.",
+      "description": "Los paneles Flex Groove siguen superficies curvas, tanto en radios interiores como exteriores: columnas, paredes curvas y elementos arquitectónicos redondeados. El material es el rPET Panel, por lo que colores, mecanizado y reacción al fuego son los del panel.",
       "feature1": "Se adapta a cualquier superficie curva",
       "feature2": "Compatible con radios interiores y exteriores",
       "feature3": "La textura acanalada aporta profundidad y ritmo",
-      "feature4": "Propiedades de amortiguación acústica integradas",
-      "description2": ""
+      "feature4": "Propiedades de amortiguación acústica integradas"
     },
     "technology": {
       "tag": "TECNOLOGÍA",
       "title": "Sistema de Flexibilidad V-Cut",
-      "description": "Cada panel se incide con cortes en V de precisión, lo que le permite curvarse sin romperse. Este ingenioso corte crea la característica textura acanalada: una serie de ranuras lineales que aportan flexibilidad a la vez que dan a la superficie un relieve escultural.",
+      "description": "Los cortes en V permiten plegar esquinas y formas 3D: el panel lleva cortes en V paralelos que le permiten curvarse sin romperse y dejan un relieve acanalado en la superficie.",
       "minRadius": "Radio mínimo de doblado",
       "feature1Title": "Corte V de precisión",
       "feature1Desc": "Ranuras diseñadas para una flexibilidad controlada",
       "feature2Title": "Curvas perfectas",
       "feature2Desc": "Transiciones suaves en cualquier superficie curva",
-      "feature3Title": "Residuos mínimos",
-      "feature3Desc": "Un diseño eficiente que reduce los residuos de corte",
+      "feature3Title": "Cortado del rPET Panel de 9 mm",
+      "feature3Desc": "Peso superficial 1,8 kg/m²; cortado de un panel de 2 800 × 1 220 o 2 440 × 1 220 mm.",
       "flatPanel": "Panel plano",
-      "curvedApp": "Aplicación curva",
-      "description2": ""
+      "curvedApp": "Aplicación curva"
     },
     "colors": {
-      "tag": "COLECCIÓN REFINADA",
-      "title": "12 colores seleccionados",
-      "description": "Nuestra cuidada paleta de colores ofrece opciones versátiles para cualquier interior. Desde neutros suaves hasta colores intensos y llamativos, cada tono está diseñado para complementar los espacios arquitectónicos modernos, ofreciendo al mismo tiempo un excelente rendimiento acústico.",
-      "grooveDir": "Dirección de la ranura",
-      "description2": ""
+      "tag": "Colores",
+      "title": "Diez colores de stock, cualquier color por encargo",
+      "description": "La gama de colores es la del rPET Panel: diez colores de stock, numerados 01–10, y cualquier otro color por encargo.",
+      "grooveDir": "Dirección de la ranura"
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
-      "title": "Propiedades de Amortiguación Sonora",
-      "description": "Fabricados en fieltro de PET reciclado ignífugo, los paneles Flex-Groove proporcionan una absorción acústica eficaz manteniendo la continuidad visual en las superficies curvas. La textura ranurada mejora el rendimiento acústico.",
+      "tag": "Acústica",
+      "description": "Flex Groove conserva el carácter amortiguador del fieltro en superficies curvas. El panel de 9 mm aún no se ha medido, por lo que no damos ningún valor de αw ni de NRC.",
       "feature1Title": "Amortiguación del sonido",
       "feature1Desc": "Reduce el eco y la reverberación",
-      "feature2Title": "Retardante de Llama",
-      "feature2Desc": "Propiedades de seguridad contra incendios integradas",
       "feature3Title": "{pct, select, unknown {PET reciclado} other {{pct} % reciclado}}",
-      "feature3Desc": "Fabricado a partir de botellas de plástico recicladas",
-      "layer1Label": "Fieltro PET reciclado",
-      "layer2Label": "Cortes V de precisión",
-      "thicknessLabel": "Espesor",
-      "materialLabel": "Fieltro PET ignífugo",
-      "description2": ""
+      "feature3Desc": "Fabricado a partir de botellas de plástico recicladas"
     },
     "installation": {
       "tag": "INSTALACIÓN FÁCIL",
       "title": "Montaje seguro, instalación sencilla",
-      "description": "Diseñados para cubrir alturas estándar de suelo a techo, los paneles simplifican la alineación y reducen el tiempo de instalación. Su forma adaptable los convierte en una solución práctica para interiores que requieren tanto absorción acústica como flexibilidad de diseño.",
+      "description": "Los paneles se encolan sobre el soporte curvo preparado. Las medidas acabadas de los paneles son bajo petición.",
       "step1Title": "Preparar superficie",
       "step1Desc": "Asegúrese de que la superficie curva esté limpia y lista para el montaje",
       "step2Title": "Aplicar adhesivo",
@@ -2933,12 +2831,9 @@
       "badge1": "{pct, select, unknown {PET reciclado} other {{pct} % de PET reciclado}}",
       "badge1Desc": "Fabricado a partir de botellas de plástico recicladas",
       "badge2": "Totalmente reciclable",
-      "badge2Desc": "Reciclable al final de su vida útil",
       "badge3": "Hecho en Polonia",
-      "badge4": "Bajos COV",
-      "badge3Desc": "Cadena de suministro corta desde nuestra planta polaca",
-      "badge4Desc": "Seguro para entornos interiores",
-      "description2": ""
+      "badge4": "Recogida gratuita",
+      "badge3Desc": "Cadena de suministro corta desde nuestra planta polaca"
     },
     "specs": {
       "tag": "TÉCNICO",
@@ -2947,34 +2842,18 @@
       "flexibilityTitle": "Flexibilidad",
       "materialTitle": "Material",
       "fireTitle": "Seguridad al fuego",
-      "certsTitle": "Certificaciones",
+      "certsTitle": "Certificaciones y fin de vida",
       "applicationsTitle": "Aplicaciones",
-      "dimPanelLength": "Longitud del panel",
-      "dimPanelWidth": "Ancho del panel",
-      "dimThickness": "Espesor",
-      "dimWeight": "Peso",
-      "dimDensity": "Densidad",
       "flexMinRadius": "Radio mínimo",
       "flexBendDir": "Dirección de doblado",
       "flexBendDirVal": "Radios interiores y exteriores",
       "flexCutType": "Tipo de corte",
       "flexCutTypeVal": "Corte V de precisión",
       "matComposition": "Composición",
-      "matCompositionVal": "Fieltro de PET FR",
-      "matRecycled": "Contenido reciclado",
-      "matFireRetardant": "Ignífugo",
-      "matFireRetardantVal": "Sí (integrado)",
+      "matCompositionVal": "Fieltro de PET 100 % reciclado",
       "matColorVar": "Variaciones de color",
-      "matColorVarVal": "Posible (material reciclado)",
-      "fireRating": "Clasificación al fuego",
-      "fireSmokeProduction": "Producción de humo",
-      "fireFlamingDroplets": "Gotas inflamadas",
-      "fireFlamingDropletsVal": "d0 (ninguna)",
+      "matColorVarVal": "Ligeras diferencias de tono entre lotes son normales",
       "certMaterial": "Material",
-      "certVOC": "Emisiones de COV",
-      "certVOCVal": "Bajas emisiones",
-      "certRecycled": "Contenido reciclado",
-      "certRecycledVal": "100 %",
       "appSurfaces": "Superficies",
       "appSurfacesVal": "Paredes, columnas, elementos curvos",
       "appEnvironment": "Entorno",
@@ -2982,7 +2861,13 @@
       "appInstallation": "Instalación",
       "appInstallationVal": "Montaje con adhesivo",
       "appOrientation": "Orientación",
-      "appOrientationVal": "A lo largo / a lo ancho"
+      "appOrientationVal": "A lo largo / a lo ancho",
+      "dimSource": "Cortado de",
+      "dimSourceVal": "rPET Panel de 9 mm (2 800 × 1 220 / 2 440 × 1 220 mm)",
+      "dimSurfaceWeight": "Peso superficial",
+      "dimFinishedFormat": "Formato acabado",
+      "matColours": "Colores",
+      "fireReports": "Informes de clasificación"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
@@ -3006,13 +2891,11 @@
       "app1Desc": "Revista columnas estructurales con una cobertura acústica continua",
       "app2Desc": "Siga las formas orgánicas de las paredes para una cobertura continua",
       "app3Desc": "Revista aberturas curvas y elementos arquitectónicos",
-      "app4Desc": "Cree impactantes paredes curvas de diseño",
-      "description2": ""
+      "app4Desc": "Cree impactantes paredes curvas de diseño"
     },
     "cta": {
       "title": "¿Listo para Curvar su Acústica?",
-      "description": "Solicite un presupuesto personalizado para su proyecto. Nuestro equipo le ayudará a elegir la solución flexible perfecta.",
-      "description2": "Solicite un presupuesto personalizado para su proyecto. Nuestro equipo le ayudará a elegir el color perfecto y a calcular sus necesidades."
+      "description": "Solicite un presupuesto personalizado para su proyecto. Nuestro equipo le ayudará a elegir la solución flexible perfecta."
     },
     "cta2": {
       "freeNote": "Muestras gratuitas disponibles • Fabricado en Polonia • {pct, select, unknown {PET reciclado} other {{pct} % de PET reciclado}}"
@@ -3021,23 +2904,23 @@
       "questions": {
         "oekoTex": {
           "question": "¿Está certificado el PET reciclado?",
-          "answer": "Sí. Todos los paneles rPET están certificados OEKO-TEX® Standard 100 — verifica la ausencia de sustancias nocivas. Las emisiones de COV se ensayan según la categoría francesa A+ (la calificación más estricta de calidad de aire interior)."
+          "answer": "Sí. Los paneles rPET cuentan con un certificado OEKO-TEX® Standard 100, disponible bajo petición. El panel es fieltro de PET 100 % reciclado: un solo material, reciclable al final de su vida útil."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
-          "answer": "Según EN 13501-1, rPET Flex Groove está clasificado {flex}. El certificado de fuego se encuentra en el bloque de descargas de esta página; los demás modelos rPET indican su propia clase en sus respectivas páginas."
+          "answer": "Según EN 13501-1, la clase depende del color: rPET Flex Groove está clasificado {flex}, como el rPET Panel de 9 mm del que se corta. Informes de clasificación bajo petición."
         },
         "processability": {
           "question": "¿Pueden los paneles rPET cortarse, taladrarse o pintarse?",
-          "answer": "Sí. El rPET se comporta como MDF en maquinaria estándar de carpintería: cortar con sierra circular o fresadora CNC, taladrar con brocas helicoidales, pintar con acabados al agua o al disolvente. No se requiere equipo de protección especial."
+          "answer": "Sí. rPET Flex Groove se corta del rPET Panel de 9 mm y admite las mismas herramientas: sierra o amoladora angular con disco para metal, fresado CNC, taladrado y tornillos sin astillarse, pinturas al agua o al disolvente."
         },
         "colorRange": {
           "question": "¿Cuántos colores hay disponibles?",
-          "answer": "Se mantienen en stock 12 colores diseñador para las líneas rPET Groove y Flex Groove; la línea rPET Panel está disponible en 16 colores. Se pueden producir colores personalizados para proyectos superiores a 200 m²."
+          "answer": "Diez colores de stock (01–10) están siempre disponibles, desde un panel. Cualquier otro color se fabrica por encargo a partir de una referencia RAL o NCS o de una muestra física; cantidades mínimas bajo petición. La gama es la misma para rPET Panel, rPET Groove y rPET Flex Groove."
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los colores en stock se envían en 2–3 semanas; los colores personalizados requieren 5–6 semanas. Los grandes proyectos (>500 m²) se planifican por lotes de producción — contáctenos para una fecha vinculante."
+          "answer": "Unas 3–4 semanas laborables, como para el rPET Panel. Pedido mínimo, medidas acabadas y entrega bajo petición."
         }
       }
     },
@@ -3046,13 +2929,25 @@
       "rpetFlexGrooveAcousticPanelOnCurvedSurface": "Panel acústico rPET Flex-Groove sobre una superficie curva",
       "rpetFlexGrooveColorOptions": "Opciones de color de rPET Flex-Groove",
       "flexGroovePanelInstallation": "Instalación del panel Flex-Groove",
-      "recycledPetBottles": "Botellas de PET recicladas"
+      "rpetFlexGrooveCurvedWalls": "Paneles rPET Flex Groove en paredes curvas de una zona de reuniones"
     },
     "options": {
       "lengthDesc": "Las ranuras recorren el panel a lo largo",
       "widthDesc": "Las ranuras recorren el panel a lo ancho",
       "lengthName": "Longitudinal",
       "widthName": "Transversal"
+    },
+    "buildUp": {
+      "layer1Title": "rPET Panel de 9 mm",
+      "layer1Desc": "{pct, select, unknown {Fieltro de PET reciclado} other {Fieltro de PET {pct} % reciclado}}, 1,8 kg/m², cortado de un panel de 2 800 × 1 220 o 2 440 × 1 220 mm.",
+      "layer2Title": "Cortes en V",
+      "layer2Desc": "Los cortes en V paralelos permiten curvar el panel; radio de curvatura mínimo 500 mm.",
+      "layer3Title": "Superficie acanalada",
+      "layer3Desc": "Los cortes dejan un relieve lineal, a lo largo o a lo ancho, en diez colores de stock o cualquier color por encargo."
+    },
+    "ordering": {
+      "description": "El plazo de entrega es el del rPET Panel del que se corta el Flex Groove; pedido mínimo, medidas acabadas y entrega bajo petición.",
+      "sizesValue": "Cortado del rPET Panel de 9 mm (2 800 × 1 220 o 2 440 × 1 220 mm); medidas acabadas bajo petición"
     }
   },
   "legal": {
@@ -4043,15 +3938,15 @@
     },
     "rpet-panel": {
       "mounting": "Fijación directa con tornillos o adhesivo, sin taladrado previo",
-      "leadTime": "2–3 semanas (colores de stock), 5–6 semanas a medida"
+      "leadTime": "≈ 3–4 semanas laborables"
     },
     "rpet-groove": {
       "mounting": "Adhesivo, clips en Z, tornillos o rastreles",
-      "leadTime": "2–3 semanas (colores de stock), 5–6 semanas a medida"
+      "leadTime": "≈ 3–4 semanas laborables"
     },
     "rpet-flex-groove": {
       "mounting": "Montaje con adhesivo sobre superficies curvas",
-      "leadTime": "2–3 semanas (colores de stock), 5–6 semanas a medida"
+      "leadTime": "≈ 3–4 semanas laborables"
     },
     "solo-flex": {
       "mounting": "Autoportante, se entrega montada",

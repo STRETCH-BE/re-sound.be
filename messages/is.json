@@ -26,12 +26,12 @@
     "rwoodMicroDescription": "Örgataðar hljóðdeyfiplötur úr viði (frá 0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur {fireClass}, sérsniðið allt að 3 050 × 1 220 mm.",
     "rwoodVeneerTitle": "rWood Panel – spónlagðar hljóðdeyfiplötur, 12 viðarspónar | Re-Sound",
     "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 12 spónum úr ekta viði, Nature- eða Gemini-lína: FSC®-vottaðar, náttúrulegt eða litað lakk, HPL, filma eða málning. Verksmiðjufrágengnar, hvaða spónn sem er eftir pöntun.",
-    "rpetGrooveTitle": "rPET Groove – rifjaðar PET hljóðdeyfiplötur, 12 litir | Re-Sound",
-    "rpetGrooveDescription": "Rifjaðar PET hljóðdeyfiplötur úr endurunnum flöskum: 12 litir, 3 þykktir (12/24/36 mm), NRC allt að 0,90, brunaflokkur B-s1,d0. Framleitt í Póllandi.",
-    "rpetPanelTitle": "rPET Panel – endurunnin PET hljóðdeyfiplata, 16 litir | Re-Sound",
-    "rpetPanelDescription": "Hljóðdeyfiplata úr endurunnu PET sem þú vinnur eins og MDF: saga, fræsa, bora og mála. 16 litir, 12/18/24 mm, OEKO-TEX® vottuð. Framleitt í Póllandi.",
-    "rpetFlexGrooveTitle": "rPET Flex Groove – sveigjanlegar PET hljóðdeyfiplötur | Re-Sound",
-    "rpetFlexGrooveDescription": "Sveigjanlegar PET hljóðdeyfiplötur fyrir bogna veggi, súlur og loft: V-skornar rifur, lágmarksradíus 500 mm, 12 litir, OEKO-TEX® vottaðar.",
+    "rpetGrooveTitle": "rPET Groove — rifflaðar PET-plötur, 10 lagerlitir | Re-Sound",
+    "rpetGrooveDescription": "Rifflaðar PET-hljóðdeyfiplötur fræstar úr rPET Panel: 10 lagerlitir og hvaða litur sem er eftir pöntun, 12/24/36 mm, NRC allt að 0,90, brunaviðbrögð eftir lit (EN 13501-1). Framleitt í Póllandi.",
+    "rpetPanelTitle": "rPET Panel — hljóðdeyfiplata úr endurunnu PET, 10 lagerlitir | Re-Sound",
+    "rpetPanelDescription": "Hljóðdeyfiplata úr endurunnu PET sem er unnin eins og MDF: skera, fræsa, bora, mála eða UV-prenta. 10 lagerlitir og hvaða litur sem er eftir pöntun, 9/12 mm, 2 800 × 1 220 eða 2 440 × 1 220 mm, OEKO-TEX®-vottað. Framleitt í Póllandi.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove — sveigjanlegar PET-plötur, bogar | Re-Sound",
+    "rpetFlexGrooveDescription": "Sveigjanlegar PET-hljóðdeyfiplötur fyrir bogadregna veggi, súlur og loft, skornar úr 9 mm rPET Panel: V-skurðir, lágmarksradíus 500 mm, 10 lagerlitir og hvaða litur sem er eftir pöntun, OEKO-TEX®-vottað.",
     "faqTitle": "FAQ — Re-Sound Hljóðplötur",
     "faqDescription": "Svör við algengum spurningum um hljóðdeyfiplötur og símaklefa frá Re-Sound: ísog, brunaflokkar, afhendingartími, skilakerfi og vöruval.",
     "soloFlexTitle": "Solo Flex – hljóðeinangraður símaklefi fyrir einn | Re-Sound",
@@ -1029,6 +1029,107 @@
       "requestQuote": "Biðja um tilboð",
       "dataNote": "Upplýsingarnar endurspegla núverandi þekkingu okkar og geta breyst án fyrirvara.",
       "calculatedNote": "Gildi merkt ≈ eru reiknuð."
+    },
+    "rpet": {
+      "kpi": {
+        "thickness": "mm þykkt",
+        "surfaceWeight": "kg/m² flatarþyngd",
+        "recycled": "endurunnið PET",
+        "stockColours": "lagerlitir, hvaða litur sem er eftir pöntun",
+        "nrcByThickness": "NRC eftir þykkt",
+        "fire": "brunaviðbrögð eftir lit (EN 13501-1)"
+      },
+      "formats": {
+        "eyebrow": "Plötustærðir · í mælikvarða",
+        "perThickness": "Eftir þykkt",
+        "surfaceWeight": "Flatarþyngd",
+        "panel": "Plata",
+        "density": "Eðlisþyngd (báðar)",
+        "calculatedNote": "≈ Reiknað út frá nafnflatarþyngd og flatarmáli plötunnar."
+      },
+      "colours": {
+        "c01": "Ljósgrár",
+        "c02": "Beinhvítur",
+        "c03": "Sandur",
+        "c04": "Rykbleikur",
+        "c05": "Djúprauður",
+        "c06": "Ólífugrænn",
+        "c07": "Skógargrænn",
+        "c08": "Skiferblár",
+        "c09": "Silfurgrár",
+        "c10": "Kolgrár",
+        "custom": "Hvaða litur sem er eftir pöntun",
+        "rangeValue": "10 lagerlitir + sérlitir",
+        "stockLabel": "Lagerlitur",
+        "choose": "Veldu lagerlit",
+        "selected": "Lagerlitur {number} · {name}",
+        "swatchAlt": "rPET lagerlitur {number} {name}, ljósmynd af sýnishorni",
+        "madeToOrderTitle": "Eftir pöntun",
+        "madeToOrderText": "Lagerlitir 01–10 eru alltaf fáanlegir, frá einni plötu. Allir aðrir litir eru framleiddir eftir pöntun: sendu okkur RAL- eða NCS-tilvísun eða áþreifanlegt sýnishorn. Lágmarksmagn fyrir pöntunarliti eftir fyrirspurn.",
+        "batchTitle": "Litur og framleiðslulota",
+        "batchText": "Framleitt úr endurunnum trefjum, svo lítils háttar blæbrigðamunur milli framleiðslulota er eðlilegur. Pantaðu plöturnar fyrir sama flöt saman og festu þær allar eins snúnar. Sýnishornin eru ljósmyndir: biddu um áþreifanleg sýnishorn áður en þú skilgreinir."
+      },
+      "fire": {
+        "tag": "Brunaöryggi",
+        "title": "Brunaviðbrögð",
+        "text": "Brunaviðbrögð samkvæmt EN 13501-1 fara eftir lit: hvítt, grátt og svart ná {light}, allir aðrir litir {other}, bæði í Standard- og FR-útgáfunni.",
+        "textSingle": "Brunaviðbrögð samkvæmt EN 13501-1: {cls}, bæði í Standard- og FR-útgáfunni.",
+        "whiteGreyBlack": "Hvítt, grátt, svart",
+        "otherColours": "Aðrir litir",
+        "allColours": "Allir litir",
+        "classTo": "Flokkur samkvæmt EN 13501-1",
+        "reports": "Flokkunarskýrslur eftir fyrirspurn."
+      },
+      "acoustics": {
+        "title": "Hljóðísog",
+        "intro": "PET-filt er gljúpur hljóðísogari: hljóðið fer inn í opna trefjabygginguna og breytist í varma. Hve mikið plata ísogar fer eftir þykkt hennar og umfram allt eftir því hvernig hún er fest. Fest beint á vegg vinnur hún einkum á mið- og hátíðni; með loftbili eða steinull fyrir aftan eykst ísogið verulega og nær til lægri tíðna.",
+        "mountingHead": "Festing · 12 mm plata",
+        "classHead": "Ísogsflokkur",
+        "rows": {
+          "direct": "Beint á vegg",
+          "cavity50": "50 mm loftbil",
+          "cavity50wool": "50 mm loftbil + 50 mm steinull",
+          "cavity100": "100 mm loftbil",
+          "cavity100wool": "100 mm loftbil + 100 mm steinull"
+        },
+        "footnote": "Mælt samkvæmt EN ISO 354 á 12 mm PET-filti með sömu forskrift (2,4 kg/m²); αw og flokkur samkvæmt EN ISO 11654, NRC samkvæmt ASTM C423. 9 mm plata: ekki enn mæld.",
+        "notMeasured": "Ekki enn mælt",
+        "notMeasuredTitle": "9 mm: ekki enn mælt",
+        "notMeasured9": "9 mm rPET Panel hefur ekki enn verið mælt, svo við gefum ekkert ísogsgildi fyrir rPET Flex Groove. Efnistaflan fyrir 12 mm plötuna á rPET Panel-síðunni sýnir hvernig PET-filt hegðar sér eftir festingu.",
+        "panelTableLink": "Ísogstafla fyrir rPET Panel-efnið (12 mm, eftir festingu)"
+      },
+      "processing": {
+        "tag": "Vinnsla",
+        "title": "Unnið eins og viðarplata",
+        "cutting": "Skurður",
+        "cuttingDesc": "Með hníf, hjólsög, plötusög eða vinkilslípivél með málmskurðarskífu.",
+        "cnc": "CNC-fræsun",
+        "cncDesc": "Form, útskurðir og raufar; V-skurðir gera kleift að brjóta horn og þrívíð form.",
+        "drilling": "Borun og festing",
+        "drillingDesc": "Hægt að bora og tekur skrúfur án þess að klofna.",
+        "painting": "Málun",
+        "paintingDesc": "Tekur bæði vatnsþynnanlega og leysiefnamálningu.",
+        "uv": "UV-prentun",
+        "uvDesc": "Sérsniðin grafík, prentuð innanhúss hjá Re-Sound.",
+        "care": "Umhirða",
+        "careDesc": "Ryksugaðu með mjúkum bursta; hreinsaðu bletti staðbundið."
+      },
+      "material": {
+        "fromPanelTitle": "Framleitt úr rPET Panel",
+        "panelLink": "rPET Panel: stærðir, tæknilegar upplýsingar og heildarísogstaflan"
+      },
+      "ordering": {
+        "title": "Lágmarkspöntun og afhendingartími",
+        "orderHead": "Pöntun",
+        "supplyHead": "Afhending",
+        "minimumOrderPanel": "1 plata",
+        "versionsValue": "Standard · FR (eldtefjandi)",
+        "leadTimeValue": "≈ 3–4 virkar vikur",
+        "deliveryValue": "EXW Częstochowa, Póllandi",
+        "samplesValue": "Áþreifanleg sýnishorn eftir fyrirspurn",
+        "endOfLifeText": "100 % PET, eitt efni, endurvinnanlegt við lok líftíma.",
+        "showroom": "Sýningarsalur"
+      }
     }
   },
   "interiorPage": {
@@ -1437,43 +1538,22 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "HLJÓÐDEYFIPLÖTUR ÚR ENDURUNNU PET",
-      "title": "rPET Groove: rifjaðar PET-hljóðdeyfiplötur í 12 litum",
-      "tagline": "Úr Flöskum í Þögn",
-      "description": "Umbreyttu rýminu þínu með rPET - Groove hljóðdeyfiplötum. {pct, select, unknown {Gerðar úr endurunnum plastflöskum sameina þessar} other {Gerðar úr {pct} % endurunnum plastflöskum sameina þessar}} glæsilegu rifjuðu plötur nútímalega hönnun og framúrskarandi hljóðísog. Skilvirkni mætir glæsileika.",
+      "title": "rPET Groove: rifflaðar PET-hljóðdeyfiplötur, tíu lagerlitir og hvaða litur sem er eftir pöntun",
+      "tagline": "Rifflaðar hljóðdeyfiplötur, fræstar úr rPET Panel.",
+      "description": "rPET Groove er CNC-fræst úr rPET Panel, stífu hljóðdeyfandi filti {pct, select, unknown {úr endurunnum PET-flöskum} other {úr {pct} % endurunnum PET-flöskum}}. Sýnilegu raufamynstrin gefa veggjum og loftum dýpt og áferð á meðan filtið ísogar hljóð.",
       "usp1": "{pct, select, unknown {Endurunnar PET-flöskur} other {{pct} % endurunnið PET}}",
-      "usp2": "Allt að NRC 0,90",
-      "usp3": "12 Hönnunarliturlit",
-      "colorSelector": "Veldu lit",
-      "description2": ""
+      "usp2": "Fræst úr rPET Panel",
+      "usp3": "{count, select, unknown {Lagerlitir, hvaða litur sem er eftir pöntun} other {{count} lagerlitir, hvaða litur sem er eftir pöntun}}",
+      "photoStrip": "Vörumyndir"
     },
     "overview": {
       "tag": "YFIRLIT",
       "title": "Hringrásarleg Þögn",
-      "description": "rPET - Groove plötur gefa hvaða rými sem er nútímalegt yfirbragð um leið og þær draga úr hávaðatruflunum. Sýnilega rimlahönnunin skapar sjónræna dýpt og áferð og hentar fullkomlega í nútímaskrifstofur, fundarherbergi, anddyri, veitingastaði og móttökur.",
+      "description": "rPET Groove gefur skrifstofum, fundarherbergjum, anddyrum, veitingastöðum og móttökum áferð og dregur úr ómun. Raufarnar eru fræstar í rPET Panel, svo efni, litir, vinnsla og brunaviðbrögð eru þau sömu og plötunnar.",
       "feature1": "{pct, select, unknown {Framleitt úr endurunnum plastflöskum} other {Framleitt úr {pct} % endurunnum plastflöskum}}",
       "feature2": "Hljóðfrásog í flokki A (NRC allt að 0,90)",
-      "feature3": "Endingargott og litríkt yfirborð þökk sé dope-litun",
-      "feature4": "Fáanlegt í þykktinni 12 mm, 24 mm og 36 mm",
-      "description2": ""
-    },
-    "fromBottles": {
-      "tag": "FERÐIN",
-      "title": "Úr plastflösku í hljóðpanel",
-      "step1Number": "01",
-      "step1Title": "Söfnun",
-      "step1Desc": "Notuðum plastflöskum frá neytendum er safnað og þær flokkaðar",
-      "step2Number": "02",
-      "step2Title": "Vinnsla",
-      "step2Desc": "Flöskurnar eru hreinsaðar, tættar og bræddar í PET-trefjar",
-      "step3Number": "03",
-      "step3Title": "Þæfing",
-      "step3Desc": "Trefjarnar eru þjappaðar í þéttar plötur úr hljóðdeyfifilti",
-      "step4Number": "04",
-      "step4Title": "Frágangur",
-      "step4Desc": "Nákvæmnisskurður með CNC-tækni myndar hin einkennandi rifjamynstur",
-      "description": "Hver rPET - Groove plata gefur um það bil 60 endurunnum plastflöskum nýtt líf. Framleiðsluferli okkar umbreytir notuðum PET-úrgangi frá neytendum í afkastamikið hljóðdeyfifilt og skapar þannig sannarlega hringrásarvöru.",
-      "statLabel": "Endurunnar flöskur á plötu",
-      "description2": ""
+      "feature3": "Vegur brot af viðarplötu",
+      "feature4": "Fáanlegt í þykktinni 12 mm, 24 mm og 36 mm"
     },
     "patterns": {
       "tag": "MYNSTUR",
@@ -1484,44 +1564,14 @@
       "description2": ""
     },
     "colors": {
-      "title": "12 Liflegir Litir",
-      "subtitle": "Allt frá hlutlausum tónum til djarfra áherslulita – vandað úrval okkar fellur að hverju innanrými.",
-      "tag": "LITIR",
-      "feature1": "UV-þolinn",
-      "feature1Desc": "Masselituð litur bleiknar ekki í sólskininu",
-      "feature2": "Auðveld þrif",
-      "feature2Desc": "Blettamótstætt yfirborð, hægt að þurrka af með rakri klút",
-      "feature3": "Engin litbleinun",
-      "feature3Desc": "Litferlið tryggir samkvæma liti yfir allt panelið",
-      "description2": "Frá hlutlausum tónum til djarfra áherslulita fellur vandað litaúrval okkar óaðfinnanlega að hvaða innanhússhönnun sem er. Allir litir eru fengnir með gegnumlitun (dope-dyeing), sem tryggir framúrskarandi litþol og UV-þol.",
-      "description": "Frá hlutlausum tónum til djarfra áherslulita fellur vandað litaúrval okkar óaðfinnanlega að hvaða innanhússhönnun sem er. Allir litir eru fengnir með gegnumlitun (dope-dyeing), sem tryggir framúrskarandi litþol og UV-þol."
-    },
-    "thickness": {
-      "title": "Velja þykkt",
-      "subtitle": "Þrjár þykktir fyrir mismunandi hljóðfræðilegar þarfir",
-      "tag": "VELJA ÞYKKT",
-      "sectionTitle": "Velja þykkt"
+      "title": "Tíu litir af lager, hvaða litur sem er eftir pöntun",
+      "tag": "Litir",
+      "description": "Litaúrvalið er það sama og fyrir rPET Panel: tíu lagerlitir, númeraðir 01–10, og hvaða annar litur sem er eftir pöntun. Vörumyndirnar hér að ofan sýna eldri liti; skilgreindu út frá númeruðu sýnishornunum."
     },
     "acoustics": {
-      "tag": "HLJÓÐFRÆÐI",
-      "title": "Hljóðfræðileg Frammistaða",
-      "description": "Einstök rifjahönnunin ásamt þéttum endurunnum PET-flóka skapar framúrskarandi hljóðísog. Dragðu úr bergmáli, útrýmdu hávaða og skapaðu rými sem eru jafn þægileg fyrir eyrað og augað.",
-      "benefit1Title": "Bergmálsminnkun",
-      "benefit1": "Veruleg minnkun á bergmáli í öllum rýmum",
-      "benefit2Title": "Betri Taleliðleiki",
-      "benefit2": "Eykur talskiljanleika fyrir skýrari samskipti",
-      "benefit3Title": "Hávaðaminnkun",
-      "benefit3": "Gleypur truflandi hljóðtíðnir fyrir aukinn þæginleika",
-      "diagramTitle": "Panelþversnið",
-      "layer1Name": "Rifað yfirborð",
-      "layer1Desc": "CNC-skorið mynstur fyrir sjónræna dýpt",
-      "layer2Name": "Háþéttni PET kjarni",
-      "layer2Desc": "Hljóðísogslag",
-      "layer3Name": "Festiyfirborð",
-      "layer3Desc": "Fest beint á vegg/loft",
-      "waveLabel": "Hljóðbylgjur ísognar",
-      "certNote": "Prófað samkvæmt ISO 354 og ASTM C423",
-      "description2": ""
+      "tag": "Hljóðvist",
+      "description": "Noise reduction coefficient (NRC) eftir plötuþykkt, úr vörugögnum okkar. Filtið hegðar sér eins og lýst er fyrir rPET Panel: festingin og holrúmið fyrir aftan plötuna ráða því hve mikið er ísogað.",
+      "certNote": "Prófað samkvæmt ISO 354 og ASTM C423"
     },
     "installation": {
       "tag": "AUÐVELD UPPSETNING",
@@ -1550,89 +1600,36 @@
       "badge2": "Hringrásarleg Skilagreiðsla",
       "badge3": "Belgísk Framleiðsla",
       "badge4": "OEKO-TEX® Vottað",
-      "recycledBottlesLabel": "Endurunnar flöskur á plötu",
       "badge1Desc": "Gerður 100% úr endurunnnum PET-flöskum",
-      "badge2Desc": "Ókeypis skilagreiðsla á panelar við lok líftíma",
-      "badge3Desc": "Við sækjum plötur til endurvinnslu",
-      "badge4Desc": "Vottað fyrir öryggi manna",
-      "description2": ""
+      "badge4Desc": "Vottað fyrir öryggi manna"
     },
     "specs": {
       "tag": "FORSKRIFTIR",
       "title": "Tæknilegar forskriftir",
       "acousticsTitle": "Hljóðvirkni",
-      "nrc12": "NRC (12mm)",
-      "nrc12Value": "0.55",
-      "nrc24": "NRC (24mm)",
-      "nrc24Value": "0.75",
-      "nrc36": "NRC (36mm)",
-      "nrc36Value": "0.90",
-      "testStandard": "Prófunarstaðall",
-      "testStandardValue": "ISO 354 / ASTM C423",
       "fireTitle": "Eldvarnir",
-      "fireEU": "Evrópskt",
-      "fireEUValue": "B-s1, d0",
-      "fireUS": "Bandarískt (ASTM E-84)",
-      "fireUSValue": "Flokkur A",
-      "fireUK": "Breskt (BS 476)",
-      "fireUKValue": "Flokkur 0",
-      "fireDE": "Þýskaland (DIN 4102)",
-      "fireDEValue": "B1",
-      "certsTitle": "Vottanir",
+      "certsTitle": "Vottanir og lok líftíma",
       "certHealth": "Heilsa",
-      "certHealthValue": "OEKO-TEX® Standard 100",
-      "certEnv": "Umhverfislegt",
-      "certEnvValue": "EPD tiltækt",
-      "certVOC": "Lág losun / E1",
-      "certVOCValue": "Lág losun / E1",
-      "certRecycled": "Endurunnið efni",
-      "certRecycledValue": "PET-flöskur frá neytendum",
       "applicationsTitle": "Notkun",
       "appInstall": "Uppsetning",
-      "appInstallValue": "Veggar og loft",
-      "appEnv": "Umhverfi",
-      "appEnvValue": "Innandyra (þurr svæði)",
-      "appIdeal": "Tilvalið fyrir",
-      "appIdealValue": "Skrifstofur, fundarherbergi, anddyri",
-      "appSuitable": "Einnig hentugt",
-      "appSuitableValue": "Veitingahús, hótel, skólar",
       "dimensionsTitle": "Mál",
-      "widthValue": "600 / 1200 mm",
-      "lengthValue": "600 / 1200 / 2400 mm",
-      "thicknessValue": "12 / 24 / 36 mm",
-      "weightValue": "2.5 - 7.5 kg/m²",
-      "densityValue": "200-250 kg/m³",
       "materialTitle": "Efni",
       "dimPanelWidth": "Panel breidd",
       "dimPanelLength": "Lengd plötu",
-      "dimThickness": "Þykkt",
       "dimGrooveDepth": "Dýpt rifu",
-      "dimWeight": "Þyngd",
-      "acNRC12": "NRC (12mm)",
-      "acNRC24": "NRC (24mm)",
-      "acNRC36": "NRC (36mm)",
       "matComposition": "Samsetning",
-      "matBinder": "Bindiefni",
-      "matRecycled": "Endurunnið efni",
-      "matFireClass": "Eldvarnaflokkur",
-      "matEmissions": "VOC-losun",
-      "fireCert": "Vottun",
-      "appWalls": "Veggjaplötur",
-      "appCeilings": "Loftplötur",
       "appEnvironment": "Umhverfi",
-      "matRecycledPET": "Endurunnið PET-filt",
+      "matRecycledPET": "100 % endurunnið PET-filt (rPET Panel)",
       "matDensity": "Þéttleiki",
       "colorsLabel": "Litir",
-      "colorsVal": "12 staðallitir",
       "customColors": "Sérlitir",
-      "customColorsVal": "Tiltækt (MOQ gildir)",
-      "certEPD": "EPD tiltækt",
-      "certGRS": "PET-flöskur frá neytendum",
+      "customColorsVal": "Eftir pöntun út frá RAL- eða NCS-tilvísun eða sýnishorni; lágmarksmagn eftir fyrirspurn",
       "appIdealFor": "Tilvalið fyrir",
       "appIdealVal": "Skrifstofur, fundarherbergi, anddyri",
       "appAlso": "Einnig hentugt",
       "appAlsoVal": "Veitingahús, hótel, skólar",
-      "nrcByThickness": "NRC (eftir þykkt)"
+      "nrcByThickness": "NRC (eftir þykkt)",
+      "fireReports": "Flokkunarskýrslur"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -1663,198 +1660,129 @@
       "questions": {
         "oekoTex": {
           "question": "Er endurunna PET-ið vottað?",
-          "answer": "Já. Allar rPET plötur eru OEKO-TEX® Standard 100-vottaðar — staðfestir fjarveru skaðlegra efna. VOC-losanir eru prófaðar gegn franska A+ (ströngustu inneftaftarflokkun)."
+          "answer": "Já. rPET-plöturnar hafa OEKO-TEX® Standard 100-vottorð sem fæst eftir fyrirspurn. Platan er 100 % endurunnið PET-filt: eitt efni, endurvinnanlegt við lok líftíma."
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Samkvæmt EN 13501-1 er rPET Groove flokkað {groove}. Brunavottorðið er í niðurhalshlutanum á þessari síðu; hinar rPET gerðirnar bera sína eigin flokkun á sínum síðum."
+          "answer": "Samkvæmt EN 13501-1 fer flokkurinn eftir lit: rPET Groove er flokkað {groove}, eins og rPET Panel sem það er fræst úr. Flokkunarskýrslur eftir fyrirspurn."
         },
         "processability": {
           "question": "Er hægt að saga, bora eða mála rPET plötur?",
-          "answer": "Já. rPET hagar sér eins og MDF í venjulegum tréiðnaðarvélum: sög með hringsög eða CNC-fræsara, bor með spírabor, mála með vatns- eða leysiefna-byggðum lökkum. Engin sérstök varnarbúnaður þarf."
+          "answer": "Já. rPET Groove er fræst úr rPET Panel og er unnið á sama hátt: skorið með sög eða vinkilslípivél með málmskurðarskífu, CNC-fræst, borað og skrúfað án þess að klofna, málað með vatnsþynnanlegri eða leysiefnamálningu."
         },
         "colorRange": {
           "question": "Hve margir litir eru í boði?",
-          "answer": "12 hönnunarlitir eru í lager fyrir rPET Groove og Flex Groove línurnar; rPET Panel línan er fáanleg í 16 litum. Sérsniðnir litir eru framleiddir fyrir verkefni yfir 200 m²."
+          "answer": "Tíu lagerlitir (01–10) eru alltaf fáanlegir, frá einni plötu. Allir aðrir litir eru framleiddir eftir pöntun út frá RAL- eða NCS-tilvísun eða áþreifanlegu sýnishorni; lágmarksmagn eftir fyrirspurn. Úrvalið er það sama fyrir rPET Panel, rPET Groove og rPET Flex Groove."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
+          "answer": "Um 3–4 virkar vikur, eins og fyrir rPET Panel. Lágmarkspöntun er ein plata, verð eftir fyrirspurn og afhending EXW Częstochowa, Póllandi."
         }
       }
     },
     "alt": {
       "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove hljóðdeyfiplata á nútímalegri skrifstofu",
       "panelInstallationProcess": "Uppsetningarferli platna",
-      "recycledMaterials": "Endurunnin efni"
+      "recycledMaterials": "Endurunnin efni",
+      "productPhoto": "rPET Groove vörumynd {n}"
     },
     "options": {
       "lineDesc": "Hreinar samsíða línur",
       "waveDesc": "Lífrænar, mjúkar sveigjur",
       "chevronDesc": "Kraftmikið V-mynstur",
       "gridDesc": "Nútímalegar línur sem skerast",
-      "12mmDesc": "Staðlað hljóðísog",
-      "24mmDesc": "Aukið hljóðísog",
-      "36mmDesc": "Hámarkshljóðísog",
       "lineGrooves": "Lóðréttar",
       "waveGrooves": "Bogadregnar",
       "chevronGrooves": "Skáhallar",
-      "gridGrooves": "Krosslagðar"
+      "gridGrooves": "Krosslagðar",
+      "lineName": "Lína",
+      "waveName": "Bylgja",
+      "chevronName": "Chevron",
+      "gridName": "Rúðunet"
     },
     "related": {
       "title": "Tengdar Vörur"
+    },
+    "material": {
+      "tag": "Efni",
+      "description": "Hver rPET Groove-plata byrjar sem rPET Panel: stíft filt úr endurunnum PET-flöskum, unnið eins og viðarplata. Raufamynstrið er fræst í hana.",
+      "layer1Title": "rPET Panel-filt",
+      "layer1Desc": "{pct, select, unknown {Endurunnið PET-filt} other {{pct} % endurunnið PET-filt}}, um 200 kg/m³, í Standard- eða eldtefjandi (FR) útgáfu.",
+      "layer2Title": "CNC-fræstar raufar",
+      "layer2Desc": "Mynstrið er fræst í filtið: fjögur mynstur, sjá hér að neðan.",
+      "layer3Title": "Litur",
+      "layer3Desc": "Tíu lagerlitir frá einni plötu; hvaða annar litur sem er eftir pöntun út frá RAL- eða NCS-tilvísun."
+    },
+    "ordering": {
+      "description": "Lágmarkspöntun, afhendingartími og afhending fylgja rPET Panel sem raufarnar eru fræstar í."
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "ENDURUNNIN PET HLJÓÐPANELER",
       "title": "rPET Panel: hljóðdeyfiplatan úr endurunnu PET sem þú vinnur eins og MDF",
-      "tagline": "Sjálfbær þögn, óendanlegar möguleikar",
-      "description": "Umbreyttu hvaða rými sem er með rPET - Panel hljóðdeyfiplötum. {pct, select, unknown {Þessir léttu en öflugu hljóðísogarar eru framleiddir úr endurunnum PET-flöskum og} other {Þessir léttu en öflugu hljóðísogarar eru framleiddir úr {pct} % endurunnum PET-flöskum og}} skila hámarks hljóðvistarárangri með lágmarks umhverfisáhrifum.",
+      "tagline": "Platan úr endurunnu PET-filti sem þú vinnur eins og MDF.",
+      "description": "rPET Panel er stíf hljóðdeyfandi filtplata úr {pct, select, unknown {endurunnum PET-flöskum} other {{pct} % endurunnum PET-flöskum}}. Hún ísogar hljóð á öllu yfirborðinu, vegur brot af viðarplötu og er unnin með venjulegum verkstæðisverkfærum: sagaðu, fræstu og boraðu, málaðu síðan eða UV-prentaðu.",
       "usp1": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}",
-      "usp2": "αw allt að 1,00",
-      "usp3": "Létt 3-4 kg/m²",
-      "colorSelector": "Veldu plötu lit",
-      "colorSelectorPlaceholder": "Veldu lit"
+      "usp2": "Unnið eins og MDF",
+      "usp3": "Standard- og FR-útgáfa"
     },
     "overview": {
-      "tag": "YFIRLIT",
-      "title": "Endurunnið PET á besta form",
-      "reason1Title": "Auðveld meðhöndlun",
-      "reason1": "Léttar plötur sem hver sem er getur sett upp án þungra tækja",
-      "reason2Title": "Vinveitt fólki",
-      "reason2": "OEKO-TEX® vottaðar, öruggar í öllu umhverfi, þar á meðal skólum og heilbrigðisstofnunum",
-      "reason3Title": "Endalausir möguleikar",
-      "reason3": "Hægt að skera, fræsa og bora með CNC – notaðu þær eins og MDF án ókostanna",
-      "reason4Title": "Tjáðu þinn stíl",
-      "reason4": "50+ litir sem falla að hvaða innanhússhönnun sem er",
-      "reason5Title": "Viltu fleiri valkosti?",
-      "reason5": "Sameinaðu með rPET Groove fyrir heildstætt hönnunarkerfi",
-      "description": "rPET - Panel umbreytir endurunnum PET-flöskum í afkastamiklar hljóðdeyfiplötur. Hver plata beinir plastúrgangi frá urðun um leið og hún skapar heilnæmara og hljóðlátara umhverfi. Þetta er hljóðísogandi valkosturinn við MDF – en aðeins brot af þyngdinni.",
+      "tag": "Yfirlit",
+      "title": "Veggir, loft, rýmisskil og hljóðdeyfandi húsgögn",
+      "description": "Notað í vegg- og loftplötur, rýmisskil og hljóðdeyfandi húsgögn. Tvær þykktir, tvær stærðir, Standard-útgáfa og eldtefjandi (FR) útgáfa. Framleitt í Póllandi (Częstochowa).",
       "feature1": "{pct, select, unknown {Framleitt úr endurunnum PET-flöskum} other {Framleitt úr {pct} % endurunnum PET-flöskum}}",
-      "feature2": "Að fullu endurvinnanlegt við lok líftíma",
-      "feature3": "Léttvægt: aðeins 3-4 kg/m²",
-      "feature4": "Án efnabindiefna"
-    },
-    "process": {
-      "tag": "HVERNIG ÞAÐ ER GERT",
-      "title": "Hanna, byggja, reisa",
-      "description": "rPET Panel má vinna nákvæmlega eins og MDF. Skera, fræsa, bora, beygja – framleiðandinn þinn þarf engin ný verkfæri eða aðferðir."
+      "feature2": "Ísogar hljóð á öllu yfirborðinu",
+      "feature3": "Vegur brot af viðarplötu",
+      "feature4": "Sagað, fræst, borað, málað eða UV-prentað með venjulegum verkstæðisverkfærum"
     },
     "workability": {
-      "tag": "VINNSLA",
-      "step1Title": "Sögun",
-      "step1": "Nákvæm form og prófílar með venjulegum CNC-búnaði",
-      "step2Title": "CNC-skurður og fræsing",
-      "step2": "Beinar festingar án forborunar eða sérstakra festinga",
-      "step3Title": "Borun og skrúfun",
-      "step3": "Búðu til sveigjur og horn með einfaldri V-skurðartækni",
-      "title": "Unnið eins og MDF, vegur nánast ekkert",
-      "description": "rPET - Panel sameinar vinnsluhæfni MDF og ótrúlega lága þyngd. Sagaðu það, fræsaðu það í CNC, boraðu það, V-skerðu það – efnið vinnst frábærlega með venjulegum verkstæðisverkfærum.",
-      "step1Desc": "Handvirkt eða rafknúið – hreinn skurður í hvert sinn",
-      "step2Desc": "Nákvæm form og sérsniðnir prófílar",
-      "step3Desc": "Örugg festing án þess að efnið klofni",
-      "step4Title": "V-skurðar beyging",
-      "step4Desc": "Búa til 3D form og horn",
-      "quote": "Þú kemst fljótt að því að rPET - Panel má vinna jafn hratt og auðveldlega og MDF-plötu."
+      "description": "rPET Panel er unnið með venjulegum verkstæðisverkfærum, á sama hátt og viðarplata."
     },
     "acoustics": {
-      "tag": "HLJÓÐFRÆÐI",
-      "title": "Hámarks frásog",
-      "benefit1Title": "Hámarks frammistaða",
-      "benefit1": "Bættu talskýrleika verulega í fundarherbergjum og kennslustofum",
-      "benefit2Title": "Óháð vottað",
-      "benefit2": "Skapaðu rólegra umhverfi sem eykur vellíðan og framleiðni",
-      "benefit3Title": "Breiðband",
-      "benefit3": "Dragðu úr hljóðflutningi milli rýma fyrir trúnaðarsamtöl",
-      "description": "rPET - Panel nær hæstu mögulegu hljóðísogseinkunn. Einstök trefjabyggingin fangar og dreifir hljóðorku, dregur verulega úr ómtíma og bætir talskýrleika.",
-      "howItWorks": "Hvernig það virkar",
-      "fiberLabel": "Þjappaðar PET trefjar",
-      "fiberSublabel": "Hljóðorka breytist í varma",
-      "panelThickness": "Þykkt plötu",
-      "testStandard": "Prófunarstaðall",
-      "testConfig": "Prófunaruppsetning: 24 mm plata á 50 mm grind með pólýesterullareinangrun",
-      "certNote": "Óháð prófað og vottað samkvæmt ISO 11654",
-      "fireClassLabel": "Brunaflokkur (EN 13501-1)"
+      "tag": "Hljóðvist"
     },
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
       "title": "Hringrásarlegur í kjarna",
       "cert1": "{pct, select, unknown {Endurunnið PET-efni} other {{pct} % endurunnið efni}}",
       "cert2": "Að fullu endurvinnanlegt",
-      "cert3": "OEKO-TEX® Flokkur 1",
-      "cert4": "A+ flokkur losunar",
+      "cert3": "Eitt efni",
+      "cert4": "Ókeypis móttaka",
       "badge1Desc": "Framleitt úr PET-flöskum frá neytendum",
       "badge2Desc": "Full endurheimt efnis við lok líftíma",
-      "description": "rPET - Panel er hringrásarhagkerfið í hnotskurn. {pct, select, unknown {Hver plata er framleidd úr endurunnum PET-flöskum} other {Hver plata inniheldur {pct} % endurunnar PET-flöskur}} og við lok líftíma má endurvinna alla plötuna aftur. Enginn úrgangur, engar málamiðlanir.",
-      "cert3Desc": "Vottað í flokki 1 fyrir öryggi fólks",
-      "cert4Desc": "Engin VOC eða formaldehýð (ISO 16000)"
+      "description": "{pct, select, unknown {Framleitt úr endurunnum PET-flöskum} other {Framleitt úr {pct} % endurunnum PET-flöskum}} og 100 % PET: eitt efni, endurvinnanlegt við lok líftíma, og Re-Sound tekur plöturnar til baka.",
+      "cert3Desc": "100 % PET, eitt efni, endurvinnanlegt við lok líftíma."
     },
     "specs": {
       "tag": "FORSKRIFTIR",
       "title": "Tæknilegar forskriftir",
-      "acousticsTitle": "Hljóðvirkni",
-      "physicalTitle": "Eðliseiginleikar",
-      "fireTitle": "Eldvarnir",
-      "healthTitle": "Heilsa og umhverfi",
-      "colorsTitle": "Litir og frágangur",
-      "dimensionsTitle": "Mál",
-      "dimStandard": "Stöðluð plata",
-      "dimCustomMax": "Sérstaklega hámark",
-      "dimThicknessOptions": "Þykktarkostir",
-      "dimCustomThickness": "Sérþykkt",
+      "acousticsTitle": "Hljóðvist (12 mm plata)",
+      "fireTitle": "Brunaviðbrögð",
+      "healthTitle": "Vottanir og lok líftíma",
+      "dimensionsTitle": "Stærðir og þyngd",
       "physMaterial": "Efni",
-      "physWeight12": "Þyngd (12mm)",
-      "physWeight24": "Þyngd (24mm)",
-      "fireEuClass": "Evrópsk flokkun",
-      "fireGerman": "Þýskur staðall",
       "healthOekoTex": "OEKO-TEX®",
-      "healthFormaldehyde": "Formaldehýð",
-      "healthBinders": "Efnabindiefni",
       "colorStandard": "Staðallitir",
-      "colorCustom": "Sérlitir",
-      "finishOptions": "Frágangsvalkostir",
-      "recyclability": "Endurvinnanleiki",
-      "vocEmissions": "VOC-losun",
-      "anyRalNcs": "Hvaða RAL / NCS sem er",
-      "finishOptionsVal": "Textíll, HPL, spjald, prentun"
-    },
-    "sample": {
-      "title": "Biðjaðu um sýnishornspakka þinn",
-      "description": "Upplifðu gæði rPET - Panel af eigin raun. Sérsniðni sýnishornapakkinn okkar inniheldur litaprufur, þykktarvalkosti og áferðarsýni til að hjálpa þér að taka réttu ákvörðunina.",
-      "tag": "SÝNISHORN",
-      "cta": "Biðja um ókeypis sýnishorn"
+      "generalTitle": "Almennt",
+      "formats": "Stærðir",
+      "surfaceWeight": "Flatarþyngd (9 / 12 mm)",
+      "panelWeight2800": "Plata 2 800 × 1 220 mm (9 / 12 mm)",
+      "panelWeight2440": "Plata 2 440 × 1 220 mm (9 / 12 mm)",
+      "physMaterialVal": "100 % endurunnið PET-filt",
+      "acousticsMounting": "Mælt á",
+      "acousticsMountingVal": "12 mm plata (2,4 kg/m²); hámark með 50 mm loftbili og 50 mm steinull",
+      "acoustics9mm": "9 mm plata",
+      "fireReports": "Flokkunarskýrslur"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
       "title": "rPET - Panel í notkun"
     },
-    "why": {
-      "tag": "AF HVERJU VELJA rPET",
-      "description": "Kynntu þér hvers vegna arkitektar, hönnuðir og hljóðvistarráðgjafar velja rPET - Panel fyrir sín kröfuhörðustu verkefni.",
-      "reason1Title": "100% Hringrásarlegur",
-      "reason1": "Framleitt úr endurunnum PET-flöskum, fullkomlega endurvinnanlegt og styður hringrásarhagkerfið.",
-      "reason2Title": "Framúrskarandi",
-      "reason2": "Hljóðísog allt að αw 1.00 – hæsta mögulega einkunn fyrir hljóðísog.",
-      "reason3Title": "Auðveld uppsetning",
-      "reason3": "Létt og stöðugt. Skerðu, boraðu, fræsaðu og settu upp með venjulegum verkfærum.",
-      "reason4Title": "Heilbrigt og öruggt",
-      "reason4": "Stöðurafmagnsfrítt, húðvænt, ofnæmisvænt. Engin losun VOC eða formaldehýðs.",
-      "reason5Title": "Óendanlegar hönnunarmöguleikar",
-      "reason5": "5 staðallitir auk hvaða RAL/NCS-litar sem er. Bættu við efni, laminati, spæni eða sérprentun.",
-      "title": "Fimm ástæður til að velja rPET"
-    },
     "colors": {
-      "tag": "LITIR",
-      "title": "5 staðlaðir litir + sérsniðið RAL/NCS",
-      "description": "Veldu úr 5 fáguðum staðallitum eða tilgreindu hvaða sérlit sem er úr RAL- eða NCS-litakerfinu. Allir litatónar halda sömu framúrskarandi hljóðvistareiginleikum.",
-      "anyColor": "Hvaða litur sem er",
-      "moreOptionsTitle": "Viltu fleiri valkosti?",
-      "moreOptionsDesc": "Alla grunnliti má sameina yfirborðslögum eins og hljóðvistarefnum, HPL-laminati, ekta viðarspæni eða sérprentun – án þess að skerða hljóðvistareiginleikana.",
-      "fabric1": "Hljóðtextílar",
-      "fabric2": "HPL/CPL-lamínat",
-      "fabric3": "Raunverulegt viðarspjald",
-      "fabric4": "Sérprentun"
+      "tag": "Litir",
+      "title": "Tíu litir af lager, hvaða litur sem er eftir pöntun",
+      "description": "Litaúrvalið úr rPET Panel-gagnablaðinu: tíu lagerlitir, númeraðir 01–10, og hvaða annar litur sem er eftir pöntun."
     },
     "applications": {
       "tag": "NOTKUN",
@@ -1872,16 +1800,6 @@
       "label2": "Skrifstofur",
       "label3": "Veitingageiri"
     },
-    "nav": {
-      "overview": "Yfirlit",
-      "colors": "Litir",
-      "applications": "Notkun",
-      "acoustics": "Hljóðfræði",
-      "processing": "Vinnsla",
-      "specifications": "Forskriftir",
-      "gallery": "Myndasafn",
-      "downloads": "Niðurhal"
-    },
     "downloads": {
       "installationGuide": "Uppsetningarleiðbeiningar",
       "acousticTestReport": "Hljóðvistarprófunarskýrsla (ISO 354)",
@@ -1895,23 +1813,23 @@
       "questions": {
         "oekoTex": {
           "question": "Er endurunna PET-ið vottað?",
-          "answer": "Já. Allar rPET plötur eru OEKO-TEX® Standard 100-vottaðar — staðfestir fjarveru skaðlegra efna. VOC-losanir eru prófaðar gegn franska A+ (ströngustu inneftaftarflokkun)."
+          "answer": "Já. rPET-plöturnar hafa OEKO-TEX® Standard 100-vottorð sem fæst eftir fyrirspurn. Platan er 100 % endurunnið PET-filt: eitt efni, endurvinnanlegt við lok líftíma."
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Samkvæmt EN 13501-1 er rPET Panel flokkað {panel}. Brunavottorðið er í niðurhalshlutanum á þessari síðu; hinar rPET gerðirnar bera sína eigin flokkun á sínum síðum."
+          "answer": "Samkvæmt EN 13501-1 fer flokkurinn eftir lit: rPET Panel er flokkað {panel}, bæði í Standard- og FR-útgáfunni. Flokkunarskýrslur eftir fyrirspurn."
         },
         "processability": {
           "question": "Er hægt að saga, bora eða mála rPET plötur?",
-          "answer": "Já. rPET hagar sér eins og MDF í venjulegum tréiðnaðarvélum: sög með hringsög eða CNC-fræsara, bor með spírabor, mála með vatns- eða leysiefna-byggðum lökkum. Engin sérstök varnarbúnaður þarf."
+          "answer": "Já. rPET Panel er unnið eins og viðarplata: skerðu það með hníf, hjólsög, plötusög eða vinkilslípivél með málmskurðarskífu; fræstu form, útskurði og raufar í CNC; boraðu og skrúfaðu án þess að það klofni; málaðu með vatnsþynnanlegri eða leysiefnamálningu, eða láttu Re-Sound UV-prenta það."
         },
         "colorRange": {
           "question": "Hve margir litir eru í boði?",
-          "answer": "12 hönnunarlitir eru í lager fyrir rPET Groove og Flex Groove línurnar; rPET Panel línan er fáanleg í 16 litum. Sérsniðnir litir eru framleiddir fyrir verkefni yfir 200 m²."
+          "answer": "Tíu lagerlitir (01–10) eru alltaf fáanlegir, frá einni plötu. Allir aðrir litir eru framleiddir eftir pöntun út frá RAL- eða NCS-tilvísun eða áþreifanlegu sýnishorni; lágmarksmagn fyrir pöntunarliti eftir fyrirspurn. Sama úrval gildir fyrir rPET Groove og rPET Flex Groove."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
+          "answer": "Um 3–4 virkar vikur. Lágmarkspöntun er ein plata, verð eftir fyrirspurn og afhending EXW Częstochowa, Póllandi."
         }
       }
     },
@@ -1922,19 +1840,13 @@
       "acousticTreatmentInRestaurant": "Hljóðvistarlausn á veitingastað",
       "cncProcessingOfRpetPanels": "CNC-vinnsla á rPET plötum",
       "recycledPetBottles": "Endurunnar PET-flöskur",
-      "rpetPanelSamplePanels": "rPET - Panel sýnishornaplötur"
+      "rpetPanelSamplePanels": "rPET - Panel sýnishornaplötur",
+      "rpetPanelHero": "Hljóðdeyfandi rPET Panel-filtplötur í ólífugrænum lit á vegg fyrir aftan sófa"
     },
-    "options": {
-      "midnightDesc": "Djúpsvartur litur sem minnir á næturhimin í tunglsljósi",
-      "titanDesc": "Einkennandi dökkgrár litur, líkt og stál",
-      "silverDesc": "Nútímalegur, iðnaðarlegur glæsileiki",
-      "marbleDesc": "Mínimalískt ljósgrátt yfirbragð",
-      "frostDesc": "Hreinn, hvítur einfaldleiki",
-      "customDesc": "Hvaða litur sem er úr RAL- eða NCS-litakerfinu",
-      "12mmDesc": "Létt lausn",
-      "18mmDesc": "Jafnvæg frammistaða",
-      "24mmDesc": "Hámarkshljóðísog",
-      "maximumLabel": "Hámark"
+    "formats": {
+      "tag": "Tæknilegar upplýsingar",
+      "title": "Stærðir og þyngd",
+      "description": "Tvær stærðir og tvær þykktir, í Standard-útgáfu og eldtefjandi (FR) útgáfu."
     }
   },
   "rwoodGroovePage": {
@@ -2855,67 +2767,53 @@
     "hero": {
       "tag": "SVEIGJANLEG HLJÓÐPANEL",
       "title": "rPET Flex Groove: sveigjanlegar PET-hljóðdeyfiplötur fyrir bogadregna fleti",
-      "tagline": "Beygðu án þess að brjóta",
-      "description": "Fullkomna hljóðvistarlausnin fyrir bogadregna fleti. Þessar sveigjanlegu plötur eru úr endurunnu PET-filti með nákvæmum V-skornum raufum og laga sig áreynslulaust að súlum, bogadregnum veggjum og hvers kyns byggingarformum með lágmarksradíus 500mm.",
-      "usp1": "Lágm. geisli 500mm",
-      "usp2": "Brunahindrun",
-      "usp3": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}",
-      "colorSelector": "Veldu lit",
-      "colorPlaceholder": "Veldu lit",
-      "description2": ""
+      "tagline": "Hljóðdeyfiplötur með V-skurðum fyrir boga, skornar úr 9 mm rPET Panel.",
+      "description": "rPET Flex Groove er skorið úr 9 mm rPET Panel: stífu filti úr endurunnum PET-flöskum, V-skornu svo það beygist um súlur, bogadregna veggi og aðra ávala fleti. V-skurðirnir skilja eftir rifflaða yfirborðið sem gefur plötunni sinn karakter.",
+      "usp1": "Lágmarksbeygjuradíus 500 mm",
+      "usp2": "Skorið úr 9 mm rPET Panel",
+      "usp3": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}"
     },
     "overview": {
       "tag": "NÝSKÖPUN",
       "title": "Hannað fyrir bognar yfirborð",
-      "description": "Flex-Groove plötur eru fjölhæf hljóðvistarlausn fyrir bogadregna fleti og laga sig áreynslulaust að hvaða formi sem er. Þær henta bæði fyrir innri og ytri radíus og sveigjanleg uppbygging þeirra gerir samfelld skil möguleg meðfram veggjum, súlum og öðrum ávölum byggingarhlutum.",
+      "description": "Flex Groove-plötur fylgja bogadregnum flötum, bæði innri og ytri radíus: súlum, bogadregnum veggjum og ávölum byggingarhlutum. Efnið er rPET Panel, svo litir, vinnsla og brunaviðbrögð eru þau sömu og plötunnar.",
       "feature1": "Aðlagast hvaða bognu yfirborði sem er",
       "feature2": "Virkar með innri og ytri radíus",
       "feature3": "Rifjuð áferð gefur dýpt og takt",
-      "feature4": "Innbyggðir hljóðdeyfandi eiginleikar",
-      "description2": ""
+      "feature4": "Innbyggðir hljóðdeyfandi eiginleikar"
     },
     "technology": {
       "tag": "TÆKNI",
       "title": "V-Cut sveigjanleiki kerfi",
-      "description": "Hver plata er skorin með nákvæmum V-skurðum sem gera henni kleift að beygjast án þess að brotna. Þessi snjalli skurður myndar einkennandi rifjaða áferð – röð línulegra raufa sem veita sveigjanleika og gefa yfirborðinu um leið skúlptúrískan svip.",
+      "description": "V-skurðir gera kleift að brjóta horn og þrívíð form: platan er skorin með samsíða V-skurðum sem leyfa henni að beygjast án þess að brotna og skilja eftir rifflaða áferð á yfirborðinu.",
       "minRadius": "Lágmarks beygjuradíus",
       "feature1Title": "Nákvæmnis V-skurður",
       "feature1Desc": "Hannaðar raufar fyrir stýrðan sveigjanleika",
       "feature2Title": "Lýtalausar bognir",
       "feature2Desc": "Mjúk skil á hvaða bogadregna fleti sem er",
-      "feature3Title": "Lítill úrgangur",
-      "feature3Desc": "Skilvirk hönnun dregur úr afskurði",
+      "feature3Title": "Skorið úr 9 mm rPET Panel",
+      "feature3Desc": "Flatarþyngd 1,8 kg/m²; skorið úr plötu sem er 2 800 × 1 220 eða 2 440 × 1 220 mm.",
       "flatPanel": "Flatt plata",
-      "curvedApp": "Bogin notkun",
-      "description2": ""
+      "curvedApp": "Bogin notkun"
     },
     "colors": {
-      "tag": "FÍNGERÐ SAFN",
-      "title": "12 valdir litir",
-      "description": "Vandlega valin litapalletta okkar býður fjölhæfa kosti fyrir hvaða innanrými sem er. Frá mjúkum hlutlausum tónum til djarfra áherslulita er hver litur hannaður til að falla að nútímalegum byggingarrýmum og skila um leið framúrskarandi hljóðvist.",
-      "grooveDir": "Stefna rifu",
-      "description2": ""
+      "tag": "Litir",
+      "title": "Tíu litir af lager, hvaða litur sem er eftir pöntun",
+      "description": "Litaúrvalið er það sama og fyrir rPET Panel: tíu lagerlitir, númeraðir 01–10, og hvaða annar litur sem er eftir pöntun.",
+      "grooveDir": "Stefna rifu"
     },
     "acoustics": {
-      "tag": "AFKÖST",
-      "title": "Hljóðdeyfingareiginleikar",
-      "description": "Flex-Groove plötur eru úr eldtefjandi endurunnu PET-filti og skila áhrifaríku hljóðísogi um leið og þær viðhalda sjónrænni samfellu yfir bogadregna fleti. Raufaða áferðin eykur hljóðvistarafköstin.",
+      "tag": "Hljóðvist",
+      "description": "Flex Groove heldur hljóðdeyfandi eiginleikum filtsins á bogadregnum flötum. 9 mm platan hefur ekki enn verið mæld, svo við gefum ekkert αw- eða NRC-gildi.",
       "feature1Title": "Hljóðdeyfing",
       "feature1Desc": "Dregur úr bergmáli og ómun",
-      "feature2Title": "Brunahindrun",
-      "feature2Desc": "Innbyggðir brunavarnareiginleikar",
       "feature3Title": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið}}",
-      "feature3Desc": "Úr endurunnum plastflöskum",
-      "layer1Label": "Endurunnið PET-flóki",
-      "layer2Label": "Nákvæmnis V-skurðir",
-      "thicknessLabel": "Þykkt",
-      "materialLabel": "Eldþolið PET flóki",
-      "description2": ""
+      "feature3Desc": "Úr endurunnum plastflöskum"
     },
     "installation": {
       "tag": "AUÐVELD UPPSETNING",
       "title": "Örugg festing, einföld uppsetning",
-      "description": "Plöturnar eru hannaðar til að ná yfir staðlaða hæð frá gólfi að lofti, sem einfaldar stillingu og styttir uppsetningartíma. Aðlögunarhæft formið gerir þær að hagnýtri lausn fyrir innanrými sem krefjast bæði hljóðísogs og sveigjanleika í hönnun.",
+      "description": "Plöturnar eru límdar á undirbúið bogadregið undirlag. Fullunnar plötustærðir eftir fyrirspurn.",
       "step1Title": "Undirbúa yfirborð",
       "step1Desc": "Gangið úr skugga um að bogadregni flöturinn sé hreinn og tilbúinn fyrir festingu",
       "step2Title": "Bera lím",
@@ -2933,12 +2831,9 @@
       "badge1": "{pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}",
       "badge1Desc": "Úr endurunnum plastflöskum",
       "badge2": "Að fullu endurvinnanlegt",
-      "badge2Desc": "Má endurvinna við lok líftíma",
       "badge3": "Framleitt í Póllandi",
-      "badge4": "Lágt VOC",
-      "badge3Desc": "Stutt birgðakeðja frá pólsku verksmiðjunni okkar",
-      "badge4Desc": "Öruggt fyrir innandyra umhverfi",
-      "description2": ""
+      "badge4": "Ókeypis móttaka",
+      "badge3Desc": "Stutt birgðakeðja frá pólsku verksmiðjunni okkar"
     },
     "specs": {
       "tag": "TÆKNILEGT",
@@ -2947,34 +2842,18 @@
       "flexibilityTitle": "Sveigjanleiki",
       "materialTitle": "Efni",
       "fireTitle": "Eldvarnir",
-      "certsTitle": "Vottanir",
+      "certsTitle": "Vottanir og lok líftíma",
       "applicationsTitle": "Notkun",
-      "dimPanelLength": "Lengd plötu",
-      "dimPanelWidth": "Panel breidd",
-      "dimThickness": "Þykkt",
-      "dimWeight": "Þyngd",
-      "dimDensity": "Þéttleiki",
       "flexMinRadius": "Lágmarksradíus",
       "flexBendDir": "Beygingarstefna",
       "flexBendDirVal": "Innri og ytri radíusar",
       "flexCutType": "Skurðargerð",
       "flexCutTypeVal": "Nákvæmnis V-skurður",
       "matComposition": "Samsetning",
-      "matCompositionVal": "FR PET-filt",
-      "matRecycled": "Endurunnið efni",
-      "matFireRetardant": "Eldþolið",
-      "matFireRetardantVal": "Já (innbyggt)",
+      "matCompositionVal": "100 % endurunnið PET-filt",
       "matColorVar": "Litabrigði",
-      "matColorVarVal": "Mögulegt (endurunnið efni)",
-      "fireRating": "Brunaflokkun",
-      "fireSmokeProduction": "Reykmyndun",
-      "fireFlamingDroplets": "Brennandi dropar",
-      "fireFlamingDropletsVal": "d0 (engir)",
+      "matColorVarVal": "Lítils háttar blæbrigðamunur milli framleiðslulota er eðlilegur",
       "certMaterial": "Efni",
-      "certVOC": "VOC-losun",
-      "certVOCVal": "Lág losun",
-      "certRecycled": "Endurunnið efni",
-      "certRecycledVal": "100 %",
       "appSurfaces": "Fletir",
       "appSurfacesVal": "Veggir, súlur, bogadregnir hlutar",
       "appEnvironment": "Umhverfi",
@@ -2982,7 +2861,13 @@
       "appInstallation": "Uppsetning",
       "appInstallationVal": "Límfesting",
       "appOrientation": "Stefna",
-      "appOrientationVal": "Langsum / þversum"
+      "appOrientationVal": "Langsum / þversum",
+      "dimSource": "Skorið úr",
+      "dimSourceVal": "9 mm rPET Panel (2 800 × 1 220 / 2 440 × 1 220 mm)",
+      "dimSurfaceWeight": "Flatarþyngd",
+      "dimFinishedFormat": "Fullunnin stærð",
+      "matColours": "Litir",
+      "fireReports": "Flokkunarskýrslur"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -3006,13 +2891,11 @@
       "app1Desc": "Klæddu burðarsúlur með samfelldri hljóðvistarþekju",
       "app2Desc": "Fylgdu lífrænum veggformum fyrir samfellda þekju",
       "app3Desc": "Klæddu bogadregin op og byggingarfræðileg sérkenni",
-      "app4Desc": "Skapaðu áberandi bogadregna áhersluveggi",
-      "description2": ""
+      "app4Desc": "Skapaðu áberandi bogadregna áhersluveggi"
     },
     "cta": {
       "title": "Tilbúinn að beygja hljóðfræðina þína?",
-      "description": "Fáðu sérsniðið tilboð fyrir verkefnið þitt. Teymi okkar aðstoðar þig við að velja réttu sveigjanlegu lausnina.",
-      "description2": "Fáðu sérsniðið tilboð fyrir verkefnið þitt. Teymi okkar aðstoðar þig við að velja réttan lit og reikna út þarfir þínar."
+      "description": "Fáðu sérsniðið tilboð fyrir verkefnið þitt. Teymi okkar aðstoðar þig við að velja réttu sveigjanlegu lausnina."
     },
     "cta2": {
       "freeNote": "Ókeypis sýnishorn í boði • Framleitt í Póllandi • {pct, select, unknown {Endurunnið PET} other {{pct} % endurunnið PET}}"
@@ -3021,23 +2904,23 @@
       "questions": {
         "oekoTex": {
           "question": "Er endurunna PET-ið vottað?",
-          "answer": "Já. Allar rPET plötur eru OEKO-TEX® Standard 100-vottaðar — staðfestir fjarveru skaðlegra efna. VOC-losanir eru prófaðar gegn franska A+ (ströngustu inneftaftarflokkun)."
+          "answer": "Já. rPET-plöturnar hafa OEKO-TEX® Standard 100-vottorð sem fæst eftir fyrirspurn. Platan er 100 % endurunnið PET-filt: eitt efni, endurvinnanlegt við lok líftíma."
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Samkvæmt EN 13501-1 er rPET Flex Groove flokkað {flex}. Brunavottorðið er í niðurhalshlutanum á þessari síðu; hinar rPET gerðirnar bera sína eigin flokkun á sínum síðum."
+          "answer": "Samkvæmt EN 13501-1 fer flokkurinn eftir lit: rPET Flex Groove er flokkað {flex}, eins og 9 mm rPET Panel sem það er skorið úr. Flokkunarskýrslur eftir fyrirspurn."
         },
         "processability": {
           "question": "Er hægt að saga, bora eða mála rPET plötur?",
-          "answer": "Já. rPET hagar sér eins og MDF í venjulegum tréiðnaðarvélum: sög með hringsög eða CNC-fræsara, bor með spírabor, mála með vatns- eða leysiefna-byggðum lökkum. Engin sérstök varnarbúnaður þarf."
+          "answer": "Já. rPET Flex Groove er skorið úr 9 mm rPET Panel og þolir sömu verkfæri: sög eða vinkilslípivél með málmskurðarskífu, CNC-fræsun, borun og skrúfur án þess að klofna, vatnsþynnanlega eða leysiefnamálningu."
         },
         "colorRange": {
           "question": "Hve margir litir eru í boði?",
-          "answer": "12 hönnunarlitir eru í lager fyrir rPET Groove og Flex Groove línurnar; rPET Panel línan er fáanleg í 16 litum. Sérsniðnir litir eru framleiddir fyrir verkefni yfir 200 m²."
+          "answer": "Tíu lagerlitir (01–10) eru alltaf fáanlegir, frá einni plötu. Allir aðrir litir eru framleiddir eftir pöntun út frá RAL- eða NCS-tilvísun eða áþreifanlegu sýnishorni; lágmarksmagn eftir fyrirspurn. Úrvalið er það sama fyrir rPET Panel, rPET Groove og rPET Flex Groove."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerlitir sendast innan 2–3 vikna; sérsniðnir litir taka 5–6 vikur. Stór verkefni (>500 m²) eru sett í framleiðsluhópum — hafðu samband fyrir bindandi dagsetningu."
+          "answer": "Um 3–4 virkar vikur, eins og fyrir rPET Panel. Lágmarkspöntun, fullunnar stærðir og afhending eftir fyrirspurn."
         }
       }
     },
@@ -3046,13 +2929,25 @@
       "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove hljóðdeyfiplata á bogadregnu yfirborði",
       "rpetFlexGrooveColorOptions": "Litavalkostir rPET Flex-Groove",
       "flexGroovePanelInstallation": "Uppsetning Flex-Groove plötu",
-      "recycledPetBottles": "Endurunnar PET-flöskur"
+      "rpetFlexGrooveCurvedWalls": "rPET Flex Groove-plötur á bogadregnum veggjum í fundarrými"
     },
     "options": {
       "lengthDesc": "Raufarnar liggja eftir endilangri plötunni",
       "widthDesc": "Raufarnar liggja þvert yfir breidd plötunnar",
       "lengthName": "Langsum",
       "widthName": "Þversum"
+    },
+    "buildUp": {
+      "layer1Title": "9 mm rPET Panel",
+      "layer1Desc": "{pct, select, unknown {Endurunnið PET-filt} other {{pct} % endurunnið PET-filt}}, 1,8 kg/m², skorið úr plötu sem er 2 800 × 1 220 eða 2 440 × 1 220 mm.",
+      "layer2Title": "V-skurðir",
+      "layer2Desc": "Samsíða V-skurðir leyfa plötunni að beygjast; lágmarksbeygjuradíus 500 mm.",
+      "layer3Title": "Rifflað yfirborð",
+      "layer3Desc": "Skurðirnir skilja eftir línulega áferð, eftir lengd eða breidd, í tíu lagerlitum eða hvaða lit sem er eftir pöntun."
+    },
+    "ordering": {
+      "description": "Afhendingartíminn er sá sami og fyrir rPET Panel sem Flex Groove er skorið úr; lágmarkspöntun, fullunnar stærðir og afhending eftir fyrirspurn.",
+      "sizesValue": "Skorið úr 9 mm rPET Panel (2 800 × 1 220 eða 2 440 × 1 220 mm); fullunnar stærðir eftir fyrirspurn"
     }
   },
   "legal": {
@@ -4043,15 +3938,15 @@
     },
     "rpet-panel": {
       "mounting": "Bein skrúffesting eða lím, engin forborun",
-      "leadTime": "2–3 vikur (lagerlitir), 5–6 vikur sérpöntun"
+      "leadTime": "≈ 3–4 virkar vikur"
     },
     "rpet-groove": {
       "mounting": "Lím, Z-klemmur, skrúfur eða listar",
-      "leadTime": "2–3 vikur (lagerlitir), 5–6 vikur sérpöntun"
+      "leadTime": "≈ 3–4 virkar vikur"
     },
     "rpet-flex-groove": {
       "mounting": "Límfesting á bogadregna fleti",
-      "leadTime": "2–3 vikur (lagerlitir), 5–6 vikur sérpöntun"
+      "leadTime": "≈ 3–4 virkar vikur"
     },
     "solo-flex": {
       "mounting": "Frístandandi, afhent samsett",

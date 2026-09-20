@@ -26,12 +26,12 @@
     "rwoodMicroDescription": "Microgeperforeerde akoestische houtpanelen (vanaf 0,5 mm) met FSC-gecertificeerd fineer: vrijwel onzichtbaar patroon, brandklasse {fireClass}, op maat tot 3 050 × 1 220 mm.",
     "rwoodVeneerTitle": "rWood Panel — gefineerde akoestische panelen, 12 houtfineren | Re-Sound",
     "rwoodVeneerDescription": "Gladde gefineerde akoestische panelen in 12 echthoutfineren, Nature- of Gemini-reeks: FSC®-gecertificeerd, naturel of gepigmenteerde lak, HPL, folie of verf. Afgewerkt in de fabriek, elk fineer op bestelling.",
-    "rpetGrooveTitle": "rPET Groove — gegroefde PET-panelen, 12 kleuren | Re-Sound",
-    "rpetGrooveDescription": "Gegroefde PET akoestische panelen van gerecycleerde flessen: 12 kleuren, 3 diktes (12/24/36 mm), NRC tot 0,90, brandklasse B-s1,d0. Gemaakt in Polen.",
-    "rpetPanelTitle": "rPET Panel — akoestisch PET-paneel, 16 kleuren | Re-Sound",
-    "rpetPanelDescription": "Akoestisch paneel van gerecycleerd PET, te bewerken als MDF: zagen, frezen, boren, schilderen. 16 kleuren, 12/18/24 mm, OEKO-TEX®. Gemaakt in Polen.",
+    "rpetGrooveTitle": "rPET Groove — gegroefde PET-panelen, 10 voorraadkleuren | Re-Sound",
+    "rpetGrooveDescription": "Gegroefde akoestische PET-panelen, gefreesd uit het rPET Panel: 10 voorraadkleuren en elke kleur op bestelling, 12/24/36 mm, NRC tot 0,90, brandreactie per kleur (EN 13501-1). Gemaakt in Polen.",
+    "rpetPanelTitle": "rPET Panel — akoestisch PET-paneel, 10 voorraadkleuren | Re-Sound",
+    "rpetPanelDescription": "Akoestisch paneel van gerecycleerd PET, te bewerken als MDF: zagen, frezen, boren, schilderen of UV-printen. 10 voorraadkleuren en elke kleur op bestelling, 9/12 mm, 2 800 × 1 220 of 2 440 × 1 220 mm, OEKO-TEX®. Gemaakt in Polen.",
     "rpetFlexGrooveTitle": "rPET Flex Groove — flexibele PET-panelen, rondingen | Re-Sound",
-    "rpetFlexGrooveDescription": "Flexibele PET akoestische panelen voor gebogen wanden, kolommen en plafonds: V-groeven, minimale radius 500 mm, 12 kleuren, OEKO-TEX® gecertificeerd.",
+    "rpetFlexGrooveDescription": "Flexibele akoestische PET-panelen voor gebogen wanden, kolommen en plafonds, gesneden uit het 9 mm rPET Panel: V-sneden, minimale straal 500 mm, 10 voorraadkleuren en elke kleur op bestelling, OEKO-TEX®.",
     "faqTitle": "Veelgestelde vragen — Re-Sound Akoestische Panelen",
     "faqDescription": "Antwoorden op veelgestelde vragen over Re-Sound akoestische panelen en belcabines: absorptie, brandklassen, levertijden, terugname en productkeuze.",
     "soloFlexTitle": "Solo Flex — akoestische belcabine voor 1 persoon | Re-Sound",
@@ -1029,6 +1029,107 @@
       "requestQuote": "Offerte aanvragen",
       "dataNote": "De gegevens geven onze huidige kennis weer en kunnen zonder kennisgeving veranderen.",
       "calculatedNote": "Waarden met ≈ zijn berekend."
+    },
+    "rpet": {
+      "kpi": {
+        "thickness": "mm dikte",
+        "surfaceWeight": "kg/m² oppervlaktegewicht",
+        "recycled": "gerecycleerd PET",
+        "stockColours": "voorraadkleuren, elke kleur op bestelling",
+        "nrcByThickness": "NRC per dikte",
+        "fire": "brandreactie per kleur (EN 13501-1)"
+      },
+      "formats": {
+        "eyebrow": "Paneelformaten · op schaal",
+        "perThickness": "Per dikte",
+        "surfaceWeight": "Oppervlaktegewicht",
+        "panel": "Paneel",
+        "density": "Dichtheid (beide)",
+        "calculatedNote": "≈ Berekend uit het nominale oppervlaktegewicht en de paneeloppervlakte."
+      },
+      "colours": {
+        "c01": "Lichtgrijs",
+        "c02": "Gebroken wit",
+        "c03": "Zand",
+        "c04": "Oudroze",
+        "c05": "Dieprood",
+        "c06": "Olijfgroen",
+        "c07": "Bosgroen",
+        "c08": "Leiblauw",
+        "c09": "Zilvergrijs",
+        "c10": "Antraciet",
+        "custom": "Elke kleur op bestelling",
+        "rangeValue": "10 voorraadkleuren + maatwerk",
+        "stockLabel": "Voorraadkleur",
+        "choose": "Kies een voorraadkleur",
+        "selected": "Voorraadkleur {number} · {name}",
+        "swatchAlt": "rPET voorraadkleur {number} {name}, staalfoto",
+        "madeToOrderTitle": "Op bestelling",
+        "madeToOrderText": "Voorraadkleuren 01–10 zijn altijd beschikbaar, vanaf één paneel. Elke andere kleur maken we op bestelling: stuur ons een RAL- of NCS-referentie of een fysiek staal. Minimumhoeveelheden voor kleuren op bestelling op aanvraag.",
+        "batchTitle": "Kleur en batch",
+        "batchText": "Gemaakt van gerecycleerde vezels, dus lichte tintverschillen tussen batches zijn normaal. Bestel de panelen voor één vlak samen en monteer ze in dezelfde richting. De stalen zijn foto’s: vraag fysieke stalen aan voor je specificeert."
+      },
+      "fire": {
+        "tag": "Brandveiligheid",
+        "title": "Brandreactie",
+        "text": "De brandreactie volgens EN 13501-1 hangt af van de kleur: wit, grijs en zwart halen {light}, alle andere kleuren {other}, zowel in de Standard- als in de FR-versie.",
+        "textSingle": "Brandreactie volgens EN 13501-1: {cls}, zowel in de Standard- als in de FR-versie.",
+        "whiteGreyBlack": "Wit, grijs, zwart",
+        "otherColours": "Andere kleuren",
+        "allColours": "Alle kleuren",
+        "classTo": "Klasse volgens EN 13501-1",
+        "reports": "Classificatierapporten op aanvraag."
+      },
+      "acoustics": {
+        "title": "Geluidsabsorptie",
+        "intro": "PET-vilt is een poreuze absorber: geluid dringt in de open vezelstructuur en wordt omgezet in warmte. Hoeveel een paneel absorbeert hangt af van de dikte en vooral van de montage. Rechtstreeks op de wand werkt het vooral op midden- en hoge frequenties; met een luchtspouw of minerale wol erachter stijgt de absorptie sterk en reikt ze tot lagere frequenties.",
+        "mountingHead": "Montage · paneel 12 mm",
+        "classHead": "Absorptieklasse",
+        "rows": {
+          "direct": "Rechtstreeks op de wand",
+          "cavity50": "Luchtspouw 50 mm",
+          "cavity50wool": "Spouw 50 mm + steenwol 50 mm",
+          "cavity100": "Luchtspouw 100 mm",
+          "cavity100wool": "Spouw 100 mm + steenwol 100 mm"
+        },
+        "footnote": "Gemeten volgens EN ISO 354 op 12 mm PET-vilt met identieke specificatie (2,4 kg/m²); αw en klasse volgens EN ISO 11654, NRC volgens ASTM C423. Paneel 9 mm: nog niet gemeten.",
+        "notMeasured": "Nog niet gemeten",
+        "notMeasuredTitle": "9 mm: nog niet gemeten",
+        "notMeasured9": "Het 9 mm rPET Panel is nog niet gemeten, dus voor rPET Flex Groove geven we geen absorptiewaarde. De materiaaltabel van het 12 mm paneel op de rPET Panel-pagina toont hoe PET-vilt zich per montage gedraagt.",
+        "panelTableLink": "Absorptietabel van het rPET Panel-materiaal (12 mm, per montage)"
+      },
+      "processing": {
+        "tag": "Bewerking",
+        "title": "Werkt als een houtplaat",
+        "cutting": "Zagen",
+        "cuttingDesc": "Een mes, cirkelzaag, paneelzaag of een haakse slijper met een metaalschijf.",
+        "cnc": "CNC-frezen",
+        "cncDesc": "Vormen, uitsparingen en groeven; met V-sneden vouw je hoeken en 3D-vormen.",
+        "drilling": "Boren en bevestigen",
+        "drillingDesc": "Laat zich boren en neemt schroeven op zonder te splijten.",
+        "painting": "Schilderen",
+        "paintingDesc": "Geschikt voor verf op water- en op solventbasis.",
+        "uv": "UV-printen",
+        "uvDesc": "Eigen grafische ontwerpen, in huis geprint door Re-Sound.",
+        "care": "Onderhoud",
+        "careDesc": "Stofzuigen met een zachte borstel; vlekken plaatselijk behandelen."
+      },
+      "material": {
+        "fromPanelTitle": "Gemaakt van het rPET Panel",
+        "panelLink": "rPET Panel: formaten, technische gegevens en de volledige absorptietabel"
+      },
+      "ordering": {
+        "title": "Minimumbestelling en levertijd",
+        "orderHead": "Bestelling",
+        "supplyHead": "Levering",
+        "minimumOrderPanel": "1 paneel",
+        "versionsValue": "Standard · FR (brandvertragend)",
+        "leadTimeValue": "≈ 3–4 werkweken",
+        "deliveryValue": "EXW Częstochowa, Polen",
+        "samplesValue": "Fysieke stalen op aanvraag",
+        "endOfLifeText": "100 % PET, één materiaal, recycleerbaar aan het einde van de levensduur.",
+        "showroom": "Showroom"
+      }
     }
   },
   "interiorPage": {
@@ -1437,43 +1538,22 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "GERECYCLEERDE PET AKOESTISCHE PANELEN",
-      "title": "rPET Groove: gegroefde PET akoestische panelen in 12 kleuren",
-      "tagline": "Van Flessen naar Stilte",
-      "description": "Transformeer je ruimte met rPET - Groove akoestische panelen. {pct, select, unknown {Gemaakt van gerecycleerde plastic flessen combineren deze} other {Gemaakt van {pct} % gerecycleerde plastic flessen combineren deze}} elegante gegroefde panelen hedendaags design met uitzonderlijke geluidsabsorptie. Efficiëntie ontmoet elegantie.",
+      "title": "rPET Groove: gegroefde PET akoestische panelen, tien voorraadkleuren en elke kleur op bestelling",
+      "tagline": "Gegroefde akoestische panelen, gefreesd uit het rPET Panel.",
+      "description": "rPET Groove wordt CNC-gefreesd uit het rPET Panel, een stijf akoestisch vilt {pct, select, unknown {gemaakt van gerecycleerde PET-flessen} other {gemaakt van {pct} % gerecycleerde PET-flessen}}. De zichtbare groefpatronen geven wanden en plafonds diepte en textuur, terwijl het vilt geluid absorbeert.",
       "usp1": "{pct, select, unknown {Gerecycleerde PET-flessen} other {{pct} % gerecycleerd PET}}",
-      "usp2": "Tot NRC 0.90",
-      "usp3": "12 Designerkleuren",
-      "colorSelector": "Kleur Kiezen",
-      "description2": ""
+      "usp2": "Gefreesd uit het rPET Panel",
+      "usp3": "{count, select, unknown {Voorraadkleuren, elke kleur op bestelling} other {{count} voorraadkleuren, elke kleur op bestelling}}",
+      "photoStrip": "Productfoto’s"
     },
     "overview": {
       "tag": "CIRCULAIR ONTWERP",
       "title": "Design Ontmoet Duurzaamheid",
-      "description": "rPET - Groove panelen brengen een eigentijdse touch in elke ruimte terwijl ze geluidsoverlast verminderen. Het zichtbare latdesign creëert visuele diepte en textuur, perfect voor moderne kantoren, vergaderruimtes, lobby's, restaurants en recepties.",
+      "description": "rPET Groove brengt textuur in kantoren, vergaderzalen, lobby’s, restaurants en ontvangstruimtes en vermindert de nagalm. De groeven worden in het rPET Panel gefreesd, dus materiaal, kleuren, bewerking en brandreactie zijn die van het paneel.",
       "feature1": "{pct, select, unknown {Gemaakt van gerecycleerde plastic flessen} other {Gemaakt van {pct} % gerecycleerde plastic flessen}}",
       "feature2": "CNC-gesneden groefpatronen",
-      "feature3": "Lichtgewicht en eenvoudig te hanteren",
-      "feature4": "Geschikt voor wanden en plafonds",
-      "description2": "rPET - Groove panelen brengen een hedendaagse touch in elke ruimte terwijl ze geluidsoverlast verminderen. Het zichtbare lamellendesign creëert visuele diepte en textuur, perfect voor moderne kantoren, vergaderzalen, lobby's, restaurants en receptiegebieden."
-    },
-    "fromBottles": {
-      "tag": "DE REIS",
-      "title": "Van Plastic Fles tot Akoestisch Paneel",
-      "step1Number": "01",
-      "step1Title": "Inzameling",
-      "step1Desc": "Gebruikte plastic flessen worden ingezameld en gesorteerd",
-      "step2Number": "02",
-      "step2Title": "Verwerking",
-      "step2Desc": "Flessen worden gereinigd, versnipperd en gesmolten tot PET-vezels",
-      "step3Number": "03",
-      "step3Title": "Vilten",
-      "step3Desc": "Vezels worden geperst tot dichte akoestische viltplaten",
-      "step4Number": "04",
-      "step4Title": "Afwerking",
-      "step4Desc": "CNC-precisie snijden creëert de kenmerkende groefpatronen",
-      "description": "Elk rPET - Groove paneel geeft een nieuw leven aan ongeveer 60 gerecycleerde plastic flessen. Ons productieproces transformeert post-consumer PET-afval in hoogperformant akoestisch vilt.",
-      "statLabel": "Gerecycleerde flessen per paneel",
-      "description2": "Elk rPET - Groove paneel geeft een nieuw leven aan ongeveer 60 gerecycleerde plastic flessen. Ons productieproces transformeert post-consumer PET-afval in hoogperformant akoestisch vilt, waardoor een werkelijk circulair product ontstaat."
+      "feature3": "Weegt een fractie van een houtplaat",
+      "feature4": "Geschikt voor wanden en plafonds"
     },
     "patterns": {
       "tag": "ONTWERPOPTIES",
@@ -1484,44 +1564,14 @@
       "description2": "Vier kenmerkende groefpatronen voor elke architecturale visie. Van strakke parallelle lijnen tot dynamische chevrons, elk patroon is nauwkeurig CNC-gesneden voor perfecte consistentie."
     },
     "colors": {
-      "title": "Meerdere Designerkleuren",
-      "subtitle": "12 kleuren die elk interieur aanvullen",
-      "tag": "PALET",
-      "feature1": "UV-bestendig",
-      "feature1Desc": "Kleuren blijven levendig zelfs in zonbeschenen ruimtes",
-      "feature2": "Eenvoudig schoon te maken",
-      "feature2Desc": "Stofzuigen of afvegen met vochtige doek",
-      "feature3": "Consistentie gegarandeerd",
-      "feature3Desc": "Batch-tot-batch kleurconsistentie gegarandeerd",
-      "description2": "Van neutrale tinten tot gedurfde accenten past onze kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert.",
-      "description": "Van neutrale tinten tot gedurfde accenten past onze gecureerde kleurenpalet naadloos in elk interieurconcept. Alle kleuren worden bereikt door dope-verving, wat uitstekende kleurechtheid en UV-bestendigheid garandeert."
-    },
-    "thickness": {
-      "title": "Kies Dikte",
-      "subtitle": "Drie diktes voor verschillende akoestische behoeften",
-      "tag": "DIKTE",
-      "sectionTitle": "Dikte Kiezen"
+      "title": "Tien kleuren uit voorraad, elke kleur op bestelling",
+      "tag": "Kleuren",
+      "description": "Het kleurengamma is dat van het rPET Panel: tien voorraadkleuren, genummerd 01–10, en elke andere kleur op bestelling. De productfoto’s hierboven tonen eerdere kleurstellingen; specificeer op basis van de genummerde stalen."
     },
     "acoustics": {
-      "tag": "PRESTATIES",
-      "title": "Superieure Geluidsabsorptie",
-      "description": "Het unieke groefontwerp gecombineerd met hoogdicht gerecycleerd PET-vilt zorgt voor uitzonderlijke geluidsabsorptie. Verminder echo, elimineer geluid.",
-      "benefit1Title": "Verminderde Nagalm",
-      "benefit1": "Echo beheersen en spraakverstaanbaarheid verbeteren",
-      "benefit2Title": "Meer Comfort",
-      "benefit2": "Rustigere, meer vredige omgevingen creëren",
-      "benefit3Title": "Geteste Prestaties",
-      "benefit3": "Onafhankelijk geverifieerde akoestische gegevens",
-      "diagramTitle": "Dwarsdoorsnede",
-      "layer1Name": "Gegroefd Oppervlak",
-      "layer1Desc": "CNC-gesneden patroon voor visuele diepte",
-      "layer2Name": "Hoogdicht PET-kern",
-      "layer2Desc": "Geluidsabsorptielaag",
-      "layer3Name": "Montagevlak",
-      "layer3Desc": "Directe wand-/plafondbevestiging",
-      "waveLabel": "Geluidsgolven geabsorbeerd",
-      "certNote": "Getest volgens ISO 354 & ASTM C423",
-      "description2": "Het unieke groefontwerp gecombineerd met hoogdicht gerecycleerd PET-vilt zorgt voor uitzonderlijke geluidsabsorptie. Verminder echo, elimineer geluid en creëer ruimtes die comfortabel zijn voor zowel oor als oog."
+      "tag": "Akoestiek",
+      "description": "Noise reduction coefficient (NRC) per paneeldikte, uit onze productgegevens. Het vilt gedraagt zich zoals beschreven voor het rPET Panel: de montage en de spouw achter het paneel bepalen hoeveel wordt geabsorbeerd.",
+      "certNote": "Getest volgens ISO 354 & ASTM C423"
     },
     "installation": {
       "tag": "EENVOUDIGE INSTALLATIE",
@@ -1550,89 +1600,36 @@
       "badge2": "Volledig Recycleerbaar",
       "badge3": "Gratis Terugname",
       "badge4": "Gemaakt in Polen",
-      "recycledBottlesLabel": "Gerecycleerde flessen per paneel",
       "badge1Desc": "Gemaakt van post-consumer PET-flessen",
-      "badge2Desc": "Kan worden gerecycleerd aan het einde van de levensduur",
-      "badge3Desc": "Wij zamelen panelen in voor recycling",
-      "badge4Desc": "Korte toeleveringsketens, lage emissies",
-      "description2": "rPET - Groove panelen belichamen de circulaire economie. Volledig gemaakt van post-consumer gerecycleerd plastic, kunnen ze aan het einde van hun levensduur opnieuw worden gerecycleerd. Wij bieden gratis terugname."
+      "badge4Desc": "Korte toeleveringsketens, lage emissies"
     },
     "specs": {
       "tag": "TECHNISCH",
       "title": "Specificaties",
       "acousticsTitle": "Akoestische Prestaties",
-      "nrc12": "NRC (12mm)",
-      "nrc12Value": "0.55",
-      "nrc24": "NRC (24mm)",
-      "nrc24Value": "0.75",
-      "nrc36": "NRC (36mm)",
-      "nrc36Value": "0.90",
-      "testStandard": "Testnorm",
-      "testStandardValue": "ISO 354 / ASTM C423",
       "fireTitle": "Brandveiligheid",
-      "fireEU": "Europees",
-      "fireEUValue": "B-s1, d0",
-      "fireUS": "VS (ASTM E-84)",
-      "fireUSValue": "Klasse A",
-      "fireUK": "VK (BS 476)",
-      "fireUKValue": "Klasse 0",
-      "fireDE": "Duitsland (DIN 4102)",
-      "fireDEValue": "B1",
-      "certsTitle": "Certificeringen",
+      "certsTitle": "Certificaten en einde levensduur",
       "certHealth": "Gezondheid",
-      "certHealthValue": "OEKO-TEX® Standard 100",
-      "certEnv": "Milieu",
-      "certEnvValue": "EPD beschikbaar",
-      "certVOC": "Lage emissies / E1",
-      "certVOCValue": "Lage emissie / E1",
-      "certRecycled": "Gerecycleerd materiaal",
-      "certRecycledValue": "Post-consumer PET-flessen",
       "applicationsTitle": "Toepassingen",
       "appInstall": "Installatie",
-      "appInstallValue": "Wanden & Plafonds",
-      "appEnv": "Omgeving",
-      "appEnvValue": "Interieur (droge ruimtes)",
-      "appIdeal": "Ideaal voor",
-      "appIdealValue": "Kantoren, Vergaderruimtes, Lobby's",
-      "appSuitable": "Ook geschikt voor",
-      "appSuitableValue": "Restaurants, Hotels, Scholen",
       "dimensionsTitle": "Afmetingen",
-      "widthValue": "600 / 1200 mm",
-      "lengthValue": "600 / 1200 / 2400 mm",
-      "thicknessValue": "12 / 24 / 36 mm",
-      "weightValue": "2,5 - 7,5 kg/m²",
-      "densityValue": "200-250 kg/m³",
       "materialTitle": "Materiaal",
       "dimPanelWidth": "Breedte paneel",
       "dimPanelLength": "Lengte paneel",
-      "dimThickness": "Dikte",
       "dimGrooveDepth": "Groepdiepte",
-      "dimWeight": "Gewicht",
-      "acNRC12": "NRC (12mm)",
-      "acNRC24": "NRC (24mm)",
-      "acNRC36": "NRC (36mm)",
       "matComposition": "Samenstelling",
-      "matBinder": "Bindmiddel",
-      "matRecycled": "Gerecycleerd materiaal",
-      "matFireClass": "Brandklasse",
-      "matEmissions": "VOS-emissies",
-      "fireCert": "Certificering",
-      "appWalls": "Wandpanelen",
-      "appCeilings": "Plafondpanelen",
       "appEnvironment": "Omgeving",
-      "matRecycledPET": "Gerecycleerd PET-vilt",
+      "matRecycledPET": "100 % gerecycleerd PET-vilt (rPET Panel)",
       "matDensity": "Dichtheid",
       "colorsLabel": "Kleuren",
-      "colorsVal": "12 standaardkleuren",
       "customColors": "Aangepaste kleuren",
-      "customColorsVal": "Beschikbaar (MOQ van toepassing)",
-      "certEPD": "EPD beschikbaar",
-      "certGRS": "Post-consumer PET-flessen",
+      "customColorsVal": "Op bestelling op basis van een RAL- of NCS-referentie of een staal; minimumhoeveelheden op aanvraag",
       "appIdealFor": "Ideaal voor",
       "appIdealVal": "Kantoren, Vergaderzalen, Lobby's",
       "appAlso": "Ook geschikt",
       "appAlsoVal": "Restaurants, Hotels, Scholen",
-      "nrcByThickness": "NRC (per dikte)"
+      "nrcByThickness": "NRC (per dikte)",
+      "fireReports": "Classificatierapporten"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1663,195 +1660,126 @@
       "questions": {
         "oekoTex": {
           "question": "Is het gerecycleerde PET gecertificeerd?",
-          "answer": "Ja. Alle rPET-panelen zijn OEKO-TEX® Standard 100 gecertificeerd — verifieert de afwezigheid van schadelijke stoffen. VOC-emissies zijn getest op het Franse A+ (de strengste binnenluchtgraad)."
+          "answer": "Ja. De rPET-panelen hebben een OEKO-TEX® Standard 100-certificaat, op aanvraag beschikbaar. Het paneel is 100 % gerecycleerd PET-vilt: één materiaal, recycleerbaar aan het einde van de levensduur."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Volgens EN 13501-1 is rPET Groove geclassificeerd als {groove}. Het brandcertificaat vind je in het downloadblok op deze pagina; de andere rPET-modellen vermelden hun eigen klasse op hun eigen pagina."
+          "answer": "Volgens EN 13501-1 hangt de klasse af van de kleur: rPET Groove is geclassificeerd als {groove}, net als het rPET Panel waaruit het gefreesd wordt. Classificatierapporten op aanvraag."
         },
         "processability": {
           "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
-          "answer": "Ja. rPET gedraagt zich als MDF op standaard houtbewerkingsmachines: zagen met cirkelzaag of CNC-router, boren met spiraalboren, schilderen met water- of solventgebonden afwerkingen. Geen speciale beschermingsuitrusting nodig."
+          "answer": "Ja. rPET Groove wordt gefreesd uit het rPET Panel en bewerk je op dezelfde manier: zagen met een zaag of haakse slijper met metaalschijf, CNC-frezen, boren en schroeven zonder splijten, schilderen met verf op water- of solventbasis."
         },
         "colorRange": {
           "question": "Hoeveel kleuren zijn er beschikbaar?",
-          "answer": "12 designerkleuren zijn op voorraad voor de rPET Groove- en Flex-Groove-lijnen; de rPET Panel-lijn is beschikbaar in 16 kleuren. Aangepaste kleuren kunnen geproduceerd worden voor projecten boven 200 m²."
+          "answer": "Tien voorraadkleuren (01–10) zijn altijd beschikbaar, vanaf één paneel. Elke andere kleur maken we op bestelling op basis van een RAL- of NCS-referentie of een fysiek staal; minimumhoeveelheden op aanvraag. Het gamma is hetzelfde voor rPET Panel, rPET Groove en rPET Flex Groove."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
+          "answer": "Ongeveer 3–4 werkweken, zoals voor het rPET Panel. De minimumbestelling is één paneel, prijzen zijn op aanvraag en de levering is EXW Częstochowa, Polen."
         }
       }
     },
     "alt": {
       "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove akoestisch paneel in een modern kantoor",
       "panelInstallationProcess": "Installatieproces van het paneel",
-      "recycledMaterials": "Gerecycleerde materialen"
+      "recycledMaterials": "Gerecycleerde materialen",
+      "productPhoto": "rPET Groove productfoto {n}"
     },
     "options": {
       "lineDesc": "Strakke parallelle lijnen",
       "waveDesc": "Organische, vloeiende curven",
       "chevronDesc": "Dynamisch V-patroon",
       "gridDesc": "Moderne kruisende lijnen",
-      "12mmDesc": "Standaard absorptie",
-      "24mmDesc": "Verhoogde absorptie",
-      "36mmDesc": "Maximale absorptie",
       "lineGrooves": "Verticaal",
       "waveGrooves": "Gebogen",
       "chevronGrooves": "Schuin",
-      "gridGrooves": "Gekruist"
+      "gridGrooves": "Gekruist",
+      "lineName": "Lijn",
+      "waveName": "Golf",
+      "chevronName": "Chevron",
+      "gridName": "Raster"
+    },
+    "material": {
+      "tag": "Materiaal",
+      "description": "Elk rPET Groove-paneel begint als een rPET Panel: stijf vilt van gerecycleerde PET-flessen, te bewerken als een houtplaat. Het groefpatroon wordt erin gefreesd.",
+      "layer1Title": "rPET Panel-vilt",
+      "layer1Desc": "{pct, select, unknown {Gerecycleerd PET-vilt} other {{pct} % gerecycleerd PET-vilt}}, ongeveer 200 kg/m³, in een Standard- of een brandvertragende (FR) versie.",
+      "layer2Title": "CNC-gefreesde groeven",
+      "layer2Desc": "Het patroon wordt in het vilt gefreesd: vier patronen, zie hieronder.",
+      "layer3Title": "Kleur",
+      "layer3Desc": "Tien voorraadkleuren vanaf één paneel; elke andere kleur op bestelling op basis van een RAL- of NCS-referentie."
+    },
+    "ordering": {
+      "description": "Minimumbestelling, levertijd en levering volgen het rPET Panel waaruit de groeven worden gefreesd."
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "GERECYCLEERDE PET AKOESTISCHE PANELEN",
       "title": "rPET Panel: het gerecycleerde PET akoestische paneel dat u bewerkt als MDF",
-      "tagline": "Duurzame Stilte, Eindeloze Mogelijkheden",
-      "description": "Transformeer elke ruimte met rPET - Panel akoestische panelen. {pct, select, unknown {Gemaakt van gerecycleerde PET-flessen leveren deze} other {Gemaakt van {pct} % gerecycleerde PET-flessen leveren deze}} lichtgewicht maar krachtige geluidsabsorbers maximale akoestische prestaties met minimale milieu-impact.",
+      "tagline": "Het gerecycleerde PET-viltpaneel dat je bewerkt als MDF.",
+      "description": "rPET Panel is een stijve akoestische viltplaat, gemaakt van {pct, select, unknown {gerecycleerde PET-flessen} other {{pct} % gerecycleerde PET-flessen}}. Het absorbeert geluid over het hele oppervlak, weegt een fractie van een houtplaat en bewerk je met standaard werkplaatsgereedschap: zagen, frezen en boren, daarna schilderen of UV-printen.",
       "usp1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}",
-      "usp2": "αw tot 1,00",
-      "usp3": "Slechts 3-4 kg/m²",
-      "colorSelector": "Kleur Kiezen",
-      "colorSelectorPlaceholder": "Kies een kleur"
+      "usp2": "Te bewerken als MDF",
+      "usp3": "Standard- en FR-versie"
     },
     "overview": {
-      "tag": "CIRCULAIR ONTWERP",
-      "title": "Vijf Redenen voor rPET",
-      "reason1Title": "Eenvoudig te Hanteren",
-      "reason1": "Lichtgewicht panelen die iedereen kan installeren zonder zware apparatuur",
-      "reason2Title": "Mensvriendelijk",
-      "reason2": "OEKO-TEX® gecertificeerd, veilig voor alle omgevingen inclusief scholen en zorg",
-      "reason3Title": "Eindeloze Mogelijkheden",
-      "reason3": "CNC-bewerkbaar, freesbaar, boorbaar — gebruik het zoals MDF zonder de nadelen",
-      "reason4Title": "Druk je Stijl Uit",
-      "reason4": "50+ kleuren die aansluiten bij elke interieurbeleving",
-      "reason5Title": "Meer Opties?",
-      "reason5": "Combineer met rPET Groove voor een volledig designsysteem",
-      "description": "rPET - Panel transformeert gerecycleerde PET-flessen in hoogperformante akoestische panelen. Elk paneel houdt plastic afval weg van stortplaatsen terwijl het gezondere, stillere omgevingen creëert. Het is het geluidsabsorberende alternatief voor MDF — maar een fractie van het gewicht.",
+      "tag": "Overzicht",
+      "title": "Wanden, plafonds, ruimteverdelers en akoestisch meubilair",
+      "description": "Gebruikt voor wand- en plafondpanelen, ruimteverdelers en akoestisch meubilair. Twee diktes, twee formaten, een Standard- en een brandvertragende (FR) versie. Gemaakt in Polen (Częstochowa).",
       "feature1": "{pct, select, unknown {Gemaakt van gerecycleerde PET-flessen} other {Gemaakt van {pct} % gerecycleerde PET-flessen}}",
-      "feature2": "Volledig recycleerbaar aan het einde van de levensduur",
-      "feature3": "Lichtgewicht: slechts 3-4 kg/m²",
-      "feature4": "Vrij van chemische bindmiddelen"
-    },
-    "process": {
-      "tag": "HOE HET GEMAAKT WORDT",
-      "title": "Ontwerp, Construeer, Bouw",
-      "description": "rPET Panel kan precies zoals MDF worden verwerkt. Zagen, frezen, boren, buigen — je verwerker heeft geen nieuw gereedschap of technieken nodig."
+      "feature2": "Absorbeert geluid over het hele oppervlak",
+      "feature3": "Weegt een fractie van een houtplaat",
+      "feature4": "Zagen, frezen, boren, schilderen of UV-printen met standaard werkplaatsgereedschap"
     },
     "workability": {
-      "tag": "EENVOUDIG TE BEWERKEN",
-      "step1Title": "Zagen",
-      "step1": "Nauwkeurige vormen en profielen met standaard CNC-apparatuur",
-      "step2Title": "CNC Zagen & Frezen",
-      "step2": "Directe bevestigingen zonder voorboren of speciale ankers",
-      "step3Title": "Boren & Schroeven",
-      "step3": "Maak rondingen en hoeken met eenvoudige V-snede techniek",
-      "title": "Bewerkbaar als MDF, Licht als een Veer",
-      "description": "rPET - Panel combineert de bewerkbaarheid van MDF met een ongelooflijk licht gewicht. Zaag het, frees het op CNC, boor het, maak V-sneden — het materiaal verwerkt prachtig met standaard werkplaatsgereedschap.",
-      "step1Desc": "Handmatig of elektrisch — nette sneden elke keer",
-      "step2Desc": "Nauwkeurige vormen en aangepaste profielen",
-      "step3Desc": "Veilige bevestiging zonder splijten",
-      "step4Title": "V-snede Buigen",
-      "step4Desc": "3D-vormen en hoeken maken",
-      "quote": "Je merkt al snel dat rPET - Panel net zo snel en gemakkelijk te verwerken is als een MDF-plaat."
+      "description": "rPET Panel bewerk je met standaard werkplaatsgereedschap, net als een houtplaat."
     },
     "acoustics": {
-      "tag": "PRESTATIES",
-      "title": "Beste Geluidsabsorptie in zijn Klasse",
-      "benefit1Title": "Spraakverstaanbaarheid",
-      "benefit1": "Verstaanbaarheid aanzienlijk verbeteren in vergaderzalen en klassen",
-      "benefit2Title": "Stressreductie",
-      "benefit2": "Rustigere omgevingen creëren die welzijn en productiviteit stimuleren",
-      "benefit3Title": "Privacy",
-      "benefit3": "Geluidsoverdracht tussen ruimtes verminderen voor vertrouwelijke gesprekken",
-      "description": "rPET - Panel behaalt de maximaal mogelijke akoestische absorptiewaarde. De unieke vezelstructuur vangt en dissipeert geluidsenergie, waardoor de nagalm aanzienlijk wordt verminderd en de spraakverstaanbaarheid verbetert.",
-      "howItWorks": "Hoe het Werkt",
-      "fiberLabel": "Gecomprimeerde PET-vezels",
-      "fiberSublabel": "Geluidsenergie omgezet in warmte",
-      "panelThickness": "Paneldikte",
-      "testStandard": "Testnorm",
-      "testConfig": "Testconfiguratie: 24 mm paneel op een 50 mm frame met polyesterwol-isolatie",
-      "certNote": "Onafhankelijk getest en gecertificeerd volgens ISO 11654",
-      "fireClassLabel": "Brandklasse (EN 13501-1)"
+      "tag": "Akoestiek"
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
       "title": "Akoestisch Comfort, Milieurespect",
       "cert1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd materiaal}}",
       "cert2": "Volledig recycleerbaar",
-      "cert3": "OEKO-TEX® Standard 100",
-      "cert4": "Klasse A+ Emissies",
+      "cert3": "Eén materiaal",
+      "cert4": "Gratis terugname",
       "badge1Desc": "Gemaakt van post-consumer PET-flessen",
       "badge2Desc": "Volledige materiaalherstel aan einde levensduur",
-      "description": "rPET - Panel belichaamt de circulaire economie. {pct, select, unknown {Elk paneel is gemaakt van gerecycleerde PET-flessen} other {Elk paneel bevat {pct} % gerecycleerde PET-flessen}}, en aan het einde van zijn levensduur kan het volledige paneel opnieuw worden gerecycleerd. Geen afval, geen compromissen.",
-      "cert3Desc": "Klasse 1 gecertificeerd voor menselijke veiligheid",
-      "cert4Desc": "Geen VOS of formaldehyde (ISO 16000)"
+      "description": "{pct, select, unknown {Gemaakt van gerecycleerde PET-flessen} other {Gemaakt van {pct} % gerecycleerde PET-flessen}} en 100 % PET: één materiaal, recycleerbaar aan het einde van de levensduur, en Re-Sound neemt de panelen terug.",
+      "cert3Desc": "100 % PET, één materiaal, recycleerbaar aan het einde van de levensduur."
     },
     "specs": {
       "tag": "TECHNISCH",
       "title": "Specificaties",
-      "acousticsTitle": "Akoestische Prestaties",
-      "physicalTitle": "Fysieke Eigenschappen",
-      "fireTitle": "Brandveiligheid",
-      "healthTitle": "Gezondheid & Milieu",
-      "colorsTitle": "Kleuren & Afwerkingen",
-      "dimensionsTitle": "Afmetingen",
-      "dimStandard": "Standaard paneel",
-      "dimCustomMax": "Aangepast maximum",
-      "dimThicknessOptions": "Dikteoptis",
-      "dimCustomThickness": "Aangepaste dikte",
+      "acousticsTitle": "Akoestiek (paneel 12 mm)",
+      "fireTitle": "Brandreactie",
+      "healthTitle": "Certificaten en einde levensduur",
+      "dimensionsTitle": "Afmetingen en gewicht",
       "physMaterial": "Materiaal",
-      "physWeight12": "Gewicht (12mm)",
-      "physWeight24": "Gewicht (24mm)",
-      "fireEuClass": "Europese classificatie",
-      "fireGerman": "Duitse norm",
       "healthOekoTex": "OEKO-TEX®",
-      "healthFormaldehyde": "Formaldehyde",
-      "healthBinders": "Chemische bindmiddelen",
       "colorStandard": "Standaardkleuren",
-      "colorCustom": "Aangepaste kleuren",
-      "finishOptions": "Afwerkingsopties",
-      "recyclability": "Recycleerbaarheid",
-      "vocEmissions": "VOS-emissies",
-      "anyRalNcs": "Elke RAL / NCS",
-      "finishOptionsVal": "Stof, HPL, Fineer, Print"
-    },
-    "sample": {
-      "title": "Vraag uw stalenpakket aan",
-      "description": "Ervaar de kwaliteit van rPET - Panel zelf. Ons gepersonaliseerd stalenpakket bevat kleurstalen, dikteopties en afwerkingstalen om u te helpen de perfecte keuze te maken.",
-      "tag": "AAN DE SLAG",
-      "cta": "Gratis Stalen Aanvragen"
+      "generalTitle": "Algemeen",
+      "formats": "Formaten",
+      "surfaceWeight": "Oppervlaktegewicht (9 / 12 mm)",
+      "panelWeight2800": "Paneel 2 800 × 1 220 mm (9 / 12 mm)",
+      "panelWeight2440": "Paneel 2 440 × 1 220 mm (9 / 12 mm)",
+      "physMaterialVal": "100 % gerecycleerd PET-vilt",
+      "acousticsMounting": "Gemeten op",
+      "acousticsMountingVal": "Paneel 12 mm (2,4 kg/m²); maximum met spouw 50 mm en steenwol 50 mm",
+      "acoustics9mm": "Paneel 9 mm",
+      "fireReports": "Classificatierapporten"
     },
     "gallery": {
       "tag": "INSPIRATIE",
       "title": "Projecten & Installaties"
     },
-    "why": {
-      "tag": "WAAROM rPET - PANEL",
-      "description": "Ontdek waarom architecten, designers en akoestisch adviseurs rPET - Panel kiezen voor hun meest veeleisende projecten.",
-      "reason1Title": "Ecoacoustisch",
-      "reason1": "Gemaakt van gerecycleerde PET-flessen, volledig recycleerbaar en bijdragend aan een circulaire economie.",
-      "reason2Title": "Uitstekend",
-      "reason2": "Geluidsabsorptie tot αw 1,00 — de hoogst mogelijke beoordeling voor geluidsabsorptie.",
-      "reason3Title": "Eenvoudig te Hanteren",
-      "reason3": "Lichtgewicht en stabiel. Zagen, boren, frezen en installeren met standaard gereedschap.",
-      "reason4Title": "Mensvriendelijk",
-      "reason4": "Antistatisch, huidvriendelijk, antiallergeen. Geen VOS- of formaldehydeemissies.",
-      "reason5Title": "Eindeloze Mogelijkheden",
-      "reason5": "5 standaardkleuren plus elk RAL/NCS. Voeg stof, laminaat, fineer of aangepaste prints toe.",
-      "title": "Vijf Redenen voor rPET"
-    },
     "colors": {
-      "tag": "KLEUROPTIES",
-      "title": "Druk je Stijl Uit",
-      "description": "Kies uit 5 verfijnde standaardkleuren of specificeer elke kleur uit het RAL- of NCS-palet. Elke tint behoudt dezelfde uitstekende akoestische prestaties.",
-      "anyColor": "Elke Kleur",
-      "moreOptionsTitle": "Meer Opties?",
-      "moreOptionsDesc": "Alle basiskleuren kunnen worden gecombineerd met afwerkingslagen zoals akoestische stoffen, HPL-laminaat, echt houtfineer of aangepaste prints — zonder de akoestische prestaties te compromitteren.",
-      "fabric1": "Akoestische Stoffen",
-      "fabric2": "HPL/CPL Laminaat",
-      "fabric3": "Echt Houtfineer",
-      "fabric4": "Aangepaste Print"
+      "tag": "Kleuren",
+      "title": "Tien kleuren uit voorraad, elke kleur op bestelling",
+      "description": "Het kleurengamma van de rPET Panel-datasheet: tien voorraadkleuren, genummerd 01–10, en elke andere kleur op bestelling."
     },
     "applications": {
       "tag": "TOEPASSINGEN",
@@ -1869,16 +1797,6 @@
       "label2": "Kantoren",
       "label3": "Horeca"
     },
-    "nav": {
-      "overview": "Overzicht",
-      "colors": "Kleuren",
-      "applications": "Toepassingen",
-      "acoustics": "Akoestiek",
-      "processing": "Verwerking",
-      "specifications": "Specificaties",
-      "gallery": "Galerij",
-      "downloads": "Downloads"
-    },
     "downloads": {
       "installationGuide": "Installatiehandleiding",
       "acousticTestReport": "Akoestisch Testrapport (ISO 354)",
@@ -1892,23 +1810,23 @@
       "questions": {
         "oekoTex": {
           "question": "Is het gerecycleerde PET gecertificeerd?",
-          "answer": "Ja. Alle rPET-panelen zijn OEKO-TEX® Standard 100 gecertificeerd — verifieert de afwezigheid van schadelijke stoffen. VOC-emissies zijn getest op het Franse A+ (de strengste binnenluchtgraad)."
+          "answer": "Ja. De rPET-panelen hebben een OEKO-TEX® Standard 100-certificaat, op aanvraag beschikbaar. Het paneel is 100 % gerecycleerd PET-vilt: één materiaal, recycleerbaar aan het einde van de levensduur."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Volgens EN 13501-1 is rPET Panel geclassificeerd als {panel}. Het brandcertificaat vind je in het downloadblok op deze pagina; de andere rPET-modellen vermelden hun eigen klasse op hun eigen pagina."
+          "answer": "Volgens EN 13501-1 hangt de klasse af van de kleur: rPET Panel is geclassificeerd als {panel}, zowel in de Standard- als in de FR-versie. Classificatierapporten op aanvraag."
         },
         "processability": {
           "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
-          "answer": "Ja. rPET gedraagt zich als MDF op standaard houtbewerkingsmachines: zagen met cirkelzaag of CNC-router, boren met spiraalboren, schilderen met water- of solventgebonden afwerkingen. Geen speciale beschermingsuitrusting nodig."
+          "answer": "Ja. rPET Panel werkt als een houtplaat: zaag het met een mes, cirkelzaag, paneelzaag of haakse slijper met metaalschijf; frees vormen, uitsparingen en groeven op een CNC; boor het en draai er schroeven in zonder splijten; schilder het met verf op water- of solventbasis, of laat Re-Sound het UV-printen."
         },
         "colorRange": {
           "question": "Hoeveel kleuren zijn er beschikbaar?",
-          "answer": "12 designerkleuren zijn op voorraad voor de rPET Groove- en Flex-Groove-lijnen; de rPET Panel-lijn is beschikbaar in 16 kleuren. Aangepaste kleuren kunnen geproduceerd worden voor projecten boven 200 m²."
+          "answer": "Tien voorraadkleuren (01–10) zijn altijd beschikbaar, vanaf één paneel. Elke andere kleur maken we op bestelling op basis van een RAL- of NCS-referentie of een fysiek staal; minimumhoeveelheden voor kleuren op bestelling op aanvraag. Hetzelfde gamma geldt voor rPET Groove en rPET Flex Groove."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
+          "answer": "Ongeveer 3–4 werkweken. De minimumbestelling is één paneel, prijzen zijn op aanvraag en de levering is EXW Częstochowa, Polen."
         }
       }
     },
@@ -1919,19 +1837,13 @@
       "acousticTreatmentInRestaurant": "Akoestische behandeling in een restaurant",
       "cncProcessingOfRpetPanels": "CNC-bewerking van rPET-panelen",
       "recycledPetBottles": "Gerecycleerde PET-flessen",
-      "rpetPanelSamplePanels": "rPET - Panel staalpanelen"
+      "rpetPanelSamplePanels": "rPET - Panel staalpanelen",
+      "rpetPanelHero": "Akoestische rPET Panel-viltpanelen in olijfgroen op een wand achter een sofa"
     },
-    "options": {
-      "midnightDesc": "Diep zwart, als een hemel bij maanlicht",
-      "titanDesc": "Karakteristiek donkergrijs, als staal",
-      "silverDesc": "Moderne industriële elegantie",
-      "marbleDesc": "Minimalistische lichtgrijze uitstraling",
-      "frostDesc": "Zuivere witte eenvoud",
-      "customDesc": "Elke kleur uit het RAL- of NCS-palet",
-      "12mmDesc": "Lichtgewicht oplossing",
-      "18mmDesc": "Uitgebalanceerde prestaties",
-      "24mmDesc": "Maximale absorptie",
-      "maximumLabel": "Maximaal"
+    "formats": {
+      "tag": "Technische gegevens",
+      "title": "Afmetingen en gewicht",
+      "description": "Twee formaten en twee diktes, in een Standard- en een brandvertragende (FR) versie."
     }
   },
   "rwoodGroovePage": {
@@ -2855,67 +2767,53 @@
     "hero": {
       "tag": "FLEXIBELE AKOESTISCHE PANELEN",
       "title": "rPET Flex Groove: flexibele PET akoestische panelen voor rondingen",
-      "tagline": "Buigen Zonder Breken",
-      "description": "De ultieme akoestische oplossing voor gebogen oppervlakken. Gemaakt van gerecycleerd PET-vilt met precisie V-snede groeven, passen deze flexibele panelen naadloos aan kolommen, gebogen wanden en elke architecturale vorm met een minimale straal van 500mm.",
-      "usp1": "Min. Straal 500mm",
-      "usp2": "Brandvertragend",
-      "usp3": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}",
-      "colorSelector": "Kleur Kiezen",
-      "colorPlaceholder": "Kies een kleur",
-      "description2": ""
+      "tagline": "Akoestische panelen met V-sneden voor rondingen, gesneden uit het 9 mm rPET Panel.",
+      "description": "rPET Flex Groove wordt gesneden uit het 9 mm rPET Panel: stijf vilt van gerecycleerde PET-flessen, met V-sneden zodat het rond kolommen, gebogen wanden en andere ronde elementen buigt. De V-sneden laten het geribde oppervlak achter dat het paneel zijn karakter geeft.",
+      "usp1": "Minimale buigstraal 500 mm",
+      "usp2": "Gesneden uit het 9 mm rPET Panel",
+      "usp3": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}"
     },
     "overview": {
       "tag": "INNOVATIE",
       "title": "Ontworpen voor Gebogen Oppervlakken",
-      "description": "Flex-Groove panelen bieden een veelzijdige akoestische oplossing voor gebogen oppervlakken, die moeiteloos aan elke vorm aanpassen.",
+      "description": "Flex Groove-panelen volgen gebogen oppervlakken, binnen- en buitenstralen: kolommen, gebogen wanden en ronde architecturale elementen. Het materiaal is het rPET Panel, dus kleuren, bewerking en brandreactie zijn die van het paneel.",
       "feature1": "Past zich aan elke gebogen ondergrond aan",
       "feature2": "Werkt met binnen- en buitenstralen",
       "feature3": "Geribbelde textuur voegt diepte en ritme toe",
-      "feature4": "Ingebouwde geluidsdempende eigenschappen",
-      "description2": "Flex-Groove panelen bieden een veelzijdige akoestische oplossing voor gebogen oppervlakken en passen zich moeiteloos aan elke vorm aan. Geschikt voor binnen- en buitenstralen, zorgt hun flexibele structuur voor naadloze overgangen langs wanden, kolommen en andere afgeronde architectonische elementen."
+      "feature4": "Ingebouwde geluidsdempende eigenschappen"
     },
     "technology": {
       "tag": "TECHNOLOGIE",
       "title": "V-Snede Flexibiliteitssysteem",
-      "description": "Elk paneel is voorzien van precisie V-sneden, zodat het kan buigen zonder te breken. Dit slimme snit creëert de kenmerkende geribbelde textuur.",
+      "description": "Met V-sneden vouw je hoeken en 3D-vormen: het paneel krijgt parallelle V-sneden waardoor het buigt zonder te breken, met een geribd reliëf aan het oppervlak.",
       "minRadius": "Minimale Buigstraal",
       "feature1Title": "Precisie V-Snede",
       "feature1Desc": "Technische groeven voor gecontroleerde flexibiliteit",
       "feature2Title": "Naadloze Rondingen",
       "feature2Desc": "Vloeiende overgangen op elke gebogen ondergrond",
-      "feature3Title": "Minimaal Afval",
-      "feature3Desc": "Efficiënt ontwerp vermindert snijafval",
+      "feature3Title": "Gesneden uit het 9 mm rPET Panel",
+      "feature3Desc": "Oppervlaktegewicht 1,8 kg/m²; gesneden uit een paneel van 2 800 × 1 220 of 2 440 × 1 220 mm.",
       "flatPanel": "Plat Paneel",
-      "curvedApp": "Gebogen Toepassing",
-      "description2": "Elk paneel is voorzien van precisie V-sneden, zodat het kan buigen zonder te breken. Dit slimme snit creëert de kenmerkende geribbelde textuur — een reeks lineaire groeven die flexibiliteit mogelijk maken terwijl ze het oppervlak een sculpturaal reliëf geven."
+      "curvedApp": "Gebogen Toepassing"
     },
     "colors": {
-      "tag": "VERFIJNDE COLLECTIE",
-      "title": "12 Zorgvuldig Geselecteerde Kleuren",
-      "description": "Onze zorgvuldig samengestelde kleurenpalet biedt veelzijdige opties voor elk interieur.",
-      "grooveDir": "Groefrichting",
-      "description2": "Ons zorgvuldig samengesteld kleurenpalet biedt veelzijdige opties voor elk interieur. Van zachte neutralen tot gedurfde kleuren, elke tint is ontworpen om moderne architectonische ruimtes te complementeren."
+      "tag": "Kleuren",
+      "title": "Tien kleuren uit voorraad, elke kleur op bestelling",
+      "description": "Het kleurengamma is dat van het rPET Panel: tien voorraadkleuren, genummerd 01–10, en elke andere kleur op bestelling.",
+      "grooveDir": "Groefrichting"
     },
     "acoustics": {
-      "tag": "PRESTATIES",
-      "title": "Geluidsdempende Eigenschappen",
-      "description": "Gemaakt van brandvertragend gerecycleerd PET-vilt bieden Flex-Groove panelen effectieve geluidsabsorptie met visuele continuïteit op gebogen oppervlakken.",
+      "tag": "Akoestiek",
+      "description": "Flex Groove behoudt het geluiddempende karakter van het vilt op gebogen oppervlakken. Het 9 mm paneel is nog niet gemeten, dus we geven geen αw- of NRC-waarde.",
       "feature1Title": "Geluidsdemping",
       "feature1Desc": "Vermindert echo en nagalm",
-      "feature2Title": "Brandvertragend",
-      "feature2Desc": "Ingebouwde brandveiligheid",
       "feature3Title": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd}}",
-      "feature3Desc": "Gemaakt van gerecycleerde plastic flessen",
-      "layer1Label": "Gerecycleerd PET-vilt",
-      "layer2Label": "Precisie V-sneden",
-      "thicknessLabel": "Dikte",
-      "materialLabel": "Brandvertragend PET-vilt",
-      "description2": "Gemaakt van brandvertragend gerecycleerd PET-vilt bieden Flex-Groove panelen effectieve geluidsabsorptie terwijl ze visuele continuïteit op gebogen oppervlakken behouden. De geribbelde textuur verbetert de akoestische prestaties."
+      "feature3Desc": "Gemaakt van gerecycleerde plastic flessen"
     },
     "installation": {
       "tag": "EENVOUDIGE INSTALLATIE",
       "title": "Veilige Montage, Eenvoudige Installatie",
-      "description": "Ontworpen om standaard vloer-tot-plafond hoogtes te overbruggen, vereenvoudigen de panelen uitlijning en verminderen installatietijd.",
+      "description": "De panelen worden verlijmd op de voorbereide gebogen ondergrond. Afgewerkte paneelmaten zijn op aanvraag.",
       "step1Title": "Ondergrond Voorbereiden",
       "step1Desc": "Zorg dat de gebogen ondergrond schoon en klaar is voor montage",
       "step2Title": "Lijm Aanbrengen",
@@ -2933,12 +2831,9 @@
       "badge1": "{pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}",
       "badge1Desc": "Gemaakt van gerecycleerde plastic flessen",
       "badge2": "Volledig Recycleerbaar",
-      "badge2Desc": "Kan worden gerecycleerd aan einde levensduur",
       "badge3": "Europese Productie",
-      "badge4": "Lage VOS",
-      "badge3Desc": "Korte aanvoerketen vanuit onze Poolse fabriek",
-      "badge4Desc": "Veilig voor binnenomgevingen",
-      "description2": ""
+      "badge4": "Gratis terugname",
+      "badge3Desc": "Korte aanvoerketen vanuit onze Poolse fabriek"
     },
     "specs": {
       "tag": "TECHNISCH",
@@ -2947,34 +2842,18 @@
       "flexibilityTitle": "Flexibiliteit",
       "materialTitle": "Materiaal",
       "fireTitle": "Brandveiligheid",
-      "certsTitle": "Certificeringen",
+      "certsTitle": "Certificaten en einde levensduur",
       "applicationsTitle": "Toepassingen",
-      "dimPanelLength": "Lengte",
-      "dimPanelWidth": "Breedte",
-      "dimThickness": "Dikte",
-      "dimWeight": "Gewicht",
-      "dimDensity": "Dichtheid",
       "flexMinRadius": "Minimale straal",
       "flexBendDir": "Buigrichting",
       "flexBendDirVal": "Binnen- & buitenstralen",
       "flexCutType": "Snijtype",
       "flexCutTypeVal": "Precisie V-snede",
       "matComposition": "Samenstelling",
-      "matCompositionVal": "FR PET-vilt",
-      "matRecycled": "Gerecycleerd materiaal",
-      "matFireRetardant": "Brandvertragend",
-      "matFireRetardantVal": "Ja (ingebouwd)",
+      "matCompositionVal": "100 % gerecycleerd PET-vilt",
       "matColorVar": "Kleurvariaties",
-      "matColorVarVal": "Mogelijk (gerecycleed materiaal)",
-      "fireRating": "Brandklasse",
-      "fireSmokeProduction": "Rookproductie",
-      "fireFlamingDroplets": "Vlammende druppels",
-      "fireFlamingDropletsVal": "d0 (geen)",
+      "matColorVarVal": "Lichte tintverschillen tussen batches zijn normaal",
       "certMaterial": "Materiaal",
-      "certVOC": "VOS-emissies",
-      "certVOCVal": "Lage emissies",
-      "certRecycled": "Gerecycleerd materiaal",
-      "certRecycledVal": "100 %",
       "appSurfaces": "Oppervlakken",
       "appSurfacesVal": "Wanden, kolommen, gebogen elementen",
       "appEnvironment": "Omgeving",
@@ -2982,7 +2861,13 @@
       "appInstallation": "Installatie",
       "appInstallationVal": "Lijmmontage",
       "appOrientation": "Oriëntatie",
-      "appOrientationVal": "Lengte / Breedte"
+      "appOrientationVal": "Lengte / Breedte",
+      "dimSource": "Gesneden uit",
+      "dimSourceVal": "9 mm rPET Panel (2 800 × 1 220 / 2 440 × 1 220 mm)",
+      "dimSurfaceWeight": "Oppervlaktegewicht",
+      "dimFinishedFormat": "Afgewerkt formaat",
+      "matColours": "Kleuren",
+      "fireReports": "Classificatierapporten"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -3006,13 +2891,11 @@
       "app1Desc": "Structurele kolommen bekleden met naadloze akoestische dekking",
       "app2Desc": "Organische wandvormen volgen voor continue dekking",
       "app3Desc": "Gebogen openingen en architectonische elementen bekleden",
-      "app4Desc": "Opvallende gebogen accentwanden creëren",
-      "description2": ""
+      "app4Desc": "Opvallende gebogen accentwanden creëren"
     },
     "cta": {
       "title": "Klaar om uw Akoestiek te Buigen?",
-      "description": "Vraag een offerte op maat voor uw project. Ons team helpt u de perfecte flex-oplossing te kiezen.",
-      "description2": "Vraag een offerte op maat voor uw project. Ons team helpt u de perfecte kleur te kiezen en uw behoeften te berekenen."
+      "description": "Vraag een offerte op maat voor uw project. Ons team helpt u de perfecte flex-oplossing te kiezen."
     },
     "cta2": {
       "freeNote": "Gratis stalen beschikbaar • Gemaakt in Polen • {pct, select, unknown {Gerecycleerd PET} other {{pct} % gerecycleerd PET}}"
@@ -3021,23 +2904,23 @@
       "questions": {
         "oekoTex": {
           "question": "Is het gerecycleerde PET gecertificeerd?",
-          "answer": "Ja. Alle rPET-panelen zijn OEKO-TEX® Standard 100 gecertificeerd — verifieert de afwezigheid van schadelijke stoffen. VOC-emissies zijn getest op het Franse A+ (de strengste binnenluchtgraad)."
+          "answer": "Ja. De rPET-panelen hebben een OEKO-TEX® Standard 100-certificaat, op aanvraag beschikbaar. Het paneel is 100 % gerecycleerd PET-vilt: één materiaal, recycleerbaar aan het einde van de levensduur."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Volgens EN 13501-1 is rPET Flex Groove geclassificeerd als {flex}. Het brandcertificaat vind je in het downloadblok op deze pagina; de andere rPET-modellen vermelden hun eigen klasse op hun eigen pagina."
+          "answer": "Volgens EN 13501-1 hangt de klasse af van de kleur: rPET Flex Groove is geclassificeerd als {flex}, net als het 9 mm rPET Panel waaruit het gesneden wordt. Classificatierapporten op aanvraag."
         },
         "processability": {
           "question": "Kunnen rPET-panelen worden gesneden, geboord of geschilderd?",
-          "answer": "Ja. rPET gedraagt zich als MDF op standaard houtbewerkingsmachines: zagen met cirkelzaag of CNC-router, boren met spiraalboren, schilderen met water- of solventgebonden afwerkingen. Geen speciale beschermingsuitrusting nodig."
+          "answer": "Ja. rPET Flex Groove wordt gesneden uit het 9 mm rPET Panel en vraagt hetzelfde gereedschap: zaag of haakse slijper met metaalschijf, CNC-frezen, boren en schroeven zonder splijten, verf op water- of solventbasis."
         },
         "colorRange": {
           "question": "Hoeveel kleuren zijn er beschikbaar?",
-          "answer": "12 designerkleuren zijn op voorraad voor de rPET Groove- en Flex-Groove-lijnen; de rPET Panel-lijn is beschikbaar in 16 kleuren. Aangepaste kleuren kunnen geproduceerd worden voor projecten boven 200 m²."
+          "answer": "Tien voorraadkleuren (01–10) zijn altijd beschikbaar, vanaf één paneel. Elke andere kleur maken we op bestelling op basis van een RAL- of NCS-referentie of een fysiek staal; minimumhoeveelheden op aanvraag. Het gamma is hetzelfde voor rPET Panel, rPET Groove en rPET Flex Groove."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadkleuren leveren we binnen 2–3 weken; aangepaste kleuren binnen 5–6 weken. Grote projecten (>500 m²) plannen we in productiebatches — neem contact op voor een bindende datum."
+          "answer": "Ongeveer 3–4 werkweken, zoals voor het rPET Panel. Minimumbestelling, afgewerkte maten en levering zijn op aanvraag."
         }
       }
     },
@@ -3046,13 +2929,25 @@
       "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove akoestisch paneel op een gebogen oppervlak",
       "rpetFlexGrooveColorOptions": "Kleuropties van rPET Flex-Groove",
       "flexGroovePanelInstallation": "Installatie van het Flex-Groove paneel",
-      "recycledPetBottles": "Gerecycleerde PET-flessen"
+      "rpetFlexGrooveCurvedWalls": "rPET Flex Groove-panelen op gebogen wanden in een vergaderruimte"
     },
     "options": {
       "lengthDesc": "De groeven lopen in de lengterichting van het paneel",
       "widthDesc": "De groeven lopen in de breedterichting van het paneel",
       "lengthName": "In de lengte",
       "widthName": "In de breedte"
+    },
+    "buildUp": {
+      "layer1Title": "9 mm rPET Panel",
+      "layer1Desc": "{pct, select, unknown {Gerecycleerd PET-vilt} other {{pct} % gerecycleerd PET-vilt}}, 1,8 kg/m², gesneden uit een paneel van 2 800 × 1 220 of 2 440 × 1 220 mm.",
+      "layer2Title": "V-sneden",
+      "layer2Desc": "Parallelle V-sneden laten het paneel buigen; minimale buigstraal 500 mm.",
+      "layer3Title": "Gerib oppervlak",
+      "layer3Desc": "De sneden laten een lijnvormig reliëf achter, in de lengte of in de breedte, in tien voorraadkleuren of elke kleur op bestelling."
+    },
+    "ordering": {
+      "description": "De levertijd is die van het rPET Panel waaruit de Flex Groove wordt gesneden; minimumbestelling, afgewerkte maten en levering op aanvraag.",
+      "sizesValue": "Gesneden uit het 9 mm rPET Panel (2 800 × 1 220 of 2 440 × 1 220 mm); afgewerkte maten op aanvraag"
     }
   },
   "legal": {
@@ -4043,15 +3938,15 @@
     },
     "rpet-panel": {
       "mounting": "Rechtstreeks vastschroeven of verlijmen, geen voorboren nodig",
-      "leadTime": "2–3 weken (voorraadkleuren), 5–6 weken op maat"
+      "leadTime": "≈ 3–4 werkweken"
     },
     "rpet-groove": {
       "mounting": "Lijm, Z-clips, schroeven of latten",
-      "leadTime": "2–3 weken (voorraadkleuren), 5–6 weken op maat"
+      "leadTime": "≈ 3–4 werkweken"
     },
     "rpet-flex-groove": {
       "mounting": "Verlijming op gebogen ondergronden",
-      "leadTime": "2–3 weken (voorraadkleuren), 5–6 weken op maat"
+      "leadTime": "≈ 3–4 werkweken"
     },
     "solo-flex": {
       "mounting": "Vrijstaand, gemonteerd geleverd",

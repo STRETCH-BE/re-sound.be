@@ -26,12 +26,12 @@
     "rwoodMicroDescription": "Mikroperforerte akustikkpaneler i tre (fra 0,5 mm) med FSC-sertifisert finer: nesten usynlig mønster, brannklasse {fireClass}, etter mål opptil 3 050 × 1 220 mm.",
     "rwoodVeneerTitle": "rWood Panel — finerte akustikkpaneler, 12 trefinérer | Re-Sound",
     "rwoodVeneerDescription": "Glatte finerte akustikkpaneler i 12 finérer av ekte tre, Nature- eller Gemini-serie: FSC®-sertifisert, naturlakk eller pigmentert, HPL, folie eller maling. Fabrikkbehandlet, enhver finér på bestilling.",
-    "rpetGrooveTitle": "rPET Groove — rillede PET-akustikkpaneler, 12 farger | Re-Sound",
-    "rpetGrooveDescription": "Rillede PET-akustikkpaneler av resirkulerte flasker: 12 farger, 3 tykkelser (12/24/36 mm), NRC opptil 0,90, brannklasse B-s1,d0. Laget i Polen.",
-    "rpetPanelTitle": "rPET Panel — resirkulert PET-akustikkpanel, 16 farger | Re-Sound",
-    "rpetPanelDescription": "Akustikkpanel i resirkulert PET som kan bearbeides som MDF: kapp, fres, bor og mal. 16 farger, 12/18/24 mm, OEKO-TEX®-sertifisert. Laget i Polen.",
-    "rpetFlexGrooveTitle": "rPET Flex Groove — fleksible PET-akustikkpaneler | Re-Sound",
-    "rpetFlexGrooveDescription": "Fleksible PET-akustikkpaneler for buede vegger, søyler og himlinger: V-skårne riller, minste radius 500 mm, 12 farger, OEKO-TEX®-sertifisert.",
+    "rpetGrooveTitle": "rPET Groove — sporfreste PET-paneler, 10 lagerfarger | Re-Sound",
+    "rpetGrooveDescription": "Sporfreste PET-akustikkpaneler frest ut av rPET Panel: 10 lagerfarger og enhver farge på bestilling, 12/24/36 mm, NRC opptil 0,90, brannreaksjon etter farge (EN 13501-1). Laget i Polen.",
+    "rpetPanelTitle": "rPET Panel — akustikkpanel av resirkulert PET, 10 lagerfarger | Re-Sound",
+    "rpetPanelDescription": "Akustikkpanel av resirkulert PET som bearbeides som MDF: kapp, fres, bor, mal eller UV-trykk. 10 lagerfarger og enhver farge på bestilling, 9/12 mm, 2 800 × 1 220 eller 2 440 × 1 220 mm, OEKO-TEX®-sertifisert. Laget i Polen.",
+    "rpetFlexGrooveTitle": "rPET Flex Groove — fleksible PET-paneler, kurver | Re-Sound",
+    "rpetFlexGrooveDescription": "Fleksible PET-akustikkpaneler for buede vegger, søyler og tak, skåret ut av 9 mm rPET Panel: V-snitt, minste radius 500 mm, 10 lagerfarger og enhver farge på bestilling, OEKO-TEX®-sertifisert.",
     "faqTitle": "FAQ — Re-Sound Akustikkpaneler",
     "faqDescription": "Svar på vanlige spørsmål om Re-Sound akustikkpaneler og telefonbokser: absorpsjon, brannklasser, leveringstider, returordning og produktvalg.",
     "soloFlexTitle": "Solo Flex — akustisk telefonboks for én person | Re-Sound",
@@ -1029,6 +1029,107 @@
       "requestQuote": "Be om tilbud",
       "dataNote": "Opplysningene gjenspeiler vår nåværende kunnskap og kan endres uten varsel.",
       "calculatedNote": "Verdier merket med ≈ er beregnet."
+    },
+    "rpet": {
+      "kpi": {
+        "thickness": "mm tykkelse",
+        "surfaceWeight": "kg/m² flatevekt",
+        "recycled": "resirkulert PET",
+        "stockColours": "lagerfarger, enhver farge på bestilling",
+        "nrcByThickness": "NRC etter tykkelse",
+        "fire": "brannreaksjon etter farge (EN 13501-1)"
+      },
+      "formats": {
+        "eyebrow": "Panelformater · i målestokk",
+        "perThickness": "Per tykkelse",
+        "surfaceWeight": "Flatevekt",
+        "panel": "Panel",
+        "density": "Tetthet (begge)",
+        "calculatedNote": "≈ Beregnet ut fra nominell flatevekt og panelets areal."
+      },
+      "colours": {
+        "c01": "Lysegrå",
+        "c02": "Naturhvit",
+        "c03": "Sand",
+        "c04": "Støvet rosa",
+        "c05": "Dyp rød",
+        "c06": "Olivengrønn",
+        "c07": "Skoggrønn",
+        "c08": "Skiferblå",
+        "c09": "Sølvgrå",
+        "c10": "Kullgrå",
+        "custom": "Enhver farge på bestilling",
+        "rangeValue": "10 lagerfarger + spesialfarger",
+        "stockLabel": "Lagerfarge",
+        "choose": "Velg en lagerfarge",
+        "selected": "Lagerfarge {number} · {name}",
+        "swatchAlt": "rPET lagerfarge {number} {name}, prøvefoto",
+        "madeToOrderTitle": "På bestilling",
+        "madeToOrderText": "Lagerfargene 01–10 er alltid tilgjengelige, fra ett panel. Alle andre farger lages på bestilling: send oss en RAL- eller NCS-referanse eller en fysisk prøve. Minimumsmengder for bestillingsfarger på forespørsel.",
+        "batchTitle": "Farge og batch",
+        "batchText": "Laget av resirkulerte fibre, så små nyanseforskjeller mellom batcher er normalt. Bestill panelene til én flate samlet, og monter dem vendt samme vei. Prøvene er fotografier: be om fysiske prøver før du spesifiserer."
+      },
+      "fire": {
+        "tag": "Brannsikkerhet",
+        "title": "Brannreaksjon",
+        "text": "Brannreaksjonen etter EN 13501-1 avhenger av fargen: hvit, grå og svart oppnår {light}, alle andre farger {other}, i både Standard- og FR-versjonen.",
+        "textSingle": "Brannreaksjon etter EN 13501-1: {cls}, i både Standard- og FR-versjonen.",
+        "whiteGreyBlack": "Hvit, grå, svart",
+        "otherColours": "Andre farger",
+        "allColours": "Alle farger",
+        "classTo": "Klasse etter EN 13501-1",
+        "reports": "Klassifiseringsrapporter på forespørsel."
+      },
+      "acoustics": {
+        "title": "Lydabsorpsjon",
+        "intro": "PET-filt er en porøs absorbent: lyden trenger inn i den åpne fiberstrukturen og omdannes til varme. Hvor mye et panel absorberer, avhenger av tykkelsen og fremfor alt av monteringen. Montert rett på veggen virker det først og fremst på mellom- og høye frekvenser; med en luftspalte eller mineralull bak stiger absorpsjonen kraftig og når lavere frekvenser.",
+        "mountingHead": "Montering · 12 mm panel",
+        "classHead": "Absorpsjonsklasse",
+        "rows": {
+          "direct": "Rett på veggen",
+          "cavity50": "50 mm luftspalte",
+          "cavity50wool": "50 mm spalte + 50 mm steinull",
+          "cavity100": "100 mm luftspalte",
+          "cavity100wool": "100 mm spalte + 100 mm steinull"
+        },
+        "footnote": "Målt etter EN ISO 354 på 12 mm PET-filt med identisk spesifikasjon (2,4 kg/m²); αw og klasse etter EN ISO 11654, NRC etter ASTM C423. 9 mm panel: ennå ikke målt.",
+        "notMeasured": "Ennå ikke målt",
+        "notMeasuredTitle": "9 mm: ennå ikke målt",
+        "notMeasured9": "9 mm rPET Panel er ennå ikke målt, så vi oppgir ingen absorpsjonsverdi for rPET Flex Groove. Materialtabellen for 12 mm-panelet på rPET Panel-siden viser hvordan PET-filt oppfører seg avhengig av monteringen.",
+        "panelTableLink": "Absorpsjonstabell for rPET Panel-materialet (12 mm, per montering)"
+      },
+      "processing": {
+        "tag": "Bearbeiding",
+        "title": "Bearbeides som en treplate",
+        "cutting": "Kapping",
+        "cuttingDesc": "Med kniv, sirkelsag, platesag eller vinkelsliper med metallkappeskive.",
+        "cnc": "CNC-fresing",
+        "cncDesc": "Former, utskjæringer og spor; V-snitt gjør det mulig å brette hjørner og 3D-former.",
+        "drilling": "Boring og festing",
+        "drillingDesc": "Kan bores og tar skruer uten å sprekke.",
+        "painting": "Maling",
+        "paintingDesc": "Tåler både vannbasert og løsemiddelbasert maling.",
+        "uv": "UV-trykk",
+        "uvDesc": "Egen grafikk, trykket internt hos Re-Sound.",
+        "care": "Vedlikehold",
+        "careDesc": "Støvsug med myk børste; behandle flekker lokalt."
+      },
+      "material": {
+        "fromPanelTitle": "Laget av rPET Panel",
+        "panelLink": "rPET Panel: formater, tekniske data og den fullstendige absorpsjonstabellen"
+      },
+      "ordering": {
+        "title": "Minsteordre og leveringstid",
+        "orderHead": "Ordre",
+        "supplyHead": "Levering",
+        "minimumOrderPanel": "1 panel",
+        "versionsValue": "Standard · FR (brannhemmende)",
+        "leadTimeValue": "≈ 3–4 arbeidsuker",
+        "deliveryValue": "EXW Częstochowa, Polen",
+        "samplesValue": "Fysiske prøver på forespørsel",
+        "endOfLifeText": "100 % PET, ett materiale, resirkulerbart ved endt levetid.",
+        "showroom": "Showroom"
+      }
     }
   },
   "interiorPage": {
@@ -1437,43 +1538,22 @@
   "rpetGroovePage": {
     "hero": {
       "tag": "AKUSTIKKPANELER AV RESIRKULERT PET",
-      "title": "rPET Groove: rillede PET-akustikkpaneler i 12 farger",
-      "tagline": "Fra Flasker til Stillhet",
-      "description": "Forvandle rommet ditt med rPET - Groove akustikkpaneler. {pct, select, unknown {Laget av resirkulerte plastflasker} other {Laget av {pct} % resirkulerte plastflasker}} kombinerer disse elegante, rillede panelene moderne design med enestående lydabsorpsjon. Effektivitet møter eleganse.",
+      "title": "rPET Groove: sporfreste PET-akustikkpaneler, ti lagerfarger og enhver farge på bestilling",
+      "tagline": "Sporfreste akustikkpaneler, frest ut av rPET Panel.",
+      "description": "rPET Groove CNC-freses ut av rPET Panel, en stiv akustisk filt {pct, select, unknown {laget av resirkulerte PET-flasker} other {laget av {pct} % resirkulerte PET-flasker}}. De synlige spormønstrene gir vegger og tak dybde og tekstur, mens filten absorberer lyd.",
       "usp1": "{pct, select, unknown {Resirkulerte PET-flasker} other {{pct} % resirkulert PET}}",
-      "usp2": "Opptil NRC 0,90",
-      "usp3": "12 Designfarger",
-      "colorSelector": "Velg farge",
-      "description2": ""
+      "usp2": "Frest ut av rPET Panel",
+      "usp3": "{count, select, unknown {Lagerfarger, enhver farge på bestilling} other {{count} lagerfarger, enhver farge på bestilling}}",
+      "photoStrip": "Produktbilder"
     },
     "overview": {
       "tag": "OVERSIKT",
       "title": "Sirkulær Stillhet",
-      "description": "rPET - Groove-paneler gir ethvert rom et moderne preg samtidig som de reduserer støyplager. Det synlige spiledesignet skaper visuell dybde og tekstur – perfekt for moderne kontorer, møterom, lobbyer, restauranter og resepsjonsområder.",
+      "description": "rPET Groove gir tekstur i kontorer, møterom, lobbyer, restauranter og resepsjoner og reduserer etterklang. Sporene freses i rPET Panel, så materiale, farger, bearbeiding og brannreaksjon er panelets.",
       "feature1": "{pct, select, unknown {Laget av resirkulerte plastflasker} other {Laget av {pct} % resirkulerte plastflasker}}",
       "feature2": "CNC-presisjonsskårne rillemønstre",
-      "feature3": "Holdbar og fargerik finish takket være dope-farging",
-      "feature4": "Tilgjengelig i tykkelsene 12 mm, 24 mm og 36 mm",
-      "description2": ""
-    },
-    "fromBottles": {
-      "tag": "REISEN",
-      "title": "Fra plastflaske til akustikkpanel",
-      "step1Number": "01",
-      "step1Title": "Innsamling",
-      "step1Desc": "Brukte plastflasker samles inn og sorteres",
-      "step2Number": "02",
-      "step2Title": "Bearbeiding",
-      "step2Desc": "Flaskene rengjøres, kvernes og smeltes om til PET-fibre",
-      "step3Number": "03",
-      "step3Title": "Filting",
-      "step3Desc": "Fibrene presses sammen til tette akustiske filtplater",
-      "step4Number": "04",
-      "step4Title": "Overflatebehandling",
-      "step4Desc": "CNC-presisjonsskjæring skaper de karakteristiske rillemønstrene",
-      "description": "Hvert rPET - Groove-panel gir nytt liv til omtrent 60 resirkulerte plastflasker. Produksjonsprosessen vår omdanner PET-avfall etter forbrukerleddet til høytytende akustisk filt, og skaper et virkelig sirkulært produkt.",
-      "statLabel": "Resirkulerte flasker per panel",
-      "description2": ""
+      "feature3": "Veier en brøkdel av en treplate",
+      "feature4": "Tilgjengelig i tykkelsene 12 mm, 24 mm og 36 mm"
     },
     "patterns": {
       "tag": "MØNSTRE",
@@ -1484,44 +1564,14 @@
       "description2": ""
     },
     "colors": {
-      "title": "12 Levende Farger",
-      "subtitle": "Fra nøytrale toner til dristige aksenter – vår utvalgte kolleksjon utfyller ethvert interiør.",
-      "tag": "FARGER",
-      "feature1": "UV-bestandig",
-      "feature1Desc": "Massefarget farge falmer ikke i sollys",
-      "feature2": "Enkel Rengjøring",
-      "feature2Desc": "Flekkbestandig overflate, kan tørkes av med fuktig klut",
-      "feature3": "Ingen Falming",
-      "feature3Desc": "Fargeringsprosessen sikrer konsistente farger over hele panelet",
-      "description2": "Fra nøytrale toner til dristige aksenter – vår utvalgte fargepalett passer sømløst inn i ethvert interiørkonsept. Alle farger oppnås gjennom spinnfarging, noe som sikrer utmerket fargeekthet og UV-bestandighet.",
-      "description": "Fra nøytrale toner til dristige aksenter – vår utvalgte fargepalett passer sømløst inn i ethvert interiørkonsept. Alle farger oppnås gjennom spinnfarging, noe som sikrer utmerket fargeekthet og UV-bestandighet."
-    },
-    "thickness": {
-      "title": "Velg tykkelse",
-      "subtitle": "Tre tykkelser for ulike akustiske behov",
-      "tag": "VELG TYKKELSE",
-      "sectionTitle": "Velg tykkelse"
+      "title": "Ti farger fra lager, enhver farge på bestilling",
+      "tag": "Farger",
+      "description": "Fargeutvalget er rPET Panels: ti lagerfarger, nummerert 01–10, og enhver annen farge på bestilling. Produktbildene ovenfor viser tidligere farger; spesifiser ut fra de nummererte prøvene."
     },
     "acoustics": {
-      "tag": "AKUSTIKK",
-      "title": "Akustisk Ytelse",
-      "description": "Det unike rilledesignet kombinert med resirkulert PET-filt med høy tetthet gir eksepsjonell lydabsorpsjon. Reduser ekko, fjern støy og skap rom som er like behagelige for øret som for øyet.",
-      "benefit1Title": "Ekko-reduksjon",
-      "benefit1": "Markant reduksjon av etterklang i alle rom",
-      "benefit2Title": "Forbedret Talklarhet",
-      "benefit2": "Forbedrer taleforståelse for klarere kommunikasjon",
-      "benefit3Title": "Støyreduksjon",
-      "benefit3": "Absorberer forstyrrende lydfrekvenser for økt komfort",
-      "diagramTitle": "Panelsektion",
-      "layer1Name": "Rillet overflate",
-      "layer1Desc": "CNC-skåret mønster for visuell dybde",
-      "layer2Name": "Høydensitets-PET-kjerne",
-      "layer2Desc": "Lydabsorberingslag",
-      "layer3Name": "Monteringsoverflate",
-      "layer3Desc": "Direkte montering på vegg/himling",
-      "waveLabel": "Lydbølger absorbert",
-      "certNote": "Testet i henhold til ISO 354 og ASTM C423",
-      "description2": ""
+      "tag": "Akustikk",
+      "description": "Noise reduction coefficient (NRC) per paneltykkelse, fra våre produktdata. Filten oppfører seg som beskrevet for rPET Panel: monteringen og hulrommet bak panelet avgjør hvor mye som absorberes.",
+      "certNote": "Testet i henhold til ISO 354 og ASTM C423"
     },
     "installation": {
       "tag": "ENKEL INSTALLASJON",
@@ -1550,89 +1600,36 @@
       "badge2": "Sirkulær Retur",
       "badge3": "Belgisk Produksjon",
       "badge4": "OEKO-TEX® Sertifisert",
-      "recycledBottlesLabel": "Resirkulerte flasker per panel",
       "badge1Desc": "Laget 100% av gjenvunne PET-flasker",
-      "badge2Desc": "Gratis retur av paneler ved endt levetid",
-      "badge3Desc": "Laget i Belgia med korte forsyningskjeder",
-      "badge4Desc": "Sertifisert for menneskelig sikkerhet",
-      "description2": ""
+      "badge4Desc": "Sertifisert for menneskelig sikkerhet"
     },
     "specs": {
       "tag": "SPESIFIKASJONER",
       "title": "Tekniske Spesifikasjoner",
       "acousticsTitle": "Akustisk ytelse",
-      "nrc12": "NRC (12 mm)",
-      "nrc12Value": "0.55",
-      "nrc24": "NRC (24 mm)",
-      "nrc24Value": "0.75",
-      "nrc36": "NRC (36 mm)",
-      "nrc36Value": "0.90",
-      "testStandard": "Teststandard",
-      "testStandardValue": "ISO 354 / ASTM C423",
       "fireTitle": "Brannsikkerhet",
-      "fireEU": "Europeisk",
-      "fireEUValue": "B-s1, d0",
-      "fireUS": "USA (ASTM E-84)",
-      "fireUSValue": "Klasse A",
-      "fireUK": "Storbritannia (BS 476)",
-      "fireUKValue": "Klasse 0",
-      "fireDE": "Tyskland (DIN 4102)",
-      "fireDEValue": "B1",
-      "certsTitle": "Sertifiseringer",
+      "certsTitle": "Sertifiseringer og endt levetid",
       "certHealth": "Helse",
-      "certHealthValue": "OEKO-TEX® Standard 100",
-      "certEnv": "Miljømessig",
-      "certEnvValue": "EPD tilgjengelig",
-      "certVOC": "Lav emisjon / E1",
-      "certVOCValue": "Lav emisjon / E1",
-      "certRecycled": "Gjenvunnet innhold",
-      "certRecycledValue": "PET-flasker etter forbrukerleddet",
       "applicationsTitle": "Anvendelser",
       "appInstall": "Installasjon",
-      "appInstallValue": "Vegger og tak",
-      "appEnv": "Miljø",
-      "appEnvValue": "Innendørs (tørre områder)",
-      "appIdeal": "Ideell for",
-      "appIdealValue": "Kontorer, møterom, lobbyer",
-      "appSuitable": "Også egnet",
-      "appSuitableValue": "Restauranter, hoteller, skoler",
       "dimensionsTitle": "Dimensjoner",
-      "widthValue": "600 / 1200 mm",
-      "lengthValue": "600 / 1200 / 2400 mm",
-      "thicknessValue": "12 / 24 / 36 mm",
-      "weightValue": "2,5 - 7,5 kg/m²",
-      "densityValue": "200-250 kg/m³",
       "materialTitle": "Materiale",
       "dimPanelWidth": "Panelbredde",
       "dimPanelLength": "Panellengde",
-      "dimThickness": "Tykkelse",
       "dimGrooveDepth": "Rilledybde",
-      "dimWeight": "Vekt",
-      "acNRC12": "NRC (12 mm)",
-      "acNRC24": "NRC (24 mm)",
-      "acNRC36": "NRC (36 mm)",
       "matComposition": "Sammensetning",
-      "matBinder": "Bindemiddel",
-      "matRecycled": "Gjenvunnet innhold",
-      "matFireClass": "Brannklasse",
-      "matEmissions": "VOC-utslipp",
-      "fireCert": "Sertifisering",
-      "appWalls": "Veggpaneler",
-      "appCeilings": "Takpaneler",
       "appEnvironment": "Miljø",
-      "matRecycledPET": "Resirkulert PET-filt",
+      "matRecycledPET": "100 % resirkulert PET-filt (rPET Panel)",
       "matDensity": "Tetthet",
       "colorsLabel": "Farger",
-      "colorsVal": "12 standardfarger",
       "customColors": "Spesialfarger",
-      "customColorsVal": "Tilgjengelig (MOQ gjelder)",
-      "certEPD": "EPD tilgjengelig",
-      "certGRS": "PET-flasker etter forbrukerleddet",
+      "customColorsVal": "På bestilling etter en RAL- eller NCS-referanse eller en prøve; minimumsmengder på forespørsel",
       "appIdealFor": "Ideell for",
       "appIdealVal": "Kontorer, møterom, lobbyer",
       "appAlso": "Også egnet",
       "appAlsoVal": "Restauranter, hoteller, skoler",
-      "nrcByThickness": "NRC (etter tykkelse)"
+      "nrcByThickness": "NRC (etter tykkelse)",
+      "fireReports": "Klassifiseringsrapporter"
     },
     "gallery": {
       "tag": "INSPIRASJON",
@@ -1663,198 +1660,129 @@
       "questions": {
         "oekoTex": {
           "question": "Er den resirkulerte PET-en sertifisert?",
-          "answer": "Ja. Alle rPET-paneler er OEKO-TEX® Standard 100-sertifiserte — bekrefter fravær av skadelige stoffer. VOC-utslipp testes mot fransk A+ (den strengeste inneluftklassen)."
+          "answer": "Ja. rPET-panelene har et OEKO-TEX® Standard 100-sertifikat som kan fås på forespørsel. Panelet er 100 % resirkulert PET-filt: ett materiale, resirkulerbart ved endt levetid."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Etter EN 13501-1 er rPET Groove klassifisert {groove}. Brannsertifikatet ligger i nedlastingsblokken på denne siden; de andre rPET-modellene har sin egen klasse på sine sider."
+          "answer": "Etter EN 13501-1 avhenger klassen av fargen: rPET Groove er klassifisert {groove}, som det rPET Panel det freses ut av. Klassifiseringsrapporter på forespørsel."
         },
         "processability": {
           "question": "Kan rPET-paneler kuttes, bores eller males?",
-          "answer": "Ja. rPET oppfører seg som MDF på vanlige trebearbeidingsmaskiner: kapp med sirkelsag eller CNC-fres, bor med spiralbor, mal med vann- eller løsemiddelbaserte finish. Ikke noe spesielt verneutstyr nødvendig."
+          "answer": "Ja. rPET Groove freses ut av rPET Panel og bearbeides på samme måte: kapping med sag eller vinkelsliper med metallkappeskive, CNC-fresing, boring og skruing uten sprekker, maling med vann- eller løsemiddelbasert maling."
         },
         "colorRange": {
           "question": "Hvor mange farger er tilgjengelige?",
-          "answer": "12 designerfarger ligger på lager til rPET Groove og Flex Groove-linjene; rPET Panel-linjen fås i 16 farger. Tilpassede farger kan produseres for prosjekter over 200 m²."
+          "answer": "Ti lagerfarger (01–10) er alltid tilgjengelige, fra ett panel. Alle andre farger lages på bestilling etter en RAL- eller NCS-referanse eller en fysisk prøve; minimumsmengder på forespørsel. Utvalget er det samme for rPET Panel, rPET Groove og rPET Flex Groove."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfarger sendes innen 2–3 uker; tilpassede farger krever 5–6 uker. Store prosjekter (>500 m²) planlegges i produksjonsbatcher — kontakt oss for en bindende dato."
+          "answer": "Cirka 3–4 arbeidsuker, som for rPET Panel. Minsteordre er ett panel, priser på forespørsel og levering EXW Częstochowa, Polen."
         }
       }
     },
     "alt": {
       "rpetGrooveAcousticPanelInModernOffice": "rPET - Groove akustikkpanel i et moderne kontor",
       "panelInstallationProcess": "Monteringsprosess for panelet",
-      "recycledMaterials": "Resirkulerte materialer"
+      "recycledMaterials": "Resirkulerte materialer",
+      "productPhoto": "rPET Groove produktbilde {n}"
     },
     "options": {
       "lineDesc": "Rene parallelle linjer",
       "waveDesc": "Organiske, flytende kurver",
       "chevronDesc": "Dynamisk V-mønster",
       "gridDesc": "Moderne kryssende linjer",
-      "12mmDesc": "Standard absorpsjon",
-      "24mmDesc": "Forbedret absorpsjon",
-      "36mmDesc": "Maksimal absorpsjon",
       "lineGrooves": "Vertikale",
       "waveGrooves": "Buede",
       "chevronGrooves": "Skråstilte",
-      "gridGrooves": "Kryssmønster"
+      "gridGrooves": "Kryssmønster",
+      "lineName": "Linje",
+      "waveName": "Bølge",
+      "chevronName": "Chevron",
+      "gridName": "Rutenett"
     },
     "related": {
       "title": "Relaterte Produkter"
+    },
+    "material": {
+      "tag": "Materiale",
+      "description": "Hvert rPET Groove-panel begynner som et rPET Panel: stiv filt av resirkulerte PET-flasker som bearbeides som en treplate. Spormønsteret freses inn i det.",
+      "layer1Title": "rPET Panel-filt",
+      "layer1Desc": "{pct, select, unknown {Resirkulert PET-filt} other {{pct} % resirkulert PET-filt}}, omtrent 200 kg/m³, i en Standard- eller en brannhemmende (FR) versjon.",
+      "layer2Title": "CNC-freste spor",
+      "layer2Desc": "Mønsteret freses inn i filten: fire mønstre, se nedenfor.",
+      "layer3Title": "Farge",
+      "layer3Desc": "Ti lagerfarger fra ett panel; enhver annen farge på bestilling etter en RAL- eller NCS-referanse."
+    },
+    "ordering": {
+      "description": "Minsteordre, leveringstid og levering følger det rPET Panel som sporene freses i."
     }
   },
   "rpetPanelPage": {
     "hero": {
       "tag": "GJENVUNNE PET AKUSTIKKPANELER",
       "title": "rPET Panel: akustikkpanelet av resirkulert PET som bearbeides som MDF",
-      "tagline": "Bærekraftig Stillhet, Uendelige Muligheter",
-      "description": "Forvandle ethvert rom med rPET - Panel akustikkpaneler. {pct, select, unknown {Laget av resirkulerte PET-flasker} other {Laget av {pct} % resirkulerte PET-flasker}} gir disse lette, men kraftige lydabsorbentene maksimal akustisk ytelse med minimal miljøpåvirkning.",
+      "tagline": "Panelet av resirkulert PET-filt som du bearbeider som MDF.",
+      "description": "rPET Panel er en stiv akustisk filtplate laget av {pct, select, unknown {resirkulerte PET-flasker} other {{pct} % resirkulerte PET-flasker}}. Den absorberer lyd over hele flaten, veier en brøkdel av en treplate og bearbeides med vanlig verkstedverktøy: sag, fres og bor, deretter mal eller UV-trykk.",
       "usp1": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}",
-      "usp2": "αw opptil 1,00",
-      "usp3": "Lett 3-4 kg/m²",
-      "colorSelector": "Velg panelfarge",
-      "colorSelectorPlaceholder": "Velg en farge"
+      "usp2": "Bearbeides som MDF",
+      "usp3": "Standard- og FR-versjon"
     },
     "overview": {
-      "tag": "OVERSIKT",
-      "title": "Gjenvunnet PET på sitt Beste",
-      "reason1Title": "Lett å håndtere",
-      "reason1": "Lette paneler som hvem som helst kan montere uten tungt utstyr",
-      "reason2Title": "Menneskevennlig",
-      "reason2": "OEKO-TEX®-sertifisert, trygt for alle miljøer, inkludert skoler og helsevesen",
-      "reason3Title": "Uendelige muligheter",
-      "reason3": "Kan CNC-skjæres, freses og bores – bruk det som MDF, uten ulempene",
-      "reason4Title": "Uttrykk din stil",
-      "reason4": "Over 50 farger som utfyller enhver interiørvisjon",
-      "reason5Title": "Vil du ha flere alternativer?",
-      "reason5": "Kombiner med rPET Groove for et komplett designsystem",
-      "description": "rPET - Panel omdanner resirkulerte PET-flasker til høytytende akustikkpaneler. Hvert panel holder plastavfall unna deponi og skaper samtidig sunnere og roligere miljøer. Det er det lydabsorberende alternativet til MDF – til en brøkdel av vekten.",
+      "tag": "Oversikt",
+      "title": "Vegger, tak, romdelere og akustiske møbler",
+      "description": "Brukes til vegg- og takpaneler, romdelere og akustiske møbler. To tykkelser, to formater, en Standard- og en brannhemmende (FR) versjon. Laget i Polen (Częstochowa).",
       "feature1": "{pct, select, unknown {Laget av resirkulerte PET-flasker} other {Laget av {pct} % resirkulerte PET-flasker}}",
-      "feature2": "Fullt resirkulerbart ved endt levetid",
-      "feature3": "Lettvekt: kun 3-4 kg/m²",
-      "feature4": "Fri for kjemiske bindemidler"
-    },
-    "process": {
-      "tag": "SLIK LAGES DET",
-      "title": "Design, konstruer, bygg",
-      "description": "rPET Panel kan bearbeides akkurat som MDF. Skjær, fres, bor, bøy – produsenten din trenger ingen nye verktøy eller teknikker."
+      "feature2": "Absorberer lyd over hele flaten",
+      "feature3": "Veier en brøkdel av en treplate",
+      "feature4": "Sag, fres, bor, mal eller UV-trykk med vanlig verkstedverktøy"
     },
     "workability": {
-      "tag": "BEARBEIDING",
-      "step1Title": "Saging",
-      "step1": "Presise former og profiler med standard CNC-utstyr",
-      "step2Title": "CNC-skjæring og fresing",
-      "step2": "Direkte innfesting uten forboring eller spesialplugger",
-      "step3Title": "Boring og skruing",
-      "step3": "Lag kurver og vinkler med enkel V-skjæringsteknikk",
-      "title": "Bearbeides som MDF, veier nesten ingenting",
-      "description": "rPET - Panel kombinerer bearbeidbarheten til MDF med utrolig lav vekt. Skjær det med sag, fres det på CNC, bor i det, V-skjær det – materialet lar seg bearbeide utmerket med vanlige verkstedverktøy.",
-      "step1Desc": "Manuelt eller elektrisk – rene snitt hver gang",
-      "step2Desc": "Presise former og spesialtilpassede profiler",
-      "step3Desc": "Sikker innfesting uten sprekkdannelse",
-      "step4Title": "V-skjæringsbøy",
-      "step4Desc": "Skap 3D-former og hjørner",
-      "quote": "Du oppdager raskt at rPET - Panel kan bearbeides like raskt og enkelt som en MDF-plate."
+      "description": "rPET Panel bearbeides med vanlig verkstedverktøy, på samme måte som en treplate."
     },
     "acoustics": {
-      "tag": "AKUSTIKK",
-      "title": "Maksimal Absorpsjon",
-      "benefit1Title": "Maksimal Ytelse",
-      "benefit1": "Forbedrer taleforståeligheten i møterom og klasserom betydelig",
-      "benefit2Title": "Uavhengig Sertifisert",
-      "benefit2": "Skaper roligere miljøer som fremmer trivsel og produktivitet",
-      "benefit3Title": "Bredbånd",
-      "benefit3": "Reduserer lydoverføring mellom rom for konfidensielle samtaler",
-      "description": "rPET - Panel oppnår høyest mulig klassifisering for akustisk absorpsjon. Den unike fiberstrukturen fanger opp og sprer lydenergi, noe som reduserer etterklang betydelig og forbedrer taletydeligheten.",
-      "howItWorks": "Slik fungerer det",
-      "fiberLabel": "Komprimerte PET-fibre",
-      "fiberSublabel": "Lydenergi omdannes til varme",
-      "panelThickness": "Paneltykkelse",
-      "testStandard": "Teststandard",
-      "testConfig": "Testoppsett: 24 mm panel på 50 mm ramme med polyesterullisolasjon",
-      "certNote": "Uavhengig testet og sertifisert i henhold til ISO 11654",
-      "fireClassLabel": "Brannklasse (EN 13501-1)"
+      "tag": "Akustikk"
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Sirkulær i Kjernen",
       "cert1": "{pct, select, unknown {Resirkulert PET-innhold} other {{pct} % resirkulert innhold}}",
       "cert2": "Fullt resirkulerbar",
-      "cert3": "OEKO-TEX® Klasse 1",
-      "cert4": "Klasse A+ utslipp",
+      "cert3": "Ett materiale",
+      "cert4": "Gratis retur",
       "badge1Desc": "Laget av PET-flasker etter forbrukerleddet",
       "badge2Desc": "Full materialgjenvinning ved endt levetid",
-      "description": "rPET - Panel legemliggjør den sirkulære økonomien. {pct, select, unknown {Hvert panel er laget av resirkulerte PET-flasker} other {Hvert panel inneholder {pct} % resirkulerte PET-flasker}}, og ved endt levetid kan hele panelet resirkuleres på nytt. Ingen sløsing, ingen kompromisser.",
-      "cert3Desc": "Klasse 1-sertifisert for menneskers sikkerhet",
-      "cert4Desc": "Ingen VOC eller formaldehyd (ISO 16000)"
+      "description": "{pct, select, unknown {Laget av resirkulerte PET-flasker} other {Laget av {pct} % resirkulerte PET-flasker}} og 100 % PET: ett materiale, resirkulerbart ved endt levetid, og Re-Sound tar panelene i retur.",
+      "cert3Desc": "100 % PET, ett materiale, resirkulerbart ved endt levetid."
     },
     "specs": {
       "tag": "SPESIFIKASJONER",
       "title": "Tekniske Spesifikasjoner",
-      "acousticsTitle": "Akustisk ytelse",
-      "physicalTitle": "Fysiske egenskaper",
-      "fireTitle": "Brannsikkerhet",
-      "healthTitle": "Helse og miljø",
-      "colorsTitle": "Farger og finish",
-      "dimensionsTitle": "Dimensjoner",
-      "dimStandard": "Standardpanel",
-      "dimCustomMax": "Spesialmaksimum",
-      "dimThicknessOptions": "Tykkelsesalternativer",
-      "dimCustomThickness": "Spesialtykkelse",
+      "acousticsTitle": "Akustikk (12 mm panel)",
+      "fireTitle": "Brannreaksjon",
+      "healthTitle": "Sertifiseringer og endt levetid",
+      "dimensionsTitle": "Mål og vekt",
       "physMaterial": "Materiale",
-      "physWeight12": "Vekt (12 mm)",
-      "physWeight24": "Vekt (24 mm)",
-      "fireEuClass": "Europeisk klassifisering",
-      "fireGerman": "Tysk standard",
       "healthOekoTex": "OEKO-TEX®",
-      "healthFormaldehyde": "Formaldehyd",
-      "healthBinders": "Kjemiske bindemidler",
       "colorStandard": "Standardfarger",
-      "colorCustom": "Spesialfarger",
-      "finishOptions": "Finishmuligheter",
-      "recyclability": "Resirkulerbarhet",
-      "vocEmissions": "VOC-utslipp",
-      "anyRalNcs": "Enhver RAL / NCS",
-      "finishOptionsVal": "Stoff, HPL, finér, trykk"
-    },
-    "sample": {
-      "title": "Be om din prøvepakke",
-      "description": "Opplev kvaliteten til rPET - Panel selv. Vår tilpassede prøvepakke inneholder fargeprøver, tykkelsesalternativer og overflateprøver som hjelper deg med å ta det perfekte valget.",
-      "tag": "PRØVER",
-      "cta": "Be om gratis prøver"
+      "generalTitle": "Generelt",
+      "formats": "Formater",
+      "surfaceWeight": "Flatevekt (9 / 12 mm)",
+      "panelWeight2800": "Panel 2 800 × 1 220 mm (9 / 12 mm)",
+      "panelWeight2440": "Panel 2 440 × 1 220 mm (9 / 12 mm)",
+      "physMaterialVal": "100 % resirkulert PET-filt",
+      "acousticsMounting": "Målt på",
+      "acousticsMountingVal": "12 mm panel (2,4 kg/m²); maksimum med 50 mm spalte og 50 mm steinull",
+      "acoustics9mm": "9 mm panel",
+      "fireReports": "Klassifiseringsrapporter"
     },
     "gallery": {
       "tag": "INSPIRASJON",
       "title": "rPET - Panel i Bruk"
     },
-    "why": {
-      "tag": "HVORFOR VELGE rPET",
-      "description": "Oppdag hvorfor arkitekter, designere og akustikkrådgivere velger rPET - Panel til sine mest krevende prosjekter.",
-      "reason1Title": "100% Sirkulær",
-      "reason1": "Laget av resirkulerte PET-flasker, fullt resirkulerbart og et bidrag til en sirkulær økonomi.",
-      "reason2Title": "Fremragende",
-      "reason2": "Akustisk absorpsjon opptil αw 1,00 – den høyeste klassifiseringen som er mulig for lydabsorpsjon.",
-      "reason3Title": "Enkel Installasjon",
-      "reason3": "Lett og formstabilt. Skjær, bor, fres og monter med standardverktøy.",
-      "reason4Title": "Sunt og Sikkert",
-      "reason4": "Antistatisk, hudvennlig, antiallergisk. Ingen utslipp av VOC eller formaldehyd.",
-      "reason5Title": "Uendelige Designmuligheter",
-      "reason5": "5 standardfarger pluss alle RAL/NCS-farger. Legg til tekstil, laminat, finer eller egendefinert trykk.",
-      "title": "Fem grunner til å velge rPET"
-    },
     "colors": {
-      "tag": "FARGER",
-      "title": "5 Standardfarger + Tilpasset RAL/NCS",
-      "description": "Velg blant 5 elegante standardfarger, eller spesifiser en hvilken som helst farge fra RAL- eller NCS-paletten. Alle nyanser beholder den samme fremragende akustiske ytelsen.",
-      "anyColor": "Enhver farge",
-      "moreOptionsTitle": "Vil du ha flere alternativer?",
-      "moreOptionsDesc": "Alle grunnfarger kan kombineres med overflatelag som akustiske tekstiler, HPL-laminat, ekte trefiner eller egendefinert trykk – uten at det går på bekostning av den akustiske ytelsen.",
-      "fabric1": "Akustiske stoffer",
-      "fabric2": "HPL/CPL-laminat",
-      "fabric3": "Ekte trefinér",
-      "fabric4": "Tilpasset trykk"
+      "tag": "Farger",
+      "title": "Ti farger fra lager, enhver farge på bestilling",
+      "description": "Fargeutvalget fra rPET Panel-databladet: ti lagerfarger, nummerert 01–10, og enhver annen farge på bestilling."
     },
     "applications": {
       "tag": "ANVENDELSER",
@@ -1872,16 +1800,6 @@
       "label2": "Kontorer",
       "label3": "Hotell og restaurant"
     },
-    "nav": {
-      "overview": "Oversikt",
-      "colors": "Farger",
-      "applications": "Anvendelser",
-      "acoustics": "Akustikk",
-      "processing": "Bearbeiding",
-      "specifications": "Spesifikasjoner",
-      "gallery": "Galleri",
-      "downloads": "Nedlastinger"
-    },
     "downloads": {
       "installationGuide": "Installasjonsveiledning",
       "acousticTestReport": "Akustisk testrapport (ISO 354)",
@@ -1895,23 +1813,23 @@
       "questions": {
         "oekoTex": {
           "question": "Er den resirkulerte PET-en sertifisert?",
-          "answer": "Ja. Alle rPET-paneler er OEKO-TEX® Standard 100-sertifiserte — bekrefter fravær av skadelige stoffer. VOC-utslipp testes mot fransk A+ (den strengeste inneluftklassen)."
+          "answer": "Ja. rPET-panelene har et OEKO-TEX® Standard 100-sertifikat som kan fås på forespørsel. Panelet er 100 % resirkulert PET-filt: ett materiale, resirkulerbart ved endt levetid."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Etter EN 13501-1 er rPET Panel klassifisert {panel}. Brannsertifikatet ligger i nedlastingsblokken på denne siden; de andre rPET-modellene har sin egen klasse på sine sider."
+          "answer": "Etter EN 13501-1 avhenger klassen av fargen: rPET Panel er klassifisert {panel}, i både Standard- og FR-versjonen. Klassifiseringsrapporter på forespørsel."
         },
         "processability": {
           "question": "Kan rPET-paneler kuttes, bores eller males?",
-          "answer": "Ja. rPET oppfører seg som MDF på vanlige trebearbeidingsmaskiner: kapp med sirkelsag eller CNC-fres, bor med spiralbor, mal med vann- eller løsemiddelbaserte finish. Ikke noe spesielt verneutstyr nødvendig."
+          "answer": "Ja. rPET Panel bearbeides som en treplate: kapp det med kniv, sirkelsag, platesag eller vinkelsliper med metallkappeskive; fres former, utskjæringer og spor på CNC; bor og skru uten at det sprekker; mal det med vann- eller løsemiddelbasert maling, eller la Re-Sound UV-trykke det."
         },
         "colorRange": {
           "question": "Hvor mange farger er tilgjengelige?",
-          "answer": "12 designerfarger ligger på lager til rPET Groove og Flex Groove-linjene; rPET Panel-linjen fås i 16 farger. Tilpassede farger kan produseres for prosjekter over 200 m²."
+          "answer": "Ti lagerfarger (01–10) er alltid tilgjengelige, fra ett panel. Alle andre farger lages på bestilling etter en RAL- eller NCS-referanse eller en fysisk prøve; minimumsmengder for bestillingsfarger på forespørsel. Samme utvalg gjelder for rPET Groove og rPET Flex Groove."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfarger sendes innen 2–3 uker; tilpassede farger krever 5–6 uker. Store prosjekter (>500 m²) planlegges i produksjonsbatcher — kontakt oss for en bindende dato."
+          "answer": "Cirka 3–4 arbeidsuker. Minsteordre er ett panel, priser på forespørsel og levering EXW Częstochowa, Polen."
         }
       }
     },
@@ -1922,19 +1840,13 @@
       "acousticTreatmentInRestaurant": "Akustisk behandling i en restaurant",
       "cncProcessingOfRpetPanels": "CNC-bearbeiding av rPET-paneler",
       "recycledPetBottles": "Resirkulerte PET-flasker",
-      "rpetPanelSamplePanels": "rPET - Panel prøvepaneler"
+      "rpetPanelSamplePanels": "rPET - Panel prøvepaneler",
+      "rpetPanelHero": "Akustiske rPET Panel-filtpaneler i olivengrønt på en vegg bak en sofa"
     },
-    "options": {
-      "midnightDesc": "Dyp svart, som en måneskinnshimmel",
-      "titanDesc": "Karakteristisk mørk grå, som stål",
-      "silverDesc": "Moderne industriell eleganse",
-      "marbleDesc": "Minimalistisk lysegrå estetikk",
-      "frostDesc": "Ren, hvit enkelhet",
-      "customDesc": "Enhver farge fra RAL- eller NCS-paletten",
-      "12mmDesc": "Lettvektsløsning",
-      "18mmDesc": "Balansert ytelse",
-      "24mmDesc": "Maksimal absorpsjon",
-      "maximumLabel": "Maksimum"
+    "formats": {
+      "tag": "Tekniske data",
+      "title": "Mål og vekt",
+      "description": "To formater og to tykkelser, i en Standard- og en brannhemmende (FR) versjon."
     }
   },
   "rwoodGroovePage": {
@@ -2855,67 +2767,53 @@
     "hero": {
       "tag": "FLEKSIBLE AKUSTIKKPANELER",
       "title": "rPET Flex Groove: fleksible PET-akustikkpaneler for buede flater",
-      "tagline": "Bøy uten å bryte",
-      "description": "Den ultimate akustiske løsningen for buede flater. Laget av resirkulert PET-filt med presise V-frestede spor, og disse fleksible panelene tilpasser seg sømløst søyler, buede vegger og enhver arkitektonisk form med en minimumsradius på 500 mm.",
-      "usp1": "Min. radius 500mm",
-      "usp2": "Branndempende",
-      "usp3": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}",
-      "colorSelector": "Velg farge",
-      "colorPlaceholder": "Velg en farge",
-      "description2": ""
+      "tagline": "Akustikkpaneler med V-snitt for kurver, skåret ut av 9 mm rPET Panel.",
+      "description": "rPET Flex Groove skjæres ut av 9 mm rPET Panel: stiv filt av resirkulerte PET-flasker, V-snittet slik at det bøyer seg rundt søyler, buede vegger og andre avrundede elementer. V-snittene etterlater den ribbede overflaten som gir panelet sin karakter.",
+      "usp1": "Minste bøyeradius 500 mm",
+      "usp2": "Skåret ut av 9 mm rPET Panel",
+      "usp3": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}"
     },
     "overview": {
       "tag": "INNOVASJON",
       "title": "Designet for buede overflater",
-      "description": "Flex-Groove-paneler er en allsidig akustisk løsning for buede flater som uanstrengt tilpasser seg enhver form. De egner seg for både innvendige og utvendige radier, og den fleksible strukturen gir sømløse overganger langs vegger, søyler og andre avrundede arkitektoniske elementer.",
+      "description": "Flex Groove-paneler følger buede flater, både innvendige og utvendige radier: søyler, buede vegger og avrundede arkitektoniske elementer. Materialet er rPET Panel, så farger, bearbeiding og brannreaksjon er panelets.",
       "feature1": "Tilpasser seg enhver buet overflate",
       "feature2": "Fungerer med innvendige og utvendige radier",
       "feature3": "Ribbet tekstur gir dybde og rytme",
-      "feature4": "Innebygde lyddempende egenskaper",
-      "description2": ""
+      "feature4": "Innebygde lyddempende egenskaper"
     },
     "technology": {
       "tag": "TEKNOLOGI",
       "title": "V-Cut Fleksibilitetssystem",
-      "description": "Hvert panel er skåret med presise V-snitt som gjør at det kan bøyes uten å brekke. Dette smarte snittet skaper den karakteristiske ribbede teksturen — en rekke lineære spor som gir fleksibilitet og samtidig gir overflaten et skulpturelt relieff.",
+      "description": "V-snitt gjør det mulig å brette hjørner og 3D-former: panelet er skåret med parallelle V-snitt som lar det bøye seg uten å brekke og etterlater et ribbet relieff på overflaten.",
       "minRadius": "Minimum bøyeradius",
       "feature1Title": "Presisjons-V-skjær",
       "feature1Desc": "Konstruerte spor for kontrollert fleksibilitet",
       "feature2Title": "Sømløse kurver",
       "feature2Desc": "Jevne overganger på enhver buet flate",
-      "feature3Title": "Minimalt avfall",
-      "feature3Desc": "Effektivt design reduserer kappsvinn",
+      "feature3Title": "Skåret ut av 9 mm rPET Panel",
+      "feature3Desc": "Flatevekt 1,8 kg/m²; skåret ut av et panel på 2 800 × 1 220 eller 2 440 × 1 220 mm.",
       "flatPanel": "Flatt panel",
-      "curvedApp": "Buet anvendelse",
-      "description2": ""
+      "curvedApp": "Buet anvendelse"
     },
     "colors": {
-      "tag": "RAFFINERT KOLLEKTION",
-      "title": "12 kuraterte farger",
-      "description": "Vår nøye utvalgte fargepalett gir allsidige muligheter for ethvert interiør. Fra myke nøytrale toner til dristige signalfarger – hver nyanse er utformet for å komplementere moderne arkitektoniske rom og samtidig gi utmerket akustisk ytelse.",
-      "grooveDir": "Rilleretning",
-      "description2": ""
+      "tag": "Farger",
+      "title": "Ti farger fra lager, enhver farge på bestilling",
+      "description": "Fargeutvalget er rPET Panels: ti lagerfarger, nummerert 01–10, og enhver annen farge på bestilling.",
+      "grooveDir": "Rilleretning"
     },
     "acoustics": {
-      "tag": "YTELSE",
-      "title": "Lyddempende egenskaper",
-      "description": "Flex-Groove-paneler er laget av brannhemmende resirkulert PET-filt og gir effektiv lydabsorpsjon samtidig som den visuelle kontinuiteten over buede flater bevares. Den sporede teksturen forbedrer den akustiske ytelsen.",
+      "tag": "Akustikk",
+      "description": "Flex Groove beholder filtens lyddempende karakter på buede flater. 9 mm-panelet er ennå ikke målt, så vi oppgir ingen αw- eller NRC-verdi.",
       "feature1Title": "Lyddemping",
       "feature1Desc": "Reduserer ekko og etterklang",
-      "feature2Title": "Branndempende",
-      "feature2Desc": "Innebygde brannsikkerhetsegenskaper",
       "feature3Title": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert}}",
-      "feature3Desc": "Laget av resirkulerte plastflasker",
-      "layer1Label": "Resirkulert PET-filt",
-      "layer2Label": "Presisjons-V-skjær",
-      "thicknessLabel": "Tykkelse",
-      "materialLabel": "Brannhemmende PET-filt",
-      "description2": ""
+      "feature3Desc": "Laget av resirkulerte plastflasker"
     },
     "installation": {
       "tag": "ENKEL INSTALLASJON",
       "title": "Sikker festing, enkel montering",
-      "description": "Panelene er utformet for å dekke standard høyde fra gulv til himling, noe som forenkler innrettingen og reduserer monteringstiden. Den tilpasningsdyktige formen gjør dem til en praktisk løsning for interiører som krever både lydabsorpsjon og designfleksibilitet.",
+      "description": "Panelene limes på det forberedte buede underlaget. Ferdige panelmål på forespørsel.",
       "step1Title": "Forbered overflate",
       "step1Desc": "Sørg for at den buede flaten er ren og klar for montering",
       "step2Title": "Påfør lim",
@@ -2933,12 +2831,9 @@
       "badge1": "{pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}",
       "badge1Desc": "Laget av resirkulerte plastflasker",
       "badge2": "Helt resirkulerbar",
-      "badge2Desc": "Kan resirkuleres ved endt levetid",
       "badge3": "Laget i Polen",
-      "badge4": "Lav VOC",
-      "badge3Desc": "Kort forsyningskjede fra vårt polske anlegg",
-      "badge4Desc": "Trygg for innendørs miljøer",
-      "description2": ""
+      "badge4": "Gratis retur",
+      "badge3Desc": "Kort forsyningskjede fra vårt polske anlegg"
     },
     "specs": {
       "tag": "TEKNISK",
@@ -2947,34 +2842,18 @@
       "flexibilityTitle": "Fleksibilitet",
       "materialTitle": "Materiale",
       "fireTitle": "Brannsikkerhet",
-      "certsTitle": "Sertifiseringer",
+      "certsTitle": "Sertifiseringer og endt levetid",
       "applicationsTitle": "Anvendelser",
-      "dimPanelLength": "Panellengde",
-      "dimPanelWidth": "Panelbredde",
-      "dimThickness": "Tykkelse",
-      "dimWeight": "Vekt",
-      "dimDensity": "Densitet",
       "flexMinRadius": "Minimumradius",
       "flexBendDir": "Bøyeretning",
       "flexBendDirVal": "Indre og ytre radier",
       "flexCutType": "Skjæretype",
       "flexCutTypeVal": "Presisjons-V-skjær",
       "matComposition": "Sammensetning",
-      "matCompositionVal": "Brannhemmende (FR) PET-filt",
-      "matRecycled": "Gjenvunnet innhold",
-      "matFireRetardant": "Brannhemmende",
-      "matFireRetardantVal": "Ja (innebygd)",
+      "matCompositionVal": "100 % resirkulert PET-filt",
       "matColorVar": "Fargevariasjoner",
-      "matColorVarVal": "Mulig (resirkulert materiale)",
-      "fireRating": "Brannklasse",
-      "fireSmokeProduction": "Røykproduksjon",
-      "fireFlamingDroplets": "Brennende dråper",
-      "fireFlamingDropletsVal": "d0 (ingen)",
+      "matColorVarVal": "Små nyanseforskjeller mellom batcher er normalt",
       "certMaterial": "Materiale",
-      "certVOC": "VOC-utslipp",
-      "certVOCVal": "Lav emisjon",
-      "certRecycled": "Gjenvunnet innhold",
-      "certRecycledVal": "100 %",
       "appSurfaces": "Flater",
       "appSurfacesVal": "Vegger, søyler, buede elementer",
       "appEnvironment": "Miljø",
@@ -2982,7 +2861,13 @@
       "appInstallation": "Installasjon",
       "appInstallationVal": "Limmontering",
       "appOrientation": "Orientering",
-      "appOrientationVal": "På langs / på tvers"
+      "appOrientationVal": "På langs / på tvers",
+      "dimSource": "Skåret ut av",
+      "dimSourceVal": "9 mm rPET Panel (2 800 × 1 220 / 2 440 × 1 220 mm)",
+      "dimSurfaceWeight": "Flatevekt",
+      "dimFinishedFormat": "Ferdig format",
+      "matColours": "Farger",
+      "fireReports": "Klassifiseringsrapporter"
     },
     "gallery": {
       "tag": "INSPIRASJON",
@@ -3006,13 +2891,11 @@
       "app1Desc": "Kle bærende søyler med sømløs akustisk dekning",
       "app2Desc": "Følg organiske veggformer for sammenhengende dekning",
       "app3Desc": "Kle buede åpninger og arkitektoniske detaljer",
-      "app4Desc": "Skap iøynefallende buede fondvegger",
-      "description2": ""
+      "app4Desc": "Skap iøynefallende buede fondvegger"
     },
     "cta": {
       "title": "Klar til å kurve akustikken din?",
-      "description": "Få et tilpasset tilbud til prosjektet ditt. Teamet vårt hjelper deg med å velge den perfekte flex-løsningen.",
-      "description2": "Få et tilpasset tilbud til prosjektet ditt. Teamet vårt hjelper deg med å velge riktig farge og beregne behovet ditt."
+      "description": "Få et tilpasset tilbud til prosjektet ditt. Teamet vårt hjelper deg med å velge den perfekte flex-løsningen."
     },
     "cta2": {
       "freeNote": "Gratis prøver tilgjengelig • Produsert i Polen • {pct, select, unknown {Resirkulert PET} other {{pct} % resirkulert PET}}"
@@ -3021,23 +2904,23 @@
       "questions": {
         "oekoTex": {
           "question": "Er den resirkulerte PET-en sertifisert?",
-          "answer": "Ja. Alle rPET-paneler er OEKO-TEX® Standard 100-sertifiserte — bekrefter fravær av skadelige stoffer. VOC-utslipp testes mot fransk A+ (den strengeste inneluftklassen)."
+          "answer": "Ja. rPET-panelene har et OEKO-TEX® Standard 100-sertifikat som kan fås på forespørsel. Panelet er 100 % resirkulert PET-filt: ett materiale, resirkulerbart ved endt levetid."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Etter EN 13501-1 er rPET Flex Groove klassifisert {flex}. Brannsertifikatet ligger i nedlastingsblokken på denne siden; de andre rPET-modellene har sin egen klasse på sine sider."
+          "answer": "Etter EN 13501-1 avhenger klassen av fargen: rPET Flex Groove er klassifisert {flex}, som det 9 mm rPET Panel det skjæres ut av. Klassifiseringsrapporter på forespørsel."
         },
         "processability": {
           "question": "Kan rPET-paneler kuttes, bores eller males?",
-          "answer": "Ja. rPET oppfører seg som MDF på vanlige trebearbeidingsmaskiner: kapp med sirkelsag eller CNC-fres, bor med spiralbor, mal med vann- eller løsemiddelbaserte finish. Ikke noe spesielt verneutstyr nødvendig."
+          "answer": "Ja. rPET Flex Groove skjæres ut av 9 mm rPET Panel og tåler samme verktøy: sag eller vinkelsliper med metallkappeskive, CNC-fresing, boring og skruer uten sprekker, vann- eller løsemiddelbasert maling."
         },
         "colorRange": {
           "question": "Hvor mange farger er tilgjengelige?",
-          "answer": "12 designerfarger ligger på lager til rPET Groove og Flex Groove-linjene; rPET Panel-linjen fås i 16 farger. Tilpassede farger kan produseres for prosjekter over 200 m²."
+          "answer": "Ti lagerfarger (01–10) er alltid tilgjengelige, fra ett panel. Alle andre farger lages på bestilling etter en RAL- eller NCS-referanse eller en fysisk prøve; minimumsmengder på forespørsel. Utvalget er det samme for rPET Panel, rPET Groove og rPET Flex Groove."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfarger sendes innen 2–3 uker; tilpassede farger krever 5–6 uker. Store prosjekter (>500 m²) planlegges i produksjonsbatcher — kontakt oss for en bindende dato."
+          "answer": "Cirka 3–4 arbeidsuker, som for rPET Panel. Minsteordre, ferdige mål og levering på forespørsel."
         }
       }
     },
@@ -3046,13 +2929,25 @@
       "rpetFlexGrooveAcousticPanelOnCurvedSurface": "rPET Flex-Groove akustikkpanel på buet overflate",
       "rpetFlexGrooveColorOptions": "Fargealternativer for rPET Flex-Groove",
       "flexGroovePanelInstallation": "Montering av Flex-Groove-panel",
-      "recycledPetBottles": "Resirkulerte PET-flasker"
+      "rpetFlexGrooveCurvedWalls": "rPET Flex Groove-paneler på buede vegger i et møteområde"
     },
     "options": {
       "lengthDesc": "Sporene går langs panelets lengde",
       "widthDesc": "Sporene går på tvers av panelets bredde",
       "lengthName": "På langs",
       "widthName": "På tvers"
+    },
+    "buildUp": {
+      "layer1Title": "9 mm rPET Panel",
+      "layer1Desc": "{pct, select, unknown {Resirkulert PET-filt} other {{pct} % resirkulert PET-filt}}, 1,8 kg/m², skåret ut av et panel på 2 800 × 1 220 eller 2 440 × 1 220 mm.",
+      "layer2Title": "V-snitt",
+      "layer2Desc": "Parallelle V-snitt lar panelet bøye seg; minste bøyeradius 500 mm.",
+      "layer3Title": "Ribbet overflate",
+      "layer3Desc": "Snittene etterlater et lineært relieff, på langs eller på tvers, i ti lagerfarger eller enhver farge på bestilling."
+    },
+    "ordering": {
+      "description": "Leveringstiden er rPET Panels, som Flex Groove skjæres ut av; minsteordre, ferdige mål og levering på forespørsel.",
+      "sizesValue": "Skåret ut av 9 mm rPET Panel (2 800 × 1 220 eller 2 440 × 1 220 mm); ferdige mål på forespørsel"
     }
   },
   "legal": {
@@ -4043,15 +3938,15 @@
     },
     "rpet-panel": {
       "mounting": "Direkte skrufeste eller lim, ingen forboring",
-      "leadTime": "2–3 uker (lagerfarger), 5–6 uker ved spesialbestilling"
+      "leadTime": "≈ 3–4 arbeidsuker"
     },
     "rpet-groove": {
       "mounting": "Lim, Z-klips, skruer eller lekter",
-      "leadTime": "2–3 uker (lagerfarger), 5–6 uker ved spesialbestilling"
+      "leadTime": "≈ 3–4 arbeidsuker"
     },
     "rpet-flex-groove": {
       "mounting": "Limmontering på buede underlag",
-      "leadTime": "2–3 uker (lagerfarger), 5–6 uker ved spesialbestilling"
+      "leadTime": "≈ 3–4 arbeidsuker"
     },
     "solo-flex": {
       "mounting": "Frittstående, leveres ferdig montert",

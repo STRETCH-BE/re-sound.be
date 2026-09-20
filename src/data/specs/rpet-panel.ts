@@ -1,15 +1,19 @@
 /**
  * rPET Panel — specification tables.
  *
- * Transcribed from src/components/sections/rpetpanelpage.tsx,
- * the former <section id="specs"> (lines 758–902 of the pre-refactor file),
- * card by card and row by row, in the original order.
+ * Reconciled with the rPET Panel datasheet (EN · 09/2026, v1.0): the two
+ * "Technical data" tables of page 1 (dimensions and weight; general), the
+ * absorption summary of page 2 (measured on the 12 mm panel; 9 mm not yet
+ * measured), reaction to fire by colour (page 2) and the OEKO-TEX row kept
+ * from the earlier product data.
  *
- * Governed figures (thickness options, αw, class, fire class, recycled
- * content) come from src/data/products.ts via spec(); the OEKO-TEX row is
- * guarded by cert(). The absorption class is derived from the data αw — an
- * "up to" value gives none, so that row stays hidden. Removed: the German
- * fire class (no such data field) and "Recyclability" (no such data field).
+ * Governed figures (format, thickness, αw, NRC, class, fire class, recycled
+ * content, plant) come from src/data/products.ts via spec(); the OEKO-TEX row
+ * is guarded by cert(). Locale-independent literals (surface weight, panel
+ * weights, density, standards) are the datasheet's; values marked ≈ are
+ * calculated from the nominal surface weight and the panel area.
+ * The absorption class is derived from the data αw — an "up to" value gives
+ * none, so that row stays hidden.
  */
 import type { SpecTableDef } from './types';
 import { cert, key, spec } from './types';
@@ -18,34 +22,41 @@ const specs: SpecTableDef = [
   {
     title: key('rpetPanelPage.specs.dimensionsTitle'),
     rows: [
-      { label: key('rpetPanelPage.specs.dimStandard'), value: '1,200 × 2,750 mm' },
-      { label: key('rpetPanelPage.specs.dimCustomMax'), value: '3,000 × 2,000 mm' },
-      { label: key('rpetPanelPage.specs.dimThicknessOptions'), value: spec('rpet-panel', 'thickness') },
-      { label: key('rpetPanelPage.specs.dimCustomThickness'), value: 'Up to 40 mm' },
+      { label: key('productPage.specs.thickness'), value: spec('rpet-panel', 'thickness') },
+      { label: key('rpetPanelPage.specs.formats'), value: '2 800 × 1 220 mm (3.42 m²) · 2 440 × 1 220 mm (2.98 m²)' },
+      { label: key('rpetPanelPage.specs.surfaceWeight'), value: '1.8 / 2.4 kg/m²' },
+      { label: key('rpetPanelPage.specs.panelWeight2800'), value: '≈ 6.1 / 8.2 kg' },
+      { label: key('rpetPanelPage.specs.panelWeight2440'), value: '≈ 5.4 / 7.1 kg' },
+      { label: key('productPage.specLabels.density'), value: '≈ 200 kg/m³' },
+    ],
+  },
+  {
+    title: key('rpetPanelPage.specs.generalTitle'),
+    rows: [
+      { label: key('rpetPanelPage.specs.physMaterial'), value: key('rpetPanelPage.specs.physMaterialVal') },
+      { label: key('productPage.ordering.versions'), value: key('productPage.rpet.ordering.versionsValue') },
+      { label: key('rpetPanelPage.specs.colorStandard'), value: key('productPage.rpet.colours.rangeValue') },
+      { label: key('productPage.ordering.madeIn'), value: spec('rpet-panel', 'madeIn') },
+      { label: key('productPage.specs.recycledContent'), value: spec('rpet-panel', 'recycledContentPct') },
     ],
   },
   {
     title: key('rpetPanelPage.specs.acousticsTitle'),
     rows: [
       { label: key('productPage.specs.absorptionCoeff'), value: spec('rpet-panel', 'alphaW') },
+      { label: key('productPage.specs.nrc'), value: spec('rpet-panel', 'nrc') },
       { label: key('productPage.specs.absorptionClass'), value: spec('rpet-panel', 'absorptionClass') },
-      { label: key('productPage.specs.testStandard'), value: 'ISO 354 / ISO 11654' },
-    ],
-  },
-  {
-    title: key('rpetPanelPage.specs.physicalTitle'),
-    rows: [
-      { label: key('rpetPanelPage.specs.physMaterial'), value: key('productData.specValues.pet100Polyester') },
-      { label: key('productPage.specs.recycledContent'), value: spec('rpet-panel', 'recycledContentPct') },
-      { label: key('rpetPanelPage.specs.physWeight12'), value: '3 kg/m²' },
-      { label: key('rpetPanelPage.specs.physWeight24'), value: '4 kg/m²' },
+      { label: key('rpetPanelPage.specs.acousticsMounting'), value: key('rpetPanelPage.specs.acousticsMountingVal') },
+      { label: key('productPage.specs.testStandard'), value: 'EN ISO 354 · EN ISO 11654 · ASTM C423' },
+      { label: key('rpetPanelPage.specs.acoustics9mm'), value: key('productPage.rpet.acoustics.notMeasured') },
     ],
   },
   {
     title: key('rpetPanelPage.specs.fireTitle'),
     rows: [
-      { label: key('rpetPanelPage.specs.fireEuClass'), value: spec('rpet-panel', 'fireClass') },
+      { label: key('productPage.specLabels.reactionFire'), value: spec('rpet-panel', 'fireClass') },
       { label: key('productPage.specs.testStandard'), value: 'EN 13501-1' },
+      { label: key('rpetPanelPage.specs.fireReports'), value: key('productPage.ordering.onRequest') },
     ],
   },
   {
@@ -53,19 +64,9 @@ const specs: SpecTableDef = [
     rows: [
       {
         label: key('rpetPanelPage.specs.healthOekoTex'),
-        value: cert('rpet-panel', 'OEKO-TEX', 'productData.specValues.oekoStandard100Class1'),
+        value: cert('rpet-panel', 'OEKO-TEX', 'productPage.specs.oekoTexStandard100'),
       },
-      { label: key('rpetPanelPage.specs.vocEmissions'), value: key('productData.specValues.classAPlusIso16000') },
-      { label: key('rpetPanelPage.specs.healthFormaldehyde'), value: key('productData.specValues.none') },
-      { label: key('rpetPanelPage.specs.healthBinders'), value: key('productData.specValues.none') },
-    ],
-  },
-  {
-    title: key('rpetPanelPage.specs.colorsTitle'),
-    rows: [
-      { label: key('rpetPanelPage.specs.colorStandard'), value: key('productData.specValues.fiveMidnightToFrost') },
-      { label: key('rpetPanelPage.specs.colorCustom'), value: key('rpetPanelPage.specs.anyRalNcs') },
-      { label: key('rpetPanelPage.specs.finishOptions'), value: key('rpetPanelPage.specs.finishOptionsVal') },
+      { label: key('productPage.specs.endOfLife'), value: key('productPage.rpet.ordering.endOfLifeText') },
     ],
   },
 ];
