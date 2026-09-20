@@ -110,6 +110,33 @@ hub, price guide, blog posts, manufacturing page).
    keep quote prices and nothing more.
    (d) **Only whole krónur.** `price_isk` takes no decimals (ISK has no
    minor unit); the other three take two.
+10. **The datasheets are live and every document is e-mailed (20 September).**
+   Your four datasheets (rPET Panel, rWood Groove, rWood Micro, rWood Perf,
+   EN · 09/2026) and the rWood colour and finish guide are on the product
+   pages under your file names; the two older rWood Groove / rWood Perf
+   datasheets and finish charts were removed as superseded, rWood Panel got
+   the shared colour guide, and rPET Groove and rPET Flex Groove offer the
+   rPET Panel datasheet as their material datasheet (they are cut from it).
+   Every document card now opens the lead form first; on submit the visitor
+   is told "we have sent it to <address>", the lead goes to
+   leads@stretchgroup.be and the visitor gets a Re-Sound e-mail in their
+   language with a link to the file (`docs/documents.md`). Three things to
+   check on your side:
+   (a) **Send yourself one.** Request a datasheet on a product page and
+   check both e-mails arrive (leads@ and your own address). The visitor's
+   copy goes through the same Power Automate flow as the order
+   confirmations, with `to` = the visitor's address.
+   (b) **Attachment or link.** The file travels as a link (the flow sends
+   text only). If you want the PDF attached, the flow needs one extra step:
+   an HTTP GET on the `documentUrl` field of the payload and the result in
+   the attachment field of "Send an email (V2)". Say so and it stays a link
+   until then.
+   (c) **Other-language datasheets.** Upload
+   `re-sound-<product>-datasheet-nl.pdf` (or fr, de …) next to the English
+   one and the Dutch page sends the Dutch file automatically
+   (`public/documents/README.md`).
+   The datasheet facts that changed the site, and the questions they raise,
+   are in sections C, D and G below and in item 11.
 
 ## B. Confirmed price list (per model)
 
@@ -135,11 +162,11 @@ snapshot at every build, in EN/NL/FR/DE.
 | Product | Shown | Open |
 |---|---|---|
 | Interior, Solid, Divide | 80 % (spec sheet says "≥ 80 %") | confirm; say if "at least 80 %" should be printed |
-| rPET Panel, rPET Flex Groove | 100 % ("made entirely from recycled PET") | confirm |
-| rPET Groove | nothing (the old "100 %" had no source) | give the figure |
-| rWood Groove | nothing (the 60 % was a Backlog row) | give the figure |
-| rWood Perf | 17 % (page badge, unconfirmed) | confirm or it goes |
-| rWood Micro, rWood Panel | nothing | give the figures if known |
+| rPET Panel, rPET Flex Groove | 100 % — confirmed by the rPET Panel datasheet (20 September) | — |
+| rPET Groove | 100 % since 20 September (cut from the rPET Panel, your statement) | — |
+| rWood Groove | nothing (the 60 % was a Backlog row; the datasheet gives no figure) | give the figure |
+| rWood Perf | 17 % (page badge, unconfirmed; not on the datasheet) | confirm or it goes |
+| rWood Micro, rWood Panel | nothing (not on the datasheets) | give the figures if known |
 | Booths | nothing | any figure? |
 
 ## D. αw, NRC and fire class per product (data: `specs`)
@@ -149,13 +176,13 @@ snapshot at every build, in EN/NL/FR/DE.
 | Interior | 1.0 | 0.95 | B-s1,d0 | — |
 | Solid | 1.0 | 0.90 | B-s1,d0 | old page said αw 0.95 / NRC 0.95 — confirm from the test report |
 | Divide | 1.0 | — | B-s1,d0 | old page said 0.85 per side — per side or overall? |
-| rWood Groove | 0.90 | — | B-s1,d0 | old table listed D-s2,d2 for a standard MDF core — is a non-FR core still sold? confirm 0.90 |
-| rWood Micro | 0.90 | — | B-s1,d0 | old table said "up to 1.00 with 50 mm mineral wool" and per-pattern Class A — confirm |
-| rWood Perf | 0.35–0.85 per pattern | — | B-s1,d0 | old cards listed PD8 0.85 / PH10 0.75 / PH8 0.55 / PH5 0.35 and NRC 0.90 — send the per-pattern table |
-| rWood Panel | none | — | B-s1,d0 (FR MDF) / D-s2,d0 | αw/NRC if tested |
-| rPET Panel | up to 1.00 | — | B-s2,d0 | the page used to say 0.95 (24 mm on frame) and the FAQ B-s1,d0 — which is on the certificate? |
-| rPET Groove | none | 0.55 / 0.75 / 0.90 (12/24/36 mm) | B-s1,d0 | αw (needed for any "Class A"), ASTM E84 rating (the "US Class A" row was removed) |
-| rPET Flex Groove | none | — | B-s1,d0 | αw |
+| rWood Groove | 0.90, class A — datasheet | — | B-s1,d0 FR core; D-s2,d2 standard core; felt B-s1,d0 — datasheet (both cores are sold: "Standard, MR or FR MDF") | octave-band values "follow with the new test series" — send them when they exist |
+| rWood Micro | 0.90, class A; up to 1.00 with 50 mm mineral wool — datasheet | — | B-s1,d0 (FR core) — datasheet | — |
+| rWood Perf | PD8 0.85 (B) / PH10 0.75 (C) / PH8 0.55 (D) / PH5 0.35 (D); up to 1.00 with 50 mm mineral wool — datasheet | 0.90 — datasheet | B-s1,d0 (FR core) — datasheet | — |
+| rWood Panel | none | — | B-s1,d0 (FR MDF) / D-s2,d0 | αw/NRC if tested; no datasheet yet for rWood Panel |
+| rPET Panel | 12 mm, by mounting: 0.25 D on the wall · 0.60 C 50 mm cavity · 1.00 A 50 mm cavity + 50 mm stone wool · 0.80 B 100 mm cavity · 0.95 A 100 mm cavity + 100 mm stone wool — datasheet; 9 mm not yet measured | 0.40 / 0.75 / 0.95 / 0.80 / 0.95 — datasheet | B-s1,d0 white, grey, black; B-s2,d0 other colours, Standard and FR — datasheet | the 9 mm measurement when it exists |
+| rPET Groove | none | 0.55 / 0.75 / 0.90 (12/24/36 mm) — earlier product data, not on the rPET Panel datasheet | by colour, as the rPET Panel — datasheet | see item 11: how 24 and 36 mm are built and whether the NRC figures stand |
+| rPET Flex Groove | none (the 9 mm panel is not yet measured) | — | by colour, as the rPET Panel — datasheet | — |
 | Solo ECO | ISO 23351-1: none | | none | measurement pending on the page |
 | Solo Flex | 24 dB(A), class C | | none (the "B-s2,d0" on the safety card was unsourced and removed) | fire classification per booth, CE/IEC 60598 certificates |
 | Duo | ISO 23351-1: none | | none | measurement pending |
@@ -189,9 +216,11 @@ ECO and Duo is worth having before the next campaign.
 - **Solo ECO**: glass-back-wall photo; clear door width; fan count; lighting;
   occupancy sensor; fire class; certifications.
 - **Google Places API key, cron secret, deploy hook** as Vercel env vars.
-- **Certifications with numbers**: FSC chain-of-custody certificate number
-  and scope; OEKO-TEX certificate number; the EPD for rWood Panel (file).
-  The manufacturing page lists only what the data holds.
+- **Certifications with numbers**: the rWood Groove datasheet gives FSC®
+  C191539, OEKO-TEX® Standard 100 for the felt and an EPD to ISO 14025 /
+  EN 15804 (send the EPD file); the OEKO-TEX certificate number and the EPD
+  for rWood Panel are still open. The manufacturing page lists only what
+  the data holds.
 
 ## G. Smaller open points from the accuracy pass
 
@@ -202,9 +231,12 @@ ECO and Duo is worth having before the next campaign.
   produced", "0 % waste to landfill") are unverified; still shown.
 - rWood core described as "compressed recycled textile fibres — the same
   material as Interior": unverified.
-- rWood Panel veneer count: page/meta say 10, hub/collection 8.
-- rWood Perf density "0.45 kg/m³" / "48,40 kg/m³" look like unit errors.
-- rPET Groove "~60 bottles per panel": not in the data.
+- rWood Panel veneer count: settled by the colour and finish guide — twelve
+  veneers (six oaks, Walnut, Tobacco Walnut, White Ash, White Beech, Birch
+  Sliced, Birch Rotary); page, meta and hub now say 12.
+- rWood Perf density "0.45 kg/m³" / "48,40 kg/m³": removed (not on the
+  datasheet).
+- rPET Groove "~60 bottles per panel": removed (no source).
 - Free take-back stated range-wide (incl. booths and the Polish lines):
   confirm the programme's scope and countries (BE/NL/FR/DE/LU).
 - "Franse VOC-klasse A+" for rPET in the Dutch posts: not in the data.
