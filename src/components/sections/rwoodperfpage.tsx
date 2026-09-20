@@ -54,12 +54,14 @@ const veneerImage = (v: Veneer) => `/images/products/rwood/veneers/${v.id}.webp`
 
 // The four perforation patterns (datasheet pages 1–2): hole diameter, open
 // area and the measured αw per pattern (cavity with mineral wool backing).
+// PD8 is the standard pattern; the others are made on request (Michael, 20 September 2026).
 const PATTERNS = [
-  { id: 'pd8', name: 'PD8', holeMm: 8, openPct: 24, double: true, alphaW: 0.85, descKey: 'options.pd8Desc' },
-  { id: 'ph10', name: 'PH10', holeMm: 10, openPct: 18, double: false, alphaW: 0.75, descKey: 'options.ph10Desc' },
-  { id: 'ph8', name: 'PH8', holeMm: 8, openPct: 12, double: false, alphaW: 0.55, descKey: 'options.ph8Desc' },
-  { id: 'ph5', name: 'PH5', holeMm: 5, openPct: 5, double: false, alphaW: 0.35, descKey: 'options.ph5Desc' },
+  { id: 'pd8', name: 'PD8', holeMm: 8, openPct: 24, double: true, alphaW: 0.85, descKey: 'options.pd8Desc', standard: true },
+  { id: 'ph10', name: 'PH10', holeMm: 10, openPct: 18, double: false, alphaW: 0.75, descKey: 'options.ph10Desc', standard: false },
+  { id: 'ph8', name: 'PH8', holeMm: 8, openPct: 12, double: false, alphaW: 0.55, descKey: 'options.ph8Desc', standard: false },
+  { id: 'ph5', name: 'PH5', holeMm: 5, openPct: 5, double: false, alphaW: 0.35, descKey: 'options.ph5Desc', standard: false },
 ] as const;
+const STANDARD_PATTERN = PATTERNS.find((p) => p.standard) ?? PATTERNS[0];
 const patternMin = Math.min(...PATTERNS.map((p) => p.alphaW));
 const patternMax = Math.max(...PATTERNS.map((p) => p.alphaW));
 /** The datasheet's per-pattern figures are printed only while they agree with the governed range. */
@@ -357,8 +359,8 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             </div>
           )}
           <div className="kpi">
-            <span className="kpi-value">{PATTERNS.length}</span>
-            <span className="kpi-label">{t('kpi.patterns')}</span>
+            <span className="kpi-value">{STANDARD_PATTERN.name}</span>
+            <span className="kpi-label">{t('kpi.standardPattern')}</span>
           </div>
         </div>
       </section>
@@ -446,8 +448,9 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
           {PATTERNS.map((p) => {
             const spec = patternSpec(p);
             return (
-              <div key={p.id} className="perforation-card">
+              <div key={p.id} className={`perforation-card${p.standard ? ' standard' : ''}`}>
                 <PatternDrawing id={p.id} holeMm={p.holeMm} openPct={p.openPct} double={p.double} label={`${p.name} — ${spec}`} />
+                {p.standard && <span className="standard-badge">{t('patterns.standardLabel')}</span>}
                 <h3>{p.name}</h3>
                 <span className="perf-spec">{spec}</span>
                 <p>{t(p.descKey)}</p>
@@ -1060,6 +1063,20 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
           border: 1px solid #d6e6f2;
           border-radius: 4px;
           margin-bottom: 1rem;
+        }
+        .perforation-card.standard :global(.perf-drawing) { border-color: var(--brand-blue); box-shadow: 0 0 0 3px var(--brand-blue-pale); }
+        .standard-badge {
+          display: inline-block;
+          align-self: flex-start;
+          font-size: 0.72rem;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: white;
+          background: var(--brand-blue);
+          border-radius: 999px;
+          padding: 0.3rem 0.7rem;
+          margin-bottom: 0.5rem;
         }
         .perforation-card h3 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--deep-blue); margin: 0 0 0.2rem; }
         .perf-spec { font-size: 0.9rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 0.35rem; }

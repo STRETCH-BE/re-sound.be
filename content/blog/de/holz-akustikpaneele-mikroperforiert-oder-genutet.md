@@ -10,7 +10,7 @@ secondaryKeywords: ["mikroperforierte akustikpaneele holz","genutete akustikpane
 intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-11-24"
+datePublished: "2026-09-20"
 dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/holz-akustikpaneele-mikroperforiert-oder-genutet.jpg"
@@ -19,8 +19,7 @@ internalLinks: ["/de/products/holz-akustikpaneele","/de/products/rwood-groove","
 cta: "Fordern Sie das rWood-Musterpaket mit beiden Ausführungen oder ein Angebot pro m² für Ihren Raum an."
 sources: "ISO 11654 (Schallabsorptionsklassen); EN 13501-1 (Brandverhalten); FSC; DIN 18041 (Hörsamkeit in Räumen); VDI 2569 (Büroakustik); ISO 22955; W. C. Sabine (Nachhallformel); Datenblätter und Prüfberichte Re-Sound rWood und rPET."
 faq: [{"question":"Absorbiert ein mikroperforiertes Holzpaneel schlechter als ein genutetes?","answer":"Nein. Beide erreichen laut Datenblatt αw 0,90, also Klasse A nach ISO 11654: das genutete rWood Groove mit seinem eigenen 3 mm starken rPET-Filz auf der Rückseite, das mikroperforierte rWood Micro mit Akustikvlies und Hohlraum hinter dem Paneel. Mit 50 mm Mineralwolle im Hohlraum steigt rWood Micro bis αw 1,00. Entscheiden Sie also nach Aufbau, Optik, Brandklasse, Lieferzeit und Budget, nicht nach der Absorptionsklasse."},{"question":"Welcher Absorber gehört hinter ein Holz-Akustikpaneel?","answer":"Keiner ist Pflicht: Beide Reihen erreichen Klasse A ohne zusätzlichen Absorber. rWood Micro sitzt auf Aluminiumschienen vor einem Hohlraum, in den wahlweise 50 mm Mineralwolle kommen; damit steigt αw bis 1,00. Bei rWood Groove auf Latten kann der Hohlraum Akustikfilz, ein rPET-Paneel oder Mineralwolle aufnehmen. Das rPET-Paneel besteht zu 100 % aus recyceltem PET, ist in Weiß, Grau und Schwarz B-s1,d0 und in den übrigen Farben B-s2,d0 nach EN 13501-1 und lässt sich vor Ort mit Messer oder Säge zuschneiden. Welche Kombination Ihr Raum braucht, hängt von der Soll-Nachhallzeit nach DIN 18041 ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie lange dauert die Lieferung von Holz-Akustikpaneelen?","answer":"Für rWood Micro liefern wir Lagerfurniere in 3 bis 4 Wochen ab Werk, Furniere außerhalb des Lagerprogramms und Sonderanfertigungen in 6 bis 8 Wochen. Für rWood Groove hängt die Lieferzeit vom Lagerbestand ab; wir bestätigen sie bei der Bestellung. Beide Reihen fertigen wir ausschließlich mit FSC-zertifizierten Furnieren in unserem eigenen Werk in Częstochowa (Polen)."}]
-draft: true
-status: "Review"
+draft: false
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1399
 ---

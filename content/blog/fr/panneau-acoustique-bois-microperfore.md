@@ -10,8 +10,8 @@ secondaryKeywords: ["panneau acoustique bois micro-perforé","absorbeur résonan
 intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-11-24"
-dateModified: "2026-11-24"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/panneau-acoustique-bois-microperfore.jpg"
 heroAlt: "Panneau acoustique rWood Micro en placage bois certifié FSC, gros plan sur les microperforations de la surface"
@@ -19,8 +19,7 @@ internalLinks: ["/fr/products/rwood-micro","/fr/products/rwood-groove","/fr/prod
 cta: "Demandez le kit d'échantillons rWood ou un devis au m² avec votre plan."
 sources: "ISO 11654 (classes d'absorption acoustique) ; EN 13501-1 (réaction au feu) ; FSC ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; NBN S 01-400-2 (écoles) ; W.C. Sabine (formule de réverbération) ; fiches techniques et rapports d'essai Re-Sound rWood et rPET."
 faq: [{"question":"Un panneau en bois microperforé absorbe-t-il aussi bien qu'un panneau rainuré ?","answer":"Oui : le rWood Micro et le rWood Groove sont tous deux classés A, avec un αw de 0,90 selon ISO 11654. Avec 50 mm de laine minérale dans la lame d'air, le rWood Micro monte jusqu'à αw 1,00. La différence tient au montage : le rWood Groove porte son propre feutre PET recyclé de 3 mm et se fixe sur tasseaux ou se colle ; le rWood Micro se clipse sur des rails devant une lame d'air, avec laine minérale en option. Prescrivez donc toujours le panneau avec son montage, et vérifiez l'exigence exacte avec votre acousticien."},{"question":"Quelle classe de réaction au feu pour un panneau acoustique en bois microperforé ?","answer":"Le rWood Micro est classé B-s1,d0 selon EN 13501-1 : combustibilité limitée, faible production de fumée, pas de gouttelettes enflammées. C'est la classe souvent exigée dans les écoles, les restaurants et les bâtiments accessibles au public ; vérifiez l'exigence exacte avec votre acousticien et le service de prévention incendie."},{"question":"Quand choisir le bois microperforé plutôt que le feutre PET ?","answer":"Quand l'aspect prime : réception, salle de direction, restaurant, auditorium ou école avec exigence B-s1,d0, le rWood Micro offre une surface bois presque continue en placage certifié FSC. Le feutre rPET reste le choix pour la couleur, le budget sur grande surface et les découpes sur chantier. Souvent, on combine : bois sur le mur que l'on regarde, rPET ailleurs."}]
-draft: true
-status: "Review"
+draft: false
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1394
 ---

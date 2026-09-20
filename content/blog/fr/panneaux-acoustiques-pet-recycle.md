@@ -10,8 +10,8 @@ secondaryKeywords: ["panneau acoustique pet","feutre pet acoustique","panneaux a
 intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-10-27"
-dateModified: "2026-10-27"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/panneaux-acoustiques-pet-recycle.jpg"
 heroAlt: "Panneau acoustique rPET Groove en feutre PET recyclé gris, gros plan sur les rainures et la tranche du feutre"
@@ -19,8 +19,7 @@ internalLinks: ["/fr/products/panneaux-acoustiques-pet","/fr/products/rpet-groov
 cta: "Demandez le kit d'échantillons rPET ou un devis au m² pour votre local."
 sources: "ISO 11654 ; EN 13501-1 ; OEKO-TEX® Standard 100 ; FSC ; W.C. Sabine (formule de réverbération) ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; NBN S 01-400-2 (écoles) ; fiches techniques et rapports d'essai Re-Sound rPET et rWood."
 faq: [{"question":"Un panneau en PET recyclé absorbe-t-il aussi bien qu'un panneau en bois ?","answer":"Cela dépend du montage plus que du matériau. Un rPET Panel de 12 mm atteint αw 1,00 (classe A, ISO 11654) sur une lame d'air de 50 mm avec 50 mm de laine de roche, mais seulement 0,25 (classe D) collé directement au mur ; le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Le rWood Groove et le rWood Micro sont classés A avec αw 0,90. La différence se joue sur l'aspect, le budget et le délai."},{"question":"Quelle épaisseur de panneau PET choisir : 12, 24 ou 36 mm ?","answer":"Le montage compte plus que l'épaisseur. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm avec 50 mm de laine de roche. Pour le rPET Groove, le NRC monte avec l'épaisseur : 0,55 en 12 mm, 0,75 en 24 mm, 0,90 en 36 mm ; le 12 mm se choisit lorsque l'espace disponible est réduit."},{"question":"Peut-on découper, peindre ou imprimer un panneau en PET recyclé ?","answer":"Oui. Le feutre rPET se découpe au couteau, à la scie circulaire, à la scie à panneaux ou à la meuleuse d'angle avec disque métal ; il se peint ; et Re-Sound l'imprime en UV dans son propre atelier. Logos, signalétique et motifs sont donc possibles."}]
-draft: true
-status: "Review"
+draft: false
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1384
 ---

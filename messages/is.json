@@ -2097,7 +2097,8 @@
       "drawingNote": "Teikningar u.þ.b. 1:2, gatastærð og opið flatarmál eins og tilgreint er fyrir hvert mynstur.",
       "coreLight": "Ljós kjarni",
       "coreDark": "Dökkur kjarni",
-      "onRequest": "PD8 er mynstrið á bak við lykiltölurnar. Önnur götunarmynstur (gatastærð, bil, opið flatarmál) eru gerð eftir pöntun samkvæmt þinni teikningu."
+      "onRequest": "PD8 er staðalmynstrið og mynstrið á bak við lykiltölurnar. PH10, PH8 og PH5 ásamt öðrum götunarmynstrum (gatastærð, bil, opið flatarmál) eru gerð eftir pöntun samkvæmt þinni teikningu.",
+      "standardLabel": "Staðalmynstur"
     },
     "surfaces": {
       "colorSelector": "Spónn á lager",
@@ -2177,7 +2178,7 @@
       "subframe": "Undirgrind",
       "mounting": "Uppsetning við prófun",
       "mountingVal": "Holrými með steinull",
-      "pd8Val": "2 × Ø 8 mm · 24 % opið",
+      "pd8Val": "2 × Ø 8 mm · 24 % opið · staðalmynstur",
       "ph10Val": "Ø 10 mm · 18 % opið",
       "ph8Val": "Ø 8 mm · 12 % opið",
       "ph5Val": "Ø 5 mm · 5 % opið",
@@ -2246,7 +2247,8 @@
       "alphaW": "αw, eftir mynstri",
       "alphaWPd8": "αw með mynstri PD8, {range} eftir mynstri",
       "fire": "viðbrögð við eldi, eldtefjandi MDF-kjarni",
-      "patterns": "götunarmynstur, Ø 5 til 10 mm"
+      "patterns": "götunarmynstur, Ø 5 til 10 mm",
+      "standardPattern": "staðalmynstur, 2 × Ø 8 mm · 24 % opið; þrjú önnur eftir pöntun"
     },
     "buildUp": {
       "alt": "Sundurdregin mynd af lögunum þremur: gataður spónn, gegnumboraður eldtefjandi MDF-kjarni, hljóðdúkur",
@@ -2328,7 +2330,8 @@
       "description": "Gatastærð og opið flatarmál fyrir hvern þéttleika. Því stærra sem opna flatarmálið er, því meira hljóðísog; því minna sem gatið er, því minna sýnilegt er mynstrið.",
       "spec": "Ø {d} mm · {pct} % opið",
       "drawingNote": "Teikningar u.þ.b. 2:1, gatastærð og opið flatarmál eins og tilgreint er fyrir hvern þéttleika.",
-      "onRequest": "Aðrir götunarþéttleikar og -mynstur eru gerð eftir pöntun samkvæmt þinni teikningu."
+      "onRequest": "Micro M er staðalþéttleikinn. Nano, Micro S og Micro L ásamt öðrum götunarþéttleikum og -mynstrum eru gerð eftir pöntun samkvæmt þinni teikningu.",
+      "standardLabel": "Staðalþéttleiki"
     },
     "acoustics": {
       "tag": "HLJÓÐVIST",
@@ -2411,7 +2414,7 @@
       "subframe": "Undirgrind",
       "nanoVal": "Ø 0.5 mm · 2.5 % opið",
       "microSVal": "Ø 1.0 mm · 5.2 % opið",
-      "microMVal": "Ø 1.5 mm · 8.4 % opið",
+      "microMVal": "Ø 1.5 mm · 8.4 % opið · staðalþéttleiki",
       "microLVal": "Ø 2.0 mm · 10.6 % opið",
       "coreColoursVal": "Brúnn, grænn eða svartur",
       "subframeVal": "Álbrautir"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, vegið hljóðísog",
       "alphaWClass": "αw, ísogsflokkur {cls}",
       "fire": "viðbrögð við eldi, eldtefjandi MDF-kjarni",
-      "densities": "götunarþéttleikar, Ø 0,5 til 2 mm"
+      "densities": "götunarþéttleikar, Ø 0,5 til 2 mm",
+      "standardDensity": "staðalþéttleiki, Ø 1,5 mm · 8,4 % opið; þrír aðrir eftir pöntun"
     },
     "buildUp": {
       "alt": "Sundurdregin mynd af lögunum þremur: örgataður spónn, eldtefjandi MDF-kjarni með hljóðhólfum, hljóðdúkur",

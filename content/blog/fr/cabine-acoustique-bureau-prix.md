@@ -10,8 +10,8 @@ secondaryKeywords: ["cabine téléphonique de bureau prix","phone box bureau pri
 intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-10-13"
-dateModified: "2026-09-12"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/solo-flex/hero-solo-flex.webp"
 heroImageMissing: "/images/blog/cabine-acoustique-bureau-prix.jpg"
 heroAlt: "Cabine acoustique Solo Flex avec bureau assis-debout installée dans un bureau ouvert"
@@ -19,8 +19,7 @@ internalLinks: ["/fr/products/solo-flex","/fr/products/duo","/fr/products/modula
 cta: "Demandez un devis pour Solo Flex ou commandez notre kit d'échantillons."
 sources: "ISO 23351-1:2020 ; ISO 22955 et ISO 3382-3 ; données produit Re-Sound ; prix publics de trois concurrents, septembre 2026 (2 990 € net, 3 990 € et 9 320 € hors TVA pour une cabine individuelle)."
 faq: [{"question":"Combien coûte une cabine acoustique de bureau en 2026 ?","answer":"Pour une cabine individuelle, les prix publics relevés en septembre 2026 chez les concurrents vont de 2 990 € net à 9 320 € hors TVA. Solo Flex de Re-Sound coûte {{price:solo-flex}} hors TVA sans transport ni pose ; le transport en Europe continentale coûte {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} et la pose par notre équipe {{price:article:WEB-SOLO-FLEX-INST}}, hors TVA. Hors Europe continentale, le transport est chiffré à la confirmation de commande."},{"question":"Une cabine acoustique de classe C est-elle assez silencieuse ?","answer":"Pour téléphoner et tenir des visioconférences dans un bureau ouvert, oui : à environ 24 dB(A) de réduction, vos collègues perçoivent un murmure lointain, mais aucun mot. Pour une réunion confidentielle près d'un plateau très occupé, choisissez une classe supérieure ou un local fermé ; vérifiez l'exigence exacte avec votre acousticien."},{"question":"En combien de temps une cabine acoustique est-elle installée ?","answer":"Quatre à six semaines pour une configuration standard. Deux personnes montent Solo Flex en moins de trois heures ; si notre équipe pose la cabine, comptez environ une heure pour une cabine individuelle, deux heures pour une cabine de réunion et deux à six heures pour un Modular XL."}]
-draft: true
-status: "Review"
+draft: false
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
 wordCount: 1383
 ---

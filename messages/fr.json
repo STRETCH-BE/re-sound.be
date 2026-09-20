@@ -2094,7 +2094,8 @@
       "drawingNote": "Dessins à environ 1:2, taille des trous et surface ouverte telles qu’indiquées par motif.",
       "coreLight": "Âme claire",
       "coreDark": "Âme foncée",
-      "onRequest": "PD8 est le motif des chiffres de référence. D’autres motifs de perforation (taille des trous, entraxe, surface ouverte) sont réalisés sur demande d’après votre dessin."
+      "onRequest": "PD8 est le motif standard et celui des chiffres de référence. PH10, PH8 et PH5 ainsi que d’autres motifs de perforation (taille des trous, entraxe, surface ouverte) sont réalisés sur demande d’après votre dessin.",
+      "standardLabel": "Motif standard"
     },
     "surfaces": {
       "colorSelector": "Placages de stock",
@@ -2174,7 +2175,7 @@
       "subframe": "Ossature",
       "mounting": "Montage lors de l’essai",
       "mountingVal": "Plénum avec laine minérale",
-      "pd8Val": "2 × Ø 8 mm · 24 % de surface ouverte",
+      "pd8Val": "2 × Ø 8 mm · 24 % de surface ouverte · motif standard",
       "ph10Val": "Ø 10 mm · 18 % de surface ouverte",
       "ph8Val": "Ø 8 mm · 12 % de surface ouverte",
       "ph5Val": "Ø 5 mm · 5 % de surface ouverte",
@@ -2243,7 +2244,8 @@
       "alphaW": "αw, selon le motif",
       "alphaWPd8": "αw avec le motif PD8, {range} selon le motif",
       "fire": "réaction au feu, âme MDF ignifugée",
-      "patterns": "motifs de perforation, Ø 5 à 10 mm"
+      "patterns": "motifs de perforation, Ø 5 à 10 mm",
+      "standardPattern": "motif standard, 2 × Ø 8 mm · 24 % ouvert ; trois autres sur demande"
     },
     "buildUp": {
       "alt": "Vue éclatée des trois couches : placage perforé, âme MDF ignifugée percée, voile acoustique",
@@ -2325,7 +2327,8 @@
       "description": "Taille des trous et surface ouverte par densité. Plus la surface ouverte est grande, plus l’absorption est élevée ; plus le trou est petit, moins le motif est visible.",
       "spec": "Ø {d} mm · {pct} % de surface ouverte",
       "drawingNote": "Dessins à environ 2:1, taille des trous et surface ouverte telles qu’indiquées par densité.",
-      "onRequest": "D’autres densités et motifs de perforation sont réalisés sur demande d’après votre dessin."
+      "onRequest": "Micro M est la densité standard. Nano, Micro S et Micro L ainsi que d’autres densités et motifs de perforation sont réalisés sur demande d’après votre dessin.",
+      "standardLabel": "Densité standard"
     },
     "acoustics": {
       "tag": "ACOUSTIQUE",
@@ -2411,7 +2414,7 @@
       "subframe": "Ossature",
       "nanoVal": "Ø 0.5 mm · 2.5 % de surface ouverte",
       "microSVal": "Ø 1.0 mm · 5.2 % de surface ouverte",
-      "microMVal": "Ø 1.5 mm · 8.4 % de surface ouverte",
+      "microMVal": "Ø 1.5 mm · 8.4 % de surface ouverte · densité standard",
       "microLVal": "Ø 2.0 mm · 10.6 % de surface ouverte",
       "coreColoursVal": "Brun, vert ou noir",
       "subframeVal": "Rails en aluminium"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, absorption acoustique pondérée",
       "alphaWClass": "αw, classe d’absorption {cls}",
       "fire": "réaction au feu, âme MDF ignifugée",
-      "densities": "densités de perforation, Ø 0,5 à 2 mm"
+      "densities": "densités de perforation, Ø 0,5 à 2 mm",
+      "standardDensity": "densité standard, Ø 1,5 mm · 8,4 % ouvert ; trois autres sur demande"
     },
     "buildUp": {
       "alt": "Vue éclatée des trois couches : placage microperforé, âme MDF ignifugée à chambres acoustiques, voile acoustique",

@@ -2094,7 +2094,8 @@
       "drawingNote": "Tekeningen ongeveer 1:2, gatgrootte en open oppervlak zoals vermeld per patroon.",
       "coreLight": "Lichte kern",
       "coreDark": "Donkere kern",
-      "onRequest": "PD8 is het patroon achter de kerncijfers. Andere perforatiepatronen (gatgrootte, steek, open oppervlak) maken we op aanvraag naar je tekening."
+      "onRequest": "PD8 is het standaardpatroon en het patroon achter de kerncijfers. PH10, PH8 en PH5 en andere perforatiepatronen (gatgrootte, steek, open oppervlak) maken we op aanvraag naar je tekening.",
+      "standardLabel": "Standaardpatroon"
     },
     "surfaces": {
       "colorSelector": "Voorraadfineren",
@@ -2174,7 +2175,7 @@
       "subframe": "Onderconstructie",
       "mounting": "Montage bij de test",
       "mountingVal": "Spouw met minerale wol erachter",
-      "pd8Val": "2 × Ø 8 mm · 24 % open",
+      "pd8Val": "2 × Ø 8 mm · 24 % open · standaardpatroon",
       "ph10Val": "Ø 10 mm · 18 % open",
       "ph8Val": "Ø 8 mm · 12 % open",
       "ph5Val": "Ø 5 mm · 5 % open",
@@ -2243,7 +2244,8 @@
       "alphaW": "αw, per patroon",
       "alphaWPd8": "αw met patroon PD8, {range} per patroon",
       "fire": "brandreactie, brandvertragende MDF-kern",
-      "patterns": "perforatiepatronen, Ø 5 tot 10 mm"
+      "patterns": "perforatiepatronen, Ø 5 tot 10 mm",
+      "standardPattern": "standaardpatroon, 2 × Ø 8 mm · 24 % open; drie andere op aanvraag"
     },
     "buildUp": {
       "alt": "Opengewerkte weergave van de drie lagen: geperforeerd fineer, doorgeboorde brandvertragende MDF-kern, akoestisch vlies",
@@ -2325,7 +2327,8 @@
       "description": "Gatgrootte en open oppervlak per dichtheid. Hoe groter het open oppervlak, hoe hoger de absorptie; hoe kleiner het gaatje, hoe minder zichtbaar het patroon.",
       "spec": "Ø {d} mm · {pct} % open",
       "drawingNote": "Tekeningen ongeveer 2:1, gatgrootte en open oppervlak zoals vermeld per dichtheid.",
-      "onRequest": "Andere perforatiedichtheden en -patronen maken we op aanvraag naar je tekening."
+      "onRequest": "Micro M is de standaarddichtheid. Nano, Micro S en Micro L en andere perforatiedichtheden en -patronen maken we op aanvraag naar je tekening.",
+      "standardLabel": "Standaarddichtheid"
     },
     "acoustics": {
       "tag": "AKOESTIEK",
@@ -2411,7 +2414,7 @@
       "subframe": "Onderconstructie",
       "nanoVal": "Ø 0.5 mm · 2.5 % open",
       "microSVal": "Ø 1.0 mm · 5.2 % open",
-      "microMVal": "Ø 1.5 mm · 8.4 % open",
+      "microMVal": "Ø 1.5 mm · 8.4 % open · standaarddichtheid",
       "microLVal": "Ø 2.0 mm · 10.6 % open",
       "coreColoursVal": "Bruin, groen of zwart",
       "subframeVal": "Aluminium rails"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, gewogen geluidsabsorptie",
       "alphaWClass": "αw, absorptieklasse {cls}",
       "fire": "brandreactie, brandvertragende MDF-kern",
-      "densities": "perforatiedichtheden, Ø 0,5 tot 2 mm"
+      "densities": "perforatiedichtheden, Ø 0,5 tot 2 mm",
+      "standardDensity": "standaarddichtheid, Ø 1,5 mm · 8,4 % open; drie andere op aanvraag"
     },
     "buildUp": {
       "alt": "Opengewerkte weergave van de drie lagen: microgeperforeerd fineer, brandvertragende MDF-kern met geluidskamers, akoestisch vlies",

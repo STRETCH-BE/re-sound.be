@@ -46,12 +46,14 @@ type Veneer = (typeof VENEERS)[number];
 const veneerImage = (v: Veneer) => `/images/products/rwood/veneers/${v.id}.webp`;
 
 // The four perforation densities (datasheet page 1): hole diameter and open area.
+// Micro M is the standard density; the others are made on request (Michael, 20 September 2026).
 const DENSITIES = [
-  { id: 'nano', name: 'Nano', holeMm: 0.5, openPct: 2.5, descKey: 'options.nanoDesc' },
-  { id: 'micro-s', name: 'Micro S', holeMm: 1.0, openPct: 5.2, descKey: 'options.microsDesc' },
-  { id: 'micro-m', name: 'Micro M', holeMm: 1.5, openPct: 8.4, descKey: 'options.micromDesc' },
-  { id: 'micro-l', name: 'Micro L', holeMm: 2.0, openPct: 10.6, descKey: 'options.microlDesc' },
+  { id: 'nano', name: 'Nano', holeMm: 0.5, openPct: 2.5, descKey: 'options.nanoDesc', standard: false },
+  { id: 'micro-s', name: 'Micro S', holeMm: 1.0, openPct: 5.2, descKey: 'options.microsDesc', standard: false },
+  { id: 'micro-m', name: 'Micro M', holeMm: 1.5, openPct: 8.4, descKey: 'options.micromDesc', standard: true },
+  { id: 'micro-l', name: 'Micro L', holeMm: 2.0, openPct: 10.6, descKey: 'options.microlDesc', standard: false },
 ] as const;
+const STANDARD_DENSITY = DENSITIES.find((d) => d.standard) ?? DENSITIES[0];
 
 /** Square-grid pitch (mm) that gives the stated open area for a hole of diameter d. */
 const pitchMm = (d: number, openPct: number) => d * Math.sqrt(Math.PI / (4 * (openPct / 100)));
@@ -318,8 +320,8 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
             </div>
           )}
           <div className="kpi">
-            <span className="kpi-value">{DENSITIES.length}</span>
-            <span className="kpi-label">{t('kpi.densities')}</span>
+            <span className="kpi-value">{STANDARD_DENSITY.name}</span>
+            <span className="kpi-label">{t('kpi.standardDensity')}</span>
           </div>
         </div>
       </section>
@@ -401,8 +403,9 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
           {DENSITIES.map((d) => {
             const spec = t('perforation.spec', { d: d.holeMm.toFixed(1), pct: String(d.openPct) });
             return (
-              <div key={d.id} className="perforation-card">
+              <div key={d.id} className={`perforation-card${d.standard ? ' standard' : ''}`}>
                 <DensityDrawing id={d.id} holeMm={d.holeMm} openPct={d.openPct} label={`${d.name} — ${spec}`} />
+                {d.standard && <span className="standard-badge">{t('perforation.standardLabel')}</span>}
                 <h3>{d.name}</h3>
                 <span className="perf-spec">{spec}</span>
                 <p>{t(d.descKey)}</p>
@@ -975,6 +978,20 @@ export default function RWoodMicroProductPage({ breadcrumbs, specs, downloads, g
           border: 1px solid #d6e6f2;
           border-radius: 4px;
           margin-bottom: 1rem;
+        }
+        .perforation-card.standard :global(.perf-drawing) { border-color: var(--brand-blue); box-shadow: 0 0 0 3px var(--brand-blue-pale); }
+        .standard-badge {
+          display: inline-block;
+          align-self: flex-start;
+          font-size: 0.72rem;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: white;
+          background: var(--brand-blue);
+          border-radius: 999px;
+          padding: 0.3rem 0.7rem;
+          margin-bottom: 0.5rem;
         }
         .perforation-card h3 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--deep-blue); margin: 0 0 0.2rem; }
         .perf-spec { font-size: 0.9rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 0.35rem; }

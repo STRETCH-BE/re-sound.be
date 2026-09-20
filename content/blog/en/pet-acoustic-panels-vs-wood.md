@@ -10,8 +10,8 @@ secondaryKeywords: ["pet felt acoustic panels","wood acoustic panels","acoustic 
 intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-10-27"
-dateModified: "2026-10-27"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-groove/hero-rWood-Groove.webp"
 heroImageMissing: "/images/blog/pet-acoustic-panels-vs-wood.jpg"
 heroAlt: "rPET Groove felt acoustic panel in grey beside an rWood Groove wood veneer panel, close-up of the grooves"
@@ -19,8 +19,7 @@ internalLinks: ["/en/products/pet-acoustic-panels","/en/products/wood-acoustic-p
 cta: "Request the free sample kit with both materials, or send us your surface area for a quote."
 sources: "ISO 11654 (sound absorption classes); ASTM C423 (NRC); EN 13501-1 (reaction-to-fire classification); ISO 22955, BB93 and BS 8233 as pointers; W.C. Sabine (reverberation formula); OEKO-TEX Standard 100; FSC; Re-Sound product data and test reports for rPET and rWood."
 faq: [{"question":"Does wood absorb less sound than PET felt?","answer":"Not in our ranges. rWood Groove and rWood Micro are both αw 0.90, class A to ISO 11654, and Micro climbs to 1.00 with 50 mm mineral wool in the cavity. The 12 mm rPET Panel spans the same band depending on its mounting: αw 0.80 (class B) on a 100 mm air cavity, 1.00 (class A) on a 50 mm cavity with 50 mm stone wool. The choice comes down to look, fire class, budget and sustainability story, not to absorption."},{"question":"Can I combine PET and wood acoustic panels?","answer":"Yes, and often it is the best answer: wood on the feature wall, PET felt on the long walls and ceiling. rPET goes up with adhesive, Z-clips, screws or battens, rWood Groove on battens or glued, rWood Micro on concealed clips; an rPET panel can even fill the cavity behind rWood Groove as an extra absorber. We take both back free of charge in BE, NL, FR, DE and LU."},{"question":"Which panel is the more sustainable choice?","answer":"rPET Groove is 100% recycled PET and OEKO-TEX Standard 100 certified; rWood uses only FSC-certified veneers. Both are made in our own plant in Częstochowa and taken back free of charge in BE, NL, FR, DE and LU. Recycled content: rPET. Renewable surface: rWood."}]
-draft: true
-status: "Review"
+draft: false
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1386
 ---

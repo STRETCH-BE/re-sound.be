@@ -2097,7 +2097,8 @@
       "drawingNote": "Dibujos a aproximadamente 1:2; tamaño del orificio y área abierta según se indica por patrón.",
       "coreLight": "Núcleo claro",
       "coreDark": "Núcleo oscuro",
-      "onRequest": "PD8 es el patrón de las cifras principales. Otros patrones de perforación (tamaño de orificio, separación, área abierta) se fabrican bajo pedido a partir de su plano."
+      "onRequest": "PD8 es el patrón estándar y el de las cifras principales. PH10, PH8 y PH5 y otros patrones de perforación (tamaño de orificio, separación, área abierta) se fabrican bajo pedido a partir de su plano.",
+      "standardLabel": "Patrón estándar"
     },
     "surfaces": {
       "colorSelector": "Chapas de stock",
@@ -2177,7 +2178,7 @@
       "subframe": "Subestructura",
       "mounting": "Montaje en el ensayo",
       "mountingVal": "Cámara con lana mineral",
-      "pd8Val": "2 × Ø 8 mm · 24 % de área abierta",
+      "pd8Val": "2 × Ø 8 mm · 24 % de área abierta · patrón estándar",
       "ph10Val": "Ø 10 mm · 18 % de área abierta",
       "ph8Val": "Ø 8 mm · 12 % de área abierta",
       "ph5Val": "Ø 5 mm · 5 % de área abierta",
@@ -2246,7 +2247,8 @@
       "alphaW": "αw, según el patrón",
       "alphaWPd8": "αw con el patrón PD8, {range} según el patrón",
       "fire": "reacción al fuego, núcleo MDF ignífugo",
-      "patterns": "patrones de perforación, Ø 5 a 10 mm"
+      "patterns": "patrones de perforación, Ø 5 a 10 mm",
+      "standardPattern": "patrón estándar, 2 × Ø 8 mm · 24 % abierto; tres más bajo pedido"
     },
     "buildUp": {
       "alt": "Vista despiezada de las tres capas: chapa perforada, núcleo MDF ignífugo taladrado, velo acústico",
@@ -2328,7 +2330,8 @@
       "description": "Tamaño del orificio y área abierta por densidad. Cuanto mayor es el área abierta, mayor es la absorción; cuanto menor es el orificio, menos visible es el patrón.",
       "spec": "Ø {d} mm · {pct} % de área abierta",
       "drawingNote": "Dibujos a aproximadamente 2:1; tamaño del orificio y área abierta según se indica por densidad.",
-      "onRequest": "Otras densidades y patrones de perforación se fabrican bajo pedido a partir de su plano."
+      "onRequest": "Micro M es la densidad estándar. Nano, Micro S y Micro L y otras densidades y patrones de perforación se fabrican bajo pedido a partir de su plano.",
+      "standardLabel": "Densidad estándar"
     },
     "acoustics": {
       "tag": "ACÚSTICA",
@@ -2411,7 +2414,7 @@
       "subframe": "Subestructura",
       "nanoVal": "Ø 0.5 mm · 2.5 % de área abierta",
       "microSVal": "Ø 1.0 mm · 5.2 % de área abierta",
-      "microMVal": "Ø 1.5 mm · 8.4 % de área abierta",
+      "microMVal": "Ø 1.5 mm · 8.4 % de área abierta · densidad estándar",
       "microLVal": "Ø 2.0 mm · 10.6 % de área abierta",
       "coreColoursVal": "Marrón, verde o negro",
       "subframeVal": "Raíles de aluminio"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, absorción acústica ponderada",
       "alphaWClass": "αw, clase de absorción {cls}",
       "fire": "reacción al fuego, núcleo MDF ignífugo",
-      "densities": "densidades de perforación, Ø 0,5 a 2 mm"
+      "densities": "densidades de perforación, Ø 0,5 a 2 mm",
+      "standardDensity": "densidad estándar, Ø 1,5 mm · 8,4 % abierto; tres más bajo pedido"
     },
     "buildUp": {
       "alt": "Vista despiezada de las tres capas: chapa microperforada, núcleo MDF ignífugo con cámaras acústicas, velo acústico",

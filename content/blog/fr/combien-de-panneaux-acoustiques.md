@@ -10,8 +10,8 @@ secondaryKeywords: ["calculer panneaux acoustiques","calcul temps de réverbéra
 intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-11-10"
-dateModified: "2026-11-10"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/combien-de-panneaux-acoustiques.jpg"
 heroAlt: "Plan d'une salle de réunion avec les panneaux rPET Groove dessinés sur les deux longs murs"
@@ -19,8 +19,7 @@ internalLinks: ["/fr/products/interior","/fr/products/rpet-groove","/fr/products
 cta: "Envoyez-nous les dimensions de votre local pour un calcul et un devis, ou demandez notre kit d'échantillons."
 sources: "W.C. Sabine (formule de réverbération) ; ISO 11654 (classes d'absorption) ; NBN S 01-400-2 (bâtiments scolaires) ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; données produit Re-Sound."
 faq: [{"question":"Combien de panneaux acoustiques pour un bureau de 100 m² ?","answer":"Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent."},{"question":"L'épaisseur du panneau change-t-elle beaucoup le résultat ?","answer":"Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre."},{"question":"Peut-on poser trop de panneaux ?","answer":"Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local."}]
-draft: true
-status: "Review"
+draft: false
 model: "hoeveel-akoestische-panelen-nodig"
 wordCount: 1399
 ---

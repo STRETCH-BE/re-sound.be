@@ -10,8 +10,8 @@ secondaryKeywords: ["αw vs nrc","class a acoustic panels","acoustic panel speci
 intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-11-24"
-dateModified: "2026-11-24"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-groove/hero-rWood-Groove.webp"
 heroImageMissing: "/images/blog/specifying-acoustic-panels-aw-nrc-class-a.jpg"
 heroAlt: "Close-up of an rWood Groove oak veneer acoustic panel beside a printed specification sheet and laboratory test report"
@@ -19,8 +19,7 @@ internalLinks: ["/en/products/rwood-groove","/en/products/rpet-groove","/en/prod
 cta: "Request the free sample kit, or send us your room schedule and we will return a quote with the datasheet and test report for each range."
 sources: "ISO 11654 (αw and classes); ASTM C423 (NRC); EN 13501-1 (reaction to fire); ISO 22955, ISO 3382-3, BB93 and BS 8233 as pointers; ISO 23351-1 (phone booths); W.C. Sabine; OEKO-TEX Standard 100; FSC; Re-Sound product data and test reports."
 faq: [{"question":"Is αw the same as NRC?","answer":"No. αw (ISO 11654) fits the measured curve from 250 to 4,000 Hz to a reference curve in 0.05 steps, capped at 1.00; NRC (ASTM C423) averages the coefficients at 250, 500, 1,000 and 2,000 Hz. rWood Perf in the PD8 pattern is αw 0.85 but NRC 0.90. Specify one, name its standard, never convert."},{"question":"What does Class A mean for an acoustic panel?","answer":"Class A is the top band of ISO 11654, αw 0.90 to 1.00; Class B is 0.80 to 0.85, Class C 0.60 to 0.75. Interior, Solid and Divide are αw 1.0, Class A, and so are rWood Groove and rWood Micro at αw 0.90; the 12 mm rPET Panel is Class B (αw 0.80) on a 100 mm air cavity and Class A (αw 1.00) on a 50 mm cavity with 50 mm stone wool. Which class a room needs depends on the standard applied; check the exact requirement with your acoustician."},{"question":"Which documents should the specification ask for?","answer":"The datasheet, the test report stating the mounting condition, the EN 13501-1 classification report, the OEKO-TEX Standard 100 or FSC certificate, a recycled content and take-back statement, and the installation guide. Write \"or equal approved\" only if a substitute must submit the same set."}]
-draft: true
-status: "Review"
+draft: false
 model: "pet-vilt-of-houten-akoestische-panelen, hoeveel-akoestische-panelen-nodig"
 wordCount: 1384
 ---

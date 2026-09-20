@@ -2097,7 +2097,8 @@
       "drawingNote": "Tegninger omtrent 1:2, hullstørrelse og åpent areal som angitt per mønster.",
       "coreLight": "Lys kjerne",
       "coreDark": "Mørk kjerne",
-      "onRequest": "PD8 er mønsteret bak nøkkeltallene. Andre perforeringsmønstre (hullstørrelse, avstand, åpent areal) lages på forespørsel etter din tegning."
+      "onRequest": "PD8 er standardmønsteret og mønsteret bak nøkkeltallene. PH10, PH8 og PH5 samt andre perforeringsmønstre (hullstørrelse, avstand, åpent areal) lages på forespørsel etter din tegning.",
+      "standardLabel": "Standardmønster"
     },
     "surfaces": {
       "colorSelector": "Lagerfinerer",
@@ -2177,7 +2178,7 @@
       "subframe": "Underkonstruksjon",
       "mounting": "Montering ved test",
       "mountingVal": "Hulrom med mineralull",
-      "pd8Val": "2 × Ø 8 mm · 24 % åpen",
+      "pd8Val": "2 × Ø 8 mm · 24 % åpen · standardmønster",
       "ph10Val": "Ø 10 mm · 18 % åpen",
       "ph8Val": "Ø 8 mm · 12 % åpen",
       "ph5Val": "Ø 5 mm · 5 % åpen",
@@ -2246,7 +2247,8 @@
       "alphaW": "αw, etter mønster",
       "alphaWPd8": "αw med mønster PD8, {range} etter mønster",
       "fire": "brannreaksjon, brannhemmende MDF-kjerne",
-      "patterns": "perforeringsmønstre, Ø 5 til 10 mm"
+      "patterns": "perforeringsmønstre, Ø 5 til 10 mm",
+      "standardPattern": "standardmønster, 2 × Ø 8 mm · 24 % åpen; tre andre på forespørsel"
     },
     "buildUp": {
       "alt": "Eksplosjonstegning av de tre lagene: perforert finer, gjennomboret brannhemmende MDF-kjerne, akustisk fleece",
@@ -2328,7 +2330,8 @@
       "description": "Hullstørrelse og åpent areal per tetthet. Jo større åpent areal, desto høyere absorpsjon; jo mindre hull, desto mindre synlig mønster.",
       "spec": "Ø {d} mm · {pct} % åpen",
       "drawingNote": "Tegninger omtrent 2:1, hullstørrelse og åpent areal som angitt per tetthet.",
-      "onRequest": "Andre perforeringstettheter og -mønstre lages på forespørsel etter din tegning."
+      "onRequest": "Micro M er standardtettheten. Nano, Micro S og Micro L samt andre perforeringstettheter og -mønstre lages på forespørsel etter din tegning.",
+      "standardLabel": "Standardtetthet"
     },
     "acoustics": {
       "tag": "AKUSTIKK",
@@ -2411,7 +2414,7 @@
       "subframe": "Underkonstruksjon",
       "nanoVal": "Ø 0.5 mm · 2.5 % åpen",
       "microSVal": "Ø 1.0 mm · 5.2 % åpen",
-      "microMVal": "Ø 1.5 mm · 8.4 % åpen",
+      "microMVal": "Ø 1.5 mm · 8.4 % åpen · standardtetthet",
       "microLVal": "Ø 2.0 mm · 10.6 % åpen",
       "coreColoursVal": "Brun, grønn eller svart",
       "subframeVal": "Aluminiumsskinner"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, vektet lydabsorpsjon",
       "alphaWClass": "αw, absorpsjonsklasse {cls}",
       "fire": "brannreaksjon, brannhemmende MDF-kjerne",
-      "densities": "perforeringstettheter, Ø 0,5 til 2 mm"
+      "densities": "perforeringstettheter, Ø 0,5 til 2 mm",
+      "standardDensity": "standardtetthet, Ø 1,5 mm · 8,4 % åpen; tre andre på forespørsel"
     },
     "buildUp": {
       "alt": "Eksplosjonstegning av de tre lagene: mikroperforert finer, brannhemmende MDF-kjerne med lydkamre, akustisk fleece",

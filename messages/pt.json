@@ -2097,7 +2097,8 @@
       "drawingNote": "Desenhos a cerca de 1:2; tamanho do furo e área aberta conforme indicado por padrão.",
       "coreLight": "Núcleo claro",
       "coreDark": "Núcleo escuro",
-      "onRequest": "PD8 é o padrão por detrás dos valores de referência. Outros padrões de perfuração (tamanho do furo, afastamento, área aberta) são feitos a pedido a partir do seu desenho."
+      "onRequest": "PD8 é o padrão standard e o padrão por detrás dos valores de referência. PH10, PH8 e PH5 e outros padrões de perfuração (tamanho do furo, afastamento, área aberta) são feitos a pedido a partir do seu desenho.",
+      "standardLabel": "Padrão standard"
     },
     "surfaces": {
       "colorSelector": "Folheados de stock",
@@ -2177,7 +2178,7 @@
       "subframe": "Subestrutura",
       "mounting": "Montagem no ensaio",
       "mountingVal": "Caixa de ar com lã mineral",
-      "pd8Val": "2 × Ø 8 mm · 24 % de área aberta",
+      "pd8Val": "2 × Ø 8 mm · 24 % de área aberta · padrão standard",
       "ph10Val": "Ø 10 mm · 18 % de área aberta",
       "ph8Val": "Ø 8 mm · 12 % de área aberta",
       "ph5Val": "Ø 5 mm · 5 % de área aberta",
@@ -2246,7 +2247,8 @@
       "alphaW": "αw, consoante o padrão",
       "alphaWPd8": "αw com o padrão PD8, {range} consoante o padrão",
       "fire": "reação ao fogo, núcleo MDF ignífugo",
-      "patterns": "padrões de perfuração, Ø 5 a 10 mm"
+      "patterns": "padrões de perfuração, Ø 5 a 10 mm",
+      "standardPattern": "padrão standard, 2 × Ø 8 mm · 24 % aberto; mais três a pedido"
     },
     "buildUp": {
       "alt": "Vista explodida das três camadas: folheado perfurado, núcleo MDF ignífugo furado, véu acústico",
@@ -2328,7 +2330,8 @@
       "description": "Tamanho do furo e área aberta por densidade. Quanto maior a área aberta, maior a absorção; quanto menor o furo, menos visível o padrão.",
       "spec": "Ø {d} mm · {pct} % de área aberta",
       "drawingNote": "Desenhos a cerca de 2:1; tamanho do furo e área aberta conforme indicado por densidade.",
-      "onRequest": "Outras densidades e padrões de perfuração são feitos a pedido a partir do seu desenho."
+      "onRequest": "Micro M é a densidade standard. Nano, Micro S e Micro L e outras densidades e padrões de perfuração são feitos a pedido a partir do seu desenho.",
+      "standardLabel": "Densidade standard"
     },
     "acoustics": {
       "tag": "ACÚSTICA",
@@ -2411,7 +2414,7 @@
       "subframe": "Subestrutura",
       "nanoVal": "Ø 0.5 mm · 2.5 % de área aberta",
       "microSVal": "Ø 1.0 mm · 5.2 % de área aberta",
-      "microMVal": "Ø 1.5 mm · 8.4 % de área aberta",
+      "microMVal": "Ø 1.5 mm · 8.4 % de área aberta · densidade standard",
       "microLVal": "Ø 2.0 mm · 10.6 % de área aberta",
       "coreColoursVal": "Castanho, verde ou preto",
       "subframeVal": "Calhas de alumínio"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, absorção sonora ponderada",
       "alphaWClass": "αw, classe de absorção {cls}",
       "fire": "reação ao fogo, núcleo MDF ignífugo",
-      "densities": "densidades de perfuração, Ø 0,5 a 2 mm"
+      "densities": "densidades de perfuração, Ø 0,5 a 2 mm",
+      "standardDensity": "densidade standard, Ø 1,5 mm · 8,4 % aberto; mais três a pedido"
     },
     "buildUp": {
       "alt": "Vista explodida das três camadas: folheado microperfurado, núcleo MDF ignífugo com câmaras acústicas, véu acústico",

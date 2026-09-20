@@ -10,8 +10,8 @@ secondaryKeywords: ["how to calculate acoustic panels","reverberation time calcu
 intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-11-10"
-dateModified: "2026-11-10"
+datePublished: "2026-09-20"
+dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/how-many-acoustic-panels-do-i-need.jpg"
 heroAlt: "Floor plan of a meeting room with rPET Groove acoustic panels marked on the two long walls"
@@ -19,8 +19,7 @@ internalLinks: ["/en/products/interior","/en/products/rpet-groove","/en/products
 cta: "Send us the dimensions of your room and we will check the calculation and send a quote with the number of panels per wall."
 sources: "W.C. Sabine, Collected Papers on Acoustics (Sabine formula); ISO 11654 (absorption classes); ISO 22955 and ISO 3382-3 (open-plan offices); BB93 and BS 8233 (UK pointers); EN 13501-1 (fire classification); Re-Sound product data."
 faq: [{"question":"How many acoustic panels do I need for a 100 m² office?","answer":"Without an absorbent ceiling and a height of 3 m, allow 30 to 40 m² of class B wall panels (such as the 12 mm rPET Panel on a 100 mm air cavity, αw 0.80) to go from 1.2 to 0.7 s. With an absorbent ceiling, 10 to 15 m² on the walls is enough."},{"question":"Does the thickness of the panel matter much?","answer":"Less than the mounting. The 12 mm rPET Panel measures αw 0.25 (class D) fixed directly to the wall, 0.80 (class B) on a 100 mm air cavity and 1.00 (class A) on a 50 mm cavity with 50 mm stone wool behind it. Thickness helps too: rPET Groove reaches NRC 0.55, 0.75 and 0.90 at 12, 24 and 36 mm. Calculate with the value for the mounting you will actually build."},{"question":"Can I hang too many panels?","answer":"Yes: below 0.4 s a room sounds dead and people talk louder because they no longer hear themselves. Aim for the guide value and spread the panels around the room."}]
-draft: true
-status: "Review"
+draft: false
 model: "hoeveel-akoestische-panelen-nodig"
 wordCount: 1396
 ---

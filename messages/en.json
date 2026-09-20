@@ -2094,7 +2094,8 @@
       "drawingNote": "Drawings about 1:2, hole size and open area as stated per pattern.",
       "coreLight": "Light core",
       "coreDark": "Dark core",
-      "onRequest": "PD8 is the pattern behind the headline figures. Other perforation patterns (hole size, spacing, open area) are made on request from your drawing."
+      "onRequest": "PD8 is the standard pattern and the one behind the headline figures. PH10, PH8 and PH5 and other perforation patterns (hole size, spacing, open area) are made on request from your drawing.",
+      "standardLabel": "Standard pattern"
     },
     "surfaces": {
       "colorSelector": "Stock veneers",
@@ -2174,7 +2175,7 @@
       "subframe": "Subframe",
       "mounting": "Mounting in test",
       "mountingVal": "Cavity with mineral wool backing",
-      "pd8Val": "2 × Ø 8 mm · 24 % open",
+      "pd8Val": "2 × Ø 8 mm · 24 % open · standard pattern",
       "ph10Val": "Ø 10 mm · 18 % open",
       "ph8Val": "Ø 8 mm · 12 % open",
       "ph5Val": "Ø 5 mm · 5 % open",
@@ -2243,7 +2244,8 @@
       "alphaW": "αw, by pattern",
       "alphaWPd8": "αw with pattern PD8, {range} by pattern",
       "fire": "reaction to fire, FR MDF core",
-      "patterns": "perforation patterns, Ø 5 to 10 mm"
+      "patterns": "perforation patterns, Ø 5 to 10 mm",
+      "standardPattern": "standard pattern, 2 × Ø 8 mm · 24 % open; three more on request"
     },
     "buildUp": {
       "alt": "Exploded view of the three layers: perforated veneer, drilled FR MDF core, acoustic fleece",
@@ -2325,7 +2327,8 @@
       "description": "Hole size and open area per density. The larger the open area, the higher the absorption; the smaller the hole, the less visible the pattern.",
       "spec": "Ø {d} mm · {pct} % open",
       "drawingNote": "Drawings about 2:1, hole size and open area as stated per density.",
-      "onRequest": "Other perforation densities and patterns are made on request from your drawing."
+      "onRequest": "Micro M is the standard density. Nano, Micro S and Micro L and other perforation densities and patterns are made on request from your drawing.",
+      "standardLabel": "Standard density"
     },
     "acoustics": {
       "tag": "ACOUSTICS",
@@ -2408,7 +2411,7 @@
       "subframe": "Subframe",
       "nanoVal": "Ø 0.5 mm · 2.5 % open",
       "microSVal": "Ø 1.0 mm · 5.2 % open",
-      "microMVal": "Ø 1.5 mm · 8.4 % open",
+      "microMVal": "Ø 1.5 mm · 8.4 % open · standard density",
       "microLVal": "Ø 2.0 mm · 10.6 % open",
       "coreColoursVal": "Brown, green or black",
       "subframeVal": "Aluminium rails"
@@ -2471,7 +2474,8 @@
       "alphaW": "αw, weighted sound absorption",
       "alphaWClass": "αw, absorption class {cls}",
       "fire": "reaction to fire, FR MDF core",
-      "densities": "perforation densities, Ø 0.5 to 2 mm"
+      "densities": "perforation densities, Ø 0.5 to 2 mm",
+      "standardDensity": "standard density, Ø 1.5 mm · 8.4 % open; three more on request"
     },
     "buildUp": {
       "alt": "Exploded view of the three layers: micro-perforated veneer, FR MDF core with sound chambers, acoustic fleece",

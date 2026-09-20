@@ -10,7 +10,7 @@ secondaryKeywords: ["nachhallzeit büro","din 18041 büro","vdi 2569 büroakusti
 intent: "learn"
 category: "education"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-11-10"
+datePublished: "2026-09-20"
 dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/din-18041-nachhallzeit-buero.jpg"
@@ -19,8 +19,7 @@ internalLinks: ["/de/products/rpet-groove","/de/products/pet-akustikpaneele","/d
 cta: "Schicken Sie uns Grundriss und Raumhöhe – Sie erhalten eine erste Absorptionsrechnung und ein kostenloses Musterpaket."
 sources: "DIN 18041:2016-03 (Hörsamkeit in Räumen); VDI 2569 (Schallschutz und akustische Gestaltung im Büro); ISO 22955:2021 (akustische Qualität offener Büros); ISO 11654 (Absorptionsklassen); ISO 23351-1 (Sprachpegelminderung von Kabinen); EN 13501-1 (Brandverhalten); W. C. Sabine (Nachhallformel); Produktdaten Re-Sound."
 faq: [{"question":"Welche Nachhallzeit verlangt DIN 18041 für ein Büro?","answer":"Für Besprechungs- und Konferenzräume (Kategorie A, Gruppe A3) gilt T_soll = 0,32·lg(V) − 0,17 s: rund 0,39 s bei 56 m³, 0,57 s bei 200 m³. Großraumbüros zählen zur Kategorie B; dort empfiehlt die Norm ein Mindestverhältnis von Absorptionsfläche zu Raumvolumen, ergänzt durch VDI 2569 und ISO 22955. Prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie viel Absorption braucht ein Großraumbüro von 720 m³?","answer":"Von 1,2 s auf 0,7 s nach Sabine: 0,161 × 720 / 0,7 = 165,6 m² Sabine, vorhanden sind 96,6 m², also 69 m² Sabine zusätzlich – zum Beispiel 50 m² Deckenelemente der Klasse A und 30 m² rPET Panel 12 mm auf 100 mm Luftschicht (αw 0,80, Klasse B). Telefonate auf der Fläche löst das nicht; dafür planen Sie Telefonboxen ein."},{"question":"Ersetzt eine Telefonbox die Akustikpaneele?","answer":"Nein. Paneele senken den Nachhall der ganzen Fläche, eine Telefonbox löst das Problem einer sprechenden Person. Solo Flex mindert den Sprachpegel um rund 24 dB(A) – Klasse C nach ISO 23351-1 – und kostet ab {{price:solo-flex}} zzgl. MwSt. ohne Montage; Modular XL erreicht 25,9 dB(A), ebenfalls Klasse C. Ein gut geplantes Büro braucht beides."}]
-draft: true
-status: "Review"
+draft: false
 model: "akoestiek-open-kantoor-verbeteren, nagalmtijd-klaslokaal-normen"
 wordCount: 1349
 ---

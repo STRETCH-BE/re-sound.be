@@ -2094,7 +2094,8 @@
       "drawingNote": "Zeichnungen etwa 1:2, Lochgröße und offene Fläche wie je Muster angegeben.",
       "coreLight": "Heller Kern",
       "coreDark": "Dunkler Kern",
-      "onRequest": "PD8 ist das Muster hinter den Kennzahlen. Weitere Lochmuster (Lochgröße, Abstand, offene Fläche) fertigen wir auf Anfrage nach Ihrer Zeichnung."
+      "onRequest": "PD8 ist das Standardmuster und das Muster hinter den Kennzahlen. PH10, PH8 und PH5 sowie weitere Lochmuster (Lochgröße, Abstand, offene Fläche) fertigen wir auf Anfrage nach Ihrer Zeichnung.",
+      "standardLabel": "Standardmuster"
     },
     "surfaces": {
       "colorSelector": "Lagerfurniere",
@@ -2174,7 +2175,7 @@
       "subframe": "Unterkonstruktion",
       "mounting": "Einbau bei der Prüfung",
       "mountingVal": "Hohlraum mit Mineralwolle",
-      "pd8Val": "2 × Ø 8 mm · 24 % offen",
+      "pd8Val": "2 × Ø 8 mm · 24 % offen · Standardmuster",
       "ph10Val": "Ø 10 mm · 18 % offen",
       "ph8Val": "Ø 8 mm · 12 % offen",
       "ph5Val": "Ø 5 mm · 5 % offen",
@@ -2243,7 +2244,8 @@
       "alphaW": "αw, je nach Muster",
       "alphaWPd8": "αw mit Muster PD8, {range} je nach Muster",
       "fire": "Brandverhalten, schwer entflammbarer MDF-Kern",
-      "patterns": "Lochmuster, Ø 5 bis 10 mm"
+      "patterns": "Lochmuster, Ø 5 bis 10 mm",
+      "standardPattern": "Standardmuster, 2 × Ø 8 mm · 24 % offen; drei weitere auf Anfrage"
     },
     "buildUp": {
       "alt": "Explosionsdarstellung der drei Schichten: perforiertes Furnier, durchbohrter schwer entflammbarer MDF-Kern, Akustikvlies",
@@ -2325,7 +2327,8 @@
       "description": "Lochgröße und offene Fläche je Dichte. Je größer die offene Fläche, desto höher die Absorption; je kleiner das Loch, desto weniger sichtbar das Muster.",
       "spec": "Ø {d} mm · {pct} % offen",
       "drawingNote": "Zeichnungen etwa 2:1, Lochgröße und offene Fläche wie je Dichte angegeben.",
-      "onRequest": "Weitere Perforationsdichten und -muster fertigen wir auf Anfrage nach Ihrer Zeichnung."
+      "onRequest": "Micro M ist die Standarddichte. Nano, Micro S und Micro L sowie weitere Perforationsdichten und -muster fertigen wir auf Anfrage nach Ihrer Zeichnung.",
+      "standardLabel": "Standarddichte"
     },
     "acoustics": {
       "tag": "AKUSTIK",
@@ -2411,7 +2414,7 @@
       "subframe": "Unterkonstruktion",
       "nanoVal": "Ø 0.5 mm · 2.5 % offen",
       "microSVal": "Ø 1.0 mm · 5.2 % offen",
-      "microMVal": "Ø 1.5 mm · 8.4 % offen",
+      "microMVal": "Ø 1.5 mm · 8.4 % offen · Standarddichte",
       "microLVal": "Ø 2.0 mm · 10.6 % offen",
       "coreColoursVal": "Braun, grün oder schwarz",
       "subframeVal": "Aluminiumschienen"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, bewerteter Schallabsorptionsgrad",
       "alphaWClass": "αw, Absorptionsklasse {cls}",
       "fire": "Brandverhalten, schwer entflammbarer MDF-Kern",
-      "densities": "Perforationsdichten, Ø 0,5 bis 2 mm"
+      "densities": "Perforationsdichten, Ø 0,5 bis 2 mm",
+      "standardDensity": "Standarddichte, Ø 1,5 mm · 8,4 % offen; drei weitere auf Anfrage"
     },
     "buildUp": {
       "alt": "Explosionsdarstellung der drei Schichten: mikroperforiertes Furnier, schwer entflammbarer MDF-Kern mit Schallkammern, Akustikvlies",

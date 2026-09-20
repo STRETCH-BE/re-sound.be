@@ -10,7 +10,7 @@ secondaryKeywords: ["acoustic phone booth price","office phone booth cost","priv
 intent: "compare"
 category: "products"
 author: {"name":"Michael Nicasens","jobTitle":"CEO Stretch Group"}
-datePublished: "2026-10-13"
+datePublished: "2026-09-20"
 dateModified: "2026-09-20"
 heroImage: "/images/products/solo-flex/hero-solo-flex.webp"
 heroImageMissing: "/images/blog/office-phone-booth-prices.jpg"
@@ -19,8 +19,7 @@ internalLinks: ["/en/products/acoustic-phone-booths","/en/products/solo-flex","/
 cta: "Request a quote for Solo Flex and we reply with the price, lead time and installation option for your address."
 sources: "ISO 23351-1:2020 (speech level reduction of enclosed office pods); ISO 22955, ISO 3382-3 and BS 8233 as pointers; ISO 11654; W.C. Sabine; Re-Sound product data; published prices of three competitors, September 2026 (€2,990 net, €3,990 and €9,320 excl. VAT for a one-person booth)."
 faq: [{"question":"How much does an office phone booth cost in 2026?","answer":"Published prices for a one-person booth in September 2026 at competitors run from €2,990 net through €3,990 excl. VAT to €9,320 excl. VAT. Solo Flex from Re-Sound costs {{price:solo-flex}} excl. VAT without transport and installation; transport within mainland Europe is {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} and installation by our own team {{price:article:WEB-SOLO-FLEX-INST}}, both excl. VAT. Outside mainland Europe we quote transport with the order confirmation."},{"question":"Is a Class C phone booth quiet enough?","answer":"For calls and video meetings in an open-plan office, yes: at around 24 dB(A) speech level reduction, colleagues outside hear a distant murmur but no words. For confidential meetings right next to a busy floor, choose a higher class or a closed room, and check the exact requirement with your acoustician."},{"question":"How quickly can a phone booth be in my office?","answer":"Four to six weeks after order confirmation for a standard configuration. Two people can assemble Solo Flex themselves in under three hours; if our team installs it, allow about an hour for a single booth, two hours for a meeting pod and two to six hours for Modular XL."}]
-draft: true
-status: "Review"
+draft: false
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
 wordCount: 1387
 ---

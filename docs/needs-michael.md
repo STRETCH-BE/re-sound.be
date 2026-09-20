@@ -147,10 +147,10 @@ hub, price guide, blog posts, manufacturing page).
    4-Lamella and 3-Lamella by name and dimensions under "other patterns on
    request", with a quote button; the KPI reads "6 × 34 mm lamellas,
    Original pattern as standard". The Mixed sequence question is moot. rWood
-   Perf and Micro keep the datasheet's four patterns / densities (PD8 is the
-   pattern behind the Perf headline figures) with the sentence "other
-   patterns are made on request" — tell me if one of those should be
-   promoted as the standard too. Still open: no clip system is mentioned
+   Perf and Micro: PD8 and Micro M are the standard pattern and density (your
+   answer, 20 September evening); both pages badge them, show them in the
+   KPI band and the spec table, and list the other patterns and densities
+   as made on request. Still open: no clip system is mentioned
    for Groove (battens or glue only); the recycled share of the plank and
    the octave-band values ("follow with the new test series"); the
    take-back sentence is printed on every rWood page because it is on the
@@ -246,7 +246,12 @@ hub, price guide, blog posts, manufacturing page).
    "confirmed on order"), the "micro-perforated absorbs less without a
    backing absorber" story is gone (both Groove and Micro are αw 0,90
    class A), and rWood is described with its MDF core, not a "core of
-   recycled felt".
+   recycled felt". The twelve EN/FR/DE posts had been sitting as drafts
+   (status "Review", scheduled for October and November) and were invisible
+   on the blog index; on your word ("the blog posts are not visible") they
+   were published on 20 September, dated 20 September, and now appear on
+   /en/blog, /fr/blog and /de/blog next to the six Dutch posts, indexed and
+   in the sitemap.
 
 ## B. Confirmed price list (per model)
 

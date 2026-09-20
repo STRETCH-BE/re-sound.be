@@ -2097,7 +2097,8 @@
       "drawingNote": "Ritningar ungefär 1:2, hålstorlek och öppen yta enligt uppgift per mönster.",
       "coreLight": "Ljus kärna",
       "coreDark": "Mörk kärna",
-      "onRequest": "PD8 är mönstret bakom nyckeltalen. Andra perforeringsmönster (hålstorlek, delning, öppen yta) tillverkas på begäran efter din ritning."
+      "onRequest": "PD8 är standardmönstret och mönstret bakom nyckeltalen. PH10, PH8 och PH5 samt andra perforeringsmönster (hålstorlek, delning, öppen yta) tillverkas på begäran efter din ritning.",
+      "standardLabel": "Standardmönster"
     },
     "surfaces": {
       "colorSelector": "Lagerfaner",
@@ -2177,7 +2178,7 @@
       "subframe": "Underkonstruktion",
       "mounting": "Montering vid provning",
       "mountingVal": "Hålrum med mineralull",
-      "pd8Val": "2 × Ø 8 mm · 24 % öppen yta",
+      "pd8Val": "2 × Ø 8 mm · 24 % öppen yta · standardmönster",
       "ph10Val": "Ø 10 mm · 18 % öppen yta",
       "ph8Val": "Ø 8 mm · 12 % öppen yta",
       "ph5Val": "Ø 5 mm · 5 % öppen yta",
@@ -2246,7 +2247,8 @@
       "alphaW": "αw, beroende på mönster",
       "alphaWPd8": "αw med mönster PD8, {range} beroende på mönster",
       "fire": "brandreaktion, brandhämmande MDF-kärna",
-      "patterns": "perforeringsmönster, Ø 5 till 10 mm"
+      "patterns": "perforeringsmönster, Ø 5 till 10 mm",
+      "standardPattern": "standardmönster, 2 × Ø 8 mm · 24 % öppen yta; tre till på begäran"
     },
     "buildUp": {
       "alt": "Sprängskiss av de tre skikten: perforerat faner, genomborrad brandhämmande MDF-kärna, akustikfleece",
@@ -2328,7 +2330,8 @@
       "description": "Hålstorlek och öppen yta per täthet. Ju större öppen yta, desto högre absorption; ju mindre hål, desto mindre synligt mönster.",
       "spec": "Ø {d} mm · {pct} % öppen yta",
       "drawingNote": "Ritningar ungefär 2:1, hålstorlek och öppen yta enligt uppgift per täthet.",
-      "onRequest": "Andra perforeringstätheter och -mönster tillverkas på begäran efter din ritning."
+      "onRequest": "Micro M är standardtätheten. Nano, Micro S och Micro L samt andra perforeringstätheter och -mönster tillverkas på begäran efter din ritning.",
+      "standardLabel": "Standardtäthet"
     },
     "acoustics": {
       "tag": "AKUSTIK",
@@ -2411,7 +2414,7 @@
       "subframe": "Underkonstruktion",
       "nanoVal": "Ø 0.5 mm · 2.5 % öppen yta",
       "microSVal": "Ø 1.0 mm · 5.2 % öppen yta",
-      "microMVal": "Ø 1.5 mm · 8.4 % öppen yta",
+      "microMVal": "Ø 1.5 mm · 8.4 % öppen yta · standardtäthet",
       "microLVal": "Ø 2.0 mm · 10.6 % öppen yta",
       "coreColoursVal": "Brun, grön eller svart",
       "subframeVal": "Aluminiumskenor"
@@ -2474,7 +2477,8 @@
       "alphaW": "αw, vägd ljudabsorption",
       "alphaWClass": "αw, absorptionsklass {cls}",
       "fire": "brandreaktion, brandhämmande MDF-kärna",
-      "densities": "perforeringstätheter, Ø 0,5 till 2 mm"
+      "densities": "perforeringstätheter, Ø 0,5 till 2 mm",
+      "standardDensity": "standardtäthet, Ø 1,5 mm · 8,4 % öppen yta; tre till på begäran"
     },
     "buildUp": {
       "alt": "Sprängskiss av de tre skikten: mikroperforerat faner, brandhämmande MDF-kärna med ljudkammare, akustikfleece",
