@@ -96,7 +96,7 @@ Der Quadratmeterpreis hängt von Stärke, Farbe, Druck und Menge ab und wird per
 | Absorption αw (ISO 11654) | rPET Panel 12 mm: 0,80, Klasse B mit 100 mm Luftschicht; 1,00, Klasse A mit 50 mm Luftschicht und 50 mm Steinwolle | rWood Groove: 0,90, Klasse A; rWood Micro: 0,90, Klasse A, mit 50 mm Mineralwolle bis 1,00 |
 | NRC | rPET Groove: 0,55 / 0,75 / 0,90 bei 12 / 24 / 36 mm | nicht veröffentlicht |
 | Brandverhalten (EN 13501-1) | B-s1,d0 in Weiß, Grau und Schwarz; B-s2,d0 in den übrigen Farben | rWood Groove: B-s1,d0 mit FR-MDF-Kern, D-s2,d2 mit Standard-MDF-Kern; rWood Micro: B-s1,d0 (FR-MDF-Kern) |
-| Material | 100 % recyceltes PET, OEKO-TEX® Standard 100 | ausschließlich FSC-zertifizierte Furniere |
+| Material | vollständig recyceltes PET, OEKO-TEX® Standard 100 | ausschließlich FSC-zertifizierte Furniere |
 | Oberflächen | zehn Lagerfarben, jede Farbe auf Bestellung, lackierbar, UV-Druck | Furnierarten |
 | Bearbeitung vor Ort | Messer, Säge, Winkelschleifer | vorab einplanen (Furnier) |
 | Preis pro m² | auf Anfrage; unter Holz | auf Anfrage; Premium |

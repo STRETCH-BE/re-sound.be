@@ -18,7 +18,7 @@ heroAlt: "rPET Groove felt acoustic panel in grey beside an rWood Groove wood ve
 internalLinks: ["/en/products/pet-acoustic-panels","/en/products/wood-acoustic-panels","/en/products/rpet-groove","/en/products/rpet-panel","/en/products/rpet-flex-groove","/en/products/rwood-groove","/en/products/rwood-perf","/en/products/rwood-micro","/en/products/rwood-veneer","/en/products/interior","/en/sustainability","/en/where-to-buy","/en/contact","/en/products/acoustic-phone-booths"]
 cta: "Request the free sample kit with both materials, or send us your surface area for a quote."
 sources: "ISO 11654 (sound absorption classes); ASTM C423 (NRC); EN 13501-1 (reaction-to-fire classification); ISO 22955, BB93 and BS 8233 as pointers; W.C. Sabine (reverberation formula); OEKO-TEX Standard 100; FSC; Re-Sound product data and test reports for rPET and rWood."
-faq: [{"question":"Does wood absorb less sound than PET felt?","answer":"Not in our ranges. rWood Groove and rWood Micro are both αw 0.90, class A to ISO 11654, and Micro climbs to 1.00 with 50 mm mineral wool in the cavity. The 12 mm rPET Panel spans the same band depending on its mounting: αw 0.80 (class B) on a 100 mm air cavity, 1.00 (class A) on a 50 mm cavity with 50 mm stone wool. The choice comes down to look, fire class, budget and sustainability story, not to absorption."},{"question":"Can I combine PET and wood acoustic panels?","answer":"Yes, and often it is the best answer: wood on the feature wall, PET felt on the long walls and ceiling. rPET goes up with adhesive, Z-clips, screws or battens, rWood Groove on battens or glued, rWood Micro on concealed clips; an rPET panel can even fill the cavity behind rWood Groove as an extra absorber. We take both back free of charge in BE, NL, FR, DE and LU."},{"question":"Which panel is the more sustainable choice?","answer":"rPET Groove is 100% recycled PET and OEKO-TEX Standard 100 certified; rWood uses only FSC-certified veneers. Both are made in our own plant in Częstochowa and taken back free of charge in BE, NL, FR, DE and LU. Recycled content: rPET. Renewable surface: rWood."}]
+faq: [{"question":"Does wood absorb less sound than PET felt?","answer":"Not in our ranges. rWood Groove and rWood Micro are both αw 0.90, class A to ISO 11654, and Micro climbs to 1.00 with 50 mm mineral wool in the cavity. The 12 mm rPET Panel spans the same band depending on its mounting: αw 0.80 (class B) on a 100 mm air cavity, 1.00 (class A) on a 50 mm cavity with 50 mm stone wool. The choice comes down to look, fire class, budget and sustainability story, not to absorption."},{"question":"Can I combine PET and wood acoustic panels?","answer":"Yes, and often it is the best answer: wood on the feature wall, PET felt on the long walls and ceiling. rPET goes up with adhesive, Z-clips, screws or battens, rWood Groove on battens or glued, rWood Micro on concealed clips; an rPET panel can even fill the cavity behind rWood Groove as an extra absorber. We take both back free of charge in BE, NL, FR, DE and LU."},{"question":"Which panel is the more sustainable choice?","answer":"rPET Groove is made entirely from recycled PET and is OEKO-TEX Standard 100 certified; rWood uses only FSC-certified veneers. Both are made in our own plant in Częstochowa and taken back free of charge in BE, NL, FR, DE and LU. Recycled content: rPET. Renewable surface: rWood."}]
 draft: false
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1386
@@ -75,7 +75,7 @@ Indoor air: rPET is OEKO-TEX Standard 100 certified. For rWood we work with FSC-
 
 ## Sustainability: recycled versus renewable
 
-**rPET** starts life as recycled PET; rPET Groove is 100% recycled PET. At end of life we take the panels back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg.
+**rPET** starts life as recycled PET; rPET Groove is made entirely from recycled PET. At end of life we take the panels back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg.
 
 **rWood** puts a renewable raw material on the face: only FSC-certified veneers, no exceptions. The same free take-back applies in the same five countries.
 
@@ -108,7 +108,7 @@ Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-W
 | Cutting and fitting on site, bespoke joinery | [rPET Panel](/en/products/rpet-panel) |
 | B-s1,d0 fire class required in a public building | rPET in white, grey or black, or rWood on the FR MDF core |
 | Boardroom, reception, restaurant, timber interior | rWood Groove / rWood Veneer |
-| Highest recycled content | rPET (100% recycled PET) |
+| Highest recycled content | rPET (made entirely from recycled PET) |
 | Renewable, certified raw material on the face | rWood (FSC veneers only) |
 | Fastest delivery | rPET Groove in stock colours, or rWood Micro / Perf in stock veneers (about 3–4 weeks) |
 
@@ -123,6 +123,6 @@ Not in our ranges. rWood Groove and rWood Micro are both αw 0.90, class A to IS
 Yes, and often it is the best answer: wood on the feature wall, PET felt on the long walls and ceiling. rPET goes up with adhesive, Z-clips, screws or battens, rWood Groove on battens or glued, rWood Micro on concealed clips; an rPET panel can even fill the cavity behind rWood Groove as an extra absorber. We take both back free of charge in BE, NL, FR, DE and LU.
 
 **Which panel is the more sustainable choice?**
-rPET Groove is 100% recycled PET and OEKO-TEX Standard 100 certified; rWood uses only FSC-certified veneers. Both are made in our own plant in Częstochowa and taken back free of charge in BE, NL, FR, DE and LU. Recycled content: rPET. Renewable surface: rWood.
+rPET Groove is made entirely from recycled PET and is OEKO-TEX Standard 100 certified; rWood uses only FSC-certified veneers. Both are made in our own plant in Częstochowa and taken back free of charge in BE, NL, FR, DE and LU. Recycled content: rPET. Renewable surface: rWood.
 
 *Sources: ISO 11654 (sound absorption classes); ASTM C423 (NRC); EN 13501-1 (reaction-to-fire classification); ISO 22955, BB93 and BS 8233 as pointers; W.C. Sabine (reverberation formula); OEKO-TEX Standard 100; FSC; Re-Sound product data and test reports for rPET and rWood.*

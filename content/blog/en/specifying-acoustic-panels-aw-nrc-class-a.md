@@ -71,7 +71,7 @@ At αw 0.80 (the 12 mm rPET Panel on a 100 mm air cavity, Class B) that is 5.0 /
 
 **Emissions and materials.** For felt, ask for OEKO-TEX Standard 100; our rPET carries it. For wood, ask for FSC on the veneer; rWood uses FSC-certified veneers only.
 
-**Recycled content and take-back.** State the minimum recycled content and the end-of-life route. rPET Groove is 100% recycled PET, and all our panels are taken back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg (see [sustainability](/en/sustainability)). Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).
+**Recycled content and take-back.** State the minimum recycled content and the end-of-life route. rPET Groove is made entirely from recycled PET, and all our panels are taken back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg (see [sustainability](/en/sustainability)). Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).
 
 ## Re-Sound ranges as worked examples
 
@@ -87,7 +87,7 @@ Interior starts at {{price:interior}} per set excl. VAT; [felt](/en/products/pet
 
 Example clause for a felt wall panel, Class A or Class B depending on the cavity:
 
-> Acoustic wall panel, PET felt, 100% recycled PET, 12 mm, 2,800 × 1,220 mm, from ten stock colours. αw 1.00, Class A to ISO 11654 on a 50 mm cavity with 50 mm stone wool [or: αw 0.80, Class B on a 100 mm air cavity], in the mounting condition of the test report, matching the installed condition [cavity of … mm / absorber …]. Fire class B-s1,d0 (white, grey, black) or B-s2,d0 (other colours) to EN 13501-1. OEKO-TEX Standard 100. Fixed with screws or adhesive; manufacturer take-back at end of life. Submit: datasheet, test report to the specified standard, EN 13501-1 classification report, certificates and installation guide. Reference: Re-Sound rPET Panel, or equal approved on the same documents.
+> Acoustic wall panel, PET felt made entirely from recycled PET, 12 mm, 2,800 × 1,220 mm, from ten stock colours. αw 1.00, Class A to ISO 11654 on a 50 mm cavity with 50 mm stone wool [or: αw 0.80, Class B on a 100 mm air cavity], in the mounting condition of the test report, matching the installed condition [cavity of … mm / absorber …]. Fire class B-s1,d0 (white, grey, black) or B-s2,d0 (other colours) to EN 13501-1. OEKO-TEX Standard 100. Fixed with screws or adhesive; manufacturer take-back at end of life. Submit: datasheet, test report to the specified standard, EN 13501-1 classification report, certificates and installation guide. Reference: Re-Sound rPET Panel, or equal approved on the same documents.
 
 For a textile panel, swap in Interior, Solid or Divide (αw 1.0, Class A); for a wood feature wall, rWood Groove or rWood Micro (αw 0.90, Class A), naming the MDF core for the fire class and, for rWood Micro, the cavity and its mineral wool.
 
