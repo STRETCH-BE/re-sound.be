@@ -18,7 +18,7 @@ heroAlt: "Plan d'une salle de réunion avec les panneaux rPET Groove dessinés s
 internalLinks: ["/fr/products/interior","/fr/products/rpet-groove","/fr/products/rwood-groove","/fr/products/rwood-micro","/fr/products/cabines-acoustiques","/fr/products/panneaux-acoustiques-bois","/fr/products/panneaux-acoustiques-pet","/fr/contact","https://stretchplafond.be/products/acoustic-stretch-system"]
 cta: "Envoyez-nous les dimensions de votre local pour un calcul et un devis, ou demandez notre kit d'échantillons."
 sources: "W.C. Sabine (formule de réverbération) ; ISO 11654 (classes d'absorption) ; NBN S 01-400-2 (bâtiments scolaires) ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; données produit Re-Sound."
-faq: [{"question":"Combien de panneaux acoustiques pour un bureau de 100 m² ?","answer":"Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe B (comme rPET Groove) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent."},{"question":"L'épaisseur du panneau change-t-elle beaucoup le résultat ?","answer":"Pour la parole (250–4000 Hz), un panneau de 24 mm fait le travail ; plus épais, ou avec une lame d'air derrière lui, il aide surtout contre les basses fréquences (installations, musique). Pour un bureau ou une classe, 24 mm est le choix standard."},{"question":"Peut-on poser trop de panneaux ?","answer":"Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local."}]
+faq: [{"question":"Combien de panneaux acoustiques pour un bureau de 100 m² ?","answer":"Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent."},{"question":"L'épaisseur du panneau change-t-elle beaucoup le résultat ?","answer":"Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre."},{"question":"Peut-on poser trop de panneaux ?","answer":"Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local."}]
 draft: true
 status: "Review"
 model: "hoeveel-akoestische-panelen-nodig"
@@ -68,9 +68,9 @@ L'indice **αw** (ISO 11654) est le coefficient d'absorption pondéré d'un pann
 | D | 0,30 – 0,55 |
 | E | 0,15 – 0,25 |
 
-Nos gammes : [Interior](/fr/products/interior) (textile) αw 1,0, classe A ; [rPET Groove](/fr/products/rpet-groove) et [rWood Groove](/fr/products/rwood-groove) αw 0,85, classe B.
+Nos gammes : [Interior](/fr/products/interior) (textile) αw 1,0, classe A ; [rWood Groove](/fr/products/rwood-groove) et [rWood Micro](/fr/products/rwood-micro) αw 0,90, classe A ; rPET Panel de 12 mm selon le montage, de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et αw 1,00 (classe A) sur une lame d'air de 50 mm avec 50 mm de laine de roche. Le [rPET Groove](/fr/products/rpet-groove) est caractérisé par son NRC (0,55 / 0,75 / 0,90 en 12 / 24 / 36 mm), sans αw publié : il n'entre donc pas dans un calcul de Sabine.
 
-Comptez la surface effective : un panneau rPET Groove de 2 400 × 600 mm compte pour 1,44 m².
+Comptez la surface effective : un rPET Panel de 2 800 × 1 220 mm compte pour 3,42 m², un panneau de 2 440 × 1 220 mm pour 2,98 m².
 
 ## Exemple 1 : salle de réunion de 56 m³
 
@@ -80,7 +80,7 @@ Salle de 5 × 4 m, 2,8 m de hauteur, dalles de moquette, six chaises rembourrée
 - A cible = 0,161 × 56 / 0,6 = **15,0 m² Sabine**
 - À ajouter : **5,0 m² Sabine**
 
-Avec rPET Groove (αw 0,85) : 5,0 / 0,85 = **5,9 m² de panneaux**, soit cinq panneaux de 2 400 × 600 mm (7,2 m²) sur le long mur face à l'écran et derrière les orateurs. Avec Interior (αw 1,0), 5 m² suffisent. Soit 25 à 30 % des 20 m² au sol : normal pour un petit local sans plafond absorbant.
+Avec un rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80, classe B) : 5,0 / 0,80 = **6,3 m² de panneaux**, soit deux panneaux de 2 800 × 1 220 mm (6,84 m²) sur le long mur face à l'écran et derrière les orateurs. Avec Interior (αw 1,0), ou avec le même rPET Panel sur une lame d'air de 50 mm garnie de 50 mm de laine de roche (αw 1,00), 5 m² suffisent. Soit 25 à 35 % des 20 m² au sol : normal pour un petit local sans plafond absorbant.
 
 ## Exemple 2 : bureau ouvert de 720 m³
 
@@ -90,11 +90,11 @@ Plateau de 20 × 12 m, 3 m de hauteur, 30 postes de travail, sol coulé, plafond
 - A cible = 0,161 × 720 / 0,7 = **165,6 m² Sabine**
 - À ajouter : **69,0 m² Sabine**
 
-Tout mettre sur les murs demanderait 69,0 / 0,85 = 81,2 m² de panneaux, plus de la moitié des deux longs murs. Mieux réparti :
+Tout mettre sur les murs, avec un rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80), demanderait 69,0 / 0,80 = 86,3 m² de panneaux, plus des deux tiers des deux longs murs. Mieux réparti :
 
 - **Plafond** : 50 m² d'éléments absorbants de classe A (αw 0,9) = 45,0 m² Sabine. Un [plafond tendu acoustique](https://stretchplafond.be/products/acoustic-stretch-system) de notre société sœur STRETCH fait encore mieux.
-- **Murs** : 30 m² de rPET Groove (αw 0,85) = 25,5 m² Sabine aux points de réflexion.
-- Total : 45,0 + 25,5 = **70,5 m² Sabine** : objectif atteint.
+- **Murs** : 30 m² de rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80, classe B) = 24,0 m² Sabine aux points de réflexion.
+- Total : 45,0 + 24,0 = **69,0 m² Sabine** : objectif atteint.
 
 Les appels qui dérangent encore relèvent des [cabines acoustiques](/fr/products/cabines-acoustiques), pas des panneaux.
 
@@ -106,7 +106,7 @@ Salle de 15 × 10 m, 3,5 m de hauteur, sol carrelé, beaucoup de vitrage, 60 cou
 - A cible = 0,161 × 525 / 0,7 = **120,8 m² Sabine**
 - À ajouter : **60,4 m² Sabine**
 
-Proposition : **55 m² de plafond** en classe A (αw 0,9, soit 49,5 m² Sabine) plus **15 m² de [rWood Micro](/fr/products/rwood-micro)** derrière les banquettes, posé sur un absorbant arrière pour atteindre αw 0,85 (12,8 m² Sabine). Total : 49,5 + 12,8 = 62,3 m² Sabine. Les convives apportent leur propre absorption (0,4 à 0,5 m² Sabine par personne) : à pleine occupation, la salle passe sous 0,6 s. Bois ou feutre selon la zone : voyez nos [panneaux acoustiques en bois](/fr/products/panneaux-acoustiques-bois) et [en PET recyclé](/fr/products/panneaux-acoustiques-pet).
+Proposition : **55 m² de plafond** en classe A (αw 0,9, soit 49,5 m² Sabine) plus **15 m² de [rWood Micro](/fr/products/rwood-micro)** derrière les banquettes, clipsé sur rails devant une lame d'air, αw 0,90 en classe A (13,5 m² Sabine). Total : 49,5 + 13,5 = 63,0 m² Sabine. Les convives apportent leur propre absorption (0,4 à 0,5 m² Sabine par personne) : à pleine occupation, la salle passe sous 0,6 s. Bois ou feutre selon la zone : voyez nos [panneaux acoustiques en bois](/fr/products/panneaux-acoustiques-bois) et [en PET recyclé](/fr/products/panneaux-acoustiques-pet).
 
 ## Règles empiriques pour une estimation rapide
 
@@ -131,10 +131,10 @@ Un doute ? Envoyez-nous via la [page de contact](/fr/contact) les dimensions, le
 ## Questions fréquentes
 
 **Combien de panneaux acoustiques pour un bureau de 100 m² ?**
-Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe B (comme rPET Groove) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent.
+Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent.
 
 **L'épaisseur du panneau change-t-elle beaucoup le résultat ?**
-Pour la parole (250–4000 Hz), un panneau de 24 mm fait le travail ; plus épais, ou avec une lame d'air derrière lui, il aide surtout contre les basses fréquences (installations, musique). Pour un bureau ou une classe, 24 mm est le choix standard.
+Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre.
 
 **Peut-on poser trop de panneaux ?**
 Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local.
