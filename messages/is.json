@@ -90,10 +90,11 @@
       "statLandfill": "Urðunarúrgangur",
       "statFreeLabel": "Ókeypis",
       "statTakeback": "Til baka",
-      "statColors": "Litir",
+      "statAnyLabel": "Allir",
+      "statColors": "litir eftir pöntun",
       "pill1": "Endurunnið hráefni",
       "pill2": "Ókeypis skil",
-      "pill3": "50+ litir",
+      "pill3": "Hvaða litur sem er eftir pöntun",
       "pill4": "Eigin verksmiðjur",
       "imageAlt": "Interior hringrásar-hljóðdeyfiplötur á nútímalegri skrifstofu",
       "statPlants": "Eigin verksmiðjur, BE og PL"
@@ -103,7 +104,7 @@
     "recycled": "Endurvinnanlegar efni",
     "takeback": "Ókeypis endurheimt forrit",
     "veneer": "Raunverulegt viðarfineera yfirborð",
-    "colors": "Yfir 50 staðalitir",
+    "colors": "Hvaða litur sem er eftir pöntun",
     "custom": "Sérsniðin stærð að beiðni",
     "factories": "Framleitt í eigin verksmiðjum í Belgíu og Póllandi",
     "tested": "Prófað fyrir hverja vöru: ISO 11654 / EN 13501-1",
@@ -271,7 +272,7 @@
       },
       "customization": {
         "title": "Sérsniðnir valkostir",
-        "description": "Fáanlegt í yfir 50 litum og sérstærðum til að passa við hönnunarsýn þína."
+        "description": "Fáanlegt í lagerlitum, hvaða lit sem er eftir pöntun og sérstærðum til að passa við hönnunarsýn þína."
       }
     },
     "solo-flex": {
@@ -331,10 +332,11 @@
       },
       "customization": {
         "title": "Fullkomlega sérsniðanlegur",
-        "description": "Yfir 50 litir, sérsniðin stærð og ýmis festingarmöguleikar."
+        "description": "Lagerlitir, sérlitir eftir pöntun, sérsniðnar stærðir og ýmsir festingarmöguleikar."
       }
     },
-    "freeLabel": "Ókeypis"
+    "freeLabel": "Ókeypis",
+    "anyLabel": "Allir litir"
   },
   "circular": {
     "tag": "HRINGRÁSARHAGKERFI",
@@ -3038,7 +3040,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Hvert er endurunnið innihald í hverri vörulínu?",
-        "answer": "Endurunnið efni er mismunandi eftir vörufjölskyldu. Textílserían (Interior, Solid, Divide) er gerð úr endurunnum textíltrefjum með háu hlutfalli endurunnins efnis. rPET serían notar endurunnið PET frá neytendum; rPET Panel og rPET Flex Groove eru að öllu leyti úr endurunnu PET (sambærilegur fjöldi flaskna er mismunandi eftir stærð plötu — um það bil 60 flöskur í staðlaða Groove plötu). rWood serían notar kjarna með háu hlutfalli endurunninna trefja og FSC-vottaðan spón á sýnilegu hliðinni. Ítarlegar efnissundurliðanir og EPD-skjöl eru fáanleg á hverri vörusíðu og sé þess óskað."
+        "answer": "Endurunnið efni er mismunandi eftir vörufjölskyldu. Textílserían (Interior, Solid, Divide) er gerð úr endurunnum textíltrefjum með háu hlutfalli endurunnins efnis. rPET serían notar endurunnið PET frá neytendum; rPET Panel og rPET Flex Groove eru að öllu leyti úr endurunnu PET. rWood serían er með MDF-kjarna (staðal-, rakaþolinn eða eldtefjandi) með FSC-vottuðum spæni á sýnilegu hliðinni; hlutfall endurunnins efnis er ekki birt. Ítarlegar efnissundurliðanir og EPD-skjöl eru fáanleg á hverri vörusíðu og sé þess óskað."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3975,7 +3977,6 @@
       "recycledTextileFiber": "Endurunnar textíltrefjar",
       "e1Carb2Compliant": "Uppfyllir E1 / CARB 2",
       "classAPlusIso16000": "Flokkur A+ (ISO 16000)",
-      "fiveMidnightToFrost": "5 (frá Midnight til Frost)",
       "pet100Polyester": "100% PET (pólýester)",
       "openArea25": "2,5% opið flatarmál",
       "openArea52": "5,2% opið flatarmál",
@@ -4066,11 +4067,11 @@
     },
     "rpet": {
       "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
-      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove, Flex Groove. 12–16 litir, OEKO-TEX®, B-s1,d0 eða B-s2,d0 eftir gerð. Framleiddar í verksmiðju okkar í Póllandi.",
+      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove, Flex Groove. Tíu lagerlitir, hvaða litur sem er eftir pöntun, OEKO-TEX®, B-s1,d0 eða B-s2,d0 eftir lit. Framleiddar í verksmiðju okkar í Póllandi.",
       "h1": "PET hljóðdeyfiplötur: rPET Panel, Groove og Flex Groove",
       "breadcrumb": "rPET",
-      "intro": "PET hljóðdeyfiplötur breyta notuðum drykkjarflöskum í þétt pólýesterfilt sem gleypir hljóð, lætur vinna sig með CNC-fræsara eins og MDF og fæst í litavali sem arkitektar nota í raun og veru. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); rPET línan er framleidd í Częstochowa. Línan samanstendur af þremur gerðum. rPET Panel er slétta platan: hana má skera, fræsa, bora og mála fyrir veggi, loft og húsgögn. rPET Groove bætir við rifflaðri áferð í 12 litum og þremur þykktum fyrir meiri hljóðgleypni á veggjum og í lofti. rPET Flex Groove heldur rifflaða útlitinu en sveigist utan um súlur og bogadregna veggi niður í 500 mm radíus. Allar þrjár gerðirnar eru vottaðar samkvæmt OEKO-TEX® Standard 100, ná B-s1,d0 eða B-s2,d0 samkvæmt EN 13501-1 og má skila til endurvinnslu þegar líftíma lýkur. Notaðu töfluna hér að neðan til að bera PET hljóðdeyfiplötur saman eftir sniði, hljóðgleypni og afhendingartíma og opnaðu síðan gerðasíðuna til að sjá áferðir og niðurhal.",
-      "whyCertsDesc": "Allar rPET gerðir eru vottaðar samkvæmt OEKO-TEX® Standard 100; brunavottorð (EN 13501-1) eru á gerðasíðunum.",
+      "intro": "PET hljóðdeyfiplötur breyta notuðum drykkjarflöskum í þétt pólýesterfilt sem gleypir hljóð, lætur vinna sig með CNC-fræsara eins og MDF og fæst í litavali sem arkitektar nota í raun og veru. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); rPET línan er framleidd í Częstochowa. Línan samanstendur af þremur gerðum. rPET Panel er slétta platan: hana má skera, fræsa, bora og mála fyrir veggi, loft og húsgögn. rPET Groove bætir við rifflaðri áferð í lagerlitunum tíu og þremur þykktum fyrir meiri hljóðgleypni á veggjum og í lofti. rPET Flex Groove heldur rifflaða útlitinu en sveigist utan um súlur og bogadregna veggi niður í 500 mm radíus. Allar þrjár gerðirnar eru vottaðar samkvæmt OEKO-TEX® Standard 100, ná B-s1,d0 eða B-s2,d0 samkvæmt EN 13501-1 og má skila til endurvinnslu þegar líftíma lýkur. Notaðu töfluna hér að neðan til að bera PET hljóðdeyfiplötur saman eftir sniði, hljóðgleypni og afhendingartíma og opnaðu síðan gerðasíðuna til að sjá áferðir og niðurhal.",
+      "whyCertsDesc": "Allar rPET gerðir eru vottaðar samkvæmt OEKO-TEX® Standard 100; flokkunarskýrslur (EN 13501-1) fást eftir beiðni.",
       "applications": {
         "app1": "Opin skrifstofurými og þjónustuver",
         "app2": "Skólar, fyrirlestrasalir og bókasöfn",
@@ -4086,11 +4087,11 @@
         },
         "q2": {
           "question": "Hversu mikið hljóð gleypa PET hljóðdeyfiplötur?",
-          "answer": "Það fer eftir þykkt og uppsetningu: rPET Groove nær NRC 0,55 (12 mm), 0,75 (24 mm) og 0,90 (36 mm); rPET Panel nær allt að αw 1,00 þegar hún er sett upp á grind með loftbili. Plötur sem eru límdar beint á vegg gleypa minna hljóð en plötur með loftbili fyrir aftan."
+          "answer": "Það fer eftir þykkt og uppsetningu. Gagnablað rPET Panel gefur 12 mm plötunni αw 0,25 (flokkur D) beint á vegg, 0,60 (C) með 50 mm loftbili og 1,00 (A) með 50 mm loftbili og 50 mm steinull; 9 mm platan hefur ekki enn verið mæld. rPET Groove nær NRC 0,55 (12 mm), 0,75 (24 mm) og 0,90 (36 mm). Plötur sem eru límdar beint á vegg gleypa minna hljóð en plötur með loftbili fyrir aftan."
         },
         "q3": {
           "question": "Hvaða brunaflokk hafa hljóðdeyfiplötur úr endurunnu PET?",
-          "answer": "rPET Groove og rPET Flex Groove eru flokkaðar B-s1,d0 samkvæmt EN 13501-1; tæknilýsing rPET Panel gefur upp B-s2,d0. Brunavottorð hverrar gerðar er að finna í niðurhalsreitnum á gerðasíðunni."
+          "answer": "Viðbrögð við eldi samkvæmt EN 13501-1 fara eftir lit hjá öllum þremur gerðunum: hvítt, grátt og svart ná B-s1,d0, allir aðrir litir B-s2,d0, bæði í Standard- og FR-útgáfunni. Flokkunarskýrslur fást eftir beiðni."
         },
         "q4": {
           "question": "Get ég skorið og málað PET hljóðdeyfiplötur á staðnum?",
@@ -4098,7 +4099,7 @@
         },
         "q5": {
           "question": "Hver er afhendingartími PET hljóðdeyfiplatna?",
-          "answer": "Lagerlitir eru sendir innan 2–3 vikna frá verksmiðju okkar í Częstochowa; sérlitir taka 5–6 vikur. Stór verkefni eru sett í framleiðslulotur — biddu okkur um bindandi dagsetningu áður en þú pantar."
+          "answer": "Um það bil 3–4 vinnuvikur frá verksmiðju okkar í Częstochowa, afhent EXW; lágmarkspöntun ein plata. Sérlitir og stór verkefni eru sett í framleiðslulotur — biddu okkur um bindandi dagsetningu áður en þú pantar."
         }
       }
     },

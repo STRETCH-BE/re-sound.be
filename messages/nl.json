@@ -90,10 +90,11 @@
       "statLandfill": "Stortplaatsafval",
       "statFreeLabel": "Gratis",
       "statTakeback": "Terugname",
-      "statColors": "Kleuren",
+      "statAnyLabel": "Elke",
+      "statColors": "kleur op bestelling",
       "pill1": "Gerecycleerde grondstof",
       "pill2": "Gratis terugname",
-      "pill3": "50+ kleuren",
+      "pill3": "Elke kleur op bestelling",
       "pill4": "Eigen fabrieken",
       "imageAlt": "Interior circulaire akoestische panelen in een modern kantoor",
       "statPlants": "Eigen fabrieken, BE & PL"
@@ -103,7 +104,7 @@
     "recycled": "Gerecycleerde Materialen",
     "takeback": "Gratis Terugnameprogramma",
     "veneer": "Echte Houtfineer Afwerkingen",
-    "colors": "50+ Standaard Kleuren",
+    "colors": "Elke kleur op bestelling",
     "custom": "Maatwerk op Aanvraag",
     "factories": "Gemaakt in onze eigen fabrieken in België & Polen",
     "tested": "Per product getest: ISO 11654 / EN 13501-1",
@@ -271,7 +272,7 @@
       },
       "customization": {
         "title": "Op Maat",
-        "description": "Beschikbaar in 50+ kleuren en aangepaste maten om bij uw ontwerpvisie te passen."
+        "description": "Beschikbaar in voorraadkleuren, elke kleur op bestelling en aangepaste maten om bij je ontwerp te passen."
       }
     },
     "solo-flex": {
@@ -331,10 +332,11 @@
       },
       "customization": {
         "title": "Volledig Aanpasbaar",
-        "description": "50+ kleuren, aangepaste maten en diverse montageopties."
+        "description": "Voorraadkleuren, maatkleuren op bestelling, aangepaste maten en diverse montageopties."
       }
     },
-    "freeLabel": "Gratis"
+    "freeLabel": "Gratis",
+    "anyLabel": "Elke kleur"
   },
   "circular": {
     "tag": "CIRCULAIRE ECONOMIE",
@@ -3038,7 +3040,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Wat is het gerecycleerde gehalte per productreeks?",
-        "answer": "Het gerecycleerde gehalte verschilt per productfamilie. De textielreeks (Interior, Solid, Divide) is gemaakt van gerecycleerde textielvezels met een hoog gerecycleerd gehalte. De rPET-reeks gebruikt post-consumer gerecycleerd PET; rPET Panel en rPET Flex Groove zijn volledig gemaakt van gerecycleerd PET (het werkelijke aantal flesequivalenten varieert per paneelformaat — ongeveer 60 flessen per standaard Groove-paneel). De rWood-reeks gebruikt een kern met hoog gerecycleerd vezelgehalte met FSC-gecertificeerd fineer aan de zichtzijde. Gedetailleerde materiaalverdelingen en EPD-documentatie zijn beschikbaar op elke productpagina en op aanvraag."
+        "answer": "Het gerecycleerde gehalte verschilt per productfamilie. De textielreeks (Interior, Solid, Divide) is gemaakt van gerecycleerde textielvezels met een hoog gerecycleerd gehalte. De rPET-reeks gebruikt post-consumer gerecycleerd PET; rPET Panel en rPET Flex Groove zijn volledig gemaakt van gerecycleerd PET. De rWood-reeks heeft een MDF-kern (standaard, vochtwerend of brandvertragend) met FSC-gecertificeerd fineer aan de zichtzijde; het gerecycleerde aandeel wordt niet gepubliceerd. Gedetailleerde materiaalverdelingen en EPD-documentatie zijn beschikbaar op elke productpagina en op aanvraag."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3975,7 +3977,6 @@
       "recycledTextileFiber": "Gerecycleerde textielvezel",
       "e1Carb2Compliant": "Voldoet aan E1 / CARB 2",
       "classAPlusIso16000": "Klasse A+ (ISO 16000)",
-      "fiveMidnightToFrost": "5 (Midnight tot Frost)",
       "pet100Polyester": "100% PET (polyester)",
       "openArea25": "2.5% open oppervlak",
       "openArea52": "5.2% open oppervlak",
@@ -4066,11 +4067,11 @@
     },
     "rpet": {
       "title": "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound",
-      "description": "PET akoestische panelen van gerecycleerde flessen: rPET Panel, Groove, Flex Groove. 12–16 kleuren, OEKO-TEX®, B-s1,d0 of B-s2,d0 per model. Gemaakt in onze fabriek in Polen.",
+      "description": "PET akoestische panelen van gerecycleerde flessen: rPET Panel, Groove, Flex Groove. Tien voorraadkleuren, elke kleur op bestelling, OEKO-TEX®, B-s1,d0 of B-s2,d0 per kleur. Gemaakt in onze fabriek in Polen.",
       "h1": "PET akoestische panelen: rPET Panel, Groove en Flex Groove",
       "breadcrumb": "rPET",
-      "intro": "PET akoestische panelen zetten post-consumer flessen om in een dicht polyestervilt dat geluid absorbeert, zich net als MDF met een CNC-frees laat bewerken en verkrijgbaar is in een kleurenpalet dat architecten écht gebruiken. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen); het rPET-gamma wordt gemaakt in Częstochowa. Het gamma telt drie modellen. rPET Panel is de vlakke plaat: zagen, frezen, boren en schilderen voor wanden, plafonds en meubilair. rPET Groove voegt een gegroefd oppervlak toe in 12 kleuren en drie diktes, voor een hogere absorptie op wanden en plafonds. rPET Flex Groove behoudt de gegroefde look, maar buigt rond kolommen en gebogen wanden tot een straal van 500 mm. Alle drie zijn OEKO-TEX® Standard 100-gecertificeerd, halen B-s1,d0 of B-s2,d0 volgens EN 13501-1 en kunnen aan het einde van hun levensduur worden teruggenomen voor recyclage. Vergelijk in de tabel hieronder de PET akoestische panelen op formaat, absorptie en levertermijn en open daarna de modelpagina voor afwerkingen en downloads.",
-      "whyCertsDesc": "Elk rPET-model is OEKO-TEX® Standard 100-gecertificeerd; de brandcertificaten (EN 13501-1) vindt u op de modelpagina's.",
+      "intro": "PET akoestische panelen zetten post-consumer flessen om in een dicht polyestervilt dat geluid absorbeert, zich net als MDF met een CNC-frees laat bewerken en verkrijgbaar is in een kleurenpalet dat architecten écht gebruiken. Re-Sound is een merk van Stretch Group. Wij produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen); het rPET-gamma wordt gemaakt in Częstochowa. Het gamma telt drie modellen. rPET Panel is de vlakke plaat: zagen, frezen, boren en schilderen voor wanden, plafonds en meubilair. rPET Groove voegt een gegroefd oppervlak toe in de tien voorraadkleuren en drie diktes, voor een hogere absorptie op wanden en plafonds. rPET Flex Groove behoudt de gegroefde look, maar buigt rond kolommen en gebogen wanden tot een straal van 500 mm. Alle drie zijn OEKO-TEX® Standard 100-gecertificeerd, halen B-s1,d0 of B-s2,d0 volgens EN 13501-1 en kunnen aan het einde van hun levensduur worden teruggenomen voor recyclage. Vergelijk in de tabel hieronder de PET akoestische panelen op formaat, absorptie en levertermijn en open daarna de modelpagina voor afwerkingen en downloads.",
+      "whyCertsDesc": "Elk rPET-model is OEKO-TEX® Standard 100-gecertificeerd; de classificatierapporten (EN 13501-1) zijn op aanvraag beschikbaar.",
       "applications": {
         "app1": "Open kantoren en callcenters",
         "app2": "Scholen, auditoria en bibliotheken",
@@ -4086,11 +4087,11 @@
         },
         "q2": {
           "question": "Hoeveel geluid absorberen PET akoestische panelen?",
-          "answer": "Dat hangt af van de dikte en de montage: rPET Groove haalt NRC 0.55 (12 mm), 0.75 (24 mm) en 0.90 (36 mm); rPET Panel haalt tot αw 1.00 bij montage op een frame met luchtspouw. Panelen die rechtstreeks op de wand worden gelijmd, absorberen minder dan panelen met een spouw erachter."
+          "answer": "Dat hangt af van de dikte en de montage. Volgens de productfiche van rPET Panel haalt het paneel van 12 mm αw 0,25 (klasse D) rechtstreeks op de wand, 0,60 (C) met een spouw van 50 mm en 1,00 (A) met een spouw van 50 mm en 50 mm steenwol; het paneel van 9 mm is nog niet gemeten. rPET Groove haalt NRC 0,55 (12 mm), 0,75 (24 mm) en 0,90 (36 mm). Panelen die rechtstreeks op de wand worden gelijmd, absorberen minder dan panelen met een spouw erachter."
         },
         "q3": {
           "question": "Welke brandklasse hebben gerecycleerde PET akoestische panelen?",
-          "answer": "rPET Groove en rPET Flex Groove zijn geclassificeerd als B-s1,d0 volgens EN 13501-1; de technische fiche van rPET Panel vermeldt B-s2,d0. Het brandcertificaat van elk model vindt u in het downloadblok van dat model."
+          "answer": "De brandreactie volgens EN 13501-1 hangt bij alle drie de modellen af van de kleur: wit, grijs en zwart halen B-s1,d0, alle andere kleuren B-s2,d0, zowel in de standaard- als in de FR-versie. Classificatierapporten zijn op aanvraag beschikbaar."
         },
         "q4": {
           "question": "Kan ik PET akoestische panelen op de werf zagen en schilderen?",
@@ -4098,7 +4099,7 @@
         },
         "q5": {
           "question": "Wat is de levertermijn van PET akoestische panelen?",
-          "answer": "Voorraadkleuren worden binnen 2–3 weken verzonden vanuit onze fabriek in Częstochowa; maatwerkkleuren vragen 5–6 weken. Grote projecten worden in productiebatches ingepland — vraag ons om een bindende datum voordat u bestelt."
+          "answer": "Ongeveer 3–4 werkweken vanaf onze fabriek in Częstochowa, levering EXW; minimale bestelling één paneel. Maatkleuren en grote projecten worden in productiebatches ingepland — vraag ons om een bindende datum voordat je bestelt."
         }
       }
     },

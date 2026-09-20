@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Er PET-filt brandsikkert?",
-    "answer": "Ja. Vores rPET-paneler er klassificeret B-s1,d0 i henhold til EN 13501-1, hvilket gør dem egnede til både private boliger og offentlige bygninger. Afklar det præcise krav til jeres projekt med jeres akustiker eller brandrådgiver.",
+    "answer": "Ja. Brandreaktionen i henhold til EN 13501-1 afhænger af farven: hvide, grå og sorte rPET-paneler opnår B-s1,d0, alle andre farver B-s2,d0, i både Standard- og FR-versionen, hvilket gør dem egnede til både private boliger og offentlige bygninger. Klassifikationsrapporter fås på forespørgsel; afklar det præcise krav til jeres projekt med jeres akustiker eller brandrådgiver.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Hvor meget lyd absorberer et 24 mm PET-panel?",
-    "answer": "Et 24 mm rPET-panel har en vægtet lydabsorptionskoefficient αw på 0,85, hvilket svarer til absorptionsklasse B i henhold til ISO 11654. Monteres panelet med et luftmellemrum bagved, forbedres absorptionen ved lave frekvenser. Afklar det præcise krav til jeres rum med jeres akustiker.",
+    "question": "Hvor meget lyd absorberer et PET-panel?",
+    "answer": "Det afhænger af tykkelsen og især af monteringen. Målt efter EN ISO 354 opnår 12 mm rPET Panel αw 0,25 (klasse D efter EN ISO 11654) monteret direkte på væggen, 0,60 (klasse C) med 50 mm luftrum og 1,00 (klasse A) med 50 mm luftrum og 50 mm stenuld bagved; 9 mm-pladen er endnu ikke målt. Et luftrum eller mineraluld bag panelet øger altså absorptionen markant og når lavere frekvenser. Afklar det præcise krav til jeres rum med jeres akustiker.",
     "showOn": [
       "rpet",
       "faq"

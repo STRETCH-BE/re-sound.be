@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Is PET felt fire-safe?",
-    "answer": "Yes. Our rPET panels are classified B-s1,d0 according to EN 13501-1, which makes them suitable for both private homes and public buildings. Check the exact requirement for your project with your acoustician or fire-safety adviser.",
+    "answer": "Yes. Reaction to fire to EN 13501-1 depends on the colour: white, grey and black rPET panels reach B-s1,d0, all other colours B-s2,d0, in the Standard and the FR version alike, which suits both private homes and public buildings. Classification reports are available on request; check the exact requirement for your project with your acoustician or fire-safety adviser.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "How much sound does a 24 mm PET panel absorb?",
-    "answer": "A 24 mm rPET panel has a weighted sound absorption coefficient αw of 0.85, which corresponds to absorption class B according to ISO 11654. Mounting the panel with an air gap behind it improves absorption at low frequencies. Check the exact requirement for your room with your acoustician.",
+    "question": "How much sound does a PET panel absorb?",
+    "answer": "It depends on the thickness and, above all, on the mounting. Measured to EN ISO 354, the 12 mm rPET Panel reaches αw 0.25 (class D to EN ISO 11654) fixed directly on the wall, 0.60 (class C) with a 50 mm air cavity and 1.00 (class A) with a 50 mm cavity and 50 mm stone wool behind it; the 9 mm panel is not yet measured. So an air cavity or mineral wool behind the panel raises the absorption sharply and reaches lower frequencies. Check the exact requirement for your room with your acoustician.",
     "showOn": [
       "rpet",
       "faq"

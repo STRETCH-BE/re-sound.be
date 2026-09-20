@@ -214,6 +214,19 @@ hub, price guide, blog posts, manufacturing page).
    say when it will be.
    (e) Minimum quantities for made-to-order colours ("on request" now) and
    the mounting strings in the product data (earlier data, untouched).
+   (f) **The rest of the site now follows the datasheet too** (20
+   September, second pass): the homepage, the rPET range page, the general
+   FAQ, the workbook FAQ (FAQ-012 fire class, FAQ-014 absorption) and eleven
+   blog posts in EN/NL/FR/DE say "ten stock colours, any colour to order",
+   "≈ 3–4 working weeks", fire class by colour and the 12 mm absorption by
+   mounting instead of "12/16/50+ colours", "2–3 weeks", "24 mm αw 0,85
+   class B", VOC A+ and "custom above 200 m²". The homepage stat "50+
+   colours" became "Any colour to order" — no stock-colour count across the
+   range is derivable from the data (rPET 10, rWood Groove 5, Micro/Perf 8,
+   veneers 12, booths 2 shells × 4 felts). Two things still quote the old
+   content workbook: several blog posts use **rPET Groove 24 mm, αw 0,85,
+   class B** as a worked example, and the rPET Groove NRC figures
+   (see (c)). Neither is on a datasheet — confirm them or say what to use.
 
 ## B. Confirmed price list (per model)
 
@@ -303,7 +316,7 @@ ECO and Duo is worth having before the next campaign.
 
 (full raw list in the sprint report)
 
-- "50+ colours" (homepage) is not derivable from the data; left.
+- "50+ colours" (homepage): replaced on 20 September by "Any colour to order" (see item 12 f).
 - Sustainability page stats ("50+ tons textiles saved", "10K+ m² panels
   produced", "0 % waste to landfill") are unverified; still shown.
 - rWood core described as "compressed recycled textile fibres — the same

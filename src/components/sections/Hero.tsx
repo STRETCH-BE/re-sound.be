@@ -154,7 +154,7 @@ export default function Hero() {
               <span className="stat-lbl">{t('circular.statTakeback')}</span>
             </div>
             <div className="stat">
-              <span className="stat-num">50+</span>
+              <span className="stat-num">{t('circular.statAnyLabel')}</span>
               <span className="stat-lbl">{t('circular.statColors')}</span>
             </div>
           </div>

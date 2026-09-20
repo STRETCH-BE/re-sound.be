@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Is PET-vilt brandveilig?",
-    "answer": "Ja. Onze rPET-panelen zijn geclassificeerd als B-s1,d0 volgens EN 13501-1, waardoor ze geschikt zijn voor zowel privéwoningen als openbare gebouwen. Controleer de exacte vereiste voor uw project bij uw akoesticus of brandveiligheidsadviseur.",
+    "answer": "Ja. De brandreactie volgens EN 13501-1 hangt af van de kleur: witte, grijze en zwarte rPET-panelen halen B-s1,d0, alle andere kleuren B-s2,d0, zowel in de standaard- als in de FR-versie, wat ze geschikt maakt voor zowel privéwoningen als openbare gebouwen. Classificatierapporten zijn op aanvraag beschikbaar; controleer de exacte vereiste voor uw project bij uw akoesticus of brandveiligheidsadviseur.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Hoeveel geluid absorbeert een PET-paneel van 24 mm?",
-    "answer": "Een rPET-paneel van 24 mm heeft een gewogen geluidsabsorptiecoëfficiënt αw van 0,85, wat overeenkomt met absorptieklasse B volgens ISO 11654. Montage met een luchtspouw achter het paneel verbetert de absorptie in de lage frequenties. Controleer de exacte vereiste voor uw ruimte bij uw akoesticus.",
+    "question": "Hoeveel geluid absorbeert een PET-paneel?",
+    "answer": "Dat hangt af van de dikte en vooral van de montage. Gemeten volgens EN ISO 354 haalt het rPET Panel van 12 mm αw 0,25 (klasse D volgens EN ISO 11654) rechtstreeks op de wand, 0,60 (klasse C) met een luchtspouw van 50 mm en 1,00 (klasse A) met een spouw van 50 mm en 50 mm steenwol erachter; het paneel van 9 mm is nog niet gemeten. Een luchtspouw of minerale wol achter het paneel verhoogt de absorptie dus sterk en reikt tot lagere frequenties. Controleer de exacte vereiste voor uw ruimte bij uw akoesticus.",
     "showOn": [
       "rpet",
       "faq"

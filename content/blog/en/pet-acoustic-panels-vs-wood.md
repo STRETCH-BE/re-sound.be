@@ -58,7 +58,7 @@ At αw 0.85 that is 5.0 / 0.85 = **5.9 m² of panels** in either material: five 
 
 ## Look and interior
 
-**PET is colour.** [rPET Groove](/en/products/rpet-groove) comes in 12 colours, in 12, 24 or 36 mm, and rPET panels can be painted or UV-printed in-house with your own graphics: a coloured wall, a logo in the felt. [rPET Flex Groove](/en/products/rpet-flex-groove) follows columns and curved walls.
+**PET is colour.** [rPET Groove](/en/products/rpet-groove) comes in the ten rPET stock colours (any colour to order), in 12, 24 or 36 mm, and rPET panels can be painted or UV-printed in-house with your own graphics: a coloured wall, a logo in the felt. [rPET Flex Groove](/en/products/rpet-flex-groove) follows columns and curved walls.
 
 **Wood is warmth.** rWood Groove and rWood Perf show the veneer through their pattern; [rWood Veneer](/en/products/rwood-veneer) offers a choice of FSC-certified veneers; rWood Micro has an almost closed surface that reads as a plain wood panel. In boardrooms, reception areas, restaurants and lecture theatres, wood nearly always wins on presence.
 
@@ -94,7 +94,7 @@ Both are made in our own plant in Częstochowa from raw materials sourced in the
 
 Per square metre, PET felt is the more economical of the two and veneered wood the premium product; ask for a quote with your surface area. Prices are excl. VAT; transport outside Belgium, including to the UK, is quoted separately. Lead times from our own production:
 
-- **rPET Groove**: stock colours in 2–3 weeks; custom colours 5–6 weeks.
+- **rPET Groove**: about 3–4 working weeks; made-to-order colours on request.
 - **rWood Groove**: stock veneers in 3–4 weeks; non-stock veneers 6–8 weeks.
 
 Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). rPET and rWood come from Częstochowa; the textile range from Beveren-Waas, where you can see both materials in the showroom by appointment. See [where to buy](/en/where-to-buy) or use the [contact page](/en/contact).
@@ -110,7 +110,7 @@ Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-W
 | Boardroom, reception, restaurant, timber interior | rWood Groove / rWood Veneer |
 | Highest recycled content | rPET (100% recycled PET) |
 | Renewable, certified raw material on the face | rWood (FSC veneers only) |
-| Fastest delivery | rPET Groove from stock (2–3 weeks) |
+| Fastest delivery | rPET Groove in stock colours (about 3–4 working weeks) |
 
 Still undecided? Request the free sample kit and compare both materials in the room itself. The calls that still disturb the floor once the panels are up are a job for an [office phone booth](/en/products/acoustic-phone-booths), not for more felt.
 

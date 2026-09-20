@@ -19,7 +19,7 @@ heroAlt: "Klaslokaal met rPET Groove panelen op de achterwand en een absorberend
 internalLinks: ["/nl/applications/onderwijs","/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/interior","/nl/products/rwood-micro","/nl/products/divide","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag de bestektekst en een stalenpakket voor je school"
 sources: "NBN S 01-400-2:2012 (akoestische criteria voor schoolgebouwen); DIN 18041:2016 (Hörsamkeit in Räumen); ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); productgegevens Re-Sound."
-faq: [{"question":"Welke nagalmtijd is verplicht in een klaslokaal?","answer":"NBN S 01-400-2 legt per lokaaltype en volume een maximale nominale nagalmtijd op; voor een standaardklas komt dat in de praktijk neer op ongeveer 0,6 tot 0,8 s (normaal comfort), strenger voor verhoogd comfort. Laat de exacte eis berekenen door je architect of akoesticus."},{"question":"Volstaan wandpanelen alleen in een klas?","answer":"Meestal niet zonder veel wandoppervlak in te nemen: het plafond is het grootste vlak en het efficiëntst. Plafond plus achterwand is de combinatie die in de meeste klassen de norm haalt."},{"question":"Hoe snel kan een school geplaatst worden?","answer":"Voorraadkleuren rPET leveren we in 2 à 3 weken; een gemiddelde klas plaatst een team op een halve dag. Bestel vóór eind mei om zeker in de zomervakantie te plaatsen."}]
+faq: [{"question":"Welke nagalmtijd is verplicht in een klaslokaal?","answer":"NBN S 01-400-2 legt per lokaaltype en volume een maximale nominale nagalmtijd op; voor een standaardklas komt dat in de praktijk neer op ongeveer 0,6 tot 0,8 s (normaal comfort), strenger voor verhoogd comfort. Laat de exacte eis berekenen door je architect of akoesticus."},{"question":"Volstaan wandpanelen alleen in een klas?","answer":"Meestal niet zonder veel wandoppervlak in te nemen: het plafond is het grootste vlak en het efficiëntst. Plafond plus achterwand is de combinatie die in de meeste klassen de norm haalt."},{"question":"Hoe snel kan een school geplaatst worden?","answer":"rPET leveren we in ongeveer 3 à 4 werkweken; een gemiddelde klas plaatst een team op een halve dag. Bestel vóór eind mei om zeker in de zomervakantie te plaatsen."}]
 draft: false
 wordCount: 1286
 ---
@@ -67,7 +67,7 @@ Voorstel: **30 m² absorberend plafond** van klasse A (αw 0,9), goed voor 27 m�
 Een school is geen kantoor: er wordt tegen de wand geleund, met stoelen geschoven en met natte sponzen gewerkt. Onze aanbevelingen per zone:
 
 - **Plafond eerst.** Een [akoestisch spanplafond](https://stretchplafond.be/products/acoustic-stretch-system) (naadloos, in één dag geplaatst door ons zusterbedrijf STRETCH) of plafondpanelen in gerecycleerd PET halen het grootste deel van de nagalm weg zonder wandoppervlak in te nemen.
-- **Achterwand en zijwand.** [rPET Groove](/nl/products/rpet-groove): 12 kleuren, 12 / 24 / 36 mm (NRC 0,55 tot 0,90), brandklasse B-s1,d0, te bewerken als MDF en makkelijk te vervangen per paneel. Op oorhoogte van de leerlingen, niet boven de kasten.
+- **Achterwand en zijwand.** [rPET Groove](/nl/products/rpet-groove): tien voorraadkleuren en elke kleur op bestelling, 12 / 24 / 36 mm (NRC 0,55 tot 0,90), brandklasse B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren, te bewerken als MDF en makkelijk te vervangen per paneel. Op oorhoogte van de leerlingen, niet boven de kasten.
 - **Kleuterklassen en zorglokalen.** [Interior](/nl/products/interior): modulaire textielpanelen (αw 1,0, klasse A) met een afneembare, wasbare hoes.
 - **Refter, aula en polyvalente zaal.** [rWood Micro](/nl/products/rwood-micro): micro-geperforeerd houtfineer met brandklasse B-s1,d0, representatief genoeg voor de aula en absorberend genoeg voor de refter.
 - **Open leeromgevingen.** [Divide](/nl/products/divide): vrijstaande, magnetisch koppelbare scheidingswanden die leerzones afbakenen zonder muren te bouwen.
@@ -76,8 +76,8 @@ Een school is geen kantoor: er wordt tegen de wand geleund, met stoelen geschove
 
 Voor schoolgebouwen zijn de brandklasse en de binnenluchtkwaliteit even belangrijk als de akoestiek:
 
-- **Brandklasse (EN 13501-1)**: rPET Groove, rPET Flex Groove en de rWood-reeks (Groove, Micro, Perf) zijn B-s1,d0 — beperkt brandbaar, weinig rook, geen brandende druppels. rPET Panel is B-s2,d0.
-- **Emissies**: rPET is OEKO-TEX® Standard 100 gecertificeerd en getest volgens de Franse VOC-klasse A+, de strengste voor binnenlucht.
+- **Brandklasse (EN 13501-1)**: de rPET-reeks (Panel, Groove, Flex Groove) is B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren — beperkt brandbaar, weinig rook, geen brandende druppels; de rWood-reeks (Groove, Micro, Perf) is B-s1,d0 op de brandvertragende MDF-kern.
+- **Emissies**: rPET is OEKO-TEX® Standard 100 gecertificeerd.
 - **Onderhoud**: [PET-vilt](/nl/products/pet-akoestische-panelen) stofzuig je en behandel je plaatselijk bij vlekken; de hoezen van Interior gaan in de wasmachine. Beschadigde panelen vervang je per stuk, zonder de wand te herschilderen.
 - **Herkomst**: het fineer van rWood is FSC-gecertificeerd; het certificaatnummer leveren we op aanvraag per levering.
 
@@ -87,7 +87,7 @@ De meeste scholen plaatsen akoestiek in de zomervakantie. Reken terug vanaf de e
 
 1. **Meting en voorstel** in het voorjaar; goedkeuring door het schoolbestuur.
 2. **Bestek**: voor elk product leveren we een bestektekst met αw, klasse, brandklasse, formaat, dikte en gerecycleerd gehalte, zodat een aanbesteding zonder merknaam kan.
-3. **Bestelling vóór eind mei**: voorraadkleuren rPET leveren we in 2 à 3 weken, rWood-voorraadfineren in 3 à 4 weken; maatkleuren en niet-voorraadfineren 5 à 8 weken.
+3. **Bestelling vóór eind mei**: rPET leveren we in ongeveer 3 à 4 werkweken, rWood-voorraadfineren in 3 à 4 weken; maatkleuren op aanvraag, niet-voorraadfineren 6 à 8 weken.
 4. **Plaatsing** in juli, meting in augustus, klaar voor september.
 
 Aan het einde van de levensduur — of bij een verbouwing — nemen we de panelen gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg; het materiaal gaat opnieuw onze productie in. Re-Sound is een merk van Stretch Group en produceert in eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
@@ -103,6 +103,6 @@ NBN S 01-400-2 legt per lokaaltype en volume een maximale nominale nagalmtijd op
 Meestal niet zonder veel wandoppervlak in te nemen: het plafond is het grootste vlak en het efficiëntst. Plafond plus achterwand is de combinatie die in de meeste klassen de norm haalt.
 
 **Hoe snel kan een school geplaatst worden?**
-Voorraadkleuren rPET leveren we in 2 à 3 weken; een gemiddelde klas plaatst een team op een halve dag. Bestel vóór eind mei om zeker in de zomervakantie te plaatsen.
+rPET leveren we in ongeveer 3 à 4 werkweken; een gemiddelde klas plaatst een team op een halve dag. Bestel vóór eind mei om zeker in de zomervakantie te plaatsen.
 
 *Bronnen: NBN S 01-400-2:2012 (akoestische criteria voor schoolgebouwen); DIN 18041:2016 (Hörsamkeit in Räumen); ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); productgegevens Re-Sound.*

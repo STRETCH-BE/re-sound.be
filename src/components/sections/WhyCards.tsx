@@ -19,7 +19,7 @@ export default function WhyCards() {
       desc: t('features.durability.description'),
     },
     {
-      value: '50+',
+      value: t('anyLabel'),
       label: t('features.customization.title'),
       desc: t('features.customization.description'),
     },

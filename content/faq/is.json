@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Er PET-filt eldþolið?",
-    "answer": "Já. rPET-plötur okkar eru flokkaðar B-s1,d0 samkvæmt EN 13501-1, sem gerir þær hentugar bæði fyrir íbúðarhúsnæði og opinberar byggingar. Kannaðu nákvæmar kröfur fyrir verkefnið þitt hjá hljóðverkfræðingi eða brunavarnaráðgjafa.",
+    "answer": "Já. Viðbrögð við eldi samkvæmt EN 13501-1 fara eftir lit: hvítar, gráar og svartar rPET-plötur ná B-s1,d0, allir aðrir litir B-s2,d0, bæði í Standard- og FR-útgáfunni, sem gerir þær hentugar fyrir bæði íbúðarhúsnæði og opinberar byggingar. Flokkunarskýrslur fást eftir beiðni; kannaðu nákvæmar kröfur fyrir verkefnið þitt hjá hljóðverkfræðingi eða brunavarnaráðgjafa.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Hversu mikið hljóð gleypir 24 mm PET-plata?",
-    "answer": "24 mm rPET-plata hefur veginn hljóðísogsstuðul αw 0,85, sem samsvarar ísogsflokki B samkvæmt ISO 11654. Uppsetning með loftbili á bak við plötuna bætir ísog á lágum tíðnum. Kannaðu nákvæmar kröfur fyrir rýmið þitt hjá hljóðverkfræðingi.",
+    "question": "Hversu mikið hljóð gleypir PET-plata?",
+    "answer": "Það fer eftir þykkt og umfram allt eftir uppsetningu. Mælt samkvæmt EN ISO 354 nær 12 mm rPET Panel αw 0,25 (flokkur D samkvæmt EN ISO 11654) beint á vegg, 0,60 (flokkur C) með 50 mm loftbili og 1,00 (flokkur A) með 50 mm loftbili og 50 mm steinull fyrir aftan; 9 mm platan hefur ekki enn verið mæld. Loftbil eða steinull á bak við plötuna eykur því hljóðísogið verulega og nær til lægri tíðna. Kannaðu nákvæmar kröfur fyrir rýmið þitt hjá hljóðverkfræðingi.",
     "showOn": [
       "rpet",
       "faq"

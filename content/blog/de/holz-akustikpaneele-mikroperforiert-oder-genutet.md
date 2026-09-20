@@ -40,7 +40,7 @@ Beide gehören zu unseren [Holz-Akustikpaneelen](/de/products/holz-akustikpaneel
 Wer mikroperforiert und genutet vergleicht, vergleicht in Wahrheit zwei Aufbauten: Das genutete Paneel arbeitet als Einzelschicht auf der Wand, das mikroperforierte planen Sie immer mit einem Absorber im Rücken. Drei Möglichkeiten:
 
 - **Akustikfilz**: die schlanke Lösung, wenn der Aufbau flach bleiben muss.
-- **rPET-Paneel**: 100 % recyceltes PET, selbst als B-s1,d0 klassifiziert (EN 13501-1), vor Ort mit Messer, Kreissäge oder Plattensäge zuschneidbar. In 24 mm erreicht es αw 0,85; ein Luftspalt dahinter verbessert die Absorption tiefer Frequenzen zusätzlich.
+- **rPET-Paneel**: 100 % recyceltes PET, in Weiß, Grau und Schwarz B-s1,d0 und in den übrigen Farben B-s2,d0 (EN 13501-1), vor Ort mit Messer, Kreissäge oder Plattensäge zuschneidbar. Die 12-mm-Platte erreicht direkt auf der Wand αw 0,25 und mit 50 mm Luftschicht und 50 mm Steinwolle dahinter αw 1,00 (EN ISO 354): der Hohlraum hinter dem Paneel entscheidet.
 - **Mineralwolle**: die übliche Wahl, wenn ohnehin eine Unterkonstruktion mit Hohlraum vorgesehen ist.
 
 Sitzt einer dieser Absorber hinter dem Furnier, ist der akustische Unterschied aufgehoben; übrig bleibt die Frage nach Aufbautiefe, Optik und Brandschutz. Ob Klasse B nach ISO 11654 für Ihr Projekt genügt, hängt von der Ausschreibung ab; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.

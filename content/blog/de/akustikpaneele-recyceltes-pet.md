@@ -3,7 +3,7 @@ id: "BP-012"
 slug: "akustikpaneele-recyceltes-pet"
 locale: "de"
 title: "Akustikpaneele aus recyceltem PET: Vorteile & Preise | Re-Sound"
-description: "Akustikpaneele aus recyceltem PET: αw 0,85 (Klasse B), B-s1,d0, OEKO-TEX, 12/24/36 mm, UV-Druck, Clip- oder Klebemontage, Lieferzeit, Preis gegenüber Holz."
+description: "Akustikpaneele aus recyceltem PET: Absorption je nach Montage, B-s1,d0 oder B-s2,d0 je nach Farbe, OEKO-TEX, 12/24/36 mm, UV-Druck, Clip- oder Klebemontage, Lieferzeit, Preis gegenüber Holz."
 h1: "Akustikpaneele aus recyceltem PET: Vorteile, Montage und Preise"
 keyword: "akustikpaneele recyceltes pet"
 secondaryKeywords: ["pet akustikpaneele","akustikpaneele pet filz","recycelte akustikpaneele","akustikpaneele pet oder holz"]
@@ -18,20 +18,20 @@ heroAlt: "Akustikpaneel rPET Groove aus grauem recyceltem PET-Filz, Nahaufnahme 
 internalLinks: ["/de/products/pet-akustikpaneele","/de/products/rpet-groove","/de/products/rpet-panel","/de/products/interior","/de/products/telefonboxen","/de/products/solo-flex","/de/sustainability","/de/where-to-buy","/de/products/rwood-micro","/de/products/holz-akustikpaneele","/de/contact","https://stretchplafond.be/products/acoustic-stretch-system"]
 cta: "Fordern Sie das rPET-Musterpaket oder ein Angebot pro m² für Ihren Raum an."
 sources: "ISO 11654 (Schallabsorptionsklassen); EN 13501-1 (Brandverhalten); OEKO-TEX® Standard 100; FSC; W. C. Sabine (Nachhallformel); DIN 18041 (Hörsamkeit in Räumen); VDI 2569 (Büroakustik); ISO 22955; Datenblätter und Prüfberichte Re-Sound rPET und rWood."
-faq: [{"question":"Absorbiert ein Akustikpaneel aus recyceltem PET so gut wie eines aus Holz?","answer":"Bei unseren genuteten Reihen ja: rPET Groove und rWood Groove erreichen beide αw 0,85 (Klasse B nach ISO 11654). Mikroperforiertes Holz absorbiert ohne rückseitigen Absorber weniger; mit Absorber – Akustikfilz, rPET-Paneel oder Mineralwolle – erreichen beide dieselben Werte. Der Unterschied liegt in Optik, Budget und Lieferzeit, nicht in der Akustik."},{"question":"Welche Stärke wählen: 12, 24 oder 36 mm?","answer":"24 mm ist die Referenz für Sprache im Büro, im Klassenraum und im Besprechungsraum: αw 0,85, Klasse B. Ein dickeres Paneel und ein Luftspalt dahinter verbessern die Absorption tiefer Frequenzen; 12 mm wählen Sie, wenn der Platz knapp ist oder das Paneel in Möbel eingearbeitet wird. Welche Nachhallzeit Ihr Raum braucht, sagt DIN 18041; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie werden PET-Akustikpaneele montiert, und lassen sie sich bedrucken?","answer":"Mit Clips (demontierbar, ideal für Mietflächen) oder verklebt für die dauerhafte Installation. Vor Ort schneiden Sie den Filz mit Messer, Kreissäge, Plattensäge oder Winkelschleifer mit Metallscheibe; er lässt sich lackieren, und Re-Sound bedruckt rPET-Paneele im eigenen Haus im UV-Druck – Logos, Leitsysteme und Motive sind also möglich. Lagerfarben liefern wir in 2 bis 3 Wochen."}]
+faq: [{"question":"Absorbiert ein Akustikpaneel aus recyceltem PET so gut wie eines aus Holz?","answer":"Bei unseren genuteten Reihen ja: rPET Groove und rWood Groove erreichen beide αw 0,85 (Klasse B nach ISO 11654). Mikroperforiertes Holz absorbiert ohne rückseitigen Absorber weniger; mit Absorber – Akustikfilz, rPET-Paneel oder Mineralwolle – erreichen beide dieselben Werte. Der Unterschied liegt in Optik, Budget und Lieferzeit, nicht in der Akustik."},{"question":"Welche Stärke wählen: 12, 24 oder 36 mm?","answer":"24 mm ist die Referenz für Sprache im Büro, im Klassenraum und im Besprechungsraum: αw 0,85, Klasse B. Ein dickeres Paneel und ein Luftspalt dahinter verbessern die Absorption tiefer Frequenzen; 12 mm wählen Sie, wenn der Platz knapp ist oder das Paneel in Möbel eingearbeitet wird. Welche Nachhallzeit Ihr Raum braucht, sagt DIN 18041; prüfen Sie die genaue Anforderung mit Ihrem Akustiker."},{"question":"Wie werden PET-Akustikpaneele montiert, und lassen sie sich bedrucken?","answer":"Mit Clips (demontierbar, ideal für Mietflächen) oder verklebt für die dauerhafte Installation. Vor Ort schneiden Sie den Filz mit Messer, Kreissäge, Plattensäge oder Winkelschleifer mit Metallscheibe; er lässt sich lackieren, und Re-Sound bedruckt rPET-Paneele im eigenen Haus im UV-Druck – Logos, Leitsysteme und Motive sind also möglich. Geliefert wird in etwa 3 bis 4 Arbeitswochen."}]
 draft: true
 status: "Review"
 model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1386
 ---
 
-**Ein Akustikpaneel aus recyceltem PET ist eine aus gebrauchten PET-Flaschen gepresste Filzplatte, die Sprache in 24 mm Stärke mit αw 0,85 (Klasse B nach ISO 11654) absorbiert, sich wie eine Tischlerplatte schneiden und lackieren lässt, im UV-Druck bedruckt werden kann und per Clip oder Kleber montiert wird – zu einem Quadratmeterpreis unter dem von furniertem Holz.** Hier die Fakten unserer rPET-Reihe, vom Aufbau bis zum Vergleich mit Holz.
+**Ein Akustikpaneel aus recyceltem PET ist eine aus gebrauchten PET-Flaschen gepresste Filzplatte, die Sprache absorbiert (rPET Groove in 24 mm mit αw 0,85, Klasse B nach ISO 11654), sich wie eine Tischlerplatte schneiden und lackieren lässt, im UV-Druck bedruckt werden kann und per Clip oder Kleber montiert wird – zu einem Quadratmeterpreis unter dem von furniertem Holz.** Hier die Fakten unserer rPET-Reihe, vom Aufbau bis zum Vergleich mit Holz.
 
 ## Was ist ein Akustikpaneel aus recyceltem PET?
 
 PET ist der Kunststoff von Wasser- und Limonadenflaschen. Nach der Sammlung werden die Flaschen sortiert, gewaschen, zerkleinert, zu Fasern geschmolzen und heiß zu einer dichten Platte gepresst: dem PET-Filz. Unsere Reihe [rPET](/de/products/pet-akustikpaneele) besteht zu 100 % aus recyceltem PET; die Faser ist zugleich Träger, sichtbare Oberfläche und Absorber, ohne Gewebe und ohne Furnier.
 
-Zwei Familien bei Re-Sound: [rPET Groove](/de/products/rpet-groove), genutet, in 12 Farben und den Formaten 2.400 × 600 und 1.200 × 600 mm; und [rPET Panel](/de/products/rpet-panel), die glatte Vollplatte, in 24 mm mit αw 0,85 der Klasse B.
+Zwei Familien bei Re-Sound: [rPET Groove](/de/products/rpet-groove), genutet, in zehn Lagerfarben und jeder Farbe auf Bestellung, in den Formaten 2.400 × 600 und 1.200 × 600 mm; und [rPET Panel](/de/products/rpet-panel), die glatte Vollplatte in 9 und 12 mm, deren Absorption von der Montage abhängt: αw 0,25 (Klasse D) direkt auf der Wand, bis zu 1,00 (Klasse A) mit 50 mm Luftschicht und 50 mm Steinwolle (gemessen an 12 mm, EN ISO 354).
 
 ## So absorbiert PET-Filz den Schall
 
@@ -82,7 +82,7 @@ Am Ende der Nutzungsdauer nehmen wir die Paneele in Deutschland, Belgien, den Ni
 
 Lieferzeiten ab Werk:
 
-- **rPET Groove**: 2 bis 3 Wochen für Lagerfarben, 5 bis 6 Wochen für Sonderanfertigungen.
+- **rPET Groove**: etwa 3 bis 4 Arbeitswochen; Sonderfarben auf Anfrage.
 - **rWood Groove**: 3 bis 4 Wochen für Lagerfurniere, 6 bis 8 Wochen für Furniere außerhalb des Lagerprogramms.
 
 Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). Die rPET-Paneele kommen aus dem polnischen Werk, die Rohstoffe aus der EU.
@@ -97,7 +97,7 @@ Der Quadratmeterpreis hängt von Stärke, Farbe, Druck und Menge ab und wird per
 | NRC | 0,85 | rWood Groove: 0,80 |
 | Brandverhalten (EN 13501-1) | B-s1,d0 | rWood Micro: B-s1,d0; andere Ausführungen: siehe Datenblatt |
 | Material | 100 % recyceltes PET, OEKO-TEX® Standard 100 | ausschließlich FSC-zertifizierte Furniere |
-| Oberflächen | 12 Farben, lackierbar, UV-Druck | Furnierarten |
+| Oberflächen | zehn Lagerfarben, jede Farbe auf Bestellung, lackierbar, UV-Druck | Furnierarten |
 | Bearbeitung vor Ort | Messer, Säge, Winkelschleifer | vorab einplanen (Furnier) |
 | Preis pro m² | auf Anfrage; unter Holz | auf Anfrage; Premium |
 
@@ -124,6 +124,6 @@ Bei unseren genuteten Reihen ja: rPET Groove und rWood Groove erreichen beide α
 24 mm ist die Referenz für Sprache im Büro, im Klassenraum und im Besprechungsraum: αw 0,85, Klasse B. Ein dickeres Paneel und ein Luftspalt dahinter verbessern die Absorption tiefer Frequenzen; 12 mm wählen Sie, wenn der Platz knapp ist oder das Paneel in Möbel eingearbeitet wird. Welche Nachhallzeit Ihr Raum braucht, sagt DIN 18041; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
 
 **Wie werden PET-Akustikpaneele montiert, und lassen sie sich bedrucken?**
-Mit Clips (demontierbar, ideal für Mietflächen) oder verklebt für die dauerhafte Installation. Vor Ort schneiden Sie den Filz mit Messer, Kreissäge, Plattensäge oder Winkelschleifer mit Metallscheibe; er lässt sich lackieren, und Re-Sound bedruckt rPET-Paneele im eigenen Haus im UV-Druck – Logos, Leitsysteme und Motive sind also möglich. Lagerfarben liefern wir in 2 bis 3 Wochen.
+Mit Clips (demontierbar, ideal für Mietflächen) oder verklebt für die dauerhafte Installation. Vor Ort schneiden Sie den Filz mit Messer, Kreissäge, Plattensäge oder Winkelschleifer mit Metallscheibe; er lässt sich lackieren, und Re-Sound bedruckt rPET-Paneele im eigenen Haus im UV-Druck – Logos, Leitsysteme und Motive sind also möglich. Geliefert wird in etwa 3 bis 4 Arbeitswochen.
 
 *Quellen: ISO 11654 (Schallabsorptionsklassen); EN 13501-1 (Brandverhalten); OEKO-TEX® Standard 100; FSC; W. C. Sabine (Nachhallformel); DIN 18041 (Hörsamkeit in Räumen); VDI 2569 (Büroakustik); ISO 22955; Datenblätter und Prüfberichte Re-Sound rPET und rWood.*

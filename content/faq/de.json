@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Ist PET-Filz brandsicher?",
-    "answer": "Ja. Unsere rPET-Paneele sind nach EN 13501-1 in B-s1,d0 eingestuft und eignen sich damit sowohl für Privatwohnungen als auch für öffentliche Gebäude. Prüfen Sie die genaue Anforderung für Ihr Projekt mit Ihrem Akustiker oder Brandschutzberater.",
+    "answer": "Ja. Das Brandverhalten nach EN 13501-1 hängt von der Farbe ab: Weiße, graue und schwarze rPET-Paneele erreichen B-s1,d0, alle anderen Farben B-s2,d0, in der Standard- wie in der FR-Version, und eignen sich damit sowohl für Privatwohnungen als auch für öffentliche Gebäude. Klassifizierungsberichte sind auf Anfrage erhältlich; prüfen Sie die genaue Anforderung für Ihr Projekt mit Ihrem Akustiker oder Brandschutzberater.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Wie viel Schall absorbiert ein 24 mm PET-Paneel?",
-    "answer": "Ein 24 mm starkes rPET-Paneel hat einen bewerteten Schallabsorptionsgrad αw von 0,85, was der Absorptionsklasse B nach ISO 11654 entspricht. Eine Montage mit dahinterliegendem Luftspalt verbessert die Absorption bei tiefen Frequenzen. Prüfen Sie die genaue Anforderung für Ihren Raum mit Ihrem Akustiker.",
+    "question": "Wie viel Schall absorbiert ein PET-Paneel?",
+    "answer": "Das hängt von der Dicke und vor allem von der Montage ab. Nach EN ISO 354 gemessen erreicht das 12 mm starke rPET Panel αw 0,25 (Klasse D nach EN ISO 11654) direkt auf der Wand, 0,60 (Klasse C) mit 50 mm Luftschicht und 1,00 (Klasse A) mit 50 mm Luftschicht und 50 mm Steinwolle dahinter; die 9-mm-Platte ist noch nicht gemessen. Eine Luftschicht oder Mineralwolle hinter dem Paneel erhöht die Absorption also deutlich und erreicht tiefere Frequenzen. Prüfen Sie die genaue Anforderung für Ihren Raum mit Ihrem Akustiker.",
     "showOn": [
       "rpet",
       "faq"

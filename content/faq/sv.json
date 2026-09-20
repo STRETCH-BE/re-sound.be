@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Är PET-filt brandsäker?",
-    "answer": "Ja. Våra rPET-paneler är klassificerade B-s1,d0 enligt EN 13501-1, vilket gör dem lämpliga för både privata bostäder och offentliga byggnader. Kontrollera det exakta kravet för ert projekt med er akustiker eller brandskyddsrådgivare.",
+    "answer": "Ja. Brandreaktionen enligt EN 13501-1 beror på färgen: vita, grå och svarta rPET-paneler når B-s1,d0, alla andra färger B-s2,d0, i både Standard- och FR-versionen, vilket gör dem lämpliga för både privata bostäder och offentliga byggnader. Klassificeringsrapporter finns på begäran; kontrollera det exakta kravet för ert projekt med er akustiker eller brandskyddsrådgivare.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Hur mycket ljud absorberar en 24 mm PET-panel?",
-    "answer": "En 24 mm rPET-panel har en vägd ljudabsorptionsfaktor αw på 0,85, vilket motsvarar absorptionsklass B enligt ISO 11654. Montering med en luftspalt bakom panelen förbättrar absorptionen vid låga frekvenser. Kontrollera det exakta kravet för ert rum med er akustiker.",
+    "question": "Hur mycket ljud absorberar en PET-panel?",
+    "answer": "Det beror på tjockleken och framför allt på monteringen. Uppmätt enligt EN ISO 354 når 12 mm rPET Panel αw 0,25 (klass D enligt EN ISO 11654) monterad direkt på väggen, 0,60 (klass C) med 50 mm luftspalt och 1,00 (klass A) med 50 mm luftspalt och 50 mm stenull bakom; 9 mm-skivan är ännu inte uppmätt. En luftspalt eller mineralull bakom panelen höjer alltså absorptionen kraftigt och når lägre frekvenser. Kontrollera det exakta kravet för ert rum med er akustiker.",
     "showOn": [
       "rpet",
       "faq"

@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "O feltro PET é seguro contra incêndio?",
-    "answer": "Sim. Os nossos painéis rPET estão classificados B-s1,d0 segundo a EN 13501-1, o que os torna adequados tanto para habitações particulares como para edifícios públicos. Confirme o requisito exato do seu projeto com o seu especialista em acústica ou consultor de segurança contra incêndio.",
+    "answer": "Sim. A reação ao fogo segundo a EN 13501-1 depende da cor: os painéis rPET brancos, cinzentos e pretos atingem B-s1,d0, todas as outras cores B-s2,d0, tanto na versão Standard como na FR, o que os torna adequados para habitações particulares e edifícios públicos. Os relatórios de classificação estão disponíveis a pedido; confirme o requisito exato do seu projeto com o seu especialista em acústica ou consultor de segurança contra incêndio.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Quanto som absorve um painel PET de 24 mm?",
-    "answer": "Um painel rPET de 24 mm tem um coeficiente de absorção sonora ponderado αw de 0,85, o que corresponde à classe de absorção B segundo a ISO 11654. Montar o painel com uma caixa de ar atrás melhora a absorção nas baixas frequências. Confirme o requisito exato para a sua sala com o seu especialista em acústica.",
+    "question": "Quanto som absorve um painel PET?",
+    "answer": "Depende da espessura e, sobretudo, da montagem. Medido segundo a EN ISO 354, o rPET Panel de 12 mm atinge αw 0,25 (classe D segundo a EN ISO 11654) fixado diretamente à parede, 0,60 (classe C) com uma caixa de ar de 50 mm e 1,00 (classe A) com uma caixa de ar de 50 mm e 50 mm de lã de rocha atrás; o painel de 9 mm ainda não foi medido. Uma caixa de ar ou lã mineral atrás do painel aumenta muito a absorção e alarga-a às baixas frequências. Confirme o requisito exato para a sua sala com o seu especialista em acústica.",
     "showOn": [
       "rpet",
       "faq"

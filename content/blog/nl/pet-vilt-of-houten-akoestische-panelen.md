@@ -50,7 +50,7 @@ Klasse A (αw ≥ 0,90) halen rWood Groove en rWood Micro, net als onze textielr
 
 ## Uitzicht en interieur
 
-**PET** is kleur. [rPET Groove](/nl/products/rpet-groove) komt in 12 kleuren, [rPET Panel](/nl/products/rpet-panel) in 16, en beide laten zich bedrukken en frezen. Het resultaat is grafisch en modern: een gekleurde wand in een open kantoor, een logo in het vilt, ronde vormen in een kinderdagverblijf. rPET Flex Groove buigt bovendien om kolommen en gebogen wanden.
+**PET** is kleur. [rPET Groove](/nl/products/rpet-groove) en [rPET Panel](/nl/products/rpet-panel) komen in tien voorraadkleuren en elke kleur op bestelling, en beide laten zich bedrukken en frezen. Het resultaat is grafisch en modern: een gekleurde wand in een open kantoor, een logo in het vilt, ronde vormen in een kinderdagverblijf. rPET Flex Groove buigt bovendien om kolommen en gebogen wanden.
 
 **Hout** is warmte. rWood Groove en Perf in eik en notelaar, [rWood Panel](/nl/products/rwood-veneer) in acht fineersoorten, rWood Micro met een bijna gesloten oppervlak dat van op twee meter als een strak houten paneel oogt. In directiekantoren, receptiezones, restaurants en aula's wint hout het bijna altijd op uitstraling, en het combineert met bestaande houten meubels en vloeren.
 
@@ -60,11 +60,11 @@ Vaak is het antwoord niet óf-óf: hout op de blikvangerwand, PET op de lange wa
 
 Voor publieke gebouwen is de brandklasse volgens EN 13501-1 vaak een harde eis.
 
-- **rPET Groove en rPET Flex Groove**: B-s1,d0 — beperkt brandbaar, weinig rookontwikkeling, geen brandende druppels. Dat is de hoogste praktische klasse voor een decoratief interieurmateriaal onder de A-klasse. **rPET Panel**: B-s2,d0.
+- **rPET Panel, Groove en Flex Groove**: B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren — beperkt brandbaar, weinig rookontwikkeling, geen brandende druppels. B-s1,d0 is de hoogste praktische klasse voor een decoratief interieurmateriaal onder de A-klasse.
 - **rWood Groove, Perf en Micro**: B-s1,d0, geschikt voor de strengste eisen in publieke gebouwen.
 - **rWood Panel**: B-s1,d0 op een brandvertragende MDF-kern, D-s2,d0 op standaard MDF.
 
-Voor de binnenlucht: rPET is OEKO-TEX® Standard 100 gecertificeerd en getest op VOC-emissies volgens de Franse A+-klasse, de strengste. Voor het fineer van rWood werken we met FSC-gecertificeerd Europees hout; op aanvraag leveren we het chain-of-custody-certificaatnummer per levering.
+Voor de binnenlucht: rPET is OEKO-TEX® Standard 100 gecertificeerd. Voor het fineer van rWood werken we met FSC-gecertificeerd Europees hout; op aanvraag leveren we het chain-of-custody-certificaatnummer per levering.
 
 ## Duurzaamheid: gerecycleerd versus hernieuwbaar
 
@@ -88,7 +88,7 @@ Wie op één cijfer selecteert, kiest rPET Panel of rPET Flex Groove (volledig g
 
 Per vierkante meter is PET-vilt het budgetvriendelijkste van de twee, hout het premiumproduct; de exacte prijs hangt af van dikte, patroon, fineersoort en hoeveelheid, dus vraag een offerte met je oppervlakte. Levertijden uit eigen productie:
 
-- **rPET**: voorraadkleuren binnen 2 à 3 weken; maatkleuren 5 à 6 weken (voor projecten vanaf 200 m²).
+- **rPET**: ongeveer 3 à 4 werkweken; maatkleuren op aanvraag.
 - **rWood**: voorraadfineren binnen 3 à 4 weken; niet-voorraadsoorten en maatwerk 6 à 8 weken.
 
 Grote projecten (vanaf 500 m²) plannen we in productiebatches met een bindende datum. Re-Sound is een merk van Stretch Group; we produceren in onze eigen fabrieken in Beveren-Waas (België) en Częstochowa (Polen).
@@ -106,7 +106,7 @@ Grote projecten (vanaf 500 m²) plannen we in productiebatches met een bindende 
 | Hoogste gerecycleerd gehalte | rPET Panel / rPET Flex Groove |
 | EPD nodig voor een certificeringsdossier | rWood Panel |
 | Beperkt budget, groot oppervlak | rPET |
-| Snelle levering | rPET (2–3 weken) |
+| Snelle levering | rPET (ongeveer 3–4 werkweken) |
 
 Nog twijfel? Het gratis stalenpakket bevat A4-stalen van elke reeks en elke afwerking, verstuurd binnen drie werkdagen in de EU. Leg ze naast elkaar in de ruimte waarvoor ze bedoeld zijn; het licht ter plaatse beslist vaak sneller dan een catalogus.
 

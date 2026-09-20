@@ -1,11 +1,11 @@
-Re-Sound SEO check — 2026-09-20T18:47:00.105Z
+Re-Sound SEO check — 2026-09-20T19:05:10.038Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
 URLs in sitemap: 184
 Per locale: en=30, nl=36, fr=30, de=30, es=29, pt=29
 lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=48, 2026-09-13=22, 2026-09-20=96
-distinct lastmod values: 7
+distinct lastmod values: 6
 single-locale URLs (no hreflang by design): 6
 hreflang alternates per URL: min 0, max 7
 
@@ -16,11 +16,11 @@ OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-de: 0.3% English (5/1769 segments over 30 pages)
+de: 0.3% English (5/1770 segments over 30 pages)
 es: 0.1% English (3/2019 segments over 29 pages)
-fr: 0.3% English (6/2052 segments over 30 pages)
-nl: 0.3% English (8/2296 segments over 36 pages)
-    3.5%  /nl  (2/57)
+fr: 0.3% English (6/2053 segments over 30 pages)
+nl: 0.3% English (8/2297 segments over 36 pages)
+    3.4%  /nl  (2/58)
 pt: 0.2% English (3/1967 segments over 29 pages)
 
 -- sample English segments per flagged page (max 12 each)
@@ -78,7 +78,7 @@ WARN title  81  /pt/products/acoustic-phone-booths  "Fabricante de cabines telef
 WARN title  77  /pt/products/rwood-veneer  "rWood Panel — Painéis Acústicos Folheados, 12 Folheados de Madeira | Re-Sound"
 WARN title  75  /pt/products/rpet-panel  "rPET Panel — painel acústico em PET reciclado, 10 cores de stock | Re-Sound"
 WARN title  69  /pt/products/rpet-groove  "rPET Groove — painéis em PET ranhurados, 10 cores de stock | Re-Sound"
-WARN desc  159  /en/products/pet-acoustic-panels
+WARN desc  185  /en/products/pet-acoustic-panels
 WARN desc  181  /en/guides/phone-booth-prices
 WARN desc  180  /en/products/rwood-groove
 WARN desc  168  /en/products/rwood-micro
@@ -87,7 +87,7 @@ WARN desc  209  /en/products/rpet-panel
 WARN desc  185  /en/products/rpet-groove
 WARN desc  199  /en/products/rpet-flex-groove
 WARN desc  181  /nl/acoustic-calculator
-WARN desc  173  /nl/products/pet-akoestische-panelen
+WARN desc  206  /nl/products/pet-akoestische-panelen
 WARN desc  158  /nl/guides/prijzen-belcabines
 WARN desc  197  /nl/products/rwood-groove
 WARN desc  168  /nl/products/rwood-micro
@@ -96,7 +96,7 @@ WARN desc  229  /nl/products/rpet-panel
 WARN desc  193  /nl/products/rpet-groove
 WARN desc  203  /nl/products/rpet-flex-groove
 WARN desc  197  /fr/acoustic-calculator
-WARN desc  192  /fr/products/panneaux-acoustiques-pet
+WARN desc  228  /fr/products/panneaux-acoustiques-pet
 WARN desc  158  /fr/products/cabines-acoustiques
 WARN desc  200  /fr/products/rwood-groove
 WARN desc  174  /fr/products/rwood-micro
@@ -105,7 +105,7 @@ WARN desc  250  /fr/products/rpet-panel
 WARN desc  215  /fr/products/rpet-groove
 WARN desc  221  /fr/products/rpet-flex-groove
 WARN desc  189  /de/acoustic-calculator
-WARN desc  176  /de/products/pet-akustikpaneele
+WARN desc  206  /de/products/pet-akustikpaneele
 WARN desc  193  /de/products/rwood-groove
 WARN desc  160  /de/products/rwood-micro
 WARN desc  204  /de/products/rwood-veneer
@@ -114,7 +114,7 @@ WARN desc  191  /de/products/rpet-groove
 WARN desc  207  /de/products/rpet-flex-groove
 WARN desc  158  /de/products/solo-eco
 WARN desc  174  /es/acoustic-calculator
-WARN desc  180  /es/products/pet-acoustic-panels
+WARN desc  219  /es/products/pet-acoustic-panels
 WARN desc  160  /es/products/acoustic-phone-booths
 WARN desc  210  /es/products/rwood-groove
 WARN desc  168  /es/products/rwood-micro
@@ -124,7 +124,7 @@ WARN desc  221  /es/products/rpet-groove
 WARN desc  215  /es/products/rpet-flex-groove
 WARN desc  156  /es/products/solo-eco
 WARN desc  174  /pt/acoustic-calculator
-WARN desc  181  /pt/products/pet-acoustic-panels
+WARN desc  213  /pt/products/pet-acoustic-panels
 WARN desc  159  /pt/products/acoustic-phone-booths
 WARN desc  225  /pt/products/rwood-groove
 WARN desc  181  /pt/products/rwood-micro
@@ -166,7 +166,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     en       15     87    1         7     yes    0          0/0  index           —  /en/blog
 200     en       29    116    1         7     yes    1          0/0  index           —  /en/samples
 200     en       47    143    1         7     yes    1          0/0  index           —  /en/acoustic-calculator
-200     en       67    159    1         7     yes    3          0/0  index           —  /en/products/pet-acoustic-panels
+200     en       67    185    1         7     yes    3          0/0  index           —  /en/products/pet-acoustic-panels
 200     en       71    149    1         7     yes    3          0/0  index           —  /en/products/wood-acoustic-panels
 200     en       65    152    1         7     yes    3          0/0  index           —  /en/products/acoustic-phone-booths
 200     en       55    181    1         5     yes    2          0/0  index           —  /en/guides/phone-booth-prices
@@ -185,7 +185,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     en       67    144    1         7     yes    3          1/1  index           —  /en/products/solo-flex
 200     en       56    150    1         7     yes    3          1/1  index           —  /en/products/duo
 200     en       56    146    1         7     yes    3          1/1  index           —  /en/products/modular-xl
-200     nl       55    145    1         7     yes    3          0/0  index         3.5  /nl
+200     nl       55    145    1         7     yes    3          0/0  index         3.4  /nl
 200     nl       20    152    1         7     yes    1          0/0  index         0.0  /nl/products
 200     nl       24    136    1         7     yes    0          0/0  index         0.0  /nl/about
 200     nl       23    139    1         7     yes    0          0/0  index         0.0  /nl/sustainability
@@ -196,7 +196,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       15     88    1         7     yes    0          0/0  index         0.0  /nl/blog
 200     nl       31    113    1         7     yes    1          0/0  index         0.0  /nl/samples
 200     nl       38    181    1         7     yes    1          0/0  index         0.0  /nl/acoustic-calculator
-200     nl       72    173    1         7     yes    3          0/0  index         0.0  /nl/products/pet-akoestische-panelen
+200     nl       72    206    1         7     yes    3          0/0  index         0.0  /nl/products/pet-akoestische-panelen
 200     nl       80    150    1         7     yes    3          0/0  index         0.0  /nl/products/houten-akoestische-panelen
 200     nl       71    137    1         7     yes    3          0/0  index         1.4  /nl/products/akoestische-belcabines
 200     nl       57    158    1         5     yes    2          0/0  index         2.7  /nl/guides/prijzen-belcabines
@@ -221,7 +221,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       63    154    1         0     yes    3          0/0  index         1.8  /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing
 200     nl       62    150    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-restaurant
 200     nl       59    146    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestiek-open-kantoor-verbeteren
-200     fr       59    149    1         7     yes    3          0/0  index         3.0  /fr
+200     fr       59    149    1         7     yes    3          0/0  index         2.9  /fr
 200     fr       19    147    1         7     yes    1          0/0  index         0.0  /fr/products
 200     fr       31    148    1         7     yes    0          0/0  index         0.0  /fr/about
 200     fr       21    153    1         7     yes    0          0/0  index         0.0  /fr/sustainability
@@ -232,7 +232,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       15     96    1         7     yes    0          0/0  index         0.0  /fr/blog
 200     fr       42    147    1         7     yes    1          0/0  index         0.0  /fr/samples
 200     fr       55    197    1         7     yes    1          0/0  index         0.0  /fr/acoustic-calculator
-200     fr       58    192    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-pet
+200     fr       58    228    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-pet
 200     fr       75    155    1         7     yes    3          0/0  index         0.0  /fr/products/panneaux-acoustiques-bois
 200     fr       79    158    1         7     yes    3          0/0  index         1.3  /fr/products/cabines-acoustiques
 200     fr       63    152    1         5     yes    2          0/0  index         2.3  /fr/guides/prix-cabines-acoustiques
@@ -262,7 +262,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       15     84    1         7     yes    0          0/0  index         0.0  /de/blog
 200     de       31    125    1         7     yes    1          0/0  index         0.0  /de/samples
 200     de       38    189    1         7     yes    1          0/0  index         0.0  /de/acoustic-calculator
-200     de       66    176    1         7     yes    3          0/0  index         0.0  /de/products/pet-akustikpaneele
+200     de       66    206    1         7     yes    3          0/0  index         0.0  /de/products/pet-akustikpaneele
 200     de       70    149    1         7     yes    3          0/0  index         0.0  /de/products/holz-akustikpaneele
 200     de       66    152    1         7     yes    3          0/0  index         1.4  /de/products/telefonboxen
 200     de       58    155    1         5     yes    2          0/0  index         2.8  /de/guides/telefonbox-preise
@@ -292,7 +292,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     es       15     90    1         7     yes    0          0/0  index         0.0  /es/blog
 200     es       38    135    1         7     yes    1          0/0  index         0.0  /es/samples
 200     es       56    174    1         7     yes    1          0/0  index         0.0  /es/acoustic-calculator
-200     es       55    180    1         7     yes    3          0/0  index         0.0  /es/products/pet-acoustic-panels
+200     es       55    219    1         7     yes    3          0/0  index         0.0  /es/products/pet-acoustic-panels
 200     es       58    151    1         7     yes    3          0/0  index         0.0  /es/products/wood-acoustic-panels
 200     es       78    160    1         7     yes    3          0/0  index         1.3  /es/products/acoustic-phone-booths
 200     es       52    153    1         7     yes    4          0/0  index         0.0  /es/fabricacion
@@ -321,7 +321,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       15     89    1         7     yes    0          0/0  index         0.0  /pt/blog
 200     pt       40    113    1         7     yes    1          0/0  index         0.0  /pt/samples
 200     pt       54    174    1         7     yes    1          0/0  index         0.0  /pt/acoustic-calculator
-200     pt       58    181    1         7     yes    3          0/0  index         0.0  /pt/products/pet-acoustic-panels
+200     pt       58    213    1         7     yes    3          0/0  index         0.0  /pt/products/pet-acoustic-panels
 200     pt       61    152    1         7     yes    3          0/0  index         0.0  /pt/products/wood-acoustic-panels
 200     pt       81    159    1         7     yes    3          0/0  index         1.3  /pt/products/acoustic-phone-booths
 200     pt       52    154    1         7     yes    4          0/0  index         0.0  /pt/fabrico

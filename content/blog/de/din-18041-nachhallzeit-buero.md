@@ -85,7 +85,7 @@ Nur mit Wandpaneelen wären das 69 / 0,85 = 81 m². Besser verteilt:
 
 **1. Decke zuerst.** Die größte zusammenhängende Fläche und die einzige, die jeder Arbeitsplatz „sieht“. 60 bis 80 % der Deckenfläche absorbierend – Spanndecke oder Deckenelemente aus rPET – lösen meist das Nachhallproblem.
 
-**2. Wandpaneele auf die Reflexionspunkte.** Schall reflektiert am stärksten an der Wand gegenüber der Quelle und an den Längswänden. Dort gehören [Akustikpaneele aus recyceltem PET](/de/products/pet-akustikpaneele) hin, in Ohrhöhe bis etwa 2,2 m – nicht über den Schränken. rPET Groove: 12 Farben, 12/24/36 mm, αw 0,85 (Klasse B nach ISO 11654), B-s1,d0 nach EN 13501-1. Alternativen: [rWood Groove](/de/products/rwood-groove) mit FSC-Furnier (αw 0,85) und die Textilpaneele [Interior](/de/products/interior) (αw 1,0, Klasse A).
+**2. Wandpaneele auf die Reflexionspunkte.** Schall reflektiert am stärksten an der Wand gegenüber der Quelle und an den Längswänden. Dort gehören [Akustikpaneele aus recyceltem PET](/de/products/pet-akustikpaneele) hin, in Ohrhöhe bis etwa 2,2 m – nicht über den Schränken. rPET Groove: zehn Lagerfarben und jede Farbe auf Bestellung, 12/24/36 mm, αw 0,85 (Klasse B nach ISO 11654), B-s1,d0 in Weiß, Grau und Schwarz und B-s2,d0 in den übrigen Farben nach EN 13501-1. Alternativen: [rWood Groove](/de/products/rwood-groove) mit FSC-Furnier (αw 0,85) und die Textilpaneele [Interior](/de/products/interior) (αw 1,0, Klasse A).
 
 **3. Zonieren mit Divide.** Vierzig Arbeitsplätze sind akustisch ein einziger Raum. [Divide](/de/products/divide) sind freistehende, beidseitig absorbierende Stellwände (αw 1,0, Klasse A) mit integriertem Fuß, magnetisch koppelbar, ohne Montage.
 
@@ -95,7 +95,7 @@ Nur mit Wandpaneelen wären das 69 / 0,85 = 81 m². Besser verteilt:
 
 ## Fertigung, Lieferzeit und Rücknahme
 
-Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). rPET Groove in Lagerfarben liefern wir in 2 bis 3 Wochen, Kabinen in Standardkonfiguration in 4 bis 6 Wochen. Montage wahlweise selbst (zwei Personen, unter drei Stunden für Solo Flex) oder durch unser Team (rund eine Stunde je Einzelkabine, zwei je Meeting-Pod, zwei bis sechs für Modular XL). Akustikpaneele nehmen wir in Deutschland, Belgien, den Niederlanden, Frankreich und Luxemburg kostenlos zurück; Kabinen lassen sich weiterverkaufen oder als Bausatz zerlegen und recyceln.
+Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen). rPET Groove liefern wir in etwa 3 bis 4 Arbeitswochen, Kabinen in Standardkonfiguration in 4 bis 6 Wochen. Montage wahlweise selbst (zwei Personen, unter drei Stunden für Solo Flex) oder durch unser Team (rund eine Stunde je Einzelkabine, zwei je Meeting-Pod, zwei bis sechs für Modular XL). Akustikpaneele nehmen wir in Deutschland, Belgien, den Niederlanden, Frankreich und Luxemburg kostenlos zurück; Kabinen lassen sich weiterverkaufen oder als Bausatz zerlegen und recyceln.
 
 **Wo steht Ihr Büro akustisch?** Schicken Sie uns über die [Kontaktseite](/de/contact) Grundriss und Raumhöhe; Sie erhalten eine erste Absorptionsrechnung und ein kostenloses Musterpaket. Kabinen und Paneele stehen in unserer Ausstellung in Beveren-Waas; Händler unter [Wo kaufen](/de/where-to-buy).
 

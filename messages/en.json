@@ -90,10 +90,11 @@
       "statLandfill": "Landfill waste",
       "statFreeLabel": "Free",
       "statTakeback": "Take-back",
-      "statColors": "Colors",
+      "statAnyLabel": "Any",
+      "statColors": "colour to order",
       "pill1": "Recycled input",
       "pill2": "Free Take-Back",
-      "pill3": "50+ Colors",
+      "pill3": "Any colour to order",
       "pill4": "Own factories",
       "imageAlt": "Interior circular acoustic panels in a modern office",
       "statPlants": "Own plants, BE & PL"
@@ -103,7 +104,7 @@
     "recycled": "Recycled Materials",
     "takeback": "Free Take-Back Program",
     "veneer": "Real Wood Veneer Finishes",
-    "colors": "50+ Standard Colors",
+    "colors": "Any Colour to Order",
     "custom": "Custom Sizes on Request",
     "factories": "Made in our own plants in Belgium & Poland",
     "tested": "Tested per product: ISO 11654 / EN 13501-1",
@@ -271,7 +272,7 @@
       },
       "customization": {
         "title": "Custom Options",
-        "description": "Available in 50+ colors and custom sizes to match your design vision."
+        "description": "Stock colours, any colour to order, and custom sizes to match your design vision."
       }
     },
     "solo-flex": {
@@ -331,10 +332,11 @@
       },
       "customization": {
         "title": "Fully Customizable",
-        "description": "50+ colors, custom sizes, and various mounting options."
+        "description": "Stock colours, custom colours to order, custom sizes and various mounting options."
       }
     },
-    "freeLabel": "Free"
+    "freeLabel": "Free",
+    "anyLabel": "Any colour"
   },
   "circular": {
     "tag": "CIRCULAR ECONOMY",
@@ -3035,7 +3037,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "What is the recycled content of each product line?",
-        "answer": "Recycled content varies by product family. The textile range (Interior, Solid, Divide) is made from recycled textile fibres with high recycled content. The rPET range uses post-consumer recycled PET; rPET Panel and rPET Flex Groove are made entirely from recycled PET (the actual bottle-equivalent count varies by panel size — roughly 60 bottles per standard Groove panel). The rWood range uses a high recycled-fibre core with FSC-certified veneer on the visible face. Detailed material breakdowns and EPD documentation are available on each product page and on request."
+        "answer": "Recycled content varies by product family. The textile range (Interior, Solid, Divide) is made from recycled textile fibres with high recycled content. The rPET range uses post-consumer recycled PET; rPET Panel and rPET Flex Groove are made entirely from recycled PET. The rWood range has an MDF core (standard, moisture-resistant or fire-retardant) with FSC-certified veneer on the visible face; its recycled share is not published. Detailed material breakdowns and EPD documentation are available on each product page and on request."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3972,7 +3974,6 @@
       "recycledTextileFiber": "Recycled textile fiber",
       "e1Carb2Compliant": "E1 / CARB 2 compliant",
       "classAPlusIso16000": "Class A+ (ISO 16000)",
-      "fiveMidnightToFrost": "5 (Midnight to Frost)",
       "pet100Polyester": "100% PET (polyester)",
       "openArea25": "2.5% open area",
       "openArea52": "5.2% open area",
@@ -4063,11 +4064,11 @@
     },
     "rpet": {
       "title": "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound",
-      "description": "PET acoustic panels from recycled bottles: rPET Panel, Groove, Flex Groove. 12–16 colours, OEKO-TEX®, B-s1,d0 or B-s2,d0 by model. Made in our plant in Poland.",
+      "description": "PET acoustic panels from recycled bottles: rPET Panel, Groove, Flex Groove. Ten stock colours, any colour to order, OEKO-TEX®, B-s1,d0 or B-s2,d0 by colour. Made in our plant in Poland.",
       "h1": "PET acoustic panels: rPET Panel, Groove and Flex Groove",
       "breadcrumb": "rPET",
-      "intro": "PET acoustic panels turn post-consumer bottles into a dense polyester felt that absorbs sound, takes a CNC cutter like MDF and comes in a colour palette architects actually use. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland); the rPET range is produced in Częstochowa. The range has three models. rPET Panel is the flat sheet: cut it, mill it, drill it and paint it for walls, ceilings and furniture. rPET Groove adds a grooved surface in 12 colours and three thicknesses for higher absorption on walls and ceilings. rPET Flex Groove keeps the grooved look but bends around columns and curved walls down to a 500 mm radius. All three are OEKO-TEX® Standard 100 certified, reach B-s1,d0 or B-s2,d0 under EN 13501-1 and can be taken back for recycling at end of life. Use the table below to compare PET acoustic panels by format, absorption and lead time, then open the model page for finishes and downloads.",
-      "whyCertsDesc": "Every rPET model is OEKO-TEX® Standard 100 certified; fire certificates (EN 13501-1) are on the model pages.",
+      "intro": "PET acoustic panels turn post-consumer bottles into a dense polyester felt that absorbs sound, takes a CNC cutter like MDF and comes in a colour palette architects actually use. Re-Sound is a Stretch Group brand. We manufacture in our own plants in Beveren-Waas (Belgium) and Częstochowa (Poland); the rPET range is produced in Częstochowa. The range has three models. rPET Panel is the flat sheet: cut it, mill it, drill it and paint it for walls, ceilings and furniture. rPET Groove adds a grooved surface in the ten stock colours and three thicknesses for higher absorption on walls and ceilings. rPET Flex Groove keeps the grooved look but bends around columns and curved walls down to a 500 mm radius. All three are OEKO-TEX® Standard 100 certified, reach B-s1,d0 or B-s2,d0 under EN 13501-1 and can be taken back for recycling at end of life. Use the table below to compare PET acoustic panels by format, absorption and lead time, then open the model page for finishes and downloads.",
+      "whyCertsDesc": "Every rPET model is OEKO-TEX® Standard 100 certified; the EN 13501-1 classification reports are available on request.",
       "applications": {
         "app1": "Open-plan offices and call centres",
         "app2": "Schools, lecture halls and libraries",
@@ -4083,11 +4084,11 @@
         },
         "q2": {
           "question": "How much sound do PET acoustic panels absorb?",
-          "answer": "It depends on thickness and mounting: rPET Groove reaches NRC 0.55 (12 mm), 0.75 (24 mm) and 0.90 (36 mm); rPET Panel reaches up to αw 1.00 when mounted on a frame with an air cavity. Panels glued directly to the wall absorb less than panels with a cavity behind them."
+          "answer": "It depends on thickness and mounting. The rPET Panel datasheet gives the 12 mm panel αw 0.25 (class D) fixed directly on the wall, 0.60 (C) with a 50 mm air cavity and 1.00 (A) with a 50 mm cavity and 50 mm stone wool; the 9 mm panel is not yet measured. rPET Groove is rated NRC 0.55 (12 mm), 0.75 (24 mm) and 0.90 (36 mm). Panels glued directly to the wall absorb less than panels with a cavity behind them."
         },
         "q3": {
           "question": "What fire class do recycled PET acoustic panels have?",
-          "answer": "rPET Groove and rPET Flex Groove are classified B-s1,d0 under EN 13501-1; the rPET Panel spec sheet states B-s2,d0. The fire certificate for each model is on its downloads block."
+          "answer": "Reaction to fire to EN 13501-1 depends on the colour, for all three models: white, grey and black reach B-s1,d0, all other colours B-s2,d0, in the Standard and the FR version alike. Classification reports are available on request."
         },
         "q4": {
           "question": "Can I cut and paint PET acoustic panels on site?",
@@ -4095,7 +4096,7 @@
         },
         "q5": {
           "question": "What is the lead time for PET acoustic panels?",
-          "answer": "Stock colours ship in 2–3 weeks from our Częstochowa plant; custom colours take 5–6 weeks. Large projects are scheduled in production batches — ask us for a binding date before you order."
+          "answer": "About 3–4 working weeks from our Częstochowa plant, delivered EXW; minimum order one panel. Made-to-order colours and large projects are scheduled in production batches — ask us for a binding date before you order."
         }
       }
     },

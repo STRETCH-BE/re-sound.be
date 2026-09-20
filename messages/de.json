@@ -90,10 +90,11 @@
       "statLandfill": "Deponie-Abfall",
       "statFreeLabel": "Kostenlos",
       "statTakeback": "Rücknahme",
-      "statColors": "Farben",
+      "statAnyLabel": "Jede",
+      "statColors": "Farbe auf Bestellung",
       "pill1": "Recycelter Rohstoff",
       "pill2": "Kostenlose Rücknahme",
-      "pill3": "50+ Farben",
+      "pill3": "Jede Farbe auf Bestellung",
       "pill4": "Eigene Werke",
       "imageAlt": "Zirkuläre Interior Akustikpaneele in einem modernen Büro",
       "statPlants": "Eigene Werke, BE & PL"
@@ -103,7 +104,7 @@
     "recycled": "Recycelte Materialien",
     "takeback": "Kostenloses Rücknahmeprogramm",
     "veneer": "Echte Holzfurnier-Oberflächen",
-    "colors": "50+ Standardfarben",
+    "colors": "Jede Farbe auf Bestellung",
     "custom": "Sondermaße auf Anfrage",
     "factories": "Aus eigenen Werken in Belgien & Polen",
     "tested": "Pro Produkt geprüft: ISO 11654 / EN 13501-1",
@@ -271,7 +272,7 @@
       },
       "customization": {
         "title": "Individuelle Optionen",
-        "description": "Verfügbar in 50+ Farben und individuellen Größen, passend zu Ihrer Designvision."
+        "description": "Verfügbar in Lagerfarben, jeder Farbe auf Bestellung und individuellen Größen, passend zu Ihrer Designvision."
       }
     },
     "solo-flex": {
@@ -331,10 +332,11 @@
       },
       "customization": {
         "title": "Vollständig Anpassbar",
-        "description": "50+ Farben, individuelle Größen und verschiedene Montageoptionen."
+        "description": "Lagerfarben, Sonderfarben auf Bestellung, individuelle Größen und verschiedene Montageoptionen."
       }
     },
-    "freeLabel": "Kostenlos"
+    "freeLabel": "Kostenlos",
+    "anyLabel": "Jede Farbe"
   },
   "circular": {
     "tag": "KREISLAUFWIRTSCHAFT",
@@ -3038,7 +3040,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Welchen Rezyklatanteil hat jede Produktserie?",
-        "answer": "Der Rezyklatanteil variiert je nach Produktfamilie. Die Textilserie (Interior, Solid, Divide) besteht aus recycelten Textilfasern mit hohem Recyclinganteil. Die rPET-Serie verwendet recyceltes Post-Consumer-PET; rPET Panel und rPET Flex Groove bestehen vollständig aus recyceltem PET (die entsprechende Flaschenzahl variiert je nach Plattengröße — etwa 60 Flaschen pro Standard-Groove-Platte). Die rWood-Serie verwendet einen Kern mit hohem Recyclingfaseranteil mit FSC-zertifiziertem Furnier auf der Sichtseite. Detaillierte Materialaufschlüsselungen und EPD-Dokumentation sind auf jeder Produktseite und auf Anfrage verfügbar."
+        "answer": "Der Rezyklatanteil variiert je nach Produktfamilie. Die Textilserie (Interior, Solid, Divide) besteht aus recycelten Textilfasern mit hohem Recyclinganteil. Die rPET-Serie verwendet recyceltes Post-Consumer-PET; rPET Panel und rPET Flex Groove bestehen vollständig aus recyceltem PET. Die rWood-Serie hat einen MDF-Kern (Standard, feuchtigkeitsbeständig oder schwer entflammbar) mit FSC-zertifiziertem Furnier auf der Sichtseite; ihr Recyclinganteil wird nicht veröffentlicht. Detaillierte Materialaufschlüsselungen und EPD-Dokumentation sind auf jeder Produktseite und auf Anfrage verfügbar."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3975,7 +3977,6 @@
       "recycledTextileFiber": "Recycelte Textilfaser",
       "e1Carb2Compliant": "E1 / CARB 2 konform",
       "classAPlusIso16000": "Klasse A+ (ISO 16000)",
-      "fiveMidnightToFrost": "5 (Midnight bis Frost)",
       "pet100Polyester": "100 % PET (Polyester)",
       "openArea25": "2,5 % Öffnungsanteil",
       "openArea52": "5,2 % Öffnungsanteil",
@@ -4066,11 +4067,11 @@
     },
     "rpet": {
       "title": "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound",
-      "description": "PET-Akustikpaneele aus recycelten Flaschen: rPET Panel, Groove, Flex Groove. 12–16 Farben, OEKO-TEX®, B-s1,d0 oder B-s2,d0 je nach Modell. Hergestellt in unserem Werk in Polen.",
+      "description": "PET-Akustikpaneele aus recycelten Flaschen: rPET Panel, Groove, Flex Groove. Zehn Lagerfarben, jede Farbe auf Bestellung, OEKO-TEX®, B-s1,d0 oder B-s2,d0 je nach Farbe. Hergestellt in unserem Werk in Polen.",
       "h1": "PET-Akustikpaneele: rPET Panel, Groove und Flex Groove",
       "breadcrumb": "rPET",
-      "intro": "PET-Akustikpaneele verwandeln Post-Consumer-Flaschen in einen dichten Polyesterfilz, der Schall absorbiert, sich wie MDF auf der CNC-Fräse bearbeiten lässt und in einer Farbpalette erhältlich ist, mit der Architekten tatsächlich arbeiten. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen); die rPET-Serie wird in Częstochowa produziert. Die Serie umfasst drei Modelle. rPET Panel ist die glatte Platte: schneiden, fräsen, bohren und lackieren Sie sie für Wände, Decken und Möbel. rPET Groove ergänzt eine genutete Oberfläche in 12 Farben und drei Dicken für höhere Absorption an Wänden und Decken. rPET Flex Groove behält die genutete Optik bei, lässt sich aber bis zu einem Radius von 500 mm um Säulen und gebogene Wände formen. Alle drei Modelle sind nach OEKO-TEX® Standard 100 zertifiziert, erreichen B-s1,d0 bzw. B-s2,d0 nach EN 13501-1 und können am Ende der Nutzungsdauer zum Recycling zurückgenommen werden. Vergleichen Sie in der Tabelle unten PET-Akustikpaneele nach Format, Absorption und Lieferzeit und öffnen Sie anschließend die Modellseite für Oberflächen und Downloads.",
-      "whyCertsDesc": "Jedes rPET-Modell ist nach OEKO-TEX® Standard 100 zertifiziert; die Brandschutzzertifikate (EN 13501-1) finden Sie auf den Modellseiten.",
+      "intro": "PET-Akustikpaneele verwandeln Post-Consumer-Flaschen in einen dichten Polyesterfilz, der Schall absorbiert, sich wie MDF auf der CNC-Fräse bearbeiten lässt und in einer Farbpalette erhältlich ist, mit der Architekten tatsächlich arbeiten. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen); die rPET-Serie wird in Częstochowa produziert. Die Serie umfasst drei Modelle. rPET Panel ist die glatte Platte: schneiden, fräsen, bohren und lackieren Sie sie für Wände, Decken und Möbel. rPET Groove ergänzt eine genutete Oberfläche in den zehn Lagerfarben und drei Dicken für höhere Absorption an Wänden und Decken. rPET Flex Groove behält die genutete Optik bei, lässt sich aber bis zu einem Radius von 500 mm um Säulen und gebogene Wände formen. Alle drei Modelle sind nach OEKO-TEX® Standard 100 zertifiziert, erreichen B-s1,d0 bzw. B-s2,d0 nach EN 13501-1 und können am Ende der Nutzungsdauer zum Recycling zurückgenommen werden. Vergleichen Sie in der Tabelle unten PET-Akustikpaneele nach Format, Absorption und Lieferzeit und öffnen Sie anschließend die Modellseite für Oberflächen und Downloads.",
+      "whyCertsDesc": "Jedes rPET-Modell ist nach OEKO-TEX® Standard 100 zertifiziert; die Klassifizierungsberichte (EN 13501-1) sind auf Anfrage erhältlich.",
       "applications": {
         "app1": "Großraumbüros und Callcenter",
         "app2": "Schulen, Hörsäle und Bibliotheken",
@@ -4086,11 +4087,11 @@
         },
         "q2": {
           "question": "Wie viel Schall absorbieren PET-Akustikpaneele?",
-          "answer": "Das hängt von Dicke und Montage ab: rPET Groove erreicht NRC 0,55 (12 mm), 0,75 (24 mm) und 0,90 (36 mm); rPET Panel erreicht bis zu αw 1,00 bei Montage auf einer Unterkonstruktion mit Luftspalt. Direkt auf die Wand geklebte Paneele absorbieren weniger als Paneele mit dahinterliegendem Hohlraum."
+          "answer": "Das hängt von Dicke und Montage ab. Das Datenblatt des rPET Panel gibt für die 12-mm-Platte αw 0,25 (Klasse D) direkt auf der Wand, 0,60 (C) mit 50 mm Luftschicht und 1,00 (A) mit 50 mm Luftschicht und 50 mm Steinwolle an; die 9-mm-Platte ist noch nicht gemessen. rPET Groove erreicht NRC 0,55 (12 mm), 0,75 (24 mm) und 0,90 (36 mm). Direkt auf die Wand geklebte Paneele absorbieren weniger als Paneele mit dahinterliegendem Hohlraum."
         },
         "q3": {
           "question": "Welche Brandklasse haben Akustikpaneele aus recyceltem PET?",
-          "answer": "rPET Groove und rPET Flex Groove sind nach EN 13501-1 in B-s1,d0 klassifiziert; das Datenblatt von rPET Panel weist B-s2,d0 aus. Das Brandschutzzertifikat jedes Modells finden Sie im jeweiligen Download-Bereich."
+          "answer": "Das Brandverhalten nach EN 13501-1 hängt bei allen drei Modellen von der Farbe ab: Weiß, Grau und Schwarz erreichen B-s1,d0, alle anderen Farben B-s2,d0, in der Standard- wie in der FR-Version. Klassifizierungsberichte auf Anfrage."
         },
         "q4": {
           "question": "Kann ich PET-Akustikpaneele vor Ort zuschneiden und lackieren?",
@@ -4098,7 +4099,7 @@
         },
         "q5": {
           "question": "Wie lang ist die Lieferzeit für PET-Akustikpaneele?",
-          "answer": "Lagerfarben werden in 2–3 Wochen ab unserem Werk in Częstochowa geliefert; Sonderfarben benötigen 5–6 Wochen. Große Projekte werden in Produktionschargen eingeplant – fragen Sie vor der Bestellung nach einem verbindlichen Termin."
+          "answer": "Etwa 3–4 Arbeitswochen ab unserem Werk in Częstochowa, Lieferung EXW; Mindestbestellmenge eine Platte. Sonderfarben und große Projekte werden in Produktionschargen eingeplant – fragen Sie vor der Bestellung nach einem verbindlichen Termin."
         }
       }
     },

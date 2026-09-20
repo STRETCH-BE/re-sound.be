@@ -132,7 +132,7 @@
     "id": "FAQ-012",
     "category": "rPET",
     "question": "Le feutre PET offre-t-il une bonne sécurité incendie ?",
-    "answer": "Oui. Nos panneaux rPET sont classés B-s1,d0 selon EN 13501-1, ce qui les rend adaptés aussi bien aux habitations privées qu'aux bâtiments publics. Vérifiez l'exigence exacte de votre projet auprès de votre acousticien ou de votre conseiller en sécurité incendie.",
+    "answer": "Oui. La réaction au feu selon EN 13501-1 dépend de la couleur : les panneaux rPET blancs, gris et noirs atteignent B-s1,d0, toutes les autres couleurs B-s2,d0, en version Standard comme en version FR, ce qui convient aussi bien aux habitations privées qu'aux bâtiments publics. Les rapports de classement sont disponibles sur demande ; vérifiez l'exigence exacte de votre projet auprès de votre acousticien ou de votre conseiller en sécurité incendie.",
     "showOn": [
       "rpet",
       "faq"
@@ -154,8 +154,8 @@
   {
     "id": "FAQ-014",
     "category": "rPET",
-    "question": "Quelle absorption acoustique offre un panneau PET de 24 mm ?",
-    "answer": "Un panneau rPET de 24 mm présente un coefficient d'absorption acoustique pondéré αw de 0,85, ce qui correspond à la classe d'absorption B selon ISO 11654. Le montage du panneau avec une lame d'air à l'arrière améliore l'absorption dans les basses fréquences. Vérifiez l'exigence exacte pour votre local auprès de votre acousticien.",
+    "question": "Quelle absorption acoustique offre un panneau PET ?",
+    "answer": "Cela dépend de l'épaisseur et surtout du montage. Mesuré selon EN ISO 354, le rPET Panel de 12 mm atteint αw 0,25 (classe D selon EN ISO 11654) fixé directement au mur, 0,60 (classe C) avec une lame d'air de 50 mm et 1,00 (classe A) avec une lame d'air de 50 mm et 50 mm de laine de roche à l'arrière ; le panneau de 9 mm n'est pas encore mesuré. Une lame d'air ou de la laine minérale derrière le panneau augmente donc fortement l'absorption et l'étend aux basses fréquences. Vérifiez l'exigence exacte pour votre local auprès de votre acousticien.",
     "showOn": [
       "rpet",
       "faq"

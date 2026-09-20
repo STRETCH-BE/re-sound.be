@@ -90,10 +90,11 @@
       "statLandfill": "Deponiavfall",
       "statFreeLabel": "Gratis",
       "statTakeback": "Tilbaketaking",
-      "statColors": "Farger",
+      "statAnyLabel": "Enhver",
+      "statColors": "farge på bestilling",
       "pill1": "Resirkulert råstoff",
       "pill2": "Gratis returordning",
-      "pill3": "50+ farger",
+      "pill3": "Enhver farge på bestilling",
       "pill4": "Egne fabrikker",
       "imageAlt": "Interior sirkulære akustikkpaneler i et moderne kontor",
       "statPlants": "Egne fabrikker, BE og PL"
@@ -103,7 +104,7 @@
     "recycled": "Gjenvunnede materialer",
     "takeback": "Gratis tilbaketakingsprogram",
     "veneer": "Ekte trefiner overflater",
-    "colors": "Over 50 standardfarger",
+    "colors": "Enhver farge på bestilling",
     "custom": "Spesialmål på forespørsel",
     "factories": "Produsert i våre egne fabrikker i Belgia og Polen",
     "tested": "Testet per produkt: ISO 11654 / EN 13501-1",
@@ -271,7 +272,7 @@
       },
       "customization": {
         "title": "Tilpasningsmuligheter",
-        "description": "Tilgjengelig i over 50 farger og spesialmål som passer din designvisjon."
+        "description": "Tilgjengelig i lagerfarger, enhver farge på bestilling og spesialmål som passer din designvisjon."
       }
     },
     "solo-flex": {
@@ -331,10 +332,11 @@
       },
       "customization": {
         "title": "Fullt tilpassbar",
-        "description": "Over 50 farver, specialmål og forskellige monteringsmuligheder."
+        "description": "Lagerfarger, spesialfarger på bestilling, spesialmål og ulike monteringsmuligheter."
       }
     },
-    "freeLabel": "Gratis"
+    "freeLabel": "Gratis",
+    "anyLabel": "Enhver farge"
   },
   "circular": {
     "tag": "SIRKULÆR ØKONOMI",
@@ -3038,7 +3040,7 @@
       "recycledContent": {
         "category": "sustainability",
         "question": "Hvilket resirkulert innhold har hver produktserie?",
-        "answer": "Det resirkulerte innholdet varierer mellom produktfamilier. Tekstilserien (Interior, Solid, Divide) er laget av resirkulerte tekstilfibre med høyt resirkulert innhold. rPET-serien bruker post-consumer resirkulert PET; rPET Panel og rPET Flex Groove er laget utelukkende av resirkulert PET (det tilsvarende antallet flasker varierer med panelstørrelse — omtrent 60 flasker per standard Groove-panel). rWood-serien bruker en kjerne med høyt resirkulert fiberinnhold med FSC-sertifisert finér på den synlige siden. Detaljerte materialoversikter og EPD-dokumentasjon er tilgjengelig på hver produktside og på forespørsel."
+        "answer": "Det resirkulerte innholdet varierer mellom produktfamilier. Tekstilserien (Interior, Solid, Divide) er laget av resirkulerte tekstilfibre med høyt resirkulert innhold. rPET-serien bruker post-consumer resirkulert PET; rPET Panel og rPET Flex Groove er laget utelukkende av resirkulert PET. rWood-serien har en MDF-kjerne (standard, fuktbestandig eller brannhemmende) med FSC-sertifisert finér på den synlige siden; den resirkulerte andelen er ikke publisert. Detaljerte materialoversikter og EPD-dokumentasjon er tilgjengelig på hver produktside og på forespørsel."
       },
       "leadTimes": {
         "category": "commercial",
@@ -3975,7 +3977,6 @@
       "recycledTextileFiber": "Resirkulert tekstilfiber",
       "e1Carb2Compliant": "Oppfyller E1 / CARB 2",
       "classAPlusIso16000": "Klasse A+ (ISO 16000)",
-      "fiveMidnightToFrost": "5 (Midnight til Frost)",
       "pet100Polyester": "100 % PET (polyester)",
       "openArea25": "2,5 % åpen flate",
       "openArea52": "5,2 % åpen flate",
@@ -4066,11 +4067,11 @@
     },
     "rpet": {
       "title": "PET-akustikkpaneler av resirkulerte flasker | Re-Sound",
-      "description": "PET-akustikkpaneler av resirkulerte flasker: rPET Panel, Groove, Flex Groove. 12–16 farger, OEKO-TEX®, B-s1,d0 eller B-s2,d0 etter modell. Produsert i vår fabrikk i Polen.",
+      "description": "PET-akustikkpaneler av resirkulerte flasker: rPET Panel, Groove, Flex Groove. Ti lagerfarger, enhver farge på bestilling, OEKO-TEX®, B-s1,d0 eller B-s2,d0 etter farge. Produsert i vår fabrikk i Polen.",
       "h1": "PET-akustikkpaneler: rPET Panel, Groove og Flex Groove",
       "breadcrumb": "rPET",
-      "intro": "PET-akustikkpaneler gjør brukte drikkeflasker om til en tett polyesterfilt som absorberer lyd, kan bearbeides i CNC-fres som MDF og leveres i en fargepalett arkitekter faktisk bruker. Re-Sound er et merke i Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen); rPET-serien produseres i Częstochowa. Serien består av tre modeller. rPET Panel er den flate platen: kapp, fres, bor og mal den til vegger, himlinger og møbler. rPET Groove har en overflate med spor i 12 farger og tre tykkelser for høyere absorpsjon på vegger og i himlinger. rPET Flex Groove beholder det sporete uttrykket, men bøyer seg rundt søyler og buede vegger ned til 500 mm radius. Alle tre er OEKO-TEX® Standard 100-sertifisert, oppnår B-s1,d0 eller B-s2,d0 etter EN 13501-1 og kan leveres tilbake til gjenvinning når de er utrangert. Bruk tabellen nedenfor til å sammenligne PET-akustikkpaneler etter format, absorpsjon og leveringstid, og åpne deretter modellsiden for overflater og nedlastinger.",
-      "whyCertsDesc": "Alle rPET-modeller er OEKO-TEX® Standard 100-sertifisert; brannsertifikatene (EN 13501-1) finner du på modellsidene.",
+      "intro": "PET-akustikkpaneler gjør brukte drikkeflasker om til en tett polyesterfilt som absorberer lyd, kan bearbeides i CNC-fres som MDF og leveres i en fargepalett arkitekter faktisk bruker. Re-Sound er et merke i Stretch Group. Vi produserer i våre egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen); rPET-serien produseres i Częstochowa. Serien består av tre modeller. rPET Panel er den flate platen: kapp, fres, bor og mal den til vegger, himlinger og møbler. rPET Groove har en overflate med spor i de ti lagerfargene og tre tykkelser for høyere absorpsjon på vegger og i himlinger. rPET Flex Groove beholder det sporete uttrykket, men bøyer seg rundt søyler og buede vegger ned til 500 mm radius. Alle tre er OEKO-TEX® Standard 100-sertifisert, oppnår B-s1,d0 eller B-s2,d0 etter EN 13501-1 og kan leveres tilbake til gjenvinning når de er utrangert. Bruk tabellen nedenfor til å sammenligne PET-akustikkpaneler etter format, absorpsjon og leveringstid, og åpne deretter modellsiden for overflater og nedlastinger.",
+      "whyCertsDesc": "Alle rPET-modeller er OEKO-TEX® Standard 100-sertifisert; klassifiseringsrapporter (EN 13501-1) fås på forespørsel.",
       "applications": {
         "app1": "Åpne kontorlandskap og kundesentre",
         "app2": "Skoler, auditorier og biblioteker",
@@ -4086,11 +4087,11 @@
         },
         "q2": {
           "question": "Hvor mye lyd absorberer PET-akustikkpaneler?",
-          "answer": "Det avhenger av tykkelse og montering: rPET Groove oppnår NRC 0,55 (12 mm), 0,75 (24 mm) og 0,90 (36 mm); rPET Panel oppnår opptil αw 1,00 når det monteres på ramme med luftspalte. Paneler som limes direkte på veggen absorberer mindre enn paneler med hulrom bak."
+          "answer": "Det avhenger av tykkelse og montering. Databladet for rPET Panel oppgir for 12 mm-platen αw 0,25 (klasse D) montert direkte på veggen, 0,60 (C) med 50 mm luftspalte og 1,00 (A) med 50 mm luftspalte og 50 mm steinull; 9 mm-platen er ennå ikke målt. rPET Groove oppnår NRC 0,55 (12 mm), 0,75 (24 mm) og 0,90 (36 mm). Paneler som limes direkte på veggen absorberer mindre enn paneler med hulrom bak."
         },
         "q3": {
           "question": "Hvilken brannklasse har akustikkpaneler i resirkulert PET?",
-          "answer": "rPET Groove og rPET Flex Groove er klassifisert B-s1,d0 etter EN 13501-1; databladet for rPET Panel oppgir B-s2,d0. Brannsertifikatet for hver modell ligger under nedlastinger på modellsiden."
+          "answer": "Brannreaksjonen etter EN 13501-1 avhenger av fargen for alle tre modellene: hvit, grå og svart oppnår B-s1,d0, alle andre farger B-s2,d0, i både Standard- og FR-versjonen. Klassifiseringsrapporter på forespørsel."
         },
         "q4": {
           "question": "Kan jeg kappe og male PET-akustikkpaneler på byggeplassen?",
@@ -4098,7 +4099,7 @@
         },
         "q5": {
           "question": "Hva er leveringstiden for PET-akustikkpaneler?",
-          "answer": "Lagerfarger sendes innen 2–3 uker fra fabrikken vår i Częstochowa; spesialfarger tar 5–6 uker. Store prosjekter planlegges i produksjonsserier – be oss om en bindende dato før du bestiller."
+          "answer": "Cirka 3–4 arbeidsuker fra fabrikken vår i Częstochowa, levert EXW; minste bestilling én plate. Spesialfarger og store prosjekter planlegges i produksjonsserier – be oss om en bindende dato før du bestiller."
         }
       }
     },

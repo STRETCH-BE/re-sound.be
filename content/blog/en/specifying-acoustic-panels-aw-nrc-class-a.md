@@ -68,7 +68,7 @@ At αw 0.85 (rPET Groove) that is 5.0 / 0.85 = **5.9 m²**: five panels of 2,400
 
 ## Fire, emissions and circularity
 
-**Reaction to fire, EN 13501-1.** B-s1,d0 means limited contribution to fire, little smoke (s1) and no flaming droplets (d0). Our rPET range and rWood Micro are B-s1,d0; for rWood Groove and rWood Perf, take the class from the datasheet for the chosen veneer and finish. Check the exact requirement with your acoustician or fire engineer.
+**Reaction to fire, EN 13501-1.** B-s1,d0 means limited contribution to fire, little smoke (s1) and no flaming droplets (d0). Our rPET range is B-s1,d0 in white, grey and black and B-s2,d0 in the other colours (the class follows the colour, Standard and FR version alike); rWood Micro and rWood Perf are B-s1,d0 on the fire-retardant MDF core, rWood Groove B-s1,d0 on the FR core and D-s2,d2 on the standard core — take the class from the datasheet for the chosen build. Check the exact requirement with your acoustician or fire engineer.
 
 **Emissions and materials.** For felt, ask for OEKO-TEX Standard 100; our rPET carries it. For wood, ask for FSC on the veneer; rWood uses FSC-certified veneers only.
 
@@ -88,7 +88,7 @@ Interior starts at {{price:interior}} per set excl. VAT; [felt](/en/products/pet
 
 Example clause for a Class B felt wall panel:
 
-> Acoustic wall panel, PET felt, 100% recycled PET, 24 mm, 2,400 × 600 mm, from 12 standard colours. αw 0.85, Class B to ISO 11654, in the mounting condition of the test report, matching the installed condition [direct to substrate / air gap of … mm]. Fire class B-s1,d0 to EN 13501-1. OEKO-TEX Standard 100. Clip-fixed; manufacturer take-back at end of life. Submit: datasheet, test report to the specified standard, EN 13501-1 classification report, certificates and installation guide. Reference: Re-Sound rPET Groove, or equal approved on the same documents.
+> Acoustic wall panel, PET felt, 100% recycled PET, 24 mm, 2,400 × 600 mm, from ten stock colours. αw 0.85, Class B to ISO 11654, in the mounting condition of the test report, matching the installed condition [direct to substrate / air gap of … mm]. Fire class B-s1,d0 (white, grey, black) or B-s2,d0 (other colours) to EN 13501-1. OEKO-TEX Standard 100. Clip-fixed; manufacturer take-back at end of life. Submit: datasheet, test report to the specified standard, EN 13501-1 classification report, certificates and installation guide. Reference: Re-Sound rPET Groove, or equal approved on the same documents.
 
 For Class A, swap in Interior, Solid or Divide; for a wood feature wall, rWood Groove, adding the backing absorber for rWood Micro.
 

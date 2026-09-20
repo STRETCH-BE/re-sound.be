@@ -3,7 +3,7 @@ id: "BP-008"
 slug: "panneaux-acoustiques-pet-recycle"
 locale: "fr"
 title: "Panneaux acoustiques PET recyclé : atouts, pose, prix | Re-Sound"
-description: "Panneaux acoustiques en PET recyclé : αw 0,85 (classe B), feu B-s1,d0, OEKO-TEX, découpe, impression UV, pose clips ou colle, prix face au bois."
+description: "Panneaux acoustiques en PET recyclé : absorption selon le montage, feu B-s1,d0 ou B-s2,d0 selon la couleur, OEKO-TEX, découpe, impression UV, pose clips ou colle, prix face au bois."
 h1: "Panneaux acoustiques en PET recyclé : avantages, pose et prix"
 keyword: "panneaux acoustiques pet recyclé"
 secondaryKeywords: ["panneau acoustique pet","feutre pet acoustique","panneaux acoustiques recyclés","panneau acoustique pet ou bois"]
@@ -25,13 +25,13 @@ model: "pet-vilt-of-houten-akoestische-panelen"
 wordCount: 1384
 ---
 
-**Un panneau acoustique en PET recyclé est une plaque de feutre pressée à partir de bouteilles PET post-consommation, qui absorbe la parole avec un αw de 0,85 (classe B, ISO 11654) en 24 mm, se découpe et se peint comme un panneau de menuiserie, s'imprime en UV et se pose par clips ou par collage, à un prix au m² inférieur à celui du bois.** C'est le matériau à privilégier pour traiter la réverbération sans renoncer à la couleur.
+**Un panneau acoustique en PET recyclé est une plaque de feutre pressée à partir de bouteilles PET post-consommation, qui absorbe la parole (rPET Groove en 24 mm : αw 0,85, classe B, ISO 11654), se découpe et se peint comme un panneau de menuiserie, s'imprime en UV et se pose par clips ou par collage, à un prix au m² inférieur à celui du bois.** C'est le matériau à privilégier pour traiter la réverbération sans renoncer à la couleur.
 
 ## Qu'est-ce qu'un panneau acoustique en PET recyclé ?
 
 Le PET est le plastique des bouteilles d'eau et de soda. Après collecte, les bouteilles sont triées, lavées, broyées, fondues en fibres puis pressées à chaud en une plaque dense : le feutre PET. Notre gamme [rPET](/fr/products/panneaux-acoustiques-pet) contient 100 % de PET recyclé ; la fibre est à la fois la structure, la surface visible et l'absorbant, sans tissu ni placage.
 
-Deux références principales chez Re-Sound : le [rPET Groove](/fr/products/rpet-groove), rainuré, 12 couleurs, formats 2 400 × 600 et 1 200 × 600 mm ; et le [rPET Panel](/fr/products/rpet-panel), la plaque pleine, αw 0,85 de classe B en 24 mm.
+Deux références principales chez Re-Sound : le [rPET Groove](/fr/products/rpet-groove), rainuré, dix coloris de stock et toute couleur sur commande, formats 2 400 × 600 et 1 200 × 600 mm ; et le [rPET Panel](/fr/products/rpet-panel), la plaque pleine en 9 et 12 mm, dont l'absorption dépend du montage : αw 0,25 (classe D) collée au mur, jusqu'à 1,00 (classe A) avec une lame d'air de 50 mm et 50 mm de laine de roche (mesures sur 12 mm, EN ISO 354).
 
 ## Comment le feutre PET absorbe le son
 
@@ -57,7 +57,7 @@ Les panneaux traitent la réverbération, pas les appels qui traversent un burea
 
 ## Sécurité incendie et émissions : B-s1,d0 et OEKO-TEX
 
-Dans un bâtiment accessible au public, la classe de réaction au feu selon EN 13501-1 est souvent une exigence ferme. Notre gamme rPET est classée **B-s1,d0** : combustibilité limitée, faible production de fumée (s1), pas de gouttelettes enflammées (d0). Vérifiez l'exigence exacte avec votre acousticien.
+Dans un bâtiment accessible au public, la classe de réaction au feu selon EN 13501-1 est souvent une exigence ferme. Notre gamme rPET est classée **B-s1,d0** en blanc, gris et noir et **B-s2,d0** dans les autres couleurs, en version Standard comme en version FR : combustibilité limitée, faible production de fumée (s1 ou s2), pas de gouttelettes enflammées (d0). Vérifiez l'exigence exacte avec votre acousticien.
 
 Pour l'air intérieur, le feutre rPET est certifié **OEKO-TEX® Standard 100**, qui contrôle l'absence de substances nocives dans les textiles.
 
@@ -78,7 +78,7 @@ En fin de vie, nous reprenons les panneaux gratuitement en Belgique, aux Pays-Ba
 
 Délais de production :
 
-- **rPET Groove** : 2 à 3 semaines pour les couleurs de stock, 5 à 6 semaines sur mesure.
+- **rPET Groove** : environ 3 à 4 semaines ouvrées ; couleurs sur commande sur demande.
 - **rWood Groove** : 3 à 4 semaines pour les placages de stock, 6 à 8 semaines hors stock.
 
 Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne). Les panneaux rPET sortent de l'usine polonaise, avec des matières premières achetées dans l'Union européenne.
@@ -91,14 +91,14 @@ Côté prix, le tarif au m² dépend de l'épaisseur, de la couleur, de l'impres
 |---|---|---|
 | Absorption αw (ISO 11654) | 0,85, classe B | rWood Groove : 0,85, classe B ; rWood Micro : identique avec absorbant arrière |
 | NRC | 0,85 | rWood Groove : 0,80 |
-| Réaction au feu (EN 13501-1) | B-s1,d0 | rWood Micro : B-s1,d0 ; autres finitions : voir fiche technique |
+| Réaction au feu (EN 13501-1) | B-s1,d0 (blanc, gris, noir), B-s2,d0 (autres couleurs) | rWood Micro : B-s1,d0 ; autres finitions : voir fiche technique |
 | Matière | 100 % PET recyclé, OEKO-TEX® Standard 100 | Placages FSC uniquement |
-| Finitions | 12 couleurs, peinture, impression UV | Essences de placage |
+| Finitions | dix coloris de stock, toute couleur sur commande, peinture, impression UV | Essences de placage |
 | Travail sur chantier | Couteau, scie, meuleuse | À prévoir en amont (placage) |
 | Délai | 2–3 semaines (stock), 5–6 (sur mesure) | 3–4 semaines (stock), 6–8 (hors stock) |
 | Prix au m² | Sur devis ; inférieur au bois | Sur devis ; premium |
 
-**Où le PET gagne** : couleur et graphisme, budget sur grande surface, façonnage par vos équipes, délai court, 100 % de recyclé, classe B-s1,d0 sur toute la gamme.
+**Où le PET gagne** : couleur et graphisme, budget sur grande surface, façonnage par vos équipes, délai court, 100 % de recyclé, classe B-s1,d0 en blanc, gris et noir.
 
 **Où le bois gagne** : chaleur et prestige d'une réception, d'une salle de direction ou d'un restaurant ; continuité avec un mobilier en bois ; placages FSC. Le [rWood Micro](/fr/products/rwood-micro), microperforé, ajoute la classe B-s1,d0 pour les bâtiments publics. Si le cahier des charges impose la classe A, vérifiez l'exigence exacte avec votre acousticien ; Interior (αw 1,0, à partir de {{price:interior}} le lot) reste alors la voie directe.
 

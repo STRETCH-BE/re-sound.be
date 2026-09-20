@@ -116,7 +116,7 @@ Classroom of 8 × 7 m, 3.2 m high, tiled floor, plasterboard ceiling, one glazed
 - A target = 0.161 × 179 / 0.6 = **48.0 m² Sabine**
 - To add: **24.0 m² Sabine**
 
-Proposal: **30 m² of absorbent ceiling** in class A (αw 0.9, 27.0 m² Sabine) plus **four rPET Groove panels** of 2,400 × 600 mm on the back wall (5.76 m², αw 0.85, 4.9 m² Sabine). Together 31.9 m² Sabine, above the 24.0 needed: the room stays under 0.6 s even when empty. For schools we specify [rPET](/en/products/pet-acoustic-panels): fire class B-s1,d0 to EN 13501-1 (check the exact requirement with your acoustician), OEKO-TEX Standard 100, rPET Groove in 12 colours, replaceable panel by panel.
+Proposal: **30 m² of absorbent ceiling** in class A (αw 0.9, 27.0 m² Sabine) plus **four rPET Groove panels** of 2,400 × 600 mm on the back wall (5.76 m², αw 0.85, 4.9 m² Sabine). Together 31.9 m² Sabine, above the 24.0 needed: the room stays under 0.6 s even when empty. For schools we specify [rPET](/en/products/pet-acoustic-panels): fire class B-s1,d0 in white, grey and black and B-s2,d0 in the other colours to EN 13501-1 (check the exact requirement with your acoustician), OEKO-TEX Standard 100, rPET Groove in ten stock colours, replaceable panel by panel.
 
 ## Rules of thumb and where to place the panels
 

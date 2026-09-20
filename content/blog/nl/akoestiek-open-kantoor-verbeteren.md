@@ -55,7 +55,7 @@ Vuistregel: 60 tot 80 % van het plafondoppervlak absorberend maken lost in de me
 
 Wanden komen na het plafond, maar niet zomaar overal. Geluid weerkaatst het hardst op de wanden tegenover de bron en op de lange wanden van een rechthoekige ruimte. Daar horen de panelen:
 
-- **[rPET Groove](/nl/products/rpet-groove)** (gegroefd, 12 kleuren, 12/24/36 mm) voor grote wandvlakken die kleur mogen hebben. NRC 0,55 / 0,75 / 0,90 naargelang de dikte, brandklasse B-s1,d0.
+- **[rPET Groove](/nl/products/rpet-groove)** (gegroefd, tien voorraadkleuren en elke kleur op bestelling, 12/24/36 mm) voor grote wandvlakken die kleur mogen hebben. NRC 0,55 / 0,75 / 0,90 naargelang de dikte, brandklasse B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren.
 - **rWood Groove of rWood Micro** waar het interieur warmte vraagt: FSC-fineer op een kern van gerecycleerd vilt, αw 0,90 (klasse A).
 - **Interior**, onze modulaire textielpanelen met afneembare, wasbare hoes, voor zones waar panelen vaak vervangen of verplaatst worden.
 
