@@ -1,27 +1,27 @@
-Re-Sound SEO check — 2026-09-20T20:27:45.137Z
+Re-Sound SEO check — 2026-09-20T22:01:51.940Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
-URLs in sitemap: 184
-Per locale: en=30, nl=36, fr=30, de=30, es=29, pt=29
-lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=37, 2026-09-13=22, 2026-09-20=107
+URLs in sitemap: 196
+Per locale: en=34, nl=36, fr=34, de=34, es=29, pt=29
+lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=37, 2026-09-13=22, 2026-09-20=119
 distinct lastmod values: 9
-single-locale URLs (no hreflang by design): 6
+single-locale URLs (no hreflang by design): 18
 hreflang alternates per URL: min 0, max 7
 
-Crawling 184 pages …
+Crawling 196 pages …
 
 == (a) Forbidden strings
 OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-de: 0.3% English (5/1776 segments over 30 pages)
-es: 0.1% English (3/2021 segments over 29 pages)
-fr: 0.3% English (6/2055 segments over 30 pages)
-nl: 0.3% English (8/2307 segments over 36 pages)
+de: 0.2% English (5/2160 segments over 34 pages)
+es: 0.1% English (3/2023 segments over 29 pages)
+fr: 0.2% English (6/2435 segments over 34 pages)
+nl: 0.3% English (8/2309 segments over 36 pages)
     3.4%  /nl  (2/58)
-pt: 0.2% English (3/1969 segments over 29 pages)
+pt: 0.2% English (3/1971 segments over 29 pages)
 
 -- sample English segments per flagged page (max 12 each)
 /nl:
@@ -33,12 +33,12 @@ OK — none found
 
 == (c) hreflang + canonical per page
 174 pages: 7 hreflang, canonical present
-6 pages: 0 hreflang, canonical present — /nl/blog/pet-vilt-of-houten-akoestische-panelen, /nl/blog/nagalmtijd-klaslokaal-normen, /nl/blog/hoeveel-akoestische-panelen-nodig, /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing, /nl/blog/akoestische-panelen-restaurant, /nl/blog/akoestiek-open-kantoor-verbeteren
+18 pages: 0 hreflang, canonical present
 4 pages: 5 hreflang, canonical present — /en/guides/phone-booth-prices, /nl/guides/prijzen-belcabines, /fr/guides/prix-cabines-acoustiques, /de/guides/telefonbox-preise
 
 == (d) JSON-LD
-blocks: 410, parse errors: 0
-types: Question=887, Answer=887, ListItem=564, PropertyValue=492, FAQPage=130, BreadcrumbList=118, Organization=114, ImageObject=102, Product=84, Brand=84, Offer=84, MerchantReturnPolicy=84, Country=84, PostalAddress=42, UnitPriceSpecification=42, LocalBusiness=30, OpeningHoursSpecification=30, ItemList=24, GeoCoordinates=18, CollectionPage=18, ContactPoint=12, WebSite=6, BlogPosting=6, Person=6
+blocks: 446, parse errors: 0
+types: Question=923, Answer=923, ListItem=600, PropertyValue=492, FAQPage=142, BreadcrumbList=130, Organization=126, ImageObject=114, Product=84, Brand=84, Offer=84, MerchantReturnPolicy=84, Country=84, PostalAddress=42, UnitPriceSpecification=42, LocalBusiness=30, OpeningHoursSpecification=30, ItemList=24, GeoCoordinates=18, CollectionPage=18, BlogPosting=18, Person=18, ContactPoint=12, WebSite=6
 Product nodes: 84, with offers: 84  OK
 
 == (f) Internal links returning 404 (from crawled pages + sitemap document entries)
@@ -46,7 +46,7 @@ checked 265 distinct internal URLs, 0 broken
 note: 1 links redirect (e.g. /documents/rwood-groove/datasheet.pdf → /)
 
 == (g) Title / meta description lengths (warn > 65 / > 155)
-titles > 65 chars: 31; descriptions > 155 chars: 54
+titles > 65 chars: 31; descriptions > 155 chars: 56
 WARN title  67  /en/products/pet-acoustic-panels  "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound"
 WARN title  71  /en/products/wood-acoustic-panels  "Wood Acoustic Panels — Veneer, Perforated & Micro-perforated | Re-Sound"
 WARN title  68  /en/products/rwood-groove  "rWood Groove — Grooved Wood Acoustic Panels, Oak & Walnut | Re-Sound"
@@ -80,7 +80,7 @@ WARN title  75  /pt/products/rpet-panel  "rPET Panel — painel acústico em PET
 WARN title  69  /pt/products/rpet-groove  "rPET Groove — painéis em PET ranhurados, 10 cores de stock | Re-Sound"
 WARN desc  185  /en/products/pet-acoustic-panels
 WARN desc  181  /en/guides/phone-booth-prices
-WARN desc  180  /en/products/rwood-groove
+WARN desc  187  /en/products/rwood-groove
 WARN desc  168  /en/products/rwood-micro
 WARN desc  185  /en/products/rwood-veneer
 WARN desc  209  /en/products/rpet-panel
@@ -89,7 +89,7 @@ WARN desc  199  /en/products/rpet-flex-groove
 WARN desc  181  /nl/acoustic-calculator
 WARN desc  206  /nl/products/pet-akoestische-panelen
 WARN desc  158  /nl/guides/prijzen-belcabines
-WARN desc  197  /nl/products/rwood-groove
+WARN desc  209  /nl/products/rwood-groove
 WARN desc  168  /nl/products/rwood-micro
 WARN desc  208  /nl/products/rwood-veneer
 WARN desc  229  /nl/products/rpet-panel
@@ -98,25 +98,27 @@ WARN desc  203  /nl/products/rpet-flex-groove
 WARN desc  197  /fr/acoustic-calculator
 WARN desc  228  /fr/products/panneaux-acoustiques-pet
 WARN desc  158  /fr/products/cabines-acoustiques
-WARN desc  200  /fr/products/rwood-groove
+WARN desc  201  /fr/products/rwood-groove
 WARN desc  174  /fr/products/rwood-micro
 WARN desc  204  /fr/products/rwood-veneer
 WARN desc  250  /fr/products/rpet-panel
 WARN desc  215  /fr/products/rpet-groove
 WARN desc  221  /fr/products/rpet-flex-groove
+WARN desc  181  /fr/blog/panneaux-acoustiques-pet-recycle
 WARN desc  189  /de/acoustic-calculator
 WARN desc  206  /de/products/pet-akustikpaneele
-WARN desc  193  /de/products/rwood-groove
+WARN desc  202  /de/products/rwood-groove
 WARN desc  160  /de/products/rwood-micro
 WARN desc  204  /de/products/rwood-veneer
 WARN desc  248  /de/products/rpet-panel
 WARN desc  191  /de/products/rpet-groove
 WARN desc  207  /de/products/rpet-flex-groove
 WARN desc  158  /de/products/solo-eco
+WARN desc  190  /de/blog/akustikpaneele-recyceltes-pet
 WARN desc  174  /es/acoustic-calculator
 WARN desc  219  /es/products/pet-acoustic-panels
 WARN desc  160  /es/products/acoustic-phone-booths
-WARN desc  210  /es/products/rwood-groove
+WARN desc  215  /es/products/rwood-groove
 WARN desc  168  /es/products/rwood-micro
 WARN desc  206  /es/products/rwood-veneer
 WARN desc  250  /es/products/rpet-panel
@@ -126,7 +128,7 @@ WARN desc  156  /es/products/solo-eco
 WARN desc  174  /pt/acoustic-calculator
 WARN desc  213  /pt/products/pet-acoustic-panels
 WARN desc  159  /pt/products/acoustic-phone-booths
-WARN desc  225  /pt/products/rwood-groove
+WARN desc  229  /pt/products/rwood-groove
 WARN desc  181  /pt/products/rwood-micro
 WARN desc  219  /pt/products/rwood-veneer
 WARN desc  243  /pt/products/rpet-panel
@@ -174,7 +176,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     en       40    142    1         7     yes    3          1/1  index           —  /en/products/interior
 200     en       37    142    1         7     yes    3          1/1  index           —  /en/products/solid
 200     en       47    138    1         7     yes    3          1/1  index           —  /en/products/divide
-200     en       68    180    1         7     yes    3          1/1  index           —  /en/products/rwood-groove
+200     en       68    187    1         7     yes    3          1/1  index           —  /en/products/rwood-groove
 200     en       62    168    1         7     yes    3          1/1  index           —  /en/products/rwood-micro
 200     en       55    143    1         7     yes    3          1/1  index           —  /en/products/rwood-perf
 200     en       71    185    1         7     yes    3          1/1  index           —  /en/products/rwood-veneer
@@ -185,6 +187,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     en       67    144    1         7     yes    3          1/1  index           —  /en/products/solo-flex
 200     en       56    150    1         7     yes    3          1/1  index           —  /en/products/duo
 200     en       56    146    1         7     yes    3          1/1  index           —  /en/products/modular-xl
+200     en       65    149    1         0     yes    3          0/0  index           —  /en/blog/specifying-acoustic-panels-aw-nrc-class-a
+200     en       56    143    1         0     yes    3          0/0  index           —  /en/blog/pet-acoustic-panels-vs-wood
+200     en       60    149    1         0     yes    3          0/0  index           —  /en/blog/office-phone-booth-prices
+200     en       64    155    1         0     yes    3          0/0  index           —  /en/blog/how-many-acoustic-panels-do-i-need
 200     nl       55    145    1         7     yes    3          0/0  index         3.4  /nl
 200     nl       20    152    1         7     yes    1          0/0  index         0.0  /nl/products
 200     nl       24    136    1         7     yes    0          0/0  index         0.0  /nl/about
@@ -204,7 +210,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       43    153    1         7     yes    3          1/1  index         0.0  /nl/products/interior
 200     nl       40    148    1         7     yes    3          1/1  index         0.0  /nl/products/solid
 200     nl       50    151    1         7     yes    3          1/1  index         0.0  /nl/products/divide
-200     nl       59    197    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-groove
+200     nl       59    209    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-groove
 200     nl       55    168    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-micro
 200     nl       64    143    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-perf
 200     nl       71    208    1         7     yes    3          1/1  index         0.0  /nl/products/rwood-veneer
@@ -240,7 +246,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       47    155    1         7     yes    3          1/1  index         0.0  /fr/products/interior
 200     fr       44    155    1         7     yes    3          1/1  index         0.0  /fr/products/solid
 200     fr       52    153    1         7     yes    3          1/1  index         0.0  /fr/products/divide
-200     fr       63    200    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-groove
+200     fr       63    201    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-groove
 200     fr       64    174    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-micro
 200     fr       58    154    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-perf
 200     fr       71    204    1         7     yes    3          1/1  index         0.0  /fr/products/rwood-veneer
@@ -251,6 +257,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       59    154    1         7     yes    3          1/1  index         0.0  /fr/products/solo-flex
 200     fr       58    150    1         7     yes    3          1/1  index         0.0  /fr/products/duo
 200     fr       64    155    1         7     yes    3          1/1  index         0.0  /fr/products/modular-xl
+200     fr       64    181    1         0     yes    3          0/0  index         0.0  /fr/blog/panneaux-acoustiques-pet-recycle
+200     fr       64    148    1         0     yes    3          0/0  index         0.0  /fr/blog/panneau-acoustique-bois-microperfore
+200     fr       64    150    1         0     yes    3          0/0  index         0.0  /fr/blog/combien-de-panneaux-acoustiques
+200     fr       61    155    1         0     yes    3          0/0  index         0.0  /fr/blog/cabine-acoustique-bureau-prix
 200     de       61    134    1         7     yes    3          0/0  index         1.8  /de
 200     de       19    148    1         7     yes    1          0/0  index         0.0  /de/products
 200     de       24    127    1         7     yes    0          0/0  index         0.0  /de/about
@@ -270,7 +280,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       42    153    1         7     yes    3          1/1  index         0.0  /de/products/interior
 200     de       39    151    1         7     yes    3          1/1  index         0.0  /de/products/solid
 200     de       48    146    1         7     yes    3          1/1  index         0.0  /de/products/divide
-200     de       64    193    1         7     yes    3          1/1  index         0.0  /de/products/rwood-groove
+200     de       64    202    1         7     yes    3          1/1  index         0.0  /de/products/rwood-groove
 200     de       61    160    1         7     yes    3          1/1  index         0.0  /de/products/rwood-micro
 200     de       55    150    1         7     yes    3          1/1  index         0.0  /de/products/rwood-perf
 200     de       70    204    1         7     yes    3          1/1  index         0.0  /de/products/rwood-veneer
@@ -281,6 +291,10 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       65    150    1         7     yes    3          1/1  index         0.0  /de/products/solo-flex
 200     de       64    154    1         7     yes    3          1/1  index         0.0  /de/products/duo
 200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/modular-xl
+200     de       51    153    1         0     yes    3          0/0  index         0.0  /de/blog/telefonbox-buero-kosten
+200     de       61    155    1         0     yes    3          0/0  index         0.0  /de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet
+200     de       57    153    1         0     yes    3          0/0  index         0.0  /de/blog/din-18041-nachhallzeit-buero
+200     de       63    190    1         0     yes    3          0/0  index         0.0  /de/blog/akustikpaneele-recyceltes-pet
 200     es       57    152    1         7     yes    3          0/0  index         1.4  /es
 200     es       20    147    1         7     yes    1          0/0  index         0.0  /es/products
 200     es       25    142    1         7     yes    0          0/0  index         0.0  /es/about
@@ -299,7 +313,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     es       46    152    1         7     yes    3          1/1  index         0.0  /es/products/interior
 200     es       43    147    1         7     yes    3          1/1  index         0.0  /es/products/solid
 200     es       53    149    1         7     yes    3          1/1  index         0.0  /es/products/divide
-200     es       63    210    1         7     yes    3          1/1  index         0.0  /es/products/rwood-groove
+200     es       63    215    1         7     yes    3          1/1  index         0.0  /es/products/rwood-groove
 200     es       58    168    1         7     yes    3          1/1  index         0.0  /es/products/rwood-micro
 200     es       61    155    1         7     yes    3          1/1  index         0.0  /es/products/rwood-perf
 200     es       72    206    1         7     yes    3          1/1  index         0.0  /es/products/rwood-veneer
@@ -328,7 +342,7 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       47    150    1         7     yes    3          1/1  index         0.0  /pt/products/interior
 200     pt       44    154    1         7     yes    3          1/1  index         0.0  /pt/products/solid
 200     pt       52    147    1         7     yes    3          1/1  index         0.0  /pt/products/divide
-200     pt       64    225    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-groove
+200     pt       64    229    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-groove
 200     pt       58    181    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-micro
 200     pt       62    147    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-perf
 200     pt       77    219    1         7     yes    3          1/1  index         0.0  /pt/products/rwood-veneer
@@ -341,10 +355,22 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       62    153    1         7     yes    3          1/1  index         0.0  /pt/products/modular-xl
 
 == Claims: 0 forbidden-string hits, 0 spec mismatches  OK
-== Summary: 184 pages, 0 failures, 91 warnings
+== Summary: 196 pages, 0 failures, 105 warnings
+warn /en/blog/specifying-acoustic-panels-aw-nrc-class-a: single-locale page: no hreflang by design
+warn /en/blog/pet-acoustic-panels-vs-wood: single-locale page: no hreflang by design
+warn /en/blog/office-phone-booth-prices: single-locale page: no hreflang by design
+warn /en/blog/how-many-acoustic-panels-do-i-need: single-locale page: no hreflang by design
 warn /nl/blog/pet-vilt-of-houten-akoestische-panelen: single-locale page: no hreflang by design
 warn /nl/blog/nagalmtijd-klaslokaal-normen: single-locale page: no hreflang by design
 warn /nl/blog/hoeveel-akoestische-panelen-nodig: single-locale page: no hreflang by design
 warn /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing: single-locale page: no hreflang by design
 warn /nl/blog/akoestische-panelen-restaurant: single-locale page: no hreflang by design
 warn /nl/blog/akoestiek-open-kantoor-verbeteren: single-locale page: no hreflang by design
+warn /fr/blog/panneaux-acoustiques-pet-recycle: single-locale page: no hreflang by design
+warn /fr/blog/panneau-acoustique-bois-microperfore: single-locale page: no hreflang by design
+warn /fr/blog/combien-de-panneaux-acoustiques: single-locale page: no hreflang by design
+warn /fr/blog/cabine-acoustique-bureau-prix: single-locale page: no hreflang by design
+warn /de/blog/telefonbox-buero-kosten: single-locale page: no hreflang by design
+warn /de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet: single-locale page: no hreflang by design
+warn /de/blog/din-18041-nachhallzeit-buero: single-locale page: no hreflang by design
+warn /de/blog/akustikpaneele-recyceltes-pet: single-locale page: no hreflang by design
