@@ -19,13 +19,13 @@
     "divideTitle": "Divide Vrijstaande Akoestische Schermen | Re-Sound",
     "divideDescription": "Vrijstaande akoestische schermen met magnetische modulaire koppeling: tweezijdige absorptie, geen installatie, gerecycleerd textiel. Gemaakt in België.",
     "rwoodGrooveTitle": "rWood Groove — gegroefde houtpanelen, eik & noot | Re-Sound",
-    "rwoodGrooveDescription": "Gegroefde houten akoestische panelen met FSC-eiken- en notenfineer op gerecycleerde viltkern. Klasse A absorptie, 4 lamelvarianten, 5 afwerkingen.",
+    "rwoodGrooveDescription": "Gegroefde akoestische houten planken: FSC®-gecertificeerd eiken- of notenfineer op een MDF-kern met 3 mm vilt van gerecycleerd PET. αw 0,90, klasse A, vier lamelpatronen, vijf fineren, 10 en 19 mm.",
     "rwoodPerfTitle": "rWood Perf — geperforeerde houten akoestische panelen | Re-Sound",
     "rwoodPerfDescription": "Geperforeerde houten akoestische panelen met FSC-fineer: vier perforatiepatronen voor breedbandabsorptie, 8 afwerkingen, brandvertragende kern.",
     "rwoodMicroTitle": "rWood Micro — microgeperforeerde houtpanelen | Re-Sound",
-    "rwoodMicroDescription": "Microgeperforeerde akoestische houtpanelen (0,5 mm) met FSC-gecertificeerd fineer: vrijwel onzichtbaar patroon, brandklasse {fireClass}, optie met verlichting.",
-    "rwoodVeneerTitle": "rWood Panel — fineerpanelen, 10 houtsoorten | Re-Sound",
-    "rwoodVeneerDescription": "Gladde akoestische fineerpanelen in 10 houtsoorten: meubelkwaliteit, FSC-gecertificeerd, EPD beschikbaar. Geborsteld, gebeitst en gelakt, montageklaar.",
+    "rwoodMicroDescription": "Microgeperforeerde akoestische houtpanelen (vanaf 0,5 mm) met FSC-gecertificeerd fineer: vrijwel onzichtbaar patroon, brandklasse {fireClass}, op maat tot 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — gefineerde akoestische panelen, 12 houtfineren | Re-Sound",
+    "rwoodVeneerDescription": "Gladde gefineerde akoestische panelen in 12 echthoutfineren, Nature- of Gemini-reeks: FSC®-gecertificeerd, naturel of gepigmenteerde lak, HPL, folie of verf. Afgewerkt in de fabriek, elk fineer op bestelling.",
     "rpetGrooveTitle": "rPET Groove — gegroefde PET-panelen, 12 kleuren | Re-Sound",
     "rpetGrooveDescription": "Gegroefde PET akoestische panelen van gerecycleerde flessen: 12 kleuren, 3 diktes (12/24/36 mm), NRC tot 0,90, brandklasse B-s1,d0. Gemaakt in Polen.",
     "rpetPanelTitle": "rPET Panel — akoestisch PET-paneel, 16 kleuren | Re-Sound",
@@ -1936,121 +1936,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "AKOESTISCHE HOUTPANELEN",
+      "tag": "GEGROEFD AKOESTISCH HOUTPANEEL",
       "title": "rWood Groove: gegroefde houten akoestische panelen in eik en noot",
-      "tagline": "Naturele Schoonheid, Perfecte Akoestiek",
-      "description": "Breng naturele warmte en verfijnde stijl in elke ruimte met rWood - Groove akoestische panelen. Premium eiken en walnoten fineers gecombineerd met geluidsabsorberende viltbacking creëren harmonie tussen esthetiek en akoestiek.",
-      "usp1": "FSC® Gecertificeerd Hout",
-      "usp2": "Klasse A Absorptie",
-      "usp3": "Gratis terugnameprogramma"
+      "tagline": "Natuurlijke schoonheid, perfecte akoestiek.",
+      "description": "A-kwaliteit eiken- of notenfineer op een MDF-kern, precies gegroefd tot verticale lamellen op een 3 mm vilt van gerecycleerd PET. De open groeven leiden het geluid naar het vilt; de planken sluiten met een onzichtbare tand-en-groef op elkaar aan. Planken van 300 mm breed, 2 400 of 2 780 mm lang, in 10 en 19 mm, voor wanden en plafonds.",
+      "usp1": "FSC®-gecertificeerd fineer",
+      "usp2": "Absorptieklasse A",
+      "usp3": "Gratis terugname aan het einde van de levensduur"
     },
     "overview": {
-      "tag": "VAKMANSCHAP",
-      "title": "Kies je Stijl",
-      "subtitle": "Premium Afwerkingen",
-      "description": "rWood - Groove panelen transformeren elke ruimte in een verfijnde akoestische omgeving. De combinatie van precisiefreesd groeven met premium houtfineers creëert een oppervlak dat zowel visueel als akoestisch indrukwekkend is.",
-      "feature1": "Premium A-kwaliteit eiken en walnoten fineers",
-      "feature2": "Geïntegreerde akoestische viltbacking",
-      "feature3": "Naadloze paneel-tot-paneel verbinding",
-      "feature4": "Geschikt voor wanden en plafonds",
-      "description2": "rWood - Groove panelen transformeren elke ruimte in een plek van naturele schoonheid en akoestisch comfort. Elk paneel heeft premium A-kwaliteit eiken of walnoten fineer, precies gegroefd voor de kenmerkende lineaire esthetiek."
-    },
-    "oakCollection": {
-      "title": "Eikencollectie",
-      "description": "Naturel eikenfineer in meerdere beitselopties, van blond naturel tot diep gerookt."
+      "tag": "OVERZICHT",
+      "title": "Gegroefd eiken of noten op vilt van gerecycleerd PET",
+      "feature1": "A-kwaliteit eiken- of notenfineer",
+      "feature2": "3 mm viltrug van gerecycleerd PET, zwart of grijs",
+      "feature3": "Onzichtbare tand-en-groefverbinding",
+      "feature4": "Voor wanden en plafonds, droge binnenruimtes",
+      "description2": "rWood Groove combineert een A-kwaliteit eiken- of notenfineer met een MDF-kern die precies tot verticale lamellen is gegroefd. Het 3 mm vilt van gerecycleerd PET achter de lamellen vangt het geluid dat door de open groeven binnenkomt, wat de nagalm beperkt en de spraakverstaanbaarheid verbetert. Vier lamelpatronen, vijf voorraadfineren, en elk fineer en elke afwerking op bestelling."
     },
     "feltBacking": {
-      "title": "Vilt Achtergrondopties",
-      "description": "Naturel grijs, zwart of gekleurd akoestisch vilt zichtbaar door de groeven."
+      "title": "Viltkleur",
+      "description": "3 mm vilt van gerecycleerd PET achter de lamellen, zichtbaar door de groeven.",
+      "black": "Zwart",
+      "grey": "Grijs"
     },
     "acoustics": {
-      "tag": "PRESTATIES",
-      "title": "Superieure Geluidsabsorptie",
-      "benefit1Title": "Verminderde Nagalm",
-      "benefit1": "Echo beheersen en spraakverstaanbaarheid verbeteren",
-      "benefit2Title": "Meer Comfort",
-      "benefit2": "Rustigere omgevingen creëren",
-      "benefit3Title": "Geteste Prestaties",
-      "benefit3": "Onafhankelijk geverifieerde akoestische gegevens",
-      "description": "Het unieke groefontwerp gecombineerd met kwalitatief akoestisch vilt zorgt voor uitzonderlijke geluidsabsorptie.",
-      "ratingLabel": "Absorptie",
-      "description2": "Het unieke groefontwerp gecombineerd met kwalitatief akoestisch vilt zorgt voor uitzonderlijke geluidsabsorptie. Verminder echo, elimineer geluid en creëer comfortabele ruimtes.",
-      "diagramTitle": "Dwarsdoorsnede",
-      "soundAbsorbed": "Geluid Geabsorbeerd",
-      "testStandard": "Testnorm"
+      "tag": "AKOESTIEK",
+      "title": "Geluidsabsorptie",
+      "description2": "De open groeven leiden het geluid naar het vilt van gerecycleerd PET achter de lamellen, wat de nagalm beperkt en de spraakverstaanbaarheid verbetert.",
+      "tableTitle": "Geluidsabsorptie",
+      "behindTitle": "Achter de plank",
+      "behindDesc": "Gemonteerd op regels kan de spouw een extra absorber opnemen: akoestisch vilt, een rPET-paneel of minerale wol.",
+      "note": "αw en absorptieklasse volgens EN ISO 11654. Octaafbandwaarden volgen met de nieuwe testreeks."
     },
     "installation": {
-      "tag": "EENVOUDIGE INSTALLATIE",
-      "title": "Naadloze Installatie",
-      "step1Title": "Ondergrond Voorbereiden",
-      "step1Desc": "Latten monteren of lijm aanbrengen op schone, droge ondergrond",
-      "step2Title": "Eerste Paneel Plaatsen",
-      "step2Desc": "Beginnen vanuit hoek, waterpas uitlijning controleren",
-      "step3Title": "Panelen Verbinden",
-      "step3Desc": "Schuif tong in groef voor naadloze verbinding",
+      "tag": "INSTALLATIE",
+      "title": "Tand-en-groef, op regels of verlijmd",
+      "step1Title": "Ondergrond",
+      "step1Desc": "Regels of lijm op een schone, droge, vlakke ondergrond.",
+      "step2Title": "Eerste plank",
+      "step2Desc": "Begin in een hoek en controleer of alles waterpas is.",
+      "step3Title": "Verbinden",
+      "step3Desc": "Schuif de tand in de groef voor een naadloze verbinding.",
       "step4Title": "Afwerken",
-      "step4Desc": "Voeg eindprofielen toe voor professioneel resultaat",
-      "description": "rWood - Groove panelen hebben een innovatief tong-en-groef verbinding voor snelle en eenvoudige installatie.",
-      "description2": "rWood - Groove panelen hebben een innovatief tong-en-groef verbindingssysteem dat onzichtbare verbindingen en een samenhangend oppervlak garandeert. Of u nu professioneel installateur of ervaren doe-het-zelver bent, ons systeem maakt installatie eenvoudig."
+      "step4Desc": "Sluit de randen af met eindprofielen.",
+      "description2": "De planken worden op regels bevestigd of op de ondergrond verlijmd en sluiten met een onzichtbare tand-en-groef op elkaar aan, zodat de naden in het groefpatroon verdwijnen."
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
-      "title": "Gebouwd met Integriteit",
-      "badge1": "FSC® Gecertificeerd",
-      "badge1Desc": "Hout uit verantwoord beheerde bossen",
-      "badge2": "Gerecycleerd Vilt",
-      "badge2Desc": "Akoestische backing van gerecyclede materialen",
+      "title": "Verantwoord gewonnen",
+      "badge1": "FSC®-gecertificeerd",
+      "badge1Desc": "Houtherkomst FSC®-gecertificeerd, certificaat C191539",
+      "badge2": "Vilt van gerecycleerd PET",
+      "badge2Desc": "3 mm viltrug van gerecycleerd PET",
       "badge3": "Gemaakt in Polen",
       "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
       "badge4": "Gratis terugname",
       "badge4Desc": "Panelen komen aan het einde van hun levensduur gratis naar ons terug",
-      "description": "Elk rWood - Groove paneel is ontworpen met duurzaamheid als kern. Ons FSC®-gecertificeerd hout komt uit verantwoord beheerde bossen.",
-      "description2": "Elk rWood - Groove paneel is ontworpen met duurzaamheid als kern. Onze FSC®-certificering garandeert dat het hout afkomstig is uit verantwoord beheerde bossen die milieu-, sociale en economische voordelen bieden."
+      "description2": "FSC®-gecertificeerd hout, een rug van gerecycleerd PET en gratis terugname aan het einde van de levensduur.",
+      "badge2DescCert": "3 mm viltrug van gerecycleerd PET, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Milieuproductverklaring volgens ISO 14025 en EN 15804"
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Specificaties",
-      "acousticsTitle": "Akoestische Prestaties",
-      "fireTitle": "Brandveiligheid",
-      "certsTitle": "Certificeringen",
-      "applicationsTitle": "Toepassingen",
-      "dimensionsTitle": "Afmetingen",
-      "materialsTitle": "Materialen",
+      "tag": "TECHNISCHE GEGEVENS",
+      "title": "Plank, brand en emissies",
+      "acousticsTitle": "Geluidsabsorptie",
+      "fireTitle": "Brand (EN 13501-1) en emissies",
       "dimPanelWidth": "Breedte",
       "dimPanelLength": "Lengte",
-      "dimThickness": "Dikte",
-      "dimGrooveDepth": "Groepdiepte",
-      "dimGrooveWidth": "Groepbreedte",
-      "matVeneer": "Fineer",
-      "matVeneerVal": "A-kwaliteit Eik / Walnoot",
-      "matCore": "Kern",
-      "matCoreVal": "MDF (standaard / vochtbestendig / brandvertragend)",
-      "matBacking": "Achterlaag",
-      "matBackingVal": "Gerecycleerd PET (3mm)",
+      "matCoreVal": "Standaard, MR of FR MDF",
       "matFinish": "Afwerking",
-      "finishVal": "Olie / Lak",
-      "stdPanels": "Standaardpanelen",
-      "fireMdfVal": "Brandvertragend MDF",
-      "woodSourcing": "Houtherkomst",
-      "feltCert": "Viltcertificering",
-      "envLabel": "Milieu",
-      "vocLabel": "VOS-emissies",
-      "vocVal": "E1 / Lage emissies",
-      "appInstall": "Installatie",
-      "appWalls": "Wanden & Plafonds",
-      "appEnv": "Omgeving",
-      "appEnvVal": "Binnenruimte (droge zones)",
-      "appMoist": "Vochtbestendig",
-      "appMoistVal": "Beschikbaar voor vochtige ruimtes",
-      "appConn": "Verbinding",
-      "appConnVal": "Tong & groef"
+      "finishVal": "Penetrerende olie of lak",
+      "plankTitle": "Plank",
+      "dimGroove": "Groef",
+      "dimGrooveVal": "15 mm breed, 7 · 15 mm diep",
+      "feltVal": "Gerecycleerd PET, 3 mm, zwart of grijs",
+      "connVal": "Onzichtbare tand-en-groef",
+      "weightPlank": "Gewicht per plank",
+      "weightPlankVal": "ca. 6,4–8,3 kg",
+      "tolerances": "Toleranties",
+      "tolerancesVal": "Dikte ± 0,2 mm, gewicht ± 10 %",
+      "octaveBands": "Octaafbandwaarden",
+      "octaveBandsVal": "Volgen met de nieuwe testreeks",
+      "fireStdCore": "Standaard MDF-kern",
+      "fireFrCore": "FR MDF-kern",
+      "fireFelt": "Viltrug",
+      "fscVal": "FSC®-gecertificeerd, C191539",
+      "epdVal": "EPD volgens ISO 14025 · EN 15804",
+      "finishTitle": "Afwerking",
+      "oakOilColours": "Oliekleuren eik",
+      "oakOilColoursVal": "Naturel, Wit, Blank, Bruin, Donkerbruin, Zwart",
+      "walnutFinish": "Noten",
+      "walnutFinishVal": "Naturel, geolied",
+      "feltColours": "Viltkleuren",
+      "feltColoursVal": "Zwart of grijs",
+      "optionsTitle": "Opties",
+      "surfaceVal": "Geolied of geschilderd, onbehandeld op aanvraag",
+      "madeToOrder": "Op bestelling",
+      "madeToOrderVal": "Elk fineer en elke afwerking",
+      "accessories": "Accessoires",
+      "accessoriesVal": "Eindprofielen, hoekprofielen, regels, retoucheerset"
     },
     "accessories": {
-      "tag": "DE LOOK COMPLETEREN",
+      "tag": "ACCESSOIRES",
       "title": "Accessoires",
-      "endMouldings": "Eindprofielen",
-      "cornerProfiles": "Hoekprofielen",
-      "description": "Professionele afwerkingsdetails voor een perfect resultaat",
+      "description": "Eindprofielen, hoekprofielen, regels en een retoucheerset.",
       "item1Title": "Eindprofielen",
       "item1Desc": "Nette kanten waar panelen andere oppervlakken ontmoeten",
       "item2Title": "Hoekprofielen",
@@ -2065,57 +2055,50 @@
       "title": "Projecten & Installaties"
     },
     "patterns": {
-      "tag": "ONTWERPOPTIES",
-      "title": "Premium Afwerkingen",
-      "description": "Vier kenmerkende groefpatronen voor elke architecturale visie. Van klassiek batten tot modern lineair.",
-      "description2": "Vier kenmerkende groefpatronen voor elke architecturale visie. Van klassieke evenwichtige proporties tot gedurfde brede stroken — vind de perfecte uitdrukking voor uw ruimte."
+      "tag": "PATRONEN",
+      "title": "Vier lamelpatronen",
+      "description2": "Vier lamelpatronen op dezelfde plank van 300 mm, van de klassieke Original met zes lamellen tot de brede 3-Lamella. De tekeningen zijn op schaal: lamelbreedtes en groeven van 15 mm zoals op de plank.",
+      "drawingAlt": "Patroon {name}, {dims}, op schaal op een plank van 300 mm",
+      "lamellaCount": "{count} lamellen",
+      "note": "Plankbreedte 300 mm, groefbreedte 15 mm. Standaardmaat 19 × 300 × 2 400 of 2 780 mm. Gewicht per plank ca. 6,4–8,3 kg. Toleranties: dikte ± 0,2 mm, gewicht ± 10 %."
     },
     "materials": {
       "tag": "MATERIALEN",
-      "oilFinishesTitle": "Olie-Afwerkingen",
-      "oilFinishesDesc": "Naturel, wit, klaar, bruin, donkerbruin en zwart olie-afwerkingen. Elk penetreert diep in het hout.",
-      "walnutTitle": "Walnoot",
-      "walnutDesc": "Rijke, warme tonen met kenmerkende neerfpatronen. De premium keuze voor hoogwaardige interieurs.",
-      "description": "Elk rWood - Groove paneel is gemaakt met A-kwaliteit fineer, wat consistente nerf en kleur garandeert. Het olie-afgewerkte oppervlak is installatieklaar.",
-      "colorSelector": "Afwerking Kiezen",
-      "layer1Name": "Eiken / Walnoten Fineer",
-      "layer1Desc": "Premium A-kwaliteit naturel hout",
-      "layer2Name": "MDF-kern met Groeven",
-      "layer2Desc": "Geluidstoetredingskanalen",
-      "layer3Name": "Akoestische Viltbacking",
-      "layer3Desc": "Gerecycleerd PET, 3mm dik",
-      "waveLabel": "Geluidsgolven geabsorbeerd",
-      "certNote": "Getest en gecertificeerd volgens ISO 11654",
-      "description2": "Elk rWood - Groove paneel is gemaakt met A-kwaliteit fineer voor consistente neerfpatronen en superieure kwaliteit. Kies uit ons assortiment geoliede en geverfde afwerkingen."
+      "oilFinishesTitle": "Eik: penetrerende olie of lak",
+      "oilFinishesDesc": "Afwerking: penetrerende olie of lak. Oliekleuren voor eik: Naturel, Wit, Blank, Bruin, Donkerbruin en Zwart.",
+      "walnutTitle": "Noten",
+      "walnutDesc": "Naturel, geolied. Rijk, gevlamd bruin (Walnut) of warm middenbruin (Tobacco Walnut).",
+      "colorSelector": "Fineer",
+      "selectPrompt": "Kies een fineer"
     },
     "downloads": {
       "installationGuide": "Installatiehandleiding",
       "colorChart": "Kleur & Afwerkinggids"
     },
     "cta2": {
-      "freeNote": "Gratis stalen • FSC® gecertificeerd"
+      "freeNote": "Gratis fineerstalen · FSC®-gecertificeerd fineer"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+          "answer": "Het fineer is FSC®-gecertificeerd: chain-of-custody-certificaat C191539. Alle twaalf rWood-fineren komen uit verantwoord beheerde bossen; het certificaat is op aanvraag beschikbaar."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1 — de kern die we voorschrijven voor vluchtwegen en openbare gebouwen. Het brandcertificaat vind je in het downloadblok op deze pagina."
+          "answer": "Dat hangt af van de kern. Met de brandvertragende (FR) MDF-kern is rWood Groove geclassificeerd als B-s1,d0 volgens EN 13501-1; op een standaard MDF-kern is de classificatie D-s2,d2. De viltrug is B-s1,d0. Specificeer de FR-kern voor vluchtwegen en openbare gebouwen."
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+          "answer": "De levertijd is afhankelijk van de voorraad en wordt bij bestelling bevestigd. Gratis fineerstalen zijn beschikbaar voor je specificeert; prijzen en minimale bestelhoeveelheid op aanvraag."
         },
         "installMethod": {
           "question": "Hoe worden rWood-panelen geïnstalleerd?",
-          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+          "answer": "rWood Groove wordt op regels bevestigd of verlijmd op een schone, droge, vlakke ondergrond. Begin in een hoek, schuif de tand van elke plank in de groef van de vorige voor een naadloze verbinding en sluit de randen af met eindprofielen."
         },
         "substrateCleanup": {
           "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
-          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+          "answer": "Re-Sound neemt de planken aan het einde van hun levensduur gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg."
         }
       }
     },
@@ -2123,139 +2106,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove akoestisch paneel in een modern interieur",
       "woodFinishSamples": "Stalen van houtafwerkingen",
       "panelInstallationProcess": "Installatieproces van het paneel",
-      "sustainableForestry": "Duurzame bosbouw"
+      "sustainableForestry": "Duurzame bosbouw",
+      "hero": "rWood Groove gegroefde akoestische houten planken",
+      "heroIn": "rWood Groove gegroefde akoestische houten planken in {finish}",
+      "veneerSwatch": "Fineerstaal {name}"
     },
     "options": {
       "originalDesc": "Klassiek ontwerp met 6 lamellen",
       "mixedDesc": "Dynamische gemengde breedtes",
       "4lamellaDesc": "Krachtige brede latten",
       "3lamellaDesc": "Opvallende extra brede latten"
+    },
+    "kpi": {
+      "thickness": "mm dikte",
+      "alphaWClass": "αw, absorptieklasse {cls}",
+      "alphaW": "αw, gewogen geluidsabsorptie",
+      "fire": "brandreactie, FR MDF-kern",
+      "patterns": "lamelpatronen op planken van 300 mm",
+      "ariaLabel": "Kerncijfers"
+    },
+    "buildUp": {
+      "tag": "OPBOUW",
+      "title": "Drie lagen, één plank",
+      "layer1": "Fineerzijde",
+      "layer1Desc": "A-kwaliteit eik of noten",
+      "layer2": "MDF-lamellen",
+      "layer2Desc": "Standaard, MR of FR kern",
+      "layer3": "Vilt van gerecycleerd PET",
+      "layer3Desc": "3 mm, zwart of grijs",
+      "fixing": "Bevestigd op regels of verlijmd op de ondergrond."
+    },
+    "veneers": {
+      "tag": "FINEREN EN AFWERKINGEN",
+      "title": "Eik en noten, elk fineer op bestelling",
+      "description": "Vijf voorraadfineren, geolied of gelakt. Kies een fineer om het op de plank te zien.",
+      "silkOak": "Zachte greige tint",
+      "strawOak": "Licht, warm-neutraal eiken",
+      "umberOak": "Gerookt grijsbruin",
+      "walnut": "Rijk, gevlamd bruin",
+      "tobaccoWalnut": "Warm middenbruin",
+      "guideNote": "Alle twaalf rWood-fineren staan in de rWood kleur- en afwerkingsgids. Echt hout varieert in kleur en nerf: vraag stalen aan voor je specificeert."
+    },
+    "ordering": {
+      "title": "Levertijd en stalen",
+      "orderCaption": "Bestelling",
+      "supplyCaption": "Levering",
+      "leadTimeVal": "Afhankelijk van de voorraad, bevestigd bij bestelling",
+      "samplesVal": "Gratis fineerstalen",
+      "samplesQuotesDesc": "Bestel gratis fineerstalen of stuur ons je plannen voor een offerte."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "GEPERFOREERDE AKOESTISCHE HOUTPANELEN",
+      "tag": "GEPERFOREERD AKOESTISCH HOUTPANEEL",
       "title": "rWood Perf: geperforeerde houten akoestische panelen",
-      "tagline": "Precisieperforaties, Maximale Absorptie",
-      "description": "Hoogperformante geboorde akoestische panelen die de schoonheid van naturel hout combineren met uitzonderlijke geluidsabsorptie. Een brandvertragend MDF-kern en overkante kanten bieden de hoogste niveaus van brandveiligheid en akoestische controle.",
-      "usp1": "Ronde Perforaties",
+      "tagline": "Precieze perforaties, maximale absorptie.",
+      "description": "Ronde perforaties, geboord door het gefineerde brandvertragende MDF-paneel, laten geluid door naar het akoestische vlies en de absorber erachter. Vier patronen, van een discreet gat van 5 mm tot een dubbel patroon van 8 mm met 24 % open oppervlak.",
+      "usp1": "Ronde perforaties",
       "usp2": "Brandklasse {fireClass}",
       "usp3": "αw {alphaW} per patroon",
-      "description2": "Hoogperformante geboorde akoestische panelen die de schoonheid van naturel hout combineren met uitzonderlijke geluidsabsorptie. Een brandvertragend MDF-kern en overkante kanten bieden de hoogste niveaus van brandveiligheid en akoestische controle voor veeleisende openbare ruimtes."
+      "description2": "Op maat gemaakt voor wanden en plafonds, tot 3 050 × 1 220 mm, in 10 en 19 mm. Acht voorraadfineren, elk fineer en elke afwerking op bestelling."
     },
     "patterns": {
-      "tag": "PERFORATIEPATRONEN",
-      "title": "Kies je Patroon",
-      "description": "Vier geboorde perforatiepatronen met gekalibreerde akoestische eigenschappen. Van maximale open oppervlak tot subtiele micro-perforaties.",
-      "coreMatchTitle": "Pas de kern aan bij het fineer om perforaties te laten verdwijnen — of maak er een designelement van.",
+      "tag": "PERFORATIE",
+      "title": "Vier perforatiepatronen",
+      "description": "Gatgrootte en open oppervlak per patroon. Hoe groter het open oppervlak, hoe hoger de absorptie.",
       "coreColorTitle": "Kernkleur",
-      "coreMatchDesc": "Pas de kern aan bij uw fineer om perforaties te laten verdwijnen, of kies een contrasterende kern voor een designeffect.",
-      "description3": "Vier geboorde perforatiepatronen met gekalibreerde akoestische eigenschappen. Van maximaal open oppervlak voor veeleisende akoestische ruimtes tot discretere patronen die visuele verfijning prioriteren.",
-      "coreMatchDesc2": "Pas de kern aan bij uw fineer om perforaties te laten verdwijnen, of kies een contrasterende kern voor een decoratief effect."
-    },
-    "coreColor": {
-      "title": "Kernkleur",
-      "description": "Zwart of naturel akoestisch vilt zichtbaar door de perforaties — subtiel maar impactvol."
+      "coreMatchDesc2": "Een lichte of donkere brandvertragende MDF-kern, zichtbaar door de gaten: stem hem af op het fineer om de perforaties te laten opgaan in het hout, of kies contrast voor een grafisch effect.",
+      "spec": "Ø {d} mm · {pct} % open",
+      "specDouble": "2 × Ø {d} mm · {pct} % open",
+      "drawingNote": "Tekeningen ongeveer 1:2, gatgrootte en open oppervlak zoals vermeld per patroon.",
+      "coreLight": "Lichte kern",
+      "coreDark": "Donkere kern"
     },
     "surfaces": {
-      "tag": "OPPERVLAKKEN",
-      "title": "Premium Houtoppervlakken",
-      "natureVeneers": "Nature Fineers",
-      "natureDesc": "Levendige variaties en kenmerkende uitdrukking van elke houtsoort.",
-      "geminiVeneers": "Gemini Fineers",
-      "geminiDesc": "Uniforme kleur en structuur voor een harmonieuzer uiterlijk.",
-      "finishes": "Oppervlakafwerkingen",
-      "description": "Elk rWood - Perf paneel wordt geproduceerd met overkante kanten — een traditionele ambachtstechniek die perfect naadloze verbindingen creëert.",
-      "finish1": "Naturel Lak",
-      "finish2": "Gepigmenteerd",
-      "finish3": "HPL Laminaat",
-      "colorSelector": "Fineer Kiezen",
-      "description3": "Elk rWood - Perf paneel wordt geproduceerd met overkante kanten — een traditionele productietechniek waarbij massief hout rondom het paneel wordt geïntegreerd vóór het fineren. Dit geeft elk paneel het uiterlijk van volledig hout, met naadloze verbindingen over grote oppervlakken."
+      "colorSelector": "Voorraadfineren",
+      "selectVeneer": "Kies een fineer"
     },
     "acoustics": {
-      "tag": "PRESTATIES",
-      "title": "Ontworpen voor Geluid",
-      "benefit1Title": "Breedband Absorptie",
-      "benefit1": "Effectief over het volledige frequentiespectrum",
-      "benefit2Title": "Brandveiligheid",
-      "benefit2": "Brandgedrag {fireClass} met de brandvertragende MDF-kern (EN 13501-1)",
-      "benefit3Title": "Afstelbare Prestaties",
-      "benefit3": "Vier perforatiepatronen voor op maat gemaakte akoestische oplossingen",
-      "description": "Precies geboorde perforaties laten geluidsgolven in het paneel stromen en naar de absorptielaag eronder.",
-      "layer1Name": "Houtfineer + Perforaties",
-      "layer1Desc": "Overkante, precies geboorde oppervlak",
-      "layer2Name": "Brandvertragend MDF-kern",
-      "layer2Desc": "Brandvertragend, 0,45 kg/m³ dichtheid",
-      "layer3Name": "Akoestisch Vlies",
-      "layer3Desc": "Voorkomt vezelmigratie",
-      "layer4Name": "Minerale Wolholte",
-      "layer4Desc": "30–50 mm voor breedband absorptie",
-      "waveLabel": "Geluidsgolven geabsorbeerd",
-      "certNote": "Getest en gecertificeerd volgens ISO 11654",
-      "ratingLabel": "Absorptie",
-      "description3": "Precies geboorde perforaties laten geluidsgolven het paneel binnenstromen en naar de holte erachter gaan. Gecombineerd met minerale wol isolatie levert rWood - Perf uitstekende breedband absorptie.",
-      "diagramTitle": "Dwarsdoorsnede",
-      "fireRating": "Brandklasse",
-      "noiseReduction": "Geluidsreductie",
-      "ratingPerPattern": "per patroon"
+      "tag": "AKOESTIEK",
+      "title": "Geluidsabsorptie",
+      "description": "Geluid gaat door de perforaties naar het akoestische vlies en de spouw achter het paneel. Hoe groter het open oppervlak, hoe hoger de absorptie.",
+      "tableTitle": "Geluidsabsorptie",
+      "alphaWByPattern": "αw, per patroon",
+      "withWool": "Met 50 mm minerale wol",
+      "withWoolVal": "αw tot 1.00",
+      "mounting": "Montage bij de test",
+      "mountingVal": "Spouw met minerale wol erachter",
+      "pattern": "Patroon",
+      "openArea": "Open oppervlak",
+      "class": "Klasse",
+      "octaveTitle": "αs per octaafband, patroon PD8 met spouw",
+      "footnote": "αs per octaafband: patroon PD8 met spouw, indicatief. De waarden hangen af van het patroon, de spouwdiepte en de absorber achter het paneel."
     },
     "installation": {
-      "tag": "VERBORGEN MONTAGE",
-      "title": "Naadloze Installatie",
-      "step1Title": "Onderbouw Monteren",
-      "step1Desc": "Metalen rails installeren op wand- of plafondstructuur",
-      "step2Title": "Isolatie Plaatsen",
-      "step2Desc": "Minerale wol in de holte toevoegen voor optimale absorptie",
-      "step3Title": "Panelen Klemmen",
-      "step3Desc": "Verborgen clipsysteem voor gereedschapsvrije, naadloze montage",
-      "step4Title": "Perfecte Uitlijning",
-      "step4Desc": "Uitgelijnde perforatiepatronen met naadloze overkante verbindingen",
-      "description": "rWood - Perf panelen worden geïnstalleerd met een verborgen clipsysteem voor een onzichtbaar, naadloos uiterlijk.",
-      "description3": "rWood - Perf panelen worden geïnstalleerd met een verborgen clipsysteem ontworpen voor precisie, snelheid en een perfect eindresultaat. Het systeem garandeert spaltvrije verbindingen en perfect uitgelijnde perforatiepatronen."
+      "tag": "MONTAGE",
+      "title": "Verborgen clipsysteem voor wanden en plafonds",
+      "step1Title": "Onderconstructie",
+      "step1Desc": "Metalen rails op de wand- of plafondstructuur.",
+      "step2Title": "Isolatie",
+      "step2Desc": "Minerale wol in de spouw voor de beste absorptie.",
+      "step3Title": "Panelen",
+      "step3Desc": "Verborgen clips, montage zonder gereedschap en zonder voeg.",
+      "step4Title": "Resultaat",
+      "step4Desc": "Patronen die van paneel tot paneel doorlopen.",
+      "description": "Metalen rails, minerale wol in de spouw, en dan klik je de panelen zonder gereedschap en zonder voeg vast, met het perforatiepatroon dat van paneel tot paneel doorloopt."
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
-      "title": "Gebouwd om te Duren, Verantwoord Gebouwd",
-      "badge1": "FSC® Gecertificeerd",
-      "badge2": "{pct} % gerecycleerd materiaal",
+      "title": "Verantwoord gemaakt",
+      "badge1": "FSC®-gecertificeerd fineer",
+      "badge2": "{pct} % gerecycleerd materiaal",
       "badge3": "Gemaakt in Polen",
-      "badge4": "Ultra Lage Emissies",
+      "badge4": "Formaldehydeklasse E1",
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
-      "badge2Desc": "Post-consumer gerecycleerd materiaal in de kern",
-      "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen) — korte toeleveringsketens",
-      "badge4Desc": "Geen toegevoegd formaldehyde",
-      "description": "rWood - Perf combineert duurzame, natuurlijke materialen met een verantwoorde productiebenadering.",
-      "description3": "rWood - Perf combineert duurzame, natuurlijke materialen met verantwoorde inkoop: een brandvertragende MDF-kern zonder toegevoegd formaldehyde en fineer uit duurzaam beheerde bossen."
+      "badge2Desc": "Gerecycleerd materiaal in het paneel",
+      "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
+      "badge4Desc": "Emissiearme brandvertragende MDF-kern, voor droge binnenruimtes",
+      "description": "FSC®-gecertificeerd fineer, formaldehydeklasse E1 en productie in onze eigen fabriek in Częstochowa. Aan het einde van de levensduur nemen we de panelen gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg."
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Specificaties",
-      "dimensionsTitle": "Afmetingen — Wanden en Plafonds",
-      "acousticsTitle": "Akoestische Prestaties",
-      "perforationsTitle": "Performatieopties",
-      "fireTitle": "Brandveiligheid",
-      "certsTitle": "Certificeringen",
-      "customSizes": "Aangepaste maten",
-      "dimThickness": "Dikte",
-      "dimWeight": "Gewicht",
-      "matTitle": "Materialen",
-      "matCustomColor": "Aangepaste kleurtonen met transparante of vaste pigmentatie",
-      "matLacquerFinish": "Van super mat tot hoogglans UV-lak",
-      "surfaceLabel": "Oppervlak",
-      "surfaceVal": "Fineer / HPL / Folie / Verf",
-      "coreVal": "MDF-kern (bruin / groen / zwart)",
+      "tag": "TECHNISCHE GEGEVENS",
+      "title": "Paneel, brand en emissies",
+      "acousticsTitle": "Geluidsabsorptie",
+      "perforationsTitle": "Perforatiepatronen",
+      "fireTitle": "Brand en emissies",
+      "matTitle": "Oppervlak en opties",
+      "surfaceLabel": "Oppervlaktebehandelingen",
+      "surfaceVal": "Naturel lak · gepigmenteerd · HPL-laminaat · folie · verf",
+      "coreVal": "Brandvertragend MDF, licht of donker",
       "edgesLabel": "Kanten",
-      "edgesVal": "Overkant massief hout",
-      "acousticFelt": "Akoestisch vilt",
-      "feltColor": "Zwart / Wit",
+      "edgesVal": "Overgefineerd massief hout voor naadloze voegen",
+      "feltColor": "Zwart of wit",
       "reactionFire": "Brandreactie",
-      "resistanceFire": "Brandweerstand",
-      "fireRetardant": "Brandvertragend",
-      "vocLabel": "VOS-emissies",
-      "vocVal": "TVOC goedgekeurd (ISO 16000)",
-      "formaldehydeLabel": "Formaldehyde",
-      "formaldehydeVal": "Geen toegevoegd ureum-formaldehyde",
-      "envLabel": "Milieu"
+      "panelTitle": "Paneel",
+      "sizes": "Afmetingen",
+      "fleeceLabel": "Akoestisch vlies",
+      "acWithMinWool": "Met 50 mm minerale wol",
+      "acWithMinWoolVal": "αw tot 1.00",
+      "fireStandard": "Brandnorm",
+      "finishLabel": "Lak",
+      "finishVal": "UV-gehard, supermat tot hoogglans, naturel of gepigmenteerd",
+      "rangesLabel": "Fineerlijnen",
+      "rangesVal": "Nature (levendige, karaktervolle nerf) · Gemini (egale, uniforme tint)",
+      "coreColoursLabel": "Kernkleuren",
+      "appsTitle": "Montage",
+      "appInstall": "Toepassing",
+      "appWalls": "Wanden en plafonds",
+      "mountingSystem": "Bevestiging",
+      "subframe": "Onderconstructie",
+      "mounting": "Montage bij de test",
+      "mountingVal": "Spouw met minerale wol erachter",
+      "pd8Val": "2 × Ø 8 mm · 24 % open",
+      "ph10Val": "Ø 10 mm · 18 % open",
+      "ph8Val": "Ø 8 mm · 12 % open",
+      "ph5Val": "Ø 5 mm · 5 % open",
+      "envVal": "Binnen, droge ruimtes",
+      "coreColoursVal": "Bruin, groen of zwart: licht of donker om de perforaties te verbergen of te laten contrasteren",
+      "subframeVal": "Metalen rails",
+      "concealedClip": "Verborgen clips, zonder gereedschap, zonder voeg"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -2263,194 +2272,231 @@
     },
     "overview": {
       "tag": "BEWEZEN PRESTATIES",
-      "description": "rWood - Perf panelen zijn een van de meest effectieve akoestische wandoplossingen. Precies geboorde perforaties laten geluid door het decoratieve houtoppervlak.",
       "feature1": "Brandvertragende MDF-kern ({fireClass})",
-      "feature2": "Overkante kanten voor naadloze verbindingen",
-      "feature3": "Lichte of donkere kern voor patroonkeuze",
-      "feature4": "Aangepaste formaten tot 3050 × 1220 mm",
-      "description3": "rWood - Perf panelen zijn een van de meest effectieve en gebruikte oplossingen voor akoestische wanden en plafonds. De precies geboorde ronde perforaties creëren een groot open oppervlak dat hoge geluidsabsorptieniveaus garandeert.",
-      "description4": "Gecombineerd met een brandvertragend MDF-kern en overkante kanten voor naadloze verbindingen, zijn deze panelen ontworpen voor de hoogste eisen in grote openbare ruimtes — van atriums en concertzalen tot kantoren en scholen."
-    },
-    "accessories": {
-      "tag": "DE LOOK COMPLETEREN",
-      "title": "Accessoires",
-      "description": "Professionele afwerkingselementen voor een perfect resultaat",
-      "item1Title": "Eindprofielen",
-      "item1Desc": "Bijpassende profielen voor nette afwerkingen",
-      "item2Title": "Hoekoplossingen",
-      "item2Desc": "Naadloze binnen- en buitenhoekovergang",
-      "item3Title": "Montagerails",
-      "item3Desc": "Verborgen aluminium onderbouwsysteem",
-      "item4Title": "Minerale Wol",
-      "item4Desc": "30–50 mm isolatie voor optimale prestaties"
+      "feature2": "Lichte of donkere kern om de perforaties te verbergen of te laten contrasteren",
+      "feature3": "Op maat tot 3 050 × 1 220 mm, in 10 en 19 mm",
+      "feature4": "Verborgen clips, zonder gereedschap, zonder voeg, patronen die van paneel tot paneel doorlopen",
+      "title": "Hoe groter het open oppervlak, hoe hoger de absorptie",
+      "description1": "rWood Perf is een gefineerd brandvertragend MDF-paneel met ronde, doorgeboorde perforaties. Geluid gaat door de gaten naar het akoestische vlies en de spouw achter het paneel, waar het wordt geabsorbeerd.",
+      "description2": "Met vier patronen kies je tussen absorptie en discretie: van een discreet gat van 5 mm met 5 % open oppervlak tot het dubbele 8 mm-patroon PD8 met 24 % open oppervlak."
     },
     "cta": {
-      "note": "Gratis stalen beschikbaar • FSC® gecertificeerd"
+      "note": "Gratis fineerstalen · FSC®-gecertificeerd fineer"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het nummer van het chain-of-custody-certificaat krijg je op aanvraag."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1 — de kern die we voorschrijven voor vluchtwegen en openbare gebouwen. Het brandcertificaat vind je in het downloadblok op deze pagina."
+          "answer": "Met de brandvertragende MDF-kern is rWood Perf geklasseerd als B-s1,d0 volgens EN 13501-1. Het paneel is bedoeld voor droge binnenruimtes."
         },
         "leadTime": {
-          "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+          "question": "Wat is de standaard levertermijn?",
+          "answer": "Voorraadfineren leveren we in 3–4 weken; niet-voorraadhoutsoorten en maatwerkafwerkingen in 6–8 weken. Panelen op maat maken we volgens je tekeningen."
         },
         "installMethod": {
-          "question": "Hoe worden rWood-panelen geïnstalleerd?",
-          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+          "question": "Hoe worden rWood-panelen gemonteerd?",
+          "answer": "Met een verborgen clipsysteem: metalen rails op de wand- of plafondstructuur, minerale wol in de spouw, en dan klik je de panelen zonder gereedschap en zonder voeg vast, zodat het perforatiepatroon van paneel tot paneel doorloopt."
         },
         "substrateCleanup": {
-          "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
-          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+          "question": "Wat gebeurt er met de panelen aan het einde van hun levensduur?",
+          "answer": "Re-Sound neemt panelen aan het einde van hun levensduur gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf paneel, close-up van de ronde perforaties",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Detail van het fineeroppervlak van een geperforeerd houten paneel",
-      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf paneel met onzichtbaar bevestigingssysteem",
-      "sustainableWoodSourcingAndProduction": "Duurzame houtwinning en productie"
+      "sustainableWoodSourcingAndProduction": "FSC-gecertificeerd houtfineer",
+      "hero": "Geperforeerde akoestische houtpanelen rWood Perf op een wand",
+      "heroVeneer": "rWood Perf-paneel in {name}",
+      "overview": "Close-up van de ronde perforaties van een rWood Perf-paneel",
+      "installation": "Metalen rails en verborgen clips van het rWood Perf-montagesysteem"
     },
     "options": {
-      "pd8Desc": "Maximale absorptie, grote open oppervlakte",
+      "pd8Desc": "Dubbel patroon, maximale absorptie",
       "ph10Desc": "Hoge absorptie, uitgesproken perforaties",
-      "ph8Desc": "Evenwicht tussen uitstraling en prestaties",
+      "ph8Desc": "Evenwicht tussen uitzicht en prestatie",
       "ph5Desc": "Discreet patroon, subtiel oppervlak"
+    },
+    "kpi": {
+      "ariaLabel": "Kerncijfers",
+      "thickness": "paneeldikte, op maat gemaakt",
+      "alphaW": "αw, per patroon",
+      "alphaWPd8": "αw met patroon PD8, {range} per patroon",
+      "fire": "brandreactie, brandvertragende MDF-kern",
+      "patterns": "perforatiepatronen, Ø 5 tot 10 mm"
+    },
+    "buildUp": {
+      "alt": "Opengewerkte weergave van de drie lagen: geperforeerd fineer, doorgeboorde brandvertragende MDF-kern, akoestisch vlies",
+      "layer1": "Geperforeerd fineer",
+      "layer1Desc": "A-kwaliteit, geboord Ø 5 tot 10 mm",
+      "layer2": "Brandvertragende MDF-kern",
+      "layer2Desc": "Licht of donker, doorgeboord",
+      "layer3": "Akoestisch vlies",
+      "layer3Desc": "Zwart of wit",
+      "behind": "Achter het paneel: spouw met minerale wol."
+    },
+    "veneers": {
+      "title": "Acht voorraadfineren, elk fineer op bestelling",
+      "description": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. Hout is een natuurlijk materiaal: nerf en kleur verschillen van paneel tot paneel, en stalen op je scherm zijn enkel indicatief.",
+      "alt": "Fineer {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Scandinavië",
+        "northAmerica": "Noord-Amerika"
+      },
+      "grain": {
+        "straightInterlocked": "Recht tot kruisdradig",
+        "subtleFine": "Subtiele fijne nerf",
+        "fineStraight": "Fijne rechte nerf",
+        "cathedral": "Vlamtekening",
+        "pronounced": "Uitgesproken nerf",
+        "straightWavy": "Recht tot golvend",
+        "deepCathedral": "Diepe vlamtekening",
+        "richFlowing": "Rijke, vloeiende nerf"
+      },
+      "madeToOrderTitle": "Op bestelling",
+      "madeToOrderDesc": "Naast de acht voorraadfineren maken we elke houtsoort, beitskleur en afwerking.",
+      "finishTitle": "Afwerking",
+      "finishDesc": "UV-gehard lakwerk van supermat tot hoogglans, naturel of gepigmenteerd.",
+      "naturalTitle": "Een natuurlijk materiaal",
+      "naturalDesc": "Echt hout verschilt in kleur en nerf. Vraag stalen aan voor je voorschrijft."
+    },
+    "bespoke": {
+      "tag": "OP MAAT",
+      "title": "Volgens je tekeningen",
+      "description": "rWood Perf maken we op maat voor wanden en plafonds: van 100 × 100 mm tot 3 050 × 1 220 mm, in 10 en 19 mm, in elk van de vier patronen.",
+      "customDimTitle": "Eigen afmetingen",
+      "customDimDesc": "Elk paneel wordt gemaakt op de maten van je tekeningen, van 100 × 100 mm tot 3 050 × 1 220 mm.",
+      "finishTitle": "Elk fineer en elke afwerking",
+      "finishDesc": "Acht voorraadfineren; elke andere houtsoort, beitskleur en afwerking op bestelling.",
+      "samplesTitle": "Gratis fineerstalen",
+      "samplesDesc": "Echt hout verschilt in kleur en nerf. Vraag stalen aan voor je voorschrijft."
+    },
+    "ordering": {
+      "title": "Levertermijnen en stalen",
+      "stockVeneers": "Voorraadfineren",
+      "stockVeneersVal": "3–4 weken",
+      "nonStock": "Niet-voorraad en maatwerk",
+      "nonStockVal": "6–8 weken",
+      "madeToMeasure": "Op maat",
+      "madeToMeasureVal": "Volgens je tekeningen",
+      "supply": "Levering",
+      "samplesVal": "Gratis fineerstalen",
+      "sizesVal": "Tot {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, België"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "MICRO-GEPERFOREERDE AKOESTISCHE PANELEN",
+      "tag": "MICROGEPERFOREERD AKOESTISCH HOUTPANEEL",
       "title": "rWood Micro: microgeperforeerde akoestische houtpanelen",
-      "tagline": "Onzichtbare Perforatie, Uitzonderlijke Akoestiek",
-      "description": "Ervaar de schoonheid van naturel hout gecombineerd met de akoestische prestaties van geavanceerde micro-perforatietechnologie. Vrijwel onzichtbare gaatjes leveren Klasse A geluidsabsorptie terwijl het pure, homogene uiterlijk van premium houtfineer behouden blijft.",
-      "usp1": "Onzichtbare Perforaties",
-      "usp2": "Klasse A Absorptie",
+      "tagline": "Onzichtbare perforatie, uitzonderlijke akoestiek.",
+      "description": "Microperforaties vanaf 0,5 mm in het A-kwaliteitsfineer geven uit op geluidskamers in de brandvertragende MDF-kern, met daarachter een akoestisch vlies. Op normale kijkafstand verdwijnen de gaatjes in het hout.",
+      "usp1": "Onzichtbare perforaties",
+      "usp2": "Klasse A absorptie",
       "usp3": "Brandklasse {fireClass}",
-      "colorSelector": "Houtfineer Kiezen"
+      "colorSelector": "Voorraadfineren",
+      "description2": "Op maat gemaakt voor wanden en plafonds, tot 3 050 × 1 220 mm, in 10 en 19 mm. Acht voorraadfineren, elk fineer en elke afwerking op bestelling.",
+      "selectVeneer": "Kies een fineer"
     },
     "perforation": {
-      "tag": "PERFORATIEPATRONEN",
-      "title": "Kies je Perforatie",
-      "description": "Vier perforatiedichtheden voor jouw akoestische vereisten. Van vrijwel onzichtbare Nano-perforaties tot maximale absorptie Micro L-patronen."
-    },
-    "surfaces": {
-      "tag": "OPPERVLAKKEN",
-      "title": "Premium Oppervlakken",
-      "woodVeneer": "Houtfineer",
-      "woodVeneerDesc": "Premium A-kwaliteit fineers in eik, walnoot, berk en meer. Nature en Gemini sneden beschikbaar.",
-      "hplLaminate": "HPL Laminaat",
-      "hplLaminateDesc": "Hoogdruk laminaat oppervlakken voor extra duurzaamheid. Beschikbaar in een breed scala aan kleuren en afwerkingen.",
-      "surfaceType": "Oppervlaktype",
-      "finishTreatments": "Afwerkingsbehandelingen",
-      "description": "Elk rWood - Micro paneel heeft overkante kanten — een productietechniek die continue paneelverbindingen creëert.",
-      "finish1Desc": "Aangepaste kleurtonen met transparante of vaste pigmentatie",
-      "finish2Desc": "Van super mat tot hoogglans UV-lak",
-      "description2": "Elk rWood - Micro paneel heeft overkante kanten — een productietechniek uit het traditionele schrijnwerkserfgoed. Het resultaat: sterkere panelen, onzichtbare verbindingen en een continu patroon ongeacht het panelformaat."
+      "tag": "PERFORATIE",
+      "title": "Vier perforatiedichtheden",
+      "description": "Gatgrootte en open oppervlak per dichtheid. Hoe groter het open oppervlak, hoe hoger de absorptie; hoe kleiner het gaatje, hoe minder zichtbaar het patroon.",
+      "spec": "Ø {d} mm · {pct} % open",
+      "drawingNote": "Tekeningen ongeveer 2:1, gatgrootte en open oppervlak zoals vermeld per dichtheid."
     },
     "acoustics": {
-      "tag": "PRESTATIES",
-      "title": "Superieure Geluidsabsorptie",
-      "benefit1Title": "Dubbel Absorptiemechanisme",
-      "benefit1": "Micro-gaatjes en geluidskamers werken samen voor superieure absorptie",
-      "benefit2Title": "Ruimtebesparend Ontwerp",
-      "benefit2": "Minder afhankelijk van luchtspouwen — dunnere wand- en plafondopbouw",
-      "benefit3Title": "Brandveiligheid",
-      "benefit3": "Brandgedrag {fireClass} met de brandvertragende MDF-kern (EN 13501-1)",
-      "description": "De combinatie van micro-perforaties aan het oppervlak en duizenden grotere geluidstoetredingskanalen zorgt voor uitzonderlijke breedband absorptie.",
-      "layer1Name": "A-kwaliteit fineer met precies geboorde gaten",
-      "layer2Name": "Brandvertragend MDF-kern",
-      "layer2Desc": "Brandvertragend, met geluidskamers",
-      "layer3Name": "Akoestisch Vliesbacking",
-      "layer3Desc": "Extra geluidsabsorptielaag",
-      "waveLabel": "Geluidsgolven geabsorbeerd",
-      "certNote": "Getest en gecertificeerd volgens ISO 11654",
-      "description2": "De combinatie van micro-perforaties aan het oppervlak en duizenden grotere geluidskamers in de kern zorgt voor een duaal akoestisch mechanisme. Minder afhankelijk van isolatie en luchtspouwen — voor dunnere wanden en plafonds die waardevolle ruimte besparen.",
-      "diagramTitle": "Dwarsdoorsnede",
-      "soundAbsorbed": "Geluid Geabsorbeerd",
-      "fireRating": "Brandklasse",
-      "testStandard": "Testnorm",
-      "thinner": "Dunner",
-      "wallBuildUp": "Wandopbouw"
+      "tag": "AKOESTIEK",
+      "title": "Geluidsabsorptie",
+      "description": "Geluid gaat door de microperforaties naar binnen en wordt geabsorbeerd in de geluidskamers van de kern en in het vlies erachter. Hoeveel het paneel absorbeert, hangt af van de perforatiedichtheid en van wat erachter zit.",
+      "tableTitle": "Geluidsabsorptie",
+      "withWool": "Met 50 mm minerale wol",
+      "withWoolVal": "αw tot 1.00",
+      "behindTitle": "Achter het paneel",
+      "behindDesc": "Een absorber erachter verhoogt de absorptie: akoestisch vilt, een rPET-paneel of minerale wol in de spouw. Met 50 mm minerale wol haalt het paneel αw 1,00.",
+      "footnote": "αw en absorptieklasse volgens EN ISO 11654. De waarden hangen af van de perforatiedichtheid, de spouwdiepte en de absorber achter het paneel."
     },
     "installation": {
-      "tag": "INSTALLATIESYSTEEM",
-      "title": "Precisie Installatie",
-      "step1Title": "Onderbouw Monteren",
-      "step1Desc": "Aluminium rails aan wand- of plafondstructuur bevestigen",
-      "step2Title": "Isolatie Toevoegen",
-      "step2Desc": "Optionele minerale wol voor verbeterde absorptie",
-      "step3Title": "Panelen Klemmen",
-      "step3Desc": "Verborgen clipsysteem voor gereedschapsvrije montage",
-      "step4Title": "Naadloos Resultaat",
-      "step4Desc": "Overkante kanten creëren een continu houtoppervlak",
-      "description": "rWood - Micro panelen worden geïnstalleerd met ons verborgen bevestigingssysteem, dat onzichtbare bevestigingen en een perfecte afwerking garandeert. Het systeem maakt zowel wand- als plafondtoepassingen mogelijk met naadloze overgangen via overkante kanten."
+      "tag": "MONTAGE",
+      "title": "Verborgen clipsysteem voor wanden en plafonds",
+      "step1Title": "Onderconstructie",
+      "step1Desc": "Aluminium rails op de wand- of plafondstructuur.",
+      "step2Title": "Isolatie",
+      "step2Desc": "Optioneel minerale wol voor een hogere absorptie.",
+      "step3Title": "Panelen",
+      "step3Desc": "Verborgen clips, montage zonder gereedschap.",
+      "step4Title": "Resultaat",
+      "step4Desc": "Onzichtbare bevestigingen en een doorlopend houtoppervlak.",
+      "description": "Aluminium rails, optioneel minerale wol, en dan klik je de panelen zonder gereedschap vast. De bevestigingen blijven onzichtbaar en het houtoppervlak loopt ononderbroken door."
     },
     "bespoke": {
-      "tag": "ONTWERPVRIJHEID",
-      "title": "Maatwerk Mogelijkheden",
-      "backlitTitle": "Verlichte Panelen",
-      "backlitDesc": "Maak verbluffende verlichte secties waar licht door de micro-perforaties schijnt. Logo's en patronen gloeien prachtig wanneer verlicht, maar blijven onzichtbaar wanneer het licht uit is.",
-      "customDimTitle": "Maatafmetingen",
-      "customDimDesc": "Panelen geproduceerd volgens jouw exacte specificaties. Niet-standaard maten en vormen voor unieke architecturale vereisten.",
-      "patternTitle": "Continu Patroon",
-      "patternDesc": "Overkante panelen creëren naadloze overgangen ongeacht het formaat, voor een homogene indruk op elk oppervlak.",
-      "description": "rWood - Micro panelen kunnen worden gepersonaliseerd en voorgefabriceerd volgens jouw tekeningen. De micro-perforaties openen unieke ontwerpmogelijkheden die verder gaan dan standaard akoestische panelen."
+      "tag": "OP MAAT",
+      "title": "Volgens je tekeningen",
+      "customDimTitle": "Eigen afmetingen",
+      "customDimDesc": "Elk paneel wordt gemaakt op de maten van je tekeningen, van 100 × 100 mm tot 3 050 × 1 220 mm.",
+      "description": "rWood Micro maken we op maat voor wanden en plafonds: van 100 × 100 mm tot 3 050 × 1 220 mm, in 10 en 19 mm, in elk van de vier perforatiedichtheden.",
+      "finishTitle": "Elk fineer en elke afwerking",
+      "finishDesc": "Acht voorraadfineren; elke andere houtsoort, beitskleur en afwerking op bestelling.",
+      "samplesTitle": "Gratis fineerstalen",
+      "samplesDesc": "Echt hout verschilt in kleur en nerf. Vraag stalen aan voor je voorschrijft."
     },
     "sustainability": {
       "tag": "DUURZAAMHEID",
-      "title": "Verantwoord Gemaakt",
-      "badge1": "FSC® Gecertificeerd Fineer",
-      "badge2": "Naturel Kernmateriaal",
+      "title": "Verantwoord gemaakt",
+      "badge1": "FSC®-gecertificeerd fineer",
+      "badge2": "Formaldehydeklasse E1",
       "badge3": "Gemaakt in Polen",
-      "badge4": "Lage VOS-emissies",
+      "badge4": "Terugname aan het einde van de levensduur",
       "badge1Desc": "Hout uit verantwoord beheerde bossen",
-      "badge2Desc": "Vezelbord kern — een houtig, brandvertragend kern",
+      "badge2Desc": "Emissiearme brandvertragende MDF-kern, voor droge binnenruimtes",
       "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
-      "badge4Desc": "E1-klasse voor gezondere binnenlucht",
-      "description": "rWood - Micro panelen zijn gebouwd met duurzaamheid als kernprincipe. FSC®-gecertificeerd hout, lage-emissie afwerkingen en verantwoord geproduceerde materialen.",
+      "description": "FSC®-gecertificeerd fineer, formaldehydeklasse E1 en productie in onze eigen fabriek in Częstochowa. Aan het einde van de levensduur nemen we de panelen terug.",
       "badge5": "Groene Energie"
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Specificaties",
-      "dimensionsTitle": "Afmetingen — Wanden en Plafonds",
-      "acousticsTitle": "Afmetingen — Wanden en Plafonds",
-      "customSizes": "Aangepaste maten",
-      "dimThickness": "Dikte",
-      "dimWeight": "Gewicht",
-      "dimCoreDensity": "Kerndichtheid",
-      "perfsTitle": "Perforatieopties",
-      "fireTitle": "Brandveiligheid",
-      "matTitle": "Materialen",
-      "appsTitle": "Toepassingen",
-      "acWithMinWool": "Met 50mm minerale wol",
+      "tag": "TECHNISCHE GEGEVENS",
+      "title": "Paneel, brand en emissies",
+      "acousticsTitle": "Geluidsabsorptie",
+      "perfsTitle": "Perforatiedichtheden",
+      "fireTitle": "Brand en emissies",
+      "matTitle": "Oppervlak en opties",
+      "appsTitle": "Montage",
+      "acWithMinWool": "Met 50 mm minerale wol",
       "reactionFire": "Brandreactie",
-      "resistanceFire": "Brandweerstand",
-      "fireRetardant": "Brandvertragend",
-      "surfaceLabel": "Oppervlak",
-      "surfaceVal": "Fineer / HPL / Folie / Verf",
-      "coreVal": "MDF-kern (bruin / groen / zwart)",
+      "surfaceLabel": "Oppervlaktebehandelingen",
+      "surfaceVal": "Naturel lak · gepigmenteerd · HPL-laminaat · folie · verf",
+      "coreVal": "Brandvertragend MDF met geluidskamers",
       "edgesLabel": "Kanten",
-      "edgesVal": "Overkant massief hout",
-      "acousticFelt": "Akoestisch vilt",
-      "feltColor": "Zwart / Wit",
-      "appInstall": "Installatie",
-      "appWalls": "Wanden & Plafonds",
-      "appEnv": "Omgeving",
-      "appEnvVal": "Binnenruimte (droge zones)",
-      "backlitOption": "Achtergrondverlichting",
-      "backlitVal": "Beschikbaar",
-      "mountingSystem": "Bevestigingssysteem",
-      "concealedClip": "Verborgen clipsysteem",
+      "edgesVal": "Overgefineerd massief hout voor naadloze voegen",
+      "feltColor": "Zwart of wit",
+      "appInstall": "Toepassing",
+      "appWalls": "Wanden en plafonds",
+      "appEnvVal": "Binnen, droge ruimtes",
+      "mountingSystem": "Bevestiging",
+      "concealedClip": "Verborgen clips, zonder gereedschap",
       "perforationsTitle": "Performatieopties",
-      "certsTitle": "Certificeringen"
+      "certsTitle": "Certificeringen",
+      "panelTitle": "Paneel",
+      "sizes": "Afmetingen",
+      "fleeceLabel": "Akoestisch vlies",
+      "acWithMinWoolVal": "αw tot 1.00",
+      "fireStandard": "Brandnorm",
+      "finishLabel": "Lak",
+      "finishVal": "UV-gehard, supermat tot hoogglans, naturel of gepigmenteerd",
+      "rangesLabel": "Fineerlijnen",
+      "rangesVal": "Nature (levendige, karaktervolle nerf) · Gemini (egale, uniforme tint)",
+      "coreColoursLabel": "Kernkleuren",
+      "subframe": "Onderconstructie",
+      "nanoVal": "Ø 0.5 mm · 2.5 % open",
+      "microSVal": "Ø 1.0 mm · 5.2 % open",
+      "microMVal": "Ø 1.5 mm · 8.4 % open",
+      "microLVal": "Ø 2.0 mm · 10.6 % open",
+      "coreColoursVal": "Bruin, groen of zwart",
+      "subframeVal": "Aluminium rails"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "DE ONZICHTBARE OPLOSSING",
-      "title": "Ontworpen voor Ogen en Oren",
-      "description1": "rWood - Micro panelen combineren geavanceerde micro-perforatietechnologie met premium houtfineers. Op normale kijkafstand zijn de perforaties volledig onzichtbaar — wat je ziet is een prachtig, homogeen houtoppervlak. Wat je hoort is uitzonderlijk akoestisch comfort.",
-      "description2": "Het geheim schuilt in de combinatie van twee akoestische mechanismen: duizenden precies gemaakte micro-gaatjes aan het oppervlak en geluidsabsorberende kamers in het kernmateriaal.",
-      "feature1": "Perforaties onzichtbaar op normale kijkafstand",
-      "feature2": "Brandvertragende MDF-kern met geluidskamers",
-      "feature3": "Overkante kanten voor naadloze verbindingen",
-      "feature4": "Geschikt voor wanden en plafonds",
-      "feature5": "Beschikbaar als verlichte panelen"
-    },
-    "accessories": {
-      "tag": "DE LOOK COMPLETEREN",
-      "title": "Accessoires",
-      "description": "Professionele afwerkingselementen voor een perfect resultaat",
-      "item1Title": "Eindprofielen",
-      "item1Desc": "Bijpassende profielen voor nette paneelafwerkingen",
-      "item2Title": "Hoekoplossingen",
-      "item2Desc": "Naadloze binnen- en buitenhoekovergang",
-      "item3Title": "Montagrails",
-      "item3Desc": "Verborgen aluminium onderbouwsysteem",
-      "item4Title": "LED Verlichting",
-      "item4Desc": "Geïntegreerde verlichting voor verlichte paneeleffecten"
-    },
-    "patterns": {
-      "description": "Vier perforatiedichtheden voor uw akoestische vereisten. Van vrijwel onzichtbare micro-perforaties tot ruime open zones.",
-      "magnifiedLabel": "10× vergroot",
-      "holeDiameter": "Gatdiameter",
-      "openArea": "Open oppervlak",
-      "ratingLabel": "Absorptie",
-      "description2": "Vier perforatiedichtheden voor uw akoestische vereisten. Van vrijwel onzichtbare Nano-perforaties tot maximale absorptie Micro L-patronen — selecteer de perfecte balans tussen esthetiek en akoestische prestaties.",
-      "pigmentedLacquer": "Gepigmenteerde Lak",
-      "glossLevels": "Glansniveaus"
+      "title": "Ontworpen voor oog en oor",
+      "description1": "rWood Micro combineert een echt houtfineer van A-kwaliteit met microperforaties vanaf Ø 0,5 mm. Op normale kijkafstand verdwijnen de gaatjes in het hout: wat je ziet is een doorlopend houtoppervlak, wat je hoort is een rustigere ruimte.",
+      "description2": "Geluid gaat door de microperforaties naar binnen en wordt geabsorbeerd in de geluidskamers van de brandvertragende MDF-kern en in het akoestische vlies erachter. Hoeveel het paneel absorbeert, hangt af van de perforatiedichtheid en van wat erachter zit.",
+      "feature1": "Perforaties die op normale kijkafstand verdwijnen",
+      "feature2": "Brandvertragende MDF-kern met geluidskamers, akoestisch vlies in zwart of wit",
+      "feature3": "Op maat tot 3 050 × 1 220 mm, in 10 en 19 mm",
+      "feature4": "Verborgen clips, zonder gereedschap, voor wanden en plafonds"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het nummer van het chain-of-custody-certificaat krijg je op aanvraag."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
-          "answer": "Met de brandvertragende (FR) MDF-kern zijn rWood-panelen geclassificeerd als B-s1,d0 volgens EN 13501-1 — de kern die we voorschrijven voor vluchtwegen en openbare gebouwen. Het brandcertificaat vind je in het downloadblok op deze pagina."
+          "answer": "Met de brandvertragende MDF-kern is rWood Micro geklasseerd als B-s1,d0 volgens EN 13501-1. Het paneel is bedoeld voor droge binnenruimtes."
         },
         "leadTime": {
-          "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+          "question": "Wat is de standaard levertermijn?",
+          "answer": "Voorraadfineren leveren we in 3–4 weken; niet-voorraadhoutsoorten en maatwerkafwerkingen in 6–8 weken. Panelen op maat maken we volgens je tekeningen."
         },
         "installMethod": {
-          "question": "Hoe worden rWood-panelen geïnstalleerd?",
-          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+          "question": "Hoe worden rWood-panelen gemonteerd?",
+          "answer": "Met een verborgen clipsysteem: aluminium rails op de wand- of plafondstructuur, optioneel minerale wol in de spouw, en dan klik je de panelen zonder gereedschap vast. De bevestigingen blijven onzichtbaar en het houtoppervlak loopt ononderbroken door."
         },
         "substrateCleanup": {
-          "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
-          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+          "question": "Wat gebeurt er met de panelen aan het einde van hun levensduur?",
+          "answer": "Re-Sound neemt panelen aan het einde van hun levensduur gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro paneel, close-up van de onzichtbare perforaties",
-      "microPerforatedWoodPanelSurfaceDetail": "Detail van het oppervlak van een microgeperforeerd houten paneel",
-      "rwoodMicroPanelInstallationSystem": "rWood - Micro paneel installatiesysteem",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Microgeperforeerd paneel met achterverlichting dat een lichteffect creëert",
-      "sustainableProduction": "Duurzame productie"
+      "sustainableProduction": "FSC-gecertificeerd houtfineer",
+      "hero": "Microgeperforeerde akoestische houtpanelen rWood Micro op een wand",
+      "heroVeneer": "rWood Micro-paneel in {name}",
+      "overview": "Close-up van een microgeperforeerd rWood Micro-paneel",
+      "installation": "Aluminium rails en verborgen clips van het rWood Micro-montagesysteem",
+      "madeToMeasure": "Op maat gemaakte rWood Micro-panelen rond een raam"
     },
     "options": {
-      "veneerDesc": "Natuurlijk houtfineer van A-kwaliteit",
-      "hplDesc": "Hogedruklaminaat",
       "nanoDesc": "Vrijwel onzichtbare perforaties",
       "microsDesc": "Subtiele microperforaties",
-      "micromDesc": "Uitgebalanceerd perforatiepatroon",
-      "microlDesc": "Patroon voor maximale absorptie",
-      "nanoDetail": "De kleinste perforatie die beschikbaar is: volledig onzichtbaar met het blote oog, voor een vlekkeloos houtoppervlak.",
-      "microsDetail": "Nauwelijks zichtbare microgaatjes die een strak, ononderbroken oppervlak behouden.",
-      "micromDetail": "Een optimaal evenwicht tussen visuele discretie en akoestische efficiëntie voor de meeste toepassingen.",
-      "microlDetail": "De grootste open oppervlakte voor maximale geluidsabsorptie in akoestisch veeleisende ruimtes.",
-      "openAreaLabel": "Open oppervlakte",
-      "absorptionLabel": "Absorptie",
-      "thinnerLabel": "Dunner",
-      "veneerDrilled": "Houtfineer van A-kwaliteit met precisiegeboorde gaatjes"
+      "micromDesc": "Evenwichtig perforatiepatroon",
+      "microlDesc": "Patroon met maximale absorptie"
+    },
+    "kpi": {
+      "ariaLabel": "Kerncijfers",
+      "thickness": "paneeldikte, op maat gemaakt",
+      "alphaW": "αw, gewogen geluidsabsorptie",
+      "alphaWClass": "αw, absorptieklasse {cls}",
+      "fire": "brandreactie, brandvertragende MDF-kern",
+      "densities": "perforatiedichtheden, Ø 0,5 tot 2 mm"
+    },
+    "buildUp": {
+      "alt": "Opengewerkte weergave van de drie lagen: microgeperforeerd fineer, brandvertragende MDF-kern met geluidskamers, akoestisch vlies",
+      "layer1": "Microgeperforeerd fineer",
+      "layer1Desc": "A-kwaliteit, gaatjes vanaf Ø 0,5 mm",
+      "layer2": "Brandvertragende MDF-kern",
+      "layer2Desc": "Met geluidskamers",
+      "layer3": "Akoestisch vlies",
+      "layer3Desc": "Zwart of wit",
+      "behind": "Achter het paneel: spouw, optioneel minerale wol."
+    },
+    "veneers": {
+      "title": "Acht voorraadfineren, elk fineer op bestelling",
+      "description": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. Hout is een natuurlijk materiaal: nerf en kleur verschillen van paneel tot paneel, en stalen op je scherm zijn enkel indicatief.",
+      "alt": "Fineer {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Scandinavië",
+        "northAmerica": "Noord-Amerika"
+      },
+      "grain": {
+        "straightInterlocked": "Recht tot kruisdradig",
+        "subtleFine": "Subtiele fijne nerf",
+        "fineStraight": "Fijne rechte nerf",
+        "cathedral": "Vlamtekening",
+        "pronounced": "Uitgesproken nerf",
+        "straightWavy": "Recht tot golvend",
+        "deepCathedral": "Diepe vlamtekening",
+        "richFlowing": "Rijke, vloeiende nerf"
+      },
+      "madeToOrderTitle": "Op bestelling",
+      "madeToOrderDesc": "Naast de acht voorraadfineren maken we elke houtsoort, beitskleur en afwerking.",
+      "finishTitle": "Afwerking",
+      "finishDesc": "UV-gehard lakwerk van supermat tot hoogglans, naturel of gepigmenteerd.",
+      "naturalTitle": "Een natuurlijk materiaal",
+      "naturalDesc": "Echt hout verschilt in kleur en nerf. Vraag stalen aan voor je voorschrijft."
+    },
+    "ordering": {
+      "title": "Levertermijnen en stalen",
+      "stockVeneers": "Voorraadfineren",
+      "stockVeneersVal": "3–4 weken",
+      "nonStock": "Niet-voorraad en maatwerk",
+      "nonStockVal": "6–8 weken",
+      "madeToMeasure": "Op maat",
+      "madeToMeasureVal": "Volgens je tekeningen",
+      "supply": "Levering",
+      "samplesVal": "Gratis fineerstalen",
+      "sizesVal": "Tot {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, België"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "VAKMANSCHAP",
-      "title": "rWood Panel: fineer akoestische panelen in 10 houtsoorten",
-      "tagline": "De Elegantie van Echt Hout. Gebruiksklaar.",
-      "description": "Voorgefineerde MDF-panelen, geborsteld, gebeitst en gelakt — geen extra afwerking vereist. De authentieke schoonheid van massief hout zonder compromissen.",
-      "usp1": "FSC® Gecertificeerd",
-      "usp2": "Voorgefineerd & Gebruiksklaar",
-      "usp3": "Gratis terugnameprogramma",
+      "tag": "GEFINEERD HOUTPANEEL",
+      "title": "rWood Panel: gefineerde akoestische panelen in 12 houtfineren",
+      "tagline": "De elegantie van echt hout, klaar voor gebruik.",
+      "description": "Gladde, in de fabriek afgewerkte gefineerde MDF-panelen in twaalf echthoutfineren, in de levendige Nature- of de egale Gemini-reeks. Naturel of gepigmenteerde lak, HPL-laminaat, folie of verf; elk ander fineer, elke beits of afwerking op bestelling.",
+      "usp1": "FSC®-gecertificeerde fineren",
+      "usp2": "Twaalf fineren, elke afwerking op bestelling",
+      "usp3": "Gratis terugname aan het einde van de levensduur",
       "ctaSecondary": "Ontdek de Collectie",
-      "colorSelector": "Fineer Kiezen"
-    },
-    "construction": {
-      "tag": "CONSTRUCTIE",
-      "title": "Gebouwd om te Presteren",
-      "layer1": "Bovenste Fineerlaag",
-      "layer1Desc": "FSC-gecertificeerd naturel houtfineer, fabrieksgefineerd",
-      "layer2": "Hoogdicht MDF-kern",
-      "layer2Desc": "Stabiel, vochtbestendig engineered substraat",
-      "layer3": "Balansfineerlaag",
-      "layer3Desc": "Voorkomt vervorming voor perfect vlakke panelen"
-    },
-    "veneers": {
-      "tag": "FINEERCOLLECTIE",
-      "title": "10 Geselecteerde Houtfineers",
-      "description": "Van bleke Europese eik tot rijke Amerikaanse walnoot — elke houtsoort geselecteerd op neerfkarakter, beschikbaarheid en FSC-certificering."
+      "colorSelector": "Fineer",
+      "selectPrompt": "Kies een fineer"
     },
     "finishes": {
-      "title": "Voelbaar & beschermd",
-      "description": "De juiste afwerking haalt het beste uit elke houtsoort. Ons meerlaags afwerkingsproces levert een oppervlak dat even aangenaam is om aan te raken als duurzaam — beschermd tegen krassen, vocht en dagelijkse slijtage.",
-      "tag": "OPPERVLAKAFWERKINGEN",
-      "mattLacquerName": "Super Matte Lak",
-      "mattLacquerDesc": "Anti-vingerafdruk, zijdeachtige touch. 6-laags UV-bescherming.",
-      "naturalOilName": "Natuurolie",
-      "naturalOilDesc": "Diep, authentiek houtgevoel met doordringende bescherming.",
-      "unfinishedName": "Onafgewerkt",
-      "unfinishedDesc": "Klaar voor aangepaste afwerking op locatie door de installateur.",
-      "adv1": "Krasbestendig",
-      "adv2": "Vloeistofbestendig",
-      "adv3": "Anti-vingerafdruk",
-      "adv4": "Eenvoudig onderhoud"
-    },
-    "advantages": {
-      "tag": "VOORDELEN",
-      "title": "Belangrijkste Voordelen",
-      "adv1Title": "Paneelformaten",
-      "adv1": "Meerdere standaardmaten; maatwerk op aanvraag",
-      "adv2Title": "Grenzeloze Mogelijkheden",
-      "adv2": "Gebruik voor wandbekleding, meubilair, retaildisplays en meer"
+      "title": "Oppervlakteafwerkingen en opties",
+      "description": "Kies de fineerreeks en de oppervlaktebehandeling die bij het project passen. De randen zijn overgefineerd massief hout voor naadloze aansluitingen over grote oppervlakken.",
+      "tag": "AFWERKINGEN",
+      "nature": "Nature",
+      "natureDesc": "Levendige, karaktervolle nerf",
+      "gemini": "Gemini",
+      "geminiDesc": "Egale, uniforme tint",
+      "treatmentsTitle": "Oppervlaktebehandelingen",
+      "treatments": {
+        "naturalLacquer": "Naturel lak",
+        "pigmented": "Gepigmenteerd",
+        "hpl": "HPL-laminaat",
+        "foil": "Folie",
+        "paint": "Verf"
+      },
+      "madeToOrder": "Elk ander fineer, elke beits, pigment en afwerking op aanvraag."
     },
     "applications": {
       "tag": "TOEPASSINGEN",
@@ -2620,66 +2671,51 @@
       "badge2": "Circulaire Terugname",
       "badge3": "Gemaakt in Polen",
       "badge4": "EPD Beschikbaar",
-      "badge5": "Lage VOS",
-      "badge1Desc": "Al het hout uit verantwoord beheerde bossen",
+      "badge1Desc": "Alle fineren FSC®-gecertificeerd, uit verantwoord beheerde bossen",
       "badge2Desc": "Gratis terugname en recycling van panelen aan einde levensduur",
-      "description": "Elk rWood - Panel begint met verantwoord geproduceerd hout. Als onderdeel van Re-Sound's engagement voor de circulaire economie maximaliseren we het gebruik van elk stamhout door het als fineer te verwerken — tot 40× meer oppervlak dan massief hout van dezelfde boom.",
+      "description": "Elk rWood Panel begint met FSC®-gecertificeerd fineer uit verantwoord beheerde bossen. Aan het einde van de levensduur neemt Re-Sound de panelen gratis terug.",
       "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
-      "badge4Desc": "Volledige milieuproductverklaring",
-      "badge5Desc": "E1-geclassificeerd, voldoet aan strengste emissienormen",
-      "badge6": "Groene Energie",
-      "badge6Desc": "Productie aangedreven door hernieuwbare energiebronnen"
+      "badge4Desc": "Volledige milieuproductverklaring"
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Specificaties",
+      "tag": "TECHNISCHE GEGEVENS",
+      "title": "Paneel, afwerkingen en brand",
       "compositionTitle": "Samenstelling",
       "fireTitle": "Brandveiligheid",
       "certsTitle": "Certificeringen",
       "dimensionsTitle": "Afmetingen",
-      "finishTitle": "Afwerking",
+      "finishTitle": "Fineren en afwerkingen",
       "processingTitle": "Bewerking",
       "dimPanelWidth": "Breedte paneel",
       "dimPanelLength": "Lengte paneel",
-      "dimThicknessStd": "Dikte (standaard)",
-      "dimThicknessSlim": "Dikte (slim)",
-      "dimWeight19": "Gewicht (19 mm)",
       "compTopLayer": "Bovenste laag",
-      "compTopLayerVal": "A-kwaliteit fineer, gebeitst en gelakt",
+      "compTopLayerVal": "A-kwaliteit echthoutfineer, afgewerkt in de fabriek",
       "compCore": "Kern",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, standaard / MR / FR",
       "compBackLayer": "Achterste laag",
       "compBackLayerVal": "Balansfineer",
-      "compBonding": "Verlijming",
-      "compBondingVal": "HPLT-persperstechnologie",
-      "finishLacquerType": "Laktype",
-      "finishLacquerVal": "Acrylaat urethaan UV-gehard",
-      "finishLayers": "Aantal lagen",
-      "finishGloss": "Glansniveau",
-      "finishGlossVal": "Super mat (3-5 GU)",
-      "finishAntiFingerprint": "Anti-vingerafdruk",
-      "finishScratch": "Krasbestendigheid",
-      "fireStdMDF": "Standaard MDF",
-      "fireFRMDF": "Brandvertragend MDF",
       "certWoodSourcing": "Houtherkomst",
       "certEnvironmental": "Milieu",
-      "certFelt": "Vilt (indien akoestisch)",
       "procSawing": "Zagen",
       "procSawingVal": "Standaard houtbewerkingsgereedschap",
-      "procEdgeBanding": "Kantstrip",
-      "procEdgeBandingVal": "Bijpassend fineer kantstrip beschikbaar",
       "procCNC": "CNC-bewerking",
-      "procEnvironment": "Omgeving",
-      "procEnvironmentVal": "Binnengebruik (droge ruimtes)",
       "procMoisture": "Vochtbestendig",
-      "procMoistureVal": "MR-kern beschikbaar"
+      "procMoistureVal": "MR-kern beschikbaar",
+      "finishRanges": "Fineerreeksen",
+      "finishRangesVal": "Nature: levendige, karaktervolle nerf · Gemini: egale, uniforme tint",
+      "finishTreatments": "Oppervlaktebehandelingen",
+      "finishTreatmentsVal": "Naturel lak · gepigmenteerd · HPL-laminaat · folie · verf",
+      "finishCoreColours": "Kernkleuren",
+      "finishCoreColoursVal": "Bruin, groen of zwart",
+      "finishEdgesVal": "Overgefineerd massief hout voor naadloze aansluitingen",
+      "finishFeltVal": "Zwart of wit vlies",
+      "finishMadeToOrder": "Op bestelling",
+      "finishMadeToOrderVal": "Elk ander fineer, elke beits, pigment en afwerking",
+      "certWoodSourcingVal": "Alle fineren FSC®-gecertificeerd, uit verantwoord beheerde bossen"
     },
     "related": {
       "tag": "BIJPASSENDE PRODUCTEN",
       "title": "Bijpassende Producten & Accessoires",
-      "groove": "rWood - Groove",
-      "edgebanding": "Bijpassende Kantstrip",
-      "samples": "Gratis Stalen",
       "description": "Bereik designcontinuïteit met gecoördineerde Re-Sound producten",
       "explore": "Ontdekken →",
       "orderSamples": "Stalen Bestellen →",
@@ -2690,51 +2726,50 @@
       "title": "Projecten & Interieurs"
     },
     "overview": {
-      "tag": "VAKMANSCHAP",
-      "title": "Natuur, Verfijnd",
-      "description": "rWood - Panel brengt de warmte en het karakter van massief hout in een voorgefineerd, gebruiksklaar formaat. Elk paneel is gemaakt van premium A-kwaliteit fineer, verlijmd op een hoogdicht MDF-kern met geavanceerde perspersingstechnologie — de schoonheid van naturel hout met uitstekende dimensionale stabiliteit.",
-      "feature1": "Premium A-kwaliteit fineers — eik, walnoot, es, kers en berk",
-      "feature2": "6-laags UV-geharde lak voor kras- en vlekweerstand",
-      "feature3": "Hoogdicht MDF-kern (700 kg/m³) voor structurele integriteit",
-      "feature4": "Gebalanceerde constructie — fineer op beide zijden voor stabiliteit",
-      "feature5": "Geen extra afwerking vereist — direct gebruiksklaar"
+      "tag": "OVERZICHT",
+      "title": "Natuur, verfijnd",
+      "description": "rWood Panel brengt de warmte en het karakter van echt hout in een voorafgewerkt, gebruiksklaar formaat: een A-kwaliteit fineer op een MDF-kern, afgewerkt in de fabriek. Dezelfde twaalf fineren lopen door de hele rWood-reeks, zodat gladde panelen, Groove, Micro en Perf op één wand bij elkaar passen.",
+      "feature1": "Twaalf voorraadfineren: eik, noten, es, beuk en berk",
+      "feature2": "Twee fineerreeksen: Nature (levendige nerf) en Gemini (egale tint)",
+      "feature3": "MDF-kern in standaard, vochtwerende of brandvertragende kwaliteit",
+      "feature4": "Naturel of gepigmenteerde lak, HPL-laminaat, folie of verf",
+      "feature5": "Afgewerkt in de fabriek, klaar voor montage"
     },
     "anatomy": {
-      "tag": "ANATOMIE",
-      "layer1": "Bovenste Fineerlaag",
-      "layer1Desc": "A-kwaliteit naturel houtfineer, geborsteld, gebeitst en beschermd met 6 lagen UV-geharde acrylaat urethaan lak. Super matte afwerking met zijdeachtige touch.",
-      "layer2": "Hoogdicht MDF-kern",
-      "layer2Desc": "700 kg/m³ FSC® MDF. Beschikbaar in standaard, vochtbestendig (MR) en brandvertragend (FR) kwaliteiten.",
-      "layer3": "Balansfineerlaag",
-      "layer3Desc": "Bijpassend fineerbacking garandeert dimensionale stabiliteit en voorkomt vervorming. Afgewerkte of onafgewerkte opties.",
-      "keyAdvTitle": "Belangrijkste Voordelen",
-      "description": "Elke laag heeft een functie — van het authentieke houtoppervlak tot de technische kern."
+      "tag": "OPBOUW",
+      "layer1": "Fineerzijde",
+      "layer1Desc": "A-kwaliteit echthoutfineer, een van de twaalf voorraadfineren of elk fineer op bestelling, afgewerkt in de fabriek.",
+      "layer2": "MDF-kern",
+      "layer2Desc": "Standaard, vochtwerend (MR) of brandvertragend (FR) MDF; kernkleur bruin, groen of zwart.",
+      "layer3": "Tegenfineer",
+      "layer3Desc": "Een fineer aan de achterzijde houdt het paneel vlak en stabiel.",
+      "description": "Elke laag heeft een functie, van het echthouten oppervlak tot de technische kern.",
+      "title": "Fineer, kern, tegenfineer"
     },
     "collection": {
-      "tag": "DE COLLECTIE",
-      "title": "10 Geselecteerde Houtfineers",
-      "description": "Van serene Scandinavische berk tot dramatische Amerikaanse walnoot — elk fineer is zorgvuldig geselecteerd, geborsteld en afgewerkt om het karakter van het hout tot zijn recht te laten komen.",
-      "filterAll": "Alle Fineers",
-      "customNote": "Aangepaste fineersoorten en beitskleuren beschikbaar voor projectbestellingen van 50+ panelen.",
+      "tag": "FINEREN",
+      "title": "Twaalf echthoutfineren",
+      "description": "Zes eiken van licht tot bijna zwart en zes premium houtsoorten: noten, es, beuk en berk. Beschikbaar in de hele rWood-reeks, en elk ander fineer, elke beitskleur of afwerking op bestelling.",
+      "filterAll": "Alle fineren",
+      "customNote": "Elk ander fineer, elke beits, pigment en afwerking op aanvraag. De stalen zijn indicatief: natuurlijk fineer varieert in nerf, kleur en tekening, en tinten verschuiven onder ander licht en andere lakken. Controleer altijd met een fysiek staal.",
       "categories": {
-        "lightNaturals": "Lichte tonen",
-        "warmNaturals": "Warme tonen",
-        "deepTones": "Diepe tonen"
+        "oak": "Eikenfineren",
+        "premium": "Premium houtsoorten"
       },
-      "origins": {
-        "europe": "Europa",
-        "scandinavia": "Scandinavië",
-        "northAmerica": "Noord-Amerika"
-      },
-      "grains": {
-        "straightToInterlocked": "Recht tot verstrengeld",
-        "subtleFineGrain": "Subtiele fijne nerf",
-        "fineStraightGrain": "Fijne rechte nerf",
-        "cathedralGrain": "Kathedraalnerf",
-        "pronouncedGrain": "Uitgesproken nerf",
-        "straightToWavy": "Recht tot golvend",
-        "deepCathedralGrain": "Diepe kathedraalnerf",
-        "richFlowingGrain": "Rijk stromende nerf"
+      "filterLabel": "Fineren filteren",
+      "items": {
+        "strawOak": "Licht, warm-neutraal eiken",
+        "silkOak": "Zachte greige tint",
+        "honeyOak": "Warm goudkleurig eiken",
+        "umberOak": "Gerookt grijsbruin",
+        "smokedOak": "Diep warm bruin",
+        "cocoaOak": "Bijna zwart espresso",
+        "walnut": "Rijk, gevlamd bruin",
+        "tobaccoWalnut": "Warm middenbruin",
+        "whiteAsh": "Heldere, rechte nerf",
+        "whiteBeech": "Licht, egaal neutraal",
+        "birchSliced": "Fijne, lichte nerf",
+        "birchRotary": "Brede, zachte tekening"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Bijpassende Producten & Accessoires",
       "description": "Bereik designcontinuïteit met gecoördineerde Re-Sound producten.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Lamellengeluidsabsorberende panelen in bijpassende houtfineers voor wanden en plafonds.",
-      "item2Title": "Bijpassende Kantstrip",
-      "item2Desc": "Voorgefineerd fineerkantstrip in elke kleur voor meubel- en schrijnwerk.",
+      "item1Desc": "Gegroefde planken in dezelfde fineren voor wanden en plafonds.",
+      "item2Title": "Overgefineerde randen",
+      "item2Desc": "Massief houten randen, overgefineerd voor naadloze aansluitingen over grote oppervlakken.",
       "item3Title": "Gratis Stalen",
       "item3Desc": "Vraag stalen aan van elke fineer- en afwerkingscombinatie."
     },
     "cta": {
       "title": "Klaar om uw project naar een hoger niveau te tillen?",
       "description": "Vraag een persoonlijke offerte aan, vraag fysieke stalen op of spreek met ons specificatieteam over uw volgende project.",
-      "circularNote": "Circulaire Terugname"
+      "circularNote": "Gratis fineerstalen · Gratis terugname aan het einde van de levensduur"
     },
     "downloads": {
       "productDataSheet": "Productfiche"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Het fineer komt uit FSC-gecertificeerde Europese bossen (vooral eik en walnoot). Het chain-of-custody-certificaatnummer wordt op aanvraag per levering meegeleverd."
+          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. Het chain-of-custody-certificaat is op aanvraag beschikbaar."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Wat is de standaard levertijd?",
-          "answer": "Voorraadfineren leveren we binnen 3–4 weken; niet-voorraadhoutsoorten en maatwerk binnen 6–8 weken. Productiecapaciteit wordt gereserveerd bij orderbevestiging."
+          "answer": "De levertijd hangt af van het fineer en de afwerking en wordt bij bestelling bevestigd. Gratis fineerstalen zijn beschikbaar voor je specificeert; prijzen en minimale bestelhoeveelheid op aanvraag."
         },
         "installMethod": {
           "question": "Hoe worden rWood-panelen geïnstalleerd?",
-          "answer": "Er zijn twee methodes: een verborgen clipsysteem voor snelle installatie en eenvoudige demontage, of directe lijmbevestiging voor permanente installaties. Beide staan beschreven in de installatiehandleiding."
+          "answer": "rWood Panel is een glad gefineerd MDF-paneel en wordt ook zo verwerkt: gezaagd en CNC-gefreesd met standaard houtbewerkingsgereedschap, daarna op de ondergrond bevestigd of in meubels verwerkt. De installatiegids staat in het downloadblok op deze pagina."
         },
         "substrateCleanup": {
           "question": "Wat gebeurt er met de panelen aan het einde van hun leven?",
-          "answer": "Re-Sound neemt panelen kosteloos terug in BE/NL/FR/DE/LU. Het fineer wordt gescheiden van het gerecycleerde-vilt-substraat; beide stromen komen opnieuw in onze toeleveringsketen, niet op de stortplaats."
+          "answer": "Re-Sound neemt de panelen aan het einde van hun levensduur gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel gefineerd MDF-paneel, close-up van de houtnerf",
       "closeUpOfLacqueredVeneerSurface": "Close-up van het gelakte fineeroppervlak",
-      "sustainablyManagedForest": "Duurzaam beheerd bos"
+      "sustainablyManagedForest": "Duurzaam beheerd bos",
+      "hero": "rWood Panel gefineerd houtpaneel",
+      "heroIn": "rWood Panel in {veneer}",
+      "veneerSwatch": "Fineerstaal {name}"
+    },
+    "kpi": {
+      "veneers": "echthoutfineren",
+      "ranges": "fineerreeksen: Nature en Gemini",
+      "fsc": "gecertificeerde fineren",
+      "anyValue": "Elk",
+      "anyLabel": "fineer, elke beits en afwerking op bestelling",
+      "ariaLabel": "Kerncijfers"
+    },
+    "ordering": {
+      "title": "Levertijd en stalen",
+      "orderCaption": "Bestelling",
+      "supplyCaption": "Levering",
+      "samplesVal": "Gratis fineerstalen",
+      "samplesQuotesDesc": "Bestel gratis fineerstalen of stuur ons je plannen voor een offerte."
     }
   },
   "rpetFlexGroovePage": {

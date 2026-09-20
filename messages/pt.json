@@ -19,13 +19,13 @@
     "divideTitle": "Divisórias Acústicas Autoportantes Divide | Re-Sound",
     "divideDescription": "Divisórias acústicas autoportantes com ligação modular magnética: absorção dos dois lados, sem instalação, têxtil reciclado. Fabricadas na Bélgica.",
     "rwoodGrooveTitle": "rWood Groove — Painéis Acústicos de Madeira Ranhurada | Re-Sound",
-    "rwoodGrooveDescription": "Painéis acústicos ranhurados com folheado FSC de carvalho e nogueira sobre núcleo de feltro reciclado. Classe A, 4 variantes de lamelas, 5 acabamentos.",
+    "rwoodGrooveDescription": "Tábuas acústicas de madeira ranhurada: folheado de carvalho ou nogueira com certificação FSC® sobre núcleo de MDF com feltro de 3 mm de PET reciclado. αw 0,90, classe A, quatro padrões de lamelas, cinco folheados, 10 e 19 mm.",
     "rwoodPerfTitle": "rWood Perf — Painéis Acústicos de Madeira Perfurada | Re-Sound",
     "rwoodPerfDescription": "Painéis acústicos de madeira perfurada com folheado FSC: quatro padrões de perfuração para absorção de banda larga, 8 acabamentos, núcleo ignífugo.",
     "rwoodMicroTitle": "rWood Micro — Painéis Acústicos Microperfurados | Re-Sound",
-    "rwoodMicroDescription": "Painéis acústicos de madeira microperfurados (0,5 mm) com folheado certificado FSC: padrão quase invisível, classificação ao fogo {fireClass}, opção retroiluminada.",
-    "rwoodVeneerTitle": "rWood Panel — Painéis Acústicos Folheados, 10 Madeiras | Re-Sound",
-    "rwoodVeneerDescription": "Painéis acústicos folheados lisos, 10 madeiras: qualidade de mobiliário, certificação FSC, EPD disponível. Escovados, tingidos, lacados, prontos a montar.",
+    "rwoodMicroDescription": "Painéis acústicos de madeira microperfurados (a partir de 0,5 mm) com folheado certificado FSC: padrão quase invisível, classificação ao fogo {fireClass}, à medida até 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — Painéis Acústicos Folheados, 12 Folheados de Madeira | Re-Sound",
+    "rwoodVeneerDescription": "Painéis acústicos folheados lisos em 12 folheados de madeira natural, gama Nature ou Gemini: certificação FSC®, verniz natural ou pigmentado, HPL, película ou tinta. Acabados em fábrica, qualquer folheado por encomenda.",
     "rpetGrooveTitle": "rPET Groove — Painel Acústico PET Ranhurado, 12 Cores | Re-Sound",
     "rpetGrooveDescription": "Painéis acústicos PET ranhurados de garrafas recicladas: 12 cores, 3 espessuras (12/24/36 mm), NRC até 0,90, reação ao fogo B-s1,d0. Fabricados na Polónia.",
     "rpetPanelTitle": "rPET Panel — Painel Acústico PET Reciclado, 16 Cores | Re-Sound",
@@ -1939,121 +1939,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "PAINÉIS ACÚSTICOS DE MADEIRA",
+      "tag": "PAINEL ACÚSTICO DE MADEIRA RANHURADA",
       "title": "rWood Groove: painéis acústicos de madeira ranhurados em carvalho e nogueira",
-      "tagline": "Beleza Natural, Acústica Perfeita",
-      "description": "Traga calor natural e um estilo sofisticado a qualquer espaço com os painéis acústicos rWood - Groove. Folheados premium de carvalho e nogueira, combinados com uma base de feltro fonoabsorvente, criam harmonia entre estética e acústica.",
-      "usp1": "Madeira Certificada FSC®",
-      "usp2": "Absorção Classe A",
-      "usp3": "Programa de retoma gratuito"
+      "tagline": "Beleza natural, acústica perfeita.",
+      "description": "Folheado de carvalho ou nogueira de qualidade A sobre um núcleo de MDF, ranhurado com precisão em lamelas verticais sobre um feltro de 3 mm de PET reciclado. As ranhuras abertas conduzem o som para o feltro; as tábuas unem-se por um encaixe macho-fêmea oculto. Tábuas com 300 mm de largura, 2 400 ou 2 780 mm de comprimento, em 10 e 19 mm, para paredes e tetos.",
+      "usp1": "Folheado com certificação FSC®",
+      "usp2": "Classe de absorção A",
+      "usp3": "Recolha gratuita no fim de vida"
     },
     "overview": {
-      "tag": "ARTESANATO",
-      "title": "Onde a Natureza Encontra o Design",
-      "subtitle": "Acabamentos premium",
-      "description": "Os painéis rWood - Groove transformam qualquer divisão num ambiente acústico sofisticado. A combinação de ranhuras fresadas com precisão e folheados de madeira premium cria uma superfície simultaneamente deslumbrante e acusticamente eficaz.",
-      "feature1": "Folheados premium de carvalho e nogueira de grau A",
-      "feature2": "Base de feltro acústico integrada",
-      "feature3": "Ligação contínua entre painéis",
-      "feature4": "Adequado para paredes e tetos",
-      "description2": "Os painéis rWood - Groove transformam qualquer divisão num espaço de beleza natural e conforto acústico. Cada painel apresenta folheado premium de carvalho ou nogueira de grau A, ranhurado com precisão para criar a estética linear característica, maximizando a absorção sonora através da base de feltro integrada."
-    },
-    "oakCollection": {
-      "title": "Coleção carvalho",
-      "description": "Folheado de carvalho natural em várias opções de tingimento, do louro natural aos tons fumados profundos."
+      "tag": "VISÃO GERAL",
+      "title": "Carvalho ou nogueira ranhurado sobre feltro de PET reciclado",
+      "feature1": "Folheado de carvalho ou nogueira de qualidade A",
+      "feature2": "Verso em feltro de 3 mm de PET reciclado, preto ou cinzento",
+      "feature3": "Encaixe macho-fêmea oculto",
+      "feature4": "Para paredes e tetos, interiores secos",
+      "description2": "O rWood Groove combina um folheado de carvalho ou nogueira de qualidade A com um núcleo de MDF ranhurado com precisão em lamelas verticais. O feltro de 3 mm de PET reciclado atrás das lamelas absorve o som que entra pelas ranhuras abertas, o que reduz a reverberação e melhora a inteligibilidade da fala. Quatro padrões de lamelas, cinco folheados em stock, e qualquer folheado e acabamento por encomenda."
     },
     "feltBacking": {
-      "title": "Opções de fundo em feltro",
-      "description": "Feltro acústico cinzento natural, preto ou colorido, visível através das ranhuras."
+      "title": "Cor do feltro",
+      "description": "Feltro de 3 mm de PET reciclado atrás das lamelas, visível através das ranhuras.",
+      "black": "Preto",
+      "grey": "Cinzento"
     },
     "acoustics": {
-      "tag": "DESEMPENHO",
-      "title": "Absorção Sonora Superior",
-      "benefit1Title": "Reverberação reduzida",
-      "benefit1": "Controle o eco e melhore a inteligibilidade da fala em qualquer divisão",
-      "benefit2Title": "Maior conforto",
-      "benefit2": "Crie ambientes mais calmos e tranquilos",
-      "benefit3Title": "Desempenho testado",
-      "benefit3": "Dados acústicos verificados de forma independente",
-      "description": "O design único das ranhuras, combinado com feltro acústico de alta qualidade, cria uma absorção sonora excecional. Reduza o eco e a reverberação para criar espaços calmos e produtivos.",
-      "ratingLabel": "Absorção",
-      "description2": "O design único das ranhuras, combinado com feltro acústico de alta qualidade, cria uma absorção sonora excecional. Reduza o eco, elimine o ruído e crie espaços tão confortáveis para o ouvido como para a vista.",
-      "diagramTitle": "Corte Transversal do Painel",
-      "soundAbsorbed": "Som Absorvido",
-      "testStandard": "Norma de ensaio"
+      "tag": "ACÚSTICA",
+      "title": "Absorção sonora",
+      "description2": "As ranhuras abertas conduzem o som para o feltro de PET reciclado atrás das lamelas, o que reduz a reverberação e melhora a inteligibilidade da fala.",
+      "tableTitle": "Absorção sonora",
+      "behindTitle": "Atrás da tábua",
+      "behindDesc": "Montada em ripas, a caixa de ar pode receber um absorvente adicional: feltro acústico, um painel rPET ou lã mineral.",
+      "note": "αw e classe de absorção segundo a EN ISO 11654. Os valores por banda de oitava seguirão com a nova série de ensaios."
     },
     "installation": {
-      "tag": "INSTALAÇÃO FÁCIL",
-      "title": "Instalação uniforme",
-      "step1Title": "Preparar superfície",
-      "step1Desc": "Monte as ripas ou aplique adesivo numa superfície limpa e seca",
-      "step2Title": "Posicionar primeiro painel",
-      "step2Desc": "Comece pelo canto e garanta um alinhamento nivelado",
-      "step3Title": "Conectar painéis",
-      "step3Desc": "Encaixe a lingueta na ranhura para uma ligação contínua",
-      "step4Title": "Completar e rematar",
-      "step4Desc": "Adicione as molduras de remate para um resultado profissional",
-      "description": "Os painéis rWood - Groove dispõem de uma inovadora ligação macho-fêmea para uma instalação rápida e fácil.",
-      "description2": "Os painéis rWood - Groove dispõem de um inovador sistema de ligação macho-fêmea que garante juntas invisíveis e uma superfície coesa. Quer seja um instalador profissional ou um entusiasta experiente da bricolage, o nosso sistema torna a instalação simples."
+      "tag": "INSTALAÇÃO",
+      "title": "Macho-fêmea, em ripas ou colado",
+      "step1Title": "Suporte",
+      "step1Desc": "Ripas ou cola sobre uma superfície limpa, seca e nivelada.",
+      "step2Title": "Primeira tábua",
+      "step2Desc": "Comece num canto e verifique o nível.",
+      "step3Title": "União",
+      "step3Desc": "Deslize o macho na fêmea para uma junta invisível.",
+      "step4Title": "Remate",
+      "step4Desc": "Feche as bordas com perfis de remate.",
+      "description2": "As tábuas são fixadas em ripas ou coladas ao suporte e unem-se por um encaixe macho-fêmea oculto, pelo que as juntas desaparecem no padrão das ranhuras."
     },
     "sustainability": {
       "tag": "SUSTENTABILIDADE",
-      "title": "Origem Responsável",
-      "badge1": "Certificado FSC®",
-      "badge1Desc": "Madeira de florestas geridas de forma responsável",
-      "badge2": "Feltro reciclado",
-      "badge2Desc": "Base acústica em materiais reciclados",
+      "title": "De origem responsável",
+      "badge1": "Certificação FSC®",
+      "badge1Desc": "Origem da madeira com certificação FSC®, certificado C191539",
+      "badge2": "Feltro de PET reciclado",
+      "badge2Desc": "Verso em feltro de 3 mm de PET reciclado",
       "badge3": "Fabricado na Polónia",
       "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
-      "badge4": "Retoma gratuita",
+      "badge4": "Recolha gratuita",
       "badge4Desc": "Os painéis voltam para nós gratuitamente em fim de vida",
-      "description": "Cada painel rWood - Groove é fabricado com a sustentabilidade no centro. A nossa madeira certificada FSC® provém de florestas geridas de forma responsável e a base acústica utiliza materiais reciclados.",
-      "description2": "Cada painel rWood - Groove é fabricado com a sustentabilidade no centro. A nossa certificação FSC® garante que a madeira provém de florestas geridas de forma responsável, que proporcionam benefícios ambientais, sociais e económicos."
+      "description2": "Madeira com certificação FSC®, verso de PET reciclado e recolha gratuita no fim de vida.",
+      "badge2DescCert": "Verso em feltro de 3 mm de PET reciclado, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Declaração ambiental de produto segundo a ISO 14025 e a EN 15804"
     },
     "specs": {
-      "tag": "TÉCNICO",
-      "title": "Especificações",
-      "acousticsTitle": "Desempenho acústico",
-      "fireTitle": "Segurança contra incêndio",
-      "certsTitle": "Certificações",
-      "applicationsTitle": "Aplicações",
-      "dimensionsTitle": "Dimensões",
-      "materialsTitle": "Materiais",
-      "dimPanelWidth": "Largura do painel",
-      "dimPanelLength": "Comprimento do painel",
-      "dimThickness": "Espessura",
-      "dimGrooveDepth": "Profundidade do sulco",
-      "dimGrooveWidth": "Largura do sulco",
-      "matVeneer": "Folheado",
-      "matVeneerVal": "Carvalho / nogueira de grau A",
-      "matCore": "Núcleo",
-      "matCoreVal": "MDF (standard / hidrófugo / ignífugo)",
-      "matBacking": "Base",
-      "matBackingVal": "PET reciclado (3mm)",
+      "tag": "DADOS TÉCNICOS",
+      "title": "Tábua, fogo e emissões",
+      "acousticsTitle": "Absorção sonora",
+      "fireTitle": "Fogo (EN 13501-1) e emissões",
+      "dimPanelWidth": "Largura",
+      "dimPanelLength": "Comprimento",
+      "matCoreVal": "MDF standard, MR ou FR",
       "matFinish": "Acabamento",
-      "finishVal": "Óleo / laca",
-      "stdPanels": "Painéis padrão",
-      "fireMdfVal": "MDF retardador de fogo",
-      "woodSourcing": "Origem da madeira",
-      "feltCert": "Certificação do feltro",
-      "envLabel": "Ambiental",
-      "vocLabel": "Emissões de COV",
-      "vocVal": "E1 / Baixa emissão",
-      "appInstall": "Instalação",
-      "appWalls": "Paredes e Tetos",
-      "appEnv": "Ambiente",
-      "appEnvVal": "Interior (áreas secas)",
-      "appMoist": "Resistente à humidade",
-      "appMoistVal": "Disponível para áreas húmidas",
-      "appConn": "Ligação",
-      "appConnVal": "Macho e fêmea"
+      "finishVal": "Óleo penetrante ou verniz",
+      "plankTitle": "Tábua",
+      "dimGroove": "Ranhura",
+      "dimGrooveVal": "15 mm de largura, 7 · 15 mm de profundidade",
+      "feltVal": "PET reciclado, 3 mm, preto ou cinzento",
+      "connVal": "Macho-fêmea oculto",
+      "weightPlank": "Peso por tábua",
+      "weightPlankVal": "aprox. 6,4–8,3 kg",
+      "tolerances": "Tolerâncias",
+      "tolerancesVal": "Espessura ± 0,2 mm, peso ± 10 %",
+      "octaveBands": "Valores por banda de oitava",
+      "octaveBandsVal": "Seguirão com a nova série de ensaios",
+      "fireStdCore": "Núcleo MDF standard",
+      "fireFrCore": "Núcleo MDF FR",
+      "fireFelt": "Verso em feltro",
+      "fscVal": "Certificação FSC®, C191539",
+      "epdVal": "EPD segundo a ISO 14025 · EN 15804",
+      "finishTitle": "Acabamento",
+      "oakOilColours": "Cores de óleo para carvalho",
+      "oakOilColoursVal": "Natural, Branco, Incolor, Castanho, Castanho escuro, Preto",
+      "walnutFinish": "Nogueira",
+      "walnutFinishVal": "Natural, oleado",
+      "feltColours": "Cores do feltro",
+      "feltColoursVal": "Preto ou cinzento",
+      "optionsTitle": "Opções",
+      "surfaceVal": "Oleado ou pintado, sem tratamento a pedido",
+      "madeToOrder": "Por encomenda",
+      "madeToOrderVal": "Qualquer folheado e acabamento",
+      "accessories": "Acessórios",
+      "accessoriesVal": "Perfis de remate, perfis de canto, ripas, kit de retoque"
     },
     "accessories": {
-      "tag": "COMPLETA O ESTILO",
+      "tag": "ACESSÓRIOS",
       "title": "Acessórios",
-      "endMouldings": "Molduras de remate",
-      "cornerProfiles": "Perfis de canto",
-      "description": "Acabamentos profissionais para um resultado perfeito",
+      "description": "Perfis de remate, perfis de canto, ripas e kit de retoque.",
       "item1Title": "Molduras de remate",
       "item1Desc": "Arestas limpas onde os painéis encontram outras superfícies",
       "item2Title": "Perfis de canto",
@@ -2068,57 +2058,50 @@
       "title": "Projetos e Instalações"
     },
     "patterns": {
-      "tag": "OPÇÕES DE DESIGN",
-      "title": "Acabamentos premium",
-      "description": "Quatro padrões de ranhuras distintos para corresponder a qualquer visão arquitetónica. Do ripado clássico ao linear moderno, cada padrão transforma a parede numa superfície dinâmica.",
-      "description2": "Quatro padrões de ranhuras distintos para corresponder a qualquer visão arquitetónica. Das proporções clássicas e equilibradas às tiras largas e arrojadas — encontre a expressão perfeita para o seu espaço."
+      "tag": "PADRÕES",
+      "title": "Quatro padrões de lamelas",
+      "description2": "Quatro padrões de lamelas na mesma tábua de 300 mm, do clássico Original de seis lamelas ao largo 3-Lamella. Os desenhos estão à escala: larguras das lamelas e ranhuras de 15 mm como na tábua.",
+      "drawingAlt": "Padrão {name}, {dims}, à escala numa tábua de 300 mm",
+      "lamellaCount": "{count} lamelas",
+      "note": "Largura da tábua 300 mm, largura da ranhura 15 mm. Medida standard 19 × 300 × 2 400 ou 2 780 mm. Peso por tábua aprox. 6,4–8,3 kg. Tolerâncias: espessura ± 0,2 mm, peso ± 10 %."
     },
     "materials": {
       "tag": "MATERIAIS",
-      "oilFinishesTitle": "Acabamentos a óleo",
-      "oilFinishesDesc": "Acabamentos a óleo Natural, Branco, Incolor, Castanho, Castanho Escuro e Preto. Cada um penetra profundamente na madeira para uma proteção duradoura e autêntica.",
+      "oilFinishesTitle": "Carvalho: óleo penetrante ou verniz",
+      "oilFinishesDesc": "Acabamento: óleo penetrante ou verniz. Cores de óleo para carvalho: Natural, Branco, Incolor, Castanho, Castanho escuro e Preto.",
       "walnutTitle": "Nogueira",
-      "walnutDesc": "Tons ricos e quentes com padrões de veio distintivos. A escolha premium para interiores de alta gama.",
-      "description": "Cada painel rWood - Groove é fabricado com folheado de grau A, garantindo veio e cor consistentes. A superfície acabada a óleo está pronta a instalar, sem necessidade de tratamento adicional.",
-      "colorSelector": "Selecionar acabamento de madeira",
-      "layer1Name": "Folheado de carvalho / nogueira",
-      "layer1Desc": "Madeira natural premium de grau A",
-      "layer2Name": "Núcleo MDF com sulcos",
-      "layer2Desc": "Canais de entrada de som",
-      "layer3Name": "Fundo de feltro acústico",
-      "layer3Desc": "PET reciclado, 3 mm de espessura",
-      "waveLabel": "Ondas sonoras absorvidas",
-      "certNote": "Testado e certificado de forma independente segundo a norma ISO 11654",
-      "description2": "Cada painel rWood - Groove é fabricado com folheado de grau A, garantindo padrões de veio consistentes e qualidade superior. Escolha entre a nossa gama de acabamentos oleados e pintados para complementar na perfeição o seu design de interiores."
+      "walnutDesc": "Natural, oleado. Castanho rico e figurado (Walnut) ou castanho médio quente (Tobacco Walnut).",
+      "colorSelector": "Folheado",
+      "selectPrompt": "Selecione um folheado"
     },
     "downloads": {
       "installationGuide": "Guia de Instalação",
       "colorChart": "Guia de Cores e Acabamentos"
     },
     "cta2": {
-      "freeNote": "Amostras gratuitas disponíveis • Certificado FSC®"
+      "freeNote": "Amostras de folheado gratuitas · Folheado com certificação FSC®"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "De onde vem o folheado certificado FSC?",
-          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+          "answer": "O folheado tem certificação FSC®: certificado de cadeia de custódia C191539. Os doze folheados rWood provêm de florestas geridas de forma responsável; o certificado está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1 — o núcleo que especificamos para vias de evacuação e edifícios públicos. O certificado de reação ao fogo está no bloco de transferências desta página."
+          "answer": "Depende do núcleo. Com o núcleo de MDF ignífugo (FR), o rWood Groove está classificado B-s1,d0 segundo a EN 13501-1; num núcleo de MDF standard a classificação é D-s2,d2. O verso em feltro é B-s1,d0. Especifique o núcleo FR para vias de evacuação e edifícios públicos."
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega padrão?",
-          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+          "answer": "O prazo de entrega está sujeito ao stock e é confirmado na encomenda. Há amostras de folheado gratuitas antes de especificar; preços e encomenda mínima a pedido."
         },
         "installMethod": {
           "question": "Como são instalados os painéis rWood?",
-          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+          "answer": "O rWood Groove é fixado em ripas ou colado a um suporte limpo, seco e nivelado. Comece num canto, deslize o macho de cada tábua na fêmea da anterior para uma junta invisível e feche as bordas com perfis de remate."
         },
         "substrateCleanup": {
           "question": "O que acontece aos painéis no fim de vida?",
-          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+          "answer": "A Re-Sound recolhe gratuitamente as tábuas no fim de vida na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
         }
       }
     },
@@ -2126,139 +2109,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "Painel acústico rWood - Groove num interior moderno",
       "woodFinishSamples": "Amostras de acabamentos em madeira",
       "panelInstallationProcess": "Processo de instalação do painel",
-      "sustainableForestry": "Silvicultura sustentável"
+      "sustainableForestry": "Silvicultura sustentável",
+      "hero": "Tábuas acústicas de madeira ranhurada rWood Groove",
+      "heroIn": "Tábuas acústicas de madeira ranhurada rWood Groove em {finish}",
+      "veneerSwatch": "Amostra de folheado {name}"
     },
     "options": {
       "originalDesc": "Design clássico de 6 lamelas",
       "mixedDesc": "Larguras mistas dinâmicas",
       "4lamellaDesc": "Ripas largas e marcantes",
       "3lamellaDesc": "Painéis largos de forte presença"
+    },
+    "kpi": {
+      "thickness": "mm de espessura",
+      "alphaWClass": "αw, classe de absorção {cls}",
+      "alphaW": "αw, absorção sonora ponderada",
+      "fire": "reação ao fogo, núcleo MDF FR",
+      "patterns": "padrões de lamelas em tábuas de 300 mm",
+      "ariaLabel": "Números-chave"
+    },
+    "buildUp": {
+      "tag": "COMPOSIÇÃO",
+      "title": "Três camadas, uma tábua",
+      "layer1": "Face folheada",
+      "layer1Desc": "Carvalho ou nogueira de qualidade A",
+      "layer2": "Lamelas de MDF",
+      "layer2Desc": "Núcleo standard, MR ou FR",
+      "layer3": "Feltro de PET reciclado",
+      "layer3Desc": "3 mm, preto ou cinzento",
+      "fixing": "Fixado em ripas ou colado ao suporte."
+    },
+    "veneers": {
+      "tag": "FOLHEADOS E ACABAMENTOS",
+      "title": "Carvalho e nogueira, qualquer folheado por encomenda",
+      "description": "Cinco folheados em stock, oleados ou envernizados. Selecione um folheado para o ver na tábua.",
+      "silkOak": "Tom greige suave",
+      "strawOak": "Carvalho claro, quente e neutro",
+      "umberOak": "Castanho-acinzentado fumado",
+      "walnut": "Castanho rico e figurado",
+      "tobaccoWalnut": "Castanho médio quente",
+      "guideNote": "Os doze folheados rWood constam do guia de cores e acabamentos rWood. A madeira natural varia em cor e veio: peça amostras antes de especificar."
+    },
+    "ordering": {
+      "title": "Prazo de entrega e amostras",
+      "orderCaption": "Encomenda",
+      "supplyCaption": "Fornecimento",
+      "leadTimeVal": "Sujeito a stock, confirmado na encomenda",
+      "samplesVal": "Amostras de folheado gratuitas",
+      "samplesQuotesDesc": "Peça amostras de folheado gratuitas ou envie-nos os seus planos para um orçamento."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PAINÉIS ACÚSTICOS DE MADEIRA PERFURADA",
+      "tag": "PAINEL ACÚSTICO DE MADEIRA PERFURADA",
       "title": "rWood Perf: painéis acústicos de madeira perfurados",
-      "tagline": "Perfurações de Precisão, Máxima Absorção",
-      "description": "Painéis acústicos perfurados de alto desempenho que aliam a beleza natural da madeira a uma absorção sonora excecional. Um núcleo de MDF ignífugo e arestas folheadas de forma envolvente proporcionam os mais elevados níveis de segurança contra incêndio e de controlo acústico.",
-      "usp1": "Perfurações Redondas",
-      "usp2": "Classificação ao fogo {fireClass}",
+      "tagline": "Perfurações de precisão, absorção máxima.",
+      "description": "As perfurações redondas furadas através do painel MDF ignífugo folheado deixam passar o som para o véu acústico e para o absorsor por trás. Quatro padrões, de um discreto furo de 5 mm a um padrão duplo de 8 mm com 24 % de área aberta.",
+      "usp1": "Perfurações redondas",
+      "usp2": "Reação ao fogo {fireClass}",
       "usp3": "αw {alphaW} consoante o padrão",
-      "description2": "Painéis acústicos perfurados de alto desempenho que aliam a beleza natural da madeira a uma absorção sonora excecional. Um núcleo de MDF ignífugo e arestas folheadas de forma envolvente proporcionam os mais elevados níveis de segurança contra incêndio e de controlo acústico para espaços públicos exigentes."
+      "description2": "À medida para paredes e tetos, até 3 050 × 1 220 mm, em 10 e 19 mm. Oito folheados de stock, qualquer folheado e acabamento por encomenda."
     },
     "patterns": {
-      "tag": "PADRÕES DE PERFURAÇÃO",
-      "title": "Escolha o seu Padrão",
-      "description": "Quatro padrões de perfuração com propriedades acústicas calibradas. Da área aberta máxima para a maior absorção às microperfurações subtis para uma estética de madeira limpa.",
-      "coreMatchTitle": "Adapte o núcleo à sua folha para que as perfurações desapareçam — ou torne-as num elemento de design.",
-      "coreColorTitle": "Cor do Núcleo",
-      "coreMatchDesc": "Combine o núcleo com o folheado para que as perfurações se fundam na superfície, ou escolha um núcleo contrastante para uma afirmação de design.",
-      "description3": "Quatro padrões de perfuração com propriedades acústicas calibradas. Da área aberta máxima para espaços acusticamente exigentes a padrões mais discretos que privilegiam o refinamento visual.",
-      "coreMatchDesc2": "Combine o núcleo com o folheado para que as perfurações se fundam na superfície, ou escolha um núcleo contrastante para um efeito decorativo."
-    },
-    "coreColor": {
-      "title": "Cor do Núcleo",
-      "description": "Feltro acústico preto ou natural visível através das perfurações — subtil mas marcante."
+      "tag": "PERFURAÇÃO",
+      "title": "Quatro padrões de perfuração",
+      "description": "Tamanho do furo e área aberta por padrão. Quanto maior a área aberta, maior a absorção.",
+      "coreColorTitle": "Cor do núcleo",
+      "coreMatchDesc2": "Um núcleo MDF ignífugo claro ou escuro, visível através dos furos: combine-o com o folheado para integrar as perfurações, ou procure o contraste para um efeito gráfico.",
+      "spec": "Ø {d} mm · {pct} % de área aberta",
+      "specDouble": "2 × Ø {d} mm · {pct} % de área aberta",
+      "drawingNote": "Desenhos a cerca de 1:2; tamanho do furo e área aberta conforme indicado por padrão.",
+      "coreLight": "Núcleo claro",
+      "coreDark": "Núcleo escuro"
     },
     "surfaces": {
-      "tag": "SUPERFÍCIES",
-      "title": "Superfícies de Madeira Premium",
-      "natureVeneers": "Folheados Nature",
-      "natureDesc": "Variações vivas e a expressão característica associadas a cada espécie de madeira.",
-      "geminiVeneers": "Folheados Gemini",
-      "geminiDesc": "Tom de cor e estrutura uniformes para um aspeto mais harmonioso e homogéneo.",
-      "finishes": "Acabamentos de superfície",
-      "description": "Cada painel rWood - Perf é produzido com arestas folheadas de forma envolvente — uma técnica artesanal tradicional que cria juntas perfeitamente contínuas e elimina os limites visíveis entre painéis.",
-      "finish1": "Laca natural",
-      "finish2": "Pigmentado",
-      "finish3": "Laminado HPL",
-      "colorSelector": "Selecionar folheado de madeira",
-      "description3": "Todos os painéis rWood - Perf são produzidos com bordos sobrefolheados — uma técnica de fabrico tradicional em que uma orla de madeira maciça é integrada à volta do painel antes do folheado. Assim, cada painel parece ser inteiramente de madeira, com juntas invisíveis em grandes superfícies."
+      "colorSelector": "Folheados de stock",
+      "selectVeneer": "Selecione um folheado"
     },
     "acoustics": {
-      "tag": "DESEMPENHO",
-      "title": "Concebido para o Som",
-      "benefit1Title": "Absorção de banda larga",
-      "benefit1": "Eficaz em todo o espetro de frequências, das graves às agudas",
-      "benefit2Title": "Segurança contra incêndio",
-      "benefit2": "Reação ao fogo {fireClass} com o núcleo de MDF ignífugo (EN 13501-1)",
-      "benefit3Title": "Desempenho ajustável",
-      "benefit3": "Quatro padrões de perfuração para soluções acústicas à medida",
-      "description": "As perfurações de precisão permitem que as ondas sonoras entrem no painel e atravessem até à camada de absorção subjacente. A caixa de ar atrás do painel reforça ainda mais a absorção das baixas frequências.",
-      "layer1Name": "Folheado de madeira + perfurações",
-      "layer1Desc": "Superfície sobrefolheada, perfurada com precisão",
-      "layer2Name": "Núcleo de aglomerado de fibras de média densidade (MDF) ignífugo",
-      "layer2Desc": "Ignífugo, densidade de 0,45 kg/m³",
-      "layer3Name": "Véu acústico",
-      "layer3Desc": "Previne a migração de fibras",
-      "layer4Name": "Cavidade de lã mineral",
-      "layer4Desc": "30–50 mm para absorção de banda larga",
-      "waveLabel": "Ondas sonoras absorvidas",
-      "certNote": "Testado e certificado de forma independente segundo a ISO 11654",
-      "ratingLabel": "Absorção",
-      "description3": "As perfurações de precisão permitem que as ondas sonoras entrem no painel e atravessem até à caixa de ar posterior. Em combinação com isolamento em lã mineral, o rWood - Perf proporciona uma excelente absorção de banda larga em todo o espetro de frequências — dos graves mais profundos aos agudos mais altos.",
-      "diagramTitle": "Corte transversal do painel",
-      "fireRating": "Classificação ao fogo",
-      "noiseReduction": "Redução de ruído",
-      "ratingPerPattern": "consoante o padrão"
+      "tag": "ACÚSTICA",
+      "title": "Absorção sonora",
+      "description": "O som passa pelas perfurações para o véu acústico e para a caixa de ar atrás do painel. Quanto maior a área aberta, maior a absorção.",
+      "tableTitle": "Absorção sonora",
+      "alphaWByPattern": "αw, consoante o padrão",
+      "withWool": "Com 50 mm de lã mineral",
+      "withWoolVal": "αw até 1.00",
+      "mounting": "Montagem no ensaio",
+      "mountingVal": "Caixa de ar com lã mineral",
+      "pattern": "Padrão",
+      "openArea": "Área aberta",
+      "class": "Classe",
+      "octaveTitle": "αs por banda de oitava, padrão PD8 com caixa de ar",
+      "footnote": "αs por banda de oitava: padrão PD8 com caixa de ar, indicativo. Os valores dependem do padrão, da profundidade da caixa de ar e do absorsor atrás do painel."
     },
     "installation": {
-      "tag": "MONTAGEM OCULTA",
-      "title": "Instalação uniforme",
-      "step1Title": "Montar subestrutura",
-      "step1Desc": "Fixe as calhas metálicas à estrutura da parede ou do teto",
-      "step2Title": "Colocar isolamento",
-      "step2Desc": "Coloque lã mineral na caixa de ar para uma absorção ideal",
-      "step3Title": "Painéis clipe",
-      "step3Desc": "Sistema de clipes ocultos para montagem sem ferramentas e sem folgas",
-      "step4Title": "Alinhamento perfeito",
-      "step4Desc": "Padrões de perfuração alinhados com juntas sobrefolheadas invisíveis",
-      "description": "Os painéis rWood - Perf são instalados com um sistema de clipes ocultos para um aspeto invisível e contínuo.",
-      "description3": "Os painéis rWood - Perf são instalados com um sistema de clipes ocultos concebido para precisão, rapidez e um resultado final impecável. O sistema garante juntas sem folgas e padrões de perfuração perfeitamente alinhados ao longo de vários painéis."
+      "tag": "INSTALAÇÃO",
+      "title": "Sistema de clips ocultos para paredes e tetos",
+      "step1Title": "Subestrutura",
+      "step1Desc": "Calhas metálicas na estrutura da parede ou do teto.",
+      "step2Title": "Isolamento",
+      "step2Desc": "Lã mineral na caixa de ar para a melhor absorção.",
+      "step3Title": "Painéis",
+      "step3Desc": "Clips ocultos, montagem sem ferramentas e sem junta.",
+      "step4Title": "Resultado",
+      "step4Desc": "Padrões alinhados de painel para painel.",
+      "description": "Calhas metálicas, lã mineral na caixa de ar e os painéis encaixam nos clips sem ferramentas e sem junta, com o padrão de perfuração a continuar de painel para painel."
     },
     "sustainability": {
       "tag": "SUSTENTABILIDADE",
-      "title": "Construído para Durar, Construído Responsavelmente",
-      "badge1": "Certificado FSC®",
-      "badge2": "{pct} % de conteúdo reciclado",
+      "title": "Fabricado de forma responsável",
+      "badge1": "Folheado certificado FSC®",
+      "badge2": "{pct} % de conteúdo reciclado",
       "badge3": "Fabricado na Polónia",
-      "badge4": "Emissões ultrabaixas",
+      "badge4": "Classe de formaldeído E1",
       "badge1Desc": "Madeira de florestas geridas de forma responsável",
-      "badge2Desc": "Material reciclado pós-consumo no núcleo",
-      "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia) — cadeias de abastecimento curtas",
-      "badge4Desc": "Sem formaldeído adicionado",
-      "description": "O rWood - Perf combina materiais naturais e duradouros com uma abordagem de fabrico responsável.",
-      "description3": "O rWood - Perf combina materiais naturais e duradouros com um aprovisionamento responsável: um núcleo de MDF ignífugo sem formaldeído adicionado e folheados provenientes de florestas geridas de forma sustentável."
+      "badge2Desc": "Material reciclado no painel",
+      "badge3Desc": "Produzido na nossa própria fábrica em Częstochowa (Polónia)",
+      "badge4Desc": "Núcleo MDF ignífugo de baixas emissões, para interiores secos",
+      "description": "Folheado certificado FSC®, classe de formaldeído E1 e produção na nossa própria fábrica em Częstochowa. No fim de vida recolhemos gratuitamente os painéis na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
     },
     "specs": {
-      "tag": "TÉCNICO",
-      "title": "Especificações",
-      "dimensionsTitle": "Dimensões — Paredes e tetos",
-      "acousticsTitle": "Desempenho acústico",
-      "perforationsTitle": "Opções de perfuração",
-      "fireTitle": "Segurança contra incêndio",
-      "certsTitle": "Certificações",
-      "customSizes": "Tamanhos personalizados",
-      "dimThickness": "Espessura",
-      "dimWeight": "Peso",
-      "matTitle": "Materiais",
-      "matCustomColor": "Tonalidades personalizadas com pigmentação transparente ou opaca",
-      "matLacquerFinish": "Laca curada por UV, do super mate ao alto brilho",
-      "surfaceLabel": "Superfície",
-      "surfaceVal": "Folheado / HPL / folha / pintura",
-      "coreVal": "Núcleo de aglomerado de fibras de média densidade (MDF) (castanho / verde / preto)",
-      "edgesLabel": "Arestas",
-      "edgesVal": "Madeira maciça com sobre-folheado",
-      "acousticFelt": "Feltro acústico",
-      "feltColor": "Preto / branco",
+      "tag": "DADOS TÉCNICOS",
+      "title": "Painel, fogo e emissões",
+      "acousticsTitle": "Absorção sonora",
+      "perforationsTitle": "Padrões de perfuração",
+      "fireTitle": "Fogo e emissões",
+      "matTitle": "Superfície e opções",
+      "surfaceLabel": "Tratamentos de superfície",
+      "surfaceVal": "Verniz natural · pigmentado · laminado HPL · película · tinta",
+      "coreVal": "MDF ignífugo, claro ou escuro",
+      "edgesLabel": "Bordos",
+      "edgesVal": "Madeira maciça refolheada para juntas invisíveis",
+      "feltColor": "Preto ou branco",
       "reactionFire": "Reação ao fogo",
-      "resistanceFire": "Resistência ao fogo",
-      "fireRetardant": "Ignífugo",
-      "vocLabel": "Emissões de COV",
-      "vocVal": "TVOC aprovado (ISO 16000)",
-      "formaldehydeLabel": "Formaldeído",
-      "formaldehydeVal": "Sem ureia-formaldeído adicionado",
-      "envLabel": "Ambiental"
+      "panelTitle": "Painel",
+      "sizes": "Medidas",
+      "fleeceLabel": "Véu acústico",
+      "acWithMinWool": "Com 50 mm de lã mineral",
+      "acWithMinWoolVal": "αw até 1.00",
+      "fireStandard": "Norma de fogo",
+      "finishLabel": "Verniz",
+      "finishVal": "Curado por UV, do supermate ao alto brilho, natural ou pigmentado",
+      "rangesLabel": "Gamas de folheado",
+      "rangesVal": "Nature (veio vivo e com carácter) · Gemini (tom regular e uniforme)",
+      "coreColoursLabel": "Cores do núcleo",
+      "appsTitle": "Instalação",
+      "appInstall": "Aplicação",
+      "appWalls": "Paredes e tetos",
+      "mountingSystem": "Fixação",
+      "subframe": "Subestrutura",
+      "mounting": "Montagem no ensaio",
+      "mountingVal": "Caixa de ar com lã mineral",
+      "pd8Val": "2 × Ø 8 mm · 24 % de área aberta",
+      "ph10Val": "Ø 10 mm · 18 % de área aberta",
+      "ph8Val": "Ø 8 mm · 12 % de área aberta",
+      "ph5Val": "Ø 5 mm · 5 % de área aberta",
+      "envVal": "Interior, zonas secas",
+      "coreColoursVal": "Castanho, verde ou preto: claro ou escuro para esconder ou realçar as perfurações",
+      "subframeVal": "Calhas metálicas",
+      "concealedClip": "Clips ocultos, sem ferramentas, sem junta"
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
@@ -2266,191 +2275,228 @@
     },
     "overview": {
       "tag": "DESEMPENHO COMPROVADO",
-      "description": "Os painéis rWood - Perf são uma das soluções acústicas de parede mais eficazes. As perfurações de precisão permitem que o som atravesse a superfície decorativa em madeira até ao núcleo altamente absorvente.",
-      "feature1": "Núcleo de MDF ignífugo ({fireClass})",
-      "feature2": "Bordos sobrefolheados para juntas invisíveis",
-      "feature3": "Núcleo claro ou escuro para maior discrição do padrão",
-      "feature4": "Formatos personalizados até 3050 × 1220 mm",
-      "description3": "Os painéis rWood - Perf são uma das soluções mais eficazes e mais utilizadas para paredes e tetos acústicos. As perfurações redondas, executadas com precisão, criam uma grande área aberta que garante níveis elevados de absorção sonora, enquanto o folheado de madeira premium assegura um aspeto natural e acolhedor.",
-      "description4": "Em combinação com um núcleo de aglomerado de fibras de média densidade (MDF) ignífugo e bordos sobrefolheados para juntas invisíveis, estes painéis são concebidos para as exigências mais elevadas de grandes espaços públicos — de átrios e salas de concertos a escritórios e escolas."
-    },
-    "accessories": {
-      "tag": "COMPLETA O ESTILO",
-      "title": "Acessórios",
-      "description": "Elementos de acabamento profissionais para um resultado impecável",
-      "item1Title": "Perfis de borda",
-      "item1Desc": "Perfis a condizer para remates limpos dos painéis",
-      "item2Title": "Soluções de canto",
-      "item2Desc": "Transições invisíveis em cantos interiores e exteriores",
-      "item3Title": "Calhas de montagem",
-      "item3Desc": "Sistema de subestrutura em alumínio oculta",
-      "item4Title": "Lã mineral",
-      "item4Desc": "Isolamento de 30–50 mm para um desempenho ideal"
+      "feature1": "Núcleo MDF ignífugo ({fireClass})",
+      "feature2": "Núcleo claro ou escuro para esconder ou realçar as perfurações",
+      "feature3": "À medida até 3 050 × 1 220 mm, em 10 e 19 mm",
+      "feature4": "Clips ocultos, sem ferramentas, sem junta, padrões alinhados de painel para painel",
+      "title": "Quanto maior a área aberta, maior a absorção",
+      "description1": "O rWood Perf é um painel MDF ignífugo folheado com perfurações redondas furadas de lado a lado. O som passa pelos furos para o véu acústico e para a caixa de ar atrás do painel, onde é absorvido.",
+      "description2": "Quatro padrões permitem-lhe escolher entre absorção e discrição: de um discreto furo de 5 mm com 5 % de área aberta ao padrão duplo de 8 mm PD8 com 24 % de área aberta."
     },
     "cta": {
-      "note": "Amostras gratuitas disponíveis • Certificado FSC®"
+      "note": "Amostras de folheado gratuitas · folheado certificado FSC®"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "De onde vem o folheado certificado FSC?",
-          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+          "question": "De onde provém o folheado certificado FSC?",
+          "answer": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o número do certificado de cadeia de custódia está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1 — o núcleo que especificamos para vias de evacuação e edifícios públicos. O certificado de reação ao fogo está no bloco de transferências desta página."
+          "answer": "Com o seu núcleo MDF ignífugo, o rWood Perf está classificado B-s1,d0 segundo a EN 13501-1. O painel destina-se a interiores secos."
         },
         "leadTime": {
-          "question": "Qual é o prazo de entrega padrão?",
-          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+          "question": "Qual é o prazo de entrega habitual?",
+          "answer": "Os folheados de stock são entregues em 3–4 semanas; as espécies fora de stock e os acabamentos à medida requerem 6–8 semanas. Os painéis à medida são fabricados segundo os seus desenhos."
         },
         "installMethod": {
-          "question": "Como são instalados os painéis rWood?",
-          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+          "question": "Como se instalam os painéis rWood?",
+          "answer": "Com um sistema de clips ocultos: calhas metálicas na estrutura da parede ou do teto, lã mineral na caixa de ar e os painéis encaixam nos clips sem ferramentas e sem junta, de modo que o padrão de perfuração continua de painel para painel."
         },
         "substrateCleanup": {
           "question": "O que acontece aos painéis no fim de vida?",
-          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+          "answer": "A Re-Sound recolhe gratuitamente os painéis no fim de vida na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "Pormenor do painel rWood - Perf com as perfurações redondas",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Pormenor da superfície em folheado de madeira do painel perfurado",
-      "rwoodPerfPanelConcealedMountingSystem": "Sistema de fixação oculto do painel rWood - Perf",
-      "sustainableWoodSourcingAndProduction": "Aprovisionamento e produção sustentáveis de madeira"
+      "sustainableWoodSourcingAndProduction": "Folheado de madeira certificado FSC",
+      "hero": "Painéis acústicos de madeira perfurada rWood Perf numa parede",
+      "heroVeneer": "Painel rWood Perf em {name}",
+      "overview": "Grande plano das perfurações redondas de um painel rWood Perf",
+      "installation": "Calhas metálicas e clips ocultos do sistema de montagem rWood Perf"
     },
     "options": {
-      "pd8Desc": "Absorção máxima, grande área aberta",
-      "ph10Desc": "Absorção elevada, perfurações marcantes",
+      "pd8Desc": "Padrão duplo, absorção máxima",
+      "ph10Desc": "Absorção elevada, perfurações marcadas",
       "ph8Desc": "Equilíbrio entre estética e desempenho",
       "ph5Desc": "Padrão discreto, superfície subtil"
+    },
+    "kpi": {
+      "ariaLabel": "Números-chave",
+      "thickness": "espessura do painel, à medida",
+      "alphaW": "αw, consoante o padrão",
+      "alphaWPd8": "αw com o padrão PD8, {range} consoante o padrão",
+      "fire": "reação ao fogo, núcleo MDF ignífugo",
+      "patterns": "padrões de perfuração, Ø 5 a 10 mm"
+    },
+    "buildUp": {
+      "alt": "Vista explodida das três camadas: folheado perfurado, núcleo MDF ignífugo furado, véu acústico",
+      "layer1": "Folheado perfurado",
+      "layer1Desc": "Qualidade A, furado Ø 5 a 10 mm",
+      "layer2": "Núcleo MDF ignífugo",
+      "layer2Desc": "Claro ou escuro, furado de lado a lado",
+      "layer3": "Véu acústico",
+      "layer3Desc": "Preto ou branco",
+      "behind": "Atrás do painel: caixa de ar com lã mineral."
+    },
+    "veneers": {
+      "title": "Oito folheados de stock, qualquer folheado por encomenda",
+      "description": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. A madeira é um material natural: o veio e a cor variam de painel para painel, e as amostras no ecrã são apenas indicativas.",
+      "alt": "Folheado {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Escandinávia",
+        "northAmerica": "América do Norte"
+      },
+      "grain": {
+        "straightInterlocked": "Direito a entrelaçado",
+        "subtleFine": "Veio fino e subtil",
+        "fineStraight": "Veio fino e direito",
+        "cathedral": "Veio em catedral",
+        "pronounced": "Veio pronunciado",
+        "straightWavy": "Direito a ondulado",
+        "deepCathedral": "Veio em catedral profundo",
+        "richFlowing": "Veio rico e fluido"
+      },
+      "madeToOrderTitle": "Por encomenda",
+      "madeToOrderDesc": "Para além dos oito folheados de stock, fabricamos qualquer espécie, cor de velatura e acabamento.",
+      "finishTitle": "Acabamento",
+      "finishDesc": "Verniz curado por UV, do supermate ao alto brilho, natural ou pigmentado.",
+      "naturalTitle": "Um material natural",
+      "naturalDesc": "A madeira natural varia em cor e veio. Peça amostras antes de prescrever."
+    },
+    "bespoke": {
+      "tag": "À MEDIDA",
+      "title": "Segundo os seus desenhos",
+      "description": "O rWood Perf é fabricado à medida para paredes e tetos: de 100 × 100 mm até 3 050 × 1 220 mm, em 10 e 19 mm, em qualquer dos quatro padrões.",
+      "customDimTitle": "Dimensões à medida",
+      "customDimDesc": "Cada painel é fabricado com as medidas dos seus desenhos, de 100 × 100 mm até 3 050 × 1 220 mm.",
+      "finishTitle": "Qualquer folheado e acabamento",
+      "finishDesc": "Oito folheados de stock; qualquer outra espécie, cor de velatura e acabamento por encomenda.",
+      "samplesTitle": "Amostras de folheado gratuitas",
+      "samplesDesc": "A madeira natural varia em cor e veio. Peça amostras antes de prescrever."
+    },
+    "ordering": {
+      "title": "Prazos e amostras",
+      "stockVeneers": "Folheados de stock",
+      "stockVeneersVal": "3–4 semanas",
+      "nonStock": "Fora de stock e à medida",
+      "nonStockVal": "6–8 semanas",
+      "madeToMeasure": "À medida",
+      "madeToMeasureVal": "Segundo os seus desenhos",
+      "supply": "Fornecimento",
+      "samplesVal": "Amostras de folheado gratuitas",
+      "sizesVal": "Até {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Bélgica"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "PAINÉIS ACÚSTICOS MICRO-PERFURADOS",
+      "tag": "PAINEL ACÚSTICO DE MADEIRA MICROPERFURADA",
       "title": "rWood Micro: painéis acústicos de madeira microperfurados",
-      "tagline": "Perfuração Invisível, Acústica Excecional",
-      "description": "Desfrute da beleza da madeira natural com o desempenho acústico da tecnologia avançada de microperfuração. Furos praticamente invisíveis proporcionam absorção sonora de Classe A, preservando o aspeto puro e homogéneo do folheado de madeira premium.",
-      "usp1": "Perfurações Invisíveis",
-      "usp2": "Absorção Classe A",
-      "usp3": "Classificação ao fogo {fireClass}",
-      "colorSelector": "Selecionar folheado de madeira"
+      "tagline": "Perfuração invisível, acústica excecional.",
+      "description": "As microperfurações a partir de 0,5 mm no folheado de qualidade A abrem para câmaras acústicas no núcleo MDF ignífugo, apoiado por um véu acústico. A uma distância normal, os furos desaparecem na madeira.",
+      "usp1": "Perfurações invisíveis",
+      "usp2": "Absorção classe A",
+      "usp3": "Reação ao fogo {fireClass}",
+      "colorSelector": "Folheados de stock",
+      "description2": "À medida para paredes e tetos, até 3 050 × 1 220 mm, em 10 e 19 mm. Oito folheados de stock, qualquer folheado e acabamento por encomenda.",
+      "selectVeneer": "Selecione um folheado"
     },
     "perforation": {
-      "tag": "PADRÕES DE PERFURAÇÃO",
-      "title": "Escolha a sua Perfuração",
-      "description": "Diferentes densidades de microperfuração para um controlo acústico afinado — do subtil ao alto desempenho."
-    },
-    "surfaces": {
-      "tag": "SUPERFÍCIES",
-      "title": "Superfícies Premium",
-      "woodVeneer": "Folheado de madeira",
-      "woodVeneerDesc": "Folheados premium de grau A em carvalho, nogueira, bétula e muito mais. Disponíveis nos cortes Nature e Gemini.",
-      "hplLaminate": "Laminado HPL",
-      "hplLaminateDesc": "Superfícies em laminado de alta pressão para maior durabilidade. Disponíveis numa vasta gama de cores e acabamentos.",
-      "surfaceType": "Tipo de superfície",
-      "finishTreatments": "Tratamentos de acabamento",
-      "description": "Todos os painéis rWood - Micro têm bordos sobrefolheados — uma técnica de fabrico que cria juntas invisíveis entre painéis, para uma superfície de madeira contínua.",
-      "finish1Desc": "Tonalidades personalizadas com pigmentação transparente ou opaca",
-      "finish2Desc": "Laca curada por UV, do super mate ao alto brilho",
-      "description2": "Todos os painéis rWood - Micro têm bordos sobrefolheados — uma técnica de fabrico herdada da marcenaria tradicional. O resultado: painéis mais resistentes, juntas invisíveis e um padrão contínuo, independentemente do formato do painel."
+      "tag": "PERFURAÇÃO",
+      "title": "Quatro densidades de perfuração",
+      "description": "Tamanho do furo e área aberta por densidade. Quanto maior a área aberta, maior a absorção; quanto menor o furo, menos visível o padrão.",
+      "spec": "Ø {d} mm · {pct} % de área aberta",
+      "drawingNote": "Desenhos a cerca de 2:1; tamanho do furo e área aberta conforme indicado por densidade."
     },
     "acoustics": {
-      "tag": "DESEMPENHO",
-      "title": "Absorção sonora superior",
-      "benefit1Title": "Mecanismo acústico duplo",
-      "benefit1": "Microfuros e câmaras acústicas trabalham em conjunto para uma absorção superior",
-      "benefit2Title": "Design que poupa espaço",
-      "benefit2": "Menos dependente de caixas de ar — paredes e tetos com menor espessura",
-      "benefit3Title": "Segurança contra incêndio",
-      "benefit3": "Reação ao fogo {fireClass} com o núcleo de MDF ignífugo (EN 13501-1)",
-      "description": "A combinação de microperfurações na superfície com milhares de canais de entrada de som de maior dimensão cria uma absorção de banda larga excecional.",
-      "layer1Name": "Folheado de grau A com furação de precisão",
-      "layer2Name": "Núcleo de aglomerado de fibras de média densidade (MDF) ignífugo",
-      "layer2Desc": "Ignífugo, com câmaras acústicas",
-      "layer3Name": "Fundo em velo acústico",
-      "layer3Desc": "Camada adicional de absorção sonora",
-      "waveLabel": "Ondas sonoras absorvidas",
-      "certNote": "Testado e certificado de forma independente segundo a ISO 11654",
-      "description2": "A combinação de microperfurações na superfície com milhares de câmaras acústicas de maior dimensão no núcleo cria um duplo mecanismo acústico. Menos dependente de isolamento e caixas de ar — o que significa paredes e tetos mais finos, que poupam espaço valioso.",
-      "diagramTitle": "Corte transversal do painel",
-      "soundAbsorbed": "Som absorvido",
-      "fireRating": "Classificação ao fogo",
-      "testStandard": "Norma de ensaio",
-      "thinner": "Mais fino",
-      "wallBuildUp": "Composição da parede"
+      "tag": "ACÚSTICA",
+      "title": "Absorção sonora",
+      "description": "O som entra pelas microperfurações e é absorvido nas câmaras acústicas do núcleo e no véu atrás. A absorção do painel depende da densidade de perfuração e do que está por trás.",
+      "tableTitle": "Absorção sonora",
+      "withWool": "Com 50 mm de lã mineral",
+      "withWoolVal": "αw até 1.00",
+      "behindTitle": "Atrás do painel",
+      "behindDesc": "Um absorsor por trás aumenta a absorção: feltro acústico, um painel rPET ou lã mineral na caixa de ar. Com 50 mm de lã mineral o painel atinge αw 1,00.",
+      "footnote": "αw e classe de absorção segundo a EN ISO 11654. Os valores dependem da densidade de perfuração, da profundidade da caixa de ar e do absorsor atrás do painel."
     },
     "installation": {
-      "tag": "SISTEMA DE INSTALAÇÃO",
-      "title": "Instalação de precisão",
-      "step1Title": "Instalar subestrutura",
-      "step1Desc": "Fixe as calhas de alumínio à estrutura da parede ou do teto",
-      "step2Title": "Adicionar isolamento",
-      "step2Desc": "Lã mineral opcional para uma absorção reforçada",
-      "step3Title": "Painéis Click & Fix",
-      "step3Desc": "Sistema de clipes ocultos para montagem dos painéis sem ferramentas",
-      "step4Title": "Resultado contínuo",
-      "step4Desc": "Os bordos sobrefolheados criam uma superfície de madeira contínua",
-      "description": "Os painéis rWood - Micro são instalados com o nosso sistema de montagem oculto, que garante fixações invisíveis e um acabamento impecável. O sistema permite aplicações em paredes e em tetos, com transições invisíveis entre painéis graças aos bordos sobrefolheados."
+      "tag": "INSTALAÇÃO",
+      "title": "Sistema de clips ocultos para paredes e tetos",
+      "step1Title": "Subestrutura",
+      "step1Desc": "Calhas de alumínio na estrutura da parede ou do teto.",
+      "step2Title": "Isolamento",
+      "step2Desc": "Lã mineral opcional para uma absorção mais elevada.",
+      "step3Title": "Painéis",
+      "step3Desc": "Clips ocultos, montagem sem ferramentas.",
+      "step4Title": "Resultado",
+      "step4Desc": "Fixações invisíveis e uma superfície de madeira contínua.",
+      "description": "Calhas de alumínio, lã mineral opcional e os painéis encaixam nos clips sem ferramentas. As fixações ficam invisíveis e a superfície de madeira continua sem interrupção."
     },
     "bespoke": {
-      "tag": "LIBERDADE DE DESIGN",
-      "title": "Possibilidades à Medida",
-      "backlitTitle": "Painéis retroiluminados",
-      "backlitDesc": "Crie secções retroiluminadas deslumbrantes, em que a luz atravessa as microperfurações. Logótipos e padrões brilham de forma elegante quando iluminados e permanecem invisíveis quando a luz está apagada.",
-      "customDimTitle": "Dimensões personalizadas",
-      "customDimDesc": "Painéis produzidos de acordo com as suas especificações exatas. Dimensões e formas não padronizadas para requisitos arquitetónicos únicos.",
-      "patternTitle": "Padrão contínuo",
-      "patternDesc": "Os painéis sobrefolheados criam transições invisíveis, independentemente do formato, para uma impressão homogénea em qualquer superfície.",
-      "description": "Os painéis rWood - Micro podem ser personalizados e pré-fabricados de acordo com os seus desenhos. As microperfurações abrem possibilidades de design únicas, que vão além dos painéis acústicos convencionais."
+      "tag": "À MEDIDA",
+      "title": "Segundo os seus desenhos",
+      "customDimTitle": "Dimensões à medida",
+      "customDimDesc": "Cada painel é fabricado com as medidas dos seus desenhos, de 100 × 100 mm até 3 050 × 1 220 mm.",
+      "description": "O rWood Micro é fabricado à medida para paredes e tetos: de 100 × 100 mm até 3 050 × 1 220 mm, em 10 e 19 mm, em qualquer das quatro densidades de perfuração.",
+      "finishTitle": "Qualquer folheado e acabamento",
+      "finishDesc": "Oito folheados de stock; qualquer outra espécie, cor de velatura e acabamento por encomenda.",
+      "samplesTitle": "Amostras de folheado gratuitas",
+      "samplesDesc": "A madeira natural varia em cor e veio. Peça amostras antes de prescrever."
     },
     "sustainability": {
       "tag": "SUSTENTABILIDADE",
-      "title": "Fabricado Responsavelmente",
+      "title": "Fabricado de forma responsável",
       "badge1": "Folheado certificado FSC®",
-      "badge2": "Material de núcleo natural",
+      "badge2": "Classe de formaldeído E1",
       "badge3": "Fabricado na Polónia",
-      "badge4": "Baixas emissões COV",
+      "badge4": "Recolha no fim de vida",
       "badge1Desc": "Madeira de florestas geridas de forma responsável",
-      "badge2Desc": "Núcleo de aglomerado de fibras — um núcleo à base de madeira, com classificação ao fogo",
-      "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
-      "badge4Desc": "Classificação E1 para uma qualidade do ar interior mais saudável",
-      "description": "Os painéis rWood - Micro são concebidos com a sustentabilidade como princípio fundamental. Madeira certificada FSC®, acabamentos de baixas emissões e materiais de origem responsável garantem responsabilidade ambiental ao longo de todo o ciclo de vida do produto."
+      "badge2Desc": "Núcleo MDF ignífugo de baixas emissões, para interiores secos",
+      "badge3Desc": "Produzido na nossa própria fábrica em Częstochowa (Polónia)",
+      "description": "Folheado certificado FSC®, classe de formaldeído E1 e produção na nossa própria fábrica em Częstochowa. No fim de vida recolhemos os painéis."
     },
     "specs": {
-      "tag": "TÉCNICO",
-      "title": "Especificações",
-      "dimensionsTitle": "Dimensões — Paredes e tetos",
-      "acousticsTitle": "Dimensões — Paredes e tetos",
-      "customSizes": "Tamanhos personalizados",
-      "dimThickness": "Espessura",
-      "dimWeight": "Peso",
-      "dimCoreDensity": "Densidade do núcleo",
-      "perfsTitle": "Opções de perfuração",
-      "fireTitle": "Segurança contra incêndio",
-      "matTitle": "Materiais",
-      "appsTitle": "Aplicações",
-      "acWithMinWool": "Com lã mineral de 50 mm",
+      "tag": "DADOS TÉCNICOS",
+      "title": "Painel, fogo e emissões",
+      "acousticsTitle": "Absorção sonora",
+      "perfsTitle": "Densidades de perfuração",
+      "fireTitle": "Fogo e emissões",
+      "matTitle": "Superfície e opções",
+      "appsTitle": "Instalação",
+      "acWithMinWool": "Com 50 mm de lã mineral",
       "reactionFire": "Reação ao fogo",
-      "resistanceFire": "Resistência ao fogo",
-      "fireRetardant": "Ignífugo",
-      "surfaceLabel": "Superfície",
-      "surfaceVal": "Folheado / HPL / folha / pintura",
-      "coreVal": "Núcleo de aglomerado de fibras de média densidade (MDF) (castanho / verde / preto)",
-      "edgesLabel": "Arestas",
-      "edgesVal": "Madeira maciça com sobre-folheado",
-      "acousticFelt": "Feltro acústico",
-      "feltColor": "Preto / branco",
-      "appInstall": "Instalação",
+      "surfaceLabel": "Tratamentos de superfície",
+      "surfaceVal": "Verniz natural · pigmentado · laminado HPL · película · tinta",
+      "coreVal": "MDF ignífugo com câmaras acústicas",
+      "edgesLabel": "Bordos",
+      "edgesVal": "Madeira maciça refolheada para juntas invisíveis",
+      "feltColor": "Preto ou branco",
+      "appInstall": "Aplicação",
       "appWalls": "Paredes e tetos",
-      "appEnv": "Ambiente",
-      "appEnvVal": "Interior (áreas secas)",
-      "backlitOption": "Opção retroiluminada",
-      "backlitVal": "Disponível",
-      "mountingSystem": "Sistema de montagem",
-      "concealedClip": "Sistema de clipes ocultos"
+      "appEnvVal": "Interior, zonas secas",
+      "mountingSystem": "Fixação",
+      "concealedClip": "Clips ocultos, sem ferramentas",
+      "panelTitle": "Painel",
+      "sizes": "Medidas",
+      "fleeceLabel": "Véu acústico",
+      "acWithMinWoolVal": "αw até 1.00",
+      "fireStandard": "Norma de fogo",
+      "finishLabel": "Verniz",
+      "finishVal": "Curado por UV, do supermate ao alto brilho, natural ou pigmentado",
+      "rangesLabel": "Gamas de folheado",
+      "rangesVal": "Nature (veio vivo e com carácter) · Gemini (tom regular e uniforme)",
+      "coreColoursLabel": "Cores do núcleo",
+      "subframe": "Subestrutura",
+      "nanoVal": "Ø 0.5 mm · 2.5 % de área aberta",
+      "microSVal": "Ø 1.0 mm · 5.2 % de área aberta",
+      "microMVal": "Ø 1.5 mm · 8.4 % de área aberta",
+      "microLVal": "Ø 2.0 mm · 10.6 % de área aberta",
+      "coreColoursVal": "Castanho, verde ou preto",
+      "subframeVal": "Calhas de alumínio"
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "A SOLUÇÃO INVISÍVEL",
-      "title": "Concebido para Olhos e Ouvidos",
-      "description1": "Os painéis rWood - Micro combinam tecnologia avançada de microperfuração com folheados de madeira premium. A uma distância de observação normal, as perfurações são completamente invisíveis: o que vê é uma superfície de madeira bonita e homogénea. O que ouve é um conforto acústico excecional.",
-      "description2": "O segredo está na combinação de dois mecanismos acústicos: milhares de microfuros concebidos com precisão na superfície e câmaras de absorção sonora no interior do material do núcleo.",
-      "feature1": "Perfurações invisíveis a uma distância de observação normal",
-      "feature2": "Núcleo de MDF ignífugo com câmaras acústicas",
-      "feature3": "Arestas folheadas para juntas sem descontinuidades",
-      "feature4": "Adequado para paredes e tetos",
-      "feature5": "Disponível como painéis retroiluminados"
-    },
-    "accessories": {
-      "tag": "COMPLETA O ESTILO",
-      "title": "Acessórios",
-      "description": "Elementos de acabamento profissionais para um resultado impecável",
-      "item1Title": "Perfis de borda",
-      "item1Desc": "Perfis a condizer para remates de painel limpos",
-      "item2Title": "Soluções de canto",
-      "item2Desc": "Transições perfeitas em cantos interiores e exteriores",
-      "item3Title": "Calhas de montagem",
-      "item3Desc": "Sistema de subestrutura em alumínio oculta",
-      "item4Title": "Retroiluminação LED",
-      "item4Desc": "Iluminação integrada para efeitos de painel retroiluminado"
-    },
-    "patterns": {
-      "description": "Quatro densidades de perfuração para corresponder às suas exigências acústicas. Desde microperfurações praticamente invisíveis até áreas abertas generosas, cada densidade oferece um equilíbrio diferente entre estética e desempenho.",
-      "magnifiedLabel": "Ampliado 10×",
-      "holeDiameter": "Diâmetro do furo",
-      "openArea": "Área aberta",
-      "ratingLabel": "Absorção",
-      "description2": "Quatro densidades de perfuração para corresponder às suas exigências acústicas. Desde as perfurações Nano praticamente invisíveis até aos padrões Micro L de absorção máxima: selecione o equilíbrio perfeito entre estética e desempenho acústico.",
-      "pigmentedLacquer": "Laca pigmentada",
-      "glossLevels": "Níveis de brilho"
+      "title": "Concebido para os olhos e os ouvidos",
+      "description1": "O rWood Micro combina um folheado de madeira natural de qualidade A com microperfurações a partir de Ø 0,5 mm. A uma distância normal, os furos desaparecem na madeira: o que vê é uma superfície de madeira contínua; o que ouve é uma sala mais silenciosa.",
+      "description2": "O som entra pelas microperfurações e é absorvido nas câmaras acústicas do núcleo MDF ignífugo e no véu acústico atrás. A absorção do painel depende da densidade de perfuração e do que está por trás.",
+      "feature1": "Perfurações que desaparecem a uma distância normal",
+      "feature2": "Núcleo MDF ignífugo com câmaras acústicas, véu acústico preto ou branco",
+      "feature3": "À medida até 3 050 × 1 220 mm, em 10 e 19 mm",
+      "feature4": "Clips ocultos, sem ferramentas, para paredes e tetos"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "De onde vem o folheado certificado FSC?",
-          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+          "question": "De onde provém o folheado certificado FSC?",
+          "answer": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o número do certificado de cadeia de custódia está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
-          "answer": "Com o núcleo de MDF ignífugo (FR), os painéis rWood estão classificados B-s1,d0 segundo a EN 13501-1 — o núcleo que especificamos para vias de evacuação e edifícios públicos. O certificado de reação ao fogo está no bloco de transferências desta página."
+          "answer": "Com o seu núcleo MDF ignífugo, o rWood Micro está classificado B-s1,d0 segundo a EN 13501-1. O painel destina-se a interiores secos."
         },
         "leadTime": {
-          "question": "Qual é o prazo de entrega padrão?",
-          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+          "question": "Qual é o prazo de entrega habitual?",
+          "answer": "Os folheados de stock são entregues em 3–4 semanas; as espécies fora de stock e os acabamentos à medida requerem 6–8 semanas. Os painéis à medida são fabricados segundo os seus desenhos."
         },
         "installMethod": {
-          "question": "Como são instalados os painéis rWood?",
-          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+          "question": "Como se instalam os painéis rWood?",
+          "answer": "Com um sistema de clips ocultos: calhas de alumínio na estrutura da parede ou do teto, lã mineral opcional na caixa de ar e os painéis encaixam nos clips sem ferramentas. As fixações ficam invisíveis e a superfície de madeira continua sem interrupção."
         },
         "substrateCleanup": {
           "question": "O que acontece aos painéis no fim de vida?",
-          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+          "answer": "A Re-Sound recolhe gratuitamente os painéis no fim de vida na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "Pormenor do painel rWood - Micro com as perfurações invisíveis",
-      "microPerforatedWoodPanelSurfaceDetail": "Pormenor da superfície do painel de madeira microperfurado",
-      "rwoodMicroPanelInstallationSystem": "Sistema de instalação do painel rWood - Micro",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Painel microperfurado retroiluminado a criar um efeito de luz",
-      "sustainableProduction": "Produção sustentável"
+      "sustainableProduction": "Folheado de madeira certificado FSC",
+      "hero": "Painéis acústicos de madeira microperfurada rWood Micro numa parede",
+      "heroVeneer": "Painel rWood Micro em {name}",
+      "overview": "Grande plano de um painel microperfurado rWood Micro",
+      "installation": "Calhas de alumínio e clips ocultos do sistema de montagem rWood Micro",
+      "madeToMeasure": "Painéis rWood Micro à medida instalados à volta de uma janela"
     },
     "options": {
-      "veneerDesc": "Folheado natural de qualidade A",
-      "hplDesc": "Laminado de alta pressão",
       "nanoDesc": "Perfurações praticamente invisíveis",
       "microsDesc": "Microperfurações subtis",
       "micromDesc": "Padrão de perfuração equilibrado",
-      "microlDesc": "Padrão de absorção máxima",
-      "nanoDetail": "A perfuração mais pequena disponível — totalmente invisível a olho nu, criando uma superfície de madeira impecável.",
-      "microsDetail": "Microfuros quase impercetíveis que mantêm uma superfície limpa e sem interrupções.",
-      "micromDetail": "Um equilíbrio ideal entre discrição visual e eficiência acústica para a maioria das aplicações.",
-      "microlDetail": "A maior área aberta para uma absorção sonora máxima em espaços acusticamente exigentes.",
-      "openAreaLabel": "Área aberta",
-      "absorptionLabel": "Absorção",
-      "thinnerLabel": "Mais fino",
-      "veneerDrilled": "Folheado de qualidade A com furos perfurados com precisão"
+      "microlDesc": "Padrão de absorção máxima"
+    },
+    "kpi": {
+      "ariaLabel": "Números-chave",
+      "thickness": "espessura do painel, à medida",
+      "alphaW": "αw, absorção sonora ponderada",
+      "alphaWClass": "αw, classe de absorção {cls}",
+      "fire": "reação ao fogo, núcleo MDF ignífugo",
+      "densities": "densidades de perfuração, Ø 0,5 a 2 mm"
+    },
+    "buildUp": {
+      "alt": "Vista explodida das três camadas: folheado microperfurado, núcleo MDF ignífugo com câmaras acústicas, véu acústico",
+      "layer1": "Folheado microperfurado",
+      "layer1Desc": "Qualidade A, furos a partir de Ø 0,5 mm",
+      "layer2": "Núcleo MDF ignífugo",
+      "layer2Desc": "Com câmaras acústicas",
+      "layer3": "Véu acústico",
+      "layer3Desc": "Preto ou branco",
+      "behind": "Atrás do painel: caixa de ar, lã mineral opcional."
+    },
+    "veneers": {
+      "title": "Oito folheados de stock, qualquer folheado por encomenda",
+      "description": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. A madeira é um material natural: o veio e a cor variam de painel para painel, e as amostras no ecrã são apenas indicativas.",
+      "alt": "Folheado {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Escandinávia",
+        "northAmerica": "América do Norte"
+      },
+      "grain": {
+        "straightInterlocked": "Direito a entrelaçado",
+        "subtleFine": "Veio fino e subtil",
+        "fineStraight": "Veio fino e direito",
+        "cathedral": "Veio em catedral",
+        "pronounced": "Veio pronunciado",
+        "straightWavy": "Direito a ondulado",
+        "deepCathedral": "Veio em catedral profundo",
+        "richFlowing": "Veio rico e fluido"
+      },
+      "madeToOrderTitle": "Por encomenda",
+      "madeToOrderDesc": "Para além dos oito folheados de stock, fabricamos qualquer espécie, cor de velatura e acabamento.",
+      "finishTitle": "Acabamento",
+      "finishDesc": "Verniz curado por UV, do supermate ao alto brilho, natural ou pigmentado.",
+      "naturalTitle": "Um material natural",
+      "naturalDesc": "A madeira natural varia em cor e veio. Peça amostras antes de prescrever."
+    },
+    "ordering": {
+      "title": "Prazos e amostras",
+      "stockVeneers": "Folheados de stock",
+      "stockVeneersVal": "3–4 semanas",
+      "nonStock": "Fora de stock e à medida",
+      "nonStockVal": "6–8 semanas",
+      "madeToMeasure": "À medida",
+      "madeToMeasureVal": "Segundo os seus desenhos",
+      "supply": "Fornecimento",
+      "samplesVal": "Amostras de folheado gratuitas",
+      "sizesVal": "Até {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Bélgica"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "PAINÉIS DE MADEIRA ACÚSTICOS",
-      "title": "rWood Panel: painéis acústicos em folheado de madeira em 10 espécies",
-      "tagline": "A Elegância da Madeira Real. Pronto a Usar.",
-      "description": "Painéis MDF folheados premium, escovados, tingidos e lacados — sem necessidade de acabamento adicional. A beleza autêntica da madeira maciça sem compromissos.",
-      "usp1": "Folha de Madeira Real",
-      "usp2": "Pré-acabado e Pronto a Usar",
-      "usp3": "Programa de retoma gratuito",
+      "tag": "PAINEL DE MADEIRA FOLHEADO",
+      "title": "rWood Panel: painéis acústicos folheados em 12 folheados de madeira",
+      "tagline": "A elegância da madeira natural, pronta a usar.",
+      "description": "Painéis de MDF folheados lisos, acabados em fábrica, em doze folheados de madeira natural, na gama Nature de veio vivo ou na gama Gemini de tom uniforme. Verniz natural ou pigmentado, laminado HPL, película ou tinta; qualquer outro folheado, tinta ou acabamento por encomenda.",
+      "usp1": "Folheados com certificação FSC®",
+      "usp2": "Doze folheados, qualquer acabamento por encomenda",
+      "usp3": "Recolha gratuita no fim de vida",
       "ctaSecondary": "Ver Coleção",
-      "colorSelector": "Selecionar Folha"
-    },
-    "construction": {
-      "tag": "CONSTRUÇÃO",
-      "title": "Construído em Camadas",
-      "layer1": "Camada Superior de Folha",
-      "layer1Desc": "Folheado de madeira natural certificado FSC, acabamento de fábrica",
-      "layer2": "Núcleo MDF de Alta Densidade",
-      "layer2Desc": "Substrato técnico estável e resistente à humidade",
-      "layer3": "Camada de Folha de Equilíbrio",
-      "layer3Desc": "Previne empenamento para painéis perfeitamente planos"
-    },
-    "veneers": {
-      "tag": "COLEÇÃO DE FOLHAS",
-      "title": "10 folheados de madeira selecionados",
-      "description": "Desde carvalho europeu claro até nogueira americana intensa — cada espécie selecionada pelo caráter da veia, disponibilidade e certificação FSC."
+      "colorSelector": "Folheado",
+      "selectPrompt": "Selecione um folheado"
     },
     "finishes": {
-      "title": "Toque e proteção",
-      "description": "O acabamento certo realça o melhor de cada espécie de madeira. O nosso processo de acabamento em várias camadas oferece uma superfície tão agradável ao toque como durável — protegida contra riscos, humidade e desgaste diário.",
+      "title": "Acabamentos de superfície e opções",
+      "description": "Escolha a gama de folheado e o tratamento de superfície adequados ao projeto. As bordas são em madeira maciça sobrefolheada para juntas invisíveis em grandes superfícies.",
       "tag": "ACABAMENTOS",
-      "mattLacquerName": "Laca super matte",
-      "mattLacquerDesc": "Anti-impressões digitais, toque sedoso. Proteção UV de 6 camadas.",
-      "naturalOilName": "Óleo natural",
-      "naturalOilDesc": "Toque profundo e autêntico da madeira com proteção penetrante.",
-      "unfinishedName": "Em bruto",
-      "unfinishedDesc": "Pronto para acabamento personalizado no local pelo instalador.",
-      "adv1": "Resistente a riscos",
-      "adv2": "Resistente a derrames",
-      "adv3": "Anti-impressões digitais",
-      "adv4": "Manutenção fácil"
-    },
-    "advantages": {
-      "tag": "VANTAGENS",
-      "title": "Vantagens Chave",
-      "adv1Title": "Formatos de Painel",
-      "adv1": "Vários tamanhos padrão; dimensões personalizadas a pedido",
-      "adv2Title": "Possibilidades ilimitadas",
-      "adv2": "Use para revestimentos de parede, mobiliário, expositores de retalho e mais"
+      "nature": "Nature",
+      "natureDesc": "Veio vivo e com carácter",
+      "gemini": "Gemini",
+      "geminiDesc": "Tom uniforme e homogéneo",
+      "treatmentsTitle": "Tratamentos de superfície",
+      "treatments": {
+        "naturalLacquer": "Verniz natural",
+        "pigmented": "Pigmentado",
+        "hpl": "Laminado HPL",
+        "foil": "Película",
+        "paint": "Tinta"
+      },
+      "madeToOrder": "Qualquer outro folheado, tinta, pigmento e acabamento a pedido."
     },
     "applications": {
       "tag": "APLICAÇÕES",
@@ -2620,66 +2671,51 @@
       "badge2": "Devolução Circular",
       "badge3": "Fabricado na Polónia",
       "badge4": "EPD disponível",
-      "badge5": "Baixos COV",
-      "badge1Desc": "Toda a madeira de florestas geridas de forma responsável",
+      "badge1Desc": "Todos os folheados com certificação FSC®, de florestas geridas de forma responsável",
       "badge2Desc": "Devolução e reciclagem gratuitas do painel no fim de vida",
-      "description": "Cada rWood - Panel começa com madeira de origem responsável. Como parte do compromisso da Re-Sound com a economia circular, maximizamos o uso de cada tronco processando-o como folheado — obtendo até 40× mais área de superfície do que a madeira maciça da mesma árvore.",
+      "description": "Cada rWood Panel começa com folheado certificado FSC® de florestas geridas de forma responsável. No fim de vida, a Re-Sound recolhe os painéis gratuitamente.",
       "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
-      "badge4Desc": "Declaração ambiental de produto completa",
-      "badge5Desc": "Classificado E1, cumpre os padrões de emissão mais rigorosos",
-      "badge6": "Energia verde",
-      "badge6Desc": "Produção alimentada por fontes de energia renovável"
+      "badge4Desc": "Declaração ambiental de produto completa"
     },
     "specs": {
-      "tag": "ESPECIFICAÇÕES",
-      "title": "Especificações Técnicas",
+      "tag": "DADOS TÉCNICOS",
+      "title": "Painel, acabamentos e fogo",
       "compositionTitle": "Composição",
       "fireTitle": "Segurança contra incêndio",
       "certsTitle": "Certificações",
       "dimensionsTitle": "Dimensões",
-      "finishTitle": "Acabamento",
+      "finishTitle": "Folheados e acabamentos",
       "processingTitle": "Processamento",
       "dimPanelWidth": "Largura do painel",
       "dimPanelLength": "Comprimento do painel",
-      "dimThicknessStd": "Espessura (padrão)",
-      "dimThicknessSlim": "Espessura (fina)",
-      "dimWeight19": "Peso (19 mm)",
       "compTopLayer": "Camada superior",
-      "compTopLayerVal": "Folheado grau A, tingido e envernizado",
+      "compTopLayerVal": "Folheado de madeira natural de qualidade A, acabado em fábrica",
       "compCore": "Núcleo",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, standard / MR / FR",
       "compBackLayer": "Camada traseira",
       "compBackLayerVal": "Folheado de equilíbrio",
-      "compBonding": "Adesão",
-      "compBondingVal": "Tecnologia de prensa HPLT",
-      "finishLacquerType": "Tipo de laca",
-      "finishLacquerVal": "Acrilato-uretano com cura UV",
-      "finishLayers": "Número de camadas",
-      "finishGloss": "Nível de brilho",
-      "finishGlossVal": "Super matte (3-5 UB)",
-      "finishAntiFingerprint": "Anti-impressões digitais",
-      "finishScratch": "Resistência a riscos",
-      "fireStdMDF": "MDF padrão",
-      "fireFRMDF": "MDF retardador de fogo",
       "certWoodSourcing": "Proveniência da madeira",
       "certEnvironmental": "Ambiental",
-      "certFelt": "Feltro (se acústico)",
       "procSawing": "Serração",
       "procSawingVal": "Ferramentas padrão de marcenaria",
-      "procEdgeBanding": "Orlas",
-      "procEdgeBandingVal": "Orla de folheado a condizer disponível",
       "procCNC": "Maquinagem CNC",
-      "procEnvironment": "Ambiente",
-      "procEnvironmentVal": "Uso interior (áreas secas)",
       "procMoisture": "Resistente à humidade",
-      "procMoistureVal": "Núcleo MR disponível"
+      "procMoistureVal": "Núcleo MR disponível",
+      "finishRanges": "Gamas de folheado",
+      "finishRangesVal": "Nature: veio vivo e com carácter · Gemini: tom uniforme e homogéneo",
+      "finishTreatments": "Tratamentos de superfície",
+      "finishTreatmentsVal": "Verniz natural · pigmentado · laminado HPL · película · tinta",
+      "finishCoreColours": "Cores do núcleo",
+      "finishCoreColoursVal": "Castanha, verde ou preta",
+      "finishEdgesVal": "Madeira maciça sobrefolheada para juntas invisíveis",
+      "finishFeltVal": "Véu preto ou branco",
+      "finishMadeToOrder": "Por encomenda",
+      "finishMadeToOrderVal": "Qualquer outro folheado, tinta, pigmento e acabamento",
+      "certWoodSourcingVal": "Todos os folheados com certificação FSC®, de florestas geridas de forma responsável"
     },
     "related": {
       "tag": "PRODUTOS COMPLEMENTARES",
       "title": "Produtos Relacionados",
-      "groove": "rWood - Groove",
-      "edgebanding": "Fita de Canto Complementar",
-      "samples": "Amostras grátis",
       "description": "Alcance continuidade de design com produtos Re-Sound coordenados",
       "explore": "Explorar →",
       "orderSamples": "Encomendar amostras →",
@@ -2691,50 +2727,49 @@
     },
     "overview": {
       "tag": "VISÃO GERAL",
-      "title": "Madeira Natural, Acabamento Premium",
-      "description": "rWood - Panel traz o calor e o caráter da madeira maciça num formato pré-acabado e pronto a usar. Cada painel é fabricado com folha A-grade premium, colada a um núcleo MDF de alta densidade com tecnologia de prensagem avançada.",
-      "feature1": "Folha de madeira real A-grade sobre núcleo MDF de alta densidade",
-      "feature2": "Pré-acabado com 6 camadas de laca acrílica UV — sem tratamento adicional necessário",
-      "feature3": "10 espécies de folha disponíveis — carvalho, nogueira, bétula e mais",
-      "feature4": "FSC® certificado — madeira de florestas geridas de forma responsável",
-      "feature5": "Disponível em laca natural, óleo natural ou sem acabamento"
+      "title": "Natureza, refinada",
+      "description": "O rWood Panel traz o calor e o carácter da madeira natural para um formato pré-acabado e pronto a usar: um folheado de qualidade A sobre um núcleo de MDF, acabado em fábrica. Os mesmos doze folheados atravessam toda a gama rWood, pelo que painéis lisos, Groove, Micro e Perf combinam numa mesma parede.",
+      "feature1": "Doze folheados em stock: carvalho, nogueira, freixo, faia e bétula",
+      "feature2": "Duas gamas de folheado: Nature (veio vivo) e Gemini (tom uniforme)",
+      "feature3": "Núcleo de MDF em qualidade standard, hidrófuga ou ignífuga",
+      "feature4": "Verniz natural ou pigmentado, laminado HPL, película ou tinta",
+      "feature5": "Acabado em fábrica, pronto a instalar"
     },
     "anatomy": {
       "tag": "COMPOSIÇÃO",
-      "layer1": "Folha de Madeira Natural",
-      "layer1Desc": "Folheado de madeira real grau A, escovado, tingido e protegido com 6 camadas de laca acrilato uretano curada por UV. Acabamento super matte ao toque suave.",
-      "layer2": "Núcleo em MDF de alta densidade",
-      "layer2Desc": "MDF de 700 kg/m³ com certificação FSC®. Disponível nas qualidades standard, resistente à humidade (MR) e retardante de fogo (FR).",
-      "layer3": "Folha de Equilíbrio",
-      "layer3Desc": "O fundo de folheado a condizer garante estabilidade dimensional e previne empenamento. Opções com ou sem acabamento.",
-      "keyAdvTitle": "Vantagens Principais do Acabamento",
-      "description": "Cada camada cumpre um propósito — desde a superfície autêntica de madeira até ao núcleo técnico."
+      "layer1": "Face folheada",
+      "layer1Desc": "Folheado de madeira natural de qualidade A, um dos doze folheados em stock ou qualquer folheado por encomenda, acabado em fábrica.",
+      "layer2": "Núcleo de MDF",
+      "layer2Desc": "MDF standard, hidrófugo (MR) ou ignífugo (FR); cor do núcleo castanha, verde ou preta.",
+      "layer3": "Contrafolheado",
+      "layer3Desc": "Um folheado no verso mantém o painel plano e estável.",
+      "description": "Cada camada tem uma função, da superfície em madeira natural ao núcleo técnico.",
+      "title": "Folheado, núcleo, contrafolheado"
     },
     "collection": {
-      "tag": "COLEÇÃO",
-      "title": "10 folheados de madeira selecionados",
-      "description": "Desde a serena bétula escandinava ao dramático nogueira americana — cada folheado é cuidadosamente selecionado, escovado e acabado para realçar o caráter da madeira.",
+      "tag": "FOLHEADOS",
+      "title": "Doze folheados de madeira natural",
+      "description": "Seis carvalhos do claro ao quase preto e seis espécies premium: nogueira, freixo, faia e bétula. Disponíveis em toda a gama rWood, e qualquer outro folheado, tinta ou acabamento por encomenda.",
       "filterAll": "Todos os folheados",
-      "customNote": "Espécies de folheado e cores de coloração personalizadas disponíveis em encomendas de projeto de 50+ painéis.",
+      "customNote": "Qualquer outro folheado, tinta, pigmento e acabamento a pedido. As amostras são indicativas: os folheados naturais variam em veio, cor e figura, e os tons mudam com a iluminação e o verniz. Confirme sempre com uma amostra física.",
       "categories": {
-        "lightNaturals": "Tons claros",
-        "warmNaturals": "Tons quentes",
-        "deepTones": "Tons profundos"
+        "oak": "Folheados de carvalho",
+        "premium": "Espécies premium"
       },
-      "origins": {
-        "europe": "Europa",
-        "scandinavia": "Escandinávia",
-        "northAmerica": "América do Norte"
-      },
-      "grains": {
-        "straightToInterlocked": "De reta a entrelaçada",
-        "subtleFineGrain": "Veio fino e subtil",
-        "fineStraightGrain": "Veio reto e fino",
-        "cathedralGrain": "Veio em catedral",
-        "pronouncedGrain": "Veio pronunciado",
-        "straightToWavy": "De reto a ondulado",
-        "deepCathedralGrain": "Veio em catedral profundo",
-        "richFlowingGrain": "Veio rico e fluído"
+      "filterLabel": "Filtrar folheados",
+      "items": {
+        "strawOak": "Carvalho claro, quente e neutro",
+        "silkOak": "Tom greige suave",
+        "honeyOak": "Carvalho dourado e quente",
+        "umberOak": "Castanho-acinzentado fumado",
+        "smokedOak": "Castanho profundo e quente",
+        "cocoaOak": "Espresso quase preto",
+        "walnut": "Castanho rico e figurado",
+        "tobaccoWalnut": "Castanho médio quente",
+        "whiteAsh": "Veio claro e linear",
+        "whiteBeech": "Neutro claro e uniforme",
+        "birchSliced": "Veio fino e claro",
+        "birchRotary": "Figura larga e suave"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Produtos e Acessórios Complementares",
       "description": "Alcance continuidade de design com produtos Re-Sound coordenados.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Painéis acústicos com ranhuras",
-      "item2Title": "Canto Folheado a Condizer",
-      "item2Desc": "Canto de madeira a condizer",
+      "item1Desc": "Tábuas ranhuradas nos mesmos folheados para paredes e tetos.",
+      "item2Title": "Bordas sobrefolheadas",
+      "item2Desc": "Bordas em madeira maciça, sobrefolheadas para juntas invisíveis em grandes superfícies.",
       "item3Title": "Amostras Gratuitas",
       "item3Desc": "Solicite amostras de qualquer combinação de folheado e acabamento."
     },
     "cta": {
       "title": "Pronto para Elevar o seu Projeto?",
       "description": "Obtenha um orçamento personalizado, solicite amostras físicas ou fale com a nossa equipa de especificações sobre o seu próximo projeto.",
-      "circularNote": "Devolução Circular"
+      "circularNote": "Amostras de folheado gratuitas · Recolha gratuita no fim de vida"
     },
     "downloads": {
       "productDataSheet": "Ficha técnica do produto"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "De onde vem o folheado certificado FSC?",
-          "answer": "O folheado provém de florestas europeias certificadas FSC (sobretudo carvalho e nogueira). O número do certificado de cadeia de custódia é fornecido por entrega mediante pedido."
+          "answer": "Todos os folheados rWood têm certificação FSC® e provêm de florestas geridas de forma responsável. O certificado de cadeia de custódia está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega padrão?",
-          "answer": "Os folheados em stock são expedidos em 3–4 semanas; espécies fora de stock e acabamentos personalizados exigem 6–8 semanas. A capacidade de produção é reservada na confirmação da encomenda."
+          "answer": "O prazo de entrega depende do folheado e do acabamento e é confirmado na encomenda. Há amostras de folheado gratuitas antes de especificar; preços e encomenda mínima a pedido."
         },
         "installMethod": {
           "question": "Como são instalados os painéis rWood?",
-          "answer": "Dois métodos são suportados: um sistema de clip oculto para instalação rápida e desmontagem fácil, ou colagem direta para instalações permanentes. Ambos estão detalhados no manual de instalação."
+          "answer": "O rWood Panel é um painel de MDF folheado liso e trabalha-se como tal: serrado e maquinado em CNC com ferramentas de carpintaria standard, depois fixado ao suporte ou integrado em mobiliário. O guia de instalação está no bloco de downloads desta página."
         },
         "substrateCleanup": {
           "question": "O que acontece aos painéis no fim de vida?",
-          "answer": "A Re-Sound recolhe os painéis gratuitamente em BE/NL/FR/DE/LU. O folheado é separado do substrato de feltro reciclado; ambos os fluxos regressam à nossa cadeia de fornecimento em vez de irem para aterro."
+          "answer": "A Re-Sound recolhe gratuitamente os painéis no fim de vida na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "Pormenor do painel rWood - Panel em MDF folheado com o detalhe do veio da madeira",
       "closeUpOfLacqueredVeneerSurface": "Pormenor da superfície em folheado lacado",
-      "sustainablyManagedForest": "Floresta gerida de forma sustentável"
+      "sustainablyManagedForest": "Floresta gerida de forma sustentável",
+      "hero": "Painel de madeira folheado rWood Panel",
+      "heroIn": "rWood Panel em {veneer}",
+      "veneerSwatch": "Amostra de folheado {name}"
+    },
+    "kpi": {
+      "veneers": "folheados de madeira natural",
+      "ranges": "gamas de folheado: Nature e Gemini",
+      "fsc": "folheados certificados",
+      "anyValue": "Qualquer",
+      "anyLabel": "folheado, tinta e acabamento por encomenda",
+      "ariaLabel": "Números-chave"
+    },
+    "ordering": {
+      "title": "Prazo de entrega e amostras",
+      "orderCaption": "Encomenda",
+      "supplyCaption": "Fornecimento",
+      "samplesVal": "Amostras de folheado gratuitas",
+      "samplesQuotesDesc": "Peça amostras de folheado gratuitas ou envie-nos os seus planos para um orçamento."
     }
   },
   "rpetFlexGroovePage": {

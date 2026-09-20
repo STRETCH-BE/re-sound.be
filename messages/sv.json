@@ -19,13 +19,13 @@
     "divideTitle": "Divide – fristående akustikskärmar | Re-Sound",
     "divideDescription": "Fristående akustikskärmar med magnetisk modulär koppling: dubbelsidig absorption, ingen installation, återvunnen textil. Tillverkade i Belgien.",
     "rwoodGrooveTitle": "rWood Groove – ribbade träakustikpaneler, ek & valnöt | Re-Sound",
-    "rwoodGrooveDescription": "Ribbade träakustikpaneler med FSC-certifierat ek- och valnötsfaner på kärna av återvunnen filt. Klass A-absorption, 4 lamellvarianter, 5 ytbehandlingar.",
+    "rwoodGrooveDescription": "Spårade akustikbrädor i trä: FSC®-certifierat ek- eller valnötsfaner på MDF-kärna med 3 mm filt av återvunnen PET. αw 0,90, klass A, fyra lamellmönster, fem faner, 10 och 19 mm.",
     "rwoodPerfTitle": "rWood Perf – perforerade träakustikpaneler | Re-Sound",
     "rwoodPerfDescription": "Perforerade träakustikpaneler med FSC-certifierat faner: fyra perforeringsmönster för bredbandig absorption, 8 ytbehandlingar, brandhämmande kärna.",
     "rwoodMicroTitle": "rWood Micro – mikroperforerade träakustikpaneler | Re-Sound",
-    "rwoodMicroDescription": "Mikroperforerade träakustikpaneler (0,5 mm) med FSC-certifierat faner: nästan osynligt mönster, brandklass {fireClass}, bakbelysning som tillval.",
-    "rwoodVeneerTitle": "rWood Panel – akustikpaneler med träfaner, 10 träslag | Re-Sound",
-    "rwoodVeneerDescription": "Släta akustikpaneler med träfaner i 10 träslag: möbelkvalitet, FSC-certifierade, EPD tillgänglig. Borstade, betsade och lackerade, klara att montera.",
+    "rwoodMicroDescription": "Mikroperforerade träakustikpaneler (från 0,5 mm) med FSC-certifierat faner: nästan osynligt mönster, brandklass {fireClass}, måttbeställda upp till 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel – fanerade akustikpaneler, 12 träfaner | Re-Sound",
+    "rwoodVeneerDescription": "Släta fanerade akustikpaneler i 12 faner av äkta trä, Nature- eller Gemini-serie: FSC®-certifierade, naturlack eller pigmenterad, HPL, folie eller färg. Fabriksbehandlade, valfritt faner på beställning.",
     "rpetGrooveTitle": "rPET Groove – ribbade PET-akustikpaneler, 12 färger | Re-Sound",
     "rpetGrooveDescription": "Ribbade PET-akustikpaneler av återvunna flaskor: 12 färger, 3 tjocklekar (12/24/36 mm), NRC upp till 0,90, brandklass B-s1,d0. Tillverkade i Polen.",
     "rpetPanelTitle": "rPET Panel – akustikpanel av återvunnen PET, 16 färger | Re-Sound",
@@ -1939,121 +1939,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "AKUSTIKPANELER I TRÄ",
+      "tag": "SPÅRAD AKUSTIKPANEL I TRÄ",
       "title": "rWood Groove: spårade akustikpaneler i trä, i ek och valnöt",
-      "tagline": "Naturlig skönhet, perfekt akustik",
-      "description": "Ge alla rum naturlig värme och sofistikerad stil med akustikpaneler rWood - Groove. Förstklassigt ek- och valnötsfaner i kombination med ljudabsorberande filtbaksida skapar harmoni mellan estetik och akustik.",
-      "usp1": "FSC® certifierat trä",
-      "usp2": "Klass A absorption",
-      "usp3": "Kostnadsfritt återtagningsprogram"
+      "tagline": "Naturlig skönhet, perfekt akustik.",
+      "description": "Ek- eller valnötsfaner i A-kvalitet på en MDF-kärna, precisionsspårad till vertikala lameller på en 3 mm filt av återvunnen PET. De öppna spåren leder ljudet in i filten; brädorna fogas med dold not och fjäder. Brädor 300 mm breda, 2 400 eller 2 780 mm långa, i 10 och 19 mm, för väggar och tak.",
+      "usp1": "FSC®-certifierat faner",
+      "usp2": "Absorptionsklass A",
+      "usp3": "Kostnadsfri återtagning vid slutet av livslängden"
     },
     "overview": {
-      "tag": "HANTVERK",
-      "title": "Där naturen möter design",
-      "subtitle": "Premiumytor",
-      "description": "rWood - Groove-paneler förvandlar alla rum till en sofistikerad akustisk miljö. Kombinationen av precisionsfrästa spår och förstklassigt träfaner skapar en yta som är både visuellt slående och akustiskt effektiv.",
-      "feature1": "Förstklassigt ek- och valnötsfaner av A-kvalitet",
-      "feature2": "Integrerad akustisk filtbaksida",
-      "feature3": "Sömlös skarv mellan panelerna",
-      "feature4": "Lämplig för väggar och tak",
-      "description2": "rWood - Groove-paneler förvandlar alla rum till en plats med naturlig skönhet och akustisk komfort. Varje panel har förstklassigt ek- eller valnötsfaner av A-kvalitet, precisionsspårat för att skapa den karakteristiska linjära estetiken samtidigt som ljudabsorptionen maximeras genom den integrerade filtbaksidan."
-    },
-    "oakCollection": {
-      "title": "Ekkollektion",
-      "description": "Naturligt ekfaner i flera betsalternativ, från rå ljus ek till djupa rökta toner."
+      "tag": "ÖVERSIKT",
+      "title": "Spårad ek eller valnöt på filt av återvunnen PET",
+      "feature1": "Ek- eller valnötsfaner i A-kvalitet",
+      "feature2": "3 mm filtbaksida av återvunnen PET, svart eller grå",
+      "feature3": "Dold not-och-fjäder-fog",
+      "feature4": "För väggar och tak, torra inomhusmiljöer",
+      "description2": "rWood Groove kombinerar ek- eller valnötsfaner i A-kvalitet med en MDF-kärna som precisionsspårats till vertikala lameller. Den 3 mm filten av återvunnen PET bakom lamellerna tar upp ljudet som kommer in genom de öppna spåren, vilket minskar efterklangen och förbättrar taluppfattbarheten. Fyra lamellmönster, fem lagerfaner, och valfritt faner och valfri ytbehandling på beställning."
     },
     "feltBacking": {
-      "title": "Filtbaksidesalternativ",
-      "description": "Naturgrå, svart eller färgad akustikfilt som syns genom spåren."
+      "title": "Filtfärg",
+      "description": "3 mm filt av återvunnen PET bakom lamellerna, synlig genom spåren.",
+      "black": "Svart",
+      "grey": "Grå"
     },
     "acoustics": {
-      "tag": "PRESTANDA",
-      "title": "Överlägsen ljudabsorption",
-      "benefit1Title": "Reducerad efterklang",
-      "benefit1": "Dämpa eko och förbättra taluppfattbarheten i alla rum",
-      "benefit2Title": "Ökad komfort",
-      "benefit2": "Skapa lugnare och mer harmoniska miljöer",
-      "benefit3Title": "Testad prestanda",
-      "benefit3": "Oberoende verifierade akustiska data",
-      "description": "Den unika spårdesignen i kombination med högkvalitativ akustikfilt ger exceptionell ljudabsorption. Minska eko och efterklang och skapa lugna, produktiva miljöer.",
-      "ratingLabel": "Absorption",
-      "description2": "Den unika spårdesignen i kombination med högkvalitativ akustikfilt ger exceptionell ljudabsorption. Minska eko, eliminera buller och skapa rum som är lika behagliga för örat som för ögat.",
-      "diagramTitle": "Panelsektion",
-      "soundAbsorbed": "Ljud absorberat",
-      "testStandard": "Teststandard"
+      "tag": "AKUSTIK",
+      "title": "Ljudabsorption",
+      "description2": "De öppna spåren leder ljudet in i filten av återvunnen PET bakom lamellerna, vilket minskar efterklangen och förbättrar taluppfattbarheten.",
+      "tableTitle": "Ljudabsorption",
+      "behindTitle": "Bakom brädan",
+      "behindDesc": "Monterad på läkt kan hålrummet ta emot en extra absorbent: akustikfilt, en rPET-panel eller mineralull.",
+      "note": "αw och absorptionsklass enligt EN ISO 11654. Oktavbandsvärden följer med den nya provserien."
     },
     "installation": {
-      "tag": "ENKEL INSTALLATION",
-      "title": "Sömlös installation",
-      "step1Title": "Förbered ytan",
-      "step1Desc": "Montera reglar eller applicera lim på en ren, torr yta",
-      "step2Title": "Positionera första panelen",
-      "step2Desc": "Börja från ett hörn och kontrollera att panelen ligger i våg",
-      "step3Title": "Anslut paneler",
-      "step3Desc": "Skjut in fjädern i noten för en sömlös skarv",
-      "step4Title": "Slutför och avsluta",
-      "step4Desc": "Avsluta med ändlister för ett professionellt resultat",
-      "description": "rWood - Groove-paneler har en innovativ not- och fjäderskarv för snabb och enkel montering.",
-      "description2": "rWood - Groove-paneler har ett innovativt not- och fjädersystem som ger osynliga skarvar och en sammanhängande yta. Oavsett om du är professionell montör eller en kunnig hemmafixare gör vårt system monteringen enkel."
+      "tag": "MONTERING",
+      "title": "Not och fjäder, på läkt eller limmad",
+      "step1Title": "Underlag",
+      "step1Desc": "Läkt eller lim på en ren, torr och plan yta.",
+      "step2Title": "Första brädan",
+      "step2Desc": "Börja från ett hörn och kontrollera att det är i våg.",
+      "step3Title": "Fogning",
+      "step3Desc": "Skjut in fjädern i noten för en osynlig skarv.",
+      "step4Title": "Avslutning",
+      "step4Desc": "Avsluta kanterna med ändprofiler.",
+      "description2": "Brädorna monteras på läkt eller limmas mot underlaget och fogas med dold not och fjäder, så att skarvarna försvinner i spårmönstret."
     },
     "sustainability": {
       "tag": "HÅLLBARHET",
-      "title": "Ansvarsfullt inköpt",
-      "badge1": "FSC® certifierad",
-      "badge1Desc": "Trä från ansvarsfullt brukade skogar",
-      "badge2": "Återvunnen filt",
-      "badge2Desc": "Akustisk baksida av återvunnet material",
+      "title": "Ansvarsfullt anskaffat",
+      "badge1": "FSC®-certifierat",
+      "badge1Desc": "Träet är FSC®-certifierat, certifikat C191539",
+      "badge2": "Filt av återvunnen PET",
+      "badge2Desc": "3 mm filtbaksida av återvunnen PET",
       "badge3": "Tillverkad i Polen",
       "badge3Desc": "Tillverkad i vår egen fabrik i Częstochowa (Polen)",
-      "badge4": "Kostnadsfritt återtag",
+      "badge4": "Kostnadsfri återtagning",
       "badge4Desc": "Panelerna returneras kostnadsfritt till oss vid livslängdens slut",
-      "description": "Varje rWood - Groove-panel tillverkas med hållbarhet i fokus. Vårt FSC®-certifierade trä kommer från ansvarsfullt brukade skogar och den akustiska baksidan består av återvunnet material.",
-      "description2": "Varje rWood - Groove-panel tillverkas med hållbarhet i fokus. Vår FSC®-certifiering garanterar att träet kommer från ansvarsfullt brukade skogar som ger miljömässiga, sociala och ekonomiska fördelar."
+      "description2": "FSC®-certifierat trä, en baksida av återvunnen PET och kostnadsfri återtagning vid slutet av livslängden.",
+      "badge2DescCert": "3 mm filtbaksida av återvunnen PET, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Miljövarudeklaration enligt ISO 14025 och EN 15804"
     },
     "specs": {
-      "tag": "TEKNISKT",
-      "title": "Specifikationer",
-      "acousticsTitle": "Akustisk prestanda",
-      "fireTitle": "Brandsäkerhet",
-      "certsTitle": "Certifieringar",
-      "applicationsTitle": "Användningar",
-      "dimensionsTitle": "Dimensioner",
-      "materialsTitle": "Material",
-      "dimPanelWidth": "Panelbredd",
-      "dimPanelLength": "Panellängd",
-      "dimThickness": "Tjocklek",
-      "dimGrooveDepth": "Spårdjup",
-      "dimGrooveWidth": "Spårbredd",
-      "matVeneer": "Faner",
-      "matVeneerVal": "A-klass ek / valnöt",
-      "matCore": "Kärna",
-      "matCoreVal": "MDF (standard / fuktbeständig / brandhämmande)",
-      "matBacking": "Baksida",
-      "matBackingVal": "Återvunnen PET (3 mm)",
-      "matFinish": "Yta",
-      "finishVal": "Olja / lack",
-      "stdPanels": "Standardpaneler",
-      "fireMdfVal": "Brandhämmande MDF",
-      "woodSourcing": "Träkällor",
-      "feltCert": "Filtcertifiering",
-      "envLabel": "Miljö",
-      "vocLabel": "VOC-emissioner",
-      "vocVal": "E1 / Låg emission",
-      "appInstall": "Montering",
-      "appWalls": "Väggar och tak",
-      "appEnv": "Miljö",
-      "appEnvVal": "Inomhus (torra områden)",
-      "appMoist": "Fuktresistent",
-      "appMoistVal": "Tillgänglig för fuktiga områden",
-      "appConn": "Skarv",
-      "appConnVal": "Spont och not"
+      "tag": "TEKNISKA DATA",
+      "title": "Bräda, brand och emissioner",
+      "acousticsTitle": "Ljudabsorption",
+      "fireTitle": "Brand (EN 13501-1) och emissioner",
+      "dimPanelWidth": "Bredd",
+      "dimPanelLength": "Längd",
+      "matCoreVal": "Standard-, MR- eller FR-MDF",
+      "matFinish": "Ytbehandling",
+      "finishVal": "Inträngande olja eller lack",
+      "plankTitle": "Bräda",
+      "dimGroove": "Spår",
+      "dimGrooveVal": "15 mm brett, 7 · 15 mm djupt",
+      "feltVal": "Återvunnen PET, 3 mm, svart eller grå",
+      "connVal": "Dold not och fjäder",
+      "weightPlank": "Vikt per bräda",
+      "weightPlankVal": "ca 6,4–8,3 kg",
+      "tolerances": "Toleranser",
+      "tolerancesVal": "Tjocklek ± 0,2 mm, vikt ± 10 %",
+      "octaveBands": "Oktavbandsvärden",
+      "octaveBandsVal": "Följer med den nya provserien",
+      "fireStdCore": "Standard MDF-kärna",
+      "fireFrCore": "FR MDF-kärna",
+      "fireFelt": "Filtbaksida",
+      "fscVal": "FSC®-certifierat, C191539",
+      "epdVal": "EPD enligt ISO 14025 · EN 15804",
+      "finishTitle": "Ytbehandling",
+      "oakOilColours": "Oljefärger ek",
+      "oakOilColoursVal": "Natur, Vit, Klar, Brun, Mörkbrun, Svart",
+      "walnutFinish": "Valnöt",
+      "walnutFinishVal": "Natur, oljad",
+      "feltColours": "Filtfärger",
+      "feltColoursVal": "Svart eller grå",
+      "optionsTitle": "Alternativ",
+      "surfaceVal": "Oljad eller målad, obehandlad på begäran",
+      "madeToOrder": "På beställning",
+      "madeToOrderVal": "Valfritt faner och valfri ytbehandling",
+      "accessories": "Tillbehör",
+      "accessoriesVal": "Ändprofiler, hörnprofiler, läkt, bättringskit"
     },
     "accessories": {
-      "tag": "FULLBORDA STILEN",
+      "tag": "TILLBEHÖR",
       "title": "Tillbehör",
-      "endMouldings": "Slutbeslag",
-      "cornerProfiles": "Hörnprofiler",
-      "description": "Professionell finish för ett perfekt resultat",
+      "description": "Ändprofiler, hörnprofiler, läkt och ett bättringskit.",
       "item1Title": "Slutbeslag",
       "item1Desc": "Rena kanter där panelerna möter andra ytor",
       "item2Title": "Hörnprofiler",
@@ -2068,57 +2058,50 @@
       "title": "Projekt och Installationer"
     },
     "patterns": {
-      "tag": "DESIGNALTERNATIV",
-      "title": "Premiumytor",
-      "description": "Fyra olika spårmönster som passar alla arkitektoniska visioner. Från klassisk ribbpanel till modernt linjär – varje mönster förvandlar väggen till en dynamisk yta.",
-      "description2": "Fyra olika spårmönster som passar alla arkitektoniska visioner. Från klassiskt balanserade proportioner till djärva breda ribbor – hitta det perfekta uttrycket för ditt rum."
+      "tag": "MÖNSTER",
+      "title": "Fyra lamellmönster",
+      "description2": "Fyra lamellmönster på samma 300 mm bräda, från den klassiska Original med sex lameller till den breda 3-Lamella. Ritningarna är skalenliga: lamellbredder och 15 mm spår som på brädan.",
+      "drawingAlt": "Mönster {name}, {dims}, skalenligt på en 300 mm bräda",
+      "lamellaCount": "{count} lameller",
+      "note": "Brädbredd 300 mm, spårbredd 15 mm. Standardmått 19 × 300 × 2 400 eller 2 780 mm. Vikt per bräda ca 6,4–8,3 kg. Toleranser: tjocklek ± 0,2 mm, vikt ± 10 %."
     },
     "materials": {
       "tag": "MATERIAL",
-      "oilFinishesTitle": "Oljefinish",
-      "oilFinishesDesc": "Oljebehandling i Natur, Vit, Klar, Brun, Mörkbrun och Svart. Varje olja tränger djupt in i träet och ger ett varaktigt, autentiskt skydd.",
+      "oilFinishesTitle": "Ek: inträngande olja eller lack",
+      "oilFinishesDesc": "Ytbehandling: inträngande olja eller lack. Oljefärger för ek: Natur, Vit, Klar, Brun, Mörkbrun och Svart.",
       "walnutTitle": "Valnöt",
-      "walnutDesc": "Rika, varma toner med karakteristisk ådring. Det exklusiva valet för påkostade interiörer.",
-      "description": "Varje rWood - Groove-panel tillverkas med faner av A-kvalitet, vilket ger en jämn ådring och färg. Den oljebehandlade ytan är klar att montera utan ytterligare behandling.",
-      "colorSelector": "Välj träyta",
-      "layer1Name": "Ek / valnötsfanér",
-      "layer1Desc": "Premium A-klass naturträ",
-      "layer2Name": "MDF-kärna med spår",
-      "layer2Desc": "Ljudingångskanaler",
-      "layer3Name": "Akustisk filtbaksida",
-      "layer3Desc": "Återvunnen PET, 3 mm tjock",
-      "waveLabel": "Ljudvågor absorberas",
-      "certNote": "Oberoende testad och certifierad enligt ISO 11654",
-      "description2": "Varje rWood - Groove-panel tillverkas med faner av A-kvalitet, vilket ger en jämn ådring och överlägsen kvalitet. Välj bland vårt sortiment av oljade och målade ytbehandlingar för att perfekt komplettera din inredning."
+      "walnutDesc": "Natur, oljad. Djup, ådrad brun (Walnut) eller varm mellanbrun (Tobacco Walnut).",
+      "colorSelector": "Faner",
+      "selectPrompt": "Välj ett faner"
     },
     "downloads": {
       "installationGuide": "Installationsguide",
       "colorChart": "Färg- och ytguide"
     },
     "cta2": {
-      "freeNote": "Gratis prover • FSC®-certifierad"
+      "freeNote": "Kostnadsfria fanerprover · FSC®-certifierat faner"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Var kommer den FSC-certifierade fanéret från?",
-          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+          "answer": "Fanéret är FSC®-certifierat: chain-of-custody-certifikat C191539. Alla tolv rWood-faner kommer från ansvarsfullt brukade skogar; certifikatet tillhandahålls på begäran."
         },
         "fireRating": {
           "question": "Vad är brandklassificeringen?",
-          "answer": "Med den brandhämmande (FR) MDF-kärnan är rWood-panelerna klassade B-s1,d0 enligt EN 13501-1 — den kärna vi föreskriver för utrymningsvägar och offentliga byggnader. Brandcertifikatet finns i nedladdningsblocket på den här sidan."
+          "answer": "Det beror på kärnan. Med den brandhämmande (FR) MDF-kärnan är rWood Groove klassad B-s1,d0 enligt EN 13501-1; på en standard MDF-kärna är klassningen D-s2,d2. Filtbaksidan är B-s1,d0. Föreskriv FR-kärnan för utrymningsvägar och offentliga byggnader."
         },
         "leadTime": {
           "question": "Vad är den normala leveranstiden?",
-          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+          "answer": "Leveranstiden beror på lagret och bekräftas vid beställning. Kostnadsfria fanerprover finns innan du föreskriver; priser och minsta order på begäran."
         },
         "installMethod": {
           "question": "Hur installeras rWood-paneler?",
-          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+          "answer": "rWood Groove monteras på läkt eller limmas mot ett rent, torrt och plant underlag. Börja från ett hörn, skjut in fjädern på varje bräda i noten på den föregående för en osynlig skarv och avsluta kanterna med ändprofiler."
         },
         "substrateCleanup": {
           "question": "Vad händer med panelerna när de tjänat ut?",
-          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+          "answer": "Re-Sound tar kostnadsfritt tillbaka brädorna vid slutet av livslängden i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
         }
       }
     },
@@ -2126,139 +2109,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove akustikpanel i en modern interiör",
       "woodFinishSamples": "Prover på träfinish",
       "panelInstallationProcess": "Montering av panel",
-      "sustainableForestry": "Hållbart skogsbruk"
+      "sustainableForestry": "Hållbart skogsbruk",
+      "hero": "rWood Groove spårade akustikbrädor i trä",
+      "heroIn": "rWood Groove spårade akustikbrädor i trä i {finish}",
+      "veneerSwatch": "Fanerprov {name}"
     },
     "options": {
       "originalDesc": "Klassisk design med 6 lameller",
       "mixedDesc": "Dynamiska blandade bredder",
       "4lamellaDesc": "Kraftfulla breda ribbor",
       "3lamellaDesc": "Breda paneler som gör intryck"
+    },
+    "kpi": {
+      "thickness": "mm tjocklek",
+      "alphaWClass": "αw, absorptionsklass {cls}",
+      "alphaW": "αw, vägd ljudabsorption",
+      "fire": "brandreaktion, FR MDF-kärna",
+      "patterns": "lamellmönster på 300 mm brädor",
+      "ariaLabel": "Nyckeltal"
+    },
+    "buildUp": {
+      "tag": "UPPBYGGNAD",
+      "title": "Tre skikt, en bräda",
+      "layer1": "Fanersida",
+      "layer1Desc": "Ek eller valnöt i A-kvalitet",
+      "layer2": "MDF-lameller",
+      "layer2Desc": "Standard-, MR- eller FR-kärna",
+      "layer3": "Filt av återvunnen PET",
+      "layer3Desc": "3 mm, svart eller grå",
+      "fixing": "Monteras på läkt eller limmas mot underlaget."
+    },
+    "veneers": {
+      "tag": "FANER OCH YTBEHANDLINGAR",
+      "title": "Ek och valnöt, valfritt faner på beställning",
+      "description": "Fem lagerfaner, oljade eller lackerade. Välj ett faner för att se det på brädan.",
+      "silkOak": "Mjuk greige ton",
+      "strawOak": "Ljus, varmt neutral ek",
+      "umberOak": "Rökt gråbrun",
+      "walnut": "Djup, ådrad brun",
+      "tobaccoWalnut": "Varm mellanbrun",
+      "guideNote": "Alla tolv rWood-faner visas i rWood färg- och ytbehandlingsguiden. Äkta trä varierar i färg och ådring: be om prover innan du föreskriver."
+    },
+    "ordering": {
+      "title": "Leveranstid och prover",
+      "orderCaption": "Beställning",
+      "supplyCaption": "Leverans",
+      "leadTimeVal": "Beroende på lager, bekräftas vid beställning",
+      "samplesVal": "Kostnadsfria fanerprover",
+      "samplesQuotesDesc": "Beställ kostnadsfria fanerprover eller skicka oss dina ritningar för en offert."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PERFORERADE AKUSTISKA TRÄPANELER",
+      "tag": "PERFORERAD TRÄAKUSTIKPANEL",
       "title": "rWood Perf: perforerade akustikpaneler i trä",
-      "tagline": "Precisionsperforeringar, maximal absorption",
-      "description": "Högpresterande borrade akustikpaneler som förenar träets naturliga skönhet med enastående ljudabsorption. En kärna av brandhämmande MDF (Medium Density Fiberboard) och överfanerade kanter ger högsta nivå av brandsäkerhet och akustisk kontroll.",
+      "tagline": "Precisa perforeringar, maximal absorption.",
+      "description": "Runda perforeringar borrade genom den fanerade, brandhämmande MDF-panelen släpper in ljudet i akustikfleecen och absorbenten bakom. Fyra mönster, från ett diskret 5 mm-hål till ett dubbelt 8 mm-mönster med 24 % öppen yta.",
       "usp1": "Runda perforeringar",
       "usp2": "Brandklass {fireClass}",
-      "usp3": "αw {alphaW} per mönster",
-      "description2": "Högpresterande borrade akustikpaneler som förenar träets naturliga skönhet med enastående ljudabsorption. En kärna av brandhämmande MDF (Medium Density Fiberboard) och överfanerade kanter ger högsta nivå av brandsäkerhet och akustisk kontroll för krävande offentliga miljöer."
+      "usp3": "αw {alphaW} beroende på mönster",
+      "description2": "Måttbeställd för väggar och tak, upp till 3 050 × 1 220 mm, i 10 och 19 mm. Åtta lagerfaner, alla faner och ytbehandlingar på beställning."
     },
     "patterns": {
-      "tag": "PERFORATIONSMÖNSTER",
-      "title": "Välj ditt mönster",
-      "description": "Fyra borrade perforeringsmönster med kalibrerade akustiska egenskaper. Från maximal öppen yta för högsta absorption till diskreta mikroperforeringar för en ren träestetik.",
-      "coreMatchTitle": "Matcha kärnan till ditt faner för att få perforeringarna att försvinna—eller gör dem till ett designelement.",
+      "tag": "PERFORERING",
+      "title": "Fyra perforeringsmönster",
+      "description": "Hålstorlek och öppen yta per mönster. Ju större öppen yta, desto högre absorption.",
       "coreColorTitle": "Kärnfärg",
-      "coreMatchDesc": "Matcha kärnan med fanret så att perforeringarna smälter in, eller välj en kontrasterande kärna för ett tydligt designuttryck.",
-      "description3": "Fyra borrade perforeringsmönster med kalibrerade akustiska egenskaper. Från maximal öppen yta för akustiskt krävande rum till mer diskreta mönster som prioriterar visuell finess.",
-      "coreMatchDesc2": "Matcha kärnan med fanret så att perforeringarna smälter in, eller välj en kontrasterande kärna för en dekorativ effekt."
-    },
-    "coreColor": {
-      "title": "Kärnfärg",
-      "description": "Svart eller naturfärgad akustisk filt synlig genom perforeringarna—subtilt men kraftfullt."
+      "coreMatchDesc2": "En ljus eller mörk brandhämmande MDF-kärna, synlig genom hålen: matcha den mot faneret så att perforeringarna smälter in, eller välj kontrast för en grafisk effekt.",
+      "spec": "Ø {d} mm · {pct} % öppen yta",
+      "specDouble": "2 × Ø {d} mm · {pct} % öppen yta",
+      "drawingNote": "Ritningar ungefär 1:2, hålstorlek och öppen yta enligt uppgift per mönster.",
+      "coreLight": "Ljus kärna",
+      "coreDark": "Mörk kärna"
     },
     "surfaces": {
-      "tag": "YTOR",
-      "title": "Premium träytor",
-      "natureVeneers": "Nature-fanér",
-      "natureDesc": "Livfulla variationer och det karakteristiska uttryck som förknippas med varje träslag.",
-      "geminiVeneers": "Gemini-fanér",
-      "geminiDesc": "Jämn färgton och struktur för ett mer harmoniskt, enhetligt utseende.",
-      "finishes": "Ytfinish",
-      "description": "Varje rWood - Perf-panel tillverkas med överfanerade kanter – en traditionell hantverksteknik som ger helt sömlösa skarvar och eliminerar synliga panelgränser.",
-      "finish1": "Naturlig lack",
-      "finish2": "Pigmenterad",
-      "finish3": "HPL-laminat",
-      "colorSelector": "Välj träfanér",
-      "description3": "Varje rWood - Perf-panel tillverkas med överfanerade kanter – en traditionell tillverkningsteknik där en massiv träkantlist integreras runt panelen innan fanering. Det ger varje panel ett utseende av helt massivt trä, med sömlösa skarvar över stora ytor."
+      "colorSelector": "Lagerfaner",
+      "selectVeneer": "Välj ett faner"
     },
     "acoustics": {
-      "tag": "PRESTANDA",
-      "title": "Designad för ljud",
-      "benefit1Title": "Bredbandsabsorption",
-      "benefit1": "Effektiv över hela frekvensspektrumet, från låga till höga frekvenser",
-      "benefit2Title": "Brandsäkerhet",
-      "benefit2": "Brandklass {fireClass} med den brandhämmande MDF-kärnan (EN 13501-1)",
-      "benefit3Title": "Justerbar prestanda",
-      "benefit3": "Fyra perforeringsmönster för skräddarsydda akustiklösningar",
-      "description": "Precisionsborrade perforeringar låter ljudvågorna tränga in i panelen och vidare till det absorberande skiktet bakom. Hålrummet bakom panelen förbättrar dessutom absorptionen av låga frekvenser.",
-      "layer1Name": "Träfanér + perforeringar",
-      "layer1Desc": "Överfanerad, precisionsborrad yta",
-      "layer2Name": "Kärna av brandhämmande MDF (Medium Density Fiberboard)",
-      "layer2Desc": "Brandhämmande, densitet 0.45 kg/m³",
-      "layer3Name": "Akustisk fleece",
-      "layer3Desc": "Förhindrar fibervandring",
-      "layer4Name": "Mineralullshålighet",
-      "layer4Desc": "30–50 mm för bredbandig absorption",
-      "waveLabel": "Ljudvågor absorberas",
-      "certNote": "Oberoende testad och certifierad enligt ISO 11654",
-      "ratingLabel": "Absorption",
-      "description3": "Precisionsborrade perforeringar låter ljudvågorna tränga in i panelen och vidare till hålrummet bakom. I kombination med mineralullsisolering ger rWood - Perf enastående bredbandig absorption över hela frekvensspektrumet – från låg bas till hög diskant.",
-      "diagramTitle": "Panelsektion",
-      "fireRating": "Brandklass",
-      "noiseReduction": "Bullerdämpning",
-      "ratingPerPattern": "per mönster"
+      "tag": "AKUSTIK",
+      "title": "Ljudabsorption",
+      "description": "Ljudet passerar genom perforeringarna in i akustikfleecen och hålrummet bakom panelen. Ju större öppen yta, desto högre absorption.",
+      "tableTitle": "Ljudabsorption",
+      "alphaWByPattern": "αw, beroende på mönster",
+      "withWool": "Med 50 mm mineralull",
+      "withWoolVal": "αw upp till 1.00",
+      "mounting": "Montering vid provning",
+      "mountingVal": "Hålrum med mineralull",
+      "pattern": "Mönster",
+      "openArea": "Öppen yta",
+      "class": "Klass",
+      "octaveTitle": "αs per oktavband, mönster PD8 med hålrum",
+      "footnote": "αs per oktavband: mönster PD8 med hålrum, vägledande. Värdena beror på mönstret, hålrummets djup och absorbenten bakom panelen."
     },
     "installation": {
-      "tag": "DOLD MONTERING",
-      "title": "Sömlös installation",
-      "step1Title": "Montera underram",
-      "step1Desc": "Montera metallskenor på vägg- eller takstommen",
-      "step2Title": "Placera isolering",
-      "step2Desc": "Fyll hålrummet med mineralull för optimal absorption",
-      "step3Title": "Clipspaneler",
-      "step3Desc": "Dolt clipsystem för verktygsfri montering utan springor",
-      "step4Title": "Perfekt riktning",
-      "step4Desc": "Linjerade perforeringsmönster med sömlösa överfanerade skarvar",
-      "description": "rWood - Perf-paneler monteras med ett dolt clipsystem för ett osynligt, sömlöst utseende.",
-      "description3": "rWood - Perf-paneler monteras med ett dolt clipsystem utformat för precision, snabbhet och ett felfritt slutresultat. Systemet garanterar skarvar helt utan springor och perfekt linjerade perforeringsmönster över flera paneler."
+      "tag": "MONTERING",
+      "title": "Dolt clipsystem för väggar och tak",
+      "step1Title": "Underkonstruktion",
+      "step1Desc": "Metallskenor på vägg- eller takkonstruktionen.",
+      "step2Title": "Isolering",
+      "step2Desc": "Mineralull i hålrummet för bästa absorption.",
+      "step3Title": "Paneler",
+      "step3Desc": "Dolda clips, montering utan verktyg och utan fog.",
+      "step4Title": "Resultat",
+      "step4Desc": "Mönster i linje från panel till panel.",
+      "description": "Metallskenor, mineralull i hålrummet, och sedan klickas panelerna på plats utan verktyg och utan fog, så att perforeringsmönstret löper vidare från panel till panel."
     },
     "sustainability": {
       "tag": "HÅLLBARHET",
-      "title": "Byggd för att hålla, byggd ansvarsfullt",
-      "badge1": "FSC® certifierad",
-      "badge2": "{pct} % återvunnet innehåll",
+      "title": "Ansvarsfullt tillverkad",
+      "badge1": "FSC®-certifierat faner",
+      "badge2": "{pct} % återvunnet innehåll",
       "badge3": "Tillverkad i Polen",
-      "badge4": "Ultralåga utsläpp",
+      "badge4": "Formaldehydklass E1",
       "badge1Desc": "Trä från ansvarsfullt brukade skogar",
-      "badge2Desc": "Återvunnet konsumentmaterial i kärnan",
-      "badge3Desc": "Tillverkad i vår egen fabrik i Częstochowa (Polen) — korta leveranskedjor",
-      "badge4Desc": "Ingen tillsatt formaldehyd",
-      "description": "rWood - Perf förenar slitstarka, naturliga material med ett ansvarsfullt tillverkningssätt.",
-      "description3": "rWood - Perf förenar slitstarka, naturliga material med ansvarsfulla inköp: en brandhämmande MDF-kärna utan tillsatt formaldehyd och faner från hållbart brukade skogar."
+      "badge2Desc": "Återvunnet material i panelen",
+      "badge3Desc": "Producerad i vår egen fabrik i Częstochowa (Polen)",
+      "badge4Desc": "Brandhämmande MDF-kärna med låga emissioner, för torra inomhusmiljöer",
+      "description": "FSC®-certifierat faner, formaldehydklass E1 och produktion i vår egen fabrik i Częstochowa. När panelerna tjänat ut tar vi kostnadsfritt tillbaka dem i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
     },
     "specs": {
-      "tag": "TEKNISKT",
-      "title": "Specifikationer",
-      "dimensionsTitle": "Mått – väggar och tak",
-      "acousticsTitle": "Akustisk prestanda",
-      "perforationsTitle": "Perforeringsalternativ",
-      "fireTitle": "Brandsäkerhet",
-      "certsTitle": "Certifieringar",
-      "customSizes": "Specialmått",
-      "dimThickness": "Tjocklek",
-      "dimWeight": "Vikt",
-      "matTitle": "Material",
-      "matCustomColor": "Egna färgtoner med transparent eller täckande pigmentering",
-      "matLacquerFinish": "Från supermatt till högglansig UV-härdad lack",
-      "surfaceLabel": "Yta",
-      "surfaceVal": "Fanér / HPL / folie / färg",
-      "coreVal": "Kärna av MDF (Medium Density Fiberboard) (brun / grön / svart)",
+      "tag": "TEKNISKA DATA",
+      "title": "Panel, brand och emissioner",
+      "acousticsTitle": "Ljudabsorption",
+      "perforationsTitle": "Perforeringsmönster",
+      "fireTitle": "Brand och emissioner",
+      "matTitle": "Yta och tillval",
+      "surfaceLabel": "Ytbehandlingar",
+      "surfaceVal": "Naturlack · pigmenterad · HPL-laminat · folie · färg",
+      "coreVal": "Brandhämmande MDF, ljus eller mörk",
       "edgesLabel": "Kanter",
-      "edgesVal": "Översvarvad massiv ved",
-      "acousticFelt": "Akustisk filt",
-      "feltColor": "Svart / vit",
+      "edgesVal": "Överfanerat massivträ för sömlösa skarvar",
+      "feltColor": "Svart eller vit",
       "reactionFire": "Brandreaktion",
-      "resistanceFire": "Brandsäkerhet",
-      "fireRetardant": "Brandhämmande",
-      "vocLabel": "VOC-emissioner",
-      "vocVal": "TVOC-godkänd (ISO 16000)",
-      "formaldehydeLabel": "Formaldehyd",
-      "formaldehydeVal": "Inget tillsatt urea-formaldehyd",
-      "envLabel": "Miljö"
+      "panelTitle": "Panel",
+      "sizes": "Mått",
+      "fleeceLabel": "Akustikfleece",
+      "acWithMinWool": "Med 50 mm mineralull",
+      "acWithMinWoolVal": "αw upp till 1.00",
+      "fireStandard": "Brandstandard",
+      "finishLabel": "Lack",
+      "finishVal": "UV-härdad, supermatt till högglans, naturell eller pigmenterad",
+      "rangesLabel": "Fanerserier",
+      "rangesVal": "Nature (levande ådring med karaktär) · Gemini (jämn, enhetlig ton)",
+      "coreColoursLabel": "Kärnfärger",
+      "appsTitle": "Montering",
+      "appInstall": "Användning",
+      "appWalls": "Väggar och tak",
+      "mountingSystem": "Infästning",
+      "subframe": "Underkonstruktion",
+      "mounting": "Montering vid provning",
+      "mountingVal": "Hålrum med mineralull",
+      "pd8Val": "2 × Ø 8 mm · 24 % öppen yta",
+      "ph10Val": "Ø 10 mm · 18 % öppen yta",
+      "ph8Val": "Ø 8 mm · 12 % öppen yta",
+      "ph5Val": "Ø 5 mm · 5 % öppen yta",
+      "envVal": "Inomhus, torra utrymmen",
+      "coreColoursVal": "Brun, grön eller svart: ljus eller mörk för att dölja eller framhäva perforeringarna",
+      "subframeVal": "Metallskenor",
+      "concealedClip": "Dolda clips, utan verktyg, utan fog"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2266,191 +2275,228 @@
     },
     "overview": {
       "tag": "BEVISAD PRESTANDA",
-      "description": "rWood - Perf-paneler är en av de mest effektiva akustiklösningarna för väggar. Precisionsborrade perforeringar låter ljudet passera genom den dekorativa träytan in i den högabsorberande kärnan.",
       "feature1": "Brandhämmande MDF-kärna ({fireClass})",
-      "feature2": "Överfanerade kanter för sömlösa skarvar",
-      "feature3": "Ljus eller mörk kärna för ett diskret mönster",
-      "feature4": "Specialformat upp till 3050 × 1220 mm",
-      "description3": "rWood - Perf-paneler är en av de mest effektiva och mest använda lösningarna för akustiska väggar och tak. De precisionsborrade runda perforeringarna skapar en stor öppen yta som garanterar hög ljudabsorption, medan förstklassigt träfaner ger ett naturligt, varmt uttryck.",
-      "description4": "I kombination med en brandhämmande MDF-kärna och överfanerade kanter för sömlösa skarvar är panelerna konstruerade för de högsta kraven i stora offentliga miljöer – från atrier och konsertsalar till kontor och skolor."
-    },
-    "accessories": {
-      "tag": "FULLBORDA STILEN",
-      "title": "Tillbehör",
-      "description": "Professionella avslutningsdetaljer för ett felfritt resultat",
-      "item1Title": "Kantprofiler",
-      "item1Desc": "Matchande profiler för rena panelavslut",
-      "item2Title": "Hörnlösningar",
-      "item2Desc": "Sömlösa övergångar i inner- och ytterhörn",
-      "item3Title": "Monteringsskenor",
-      "item3Desc": "Dolt underramssystem i aluminium",
-      "item4Title": "Mineralull",
-      "item4Desc": "30–50 mm isolering för optimal prestanda"
+      "feature2": "Ljus eller mörk kärna för att dölja eller framhäva perforeringarna",
+      "feature3": "Måttbeställd upp till 3 050 × 1 220 mm, i 10 och 19 mm",
+      "feature4": "Dolda clips, utan verktyg, utan fog, mönster i linje från panel till panel",
+      "title": "Ju större öppen yta, desto högre absorption",
+      "description1": "rWood Perf är en fanerad, brandhämmande MDF-panel med runda perforeringar borrade rakt igenom. Ljudet passerar genom hålen in i akustikfleecen och hålrummet bakom panelen, där det absorberas.",
+      "description2": "Fyra mönster låter er välja mellan absorption och diskretion: från ett diskret 5 mm-hål med 5 % öppen yta till det dubbla 8 mm-mönstret PD8 med 24 % öppen yta."
     },
     "cta": {
-      "note": "Gratis prover • FSC®-certifierat"
+      "note": "Kostnadsfria fanerprover · FSC®-certifierat faner"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "Var kommer den FSC-certifierade fanéret från?",
-          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+          "question": "Var kommer det FSC-certifierade faneret ifrån?",
+          "answer": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; numret på chain-of-custody-certifikatet lämnas på begäran."
         },
         "fireRating": {
-          "question": "Vad är brandklassificeringen?",
-          "answer": "Med den brandhämmande (FR) MDF-kärnan är rWood-panelerna klassade B-s1,d0 enligt EN 13501-1 — den kärna vi föreskriver för utrymningsvägar och offentliga byggnader. Brandcertifikatet finns i nedladdningsblocket på den här sidan."
+          "question": "Vilken brandklass har panelen?",
+          "answer": "Med den brandhämmande MDF-kärnan är rWood Perf klassad B-s1,d0 enligt EN 13501-1. Panelen är avsedd för torra inomhusmiljöer."
         },
         "leadTime": {
-          "question": "Vad är den normala leveranstiden?",
-          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+          "question": "Vad är normal leveranstid?",
+          "answer": "Lagerfaner levereras inom 3–4 veckor; träslag som inte lagerförs och specialytor tar 6–8 veckor. Måttbeställda paneler tillverkas efter era ritningar."
         },
         "installMethod": {
-          "question": "Hur installeras rWood-paneler?",
-          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+          "question": "Hur monteras rWood-paneler?",
+          "answer": "Med ett dolt clipsystem: metallskenor på vägg- eller takkonstruktionen, mineralull i hålrummet, och sedan klickas panelerna på plats utan verktyg och utan fog, så att perforeringsmönstret löper vidare från panel till panel."
         },
         "substrateCleanup": {
           "question": "Vad händer med panelerna när de tjänat ut?",
-          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+          "answer": "Re-Sound tar kostnadsfritt tillbaka uttjänta paneler i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf panel i närbild som visar de runda perforeringarna",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Ytdetalj av träfaner på perforerad träpanel",
-      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel med dolt monteringssystem",
-      "sustainableWoodSourcingAndProduction": "Hållbar anskaffning av trä och hållbar produktion"
+      "sustainableWoodSourcingAndProduction": "FSC-certifierat träfaner",
+      "hero": "Perforerade träakustikpaneler rWood Perf på en vägg",
+      "heroVeneer": "rWood Perf-panel i {name}",
+      "overview": "Närbild av de runda perforeringarna i en rWood Perf-panel",
+      "installation": "Metallskenor och dolda clips i rWood Perfs monteringssystem"
     },
     "options": {
-      "pd8Desc": "Maximal absorption, stor öppen yta",
+      "pd8Desc": "Dubbelt mönster, maximal absorption",
       "ph10Desc": "Hög absorption, markanta perforeringar",
       "ph8Desc": "Balans mellan utseende och prestanda",
-      "ph5Desc": "Diskret mönster, subtil yta"
+      "ph5Desc": "Diskret mönster, stillsam yta"
+    },
+    "kpi": {
+      "ariaLabel": "Nyckeltal",
+      "thickness": "paneltjocklek, måttbeställd",
+      "alphaW": "αw, beroende på mönster",
+      "alphaWPd8": "αw med mönster PD8, {range} beroende på mönster",
+      "fire": "brandreaktion, brandhämmande MDF-kärna",
+      "patterns": "perforeringsmönster, Ø 5 till 10 mm"
+    },
+    "buildUp": {
+      "alt": "Sprängskiss av de tre skikten: perforerat faner, genomborrad brandhämmande MDF-kärna, akustikfleece",
+      "layer1": "Perforerat faner",
+      "layer1Desc": "A-kvalitet, borrat Ø 5 till 10 mm",
+      "layer2": "Brandhämmande MDF-kärna",
+      "layer2Desc": "Ljus eller mörk, genomborrad",
+      "layer3": "Akustikfleece",
+      "layer3Desc": "Svart eller vit",
+      "behind": "Bakom panelen: hålrum med mineralull."
+    },
+    "veneers": {
+      "title": "Åtta lagerfaner, alla faner på beställning",
+      "description": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. Trä är ett naturmaterial: ådring och färg varierar från panel till panel, och prover på skärm är endast vägledande.",
+      "alt": "Faner {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavien",
+        "northAmerica": "Nordamerika"
+      },
+      "grain": {
+        "straightInterlocked": "Rak till korsfibrig",
+        "subtleFine": "Diskret fin ådring",
+        "fineStraight": "Fin rak ådring",
+        "cathedral": "Katedralådring",
+        "pronounced": "Markant ådring",
+        "straightWavy": "Rak till vågig",
+        "deepCathedral": "Djup katedralådring",
+        "richFlowing": "Rik, flödande ådring"
+      },
+      "madeToOrderTitle": "På beställning",
+      "madeToOrderDesc": "Utöver de åtta lagerfaneren tillverkar vi alla träslag, betsfärger och ytbehandlingar.",
+      "finishTitle": "Ytbehandling",
+      "finishDesc": "UV-härdad lack från supermatt till högglans, naturell eller pigmenterad.",
+      "naturalTitle": "Ett naturmaterial",
+      "naturalDesc": "Äkta trä varierar i färg och ådring. Be om prover innan ni föreskriver."
+    },
+    "bespoke": {
+      "tag": "MÅTTBESTÄLLT",
+      "title": "Efter era ritningar",
+      "description": "rWood Perf tillverkas måttbeställd för väggar och tak: från 100 × 100 mm upp till 3 050 × 1 220 mm, i 10 och 19 mm, i vart och ett av de fyra mönstren.",
+      "customDimTitle": "Egna mått",
+      "customDimDesc": "Varje panel tillverkas i måtten på era ritningar, från 100 × 100 mm upp till 3 050 × 1 220 mm.",
+      "finishTitle": "Alla faner och ytbehandlingar",
+      "finishDesc": "Åtta lagerfaner; alla andra träslag, betsfärger och ytbehandlingar på beställning.",
+      "samplesTitle": "Kostnadsfria fanerprover",
+      "samplesDesc": "Äkta trä varierar i färg och ådring. Be om prover innan ni föreskriver."
+    },
+    "ordering": {
+      "title": "Leveranstider och prover",
+      "stockVeneers": "Lagerfaner",
+      "stockVeneersVal": "3–4 veckor",
+      "nonStock": "Ej lagerförda och specialbeställda",
+      "nonStockVal": "6–8 veckor",
+      "madeToMeasure": "Måttbeställt",
+      "madeToMeasureVal": "Efter era ritningar",
+      "supply": "Leverans",
+      "samplesVal": "Kostnadsfria fanerprover",
+      "sizesVal": "Upp till {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgien"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "MIKRO-PERFORERADE AKUSTIKPANELER",
+      "tag": "MIKROPERFORERAD TRÄAKUSTIKPANEL",
       "title": "rWood Micro: mikroperforerade akustikpaneler i trä",
-      "tagline": "Osynlig perforation, enastående akustik",
-      "description": "Upplev skönheten i äkta trä med den akustiska prestandan hos avancerad mikroperforeringsteknik. Praktiskt taget osynliga hål ger ljudabsorption i klass A samtidigt som det rena, homogena utseendet hos förstklassigt träfaner bevaras.",
+      "tagline": "Osynlig perforering, enastående akustik.",
+      "description": "Mikroperforeringar från 0,5 mm i faneret av A-kvalitet öppnar sig mot ljudkammare i den brandhämmande MDF-kärnan, med en akustikfleece bakom. På normalt betraktningsavstånd försvinner hålen i träet.",
       "usp1": "Osynliga perforeringar",
-      "usp2": "Klass A absorption",
+      "usp2": "Absorption klass A",
       "usp3": "Brandklass {fireClass}",
-      "colorSelector": "Välj träfanér"
+      "colorSelector": "Lagerfaner",
+      "description2": "Måttbeställd för väggar och tak, upp till 3 050 × 1 220 mm, i 10 och 19 mm. Åtta lagerfaner, alla faner och ytbehandlingar på beställning.",
+      "selectVeneer": "Välj ett faner"
     },
     "perforation": {
-      "tag": "PERFORATIONSMÖNSTER",
-      "title": "Välj din perforation",
-      "description": "Olika mikroperforeringstätheter för finjusterad akustisk kontroll – från diskret till högpresterande."
-    },
-    "surfaces": {
-      "tag": "YTOR",
-      "title": "Premium ytor",
-      "woodVeneer": "Träfanér",
-      "woodVeneerDesc": "Förstklassiga faner i A-kvalitet i ek, valnöt, björk med flera. Finns i snitten Nature och Gemini.",
-      "hplLaminate": "HPL-laminat",
-      "hplLaminateDesc": "Högtryckslaminatytor för extra slitstyrka. Finns i ett brett urval av färger och ytbehandlingar.",
-      "surfaceType": "Yttyp",
-      "finishTreatments": "Finishbehandlingar",
-      "description": "Varje rWood - Micro-panel har överfanerade kanter – en tillverkningsteknik som skapar sömlösa panelskarvar för en sammanhängande träyta.",
-      "finish1Desc": "Anpassade färgtoner med transparent eller täckande pigmentering",
-      "finish2Desc": "Från supermatt till högblank UV-härdad lack",
-      "description2": "Varje rWood - Micro-panel har överfanerade kanter – en tillverkningsteknik med rötter i traditionellt snickerihantverk. Resultatet: starkare paneler, sömlösa skarvar och ett sammanhängande mönster oavsett panelformat."
+      "tag": "PERFORERING",
+      "title": "Fyra perforeringstätheter",
+      "description": "Hålstorlek och öppen yta per täthet. Ju större öppen yta, desto högre absorption; ju mindre hål, desto mindre synligt mönster.",
+      "spec": "Ø {d} mm · {pct} % öppen yta",
+      "drawingNote": "Ritningar ungefär 2:1, hålstorlek och öppen yta enligt uppgift per täthet."
     },
     "acoustics": {
-      "tag": "PRESTANDA",
-      "title": "Överlägsen ljudabsorption",
-      "benefit1Title": "Dubbel akustisk mekanism",
-      "benefit1": "Mikrohål och ljudkammare samverkar för överlägsen absorption",
-      "benefit2Title": "Utrymmesbesparande design",
-      "benefit2": "Mindre beroende av luftspalter – tunnare vägg- och takuppbyggnader",
-      "benefit3Title": "Brandsäkerhet",
-      "benefit3": "Brandklass {fireClass} med den brandhämmande MDF-kärnan (EN 13501-1)",
-      "description": "Kombinationen av mikroperforeringar i ytan och tusentals större ljudkanaler skapar en exceptionell bredbandig absorption.",
-      "layer1Name": "Faner i A-kvalitet med precisionsborrade hål",
-      "layer2Name": "Brandhämmande MDF-kärna",
-      "layer2Desc": "Brandhämmande, med ljudkammare",
-      "layer3Name": "Akustisk fleece-baksida",
-      "layer3Desc": "Extra ljudabsorberande skikt",
-      "waveLabel": "Ljudvågor absorberas",
-      "certNote": "Oberoende testad och certifierad enligt ISO 11654",
-      "description2": "Kombinationen av mikroperforeringar i ytan och tusentals större ljudkammare i kärnan skapar en dubbel akustisk mekanism. Mindre beroende av isolering och luftspalter – vilket ger tunnare väggar och tak som sparar värdefull yta.",
-      "diagramTitle": "Panelsektion",
-      "soundAbsorbed": "Ljud absorberat",
-      "fireRating": "Brandklass",
-      "testStandard": "Teststandard",
-      "thinner": "Tunnare",
-      "wallBuildUp": "Väggkonstruktion"
+      "tag": "AKUSTIK",
+      "title": "Ljudabsorption",
+      "description": "Ljudet går in genom mikroperforeringarna och absorberas i kärnans ljudkammare och i fleecen bakom. Hur mycket panelen absorberar beror på perforeringstätheten och på vad som sitter bakom panelen.",
+      "tableTitle": "Ljudabsorption",
+      "withWool": "Med 50 mm mineralull",
+      "withWoolVal": "αw upp till 1.00",
+      "behindTitle": "Bakom panelen",
+      "behindDesc": "En absorbent bakom höjer absorptionen: akustikfilt, en rPET-panel eller mineralull i hålrummet. Med 50 mm mineralull når panelen αw 1,00.",
+      "footnote": "αw och absorptionsklass enligt EN ISO 11654. Värdena beror på perforeringstätheten, hålrummets djup och absorbenten bakom panelen."
     },
     "installation": {
-      "tag": "INSTALLATIONSSYSTEM",
-      "title": "Precisionsinstallation",
-      "step1Title": "Installera underram",
-      "step1Desc": "Montera aluminiumskenor på vägg- eller takkonstruktionen",
-      "step2Title": "Lägg till isolering",
-      "step2Desc": "Mineralull som tillval för förbättrad absorption",
-      "step3Title": "Click & Fix-paneler",
-      "step3Desc": "Dolt clipsystem för verktygsfri panelmontering",
-      "step4Title": "Sömlöst resultat",
-      "step4Desc": "Överfanerade kanter skapar en sammanhängande träyta",
-      "description": "rWood - Micro-paneler monteras med vårt dolda monteringssystem, vilket ger osynliga infästningar och en felfri finish. Systemet passar för både vägg- och takmontage, med sömlösa övergångar mellan panelerna tack vare överfanerade kanter."
+      "tag": "MONTERING",
+      "title": "Dolt clipsystem för väggar och tak",
+      "step1Title": "Underkonstruktion",
+      "step1Desc": "Aluminiumskenor på vägg- eller takkonstruktionen.",
+      "step2Title": "Isolering",
+      "step2Desc": "Mineralull vid behov för högre absorption.",
+      "step3Title": "Paneler",
+      "step3Desc": "Dolda clips, montering utan verktyg.",
+      "step4Title": "Resultat",
+      "step4Desc": "Osynliga infästningar och en obruten träyta.",
+      "description": "Aluminiumskenor, mineralull vid behov, och sedan klickas panelerna på plats utan verktyg. Infästningarna förblir osynliga och träytan löper vidare utan avbrott."
     },
     "bespoke": {
-      "tag": "DESIGNFRIHET",
-      "title": "Skräddarsydda möjligheter",
-      "backlitTitle": "Bakgrundsbelysta paneler",
-      "backlitDesc": "Skapa slående bakgrundsbelysta partier där ljuset lyser genom mikroperforeringarna. Logotyper och mönster lyser vackert när belysningen är tänd, men förblir osynliga när ljuset är släckt.",
-      "customDimTitle": "Specialmått",
-      "customDimDesc": "Paneler tillverkade exakt enligt era specifikationer. Icke-standardiserade storlekar och former för unika arkitektoniska krav.",
-      "patternTitle": "Kontinuerligt mönster",
-      "patternDesc": "Överfanerade paneler skapar sömlösa övergångar oavsett format, för ett homogent intryck på alla ytor.",
-      "description": "rWood - Micro-paneler kan anpassas och prefabriceras enligt era ritningar. Mikroperforeringarna öppnar för unika designmöjligheter som går längre än vanliga akustikpaneler."
+      "tag": "MÅTTBESTÄLLT",
+      "title": "Efter era ritningar",
+      "customDimTitle": "Egna mått",
+      "customDimDesc": "Varje panel tillverkas i måtten på era ritningar, från 100 × 100 mm upp till 3 050 × 1 220 mm.",
+      "description": "rWood Micro tillverkas måttbeställd för väggar och tak: från 100 × 100 mm upp till 3 050 × 1 220 mm, i 10 och 19 mm, i var och en av de fyra perforeringstätheterna.",
+      "finishTitle": "Alla faner och ytbehandlingar",
+      "finishDesc": "Åtta lagerfaner; alla andra träslag, betsfärger och ytbehandlingar på beställning.",
+      "samplesTitle": "Kostnadsfria fanerprover",
+      "samplesDesc": "Äkta trä varierar i färg och ådring. Be om prover innan ni föreskriver."
     },
     "sustainability": {
       "tag": "HÅLLBARHET",
-      "title": "Ansvarstillverkad",
-      "badge1": "FSC®-certifierat fanér",
-      "badge2": "Naturligt kärnmaterial",
+      "title": "Ansvarsfullt tillverkad",
+      "badge1": "FSC®-certifierat faner",
+      "badge2": "Formaldehydklass E1",
       "badge3": "Tillverkad i Polen",
-      "badge4": "Låga VOC-utsläpp",
+      "badge4": "Återtag vid livslängdens slut",
       "badge1Desc": "Trä från ansvarsfullt brukade skogar",
-      "badge2Desc": "Fiberskivekärna – en träbaserad, brandklassad kärna",
-      "badge3Desc": "Tillverkad i vår egen fabrik i Częstochowa (Polen)",
-      "badge4Desc": "E1-klassad för en hälsosammare inomhusluft",
-      "description": "rWood - Micro-paneler är utvecklade med hållbarhet som grundprincip. FSC®-certifierat trä, lågemitterande ytbehandlingar och ansvarsfullt anskaffade material säkerställer miljöansvar under hela produktens livscykel."
+      "badge2Desc": "Brandhämmande MDF-kärna med låga emissioner, för torra inomhusmiljöer",
+      "badge3Desc": "Producerad i vår egen fabrik i Częstochowa (Polen)",
+      "description": "FSC®-certifierat faner, formaldehydklass E1 och produktion i vår egen fabrik i Częstochowa. När panelerna tjänat ut tar vi tillbaka dem."
     },
     "specs": {
-      "tag": "TEKNISKT",
-      "title": "Specifikationer",
-      "dimensionsTitle": "Mått – väggar och tak",
-      "acousticsTitle": "Mått – väggar och tak",
-      "customSizes": "Specialmått",
-      "dimThickness": "Tjocklek",
-      "dimWeight": "Vikt",
-      "dimCoreDensity": "Kärntäthet",
-      "perfsTitle": "Perforeringsalternativ",
-      "fireTitle": "Brandsäkerhet",
-      "matTitle": "Material",
-      "appsTitle": "Tillämpningar",
+      "tag": "TEKNISKA DATA",
+      "title": "Panel, brand och emissioner",
+      "acousticsTitle": "Ljudabsorption",
+      "perfsTitle": "Perforeringstätheter",
+      "fireTitle": "Brand och emissioner",
+      "matTitle": "Yta och tillval",
+      "appsTitle": "Montering",
       "acWithMinWool": "Med 50 mm mineralull",
       "reactionFire": "Brandreaktion",
-      "resistanceFire": "Brandsäkerhet",
-      "fireRetardant": "Brandhämmande",
-      "surfaceLabel": "Yta",
-      "surfaceVal": "Fanér / HPL / folie / färg",
-      "coreVal": "MDF-kärna (brun / grön / svart)",
+      "surfaceLabel": "Ytbehandlingar",
+      "surfaceVal": "Naturlack · pigmenterad · HPL-laminat · folie · färg",
+      "coreVal": "Brandhämmande MDF med ljudkammare",
       "edgesLabel": "Kanter",
-      "edgesVal": "Översvarvad massiv ved",
-      "acousticFelt": "Akustisk filt",
-      "feltColor": "Svart / vit",
-      "appInstall": "Montering",
+      "edgesVal": "Överfanerat massivträ för sömlösa skarvar",
+      "feltColor": "Svart eller vit",
+      "appInstall": "Användning",
       "appWalls": "Väggar och tak",
-      "appEnv": "Miljö",
-      "appEnvVal": "Inomhus (torra områden)",
-      "backlitOption": "Bakgrundsbelysning",
-      "backlitVal": "Tillgängligt",
-      "mountingSystem": "Monteringssystem",
-      "concealedClip": "Dolt klipsystem"
+      "appEnvVal": "Inomhus, torra utrymmen",
+      "mountingSystem": "Infästning",
+      "concealedClip": "Dolda clips, utan verktyg",
+      "panelTitle": "Panel",
+      "sizes": "Mått",
+      "fleeceLabel": "Akustikfleece",
+      "acWithMinWoolVal": "αw upp till 1.00",
+      "fireStandard": "Brandstandard",
+      "finishLabel": "Lack",
+      "finishVal": "UV-härdad, supermatt till högglans, naturell eller pigmenterad",
+      "rangesLabel": "Fanerserier",
+      "rangesVal": "Nature (levande ådring med karaktär) · Gemini (jämn, enhetlig ton)",
+      "coreColoursLabel": "Kärnfärger",
+      "subframe": "Underkonstruktion",
+      "nanoVal": "Ø 0.5 mm · 2.5 % öppen yta",
+      "microSVal": "Ø 1.0 mm · 5.2 % öppen yta",
+      "microMVal": "Ø 1.5 mm · 8.4 % öppen yta",
+      "microLVal": "Ø 2.0 mm · 10.6 % öppen yta",
+      "coreColoursVal": "Brun, grön eller svart",
+      "subframeVal": "Aluminiumskenor"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "DEN OSYNLIGA LÖSNINGEN",
-      "title": "Designad för ögon och öron",
-      "description1": "rWood - Micro-paneler kombinerar avancerad mikroperforeringsteknik med förstklassiga träfaner. På normalt betraktningsavstånd är perforeringarna helt osynliga – det ni ser är en vacker, homogen träyta. Det ni hör är exceptionell akustisk komfort.",
-      "description2": "Hemligheten ligger i kombinationen av två akustiska mekanismer: tusentals precisionstillverkade mikrohål i ytan och ljudabsorberande kammare inuti kärnmaterialet.",
-      "feature1": "Perforeringar osynliga på normalt betraktningsavstånd",
-      "feature2": "Brandhämmande MDF-kärna med ljudkammare",
-      "feature3": "Överfanerade kanter för sömlösa skarvar",
-      "feature4": "Lämplig för väggar och tak",
-      "feature5": "Tillgänglig som bakgrundsbelysta paneler"
-    },
-    "accessories": {
-      "tag": "FULLBORDA STILEN",
-      "title": "Tillbehör",
-      "description": "Professionella avslutningsdetaljer för ett felfritt resultat",
-      "item1Title": "Kantprofiler",
-      "item1Desc": "Matchande profiler för rena panelavslut",
-      "item2Title": "Hörnlösningar",
-      "item2Desc": "Sömlösa övergångar i inner- och ytterhörn",
-      "item3Title": "Monteringsskenor",
-      "item3Desc": "Dolt underramssystem i aluminium",
-      "item4Title": "LED-bakbelysning",
-      "item4Desc": "Integrerad belysning för bakgrundsbelysta paneleffekter"
-    },
-    "patterns": {
-      "description": "Fyra perforeringstätheter som matchar era akustiska krav. Från praktiskt taget osynliga mikroperforeringar till generösa öppna ytor – varje täthet ger en egen balans mellan estetik och prestanda.",
-      "magnifiedLabel": "10× förstorad",
-      "holeDiameter": "Håldiameter",
-      "openArea": "Öppen yta",
-      "ratingLabel": "Absorption",
-      "description2": "Fyra perforeringstätheter som matchar era akustiska krav. Från praktiskt taget osynliga Nano-perforeringar till Micro L-mönster med maximal absorption – välj den perfekta balansen mellan estetik och akustisk prestanda.",
-      "pigmentedLacquer": "Pigmenterad lack",
-      "glossLevels": "Glansnivåer"
+      "title": "Utformad för ögon och öron",
+      "description1": "rWood Micro kombinerar ett äkta träfaner av A-kvalitet med mikroperforeringar från Ø 0,5 mm. På normalt betraktningsavstånd försvinner hålen i träet: det ni ser är en obruten träyta, det ni hör är ett tystare rum.",
+      "description2": "Ljudet går in genom mikroperforeringarna och absorberas i ljudkamrarna i den brandhämmande MDF-kärnan och i akustikfleecen bakom. Hur mycket panelen absorberar beror på perforeringstätheten och på vad som sitter bakom panelen.",
+      "feature1": "Perforeringar som försvinner på normalt betraktningsavstånd",
+      "feature2": "Brandhämmande MDF-kärna med ljudkammare, akustikfleece i svart eller vitt",
+      "feature3": "Måttbeställd upp till 3 050 × 1 220 mm, i 10 och 19 mm",
+      "feature4": "Dolda clips, utan verktyg, för väggar och tak"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "Var kommer den FSC-certifierade fanéret från?",
-          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+          "question": "Var kommer det FSC-certifierade faneret ifrån?",
+          "answer": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; numret på chain-of-custody-certifikatet lämnas på begäran."
         },
         "fireRating": {
-          "question": "Vad är brandklassificeringen?",
-          "answer": "Med den brandhämmande (FR) MDF-kärnan är rWood-panelerna klassade B-s1,d0 enligt EN 13501-1 — den kärna vi föreskriver för utrymningsvägar och offentliga byggnader. Brandcertifikatet finns i nedladdningsblocket på den här sidan."
+          "question": "Vilken brandklass har panelen?",
+          "answer": "Med den brandhämmande MDF-kärnan är rWood Micro klassad B-s1,d0 enligt EN 13501-1. Panelen är avsedd för torra inomhusmiljöer."
         },
         "leadTime": {
-          "question": "Vad är den normala leveranstiden?",
-          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+          "question": "Vad är normal leveranstid?",
+          "answer": "Lagerfaner levereras inom 3–4 veckor; träslag som inte lagerförs och specialytor tar 6–8 veckor. Måttbeställda paneler tillverkas efter era ritningar."
         },
         "installMethod": {
-          "question": "Hur installeras rWood-paneler?",
-          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+          "question": "Hur monteras rWood-paneler?",
+          "answer": "Med ett dolt clipsystem: aluminiumskenor på vägg- eller takkonstruktionen, mineralull i hålrummet vid behov, och sedan klickas panelerna på plats utan verktyg. Infästningarna förblir osynliga och träytan löper vidare utan avbrott."
         },
         "substrateCleanup": {
           "question": "Vad händer med panelerna när de tjänat ut?",
-          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+          "answer": "Re-Sound tar kostnadsfritt tillbaka uttjänta paneler i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro panel i närbild som visar de osynliga perforeringarna",
-      "microPerforatedWoodPanelSurfaceDetail": "Ytdetalj av mikroperforerad träpanel",
-      "rwoodMicroPanelInstallationSystem": "rWood - Micro panel, monteringssystem",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Bakgrundsbelyst mikroperforerad panel som skapar en ljuseffekt",
-      "sustainableProduction": "Hållbar produktion"
+      "sustainableProduction": "FSC-certifierat träfaner",
+      "hero": "Mikroperforerade träakustikpaneler rWood Micro på en vägg",
+      "heroVeneer": "rWood Micro-panel i {name}",
+      "overview": "Närbild av en mikroperforerad rWood Micro-panel",
+      "installation": "Aluminiumskenor och dolda clips i rWood Micros monteringssystem",
+      "madeToMeasure": "Måttbeställda rWood Micro-paneler monterade runt ett fönster"
     },
     "options": {
-      "veneerDesc": "Naturligt träfaner av A-kvalitet",
-      "hplDesc": "Högtryckslaminat",
-      "nanoDesc": "Praktiskt taget osynliga perforeringar",
-      "microsDesc": "Subtila mikroperforeringar",
+      "nanoDesc": "Nästan osynliga perforeringar",
+      "microsDesc": "Diskreta mikroperforeringar",
       "micromDesc": "Balanserat perforeringsmönster",
-      "microlDesc": "Mönster för maximal absorption",
-      "nanoDetail": "Den minsta perforering som finns – helt osynlig för blotta ögat och ger en felfri träyta.",
-      "microsDetail": "Knappt synliga mikrohål som bevarar ett rent och obrutet ytintryck.",
-      "micromDetail": "En optimal balans mellan visuell diskretion och akustisk effektivitet för de flesta tillämpningar.",
-      "microlDetail": "Den största öppna ytan för maximal ljudabsorption i akustiskt krävande miljöer.",
-      "openAreaLabel": "Öppen yta",
-      "absorptionLabel": "Absorption",
-      "thinnerLabel": "Tunnare",
-      "veneerDrilled": "Träfaner av A-kvalitet med precisionsborrade hål"
+      "microlDesc": "Mönster för maximal absorption"
+    },
+    "kpi": {
+      "ariaLabel": "Nyckeltal",
+      "thickness": "paneltjocklek, måttbeställd",
+      "alphaW": "αw, vägd ljudabsorption",
+      "alphaWClass": "αw, absorptionsklass {cls}",
+      "fire": "brandreaktion, brandhämmande MDF-kärna",
+      "densities": "perforeringstätheter, Ø 0,5 till 2 mm"
+    },
+    "buildUp": {
+      "alt": "Sprängskiss av de tre skikten: mikroperforerat faner, brandhämmande MDF-kärna med ljudkammare, akustikfleece",
+      "layer1": "Mikroperforerat faner",
+      "layer1Desc": "A-kvalitet, hål från Ø 0,5 mm",
+      "layer2": "Brandhämmande MDF-kärna",
+      "layer2Desc": "Med ljudkammare",
+      "layer3": "Akustikfleece",
+      "layer3Desc": "Svart eller vit",
+      "behind": "Bakom panelen: hålrum, mineralull vid behov."
+    },
+    "veneers": {
+      "title": "Åtta lagerfaner, alla faner på beställning",
+      "description": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. Trä är ett naturmaterial: ådring och färg varierar från panel till panel, och prover på skärm är endast vägledande.",
+      "alt": "Faner {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavien",
+        "northAmerica": "Nordamerika"
+      },
+      "grain": {
+        "straightInterlocked": "Rak till korsfibrig",
+        "subtleFine": "Diskret fin ådring",
+        "fineStraight": "Fin rak ådring",
+        "cathedral": "Katedralådring",
+        "pronounced": "Markant ådring",
+        "straightWavy": "Rak till vågig",
+        "deepCathedral": "Djup katedralådring",
+        "richFlowing": "Rik, flödande ådring"
+      },
+      "madeToOrderTitle": "På beställning",
+      "madeToOrderDesc": "Utöver de åtta lagerfaneren tillverkar vi alla träslag, betsfärger och ytbehandlingar.",
+      "finishTitle": "Ytbehandling",
+      "finishDesc": "UV-härdad lack från supermatt till högglans, naturell eller pigmenterad.",
+      "naturalTitle": "Ett naturmaterial",
+      "naturalDesc": "Äkta trä varierar i färg och ådring. Be om prover innan ni föreskriver."
+    },
+    "ordering": {
+      "title": "Leveranstider och prover",
+      "stockVeneers": "Lagerfaner",
+      "stockVeneersVal": "3–4 veckor",
+      "nonStock": "Ej lagerförda och specialbeställda",
+      "nonStockVal": "6–8 veckor",
+      "madeToMeasure": "Måttbeställt",
+      "madeToMeasureVal": "Efter era ritningar",
+      "supply": "Leverans",
+      "samplesVal": "Kostnadsfria fanerprover",
+      "sizesVal": "Upp till {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgien"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "AKUSTISKA TRÄPANELER",
-      "title": "rWood Panel: akustikpaneler med träfaner i 10 träslag",
-      "tagline": "Elegansen av Äkta Trä. Redo att Använda.",
-      "description": "Premium fanerade MDF-paneler, borstade, betsade och lackerade — klara att installera. Tillgängliga i 10 träfanerarter och 3 ytor. Tillverkade i Belgien.",
-      "usp1": "Äkta Träfaner",
-      "usp2": "Förfiniserad och Redo att Använda",
-      "usp3": "Kostnadsfritt återtagningsprogram",
+      "tag": "FANERAD TRÄPANEL",
+      "title": "rWood Panel: fanerade akustikpaneler i 12 träfaner",
+      "tagline": "Äkta träs elegans, klar att använda.",
+      "description": "Släta, fabriksbehandlade fanerade MDF-paneler i tolv faner av äkta trä, i den livfulla Nature- eller den jämna Gemini-serien. Naturlack eller pigmenterad lack, HPL-laminat, folie eller färg; valfritt annat faner, bets eller ytbehandling på beställning.",
+      "usp1": "FSC®-certifierade faner",
+      "usp2": "Tolv faner, valfri ytbehandling på beställning",
+      "usp3": "Kostnadsfri återtagning vid slutet av livslängden",
       "ctaSecondary": "Se Kollektion",
-      "colorSelector": "Välj Faner"
-    },
-    "construction": {
-      "tag": "KONSTRUKTION",
-      "title": "Lagd Konstruktion",
-      "layer1": "Övre fanerskikt",
-      "layer1Desc": "FSC-certifierad naturlig träfanér, fabriksfinish",
-      "layer2": "Högdensitets MDF-kärna",
-      "layer2Desc": "Stabil, fuktresistent konstruerad bas",
-      "layer3": "Balanserande fanerskikt",
-      "layer3Desc": "Förhindrar skevhet för perfekt platta paneler"
-    },
-    "veneers": {
-      "tag": "FANÉRKOLLEKTION",
-      "title": "10 kuraterade träfanér",
-      "description": "Från ljus europeisk ek till djup amerikansk valnöt — varje träslag valt för ådringskaraktär, tillgänglighet och FSC-certifiering."
+      "colorSelector": "Faner",
+      "selectPrompt": "Välj ett faner"
     },
     "finishes": {
-      "title": "Känsla och skydd",
-      "description": "Rätt finish framhäver det bästa hos varje träslag. Vår finishprocess i flera lager ger en yta som är lika behaglig att röra som den är hållbar — skyddad mot repor, fukt och dagligt slitage.",
-      "tag": "YTOR",
-      "mattLacquerName": "Super matt lack",
-      "mattLacquerDesc": "Fingeravtrycksavvisande, silkeslen känsla. 6-lagers UV-härdat skydd.",
-      "naturalOilName": "Naturlig olja",
-      "naturalOilDesc": "Djup, äkta träkänsla med inträngande skydd.",
-      "unfinishedName": "Obehandlad",
-      "unfinishedDesc": "Redo för anpassat finish på plats av installatören.",
-      "adv1": "Reptålig",
-      "adv2": "Stänkresistent",
-      "adv3": "Fingeravtrycksavvisande",
-      "adv4": "Lätt underhåll"
-    },
-    "advantages": {
-      "tag": "FÖRDELAR",
-      "title": "Nyckelfördlar",
-      "adv1Title": "Panelformat",
-      "adv1": "Flera standardmått; specialmått på begäran",
-      "adv2Title": "Obegränsade möjligheter",
-      "adv2": "Använd för väggklädsel, möbler, butiksskyltningar och mer"
+      "title": "Ytbehandlingar och alternativ",
+      "description": "Välj den fanerserie och den ytbehandling som passar projektet. Kanterna är överfanerat massivträ för osynliga skarvar över stora ytor.",
+      "tag": "YTBEHANDLINGAR",
+      "nature": "Nature",
+      "natureDesc": "Livfull ådring med karaktär",
+      "gemini": "Gemini",
+      "geminiDesc": "Jämn, enhetlig ton",
+      "treatmentsTitle": "Ytbehandlingar",
+      "treatments": {
+        "naturalLacquer": "Naturlack",
+        "pigmented": "Pigmenterad",
+        "hpl": "HPL-laminat",
+        "foil": "Folie",
+        "paint": "Färg"
+      },
+      "madeToOrder": "Valfritt annat faner, bets, pigment och ytbehandling på begäran."
     },
     "applications": {
       "tag": "ANVÄNDNINGAR",
@@ -2620,66 +2671,51 @@
       "badge2": "Cirkulär retur",
       "badge3": "Tillverkad i Polen",
       "badge4": "EPD tillgänglig",
-      "badge5": "Låga VOC",
-      "badge1Desc": "Allt trä från ansvarsfullt skötta skogar",
+      "badge1Desc": "Alla faner är FSC®-certifierade, från ansvarsfullt brukade skogar",
       "badge2Desc": "Gratis returnering och återvinning av paneler vid livslängdens slut",
-      "description": "Varje rWood - Panel börjar med ansvarsfullt anskaffat virke. Som en del av Re-Sounds åtagande för den cirkulära ekonomin maximerar vi användningen av varje stock genom att bearbeta den som fanér — vilket ger upp till 40× mer yta än massivt virke från samma träd.",
+      "description": "Varje rWood Panel börjar med FSC®-certifierat faner från ansvarsfullt brukade skogar. Vid slutet av livslängden tar Re-Sound kostnadsfritt tillbaka panelerna.",
       "badge3Desc": "Tillverkad i vår egen fabrik i Częstochowa (Polen)",
-      "badge4Desc": "Fullständig miljöproduktdeklaration",
-      "badge5Desc": "E1-klassificerad, uppfyller de strängaste utsläppskraven",
-      "badge6": "Grön energi",
-      "badge6Desc": "Produktion driven av förnybara energikällor"
+      "badge4Desc": "Fullständig miljöproduktdeklaration"
     },
     "specs": {
-      "tag": "SPECIFIKATIONER",
-      "title": "Tekniska Specifikationer",
+      "tag": "TEKNISKA DATA",
+      "title": "Panel, ytbehandlingar och brand",
       "compositionTitle": "Sammansättning",
       "fireTitle": "Brandsäkerhet",
       "certsTitle": "Certifieringar",
       "dimensionsTitle": "Dimensioner",
-      "finishTitle": "Yta",
+      "finishTitle": "Faner och ytbehandlingar",
       "processingTitle": "Bearbetning",
       "dimPanelWidth": "Panelbredd",
       "dimPanelLength": "Panellängd",
-      "dimThicknessStd": "Tjocklek (standard)",
-      "dimThicknessSlim": "Tjocklek (slank)",
-      "dimWeight19": "Vikt (19 mm)",
       "compTopLayer": "Översta lager",
-      "compTopLayerVal": "A-klass fanér, betsad och lackad",
+      "compTopLayerVal": "Faner av äkta trä i A-kvalitet, fabriksbehandlat",
       "compCore": "Kärna",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, standard / MR / FR",
       "compBackLayer": "Baksida lager",
       "compBackLayerVal": "Balansfanér",
-      "compBonding": "Bindning",
-      "compBondingVal": "HPLT-pressteknologi",
-      "finishLacquerType": "Lacktyp",
-      "finishLacquerVal": "Akrylaturetan UV-härdat",
-      "finishLayers": "Antal lager",
-      "finishGloss": "Glansnivå",
-      "finishGlossVal": "Supermatt (3-5 GU)",
-      "finishAntiFingerprint": "Fingeravtrycksavvisande",
-      "finishScratch": "Reptålighet",
-      "fireStdMDF": "Standard-MDF",
-      "fireFRMDF": "Brandhämmande MDF",
       "certWoodSourcing": "Träkällor",
       "certEnvironmental": "Miljö",
-      "certFelt": "Filt (om akustisk)",
       "procSawing": "Sågning",
       "procSawingVal": "Standardträbearbetningsverktyg",
-      "procEdgeBanding": "Kantband",
-      "procEdgeBandingVal": "Matchande fanérkantband tillgängligt",
       "procCNC": "CNC-bearbetning",
-      "procEnvironment": "Miljö",
-      "procEnvironmentVal": "Inomhusbruk (torra områden)",
       "procMoisture": "Fuktresistent",
-      "procMoistureVal": "MR-kärna tillgänglig"
+      "procMoistureVal": "MR-kärna tillgänglig",
+      "finishRanges": "Fanerserier",
+      "finishRangesVal": "Nature: livfull ådring med karaktär · Gemini: jämn, enhetlig ton",
+      "finishTreatments": "Ytbehandlingar",
+      "finishTreatmentsVal": "Naturlack · pigmenterad · HPL-laminat · folie · färg",
+      "finishCoreColours": "Kärnfärger",
+      "finishCoreColoursVal": "Brun, grön eller svart",
+      "finishEdgesVal": "Överfanerat massivträ för osynliga skarvar",
+      "finishFeltVal": "Svart eller vit fleece",
+      "finishMadeToOrder": "På beställning",
+      "finishMadeToOrderVal": "Valfritt annat faner, bets, pigment och ytbehandling",
+      "certWoodSourcingVal": "Alla faner är FSC®-certifierade, från ansvarsfullt brukade skogar"
     },
     "related": {
       "tag": "MATCHANDE PRODUKTER",
       "title": "Relaterade Produkter",
-      "groove": "rWood - Groove",
-      "edgebanding": "Matchande kantkant",
-      "samples": "Gratis prover",
       "description": "Uppnå designkontinuitet med koordinerade Re-Sound-produkter",
       "explore": "Utforska →",
       "orderSamples": "Beställ prover →",
@@ -2691,50 +2727,49 @@
     },
     "overview": {
       "tag": "ÖVERSIKT",
-      "title": "Naturligt Trä, Premium Yta",
-      "description": "rWood - Panel förmedlar värmen och karaktären hos massivt trä i ett förfinerat, klart att använda format. Varje panel är tillverkad av premium A-grad faner, limmad på en högdensitets MDF-kärna med avancerad pressteknik.",
-      "feature1": "Äkta A-grad träfaner på högdensitets MDF-kärna",
-      "feature2": "Förfiniserad med 6 lager UV-akryllack — ingen ytterligare behandling behövs",
-      "feature3": "10 fanerarter tillgängliga — ek, valnöt, björk och mer",
-      "feature4": "FSC® certifierad — trä från ansvarsfullt förvaltade skogar",
-      "feature5": "Tillgänglig i naturlack, naturolja eller obehandlad"
+      "title": "Natur, förädlad",
+      "description": "rWood Panel för in äkta träs värme och karaktär i ett färdigbehandlat, monteringsklart format: ett faner i A-kvalitet på en MDF-kärna, behandlat i fabriken. Samma tolv faner går igen i hela rWood-serien, så släta paneler, Groove, Micro och Perf passar ihop på en och samma vägg.",
+      "feature1": "Tolv lagerfaner: ek, valnöt, ask, bok och björk",
+      "feature2": "Två fanerserier: Nature (livfull ådring) och Gemini (jämn ton)",
+      "feature3": "MDF-kärna i standard-, fuktbeständig eller brandhämmande kvalitet",
+      "feature4": "Naturlack eller pigmenterad lack, HPL-laminat, folie eller färg",
+      "feature5": "Fabriksbehandlad, klar att montera"
     },
     "anatomy": {
-      "tag": "SAMMANSÄTTNING",
-      "layer1": "Äkta Träfaner",
-      "layer1Desc": "A-klass äkta träfanér, borstad, betsad och skyddad med 6 lager UV-härdat akrylat-uretanlack. Soft-touch super matt yta.",
+      "tag": "UPPBYGGNAD",
+      "layer1": "Fanersida",
+      "layer1Desc": "Faner av äkta trä i A-kvalitet, ett av de tolv lagerfaneren eller valfritt faner på beställning, behandlat i fabriken.",
       "layer2": "MDF-kärna",
-      "layer2Desc": "700 kg/m³ FSC®-certifierad MDF. Finns i standardkvalitet, fuktbeständig (MR) och brandhämmande (FR) kvalitet.",
-      "layer3": "Balansfaner",
-      "layer3Desc": "Matchande fanérbaksida säkerställer dimensionsstabilitet och förhindrar skevhet. Färdigbehandlade eller obehandlade alternativ.",
-      "keyAdvTitle": "Ytfördelar",
-      "description": "Varje lager fyller ett syfte — från den äkta träytan till den konstruerade kärnan."
+      "layer2Desc": "Standard-, fuktbeständig (MR) eller brandhämmande (FR) MDF; kärnfärg brun, grön eller svart.",
+      "layer3": "Motfaner",
+      "layer3Desc": "Ett faner på baksidan håller panelen plan och stabil.",
+      "description": "Varje skikt fyller en funktion, från ytan i äkta trä till den tekniska kärnan.",
+      "title": "Faner, kärna, motfaner"
     },
     "collection": {
-      "tag": "KOLLEKTION",
-      "title": "10 kuraterade träfanér",
-      "description": "Från lugn skandinavisk björk till dramatisk amerikansk valnöt — varje fanér väljs, borstas och slutbearbetas omsorgsfullt för att framhäva träets karaktär.",
-      "filterAll": "Alla fanér",
-      "customNote": "Specialtillverkade fanérarter och betsfärger tillgängliga på projektorder från 50+ paneler.",
+      "tag": "FANER",
+      "title": "Tolv faner av äkta trä",
+      "description": "Sex ekar från ljus till nästan svart och sex premiumträslag: valnöt, ask, bok och björk. Finns i hela rWood-serien, och valfritt annat faner, betsfärg eller ytbehandling på beställning.",
+      "filterAll": "Alla faner",
+      "customNote": "Valfritt annat faner, bets, pigment och ytbehandling på begäran. Provbilderna är vägledande: naturliga faner varierar i ådring, färg och teckning, och tonerna skiftar i annat ljus och med annan lack. Kontrollera alltid mot ett fysiskt prov.",
       "categories": {
-        "lightNaturals": "Ljusa toner",
-        "warmNaturals": "Varma toner",
-        "deepTones": "Djupa toner"
+        "oak": "Ekfaner",
+        "premium": "Premiumträslag"
       },
-      "origins": {
-        "europe": "Europa",
-        "scandinavia": "Skandinavien",
-        "northAmerica": "Nordamerika"
-      },
-      "grains": {
-        "straightToInterlocked": "Rak till sammanflätad",
-        "subtleFineGrain": "Diskret fin ådring",
-        "fineStraightGrain": "Fin rak ådring",
-        "cathedralGrain": "Katedralådring",
-        "pronouncedGrain": "Markerad ådring",
-        "straightToWavy": "Rak till vågig",
-        "deepCathedralGrain": "Djup katedralådring",
-        "richFlowingGrain": "Rik flödande ådring"
+      "filterLabel": "Filtrera faner",
+      "items": {
+        "strawOak": "Ljus, varmt neutral ek",
+        "silkOak": "Mjuk greige ton",
+        "honeyOak": "Varm, gyllene ek",
+        "umberOak": "Rökt gråbrun",
+        "smokedOak": "Djup, varm brun",
+        "cocoaOak": "Nästan svart espresso",
+        "walnut": "Djup, ådrad brun",
+        "tobaccoWalnut": "Varm mellanbrun",
+        "whiteAsh": "Ljus, rak ådring",
+        "whiteBeech": "Ljus, jämn neutral",
+        "birchSliced": "Fin, ljus ådring",
+        "birchRotary": "Bred, mjuk teckning"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Matchande produkter och tillbehör",
       "description": "Uppnå designkontinuitet med koordinerade Re-Sound-produkter.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Akustikpaneler med spår",
-      "item2Title": "Matchande Fanerkant",
-      "item2Desc": "Matchande trä kant",
+      "item1Desc": "Spårade brädor i samma faner för väggar och tak.",
+      "item2Title": "Överfanerade kanter",
+      "item2Desc": "Kanter i massivträ, överfanerade för osynliga skarvar över stora ytor.",
       "item3Title": "Gratis Prover",
       "item3Desc": "Begär prover av valfri fanér- och ytkombination."
     },
     "cta": {
       "title": "Redo att Lyfta ditt Projekt?",
       "description": "Få en skräddarsydd offert, begär fysiska prover eller tala med vårt specifikationsteam om ditt nästa projekt.",
-      "circularNote": "Cirkulär retur"
+      "circularNote": "Kostnadsfria fanerprover · Kostnadsfri återtagning vid slutet av livslängden"
     },
     "downloads": {
       "productDataSheet": "Produktdatablad"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "Var kommer den FSC-certifierade fanéret från?",
-          "answer": "Fanéret kommer från FSC-certifierade europeiska skogar (främst ek och valnöt). Chain-of-custody-certifikatnumret tillhandahålls per leverans på begäran."
+          "answer": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. Chain-of-custody-certifikatet tillhandahålls på begäran."
         },
         "fireRating": {
           "question": "Vad är brandklassificeringen?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Vad är den normala leveranstiden?",
-          "answer": "Lagerfanér levereras inom 3–4 veckor; träslag utanför lager och specialfinish kräver 6–8 veckor. Produktionskapacitet reserveras vid orderbekräftelse."
+          "answer": "Leveranstiden beror på faner och ytbehandling och bekräftas vid beställning. Kostnadsfria fanerprover finns innan du föreskriver; priser och minsta order på begäran."
         },
         "installMethod": {
           "question": "Hur installeras rWood-paneler?",
-          "answer": "Två metoder stöds: ett dolt klippsystem för snabb installation och enkel demontering, eller direktlimning för permanenta installationer. Båda beskrivs i installationsmanualen."
+          "answer": "rWood Panel är en slät fanerad MDF-panel och bearbetas som en sådan: sågas och CNC-fräses med vanliga träbearbetningsverktyg och monteras sedan mot underlaget eller byggs in i möbler. Monteringsanvisningen finns i nedladdningsblocket på den här sidan."
         },
         "substrateCleanup": {
           "question": "Vad händer med panelerna när de tjänat ut?",
-          "answer": "Re-Sound tar tillbaka panelerna kostnadsfritt i BE/NL/FR/DE/LU. Fanéret separeras från det återvunna filtsubstratet; båda flödena återgår till vår leveranskedja i stället för att gå till deponi."
+          "answer": "Re-Sound tar kostnadsfritt tillbaka panelerna vid slutet av livslängden i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel fanerad MDF-panel i närbild som visar ådringens detaljer",
       "closeUpOfLacqueredVeneerSurface": "Närbild på lackerad faneryta",
-      "sustainablyManagedForest": "Hållbart brukad skog"
+      "sustainablyManagedForest": "Hållbart brukad skog",
+      "hero": "rWood Panel fanerad träpanel",
+      "heroIn": "rWood Panel i {veneer}",
+      "veneerSwatch": "Fanerprov {name}"
+    },
+    "kpi": {
+      "veneers": "faner av äkta trä",
+      "ranges": "fanerserier: Nature och Gemini",
+      "fsc": "certifierade faner",
+      "anyValue": "Valfritt",
+      "anyLabel": "faner, bets och ytbehandling på beställning",
+      "ariaLabel": "Nyckeltal"
+    },
+    "ordering": {
+      "title": "Leveranstid och prover",
+      "orderCaption": "Beställning",
+      "supplyCaption": "Leverans",
+      "samplesVal": "Kostnadsfria fanerprover",
+      "samplesQuotesDesc": "Beställ kostnadsfria fanerprover eller skicka oss dina ritningar för en offert."
     }
   },
   "rpetFlexGroovePage": {

@@ -19,13 +19,13 @@
     "divideTitle": "Divide frittstående akustikkskjermer | Re-Sound",
     "divideDescription": "Frittstående akustikkskjermer med magnetisk modulær kobling: tosidig absorpsjon, ingen montering, resirkulert tekstil. Laget i Belgia.",
     "rwoodGrooveTitle": "rWood Groove — rillede akustikkpaneler, eik/valnøtt | Re-Sound",
-    "rwoodGrooveDescription": "Rillede akustikkpaneler i tre med FSC-sertifisert eike- og valnøttfiner på resirkulert filtkjerne. Klasse A-absorpsjon, 4 lamellvarianter, 5 overflater.",
+    "rwoodGrooveDescription": "Rillede akustikkbord i tre: FSC®-sertifisert eike- eller valnøttfinér på MDF-kjerne med 3 mm filt av resirkulert PET. αw 0,90, klasse A, fire lamellmønstre, fem finérer, 10 og 19 mm.",
     "rwoodPerfTitle": "rWood Perf — perforerte akustikkpaneler i tre | Re-Sound",
     "rwoodPerfDescription": "Perforerte akustikkpaneler i tre med FSC-sertifisert finer: fire perforeringsmønstre for bredbåndsabsorpsjon, 8 overflater, brannhemmende kjerne.",
     "rwoodMicroTitle": "rWood Micro — mikroperforerte akustikkpaneler i tre | Re-Sound",
-    "rwoodMicroDescription": "Mikroperforerte akustikkpaneler i tre (0,5 mm) med FSC-sertifisert finer: nesten usynlig mønster, brannklasse {fireClass}, mulighet for bakbelysning.",
-    "rwoodVeneerTitle": "rWood Panel — akustikkpaneler i trefiner, 10 tresorter | Re-Sound",
-    "rwoodVeneerDescription": "Glatte akustikkpaneler i trefiner i 10 tresorter: møbelkvalitet, FSC-sertifisert, EPD tilgjengelig. Børstet, beiset og lakkert, klare til montering.",
+    "rwoodMicroDescription": "Mikroperforerte akustikkpaneler i tre (fra 0,5 mm) med FSC-sertifisert finer: nesten usynlig mønster, brannklasse {fireClass}, etter mål opptil 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — finerte akustikkpaneler, 12 trefinérer | Re-Sound",
+    "rwoodVeneerDescription": "Glatte finerte akustikkpaneler i 12 finérer av ekte tre, Nature- eller Gemini-serie: FSC®-sertifisert, naturlakk eller pigmentert, HPL, folie eller maling. Fabrikkbehandlet, enhver finér på bestilling.",
     "rpetGrooveTitle": "rPET Groove — rillede PET-akustikkpaneler, 12 farger | Re-Sound",
     "rpetGrooveDescription": "Rillede PET-akustikkpaneler av resirkulerte flasker: 12 farger, 3 tykkelser (12/24/36 mm), NRC opptil 0,90, brannklasse B-s1,d0. Laget i Polen.",
     "rpetPanelTitle": "rPET Panel — resirkulert PET-akustikkpanel, 16 farger | Re-Sound",
@@ -1939,121 +1939,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "AKUSTIKKPANELER I TRE",
+      "tag": "RILLET AKUSTIKKPANEL I TRE",
       "title": "rWood Groove: rillede akustikkpaneler i tre, i eik og valnøtt",
-      "tagline": "Naturlig skjønnhet, perfekt akustikk",
-      "description": "Gi ethvert rom naturlig varme og sofistikert stil med rWood - Groove akustikkpaneler. Førsteklasses eike- og valnøttfiner kombinert med lydabsorberende filtbakside skaper harmoni mellom estetikk og akustikk.",
-      "usp1": "FSC® sertifisert tre",
-      "usp2": "Klasse A absorpsjon",
-      "usp3": "Gratis returordning"
+      "tagline": "Naturlig skjønnhet, perfekt akustikk.",
+      "description": "Eike- eller valnøttfinér i A-kvalitet på en MDF-kjerne, presisjonsfrest til vertikale lameller på en 3 mm filt av resirkulert PET. De åpne rillene leder lyden inn i filten; bordene skjøtes med skjult not og fjær. Bord på 300 mm bredde, 2 400 eller 2 780 mm lengde, i 10 og 19 mm, for vegger og tak.",
+      "usp1": "FSC®-sertifisert finér",
+      "usp2": "Absorpsjonsklasse A",
+      "usp3": "Gratis retur ved endt levetid"
     },
     "overview": {
-      "tag": "HÅNDVERK",
-      "title": "Der naturen møter design",
-      "subtitle": "Premium-finish",
-      "description": "rWood - Groove-paneler forvandler ethvert rom til et sofistikert akustisk miljø. Kombinasjonen av presisjonsfreste riller og førsteklasses trefiner skaper en overflate som er både visuelt slående og akustisk effektiv.",
-      "feature1": "Førsteklasses eike- og valnøttfiner i A-kvalitet",
-      "feature2": "Integrert akustisk filtbakside",
-      "feature3": "Sømløs skjøt mellom panelene",
-      "feature4": "Egnet for vegger og tak",
-      "description2": "rWood - Groove-paneler forvandler ethvert rom til et sted med naturlig skjønnhet og akustisk komfort. Hvert panel har førsteklasses eike- eller valnøttfiner i A-kvalitet, presist frest for å skape den karakteristiske lineære estetikken, samtidig som lydabsorpsjonen maksimeres gjennom den integrerte filtbaksiden."
-    },
-    "oakCollection": {
-      "title": "Eikkolleksjon",
-      "description": "Naturlig eikefiner i flere beisvarianter, fra rå lys eik til dype røkte toner."
+      "tag": "OVERSIKT",
+      "title": "Rillet eik eller valnøtt på filt av resirkulert PET",
+      "feature1": "Eike- eller valnøttfinér i A-kvalitet",
+      "feature2": "3 mm filtbakside av resirkulert PET, svart eller grå",
+      "feature3": "Skjult not-og-fjær-skjøt",
+      "feature4": "For vegger og tak, tørre innendørsrom",
+      "description2": "rWood Groove kombinerer eike- eller valnøttfinér i A-kvalitet med en MDF-kjerne som er presisjonsfrest til vertikale lameller. Den 3 mm filten av resirkulert PET bak lamellene tar opp lyden som kommer inn gjennom de åpne rillene, noe som demper etterklangen og bedrer taleforståeligheten. Fire lamellmønstre, fem lagerfinérer, og enhver finér og overflate på bestilling."
     },
     "feltBacking": {
-      "title": "Filtbaksidealternativer",
-      "description": "Naturgrå, svart eller farget akustisk filt synlig gjennom sporene."
+      "title": "Filtfarge",
+      "description": "3 mm filt av resirkulert PET bak lamellene, synlig gjennom rillene.",
+      "black": "Svart",
+      "grey": "Grå"
     },
     "acoustics": {
-      "tag": "YTELSE",
-      "title": "Overlegen lydabsorpsjon",
-      "benefit1Title": "Redusert etterklang",
-      "benefit1": "Kontroller ekko og forbedre taletydeligheten i ethvert rom",
-      "benefit2Title": "Økt komfort",
-      "benefit2": "Skap roligere og mer harmoniske omgivelser",
-      "benefit3Title": "Testet ytelse",
-      "benefit3": "Uavhengig verifiserte akustiske data",
-      "description": "Det unike spordesignet kombinert med akustisk filt av høy kvalitet gir eksepsjonell lydabsorpsjon. Reduser ekko og etterklang for å skape rolige, produktive rom.",
-      "ratingLabel": "Absorpsjon",
-      "description2": "Det unike spordesignet kombinert med akustisk filt av høy kvalitet gir eksepsjonell lydabsorpsjon. Reduser ekko, fjern støy og skap rom som er like behagelige for øret som for øyet.",
-      "diagramTitle": "Panelsektion",
-      "soundAbsorbed": "Lyd absorbert",
-      "testStandard": "Teststandard"
+      "tag": "AKUSTIKK",
+      "title": "Lydabsorpsjon",
+      "description2": "De åpne rillene leder lyden inn i filten av resirkulert PET bak lamellene, noe som demper etterklangen og bedrer taleforståeligheten.",
+      "tableTitle": "Lydabsorpsjon",
+      "behindTitle": "Bak bordet",
+      "behindDesc": "Montert på lekter kan hulrommet ta en ekstra absorbent: akustikkfilt, et rPET-panel eller mineralull.",
+      "note": "αw og absorpsjonsklasse iht. EN ISO 11654. Oktavbåndverdier følger med den nye testserien."
     },
     "installation": {
-      "tag": "ENKEL INSTALLASJON",
-      "title": "Sømløs installasjon",
-      "step1Title": "Forbered overflate",
-      "step1Desc": "Monter lekter eller påfør lim på en ren, tørr overflate",
-      "step2Title": "Plasser første panel",
-      "step2Desc": "Start fra hjørnet og sørg for at panelene ligger i vater",
-      "step3Title": "Koble paneler",
-      "step3Desc": "Skyv fjæren inn i noten for en sømløs forbindelse",
-      "step4Title": "Fullfør og avslutt",
-      "step4Desc": "Legg til avslutningslister for et profesjonelt resultat",
-      "description": "rWood - Groove-paneler har en innovativ not-og-fjær-forbindelse for rask og enkel montering.",
-      "description2": "rWood - Groove-paneler har et innovativt not-og-fjær-system som sikrer usynlige skjøter og en helhetlig overflate. Enten dere er profesjonelle montører eller dyktige gjør-det-selv-entusiaster, gjør systemet monteringen enkel."
+      "tag": "MONTERING",
+      "title": "Not og fjær, på lekter eller limt",
+      "step1Title": "Underlag",
+      "step1Desc": "Lekter eller lim på en ren, tørr og plan overflate.",
+      "step2Title": "Første bord",
+      "step2Desc": "Start fra et hjørne og kontroller at det er i vater.",
+      "step3Title": "Skjøting",
+      "step3Desc": "Skyv fjæren inn i noten for en usynlig skjøt.",
+      "step4Title": "Avslutning",
+      "step4Desc": "Avslutt kantene med endeprofiler.",
+      "description2": "Bordene festes på lekter eller limes til underlaget og skjøtes med skjult not og fjær, slik at skjøtene forsvinner i rillemønsteret."
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Ansvarlig innkjøpt",
-      "badge1": "FSC® sertifisert",
-      "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
-      "badge2": "Resirkulert filt",
-      "badge2Desc": "Akustisk bakside av resirkulerte materialer",
+      "badge1": "FSC®-sertifisert",
+      "badge1Desc": "Treet er FSC®-sertifisert, sertifikat C191539",
+      "badge2": "Filt av resirkulert PET",
+      "badge2Desc": "3 mm filtbakside av resirkulert PET",
       "badge3": "Produsert i Polen",
       "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen)",
-      "badge4": "Gratis returordning",
+      "badge4": "Gratis retur",
       "badge4Desc": "Panelene kommer kostnadsfritt tilbake til oss ved endt levetid",
-      "description": "Hvert rWood - Groove-panel er laget med bærekraft i kjernen. Vårt FSC®-sertifiserte tre kommer fra ansvarlig forvaltede skoger, og den akustiske baksiden er laget av resirkulerte materialer.",
-      "description2": "Hvert rWood - Groove-panel er laget med bærekraft i kjernen. Vår FSC®-sertifisering garanterer at treet kommer fra ansvarlig forvaltede skoger som gir miljømessige, sosiale og økonomiske fordeler."
+      "description2": "FSC®-sertifisert tre, en bakside av resirkulert PET og gratis retur ved endt levetid.",
+      "badge2DescCert": "3 mm filtbakside av resirkulert PET, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Miljødeklarasjon iht. ISO 14025 og EN 15804"
     },
     "specs": {
-      "tag": "TEKNISK",
-      "title": "Spesifikasjoner",
-      "acousticsTitle": "Akustisk ytelse",
-      "fireTitle": "Brannsikkerhet",
-      "certsTitle": "Sertifiseringer",
-      "applicationsTitle": "Anvendelser",
-      "dimensionsTitle": "Dimensjoner",
-      "materialsTitle": "Materialer",
-      "dimPanelWidth": "Panelbredde",
-      "dimPanelLength": "Panellengde",
-      "dimThickness": "Tykkelse",
-      "dimGrooveDepth": "Rilledybde",
-      "dimGrooveWidth": "Rillebredde",
-      "matVeneer": "Finer",
-      "matVeneerVal": "A-klasse eik / valnøtt",
-      "matCore": "Kjerne",
-      "matCoreVal": "MDF (standard / fuktbestandig / brannhemmende)",
-      "matBacking": "Bakside",
-      "matBackingVal": "Resirkulert PET (3 mm)",
+      "tag": "TEKNISKE DATA",
+      "title": "Bord, brann og utslipp",
+      "acousticsTitle": "Lydabsorpsjon",
+      "fireTitle": "Brann (EN 13501-1) og utslipp",
+      "dimPanelWidth": "Bredde",
+      "dimPanelLength": "Lengde",
+      "matCoreVal": "Standard-, MR- eller FR-MDF",
       "matFinish": "Overflate",
-      "finishVal": "Olje / lakk",
-      "stdPanels": "Standardpaneler",
-      "fireMdfVal": "Brannhemmende MDF",
-      "woodSourcing": "Trekilder",
-      "feltCert": "Filtsertifisering",
-      "envLabel": "Miljømessig",
-      "vocLabel": "VOC-utslipp",
-      "vocVal": "E1 / Lavt utslipp",
-      "appInstall": "Installasjon",
-      "appWalls": "Vegger og tak",
-      "appEnv": "Miljø",
-      "appEnvVal": "Innendørs (tørre områder)",
-      "appMoist": "Fuktbestandig",
-      "appMoistVal": "Tilgjengelig for fuktige områder",
-      "appConn": "Forbindelse",
-      "appConnVal": "Not og fjær"
+      "finishVal": "Inntrengende olje eller lakk",
+      "plankTitle": "Bord",
+      "dimGroove": "Rille",
+      "dimGrooveVal": "15 mm bred, 7 · 15 mm dyp",
+      "feltVal": "Resirkulert PET, 3 mm, svart eller grå",
+      "connVal": "Skjult not og fjær",
+      "weightPlank": "Vekt per bord",
+      "weightPlankVal": "ca. 6,4–8,3 kg",
+      "tolerances": "Toleranser",
+      "tolerancesVal": "Tykkelse ± 0,2 mm, vekt ± 10 %",
+      "octaveBands": "Oktavbåndverdier",
+      "octaveBandsVal": "Følger med den nye testserien",
+      "fireStdCore": "Standard MDF-kjerne",
+      "fireFrCore": "FR MDF-kjerne",
+      "fireFelt": "Filtbakside",
+      "fscVal": "FSC®-sertifisert, C191539",
+      "epdVal": "EPD iht. ISO 14025 · EN 15804",
+      "finishTitle": "Overflate",
+      "oakOilColours": "Oljefarger eik",
+      "oakOilColoursVal": "Natur, Hvit, Klar, Brun, Mørkebrun, Svart",
+      "walnutFinish": "Valnøtt",
+      "walnutFinishVal": "Natur, oljet",
+      "feltColours": "Filtfarger",
+      "feltColoursVal": "Svart eller grå",
+      "optionsTitle": "Alternativer",
+      "surfaceVal": "Oljet eller malt, ubehandlet på forespørsel",
+      "madeToOrder": "På bestilling",
+      "madeToOrderVal": "Enhver finér og overflate",
+      "accessories": "Tilbehør",
+      "accessoriesVal": "Endeprofiler, hjørneprofiler, lekter, reparasjonssett"
     },
     "accessories": {
-      "tag": "FULLFØR STILEN",
+      "tag": "TILBEHØR",
       "title": "Tilbehør",
-      "endMouldings": "Endebeslag",
-      "cornerProfiles": "Hjørneprofiler",
-      "description": "Profesjonell finish for et perfekt resultat",
+      "description": "Endeprofiler, hjørneprofiler, lekter og et reparasjonssett.",
       "item1Title": "Endebeslag",
       "item1Desc": "Rene kanter der panelene møter andre overflater",
       "item2Title": "Hjørneprofiler",
@@ -2068,57 +2058,50 @@
       "title": "Prosjekter og Installasjoner"
     },
     "patterns": {
-      "tag": "DESIGNVALG",
-      "title": "Premium-finish",
-      "description": "Fire ulike spormønstre som passer enhver arkitektonisk visjon. Fra klassisk spilepanel til moderne lineært uttrykk – hvert mønster forvandler veggen til en dynamisk flate.",
-      "description2": "Fire ulike spormønstre som passer enhver arkitektonisk visjon. Fra klassisk balanserte proporsjoner til markante brede lameller – finn det perfekte uttrykket for deres rom."
+      "tag": "MØNSTRE",
+      "title": "Fire lamellmønstre",
+      "description2": "Fire lamellmønstre på det samme 300 mm bordet, fra den klassiske Original med seks lameller til den brede 3-Lamella. Tegningene er i målestokk: lamellbredder og 15 mm riller som på bordet.",
+      "drawingAlt": "Mønster {name}, {dims}, i målestokk på et 300 mm bord",
+      "lamellaCount": "{count} lameller",
+      "note": "Bordbredde 300 mm, rillebredde 15 mm. Standardmål 19 × 300 × 2 400 eller 2 780 mm. Vekt per bord ca. 6,4–8,3 kg. Toleranser: tykkelse ± 0,2 mm, vekt ± 10 %."
     },
     "materials": {
       "tag": "MATERIALER",
-      "oilFinishesTitle": "Oljefinish",
-      "oilFinishesDesc": "Oljefinish i Natur, Hvit, Klar, Brun, Mørk brun og Svart. Hver olje trenger dypt inn i treet for varig, autentisk beskyttelse.",
+      "oilFinishesTitle": "Eik: inntrengende olje eller lakk",
+      "oilFinishesDesc": "Overflate: inntrengende olje eller lakk. Oljefarger for eik: Natur, Hvit, Klar, Brun, Mørkebrun og Svart.",
       "walnutTitle": "Valnøtt",
-      "walnutDesc": "Rike, varme toner med et karakteristisk åremønster. Førstevalget for eksklusive interiører.",
-      "description": "Hvert rWood - Groove-panel er laget med finer i A-kvalitet, som sikrer jevn åring og farge. Den oljebehandlede overflaten er klar til montering uten ytterligere behandling.",
-      "colorSelector": "Velg trefinish",
-      "layer1Name": "Eik / valnøttfinér",
-      "layer1Desc": "Premium A-klasse naturlig tre",
-      "layer2Name": "MDF-kjerne med riller",
-      "layer2Desc": "Lydinngangskanaler",
-      "layer3Name": "Akustisk filtbakside",
-      "layer3Desc": "Resirkulert PET, 3 mm tykk",
-      "waveLabel": "Lydbølger absorbert",
-      "certNote": "Uavhengig testet og sertifisert i henhold til ISO 11654",
-      "description2": "Hvert rWood - Groove-panel er laget med finer i A-kvalitet, som sikrer et jevnt åremønster og overlegen kvalitet. Velg blant vårt utvalg av oljede og malte overflater for å komplettere interiøret perfekt."
+      "walnutDesc": "Natur, oljet. Dyp, året brun (Walnut) eller varm mellombrun (Tobacco Walnut).",
+      "colorSelector": "Finér",
+      "selectPrompt": "Velg en finér"
     },
     "downloads": {
       "installationGuide": "Installasjonsveiledning",
       "colorChart": "Farve- og overflate veiledning"
     },
     "cta2": {
-      "freeNote": "Gratis prøver tilgjengelig • FSC®-sertifisert"
+      "freeNote": "Gratis finérprøver · FSC®-sertifisert finér"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Hvor kommer FSC-sertifisert finér fra?",
-          "answer": "Finéren hentes fra FSC-sertifiserte europeiske skoger (hovedsakelig eik og valnøtt). Chain-of-custody-sertifikatnummeret oppgis per leveranse på forespørsel."
+          "answer": "Finéren er FSC®-sertifisert: chain-of-custody-sertifikat C191539. Alle tolv rWood-finérer kommer fra ansvarlig forvaltede skoger; sertifikatet fås på forespørsel."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1 — kjernen vi spesifiserer for rømningsveier og offentlige bygg. Brannsertifikatet ligger i nedlastingsblokken på denne siden."
+          "answer": "Det avhenger av kjernen. Med den brannhemmende (FR) MDF-kjernen er rWood Groove klassifisert B-s1,d0 iht. EN 13501-1; på en standard MDF-kjerne er klassifiseringen D-s2,d2. Filtbaksiden er B-s1,d0. Spesifiser FR-kjernen for rømningsveier og offentlige bygg."
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfinér sendes innen 3–4 uker; tresorter utenfor lager og spesialfinish krever 6–8 uker. Produksjonskapasitet reserveres ved ordrebekreftelse."
+          "answer": "Leveringstiden avhenger av lageret og bekreftes ved bestilling. Gratis finérprøver er tilgjengelige før du spesifiserer; priser og minsteordre på forespørsel."
         },
         "installMethod": {
           "question": "Hvordan monteres rWood-paneler?",
-          "answer": "To metoder støttes: et skjult clip-system for rask montering og enkel demontering, eller direkte liming for permanente installasjoner. Begge er beskrevet i monteringsanvisningen."
+          "answer": "rWood Groove festes på lekter eller limes til et rent, tørt og plant underlag. Start fra et hjørne, skyv fjæren på hvert bord inn i noten på det forrige for en usynlig skjøt, og avslutt kantene med endeprofiler."
         },
         "substrateCleanup": {
           "question": "Hva skjer med panelene ved livets slutt?",
-          "answer": "Re-Sound tar panelene tilbake gratis i BE/NL/FR/DE/LU. Finéren skilles fra det resirkulerte filt-substratet; begge strømmer går tilbake i forsyningskjeden vår i stedet for til deponi."
+          "answer": "Re-Sound tar bordene gratis i retur ved endt levetid i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
         }
       }
     },
@@ -2126,139 +2109,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove akustikkpanel i et moderne interiør",
       "woodFinishSamples": "Prøver av treoverflater",
       "panelInstallationProcess": "Monteringsprosess for panelet",
-      "sustainableForestry": "Bærekraftig skogbruk"
+      "sustainableForestry": "Bærekraftig skogbruk",
+      "hero": "rWood Groove rillede akustikkbord i tre",
+      "heroIn": "rWood Groove rillede akustikkbord i tre i {finish}",
+      "veneerSwatch": "Finérprøve {name}"
     },
     "options": {
       "originalDesc": "Klassisk design med 6 lameller",
       "mixedDesc": "Dynamiske, varierende bredder",
       "4lamellaDesc": "Markante, brede lister",
       "3lamellaDesc": "Iøynefallende, brede paneler"
+    },
+    "kpi": {
+      "thickness": "mm tykkelse",
+      "alphaWClass": "αw, absorpsjonsklasse {cls}",
+      "alphaW": "αw, veid lydabsorpsjon",
+      "fire": "brannreaksjon, FR MDF-kjerne",
+      "patterns": "lamellmønstre på 300 mm bord",
+      "ariaLabel": "Nøkkeltall"
+    },
+    "buildUp": {
+      "tag": "OPPBYGNING",
+      "title": "Tre lag, ett bord",
+      "layer1": "Finérside",
+      "layer1Desc": "Eik eller valnøtt i A-kvalitet",
+      "layer2": "MDF-lameller",
+      "layer2Desc": "Standard-, MR- eller FR-kjerne",
+      "layer3": "Filt av resirkulert PET",
+      "layer3Desc": "3 mm, svart eller grå",
+      "fixing": "Festes på lekter eller limes til underlaget."
+    },
+    "veneers": {
+      "tag": "FINÉRER OG OVERFLATER",
+      "title": "Eik og valnøtt, enhver finér på bestilling",
+      "description": "Fem lagerfinérer, oljet eller lakkert. Velg en finér for å se den på bordet.",
+      "silkOak": "Myk greige tone",
+      "strawOak": "Lys, varm-nøytral eik",
+      "umberOak": "Røkt gråbrun",
+      "walnut": "Dyp, året brun",
+      "tobaccoWalnut": "Varm mellombrun",
+      "guideNote": "Alle tolv rWood-finérer vises i rWood farge- og overflateguiden. Ekte tre varierer i farge og åring: be om prøver før du spesifiserer."
+    },
+    "ordering": {
+      "title": "Leveringstid og prøver",
+      "orderCaption": "Bestilling",
+      "supplyCaption": "Levering",
+      "leadTimeVal": "Avhengig av lager, bekreftes ved bestilling",
+      "samplesVal": "Gratis finérprøver",
+      "samplesQuotesDesc": "Bestill gratis finérprøver, eller send oss tegningene dine for et tilbud."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PERFORERTE AKUSTISKE TREPANELER",
+      "tag": "PERFORERT AKUSTIKKPANEL I TRE",
       "title": "rWood Perf: perforerte akustikkpaneler i tre",
-      "tagline": "Presisjonsperforeringer, maksimal absorpsjon",
-      "description": "Høytytende borede akustikkpaneler som kombinerer naturlig treskjønnhet med fremragende lydabsorpsjon. En brannhemmende MDF-kjerne og overfinerte kanter gir høyeste nivå av brannsikkerhet og akustisk kontroll.",
+      "tagline": "Presise perforeringer, maksimal absorpsjon.",
+      "description": "Runde perforeringer boret gjennom det finerte, brannhemmende MDF-panelet slipper lyden inn i den akustiske fleecen og absorbenten bak. Fire mønstre, fra et diskré 5 mm-hull til et dobbelt 8 mm-mønster med 24 % åpent areal.",
       "usp1": "Runde perforeringer",
       "usp2": "Brannklasse {fireClass}",
-      "usp3": "αw {alphaW} per mønster",
-      "description2": "Høytytende borede akustikkpaneler som kombinerer naturlig treskjønnhet med fremragende lydabsorpsjon. En brannhemmende MDF-kjerne og overfinerte kanter gir høyeste nivå av brannsikkerhet og akustisk kontroll for krevende offentlige rom."
+      "usp3": "αw {alphaW} etter mønster",
+      "description2": "Etter mål for vegger og himlinger, opptil 3 050 × 1 220 mm, i 10 og 19 mm. Åtte lagerfinerer, enhver finer og overflate på bestilling."
     },
     "patterns": {
-      "tag": "PERFORASJONSMØNSTRE",
-      "title": "Velg ditt mønster",
-      "description": "Fire borede perforeringsmønstre med kalibrerte akustiske egenskaper. Fra maksimalt åpent areal for høyeste absorpsjon til diskrete mikroperforeringer for et rent treuttrykk.",
-      "coreMatchTitle": "Match kjernen til ditt finer for å gjøre perforeringer usynlige—eller gjør dem til et designelement.",
-      "coreColorTitle": "Kjernfarge",
-      "coreMatchDesc": "Tilpass kjernen til fineren slik at perforeringene går i ett med overflaten, eller velg en kontrasterende kjerne for et tydelig designgrep.",
-      "description3": "Fire borede perforeringsmønstre med kalibrerte akustiske egenskaper. Fra maksimalt åpent areal for krevende akustiske rom til mer diskrete mønstre som prioriterer visuell eleganse.",
-      "coreMatchDesc2": "Tilpass kjernen til fineren slik at perforeringene går i ett med overflaten, eller velg en kontrasterende kjerne for en dekorativ effekt."
-    },
-    "coreColor": {
-      "title": "Kjernfarge",
-      "description": "Svart eller naturfarget akustisk filt synlig gjennom perforeringene—subtilt men virkningsfullt."
+      "tag": "PERFORERING",
+      "title": "Fire perforeringsmønstre",
+      "description": "Hullstørrelse og åpent areal per mønster. Jo større åpent areal, desto høyere absorpsjon.",
+      "coreColorTitle": "Kjernefarge",
+      "coreMatchDesc2": "En lys eller mørk brannhemmende MDF-kjerne, synlig gjennom hullene: tilpass den til fineren så perforeringene går i ett med treet, eller velg kontrast for en grafisk effekt.",
+      "spec": "Ø {d} mm · {pct} % åpen",
+      "specDouble": "2 × Ø {d} mm · {pct} % åpen",
+      "drawingNote": "Tegninger omtrent 1:2, hullstørrelse og åpent areal som angitt per mønster.",
+      "coreLight": "Lys kjerne",
+      "coreDark": "Mørk kjerne"
     },
     "surfaces": {
-      "tag": "OVERFLATER",
-      "title": "Premium treoverflater",
-      "natureVeneers": "Nature-finerer",
-      "natureDesc": "Levende variasjoner og det karakteristiske uttrykket som kjennetegner hvert enkelt treslag.",
-      "geminiVeneers": "Gemini-finerer",
-      "geminiDesc": "Jevn fargetone og struktur for et mer harmonisk og ensartet utseende.",
-      "finishes": "Overflatefinish",
-      "description": "Hvert rWood - Perf-panel produseres med overfinerte kanter – en tradisjonell håndverksteknikk som gir perfekt sømløse skjøter og eliminerer synlige panelgrenser.",
-      "finish1": "Naturlig lakk",
-      "finish2": "Pigmentert",
-      "finish3": "HPL-laminat",
-      "colorSelector": "Velg trefinér",
-      "description3": "Hvert rWood - Perf-panel produseres med overfinerte kanter – en tradisjonell produksjonsteknikk der kantlister i massivt tre integreres rundt panelet før finering. Dette gir hvert panel et utseende som om det er laget helt i tre, med sømløse skjøter over store flater."
+      "colorSelector": "Lagerfinerer",
+      "selectVeneer": "Velg en finer"
     },
     "acoustics": {
-      "tag": "YTELSE",
-      "title": "Designet for lyd",
-      "benefit1Title": "Bredbåndsabsorpsjon",
-      "benefit1": "Effektiv over hele frekvensspekteret, fra lave til høye frekvenser",
-      "benefit2Title": "Brannsikkerhet",
-      "benefit2": "Brannklasse {fireClass} med den brannhemmende MDF-kjernen (EN 13501-1)",
-      "benefit3Title": "Justerbar ytelse",
-      "benefit3": "Fire perforeringsmønstre for skreddersydde akustiske løsninger",
-      "description": "Presisjonsborede perforeringer lar lydbølgene trenge inn i panelet og videre til absorpsjonslaget bak. Hulrommet bak panelet forsterker i tillegg absorpsjonen av lave frekvenser.",
-      "layer1Name": "Trefinér + perforeringer",
-      "layer1Desc": "Overfinert, presisjonsboret overflate",
-      "layer2Name": "Brannhemmende MDF-kjerne",
-      "layer2Desc": "Brannhemmende, densitet 0,45 kg/m³",
-      "layer3Name": "Akustisk fleece",
-      "layer3Desc": "Forhindrer fibervandring",
-      "layer4Name": "Mineralullhulrom",
-      "layer4Desc": "30–50 mm for bredbåndsabsorpsjon",
-      "waveLabel": "Lydbølger absorbert",
-      "certNote": "Uavhengig testet og sertifisert i henhold til ISO 11654",
-      "ratingLabel": "Absorpsjon",
-      "description3": "Presisjonsborede perforeringer lar lydbølgene trenge inn i panelet og videre til hulrommet bak. Kombinert med mineralullisolasjon gir rWood - Perf fremragende bredbåndsabsorpsjon over hele frekvensspekteret – fra dyp bass til høy diskant.",
-      "diagramTitle": "Panelsektion",
-      "fireRating": "Brannklasse",
-      "noiseReduction": "Støyreduksjon",
-      "ratingPerPattern": "per mønster"
+      "tag": "AKUSTIKK",
+      "title": "Lydabsorpsjon",
+      "description": "Lyden går gjennom perforeringene inn i den akustiske fleecen og hulrommet bak panelet. Jo større åpent areal, desto høyere absorpsjon.",
+      "tableTitle": "Lydabsorpsjon",
+      "alphaWByPattern": "αw, etter mønster",
+      "withWool": "Med 50 mm mineralull",
+      "withWoolVal": "αw opptil 1.00",
+      "mounting": "Montering ved test",
+      "mountingVal": "Hulrom med mineralull",
+      "pattern": "Mønster",
+      "openArea": "Åpent areal",
+      "class": "Klasse",
+      "octaveTitle": "αs per oktavbånd, mønster PD8 med hulrom",
+      "footnote": "αs per oktavbånd: mønster PD8 med hulrom, veiledende. Verdiene avhenger av mønsteret, hulrommets dybde og absorbenten bak panelet."
     },
     "installation": {
-      "tag": "SKJULT MONTERING",
-      "title": "Sømløs installasjon",
-      "step1Title": "Monter underramme",
-      "step1Desc": "Monter metallskinner på vegg- eller takkonstruksjonen",
-      "step2Title": "Plasser isolasjon",
-      "step2Desc": "Legg mineralull i hulrommet for optimal absorpsjon",
-      "step3Title": "Klipspaneler",
-      "step3Desc": "Skjult klipssystem for verktøyfri montering uten spalter",
-      "step4Title": "Perfekt justering",
-      "step4Desc": "Gjennomgående perforeringsmønstre med sømløse overfinerte skjøter",
-      "description": "rWood - Perf-paneler monteres med et skjult klipssystem for et usynlig, sømløst uttrykk.",
-      "description3": "rWood - Perf-paneler monteres med et skjult klipssystem utviklet for presisjon, hastighet og et feilfritt sluttresultat. Systemet sikrer skjøter uten spalter og perfekt innrettede perforeringsmønstre på tvers av flere paneler."
+      "tag": "MONTERING",
+      "title": "Skjult klipssystem for vegger og himlinger",
+      "step1Title": "Underkonstruksjon",
+      "step1Desc": "Metallskinner på vegg- eller himlingskonstruksjonen.",
+      "step2Title": "Isolasjon",
+      "step2Desc": "Mineralull i hulrommet for best absorpsjon.",
+      "step3Title": "Paneler",
+      "step3Desc": "Skjulte klips, montering uten verktøy og uten fuge.",
+      "step4Title": "Resultat",
+      "step4Desc": "Mønstre på linje fra panel til panel.",
+      "description": "Metallskinner, mineralull i hulrommet, og så klikkes panelene på plass uten verktøy og uten fuge, slik at perforeringsmønsteret fortsetter fra panel til panel."
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
-      "title": "Bygget for å vare, bygget ansvarlig",
-      "badge1": "FSC® sertifisert",
-      "badge2": "{pct} % resirkulert innhold",
+      "title": "Ansvarlig produsert",
+      "badge1": "FSC®-sertifisert finer",
+      "badge2": "{pct} % resirkulert innhold",
       "badge3": "Produsert i Polen",
-      "badge4": "Ultralave utslipp",
+      "badge4": "Formaldehydklasse E1",
       "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
-      "badge2Desc": "Resirkulert materiale fra forbrukeravfall i kjernen",
-      "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen) — korte forsyningskjeder",
-      "badge4Desc": "Uten tilsatt formaldehyd",
-      "description": "rWood - Perf kombinerer slitesterke, naturlige materialer med en ansvarlig produksjonstilnærming.",
-      "description3": "rWood - Perf kombinerer slitesterke, naturlige materialer med ansvarlig innkjøp: en brannhemmende MDF-kjerne uten tilsatt formaldehyd og finer fra bærekraftig forvaltede skoger."
+      "badge2Desc": "Resirkulert materiale i panelet",
+      "badge3Desc": "Produsert på vår egen fabrikk i Częstochowa (Polen)",
+      "badge4Desc": "Brannhemmende MDF-kjerne med lave utslipp, for tørre innendørsrom",
+      "description": "FSC®-sertifisert finer, formaldehydklasse E1 og produksjon på vår egen fabrikk i Częstochowa. Ved endt levetid tar vi panelene gratis tilbake i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
     },
     "specs": {
-      "tag": "TEKNISK",
-      "title": "Spesifikasjoner",
-      "dimensionsTitle": "Dimensjoner – vegger og tak",
-      "acousticsTitle": "Akustisk ytelse",
-      "perforationsTitle": "Perforeringsalternativer",
-      "fireTitle": "Brannsikkerhet",
-      "certsTitle": "Sertifiseringer",
-      "customSizes": "Spesialmål",
-      "dimThickness": "Tykkelse",
-      "dimWeight": "Vekt",
-      "matTitle": "Materialer",
-      "matCustomColor": "Tilpassede fargetoner med transparent eller dekkende pigmentering",
-      "matLacquerFinish": "Fra supermatt til høyglans UV-herdet lakk",
-      "surfaceLabel": "Overflate",
-      "surfaceVal": "Finér / HPL / folie / maling",
-      "coreVal": "MDF-kjerne (brun / grønn / svart)",
+      "tag": "TEKNISKE DATA",
+      "title": "Panel, brann og utslipp",
+      "acousticsTitle": "Lydabsorpsjon",
+      "perforationsTitle": "Perforeringsmønstre",
+      "fireTitle": "Brann og utslipp",
+      "matTitle": "Overflate og tilvalg",
+      "surfaceLabel": "Overflatebehandlinger",
+      "surfaceVal": "Naturlakk · pigmentert · HPL-laminat · folie · maling",
+      "coreVal": "Brannhemmende MDF, lys eller mørk",
       "edgesLabel": "Kanter",
-      "edgesVal": "Overfinert massivt tre",
-      "acousticFelt": "Akustisk filt",
-      "feltColor": "Svart / hvit",
+      "edgesVal": "Overfinert massivtre for sømløse skjøter",
+      "feltColor": "Svart eller hvit",
       "reactionFire": "Brannreaksjon",
-      "resistanceFire": "Brannsikring",
-      "fireRetardant": "Branndempende",
-      "vocLabel": "VOC-utslipp",
-      "vocVal": "TVOC-godkjent (ISO 16000)",
-      "formaldehydeLabel": "Formaldehyd",
-      "formaldehydeVal": "Ingen tilsatt urea-formaldehyd",
-      "envLabel": "Miljømessig"
+      "panelTitle": "Panel",
+      "sizes": "Mål",
+      "fleeceLabel": "Akustisk fleece",
+      "acWithMinWool": "Med 50 mm mineralull",
+      "acWithMinWoolVal": "αw opptil 1.00",
+      "fireStandard": "Brannstandard",
+      "finishLabel": "Lakk",
+      "finishVal": "UV-herdet, supermatt til høyglans, naturell eller pigmentert",
+      "rangesLabel": "Finerserier",
+      "rangesVal": "Nature (levende åretegning med karakter) · Gemini (jevn, ensartet tone)",
+      "coreColoursLabel": "Kjernefarger",
+      "appsTitle": "Montering",
+      "appInstall": "Bruksområde",
+      "appWalls": "Vegger og himlinger",
+      "mountingSystem": "Innfesting",
+      "subframe": "Underkonstruksjon",
+      "mounting": "Montering ved test",
+      "mountingVal": "Hulrom med mineralull",
+      "pd8Val": "2 × Ø 8 mm · 24 % åpen",
+      "ph10Val": "Ø 10 mm · 18 % åpen",
+      "ph8Val": "Ø 8 mm · 12 % åpen",
+      "ph5Val": "Ø 5 mm · 5 % åpen",
+      "envVal": "Innendørs, tørre rom",
+      "coreColoursVal": "Brun, grønn eller svart: lys eller mørk for å skjule eller fremheve perforeringene",
+      "subframeVal": "Metallskinner",
+      "concealedClip": "Skjulte klips, uten verktøy, uten fuge"
     },
     "gallery": {
       "tag": "INSPIRASJON",
@@ -2266,191 +2275,228 @@
     },
     "overview": {
       "tag": "BEVIST YTELSE",
-      "description": "rWood - Perf-paneler er blant de mest effektive akustiske veggløsningene. Presisjonsborede perforeringer lar lyden passere gjennom den dekorative treoverflaten og inn i den høyabsorberende kjernen.",
       "feature1": "Brannhemmende MDF-kjerne ({fireClass})",
-      "feature2": "Overfinerte kanter for sømløse skjøter",
-      "feature3": "Lys eller mørk kjerne for et diskret mønster",
-      "feature4": "Tilpassede formater opptil 3050 × 1220 mm",
-      "description3": "rWood - Perf-paneler er blant de mest effektive og mest brukte løsningene for akustiske vegger og tak. De presist borede runde perforeringene gir et stort åpent areal som garanterer høy lydabsorpsjon, mens førsteklasses trefiner sikrer et naturlig, varmt utseende.",
-      "description4": "Kombinert med en brannhemmende MDF-kjerne og overfinerte kanter for sømløse skjøter er disse panelene konstruert for de høyeste kravene i store offentlige rom – fra atrier og konsertsaler til kontorer og skoler."
-    },
-    "accessories": {
-      "tag": "FULLFØR STILEN",
-      "title": "Tilbehør",
-      "description": "Profesjonelle avslutningselementer for et feilfritt resultat",
-      "item1Title": "Kantprofiler",
-      "item1Desc": "Matchende profiler for rene panelavslutninger",
-      "item2Title": "Hjørneløsninger",
-      "item2Desc": "Sømløse overganger i innvendige og utvendige hjørner",
-      "item3Title": "Monteringsskinner",
-      "item3Desc": "Skjult underkonstruksjon i aluminium",
-      "item4Title": "Mineralull",
-      "item4Desc": "30–50 mm isolasjon for optimal ytelse"
+      "feature2": "Lys eller mørk kjerne for å skjule eller fremheve perforeringene",
+      "feature3": "Etter mål opptil 3 050 × 1 220 mm, i 10 og 19 mm",
+      "feature4": "Skjulte klips, uten verktøy, uten fuge, mønstre på linje fra panel til panel",
+      "title": "Jo større åpent areal, desto høyere absorpsjon",
+      "description1": "rWood Perf er et finert, brannhemmende MDF-panel med runde perforeringer boret tvers igjennom. Lyden går gjennom hullene inn i den akustiske fleecen og hulrommet bak panelet, der den absorberes.",
+      "description2": "Fire mønstre lar deg velge mellom absorpsjon og diskresjon: fra et diskré 5 mm-hull med 5 % åpent areal til det doble 8 mm-mønsteret PD8 med 24 % åpent areal."
     },
     "cta": {
-      "note": "Gratis prøver tilgjengelig • FSC®-sertifisert"
+      "note": "Gratis finerprøver · FSC®-sertifisert finer"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "Hvor kommer FSC-sertifisert finér fra?",
-          "answer": "Finéren hentes fra FSC-sertifiserte europeiske skoger (hovedsakelig eik og valnøtt). Chain-of-custody-sertifikatnummeret oppgis per leveranse på forespørsel."
+          "question": "Hvor kommer den FSC-sertifiserte fineren fra?",
+          "answer": "Alle rWood-finerer er FSC®-sertifiserte og kommer fra ansvarlig forvaltede skoger. De åtte lagerfinerene kommer fra Europa, Skandinavia og Nord-Amerika; nummeret på chain-of-custody-sertifikatet oppgis på forespørsel."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1 — kjernen vi spesifiserer for rømningsveier og offentlige bygg. Brannsertifikatet ligger i nedlastingsblokken på denne siden."
+          "answer": "Med den brannhemmende MDF-kjernen er rWood Perf klassifisert B-s1,d0 etter EN 13501-1. Panelet er beregnet for tørre innendørsrom."
         },
         "leadTime": {
-          "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfinér sendes innen 3–4 uker; tresorter utenfor lager og spesialfinish krever 6–8 uker. Produksjonskapasitet reserveres ved ordrebekreftelse."
+          "question": "Hva er vanlig leveringstid?",
+          "answer": "Lagerfinerer leveres på 3–4 uker; treslag utenfor lager og spesialoverflater tar 6–8 uker. Paneler etter mål produseres etter tegningene dine."
         },
         "installMethod": {
           "question": "Hvordan monteres rWood-paneler?",
-          "answer": "To metoder støttes: et skjult clip-system for rask montering og enkel demontering, eller direkte liming for permanente installasjoner. Begge er beskrevet i monteringsanvisningen."
+          "answer": "Med et skjult klipssystem: metallskinner på vegg- eller himlingskonstruksjonen, mineralull i hulrommet, og så klikkes panelene på plass uten verktøy og uten fuge, slik at perforeringsmønsteret fortsetter fra panel til panel."
         },
         "substrateCleanup": {
-          "question": "Hva skjer med panelene ved livets slutt?",
-          "answer": "Re-Sound tar panelene tilbake gratis i BE/NL/FR/DE/LU. Finéren skilles fra det resirkulerte filt-substratet; begge strømmer går tilbake i forsyningskjeden vår i stedet for til deponi."
+          "question": "Hva skjer med panelene ved endt levetid?",
+          "answer": "Re-Sound tar panelene gratis tilbake ved endt levetid i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf panel i nærbilde som viser runde perforeringer",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Detalj av trefineroverflaten på perforert trepanel",
-      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel med skjult monteringssystem",
-      "sustainableWoodSourcingAndProduction": "Bærekraftig innkjøp av tre og produksjon"
+      "sustainableWoodSourcingAndProduction": "FSC-sertifisert trefiner",
+      "hero": "Perforerte akustikkpaneler i tre, rWood Perf, på en vegg",
+      "heroVeneer": "rWood Perf-panel i {name}",
+      "overview": "Nærbilde av de runde perforeringene i et rWood Perf-panel",
+      "installation": "Metallskinner og skjulte klips i rWood Perf-monteringssystemet"
     },
     "options": {
-      "pd8Desc": "Maksimal absorpsjon, stort åpent areal",
+      "pd8Desc": "Dobbelt mønster, maksimal absorpsjon",
       "ph10Desc": "Høy absorpsjon, markante perforeringer",
       "ph8Desc": "Balanse mellom utseende og ytelse",
-      "ph5Desc": "Diskret mønster, subtil overflate"
+      "ph5Desc": "Diskré mønster, rolig overflate"
+    },
+    "kpi": {
+      "ariaLabel": "Nøkkeltall",
+      "thickness": "paneltykkelse, etter mål",
+      "alphaW": "αw, etter mønster",
+      "alphaWPd8": "αw med mønster PD8, {range} etter mønster",
+      "fire": "brannreaksjon, brannhemmende MDF-kjerne",
+      "patterns": "perforeringsmønstre, Ø 5 til 10 mm"
+    },
+    "buildUp": {
+      "alt": "Eksplosjonstegning av de tre lagene: perforert finer, gjennomboret brannhemmende MDF-kjerne, akustisk fleece",
+      "layer1": "Perforert finer",
+      "layer1Desc": "A-kvalitet, boret Ø 5 til 10 mm",
+      "layer2": "Brannhemmende MDF-kjerne",
+      "layer2Desc": "Lys eller mørk, gjennomboret",
+      "layer3": "Akustisk fleece",
+      "layer3Desc": "Svart eller hvit",
+      "behind": "Bak panelet: hulrom med mineralull."
+    },
+    "veneers": {
+      "title": "Åtte lagerfinerer, enhver finer på bestilling",
+      "description": "Alle rWood-finerer er FSC®-sertifiserte og kommer fra ansvarlig forvaltede skoger. Tre er et naturmateriale: åretegning og farge varierer fra panel til panel, og prøver på skjerm er kun veiledende.",
+      "alt": "Finer {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavia",
+        "northAmerica": "Nord-Amerika"
+      },
+      "grain": {
+        "straightInterlocked": "Rett til krysstrådet",
+        "subtleFine": "Diskré fin åretegning",
+        "fineStraight": "Fin rett åretegning",
+        "cathedral": "Katedralåretegning",
+        "pronounced": "Markant åretegning",
+        "straightWavy": "Rett til bølget",
+        "deepCathedral": "Dyp katedralåretegning",
+        "richFlowing": "Rik, flytende åretegning"
+      },
+      "madeToOrderTitle": "På bestilling",
+      "madeToOrderDesc": "Utover de åtte lagerfinerene lager vi enhver treslag, beisfarge og overflate.",
+      "finishTitle": "Overflate",
+      "finishDesc": "UV-herdet lakk fra supermatt til høyglans, naturell eller pigmentert.",
+      "naturalTitle": "Et naturmateriale",
+      "naturalDesc": "Ekte tre varierer i farge og åretegning. Be om prøver før du spesifiserer."
+    },
+    "bespoke": {
+      "tag": "ETTER MÅL",
+      "title": "Etter dine tegninger",
+      "description": "rWood Perf produseres etter mål for vegger og himlinger: fra 100 × 100 mm opptil 3 050 × 1 220 mm, i 10 og 19 mm, i hvert av de fire mønstrene.",
+      "customDimTitle": "Egne mål",
+      "customDimDesc": "Hvert panel produseres i målene fra tegningene dine, fra 100 × 100 mm opptil 3 050 × 1 220 mm.",
+      "finishTitle": "Enhver finer og overflate",
+      "finishDesc": "Åtte lagerfinerer; ethvert annet treslag, beisfarge og overflate på bestilling.",
+      "samplesTitle": "Gratis finerprøver",
+      "samplesDesc": "Ekte tre varierer i farge og åretegning. Be om prøver før du spesifiserer."
+    },
+    "ordering": {
+      "title": "Leveringstider og prøver",
+      "stockVeneers": "Lagerfinerer",
+      "stockVeneersVal": "3–4 uker",
+      "nonStock": "Ikke på lager og spesialtilpasset",
+      "nonStockVal": "6–8 uker",
+      "madeToMeasure": "Etter mål",
+      "madeToMeasureVal": "Etter dine tegninger",
+      "supply": "Levering",
+      "samplesVal": "Gratis finerprøver",
+      "sizesVal": "Opptil {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgia"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "MIKRO-PERFORERTE AKUSTIKKPANELER",
+      "tag": "MIKROPERFORERT AKUSTIKKPANEL I TRE",
       "title": "rWood Micro: mikroperforerte akustikkpaneler i tre",
-      "tagline": "Usynlig perforering, enestående akustikk",
-      "description": "Opplev skjønnheten i naturlig tre med den akustiske ytelsen til avansert mikroperforeringsteknologi. Nesten usynlige hull gir lydabsorpsjon i klasse A, samtidig som det rene, homogene uttrykket til førsteklasses trefiner bevares.",
+      "tagline": "Usynlig perforering, enestående akustikk.",
+      "description": "Mikroperforeringer fra 0,5 mm i fineren av A-kvalitet åpner mot lydkamre i den brannhemmende MDF-kjernen, med en akustisk fleece bak. På normal betraktningsavstand forsvinner hullene i treet.",
       "usp1": "Usynlige perforeringer",
-      "usp2": "Klasse A absorpsjon",
+      "usp2": "Klasse A-absorpsjon",
       "usp3": "Brannklasse {fireClass}",
-      "colorSelector": "Velg trefinér"
+      "colorSelector": "Lagerfinerer",
+      "description2": "Etter mål for vegger og himlinger, opptil 3 050 × 1 220 mm, i 10 og 19 mm. Åtte lagerfinerer, enhver finer og overflate på bestilling.",
+      "selectVeneer": "Velg en finer"
     },
     "perforation": {
-      "tag": "PERFORASJONSMØNSTRE",
-      "title": "Velg din perforering",
-      "description": "Ulike mikroperforeringstettheter for finjustert akustisk kontroll – fra diskret til høytytende."
-    },
-    "surfaces": {
-      "tag": "OVERFLATER",
-      "title": "Premium overflater",
-      "woodVeneer": "Trefinér",
-      "woodVeneerDesc": "Førsteklasses A-kvalitetsfiner i eik, valnøtt, bjørk og mer. Tilgjengelig i Nature- og Gemini-snitt.",
-      "hplLaminate": "HPL-laminat",
-      "hplLaminateDesc": "Høytrykkslaminatoverflater for ekstra slitestyrke. Tilgjengelig i et bredt utvalg av farger og finisher.",
-      "surfaceType": "Overflatetype",
-      "finishTreatments": "Finishbehandlinger",
-      "description": "Alle rWood - Micro-paneler har finerte kanter — en produksjonsteknikk som gir sømløse panelskjøter og en sammenhengende treoverflate.",
-      "finish1Desc": "Tilpassede fargetoner med transparent eller dekkende pigmentering",
-      "finish2Desc": "Fra supermatt til høyglanset UV-herdet lakk",
-      "description2": "Alle rWood - Micro-paneler har finerte kanter – en produksjonsteknikk med røtter i tradisjonelt snekkerhåndverk. Resultatet: sterkere paneler, sømløse skjøter og et sammenhengende mønster uavhengig av panelformat."
+      "tag": "PERFORERING",
+      "title": "Fire perforeringstettheter",
+      "description": "Hullstørrelse og åpent areal per tetthet. Jo større åpent areal, desto høyere absorpsjon; jo mindre hull, desto mindre synlig mønster.",
+      "spec": "Ø {d} mm · {pct} % åpen",
+      "drawingNote": "Tegninger omtrent 2:1, hullstørrelse og åpent areal som angitt per tetthet."
     },
     "acoustics": {
-      "tag": "YTELSE",
-      "title": "Overlegen lydabsorpsjon",
-      "benefit1Title": "Dobbel akustisk mekanisme",
-      "benefit1": "Mikrohull og lydkamre samarbeider for overlegen absorpsjon",
-      "benefit2Title": "Plassbesparende design",
-      "benefit2": "Mindre avhengig av luftspalter – tynnere vegg- og himlingsoppbygging",
-      "benefit3Title": "Brannsikkerhet",
-      "benefit3": "Brannklasse {fireClass} med den brannhemmende MDF-kjernen (EN 13501-1)",
-      "description": "Kombinasjonen av mikroperforeringer i overflaten og tusenvis av større lydinngangskanaler gir eksepsjonell bredbåndsabsorpsjon.",
-      "layer1Name": "A-kvalitetsfiner med presisjonsborede hull",
-      "layer2Name": "Brannhemmende MDF-kjerne",
-      "layer2Desc": "Brannhemmende, med lydkamre",
-      "layer3Name": "Akustisk fleece-bakside",
-      "layer3Desc": "Ekstra lydabsorberende sjikt",
-      "waveLabel": "Lydbølger absorbert",
-      "certNote": "Uavhengig testet og sertifisert i henhold til ISO 11654",
-      "description2": "Kombinasjonen av mikroperforeringer i overflaten og tusenvis av større lydkamre i kjernen skaper en dobbel akustisk mekanisme. Mindre avhengig av isolasjon og luftspalter – det betyr tynnere vegger og himlinger som sparer verdifull plass.",
-      "diagramTitle": "Panelsektion",
-      "soundAbsorbed": "Lyd absorbert",
-      "fireRating": "Brannklasse",
-      "testStandard": "Teststandard",
-      "thinner": "Tynnere",
-      "wallBuildUp": "Veggoppbygging"
+      "tag": "AKUSTIKK",
+      "title": "Lydabsorpsjon",
+      "description": "Lyden går inn gjennom mikroperforeringene og absorberes i kjernens lydkamre og i fleecen bak. Hvor mye panelet absorberer, avhenger av perforeringstettheten og av hva som sitter bak panelet.",
+      "tableTitle": "Lydabsorpsjon",
+      "withWool": "Med 50 mm mineralull",
+      "withWoolVal": "αw opptil 1.00",
+      "behindTitle": "Bak panelet",
+      "behindDesc": "En absorbent bak øker absorpsjonen: akustisk filt, et rPET-panel eller mineralull i hulrommet. Med 50 mm mineralull når panelet αw 1,00.",
+      "footnote": "αw og absorpsjonsklasse etter EN ISO 11654. Verdiene avhenger av perforeringstettheten, hulrommets dybde og absorbenten bak panelet."
     },
     "installation": {
-      "tag": "INSTALLASJONSSYSTEM",
-      "title": "Presisjonsinstallasjon",
-      "step1Title": "Installer underramme",
-      "step1Desc": "Monter aluminiumsskinner på vegg- eller himlingskonstruksjonen",
-      "step2Title": "Tilføy isolasjon",
-      "step2Desc": "Valgfri mineralull for økt absorpsjon",
-      "step3Title": "Click & Fix paneler",
-      "step3Desc": "Skjult klipssystem for verktøyfri panelmontering",
-      "step4Title": "Sømløst resultat",
-      "step4Desc": "Finerte kanter gir en sammenhengende treoverflate",
-      "description": "rWood - Micro-paneler monteres med vårt skjulte monteringssystem, som sikrer usynlige fester og en feilfri finish. Systemet egner seg for både vegg og himling, med sømløse overganger fra panel til panel takket være finerte kanter."
+      "tag": "MONTERING",
+      "title": "Skjult klipssystem for vegger og himlinger",
+      "step1Title": "Underkonstruksjon",
+      "step1Desc": "Aluminiumsskinner på vegg- eller himlingskonstruksjonen.",
+      "step2Title": "Isolasjon",
+      "step2Desc": "Mineralull etter behov for høyere absorpsjon.",
+      "step3Title": "Paneler",
+      "step3Desc": "Skjulte klips, montering uten verktøy.",
+      "step4Title": "Resultat",
+      "step4Desc": "Usynlige innfestinger og en ubrutt treoverflate.",
+      "description": "Aluminiumsskinner, mineralull etter behov, og så klikkes panelene på plass uten verktøy. Innfestingene forblir usynlige, og treoverflaten fortsetter uten avbrudd."
     },
     "bespoke": {
-      "tag": "DESIGNFRIHET",
-      "title": "Skreddersydde muligheter",
-      "backlitTitle": "Bakbelyste paneler",
-      "backlitDesc": "Skap slående bakbelyste partier der lyset skinner gjennom mikroperforeringene. Logoer og mønstre lyser vakkert når belysningen er på, men forblir usynlige når lyset er av.",
-      "customDimTitle": "Spesialmål",
-      "customDimDesc": "Paneler produsert etter dine nøyaktige spesifikasjoner. Ikke-standardiserte størrelser og former for unike arkitektoniske krav.",
-      "patternTitle": "Kontinuerlig mønster",
-      "patternDesc": "Paneler med finerte kanter gir sømløse overganger uavhengig av format, for et homogent inntrykk på enhver flate.",
-      "description": "rWood - Micro-paneler kan tilpasses og prefabrikkeres etter dine tegninger. Mikroperforeringene åpner for unike designmuligheter som går utover standard akustikkpaneler."
+      "tag": "ETTER MÅL",
+      "title": "Etter dine tegninger",
+      "customDimTitle": "Egne mål",
+      "customDimDesc": "Hvert panel produseres i målene fra tegningene dine, fra 100 × 100 mm opptil 3 050 × 1 220 mm.",
+      "description": "rWood Micro produseres etter mål for vegger og himlinger: fra 100 × 100 mm opptil 3 050 × 1 220 mm, i 10 og 19 mm, i hver av de fire perforeringstetthetene.",
+      "finishTitle": "Enhver finer og overflate",
+      "finishDesc": "Åtte lagerfinerer; ethvert annet treslag, beisfarge og overflate på bestilling.",
+      "samplesTitle": "Gratis finerprøver",
+      "samplesDesc": "Ekte tre varierer i farge og åretegning. Be om prøver før du spesifiserer."
     },
     "sustainability": {
       "tag": "BÆREKRAFT",
       "title": "Ansvarlig produsert",
-      "badge1": "FSC®-sertifisert finér",
-      "badge2": "Naturlig kjernemateriale",
+      "badge1": "FSC®-sertifisert finer",
+      "badge2": "Formaldehydklasse E1",
       "badge3": "Produsert i Polen",
-      "badge4": "Lave VOC-utslipp",
+      "badge4": "Retur ved endt levetid",
       "badge1Desc": "Tre fra ansvarlig forvaltede skoger",
-      "badge2Desc": "Fiberplatekjerne – en trebasert, brannklassifisert kjerne",
-      "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen)",
-      "badge4Desc": "E1-klassifisert for sunnere inneluft",
-      "description": "rWood - Micro-paneler er utviklet med bærekraft som et grunnprinsipp. FSC®-sertifisert tre, lavemitterende overflatebehandlinger og ansvarlig innkjøpte materialer sikrer miljøansvar gjennom hele produktets livssyklus."
+      "badge2Desc": "Brannhemmende MDF-kjerne med lave utslipp, for tørre innendørsrom",
+      "badge3Desc": "Produsert på vår egen fabrikk i Częstochowa (Polen)",
+      "description": "FSC®-sertifisert finer, formaldehydklasse E1 og produksjon på vår egen fabrikk i Częstochowa. Ved endt levetid tar vi panelene tilbake."
     },
     "specs": {
-      "tag": "TEKNISK",
-      "title": "Spesifikasjoner",
-      "dimensionsTitle": "Dimensjoner — vegger og himlinger",
-      "acousticsTitle": "Dimensjoner — vegger og himlinger",
-      "customSizes": "Spesialmål",
-      "dimThickness": "Tykkelse",
-      "dimWeight": "Vekt",
-      "dimCoreDensity": "Kjernetetthet",
-      "perfsTitle": "Perforeringsalternativer",
-      "fireTitle": "Brannsikkerhet",
-      "matTitle": "Materialer",
-      "appsTitle": "Anvendelser",
+      "tag": "TEKNISKE DATA",
+      "title": "Panel, brann og utslipp",
+      "acousticsTitle": "Lydabsorpsjon",
+      "perfsTitle": "Perforeringstettheter",
+      "fireTitle": "Brann og utslipp",
+      "matTitle": "Overflate og tilvalg",
+      "appsTitle": "Montering",
       "acWithMinWool": "Med 50 mm mineralull",
       "reactionFire": "Brannreaksjon",
-      "resistanceFire": "Brannsikring",
-      "fireRetardant": "Branndempende",
-      "surfaceLabel": "Overflate",
-      "surfaceVal": "Finér / HPL / folie / maling",
-      "coreVal": "MDF-kjerne (brun / grønn / svart)",
+      "surfaceLabel": "Overflatebehandlinger",
+      "surfaceVal": "Naturlakk · pigmentert · HPL-laminat · folie · maling",
+      "coreVal": "Brannhemmende MDF med lydkamre",
       "edgesLabel": "Kanter",
-      "edgesVal": "Overfinert massivt tre",
-      "acousticFelt": "Akustisk filt",
-      "feltColor": "Svart / hvit",
-      "appInstall": "Installasjon",
-      "appWalls": "Vegger og tak",
-      "appEnv": "Miljø",
-      "appEnvVal": "Innendørs (tørre områder)",
-      "backlitOption": "Baklys tilvalg",
-      "backlitVal": "Tilgjengelig",
-      "mountingSystem": "Monteringssystem",
-      "concealedClip": "Skjult klipsystem"
+      "edgesVal": "Overfinert massivtre for sømløse skjøter",
+      "feltColor": "Svart eller hvit",
+      "appInstall": "Bruksområde",
+      "appWalls": "Vegger og himlinger",
+      "appEnvVal": "Innendørs, tørre rom",
+      "mountingSystem": "Innfesting",
+      "concealedClip": "Skjulte klips, uten verktøy",
+      "panelTitle": "Panel",
+      "sizes": "Mål",
+      "fleeceLabel": "Akustisk fleece",
+      "acWithMinWoolVal": "αw opptil 1.00",
+      "fireStandard": "Brannstandard",
+      "finishLabel": "Lakk",
+      "finishVal": "UV-herdet, supermatt til høyglans, naturell eller pigmentert",
+      "rangesLabel": "Finerserier",
+      "rangesVal": "Nature (levende åretegning med karakter) · Gemini (jevn, ensartet tone)",
+      "coreColoursLabel": "Kjernefarger",
+      "subframe": "Underkonstruksjon",
+      "nanoVal": "Ø 0.5 mm · 2.5 % åpen",
+      "microSVal": "Ø 1.0 mm · 5.2 % åpen",
+      "microMVal": "Ø 1.5 mm · 8.4 % åpen",
+      "microLVal": "Ø 2.0 mm · 10.6 % åpen",
+      "coreColoursVal": "Brun, grønn eller svart",
+      "subframeVal": "Aluminiumsskinner"
     },
     "gallery": {
       "tag": "INSPIRASJON",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "DEN USYNLIGE LØSNINGEN",
-      "title": "Designet for øyne og ører",
-      "description1": "rWood - Micro-paneler kombinerer avansert mikroperforeringsteknologi med førsteklasses trefiner. Fra normal betraktningsavstand er perforeringene helt usynlige – det du ser, er en vakker, homogen treoverflate. Det du hører, er eksepsjonell akustisk komfort.",
-      "description2": "Hemmeligheten ligger i kombinasjonen av to akustiske mekanismer: tusenvis av presist utformede mikrohull i overflaten og lydabsorberende kamre i kjernematerialet.",
-      "feature1": "Perforeringer usynlige fra normal betraktningsavstand",
-      "feature2": "Brannhemmende MDF-kjerne med lydkamre",
-      "feature3": "Finerte kanter for sømløse skjøter",
-      "feature4": "Egnet for vegger og himlinger",
-      "feature5": "Tilgjengelig som bakbelyste paneler"
-    },
-    "accessories": {
-      "tag": "FULLFØR STILEN",
-      "title": "Tilbehør",
-      "description": "Profesjonelle avslutningselementer for et feilfritt resultat",
-      "item1Title": "Kantprofiler",
-      "item1Desc": "Matchende profiler for rene panelavslutninger",
-      "item2Title": "Hjørneløsninger",
-      "item2Desc": "Sømløse overganger i inn- og utvendige hjørner",
-      "item3Title": "Monteringsskinner",
-      "item3Desc": "Skjult underkonstruksjon i aluminium",
-      "item4Title": "LED-bakbelysning",
-      "item4Desc": "Integrert belysning for bakbelyste paneleffekter"
-    },
-    "patterns": {
-      "description": "Fire perforeringstettheter tilpasset dine akustiske krav. Fra nesten usynlige mikroperforeringer til rause åpne flater – hver tetthet gir en ulik balanse mellom estetikk og ytelse.",
-      "magnifiedLabel": "10× forstørret",
-      "holeDiameter": "Hulldiameter",
-      "openArea": "Åpent areal",
-      "ratingLabel": "Absorpsjon",
-      "description2": "Fire perforeringstettheter tilpasset dine akustiske krav. Fra nesten usynlige Nano-perforeringer til Micro L-mønstre med maksimal absorpsjon – velg den perfekte balansen mellom estetikk og akustisk ytelse.",
-      "pigmentedLacquer": "Pigmentert lakk",
-      "glossLevels": "Glansnivåer"
+      "title": "Utformet for øyne og ører",
+      "description1": "rWood Micro kombinerer en ekte trefiner av A-kvalitet med mikroperforeringer fra Ø 0,5 mm. På normal betraktningsavstand forsvinner hullene i treet: det du ser, er en ubrutt treoverflate, og det du hører, er et roligere rom.",
+      "description2": "Lyden går inn gjennom mikroperforeringene og absorberes i lydkamrene i den brannhemmende MDF-kjernen og i den akustiske fleecen bak. Hvor mye panelet absorberer, avhenger av perforeringstettheten og av hva som sitter bak panelet.",
+      "feature1": "Perforeringer som forsvinner på normal betraktningsavstand",
+      "feature2": "Brannhemmende MDF-kjerne med lydkamre, akustisk fleece i svart eller hvitt",
+      "feature3": "Etter mål opptil 3 050 × 1 220 mm, i 10 og 19 mm",
+      "feature4": "Skjulte klips, uten verktøy, for vegger og himlinger"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "Hvor kommer FSC-sertifisert finér fra?",
-          "answer": "Finéren hentes fra FSC-sertifiserte europeiske skoger (hovedsakelig eik og valnøtt). Chain-of-custody-sertifikatnummeret oppgis per leveranse på forespørsel."
+          "question": "Hvor kommer den FSC-sertifiserte fineren fra?",
+          "answer": "Alle rWood-finerer er FSC®-sertifiserte og kommer fra ansvarlig forvaltede skoger. De åtte lagerfinerene kommer fra Europa, Skandinavia og Nord-Amerika; nummeret på chain-of-custody-sertifikatet oppgis på forespørsel."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
-          "answer": "Med brannhemmende (FR) MDF-kjerne er rWood-panelene klassifisert B-s1,d0 etter EN 13501-1 — kjernen vi spesifiserer for rømningsveier og offentlige bygg. Brannsertifikatet ligger i nedlastingsblokken på denne siden."
+          "answer": "Med den brannhemmende MDF-kjernen er rWood Micro klassifisert B-s1,d0 etter EN 13501-1. Panelet er beregnet for tørre innendørsrom."
         },
         "leadTime": {
-          "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfinér sendes innen 3–4 uker; tresorter utenfor lager og spesialfinish krever 6–8 uker. Produksjonskapasitet reserveres ved ordrebekreftelse."
+          "question": "Hva er vanlig leveringstid?",
+          "answer": "Lagerfinerer leveres på 3–4 uker; treslag utenfor lager og spesialoverflater tar 6–8 uker. Paneler etter mål produseres etter tegningene dine."
         },
         "installMethod": {
           "question": "Hvordan monteres rWood-paneler?",
-          "answer": "To metoder støttes: et skjult clip-system for rask montering og enkel demontering, eller direkte liming for permanente installasjoner. Begge er beskrevet i monteringsanvisningen."
+          "answer": "Med et skjult klipssystem: aluminiumsskinner på vegg- eller himlingskonstruksjonen, mineralull i hulrommet etter behov, og så klikkes panelene på plass uten verktøy. Innfestingene forblir usynlige, og treoverflaten fortsetter uten avbrudd."
         },
         "substrateCleanup": {
-          "question": "Hva skjer med panelene ved livets slutt?",
-          "answer": "Re-Sound tar panelene tilbake gratis i BE/NL/FR/DE/LU. Finéren skilles fra det resirkulerte filt-substratet; begge strømmer går tilbake i forsyningskjeden vår i stedet for til deponi."
+          "question": "Hva skjer med panelene ved endt levetid?",
+          "answer": "Re-Sound tar panelene gratis tilbake ved endt levetid i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro panel i nærbilde som viser usynlige perforeringer",
-      "microPerforatedWoodPanelSurfaceDetail": "Detalj av overflaten på mikroperforert trepanel",
-      "rwoodMicroPanelInstallationSystem": "rWood - Micro panel monteringssystem",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Bakgrunnsbelyst mikroperforert panel som skaper en lyseffekt",
-      "sustainableProduction": "Bærekraftig produksjon"
+      "sustainableProduction": "FSC-sertifisert trefiner",
+      "hero": "Mikroperforerte akustikkpaneler i tre, rWood Micro, på en vegg",
+      "heroVeneer": "rWood Micro-panel i {name}",
+      "overview": "Nærbilde av et mikroperforert rWood Micro-panel",
+      "installation": "Aluminiumsskinner og skjulte klips i rWood Micro-monteringssystemet",
+      "madeToMeasure": "rWood Micro-paneler etter mål montert rundt et vindu"
     },
     "options": {
-      "veneerDesc": "Naturlig trefiner i A-kvalitet",
-      "hplDesc": "Høytrykkslaminat",
-      "nanoDesc": "Praktisk talt usynlige perforeringer",
-      "microsDesc": "Subtile mikroperforeringer",
+      "nanoDesc": "Nesten usynlige perforeringer",
+      "microsDesc": "Diskré mikroperforeringer",
       "micromDesc": "Balansert perforeringsmønster",
-      "microlDesc": "Mønster for maksimal absorpsjon",
-      "nanoDetail": "Den minste perforeringen som finnes – helt usynlig for det blotte øye, og gir en feilfri treoverflate.",
-      "microsDetail": "Knapt synlige mikrohull som bevarer et rent og uavbrutt overflateuttrykk.",
-      "micromDetail": "En optimal balanse mellom visuell diskresjon og akustisk effektivitet for de fleste bruksområder.",
-      "microlDetail": "Det største åpne arealet for maksimal lydabsorpsjon i akustisk krevende rom.",
-      "openAreaLabel": "Åpent areal",
-      "absorptionLabel": "Absorpsjon",
-      "thinnerLabel": "Tynnere",
-      "veneerDrilled": "Trefiner i A-kvalitet med presisjonsborede hull"
+      "microlDesc": "Mønster med maksimal absorpsjon"
+    },
+    "kpi": {
+      "ariaLabel": "Nøkkeltall",
+      "thickness": "paneltykkelse, etter mål",
+      "alphaW": "αw, vektet lydabsorpsjon",
+      "alphaWClass": "αw, absorpsjonsklasse {cls}",
+      "fire": "brannreaksjon, brannhemmende MDF-kjerne",
+      "densities": "perforeringstettheter, Ø 0,5 til 2 mm"
+    },
+    "buildUp": {
+      "alt": "Eksplosjonstegning av de tre lagene: mikroperforert finer, brannhemmende MDF-kjerne med lydkamre, akustisk fleece",
+      "layer1": "Mikroperforert finer",
+      "layer1Desc": "A-kvalitet, hull fra Ø 0,5 mm",
+      "layer2": "Brannhemmende MDF-kjerne",
+      "layer2Desc": "Med lydkamre",
+      "layer3": "Akustisk fleece",
+      "layer3Desc": "Svart eller hvit",
+      "behind": "Bak panelet: hulrom, mineralull etter behov."
+    },
+    "veneers": {
+      "title": "Åtte lagerfinerer, enhver finer på bestilling",
+      "description": "Alle rWood-finerer er FSC®-sertifiserte og kommer fra ansvarlig forvaltede skoger. Tre er et naturmateriale: åretegning og farge varierer fra panel til panel, og prøver på skjerm er kun veiledende.",
+      "alt": "Finer {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavia",
+        "northAmerica": "Nord-Amerika"
+      },
+      "grain": {
+        "straightInterlocked": "Rett til krysstrådet",
+        "subtleFine": "Diskré fin åretegning",
+        "fineStraight": "Fin rett åretegning",
+        "cathedral": "Katedralåretegning",
+        "pronounced": "Markant åretegning",
+        "straightWavy": "Rett til bølget",
+        "deepCathedral": "Dyp katedralåretegning",
+        "richFlowing": "Rik, flytende åretegning"
+      },
+      "madeToOrderTitle": "På bestilling",
+      "madeToOrderDesc": "Utover de åtte lagerfinerene lager vi enhver treslag, beisfarge og overflate.",
+      "finishTitle": "Overflate",
+      "finishDesc": "UV-herdet lakk fra supermatt til høyglans, naturell eller pigmentert.",
+      "naturalTitle": "Et naturmateriale",
+      "naturalDesc": "Ekte tre varierer i farge og åretegning. Be om prøver før du spesifiserer."
+    },
+    "ordering": {
+      "title": "Leveringstider og prøver",
+      "stockVeneers": "Lagerfinerer",
+      "stockVeneersVal": "3–4 uker",
+      "nonStock": "Ikke på lager og spesialtilpasset",
+      "nonStockVal": "6–8 uker",
+      "madeToMeasure": "Etter mål",
+      "madeToMeasureVal": "Etter dine tegninger",
+      "supply": "Levering",
+      "samplesVal": "Gratis finerprøver",
+      "sizesVal": "Opptil {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgia"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "AKUSTISKE TREPENELER",
-      "title": "rWood Panel: akustikkpaneler med trefiner i 10 treslag",
-      "tagline": "Elegansen av Ekte Tre. Klar til Bruk.",
-      "description": "Premium finerte MDF-paneler, børstede, beiset og lakkerte — klar til installasjon. Tilgjengelig i 10 trefinerarter og 3 overflater. Laget i Belgia.",
-      "usp1": "Ekte Trefiner",
-      "usp2": "Forhåndsbehandlet og Klar til Bruk",
-      "usp3": "Gratis returordning",
+      "tag": "FINERT TREPANEL",
+      "title": "rWood Panel: finerte akustikkpaneler i 12 trefinérer",
+      "tagline": "Ekte tres eleganse, klar til bruk.",
+      "description": "Glatte, fabrikkbehandlede finerte MDF-paneler i tolv finérer av ekte tre, i den livlige Nature- eller den jevne Gemini-serien. Naturlakk eller pigmentert lakk, HPL-laminat, folie eller maling; enhver annen finér, beis eller overflate på bestilling.",
+      "usp1": "FSC®-sertifiserte finérer",
+      "usp2": "Tolv finérer, enhver overflate på bestilling",
+      "usp3": "Gratis retur ved endt levetid",
       "ctaSecondary": "Se Koleksjon",
-      "colorSelector": "Velg Finer"
-    },
-    "construction": {
-      "tag": "KONSTRUKSJON",
-      "title": "Lagdelt Konstruksjon",
-      "layer1": "Øverste finerlag",
-      "layer1Desc": "FSC-sertifisert naturlig trefinér, fabrikkfinish",
-      "layer2": "Høytetthet MDF-kjerne",
-      "layer2Desc": "Stabilt, fuktbestandig konstruert underlag",
-      "layer3": "Balanserende finerlag",
-      "layer3Desc": "Forhindrer skjevhet for perfekt flate paneler"
-    },
-    "veneers": {
-      "tag": "FINERKOLLEKTION",
-      "title": "10 kuraterte trefinerer",
-      "description": "Fra blek europeisk eik til dyp amerikansk valnøtt — hver art valgt for åremønster, tilgjengelighet og FSC-sertifisering."
+      "colorSelector": "Finér",
+      "selectPrompt": "Velg en finér"
     },
     "finishes": {
-      "title": "Følelse og beskyttelse",
-      "description": "Riktig finish fremhever det beste i hver tresort. Vår flerlags finishprosess leverer en overflate som er like behagelig å berøre som den er holdbar — beskyttet mot riper, fukt og daglig slitasje.",
+      "title": "Overflatebehandlinger og alternativer",
+      "description": "Velg finérserien og overflatebehandlingen som passer prosjektet. Kantene er overfinert heltre for usynlige skjøter over store flater.",
       "tag": "OVERFLATER",
-      "mattLacquerName": "Super matt lakk",
-      "mattLacquerDesc": "Antifingeravtrykk, silkeaktig følelse. 6-lags UV-herdet beskyttelse.",
-      "naturalOilName": "Naturlig olje",
-      "naturalOilDesc": "Dyp, autentisk trefølelse med inntrengende beskyttelse.",
-      "unfinishedName": "Ubehandlet",
-      "unfinishedDesc": "Klar for tilpasset on-site finish av installatøren.",
-      "adv1": "Ripebestandig",
-      "adv2": "Spillmotstandsdyktig",
-      "adv3": "Antifingeravtrykk",
-      "adv4": "Lett vedlikehold"
-    },
-    "advantages": {
-      "tag": "FORDELER",
-      "title": "Nøkkelfordeler",
-      "adv1Title": "Panelformater",
-      "adv1": "Flere standardstørrelser; spesialmål på forespørsel",
-      "adv2Title": "Grenseløse muligheter",
-      "adv2": "Bruk til veggkledning, møbler, butikkutstilling og mer"
+      "nature": "Nature",
+      "natureDesc": "Livlig åring med karakter",
+      "gemini": "Gemini",
+      "geminiDesc": "Jevn, ensartet tone",
+      "treatmentsTitle": "Overflatebehandlinger",
+      "treatments": {
+        "naturalLacquer": "Naturlakk",
+        "pigmented": "Pigmentert",
+        "hpl": "HPL-laminat",
+        "foil": "Folie",
+        "paint": "Maling"
+      },
+      "madeToOrder": "Enhver annen finér, beis, pigment og overflate på forespørsel."
     },
     "applications": {
       "tag": "ANVENDELSER",
@@ -2620,66 +2671,51 @@
       "badge2": "Sirkulær tilbaketaking",
       "badge3": "Produsert i Polen",
       "badge4": "EPD tilgjengelig",
-      "badge5": "Lav VOC",
-      "badge1Desc": "Alt trevirke fra ansvarlig forvaltede skoger",
+      "badge1Desc": "Alle finérer er FSC®-sertifiserte, fra ansvarlig forvaltede skoger",
       "badge2Desc": "Gratis retur og resirkulering av paneler ved endt levetid",
-      "description": "Hvert rWood - Panel starter med ansvarlig innkjøpt tømmer. Som en del av Re-Sounds forpliktelse til sirkulærøkonomien, maksimerer vi bruken av hver tømmerstokk ved å bearbeide den som finér — og oppnår opptil 40× mer overflateareal enn massivt tømmer fra samme tre.",
+      "description": "Hvert rWood Panel starter med FSC®-sertifisert finér fra ansvarlig forvaltede skoger. Ved endt levetid tar Re-Sound panelene gratis i retur.",
       "badge3Desc": "Produsert i vår egen fabrikk i Częstochowa (Polen)",
-      "badge4Desc": "Fullstendig miljøproduktdeklarasjon",
-      "badge5Desc": "E1-klassifisert, oppfyller de strengeste utslippsstandardene",
-      "badge6": "Grønn energi",
-      "badge6Desc": "Produksjon drevet av fornybare energikilder"
+      "badge4Desc": "Fullstendig miljøproduktdeklarasjon"
     },
     "specs": {
-      "tag": "SPESIFIKASJONER",
-      "title": "Tekniske Spesifikasjoner",
+      "tag": "TEKNISKE DATA",
+      "title": "Panel, overflater og brann",
       "compositionTitle": "Sammensetning",
       "fireTitle": "Brannsikkerhet",
       "certsTitle": "Sertifiseringer",
       "dimensionsTitle": "Dimensjoner",
-      "finishTitle": "Overflate",
+      "finishTitle": "Finérer og overflater",
       "processingTitle": "Bearbeiding",
       "dimPanelWidth": "Panelbredde",
       "dimPanelLength": "Panellengde",
-      "dimThicknessStd": "Tykkelse (standard)",
-      "dimThicknessSlim": "Tykkelse (slank)",
-      "dimWeight19": "Vekt (19 mm)",
       "compTopLayer": "Øverste lag",
-      "compTopLayerVal": "A-klasse finér, beiset og lakkert",
+      "compTopLayerVal": "Finér av ekte tre i A-kvalitet, fabrikkbehandlet",
       "compCore": "Kjerne",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, standard / MR / FR",
       "compBackLayer": "Bakside lag",
       "compBackLayerVal": "Balansefinér",
-      "compBonding": "Binding",
-      "compBondingVal": "HPLT-presseteknologi",
-      "finishLacquerType": "Lakktype",
-      "finishLacquerVal": "Akrylat-uretan UV-herdet",
-      "finishLayers": "Antall lag",
-      "finishGloss": "Glansnivå",
-      "finishGlossVal": "Supermatt (3-5 GU)",
-      "finishAntiFingerprint": "Antifingeravtrykk",
-      "finishScratch": "Ripemotstand",
-      "fireStdMDF": "Standard MDF",
-      "fireFRMDF": "Brannhemmende MDF",
       "certWoodSourcing": "Trekilder",
       "certEnvironmental": "Miljømessig",
-      "certFelt": "Filt (hvis akustisk)",
       "procSawing": "Saging",
       "procSawingVal": "Standardverktøy for trebearbeiding",
-      "procEdgeBanding": "Kantbånd",
-      "procEdgeBandingVal": "Matchende finér-kantbånd tilgjengelig",
       "procCNC": "CNC-bearbeiding",
-      "procEnvironment": "Miljø",
-      "procEnvironmentVal": "Innendørs bruk (tørre områder)",
       "procMoisture": "Fuktbestandig",
-      "procMoistureVal": "MR-kjerne tilgjengelig"
+      "procMoistureVal": "MR-kjerne tilgjengelig",
+      "finishRanges": "Finérserier",
+      "finishRangesVal": "Nature: livlig åring med karakter · Gemini: jevn, ensartet tone",
+      "finishTreatments": "Overflatebehandlinger",
+      "finishTreatmentsVal": "Naturlakk · pigmentert · HPL-laminat · folie · maling",
+      "finishCoreColours": "Kjernefarger",
+      "finishCoreColoursVal": "Brun, grønn eller svart",
+      "finishEdgesVal": "Overfinert heltre for usynlige skjøter",
+      "finishFeltVal": "Svart eller hvit fleece",
+      "finishMadeToOrder": "På bestilling",
+      "finishMadeToOrderVal": "Enhver annen finér, beis, pigment og overflate",
+      "certWoodSourcingVal": "Alle finérer er FSC®-sertifiserte, fra ansvarlig forvaltede skoger"
     },
     "related": {
       "tag": "MATCHENDE PRODUKTER",
       "title": "Relaterte Produkter",
-      "groove": "rWood - Groove",
-      "edgebanding": "Matchende kantlist",
-      "samples": "Gratis prøver",
       "description": "Oppnå designkontinuitet med koordinerte Re-Sound-produkter",
       "explore": "Utforsk →",
       "orderSamples": "Bestill prøver →",
@@ -2691,50 +2727,49 @@
     },
     "overview": {
       "tag": "OVERSIKT",
-      "title": "Naturlig Tre, Premium Finish",
-      "description": "rWood - Panel bringer varmen og karakteren til massivt tre i et ferdigbehandlet, bruksklart format. Hvert panel er laget av premium A-grad finer, limt på en høydensitets MDF-kjerne med avansert pressteknologi.",
-      "feature1": "Ekte A-grad trefiner på høydensitets MDF-kjerne",
-      "feature2": "Ferdigbehandlet med 6 lag UV-akryllakk — ingen ytterligere behandling nødvendig",
-      "feature3": "10 finerarter tilgjengelige — eik, valnøtt, bjørk og mer",
-      "feature4": "FSC® sertifisert — tre fra ansvarlig forvaltede skoger",
-      "feature5": "Tilgjengelig i naturlakk, naturlig olje eller ubehandlet"
+      "title": "Natur, foredlet",
+      "description": "rWood Panel bringer ekte tres varme og karakter inn i et ferdigbehandlet, monteringsklart format: en finér i A-kvalitet på en MDF-kjerne, behandlet på fabrikken. De samme tolv finérene går igjen i hele rWood-serien, slik at glatte paneler, Groove, Micro og Perf passer sammen på én vegg.",
+      "feature1": "Tolv lagerfinérer: eik, valnøtt, ask, bøk og bjørk",
+      "feature2": "To finérserier: Nature (livlig åring) og Gemini (jevn tone)",
+      "feature3": "MDF-kjerne i standard-, fuktbestandig eller brannhemmende kvalitet",
+      "feature4": "Naturlakk eller pigmentert lakk, HPL-laminat, folie eller maling",
+      "feature5": "Fabrikkbehandlet, klar til montering"
     },
     "anatomy": {
-      "tag": "SAMMENSETNING",
-      "layer1": "Ekte Trefiner",
-      "layer1Desc": "A-klasse ekte trefinér, børstet, beiset og beskyttet med 6 lag UV-herdet akrylat-uretanlakk. Soft-touch super matt finish.",
+      "tag": "OPPBYGNING",
+      "layer1": "Finérside",
+      "layer1Desc": "Finér av ekte tre i A-kvalitet, en av de tolv lagerfinérene eller enhver finér på bestilling, behandlet på fabrikken.",
       "layer2": "MDF-kjerne",
-      "layer2Desc": "700 kg/m³ FSC®-sertifisert MDF. Tilgjengelig i standard, fuktbestandig (MR) og brannhemmende (FR) kvalitet.",
-      "layer3": "Balansfiner",
-      "layer3Desc": "Matchende finér-bakside sikrer dimensjonell stabilitet og forhindrer skjevhet. Ferdige eller ubehandlede alternativer.",
-      "keyAdvTitle": "Overflatefordeler",
-      "description": "Hvert lag tjener et formål — fra den autentiske treoverflaten til den konstruerte kjernen."
+      "layer2Desc": "Standard-, fuktbestandig (MR) eller brannhemmende (FR) MDF; kjernefarge brun, grønn eller svart.",
+      "layer3": "Motfinér",
+      "layer3Desc": "En finér på baksiden holder panelet plant og stabilt.",
+      "description": "Hvert lag har en funksjon, fra overflaten i ekte tre til den tekniske kjernen.",
+      "title": "Finér, kjerne, motfinér"
     },
     "collection": {
-      "tag": "KOLEKSJON",
-      "title": "10 kuraterte trefinerer",
-      "description": "Fra rolig skandinavisk bjørk til dramatisk amerikansk valnøtt — hver finér velges, børstes og finishes nøye for å vise treets karakter.",
-      "filterAll": "Alle finerer",
-      "customNote": "Spesialtilpassede finérarter og beisefarger tilgjengelige ved prosjektordrer på 50+ paneler.",
+      "tag": "FINÉRER",
+      "title": "Tolv finérer av ekte tre",
+      "description": "Seks eiketrær fra lys til nesten svart og seks premium-treslag: valnøtt, ask, bøk og bjørk. Tilgjengelig i hele rWood-serien, og enhver annen finér, beisfarge eller overflate på bestilling.",
+      "filterAll": "Alle finérer",
+      "customNote": "Enhver annen finér, beis, pigment og overflate på forespørsel. Prøvebildene er veiledende: naturlige finérer varierer i åring, farge og tegning, og tonene skifter i annet lys og med annen lakk. Kontroller alltid mot en fysisk prøve.",
       "categories": {
-        "lightNaturals": "Lyse toner",
-        "warmNaturals": "Varme toner",
-        "deepTones": "Dype toner"
+        "oak": "Eikefinérer",
+        "premium": "Premium-treslag"
       },
-      "origins": {
-        "europe": "Europa",
-        "scandinavia": "Skandinavia",
-        "northAmerica": "Nord-Amerika"
-      },
-      "grains": {
-        "straightToInterlocked": "Rett til sammenflettet",
-        "subtleFineGrain": "Diskret fin åre",
-        "fineStraightGrain": "Fin rett åre",
-        "cathedralGrain": "Katedralåre",
-        "pronouncedGrain": "Tydelig åre",
-        "straightToWavy": "Rett til bølget",
-        "deepCathedralGrain": "Dyp katedralåre",
-        "richFlowingGrain": "Rik flytende åre"
+      "filterLabel": "Filtrer finérer",
+      "items": {
+        "strawOak": "Lys, varm-nøytral eik",
+        "silkOak": "Myk greige tone",
+        "honeyOak": "Varm, gyllen eik",
+        "umberOak": "Røkt gråbrun",
+        "smokedOak": "Dyp, varm brun",
+        "cocoaOak": "Nesten svart espresso",
+        "walnut": "Dyp, året brun",
+        "tobaccoWalnut": "Varm mellombrun",
+        "whiteAsh": "Lys, rett åring",
+        "whiteBeech": "Lys, jevn nøytral",
+        "birchSliced": "Fin, lys åring",
+        "birchRotary": "Bred, myk tegning"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Matchende produkter og tilbehør",
       "description": "Oppnå designkontinuitet med koordinerte Re-Sound-produkter.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Akustikkpaneler med spor",
-      "item2Title": "Matchende Finerkant",
-      "item2Desc": "Matchende trekant",
+      "item1Desc": "Rillede bord i de samme finérene for vegger og tak.",
+      "item2Title": "Overfinerte kanter",
+      "item2Desc": "Kanter i heltre, overfinert for usynlige skjøter over store flater.",
       "item3Title": "Gratis Prøver",
       "item3Desc": "Be om prøver av enhver finér- og finishkombinasjon."
     },
     "cta": {
       "title": "Klar til å Løfte ditt Prosjekt?",
       "description": "Få et tilpasset tilbud, be om fysiske prøver eller snakk med vårt spesifikasjonsteam om ditt neste prosjekt.",
-      "circularNote": "Sirkulær tilbaketaking"
+      "circularNote": "Gratis finérprøver · Gratis retur ved endt levetid"
     },
     "downloads": {
       "productDataSheet": "Produktdatablad"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvor kommer FSC-sertifisert finér fra?",
-          "answer": "Finéren hentes fra FSC-sertifiserte europeiske skoger (hovedsakelig eik og valnøtt). Chain-of-custody-sertifikatnummeret oppgis per leveranse på forespørsel."
+          "answer": "Alle rWood-finérer er FSC®-sertifiserte og kommer fra ansvarlig forvaltede skoger. Chain-of-custody-sertifikatet fås på forespørsel."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Hva er den vanlige leveringstiden?",
-          "answer": "Lagerfinér sendes innen 3–4 uker; tresorter utenfor lager og spesialfinish krever 6–8 uker. Produksjonskapasitet reserveres ved ordrebekreftelse."
+          "answer": "Leveringstiden avhenger av finér og overflate og bekreftes ved bestilling. Gratis finérprøver er tilgjengelige før du spesifiserer; priser og minsteordre på forespørsel."
         },
         "installMethod": {
           "question": "Hvordan monteres rWood-paneler?",
-          "answer": "To metoder støttes: et skjult clip-system for rask montering og enkel demontering, eller direkte liming for permanente installasjoner. Begge er beskrevet i monteringsanvisningen."
+          "answer": "rWood Panel er et glatt finert MDF-panel og bearbeides som et slikt: sages og CNC-freses med vanlig trebearbeidingsverktøy, og festes deretter til underlaget eller bygges inn i møbler. Monteringsanvisningen ligger i nedlastingsblokken på denne siden."
         },
         "substrateCleanup": {
           "question": "Hva skjer med panelene ved livets slutt?",
-          "answer": "Re-Sound tar panelene tilbake gratis i BE/NL/FR/DE/LU. Finéren skilles fra det resirkulerte filt-substratet; begge strømmer går tilbake i forsyningskjeden vår i stedet for til deponi."
+          "answer": "Re-Sound tar panelene gratis i retur ved endt levetid i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel finert MDF-panel i nærbilde som viser åredetaljer",
       "closeUpOfLacqueredVeneerSurface": "Nærbilde av lakkert fineroverflate",
-      "sustainablyManagedForest": "Bærekraftig forvaltet skog"
+      "sustainablyManagedForest": "Bærekraftig forvaltet skog",
+      "hero": "rWood Panel finert trepanel",
+      "heroIn": "rWood Panel i {veneer}",
+      "veneerSwatch": "Finérprøve {name}"
+    },
+    "kpi": {
+      "veneers": "finérer av ekte tre",
+      "ranges": "finérserier: Nature og Gemini",
+      "fsc": "sertifiserte finérer",
+      "anyValue": "Enhver",
+      "anyLabel": "finér, beis og overflate på bestilling",
+      "ariaLabel": "Nøkkeltall"
+    },
+    "ordering": {
+      "title": "Leveringstid og prøver",
+      "orderCaption": "Bestilling",
+      "supplyCaption": "Levering",
+      "samplesVal": "Gratis finérprøver",
+      "samplesQuotesDesc": "Bestill gratis finérprøver, eller send oss tegningene dine for et tilbud."
     }
   },
   "rpetFlexGroovePage": {

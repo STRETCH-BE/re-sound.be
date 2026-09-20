@@ -4,43 +4,65 @@ import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { PRODUCTS } from '@/data/products';
+import { isoAbsorptionClass } from '@/components/product/resolveMsg';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Single source for every spec figure on this page (αw …): src/data/products.ts.
-// Nothing below may hard-code one of these values.
+// Single source for every governed figure on this page (thickness, αw,
+// absorption class, fire class, plant, certifications): src/data/products.ts.
+// Nothing below may hard-code one of these values. Plank geometry, pattern
+// dimensions and the like are datasheet literals (rWood Groove datasheet,
+// EN · 09/2026, v1.0) that read the same in every language.
 const PRODUCT = PRODUCTS['rwood-groove'];
 const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
 const alphaW = panelSpecs?.alphaW ?? null;
-// "Sound absorbed" metric is αw expressed as a percentage (0.90 → 90 %).
-const absorbedPct = alphaW && /^\d+(\.\d+)?$/.test(alphaW) ? Math.round(parseFloat(alphaW) * 100) : null;
+const fireClass = panelSpecs?.fireClass ?? null;
+// ISO 11654 class derived from the stored αw ('0.90' → 'A'); null when not a plain number.
+const absorptionClass = isoAbsorptionClass(alphaW);
+// '10 / 19 mm' → '10 · 19' for the KPI band (the unit is in the label)
+const thicknessFigure = panelSpecs?.thickness
+  ? panelSpecs.thickness.replace(/\s*mm\s*$/, '').replace(/\s*\/\s*/g, ' · ')
+  : null;
 
-// Wood finish options for rWood - Groove
-const woodFinishOptions = [
-  { id: 'oak-natural', name: 'Silk Oak', swatch: '/images/products/rwood-groove/swatches/silk-oak.jpg', image: '/images/products/rwood-groove/silk-oak.jpg', isDark: false },
-  { id: 'oak-white', name: 'Straw Oak', swatch: '/images/products/rwood-groove/swatches/straw-oak.jpg', image: '/images/products/rwood-groove/straw-oak.jpg', isDark: false },
-  { id: 'oak-clear', name: 'Umber Oak', swatch: '/images/products/rwood-groove/swatches/umber-oak.jpg', image: '/images/products/rwood-groove/umber-oak.jpg', isDark: false },
-  { id: 'oak-brown', name: 'Walnut', swatch: '/images/products/rwood-groove/swatches/walnut.jpg', image: '/images/products/rwood-groove/walnut.jpg', isDark: true },
-  { id: 'oak-dark', name: 'Tobacco Walnut', swatch: '/images/products/rwood-groove/swatches/tobacco-walnut.jpg', image: '/images/products/rwood-groove/tobacco-walnut.jpg', isDark: true },
+/**
+ * Stock veneers — datasheet p.3 "Oak and walnut, any veneer to order".
+ * Names are the product's own veneer names (identical in every language);
+ * the one-line tone descriptions are message keys. Swatches are the
+ * datasheet photographs (public/images/products/rwood/guide); the hero
+ * photos are the existing product shots of a plank in that veneer.
+ */
+const veneers = [
+  { id: 'silk-oak', name: 'Silk Oak', descKey: 'veneers.silkOak', swatch: '/images/products/rwood/guide/silk-oak.webp', image: '/images/products/rwood-groove/silk-oak.jpg', isDark: false },
+  { id: 'straw-oak', name: 'Straw Oak', descKey: 'veneers.strawOak', swatch: '/images/products/rwood/guide/straw-oak.webp', image: '/images/products/rwood-groove/straw-oak.jpg', isDark: false },
+  { id: 'umber-oak', name: 'Umber Oak', descKey: 'veneers.umberOak', swatch: '/images/products/rwood/guide/umber-oak.webp', image: '/images/products/rwood-groove/umber-oak.jpg', isDark: true },
+  { id: 'walnut', name: 'Walnut', descKey: 'veneers.walnut', swatch: '/images/products/rwood/guide/walnut.webp', image: '/images/products/rwood-groove/walnut.jpg', isDark: true },
+  { id: 'tobacco-walnut', name: 'Tobacco Walnut', descKey: 'veneers.tobaccoWalnut', swatch: '/images/products/rwood/guide/tobacco-walnut.webp', image: '/images/products/rwood-groove/tobacco-walnut.jpg', isDark: true },
+];
+type Veneer = (typeof veneers)[number];
+
+/**
+ * Lamella patterns — datasheet p.1. Drawn to scale: lamella widths and the
+ * 15 mm grooves as percentages of the 300 mm plank. The datasheet gives the
+ * Mixed pattern as "6 × 50 / 30 / 22 mm" without the sequence; 50-30-22
+ * repeated is an assumption (flagged in the reconciliation report).
+ */
+const PLANK_MM = 300;
+const GROOVE_MM = 15;
+const patterns = [
+  { id: 'original', name: 'Original', lamellas: [34, 34, 34, 34, 34, 34], dims: '6 × 34 mm', descKey: 'options.originalDesc' },
+  { id: 'mixed', name: 'Mixed', lamellas: [50, 30, 22, 50, 30, 22], dims: '6 × 50 / 30 / 22 mm', descKey: 'options.mixedDesc' },
+  { id: '4-lamella', name: '4-Lamella', lamellas: [59, 59, 59, 59], dims: '4 × 59 mm', descKey: 'options.4lamellaDesc' },
+  { id: '3-lamella', name: '3-Lamella', lamellas: [84, 84, 84], dims: '3 × 84 mm', descKey: 'options.3lamellaDesc' },
 ];
 
-// Felt backing options
-const feltOptions = [
-  { id: 'black', name: 'Black Felt', color: '#1a1a1a' },
-  { id: 'grey', name: 'Grey Felt', color: '#6b6b6b' },
+// Felt colours — datasheet p.1/p.3 "3 mm, black or grey"
+const feltColours = [
+  { id: 'black', labelKey: 'feltBacking.black', color: '#1a1a1a' },
+  { id: 'grey', labelKey: 'feltBacking.grey', color: '#6b6b6b' },
 ];
 
-// Panel variant options
-const variantOptions = [
-  { id: 'original', name: 'Original', lamellas: 6, lamellaWidth: '34mm', descriptionKey: 'options.originalDesc' },
-  { id: 'mixed', name: 'Mixed', lamellas: 6, lamellaWidth: '50/30/22mm', descriptionKey: 'options.mixedDesc' },
-  { id: '4-lamella', name: '4-Lamella', lamellas: 4, lamellaWidth: '59mm', descriptionKey: 'options.4lamellaDesc' },
-  { id: '3-lamella', name: '3-Lamella', lamellas: 3, lamellaWidth: '84mm', descriptionKey: 'options.3lamellaDesc' },
-];
-
-// Default hero image (shown before any swatch is selected)
+// Default hero image (shown before any veneer is selected)
 const defaultHeroImage = '/images/products/rwood-groove/hero-rWood-Groove.webp';
-
 
 /**
  * Server-rendered sections handed in by the route page
@@ -63,12 +85,10 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
   const [activeSection, setActiveSection] = useState('overview');
-  const [selectedFinish, setSelectedFinish] = useState<typeof woodFinishOptions[0] | null>(null);
-  const [selectedFelt, setSelectedFelt] = useState(feltOptions[0]);
-  const [selectedVariant, setSelectedVariant] = useState(variantOptions[0]);
+  const [selectedFinish, setSelectedFinish] = useState<Veneer | null>(null);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
-  // Get the current hero image - default or selected finish
+  // Get the current hero image - default or selected veneer
   const currentHeroImage = selectedFinish ? selectedFinish.image : defaultHeroImage;
 
   // Fire a single view_item event on mount so GA4 / Meta see
@@ -77,23 +97,24 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
     analytics.viewItem('rwood-groove', 'rwood');
   }, []);
 
-
-  const handleFinishSelect = (finish: typeof woodFinishOptions[0]) => {
+  const handleFinishSelect = (finish: Veneer) => {
     if (!selectedFinish || finish.id !== selectedFinish.id) {
       setIsImageLoading(true);
       setSelectedFinish(finish);
     }
   };
 
+  // Sticky nav — labels are shared productPage.nav.* keys (translated in all locales)
   const navItems = [
-    { id: 'overview', label: 'Overview' },
-    { id: 'variants', label: 'Variants' },
-    { id: 'finishes', label: 'Finishes' },
-    { id: 'acoustics', label: 'Acoustics' },
-    { id: 'installation', label: 'Installation' },
-    { id: 'specs', label: 'Specifications' },
-    { id: 'gallery', label: 'Gallery' },
-    { id: 'downloads', label: 'Downloads' },
+    { id: 'overview', label: tPage('nav.overview') },
+    { id: 'patterns', label: tPage('nav.patterns') },
+    { id: 'veneers', label: tPage('nav.veneers') },
+    { id: 'acoustics', label: tPage('nav.acoustics') },
+    { id: 'installation', label: tPage('nav.installation') },
+    { id: 'specs', label: tPage('nav.technicalData') },
+    { id: 'ordering', label: tPage('nav.ordering') },
+    { id: 'gallery', label: tPage('nav.gallery') },
+    { id: 'downloads', label: tPage('nav.downloads') },
   ];
 
   const scrollToSection = (id: string) => {
@@ -113,6 +134,19 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
     }
   };
 
+  // KPI band under the hero — the datasheet's four figures, governed values only
+  const kpis = [
+    { value: thicknessFigure, label: t('kpi.thickness') },
+    {
+      value: alphaW,
+      label: absorptionClass ? t('kpi.alphaWClass', { cls: absorptionClass }) : t('kpi.alphaW'),
+    },
+    { value: fireClass, label: t('kpi.fire') },
+    { value: String(patterns.length), label: t('kpi.patterns') },
+  ].filter((k): k is { value: string; label: string } => k.value !== null);
+
+  const sizesValue = `300 × 2 400 · 2 780 mm${panelSpecs?.thickness ? ` · ${panelSpecs.thickness}` : ''}`;
+
   return (
     <div className="rwood-groove-product-page">
       {/* Hero Section */}
@@ -126,15 +160,19 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             {t('hero.description')}
           </p>
           <p className="hero-manufacturer">{tm('statement')}</p>
-          
+
           <div className="hero-usps">
-            <div className="usp">
-              <span className="usp-text">{t('hero.usp1')}</span>
-            </div>
-            {/* "Class A absorption" — allowed only because the data αw (0.90) is ≥ 0.90 */}
-            <div className="usp">
-              <span className="usp-text">{t('hero.usp2')}</span>
-            </div>
+            {PRODUCT.certifications.includes('FSC') && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.usp1')}</span>
+              </div>
+            )}
+            {/* "Class A absorption" — only while the data αw derives to class A */}
+            {absorptionClass === 'A' && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.usp2')}</span>
+              </div>
+            )}
             <div className="usp">
               <span className="usp-text">{t('hero.usp3')}</span>
             </div>
@@ -148,15 +186,14 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
               {tPage('cta.viewSpecifications')}
             </a>
           </div>
-
         </div>
-        
+
         <div className="hero-image">
           <div className="image-container">
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={currentHeroImage}
-                alt={`rWood - Groove acoustic panel${selectedFinish ? ` in ${selectedFinish.name}` : ''}`}
+                alt={selectedFinish ? t('alt.heroIn', { finish: selectedFinish.name }) : t('alt.hero')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -176,19 +213,20 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
               </div>
             )}
           </div>
-          
+
           <div className="finish-selector">
             <span className="selector-label">{t('materials.colorSelector')}</span>
             <div className="finish-options">
-              {woodFinishOptions.map((finish) => (
+              {veneers.map((finish) => (
                 <button
                   key={finish.id}
                   className={`finish-option ${selectedFinish?.id === finish.id ? 'active' : ''}`}
                   onClick={() => handleFinishSelect(finish)}
                   title={finish.name}
                   aria-label={tPage('a11y.selectFinish', { name: finish.name })}
+                  aria-pressed={selectedFinish?.id === finish.id}
                 >
-                  {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
+                  {/* Optimised 72px thumbnail of the datasheet swatch */}
                   <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
                   {selectedFinish?.id === finish.id && (
                     <span className={`finish-check ${finish.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
@@ -196,10 +234,24 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
                 </button>
               ))}
             </div>
-            <span className="selected-finish-name">{selectedFinish?.name || 'Select a finish'}</span>
+            <span className="selected-finish-name">{selectedFinish?.name ?? t('materials.selectPrompt')}</span>
           </div>
         </div>
       </section>
+
+      {/* KPI band — the datasheet's four figures */}
+      {kpis.length > 0 && (
+        <section className="kpi-band" aria-label={t('kpi.ariaLabel')}>
+          <dl className="kpi-list">
+            {kpis.map((k) => (
+              <div key={k.label} className="kpi">
+                <dt className="kpi-label">{k.label}</dt>
+                <dd className="kpi-value">{k.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
 
       {/* Sticky Navigation */}
       <nav className="product-nav">
@@ -216,7 +268,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         </div>
       </nav>
 
-      {/* Overview Section */}
+      {/* Overview + Build-up */}
       <section id="overview" className="content-section overview-section">
         <div className="section-grid">
           <div className="section-image">
@@ -256,95 +308,148 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             </ul>
           </div>
         </div>
+
+        {/* Build-up — datasheet p.1: three numbered layers */}
+        <div className="buildup" id="buildup">
+          <div className="buildup-visual" aria-hidden="true">
+            <div className="bu-layer bu-veneer"><div className="wood-grain"></div></div>
+            <div className="bu-layer bu-mdf">
+              <div className="groove-slots">
+                <div className="slot"></div>
+                <div className="slot"></div>
+                <div className="slot"></div>
+                <div className="slot"></div>
+                <div className="slot"></div>
+              </div>
+            </div>
+            <div className="bu-layer bu-felt"></div>
+          </div>
+          <div className="buildup-info">
+            <span className="section-tag">{t('buildUp.tag')}</span>
+            <h3>{t('buildUp.title')}</h3>
+            <ol className="buildup-list">
+              <li>
+                <span className="bu-num">01</span>
+                <div>
+                  <strong>{t('buildUp.layer1')}</strong>
+                  <span>{t('buildUp.layer1Desc')}</span>
+                </div>
+              </li>
+              <li>
+                <span className="bu-num">02</span>
+                <div>
+                  <strong>{t('buildUp.layer2')}</strong>
+                  <span>{t('buildUp.layer2Desc')}</span>
+                </div>
+              </li>
+              <li>
+                <span className="bu-num">03</span>
+                <div>
+                  <strong>{t('buildUp.layer3')}</strong>
+                  <span>{t('buildUp.layer3Desc')}</span>
+                </div>
+              </li>
+            </ol>
+            <p className="buildup-note">{t('buildUp.fixing')}</p>
+          </div>
+        </div>
       </section>
 
-      {/* Variants Section */}
-      <section id="variants" className="content-section variants-section dark">
-        <div className="variants-header">
+      {/* Patterns — datasheet p.1, drawn to scale */}
+      <section id="patterns" className="content-section patterns-section dark">
+        <div className="patterns-header">
           <span className="section-tag">{t('patterns.tag')}</span>
-          <h2>{t('overview.title')}</h2>
+          <h2>{t('patterns.title')}</h2>
           <p>
             {t('patterns.description2')}
           </p>
         </div>
 
-        <div className="variants-grid">
-          {variantOptions.map((variant) => (
-            <div 
-              key={variant.id} 
-              className={`variant-card ${selectedVariant.id === variant.id ? 'active' : ''}`}
-              onClick={() => setSelectedVariant(variant)}
-            >
-              <div className="variant-visual">
-                <div className={`lamella-preview lamella-${variant.lamellas}`}>
-                  {[...Array(variant.lamellas)].map((_, i) => (
-                    <div key={i} className="lamella" />
-                  ))}
-                </div>
+        <div className="patterns-grid">
+          {patterns.map((pattern) => (
+            <div key={pattern.id} className="pattern-card">
+              <div
+                className="plank"
+                role="img"
+                aria-label={t('patterns.drawingAlt', { name: pattern.name, dims: pattern.dims })}
+                style={{ gap: `${(GROOVE_MM / PLANK_MM) * 100}%` }}
+              >
+                {pattern.lamellas.map((w, i) => (
+                  <span key={i} className="lamella" style={{ width: `${(w / PLANK_MM) * 100}%` }} />
+                ))}
               </div>
-              <div className="variant-info">
-                <h4>{variant.name}</h4>
-                <span className="lamella-count">{variant.lamellas} Lamellas</span>
-                <p>{t(variant.descriptionKey)}</p>
-                <span className="lamella-width">Width: {variant.lamellaWidth}</span>
+              <div className="pattern-info">
+                <h3>{pattern.name}</h3>
+                <span className="pattern-dims">{pattern.dims}</span>
+                <p>{t(pattern.descKey)}</p>
+                <span className="pattern-count">{t('patterns.lamellaCount', { count: pattern.lamellas.length })}</span>
               </div>
             </div>
           ))}
         </div>
+        <p className="patterns-note">{t('patterns.note')}</p>
       </section>
 
-      {/* Finishes Section */}
-      <section id="finishes" className="content-section finishes-section">
-        <div className="section-grid">
-          <div className="section-content">
-            <span className="section-tag">{t('materials.tag')}</span>
-            <h2>{t('patterns.title')}</h2>
-            <p>
-              {t('materials.description2')}
-            </p>
-            
-            <div className="finish-categories">
-              <div className="finish-category">
-                <h4>{t('oakCollection.title')}</h4>
-                <p>{t('materials.oilFinishesDesc')}</p>
-              </div>
-              <div className="finish-category">
-                <h4>{t('materials.walnutTitle')}</h4>
-                <p>{t('materials.walnutDesc')}</p>
-              </div>
-            </div>
+      {/* Veneers and finishes — datasheet p.3 */}
+      <section id="veneers" className="content-section veneers-section">
+        <div className="veneers-header">
+          <span className="section-tag">{t('veneers.tag')}</span>
+          <h2>{t('veneers.title')}</h2>
+          <p>{t('veneers.description')}</p>
+        </div>
 
-            <div className="felt-options">
-              <h4>{t('feltBacking.title')}</h4>
-              <div className="felt-selector">
-                {feltOptions.map((felt) => (
-                  <button
-                    key={felt.id}
-                    className={`felt-option ${selectedFelt.id === felt.id ? 'active' : ''}`}
-                    onClick={() => setSelectedFelt(felt)}
-                  >
-                    <span className="felt-swatch" style={{ backgroundColor: felt.color }} />
-                    <span className="felt-name">{felt.name}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
+        <div className="veneer-grid">
+          {veneers.map((veneer) => (
+            <button
+              key={veneer.id}
+              type="button"
+              className={`veneer-card ${selectedFinish?.id === veneer.id ? 'active' : ''}`}
+              onClick={() => handleFinishSelect(veneer)}
+              aria-pressed={selectedFinish?.id === veneer.id}
+              aria-label={tPage('a11y.selectVeneer', { name: veneer.name })}
+            >
+              <span className="veneer-swatch-wrap">
+                <Image
+                  src={veneer.swatch}
+                  alt={t('alt.veneerSwatch', { name: veneer.name })}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 220px"
+                  quality={70}
+                  style={{ objectFit: 'cover' }}
+                />
+              </span>
+              <span className="veneer-name">{veneer.name}</span>
+              <span className="veneer-desc">{t(veneer.descKey)}</span>
+            </button>
+          ))}
+        </div>
+
+        <div className="finish-grid">
+          <div className="finish-card">
+            <h3>{t('materials.oilFinishesTitle')}</h3>
+            <p>{t('materials.oilFinishesDesc')}</p>
           </div>
-          <div className="section-image">
-            <div className="image-container">
-              <Image
-                src="/images/products/rwood-groove/rWood-Groove_detail.jpg"
-                alt={t('alt.woodFinishSamples')}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
+          <div className="finish-card">
+            <h3>{t('materials.walnutTitle')}</h3>
+            <p>{t('materials.walnutDesc')}</p>
+          </div>
+          <div className="finish-card">
+            <h3>{t('feltBacking.title')}</h3>
+            <p>{t('feltBacking.description')}</p>
+            <ul className="felt-list">
+              {feltColours.map((felt) => (
+                <li key={felt.id} className="felt-item">
+                  <span className="felt-swatch" style={{ backgroundColor: felt.color }} aria-hidden="true" />
+                  <span className="felt-name">{t(felt.labelKey)}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
+        <p className="veneers-note">{t('veneers.guideNote')}</p>
       </section>
 
-      {/* Acoustic Performance Section - IMPROVED */}
+      {/* Acoustics — datasheet p.2 */}
       <section id="acoustics" className="content-section acoustics-section">
         <div className="acoustics-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
@@ -354,157 +459,39 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           </p>
         </div>
 
-        <div className="acoustics-main-grid">
-          {/* Left: Exploded diagram */}
-          <div className="exploded-diagram">
-            <div className="diagram-title">{t('acoustics.diagramTitle')}</div>
-            <div className="exploded-layers">
-              <div className="exploded-layer">
-                <div className="layer-visual veneer-layer">
-                  <div className="wood-grain"></div>
-                </div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('materials.layer1Name')}</span>
-                  <span className="layer-desc">{t('materials.layer1Desc')}</span>
-                </div>
-              </div>
-              
-              <div className="layer-connector">
-                <svg viewBox="0 0 24 40" fill="none">
-                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
-                </svg>
-              </div>
-              
-              <div className="exploded-layer">
-                <div className="layer-visual mdf-layer">
-                  <div className="groove-slots">
-                    <div className="slot"></div>
-                    <div className="slot"></div>
-                    <div className="slot"></div>
-                  </div>
-                </div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('materials.layer2Name')}</span>
-                  <span className="layer-desc">{t('materials.layer2Desc')}</span>
-                </div>
-              </div>
-              
-              <div className="layer-connector">
-                <svg viewBox="0 0 24 40" fill="none">
-                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
-                </svg>
-              </div>
-              
-              <div className="exploded-layer">
-                <div className="layer-visual felt-layer"></div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('materials.layer3Name')}</span>
-                  <span className="layer-desc">{t('materials.layer3Desc')}</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Sound wave animation */}
-            <div className="sound-waves">
-              <div className="wave wave-1"></div>
-              <div className="wave wave-2"></div>
-              <div className="wave wave-3"></div>
-              <span className="wave-label">{t('materials.waveLabel')}</span>
-            </div>
+        <div className="acoustics-grid">
+          <div className="table-wrap">
+            <table className="data-table">
+              <caption>{t('acoustics.tableTitle')}</caption>
+              <tbody>
+                {alphaW && (
+                  <tr>
+                    <th scope="row">{tPage('specs.absorptionCoeff')}</th>
+                    <td>{alphaW}</td>
+                  </tr>
+                )}
+                {absorptionClass && (
+                  <tr>
+                    <th scope="row">{tPage('specs.absorptionClass')}</th>
+                    <td>{absorptionClass}</td>
+                  </tr>
+                )}
+                <tr>
+                  <th scope="row">{tPage('specs.testStandard')}</th>
+                  <td>EN ISO 354 · EN ISO 11654</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-
-          {/* Right: Performance metrics */}
-          <div className="performance-metrics">
-            <div className="main-rating">
-              <div className="rating-ring">
-                <svg viewBox="0 0 120 120">
-                  <circle cx="60" cy="60" r="54" fill="none" stroke="#e8f4fc" strokeWidth="8"/>
-                  <circle 
-                    cx="60" cy="60" r="54" 
-                    fill="none" 
-                    stroke="#197FC7" 
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                    strokeDasharray="305"
-                    strokeDashoffset="30"
-                    transform="rotate(-90 60 60)"
-                  />
-                </svg>
-                <div className="rating-content">
-                  {/* αw from src/data/products.ts */}
-                  <span className="rating-value">{alphaW ? `αw ${alphaW}` : '—'}</span>
-                  <span className="rating-label">{t('acoustics.ratingLabel')}</span>
-                </div>
-              </div>
-              {/* "Class A" only because the data αw (0.90) is ≥ 0.90 */}
-              <div className="rating-badge">
-                <span className="badge-icon">★</span>
-                <span className="badge-text">{tPage('classA')}</span>
-              </div>
-            </div>
-
-            <div className="metric-cards">
-              {absorbedPct !== null && (
-                <div className="metric-card">
-                  <div className="metric-value">{absorbedPct}%</div>
-                  <div className="metric-label">{t('acoustics.soundAbsorbed')}</div>
-                </div>
-              )}
-              <div className="metric-card">
-                <div className="metric-value">ISO 354</div>
-                <div className="metric-label">{t('acoustics.testStandard')}</div>
-              </div>
-            </div>
-
-            <div className="certification-note">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#197FC7" strokeWidth="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
-              </svg>
-              <span>{t('materials.certNote')}</span>
-            </div>
+          <div className="info-card">
+            <h3>{t('acoustics.behindTitle')}</h3>
+            <p>{t('acoustics.behindDesc')}</p>
           </div>
         </div>
-
-        <div className="acoustics-benefits">
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-              </svg>
-            </div>
-            <h4>{t('acoustics.benefit1Title')}</h4>
-            <p>{t('acoustics.benefit1')}</p>
-          </div>
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                <line x1="9" y1="9" x2="9.01" y2="9"/>
-                <line x1="15" y1="9" x2="15.01" y2="9"/>
-              </svg>
-            </div>
-            <h4>{t('acoustics.benefit2Title')}</h4>
-            <p>{t('acoustics.benefit2')}</p>
-          </div>
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 20V10"/>
-                <path d="M18 20V4"/>
-                <path d="M6 20v-4"/>
-              </svg>
-            </div>
-            <h4>{t('acoustics.benefit3Title')}</h4>
-            <p>{t('acoustics.benefit3')}</p>
-          </div>
-        </div>
+        <p className="acoustics-note">{t('acoustics.note')}</p>
       </section>
 
-      {/* Installation Section */}
+      {/* Installation — datasheet p.2, four steps */}
       <section id="installation" className="content-section installation-section dark">
         <div className="section-grid reverse">
           <div className="section-content">
@@ -513,37 +500,37 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             <p>
               {t('installation.description2')}
             </p>
-            
-            <div className="installation-steps">
-              <div className="install-step">
-                <div className="step-number">1</div>
+
+            <ol className="installation-steps">
+              <li className="install-step">
+                <div className="step-number">01</div>
                 <div className="step-content">
-                  <h4>{t('installation.step1Title')}</h4>
+                  <h3>{t('installation.step1Title')}</h3>
                   <p>{t('installation.step1Desc')}</p>
                 </div>
-              </div>
-              <div className="install-step">
-                <div className="step-number">2</div>
+              </li>
+              <li className="install-step">
+                <div className="step-number">02</div>
                 <div className="step-content">
-                  <h4>{t('installation.step2Title')}</h4>
+                  <h3>{t('installation.step2Title')}</h3>
                   <p>{t('installation.step2Desc')}</p>
                 </div>
-              </div>
-              <div className="install-step">
-                <div className="step-number">3</div>
+              </li>
+              <li className="install-step">
+                <div className="step-number">03</div>
                 <div className="step-content">
-                  <h4>{t('installation.step3Title')}</h4>
+                  <h3>{t('installation.step3Title')}</h3>
                   <p>{t('installation.step3Desc')}</p>
                 </div>
-              </div>
-              <div className="install-step">
-                <div className="step-number">4</div>
+              </li>
+              <li className="install-step">
+                <div className="step-number">04</div>
                 <div className="step-content">
-                  <h4>{t('installation.step4Title')}</h4>
+                  <h3>{t('installation.step4Title')}</h3>
                   <p>{t('installation.step4Desc')}</p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
           <div className="section-image">
             <div className="image-container">
@@ -559,7 +546,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         </div>
       </section>
 
-      {/* Sustainability Section */}
+      {/* Sustainability */}
       <section className="content-section sustainability-section">
         <div className="section-grid">
           <div className="section-image">
@@ -580,30 +567,42 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
               {t('sustainability.description2')}
             </p>
             <div className="sustainability-features">
-              <div className="sustain-item">
-                <div>
-                  <h4>{t('sustainability.badge1')}</h4>
-                  <p>{t('sustainability.badge1Desc')}</p>
+              {PRODUCT.certifications.includes('FSC') && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge1')}</h3>
+                    <p>{t('sustainability.badge1Desc')}</p>
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="sustain-item">
                 <div>
-                  <h4>{t('sustainability.badge2')}</h4>
-                  <p>{t('sustainability.badge2Desc')}</p>
+                  <h3>{t('sustainability.badge2')}</h3>
+                  {/* OEKO-TEX only while the felt certification is in product data */}
+                  <p>{PRODUCT.certifications.includes('OEKO-TEX') ? t('sustainability.badge2DescCert') : t('sustainability.badge2Desc')}</p>
                 </div>
               </div>
               {/* Origin badge: only when the plant is confirmed in product data (PL → Częstochowa) */}
               {PRODUCT.madeIn === 'PL' && (
                 <div className="sustain-item">
                   <div>
-                    <h4>{t('sustainability.badge3')}</h4>
+                    <h3>{t('sustainability.badge3')}</h3>
                     <p>{t('sustainability.badge3Desc')}</p>
+                  </div>
+                </div>
+              )}
+              {/* EPD badge only while the certification is in product data */}
+              {PRODUCT.certifications.includes('EPD') && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge5')}</h3>
+                    <p>{t('sustainability.badge5Desc')}</p>
                   </div>
                 </div>
               )}
               <div className="sustain-item">
                 <div>
-                  <h4>{t('sustainability.badge4')}</h4>
+                  <h3>{t('sustainability.badge4')}</h3>
                   <p>{t('sustainability.badge4Desc')}</p>
                 </div>
               </div>
@@ -612,8 +611,81 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         </div>
       </section>
 
-      {/* Specifications — server-rendered (ProductSpecs) */}
+      {/* Technical data — server-rendered (ProductSpecs) */}
       {specs}
+
+      {/* Ordering — datasheet p.3 */}
+      <section id="ordering" className="content-section ordering-section">
+        <div className="ordering-inner">
+          <div className="ordering-header">
+            <span className="section-tag">{tPage('ordering.tag')}</span>
+            <h2>{t('ordering.title')}</h2>
+          </div>
+
+          <div className="ordering-tables">
+            <div className="table-wrap">
+              <table className="data-table">
+                <caption>{t('ordering.orderCaption')}</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.leadTime')}</th>
+                    <td>{t('ordering.leadTimeVal')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.minimumOrder')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.sizes')}</th>
+                    <td>{sizesValue}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="table-wrap">
+              <table className="data-table">
+                <caption>{t('ordering.supplyCaption')}</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.samples')}</th>
+                    <td>{t('ordering.samplesVal')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.prices')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  {PRODUCT.madeIn && (
+                    <tr>
+                      <th scope="row">{tPage('ordering.madeIn')}</th>
+                      <td>{tm(`plant.${PRODUCT.madeIn}`)}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="ordering-band">
+            <div className="ordering-band-col">
+              <h3>{tPage('ordering.endOfLife')}</h3>
+              <p>{tPage('ordering.takeBack')}</p>
+            </div>
+            <div className="ordering-band-col">
+              <h3>{tPage('ordering.samplesQuotes')}</h3>
+              <p>{t('ordering.samplesQuotesDesc')}</p>
+              <div className="ordering-ctas">
+                <Link href="/samples" className="btn-primary" onClick={() => analytics.quoteClick('rwood-groove', 'ordering_samples')}>
+                  {tPage('ordering.requestSamples')}
+                </Link>
+                <Link href="/contact" className="btn-secondary on-dark" onClick={() => analytics.quoteClick('rwood-groove', 'ordering_quote')}>
+                  {tPage('ordering.requestQuote')}
+                </Link>
+              </div>
+            </div>
+          </div>
+          <p className="data-note">{tPage('ordering.dataNote')}</p>
+        </div>
+      </section>
 
       {/* Projects & Installations — server-rendered (ProductGallery) */}
       {gallery}
@@ -621,7 +693,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
       {/* Downloads — server-rendered (ProductDownloads) */}
       {downloads}
 
-      {/* Accessories Section */}
+      {/* Accessories Section — datasheet p.3 "Accessories" */}
       <section className="content-section accessories-section dark">
         <div className="accessories-header">
           <span className="section-tag">{t('accessories.tag')}</span>
@@ -631,19 +703,19 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
 
         <div className="accessories-grid">
           <div className="accessory-card">
-            <h4>{t('accessories.item1Title')}</h4>
+            <h3>{t('accessories.item1Title')}</h3>
             <p>{t('accessories.item1Desc')}</p>
           </div>
           <div className="accessory-card">
-            <h4>{t('accessories.item2Title')}</h4>
+            <h3>{t('accessories.item2Title')}</h3>
             <p>{t('accessories.item2Desc')}</p>
           </div>
           <div className="accessory-card">
-            <h4>{t('accessories.item3Title')}</h4>
+            <h3>{t('accessories.item3Title')}</h3>
             <p>{t('accessories.item3Desc')}</p>
           </div>
           <div className="accessory-card">
-            <h4>{t('accessories.item4Title')}</h4>
+            <h3>{t('accessories.item4Title')}</h3>
             <p>{t('accessories.item4Desc')}</p>
           </div>
         </div>
@@ -677,11 +749,12 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
 
       <style jsx>{`
         .rwood-groove-product-page {
-          --brand-blue: #197FC7;
+          /* Brand tokens come from :root (globals.css): --brand-blue #197FC7,
+             --deep-blue #0d3a5c, --cream, --font-heading. Page-local extras: */
           --brand-blue-dark: #155d94;
           --brand-blue-pale: #e8f4fc;
-          --deep-blue: #0a1628;
-          --cream: #f8f6f3;
+          --line: #e6ecf1;
+          --table-head: #f2f6fa;
           --charcoal: #333;
           --wood-warm: #8B6914;
           --wood-light: #D4A954;
@@ -711,7 +784,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         }
 
         .hero-content h1 {
-          font-size: 4.5rem;
+          font-size: 4rem;
           color: var(--deep-blue);
           margin-bottom: 0.5rem;
           letter-spacing: -2px;
@@ -728,13 +801,16 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           font-size: 1.1rem;
           color: #555;
           line-height: 1.8;
-          margin-bottom: 2rem;
-          max-width: 500px;
+          margin-bottom: 1.25rem;
+          max-width: 520px;
         }
+
+        /* .hero-manufacturer is styled in src/styles/product-shared.css */
 
         .hero-usps {
           display: flex;
-          gap: 2rem;
+          flex-wrap: wrap;
+          gap: 1rem 2rem;
           margin-bottom: 2rem;
         }
 
@@ -744,11 +820,11 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           gap: 0.5rem;
         }
 
-        .usp-icon { font-size: 1.5rem; }
         .usp-text { font-weight: 600; color: var(--deep-blue); font-size: 0.9rem; }
 
         .hero-ctas {
           display: flex;
+          flex-wrap: wrap;
           gap: 1rem;
           margin-bottom: 1.5rem;
         }
@@ -793,10 +869,10 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           color: white;
         }
 
-        .btn-secondary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
+        .btn-secondary.on-dark { color: white; border-color: rgba(255, 255, 255, 0.7); }
+        .btn-secondary.on-dark:hover { background: white; color: var(--deep-blue); }
 
-        .hero-price { font-size: 0.95rem; color: #666; }
-        .hero-price strong { color: var(--deep-blue); font-size: 1.2rem; }
+        .btn-secondary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
 
         .hero-image {
           display: flex;
@@ -863,7 +939,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           letter-spacing: 0.5px;
         }
 
-        .finish-options { display: flex; gap: 0.6rem; }
+        .finish-options { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; }
 
         .finish-option {
           position: relative;
@@ -890,8 +966,6 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           height: 100%;
           border-radius: 5px;
           border: 1px solid rgba(0, 0, 0, 0.1);
-          background-size: cover;
-          background-position: center;
         }
 
         .finish-check {
@@ -909,8 +983,39 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
 
         .selected-finish-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
 
-        .image-container.gallery { aspect-ratio: 1; }
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
+
+        /* KPI band — the datasheet's dark strip with four big figures */
+        .kpi-band {
+          padding: 0 4rem;
+          margin-top: -1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .kpi-list {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2rem 2.5rem;
+          background: var(--deep-blue);
+          color: white;
+          border-radius: 20px;
+        }
+
+        .kpi { display: flex; flex-direction: column-reverse; gap: 0.35rem; margin: 0; }
+
+        .kpi-value {
+          font-family: var(--font-heading);
+          font-size: 2.5rem;
+          font-weight: 600;
+          line-height: 1;
+          color: #7ec8f5;
+          margin: 0;
+        }
+
+        .kpi-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); line-height: 1.4; }
 
         .product-nav {
           position: sticky;
@@ -926,10 +1031,14 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           gap: 0;
           max-width: 1200px;
           margin: 0 auto;
+          overflow-x: auto;
+          scrollbar-width: none;
         }
 
+        .nav-inner::-webkit-scrollbar { display: none; }
+
         .nav-item {
-          padding: 1.25rem 1.25rem;
+          padding: 1.25rem 1.1rem;
           background: none;
           border: none;
           font-size: 0.9rem;
@@ -938,6 +1047,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           cursor: pointer;
           border-bottom: 3px solid transparent;
           transition: all 0.3s ease;
+          white-space: nowrap;
         }
 
         .nav-item:hover { color: var(--brand-blue); }
@@ -1003,25 +1113,160 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           color: var(--charcoal);
         }
 
-        .content-section.dark .feature-list li { color: rgba(255, 255, 255, 0.9); }
         .check { color: var(--brand-blue); font-weight: bold; }
 
-        /* Variants Section */
-        .variants-header {
+        /* Shared two-column data table (datasheet style: light header row) */
+        .table-wrap { width: 100%; overflow-x: auto; }
+
+        .data-table {
+          width: 100%;
+          min-width: 280px;
+          border-collapse: collapse;
+          background: white;
+          border: 1px solid var(--line);
+          border-radius: 12px;
+          overflow: hidden;
+        }
+
+        .data-table caption {
+          caption-side: top;
+          text-align: left;
+          padding: 0.75rem 1.25rem;
+          background: var(--table-head);
+          color: var(--deep-blue);
+          font-size: 0.85rem;
+          font-weight: 600;
+          border: 1px solid var(--line);
+          border-bottom: none;
+          border-radius: 12px 12px 0 0;
+        }
+
+        .data-table th,
+        .data-table td {
+          padding: 0.7rem 1.25rem;
+          border-top: 1px solid var(--line);
+          font-size: 0.9rem;
+          text-align: left;
+          vertical-align: top;
+        }
+
+        .data-table th { font-weight: 500; color: #666; width: 42%; }
+        .data-table td { color: var(--deep-blue); font-weight: 600; }
+
+        .info-card {
+          background: var(--cream);
+          border-radius: 16px;
+          padding: 1.5rem 1.75rem;
+        }
+
+        .info-card h3 { font-size: 1.1rem; color: var(--deep-blue); margin: 0 0 0.5rem; }
+        .info-card p { font-size: 0.95rem; color: #555; line-height: 1.6; margin: 0; }
+
+        .data-note,
+        .patterns-note,
+        .veneers-note,
+        .acoustics-note {
+          max-width: 1200px;
+          margin: 1.5rem auto 0;
+          font-size: 0.85rem;
+          color: #767676;
+          line-height: 1.6;
+        }
+
+        .patterns-note { color: rgba(255, 255, 255, 0.65); }
+
+        /* Build-up */
+        .buildup {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+          align-items: center;
+          max-width: 1200px;
+          margin: 4rem auto 0;
+          padding: 2.5rem;
+          background: var(--cream);
+          border-radius: 20px;
+        }
+
+        .buildup-visual {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          max-width: 360px;
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        .bu-layer { border-radius: 6px; position: relative; overflow: hidden; }
+
+        .bu-veneer {
+          height: 22px;
+          background: linear-gradient(90deg, #c4a77d 0%, #d4a954 30%, #c4a77d 60%, #b89860 100%);
+        }
+
+        .wood-grain {
+          position: absolute;
+          inset: 0;
+          background: repeating-linear-gradient(90deg, transparent 0 8px, rgba(139, 105, 20, 0.15) 8px 10px);
+        }
+
+        .bu-mdf {
+          height: 56px;
+          background: #d4c4a0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+        }
+
+        .groove-slots { display: flex; gap: 34px; }
+
+        .groove-slots .slot {
+          width: 15px;
+          height: 40px;
+          background: var(--deep-blue);
+          border-radius: 0 0 3px 3px;
+        }
+
+        .bu-felt { height: 12px; background: #2d2d2d; }
+
+        .buildup-info h3 { font-size: 1.5rem; color: var(--deep-blue); margin: 0 0 1.25rem; }
+
+        .buildup-list { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.9rem; }
+
+        .buildup-list li { display: flex; gap: 0.9rem; align-items: flex-start; }
+
+        .buildup-list li div { display: flex; flex-direction: column; }
+        .buildup-list strong { color: var(--deep-blue); font-size: 1rem; }
+        .buildup-list span:not(.bu-num) { color: #666; font-size: 0.9rem; }
+
+        .bu-num {
+          font-family: var(--font-heading);
+          font-weight: 600;
+          color: var(--brand-blue);
+          font-size: 0.95rem;
+          min-width: 1.8rem;
+          padding-top: 0.1rem;
+        }
+
+        .buildup-note { font-size: 0.9rem; color: #767676; margin: 0; }
+
+        /* Patterns (dark section) */
+        .patterns-header,
+        .acoustics-header,
+        .veneers-header,
+        .accessories-header,
+        .ordering-header {
           text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
+          max-width: 720px;
+          margin: 0 auto 3rem;
         }
 
-        .variants-header h2 {
-          font-size: 2.5rem;
-          color: white;
-          margin-bottom: 1rem;
-        }
+        .patterns-header h2,
+        .accessories-header h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .patterns-header p,
+        .accessories-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
 
-        .variants-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
-
-        .variants-grid {
+        .patterns-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 1.5rem;
@@ -1029,464 +1274,139 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           margin: 0 auto;
         }
 
-        .variant-card {
+        .pattern-card {
           background: rgba(255, 255, 255, 0.05);
-          border: 2px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.12);
           border-radius: 16px;
-          padding: 1.5rem;
-          cursor: pointer;
-          transition: all 0.3s ease;
+          padding: 1.25rem;
         }
 
-        .variant-card:hover {
-          background: rgba(255, 255, 255, 0.1);
-          border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .variant-card.active {
-          background: rgba(25, 127, 199, 0.2);
-          border-color: var(--brand-blue);
-        }
-
-        .variant-visual {
-          height: 100px;
+        .plank {
           display: flex;
-          align-items: center;
           justify-content: center;
-          margin-bottom: 1rem;
-        }
-
-        .lamella-preview {
-          display: flex;
-          gap: 4px;
-          height: 80px;
+          align-items: stretch;
+          aspect-ratio: 16 / 10;
+          width: 100%;
+          padding: 8% 0;
+          background: #e8f2fa;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 8px;
+          box-sizing: border-box;
         }
 
         .lamella {
-          background: linear-gradient(180deg, #c4a77d 0%, #8b6914 100%);
-          border-radius: 2px;
-          height: 100%;
+          display: block;
+          flex: 0 0 auto;
+          background: var(--deep-blue);
+          border-radius: 1px;
         }
 
-        .lamella-6 .lamella { width: 12px; }
-        .lamella-4 .lamella { width: 18px; }
-        .lamella-3 .lamella { width: 24px; }
+        .pattern-info { margin-top: 1rem; }
+        .pattern-info h3 { color: white; font-size: 1.1rem; margin: 0 0 0.2rem; }
+        .pattern-dims { display: block; font-size: 0.95rem; font-weight: 600; color: #7ec8f5; }
+        .pattern-info p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0.4rem 0 0.2rem; }
+        .pattern-count { font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); }
 
-        .variant-info { text-align: center; }
-        .variant-info h4 { color: white; font-size: 1.1rem; margin-bottom: 0.25rem; }
-        .lamella-count { font-size: 0.85rem; color: #7ec8f5; }
-        .variant-info p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin: 0.5rem 0; }
-        .lamella-width { font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); }
+        /* Veneers and finishes */
+        .veneers-header h2,
+        .acoustics-header h2,
+        .ordering-header h2 { font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1rem; letter-spacing: -1px; }
+        .veneers-header p,
+        .acoustics-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
 
-        /* Finishes Section */
-        .finish-categories {
+        .veneer-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
-          margin-bottom: 2rem;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 1.25rem;
+          max-width: 1200px;
+          margin: 0 auto 2.5rem;
         }
 
-        .finish-category {
+        .veneer-card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.2rem;
+          padding: 0;
+          background: none;
+          border: none;
+          text-align: left;
+          cursor: pointer;
+          font: inherit;
+        }
+
+        .veneer-swatch-wrap {
+          position: relative;
+          display: block;
+          width: 100%;
+          aspect-ratio: 872 / 640;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 3px solid transparent;
+          transition: border-color 0.2s ease, transform 0.2s ease;
+          margin-bottom: 0.5rem;
+          background: var(--cream);
+        }
+
+        .veneer-card:hover .veneer-swatch-wrap { transform: translateY(-2px); }
+        .veneer-card.active .veneer-swatch-wrap { border-color: var(--brand-blue); }
+        .veneer-card:focus-visible { outline: 2px solid var(--brand-blue); outline-offset: 4px; border-radius: 12px; }
+
+        .veneer-name { font-family: var(--font-heading); font-weight: 600; color: var(--deep-blue); font-size: 1rem; }
+        .veneer-desc { font-size: 0.85rem; color: #666; }
+
+        .finish-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.25rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .finish-card {
           padding: 1.5rem;
           background: var(--cream);
           border-radius: 12px;
         }
 
-        .finish-category h4 {
-          color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-        }
+        .finish-card h3 { color: var(--deep-blue); font-size: 1.05rem; margin: 0 0 0.5rem; }
+        .finish-card p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.6; }
 
-        .finish-category p {
-          font-size: 0.9rem;
-          color: #666;
-          margin: 0;
-          line-height: 1.6;
-        }
-
-        .felt-options h4 {
-          color: var(--deep-blue);
-          margin-bottom: 1rem;
-        }
-
-        .felt-selector {
-          display: flex;
-          gap: 1rem;
-        }
-
-        .felt-option {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.75rem 1rem;
-          background: white;
-          border: 2px solid #e0e0e0;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-        }
-
-        .felt-option:hover { border-color: var(--brand-blue); }
-
-        .felt-option.active {
-          border-color: var(--brand-blue);
-          background: var(--brand-blue-pale);
-        }
+        .felt-list { list-style: none; padding: 0; margin: 0.9rem 0 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+        .felt-item { display: flex; align-items: center; gap: 0.5rem; }
 
         .felt-swatch {
-          width: 24px;
-          height: 24px;
+          width: 22px;
+          height: 22px;
           border-radius: 50%;
           border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .felt-name { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); }
 
-        /* ========================================
-           ACOUSTICS SECTION - IMPROVED STYLES
-           ======================================== */
-        .acoustics-section {
-          background: var(--cream);
-        }
+        /* Acoustics */
+        .acoustics-section { background: var(--cream); }
 
-        .acoustics-header {
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 4rem;
-        }
-
-        .acoustics-header h2 {
-          font-size: 2.5rem;
-          color: var(--deep-blue);
-          margin-bottom: 1rem;
-        }
-
-        .acoustics-header p {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.8;
-        }
-
-        .acoustics-main-grid {
+        .acoustics-grid {
           display: grid;
           grid-template-columns: 1.2fr 1fr;
-          gap: 4rem;
-          max-width: 1100px;
-          margin: 0 auto 4rem;
-          align-items: center;
-        }
-
-        /* Exploded Diagram */
-        .exploded-diagram {
-          background: white;
-          border-radius: 24px;
-          padding: 2.5rem;
-          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-          position: relative;
-        }
-
-        .diagram-title {
-          font-size: 0.85rem;
-          font-weight: 600;
-          color: #767676;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 2rem;
-          text-align: center;
-        }
-
-        .exploded-layers {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0;
-        }
-
-        .exploded-layer {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem;
-          width: 100%;
-          max-width: 400px;
-        }
-
-        .layer-visual {
-          width: 180px;
-          border-radius: 6px;
-          flex-shrink: 0;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .layer-visual.veneer-layer {
-          background: linear-gradient(90deg, #c4a77d 0%, #d4a954 30%, #c4a77d 60%, #b89860 100%);
-          height: 24px;
-        }
-
-        .layer-visual.veneer-layer .wood-grain {
-          position: absolute;
-          inset: 0;
-          background: repeating-linear-gradient(
-            90deg,
-            transparent 0px,
-            transparent 8px,
-            rgba(139, 105, 20, 0.15) 8px,
-            rgba(139, 105, 20, 0.15) 10px
-          );
-        }
-
-        .layer-visual.mdf-layer {
-          background: #d4c4a0;
-          height: 50px;
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-          padding-bottom: 0;
-        }
-
-        .groove-slots {
-          display: flex;
-          gap: 24px;
-        }
-
-        .groove-slots .slot {
-          width: 14px;
-          height: 35px;
-          background: var(--deep-blue);
-          border-radius: 0 0 4px 4px;
-        }
-
-        .layer-visual.felt-layer {
-          background: #2d2d2d;
-          height: 16px;
-        }
-
-        .layer-connector {
-          height: 24px;
-          display: flex;
-          justify-content: center;
-          padding-left: 90px;
-        }
-
-        .layer-connector svg {
-          width: 24px;
-          height: 24px;
-        }
-
-        .layer-info {
-          display: flex;
-          flex-direction: column;
-          gap: 0.25rem;
-        }
-
-        .layer-name {
-          font-size: 0.95rem;
-          font-weight: 600;
-          color: var(--deep-blue);
-        }
-
-        .layer-desc {
-          font-size: 0.8rem;
-          color: #767676;
-        }
-
-        /* Sound Waves Animation */
-        .sound-waves {
-          position: absolute;
-          left: 1.5rem;
-          top: 50%;
-          transform: translateY(-50%);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.5rem;
-        }
-
-        .wave {
-          width: 3px;
-          background: var(--brand-blue);
-          border-radius: 2px;
-          opacity: 0.6;
-          animation: wave-pulse 1.5s ease-in-out infinite;
-        }
-
-        .wave-1 { animation-delay: 0s; height: 16px; }
-        .wave-2 { animation-delay: 0.2s; height: 24px; }
-        .wave-3 { animation-delay: 0.4s; height: 20px; }
-
-        @keyframes wave-pulse {
-          0%, 100% { transform: scaleY(0.6); opacity: 0.4; }
-          50% { transform: scaleY(1); opacity: 0.8; }
-        }
-
-        .wave-label {
-          font-size: 0.65rem;
-          color: #767676;
-          writing-mode: vertical-rl;
-          text-orientation: mixed;
-          transform: rotate(180deg);
-          margin-top: 0.5rem;
-        }
-
-        /* Performance Metrics */
-        .performance-metrics {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2rem;
-        }
-
-        .main-rating {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1rem;
-        }
-
-        .rating-ring {
-          position: relative;
-          width: 160px;
-          height: 160px;
-        }
-
-        .rating-ring svg {
-          width: 100%;
-          height: 100%;
-          transform: rotate(0deg);
-        }
-
-        .rating-ring circle:last-child {
-          transition: stroke-dashoffset 1s ease-out;
-        }
-
-        .rating-content {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .rating-content .rating-value {
-          font-size: 1.75rem;
-          font-weight: 700;
-          color: var(--deep-blue);
-        }
-
-        .rating-content .rating-label {
-          font-size: 0.85rem;
-          color: #767676;
-        }
-
-        .rating-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          background: linear-gradient(135deg, #197FC7 0%, #155d94 100%);
-          color: white;
-          padding: 0.5rem 1.25rem;
-          border-radius: 20px;
-          font-weight: 600;
-          font-size: 0.9rem;
-        }
-
-        .badge-icon {
-          font-size: 1rem;
-        }
-
-        .metric-cards {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-          width: 100%;
-        }
-
-        .metric-card {
-          background: white;
-          padding: 1.25rem;
-          border-radius: 12px;
-          text-align: center;
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-        }
-
-        .metric-value {
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: var(--brand-blue);
-          margin-bottom: 0.25rem;
-        }
-
-        .metric-label {
-          font-size: 0.8rem;
-          color: #767676;
-        }
-
-        .certification-note {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 1rem 1.5rem;
-          background: rgba(25, 127, 199, 0.08);
-          border-radius: 12px;
-          font-size: 0.9rem;
-          color: var(--deep-blue);
-        }
-
-        /* Benefits Grid - Improved */
-        .acoustics-benefits {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
           max-width: 1000px;
           margin: 0 auto;
+          align-items: start;
         }
 
-        .benefit {
-          text-align: center;
-          padding: 2.5rem 2rem;
-          background: white;
-          border-radius: 20px;
-          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .benefit:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-        }
-
-        .benefit-icon-wrap {
-          width: 64px;
-          height: 64px;
-          margin: 0 auto 1.25rem;
-          background: var(--brand-blue-pale);
-          border-radius: 16px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--brand-blue);
-        }
-
-        .benefit h4 {
-          font-size: 1.1rem;
-          color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-        }
-
-        .benefit p {
-          font-size: 0.9rem;
-          color: #666;
-          margin: 0;
-          line-height: 1.6;
-        }
+        .acoustics-section .info-card { background: white; }
+        .acoustics-note { max-width: 1000px; }
 
         /* Installation Section */
         .installation-steps {
+          list-style: none;
+          padding: 0;
           display: flex;
           flex-direction: column;
           gap: 1.5rem;
-          margin-top: 2rem;
+          margin: 2rem 0 0;
         }
 
         .install-step {
@@ -1496,19 +1416,14 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         }
 
         .step-number {
-          width: 40px;
-          height: 40px;
-          background: var(--brand-blue);
-          color: white;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: 700;
-          flex-shrink: 0;
+          font-family: var(--font-heading);
+          font-weight: 600;
+          color: #7ec8f5;
+          min-width: 2.2rem;
+          padding-top: 0.15rem;
         }
 
-        .step-content h4 { color: white; margin: 0 0 0.25rem; }
+        .step-content h3 { color: white; font-size: 1.05rem; margin: 0 0 0.25rem; }
         .step-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
 
         /* Sustainability Section */
@@ -1524,19 +1439,35 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           gap: 1rem;
         }
 
-        .sustain-icon { font-size: 1.5rem; flex-shrink: 0; }
-        .sustain-item h4 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
+        .sustain-item h3 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
 
-        /* Accessories Section */
-        .accessories-header {
-          text-align: center;
-          margin-bottom: 3rem;
+        /* Ordering */
+        .ordering-section { background: white; }
+        .ordering-inner { max-width: 1200px; margin: 0 auto; }
+
+        .ordering-tables {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+          margin-bottom: 1.5rem;
         }
 
-        .accessories-header h2 { font-size: 2.5rem; color: white; margin-bottom: 0.5rem; }
-        .accessories-header p { color: rgba(255, 255, 255, 0.7); }
+        .ordering-band {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+          padding: 2.5rem;
+          background: var(--deep-blue);
+          color: white;
+          border-radius: 20px;
+        }
 
+        .ordering-band h3 { font-size: 1.25rem; color: white; margin: 0 0 0.75rem; }
+        .ordering-band p { font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin: 0 0 1.25rem; }
+        .ordering-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+        /* Accessories Section */
         .accessories-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -1553,8 +1484,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           text-align: center;
         }
 
-        .accessory-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-        .accessory-card h4 { color: white; margin-bottom: 0.5rem; }
+        .accessory-card h3 { color: white; font-size: 1.05rem; margin-bottom: 0.5rem; }
         .accessory-card p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.6); margin: 0; }
 
         /* CTA Section */
@@ -1590,72 +1520,49 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
             min-height: auto;
           }
           .hero-content h1 { font-size: 3rem; }
+          .kpi-band { padding: 0 2rem; }
+          .kpi-list { grid-template-columns: repeat(2, 1fr); }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
-          .variants-grid { grid-template-columns: repeat(2, 1fr); }
+          .buildup { grid-template-columns: 1fr; }
+          .patterns-grid { grid-template-columns: repeat(2, 1fr); }
+          .veneer-grid { grid-template-columns: repeat(3, 1fr); }
+          .finish-grid { grid-template-columns: 1fr; }
+          .acoustics-grid { grid-template-columns: 1fr; }
           .accessories-grid { grid-template-columns: repeat(2, 1fr); }
-          .finish-categories { grid-template-columns: 1fr; }
           .sustainability-features { grid-template-columns: 1fr; }
-          
-          /* Acoustics responsive */
-          .acoustics-main-grid {
-            grid-template-columns: 1fr;
-            gap: 3rem;
-          }
-          
-          .exploded-diagram {
-            max-width: 500px;
-            margin: 0 auto;
-          }
-          
-          .acoustics-benefits {
-            grid-template-columns: 1fr;
-            max-width: 400px;
-          }
-          
-          .sound-waves {
-            display: none;
-          }
+          .ordering-tables { grid-template-columns: 1fr; }
+          .ordering-band { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
           .content-section { padding: 4rem 1.5rem; }
-          .product-nav { padding: 0 1rem; overflow-x: auto; }
-          .nav-inner { min-width: max-content; }
-          .nav-item { padding: 1rem; font-size: 0.85rem; }
-          .hero-usps { flex-direction: column; gap: 1rem; }
+          .product-nav { padding: 0 1rem; }
+          .nav-item { padding: 1rem 0.9rem; font-size: 0.85rem; }
           .hero-ctas { flex-direction: column; }
-          .section-content h2 { font-size: 2rem; }
-          .variants-grid { grid-template-columns: 1fr; }
+          .section-content h2,
+          .patterns-header h2,
+          .veneers-header h2,
+          .acoustics-header h2,
+          .ordering-header h2,
+          .accessories-header h2 { font-size: 2rem; }
+          .patterns-grid { grid-template-columns: 1fr; }
+          .veneer-grid { grid-template-columns: repeat(2, 1fr); }
           .accessories-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }
-          .felt-selector { flex-wrap: wrap; }
-          .finish-options { flex-wrap: wrap; justify-content: center; }
-          
-          /* Acoustics responsive */
-          .exploded-layer {
-            flex-direction: column;
-            gap: 0.75rem;
-            text-align: center;
-          }
-          
-          .layer-visual {
-            width: 100%;
-            max-width: 200px;
-          }
-          
-          .layer-connector {
-            padding-left: 0;
-          }
-          
-          .metric-cards {
-            grid-template-columns: 1fr;
-          }
-          
-          .rating-ring {
-            width: 140px;
-            height: 140px;
-          }
+          .buildup { padding: 1.5rem; }
+          .ordering-band { padding: 1.75rem; }
+        }
+
+        @media (max-width: 480px) {
+          .content-section { padding: 3rem 1rem; }
+          .product-hero { padding: 5rem 1rem 2rem; }
+          .hero-content h1 { font-size: 2.4rem; letter-spacing: -1px; }
+          .kpi-band { padding: 0 1rem; }
+          .kpi-list { grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1.5rem 1.25rem; }
+          .kpi-value { font-size: 2rem; }
+          .veneer-grid { grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+          .finish-selector { padding: 1rem; }
         }
       `}</style>
     </div>

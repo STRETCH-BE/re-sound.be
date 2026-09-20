@@ -19,13 +19,13 @@
     "divideTitle": "Separadores Acústicos Autoportantes Divide | Re-Sound",
     "divideDescription": "Mamparas acústicas autoportantes con conexión modular magnética: absorción por ambas caras, sin instalación, textil reciclado. Fabricadas en Bélgica.",
     "rwoodGrooveTitle": "rWood Groove — Paneles acústicos de madera ranurados | Re-Sound",
-    "rwoodGrooveDescription": "Paneles acústicos de madera ranurados con chapa de roble y nogal certificada FSC sobre núcleo de fieltro reciclado. Clase A, 4 tipos de lamas, 5 acabados.",
+    "rwoodGrooveDescription": "Tablas acústicas de madera ranurada: chapa de roble o nogal con certificación FSC® sobre núcleo de MDF con fieltro de 3 mm de PET reciclado. αw 0,90, clase A, cuatro patrones de lamas, cinco chapas, 10 y 19 mm.",
     "rwoodPerfTitle": "rWood Perf — Paneles acústicos de madera perforada | Re-Sound",
     "rwoodPerfDescription": "Paneles acústicos de madera perforada con chapa certificada FSC: cuatro patrones de perforación para absorción de banda ancha, 8 acabados, núcleo ignífugo.",
     "rwoodMicroTitle": "rWood Micro — Paneles acústicos microperforados | Re-Sound",
-    "rwoodMicroDescription": "Paneles acústicos de madera microperforados (0,5 mm) con chapa certificada FSC: patrón casi invisible, reacción al fuego {fireClass}, opción retroiluminada.",
-    "rwoodVeneerTitle": "rWood Panel — Paneles acústicos de chapa, 10 especies | Re-Sound",
-    "rwoodVeneerDescription": "Paneles acústicos de chapa lisa en 10 especies de madera: calidad mobiliario, FSC, EPD disponible. Cepillados, teñidos y lacados, listos para instalar.",
+    "rwoodMicroDescription": "Paneles acústicos de madera microperforados (desde 0,5 mm) con chapa certificada FSC: patrón casi invisible, reacción al fuego {fireClass}, a medida hasta 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — Paneles acústicos chapados, 12 chapas de madera | Re-Sound",
+    "rwoodVeneerDescription": "Paneles acústicos chapados lisos en 12 chapas de madera natural, gama Nature o Gemini: certificación FSC®, laca natural o pigmentada, HPL, lámina o pintura. Acabados en fábrica, cualquier chapa por encargo.",
     "rpetGrooveTitle": "rPET Groove — Paneles acústicos de PET ranurados | Re-Sound",
     "rpetGrooveDescription": "Paneles acústicos de PET ranurados de botellas recicladas: 12 colores, 3 espesores (12/24/36 mm), NRC hasta 0,90, fuego B-s1,d0. Hechos en Polonia.",
     "rpetPanelTitle": "rPET Panel — Panel acústico de PET reciclado | Re-Sound",
@@ -1939,121 +1939,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "PANELES ACÚSTICOS DE MADERA",
+      "tag": "PANEL ACÚSTICO DE MADERA RANURADA",
       "title": "rWood Groove: paneles acústicos de madera ranurados en roble y nogal",
-      "tagline": "Belleza Natural, Acústica Perfecta",
-      "description": "Aporte calidez natural y un estilo sofisticado a cualquier espacio con los paneles acústicos rWood - Groove. Chapas de roble y nogal de primera calidad combinadas con un respaldo de fieltro fonoabsorbente crean armonía entre estética y acústica.",
-      "usp1": "Madera Certificada FSC®",
-      "usp2": "Absorción Clase A",
-      "usp3": "Programa de recogida gratuito"
+      "tagline": "Belleza natural, acústica perfecta.",
+      "description": "Chapa de roble o nogal de calidad A sobre un núcleo de MDF, ranurada con precisión en lamas verticales sobre un fieltro de 3 mm de PET reciclado. Las ranuras abiertas conducen el sonido hacia el fieltro; las lamas se unen mediante machihembrado oculto. Lamas de 300 mm de ancho, 2 400 o 2 780 mm de largo, en 10 y 19 mm, para paredes y techos.",
+      "usp1": "Chapa con certificación FSC®",
+      "usp2": "Clase de absorción A",
+      "usp3": "Recogida gratuita al final de la vida útil"
     },
     "overview": {
-      "tag": "ARTESANÍA",
-      "title": "Donde la Naturaleza se Encuentra con el Diseño",
-      "subtitle": "Acabados premium",
-      "description": "Los paneles rWood - Groove transforman cualquier sala en un entorno acústico sofisticado. La combinación de ranuras fresadas con precisión y chapas de madera de primera calidad crea una superficie tan impactante visualmente como eficaz acústicamente.",
-      "feature1": "Chapas de roble y nogal de primera calidad, grado A",
-      "feature2": "Respaldo de fieltro acústico integrado",
-      "feature3": "Unión continua entre paneles",
-      "feature4": "Apto para paredes y techos",
-      "description2": "Los paneles rWood - Groove transforman cualquier sala en un espacio de belleza natural y confort acústico. Cada panel incorpora chapa de roble o nogal de primera calidad, grado A, ranurada con precisión para crear la característica estética lineal y maximizar al mismo tiempo la absorción acústica gracias al respaldo de fieltro integrado."
-    },
-    "oakCollection": {
-      "title": "Colección roble",
-      "description": "Chapa de roble natural en múltiples opciones de tinte, desde el rubio natural hasta los tonos ahumados profundos."
+      "tag": "RESUMEN",
+      "title": "Roble o nogal ranurado sobre fieltro de PET reciclado",
+      "feature1": "Chapa de roble o nogal de calidad A",
+      "feature2": "Trasera de fieltro de 3 mm de PET reciclado, negro o gris",
+      "feature3": "Unión machihembrada oculta",
+      "feature4": "Para paredes y techos, interiores secos",
+      "description2": "rWood Groove combina una chapa de roble o nogal de calidad A con un núcleo de MDF ranurado con precisión en lamas verticales. El fieltro de 3 mm de PET reciclado detrás de las lamas absorbe el sonido que entra por las ranuras abiertas, lo que reduce la reverberación y mejora la inteligibilidad del habla. Cuatro patrones de lamas, cinco chapas en stock, y cualquier chapa y acabado por encargo."
     },
     "feltBacking": {
-      "title": "Opciones de respaldo de fieltro",
-      "description": "Fieltro acústico gris natural, negro o de color, visible a través de las ranuras."
+      "title": "Color del fieltro",
+      "description": "Fieltro de 3 mm de PET reciclado detrás de las lamas, visible a través de las ranuras.",
+      "black": "Negro",
+      "grey": "Gris"
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
-      "title": "Absorción Sonora Superior",
-      "benefit1Title": "Reverberación reducida",
-      "benefit1": "Controle el eco y mejore la inteligibilidad de la palabra en cualquier sala",
-      "benefit2Title": "Mayor confort",
-      "benefit2": "Cree entornos más tranquilos y serenos",
-      "benefit3Title": "Rendimiento probado",
-      "benefit3": "Datos acústicos verificados de forma independiente",
-      "description": "El exclusivo diseño ranurado, combinado con fieltro acústico de alta calidad, ofrece una absorción acústica excepcional. Reduzca el eco y la reverberación para crear espacios tranquilos y productivos.",
-      "ratingLabel": "Absorción",
-      "description2": "El exclusivo diseño ranurado, combinado con fieltro acústico de alta calidad, ofrece una absorción acústica excepcional. Reduzca el eco, elimine el ruido y cree espacios tan agradables para el oído como para la vista.",
-      "diagramTitle": "Sección Transversal del Panel",
-      "soundAbsorbed": "Sonido Absorbido",
-      "testStandard": "Norma de ensayo"
+      "tag": "ACÚSTICA",
+      "title": "Absorción acústica",
+      "description2": "Las ranuras abiertas conducen el sonido hacia el fieltro de PET reciclado detrás de las lamas, lo que reduce la reverberación y mejora la inteligibilidad del habla.",
+      "tableTitle": "Absorción acústica",
+      "behindTitle": "Detrás de la tabla",
+      "behindDesc": "Montada sobre rastreles, la cámara puede alojar un absorbente adicional: fieltro acústico, un panel rPET o lana mineral.",
+      "note": "αw y clase de absorción según EN ISO 11654. Los valores por banda de octava llegarán con la nueva serie de ensayos."
     },
     "installation": {
-      "tag": "INSTALACIÓN FÁCIL",
-      "title": "Instalación uniforme",
-      "step1Title": "Preparar superficie",
-      "step1Desc": "Monte los rastreles o aplique adhesivo sobre una superficie limpia y seca",
-      "step2Title": "Posicionar primer panel",
-      "step2Desc": "Empiece desde una esquina y compruebe la nivelación",
-      "step3Title": "Conectar paneles",
-      "step3Desc": "Encaje la lengüeta en la ranura para una unión continua",
-      "step4Title": "Completar y rematar",
-      "step4Desc": "Añada las molduras de remate para un resultado profesional",
-      "description": "Los paneles rWood - Groove incorporan una innovadora unión machihembrada para una instalación rápida y sencilla.",
-      "description2": "Los paneles rWood - Groove incorporan un innovador sistema de unión machihembrada que garantiza juntas invisibles y una superficie uniforme. Tanto si es un instalador profesional como un aficionado experimentado, nuestro sistema hace que la instalación resulte sencilla."
+      "tag": "INSTALACIÓN",
+      "title": "Machihembrado, sobre rastreles o encolado",
+      "step1Title": "Soporte",
+      "step1Desc": "Rastreles o adhesivo sobre una superficie limpia, seca y nivelada.",
+      "step2Title": "Primera tabla",
+      "step2Desc": "Empiece por una esquina y compruebe el nivel.",
+      "step3Title": "Unión",
+      "step3Desc": "Deslice la lengüeta en la ranura para una junta invisible.",
+      "step4Title": "Remate",
+      "step4Desc": "Cierre los bordes con perfiles de remate.",
+      "description2": "Las tablas se fijan sobre rastreles o se encolan al soporte y se unen mediante machihembrado oculto, de modo que las juntas desaparecen en el patrón de ranuras."
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
-      "title": "Procedencia Responsable",
-      "badge1": "Certificado FSC®",
-      "badge1Desc": "Madera procedente de bosques gestionados de forma responsable",
-      "badge2": "Fieltro reciclado",
-      "badge2Desc": "Respaldo acústico fabricado con materiales reciclados",
+      "title": "De origen responsable",
+      "badge1": "Certificación FSC®",
+      "badge1Desc": "Origen de la madera con certificación FSC®, certificado C191539",
+      "badge2": "Fieltro de PET reciclado",
+      "badge2Desc": "Trasera de fieltro de 3 mm de PET reciclado",
       "badge3": "Fabricado en Polonia",
       "badge3Desc": "Fabricado en nuestra propia planta de Częstochowa (Polonia)",
       "badge4": "Recogida gratuita",
       "badge4Desc": "Los paneles vuelven a nosotros sin coste al final de su vida útil",
-      "description": "Cada panel rWood - Groove se fabrica con la sostenibilidad como principio esencial. Nuestra madera con certificación FSC® procede de bosques gestionados de forma responsable, y el respaldo acústico utiliza materiales reciclados.",
-      "description2": "Cada panel rWood - Groove se fabrica con la sostenibilidad como principio esencial. Nuestra certificación FSC® garantiza que la madera procede de bosques gestionados de forma responsable que aportan beneficios medioambientales, sociales y económicos."
+      "description2": "Madera con certificación FSC®, trasera de PET reciclado y recogida gratuita al final de la vida útil.",
+      "badge2DescCert": "Trasera de fieltro de 3 mm de PET reciclado, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Declaración ambiental de producto según ISO 14025 y EN 15804"
     },
     "specs": {
-      "tag": "TÉCNICO",
-      "title": "Especificaciones",
-      "acousticsTitle": "Rendimiento acústico",
-      "fireTitle": "Seguridad al fuego",
-      "certsTitle": "Certificaciones",
-      "applicationsTitle": "Aplicaciones",
-      "dimensionsTitle": "Dimensiones",
-      "materialsTitle": "Materiales",
-      "dimPanelWidth": "Ancho del panel",
-      "dimPanelLength": "Longitud del panel",
-      "dimThickness": "Espesor",
-      "dimGrooveDepth": "Profundidad de ranura",
-      "dimGrooveWidth": "Anchura de ranura",
-      "matVeneer": "Chapa de madera",
-      "matVeneerVal": "Roble / nogal de grado A",
-      "matCore": "Núcleo",
-      "matCoreVal": "MDF (estándar / hidrófugo / ignífugo)",
-      "matBacking": "Respaldo",
-      "matBackingVal": "PET reciclado (3 mm)",
+      "tag": "DATOS TÉCNICOS",
+      "title": "Tabla, fuego y emisiones",
+      "acousticsTitle": "Absorción acústica",
+      "fireTitle": "Fuego (EN 13501-1) y emisiones",
+      "dimPanelWidth": "Ancho",
+      "dimPanelLength": "Largo",
+      "matCoreVal": "MDF estándar, MR o FR",
       "matFinish": "Acabado",
-      "finishVal": "Aceite / laca",
-      "stdPanels": "Paneles estándar",
-      "fireMdfVal": "MDF ignífugo",
-      "woodSourcing": "Procedencia de la madera",
-      "feltCert": "Certificación del fieltro",
-      "envLabel": "Medioambiental",
-      "vocLabel": "Emisiones de COV",
-      "vocVal": "E1 / Bajas emisiones",
-      "appInstall": "Instalación",
-      "appWalls": "Paredes y Techos",
-      "appEnv": "Entorno",
-      "appEnvVal": "Interior (zonas secas)",
-      "appMoist": "Resistente a la humedad",
-      "appMoistVal": "Disponible para zonas húmedas",
-      "appConn": "Conexión",
-      "appConnVal": "Machihembrado"
+      "finishVal": "Aceite penetrante o laca",
+      "plankTitle": "Tabla",
+      "dimGroove": "Ranura",
+      "dimGrooveVal": "15 mm de ancho, 7 · 15 mm de profundidad",
+      "feltVal": "PET reciclado, 3 mm, negro o gris",
+      "connVal": "Machihembrado oculto",
+      "weightPlank": "Peso por tabla",
+      "weightPlankVal": "aprox. 6,4–8,3 kg",
+      "tolerances": "Tolerancias",
+      "tolerancesVal": "Espesor ± 0,2 mm, peso ± 10 %",
+      "octaveBands": "Valores por banda de octava",
+      "octaveBandsVal": "Llegarán con la nueva serie de ensayos",
+      "fireStdCore": "Núcleo MDF estándar",
+      "fireFrCore": "Núcleo MDF FR",
+      "fireFelt": "Trasera de fieltro",
+      "fscVal": "Certificación FSC®, C191539",
+      "epdVal": "EPD según ISO 14025 · EN 15804",
+      "finishTitle": "Acabado",
+      "oakOilColours": "Colores de aceite para roble",
+      "oakOilColoursVal": "Natural, Blanco, Incoloro, Marrón, Marrón oscuro, Negro",
+      "walnutFinish": "Nogal",
+      "walnutFinishVal": "Natural, aceitado",
+      "feltColours": "Colores del fieltro",
+      "feltColoursVal": "Negro o gris",
+      "optionsTitle": "Opciones",
+      "surfaceVal": "Aceitado o pintado, sin tratar bajo petición",
+      "madeToOrder": "Por encargo",
+      "madeToOrderVal": "Cualquier chapa y acabado",
+      "accessories": "Accesorios",
+      "accessoriesVal": "Perfiles de remate, perfiles de esquina, rastreles, kit de retoque"
     },
     "accessories": {
-      "tag": "COMPLETA EL ESTILO",
+      "tag": "ACCESORIOS",
       "title": "Accesorios",
-      "endMouldings": "Molduras de remate",
-      "cornerProfiles": "Perfiles de esquina",
-      "description": "Remates profesionales para un resultado perfecto",
+      "description": "Perfiles de remate, perfiles de esquina, rastreles y kit de retoque.",
       "item1Title": "Molduras de remate",
       "item1Desc": "Bordes limpios donde los paneles se encuentran con otras superficies",
       "item2Title": "Perfiles de esquina",
@@ -2068,57 +2058,50 @@
       "title": "Proyectos e Instalaciones"
     },
     "patterns": {
-      "tag": "OPCIONES DE DISEÑO",
-      "title": "Acabados premium",
-      "description": "Cuatro patrones de ranurado diferentes para adaptarse a cualquier visión arquitectónica. Desde el listón clásico hasta el lineal moderno, cada patrón convierte la pared en una superficie dinámica.",
-      "description2": "Cuatro patrones de ranurado diferentes para adaptarse a cualquier visión arquitectónica. Desde proporciones clásicas y equilibradas hasta lamas anchas de gran presencia: encuentre la expresión perfecta para su espacio."
+      "tag": "PATRONES",
+      "title": "Cuatro patrones de lamas",
+      "description2": "Cuatro patrones de lamas sobre la misma tabla de 300 mm, desde el clásico Original de seis lamas hasta el ancho 3-Lamella. Los dibujos están a escala: anchos de lama y ranuras de 15 mm como en la tabla.",
+      "drawingAlt": "Patrón {name}, {dims}, a escala sobre una tabla de 300 mm",
+      "lamellaCount": "{count} lamas",
+      "note": "Ancho de tabla 300 mm, ancho de ranura 15 mm. Medida estándar 19 × 300 × 2 400 o 2 780 mm. Peso por tabla aprox. 6,4–8,3 kg. Tolerancias: espesor ± 0,2 mm, peso ± 10 %."
     },
     "materials": {
       "tag": "MATERIALES",
-      "oilFinishesTitle": "Acabados al aceite",
-      "oilFinishesDesc": "Acabados al aceite Natural, Blanco, Transparente, Marrón, Marrón oscuro y Negro. Cada uno penetra en profundidad en la madera para una protección duradera y auténtica.",
+      "oilFinishesTitle": "Roble: aceite penetrante o laca",
+      "oilFinishesDesc": "Acabado: aceite penetrante o laca. Colores de aceite para roble: Natural, Blanco, Incoloro, Marrón, Marrón oscuro y Negro.",
       "walnutTitle": "Nogal",
-      "walnutDesc": "Tonos ricos y cálidos con vetas de gran carácter. La opción premium para interiores de alto nivel.",
-      "description": "Cada panel rWood - Groove se fabrica con chapa de madera de grado A, lo que garantiza una veta y un color uniformes. La superficie acabada al aceite está lista para instalar sin necesidad de tratamientos adicionales.",
-      "colorSelector": "Seleccionar acabado de madera",
-      "layer1Name": "Chapa de roble / nogal",
-      "layer1Desc": "Madera natural premium de grado A",
-      "layer2Name": "Núcleo MDF con ranuras",
-      "layer2Desc": "Canales de entrada de sonido",
-      "layer3Name": "Respaldo de fieltro acústico",
-      "layer3Desc": "PET reciclado, 3 mm de grosor",
-      "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
-      "description2": "Cada panel rWood - Groove se fabrica con chapa de madera de grado A, lo que garantiza vetas uniformes y una calidad superior. Elija entre nuestra gama de acabados aceitados y lacados para complementar a la perfección su diseño interior."
+      "walnutDesc": "Natural, aceitado. Marrón intenso y veteado (Walnut) o marrón medio cálido (Tobacco Walnut).",
+      "colorSelector": "Chapa",
+      "selectPrompt": "Seleccione una chapa"
     },
     "downloads": {
       "installationGuide": "Guía de Instalación",
       "colorChart": "Guía de Colores y Acabados"
     },
     "cta2": {
-      "freeNote": "Muestras gratuitas disponibles • Certificado FSC®"
+      "freeNote": "Muestras de chapa gratuitas · Chapa con certificación FSC®"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "¿De dónde procede el chapado certificado FSC?",
-          "answer": "El chapado procede de bosques europeos con certificación FSC (principalmente roble y nogal). El número de certificado de cadena de custodia se proporciona por entrega bajo petición."
+          "answer": "La chapa tiene certificación FSC®: certificado de cadena de custodia C191539. Las doce chapas rWood proceden de bosques gestionados de forma responsable; el certificado está disponible bajo petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
-          "answer": "Con el núcleo de MDF ignífugo (FR), los paneles rWood están clasificados B-s1,d0 según EN 13501-1 — el núcleo que especificamos para vías de evacuación y edificios públicos. El certificado de fuego se encuentra en el bloque de descargas de esta página."
+          "answer": "Depende del núcleo. Con el núcleo de MDF ignífugo (FR), rWood Groove está clasificado B-s1,d0 según EN 13501-1; sobre un núcleo de MDF estándar la clasificación es D-s2,d2. La trasera de fieltro es B-s1,d0. Prescriba el núcleo FR para vías de evacuación y edificios públicos."
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los chapados en stock se envían en 3–4 semanas; especies fuera de stock y acabados personalizados requieren de 6 a 8 semanas. La capacidad de producción se reserva al confirmar el pedido."
+          "answer": "El plazo de entrega depende del stock y se confirma con el pedido. Hay muestras de chapa gratuitas antes de prescribir; precios y pedido mínimo bajo petición."
         },
         "installMethod": {
           "question": "¿Cómo se instalan los paneles rWood?",
-          "answer": "Hay dos métodos: un sistema de clip oculto para instalación rápida y desmontaje sencillo, o encolado directo para instalaciones permanentes. Ambos se detallan en el manual de instalación."
+          "answer": "rWood Groove se fija sobre rastreles o se encola a un soporte limpio, seco y nivelado. Empiece por una esquina, deslice la lengüeta de cada tabla en la ranura de la anterior para una junta invisible y cierre los bordes con perfiles de remate."
         },
         "substrateCleanup": {
           "question": "¿Qué ocurre con los paneles al final de su vida útil?",
-          "answer": "Re-Sound recoge los paneles de forma gratuita en BE/NL/FR/DE/LU. El chapado se separa del sustrato de fieltro reciclado; ambos flujos vuelven a nuestra cadena de suministro en lugar de ir al vertedero."
+          "answer": "Re-Sound recoge las tablas gratuitamente al final de su vida útil en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
         }
       }
     },
@@ -2126,139 +2109,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "Panel acústico rWood - Groove en un interior moderno",
       "woodFinishSamples": "Muestras de acabados de madera",
       "panelInstallationProcess": "Proceso de instalación del panel",
-      "sustainableForestry": "Silvicultura sostenible"
+      "sustainableForestry": "Silvicultura sostenible",
+      "hero": "Tablas acústicas de madera ranurada rWood Groove",
+      "heroIn": "Tablas acústicas de madera ranurada rWood Groove en {finish}",
+      "veneerSwatch": "Muestra de chapa {name}"
     },
     "options": {
       "originalDesc": "Diseño clásico de 6 lamas",
       "mixedDesc": "Anchos mixtos dinámicos",
       "4lamellaDesc": "Lamas anchas de gran presencia",
       "3lamellaDesc": "Lamas extraanchas de gran impacto"
+    },
+    "kpi": {
+      "thickness": "mm de espesor",
+      "alphaWClass": "αw, clase de absorción {cls}",
+      "alphaW": "αw, absorción acústica ponderada",
+      "fire": "reacción al fuego, núcleo MDF FR",
+      "patterns": "patrones de lamas en tablas de 300 mm",
+      "ariaLabel": "Cifras clave"
+    },
+    "buildUp": {
+      "tag": "COMPOSICIÓN",
+      "title": "Tres capas, una tabla",
+      "layer1": "Cara de chapa",
+      "layer1Desc": "Roble o nogal de calidad A",
+      "layer2": "Lamas de MDF",
+      "layer2Desc": "Núcleo estándar, MR o FR",
+      "layer3": "Fieltro de PET reciclado",
+      "layer3Desc": "3 mm, negro o gris",
+      "fixing": "Fijado sobre rastreles o encolado al soporte."
+    },
+    "veneers": {
+      "tag": "CHAPAS Y ACABADOS",
+      "title": "Roble y nogal, cualquier chapa por encargo",
+      "description": "Cinco chapas en stock, aceitadas o lacadas. Seleccione una chapa para verla sobre la tabla.",
+      "silkOak": "Tono greige suave",
+      "strawOak": "Roble claro, cálido y neutro",
+      "umberOak": "Gris-marrón ahumado",
+      "walnut": "Marrón intenso y veteado",
+      "tobaccoWalnut": "Marrón medio cálido",
+      "guideNote": "Las doce chapas rWood figuran en la guía de colores y acabados rWood. La madera natural varía en color y veta: pida muestras antes de prescribir."
+    },
+    "ordering": {
+      "title": "Plazo de entrega y muestras",
+      "orderCaption": "Pedido",
+      "supplyCaption": "Suministro",
+      "leadTimeVal": "Según stock, confirmado con el pedido",
+      "samplesVal": "Muestras de chapa gratuitas",
+      "samplesQuotesDesc": "Pida muestras de chapa gratuitas o envíenos sus planos para un presupuesto."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PANELES ACÚSTICOS DE MADERA PERFORADA",
+      "tag": "PANEL ACÚSTICO DE MADERA PERFORADA",
       "title": "rWood Perf: paneles acústicos de madera perforados",
-      "tagline": "Perforaciones de Precisión, Máxima Absorción",
-      "description": "Paneles acústicos perforados de alto rendimiento que combinan la belleza natural de la madera con una absorción acústica excepcional. Un núcleo de tablero de fibras de densidad media ignífugo y cantos chapados en continuidad ofrecen los máximos niveles de seguridad contra incendios y control acústico.",
-      "usp1": "Perforaciones Redondas",
-      "usp2": "Clasificación al fuego {fireClass}",
-      "usp3": "αw {alphaW} por patrón",
-      "description2": "Paneles acústicos perforados de alto rendimiento que combinan la belleza natural de la madera con una absorción acústica excepcional. Un núcleo de tablero de fibras de densidad media ignífugo y cantos chapados en continuidad ofrecen los máximos niveles de seguridad contra incendios y control acústico para espacios públicos exigentes."
+      "tagline": "Perforaciones de precisión, máxima absorción.",
+      "description": "Las perforaciones redondas taladradas a través del panel MDF ignífugo chapado dejan pasar el sonido al velo acústico y al absorbente situado detrás. Cuatro patrones, desde un discreto orificio de 5 mm hasta un patrón doble de 8 mm con un 24 % de área abierta.",
+      "usp1": "Perforaciones redondas",
+      "usp2": "Reacción al fuego {fireClass}",
+      "usp3": "αw {alphaW} según el patrón",
+      "description2": "A medida para paredes y techos, hasta 3 050 × 1 220 mm, en 10 y 19 mm. Ocho chapas de stock, cualquier chapa y acabado por encargo."
     },
     "patterns": {
-      "tag": "PATRONES DE PERFORACIÓN",
-      "title": "Elige tu Patrón",
-      "description": "Cuatro patrones de perforación con propiedades acústicas calibradas. Desde la máxima área abierta para la mayor absorción hasta sutiles microperforaciones para una estética de madera limpia.",
-      "coreMatchTitle": "Adapte el núcleo a su chapa para que las perforaciones desaparezcan — o conviértalas en un elemento de diseño.",
-      "coreColorTitle": "Color del Núcleo",
-      "coreMatchDesc": "Elija un núcleo a juego con la chapa para que las perforaciones se integren, o un núcleo en contraste para un efecto de diseño llamativo.",
-      "description3": "Cuatro patrones de perforación con propiedades acústicas calibradas. Desde la máxima área abierta para espacios con exigencias acústicas elevadas hasta patrones más discretos que priorizan el refinamiento visual.",
-      "coreMatchDesc2": "Elija un núcleo a juego con la chapa para que las perforaciones se integren, o un núcleo en contraste para un efecto decorativo."
-    },
-    "coreColor": {
-      "title": "Color del Núcleo",
-      "description": "Fieltro acústico negro o natural visible a través de las perforaciones — sutil pero impactante."
+      "tag": "PERFORACIÓN",
+      "title": "Cuatro patrones de perforación",
+      "description": "Tamaño del orificio y área abierta por patrón. Cuanto mayor es el área abierta, mayor es la absorción.",
+      "coreColorTitle": "Color del núcleo",
+      "coreMatchDesc2": "Un núcleo MDF ignífugo claro u oscuro, visible a través de los orificios: combínelo con la chapa para que las perforaciones se integren, o busque el contraste para un efecto gráfico.",
+      "spec": "Ø {d} mm · {pct} % de área abierta",
+      "specDouble": "2 × Ø {d} mm · {pct} % de área abierta",
+      "drawingNote": "Dibujos a aproximadamente 1:2; tamaño del orificio y área abierta según se indica por patrón.",
+      "coreLight": "Núcleo claro",
+      "coreDark": "Núcleo oscuro"
     },
     "surfaces": {
-      "tag": "SUPERFICIES",
-      "title": "Superficies de Madera Premium",
-      "natureVeneers": "Chapas Nature",
-      "natureDesc": "Variaciones vivas y la expresión característica propia de cada especie de madera.",
-      "geminiVeneers": "Chapas Gemini",
-      "geminiDesc": "Tono de color y estructura homogéneos para un aspecto más armonioso y uniforme.",
-      "finishes": "Acabados de superficie",
-      "description": "Cada panel rWood - Perf se produce con cantos chapados en continuidad, una técnica artesanal tradicional que crea juntas perfectamente continuas y elimina los límites visibles entre paneles.",
-      "finish1": "Laca natural",
-      "finish2": "Pigmentado",
-      "finish3": "Laminado HPL",
-      "colorSelector": "Seleccionar chapa de madera",
-      "description3": "Cada panel rWood - Perf se produce con cantos chapados en continuidad, una técnica de fabricación tradicional en la que se integra un canto de madera maciza alrededor del panel antes del chapado. Así, cada panel parece estar hecho enteramente de madera, con juntas continuas en grandes superficies."
+      "colorSelector": "Chapas de stock",
+      "selectVeneer": "Seleccione una chapa"
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
-      "title": "Diseñado para el Sonido",
-      "benefit1Title": "Absorción de banda ancha",
-      "benefit1": "Eficaz en todo el espectro de frecuencias, de graves a agudos",
-      "benefit2Title": "Seguridad al fuego",
-      "benefit2": "Reacción al fuego {fireClass} con el núcleo de MDF ignífugo (EN 13501-1)",
-      "benefit3Title": "Rendimiento ajustable",
-      "benefit3": "Cuatro patrones de perforación para soluciones acústicas a medida",
-      "description": "Las perforaciones taladradas con precisión permiten que las ondas sonoras penetren en el panel y lleguen a la capa absorbente situada detrás. La cámara trasera del panel mejora además la absorción de las bajas frecuencias.",
-      "layer1Name": "Chapa de madera + perforaciones",
-      "layer1Desc": "Superficie chapada en continuidad y taladrada con precisión",
-      "layer2Name": "Núcleo de tablero de fibras de densidad media ignífugo",
-      "layer2Desc": "Ignífugo, densidad de 0,45 kg/m³",
-      "layer3Name": "Velo acústico",
-      "layer3Desc": "Evita la migración de fibras",
-      "layer4Name": "Cavidad de lana mineral",
-      "layer4Desc": "30–50 mm para una absorción de banda ancha",
-      "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
-      "ratingLabel": "Absorción",
-      "description3": "Las perforaciones taladradas con precisión permiten que las ondas sonoras penetren en el panel y lleguen a la cámara trasera. Combinado con aislamiento de lana mineral, rWood - Perf ofrece una absorción de banda ancha excepcional en todo el espectro de frecuencias, desde los graves más profundos hasta los agudos.",
-      "diagramTitle": "Sección Transversal del Panel",
-      "fireRating": "Clasificación al Fuego",
-      "noiseReduction": "Reducción de Ruido",
-      "ratingPerPattern": "por patrón"
+      "tag": "ACÚSTICA",
+      "title": "Absorción acústica",
+      "description": "El sonido pasa por las perforaciones al velo acústico y a la cámara situada detrás del panel. Cuanto mayor es el área abierta, mayor es la absorción.",
+      "tableTitle": "Absorción acústica",
+      "alphaWByPattern": "αw, según el patrón",
+      "withWool": "Con 50 mm de lana mineral",
+      "withWoolVal": "αw hasta 1.00",
+      "mounting": "Montaje en el ensayo",
+      "mountingVal": "Cámara con lana mineral",
+      "pattern": "Patrón",
+      "openArea": "Área abierta",
+      "class": "Clase",
+      "octaveTitle": "αs por banda de octava, patrón PD8 con cámara",
+      "footnote": "αs por banda de octava: patrón PD8 con cámara, orientativo. Los valores dependen del patrón, la profundidad de la cámara y el absorbente situado detrás del panel."
     },
     "installation": {
-      "tag": "MONTAJE OCULTO",
-      "title": "Instalación uniforme",
-      "step1Title": "Montar subestructura",
-      "step1Desc": "Instale los perfiles metálicos en la estructura de la pared o del techo",
-      "step2Title": "Colocar aislamiento",
-      "step2Desc": "Coloque lana mineral en la cámara para una absorción óptima",
-      "step3Title": "Paneles clip",
-      "step3Desc": "Sistema de clips ocultos para un montaje sin herramientas y sin juntas",
-      "step4Title": "Alineación perfecta",
-      "step4Desc": "Patrones de perforación alineados con juntas continuas chapadas",
-      "description": "Los paneles rWood - Perf se instalan con un sistema de clips ocultos para un acabado invisible y continuo.",
-      "description3": "Los paneles rWood - Perf se instalan con un sistema de clips ocultos diseñado para ofrecer precisión, rapidez y un resultado final impecable. El sistema garantiza juntas sin separación y patrones de perforación perfectamente alineados entre varios paneles."
+      "tag": "INSTALACIÓN",
+      "title": "Sistema de clips ocultos para paredes y techos",
+      "step1Title": "Subestructura",
+      "step1Desc": "Raíles metálicos sobre la estructura de la pared o del techo.",
+      "step2Title": "Aislamiento",
+      "step2Desc": "Lana mineral en la cámara para la mejor absorción.",
+      "step3Title": "Paneles",
+      "step3Desc": "Clips ocultos, montaje sin herramientas y sin junta.",
+      "step4Title": "Resultado",
+      "step4Desc": "Patrones alineados de un panel al siguiente.",
+      "description": "Raíles metálicos, lana mineral en la cámara y los paneles se fijan con clips sin herramientas y sin junta, con el patrón de perforación continuo de un panel al siguiente."
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
-      "title": "Construido para Durar, Construido Responsablemente",
-      "badge1": "Certificado FSC®",
-      "badge2": "{pct} % de contenido reciclado",
+      "title": "Fabricado de forma responsable",
+      "badge1": "Chapa certificada FSC®",
+      "badge2": "{pct} % de contenido reciclado",
       "badge3": "Fabricado en Polonia",
-      "badge4": "Emisiones ultra bajas",
-      "badge1Desc": "Madera procedente de bosques gestionados de forma responsable",
-      "badge2Desc": "Material reciclado posconsumo en el núcleo",
-      "badge3Desc": "Fabricado en nuestra propia planta de Częstochowa (Polonia) — cadenas de suministro cortas",
-      "badge4Desc": "Sin formaldehído añadido",
-      "description": "rWood - Perf combina materiales naturales y duraderos con un enfoque de fabricación responsable.",
-      "description3": "rWood - Perf combina materiales naturales y duraderos con un abastecimiento responsable: un núcleo de MDF ignífugo sin formaldehído añadido y chapas procedentes de bosques gestionados de forma sostenible."
+      "badge4": "Clase de formaldehído E1",
+      "badge1Desc": "Madera de bosques gestionados de forma responsable",
+      "badge2Desc": "Material reciclado en el panel",
+      "badge3Desc": "Producido en nuestra propia fábrica de Częstochowa (Polonia)",
+      "badge4Desc": "Núcleo MDF ignífugo de bajas emisiones, para interiores secos",
+      "description": "Chapa certificada FSC®, clase de formaldehído E1 y producción en nuestra propia fábrica de Częstochowa. Al final de su vida útil recogemos los paneles gratuitamente en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
     },
     "specs": {
-      "tag": "TÉCNICO",
-      "title": "Especificaciones",
-      "dimensionsTitle": "Dimensiones — Paredes y techos",
-      "acousticsTitle": "Rendimiento acústico",
-      "perforationsTitle": "Opciones de perforación",
-      "fireTitle": "Seguridad al fuego",
-      "certsTitle": "Certificaciones",
-      "customSizes": "Tamaños a medida",
-      "dimThickness": "Espesor",
-      "dimWeight": "Peso",
-      "matTitle": "Materiales",
-      "matCustomColor": "Tonos de color personalizados con pigmentación transparente u opaca",
-      "matLacquerFinish": "Laca curada por UV, desde supermate hasta alto brillo",
-      "surfaceLabel": "Superficie",
-      "surfaceVal": "Chapa / HPL / lámina / pintura",
-      "coreVal": "Núcleo de tablero de fibras de densidad media (marrón / verde / negro)",
+      "tag": "DATOS TÉCNICOS",
+      "title": "Panel, fuego y emisiones",
+      "acousticsTitle": "Absorción acústica",
+      "perforationsTitle": "Patrones de perforación",
+      "fireTitle": "Fuego y emisiones",
+      "matTitle": "Superficie y opciones",
+      "surfaceLabel": "Tratamientos de superficie",
+      "surfaceVal": "Laca natural · pigmentada · laminado HPL · lámina · pintura",
+      "coreVal": "MDF ignífugo, claro u oscuro",
       "edgesLabel": "Cantos",
-      "edgesVal": "Madera maciza con sobre-chapado",
-      "acousticFelt": "Fieltro acústico",
-      "feltColor": "Negro / blanco",
+      "edgesVal": "Madera maciza rechapada para juntas invisibles",
+      "feltColor": "Negro o blanco",
       "reactionFire": "Reacción al fuego",
-      "resistanceFire": "Resistencia al fuego",
-      "fireRetardant": "Retardante de Llama",
-      "vocLabel": "Emisiones de COV",
-      "vocVal": "TVOC aprobado (ISO 16000)",
-      "formaldehydeLabel": "Formaldehído",
-      "formaldehydeVal": "Sin urea formaldehído añadido",
-      "envLabel": "Medioambiental"
+      "panelTitle": "Panel",
+      "sizes": "Medidas",
+      "fleeceLabel": "Velo acústico",
+      "acWithMinWool": "Con 50 mm de lana mineral",
+      "acWithMinWoolVal": "αw hasta 1.00",
+      "fireStandard": "Norma de fuego",
+      "finishLabel": "Laca",
+      "finishVal": "Curada por UV, del supermate al alto brillo, natural o pigmentada",
+      "rangesLabel": "Gamas de chapa",
+      "rangesVal": "Nature (veta viva y con carácter) · Gemini (tono regular y uniforme)",
+      "coreColoursLabel": "Colores del núcleo",
+      "appsTitle": "Instalación",
+      "appInstall": "Aplicación",
+      "appWalls": "Paredes y techos",
+      "mountingSystem": "Fijación",
+      "subframe": "Subestructura",
+      "mounting": "Montaje en el ensayo",
+      "mountingVal": "Cámara con lana mineral",
+      "pd8Val": "2 × Ø 8 mm · 24 % de área abierta",
+      "ph10Val": "Ø 10 mm · 18 % de área abierta",
+      "ph8Val": "Ø 8 mm · 12 % de área abierta",
+      "ph5Val": "Ø 5 mm · 5 % de área abierta",
+      "envVal": "Interior, zonas secas",
+      "coreColoursVal": "Marrón, verde o negro: claro u oscuro para ocultar o resaltar las perforaciones",
+      "subframeVal": "Raíles metálicos",
+      "concealedClip": "Clips ocultos, sin herramientas, sin junta"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
@@ -2266,191 +2275,228 @@
     },
     "overview": {
       "tag": "RENDIMIENTO PROBADO",
-      "description": "Los paneles rWood - Perf son una de las soluciones acústicas para pared más eficaces. Las perforaciones taladradas con precisión permiten que el sonido atraviese la superficie decorativa de madera y llegue al núcleo altamente absorbente.",
-      "feature1": "Núcleo de MDF ignífugo ({fireClass})",
-      "feature2": "Cantos chapados en continuidad para juntas invisibles",
-      "feature3": "Núcleo claro u oscuro para un patrón más discreto",
-      "feature4": "Formatos a medida de hasta 3050 × 1220 mm",
-      "description3": "Los paneles rWood - Perf son una de las soluciones más eficaces y extendidas para paredes y techos acústicos. Las perforaciones redondas taladradas con precisión crean una gran área abierta que garantiza altos niveles de absorción acústica, mientras que la chapa de madera de primera calidad aporta un aspecto natural y cálido.",
-      "description4": "Combinados con un núcleo de tablero de fibras de densidad media ignífugo y cantos chapados en continuidad para juntas invisibles, estos paneles están diseñados para las máximas exigencias de los grandes espacios públicos: desde atrios y auditorios hasta oficinas y colegios."
-    },
-    "accessories": {
-      "tag": "COMPLETA EL ESTILO",
-      "title": "Accesorios",
-      "description": "Elementos de remate profesionales para un resultado impecable",
-      "item1Title": "Perfiles de borde",
-      "item1Desc": "Perfiles a juego para remates de panel limpios",
-      "item2Title": "Soluciones de esquina",
-      "item2Desc": "Transiciones perfectas en esquinas interiores y exteriores",
-      "item3Title": "Rieles de montaje",
-      "item3Desc": "Sistema de subestructura de aluminio oculta",
-      "item4Title": "Lana mineral",
-      "item4Desc": "Aislamiento de 30–50 mm para un rendimiento óptimo"
+      "feature1": "Núcleo MDF ignífugo ({fireClass})",
+      "feature2": "Núcleo claro u oscuro para ocultar o resaltar las perforaciones",
+      "feature3": "A medida hasta 3 050 × 1 220 mm, en 10 y 19 mm",
+      "feature4": "Clips ocultos, sin herramientas, sin junta, patrones alineados de un panel al siguiente",
+      "title": "Cuanto mayor es el área abierta, mayor es la absorción",
+      "description1": "rWood Perf es un panel MDF ignífugo chapado con perforaciones redondas taladradas de lado a lado. El sonido pasa por los orificios al velo acústico y a la cámara situada detrás del panel, donde se absorbe.",
+      "description2": "Cuatro patrones le permiten elegir entre absorción y discreción: desde un discreto orificio de 5 mm con un 5 % de área abierta hasta el patrón doble de 8 mm PD8 con un 24 % de área abierta."
     },
     "cta": {
-      "note": "Muestras gratuitas disponibles • Certificado FSC®"
+      "note": "Muestras de chapa gratuitas · chapa certificada FSC®"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "¿De dónde procede el chapado certificado FSC?",
-          "answer": "El chapado procede de bosques europeos con certificación FSC (principalmente roble y nogal). El número de certificado de cadena de custodia se proporciona por entrega bajo petición."
+          "question": "¿De dónde procede la chapa certificada FSC?",
+          "answer": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el número del certificado de cadena de custodia está disponible a petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
-          "answer": "Con el núcleo de MDF ignífugo (FR), los paneles rWood están clasificados B-s1,d0 según EN 13501-1 — el núcleo que especificamos para vías de evacuación y edificios públicos. El certificado de fuego se encuentra en el bloque de descargas de esta página."
+          "answer": "Con su núcleo MDF ignífugo, rWood Perf está clasificado B-s1,d0 según EN 13501-1. El panel está destinado a interiores secos."
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los chapados en stock se envían en 3–4 semanas; especies fuera de stock y acabados personalizados requieren de 6 a 8 semanas. La capacidad de producción se reserva al confirmar el pedido."
+          "answer": "Las chapas de stock se entregan en 3–4 semanas; las especies fuera de stock y los acabados a medida requieren 6–8 semanas. Los paneles a medida se fabrican según sus planos."
         },
         "installMethod": {
           "question": "¿Cómo se instalan los paneles rWood?",
-          "answer": "Hay dos métodos: un sistema de clip oculto para instalación rápida y desmontaje sencillo, o encolado directo para instalaciones permanentes. Ambos se detallan en el manual de instalación."
+          "answer": "Con un sistema de clips ocultos: raíles metálicos sobre la estructura de la pared o del techo, lana mineral en la cámara y los paneles se fijan con clips sin herramientas y sin junta, de modo que el patrón de perforación continúa de un panel al siguiente."
         },
         "substrateCleanup": {
           "question": "¿Qué ocurre con los paneles al final de su vida útil?",
-          "answer": "Re-Sound recoge los paneles de forma gratuita en BE/NL/FR/DE/LU. El chapado se separa del sustrato de fieltro reciclado; ambos flujos vuelven a nuestra cadena de suministro en lugar de ir al vertedero."
+          "answer": "Re-Sound recoge los paneles gratuitamente al final de su vida útil en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "Primer plano del panel rWood - Perf con sus perforaciones redondas",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Detalle de la superficie de chapa de madera del panel perforado",
-      "rwoodPerfPanelConcealedMountingSystem": "Sistema de montaje oculto del panel rWood - Perf",
-      "sustainableWoodSourcingAndProduction": "Abastecimiento y producción sostenibles de madera"
+      "sustainableWoodSourcingAndProduction": "Chapa de madera certificada FSC",
+      "hero": "Paneles acústicos de madera perforada rWood Perf en una pared",
+      "heroVeneer": "Panel rWood Perf en {name}",
+      "overview": "Primer plano de las perforaciones redondas de un panel rWood Perf",
+      "installation": "Raíles metálicos y clips ocultos del sistema de montaje rWood Perf"
     },
     "options": {
-      "pd8Desc": "Absorción máxima, gran área abierta",
+      "pd8Desc": "Patrón doble, máxima absorción",
       "ph10Desc": "Alta absorción, perforaciones marcadas",
       "ph8Desc": "Equilibrio entre estética y rendimiento",
       "ph5Desc": "Patrón discreto, superficie sutil"
+    },
+    "kpi": {
+      "ariaLabel": "Cifras clave",
+      "thickness": "grosor del panel, a medida",
+      "alphaW": "αw, según el patrón",
+      "alphaWPd8": "αw con el patrón PD8, {range} según el patrón",
+      "fire": "reacción al fuego, núcleo MDF ignífugo",
+      "patterns": "patrones de perforación, Ø 5 a 10 mm"
+    },
+    "buildUp": {
+      "alt": "Vista despiezada de las tres capas: chapa perforada, núcleo MDF ignífugo taladrado, velo acústico",
+      "layer1": "Chapa perforada",
+      "layer1Desc": "Calidad A, taladrada Ø 5 a 10 mm",
+      "layer2": "Núcleo MDF ignífugo",
+      "layer2Desc": "Claro u oscuro, taladrado de lado a lado",
+      "layer3": "Velo acústico",
+      "layer3Desc": "Negro o blanco",
+      "behind": "Detrás del panel: cámara con lana mineral."
+    },
+    "veneers": {
+      "title": "Ocho chapas de stock, cualquier chapa por encargo",
+      "description": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. La madera es un material natural: la veta y el color varían de un panel a otro, y las muestras en pantalla son solo orientativas.",
+      "alt": "Chapa {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Escandinavia",
+        "northAmerica": "América del Norte"
+      },
+      "grain": {
+        "straightInterlocked": "Recta a entrelazada",
+        "subtleFine": "Veta fina y sutil",
+        "fineStraight": "Veta fina y recta",
+        "cathedral": "Veta catedral",
+        "pronounced": "Veta pronunciada",
+        "straightWavy": "Recta a ondulada",
+        "deepCathedral": "Veta catedral profunda",
+        "richFlowing": "Veta rica y fluida"
+      },
+      "madeToOrderTitle": "Por encargo",
+      "madeToOrderDesc": "Además de las ocho chapas de stock, fabricamos cualquier especie, color de tinte y acabado.",
+      "finishTitle": "Acabado",
+      "finishDesc": "Laca curada por UV, del supermate al alto brillo, natural o pigmentada.",
+      "naturalTitle": "Un material natural",
+      "naturalDesc": "La madera natural varía en color y veta. Pida muestras antes de prescribir."
+    },
+    "bespoke": {
+      "tag": "A MEDIDA",
+      "title": "Según sus planos",
+      "description": "rWood Perf se fabrica a medida para paredes y techos: desde 100 × 100 mm hasta 3 050 × 1 220 mm, en 10 y 19 mm, en cualquiera de los cuatro patrones.",
+      "customDimTitle": "Dimensiones a medida",
+      "customDimDesc": "Cada panel se fabrica con las medidas de sus planos, desde 100 × 100 mm hasta 3 050 × 1 220 mm.",
+      "finishTitle": "Cualquier chapa y acabado",
+      "finishDesc": "Ocho chapas de stock; cualquier otra especie, color de tinte y acabado por encargo.",
+      "samplesTitle": "Muestras de chapa gratuitas",
+      "samplesDesc": "La madera natural varía en color y veta. Pida muestras antes de prescribir."
+    },
+    "ordering": {
+      "title": "Plazos y muestras",
+      "stockVeneers": "Chapas de stock",
+      "stockVeneersVal": "3–4 semanas",
+      "nonStock": "Fuera de stock y a medida",
+      "nonStockVal": "6–8 semanas",
+      "madeToMeasure": "A medida",
+      "madeToMeasureVal": "Según sus planos",
+      "supply": "Suministro",
+      "samplesVal": "Muestras de chapa gratuitas",
+      "sizesVal": "Hasta {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Bélgica"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "PANELES ACÚSTICOS MICRO-PERFORADOS",
+      "tag": "PANEL ACÚSTICO DE MADERA MICROPERFORADA",
       "title": "rWood Micro: paneles acústicos de madera microperforados",
-      "tagline": "Perforación Invisible, Acústica Excepcional",
-      "description": "Disfrute de la belleza de la madera natural con el rendimiento acústico de la avanzada tecnología de microperforación. Unos orificios prácticamente invisibles ofrecen una absorción acústica de clase A, conservando el aspecto puro y homogéneo de la chapa de madera de primera calidad.",
-      "usp1": "Perforaciones Invisibles",
-      "usp2": "Absorción Clase A",
-      "usp3": "Clasificación al fuego {fireClass}",
-      "colorSelector": "Seleccionar chapa de madera"
+      "tagline": "Perforación invisible, acústica excepcional.",
+      "description": "Las microperforaciones desde 0,5 mm en la chapa de calidad A dan a cámaras acústicas en el núcleo MDF ignífugo, respaldado por un velo acústico. A una distancia normal, los orificios desaparecen en la madera.",
+      "usp1": "Perforaciones invisibles",
+      "usp2": "Absorción clase A",
+      "usp3": "Reacción al fuego {fireClass}",
+      "colorSelector": "Chapas de stock",
+      "description2": "A medida para paredes y techos, hasta 3 050 × 1 220 mm, en 10 y 19 mm. Ocho chapas de stock, cualquier chapa y acabado por encargo.",
+      "selectVeneer": "Seleccione una chapa"
     },
     "perforation": {
-      "tag": "PATRONES DE PERFORACIÓN",
-      "title": "Elija su Perforación",
-      "description": "Distintas densidades de microperforación para un control acústico preciso: de sutil a alto rendimiento."
-    },
-    "surfaces": {
-      "tag": "SUPERFICIES",
-      "title": "Superficies Premium",
-      "woodVeneer": "Chapa de madera",
-      "woodVeneerDesc": "Chapas de madera de grado A de primera calidad en roble, nogal, abedul y más. Disponibles en corte Nature y Gemini.",
-      "hplLaminate": "Laminado HPL",
-      "hplLaminateDesc": "Superficies de laminado de alta presión para una mayor durabilidad. Disponibles en una amplia gama de colores y acabados.",
-      "surfaceType": "Tipo de superficie",
-      "finishTreatments": "Tratamientos de acabado",
-      "description": "Todos los paneles rWood - Micro cuentan con cantos rechapados, una técnica de fabricación que crea juntas invisibles entre paneles para una superficie de madera continua.",
-      "finish1Desc": "Tonos de color personalizados con pigmentación transparente o cubriente",
-      "finish2Desc": "Laca curada por UV, de supermate a alto brillo",
-      "description2": "Todos los paneles rWood - Micro cuentan con cantos rechapados, una técnica de fabricación heredada de la carpintería tradicional. El resultado: paneles más resistentes, juntas invisibles y un patrón continuo independientemente del formato del panel."
+      "tag": "PERFORACIÓN",
+      "title": "Cuatro densidades de perforación",
+      "description": "Tamaño del orificio y área abierta por densidad. Cuanto mayor es el área abierta, mayor es la absorción; cuanto menor es el orificio, menos visible es el patrón.",
+      "spec": "Ø {d} mm · {pct} % de área abierta",
+      "drawingNote": "Dibujos a aproximadamente 2:1; tamaño del orificio y área abierta según se indica por densidad."
     },
     "acoustics": {
-      "tag": "RENDIMIENTO",
-      "title": "Absorción Sonora Superior",
-      "benefit1Title": "Mecanismo acústico dual",
-      "benefit1": "Los microorificios y las cámaras acústicas actúan conjuntamente para una absorción superior",
-      "benefit2Title": "Diseño que ahorra espacio",
-      "benefit2": "Menor dependencia de las cámaras de aire: montajes de pared y techo más delgados",
-      "benefit3Title": "Seguridad al fuego",
-      "benefit3": "Reacción al fuego {fireClass} con el núcleo de MDF ignífugo (EN 13501-1)",
-      "description": "La combinación de microperforaciones en la superficie y miles de canales de entrada de sonido de mayor tamaño crea una absorción de banda ancha excepcional.",
-      "layer1Name": "Chapa de grado A con orificios taladrados con precisión",
-      "layer2Name": "Núcleo de tablero de fibra de densidad media ignífugo",
-      "layer2Desc": "Ignífugo, con cámaras acústicas",
-      "layer3Name": "Respaldo de velo acústico",
-      "layer3Desc": "Capa adicional de absorción acústica",
-      "waveLabel": "Ondas sonoras absorbidas",
-      "certNote": "Ensayado y certificado de forma independiente según ISO 11654",
-      "description2": "La combinación de microperforaciones en la superficie y miles de cámaras acústicas de mayor tamaño en el núcleo crea un doble mecanismo acústico. Menor dependencia del aislamiento y de las cámaras de aire, lo que se traduce en paredes y techos más delgados que ahorran un espacio valioso.",
-      "diagramTitle": "Sección Transversal del Panel",
-      "soundAbsorbed": "Sonido Absorbido",
-      "fireRating": "Clasificación al Fuego",
-      "testStandard": "Norma de ensayo",
-      "thinner": "Más delgado",
-      "wallBuildUp": "Composición de pared"
+      "tag": "ACÚSTICA",
+      "title": "Absorción acústica",
+      "description": "El sonido entra por las microperforaciones y se absorbe en las cámaras acústicas del núcleo y en el velo situado detrás. Cuánto absorbe el panel depende de la densidad de perforación y de lo que haya detrás.",
+      "tableTitle": "Absorción acústica",
+      "withWool": "Con 50 mm de lana mineral",
+      "withWoolVal": "αw hasta 1.00",
+      "behindTitle": "Detrás del panel",
+      "behindDesc": "Un absorbente detrás aumenta la absorción: fieltro acústico, un panel rPET o lana mineral en la cámara. Con 50 mm de lana mineral el panel alcanza αw 1,00.",
+      "footnote": "αw y clase de absorción según EN ISO 11654. Los valores dependen de la densidad de perforación, la profundidad de la cámara y el absorbente situado detrás del panel."
     },
     "installation": {
-      "tag": "SISTEMA DE INSTALACIÓN",
-      "title": "Instalación de precisión",
-      "step1Title": "Instalar subestructura",
-      "step1Desc": "Fije los raíles de aluminio a la estructura de la pared o del techo",
-      "step2Title": "Añadir aislamiento",
-      "step2Desc": "Lana mineral opcional para una mayor absorción",
-      "step3Title": "Paneles Click & Fix",
-      "step3Desc": "Sistema de clips oculto para el montaje de los paneles sin herramientas",
-      "step4Title": "Resultado uniforme",
-      "step4Desc": "Los cantos rechapados crean una superficie de madera continua",
-      "description": "Los paneles rWood - Micro se instalan con nuestro sistema de montaje oculto, que garantiza fijaciones invisibles y un acabado impecable. El sistema permite aplicaciones tanto en pared como en techo, con transiciones perfectas entre paneles gracias a los cantos rechapados."
+      "tag": "INSTALACIÓN",
+      "title": "Sistema de clips ocultos para paredes y techos",
+      "step1Title": "Subestructura",
+      "step1Desc": "Raíles de aluminio sobre la estructura de la pared o del techo.",
+      "step2Title": "Aislamiento",
+      "step2Desc": "Lana mineral opcional para una mayor absorción.",
+      "step3Title": "Paneles",
+      "step3Desc": "Clips ocultos, montaje sin herramientas.",
+      "step4Title": "Resultado",
+      "step4Desc": "Fijaciones invisibles y una superficie de madera continua.",
+      "description": "Raíles de aluminio, lana mineral opcional y los paneles se fijan con clips sin herramientas. Las fijaciones quedan invisibles y la superficie de madera continúa sin interrupción."
     },
     "bespoke": {
-      "tag": "LIBERTAD DE DISEÑO",
-      "title": "Posibilidades a Medida",
-      "backlitTitle": "Paneles retroiluminados",
-      "backlitDesc": "Cree espectaculares secciones retroiluminadas en las que la luz atraviesa las microperforaciones. Los logotipos y motivos brillan con gran belleza al iluminarse y permanecen invisibles cuando la luz está apagada.",
-      "customDimTitle": "Dimensiones personalizadas",
-      "customDimDesc": "Paneles fabricados según sus especificaciones exactas. Tamaños y formas no estándar para requisitos arquitectónicos singulares.",
-      "patternTitle": "Patrón continuo",
-      "patternDesc": "Los paneles rechapados crean transiciones perfectas independientemente del formato, para una impresión homogénea en cualquier superficie.",
-      "description": "Los paneles rWood - Micro pueden personalizarse y prefabricarse según sus planos. Las microperforaciones abren posibilidades de diseño únicas que van más allá de los paneles acústicos estándar."
+      "tag": "A MEDIDA",
+      "title": "Según sus planos",
+      "customDimTitle": "Dimensiones a medida",
+      "customDimDesc": "Cada panel se fabrica con las medidas de sus planos, desde 100 × 100 mm hasta 3 050 × 1 220 mm.",
+      "description": "rWood Micro se fabrica a medida para paredes y techos: desde 100 × 100 mm hasta 3 050 × 1 220 mm, en 10 y 19 mm, en cualquiera de las cuatro densidades de perforación.",
+      "finishTitle": "Cualquier chapa y acabado",
+      "finishDesc": "Ocho chapas de stock; cualquier otra especie, color de tinte y acabado por encargo.",
+      "samplesTitle": "Muestras de chapa gratuitas",
+      "samplesDesc": "La madera natural varía en color y veta. Pida muestras antes de prescribir."
     },
     "sustainability": {
       "tag": "SOSTENIBILIDAD",
-      "title": "Fabricado Responsablemente",
-      "badge1": "Chapa con certificado FSC®",
-      "badge2": "Material de núcleo natural",
+      "title": "Fabricado de forma responsable",
+      "badge1": "Chapa certificada FSC®",
+      "badge2": "Clase de formaldehído E1",
       "badge3": "Fabricado en Polonia",
-      "badge4": "Bajas emisiones COV",
-      "badge1Desc": "Madera procedente de bosques gestionados de forma responsable",
-      "badge2Desc": "Núcleo de tablero de fibra: un núcleo a base de madera con clasificación al fuego",
-      "badge3Desc": "Fabricado en nuestra propia planta de Częstochowa (Polonia)",
-      "badge4Desc": "Clasificación E1 para un aire interior más saludable",
-      "description": "Los paneles rWood - Micro se fabrican con la sostenibilidad como principio fundamental. La madera con certificación FSC®, los acabados de bajas emisiones y los materiales de origen responsable garantizan la responsabilidad medioambiental durante todo el ciclo de vida del producto."
+      "badge4": "Recogida al final de la vida útil",
+      "badge1Desc": "Madera de bosques gestionados de forma responsable",
+      "badge2Desc": "Núcleo MDF ignífugo de bajas emisiones, para interiores secos",
+      "badge3Desc": "Producido en nuestra propia fábrica de Częstochowa (Polonia)",
+      "description": "Chapa certificada FSC®, clase de formaldehído E1 y producción en nuestra propia fábrica de Częstochowa. Al final de su vida útil recogemos los paneles."
     },
     "specs": {
-      "tag": "TÉCNICO",
-      "title": "Especificaciones",
-      "dimensionsTitle": "Dimensiones — Paredes y techos",
-      "acousticsTitle": "Dimensiones — Paredes y techos",
-      "customSizes": "Tamaños a medida",
-      "dimThickness": "Espesor",
-      "dimWeight": "Peso",
-      "dimCoreDensity": "Densidad del núcleo",
-      "perfsTitle": "Opciones de perforación",
-      "fireTitle": "Seguridad al fuego",
-      "matTitle": "Materiales",
-      "appsTitle": "Aplicaciones",
-      "acWithMinWool": "Con lana mineral de 50 mm",
+      "tag": "DATOS TÉCNICOS",
+      "title": "Panel, fuego y emisiones",
+      "acousticsTitle": "Absorción acústica",
+      "perfsTitle": "Densidades de perforación",
+      "fireTitle": "Fuego y emisiones",
+      "matTitle": "Superficie y opciones",
+      "appsTitle": "Instalación",
+      "acWithMinWool": "Con 50 mm de lana mineral",
       "reactionFire": "Reacción al fuego",
-      "resistanceFire": "Resistencia al fuego",
-      "fireRetardant": "Retardante de Llama",
-      "surfaceLabel": "Superficie",
-      "surfaceVal": "Chapa / HPL / lámina / pintura",
-      "coreVal": "Núcleo de tablero de fibra de densidad media (marrón / verde / negro)",
+      "surfaceLabel": "Tratamientos de superficie",
+      "surfaceVal": "Laca natural · pigmentada · laminado HPL · lámina · pintura",
+      "coreVal": "MDF ignífugo con cámaras acústicas",
       "edgesLabel": "Cantos",
-      "edgesVal": "Madera maciza con sobre-chapado",
-      "acousticFelt": "Fieltro acústico",
-      "feltColor": "Negro / blanco",
-      "appInstall": "Instalación",
-      "appWalls": "Paredes y Techos",
-      "appEnv": "Entorno",
-      "appEnvVal": "Interior (zonas secas)",
-      "backlitOption": "Opción retroiluminada",
-      "backlitVal": "Disponible",
-      "mountingSystem": "Sistema de montaje",
-      "concealedClip": "Sistema de clips ocultos"
+      "edgesVal": "Madera maciza rechapada para juntas invisibles",
+      "feltColor": "Negro o blanco",
+      "appInstall": "Aplicación",
+      "appWalls": "Paredes y techos",
+      "appEnvVal": "Interior, zonas secas",
+      "mountingSystem": "Fijación",
+      "concealedClip": "Clips ocultos, sin herramientas",
+      "panelTitle": "Panel",
+      "sizes": "Medidas",
+      "fleeceLabel": "Velo acústico",
+      "acWithMinWoolVal": "αw hasta 1.00",
+      "fireStandard": "Norma de fuego",
+      "finishLabel": "Laca",
+      "finishVal": "Curada por UV, del supermate al alto brillo, natural o pigmentada",
+      "rangesLabel": "Gamas de chapa",
+      "rangesVal": "Nature (veta viva y con carácter) · Gemini (tono regular y uniforme)",
+      "coreColoursLabel": "Colores del núcleo",
+      "subframe": "Subestructura",
+      "nanoVal": "Ø 0.5 mm · 2.5 % de área abierta",
+      "microSVal": "Ø 1.0 mm · 5.2 % de área abierta",
+      "microMVal": "Ø 1.5 mm · 8.4 % de área abierta",
+      "microLVal": "Ø 2.0 mm · 10.6 % de área abierta",
+      "coreColoursVal": "Marrón, verde o negro",
+      "subframeVal": "Raíles de aluminio"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "LA SOLUCIÓN INVISIBLE",
-      "title": "Diseñado para Ojos y Oídos",
-      "description1": "Los paneles rWood - Micro combinan la avanzada tecnología de microperforación con chapas de madera de primera calidad. A una distancia de visión normal, las perforaciones son completamente invisibles: lo que se ve es una hermosa superficie de madera homogénea. Lo que se oye es un confort acústico excepcional.",
-      "description2": "El secreto reside en la combinación de dos mecanismos acústicos: miles de microorificios diseñados con precisión en la superficie y cámaras de absorción acústica en el material del núcleo.",
-      "feature1": "Perforaciones invisibles a una distancia de visión normal",
-      "feature2": "Núcleo de MDF ignífugo con cámaras acústicas",
-      "feature3": "Cantos rechapados para juntas invisibles",
-      "feature4": "Apto para paredes y techos",
-      "feature5": "Disponible como paneles retroiluminados"
-    },
-    "accessories": {
-      "tag": "COMPLETA EL ESTILO",
-      "title": "Accesorios",
-      "description": "Elementos de acabado profesionales para un resultado impecable",
-      "item1Title": "Perfiles de borde",
-      "item1Desc": "Perfiles a juego para remates de panel limpios",
-      "item2Title": "Soluciones de esquina",
-      "item2Desc": "Transiciones perfectas en esquinas interiores y exteriores",
-      "item3Title": "Rieles de montaje",
-      "item3Desc": "Sistema de subestructura de aluminio oculta",
-      "item4Title": "Retroiluminación LED",
-      "item4Desc": "Iluminación integrada para efectos de panel retroiluminado"
-    },
-    "patterns": {
-      "description": "Cuatro densidades de perforación para adaptarse a sus requisitos acústicos. Desde microperforaciones prácticamente invisibles hasta generosas áreas abiertas, cada densidad ofrece un equilibrio distinto entre estética y rendimiento.",
-      "magnifiedLabel": "Aumentado 10×",
-      "holeDiameter": "Diámetro del agujero",
-      "openArea": "Área abierta",
-      "ratingLabel": "Absorción",
-      "description2": "Cuatro densidades de perforación para adaptarse a sus requisitos acústicos. Desde las perforaciones Nano prácticamente invisibles hasta los patrones Micro L de máxima absorción: elija el equilibrio perfecto entre estética y rendimiento acústico.",
-      "pigmentedLacquer": "Laca pigmentada",
-      "glossLevels": "Niveles de brillo"
+      "title": "Diseñado para los ojos y los oídos",
+      "description1": "rWood Micro combina una chapa de madera natural de calidad A con microperforaciones desde Ø 0,5 mm. A una distancia normal, los orificios desaparecen en la madera: lo que se ve es una superficie de madera continua; lo que se oye, una sala más silenciosa.",
+      "description2": "El sonido entra por las microperforaciones y se absorbe en las cámaras acústicas del núcleo MDF ignífugo y en el velo acústico situado detrás. Cuánto absorbe el panel depende de la densidad de perforación y de lo que haya detrás.",
+      "feature1": "Perforaciones que desaparecen a una distancia normal",
+      "feature2": "Núcleo MDF ignífugo con cámaras acústicas, velo acústico negro o blanco",
+      "feature3": "A medida hasta 3 050 × 1 220 mm, en 10 y 19 mm",
+      "feature4": "Clips ocultos, sin herramientas, para paredes y techos"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "¿De dónde procede el chapado certificado FSC?",
-          "answer": "El chapado procede de bosques europeos con certificación FSC (principalmente roble y nogal). El número de certificado de cadena de custodia se proporciona por entrega bajo petición."
+          "question": "¿De dónde procede la chapa certificada FSC?",
+          "answer": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el número del certificado de cadena de custodia está disponible a petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
-          "answer": "Con el núcleo de MDF ignífugo (FR), los paneles rWood están clasificados B-s1,d0 según EN 13501-1 — el núcleo que especificamos para vías de evacuación y edificios públicos. El certificado de fuego se encuentra en el bloque de descargas de esta página."
+          "answer": "Con su núcleo MDF ignífugo, rWood Micro está clasificado B-s1,d0 según EN 13501-1. El panel está destinado a interiores secos."
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los chapados en stock se envían en 3–4 semanas; especies fuera de stock y acabados personalizados requieren de 6 a 8 semanas. La capacidad de producción se reserva al confirmar el pedido."
+          "answer": "Las chapas de stock se entregan en 3–4 semanas; las especies fuera de stock y los acabados a medida requieren 6–8 semanas. Los paneles a medida se fabrican según sus planos."
         },
         "installMethod": {
           "question": "¿Cómo se instalan los paneles rWood?",
-          "answer": "Hay dos métodos: un sistema de clip oculto para instalación rápida y desmontaje sencillo, o encolado directo para instalaciones permanentes. Ambos se detallan en el manual de instalación."
+          "answer": "Con un sistema de clips ocultos: raíles de aluminio sobre la estructura de la pared o del techo, lana mineral opcional en la cámara y los paneles se fijan con clips sin herramientas. Las fijaciones quedan invisibles y la superficie de madera continúa sin interrupción."
         },
         "substrateCleanup": {
           "question": "¿Qué ocurre con los paneles al final de su vida útil?",
-          "answer": "Re-Sound recoge los paneles de forma gratuita en BE/NL/FR/DE/LU. El chapado se separa del sustrato de fieltro reciclado; ambos flujos vuelven a nuestra cadena de suministro en lugar de ir al vertedero."
+          "answer": "Re-Sound recoge los paneles gratuitamente al final de su vida útil en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "Primer plano del panel rWood - Micro con sus perforaciones invisibles",
-      "microPerforatedWoodPanelSurfaceDetail": "Detalle de la superficie del panel de madera microperforado",
-      "rwoodMicroPanelInstallationSystem": "Sistema de instalación del panel rWood - Micro",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Panel microperforado retroiluminado que crea un efecto de luz",
-      "sustainableProduction": "Producción sostenible"
+      "sustainableProduction": "Chapa de madera certificada FSC",
+      "hero": "Paneles acústicos de madera microperforada rWood Micro en una pared",
+      "heroVeneer": "Panel rWood Micro en {name}",
+      "overview": "Primer plano de un panel microperforado rWood Micro",
+      "installation": "Raíles de aluminio y clips ocultos del sistema de montaje rWood Micro",
+      "madeToMeasure": "Paneles rWood Micro a medida instalados alrededor de una ventana"
     },
     "options": {
-      "veneerDesc": "Chapa de madera natural de calidad A",
-      "hplDesc": "Laminado de alta presión",
       "nanoDesc": "Perforaciones prácticamente invisibles",
       "microsDesc": "Microperforaciones sutiles",
       "micromDesc": "Patrón de perforación equilibrado",
-      "microlDesc": "Patrón de absorción máxima",
-      "nanoDetail": "La perforación más pequeña disponible: completamente invisible a simple vista, para una superficie de madera impecable.",
-      "microsDetail": "Microorificios apenas visibles que mantienen una superficie limpia y continua.",
-      "micromDetail": "Un equilibrio óptimo entre discreción visual y eficiencia acústica para la mayoría de las aplicaciones.",
-      "microlDetail": "La mayor área abierta para una absorción acústica máxima en espacios acústicamente exigentes.",
-      "openAreaLabel": "Área abierta",
-      "absorptionLabel": "Absorción",
-      "thinnerLabel": "Más fino",
-      "veneerDrilled": "Chapa de madera de calidad A con orificios taladrados con precisión"
+      "microlDesc": "Patrón de máxima absorción"
+    },
+    "kpi": {
+      "ariaLabel": "Cifras clave",
+      "thickness": "grosor del panel, a medida",
+      "alphaW": "αw, absorción acústica ponderada",
+      "alphaWClass": "αw, clase de absorción {cls}",
+      "fire": "reacción al fuego, núcleo MDF ignífugo",
+      "densities": "densidades de perforación, Ø 0,5 a 2 mm"
+    },
+    "buildUp": {
+      "alt": "Vista despiezada de las tres capas: chapa microperforada, núcleo MDF ignífugo con cámaras acústicas, velo acústico",
+      "layer1": "Chapa microperforada",
+      "layer1Desc": "Calidad A, orificios desde Ø 0,5 mm",
+      "layer2": "Núcleo MDF ignífugo",
+      "layer2Desc": "Con cámaras acústicas",
+      "layer3": "Velo acústico",
+      "layer3Desc": "Negro o blanco",
+      "behind": "Detrás del panel: cámara, lana mineral opcional."
+    },
+    "veneers": {
+      "title": "Ocho chapas de stock, cualquier chapa por encargo",
+      "description": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. La madera es un material natural: la veta y el color varían de un panel a otro, y las muestras en pantalla son solo orientativas.",
+      "alt": "Chapa {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Escandinavia",
+        "northAmerica": "América del Norte"
+      },
+      "grain": {
+        "straightInterlocked": "Recta a entrelazada",
+        "subtleFine": "Veta fina y sutil",
+        "fineStraight": "Veta fina y recta",
+        "cathedral": "Veta catedral",
+        "pronounced": "Veta pronunciada",
+        "straightWavy": "Recta a ondulada",
+        "deepCathedral": "Veta catedral profunda",
+        "richFlowing": "Veta rica y fluida"
+      },
+      "madeToOrderTitle": "Por encargo",
+      "madeToOrderDesc": "Además de las ocho chapas de stock, fabricamos cualquier especie, color de tinte y acabado.",
+      "finishTitle": "Acabado",
+      "finishDesc": "Laca curada por UV, del supermate al alto brillo, natural o pigmentada.",
+      "naturalTitle": "Un material natural",
+      "naturalDesc": "La madera natural varía en color y veta. Pida muestras antes de prescribir."
+    },
+    "ordering": {
+      "title": "Plazos y muestras",
+      "stockVeneers": "Chapas de stock",
+      "stockVeneersVal": "3–4 semanas",
+      "nonStock": "Fuera de stock y a medida",
+      "nonStockVal": "6–8 semanas",
+      "madeToMeasure": "A medida",
+      "madeToMeasureVal": "Según sus planos",
+      "supply": "Suministro",
+      "samplesVal": "Muestras de chapa gratuitas",
+      "sizesVal": "Hasta {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Bélgica"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "PANELES DE MADERA ACÚSTICOS",
-      "title": "rWood Panel: paneles acústicos de chapa de madera en 10 especies",
-      "tagline": "La Elegancia de la Madera Real. Listo para Usar.",
-      "description": "Paneles de MDF chapados premium, cepillados, tintados y lacados — sin necesidad de acabado adicional. La auténtica belleza de la madera maciza sin concesiones.",
-      "usp1": "Chapa de Madera Real",
-      "usp2": "Prefabricado y Listo para Usar",
-      "usp3": "Programa de recogida gratuito",
+      "tag": "PANEL DE MADERA CHAPADO",
+      "title": "rWood Panel: paneles acústicos chapados en 12 chapas de madera",
+      "tagline": "La elegancia de la madera natural, lista para usar.",
+      "description": "Paneles de MDF chapados lisos, acabados en fábrica, en doce chapas de madera natural, en la gama Nature de veta viva o la gama Gemini de tono uniforme. Laca natural o pigmentada, laminado HPL, lámina o pintura; cualquier otra chapa, tinte o acabado por encargo.",
+      "usp1": "Chapas con certificación FSC®",
+      "usp2": "Doce chapas, cualquier acabado por encargo",
+      "usp3": "Recogida gratuita al final de la vida útil",
       "ctaSecondary": "Ver Colección",
-      "colorSelector": "Seleccionar Chapa"
-    },
-    "construction": {
-      "tag": "CONSTRUCCIÓN",
-      "title": "Construido en Capas",
-      "layer1": "Capa Superior de Chapa",
-      "layer1Desc": "Chapa de madera natural certificada FSC, acabado de fábrica",
-      "layer2": "Núcleo MDF de Alta Densidad",
-      "layer2Desc": "Sustrato técnico estable y resistente a la humedad",
-      "layer3": "Capa de Chapa de Equilibrio",
-      "layer3Desc": "Evita el alabeo para paneles perfectamente planos"
-    },
-    "veneers": {
-      "tag": "COLECCIÓN DE CHAPAS",
-      "title": "10 chapas de madera seleccionadas",
-      "description": "Desde roble europeo pálido hasta nogal americano intenso: cada especie elegida por su carácter de veta, disponibilidad y certificación FSC."
+      "colorSelector": "Chapa",
+      "selectPrompt": "Seleccione una chapa"
     },
     "finishes": {
-      "title": "Tacto y protección",
-      "description": "El acabado adecuado realza lo mejor de cada especie de madera. Nuestro proceso de acabado multicapa proporciona una superficie tan agradable al tacto como duradera, protegida contra arañazos, humedad y desgaste diario.",
+      "title": "Acabados de superficie y opciones",
+      "description": "Elija la gama de chapa y el tratamiento de superficie que convienen al proyecto. Los cantos son de madera maciza sobrechapada para juntas invisibles en grandes superficies.",
       "tag": "ACABADOS",
-      "mattLacquerName": "Laca súper mate",
-      "mattLacquerDesc": "Antihuellas, tacto sedoso. Protección UV de 6 capas.",
-      "naturalOilName": "Aceite natural",
-      "naturalOilDesc": "Tacto profundo y auténtico de la madera con protección penetrante.",
-      "unfinishedName": "Sin acabar",
-      "unfinishedDesc": "Listo para acabado personalizado in situ por el instalador.",
-      "adv1": "Resistente a arañazos",
-      "adv2": "Resistente a derrames",
-      "adv3": "Antihuellas",
-      "adv4": "Mantenimiento fácil"
-    },
-    "advantages": {
-      "tag": "VENTAJAS",
-      "title": "Ventajas Clave",
-      "adv1Title": "Formatos de Panel",
-      "adv1": "Múltiples tamaños estándar; dimensiones a medida bajo pedido",
-      "adv2Title": "Posibilidades ilimitadas",
-      "adv2": "Use para revestimientos de pared, mobiliario, escaparates y más"
+      "nature": "Nature",
+      "natureDesc": "Veta viva y con carácter",
+      "gemini": "Gemini",
+      "geminiDesc": "Tono uniforme y homogéneo",
+      "treatmentsTitle": "Tratamientos de superficie",
+      "treatments": {
+        "naturalLacquer": "Laca natural",
+        "pigmented": "Pigmentado",
+        "hpl": "Laminado HPL",
+        "foil": "Lámina",
+        "paint": "Pintura"
+      },
+      "madeToOrder": "Cualquier otra chapa, tinte, pigmento y acabado bajo petición."
     },
     "applications": {
       "tag": "APLICACIONES",
@@ -2620,66 +2671,51 @@
       "badge2": "Devolución Circular",
       "badge3": "Fabricado en Polonia",
       "badge4": "EPD disponible",
-      "badge5": "Bajos COV",
-      "badge1Desc": "Toda la madera proviene de bosques gestionados de forma responsable",
+      "badge1Desc": "Todas las chapas con certificación FSC®, de bosques gestionados de forma responsable",
       "badge2Desc": "Devolución y reciclaje gratuitos del panel al final de su vida útil",
-      "description": "Cada rWood - Panel parte de madera de origen responsable. Como parte del compromiso de Re-Sound con la economía circular, maximizamos el uso de cada tronco procesándolo como chapa, obteniendo hasta 40× más superficie que la madera maciza del mismo árbol.",
+      "description": "Cada rWood Panel empieza con chapa certificada FSC® de bosques gestionados de forma responsable. Al final de su vida útil, Re-Sound recoge los paneles gratuitamente.",
       "badge3Desc": "Fabricado en nuestra propia planta de Częstochowa (Polonia)",
-      "badge4Desc": "Declaración ambiental de producto completa",
-      "badge5Desc": "Clasificado E1, cumple los estándares de emisión más estrictos",
-      "badge6": "Energía verde",
-      "badge6Desc": "Producción alimentada con fuentes de energía renovable"
+      "badge4Desc": "Declaración ambiental de producto completa"
     },
     "specs": {
-      "tag": "ESPECIFICACIONES",
-      "title": "Especificaciones Técnicas",
+      "tag": "DATOS TÉCNICOS",
+      "title": "Panel, acabados y fuego",
       "compositionTitle": "Composición",
       "fireTitle": "Seguridad al fuego",
       "certsTitle": "Certificaciones",
       "dimensionsTitle": "Dimensiones",
-      "finishTitle": "Acabado",
+      "finishTitle": "Chapas y acabados",
       "processingTitle": "Procesamiento",
       "dimPanelWidth": "Ancho del panel",
       "dimPanelLength": "Longitud del panel",
-      "dimThicknessStd": "Grosor (estándar)",
-      "dimThicknessSlim": "Grosor (delgado)",
-      "dimWeight19": "Peso (19 mm)",
       "compTopLayer": "Capa superior",
-      "compTopLayerVal": "Chapa grado A, teñida y lacada",
+      "compTopLayerVal": "Chapa de madera natural de calidad A, acabada en fábrica",
       "compCore": "Núcleo",
-      "compCoreVal": "MDF 700 kg/m³ (estándar / MR / FR)",
+      "compCoreVal": "MDF, estándar / MR / FR",
       "compBackLayer": "Capa trasera",
       "compBackLayerVal": "Chapa de balance",
-      "compBonding": "Adhesión",
-      "compBondingVal": "Tecnología de prensa HPLT",
-      "finishLacquerType": "Tipo de laca",
-      "finishLacquerVal": "Acrilato uretano UV curado",
-      "finishLayers": "Número de capas",
-      "finishGloss": "Nivel de brillo",
-      "finishGlossVal": "Súper mate (3-5 UB)",
-      "finishAntiFingerprint": "Antihuellas",
-      "finishScratch": "Resistencia a arañazos",
-      "fireStdMDF": "MDF estándar",
-      "fireFRMDF": "MDF ignífugo",
       "certWoodSourcing": "Procedencia de la madera",
       "certEnvironmental": "Medioambiental",
-      "certFelt": "Fieltro (si es acústico)",
       "procSawing": "Aserrado",
       "procSawingVal": "Herramientas estándar de carpintería",
-      "procEdgeBanding": "Cantos",
-      "procEdgeBandingVal": "Cantos de chapa a juego disponibles",
       "procCNC": "Mecanizado CNC",
-      "procEnvironment": "Entorno",
-      "procEnvironmentVal": "Uso interior (zonas secas)",
       "procMoisture": "Resistente a la humedad",
-      "procMoistureVal": "Núcleo MR disponible"
+      "procMoistureVal": "Núcleo MR disponible",
+      "finishRanges": "Gamas de chapa",
+      "finishRangesVal": "Nature: veta viva y con carácter · Gemini: tono uniforme y homogéneo",
+      "finishTreatments": "Tratamientos de superficie",
+      "finishTreatmentsVal": "Laca natural · pigmentado · laminado HPL · lámina · pintura",
+      "finishCoreColours": "Colores del núcleo",
+      "finishCoreColoursVal": "Marrón, verde o negro",
+      "finishEdgesVal": "Madera maciza sobrechapada para juntas invisibles",
+      "finishFeltVal": "Velo negro o blanco",
+      "finishMadeToOrder": "Por encargo",
+      "finishMadeToOrderVal": "Cualquier otra chapa, tinte, pigmento y acabado",
+      "certWoodSourcingVal": "Todas las chapas con certificación FSC®, de bosques gestionados de forma responsable"
     },
     "related": {
       "tag": "PRODUCTOS COMPLEMENTARIOS",
       "title": "Productos Relacionados",
-      "groove": "rWood - Groove",
-      "edgebanding": "Canto Complementario",
-      "samples": "Muestras gratis",
       "description": "Logre continuidad de diseño con productos Re-Sound coordinados",
       "explore": "Explorar →",
       "orderSamples": "Pedir muestras →",
@@ -2690,51 +2726,50 @@
       "title": "rWood - Panel en Acción"
     },
     "overview": {
-      "tag": "DESCRIPCIÓN GENERAL",
-      "title": "Madera Natural, Acabado Premium",
-      "description": "rWood - Panel aporta la calidez y el carácter de la madera maciza en un formato prefabricado y listo para usar. Cada panel está fabricado con chapa A-grade premium, unida a un núcleo MDF de alta densidad con tecnología de prensado avanzada.",
-      "feature1": "Chapa de madera real A-grade sobre núcleo MDF de alta densidad",
-      "feature2": "Prefabricado con 6 capas de laca acrílica UV — sin tratamiento adicional necesario",
-      "feature3": "10 especies de chapa disponibles — roble, nogal, abedul y más",
-      "feature4": "FSC® certificado — madera de bosques gestionados de forma responsable",
-      "feature5": "Disponible en acabado natural lacado, aceite natural o sin acabar"
+      "tag": "RESUMEN",
+      "title": "Naturaleza, refinada",
+      "description": "rWood Panel lleva la calidez y el carácter de la madera natural a un formato preacabado y listo para usar: una chapa de calidad A sobre un núcleo de MDF, acabada en fábrica. Las mismas doce chapas recorren toda la gama rWood, de modo que los paneles lisos, Groove, Micro y Perf combinan en una misma pared.",
+      "feature1": "Doce chapas en stock: roble, nogal, fresno, haya y abedul",
+      "feature2": "Dos gamas de chapa: Nature (veta viva) y Gemini (tono uniforme)",
+      "feature3": "Núcleo de MDF en calidad estándar, hidrófuga o ignífuga",
+      "feature4": "Laca natural o pigmentada, laminado HPL, lámina o pintura",
+      "feature5": "Acabado en fábrica, listo para instalar"
     },
     "anatomy": {
       "tag": "COMPOSICIÓN",
-      "layer1": "Chapa de Madera Natural",
-      "layer1Desc": "Chapa de madera real grado A, cepillada, teñida y protegida con 6 capas de laca uretano acrilato curada por UV. Acabado súper mate al tacto suave.",
-      "layer2": "Núcleo MDF",
-      "layer2Desc": "MDF de 700 kg/m³ con certificación FSC®. Disponible en calidades estándar, hidrófuga (MR) e ignífuga (FR).",
-      "layer3": "Chapa de Equilibrio",
-      "layer3Desc": "El respaldo de chapa a juego garantiza estabilidad dimensional y evita el alabeo. Opciones acabadas o sin acabar.",
-      "keyAdvTitle": "Ventajas Clave del Acabado",
-      "description": "Cada capa cumple un propósito: desde la superficie auténtica de madera hasta el núcleo técnico."
+      "layer1": "Cara chapada",
+      "layer1Desc": "Chapa de madera natural de calidad A, una de las doce chapas en stock o cualquier chapa por encargo, acabada en fábrica.",
+      "layer2": "Núcleo de MDF",
+      "layer2Desc": "MDF estándar, hidrófugo (MR) o ignífugo (FR); color del núcleo marrón, verde o negro.",
+      "layer3": "Contrachapa",
+      "layer3Desc": "Una chapa en el dorso mantiene el panel plano y estable.",
+      "description": "Cada capa cumple una función, desde la superficie de madera natural hasta el núcleo técnico.",
+      "title": "Chapa, núcleo, contrachapa"
     },
     "collection": {
-      "tag": "COLECCIÓN",
-      "title": "10 chapas de madera seleccionadas",
-      "description": "Desde el sereno abedul escandinavo hasta el dramático nogal americano: cada chapa se selecciona, cepilla y termina cuidadosamente para mostrar el carácter de la madera.",
+      "tag": "CHAPAS",
+      "title": "Doce chapas de madera natural",
+      "description": "Seis robles del claro al casi negro y seis especies premium: nogal, fresno, haya y abedul. Disponibles en toda la gama rWood, y cualquier otra chapa, tinte o acabado por encargo.",
       "filterAll": "Todas las chapas",
-      "customNote": "Especies de chapa y colores de tinte a medida disponibles en pedidos de proyecto de 50+ paneles.",
+      "customNote": "Cualquier otra chapa, tinte, pigmento y acabado bajo petición. Las muestras son orientativas: las chapas naturales varían en veta, color y figura, y los tonos cambian con la luz y la laca. Compruébelo siempre con una muestra física.",
       "categories": {
-        "lightNaturals": "Tonos claros",
-        "warmNaturals": "Tonos cálidos",
-        "deepTones": "Tonos profundos"
+        "oak": "Chapas de roble",
+        "premium": "Especies premium"
       },
-      "origins": {
-        "europe": "Europa",
-        "scandinavia": "Escandinavia",
-        "northAmerica": "Norteamérica"
-      },
-      "grains": {
-        "straightToInterlocked": "De recta a entrelazada",
-        "subtleFineGrain": "Veta fina y sutil",
-        "fineStraightGrain": "Veta fina y recta",
-        "cathedralGrain": "Veta catedral",
-        "pronouncedGrain": "Veta pronunciada",
-        "straightToWavy": "De recta a ondulada",
-        "deepCathedralGrain": "Veta catedral profunda",
-        "richFlowingGrain": "Veta rica y fluida"
+      "filterLabel": "Filtrar chapas",
+      "items": {
+        "strawOak": "Roble claro, cálido y neutro",
+        "silkOak": "Tono greige suave",
+        "honeyOak": "Roble dorado y cálido",
+        "umberOak": "Gris-marrón ahumado",
+        "smokedOak": "Marrón profundo y cálido",
+        "cocoaOak": "Espresso casi negro",
+        "walnut": "Marrón intenso y veteado",
+        "tobaccoWalnut": "Marrón medio cálido",
+        "whiteAsh": "Veta clara y lineal",
+        "whiteBeech": "Neutro claro y uniforme",
+        "birchSliced": "Veta fina y clara",
+        "birchRotary": "Figura amplia y suave"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Productos y Accesorios Complementarios",
       "description": "Logre continuidad de diseño con productos Re-Sound coordinados.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Paneles acústicos con ranuras",
-      "item2Title": "Canto Chapado a Juego",
-      "item2Desc": "Canto de madera a juego",
+      "item1Desc": "Tablas ranuradas en las mismas chapas para paredes y techos.",
+      "item2Title": "Cantos sobrechapados",
+      "item2Desc": "Cantos de madera maciza, sobrechapados para juntas invisibles en grandes superficies.",
       "item3Title": "Muestras Gratuitas",
       "item3Desc": "Solicite muestras de cualquier combinación de chapa y acabado."
     },
     "cta": {
       "title": "¿Listo para Elevar su Proyecto?",
       "description": "Obtenga un presupuesto personalizado, solicite muestras físicas o hable con nuestro equipo de especificaciones sobre su próximo proyecto.",
-      "circularNote": "Devolución Circular"
+      "circularNote": "Muestras de chapa gratuitas · Recogida gratuita al final de la vida útil"
     },
     "downloads": {
       "productDataSheet": "Ficha Técnica del Producto"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "¿De dónde procede el chapado certificado FSC?",
-          "answer": "El chapado procede de bosques europeos con certificación FSC (principalmente roble y nogal). El número de certificado de cadena de custodia se proporciona por entrega bajo petición."
+          "answer": "Todas las chapas rWood tienen certificación FSC® y proceden de bosques gestionados de forma responsable. El certificado de cadena de custodia está disponible bajo petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Los chapados en stock se envían en 3–4 semanas; especies fuera de stock y acabados personalizados requieren de 6 a 8 semanas. La capacidad de producción se reserva al confirmar el pedido."
+          "answer": "El plazo de entrega depende de la chapa y del acabado y se confirma con el pedido. Hay muestras de chapa gratuitas antes de prescribir; precios y pedido mínimo bajo petición."
         },
         "installMethod": {
           "question": "¿Cómo se instalan los paneles rWood?",
-          "answer": "Hay dos métodos: un sistema de clip oculto para instalación rápida y desmontaje sencillo, o encolado directo para instalaciones permanentes. Ambos se detallan en el manual de instalación."
+          "answer": "rWood Panel es un panel de MDF chapado liso y se trabaja como tal: se corta y se mecaniza por CNC con herramientas de carpintería estándar, y después se fija al soporte o se integra en mobiliario. La guía de instalación está en el bloque de descargas de esta página."
         },
         "substrateCleanup": {
           "question": "¿Qué ocurre con los paneles al final de su vida útil?",
-          "answer": "Re-Sound recoge los paneles de forma gratuita en BE/NL/FR/DE/LU. El chapado se separa del sustrato de fieltro reciclado; ambos flujos vuelven a nuestra cadena de suministro en lugar de ir al vertedero."
+          "answer": "Re-Sound recoge los paneles gratuitamente al final de su vida útil en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "Primer plano del panel de MDF chapado rWood - Panel con el detalle de la veta",
       "closeUpOfLacqueredVeneerSurface": "Primer plano de la superficie de chapa lacada",
-      "sustainablyManagedForest": "Bosque gestionado de forma sostenible"
+      "sustainablyManagedForest": "Bosque gestionado de forma sostenible",
+      "hero": "Panel de madera chapado rWood Panel",
+      "heroIn": "rWood Panel en {veneer}",
+      "veneerSwatch": "Muestra de chapa {name}"
+    },
+    "kpi": {
+      "veneers": "chapas de madera natural",
+      "ranges": "gamas de chapa: Nature y Gemini",
+      "fsc": "chapas certificadas",
+      "anyValue": "Cualquier",
+      "anyLabel": "chapa, tinte y acabado por encargo",
+      "ariaLabel": "Cifras clave"
+    },
+    "ordering": {
+      "title": "Plazo de entrega y muestras",
+      "orderCaption": "Pedido",
+      "supplyCaption": "Suministro",
+      "samplesVal": "Muestras de chapa gratuitas",
+      "samplesQuotesDesc": "Pida muestras de chapa gratuitas o envíenos sus planos para un presupuesto."
     }
   },
   "rpetFlexGroovePage": {

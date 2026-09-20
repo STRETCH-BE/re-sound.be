@@ -1,32 +1,39 @@
 /**
  * rWood Perf — specification tables.
  *
- * Transcribed from src/components/sections/rwoodperfpage.tsx,
- * the former <section id="specs"> (lines 725–876 of the pre-refactor file),
- * card by card and row by row, in the original order.
+ * Source: the rWood Perf datasheet (EN · 09/2026, v1.0), page 2 "Panel, fire
+ * and emissions" and "Sound absorption", page 1 "Four perforation patterns",
+ * and the rWood colour and finish guide (surface treatments, veneer ranges,
+ * core colours, edges).
  *
- *   t('specs.x')            → key('rwoodPerfPage.specs.x')
- *   tPage('specs.x')        → key('productPage.specs.x')
- *   tPage('specLabels.x')   → key('productPage.specLabels.x')
+ * Governed figures (thickness, αw range, NRC, fire class, plant, FSC) come
+ * from src/data/products.ts via spec() / cert(); the absorption class is
+ * derived from the data αw — a per-pattern range gives none, so that row
+ * stays hidden (the page prints the per-pattern table from the datasheet).
+ * Locale-independent literals (sizes, standards) are typed as the datasheet
+ * prints them; everything else is a message key.
  *
- * Governed figures (thickness, αw, class, fire class) come from
- * src/data/products.ts via spec(); the FSC row is guarded by cert(). The
- * absorption class is derived from the data αw — a per-pattern range gives
- * none, so that row stays hidden. Removed: the "with mineral wool" αw row and
- * the per-pattern αw figures (not in the data — the perforation card keeps
- * only the open-area percentages) and "EPD available" (not held).
+ * Removed against the earlier version (not on the datasheet): the weight
+ * "~from 0,35 kg/m²", the "core density 48,40 kg/m³", "resistance to fire
+ * K1-10 / K2-10", "TVOC approved (ISO 16000)" and "no added urea
+ * formaldehyde" (the datasheet states formaldehyde class E1).
  */
 import type { SpecTableDef } from './types';
 import { cert, key, spec } from './types';
 
+// Narrow no-break space, the datasheet's thousands separator.
+const NNBSP = ' ';
+const SIZES = `100–3${NNBSP}050 × 100–1${NNBSP}220 mm`;
+
 const specs: SpecTableDef = [
   {
-    title: key('rwoodPerfPage.specs.dimensionsTitle'),
+    title: key('rwoodPerfPage.specs.panelTitle'),
     rows: [
-      { label: key('rwoodPerfPage.specs.customSizes'), value: '100–3050 × 100–1220 mm' },
+      { label: key('rwoodPerfPage.specs.sizes'), value: SIZES },
       { label: key('productPage.specLabels.thickness'), value: spec('rwood-perf', 'thickness') },
-      { label: key('productPage.specLabels.weight'), value: key('productData.specValues.fromWeight035') },
-      { label: key('productPage.specLabels.coreDensity'), value: '48,40 kg/m³' },
+      { label: key('productPage.specs.core'), value: key('rwoodPerfPage.specs.coreVal') },
+      { label: key('rwoodPerfPage.specs.fleeceLabel'), value: key('rwoodPerfPage.specs.feltColor') },
+      { label: key('productPage.ordering.madeIn'), value: spec('rwood-perf', 'madeIn') },
     ],
   },
   {
@@ -34,45 +41,50 @@ const specs: SpecTableDef = [
     rows: [
       { label: key('productPage.specs.absorptionCoeff'), value: spec('rwood-perf', 'alphaW') },
       { label: key('productPage.specs.absorptionClass'), value: spec('rwood-perf', 'absorptionClass') },
-      { label: key('productPage.specLabels.testStandard'), value: 'ISO 354 / ISO 11654' },
+      { label: key('rwoodPerfPage.specs.acWithMinWool'), value: key('rwoodPerfPage.specs.acWithMinWoolVal') },
+      { label: key('productPage.specs.nrc'), value: spec('rwood-perf', 'nrc') },
+      { label: key('productPage.specLabels.testStandard'), value: 'EN ISO 354 · EN ISO 11654' },
+      { label: key('rwoodPerfPage.specs.mounting'), value: key('rwoodPerfPage.specs.mountingVal') },
     ],
   },
   {
     title: key('rwoodPerfPage.specs.perforationsTitle'),
     rows: [
-      { label: key('productData.specValues.pd8Double'), value: key('productData.specValues.openArea24') },
-      { label: 'PH10 (⌀10 mm)', value: key('productData.specValues.openArea18') },
-      { label: 'PH8 (⌀8 mm)', value: key('productData.specValues.openArea12') },
-      { label: 'PH5 (⌀5 mm)', value: key('productData.specValues.openArea5') },
+      { label: 'PD8', value: key('rwoodPerfPage.specs.pd8Val') },
+      { label: 'PH10', value: key('rwoodPerfPage.specs.ph10Val') },
+      { label: 'PH8', value: key('rwoodPerfPage.specs.ph8Val') },
+      { label: 'PH5', value: key('rwoodPerfPage.specs.ph5Val') },
     ],
   },
   {
     title: key('rwoodPerfPage.specs.fireTitle'),
     rows: [
       { label: key('rwoodPerfPage.specs.reactionFire'), value: spec('rwood-perf', 'fireClass') },
-      { label: key('rwoodPerfPage.specs.resistanceFire'), value: 'K1-10 / K2-10' },
-      { label: key('productPage.specs.core'), value: key('rwoodPerfPage.specs.fireRetardant') },
-      { label: key('productPage.specLabels.testStandard'), value: 'EN 13501' },
+      { label: key('rwoodPerfPage.specs.fireStandard'), value: 'EN 13501-1' },
+      {
+        label: key('productPage.specLabels.woodSourcing'),
+        value: cert('rwood-perf', 'FSC', 'productPage.specLabels.fscCert'),
+      },
+      { label: key('productPage.specLabels.formaldehyde'), value: 'E1' },
+      { label: key('productPage.specLabels.environment'), value: key('rwoodPerfPage.specs.envVal') },
     ],
   },
   {
     title: key('rwoodPerfPage.specs.matTitle'),
     rows: [
       { label: key('rwoodPerfPage.specs.surfaceLabel'), value: key('rwoodPerfPage.specs.surfaceVal') },
-      { label: key('productPage.specs.core'), value: key('rwoodPerfPage.specs.coreVal') },
+      { label: key('rwoodPerfPage.specs.finishLabel'), value: key('rwoodPerfPage.specs.finishVal') },
+      { label: key('rwoodPerfPage.specs.rangesLabel'), value: key('rwoodPerfPage.specs.rangesVal') },
+      { label: key('rwoodPerfPage.specs.coreColoursLabel'), value: key('rwoodPerfPage.specs.coreColoursVal') },
       { label: key('rwoodPerfPage.specs.edgesLabel'), value: key('rwoodPerfPage.specs.edgesVal') },
-      { label: key('rwoodPerfPage.specs.acousticFelt'), value: key('rwoodPerfPage.specs.feltColor') },
     ],
   },
   {
-    title: key('rwoodPerfPage.specs.certsTitle'),
+    title: key('rwoodPerfPage.specs.appsTitle'),
     rows: [
-      {
-        label: key('productPage.specLabels.woodSourcing'),
-        value: cert('rwood-perf', 'FSC', 'productPage.specLabels.fscCert'),
-      },
-      { label: key('rwoodPerfPage.specs.vocLabel'), value: key('rwoodPerfPage.specs.vocVal') },
-      { label: key('productPage.specLabels.formaldehyde'), value: key('rwoodPerfPage.specs.formaldehydeVal') },
+      { label: key('rwoodPerfPage.specs.appInstall'), value: key('rwoodPerfPage.specs.appWalls') },
+      { label: key('rwoodPerfPage.specs.subframe'), value: key('rwoodPerfPage.specs.subframeVal') },
+      { label: key('rwoodPerfPage.specs.mountingSystem'), value: key('rwoodPerfPage.specs.concealedClip') },
     ],
   },
 ];

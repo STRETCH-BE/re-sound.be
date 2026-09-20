@@ -19,13 +19,13 @@
     "divideTitle": "Divide Freistehende Akustiktrennwände | Re-Sound",
     "divideDescription": "Freistehende Akustiktrennwände mit magnetischer Modulverbindung: beidseitige Absorption, keine Montage, recyceltes Textil. Hergestellt in Belgien.",
     "rwoodGrooveTitle": "rWood Groove — genutete Holzpaneele, Eiche & Nussbaum | Re-Sound",
-    "rwoodGrooveDescription": "Genutete Holz-Akustikpaneele mit FSC-Eichen- und Nussbaumfurnier auf recyceltem Filzkern. Klasse-A-Absorption, 4 Lamellenvarianten, 5 Oberflächen.",
+    "rwoodGrooveDescription": "Genutete Holz-Akustikdielen: FSC®-zertifiziertes Eichen- oder Nussbaumfurnier auf MDF-Kern mit 3 mm Filz aus recyceltem PET. αw 0,90, Klasse A, vier Lamellenmuster, fünf Furniere, 10 und 19 mm.",
     "rwoodPerfTitle": "rWood Perf — perforierte Holz-Akustikpaneele | Re-Sound",
     "rwoodPerfDescription": "Perforierte Holz-Akustikpaneele mit FSC-zertifiziertem Furnier: vier Lochmuster für breitbandige Absorption, 8 Oberflächen, schwer entflammbarer Kern.",
     "rwoodMicroTitle": "rWood Micro — mikroperforierte Holz-Akustikpaneele | Re-Sound",
-    "rwoodMicroDescription": "Mikroperforierte Holz-Akustikpaneele (0,5 mm) mit FSC-zertifiziertem Furnier: nahezu unsichtbares Muster, Brandklasse {fireClass}, optional hinterleuchtbar.",
-    "rwoodVeneerTitle": "rWood Panel — Furnier-Akustikpaneele, 10 Holzarten | Re-Sound",
-    "rwoodVeneerDescription": "Glatte Furnier-Akustikpaneele in 10 Holzarten: Möbelqualität, FSC-zertifiziert, EPD verfügbar. Gebürstet, gebeizt und lackiert, montagefertig.",
+    "rwoodMicroDescription": "Mikroperforierte Holz-Akustikpaneele (ab 0,5 mm) mit FSC-zertifiziertem Furnier: nahezu unsichtbares Muster, Brandklasse {fireClass}, nach Maß bis 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — furnierte Akustikpaneele, 12 Echtholzfurniere | Re-Sound",
+    "rwoodVeneerDescription": "Glatte furnierte Akustikpaneele in 12 Echtholzfurnieren, Nature- oder Gemini-Linie: FSC®-zertifiziert, Naturlack oder pigmentiert, HPL, Folie oder Farbe. Werkseitig veredelt, jedes Furnier auf Bestellung.",
     "rpetGrooveTitle": "rPET Groove — genutete PET-Akustikpaneele, 12 Farben | Re-Sound",
     "rpetGrooveDescription": "Genutete PET-Akustikpaneele aus recycelten Flaschen: 12 Farben, 3 Stärken (12/24/36 mm), NRC bis 0,90, Brandklasse B-s1,d0. Hergestellt in Polen.",
     "rpetPanelTitle": "rPET Panel — Akustikpaneel aus rPET, 16 Farben | Re-Sound",
@@ -1936,121 +1936,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "AKUSTISCHE HOLZPANEELE",
+      "tag": "GENUTETES HOLZ-AKUSTIKPANEEL",
       "title": "rWood Groove: genutete Holz-Akustikpaneele in Eiche und Nussbaum",
-      "tagline": "Natürliche Schönheit, Perfekte Akustik",
-      "description": "Bringen Sie natürliche Wärme und anspruchsvollen Stil in jeden Raum mit rWood - Groove Akustikpaneelen. Premium Eichen- und Walnussfurniere kombiniert mit schallabsorbierendem Filzrücken schaffen Harmonie zwischen Ästhetik und Akustik.",
-      "usp1": "FSC® Zertifiziertes Holz",
-      "usp2": "Klasse A Absorption",
-      "usp3": "Kostenloses Rücknahmeprogramm"
+      "tagline": "Natürliche Schönheit, perfekte Akustik.",
+      "description": "Eichen- oder Nussbaumfurnier in A-Qualität auf einem MDF-Kern, präzise zu vertikalen Lamellen genutet, auf einem 3 mm Filz aus recyceltem PET. Die offenen Nuten leiten den Schall in den Filz; die Dielen werden mit einer verdeckten Nut-und-Feder verbunden. Dielen von 300 mm Breite, 2 400 oder 2 780 mm Länge, in 10 und 19 mm, für Wände und Decken.",
+      "usp1": "FSC®-zertifiziertes Furnier",
+      "usp2": "Absorptionsklasse A",
+      "usp3": "Kostenlose Rücknahme am Ende der Nutzungsdauer"
     },
     "overview": {
-      "tag": "HANDWERKSKUNST",
-      "title": "Wählen Sie Ihren Stil",
-      "subtitle": "Premium Oberflächen",
-      "description": "rWood - Groove Paneele verwandeln jeden Raum in eine anspruchsvolle akustische Umgebung. Die Kombination aus präzisionsgefrästen Rillen und Premium-Holzfurnieren schafft eine Oberfläche, die visuell beeindruckend und akustisch effektiv ist.",
-      "feature1": "Premium A-Grad Eichen- und Walnussfurniere",
-      "feature2": "Integrierter akustischer Filzrücken",
-      "feature3": "Nahtlose Paneel-zu-Paneel-Verbindung",
-      "feature4": "Geeignet für Wände und Decken",
-      "description2": "rWood - Groove Paneele verwandeln jeden Raum in einen Ort natürlicher Schönheit und akustischen Komforts. Jedes Panel hat Premium A-Grad Eichen- oder Walnussfurnier, präzisionsgefräst für die charakteristische lineare Ästhetik."
-    },
-    "oakCollection": {
-      "title": "Eichenkollektion",
-      "description": "Naturbelassenes Eichenfurnier in mehreren Beizoptionen, von naturblond bis tief geräuchert."
+      "tag": "ÜBERBLICK",
+      "title": "Genutete Eiche oder Nussbaum auf Filz aus recyceltem PET",
+      "feature1": "Eichen- oder Nussbaumfurnier in A-Qualität",
+      "feature2": "3 mm Filzrücken aus recyceltem PET, schwarz oder grau",
+      "feature3": "Verdeckte Nut-und-Feder-Verbindung",
+      "feature4": "Für Wände und Decken, trockene Innenräume",
+      "description2": "rWood Groove verbindet ein Eichen- oder Nussbaumfurnier in A-Qualität mit einem MDF-Kern, der präzise zu vertikalen Lamellen genutet ist. Der 3 mm Filz aus recyceltem PET hinter den Lamellen nimmt den Schall auf, der durch die offenen Nuten eintritt – das senkt den Nachhall und verbessert die Sprachverständlichkeit. Vier Lamellenmuster, fünf Lagerfurniere, und jedes Furnier und jede Oberfläche auf Bestellung."
     },
     "feltBacking": {
-      "title": "Filz-Hintergrundoptionen",
-      "description": "Naturgrauer, schwarzer oder farbiger Akustikfilz sichtbar durch die Rillen."
+      "title": "Filzfarbe",
+      "description": "3 mm Filz aus recyceltem PET hinter den Lamellen, durch die Nuten sichtbar.",
+      "black": "Schwarz",
+      "grey": "Grau"
     },
     "acoustics": {
-      "tag": "LEISTUNG",
-      "title": "Überlegene Schallabsorption",
-      "benefit1Title": "Reduzierter Nachhall",
-      "benefit1": "Echo kontrollieren und Sprachverständlichkeit verbessern",
-      "benefit2Title": "Mehr Komfort",
-      "benefit2": "Ruhigere Umgebungen schaffen",
-      "benefit3Title": "Geprüfte Leistung",
-      "benefit3": "Unabhängig verifizierte Akustikdaten",
-      "description": "Das einzigartige Rillendesign kombiniert mit hochwertigem Akustikfilz schafft außergewöhnliche Schallabsorption.",
-      "ratingLabel": "Absorption",
-      "description2": "Das einzigartige Rillendesign kombiniert mit hochwertigem Akustikfilz schafft außergewöhnliche Schallabsorption. Reduzieren Sie Echo, eliminieren Sie Lärm und schaffen Sie komfortable Räume.",
-      "diagramTitle": "Querschnitt",
-      "soundAbsorbed": "Schall Absorbiert",
-      "testStandard": "Prüfnorm"
+      "tag": "AKUSTIK",
+      "title": "Schallabsorption",
+      "description2": "Die offenen Nuten leiten den Schall in den Filz aus recyceltem PET hinter den Lamellen – das senkt den Nachhall und verbessert die Sprachverständlichkeit.",
+      "tableTitle": "Schallabsorption",
+      "behindTitle": "Hinter der Diele",
+      "behindDesc": "Auf Lattung montiert, kann der Hohlraum einen zusätzlichen Absorber aufnehmen: Akustikfilz, ein rPET-Paneel oder Mineralwolle.",
+      "note": "αw und Absorptionsklasse nach EN ISO 11654. Oktavbandwerte folgen mit der neuen Messreihe."
     },
     "installation": {
-      "tag": "EINFACHE MONTAGE",
-      "title": "Nahtlose Montage",
-      "step1Title": "Untergrund Vorbereiten",
-      "step1Desc": "Latten anbringen oder Kleber auf saubere, trockene Fläche auftragen",
-      "step2Title": "Erstes Panel Setzen",
-      "step2Desc": "Von der Ecke beginnen, Niveau-Ausrichtung sicherstellen",
-      "step3Title": "Paneele Verbinden",
-      "step3Desc": "Feder in Nut schieben für nahtlose Verbindung",
-      "step4Title": "Abschließen",
-      "step4Desc": "Endprofile für professionelles Ergebnis hinzufügen",
-      "description": "rWood - Groove Paneele verfügen über eine innovative Nut-und-Feder-Verbindung für schnelle und einfache Montage.",
-      "description2": "rWood - Groove Paneele verfügen über ein innovatives Nut-und-Feder-Verbindungssystem, das unsichtbare Fugen und eine einheitliche Oberfläche gewährleistet. Ob professioneller Installateur oder erfahrener Heimwerker — unser System macht die Montage unkompliziert."
+      "tag": "MONTAGE",
+      "title": "Nut-und-Feder, auf Lattung oder geklebt",
+      "step1Title": "Untergrund",
+      "step1Desc": "Lattung oder Kleber auf einer sauberen, trockenen, ebenen Fläche.",
+      "step2Title": "Erste Diele",
+      "step2Desc": "In einer Ecke beginnen und die Ausrichtung prüfen.",
+      "step3Title": "Verbinden",
+      "step3Desc": "Die Feder in die Nut schieben – für eine fugenlose Verbindung.",
+      "step4Title": "Abschluss",
+      "step4Desc": "Die Kanten mit Abschlussprofilen schließen.",
+      "description2": "Die Dielen werden auf Lattung befestigt oder auf den Untergrund geklebt und mit einer verdeckten Nut-und-Feder verbunden, sodass die Stöße im Nutbild verschwinden."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
-      "title": "Mit Integrität Gebaut",
-      "badge1": "FSC® Zertifiziert",
-      "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
-      "badge2": "Recycelter Filz",
-      "badge2Desc": "Akustikrücken aus recycelten Materialien",
+      "title": "Verantwortungsvoll beschafft",
+      "badge1": "FSC®-zertifiziert",
+      "badge1Desc": "Holzherkunft FSC®-zertifiziert, Zertifikat C191539",
+      "badge2": "Filz aus recyceltem PET",
+      "badge2Desc": "3 mm Filzrücken aus recyceltem PET",
       "badge3": "Hergestellt in Polen",
       "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
       "badge4": "Kostenlose Rücknahme",
       "badge4Desc": "Die Paneele kommen am Lebensende kostenlos zu uns zurück",
-      "description": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unser FSC®-zertifiziertes Holz stammt aus verantwortungsvoll bewirtschafteten Wäldern.",
-      "description2": "Jedes rWood - Groove Panel wird mit Nachhaltigkeit als Kern entworfen. Unsere FSC®-Zertifizierung garantiert, dass das Holz aus verantwortungsvoll bewirtschafteten Wäldern stammt, die Umwelt-, Sozial- und Wirtschaftsvorteile bieten."
+      "description2": "FSC®-zertifiziertes Holz, ein Rücken aus recyceltem PET und kostenlose Rücknahme am Ende der Nutzungsdauer.",
+      "badge2DescCert": "3 mm Filzrücken aus recyceltem PET, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Umweltproduktdeklaration nach ISO 14025 und EN 15804"
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Technische Daten",
-      "acousticsTitle": "Akustische Leistung",
-      "fireTitle": "Brandschutz",
-      "certsTitle": "Zertifizierungen",
-      "applicationsTitle": "Anwendungen",
-      "dimensionsTitle": "Abmessungen",
-      "materialsTitle": "Materialien",
+      "tag": "TECHNISCHE DATEN",
+      "title": "Diele, Brand und Emissionen",
+      "acousticsTitle": "Schallabsorption",
+      "fireTitle": "Brand (EN 13501-1) und Emissionen",
       "dimPanelWidth": "Breite",
       "dimPanelLength": "Länge",
-      "dimThickness": "Stärke",
-      "dimGrooveDepth": "Rillenöffnung",
-      "dimGrooveWidth": "Rillenbreite",
-      "matVeneer": "Furnier",
-      "matVeneerVal": "A-Grad Eiche / Walnuss",
-      "matCore": "Kern",
-      "matCoreVal": "MDF (Standard / feuchtigkeitsresistent / brandhemmend)",
-      "matBacking": "Rücken",
-      "matBackingVal": "Recyceltes PET (3mm)",
+      "matCoreVal": "Standard-, MR- oder FR-MDF",
       "matFinish": "Oberfläche",
-      "finishVal": "Öl / Lack",
-      "stdPanels": "Standardpaneele",
-      "fireMdfVal": "Brandhemmendes MDF",
-      "woodSourcing": "Holzbeschaffung",
-      "feltCert": "Filzzertifizierung",
-      "envLabel": "Umwelt",
-      "vocLabel": "VOC-Emissionen",
-      "vocVal": "E1 / Niedrige Emissionen",
-      "appInstall": "Montage",
-      "appWalls": "Wände & Decken",
-      "appEnv": "Umgebung",
-      "appEnvVal": "Innenbereich (Trockenbereiche)",
-      "appMoist": "Feuchtigkeitsresistent",
-      "appMoistVal": "Für feuchte Bereiche verfügbar",
-      "appConn": "Verbindung",
-      "appConnVal": "Nut & Feder"
+      "finishVal": "Tiefenöl oder Lack",
+      "plankTitle": "Diele",
+      "dimGroove": "Nut",
+      "dimGrooveVal": "15 mm breit, 7 · 15 mm tief",
+      "feltVal": "Recyceltes PET, 3 mm, schwarz oder grau",
+      "connVal": "Verdeckte Nut-und-Feder",
+      "weightPlank": "Gewicht pro Diele",
+      "weightPlankVal": "ca. 6,4–8,3 kg",
+      "tolerances": "Toleranzen",
+      "tolerancesVal": "Dicke ± 0,2 mm, Gewicht ± 10 %",
+      "octaveBands": "Oktavbandwerte",
+      "octaveBandsVal": "Folgen mit der neuen Messreihe",
+      "fireStdCore": "Standard-MDF-Kern",
+      "fireFrCore": "FR-MDF-Kern",
+      "fireFelt": "Filzrücken",
+      "fscVal": "FSC®-zertifiziert, C191539",
+      "epdVal": "EPD nach ISO 14025 · EN 15804",
+      "finishTitle": "Oberfläche",
+      "oakOilColours": "Ölfarben Eiche",
+      "oakOilColoursVal": "Natur, Weiß, Klar, Braun, Dunkelbraun, Schwarz",
+      "walnutFinish": "Nussbaum",
+      "walnutFinishVal": "Natur, geölt",
+      "feltColours": "Filzfarben",
+      "feltColoursVal": "Schwarz oder grau",
+      "optionsTitle": "Optionen",
+      "surfaceVal": "Geölt oder lackiert, unbehandelt auf Anfrage",
+      "madeToOrder": "Auf Bestellung",
+      "madeToOrderVal": "Jedes Furnier und jede Oberfläche",
+      "accessories": "Zubehör",
+      "accessoriesVal": "Abschlussprofile, Eckprofile, Lattung, Ausbesserungsset"
     },
     "accessories": {
-      "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
+      "tag": "ZUBEHÖR",
       "title": "Zubehör",
-      "endMouldings": "Endprofile",
-      "cornerProfiles": "Eckprofile",
-      "description": "Professionelle Finishing-Details für ein perfektes Ergebnis",
+      "description": "Abschlussprofile, Eckprofile, Lattung und ein Ausbesserungsset.",
       "item1Title": "Endprofile",
       "item1Desc": "Saubere Kanten, wo Paneele auf andere Oberflächen treffen",
       "item2Title": "Eckprofile",
@@ -2065,57 +2055,50 @@
       "title": "Projekte & Installationen"
     },
     "patterns": {
-      "tag": "DESIGNOPTIONEN",
-      "title": "Premium Oberflächen",
-      "description": "Vier markante Rillenmuster für jede architektonische Vision. Von klassischem Batten bis modernem Linear.",
-      "description2": "Vier markante Rillenmuster für jede architektonische Vision. Von klassischen ausgewogenen Proportionen bis zu kühnen breiten Streifen — finden Sie den perfekten Ausdruck für Ihren Raum."
+      "tag": "MUSTER",
+      "title": "Vier Lamellenmuster",
+      "description2": "Vier Lamellenmuster auf derselben 300-mm-Diele, vom klassischen Original mit sechs Lamellen bis zum breiten 3-Lamella. Die Zeichnungen sind maßstäblich: Lamellenbreiten und 15-mm-Nuten wie auf der Diele.",
+      "drawingAlt": "Muster {name}, {dims}, maßstäblich auf einer 300-mm-Diele",
+      "lamellaCount": "{count} Lamellen",
+      "note": "Dielenbreite 300 mm, Nutbreite 15 mm. Standardmaß 19 × 300 × 2 400 oder 2 780 mm. Gewicht pro Diele ca. 6,4–8,3 kg. Toleranzen: Dicke ± 0,2 mm, Gewicht ± 10 %."
     },
     "materials": {
       "tag": "MATERIALIEN",
-      "oilFinishesTitle": "Ölfinishs",
-      "oilFinishesDesc": "Natur, Weiß, Klar, Braun, Dunkelbraun und Schwarz Ölfinishs. Jedes dringt tief ins Holz ein.",
-      "walnutTitle": "Walnuss",
-      "walnutDesc": "Reiche, warme Töne mit markanten Maserungsmustern. Die Premium-Wahl für hochwertige Interieurs.",
-      "description": "Jedes rWood - Groove Panel wird mit A-Grad Furnier gefertigt, das konsistente Maserung und Farbe sicherstellt. Die geölte Oberfläche ist montagebereit.",
-      "colorSelector": "Oberfläche Wählen",
-      "layer1Name": "Eichen- / Walnussfurnier",
-      "layer1Desc": "Premium A-Grad Naturholz",
-      "layer2Name": "MDF-Kern mit Rillen",
-      "layer2Desc": "Schalleintrittkanäle",
-      "layer3Name": "Akustischer Filzrücken",
-      "layer3Desc": "Recyceltes PET, 3mm stark",
-      "waveLabel": "Schallwellen absorbiert",
-      "certNote": "Getestet und zertifiziert nach ISO 11654",
-      "description2": "Jedes rWood - Groove Panel wird mit A-Grad Furnier gefertigt, das konsistente Maserungsmuster und überlegene Qualität sicherstellt. Wählen Sie aus unserem Sortiment von geölten und lackierten Oberflächen."
+      "oilFinishesTitle": "Eiche: Tiefenöl oder Lack",
+      "oilFinishesDesc": "Oberfläche: Tiefenöl oder Lack. Ölfarben für Eiche: Natur, Weiß, Klar, Braun, Dunkelbraun und Schwarz.",
+      "walnutTitle": "Nussbaum",
+      "walnutDesc": "Natur, geölt. Sattes, gemasertes Braun (Walnut) oder warmes Mittelbraun (Tobacco Walnut).",
+      "colorSelector": "Furnier",
+      "selectPrompt": "Furnier wählen"
     },
     "downloads": {
       "installationGuide": "Montageanleitung",
       "colorChart": "Farb- & Oberflächenguide"
     },
     "cta2": {
-      "freeNote": "Kostenlose Muster • FSC® zertifiziert"
+      "freeNote": "Kostenlose Furniermuster · FSC®-zertifiziertes Furnier"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+          "answer": "Das Furnier ist FSC®-zertifiziert: Chain-of-Custody-Zertifikat C191539. Alle zwölf rWood-Furniere stammen aus verantwortungsvoll bewirtschafteten Wäldern; das Zertifikat ist auf Anfrage erhältlich."
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
-          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert — der Kern, den wir für Fluchtwege und öffentliche Gebäude vorsehen. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite."
+          "answer": "Das hängt vom Kern ab. Mit dem schwer entflammbaren (FR) MDF-Kern ist rWood Groove nach EN 13501-1 in B-s1,d0 eingestuft; auf einem Standard-MDF-Kern lautet die Einstufung D-s2,d2. Der Filzrücken ist B-s1,d0. Für Fluchtwege und öffentliche Gebäude den FR-Kern ausschreiben."
         },
         "leadTime": {
           "question": "Wie lang ist die Standard-Lieferzeit?",
-          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+          "answer": "Die Lieferzeit hängt vom Lagerbestand ab und wird bei Bestellung bestätigt. Kostenlose Furniermuster sind vor der Ausschreibung erhältlich; Preise und Mindestbestellmenge auf Anfrage."
         },
         "installMethod": {
           "question": "Wie werden rWood-Paneele installiert?",
-          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+          "answer": "rWood Groove wird auf Lattung befestigt oder auf einen sauberen, trockenen, ebenen Untergrund geklebt. In einer Ecke beginnen, die Feder jeder Diele in die Nut der vorigen schieben – für eine fugenlose Verbindung – und die Kanten mit Abschlussprofilen schließen."
         },
         "substrateCleanup": {
           "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
-          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+          "answer": "Re-Sound nimmt die Dielen am Ende ihrer Nutzungsdauer in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück."
         }
       }
     },
@@ -2123,139 +2106,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove Akustikpaneel in einem modernen Interieur",
       "woodFinishSamples": "Muster der Holzoberflächen",
       "panelInstallationProcess": "Montage der Paneele",
-      "sustainableForestry": "Nachhaltige Forstwirtschaft"
+      "sustainableForestry": "Nachhaltige Forstwirtschaft",
+      "hero": "rWood Groove genutete Holz-Akustikdielen",
+      "heroIn": "rWood Groove genutete Holz-Akustikdielen in {finish}",
+      "veneerSwatch": "Furniermuster {name}"
     },
     "options": {
       "originalDesc": "Klassisches Design mit 6 Lamellen",
       "mixedDesc": "Dynamische gemischte Breiten",
       "4lamellaDesc": "Markante breite Leisten",
       "3lamellaDesc": "Ausdrucksstarke breite Paneele"
+    },
+    "kpi": {
+      "thickness": "mm Dicke",
+      "alphaWClass": "αw, Absorptionsklasse {cls}",
+      "alphaW": "αw, bewerteter Schallabsorptionsgrad",
+      "fire": "Brandverhalten, FR-MDF-Kern",
+      "patterns": "Lamellenmuster auf 300-mm-Dielen",
+      "ariaLabel": "Kennzahlen"
+    },
+    "buildUp": {
+      "tag": "AUFBAU",
+      "title": "Drei Schichten, eine Diele",
+      "layer1": "Furnierseite",
+      "layer1Desc": "Eiche oder Nussbaum in A-Qualität",
+      "layer2": "MDF-Lamellen",
+      "layer2Desc": "Standard-, MR- oder FR-Kern",
+      "layer3": "Filz aus recyceltem PET",
+      "layer3Desc": "3 mm, schwarz oder grau",
+      "fixing": "Auf Lattung befestigt oder auf den Untergrund geklebt."
+    },
+    "veneers": {
+      "tag": "FURNIERE UND OBERFLÄCHEN",
+      "title": "Eiche und Nussbaum, jedes Furnier auf Bestellung",
+      "description": "Fünf Lagerfurniere, geölt oder lackiert. Wählen Sie ein Furnier, um es auf der Diele zu sehen.",
+      "silkOak": "Sanfter Greige-Ton",
+      "strawOak": "Helle, warm-neutrale Eiche",
+      "umberOak": "Geräuchertes Graubraun",
+      "walnut": "Sattes, gemasertes Braun",
+      "tobaccoWalnut": "Warmes Mittelbraun",
+      "guideNote": "Alle zwölf rWood-Furniere sind im rWood Farb- und Oberflächenguide abgebildet. Echtholz variiert in Farbe und Maserung: Fordern Sie Muster an, bevor Sie ausschreiben."
+    },
+    "ordering": {
+      "title": "Lieferzeit und Muster",
+      "orderCaption": "Bestellung",
+      "supplyCaption": "Lieferung",
+      "leadTimeVal": "Je nach Lagerbestand, bei Bestellung bestätigt",
+      "samplesVal": "Kostenlose Furniermuster",
+      "samplesQuotesDesc": "Bestellen Sie kostenlose Furniermuster oder senden Sie uns Ihre Pläne für ein Angebot."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PERFORIERTE AKUSTISCHE HOLZPANEELE",
+      "tag": "PERFORIERTES HOLZ-AKUSTIKPANEEL",
       "title": "rWood Perf: perforierte Holz-Akustikpaneele",
-      "tagline": "Präzisionsperforationen, Maximale Absorption",
-      "description": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten bieten höchste Brandschutz- und Akustikkontrolle.",
+      "tagline": "Präzise Perforationen, maximale Absorption.",
+      "description": "Runde, durch das furnierte, schwer entflammbare MDF-Paneel gebohrte Perforationen lassen den Schall in das Akustikvlies und den Absorber dahinter. Vier Muster, vom dezenten 5-mm-Loch bis zum doppelten 8-mm-Muster mit 24 % offener Fläche.",
       "usp1": "Runde Perforationen",
-      "usp2": "Brandklasse {fireClass}",
-      "usp3": "αw {alphaW} je Lochbild",
-      "description2": "Hochleistungs-Bohr-Akustikpaneele, die natürliche Holzschönheit mit hervorragender Schallabsorption verbinden. Ein brandhemmender MDF-Kern und überfurnierte Kanten liefern höchste Brandschutz- und Akustikkontrolle für anspruchsvolle öffentliche Räume."
+      "usp2": "Brandverhalten {fireClass}",
+      "usp3": "αw {alphaW} je nach Muster",
+      "description2": "Nach Maß für Wände und Decken, bis 3 050 × 1 220 mm, in 10 und 19 mm. Acht Lagerfurniere, jedes Furnier und jede Oberfläche auf Bestellung."
     },
     "patterns": {
-      "tag": "PERFORATIONSMUSTER",
-      "title": "Wählen Sie Ihr Muster",
-      "description": "Vier gebohrte Perforationsmuster mit kalibrierten akustischen Eigenschaften. Von maximaler offener Fläche bis zu subtilen Mikro-Perforationen.",
-      "coreMatchTitle": "Kern zum Furnier abstimmen, um Perforationen verschwinden zu lassen — oder sie zum Designelement machen.",
+      "tag": "PERFORATION",
+      "title": "Vier Lochmuster",
+      "description": "Lochgröße und offene Fläche je Muster. Je größer die offene Fläche, desto höher die Absorption.",
       "coreColorTitle": "Kernfarbe",
-      "coreMatchDesc": "Passen Sie den Kern zu Ihrem Furnier, um Perforationen verschwinden zu lassen, oder wählen Sie einen kontrastierenden Kern für einen Designeffekt.",
-      "description3": "Vier gebohrte Perforationsmuster mit kalibrierten akustischen Eigenschaften. Von maximaler offener Fläche für anspruchsvolle Akustikräume bis zu diskreteren Mustern, die visuelle Verfeinerung priorisieren.",
-      "coreMatchDesc2": "Passen Sie den Kern zum Furnier, um Perforationen verschwinden zu lassen, oder wählen Sie einen kontrastierenden Kern für einen dekorativen Effekt."
-    },
-    "coreColor": {
-      "title": "Kernfarbe",
-      "description": "Schwarzer oder naturbelassener Akustikfilz sichtbar durch die Perforationen — subtil aber wirkungsvoll."
+      "coreMatchDesc2": "Ein heller oder dunkler, schwer entflammbarer MDF-Kern, sichtbar durch die Löcher: auf das Furnier abgestimmt verschmelzen die Perforationen mit dem Holz, im Kontrast entsteht ein grafischer Effekt.",
+      "spec": "Ø {d} mm · {pct} % offen",
+      "specDouble": "2 × Ø {d} mm · {pct} % offen",
+      "drawingNote": "Zeichnungen etwa 1:2, Lochgröße und offene Fläche wie je Muster angegeben.",
+      "coreLight": "Heller Kern",
+      "coreDark": "Dunkler Kern"
     },
     "surfaces": {
-      "tag": "OBERFLÄCHEN",
-      "title": "Premium Holzoberflächen",
-      "natureVeneers": "Nature Furniere",
-      "natureDesc": "Lebhafte Variationen und charakteristischer Ausdruck jeder Holzart.",
-      "geminiVeneers": "Gemini Furniere",
-      "geminiDesc": "Gleichmäßiger Farbton und Struktur für ein harmonischeres Erscheinungsbild.",
-      "finishes": "Oberflächenbehandlungen",
-      "description": "Jedes rWood - Perf Panel wird mit überfurnierten Kanten produziert — eine traditionelle Handwerkstechnik für perfekt nahtlose Verbindungen.",
-      "finish1": "Naturlack",
-      "finish2": "Pigmentiert",
-      "finish3": "HPL-Laminat",
-      "colorSelector": "Furnier Wählen",
-      "description3": "Jedes rWood - Perf Panel wird mit überfurnierten Kanten produziert — eine traditionelle Fertigungstechnik, bei der festes Holz vor dem Furnieren um das Panel integriert wird. Dies gibt jedem Panel das Erscheinungsbild von vollständigem Holz mit nahtlosen Fugen über große Flächen."
+      "colorSelector": "Lagerfurniere",
+      "selectVeneer": "Furnier wählen"
     },
     "acoustics": {
-      "tag": "LEISTUNG",
-      "title": "Für Klang Entwickelt",
-      "benefit1Title": "Breitbandabsorption",
-      "benefit1": "Effektiv über das gesamte Frequenzspektrum",
-      "benefit2Title": "Brandschutz",
-      "benefit2": "Brandverhalten {fireClass} mit dem brandhemmenden MDF-Kern (EN 13501-1)",
-      "benefit3Title": "Abstimmbare Leistung",
-      "benefit3": "Vier Perforationsmuster für maßgeschneiderte Akustiklösungen",
-      "description": "Präzisionsgebohrte Perforationen lassen Schallwellen in das Panel eintreten und zur Absorptionsschicht darunter gelangen.",
-      "layer1Name": "Holzfurnier + Perforationen",
-      "layer1Desc": "Überfurnierte, präzisionsgebohrte Oberfläche",
-      "layer2Name": "Brandhemmender MDF-Kern",
-      "layer2Desc": "Brandhemmend, 0,45 kg/m³ Dichte",
-      "layer3Name": "Akustikflies",
-      "layer3Desc": "Verhindert Fasermigration",
-      "layer4Name": "Mineralwollhohlraum",
-      "layer4Desc": "30–50 mm für Breitbandabsorption",
-      "waveLabel": "Schallwellen absorbiert",
-      "certNote": "Getestet und zertifiziert nach ISO 11654",
-      "ratingLabel": "Absorption",
-      "description3": "Präzisionsgebohrte Perforationen lassen Schallwellen in das Panel eintreten und durch die Kavität dahinter strömen. Kombiniert mit Mineralwolle-Dämmung liefert rWood - Perf hervorragende Breitbandabsorption.",
-      "diagramTitle": "Querschnitt",
-      "fireRating": "Brandklasse",
-      "noiseReduction": "Lärmreduzierung",
-      "ratingPerPattern": "je Lochbild"
+      "tag": "AKUSTIK",
+      "title": "Schallabsorption",
+      "description": "Der Schall gelangt durch die Perforationen in das Akustikvlies und den Hohlraum hinter dem Paneel. Je größer die offene Fläche, desto höher die Absorption.",
+      "tableTitle": "Schallabsorption",
+      "alphaWByPattern": "αw, je nach Muster",
+      "withWool": "Mit 50 mm Mineralwolle",
+      "withWoolVal": "αw bis 1.00",
+      "mounting": "Einbau bei der Prüfung",
+      "mountingVal": "Hohlraum mit Mineralwolle",
+      "pattern": "Muster",
+      "openArea": "Offene Fläche",
+      "class": "Klasse",
+      "octaveTitle": "αs je Oktavband, Muster PD8 mit Hohlraum",
+      "footnote": "αs je Oktavband: Muster PD8 mit Hohlraum, Richtwerte. Die Werte hängen vom Muster, der Hohlraumtiefe und dem Absorber hinter dem Paneel ab."
     },
     "installation": {
-      "tag": "VERDECKTE BEFESTIGUNG",
-      "title": "Nahtlose Montage",
-      "step1Title": "Unterkonstruktion Montieren",
-      "step1Desc": "Metallschienen an Wand- oder Deckenstruktur montieren",
-      "step2Title": "Dämmung Einbringen",
-      "step2Desc": "Mineralwolle in die Hohlraum für optimale Absorption einbringen",
-      "step3Title": "Paneele Einclipsen",
-      "step3Desc": "Verdecktes Clipsystem für werkzeugfreie, spaltfreie Montage",
-      "step4Title": "Perfekte Ausrichtung",
-      "step4Desc": "Ausgerichtete Perforationsmuster mit nahtlosen überfurnierten Verbindungen",
-      "description": "rWood - Perf Paneele werden mit einem verdeckten Clipsystem für ein unsichtbares, nahtloses Aussehen installiert.",
-      "description3": "rWood - Perf Paneele werden mit einem verdeckten Clipsystem montiert, das auf Präzision, Geschwindigkeit und ein makelloses Ergebnis ausgelegt ist. Das System gewährleistet fugenlose Verbindungen und perfekt ausgerichtete Perforationsmuster."
+      "tag": "MONTAGE",
+      "title": "Verdecktes Clipsystem für Wände und Decken",
+      "step1Title": "Unterkonstruktion",
+      "step1Desc": "Metallschienen an der Wand- oder Deckenkonstruktion.",
+      "step2Title": "Dämmung",
+      "step2Desc": "Mineralwolle im Hohlraum für die beste Absorption.",
+      "step3Title": "Paneele",
+      "step3Desc": "Verdeckte Clips, werkzeuglose, fugenlose Montage.",
+      "step4Title": "Ergebnis",
+      "step4Desc": "Muster von Paneel zu Paneel ausgerichtet.",
+      "description": "Metallschienen, Mineralwolle im Hohlraum, dann werden die Paneele werkzeuglos und fugenlos eingeclipst, das Lochmuster läuft von Paneel zu Paneel durch."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
-      "title": "Gebaut um zu Dauern, Verantwortungsvoll Gebaut",
-      "badge1": "FSC® Zertifiziert",
-      "badge2": "{pct} % Recyclinganteil",
+      "title": "Verantwortungsvoll gefertigt",
+      "badge1": "FSC®-zertifiziertes Furnier",
+      "badge2": "{pct} % Recyclinganteil",
       "badge3": "Hergestellt in Polen",
-      "badge4": "Ultra-Niedrige Emissionen",
+      "badge4": "Formaldehydklasse E1",
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
-      "badge2Desc": "Post-consumer Recyclingmaterial im Kern",
-      "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen) — kurze Lieferketten",
-      "badge4Desc": "Kein zugesetztes Formaldehyd",
-      "description": "rWood - Perf kombiniert langlebige, natürliche Materialien mit einem verantwortungsvollen Fertigungsansatz.",
-      "description3": "rWood - Perf kombiniert langlebige, natürliche Materialien mit verantwortungsvoller Beschaffung: ein brandhemmender MDF-Kern ohne zugesetztes Formaldehyd und Furniere aus nachhaltig bewirtschafteten Wäldern."
+      "badge2Desc": "Recyclingmaterial im Paneel",
+      "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
+      "badge4Desc": "Emissionsarmer, schwer entflammbarer MDF-Kern für trockene Innenräume",
+      "description": "FSC®-zertifiziertes Furnier, Formaldehydklasse E1 und Fertigung in unserem eigenen Werk in Częstochowa. Am Ende der Nutzungsdauer nehmen wir die Paneele in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück."
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Technische Daten",
-      "dimensionsTitle": "Abmessungen — Wände und Decken",
-      "acousticsTitle": "Akustische Leistung",
-      "perforationsTitle": "Perforationsoptionen",
-      "fireTitle": "Brandschutz",
-      "certsTitle": "Zertifizierungen",
-      "customSizes": "Sondermaße",
-      "dimThickness": "Stärke",
-      "dimWeight": "Gewicht",
-      "matTitle": "Materialien",
-      "matCustomColor": "Individuelle Farbtöne mit transparenter oder deckender Pigmentierung",
-      "matLacquerFinish": "Von supermatt bis Hochglanz UV-Lack",
-      "surfaceLabel": "Oberfläche",
-      "surfaceVal": "Furnier / HPL / Folie / Farbe",
-      "coreVal": "MDF-Kern (braun / grün / schwarz)",
+      "tag": "TECHNISCHE DATEN",
+      "title": "Paneel, Brand und Emissionen",
+      "acousticsTitle": "Schallabsorption",
+      "perforationsTitle": "Lochmuster",
+      "fireTitle": "Brand und Emissionen",
+      "matTitle": "Oberfläche und Optionen",
+      "surfaceLabel": "Oberflächenbehandlungen",
+      "surfaceVal": "Naturlack · pigmentiert · HPL-Laminat · Folie · Farbe",
+      "coreVal": "Schwer entflammbares MDF, hell oder dunkel",
       "edgesLabel": "Kanten",
-      "edgesVal": "Überfurniertes Massivholz",
-      "acousticFelt": "Akustikfilz",
-      "feltColor": "Schwarz / Weiß",
-      "reactionFire": "Brandreaktion",
-      "resistanceFire": "Brandwiderstand",
-      "fireRetardant": "Brandhemmend",
-      "vocLabel": "VOC-Emissionen",
-      "vocVal": "TVOC zugelassen (ISO 16000)",
-      "formaldehydeLabel": "Formaldehyd",
-      "formaldehydeVal": "Kein zugesetztes Harnstoff-Formaldehyd",
-      "envLabel": "Umwelt"
+      "edgesVal": "Überfurniertes Massivholz für fugenlose Stöße",
+      "feltColor": "Schwarz oder weiß",
+      "reactionFire": "Brandverhalten",
+      "panelTitle": "Paneel",
+      "sizes": "Abmessungen",
+      "fleeceLabel": "Akustikvlies",
+      "acWithMinWool": "Mit 50 mm Mineralwolle",
+      "acWithMinWoolVal": "αw bis 1.00",
+      "fireStandard": "Brandnorm",
+      "finishLabel": "Lack",
+      "finishVal": "UV-gehärtet, supermatt bis hochglänzend, natur oder pigmentiert",
+      "rangesLabel": "Furnierlinien",
+      "rangesVal": "Nature (lebendige, charaktervolle Maserung) · Gemini (gleichmäßiger, einheitlicher Ton)",
+      "coreColoursLabel": "Kernfarben",
+      "appsTitle": "Montage",
+      "appInstall": "Anwendung",
+      "appWalls": "Wände und Decken",
+      "mountingSystem": "Befestigung",
+      "subframe": "Unterkonstruktion",
+      "mounting": "Einbau bei der Prüfung",
+      "mountingVal": "Hohlraum mit Mineralwolle",
+      "pd8Val": "2 × Ø 8 mm · 24 % offen",
+      "ph10Val": "Ø 10 mm · 18 % offen",
+      "ph8Val": "Ø 8 mm · 12 % offen",
+      "ph5Val": "Ø 5 mm · 5 % offen",
+      "envVal": "Innenbereich, trockene Räume",
+      "coreColoursVal": "Braun, grün oder schwarz: hell oder dunkel, um die Perforationen zu verbergen oder zu betonen",
+      "subframeVal": "Metallschienen",
+      "concealedClip": "Verdeckte Clips, werkzeuglos, fugenlos"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2263,194 +2272,231 @@
     },
     "overview": {
       "tag": "BEWÄHRTE LEISTUNG",
-      "description": "rWood - Perf Paneele sind eine der wirksamsten Akustikwandlösungen. Präzisionsgebohrte Perforationen lassen Schall durch die dekorative Holzoberfläche.",
-      "feature1": "Brandhemmender MDF-Kern ({fireClass})",
-      "feature2": "Überfurnierte Kanten für nahtlose Verbindungen",
-      "feature3": "Heller oder dunkler Kern für Musterdiskretion",
-      "feature4": "Sonderformate bis 3050 × 1220 mm",
-      "description3": "rWood - Perf Paneele sind eine der effektivsten und meistgenutzten Lösungen für Akustikwände und -decken. Die präzisionsgebohrten runden Perforationen schaffen eine große offene Fläche, die hohe Schallabsorptionsniveaus garantiert.",
-      "description4": "Kombiniert mit einem brandhemmenden MDF-Kern und überfurnierten Kanten für nahtlose Fugen, sind diese Paneele für höchste Anforderungen in großen öffentlichen Räumen konzipiert — von Atrien und Konzertsälen bis zu Büros und Schulen."
-    },
-    "accessories": {
-      "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
-      "title": "Zubehör",
-      "description": "Professionelle Abschlusselemente für ein tadelloses Ergebnis",
-      "item1Title": "Endprofile",
-      "item1Desc": "Passende Profile für saubere Abschlüsse",
-      "item2Title": "Ecklösungen",
-      "item2Desc": "Nahtlose Innen- und Außeneck-Übergänge",
-      "item3Title": "Montageschienen",
-      "item3Desc": "Verdecktes Aluminium-Unterkonstruktionssystem",
-      "item4Title": "Mineralwolle",
-      "item4Desc": "30–50 mm Dämmung für optimale Leistung"
+      "feature1": "Schwer entflammbarer MDF-Kern ({fireClass})",
+      "feature2": "Heller oder dunkler Kern, um die Perforationen zu verbergen oder zu betonen",
+      "feature3": "Nach Maß bis 3 050 × 1 220 mm, in 10 und 19 mm",
+      "feature4": "Verdeckte Clips, werkzeuglos, fugenlos, Muster von Paneel zu Paneel ausgerichtet",
+      "title": "Je größer die offene Fläche, desto höher die Absorption",
+      "description1": "rWood Perf ist ein furniertes, schwer entflammbares MDF-Paneel mit durchgebohrten runden Perforationen. Der Schall gelangt durch die Löcher in das Akustikvlies und den Hohlraum hinter dem Paneel, wo er absorbiert wird.",
+      "description2": "Vier Muster lassen Ihnen die Wahl zwischen Absorption und Zurückhaltung: vom dezenten 5-mm-Loch mit 5 % offener Fläche bis zum doppelten 8-mm-Muster PD8 mit 24 % offener Fläche."
     },
     "cta": {
-      "note": "Kostenlose Muster erhältlich • FSC® zertifiziert"
+      "note": "Kostenlose Furniermuster · FSC®-zertifiziertes Furnier"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; die Nummer des Chain-of-Custody-Zertifikats erhalten Sie auf Anfrage."
         },
         "fireRating": {
-          "question": "Wie ist die Brandklasse?",
-          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert — der Kern, den wir für Fluchtwege und öffentliche Gebäude vorsehen. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite."
+          "question": "Welche Brandklasse hat das Paneel?",
+          "answer": "Mit dem schwer entflammbaren MDF-Kern ist rWood Perf nach EN 13501-1 in B-s1,d0 eingestuft. Das Paneel ist für trockene Innenräume bestimmt."
         },
         "leadTime": {
-          "question": "Wie lang ist die Standard-Lieferzeit?",
-          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+          "question": "Wie lang ist die Standardlieferzeit?",
+          "answer": "Lagerfurniere liefern wir in 3–4 Wochen; nicht bevorratete Holzarten und Sonderoberflächen benötigen 6–8 Wochen. Maßpaneele fertigen wir nach Ihren Zeichnungen."
         },
         "installMethod": {
-          "question": "Wie werden rWood-Paneele installiert?",
-          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+          "question": "Wie werden rWood-Paneele montiert?",
+          "answer": "Mit einem verdeckten Clipsystem: Metallschienen an der Wand- oder Deckenkonstruktion, Mineralwolle im Hohlraum, dann werden die Paneele werkzeuglos und fugenlos eingeclipst, sodass das Lochmuster von Paneel zu Paneel durchläuft."
         },
         "substrateCleanup": {
-          "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
-          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+          "question": "Was geschieht mit den Paneelen am Ende der Nutzungsdauer?",
+          "answer": "Re-Sound nimmt Paneele am Ende der Nutzungsdauer in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf Paneel, Nahaufnahme mit runden Perforationen",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Detail der Furnieroberfläche eines perforierten Holzpaneels",
-      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf Paneel mit verdecktem Montagesystem",
-      "sustainableWoodSourcingAndProduction": "Nachhaltige Holzbeschaffung und Produktion"
+      "sustainableWoodSourcingAndProduction": "FSC-zertifiziertes Holzfurnier",
+      "hero": "Perforierte Holz-Akustikpaneele rWood Perf an einer Wand",
+      "heroVeneer": "rWood Perf Paneel in {name}",
+      "overview": "Nahaufnahme der runden Perforationen eines rWood Perf Paneels",
+      "installation": "Metallschienen und verdeckte Clips des rWood Perf Montagesystems"
     },
     "options": {
-      "pd8Desc": "Maximale Absorption, große offene Fläche",
+      "pd8Desc": "Doppeltes Muster, maximale Absorption",
       "ph10Desc": "Hohe Absorption, markante Perforationen",
-      "ph8Desc": "Ausgewogene Optik und Leistung",
-      "ph5Desc": "Dezentes Muster, zurückhaltende Oberfläche"
+      "ph8Desc": "Ausgewogen in Optik und Leistung",
+      "ph5Desc": "Dezentes Muster, ruhige Oberfläche"
+    },
+    "kpi": {
+      "ariaLabel": "Kennzahlen",
+      "thickness": "Paneelstärke, nach Maß",
+      "alphaW": "αw, je nach Muster",
+      "alphaWPd8": "αw mit Muster PD8, {range} je nach Muster",
+      "fire": "Brandverhalten, schwer entflammbarer MDF-Kern",
+      "patterns": "Lochmuster, Ø 5 bis 10 mm"
+    },
+    "buildUp": {
+      "alt": "Explosionsdarstellung der drei Schichten: perforiertes Furnier, durchbohrter schwer entflammbarer MDF-Kern, Akustikvlies",
+      "layer1": "Perforiertes Furnier",
+      "layer1Desc": "Qualität A, gebohrt Ø 5 bis 10 mm",
+      "layer2": "Schwer entflammbarer MDF-Kern",
+      "layer2Desc": "Hell oder dunkel, durchgebohrt",
+      "layer3": "Akustikvlies",
+      "layer3Desc": "Schwarz oder weiß",
+      "behind": "Hinter dem Paneel: Hohlraum mit Mineralwolle."
+    },
+    "veneers": {
+      "title": "Acht Lagerfurniere, jedes Furnier auf Bestellung",
+      "description": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Holz ist ein Naturmaterial: Maserung und Farbe variieren von Paneel zu Paneel, Bildschirmmuster sind nur ein Anhaltspunkt.",
+      "alt": "Furnier {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavien",
+        "northAmerica": "Nordamerika"
+      },
+      "grain": {
+        "straightInterlocked": "Gerade bis wechseldrehwüchsig",
+        "subtleFine": "Dezente feine Maserung",
+        "fineStraight": "Feine gerade Maserung",
+        "cathedral": "Kathedralmaserung",
+        "pronounced": "Ausgeprägte Maserung",
+        "straightWavy": "Gerade bis gewellt",
+        "deepCathedral": "Tiefe Kathedralmaserung",
+        "richFlowing": "Reiche, fließende Maserung"
+      },
+      "madeToOrderTitle": "Auf Bestellung",
+      "madeToOrderDesc": "Über die acht Lagerfurniere hinaus fertigen wir jede Holzart, Beizfarbe und Oberfläche.",
+      "finishTitle": "Oberfläche",
+      "finishDesc": "UV-gehärteter Lack von supermatt bis hochglänzend, natur oder pigmentiert.",
+      "naturalTitle": "Ein Naturmaterial",
+      "naturalDesc": "Echtholz variiert in Farbe und Maserung. Fordern Sie Muster an, bevor Sie ausschreiben."
+    },
+    "bespoke": {
+      "tag": "NACH MASS",
+      "title": "Nach Ihren Zeichnungen",
+      "description": "rWood Perf wird nach Maß für Wände und Decken gefertigt: von 100 × 100 mm bis 3 050 × 1 220 mm, in 10 und 19 mm, in jedem der vier Muster.",
+      "customDimTitle": "Individuelle Abmessungen",
+      "customDimDesc": "Jedes Paneel wird in den Maßen Ihrer Zeichnungen gefertigt, von 100 × 100 mm bis 3 050 × 1 220 mm.",
+      "finishTitle": "Jedes Furnier, jede Oberfläche",
+      "finishDesc": "Acht Lagerfurniere; jede andere Holzart, Beizfarbe und Oberfläche auf Bestellung.",
+      "samplesTitle": "Kostenlose Furniermuster",
+      "samplesDesc": "Echtholz variiert in Farbe und Maserung. Fordern Sie Muster an, bevor Sie ausschreiben."
+    },
+    "ordering": {
+      "title": "Lieferzeiten und Muster",
+      "stockVeneers": "Lagerfurniere",
+      "stockVeneersVal": "3–4 Wochen",
+      "nonStock": "Nicht am Lager und Sonderanfertigung",
+      "nonStockVal": "6–8 Wochen",
+      "madeToMeasure": "Nach Maß",
+      "madeToMeasureVal": "Nach Ihren Zeichnungen",
+      "supply": "Lieferung",
+      "samplesVal": "Kostenlose Furniermuster",
+      "sizesVal": "Bis {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgien"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "MIKROPERFORIERTE AKUSTIKPANEELE",
+      "tag": "MIKROPERFORIERTES HOLZ-AKUSTIKPANEEL",
       "title": "rWood Micro: mikroperforierte Holz-Akustikpaneele",
-      "tagline": "Unsichtbare Perforation, Außergewöhnliche Akustik",
-      "description": "Erleben Sie die Schönheit von Naturholz kombiniert mit der akustischen Leistung fortschrittlicher Mikroperforationstechnologie. Praktisch unsichtbare Löcher liefern Klasse A Schallabsorption und bewahren gleichzeitig das reine, homogene Aussehen des Premium-Holzfurniers.",
+      "tagline": "Unsichtbare Perforation, außergewöhnliche Akustik.",
+      "description": "Mikroperforationen ab 0,5 mm im Furnier der Qualität A öffnen sich zu Schallkammern im schwer entflammbaren MDF-Kern, hinterlegt mit einem Akustikvlies. Aus normaler Betrachtungsdistanz verschwinden die Löcher im Holz.",
       "usp1": "Unsichtbare Perforationen",
-      "usp2": "Klasse A Absorption",
-      "usp3": "Brandklasse {fireClass}",
-      "colorSelector": "Holzfurnier Wählen"
+      "usp2": "Absorption Klasse A",
+      "usp3": "Brandverhalten {fireClass}",
+      "colorSelector": "Lagerfurniere",
+      "description2": "Nach Maß für Wände und Decken, bis 3 050 × 1 220 mm, in 10 und 19 mm. Acht Lagerfurniere, jedes Furnier und jede Oberfläche auf Bestellung.",
+      "selectVeneer": "Furnier wählen"
     },
     "perforation": {
-      "tag": "PERFORATIONSMUSTER",
-      "title": "Wählen Sie Ihre Perforation",
-      "description": "Vier Perforationsdichten für Ihre akustischen Anforderungen. Von praktisch unsichtbaren Nano-Perforationen bis zu maximaler Absorption mit Micro L-Mustern."
-    },
-    "surfaces": {
-      "tag": "OBERFLÄCHEN",
-      "title": "Premium Oberflächen",
-      "woodVeneer": "Holzfurnier",
-      "woodVeneerDesc": "Premium A-Grad Furniere in Eiche, Walnuss, Birke und mehr. Nature und Gemini Schnitte verfügbar.",
-      "hplLaminate": "HPL-Laminat",
-      "hplLaminateDesc": "Hochdrucklaminatoberflächen für höhere Haltbarkeit. In einer breiten Palette von Farben und Oberflächen erhältlich.",
-      "surfaceType": "Oberflächentyp",
-      "finishTreatments": "Oberflächenbehandlungen",
-      "description": "Jedes rWood - Micro Panel hat überfurnierte Kanten — eine Fertigungstechnik für kontinuierliche Panelverbindungen.",
-      "finish1Desc": "Individuelle Farbtöne mit transparenter oder deckender Pigmentierung",
-      "finish2Desc": "Von supermatt bis Hochglanz UV-Lack",
-      "description2": "Jedes rWood - Micro Panel hat überfurnierte Kanten — eine Fertigungstechnik aus dem traditionellen Schreinerhandwerk. Das Ergebnis: stärkere Paneele, nahtlose Fugen und ein durchgehendes Muster unabhängig vom Panelformat."
+      "tag": "PERFORATION",
+      "title": "Vier Perforationsdichten",
+      "description": "Lochgröße und offene Fläche je Dichte. Je größer die offene Fläche, desto höher die Absorption; je kleiner das Loch, desto weniger sichtbar das Muster.",
+      "spec": "Ø {d} mm · {pct} % offen",
+      "drawingNote": "Zeichnungen etwa 2:1, Lochgröße und offene Fläche wie je Dichte angegeben."
     },
     "acoustics": {
-      "tag": "LEISTUNG",
-      "title": "Überlegene Schallabsorption",
-      "benefit1Title": "Doppelter Absorptionsmechanismus",
-      "benefit1": "Mikrolöcher und Schallkammern arbeiten für überlegene Absorption zusammen",
-      "benefit2Title": "Platzsparendes Design",
-      "benefit2": "Weniger abhängig von Luftspalten — dünnere Wand- und Deckenaufbauten",
-      "benefit3Title": "Brandschutz",
-      "benefit3": "Brandverhalten {fireClass} mit dem brandhemmenden MDF-Kern (EN 13501-1)",
-      "description": "Die Kombination aus Mikro-Perforationen an der Oberfläche und tausenden größeren Schalleintrittskanälen schafft außergewöhnliche Breitbandabsorption.",
-      "layer1Name": "A-Grad Furnier mit präzisionsgebohrten Löchern",
-      "layer2Name": "Brandhemmender MDF-Kern",
-      "layer2Desc": "Brandhemmend, mit Schallkammern",
-      "layer3Name": "Akustikflies-Rücken",
-      "layer3Desc": "Zusätzliche Schallabsorptionsschicht",
-      "waveLabel": "Schallwellen absorbiert",
-      "certNote": "Getestet und zertifiziert nach ISO 11654",
-      "description2": "Die Kombination aus Mikro-Perforationen an der Oberfläche und tausenden größerer Schallkammern im Kern schafft einen dualen Akustik-Mechanismus. Weniger abhängig von Dämmung und Luftspalten — für dünnere Wände und Decken, die wertvolle Fläche sparen.",
-      "diagramTitle": "Querschnitt",
-      "soundAbsorbed": "Schall Absorbiert",
-      "fireRating": "Brandklasse",
-      "testStandard": "Prüfnorm",
-      "thinner": "Dünner",
-      "wallBuildUp": "Wandaufbau"
+      "tag": "AKUSTIK",
+      "title": "Schallabsorption",
+      "description": "Der Schall tritt durch die Mikroperforationen ein und wird in den Schallkammern des Kerns und im dahinterliegenden Vlies absorbiert. Wie viel das Paneel absorbiert, hängt von der Perforationsdichte und vom Aufbau dahinter ab.",
+      "tableTitle": "Schallabsorption",
+      "withWool": "Mit 50 mm Mineralwolle",
+      "withWoolVal": "αw bis 1.00",
+      "behindTitle": "Hinter dem Paneel",
+      "behindDesc": "Ein Absorber dahinter erhöht die Absorption: Akustikfilz, ein rPET-Paneel oder Mineralwolle im Hohlraum. Mit 50 mm Mineralwolle erreicht das Paneel αw 1,00.",
+      "footnote": "αw und Absorptionsklasse nach EN ISO 11654. Die Werte hängen von der Perforationsdichte, der Hohlraumtiefe und dem Absorber hinter dem Paneel ab."
     },
     "installation": {
-      "tag": "MONTAGESYSTEM",
-      "title": "Präzisionsmontage",
-      "step1Title": "Unterkonstruktion Montieren",
-      "step1Desc": "Aluminiumschienen an Wand- oder Deckenstruktur befestigen",
-      "step2Title": "Dämmung Einbringen",
-      "step2Desc": "Optionale Mineralwolle für verbesserte Absorption",
-      "step3Title": "Paneele Einclipsen",
-      "step3Desc": "Verdecktes Clipsystem für werkzeugfreie Montage",
-      "step4Title": "Nahtloses Ergebnis",
-      "step4Desc": "Überfurnierte Kanten schaffen eine durchgehende Holzoberfläche",
-      "description": "rWood - Micro Paneele werden mit unserem verdeckten Befestigungssystem installiert, das unsichtbare Befestigungen und eine makellose Oberfläche gewährleistet. Das System ermöglicht sowohl Wand- als auch Deckenanwendungen mit nahtlosen Paneel-zu-Paneel-Übergängen durch überfurnierte Kanten."
+      "tag": "MONTAGE",
+      "title": "Verdecktes Clipsystem für Wände und Decken",
+      "step1Title": "Unterkonstruktion",
+      "step1Desc": "Aluminiumschienen an der Wand- oder Deckenkonstruktion.",
+      "step2Title": "Dämmung",
+      "step2Desc": "Optional Mineralwolle für eine höhere Absorption.",
+      "step3Title": "Paneele",
+      "step3Desc": "Verdeckte Clips, werkzeuglose Montage.",
+      "step4Title": "Ergebnis",
+      "step4Desc": "Unsichtbare Befestigungen und eine durchgehende Holzoberfläche.",
+      "description": "Aluminiumschienen, optional Mineralwolle, dann werden die Paneele werkzeuglos eingeclipst. Die Befestigungen bleiben unsichtbar, die Holzoberfläche läuft ohne Unterbrechung durch."
     },
     "bespoke": {
-      "tag": "GESTALTUNGSFREIHEIT",
-      "title": "Individuelle Möglichkeiten",
-      "backlitTitle": "Hinterleuchtete Paneele",
-      "backlitDesc": "Erstellen Sie atemberaubende hinterleuchtete Abschnitte, bei denen Licht durch die Mikroperforationen scheint. Logos und Muster leuchten schön, wenn beleuchtet, bleiben aber unsichtbar, wenn das Licht aus ist.",
-      "customDimTitle": "Individuelle Maße",
-      "customDimDesc": "Paneele nach Ihren genauen Spezifikationen gefertigt. Nicht-standardmäßige Größen und Formen für einzigartige architektonische Anforderungen.",
-      "patternTitle": "Durchgehendes Muster",
-      "patternDesc": "Überfurnierte Paneele schaffen nahtlose Übergänge unabhängig vom Format, für einen homogenen Eindruck auf jeder Oberfläche.",
-      "description": "rWood - Micro Paneele können nach Ihren Zeichnungen angepasst und vorgefertigt werden. Die Mikroperforationen eröffnen einzigartige Designmöglichkeiten, die über Standard-Akustikpaneele hinausgehen."
+      "tag": "NACH MASS",
+      "title": "Nach Ihren Zeichnungen",
+      "customDimTitle": "Individuelle Abmessungen",
+      "customDimDesc": "Jedes Paneel wird in den Maßen Ihrer Zeichnungen gefertigt, von 100 × 100 mm bis 3 050 × 1 220 mm.",
+      "description": "rWood Micro wird nach Maß für Wände und Decken gefertigt: von 100 × 100 mm bis 3 050 × 1 220 mm, in 10 und 19 mm, in jeder der vier Perforationsdichten.",
+      "finishTitle": "Jedes Furnier, jede Oberfläche",
+      "finishDesc": "Acht Lagerfurniere; jede andere Holzart, Beizfarbe und Oberfläche auf Bestellung.",
+      "samplesTitle": "Kostenlose Furniermuster",
+      "samplesDesc": "Echtholz variiert in Farbe und Maserung. Fordern Sie Muster an, bevor Sie ausschreiben."
     },
     "sustainability": {
       "tag": "NACHHALTIGKEIT",
-      "title": "Verantwortungsvoll Hergestellt",
-      "badge1": "FSC® Zertifiziertes Furnier",
-      "badge2": "Natürliches Kernmaterial",
+      "title": "Verantwortungsvoll gefertigt",
+      "badge1": "FSC®-zertifiziertes Furnier",
+      "badge2": "Formaldehydklasse E1",
       "badge3": "Hergestellt in Polen",
-      "badge4": "Niedrige VOC-Emissionen",
+      "badge4": "Rücknahme am Ende der Nutzungsdauer",
       "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
-      "badge2Desc": "Faserplattenkem — ein holzbasierter, brandgeschützter Kern",
+      "badge2Desc": "Emissionsarmer, schwer entflammbarer MDF-Kern für trockene Innenräume",
       "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
-      "badge4Desc": "E1-klassifiziert für gesündere Innenraumluft",
-      "description": "rWood - Micro Paneele werden mit Nachhaltigkeit als Kernprinzip gebaut. FSC®-zertifiziertes Holz, emissionsarme Oberflächenbehandlungen und verantwortungsvoll beschaffte Materialien.",
+      "description": "FSC®-zertifiziertes Furnier, Formaldehydklasse E1 und Fertigung in unserem eigenen Werk in Częstochowa. Am Ende der Nutzungsdauer nehmen wir die Paneele zurück.",
       "badge5": "Grüne Energie"
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Technische Daten",
-      "dimensionsTitle": "Abmessungen — Wände und Decken",
-      "acousticsTitle": "Abmessungen — Wände und Decken",
-      "customSizes": "Sondermaße",
-      "dimThickness": "Stärke",
-      "dimWeight": "Gewicht",
-      "dimCoreDensity": "Kerndichte",
-      "perfsTitle": "Perforationsoptionen",
-      "fireTitle": "Brandschutz",
-      "matTitle": "Materialien",
-      "appsTitle": "Anwendungen",
-      "acWithMinWool": "Mit 50mm Mineralwolle",
-      "reactionFire": "Brandreaktion",
-      "resistanceFire": "Brandwiderstand",
-      "fireRetardant": "Brandhemmend",
-      "surfaceLabel": "Oberfläche",
-      "surfaceVal": "Furnier / HPL / Folie / Farbe",
-      "coreVal": "MDF-Kern (braun / grün / schwarz)",
+      "tag": "TECHNISCHE DATEN",
+      "title": "Paneel, Brand und Emissionen",
+      "acousticsTitle": "Schallabsorption",
+      "perfsTitle": "Perforationsdichten",
+      "fireTitle": "Brand und Emissionen",
+      "matTitle": "Oberfläche und Optionen",
+      "appsTitle": "Montage",
+      "acWithMinWool": "Mit 50 mm Mineralwolle",
+      "reactionFire": "Brandverhalten",
+      "surfaceLabel": "Oberflächenbehandlungen",
+      "surfaceVal": "Naturlack · pigmentiert · HPL-Laminat · Folie · Farbe",
+      "coreVal": "Schwer entflammbares MDF mit Schallkammern",
       "edgesLabel": "Kanten",
-      "edgesVal": "Überfurniertes Massivholz",
-      "acousticFelt": "Akustikfilz",
-      "feltColor": "Schwarz / Weiß",
-      "appInstall": "Montage",
-      "appWalls": "Wände & Decken",
-      "appEnv": "Umgebung",
-      "appEnvVal": "Innenbereich (Trockenbereiche)",
-      "backlitOption": "Hintergrundbeleuchtung",
-      "backlitVal": "Verfügbar",
-      "mountingSystem": "Befestigungssystem",
-      "concealedClip": "Verdecktes Clipsystem",
+      "edgesVal": "Überfurniertes Massivholz für fugenlose Stöße",
+      "feltColor": "Schwarz oder weiß",
+      "appInstall": "Anwendung",
+      "appWalls": "Wände und Decken",
+      "appEnvVal": "Innenbereich, trockene Räume",
+      "mountingSystem": "Befestigung",
+      "concealedClip": "Verdeckte Clips, werkzeuglos",
       "perforationsTitle": "Perforationsoptionen",
-      "certsTitle": "Zertifizierungen"
+      "certsTitle": "Zertifizierungen",
+      "panelTitle": "Paneel",
+      "sizes": "Abmessungen",
+      "fleeceLabel": "Akustikvlies",
+      "acWithMinWoolVal": "αw bis 1.00",
+      "fireStandard": "Brandnorm",
+      "finishLabel": "Lack",
+      "finishVal": "UV-gehärtet, supermatt bis hochglänzend, natur oder pigmentiert",
+      "rangesLabel": "Furnierlinien",
+      "rangesVal": "Nature (lebendige, charaktervolle Maserung) · Gemini (gleichmäßiger, einheitlicher Ton)",
+      "coreColoursLabel": "Kernfarben",
+      "subframe": "Unterkonstruktion",
+      "nanoVal": "Ø 0.5 mm · 2.5 % offen",
+      "microSVal": "Ø 1.0 mm · 5.2 % offen",
+      "microMVal": "Ø 1.5 mm · 8.4 % offen",
+      "microLVal": "Ø 2.0 mm · 10.6 % offen",
+      "coreColoursVal": "Braun, grün oder schwarz",
+      "subframeVal": "Aluminiumschienen"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "DIE UNSICHTBARE LÖSUNG",
-      "title": "Für Augen und Ohren Gestaltet",
-      "description1": "rWood - Micro Paneele kombinieren fortschrittliche Mikroperforationstechnologie mit Premium-Holzfurnieren. Aus normaler Betrachtungsdistanz sind die Perforationen völlig unsichtbar — was Sie sehen, ist eine schöne, homogene Holzoberfläche. Was Sie hören, ist außergewöhnlicher akustischer Komfort.",
-      "description2": "Das Geheimnis liegt in der Kombination zweier akustischer Mechanismen: Tausende präzise gefertigte Mikrolöcher an der Oberfläche und schallabsorbierende Kammern im Kernmaterial.",
-      "feature1": "Perforationen aus normaler Betrachtungsdistanz unsichtbar",
-      "feature2": "Brandhemmender MDF-Kern mit Schallkammern",
-      "feature3": "Überfurnierte Kanten für nahtlose Verbindungen",
-      "feature4": "Geeignet für Wände und Decken",
-      "feature5": "Als hinterleuchtete Paneele erhältlich"
-    },
-    "accessories": {
-      "tag": "DEN LOOK VERVOLLSTÄNDIGEN",
-      "title": "Zubehör",
-      "description": "Professionelle Abschlusselemente für ein tadelloses Ergebnis",
-      "item1Title": "Endprofile",
-      "item1Desc": "Passende Profile für saubere Paneel-Abschlüsse",
-      "item2Title": "Ecklösungen",
-      "item2Desc": "Nahtlose Innen- und Außeneckübergänge",
-      "item3Title": "Montageschienen",
-      "item3Desc": "Verdecktes Aluminium-Unterkonstruktionssystem",
-      "item4Title": "LED-Hinterbeleuchtung",
-      "item4Desc": "Integrierte Beleuchtung für hinterleuchtete Paneel-Effekte"
-    },
-    "patterns": {
-      "description": "Vier Perforationsdichten für Ihre akustischen Anforderungen. Von nahezu unsichtbaren Mikro-Perforationen bis zu großzügigen offenen Bereichen.",
-      "magnifiedLabel": "10-fach vergrößert",
-      "holeDiameter": "Lochdurchmesser",
-      "openArea": "Offene Fläche",
-      "ratingLabel": "Absorption",
-      "description2": "Vier Perforationsdichten für Ihre akustischen Anforderungen. Von nahezu unsichtbaren Nano-Perforationen bis zu maximaler Absorptions-Micro-L-Mustern — wählen Sie die perfekte Balance zwischen Ästhetik und akustischer Leistung.",
-      "pigmentedLacquer": "Pigmentierter Lack",
-      "glossLevels": "Glanzstufen"
+      "title": "Für Augen und Ohren gemacht",
+      "description1": "rWood Micro verbindet ein Echtholzfurnier der Qualität A mit Mikroperforationen ab Ø 0,5 mm. Aus normaler Betrachtungsdistanz verschwinden die Löcher im Holz: Sie sehen eine durchgehende Holzoberfläche, Sie hören einen ruhigeren Raum.",
+      "description2": "Der Schall tritt durch die Mikroperforationen ein und wird in den Schallkammern des schwer entflammbaren MDF-Kerns und im dahinterliegenden Akustikvlies absorbiert. Wie viel das Paneel absorbiert, hängt von der Perforationsdichte und vom Aufbau dahinter ab.",
+      "feature1": "Perforationen, die aus normaler Betrachtungsdistanz verschwinden",
+      "feature2": "Schwer entflammbarer MDF-Kern mit Schallkammern, Akustikvlies in Schwarz oder Weiß",
+      "feature3": "Nach Maß bis 3 050 × 1 220 mm, in 10 und 19 mm",
+      "feature4": "Verdeckte Clips, werkzeuglos, für Wände und Decken"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; die Nummer des Chain-of-Custody-Zertifikats erhalten Sie auf Anfrage."
         },
         "fireRating": {
-          "question": "Wie ist die Brandklasse?",
-          "answer": "Mit dem schwer entflammbaren (FR) MDF-Kern sind rWood-Paneele nach EN 13501-1 als B-s1,d0 klassifiziert — der Kern, den wir für Fluchtwege und öffentliche Gebäude vorsehen. Das Brandschutzzertifikat finden Sie im Download-Bereich auf dieser Seite."
+          "question": "Welche Brandklasse hat das Paneel?",
+          "answer": "Mit dem schwer entflammbaren MDF-Kern ist rWood Micro nach EN 13501-1 in B-s1,d0 eingestuft. Das Paneel ist für trockene Innenräume bestimmt."
         },
         "leadTime": {
-          "question": "Wie lang ist die Standard-Lieferzeit?",
-          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+          "question": "Wie lang ist die Standardlieferzeit?",
+          "answer": "Lagerfurniere liefern wir in 3–4 Wochen; nicht bevorratete Holzarten und Sonderoberflächen benötigen 6–8 Wochen. Maßpaneele fertigen wir nach Ihren Zeichnungen."
         },
         "installMethod": {
-          "question": "Wie werden rWood-Paneele installiert?",
-          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+          "question": "Wie werden rWood-Paneele montiert?",
+          "answer": "Mit einem verdeckten Clipsystem: Aluminiumschienen an der Wand- oder Deckenkonstruktion, optional Mineralwolle im Hohlraum, dann werden die Paneele werkzeuglos eingeclipst. Die Befestigungen bleiben unsichtbar, die Holzoberfläche läuft ohne Unterbrechung durch."
         },
         "substrateCleanup": {
-          "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
-          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+          "question": "Was geschieht mit den Paneelen am Ende der Nutzungsdauer?",
+          "answer": "Re-Sound nimmt Paneele am Ende der Nutzungsdauer in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro Paneel, Nahaufnahme mit unsichtbaren Perforationen",
-      "microPerforatedWoodPanelSurfaceDetail": "Oberflächendetail eines mikroperforierten Holzpaneels",
-      "rwoodMicroPanelInstallationSystem": "rWood - Micro Paneel Montagesystem",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Hinterleuchtetes mikroperforiertes Paneel mit Lichteffekt",
-      "sustainableProduction": "Nachhaltige Produktion"
+      "sustainableProduction": "FSC-zertifiziertes Holzfurnier",
+      "hero": "Mikroperforierte Holz-Akustikpaneele rWood Micro an einer Wand",
+      "heroVeneer": "rWood Micro Paneel in {name}",
+      "overview": "Nahaufnahme eines mikroperforierten rWood Micro Paneels",
+      "installation": "Aluminiumschienen und verdeckte Clips des rWood Micro Montagesystems",
+      "madeToMeasure": "Maßgefertigte rWood Micro Paneele rund um ein Fenster"
     },
     "options": {
-      "veneerDesc": "Natürliches Holzfurnier der Güteklasse A",
-      "hplDesc": "Hochdrucklaminat",
-      "nanoDesc": "Praktisch unsichtbare Perforationen",
+      "nanoDesc": "Nahezu unsichtbare Perforationen",
       "microsDesc": "Dezente Mikroperforationen",
-      "micromDesc": "Ausgewogenes Perforationsmuster",
-      "microlDesc": "Muster für maximale Absorption",
-      "nanoDetail": "Die kleinste verfügbare Perforation – mit bloßem Auge völlig unsichtbar und sorgt für eine makellose Holzoberfläche.",
-      "microsDetail": "Kaum sichtbare Mikrolöcher, die ein sauberes, ununterbrochenes Oberflächenbild bewahren.",
-      "micromDetail": "Ein optimales Gleichgewicht zwischen optischer Zurückhaltung und akustischer Effizienz für die meisten Anwendungen.",
-      "microlDetail": "Die größte offene Fläche für maximale Schallabsorption in akustisch anspruchsvollen Räumen.",
-      "openAreaLabel": "Offene Fläche",
-      "absorptionLabel": "Absorption",
-      "thinnerLabel": "Dünner",
-      "veneerDrilled": "Holzfurnier der Güteklasse A mit präzisionsgebohrten Löchern"
+      "micromDesc": "Ausgewogenes Lochmuster",
+      "microlDesc": "Muster für maximale Absorption"
+    },
+    "kpi": {
+      "ariaLabel": "Kennzahlen",
+      "thickness": "Paneelstärke, nach Maß",
+      "alphaW": "αw, bewerteter Schallabsorptionsgrad",
+      "alphaWClass": "αw, Absorptionsklasse {cls}",
+      "fire": "Brandverhalten, schwer entflammbarer MDF-Kern",
+      "densities": "Perforationsdichten, Ø 0,5 bis 2 mm"
+    },
+    "buildUp": {
+      "alt": "Explosionsdarstellung der drei Schichten: mikroperforiertes Furnier, schwer entflammbarer MDF-Kern mit Schallkammern, Akustikvlies",
+      "layer1": "Mikroperforiertes Furnier",
+      "layer1Desc": "Qualität A, Löcher ab Ø 0,5 mm",
+      "layer2": "Schwer entflammbarer MDF-Kern",
+      "layer2Desc": "Mit Schallkammern",
+      "layer3": "Akustikvlies",
+      "layer3Desc": "Schwarz oder weiß",
+      "behind": "Hinter dem Paneel: Hohlraum, optional Mineralwolle."
+    },
+    "veneers": {
+      "title": "Acht Lagerfurniere, jedes Furnier auf Bestellung",
+      "description": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Holz ist ein Naturmaterial: Maserung und Farbe variieren von Paneel zu Paneel, Bildschirmmuster sind nur ein Anhaltspunkt.",
+      "alt": "Furnier {name}",
+      "origin": {
+        "europe": "Europa",
+        "scandinavia": "Skandinavien",
+        "northAmerica": "Nordamerika"
+      },
+      "grain": {
+        "straightInterlocked": "Gerade bis wechseldrehwüchsig",
+        "subtleFine": "Dezente feine Maserung",
+        "fineStraight": "Feine gerade Maserung",
+        "cathedral": "Kathedralmaserung",
+        "pronounced": "Ausgeprägte Maserung",
+        "straightWavy": "Gerade bis gewellt",
+        "deepCathedral": "Tiefe Kathedralmaserung",
+        "richFlowing": "Reiche, fließende Maserung"
+      },
+      "madeToOrderTitle": "Auf Bestellung",
+      "madeToOrderDesc": "Über die acht Lagerfurniere hinaus fertigen wir jede Holzart, Beizfarbe und Oberfläche.",
+      "finishTitle": "Oberfläche",
+      "finishDesc": "UV-gehärteter Lack von supermatt bis hochglänzend, natur oder pigmentiert.",
+      "naturalTitle": "Ein Naturmaterial",
+      "naturalDesc": "Echtholz variiert in Farbe und Maserung. Fordern Sie Muster an, bevor Sie ausschreiben."
+    },
+    "ordering": {
+      "title": "Lieferzeiten und Muster",
+      "stockVeneers": "Lagerfurniere",
+      "stockVeneersVal": "3–4 Wochen",
+      "nonStock": "Nicht am Lager und Sonderanfertigung",
+      "nonStockVal": "6–8 Wochen",
+      "madeToMeasure": "Nach Maß",
+      "madeToMeasureVal": "Nach Ihren Zeichnungen",
+      "supply": "Lieferung",
+      "samplesVal": "Kostenlose Furniermuster",
+      "sizesVal": "Bis {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgien"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "HANDWERKSKUNST",
-      "title": "rWood Panel: Furnier-Akustikpaneele in 10 Holzarten",
-      "tagline": "Die Eleganz von Echtem Holz. Gebrauchsfertig.",
-      "description": "Vorbehandelte MDF-Paneele, gebürstet, gebeizt und lackiert — keine zusätzliche Veredelung erforderlich. Die authentische Schönheit von Massivholz ohne Kompromisse.",
-      "usp1": "FSC® Zertifiziert",
-      "usp2": "Vorbehandelt & Gebrauchsfertig",
-      "usp3": "Kostenloses Rücknahmeprogramm",
+      "tag": "FURNIERTES HOLZPANEEL",
+      "title": "rWood Panel: furnierte Akustikpaneele in 12 Echtholzfurnieren",
+      "tagline": "Die Eleganz von echtem Holz, montagefertig.",
+      "description": "Glatte, werkseitig veredelte furnierte MDF-Paneele in zwölf Echtholzfurnieren, in der lebendigen Nature- oder der gleichmäßigen Gemini-Linie. Naturlack oder pigmentierter Lack, HPL-Laminat, Folie oder Farbe; jedes andere Furnier, jede Beize oder Oberfläche auf Bestellung.",
+      "usp1": "FSC®-zertifizierte Furniere",
+      "usp2": "Zwölf Furniere, jede Oberfläche auf Bestellung",
+      "usp3": "Kostenlose Rücknahme am Ende der Nutzungsdauer",
       "ctaSecondary": "Kollektion Entdecken",
-      "colorSelector": "Furnier Wählen"
-    },
-    "construction": {
-      "tag": "KONSTRUKTION",
-      "title": "Gebaut um zu Leisten",
-      "layer1": "Obere Furnierschicht",
-      "layer1Desc": "FSC-zertifiziertes Naturholzfurnier, werkseitig lackiert",
-      "layer2": "Hochdichter MDF-Kern",
-      "layer2Desc": "Stabiles, feuchtigkeitsbeständiges Trägermaterial",
-      "layer3": "Gegenzugfurnierschicht",
-      "layer3Desc": "Verhindert Verformung für perfekt ebene Paneele"
-    },
-    "veneers": {
-      "tag": "FURNIERKOLLEKTION",
-      "title": "10 Kuratierte Holzfurniere",
-      "description": "Von hellem europäischem Eichenholz bis zu reichem amerikanischem Walnuss — jede Holzart ausgewählt nach Maserungscharakter, Verfügbarkeit und FSC-Zertifizierung."
+      "colorSelector": "Furnier",
+      "selectPrompt": "Furnier wählen"
     },
     "finishes": {
-      "title": "Touch & Schutz",
-      "description": "Die richtige Veredelung bringt das Beste jeder Holzart hervor. Unser Mehrlagen-Veredelungsprozess liefert eine Oberfläche, die ebenso angenehm zu berühren wie langlebig ist — geschützt gegen Kratzer, Feuchtigkeit und täglichen Verschleiß.",
-      "tag": "OBERFLÄCHENBEHANDLUNGEN",
-      "mattLacquerName": "Super Matt Lack",
-      "mattLacquerDesc": "Anti-Fingerabdruck, seidiger Touch. 6-Schicht UV-Schutz.",
-      "naturalOilName": "Naturöl",
-      "naturalOilDesc": "Tiefes, authentisches Holzgefühl mit penetrierendem Schutz.",
-      "unfinishedName": "Unbehandelt",
-      "unfinishedDesc": "Bereit für individuelle Vor-Ort-Veredelung durch den Installateur.",
-      "adv1": "Kratzfest",
-      "adv2": "Spritzwasserbeständig",
-      "adv3": "Anti-Fingerabdruck",
-      "adv4": "Einfache Pflege"
-    },
-    "advantages": {
-      "tag": "VORTEILE",
-      "title": "Hauptvorteile",
-      "adv1Title": "Paneelformate",
-      "adv1": "Mehrere Standardmaße; Sondermaße auf Anfrage",
-      "adv2Title": "Grenzenlose Möglichkeiten",
-      "adv2": "Für Wandverkleidung, Möbel, Retail-Displays und mehr verwenden"
+      "title": "Oberflächen und Optionen",
+      "description": "Wählen Sie die Furnierlinie und die Oberflächenbehandlung, die zum Projekt passen. Die Kanten sind überfurniertes Massivholz für fugenlose Anschlüsse über große Flächen.",
+      "tag": "OBERFLÄCHEN",
+      "nature": "Nature",
+      "natureDesc": "Lebendige, charaktervolle Maserung",
+      "gemini": "Gemini",
+      "geminiDesc": "Gleichmäßiger, einheitlicher Ton",
+      "treatmentsTitle": "Oberflächenbehandlungen",
+      "treatments": {
+        "naturalLacquer": "Naturlack",
+        "pigmented": "Pigmentiert",
+        "hpl": "HPL-Laminat",
+        "foil": "Folie",
+        "paint": "Farbe"
+      },
+      "madeToOrder": "Jedes andere Furnier, jede Beize, jedes Pigment und jede Oberfläche auf Anfrage."
     },
     "applications": {
       "tag": "ANWENDUNGEN",
@@ -2620,66 +2671,51 @@
       "badge2": "Kreislaufrücknahme",
       "badge3": "Hergestellt in Polen",
       "badge4": "EPD Verfügbar",
-      "badge5": "Niedrige VOC",
-      "badge1Desc": "Gesamtes Holz aus verantwortungsvoll bewirtschafteten Wäldern",
+      "badge1Desc": "Alle Furniere FSC®-zertifiziert, aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Kostenlose Paneel-Rücknahme und Recycling am Lebensende",
-      "description": "Jedes rWood - Panel beginnt mit verantwortungsvoll gewonnenem Holz. Im Rahmen von Re-Sounds Kreislaufwirtschafts-Engagement maximieren wir die Nutzung jedes Stamms durch Furnierverarbeitung — bis zu 40× mehr Oberfläche als Massivholz aus demselben Baum.",
+      "description": "Jedes rWood Panel beginnt mit FSC®-zertifiziertem Furnier aus verantwortungsvoll bewirtschafteten Wäldern. Am Ende der Nutzungsdauer nimmt Re-Sound die Paneele kostenlos zurück.",
       "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
-      "badge4Desc": "Vollständige Umweltproduktdeklaration",
-      "badge5Desc": "E1-klassifiziert, erfüllt strengste Emissionsnormen",
-      "badge6": "Grüne Energie",
-      "badge6Desc": "Produktion mit erneuerbaren Energiequellen betrieben"
+      "badge4Desc": "Vollständige Umweltproduktdeklaration"
     },
     "specs": {
-      "tag": "TECHNISCH",
-      "title": "Technische Daten",
+      "tag": "TECHNISCHE DATEN",
+      "title": "Paneel, Oberflächen und Brand",
       "compositionTitle": "Zusammensetzung",
       "fireTitle": "Brandschutz",
       "certsTitle": "Zertifizierungen",
       "dimensionsTitle": "Abmessungen",
-      "finishTitle": "Oberfläche",
+      "finishTitle": "Furniere und Oberflächen",
       "processingTitle": "Verarbeitung",
       "dimPanelWidth": "Panelbreite",
       "dimPanelLength": "Panellänge",
-      "dimThicknessStd": "Stärke (Standard)",
-      "dimThicknessSlim": "Stärke (Slim)",
-      "dimWeight19": "Gewicht (19 mm)",
       "compTopLayer": "Oberschicht",
-      "compTopLayerVal": "A-Grad Furnier, gebeizt & lackiert",
+      "compTopLayerVal": "Echtholzfurnier in A-Qualität, werkseitig veredelt",
       "compCore": "Kern",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, Standard / MR / FR",
       "compBackLayer": "Rückschicht",
       "compBackLayerVal": "Gegenzugfurnier",
-      "compBonding": "Verklebung",
-      "compBondingVal": "HPLT-Presstechnologie",
-      "finishLacquerType": "Lacktyp",
-      "finishLacquerVal": "Acrylat-Urethan UV-gehärtet",
-      "finishLayers": "Anzahl Schichten",
-      "finishGloss": "Glanzstufe",
-      "finishGlossVal": "Supermatt (3-5 GU)",
-      "finishAntiFingerprint": "Anti-Fingerabdruck",
-      "finishScratch": "Kratzfestigkeit",
-      "fireStdMDF": "Standard-MDF",
-      "fireFRMDF": "Brandhemmendes MDF",
       "certWoodSourcing": "Holzbeschaffung",
       "certEnvironmental": "Umwelt",
-      "certFelt": "Filz (falls akustisch)",
       "procSawing": "Sägen",
       "procSawingVal": "Standard-Holzbearbeitungswerkzeuge",
-      "procEdgeBanding": "Kantenumleimer",
-      "procEdgeBandingVal": "Passender Furnierkantenumleimer verfügbar",
       "procCNC": "CNC-Bearbeitung",
-      "procEnvironment": "Umgebung",
-      "procEnvironmentVal": "Innenbereich (Trockenbereiche)",
       "procMoisture": "Feuchtigkeitsresistent",
-      "procMoistureVal": "MR-Kern verfügbar"
+      "procMoistureVal": "MR-Kern verfügbar",
+      "finishRanges": "Furnierlinien",
+      "finishRangesVal": "Nature: lebendige, charaktervolle Maserung · Gemini: gleichmäßiger, einheitlicher Ton",
+      "finishTreatments": "Oberflächenbehandlungen",
+      "finishTreatmentsVal": "Naturlack · pigmentiert · HPL-Laminat · Folie · Farbe",
+      "finishCoreColours": "Kernfarben",
+      "finishCoreColoursVal": "Braun, grün oder schwarz",
+      "finishEdgesVal": "Überfurniertes Massivholz für fugenlose Anschlüsse",
+      "finishFeltVal": "Schwarzes oder weißes Vlies",
+      "finishMadeToOrder": "Auf Bestellung",
+      "finishMadeToOrderVal": "Jedes andere Furnier, jede Beize, jedes Pigment und jede Oberfläche",
+      "certWoodSourcingVal": "Alle Furniere FSC®-zertifiziert, aus verantwortungsvoll bewirtschafteten Wäldern"
     },
     "related": {
       "tag": "PASSENDE PRODUKTE",
       "title": "Passende Produkte & Zubehör",
-      "groove": "rWood - Groove",
-      "edgebanding": "Passende Kantenumleimer",
-      "samples": "Kostenlose Muster",
       "description": "Gestalterische Kontinuität mit koordinierten Re-Sound Produkten",
       "explore": "Entdecken →",
       "orderSamples": "Muster Bestellen →",
@@ -2690,51 +2726,50 @@
       "title": "Projekte & Interieurs"
     },
     "overview": {
-      "tag": "HANDWERKSKUNST",
-      "title": "Natur, Verfeinert",
-      "description": "rWood - Panel bringt die Wärme und den Charakter von Massivholz in einem vorbehandelten, gebrauchsfertigen Format. Jedes Panel wird aus Premium A-Grad Furnier hergestellt, mit fortschrittlicher Presstechnologie auf einen hochdichten MDF-Kern aufgebracht — natürliche Holzschönheit mit hervorragender Dimensionsstabilität.",
-      "feature1": "Premium A-Grad Furniere — Eiche, Walnuss, Esche, Kirsche und Birke",
-      "feature2": "6-Schicht UV-Klarlack für Kratz- und Fleckenbeständigkeit",
-      "feature3": "Hochdichter MDF-Kern (700 kg/m³) für strukturelle Integrität",
-      "feature4": "Ausgewogene Konstruktion — Furnier auf beiden Seiten für Stabilität",
-      "feature5": "Keine zusätzliche Veredelung erforderlich — sofort einsatzbereit"
+      "tag": "ÜBERBLICK",
+      "title": "Natur, veredelt",
+      "description": "rWood Panel bringt die Wärme und den Charakter von echtem Holz in ein vorveredeltes, montagefertiges Format: ein Furnier in A-Qualität auf einem MDF-Kern, im Werk veredelt. Dieselben zwölf Furniere ziehen sich durch die ganze rWood-Reihe – glatte Paneele, Groove, Micro und Perf passen an einer Wand zusammen.",
+      "feature1": "Zwölf Lagerfurniere: Eiche, Nussbaum, Esche, Buche und Birke",
+      "feature2": "Zwei Furnierlinien: Nature (lebendige Maserung) und Gemini (gleichmäßiger Ton)",
+      "feature3": "MDF-Kern in Standard-, feuchtebeständiger oder schwer entflammbarer Qualität",
+      "feature4": "Naturlack oder pigmentierter Lack, HPL-Laminat, Folie oder Farbe",
+      "feature5": "Werkseitig veredelt, montagefertig"
     },
     "anatomy": {
-      "tag": "ANATOMIE",
-      "layer1": "Obere Furnierschicht",
-      "layer1Desc": "A-Grad Naturholzfurnier, gebürstet, gebeizt und mit 6 Schichten UV-gehärteter Acrylat-Urethan-Lack geschützt. Super matte Oberfläche mit seidigem Touch.",
-      "layer2": "Hochdichter MDF-Kern",
-      "layer2Desc": "700 kg/m³ FSC® MDF. In Standard-, feuchtigkeitsresistenten (MR) und brandhemmenden (FR) Ausführungen erhältlich.",
-      "layer3": "Gegenzugfurnierschicht",
-      "layer3Desc": "Passendes Furnierbalancing gewährleistet Dimensionsstabilität und verhindert Verformung. Fertig oder unfertig verfügbar.",
-      "keyAdvTitle": "Hauptvorteile",
-      "description": "Jede Schicht hat einen Zweck — von der authentischen Holzoberfläche bis zum technischen Kern."
+      "tag": "AUFBAU",
+      "layer1": "Furnierseite",
+      "layer1Desc": "Echtholzfurnier in A-Qualität, eines der zwölf Lagerfurniere oder jedes Furnier auf Bestellung, im Werk veredelt.",
+      "layer2": "MDF-Kern",
+      "layer2Desc": "Standard-, feuchtebeständiges (MR) oder schwer entflammbares (FR) MDF; Kernfarbe braun, grün oder schwarz.",
+      "layer3": "Gegenfurnier",
+      "layer3Desc": "Ein Furnier auf der Rückseite hält das Paneel plan und stabil.",
+      "description": "Jede Schicht erfüllt eine Aufgabe – von der Echtholzoberfläche bis zum technischen Kern.",
+      "title": "Furnier, Kern, Gegenfurnier"
     },
     "collection": {
-      "tag": "DIE KOLLEKTION",
-      "title": "10 Kuratierte Holzfurniere",
-      "description": "Von serenerer skandinavischer Birke bis zu dramatischem amerikanischem Walnuss — jedes Furnier wird sorgfältig ausgewählt, gebürstet und veredelt, um den Charakter des Holzes zu unterstreichen.",
+      "tag": "FURNIERE",
+      "title": "Zwölf Echtholzfurniere",
+      "description": "Sechs Eichen von hell bis fast schwarz und sechs Premium-Holzarten: Nussbaum, Esche, Buche und Birke. In der ganzen rWood-Reihe erhältlich, und jedes andere Furnier, jede Beizfarbe oder Oberfläche auf Bestellung.",
       "filterAll": "Alle Furniere",
-      "customNote": "Individuelle Furnierarten und Beizfarben für Projektbestellungen ab 50 Paneelen verfügbar.",
+      "customNote": "Jedes andere Furnier, jede Beize, jedes Pigment und jede Oberfläche auf Anfrage. Die Musterbilder sind Richtwerte: Naturfurniere variieren in Maserung, Farbe und Zeichnung, und Töne verschieben sich unter anderem Licht und anderen Lacken. Prüfen Sie immer anhand eines physischen Musters.",
       "categories": {
-        "lightNaturals": "Helle Töne",
-        "warmNaturals": "Warme Töne",
-        "deepTones": "Dunkle Töne"
+        "oak": "Eichenfurniere",
+        "premium": "Premium-Holzarten"
       },
-      "origins": {
-        "europe": "Europa",
-        "scandinavia": "Skandinavien",
-        "northAmerica": "Nordamerika"
-      },
-      "grains": {
-        "straightToInterlocked": "Gerade bis verflochten",
-        "subtleFineGrain": "Feine, dezente Maserung",
-        "fineStraightGrain": "Feine, gerade Maserung",
-        "cathedralGrain": "Kathedrale Maserung",
-        "pronouncedGrain": "Ausgeprägte Maserung",
-        "straightToWavy": "Gerade bis wellig",
-        "deepCathedralGrain": "Tiefe kathedrale Maserung",
-        "richFlowingGrain": "Reiche, fließende Maserung"
+      "filterLabel": "Furniere filtern",
+      "items": {
+        "strawOak": "Helle, warm-neutrale Eiche",
+        "silkOak": "Sanfter Greige-Ton",
+        "honeyOak": "Warme, goldene Eiche",
+        "umberOak": "Geräuchertes Graubraun",
+        "smokedOak": "Tiefes, warmes Braun",
+        "cocoaOak": "Fast schwarzer Espresso",
+        "walnut": "Sattes, gemasertes Braun",
+        "tobaccoWalnut": "Warmes Mittelbraun",
+        "whiteAsh": "Helle, geradlinige Maserung",
+        "whiteBeech": "Helles, gleichmäßiges Neutral",
+        "birchSliced": "Feine, helle Maserung",
+        "birchRotary": "Breite, weiche Zeichnung"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Passende Produkte & Zubehör",
       "description": "Gestalterische Kontinuität mit koordinierten Re-Sound Produkten erreichen.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Lamellierte Akustikpaneele in passenden Holzfurnieren für Wände und Decken.",
-      "item2Title": "Passende Kante",
-      "item2Desc": "Vorbehandelte Furnierkante in jeder Farbe für Möbel- und Schreinerarbeiten.",
+      "item1Desc": "Genutete Dielen in denselben Furnieren für Wände und Decken.",
+      "item2Title": "Überfurnierte Kanten",
+      "item2Desc": "Massivholzkanten, überfurniert für fugenlose Anschlüsse über große Flächen.",
       "item3Title": "Kostenlose Muster",
       "item3Desc": "Fordern Sie Muster jeder Furnier- und Oberflächenkombination an."
     },
     "cta": {
       "title": "Bereit, Ihr Projekt auf ein neues Niveau zu heben?",
       "description": "Erhalten Sie ein persönliches Angebot, fordern Sie physische Muster an oder sprechen Sie mit unserem Spezifikationsteam über Ihr nächstes Projekt.",
-      "circularNote": "Kreislaufrücknahme"
+      "circularNote": "Kostenlose Furniermuster · Kostenlose Rücknahme am Ende der Nutzungsdauer"
     },
     "downloads": {
       "productDataSheet": "Produktdatenblatt"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Das Furnier stammt aus FSC-zertifizierten europäischen Wäldern (überwiegend Eiche und Nuss). Die Chain-of-Custody-Zertifikatsnummer wird auf Anfrage pro Lieferung mitgeliefert."
+          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Das Chain-of-Custody-Zertifikat ist auf Anfrage erhältlich."
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Wie lang ist die Standard-Lieferzeit?",
-          "answer": "Lagerfurniere werden innerhalb von 3–4 Wochen versendet; Sonderhölzer und individuelle Oberflächen benötigen 6–8 Wochen. Produktionskapazität wird bei Auftragsbestätigung reserviert."
+          "answer": "Die Lieferzeit hängt von Furnier und Oberfläche ab und wird bei Bestellung bestätigt. Kostenlose Furniermuster sind vor der Ausschreibung erhältlich; Preise und Mindestbestellmenge auf Anfrage."
         },
         "installMethod": {
           "question": "Wie werden rWood-Paneele installiert?",
-          "answer": "Zwei Methoden sind möglich: ein verdecktes Clipsystem für schnelle Montage und einfache Demontage, oder Direktverklebung für dauerhafte Installationen. Beide sind im Montagehandbuch beschrieben."
+          "answer": "rWood Panel ist ein glattes furniertes MDF-Paneel und wird auch so verarbeitet: mit Standard-Holzbearbeitungswerkzeugen gesägt und CNC-gefräst, dann am Untergrund befestigt oder in Möbel eingebaut. Die Montageanleitung finden Sie im Download-Block auf dieser Seite."
         },
         "substrateCleanup": {
           "question": "Was passiert mit den Paneelen am Ende ihrer Lebensdauer?",
-          "answer": "Re-Sound nimmt Paneele in BE/NL/FR/DE/LU kostenlos zurück. Das Furnier wird vom recycelten Filz-Substrat getrennt; beide Ströme fließen zurück in unsere Lieferkette statt auf die Deponie."
+          "answer": "Re-Sound nimmt die Paneele am Ende ihrer Nutzungsdauer in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel furnierte MDF-Platte, Nahaufnahme der Maserung",
       "closeUpOfLacqueredVeneerSurface": "Nahaufnahme der lackierten Furnieroberfläche",
-      "sustainablyManagedForest": "Nachhaltig bewirtschafteter Wald"
+      "sustainablyManagedForest": "Nachhaltig bewirtschafteter Wald",
+      "hero": "rWood Panel furniertes Holzpaneel",
+      "heroIn": "rWood Panel in {veneer}",
+      "veneerSwatch": "Furniermuster {name}"
+    },
+    "kpi": {
+      "veneers": "Echtholzfurniere",
+      "ranges": "Furnierlinien: Nature und Gemini",
+      "fsc": "zertifizierte Furniere",
+      "anyValue": "Jedes",
+      "anyLabel": "Furnier, jede Beize und Oberfläche auf Bestellung",
+      "ariaLabel": "Kennzahlen"
+    },
+    "ordering": {
+      "title": "Lieferzeit und Muster",
+      "orderCaption": "Bestellung",
+      "supplyCaption": "Lieferung",
+      "samplesVal": "Kostenlose Furniermuster",
+      "samplesQuotesDesc": "Bestellen Sie kostenlose Furniermuster oder senden Sie uns Ihre Pläne für ein Angebot."
     }
   },
   "rpetFlexGroovePage": {

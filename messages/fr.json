@@ -19,13 +19,13 @@
     "divideTitle": "Divide Cloisons Acoustiques Autoportantes | Re-Sound",
     "divideDescription": "Cloisons acoustiques autoportantes à connexion magnétique modulaire : absorption double face, sans installation, textile recyclé. Fabriquées en Belgique.",
     "rwoodGrooveTitle": "rWood Groove — panneaux bois rainurés, chêne & noyer | Re-Sound",
-    "rwoodGrooveDescription": "Panneaux acoustiques en bois rainuré, placage chêne et noyer FSC sur âme en feutre recyclé. Absorption classe A, 4 variantes de lames, 5 finitions.",
+    "rwoodGrooveDescription": "Lames acoustiques en bois rainuré : placage de chêne ou de noyer certifié FSC® sur âme MDF avec feutre de 3 mm en PET recyclé. αw 0,90, classe A, quatre motifs de lamelles, cinq placages, 10 et 19 mm.",
     "rwoodPerfTitle": "rWood Perf — panneaux acoustiques bois perforés | Re-Sound",
     "rwoodPerfDescription": "Panneaux acoustiques en bois perforé avec placage certifié FSC : quatre motifs de perforation pour une absorption large bande, 8 finitions, âme ignifugée.",
     "rwoodMicroTitle": "rWood Micro — panneaux acoustiques bois microperforés | Re-Sound",
-    "rwoodMicroDescription": "Panneaux acoustiques en bois microperforé (0,5 mm) avec placage certifié FSC : motif quasi invisible, classement feu {fireClass}, option rétroéclairée.",
-    "rwoodVeneerTitle": "rWood Panel — panneaux placage bois, 10 essences | Re-Sound",
-    "rwoodVeneerDescription": "Panneaux acoustiques lisses en placage bois, 10 essences : qualité mobilier, certifiés FSC, EPD disponible. Brossés, teintés et vernis, prêts à poser.",
+    "rwoodMicroDescription": "Panneaux acoustiques en bois microperforé (à partir de 0,5 mm) avec placage certifié FSC : motif quasi invisible, classement feu {fireClass}, sur mesure jusqu’à 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — panneaux acoustiques plaqués, 12 placages bois | Re-Sound",
+    "rwoodVeneerDescription": "Panneaux acoustiques plaqués lisses en 12 placages de bois véritable, gamme Nature ou Gemini : certifiés FSC®, vernis naturel ou pigmenté, HPL, film ou peinture. Finis en usine, tout placage sur commande.",
     "rpetGrooveTitle": "rPET Groove — panneaux PET rainurés, 12 coloris | Re-Sound",
     "rpetGrooveDescription": "Panneaux acoustiques en PET rainuré (bouteilles recyclées) : 12 coloris, 3 épaisseurs (12/24/36 mm), NRC jusqu’à 0,90, feu B-s1,d0. Fabriqués en Pologne.",
     "rpetPanelTitle": "rPET Panel — panneau acoustique en PET, 16 coloris | Re-Sound",
@@ -1936,121 +1936,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "PANNEAUX ACOUSTIQUES EN BOIS",
+      "tag": "PANNEAU ACOUSTIQUE EN BOIS RAINURÉ",
       "title": "rWood Groove : panneaux acoustiques en bois rainuré, chêne et noyer",
-      "tagline": "Beauté Naturelle, Acoustique Parfaite",
-      "description": "Apportez chaleur naturelle et style sophistiqué à tout espace avec les panneaux acoustiques rWood - Groove. Des placages premium de chêne et noyer combinés à un dos en feutre absorbant créent l'harmonie entre esthétique et acoustique.",
-      "usp1": "Bois Certifié FSC®",
-      "usp2": "Absorption Classe A",
-      "usp3": "Programme de reprise gratuit"
+      "tagline": "Beauté naturelle, acoustique parfaite.",
+      "description": "Placage de chêne ou de noyer de qualité A sur une âme MDF, rainuré avec précision en lames verticales sur un feutre de 3 mm en PET recyclé. Les rainures ouvertes conduisent le son vers le feutre ; les lames s’assemblent par une languette et rainure invisible. Lames de 300 mm de large, 2 400 ou 2 780 mm de long, en 10 et 19 mm, pour murs et plafonds.",
+      "usp1": "Placage certifié FSC®",
+      "usp2": "Classe d’absorption A",
+      "usp3": "Reprise gratuite en fin de vie"
     },
     "overview": {
-      "tag": "ARTISANAT",
-      "title": "Choisissez Votre Style",
-      "subtitle": "Finitions Premium",
-      "description": "Les panneaux rWood - Groove transforment chaque pièce en un environnement acoustique sophistiqué. La combinaison de rainures fraisées avec précision et de placages bois premium crée une surface à la fois visuellement impressionnante et acoustiquement efficace.",
-      "feature1": "Placages A-grade chêne et noyer premium",
-      "feature2": "Dos en feutre acoustique intégré",
-      "feature3": "Connexion panneau-à-panneau continue",
-      "feature4": "Adapté aux murs et plafonds",
-      "description2": "Les panneaux rWood - Groove transforment chaque pièce en un espace de beauté naturelle et de confort acoustique. Chaque panneau présente un placage premium A-grade de chêne ou noyer, rainuré avec précision pour créer l'esthétique linéaire caractéristique."
-    },
-    "oakCollection": {
-      "title": "Collection Chêne",
-      "description": "Placage chêne naturel en plusieurs options de teinte, du blond naturel aux tons fumés profonds."
+      "tag": "APERÇU",
+      "title": "Chêne ou noyer rainuré sur feutre en PET recyclé",
+      "feature1": "Placage de chêne ou de noyer de qualité A",
+      "feature2": "Dos en feutre de 3 mm en PET recyclé, noir ou gris",
+      "feature3": "Assemblage invisible par languette et rainure",
+      "feature4": "Pour murs et plafonds, intérieurs secs",
+      "description2": "rWood Groove associe un placage de chêne ou de noyer de qualité A à une âme MDF rainurée avec précision en lamelles verticales. Le feutre de 3 mm en PET recyclé derrière les lamelles absorbe le son qui entre par les rainures ouvertes, ce qui réduit la réverbération et améliore l’intelligibilité de la parole. Quatre motifs de lamelles, cinq placages en stock, et tout placage et toute finition sur commande."
     },
     "feltBacking": {
-      "title": "Options de Feutre de Fond",
-      "description": "Feutre acoustique gris naturel, noir ou coloré visible à travers les rainures."
+      "title": "Couleur du feutre",
+      "description": "Feutre de 3 mm en PET recyclé derrière les lamelles, visible à travers les rainures.",
+      "black": "Noir",
+      "grey": "Gris"
     },
     "acoustics": {
-      "tag": "PERFORMANCES",
-      "title": "Absorption Sonore Supérieure",
-      "benefit1Title": "Réverbération Réduite",
-      "benefit1": "Contrôler l'écho et améliorer l'intelligibilité",
-      "benefit2Title": "Confort Accru",
-      "benefit2": "Créer des environnements plus calmes et paisibles",
-      "benefit3Title": "Performances Testées",
-      "benefit3": "Données acoustiques vérifiées indépendamment",
-      "description": "Le design rainuré unique combiné au feutre acoustique haute qualité crée une absorption sonore exceptionnelle.",
-      "ratingLabel": "Absorption",
-      "description2": "Le design rainuré unique combiné au feutre acoustique haute qualité crée une absorption sonore exceptionnelle. Réduisez l'écho, éliminez le bruit, créez des espaces confortables.",
-      "diagramTitle": "Coupe Transversale",
-      "soundAbsorbed": "Son Absorbé",
-      "testStandard": "Norme de Test"
+      "tag": "ACOUSTIQUE",
+      "title": "Absorption acoustique",
+      "description2": "Les rainures ouvertes conduisent le son vers le feutre en PET recyclé derrière les lamelles, ce qui réduit la réverbération et améliore l’intelligibilité de la parole.",
+      "tableTitle": "Absorption acoustique",
+      "behindTitle": "Derrière la lame",
+      "behindDesc": "Montée sur tasseaux, la cavité peut recevoir un absorbant supplémentaire : feutre acoustique, panneau rPET ou laine minérale.",
+      "note": "αw et classe d’absorption selon EN ISO 11654. Les valeurs par bande d’octave suivront avec la nouvelle série d’essais."
     },
     "installation": {
-      "tag": "INSTALLATION FACILE",
-      "title": "Installation sans joint visible",
-      "step1Title": "Préparer la Surface",
-      "step1Desc": "Poser tasseaux ou appliquer colle sur surface propre et sèche",
-      "step2Title": "Positionner le Premier Panneau",
-      "step2Desc": "Commencer par le coin, assurer l'alignement de niveau",
-      "step3Title": "Connecter les Panneaux",
-      "step3Desc": "Glissez la languette dans la rainure pour une connexion continue",
-      "step4Title": "Compléter & Finir",
-      "step4Desc": "Ajoutez des profilés de finition pour un résultat professionnel",
-      "description": "Les panneaux rWood - Groove disposent d'une connexion innovante rainure-languette pour une installation rapide et facile.",
-      "description2": "Les panneaux rWood - Groove disposent d'un système de connexion rainure-languette innovant qui assure des joints invisibles et une surface cohérente. Que vous soyez installateur professionnel ou bricoleur expérimenté, notre système rend l'installation simple."
+      "tag": "INSTALLATION",
+      "title": "Languette et rainure, sur tasseaux ou collé",
+      "step1Title": "Support",
+      "step1Desc": "Tasseaux ou colle sur une surface propre, sèche et plane.",
+      "step2Title": "Première lame",
+      "step2Desc": "Partez d’un angle et vérifiez le niveau.",
+      "step3Title": "Assemblage",
+      "step3Desc": "Glissez la languette dans la rainure pour un joint invisible.",
+      "step4Title": "Finition",
+      "step4Desc": "Fermez les bords avec des profilés de finition.",
+      "description2": "Les lames sont fixées sur tasseaux ou collées sur le support et s’assemblent par une languette et rainure invisible : les joints disparaissent dans le motif des rainures."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
-      "title": "Fabriqué avec soin",
+      "title": "Un approvisionnement responsable",
       "badge1": "Certifié FSC®",
-      "badge1Desc": "Bois issu de forêts gérées de façon responsable",
-      "badge2": "Feutre Recyclé",
-      "badge2Desc": "Dos acoustique en matériaux recyclés",
+      "badge1Desc": "Approvisionnement en bois certifié FSC®, certificat C191539",
+      "badge2": "Feutre en PET recyclé",
+      "badge2Desc": "Dos en feutre de 3 mm en PET recyclé",
       "badge3": "Fabriqué en Pologne",
       "badge3Desc": "Fabriqué dans notre propre usine de Częstochowa (Pologne)",
       "badge4": "Reprise gratuite",
       "badge4Desc": "Les panneaux nous reviennent gratuitement en fin de vie",
-      "description": "Chaque panneau rWood - Groove est conçu avec la durabilité en son cœur. Notre bois FSC® certifié provient de forêts gérées de façon responsable.",
-      "description2": "Chaque panneau rWood - Groove est conçu avec la durabilité en son cœur. Notre certification FSC® garantit que le bois provient de forêts gérées de façon responsable offrant des bénéfices environnementaux, sociaux et économiques."
+      "description2": "Bois certifié FSC®, dos en PET recyclé et reprise gratuite en fin de vie.",
+      "badge2DescCert": "Dos en feutre de 3 mm en PET recyclé, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Déclaration environnementale de produit selon ISO 14025 et EN 15804"
     },
     "specs": {
-      "tag": "TECHNIQUE",
-      "title": "Spécifications",
-      "acousticsTitle": "Performances Acoustiques",
-      "fireTitle": "Sécurité Incendie",
-      "certsTitle": "Certifications",
-      "applicationsTitle": "Applications",
-      "dimensionsTitle": "Dimensions",
-      "materialsTitle": "Matériaux",
+      "tag": "DONNÉES TECHNIQUES",
+      "title": "Lame, feu et émissions",
+      "acousticsTitle": "Absorption acoustique",
+      "fireTitle": "Feu (EN 13501-1) et émissions",
       "dimPanelWidth": "Largeur",
       "dimPanelLength": "Longueur",
-      "dimThickness": "Épaisseur",
-      "dimGrooveDepth": "Profondeur de rainure",
-      "dimGrooveWidth": "Largeur de rainure",
-      "matVeneer": "Placage",
-      "matVeneerVal": "Chêne / Noyer A-grade",
-      "matCore": "Cœur",
-      "matCoreVal": "MDF (standard / résistant à l'humidité / retardant)",
-      "matBacking": "Dos",
-      "matBackingVal": "PET recyclé (3mm)",
+      "matCoreVal": "MDF standard, MR ou FR",
       "matFinish": "Finition",
-      "finishVal": "Huile / Laque",
-      "stdPanels": "Panneaux standard",
-      "fireMdfVal": "MDF retardant de flamme",
-      "woodSourcing": "Approvisionnement bois",
-      "feltCert": "Certification feutre",
-      "envLabel": "Environnement",
-      "vocLabel": "Émissions COV",
-      "vocVal": "E1 / Faibles émissions",
-      "appInstall": "Installation",
-      "appWalls": "Murs & Plafonds",
-      "appEnv": "Environnement",
-      "appEnvVal": "Intérieur (zones sèches)",
-      "appMoist": "Résistant à l'humidité",
-      "appMoistVal": "Disponible pour zones humides",
-      "appConn": "Connexion",
-      "appConnVal": "Rainure & languette"
+      "finishVal": "Huile pénétrante ou vernis",
+      "plankTitle": "Lame",
+      "dimGroove": "Rainure",
+      "dimGrooveVal": "15 mm de large, 7 · 15 mm de profondeur",
+      "feltVal": "PET recyclé, 3 mm, noir ou gris",
+      "connVal": "Languette et rainure invisible",
+      "weightPlank": "Poids par lame",
+      "weightPlankVal": "env. 6,4–8,3 kg",
+      "tolerances": "Tolérances",
+      "tolerancesVal": "Épaisseur ± 0,2 mm, poids ± 10 %",
+      "octaveBands": "Valeurs par bande d’octave",
+      "octaveBandsVal": "Suivront avec la nouvelle série d’essais",
+      "fireStdCore": "Âme MDF standard",
+      "fireFrCore": "Âme MDF FR",
+      "fireFelt": "Dos en feutre",
+      "fscVal": "Certifié FSC®, C191539",
+      "epdVal": "EPD selon ISO 14025 · EN 15804",
+      "finishTitle": "Finition",
+      "oakOilColours": "Teintes d’huile pour le chêne",
+      "oakOilColoursVal": "Naturel, Blanc, Incolore, Brun, Brun foncé, Noir",
+      "walnutFinish": "Noyer",
+      "walnutFinishVal": "Naturel, huilé",
+      "feltColours": "Couleurs du feutre",
+      "feltColoursVal": "Noir ou gris",
+      "optionsTitle": "Options",
+      "surfaceVal": "Huilé ou peint, brut sur demande",
+      "madeToOrder": "Sur commande",
+      "madeToOrderVal": "Tout placage et toute finition",
+      "accessories": "Accessoires",
+      "accessoriesVal": "Profilés de finition, profilés d’angle, tasseaux, kit de retouche"
     },
     "accessories": {
-      "tag": "POUR COMPLÉTER LE LOOK",
+      "tag": "ACCESSOIRES",
       "title": "Accessoires",
-      "endMouldings": "Profilés de Finition",
-      "cornerProfiles": "Profilés d'Angle",
-      "description": "Finitions professionnelles pour un résultat parfait",
+      "description": "Profilés de finition, profilés d’angle, tasseaux et kit de retouche.",
       "item1Title": "Profilés de Finition",
       "item1Desc": "Bords nets où les panneaux rencontrent d'autres surfaces",
       "item2Title": "Profilés d'Angle",
@@ -2065,57 +2055,50 @@
       "title": "Projets & Installations"
     },
     "patterns": {
-      "tag": "OPTIONS DE DESIGN",
-      "title": "Finitions Premium",
-      "description": "Quatre motifs de rainures distincts pour toute vision architecturale. Du classique batten au linéaire moderne.",
-      "description2": "Quatre motifs de rainures distincts pour toute vision architecturale. Des proportions classiques équilibrées aux larges bandes audacieuses — trouvez l'expression parfaite pour votre espace."
+      "tag": "MOTIFS",
+      "title": "Quatre motifs de lamelles",
+      "description2": "Quatre motifs de lamelles sur la même lame de 300 mm, de l’Original classique à six lamelles au large 3-Lamella. Les dessins sont à l’échelle : largeurs de lamelles et rainures de 15 mm comme sur la lame.",
+      "drawingAlt": "Motif {name}, {dims}, à l’échelle sur une lame de 300 mm",
+      "lamellaCount": "{count} lamelles",
+      "note": "Largeur de lame 300 mm, largeur de rainure 15 mm. Dimension standard 19 × 300 × 2 400 ou 2 780 mm. Poids par lame env. 6,4–8,3 kg. Tolérances : épaisseur ± 0,2 mm, poids ± 10 %."
     },
     "materials": {
       "tag": "MATÉRIAUX",
-      "oilFinishesTitle": "Finitions à l'Huile",
-      "oilFinishesDesc": "Finitions à l'huile naturelle, blanche, claire, brune, brun foncé et noire. Chacune pénètre profondément dans le bois.",
+      "oilFinishesTitle": "Chêne : huile pénétrante ou vernis",
+      "oilFinishesDesc": "Finition : huile pénétrante ou vernis. Teintes d’huile pour le chêne : Naturel, Blanc, Incolore, Brun, Brun foncé et Noir.",
       "walnutTitle": "Noyer",
-      "walnutDesc": "Tons chauds et riches avec des motifs de grain distinctifs. Le choix premium pour les intérieurs haut de gamme.",
-      "description": "Chaque panneau rWood - Groove est fabriqué avec un placage A-grade, assurant une consistance du grain et de la couleur. La surface huilée est prête à installer sans traitement supplémentaire.",
-      "colorSelector": "Sélectionner la Finition",
-      "layer1Name": "Placage Chêne / Noyer",
-      "layer1Desc": "Bois naturel A-grade premium",
-      "layer2Name": "Cœur MDF avec Rainures",
-      "layer2Desc": "Canaux d'entrée sonore",
-      "layer3Name": "Dos en Feutre Acoustique",
-      "layer3Desc": "PET recyclé, 3mm d'épaisseur",
-      "waveLabel": "Ondes sonores absorbées",
-      "certNote": "Testé et certifié selon ISO 11654",
-      "description2": "Chaque panneau rWood - Groove est fabriqué avec un placage A-grade, assurant des motifs de grain constants et une qualité supérieure. Choisissez parmi notre gamme de finitions huilées et peintes pour compléter parfaitement votre design d'intérieur."
+      "walnutDesc": "Naturel, huilé. Brun riche et figuré (Walnut) ou brun moyen chaleureux (Tobacco Walnut).",
+      "colorSelector": "Placage",
+      "selectPrompt": "Sélectionnez un placage"
     },
     "downloads": {
       "installationGuide": "Guide d'Installation",
       "colorChart": "Guide Couleurs & Finitions"
     },
     "cta2": {
-      "freeNote": "Échantillons gratuits • Certifié FSC®"
+      "freeNote": "Échantillons de placage gratuits · Placage certifié FSC®"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "D'où provient le placage certifié FSC ?",
-          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+          "answer": "Le placage est certifié FSC® : certificat de chaîne de contrôle C191539. Les douze placages rWood proviennent de forêts gérées de manière responsable ; le certificat est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
-          "answer": "Avec le cœur en MDF retardant de flamme (FR), les panneaux rWood sont classés B-s1,d0 selon la norme EN 13501-1 — le cœur que nous prescrivons pour les voies d'évacuation et les bâtiments publics. Le certificat de réaction au feu se trouve dans le bloc de téléchargements de cette page."
+          "answer": "Cela dépend de l’âme. Avec l’âme MDF ignifuge (FR), rWood Groove est classé B-s1,d0 selon EN 13501-1 ; sur une âme MDF standard, la classification est D-s2,d2. Le dos en feutre est B-s1,d0. Prescrivez l’âme FR pour les voies d’évacuation et les bâtiments publics."
         },
         "leadTime": {
           "question": "Quel est le délai de livraison standard ?",
-          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+          "answer": "Le délai dépend du stock et est confirmé à la commande. Des échantillons de placage gratuits sont disponibles avant de prescrire ; prix et quantité minimale sur demande."
         },
         "installMethod": {
           "question": "Comment les panneaux rWood sont-ils installés ?",
-          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+          "answer": "rWood Groove se fixe sur tasseaux ou se colle sur un support propre, sec et plan. Partez d’un angle, glissez la languette de chaque lame dans la rainure de la précédente pour un joint invisible, puis fermez les bords avec des profilés de finition."
         },
         "substrateCleanup": {
           "question": "Que deviennent les panneaux en fin de vie ?",
-          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+          "answer": "Re-Sound reprend gratuitement les lames en fin de vie en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
         }
       }
     },
@@ -2123,139 +2106,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "Panneau acoustique rWood - Groove dans un intérieur moderne",
       "woodFinishSamples": "Échantillons de finitions bois",
       "panelInstallationProcess": "Processus d'installation du panneau",
-      "sustainableForestry": "Sylviculture durable"
+      "sustainableForestry": "Sylviculture durable",
+      "hero": "Lames acoustiques en bois rainuré rWood Groove",
+      "heroIn": "Lames acoustiques en bois rainuré rWood Groove en {finish}",
+      "veneerSwatch": "Échantillon de placage {name}"
     },
     "options": {
       "originalDesc": "Design classique à 6 lamelles",
       "mixedDesc": "Largeurs mixtes dynamiques",
       "4lamellaDesc": "Larges lamelles affirmées",
       "3lamellaDesc": "Larges lamelles à fort impact visuel"
+    },
+    "kpi": {
+      "thickness": "mm d’épaisseur",
+      "alphaWClass": "αw, classe d’absorption {cls}",
+      "alphaW": "αw, absorption acoustique pondérée",
+      "fire": "réaction au feu, âme MDF FR",
+      "patterns": "motifs de lamelles sur lames de 300 mm",
+      "ariaLabel": "Chiffres clés"
+    },
+    "buildUp": {
+      "tag": "COMPOSITION",
+      "title": "Trois couches, une lame",
+      "layer1": "Face en placage",
+      "layer1Desc": "Chêne ou noyer de qualité A",
+      "layer2": "Lamelles en MDF",
+      "layer2Desc": "Âme standard, MR ou FR",
+      "layer3": "Feutre en PET recyclé",
+      "layer3Desc": "3 mm, noir ou gris",
+      "fixing": "Fixé sur tasseaux ou collé sur le support."
+    },
+    "veneers": {
+      "tag": "PLACAGES ET FINITIONS",
+      "title": "Chêne et noyer, tout placage sur commande",
+      "description": "Cinq placages en stock, huilés ou vernis. Sélectionnez un placage pour le voir sur la lame.",
+      "silkOak": "Ton greige doux",
+      "strawOak": "Chêne clair, neutre et chaleureux",
+      "umberOak": "Brun-gris fumé",
+      "walnut": "Brun riche et figuré",
+      "tobaccoWalnut": "Brun moyen chaleureux",
+      "guideNote": "Les douze placages rWood figurent dans le guide des couleurs et finitions rWood. Le bois véritable varie en couleur et en veinage : demandez des échantillons avant de prescrire."
+    },
+    "ordering": {
+      "title": "Délai et échantillons",
+      "orderCaption": "Commande",
+      "supplyCaption": "Fourniture",
+      "leadTimeVal": "Selon le stock, confirmé à la commande",
+      "samplesVal": "Échantillons de placage gratuits",
+      "samplesQuotesDesc": "Commandez des échantillons de placage gratuits ou envoyez-nous vos plans pour un devis."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PANNEAUX ACOUSTIQUES EN BOIS PERFORÉ",
+      "tag": "PANNEAU ACOUSTIQUE BOIS PERFORÉ",
       "title": "rWood Perf : panneaux acoustiques en bois perforé",
-      "tagline": "Perforations de Précision, Absorption Maximale",
-      "description": "Panneaux acoustiques percés haute performance alliant beauté du bois naturel et absorption sonore exceptionnelle. Un cœur MDF à retardant de flamme et des chants surépaissés offrent les niveaux les plus élevés de sécurité incendie et de contrôle acoustique.",
-      "usp1": "Perforations Rondes",
-      "usp2": "Classement feu {fireClass}",
-      "usp3": "αw {alphaW} par motif",
-      "description2": "Panneaux acoustiques percés haute performance alliant beauté du bois naturel et absorption sonore exceptionnelle. Un cœur en MDF à retardant de flamme et des chants surépaissés offrent les niveaux les plus élevés de sécurité incendie et de contrôle acoustique pour les espaces publics exigeants."
+      "tagline": "Perforations de précision, absorption maximale.",
+      "description": "Des perforations rondes percées à travers le panneau MDF ignifugé plaqué laissent passer le son vers le voile acoustique et l’absorbant situé derrière. Quatre motifs, du trou discret de 5 mm au motif double de 8 mm à 24 % de surface ouverte.",
+      "usp1": "Perforations rondes",
+      "usp2": "Réaction au feu {fireClass}",
+      "usp3": "αw {alphaW} selon le motif",
+      "description2": "Sur mesure pour murs et plafonds, jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm. Huit placages de stock, tout placage et toute finition sur commande."
     },
     "patterns": {
-      "tag": "MOTIFS DE PERFORATION",
-      "title": "Choisissez Votre Motif",
-      "description": "Quatre motifs de perforation percés avec des propriétés acoustiques calibrées. De la zone ouverte maximale à la micro-perforation subtile.",
-      "coreMatchTitle": "Assortir le cœur au placage pour faire disparaître les perforations — ou en faire un élément de design.",
-      "coreColorTitle": "Couleur du Cœur",
-      "coreMatchDesc": "Assortissez le cœur à votre placage pour faire disparaître les perforations, ou choisissez un cœur contrastant pour un effet design.",
-      "description3": "Quatre motifs de perforation percés avec des propriétés acoustiques calibrées. De la zone ouverte maximale pour les espaces acoustiques exigeants aux motifs plus discrets qui privilégient le raffinement visuel.",
-      "coreMatchDesc2": "Assortissez le cœur à votre placage pour faire disparaître les perforations, ou choisissez un cœur contrastant pour un effet décoratif."
-    },
-    "coreColor": {
-      "title": "Couleur du Cœur",
-      "description": "Feutre acoustique noir ou naturel visible à travers les perforations — subtil mais impactant."
+      "tag": "PERFORATION",
+      "title": "Quatre motifs de perforation",
+      "description": "Taille des trous et surface ouverte par motif. Plus la surface ouverte est grande, plus l’absorption est élevée.",
+      "coreColorTitle": "Couleur de l’âme",
+      "coreMatchDesc2": "Une âme MDF ignifugée claire ou foncée, visible à travers les trous : accordez-la au placage pour fondre les perforations dans le bois, ou jouez le contraste pour un effet graphique.",
+      "spec": "Ø {d} mm · {pct} % de surface ouverte",
+      "specDouble": "2 × Ø {d} mm · {pct} % de surface ouverte",
+      "drawingNote": "Dessins à environ 1:2, taille des trous et surface ouverte telles qu’indiquées par motif.",
+      "coreLight": "Âme claire",
+      "coreDark": "Âme foncée"
     },
     "surfaces": {
-      "tag": "SURFACES",
-      "title": "Surfaces en Bois Premium",
-      "natureVeneers": "Placages Nature",
-      "natureDesc": "Variations vivantes et expression caractéristique de chaque essence.",
-      "geminiVeneers": "Placages Gemini",
-      "geminiDesc": "Ton et structure uniformes pour une apparence plus harmonieuse.",
-      "finishes": "Traitements de Surface",
-      "description": "Chaque panneau rWood - Perf est produit avec des chants surépaissés — une technique artisanale traditionnelle qui crée des joints parfaitement continus.",
-      "finish1": "Laque Naturelle",
-      "finish2": "Pigmenté",
-      "finish3": "Laminé HPL",
-      "colorSelector": "Sélectionner le Placage",
-      "description3": "Chaque panneau rWood - Perf est produit avec des chants surépaissés — une technique de fabrication traditionnelle où des bords en bois massif sont intégrés autour du panneau avant le placage. Cela donne à chaque panneau l'apparence d'être entièrement en bois, avec des joints continus sur de grandes surfaces."
+      "colorSelector": "Placages de stock",
+      "selectVeneer": "Sélectionnez un placage"
     },
     "acoustics": {
-      "tag": "PERFORMANCES",
-      "title": "Conçu pour le Son",
-      "benefit1Title": "Absorption Large Bande",
-      "benefit1": "Efficace sur tout le spectre de fréquences, du grave à l'aigu",
-      "benefit2Title": "Sécurité incendie",
-      "benefit2": "Réaction au feu {fireClass} avec le cœur en MDF retardant de flamme (EN 13501-1)",
-      "benefit3Title": "Performances Réglables",
-      "benefit3": "Quatre motifs de perforation pour des solutions acoustiques sur mesure",
-      "description": "Les perforations percées avec précision permettent aux ondes sonores d'entrer dans le panneau et de traverser la couche d'absorption en dessous.",
-      "layer1Name": "Placage Bois + Perforations",
-      "layer1Desc": "Surface surépaissée percée avec précision",
-      "layer2Name": "Cœur MDF Retardant",
-      "layer2Desc": "Retardant, densité 0,45 kg/m³",
-      "layer3Name": "Voile Acoustique",
-      "layer3Desc": "Prévient la migration des fibres",
-      "layer4Name": "Cavité Laine Minérale",
-      "layer4Desc": "30–50 mm pour absorption large bande",
-      "waveLabel": "Ondes sonores absorbées",
-      "certNote": "Testé et certifié selon ISO 11654",
-      "ratingLabel": "Absorption",
-      "description3": "Les perforations percées avec précision permettent aux ondes sonores d'entrer dans le panneau et de passer dans la cavité derrière. Combiné à l'isolant en laine minérale, rWood - Perf offre une absorption large bande exceptionnelle.",
-      "diagramTitle": "Coupe Transversale",
-      "fireRating": "Classement Feu",
-      "noiseReduction": "Réduction du Bruit",
-      "ratingPerPattern": "par motif"
+      "tag": "ACOUSTIQUE",
+      "title": "Absorption acoustique",
+      "description": "Le son passe par les perforations vers le voile acoustique et le plénum derrière le panneau. Plus la surface ouverte est grande, plus l’absorption est élevée.",
+      "tableTitle": "Absorption acoustique",
+      "alphaWByPattern": "αw, selon le motif",
+      "withWool": "Avec 50 mm de laine minérale",
+      "withWoolVal": "αw jusqu’à 1.00",
+      "mounting": "Montage lors de l’essai",
+      "mountingVal": "Plénum avec laine minérale",
+      "pattern": "Motif",
+      "openArea": "Surface ouverte",
+      "class": "Classe",
+      "octaveTitle": "αs par bande d’octave, motif PD8 avec plénum",
+      "footnote": "αs par bande d’octave : motif PD8 avec plénum, à titre indicatif. Les valeurs dépendent du motif, de la profondeur du plénum et de l’absorbant derrière le panneau."
     },
     "installation": {
-      "tag": "FIXATION DISSIMULÉE",
-      "title": "Installation sans joint visible",
-      "step1Title": "Monter la Sous-structure",
-      "step1Desc": "Installer les rails métalliques sur la structure mur ou plafond",
-      "step2Title": "Poser l'Isolation",
-      "step2Desc": "Ajouter de la laine minérale dans la cavité pour une absorption optimale",
-      "step3Title": "Clipser les Panneaux",
-      "step3Desc": "Système de clips dissimulé pour montage sans outil, sans interstice",
-      "step4Title": "Alignement Parfait",
-      "step4Desc": "Motifs de perforation alignés avec joints surépaissés continus",
-      "description": "Les panneaux rWood - Perf sont installés avec un système de clips dissimulé pour un aspect invisible et continu.",
-      "description3": "Les panneaux rWood - Perf sont installés avec un système de clips dissimulé conçu pour la précision, la rapidité et un résultat impeccable. Le système garantit des joints sans espace et des motifs de perforation parfaitement alignés."
+      "tag": "POSE",
+      "title": "Système à clips invisibles pour murs et plafonds",
+      "step1Title": "Ossature",
+      "step1Desc": "Rails métalliques sur la structure du mur ou du plafond.",
+      "step2Title": "Isolation",
+      "step2Desc": "Laine minérale dans le plénum pour la meilleure absorption.",
+      "step3Title": "Panneaux",
+      "step3Desc": "Clips invisibles, pose sans outil et sans joint.",
+      "step4Title": "Résultat",
+      "step4Desc": "Motifs alignés d’un panneau à l’autre.",
+      "description": "Des rails métalliques, de la laine minérale dans le plénum, puis les panneaux se clipsent sans outil et sans joint, le motif de perforation se poursuivant d’un panneau à l’autre."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
-      "title": "Construit pour Durer, Construit de Façon Responsable",
-      "badge1": "Certifié FSC®",
-      "badge2": "{pct} % de contenu recyclé",
+      "title": "Fabriqué de manière responsable",
+      "badge1": "Placage certifié FSC®",
+      "badge2": "{pct} % de matière recyclée",
       "badge3": "Fabriqué en Pologne",
-      "badge4": "Ultra-Faibles Émissions",
-      "badge1Desc": "Bois issu de forêts gérées de façon responsable",
-      "badge2Desc": "Matériau recyclé post-consommation dans le cœur",
-      "badge3Desc": "Fabriqué dans notre propre usine de Częstochowa (Pologne) — circuits courts",
-      "badge4Desc": "Sans formaldéhyde ajouté",
-      "description": "rWood - Perf combine des matériaux naturels durables avec une approche de fabrication responsable.",
-      "description3": "rWood - Perf combine des matériaux naturels durables avec un approvisionnement responsable : un cœur en MDF retardant de flamme sans formaldéhyde ajouté, et des placages issus de forêts gérées durablement."
+      "badge4": "Classe formaldéhyde E1",
+      "badge1Desc": "Bois issu de forêts gérées durablement",
+      "badge2Desc": "Matière recyclée dans le panneau",
+      "badge3Desc": "Produit dans notre propre usine de Częstochowa (Pologne)",
+      "badge4Desc": "Âme MDF ignifugée à faibles émissions, pour les espaces intérieurs secs",
+      "description": "Placage certifié FSC®, classe formaldéhyde E1 et production dans notre propre usine de Częstochowa. En fin de vie, nous reprenons gratuitement les panneaux en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
     },
     "specs": {
-      "tag": "TECHNIQUE",
-      "title": "Spécifications",
-      "dimensionsTitle": "Dimensions — Murs et Plafonds",
-      "acousticsTitle": "Performances Acoustiques",
-      "perforationsTitle": "Options de Perforation",
-      "fireTitle": "Sécurité Incendie",
-      "certsTitle": "Certifications",
-      "customSizes": "Tailles personnalisées",
-      "dimThickness": "Épaisseur",
-      "dimWeight": "Poids",
-      "matTitle": "Matériaux",
-      "matCustomColor": "Tons couleur personnalisés avec pigmentation transparente ou solide",
-      "matLacquerFinish": "Du super mat au laque UV haute brillance",
-      "surfaceLabel": "Surface",
-      "surfaceVal": "Placage / HPL / Film / Peinture",
-      "coreVal": "Cœur en MDF (brun / vert / noir)",
+      "tag": "DONNÉES TECHNIQUES",
+      "title": "Panneau, feu et émissions",
+      "acousticsTitle": "Absorption acoustique",
+      "perforationsTitle": "Motifs de perforation",
+      "fireTitle": "Feu et émissions",
+      "matTitle": "Surface et options",
+      "surfaceLabel": "Traitements de surface",
+      "surfaceVal": "Vernis naturel · pigmenté · stratifié HPL · film · peinture",
+      "coreVal": "MDF ignifugé, clair ou foncé",
       "edgesLabel": "Chants",
-      "edgesVal": "Bois massif surépaissé",
-      "acousticFelt": "Feutre acoustique",
-      "feltColor": "Noir / Blanc",
+      "edgesVal": "Bois massif replaqué pour des joints invisibles",
+      "feltColor": "Noir ou blanc",
       "reactionFire": "Réaction au feu",
-      "resistanceFire": "Résistance au feu",
-      "fireRetardant": "Retardant de Flamme",
-      "vocLabel": "Émissions COV",
-      "vocVal": "TVOC approuvé (ISO 16000)",
-      "formaldehydeLabel": "Formaldéhyde",
-      "formaldehydeVal": "Sans urée-formaldéhyde ajoutée",
-      "envLabel": "Environnement"
+      "panelTitle": "Panneau",
+      "sizes": "Dimensions",
+      "fleeceLabel": "Voile acoustique",
+      "acWithMinWool": "Avec 50 mm de laine minérale",
+      "acWithMinWoolVal": "αw jusqu’à 1.00",
+      "fireStandard": "Norme feu",
+      "finishLabel": "Vernis",
+      "finishVal": "Polymérisé aux UV, du super mat au brillant, naturel ou pigmenté",
+      "rangesLabel": "Gammes de placage",
+      "rangesVal": "Nature (veinage vivant et caractériel) · Gemini (teinte régulière et uniforme)",
+      "coreColoursLabel": "Couleurs d’âme",
+      "appsTitle": "Pose",
+      "appInstall": "Application",
+      "appWalls": "Murs et plafonds",
+      "mountingSystem": "Fixation",
+      "subframe": "Ossature",
+      "mounting": "Montage lors de l’essai",
+      "mountingVal": "Plénum avec laine minérale",
+      "pd8Val": "2 × Ø 8 mm · 24 % de surface ouverte",
+      "ph10Val": "Ø 10 mm · 18 % de surface ouverte",
+      "ph8Val": "Ø 8 mm · 12 % de surface ouverte",
+      "ph5Val": "Ø 5 mm · 5 % de surface ouverte",
+      "envVal": "Intérieur, espaces secs",
+      "coreColoursVal": "Brun, vert ou noir : clair ou foncé pour dissimuler ou souligner les perforations",
+      "subframeVal": "Rails métalliques",
+      "concealedClip": "Clips invisibles, sans outil, sans joint"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2263,194 +2272,231 @@
     },
     "overview": {
       "tag": "PERFORMANCE PROUVÉE",
-      "description": "Les panneaux rWood - Perf sont l'une des solutions murales acoustiques les plus efficaces. Les perforations percées avec précision permettent au son de traverser la surface décorative en bois.",
-      "feature1": "Cœur en MDF à retardant de flamme ({fireClass})",
-      "feature2": "Chants surépaissés pour joints continus",
-      "feature3": "Cœur clair ou foncé pour discrétion des motifs",
-      "feature4": "Formats personnalisés jusqu'à 3050 × 1220 mm",
-      "description3": "Les panneaux rWood - Perf sont l'une des solutions murales et plafonds acoustiques les plus efficaces et utilisées. Les perforations rondes percées avec précision créent une grande zone ouverte garantissant des niveaux élevés d'absorption sonore.",
-      "description4": "Combinés à un cœur MDF à retardant de flamme et des chants surépaissés pour des joints continus, ces panneaux sont conçus pour les exigences les plus élevées des grands espaces publics — des atriums et salles de concert aux bureaux et écoles."
-    },
-    "accessories": {
-      "tag": "POUR COMPLÉTER LE LOOK",
-      "title": "Accessoires",
-      "description": "Éléments de finition professionnels pour un résultat impeccable",
-      "item1Title": "Profilés de Finition",
-      "item1Desc": "Profilés assortis pour des terminaisons nettes",
-      "item2Title": "Solutions d'Angle",
-      "item2Desc": "Transitions d'angle intérieur et extérieur continues",
-      "item3Title": "Rails de Fixation",
-      "item3Desc": "Système de sous-structure en aluminium dissimulé",
-      "item4Title": "Laine Minérale",
-      "item4Desc": "Isolant 30–50 mm pour performances optimales"
+      "feature1": "Âme MDF ignifugée ({fireClass})",
+      "feature2": "Âme claire ou foncée pour dissimuler ou souligner les perforations",
+      "feature3": "Sur mesure jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm",
+      "feature4": "Clips invisibles, sans outil, sans joint, motifs alignés d’un panneau à l’autre",
+      "title": "Plus la surface ouverte est grande, plus l’absorption est élevée",
+      "description1": "rWood Perf est un panneau MDF ignifugé plaqué, traversé de perforations rondes. Le son passe par les trous vers le voile acoustique et le plénum derrière le panneau, où il est absorbé.",
+      "description2": "Quatre motifs vous laissent choisir entre absorption et discrétion : du trou discret de 5 mm à 5 % de surface ouverte au motif double de 8 mm PD8 à 24 % de surface ouverte."
     },
     "cta": {
-      "note": "Échantillons gratuits disponibles • Certifié FSC®"
+      "note": "Échantillons de placage gratuits · placage certifié FSC®"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "D'où provient le placage certifié FSC ?",
-          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+          "question": "D’où provient le placage certifié FSC ?",
+          "answer": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le numéro du certificat de chaîne de contrôle est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
-          "answer": "Avec le cœur en MDF retardant de flamme (FR), les panneaux rWood sont classés B-s1,d0 selon la norme EN 13501-1 — le cœur que nous prescrivons pour les voies d'évacuation et les bâtiments publics. Le certificat de réaction au feu se trouve dans le bloc de téléchargements de cette page."
+          "answer": "Avec son âme MDF ignifugée, rWood Perf est classé B-s1,d0 selon EN 13501-1. Le panneau est destiné aux espaces intérieurs secs."
         },
         "leadTime": {
           "question": "Quel est le délai de livraison standard ?",
-          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+          "answer": "Les placages de stock sont livrés en 3–4 semaines ; les essences hors stock et les finitions sur mesure demandent 6–8 semaines. Les panneaux sur mesure sont fabriqués d’après vos plans."
         },
         "installMethod": {
-          "question": "Comment les panneaux rWood sont-ils installés ?",
-          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+          "question": "Comment les panneaux rWood sont-ils posés ?",
+          "answer": "Avec un système à clips invisibles : des rails métalliques sur la structure du mur ou du plafond, de la laine minérale dans le plénum, puis les panneaux se clipsent sans outil et sans joint, de sorte que le motif de perforation se poursuit d’un panneau à l’autre."
         },
         "substrateCleanup": {
           "question": "Que deviennent les panneaux en fin de vie ?",
-          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+          "answer": "Re-Sound reprend gratuitement les panneaux en fin de vie en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "Gros plan du panneau rWood - Perf montrant les perforations rondes",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Détail de la surface en placage bois d'un panneau perforé",
-      "rwoodPerfPanelConcealedMountingSystem": "Système de fixation invisible du panneau rWood - Perf",
-      "sustainableWoodSourcingAndProduction": "Approvisionnement et production de bois durables"
+      "sustainableWoodSourcingAndProduction": "Placage bois certifié FSC",
+      "hero": "Panneaux acoustiques bois perforés rWood Perf sur un mur",
+      "heroVeneer": "Panneau rWood Perf en {name}",
+      "overview": "Gros plan sur les perforations rondes d’un panneau rWood Perf",
+      "installation": "Rails métalliques et clips invisibles du système de pose rWood Perf"
     },
     "options": {
-      "pd8Desc": "Absorption maximale, grande surface ouverte",
-      "ph10Desc": "Absorption élevée, perforations marquées",
-      "ph8Desc": "Équilibre entre esthétique et performance",
+      "pd8Desc": "Motif double, absorption maximale",
+      "ph10Desc": "Absorption élevée, perforations affirmées",
+      "ph8Desc": "Équilibre entre aspect et performance",
       "ph5Desc": "Motif discret, surface subtile"
+    },
+    "kpi": {
+      "ariaLabel": "Chiffres clés",
+      "thickness": "épaisseur du panneau, sur mesure",
+      "alphaW": "αw, selon le motif",
+      "alphaWPd8": "αw avec le motif PD8, {range} selon le motif",
+      "fire": "réaction au feu, âme MDF ignifugée",
+      "patterns": "motifs de perforation, Ø 5 à 10 mm"
+    },
+    "buildUp": {
+      "alt": "Vue éclatée des trois couches : placage perforé, âme MDF ignifugée percée, voile acoustique",
+      "layer1": "Placage perforé",
+      "layer1Desc": "Qualité A, percé Ø 5 à 10 mm",
+      "layer2": "Âme MDF ignifugée",
+      "layer2Desc": "Claire ou foncée, percée de part en part",
+      "layer3": "Voile acoustique",
+      "layer3Desc": "Noir ou blanc",
+      "behind": "Derrière le panneau : plénum avec laine minérale."
+    },
+    "veneers": {
+      "title": "Huit placages de stock, tout placage sur commande",
+      "description": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Le bois est un matériau naturel : le veinage et la teinte varient d’un panneau à l’autre, et les échantillons à l’écran ne sont qu’indicatifs.",
+      "alt": "Placage {name}",
+      "origin": {
+        "europe": "Europe",
+        "scandinavia": "Scandinavie",
+        "northAmerica": "Amérique du Nord"
+      },
+      "grain": {
+        "straightInterlocked": "Droit à contrefil",
+        "subtleFine": "Grain fin et discret",
+        "fineStraight": "Grain fin et droit",
+        "cathedral": "Veinage flammé",
+        "pronounced": "Veinage prononcé",
+        "straightWavy": "Droit à ondulé",
+        "deepCathedral": "Veinage flammé profond",
+        "richFlowing": "Veinage riche et fluide"
+      },
+      "madeToOrderTitle": "Sur commande",
+      "madeToOrderDesc": "Au-delà des huit placages de stock, nous réalisons toute essence, teinte et finition.",
+      "finishTitle": "Finition",
+      "finishDesc": "Vernis polymérisé aux UV, du super mat au brillant, naturel ou pigmenté.",
+      "naturalTitle": "Un matériau naturel",
+      "naturalDesc": "Le bois véritable varie en teinte et en veinage. Demandez des échantillons avant de prescrire."
+    },
+    "bespoke": {
+      "tag": "SUR MESURE",
+      "title": "D’après vos plans",
+      "description": "rWood Perf est fabriqué sur mesure pour murs et plafonds : de 100 × 100 mm jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm, dans chacun des quatre motifs.",
+      "customDimTitle": "Dimensions sur mesure",
+      "customDimDesc": "Chaque panneau est fabriqué aux dimensions de vos plans, de 100 × 100 mm jusqu’à 3 050 × 1 220 mm.",
+      "finishTitle": "Tout placage et toute finition",
+      "finishDesc": "Huit placages de stock ; toute autre essence, teinte et finition sur commande.",
+      "samplesTitle": "Échantillons de placage gratuits",
+      "samplesDesc": "Le bois véritable varie en teinte et en veinage. Demandez des échantillons avant de prescrire."
+    },
+    "ordering": {
+      "title": "Délais et échantillons",
+      "stockVeneers": "Placages de stock",
+      "stockVeneersVal": "3–4 semaines",
+      "nonStock": "Hors stock et sur mesure",
+      "nonStockVal": "6–8 semaines",
+      "madeToMeasure": "Sur mesure",
+      "madeToMeasureVal": "D’après vos plans",
+      "supply": "Fourniture",
+      "samplesVal": "Échantillons de placage gratuits",
+      "sizesVal": "Jusqu’à {size}",
+      "showroom": "Showroom : Gentseweg 309 A3, 9120 Beveren-Waas, Belgique"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "PANNEAUX ACOUSTIQUES MICRO-PERFORÉS",
+      "tag": "PANNEAU ACOUSTIQUE BOIS MICROPERFORÉ",
       "title": "rWood Micro : panneaux acoustiques en bois microperforé",
-      "tagline": "Perforation Invisible, Acoustique Exceptionnelle",
-      "description": "Découvrez la beauté du bois naturel associée aux performances acoustiques d'une technologie de micro-perforation avancée. Des trous pratiquement invisibles offrent une absorption sonore Classe A tout en préservant l'aspect pur et homogène du placage bois premium.",
-      "usp1": "Perforations Invisibles",
-      "usp2": "Absorption Classe A",
-      "usp3": "Classement feu {fireClass}",
-      "colorSelector": "Sélectionner le Placage Bois"
+      "tagline": "Perforation invisible, acoustique exceptionnelle.",
+      "description": "Des microperforations à partir de 0,5 mm dans le placage de qualité A débouchent sur des chambres acoustiques dans l’âme MDF ignifugée, doublée d’un voile acoustique. À distance normale, les trous disparaissent dans le bois.",
+      "usp1": "Perforations invisibles",
+      "usp2": "Absorption classe A",
+      "usp3": "Réaction au feu {fireClass}",
+      "colorSelector": "Placages de stock",
+      "description2": "Sur mesure pour murs et plafonds, jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm. Huit placages de stock, tout placage et toute finition sur commande.",
+      "selectVeneer": "Sélectionnez un placage"
     },
     "perforation": {
-      "tag": "MOTIFS DE PERFORATION",
-      "title": "Choisissez Votre Perforation",
-      "description": "Quatre densités de perforation pour répondre à vos exigences acoustiques. Des perforations Nano pratiquement invisibles aux motifs Micro L à absorption maximale."
-    },
-    "surfaces": {
-      "tag": "SURFACES",
-      "title": "Surfaces Premium",
-      "woodVeneer": "Placage Bois",
-      "woodVeneerDesc": "Placages A-grade premium en chêne, noyer, bouleau et plus. Coupes Nature et Gemini disponibles.",
-      "hplLaminate": "Stratifié HPL",
-      "hplLaminateDesc": "Surfaces en stratifié haute pression pour une durabilité accrue. Disponible dans une large gamme de couleurs et finitions.",
-      "surfaceType": "Type de Surface",
-      "finishTreatments": "Traitements de Finition",
-      "description": "Chaque panneau rWood - Micro présente des chants surépaissés — une technique de fabrication qui crée des joints de panneaux continus.",
-      "finish1Desc": "Tons couleur personnalisés avec pigmentation transparente ou solide",
-      "finish2Desc": "Du super mat au laque UV haute brillance",
-      "description2": "Chaque panneau rWood - Micro présente des chants surépaissés — une technique de fabrication issue du patrimoine de la menuiserie traditionnelle. Résultat : panneaux plus solides, joints imperceptibles et motif continu quel que soit le format du panneau."
+      "tag": "PERFORATION",
+      "title": "Quatre densités de perforation",
+      "description": "Taille des trous et surface ouverte par densité. Plus la surface ouverte est grande, plus l’absorption est élevée ; plus le trou est petit, moins le motif est visible.",
+      "spec": "Ø {d} mm · {pct} % de surface ouverte",
+      "drawingNote": "Dessins à environ 2:1, taille des trous et surface ouverte telles qu’indiquées par densité."
     },
     "acoustics": {
-      "tag": "PERFORMANCES",
-      "title": "Absorption Sonore Supérieure",
-      "benefit1Title": "Double Mécanisme d'Absorption",
-      "benefit1": "Micro-trous et chambres acoustiques travaillent ensemble pour une absorption supérieure",
-      "benefit2Title": "Gain de Place",
-      "benefit2": "Moins dépendant des lames d'air — constructions de mur et plafond plus minces",
-      "benefit3Title": "Sécurité incendie",
-      "benefit3": "Réaction au feu {fireClass} avec le cœur en MDF retardant de flamme (EN 13501-1)",
-      "description": "La combinaison de micro-perforations en surface et de milliers de canaux d'entrée sonore plus larges crée une absorption large bande exceptionnelle.",
-      "layer1Name": "Placage A-grade avec trous percés avec précision",
-      "layer2Name": "Cœur MDF Retardant",
-      "layer2Desc": "Retardant, avec chambres sonores",
-      "layer3Name": "Dos en Voile Acoustique",
-      "layer3Desc": "Couche d'absorption sonore supplémentaire",
-      "waveLabel": "Ondes sonores absorbées",
-      "certNote": "Testé et certifié selon ISO 11654",
-      "description2": "La combinaison de micro-perforations en surface et de milliers de chambres sonores plus larges dans le cœur crée un mécanisme acoustique dual. Moins dépendant de l'isolation et des lames d'air — permettant des murs et plafonds plus minces qui économisent de l'espace précieux.",
-      "diagramTitle": "Coupe Transversale",
-      "soundAbsorbed": "Son Absorbé",
-      "fireRating": "Classement Feu",
-      "testStandard": "Norme de Test",
-      "thinner": "Plus Mince",
-      "wallBuildUp": "Épaisseur de Paroi"
+      "tag": "ACOUSTIQUE",
+      "title": "Absorption acoustique",
+      "description": "Le son entre par les microperforations et est absorbé dans les chambres acoustiques de l’âme et dans le voile situé derrière. L’absorption dépend de la densité de perforation et de ce qui se trouve derrière le panneau.",
+      "tableTitle": "Absorption acoustique",
+      "withWool": "Avec 50 mm de laine minérale",
+      "withWoolVal": "αw jusqu’à 1.00",
+      "behindTitle": "Derrière le panneau",
+      "behindDesc": "Un absorbant placé derrière augmente l’absorption : feutre acoustique, panneau rPET ou laine minérale dans le plénum. Avec 50 mm de laine minérale, le panneau atteint αw 1,00.",
+      "footnote": "αw et classe d’absorption selon EN ISO 11654. Les valeurs dépendent de la densité de perforation, de la profondeur du plénum et de l’absorbant derrière le panneau."
     },
     "installation": {
-      "tag": "SYSTÈME D'INSTALLATION",
-      "title": "Installation de Précision",
-      "step1Title": "Installer la Sous-structure",
-      "step1Desc": "Fixer les rails en aluminium à la structure mur ou plafond",
-      "step2Title": "Ajouter l'Isolation",
-      "step2Desc": "Laine minérale optionnelle pour une absorption accrue",
-      "step3Title": "Clipser les Panneaux",
-      "step3Desc": "Système de clips dissimulé pour montage sans outil",
-      "step4Title": "Résultat sans joint visible",
-      "step4Desc": "Les chants surépaissés créent une surface bois continue",
-      "description": "Les panneaux rWood - Micro sont installés avec notre système de fixation dissimulée, garantissant des fixations invisibles et une finition impeccable. Le système permet des applications en mur et plafond, avec des transitions continues entre panneaux grâce aux chants surépaissés."
+      "tag": "POSE",
+      "title": "Système à clips invisibles pour murs et plafonds",
+      "step1Title": "Ossature",
+      "step1Desc": "Rails en aluminium sur la structure du mur ou du plafond.",
+      "step2Title": "Isolation",
+      "step2Desc": "Laine minérale en option pour une absorption plus élevée.",
+      "step3Title": "Panneaux",
+      "step3Desc": "Clips invisibles, pose sans outil.",
+      "step4Title": "Résultat",
+      "step4Desc": "Fixations invisibles et surface bois continue.",
+      "description": "Des rails en aluminium, de la laine minérale en option, puis les panneaux se clipsent sans outil. Les fixations restent invisibles et la surface bois se poursuit sans interruption."
     },
     "bespoke": {
-      "tag": "LIBERTÉ DE CONCEPTION",
-      "title": "Possibilités Sur Mesure",
-      "backlitTitle": "Panneaux Rétroéclairés",
-      "backlitDesc": "Créez de superbes sections rétroéclairées où la lumière traverse les micro-perforations. Logos et motifs brillent magnifiquement lorsqu'ils sont éclairés, mais restent invisibles lorsque la lumière est éteinte.",
-      "customDimTitle": "Dimensions Personnalisées",
-      "customDimDesc": "Panneaux produits selon vos spécifications exactes. Formes et dimensions non standard pour des exigences architecturales uniques.",
-      "patternTitle": "Motif Continu",
-      "patternDesc": "Les panneaux à chants surépaissés créent des transitions continues quel que soit le format, pour une impression homogène sur n'importe quelle surface.",
-      "description": "Les panneaux rWood - Micro peuvent être personnalisés et préfabriqués selon vos plans. Les micro-perforations ouvrent des possibilités de design uniques qui vont bien au-delà des panneaux acoustiques standard."
+      "tag": "SUR MESURE",
+      "title": "D’après vos plans",
+      "customDimTitle": "Dimensions sur mesure",
+      "customDimDesc": "Chaque panneau est fabriqué aux dimensions de vos plans, de 100 × 100 mm jusqu’à 3 050 × 1 220 mm.",
+      "description": "rWood Micro est fabriqué sur mesure pour murs et plafonds : de 100 × 100 mm jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm, dans chacune des quatre densités de perforation.",
+      "finishTitle": "Tout placage et toute finition",
+      "finishDesc": "Huit placages de stock ; toute autre essence, teinte et finition sur commande.",
+      "samplesTitle": "Échantillons de placage gratuits",
+      "samplesDesc": "Le bois véritable varie en teinte et en veinage. Demandez des échantillons avant de prescrire."
     },
     "sustainability": {
       "tag": "DURABILITÉ",
-      "title": "Fabriqué de Façon Responsable",
-      "badge1": "Placage Certifié FSC®",
-      "badge2": "Matériau de Cœur Naturel",
+      "title": "Fabriqué de manière responsable",
+      "badge1": "Placage certifié FSC®",
+      "badge2": "Classe formaldéhyde E1",
       "badge3": "Fabriqué en Pologne",
-      "badge4": "Faibles Émissions COV",
-      "badge1Desc": "Bois issu de forêts gérées de façon responsable",
-      "badge2Desc": "Cœur en fibres — un cœur à base de bois, certifié au feu",
-      "badge3Desc": "Fabriqué dans notre propre usine de Częstochowa (Pologne)",
-      "badge4Desc": "Classé E1 pour une meilleure qualité de l'air intérieur",
-      "description": "Les panneaux rWood - Micro sont conçus avec la durabilité comme principe fondamental. Bois certifié FSC®, finitions à faibles émissions et matériaux d'approvisionnement responsable.",
+      "badge4": "Reprise en fin de vie",
+      "badge1Desc": "Bois issu de forêts gérées durablement",
+      "badge2Desc": "Âme MDF ignifugée à faibles émissions, pour les espaces intérieurs secs",
+      "badge3Desc": "Produit dans notre propre usine de Częstochowa (Pologne)",
+      "description": "Placage certifié FSC®, classe formaldéhyde E1 et production dans notre propre usine de Częstochowa. En fin de vie, nous reprenons les panneaux.",
       "badge5": "Énergie Verte"
     },
     "specs": {
-      "tag": "TECHNIQUE",
-      "title": "Spécifications",
-      "dimensionsTitle": "Dimensions — Murs et Plafonds",
-      "acousticsTitle": "Dimensions — Murs et Plafonds",
-      "customSizes": "Tailles personnalisées",
-      "dimThickness": "Épaisseur",
-      "dimWeight": "Poids",
-      "dimCoreDensity": "Densité du cœur",
-      "perfsTitle": "Options de Perforation",
-      "fireTitle": "Sécurité Incendie",
-      "matTitle": "Matériaux",
-      "appsTitle": "Applications",
-      "acWithMinWool": "Avec laine minérale 50mm",
+      "tag": "DONNÉES TECHNIQUES",
+      "title": "Panneau, feu et émissions",
+      "acousticsTitle": "Absorption acoustique",
+      "perfsTitle": "Densités de perforation",
+      "fireTitle": "Feu et émissions",
+      "matTitle": "Surface et options",
+      "appsTitle": "Pose",
+      "acWithMinWool": "Avec 50 mm de laine minérale",
       "reactionFire": "Réaction au feu",
-      "resistanceFire": "Résistance au feu",
-      "fireRetardant": "Retardant de Flamme",
-      "surfaceLabel": "Surface",
-      "surfaceVal": "Placage / HPL / Film / Peinture",
-      "coreVal": "Cœur en MDF (brun / vert / noir)",
+      "surfaceLabel": "Traitements de surface",
+      "surfaceVal": "Vernis naturel · pigmenté · stratifié HPL · film · peinture",
+      "coreVal": "MDF ignifugé à chambres acoustiques",
       "edgesLabel": "Chants",
-      "edgesVal": "Bois massif surépaissé",
-      "acousticFelt": "Feutre acoustique",
-      "feltColor": "Noir / Blanc",
-      "appInstall": "Installation",
-      "appWalls": "Murs & Plafonds",
-      "appEnv": "Environnement",
-      "appEnvVal": "Intérieur (zones sèches)",
-      "backlitOption": "Option rétroéclairage",
-      "backlitVal": "Disponible",
-      "mountingSystem": "Système de fixation",
-      "concealedClip": "Système à clips dissimulé",
+      "edgesVal": "Bois massif replaqué pour des joints invisibles",
+      "feltColor": "Noir ou blanc",
+      "appInstall": "Application",
+      "appWalls": "Murs et plafonds",
+      "appEnvVal": "Intérieur, espaces secs",
+      "mountingSystem": "Fixation",
+      "concealedClip": "Clips invisibles, sans outil",
       "perforationsTitle": "Options de Perforation",
-      "certsTitle": "Certifications"
+      "certsTitle": "Certifications",
+      "panelTitle": "Panneau",
+      "sizes": "Dimensions",
+      "fleeceLabel": "Voile acoustique",
+      "acWithMinWoolVal": "αw jusqu’à 1.00",
+      "fireStandard": "Norme feu",
+      "finishLabel": "Vernis",
+      "finishVal": "Polymérisé aux UV, du super mat au brillant, naturel ou pigmenté",
+      "rangesLabel": "Gammes de placage",
+      "rangesVal": "Nature (veinage vivant et caractériel) · Gemini (teinte régulière et uniforme)",
+      "coreColoursLabel": "Couleurs d’âme",
+      "subframe": "Ossature",
+      "nanoVal": "Ø 0.5 mm · 2.5 % de surface ouverte",
+      "microSVal": "Ø 1.0 mm · 5.2 % de surface ouverte",
+      "microMVal": "Ø 1.5 mm · 8.4 % de surface ouverte",
+      "microLVal": "Ø 2.0 mm · 10.6 % de surface ouverte",
+      "coreColoursVal": "Brun, vert ou noir",
+      "subframeVal": "Rails en aluminium"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2458,135 +2504,140 @@
     },
     "overview": {
       "tag": "LA SOLUTION INVISIBLE",
-      "title": "Conçu pour les Yeux et les Oreilles",
-      "description1": "Les panneaux rWood - Micro combinent une technologie de micro-perforation avancée avec des placages bois premium. À distance normale, les perforations sont totalement invisibles — ce que vous voyez est une belle surface bois homogène. Ce que vous entendez est un confort acoustique exceptionnel.",
-      "description2": "Le secret réside dans la combinaison de deux mécanismes acoustiques : des milliers de micro-trous précisément ingéniérés en surface et des chambres absorbantes dans le matériau de cœur.",
-      "feature1": "Perforations invisibles à distance normale",
-      "feature2": "Cœur en MDF retardant de flamme avec chambres sonores",
-      "feature3": "Chants surépaissés pour joints continus",
-      "feature4": "Adapté aux murs et plafonds",
-      "feature5": "Disponible en panneaux rétroéclairés"
-    },
-    "accessories": {
-      "tag": "POUR COMPLÉTER LE LOOK",
-      "title": "Accessoires",
-      "description": "Éléments de finition professionnels pour un résultat impeccable",
-      "item1Title": "Profilés de Finition",
-      "item1Desc": "Profilés assortis pour des terminaisons de panneaux nettes",
-      "item2Title": "Solutions d'Angle",
-      "item2Desc": "Transitions d'angle intérieur et extérieur continues",
-      "item3Title": "Rails de Fixation",
-      "item3Desc": "Système de sous-structure aluminium dissimulée",
-      "item4Title": "Rétroéclairage LED",
-      "item4Desc": "Éclairage intégré pour les effets de panneaux rétroéclairés"
-    },
-    "patterns": {
-      "description": "Quatre densités de perforation pour répondre à vos exigences acoustiques. Des micro-perforations quasiment invisibles aux grandes zones ouvertes.",
-      "magnifiedLabel": "Agrandi 10×",
-      "holeDiameter": "Diamètre du trou",
-      "openArea": "Surface ouverte",
-      "ratingLabel": "Absorption",
-      "description2": "Quatre densités de perforation pour répondre à vos exigences acoustiques. Des micro-perforations Nano quasiment invisibles aux motifs Micro L à absorption maximale — sélectionnez l'équilibre parfait entre esthétique et performances acoustiques.",
-      "pigmentedLacquer": "Laque Pigmentée",
-      "glossLevels": "Niveaux de Brillance"
+      "title": "Conçu pour les yeux et les oreilles",
+      "description1": "rWood Micro associe un placage de bois véritable de qualité A à des microperforations à partir de Ø 0,5 mm. À distance normale, les trous disparaissent dans le bois : vous voyez une surface bois continue, vous entendez une pièce plus calme.",
+      "description2": "Le son entre par les microperforations et est absorbé dans les chambres acoustiques de l’âme MDF ignifugée et dans le voile acoustique situé derrière. L’absorption dépend de la densité de perforation et de ce qui se trouve derrière le panneau.",
+      "feature1": "Des perforations qui disparaissent à distance normale",
+      "feature2": "Âme MDF ignifugée à chambres acoustiques, voile acoustique noir ou blanc",
+      "feature3": "Sur mesure jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm",
+      "feature4": "Clips invisibles, sans outil, pour murs et plafonds"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "D'où provient le placage certifié FSC ?",
-          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+          "question": "D’où provient le placage certifié FSC ?",
+          "answer": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le numéro du certificat de chaîne de contrôle est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
-          "answer": "Avec le cœur en MDF retardant de flamme (FR), les panneaux rWood sont classés B-s1,d0 selon la norme EN 13501-1 — le cœur que nous prescrivons pour les voies d'évacuation et les bâtiments publics. Le certificat de réaction au feu se trouve dans le bloc de téléchargements de cette page."
+          "answer": "Avec son âme MDF ignifugée, rWood Micro est classé B-s1,d0 selon EN 13501-1. Le panneau est destiné aux espaces intérieurs secs."
         },
         "leadTime": {
           "question": "Quel est le délai de livraison standard ?",
-          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+          "answer": "Les placages de stock sont livrés en 3–4 semaines ; les essences hors stock et les finitions sur mesure demandent 6–8 semaines. Les panneaux sur mesure sont fabriqués d’après vos plans."
         },
         "installMethod": {
-          "question": "Comment les panneaux rWood sont-ils installés ?",
-          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+          "question": "Comment les panneaux rWood sont-ils posés ?",
+          "answer": "Avec un système à clips invisibles : des rails en aluminium sur la structure du mur ou du plafond, de la laine minérale en option dans le plénum, puis les panneaux se clipsent sans outil. Les fixations restent invisibles et la surface bois se poursuit sans interruption."
         },
         "substrateCleanup": {
           "question": "Que deviennent les panneaux en fin de vie ?",
-          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+          "answer": "Re-Sound reprend gratuitement les panneaux en fin de vie en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "Gros plan du panneau rWood - Micro montrant les perforations invisibles",
-      "microPerforatedWoodPanelSurfaceDetail": "Détail de la surface d'un panneau bois microperforé",
-      "rwoodMicroPanelInstallationSystem": "Système d'installation du panneau rWood - Micro",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Panneau microperforé rétroéclairé créant un effet lumineux",
-      "sustainableProduction": "Production durable"
+      "sustainableProduction": "Placage bois certifié FSC",
+      "hero": "Panneaux acoustiques bois microperforés rWood Micro sur un mur",
+      "heroVeneer": "Panneau rWood Micro en {name}",
+      "overview": "Gros plan sur un panneau microperforé rWood Micro",
+      "installation": "Rails en aluminium et clips invisibles du système de pose rWood Micro",
+      "madeToMeasure": "Panneaux rWood Micro sur mesure posés autour d’une fenêtre"
     },
     "options": {
-      "veneerDesc": "Placage bois naturel de qualité A",
-      "hplDesc": "Stratifié haute pression",
-      "nanoDesc": "Perforations pratiquement invisibles",
-      "microsDesc": "Microperforations subtiles",
+      "nanoDesc": "Perforations quasi invisibles",
+      "microsDesc": "Microperforations discrètes",
       "micromDesc": "Motif de perforation équilibré",
-      "microlDesc": "Motif à absorption maximale",
-      "nanoDetail": "La plus petite perforation disponible : totalement invisible à l'œil nu, pour une surface bois parfaitement lisse.",
-      "microsDetail": "Des micro-trous à peine visibles qui préservent une surface nette et ininterrompue.",
-      "micromDetail": "Un équilibre optimal entre discrétion visuelle et efficacité acoustique pour la plupart des applications.",
-      "microlDetail": "La surface ouverte la plus élevée pour une absorption acoustique maximale dans les espaces acoustiquement exigeants.",
-      "openAreaLabel": "Surface ouverte",
-      "absorptionLabel": "Absorption",
-      "thinnerLabel": "Plus fin",
-      "veneerDrilled": "Placage de qualité A avec perforations de précision"
+      "microlDesc": "Motif à absorption maximale"
+    },
+    "kpi": {
+      "ariaLabel": "Chiffres clés",
+      "thickness": "épaisseur du panneau, sur mesure",
+      "alphaW": "αw, absorption acoustique pondérée",
+      "alphaWClass": "αw, classe d’absorption {cls}",
+      "fire": "réaction au feu, âme MDF ignifugée",
+      "densities": "densités de perforation, Ø 0,5 à 2 mm"
+    },
+    "buildUp": {
+      "alt": "Vue éclatée des trois couches : placage microperforé, âme MDF ignifugée à chambres acoustiques, voile acoustique",
+      "layer1": "Placage microperforé",
+      "layer1Desc": "Qualité A, trous à partir de Ø 0,5 mm",
+      "layer2": "Âme MDF ignifugée",
+      "layer2Desc": "Avec chambres acoustiques",
+      "layer3": "Voile acoustique",
+      "layer3Desc": "Noir ou blanc",
+      "behind": "Derrière le panneau : plénum, laine minérale en option."
+    },
+    "veneers": {
+      "title": "Huit placages de stock, tout placage sur commande",
+      "description": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Le bois est un matériau naturel : le veinage et la teinte varient d’un panneau à l’autre, et les échantillons à l’écran ne sont qu’indicatifs.",
+      "alt": "Placage {name}",
+      "origin": {
+        "europe": "Europe",
+        "scandinavia": "Scandinavie",
+        "northAmerica": "Amérique du Nord"
+      },
+      "grain": {
+        "straightInterlocked": "Droit à contrefil",
+        "subtleFine": "Grain fin et discret",
+        "fineStraight": "Grain fin et droit",
+        "cathedral": "Veinage flammé",
+        "pronounced": "Veinage prononcé",
+        "straightWavy": "Droit à ondulé",
+        "deepCathedral": "Veinage flammé profond",
+        "richFlowing": "Veinage riche et fluide"
+      },
+      "madeToOrderTitle": "Sur commande",
+      "madeToOrderDesc": "Au-delà des huit placages de stock, nous réalisons toute essence, teinte et finition.",
+      "finishTitle": "Finition",
+      "finishDesc": "Vernis polymérisé aux UV, du super mat au brillant, naturel ou pigmenté.",
+      "naturalTitle": "Un matériau naturel",
+      "naturalDesc": "Le bois véritable varie en teinte et en veinage. Demandez des échantillons avant de prescrire."
+    },
+    "ordering": {
+      "title": "Délais et échantillons",
+      "stockVeneers": "Placages de stock",
+      "stockVeneersVal": "3–4 semaines",
+      "nonStock": "Hors stock et sur mesure",
+      "nonStockVal": "6–8 semaines",
+      "madeToMeasure": "Sur mesure",
+      "madeToMeasureVal": "D’après vos plans",
+      "supply": "Fourniture",
+      "samplesVal": "Échantillons de placage gratuits",
+      "sizesVal": "Jusqu’à {size}",
+      "showroom": "Showroom : Gentseweg 309 A3, 9120 Beveren-Waas, Belgique"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "ARTISANAT",
-      "title": "rWood Panel : panneaux acoustiques en placage bois, 10 essences",
-      "tagline": "L'Élégance du Bois Véritable. Prêt à l'Emploi.",
-      "description": "Panneaux MDF préfinis, brossés, teintés et laqués — sans finition supplémentaire requise. La beauté authentique du bois massif sans compromis.",
-      "usp1": "Certifié FSC®",
-      "usp2": "Préfini & Prêt à l'Emploi",
-      "usp3": "Programme de reprise gratuit",
+      "tag": "PANNEAU BOIS PLAQUÉ",
+      "title": "rWood Panel : panneaux acoustiques plaqués en 12 placages bois",
+      "tagline": "L’élégance du bois véritable, prêt à poser.",
+      "description": "Panneaux MDF plaqués lisses, finis en usine, en douze placages de bois véritable, dans la gamme Nature au veinage vivant ou la gamme Gemini au ton uniforme. Vernis naturel ou pigmenté, stratifié HPL, film ou peinture ; tout autre placage, teinte ou finition sur commande.",
+      "usp1": "Placages certifiés FSC®",
+      "usp2": "Douze placages, toute finition sur commande",
+      "usp3": "Reprise gratuite en fin de vie",
       "ctaSecondary": "Explorer la Collection",
-      "colorSelector": "Sélectionner le Placage"
-    },
-    "construction": {
-      "tag": "CONSTRUCTION",
-      "title": "Construit pour Performer",
-      "layer1": "Couche de Placage Supérieure",
-      "layer1Desc": "Placage bois naturel certifié FSC, fini en usine",
-      "layer2": "Cœur MDF Haute Densité",
-      "layer2Desc": "Substrat technique stable et résistant à l'humidité",
-      "layer3": "Couche de Contreplacage",
-      "layer3Desc": "Prévient le gauchissement pour des panneaux parfaitement plats"
-    },
-    "veneers": {
-      "tag": "COLLECTION DE PLACAGES",
-      "title": "10 Placages Bois Sélectionnés",
-      "description": "Du chêne européen pâle au noyer américain riche — chaque essence sélectionnée pour son caractère de grain, sa disponibilité et sa certification FSC."
+      "colorSelector": "Placage",
+      "selectPrompt": "Sélectionnez un placage"
     },
     "finishes": {
-      "title": "Toucher & Protection",
-      "description": "La bonne finition fait ressortir le meilleur de chaque essence. Notre processus de finition multicouche offre une surface aussi agréable au toucher que durable — protégée contre les rayures, l'humidité et l'usure quotidienne.",
-      "tag": "FINITIONS DE SURFACE",
-      "mattLacquerName": "Laque Super Mate",
-      "mattLacquerDesc": "Anti-empreintes, toucher soyeux. Protection UV 6 couches.",
-      "naturalOilName": "Huile Naturelle",
-      "naturalOilDesc": "Sensation bois profonde et authentique avec protection pénétrante.",
-      "unfinishedName": "Non Fini",
-      "unfinishedDesc": "Prêt pour une finition personnalisée sur chantier par l'installateur.",
-      "adv1": "Résistant aux rayures",
-      "adv2": "Résistant aux éclaboussures",
-      "adv3": "Anti-empreintes",
-      "adv4": "Facile à entretenir"
-    },
-    "advantages": {
-      "tag": "AVANTAGES",
-      "title": "Avantages Clés",
-      "adv1Title": "Formats de Panneaux",
-      "adv1": "Plusieurs tailles standard; dimensions personnalisées sur demande",
-      "adv2Title": "Possibilités Illimitées",
-      "adv2": "Utiliser pour revêtement mural, mobilier, présentoirs retail et plus"
+      "title": "Finitions de surface et options",
+      "description": "Choisissez la gamme de placage et le traitement de surface adaptés au projet. Les chants sont en bois massif contre-plaqué pour des joints invisibles sur les grandes surfaces.",
+      "tag": "FINITIONS",
+      "nature": "Nature",
+      "natureDesc": "Veinage vivant et caractériel",
+      "gemini": "Gemini",
+      "geminiDesc": "Ton égal et uniforme",
+      "treatmentsTitle": "Traitements de surface",
+      "treatments": {
+        "naturalLacquer": "Vernis naturel",
+        "pigmented": "Pigmenté",
+        "hpl": "Stratifié HPL",
+        "foil": "Film",
+        "paint": "Peinture"
+      },
+      "madeToOrder": "Tout autre placage, teinte, pigment et finition sur demande."
     },
     "applications": {
       "tag": "APPLICATIONS",
@@ -2620,66 +2671,51 @@
       "badge2": "Reprise Circulaire",
       "badge3": "Fabriqué en Pologne",
       "badge4": "DEP Disponible",
-      "badge5": "Faibles COV",
-      "badge1Desc": "Tout le bois issu de forêts gérées de façon responsable",
+      "badge1Desc": "Tous les placages sont certifiés FSC®, issus de forêts gérées de manière responsable",
       "badge2Desc": "Retour et recyclage gratuits des panneaux en fin de vie",
-      "description": "Chaque panneau rWood - Panel commence par du bois issu de sources responsables. Dans le cadre de l'engagement de Re-Sound pour l'économie circulaire, nous maximisons l'utilisation de chaque tronc en le transformant en placage — offrant jusqu'à 40× plus de surface que du bois massif issu du même arbre.",
+      "description": "Chaque rWood Panel commence par un placage certifié FSC® issu de forêts gérées de manière responsable. En fin de vie, Re-Sound reprend les panneaux gratuitement.",
       "badge3Desc": "Fabriqué dans notre propre usine de Częstochowa (Pologne)",
-      "badge4Desc": "Déclaration environnementale de produit complète",
-      "badge5Desc": "Classé E1, répond aux normes d'émission les plus strictes",
-      "badge6": "Énergie Verte",
-      "badge6Desc": "Production alimentée par des sources d'énergie renouvelables"
+      "badge4Desc": "Déclaration environnementale de produit complète"
     },
     "specs": {
-      "tag": "TECHNIQUE",
-      "title": "Spécifications",
+      "tag": "DONNÉES TECHNIQUES",
+      "title": "Panneau, finitions et feu",
       "compositionTitle": "Composition",
       "fireTitle": "Sécurité Incendie",
       "certsTitle": "Certifications",
       "dimensionsTitle": "Dimensions",
-      "finishTitle": "Finition",
+      "finishTitle": "Placages et finitions",
       "processingTitle": "Traitement",
       "dimPanelWidth": "Largeur du panneau",
       "dimPanelLength": "Longueur du panneau",
-      "dimThicknessStd": "Épaisseur (standard)",
-      "dimThicknessSlim": "Épaisseur (slim)",
-      "dimWeight19": "Poids (19 mm)",
       "compTopLayer": "Couche supérieure",
-      "compTopLayerVal": "Placage A-grade, teinté et laqué",
+      "compTopLayerVal": "Placage de bois véritable de qualité A, fini en usine",
       "compCore": "Cœur",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, standard / MR / FR",
       "compBackLayer": "Couche arrière",
       "compBackLayerVal": "Placage de contrepoids",
-      "compBonding": "Collage",
-      "compBondingVal": "Technologie de presse HPLT",
-      "finishLacquerType": "Type de laque",
-      "finishLacquerVal": "Acrylate uréthane UV-cured",
-      "finishLayers": "Nombre de couches",
-      "finishGloss": "Niveau de brillance",
-      "finishGlossVal": "Super mat (3-5 GU)",
-      "finishAntiFingerprint": "Anti-empreintes",
-      "finishScratch": "Résistance aux rayures",
-      "fireStdMDF": "MDF standard",
-      "fireFRMDF": "MDF retardant de flamme",
       "certWoodSourcing": "Approvisionnement en bois",
       "certEnvironmental": "Environnement",
-      "certFelt": "Feutre (si acoustique)",
       "procSawing": "Sciage",
       "procSawingVal": "Outils de menuiserie standard",
-      "procEdgeBanding": "Chant",
-      "procEdgeBandingVal": "Chant en placage assorti disponible",
       "procCNC": "Usinage CNC",
-      "procEnvironment": "Environnement",
-      "procEnvironmentVal": "Usage intérieur (zones sèches)",
       "procMoisture": "Résistant à l'humidité",
-      "procMoistureVal": "Cœur MR disponible"
+      "procMoistureVal": "Cœur MR disponible",
+      "finishRanges": "Gammes de placage",
+      "finishRangesVal": "Nature : veinage vivant et caractériel · Gemini : ton égal et uniforme",
+      "finishTreatments": "Traitements de surface",
+      "finishTreatmentsVal": "Vernis naturel · pigmenté · stratifié HPL · film · peinture",
+      "finishCoreColours": "Couleurs d’âme",
+      "finishCoreColoursVal": "Brune, verte ou noire",
+      "finishEdgesVal": "Bois massif contre-plaqué pour des joints invisibles",
+      "finishFeltVal": "Voile noir ou blanc",
+      "finishMadeToOrder": "Sur commande",
+      "finishMadeToOrderVal": "Tout autre placage, teinte, pigment et finition",
+      "certWoodSourcingVal": "Tous les placages certifiés FSC®, issus de forêts gérées de manière responsable"
     },
     "related": {
       "tag": "PRODUITS ASSORTIS",
       "title": "Produits & Accessoires Assortis",
-      "groove": "rWood - Groove",
-      "edgebanding": "Chant Assorti",
-      "samples": "Échantillons Gratuits",
       "description": "Réalisez une continuité de design avec les produits Re-Sound coordonnés",
       "explore": "Explorer →",
       "orderSamples": "Commander des Échantillons →",
@@ -2690,51 +2726,50 @@
       "title": "Projets & Intérieurs"
     },
     "overview": {
-      "tag": "ARTISANAT",
-      "title": "Nature, Raffinée",
-      "description": "rWood - Panel apporte la chaleur et le caractère du bois massif dans un format préfini et prêt à l'emploi. Chaque panneau est fabriqué à partir d'un placage A-grade premium, collé sur un cœur MDF haute densité grâce à une technologie de pressage avancée — alliant beauté du bois naturel et stabilité dimensionnelle exceptionnelle.",
-      "feature1": "Placages A-grade premium — chêne, noyer, frêne, cerisier et bouleau",
-      "feature2": "Laque UV 6 couches résistante aux rayures et éclaboussures",
-      "feature3": "Cœur MDF haute densité (700 kg/m³) pour l'intégrité structurelle",
-      "feature4": "Construction équilibrée — placage sur les deux faces pour la stabilité",
-      "feature5": "Aucune finition supplémentaire requise — prêt à l'emploi"
+      "tag": "APERÇU",
+      "title": "La nature, raffinée",
+      "description": "rWood Panel apporte la chaleur et le caractère du bois véritable dans un format préfini, prêt à poser : un placage de qualité A sur une âme MDF, fini en usine. Les mêmes douze placages traversent toute la gamme rWood : panneaux lisses, Groove, Micro et Perf s’accordent sur un même mur.",
+      "feature1": "Douze placages en stock : chêne, noyer, frêne, hêtre et bouleau",
+      "feature2": "Deux gammes de placage : Nature (veinage vivant) et Gemini (ton uniforme)",
+      "feature3": "Âme MDF standard, hydrofuge ou ignifuge",
+      "feature4": "Vernis naturel ou pigmenté, stratifié HPL, film ou peinture",
+      "feature5": "Fini en usine, prêt à poser"
     },
     "anatomy": {
-      "tag": "ANATOMIE",
-      "layer1": "Couche de Placage Supérieure",
-      "layer1Desc": "Placage bois naturel A-grade, brossé, teinté et protégé par 6 couches de laque acrylate uréthane UV. Finition super mate au toucher soyeux.",
-      "layer2": "Cœur MDF Haute Densité",
-      "layer2Desc": "MDF FSC® 700 kg/m³. Disponible en grades standard, résistant à l'humidité (MR) et retardant de flamme (FR).",
-      "layer3": "Couche de Contreplacage",
-      "layer3Desc": "Le dos en placage assorti garantit la stabilité dimensionnelle et prévient le gauchissement. Options finies ou brutes.",
-      "keyAdvTitle": "Avantages Clés",
-      "description": "Chaque couche a un rôle — de la surface en bois authentique au cœur technique."
+      "tag": "COMPOSITION",
+      "layer1": "Face plaquée",
+      "layer1Desc": "Placage de bois véritable de qualité A, l’un des douze placages en stock ou tout placage sur commande, fini en usine.",
+      "layer2": "Âme MDF",
+      "layer2Desc": "MDF standard, hydrofuge (MR) ou ignifuge (FR) ; couleur d’âme brune, verte ou noire.",
+      "layer3": "Contre-placage",
+      "layer3Desc": "Un placage au dos maintient le panneau plan et stable.",
+      "description": "Chaque couche a sa fonction, de la surface en bois véritable à l’âme technique.",
+      "title": "Placage, âme, contre-placage"
     },
     "collection": {
-      "tag": "LA COLLECTION",
-      "title": "10 Placages Bois Sélectionnés",
-      "description": "Du bouleau scandinave serein au noyer américain dramatique — chaque placage est soigneusement sélectionné, brossé et fini pour mettre en valeur le caractère du bois.",
-      "filterAll": "Tous les Placages",
-      "customNote": "Espèces de placage et coloris de teinture personnalisés disponibles pour les commandes de projet de 50+ panneaux.",
+      "tag": "PLACAGES",
+      "title": "Douze placages de bois véritable",
+      "description": "Six chênes du clair au presque noir et six essences premium : noyer, frêne, hêtre et bouleau. Disponibles dans toute la gamme rWood, et tout autre placage, teinte ou finition sur commande.",
+      "filterAll": "Tous les placages",
+      "customNote": "Tout autre placage, teinte, pigment et finition sur demande. Les échantillons sont indicatifs : les placages naturels varient en veinage, couleur et figure, et les tons changent selon l’éclairage et le vernis. Vérifiez toujours sur un échantillon physique.",
       "categories": {
-        "lightNaturals": "Tons clairs",
-        "warmNaturals": "Tons chauds",
-        "deepTones": "Tons profonds"
+        "oak": "Placages de chêne",
+        "premium": "Essences premium"
       },
-      "origins": {
-        "europe": "Europe",
-        "scandinavia": "Scandinavie",
-        "northAmerica": "Amérique du Nord"
-      },
-      "grains": {
-        "straightToInterlocked": "Droit à entrelacé",
-        "subtleFineGrain": "Grain fin et subtil",
-        "fineStraightGrain": "Grain droit et fin",
-        "cathedralGrain": "Grain cathédrale",
-        "pronouncedGrain": "Grain prononcé",
-        "straightToWavy": "Droit à ondulé",
-        "deepCathedralGrain": "Grain cathédrale profond",
-        "richFlowingGrain": "Grain riche et fluide"
+      "filterLabel": "Filtrer les placages",
+      "items": {
+        "strawOak": "Chêne clair, neutre et chaleureux",
+        "silkOak": "Ton greige doux",
+        "honeyOak": "Chêne doré et chaleureux",
+        "umberOak": "Brun-gris fumé",
+        "smokedOak": "Brun profond et chaleureux",
+        "cocoaOak": "Espresso presque noir",
+        "walnut": "Brun riche et figuré",
+        "tobaccoWalnut": "Brun moyen chaleureux",
+        "whiteAsh": "Veinage clair et linéaire",
+        "whiteBeech": "Neutre clair et uniforme",
+        "birchSliced": "Veinage fin et clair",
+        "birchRotary": "Figure large et douce"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Produits & Accessoires Assortis",
       "description": "Réalisez une continuité de design avec les produits Re-Sound coordonnés.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Panneaux acoustiques à lamelles en placages bois assortis pour murs et plafonds.",
-      "item2Title": "Chant Assorti",
-      "item2Desc": "Chant plaqué préfini dans toutes les couleurs pour les travaux de menuiserie.",
+      "item1Desc": "Lames rainurées dans les mêmes placages pour murs et plafonds.",
+      "item2Title": "Chants contre-plaqués",
+      "item2Desc": "Chants en bois massif, contre-plaqués pour des joints invisibles sur les grandes surfaces.",
       "item3Title": "Échantillons Gratuits",
       "item3Desc": "Demandez des échantillons de toute combinaison de placage et de finition."
     },
     "cta": {
       "title": "Prêt à Élever Votre Projet ?",
       "description": "Obtenez un devis personnalisé, demandez des échantillons physiques ou parlez à notre équipe de spécification pour votre prochain projet.",
-      "circularNote": "Reprise Circulaire"
+      "circularNote": "Échantillons de placage gratuits · Reprise gratuite en fin de vie"
     },
     "downloads": {
       "productDataSheet": "Fiche Produit"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "D'où provient le placage certifié FSC ?",
-          "answer": "Le placage provient de forêts européennes certifiées FSC (principalement chêne et noyer). Le numéro de certificat de chaîne de contrôle est fourni par livraison sur demande."
+          "answer": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées de manière responsable. Le certificat de chaîne de contrôle est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Quel est le délai de livraison standard ?",
-          "answer": "Les placages en stock sont expédiés sous 3 à 4 semaines ; les essences hors stock et finitions personnalisées demandent 6 à 8 semaines. La capacité de production est réservée à la confirmation de commande."
+          "answer": "Le délai dépend du placage et de la finition et est confirmé à la commande. Des échantillons de placage gratuits sont disponibles avant de prescrire ; prix et quantité minimale sur demande."
         },
         "installMethod": {
           "question": "Comment les panneaux rWood sont-ils installés ?",
-          "answer": "Deux méthodes sont prises en charge : un système de clip dissimulé pour une installation rapide et un démontage facile, ou un collage direct pour les installations permanentes. Les deux sont détaillées dans le manuel d'installation."
+          "answer": "rWood Panel est un panneau MDF plaqué lisse et se travaille comme tel : scié et usiné CNC avec des outils de menuiserie standard, puis fixé au support ou intégré au mobilier. Le guide d’installation se trouve dans le bloc de téléchargements de cette page."
         },
         "substrateCleanup": {
           "question": "Que deviennent les panneaux en fin de vie ?",
-          "answer": "Re-Sound reprend gratuitement les panneaux en BE/NL/FR/DE/LU. Le placage est séparé du substrat en feutre recyclé ; les deux flux retournent dans notre chaîne d'approvisionnement plutôt que d'aller à la décharge."
+          "answer": "Re-Sound reprend gratuitement les panneaux en fin de vie en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "Gros plan du panneau MDF plaqué rWood - Panel montrant le détail du veinage",
       "closeUpOfLacqueredVeneerSurface": "Gros plan d'une surface en placage laqué",
-      "sustainablyManagedForest": "Forêt gérée durablement"
+      "sustainablyManagedForest": "Forêt gérée durablement",
+      "hero": "Panneau bois plaqué rWood Panel",
+      "heroIn": "rWood Panel en {veneer}",
+      "veneerSwatch": "Échantillon de placage {name}"
+    },
+    "kpi": {
+      "veneers": "placages de bois véritable",
+      "ranges": "gammes de placage : Nature et Gemini",
+      "fsc": "placages certifiés",
+      "anyValue": "Tout",
+      "anyLabel": "placage, teinte et finition sur commande",
+      "ariaLabel": "Chiffres clés"
+    },
+    "ordering": {
+      "title": "Délai et échantillons",
+      "orderCaption": "Commande",
+      "supplyCaption": "Fourniture",
+      "samplesVal": "Échantillons de placage gratuits",
+      "samplesQuotesDesc": "Commandez des échantillons de placage gratuits ou envoyez-nous vos plans pour un devis."
     }
   },
   "rpetFlexGroovePage": {

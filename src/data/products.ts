@@ -229,9 +229,9 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Groove',
     madeIn: 'PL', // Products_Data: made in Częstochowa
-    recycledContentPct: null, // TODO(needs-Michael): the earlier 60 % came from a Products_Data row with status Backlog (unconfirmed) — nothing is shown until confirmed
-    material: 'FSC-certified wood veneer on recycled-felt core',
-    certifications: ['FSC'],
+    recycledContentPct: null, // TODO(needs-Michael): the earlier 60 % came from a Products_Data row with status Backlog (unconfirmed); the 09/2026 datasheet gives no figure — nothing is shown until confirmed
+    material: 'FSC-certified oak or walnut veneer on an MDF core with recycled-PET felt backing', // datasheet 09/2026: veneer face, MDF lamellas (standard, MR or FR core), 3 mm recycled-PET felt
+    certifications: ['FSC', 'OEKO-TEX', 'EPD'],
     fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
     heroImage: '/images/products/rwood-groove/hero-rWood-Groove.webp',
@@ -239,7 +239,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-groove'),
     // Page: αw 0.90 (old JSON-LD 0.85); fire class depends on the core: standard MDF
     // D-s2,d2, fire-retardant MDF B-s1,d0 (FAQ said B-s2,d0) — all flagged.
-    specs: { kind: 'panel', format: '300 × 2400 / 2780 mm', thickness: '19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 5 }, // fire class confirmed by Michael, 6 Sep 2026
+    specs: { kind: 'panel', format: '300 × 2 400 / 2 780 mm', thickness: '10 / 19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 5 }, // fire class confirmed by Michael, 6 Sep 2026
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodGroovePage',
     metaKey: 'rwoodGroove',
@@ -250,8 +250,8 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Micro',
     madeIn: 'PL', // Products_Data: made in Częstochowa
-    recycledContentPct: null, // TODO(needs-Michael)
-    material: 'FSC-certified wood veneer on recycled-felt core',
+    recycledContentPct: null, // TODO(needs-Michael): not on the 09/2026 datasheet
+    material: 'FSC-certified wood veneer on a fire-retardant MDF core with acoustic fleece', // datasheet 09/2026: micro-perforated A-grade veneer, FR MDF core with sound chambers, black or white fleece
     certifications: ['FSC'],
     fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
@@ -259,7 +259,7 @@ export const PRODUCTS: Record<string, Product> = {
     cardImage: '/images/products/rwood-micro/hero-rwood-micro.webp',
     documents: panelDocs('rwood-micro'),
     // αw 0.90 (up to 1.00 with 50 mm mineral wool). Old JSON-LD claimed NRC 0.85 / 60 % recycled — unsupported, dropped.
-    specs: { kind: 'panel', format: '100–3050 × 100–1220 mm (custom)', thickness: '8–19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
+    specs: { kind: 'panel', format: '100–3 050 × 100–1 220 mm', thickness: '10 / 19 mm', alphaW: '0.90', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodMicroPage',
     metaKey: 'rwoodMicro',
@@ -270,8 +270,8 @@ export const PRODUCTS: Record<string, Product> = {
     family: 'rwood',
     name: 'rWood Perf',
     madeIn: 'PL', // Products_Data: made in Częstochowa
-    recycledContentPct: 17, // page badge "17% Recycled Content" (the old JSON-LD said 60 %) — TODO(needs-Michael): confirm
-    material: 'FSC-certified wood veneer on recycled-felt core',
+    recycledContentPct: 17, // page badge "17% Recycled Content" (the old JSON-LD said 60 %; not on the 09/2026 datasheet) — TODO(needs-Michael): confirm
+    material: 'FSC-certified wood veneer on a fire-retardant MDF core with acoustic fleece', // datasheet 09/2026: perforated A-grade veneer, FR MDF core light or dark, black or white fleece
     certifications: ['FSC'],
     fromPrice: null, // prices live in the catalogue
     priceUnit: PER_M2,
@@ -280,7 +280,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-perf'),
     // αw depends on the perforation pattern (PD8 0.85 … PH5 0.35). Page says B-s1,d0
     // (one message key mistypes it as "B2-s1, d0"); old JSON-LD said B-s2,d0.
-    specs: { kind: 'panel', format: '100–3050 × 100–1220 mm (custom)', thickness: '8–19 mm', alphaW: '0.35–0.85 (per pattern)', nrc: null, fireClass: 'B-s1,d0', finishCount: 8 },
+    specs: { kind: 'panel', format: '100–3 050 × 100–1 220 mm', thickness: '10 / 19 mm', alphaW: '0.35–0.85 (per pattern)', nrc: '0.90', fireClass: 'B-s1,d0', finishCount: 8 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodPerfPage',
     metaKey: 'rwoodPerf',
@@ -301,7 +301,7 @@ export const PRODUCTS: Record<string, Product> = {
     documents: panelDocs('rwood-veneer'),
     // No αw/NRC anywhere on the page (the blurb's "Class A" is unsupported — flagged).
     // TODO(needs-Michael): title says 10 wood species, the veneer collection lists 8.
-    specs: { kind: 'panel', format: '1220 × 2800 / 3050 mm', thickness: '12 / 19 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0 (FR MDF) / D-s2,d0', finishCount: 8 },
+    specs: { kind: 'panel', format: '1220 × 2800 / 3050 mm', thickness: '12 / 19 mm', alphaW: null, nrc: null, fireClass: 'B-s1,d0 (FR MDF) / D-s2,d0', finishCount: 12 },
     faqKeys: RWOOD_FAQ,
     namespace: 'rwoodVeneerPage',
     metaKey: 'rwoodVeneer',

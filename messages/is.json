@@ -19,13 +19,13 @@
     "divideTitle": "Divide – frístandandi hljóðskilrúm | Re-Sound",
     "divideDescription": "Frístandandi hljóðdeyfiskilrúm með segultengdum einingum: ísog á báðum hliðum, engin uppsetning, endurunninn textíll. Framleitt í Belgíu.",
     "rwoodGrooveTitle": "rWood Groove – rifjaðar hljóðdeyfiplötur, eik/hnota | Re-Sound",
-    "rwoodGrooveDescription": "Rifjaðar hljóðdeyfiplötur úr viði með FSC-vottuðum eikar- og hnotuspón á kjarna úr endurunnum filti. Ísog í flokki A, 4 listagerðir, 5 áferðir.",
+    "rwoodGrooveDescription": "Rifjuð hljóðdeyfiborð úr viði: FSC®-vottaður eikar- eða hnotuspónn á MDF-kjarna með 3 mm filti úr endurunnu PET. αw 0,90, flokkur A, fjögur listamynstur, fimm spónar, 10 og 19 mm.",
     "rwoodPerfTitle": "rWood Perf – götaðar hljóðdeyfiplötur úr viði | Re-Sound",
     "rwoodPerfDescription": "Götaðar hljóðdeyfiplötur úr viði með FSC-vottuðum spón: fjögur götunarmynstur fyrir breiðbandsísog, 8 áferðir, eldtefjandi kjarni.",
     "rwoodMicroTitle": "rWood Micro – örgötaðar hljóðdeyfiplötur úr viði | Re-Sound",
-    "rwoodMicroDescription": "Örgötaðar hljóðdeyfiplötur úr viði (0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur {fireClass}, möguleiki á baklýsingu.",
-    "rwoodVeneerTitle": "rWood Panel – spónlagðar hljóðdeyfiplötur, 10 tegundir | Re-Sound",
-    "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 10 viðartegundum: húsgagnagæði, FSC-vottaðar, EPD fáanlegt. Burstaðar, litaðar og lakkaðar, tilbúnar í uppsetningu.",
+    "rwoodMicroDescription": "Örgataðar hljóðdeyfiplötur úr viði (frá 0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur {fireClass}, sérsniðið allt að 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel – spónlagðar hljóðdeyfiplötur, 12 viðarspónar | Re-Sound",
+    "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 12 spónum úr ekta viði, Nature- eða Gemini-lína: FSC®-vottaðar, náttúrulegt eða litað lakk, HPL, filma eða málning. Verksmiðjufrágengnar, hvaða spónn sem er eftir pöntun.",
     "rpetGrooveTitle": "rPET Groove – rifjaðar PET hljóðdeyfiplötur, 12 litir | Re-Sound",
     "rpetGrooveDescription": "Rifjaðar PET hljóðdeyfiplötur úr endurunnum flöskum: 12 litir, 3 þykktir (12/24/36 mm), NRC allt að 0,90, brunaflokkur B-s1,d0. Framleitt í Póllandi.",
     "rpetPanelTitle": "rPET Panel – endurunnin PET hljóðdeyfiplata, 16 litir | Re-Sound",
@@ -1939,121 +1939,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "HLJÓÐDEYFIPLÖTUR ÚR VIÐI",
+      "tag": "RIFJUÐ HLJÓÐDEYFIPLATA ÚR VIÐI",
       "title": "rWood Groove: rifjaðar hljóðdeyfiplötur úr viði í eik og hnotu",
-      "tagline": "Náttúruleg fegurð, fullkomin hljóðfræði",
-      "description": "Færðu náttúrulega hlýju og fágaðan stíl inn í hvaða rými sem er með rWood - Groove hljóðdeyfiplötum. Hágæða eikar- og hnotuspónn ásamt hljóðísogandi flókabaki skapar samhljóm milli fagurfræði og hljóðvistar.",
-      "usp1": "FSC® vottað viður",
-      "usp2": "Frásog í flokki A",
-      "usp3": "Ókeypis endurheimtarkerfi"
+      "tagline": "Náttúruleg fegurð, fullkomin hljóðvist.",
+      "description": "Eikar- eða hnotuspónn í A-gæðum á MDF-kjarna, rifjaður af nákvæmni í lóðréttar listar á 3 mm filti úr endurunnu PET. Opnu rifurnar leiða hljóðið inn í filtið; borðin tengjast með falinni nót og fjöður. Borð 300 mm á breidd, 2 400 eða 2 780 mm á lengd, í 10 og 19 mm, fyrir veggi og loft.",
+      "usp1": "FSC®-vottaður spónn",
+      "usp2": "Ísogsflokkur A",
+      "usp3": "Ókeypis móttaka við lok líftíma"
     },
     "overview": {
-      "tag": "HANDVERK",
-      "title": "Þar sem náttúran hittir hönnun",
-      "subtitle": "Hágæða frágangur",
-      "description": "rWood - Groove plötur umbreyta hvaða herbergi sem er í fágað hljóðvistarumhverfi. Samspil nákvæmlega fræstra rifja og hágæða viðarspóns skapar yfirborð sem er bæði sjónrænt glæsilegt og hljóðvistarlega áhrifaríkt.",
-      "feature1": "Hágæða A-flokks eikar- og hnotuspónn",
-      "feature2": "Innbyggt hljóðvistarflókabak",
-      "feature3": "Óaðfinnanleg tenging milli platna",
-      "feature4": "Hentar fyrir veggi og loft",
-      "description2": "rWood - Groove plötur umbreyta hvaða herbergi sem er í rými náttúrulegrar fegurðar og hljóðvistarþæginda. Hver plata er með hágæða A-flokks eikar- eða hnotuspæni, nákvæmlega rifjuðum til að skapa hið einkennandi línulega útlit um leið og hljóðísog er hámarkað með innbyggðu flókabaki."
-    },
-    "oakCollection": {
-      "title": "Eikarsafn",
-      "description": "Náttúrulegur eikarspónn í mörgum bæsvalkostum, frá ljósum hrátóni til djúpra reyktra tóna."
+      "tag": "YFIRLIT",
+      "title": "Rifjuð eik eða hnota á filti úr endurunnu PET",
+      "feature1": "Eikar- eða hnotuspónn í A-gæðum",
+      "feature2": "3 mm filtbak úr endurunnu PET, svart eða grátt",
+      "feature3": "Falin nót-og-fjöður-tenging",
+      "feature4": "Fyrir veggi og loft, þurr innirými",
+      "description2": "rWood Groove sameinar eikar- eða hnotuspón í A-gæðum og MDF-kjarna sem er rifjaður af nákvæmni í lóðrétta lista. 3 mm filtið úr endurunnu PET á bak við listana tekur við hljóðinu sem berst inn um opnu rifurnar, sem dregur úr endurómun og bætir talskýrleika. Fjögur listamynstur, fimm spónar á lager, og hvaða spónn og áferð sem er eftir pöntun."
     },
     "feltBacking": {
-      "title": "Flóka-bakvalkostir",
-      "description": "Náttúrulega grár, svartur eða litaður hljóðvistarflóki sést í gegnum rifurnar."
+      "title": "Litur filts",
+      "description": "3 mm filt úr endurunnu PET á bak við listana, sýnilegt í gegnum rifurnar.",
+      "black": "Svart",
+      "grey": "Grátt"
     },
     "acoustics": {
-      "tag": "AFKÖST",
-      "title": "Framúrskarandi hljóðfrásog",
-      "benefit1Title": "Minnkuð endurómun",
-      "benefit1": "Náðu stjórn á bergmáli og bættu talskýrleika í hvaða rými sem er",
-      "benefit2Title": "Aukin þægindi",
-      "benefit2": "Skapið rólegra og friðsælla umhverfi",
-      "benefit3Title": "Prófuð frammistaða",
-      "benefit3": "Óháð staðfest hljóðgögn",
-      "description": "Einstök rifjuð hönnun ásamt hágæða hljóðdeyfifilti skilar framúrskarandi hljóðgleypni. Dragið úr bergmáli og eftirómun og skapið róleg og afkastamikil rými.",
-      "ratingLabel": "Frásog",
-      "description2": "Einstök rifjuð hönnun ásamt hágæða hljóðdeyfifilti skilar framúrskarandi hljóðgleypni. Dragið úr bergmáli, útrýmið hávaða og skapið rými sem eru jafn þægileg fyrir eyrað og augað.",
-      "diagramTitle": "Panelþversnið",
-      "soundAbsorbed": "Hljóð frásogað",
-      "testStandard": "Prófunarstaðall"
+      "tag": "HLJÓÐVIST",
+      "title": "Hljóðísog",
+      "description2": "Opnu rifurnar leiða hljóðið inn í filtið úr endurunnu PET á bak við listana, sem dregur úr endurómun og bætir talskýrleika.",
+      "tableTitle": "Hljóðísog",
+      "behindTitle": "Á bak við borðið",
+      "behindDesc": "Sé borðið fest á lekta getur holrýmið tekið við auka ísogsefni: hljóðfilti, rPET-plötu eða steinull.",
+      "note": "αw og ísogsflokkur samkvæmt EN ISO 11654. Áttundarbandsgildi fylgja með nýju prófunarröðinni."
     },
     "installation": {
-      "tag": "AUÐVELD UPPSETNING",
-      "title": "Lýtalaus uppsetning",
-      "step1Title": "Undirbúa yfirborð",
-      "step1Desc": "Festið lekta eða berið lím á hreint og þurrt undirlag",
-      "step2Title": "Staðsetja fyrstu plötuna",
-      "step2Desc": "Byrjið í horni og tryggið að allt sé í réttri línu og láréttu",
-      "step3Title": "Tengja plötur",
-      "step3Desc": "Rennið nót í fjöður fyrir samfellda tengingu",
-      "step4Title": "Klára og ganga frá",
-      "step4Desc": "Bætið við endalistum fyrir fagmannlegan frágang",
-      "description": "rWood - Groove plötur eru með nýstárlegri nót-og-fjöður tengingu fyrir hraða og einfalda uppsetningu.",
-      "description2": "rWood - Groove plötur eru með nýstárlegu nót-og-fjöður tengikerfi sem tryggir ósýnileg samskeyti og samfellt yfirborð. Hvort sem þér eruð fagmenn í uppsetningu eða vanir handverksmenn gerir kerfið okkar uppsetninguna einfalda."
+      "tag": "UPPSETNING",
+      "title": "Nót og fjöður, á lekta eða límt",
+      "step1Title": "Undirlag",
+      "step1Desc": "Lektar eða lím á hreinan, þurran og sléttan flöt.",
+      "step2Title": "Fyrsta borðið",
+      "step2Desc": "Byrjaðu í horni og athugaðu hallann.",
+      "step3Title": "Tenging",
+      "step3Desc": "Renndu fjöðrinni í nótina fyrir ósýnileg samskeyti.",
+      "step4Title": "Frágangur",
+      "step4Desc": "Lokaðu köntunum með endalistum.",
+      "description2": "Borðin eru fest á lekta eða límd á undirlagið og tengjast með falinni nót og fjöður, þannig að samskeytin hverfa í rifumynstrinu."
     },
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
-      "title": "Ábyrgur uppruni",
-      "badge1": "FSC® vottað",
-      "badge1Desc": "Viður úr skógum í ábyrgri umsjón",
-      "badge2": "Endurunnið flóki",
-      "badge2Desc": "Hljóðdeyfibaklag úr endurunnum efnum",
+      "title": "Ábyrg öflun",
+      "badge1": "FSC®-vottað",
+      "badge1Desc": "Viðaröflun FSC®-vottuð, vottorð C191539",
+      "badge2": "Filt úr endurunnu PET",
+      "badge2Desc": "3 mm filtbak úr endurunnu PET",
       "badge3": "Framleitt í Póllandi",
       "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
-      "badge4": "Ókeypis skil",
+      "badge4": "Ókeypis móttaka",
       "badge4Desc": "Plöturnar koma aftur til okkar án endurgjalds við lok líftíma",
-      "description": "Hver rWood - Groove plata er framleidd með sjálfbærni að leiðarljósi. FSC® vottaður viður okkar kemur úr skógum í ábyrgri umsjón og hljóðdeyfibaklagið er úr endurunnum efnum.",
-      "description2": "Hver rWood - Groove plata er framleidd með sjálfbærni að leiðarljósi. FSC® vottun okkar tryggir að viðurinn kemur úr skógum í ábyrgri umsjón sem skila umhverfislegum, félagslegum og efnahagslegum ávinningi."
+      "description2": "FSC®-vottaður viður, bak úr endurunnu PET og ókeypis móttaka við lok líftíma.",
+      "badge2DescCert": "3 mm filtbak úr endurunnu PET, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Umhverfisyfirlýsing vöru samkvæmt ISO 14025 og EN 15804"
     },
     "specs": {
-      "tag": "TÆKNILEGT",
-      "title": "Forskriftir",
-      "acousticsTitle": "Hljóðvirkni",
-      "fireTitle": "Eldvarnir",
-      "certsTitle": "Vottanir",
-      "applicationsTitle": "Notkun",
-      "dimensionsTitle": "Mál",
-      "materialsTitle": "Efni",
-      "dimPanelWidth": "Panel breidd",
-      "dimPanelLength": "Lengd plötu",
-      "dimThickness": "Þykkt",
-      "dimGrooveDepth": "Dýpt rifu",
-      "dimGrooveWidth": "Breidd rifu",
-      "matVeneer": "Spónn",
-      "matVeneerVal": "A-flokks eik / valhneta",
-      "matCore": "Kjarni",
-      "matCoreVal": "MDF (staðlað / rakaþolið / eldtefjandi)",
-      "matBacking": "Baklag",
-      "matBackingVal": "Endurunnið PET (3 mm)",
-      "matFinish": "Yfirborð",
-      "finishVal": "Olía / lakk",
-      "stdPanels": "Staðlaðar plötur",
-      "fireMdfVal": "Eldþolið MDF",
-      "woodSourcing": "Viðaruppspretta",
-      "feltCert": "Felt vottun",
-      "envLabel": "Umhverfislegt",
-      "vocLabel": "VOC-losun",
-      "vocVal": "E1 / Lítil losun",
-      "appInstall": "Uppsetning",
-      "appWalls": "Veggar og loft",
-      "appEnv": "Umhverfi",
-      "appEnvVal": "Innandyra (þurr svæði)",
-      "appMoist": "Rakamótstæður",
-      "appMoistVal": "Tiltækt fyrir raka staði",
-      "appConn": "Tenging",
-      "appConnVal": "Tunga og raufar"
+      "tag": "TÆKNILEGAR UPPLÝSINGAR",
+      "title": "Borð, bruni og losun",
+      "acousticsTitle": "Hljóðísog",
+      "fireTitle": "Bruni (EN 13501-1) og losun",
+      "dimPanelWidth": "Breidd",
+      "dimPanelLength": "Lengd",
+      "matCoreVal": "Staðal-, MR- eða FR-MDF",
+      "matFinish": "Áferð",
+      "finishVal": "Gegndræp olía eða lakk",
+      "plankTitle": "Borð",
+      "dimGroove": "Rifa",
+      "dimGrooveVal": "15 mm breið, 7 · 15 mm djúp",
+      "feltVal": "Endurunnið PET, 3 mm, svart eða grátt",
+      "connVal": "Falin nót og fjöður",
+      "weightPlank": "Þyngd hvers borðs",
+      "weightPlankVal": "u.þ.b. 6,4–8,3 kg",
+      "tolerances": "Vikmörk",
+      "tolerancesVal": "Þykkt ± 0,2 mm, þyngd ± 10 %",
+      "octaveBands": "Áttundarbandsgildi",
+      "octaveBandsVal": "Fylgja með nýju prófunarröðinni",
+      "fireStdCore": "Staðal MDF-kjarni",
+      "fireFrCore": "FR MDF-kjarni",
+      "fireFelt": "Filtbak",
+      "fscVal": "FSC®-vottað, C191539",
+      "epdVal": "EPD samkvæmt ISO 14025 · EN 15804",
+      "finishTitle": "Áferð",
+      "oakOilColours": "Olíulitir eik",
+      "oakOilColoursVal": "Náttúrulegur, Hvítur, Glær, Brúnn, Dökkbrúnn, Svartur",
+      "walnutFinish": "Hnota",
+      "walnutFinishVal": "Náttúruleg, olíuborin",
+      "feltColours": "Litir filts",
+      "feltColoursVal": "Svart eða grátt",
+      "optionsTitle": "Valkostir",
+      "surfaceVal": "Olíuborið eða málað, ómeðhöndlað eftir beiðni",
+      "madeToOrder": "Eftir pöntun",
+      "madeToOrderVal": "Hvaða spónn og áferð sem er",
+      "accessories": "Aukahlutir",
+      "accessoriesVal": "Endalistar, hornlistar, lektar, viðgerðarsett"
     },
     "accessories": {
-      "tag": "FULLKOMNAÐU LÍKIÐ",
-      "title": "Fylgihlutir",
-      "endMouldings": "Endalistar",
-      "cornerProfiles": "Hornaprofíl",
-      "description": "Fagmannlegur lokafrágangur fyrir fullkomna niðurstöðu",
+      "tag": "AUKAHLUTIR",
+      "title": "Aukahlutir",
+      "description": "Endalistar, hornlistar, lektar og viðgerðarsett.",
       "item1Title": "Endalistar",
       "item1Desc": "Hreinar brúnir þar sem plötur mæta öðrum flötum",
       "item2Title": "Hornaprofíl",
@@ -2068,57 +2058,50 @@
       "title": "Verkefni og Uppsetningar"
     },
     "patterns": {
-      "tag": "HÖNNUNARVALKOSTIR",
-      "title": "Hágæða frágangur",
-      "description": "Fjögur ólík rifjamynstur sem falla að hvaða byggingarlistarsýn sem er. Frá klassískum lektum til nútímalegra línulegra mynstra – hvert mynstur breytir veggnum í lifandi flöt.",
-      "description2": "Fjögur ólík rifjamynstur sem falla að hvaða byggingarlistarsýn sem er. Frá klassískum, jafnvægum hlutföllum til djarfra breiðra ræma – finnið fullkomna tjáningu fyrir rýmið yðar."
+      "tag": "MYNSTUR",
+      "title": "Fjögur listamynstur",
+      "description2": "Fjögur listamynstur á sama 300 mm borðinu, frá hinu klassíska Original með sex listum til hins breiða 3-Lamella. Teikningarnar eru í mælikvarða: listabreiddir og 15 mm rifur eins og á borðinu.",
+      "drawingAlt": "Mynstur {name}, {dims}, í mælikvarða á 300 mm borði",
+      "lamellaCount": "{count} listar",
+      "note": "Borðbreidd 300 mm, rifubreidd 15 mm. Staðalstærð 19 × 300 × 2 400 eða 2 780 mm. Þyngd hvers borðs u.þ.b. 6,4–8,3 kg. Vikmörk: þykkt ± 0,2 mm, þyngd ± 10 %."
     },
     "materials": {
       "tag": "EFNI",
-      "oilFinishesTitle": "Olíu-yfirborð",
-      "oilFinishesDesc": "Olíuáferðir í náttúrulegum lit, hvítu, glæru, brúnu, dökkbrúnu og svörtu. Hver þeirra smýgur djúpt inn í viðinn og veitir varanlega og ekta vörn.",
+      "oilFinishesTitle": "Eik: gegndræp olía eða lakk",
+      "oilFinishesDesc": "Áferð: gegndræp olía eða lakk. Olíulitir fyrir eik: Náttúrulegur, Hvítur, Glær, Brúnn, Dökkbrúnn og Svartur.",
       "walnutTitle": "Hnota",
-      "walnutDesc": "Ríkir, hlýir tónar með einkennandi æðamynstri. Úrvalskosturinn fyrir vandaðar innréttingar.",
-      "description": "Hver rWood - Groove plata er framleidd úr A-flokks spæni sem tryggir samræmda æðabyggingu og lit. Olíuborið yfirborðið er tilbúið til uppsetningar án frekari meðhöndlunar.",
-      "colorSelector": "Veldu viðarfrágang",
-      "layer1Name": "Eikar / valhnetuspjald",
-      "layer1Desc": "Hágæða A-flokks náttúrutré",
-      "layer2Name": "MDF kjarni með rifum",
-      "layer2Desc": "Hljóðinngangsrásir",
-      "layer3Name": "Akústískt flóki-bak",
-      "layer3Desc": "Endurunnið PET, 3 mm þykkt",
-      "waveLabel": "Hljóðbylgjur ísognar",
-      "certNote": "Óháð prófað og vottað samkvæmt ISO 11654",
-      "description2": "Hver rWood - Groove plata er framleidd úr A-flokks spæni sem tryggir samræmt æðamynstur og framúrskarandi gæði. Veljið úr úrvali okkar af olíubornum og máluðum áferðum sem fullkomna innanhússhönnun yðar."
+      "walnutDesc": "Náttúruleg, olíuborin. Djúpbrúnn með æðamynstri (Walnut) eða hlýr miðbrúnn (Tobacco Walnut).",
+      "colorSelector": "Spónn",
+      "selectPrompt": "Veldu spón"
     },
     "downloads": {
       "installationGuide": "Uppsetningarleiðbeiningar",
       "colorChart": "Lita- og yfirborðsleiðbeiningar"
     },
     "cta2": {
-      "freeNote": "Ókeypis sýnishorn í boði • FSC® vottað"
+      "freeNote": "Ókeypis spónsýnishorn · FSC®-vottaður spónn"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Hvaðan kemur FSC-vottaða spónlagið?",
-          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+          "answer": "Spónninn er FSC®-vottaður: chain-of-custody-vottorð C191539. Allir tólf rWood-spónarnir koma úr skógum sem er stjórnað á ábyrgan hátt; vottorðið fæst eftir beiðni."
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
-          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1 — sá kjarni sem við tilgreinum fyrir flóttaleiðir og opinberar byggingar. Brunavottorðið er í niðurhalshlutanum á þessari síðu."
+          "answer": "Það fer eftir kjarnanum. Með eldtefjandi (FR) MDF-kjarna er rWood Groove flokkað B-s1,d0 samkvæmt EN 13501-1; á staðal MDF-kjarna er flokkunin D-s2,d2. Filtbakið er B-s1,d0. Tilgreindu FR-kjarna fyrir flóttaleiðir og opinberar byggingar."
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+          "answer": "Afhendingartíminn er háður lagerstöðu og er staðfestur við pöntun. Ókeypis spónsýnishorn eru í boði áður en þú tilgreinir; verð og lágmarkspöntun eftir beiðni."
         },
         "installMethod": {
           "question": "Hvernig eru rWood plötur settar upp?",
-          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+          "answer": "rWood Groove er fest á lekta eða límt á hreint, þurrt og slétt undirlag. Byrjaðu í horni, renndu fjöður hvers borðs í nót þess fyrra fyrir ósýnileg samskeyti og lokaðu köntunum með endalistum."
         },
         "substrateCleanup": {
           "question": "Hvað verður um plöturnar í lok líftímans?",
-          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+          "answer": "Re-Sound tekur við borðunum án endurgjalds við lok líftíma í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
         }
       }
     },
@@ -2126,139 +2109,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove hljóðdeyfiplata í nútímalegu innanrými",
       "woodFinishSamples": "Sýnishorn af viðaráferðum",
       "panelInstallationProcess": "Uppsetningarferli platna",
-      "sustainableForestry": "Sjálfbær skógrækt"
+      "sustainableForestry": "Sjálfbær skógrækt",
+      "hero": "rWood Groove rifjuð hljóðdeyfiborð úr viði",
+      "heroIn": "rWood Groove rifjuð hljóðdeyfiborð úr viði í {finish}",
+      "veneerSwatch": "Spónsýni {name}"
     },
     "options": {
       "originalDesc": "Klassísk hönnun með 6 rimlum",
       "mixedDesc": "Kraftmiklar blandaðar breiddir",
       "4lamellaDesc": "Djarfir, breiðir rimlar",
       "3lamellaDesc": "Áberandi, extra breiðir rimlar"
+    },
+    "kpi": {
+      "thickness": "mm þykkt",
+      "alphaWClass": "αw, ísogsflokkur {cls}",
+      "alphaW": "αw, vegið hljóðísog",
+      "fire": "brunaviðbrögð, FR MDF-kjarni",
+      "patterns": "listamynstur á 300 mm borðum",
+      "ariaLabel": "Lykiltölur"
+    },
+    "buildUp": {
+      "tag": "UPPBYGGING",
+      "title": "Þrjú lög, eitt borð",
+      "layer1": "Spónhlið",
+      "layer1Desc": "Eik eða hnota í A-gæðum",
+      "layer2": "MDF-listar",
+      "layer2Desc": "Staðal-, MR- eða FR-kjarni",
+      "layer3": "Filt úr endurunnu PET",
+      "layer3Desc": "3 mm, svart eða grátt",
+      "fixing": "Fest á lekta eða límt á undirlagið."
+    },
+    "veneers": {
+      "tag": "SPÓNAR OG ÁFERÐIR",
+      "title": "Eik og hnota, hvaða spónn sem er eftir pöntun",
+      "description": "Fimm spónar á lager, olíubornir eða lakkaðir. Veldu spón til að sjá hann á borðinu.",
+      "silkOak": "Mjúkur greige tónn",
+      "strawOak": "Ljós, hlý og hlutlaus eik",
+      "umberOak": "Reykt grábrúnt",
+      "walnut": "Djúpbrúnt með æðamynstri",
+      "tobaccoWalnut": "Hlýr miðbrúnn",
+      "guideNote": "Allir tólf rWood-spónarnir eru sýndir í rWood lita- og áferðarleiðbeiningunum. Ekta viður er breytilegur að lit og æðamynstri: biddu um sýnishorn áður en þú tilgreinir."
+    },
+    "ordering": {
+      "title": "Afhendingartími og sýnishorn",
+      "orderCaption": "Pöntun",
+      "supplyCaption": "Afhending",
+      "leadTimeVal": "Háð lagerstöðu, staðfest við pöntun",
+      "samplesVal": "Ókeypis spónsýnishorn",
+      "samplesQuotesDesc": "Pantaðu ókeypis spónsýnishorn eða sendu okkur teikningarnar þínar fyrir tilboð."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "GATAÐAR HLJÓÐFRÆÐILEGAR VIÐARPANELER",
+      "tag": "GÖTUÐ HLJÓÐDEYFIPLATA ÚR VIÐI",
       "title": "rWood Perf: götaðar hljóðdeyfiplötur úr viði",
-      "tagline": "Nákvæmar götur, hámarks frásog",
-      "description": "Afkastamiklar boraðar hljóðdeyfiplötur sem sameina náttúrulega fegurð viðar og framúrskarandi hljóðgleypni. Kjarni úr eldtefjandi MDF-trefjaplötu (Medium Density Fiberboard) og yfirspónlagðar brúnir tryggja hæsta stig brunaöryggis og hljóðstýringar.",
-      "usp1": "Kringlóttar götur",
+      "tagline": "Nákvæm götun, hámarks hljóðísog.",
+      "description": "Hringlaga göt boruð í gegnum spónlagða, eldtefjandi MDF-plötuna hleypa hljóðinu inn í hljóðdúkinn og ísogsefnið að baki. Fjögur mynstur, frá hógværu 5 mm gati upp í tvöfalt 8 mm mynstur með 24 % opnu flatarmáli.",
+      "usp1": "Hringlaga göt",
       "usp2": "Brunaflokkur {fireClass}",
       "usp3": "αw {alphaW} eftir mynstri",
-      "description2": "Afkastamiklar boraðar hljóðdeyfiplötur sem sameina náttúrulega fegurð viðar og framúrskarandi hljóðgleypni. Kjarni úr eldtefjandi MDF-trefjaplötu (Medium Density Fiberboard) og yfirspónlagðar brúnir tryggja hæsta stig brunaöryggis og hljóðstýringar fyrir kröfuhörð opinber rými."
+      "description2": "Sérsniðið fyrir veggi og loft, allt að 3 050 × 1 220 mm, í 10 og 19 mm. Átta spónategundir á lager, hvaða spónn og áferð sem er eftir pöntun."
     },
     "patterns": {
-      "tag": "GATAMYNSTUR",
-      "title": "Veldu mynstur þitt",
-      "description": "Fjögur boruð götunarmynstur með kvörðuðum hljóðeiginleikum. Frá hámarks opnu flatarmáli fyrir mesta hljóðgleypni til fíngerðra örgatana fyrir hreint viðarútlit.",
-      "coreMatchTitle": "Passaðu kjarna við fineer þitt til að láta göturnar hverfa — eða gerðu þær að hönnunarþætti.",
-      "coreColorTitle": "Kjarnalitur",
-      "coreMatchDesc": "Veljið kjarna í lit spónsins svo götin falli inn í yfirborðið, eða veljið kjarna í andstæðum lit fyrir sterka hönnunaryfirlýsingu.",
-      "description3": "Fjögur boruð götunarmynstur með kvörðuðum hljóðeiginleikum. Frá hámarks opnu flatarmáli fyrir kröfuhörð hljóðrými til látlausari mynstra sem setja sjónræna fágun í fyrirrúm.",
-      "coreMatchDesc2": "Veljið kjarna í lit spónsins svo götin falli inn í yfirborðið, eða veljið kjarna í andstæðum lit fyrir skreytandi áhrif."
-    },
-    "coreColor": {
-      "title": "Kjarnalitur",
-      "description": "Svart eða náttúrulegur hljóðfræðilegur filt sýnilegur í gegnum göturnar — hógvær en áhrifaríkur."
+      "tag": "GÖTUN",
+      "title": "Fjögur götunarmynstur",
+      "description": "Gatastærð og opið flatarmál fyrir hvert mynstur. Því stærra sem opna flatarmálið er, því meira hljóðísog.",
+      "coreColorTitle": "Litur kjarna",
+      "coreMatchDesc2": "Ljós eða dökkur eldtefjandi MDF-kjarni, sýnilegur í gegnum götin: veljið lit í samræmi við spóninn svo götin renni saman við viðinn, eða andstæðan lit fyrir grafísk áhrif.",
+      "spec": "Ø {d} mm · {pct} % opið",
+      "specDouble": "2 × Ø {d} mm · {pct} % opið",
+      "drawingNote": "Teikningar u.þ.b. 1:2, gatastærð og opið flatarmál eins og tilgreint er fyrir hvert mynstur.",
+      "coreLight": "Ljós kjarni",
+      "coreDark": "Dökkur kjarni"
     },
     "surfaces": {
-      "tag": "YFIRBORÐ",
-      "title": "Úrvals viðaryfirborð",
-      "natureVeneers": "Nature-spjöld",
-      "natureDesc": "Lifandi tilbrigði og einkennandi yfirbragð sem fylgir hverri viðartegund.",
-      "geminiVeneers": "Gemini-spjöld",
-      "geminiDesc": "Jafn litatónn og bygging fyrir samræmdara og einsleitara útlit.",
-      "finishes": "Yfirborðsfrágangur",
-      "description": "Hver rWood - Perf plata er framleidd með yfirspónlögðum brúnum – hefðbundinni handverksaðferð sem skapar fullkomlega samfelld samskeyti og eyðir sýnilegum plötumörkum.",
-      "finish1": "Náttúrulegt lakk",
-      "finish2": "Litað",
-      "finish3": "HPL-lamínat",
-      "colorSelector": "Veldu viðarspjald",
-      "description3": "Hver rWood - Perf plata er framleidd með yfirspónlögðum brúnum – hefðbundinni framleiðsluaðferð þar sem gegnheill viðarkantur er felldur utan um plötuna áður en spónninn er lagður á. Þannig lítur hver plata út fyrir að vera alfarið úr viði, með samfelldum samskeytum yfir stóra fleti."
+      "colorSelector": "Spónn á lager",
+      "selectVeneer": "Veldu spón"
     },
     "acoustics": {
-      "tag": "AFKÖST",
-      "title": "Hannað fyrir hljóð",
-      "benefit1Title": "Breiðbands ísog",
-      "benefit1": "Virkar á öllu tíðnisviðinu, frá lágum tónum til hárra",
-      "benefit2Title": "Brunaöryggi",
-      "benefit2": "Brunaflokkur {fireClass} með eldtefjandi MDF-kjarna (EN 13501-1)",
-      "benefit3Title": "Stillanleg frammistaða",
-      "benefit3": "Fjögur götunarmynstur fyrir sérsniðnar hljóðlausnir",
-      "description": "Nákvæmlega boruð göt hleypa hljóðbylgjum inn í plötuna og áfram í gleypilagið þar fyrir aftan. Holrýmið aftan við plötuna eykur enn frekar gleypni lágra tíðna.",
-      "layer1Name": "Viðarspjald + götun",
-      "layer1Desc": "Yfirspónlagt, nákvæmlega borað yfirborð",
-      "layer2Name": "Kjarni úr eldtefjandi MDF-trefjaplötu",
-      "layer2Desc": "Eldtefjandi, eðlisþyngd 0,45 kg/m³",
-      "layer3Name": "Hljóðtrefjasplitt",
-      "layer3Desc": "Kemur í veg fyrir trefjaflæði",
-      "layer4Name": "Steinullarhola",
-      "layer4Desc": "30–50 mm fyrir breiðbandsgleypni",
-      "waveLabel": "Hljóðbylgjur ísognar",
-      "certNote": "Óháð prófað og vottað samkvæmt ISO 11654",
-      "ratingLabel": "Frásog",
-      "description3": "Nákvæmlega boruð göt hleypa hljóðbylgjum inn í plötuna og áfram í holrýmið þar fyrir aftan. Ásamt steinullareinangrun skilar rWood - Perf framúrskarandi breiðbandsgleypni yfir allt tíðnisviðið – frá djúpum bassa til hæstu tóna.",
-      "diagramTitle": "Panelþversnið",
-      "fireRating": "Brunamat",
-      "noiseReduction": "Hávaðaminnkun",
-      "ratingPerPattern": "eftir mynstri"
+      "tag": "HLJÓÐVIST",
+      "title": "Hljóðísog",
+      "description": "Hljóðið berst um götin inn í hljóðdúkinn og holrýmið fyrir aftan plötuna. Því stærra sem opna flatarmálið er, því meira hljóðísog.",
+      "tableTitle": "Hljóðísog",
+      "alphaWByPattern": "αw, eftir mynstri",
+      "withWool": "Með 50 mm steinull",
+      "withWoolVal": "αw allt að 1.00",
+      "mounting": "Uppsetning við prófun",
+      "mountingVal": "Holrými með steinull",
+      "pattern": "Mynstur",
+      "openArea": "Opið flatarmál",
+      "class": "Flokkur",
+      "octaveTitle": "αs eftir áttundarböndum, mynstur PD8 með holrými",
+      "footnote": "αs eftir áttundarböndum: mynstur PD8 með holrými, til viðmiðunar. Gildin ráðast af mynstrinu, dýpt holrýmis og ísogsefninu fyrir aftan plötuna."
     },
     "installation": {
-      "tag": "FALIN UPPSETNING",
-      "title": "Lýtalaus uppsetning",
-      "step1Title": "Festa undirramma",
-      "step1Desc": "Festið málmbrautir á vegg- eða loftgrind",
-      "step2Title": "Setja einangrun",
-      "step2Desc": "Setjið steinull í holrýmið fyrir bestu hljóðgleypni",
-      "step3Title": "Klemmuplötur",
-      "step3Desc": "Falið klemmukerfi fyrir uppsetningu án verkfæra og án bila",
-      "step4Title": "Fullkomin samstilling",
-      "step4Desc": "Samfelld götunarmynstur með samfelldum yfirspónlögðum samskeytum",
-      "description": "rWood - Perf plötur eru settar upp með földu klemmukerfi fyrir ósýnilegt og samfellt útlit.",
-      "description3": "rWood - Perf plötur eru settar upp með földu klemmukerfi sem er hannað fyrir nákvæmni, hraða og gallalausa lokaniðurstöðu. Kerfið tryggir samskeyti án bila og fullkomlega samstillt götunarmynstur yfir margar plötur."
+      "tag": "UPPSETNING",
+      "title": "Falið klemmukerfi fyrir veggi og loft",
+      "step1Title": "Undirgrind",
+      "step1Desc": "Málmbrautir á vegg- eða loftgrind.",
+      "step2Title": "Einangrun",
+      "step2Desc": "Steinull í holrýminu fyrir besta hljóðísog.",
+      "step3Title": "Plötur",
+      "step3Desc": "Faldar klemmur, uppsetning án verkfæra og án bils.",
+      "step4Title": "Niðurstaða",
+      "step4Desc": "Mynstur í línu frá plötu til plötu.",
+      "description": "Málmbrautir, steinull í holrýminu, og svo eru plöturnar smelltar á án verkfæra og án bils þannig að götunarmynstrið heldur áfram frá plötu til plötu."
     },
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
-      "title": "Byggt til að vara, byggt á ábyrgðan hátt",
-      "badge1": "FSC® vottað",
-      "badge2": "{pct} % endurunnið efni",
+      "title": "Framleitt á ábyrgan hátt",
+      "badge1": "FSC®-vottaður spónn",
+      "badge2": "{pct} % endurunnið efni",
       "badge3": "Framleitt í Póllandi",
-      "badge4": "Mjög lág losun",
-      "badge1Desc": "Viður úr skógum í ábyrgri umsjón",
-      "badge2Desc": "Endurunnið efni frá neytendum í kjarnanum",
-      "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi) — stuttar aðfangakeðjur",
-      "badge4Desc": "Ekkert viðbætt formaldehýð",
-      "description": "rWood - Perf sameinar endingargóð, náttúruleg efni og ábyrga framleiðsluaðferð.",
-      "description3": "rWood - Perf sameinar endingargóð, náttúruleg efni og ábyrga öflun hráefna: eldtefjandi MDF-kjarna án viðbætts formaldehýðs og spón úr skógum í sjálfbærri umsjón."
+      "badge4": "Formaldehýðflokkur E1",
+      "badge1Desc": "Viður úr skógum sem eru nýttir á ábyrgan hátt",
+      "badge2Desc": "Endurunnið efni í plötunni",
+      "badge3Desc": "Framleitt í okkar eigin verksmiðju í Częstochowa (Póllandi)",
+      "badge4Desc": "Eldtefjandi MDF-kjarni með lítilli losun, fyrir þurr innirými",
+      "description": "FSC®-vottaður spónn, formaldehýðflokkur E1 og framleiðsla í okkar eigin verksmiðju í Częstochowa. Við lok líftíma tökum við plöturnar til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
     },
     "specs": {
-      "tag": "TÆKNILEGT",
-      "title": "Forskriftir",
-      "dimensionsTitle": "Mál – veggir og loft",
-      "acousticsTitle": "Hljóðvirkni",
-      "perforationsTitle": "Götunarvalkostir",
-      "fireTitle": "Eldvarnir",
-      "certsTitle": "Vottanir",
-      "customSizes": "Sérstærðir",
-      "dimThickness": "Þykkt",
-      "dimWeight": "Þyngd",
-      "matTitle": "Efni",
-      "matCustomColor": "Sérsniðnir litatónar með gegnsærri eða þekjandi litun",
-      "matLacquerFinish": "Frá ofurmöttu til háglans UV-hertu lakki",
-      "surfaceLabel": "Yfirborð",
-      "surfaceVal": "Spjald / HPL / filma / málning",
-      "coreVal": "Kjarni úr MDF-trefjaplötu (brúnn / grænn / svartur)",
-      "edgesLabel": "Brúnir",
-      "edgesVal": "Yfir-spjaldað gegnumheilt tré",
-      "acousticFelt": "Hljóðfræðilegt felt",
-      "feltColor": "Svart / hvítt",
-      "reactionFire": "Bruna-viðbrögð",
-      "resistanceFire": "Bruna-þol",
-      "fireRetardant": "Brunahindrun",
-      "vocLabel": "VOC-losun",
-      "vocVal": "TVOC samþykkt (ISO 16000)",
-      "formaldehydeLabel": "Formaldehýð",
-      "formaldehydeVal": "Engin viðbætt þvagefnis-formaldehýð",
-      "envLabel": "Umhverfislegt"
+      "tag": "TÆKNILEGAR UPPLÝSINGAR",
+      "title": "Plata, eldur og losun",
+      "acousticsTitle": "Hljóðísog",
+      "perforationsTitle": "Götunarmynstur",
+      "fireTitle": "Eldur og losun",
+      "matTitle": "Yfirborð og valkostir",
+      "surfaceLabel": "Yfirborðsmeðferð",
+      "surfaceVal": "Náttúrulegt lakk · litað · HPL-lagskipting · filma · málning",
+      "coreVal": "Eldtefjandi MDF, ljós eða dökkur",
+      "edgesLabel": "Kantar",
+      "edgesVal": "Spónlagður gegnheill viður fyrir samskeytalaus samsetningu",
+      "feltColor": "Svartur eða hvítur",
+      "reactionFire": "Viðbrögð við eldi",
+      "panelTitle": "Plata",
+      "sizes": "Stærðir",
+      "fleeceLabel": "Hljóðdúkur",
+      "acWithMinWool": "Með 50 mm steinull",
+      "acWithMinWoolVal": "αw allt að 1.00",
+      "fireStandard": "Brunastaðall",
+      "finishLabel": "Lakk",
+      "finishVal": "UV-hert, ofurmatt til háglans, náttúrulegt eða litað",
+      "rangesLabel": "Spónlínur",
+      "rangesVal": "Nature (lifandi æðar með karakter) · Gemini (jafn, samfelldur tónn)",
+      "coreColoursLabel": "Litir kjarna",
+      "appsTitle": "Uppsetning",
+      "appInstall": "Notkun",
+      "appWalls": "Veggir og loft",
+      "mountingSystem": "Festing",
+      "subframe": "Undirgrind",
+      "mounting": "Uppsetning við prófun",
+      "mountingVal": "Holrými með steinull",
+      "pd8Val": "2 × Ø 8 mm · 24 % opið",
+      "ph10Val": "Ø 10 mm · 18 % opið",
+      "ph8Val": "Ø 8 mm · 12 % opið",
+      "ph5Val": "Ø 5 mm · 5 % opið",
+      "envVal": "Innandyra, þurr rými",
+      "coreColoursVal": "Brúnn, grænn eða svartur: ljós eða dökkur til að fela götin eða draga þau fram",
+      "subframeVal": "Málmbrautir",
+      "concealedClip": "Faldar klemmur, án verkfæra, án bils"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -2266,191 +2275,228 @@
     },
     "overview": {
       "tag": "SÖNNUÐ FRAMMISTAÐA",
-      "description": "rWood - Perf plötur eru meðal áhrifaríkustu hljóðlausna fyrir veggi. Nákvæmlega boruð göt hleypa hljóði í gegnum skreytandi viðaryfirborðið inn í mjög hljóðgleypinn kjarnann.",
       "feature1": "Eldtefjandi MDF-kjarni ({fireClass})",
-      "feature2": "Yfirspónlagðar brúnir fyrir samfelld samskeyti",
-      "feature3": "Ljós eða dökkur kjarni fyrir látlausara mynstur",
-      "feature4": "Sérsniðin stærð allt að 3050 × 1220 mm",
-      "description3": "rWood - Perf plötur eru meðal áhrifaríkustu og mest notuðu lausnanna fyrir hljóðdeyfandi veggi og loft. Nákvæmlega boruðu hringlaga götin skapa stórt opið flatarmál sem tryggir mikla hljóðgleypni, á meðan hágæða viðarspónn tryggir náttúrulegt og hlýlegt útlit.",
-      "description4": "Ásamt kjarna úr eldtefjandi MDF-trefjaplötu og yfirspónlögðum brúnum fyrir samfelld samskeyti eru þessar plötur hannaðar fyrir ströngustu kröfur í stórum opinberum rýmum – frá forsölum og tónleikasölum til skrifstofa og skóla."
-    },
-    "accessories": {
-      "tag": "FULLKOMNAÐU LÍKIÐ",
-      "title": "Fylgihlutir",
-      "description": "Fagmannlegir frágangshlutir fyrir gallalausa niðurstöðu",
-      "item1Title": "Brúnasnið",
-      "item1Desc": "Samsvarandi prófílar fyrir hreinan frágang plötuenda",
-      "item2Title": "Hornalausnir",
-      "item2Desc": "Samfelld skil í innhornum og úthornum",
-      "item3Title": "Festibrautir",
-      "item3Desc": "Falið undirgrindarkerfi úr áli",
-      "item4Title": "Steinull",
-      "item4Desc": "30–50 mm einangrun fyrir bestu afköst"
+      "feature2": "Ljós eða dökkur kjarni til að fela götin eða draga þau fram",
+      "feature3": "Sérsniðið allt að 3 050 × 1 220 mm, í 10 og 19 mm",
+      "feature4": "Faldar klemmur, án verkfæra, án bils, mynstur í línu frá plötu til plötu",
+      "title": "Því stærra sem opna flatarmálið er, því meira hljóðísog",
+      "description1": "rWood Perf er spónlögð, eldtefjandi MDF-plata með hringlaga götum sem eru boruð í gegn. Hljóðið berst um götin inn í hljóðdúkinn og holrýmið fyrir aftan plötuna, þar sem það er ísogað.",
+      "description2": "Fjögur mynstur gera ykkur kleift að velja milli hljóðísogs og hógværðar: frá hógværu 5 mm gati með 5 % opnu flatarmáli upp í tvöfalda 8 mm mynstrið PD8 með 24 % opnu flatarmáli."
     },
     "cta": {
-      "note": "Ókeypis sýnishorn í boði • FSC® vottað"
+      "note": "Ókeypis spónsýnishorn · FSC®-vottaður spónn"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "Hvaðan kemur FSC-vottaða spónlagið?",
-          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+          "question": "Hvaðan kemur FSC-vottaði spónninn?",
+          "answer": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; númer rekjanleikavottorðsins (chain of custody) fæst sé þess óskað."
         },
         "fireRating": {
-          "question": "Hver er eldflokkunin?",
-          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1 — sá kjarni sem við tilgreinum fyrir flóttaleiðir og opinberar byggingar. Brunavottorðið er í niðurhalshlutanum á þessari síðu."
+          "question": "Hver er brunaflokkurinn?",
+          "answer": "Með eldtefjandi MDF-kjarna er rWood Perf flokkað B-s1,d0 samkvæmt EN 13501-1. Platan er ætluð fyrir þurr innirými."
         },
         "leadTime": {
-          "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+          "question": "Hver er venjulegur afhendingartími?",
+          "answer": "Spónn á lager er afhentur á 3–4 vikum; viðartegundir sem ekki eru á lager og sérsniðin áferð taka 6–8 vikur. Sérsniðnar plötur eru framleiddar eftir teikningum ykkar."
         },
         "installMethod": {
-          "question": "Hvernig eru rWood plötur settar upp?",
-          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+          "question": "Hvernig eru rWood-plötur settar upp?",
+          "answer": "Með földu klemmukerfi: málmbrautir á vegg- eða loftgrind, steinull í holrýminu, og svo eru plöturnar smelltar á án verkfæra og án bils þannig að götunarmynstrið heldur áfram frá plötu til plötu."
         },
         "substrateCleanup": {
-          "question": "Hvað verður um plöturnar í lok líftímans?",
-          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+          "question": "Hvað verður um plöturnar við lok líftíma?",
+          "answer": "Re-Sound tekur plötur til baka án endurgjalds við lok líftíma í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "Nærmynd af rWood - Perf plötu sem sýnir kringlótt göt",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Nærmynd af viðarspónsyfirborði gataðrar viðarplötu",
-      "rwoodPerfPanelConcealedMountingSystem": "Falið festingarkerfi rWood - Perf plötu",
-      "sustainableWoodSourcingAndProduction": "Sjálfbær öflun viðar og framleiðsla"
+      "sustainableWoodSourcingAndProduction": "FSC-vottaður viðarspónn",
+      "hero": "Gataðar hljóðdeyfiplötur úr viði, rWood Perf, á vegg",
+      "heroVeneer": "rWood Perf-plata í {name}",
+      "overview": "Nærmynd af hringlaga götum rWood Perf-plötu",
+      "installation": "Málmbrautir og faldar klemmur í rWood Perf-uppsetningarkerfinu"
     },
     "options": {
-      "pd8Desc": "Hámarkshljóðísog, stórt opið flatarmál",
-      "ph10Desc": "Mikið hljóðísog, áberandi götun",
-      "ph8Desc": "Jafnvægi milli útlits og frammistöðu",
+      "pd8Desc": "Tvöfalt mynstur, hámarks hljóðísog",
+      "ph10Desc": "Mikið hljóðísog, áberandi göt",
+      "ph8Desc": "Jafnvægi útlits og virkni",
       "ph5Desc": "Hógvært mynstur, fíngert yfirborð"
+    },
+    "kpi": {
+      "ariaLabel": "Lykiltölur",
+      "thickness": "plötuþykkt, sérsniðin",
+      "alphaW": "αw, eftir mynstri",
+      "alphaWPd8": "αw með mynstri PD8, {range} eftir mynstri",
+      "fire": "viðbrögð við eldi, eldtefjandi MDF-kjarni",
+      "patterns": "götunarmynstur, Ø 5 til 10 mm"
+    },
+    "buildUp": {
+      "alt": "Sundurdregin mynd af lögunum þremur: gataður spónn, gegnumboraður eldtefjandi MDF-kjarni, hljóðdúkur",
+      "layer1": "Gataður spónn",
+      "layer1Desc": "A-gæði, borað Ø 5 til 10 mm",
+      "layer2": "Eldtefjandi MDF-kjarni",
+      "layer2Desc": "Ljós eða dökkur, boraður í gegn",
+      "layer3": "Hljóðdúkur",
+      "layer3Desc": "Svartur eða hvítur",
+      "behind": "Fyrir aftan plötuna: holrými með steinull."
+    },
+    "veneers": {
+      "title": "Átta spónategundir á lager, hvaða spónn sem er eftir pöntun",
+      "description": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Viður er náttúrulegt efni: æðar og litur eru breytileg frá plötu til plötu og sýnishorn á skjá eru aðeins til viðmiðunar.",
+      "alt": "Spónn {name}",
+      "origin": {
+        "europe": "Evrópa",
+        "scandinavia": "Skandinavía",
+        "northAmerica": "Norður-Ameríka"
+      },
+      "grain": {
+        "straightInterlocked": "Beinar til samfléttaðar æðar",
+        "subtleFine": "Fíngerðar, hógværar æðar",
+        "fineStraight": "Fíngerðar, beinar æðar",
+        "cathedral": "Bogamynstur",
+        "pronounced": "Áberandi æðar",
+        "straightWavy": "Beinar til bylgjóttar æðar",
+        "deepCathedral": "Djúpt bogamynstur",
+        "richFlowing": "Ríkulegar, flæðandi æðar"
+      },
+      "madeToOrderTitle": "Eftir pöntun",
+      "madeToOrderDesc": "Auk þeirra átta spónategunda sem eru á lager framleiðum við hvaða viðartegund, bæslit og áferð sem er.",
+      "finishTitle": "Áferð",
+      "finishDesc": "UV-hert lakk frá ofurmöttu til háglans, náttúrulegt eða litað.",
+      "naturalTitle": "Náttúrulegt efni",
+      "naturalDesc": "Ekta viður er breytilegur að lit og æðum. Biðjið um sýnishorn áður en þið forskrifið."
+    },
+    "bespoke": {
+      "tag": "SÉRSNIÐIÐ",
+      "title": "Eftir teikningum ykkar",
+      "description": "rWood Perf er framleitt sérsniðið fyrir veggi og loft: frá 100 × 100 mm upp í 3 050 × 1 220 mm, í 10 og 19 mm, í hverju mynstranna fjögurra sem er.",
+      "customDimTitle": "Sérsniðnar stærðir",
+      "customDimDesc": "Hver plata er framleidd í þeim stærðum sem teikningar ykkar segja til um, frá 100 × 100 mm upp í 3 050 × 1 220 mm.",
+      "finishTitle": "Hvaða spónn og áferð sem er",
+      "finishDesc": "Átta spónategundir á lager; hvaða önnur viðartegund, bæslit og áferð sem er eftir pöntun.",
+      "samplesTitle": "Ókeypis spónsýnishorn",
+      "samplesDesc": "Ekta viður er breytilegur að lit og æðum. Biðjið um sýnishorn áður en þið forskrifið."
+    },
+    "ordering": {
+      "title": "Afhendingartími og sýnishorn",
+      "stockVeneers": "Spónn á lager",
+      "stockVeneersVal": "3–4 vikur",
+      "nonStock": "Ekki á lager og sérsmíði",
+      "nonStockVal": "6–8 vikur",
+      "madeToMeasure": "Sérsniðið",
+      "madeToMeasureVal": "Eftir teikningum ykkar",
+      "supply": "Afhending",
+      "samplesVal": "Ókeypis spónsýnishorn",
+      "sizesVal": "Allt að {size}",
+      "showroom": "Sýningarsalur: Gentseweg 309 A3, 9120 Beveren-Waas, Belgíu"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "ÖRGATAÐAR HLJÓÐPANEL",
+      "tag": "ÖRGÖTUÐ HLJÓÐDEYFIPLATA ÚR VIÐI",
       "title": "rWood Micro: örgötuðar hljóðdeyfiplötur úr viði",
-      "tagline": "Ósýnileg gat, framúrskarandi hljóðfræði",
-      "description": "Upplifið fegurð náttúrulegs viðar með hljóðeiginleikum háþróaðrar örgötunartækni. Nánast ósýnileg göt skila hljóðgleypni í flokki A og varðveita um leið hreint, einsleitt útlit hágæða viðarspóns.",
-      "usp1": "Ósýnilegar götur",
-      "usp2": "Frásog í flokki A",
+      "tagline": "Ósýnileg götun, framúrskarandi hljóðvist.",
+      "description": "Örgöt frá 0,5 mm í spæni af A-gæðum opnast inn í hljóðhólf í eldtefjandi MDF-kjarnanum, með hljóðdúk að baki. Úr venjulegri fjarlægð hverfa götin inn í viðinn.",
+      "usp1": "Ósýnileg göt",
+      "usp2": "Hljóðísog í A-flokki",
       "usp3": "Brunaflokkur {fireClass}",
-      "colorSelector": "Veldu viðarspjald"
+      "colorSelector": "Spónn á lager",
+      "description2": "Sérsniðið fyrir veggi og loft, allt að 3 050 × 1 220 mm, í 10 og 19 mm. Átta spónategundir á lager, hvaða spónn og áferð sem er eftir pöntun.",
+      "selectVeneer": "Veldu spón"
     },
     "perforation": {
-      "tag": "GATAMYNSTUR",
-      "title": "Veldu gat þitt",
-      "description": "Mismunandi þéttleiki örgötunar fyrir fínstillta hljóðstýringu – frá fíngerðu til afkastamikils."
-    },
-    "surfaces": {
-      "tag": "YFIRBORÐ",
-      "title": "Úrvals yfirborð",
-      "woodVeneer": "Viðarspjald",
-      "woodVeneerDesc": "Hágæða A-flokks spónn úr eik, hnotu, birki og fleiri tegundum. Fáanlegt í Nature- og Gemini-skurði.",
-      "hplLaminate": "HPL-lamínat",
-      "hplLaminateDesc": "Háþrýstilagskipt (HPL) yfirborð fyrir aukna endingu. Fáanlegt í fjölbreyttu úrvali lita og áferða.",
-      "surfaceType": "Yfirborðsgerð",
-      "finishTreatments": "Frágangsmeðhöndlanir",
-      "description": "Hver rWood - Micro plata er með yfirspónlögðum brúnum – framleiðsluaðferð sem skapar samfelld plötusamskeyti fyrir óslitið viðaryfirborð.",
-      "finish1Desc": "Sérsniðnir litatónar með gegnsærri eða þekjandi litun",
-      "finish2Desc": "Frá ofurmöttu til háglans UV-hertu lakki",
-      "description2": "Hver rWood - Micro plata er með yfirspónlögðum brúnum – framleiðsluaðferð sem á rætur í hefðbundnu trésmíðahandverki. Niðurstaðan: sterkari plötur, samfelld samskeyti og óslitið mynstur óháð plötustærð."
+      "tag": "GÖTUN",
+      "title": "Fjórir götunarþéttleikar",
+      "description": "Gatastærð og opið flatarmál fyrir hvern þéttleika. Því stærra sem opna flatarmálið er, því meira hljóðísog; því minna sem gatið er, því minna sýnilegt er mynstrið.",
+      "spec": "Ø {d} mm · {pct} % opið",
+      "drawingNote": "Teikningar u.þ.b. 2:1, gatastærð og opið flatarmál eins og tilgreint er fyrir hvern þéttleika."
     },
     "acoustics": {
-      "tag": "AFKÖST",
-      "title": "Framúrskarandi hljóðfrásog",
-      "benefit1Title": "Tvöfaldur hljóðbúnaður",
-      "benefit1": "Örgöt og hljóðhólf vinna saman og skila framúrskarandi hljóðísogi",
-      "benefit2Title": "Plásshagkvæmt hönnun",
-      "benefit2": "Minna háð loftbili – þynnri uppbygging veggja og lofta",
-      "benefit3Title": "Brunaöryggi",
-      "benefit3": "Brunaflokkur {fireClass} með eldtefjandi MDF-kjarna (EN 13501-1)",
-      "description": "Samspil örgata í yfirborðinu og þúsunda stærri hljóðrása skapar einstakt breiðbands-hljóðísog.",
-      "layer1Name": "A-gæðaspónn með nákvæmnisboruðum götum",
-      "layer2Name": "Eldtefjandi MDF-kjarni (miðlungsþétt trefjaplata)",
-      "layer2Desc": "Eldtefjandi, með hljóðhólfum",
-      "layer3Name": "Akústískt fleece-bak",
-      "layer3Desc": "Viðbótarlag til hljóðísogs",
-      "waveLabel": "Hljóðbylgjur ísognar",
-      "certNote": "Prófað og vottað af óháðum aðila samkvæmt ISO 11654",
-      "description2": "Samspil örgata í yfirborðinu og þúsunda stærri hljóðhólfa í kjarnanum myndar tvöfalt hljóðvirkt kerfi. Minna háð einangrun og loftbili – sem þýðir þynnri veggi og loft sem spara dýrmætt rými.",
-      "diagramTitle": "Panelþversnið",
-      "soundAbsorbed": "Hljóð frásogað",
-      "fireRating": "Brunamat",
-      "testStandard": "Prófunarstaðall",
-      "thinner": "Þynnra",
-      "wallBuildUp": "Veggjabygging"
+      "tag": "HLJÓÐVIST",
+      "title": "Hljóðísog",
+      "description": "Hljóð berst inn um örgötin og er ísogað í hljóðhólfum kjarnans og í dúknum að baki. Hve mikið platan ísogar ræðst af götunarþéttleikanum og því sem er fyrir aftan hana.",
+      "tableTitle": "Hljóðísog",
+      "withWool": "Með 50 mm steinull",
+      "withWoolVal": "αw allt að 1.00",
+      "behindTitle": "Fyrir aftan plötuna",
+      "behindDesc": "Ísogsefni að baki eykur hljóðísogið: hljóðþæfi, rPET-plata eða steinull í holrýminu. Með 50 mm steinull nær platan αw 1,00.",
+      "footnote": "αw og ísogsflokkur samkvæmt EN ISO 11654. Gildin ráðast af götunarþéttleika, dýpt holrýmis og ísogsefninu fyrir aftan plötuna."
     },
     "installation": {
-      "tag": "UPPSETNINGARKERFI",
-      "title": "Nákvæmnis uppsetning",
-      "step1Title": "Setja upp undirramma",
-      "step1Desc": "Festið álbrautir á vegg- eða loftgrind",
-      "step2Title": "Bæta einangrun",
-      "step2Desc": "Steinull valfrjáls fyrir aukið hljóðísog",
-      "step3Title": "Click & Fix plötur",
-      "step3Desc": "Falið klemmukerfi fyrir uppsetningu platna án verkfæra",
-      "step4Title": "Lýtalaus niðurstaða",
-      "step4Desc": "Spónlagðar brúnir mynda samfellt viðaryfirborð",
-      "description": "rWood - Micro plötur eru settar upp með földu festikerfi okkar sem tryggir ósýnilegar festingar og lýtalausa áferð. Kerfið hentar bæði fyrir veggi og loft, með samfelldum skilum milli platna þökk sé spónlögðum brúnum."
+      "tag": "UPPSETNING",
+      "title": "Falið klemmukerfi fyrir veggi og loft",
+      "step1Title": "Undirgrind",
+      "step1Desc": "Álbrautir á vegg- eða loftgrind.",
+      "step2Title": "Einangrun",
+      "step2Desc": "Steinull ef vill fyrir meira hljóðísog.",
+      "step3Title": "Plötur",
+      "step3Desc": "Faldar klemmur, uppsetning án verkfæra.",
+      "step4Title": "Niðurstaða",
+      "step4Desc": "Ósýnilegar festingar og samfellt viðaryfirborð.",
+      "description": "Álbrautir, steinull ef vill, og svo eru plöturnar smelltar á án verkfæra. Festingarnar sjást ekki og viðaryfirborðið heldur áfram án rofs."
     },
     "bespoke": {
-      "tag": "HÖNNUNARFRELSI",
-      "title": "Sérsniðnar möguleikar",
-      "backlitTitle": "Lýstar plötur",
-      "backlitDesc": "Skapaðu glæsilega baklýsta fleti þar sem ljósið skín í gegnum örgötin. Merki og mynstur ljóma fallega þegar kveikt er á ljósinu en eru ósýnileg þegar slökkt er.",
-      "customDimTitle": "Sérstærðir",
-      "customDimDesc": "Plötur framleiddar nákvæmlega samkvæmt þinni forskrift. Óstaðlaðar stærðir og form fyrir sérstakar byggingarfræðilegar kröfur.",
-      "patternTitle": "Samfellt mynstur",
-      "patternDesc": "Spónlagðar plötur mynda samfelld skil óháð sniði, fyrir einsleitt yfirbragð á hvaða fleti sem er.",
-      "description": "rWood - Micro plötur má sérsníða og forframleiða samkvæmt teikningum þínum. Örgötin opna einstaka hönnunarmöguleika sem ná lengra en hefðbundnar hljóðdeyfiplötur."
+      "tag": "SÉRSNIÐIÐ",
+      "title": "Eftir teikningum ykkar",
+      "customDimTitle": "Sérsniðnar stærðir",
+      "customDimDesc": "Hver plata er framleidd í þeim stærðum sem teikningar ykkar segja til um, frá 100 × 100 mm upp í 3 050 × 1 220 mm.",
+      "description": "rWood Micro er framleitt sérsniðið fyrir veggi og loft: frá 100 × 100 mm upp í 3 050 × 1 220 mm, í 10 og 19 mm, í hverjum götunarþéttleikanna fjögurra sem er.",
+      "finishTitle": "Hvaða spónn og áferð sem er",
+      "finishDesc": "Átta spónategundir á lager; hvaða önnur viðartegund, bæslit og áferð sem er eftir pöntun.",
+      "samplesTitle": "Ókeypis spónsýnishorn",
+      "samplesDesc": "Ekta viður er breytilegur að lit og æðum. Biðjið um sýnishorn áður en þið forskrifið."
     },
     "sustainability": {
       "tag": "SJÁLFBÆRNI",
-      "title": "Ábyrgt framleidd",
-      "badge1": "FSC®-vottað spjald",
-      "badge2": "Náttúrulegt kjarnaefni",
+      "title": "Framleitt á ábyrgan hátt",
+      "badge1": "FSC®-vottaður spónn",
+      "badge2": "Formaldehýðflokkur E1",
       "badge3": "Framleitt í Póllandi",
-      "badge4": "Lágar VOC losanir",
-      "badge1Desc": "Viður úr skógum sem er stjórnað á ábyrgan hátt",
-      "badge2Desc": "Trefjaplötukjarni – viðarbundinn, brunaflokkaður kjarni",
-      "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
-      "badge4Desc": "E1-flokkað fyrir heilnæmara inniloft",
-      "description": "rWood - Micro plötur eru byggðar á sjálfbærni sem grundvallarreglu. FSC®-vottaður viður, áferðarefni með lága losun og ábyrgt aðfengin efni tryggja umhverfisábyrgð allan líftíma vörunnar."
+      "badge4": "Tekið til baka við lok líftíma",
+      "badge1Desc": "Viður úr skógum sem eru nýttir á ábyrgan hátt",
+      "badge2Desc": "Eldtefjandi MDF-kjarni með lítilli losun, fyrir þurr innirými",
+      "badge3Desc": "Framleitt í okkar eigin verksmiðju í Częstochowa (Póllandi)",
+      "description": "FSC®-vottaður spónn, formaldehýðflokkur E1 og framleiðsla í okkar eigin verksmiðju í Częstochowa. Við lok líftíma tökum við plöturnar til baka."
     },
     "specs": {
-      "tag": "TÆKNILEGT",
-      "title": "Forskriftir",
-      "dimensionsTitle": "Mál – veggir og loft",
-      "acousticsTitle": "Mál – veggir og loft",
-      "customSizes": "Sérstærðir",
-      "dimThickness": "Þykkt",
-      "dimWeight": "Þyngd",
-      "dimCoreDensity": "Kjarna þéttleiki",
-      "perfsTitle": "Götunarvalkostir",
-      "fireTitle": "Eldvarnir",
-      "matTitle": "Efni",
-      "appsTitle": "Notkun",
+      "tag": "TÆKNILEGAR UPPLÝSINGAR",
+      "title": "Plata, eldur og losun",
+      "acousticsTitle": "Hljóðísog",
+      "perfsTitle": "Götunarþéttleikar",
+      "fireTitle": "Eldur og losun",
+      "matTitle": "Yfirborð og valkostir",
+      "appsTitle": "Uppsetning",
       "acWithMinWool": "Með 50 mm steinull",
-      "reactionFire": "Bruna-viðbrögð",
-      "resistanceFire": "Bruna-þol",
-      "fireRetardant": "Brunahindrun",
-      "surfaceLabel": "Yfirborð",
-      "surfaceVal": "Spjald / HPL / filma / málning",
-      "coreVal": "MDF-kjarni (brúnn / grænn / svartur)",
-      "edgesLabel": "Brúnir",
-      "edgesVal": "Yfir-spjaldað gegnumheilt tré",
-      "acousticFelt": "Hljóðfræðilegt felt",
-      "feltColor": "Svart / hvítt",
-      "appInstall": "Uppsetning",
-      "appWalls": "Veggar og loft",
-      "appEnv": "Umhverfi",
-      "appEnvVal": "Innandyra (þurr svæði)",
-      "backlitOption": "Bakljósamöguleiki",
-      "backlitVal": "Í boði",
-      "mountingSystem": "Uppsetningarkerfi",
-      "concealedClip": "Falið klippakerfi"
+      "reactionFire": "Viðbrögð við eldi",
+      "surfaceLabel": "Yfirborðsmeðferð",
+      "surfaceVal": "Náttúrulegt lakk · litað · HPL-lagskipting · filma · málning",
+      "coreVal": "Eldtefjandi MDF með hljóðhólfum",
+      "edgesLabel": "Kantar",
+      "edgesVal": "Spónlagður gegnheill viður fyrir samskeytalaus samsetningu",
+      "feltColor": "Svartur eða hvítur",
+      "appInstall": "Notkun",
+      "appWalls": "Veggir og loft",
+      "appEnvVal": "Innandyra, þurr rými",
+      "mountingSystem": "Festing",
+      "concealedClip": "Faldar klemmur, án verkfæra",
+      "panelTitle": "Plata",
+      "sizes": "Stærðir",
+      "fleeceLabel": "Hljóðdúkur",
+      "acWithMinWoolVal": "αw allt að 1.00",
+      "fireStandard": "Brunastaðall",
+      "finishLabel": "Lakk",
+      "finishVal": "UV-hert, ofurmatt til háglans, náttúrulegt eða litað",
+      "rangesLabel": "Spónlínur",
+      "rangesVal": "Nature (lifandi æðar með karakter) · Gemini (jafn, samfelldur tónn)",
+      "coreColoursLabel": "Litir kjarna",
+      "subframe": "Undirgrind",
+      "nanoVal": "Ø 0.5 mm · 2.5 % opið",
+      "microSVal": "Ø 1.0 mm · 5.2 % opið",
+      "microMVal": "Ø 1.5 mm · 8.4 % opið",
+      "microLVal": "Ø 2.0 mm · 10.6 % opið",
+      "coreColoursVal": "Brúnn, grænn eða svartur",
+      "subframeVal": "Álbrautir"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -2459,134 +2505,139 @@
     "overview": {
       "tag": "ÓSÝNILEGA LAUSNIN",
       "title": "Hannað fyrir augu og eyru",
-      "description1": "rWood - Micro plötur sameina háþróaða örgötunartækni og hágæða viðarspón. Úr venjulegri fjarlægð eru götin algjörlega ósýnileg – það sem sést er fallegt, einsleitt viðaryfirborð. Það sem heyrist er einstök hljóðvist.",
-      "description2": "Leyndarmálið liggur í samspili tveggja hljóðvirkra ferla: þúsunda nákvæmlega hannaðra örgata í yfirborðinu og hljóðísogandi hólfa í kjarnaefninu.",
-      "feature1": "Götin ósýnileg úr venjulegri fjarlægð",
-      "feature2": "Eldtefjandi MDF-kjarni með hljóðhólfum",
-      "feature3": "Spónlagðar brúnir fyrir samfelld samskeyti",
-      "feature4": "Hentar fyrir veggi og loft",
-      "feature5": "Fáanlegt sem lýstar plötur"
-    },
-    "accessories": {
-      "tag": "FULLKOMNAÐU LÍKIÐ",
-      "title": "Aukahlutir",
-      "description": "Fagleg frágangsstykki fyrir lýtalausa niðurstöðu",
-      "item1Title": "Brúnasnið",
-      "item1Desc": "Samstæðir prófílar fyrir hreinan frágang á plötuendum",
-      "item2Title": "Hornalausnir",
-      "item2Desc": "Samfelld skil í innri og ytri hornum",
-      "item3Title": "Festibrautir",
-      "item3Desc": "Falið undirgrindarkerfi úr áli",
-      "item4Title": "LED-baklýsing",
-      "item4Desc": "Innbyggð lýsing fyrir baklýst plötuáhrif"
-    },
-    "patterns": {
-      "description": "Fjórir götunarþéttleikar til að mæta hljóðvistarkröfum þínum. Allt frá nánast ósýnilegum örgötum til rúmra opinna flata – hver þéttleiki skilar ólíku jafnvægi milli útlits og afkasta.",
-      "magnifiedLabel": "10× stækkað",
-      "holeDiameter": "Þvermál gats",
-      "openArea": "Opið svæði",
-      "ratingLabel": "Frásog",
-      "description2": "Fjórir götunarþéttleikar til að mæta hljóðvistarkröfum þínum. Allt frá nánast ósýnilegri Nano-götun til Micro L-mynstra með hámarksísogi – veldu fullkomið jafnvægi milli útlits og hljóðvistarafkasta.",
-      "pigmentedLacquer": "Litað lakk",
-      "glossLevels": "Gljástig"
+      "description1": "rWood Micro sameinar ekta viðarspón af A-gæðum og örgöt frá Ø 0,5 mm. Úr venjulegri fjarlægð hverfa götin inn í viðinn: það sem sést er samfellt viðaryfirborð, það sem heyrist er hljóðlátara rými.",
+      "description2": "Hljóð berst inn um örgötin og er ísogað í hljóðhólfum eldtefjandi MDF-kjarnans og í hljóðdúknum að baki. Hve mikið platan ísogar ræðst af götunarþéttleikanum og því sem er fyrir aftan hana.",
+      "feature1": "Göt sem hverfa úr venjulegri fjarlægð",
+      "feature2": "Eldtefjandi MDF-kjarni með hljóðhólfum, hljóðdúkur svartur eða hvítur",
+      "feature3": "Sérsniðið allt að 3 050 × 1 220 mm, í 10 og 19 mm",
+      "feature4": "Faldar klemmur, án verkfæra, fyrir veggi og loft"
     },
     "faq": {
       "questions": {
         "fscSource": {
-          "question": "Hvaðan kemur FSC-vottaða spónlagið?",
-          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+          "question": "Hvaðan kemur FSC-vottaði spónninn?",
+          "answer": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; númer rekjanleikavottorðsins (chain of custody) fæst sé þess óskað."
         },
         "fireRating": {
-          "question": "Hver er eldflokkunin?",
-          "answer": "Með eldtefjandi (FR) MDF-kjarna eru rWood plötur flokkaðar B-s1,d0 samkvæmt EN 13501-1 — sá kjarni sem við tilgreinum fyrir flóttaleiðir og opinberar byggingar. Brunavottorðið er í niðurhalshlutanum á þessari síðu."
+          "question": "Hver er brunaflokkurinn?",
+          "answer": "Með eldtefjandi MDF-kjarna er rWood Micro flokkað B-s1,d0 samkvæmt EN 13501-1. Platan er ætluð fyrir þurr innirými."
         },
         "leadTime": {
-          "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+          "question": "Hver er venjulegur afhendingartími?",
+          "answer": "Spónn á lager er afhentur á 3–4 vikum; viðartegundir sem ekki eru á lager og sérsniðin áferð taka 6–8 vikur. Sérsniðnar plötur eru framleiddar eftir teikningum ykkar."
         },
         "installMethod": {
-          "question": "Hvernig eru rWood plötur settar upp?",
-          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+          "question": "Hvernig eru rWood-plötur settar upp?",
+          "answer": "Með földu klemmukerfi: álbrautir á vegg- eða loftgrind, steinull í holrýminu ef vill, og svo eru plöturnar smelltar á án verkfæra. Festingarnar sjást ekki og viðaryfirborðið heldur áfram án rofs."
         },
         "substrateCleanup": {
-          "question": "Hvað verður um plöturnar í lok líftímans?",
-          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+          "question": "Hvað verður um plöturnar við lok líftíma?",
+          "answer": "Re-Sound tekur plötur til baka án endurgjalds við lok líftíma í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "Nærmynd af rWood - Micro plötu sem sýnir ósýnileg göt",
-      "microPerforatedWoodPanelSurfaceDetail": "Nærmynd af yfirborði örgataðrar viðarplötu",
-      "rwoodMicroPanelInstallationSystem": "Uppsetningarkerfi rWood - Micro plötu",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Baklýst örgötuð plata sem skapar ljósáhrif",
-      "sustainableProduction": "Sjálfbær framleiðsla"
+      "sustainableProduction": "FSC-vottaður viðarspónn",
+      "hero": "Örgataðar hljóðdeyfiplötur úr viði, rWood Micro, á vegg",
+      "heroVeneer": "rWood Micro-plata í {name}",
+      "overview": "Nærmynd af örgataðri rWood Micro-plötu",
+      "installation": "Álbrautir og faldar klemmur í rWood Micro-uppsetningarkerfinu",
+      "madeToMeasure": "Sérsniðnar rWood Micro-plötur settar upp í kringum glugga"
     },
     "options": {
-      "veneerDesc": "Náttúrulegur viðarspónn í A-gæðaflokki",
-      "hplDesc": "Háþrýstilaminat",
-      "nanoDesc": "Nánast ósýnileg götun",
-      "microsDesc": "Fíngerð örgötun",
-      "micromDesc": "Jafnvægt götunarmynstur",
-      "microlDesc": "Götunarmynstur fyrir hámarkshljóðísog",
-      "nanoDetail": "Minnsta götun sem í boði er – algjörlega ósýnileg berum augum og skapar gallalaust viðaryfirborð.",
-      "microsDetail": "Varla sýnileg örgöt sem viðhalda hreinu og órofnu yfirborði.",
-      "micromDetail": "Kjörið jafnvægi milli sjónrænnar hógværðar og hljóðfræðilegrar virkni fyrir flestar aðstæður.",
-      "microlDetail": "Stærsta opna flatarmálið fyrir hámarkshljóðísog í rýmum með miklar hljóðkröfur.",
-      "openAreaLabel": "Opið flatarmál",
-      "absorptionLabel": "Hljóðísog",
-      "thinnerLabel": "Þynnri",
-      "veneerDrilled": "Viðarspónn í A-gæðaflokki með nákvæmnisboruðum götum"
+      "nanoDesc": "Nánast ósýnileg göt",
+      "microsDesc": "Hógvær örgöt",
+      "micromDesc": "Jafnvægi í götunarmynstri",
+      "microlDesc": "Mynstur fyrir hámarks hljóðísog"
+    },
+    "kpi": {
+      "ariaLabel": "Lykiltölur",
+      "thickness": "plötuþykkt, sérsniðin",
+      "alphaW": "αw, vegið hljóðísog",
+      "alphaWClass": "αw, ísogsflokkur {cls}",
+      "fire": "viðbrögð við eldi, eldtefjandi MDF-kjarni",
+      "densities": "götunarþéttleikar, Ø 0,5 til 2 mm"
+    },
+    "buildUp": {
+      "alt": "Sundurdregin mynd af lögunum þremur: örgataður spónn, eldtefjandi MDF-kjarni með hljóðhólfum, hljóðdúkur",
+      "layer1": "Örgataður spónn",
+      "layer1Desc": "A-gæði, göt frá Ø 0,5 mm",
+      "layer2": "Eldtefjandi MDF-kjarni",
+      "layer2Desc": "Með hljóðhólfum",
+      "layer3": "Hljóðdúkur",
+      "layer3Desc": "Svartur eða hvítur",
+      "behind": "Fyrir aftan plötuna: holrými, steinull ef vill."
+    },
+    "veneers": {
+      "title": "Átta spónategundir á lager, hvaða spónn sem er eftir pöntun",
+      "description": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Viður er náttúrulegt efni: æðar og litur eru breytileg frá plötu til plötu og sýnishorn á skjá eru aðeins til viðmiðunar.",
+      "alt": "Spónn {name}",
+      "origin": {
+        "europe": "Evrópa",
+        "scandinavia": "Skandinavía",
+        "northAmerica": "Norður-Ameríka"
+      },
+      "grain": {
+        "straightInterlocked": "Beinar til samfléttaðar æðar",
+        "subtleFine": "Fíngerðar, hógværar æðar",
+        "fineStraight": "Fíngerðar, beinar æðar",
+        "cathedral": "Bogamynstur",
+        "pronounced": "Áberandi æðar",
+        "straightWavy": "Beinar til bylgjóttar æðar",
+        "deepCathedral": "Djúpt bogamynstur",
+        "richFlowing": "Ríkulegar, flæðandi æðar"
+      },
+      "madeToOrderTitle": "Eftir pöntun",
+      "madeToOrderDesc": "Auk þeirra átta spónategunda sem eru á lager framleiðum við hvaða viðartegund, bæslit og áferð sem er.",
+      "finishTitle": "Áferð",
+      "finishDesc": "UV-hert lakk frá ofurmöttu til háglans, náttúrulegt eða litað.",
+      "naturalTitle": "Náttúrulegt efni",
+      "naturalDesc": "Ekta viður er breytilegur að lit og æðum. Biðjið um sýnishorn áður en þið forskrifið."
+    },
+    "ordering": {
+      "title": "Afhendingartími og sýnishorn",
+      "stockVeneers": "Spónn á lager",
+      "stockVeneersVal": "3–4 vikur",
+      "nonStock": "Ekki á lager og sérsmíði",
+      "nonStockVal": "6–8 vikur",
+      "madeToMeasure": "Sérsniðið",
+      "madeToMeasureVal": "Eftir teikningum ykkar",
+      "supply": "Afhending",
+      "samplesVal": "Ókeypis spónsýnishorn",
+      "sizesVal": "Allt að {size}",
+      "showroom": "Sýningarsalur: Gentseweg 309 A3, 9120 Beveren-Waas, Belgíu"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "HLJÓÐFRÆÐILEGAR TRÉPLÖTUR",
-      "title": "rWood Panel: hljóðdeyfiplötur með viðarspæni í 10 viðartegundum",
-      "tagline": "Frægi raunverulegrar trjár. Tilbúið til notkunar.",
-      "description": "Vandaðar spónlagðar MDF-plötur, burstaðar, litaðar og lakkaðar — þurfa enga frekari yfirborðsmeðhöndlun. Ósvikin fegurð gegnheils viðar án málamiðlana.",
-      "usp1": "Raunverulegt tréfineera",
-      "usp2": "Forfrágengt og tilbúið til notkunar",
-      "usp3": "Ókeypis endurheimtarkerfi",
+      "tag": "SPÓNLÖGÐ VIÐARPLATA",
+      "title": "rWood Panel: spónlagðar hljóðdeyfiplötur í 12 viðarspónum",
+      "tagline": "Glæsileiki ekta viðar, tilbúinn til notkunar.",
+      "description": "Sléttar, verksmiðjufrágengnar spónlagðar MDF-plötur í tólf spónum úr ekta viði, í hinni líflegu Nature- eða hinni jöfnu Gemini-línu. Náttúrulegt eða litað lakk, HPL-lagskipting, filma eða málning; hvaða annar spónn, bæs eða áferð sem er eftir pöntun.",
+      "usp1": "FSC®-vottaðir spónar",
+      "usp2": "Tólf spónar, hvaða áferð sem er eftir pöntun",
+      "usp3": "Ókeypis móttaka við lok líftíma",
       "ctaSecondary": "Sjá Safn",
-      "colorSelector": "Veldu Fineera"
-    },
-    "construction": {
-      "tag": "BYGGING",
-      "title": "Lagskipt uppbygging",
-      "layer1": "Efsta fineerlög",
-      "layer1Desc": "FSC-vottuð náttúruleg viðarspjald, verksmiðjufrágangur",
-      "layer2": "Háþéttleika MDF-kjarni",
-      "layer2Desc": "Stöðugt, rakaþolið verkfræðihannað undirlag",
-      "layer3": "Jafnvægi fineerlög",
-      "layer3Desc": "Kemur í veg fyrir bugðu fyrir fullkomlega flatar plötur"
-    },
-    "veneers": {
-      "tag": "FINEERÚRVAL",
-      "title": "10 valdir viðarspjöld",
-      "description": "Frá ljósri evrópskri eik til djúpum amerískum valhnetu — hver tegund valin fyrir æðakarakter, framboð og FSC-vottun."
+      "colorSelector": "Spónn",
+      "selectPrompt": "Veldu spón"
     },
     "finishes": {
-      "title": "Áferð og vörn",
-      "description": "Réttur frágangur dregur fram það besta í hverri viðartegund. Marg-laga frágangsferli okkar skilar yfirborði sem er jafn ánægjulegt að snerta og endingargott — varið gegn rispum, raka og daglegu sliti.",
-      "tag": "YFIRBORÐ",
-      "mattLacquerName": "Super matt lakk",
-      "mattLacquerDesc": "Andstætt fingraförum, silkimjúkt áferð. 6-laga UV-herðing.",
-      "naturalOilName": "Náttúruleg olía",
-      "naturalOilDesc": "Djúp, ekta viðar áferð með djúpvirkri vörn.",
-      "unfinishedName": "Ófrágengið",
-      "unfinishedDesc": "Tilbúið fyrir sérsniðna lokafrágang á staðnum af uppsetjanda.",
-      "adv1": "Rispvarið",
-      "adv2": "Skvettþolið",
-      "adv3": "Andstætt fingraförum",
-      "adv4": "Auðvelt viðhald"
-    },
-    "advantages": {
-      "tag": "KOSTIR",
-      "title": "Helstu kostir",
-      "adv1Title": "Panel-snið",
-      "adv1": "Margar staðlaðar stærðir; sérstærðir á eftirspurn",
-      "adv2Title": "Ótakmarkaðir möguleikar",
-      "adv2": "Notið fyrir veggjaklæðningu, húsgögn, verslunarsýningar og fleira"
+      "title": "Yfirborðsáferðir og valkostir",
+      "description": "Veldu spónalínuna og yfirborðsmeðferðina sem henta verkefninu. Kantar eru úr yfirspónlögðum gegnheilum viði fyrir ósýnileg samskeyti á stórum flötum.",
+      "tag": "ÁFERÐIR",
+      "nature": "Nature",
+      "natureDesc": "Líflegt æðamynstur með karakter",
+      "gemini": "Gemini",
+      "geminiDesc": "Jafn, einsleitur tónn",
+      "treatmentsTitle": "Yfirborðsmeðferðir",
+      "treatments": {
+        "naturalLacquer": "Náttúrulegt lakk",
+        "pigmented": "Litað",
+        "hpl": "HPL-lagskipting",
+        "foil": "Filma",
+        "paint": "Málning"
+      },
+      "madeToOrder": "Hvaða annar spónn, bæs, litarefni og áferð sem er eftir beiðni."
     },
     "applications": {
       "tag": "NOTKUN",
@@ -2620,66 +2671,51 @@
       "badge2": "Hringrásarleg skilagreiðsla",
       "badge3": "Framleitt í Póllandi",
       "badge4": "EPD tiltækt",
-      "badge5": "Lágt VOC",
-      "badge1Desc": "Allt timbur úr ábyrgt nýttum skógum",
+      "badge1Desc": "Allir spónar FSC®-vottaðir, úr skógum sem er stjórnað á ábyrgan hátt",
       "badge2Desc": "Ókeypis skil og endurvinnsla platna í lok líftíma",
-      "description": "Hvert rWood - Panel byrjar með ábyrgu viðarefni. Sem hluti af skuldbindingu Re-Sound við hringrásarhagkerfið hámörkum við notkun hvers stofns með því að vinna hann sem spjald — sem skilar allt að 40× meiri yfirborðsflöt en gegnumheilt timbur frá sama trénu.",
+      "description": "Hver rWood Panel byrjar með FSC®-vottuðum spón úr skógum sem er stjórnað á ábyrgan hátt. Við lok líftíma tekur Re-Sound við plötunum án endurgjalds.",
       "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
-      "badge4Desc": "Full umhverfisyfirlýsing fyrir vöru",
-      "badge5Desc": "E1-flokkað, uppfyllir ströngustu losunarstaðla",
-      "badge6": "Græn orka",
-      "badge6Desc": "Framleiðsla knúin af endurnýjanlegum orkugjöfum"
+      "badge4Desc": "Full umhverfisyfirlýsing fyrir vöru"
     },
     "specs": {
-      "tag": "FORSKRIFTIR",
-      "title": "Tæknilegar forskriftir",
+      "tag": "TÆKNILEGAR UPPLÝSINGAR",
+      "title": "Plata, áferðir og bruni",
       "compositionTitle": "Samsetning",
       "fireTitle": "Eldvarnir",
       "certsTitle": "Vottanir",
       "dimensionsTitle": "Mál",
-      "finishTitle": "Yfirborð",
+      "finishTitle": "Spónar og áferðir",
       "processingTitle": "Vinnsla",
       "dimPanelWidth": "Panel breidd",
       "dimPanelLength": "Lengd plötu",
-      "dimThicknessStd": "Þykkt (staðlað)",
-      "dimThicknessSlim": "Þykkt (mjó)",
-      "dimWeight19": "Þyngd (19 mm)",
       "compTopLayer": "Efsta lag",
-      "compTopLayerVal": "A-flokks spjald, litað og lakkað",
+      "compTopLayerVal": "Spónn úr ekta viði í A-gæðum, verksmiðjufrágenginn",
       "compCore": "Kjarni",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, staðal / MR / FR",
       "compBackLayer": "Baklag",
       "compBackLayerVal": "Jafnvægisspjald",
-      "compBonding": "Bindiefni",
-      "compBondingVal": "HPLT-pressutækni",
-      "finishLacquerType": "Lakktegund",
-      "finishLacquerVal": "Akrýlat úretan UV-herðing",
-      "finishLayers": "Fjöldi laga",
-      "finishGloss": "Gljástig",
-      "finishGlossVal": "Ofurmatt (3-5 GU)",
-      "finishAntiFingerprint": "Andstætt fingraförum",
-      "finishScratch": "Rispmótstaða",
-      "fireStdMDF": "Staðlað MDF",
-      "fireFRMDF": "Eldþolið MDF",
       "certWoodSourcing": "Viðaruppspretta",
       "certEnvironmental": "Umhverfislegt",
-      "certFelt": "Flóki (ef akústískt)",
       "procSawing": "Sögun",
       "procSawingVal": "Stöðluð viðarverkfæri",
-      "procEdgeBanding": "Kantborði",
-      "procEdgeBandingVal": "Samsvarandi spjald-kantborði tiltækur",
       "procCNC": "CNC-vinnsla",
-      "procEnvironment": "Umhverfi",
-      "procEnvironmentVal": "Innandyra notkun (þurr svæði)",
       "procMoisture": "Rakamótstæður",
-      "procMoistureVal": "MR-kjarni tiltækur"
+      "procMoistureVal": "MR-kjarni tiltækur",
+      "finishRanges": "Spónalínur",
+      "finishRangesVal": "Nature: líflegt æðamynstur með karakter · Gemini: jafn, einsleitur tónn",
+      "finishTreatments": "Yfirborðsmeðferðir",
+      "finishTreatmentsVal": "Náttúrulegt lakk · litað · HPL-lagskipting · filma · málning",
+      "finishCoreColours": "Kjarnalitir",
+      "finishCoreColoursVal": "Brúnn, grænn eða svartur",
+      "finishEdgesVal": "Yfirspónlagður gegnheill viður fyrir ósýnileg samskeyti",
+      "finishFeltVal": "Svart eða hvítt flís",
+      "finishMadeToOrder": "Eftir pöntun",
+      "finishMadeToOrderVal": "Hvaða annar spónn, bæs, litarefni og áferð sem er",
+      "certWoodSourcingVal": "Allir spónar FSC®-vottaðir, úr skógum sem er stjórnað á ábyrgan hátt"
     },
     "related": {
       "tag": "SAMRÆMDAR VÖRUR",
       "title": "Tengdar vörur",
-      "groove": "rWood - Groove",
-      "edgebanding": "Samræmdar kantstrimlar",
-      "samples": "Ókeypis sýnishorn",
       "description": "Náðu hönnunarsamfellu með samræmdum Re-Sound vörum",
       "explore": "Skoða →",
       "orderSamples": "Panta sýnishorn →",
@@ -2691,50 +2727,49 @@
     },
     "overview": {
       "tag": "YFIRLIT",
-      "title": "Náttúrulegt tré, Vandað yfirborð",
-      "description": "rWood - Panel færir hlýju og karakter massífs viðar í forútbúið, notkunarklætt snið. Hvert panel er gert úr vandaðri A-gæða fineeru, límt á háþéttleika MDF kjarna með háþróaðri pressutækni.",
-      "feature1": "Raunveruleg A-gæða tréfineera á háþéttleika MDF kjarna",
-      "feature2": "Forfrágengt með 6 lögum UV acryllakks — engin frekari meðhöndlun nauðsynleg",
-      "feature3": "10 finerartegundir tiltækar — eik, valhneta, birki og fleiri",
-      "feature4": "FSC® vottað — tré úr ábyrgum skóglendum",
-      "feature5": "Fáanlegt í náttúrulegu lakkað, náttúruolíu eða óklædd"
+      "title": "Náttúran, fáguð",
+      "description": "rWood Panel færir hlýju og karakter ekta viðar í forfrágengið, tilbúið snið: spónn í A-gæðum á MDF-kjarna, frágenginn í verksmiðju. Sömu tólf spónarnir ganga í gegnum alla rWood-línuna, þannig að sléttar plötur, Groove, Micro og Perf passa saman á einum vegg.",
+      "feature1": "Tólf spónar á lager: eik, hnota, askur, beyki og birki",
+      "feature2": "Tvær spónalínur: Nature (líflegt æðamynstur) og Gemini (jafn tónn)",
+      "feature3": "MDF-kjarni í staðal-, rakaþolnum eða eldtefjandi gæðum",
+      "feature4": "Náttúrulegt eða litað lakk, HPL-lagskipting, filma eða málning",
+      "feature5": "Frágengið í verksmiðju, tilbúið til uppsetningar"
     },
     "anatomy": {
-      "tag": "SAMSETNING",
-      "layer1": "Raunveruleg tréfineera",
-      "layer1Desc": "A-flokks raunverulegt viðarspjald, burstað, litað og varið með 6 lögum af UV-herðingu akrýlat úretan lakks. Mýktur super matt frágangur.",
-      "layer2": "MDF kjarni",
-      "layer2Desc": "700 kg/m³ FSC®-vottað MDF. Fáanlegt í stöðluðum, rakaþolnum (MR) og eldtefjandi (FR) gæðaflokkum.",
-      "layer3": "Jafnvægi fineera",
-      "layer3Desc": "Samsvarandi spjald-bak tryggir málstöðugleika og kemur í veg fyrir bugðu. Frágengnir eða ófrágengnir valkostir.",
-      "keyAdvTitle": "Helstu kostir yfirborðs",
-      "description": "Hvert lag þjónar tilgangi — frá ekta viðar yfirborði til verkfræðihannaðs kjarna."
+      "tag": "UPPBYGGING",
+      "layer1": "Spónhlið",
+      "layer1Desc": "Spónn úr ekta viði í A-gæðum, einn af tólf lagerspónum eða hvaða spónn sem er eftir pöntun, frágenginn í verksmiðju.",
+      "layer2": "MDF-kjarni",
+      "layer2Desc": "Staðal-, rakaþolið (MR) eða eldtefjandi (FR) MDF; kjarnalitur brúnn, grænn eða svartur.",
+      "layer3": "Mótspónn",
+      "layer3Desc": "Spónn á bakhlið heldur plötunni sléttri og stöðugri.",
+      "description": "Hvert lag hefur sitt hlutverk, frá yfirborðinu úr ekta viði til tæknilega kjarnans.",
+      "title": "Spónn, kjarni, mótspónn"
     },
     "collection": {
-      "tag": "SAFN",
-      "title": "10 valdir viðarspjöld",
-      "description": "Frá rólegri skandinavísku birki til áhrifamikils amerísks valhnetu — hvert spjald er valið, burstað og fullklárað til að sýna karakter viðarins.",
-      "filterAll": "Öll spjöld",
-      "customNote": "Sérsmíðaðar spjaldategundir og litarefni tiltæk fyrir verkefnapantanir 50+ platna.",
+      "tag": "SPÓNAR",
+      "title": "Tólf spónar úr ekta viði",
+      "description": "Sex eikartegundir frá ljósum til næstum svörtum og sex úrvalstegundir: hnota, askur, beyki og birki. Fáanlegir í allri rWood-línunni, og hvaða annar spónn, bæslitur eða áferð sem er eftir pöntun.",
+      "filterAll": "Allir spónar",
+      "customNote": "Hvaða annar spónn, bæs, litarefni og áferð sem er eftir beiðni. Sýnismyndir eru til viðmiðunar: náttúrulegir spónar eru breytilegir að æðamynstri, lit og mynstri, og tónar breytast í annarri lýsingu og með öðru lakki. Staðfestu alltaf með áþreifanlegu sýnishorni.",
       "categories": {
-        "lightNaturals": "Ljósir tónar",
-        "warmNaturals": "Hlýir tónar",
-        "deepTones": "Djúpir tónar"
+        "oak": "Eikarspónar",
+        "premium": "Úrvalstegundir"
       },
-      "origins": {
-        "europe": "Evrópa",
-        "scandinavia": "Skandinavía",
-        "northAmerica": "Norður-Ameríka"
-      },
-      "grains": {
-        "straightToInterlocked": "Beint til samtvinnað",
-        "subtleFineGrain": "Fíngerð smáæðar",
-        "fineStraightGrain": "Fínar beinar æðar",
-        "cathedralGrain": "Dómkirkjuæðar",
-        "pronouncedGrain": "Áberandi æðar",
-        "straightToWavy": "Beint til bylgjað",
-        "deepCathedralGrain": "Djúpar dómkirkjuæðar",
-        "richFlowingGrain": "Ríkulegar streymandi æðar"
+      "filterLabel": "Sía spóna",
+      "items": {
+        "strawOak": "Ljós, hlý og hlutlaus eik",
+        "silkOak": "Mjúkur greige tónn",
+        "honeyOak": "Hlý, gyllt eik",
+        "umberOak": "Reykt grábrúnt",
+        "smokedOak": "Djúpt, hlýtt brúnt",
+        "cocoaOak": "Næstum svart espresso",
+        "walnut": "Djúpbrúnt með æðamynstri",
+        "tobaccoWalnut": "Hlýr miðbrúnn",
+        "whiteAsh": "Bjart, beint æðamynstur",
+        "whiteBeech": "Ljóst, jafnt og hlutlaust",
+        "birchSliced": "Fínt, ljóst æðamynstur",
+        "birchRotary": "Breitt, mjúkt mynstur"
       }
     },
     "dimensions": {
@@ -2754,16 +2789,16 @@
       "title": "Samræmdar vörur og aukahlutir",
       "description": "Náðu hönnunarsamfellu með samræmdum Re-Sound vörum.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Hljóðpaneler með raufum",
-      "item2Title": "Samsvarandi Fineerkant",
-      "item2Desc": "Samsvara trékant",
+      "item1Desc": "Rifjuð borð í sömu spónum fyrir veggi og loft.",
+      "item2Title": "Yfirspónlagðir kantar",
+      "item2Desc": "Kantar úr gegnheilum viði, yfirspónlagðir fyrir ósýnileg samskeyti á stórum flötum.",
       "item3Title": "Ókeypis Sýnishorn",
       "item3Desc": "Biddu um sýnishorn af hvaða spjald- og frágangs-samsetningu sem er."
     },
     "cta": {
       "title": "Tilbúinn að lyfta verkefninu þínu?",
       "description": "Fáðu persónulegt tilboð, biðjaðu um líkamlegar prófanir eða talaðu við sérfræðingateymið okkar um næsta verkefni þitt.",
-      "circularNote": "Hringrásarleg skilagreiðsla"
+      "circularNote": "Ókeypis spónsýnishorn · Ókeypis móttaka við lok líftíma"
     },
     "downloads": {
       "productDataSheet": "Vörugagnablað"
@@ -2772,7 +2807,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvaðan kemur FSC-vottaða spónlagið?",
-          "answer": "Spónlagið kemur úr FSC-vottuðum evrópskum skógum (aðallega eik og hnetuviður). Chain-of-custody-vottunarnúmer fylgir hverri sendingu að ósk."
+          "answer": "Allir rWood-spónar eru FSC®-vottaðir og koma úr skógum sem er stjórnað á ábyrgan hátt. Chain-of-custody-vottorðið fæst eftir beiðni."
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
@@ -2780,22 +2815,40 @@
         },
         "leadTime": {
           "question": "Hver er staðlaði afhendingartíminn?",
-          "answer": "Lagerspónn sendist innan 3–4 vikna; viðartegundir utan lagers og sérsniðin yfirborð taka 6–8 vikur. Framleiðslugeta er fráteknu við pöntunarstaðfestingu."
+          "answer": "Afhendingartíminn fer eftir spón og áferð og er staðfestur við pöntun. Ókeypis spónsýnishorn eru í boði áður en þú tilgreinir; verð og lágmarkspöntun eftir beiðni."
         },
         "installMethod": {
           "question": "Hvernig eru rWood plötur settar upp?",
-          "answer": "Tvær aðferðir eru í boði: falið klemmukerfi fyrir hraða uppsetningu og auðveldan aftöku, eða bein límfesting fyrir varanlegar uppsetningar. Báðar eru útlistaðar í uppsetningarleiðbeiningunum."
+          "answer": "rWood Panel er slétt spónlögð MDF-plata og er unnin sem slík: söguð og CNC-fræst með venjulegum trésmíðaverkfærum og síðan fest á undirlagið eða felld inn í húsgögn. Uppsetningarleiðbeiningarnar eru í niðurhalsreitnum á þessari síðu."
         },
         "substrateCleanup": {
           "question": "Hvað verður um plöturnar í lok líftímans?",
-          "answer": "Re-Sound tekur plöturnar til baka án endurgjalds í BE/NL/FR/DE/LU. Spónlagið er aðskilið frá endurunnu þæfingu undirlagi; bæði straumar fara aftur í aðfangakeðjuna okkar fremur en á urðunarstað."
+          "answer": "Re-Sound tekur við plötunum án endurgjalds við lok líftíma í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "Nærmynd af rWood - Panel spónlagðri MDF-plötu sem sýnir viðaræðarnar",
       "closeUpOfLacqueredVeneerSurface": "Nærmynd af lökkuðu viðarspónsyfirborði",
-      "sustainablyManagedForest": "Skógur í sjálfbærri umsjón"
+      "sustainablyManagedForest": "Skógur í sjálfbærri umsjón",
+      "hero": "rWood Panel spónlögð viðarplata",
+      "heroIn": "rWood Panel í {veneer}",
+      "veneerSwatch": "Spónsýni {name}"
+    },
+    "kpi": {
+      "veneers": "spónar úr ekta viði",
+      "ranges": "spónalínur: Nature og Gemini",
+      "fsc": "vottaðir spónar",
+      "anyValue": "Hvaða",
+      "anyLabel": "spónn, bæs og áferð sem er eftir pöntun",
+      "ariaLabel": "Lykiltölur"
+    },
+    "ordering": {
+      "title": "Afhendingartími og sýnishorn",
+      "orderCaption": "Pöntun",
+      "supplyCaption": "Afhending",
+      "samplesVal": "Ókeypis spónsýnishorn",
+      "samplesQuotesDesc": "Pantaðu ókeypis spónsýnishorn eða sendu okkur teikningarnar þínar fyrir tilboð."
     }
   },
   "rpetFlexGroovePage": {

@@ -19,13 +19,13 @@
     "divideTitle": "Divide Freestanding Acoustic Screens | Re-Sound",
     "divideDescription": "Freestanding acoustic screens with magnetic modular connection: dual-sided absorption, no installation, recycled textile. Made in Belgium.",
     "rwoodGrooveTitle": "rWood Groove — Grooved Wood Acoustic Panels, Oak & Walnut | Re-Sound",
-    "rwoodGrooveDescription": "Grooved wood acoustic panels with FSC-certified oak and walnut veneer on a recycled felt core. Class A absorption, 4 lamella variants, 5 finishes.",
+    "rwoodGrooveDescription": "Grooved wood acoustic planks: FSC®-certified oak or walnut veneer on an MDF core with a 3 mm recycled-PET felt. αw 0.90, class A, four lamella patterns, five veneers, 10 and 19 mm.",
     "rwoodPerfTitle": "rWood Perf — Perforated Wood Acoustic Panels | Re-Sound",
     "rwoodPerfDescription": "Perforated wood acoustic panels with FSC-certified veneer: four perforation patterns for broadband absorption, 8 finishes, fire-retardant core.",
     "rwoodMicroTitle": "rWood Micro — Micro-perforated Acoustic Wood Panels | Re-Sound",
-    "rwoodMicroDescription": "Micro-perforated acoustic wood panels (0.5 mm) with FSC-certified veneer: an almost invisible pattern, {fireClass} fire rating, backlit option.",
-    "rwoodVeneerTitle": "rWood Panel — Veneer Acoustic Panels, 10 Wood Species | Re-Sound",
-    "rwoodVeneerDescription": "Smooth veneer acoustic panels in 10 wood species: furniture-grade, FSC-certified, EPD available. Brushed, stained and lacquered, ready to install.",
+    "rwoodMicroDescription": "Micro-perforated acoustic wood panels (from 0.5 mm) with FSC-certified veneer: an almost invisible pattern, {fireClass} fire rating, made to measure up to 3 050 × 1 220 mm.",
+    "rwoodVeneerTitle": "rWood Panel — Veneered Acoustic Panels, 12 Real-Wood Veneers | Re-Sound",
+    "rwoodVeneerDescription": "Smooth veneered acoustic panels in 12 real-wood veneers, Nature or Gemini range: FSC®-certified, natural or pigmented lacquer, HPL, foil or paint. Factory finished, any veneer to order.",
     "rpetGrooveTitle": "rPET Groove — Grooved PET Acoustic Panels, 12 Colours | Re-Sound",
     "rpetGrooveDescription": "Grooved PET acoustic panels from recycled bottles: 12 colours, 3 thicknesses (12/24/36 mm), NRC up to 0.90, B-s1,d0 fire rating. Made in Poland.",
     "rpetPanelTitle": "rPET Panel — Recycled PET Acoustic Panel, 16 Colours | Re-Sound",
@@ -1936,121 +1936,111 @@
   },
   "rwoodGroovePage": {
     "hero": {
-      "tag": "ACOUSTIC WOOD PANELS",
+      "tag": "GROOVED ACOUSTIC WOOD PANEL",
       "title": "rWood Groove: grooved wood acoustic panels in oak and walnut",
-      "tagline": "Natural Beauty, Perfect Acoustics",
-      "description": "Bring natural warmth and sophisticated style to any space with rWood - Groove acoustic panels. Premium oak and walnut veneers combined with sound-absorbing felt backing create harmony between aesthetics and acoustics.",
-      "usp1": "FSC® Certified Wood",
-      "usp2": "Class A Absorption",
-      "usp3": "Free take-back programme"
+      "tagline": "Natural beauty, perfect acoustics.",
+      "description": "A-grade oak or walnut veneer on an MDF core, precision-grooved into vertical lamellas on a 3 mm recycled-PET felt. The open grooves lead sound into the felt; planks join with a concealed tongue-and-groove. Planks of 300 mm wide, 2 400 or 2 780 mm long, in 10 and 19 mm, for walls and ceilings.",
+      "usp1": "FSC®-certified veneer",
+      "usp2": "Absorption class A",
+      "usp3": "Free take-back at end of life"
     },
     "overview": {
-      "tag": "CRAFTSMANSHIP",
-      "title": "Where Nature Meets Design",
-      "subtitle": "Premium Finishes",
-      "description": "rWood - Groove panels transform any room into a sophisticated acoustic environment. The combination of precision-milled grooves and premium wood veneers creates a surface that is both visually stunning and acoustically effective.",
-      "feature1": "Premium A-grade oak and walnut veneers",
-      "feature2": "Integrated acoustic felt backing",
-      "feature3": "Seamless panel-to-panel connection",
-      "feature4": "Suitable for walls and ceilings",
-      "description2": "rWood - Groove panels transform any room into a space of natural beauty and acoustic comfort. Each panel features premium A-grade oak or walnut veneer, precisely grooved to create the signature linear aesthetic while maximizing sound absorption through integrated felt backing."
-    },
-    "oakCollection": {
-      "title": "Oak Collection",
-      "description": "Natural oak veneer in multiple stain options, from raw blonde to deep smoked tones."
+      "tag": "OVERVIEW",
+      "title": "Grooved oak or walnut on recycled-PET felt",
+      "feature1": "A-grade oak or walnut veneer",
+      "feature2": "3 mm recycled-PET felt backing, black or grey",
+      "feature3": "Concealed tongue-and-groove connection",
+      "feature4": "For walls and ceilings, interior dry areas",
+      "description2": "rWood Groove combines an A-grade oak or walnut veneer with an MDF core that is precision-grooved into vertical lamellas. The 3 mm recycled-PET felt behind the lamellas takes the sound that enters through the open grooves, which cuts reverberation and improves speech clarity. Four lamella patterns, five stock veneers, and any veneer and finish to order."
     },
     "feltBacking": {
-      "title": "Felt Backing Options",
-      "description": "Natural grey, black, or colored acoustic felt visible through the grooves."
+      "title": "Felt colour",
+      "description": "3 mm recycled-PET felt behind the lamellas, visible through the grooves.",
+      "black": "Black",
+      "grey": "Grey"
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
-      "title": "Superior Sound Absorption",
-      "benefit1Title": "Reduced Reverberation",
-      "benefit1": "Control echo and improve speech clarity in any room",
-      "benefit2Title": "Increased Comfort",
-      "benefit2": "Create calmer, more peaceful environments",
-      "benefit3Title": "Tested Performance",
-      "benefit3": "Independently verified acoustic data",
-      "description": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo and reverberation to create calm, productive spaces.",
-      "ratingLabel": "Absorption",
-      "description2": "The unique groove design combined with high-quality acoustic felt creates exceptional sound absorption. Reduce echo, eliminate noise, and create spaces that are as comfortable to the ear as they are to the eye.",
-      "diagramTitle": "Panel Cross-Section",
-      "soundAbsorbed": "Sound Absorbed",
-      "testStandard": "Test Standard"
+      "tag": "ACOUSTICS",
+      "title": "Sound absorption",
+      "description2": "The open grooves lead sound into the recycled-PET felt behind the lamellas, which cuts reverberation and improves speech clarity.",
+      "tableTitle": "Sound absorption",
+      "behindTitle": "Behind the plank",
+      "behindDesc": "Mounted on battens, the cavity can take an extra absorber: acoustic felt, an rPET panel or mineral wool.",
+      "note": "αw and absorption class to EN ISO 11654. Octave-band values follow with the new test series."
     },
     "installation": {
-      "tag": "EASY INSTALL",
-      "title": "Seamless Installation",
-      "step1Title": "Prepare Surface",
-      "step1Desc": "Mount battens or apply adhesive to clean, dry surface",
-      "step2Title": "Position First Panel",
-      "step2Desc": "Start from corner, ensure level alignment",
-      "step3Title": "Connect Panels",
-      "step3Desc": "Slide tongue into groove for seamless connection",
-      "step4Title": "Complete & Finish",
-      "step4Desc": "Add end mouldings for a professional result",
-      "description": "rWood - Groove panels feature an innovative tongue-and-groove connection for fast and easy installation.",
-      "description2": "rWood - Groove panels feature an innovative tongue-and-groove connection system that ensures invisible joints and a cohesive surface. Whether you're a professional installer or a skilled DIYer, our system makes installation straightforward."
+      "tag": "INSTALLATION",
+      "title": "Tongue-and-groove, on battens or glued",
+      "step1Title": "Surface",
+      "step1Desc": "Battens or adhesive on a clean, dry, level surface.",
+      "step2Title": "First plank",
+      "step2Desc": "Start from a corner and check the level.",
+      "step3Title": "Connect",
+      "step3Desc": "Slide the tongue into the groove for a seamless joint.",
+      "step4Title": "Finish",
+      "step4Desc": "Close the edges with end mouldings.",
+      "description2": "Planks are fixed on battens or glued to the substrate and join with a concealed tongue-and-groove, so the joints disappear in the groove pattern."
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
-      "title": "Responsibly Sourced",
-      "badge1": "FSC® Certified",
-      "badge1Desc": "Wood from responsibly managed forests",
-      "badge2": "Recycled Felt",
-      "badge2Desc": "Acoustic backing from recycled materials",
+      "title": "Responsibly sourced",
+      "badge1": "FSC® certified",
+      "badge1Desc": "Wood sourcing FSC®-certified, certificate C191539",
+      "badge2": "Recycled-PET felt",
+      "badge2Desc": "3 mm felt backing made of recycled PET",
       "badge3": "Made in Poland",
       "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
       "badge4": "Free take-back",
       "badge4Desc": "Panels come back to us free of charge at end of life",
-      "description": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certified wood comes from responsibly managed forests, and the acoustic backing uses recycled materials.",
-      "description2": "Every rWood - Groove panel is crafted with sustainability at its core. Our FSC® certification guarantees that the wood comes from responsibly managed forests that provide environmental, social, and economic benefits."
+      "description2": "FSC®-certified wood, a backing of recycled PET and a free take-back at end of life.",
+      "badge2DescCert": "3 mm felt backing made of recycled PET, OEKO-TEX® Standard 100",
+      "badge5": "EPD",
+      "badge5Desc": "Environmental product declaration to ISO 14025 and EN 15804"
     },
     "specs": {
-      "tag": "TECHNICAL",
-      "title": "Specifications",
-      "acousticsTitle": "Acoustic Performance",
-      "fireTitle": "Fire Safety",
-      "certsTitle": "Certifications",
-      "applicationsTitle": "Applications",
-      "dimensionsTitle": "Dimensions",
-      "materialsTitle": "Materials",
-      "dimPanelWidth": "Panel width",
-      "dimPanelLength": "Panel length",
-      "dimThickness": "Thickness",
-      "dimGrooveDepth": "Groove depth",
-      "dimGrooveWidth": "Groove width",
-      "matVeneer": "Veneer",
-      "matVeneerVal": "A-grade Oak / Walnut",
-      "matCore": "Core",
-      "matCoreVal": "MDF (standard / moisture-resistant / fire-retardant)",
-      "matBacking": "Backing",
-      "matBackingVal": "Recycled PET (3mm)",
+      "tag": "TECHNICAL DATA",
+      "title": "Plank, fire and emissions",
+      "acousticsTitle": "Sound absorption",
+      "fireTitle": "Fire (EN 13501-1) and emissions",
+      "dimPanelWidth": "Width",
+      "dimPanelLength": "Length",
+      "matCoreVal": "Standard, MR or FR MDF",
       "matFinish": "Finish",
-      "finishVal": "Oil / Lacquer",
-      "stdPanels": "Standard panels",
-      "fireMdfVal": "Fire-retardant MDF",
-      "woodSourcing": "Wood sourcing",
-      "feltCert": "Felt certification",
-      "envLabel": "Environmental",
-      "vocLabel": "VOC emissions",
-      "vocVal": "E1 / Low emission",
-      "appInstall": "Installation",
-      "appWalls": "Walls & Ceilings",
-      "appEnv": "Environment",
-      "appEnvVal": "Interior (dry areas)",
-      "appMoist": "Moisture-resistant",
-      "appMoistVal": "Available for humid areas",
-      "appConn": "Connection",
-      "appConnVal": "Tongue & groove"
+      "finishVal": "Penetrating oil or lacquer",
+      "plankTitle": "Plank",
+      "dimGroove": "Groove",
+      "dimGrooveVal": "15 mm wide, 7 · 15 mm deep",
+      "feltVal": "Recycled PET, 3 mm, black or grey",
+      "connVal": "Concealed tongue-and-groove",
+      "weightPlank": "Weight per plank",
+      "weightPlankVal": "approx. 6.4–8.3 kg",
+      "tolerances": "Tolerances",
+      "tolerancesVal": "Thickness ± 0.2 mm, weight ± 10 %",
+      "octaveBands": "Octave-band values",
+      "octaveBandsVal": "Follow with the new test series",
+      "fireStdCore": "Standard MDF core",
+      "fireFrCore": "FR MDF core",
+      "fireFelt": "Felt backing",
+      "fscVal": "FSC®-certified, C191539",
+      "epdVal": "EPD to ISO 14025 · EN 15804",
+      "finishTitle": "Finish",
+      "oakOilColours": "Oak oil colours",
+      "oakOilColoursVal": "Natural, White, Clear, Brown, Dark Brown, Black",
+      "walnutFinish": "Walnut",
+      "walnutFinishVal": "Natural, oiled",
+      "feltColours": "Felt colours",
+      "feltColoursVal": "Black or grey",
+      "optionsTitle": "Options",
+      "surfaceVal": "Oiled or painted, untreated on request",
+      "madeToOrder": "Made to order",
+      "madeToOrderVal": "Any veneer and finish",
+      "accessories": "Accessories",
+      "accessoriesVal": "End mouldings, corner profiles, battens, touch-up kit"
     },
     "accessories": {
-      "tag": "COMPLETE THE LOOK",
+      "tag": "ACCESSORIES",
       "title": "Accessories",
-      "endMouldings": "End Mouldings",
-      "cornerProfiles": "Corner Profiles",
-      "description": "Professional finishing touches for a perfect result",
+      "description": "End mouldings, corner profiles, battens and a touch-up kit.",
       "item1Title": "End Mouldings",
       "item1Desc": "Clean edges where panels meet other surfaces",
       "item2Title": "Corner Profiles",
@@ -2065,57 +2055,50 @@
       "title": "Projects & Installations"
     },
     "patterns": {
-      "tag": "DESIGN OPTIONS",
-      "title": "Premium Finishes",
-      "description": "Four distinct groove patterns to match any architectural vision. From classic batten to modern linear, each pattern transforms the wall into a dynamic surface.",
-      "description2": "Four distinct groove patterns to match any architectural vision. From classic balanced proportions to bold wide strips—find the perfect expression for your space."
+      "tag": "PATTERNS",
+      "title": "Four lamella patterns",
+      "description2": "Four lamella patterns on the same 300 mm plank, from the classic six-lamella Original to the wide 3-Lamella. The drawings are to scale: lamella widths and 15 mm grooves as on the plank.",
+      "drawingAlt": "{name} pattern, {dims}, to scale on a 300 mm plank",
+      "lamellaCount": "{count} lamellas",
+      "note": "Plank width 300 mm, groove width 15 mm. Standard size 19 × 300 × 2 400 or 2 780 mm. Weight per plank approx. 6.4–8.3 kg. Tolerances: thickness ± 0.2 mm, weight ± 10 %."
     },
     "materials": {
       "tag": "MATERIALS",
-      "oilFinishesTitle": "Oil Finishes",
-      "oilFinishesDesc": "Natural, White, Clear, Brown, Dark Brown, and Black oil finishes. Each penetrates deep into the wood for lasting, authentic protection.",
+      "oilFinishesTitle": "Oak: penetrating oil or lacquer",
+      "oilFinishesDesc": "Finish: penetrating oil or lacquer. Oak oil colours: Natural, White, Clear, Brown, Dark Brown and Black.",
       "walnutTitle": "Walnut",
-      "walnutDesc": "Rich, warm tones with distinctive grain patterns. The premium choice for high-end interiors.",
-      "description": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain and colour. The oil-finished surface is ready to install with no additional treatment required.",
-      "colorSelector": "Select Wood Finish",
-      "layer1Name": "Oak / Walnut Veneer",
-      "layer1Desc": "Premium A-grade natural wood",
-      "layer2Name": "MDF Core with Grooves",
-      "layer2Desc": "Sound entry channels",
-      "layer3Name": "Acoustic Felt Backing",
-      "layer3Desc": "Recycled PET, 3mm thick",
-      "waveLabel": "Sound waves absorbed",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "description2": "Every rWood - Groove panel is crafted with A-grade veneer, ensuring consistent grain patterns and superior quality. Choose from our range of oiled and painted finishes to perfectly complement your interior design."
+      "walnutDesc": "Natural, oiled. Rich, figured brown (Walnut) or warm mid-brown (Tobacco Walnut).",
+      "colorSelector": "Veneer",
+      "selectPrompt": "Select a veneer"
     },
     "downloads": {
       "installationGuide": "Installation Guide",
       "colorChart": "Color & Finish Guide"
     },
     "cta2": {
-      "freeNote": "Free samples available • FSC® Certified"
+      "freeNote": "Free veneer samples · FSC®-certified veneer"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+          "answer": "The veneer is FSC®-certified: chain-of-custody certificate C191539. All twelve rWood veneers come from responsibly managed forests; the certificate is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
-          "answer": "With the fire-retardant (FR) MDF core, rWood panels are classified B-s1,d0 under EN 13501-1 — the core we specify for escape routes and public buildings. The fire certificate is in the downloads block on this page."
+          "answer": "It depends on the core. With the fire-retardant (FR) MDF core, rWood Groove is classified B-s1,d0 to EN 13501-1; on a standard MDF core the classification is D-s2,d2. The felt backing is B-s1,d0. Specify the FR core for escape routes and public buildings."
         },
         "leadTime": {
           "question": "What is the standard lead time?",
-          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+          "answer": "The lead time is subject to stock and is confirmed on order. Free veneer samples are available before you specify; prices and the minimum order on request."
         },
         "installMethod": {
           "question": "How are rWood panels installed?",
-          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+          "answer": "rWood Groove is fixed on battens or glued to a clean, dry, level substrate. Start from a corner, slide the tongue of each plank into the groove of the previous one for a seamless joint, and close the edges with end mouldings."
         },
         "substrateCleanup": {
           "question": "What happens to the panels at end of life?",
-          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+          "answer": "Re-Sound takes the planks back free of charge at end of life in Belgium, the Netherlands, France, Germany and Luxembourg."
         }
       }
     },
@@ -2123,139 +2106,165 @@
       "rwoodGrooveAcousticPanelInModernInterior": "rWood - Groove acoustic panel in modern interior",
       "woodFinishSamples": "Wood finish samples",
       "panelInstallationProcess": "Panel installation process",
-      "sustainableForestry": "Sustainable forestry"
+      "sustainableForestry": "Sustainable forestry",
+      "hero": "rWood Groove grooved acoustic wood planks",
+      "heroIn": "rWood Groove grooved acoustic wood planks in {finish}",
+      "veneerSwatch": "{name} veneer swatch"
     },
     "options": {
       "originalDesc": "Classic 6-lamella design",
       "mixedDesc": "Dynamic mixed widths",
       "4lamellaDesc": "Bold wide strips",
       "3lamellaDesc": "Statement wide panels"
+    },
+    "kpi": {
+      "thickness": "mm thickness",
+      "alphaWClass": "αw, absorption class {cls}",
+      "alphaW": "αw, weighted sound absorption",
+      "fire": "reaction to fire, FR MDF core",
+      "patterns": "lamella patterns on 300 mm planks",
+      "ariaLabel": "Key figures"
+    },
+    "buildUp": {
+      "tag": "BUILD-UP",
+      "title": "Three layers, one plank",
+      "layer1": "Veneer face",
+      "layer1Desc": "A-grade oak or walnut",
+      "layer2": "MDF lamellas",
+      "layer2Desc": "Standard, MR or FR core",
+      "layer3": "Recycled-PET felt",
+      "layer3Desc": "3 mm, black or grey",
+      "fixing": "Fixed on battens or glued to the substrate."
+    },
+    "veneers": {
+      "tag": "VENEERS AND FINISHES",
+      "title": "Oak and walnut, any veneer to order",
+      "description": "Five stock veneers, oiled or lacquered. Select a veneer to see it on the plank.",
+      "silkOak": "Soft greige tone",
+      "strawOak": "Pale, warm-neutral oak",
+      "umberOak": "Smoked grey-brown",
+      "walnut": "Rich, figured brown",
+      "tobaccoWalnut": "Warm mid-brown",
+      "guideNote": "All twelve rWood veneers are shown in the rWood colour and finish guide. Real wood varies in colour and grain: ask for samples before you specify."
+    },
+    "ordering": {
+      "title": "Lead time and samples",
+      "orderCaption": "Order",
+      "supplyCaption": "Supply",
+      "leadTimeVal": "Subject to stock, confirmed on order",
+      "samplesVal": "Free veneer samples",
+      "samplesQuotesDesc": "Order free veneer samples or send us your plans for a quote."
     }
   },
   "rwoodPerfPage": {
     "hero": {
-      "tag": "PERFORATED ACOUSTIC WOOD PANELS",
+      "tag": "PERFORATED ACOUSTIC WOOD PANEL",
       "title": "rWood Perf: perforated wood acoustic panels",
-      "tagline": "Precision Perforations, Maximum Absorption",
-      "description": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control.",
-      "usp1": "Round Perforations",
-      "usp2": "{fireClass} fire rated",
-      "usp3": "αw {alphaW} per pattern",
-      "description2": "High-performance drilled acoustic panels combining natural wood beauty with outstanding sound absorption. A Fire Retardant Medium Density Fiberboard core and over-veneered edges deliver the highest levels of fire safety and acoustic control for demanding public spaces."
+      "tagline": "Precision perforations, maximum absorption.",
+      "description": "Round perforations drilled through the veneered, fire-retardant MDF panel let sound pass into the acoustic fleece and the absorber behind it. Four patterns, from a discreet 5 mm hole to a double 8 mm pattern with 24 % open area.",
+      "usp1": "Round perforations",
+      "usp2": "{fireClass} reaction to fire",
+      "usp3": "αw {alphaW} by pattern",
+      "description2": "Made to measure for walls and ceilings, up to 3 050 × 1 220 mm, in 10 and 19 mm. Eight stock veneers, any veneer and finish to order."
     },
     "patterns": {
-      "tag": "PERFORATION PATTERNS",
-      "title": "Choose Your Pattern",
-      "description": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for highest absorption to subtle micro-perforations for a clean wood aesthetic.",
-      "coreMatchTitle": "Match the core to your veneer to make perforations disappear—or make them a design feature.",
-      "coreColorTitle": "Core Colour",
-      "coreMatchDesc": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a design statement.",
-      "description3": "Four drilled perforation patterns with calibrated acoustic properties. From maximum open area for demanding acoustic spaces to more discreet patterns that prioritize visual refinement.",
-      "coreMatchDesc2": "Match the core to your veneer to make perforations blend in, or choose a contrasting core for a decorative effect."
-    },
-    "coreColor": {
-      "title": "Core Colour",
-      "description": "Black or natural acoustic felt visible through the perforations—subtle but impactful."
+      "tag": "PERFORATION",
+      "title": "Four perforation patterns",
+      "description": "Hole size and open area per pattern. The larger the open area, the higher the absorption.",
+      "coreColorTitle": "Core colour",
+      "coreMatchDesc2": "A light or dark FR MDF core, visible through the holes: match it to the veneer to make the perforations blend in, or contrast it for a graphic effect.",
+      "spec": "Ø {d} mm · {pct} % open",
+      "specDouble": "2 × Ø {d} mm · {pct} % open",
+      "drawingNote": "Drawings about 1:2, hole size and open area as stated per pattern.",
+      "coreLight": "Light core",
+      "coreDark": "Dark core"
     },
     "surfaces": {
-      "tag": "SURFACES",
-      "title": "Premium Wood Surfaces",
-      "natureVeneers": "Nature Veneers",
-      "natureDesc": "Lively variations and characteristic expression associated with each wood species.",
-      "geminiVeneers": "Gemini Veneers",
-      "geminiDesc": "Even colour tone and structure for a more harmonious, uniform appearance.",
-      "finishes": "Surface Finishes",
-      "description": "Every rWood - Perf panel is produced with over-veneered edges — a traditional craft technique that creates perfectly seamless joints and eliminates visible panel boundaries.",
-      "finish1": "Natural Lacquer",
-      "finish2": "Pigmented",
-      "finish3": "HPL Laminate",
-      "colorSelector": "Select Wood Veneer",
-      "description3": "Every rWood - Perf panel is produced with over-veneered edges—a traditional manufacturing technique where solid wood edging is integrated around the panel before veneering. This gives each panel the appearance of being entirely of wood, with seamless joints across large surfaces."
+      "colorSelector": "Stock veneers",
+      "selectVeneer": "Select a veneer"
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
-      "title": "Engineered for Sound",
-      "benefit1Title": "Broadband Absorption",
-      "benefit1": "Effective across the full frequency spectrum, from low to high",
-      "benefit2Title": "Fire safety",
-      "benefit2": "{fireClass} reaction to fire with the fire-retardant MDF core (EN 13501-1)",
-      "benefit3Title": "Tunable Performance",
-      "benefit3": "Four perforation patterns for tailored acoustic solutions",
-      "description": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the absorption layer beneath. The cavity behind the panel further enhances low-frequency absorption.",
-      "layer1Name": "Wood Veneer + Perforations",
-      "layer1Desc": "Over-veneered, precision-drilled surface",
-      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
-      "layer2Desc": "Fire Retardant, 0.45 kg/m³ density",
-      "layer3Name": "Acoustic Fleece",
-      "layer3Desc": "Prevents fibre migration",
-      "layer4Name": "Mineral Wool Cavity",
-      "layer4Desc": "30–50 mm for broadband absorption",
-      "waveLabel": "Sound waves absorbed",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "ratingLabel": "Absorption",
-      "description3": "Precision-drilled perforations allow sound waves to enter the panel and pass through to the cavity behind. Combined with mineral wool insulation, rWood - Perf delivers outstanding broadband absorption across the full frequency spectrum—from low bass to high treble.",
-      "diagramTitle": "Panel Cross-Section",
-      "fireRating": "Fire Rating",
-      "noiseReduction": "Noise Reduction",
-      "ratingPerPattern": "per pattern"
+      "tag": "ACOUSTICS",
+      "title": "Sound absorption",
+      "description": "Sound passes through the perforations into the acoustic fleece and the cavity behind the panel. The larger the open area, the higher the absorption.",
+      "tableTitle": "Sound absorption",
+      "alphaWByPattern": "αw, by pattern",
+      "withWool": "With 50 mm mineral wool",
+      "withWoolVal": "αw up to 1.00",
+      "mounting": "Mounting in test",
+      "mountingVal": "Cavity with mineral wool backing",
+      "pattern": "Pattern",
+      "openArea": "Open area",
+      "class": "Class",
+      "octaveTitle": "αs per octave band, pattern PD8 with cavity",
+      "footnote": "αs per octave band: pattern PD8 with cavity, indicative. Figures depend on the pattern, the cavity depth and the absorber behind the panel."
     },
     "installation": {
-      "tag": "CONCEALED MOUNTING",
-      "title": "Seamless Installation",
-      "step1Title": "Mount Subframe",
-      "step1Desc": "Install metal rails to wall or ceiling structure",
-      "step2Title": "Place Insulation",
-      "step2Desc": "Add mineral wool in the cavity for optimal absorption",
-      "step3Title": "Clip Panels",
-      "step3Desc": "Concealed clip system for tool-free, zero-gap mounting",
-      "step4Title": "Perfect Alignment",
-      "step4Desc": "In-line perforation patterns with seamless over-veneered joints",
-      "description": "rWood - Perf panels are installed with a concealed clip system for an invisible, seamless look.",
-      "description3": "rWood - Perf panels are installed with a concealed clip system designed for precision, speed, and a flawless end result. The system ensures zero-spaced joints and perfectly aligned perforation patterns across multiple panels."
+      "tag": "INSTALLATION",
+      "title": "Concealed clip system for walls and ceilings",
+      "step1Title": "Subframe",
+      "step1Desc": "Metal rails on the wall or ceiling structure.",
+      "step2Title": "Insulation",
+      "step2Desc": "Mineral wool in the cavity for best absorption.",
+      "step3Title": "Panels",
+      "step3Desc": "Concealed clips, tool-free, zero-gap mounting.",
+      "step4Title": "Result",
+      "step4Desc": "Patterns aligned from panel to panel.",
+      "description": "Metal rails, mineral wool in the cavity, then the panels clip on without tools and without gaps, the perforation pattern running on from panel to panel."
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
-      "title": "Built to Last, Built Responsibly",
-      "badge1": "FSC® Certified",
-      "badge2": "{pct} % recycled content",
+      "title": "Responsibly made",
+      "badge1": "FSC®-certified veneer",
+      "badge2": "{pct} % recycled content",
       "badge3": "Made in Poland",
-      "badge4": "Ultra-Low Emissions",
+      "badge4": "Formaldehyde class E1",
       "badge1Desc": "Wood from responsibly managed forests",
-      "badge2Desc": "Post-consumer recycled material in core",
-      "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland) — short supply chains",
-      "badge4Desc": "No added formaldehyde",
-      "description": "rWood - Perf combines durable, natural materials with a responsible manufacturing approach.",
-      "description3": "rWood - Perf combines durable, natural materials with responsible sourcing: a fire-retardant MDF core with no added formaldehyde, and veneers from sustainably managed forests."
+      "badge2Desc": "Recycled material in the panel",
+      "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
+      "badge4Desc": "Low-emission FR MDF core, for interior, dry areas",
+      "description": "FSC®-certified veneer, formaldehyde class E1 and production in our own plant in Częstochowa. At end of life we take the panels back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg."
     },
     "specs": {
-      "tag": "TECHNICAL",
-      "title": "Specifications",
-      "dimensionsTitle": "Dimensions — Walls and Ceilings",
-      "acousticsTitle": "Acoustic Performance",
-      "perforationsTitle": "Perforation Options",
-      "fireTitle": "Fire Safety",
-      "certsTitle": "Certifications",
-      "customSizes": "Custom sizes",
-      "dimThickness": "Thickness",
-      "dimWeight": "Weight",
-      "matTitle": "Materials",
-      "matCustomColor": "Custom color tones with transparent or solid pigmentation",
-      "matLacquerFinish": "From super matte to high gloss UV-cured lacquer",
-      "surfaceLabel": "Surface",
-      "surfaceVal": "Veneer / HPL / Foil / Paint",
-      "coreVal": "Medium Density Fiberboard core (brown / green / black)",
+      "tag": "TECHNICAL DATA",
+      "title": "Panel, fire and emissions",
+      "acousticsTitle": "Sound absorption",
+      "perforationsTitle": "Perforation patterns",
+      "fireTitle": "Fire and emissions",
+      "matTitle": "Surface and options",
+      "surfaceLabel": "Surface treatments",
+      "surfaceVal": "Natural lacquer · pigmented · HPL laminate · foil · paint",
+      "coreVal": "FR MDF, light or dark",
       "edgesLabel": "Edges",
-      "edgesVal": "Over-veneered solid wood",
-      "acousticFelt": "Acoustic felt",
-      "feltColor": "Black / White",
+      "edgesVal": "Over-veneered solid wood for seamless joints",
+      "feltColor": "Black or white",
       "reactionFire": "Reaction to fire",
-      "resistanceFire": "Resistance to fire",
-      "fireRetardant": "Fire Retardant",
-      "vocLabel": "VOC emissions",
-      "vocVal": "TVOC approved (ISO 16000)",
-      "formaldehydeLabel": "Formaldehyde",
-      "formaldehydeVal": "No added urea formaldehyde",
-      "envLabel": "Environmental"
+      "panelTitle": "Panel",
+      "sizes": "Sizes",
+      "fleeceLabel": "Acoustic fleece",
+      "acWithMinWool": "With 50 mm mineral wool",
+      "acWithMinWoolVal": "αw up to 1.00",
+      "fireStandard": "Fire standard",
+      "finishLabel": "Lacquer",
+      "finishVal": "UV-cured, super matt to high gloss, natural or pigmented",
+      "rangesLabel": "Veneer ranges",
+      "rangesVal": "Nature (lively, characterful grain) · Gemini (even, uniform tone)",
+      "coreColoursLabel": "Core colours",
+      "appsTitle": "Installation",
+      "appInstall": "Application",
+      "appWalls": "Walls and ceilings",
+      "mountingSystem": "Mounting",
+      "subframe": "Subframe",
+      "mounting": "Mounting in test",
+      "mountingVal": "Cavity with mineral wool backing",
+      "pd8Val": "2 × Ø 8 mm · 24 % open",
+      "ph10Val": "Ø 10 mm · 18 % open",
+      "ph8Val": "Ø 8 mm · 12 % open",
+      "ph5Val": "Ø 5 mm · 5 % open",
+      "envVal": "Interior, dry areas",
+      "coreColoursVal": "Brown, green or black: light or dark to hide or contrast the perforations",
+      "subframeVal": "Metal rails",
+      "concealedClip": "Concealed clips, tool-free, zero-gap"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2263,191 +2272,228 @@
     },
     "overview": {
       "tag": "PROVEN PERFORMANCE",
-      "description": "rWood - Perf panels are one of the most effective acoustic wall solutions. Precision-drilled perforations allow sound to pass through the decorative wood surface into the highly absorbent core.",
       "feature1": "Fire-retardant MDF core ({fireClass})",
-      "feature2": "Over-veneered edges for seamless joints",
-      "feature3": "Light or dark core for pattern discretion",
-      "feature4": "Custom formats up to 3050 × 1220 mm",
-      "description3": "rWood - Perf panels are one of the most effective and widely used solutions for acoustic walls and ceilings. The precisely drilled round perforations create a large open area that guarantees high levels of sound absorption, while premium wood veneer ensures a natural, warm appearance.",
-      "description4": "Combined with a Fire Retardant Medium Density Fiberboard core and over-veneered edges for seamless joints, these panels are engineered for the highest demands in large public spaces—from atriums and concert halls to offices and schools."
-    },
-    "accessories": {
-      "tag": "COMPLETE THE LOOK",
-      "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result",
-      "item1Title": "Edge Profiles",
-      "item1Desc": "Matching profiles for clean panel terminations",
-      "item2Title": "Corner Solutions",
-      "item2Desc": "Seamless internal and external corner transitions",
-      "item3Title": "Mounting Rails",
-      "item3Desc": "Concealed aluminium subframe system",
-      "item4Title": "Mineral Wool",
-      "item4Desc": "30–50 mm insulation for optimal performance"
+      "feature2": "Light or dark core to hide or contrast the perforations",
+      "feature3": "Made to measure up to 3 050 × 1 220 mm, in 10 and 19 mm",
+      "feature4": "Concealed clips, tool-free, zero-gap, patterns aligned from panel to panel",
+      "title": "The larger the open area, the higher the absorption",
+      "description1": "rWood Perf is a veneered, fire-retardant MDF panel with round perforations drilled through it. Sound passes through the holes into the acoustic fleece and the cavity behind the panel, where it is absorbed.",
+      "description2": "Four patterns let you choose between absorption and discretion: from a discreet 5 mm hole with 5 % open area to the double 8 mm pattern PD8 with 24 % open area."
     },
     "cta": {
-      "note": "Free samples available • FSC® certified"
+      "note": "Free veneer samples · FSC®-certified veneer"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+          "answer": "All rWood veneers are FSC®-certified and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the chain-of-custody certificate number is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
-          "answer": "With the fire-retardant (FR) MDF core, rWood panels are classified B-s1,d0 under EN 13501-1 — the core we specify for escape routes and public buildings. The fire certificate is in the downloads block on this page."
+          "answer": "With its fire-retardant MDF core, rWood Perf is classified B-s1,d0 to EN 13501-1. The panel is intended for interior, dry areas."
         },
         "leadTime": {
           "question": "What is the standard lead time?",
-          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+          "answer": "Stock veneers ship in 3–4 weeks; non-stock species and custom finishes take 6–8 weeks. Made-to-measure panels are produced from your drawings."
         },
         "installMethod": {
           "question": "How are rWood panels installed?",
-          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+          "answer": "With a concealed clip system: metal rails on the wall or ceiling structure, mineral wool in the cavity, then the panels clip on without tools and without gaps, so the perforation pattern runs on from panel to panel."
         },
         "substrateCleanup": {
           "question": "What happens to the panels at end of life?",
-          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+          "answer": "Re-Sound takes panels back free of charge at end of life in Belgium, the Netherlands, France, Germany and Luxembourg."
         }
       }
     },
     "alt": {
-      "rwoodPerfPanelCloseUpShowingRoundPerforations": "rWood - Perf panel close-up showing round perforations",
-      "perforatedWoodPanelVeneerSurfaceDetail": "Perforated wood panel veneer surface detail",
-      "rwoodPerfPanelConcealedMountingSystem": "rWood - Perf panel concealed mounting system",
-      "sustainableWoodSourcingAndProduction": "Sustainable wood sourcing and production"
+      "sustainableWoodSourcingAndProduction": "FSC-certified wood veneer",
+      "hero": "rWood Perf perforated acoustic wood panels on a wall",
+      "heroVeneer": "rWood Perf panel in {name}",
+      "overview": "Close-up of the round perforations of an rWood Perf panel",
+      "installation": "Metal rails and concealed clips of the rWood Perf mounting system"
     },
     "options": {
-      "pd8Desc": "Maximum absorption, large open area",
+      "pd8Desc": "Double pattern, maximum absorption",
       "ph10Desc": "High absorption, bold perforations",
       "ph8Desc": "Balanced look and performance",
       "ph5Desc": "Discreet pattern, subtle surface"
+    },
+    "kpi": {
+      "ariaLabel": "Key figures",
+      "thickness": "panel thickness, made to measure",
+      "alphaW": "αw, by pattern",
+      "alphaWPd8": "αw with pattern PD8, {range} by pattern",
+      "fire": "reaction to fire, FR MDF core",
+      "patterns": "perforation patterns, Ø 5 to 10 mm"
+    },
+    "buildUp": {
+      "alt": "Exploded view of the three layers: perforated veneer, drilled FR MDF core, acoustic fleece",
+      "layer1": "Perforated veneer",
+      "layer1Desc": "A-grade, drilled Ø 5 to 10 mm",
+      "layer2": "FR MDF core",
+      "layer2Desc": "Light or dark, drilled through",
+      "layer3": "Acoustic fleece",
+      "layer3Desc": "Black or white",
+      "behind": "Behind the panel: cavity with mineral wool."
+    },
+    "veneers": {
+      "title": "Eight stock veneers, any veneer to order",
+      "description": "All rWood veneers are FSC®-certified and come from responsibly managed forests. Wood is a natural material: grain and colour vary from panel to panel, and on-screen swatches are indicative only.",
+      "alt": "{name} veneer",
+      "origin": {
+        "europe": "Europe",
+        "scandinavia": "Scandinavia",
+        "northAmerica": "North America"
+      },
+      "grain": {
+        "straightInterlocked": "Straight to interlocked",
+        "subtleFine": "Subtle fine grain",
+        "fineStraight": "Fine straight grain",
+        "cathedral": "Cathedral grain",
+        "pronounced": "Pronounced grain",
+        "straightWavy": "Straight to wavy",
+        "deepCathedral": "Deep cathedral grain",
+        "richFlowing": "Rich flowing grain"
+      },
+      "madeToOrderTitle": "Made to order",
+      "madeToOrderDesc": "Beyond the eight stock veneers, we make any veneer species, stain colour and finish.",
+      "finishTitle": "Finish",
+      "finishDesc": "UV-cured lacquer from super matt to high gloss, natural or pigmented.",
+      "naturalTitle": "A natural material",
+      "naturalDesc": "Real wood varies in colour and grain. Ask for samples before you specify."
+    },
+    "bespoke": {
+      "tag": "MADE TO MEASURE",
+      "title": "From your drawings",
+      "description": "rWood Perf is made to measure for walls and ceilings: from 100 × 100 mm up to 3 050 × 1 220 mm, in 10 and 19 mm, in any of the four patterns.",
+      "customDimTitle": "Custom dimensions",
+      "customDimDesc": "Every panel is produced to the sizes on your drawings, from 100 × 100 mm up to 3 050 × 1 220 mm.",
+      "finishTitle": "Any veneer and finish",
+      "finishDesc": "Eight stock veneers; any other veneer species, stain colour and finish to order.",
+      "samplesTitle": "Free veneer samples",
+      "samplesDesc": "Real wood varies in colour and grain. Ask for samples before you specify."
+    },
+    "ordering": {
+      "title": "Lead times and samples",
+      "stockVeneers": "Stock veneers",
+      "stockVeneersVal": "3–4 weeks",
+      "nonStock": "Non-stock and custom",
+      "nonStockVal": "6–8 weeks",
+      "madeToMeasure": "Made to measure",
+      "madeToMeasureVal": "From your drawings",
+      "supply": "Supply",
+      "samplesVal": "Free veneer samples",
+      "sizesVal": "Up to {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgium"
     }
   },
   "rwoodMicroPage": {
     "hero": {
-      "tag": "MICRO-PERFORATED ACOUSTIC PANELS",
+      "tag": "MICRO-PERFORATED ACOUSTIC WOOD PANEL",
       "title": "rWood Micro: micro-perforated acoustic wood panels",
-      "tagline": "Invisible Perforation, Exceptional Acoustics",
-      "description": "Experience the beauty of natural wood with the acoustic performance of advanced micro-perforation technology. Virtually invisible holes deliver Class A sound absorption while preserving the pure, homogeneous look of premium wood veneer.",
-      "usp1": "Invisible Perforations",
-      "usp2": "Class A Absorption",
-      "usp3": "{fireClass} fire rated",
-      "colorSelector": "Select Wood Veneer"
+      "tagline": "Invisible perforation, exceptional acoustics.",
+      "description": "Micro-perforations from 0.5 mm in the A-grade veneer open onto sound chambers in the fire-retardant MDF core, backed by an acoustic fleece. From a normal viewing distance the holes disappear into the wood.",
+      "usp1": "Invisible perforations",
+      "usp2": "Class A absorption",
+      "usp3": "{fireClass} reaction to fire",
+      "colorSelector": "Stock veneers",
+      "description2": "Made to measure for walls and ceilings, up to 3 050 × 1 220 mm, in 10 and 19 mm. Eight stock veneers, any veneer and finish to order.",
+      "selectVeneer": "Select a veneer"
     },
     "perforation": {
-      "tag": "PERFORATION PATTERNS",
-      "title": "Choose Your Perforation",
-      "description": "Different micro-perforation densities for fine-tuned acoustic control—from subtle to high-performance."
-    },
-    "surfaces": {
-      "tag": "SURFACES",
-      "title": "Premium Surfaces",
-      "woodVeneer": "Wood Veneer",
-      "woodVeneerDesc": "Premium A-grade veneers in oak, walnut, birch, and more. Nature and Gemini cuts available.",
-      "hplLaminate": "HPL Laminate",
-      "hplLaminateDesc": "High-pressure laminate surfaces for extra durability. Available in a wide range of colors and finishes.",
-      "surfaceType": "Surface Type",
-      "finishTreatments": "Finish Treatments",
-      "description": "Every rWood - Micro panel features over-veneered edges — a manufacturing technique that creates seamless panel joints for a continuous wood surface.",
-      "finish1Desc": "Custom color tones with transparent or solid pigmentation",
-      "finish2Desc": "From super matte to high gloss UV-cured lacquer",
-      "description2": "Every rWood - Micro panel features over-veneered edges—a manufacturing technique from traditional carpentry heritage. The result: stronger panels, seamless joints, and a continuous pattern regardless of panel format."
+      "tag": "PERFORATION",
+      "title": "Four perforation densities",
+      "description": "Hole size and open area per density. The larger the open area, the higher the absorption; the smaller the hole, the less visible the pattern.",
+      "spec": "Ø {d} mm · {pct} % open",
+      "drawingNote": "Drawings about 2:1, hole size and open area as stated per density."
     },
     "acoustics": {
-      "tag": "PERFORMANCE",
-      "title": "Superior Sound Absorption",
-      "benefit1Title": "Dual Acoustic Mechanism",
-      "benefit1": "Micro-holes and sound chambers work together for superior absorption",
-      "benefit2Title": "Space-Saving Design",
-      "benefit2": "Less dependent on air gaps—thinner wall and ceiling build-ups",
-      "benefit3Title": "Fire safety",
-      "benefit3": "{fireClass} reaction to fire with the fire-retardant MDF core (EN 13501-1)",
-      "description": "The combination of micro-perforations in the surface and thousands of larger sound-entry channels creates exceptional broadband absorption.",
-      "layer1Name": "A-grade veneer with precision-drilled holes",
-      "layer2Name": "Fire Retardant Medium Density Fiberboard Core",
-      "layer2Desc": "Fire Retardant, with sound chambers",
-      "layer3Name": "Acoustic Fleece Backing",
-      "layer3Desc": "Additional sound absorption layer",
-      "waveLabel": "Sound waves absorbed",
-      "certNote": "Independently tested & certified to ISO 11654",
-      "description2": "The combination of micro-perforations in the surface and thousands of larger sound chambers in the core creates a dual acoustic mechanism. Less dependent on insulation and air gaps—meaning thinner walls and ceilings that save valuable space.",
-      "diagramTitle": "Panel Cross-Section",
-      "soundAbsorbed": "Sound Absorbed",
-      "fireRating": "Fire Rating",
-      "testStandard": "Test Standard",
-      "thinner": "Thinner",
-      "wallBuildUp": "Wall Build-up"
+      "tag": "ACOUSTICS",
+      "title": "Sound absorption",
+      "description": "Sound enters through the micro-perforations and is absorbed in the sound chambers of the core and in the fleece behind it. How much the panel absorbs depends on the perforation density and on what sits behind it.",
+      "tableTitle": "Sound absorption",
+      "withWool": "With 50 mm mineral wool",
+      "withWoolVal": "αw up to 1.00",
+      "behindTitle": "Behind the panel",
+      "behindDesc": "A backing absorber raises the absorption: acoustic felt, an rPET panel or mineral wool in the cavity. With 50 mm mineral wool the panel reaches αw 1.00.",
+      "footnote": "αw and absorption class to EN ISO 11654. Figures depend on the perforation density, the cavity depth and the absorber behind the panel."
     },
     "installation": {
-      "tag": "INSTALLATION SYSTEM",
-      "title": "Precision Installation",
-      "step1Title": "Install Subframe",
-      "step1Desc": "Mount aluminium rails to wall or ceiling structure",
-      "step2Title": "Add Insulation",
-      "step2Desc": "Optional mineral wool for enhanced absorption",
-      "step3Title": "Click & Fix Panels",
-      "step3Desc": "Concealed clip system for tool-free panel mounting",
-      "step4Title": "Seamless Result",
-      "step4Desc": "Over-veneered edges create continuous wood surface",
-      "description": "rWood - Micro panels are installed with our concealed mounting system, ensuring invisible fixings and a flawless finish. The system allows for both wall and ceiling applications, with seamless panel-to-panel transitions through over-veneered edges."
+      "tag": "INSTALLATION",
+      "title": "Concealed clip system for walls and ceilings",
+      "step1Title": "Subframe",
+      "step1Desc": "Aluminium rails on the wall or ceiling structure.",
+      "step2Title": "Insulation",
+      "step2Desc": "Optional mineral wool for higher absorption.",
+      "step3Title": "Panels",
+      "step3Desc": "Concealed clips, tool-free mounting.",
+      "step4Title": "Result",
+      "step4Desc": "Invisible fixings and a continuous wood surface.",
+      "description": "Aluminium rails, optional mineral wool, then the panels clip on without tools. The fixings stay invisible and the wood surface runs on without interruption."
     },
     "bespoke": {
-      "tag": "DESIGN FREEDOM",
-      "title": "Bespoke Possibilities",
-      "backlitTitle": "Backlit Panels",
-      "backlitDesc": "Create stunning backlit sections where light shines through the micro-perforations. Logos and patterns glow beautifully when lit, yet remain invisible when the light is off.",
-      "customDimTitle": "Custom Dimensions",
-      "customDimDesc": "Panels produced to your exact specifications. Non-standard sizes and shapes for unique architectural requirements.",
-      "patternTitle": "Continuous Pattern",
-      "patternDesc": "Over-veneered panels create seamless transitions regardless of format, for a homogeneous impression on any surface.",
-      "description": "rWood - Micro panels can be customized and pre-fabricated according to your drawings. The micro-perforations open up unique design possibilities that go beyond standard acoustic panels."
+      "tag": "MADE TO MEASURE",
+      "title": "From your drawings",
+      "customDimTitle": "Custom dimensions",
+      "customDimDesc": "Every panel is produced to the sizes on your drawings, from 100 × 100 mm up to 3 050 × 1 220 mm.",
+      "description": "rWood Micro is made to measure for walls and ceilings: from 100 × 100 mm up to 3 050 × 1 220 mm, in 10 and 19 mm, in any of the four perforation densities.",
+      "finishTitle": "Any veneer and finish",
+      "finishDesc": "Eight stock veneers; any other veneer species, stain colour and finish to order.",
+      "samplesTitle": "Free veneer samples",
+      "samplesDesc": "Real wood varies in colour and grain. Ask for samples before you specify."
     },
     "sustainability": {
       "tag": "SUSTAINABILITY",
-      "title": "Responsibly Made",
-      "badge1": "FSC® Certified Veneer",
-      "badge2": "Natural Core Material",
+      "title": "Responsibly made",
+      "badge1": "FSC®-certified veneer",
+      "badge2": "Formaldehyde class E1",
       "badge3": "Made in Poland",
-      "badge4": "Low VOC Emissions",
+      "badge4": "Take-back at end of life",
       "badge1Desc": "Wood from responsibly managed forests",
-      "badge2Desc": "Fiberboard core—a wood-based, fire-rated core",
+      "badge2Desc": "Low-emission FR MDF core, for interior, dry areas",
       "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
-      "badge4Desc": "E1-rated for healthier indoor air quality",
-      "description": "rWood - Micro panels are built with sustainability as a core principle. FSC® certified wood, low-emission finishes and responsibly sourced materials ensure environmental responsibility throughout the product lifecycle."
+      "description": "FSC®-certified veneer, formaldehyde class E1 and production in our own plant in Częstochowa. At end of life we take the panels back."
     },
     "specs": {
-      "tag": "TECHNICAL",
-      "title": "Specifications",
-      "dimensionsTitle": "Dimensions — Walls and Ceilings",
-      "acousticsTitle": "Dimensions — Walls and Ceilings",
-      "customSizes": "Custom sizes",
-      "dimThickness": "Thickness",
-      "dimWeight": "Weight",
-      "dimCoreDensity": "Core density",
-      "perfsTitle": "Perforation Options",
-      "fireTitle": "Fire Safety",
-      "matTitle": "Materials",
-      "appsTitle": "Applications",
-      "acWithMinWool": "With 50mm mineral wool",
+      "tag": "TECHNICAL DATA",
+      "title": "Panel, fire and emissions",
+      "acousticsTitle": "Sound absorption",
+      "perfsTitle": "Perforation densities",
+      "fireTitle": "Fire and emissions",
+      "matTitle": "Surface and options",
+      "appsTitle": "Installation",
+      "acWithMinWool": "With 50 mm mineral wool",
       "reactionFire": "Reaction to fire",
-      "resistanceFire": "Resistance to fire",
-      "fireRetardant": "Fire Retardant",
-      "surfaceLabel": "Surface",
-      "surfaceVal": "Veneer / HPL / Foil / Paint",
-      "coreVal": "Medium Density Fiberboard core (brown / green / black)",
+      "surfaceLabel": "Surface treatments",
+      "surfaceVal": "Natural lacquer · pigmented · HPL laminate · foil · paint",
+      "coreVal": "FR MDF with sound chambers",
       "edgesLabel": "Edges",
-      "edgesVal": "Over-veneered solid wood",
-      "acousticFelt": "Acoustic felt",
-      "feltColor": "Black / White",
-      "appInstall": "Installation",
-      "appWalls": "Walls & Ceilings",
-      "appEnv": "Environment",
-      "appEnvVal": "Interior (dry areas)",
-      "backlitOption": "Backlit option",
-      "backlitVal": "Available",
-      "mountingSystem": "Mounting system",
-      "concealedClip": "Concealed clip system"
+      "edgesVal": "Over-veneered solid wood for seamless joints",
+      "feltColor": "Black or white",
+      "appInstall": "Application",
+      "appWalls": "Walls and ceilings",
+      "appEnvVal": "Interior, dry areas",
+      "mountingSystem": "Mounting",
+      "concealedClip": "Concealed clips, tool-free",
+      "panelTitle": "Panel",
+      "sizes": "Sizes",
+      "fleeceLabel": "Acoustic fleece",
+      "acWithMinWoolVal": "αw up to 1.00",
+      "fireStandard": "Fire standard",
+      "finishLabel": "Lacquer",
+      "finishVal": "UV-cured, super matt to high gloss, natural or pigmented",
+      "rangesLabel": "Veneer ranges",
+      "rangesVal": "Nature (lively, characterful grain) · Gemini (even, uniform tone)",
+      "coreColoursLabel": "Core colours",
+      "subframe": "Subframe",
+      "nanoVal": "Ø 0.5 mm · 2.5 % open",
+      "microSVal": "Ø 1.0 mm · 5.2 % open",
+      "microMVal": "Ø 1.5 mm · 8.4 % open",
+      "microLVal": "Ø 2.0 mm · 10.6 % open",
+      "coreColoursVal": "Brown, green or black",
+      "subframeVal": "Aluminium rails"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -2455,135 +2501,140 @@
     },
     "overview": {
       "tag": "THE INVISIBLE SOLUTION",
-      "title": "Designed for Eyes and Ears",
-      "description1": "rWood - Micro panels combine advanced micro-perforation technology with premium wood veneers. From a normal viewing distance, the perforations are completely invisible—what you see is a beautiful, homogeneous wood surface. What you hear is exceptional acoustic comfort.",
-      "description2": "The secret lies in the combination of two acoustic mechanisms: thousands of precisely engineered micro-holes in the surface and sound-absorbing chambers within the core material.",
-      "feature1": "Perforations invisible from normal viewing distance",
-      "feature2": "Fire-retardant MDF core with sound chambers",
-      "feature3": "Over-veneered edges for seamless joints",
-      "feature4": "Suitable for walls and ceilings",
-      "feature5": "Available as backlit panels"
-    },
-    "accessories": {
-      "tag": "COMPLETE THE LOOK",
-      "title": "Accessories",
-      "description": "Professional finishing elements for a flawless result",
-      "item1Title": "Edge Profiles",
-      "item1Desc": "Matching profiles for clean panel terminations",
-      "item2Title": "Corner Solutions",
-      "item2Desc": "Seamless internal and external corner transitions",
-      "item3Title": "Mounting Rails",
-      "item3Desc": "Concealed aluminium subframe system",
-      "item4Title": "LED Backlighting",
-      "item4Desc": "Integrated lighting for backlit panel effects"
-    },
-    "patterns": {
-      "description": "Four perforation densities to match your acoustic requirements. From virtually invisible micro-perforations to generous open areas, each density delivers a different balance of aesthetics and performance.",
-      "magnifiedLabel": "10× magnified",
-      "holeDiameter": "Hole diameter",
-      "openArea": "Open area",
-      "ratingLabel": "Absorption",
-      "description2": "Four perforation densities to match your acoustic requirements. From virtually invisible Nano perforations to maximum-absorption Micro L patterns—select the perfect balance between aesthetics and acoustic performance.",
-      "pigmentedLacquer": "Pigmented Lacquer",
-      "glossLevels": "Gloss Levels"
+      "title": "Designed for eyes and ears",
+      "description1": "rWood Micro combines an A-grade real-wood veneer with micro-perforations from Ø 0.5 mm. From a normal viewing distance the holes disappear into the wood: what you see is a continuous wood surface, what you hear is a quieter room.",
+      "description2": "Sound enters through the micro-perforations and is absorbed in the sound chambers of the fire-retardant MDF core and in the acoustic fleece behind it. How much the panel absorbs depends on the perforation density and on what sits behind it.",
+      "feature1": "Perforations that disappear from a normal viewing distance",
+      "feature2": "FR MDF core with sound chambers, acoustic fleece in black or white",
+      "feature3": "Made to measure up to 3 050 × 1 220 mm, in 10 and 19 mm",
+      "feature4": "Concealed clips, tool-free, for walls and ceilings"
     },
     "faq": {
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+          "answer": "All rWood veneers are FSC®-certified and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the chain-of-custody certificate number is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
-          "answer": "With the fire-retardant (FR) MDF core, rWood panels are classified B-s1,d0 under EN 13501-1 — the core we specify for escape routes and public buildings. The fire certificate is in the downloads block on this page."
+          "answer": "With its fire-retardant MDF core, rWood Micro is classified B-s1,d0 to EN 13501-1. The panel is intended for interior, dry areas."
         },
         "leadTime": {
           "question": "What is the standard lead time?",
-          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+          "answer": "Stock veneers ship in 3–4 weeks; non-stock species and custom finishes take 6–8 weeks. Made-to-measure panels are produced from your drawings."
         },
         "installMethod": {
           "question": "How are rWood panels installed?",
-          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+          "answer": "With a concealed clip system: aluminium rails on the wall or ceiling structure, optional mineral wool in the cavity, then the panels clip on without tools. The fixings stay invisible and the wood surface runs on without interruption."
         },
         "substrateCleanup": {
           "question": "What happens to the panels at end of life?",
-          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+          "answer": "Re-Sound takes panels back free of charge at end of life in Belgium, the Netherlands, France, Germany and Luxembourg."
         }
       }
     },
     "alt": {
-      "rwoodMicroPanelCloseUpShowingInvisiblePerforations": "rWood - Micro panel close-up showing invisible perforations",
-      "microPerforatedWoodPanelSurfaceDetail": "Micro-perforated wood panel surface detail",
-      "rwoodMicroPanelInstallationSystem": "rWood - Micro panel installation system",
-      "backlitMicroPerforatedPanelCreatingLightEffect": "Backlit micro-perforated panel creating light effect",
-      "sustainableProduction": "Sustainable production"
+      "sustainableProduction": "FSC-certified wood veneer",
+      "hero": "rWood Micro micro-perforated acoustic wood panels on a wall",
+      "heroVeneer": "rWood Micro panel in {name}",
+      "overview": "Close-up of a micro-perforated rWood Micro panel",
+      "installation": "Aluminium rails and concealed clips of the rWood Micro mounting system",
+      "madeToMeasure": "Made-to-measure rWood Micro panels fitted around a window"
     },
     "options": {
-      "veneerDesc": "Natural A-grade veneer",
-      "hplDesc": "High-pressure laminate",
       "nanoDesc": "Virtually invisible perforations",
       "microsDesc": "Subtle micro-perforations",
       "micromDesc": "Balanced perforation pattern",
-      "microlDesc": "Maximum absorption pattern",
-      "nanoDetail": "The smallest perforation available—completely invisible to the naked eye, creating a flawless wood surface.",
-      "microsDetail": "Barely visible micro-holes that maintain a clean, uninterrupted surface appearance.",
-      "micromDetail": "An optimal balance between visual discretion and acoustic efficiency for most applications.",
-      "microlDetail": "The highest open area for maximum sound absorption in acoustically demanding spaces.",
-      "openAreaLabel": "Open area",
-      "absorptionLabel": "Absorption",
-      "thinnerLabel": "Thinner",
-      "veneerDrilled": "A-grade veneer with precision-drilled holes"
+      "microlDesc": "Maximum absorption pattern"
+    },
+    "kpi": {
+      "ariaLabel": "Key figures",
+      "thickness": "panel thickness, made to measure",
+      "alphaW": "αw, weighted sound absorption",
+      "alphaWClass": "αw, absorption class {cls}",
+      "fire": "reaction to fire, FR MDF core",
+      "densities": "perforation densities, Ø 0.5 to 2 mm"
+    },
+    "buildUp": {
+      "alt": "Exploded view of the three layers: micro-perforated veneer, FR MDF core with sound chambers, acoustic fleece",
+      "layer1": "Micro-perforated veneer",
+      "layer1Desc": "A-grade, holes from Ø 0.5 mm",
+      "layer2": "FR MDF core",
+      "layer2Desc": "With sound chambers",
+      "layer3": "Acoustic fleece",
+      "layer3Desc": "Black or white",
+      "behind": "Behind the panel: cavity, optional mineral wool."
+    },
+    "veneers": {
+      "title": "Eight stock veneers, any veneer to order",
+      "description": "All rWood veneers are FSC®-certified and come from responsibly managed forests. Wood is a natural material: grain and colour vary from panel to panel, and on-screen swatches are indicative only.",
+      "alt": "{name} veneer",
+      "origin": {
+        "europe": "Europe",
+        "scandinavia": "Scandinavia",
+        "northAmerica": "North America"
+      },
+      "grain": {
+        "straightInterlocked": "Straight to interlocked",
+        "subtleFine": "Subtle fine grain",
+        "fineStraight": "Fine straight grain",
+        "cathedral": "Cathedral grain",
+        "pronounced": "Pronounced grain",
+        "straightWavy": "Straight to wavy",
+        "deepCathedral": "Deep cathedral grain",
+        "richFlowing": "Rich flowing grain"
+      },
+      "madeToOrderTitle": "Made to order",
+      "madeToOrderDesc": "Beyond the eight stock veneers, we make any veneer species, stain colour and finish.",
+      "finishTitle": "Finish",
+      "finishDesc": "UV-cured lacquer from super matt to high gloss, natural or pigmented.",
+      "naturalTitle": "A natural material",
+      "naturalDesc": "Real wood varies in colour and grain. Ask for samples before you specify."
+    },
+    "ordering": {
+      "title": "Lead times and samples",
+      "stockVeneers": "Stock veneers",
+      "stockVeneersVal": "3–4 weeks",
+      "nonStock": "Non-stock and custom",
+      "nonStockVal": "6–8 weeks",
+      "madeToMeasure": "Made to measure",
+      "madeToMeasureVal": "From your drawings",
+      "supply": "Supply",
+      "samplesVal": "Free veneer samples",
+      "sizesVal": "Up to {size}",
+      "showroom": "Showroom: Gentseweg 309 A3, 9120 Beveren-Waas, Belgium"
     }
   },
   "rwoodVeneerPage": {
     "hero": {
-      "tag": "CRAFTSMANSHIP",
-      "title": "rWood Panel: veneer acoustic panels in 10 wood species",
-      "tagline": "The Elegance of Real Wood. Ready to Use.",
-      "description": "Premium veneered MDF panels, brushed, stained and lacquered — requiring no additional finishing. The authentic beauty of solid wood without compromise.",
-      "usp1": "FSC® Certified",
-      "usp2": "Prefinished & Ready to Use",
-      "usp3": "Free take-back programme",
+      "tag": "VENEERED WOOD PANEL",
+      "title": "rWood Panel: veneered acoustic panels in 12 real-wood veneers",
+      "tagline": "The elegance of real wood, ready to use.",
+      "description": "Smooth, factory-finished veneered MDF panels in twelve real-wood veneers, in the lively Nature or the even Gemini range. Natural or pigmented lacquer, HPL laminate, foil or paint; any other veneer, stain or finish to order.",
+      "usp1": "FSC®-certified veneers",
+      "usp2": "Twelve veneers, any finish to order",
+      "usp3": "Free take-back at end of life",
       "ctaSecondary": "Explore the Collection",
-      "colorSelector": "Select Veneer"
-    },
-    "construction": {
-      "tag": "CONSTRUCTION",
-      "title": "Built to Perform",
-      "layer1": "Top Veneer Layer",
-      "layer1Desc": "FSC-certified natural wood veneer, factory finished",
-      "layer2": "High-Density MDF Core",
-      "layer2Desc": "Stable, moisture-resistant engineered substrate",
-      "layer3": "Balance Veneer Layer",
-      "layer3Desc": "Prevents warping for perfectly flat panels"
-    },
-    "veneers": {
-      "tag": "VENEER COLLECTION",
-      "title": "10 Curated Wood Veneers",
-      "description": "From pale European oak to rich American walnut—each species selected for grain character, availability, and FSC certification."
+      "colorSelector": "Veneer",
+      "selectPrompt": "Select a veneer"
     },
     "finishes": {
-      "title": "Touch & Protection",
-      "description": "The right finish brings out the best in every wood species. Our multi-layer finishing process delivers a surface that is as pleasing to touch as it is durable — protected against scratches, moisture and daily wear.",
-      "tag": "SURFACE FINISHES",
-      "mattLacquerName": "Super Matt Lacquer",
-      "mattLacquerDesc": "Anti-fingerprint, silky touch. 6-layer UV-cured protection.",
-      "naturalOilName": "Natural Oil",
-      "naturalOilDesc": "Deep, authentic wood feel with penetrating protection.",
-      "unfinishedName": "Unfinished",
-      "unfinishedDesc": "Ready for custom on-site finishing by the installer.",
-      "adv1": "Scratch resistant",
-      "adv2": "Spill resistant",
-      "adv3": "Anti-fingerprint",
-      "adv4": "Easy maintenance"
-    },
-    "advantages": {
-      "tag": "ADVANTAGES",
-      "title": "Key Advantages",
-      "adv1Title": "Panel Formats",
-      "adv1": "Multiple standard sizes; custom dimensions on request",
-      "adv2Title": "Limitless Possibilities",
-      "adv2": "Use for wall cladding, furniture, retail displays, and more"
+      "title": "Surface finishes and options",
+      "description": "Choose the veneer range and the surface treatment that suit the project. Edges are over-veneered solid wood for seamless joints across large surfaces.",
+      "tag": "FINISHES",
+      "nature": "Nature",
+      "natureDesc": "Lively, characterful grain",
+      "gemini": "Gemini",
+      "geminiDesc": "Even, uniform tone",
+      "treatmentsTitle": "Surface treatments",
+      "treatments": {
+        "naturalLacquer": "Natural lacquer",
+        "pigmented": "Pigmented",
+        "hpl": "HPL laminate",
+        "foil": "Foil",
+        "paint": "Paint"
+      },
+      "madeToOrder": "Any other veneer, stain, pigment and finish on request."
     },
     "applications": {
       "tag": "APPLICATIONS",
@@ -2617,66 +2668,51 @@
       "badge2": "Circular Take-Back",
       "badge3": "Made in Poland",
       "badge4": "EPD Available",
-      "badge5": "Low VOC",
-      "badge1Desc": "All wood from responsibly managed forests",
+      "badge1Desc": "All veneers FSC®-certified, from responsibly managed forests",
       "badge2Desc": "Free end-of-life panel return and recycling",
-      "description": "Every rWood - Panel starts with responsibly sourced timber. As part of Re-Sound's circular economy commitment, we maximise the use of each log by processing it as veneer — yielding up to 40× more surface area than solid lumber from the same tree.",
+      "description": "Every rWood Panel starts with FSC®-certified veneer from responsibly managed forests. At end of life, Re-Sound takes the panels back free of charge.",
       "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
-      "badge4Desc": "Full environmental product declaration",
-      "badge5Desc": "E1 classified, meets strictest emission standards",
-      "badge6": "Green Energy",
-      "badge6Desc": "Production powered by renewable energy sources"
+      "badge4Desc": "Full environmental product declaration"
     },
     "specs": {
-      "tag": "TECHNICAL",
-      "title": "Specifications",
+      "tag": "TECHNICAL DATA",
+      "title": "Panel, finishes and fire",
       "compositionTitle": "Composition",
       "fireTitle": "Fire Safety",
       "certsTitle": "Certifications",
       "dimensionsTitle": "Dimensions",
-      "finishTitle": "Finish",
+      "finishTitle": "Veneers and finishes",
       "processingTitle": "Processing",
       "dimPanelWidth": "Panel width",
       "dimPanelLength": "Panel length",
-      "dimThicknessStd": "Thickness (standard)",
-      "dimThicknessSlim": "Thickness (slim)",
-      "dimWeight19": "Weight (19 mm)",
       "compTopLayer": "Top layer",
-      "compTopLayerVal": "A-grade veneer, stained & lacquered",
+      "compTopLayerVal": "A-grade real-wood veneer, factory finished",
       "compCore": "Core",
-      "compCoreVal": "MDF 700 kg/m³ (std / MR / FR)",
+      "compCoreVal": "MDF, standard / MR / FR",
       "compBackLayer": "Back layer",
       "compBackLayerVal": "Balancing veneer",
-      "compBonding": "Bonding",
-      "compBondingVal": "HPLT press technology",
-      "finishLacquerType": "Lacquer type",
-      "finishLacquerVal": "Acrylate urethane UV-cured",
-      "finishLayers": "Number of layers",
-      "finishGloss": "Gloss level",
-      "finishGlossVal": "Super matt (3-5 GU)",
-      "finishAntiFingerprint": "Anti-fingerprint",
-      "finishScratch": "Scratch resistance",
-      "fireStdMDF": "Standard MDF",
-      "fireFRMDF": "Fire-retardant MDF",
       "certWoodSourcing": "Wood sourcing",
       "certEnvironmental": "Environmental",
-      "certFelt": "Felt (if acoustic)",
       "procSawing": "Sawing",
       "procSawingVal": "Standard woodworking tools",
-      "procEdgeBanding": "Edge banding",
-      "procEdgeBandingVal": "Matching veneer edgebanding available",
       "procCNC": "CNC machining",
-      "procEnvironment": "Environment",
-      "procEnvironmentVal": "Interior use (dry areas)",
       "procMoisture": "Moisture-resistant",
-      "procMoistureVal": "MR core available"
+      "procMoistureVal": "MR core available",
+      "finishRanges": "Veneer ranges",
+      "finishRangesVal": "Nature: lively, characterful grain · Gemini: even, uniform tone",
+      "finishTreatments": "Surface treatments",
+      "finishTreatmentsVal": "Natural lacquer · pigmented · HPL laminate · foil · paint",
+      "finishCoreColours": "Core colours",
+      "finishCoreColoursVal": "Brown, green or black",
+      "finishEdgesVal": "Over-veneered solid wood for seamless joints",
+      "finishFeltVal": "Black or white fleece",
+      "finishMadeToOrder": "Made to order",
+      "finishMadeToOrderVal": "Any other veneer, stain, pigment and finish",
+      "certWoodSourcingVal": "All veneers FSC®-certified, from responsibly managed forests"
     },
     "related": {
       "tag": "MATCHING PRODUCTS",
       "title": "Matching Products & Accessories",
-      "groove": "rWood - Groove",
-      "edgebanding": "Matching Edgebanding",
-      "samples": "Free Samples",
       "description": "Achieve design continuity with coordinated Re-Sound products",
       "explore": "Explore →",
       "orderSamples": "Order Samples →",
@@ -2687,51 +2723,50 @@
       "title": "Projects & Interiors"
     },
     "overview": {
-      "tag": "CRAFTSMANSHIP",
-      "title": "Nature, Refined",
-      "description": "rWood - Panel brings the warmth and character of solid timber into a prefinished, ready-to-use format. Each panel is crafted from premium A-grade veneer, bonded to a high-density MDF core using advanced pressing technology — delivering the beauty of natural wood with outstanding dimensional stability.",
-      "feature1": "Premium A-grade veneers — oak, walnut, ash, cherry and birch",
-      "feature2": "6-layer UV-cured lacquer for scratch and spill resistance",
-      "feature3": "High-density MDF core (700 kg/m³) for structural integrity",
-      "feature4": "Balanced construction — veneer on both faces for stability",
-      "feature5": "No additional finishing required — ready from the box"
+      "tag": "OVERVIEW",
+      "title": "Nature, refined",
+      "description": "rWood Panel brings the warmth and character of real wood into a prefinished, ready-to-use format: an A-grade veneer on an MDF core, finished in the factory. The same twelve veneers run across the whole rWood range, so smooth panels, Groove, Micro and Perf match on one wall.",
+      "feature1": "Twelve stock veneers: oak, walnut, ash, beech and birch",
+      "feature2": "Two veneer ranges: Nature (lively grain) and Gemini (even tone)",
+      "feature3": "MDF core in standard, moisture-resistant or fire-retardant grade",
+      "feature4": "Natural or pigmented lacquer, HPL laminate, foil or paint",
+      "feature5": "Factory finished, ready to install"
     },
     "anatomy": {
-      "tag": "ANATOMY",
-      "layer1": "Top Veneer Layer",
-      "layer1Desc": "A-grade real wood veneer, brushed, stained and protected with 6 layers of UV-cured acrylate urethane lacquer. Soft-touch super matt finish.",
-      "layer2": "High-Density MDF Core",
-      "layer2Desc": "700 kg/m³ FSC® certified MDF. Available in standard, moisture-resistant (MR) and fire-retardant (FR) grades.",
-      "layer3": "Balance Veneer Layer",
-      "layer3Desc": "Matching veneer backing ensures dimensional stability and prevents warping. Finished or unfinished options.",
-      "keyAdvTitle": "Key Advantages",
-      "description": "Every layer serves a purpose — from the authentic wood surface to the engineered core."
+      "tag": "BUILD-UP",
+      "layer1": "Veneer face",
+      "layer1Desc": "A-grade real-wood veneer, one of twelve stock veneers or any veneer to order, finished in the factory.",
+      "layer2": "MDF core",
+      "layer2Desc": "Standard, moisture-resistant (MR) or fire-retardant (FR) MDF; core colour brown, green or black.",
+      "layer3": "Balancing veneer",
+      "layer3Desc": "A veneer on the back keeps the panel flat and stable.",
+      "description": "Every layer serves a purpose, from the real-wood surface to the engineered core.",
+      "title": "Veneer, core, balancing veneer"
     },
     "collection": {
-      "tag": "THE COLLECTION",
-      "title": "10 Curated Wood Veneers",
-      "description": "From serene Scandinavian birch to dramatic American walnut — every veneer is carefully selected, brushed and finished to showcase the character of the wood.",
-      "filterAll": "All Veneers",
-      "customNote": "Custom veneer species and stain colours available on project orders of 50+ panels.",
+      "tag": "VENEERS",
+      "title": "Twelve real-wood veneers",
+      "description": "Six oaks from pale to near-black and six premium species: walnut, ash, beech and birch. Available across the rWood range, and any other veneer, stain colour or finish made to order.",
+      "filterAll": "All veneers",
+      "customNote": "Any other veneer, stain, pigment and finish on request. Swatch images are indicative: natural veneers vary in grain, colour and figure, and tones shift under different lighting and lacquers. Always confirm against a physical sample.",
       "categories": {
-        "lightNaturals": "Light Naturals",
-        "warmNaturals": "Warm Naturals",
-        "deepTones": "Deep Tones"
+        "oak": "Oak veneers",
+        "premium": "Premium species"
       },
-      "origins": {
-        "europe": "Europe",
-        "scandinavia": "Scandinavia",
-        "northAmerica": "North America"
-      },
-      "grains": {
-        "straightToInterlocked": "Straight to interlocked",
-        "subtleFineGrain": "Subtle fine grain",
-        "fineStraightGrain": "Fine straight grain",
-        "cathedralGrain": "Cathedral grain",
-        "pronouncedGrain": "Pronounced grain",
-        "straightToWavy": "Straight to wavy",
-        "deepCathedralGrain": "Deep cathedral grain",
-        "richFlowingGrain": "Rich flowing grain"
+      "filterLabel": "Filter veneers",
+      "items": {
+        "strawOak": "Pale, warm-neutral oak",
+        "silkOak": "Soft greige tone",
+        "honeyOak": "Warm golden oak",
+        "umberOak": "Smoked grey-brown",
+        "smokedOak": "Deep warm brown",
+        "cocoaOak": "Near-black espresso",
+        "walnut": "Rich, figured brown",
+        "tobaccoWalnut": "Warm mid-brown",
+        "whiteAsh": "Bright, linear grain",
+        "whiteBeech": "Pale, even neutral",
+        "birchSliced": "Fine, pale grain",
+        "birchRotary": "Broad, soft figure"
       }
     },
     "dimensions": {
@@ -2751,16 +2786,16 @@
       "title": "Matching Products & Accessories",
       "description": "Achieve design continuity with coordinated Re-Sound products.",
       "item1Title": "rWood - Groove",
-      "item1Desc": "Slatted acoustic panels in matching wood veneers for walls and ceilings.",
-      "item2Title": "Matching Edgebanding",
-      "item2Desc": "Pre-finished veneer edgebanding in every colour for cabinet and furniture work.",
+      "item1Desc": "Grooved planks in the same veneers for walls and ceilings.",
+      "item2Title": "Over-veneered edges",
+      "item2Desc": "Solid-wood edges, over-veneered for seamless joints across large surfaces.",
       "item3Title": "Free Samples",
       "item3Desc": "Request samples of any veneer and finish combination."
     },
     "cta": {
       "title": "Ready to Elevate Your Project?",
       "description": "Get a personalised quote, request physical samples, or speak with our specification team about your next project.",
-      "circularNote": "Circular Take-Back"
+      "circularNote": "Free veneer samples · Free take-back at end of life"
     },
     "downloads": {
       "productDataSheet": "Product Data Sheet"
@@ -2769,7 +2804,7 @@
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "Veneer is sourced from FSC-certified European forests (predominantly oak and walnut). The chain-of-custody certificate number is provided per delivery on request."
+          "answer": "All rWood veneers are FSC®-certified and come from responsibly managed forests. The chain-of-custody certificate is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
@@ -2777,22 +2812,40 @@
         },
         "leadTime": {
           "question": "What is the standard lead time?",
-          "answer": "Stock veneers ship within 3–4 weeks; non-stock species and custom finishes require 6–8 weeks. Production capacity is reserved at order confirmation."
+          "answer": "The lead time depends on the veneer and finish and is confirmed on order. Free veneer samples are available before you specify; prices and the minimum order on request."
         },
         "installMethod": {
           "question": "How are rWood panels installed?",
-          "answer": "Two methods are supported: a hidden clip system for fast install and easy removal, or direct glue-fixing for permanent installations. Both are detailed in the installation manual."
+          "answer": "rWood Panel is a smooth veneered MDF panel and is processed like one: sawn and CNC-machined with standard woodworking tools, then fixed to the substrate or built into furniture. The installation guide is in the downloads block on this page."
         },
         "substrateCleanup": {
           "question": "What happens to the panels at end of life?",
-          "answer": "Re-Sound takes panels back free of charge across BE/NL/FR/DE/LU. The veneer is separated from the recycled-felt substrate; both streams re-enter our supply chain rather than going to landfill."
+          "answer": "Re-Sound takes the panels back free of charge at end of life in Belgium, the Netherlands, France, Germany and Luxembourg."
         }
       }
     },
     "alt": {
       "rwoodPanelVeneeredMdfPanelCloseUpShowing": "rWood - Panel veneered MDF panel close-up showing grain detail",
       "closeUpOfLacqueredVeneerSurface": "Close-up of lacquered veneer surface",
-      "sustainablyManagedForest": "Sustainably managed forest"
+      "sustainablyManagedForest": "Sustainably managed forest",
+      "hero": "rWood Panel veneered wood panel",
+      "heroIn": "rWood Panel in {veneer}",
+      "veneerSwatch": "{name} veneer swatch"
+    },
+    "kpi": {
+      "veneers": "real-wood veneers",
+      "ranges": "veneer ranges: Nature and Gemini",
+      "fsc": "certified veneers",
+      "anyValue": "Any",
+      "anyLabel": "veneer, stain and finish to order",
+      "ariaLabel": "Key figures"
+    },
+    "ordering": {
+      "title": "Lead time and samples",
+      "orderCaption": "Order",
+      "supplyCaption": "Supply",
+      "samplesVal": "Free veneer samples",
+      "samplesQuotesDesc": "Order free veneer samples or send us your plans for a quote."
     }
   },
   "rpetFlexGroovePage": {

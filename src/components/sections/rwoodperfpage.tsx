@@ -4,49 +4,151 @@ import { useTranslations } from 'next-intl';
 import { analytics } from '@/lib/analytics';
 import { Link } from '@/i18n/navigation';
 import { PRODUCTS } from '@/data/products';
+import { isoAbsorptionClass } from '@/components/product/resolveMsg';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Single source for every spec figure on this page (αw, fire class, recycled
-// content …): src/data/products.ts. Nothing below may hard-code one of them.
+/**
+ * rWood Perf — product page.
+ *
+ * Content model: the rWood Perf datasheet (EN · 09/2026, v1.0) and the rWood
+ * colour and finish guide. Governed figures (thickness, αw range, NRC, fire
+ * class, plant, certifications, recycled content) come from
+ * src/data/products.ts. The per-pattern αw values and the PD8 octave-band
+ * row are the datasheet's own table (page 2); the page only prints them
+ * while their extremes agree with the governed αw range, so a change in the
+ * data cannot silently contradict them.
+ */
 const PRODUCT = PRODUCTS['rwood-perf'];
 const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
-// alphaW is a range that depends on the perforation pattern, stored as
-// '0.35–0.85 (per pattern)'; the numeric range is what the page prints.
+// alphaW is stored as '0.35–0.85 (per pattern)'; the numeric range is what the page prints.
 const alphaWRange = panelSpecs?.alphaW ? panelSpecs.alphaW.replace(/\s*\(.*\)\s*$/, '') : null;
+const rangeMatch = alphaWRange ? /^(\d(?:\.\d+)?)[–-](\d(?:\.\d+)?)$/.exec(alphaWRange) : null;
+const alphaWMin = rangeMatch ? Number(rangeMatch[1]) : null;
+const alphaWMax = rangeMatch ? Number(rangeMatch[2]) : null;
+const nrc = panelSpecs?.nrc ?? null;
 const fireClass = panelSpecs?.fireClass ?? null;
+const thickness = panelSpecs?.thickness ?? null;
 const recycledPct = PRODUCT.recycledContentPct;
+const hasFsc = PRODUCT.certifications.includes('FSC');
 
-// Wood finish options for rWood - Perf
-const woodFinishOptions = [
-  { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-veneer/Beech-White.jpg', image: '/images/products/rwood-veneer/Beech-White.jpg', isDark: false },
-  { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-veneer/Birch-Rotary.jpg', image: '/images/products/rwood-veneer/Birch-Rotary.jpg', isDark: false },
-  { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-veneer/silk-oak.jpg', image: '/images/products/rwood-veneer/silk-oak.jpg', isDark: false },
-  { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false },
-  { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-veneer/umber-oak.jpg', image: '/images/products/rwood-veneer/umber-oak.jpg', isDark: false },
-  { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-veneer/walnut.jpg', image: '/images/products/rwood-veneer/walnut.jpg', isDark: false },
-  { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-veneer/smoked-oak.jpg', image: '/images/products/rwood-veneer/smoked-oak.jpg', isDark: false },
-  { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-veneer/tobacco-walnut.jpg', image: '/images/products/rwood-veneer/tobacco-walnut.jpg', isDark: false },
-];
+// Narrow no-break space, the datasheet's thousands separator ("3 050 × 1 220 mm").
+const NNBSP = ' ';
+const MAX_SIZE = `3${NNBSP}050 × 1${NNBSP}220 mm`;
 
-// Core colour options (replaces felt backing)
-const coreColourOptions = [
-  { id: 'dark', name: 'Dark Core', color: '#1a1a1a' },
-  { id: 'light', name: 'Light Core', color: '#c8c0b0' },
-];
+// The eight stock veneers of the datasheet (page 3), in its order. Names are
+// proper names, identical in every language; origin and grain are message keys.
+// The first veneer is printed "Beech White Ash" on the datasheet — kept as is.
+const VENEERS = [
+  { id: 'beech-white-ash', name: 'Beech White Ash', origin: 'europe', grain: 'straightInterlocked', isDark: false },
+  { id: 'birch-rotary', name: 'Birch Rotary', origin: 'scandinavia', grain: 'subtleFine', isDark: false },
+  { id: 'silk-oak', name: 'Silk Oak', origin: 'europe', grain: 'fineStraight', isDark: false },
+  { id: 'straw-oak', name: 'Straw Oak', origin: 'europe', grain: 'cathedral', isDark: false },
+  { id: 'umber-oak', name: 'Umber Oak', origin: 'europe', grain: 'pronounced', isDark: true },
+  { id: 'american-walnut', name: 'American Walnut', origin: 'northAmerica', grain: 'straightWavy', isDark: true },
+  { id: 'smoked-oak', name: 'Smoked Oak', origin: 'europe', grain: 'deepCathedral', isDark: true },
+  { id: 'tobacco-walnut', name: 'Tobacco Walnut', origin: 'northAmerica', grain: 'richFlowing', isDark: true },
+] as const;
+type Veneer = (typeof VENEERS)[number];
+const veneerImage = (v: Veneer) => `/images/products/rwood/veneers/${v.id}.webp`;
 
-// Perforation pattern options (replaces lamella variants). No per-pattern αw
-// here: src/data/products.ts only carries the range for the whole product.
-const perforationOptions = [
-  { id: 'pd8', name: 'PD8', detail: '⌀8 mm · 24% open', descriptionKey: 'options.pd8Desc', dotCount: 16, gridCols: 4, dotSize: 10 },
-  { id: 'ph10', name: 'PH10', detail: '⌀10 mm · 18% open', descriptionKey: 'options.ph10Desc', dotCount: 9, gridCols: 3, dotSize: 12 },
-  { id: 'ph8', name: 'PH8', detail: '⌀8 mm · 12% open', descriptionKey: 'options.ph8Desc', dotCount: 25, gridCols: 5, dotSize: 7 },
-  { id: 'ph5', name: 'PH5', detail: '⌀5 mm · 5% open', descriptionKey: 'options.ph5Desc', dotCount: 36, gridCols: 6, dotSize: 5 },
-];
+// The four perforation patterns (datasheet pages 1–2): hole diameter, open
+// area and the measured αw per pattern (cavity with mineral wool backing).
+const PATTERNS = [
+  { id: 'pd8', name: 'PD8', holeMm: 8, openPct: 24, double: true, alphaW: 0.85, descKey: 'options.pd8Desc' },
+  { id: 'ph10', name: 'PH10', holeMm: 10, openPct: 18, double: false, alphaW: 0.75, descKey: 'options.ph10Desc' },
+  { id: 'ph8', name: 'PH8', holeMm: 8, openPct: 12, double: false, alphaW: 0.55, descKey: 'options.ph8Desc' },
+  { id: 'ph5', name: 'PH5', holeMm: 5, openPct: 5, double: false, alphaW: 0.35, descKey: 'options.ph5Desc' },
+] as const;
+const patternMin = Math.min(...PATTERNS.map((p) => p.alphaW));
+const patternMax = Math.max(...PATTERNS.map((p) => p.alphaW));
+/** The datasheet's per-pattern figures are printed only while they agree with the governed range. */
+const PATTERN_ALPHA_W_SHOWN = alphaWMin === patternMin && alphaWMax === patternMax;
 
-// Default hero image
-const defaultHeroImage = '/images/products/rwood-perf/hero-rwood-perf.webp';
+// αs per octave band, pattern PD8 with cavity (datasheet page 2, indicative).
+const OCTAVE_BANDS = [
+  { hz: '125', alphaS: 0.35 },
+  { hz: '250', alphaS: 0.7 },
+  { hz: '500', alphaS: 0.95 },
+  { hz: '1k', alphaS: 1.0 },
+  { hz: '2k', alphaS: 0.95 },
+  { hz: '4k', alphaS: 0.85 },
+] as const;
 
+/** Square-grid pitch (mm) for `holes` holes per cell that gives the stated open area. */
+const pitchMm = (d: number, openPct: number, holes: number) => d * Math.sqrt((holes * Math.PI) / (4 * (openPct / 100)));
+
+/**
+ * To-scale drawing of one pattern: a 120 × 75 mm patch, holes and pitch in
+ * millimetres (the datasheet draws them "about 1:2"; the CSS caps the width
+ * at about 60 mm on a 96 dpi screen). The double pattern PD8 has a second
+ * hole per cell, staggered by half a pitch.
+ */
+function PatternDrawing({ id, holeMm, openPct, double, label }: { id: string; holeMm: number; openPct: number; double: boolean; label: string }) {
+  const pitch = pitchMm(holeMm, openPct, double ? 2 : 1);
+  const r = holeMm / 2;
+  const patternId = `rwp-${id}`;
+  return (
+    <svg className="perf-drawing" viewBox="0 0 120 75" role="img" aria-label={label}>
+      <defs>
+        <pattern id={patternId} patternUnits="userSpaceOnUse" width={pitch} height={pitch} x={pitch / 2} y={pitch / 2}>
+          <circle cx={pitch / 2} cy={pitch / 2} r={r} fill="currentColor" />
+          {double && (
+            <>
+              <circle cx={0} cy={0} r={r} fill="currentColor" />
+              <circle cx={pitch} cy={0} r={r} fill="currentColor" />
+              <circle cx={0} cy={pitch} r={r} fill="currentColor" />
+              <circle cx={pitch} cy={pitch} r={r} fill="currentColor" />
+            </>
+          )}
+        </pattern>
+      </defs>
+      <rect width="120" height="75" fill={`url(#${patternId})`} />
+    </svg>
+  );
+}
+
+/** Exploded build-up: 01 perforated veneer · 02 FR MDF core, drilled through · 03 acoustic fleece. */
+function BuildUpDrawing({ label }: { label: string }) {
+  const face = 'M60 0 L120 30 L60 60 L0 30 Z';
+  const holes = Array.from({ length: 5 }, (_, row) =>
+    Array.from({ length: 8 }, (_, col) => ({ key: `${row}-${col}`, cx: 12 + col * 14 + (row % 2) * 7, cy: 10 + row * 10 })),
+  ).flat();
+  return (
+    <svg className="buildup-drawing" viewBox="0 0 150 150" role="img" aria-label={label}>
+      <defs>
+        <clipPath id="rwp-face"><path d={face} /></clipPath>
+      </defs>
+      {/* 03 fleece */}
+      <g transform="translate(15 78)">
+        <path d="M60 60 L0 30 L0 36 L60 66 L120 36 L120 30 Z" fill="#0a2d47" />
+        <path d={face} fill="#0d3a5c" />
+      </g>
+      {/* 02 core, drilled through */}
+      <g transform="translate(15 44)">
+        <path d="M60 60 L0 30 L0 38 L60 68 L120 38 L120 30 Z" fill="#cfd8df" />
+        <path d={face} fill="#e6ecf1" />
+        <g clipPath="url(#rwp-face)" fill="#9fb3c2">
+          {holes.map((h) => <ellipse key={h.key} cx={h.cx} cy={h.cy} rx="3.2" ry="1.8" />)}
+        </g>
+      </g>
+      {/* 01 perforated veneer */}
+      <g transform="translate(15 10)">
+        <path d="M60 60 L0 30 L0 34 L60 64 L120 34 L120 30 Z" fill="#1466a3" />
+        <path d={face} fill="#dbeaf5" stroke="#197FC7" strokeWidth="1" />
+        <g clipPath="url(#rwp-face)" fill="#0d3a5c">
+          {holes.map((h) => <ellipse key={h.key} cx={h.cx} cy={h.cy} rx="3.2" ry="1.8" />)}
+        </g>
+      </g>
+      {/* callout lines */}
+      <g stroke="#197FC7" strokeWidth="1" fill="none">
+        <path d="M120 22 L142 22" />
+        <path d="M120 60 L142 60" />
+        <path d="M120 100 L142 100" />
+      </g>
+    </svg>
+  );
+}
 
 /**
  * Server-rendered sections handed in by the route page
@@ -64,43 +166,52 @@ export interface RWoodPerfProductPageSlots {
   otherModels: React.ReactNode;
 }
 
+const NAV_IDS = ['overview', 'perforations', 'veneers', 'acoustics', 'installation', 'specs', 'gallery', 'downloads', 'ordering'] as const;
+
+const defaultHeroImage = PRODUCT.heroImage;
+
 export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, gallery, faq, otherModels }: RWoodPerfProductPageSlots) {
   const t = useTranslations('rwoodPerfPage');
   const tPage = useTranslations('productPage');
   const tm = useTranslations('manufacturer');
-  const [activeSection, setActiveSection] = useState('overview');
-  const [selectedFinish, setSelectedFinish] = useState<typeof woodFinishOptions[0] | null>(null);
-  const [selectedCore, setSelectedCore] = useState(coreColourOptions[0]);
-  const [selectedPerforation, setSelectedPerforation] = useState(perforationOptions[0]);
+  const [activeSection, setActiveSection] = useState<string>('overview');
+  const [selectedVeneer, setSelectedVeneer] = useState<Veneer | null>(null);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
-  // Get the current hero image - default or selected finish
-  const currentHeroImage = selectedFinish ? selectedFinish.image : defaultHeroImage;
+  const currentHeroImage = selectedVeneer ? veneerImage(selectedVeneer) : defaultHeroImage;
 
-  // Fire a single view_item event on mount so GA4 / Meta see
-  // the product impression. Empty deps array → fires once per page.
+  // Fire a single view_item event on mount so GA4 / Meta see the product impression.
   useEffect(() => {
     analytics.viewItem('rwood-perf', 'rwood');
   }, []);
 
+  // Scroll-spy for the sticky navigation: the topmost visible section is active.
+  useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible[0]) setActiveSection(visible[0].target.id);
+      },
+      { rootMargin: '-40% 0px -55% 0px' },
+    );
+    NAV_IDS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, []);
 
-  const handleFinishSelect = (finish: typeof woodFinishOptions[0]) => {
-    if (!selectedFinish || finish.id !== selectedFinish.id) {
+  const handleVeneerSelect = (veneer: Veneer) => {
+    if (!selectedVeneer || veneer.id !== selectedVeneer.id) {
       setIsImageLoading(true);
-      setSelectedFinish(finish);
+      setSelectedVeneer(veneer);
     }
   };
 
-  const navItems = [
-    { id: 'overview', label: tPage('nav.overview') },
-    { id: 'variants', label: tPage('nav.patterns') },
-    { id: 'finishes', label: 'Finishes' },
-    { id: 'acoustics', label: tPage('nav.acoustics') },
-    { id: 'installation', label: tPage('nav.installation') },
-    { id: 'specs', label: tPage('nav.specs') },
-    { id: 'gallery', label: tPage('nav.gallery') },
-    { id: 'downloads', label: tPage('nav.downloads') },
-  ];
+  const navItems = NAV_IDS.map((id) => ({ id, label: tPage(`nav.${id}`) }));
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
@@ -109,32 +220,38 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
       const offset = 100;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: elementRect - bodyRect - offset, behavior: 'smooth' });
     }
   };
 
+  const patternSpec = (p: (typeof PATTERNS)[number]) =>
+    p.double
+      ? t('patterns.specDouble', { d: String(p.holeMm), pct: String(p.openPct) })
+      : t('patterns.spec', { d: String(p.holeMm), pct: String(p.openPct) });
+
   return (
-    <div className="rwood-groove-product-page">
-      {/* Hero Section */}
+    <div className="rwood-perf-product-page">
+      {/* Hero */}
       <section className="product-hero">
         <div className="hero-content">
           {breadcrumbs}
           <span className="product-tag">{t('hero.tag')}</span>
           <h1>{t('hero.title')}</h1>
           <p className="hero-tagline">{t('hero.tagline')}</p>
-          <p className="hero-description">
-            {t('hero.description2')}
-          </p>
+          <p className="hero-description">{t('hero.description')}</p>
+          <p className="hero-description">{t('hero.description2')}</p>
           <p className="hero-manufacturer">{tm('statement')}</p>
-          
+
           <div className="hero-usps">
             <div className="usp">
+              <span className="usp-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="7" cy="7" r="2.5" />
+                  <circle cx="17" cy="7" r="2.5" />
+                  <circle cx="7" cy="17" r="2.5" />
+                  <circle cx="17" cy="17" r="2.5" />
+                </svg>
+              </span>
               <span className="usp-text">{t('hero.usp1')}</span>
             </div>
             {fireClass && (
@@ -157,7 +274,6 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
               {tPage('cta.viewSpecifications')}
             </a>
           </div>
-
         </div>
 
         <div className="hero-image">
@@ -165,16 +281,15 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={currentHeroImage}
-                alt={`rWood - Perf acoustic panel${selectedFinish ? ` in ${selectedFinish.name}` : ''}`}
+                alt={selectedVeneer ? t('alt.heroVeneer', { name: selectedVeneer.name }) : t('alt.hero')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
                 priority
                 onLoad={() => setIsImageLoading(false)}
                 onError={() => {
-                  // A missing finish image would leave the spinner hanging
-                  // forever — fall back to the default hero and stop loading.
-                  setSelectedFinish(null);
+                  // A missing veneer image would leave the spinner hanging — fall back to the hero.
+                  setSelectedVeneer(null);
                   setIsImageLoading(false);
                 }}
               />
@@ -185,37 +300,76 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
               </div>
             )}
           </div>
-          
+
           <div className="finish-selector">
             <span className="selector-label">{t('surfaces.colorSelector')}</span>
             <div className="finish-options">
-              {woodFinishOptions.map((finish) => (
+              {VENEERS.map((veneer) => (
                 <button
-                  key={finish.id}
-                  className={`finish-option ${selectedFinish?.id === finish.id ? 'active' : ''}`}
-                  onClick={() => handleFinishSelect(finish)}
-                  title={finish.name}
-                  aria-label={tPage('a11y.selectFinish', { name: finish.name })}
+                  key={veneer.id}
+                  type="button"
+                  className={`finish-option ${selectedVeneer?.id === veneer.id ? 'active' : ''}`}
+                  onClick={() => handleVeneerSelect(veneer)}
+                  title={veneer.name}
+                  aria-label={tPage('a11y.selectVeneer', { name: veneer.name })}
+                  aria-pressed={selectedVeneer?.id === veneer.id}
                 >
-                  {/* Optimised 72px thumbnail instead of a 150–300 KB CSS background */}
-                  <Image src={finish.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
-                  {selectedFinish?.id === finish.id && (
-                    <span className={`finish-check ${finish.isDark ? 'on-dark' : 'on-light'}`}>✓</span>
+                  <Image src={veneerImage(veneer)} alt="" width={72} height={72} sizes="72px" quality={60} className="finish-swatch" style={{ objectFit: 'cover' }} />
+                  {selectedVeneer?.id === veneer.id && (
+                    <span className={`finish-check ${veneer.isDark ? 'on-dark' : 'on-light'}`} aria-hidden="true">✓</span>
                   )}
                 </button>
               ))}
             </div>
-            <span className="selected-finish-name">{selectedFinish?.name || 'Select a veneer'}</span>
+            <span className="selected-finish-name">{selectedVeneer?.name || t('surfaces.selectVeneer')}</span>
           </div>
         </div>
       </section>
 
-      {/* Sticky Navigation */}
+      {/* KPI band — the datasheet's four figures, governed values from product data */}
+      <section className="kpi-band" aria-label={t('kpi.ariaLabel')}>
+        <div className="kpi-inner">
+          {thickness && (
+            <div className="kpi">
+              <span className="kpi-value">{thickness}</span>
+              <span className="kpi-label">{t('kpi.thickness')}</span>
+            </div>
+          )}
+          {alphaWRange && (
+            <div className="kpi">
+              {PATTERN_ALPHA_W_SHOWN && alphaWMax !== null ? (
+                <>
+                  <span className="kpi-value">{alphaWMax.toFixed(2)}</span>
+                  <span className="kpi-label">{t('kpi.alphaWPd8', { range: alphaWRange })}</span>
+                </>
+              ) : (
+                <>
+                  <span className="kpi-value">{alphaWRange}</span>
+                  <span className="kpi-label">{t('kpi.alphaW')}</span>
+                </>
+              )}
+            </div>
+          )}
+          {fireClass && (
+            <div className="kpi">
+              <span className="kpi-value">{fireClass}</span>
+              <span className="kpi-label">{t('kpi.fire')}</span>
+            </div>
+          )}
+          <div className="kpi">
+            <span className="kpi-value">{PATTERNS.length}</span>
+            <span className="kpi-label">{t('kpi.patterns')}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Sticky navigation */}
       <nav className="product-nav">
         <div className="nav-inner">
           {navItems.map((item) => (
             <button
               key={item.id}
+              type="button"
               className={`nav-item ${activeSection === item.id ? 'active' : ''}`}
               onClick={() => scrollToSection(item.id)}
             >
@@ -225,391 +379,246 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
         </div>
       </nav>
 
-      {/* Overview Section */}
+      {/* Overview + build-up */}
       <section id="overview" className="content-section overview-section">
         <div className="section-grid">
-          <div className="section-image">
-            <div className="image-container">
-              <Image
-                src="/images/products/rwood-perf/overview-detail.webp"
-                alt={t('alt.rwoodPerfPanelCloseUpShowingRoundPerforations')}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
           <div className="section-content">
             <span className="section-tag">{t('overview.tag')}</span>
-            <h2>{t('hero.tagline')}</h2>
-            <p>
-              {t('overview.description3')}
-            </p>
-            <p>
-              {t('overview.description4')}
-            </p>
+            <h2>{t('overview.title')}</h2>
+            <p>{t('overview.description1')}</p>
+            <p>{t('overview.description2')}</p>
             <ul className="feature-list">
               {fireClass && (
                 <li>
-                  <span className="check">✓</span>
+                  <span className="check" aria-hidden="true">✓</span>
                   {t('overview.feature1', { fireClass })}
                 </li>
               )}
-              <li>
-                <span className="check">✓</span>
-                {t('overview.feature2')}
-              </li>
-              <li>
-                <span className="check">✓</span>
-                {t('overview.feature3')}
-              </li>
-              <li>
-                <span className="check">✓</span>
-                {t('overview.feature4')}
-              </li>
+              {[2, 3, 4].map((n) => (
+                <li key={n}>
+                  <span className="check" aria-hidden="true">✓</span>
+                  {t(`overview.feature${n}`)}
+                </li>
+              ))}
             </ul>
+          </div>
+
+          <div className="buildup-card">
+            <span className="section-tag">{tPage('nav.buildUp')}</span>
+            <BuildUpDrawing label={t('buildUp.alt')} />
+            <ol className="buildup-layers">
+              {[1, 2, 3].map((n) => (
+                <li key={n}>
+                  <span className="layer-no">0{n}</span>
+                  <div>
+                    <strong>{t(`buildUp.layer${n}`)}</strong>
+                    <span>{t(`buildUp.layer${n}Desc`)}</span>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <p className="buildup-note">{t('buildUp.behind')}</p>
+          </div>
+        </div>
+
+        <div className="section-image overview-image">
+          <div className="image-container">
+            <Image
+              src="/images/products/rwood-perf/surface-detail.jpg"
+              alt={t('alt.overview')}
+              fill
+              sizes="(max-width: 1024px) 100vw, 1200px"
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
       </section>
 
-      {/* Variants Section → Perforations */}
-      <section id="variants" className="content-section variants-section dark">
-        <div className="variants-header">
+      {/* Perforation patterns */}
+      <section id="perforations" className="content-section perforations-section">
+        <div className="section-header">
           <span className="section-tag">{t('patterns.tag')}</span>
           <h2>{t('patterns.title')}</h2>
-          <p>
-            {t('patterns.description3')}
-          </p>
+          <p>{t('patterns.description')}</p>
         </div>
 
-        <div className="variants-grid">
-          {perforationOptions.map((perf) => (
-            <div
-              key={perf.id}
-              className={`variant-card ${selectedPerforation.id === perf.id ? 'active' : ''}`}
-              role="button"
-              tabIndex={0}
-              onClick={() => setSelectedPerforation(perf)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  if (e.key === ' ') e.preventDefault();
-                  setSelectedPerforation(perf);
-                }
-              }}
-            >
-              <div className="variant-visual">
-                <div className="perf-preview">
-                  <div className="perf-surface">
-                    <div className="perf-dots" style={{ gridTemplateColumns: `repeat(${perf.gridCols}, 1fr)` }}>
-                      {[...Array(perf.dotCount)].map((_, i) => (
-                        <span key={i} className="dot" style={{ width: perf.dotSize, height: perf.dotSize }} />
-                      ))}
-                    </div>
-                  </div>
-                </div>
+        <div className="perforations-grid">
+          {PATTERNS.map((p) => {
+            const spec = patternSpec(p);
+            return (
+              <div key={p.id} className="perforation-card">
+                <PatternDrawing id={p.id} holeMm={p.holeMm} openPct={p.openPct} double={p.double} label={`${p.name} — ${spec}`} />
+                <h3>{p.name}</h3>
+                <span className="perf-spec">{spec}</span>
+                <p>{t(p.descKey)}</p>
               </div>
-              <div className="variant-info">
-                <h3>{perf.name}</h3>
-                <span className="lamella-count">{perf.detail}</span>
-                <p>{t(perf.descriptionKey)}</p>
+            );
+          })}
+        </div>
+        <p className="drawing-note">{t('patterns.drawingNote')}</p>
+
+        <div className="core-colour">
+          <div>
+            <h3>{t('patterns.coreColorTitle')}</h3>
+            <p>{t('patterns.coreMatchDesc2')}</p>
+          </div>
+          <ul className="core-options">
+            <li><span className="core-swatch" style={{ background: '#d9d0c2' }} aria-hidden="true" />{t('patterns.coreLight')}</li>
+            <li><span className="core-swatch" style={{ background: '#2b2622' }} aria-hidden="true" />{t('patterns.coreDark')}</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Veneers and finish */}
+      <section id="veneers" className="content-section veneers-section">
+        <div className="section-header">
+          <span className="section-tag">{tPage('nav.veneers')}</span>
+          <h2>{t('veneers.title')}</h2>
+          <p>{t('veneers.description')}</p>
+        </div>
+
+        <div className="veneers-grid">
+          {VENEERS.map((v) => (
+            <figure key={v.id} className="veneer-card">
+              <div className="veneer-image">
+                <Image src={veneerImage(v)} alt={t('veneers.alt', { name: v.name })} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 280px" style={{ objectFit: 'cover' }} />
               </div>
-            </div>
+              <figcaption>
+                <strong>{v.name}</strong>
+                <span>{t(`veneers.origin.${v.origin}`)}</span>
+                <span className="veneer-grain">{t(`veneers.grain.${v.grain}`)}</span>
+              </figcaption>
+            </figure>
           ))}
         </div>
 
-        {/* Core Colour Selector (replaces felt selector placement in Groove) */}
-        <div className="core-colour-section">
-          <h3>{t('patterns.coreColorTitle')}</h3>
-          <p className="core-colour-desc">
-            {t('patterns.coreMatchDesc2')}
-          </p>
-          <div className="felt-selector">
-            {coreColourOptions.map((core) => (
-              <button
-                key={core.id}
-                className={`felt-option ${selectedCore.id === core.id ? 'active' : ''}`}
-                onClick={() => setSelectedCore(core)}
-              >
-                <span className="felt-swatch" style={{ backgroundColor: core.color }} />
-                <span className="felt-name">{core.name}</span>
-              </button>
-            ))}
+        <div className="veneer-notes">
+          <div>
+            <h3>{t('veneers.madeToOrderTitle')}</h3>
+            <p>{t('veneers.madeToOrderDesc')}</p>
+          </div>
+          <div>
+            <h3>{t('veneers.finishTitle')}</h3>
+            <p>{t('veneers.finishDesc')}</p>
+          </div>
+          <div>
+            <h3>{t('veneers.naturalTitle')}</h3>
+            <p>{t('veneers.naturalDesc')}</p>
           </div>
         </div>
       </section>
 
-      {/* Finishes Section */}
-      <section id="finishes" className="content-section finishes-section">
-        <div className="section-grid">
-          <div className="section-content">
-            <span className="section-tag">{t('surfaces.tag')}</span>
-            <h2>{t('surfaces.title')}</h2>
-            <p>
-              {t('surfaces.description3')}
-            </p>
-            
-            <div className="finish-categories">
-              <div className="finish-category">
-                <h3>{t('surfaces.natureVeneers')}</h3>
-                <p>{t('surfaces.natureDesc')}</p>
-              </div>
-              <div className="finish-category">
-                <h3>{t('surfaces.geminiVeneers')}</h3>
-                <p>{t('surfaces.geminiDesc')}</p>
-              </div>
-            </div>
-
-            <div className="felt-options">
-              <h3>{t('surfaces.finishes')}</h3>
-              {/* Informational swatches only — these were dead <button>s with no
-                  handlers, so they are rendered as non-interactive elements. */}
-              <div className="felt-selector">
-                <div className="felt-option static">
-                  <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #c4a77d, #8b6914)' }} />
-                  <span className="felt-name">{t('surfaces.finish1')}</span>
-                </div>
-                <div className="felt-option static">
-                  <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #e0d5c5, #c8bfb0)' }} />
-                  <span className="felt-name">{t('surfaces.finish2')}</span>
-                </div>
-                <div className="felt-option static">
-                  <span className="felt-swatch" style={{ background: 'linear-gradient(135deg, #d0c4b0, #b8a890)' }} />
-                  <span className="felt-name">{t('surfaces.finish3')}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="section-image">
-            <div className="image-container">
-              <Image
-                src="/images/products/rwood-perf/surface-detail.jpg"
-                alt={t('alt.perforatedWoodPanelVeneerSurfaceDetail')}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Acoustic Performance Section */}
+      {/* Acoustics */}
       <section id="acoustics" className="content-section acoustics-section">
-        <div className="acoustics-header">
+        <div className="section-header">
           <span className="section-tag">{t('acoustics.tag')}</span>
           <h2>{t('acoustics.title')}</h2>
-          <p>
-            {t('acoustics.description3')}
-          </p>
+          <p>{t('acoustics.description')}</p>
         </div>
 
-        <div className="acoustics-main-grid">
-          {/* Left: Exploded diagram - 4 layers */}
-          <div className="exploded-diagram">
-            <div className="diagram-title">{t('acoustics.diagramTitle')}</div>
-            <div className="exploded-layers">
-              <div className="exploded-layer">
-                <div className="layer-visual veneer-layer">
-                  <div className="wood-grain"></div>
-                  <div className="drill-holes">
-                    {[...Array(8)].map((_, i) => <span key={i} className="drill-hole" />)}
-                  </div>
-                </div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('acoustics.layer1Name')}</span>
-                  <span className="layer-desc">{t('acoustics.layer1Desc')}</span>
-                </div>
-              </div>
-              
-              <div className="layer-connector">
-                <svg viewBox="0 0 24 40" fill="none">
-                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
-                </svg>
-              </div>
-              
-              <div className="exploded-layer">
-                <div className="layer-visual mdf-layer">
-                  <div className="core-texture"></div>
-                </div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('acoustics.layer2Name')}</span>
-                  <span className="layer-desc">{t('acoustics.layer2Desc')}</span>
-                </div>
-              </div>
-              
-              <div className="layer-connector">
-                <svg viewBox="0 0 24 40" fill="none">
-                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
-                </svg>
-              </div>
-              
-              <div className="exploded-layer">
-                <div className="layer-visual felt-layer"></div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('acoustics.layer3Name')}</span>
-                  <span className="layer-desc">{t('acoustics.layer3Desc')}</span>
-                </div>
-              </div>
-
-              <div className="layer-connector">
-                <svg viewBox="0 0 24 40" fill="none">
-                  <path d="M12 0 L12 40" stroke="#197FC7" strokeWidth="2" strokeDasharray="4 4"/>
-                </svg>
-              </div>
-
-              <div className="exploded-layer">
-                <div className="layer-visual insulation-layer">
-                  <div className="insulation-fibers"></div>
-                </div>
-                <div className="layer-info">
-                  <span className="layer-name">{t('acoustics.layer4Name')}</span>
-                  <span className="layer-desc">{t('acoustics.layer4Desc')}</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Sound wave animation */}
-            <div className="sound-waves">
-              <div className="wave wave-1"></div>
-              <div className="wave wave-2"></div>
-              <div className="wave wave-3"></div>
-              <span className="wave-label">{t('acoustics.waveLabel')}</span>
-            </div>
+        <div className="acoustics-grid">
+          <div className="table-scroll">
+            <table className="data-table">
+              <thead>
+                <tr><th colSpan={2}>{t('acoustics.tableTitle')}</th></tr>
+              </thead>
+              <tbody>
+                {alphaWRange && (
+                  <tr>
+                    <th scope="row">{t('acoustics.alphaWByPattern')}</th>
+                    <td>{alphaWRange}</td>
+                  </tr>
+                )}
+                <tr>
+                  <th scope="row">{t('acoustics.withWool')}</th>
+                  <td>{t('acoustics.withWoolVal')}</td>
+                </tr>
+                {nrc && (
+                  <tr>
+                    <th scope="row">NRC</th>
+                    <td>{nrc}</td>
+                  </tr>
+                )}
+                <tr>
+                  <th scope="row">{tPage('specLabels.testStandard')}</th>
+                  <td>EN ISO 354 · EN ISO 11654</td>
+                </tr>
+                <tr>
+                  <th scope="row">{t('acoustics.mounting')}</th>
+                  <td>{t('acoustics.mountingVal')}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          {/* Right: Performance metrics */}
-          <div className="performance-metrics">
-            <div className="main-rating">
-              <div className="rating-ring">
-                <svg viewBox="0 0 120 120">
-                  <circle cx="60" cy="60" r="54" fill="none" stroke="#e8f4fc" strokeWidth="8"/>
-                  <circle 
-                    cx="60" cy="60" r="54" 
-                    fill="none" 
-                    stroke="#197FC7" 
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                    strokeDasharray="305"
-                    strokeDashoffset="45"
-                    transform="rotate(-90 60 60)"
-                  />
-                </svg>
-                <div className="rating-content">
-                  {/* αw range from src/data/products.ts (depends on the perforation pattern) */}
-                  <span className="rating-value">{alphaWRange ? `αw ${alphaWRange}` : '—'}</span>
-                  <span className="rating-label">{t('acoustics.ratingPerPattern')}</span>
-                </div>
-              </div>
-              {/* No absorption-class badge: the data αw range (0.35–0.85) is below Class A */}
+          <div className="acoustics-right">
+            <div className="table-scroll">
+              <table className="data-table pattern-table">
+                <thead>
+                  <tr>
+                    <th>{t('acoustics.pattern')}</th>
+                    <th>{t('acoustics.openArea')}</th>
+                    {PATTERN_ALPHA_W_SHOWN && <th>αw</th>}
+                    {PATTERN_ALPHA_W_SHOWN && <th>{t('acoustics.class')}</th>}
+                  </tr>
+                </thead>
+                <tbody>
+                  {PATTERNS.map((p) => (
+                    <tr key={p.id}>
+                      <th scope="row">{p.name}</th>
+                      <td>{p.openPct} %</td>
+                      {PATTERN_ALPHA_W_SHOWN && <td>{p.alphaW.toFixed(2)}</td>}
+                      {PATTERN_ALPHA_W_SHOWN && <td>{isoAbsorptionClass(p.alphaW) ?? '—'}</td>}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
 
-            <div className="metric-cards">
-              {fireClass && (
-                <div className="metric-card">
-                  {/* Fire class from src/data/products.ts (FR core) */}
-                  <div className="metric-value">{fireClass}</div>
-                  <div className="metric-label">{t('acoustics.fireRating')}</div>
+            {PATTERN_ALPHA_W_SHOWN && (
+              <figure className="octave-figure">
+                <figcaption>{t('acoustics.octaveTitle')}</figcaption>
+                <div className="octave-bars">
+                  {OCTAVE_BANDS.map((b) => (
+                    <div key={b.hz} className="octave-band">
+                      <span className="octave-value">{b.alphaS.toFixed(2)}</span>
+                      <span className="octave-track"><span className="octave-fill" style={{ height: `${b.alphaS * 100}%` }} /></span>
+                      <span className="octave-hz">{b.hz} Hz</span>
+                    </div>
+                  ))}
                 </div>
-              )}
-              {panelSpecs?.nrc && (
-                <div className="metric-card">
-                  <div className="metric-value">NRC {panelSpecs.nrc}</div>
-                  <div className="metric-label">{t('acoustics.noiseReduction')}</div>
-                </div>
-              )}
-            </div>
-
-            <div className="certification-note">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#197FC7" strokeWidth="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
-              </svg>
-              <span>{t('acoustics.certNote')}</span>
-            </div>
+              </figure>
+            )}
           </div>
         </div>
-
-        <div className="acoustics-benefits">
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-              </svg>
-            </div>
-            <h3>{t('acoustics.benefit1Title')}</h3>
-            <p>{t('acoustics.benefit1')}</p>
-          </div>
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h3>{t('acoustics.benefit2Title')}</h3>
-            {fireClass && <p>{t('acoustics.benefit2', { fireClass })}</p>}
-          </div>
-          <div className="benefit">
-            <div className="benefit-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 20V10"/>
-                <path d="M18 20V4"/>
-                <path d="M6 20v-4"/>
-              </svg>
-            </div>
-            <h3>{t('acoustics.benefit3Title')}</h3>
-            <p>{t('acoustics.benefit3')}</p>
-          </div>
-        </div>
+        <p className="drawing-note">{t('acoustics.footnote')}</p>
       </section>
 
-      {/* Installation Section */}
+      {/* Installation */}
       <section id="installation" className="content-section installation-section dark">
-        <div className="section-grid reverse">
-          <div className="section-content">
-            <span className="section-tag">{t('installation.tag')}</span>
-            <h2>{t('installation.title')}</h2>
-            <p>
-              {t('installation.description3')}
-            </p>
-            
-            <div className="installation-steps">
-              <div className="install-step">
-                <div className="step-number">1</div>
+        <div className="section-header">
+          <span className="section-tag">{t('installation.tag')}</span>
+          <h2>{t('installation.title')}</h2>
+          <p>{t('installation.description')}</p>
+        </div>
+
+        <div className="section-grid">
+          <ol className="installation-steps">
+            {[1, 2, 3, 4].map((n) => (
+              <li key={n} className="install-step">
+                <span className="step-number">0{n}</span>
                 <div className="step-content">
-                  <h3>{t('installation.step1Title')}</h3>
-                  <p>{t('installation.step1Desc')}</p>
+                  <h3>{t(`installation.step${n}Title`)}</h3>
+                  <p>{t(`installation.step${n}Desc`)}</p>
                 </div>
-              </div>
-              <div className="install-step">
-                <div className="step-number">2</div>
-                <div className="step-content">
-                  <h3>{t('installation.step2Title')}</h3>
-                  <p>{t('installation.step2Desc')}</p>
-                </div>
-              </div>
-              <div className="install-step">
-                <div className="step-number">3</div>
-                <div className="step-content">
-                  <h3>{t('installation.step3Title')}</h3>
-                  <p>{t('installation.step3Desc')}</p>
-                </div>
-              </div>
-              <div className="install-step">
-                <div className="step-number">4</div>
-                <div className="step-content">
-                  <h3>{t('installation.step4Title')}</h3>
-                  <p>{t('installation.step4Desc')}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+              </li>
+            ))}
+          </ol>
           <div className="section-image">
             <div className="image-container">
               <Image
                 src="/images/products/rwood-perf/installation-detail.jpg"
-                alt={t('alt.rwoodPerfPanelConcealedMountingSystem')}
+                alt={t('alt.installation')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -619,7 +628,30 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
         </div>
       </section>
 
-      {/* Sustainability Section */}
+      {/* Made to measure */}
+      <section className="content-section bespoke-section">
+        <div className="section-header">
+          <span className="section-tag">{t('bespoke.tag')}</span>
+          <h2>{t('bespoke.title')}</h2>
+          <p>{t('bespoke.description')}</p>
+        </div>
+        <div className="bespoke-features">
+          <div className="bespoke-item">
+            <h3>{t('bespoke.customDimTitle')}</h3>
+            <p>{t('bespoke.customDimDesc')}</p>
+          </div>
+          <div className="bespoke-item">
+            <h3>{t('bespoke.finishTitle')}</h3>
+            <p>{t('bespoke.finishDesc')}</p>
+          </div>
+          <div className="bespoke-item">
+            <h3>{t('bespoke.samplesTitle')}</h3>
+            <p>{t('bespoke.samplesDesc')}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Sustainability — only facts on the datasheet or in product data */}
       <section className="content-section sustainability-section">
         <div className="section-grid">
           <div className="section-image">
@@ -636,80 +668,100 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
           <div className="section-content">
             <span className="section-tag">{t('sustainability.tag')}</span>
             <h2>{t('sustainability.title')}</h2>
-            <p>
-              {t('sustainability.description3')}
-            </p>
+            <p>{t('sustainability.description')}</p>
             <div className="sustainability-features">
-              <div className="sustain-item">
-                <div>
+              {hasFsc && (
+                <div className="sustain-item">
                   <h3>{t('sustainability.badge1')}</h3>
                   <p>{t('sustainability.badge1Desc')}</p>
                 </div>
-              </div>
+              )}
               {/* Recycled-content badge only while the figure is confirmed in product data */}
               {recycledPct !== null && (
                 <div className="sustain-item">
-                  <div>
-                    <h3>{t('sustainability.badge2', { pct: recycledPct })}</h3>
-                    <p>{t('sustainability.badge2Desc')}</p>
-                  </div>
+                  <h3>{t('sustainability.badge2', { pct: recycledPct })}</h3>
+                  <p>{t('sustainability.badge2Desc')}</p>
                 </div>
               )}
-              {/* Origin badge: only when the plant is confirmed in product data (PL → Częstochowa) */}
               {PRODUCT.madeIn === 'PL' && (
                 <div className="sustain-item">
-                  <div>
-                    <h3>{t('sustainability.badge3')}</h3>
-                    <p>{t('sustainability.badge3Desc')}</p>
-                  </div>
+                  <h3>{t('sustainability.badge3')}</h3>
+                  <p>{t('sustainability.badge3Desc')}</p>
                 </div>
               )}
               <div className="sustain-item">
-                <div>
-                  <h3>{t('sustainability.badge4')}</h3>
-                  <p>{t('sustainability.badge4Desc')}</p>
-                </div>
+                <h3>{t('sustainability.badge4')}</h3>
+                <p>{t('sustainability.badge4Desc')}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Specifications — server-rendered (ProductSpecs) */}
+      {/* Specifications — server-rendered (ProductSpecs, src/data/specs/rwood-perf.ts) */}
       {specs}
 
-      {/* Projects & Installations — server-rendered (ProductGallery) */}
+      {/* Projects & installations — server-rendered (ProductGallery) */}
       {gallery}
 
       {/* Downloads — server-rendered (ProductDownloads) */}
       {downloads}
 
-      {/* Accessories Section */}
-      <section className="content-section accessories-section dark">
-        <div className="accessories-header">
-          <span className="section-tag">{t('accessories.tag')}</span>
-          <h2>{t('accessories.title')}</h2>
-          <p>{t('accessories.description')}</p>
+      {/* Ordering — lead times, samples, end of life */}
+      <section id="ordering" className="content-section ordering-section">
+        <div className="section-header">
+          <span className="section-tag">{tPage('ordering.tag')}</span>
+          <h2>{t('ordering.title')}</h2>
         </div>
 
-        <div className="accessories-grid">
-          <div className="accessory-card">
-            <h3>{t('accessories.item1Title')}</h3>
-            <p>{t('accessories.item1Desc')}</p>
+        <div className="ordering-grid">
+          <div className="table-scroll">
+            <table className="data-table">
+              <thead>
+                <tr><th colSpan={2}>{tPage('ordering.leadTime')}</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">{t('ordering.stockVeneers')}</th><td>{t('ordering.stockVeneersVal')}</td></tr>
+                <tr><th scope="row">{t('ordering.nonStock')}</th><td>{t('ordering.nonStockVal')}</td></tr>
+                <tr><th scope="row">{t('ordering.madeToMeasure')}</th><td>{t('ordering.madeToMeasureVal')}</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div className="accessory-card">
-            <h3>{t('accessories.item2Title')}</h3>
-            <p>{t('accessories.item2Desc')}</p>
-          </div>
-          <div className="accessory-card">
-            <h3>{t('accessories.item3Title')}</h3>
-            <p>{t('accessories.item3Desc')}</p>
-          </div>
-          <div className="accessory-card">
-            <h3>{t('accessories.item4Title')}</h3>
-            <p>{t('accessories.item4Desc')}</p>
+          <div className="table-scroll">
+            <table className="data-table">
+              <thead>
+                <tr><th colSpan={2}>{t('ordering.supply')}</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">{tPage('ordering.samples')}</th><td>{t('ordering.samplesVal')}</td></tr>
+                <tr><th scope="row">{tPage('ordering.sizes')}</th><td>{t('ordering.sizesVal', { size: MAX_SIZE })}</td></tr>
+                <tr><th scope="row">{tPage('ordering.minimumOrder')}</th><td>{tPage('ordering.onRequest')}</td></tr>
+                <tr><th scope="row">{tPage('ordering.prices')}</th><td>{tPage('ordering.onRequest')}</td></tr>
+                <tr><th scope="row">{tPage('ordering.delivery')}</th><td>{tPage('ordering.onRequest')}</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
+
+        <div className="dark-band">
+          <div>
+            <h3>{tPage('ordering.endOfLife')}</h3>
+            <p>{tPage('ordering.takeBack')}</p>
+          </div>
+          <div>
+            <h3>{tPage('ordering.samplesQuotes')}</h3>
+            <p>
+              <a href="mailto:info@re-sound.be">info@re-sound.be</a> · <a href="tel:+3232846818" onClick={() => analytics.phoneClick('product_ordering_rwood-perf')}>+32 3 284 68 18</a>
+              <br />
+              {t('ordering.showroom')}
+            </p>
+            <div className="band-ctas">
+              <Link href="/samples" className="btn-primary" prefetch={false}>{tPage('ordering.requestSamples')}</Link>
+              <Link href="/contact" className="btn-secondary" onClick={() => analytics.quoteClick('rwood-perf', 'product_ordering')}>{tPage('ordering.requestQuote')}</Link>
+            </div>
+          </div>
+        </div>
+        <p className="drawing-note">{tPage('ordering.dataNote')}</p>
       </section>
 
       {/* FAQ — server-rendered (ProductFaq) */}
@@ -718,12 +770,11 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
       {/* Other models in this range — server-rendered (OtherModels) */}
       {otherModels}
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="content-section cta-section">
         <div className="cta-content">
           <h2>{tPage('cta.ctaTitle')}</h2>
-          <p>
-            {tPage('cta.ctaSubtitle')}</p>
+          <p>{tPage('cta.ctaSubtitle')}</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-primary large" onClick={() => analytics.quoteClick('rwood-perf', 'product_cta')}>
               {tPage('cta.requestQuote')}
@@ -732,303 +783,432 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
               {tPage('cta.callUs')}
             </a>
           </div>
-          <p className="cta-note">
-            {t('cta.note')}
-          </p>
+          <p className="cta-note">{t('cta.note')}</p>
         </div>
       </section>
 
       <style jsx>{`
-        .rwood-groove-product-page {
-          --brand-blue: #197FC7;
+        .rwood-perf-product-page {
           --brand-blue-dark: #155d94;
-          --brand-blue-pale: #e8f4fc;
-          --deep-blue: #0a1628;
-          --cream: #f8f6f3;
-          --charcoal: #333;
-          --wood-warm: #8B6914;
-          --wood-light: #D4A954;
+          --line: #e6ecf1;
+          --ink-muted: #5f6b76;
         }
 
+        /* ========================================
+           HERO
+           ======================================== */
         .product-hero {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 4rem;
           padding: 8rem 4rem 4rem;
           background: linear-gradient(135deg, var(--cream) 0%, white 100%);
-          min-height: 80vh;
           align-items: center;
         }
 
         .product-tag {
           display: inline-block;
-          background: var(--brand-blue);
-          color: white;
+          color: var(--brand-blue);
           font-size: 0.75rem;
-          font-weight: 600;
-          padding: 0.5rem 1rem;
-          border-radius: 20px;
+          font-weight: 700;
+          letter-spacing: 0.14em;
           text-transform: uppercase;
-          letter-spacing: 1px;
           margin-bottom: 1rem;
         }
 
         .hero-content h1 {
-          font-size: 4.5rem;
+          font-family: var(--font-heading);
+          font-size: 4rem;
+          line-height: 1.05;
           color: var(--deep-blue);
-          margin-bottom: 0.5rem;
-          letter-spacing: -2px;
+          margin-bottom: 0.75rem;
+          letter-spacing: -1.5px;
         }
 
-        .hero-tagline { font-size: 1.5rem; color: var(--wood-warm); font-weight: 500; margin-bottom: 1.5rem; }
-        .hero-description { font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 2rem; max-width: 500px; }
-        .hero-usps { display: flex; gap: 2rem; margin-bottom: 2rem; }
-        .usp { display: flex; align-items: center; gap: 0.5rem; }
-        .usp-icon { font-size: 1.5rem; }
-        .usp-text { font-weight: 600; color: var(--deep-blue); font-size: 0.9rem; }
-        .hero-ctas { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+        .hero-tagline {
+          font-family: var(--font-heading);
+          font-size: 1.5rem;
+          color: var(--deep-blue);
+          font-weight: 600;
+          margin-bottom: 1.25rem;
+        }
 
-        .btn-primary { display: inline-flex; align-items: center; padding: 1rem 2rem; background: var(--brand-blue); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer; }
-        .btn-primary:hover { background: var(--brand-blue-dark); transform: translateY(-2px); }
-        .btn-primary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
-        .btn-secondary { display: inline-flex; align-items: center; padding: 1rem 2rem; background: transparent; color: var(--deep-blue); text-decoration: none; border-radius: 50px; font-weight: 600; border: 2px solid var(--deep-blue); transition: all 0.3s ease; cursor: pointer; }
+        .hero-description {
+          font-size: 1.1rem;
+          color: #4a5561;
+          line-height: 1.75;
+          margin-bottom: 1rem;
+          max-width: 520px;
+        }
+
+        .hero-manufacturer { font-size: 0.9rem; color: var(--ink-muted); margin: 0.5rem 0 1.5rem; }
+
+        .hero-usps { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem; }
+        .usp { display: flex; align-items: center; gap: 0.5rem; }
+        .usp-icon { display: flex; align-items: center; color: var(--brand-blue); }
+        .usp-text { font-weight: 600; color: var(--deep-blue); font-size: 0.9rem; }
+
+        .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+
+        .btn-primary {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.95rem 2rem;
+          background: var(--brand-blue);
+          color: white;
+          text-decoration: none;
+          border-radius: 50px;
+          font-weight: 600;
+          transition: background 0.2s ease, transform 0.2s ease;
+          border: none;
+          cursor: pointer;
+        }
+        .btn-primary:hover { background: var(--brand-blue-dark); transform: translateY(-1px); }
+        .btn-primary.large { padding: 1.2rem 2.5rem; font-size: 1.1rem; }
+
+        .btn-secondary {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.95rem 2rem;
+          background: transparent;
+          color: var(--deep-blue);
+          text-decoration: none;
+          border-radius: 50px;
+          font-weight: 600;
+          border: 2px solid var(--deep-blue);
+          transition: background 0.2s ease, color 0.2s ease;
+          cursor: pointer;
+        }
         .btn-secondary:hover { background: var(--deep-blue); color: white; }
-        .btn-secondary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
-        .hero-price { font-size: 0.95rem; color: #666; }
-        .hero-price strong { color: var(--deep-blue); font-size: 1.2rem; }
+        .btn-secondary.large { padding: 1.2rem 2.5rem; font-size: 1.1rem; }
+
         .hero-image { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; }
 
-        .image-container { position: relative; width: 100%; max-width: 600px; aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; background: var(--cream); }
+        .image-container {
+          position: relative;
+          width: 100%;
+          max-width: 600px;
+          aspect-ratio: 4/5;
+          border-radius: 16px;
+          overflow: hidden;
+          background: var(--cream);
+        }
         .image-wrapper { position: absolute; inset: 0; transition: opacity 0.3s ease; }
         .image-wrapper.loading { opacity: 0.7; }
         .image-loading-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.5); }
         .loading-spinner { width: 40px; height: 40px; border: 3px solid var(--brand-blue-pale); border-top-color: var(--brand-blue); border-radius: 50%; animation: spin 0.8s linear infinite; }
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        .finish-selector { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 1.25rem 2rem; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
-        .selector-label { font-size: 0.8rem; font-weight: 600; color: #767676; text-transform: uppercase; letter-spacing: 0.5px; }
-        .finish-options { display: flex; gap: 0.6rem; }
-        .finish-option { position: relative; width: 40px; height: 40px; border-radius: 8px; border: 3px solid transparent; background: none; padding: 0; cursor: pointer; transition: all 0.2s ease; }
-        .finish-option:hover { transform: scale(1.1); }
+        .finish-selector {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 1.25rem 1.5rem;
+          background: white;
+          border: 1px solid var(--line);
+          border-radius: 12px;
+          width: 100%;
+          max-width: 600px;
+        }
+        .selector-label { font-size: 0.75rem; font-weight: 700; color: var(--brand-blue); text-transform: uppercase; letter-spacing: 0.12em; }
+        .finish-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
+        .finish-option {
+          position: relative;
+          width: 44px;
+          height: 44px;
+          border-radius: 8px;
+          border: 2px solid transparent;
+          background: none;
+          padding: 0;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .finish-option:hover { transform: scale(1.08); }
         .finish-option.active { border-color: var(--brand-blue); box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-blue); }
-        .finish-swatch { display: block; width: 100%; height: 100%; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.1); background-size: cover; background-position: center; }
+        .finish-option:focus-visible { outline: 2px solid var(--brand-blue); outline-offset: 2px; }
+        .finish-swatch { display: block; width: 100%; height: 100%; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.1); }
         .finish-check { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: bold; }
-        .finish-check.on-dark { color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-        .finish-check.on-light { color: var(--deep-blue); text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); }
+        .finish-check.on-dark { color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+        .finish-check.on-light { color: var(--deep-blue); text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6); }
         .selected-finish-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
 
         .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
 
-        .product-nav { position: sticky; top: 80px; z-index: 90; background: white; border-bottom: 1px solid #eee; padding: 0 4rem; }
-        .nav-inner { display: flex; gap: 0; max-width: 1200px; margin: 0 auto; }
-        .nav-item { padding: 1.25rem 1.25rem; background: none; border: none; font-size: 0.9rem; font-weight: 500; color: #666; cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.3s ease; }
+        /* ========================================
+           KPI BAND
+           ======================================== */
+        .kpi-band { background: var(--deep-blue); color: white; padding: 0 4rem; }
+        .kpi-inner {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+          padding: 2.5rem 0;
+        }
+        .kpi { display: flex; flex-direction: column; gap: 0.35rem; }
+        .kpi-value { font-family: var(--font-heading); font-size: 2.25rem; font-weight: 700; color: #7ec8f5; line-height: 1; letter-spacing: -0.5px; }
+        .kpi-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.82); line-height: 1.4; }
+
+        /* ========================================
+           STICKY NAVIGATION
+           ======================================== */
+        .product-nav { position: sticky; top: 80px; z-index: 90; background: white; border-bottom: 1px solid var(--line); padding: 0 4rem; overflow-x: auto; }
+        .nav-inner { display: flex; gap: 0; max-width: 1200px; margin: 0 auto; min-width: max-content; }
+        .nav-item {
+          padding: 1.1rem 1.1rem;
+          background: none;
+          border: none;
+          font-size: 0.9rem;
+          font-weight: 500;
+          color: #666;
+          cursor: pointer;
+          border-bottom: 3px solid transparent;
+          transition: color 0.2s ease, border-color 0.2s ease;
+          white-space: nowrap;
+        }
         .nav-item:hover { color: var(--brand-blue); }
         .nav-item.active { color: var(--brand-blue); border-bottom-color: var(--brand-blue); }
 
-        .content-section { padding: 6rem 4rem; }
+        /* ========================================
+           CONTENT SECTIONS
+           ======================================== */
+        .content-section { padding: 5rem 4rem; }
         .content-section.dark { background: var(--deep-blue); color: white; }
-        .content-section.dark .section-content h2 { color: white; }
-        .content-section.dark .section-content p { color: rgba(255, 255, 255, 0.8); }
+        .content-section.dark .section-header h2 { color: white; }
+        .content-section.dark .section-header p { color: rgba(255, 255, 255, 0.82); }
 
-        .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; align-items: center; }
-        .section-grid.reverse { direction: rtl; }
-        .section-grid.reverse > * { direction: ltr; }
+        .section-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          max-width: 1200px;
+          margin: 0 auto;
+          align-items: center;
+        }
 
-        .section-tag { display: inline-block; background: var(--brand-blue-pale); color: var(--brand-blue); font-size: 0.75rem; font-weight: 600; padding: 0.4rem 0.8rem; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; }
-        .content-section.dark .section-tag { background: rgba(25, 127, 199, 0.3); color: #7ec8f5; }
+        .section-header { max-width: 1200px; margin: 0 auto 2.5rem; }
+        .section-header p { font-size: 1.1rem; color: #4a5561; line-height: 1.75; max-width: 760px; }
 
-        .section-content h2 { font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1.5rem; letter-spacing: -1px; }
-        .section-content p { font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 1.5rem; }
+        .section-tag {
+          display: inline-block;
+          color: var(--brand-blue);
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          margin-bottom: 0.75rem;
+        }
+        .content-section.dark .section-tag { color: #7ec8f5; }
+
+        .section-header h2,
+        .section-content h2 {
+          font-family: var(--font-heading);
+          font-size: 2.25rem;
+          color: var(--deep-blue);
+          margin-bottom: 1rem;
+          letter-spacing: -0.5px;
+          line-height: 1.15;
+        }
+        .section-content p { font-size: 1.05rem; color: #4a5561; line-height: 1.75; margin-bottom: 1.25rem; }
+
         .feature-list { list-style: none; padding: 0; margin: 0; }
-        .feature-list li { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 0; font-size: 1rem; color: var(--charcoal); }
-        .content-section.dark .feature-list li { color: rgba(255, 255, 255, 0.9); }
+        .feature-list li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.55rem 0; font-size: 1rem; color: var(--charcoal); line-height: 1.5; }
         .check { color: var(--brand-blue); font-weight: bold; }
 
-        /* Variants / Perforations Section */
-        .variants-header { text-align: center; max-width: 700px; margin: 0 auto 4rem; }
-        .variants-header h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
-        .variants-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
-        .variants-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .variant-card { background: rgba(255, 255, 255, 0.05); border: 2px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; }
-        .variant-card:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); }
-        .variant-card.active { background: rgba(25, 127, 199, 0.2); border-color: var(--brand-blue); }
-        .variant-visual { height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
-        .variant-info { text-align: center; }
-        .variant-info h3 { color: white; font-size: 1.1rem; margin-bottom: 0.25rem; }
-        .lamella-count { font-size: 0.85rem; color: #7ec8f5; }
-        .variant-info p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin: 0.5rem 0; }
-        .lamella-width { font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); }
+        .drawing-note { max-width: 1200px; margin: 1.25rem auto 0; font-size: 0.85rem; color: var(--ink-muted); line-height: 1.5; }
 
-        /* Perforation dot preview (replaces lamella preview) */
-        .perf-preview { width: 80px; height: 80px; border-radius: 12px; overflow: hidden; }
-        .perf-surface { width: 100%; height: 100%; background: linear-gradient(135deg, #c4a77d 0%, #b89860 100%); display: flex; align-items: center; justify-content: center; }
-        .perf-dots { display: grid; gap: 2px; justify-items: center; align-items: center; padding: 6px; }
-        .dot { border-radius: 50%; background: rgba(0, 0, 0, 0.5); }
+        /* ========================================
+           BUILD-UP CARD
+           ======================================== */
+        .buildup-card { background: var(--cream); border-radius: 16px; padding: 2rem; }
+        .buildup-card :global(.buildup-drawing) { display: block; width: 100%; max-width: 300px; height: auto; margin: 0 auto 1.25rem; }
+        .buildup-layers { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+        .buildup-layers li { display: flex; gap: 0.75rem; align-items: flex-start; }
+        .layer-no { font-family: var(--font-heading); font-weight: 700; color: var(--brand-blue); font-size: 0.9rem; min-width: 1.6rem; padding-top: 0.1rem; }
+        .buildup-layers strong { display: block; color: var(--deep-blue); font-size: 0.95rem; }
+        .buildup-layers span { display: block; font-size: 0.85rem; color: var(--ink-muted); }
+        .buildup-note { font-size: 0.85rem; color: var(--ink-muted); margin: 0; }
+        .overview-image { max-width: 1200px; margin: 3rem auto 0; }
+        .overview-image .image-container { aspect-ratio: 21/9; }
 
-        /* Core colour section */
-        .core-colour-section { max-width: 500px; margin: 3rem auto 0; text-align: center; }
-        .core-colour-section h3 { color: white; font-size: 1.25rem; margin-bottom: 0.5rem; }
-        .core-colour-desc { color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; }
+        /* ========================================
+           PERFORATION PATTERNS
+           ======================================== */
+        .perforations-section { background: white; }
+        .perforations-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .perforation-card { display: flex; flex-direction: column; }
+        .perforation-card :global(.perf-drawing) {
+          display: block;
+          width: 100%;
+          max-width: 240px;
+          height: auto;
+          color: var(--deep-blue);
+          background: var(--brand-blue-pale);
+          border: 1px solid #d6e6f2;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+        }
+        .perforation-card h3 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--deep-blue); margin: 0 0 0.2rem; }
+        .perf-spec { font-size: 0.9rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 0.35rem; }
+        .perforation-card p { font-size: 0.9rem; color: var(--ink-muted); margin: 0; line-height: 1.5; }
 
-        /* Finishes Section */
-        .finish-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
-        .finish-category { padding: 1.5rem; background: var(--cream); border-radius: 12px; }
-        .finish-category h3 { color: var(--deep-blue); margin-bottom: 0.5rem; }
-        .finish-category p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.6; }
-        .felt-options h3 { color: var(--deep-blue); margin-bottom: 1rem; }
-        .felt-selector { display: flex; gap: 1rem; }
-        .felt-option { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: white; border: 2px solid #e0e0e0; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; }
-        .felt-option:hover { border-color: var(--brand-blue); }
-        .felt-option.active { border-color: var(--brand-blue); background: var(--brand-blue-pale); }
-        .felt-option.static { cursor: default; }
-        .felt-option.static:hover { border-color: #e0e0e0; }
-        .felt-swatch { width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.1); }
-        .felt-name { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); }
+        .core-colour { max-width: 1200px; margin: 2.5rem auto 0; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; background: var(--cream); border-radius: 12px; padding: 1.5rem 1.75rem; }
+        .core-colour h3 { font-family: var(--font-heading); font-size: 1.05rem; color: var(--deep-blue); margin-bottom: 0.35rem; }
+        .core-colour p { font-size: 0.95rem; color: #4a5561; margin: 0; line-height: 1.6; }
+        .core-options { list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; }
+        .core-options li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.92rem; font-weight: 600; color: var(--deep-blue); }
+        .core-swatch { width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.12); }
 
-        /* Core colour felt overrides for dark section */
-        .content-section.dark .felt-option { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.15); }
-        .content-section.dark .felt-option:hover { border-color: var(--brand-blue); }
-        .content-section.dark .felt-option.active { border-color: var(--brand-blue); background: rgba(25, 127, 199, 0.15); }
-        .content-section.dark .felt-name { color: white; }
+        /* ========================================
+           VENEERS
+           ======================================== */
+        .veneers-section { background: var(--cream); }
+        .veneers-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          max-width: 1200px;
+          margin: 0 auto 2.5rem;
+        }
+        .veneer-card { margin: 0; }
+        .veneer-image { position: relative; aspect-ratio: 648/400; border-radius: 6px; overflow: hidden; background: #ddd; margin-bottom: 0.75rem; }
+        .veneer-card figcaption strong { display: block; font-family: var(--font-heading); color: var(--deep-blue); font-size: 1rem; }
+        .veneer-card figcaption span { display: block; font-size: 0.85rem; color: var(--deep-blue); }
+        .veneer-card figcaption .veneer-grain { color: var(--ink-muted); }
+        .veneer-notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .veneer-notes h3 { font-family: var(--font-heading); font-size: 1.05rem; color: var(--deep-blue); margin-bottom: 0.4rem; }
+        .veneer-notes p { font-size: 0.95rem; color: #4a5561; line-height: 1.6; margin: 0; }
 
-        /* Acoustics Section */
-        .acoustics-section { background: var(--cream); }
-        .acoustics-header { text-align: center; max-width: 700px; margin: 0 auto 4rem; }
-        .acoustics-header h2 { font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1rem; }
-        .acoustics-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
-        .acoustics-main-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; max-width: 1100px; margin: 0 auto 4rem; align-items: center; }
+        /* ========================================
+           DATA TABLES (datasheet style)
+           ======================================== */
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .data-table { width: 100%; min-width: 280px; border-collapse: collapse; background: white; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+        .data-table thead th { background: var(--cream); color: var(--deep-blue); font-size: 0.8rem; font-weight: 600; text-align: left; padding: 0.7rem 1rem; }
+        .data-table tbody th, .data-table tbody td { padding: 0.7rem 1rem; border-top: 1px solid var(--line); font-size: 0.92rem; text-align: left; vertical-align: top; }
+        .data-table tbody th { font-weight: 500; color: #5b6770; width: 48%; }
+        .data-table tbody td { color: var(--deep-blue); font-weight: 600; }
+        .pattern-table tbody th { width: auto; font-weight: 600; color: var(--deep-blue); }
+        .pattern-table td { white-space: nowrap; }
 
-        /* Exploded Diagram */
-        .exploded-diagram { background: white; border-radius: 24px; padding: 2.5rem; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06); position: relative; }
-        .diagram-title { font-size: 0.85rem; font-weight: 600; color: #767676; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; text-align: center; }
-        .exploded-layers { display: flex; flex-direction: column; align-items: center; gap: 0; }
-        .exploded-layer { display: flex; align-items: center; gap: 1.5rem; width: 100%; max-width: 400px; }
-        .layer-visual { width: 180px; border-radius: 6px; flex-shrink: 0; position: relative; overflow: hidden; }
+        /* ========================================
+           ACOUSTICS
+           ======================================== */
+        .acoustics-section { background: white; }
+        .acoustics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1200px; margin: 0 auto; align-items: start; }
+        .acoustics-right { display: flex; flex-direction: column; gap: 1.5rem; }
 
-        .layer-visual.veneer-layer { background: linear-gradient(90deg, #c4a77d 0%, #d4a954 30%, #c4a77d 60%, #b89860 100%); height: 24px; }
-        .layer-visual.veneer-layer .wood-grain { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0px, transparent 8px, rgba(139, 105, 20, 0.15) 8px, rgba(139, 105, 20, 0.15) 10px); }
-        .layer-visual.veneer-layer .drill-holes { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 14px; }
-        .drill-hole { width: 6px; height: 6px; border-radius: 50%; background: rgba(0, 0, 0, 0.4); }
+        .octave-figure { margin: 0; background: var(--cream); border-radius: 8px; padding: 1.25rem 1.25rem 1rem; }
+        .octave-figure figcaption { font-size: 0.8rem; font-weight: 600; color: var(--deep-blue); margin-bottom: 1rem; }
+        .octave-bars { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem; align-items: end; }
+        .octave-band { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
+        .octave-value { font-size: 0.8rem; font-weight: 600; color: var(--deep-blue); }
+        .octave-track { display: flex; align-items: flex-end; width: 100%; max-width: 28px; height: 90px; background: white; border-radius: 4px; overflow: hidden; }
+        .octave-fill { display: block; width: 100%; background: var(--brand-blue); border-radius: 4px 4px 0 0; }
+        .octave-hz { font-size: 0.75rem; color: var(--ink-muted); white-space: nowrap; }
 
-        .layer-visual.mdf-layer { background: #d4d0c8; height: 50px; position: relative; }
-        .core-texture { position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent 0px, transparent 4px, rgba(0, 0, 0, 0.04) 4px, rgba(0, 0, 0, 0.04) 6px); }
-        .layer-visual.felt-layer { background: #2d2d2d; height: 10px; }
+        /* ========================================
+           INSTALLATION
+           ======================================== */
+        .installation-steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .install-step { display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid rgba(255, 255, 255, 0.25); padding-top: 1rem; }
+        .step-number { font-family: var(--font-heading); font-weight: 700; color: #7ec8f5; font-size: 0.95rem; }
+        .step-content h3 { font-family: var(--font-heading); color: white; font-size: 1.05rem; margin: 0 0 0.25rem; }
+        .step-content p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.8); margin: 0; line-height: 1.55; }
 
-        /* Insulation layer (new for Perf) */
-        .layer-visual.insulation-layer { background: #e8d44d; height: 30px; position: relative; border-radius: 4px; }
-        .insulation-fibers { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(180, 140, 20, 0.3) 3px, rgba(180, 140, 20, 0.3) 4px); }
+        /* ========================================
+           MADE TO MEASURE / SUSTAINABILITY
+           ======================================== */
+        .bespoke-section { background: var(--cream); }
+        .bespoke-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .sustainability-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 2rem; }
+        .bespoke-item h3, .sustain-item h3 { font-family: var(--font-heading); font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
+        .bespoke-item p, .sustain-item p { font-size: 0.92rem; color: #4a5561; margin: 0; line-height: 1.55; }
+        .sustainability-section { background: white; }
 
-        .layer-connector { height: 24px; display: flex; justify-content: center; padding-left: 90px; }
-        .layer-connector svg { width: 24px; height: 24px; }
-        .layer-info { display: flex; flex-direction: column; gap: 0.25rem; }
-        .layer-name { font-size: 0.95rem; font-weight: 600; color: var(--deep-blue); }
-        .layer-desc { font-size: 0.8rem; color: #767676; }
+        /* ========================================
+           ORDERING
+           ======================================== */
+        .ordering-section { background: var(--cream); }
+        .ordering-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1200px; margin: 0 auto 2rem; align-items: start; }
+        .dark-band {
+          max-width: 1200px;
+          margin: 0 auto;
+          background: var(--deep-blue);
+          color: white;
+          border-radius: 16px;
+          padding: 2rem 2.5rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+        }
+        .dark-band h3 { font-family: var(--font-heading); font-size: 1.15rem; color: white; margin-bottom: 0.5rem; }
+        .dark-band p { font-size: 0.95rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65; margin: 0 0 1rem; }
+        .dark-band a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+        .band-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .dark-band .btn-primary { background: white; color: var(--deep-blue); }
+        .dark-band .btn-primary:hover { background: var(--brand-blue-pale); }
+        .dark-band .btn-secondary { border-color: rgba(255, 255, 255, 0.7); color: white; }
+        .dark-band .btn-secondary:hover { background: white; color: var(--deep-blue); }
 
-        /* Sound Waves */
-        .sound-waves { position: absolute; left: 1.5rem; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
-        .wave { width: 3px; background: var(--brand-blue); border-radius: 2px; opacity: 0.6; animation: wave-pulse 1.5s ease-in-out infinite; }
-        .wave-1 { animation-delay: 0s; height: 16px; }
-        .wave-2 { animation-delay: 0.2s; height: 24px; }
-        .wave-3 { animation-delay: 0.4s; height: 20px; }
-        @keyframes wave-pulse { 0%, 100% { transform: scaleY(0.6); opacity: 0.4; } 50% { transform: scaleY(1); opacity: 0.8; } }
-        .wave-label { font-size: 0.65rem; color: #767676; writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); margin-top: 0.5rem; }
-
-        /* Performance Metrics */
-        .performance-metrics { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
-        .main-rating { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
-        .rating-ring { position: relative; width: 160px; height: 160px; }
-        .rating-ring svg { width: 100%; height: 100%; }
-        .rating-content { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-        .rating-content .rating-value { font-size: 1.75rem; font-weight: 700; color: var(--deep-blue); }
-        .rating-content .rating-label { font-size: 0.85rem; color: #767676; }
-        .rating-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #197FC7 0%, #155d94 100%); color: white; padding: 0.5rem 1.25rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; }
-        .badge-icon { font-size: 1rem; }
-        .metric-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; width: 100%; }
-        .metric-card { background: white; padding: 1.25rem; border-radius: 12px; text-align: center; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04); }
-        .metric-value { font-size: 1.5rem; font-weight: 700; color: var(--brand-blue); margin-bottom: 0.25rem; }
-        .metric-label { font-size: 0.8rem; color: #767676; }
-        .certification-note { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.5rem; background: rgba(25, 127, 199, 0.08); border-radius: 12px; font-size: 0.9rem; color: var(--deep-blue); }
-
-        /* Benefits */
-        .acoustics-benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1000px; margin: 0 auto; }
-        .benefit { text-align: center; padding: 2.5rem 2rem; background: white; border-radius: 20px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .benefit:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); }
-        .benefit-icon-wrap { width: 64px; height: 64px; margin: 0 auto 1.25rem; background: var(--brand-blue-pale); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: var(--brand-blue); }
-        .benefit h3 { font-size: 1.1rem; color: var(--deep-blue); margin-bottom: 0.5rem; }
-        .benefit p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.6; }
-
-        /* Installation */
-        .installation-steps { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
-        .install-step { display: flex; align-items: flex-start; gap: 1rem; }
-        .step-number { width: 40px; height: 40px; background: var(--brand-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
-        .step-content h3 { color: white; margin: 0 0 0.25rem; }
-        .step-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); margin: 0; }
-
-        /* Sustainability */
-        .sustainability-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-        .sustain-item { display: flex; align-items: flex-start; gap: 1rem; }
-        .sustain-icon { font-size: 1.5rem; flex-shrink: 0; }
-        .sustain-item h3 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
-        .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
-
-        /* Accessories */
-        .accessories-header { text-align: center; margin-bottom: 3rem; }
-        .accessories-header h2 { font-size: 2.5rem; color: white; margin-bottom: 0.5rem; }
-        .accessories-header p { color: rgba(255, 255, 255, 0.7); }
-        .accessories-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .accessory-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 2rem; text-align: center; }
-        .accessory-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-        .accessory-card h3 { color: white; margin-bottom: 0.5rem; }
-        .accessory-card p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.6); margin: 0; }
-
-        /* CTA */
+        /* ========================================
+           CTA
+           ======================================== */
         .cta-section { background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue-dark) 100%); text-align: center; }
         .cta-content { max-width: 700px; margin: 0 auto; }
-        .cta-content h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .cta-content h2 { font-family: var(--font-heading); font-size: 2.25rem; color: white; margin-bottom: 1rem; }
         .cta-content > p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; }
-        .cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
+        .cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
         .cta-section .btn-primary { background: white; color: var(--brand-blue); }
         .cta-section .btn-primary:hover { background: var(--cream); }
         .cta-section .btn-secondary { border-color: white; color: white; }
         .cta-section .btn-secondary:hover { background: white; color: var(--brand-blue); }
-        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); }
+        .cta-note { font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); }
 
         /* ========================================
-           RESPONSIVE STYLES
+           RESPONSIVE
            ======================================== */
         @media (max-width: 1024px) {
-          .product-hero { grid-template-columns: 1fr; padding: 6rem 2rem 3rem; min-height: auto; }
+          .product-hero { grid-template-columns: 1fr; padding: 6rem 2rem 3rem; gap: 2.5rem; }
           .hero-content h1 { font-size: 3rem; }
+          .kpi-band { padding: 0 2rem; }
+          .kpi-inner { grid-template-columns: repeat(2, 1fr); }
+          .content-section { padding: 4rem 2rem; }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
-          .section-grid.reverse { direction: ltr; }
-          .variants-grid { grid-template-columns: repeat(2, 1fr); }
-          .accessories-grid { grid-template-columns: repeat(2, 1fr); }
-          .finish-categories { grid-template-columns: 1fr; }
-          .sustainability-features { grid-template-columns: 1fr; }
-          .acoustics-main-grid { grid-template-columns: 1fr; gap: 3rem; }
-          .exploded-diagram { max-width: 500px; margin: 0 auto; }
-          .acoustics-benefits { grid-template-columns: 1fr; max-width: 400px; }
-          .sound-waves { display: none; }
+          .perforations-grid { grid-template-columns: repeat(2, 1fr); }
+          .veneers-grid { grid-template-columns: repeat(2, 1fr); }
+          .veneer-notes, .bespoke-features { grid-template-columns: 1fr; gap: 1.25rem; }
+          .acoustics-grid, .ordering-grid, .dark-band, .core-colour { grid-template-columns: 1fr; }
+          .product-nav { padding: 0 2rem; }
         }
 
-        @media (max-width: 768px) {
-          .content-section { padding: 4rem 1.5rem; }
-          .product-nav { padding: 0 1rem; overflow-x: auto; }
-          .nav-inner { min-width: max-content; }
-          .nav-item { padding: 1rem; font-size: 0.85rem; }
-          .hero-usps { flex-direction: column; gap: 1rem; }
-          .hero-ctas { flex-direction: column; }
-          .section-content h2 { font-size: 2rem; }
-          .variants-grid { grid-template-columns: 1fr; }
-          .accessories-grid { grid-template-columns: 1fr; }
-          .cta-buttons { flex-direction: column; }
-          .felt-selector { flex-wrap: wrap; }
-          .finish-options { flex-wrap: wrap; justify-content: center; }
-          .exploded-layer { flex-direction: column; gap: 0.75rem; text-align: center; }
-          .layer-visual { width: 100%; max-width: 200px; }
-          .layer-connector { padding-left: 0; }
-          .metric-cards { grid-template-columns: 1fr; }
-          .rating-ring { width: 140px; height: 140px; }
+        @media (max-width: 640px) {
+          .product-hero { padding: 5rem 1rem 2.5rem; }
+          .hero-content h1 { font-size: 2.4rem; }
+          .kpi-band { padding: 0 1rem; }
+          .kpi-value { font-size: 1.75rem; }
+          .content-section { padding: 3.5rem 1rem; }
+          .product-nav { padding: 0 1rem; }
+          .nav-item { padding: 0.9rem 0.8rem; font-size: 0.85rem; }
+          .section-header h2, .section-content h2 { font-size: 1.8rem; }
+          .perforations-grid { grid-template-columns: 1fr; }
+          .veneers-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+          .installation-steps, .sustainability-features { grid-template-columns: 1fr; }
+          .dark-band { padding: 1.5rem 1.25rem; }
+          .buildup-card { padding: 1.25rem; }
+          .core-options { flex-wrap: wrap; gap: 0.75rem 1.25rem; }
+          .octave-track { height: 70px; }
+          .hero-ctas .btn-primary, .hero-ctas .btn-secondary, .cta-buttons .btn-primary, .cta-buttons .btn-secondary { width: 100%; }
         }
       `}</style>
     </div>

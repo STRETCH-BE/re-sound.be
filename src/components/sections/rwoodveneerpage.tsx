@@ -7,8 +7,12 @@ import { PRODUCTS } from '@/data/products';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Single source for every spec figure on this page (thickness, origin …):
-// src/data/products.ts. Nothing below may hard-code one of these values.
+// Single source for every governed figure on this page (thickness, format,
+// fire class, number of veneers, plant, certifications): src/data/products.ts.
+// Nothing below may hard-code one of these values. rWood Panel has no
+// datasheet of its own: the veneers, ranges and finishes come from the rWood
+// colour and finish guide (EN · 09/2026, v1.0, "For rWood Panel, Micro, Perf
+// and Groove").
 const PRODUCT = PRODUCTS['rwood-veneer'];
 const panelSpecs = PRODUCT.specs.kind === 'panel' ? PRODUCT.specs : null;
 // thickness is stored as '12 / 19 mm' → ['12 mm', '19 mm'] (slim first, standard last)
@@ -17,40 +21,52 @@ const thicknessOptions = panelSpecs?.thickness
   : [];
 const slimThickness = thicknessOptions[0] ?? '';
 const standardThickness = thicknessOptions[thicknessOptions.length - 1] ?? '';
+// '1220 × 2800 / 3050 mm' → '1 220 × 2 800 / 3 050 mm' (thin spaces, as the datasheets write numbers)
+const thinSpaced = (s: string) => s.replace(/\b(\d)(\d{3})\b/g, '$1 $2');
+const formatValue = panelSpecs?.format ? thinSpaced(panelSpecs.format) : null;
+const veneerCount = panelSpecs?.finishCount ?? null;
 
-// Veneer collection — keys are stable identifiers; display strings come from i18n
-// (see rwoodVeneerPage.collectionData.{categories,origins,grains} in messages/*.json)
+/**
+ * The twelve stock veneers of the rWood colour and finish guide, in the
+ * guide's order and groups (six oaks, six premium species). Names are the
+ * product's own veneer names (identical in every language); the one-line
+ * tone descriptions are message keys. Swatches are the guide photographs
+ * (public/images/products/rwood/guide). Where an existing product photo of a
+ * panel in that veneer exists it is the hero preview; otherwise the swatch is.
+ */
+const GUIDE = '/images/products/rwood/guide';
+const PHOTOS = '/images/products/rwood-veneer';
 const veneerCollections = [
   {
-    id: 'lightNaturals',
-    category: 'Light Naturals',  // English label, used as activeCollection state key
+    id: 'oak',
     veneers: [
-      { id: 'white-ash', name: 'Beech White Ash', swatch: '/images/products/rwood-veneer/Beech-White.jpg', image: '/images/products/rwood-veneer/Beech-White.jpg', isDark: false, originKey: 'europe', grainKey: 'straightToInterlocked' },
-      { id: 'birch-rotary', name: 'Birch Rotary', swatch: '/images/products/rwood-veneer/Birch-Rotary.jpg', image: '/images/products/rwood-veneer/Birch-Rotary.jpg', isDark: false, originKey: 'scandinavia', grainKey: 'subtleFineGrain' },
-      { id: 'silk-oak', name: 'Silk Oak', swatch: '/images/products/rwood-veneer/silk-oak.jpg', image: '/images/products/rwood-veneer/silk-oak.jpg', isDark: false, originKey: 'europe', grainKey: 'fineStraightGrain' },
+      { id: 'straw-oak', name: 'Straw Oak', descKey: 'collection.items.strawOak', swatch: `${GUIDE}/straw-oak.webp`, image: `${PHOTOS}/straw-oak.jpg`, isDark: false },
+      { id: 'silk-oak', name: 'Silk Oak', descKey: 'collection.items.silkOak', swatch: `${GUIDE}/silk-oak.webp`, image: `${PHOTOS}/silk-oak.jpg`, isDark: false },
+      { id: 'honey-oak', name: 'Honey Oak', descKey: 'collection.items.honeyOak', swatch: `${GUIDE}/honey-oak.webp`, image: `${GUIDE}/honey-oak.webp`, isDark: false },
+      { id: 'umber-oak', name: 'Umber Oak', descKey: 'collection.items.umberOak', swatch: `${GUIDE}/umber-oak.webp`, image: `${PHOTOS}/umber-oak.jpg`, isDark: true },
+      { id: 'smoked-oak', name: 'Smoked Oak', descKey: 'collection.items.smokedOak', swatch: `${GUIDE}/smoked-oak.webp`, image: `${PHOTOS}/smoked-oak.jpg`, isDark: true },
+      { id: 'cocoa-oak', name: 'Cocoa Oak', descKey: 'collection.items.cocoaOak', swatch: `${GUIDE}/cocoa-oak.webp`, image: `${GUIDE}/cocoa-oak.webp`, isDark: true },
     ],
   },
   {
-    id: 'warmNaturals',
-    category: 'Warm Naturals',
+    id: 'premium',
     veneers: [
-      { id: 'straw-oak', name: 'Straw Oak', swatch: '/images/products/rwood-veneer/straw-oak.jpg', image: '/images/products/rwood-veneer/straw-oak.jpg', isDark: false, originKey: 'europe', grainKey: 'cathedralGrain' },
-    ],
-  },
-  {
-    id: 'deepTones',
-    category: 'Deep Tones',
-    veneers: [
-      { id: 'umber-oak', name: 'Umber Oak', swatch: '/images/products/rwood-veneer/umber-oak.jpg', image: '/images/products/rwood-veneer/umber-oak.jpg', isDark: true, originKey: 'europe', grainKey: 'pronouncedGrain' },
-      { id: 'walnut', name: 'American Walnut', swatch: '/images/products/rwood-veneer/walnut.jpg', image: '/images/products/rwood-veneer/walnut.jpg', isDark: true, originKey: 'northAmerica', grainKey: 'straightToWavy' },
-      { id: 'smoked-oak', name: 'Smoked Oak', swatch: '/images/products/rwood-veneer/smoked-oak.jpg', image: '/images/products/rwood-veneer/smoked-oak.jpg', isDark: true, originKey: 'europe', grainKey: 'deepCathedralGrain' },
-      { id: 'tobacco-walnut', name: 'Tobacco Walnut', swatch: '/images/products/rwood-veneer/tobacco-walnut.jpg', image: '/images/products/rwood-veneer/tobacco-walnut.jpg', isDark: true, originKey: 'northAmerica', grainKey: 'richFlowingGrain' },
+      { id: 'walnut', name: 'Walnut', descKey: 'collection.items.walnut', swatch: `${GUIDE}/walnut.webp`, image: `${PHOTOS}/walnut.jpg`, isDark: true },
+      { id: 'tobacco-walnut', name: 'Tobacco Walnut', descKey: 'collection.items.tobaccoWalnut', swatch: `${GUIDE}/tobacco-walnut.webp`, image: `${PHOTOS}/tobacco-walnut.jpg`, isDark: true },
+      { id: 'white-ash', name: 'White Ash', descKey: 'collection.items.whiteAsh', swatch: `${GUIDE}/white-ash.webp`, image: `${GUIDE}/white-ash.webp`, isDark: false },
+      { id: 'white-beech', name: 'White Beech', descKey: 'collection.items.whiteBeech', swatch: `${GUIDE}/white-beech.webp`, image: `${GUIDE}/white-beech.webp`, isDark: false },
+      { id: 'birch-sliced', name: 'Birch (Sliced)', descKey: 'collection.items.birchSliced', swatch: `${GUIDE}/birch-sliced.webp`, image: `${PHOTOS}/Birch-Sliced.jpg`, isDark: false },
+      { id: 'birch-rotary', name: 'Birch (Rotary)', descKey: 'collection.items.birchRotary', swatch: `${GUIDE}/birch-rotary.webp`, image: `${PHOTOS}/Birch-Rotary.jpg`, isDark: false },
     ],
   },
 ];
 
 // All veneers flat for the selector
-const allVeneers = veneerCollections.flatMap(c => c.veneers);
+const allVeneers = veneerCollections.flatMap((c) => c.veneers);
+type Veneer = (typeof allVeneers)[number];
+
+// Guide p.2 "Surface treatments": natural lacquer · pigmented · HPL laminate · foil · paint
+const surfaceTreatments = ['naturalLacquer', 'pigmented', 'hpl', 'foil', 'paint'] as const;
 
 // Default hero image
 const defaultHeroImage = '/images/products/rwood-veneer/hero-rwood-veneer.webp';
@@ -77,29 +93,22 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
 
   // Panel format options (inside component so t() is available)
   const formatOptions = [
-    { id: 'standard', name: t('dimensions.standardName'), width: '1220 mm', length: '2800 mm', thickness: standardThickness, description: t('dimensions.standardDesc') },
-    { id: 'large', name: t('dimensions.largeName'), width: '1220 mm', length: '3050 mm', thickness: standardThickness, description: t('dimensions.largeDesc') },
-    { id: 'slim', name: t('dimensions.slimName'), width: '1220 mm', length: '2800 mm', thickness: slimThickness, description: t('dimensions.slimDesc') },
+    { id: 'standard', name: t('dimensions.standardName'), width: '1 220 mm', length: '2 800 mm', thickness: standardThickness, description: t('dimensions.standardDesc') },
+    { id: 'large', name: t('dimensions.largeName'), width: '1 220 mm', length: '3 050 mm', thickness: standardThickness, description: t('dimensions.largeDesc') },
+    { id: 'slim', name: t('dimensions.slimName'), width: '1 220 mm', length: '2 800 mm', thickness: slimThickness, description: t('dimensions.slimDesc') },
   ];
 
-  // Finish type options (inside component so t() is available)
-  const finishTypes = [
-    { id: 'matt-lacquer', name: t('finishes.mattLacquerName'), description: t('finishes.mattLacquerDesc'), icon: '✦' },
-    { id: 'natural-oil', name: t('finishes.naturalOilName'), description: t('finishes.naturalOilDesc'), icon: '◉' },
-    { id: 'raw', name: t('finishes.unfinishedName'), description: t('finishes.unfinishedDesc'), icon: '◇' },
-  ];
   const [activeSection, setActiveSection] = useState('overview');
-  const [selectedVeneer, setSelectedVeneer] = useState<typeof allVeneers[0] | null>(null);
+  const [selectedVeneer, setSelectedVeneer] = useState<Veneer | null>(null);
   const [activeCollection, setActiveCollection] = useState<string>('all');
   const [selectedFormat, setSelectedFormat] = useState(formatOptions[0]);
-  const [selectedFinish, setSelectedFinish] = useState(finishTypes[0]);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
   const currentHeroImage = selectedVeneer ? selectedVeneer.image : defaultHeroImage;
 
   const displayedVeneers = activeCollection === 'all'
     ? allVeneers
-    : veneerCollections.find(c => c.category === activeCollection)?.veneers || [];
+    : veneerCollections.find((c) => c.id === activeCollection)?.veneers ?? [];
 
   // Fire a single view_item event on mount so GA4 / Meta see
   // the product impression. Empty deps array → fires once per page.
@@ -107,18 +116,22 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
     analytics.viewItem('rwood-veneer', 'rwood');
   }, []);
 
-
-  const handleVeneerSelect = (veneer: typeof allVeneers[0]) => {
+  const handleVeneerSelect = (veneer: Veneer) => {
     if (!selectedVeneer || veneer.id !== selectedVeneer.id) {
       setIsImageLoading(true);
       setSelectedVeneer(veneer);
     }
   };
 
+  // Sticky nav — labels are shared productPage.nav.* keys (translated in all locales)
   const navItems = [
     { id: 'overview', label: tPage('nav.overview') },
-    { id: 'features', label: tPage('nav.features') },
-    { id: 'specs', label: tPage('nav.specs') },
+    { id: 'collection', label: tPage('nav.veneers') },
+    { id: 'finishes', label: tPage('nav.finishes') },
+    { id: 'formats', label: tPage('nav.formats') },
+    { id: 'applications', label: tPage('nav.applications') },
+    { id: 'specs', label: tPage('nav.technicalData') },
+    { id: 'ordering', label: tPage('nav.ordering') },
     { id: 'gallery', label: tPage('nav.gallery') },
     { id: 'downloads', label: tPage('nav.downloads') },
   ];
@@ -136,6 +149,16 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
     }
   };
 
+  // KPI band under the hero — the guide's four figures
+  const kpis = [
+    { value: veneerCount === null ? null : String(veneerCount), label: t('kpi.veneers') },
+    { value: '2', label: t('kpi.ranges') },
+    { value: PRODUCT.certifications.includes('FSC') ? 'FSC®' : null, label: t('kpi.fsc') },
+    { value: t('kpi.anyValue'), label: t('kpi.anyLabel') },
+  ].filter((k): k is { value: string; label: string } => k.value !== null);
+
+  const sizesValue = [formatValue, panelSpecs?.thickness].filter(Boolean).join(' · ');
+
   return (
     <div className="rwood-panel-page">
 
@@ -152,11 +175,13 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             {t('hero.description')}
           </p>
           <p className="hero-manufacturer">{tm('statement')}</p>
-          
+
           <div className="hero-usps">
-            <div className="usp">
-              <span className="usp-text">{t('hero.usp1')}</span>
-            </div>
+            {PRODUCT.certifications.includes('FSC') && (
+              <div className="usp">
+                <span className="usp-text">{t('hero.usp1')}</span>
+              </div>
+            )}
             <div className="usp">
               <span className="usp-text">{t('hero.usp2')}</span>
             </div>
@@ -173,7 +198,6 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
               {t('hero.ctaSecondary')}
             </a>
           </div>
-
         </div>
 
         <div className="hero-image">
@@ -181,7 +205,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             <div className={`image-wrapper ${isImageLoading ? 'loading' : ''}`}>
               <Image
                 src={currentHeroImage}
-                alt={`rWood - Panel${selectedVeneer ? ` in ${selectedVeneer.name}` : ' prefinished veneer panel'}`}
+                alt={selectedVeneer ? t('alt.heroIn', { veneer: selectedVeneer.name }) : t('alt.hero')}
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 style={{ objectFit: 'cover' }}
@@ -201,18 +225,19 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
               </div>
             )}
           </div>
-          
-          {/* Veneer quick-selector */}
+
+          {/* Veneer quick-selector — all twelve stock veneers */}
           <div className="veneer-quick-selector">
             <span className="selector-label">{t('hero.colorSelector')}</span>
             <div className="veneer-options">
-              {allVeneers.slice(0, 6).map((veneer) => (
+              {allVeneers.map((veneer) => (
                 <button
                   key={veneer.id}
                   className={`veneer-option ${selectedVeneer?.id === veneer.id ? 'active' : ''}`}
                   onClick={() => handleVeneerSelect(veneer)}
                   title={veneer.name}
                   aria-label={tPage('a11y.selectVeneer', { name: veneer.name })}
+                  aria-pressed={selectedVeneer?.id === veneer.id}
                 >
                   <Image src={veneer.swatch} alt="" width={72} height={72} sizes="72px" quality={60} className="veneer-swatch" style={{ objectFit: 'cover' }} />
                   {selectedVeneer?.id === veneer.id && (
@@ -220,14 +245,25 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
                   )}
                 </button>
               ))}
-              <a href="#collection" onClick={(e) => { e.preventDefault(); scrollToSection('collection'); }} className="veneer-option more" title="View all veneers">
-                <span className="more-label">+{allVeneers.length - 6}</span>
-              </a>
             </div>
-            <span className="selected-veneer-name">{selectedVeneer?.name || 'Select a veneer'}</span>
+            <span className="selected-veneer-name">{selectedVeneer?.name ?? t('hero.selectPrompt')}</span>
           </div>
         </div>
       </section>
+
+      {/* KPI band — the guide's four figures */}
+      {kpis.length > 0 && (
+        <section className="kpi-band" aria-label={t('kpi.ariaLabel')}>
+          <dl className="kpi-list">
+            {kpis.map((k) => (
+              <div key={k.label} className="kpi">
+                <dt className="kpi-label">{k.label}</dt>
+                <dd className="kpi-value">{k.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
 
       {/* ═══════════════════════════════════
           STICKY NAVIGATION
@@ -295,67 +331,49 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
       </section>
 
       {/* ═══════════════════════════════════
-          COMPOSITION DETAIL
+          BUILD-UP
           ═══════════════════════════════════ */}
-      <section className="content-section composition-section">
+      <section id="buildup" className="content-section composition-section">
         <div className="composition-header">
           <span className="section-tag">{t('anatomy.tag')}</span>
-          <h2>{t('construction.title')}</h2>
+          <h2>{t('anatomy.title')}</h2>
           <p>{t('anatomy.description')}</p>
         </div>
 
         <div className="composition-diagram">
-          <div className="comp-layer">
-            <div className="comp-layer-visual veneer-top">
-              <div className="grain-texture"></div>
-            </div>
-            <div className="comp-layer-info">
+          <div className="comp-visual" aria-hidden="true">
+            <div className="comp-layer-visual veneer-top"><div className="grain-texture"></div></div>
+            <div className="comp-layer-visual mdf-core"><span className="core-label">MDF</span></div>
+            <div className="comp-layer-visual veneer-back"><div className="grain-texture"></div></div>
+          </div>
+          <ol className="comp-list">
+            <li className="comp-layer-info">
               <span className="comp-layer-number">01</span>
               <div>
                 <h3>{t('anatomy.layer1')}</h3>
                 <p>{t('anatomy.layer1Desc')}</p>
               </div>
-            </div>
-          </div>
-
-          <div className="comp-connector">
-            <div className="connector-line"></div>
-          </div>
-
-          <div className="comp-layer">
-            <div className="comp-layer-visual mdf-core">
-              <span className="core-label">MDF</span>
-            </div>
-            <div className="comp-layer-info">
+            </li>
+            <li className="comp-layer-info">
               <span className="comp-layer-number">02</span>
               <div>
                 <h3>{t('anatomy.layer2')}</h3>
                 <p>{t('anatomy.layer2Desc')}</p>
               </div>
-            </div>
-          </div>
-
-          <div className="comp-connector">
-            <div className="connector-line"></div>
-          </div>
-
-          <div className="comp-layer">
-            <div className="comp-layer-visual veneer-back">
-              <div className="grain-texture"></div>
-            </div>
-            <div className="comp-layer-info">
+            </li>
+            <li className="comp-layer-info">
               <span className="comp-layer-number">03</span>
               <div>
                 <h3>{t('anatomy.layer3')}</h3>
                 <p>{t('anatomy.layer3Desc')}</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
       {/* ═══════════════════════════════════
-          VENEER COLLECTION
+          VENEER COLLECTION — colour and finish guide, twelve veneers
           ═══════════════════════════════════ */}
       <section id="collection" className="content-section collection-section dark">
         <div className="collection-header">
@@ -367,18 +385,20 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         </div>
 
         {/* Category filter */}
-        <div className="collection-filter">
+        <div className="collection-filter" role="group" aria-label={t('collection.filterLabel')}>
           <button
             className={`filter-btn ${activeCollection === 'all' ? 'active' : ''}`}
             onClick={() => setActiveCollection('all')}
+            aria-pressed={activeCollection === 'all'}
           >
             {t('collection.filterAll')}
           </button>
           {veneerCollections.map((col) => (
             <button
               key={col.id}
-              className={`filter-btn ${activeCollection === col.category ? 'active' : ''}`}
-              onClick={() => setActiveCollection(col.category)}
+              className={`filter-btn ${activeCollection === col.id ? 'active' : ''}`}
+              onClick={() => setActiveCollection(col.id)}
+              aria-pressed={activeCollection === col.id}
             >
               {t(`collection.categories.${col.id}`)}
             </button>
@@ -388,40 +408,42 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         {/* Veneer cards grid */}
         <div className="veneer-grid">
           {displayedVeneers.map((veneer) => (
-            <div
+            <button
               key={veneer.id}
+              type="button"
               className={`veneer-card ${selectedVeneer?.id === veneer.id ? 'active' : ''}`}
-              role="button"
-              tabIndex={0}
               onClick={() => handleVeneerSelect(veneer)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  if (e.key === ' ') e.preventDefault();
-                  handleVeneerSelect(veneer);
-                }
-              }}
+              aria-pressed={selectedVeneer?.id === veneer.id}
+              aria-label={tPage('a11y.selectVeneer', { name: veneer.name })}
             >
-              <div className="veneer-card-image">
-                <Image src={veneer.swatch} alt={`${veneer.name} veneer`} fill sizes="(max-width: 640px) 100vw, 320px" quality={60} className="veneer-card-swatch" style={{ objectFit: 'cover' }} />
-              </div>
-              <div className="veneer-card-info">
-                <h3>{veneer.name}</h3>
-                <span className="veneer-origin">{t(`collection.origins.${veneer.originKey}`)}</span>
-                <p className="veneer-grain">{t(`collection.grains.${veneer.grainKey}`)}</p>
-              </div>
+              <span className="veneer-card-image">
+                <Image
+                  src={veneer.swatch}
+                  alt={t('alt.veneerSwatch', { name: veneer.name })}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 300px"
+                  quality={70}
+                  className="veneer-card-swatch"
+                  style={{ objectFit: 'cover' }}
+                />
+              </span>
+              <span className="veneer-card-info">
+                <span className="veneer-card-name">{veneer.name}</span>
+                <span className="veneer-card-desc">{t(veneer.descKey)}</span>
+              </span>
               {selectedVeneer?.id === veneer.id && (
-                <div className="veneer-card-selected">
+                <span className="veneer-card-selected" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
-                </div>
+                </span>
               )}
-            </div>
+            </button>
           ))}
         </div>
 
         <div className="collection-note">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ec8f5" strokeWidth="2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7ec8f5" strokeWidth="2" aria-hidden="true">
             <circle cx="12" cy="12" r="10"/>
             <line x1="12" y1="16" x2="12" y2="12"/>
             <line x1="12" y1="8" x2="12.01" y2="8"/>
@@ -431,7 +453,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
       </section>
 
       {/* ═══════════════════════════════════
-          FINISHES
+          FINISHES — guide p.2 "Surface finishes and options"
           ═══════════════════════════════════ */}
       <section id="finishes" className="content-section finishes-section">
         <div className="section-grid">
@@ -442,39 +464,24 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
               {t('finishes.description')}
             </p>
 
-            <div className="finish-type-selector">
-              {finishTypes.map((finish) => (
-                <button
-                  key={finish.id}
-                  className={`finish-type-btn ${selectedFinish.id === finish.id ? 'active' : ''}`}
-                  onClick={() => setSelectedFinish(finish)}
-                >
-                  <span className="finish-type-icon">{finish.icon}</span>
-                  <div className="finish-type-info">
-                    <h3>{finish.name}</h3>
-                    <p>{finish.description}</p>
-                  </div>
-                </button>
-              ))}
-            </div>
-
-            <div className="finish-advantages">
-              <h3>{t('anatomy.keyAdvTitle')}</h3>
-              <div className="advantages-grid">
-                <div className="advantage">
-                  <span>{t('finishes.adv1')}</span>
-                </div>
-                <div className="advantage">
-                  <span>{t('finishes.adv2')}</span>
-                </div>
-                <div className="advantage">
-                  <span>{t('finishes.adv3')}</span>
-                </div>
-                <div className="advantage">
-                  <span>{t('finishes.adv4')}</span>
-                </div>
+            <div className="range-grid">
+              <div className="range-card">
+                <h3>{t('finishes.nature')}</h3>
+                <p>{t('finishes.natureDesc')}</p>
+              </div>
+              <div className="range-card">
+                <h3>{t('finishes.gemini')}</h3>
+                <p>{t('finishes.geminiDesc')}</p>
               </div>
             </div>
+
+            <h3 className="treatments-title">{t('finishes.treatmentsTitle')}</h3>
+            <ul className="treatment-list">
+              {surfaceTreatments.map((id) => (
+                <li key={id} className="treatment-chip">{t(`finishes.treatments.${id}`)}</li>
+              ))}
+            </ul>
+            <p className="finishes-note">{t('finishes.madeToOrder')}</p>
           </div>
           <div className="section-image">
             <div className="image-container">
@@ -526,7 +533,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
                 <p>{format.description}</p>
                 <div className="format-specs">
                   <span>{format.width} × {format.length}</span>
-                  <span>{t('dimensions.thicknessLabel')} {format.thickness}</span>
+                  {format.thickness && <span>{t('dimensions.thicknessLabel')} {format.thickness}</span>}
                 </div>
               </div>
             </div>
@@ -534,7 +541,9 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         </div>
       </section>
 
-      {/* Tag Section */}
+      {/* ═══════════════════════════════════
+          APPLICATIONS
+          ═══════════════════════════════════ */}
       <section id="applications" className="content-section applications-section dark">
         <div className="applications-header">
           <span className="section-tag">{t('applications.tag')}</span>
@@ -547,7 +556,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         <div className="applications-grid">
           <div className="application-card">
             <div className="application-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <rect x="2" y="6" width="20" height="14" rx="2"/>
                 <path d="M2 10h20"/>
                 <path d="M6 6V4"/>
@@ -559,7 +568,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           </div>
           <div className="application-card">
             <div className="application-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="2"/>
                 <path d="M3 9h18"/>
                 <path d="M9 3v18"/>
@@ -570,7 +579,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           </div>
           <div className="application-card">
             <div className="application-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <path d="M3 21h18"/>
                 <path d="M5 21V7l7-4 7 4v14"/>
                 <path d="M9 21v-6h6v6"/>
@@ -581,7 +590,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           </div>
           <div className="application-card">
             <div className="application-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                 <path d="M2 17l10 5 10-5"/>
                 <path d="M2 12l10 5 10-5"/>
@@ -603,7 +612,9 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         </div>
       </section>
 
-      {/* Tag Section */}
+      {/* ═══════════════════════════════════
+          SUSTAINABILITY
+          ═══════════════════════════════════ */}
       <section className="content-section sustainability-section">
         <div className="section-grid">
           <div className="section-image">
@@ -624,12 +635,14 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
               {t('sustainability.description')}
             </p>
             <div className="sustainability-features">
-              <div className="sustain-item">
-                <div>
-                  <h3>{t('sustainability.badge1')}</h3>
-                  <p>{t('sustainability.badge1Desc')}</p>
+              {PRODUCT.certifications.includes('FSC') && (
+                <div className="sustain-item">
+                  <div>
+                    <h3>{t('sustainability.badge1')}</h3>
+                    <p>{t('sustainability.badge1Desc')}</p>
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="sustain-item">
                 <div>
                   <h3>{t('sustainability.badge2')}</h3>
@@ -654,25 +667,90 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
                   </div>
                 </div>
               )}
-              <div className="sustain-item">
-                <div>
-                  <h3>{t('sustainability.badge5')}</h3>
-                  <p>{t('sustainability.badge5Desc')}</p>
-                </div>
-              </div>
-              <div className="sustain-item">
-                <div>
-                  <h3>{t('sustainability.badge6')}</h3>
-                  <p>{t('sustainability.badge6Desc')}</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Specifications — server-rendered (see route page) */}
+      {/* Technical data — server-rendered (see route page) */}
       {specs}
+
+      {/* ═══════════════════════════════════
+          ORDERING
+          ═══════════════════════════════════ */}
+      <section id="ordering" className="content-section ordering-section">
+        <div className="ordering-inner">
+          <div className="ordering-header">
+            <span className="section-tag">{tPage('ordering.tag')}</span>
+            <h2>{t('ordering.title')}</h2>
+          </div>
+
+          <div className="ordering-tables">
+            <div className="table-wrap">
+              <table className="data-table">
+                <caption>{t('ordering.orderCaption')}</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.leadTime')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.minimumOrder')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  {sizesValue && (
+                    <tr>
+                      <th scope="row">{tPage('ordering.sizes')}</th>
+                      <td>{sizesValue}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+            <div className="table-wrap">
+              <table className="data-table">
+                <caption>{t('ordering.supplyCaption')}</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">{tPage('ordering.samples')}</th>
+                    <td>{t('ordering.samplesVal')}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">{tPage('ordering.prices')}</th>
+                    <td>{tPage('ordering.onRequest')}</td>
+                  </tr>
+                  {PRODUCT.madeIn && (
+                    <tr>
+                      <th scope="row">{tPage('ordering.madeIn')}</th>
+                      <td>{tm(`plant.${PRODUCT.madeIn}`)}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="ordering-band">
+            <div className="ordering-band-col">
+              <h3>{tPage('ordering.endOfLife')}</h3>
+              <p>{tPage('ordering.takeBack')}</p>
+            </div>
+            <div className="ordering-band-col">
+              <h3>{tPage('ordering.samplesQuotes')}</h3>
+              <p>{t('ordering.samplesQuotesDesc')}</p>
+              <div className="ordering-ctas">
+                <Link href="/samples" className="btn-primary" onClick={() => analytics.quoteClick('rwood-veneer', 'ordering_samples')}>
+                  {tPage('ordering.requestSamples')}
+                </Link>
+                <Link href="/contact" className="btn-secondary on-dark" onClick={() => analytics.quoteClick('rwood-veneer', 'ordering_quote')}>
+                  {tPage('ordering.requestQuote')}
+                </Link>
+              </div>
+            </div>
+          </div>
+          <p className="data-note">{tPage('ordering.dataNote')}</p>
+        </div>
+      </section>
 
       {/* Gallery — server-rendered (see route page) */}
       {gallery}
@@ -693,7 +771,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         <div className="matching-grid">
           <div className="matching-card">
             <div className="matching-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <rect x="3" y="3" width="7" height="18" rx="1"/>
                 <rect x="14" y="3" width="7" height="18" rx="1"/>
                 <path d="M10 8h4" opacity="0.5"/>
@@ -707,7 +785,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           </div>
           <div className="matching-card">
             <div className="matching-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <path d="M4 4h16v16H4z"/>
                 <path d="M4 8h16"/>
                 <path d="M8 4v16"/>
@@ -718,7 +796,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           </div>
           <div className="matching-card">
             <div className="matching-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
               </svg>
             </div>
@@ -755,7 +833,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
             </a>
           </div>
           <p className="cta-note">
-            {tPage('cta.freeShippingNote')} • {t('cta.circularNote')}
+            {t('cta.circularNote')}
           </p>
         </div>
       </section>
@@ -765,11 +843,12 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           ═══════════════════════════════════════════════════════ */}
       <style jsx>{`
         .rwood-panel-page {
-          --brand-blue: #197FC7;
+          /* Brand tokens come from :root (globals.css): --brand-blue #197FC7,
+             --deep-blue #0d3a5c, --cream, --font-heading. Page-local extras: */
           --brand-blue-dark: #155d94;
           --brand-blue-pale: #e8f4fc;
-          --deep-blue: #0a1628;
-          --cream: #f8f6f3;
+          --line: #e6ecf1;
+          --table-head: #f2f6fa;
           --charcoal: #333;
           --wood-warm: #8B6914;
           --wood-light: #D4A954;
@@ -800,7 +879,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         }
 
         .hero-content h1 {
-          font-size: 4.5rem;
+          font-size: 4rem;
           color: var(--deep-blue);
           margin-bottom: 0.5rem;
           letter-spacing: -2px;
@@ -817,15 +896,16 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           font-size: 1.1rem;
           color: #555;
           line-height: 1.8;
-          margin-bottom: 2rem;
+          margin-bottom: 1.25rem;
           max-width: 520px;
         }
 
-        .hero-usps { display: flex; gap: 2rem; margin-bottom: 2rem; }
+        /* .hero-manufacturer is styled in src/styles/product-shared.css */
+
+        .hero-usps { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-bottom: 2rem; }
         .usp { display: flex; align-items: center; gap: 0.5rem; }
-        .usp-icon { font-size: 1.5rem; }
         .usp-text { font-weight: 600; color: var(--deep-blue); font-size: 0.9rem; }
-        .hero-ctas { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+        .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
 
         .btn-primary {
           display: inline-flex; align-items: center;
@@ -845,9 +925,8 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         }
         .btn-secondary:hover { background: var(--deep-blue); color: white; }
         .btn-secondary.large { padding: 1.25rem 2.5rem; font-size: 1.1rem; }
-
-        .hero-price { font-size: 0.95rem; color: #666; }
-        .hero-price strong { color: var(--deep-blue); font-size: 1.2rem; }
+        .btn-secondary.on-dark { color: white; border-color: rgba(255, 255, 255, 0.7); }
+        .btn-secondary.on-dark:hover { background: white; color: var(--deep-blue); }
 
         .hero-image {
           display: flex; flex-direction: column;
@@ -884,7 +963,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         /* ─── VENEER QUICK SELECTOR ─── */
         .veneer-quick-selector {
           display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
-          padding: 1.25rem 2rem; background: white;
+          padding: 1.25rem 2rem; background: white; width: 100%; max-width: 600px;
           border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
 
@@ -893,7 +972,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           text-transform: uppercase; letter-spacing: 0.5px;
         }
 
-        .veneer-options { display: flex; gap: 0.6rem; }
+        .veneer-options { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; }
 
         .veneer-option {
           position: relative; width: 40px; height: 40px; border-radius: 8px;
@@ -909,7 +988,6 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         .veneer-swatch {
           display: block; width: 100%; height: 100%;
           border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.1);
-          background-size: cover; background-position: center;
         }
 
         .veneer-check {
@@ -920,17 +998,26 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         .veneer-check.on-dark { color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
         .veneer-check.on-light { color: var(--deep-blue); text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); }
 
-        .veneer-option.more {
-          display: flex; align-items: center; justify-content: center;
-          background: var(--brand-blue-pale); border-radius: 8px;
-        }
-        .more-label {
-          font-size: 0.75rem; font-weight: 700; color: var(--brand-blue);
+        .selected-veneer-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
+        .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
+
+        /* ─── KPI BAND ─── */
+        .kpi-band { padding: 0 4rem; margin-top: -1rem; margin-bottom: 1.5rem; }
+
+        .kpi-list {
+          display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+          max-width: 1200px; margin: 0 auto; padding: 2rem 2.5rem;
+          background: var(--deep-blue); color: white; border-radius: 20px;
         }
 
-        .selected-veneer-name { font-size: 0.9rem; font-weight: 600; color: var(--deep-blue); }
-        .image-container.gallery { aspect-ratio: 1; }
-        .section-image .image-container { width: 100%; max-width: none; aspect-ratio: 4/3; }
+        .kpi { display: flex; flex-direction: column-reverse; gap: 0.35rem; margin: 0; }
+
+        .kpi-value {
+          font-family: var(--font-heading); font-size: 2.5rem; font-weight: 600;
+          line-height: 1; color: #7ec8f5; margin: 0;
+        }
+
+        .kpi-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); line-height: 1.4; }
 
         /* ─── STICKY NAV ─── */
         .product-nav {
@@ -939,10 +1026,12 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         }
         .nav-inner {
           display: flex; gap: 0; max-width: 1200px; margin: 0 auto;
+          overflow-x: auto; scrollbar-width: none;
         }
+        .nav-inner::-webkit-scrollbar { display: none; }
         .nav-item {
-          padding: 1.25rem; background: none; border: none;
-          font-size: 0.9rem; font-weight: 500; color: #666;
+          padding: 1.25rem 1.1rem; background: none; border: none;
+          font-size: 0.9rem; font-weight: 500; color: #666; white-space: nowrap;
           cursor: pointer; border-bottom: 3px solid transparent;
           transition: all 0.3s ease;
         }
@@ -959,8 +1048,6 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
           max-width: 1200px; margin: 0 auto; align-items: center;
         }
-        .section-grid.reverse { direction: rtl; }
-        .section-grid.reverse > * { direction: ltr; }
 
         .section-tag {
           display: inline-block; background: var(--brand-blue-pale);
@@ -987,42 +1074,69 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         }
         .check { color: var(--brand-blue); font-weight: bold; }
 
-        /* ─── COMPOSITION SECTION ─── */
-        .composition-header {
-          text-align: center; max-width: 700px; margin: 0 auto 4rem;
+        /* Shared two-column data table (datasheet style: light header row) */
+        .table-wrap { width: 100%; overflow-x: auto; }
+
+        .data-table {
+          width: 100%; min-width: 280px; border-collapse: collapse;
+          background: white; border: 1px solid var(--line);
+          border-radius: 12px; overflow: hidden;
         }
-        .composition-header h2 {
-          font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1rem;
+
+        .data-table caption {
+          caption-side: top; text-align: left; padding: 0.75rem 1.25rem;
+          background: var(--table-head); color: var(--deep-blue);
+          font-size: 0.85rem; font-weight: 600;
+          border: 1px solid var(--line); border-bottom: none;
+          border-radius: 12px 12px 0 0;
+        }
+
+        .data-table th,
+        .data-table td {
+          padding: 0.7rem 1.25rem; border-top: 1px solid var(--line);
+          font-size: 0.9rem; text-align: left; vertical-align: top;
+        }
+
+        .data-table th { font-weight: 500; color: #666; width: 42%; }
+        .data-table td { color: var(--deep-blue); font-weight: 600; }
+
+        .data-note {
+          max-width: 1200px; margin: 1.5rem auto 0;
+          font-size: 0.85rem; color: #767676; line-height: 1.6;
+        }
+
+        /* ─── BUILD-UP ─── */
+        .composition-section { background: var(--cream); }
+
+        .composition-header,
+        .ordering-header {
+          text-align: center; max-width: 720px; margin: 0 auto 3rem;
+        }
+        .composition-header h2,
+        .ordering-header h2 {
+          font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1rem; letter-spacing: -1px;
         }
         .composition-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
 
         .composition-diagram {
-          max-width: 700px; margin: 0 auto;
+          display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;
+          max-width: 1000px; margin: 0 auto; padding: 2.5rem;
+          background: white; border-radius: 20px; box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
         }
 
-        .comp-layer {
-          display: flex; align-items: center; gap: 2rem;
-          padding: 1.5rem 2rem; background: white;
-          border-radius: 16px; box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
-        }
+        .comp-visual { display: flex; flex-direction: column; gap: 8px; max-width: 320px; margin: 0 auto; width: 100%; }
 
-        .comp-layer-visual {
-          width: 200px; flex-shrink: 0; border-radius: 8px;
-          overflow: hidden; position: relative;
-        }
+        .comp-layer-visual { border-radius: 8px; overflow: hidden; position: relative; }
 
         .comp-layer-visual.veneer-top,
         .comp-layer-visual.veneer-back {
-          height: 32px;
+          height: 28px;
           background: linear-gradient(90deg, #c4a77d 0%, #d4a954 30%, #c4a77d 60%, #b89860 100%);
         }
 
         .grain-texture {
           position: absolute; inset: 0;
-          background: repeating-linear-gradient(
-            90deg, transparent 0px, transparent 8px,
-            rgba(139, 105, 20, 0.12) 8px, rgba(139, 105, 20, 0.12) 10px
-          );
+          background: repeating-linear-gradient(90deg, transparent 0 8px, rgba(139, 105, 20, 0.12) 8px 10px);
         }
 
         .comp-layer-visual.mdf-core {
@@ -1035,50 +1149,28 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           letter-spacing: 2px; text-transform: uppercase;
         }
 
-        .comp-connector {
-          display: flex; justify-content: center; padding: 0.5rem 0; padding-left: 100px;
-        }
+        .comp-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; }
 
-        .connector-line {
-          width: 2px; height: 20px;
-          background: repeating-linear-gradient(
-            to bottom, var(--brand-blue) 0px, var(--brand-blue) 4px,
-            transparent 4px, transparent 8px
-          );
-        }
-
-        .comp-layer-info {
-          display: flex; gap: 1rem; align-items: flex-start;
-        }
+        .comp-layer-info { display: flex; gap: 1rem; align-items: flex-start; }
 
         .comp-layer-number {
-          font-size: 0.8rem; font-weight: 700; color: var(--brand-blue);
-          background: var(--brand-blue-pale); width: 32px; height: 32px;
-          border-radius: 50%; display: flex; align-items: center;
-          justify-content: center; flex-shrink: 0;
+          font-family: var(--font-heading); font-weight: 600; color: var(--brand-blue);
+          font-size: 0.95rem; min-width: 1.8rem; padding-top: 0.1rem;
         }
 
-        .comp-layer-info h3 {
-          font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem;
-        }
-        .comp-layer-info p {
-          font-size: 0.85rem; color: #666; margin: 0; line-height: 1.5;
-        }
+        .comp-layer-info h3 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
+        .comp-layer-info p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.5; }
 
         /* ─── COLLECTION SECTION ─── */
         .collection-header {
-          text-align: center; max-width: 700px; margin: 0 auto 3rem;
+          text-align: center; max-width: 720px; margin: 0 auto 2.5rem;
         }
-        .collection-header h2 {
-          font-size: 2.5rem; color: white; margin-bottom: 1rem;
-        }
-        .collection-header p {
-          font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8;
-        }
+        .collection-header h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .collection-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
 
         .collection-filter {
           display: flex; gap: 0.75rem; justify-content: center;
-          margin-bottom: 3rem; flex-wrap: wrap;
+          margin-bottom: 2.5rem; flex-wrap: wrap;
         }
 
         .filter-btn {
@@ -1087,47 +1179,38 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; font-weight: 500;
           cursor: pointer; transition: all 0.3s ease;
         }
-        .filter-btn:hover {
-          background: rgba(255, 255, 255, 0.15); color: white;
-        }
-        .filter-btn.active {
-          background: var(--brand-blue); border-color: var(--brand-blue); color: white;
-        }
+        .filter-btn:hover { background: rgba(255, 255, 255, 0.15); color: white; }
+        .filter-btn.active { background: var(--brand-blue); border-color: var(--brand-blue); color: white; }
 
         .veneer-grid {
-          display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-          gap: 1.5rem; max-width: 1200px; margin: 0 auto;
+          display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 1.25rem; max-width: 1200px; margin: 0 auto;
         }
 
         .veneer-card {
+          display: flex; flex-direction: column; align-items: stretch;
           background: rgba(255, 255, 255, 0.06);
           border: 2px solid rgba(255, 255, 255, 0.1);
           border-radius: 16px; overflow: hidden; cursor: pointer;
-          transition: all 0.3s ease; position: relative;
+          transition: all 0.3s ease; position: relative; padding: 0;
+          text-align: left; font: inherit; color: inherit;
         }
         .veneer-card:hover {
           background: rgba(255, 255, 255, 0.1);
           border-color: rgba(255, 255, 255, 0.2);
           transform: translateY(-4px);
         }
-        .veneer-card.active {
-          border-color: var(--brand-blue);
-          background: rgba(25, 127, 199, 0.15);
-        }
+        .veneer-card.active { border-color: var(--brand-blue); background: rgba(25, 127, 199, 0.15); }
+        .veneer-card:focus-visible { outline: 2px solid #7ec8f5; outline-offset: 3px; }
 
-        .veneer-card-image { height: 160px; overflow: hidden; }
+        .veneer-card-image { position: relative; display: block; width: 100%; aspect-ratio: 872 / 640; overflow: hidden; }
 
-        .veneer-card-swatch {
-          width: 100%; height: 100%;
-          background-size: cover; background-position: center;
-          transition: transform 0.3s ease;
-        }
-        .veneer-card:hover .veneer-card-swatch { transform: scale(1.05); }
+        .veneer-card :global(.veneer-card-swatch) { transition: transform 0.3s ease; }
+        .veneer-card:hover :global(.veneer-card-swatch) { transform: scale(1.05); }
 
-        .veneer-card-info { padding: 1.25rem; }
-        .veneer-card-info h3 { color: white; font-size: 1rem; margin: 0 0 0.25rem; }
-        .veneer-origin { font-size: 0.8rem; color: #7ec8f5; }
-        .veneer-grain { font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin: 0.5rem 0 0; }
+        .veneer-card-info { display: flex; flex-direction: column; gap: 0.2rem; padding: 1rem 1.1rem; }
+        .veneer-card-name { font-family: var(--font-heading); color: white; font-size: 1rem; font-weight: 600; }
+        .veneer-card-desc { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); }
 
         .veneer-card-selected {
           position: absolute; top: 0.75rem; right: 0.75rem;
@@ -1137,62 +1220,36 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         }
 
         .collection-note {
-          display: flex; align-items: center; gap: 0.75rem;
-          max-width: 600px; margin: 3rem auto 0;
+          display: flex; align-items: flex-start; gap: 0.75rem;
+          max-width: 720px; margin: 2.5rem auto 0;
           padding: 1rem 1.5rem; background: rgba(25, 127, 199, 0.15);
-          border-radius: 12px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);
+          border-radius: 12px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6;
         }
+        .collection-note svg { flex: none; margin-top: 0.15rem; }
 
         /* ─── FINISHES ─── */
-        .finish-type-selector {
-          display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;
+        .range-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+
+        .range-card { padding: 1.25rem 1.5rem; background: var(--cream); border-radius: 12px; }
+        .range-card h3 { font-size: 1.05rem; color: var(--deep-blue); margin: 0 0 0.35rem; }
+        .range-card p { font-size: 0.9rem; color: #666; margin: 0; line-height: 1.5; }
+
+        .treatments-title { font-size: 1.05rem; color: var(--deep-blue); margin: 0 0 0.75rem; }
+
+        .treatment-list { list-style: none; padding: 0; margin: 0 0 1.25rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+        .treatment-chip {
+          padding: 0.5rem 1rem; border: 1px solid var(--line); border-radius: 50px;
+          font-size: 0.9rem; font-weight: 500; color: var(--deep-blue); background: white;
         }
 
-        .finish-type-btn {
-          display: flex; align-items: flex-start; gap: 1rem;
-          padding: 1.25rem; background: var(--cream);
-          border: 2px solid transparent; border-radius: 12px;
-          cursor: pointer; transition: all 0.2s ease; text-align: left;
-        }
-        .finish-type-btn:hover { border-color: #ddd; }
-        .finish-type-btn.active {
-          border-color: var(--brand-blue); background: var(--brand-blue-pale);
-        }
-
-        .finish-type-icon {
-          font-size: 1.5rem; width: 40px; height: 40px;
-          display: flex; align-items: center; justify-content: center;
-          background: white; border-radius: 10px; flex-shrink: 0;
-        }
-
-        .finish-type-info h3 {
-          font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem;
-        }
-        .finish-type-info p {
-          font-size: 0.85rem; color: #666; margin: 0; line-height: 1.5;
-        }
-
-        .finish-advantages h3 {
-          color: var(--deep-blue); margin-bottom: 1rem;
-        }
-
-        .advantages-grid {
-          display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;
-        }
-
-        .advantage {
-          display: flex; align-items: center; gap: 0.5rem;
-          font-size: 0.9rem; color: var(--charcoal);
-        }
-        .adv-icon { font-size: 1.2rem; }
+        .section-content .finishes-note { font-size: 0.9rem; color: #767676; margin: 0; }
 
         /* ─── FORMATS ─── */
         .formats-header {
-          text-align: center; max-width: 700px; margin: 0 auto 4rem;
+          text-align: center; max-width: 720px; margin: 0 auto 4rem;
         }
-        .formats-header h2 {
-          font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1rem;
-        }
+        .formats-header h2 { font-size: 2.5rem; color: var(--deep-blue); margin-bottom: 1rem; }
         .formats-header p { font-size: 1.1rem; color: #555; line-height: 1.8; }
 
         .formats-grid {
@@ -1206,9 +1263,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           transition: all 0.3s ease; text-align: center;
         }
         .format-card:hover { border-color: #ddd; transform: translateY(-2px); }
-        .format-card.active {
-          border-color: var(--brand-blue); background: var(--brand-blue-pale);
-        }
+        .format-card.active { border-color: var(--brand-blue); background: var(--brand-blue-pale); }
 
         .format-visual {
           height: 160px; display: flex; align-items: center;
@@ -1237,9 +1292,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           font-size: 0.65rem; color: #767676; white-space: nowrap;
         }
 
-        .format-info h3 {
-          font-size: 1.1rem; color: var(--deep-blue); margin-bottom: 0.25rem;
-        }
+        .format-info h3 { font-size: 1.1rem; color: var(--deep-blue); margin-bottom: 0.25rem; }
         .format-info p { font-size: 0.85rem; color: #666; margin: 0 0 1rem; }
 
         .format-specs {
@@ -1247,16 +1300,12 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           font-size: 0.8rem; color: #767676;
         }
 
-        /* ─── {t('applications.tag')} ─── */
+        /* ─── APPLICATIONS ─── */
         .applications-header {
-          text-align: center; max-width: 700px; margin: 0 auto 4rem;
+          text-align: center; max-width: 720px; margin: 0 auto 4rem;
         }
-        .applications-header h2 {
-          font-size: 2.5rem; color: white; margin-bottom: 1rem;
-        }
-        .applications-header p {
-          font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8;
-        }
+        .applications-header h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .applications-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
 
         .applications-grid {
           display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
@@ -1269,10 +1318,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           border-radius: 16px; padding: 2rem;
           transition: all 0.3s ease;
         }
-        .application-card:hover {
-          background: rgba(255, 255, 255, 0.1);
-          transform: translateY(-4px);
-        }
+        .application-card:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-4px); }
 
         .application-icon {
           width: 56px; height: 56px;
@@ -1284,9 +1330,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
         .application-card h3 { color: white; margin-bottom: 0.5rem; font-size: 1.05rem; }
         .application-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin: 0; line-height: 1.5; }
 
-        .sector-badges {
-          display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;
-        }
+        .sector-badges { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
 
         .sector-badge {
           padding: 0.5rem 1.25rem; background: rgba(255, 255, 255, 0.08);
@@ -1294,14 +1338,26 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; font-weight: 500;
         }
 
-        /* ─── {t('sustainability.tag')} ─── */
-        .sustainability-features {
-          display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
-        }
+        /* ─── SUSTAINABILITY ─── */
+        .sustainability-features { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
         .sustain-item { display: flex; align-items: flex-start; gap: 1rem; }
-        .sustain-icon { font-size: 1.5rem; flex-shrink: 0; }
         .sustain-item h3 { font-size: 1rem; color: var(--deep-blue); margin: 0 0 0.25rem; }
         .sustain-item p { font-size: 0.9rem; color: #666; margin: 0; }
+
+        /* ─── ORDERING ─── */
+        .ordering-section { background: white; }
+        .ordering-inner { max-width: 1200px; margin: 0 auto; }
+
+        .ordering-tables { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+
+        .ordering-band {
+          display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+          padding: 2.5rem; background: var(--deep-blue); color: white; border-radius: 20px;
+        }
+
+        .ordering-band h3 { font-size: 1.25rem; color: white; margin: 0 0 0.75rem; }
+        .ordering-band p { font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin: 0 0 1.25rem; }
+        .ordering-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
         /* ─── MATCHING PRODUCTS ─── */
         .matching-header { text-align: center; margin-bottom: 3rem; }
@@ -1319,9 +1375,7 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
           border-radius: 16px; padding: 2rem;
           transition: all 0.3s ease;
         }
-        .matching-card:hover {
-          background: rgba(255, 255, 255, 0.1);
-        }
+        .matching-card:hover { background: rgba(255, 255, 255, 0.1); }
 
         .matching-icon {
           width: 56px; height: 56px;
@@ -1362,37 +1416,50 @@ export default function RWoodPanelProductPage({ breadcrumbs, specs, downloads, g
            RESPONSIVE
            ═══════════════════════════════════ */
         @media (max-width: 1024px) {
-          .product-hero {
-            grid-template-columns: 1fr; padding: 6rem 2rem 3rem; min-height: auto;
-          }
+          .product-hero { grid-template-columns: 1fr; padding: 6rem 2rem 3rem; min-height: auto; }
           .hero-content h1 { font-size: 3rem; }
+          .kpi-band { padding: 0 2rem; }
+          .kpi-list { grid-template-columns: repeat(2, 1fr); }
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
-          .section-grid.reverse { direction: ltr; }
+          .composition-diagram { grid-template-columns: 1fr; }
           .applications-grid { grid-template-columns: repeat(2, 1fr); }
           .formats-grid { grid-template-columns: repeat(2, 1fr); }
           .matching-grid { grid-template-columns: 1fr; max-width: 500px; }
           .sustainability-features { grid-template-columns: 1fr; }
-
-          .comp-layer { flex-direction: column; text-align: center; }
-          .comp-layer-visual { width: 100%; max-width: 280px; }
-          .comp-layer-info { justify-content: center; }
-          .comp-connector { padding-left: 0; }
+          .ordering-tables { grid-template-columns: 1fr; }
+          .ordering-band { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
           .content-section { padding: 4rem 1.5rem; }
-          .product-nav { padding: 0 1rem; overflow-x: auto; }
-          .nav-inner { min-width: max-content; }
-          .nav-item { padding: 1rem; font-size: 0.85rem; }
-          .hero-usps { flex-direction: column; gap: 1rem; }
+          .product-nav { padding: 0 1rem; }
+          .nav-item { padding: 1rem 0.9rem; font-size: 0.85rem; }
           .hero-ctas { flex-direction: column; }
-          .section-content h2 { font-size: 2rem; }
+          .section-content h2,
+          .composition-header h2,
+          .collection-header h2,
+          .formats-header h2,
+          .applications-header h2,
+          .ordering-header h2,
+          .matching-header h2 { font-size: 2rem; }
           .applications-grid { grid-template-columns: 1fr; }
           .formats-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }
-          .veneer-options { flex-wrap: wrap; justify-content: center; }
           .veneer-grid { grid-template-columns: repeat(2, 1fr); }
-          .advantages-grid { grid-template-columns: 1fr; }
+          .range-grid { grid-template-columns: 1fr; }
+          .composition-diagram { padding: 1.5rem; }
+          .ordering-band { padding: 1.75rem; }
+        }
+
+        @media (max-width: 480px) {
+          .content-section { padding: 3rem 1rem; }
+          .product-hero { padding: 5rem 1rem 2rem; }
+          .hero-content h1 { font-size: 2.4rem; letter-spacing: -1px; }
+          .kpi-band { padding: 0 1rem; }
+          .kpi-list { grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1.5rem 1.25rem; }
+          .kpi-value { font-size: 2rem; }
+          .veneer-grid { grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+          .veneer-quick-selector { padding: 1rem; }
         }
       `}</style>
     </div>
