@@ -58,7 +58,7 @@ const specs: SpecTableDef = [
       { label: key('rwoodMicroPage.specs.fireStandard'), value: 'EN 13501-1' },
       {
         label: key('productPage.specLabels.woodSourcing'),
-        value: cert('rwood-micro', 'FSC', 'productPage.specLabels.fscCert'),
+        value: cert('rwood-micro', 'FSC', 'productPage.specs.fscCertifiedNumber'), // C191539 covers every rWood product (Michael, 20 September 2026)
       },
       { label: key('productPage.specLabels.formaldehyde'), value: 'E1' },
       { label: key('productPage.specLabels.environment'), value: key('rwoodMicroPage.specs.appEnvVal') },

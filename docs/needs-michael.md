@@ -141,21 +141,29 @@ hub, price guide, blog posts, manufacturing page).
    say only what the datasheets and the colour guide say; everything below
    was on the site without a source and is gone until you confirm it, or is
    a reading the sheets leave open.
-   (a) **rWood Groove:** the Mixed pattern is printed "6 × 50 / 30 / 22 mm"
-   without the order of the widths; the page draws 50-30-22-50-30-22 — send
-   the drawing if it differs. No clip system is mentioned for Groove
-   (battens or glue only); the old FAQ promised one. The recycled share of
-   the plank and the octave-band values ("follow with the new test series")
-   are still open. The take-back sentence is now printed on every rWood
-   page because it is on the datasheets — confirm it covers the Polish lines.
+   (a) **rWood Groove — settled 20 September:** you said to promote the
+   standard pattern and offer the others on request. The page now draws
+   only the Original pattern (6 × 34 mm) as the standard and lists Mixed,
+   4-Lamella and 3-Lamella by name and dimensions under "other patterns on
+   request", with a quote button; the KPI reads "6 × 34 mm lamellas,
+   Original pattern as standard". The Mixed sequence question is moot. rWood
+   Perf and Micro keep the datasheet's four patterns / densities (PD8 is the
+   pattern behind the Perf headline figures) with the sentence "other
+   patterns are made on request" — tell me if one of those should be
+   promoted as the standard too. Still open: no clip system is mentioned
+   for Groove (battens or glue only); the recycled share of the plank and
+   the octave-band values ("follow with the new test series"); the
+   take-back sentence is printed on every rWood page because it is on the
+   datasheets — confirm it covers the Polish lines.
    (b) **rWood Micro and Perf:** the first stock veneer is printed "Beech
    White Ash" (the guide lists White Ash and White Beech separately) — which
    is it? Backlit Micro panels, K1-10 / K2-10 fire resistance, TVOC (ISO
    16000), "no added formaldehyde" (the sheet says class E1), 30 mm mineral
    wool (sheet: 50 mm), the weights "0,35 kg/m²" and "48,40 kg/m³", and
    glue-fixing for Micro were all removed — say which of these exist and
-   send the certificate or figure. Does FSC C191539 (on the Groove sheet)
-   cover Micro and Perf? Minimum order and delivery terms for rWood are
+   send the certificate or figure. FSC C191539 covers all rWood products
+   (settled 20 September): the number is now on the Micro, Perf and Panel
+   pages and in the rWood FAQ. Minimum order and delivery terms for rWood are
    shown "on request". Two photos are swapped: rwood-micro/surface-detail
    shows a Perf-type pattern and rwood-perf/overview-detail a
    micro-perforation; both are unused until replaced. The 17 % recycled
@@ -189,9 +197,12 @@ hub, price guide, blog posts, manufacturing page).
    "UV resistant", "batch consistency guaranteed", the US/UK/DE fire
    ratings, "custom above 200 m²", the Flex Groove's 1 130 × 2 880 mm, 4,4 kg
    and 1,35 kg/m². To settle:
-   (a) **OEKO-TEX Standard 100** is not on the datasheet but still shown for
-   the three rPET products (an earlier decision): give the certificate
-   number or it goes from all three.
+   (a) **OEKO-TEX Standard 100 — settled 20 September:** the test is being
+   redone, so the pages keep the "OEKO-TEX® Standard 100 certified" line and
+   show no certificate number (none is printed anywhere). Send the new
+   number when the test is done and it goes on the three rPET pages. Note
+   the rPET FAQ still says the certificate is "available on request" — say
+   if that should read "after the current re-test" instead.
    (b) **Fire class by colour:** which of the ten stock colours count as
    "white, grey and black" for B-s1,d0 — 02 Off-white, 01 Light grey, 09
    Silver grey, 10 Charcoal? The data holds "B-s1,d0 / B-s2,d0" and the
@@ -227,6 +238,15 @@ hub, price guide, blog posts, manufacturing page).
    content workbook: several blog posts use **rPET Groove 24 mm, αw 0,85,
    class B** as a worked example, and the rPET Groove NRC figures
    (see (c)). Neither is on a datasheet — confirm them or say what to use.
+   Second pass, 20 September evening: you asked for the posts to carry the
+   correct data, so every worked example now uses a measured value (rPET
+   Panel 12 mm with its mounting, rWood Groove or Micro αw 0,90, the textile
+   range αw 1,0), rPET Groove appears only with its NRC by thickness, rWood
+   Groove no longer carries "NRC 0,80" or "3–4 weeks" (its sheet says
+   "confirmed on order"), the "micro-perforated absorbs less without a
+   backing absorber" story is gone (both Groove and Micro are αw 0,90
+   class A), and rWood is described with its MDF core, not a "core of
+   recycled felt".
 
 ## B. Confirmed price list (per model)
 

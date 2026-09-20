@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "bis {value}",
       "perPattern": "je nach Muster",
-      "baseUnit": "Basismodul"
+      "baseUnit": "Basismodul",
+      "fscCertifiedNumber": "FSC®-zertifiziert, C191539"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1970,11 +1971,14 @@
     },
     "patterns": {
       "tag": "MUSTER",
-      "title": "Vier Lamellenmuster",
-      "description2": "Vier Lamellenmuster auf derselben 300-mm-Diele, vom klassischen Original mit sechs Lamellen bis zum breiten 3-Lamella. Die Zeichnungen sind maßstäblich: Lamellenbreiten und 15-mm-Nuten wie auf der Diele.",
+      "title": "Ein Standardmuster, weitere auf Anfrage",
+      "description2": "Original, das Standardmuster: sechs Lamellen von 34 mm auf einer 300-mm-Diele, Nuten 15 mm breit, maßstäblich gezeichnet. Jede andere Lamellenaufteilung fertigen wir auf Anfrage.",
       "drawingAlt": "Muster {name}, {dims}, maßstäblich auf einer 300-mm-Diele",
       "lamellaCount": "{count} Lamellen",
-      "note": "Dielenbreite 300 mm, Nutbreite 15 mm. Standardmaß 19 × 300 × 2 400 oder 2 780 mm. Gewicht pro Diele ca. 6,4–8,3 kg. Toleranzen: Dicke ± 0,2 mm, Gewicht ± 10 %."
+      "note": "Dielenbreite 300 mm, Nutbreite 15 mm. Standardmaß 19 × 300 × 2 400 oder 2 780 mm. Gewicht pro Diele ca. 6,4–8,3 kg. Toleranzen: Dicke ± 0,2 mm, Gewicht ± 10 %.",
+      "standardLabel": "Standardmuster",
+      "onRequestTitle": "Weitere Muster auf Anfrage",
+      "onRequestDesc": "Gemischte Breiten (6 × 50 / 30 / 22 mm), vier Lamellen von 59 mm, drei von 84 mm oder Ihre eigene Aufteilung auf derselben 300-mm-Diele: Senden Sie uns eine Zeichnung, wir erstellen ein Angebot."
     },
     "materials": {
       "tag": "MATERIALIEN",
@@ -2026,10 +2030,7 @@
       "veneerSwatch": "Furniermuster {name}"
     },
     "options": {
-      "originalDesc": "Klassisches Design mit 6 Lamellen",
-      "mixedDesc": "Dynamische gemischte Breiten",
-      "4lamellaDesc": "Markante breite Leisten",
-      "3lamellaDesc": "Ausdrucksstarke breite Paneele"
+      "originalDesc": "Klassisches Design mit 6 Lamellen"
     },
     "kpi": {
       "thickness": "mm Dicke",
@@ -2037,7 +2038,8 @@
       "alphaW": "αw, bewerteter Schallabsorptionsgrad",
       "fire": "Brandverhalten, FR-MDF-Kern",
       "patterns": "Lamellenmuster auf 300-mm-Dielen",
-      "ariaLabel": "Kennzahlen"
+      "ariaLabel": "Kennzahlen",
+      "standardPattern": "mm Lamellen, Muster Original als Standard"
     },
     "buildUp": {
       "tag": "AUFBAU",
@@ -2091,7 +2093,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % offen",
       "drawingNote": "Zeichnungen etwa 1:2, Lochgröße und offene Fläche wie je Muster angegeben.",
       "coreLight": "Heller Kern",
-      "coreDark": "Dunkler Kern"
+      "coreDark": "Dunkler Kern",
+      "onRequest": "PD8 ist das Muster hinter den Kennzahlen. Weitere Lochmuster (Lochgröße, Abstand, offene Fläche) fertigen wir auf Anfrage nach Ihrer Zeichnung."
     },
     "surfaces": {
       "colorSelector": "Lagerfurniere",
@@ -2133,7 +2136,7 @@
       "badge2": "{pct} % Recyclinganteil",
       "badge3": "Hergestellt in Polen",
       "badge4": "Formaldehydklasse E1",
-      "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
+      "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern, FSC®-Zertifikat C191539",
       "badge2Desc": "Recyclingmaterial im Paneel",
       "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
       "badge4Desc": "Emissionsarmer, schwer entflammbarer MDF-Kern für trockene Innenräume",
@@ -2201,7 +2204,7 @@
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; die Nummer des Chain-of-Custody-Zertifikats erhalten Sie auf Anfrage."
+          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert (Chain-of-Custody-Zertifikat C191539) und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; das Zertifikat erhalten Sie auf Anfrage."
         },
         "fireRating": {
           "question": "Welche Brandklasse hat das Paneel?",
@@ -2321,7 +2324,8 @@
       "title": "Vier Perforationsdichten",
       "description": "Lochgröße und offene Fläche je Dichte. Je größer die offene Fläche, desto höher die Absorption; je kleiner das Loch, desto weniger sichtbar das Muster.",
       "spec": "Ø {d} mm · {pct} % offen",
-      "drawingNote": "Zeichnungen etwa 2:1, Lochgröße und offene Fläche wie je Dichte angegeben."
+      "drawingNote": "Zeichnungen etwa 2:1, Lochgröße und offene Fläche wie je Dichte angegeben.",
+      "onRequest": "Weitere Perforationsdichten und -muster fertigen wir auf Anfrage nach Ihrer Zeichnung."
     },
     "acoustics": {
       "tag": "AKUSTIK",
@@ -2365,7 +2369,7 @@
       "badge2": "Formaldehydklasse E1",
       "badge3": "Hergestellt in Polen",
       "badge4": "Rücknahme am Ende der Nutzungsdauer",
-      "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern",
+      "badge1Desc": "Holz aus verantwortungsvoll bewirtschafteten Wäldern, FSC®-Zertifikat C191539",
       "badge2Desc": "Emissionsarmer, schwer entflammbarer MDF-Kern für trockene Innenräume",
       "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
       "description": "FSC®-zertifiziertes Furnier, Formaldehydklasse E1 und Fertigung in unserem eigenen Werk in Częstochowa. Am Ende der Nutzungsdauer nehmen wir die Paneele zurück.",
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; die Nummer des Chain-of-Custody-Zertifikats erhalten Sie auf Anfrage."
+          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert (Chain-of-Custody-Zertifikat C191539) und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; das Zertifikat erhalten Sie auf Anfrage."
         },
         "fireRating": {
           "question": "Welche Brandklasse hat das Paneel?",
@@ -2585,7 +2589,7 @@
       "badge2": "Kreislaufrücknahme",
       "badge3": "Hergestellt in Polen",
       "badge4": "EPD Verfügbar",
-      "badge1Desc": "Alle Furniere FSC®-zertifiziert, aus verantwortungsvoll bewirtschafteten Wäldern",
+      "badge1Desc": "Alle Furniere FSC®-zertifiziert (C191539), aus verantwortungsvoll bewirtschafteten Wäldern",
       "badge2Desc": "Kostenlose Paneel-Rücknahme und Recycling am Lebensende",
       "description": "Jedes rWood Panel beginnt mit FSC®-zertifiziertem Furnier aus verantwortungsvoll bewirtschafteten Wäldern. Am Ende der Nutzungsdauer nimmt Re-Sound die Paneele kostenlos zurück.",
       "badge3Desc": "Gefertigt in unserem eigenen Werk in Częstochowa (Polen)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Schwarzes oder weißes Vlies",
       "finishMadeToOrder": "Auf Bestellung",
       "finishMadeToOrderVal": "Jedes andere Furnier, jede Beize, jedes Pigment und jede Oberfläche",
-      "certWoodSourcingVal": "Alle Furniere FSC®-zertifiziert, aus verantwortungsvoll bewirtschafteten Wäldern"
+      "certWoodSourcingVal": "Alle Furniere FSC®-zertifiziert (C191539), aus verantwortungsvoll bewirtschafteten Wäldern"
     },
     "related": {
       "tag": "PASSENDE PRODUKTE",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Das Chain-of-Custody-Zertifikat ist auf Anfrage erhältlich."
+          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert (Chain-of-Custody-Zertifikat C191539) und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Das Zertifikat ist auf Anfrage erhältlich."
         },
         "fireRating": {
           "question": "Wie ist die Brandklasse?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "Ist das Furnier der Holz-Akustikpaneele FSC-zertifiziert?",
-          "answer": "Ja – jedes rWood-Modell verwendet FSC®-zertifiziertes Furnier, und für rWood Panel ist zusätzlich eine EPD auf Anfrage erhältlich. Chain-of-Custody-Nachweise stellen wir für Ausschreibungen bereit."
+          "answer": "Ja – jedes rWood-Modell verwendet FSC®-zertifiziertes Furnier (Chain-of-Custody-Zertifikat C191539), und für rWood Panel ist zusätzlich eine EPD auf Anfrage erhältlich. Chain-of-Custody-Nachweise stellen wir für Ausschreibungen bereit."
         },
         "q3": {
           "question": "Welche Brandklasse erreichen Holz-Akustikpaneele?",

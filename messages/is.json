@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "allt að {value}",
       "perPattern": "eftir mynstri",
-      "baseUnit": "grunneining"
+      "baseUnit": "grunneining",
+      "fscCertifiedNumber": "FSC®-vottað, C191539"
     },
     "gallery": {
       "tag": "INNBLÁSTUR",
@@ -1973,11 +1974,14 @@
     },
     "patterns": {
       "tag": "MYNSTUR",
-      "title": "Fjögur listamynstur",
-      "description2": "Fjögur listamynstur á sama 300 mm borðinu, frá hinu klassíska Original með sex listum til hins breiða 3-Lamella. Teikningarnar eru í mælikvarða: listabreiddir og 15 mm rifur eins og á borðinu.",
+      "title": "Eitt staðalmynstur, önnur eftir pöntun",
+      "description2": "Original, staðalmynstrið: sex listar, 34 mm hver, á 300 mm borði, 15 mm breiðar rifur, teiknað í mælikvarða. Öll önnur listaskipan er gerð eftir pöntun.",
       "drawingAlt": "Mynstur {name}, {dims}, í mælikvarða á 300 mm borði",
       "lamellaCount": "{count} listar",
-      "note": "Borðbreidd 300 mm, rifubreidd 15 mm. Staðalstærð 19 × 300 × 2 400 eða 2 780 mm. Þyngd hvers borðs u.þ.b. 6,4–8,3 kg. Vikmörk: þykkt ± 0,2 mm, þyngd ± 10 %."
+      "note": "Borðbreidd 300 mm, rifubreidd 15 mm. Staðalstærð 19 × 300 × 2 400 eða 2 780 mm. Þyngd hvers borðs u.þ.b. 6,4–8,3 kg. Vikmörk: þykkt ± 0,2 mm, þyngd ± 10 %.",
+      "standardLabel": "Staðalmynstur",
+      "onRequestTitle": "Önnur mynstur eftir pöntun",
+      "onRequestDesc": "Blandaðar breiddir (6 × 50 / 30 / 22 mm), fjórir 59 mm listar, þrír 84 mm listar eða þín eigin skipan á sama 300 mm borðinu: sendu okkur teikningu og við gerum tilboð."
     },
     "materials": {
       "tag": "EFNI",
@@ -2029,10 +2033,7 @@
       "veneerSwatch": "Spónsýni {name}"
     },
     "options": {
-      "originalDesc": "Klassísk hönnun með 6 rimlum",
-      "mixedDesc": "Kraftmiklar blandaðar breiddir",
-      "4lamellaDesc": "Djarfir, breiðir rimlar",
-      "3lamellaDesc": "Áberandi, extra breiðir rimlar"
+      "originalDesc": "Klassísk hönnun með 6 rimlum"
     },
     "kpi": {
       "thickness": "mm þykkt",
@@ -2040,7 +2041,8 @@
       "alphaW": "αw, vegið hljóðísog",
       "fire": "brunaviðbrögð, FR MDF-kjarni",
       "patterns": "listamynstur á 300 mm borðum",
-      "ariaLabel": "Lykiltölur"
+      "ariaLabel": "Lykiltölur",
+      "standardPattern": "mm listar, mynstrið Original sem staðall"
     },
     "buildUp": {
       "tag": "UPPBYGGING",
@@ -2094,7 +2096,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % opið",
       "drawingNote": "Teikningar u.þ.b. 1:2, gatastærð og opið flatarmál eins og tilgreint er fyrir hvert mynstur.",
       "coreLight": "Ljós kjarni",
-      "coreDark": "Dökkur kjarni"
+      "coreDark": "Dökkur kjarni",
+      "onRequest": "PD8 er mynstrið á bak við lykiltölurnar. Önnur götunarmynstur (gatastærð, bil, opið flatarmál) eru gerð eftir pöntun samkvæmt þinni teikningu."
     },
     "surfaces": {
       "colorSelector": "Spónn á lager",
@@ -2136,7 +2139,7 @@
       "badge2": "{pct} % endurunnið efni",
       "badge3": "Framleitt í Póllandi",
       "badge4": "Formaldehýðflokkur E1",
-      "badge1Desc": "Viður úr skógum sem eru nýttir á ábyrgan hátt",
+      "badge1Desc": "Viður úr skógum sem eru nýttir á ábyrgan hátt, FSC®-vottorð C191539",
       "badge2Desc": "Endurunnið efni í plötunni",
       "badge3Desc": "Framleitt í okkar eigin verksmiðju í Częstochowa (Póllandi)",
       "badge4Desc": "Eldtefjandi MDF-kjarni með lítilli losun, fyrir þurr innirými",
@@ -2204,7 +2207,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvaðan kemur FSC-vottaði spónninn?",
-          "answer": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; númer rekjanleikavottorðsins (chain of custody) fæst sé þess óskað."
+          "answer": "Allur rWood-spónn er FSC®-vottaður (rekjanleikavottorð C191539) og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; vottorðið fæst sé þess óskað."
         },
         "fireRating": {
           "question": "Hver er brunaflokkurinn?",
@@ -2324,7 +2327,8 @@
       "title": "Fjórir götunarþéttleikar",
       "description": "Gatastærð og opið flatarmál fyrir hvern þéttleika. Því stærra sem opna flatarmálið er, því meira hljóðísog; því minna sem gatið er, því minna sýnilegt er mynstrið.",
       "spec": "Ø {d} mm · {pct} % opið",
-      "drawingNote": "Teikningar u.þ.b. 2:1, gatastærð og opið flatarmál eins og tilgreint er fyrir hvern þéttleika."
+      "drawingNote": "Teikningar u.þ.b. 2:1, gatastærð og opið flatarmál eins og tilgreint er fyrir hvern þéttleika.",
+      "onRequest": "Aðrir götunarþéttleikar og -mynstur eru gerð eftir pöntun samkvæmt þinni teikningu."
     },
     "acoustics": {
       "tag": "HLJÓÐVIST",
@@ -2368,7 +2372,7 @@
       "badge2": "Formaldehýðflokkur E1",
       "badge3": "Framleitt í Póllandi",
       "badge4": "Tekið til baka við lok líftíma",
-      "badge1Desc": "Viður úr skógum sem eru nýttir á ábyrgan hátt",
+      "badge1Desc": "Viður úr skógum sem eru nýttir á ábyrgan hátt, FSC®-vottorð C191539",
       "badge2Desc": "Eldtefjandi MDF-kjarni með lítilli losun, fyrir þurr innirými",
       "badge3Desc": "Framleitt í okkar eigin verksmiðju í Częstochowa (Póllandi)",
       "description": "FSC®-vottaður spónn, formaldehýðflokkur E1 og framleiðsla í okkar eigin verksmiðju í Częstochowa. Við lok líftíma tökum við plöturnar til baka."
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvaðan kemur FSC-vottaði spónninn?",
-          "answer": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; númer rekjanleikavottorðsins (chain of custody) fæst sé þess óskað."
+          "answer": "Allur rWood-spónn er FSC®-vottaður (rekjanleikavottorð C191539) og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; vottorðið fæst sé þess óskað."
         },
         "fireRating": {
           "question": "Hver er brunaflokkurinn?",
@@ -2585,7 +2589,7 @@
       "badge2": "Hringrásarleg skilagreiðsla",
       "badge3": "Framleitt í Póllandi",
       "badge4": "EPD tiltækt",
-      "badge1Desc": "Allir spónar FSC®-vottaðir, úr skógum sem er stjórnað á ábyrgan hátt",
+      "badge1Desc": "Allir spónar FSC®-vottaðir (C191539), úr skógum sem er stjórnað á ábyrgan hátt",
       "badge2Desc": "Ókeypis skil og endurvinnsla platna í lok líftíma",
       "description": "Hver rWood Panel byrjar með FSC®-vottuðum spón úr skógum sem er stjórnað á ábyrgan hátt. Við lok líftíma tekur Re-Sound við plötunum án endurgjalds.",
       "badge3Desc": "Framleitt í eigin verksmiðju í Częstochowa (Póllandi)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Svart eða hvítt flís",
       "finishMadeToOrder": "Eftir pöntun",
       "finishMadeToOrderVal": "Hvaða annar spónn, bæs, litarefni og áferð sem er",
-      "certWoodSourcingVal": "Allir spónar FSC®-vottaðir, úr skógum sem er stjórnað á ábyrgan hátt"
+      "certWoodSourcingVal": "Allir spónar FSC®-vottaðir (C191539), úr skógum sem er stjórnað á ábyrgan hátt"
     },
     "related": {
       "tag": "SAMRÆMDAR VÖRUR",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvaðan kemur FSC-vottaða spónlagið?",
-          "answer": "Allir rWood-spónar eru FSC®-vottaðir og koma úr skógum sem er stjórnað á ábyrgan hátt. Chain-of-custody-vottorðið fæst eftir beiðni."
+          "answer": "Allir rWood-spónar eru FSC®-vottaðir (rekjanleikavottorð C191539) og koma úr skógum sem er stjórnað á ábyrgan hátt. Vottorðið fæst eftir beiðni."
         },
         "fireRating": {
           "question": "Hver er eldflokkunin?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "Er viðarspónninn á hljóðdeyfiplötum úr viði FSC-vottaður?",
-          "answer": "Já — allar rWood-gerðir nota FSC®-vottaðan viðarspón og fyrir rWood Panel er einnig hægt að fá EPD sé þess óskað. Rekjanleikaskjöl (chain-of-custody) eru fáanleg vegna útboða."
+          "answer": "Já — allar rWood-gerðir nota FSC®-vottaðan viðarspón (rekjanleikavottorð C191539) og fyrir rWood Panel er einnig hægt að fá EPD sé þess óskað. Rekjanleikaskjöl (chain-of-custody) eru fáanleg vegna útboða."
         },
         "q3": {
           "question": "Hvaða brunaflokki ná hljóðdeyfiplötur úr viði?",

@@ -41,18 +41,20 @@ const veneers = [
 type Veneer = (typeof veneers)[number];
 
 /**
- * Lamella patterns — datasheet p.1. Drawn to scale: lamella widths and the
- * 15 mm grooves as percentages of the 300 mm plank. The datasheet gives the
- * Mixed pattern as "6 × 50 / 30 / 22 mm" without the sequence; 50-30-22
- * repeated is an assumption (flagged in the reconciliation report).
+ * Lamella pattern — datasheet p.1. The Original pattern (six lamellas of
+ * 34 mm) is the standard and the only one drawn, to scale: lamella widths and
+ * the 15 mm grooves as percentages of the 300 mm plank. The datasheet's other
+ * layouts are listed by name and dimensions only and made on request
+ * (Michael, 20 September 2026) — no drawing, because the sheet gives the
+ * Mixed pattern as "6 × 50 / 30 / 22 mm" without the lamella sequence.
  */
 const PLANK_MM = 300;
 const GROOVE_MM = 15;
-const patterns = [
-  { id: 'original', name: 'Original', lamellas: [34, 34, 34, 34, 34, 34], dims: '6 × 34 mm', descKey: 'options.originalDesc' },
-  { id: 'mixed', name: 'Mixed', lamellas: [50, 30, 22, 50, 30, 22], dims: '6 × 50 / 30 / 22 mm', descKey: 'options.mixedDesc' },
-  { id: '4-lamella', name: '4-Lamella', lamellas: [59, 59, 59, 59], dims: '4 × 59 mm', descKey: 'options.4lamellaDesc' },
-  { id: '3-lamella', name: '3-Lamella', lamellas: [84, 84, 84], dims: '3 × 84 mm', descKey: 'options.3lamellaDesc' },
+const STANDARD_PATTERN = { id: 'original', name: 'Original', lamellas: [34, 34, 34, 34, 34, 34], dims: '6 × 34 mm', descKey: 'options.originalDesc' };
+const OTHER_PATTERNS = [
+  { id: 'mixed', name: 'Mixed', dims: '6 × 50 / 30 / 22 mm' },
+  { id: '4-lamella', name: '4-Lamella', dims: '4 × 59 mm' },
+  { id: '3-lamella', name: '3-Lamella', dims: '3 × 84 mm' },
 ];
 
 // Felt colours — datasheet p.1/p.3 "3 mm, black or grey"
@@ -142,7 +144,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
       label: absorptionClass ? t('kpi.alphaWClass', { cls: absorptionClass }) : t('kpi.alphaW'),
     },
     { value: fireClass, label: t('kpi.fire') },
-    { value: String(patterns.length), label: t('kpi.patterns') },
+    { value: STANDARD_PATTERN.dims, label: t('kpi.standardPattern') },
   ].filter((k): k is { value: string; label: string } => k.value !== null);
 
   const sizesValue = `300 × 2 400 · 2 780 mm${panelSpecs?.thickness ? ` · ${panelSpecs.thickness}` : ''}`;
@@ -355,7 +357,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         </div>
       </section>
 
-      {/* Patterns — datasheet p.1, drawn to scale */}
+      {/* Pattern — the Original as standard (datasheet p.1, drawn to scale); other layouts on request */}
       <section id="patterns" className="content-section patterns-section dark">
         <div className="patterns-header">
           <span className="section-tag">{t('patterns.tag')}</span>
@@ -365,27 +367,42 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           </p>
         </div>
 
-        <div className="patterns-grid">
-          {patterns.map((pattern) => (
-            <div key={pattern.id} className="pattern-card">
-              <div
-                className="plank"
-                role="img"
-                aria-label={t('patterns.drawingAlt', { name: pattern.name, dims: pattern.dims })}
-                style={{ gap: `${(GROOVE_MM / PLANK_MM) * 100}%` }}
-              >
-                {pattern.lamellas.map((w, i) => (
-                  <span key={i} className="lamella" style={{ width: `${(w / PLANK_MM) * 100}%` }} />
-                ))}
-              </div>
-              <div className="pattern-info">
-                <h3>{pattern.name}</h3>
-                <span className="pattern-dims">{pattern.dims}</span>
-                <p>{t(pattern.descKey)}</p>
-                <span className="pattern-count">{t('patterns.lamellaCount', { count: pattern.lamellas.length })}</span>
-              </div>
+        <div className="patterns-layout">
+          <div className="pattern-card standard">
+            <span className="pattern-badge">{t('patterns.standardLabel')}</span>
+            <div
+              className="plank"
+              role="img"
+              aria-label={t('patterns.drawingAlt', { name: STANDARD_PATTERN.name, dims: STANDARD_PATTERN.dims })}
+              style={{ gap: `${(GROOVE_MM / PLANK_MM) * 100}%` }}
+            >
+              {STANDARD_PATTERN.lamellas.map((w, i) => (
+                <span key={i} className="lamella" style={{ width: `${(w / PLANK_MM) * 100}%` }} />
+              ))}
             </div>
-          ))}
+            <div className="pattern-info">
+              <h3>{STANDARD_PATTERN.name}</h3>
+              <span className="pattern-dims">{STANDARD_PATTERN.dims}</span>
+              <p>{t(STANDARD_PATTERN.descKey)}</p>
+              <span className="pattern-count">{t('patterns.lamellaCount', { count: STANDARD_PATTERN.lamellas.length })}</span>
+            </div>
+          </div>
+
+          <div className="pattern-card on-request">
+            <h3>{t('patterns.onRequestTitle')}</h3>
+            <ul className="on-request-list">
+              {OTHER_PATTERNS.map((pattern) => (
+                <li key={pattern.id}>
+                  <span className="on-request-name">{pattern.name}</span>
+                  <span className="pattern-dims">{pattern.dims}</span>
+                </li>
+              ))}
+            </ul>
+            <p>{t('patterns.onRequestDesc')}</p>
+            <Link href="/contact" className="btn-secondary on-dark" onClick={() => analytics.quoteClick('rwood-groove', 'patterns')}>
+              {tPage('cta.requestQuote')}
+            </Link>
+          </div>
         </div>
         <p className="patterns-note">{t('patterns.note')}</p>
       </section>
@@ -1266,20 +1283,60 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
         .patterns-header p,
         .accessories-header p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
 
-        .patterns-grid {
+        .patterns-layout {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: 3fr 2fr;
           gap: 1.5rem;
-          max-width: 1200px;
+          max-width: 1040px;
           margin: 0 auto;
+          align-items: stretch;
         }
 
         .pattern-card {
           background: rgba(255, 255, 255, 0.05);
           border: 1px solid rgba(255, 255, 255, 0.12);
           border-radius: 16px;
-          padding: 1.25rem;
+          padding: 1.5rem;
+          position: relative;
         }
+
+        .pattern-card.standard { border-color: rgba(126, 200, 245, 0.6); }
+
+        .pattern-badge {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          font-size: 0.72rem;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: var(--deep-blue);
+          background: #7ec8f5;
+          border-radius: 999px;
+          padding: 0.3rem 0.7rem;
+        }
+
+        .pattern-card.on-request { display: flex; flex-direction: column; gap: 1rem; }
+        .pattern-card.on-request h3 { color: white; font-size: 1.1rem; margin: 0; }
+        .pattern-card.on-request p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); line-height: 1.6; margin: 0; flex: 1; }
+        .pattern-card.on-request .btn-secondary { align-self: flex-start; padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+
+        .on-request-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .on-request-list li {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+          padding: 0.6rem 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .on-request-name { color: white; font-weight: 600; }
 
         .plank {
           display: flex;
@@ -1525,7 +1582,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           .section-grid { grid-template-columns: 1fr; gap: 2rem; }
           .section-grid.reverse { direction: ltr; }
           .buildup { grid-template-columns: 1fr; }
-          .patterns-grid { grid-template-columns: repeat(2, 1fr); }
+          .patterns-layout { grid-template-columns: 1fr; }
           .veneer-grid { grid-template-columns: repeat(3, 1fr); }
           .finish-grid { grid-template-columns: 1fr; }
           .acoustics-grid { grid-template-columns: 1fr; }
@@ -1546,7 +1603,7 @@ export default function RWoodGrooveProductPage({ breadcrumbs, specs, downloads, 
           .acoustics-header h2,
           .ordering-header h2,
           .accessories-header h2 { font-size: 2rem; }
-          .patterns-grid { grid-template-columns: 1fr; }
+          .patterns-layout { grid-template-columns: 1fr; }
           .veneer-grid { grid-template-columns: repeat(2, 1fr); }
           .accessories-grid { grid-template-columns: 1fr; }
           .cta-buttons { flex-direction: column; }

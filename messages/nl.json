@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "tot {value}",
       "perPattern": "per patroon",
-      "baseUnit": "basismodule"
+      "baseUnit": "basismodule",
+      "fscCertifiedNumber": "FSC®-gecertificeerd, C191539"
     },
     "gallery": {
       "tag": "INSPIRATIE",
@@ -1970,11 +1971,14 @@
     },
     "patterns": {
       "tag": "PATRONEN",
-      "title": "Vier lamelpatronen",
-      "description2": "Vier lamelpatronen op dezelfde plank van 300 mm, van de klassieke Original met zes lamellen tot de brede 3-Lamella. De tekeningen zijn op schaal: lamelbreedtes en groeven van 15 mm zoals op de plank.",
+      "title": "Eén standaardpatroon, andere op aanvraag",
+      "description2": "Original, het standaardpatroon: zes lamellen van 34 mm op een plank van 300 mm, groeven van 15 mm breed, op schaal getekend. Elke andere lamelindeling maken we op aanvraag.",
       "drawingAlt": "Patroon {name}, {dims}, op schaal op een plank van 300 mm",
       "lamellaCount": "{count} lamellen",
-      "note": "Plankbreedte 300 mm, groefbreedte 15 mm. Standaardmaat 19 × 300 × 2 400 of 2 780 mm. Gewicht per plank ca. 6,4–8,3 kg. Toleranties: dikte ± 0,2 mm, gewicht ± 10 %."
+      "note": "Plankbreedte 300 mm, groefbreedte 15 mm. Standaardmaat 19 × 300 × 2 400 of 2 780 mm. Gewicht per plank ca. 6,4–8,3 kg. Toleranties: dikte ± 0,2 mm, gewicht ± 10 %.",
+      "standardLabel": "Standaardpatroon",
+      "onRequestTitle": "Andere patronen op aanvraag",
+      "onRequestDesc": "Gemengde breedtes (6 × 50 / 30 / 22 mm), vier lamellen van 59 mm, drie van 84 mm of je eigen indeling op dezelfde plank van 300 mm: stuur ons een tekening en we maken een offerte."
     },
     "materials": {
       "tag": "MATERIALEN",
@@ -2026,10 +2030,7 @@
       "veneerSwatch": "Fineerstaal {name}"
     },
     "options": {
-      "originalDesc": "Klassiek ontwerp met 6 lamellen",
-      "mixedDesc": "Dynamische gemengde breedtes",
-      "4lamellaDesc": "Krachtige brede latten",
-      "3lamellaDesc": "Opvallende extra brede latten"
+      "originalDesc": "Klassiek ontwerp met 6 lamellen"
     },
     "kpi": {
       "thickness": "mm dikte",
@@ -2037,7 +2038,8 @@
       "alphaW": "αw, gewogen geluidsabsorptie",
       "fire": "brandreactie, FR MDF-kern",
       "patterns": "lamelpatronen op planken van 300 mm",
-      "ariaLabel": "Kerncijfers"
+      "ariaLabel": "Kerncijfers",
+      "standardPattern": "mm lamellen, patroon Original als standaard"
     },
     "buildUp": {
       "tag": "OPBOUW",
@@ -2091,7 +2093,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % open",
       "drawingNote": "Tekeningen ongeveer 1:2, gatgrootte en open oppervlak zoals vermeld per patroon.",
       "coreLight": "Lichte kern",
-      "coreDark": "Donkere kern"
+      "coreDark": "Donkere kern",
+      "onRequest": "PD8 is het patroon achter de kerncijfers. Andere perforatiepatronen (gatgrootte, steek, open oppervlak) maken we op aanvraag naar je tekening."
     },
     "surfaces": {
       "colorSelector": "Voorraadfineren",
@@ -2133,7 +2136,7 @@
       "badge2": "{pct} % gerecycleerd materiaal",
       "badge3": "Gemaakt in Polen",
       "badge4": "Formaldehydeklasse E1",
-      "badge1Desc": "Hout uit verantwoord beheerde bossen",
+      "badge1Desc": "Hout uit verantwoord beheerde bossen, FSC®-certificaat C191539",
       "badge2Desc": "Gerecycleerd materiaal in het paneel",
       "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
       "badge4Desc": "Emissiearme brandvertragende MDF-kern, voor droge binnenruimtes",
@@ -2201,7 +2204,7 @@
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het nummer van het chain-of-custody-certificaat krijg je op aanvraag."
+          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd (chain-of-custody-certificaat C191539) en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het certificaat krijg je op aanvraag."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
@@ -2321,7 +2324,8 @@
       "title": "Vier perforatiedichtheden",
       "description": "Gatgrootte en open oppervlak per dichtheid. Hoe groter het open oppervlak, hoe hoger de absorptie; hoe kleiner het gaatje, hoe minder zichtbaar het patroon.",
       "spec": "Ø {d} mm · {pct} % open",
-      "drawingNote": "Tekeningen ongeveer 2:1, gatgrootte en open oppervlak zoals vermeld per dichtheid."
+      "drawingNote": "Tekeningen ongeveer 2:1, gatgrootte en open oppervlak zoals vermeld per dichtheid.",
+      "onRequest": "Andere perforatiedichtheden en -patronen maken we op aanvraag naar je tekening."
     },
     "acoustics": {
       "tag": "AKOESTIEK",
@@ -2365,7 +2369,7 @@
       "badge2": "Formaldehydeklasse E1",
       "badge3": "Gemaakt in Polen",
       "badge4": "Terugname aan het einde van de levensduur",
-      "badge1Desc": "Hout uit verantwoord beheerde bossen",
+      "badge1Desc": "Hout uit verantwoord beheerde bossen, FSC®-certificaat C191539",
       "badge2Desc": "Emissiearme brandvertragende MDF-kern, voor droge binnenruimtes",
       "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
       "description": "FSC®-gecertificeerd fineer, formaldehydeklasse E1 en productie in onze eigen fabriek in Częstochowa. Aan het einde van de levensduur nemen we de panelen terug.",
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het nummer van het chain-of-custody-certificaat krijg je op aanvraag."
+          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd (chain-of-custody-certificaat C191539) en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het certificaat krijg je op aanvraag."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
@@ -2585,7 +2589,7 @@
       "badge2": "Circulaire Terugname",
       "badge3": "Gemaakt in Polen",
       "badge4": "EPD Beschikbaar",
-      "badge1Desc": "Alle fineren FSC®-gecertificeerd, uit verantwoord beheerde bossen",
+      "badge1Desc": "Alle fineren FSC®-gecertificeerd (C191539), uit verantwoord beheerde bossen",
       "badge2Desc": "Gratis terugname en recycling van panelen aan einde levensduur",
       "description": "Elk rWood Panel begint met FSC®-gecertificeerd fineer uit verantwoord beheerde bossen. Aan het einde van de levensduur neemt Re-Sound de panelen gratis terug.",
       "badge3Desc": "Geproduceerd in onze eigen fabriek in Częstochowa (Polen)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Zwart of wit vlies",
       "finishMadeToOrder": "Op bestelling",
       "finishMadeToOrderVal": "Elk ander fineer, elke beits, pigment en afwerking",
-      "certWoodSourcingVal": "Alle fineren FSC®-gecertificeerd, uit verantwoord beheerde bossen"
+      "certWoodSourcingVal": "Alle fineren FSC®-gecertificeerd (C191539), uit verantwoord beheerde bossen"
     },
     "related": {
       "tag": "BIJPASSENDE PRODUCTEN",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. Het chain-of-custody-certificaat is op aanvraag beschikbaar."
+          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd (chain-of-custody-certificaat C191539) en komen uit verantwoord beheerde bossen. Het certificaat krijg je op aanvraag."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "Is het fineer van houten akoestische panelen FSC-gecertificeerd?",
-          "answer": "Ja — elk rWood-model gebruikt FSC®-gecertificeerd fineer, en voor rWood Panel is bovendien een EPD op aanvraag beschikbaar. Chain-of-custody-documentatie is beschikbaar voor aanbestedingen."
+          "answer": "Ja — elk rWood-model gebruikt FSC®-gecertificeerd fineer (chain-of-custody-certificaat C191539), en voor rWood Panel is bovendien een EPD op aanvraag beschikbaar. Chain-of-custody-documentatie is beschikbaar voor aanbestedingen."
         },
         "q3": {
           "question": "Welke brandklasse halen houten akoestische panelen?",

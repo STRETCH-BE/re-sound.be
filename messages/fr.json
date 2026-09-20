@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "jusqu'à {value}",
       "perPattern": "selon le motif",
-      "baseUnit": "module de base"
+      "baseUnit": "module de base",
+      "fscCertifiedNumber": "Certifié FSC®, C191539"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1970,11 +1971,14 @@
     },
     "patterns": {
       "tag": "MOTIFS",
-      "title": "Quatre motifs de lamelles",
-      "description2": "Quatre motifs de lamelles sur la même lame de 300 mm, de l’Original classique à six lamelles au large 3-Lamella. Les dessins sont à l’échelle : largeurs de lamelles et rainures de 15 mm comme sur la lame.",
+      "title": "Un motif standard, les autres sur demande",
+      "description2": "Original, le motif standard : six lamelles de 34 mm sur une lame de 300 mm, rainures de 15 mm de large, dessinées à l’échelle. Toute autre disposition de lamelles est réalisée sur demande.",
       "drawingAlt": "Motif {name}, {dims}, à l’échelle sur une lame de 300 mm",
       "lamellaCount": "{count} lamelles",
-      "note": "Largeur de lame 300 mm, largeur de rainure 15 mm. Dimension standard 19 × 300 × 2 400 ou 2 780 mm. Poids par lame env. 6,4–8,3 kg. Tolérances : épaisseur ± 0,2 mm, poids ± 10 %."
+      "note": "Largeur de lame 300 mm, largeur de rainure 15 mm. Dimension standard 19 × 300 × 2 400 ou 2 780 mm. Poids par lame env. 6,4–8,3 kg. Tolérances : épaisseur ± 0,2 mm, poids ± 10 %.",
+      "standardLabel": "Motif standard",
+      "onRequestTitle": "Autres motifs sur demande",
+      "onRequestDesc": "Largeurs mixtes (6 × 50 / 30 / 22 mm), quatre lamelles de 59 mm, trois de 84 mm ou votre propre disposition sur la même lame de 300 mm : envoyez-nous un dessin, nous établissons un devis."
     },
     "materials": {
       "tag": "MATÉRIAUX",
@@ -2026,10 +2030,7 @@
       "veneerSwatch": "Échantillon de placage {name}"
     },
     "options": {
-      "originalDesc": "Design classique à 6 lamelles",
-      "mixedDesc": "Largeurs mixtes dynamiques",
-      "4lamellaDesc": "Larges lamelles affirmées",
-      "3lamellaDesc": "Larges lamelles à fort impact visuel"
+      "originalDesc": "Design classique à 6 lamelles"
     },
     "kpi": {
       "thickness": "mm d’épaisseur",
@@ -2037,7 +2038,8 @@
       "alphaW": "αw, absorption acoustique pondérée",
       "fire": "réaction au feu, âme MDF FR",
       "patterns": "motifs de lamelles sur lames de 300 mm",
-      "ariaLabel": "Chiffres clés"
+      "ariaLabel": "Chiffres clés",
+      "standardPattern": "mm de lamelles, motif Original en standard"
     },
     "buildUp": {
       "tag": "COMPOSITION",
@@ -2091,7 +2093,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % de surface ouverte",
       "drawingNote": "Dessins à environ 1:2, taille des trous et surface ouverte telles qu’indiquées par motif.",
       "coreLight": "Âme claire",
-      "coreDark": "Âme foncée"
+      "coreDark": "Âme foncée",
+      "onRequest": "PD8 est le motif des chiffres de référence. D’autres motifs de perforation (taille des trous, entraxe, surface ouverte) sont réalisés sur demande d’après votre dessin."
     },
     "surfaces": {
       "colorSelector": "Placages de stock",
@@ -2133,7 +2136,7 @@
       "badge2": "{pct} % de matière recyclée",
       "badge3": "Fabriqué en Pologne",
       "badge4": "Classe formaldéhyde E1",
-      "badge1Desc": "Bois issu de forêts gérées durablement",
+      "badge1Desc": "Bois issu de forêts gérées durablement, certificat FSC® C191539",
       "badge2Desc": "Matière recyclée dans le panneau",
       "badge3Desc": "Produit dans notre propre usine de Częstochowa (Pologne)",
       "badge4Desc": "Âme MDF ignifugée à faibles émissions, pour les espaces intérieurs secs",
@@ -2201,7 +2204,7 @@
       "questions": {
         "fscSource": {
           "question": "D’où provient le placage certifié FSC ?",
-          "answer": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le numéro du certificat de chaîne de contrôle est disponible sur demande."
+          "answer": "Tous les placages rWood sont certifiés FSC® (certificat de chaîne de contrôle C191539) et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le certificat est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
@@ -2321,7 +2324,8 @@
       "title": "Quatre densités de perforation",
       "description": "Taille des trous et surface ouverte par densité. Plus la surface ouverte est grande, plus l’absorption est élevée ; plus le trou est petit, moins le motif est visible.",
       "spec": "Ø {d} mm · {pct} % de surface ouverte",
-      "drawingNote": "Dessins à environ 2:1, taille des trous et surface ouverte telles qu’indiquées par densité."
+      "drawingNote": "Dessins à environ 2:1, taille des trous et surface ouverte telles qu’indiquées par densité.",
+      "onRequest": "D’autres densités et motifs de perforation sont réalisés sur demande d’après votre dessin."
     },
     "acoustics": {
       "tag": "ACOUSTIQUE",
@@ -2365,7 +2369,7 @@
       "badge2": "Classe formaldéhyde E1",
       "badge3": "Fabriqué en Pologne",
       "badge4": "Reprise en fin de vie",
-      "badge1Desc": "Bois issu de forêts gérées durablement",
+      "badge1Desc": "Bois issu de forêts gérées durablement, certificat FSC® C191539",
       "badge2Desc": "Âme MDF ignifugée à faibles émissions, pour les espaces intérieurs secs",
       "badge3Desc": "Produit dans notre propre usine de Częstochowa (Pologne)",
       "description": "Placage certifié FSC®, classe formaldéhyde E1 et production dans notre propre usine de Częstochowa. En fin de vie, nous reprenons les panneaux.",
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "D’où provient le placage certifié FSC ?",
-          "answer": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le numéro du certificat de chaîne de contrôle est disponible sur demande."
+          "answer": "Tous les placages rWood sont certifiés FSC® (certificat de chaîne de contrôle C191539) et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le certificat est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
@@ -2585,7 +2589,7 @@
       "badge2": "Reprise Circulaire",
       "badge3": "Fabriqué en Pologne",
       "badge4": "DEP Disponible",
-      "badge1Desc": "Tous les placages sont certifiés FSC®, issus de forêts gérées de manière responsable",
+      "badge1Desc": "Tous les placages certifiés FSC® (C191539), issus de forêts gérées de manière responsable",
       "badge2Desc": "Retour et recyclage gratuits des panneaux en fin de vie",
       "description": "Chaque rWood Panel commence par un placage certifié FSC® issu de forêts gérées de manière responsable. En fin de vie, Re-Sound reprend les panneaux gratuitement.",
       "badge3Desc": "Fabriqué dans notre propre usine de Częstochowa (Pologne)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Voile noir ou blanc",
       "finishMadeToOrder": "Sur commande",
       "finishMadeToOrderVal": "Tout autre placage, teinte, pigment et finition",
-      "certWoodSourcingVal": "Tous les placages certifiés FSC®, issus de forêts gérées de manière responsable"
+      "certWoodSourcingVal": "Tous les placages certifiés FSC® (C191539), issus de forêts gérées de manière responsable"
     },
     "related": {
       "tag": "PRODUITS ASSORTIS",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "D'où provient le placage certifié FSC ?",
-          "answer": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées de manière responsable. Le certificat de chaîne de contrôle est disponible sur demande."
+          "answer": "Tous les placages rWood sont certifiés FSC® (certificat de chaîne de contrôle C191539) et proviennent de forêts gérées de manière responsable. Le certificat est disponible sur demande."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "Le placage des panneaux acoustiques en bois est-il certifié FSC ?",
-          "answer": "Oui — chaque modèle rWood utilise un placage bois certifié FSC®, et rWood Panel dispose également d'une EPD disponible sur demande. La documentation de chaîne de contrôle est disponible pour les appels d'offres."
+          "answer": "Oui — chaque modèle rWood utilise un placage bois certifié FSC® (certificat de chaîne de contrôle C191539), et rWood Panel dispose également d'une EPD disponible sur demande. La documentation de chaîne de contrôle est disponible pour les appels d'offres."
         },
         "q3": {
           "question": "Quelle classe de réaction au feu les panneaux acoustiques en bois atteignent-ils ?",

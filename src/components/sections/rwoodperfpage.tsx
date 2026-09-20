@@ -456,6 +456,8 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
           })}
         </div>
         <p className="drawing-note">{t('patterns.drawingNote')}</p>
+        {/* Other patterns on request — Michael, 20 September 2026 */}
+        <p className="on-request-note">{t('patterns.onRequest')}</p>
 
         <div className="core-colour">
           <div>
@@ -1019,6 +1021,7 @@ export default function RWoodPerfProductPage({ breadcrumbs, specs, downloads, ga
         .feature-list li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.55rem 0; font-size: 1rem; color: var(--charcoal); line-height: 1.5; }
         .check { color: var(--brand-blue); font-weight: bold; }
 
+        .on-request-note { max-width: 1200px; margin: 0.75rem auto 0; font-size: 0.95rem; color: var(--ink-muted); line-height: 1.6; font-weight: 500; }
         .drawing-note { max-width: 1200px; margin: 1.25rem auto 0; font-size: 0.85rem; color: var(--ink-muted); line-height: 1.5; }
 
         /* ========================================

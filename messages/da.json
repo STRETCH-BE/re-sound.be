@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "op til {value}",
       "perPattern": "afhængigt af mønster",
-      "baseUnit": "basismodul"
+      "baseUnit": "basismodul",
+      "fscCertifiedNumber": "FSC®-certificeret, C191539"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1973,11 +1974,14 @@
     },
     "patterns": {
       "tag": "MØNSTRE",
-      "title": "Fire lamelmønstre",
-      "description2": "Fire lamelmønstre på det samme 300 mm bræt, fra den klassiske Original med seks lameller til den brede 3-Lamella. Tegningerne er i målestok: lamelbredder og 15 mm riller som på brættet.",
+      "title": "Ét standardmønster, andre på forespørgsel",
+      "description2": "Original, standardmønstret: seks lameller på 34 mm på et 300 mm bræt, riller 15 mm brede, tegnet i målestok. Enhver anden lamelinddeling laves på forespørgsel.",
       "drawingAlt": "Mønster {name}, {dims}, i målestok på et 300 mm bræt",
       "lamellaCount": "{count} lameller",
-      "note": "Brætbredde 300 mm, rillebredde 15 mm. Standardmål 19 × 300 × 2 400 eller 2 780 mm. Vægt pr. bræt ca. 6,4–8,3 kg. Tolerancer: tykkelse ± 0,2 mm, vægt ± 10 %."
+      "note": "Brætbredde 300 mm, rillebredde 15 mm. Standardmål 19 × 300 × 2 400 eller 2 780 mm. Vægt pr. bræt ca. 6,4–8,3 kg. Tolerancer: tykkelse ± 0,2 mm, vægt ± 10 %.",
+      "standardLabel": "Standardmønster",
+      "onRequestTitle": "Andre mønstre på forespørgsel",
+      "onRequestDesc": "Blandede bredder (6 × 50 / 30 / 22 mm), fire lameller på 59 mm, tre på 84 mm eller din egen inddeling på det samme 300 mm bræt: send os en tegning, så giver vi et tilbud."
     },
     "materials": {
       "tag": "MATERIALER",
@@ -2029,10 +2033,7 @@
       "veneerSwatch": "Finerprøve {name}"
     },
     "options": {
-      "originalDesc": "Klassisk design med 6 lameller",
-      "mixedDesc": "Dynamiske blandede bredder",
-      "4lamellaDesc": "Markante brede lister",
-      "3lamellaDesc": "Ekstra brede, iøjnefaldende paneler"
+      "originalDesc": "Klassisk design med 6 lameller"
     },
     "kpi": {
       "thickness": "mm tykkelse",
@@ -2040,7 +2041,8 @@
       "alphaW": "αw, vægtet lydabsorption",
       "fire": "brandreaktion, FR MDF-kerne",
       "patterns": "lamelmønstre på 300 mm brædder",
-      "ariaLabel": "Nøgletal"
+      "ariaLabel": "Nøgletal",
+      "standardPattern": "mm lameller, mønstret Original som standard"
     },
     "buildUp": {
       "tag": "OPBYGNING",
@@ -2094,7 +2096,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % åben",
       "drawingNote": "Tegninger ca. 1:2, hulstørrelse og åbent areal som angivet pr. mønster.",
       "coreLight": "Lys kerne",
-      "coreDark": "Mørk kerne"
+      "coreDark": "Mørk kerne",
+      "onRequest": "PD8 er mønstret bag nøgletallene. Andre perforeringsmønstre (hulstørrelse, afstand, åbent areal) laves på forespørgsel efter din tegning."
     },
     "surfaces": {
       "colorSelector": "Lagerfinerer",
@@ -2136,7 +2139,7 @@
       "badge2": "{pct} % genanvendt indhold",
       "badge3": "Fremstillet i Polen",
       "badge4": "Formaldehydklasse E1",
-      "badge1Desc": "Træ fra ansvarligt forvaltede skove",
+      "badge1Desc": "Træ fra ansvarligt forvaltede skove, FSC®-certifikat C191539",
       "badge2Desc": "Genanvendt materiale i panelet",
       "badge3Desc": "Produceret på vores egen fabrik i Częstochowa (Polen)",
       "badge4Desc": "Lavemissions brandhæmmende MDF-kerne til tørre indendørsrum",
@@ -2204,7 +2207,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvor kommer den FSC-certificerede finer fra?",
-          "answer": "Alle rWood-finerer er FSC®-certificerede og kommer fra ansvarligt forvaltede skove. De otte lagerfinerer kommer fra Europa, Skandinavien og Nordamerika; nummeret på chain-of-custody-certifikatet oplyses på forespørgsel."
+          "answer": "Alle rWood-finerer er FSC®-certificerede (chain-of-custody-certifikat C191539) og kommer fra ansvarligt forvaltede skove. De otte lagerfinerer kommer fra Europa, Skandinavien og Nordamerika; certifikatet fås på forespørgsel."
         },
         "fireRating": {
           "question": "Hvad er brandklassen?",
@@ -2324,7 +2327,8 @@
       "title": "Fire perforeringstætheder",
       "description": "Hulstørrelse og åbent areal pr. tæthed. Jo større åbent areal, desto højere absorption; jo mindre hul, desto mindre synligt mønster.",
       "spec": "Ø {d} mm · {pct} % åben",
-      "drawingNote": "Tegninger ca. 2:1, hulstørrelse og åbent areal som angivet pr. tæthed."
+      "drawingNote": "Tegninger ca. 2:1, hulstørrelse og åbent areal som angivet pr. tæthed.",
+      "onRequest": "Andre perforeringstætheder og -mønstre laves på forespørgsel efter din tegning."
     },
     "acoustics": {
       "tag": "AKUSTIK",
@@ -2368,7 +2372,7 @@
       "badge2": "Formaldehydklasse E1",
       "badge3": "Fremstillet i Polen",
       "badge4": "Tilbagetagning ved endt levetid",
-      "badge1Desc": "Træ fra ansvarligt forvaltede skove",
+      "badge1Desc": "Træ fra ansvarligt forvaltede skove, FSC®-certifikat C191539",
       "badge2Desc": "Lavemissions brandhæmmende MDF-kerne til tørre indendørsrum",
       "badge3Desc": "Produceret på vores egen fabrik i Częstochowa (Polen)",
       "description": "FSC®-certificeret finer, formaldehydklasse E1 og produktion på vores egen fabrik i Częstochowa. Ved endt levetid tager vi panelerne tilbage."
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvor kommer den FSC-certificerede finer fra?",
-          "answer": "Alle rWood-finerer er FSC®-certificerede og kommer fra ansvarligt forvaltede skove. De otte lagerfinerer kommer fra Europa, Skandinavien og Nordamerika; nummeret på chain-of-custody-certifikatet oplyses på forespørgsel."
+          "answer": "Alle rWood-finerer er FSC®-certificerede (chain-of-custody-certifikat C191539) og kommer fra ansvarligt forvaltede skove. De otte lagerfinerer kommer fra Europa, Skandinavien og Nordamerika; certifikatet fås på forespørgsel."
         },
         "fireRating": {
           "question": "Hvad er brandklassen?",
@@ -2585,7 +2589,7 @@
       "badge2": "Cirkulær tilbagetagning",
       "badge3": "Fremstillet i Polen",
       "badge4": "EPD tilgængelig",
-      "badge1Desc": "Alle finerer er FSC®-certificerede, fra ansvarligt forvaltede skove",
+      "badge1Desc": "Alle finerer er FSC®-certificerede (C191539), fra ansvarligt forvaltede skove",
       "badge2Desc": "Gratis tilbagelevering og genanvendelse af paneler ved end of life",
       "description": "Hvert rWood Panel begynder med FSC®-certificeret finer fra ansvarligt forvaltede skove. Ved endt levetid tager Re-Sound panelerne gratis retur.",
       "badge3Desc": "Produceret på vores egen fabrik i Częstochowa (Polen)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Sort eller hvid fleece",
       "finishMadeToOrder": "På bestilling",
       "finishMadeToOrderVal": "Enhver anden finer, bejdse, pigment og finish",
-      "certWoodSourcingVal": "Alle finerer er FSC®-certificerede, fra ansvarligt forvaltede skove"
+      "certWoodSourcingVal": "Alle finerer er FSC®-certificerede (C191539), fra ansvarligt forvaltede skove"
     },
     "related": {
       "tag": "MATCHENDE PRODUKTER",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvor kommer det FSC-certificerede finer fra?",
-          "answer": "Alle rWood-finerer er FSC®-certificerede og kommer fra ansvarligt forvaltede skove. Chain-of-custody-certifikatet fås på forespørgsel."
+          "answer": "Alle rWood-finerer er FSC®-certificerede (chain-of-custody-certifikat C191539) og kommer fra ansvarligt forvaltede skove. Certifikatet fås på forespørgsel."
         },
         "fireRating": {
           "question": "Hvad er brandklassificeringen?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "Er fineren på akustikpaneler i træ FSC-certificeret?",
-          "answer": "Ja – alle rWood-modeller bruger FSC®-certificeret finer, og rWood Panel har desuden en EPD, der kan rekvireres. Chain-of-custody-dokumentation kan leveres til udbud."
+          "answer": "Ja – alle rWood-modeller bruger FSC®-certificeret finer (chain-of-custody-certifikat C191539), og rWood Panel har desuden en EPD, der kan rekvireres. Chain-of-custody-dokumentation kan leveres til udbud."
         },
         "q3": {
           "question": "Hvilken brandklasse opnår akustikpaneler i træ?",

@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "até {value}",
       "perPattern": "consoante o padrão",
-      "baseUnit": "módulo base"
+      "baseUnit": "módulo base",
+      "fscCertifiedNumber": "Certificação FSC®, C191539"
     },
     "gallery": {
       "tag": "INSPIRAÇÃO",
@@ -1973,11 +1974,14 @@
     },
     "patterns": {
       "tag": "PADRÕES",
-      "title": "Quatro padrões de lamelas",
-      "description2": "Quatro padrões de lamelas na mesma tábua de 300 mm, do clássico Original de seis lamelas ao largo 3-Lamella. Os desenhos estão à escala: larguras das lamelas e ranhuras de 15 mm como na tábua.",
+      "title": "Um padrão standard, os outros a pedido",
+      "description2": "Original, o padrão standard: seis lamelas de 34 mm numa tábua de 300 mm, ranhuras com 15 mm de largura, desenhadas à escala. Qualquer outra disposição de lamelas é feita a pedido.",
       "drawingAlt": "Padrão {name}, {dims}, à escala numa tábua de 300 mm",
       "lamellaCount": "{count} lamelas",
-      "note": "Largura da tábua 300 mm, largura da ranhura 15 mm. Medida standard 19 × 300 × 2 400 ou 2 780 mm. Peso por tábua aprox. 6,4–8,3 kg. Tolerâncias: espessura ± 0,2 mm, peso ± 10 %."
+      "note": "Largura da tábua 300 mm, largura da ranhura 15 mm. Medida standard 19 × 300 × 2 400 ou 2 780 mm. Peso por tábua aprox. 6,4–8,3 kg. Tolerâncias: espessura ± 0,2 mm, peso ± 10 %.",
+      "standardLabel": "Padrão standard",
+      "onRequestTitle": "Outros padrões a pedido",
+      "onRequestDesc": "Larguras mistas (6 × 50 / 30 / 22 mm), quatro lamelas de 59 mm, três de 84 mm ou a sua própria disposição na mesma tábua de 300 mm: envie-nos um desenho e fazemos o orçamento."
     },
     "materials": {
       "tag": "MATERIAIS",
@@ -2029,10 +2033,7 @@
       "veneerSwatch": "Amostra de folheado {name}"
     },
     "options": {
-      "originalDesc": "Design clássico de 6 lamelas",
-      "mixedDesc": "Larguras mistas dinâmicas",
-      "4lamellaDesc": "Ripas largas e marcantes",
-      "3lamellaDesc": "Painéis largos de forte presença"
+      "originalDesc": "Design clássico de 6 lamelas"
     },
     "kpi": {
       "thickness": "mm de espessura",
@@ -2040,7 +2041,8 @@
       "alphaW": "αw, absorção sonora ponderada",
       "fire": "reação ao fogo, núcleo MDF FR",
       "patterns": "padrões de lamelas em tábuas de 300 mm",
-      "ariaLabel": "Números-chave"
+      "ariaLabel": "Números-chave",
+      "standardPattern": "mm de lamelas, padrão Original como standard"
     },
     "buildUp": {
       "tag": "COMPOSIÇÃO",
@@ -2094,7 +2096,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % de área aberta",
       "drawingNote": "Desenhos a cerca de 1:2; tamanho do furo e área aberta conforme indicado por padrão.",
       "coreLight": "Núcleo claro",
-      "coreDark": "Núcleo escuro"
+      "coreDark": "Núcleo escuro",
+      "onRequest": "PD8 é o padrão por detrás dos valores de referência. Outros padrões de perfuração (tamanho do furo, afastamento, área aberta) são feitos a pedido a partir do seu desenho."
     },
     "surfaces": {
       "colorSelector": "Folheados de stock",
@@ -2136,7 +2139,7 @@
       "badge2": "{pct} % de conteúdo reciclado",
       "badge3": "Fabricado na Polónia",
       "badge4": "Classe de formaldeído E1",
-      "badge1Desc": "Madeira de florestas geridas de forma responsável",
+      "badge1Desc": "Madeira de florestas geridas de forma responsável, certificado FSC® C191539",
       "badge2Desc": "Material reciclado no painel",
       "badge3Desc": "Produzido na nossa própria fábrica em Częstochowa (Polónia)",
       "badge4Desc": "Núcleo MDF ignífugo de baixas emissões, para interiores secos",
@@ -2204,7 +2207,7 @@
       "questions": {
         "fscSource": {
           "question": "De onde provém o folheado certificado FSC?",
-          "answer": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o número do certificado de cadeia de custódia está disponível a pedido."
+          "answer": "Todos os folheados rWood são certificados FSC® (certificado de cadeia de custódia C191539) e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o certificado está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
@@ -2324,7 +2327,8 @@
       "title": "Quatro densidades de perfuração",
       "description": "Tamanho do furo e área aberta por densidade. Quanto maior a área aberta, maior a absorção; quanto menor o furo, menos visível o padrão.",
       "spec": "Ø {d} mm · {pct} % de área aberta",
-      "drawingNote": "Desenhos a cerca de 2:1; tamanho do furo e área aberta conforme indicado por densidade."
+      "drawingNote": "Desenhos a cerca de 2:1; tamanho do furo e área aberta conforme indicado por densidade.",
+      "onRequest": "Outras densidades e padrões de perfuração são feitos a pedido a partir do seu desenho."
     },
     "acoustics": {
       "tag": "ACÚSTICA",
@@ -2368,7 +2372,7 @@
       "badge2": "Classe de formaldeído E1",
       "badge3": "Fabricado na Polónia",
       "badge4": "Recolha no fim de vida",
-      "badge1Desc": "Madeira de florestas geridas de forma responsável",
+      "badge1Desc": "Madeira de florestas geridas de forma responsável, certificado FSC® C191539",
       "badge2Desc": "Núcleo MDF ignífugo de baixas emissões, para interiores secos",
       "badge3Desc": "Produzido na nossa própria fábrica em Częstochowa (Polónia)",
       "description": "Folheado certificado FSC®, classe de formaldeído E1 e produção na nossa própria fábrica em Częstochowa. No fim de vida recolhemos os painéis."
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "De onde provém o folheado certificado FSC?",
-          "answer": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o número do certificado de cadeia de custódia está disponível a pedido."
+          "answer": "Todos os folheados rWood são certificados FSC® (certificado de cadeia de custódia C191539) e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o certificado está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
@@ -2585,7 +2589,7 @@
       "badge2": "Devolução Circular",
       "badge3": "Fabricado na Polónia",
       "badge4": "EPD disponível",
-      "badge1Desc": "Todos os folheados com certificação FSC®, de florestas geridas de forma responsável",
+      "badge1Desc": "Todos os folheados com certificação FSC® (C191539), de florestas geridas de forma responsável",
       "badge2Desc": "Devolução e reciclagem gratuitas do painel no fim de vida",
       "description": "Cada rWood Panel começa com folheado certificado FSC® de florestas geridas de forma responsável. No fim de vida, a Re-Sound recolhe os painéis gratuitamente.",
       "badge3Desc": "Fabricado na nossa própria fábrica em Częstochowa (Polónia)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Véu preto ou branco",
       "finishMadeToOrder": "Por encomenda",
       "finishMadeToOrderVal": "Qualquer outro folheado, tinta, pigmento e acabamento",
-      "certWoodSourcingVal": "Todos os folheados com certificação FSC®, de florestas geridas de forma responsável"
+      "certWoodSourcingVal": "Todos os folheados com certificação FSC® (C191539), de florestas geridas de forma responsável"
     },
     "related": {
       "tag": "PRODUTOS COMPLEMENTARES",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "De onde vem o folheado certificado FSC?",
-          "answer": "Todos os folheados rWood têm certificação FSC® e provêm de florestas geridas de forma responsável. O certificado de cadeia de custódia está disponível a pedido."
+          "answer": "Todos os folheados rWood têm certificação FSC® (certificado de cadeia de custódia C191539) e provêm de florestas geridas de forma responsável. O certificado está disponível a pedido."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "O folheado dos painéis acústicos de madeira tem certificação FSC?",
-          "answer": "Sim — todos os modelos rWood utilizam folheado com certificação FSC®, e o rWood Panel dispõe ainda de uma EPD disponível a pedido. A documentação de cadeia de custódia está disponível para concursos."
+          "answer": "Sim — todos os modelos rWood utilizam folheado com certificação FSC® (certificado de cadeia de custódia C191539), e o rWood Panel dispõe ainda de uma EPD disponível a pedido. A documentação de cadeia de custódia está disponível para concursos."
         },
         "q3": {
           "question": "Que classe de reação ao fogo atingem os painéis acústicos de madeira?",

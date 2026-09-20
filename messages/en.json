@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "up to {value}",
       "perPattern": "per pattern",
-      "baseUnit": "base unit"
+      "baseUnit": "base unit",
+      "fscCertifiedNumber": "FSC®-certified, C191539"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1970,11 +1971,14 @@
     },
     "patterns": {
       "tag": "PATTERNS",
-      "title": "Four lamella patterns",
-      "description2": "Four lamella patterns on the same 300 mm plank, from the classic six-lamella Original to the wide 3-Lamella. The drawings are to scale: lamella widths and 15 mm grooves as on the plank.",
+      "title": "One standard pattern, others on request",
+      "description2": "Original, the standard pattern: six lamellas of 34 mm on a 300 mm plank, grooves 15 mm wide, drawn to scale. Any other lamella layout is made on request.",
       "drawingAlt": "{name} pattern, {dims}, to scale on a 300 mm plank",
       "lamellaCount": "{count} lamellas",
-      "note": "Plank width 300 mm, groove width 15 mm. Standard size 19 × 300 × 2 400 or 2 780 mm. Weight per plank approx. 6.4–8.3 kg. Tolerances: thickness ± 0.2 mm, weight ± 10 %."
+      "note": "Plank width 300 mm, groove width 15 mm. Standard size 19 × 300 × 2 400 or 2 780 mm. Weight per plank approx. 6.4–8.3 kg. Tolerances: thickness ± 0.2 mm, weight ± 10 %.",
+      "standardLabel": "Standard pattern",
+      "onRequestTitle": "Other patterns on request",
+      "onRequestDesc": "Mixed widths (6 × 50 / 30 / 22 mm), four lamellas of 59 mm, three of 84 mm or your own layout on the same 300 mm plank: send us a drawing and we quote it."
     },
     "materials": {
       "tag": "MATERIALS",
@@ -2026,10 +2030,7 @@
       "veneerSwatch": "{name} veneer swatch"
     },
     "options": {
-      "originalDesc": "Classic 6-lamella design",
-      "mixedDesc": "Dynamic mixed widths",
-      "4lamellaDesc": "Bold wide strips",
-      "3lamellaDesc": "Statement wide panels"
+      "originalDesc": "Classic 6-lamella design"
     },
     "kpi": {
       "thickness": "mm thickness",
@@ -2037,7 +2038,8 @@
       "alphaW": "αw, weighted sound absorption",
       "fire": "reaction to fire, FR MDF core",
       "patterns": "lamella patterns on 300 mm planks",
-      "ariaLabel": "Key figures"
+      "ariaLabel": "Key figures",
+      "standardPattern": "mm lamellas, Original pattern as standard"
     },
     "buildUp": {
       "tag": "BUILD-UP",
@@ -2091,7 +2093,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % open",
       "drawingNote": "Drawings about 1:2, hole size and open area as stated per pattern.",
       "coreLight": "Light core",
-      "coreDark": "Dark core"
+      "coreDark": "Dark core",
+      "onRequest": "PD8 is the pattern behind the headline figures. Other perforation patterns (hole size, spacing, open area) are made on request from your drawing."
     },
     "surfaces": {
       "colorSelector": "Stock veneers",
@@ -2133,7 +2136,7 @@
       "badge2": "{pct} % recycled content",
       "badge3": "Made in Poland",
       "badge4": "Formaldehyde class E1",
-      "badge1Desc": "Wood from responsibly managed forests",
+      "badge1Desc": "Wood from responsibly managed forests, FSC® certificate C191539",
       "badge2Desc": "Recycled material in the panel",
       "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
       "badge4Desc": "Low-emission FR MDF core, for interior, dry areas",
@@ -2201,7 +2204,7 @@
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "All rWood veneers are FSC®-certified and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the chain-of-custody certificate number is available on request."
+          "answer": "All rWood veneers are FSC®-certified, chain-of-custody certificate C191539, and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the certificate is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
@@ -2321,7 +2324,8 @@
       "title": "Four perforation densities",
       "description": "Hole size and open area per density. The larger the open area, the higher the absorption; the smaller the hole, the less visible the pattern.",
       "spec": "Ø {d} mm · {pct} % open",
-      "drawingNote": "Drawings about 2:1, hole size and open area as stated per density."
+      "drawingNote": "Drawings about 2:1, hole size and open area as stated per density.",
+      "onRequest": "Other perforation densities and patterns are made on request from your drawing."
     },
     "acoustics": {
       "tag": "ACOUSTICS",
@@ -2365,7 +2369,7 @@
       "badge2": "Formaldehyde class E1",
       "badge3": "Made in Poland",
       "badge4": "Take-back at end of life",
-      "badge1Desc": "Wood from responsibly managed forests",
+      "badge1Desc": "Wood from responsibly managed forests, FSC® certificate C191539",
       "badge2Desc": "Low-emission FR MDF core, for interior, dry areas",
       "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
       "description": "FSC®-certified veneer, formaldehyde class E1 and production in our own plant in Częstochowa. At end of life we take the panels back."
@@ -2427,7 +2431,7 @@
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "All rWood veneers are FSC®-certified and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the chain-of-custody certificate number is available on request."
+          "answer": "All rWood veneers are FSC®-certified, chain-of-custody certificate C191539, and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the certificate is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
@@ -2582,7 +2586,7 @@
       "badge2": "Circular Take-Back",
       "badge3": "Made in Poland",
       "badge4": "EPD Available",
-      "badge1Desc": "All veneers FSC®-certified, from responsibly managed forests",
+      "badge1Desc": "All veneers FSC®-certified (C191539), from responsibly managed forests",
       "badge2Desc": "Free end-of-life panel return and recycling",
       "description": "Every rWood Panel starts with FSC®-certified veneer from responsibly managed forests. At end of life, Re-Sound takes the panels back free of charge.",
       "badge3Desc": "Manufactured in our own plant in Częstochowa (Poland)",
@@ -2622,7 +2626,7 @@
       "finishFeltVal": "Black or white fleece",
       "finishMadeToOrder": "Made to order",
       "finishMadeToOrderVal": "Any other veneer, stain, pigment and finish",
-      "certWoodSourcingVal": "All veneers FSC®-certified, from responsibly managed forests"
+      "certWoodSourcingVal": "All veneers FSC®-certified (C191539), from responsibly managed forests"
     },
     "related": {
       "tag": "MATCHING PRODUCTS",
@@ -2718,7 +2722,7 @@
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "All rWood veneers are FSC®-certified and come from responsibly managed forests. The chain-of-custody certificate is available on request."
+          "answer": "All rWood veneers are FSC®-certified, chain-of-custody certificate C191539, and come from responsibly managed forests. The certificate is available on request."
         },
         "fireRating": {
           "question": "What is the fire rating?",
@@ -4122,7 +4126,7 @@
         },
         "q2": {
           "question": "Is the veneer on wood acoustic panels FSC-certified?",
-          "answer": "Yes — every rWood model uses FSC®-certified veneer, and rWood Panel also has an EPD available on request. Chain-of-custody documentation is available for tenders."
+          "answer": "Yes — every rWood model uses FSC®-certified veneer (chain-of-custody certificate C191539), and rWood Panel also has an EPD available on request. Chain-of-custody documentation is available for tenders."
         },
         "q3": {
           "question": "What fire class do wood acoustic panels achieve?",

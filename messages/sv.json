@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "upp till {value}",
       "perPattern": "beroende på mönster",
-      "baseUnit": "basmodul"
+      "baseUnit": "basmodul",
+      "fscCertifiedNumber": "FSC®-certifierat, C191539"
     },
     "gallery": {
       "tag": "INSPIRATION",
@@ -1973,11 +1974,14 @@
     },
     "patterns": {
       "tag": "MÖNSTER",
-      "title": "Fyra lamellmönster",
-      "description2": "Fyra lamellmönster på samma 300 mm bräda, från den klassiska Original med sex lameller till den breda 3-Lamella. Ritningarna är skalenliga: lamellbredder och 15 mm spår som på brädan.",
+      "title": "Ett standardmönster, övriga på begäran",
+      "description2": "Original, standardmönstret: sex lameller på 34 mm på en 300 mm bräda, spår 15 mm breda, skalenligt ritade. Alla andra lamellindelningar tillverkas på begäran.",
       "drawingAlt": "Mönster {name}, {dims}, skalenligt på en 300 mm bräda",
       "lamellaCount": "{count} lameller",
-      "note": "Brädbredd 300 mm, spårbredd 15 mm. Standardmått 19 × 300 × 2 400 eller 2 780 mm. Vikt per bräda ca 6,4–8,3 kg. Toleranser: tjocklek ± 0,2 mm, vikt ± 10 %."
+      "note": "Brädbredd 300 mm, spårbredd 15 mm. Standardmått 19 × 300 × 2 400 eller 2 780 mm. Vikt per bräda ca 6,4–8,3 kg. Toleranser: tjocklek ± 0,2 mm, vikt ± 10 %.",
+      "standardLabel": "Standardmönster",
+      "onRequestTitle": "Andra mönster på begäran",
+      "onRequestDesc": "Blandade bredder (6 × 50 / 30 / 22 mm), fyra lameller på 59 mm, tre på 84 mm eller din egen indelning på samma 300 mm bräda: skicka oss en ritning så lämnar vi en offert."
     },
     "materials": {
       "tag": "MATERIAL",
@@ -2029,10 +2033,7 @@
       "veneerSwatch": "Fanerprov {name}"
     },
     "options": {
-      "originalDesc": "Klassisk design med 6 lameller",
-      "mixedDesc": "Dynamiska blandade bredder",
-      "4lamellaDesc": "Kraftfulla breda ribbor",
-      "3lamellaDesc": "Breda paneler som gör intryck"
+      "originalDesc": "Klassisk design med 6 lameller"
     },
     "kpi": {
       "thickness": "mm tjocklek",
@@ -2040,7 +2041,8 @@
       "alphaW": "αw, vägd ljudabsorption",
       "fire": "brandreaktion, FR MDF-kärna",
       "patterns": "lamellmönster på 300 mm brädor",
-      "ariaLabel": "Nyckeltal"
+      "ariaLabel": "Nyckeltal",
+      "standardPattern": "mm lameller, mönstret Original som standard"
     },
     "buildUp": {
       "tag": "UPPBYGGNAD",
@@ -2094,7 +2096,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % öppen yta",
       "drawingNote": "Ritningar ungefär 1:2, hålstorlek och öppen yta enligt uppgift per mönster.",
       "coreLight": "Ljus kärna",
-      "coreDark": "Mörk kärna"
+      "coreDark": "Mörk kärna",
+      "onRequest": "PD8 är mönstret bakom nyckeltalen. Andra perforeringsmönster (hålstorlek, delning, öppen yta) tillverkas på begäran efter din ritning."
     },
     "surfaces": {
       "colorSelector": "Lagerfaner",
@@ -2136,7 +2139,7 @@
       "badge2": "{pct} % återvunnet innehåll",
       "badge3": "Tillverkad i Polen",
       "badge4": "Formaldehydklass E1",
-      "badge1Desc": "Trä från ansvarsfullt brukade skogar",
+      "badge1Desc": "Trä från ansvarsfullt brukade skogar, FSC®-certifikat C191539",
       "badge2Desc": "Återvunnet material i panelen",
       "badge3Desc": "Producerad i vår egen fabrik i Częstochowa (Polen)",
       "badge4Desc": "Brandhämmande MDF-kärna med låga emissioner, för torra inomhusmiljöer",
@@ -2204,7 +2207,7 @@
       "questions": {
         "fscSource": {
           "question": "Var kommer det FSC-certifierade faneret ifrån?",
-          "answer": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; numret på chain-of-custody-certifikatet lämnas på begäran."
+          "answer": "Alla rWood-faner är FSC®-certifierade (chain-of-custody-certifikat C191539) och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; certifikatet lämnas på begäran."
         },
         "fireRating": {
           "question": "Vilken brandklass har panelen?",
@@ -2324,7 +2327,8 @@
       "title": "Fyra perforeringstätheter",
       "description": "Hålstorlek och öppen yta per täthet. Ju större öppen yta, desto högre absorption; ju mindre hål, desto mindre synligt mönster.",
       "spec": "Ø {d} mm · {pct} % öppen yta",
-      "drawingNote": "Ritningar ungefär 2:1, hålstorlek och öppen yta enligt uppgift per täthet."
+      "drawingNote": "Ritningar ungefär 2:1, hålstorlek och öppen yta enligt uppgift per täthet.",
+      "onRequest": "Andra perforeringstätheter och -mönster tillverkas på begäran efter din ritning."
     },
     "acoustics": {
       "tag": "AKUSTIK",
@@ -2368,7 +2372,7 @@
       "badge2": "Formaldehydklass E1",
       "badge3": "Tillverkad i Polen",
       "badge4": "Återtag vid livslängdens slut",
-      "badge1Desc": "Trä från ansvarsfullt brukade skogar",
+      "badge1Desc": "Trä från ansvarsfullt brukade skogar, FSC®-certifikat C191539",
       "badge2Desc": "Brandhämmande MDF-kärna med låga emissioner, för torra inomhusmiljöer",
       "badge3Desc": "Producerad i vår egen fabrik i Częstochowa (Polen)",
       "description": "FSC®-certifierat faner, formaldehydklass E1 och produktion i vår egen fabrik i Częstochowa. När panelerna tjänat ut tar vi tillbaka dem."
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "Var kommer det FSC-certifierade faneret ifrån?",
-          "answer": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; numret på chain-of-custody-certifikatet lämnas på begäran."
+          "answer": "Alla rWood-faner är FSC®-certifierade (chain-of-custody-certifikat C191539) och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; certifikatet lämnas på begäran."
         },
         "fireRating": {
           "question": "Vilken brandklass har panelen?",
@@ -2585,7 +2589,7 @@
       "badge2": "Cirkulär retur",
       "badge3": "Tillverkad i Polen",
       "badge4": "EPD tillgänglig",
-      "badge1Desc": "Alla faner är FSC®-certifierade, från ansvarsfullt brukade skogar",
+      "badge1Desc": "Alla faner är FSC®-certifierade (C191539), från ansvarsfullt brukade skogar",
       "badge2Desc": "Gratis returnering och återvinning av paneler vid livslängdens slut",
       "description": "Varje rWood Panel börjar med FSC®-certifierat faner från ansvarsfullt brukade skogar. Vid slutet av livslängden tar Re-Sound kostnadsfritt tillbaka panelerna.",
       "badge3Desc": "Tillverkad i vår egen fabrik i Częstochowa (Polen)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Svart eller vit fleece",
       "finishMadeToOrder": "På beställning",
       "finishMadeToOrderVal": "Valfritt annat faner, bets, pigment och ytbehandling",
-      "certWoodSourcingVal": "Alla faner är FSC®-certifierade, från ansvarsfullt brukade skogar"
+      "certWoodSourcingVal": "Alla faner är FSC®-certifierade (C191539), från ansvarsfullt brukade skogar"
     },
     "related": {
       "tag": "MATCHANDE PRODUKTER",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "Var kommer den FSC-certifierade fanéret från?",
-          "answer": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. Chain-of-custody-certifikatet tillhandahålls på begäran."
+          "answer": "Alla rWood-faner är FSC®-certifierade (chain-of-custody-certifikat C191539) och kommer från ansvarsfullt brukade skogar. Certifikatet tillhandahålls på begäran."
         },
         "fireRating": {
           "question": "Vad är brandklassificeringen?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "Är träfanern på akustikpaneler i trä FSC-certifierad?",
-          "answer": "Ja – varje rWood-modell använder FSC®-certifierat träfaner, och för rWood Panel finns även en EPD tillgänglig på begäran. Spårbarhetsdokumentation (chain of custody) finns för upphandlingar."
+          "answer": "Ja – varje rWood-modell använder FSC®-certifierat träfaner (chain-of-custody-certifikat C191539), och för rWood Panel finns även en EPD tillgänglig på begäran. Spårbarhetsdokumentation (chain of custody) finns för upphandlingar."
         },
         "q3": {
           "question": "Vilken brandklass uppnår akustikpaneler i trä?",

@@ -935,7 +935,8 @@
       "oekoTexStandard100": "OEKO-TEX® Standard 100",
       "upTo": "hasta {value}",
       "perPattern": "según el patrón",
-      "baseUnit": "módulo base"
+      "baseUnit": "módulo base",
+      "fscCertifiedNumber": "Certificación FSC®, C191539"
     },
     "gallery": {
       "tag": "INSPIRACIÓN",
@@ -1973,11 +1974,14 @@
     },
     "patterns": {
       "tag": "PATRONES",
-      "title": "Cuatro patrones de lamas",
-      "description2": "Cuatro patrones de lamas sobre la misma tabla de 300 mm, desde el clásico Original de seis lamas hasta el ancho 3-Lamella. Los dibujos están a escala: anchos de lama y ranuras de 15 mm como en la tabla.",
+      "title": "Un patrón estándar, los demás bajo pedido",
+      "description2": "Original, el patrón estándar: seis lamas de 34 mm en una tabla de 300 mm, ranuras de 15 mm de ancho, dibujadas a escala. Cualquier otra distribución de lamas se fabrica bajo pedido.",
       "drawingAlt": "Patrón {name}, {dims}, a escala sobre una tabla de 300 mm",
       "lamellaCount": "{count} lamas",
-      "note": "Ancho de tabla 300 mm, ancho de ranura 15 mm. Medida estándar 19 × 300 × 2 400 o 2 780 mm. Peso por tabla aprox. 6,4–8,3 kg. Tolerancias: espesor ± 0,2 mm, peso ± 10 %."
+      "note": "Ancho de tabla 300 mm, ancho de ranura 15 mm. Medida estándar 19 × 300 × 2 400 o 2 780 mm. Peso por tabla aprox. 6,4–8,3 kg. Tolerancias: espesor ± 0,2 mm, peso ± 10 %.",
+      "standardLabel": "Patrón estándar",
+      "onRequestTitle": "Otros patrones bajo pedido",
+      "onRequestDesc": "Anchos mixtos (6 × 50 / 30 / 22 mm), cuatro lamas de 59 mm, tres de 84 mm o su propia distribución en la misma tabla de 300 mm: envíenos un plano y le haremos un presupuesto."
     },
     "materials": {
       "tag": "MATERIALES",
@@ -2029,10 +2033,7 @@
       "veneerSwatch": "Muestra de chapa {name}"
     },
     "options": {
-      "originalDesc": "Diseño clásico de 6 lamas",
-      "mixedDesc": "Anchos mixtos dinámicos",
-      "4lamellaDesc": "Lamas anchas de gran presencia",
-      "3lamellaDesc": "Lamas extraanchas de gran impacto"
+      "originalDesc": "Diseño clásico de 6 lamas"
     },
     "kpi": {
       "thickness": "mm de espesor",
@@ -2040,7 +2041,8 @@
       "alphaW": "αw, absorción acústica ponderada",
       "fire": "reacción al fuego, núcleo MDF FR",
       "patterns": "patrones de lamas en tablas de 300 mm",
-      "ariaLabel": "Cifras clave"
+      "ariaLabel": "Cifras clave",
+      "standardPattern": "mm de lamas, patrón Original como estándar"
     },
     "buildUp": {
       "tag": "COMPOSICIÓN",
@@ -2094,7 +2096,8 @@
       "specDouble": "2 × Ø {d} mm · {pct} % de área abierta",
       "drawingNote": "Dibujos a aproximadamente 1:2; tamaño del orificio y área abierta según se indica por patrón.",
       "coreLight": "Núcleo claro",
-      "coreDark": "Núcleo oscuro"
+      "coreDark": "Núcleo oscuro",
+      "onRequest": "PD8 es el patrón de las cifras principales. Otros patrones de perforación (tamaño de orificio, separación, área abierta) se fabrican bajo pedido a partir de su plano."
     },
     "surfaces": {
       "colorSelector": "Chapas de stock",
@@ -2136,7 +2139,7 @@
       "badge2": "{pct} % de contenido reciclado",
       "badge3": "Fabricado en Polonia",
       "badge4": "Clase de formaldehído E1",
-      "badge1Desc": "Madera de bosques gestionados de forma responsable",
+      "badge1Desc": "Madera de bosques gestionados de forma responsable, certificado FSC® C191539",
       "badge2Desc": "Material reciclado en el panel",
       "badge3Desc": "Producido en nuestra propia fábrica de Częstochowa (Polonia)",
       "badge4Desc": "Núcleo MDF ignífugo de bajas emisiones, para interiores secos",
@@ -2204,7 +2207,7 @@
       "questions": {
         "fscSource": {
           "question": "¿De dónde procede la chapa certificada FSC?",
-          "answer": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el número del certificado de cadena de custodia está disponible a petición."
+          "answer": "Todas las chapas rWood están certificadas FSC® (certificado de cadena de custodia C191539) y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el certificado está disponible a petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
@@ -2324,7 +2327,8 @@
       "title": "Cuatro densidades de perforación",
       "description": "Tamaño del orificio y área abierta por densidad. Cuanto mayor es el área abierta, mayor es la absorción; cuanto menor es el orificio, menos visible es el patrón.",
       "spec": "Ø {d} mm · {pct} % de área abierta",
-      "drawingNote": "Dibujos a aproximadamente 2:1; tamaño del orificio y área abierta según se indica por densidad."
+      "drawingNote": "Dibujos a aproximadamente 2:1; tamaño del orificio y área abierta según se indica por densidad.",
+      "onRequest": "Otras densidades y patrones de perforación se fabrican bajo pedido a partir de su plano."
     },
     "acoustics": {
       "tag": "ACÚSTICA",
@@ -2368,7 +2372,7 @@
       "badge2": "Clase de formaldehído E1",
       "badge3": "Fabricado en Polonia",
       "badge4": "Recogida al final de la vida útil",
-      "badge1Desc": "Madera de bosques gestionados de forma responsable",
+      "badge1Desc": "Madera de bosques gestionados de forma responsable, certificado FSC® C191539",
       "badge2Desc": "Núcleo MDF ignífugo de bajas emisiones, para interiores secos",
       "badge3Desc": "Producido en nuestra propia fábrica de Częstochowa (Polonia)",
       "description": "Chapa certificada FSC®, clase de formaldehído E1 y producción en nuestra propia fábrica de Częstochowa. Al final de su vida útil recogemos los paneles."
@@ -2430,7 +2434,7 @@
       "questions": {
         "fscSource": {
           "question": "¿De dónde procede la chapa certificada FSC?",
-          "answer": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el número del certificado de cadena de custodia está disponible a petición."
+          "answer": "Todas las chapas rWood están certificadas FSC® (certificado de cadena de custodia C191539) y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el certificado está disponible a petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
@@ -2585,7 +2589,7 @@
       "badge2": "Devolución Circular",
       "badge3": "Fabricado en Polonia",
       "badge4": "EPD disponible",
-      "badge1Desc": "Todas las chapas con certificación FSC®, de bosques gestionados de forma responsable",
+      "badge1Desc": "Todas las chapas con certificación FSC® (C191539), de bosques gestionados de forma responsable",
       "badge2Desc": "Devolución y reciclaje gratuitos del panel al final de su vida útil",
       "description": "Cada rWood Panel empieza con chapa certificada FSC® de bosques gestionados de forma responsable. Al final de su vida útil, Re-Sound recoge los paneles gratuitamente.",
       "badge3Desc": "Fabricado en nuestra propia planta de Częstochowa (Polonia)",
@@ -2625,7 +2629,7 @@
       "finishFeltVal": "Velo negro o blanco",
       "finishMadeToOrder": "Por encargo",
       "finishMadeToOrderVal": "Cualquier otra chapa, tinte, pigmento y acabado",
-      "certWoodSourcingVal": "Todas las chapas con certificación FSC®, de bosques gestionados de forma responsable"
+      "certWoodSourcingVal": "Todas las chapas con certificación FSC® (C191539), de bosques gestionados de forma responsable"
     },
     "related": {
       "tag": "PRODUCTOS COMPLEMENTARIOS",
@@ -2721,7 +2725,7 @@
       "questions": {
         "fscSource": {
           "question": "¿De dónde procede el chapado certificado FSC?",
-          "answer": "Todas las chapas rWood tienen certificación FSC® y proceden de bosques gestionados de forma responsable. El certificado de cadena de custodia está disponible bajo petición."
+          "answer": "Todas las chapas rWood tienen certificación FSC® (certificado de cadena de custodia C191539) y proceden de bosques gestionados de forma responsable. El certificado está disponible bajo petición."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
@@ -4125,7 +4129,7 @@
         },
         "q2": {
           "question": "¿La chapa de madera de los paneles acústicos tiene certificación FSC?",
-          "answer": "Sí: todos los modelos rWood utilizan chapa de madera con certificación FSC®, y rWood Panel dispone además de una EPD bajo petición. La documentación de cadena de custodia está disponible para licitaciones."
+          "answer": "Sí: todos los modelos rWood utilizan chapa de madera con certificación FSC® (certificado de cadena de custodia C191539), y rWood Panel dispone además de una EPD bajo petición. La documentación de cadena de custodia está disponible para licitaciones."
         },
         "q3": {
           "question": "¿Qué clase de fuego alcanzan los paneles acústicos de madera?",
