@@ -137,6 +137,47 @@ hub, price guide, blog posts, manufacturing page).
    (`public/documents/README.md`).
    The datasheet facts that changed the site, and the questions they raise,
    are in sections C, D and G below and in item 11.
+11. **Questions the datasheets raised (rWood, 20 September).** The pages now
+   say only what the datasheets and the colour guide say; everything below
+   was on the site without a source and is gone until you confirm it, or is
+   a reading the sheets leave open.
+   (a) **rWood Groove:** the Mixed pattern is printed "6 × 50 / 30 / 22 mm"
+   without the order of the widths; the page draws 50-30-22-50-30-22 — send
+   the drawing if it differs. No clip system is mentioned for Groove
+   (battens or glue only); the old FAQ promised one. The recycled share of
+   the plank and the octave-band values ("follow with the new test series")
+   are still open. The take-back sentence is now printed on every rWood
+   page because it is on the datasheets — confirm it covers the Polish lines.
+   (b) **rWood Micro and Perf:** the first stock veneer is printed "Beech
+   White Ash" (the guide lists White Ash and White Beech separately) — which
+   is it? Backlit Micro panels, K1-10 / K2-10 fire resistance, TVOC (ISO
+   16000), "no added formaldehyde" (the sheet says class E1), 30 mm mineral
+   wool (sheet: 50 mm), the weights "0,35 kg/m²" and "48,40 kg/m³", and
+   glue-fixing for Micro were all removed — say which of these exist and
+   send the certificate or figure. Does FSC C191539 (on the Groove sheet)
+   cover Micro and Perf? Minimum order and delivery terms for rWood are
+   shown "on request". Two photos are swapped: rwood-micro/surface-detail
+   shows a Perf-type pattern and rwood-perf/overview-detail a
+   micro-perforation; both are unused until replaced. The 17 % recycled
+   content on rWood Perf is not on its datasheet — confirm or it goes.
+   (c) **rWood Panel (colour guide only, no datasheet yet):** the page kept
+   its format, thickness and fire classes (D-s2,d0 for the standard core —
+   the Groove sheet says D-s2,d2: same MDF?), lists the guide's twelve
+   veneers and its surface treatments (natural lacquer, pigmented, HPL,
+   foil, paint). Removed for lack of a source: weight 14,5 kg/m², core
+   density 700 kg/m³, the lacquer system (UV-cured, 6 layers, 3–5 GU,
+   anti-fingerprint, scratch ≥ 2 N), "E1 / CARB 2", "green energy",
+   "40× more surface than solid lumber", oil and unfinished surfaces, the
+   50-panel minimum for custom veneers, the 3–4 / 6–8 week lead times and
+   free shipping in Belgium. Send the rWood Panel datasheet and these come
+   back as rows. Is there an EPD for rWood Panel (the data says yes, the
+   guide is silent)? Has the panel a measured αw (the title still calls it
+   an acoustic panel)? Photos are missing for Honey Oak, Cocoa Oak, White
+   Ash and White Beech (the guide swatch is shown), and Beech-White.jpg
+   cannot be told apart between White Ash and White Beech.
+   (d) The guide's options (HPL, foil, paint, core colours brown/green/black,
+   Nature and Gemini ranges) are shown on Micro, Perf and Panel because the
+   guide says it applies to them — confirm they are orderable on each.
 
 ## B. Confirmed price list (per model)
 
