@@ -21,7 +21,7 @@ faq: [{"question":"Hvaða ómtíma þarf kennslustofa að ná?","answer":"Enginn
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 0
+wordCount: 1262
 ---
 
 **Í kennslustofu ræður ómtíminn því hvort nemendur skilja kennarann og hvort kennarinn hefur enn rödd klukkan fjögur.** Enginn íslenskur staðall er lagður til grundvallar í þessari grein; til viðmiðunar setur belgíski staðallinn NBN S 01-400-2 hámarksómtíma fyrir skólabyggingar, sem fyrir venjulega kennslustofu jafngildir í reynd um 0,6 til 0,8 sekúndum, og sú stærðargráða er algeng víðar, meðan ómeðhöndluð stofa með gifsi, gleri og flísalögðu gólfi liggur oft yfir 1 sekúndu. Í greininni förum við yfir hvað staðlar biðja um, hvernig þú mælir, hve mikið ísog þú þarft og hvaða lausnir endast í tíu skólaár.

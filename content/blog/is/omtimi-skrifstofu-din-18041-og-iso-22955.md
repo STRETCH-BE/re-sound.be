@@ -21,7 +21,7 @@ faq: [{"question":"Hvaða ómtíma gerir DIN 18041 ráð fyrir á skrifstofu?","
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1509
+wordCount: 1496
 ---
 
 **Enginn íslenskur staðall segir til um ómtíma á skrifstofu; í þessari grein notum við aðferð þýska staðalsins DIN 18041 sem viðmið. Fyrir fundar- og ráðstefnuherbergi (flokkur A, hópur A3 „kennsla/samskipti“) gildir þar T_mark = 0,32 · log(V) − 0,17 s, eða um 0,39 s fyrir 56 m³; opin skrifstofurými teljast til flokks B og eru skipulögð út frá hlutfalli ísogsflatar og rúmmáls, með ISO 22955 sem staðlinum fyrir opin rými.** Hér eru báðir útreikningarnir og aðgerðirnar sem passa við þá.
@@ -33,7 +33,7 @@ DIN 18041 „Hörsamkeit in Räumen“ (2016) er í Þýskalandi grunnurinn að 
 - **Flokkur A – heyranleiki yfir meðallangar og lengri vegalengdir.** Staðallinn gefur fyrir hverja notkun markómtíma T_mark sem fall af rúmmáli rýmisins; fundar-, ráðstefnu- og kennslurými reiknum við eftir hópi A3 „kennsla/samskipti“.
 - **Flokkur B – heyranleiki yfir stuttar vegalengdir.** Opin skrifstofurými, mötuneyti, umferðarrými: hér vinnur staðallinn ekki með fastan ómtíma heldur með lágmarkskröfu um ísog í hlutfalli við rúmmál.
 
-Markgildin gilda fyrir innréttað rými. Staðfestu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum; hann raðar rýminu í réttan hóp og segir þér hvort þýska aðferðin eða ISO-staðlarnir eiga við í þínu tilviki.
+Markgildin gilda fyrir innréttað rými. Staðfestu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum; hann raðar rýminu í réttan hóp.
 
 ## Formúlan fyrir A3 og dæmigerð rúmmál skrifstofa
 

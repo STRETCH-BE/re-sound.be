@@ -21,7 +21,7 @@ faq: [{"question":"Hvaða hljóðdeyfiplötur henta veitingastað?","answer":"Í
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 0
+wordCount: 1248
 ---
 
 **Á veitingastað þar sem ómtíminn fer yfir 1 sekúndu tala gestirnir hærra, sitja skemur og skrifa um það í umsögninni.** Hljóðdeyfiplötur í loftinu og á veggjunum bak við bekkina færa óminn niður í 0,6 til 0,8 sekúndur: samtölin haldast við borðið, stemningin helst lifandi og salurinn hljómar fullur án þess að vera hávær. Í þessari grein förum við yfir hvaða ómtími hentar hvaða hugmynd, hvar plötur skila mestu, hvað brunaflokkur þýðir fyrir veitingarekstur og hvað 100 m² salur þarf.

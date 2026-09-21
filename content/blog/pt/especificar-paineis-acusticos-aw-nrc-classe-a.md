@@ -55,7 +55,7 @@ O relatório de ensaio indica como a amostra foi montada, e a classificação s�
 - **Tipo A**: o painel assenta diretamente na superfície dura, como quando é colado ou clipado rente à parede.
 - **Caixa de ar**: ensaiado afastado da superfície, sobre ripas ou como teto; uma caixa de ar atrás melhora a absorção nas frequências baixas, pelo que o mesmo painel pontua mais. O rPET Panel de 12 mm mostra a amplitude: αw 0,25 (classe D) rente à parede, 0,60 (classe C) com 50 mm de caixa de ar, 0,80 (classe B) com 100 mm de caixa de ar, 1,00 (classe A) com 50 mm de caixa de ar e 50 mm de lã de rocha, e 0,95 (classe A) com 100 mm de caixa de ar e 100 mm de lã de rocha.
 
-Um valor de caixa de ar não se reproduz com um painel colado a gesso cartonado, por isso a cláusula tem de levar valor e condição juntos. Os [painéis acústicos de madeira](/pt/products/wood-acoustic-panels) acrescentam uma segunda condição: o rWood Groove (αw 0,90, classe A) leva o seu próprio feltro de 3 mm no verso, vai sobre ripas ou colado, e a cavidade atrás dele pode receber um absorvente extra (feltro acústico, um painel rPET ou lã mineral); o [rWood Micro](/pt/products/rwood-micro) (αw 0,90, classe A) pendura-se em clipes com uma caixa de ar atrás e atinge αw 1,00 com 50 mm de lã mineral, pelo que deve especificar a caixa e o que a preenche.
+Um valor de caixa de ar não se reproduz com um painel colado a gesso cartonado, por isso a cláusula tem de levar valor e condição juntos. Os [painéis acústicos de madeira](/pt/products/wood-acoustic-panels) acrescentam uma segunda condição: o rWood Groove (αw 0,90, classe A) leva o seu próprio feltro de 3 mm no verso, vai sobre ripas ou colado, e a cavidade atrás pode receber um absorvente extra (feltro acústico, painel rPET ou lã mineral); o [rWood Micro](/pt/products/rwood-micro) (αw 0,90, classe A) pendura-se em clipes com uma caixa de ar atrás e atinge αw 1,00 com 50 mm de lã mineral: especifique a caixa e o que a preenche.
 
 ## Porque as condições de laboratório importam: um exemplo calculado
 
@@ -75,7 +75,7 @@ A αw 0,80 (rPET Panel de 12 mm com 100 mm de caixa de ar, classe B) são 5,0 / 
 
 **Emissões e materiais.** Para o feltro, peça a OEKO-TEX Standard 100; o nosso rPET tem-na. Para a madeira, peça a FSC no folheado; o rWood usa apenas folheados com certificação FSC, com formaldeído de classe E1.
 
-**Conteúdo reciclado e recolha.** Indique o conteúdo reciclado mínimo e o percurso no fim de vida. O rPET Groove é feito inteiramente em PET reciclado, e todos os nossos painéis são recolhidos gratuitamente na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo, e só nesses cinco países: a recolha não abrange Portugal (ver [sustentabilidade](/pt/sustainability)). A Re-Sound é uma marca do Stretch Group. Fabricamos nas nossas próprias fábricas em Beveren-Waas (Bélgica) e Częstochowa (Polónia).
+**Conteúdo reciclado e recolha.** Indique o conteúdo reciclado mínimo e o percurso no fim de vida. O rPET Groove é feito inteiramente em PET reciclado, e todos os nossos painéis são recolhidos gratuitamente em cinco países (Bélgica, Países Baixos, França, Alemanha, Luxemburgo) e em nenhum outro: para Portugal não há recolha (ver [sustentabilidade](/pt/sustainability)). A Re-Sound é uma marca do Stretch Group; as fábricas são nossas, em Beveren-Waas (Bélgica) e em Częstochowa (Polónia).
 
 ## As gamas Re-Sound como exemplos
 

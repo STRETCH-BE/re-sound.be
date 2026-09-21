@@ -21,7 +21,7 @@ faq: [{"question":"Hvaða ómtími er góður í opnu skrifstofurými?","answer"
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 0
+wordCount: 1327
 ---
 
 Opið skrifstofurými verður ekki hávært af illum vilja heldur af hörðum efnum og of mörgu fólki sem vill láta skilja sig á sama tíma. **Hljóðvistina bætirðu nánast alltaf með þrennu í senn: þú bætir við ísogi (loft og veggir), afmarkar svæði (skilrúm og klefar) og semur við fólkið um hvar er hringt og fundað.** Hér á eftir eru sjö aðgerðir sem við hjá Re-Sound sjáum virka í reynd, í þeirri röð sem þær skila mestu.
