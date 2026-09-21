@@ -279,10 +279,26 @@ hub, price guide, blog posts, manufacturing page).
    DIN 18041 is presented abroad as "the German reference method", and every
    norm question ends with "check with your acoustician"; "sample kit
    within three working days" and the on-site demo offer were dropped
-   outside Benelux/DE. **Icelandic needs a native read** before you point
-   anyone at /is/blog — the register is informal þú and the terminology
-   (hljóðdeyfiplötur, ómtími) is consistent, but nobody Icelandic has read
-   it. Meta descriptions: on 21 September every page description on the
+   outside Benelux/DE. **Editing pass, 21 September:** the
+   34 posts whose writers had been cut off before their final read-through
+   (FR 6, DE 6, ES 10, SV 6, IS 6) were re-read end to end by a
+   language editor each: calques from the source language rewritten,
+   grammar and case errors fixed, terminology made consistent within each
+   language (one word for reverberation time, absorber, booth, felt),
+   national typography applied (French narrow spaces, Spanish thousands,
+   German dashes), FAQ answers kept identical in front matter and body,
+   and no fact, figure, price token or link changed. One precision fix
+   from that pass: the Solo Flex speech reduction now reads "about
+   24 dB(A)" everywhere. The editors flagged three things that come from
+   the source posts and were left as written for you to decide: the wall
+   panel rule of thumb under an absorbent ceiling is 10–15 % of the floor
+   in the "how many panels" posts and 15–20 % in the open-office posts'
+   FAQ; the classroom posts say returned material "goes back into our
+   production" (the sustainability page only promises free take-back);
+   and the booth posts give assembly times (two people, under three hours
+   for Solo Flex; about one hour per booth for our fitters). **Icelandic
+   still deserves a native read** before you promote /is/blog: an editor
+   pass was done, but no Icelandic speaker has read it. Meta descriptions: on 21 September every page description on the
    site was brought to 155 characters or fewer in all ten languages (ten
    blog posts, the seven rPET/rWood product pages, the rPET and booth
    range pages, the calculator and the booth price guide); nothing was
