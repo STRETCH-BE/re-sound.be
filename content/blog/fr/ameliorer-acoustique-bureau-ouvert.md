@@ -14,14 +14,14 @@ datePublished: "2026-09-20"
 dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroAlt: "Bureau ouvert équipé de panneaux muraux rPET Groove et d'une cabine acoustique Solo Flex"
-internalLinks: ["/fr/where-to-buy","https://stretchplafond.be/products/acoustic-stretch-system","/fr/products/rpet-groove","/fr/products/rwood-groove","/fr/products/interior","/fr/products/divide","/fr/products/solo-eco","/fr/products/solo-flex","/fr/blog/cabine-acoustique-bureau-prix","/fr/products/modular-xl","/fr/products/duo","/fr/blog/combien-de-panneaux-acoustiques","/fr/products/panneaux-acoustiques-pet"]
+internalLinks: ["/fr/where-to-buy","https://stretchplafond.be/products/acoustic-stretch-system","/fr/products/rpet-groove","/fr/products/rwood-groove","/fr/products/interior","/fr/products/divide","/fr/products/solo-eco","/fr/products/solo-flex","/fr/blog/cabine-acoustique-bureau-prix","/fr/products/modular-xl","/fr/products/duo","/fr/products/panneaux-acoustiques-pet","/fr/blog/combien-de-panneaux-acoustiques"]
 cta: "Demandez un conseil acoustique gratuit ou un kit d'échantillons."
-sources: "ISO 22955:2021 (qualité acoustique des bureaux ouverts) ; ISO 3382-3 (décroissance de la parole en bureau ouvert) ; ISO 3382-2 (mesure du temps de réverbération) ; ISO 11654 (classes d'absorption) ; données produit Re-Sound."
+sources: "ISO 22955:2021 (qualité acoustique des bureaux ouverts) ; ISO 3382-3 (décroissance de la parole en bureau ouvert) ; ISO 3382-2 (mesure de la réverbération) ; ISO 11654 (classes d'absorption) ; données produit Re-Sound."
 faq: [{"question":"Quel est un bon temps de réverbération pour un bureau ouvert ?","answer":"Entre 0,5 et 0,8 seconde, selon la hauteur sous plafond et l'occupation. Au-delà de 1 seconde, l'absorption (plafond, murs) est la première étape ; autour de 0,6 seconde et toujours agité, cloisonner et installer des cabines rapporte davantage."},{"question":"Les panneaux acoustiques aident-ils contre le bruit des collègues ?","answer":"Oui, de deux façons : ils raccourcissent la réverbération, ce qui fait baisser le niveau de fond, et ils réduisent la distance à laquelle on comprend encore ses collègues. Ils ne rendent pas inaudible une conversation sur le plateau ; c'est le rôle des cabines et des pods."},{"question":"De combien de panneaux un bureau ouvert a-t-il besoin ?","answer":"Comme règle empirique, 15 à 20 % de la surface au sol en absorption de classe A ou B, en plus d'un plafond absorbant. Notre article sur le calcul du nombre de panneaux le détaille pour trois locaux."}]
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 1466
+wordCount: 1580
 ---
 
 Un bureau ouvert ne devient pas bruyant par mauvaise volonté, mais à cause de matériaux durs et d'un trop grand nombre de personnes qui veulent se faire comprendre en même temps. **Améliorer l'acoustique passe presque toujours par trois leviers combinés : ajouter de l'absorption (plafond et murs), cloisonner des zones (parois mobiles et cabines) et convenir des endroits où l'on téléphone et où l'on se réunit.** Voici les sept mesures que nous voyons fonctionner sur le terrain chez Re-Sound, dans l'ordre de leur rendement.
@@ -40,7 +40,7 @@ Avant d'acheter quoi que ce soit, mesurez. Une mesure du temps de réverbératio
 - **Salles de réunion** : ≤ 0,6 s.
 - **Zones de concentration et cabines** : le plus bas possible, ≤ 0,5 s.
 
-Si vous mesurez 1,0 s ou plus, l'absorption vient en premier. Si vous êtes déjà autour de 0,6 s et que le plateau reste agité, c'est la décroissance de la parole avec la distance qui pose problème : cloisonner et installer des cabines rapportera plus que des panneaux supplémentaires. Re-Sound mesure sur demande dans sa [salle d'exposition](/fr/where-to-buy) ou chez vous.
+Si vous mesurez 1,0 s ou plus, l'absorption vient en premier. Si vous êtes déjà autour de 0,6 s et que le plateau reste agité, c'est l'affaiblissement de la parole d'un poste à l'autre qui pose problème : cloisonner et installer des cabines rapportera plus que des panneaux supplémentaires. Re-Sound mesure sur demande dans sa [salle d'exposition](/fr/where-to-buy) ou chez vous.
 
 ## 1. Commencez par le plafond
 
@@ -55,7 +55,7 @@ Règle empirique : rendre absorbants 60 à 80 % de la surface du plafond règle 
 
 Les murs viennent après le plafond, mais pas n'importe où. Le son se réfléchit le plus fort sur le mur qui fait face à la source et sur les longs murs d'une pièce rectangulaire. C'est là que vont les panneaux :
 
-- **[rPET Groove](/fr/products/rpet-groove)** (rainuré, dix coloris de stock et toute teinte sur commande, 12/24/36 mm) pour les grands pans de mur qui peuvent prendre de la couleur. NRC 0,55 / 0,75 / 0,90 selon l'épaisseur, classe feu B-s1,d0 en blanc, gris et noir et B-s2,d0 dans les autres coloris.
+- **[rPET Groove](/fr/products/rpet-groove)** (rainuré, dix coloris de stock et toute teinte sur commande, 12/24/36 mm) pour les grands pans de mur qui peuvent prendre de la couleur. NRC 0,55 / 0,75 / 0,90 selon l'épaisseur, classe feu B-s1,d0 (blanc, gris et noir) ou B-s2,d0 (autres couleurs).
 - **[rWood Groove](/fr/products/rwood-groove) ou rWood Micro** quand l'intérieur réclame de la chaleur : placage certifié FSC sur âme MDF (lamelles MDF sur 3 mm de feutre PET recyclé pour le Groove, âme MDF ignifugée à chambres acoustiques pour le Micro), αw 0,90 (classe A).
 - **[Interior](/fr/products/interior)**, nos panneaux textiles modulaires à housse amovible et lavable, pour les zones où les panneaux sont souvent remplacés ou déplacés.
 
@@ -90,7 +90,7 @@ Un ordre réaliste pour un plateau de 300 m² avec trente postes :
 3. **Deux à trois cabines** et, si les salles de réunion manquent, un Duo ou un Modular XL.
 4. **Modules Divide** entre les équipes et règles d'usage.
 
-Chaque étape se réalise et se mesure séparément. Nous livrons le [rPET](/fr/products/panneaux-acoustiques-pet) en 3 à 4 semaines ouvrées environ, le rWood Micro et Perf en placages de stock en 3 à 4 semaines et le rWood Groove dans un délai confirmé à la commande ; les cabines en quatre à six semaines. En fin de vie, nous reprenons tout gratuitement en Belgique, aux Pays-Bas, au Luxembourg, en France et en Allemagne. Re-Sound est une marque du groupe Stretch et produit dans ses propres usines de Beveren-Waas et de Częstochowa : vous parlez aux personnes qui conçoivent le produit. Pour dimensionner les m² de panneaux, voyez [Combien de panneaux acoustiques faut-il ?](/fr/blog/combien-de-panneaux-acoustiques).
+Chaque étape se réalise et se mesure séparément. Le [rPET](/fr/products/panneaux-acoustiques-pet) part en 3 à 4 semaines ouvrées environ, les rWood Micro et Perf en 3 à 4 semaines pour les placages de stock, le rWood Groove dans un délai confirmé à la commande ; les cabines en quatre à six semaines. En fin de vie, nous reprenons tout gratuitement en Belgique, aux Pays-Bas, au Luxembourg, en France et en Allemagne. Re-Sound est une marque du groupe Stretch et produit dans ses propres usines de Beveren-Waas et de Częstochowa : vous parlez aux personnes qui conçoivent le produit. Pour dimensionner les m² de panneaux, voyez [notre guide de calcul](/fr/blog/combien-de-panneaux-acoustiques).
 
 **Vous voulez savoir où en est votre bureau ?** Demandez un kit d'échantillons gratuit ou réservez une visite de la salle d'exposition de Beveren-Waas, où tous les panneaux et toutes les cabines sont installés.
 
@@ -105,4 +105,4 @@ Oui, de deux façons : ils raccourcissent la réverbération, ce qui fait baisse
 **De combien de panneaux un bureau ouvert a-t-il besoin ?**
 Comme règle empirique, 15 à 20 % de la surface au sol en absorption de classe A ou B, en plus d'un plafond absorbant. Notre article sur le calcul du nombre de panneaux le détaille pour trois locaux.
 
-*Sources : ISO 22955:2021 (qualité acoustique des bureaux ouverts) ; ISO 3382-3 (décroissance de la parole en bureau ouvert) ; ISO 3382-2 (mesure du temps de réverbération) ; ISO 11654 (classes d'absorption) ; données produit Re-Sound.*
+*Sources : ISO 22955:2021 (qualité acoustique des bureaux ouverts) ; ISO 3382-3 (décroissance de la parole en bureau ouvert) ; ISO 3382-2 (mesure de la réverbération) ; ISO 11654 (classes d'absorption) ; données produit Re-Sound.*

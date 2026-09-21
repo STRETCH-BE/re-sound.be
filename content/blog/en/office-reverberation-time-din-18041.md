@@ -21,10 +21,10 @@ faq: [{"question":"Which reverberation time does an office need?","answer":"Usin
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1707
+wordCount: 1714
 ---
 
-**For the reverberation time of an office we plan with the method of the German standard DIN 18041 as a reference: for meeting and conference rooms (its category A, group A3, teaching/communication) it sets T = 0.32·lg(V) − 0.17 s, roughly 0.39 s for 56 m³, while open-plan floors fall under its category B and are planned on the ratio of absorption area to room volume, supplemented by VDI 2569 and ISO 22955.** For UK readers BS 8233 is the general pointer on sound in buildings; check the exact requirement with your acoustician. Here are both calculations and the measures that go with them.
+**For the reverberation time of an office we plan with the method of the German standard DIN 18041 as a reference: for meeting and conference rooms (its category A, group A3, teaching/communication) it sets T = 0.32·lg(V) − 0.17 s, roughly 0.39 s for 56 m³, while open-plan floors fall under its category B and are planned on the ratio of absorption area to room volume, supplemented by VDI 2569 and ISO 22955.** UK readers will know BS 8233 as the general guidance on sound in buildings; check the exact requirement with your acoustician. Here are both calculations and the measures that go with them.
 
 ## What DIN 18041 covers: two categories of room
 
@@ -51,9 +51,9 @@ Small meeting rooms are the most demanding: no room with a plasterboard ceiling,
 
 Meeting room 5 × 4 m, 2.8 m high = 56 m³, carpet tiles, glass wall, screen on the end wall. Measured: **0.9 s**. Target under A3: **0.39 s**. Sabine's formula A = 0.161 × V / T:
 
-- present: 0.161 × 56 / 0.9 = **10.0 m² Sabine**
-- required: 0.161 × 56 / 0.39 = **23.1 m² Sabine**
-- shortfall: 23.1 − 10.0 = **13.1 m² Sabine**
+- today: 0.161 × 56 / 0.9 = **10.0 m² Sabine**
+- at 0.39 s: 0.161 × 56 / 0.39 = **23.1 m² Sabine**
+- still needed: 23.1 − 10.0 = **13.1 m² Sabine**
 
 Proposal: **12 m² of class A ceiling rafts** (assume αw 0.9) = 10.8 m² Sabine, plus **one sheet of rPET Panel** (12 mm, 2,440 × 1,220 mm) on a 100 mm air cavity facing the screen: 2.98 m² × 0.80 = 2.4 m² Sabine. New absorption 13.2 m², with the existing 10.0 m² a total of 23.2 m²: T = 0.161 × 56 / 23.2 = **0.39 s**, target met. Line the whole room with panels and you drop below the tolerance band: under DIN 18041 more is not automatically better. The frequency dependence (low frequencies call for thicker panels or an air gap behind them) is something to check with your acoustician.
 
@@ -70,9 +70,9 @@ The numerical values belong in an acoustic report; for UK projects BS 8233 is th
 
 Floor 20 × 12 m, 3 m high = 720 m³, screed floor, concrete ceiling. Estimated: **1.2 s**. Target: **0.7 s**.
 
-- present: 0.161 × 720 / 1.2 = **96.6 m² Sabine**
-- required: 0.161 × 720 / 0.7 = **165.6 m² Sabine**
-- shortfall: 165.6 − 96.6 = **69 m² Sabine**
+- today: 0.161 × 720 / 1.2 = **96.6 m² Sabine**
+- at 0.7 s: 0.161 × 720 / 0.7 = **165.6 m² Sabine**
+- still needed: 165.6 − 96.6 = **69 m² Sabine**
 
 With wall panels alone (rPET Panel 12 mm on a 100 mm air cavity, αw 0.80) that would be 69 / 0.80 = 86 m². Better spread out:
 
@@ -84,7 +84,7 @@ With wall panels alone (rPET Panel 12 mm on a 100 mm air cavity, αw 0.80) that 
 
 **1. Ceiling first.** The largest continuous surface and the only one every workstation "sees". Making 60 to 80% of the ceiling absorbent, with a stretch ceiling or rPET ceiling elements, usually solves the reverberation problem.
 
-**2. Wall panels on the reflection points.** Sound reflects most strongly off the wall facing the source and off the long walls. That is where [recycled PET acoustic panels](/en/products/pet-acoustic-panels) belong, at ear height up to about 2.2 m, not above the cupboards. [rPET Groove](/en/products/rpet-groove): ten stock colours and any colour to order, 12/24/36 mm with NRC 0.55 / 0.75 / 0.90, B-s1,d0 in white, grey and black and B-s2,d0 in the other colours to EN 13501-1; the plain rPET Panel (12 mm) reaches, depending on mounting, αw 0.80 (class B to ISO 11654) on a 100 mm air cavity and 1.00 (class A) on a 50 mm cavity with 50 mm stone wool. Alternatives: [rWood Groove](/en/products/rwood-groove) with FSC veneer (αw 0.90, class A) and the textile panels [Interior](/en/products/interior) (αw 1.0, class A).
+**2. Wall panels on the reflection points.** Sound reflects most strongly off the wall facing the source and off the long walls. That is where [recycled PET acoustic panels](/en/products/pet-acoustic-panels) belong, at ear height up to about 2.2 m, not above the cupboards. [rPET Groove](/en/products/rpet-groove): ten stock colours and any colour to order, 12/24/36 mm with NRC 0.55 / 0.75 / 0.90, B-s1,d0 in white, grey and black and B-s2,d0 in the other colours to EN 13501-1; the plain rPET Panel (12 mm) reaches αw 0.80 (class B to ISO 11654) on a 100 mm air cavity, rising to 1.00 (class A) once a 50 mm cavity is filled with 50 mm stone wool. Alternatives: [rWood Groove](/en/products/rwood-groove) with FSC veneer (αw 0.90, class A) and the textile panels [Interior](/en/products/interior) (αw 1.0, class A).
 
 **3. Zoning with Divide.** Forty workstations are acoustically a single room. [Divide](/en/products/divide) partitions are freestanding, absorbent on both sides (αw 1.0, class A), with an integrated foot, magnetically coupled, no installation.
 

@@ -21,7 +21,7 @@ faq: [{"question":"Hvað kostar símaklefi fyrir skrifstofu árið 2026?","answe
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 0
+wordCount: 1606
 ---
 
 **[Símaklefi fyrir skrifstofu](/is/products/acoustic-phone-booths) frá Re-Sound kostar frá {{price:solo-eco}} án VSK fyrir grunngerðina Solo ECO og frá {{price:solo-flex}} án VSK fyrir Solo Flex, í báðum tilvikum án flutnings og uppsetningar; flutningur til Íslands og afhendingartími eru eftir samkomulagi.** [Solo Flex](/is/products/solo-flex) er hljóðeinangraði símaklefinn okkar fyrir einn með mældri taldeyfingu, [Solo ECO](/is/products/solo-eco) einfaldari grunngerð með föstu standborði. Hér er farið yfir hvað verðið nær yfir, hvaða stærð þú átt að velja, hvað flokkar ISO 23351-1 merkja og hvað þarf að athuga áður en þú pantar, beint frá framleiðandanum.

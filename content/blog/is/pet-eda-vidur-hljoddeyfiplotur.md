@@ -21,7 +21,7 @@ faq: [{"question":"Ísogar viður minna hljóð en PET-filt?","answer":"Ekki í 
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 0
+wordCount: 1560
 ---
 
 **Stutta svarið: PET-filt og viður liggja á sama ísogsbili í vörulínunum okkar (rWood Groove og rWood Micro αw 0,90, flokkur A; 12 mm rPET Panel αw 0,80 til 1,00 eftir uppsetningu), svo þú velur eftir útliti, brunaflokki, fjárhagsáætlun og sjálfbærnisögu, ekki eftir hljóðvist.** [PET-filt](/is/products/pet-acoustic-panels) er kosturinn fyrir liti, sérprentaða grafík, þröngan fjárhag og skurð á staðnum; [viður](/is/products/wood-acoustic-panels) fyrir hlýju, rými sem gestir sjá og, á eldtefjandi MDF-kjarna, sama brunaflokk B-s1,d0 og rPET í hvítu, gráu og svörtu.

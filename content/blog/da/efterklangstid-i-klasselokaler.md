@@ -52,7 +52,7 @@ Hos Re-Sound måler vi efter aftale; til et første overslag er lokalets mål no
 
 ## Regneeksempel: fra 1,2 til 0,6 sekunder
 
-Et klasselokale, 8 m langt og 7 m bredt med 3,2 m til loftet (179 m³), klinkegulv, gipsloft og en enkelt glasvæg. Målingen viser **1,2 s**; kravet sætter vi til **0,6 s**.
+Et klasselokale, 8 m langt og 7 m bredt med 3,2 m til loftet (179 m³), klinkegulv, gipsloft og en enkelt glasvæg. Målingen viser **1,2 s**; målet sætter vi til **0,6 s**.
 
 Sabines formel lyder A = 0,161 × V / T, og for lokalet giver den:
 

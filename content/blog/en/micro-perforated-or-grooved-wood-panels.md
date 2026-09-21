@@ -16,12 +16,12 @@ heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroAlt: "Micro-perforated rWood Micro wood acoustic panel with FSC veneer, close-up of the almost closed surface"
 internalLinks: ["/en/products/wood-acoustic-panels","/en/products/rwood-groove","/en/products/rwood-micro","/en/products/rpet-panel","/en/products/acoustic-phone-booths","/en/products/solo-flex","/en/sustainability","/en/where-to-buy","/en/contact","/en/samples"]
 cta: "Request the rWood sample kit with both builds, or a quote per m² for your room."
-sources: "ISO 11654 (sound absorption classes); EN ISO 354 (measurement); EN 13501-1 (reaction to fire); FSC; DIN 18041 (German reference method for the target reverberation time); ISO 22955 (open-plan offices); BB93 and BS 8233 (UK pointers); W.C. Sabine (reverberation formula); Re-Sound rWood and rPET datasheets and test reports."
+sources: "ISO 11654 (absorption classes); EN ISO 354; EN 13501-1 (reaction to fire); FSC; W.C. Sabine; DIN 18041 (German method, used here as the reference); ISO 22955; BB93 and BS 8233 as UK pointers; Re-Sound rWood and rPET datasheets and test reports."
 faq: [{"question":"Does a micro-perforated wood panel absorb less than a grooved one?","answer":"No. Both reach αw 0.90 on their datasheets, class A to ISO 11654: the grooved rWood Groove with its own 3 mm rPET felt on the back, the micro-perforated rWood Micro with an acoustic fleece and a cavity behind the panel. With 50 mm mineral wool in that cavity rWood Micro rises to αw 1.00. So decide on build-up, look, fire class, lead time and budget, not on the absorption class."},{"question":"Which absorber belongs behind a wood acoustic panel?","answer":"None is compulsory: both ranges reach class A without one. rWood Micro hangs on aluminium rails in front of a cavity that can take 50 mm mineral wool, lifting αw to 1.00. rWood Groove on battens can have acoustic felt, an rPET panel or mineral wool behind it. Which combination your room needs follows from its target reverberation time; check the exact requirement with your acoustician."},{"question":"How long does delivery of wood acoustic panels take?","answer":"rWood Micro in stock veneers ships in 3–4 weeks ex works, in non-stock veneers and custom sizes in 6–8 weeks. For rWood Groove the lead time depends on stock and we confirm it on order. Both ranges are made with FSC-certified veneers only in our own plant in Częstochowa (Poland)."}]
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "holz-akustikpaneele-mikroperforiert-oder-genutet"
-wordCount: 1856
+wordCount: 1843
 ---
 
 **Micro-perforated and grooved wood acoustic panels absorb equally well: rWood Groove and rWood Micro both reach αw 0.90, class A to ISO 11654, and rWood Micro climbs to 1.00 with 50 mm mineral wool in the cavity behind it. So the choice comes down to build-up, look, fire class, lead time and budget.** This guide sets out the figures for [rWood Groove](/en/products/rwood-groove) (grooved) and [rWood Micro](/en/products/rwood-micro) (micro-perforated), works through a Sabine example and ends with a decision table.
@@ -39,14 +39,14 @@ Both belong to our [wood acoustic panels](/en/products/wood-acoustic-panels): an
 Anyone comparing micro-perforated with grooved is really comparing two build-ups. rWood Groove carries its absorber with it, the 3 mm rPET felt on its back, and is fixed tongue-and-groove on battens or glued straight to the substrate; on battens, the cavity behind can take an extra absorber. rWood Micro hangs on a concealed clip system on aluminium rails, tool-free, always with a cavity behind it, into which mineral wool can go. Three absorbers come into question for that cavity:
 
 - **Acoustic felt**: the slim option when the build-up must stay shallow.
-- **[rPET panel](/en/products/rpet-panel)**: made entirely from recycled PET, B-s1,d0 in white, grey and black and B-s2,d0 in the other colours (EN 13501-1), cut on site with a knife or saw; its 12 mm sheet measures αw 0.25 flat on the wall and 1.00 over a 50 mm cavity with 50 mm stone wool, so the cavity decides.
+- **[rPET panel](/en/products/rpet-panel)**: made entirely from recycled PET, classified B-s1,d0 (white, grey, black) or B-s2,d0 (other colours) to EN 13501-1, cut on site with a knife or saw; its 12 mm sheet measures αw 0.25 flat on the wall and 1.00 over a 50 mm cavity with 50 mm stone wool, so the cavity decides.
 - **Mineral wool**: the usual choice when a framed cavity is planned anyway; behind rWood Micro, 50 mm of it lifts the value to αw 1.00.
 
 Both builds sit in class A; an absorber in the cavity adds reserve, up to αw 1.00 for rWood Micro. What remains is build depth, look and fire safety; check the exact requirement with your acoustician.
 
 ## Worked example: a 56 m³ meeting room
 
-A meeting room of 5 × 4 m with a 2.8 m ceiling holds **56 m³**. Carpet tiles, six upholstered chairs, one glass wall; measured reverberation time **0.9 s**. As a reference for the target we use the method of the German standard DIN 18041, which places meeting rooms in its group A3 (teaching/communication) and sets T = 0.32 · lg(V) − 0.17 s. For UK offices BS 8233 and, on open-plan floors, ISO 22955 are the pointers; check the exact requirement with your acoustician.
+A meeting room of 5 × 4 m with a 2.8 m ceiling holds **56 m³**. Carpet tiles, six upholstered chairs, one glass wall; measured reverberation time **0.9 s**. For the target we take the German standard DIN 18041 as our reference method: it files meeting rooms under group A3 (teaching/communication), where T = 0.32 · lg(V) − 0.17 s. UK offices look to BS 8233 and open-plan floors to ISO 22955; check the exact requirement with your acoustician.
 
 T = 0.32 × lg(56) − 0.17 = 0.32 × 1.75 − 0.17 = 0.56 − 0.17 = **0.39 s**
 
@@ -60,7 +60,7 @@ Sabine's formula, **A = 0.161 × V / T**, then gives the absorption needed:
 
 With rWood Groove or rWood Micro (both αw 0.90) that is 13.1 ÷ 0.90 = **14.6 m² of panels**: the long wall opposite the screen (5 × 2.8 = 14.0 m²) plus a 0.6 m² strip on the end wall behind the speakers. Choose rWood Micro with 50 mm mineral wool in the cavity (αw 1.00) and 13.1 m² is enough; the long wall alone then does it.
 
-Panels lower the reverberation of the room; they do not stop the call that carries across an open-plan floor. That is what an [acoustic phone booth](/en/products/acoustic-phone-booths) such as [Solo Flex](/en/products/solo-flex) is for: from {{price:solo-flex}} excl. VAT without installation; installation by our team {{price:article:WEB-SOLO-FLEX-INST}}, transport within mainland Europe {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, each excl. VAT.
+Panels lower the reverberation of the room, but the call that still carries across an open-plan floor is not a job for panels; it is a job for a [phone booth](/en/products/acoustic-phone-booths). Our [Solo Flex](/en/products/solo-flex) starts at {{price:solo-flex}} excl. VAT, with installation by our team at {{price:article:WEB-SOLO-FLEX-INST}} and transport within mainland Europe at {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, both excl. VAT.
 
 ## Look and interior: a rhythm of lines or a calm wood surface
 
@@ -72,9 +72,9 @@ In both ranges we work with **FSC-certified veneers only** (certificate C191539)
 
 ## Fire safety: B-s1,d0 for rWood Micro
 
-In schools, public offices and assembly buildings the reaction-to-fire class to EN 13501-1 is usually a hard requirement. **rWood Micro on its fire-retardant MDF core is classified B-s1,d0**: limited contribution to fire, little smoke (s1), no flaming droplets (d0). So the micro-perforated build meets that requirement as standard. Formaldehyde class E1 applies to both ranges.
+Schools, public offices and assembly buildings usually make the EN 13501-1 reaction-to-fire class a hard requirement. **rWood Micro on its fire-retardant MDF core is classified B-s1,d0**: limited contribution to fire, little smoke (s1), no flaming droplets (d0). So the micro-perforated build meets that requirement as standard. Formaldehyde class E1 applies to both ranges.
 
-For rWood Groove the core decides: **B-s1,d0 on the FR MDF core, D-s2,d2 on the standard MDF core**; the rPET felt backing is B-s1,d0. Any extra absorber in the cavity belongs in the fire assessment too. Which class your project must meet depends on the building regulations and the use; check the exact requirement with your acoustician and your fire engineer.
+For rWood Groove the core decides: **B-s1,d0 on the FR MDF core, D-s2,d2 on the standard MDF core**; the rPET felt backing is B-s1,d0. Any extra absorber in the cavity belongs in the fire assessment too. The class your project needs follows from the building regulations and the use, so check the exact requirement with your acoustician and fire engineer.
 
 ## Lead time, price and origin
 
@@ -85,7 +85,7 @@ Lead time hangs on the veneer. For **rWood Micro**, ex works:
 
 For **rWood Groove** the lead time is subject to stock; we confirm it on order. Veneer samples are free for both.
 
-Re-Sound is a brand of Stretch Group, which produces in its own plants in Beveren-Waas (Belgium) and Częstochowa (Poland). The rWood panels come from the Polish plant. At the end of their life we take the panels back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg, and nowhere else; see [sustainability](/en/sustainability).
+Re-Sound is a brand of Stretch Group; the rWood panels come from our own plant in Częstochowa (Poland), the textile range from Beveren-Waas (Belgium). At the end of their life we take panels back free of charge from Belgium, the Netherlands, France, Germany and Luxembourg; elsewhere the scheme does not apply. See [sustainability](/en/sustainability).
 
 The price per m² is set by quotation, excl. VAT, and depends on build, veneer, absorber and quantity. Veneered wood is our premium product; anyone who wants to spend less on the same area combines wood on the feature wall with rPET panels everywhere else. Send us your square metres via [contact](/en/contact) or find a [dealer](/en/where-to-buy) near you.
 
@@ -126,4 +126,4 @@ None is compulsory: both ranges reach class A without one. rWood Micro hangs on 
 **How long does delivery of wood acoustic panels take?**
 rWood Micro in stock veneers ships in 3–4 weeks ex works, in non-stock veneers and custom sizes in 6–8 weeks. For rWood Groove the lead time depends on stock and we confirm it on order. Both ranges are made with FSC-certified veneers only in our own plant in Częstochowa (Poland).
 
-*Sources: ISO 11654 (sound absorption classes); EN ISO 354 (measurement); EN 13501-1 (reaction to fire); FSC; DIN 18041 (German reference method for the target reverberation time); ISO 22955 (open-plan offices); BB93 and BS 8233 (UK pointers); W.C. Sabine (reverberation formula); Re-Sound rWood and rPET datasheets and test reports.*
+*Sources: ISO 11654 (absorption classes); EN ISO 354; EN 13501-1 (reaction to fire); FSC; W.C. Sabine; DIN 18041 (German method, used here as the reference); ISO 22955; BB93 and BS 8233 as UK pointers; Re-Sound rWood and rPET datasheets and test reports.*

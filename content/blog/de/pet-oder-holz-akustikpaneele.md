@@ -32,7 +32,7 @@ wordCount: 0
 
 **Holz-Akustikpaneele** sind ein echtes Holzfurnier auf einem Kern. Eine geschlossene Furnierfläche reflektiert; die Oberfläche muss also geöffnet werden: Nuten bei [rWood Groove](/de/products/rwood-groove), Lochungen bei [rWood Perf](/de/products/rwood-perf), Mikroperforation bei [rWood Micro](/de/products/rwood-micro) lassen den Schall durch die Front in die absorbierende Schicht dahinter. Das Holz ist das Gesicht, der Absorber leistet die Arbeit.
 
-Beide kommen in dieselbe Klasse: rWood Groove und rWood Micro erreichen αw 0,90, Klasse A. Groove trägt seinen eigenen 3 mm starken Filz aus recyceltem PET auf der Rückseite, wird auf Latten befestigt oder geklebt, und der Hohlraum dahinter kann einen zusätzlichen Absorber aufnehmen (Akustikfilz, ein rPET-Paneel oder Mineralwolle); Micro wird auf Schienen geclipst, immer mit Hohlraum, und steigt mit 50 mm Mineralwolle auf αw 1,00. PET-Filz absorbiert aus sich heraus, aber wie viel, hängt an der Montage: Das rPET Panel 12 mm erreicht flächig auf der Wand αw 0,25, vor 100 mm Luftschicht 0,80 und vor 50 mm Luftschicht mit 50 mm Steinwolle 1,00.
+Beide kommen in dieselbe Klasse: rWood Groove und rWood Micro erreichen αw 0,90, Klasse A. Groove trägt seinen eigenen 3 mm starken Filz aus recyceltem PET auf der Rückseite und wird auf Latten befestigt oder geklebt; Micro wird auf Schienen geclipst, immer mit Hohlraum, und steigt mit 50 mm Mineralwolle auf αw 1,00. PET-Filz absorbiert aus sich heraus, aber wie viel, hängt an der Montage: Das rPET Panel 12 mm erreicht flächig auf der Wand αw 0,25, vor 100 mm Luftschicht 0,80 und vor 50 mm Luftschicht mit 50 mm Steinwolle 1,00.
 
 ## Leistung im direkten Vergleich
 
@@ -42,21 +42,18 @@ Beide kommen in dieselbe Klasse: rWood Groove und rWood Micro erreichen αw 0,90
 | NRC (ASTM C423) | 0,80 und 0,95 bei denselben zwei Montagen | nicht veröffentlicht | nicht veröffentlicht |
 | Absorptionsklasse (ISO 11654) | B / A | A | A |
 | Brandverhalten (EN 13501-1) | B-s1,d0 in Weiß, Grau und Schwarz; B-s2,d0 in den übrigen Farben | B-s1,d0 mit FR-MDF-Kern; D-s2,d2 mit Standard-MDF | B-s1,d0 mit FR-MDF-Kern |
-| Stärken | 9 / 12 mm | 10 / 19 mm | 10 / 19 mm |
 
-rPET Groove, aus derselben Platte gefräst, ist nur mit NRC angegeben: 0,55 / 0,75 / 0,90 bei 12 / 24 / 36 mm; rechnen Sie mit den Werten des rPET Panels und seiner Montage.
+rPET Groove, aus derselben Platte gefräst, ist nur mit NRC angegeben (0,55 / 0,75 / 0,90 bei 12 / 24 / 36 mm).
 
-Klasse B (αw 0,80 bis 0,85) ist das Arbeitspferd für Büros, Schulen und Restaurants; in Klasse A (αw ab 0,90) sitzen rWood Groove, rWood Micro und unsere Textilreihe [Interior](/de/products/interior) (αw 1,0) – und das rPET Panel, sobald Steinwolle im Hohlraum liegt. Welchen Wert ein Raum braucht, hängt vom Regelwerk ab: in Deutschland DIN 18041 und, für Büros, VDI 2569, international ISO 22955 für offene Büros; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
+Klasse B (αw 0,80 bis 0,85) ist das Arbeitspferd für Büros, Schulen und Restaurants; in Klasse A (αw ab 0,90) sitzen rWood Groove, rWood Micro und unsere Textilreihe [Interior](/de/products/interior) (αw 1,0) – und das rPET Panel, sobald Steinwolle im Hohlraum liegt. Welchen Wert ein Raum braucht, sagt das Regelwerk – in Deutschland DIN 18041, für Büros VDI 2569, international ISO 22955; prüfen Sie die genaue Anforderung mit Ihrem Akustiker.
 
-**Die Rechnung ist für beide Materialien dieselbe.** Nehmen Sie einen Besprechungsraum von 5 × 4 m bei 2,8 m Höhe, also V = 56 m³, gemessen bei 0,9 s, Ziel 0,6 s für verständliche Videokonferenzen. Nach Sabine (A = 0,161 × V / T) sind heute 0,161 · 56 / 0,9 = 10,0 m² Sabine vorhanden, gebraucht werden 0,161 · 56 / 0,6 = 15,0 m² Sabine, es fehlen also 5,0 m² Sabine. Mit dem rPET Panel 12 mm auf 100 mm Luftschicht (αw 0,80) sind das 5,0 / 0,80 = **6,3 m²**, also zwei Platten von 2.800 × 1.220 mm (2 × 3,42 = 6,84 m²). Mit rWood Groove (αw 0,90) sind es 5,0 / 0,90 = **5,6 m²**, mit dem rPET Panel auf 50 mm Luftschicht mit 50 mm Steinwolle (αw 1,00) genau 5,0 m². Das Material verändert Optik und Rechnung weit stärker als die Anzahl der Paneele. Wie Sie das für Ihren Raum durchrechnen, steht in [Wie viele Akustikpaneele brauche ich?](/de/blog/wie-viele-akustikpaneele-brauche-ich).
+**Die Rechnung ist für beide Materialien dieselbe.** Besprechungsraum 5 × 4 m, 2,8 m hoch (V = 56 m³), gemessen 0,9 s, Ziel 0,6 s für verständliche Videokonferenzen. Nach Sabine (A = 0,161 × V / T) sind 0,161 · 56 / 0,9 = 10,0 m² Sabine vorhanden und 0,161 · 56 / 0,6 = 15,0 m² nötig; es fehlen 5,0 m² Sabine. Mit dem rPET Panel 12 mm auf 100 mm Luftschicht (αw 0,80) sind das 5,0 / 0,80 = **6,3 m²**, zwei Platten von 2.800 × 1.220 mm (2 × 3,42 = 6,84 m²); mit rWood Groove (αw 0,90) 5,0 / 0,90 = **5,6 m²**; mit dem rPET Panel auf 50 mm Luftschicht mit 50 mm Steinwolle (αw 1,00) genau 5,0 m². Das Material verändert Optik und Rechnung weit stärker als die Anzahl der Paneele. Die Methode: [Wie viele Akustikpaneele brauche ich?](/de/blog/wie-viele-akustikpaneele-brauche-ich).
 
 ## Optik und Innenraum
 
 **PET ist Farbe.** [rPET Groove](/de/products/rpet-groove) gibt es in den zehn rPET-Lagerfarben (jede Farbe auf Bestellung), in 12, 24 oder 36 mm; rPET-Paneele lassen sich lackieren und im eigenen Haus im UV-Druck mit Ihrer Grafik bedrucken: eine farbige Wand, ein Logo im Filz. [rPET Flex Groove](/de/products/rpet-flex-groove) folgt Säulen und gebogenen Wänden.
 
 **Holz ist Wärme.** rWood Groove und rWood Perf zeigen das Furnier durch ihr Muster; [rWood Panel](/de/products/rwood-veneer) bietet die Wahl aus FSC-zertifizierten Furnieren; rWood Micro hat eine nahezu geschlossene Fläche, die wie ein glattes Holzpaneel wirkt. In Vorstandsräumen, Empfängen, Restaurants und Hörsälen gewinnt Holz an Präsenz fast immer.
-
-Oft ist die Antwort kein Entweder-oder: Holz an der Sichtwand, PET an den Längswänden und an der Decke.
 
 ## Brandschutz und Emissionen
 
@@ -72,13 +69,13 @@ Raumluft: rPET ist nach OEKO-TEX Standard 100 zertifiziert. Für rWood verwenden
 
 **rPET** beginnt als recyceltes PET; rPET Groove besteht vollständig aus recyceltem PET. Am Ende der Nutzungsdauer nehmen wir die Paneele in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück.
 
-**rWood** setzt einen nachwachsenden Rohstoff auf die Front: ausschließlich FSC-zertifizierte Furniere, ohne Ausnahme. Dieselbe kostenlose Rücknahme gilt in denselben fünf Ländern.
+**rWood** setzt einen nachwachsenden Rohstoff auf die Front: ausschließlich FSC-zertifizierte Furniere. Dieselbe kostenlose Rücknahme gilt in denselben fünf Ländern.
 
 Beide entstehen in unserem eigenen Werk in Częstochowa; mehr auf der Seite [Nachhaltigkeit](/de/sustainability). Wer nach einer Kennzahl auswählt: PET. Wer eine natürliche, zertifizierte Oberfläche will: Holz.
 
 ## Verarbeitung, Montage und Pflege
 
-**PET verarbeitet sich wie ein Plattenwerkstoff.** rPET lässt sich mit dem Messer, der Kreissäge, der Plattensäge oder dem Winkelschleifer mit Metallscheibe schneiden und lackieren. Tischler und Innenausbauer schätzen es für Maßarbeit, um Steckdosen und Sockelleisten herum zugeschnitten. Montage mit Kleber, Z-Clips, Schrauben oder auf Latten.
+**PET verarbeitet sich wie ein Plattenwerkstoff.** rPET lässt sich mit Messer, Kreissäge, Plattensäge oder Winkelschleifer mit Metallscheibe schneiden und lackieren. Tischler schätzen es für Maßarbeit um Steckdosen und Sockelleisten. Montage mit Kleber, Z-Clips, Schrauben oder auf Latten.
 
 **Holz verlangt Präzision.** Jeder Schnitt durch ein Furnier ist sichtbar; planen Sie Aufteilung und Schnittliste vorab, statt vor Ort zu kürzen. rWood Groove hat Nut und Feder und wird auf Latten befestigt oder auf den Untergrund geklebt; rWood Micro und rWood Perf hängen in einem verdeckten Clipsystem auf Schienen, werkzeuglos und demontierbar. Furnier ist empfindlicher gegen Stöße und Feuchtigkeit als Filz.
 
@@ -92,7 +89,7 @@ Pro Quadratmeter ist PET-Filz das wirtschaftlichere Material, furniertes Holz da
 - **rWood Groove**: je nach Lagerbestand, bestätigt bei der Bestellung.
 - **rWood Micro und rWood Perf**: Lagerfurniere in 3 bis 4 Wochen; Furniere außerhalb des Lagerprogramms 6 bis 8 Wochen.
 
-Re-Sound ist eine Marke der Stretch Group mit eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen): rPET und rWood kommen aus Częstochowa, die Textilreihe aus Beveren-Waas, wo Sie beide Materialien nach Vereinbarung in der Ausstellung sehen. Siehe [Wo kaufen](/de/where-to-buy) oder die [Kontaktseite](/de/contact).
+Re-Sound ist eine Marke der Stretch Group mit eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen); rPET und rWood kommen aus Częstochowa, die Textilreihe aus Beveren-Waas, wo die Ausstellung beide Materialien zeigt. Siehe [Wo kaufen](/de/where-to-buy) oder [Kontakt](/de/contact).
 
 ## Entscheidungstabelle: wann PET, wann Holz
 
@@ -107,7 +104,7 @@ Re-Sound ist eine Marke der Stretch Group mit eigenen Werken in Beveren-Waas (Be
 | Nachwachsender, zertifizierter Rohstoff auf der Front | rWood (nur FSC-Furniere) |
 | Schnellste Lieferung | rPET Groove in Lagerfarben, oder rWood Micro / Perf in Lagerfurnieren (etwa 3 bis 4 Wochen) |
 
-Noch unentschieden? Fordern Sie das kostenlose [Musterpaket](/de/samples) an und vergleichen Sie beide Materialien im Raum selbst. Die Telefonate, die nach der Montage noch über die Fläche tragen, sind eine Aufgabe für die [Telefonbox](/de/products/telefonboxen), nicht für mehr Filz.
+Noch unentschieden? Das kostenlose [Musterpaket](/de/samples) zeigt beide Materialien im Raum selbst. Telefonate, die danach noch über die Fläche tragen, sind eine Aufgabe für die [Telefonbox](/de/products/telefonboxen), nicht für mehr Filz.
 
 ## Häufige Fragen
 

@@ -16,7 +16,7 @@ heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroAlt: "Restaurante con paneles de pared rWood Micro en roble detrás de los bancos y un techo acústico"
 internalLinks: ["https://stretchplafond.be/products/acoustic-stretch-system","/es/products/rwood-micro","/es/products/rwood-groove","/es/products/rpet-groove","/es/products/interior","/es/products/wood-acoustic-panels","/es/products/divide","/es/acoustic-calculator","/es/samples","/es/where-to-buy"]
 cta: "Solicite el kit de muestras o una demostración con paneles y equipo de medición."
-sources: "ISO 3382-2 (medición de la reverberación); ISO 11654 (clasificación de la absorción); EN 13501-1 (reacción al fuego); CTE DB-HR como referencia en España; W.C. Sabine (fórmula de reverberación); datos de producto y ensayos de Re-Sound."
+sources: "ISO 3382-2 (medición de la reverberación); ISO 11654 (clasificación de la absorción); EN 13501-1 (reacción al fuego); W.C. Sabine (fórmula del tiempo de reverberación); CTE DB-HR como referencia en España; datos de producto y ensayos de Re-Sound."
 faq: [{"question":"¿Qué paneles acústicos son adecuados para un restaurante?","answer":"Para el techo, un techo tensado acústico o paneles de techo de PET; para las paredes, rWood Micro o Groove (madera) y rPET Groove (color): rWood clasificado B-s1,d0 gracias al núcleo de MDF ignífugo, rPET B-s1,d0 si el color es blanco, gris o negro y B-s2,d0 con los demás; el informe de clasificación para su expediente de incendios se entrega previa solicitud."},{"question":"¿Cuántos paneles necesita un restaurante de 100 m²?","answer":"Unos 35 m² de techo absorbente más de 8 a 15 m² de paneles de pared para pasar de 1,4 a 0,7 s. Con una medición lo calculamos con exactitud."},{"question":"¿Se puede instalar entre dos servicios?","answer":"Un techo tensado acústico se instala en un día y sin polvo; los paneles de pared los coloca un equipo en media jornada; los módulos Divide no requieren montaje."}]
 draft: false
 translationKey: "restaurant-acoustics"
@@ -60,7 +60,7 @@ Los paneles de pared definen el ambiente y rompen las reflexiones entre las pare
 - **[rPET Groove](/es/products/rpet-groove)**: fieltro de PET reciclado en diez colores en stock, cualquier otro color bajo pedido (NRC de 0,55 a 0,90 según el espesor), B-s1,d0 si el color es blanco, gris o negro, B-s2,d0 con los demás tonos; para conceptos con color o detrás de los bancos, donde la madera sufre.
 - **[Interior](/es/products/interior)**: paneles textiles con funda extraíble y lavable (αw 1,0, clase A) para las zonas donde se derrama.
 
-Colóquelos a la altura del oído de los clientes sentados (de 0,9 a 1,8 m) y, sobre todo, detrás de los bancos y frente a la barra o a la cocina abierta: de ahí sale la mayor parte del sonido y ahí rebota con más fuerza. La [gama de madera](/es/products/wood-acoustic-panels) completa está en la web.
+Colóquelos a la altura del oído de los clientes sentados (de 0,9 a 1,8 m) y, sobre todo, detrás de los bancos y frente a la barra o a la cocina abierta: de ahí sale la mayor parte del sonido y ahí rebota con más fuerza. La [gama completa de madera](/es/products/wood-acoustic-panels) está en la web.
 
 ## Entre las mesas
 
@@ -96,7 +96,7 @@ No todos los negocios pueden cerrar una semana. Fases que funcionan:
 3. **Módulos Divide** junto a las mesas grandes como remate, sin montaje.
 4. **Volver a medir** y usar el resultado en su comunicación: «aquí se puede hablar» es un argumento de venta.
 
-Plazos desde fábrica: el rPET sale en 3 o 4 semanas laborables aproximadamente; rWood Micro y Perf con chapa de stock, en 3 o 4 semanas; para rWood Groove confirmamos la fecha al recibir el pedido. Al final de su vida útil, o cuando cambie de concepto, recogemos los paneles gratuitamente, aunque solo en Bélgica, Luxemburgo, los Países Bajos, Alemania y Francia: un restaurante en España no dispone de ese servicio. Re-Sound pertenece a Stretch Group; sus dos fábricas están en Beveren-Waas, Bélgica, y en Częstochowa, Polonia.
+Plazos desde fábrica: el rPET sale en 3 o 4 semanas laborables aproximadamente; rWood Micro y Perf, en chapas de stock, en 3 o 4 semanas; para rWood Groove confirmamos la fecha al recibir el pedido. Al final de su vida útil, o cuando cambie de concepto, recogemos los paneles gratuitamente, aunque solo en Bélgica, Luxemburgo, los Países Bajos, Alemania y Francia: un restaurante en España no dispone de ese servicio. Re-Sound pertenece a Stretch Group; sus dos fábricas están en Beveren-Waas (Bélgica) y Częstochowa (Polonia).
 
 **¿Quiere oír el efecto antes de decidir?** Nos desplazamos con paneles y equipo de medición a locales de Bélgica, los Países Bajos, Luxemburgo y el norte de Francia; desde España, pida el [kit de muestras gratuito](/es/samples) con todos los acabados, que enviamos en tres días laborables, o visite en Beveren-Waas nuestra [exposición](/es/where-to-buy) con cada gama instalada.
 
@@ -111,4 +111,4 @@ Unos 35 m² de techo absorbente más de 8 a 15 m² de paneles de pared para pasa
 **¿Se puede instalar entre dos servicios?**
 Un techo tensado acústico se instala en un día y sin polvo; los paneles de pared los coloca un equipo en media jornada; los módulos Divide no requieren montaje.
 
-*Fuentes: ISO 3382-2 (medición de la reverberación); ISO 11654 (clasificación de la absorción); EN 13501-1 (reacción al fuego); CTE DB-HR como referencia en España; W.C. Sabine (fórmula de reverberación); datos de producto y ensayos de Re-Sound.*
+*Fuentes: ISO 3382-2 (medición de la reverberación); ISO 11654 (clasificación de la absorción); EN 13501-1 (reacción al fuego); W.C. Sabine (fórmula del tiempo de reverberación); CTE DB-HR como referencia en España; datos de producto y ensayos de Re-Sound.*

@@ -16,12 +16,12 @@ heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroAlt: "Mikroperforeret akustikpanel i træ, rWood Micro med FSC-finér, nærbillede af den næsten lukkede overflade"
 internalLinks: ["/da/products/wood-acoustic-panels","/da/products/rwood-groove","/da/products/rwood-micro","/da/products/rpet-panel","/da/products/acoustic-phone-booths","/da/products/solo-flex","/da/sustainability","/da/where-to-buy","/da/contact"]
 cta: "Bestil rWood-prøvesættet med begge udførelser, eller bed om et tilbud pr. m² til dit rum."
-sources: "ISO 11654 (lydabsorptionsklasser); EN 13501-1 (brandklassificering); FSC; DIN 18041 (tysk standard, brugt som reference); DS 490 (dansk standard); ISO 22955; W.C. Sabine (efterklangsformel); datablade og testrapporter for Re-Sound rWood og rPET."
+sources: "ISO 11654 (lydabsorptionsklasser); EN 13501-1 (brandklassificering); FSC; DS 490 (dansk standard); DIN 18041 (tysk standard, her brugt som reference); ISO 22955; W.C. Sabine (efterklangsformel); datablade og testrapporter for Re-Sound rWood og rPET."
 faq: [{"question":"Absorberer et mikroperforeret træpanel dårligere end et rillet?","answer":"Nej. Ifølge databladene når begge αw 0,90, altså klasse A efter ISO 11654: det rillede rWood Groove med sin egen 3 mm rPET-filt på bagsiden, det mikroperforerede rWood Micro med akustisk fleece og hulrum bag panelet. Med 50 mm mineraluld i hulrummet stiger rWood Micro til αw 1,00. Vælg derfor efter opbygning, udseende, brandklasse, leveringstid og budget, ikke efter absorptionsklassen."},{"question":"Hvilken absorbent skal der bag et akustikpanel i træ?","answer":"Ingen er obligatorisk: begge serier når klasse A uden ekstra absorbent. rWood Micro sidder på aluminiumsskinner foran et hulrum, som efter ønske fyldes med 50 mm mineraluld; dermed stiger αw til 1,00. Ved rWood Groove på lægter kan hulrummet tage akustisk filt, en rPET-plade eller mineraluld. rPET-pladen er fremstillet helt af genanvendt PET, er efter EN 13501-1 B-s1,d0 (hvid, grå, sort) eller B-s2,d0 (andre farver) og kan skæres til på stedet med kniv eller sav. Hvilken kombination dit rum kræver, afhænger af den efterklangstid, der gælder for det; i Danmark er DS 490 referencen, og du bør tjekke det præcise krav med din akustiker."},{"question":"Hvad er leveringstiden på akustikpaneler i træ?","answer":"For rWood Micro leverer vi lagerfinérer på 3 til 4 uger ab fabrik, finérer uden for lagerprogrammet og specialbestillinger på 6 til 8 uger. For rWood Groove afhænger leveringstiden af lagerbeholdningen; vi bekræfter den ved ordren. Begge serier fremstiller vi udelukkende med FSC-certificerede finérer på vores egen fabrik i Częstochowa (Polen)."}]
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "holz-akustikpaneele-mikroperforiert-oder-genutet"
-wordCount: 1600
+wordCount: 1668
 ---
 
 **Mikroperforerede og rillede akustikpaneler i træ absorberer lige godt: rWood Groove og rWood Micro når begge αw 0,90, altså klasse A efter ISO 11654, og rWood Micro når op til 1,00 med 50 mm mineraluld i hulrummet. Derfor vælger du ud fra opbygning, udseende, brandklasse, leveringstid og budget.** Her er guiden med tallene for [rWood Groove](/da/products/rwood-groove) (rillet) og [rWood Micro](/da/products/rwood-micro) (mikroperforeret), et regneeksempel efter Sabine og en beslutningstabel.
@@ -54,7 +54,7 @@ Tjek det præcise krav med din akustiker. Med Sabines formel **A = 0,161 × V / 
 
 Med rWood Groove eller rWood Micro (begge αw 0,90) svarer det til 13,1 / 0,90 = **14,6 m² paneler**: langvæggen over for skærmen (5 × 2,8 = 14,0 m²) plus en stribe på 0,6 m² på endevæggen bag dem, der taler. Vælger du rWood Micro med 50 mm mineraluld i hulrummet (αw 1,00), rækker 13,1 m², og langvæggen alene er nok.
 
-Paneler sænker efterklangen i rummet; det opkald, der bærer gennem storrumskontoret, stopper de ikke. Det er en [telefonboks](/da/products/acoustic-phone-booths) som [Solo Flex](/da/products/solo-flex) til: den koster fra {{price:solo-flex}} ekskl. moms uden montering; lader du vores hold montere, er prisen {{price:article:WEB-SOLO-FLEX-INST}}, og transporten på det europæiske fastland løber op i {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, begge dele ekskl. moms.
+Paneler sænker efterklangen i rummet; det opkald, der bærer gennem storrumskontoret, stopper de ikke. Det er en [telefonboks](/da/products/acoustic-phone-booths) som [Solo Flex](/da/products/solo-flex) til: den koster fra {{price:solo-flex}} ekskl. moms og uden montering; overlader du monteringen til vores hold, er prisen {{price:article:WEB-SOLO-FLEX-INST}}, og transporten på det europæiske fastland løber op i {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, begge dele ekskl. moms.
 
 ## Udseende og indretning: linjerytme eller rolig træflade
 
@@ -68,7 +68,7 @@ I begge serier bruger vi **udelukkende FSC-certificerede finérer**; lagerprogra
 
 I skoler, administrationsbygninger og forsamlingslokaler er brandklassen efter EN 13501-1 som regel et ufravigeligt krav. **rWood Micro er på sin brandhæmmende MDF-kerne klassificeret B-s1,d0**: begrænset brandbidrag, lav røgudvikling (s1), ingen brændende dråber (d0). Den mikroperforerede udførelse opfylder dermed kravet som standard, når trælook og strenge brandkrav mødes.
 
-For rWood Groove afgør kernen: **B-s1,d0 med FR-MDF-kerne, D-s2,d2 med standard-MDF-kerne**; rPET-filten på bagsiden er B-s1,d0. En ekstra absorbent i hulrummet hører med i brandvurderingen; rPET-pladen ligger i B-s1,d0, når den er hvid, grå eller sort, ellers i B-s2,d0. Hvilken klasse dit byggeri kræver, afhænger af reglerne og anvendelsen; tjek det præcise krav med din akustiker og brandrådgiver.
+For rWood Groove afgør kernen: **B-s1,d0 med FR-MDF-kerne, D-s2,d2 med standard-MDF-kerne**; rPET-filten på bagsiden er B-s1,d0. En ekstra absorbent i hulrummet hører med i brandvurderingen; rPET-pladen ligger i B-s1,d0, når den er hvid, grå eller sort, ellers i B-s2,d0. Hvilken klasse dit byggeri kræver, afhænger af reglerne og anvendelsen; tjek det præcise krav med din akustiker samt brandrådgiveren.
 
 ## Leveringstid, pris og oprindelse
 
@@ -120,4 +120,4 @@ Ingen er obligatorisk: begge serier når klasse A uden ekstra absorbent. rWood M
 **Hvad er leveringstiden på akustikpaneler i træ?**
 For rWood Micro leverer vi lagerfinérer på 3 til 4 uger ab fabrik, finérer uden for lagerprogrammet og specialbestillinger på 6 til 8 uger. For rWood Groove afhænger leveringstiden af lagerbeholdningen; vi bekræfter den ved ordren. Begge serier fremstiller vi udelukkende med FSC-certificerede finérer på vores egen fabrik i Częstochowa (Polen).
 
-*Kilder: ISO 11654 (lydabsorptionsklasser); EN 13501-1 (brandklassificering); FSC; DIN 18041 (tysk standard, brugt som reference); DS 490 (dansk standard); ISO 22955; W.C. Sabine (efterklangsformel); datablade og testrapporter for Re-Sound rWood og rPET.*
+*Kilder: ISO 11654 (lydabsorptionsklasser); EN 13501-1 (brandklassificering); FSC; DS 490 (dansk standard); DIN 18041 (tysk standard, her brugt som reference); ISO 22955; W.C. Sabine (efterklangsformel); datablade og testrapporter for Re-Sound rWood og rPET.*

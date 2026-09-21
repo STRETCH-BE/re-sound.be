@@ -21,7 +21,7 @@ faq: [{"question":"Hve margar hljóðdeyfiplötur þarf ég fyrir 100 m² skrifs
 draft: false
 translationKey: "how-many-panels"
 model: "how-many-acoustic-panels-do-i-need"
-wordCount: 1535
+wordCount: 1508
 ---
 
 **Fjöldi hljóðdeyfiplatna sem þú þarft ræðst af þremur tölum: rúmmáli rýmisins, ómtímanum sem þú mælir í dag og ómtímanum sem þú vilt ná.** Sabine-jafnan breytir þessum tölum í fermetra af ísogi, og αw plötunnar breytir fermetrunum í plötur. Hér á eftir kemur aðferðin, viðmiðunargildi, flokkar ISO 11654 og fjögur reiknidæmi.

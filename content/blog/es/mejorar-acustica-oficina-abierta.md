@@ -55,8 +55,8 @@ Regla práctica: hacer absorbente entre el 60 y el 80 % del techo resuelve el pr
 
 Las paredes vienen después del techo, pero no en cualquier sitio. El sonido rebota con más fuerza en la pared opuesta a la fuente y en las paredes largas de un recinto rectangular. Ahí van los paneles:
 
-- **[rPET Groove](/es/products/rpet-groove)** (ranurado, diez colores de stock y cualquier color por encargo, 12/24/36 mm) para grandes paños de pared que admiten color. NRC 0,55 / 0,75 / 0,90 según el espesor, clase de fuego B-s1,d0 (blanco, gris, negro) o B-s2,d0 (resto de la carta).
-- **rWood Groove o rWood Micro** ([toda la gama de madera](/es/products/wood-acoustic-panels)) donde el interior pide calidez: chapa con certificación FSC sobre núcleo de MDF (lamas de MDF sobre 3 mm de fieltro rPET en Groove; núcleo de MDF ignífugo con cámaras acústicas en Micro), αw 0,90 (clase A).
+- **[rPET Groove](/es/products/rpet-groove)** (ranurado, diez colores de stock y cualquier color por encargo, 12/24/36 mm) para grandes paños de pared que admiten color. NRC 0,55 / 0,75 / 0,90 según el espesor, fuego B-s1,d0 en blanco, gris o negro, B-s2,d0 en el resto de la carta.
+- **rWood Groove o rWood Micro** ([nuestra gama de madera](/es/products/wood-acoustic-panels)) donde el interior pide calidez: chapa con certificación FSC sobre núcleo de MDF (lamas de MDF sobre 3 mm de fieltro rPET en Groove; núcleo de MDF ignífugo con cámaras acústicas en Micro), αw 0,90 (clase A).
 - **[Interior](/es/products/interior)**, nuestros paneles textiles modulares con funda extraíble y lavable, para zonas donde los paneles se cambian o se mueven a menudo.
 
 Cuelgue los paneles a la altura del oído, hasta unos 2,2 m: ahí se produce la reflexión del habla. Un panel por encima de los armarios rinde mucho menos que el mismo panel detrás de una mesa.
@@ -90,7 +90,7 @@ Un orden realista para una oficina abierta de 300 m² con treinta puestos:
 3. **Dos o tres cabinas telefónicas** y, si faltan salas, un Duo o un Modular XL.
 4. **Módulos Divide** entre los equipos y acuerdos de uso.
 
-Cada paso se puede ejecutar y medir por separado. Para el rPET cuente con unas 3 o 4 semanas laborables; para rWood Micro y Perf con chapa de stock, 3 o 4 semanas; para rWood Groove, un plazo que confirmamos al hacer el pedido; para las cabinas, de cuatro a seis semanas. Los paneles se recogen sin coste al final de su vida útil, pero únicamente en Bélgica, los Países Bajos, Luxemburgo, Francia y Alemania: una oficina en España no dispone de esa recogida gratuita. Detrás de Re-Sound está Stretch Group, con fábricas propias en Beveren-Waas (Bélgica) y en Częstochowa (Polonia).
+Cada paso se puede ejecutar y medir por separado. Para el rPET cuente con unas 3 o 4 semanas laborables; para rWood Micro y Perf con chapa de stock, 3 o 4 semanas; para rWood Groove, un plazo que confirmamos al hacer el pedido; para las cabinas, de cuatro a seis semanas. Al terminar su vida útil, los paneles se recogen sin coste, pero únicamente en Bélgica, los Países Bajos, Luxemburgo, Francia y Alemania: una oficina en España no dispone de esa recogida gratuita. Re-Sound forma parte de Stretch Group y produce en dos fábricas propias: Beveren-Waas, en Bélgica, y Częstochowa, en Polonia.
 
 **¿Quiere saber en qué punto está su oficina?** Solicite el kit de muestras gratuito en la [página de contacto](/es/contact); en [dónde comprar](/es/where-to-buy) figuran los distribuidores y la exposición de Beveren-Waas, con todos los paneles y cabinas instalados.
 

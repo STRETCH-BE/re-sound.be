@@ -16,7 +16,7 @@ heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroAlt: "Aula con paneles rPET Groove en la pared del fondo y un techo absorbente"
 internalLinks: ["/es/acoustic-calculator","https://stretchplafond.be/products/acoustic-stretch-system","/es/products/rpet-groove","/es/products/interior","/es/products/rwood-micro","/es/products/divide","/es/products/pet-acoustic-panels","/es/samples","/es/where-to-buy"]
 cta: "Solicite el texto de prescripción y un kit de muestras para su centro."
-sources: "NBN S 01-400-2:2012 (criterios acústicos para edificios escolares, Bélgica); DIN 18041:2016 (acústica de recintos, Alemania); CTE DB-HR como referencia en España; ISO 3382-2 (medida del tiempo de reverberación); ISO 11654 (clases de absorción acústica); EN 13501-1 (clasificación al fuego); fichas de producto de Re-Sound."
+sources: "NBN S 01-400-2:2012 (criterios acústicos para edificios escolares, Bélgica); DIN 18041:2016 (acústica de recintos, Alemania); CTE DB-HR como referencia en España; ISO 3382-2 (medida del tiempo de reverberación); ISO 11654 (clases A a E de absorción); EN 13501-1 (clasificación al fuego); fichas de producto de Re-Sound."
 faq: [{"question":"¿Qué tiempo de reverberación es obligatorio en un aula?","answer":"La norma belga NBN S 01-400-2 impone un tiempo de reverberación nominal máximo por tipo de recinto y volumen; para un aula estándar eso equivale en la práctica a unos 0,6 a 0,8 s (confort normal), más estricto para el confort elevado. En España la referencia es el CTE DB-HR; haga calcular la exigencia exacta a su arquitecto o acústico."},{"question":"¿Bastan los paneles de pared en un aula?","answer":"Normalmente no, salvo ocupando mucha superficie de pared: el techo es la mayor superficie y la más eficiente. Techo más pared del fondo es la combinación que cumple la norma en la mayoría de las aulas."},{"question":"¿Con qué rapidez se puede instalar en un colegio?","answer":"El rPET tarda aproximadamente 3 o 4 semanas laborables; un aula media la instala un equipo en media jornada. Haga el pedido antes de finales de mayo para instalar con seguridad en las vacaciones de verano."}]
 draft: false
 translationKey: "classroom-reverberation"
@@ -52,12 +52,12 @@ Medimos previa solicitud; para una primera aproximación nos bastan las medidas 
 
 ## Ejemplo de cálculo: de 1,2 a 0,6 segundos
 
-Aula de 8 × 7 m con 3,2 m de altura libre (179 m³), suelo de baldosas, techo de yeso, una pared de cristal. Medición: **1,2 s**; objetivo: **0,6 s**.
+Aula de 8 por 7 m, 3,2 m de altura libre, 179 m³; suelo de baldosas, techo de yeso, una pared de cristal. Medición: **1,2 s**; objetivo: **0,6 s**.
 
-Según Sabine (A = 0,161 × V / T):
+Con la fórmula de Sabine:
 
-- Hoy: 0,161 × 179 / 1,2 = **24 m² Sabine**
-- Meta: 0,161 × 179 / 0,6 = **48 m² Sabine**
+- Absorción existente: **24 m² Sabine** (0,161 × 179 / 1,2)
+- Absorción para 0,6 s: **48 m² Sabine** (0,161 × 179 / 0,6)
 - Hay que añadir **24 m² Sabine**
 
 Propuesta: un **techo absorbente de 30 m²** de clase A (αw 0,9), que aporta 27 m² Sabine, más **6 m² de rWood Groove** en la pared del fondo (αw 0,90, 5,4 m² Sabine). En total, más de 32 m² Sabine, bastante por encima de los 24 necesarios: el aula queda por debajo de 0,6 s incluso vacía y hay margen para los graves. Rehaga el cálculo para su aula con la [calculadora acústica](/es/acoustic-calculator).
@@ -66,8 +66,8 @@ Propuesta: un **techo absorbente de 30 m²** de clase A (αw 0,9), que aporta 27
 
 Un colegio no es una oficina: se apoyan en la pared, arrastran sillas y limpian con esponjas mojadas. Nuestras recomendaciones por zona:
 
-- **El techo, primero.** Un [techo tensado acústico](https://stretchplafond.be/products/acoustic-stretch-system), sin juntas e instalado en un día por nuestra empresa hermana STRETCH, o paneles de techo de PET reciclado eliminan la mayor parte de la reverberación sin ocupar pared.
-- **Pared del fondo y pared lateral.** [rPET Groove](/es/products/rpet-groove): diez colores de serie y colores a medida por encargo, 12 / 24 / 36 mm (NRC de 0,55 a 0,90), fuego B-s1,d0 en blanco, gris y negro y B-s2,d0 en los otros colores, se mecaniza como el MDF y se cambia panel a panel. A la altura del oído de los alumnos, no sobre los armarios.
+- **El techo, primero.** Un techo tensado acústico ([véalo en STRETCH](https://stretchplafond.be/products/acoustic-stretch-system), nuestra empresa hermana, que lo instala en un día y sin juntas) o paneles de techo de PET reciclado eliminan la mayor parte de la reverberación sin ocupar pared.
+- **Pared del fondo y pared lateral.** [rPET Groove](/es/products/rpet-groove): diez colores de serie y colores a medida por encargo, 12 / 24 / 36 mm (NRC de 0,55 a 0,90), clasificación al fuego B-s1,d0 para blanco, gris y negro, B-s2,d0 para los demás colores, se mecaniza como el MDF y se cambia panel a panel. A la altura del oído de los alumnos, no sobre los armarios.
 - **Aulas de infantil y de apoyo.** [Interior](/es/products/interior): paneles textiles modulares (αw 1,0, clase A) con funda extraíble y lavable.
 - **Comedor, salón de actos y sala polivalente.** [rWood Micro](/es/products/rwood-micro): chapa microperforada de madera, B-s1,d0, con la presencia que pide un salón de actos y la absorción que pide un comedor.
 - **Espacios de aprendizaje abiertos.** [Divide](/es/products/divide): mamparas autoportantes acoplables magnéticamente que delimitan zonas de aprendizaje sin levantar tabiques.
@@ -76,8 +76,8 @@ Un colegio no es una oficina: se apoyan en la pared, arrastran sillas y limpian 
 
 En un edificio escolar, la clase de fuego y la calidad del aire interior importan tanto como la acústica:
 
-- **Reacción al fuego (EN 13501-1)**: toda la gama rPET (Panel, Groove, Flex Groove) es B-s1,d0 en los colores blanco, gris y negro y B-s2,d0 en cualquier otro color, es decir, contribución limitada al fuego, poco humo y sin gotas inflamadas; los tres rWood (Groove, Micro, Perf) son B-s1,d0 con su núcleo de MDF ignífugo.
-- **Emisiones**: el fieltro rPET está certificado según OEKO-TEX® Standard 100.
+- **Reacción al fuego (EN 13501-1)**: toda la gama rPET (Panel, Groove, Flex Groove) es B-s1,d0 si el panel es blanco, gris o negro y B-s2,d0 en cualquier otro color, es decir, contribución limitada al fuego, poco humo y sin gotas inflamadas; los tres rWood (Groove, Micro, Perf) son B-s1,d0 con su núcleo de MDF ignífugo.
+- **Emisiones**: certificación OEKO-TEX® Standard 100 para el fieltro rPET.
 - **Mantenimiento**: el [fieltro de PET](/es/products/pet-acoustic-panels) se aspira y las manchas se tratan localmente; la funda de Interior se lava en la lavadora; un panel dañado se cambia sin repintar la pared.
 - **Origen**: la chapa de todos los productos rWood tiene certificación FSC®, certificado de cadena de custodia C191539.
 
@@ -105,4 +105,4 @@ Normalmente no, salvo ocupando mucha superficie de pared: el techo es la mayor s
 **¿Con qué rapidez se puede instalar en un colegio?**
 El rPET tarda aproximadamente 3 o 4 semanas laborables; un aula media la instala un equipo en media jornada. Haga el pedido antes de finales de mayo para instalar con seguridad en las vacaciones de verano.
 
-*Fuentes: NBN S 01-400-2:2012 (criterios acústicos para edificios escolares, Bélgica); DIN 18041:2016 (acústica de recintos, Alemania); CTE DB-HR como referencia en España; ISO 3382-2 (medida del tiempo de reverberación); ISO 11654 (clases de absorción acústica); EN 13501-1 (clasificación al fuego); fichas de producto de Re-Sound.*
+*Fuentes: NBN S 01-400-2:2012 (criterios acústicos para edificios escolares, Bélgica); DIN 18041:2016 (acústica de recintos, Alemania); CTE DB-HR como referencia en España; ISO 3382-2 (medida del tiempo de reverberación); ISO 11654 (clases A a E de absorción); EN 13501-1 (clasificación al fuego); fichas de producto de Re-Sound.*

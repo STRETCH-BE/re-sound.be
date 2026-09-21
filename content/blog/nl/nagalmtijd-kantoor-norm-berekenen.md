@@ -49,7 +49,7 @@ Kleine vergaderzalen zijn het lastigst: 0,39 s haalt geen enkele zaal met een gi
 
 ## Rekenvoorbeeld vergaderzaal: van 0,9 s naar de streefwaarde
 
-Vergaderzaal van 5 bij 4 m en 2,8 m hoog, dus 56 m³; tapijttegels, glazen wand, scherm op de korte wand. Gemeten: **0,9 s**. Streefwaarde volgens A3: **0,39 s**. Volgens Sabine (A = 0,161 × V / T) zit er vandaag 0,161 × 56 / 0,9, dus **10,0 m² sabine**, in de zaal; bij 0,39 s moet dat 0,161 × 56 / 0,39, dus **23,1 m² sabine**, worden. Er komt bijgevolg **13,1 m² sabine** bij.
+Vergaderzaal van 5 bij 4 m en 2,8 m hoog, dus 56 m³; tapijttegels, glazen wand, scherm op de korte wand. Gemeten: **0,9 s**. Streefwaarde volgens A3: **0,39 s**. Volgens Sabine (A = 0,161 × V / T) staat er vandaag 0,161 × 56 / 0,9, ofwel **10,0 m² sabine**, in de zaal; bij 0,39 s moet dat 0,161 × 56 / 0,39 worden, ofwel **23,1 m² sabine**. Er komt bijgevolg **13,1 m² sabine** bij.
 
 Voorstel: **12 m² plafondeilanden van klasse A** (stel αw 0,9) = 10,8 m² sabine, plus **één plaat [rPET Panel](/nl/products/rpet-panel)** (12 mm, 2.440 × 1.220 mm) met 100 mm lucht erachter, tegenover het scherm: 2,98 m² × 0,80 = 2,4 m² sabine. Nieuw 13,2 m², met de bestaande 10,0 m² samen 23,2 m²: T = 0,161 × 56 / 23,2 = **0,39 s**, streefwaarde gehaald. Wie de zaal helemaal met panelen bekleedt, zakt onder de tolerantieband: bij deze methode is meer niet automatisch beter. De frequentieafhankelijkheid (lage tonen vragen dikkere panelen of een luchtspouw erachter) check je met je akoesticus.
 

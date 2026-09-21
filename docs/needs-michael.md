@@ -252,6 +252,38 @@ hub, price guide, blog posts, manufacturing page).
    were published on 20 September, dated 20 September, and now appear on
    /en/blog, /fr/blog and /de/blog next to the six Dutch posts, indexed and
    in the sitemap.
+   (g) **Every blog topic now exists in every language** (21 September):
+   the ten editorial topics (how many panels, booth prices, PET vs wood,
+   recycled PET panels, micro-perforated vs grooved wood, specifying
+   αw/NRC/class A, open-plan office acoustics, restaurant acoustics,
+   classroom reverberation, office reverberation norm) are published in all
+   ten locales — 100 posts, 82 of them written on 20–21 September from the
+   18 existing ones as fresh, localised articles, not word-for-word
+   translations. Each post carries a `translationKey`, so the six indexed
+   locales (en nl fr de es pt) link each other as hreflang alternates on
+   the post page and in the sitemap; da/sv/no/is stay noindex like the rest
+   of the site. Every post passed a validator (front matter, links against
+   the route table, price tokens, FAQ verbatim in the body, no forbidden
+   claims) and the whole site passes a new uniqueness gate
+   (`npm run verify:unique`, `docs/uniqueness-gate.md`): no two pages of a
+   locale share a title, description or H1, and no pair shares more than
+   30 % of its 8-word phrases once site-wide template text is removed (the
+   closest pair on the site is rPET Groove ~ rPET Flex Groove at about
+   20 %). What the writers deliberately localised, so you know: free
+   take-back is stated as Belgium, the Netherlands, France, Germany and
+   Luxembourg only (and "not here" in ES/PT/DA/SV/NO/IS); Iceland never
+   gets a transport price, delivery time or installation price ("on
+   request"); Norway gets the mainland-Europe transport price but no
+   delivery-days promise; national standards are only named outside their
+   own country (CTE DB-HR, RRAE, DS 490, SS 25268, NS 8175, BB93/BS 8233),
+   DIN 18041 is presented abroad as "the German reference method", and every
+   norm question ends with "check with your acoustician"; "sample kit
+   within three working days" and the on-site demo offer were dropped
+   outside Benelux/DE. **Icelandic needs a native read** before you point
+   anyone at /is/blog — the register is informal þú and the terminology
+   (hljóðdeyfiplötur, ómtími) is consistent, but nobody Icelandic has read
+   it. Meta descriptions of many posts run 158–200 characters (Google shows
+   about 155); shortening them is a copy job, not a correctness one.
 
 ## B. Confirmed price list (per model)
 

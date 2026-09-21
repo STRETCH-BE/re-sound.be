@@ -3,7 +3,7 @@ id: "BP-classroom-reverberation-de"
 slug: "nachhallzeit-klassenzimmer-normen"
 locale: "de"
 title: "Nachhallzeit im Klassenzimmer: Norm, Messung, Lösung | Re-Sound"
-description: "Nachhallzeit im Klassenzimmer: was DIN 18041 und die belgische NBN S 01-400-2 regeln, wie Sie messen und wie viel Absorption nötig ist – mit Rechenbeispiel."
+description: "Nachhallzeit im Klassenzimmer: was DIN 18041 und die belgische NBN S 01-400-2 regeln, wie Sie messen, wie viel Absorption nötig ist – mit Rechenbeispiel."
 h1: "Nachhallzeit im Klassenzimmer: Normen, Messung und Lösungen, die standhalten"
 keyword: "nachhallzeit klassenzimmer norm"
 secondaryKeywords: ["akustik klassenzimmer","din 18041 klassenzimmer","akustikpaneele schule","nachhall schule verbessern"]

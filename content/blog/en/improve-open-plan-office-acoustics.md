@@ -21,7 +21,7 @@ faq: [{"question":"What is a good reverberation time for an open-plan office?","
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 1512
+wordCount: 1507
 ---
 
 An open-plan office does not get loud through ill will; it gets loud through hard materials and too many people trying to be understood at the same time. **Improving the acoustics almost always comes down to a combination of three things: adding absorption (ceiling and walls), screening zones (partitions and booths) and agreeing where calls and meetings happen.** Below are the seven measures we at Re-Sound see working in practice, in the order in which they pay back most.
@@ -46,7 +46,7 @@ If you measure 1.0 s or more, absorption is the first step. If you are already a
 
 The ceiling is the largest continuous surface and the only one every workstation can see. An absorbent ceiling brings the reverberation time down fastest. Two options:
 
-- **An acoustic stretch ceiling**: a perforated membrane with absorbent material behind it, seamless up to 5 m wide, fitted in a day. Our sister company STRETCH has been installing them in offices for years; read more at [stretchplafond.be](https://stretchplafond.be/products/acoustic-stretch-system).
+- **An acoustic stretch ceiling**: a perforated membrane with absorbent material behind it, seamless up to 5 m wide, fitted in a day. Our sister company STRETCH has been installing them in offices for years; details on [its own site](https://stretchplafond.be/products/acoustic-stretch-system).
 - **Ceiling panels and rafts** in recycled PET or wood, where the ceiling has to stay visible (services on show, concrete as a finish).
 
 Rule of thumb: making 60 to 80% of the ceiling area absorbent solves the reverberation problem in most offices.
@@ -90,7 +90,7 @@ A realistic order for an open-plan office of 300 m² with thirty workstations:
 3. **Two to three phone booths** and, if meeting rooms are short, one Duo or Modular XL.
 4. **Divide modules** between the teams, and agreements on use.
 
-Each step can be carried out and measured on its own. We deliver rPET in about 3–4 working weeks, rWood Micro and Perf in stock veneers in 3–4 weeks, and rWood Groove with a lead time we confirm on order; booths ship in four to six weeks. At the end of their life we take everything back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg, and only there. Re-Sound is a Stretch Group brand; we produce in our own plants in Beveren-Waas and Częstochowa, which means you talk to the people who design the product. How many square metres your floor needs is worked out room by room in [How many acoustic panels do I need?](/en/blog/how-many-acoustic-panels-do-i-need).
+Each step can be carried out and measured on its own. Delivery: about 3–4 working weeks for rPET, 3–4 weeks for rWood Micro and Perf in stock veneers, a lead time confirmed at order for rWood Groove, and four to six weeks for booths. At the end of their life we take everything back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg, and only there. Re-Sound is a Stretch Group brand; we produce in our own plants in Beveren-Waas and Częstochowa, which means you talk to the people who design the product. How many square metres your floor needs is worked out room by room in our [panel calculation guide](/en/blog/how-many-acoustic-panels-do-i-need).
 
 **Want to know where your office stands?** Request a free [sample kit](/en/samples) or book a visit to the showroom in Beveren-Waas, where every panel and booth stands installed.
 

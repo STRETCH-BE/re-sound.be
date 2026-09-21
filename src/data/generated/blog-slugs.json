@@ -1,28 +1,120 @@
 {
+  "da": [
+    "akustikpaneler-af-genanvendt-pet",
+    "akustikpaneler-i-trae-mikroperforeret-eller-rillet",
+    "akustikpaneler-til-restaurant",
+    "bedre-akustik-i-storrumskontoret",
+    "din-18041-efterklangstid-kontor",
+    "efterklangstid-i-klasselokaler",
+    "hvor-mange-akustikpaneler-skal-jeg-bruge",
+    "pet-eller-trae-akustikpaneler",
+    "specificer-akustikpaneler-aw-nrc-klasse-a",
+    "telefonboks-til-kontor-priser"
+  ],
   "de": [
+    "akustik-grossraumbuero-verbessern",
+    "akustikpaneele-ausschreiben-aw-nrc-klasse-a",
+    "akustikpaneele-fuer-restaurants",
     "akustikpaneele-recyceltes-pet",
     "din-18041-nachhallzeit-buero",
     "holz-akustikpaneele-mikroperforiert-oder-genutet",
-    "telefonbox-buero-kosten"
+    "nachhallzeit-klassenzimmer-normen",
+    "pet-oder-holz-akustikpaneele",
+    "telefonbox-buero-kosten",
+    "wie-viele-akustikpaneele-brauche-ich"
   ],
   "en": [
+    "acoustic-panels-for-restaurants",
+    "classroom-reverberation-time-standards",
     "how-many-acoustic-panels-do-i-need",
+    "improve-open-plan-office-acoustics",
+    "micro-perforated-or-grooved-wood-panels",
     "office-phone-booth-prices",
+    "office-reverberation-time-din-18041",
     "pet-acoustic-panels-vs-wood",
+    "recycled-pet-acoustic-panels",
     "specifying-acoustic-panels-aw-nrc-class-a"
   ],
+  "es": [
+    "cuantos-paneles-acusticos-necesito",
+    "especificar-paneles-acusticos-aw-nrc-clase-a",
+    "mejorar-acustica-oficina-abierta",
+    "norma-reverberacion-oficina-din-18041",
+    "paneles-acusticos-madera-microperforados-o-ranurados",
+    "paneles-acusticos-pet-o-madera",
+    "paneles-acusticos-pet-reciclado",
+    "paneles-acusticos-restaurante",
+    "precio-cabina-acustica-oficina",
+    "tiempo-reverberacion-aulas-normativa"
+  ],
   "fr": [
+    "ameliorer-acoustique-bureau-ouvert",
     "cabine-acoustique-bureau-prix",
     "combien-de-panneaux-acoustiques",
     "panneau-acoustique-bois-microperfore",
-    "panneaux-acoustiques-pet-recycle"
+    "panneaux-acoustiques-pet-ou-bois",
+    "panneaux-acoustiques-pet-recycle",
+    "panneaux-acoustiques-restaurant",
+    "prescrire-panneaux-acoustiques-aw-nrc",
+    "temps-de-reverberation-bureau-norme",
+    "temps-de-reverberation-salle-de-classe"
+  ],
+  "is": [
+    "aw-nrc-flokkur-a-utbodslysing",
+    "betri-hljodvist-i-opnu-skrifstofurymi",
+    "hljoddeyfiplotur-fyrir-veitingastadi",
+    "hve-margar-hljoddeyfiplotur-tharf-eg",
+    "omtimi-i-kennslustofum-vidmid-og-lausnir",
+    "omtimi-skrifstofu-din-18041-og-iso-22955",
+    "pet-eda-vidur-hljoddeyfiplotur",
+    "simaklefar-skrifstofu-verd-og-flokkar"
   ],
   "nl": [
     "akoestiek-open-kantoor-verbeteren",
+    "akoestische-panelen-gerecycleerd-pet",
     "akoestische-panelen-restaurant",
+    "akoestische-panelen-specificeren-aw-nrc-klasse-a",
     "belcabine-kantoor-prijs-keuze-plaatsing",
     "hoeveel-akoestische-panelen-nodig",
+    "houten-akoestische-panelen-microgeperforeerd-of-gegroefd",
+    "nagalmtijd-kantoor-norm-berekenen",
     "nagalmtijd-klaslokaal-normen",
     "pet-vilt-of-houten-akoestische-panelen"
+  ],
+  "no": [
+    "akustikkpaneler-av-resirkulert-pet",
+    "akustikkpaneler-for-restauranter",
+    "bedre-akustikk-apent-kontorlandskap",
+    "etterklangstid-klasserom-krav-og-losninger",
+    "etterklangstid-kontor-krav-beregning",
+    "hvor-mange-akustikkpaneler-trenger-du",
+    "pet-filt-eller-tre-akustikkpaneler",
+    "spesifisere-akustikkpaneler-aw-nrc-klasse-a",
+    "telefonboks-til-kontor-priser-og-klasser",
+    "trepaneler-mikroperforert-eller-spiler"
+  ],
+  "pt": [
+    "cabine-acustica-escritorio-precos",
+    "especificar-paineis-acusticos-aw-nrc-classe-a",
+    "melhorar-acustica-escritorio-open-space",
+    "norma-tempo-reverberacao-escritorio",
+    "paineis-acusticos-pet-ou-madeira",
+    "paineis-acusticos-pet-reciclado",
+    "paineis-acusticos-restaurante-menos-ruido",
+    "paineis-madeira-microperfurados-ou-ranhurados",
+    "quantos-paineis-acusticos-preciso",
+    "tempo-reverberacao-sala-aula-normas"
+  ],
+  "sv": [
+    "akustikpaneler-atervunnen-pet",
+    "akustikpaneler-restaurang-mindre-buller",
+    "akustikpaneler-tra-mikroperforerad-eller-sparad",
+    "efterklangstid-klassrum-krav-och-losningar",
+    "efterklangstid-kontor-krav-berakning",
+    "forbattra-akustiken-oppet-kontor",
+    "foreskriva-akustikpaneler-aw-nrc-klass-a",
+    "hur-manga-akustikpaneler-behover-jag",
+    "pet-eller-tra-akustikpaneler",
+    "telefonbas-kontor-pris-klasser"
   ]
 }

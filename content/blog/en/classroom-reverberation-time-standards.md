@@ -16,7 +16,7 @@ heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroAlt: "Classroom with rPET Groove panels on the back wall and an absorbent ceiling"
 internalLinks: ["/en/products/pet-acoustic-panels","/en/products/rpet-groove","/en/products/interior","/en/products/rwood-micro","/en/products/rwood-groove","/en/products/divide","https://stretchplafond.be/products/acoustic-stretch-system","/en/where-to-buy","/en/blog/how-many-acoustic-panels-do-i-need","/en/samples","/en/contact"]
 cta: "Request the specification text and a sample kit for your school."
-sources: "NBN S 01-400-2 (acoustic criteria for school buildings, Belgium); BB93 (acoustic design of schools, UK); BS 8233 (UK pointer); DIN 18041 (German reference method); ISO 3382-2 (reverberation time measurement); ISO 11654 (absorption classes); EN 13501-1 (reaction-to-fire classification); FSC; OEKO-TEX® Standard 100; Re-Sound product data."
+sources: "NBN S 01-400-2 (acoustic criteria for school buildings, Belgium); BB93 (acoustic design of schools, UK); BS 8233 (UK pointer); DIN 18041 (German reference method); ISO 3382-2 (measuring reverberation time); ISO 11654 (absorption classes); EN 13501-1 (fire classification); FSC; OEKO-TEX® Standard 100; Re-Sound product data."
 faq: [{"question":"Which reverberation time is required in a classroom?","answer":"The Belgian standard NBN S 01-400-2 sets a maximum nominal reverberation time per room type and volume; for a standard classroom that comes down in practice to roughly 0.6 to 0.8 s (normal comfort), stricter for enhanced comfort. In the UK, BB93 sets its own limits per room type. Have the exact requirement calculated by your architect or acoustician."},{"question":"Are wall panels alone enough in a classroom?","answer":"Usually not without taking up a lot of wall area: the ceiling is the largest surface and the most efficient. Ceiling plus back wall is the combination that meets the standard in most classrooms."},{"question":"How quickly can a school be fitted out?","answer":"We deliver rPET in about 3–4 working weeks; a team fits an average classroom in half a day. Order before the end of May to be sure of installation in the summer holidays."}]
 draft: false
 translationKey: "classroom-reverberation"
@@ -52,7 +52,7 @@ Re-Sound measures on request; for a first estimate the dimensions of the room ar
 
 ## Worked example: from 1.2 to 0.6 seconds
 
-Classroom of 8 × 7 m, 3.2 m high (179 m³), tiled floor, plasterboard ceiling, one glazed wall. Measured: **1.2 s**. Target: **0.6 s**.
+Classroom of 8 × 7 m and 3.2 m high (179 m³): tiled floor, plasterboard ceiling and a glazed wall. Measured: **1.2 s**. Target: **0.6 s**.
 
 Sabine's formula (A = 0.161 × V / T):
 
@@ -60,7 +60,7 @@ Sabine's formula (A = 0.161 × V / T):
 - absorption at the target: 0.161 × 179 ÷ 0.6 = **48 m² Sabine**
 - to add: **24 m² Sabine**
 
-Proposal: **30 m² of absorbent ceiling** in class A (αw 0.9), good for 27 m² Sabine, plus **6 m² of [rWood Groove](/en/products/rwood-groove)** on the back wall (αw 0.90, 5.4 m² Sabine). Together well over 32 m² Sabine: comfortably above the 24 needed, so the room stays under 0.6 s even when empty and there is margin for the low frequencies. How to do the sum yourself is in [How many acoustic panels do I need?](/en/blog/how-many-acoustic-panels-do-i-need).
+Proposal: **30 m² of absorbent ceiling** in class A (αw 0.9), good for 27 m² Sabine, plus **6 m² of [rWood Groove](/en/products/rwood-groove)** on the back wall (αw 0.90, 5.4 m² Sabine). Together well over 32 m² Sabine: comfortably above the 24 needed, so the room stays under 0.6 s even when empty and there is margin for the low frequencies. How to do the sum yourself is in our guide on [how many acoustic panels you need](/en/blog/how-many-acoustic-panels-do-i-need).
 
 ## Solutions that stand up to school life
 
@@ -76,7 +76,7 @@ A school is not an office: people lean against walls, drag chairs and work with 
 
 For school buildings the fire class and indoor air quality matter as much as the acoustics:
 
-- **Fire class (EN 13501-1)**: the rPET range (Panel, Groove, Flex Groove) is B-s1,d0 in white, grey and black and B-s2,d0 in the other colours, that is limited combustibility, little smoke and no flaming droplets; the rWood range (Groove, Micro, Perf) is B-s1,d0 on the fire-retardant MDF core. Check the exact requirement with your acoustician and fire officer.
+- **Fire class (EN 13501-1)**: every rPET product (Panel, Groove and Flex Groove) is B-s1,d0 for white, grey and black and B-s2,d0 for every other colour, meaning limited combustibility, little smoke and no flaming droplets; every rWood product (Groove, Micro and Perf) is B-s1,d0 on its fire-retardant MDF core. Check the exact requirement with your acoustician and fire officer.
 - **Emissions**: rPET is OEKO-TEX® Standard 100 certified.
 - **Maintenance**: [PET felt](/en/products/pet-acoustic-panels) is vacuumed and spot-treated where marked; the Interior covers go in the washing machine. Damaged panels are replaced one at a time, without repainting the wall.
 - **Origin**: the veneer of every rWood product is FSC®-certified, chain-of-custody certificate C191539.
@@ -87,10 +87,10 @@ Most schools install acoustics during the summer holidays. Count back from the f
 
 1. **Measurement and proposal** in spring; approval by the school board.
 2. **Specification**: for every product we supply a specification text with αw, class, fire class, format, thickness and material, so a tender can go out without a brand name.
-3. **Order before the end of May**: we deliver rPET in about 3–4 working weeks (custom colours on request); rWood Micro and Perf in stock veneers in 3–4 weeks, non-stock veneers in 6–8 weeks; the lead time for rWood Groove we confirm on order.
+3. **Order before the end of May**: rPET ships in about 3–4 working weeks (custom colours on request), rWood Micro and Perf in 3–4 weeks for stock veneers and 6–8 weeks for non-stock ones, and rWood Groove on a lead time confirmed at order.
 4. **Installation** in July, measurement in August, ready for September.
 
-At the end of their life, or during a refurbishment, we take the panels back free of charge in Belgium, the Netherlands, France, Germany and Luxembourg, and the material goes back into our production; outside those five countries there is no free take-back. Re-Sound is a Stretch Group brand and produces in its own plants in Beveren-Waas (Belgium) and Częstochowa (Poland).
+At the end of their life, or during a refurbishment, the panels come back to us free of charge from Belgium, the Netherlands, France, Germany and Luxembourg (nowhere else) and the material goes back into our production. Re-Sound is a Stretch Group brand with two plants of its own, Beveren-Waas in Belgium and Częstochowa in Poland.
 
 **Ready to start?** Request the free [sample kit](/en/samples) (A4 samples of every range) and the specification texts for your file via [contact](/en/contact), or book a visit to the [showroom](/en/where-to-buy) in Beveren-Waas.
 
@@ -105,4 +105,4 @@ Usually not without taking up a lot of wall area: the ceiling is the largest sur
 **How quickly can a school be fitted out?**
 We deliver rPET in about 3–4 working weeks; a team fits an average classroom in half a day. Order before the end of May to be sure of installation in the summer holidays.
 
-*Sources: NBN S 01-400-2 (acoustic criteria for school buildings, Belgium); BB93 (acoustic design of schools, UK); BS 8233 (UK pointer); DIN 18041 (German reference method); ISO 3382-2 (reverberation time measurement); ISO 11654 (absorption classes); EN 13501-1 (reaction-to-fire classification); FSC; OEKO-TEX® Standard 100; Re-Sound product data.*
+*Sources: NBN S 01-400-2 (acoustic criteria for school buildings, Belgium); BB93 (acoustic design of schools, UK); BS 8233 (UK pointer); DIN 18041 (German reference method); ISO 3382-2 (measuring reverberation time); ISO 11654 (absorption classes); EN 13501-1 (fire classification); FSC; OEKO-TEX® Standard 100; Re-Sound product data.*
