@@ -21,7 +21,7 @@ faq: [{"question":"Le bois absorbe-t-il moins bien le son que le feutre PET ?"
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 1955
+wordCount: 1954
 ---
 
 **En résumé : nos panneaux en feutre PET et nos panneaux en bois se valent acoustiquement (rWood Groove et rWood Micro à αw 0,90 en classe A, rPET Panel de 12 mm entre αw 0,80 et 1,00 selon la pose) ; le choix se fait donc sur l'aspect, la classe feu, le budget et l'argument environnemental, pas sur l'absorption.** Le [feutre PET](/fr/products/panneaux-acoustiques-pet) l'emporte pour la couleur, les visuels imprimés, les budgets serrés et les découpes sur place ; le [bois](/fr/products/panneaux-acoustiques-bois) pour la chaleur, les espaces d'accueil et, sur âme MDF ignifugée, la même classe B-s1,d0 que le rPET blanc, gris ou noir.
@@ -47,7 +47,7 @@ Le rPET Groove, découpé dans cette même plaque, n'est caractérisé que par u
 
 La classe B (αw entre 0,80 et 0,85) fait le gros du travail dans les bureaux, les écoles et les restaurants ; la classe A (αw 0,90 et plus) est le domaine du rWood Groove, du rWood Micro, d'Interior (notre panneau textile, αw 1,0) et du rPET Panel devant une cavité garnie de laine de roche. Le niveau à atteindre dépend des règles applicables au local : ISO 22955 pour un bureau ouvert, NBN S 01-400-2 pour une école belge. Vérifiez l'exigence exacte avec votre acousticien avant de fixer la classe.
 
-**Le calcul ne change pas d'un matériau à l'autre.** Prenons une salle de réunion de 20 m² (5 × 4 m) sous 2,8 m de hauteur, soit 56 m³, mesurée à 0,9 s et à ramener à 0,6 s pour des visioconférences intelligibles. Selon Sabine, A = 0,161 × V / T : 0,161 × 56 = 9,02, à diviser par le temps de réverbération.
+**Le calcul ne change pas d'un matériau à l'autre.** Prenons une salle de réunion de 20 m² (5 × 4 m, 2,8 m sous plafond), soit 56 m³, mesurée à 0,9 s et à ramener à 0,6 s pour des visioconférences intelligibles. Selon Sabine, A = 0,161 × V / T : 0,161 × 56 = 9,02, à diviser par le temps de réverbération.
 
 - À 0,9 s : 9,02 / 0,9 = **10,0 m² Sabine** aujourd'hui
 - À 0,6 s : 9,02 / 0,6 = **15,0 m² Sabine** visés

@@ -21,7 +21,7 @@ faq: [{"question":"Quel temps de réverbération est obligatoire dans une salle 
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 1512
+wordCount: 1514
 ---
 
 **Dans une salle de classe, le temps de réverbération détermine si les élèves comprennent l'enseignant et si celui-ci a encore de la voix à 16 h.** En Belgique, la norme NBN S 01-400-2 impose des temps de réverbération maximaux dans les bâtiments scolaires ; pour une classe ordinaire, cela revient en pratique à 0,6 à 0,8 seconde environ, alors qu'un local non traité, avec plâtre, vitrage et carrelage, dépasse souvent la seconde. Cet article explique ce que demande la norme, comment mesurer, combien d'absorption prévoir et quelles solutions résistent à dix années scolaires.
@@ -54,7 +54,7 @@ Re-Sound mesure sur demande ; pour une première estimation, les dimensions du
 
 Classe de 8 × 7 m sous 3,2 m (179 m³), sol carrelé, plafond en plâtre, un mur vitré. Mesuré : **1,2 s**. Objectif : **0,6 s**.
 
-Formule de Sabine (A = 0,161 × V / T) :
+Avec Sabine (A = 0,161 × V / T) :
 
 - Absorption en place : 0,161 × 179 / 1,2 = **24 m² Sabine**
 - Absorption requise : 0,161 × 179 / 0,6 = **48 m² Sabine**
@@ -76,7 +76,7 @@ Une école n'est pas un bureau : on s'appuie contre les murs, on traîne les c
 
 Dans un bâtiment scolaire, la classe feu et la qualité de l'air intérieur comptent autant que l'acoustique :
 
-- **Classe feu (EN 13501-1)** : toute la gamme rPET (Panel, Groove, Flex Groove) obtient B-s1,d0 en blanc, gris et noir (combustibilité limitée, peu de fumée, aucune gouttelette enflammée) et B-s2,d0 dans les autres coloris ; la gamme rWood (Groove, Micro, Perf) obtient B-s1,d0 sur âme MDF ignifugée.
+- **Classe feu (EN 13501-1)** : toute la gamme rPET (Panel, Groove, Flex Groove) obtient B-s1,d0 en blanc, gris et noir (combustion limitée, peu de fumée, pas de gouttelettes enflammées) et B-s2,d0 dans les autres coloris ; la gamme rWood (Groove, Micro, Perf) obtient B-s1,d0 sur âme MDF ignifugée.
 - **Émissions** : le rPET porte la certification OEKO-TEX® Standard 100.
 - **Entretien** : le [feutre PET](/fr/products/panneaux-acoustiques-pet) s'aspire et se traite localement en cas de tache ; les housses Interior passent en machine. Un panneau abîmé se remplace à l'unité, sans repeindre le mur.
 - **Provenance** : le placage de chaque produit rWood est certifié FSC®, certificat de chaîne de contrôle C191539.
@@ -87,7 +87,7 @@ La plupart des écoles font poser l'acoustique pendant les vacances d'été. Com
 
 1. **Mesure et proposition** au printemps ; approbation par la direction et le pouvoir organisateur.
 2. **Cahier des charges** : pour chaque produit, nous fournissons un texte de prescription avec αw, classe, classe feu, format, épaisseur et matériau, utilisable dans un marché sans mention de marque.
-3. **Commande avant fin mai** : rPET livré en 3 à 4 semaines ouvrées environ (coloris sur mesure : délai sur demande) ; rWood Micro et Perf : 3 à 4 semaines en placages de stock, 6 à 8 semaines hors stock ; délai du rWood Groove confirmé à la commande.
+3. **Commande avant fin mai** : rPET livré en 3 à 4 semaines ouvrées environ (coloris sur mesure : délai sur demande) ; rWood Micro et Perf en 3 à 4 semaines si le placage est en stock, en 6 à 8 semaines sinon ; délai du rWood Groove confirmé à la commande.
 4. **Pose** en juillet, mesure en août, prêt pour septembre.
 
 En fin de vie, ou lors d'une rénovation, nous reprenons les panneaux gratuitement en Allemagne, au Luxembourg, en Belgique, en France et aux Pays-Bas ; la matière repart dans notre production. Re-Sound, marque du groupe Stretch, produit dans ses usines de Beveren-Waas (Belgique) et de Częstochowa (Pologne).

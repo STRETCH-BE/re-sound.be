@@ -2,9 +2,9 @@
 id: "BP-009"
 slug: "combien-de-panneaux-acoustiques"
 locale: "fr"
-title: "Combien de panneaux acoustiques ? 3 exemples calculés | Re-Sound"
-description: "Combien de panneaux acoustiques faut-il ? Formule de Sabine, temps de réverbération cibles, αw et trois exemples : réunion, bureau ouvert, restaurant."
-h1: "Combien de panneaux acoustiques faut-il ? Calcul par type de local"
+title: "Combien de panneaux acoustiques ? 3 exemples calculés | Re-Sound"
+description: "Combien de panneaux acoustiques faut-il ? Formule de Sabine, temps de réverbération cibles, αw et trois exemples : réunion, bureau ouvert, restaurant."
+h1: "Combien de panneaux acoustiques faut-il ? Calcul par type de local"
 keyword: "combien de panneaux acoustiques"
 secondaryKeywords: ["calculer panneaux acoustiques","calcul temps de réverbération","formule de Sabine","combien de m² de panneaux acoustiques"]
 intent: "learn"
@@ -18,31 +18,31 @@ heroAlt: "Plan d'une salle de réunion avec les panneaux rPET Groove dessinés s
 internalLinks: ["/fr/products/interior","/fr/products/rpet-groove","/fr/products/rwood-groove","/fr/products/rwood-micro","/fr/products/cabines-acoustiques","/fr/products/panneaux-acoustiques-bois","/fr/products/panneaux-acoustiques-pet","/fr/contact","https://stretchplafond.be/products/acoustic-stretch-system"]
 cta: "Envoyez-nous les dimensions de votre local pour un calcul et un devis, ou demandez notre kit d'échantillons."
 sources: "W.C. Sabine (formule de réverbération) ; ISO 11654 (classes d'absorption) ; NBN S 01-400-2 (bâtiments scolaires) ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; données produit Re-Sound."
-faq: [{"question":"Combien de panneaux acoustiques pour un bureau de 100 m² ?","answer":"Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent."},{"question":"L'épaisseur du panneau change-t-elle beaucoup le résultat ?","answer":"Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre."},{"question":"Peut-on poser trop de panneaux ?","answer":"Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local."}]
+faq: [{"question":"Combien de panneaux acoustiques pour un bureau de 100 m² ?","answer":"Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent."},{"question":"L'épaisseur du panneau change-t-elle beaucoup le résultat ?","answer":"Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre."},{"question":"Peut-on poser trop de panneaux ?","answer":"Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local."}]
 draft: false
 translationKey: "how-many-panels"
 model: "hoeveel-akoestische-panelen-nodig"
 wordCount: 1622
 ---
 
-**Le nombre de panneaux acoustiques dont un local a besoin se déduit de trois chiffres : le volume de la pièce, le temps de réverbération actuel et le temps de réverbération visé.** La formule de Sabine vous donne la surface d'absorption à ajouter, le coefficient αw du panneau la convertit en panneaux. Méthode, valeurs cibles belges et trois exemples chiffrés : réunion, bureau ouvert, restaurant.
+**Le nombre de panneaux acoustiques dont un local a besoin se déduit de trois chiffres : le volume de la pièce, le temps de réverbération actuel et le temps de réverbération visé.** La formule de Sabine vous donne la surface d'absorption à ajouter, le coefficient αw du panneau la convertit en panneaux. Méthode, valeurs cibles belges et trois exemples chiffrés : réunion, bureau ouvert, restaurant.
 
 ## La formule de Sabine en langage courant
 
-Le temps de réverbération (T, ou TR60) est le temps qu'un son met pour décroître de 60 dB après l'arrêt de la source. Sabine l'a formulé vers 1900 :
+Le temps de réverbération (T, ou TR60) est le temps qu'un son met pour décroître de 60 dB après l'arrêt de la source. Sabine l'a formulé vers 1900 :
 
 **T = 0,161 × V / A**
 
-- **V** : volume du local en m³ (longueur × largeur × hauteur).
-- **A** : absorption totale en m² Sabine, chaque surface multipliée par son coefficient d'absorption.
+- **V** : volume du local en m³ (longueur × largeur × hauteur).
+- **A** : absorption totale en m² Sabine, chaque surface multipliée par son coefficient d'absorption.
 
-Inversée, la formule devient **A = 0,161 × V / T**. Calculez A pour le temps actuel, puis pour le temps visé ; la différence est l'absorption à ajouter. Divisée par le coefficient αw du panneau, elle donne la surface de panneaux en m².
+Inversée, la formule devient **A = 0,161 × V / T**. Calculez A pour le temps actuel, puis pour le temps visé ; la différence est l'absorption à ajouter. Divisée par le coefficient αw du panneau, elle donne la surface de panneaux en m².
 
 C'est une approximation (absorption supposée uniforme, calcul par bande de fréquences), assez précise toutefois pour un devis.
 
-## Quel temps de réverbération viser ?
+## Quel temps de réverbération viser ?
 
-Nos valeurs indicatives, en secondes, aux fréquences moyennes (500–2000 Hz) :
+Nos valeurs indicatives, en secondes, aux fréquences moyennes (500–2000 Hz) :
 
 | Local | Valeur cible |
 |---|---|
@@ -52,13 +52,13 @@ Nos valeurs indicatives, en secondes, aux fréquences moyennes (500–2000 Hz) :
 | Restaurant, café | 0,6 – 0,8 s |
 | Salle de sport, réfectoire | 1,0 – 1,5 s |
 
-Trois normes encadrent ces cibles en Belgique. Pour les écoles, la NBN S 01-400-2 fixe des temps de réverbération maximaux par type de local et par volume. Pour les bureaux ouverts, l'ISO 22955 décrit la qualité acoustique attendue et l'ISO 3382-3 la mesure de la décroissance de la parole avec la distance. Elles fixent l'objectif, pas le matériau ; vérifiez l'exigence exacte avec votre acousticien.
+Trois normes encadrent ces cibles en Belgique. Pour les écoles, la NBN S 01-400-2 fixe des temps de réverbération maximaux par type de local et par volume. Pour les bureaux ouverts, l'ISO 22955 décrit la qualité acoustique attendue et l'ISO 3382-3 la mesure de la décroissance de la parole avec la distance. Elles fixent l'objectif, pas le matériau ; vérifiez l'exigence exacte avec votre acousticien.
 
-Un local dur (vitrage, plâtre, sol coulé) se situe souvent entre 1,0 et 1,5 s ; sans mesure, comptez 1,2 s pour un bureau vide et 1,4 s pour un restaurant vide carrelé. Nous mesurons le temps de réverbération sur demande.
+Un local dur (vitrage, plâtre, sol coulé) se situe souvent entre 1,0 et 1,5 s ; sans mesure, comptez 1,2 s pour un bureau vide et 1,4 s pour un restaurant vide carrelé. Nous mesurons le temps de réverbération sur demande.
 
-## Ce qu'un panneau absorbe réellement : αw et classes
+## Ce qu'un panneau absorbe réellement : αw et classes
 
-L'indice **αw** (ISO 11654) est le coefficient d'absorption pondéré d'un panneau, de 0 (tout réfléchi) à 1 (tout absorbé), réparti en classes. Il décrit le panneau, pas votre local : vérifiez l'exigence exacte avec votre acousticien.
+L'indice **αw** (ISO 11654) est le coefficient d'absorption pondéré d'un panneau, de 0 (tout réfléchi) à 1 (tout absorbé), réparti en classes. Il décrit le panneau, pas votre local : vérifiez l'exigence exacte avec votre acousticien.
 
 | Classe | αw |
 |---|---|
@@ -68,75 +68,75 @@ L'indice **αw** (ISO 11654) est le coefficient d'absorption pondéré d'un pann
 | D | 0,30 – 0,55 |
 | E | 0,15 – 0,25 |
 
-Nos gammes : [Interior](/fr/products/interior) (textile) αw 1,0, classe A ; [rWood Groove](/fr/products/rwood-groove) et [rWood Micro](/fr/products/rwood-micro) αw 0,90, classe A ; rPET Panel de 12 mm selon le montage, de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et αw 1,00 (classe A) sur une lame d'air de 50 mm avec 50 mm de laine de roche. Le [rPET Groove](/fr/products/rpet-groove) est caractérisé par son NRC (0,55 / 0,75 / 0,90 en 12 / 24 / 36 mm), sans αw publié : il n'entre donc pas dans un calcul de Sabine.
+Nos gammes : [Interior](/fr/products/interior) (textile) αw 1,0, classe A ; [rWood Groove](/fr/products/rwood-groove) et [rWood Micro](/fr/products/rwood-micro) αw 0,90, classe A ; rPET Panel de 12 mm selon le montage, de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et αw 1,00 (classe A) sur une lame d'air de 50 mm avec 50 mm de laine de roche. Le [rPET Groove](/fr/products/rpet-groove) est caractérisé par son NRC (0,55 / 0,75 / 0,90 en 12 / 24 / 36 mm), sans αw publié : il n'entre donc pas dans un calcul de Sabine.
 
-Comptez la surface effective : un rPET Panel de 2 800 × 1 220 mm compte pour 3,42 m², un panneau de 2 440 × 1 220 mm pour 2,98 m².
+Comptez la surface effective : un rPET Panel de 2 800 × 1 220 mm compte pour 3,42 m², un panneau de 2 440 × 1 220 mm pour 2,98 m².
 
-## Exemple 1 : salle de réunion de 56 m³
+## Exemple 1 : salle de réunion de 56 m³
 
-Salle de 5 × 4 m, 2,8 m de hauteur, dalles de moquette, six chaises rembourrées, cloison vitrée. Mesuré : **0,9 s**. Objectif : **0,6 s** pour des visioconférences intelligibles.
+Salle de 5 × 4 m, 2,8 m de hauteur, dalles de moquette, six chaises rembourrées, cloison vitrée. Mesuré : **0,9 s**. Objectif : **0,6 s** pour des visioconférences intelligibles.
 
 - A actuel = 0,161 × 56 / 0,9 = **10,0 m² Sabine**
 - A cible = 0,161 × 56 / 0,6 = **15,0 m² Sabine**
-- À ajouter : **5,0 m² Sabine**
+- À ajouter : **5,0 m² Sabine**
 
-Avec un rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80, classe B) : 5,0 / 0,80 = **6,3 m² de panneaux**, soit deux panneaux de 2 800 × 1 220 mm (6,84 m²) sur le long mur face à l'écran et derrière les orateurs. Avec Interior (αw 1,0), ou avec le même rPET Panel sur une lame d'air de 50 mm garnie de 50 mm de laine de roche (αw 1,00), 5 m² suffisent. Soit 25 à 35 % des 20 m² au sol : normal pour un petit local sans plafond absorbant.
+Avec un rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80, classe B) : 5,0 / 0,80 = **6,3 m² de panneaux**, soit deux panneaux de 2 800 × 1 220 mm (6,84 m²) sur le long mur face à l'écran et derrière les orateurs. Avec Interior (αw 1,0), ou avec le même rPET Panel sur une lame d'air de 50 mm garnie de 50 mm de laine de roche (αw 1,00), 5 m² suffisent. Soit 25 à 35 % des 20 m² au sol : normal pour un petit local sans plafond absorbant.
 
-## Exemple 2 : bureau ouvert de 720 m³
+## Exemple 2 : bureau ouvert de 720 m³
 
-Plateau de 20 × 12 m, 3 m de hauteur, 30 postes de travail, sol coulé, plafond en béton. Estimation : **1,2 s**. Objectif : **0,7 s**.
+Plateau de 20 × 12 m, 3 m de hauteur, 30 postes de travail, sol coulé, plafond en béton. Estimation : **1,2 s**. Objectif : **0,7 s**.
 
 - A actuel = 0,161 × 720 / 1,2 = **96,6 m² Sabine**
 - A cible = 0,161 × 720 / 0,7 = **165,6 m² Sabine**
-- À ajouter : **69,0 m² Sabine**
+- À ajouter : **69,0 m² Sabine**
 
-Tout mettre sur les murs, avec un rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80), demanderait 69,0 / 0,80 = 86,3 m² de panneaux, plus des deux tiers des deux longs murs. Mieux réparti :
+Tout mettre sur les murs, avec un rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80), demanderait 69,0 / 0,80 = 86,3 m² de panneaux, plus des deux tiers des deux longs murs. Mieux réparti :
 
-- **Plafond** : 50 m² d'éléments absorbants de classe A (αw 0,9) = 45,0 m² Sabine. Un [plafond tendu acoustique](https://stretchplafond.be/products/acoustic-stretch-system) de notre société sœur STRETCH fait encore mieux.
-- **Murs** : 30 m² de rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80, classe B) = 24,0 m² Sabine aux points de réflexion.
-- Total : 45,0 + 24,0 = **69,0 m² Sabine** : objectif atteint.
+- **Plafond** : 50 m² d'éléments absorbants de classe A (αw 0,9) = 45,0 m² Sabine. Un [plafond tendu acoustique](https://stretchplafond.be/products/acoustic-stretch-system) de notre société sœur STRETCH fait encore mieux.
+- **Murs** : 30 m² de rPET Panel de 12 mm sur une lame d'air de 100 mm (αw 0,80, classe B) = 24,0 m² Sabine aux points de réflexion.
+- Total : 45,0 + 24,0 = **69,0 m² Sabine** : objectif atteint.
 
 Les appels qui dérangent encore relèvent des [cabines acoustiques](/fr/products/cabines-acoustiques), pas des panneaux.
 
-## Exemple 3 : restaurant de 525 m³
+## Exemple 3 : restaurant de 525 m³
 
-Salle de 15 × 10 m, 3,5 m de hauteur, sol carrelé, beaucoup de vitrage, 60 couverts. Mesuré à vide : **1,4 s**. Objectif : **0,7 s**.
+Salle de 15 × 10 m, 3,5 m de hauteur, sol carrelé, beaucoup de vitrage, 60 couverts. Mesuré à vide : **1,4 s**. Objectif : **0,7 s**.
 
 - A actuel = 0,161 × 525 / 1,4 = **60,4 m² Sabine**
 - A cible = 0,161 × 525 / 0,7 = **120,8 m² Sabine**
-- À ajouter : **60,4 m² Sabine**
+- À ajouter : **60,4 m² Sabine**
 
-Proposition : **55 m² de plafond** en classe A (αw 0,9, soit 49,5 m² Sabine) plus **15 m² de [rWood Micro](/fr/products/rwood-micro)** derrière les banquettes, clipsé sur rails devant une lame d'air, αw 0,90 en classe A (13,5 m² Sabine). Total : 49,5 + 13,5 = 63,0 m² Sabine. Les convives apportent leur propre absorption (0,4 à 0,5 m² Sabine par personne) : à pleine occupation, la salle passe sous 0,6 s. Bois ou feutre selon la zone : voyez nos [panneaux acoustiques en bois](/fr/products/panneaux-acoustiques-bois) et [en PET recyclé](/fr/products/panneaux-acoustiques-pet).
+Proposition : **55 m² de plafond** en classe A (αw 0,9, soit 49,5 m² Sabine) plus **15 m² de [rWood Micro](/fr/products/rwood-micro)** derrière les banquettes, clipsé sur rails devant une lame d'air, αw 0,90 en classe A (13,5 m² Sabine). Total : 49,5 + 13,5 = 63,0 m² Sabine. Les convives apportent leur propre absorption (0,4 à 0,5 m² Sabine par personne) : à pleine occupation, la salle passe sous 0,6 s. Bois ou feutre selon la zone : voyez nos [panneaux acoustiques en bois](/fr/products/panneaux-acoustiques-bois) et [en PET recyclé](/fr/products/panneaux-acoustiques-pet).
 
 ## Règles empiriques pour une estimation rapide
 
-Sans mesure, pour un premier budget :
+Sans mesure, pour un premier budget :
 
-- **Avec un plafond absorbant** (60 à 80 % du plafond en classe A) : 10 à 15 % de la surface au sol en panneaux muraux de classe A ou B.
-- **Sans traitement du plafond** : 30 à 50 % de la surface au sol en panneaux muraux ; plus le local est haut, plus il en faut.
-- **Les petits locaux durs** (réunion, visioconférence) demandent proportionnellement le plus ; les grands locaux meublés, le moins.
-- **Par personne** présente, déduisez 0,4 à 0,5 m² Sabine ; calculez néanmoins le local vide, tel qu'il sonne le matin.
+- **Avec un plafond absorbant** (60 à 80 % du plafond en classe A) : 10 à 15 % de la surface au sol en panneaux muraux de classe A ou B.
+- **Sans traitement du plafond** : 30 à 50 % de la surface au sol en panneaux muraux ; plus le local est haut, plus il en faut.
+- **Les petits locaux durs** (réunion, visioconférence) demandent proportionnellement le plus ; les grands locaux meublés, le moins.
+- **Par personne** présente, déduisez 0,4 à 0,5 m² Sabine ; calculez néanmoins le local vide, tel qu'il sonne le matin.
 
 ## L'emplacement des panneaux compte autant que leur nombre
 
-Sabine suppose une absorption uniforme ; bien placés, les mêmes panneaux rendent davantage :
+Sabine suppose une absorption uniforme ; bien placés, les mêmes panneaux rendent davantage :
 
-1. **À hauteur d'oreille** (1,0 à 2,2 m), là où la parole se réfléchit ; pas au-dessus des armoires.
+1. **À hauteur d'oreille** (1,0 à 2,2 m), là où la parole se réfléchit ; pas au-dessus des armoires.
 2. **Sur deux murs en angle**, non face à face, pour casser les échos flottants.
-3. **Face à la source sonore** : face à l'écran en réunion, face au bar au restaurant.
+3. **Face à la source sonore** : face à l'écran en réunion, face au bar au restaurant.
 4. **Répartis dans le local** plutôt qu'en un seul bloc.
 
-Un doute ? Envoyez-nous via la [page de contact](/fr/contact) les dimensions, les finitions et, si vous l'avez, le temps de réverbération mesuré : nous refaisons le calcul et proposons le nombre de panneaux par mur. Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne). Le calcul et le produit viennent donc des mêmes personnes.
+Un doute ? Envoyez-nous via la [page de contact](/fr/contact) les dimensions, les finitions et, si vous l'avez, le temps de réverbération mesuré : nous refaisons le calcul et proposons le nombre de panneaux par mur. Re-Sound est une marque du groupe Stretch. Nous fabriquons dans nos propres usines à Beveren-Waas (Belgique) et à Częstochowa (Pologne). Le calcul et le produit viennent donc des mêmes personnes.
 
 ## Questions fréquentes
 
-**Combien de panneaux acoustiques pour un bureau de 100 m² ?**
-Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent.
+**Combien de panneaux acoustiques pour un bureau de 100 m² ?**
+Sans plafond absorbant et avec 3 m de hauteur, comptez 30 à 40 m² de panneaux muraux de classe A ou B (rWood Groove ou rWood Micro αw 0,90 ; rPET Panel de 12 mm sur une lame d'air de 100 mm αw 0,80) pour passer de 1,2 à 0,7 s. Avec un plafond absorbant, 10 à 15 m² de panneaux muraux suffisent.
 
-**L'épaisseur du panneau change-t-elle beaucoup le résultat ?**
-Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre.
+**L'épaisseur du panneau change-t-elle beaucoup le résultat ?**
+Moins que le montage. Un rPET Panel de 12 mm passe de αw 0,25 (classe D) collé directement au mur à αw 0,80 (classe B) sur une lame d'air de 100 mm et à αw 1,00 (classe A) sur une lame d'air de 50 mm garnie de 50 mm de laine de roche. L'épaisseur joue aussi : le rPET Groove affiche un NRC de 0,55, 0,75 et 0,90 en 12, 24 et 36 mm. Prescrivez donc l'épaisseur avec son montage, jamais l'une sans l'autre.
 
-**Peut-on poser trop de panneaux ?**
-Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local.
+**Peut-on poser trop de panneaux ?**
+Oui : sous 0,4 s, un local sonne mat et les gens parlent plus fort parce qu'ils ne s'entendent plus. Visez la valeur cible et répartissez les panneaux dans le local.
 
-*Sources : W.C. Sabine (formule de réverbération) ; ISO 11654 (classes d'absorption) ; NBN S 01-400-2 (bâtiments scolaires) ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; données produit Re-Sound.*
+*Sources : W.C. Sabine (formule de réverbération) ; ISO 11654 (classes d'absorption) ; NBN S 01-400-2 (bâtiments scolaires) ; ISO 22955 et ISO 3382-3 (bureaux ouverts) ; données produit Re-Sound.*

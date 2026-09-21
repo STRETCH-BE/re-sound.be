@@ -21,7 +21,7 @@ faq: [{"question":"Quels panneaux acoustiques conviennent à un restaurant ?",
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 1538
+wordCount: 1539
 ---
 
 **Dans un restaurant dont le temps de réverbération dépasse 1 seconde, les clients parlent plus fort, restent moins longtemps et le signalent dans leurs avis en ligne.** Des panneaux acoustiques au plafond et sur les murs derrière les banquettes ramènent la réverbération entre 0,6 et 0,8 seconde : les conversations restent à leur table, l'ambiance reste animée et la salle paraît pleine sans être bruyante. Cet article explique quel temps de réverbération convient à quel concept, où les panneaux sont les plus efficaces, ce que la classe feu impose dans l'horeca et ce qu'il faut prévoir pour une salle de 100 m².
@@ -40,7 +40,7 @@ Aucune exigence légale ne fixe le temps de réverbération d'un restaurant, mai
 | Brasserie, bistrot | 0,6 – 0,8 s |
 | Bar, food hall, salle de fête | 0,8 – 1,0 s (animé, mais où l'on se comprend à table) |
 
-Une salle non traitée, carrelée et vitrée, affiche souvent 1,2 à 1,6 s à vide. Les clients apportent leur propre absorption (0,4 à 0,5 m² Sabine environ par client) : une salle à 0,8 s à vide tourne autour de 0,6 s une fois pleine. Dimensionnez pour la salle vide ; la salle pleine suivra.
+Une salle non traitée, carrelée et vitrée, affiche souvent 1,2 à 1,6 s à vide. Les clients apportent eux-mêmes de l'absorption, environ 0,4 à 0,5 m² Sabine chacun : une salle à 0,8 s à vide tourne autour de 0,6 s une fois pleine. Dimensionnez pour la salle vide ; la salle pleine suivra.
 
 ## Le plafond d'abord
 
@@ -85,7 +85,7 @@ Avec la formule de Sabine (A = 0,161 × V / T) :
 - Absorption nécessaire = 0,161 × 320 / 0,7 = **73,6 m² Sabine**
 - Reste à apporter : **36,8 m² Sabine**
 
-Proposition : **35 m² de plafond** absorbant en classe A (αw 0,9, soit 31,5 m² Sabine) plus **8 m² de rWood Micro** derrière les banquettes (à αw 0,90, environ 7,2 m² Sabine) = 38,7 m² Sabine. Salle pleine (50 clients, soit environ 22 m² Sabine de plus), la réverbération descend vers 0,5 s : un niveau digne de la gastronomie pendant le service, encore assez animé à l'apéritif. La méthode pas à pas se trouve dans [Combien de panneaux acoustiques faut-il ?](/fr/blog/combien-de-panneaux-acoustiques).
+Proposition : **35 m² de plafond** traités en classe A (αw 0,9, ce qui donne 31,5 m² Sabine) plus **8 m² de rWood Micro** derrière les banquettes (à αw 0,90, environ 7,2 m² Sabine) = 38,7 m² Sabine. Salle pleine (50 clients, soit environ 22 m² Sabine de plus), la réverbération descend vers 0,5 s : un niveau digne de la gastronomie pendant le service, encore assez animé à l'apéritif. La méthode pas à pas se trouve dans [Combien de panneaux acoustiques faut-il ?](/fr/blog/combien-de-panneaux-acoustiques).
 
 ## Phasage et budget
 

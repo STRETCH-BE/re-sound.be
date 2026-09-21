@@ -21,7 +21,7 @@ faq: [{"question":"Quel temps de réverbération la DIN 18041 demande-t-elle pou
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1879
+wordCount: 1878
 ---
 
 **Pour le temps de réverbération d'un bureau, la méthode la plus précise que nous connaissions est celle de la norme allemande DIN 18041, prise ici comme référence : pour les salles de réunion et de conférence (catégorie A, groupe A3 « enseignement/communication »), T_cible = 0,32·log(V) − 0,17 s, soit 0,39 s environ pour 56 m³ ; les bureaux ouverts relèvent de la catégorie B et se dimensionnent par le rapport entre surface d'absorption et volume, en complément des normes ISO 22955 et ISO 3382-3.** Voici les deux calculs et les mesures qui vont avec.
@@ -84,7 +84,7 @@ Avec des panneaux muraux seulement (rPET Panel de 12 mm devant 100 mm d'air, αw
 
 **1. Le plafond d'abord.** La plus grande surface continue et la seule que chaque poste « voit ». 60 à 80 % du plafond en absorbant (plafond tendu ou éléments de plafond en rPET) règlent le plus souvent le problème de réverbération.
 
-**2. Des panneaux muraux là où le son se réfléchit.** Les réflexions les plus fortes viennent du mur situé en face de la source et des longs murs. C'est là que se placent les [panneaux acoustiques en PET recyclé](/fr/products/panneaux-acoustiques-pet), à hauteur d'oreille et jusqu'à 2,2 m environ, pas au-dessus des armoires. [rPET Groove](/fr/products/rpet-groove) : dix coloris en stock, toute autre teinte sur commande, en 12, 24 ou 36 mm d'épaisseur (NRC 0,55, 0,75 ou 0,90), B-s1,d0 dans les coloris blanc, gris et noir, B-s2,d0 dans les autres, selon EN 13501-1 ; la plaque lisse rPET Panel (12 mm) atteint selon la pose αw 0,80 (classe B selon ISO 11654) devant 100 mm d'air et 1,00 (classe A) devant 50 mm d'air avec 50 mm de laine de roche. Alternatives : [rWood Groove](/fr/products/rwood-groove) en placage FSC (αw 0,90, classe A) et les panneaux textiles [Interior](/fr/products/interior) (αw 1,0, classe A).
+**2. Des panneaux muraux là où le son se réfléchit.** Les réflexions les plus fortes viennent du mur situé en face de la source et des longs murs. C'est là que se placent les [panneaux acoustiques en PET recyclé](/fr/products/panneaux-acoustiques-pet), à hauteur d'oreille et jusqu'à 2,2 m environ, pas au-dessus des armoires. [rPET Groove](/fr/products/rpet-groove) : dix coloris en stock, toute autre teinte sur commande, épaisseur 12, 24 ou 36 mm (NRC 0,55, 0,75 ou 0,90), B-s1,d0 dans les coloris blanc, gris et noir, B-s2,d0 dans les autres, selon EN 13501-1 ; la plaque lisse rPET Panel (12 mm) atteint selon la pose αw 0,80 (classe B selon ISO 11654) devant 100 mm d'air et 1,00 (classe A) devant 50 mm d'air avec 50 mm de laine de roche. Alternatives : [rWood Groove](/fr/products/rwood-groove) en placage FSC (αw 0,90, classe A) et les panneaux textiles [Interior](/fr/products/interior) (αw 1,0, classe A).
 
 **3. Cloisonner avec Divide.** Quarante postes forment acoustiquement une seule pièce. [Divide](/fr/products/divide) : des parois autoportantes absorbantes des deux côtés (αw 1,0, classe A), sur pied intégré, assemblables par aimants, sans montage.
 
