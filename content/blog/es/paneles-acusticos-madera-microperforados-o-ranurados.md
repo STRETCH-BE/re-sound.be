@@ -21,7 +21,7 @@ faq: [{"question":"¿Un panel de madera microperforado absorbe tan bien como uno
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "panneau-acoustique-bois-microperfore"
-wordCount: 0
+wordCount: 1826
 ---
 
 **Un panel acústico de madera microperforado es un panel chapado en madera atravesado por miles de orificios diminutos que, clipado sobre raíles delante de una cámara de aire, con o sin lana mineral, actúa como absorbente resonante: el aire que oscila en las perforaciones pierde allí su energía por rozamiento, y el sonido se absorbe detrás de una superficie que parece madera lisa.** Es el principio de nuestro [rWood Micro](/es/products/rwood-micro): αw 0,90, clase A según ISO 11654, hasta 1,00 con 50 mm de lana mineral en la cámara. Frente a él, el ranurado [rWood Groove](/es/products/rwood-groove), con la misma clase A y otro montaje.

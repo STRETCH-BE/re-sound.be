@@ -23,7 +23,7 @@ faq: [{"question":"Welke akoestische panelen zijn geschikt voor een restaurant?"
 draft: false
 translationKey: "restaurant-acoustics"
 model: "original"
-wordCount: 1238
+wordCount: 1293
 ---
 
 **In een restaurant met een nagalmtijd boven 1 seconde praten gasten luider, blijven ze korter en schrijven ze het in hun review.** Akoestische panelen op het plafond en op de wanden achter de banken brengen de nagalm terug naar 0,6 à 0,8 seconden: gesprekken blijven aan de tafel, de sfeer blijft levendig, en de zaal klinkt vol zonder luid te zijn. Dit artikel legt uit welke nagalmtijd bij welk concept past, waar panelen het meest opbrengen, wat de brandklasse voor horeca vraagt en wat een zaal van 100 m² nodig heeft.

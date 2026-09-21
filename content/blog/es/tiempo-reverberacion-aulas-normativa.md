@@ -21,7 +21,7 @@ faq: [{"question":"¿Qué tiempo de reverberación es obligatorio en un aula?","
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 1490
+wordCount: 1507
 ---
 
 **En un aula, el tiempo de reverberación decide si los alumnos entienden al profesor y si el profesor conserva la voz a las cuatro de la tarde.** La norma belga NBN S 01-400-2 fija tiempos de reverberación máximos para los edificios escolares; en la práctica, para un aula corriente eso se traduce en unos 0,6 a 0,8 segundos, un orden de magnitud habitual también fuera de Bélgica, mientras que un aula sin tratar (yeso, cristal, baldosas) suele superar 1 segundo. Aquí: qué pide la norma, cómo se mide, cuánta absorción hace falta y qué soluciones aguantan diez cursos.

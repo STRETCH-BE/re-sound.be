@@ -21,7 +21,7 @@ faq: [{"question":"Quel temps de réverbération est obligatoire dans une salle 
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 1406
+wordCount: 1489
 ---
 
 **Dans une salle de classe, le temps de réverbération décide si les élèves comprennent l'enseignant et si celui-ci a encore de la voix à 16 h.** En Belgique, la norme NBN S 01-400-2 fixe des temps de réverbération maximaux pour les bâtiments scolaires ; pour une classe ordinaire, cela revient en pratique à 0,6 à 0,8 seconde environ, alors qu'un local non traité, avec plâtre, vitrage et carrelage, dépasse souvent la seconde. Cet article explique ce que demande la norme, comment mesurer, combien d'absorption prévoir et quelles solutions résistent à dix années scolaires.

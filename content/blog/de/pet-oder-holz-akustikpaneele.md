@@ -21,7 +21,7 @@ faq: [{"question":"Absorbiert Holz schlechter als PET-Filz?","answer":"Nicht in 
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood, pet-vilt-of-houten-akoestische-panelen"
-wordCount: 0
+wordCount: 1531
 ---
 
 **Kurz gesagt: Unsere Akustikpaneele aus PET-Filz und aus Holz liegen im selben Absorptionsband (rWood Groove und rWood Micro αw 0,90, Klasse A; das rPET Panel 12 mm je nach Montage αw 0,80 bis 1,00), also entscheiden Optik, Brandklasse, Budget und Nachhaltigkeitsargument – nicht die Akustik.** [PET-Filz](/de/products/pet-akustikpaneele) ist die Wahl für Farbe, eigene Grafiken, knappe Budgets und den Zuschnitt vor Ort; [Holz](/de/products/holz-akustikpaneele) für Wärme, repräsentative Räume und – auf dem feuerhemmenden MDF-Kern – dieselbe Klasse B-s1,d0, die rPET in Weiß, Grau und Schwarz erreicht.

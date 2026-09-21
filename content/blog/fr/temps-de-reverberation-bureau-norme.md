@@ -21,7 +21,7 @@ faq: [{"question":"Quel temps de réverbération la DIN 18041 demande-t-elle pou
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1469
+wordCount: 1839
 ---
 
 **Pour le temps de réverbération d'un bureau, la méthode la plus précise que nous connaissions est celle de la norme allemande DIN 18041, prise ici comme référence : pour les salles de réunion et de conférence (catégorie A, groupe A3 « enseignement/communication »), T_cible = 0,32·log(V) − 0,17 s, soit 0,39 s environ pour 56 m³ ; les bureaux ouverts relèvent de la catégorie B et se dimensionnent par le rapport entre surface d'absorption et volume, complété par ISO 22955 et ISO 3382-3.** Voici les deux calculs et les mesures qui vont avec.

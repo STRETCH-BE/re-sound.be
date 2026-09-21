@@ -22,7 +22,7 @@ faq: [{"question":"Un panneau en bois microperforé absorbe-t-il aussi bien qu'u
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "pet-vilt-of-houten-akoestische-panelen"
-wordCount: 1394
+wordCount: 1651
 ---
 
 **Un panneau acoustique en bois microperforé est un panneau plaqué bois percé d'une multitude de trous minuscules qui, clipsé sur rails devant une lame d'air, avec ou sans laine minérale, agit comme un absorbeur résonant : l'air qui oscille dans les perforations y perd son énergie par frottement, et le son est absorbé derrière une surface qui ressemble à du bois lisse.** C'est le principe de notre [rWood Micro](/fr/products/rwood-micro) : αw 0,90, classe A selon ISO 11654, jusqu'à 1,00 avec 50 mm de laine minérale dans la lame d'air.

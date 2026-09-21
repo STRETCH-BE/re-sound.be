@@ -21,7 +21,7 @@ faq: [{"question":"¿Cuál es un buen tiempo de reverberación para una oficina 
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 1490
+wordCount: 1500
 ---
 
 Una oficina abierta no es ruidosa por mala voluntad, sino por materiales duros y por demasiadas personas que intentan hacerse entender a la vez. **Mejorar la acústica casi siempre pasa por combinar tres cosas: añadir absorción (techo y paredes), separar zonas (mamparas y cabinas) y acordar dónde se llama y dónde se reúne el equipo.** Estas son las siete medidas que en Re-Sound vemos funcionar en la práctica, ordenadas por lo que rinden.

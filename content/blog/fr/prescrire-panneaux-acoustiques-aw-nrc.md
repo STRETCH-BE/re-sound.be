@@ -21,7 +21,7 @@ faq: [{"question":"αw et NRC, est-ce la même chose ?","answer":"Non. αw (ISO 
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
-wordCount: 1650
+wordCount: 2072
 ---
 
 **En résumé : prescrivez un panneau acoustique par un seul indice d'absorption, avec sa norme et sa condition de pose (αw et classe selon ISO 11654, ou NRC selon ASTM C423), puis la classe de réaction au feu EN 13501-1, les certificats, le contenu recyclé, la reprise en fin de vie et les documents à remettre ; ne convertissez jamais un indice dans l'autre.** Voici ce que mesurent ces chiffres, pourquoi la pose change tout, puis une clause type et une check-list.

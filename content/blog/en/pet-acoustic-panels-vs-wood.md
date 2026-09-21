@@ -22,7 +22,7 @@ faq: [{"question":"Does wood absorb less sound than PET felt?","answer":"Not in 
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-vilt-of-houten-akoestische-panelen"
-wordCount: 1386
+wordCount: 1743
 ---
 
 **Short answer: our PET felt and wood acoustic panels sit in the same absorption band (rWood Groove and rWood Micro αw 0.90, class A; the 12 mm rPET Panel αw 0.80 to 1.00 depending on its mounting), so you choose on look, fire class, budget and sustainability story, not on acoustics.** [PET felt](/en/products/pet-acoustic-panels) is the pick for colour, custom graphics, tight budgets and cutting on site; [wood](/en/products/wood-acoustic-panels) for warmth, front-of-house spaces and, on the fire-retardant MDF core, the same B-s1,d0 fire class as rPET in white, grey and black.

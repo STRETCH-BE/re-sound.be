@@ -22,7 +22,7 @@ faq: [{"question":"Was kostet eine Telefonbox fürs Büro 2026?","answer":"Für 
 draft: false
 translationKey: "booth-prices"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
-wordCount: 1382
+wordCount: 1450
 ---
 
 **Eine Telefonbox fürs Büro kostet bei Re-Sound ab {{price:solo-flex}} zzgl. MwSt.; die Montage durch unser eigenes Team kostet {{price:article:WEB-SOLO-FLEX-INST}}, der Transport auf dem europäischen Festland {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** Das ist der Preis von [Solo Flex](/de/products/solo-flex), unserer Akustikkabine für eine Person, mit Lüftung, Beleuchtung und Stromanschluss. Hier lesen Sie, was der Betrag abdeckt, welche Größe passt, was die ISO-23351-1-Klassen bedeuten und worauf Sie bei der Aufstellung achten – vom Hersteller, ohne Zwischenhandel.

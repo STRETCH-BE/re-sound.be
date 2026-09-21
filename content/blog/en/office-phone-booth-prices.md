@@ -22,7 +22,7 @@ faq: [{"question":"How much does an office phone booth cost in 2026?","answer":"
 draft: false
 translationKey: "booth-prices"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
-wordCount: 1387
+wordCount: 1471
 ---
 
 **An [office phone booth](/en/products/acoustic-phone-booths) from Re-Sound costs from {{price:solo-flex}} excl. VAT; installation by our own team adds {{price:article:WEB-SOLO-FLEX-INST}} and transport within mainland Europe {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** That is the price of [Solo Flex](/en/products/solo-flex), our acoustic phone booth for one person. Here is what that covers, which size to choose, what the ISO 23351-1 classes mean and what to check before you order, from the manufacturer.

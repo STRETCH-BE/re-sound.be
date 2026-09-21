@@ -21,7 +21,7 @@ faq: [{"question": "Vad kostar ett telefonbås för kontor 2026?", "answer": "Pu
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 1549
+wordCount: 1548
 ---
 
 **Ett [telefonbås för kontor](/sv/products/acoustic-phone-booths) från Re-Sound kostar från {{price:solo-flex}} exkl. moms; montering av vårt eget team tillkommer med {{price:article:WEB-SOLO-FLEX-INST}} och transport inom det europeiska fastlandet med {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** Det är priset för [Solo Flex](/sv/products/solo-flex), vårt akustiska telefonbås för en person. Vill du ha en enklare instegsmodell finns [Solo ECO](/sv/products/solo-eco) från {{price:solo-eco}} exkl. moms. Här reder vi ut vad du får för pengarna, vilken storlek du ska välja, vad klasserna i ISO 23351-1 betyder och vad du bör kontrollera innan du beställer, berättat av tillverkaren.

@@ -22,7 +22,7 @@ faq: [{"question":"Welche Nachhallzeit verlangt DIN 18041 für ein Büro?","answ
 draft: false
 translationKey: "office-reverberation-norm"
 model: "akoestiek-open-kantoor-verbeteren, nagalmtijd-klaslokaal-normen"
-wordCount: 1349
+wordCount: 1462
 ---
 
 **DIN 18041 gibt die Soll-Nachhallzeit im Büro über das Raumvolumen vor: Für Besprechungs- und Konferenzräume (Kategorie A, Gruppe A3 „Unterricht/Kommunikation“) gilt T_soll = 0,32·lg(V) − 0,17 s, also rund 0,39 s bei 56 m³; Großraumbüros werden als Räume der Kategorie B über das Verhältnis von Absorptionsfläche zu Raumvolumen geplant, ergänzt durch VDI 2569 und ISO 22955.** Hier beide Rechnungen und die passenden Maßnahmen.

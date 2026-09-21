@@ -22,7 +22,7 @@ faq: [{"question":"Combien coûte une cabine acoustique de bureau en 2026 ?","an
 draft: false
 translationKey: "booth-prices"
 model: "belcabine-kantoor-prijs-keuze-plaatsing"
-wordCount: 1383
+wordCount: 1446
 ---
 
 **Une cabine acoustique de bureau coûte chez Re-Sound à partir de {{price:solo-flex}} hors TVA ; la pose par notre équipe coûte {{price:article:WEB-SOLO-FLEX-INST}} et le transport en Europe continentale {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** C'est le prix de [Solo Flex](/fr/products/solo-flex), notre cabine pour une personne, avec bureau assis-debout, ventilation, éclairage et prise de courant. Ce guide détaille ce que couvre ce montant, comment choisir la taille, ce que valent les classes ISO 23351-1 et à quoi veiller au placement. Par le fabricant, sans marge d'intermédiaire.

@@ -21,7 +21,7 @@ faq: [{"question":"Ist αw dasselbe wie NRC?","answer":"Nein. αw (ISO 11654) le
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
-wordCount: 0
+wordCount: 1588
 ---
 
 **Kurz gesagt: Schreiben Sie ein Akustikpaneel mit einer Absorptionskennzahl samt Norm und Montagebedingung aus (αw und Klasse nach ISO 11654 oder NRC nach ASTM C423), dazu Brandklasse nach EN 13501-1, Zertifikate, Recyclinganteil, Rücknahme und die einzureichenden Nachweise – und rechnen Sie nie eine Kennzahl in die andere um.** Unten: was die Zahlen bedeuten, warum die Montage zählt, ein Ausschreibungstext und eine Checkliste.

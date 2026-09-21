@@ -23,7 +23,7 @@ faq: [{"question":"Absorbeert hout minder goed dan PET-vilt?","answer":"Nee. rWo
 draft: false
 translationKey: "pet-vs-wood"
 model: "original"
-wordCount: 1320
+wordCount: 1501
 ---
 
 **Kort antwoord: akoestisch zitten onze PET- en houtpanelen in dezelfde bovenklasse (rWood Groove αw 0,90 volgens ISO 11654; rPET Groove NRC 0,55 tot 0,90 naargelang de dikte), dus je kiest op uitzicht, brandklasse, budget en duurzaamheidsverhaal.** [PET-vilt](/nl/products/pet-akoestische-panelen) is de keuze voor kleur, budget en zelf verwerken; hout voor warmte en representatieve ruimtes. Hieronder de vergelijking punt voor punt, met de cijfers van onze eigen rPET- en rWood-reeksen.

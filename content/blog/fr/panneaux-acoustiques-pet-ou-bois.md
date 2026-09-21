@@ -21,7 +21,7 @@ faq: [{"question":"Le bois absorbe-t-il moins bien le son que le feutre PET ?","
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 1600
+wordCount: 1918
 ---
 
 **En résumé : nos panneaux en feutre PET et nos panneaux en bois se valent acoustiquement (rWood Groove et rWood Micro à αw 0,90 en classe A, rPET Panel de 12 mm entre αw 0,80 et 1,00 selon la pose) ; le choix se fait donc sur l'aspect, la classe feu, le budget et l'argument environnemental, pas sur l'absorption.** Le [feutre PET](/fr/products/panneaux-acoustiques-pet) gagne pour la couleur, les visuels imprimés, les budgets serrés et les découpes sur place ; le [bois](/fr/products/panneaux-acoustiques-bois) pour la chaleur, les espaces d'accueil et, sur âme MDF ignifugée, la même classe B-s1,d0 que le rPET blanc, gris ou noir.

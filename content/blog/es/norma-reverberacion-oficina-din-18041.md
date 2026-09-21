@@ -21,7 +21,7 @@ faq: [{"question":"¿Qué tiempo de reverberación exige la norma para una ofici
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1510
+wordCount: 1589
 ---
 
 **¿Qué tiempo de reverberación debe tener una oficina? En España el marco normativo es el CTE DB-HR y la cifra exacta la fija su acústico; como método de cálculo tomamos la norma alemana DIN 18041: para salas de reuniones y conferencias (categoría A, grupo A3 «enseñanza/comunicación») T_obj = 0,32·lg(V) − 0,17 s, unos 0,39 s en 56 m³; la planta abierta es categoría B (absorción en relación con el volumen), con ISO 22955 como norma internacional de las oficinas abiertas.** Aquí, los dos cálculos y las medidas.

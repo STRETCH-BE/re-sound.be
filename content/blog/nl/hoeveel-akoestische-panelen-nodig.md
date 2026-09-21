@@ -23,7 +23,7 @@ faq: [{"question":"Hoeveel akoestische panelen heb ik nodig voor een kantoor van
 draft: false
 translationKey: "how-many-panels"
 model: "original"
-wordCount: 1346
+wordCount: 1557
 ---
 
 **Het aantal akoestische panelen dat je nodig hebt, volgt uit drie getallen: het volume van de ruimte, de nagalmtijd die je nu hebt en de nagalmtijd die je wil.** Met de formule van Sabine reken je in vijf minuten uit hoeveel vierkante meter absorptie er bij moet, en met de absorptiewaarde van het paneel vertaal je dat naar panelen. Hieronder de methode, de richtwaarden en drie uitgewerkte voorbeelden: een vergaderzaal, een open kantoor en een restaurant.

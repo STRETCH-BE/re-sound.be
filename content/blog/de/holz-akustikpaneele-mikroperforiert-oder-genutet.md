@@ -22,7 +22,7 @@ faq: [{"question":"Absorbiert ein mikroperforiertes Holzpaneel schlechter als ei
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "pet-vilt-of-houten-akoestische-panelen"
-wordCount: 1399
+wordCount: 1704
 ---
 
 **Mikroperforierte und genutete Holz-Akustikpaneele absorbieren gleich gut: rWood Groove und rWood Micro erreichen beide αw 0,90, also Klasse A nach ISO 11654, rWood Micro mit 50 mm Mineralwolle im Hohlraum bis 1,00. Sie entscheiden deshalb nach Aufbau, Optik, Brandklasse, Lieferzeit und Budget.** Hier der Leitfaden mit den Zahlen von [rWood Groove](/de/products/rwood-groove) (genutet) und [rWood Micro](/de/products/rwood-micro) (mikroperforiert), einem Rechenbeispiel nach Sabine und einer Entscheidungstabelle.

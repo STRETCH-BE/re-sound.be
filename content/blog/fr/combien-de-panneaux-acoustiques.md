@@ -22,7 +22,7 @@ faq: [{"question":"Combien de panneaux acoustiques pour un bureau de 100 m² ?",
 draft: false
 translationKey: "how-many-panels"
 model: "hoeveel-akoestische-panelen-nodig"
-wordCount: 1399
+wordCount: 1622
 ---
 
 **Le nombre de panneaux acoustiques dont un local a besoin se déduit de trois chiffres : le volume de la pièce, le temps de réverbération actuel et le temps de réverbération visé.** La formule de Sabine vous donne la surface d'absorption à ajouter, le coefficient αw du panneau la convertit en panneaux. Méthode, valeurs cibles belges et trois exemples chiffrés : réunion, bureau ouvert, restaurant.

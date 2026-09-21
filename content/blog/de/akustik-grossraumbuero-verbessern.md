@@ -21,7 +21,7 @@ faq: [{"question":"Was ist eine gute Nachhallzeit für ein Großraumbüro?","ans
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 0
+wordCount: 1373
 ---
 
 Ein Großraumbüro wird nicht aus bösem Willen laut, sondern durch harte Oberflächen und zu viele Menschen, die gleichzeitig verstanden werden wollen. **Die Akustik lässt sich fast immer mit einer Kombination aus drei Dingen verbessern: Absorption hinzufügen (Decke und Wände), Zonen abschirmen (Stellwände und Kabinen) und Regeln vereinbaren, wo telefoniert und besprochen wird.** Hier die sieben Maßnahmen, die wir bei Re-Sound in der Praxis wirken sehen – in der Reihenfolge ihres Nutzens.

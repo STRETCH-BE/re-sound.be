@@ -21,7 +21,7 @@ faq: [{"question":"¿Un panel de PET reciclado absorbe tan bien como uno de made
 draft: false
 translationKey: "recycled-pet-panels"
 model: "panneaux-acoustiques-pet-recycle"
-wordCount: 0
+wordCount: 1906
 ---
 
 **Un panel acústico de PET reciclado es una placa de fieltro prensada a partir de botellas de PET usadas que absorbe la voz (el rPET Panel de 12 mm alcanza αw 0,80, clase B según ISO 11654, con 100 mm de cámara de aire, y αw 1,00, clase A, con 50 mm de cámara y 50 mm de lana de roca), se corta y se pinta como un tablero, admite impresión UV y se monta con clips o adhesivo, a un precio por m² inferior al de la madera chapada.** Estos son los datos de nuestra gama rPET, de la composición a la comparación con la madera.

@@ -22,7 +22,7 @@ faq: [{"question":"How many acoustic panels do I need for a 100 m² office?","an
 draft: false
 translationKey: "how-many-panels"
 model: "hoeveel-akoestische-panelen-nodig"
-wordCount: 1396
+wordCount: 1634
 ---
 
 **The number of acoustic panels you need follows from three figures: the volume of the room, the reverberation time you have now and the reverberation time you want.** Sabine's formula turns those into square metres of absorption; the panel's αw turns that into panels. Below: the method, guide values, ISO 11654 classes and four worked examples.

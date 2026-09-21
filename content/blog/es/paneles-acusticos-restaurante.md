@@ -21,7 +21,7 @@ faq: [{"question":"¿Qué paneles acústicos son adecuados para un restaurante?"
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 1480
+wordCount: 1505
 ---
 
 **En un restaurante con un tiempo de reverberación superior a 1 segundo los clientes hablan más alto, se quedan menos tiempo y lo escriben en la reseña.** Paneles acústicos en el techo y en las paredes detrás de los bancos devuelven la reverberación a 0,6 u 0,8 segundos: la conversación se queda en la mesa, el ambiente sigue siendo animado y la sala suena llena sin ser ruidosa. Aquí explicamos qué tiempo de reverberación conviene a cada concepto, dónde rinden más los paneles, qué exige la clase de fuego en hostelería y qué necesita una sala de 100 m².

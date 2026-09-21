@@ -21,7 +21,7 @@ faq: [{"question":"¿Cuánto cuesta una cabina acústica de oficina en 2026?","a
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 0
+wordCount: 1628
 ---
 
 **Una [cabina acústica de oficina](/es/products/acoustic-phone-booths) de Re-Sound cuesta desde {{price:solo-flex}} sin IVA; la instalación por nuestro propio equipo añade {{price:article:WEB-SOLO-FLEX-INST}} y el transporte dentro de la Europa continental, {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** Es el precio de [Solo Flex](/es/products/solo-flex), nuestra cabina telefónica para una persona. Le explicamos qué cubre esa cifra, qué tamaño elegir, qué significan las clases ISO 23351-1 y qué comprobar antes de pedir, con la voz del fabricante.

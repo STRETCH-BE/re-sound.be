@@ -22,7 +22,7 @@ faq: [{"question":"Is αw the same as NRC?","answer":"No. αw (ISO 11654) fits t
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "pet-vilt-of-houten-akoestische-panelen, hoeveel-akoestische-panelen-nodig"
-wordCount: 1384
+wordCount: 1808
 ---
 
 **Short answer: specify an acoustic panel by one absorption rating with its standard and mounting condition (αw and class to ISO 11654, or NRC to ASTM C423), plus the EN 13501-1 fire class, certificates, recycled content, take-back and the documents to be submitted; never convert one rating into the other.** Below: what the figures mean, why mounting matters, and a clause and checklist to paste.

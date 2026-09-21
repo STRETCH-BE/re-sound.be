@@ -21,7 +21,7 @@ faq: [{"question":"Quels panneaux acoustiques conviennent à un restaurant ?","a
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 1490
+wordCount: 1501
 ---
 
 **Dans un restaurant dont le temps de réverbération dépasse 1 seconde, les clients parlent plus fort, restent moins longtemps et le mentionnent dans leur avis en ligne.** Des panneaux acoustiques au plafond et sur les murs derrière les banquettes ramènent la réverbération entre 0,6 et 0,8 seconde : les conversations restent à leur table, l'ambiance reste vivante, et la salle sonne pleine sans être bruyante. Cet article explique quel temps de réverbération convient à quel concept, où les panneaux rendent le plus, ce que la classe feu impose à l'horeca et ce qu'il faut pour une salle de 100 m².

@@ -21,7 +21,7 @@ faq: [{"question":"¿La madera absorbe menos sonido que el fieltro PET?","answer
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 0
+wordCount: 1821
 ---
 
 **Respuesta breve: nuestros paneles acústicos de fieltro PET y de madera están en la misma banda de absorción (rWood Groove y rWood Micro αw 0,90, clase A; el rPET Panel de 12 mm, de αw 0,80 a 1,00 según el montaje), así que se elige por estética, clase de fuego, presupuesto y argumento de sostenibilidad, no por acústica.** El [fieltro PET](/es/products/pet-acoustic-panels) gana con color, gráficos propios, presupuestos ajustados y cortes en obra; la [madera](/es/products/wood-acoustic-panels), con calidez, espacios de representación y, sobre núcleo de MDF ignífugo, la misma clase B-s1,d0 que el rPET en blanco, gris y negro.

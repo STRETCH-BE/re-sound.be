@@ -22,7 +22,7 @@ faq: [{"question":"Un panneau en PET recyclé absorbe-t-il aussi bien qu'un pann
 draft: false
 translationKey: "recycled-pet-panels"
 model: "pet-vilt-of-houten-akoestische-panelen"
-wordCount: 1384
+wordCount: 1814
 ---
 
 **Un panneau acoustique en PET recyclé est une plaque de feutre pressée à partir de bouteilles PET post-consommation, qui absorbe la parole (rPET Panel de 12 mm : jusqu'à αw 1,00, classe A selon ISO 11654, sur une lame d'air de 50 mm avec 50 mm de laine de roche), se découpe et se peint comme un panneau de menuiserie, s'imprime en UV et se pose par clips ou par collage, à un prix au m² inférieur à celui du bois.** C'est le matériau à privilégier pour traiter la réverbération sans renoncer à la couleur.

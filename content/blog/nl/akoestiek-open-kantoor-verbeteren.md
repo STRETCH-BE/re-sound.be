@@ -23,7 +23,7 @@ faq: [{"question":"Wat is een goede nagalmtijd voor een open kantoor?","answer":
 draft: false
 translationKey: "open-office-acoustics"
 model: "original"
-wordCount: 1310
+wordCount: 1358
 ---
 
 Een open kantoor wordt niet luid door slechte wil, maar door harde materialen en te veel mensen die tegelijk verstaanbaar willen zijn. **De akoestiek verbeteren lukt bijna altijd met een combinatie van drie dingen: absorptie toevoegen (plafond en wanden), zones afschermen (scheidingswanden en cabines) en afspraken maken over waar gebeld en vergaderd wordt.** Hieronder de zeven maatregelen die we bij Re-Sound in de praktijk zien werken, in de volgorde waarin ze het meest opbrengen.

@@ -23,7 +23,7 @@ faq: [{"question":"Wat kost een belcabine voor kantoor gemiddeld?","answer":"In 
 draft: false
 translationKey: "booth-prices"
 model: "original"
-wordCount: 2004
+wordCount: 2153
 ---
 
 **Een [belcabine](/nl/products/akoestische-belcabines) voor kantoor kost bij Re-Sound vanaf {{price:solo-eco}} excl. btw, zonder transport en plaatsing.** Dat is de prijs van [Solo ECO](/nl/products/solo-eco), ons instapmodel voor één persoon, met statafel, ventilatie, stopcontact en USB inbegrepen. Wie een zit-stabureau, sterkere ventilatie en een gemeten akoestische klasse wil, kiest [Solo Flex](/nl/products/solo-flex) vanaf {{price:solo-flex}} excl. btw. In dit artikel zetten we die twee prijzen naast negen concurrenten, leggen we uit wat je voor het bedrag krijgt, hoe je de juiste maat kiest, wat de klassen van ISO 23351-1 betekenen en waar je op let bij de plaatsing. Geschreven door de fabrikant: onze cabines worden gebouwd in de eigen fabriek van Stretch Group in Częstochowa (Polen), dus er zit geen tussenhandel in de prijs.

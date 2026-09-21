@@ -21,7 +21,7 @@ faq: [{"question":"Wie viele Akustikpaneele braucht ein Büro von 100 m²?","ans
 draft: false
 translationKey: "how-many-panels"
 model: "how-many-acoustic-panels-do-i-need, hoeveel-akoestische-panelen-nodig"
-wordCount: 0
+wordCount: 1507
 ---
 
 **Wie viele Akustikpaneele Sie brauchen, ergibt sich aus drei Zahlen: dem Raumvolumen, der Nachhallzeit, die Sie heute haben, und der Nachhallzeit, die Sie erreichen wollen.** Die Sabine-Formel macht daraus Quadratmeter Absorption; der αw-Wert des Paneels macht daraus Paneele. Im Folgenden: die Methode, Richtwerte, die Klassen nach ISO 11654 und vier durchgerechnete Räume.

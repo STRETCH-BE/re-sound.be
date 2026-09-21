@@ -21,7 +21,7 @@ faq: [{"question":"Welche Akustikpaneele eignen sich für ein Restaurant?","answ
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 0
+wordCount: 1295
 ---
 
 **In einem Restaurant mit einer Nachhallzeit über 1 Sekunde sprechen die Gäste lauter, bleiben kürzer und schreiben es in die Bewertung.** Akustikpaneele an der Decke und an den Wänden hinter den Sitzbänken bringen den Nachhall auf 0,6 bis 0,8 Sekunden zurück: Gespräche bleiben am Tisch, die Stimmung bleibt lebendig, und der Raum klingt voll, ohne laut zu sein. Dieser Beitrag erklärt, welche Nachhallzeit zu welchem Konzept passt, wo Paneele am meisten bringen, was der Brandschutz in der Gastronomie verlangt und was ein Gastraum von 100 m² braucht.

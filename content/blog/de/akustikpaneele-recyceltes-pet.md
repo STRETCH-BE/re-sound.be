@@ -22,7 +22,7 @@ faq: [{"question":"Absorbiert ein Akustikpaneel aus recyceltem PET so gut wie ei
 draft: false
 translationKey: "recycled-pet-panels"
 model: "pet-vilt-of-houten-akoestische-panelen"
-wordCount: 1386
+wordCount: 1717
 ---
 
 **Ein Akustikpaneel aus recyceltem PET ist eine aus gebrauchten PET-Flaschen gepresste Filzplatte, die Sprache absorbiert (die 12-mm-Platte rPET Panel erreicht mit 100 mm Luftschicht αw 0,80, Klasse B nach ISO 11654, und mit 50 mm Luftschicht und 50 mm Steinwolle αw 1,00, Klasse A), sich wie eine Tischlerplatte schneiden und lackieren lässt, im UV-Druck bedruckt werden kann und per Clip oder Kleber montiert wird – zu einem Quadratmeterpreis unter dem von furniertem Holz.** Hier die Fakten unserer rPET-Reihe, vom Aufbau bis zum Vergleich mit Holz.

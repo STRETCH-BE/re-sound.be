@@ -21,7 +21,7 @@ faq: [{"question":"¿Cuántos paneles acústicos necesito para una oficina de 10
 draft: false
 translationKey: "how-many-panels"
 model: "how-many-acoustic-panels-do-i-need"
-wordCount: 0
+wordCount: 1781
 ---
 
 **El número de paneles acústicos que necesita sale de tres cifras: el volumen del recinto, el tiempo de reverberación actual y el tiempo de reverberación que busca.** La fórmula de Sabine las convierte en metros cuadrados de absorción; el αw del panel convierte esa absorción en paneles. A continuación, el método, los valores orientativos, las clases ISO 11654 y cuatro ejemplos resueltos.

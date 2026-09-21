@@ -21,7 +21,7 @@ faq: [{"question":"Welche Nachhallzeit ist im Klassenzimmer vorgeschrieben?","an
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 0
+wordCount: 1360
 ---
 
 **Im Klassenzimmer entscheidet die Nachhallzeit darüber, ob die Schüler die Lehrkraft verstehen und ob die Lehrkraft um 16 Uhr noch Stimme hat.** In Deutschland regelt DIN 18041 (Hörsamkeit in Räumen) die Anforderungen an Unterrichtsräume und leitet den Sollwert aus dem Raumvolumen ab; die belgische Norm NBN S 01-400-2 verlangt für ein gewöhnliches Klassenzimmer in der Praxis etwa 0,6 bis 0,8 Sekunden – eine Größenordnung, die als erste Orientierung taugt. Ein unbehandelter Raum mit Gipskarton, Glas und Fliesenboden liegt dagegen oft über 1 Sekunde. Dieser Beitrag erklärt, was die Normen verlangen, wie Sie messen, wie viel Absorption Sie brauchen und welche Lösungen zehn Schuljahre überstehen.
