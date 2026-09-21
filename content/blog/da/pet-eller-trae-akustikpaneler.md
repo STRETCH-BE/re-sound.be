@@ -17,14 +17,14 @@ heroAlt: "rPET Groove-filtpanel i grå ved siden af et rWood Groove-panel i egef
 internalLinks: ["/da/products/pet-acoustic-panels","/da/products/wood-acoustic-panels","/da/products/rpet-groove","/da/products/rpet-panel","/da/products/rpet-flex-groove","/da/products/rwood-groove","/da/products/rwood-perf","/da/products/rwood-micro","/da/products/rwood-veneer","/da/products/interior","/da/blog/hvor-mange-akustikpaneler-skal-jeg-bruge","/da/sustainability","/da/where-to-buy","/da/contact","/da/products/acoustic-phone-booths"]
 cta: "Bestil det gratis prøvesæt med begge materialer, eller send os dit areal og få et tilbud."
 sources: "ISO 11654 (lydabsorptionsklasser); ASTM C423 (NRC); EN 13501-1 (brandklassificering); ISO 22955 som pejlemærke; DS 490 (dansk standard); W.C. Sabine (efterklangsformel); OEKO-TEX Standard 100; FSC; produktdata og testrapporter for Re-Sound rPET og rWood."
-faq: [{"question":"Absorberer træ dårligere end PET-filt?","answer":"Ikke i vores serier. rWood Groove og rWood Micro er begge αw 0,90, klasse A efter ISO 11654, og Micro stiger til 1,00 med 50 mm mineraluld i hulrummet. 12 mm rPET Panel dækker samme bånd afhængigt af monteringen: αw 0,80 (klasse B) på 100 mm luftspalte, 1,00 (klasse A), når 50 mm luftspalte fyldes med 50 mm stenuld. Valget handler om udseende, brandklasse, budget og bæredygtighedsprofil, ikke om absorption."},{"question":"Kan jeg kombinere PET- og træpaneler?","answer":"Ja, og det er ofte det bedste svar: træ på den væg, man ser, PET-filt på de lange vægge og loftet. rPET monteres med lim, Z-clips, skruer eller på lægter, rWood Groove på lægter eller med lim, rWood Micro i skjulte clips; en rPET-plade kan endda fylde hulrummet bag rWood Groove som ekstra absorbent. Begge tager vi gratis tilbage i BE, NL, FR, DE og LU, men ikke i Danmark."},{"question":"Hvilket panel er det mest bæredygtige valg?","answer":"rPET Groove er fremstillet udelukkende af genanvendt PET og er OEKO-TEX Standard 100-certificeret; rWood bruger kun FSC-certificerede finérer. Begge laves på vores egen fabrik i Częstochowa. Gratis tilbagetagning tilbyder vi i BE, NL, FR, DE og LU, ikke i Danmark. Genanvendt indhold: rPET. Fornybar overflade: rWood."}]
+faq: [{"question":"Absorberer træ dårligere end PET-filt?","answer":"Ikke i vores serier. rWood Groove og rWood Micro er begge αw 0,90, klasse A efter ISO 11654, og Micro stiger til 1,00, når hulrummet får 50 mm mineraluld. 12 mm rPET Panel dækker samme bånd afhængigt af monteringen: klasse B med αw 0,80 på 100 mm luftspalte, klasse A med αw 1,00 i 50 mm luftspalte fyldt med 50 mm stenuld. Valget handler om udseende, brandklasse, budget og bæredygtighedsprofil, ikke om absorption."},{"question":"Kan jeg kombinere PET- og træpaneler?","answer":"Ja, og det er ofte det bedste svar: træ på den væg, man ser, PET-filt på de lange vægge og loftet. rPET monteres med lim, Z-clips, skruer eller på lægter, rWood Groove på lægter eller med lim, rWood Micro i skjulte clips; en rPET-plade kan endda fylde hulrummet bag rWood Groove som ekstra absorbent. Begge tager vi gratis tilbage i BE, NL, FR, DE og LU, men ikke i Danmark."},{"question":"Hvilket panel er det mest bæredygtige valg?","answer":"rPET Groove er fremstillet udelukkende af genanvendt PET og er OEKO-TEX Standard 100-certificeret; rWood bruger kun FSC-certificerede finérer. Begge laves på vores egen fabrik i Częstochowa. Gratis tilbagetagning tilbyder vi i BE, NL, FR, DE og LU, ikke i Danmark. Genanvendt indhold: rPET. Fornybar overflade: rWood."}]
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
 wordCount: 1400
 ---
 
-**Kort svar: vores akustikpaneler i PET-filt og træ ligger i samme absorptionsbånd (rWood Groove og rWood Micro αw 0,90, klasse A; 12 mm rPET Panel αw 0,80 til 1,00 alt efter montering), så du vælger ud fra udseende, brandklasse, budget og bæredygtighedsprofil, ikke ud fra akustikken.** [PET-filt](/da/products/pet-acoustic-panels) er valget, når du vil have farve, egen grafik, et stramt budget og mulighed for at skære til på stedet; [træ](/da/products/wood-acoustic-panels) er valget til varme, repræsentative rum og, på den brandhæmmende MDF-kerne, samme brandklasse B-s1,d0 som rPET i hvid, grå og sort.
+**Kort svar: vores akustikpaneler i PET-filt og træ ligger i samme absorptionsbånd (rWood Groove og rWood Micro: αw 0,90, klasse A; rPET Panel i 12 mm: αw 0,80 til 1,00 alt efter montering), så du vælger ud fra udseende, brandklasse, budget og bæredygtighedsprofil, ikke ud fra akustikken.** [PET-filt](/da/products/pet-acoustic-panels) er valget, når du vil have farve, egen grafik, et stramt budget og mulighed for at skære til på stedet; [træ](/da/products/wood-acoustic-panels) er valget til varme, repræsentative rum og, på den brandhæmmende MDF-kerne, samme brandklasse B-s1,d0 som rPET i hvid, grå og sort.
 
 ## Sådan absorberer PET-filt og træ lyd
 
@@ -32,28 +32,28 @@ wordCount: 1400
 
 **Akustikpaneler i træ** er en ægte træfinér på en kerne. En lukket finér kaster lyden tilbage, så overfladen skal åbnes: riller ([rWood Groove](/da/products/rwood-groove)), perforeringer ([rWood Perf](/da/products/rwood-perf)) eller mikroperforeringer ([rWood Micro](/da/products/rwood-micro)) leder lyden gennem forsiden ind i det absorberende lag bagved. Træet er ansigtet; absorbenten gør arbejdet.
 
-Begge når samme klasse: rWood Groove og rWood Micro er αw 0,90, klasse A. Groove har sin egen 3 mm filt af genanvendt PET på bagsiden, sættes op på lægter eller limes, og hulrummet bag den kan tage en ekstra absorbent (akustisk filt, en rPET-plade eller mineraluld); Micro hænger i clips på skinner med et hulrum bagved og når αw 1,00 med 50 mm mineraluld. PET-filt absorberer af sig selv, men hvor meget afgøres af monteringen: 12 mm rPET Panel måler αw 0,25 direkte på væggen, 0,80 på 100 mm luftspalte og 1,00, når 50 mm luftspalte fyldes med 50 mm stenuld.
+Begge når samme klasse: rWood Groove og rWood Micro er αw 0,90, klasse A. Groove bringer sin egen absorbent med, 3 mm filt af genanvendt PET på bagsiden, monteres på lægter eller med lim, og bag den er der plads til mere absorption: akustisk filt, en rPET-plade eller mineraluld. Micro sidder i clips på skinner foran et hulrum og stiger til αw 1,00, hvis hulrummet får 50 mm mineraluld. PET-filt absorberer af sig selv, men hvor meget afgøres af monteringen: 12 mm rPET Panel måler αw 0,25 direkte på væggen, 0,80 på 100 mm luftspalte og 1,00, når 50 mm luftspalte fyldes med 50 mm stenuld.
 
 ## Ydelse side om side
 
-| | rPET Panel 12 mm | rWood Groove | rWood Micro |
+| | 12 mm rPET Panel | rWood Groove | rWood Micro |
 |---|---|---|---|
-| Lydabsorption αw (ISO 11654) | 0,80 på 100 mm luftspalte; 1,00 på 50 mm luftspalte med 50 mm stenuld | 0,90 | 0,90; op til 1,00 med 50 mm mineraluld |
+| Lydabsorption αw (ISO 11654) | 0,80 på 100 mm luftspalte; 1,00 i 50 mm luftspalte fyldt med 50 mm stenuld | 0,90 | 0,90; op til 1,00 med 50 mm mineraluld |
 | NRC (ASTM C423) | 0,80 og 0,95 ved de samme to monteringer | ikke offentliggjort | ikke offentliggjort |
 | Absorptionsklasse (ISO 11654) | B / A | A | A |
-| Brandklasse (EN 13501-1) | B-s1,d0 i hvid, grå og sort; B-s2,d0 i de øvrige farver | B-s1,d0 på FR-MDF-kerne; D-s2,d2 på standard-MDF | B-s1,d0 på FR-MDF-kerne |
+| Brandklasse (EN 13501-1) | hvid, grå, sort B-s1,d0; andre farver B-s2,d0 | B-s1,d0 med FR-MDF-kerne, ellers D-s2,d2 | B-s1,d0 (FR-MDF-kerne) |
 
-rPET Groove, som skæres af samme plade, er kun opgivet med NRC: 0,55 / 0,75 / 0,90 ved 12 / 24 / 36 mm; regn med rPET Panel-værdierne og deres montering.
+For rPET Groove, der skæres ud af den samme plade, findes der kun NRC-tal (0,55 ved 12 mm, 0,75 ved 24 mm og 0,90 ved 36 mm); regn med rPET Panel-værdierne og deres montering.
 
-Klasse B (αw 0,80–0,85) er arbejdshesten til kontorer, skoler og restauranter; klasse A (αw 0,90 og derover) er der, hvor rWood Groove, rWood Micro og vores tekstilserie [Interior](/da/products/interior) (αw 1,0) ligger, og hvor rPET Panel havner på en luftspalte med stenuld. Hvilken værdi et rum kræver, afhænger af de regler, der gælder: ISO 22955 for storrumskontorer og i Danmark DS 490 som national reference; tjek det præcise krav med din akustiker.
+Klasse B (αw 0,80–0,85) er arbejdshesten til kontorer, skoler og restauranter; klasse A (αw 0,90 og derover) er der, hvor rWood Groove, rWood Micro og vores tekstilserie [Interior](/da/products/interior) (αw 1,0) ligger, og hvor rPET Panel havner på en luftspalte med stenuld. Hvilken værdi et rum kræver, afhænger af de regler, der gælder: ISO 22955 for storrumskontorer, herhjemme DS 490 som pejlemærke; tjek det præcise krav med din akustiker.
 
-**Regnestykket er det samme for begge materialer.** Tag et mødelokale på 5 × 4 m med 2,8 m til loftet, altså V = 56 m³, målt til 0,9 s og med et mål på 0,6 s for tydelige videomøder. Sabines formel A = 0,161 × V / T giver:
+**Regnestykket er det samme for begge materialer.** Tag et mødelokale, 5 m langt, 4 m bredt og 2,8 m højt, altså V = 56 m³, målt til 0,9 s og med et mål på 0,6 s for tydelige videomøder. Sabines formel A = 0,161 × V / T giver:
 
 - absorption nu: 0,161 × 56 delt med 0,9 = **10,0 m² Sabine**
 - absorption ved målet: 0,161 × 56 delt med 0,6 = **15,0 m² Sabine**
 - forskellen, der skal tilføjes: 15,0 minus 10,0 = **5,0 m² Sabine**
 
-Med 12 mm rPET Panel på 100 mm luftspalte (αw 0,80) er det 5,0 / 0,80 = **6,3 m²**, det vil sige to plader på 2.800 × 1.220 mm (2 × 3,42 = 6,84 m²). Med rWood Groove (αw 0,90) er det 5,0 / 0,90 = **5,6 m²**, og med rPET Panel på 50 mm luftspalte med 50 mm stenuld (αw 1,00) 5,0 m². Materialet ændrer udseendet og fakturaen langt mere, end det ændrer antallet af paneler. Vil du regne på dit eget rum, så læs [hvor mange akustikpaneler du skal bruge](/da/blog/hvor-mange-akustikpaneler-skal-jeg-bruge).
+Vælger du rPET Panel i 12 mm på 100 mm luftspalte (αw 0,80), bliver det 5,0 / 0,80 = **6,3 m²**, det vil sige to plader på 2.800 × 1.220 mm (2 × 3,42 = 6,84 m²). Med rWood Groove (αw 0,90) er det 5,0 / 0,90 = **5,6 m²**, og med rPET Panel i luftspalten med stenuld (αw 1,00) 5,0 m². Materialet ændrer udseendet og fakturaen langt mere, end det ændrer antallet af paneler. Vil du regne på dit eget rum, så læs [hvor mange akustikpaneler du skal bruge](/da/blog/hvor-mange-akustikpaneler-skal-jeg-bruge).
 
 ## Udseende og indretning
 
@@ -83,7 +83,7 @@ Begge serier bliver fremstillet på vores egen fabrik i Częstochowa; læs mere 
 
 ## Bearbejdning, montering og vedligehold
 
-**PET opfører sig som et plademateriale.** rPET kan skæres med kniv, rundsav, pladesav eller vinkelsliber med metalskive, og det kan males. Snedkere og indretningsfirmaer bruger det gerne til specialopgaver, tilpasset omkring stikkontakter og fodpaneler. Monteringen sker med lim, Z-clips, skruer eller på lægter.
+**PET opfører sig som et plademateriale.** rPET skærer du med kniv eller rundsav, pladesav eller vinkelsliber med metalskive, og det kan males. Snedkere og indretningsfirmaer bruger det gerne til specialopgaver, tilpasset omkring stikkontakter og fodpaneler. Monteringen sker med lim, Z-clips, skruer eller på lægter.
 
 **Træ kræver præcision.** Hvert snit gennem en finér er synligt, så planlæg opdelingen og skærelisten på forhånd i stedet for at tilpasse på stedet. rWood Groove samles med fer og not og sættes på lægter eller limes på underlaget; rWood Micro og rWood Perf hænger i et skjult clipssystem på skinner, uden værktøj og til at tage ned igen. Finér er mere følsom over for stød og fugt end filt.
 
@@ -97,7 +97,7 @@ Pr. kvadratmeter er PET-filt den økonomiske af de to og finértræ premiumprodu
 - **rWood Groove**: afhænger af lagerbeholdningen og bekræftes ved ordren.
 - **rWood Micro og rWood Perf**: lagerfinérer på 3–4 uger; ikke-lagerfinérer 6–8 uger.
 
-Re-Sound er et brand under Stretch Group med egne fabrikker i Beveren-Waas (Belgien) og Częstochowa (Polen). rPET og rWood kommer fra Częstochowa, tekstilserien fra Beveren-Waas, hvor du efter aftale kan se begge materialer i showroomet. Se [hvor du kan købe](/da/where-to-buy), eller brug [kontaktsiden](/da/contact).
+Re-Sound er et brand under Stretch Group og ejer selv sine fabrikker: Beveren-Waas i Belgien og Częstochowa i Polen. rPET og rWood kommer fra Częstochowa, tekstilserien fra Beveren-Waas, hvor du efter aftale kan se begge materialer i showroomet. Se [hvor du kan købe](/da/where-to-buy), eller brug [kontaktsiden](/da/contact).
 
 ## Beslutningstabel: hvornår PET, hvornår træ
 
@@ -106,7 +106,7 @@ Re-Sound er et brand under Stretch Group med egne fabrikker i Beveren-Waas (Belg
 | Farve, grafik, logoer, UV-print efter eget design | rPET Groove / rPET Panel |
 | Buede vægge og søjler | rPET Flex Groove |
 | Tilskæring og tilpasning på stedet, snedkerarbejde | [rPET Panel](/da/products/rpet-panel) |
-| Krav om brandklasse B-s1,d0 i en offentlig bygning | rPET i hvid, grå eller sort, eller rWood på FR-MDF-kernen |
+| Krav om B-s1,d0 i en offentlig bygning | hvid, grå eller sort rPET, eller rWood på FR-MDF-kernen |
 | Bestyrelseslokale, reception, restaurant, træinteriør | rWood Groove / rWood Panel |
 | Højeste andel genanvendt materiale | rPET (fremstillet udelukkende af genanvendt PET) |
 | Fornybart, certificeret råmateriale på forsiden | rWood (kun FSC-finérer) |
@@ -117,7 +117,7 @@ Stadig i tvivl? Bestil det gratis prøvesæt, og sammenlign begge materialer i s
 ## Ofte stillede spørgsmål
 
 **Absorberer træ dårligere end PET-filt?**
-Ikke i vores serier. rWood Groove og rWood Micro er begge αw 0,90, klasse A efter ISO 11654, og Micro stiger til 1,00 med 50 mm mineraluld i hulrummet. 12 mm rPET Panel dækker samme bånd afhængigt af monteringen: αw 0,80 (klasse B) på 100 mm luftspalte, 1,00 (klasse A), når 50 mm luftspalte fyldes med 50 mm stenuld. Valget handler om udseende, brandklasse, budget og bæredygtighedsprofil, ikke om absorption.
+Ikke i vores serier. rWood Groove og rWood Micro er begge αw 0,90, klasse A efter ISO 11654, og Micro stiger til 1,00, når hulrummet får 50 mm mineraluld. 12 mm rPET Panel dækker samme bånd afhængigt af monteringen: klasse B med αw 0,80 på 100 mm luftspalte, klasse A med αw 1,00 i 50 mm luftspalte fyldt med 50 mm stenuld. Valget handler om udseende, brandklasse, budget og bæredygtighedsprofil, ikke om absorption.
 
 **Kan jeg kombinere PET- og træpaneler?**
 Ja, og det er ofte det bedste svar: træ på den væg, man ser, PET-filt på de lange vægge og loftet. rPET monteres med lim, Z-clips, skruer eller på lægter, rWood Groove på lægter eller med lim, rWood Micro i skjulte clips; en rPET-plade kan endda fylde hulrummet bag rWood Groove som ekstra absorbent. Begge tager vi gratis tilbage i BE, NL, FR, DE og LU, men ikke i Danmark.

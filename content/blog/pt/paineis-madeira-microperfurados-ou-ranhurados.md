@@ -21,7 +21,7 @@ faq: [{"question":"Um painel de madeira microperfurado absorve tanto como um pai
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "panneau-acoustique-bois-microperfore, holz-akustikpaneele-mikroperforiert-oder-genutet"
-wordCount: 1450
+wordCount: 1930
 ---
 
 **Um painel acústico de madeira microperfurado é um painel folheado a madeira atravessado por milhares de furos minúsculos que, encaixado em calhas à frente de uma caixa de ar, com ou sem lã mineral, funciona como um absorvente ressonante: o ar que oscila dentro das perfurações perde energia por atrito e o som é absorvido atrás de uma superfície que parece madeira lisa.** É esse o princípio do nosso [rWood Micro](/pt/products/rwood-micro): αw 0,90, classe A segundo a ISO 11654, até 1,00 com 50 mm de lã mineral na caixa de ar. O ranhurado [rWood Groove](/pt/products/rwood-groove) chega à mesma classe A por outro caminho; explicamos como funcionam os dois e como escolher.
@@ -48,17 +48,17 @@ Os nossos [painéis acústicos de madeira](/pt/products/wood-acoustic-panels) ex
 | Folheados | Apenas com certificação FSC | Apenas com certificação FSC |
 | Prazo de produção | Consoante o stock, confirmado na encomenda | 3 a 4 semanas (folheados de stock), 6 a 8 semanas (fora de stock) |
 
-O Groove traz o seu próprio feltro de PET reciclado de 3 mm e assenta sobre ripas ou cola-se ao suporte; sobre ripas, a cavidade pode receber um absorvente suplementar (feltro acústico, um painel rPET ou lã mineral). O Micro encaixa sem ferramentas em calhas de alumínio à frente de uma caixa de ar, com lã mineral opcional; os valores por modo de montagem constam do relatório de ensaio. A escolha faz-se, portanto, pelo aspeto: relevo marcado no Groove, superfície de madeira quase contínua no Micro. A ISO 11654 classifica o painel, não a sala: confirme o requisito exato com o seu consultor de acústica.
+O Groove traz o seu próprio feltro de PET reciclado de 3 mm e assenta sobre ripas ou cola-se ao suporte; sobre ripas, a cavidade pode receber um absorvente suplementar (feltro acústico, um painel rPET ou lã mineral). O Micro encaixa sem ferramentas em calhas de alumínio à frente de uma caixa de ar, com lã mineral opcional. A escolha faz-se, portanto, pelo aspeto: relevo marcado no Groove, superfície de madeira quase contínua no Micro. A ISO 11654 classifica o painel, não a sala: confirme o requisito exato com o seu consultor de acústica.
 
 ## Apenas folheados FSC, fabricados na nossa própria fábrica
 
-Somos uma marca do Stretch Group e produzimos nas nossas duas fábricas, Beveren-Waas (Bélgica) e Częstochowa (Polónia). Os painéis rWood saem da fábrica polaca; os oito folheados de stock do rWood Micro vêm da Europa, da Escandinávia e da América do Norte, e qualquer folheado, tingimento ou acabamento pode ser encomendado.
+Somos uma marca do Stretch Group e produzimos nas nossas duas fábricas, Beveren-Waas (Bélgica) e Częstochowa (Polónia). Os painéis rWood saem da fábrica polaca; os oito folheados de stock do rWood Micro vêm da Europa, da Escandinávia e da América do Norte; qualquer outro folheado faz-se por encomenda.
 
 Para a face visível usamos apenas **folheados com certificação FSC**, seja qual for a essência; escreva "folheado de madeira com certificação FSC" tal e qual no caderno de encargos. As amostras de folheado são gratuitas. A recolha gratuita no fim de vida existe apenas na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo; Portugal fica de fora (ver [sustentabilidade](/pt/sustainability)).
 
 ## Reação ao fogo: B-s1,d0 para o rWood Micro
 
-Numa escola, num restaurante ou num edifício aberto ao público, a classe de reação ao fogo segundo a EN 13501-1 é muitas vezes uma exigência firme. O **rWood Micro, sobre o seu núcleo de MDF ignífugo, é classificado B-s1,d0**: combustibilidade limitada (B), pouca produção de fumo (s1), sem gotas inflamadas (d0); a emissão de formaldeído é de classe E1. O rWood Groove atinge a mesma classe B-s1,d0 sobre núcleo de MDF ignífugo (D-s2,d2 sobre MDF standard); o nosso feltro [rPET](/pt/products/pet-acoustic-panels) é B-s1,d0 em branco, cinzento e preto e B-s2,d0 nas outras cores. Confirme o requisito exato com o seu consultor de acústica e com o projetista de segurança contra incêndio.
+Numa escola, num restaurante ou num edifício aberto ao público, a classe de reação ao fogo segundo a EN 13501-1 é muitas vezes uma exigência firme. O **rWood Micro, sobre o seu núcleo de MDF ignífugo, é classificado B-s1,d0**: combustibilidade limitada (B), pouca produção de fumo (s1), sem gotas inflamadas (d0). O rWood Groove atinge a mesma classe B-s1,d0 sobre núcleo de MDF ignífugo (D-s2,d2 sobre MDF standard); o nosso feltro [rPET](/pt/products/pet-acoustic-panels) é B-s1,d0 em branco, cinzento e preto e B-s2,d0 nas outras cores. Confirme o requisito exato com o seu consultor de acústica e com o projetista de segurança contra incêndio.
 
 ## Onde usar a madeira microperfurada: escritórios, restaurantes, escolas
 
@@ -90,7 +90,7 @@ Só com rWood Micro nas paredes (αw 0,90) seriam 60,4 / 0,90 = **67,1 m² de pa
 - **Exija o relatório de ensaio na configuração prescrita**: um αw medido com lã mineral na caixa de ar não vale para uma colocação sem ela.
 - **Escreva por extenso a classe B-s1,d0 (EN 13501-1) sobre núcleo de MDF ignífugo e o folheado com certificação FSC.**
 - **Coloque os painéis onde o som reflete**, à altura do ouvido: parede do fundo de uma sala de aula, paredes atrás dos bancos corridos, parede em frente ao ecrã.
-- **Planeie os recortes com antecedência**: um painel folheado não se retoca em obra como um feltro; o rWood Micro é fabricado à medida a partir dos seus desenhos, por isso envie cotas, cabos e tomadas antes da produção.
+- **Planeie os recortes com antecedência**: um painel folheado não se retoca em obra como um feltro; envie cotas, cabos e tomadas antes da produção.
 
 ## Tabela de decisão: quando ranhurado, quando microperfurado
 

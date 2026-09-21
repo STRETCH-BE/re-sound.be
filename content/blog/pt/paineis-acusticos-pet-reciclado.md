@@ -21,7 +21,7 @@ faq: [{"question":"Um painel em PET reciclado absorve tanto como um painel de ma
 draft: false
 translationKey: "recycled-pet-panels"
 model: "panneaux-acoustiques-pet-recycle, akustikpaneele-recyceltes-pet"
-wordCount: 1350
+wordCount: 1921
 ---
 
 **Um painel acústico em PET reciclado é uma placa de feltro prensada a partir de garrafas de PET pós-consumo, que absorve a fala (o rPET Panel de 12 mm chega a αw 1,00, classe A segundo a ISO 11654, numa caixa de ar de 50 mm preenchida com 50 mm de lã de rocha), se corta e pinta como uma placa de carpintaria, aceita impressão UV e se fixa com clipes ou cola, a um preço por m² inferior ao da madeira folheada.** É o material a considerar quando se quer tratar a reverberação sem abdicar da cor.
@@ -36,7 +36,7 @@ Na Re-Sound há duas referências principais. O [rPET Groove](/pt/products/rpet-
 
 O som entra no feltro, faz vibrar as fibras e perde aí a sua energia por atrito. Os valores da nossa gama rPET:
 
-- **rPET Panel de 12 mm**, medido segundo a EN ISO 354, αw e classe segundo a ISO 11654: **0,25, classe D**, colado diretamente à parede; **0,60, classe C**, com 50 mm de caixa de ar; **0,80, classe B**, com 100 mm de caixa de ar; **1,00, classe A**, com 50 mm de caixa de ar e 50 mm de lã de rocha; **0,95, classe A**, com 100 mm de caixa de ar e 100 mm de lã de rocha. O painel de 9 mm ainda não foi medido.
+- **rPET Panel de 12 mm**, medido segundo a EN ISO 354, αw e classe segundo a ISO 11654: **0,25, classe D**, colado diretamente à parede; **0,60, classe C**, com 50 mm de caixa de ar; **0,80, classe B**, com 100 mm de caixa de ar; **1,00, classe A**, com 50 mm de caixa de ar e 50 mm de lã de rocha; **0,95, classe A**, com 100 mm de caixa de ar e 100 mm de lã de rocha.
 - **rPET Groove** em 12, 24 e 36 mm: NRC 0,55, 0,75 e 0,90 (ASTM C423); a absorção sobe com a espessura. Não existe αw publicado para o rPET Groove, pelo que os cálculos se fazem com o rPET Panel e a respetiva montagem.
 - Uma **caixa de ar** atrás do painel, com ou sem lã de rocha, pesa mais do que a espessura: é a montagem que faz a classe.
 
@@ -101,7 +101,7 @@ Quanto ao preço, o valor por m² depende da espessura, da cor, da impressão e 
 
 **Onde o PET ganha**: cor e grafismo, orçamento em grandes áreas, recortes feitos pela sua própria equipa, material inteiramente reciclado, classe B-s1,d0 em branco, cinzento e preto.
 
-**Onde a madeira ganha**: calor e prestígio numa receção, numa sala de administração ou num restaurante; continuidade com mobiliário em madeira; folheados FSC. O [rWood Micro](/pt/products/rwood-micro), microperfurado, junta a classe B-s1,d0 para edifícios públicos. Se o caderno de encargos impõe a classe A, respondem-lhe o rWood Groove e o rWood Micro (αw 0,90), o rPET Panel de 12 mm numa caixa de ar com lã de rocha (αw 1,00) e o Interior (αw 1,0); confirme o requisito exato com o seu consultor de acústica.
+**Onde a madeira ganha**: calor e prestígio numa receção, numa sala de administração ou num restaurante; continuidade com mobiliário em madeira; folheados FSC. O [rWood Micro](/pt/products/rwood-micro), microperfurado, junta a classe B-s1,d0 para edifícios públicos.
 
 Muitas vezes a resposta é combinar: madeira na parede para onde se olha, PET no resto. Compare os [painéis acústicos de madeira](/pt/products/wood-acoustic-panels), leia a nossa comparação [PET ou madeira](/pt/blog/paineis-acusticos-pet-ou-madeira) e depois peça o [kit de amostras](/pt/samples) rPET ou um orçamento ao m².
 

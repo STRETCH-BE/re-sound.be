@@ -16,21 +16,21 @@ heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroAlt: "Microgeperforeerd houten akoestisch paneel rWood Micro met FSC-fineer, close-up van het bijna gesloten oppervlak"
 internalLinks: ["/nl/products/rwood-groove","/nl/products/rwood-micro","/nl/products/houten-akoestische-panelen","/nl/products/rpet-panel","/nl/products/akoestische-belcabines","/nl/products/solo-flex","/nl/blog/pet-vilt-of-houten-akoestische-panelen","/nl/sustainability","/nl/contact","/nl/where-to-buy"]
 cta: "Vraag het rWood-stalenpakket met beide uitvoeringen of een offerte per m² voor je ruimte aan."
-sources: "ISO 11654 (geluidsabsorptieklassen); EN 13501-1 (brandreactie); FSC; DIN 18041 (Duitse referentie voor de nagalmtijd); ISO 22955 (open kantoren); W.C. Sabine (nagalmformule); datasheets en testrapporten Re-Sound rWood en rPET."
+sources: "ISO 11654 (geluidsabsorptieklassen); EN 13501-1 (brandreactie); FSC; DIN 18041 (Duitse referentiemethode voor de nagalmtijd); ISO 22955 (open kantoren); W.C. Sabine (nagalmformule); datasheets en testrapporten Re-Sound rWood en rPET."
 faq: [{"question":"Absorbeert een microgeperforeerd houten paneel minder goed dan een gegroefd?","answer":"Nee. Volgens hun datasheets halen beide αw 0,90, klasse A volgens ISO 11654: rWood Groove dankzij het 3 mm rPET-vilt op zijn rug, rWood Micro dankzij het akoestische vlies en de spouw achter het paneel. Leg je 50 mm minerale wol in die spouw, dan stijgt rWood Micro tot αw 1,00. Kies dus op opbouw, uitzicht, brandklasse, levertijd en budget, niet op absorptieklasse."},{"question":"Welke absorber hoort er achter een houten akoestisch paneel?","answer":"Geen enkele is verplicht: beide reeksen halen klasse A zonder extra absorber. rWood Micro hangt op aluminium rails voor een spouw waarin je naar keuze 50 mm minerale wol legt, goed voor αw 1,00. Bij rWood Groove op latten kan de spouw akoestisch vilt, een rPET Panel of minerale wol krijgen; dat rPET Panel bestaat volledig uit gerecycleerd PET, is B-s1,d0 in wit, grijs of zwart en B-s2,d0 in elke andere kleur (EN 13501-1) en snij je op de werf met een mes of een zaag. Welke combinatie jouw ruimte nodig heeft, volgt uit de nagalmtijd die je moet halen; check de exacte eis bij je akoesticus."},{"question":"Hoe lang duurt de levering van houten akoestische panelen?","answer":"Voor rWood Micro leveren we voorraadfineren in 3 à 4 weken af fabriek, fineren buiten het voorraadprogramma en maatwerk in 6 à 8 weken. Bij rWood Groove hangt de levertijd af van de voorraad en bevestigen we ze bij de bestelling. Beide reeksen maken we uitsluitend met FSC-gecertificeerd fineer in onze eigen fabriek in Częstochowa (Polen)."}]
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "holz-akustikpaneele-mikroperforiert-oder-genutet, panneau-acoustique-bois-microperfore"
-wordCount: 2037
+wordCount: 1949
 ---
 
-**Microgeperforeerde en gegroefde houten akoestische panelen doen akoestisch hetzelfde werk: rWood Groove en rWood Micro halen allebei αw 0,90, klasse A volgens ISO 11654, en rWood Micro klimt zelfs tot αw 1,00 zodra er 50 mm minerale wol in de spouw ligt. Je kiest dus op opbouw, uitzicht, brandklasse, levertijd en budget.** In deze gids zetten we [rWood Groove](/nl/products/rwood-groove) (gegroefd) en [rWood Micro](/nl/products/rwood-micro) (microgeperforeerd) naast elkaar, met een rekenvoorbeeld volgens Sabine en een beslistabel.
+**Microgeperforeerde en gegroefde houten akoestische panelen doen akoestisch hetzelfde werk: rWood Groove en rWood Micro halen allebei αw 0,90, klasse A volgens ISO 11654, en rWood Micro klimt zelfs tot αw 1,00 als je 50 mm minerale wol in de spouw legt. Je kiest dus op opbouw, uitzicht, brandklasse, levertijd en budget.** In deze gids zetten we [rWood Groove](/nl/products/rwood-groove) (gegroefd) en [rWood Micro](/nl/products/rwood-micro) (microgeperforeerd) naast elkaar, met een rekenvoorbeeld volgens Sabine en een beslistabel.
 
 ## Hoe een groef en een microperforatie geluid opnemen
 
 Allebei horen ze bij onze [houten akoestische panelen](/nl/products/houten-akoestische-panelen): een fineer van A-kwaliteit met FSC-certificaat op een MDF-kern, met daarachter een laag die absorbeert. Het hout is wat je ziet; de openingen in het oppervlak en wat erachter zit, doen het werk. Het verschil tussen de twee reeksen zit in de manier waarop het vlak opengaat en in de opbouw van het paneel.
 
-**Gegroefd (rWood Groove).** Gefineerde MDF-lamellen liggen op een 3 mm dik vilt van gerecycleerd PET, zwart of grijs; groeven van 15 mm breed openen het oppervlak over de hele plank. Geluid dat in een groef valt, botst op het vilt, dringt erin en verliest daar zijn energie. Het paneel brengt zijn absorber dus zelf mee: **αw 0,90, klasse A volgens ISO 11654**, gemeten volgens EN ISO 354. De planken zijn 300 mm breed, 2.400 of 2.780 mm lang en 10 of 19 mm dik; het standaardpatroon heet Original, met lamellen van 6 × 34 mm, en andere patronen maken we op aanvraag.
+**Gegroefd (rWood Groove).** Gefineerde MDF-lamellen liggen op een 3 mm dik vilt van gerecycleerd PET, zwart of grijs; groeven van 15 mm breed openen het oppervlak over de hele plank. Geluid dat in een groef valt, botst op het vilt, dringt erin en verliest daar zijn energie. Het paneel brengt zijn absorber dus zelf mee: **αw 0,90, klasse A volgens ISO 11654**, gemeten volgens EN ISO 354. De planken zijn 300 mm breed, 2.400 of 2.780 mm lang en 10 of 19 mm dik.
 
 **Microgeperforeerd (rWood Micro).** Hier blijft het vlak bijna dicht. Alleen een fijne perforatie (gaatjes vanaf Ø 0,5 mm, in vier dichtheden tot Ø 2 mm) laat het geluid door tot in een brandvertragende MDF-kern met geluidskamers en naar het akoestische vlies, zwart of wit, aan de achterzijde. Ook zo kom je op **αw 0,90, klasse A**; ligt er 50 mm minerale wol in de spouw achter het paneel, dan loopt dat op **tot αw 1,00**. De precieze waarde hangt af van de perforatiedichtheid, de diepte van de spouw en de absorber erachter. rWood Micro maken we op maat tot 3.050 × 1.220 mm, in 10 en 19 mm.
 
@@ -39,10 +39,10 @@ Allebei horen ze bij onze [houten akoestische panelen](/nl/products/houten-akoes
 Wie microgeperforeerd met gegroefd vergelijkt, vergelijkt in werkelijkheid twee opbouwen. rWood Groove draagt zijn 3 mm rPET-vilt op de rug en wordt met tand en groef op latten bevestigd of rechtstreeks op de ondergrond verlijmd; op latten kan de spouw erachter een extra absorber krijgen. rWood Micro hangt met een onzichtbaar clipsysteem, zonder gereedschap, op aluminium rails, altijd met een spouw erachter waarin je naar keuze minerale wol legt. Voor die spouw komen drie absorbers in aanmerking:
 
 - **Akoestisch vilt**: de slanke oplossing als de opbouw dun moet blijven.
-- **[rPET Panel](/nl/products/rpet-panel)**: volledig uit gerecycleerd PET, in wit, grijs en zwart B-s1,d0 en in de andere kleuren B-s2,d0 (EN 13501-1), op de werf te snijden met een mes, een cirkelzaag of een panelenzaag. De plaat van 12 mm zit rechtstreeks op de wand op αw 0,25 en komt met 50 mm steenwol in een spouw van 50 mm op αw 1,00 (EN ISO 354): de ruimte achter het paneel maakt het verschil.
+- **[rPET Panel](/nl/products/rpet-panel)**: volledig uit gerecycleerd PET, in wit, grijs en zwart B-s1,d0 en in de andere kleuren B-s2,d0 (EN 13501-1), op de werf te snijden met mes of zaag. De plaat van 12 mm zit rechtstreeks op de wand op αw 0,25 en komt in een spouw van 50 mm die met 50 mm steenwol gevuld is op αw 1,00 (EN ISO 354): de ruimte achter het paneel maakt het verschil.
 - **Minerale wol**: de gebruikelijke keuze als er toch een draagstructuur met spouw komt; achter rWood Micro tilt 50 mm minerale wol de waarde tot αw 1,00.
 
-Beide uitvoeringen zitten in klasse A; een absorber in de spouw geeft extra reserve, bij rWood Micro tot αw 1,00. Wat overblijft, is de vraag naar inbouwdiepte, uitzicht en brandveiligheid. Welke waarden jouw bestek moet halen, check je bij je akoesticus.
+Beide uitvoeringen zitten in klasse A; de absorber in de spouw is reserve, bij rWood Micro tot αw 1,00. Wat overblijft, zijn inbouwdiepte, uitzicht en brandveiligheid; welke waarden jouw bestek moet halen, check je bij je akoesticus.
 
 ## Rekenvoorbeeld: vergaderzaal van 56 m³
 
@@ -61,15 +61,15 @@ Panelen halen de galm uit de zaal, maar houden het telefoongesprek dat over een 
 
 ## Uitzicht: lijnenspel of een rustig houtvlak
 
-**Gegroefd** betekent een zichtbaar ritme. De groeven delen de wand op in lijnen, en van ver herken je meteen een akoestische wand. In ontvangstruimtes, restaurants en vergaderzalen is dat de klassieker. rWood Groove komt in vijf voorraadfineren (Silk Oak, Straw Oak, Umber Oak, Walnut en Tobacco Walnut), afgewerkt met een indringende olie of een lak; elk ander fineer op bestelling.
+**Gegroefd** betekent een zichtbaar ritme. De groeven delen de wand op in lijnen, en van ver herken je meteen een akoestische wand. In ontvangstruimtes, restaurants en vergaderzalen is dat de klassieker. rWood Groove komt in vijf voorraadfineren in eik en notelaar, geolied of gelakt; elk ander fineer op bestelling.
 
-**Microgeperforeerd** betekent rust. Vanaf twee meter oogt rWood Micro als een gesloten fineervlak; pas van dichtbij zie je de perforatie. Dat is de keuze voor ruimtes waar het hout als vlak moet werken, zoals directieverdiepingen, advocatenkantoren, aula's en auditoria, of waar de panelen gelijk moeten lopen met deuren en inbouwkasten. Er zijn acht voorraadfineren, van Beech White Ash en Birch Rotary tot Smoked Oak en American Walnut, met een UV-gedroogde lak van supermat tot hoogglans; elk fineer, elke beits en elke afwerking kan op bestelling.
+**Microgeperforeerd** betekent rust. Vanaf twee meter oogt rWood Micro als een gesloten fineervlak; pas van dichtbij zie je de perforatie. Dat is de keuze voor ruimtes waar het hout als vlak moet werken, zoals directieverdiepingen, advocatenkantoren, aula's en auditoria, of waar de panelen gelijk moeten lopen met deuren en inbouwkasten. Acht voorraadfineren, gelakt van supermat tot hoogglans; elk ander fineer of een andere afwerking op bestelling.
 
 Voor beide reeksen werken we **uitsluitend met FSC-gecertificeerd fineer**. En vaak is het antwoord niet of-of: gegroefd op de wand die de ruimte bepaalt, microgeperforeerd op de vlakken die mogen terugwijken. Twijfel je nog tussen hout en vilt, lees dan [PET-vilt of houten akoestische panelen](/nl/blog/pet-vilt-of-houten-akoestische-panelen).
 
 ## Brandveiligheid: B-s1,d0 voor rWood Micro
 
-In scholen, overheidsgebouwen en zalen voor publiek geldt de brandreactie volgens EN 13501-1 meestal als harde eis. **rWood Micro is op zijn brandvertragende MDF-kern geclassificeerd als B-s1,d0**: beperkt brandbaar, weinig rook (s1), geen brandende druppels (d0). De microgeperforeerde uitvoering voldoet dus standaard waar houtlook en strenge brandvoorschriften samenkomen.
+In scholen, overheidsgebouwen en zalen voor publiek geldt de brandreactie volgens EN 13501-1 meestal als harde eis. **rWood Micro is op zijn brandvertragende MDF-kern geclassificeerd als B-s1,d0**: beperkt brandbaar, weinig rook (s1), zonder brandende druppels (d0). De microgeperforeerde uitvoering voldoet dus standaard waar houtlook en strenge brandvoorschriften samenkomen.
 
 Bij rWood Groove beslist de kern: **B-s1,d0 met de brandvertragende MDF-kern, D-s2,d2 met een standaard MDF-kern**; het rPET-vilt aan de achterzijde is B-s1,d0. Een extra absorber in de spouw hoort bij de brandbeoordeling: rPET Panel is in wit, grijs en zwart B-s1,d0 en in de overige kleuren B-s2,d0. Beide reeksen zitten in formaldehydeklasse E1. Welke klasse jouw project nodig heeft, bepalen het gebouw en zijn gebruik; check de exacte eis bij je akoesticus, en voor de brandklasse bij de preventieadviseur.
 
@@ -82,7 +82,7 @@ De levertijd hangt af van het fineer. Voor **rWood Micro** geldt af fabriek:
 
 Bij **rWood Groove** hangt de levertijd af van de voorraad; we bevestigen ze bij de bestelling. Fineerstalen van beide reeksen zijn gratis.
 
-Achter rWood staat Stretch Group, het moederbedrijf van Re-Sound, met twee eigen fabrieken: Beveren-Waas in België en Częstochowa in Polen. De rWood-panelen komen uit de Poolse fabriek; de voorraadfineren van rWood Micro komen uit Europa, Scandinavië en Noord-Amerika. Op het einde van hun levensduur nemen we de panelen gratis terug, maar alleen in België, Nederland, Luxemburg, Frankrijk en Duitsland; meer daarover lees je bij [duurzaamheid](/nl/sustainability).
+Achter rWood staat Stretch Group, het moederbedrijf van Re-Sound, met twee eigen fabrieken: Beveren-Waas in België en Częstochowa in Polen. De rWood-panelen komen uit de Poolse fabriek; de voorraadfineren van rWood Micro komen uit Europa, Scandinavië en Noord-Amerika. Op het einde van hun levensduur nemen we de panelen gratis terug, maar alleen in België, Nederland, Luxemburg, Frankrijk en Duitsland; op de pagina [duurzaamheid](/nl/sustainability) lees je hoe dat werkt.
 
 De prijs per m² bepalen we per offerte, excl. btw, op basis van uitvoering, fineer, absorber en hoeveelheid. Gefineerd hout is ons premiumproduct; wie voor hetzelfde oppervlak minder wil uitgeven, combineert hout op de zichtwand met rPET-panelen op de rest. Stuur ons je vierkante meters via [contact](/nl/contact) of stap binnen bij een [verdeler](/nl/where-to-buy) in je buurt.
 
@@ -92,11 +92,10 @@ De prijs per m² bepalen we per offerte, excl. btw, op basis van uitvoering, fin
 |---|---|---|
 | Absorptie αw (ISO 11654) | 0,90, klasse A, met eigen 3 mm rPET-vilt op de rug | 0,90, klasse A; tot 1,00 met 50 mm minerale wol erachter |
 | NRC | niet gepubliceerd | niet gepubliceerd |
-| Opbouw en montage | fineer op MDF-lamellen en rPET-vilt; tand en groef, op latten of verlijmd; spouw op latten kan akoestisch vilt, rPET Panel of minerale wol krijgen | fineer op brandvertragende MDF-kern met geluidskamers en akoestisch vlies; onzichtbaar clipsysteem op aluminium rails, spouw naar keuze met minerale wol |
+| Opbouw en montage | MDF-lamellen op rPET-vilt; tand en groef, op latten of verlijmd; op latten extra absorber in de spouw mogelijk | brandvertragende MDF-kern met geluidskamers en vlies; clips op aluminium rails, spouw naar keuze met minerale wol |
 | Brandreactie (EN 13501-1) | B-s1,d0 met brandvertragende MDF-kern, D-s2,d2 met standaard MDF-kern | B-s1,d0 (brandvertragende MDF-kern) |
 | Uitzicht | zichtbare groeven, lijnenspel | bijna gesloten houtvlak |
 | Fineer | uitsluitend FSC-gecertificeerd, vijf voorraadfineren | uitsluitend FSC-gecertificeerd, acht voorraadfineren |
-| Formaat | planken van 300 mm breed, 2.400 of 2.780 mm lang, 10 of 19 mm | op maat tot 3.050 × 1.220 mm, 10 of 19 mm |
 | Levertijd voorraadfineer | volgens voorraad, bevestigd bij bestelling | 3 à 4 weken |
 | Levertijd fineer buiten voorraad | volgens voorraad, bevestigd bij bestelling | 6 à 8 weken |
 
@@ -124,4 +123,4 @@ Geen enkele is verplicht: beide reeksen halen klasse A zonder extra absorber. rW
 **Hoe lang duurt de levering van houten akoestische panelen?**
 Voor rWood Micro leveren we voorraadfineren in 3 à 4 weken af fabriek, fineren buiten het voorraadprogramma en maatwerk in 6 à 8 weken. Bij rWood Groove hangt de levertijd af van de voorraad en bevestigen we ze bij de bestelling. Beide reeksen maken we uitsluitend met FSC-gecertificeerd fineer in onze eigen fabriek in Częstochowa (Polen).
 
-*Bronnen: ISO 11654 (geluidsabsorptieklassen); EN 13501-1 (brandreactie); FSC; DIN 18041 (Duitse referentie voor de nagalmtijd); ISO 22955 (open kantoren); W.C. Sabine (nagalmformule); datasheets en testrapporten Re-Sound rWood en rPET.*
+*Bronnen: ISO 11654 (geluidsabsorptieklassen); EN 13501-1 (brandreactie); FSC; DIN 18041 (Duitse referentiemethode voor de nagalmtijd); ISO 22955 (open kantoren); W.C. Sabine (nagalmformule); datasheets en testrapporten Re-Sound rWood en rPET.*

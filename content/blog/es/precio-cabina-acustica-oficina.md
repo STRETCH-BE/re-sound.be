@@ -3,7 +3,7 @@ id: "BP-booth-prices-es"
 slug: "precio-cabina-acustica-oficina"
 locale: "es"
 title: "Cabina acústica de oficina: precios y clases ISO 23351-1 | Re-Sound"
-description: "¿Cuánto cuesta una cabina acústica de oficina? Solo Flex desde {{price:solo-flex}} sin IVA. Clases ISO 23351-1, ventilación, ubicación y plazos, por el fabricante."
+description: "Precio de una cabina acústica de oficina: Solo Flex desde {{price:solo-flex}} sin IVA. Clases ISO 23351-1, ventilación, ubicación y plazos de entrega."
 h1: "Precio de una cabina acústica de oficina y clases ISO 23351-1, explicados por el fabricante (2026)"
 keyword: "precio cabina acústica oficina"
 secondaryKeywords: ["cabina telefónica de oficina precio","cuánto cuesta una cabina acústica","cabina de privacidad precio","cabina de reuniones precio"]
@@ -41,7 +41,7 @@ Los precios de Re-Sound se expresan en euros sin IVA; el transporte dentro de la
 
 En esta comparación, Solo Flex queda entre el competidor 2 y el competidor 3, y la construimos nosotros. Detrás de Re-Sound está Stretch Group, con fábricas propias en Beveren-Waas, en Bélgica, y en Częstochowa, en Polonia.
 
-Para dos personas, [Duo](/es/products/duo) parte de {{price:duo}} sin IVA; el transporte en Europa continental cuesta {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} y la instalación {{price:article:WEB-DUO-WORK-INST}}. Para entre cuatro y diez personas, [Modular XL](/es/products/modular-xl) parte de {{price:modular-xl}} sin IVA sin instalación; cada elemento adicional de 90 cm se presupuesta aparte. Su transporte en Europa continental es {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} y la instalación por nuestro equipo, {{price:article:WEB-MODULAR-XL-INST}} por el módulo principal más {{price:article:WEB-MODULAR-XL-INST-EXT}} por cada elemento extra.
+Para dos personas, [Duo](/es/products/duo) parte de {{price:duo}} sin IVA; transporte en Europa continental {{price:article:WEB-DUO-WORK-TRANSPORT-EU}}, instalación {{price:article:WEB-DUO-WORK-INST}}. Para entre cuatro y diez personas, [Modular XL](/es/products/modular-xl) parte de {{price:modular-xl}} sin IVA sin instalación; cada elemento adicional de 90 cm se presupuesta aparte. Su transporte en Europa continental es {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} y la instalación por nuestro equipo, {{price:article:WEB-MODULAR-XL-INST}} por el módulo principal más {{price:article:WEB-MODULAR-XL-INST-EXT}} por cada elemento extra.
 
 ## Qué incluye el precio y qué no
 
@@ -57,11 +57,11 @@ El precio sin instalación no incluye subir la cabina a su planta ni montarla. D
 
 ## Qué tamaño: 1, 2 o de 4 a 10 personas
 
-El tamaño lo dicta lo que falla en la planta, no lo que cabría en ella. Cuente cuántos compañeros están al teléfono en el mismo momento en las horas punta: ese es su número de cabinas individuales.
+El tamaño lo dicta lo que falla en la planta, no lo que cabría en ella. Cuente cuántos compañeros están al teléfono a la vez en las horas punta: ese es su número de cabinas individuales.
 
-**Una persona (Solo Flex, 1 m²).** Una cabina de privacidad para llamadas, videoconferencias y trabajo concentrado. Huella de 1 020 × 1 020 mm, 2 260 mm de altura, 280 kg.
+**Una persona (Solo Flex, 1 m²).** Cabina de privacidad para llamadas, videoconferencias y trabajo concentrado. Huella de 1 020 × 1 020 mm, 2 260 mm de altura, 280 kg.
 
-**Dos personas (Duo, 2 m²).** Para una conversación a solas o dos compañeros que entran en la misma llamada. Con toma de 230 V y escritorio eléctrico; todavía sin medición ISO 23351-1.
+**Dos personas (Duo, 2 m²).** Para una conversación a solas o dos compañeros en la misma llamada. Con toma de 230 V y escritorio eléctrico; todavía sin medición ISO 23351-1.
 
 **De cuatro a diez personas (Modular XL).** Una sala de reuniones como habitación dentro de la habitación, ampliable en elementos de 90 cm (módulo base hasta cuatro personas, cada elemento suma dos, hasta diez con tres elementos), con equipamiento completo de audio y vídeo; la mayor construida hasta hoy sienta a veinte.
 
@@ -77,7 +77,7 @@ La cifra que importa en una cabina acústica es su **reducción del nivel de voz
 | C | ≥ 24 dB | murmullo lejano, no inteligible |
 | D | ≥ 21 dB | audible, se entienden fragmentos |
 
-**Solo Flex alcanza unos 24 dB(A), clase C; Modular XL, 25,9 dB(A), también clase C.** Para llamadas y videoconferencias en una oficina abierta eso resuelve el problema: los compañeros oyen un murmullo lejano, pero ninguna palabra. Para reuniones confidenciales justo al lado de una planta muy concurrida, elija una clase superior o una sala cerrada, y compruebe la exigencia exacta con su acústico.
+**Solo Flex alcanza unos 24 dB(A), clase C; Modular XL, 25,9 dB(A), también clase C.** Para llamadas y videoconferencias en una oficina abierta eso resuelve el problema: los compañeros oyen un murmullo lejano, pero ninguna palabra. Para reuniones confidenciales junto a una planta muy concurrida, elija una clase superior o una sala cerrada, y compruebe la exigencia exacta con su acústico.
 
 Pida a cada proveedor su informe de ensayo ISO 23351-1.
 
@@ -85,14 +85,14 @@ Pida a cada proveedor su informe de ensayo ISO 23351-1.
 
 Después de la acústica, la ventilación decide si la cabina se usa: una cabina cargada acaba con la puerta abierta. Todas las cabinas Re-Sound están ventiladas; los modelos eléctricos llevan un sistema silencioso de ventiladores EC.
 
-- **Renovación del aire**: Solo Flex encierra como máximo 1,02 × 1,02 × 2,26 = 2,35 m³ (medidas exteriores); a 4,6 m³/min ese volumen se renueva cada 2,35 / 4,6 = 0,51 minutos, es decir, cada 30 segundos aproximadamente.
+- **Renovación del aire**: Solo Flex encierra como máximo 1,02 × 1,02 × 2,26 = 2,35 m³ (medidas exteriores); a 4,6 m³/min ese volumen se renueva cada 2,35 / 4,6 = 0,51 minutos, unos 30 segundos.
 - **Control**: un único sensor PIR enciende ventiladores e iluminación LED al entrar.
 - **Corriente**: 230 V y USB-C en el interior, sin cables que crucen la puerta.
 
 ## Ubicación: seis comprobaciones antes de pedir
 
 1. **Altura**: 2 260 mm para Solo Flex; deje holgura bajo techos, rociadores y luminarias.
-2. **Huella y giro de la puerta**: 1 020 × 1 020 mm más espacio para abrir la puerta y pasar por delante.
+2. **Huella y giro de la puerta**: 1 020 × 1 020 mm más espacio para abrir la puerta y pasar.
 3. **Carga sobre el suelo**: 280 kg sobre 1 m², es decir, 280 kg/m²; indíquelo si tiene un suelo técnico elevado.
 4. **Enchufe**: una toma ordinaria al alcance del cable; sin obra.
 5. **Emplazamiento**: cerca de quienes más llaman, no junto a la máquina de café ni en un pasillo de paso.
@@ -108,7 +108,7 @@ Ejemplo: una oficina abierta de 240 m² × 3 m = 720 m³, tiempo de reverberaci�
 - Absorción objetivo: 0,161 × 720 / 0,7 = **165,6 m² Sabine**
 - Hay que añadir: 165,6 − 96,6 = **69,0 m² Sabine**
 
-Con [paneles acústicos rPET](/es/products/pet-acoustic-panels) de 12 mm sobre 100 mm de cámara de aire (αw 0,80, clase de absorción B según ISO 11654) son 69,0 / 0,80 = **86 m² de paneles** entre techo y paredes, como primera estimación; compruebe la exigencia exacta con su acústico. La cabina va además, no en lugar de los paneles. Para más recintos calculados, vea [cuántos paneles acústicos necesita](/es/blog/cuantos-paneles-acusticos-necesito).
+Con [paneles acústicos rPET](/es/products/pet-acoustic-panels) de 12 mm sobre 100 mm de cámara de aire (αw 0,80, clase de absorción B según ISO 11654) son 69,0 / 0,80 = **86 m² de paneles** entre techo y paredes, como primera estimación; compruebe la exigencia exacta con su acústico. La cabina va además, no en lugar de los paneles. Más recintos calculados en [cuántos paneles acústicos necesita](/es/blog/cuantos-paneles-acusticos-necesito).
 
 ## Comprar al fabricante: plazo, instalación y fin de vida
 

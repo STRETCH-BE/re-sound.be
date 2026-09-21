@@ -21,7 +21,7 @@ faq: [{"question":"Does a recycled PET panel absorb as well as a wood panel?","a
 draft: false
 translationKey: "recycled-pet-panels"
 model: "akustikpaneele-recyceltes-pet"
-wordCount: 0
+wordCount: 1938
 ---
 
 **A recycled PET acoustic panel is a dense felt board pressed from used drinks bottles. It soaks up speech (the 12 mm rPET Panel reaches αw 0.80, class B to ISO 11654, on a 100 mm air cavity and αw 1.00, class A, over a 50 mm cavity filled with 50 mm stone wool), cuts and paints like a joinery board, takes UV print and goes up with clips or adhesive, at a price per square metre below veneered wood.** Here is the fact sheet of our rPET range, from raw material to the comparison with wood.

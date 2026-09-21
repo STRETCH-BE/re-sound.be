@@ -17,11 +17,11 @@ heroAlt: "Opið skrifstofurými með rPET Groove veggplötum og Solo Flex símak
 internalLinks: ["/is/acoustic-calculator","/is/products/rpet-groove","/is/products/pet-acoustic-panels","/is/products/divide","/is/products/solo-eco","/is/products/solo-flex","/is/products/modular-xl","/is/products/duo","https://stretchplafond.be/products/acoustic-stretch-system","/is/contact"]
 cta: "Biddu um ókeypis hljóðvistarráðgjöf eða sýnishornasett; flutningur og afhendingartími til Íslands eftir samkomulagi."
 sources: "ISO 22955:2021 (hljóðvist opinna skrifstofurýma); ISO 3382-3 (dofnun tals í opnum skrifstofurýmum); ISO 3382-2 (mæling ómtíma); ISO 11654 (ísogsflokkar); vörugögn Re-Sound."
-faq: [{"question":"Hvaða ómtími er góður í opnu skrifstofurými?","answer":"Á milli 0,5 og 0,8 sekúndna, eftir lofthæð og fjölda fólks. Yfir 1 sekúndu er ísog (loft, veggir) fyrsta skrefið; sértu nálægt 0,6 sekúndum og samt er ókyrrð hjálpa svæðaskipting og símaklefar meira."},{"question":"Hjálpa hljóðdeyfiplötur gegn hávaða frá samstarfsfólki?","answer":"Já, á tvo vegu: þær stytta óminn svo að bakgrunnshljóðið lækkar, og þær minnka fjarlægðina sem þú skilur samstarfsfólkið úr. Þær gera samtal á gólfinu ekki óheyranlegt; til þess eru símaklefar og fundarklefar."},{"question":"Hversu margar plötur þarf opið skrifstofurými?","answer":"Sem þumalfingursreglu 15 til 20 % af gólffletinum í ísogi í flokki A eða B, til viðbótar við ísogandi loft. Ómtímareiknirinn okkar gefur þér fyrsta mat út frá málum rýmisins, og hljóðvistarráðgjafi staðfestir nákvæmu kröfuna."}]
+faq: [{"question":"Hvaða ómtími er góður í opnu skrifstofurými?","answer":"Á milli 0,5 og 0,8 sekúndna, eftir lofthæð og fjölda fólks. Yfir 1 sekúndu er ísog (loft, veggir) fyrsta skrefið; sértu nálægt 0,6 sekúndum og samt er ókyrrð hjálpa svæðaskipting og símaklefar meira."},{"question":"Hjálpa hljóðdeyfiplötur gegn hávaða frá samstarfsfólki?","answer":"Já, á tvo vegu: þær stytta óminn svo að bakgrunnshljóðið lækkar, og þær stytta fjarlægðina sem þú skilur samstarfsfólkið í. Þær gera samtal á gólfinu ekki óheyranlegt; til þess eru símaklefar og fundarklefar."},{"question":"Hversu margar plötur þarf opið skrifstofurými?","answer":"Sem þumalfingursreglu 15 til 20 % af gólffletinum í ísogi í flokki A eða B, til viðbótar við ísogandi loft. Ómtímareiknirinn okkar gefur þér fyrsta mat út frá málum rýmisins, og hljóðvistarráðgjafi staðfestir nákvæmu kröfuna."}]
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 1327
+wordCount: 1325
 ---
 
 Opið skrifstofurými verður ekki hávært af illum vilja heldur af hörðum efnum og of mörgu fólki sem vill láta skilja sig á sama tíma. **Hljóðvistina bætirðu nánast alltaf með þrennu í senn: þú bætir við ísogi (loft og veggir), afmarkar svæði (skilrúm og klefar) og semur við fólkið um hvar er hringt og fundað.** Hér á eftir eru sjö aðgerðir sem við hjá Re-Sound sjáum virka í reynd, í þeirri röð sem þær skila mestu.
@@ -75,7 +75,7 @@ Sá sem hefur of fá fundarherbergi sér fundina lenda úti á gólfinu. **[Modu
 
 ## 6. Mjúk efni og húsgögn
 
-Teppaflísar, bólstraðir stólar, gluggatjöld og bókahillur draga hvert um sig í sig svolítið hljóð. Teppi í stað slétts gólfefnis munar strax merkjanlega í stórri skrifstofu í högghljóði frá skrefum og stólum. Teldu þessar aðgerðir ekki sem aðalísog — teppi nær ekki αw 0,90 — en taktu þær með í hverja endurinnréttingu.
+Teppaflísar, bólstraðir stólar, gluggatjöld og bókahillur gleypa hvert um sig dálítið hljóð. Teppi í stað slétts gólfefnis munar strax merkjanlega í stórri skrifstofu í högghljóði frá skrefum og stólum. Teldu þessar aðgerðir ekki sem aðalísog — teppi nær ekki αw 0,90 — en taktu þær með í hverja endurinnréttingu.
 
 ## 7. Samkomulag og skipulag
 
@@ -100,7 +100,7 @@ Hvert skref má framkvæma sér og mæla sér. Fyrir Ísland gefum við upp flut
 Á milli 0,5 og 0,8 sekúndna, eftir lofthæð og fjölda fólks. Yfir 1 sekúndu er ísog (loft, veggir) fyrsta skrefið; sértu nálægt 0,6 sekúndum og samt er ókyrrð hjálpa svæðaskipting og símaklefar meira.
 
 **Hjálpa hljóðdeyfiplötur gegn hávaða frá samstarfsfólki?**
-Já, á tvo vegu: þær stytta óminn svo að bakgrunnshljóðið lækkar, og þær minnka fjarlægðina sem þú skilur samstarfsfólkið úr. Þær gera samtal á gólfinu ekki óheyranlegt; til þess eru símaklefar og fundarklefar.
+Já, á tvo vegu: þær stytta óminn svo að bakgrunnshljóðið lækkar, og þær stytta fjarlægðina sem þú skilur samstarfsfólkið í. Þær gera samtal á gólfinu ekki óheyranlegt; til þess eru símaklefar og fundarklefar.
 
 **Hversu margar plötur þarf opið skrifstofurými?**
 Sem þumalfingursreglu 15 til 20 % af gólffletinum í ísogi í flokki A eða B, til viðbótar við ísogandi loft. Ómtímareiknirinn okkar gefur þér fyrsta mat út frá málum rýmisins, og hljóðvistarráðgjafi staðfestir nákvæmu kröfuna.

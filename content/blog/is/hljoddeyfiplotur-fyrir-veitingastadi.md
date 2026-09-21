@@ -21,7 +21,7 @@ faq: [{"question":"Hvaða hljóðdeyfiplötur henta veitingastað?","answer":"Í
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 1248
+wordCount: 1249
 ---
 
 **Á veitingastað þar sem ómtíminn fer yfir 1 sekúndu tala gestirnir hærra, sitja skemur og skrifa um það í umsögninni.** Hljóðdeyfiplötur í loftinu og á veggjunum bak við bekkina færa óminn niður í 0,6 til 0,8 sekúndur: samtölin haldast við borðið, stemningin helst lifandi og salurinn hljómar fullur án þess að vera hávær. Í þessari grein förum við yfir hvaða ómtími hentar hvaða hugmynd, hvar plötur skila mestu, hvað brunaflokkur þýðir fyrir veitingarekstur og hvað 100 m² salur þarf.
@@ -72,7 +72,7 @@ Veitingarekstur lýtur ströngum brunareglum, og eldvarnaeftirlitið horfir á v
 
 - **Brunaflokkur (EN 13501-1)**: rPET-línan (Panel, Groove, Flex Groove) er B-s1,d0 í hvítu, gráu og svörtu og B-s2,d0 í öðrum litum (takmarkað eldfimi, lítill reykur, engir logandi dropar); rWood-línan (Groove, Micro, Perf) er B-s1,d0 á eldtefjandi MDF-kjarna. Biddu alltaf um flokkunarskýrsluna og geymdu hana í brunavarnaskjölum staðarins — við afhendum hana samkvæmt beiðni.
 - **Fita og raki**: engin ísogandi plata á heima beint yfir djúpsteikingarpotti eða grilli. Yfir opnu eldhúsi virkar hljóðdeyfandi strekkiloft í fjarlægð betur en plötur nálægt.
-- **Þrif**: PET-filt ryksugarðu og hreinsar á blettum; við hirðirðu eins og húsgagn; áklæðin á Interior fara í þvottavél. Skemmdri plötu skiptirðu út stakri.
+- **Þrif**: PET-filt ryksugarðu og hreinsar á blettum; viðinn hirðirðu eins og húsgagn; áklæðin á Interior fara í þvottavél. Skemmdri plötu skiptirðu út stakri.
 - **Útgufun**: rPET er vottað samkvæmt OEKO-TEX® Standard 100.
 
 ## Reiknidæmi fyrir 100 m²
@@ -85,7 +85,7 @@ Með jöfnu Sabine (A = 0,161 × V / T):
 - A markmið = 0,161 × 320 / 0,7 = **73,6 m² Sabine**
 - Til viðbótar: **36,8 m² Sabine**
 
-Tillaga: **35 m² loft** í flokki A (αw 0,9 → 31,5 m² Sabine) auk **8 m² rWood Micro** bak við bekkina (við αw 0,90 um 7,2 m² Sabine) = 38,7 m² Sabine. Fullsetinn (50 gestir, um 22 m² Sabine til viðbótar) fer salurinn niður í um 0,5 s: ró fínni veitingastaðar meðan á vaktinni stendur, nógu lifandi í fordrykknum. Fyrsta mat fyrir þinn sal færðu með því að slá málin inn í [ómtímareikninn](/is/acoustic-calculator).
+Tillaga: **35 m² loft** í flokki A (αw 0,9 → 31,5 m² Sabine) auk **8 m² rWood Micro** bak við bekkina (við αw 0,90 um 7,2 m² Sabine) = 38,7 m² Sabine. Fullsetinn (50 gestir, um 22 m² Sabine til viðbótar) fer salurinn niður í um 0,5 s: kyrrð fínni veitingastaðar á meðan vaktin stendur yfir, nógu lifandi í fordrykknum. Fyrsta mat fyrir þinn sal færðu með því að slá málin inn í [ómtímareikninn](/is/acoustic-calculator).
 
 ## Áfangaskipting og kostnaður
 

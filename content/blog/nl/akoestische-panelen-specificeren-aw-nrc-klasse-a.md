@@ -21,7 +21,7 @@ faq: [{"question":"Is αw hetzelfde als NRC?","answer":"Nee. αw (ISO 11654) leg
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
-wordCount: 1889
+wordCount: 1898
 ---
 
 **Kort antwoord: specificeer een akoestisch paneel met één absorptiewaarde, met de norm en de montageconditie erbij (αw en klasse volgens ISO 11654, of NRC volgens ASTM C423), plus de brandklasse volgens EN 13501-1, de certificaten, het gerecycleerd gehalte, de terugname en de documenten die de aannemer moet indienen; reken de ene waarde nooit om naar de andere.** Hieronder lees je wat de cijfers betekenen en waarom de montage meetelt, en vind je een bestektekst en een checklist om over te nemen.
@@ -89,7 +89,7 @@ Bij αw 0,80 (rPET Panel 12 mm voor een lege spouw van 100 mm, klasse B) wordt d
 
 | | rPET Panel 12 mm | rWood Groove | rWood Micro | Interior / Solid / Divide |
 |---|---|---|---|---|
-| αw (ISO 11654) | klasse B (0,80) voor een lege spouw van 100 mm; klasse A (1,00) met 50 mm steenwol in een spouw van 50 mm | 0,90, klasse A | 0,90, klasse A; tot 1,00 met 50 mm minerale wol | 1,0, klasse A |
+| αw (ISO 11654) | klasse B (0,80) voor een lege spouw van 100 mm; klasse A (1,00) met 50 mm steenwol in een spouw van 50 mm | 0,90, klasse A | 0,90, klasse A; 1,00 zodra er 50 mm minerale wol in de spouw ligt | 1,0, klasse A |
 | NRC (ASTM C423) | 0,80 en 0,95 voor diezelfde twee montages | niet gepubliceerd | niet gepubliceerd | zie testrapport |
 | Brand (EN 13501-1) | B-s1,d0 voor wit, grijs en zwart; B-s2,d0 voor alle andere kleuren | B-s1,d0 op de brandvertragende MDF-kern; D-s2,d2 op standaard MDF | B-s1,d0 op de brandvertragende MDF-kern | zie datasheet |
 

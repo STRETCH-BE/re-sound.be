@@ -24,31 +24,31 @@ model: "akustikpaneele-recyceltes-pet"
 wordCount: 1600
 ---
 
-**Et akustikpanel af genanvendt PET er en filtplade presset af brugte PET-flasker, som absorberer tale (12 mm-pladen rPET Panel når αw 0,80, klasse B efter ISO 11654, på 100 mm luftspalte og αw 1,00, klasse A, på 50 mm luftspalte med 50 mm stenuld), kan skæres og males som en snedkerplade, kan UV-printes og monteres med clips eller lim, til en kvadratmeterpris under finértræ.** Her får du fakta om vores rPET-serie, fra opbygning til sammenligningen med træ.
+**Et akustikpanel af genanvendt PET er en filtplade presset af brugte PET-flasker, som absorberer tale (12 mm-pladen rPET Panel når αw 0,80, klasse B efter ISO 11654, på 100 mm luftspalte og αw 1,00, klasse A, på 50 mm luftspalte plus 50 mm stenuld), kan skæres og males som en snedkerplade, kan UV-printes og monteres med clips eller lim, til en kvadratmeterpris under finértræ.** Her får du fakta om vores rPET-serie, fra opbygning til sammenligningen med træ.
 
 ## Hvad er et akustikpanel af genanvendt PET?
 
 PET er plasten i vand- og sodavandsflasker. Efter indsamling bliver flaskerne sorteret, vasket, findelt, smeltet til fibre og varmpresset til en tæt plade: PET-filt. Vores [rPET-serie](/da/products/pet-acoustic-panels) består helt af genanvendt PET; fiberen er på én gang bæreplade, synlig overflade og absorbent, uden stof og uden finér.
 
-To familier hos Re-Sound: [rPET Groove](/da/products/rpet-groove), rillet, i ti lagerfarver og enhver farve på bestilling, i bredderne 600 og 1.200 mm og tykkelserne 12, 24 og 36 mm; og [rPET Panel](/da/products/rpet-panel), den glatte helplade i 9 og 12 mm i formaterne 2.800 × 1.220 og 2.440 × 1.220 mm, hvis absorption afhænger af monteringen: αw 0,25 (klasse D) direkte på væggen, op til 1,00 (klasse A) på 50 mm luftspalte med 50 mm stenuld (målt på 12 mm efter EN ISO 354).
+To familier hos Re-Sound: [rPET Groove](/da/products/rpet-groove), rillet, i ti lagerfarver og enhver farve på bestilling, i bredderne 600 og 1.200 mm og tykkelserne 12, 24 og 36 mm; og [rPET Panel](/da/products/rpet-panel), den glatte helplade i 9 og 12 mm i formaterne 2.800 × 1.220 og 2.440 × 1.220 mm, og dens absorption bestemmes af monteringen: fra αw 0,25 (klasse D) monteret lige på væggen til 1,00 (klasse A) på 50 mm luftspalte plus 50 mm stenuld (målt på 12 mm efter EN ISO 354).
 
 ## Sådan absorberer PET-filt lyden
 
 Lyden trænger ind i filten, sætter fibrene i svingning og mister sin energi som friktion. Hele fladen arbejder, kanter og bagside inklusive. Værdierne for vores rPET-serie:
 
-- **rPET Panel, 12 mm** (EN ISO 354; αw og klasse efter ISO 11654): **αw 0,25, klasse D** direkte på væggen; **0,60, klasse C** på 50 mm luftspalte; **0,80, klasse B** på 100 mm luftspalte; **1,00, klasse A** på 50 mm luftspalte med 50 mm stenuld. Monteringen afgør resultatet.
+- **rPET Panel, 12 mm** (EN ISO 354; αw og klasse efter ISO 11654): **klasse D, αw 0,25**, hvis pladen sidder direkte på væggen; **klasse C, αw 0,60**, med 50 mm luftspalte; **klasse B, αw 0,80**, med 100 mm luftspalte; **klasse A, αw 1,00**, med 50 mm luftspalte plus 50 mm stenuld. Monteringen afgør resultatet.
 - **rPET Groove** i **12, 24 og 36 mm**: NRC 0,55 / 0,75 / 0,90; absorptionen stiger med tykkelsen.
 - En **luftspalte** bag panelet forbedrer desuden absorptionen af de lave frekvenser.
 
-Klasse A (αw ≥ 0,90) opnår du med rPET Panel på 50 mm luftspalte med 50 mm stenuld (αw 1,00) eller med vores tekstilserie [Interior](/da/products/interior) (αw 1,0). I de fleste kontorer, skoler og restauranter rækker klasse B; det afgørende er det monterede areal, monteringen og placeringen. Hvilken efterklangstid dit rum skal ned på, sætter DS 490 rammerne for i Danmark, og ISO 22955 supplerer for storrumskontorer. Tjek det præcise krav med din akustiker.
+Klasse A (αw ≥ 0,90) opnår du med rPET Panel i en luftspalte på 50 mm plus 50 mm stenuld (αw 1,00) eller med vores tekstilserie [Interior](/da/products/interior) (αw 1,0). I de fleste kontorer, skoler og restauranter rækker klasse B; det afgørende er det monterede areal, monteringen og placeringen. Hvilken efterklangstid dit rum skal ned på, sætter DS 490 rammerne for i Danmark, og ISO 22955 supplerer for storrumskontorer. Tjek det præcise krav med din akustiker.
 
-## Hvor mange m² skal du bruge? Et regneeksempel efter Sabine
+## Så mange m² skal du bruge: et regneeksempel efter Sabine
 
-Tag et klasselokale på 8 × 7 m med 3,2 m til loftet, altså **179 m³**, med klinkegulv, gipsloft og en glasvæg. Målt efterklangstid: **1,2 s**. Som reference bruger vi her metoden fra den tyske standard DIN 18041: den placerer undervisnings- og mødelokaler i kategorien A3 »undervisning/kommunikation« og sætter målet T_mål = 0,32 · lg(V) − 0,17 s:
+Tag et klasselokale med grundplan 8 × 7 m og 3,2 m til loftet, altså **179 m³**, med klinkegulv, gipsloft og en glasvæg. Målt efterklangstid: **1,2 s**. Til at fastlægge målet låner vi som reference metoden i den tyske standard DIN 18041: undervisnings- og mødelokaler hører der til kategori A3 (undervisning/kommunikation), og målet beregnes som T_mål = 0,32 · lg(V) − 0,17 s:
 
 - T_mål = 0,32 × lg(179) − 0,17 = 0,32 × 2,25 − 0,17 = 0,72 − 0,17 = **0,55 s**
 
-I Danmark er DS 490 den nationale reference; tjek det præcise krav med din akustiker. Sabines formel giver derefter den nødvendige absorption: **A = 0,161 × V / T**.
+Herhjemme er DS 490 referencen; tjek det præcise krav med din akustiker, inden du bestiller. Herefter giver Sabines formel den nødvendige absorption: **A = 0,161 × V / T**.
 
 | | Regnestykke | m² Sabine |
 |---|---|---|
@@ -56,13 +56,13 @@ I Danmark er DS 490 den nationale reference; tjek det præcise krav med din akus
 | Absorption ved 0,55 s | 0,161 × 179 / 0,55 | 52,4 |
 | Skal tilføjes | 52,4 − 24,0 | 28,4 |
 
-Kun med rPET Panel 12 mm på 100 mm luftspalte (αw 0,80, klasse B) på væggene ville det være 28,4 / 0,80 = **35,5 m² paneler**, altså 11 plader på 2.800 × 1.220 mm (11 × 3,42 = 37,6 m²). Mere praktisk er kombinationen: **30 m² absorberende loft** i klasse A (antaget αw 0,9; for eksempel et [akustisk spændloft](https://stretchplafond.be/products/acoustic-stretch-system) fra vores søsterselskab STRETCH) giver 30 × 0,9 = 27,0 m² Sabine, dertil **to plader rPET Panel** på 100 mm luftspalte på bagvæggen (2 × 3,42 = 6,84 m² × 0,80 = 5,5 m² Sabine). Tilsammen 32,5 m² Sabine, mere end de nødvendige 28,4; lokalet lander på 0,161 × 179 / (24,0 + 32,5) = **0,51 s**.
+Kun med rPET Panel 12 mm på 100 mm luftspalte (αw 0,80, klasse B) på væggene ville det være 28,4 / 0,80 = **35,5 m² paneler**, altså 11 plader på 2.800 × 1.220 mm (11 × 3,42 = 37,6 m²). Mere praktisk er kombinationen: **30 m² absorberende loft** i klasse A (antaget αw 0,9; for eksempel et [akustisk spændloft](https://stretchplafond.be/products/acoustic-stretch-system) fra vores søsterselskab STRETCH) giver 30 × 0,9 = 27,0 m² Sabine, dertil **to plader rPET Panel** på 100 mm luftspalte på bagvæggen (2 × 3,42 = 6,84 m² × 0,80 = 5,5 m² Sabine). Det giver 32,5 m² Sabine i alt, altså mere end de 28,4, der mangler; lokalet lander på 0,161 × 179 / (24,0 + 32,5) = **0,51 s**.
 
 Paneler dæmper efterklangen, ikke det telefonopkald, der bærer gennem storrumskontoret. Til det skal du bruge en [telefonboks](/da/products/acoustic-phone-booths) som [Solo Flex](/da/products/solo-flex), fra {{price:solo-flex}} ekskl. moms uden montering; montering ved vores hold {{price:article:WEB-SOLO-FLEX-INST}}, transport på det europæiske fastland {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, alt ekskl. moms.
 
 ## Brandsikkerhed og emissioner: B-s1,d0 og OEKO-TEX
 
-I skoler og offentlige bygninger er brandklassen efter EN 13501-1 som regel et ufravigeligt krav. Klassificeringen af vores rPET-serie afhænger af farven: hvid, grå og sort er **B-s1,d0** (begrænset brandbidrag, lav røgudvikling (s1), ingen brændende dråber (d0)), alle øvrige farver **B-s2,d0**; det gælder for Standard- såvel som FR-versionen. Klassificeringsrapporter får du på forespørgsel. Hvilken klasse dit byggeri kræver, afhænger af byggereglerne og anvendelsen; tjek det præcise krav med din akustiker og brandrådgiver.
+I skoler og offentlige bygninger kommer du sjældent uden om et krav til brandklassen efter EN 13501-1. Klassificeringen af vores rPET-serie afhænger af farven: hvid, grå og sort er **B-s1,d0** (lavt bidrag til branden, begrænset røg (s1) og ingen brændende dråber (d0)), alle øvrige farver **B-s2,d0**; det gælder for Standard- såvel som FR-versionen. Klassificeringsrapporter får du på forespørgsel. Hvilken klasse dit byggeri kræver, afhænger af byggereglerne og af, hvad rummet bruges til; tjek det præcise krav med din akustiker og din brandrådgiver.
 
 For indeklimaet er rPET-filten certificeret efter **OEKO-TEX Standard 100**, prøvningssystemet for skadelige stoffer i tekstiler.
 
@@ -95,9 +95,9 @@ Kvadratmeterprisen afhænger af tykkelse, farve, print og mængde og fastsættes
 
 | Kriterium | rPET | rWood |
 |---|---|---|
-| Absorption αw (ISO 11654) | rPET Panel 12 mm: 0,80, klasse B på 100 mm luftspalte; 1,00, klasse A på 50 mm luftspalte med 50 mm stenuld | rWood Groove: 0,90, klasse A; rWood Micro: 0,90, klasse A, med 50 mm mineraluld op til 1,00 |
+| Absorption αw (ISO 11654) | rPET Panel 12 mm: klasse B (0,80) på 100 mm luftspalte, klasse A (1,00) på 50 mm luftspalte plus 50 mm stenuld | rWood Groove: 0,90, klasse A; rWood Micro: 0,90, klasse A, med 50 mm mineraluld op til 1,00 |
 | NRC | rPET Groove: 0,55 / 0,75 / 0,90 ved 12 / 24 / 36 mm | ikke offentliggjort |
-| Brandklasse (EN 13501-1) | B-s1,d0 i hvid, grå og sort; B-s2,d0 i de øvrige farver | rWood Groove: B-s1,d0 med FR-MDF-kerne, D-s2,d2 med standard-MDF-kerne; rWood Micro: B-s1,d0 (FR-MDF-kerne) |
+| Brandklasse (EN 13501-1) | hvid, grå og sort B-s1,d0, alle andre farver B-s2,d0 | rWood Groove: B-s1,d0 med FR-MDF-kerne, D-s2,d2 med standard-MDF-kerne; rWood Micro: B-s1,d0 (FR-MDF-kerne) |
 | Materiale | helt af genanvendt PET, OEKO-TEX Standard 100 | udelukkende FSC-certificerede finérer |
 | Overflader | ti lagerfarver, enhver farve på bestilling, kan males, UV-print | finértyper |
 | Bearbejdning på stedet | kniv, sav, vinkelsliber | planlægges på forhånd (finér) |
@@ -112,7 +112,7 @@ Og som hurtig afgørelse:
 | B-s1,d0 i skole eller offentlig bygning | rPET i hvid, grå eller sort, [rWood Micro](/da/products/rwood-micro) eller rWood Groove med FR-MDF-kerne |
 | Repræsentativt rum, reception, træmøbler | rWood Groove / rWood Micro |
 | Højeste andel genanvendt | rPET (fremstillet helt af genanvendt PET) |
-| Krav om klasse A | rPET Panel på 50 mm luftspalte med 50 mm stenuld (αw 1,00), rWood Groove / rWood Micro (αw 0,90) eller Interior (αw 1,0) |
+| Krav om klasse A | rPET Panel med 50 mm luftspalte plus 50 mm stenuld (αw 1,00), rWood Groove / rWood Micro (αw 0,90) eller Interior (αw 1,0) |
 | Kort leveringstid, stort areal, stramt budget | rPET |
 
 Ofte er svaret begge dele: træ på den væg, man kigger på, PET alle andre steder. Sammenlign vores [akustikpaneler i træ](/da/products/wood-acoustic-panels), og bestil derefter rPET-prøvesættet eller et tilbud pr. m²: [kontakt](/da/contact).

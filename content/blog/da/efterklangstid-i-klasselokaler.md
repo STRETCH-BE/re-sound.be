@@ -3,7 +3,7 @@ id: "BP-classroom-reverberation-da"
 slug: "efterklangstid-i-klasselokaler"
 locale: "da"
 title: "Efterklangstid i klasselokaler: krav, måling og løsning | Re-Sound"
-description: "Hvad kræves der af efterklangstiden i et klasselokale, hvordan måler du, og hvor meget absorption skal der til? Regneeksempel og løsninger, der holder i en skole."
+description: "Hvad kræves der af efterklangstiden i et klasselokale, hvordan måler du, og hvor meget absorption skal der til? Regneeksempel og løsninger til skoler."
 h1: "Efterklangstid i klasselokaler: krav, målinger og løsninger, der holder til skolebrug"
 keyword: "efterklangstid klasselokale"
 secondaryKeywords: ["akustik i klasselokale","akustikpaneler skole","efterklang skole","DS 490 klasselokale"]
@@ -16,15 +16,15 @@ heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroAlt: "Klasselokale med rPET Groove-paneler på bagvæggen og et absorberende loft"
 internalLinks: ["/da/products/rwood-groove","/da/blog/hvor-mange-akustikpaneler-skal-jeg-bruge","https://stretchplafond.be/products/acoustic-stretch-system","/da/products/rpet-groove","/da/products/interior","/da/products/rwood-micro","/da/products/divide","/da/products/pet-acoustic-panels","/da/where-to-buy"]
 cta: "Bed om udbudsteksten og en prøvepakke til din skole"
-sources: "NBN S 01-400-2:2012 (akustiske kriterier for skolebygninger, Belgien); DIN 18041:2016 (Hörsamkeit in Räumen, Tyskland); DS 490 (dansk standard); ISO 3382-2 (måling af efterklangstid); ISO 11654 (absorptionsklasser); EN 13501-1 (brandklassificering); produktdata Re-Sound."
-faq: [{"question":"Hvilken efterklangstid kræves der i et klasselokale?","answer":"Det afhænger af lokaletypen og volumenet. Som størrelsesorden gælder cirka 0,6 til 0,8 s for et almindeligt klasselokale; det er, hvad den belgiske standard NBN S 01-400-2 kræver ved normal komfort, og strengere ved forhøjet komfort. I Danmark er DS 490 referencen. Få det præcise krav beregnet af din arkitekt eller akustiker."},{"question":"Er vægpaneler alene nok i en klasse?","answer":"Som regel ikke uden at bruge meget vægplads: loftet er den største flade og den mest effektive. Loft plus bagvæg er den kombination, der opfylder kravet i de fleste klasser."},{"question":"Hvor hurtigt kan en skole få monteret paneler?","answer":"rPET leverer vi på cirka 3 til 4 arbejdsuger; et almindeligt klasselokale monterer et hold på en halv dag. Bestil senest i maj for at være sikker på montering i sommerferien."}]
+sources: "NBN S 01-400-2:2012 (akustiske kriterier for skolebygninger, Belgien); DIN 18041:2016 (Hörsamkeit in Räumen, Tyskland); DS 490 (dansk standard); ISO 3382-2 (måling af efterklangstiden); ISO 11654 (absorptionsklasser); EN 13501-1 (brandklassificering); produktdata Re-Sound."
+faq: [{"question":"Hvilken efterklangstid kræves der i et klasselokale?","answer":"Det afhænger af lokaletypen og volumenet. Som størrelsesorden gælder cirka 0,6 til 0,8 s for et almindeligt klasselokale; det er, hvad den belgiske standard NBN S 01-400-2 kræver ved normal komfort, og strengere ved forhøjet komfort. DS 490 er den danske reference. Få det præcise krav beregnet af din arkitekt eller akustiker."},{"question":"Er vægpaneler alene nok i en klasse?","answer":"Som regel ikke uden at bruge meget vægplads: loftet er den største flade og den mest effektive. Loft plus bagvæg er den kombination, der opfylder kravet i de fleste klasser."},{"question":"Hvor hurtigt kan en skole få monteret paneler?","answer":"rPET leverer vi på cirka 3 til 4 arbejdsuger; et almindeligt klasselokale monterer et hold på en halv dag. Bestil senest i maj for at være sikker på montering i sommerferien."}]
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 1300
+wordCount: 1351
 ---
 
-**I et klasselokale afgør efterklangstiden, om eleverne forstår læreren, og om læreren stadig har stemme klokken 16.** Den belgiske standard NBN S 01-400-2 sætter maksimale efterklangstider for skolebygninger, og for et almindeligt klasselokale lander kravet i praksis på cirka 0,6 til 0,8 sekunder; det er også den størrelsesorden, man møder i de fleste europæiske lande. I Danmark er DS 490 den nationale reference, og det præcise krav for dit lokale skal du tjekke med din akustiker. Et ubehandlet lokale med gips, glas og klinkegulv ligger ofte over 1 sekund. Her gennemgår vi, hvad kravet går ud på, hvordan du måler, hvor meget absorption der skal til, og hvilke løsninger der holder i ti skoleår.
+**I et klasselokale afgør efterklangstiden, om eleverne forstår læreren, og om læreren stadig har stemme klokken 16.** Den belgiske standard NBN S 01-400-2 sætter maksimale efterklangstider for skolebygninger, og for et almindeligt klasselokale lander kravet i praksis på cirka 0,6 til 0,8 sekunder; det er også den størrelsesorden, man møder i de fleste europæiske lande. Herhjemme er DS 490 den tilsvarende standard, og det præcise krav for dit lokale skal du tjekke med din akustiker. Et ubehandlet lokale med gips, glas og klinkegulv ligger ofte over 1 sekund. Her gennemgår vi, hvad kravet går ud på, hvordan du måler, hvor meget absorption der skal til, og hvilke løsninger der holder i ti skoleår.
 
 ## Hvorfor efterklang i en klasse koster mere, end du tror
 
@@ -52,7 +52,7 @@ Hos Re-Sound måler vi efter aftale; til et første overslag er lokalets mål no
 
 ## Regneeksempel: fra 1,2 til 0,6 sekunder
 
-Klasselokale på 8 × 7 m med 3,2 m til loftet (179 m³), klinkegulv, gipsloft og én glasvæg. Målt: **1,2 s**. Mål: **0,6 s**.
+Et klasselokale, 8 m langt og 7 m bredt med 3,2 m til loftet (179 m³), klinkegulv, gipsloft og en enkelt glasvæg. Målingen viser **1,2 s**; kravet sætter vi til **0,6 s**.
 
 Sabines formel lyder A = 0,161 × V / T, og for lokalet giver den:
 
@@ -62,7 +62,7 @@ Sabines formel lyder A = 0,161 × V / T, og for lokalet giver den:
 | Absorption ved målet 0,6 s | 0,161 × 179 / 0,6 | 48 |
 | Skal tilføjes | 48 − 24 | 24 |
 
-Forslag: **30 m² absorberende loft** i klasse A (αw 0,9), som giver 27 m² Sabine, plus **6 m² [rWood Groove](/da/products/rwood-groove)** på bagvæggen (αw 0,90, 5,4 m² Sabine). Tilsammen godt 32 m² Sabine, altså et pænt stykke over de 24, der skal til, så lokalet også holder sig under 0,6 s, når det er tomt, og der er margen til de dybe toner. Vil du regne selv, står metoden i [Hvor mange akustikpaneler skal du bruge?](/da/blog/hvor-mange-akustikpaneler-skal-jeg-bruge).
+Vores forslag: et absorberende loft på **30 m²** i klasse A (αw 0,9), som giver 27 m² Sabine, plus **6 m² [rWood Groove](/da/products/rwood-groove)** på bagvæggen (αw 0,90, 5,4 m² Sabine). Tilsammen godt 32 m² Sabine, altså et pænt stykke over de 24, der skal til, så lokalet også holder sig under 0,6 s, når det er tomt, og der er margen til de dybe toner. Vil du regne selv, står metoden i [vores beregningsguide til akustikpaneler](/da/blog/hvor-mange-akustikpaneler-skal-jeg-bruge).
 
 ## Løsninger, der holder i en skole
 
@@ -89,7 +89,7 @@ De fleste skoler monterer akustik i sommerferien. Regn baglæns fra første skol
 
 1. **Måling og forslag** i foråret; godkendelse hos skolens ledelse.
 2. **Udbudstekst**: til hvert produkt leverer vi en tekst med αw, klasse, brandklasse, format, tykkelse og materiale, så et udbud kan køre uden mærkenavn.
-3. **Bestilling senest i maj**: rPET leveres på cirka 3 til 4 arbejdsuger (specialfarver efter aftale); rWood Micro og Perf på 3 til 4 uger i lagerfiner og 6 til 8 uger i andre finerer; for rWood Groove afhænger leveringstiden af lageret og bekræftes ved ordren.
+3. **Bestilling senest i maj**: rPET leveres på cirka 3 til 4 arbejdsuger (specialfarver efter aftale); rWood Micro og Perf: 3 til 4 uger med lagerfiner, 6 til 8 uger med andre finerer; for rWood Groove afhænger leveringstiden af lageret og bekræftes ved ordren.
 4. **Montering** i sommerferien, kontrolmåling inden skolestart.
 
 Ved endt levetid, eller ved en ombygning, tager vi panelerne gratis tilbage i Belgien, Tyskland, Frankrig, Nederlandene og Luxembourg, hvorefter materialet går ind i vores produktion igen; ordningen gælder ikke for skoler i Danmark. Re-Sound er Stretch Groups akustikbrand, og produktionen ligger på koncernens egne fabrikker i Beveren-Waas i Belgien og Częstochowa i Polen.
@@ -99,7 +99,7 @@ Ved endt levetid, eller ved en ombygning, tager vi panelerne gratis tilbage i Be
 ## Ofte stillede spørgsmål
 
 **Hvilken efterklangstid kræves der i et klasselokale?**
-Det afhænger af lokaletypen og volumenet. Som størrelsesorden gælder cirka 0,6 til 0,8 s for et almindeligt klasselokale; det er, hvad den belgiske standard NBN S 01-400-2 kræver ved normal komfort, og strengere ved forhøjet komfort. I Danmark er DS 490 referencen. Få det præcise krav beregnet af din arkitekt eller akustiker.
+Det afhænger af lokaletypen og volumenet. Som størrelsesorden gælder cirka 0,6 til 0,8 s for et almindeligt klasselokale; det er, hvad den belgiske standard NBN S 01-400-2 kræver ved normal komfort, og strengere ved forhøjet komfort. DS 490 er den danske reference. Få det præcise krav beregnet af din arkitekt eller akustiker.
 
 **Er vægpaneler alene nok i en klasse?**
 Som regel ikke uden at bruge meget vægplads: loftet er den største flade og den mest effektive. Loft plus bagvæg er den kombination, der opfylder kravet i de fleste klasser.
@@ -107,4 +107,4 @@ Som regel ikke uden at bruge meget vægplads: loftet er den største flade og de
 **Hvor hurtigt kan en skole få monteret paneler?**
 rPET leverer vi på cirka 3 til 4 arbejdsuger; et almindeligt klasselokale monterer et hold på en halv dag. Bestil senest i maj for at være sikker på montering i sommerferien.
 
-*Kilder: NBN S 01-400-2:2012 (akustiske kriterier for skolebygninger, Belgien); DIN 18041:2016 (Hörsamkeit in Räumen, Tyskland); DS 490 (dansk standard); ISO 3382-2 (måling af efterklangstid); ISO 11654 (absorptionsklasser); EN 13501-1 (brandklassificering); produktdata Re-Sound.*
+*Kilder: NBN S 01-400-2:2012 (akustiske kriterier for skolebygninger, Belgien); DIN 18041:2016 (Hörsamkeit in Räumen, Tyskland); DS 490 (dansk standard); ISO 3382-2 (måling af efterklangstiden); ISO 11654 (absorptionsklasser); EN 13501-1 (brandklassificering); produktdata Re-Sound.*

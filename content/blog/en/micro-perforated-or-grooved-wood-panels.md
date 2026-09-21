@@ -21,7 +21,7 @@ faq: [{"question":"Does a micro-perforated wood panel absorb less than a grooved
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "holz-akustikpaneele-mikroperforiert-oder-genutet"
-wordCount: 0
+wordCount: 1856
 ---
 
 **Micro-perforated and grooved wood acoustic panels absorb equally well: rWood Groove and rWood Micro both reach αw 0.90, class A to ISO 11654, and rWood Micro climbs to 1.00 with 50 mm mineral wool in the cavity behind it. So the choice comes down to build-up, look, fire class, lead time and budget.** This guide sets out the figures for [rWood Groove](/en/products/rwood-groove) (grooved) and [rWood Micro](/en/products/rwood-micro) (micro-perforated), works through a Sabine example and ends with a decision table.

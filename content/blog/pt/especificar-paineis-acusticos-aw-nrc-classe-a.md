@@ -21,7 +21,7 @@ faq: [{"question":"O αw é o mesmo que o NRC?","answer":"Não. O αw (ISO 11654
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
-wordCount: 1400
+wordCount: 2117
 ---
 
 **Resposta curta: especifique um painel acústico por uma única classificação de absorção, com a sua norma e a sua condição de montagem (αw e classe segundo a ISO 11654, ou NRC segundo a ASTM C423), mais a classe de fogo EN 13501-1, os certificados, o conteúdo reciclado, a recolha no fim de vida e os documentos a entregar; nunca converta uma classificação na outra.** Abaixo: o que significam os números, porque é que a montagem conta, e uma cláusula e uma lista de controlo prontas a copiar para o caderno de encargos.
@@ -52,14 +52,14 @@ A classe é uma abreviatura, não um requisito. A classe de que uma sala precisa
 
 O relatório de ensaio indica como a amostra foi montada, e a classificação só vale para essa montagem.
 
-- **Tipo A**: o painel assenta diretamente na superfície dura, como quando é colado ou clipado rente à parede.
+- **Tipo A**: o painel assenta diretamente na superfície dura, como quando é colado ou fixado com clipes rente à parede.
 - **Caixa de ar**: ensaiado afastado da superfície, sobre ripas ou como teto; uma caixa de ar atrás melhora a absorção nas frequências baixas, pelo que o mesmo painel pontua mais. O rPET Panel de 12 mm mostra a amplitude: αw 0,25 (classe D) rente à parede, 0,60 (classe C) com 50 mm de caixa de ar, 0,80 (classe B) com 100 mm de caixa de ar, 1,00 (classe A) com 50 mm de caixa de ar e 50 mm de lã de rocha, e 0,95 (classe A) com 100 mm de caixa de ar e 100 mm de lã de rocha.
 
-Um valor de caixa de ar não se reproduz com um painel colado a gesso cartonado, por isso a cláusula tem de levar valor e condição juntos. Os [painéis acústicos de madeira](/pt/products/wood-acoustic-panels) acrescentam uma segunda condição: o rWood Groove (αw 0,90, classe A) leva o seu próprio feltro de 3 mm no verso, vai sobre ripas ou colado, e a cavidade atrás pode receber um absorvente extra (feltro acústico, painel rPET ou lã mineral); o [rWood Micro](/pt/products/rwood-micro) (αw 0,90, classe A) pendura-se em clipes com uma caixa de ar atrás e atinge αw 1,00 com 50 mm de lã mineral: especifique a caixa e o que a preenche.
+Um valor de caixa de ar não se reproduz com um painel colado a gesso cartonado, por isso a cláusula tem de levar valor e condição juntos. Os [painéis acústicos de madeira](/pt/products/wood-acoustic-panels) acrescentam uma segunda condição: o rWood Groove (αw 0,90, classe A) leva o seu próprio feltro de 3 mm no verso, vai sobre ripas ou colado, e a cavidade atrás pode receber um absorvente extra (feltro acústico, painel rPET ou lã mineral); o [rWood Micro](/pt/products/rwood-micro) (αw 0,90, classe A) fixa-se com clipes com uma caixa de ar atrás e atinge αw 1,00 com 50 mm de lã mineral: especifique a caixa e o que a preenche.
 
 ## Porque as condições de laboratório importam: um exemplo calculado
 
-Os valores de laboratório vêm de uma amostra grande, montada de forma uniforme, num campo difuso; numa sala real os painéis cobrem uma fração da superfície, pelo que a classificação é uma base de cálculo, não uma garantia. Sala de reuniões de 5 × 4 m e 2,8 m de pé-direito, V = 56 m³, medida a 0,9 s, objetivo 0,6 s. Fórmula de Sabine, A = 0,161 × V / T:
+Os valores de laboratório vêm de uma amostra grande e uniforme num campo difuso; numa sala real os painéis cobrem uma fração da superfície, pelo que a classificação é uma base de cálculo, não uma garantia. Sala de reuniões de 5 × 4 m e 2,8 m de pé-direito, V = 56 m³, medida a 0,9 s, objetivo 0,6 s. Fórmula de Sabine, A = 0,161 × V / T:
 
 | | Cálculo | m² Sabine |
 |---|---|---|
@@ -73,7 +73,7 @@ A αw 0,80 (rPET Panel de 12 mm com 100 mm de caixa de ar, classe B) são 5,0 / 
 
 **Reação ao fogo, EN 13501-1.** B-s1,d0 significa contribuição limitada para o fogo, pouco fumo (s1) e sem gotas inflamadas (d0). A nossa gama rPET é B-s1,d0 em branco, cinzento e preto e B-s2,d0 nas outras cores (a classe segue a cor, na versão Standard como na FR); o rWood Micro e o rWood Perf são B-s1,d0 sobre o núcleo de MDF ignífugo, o rWood Groove B-s1,d0 sobre o núcleo FR e D-s2,d2 sobre o núcleo standard. Retire a classe da ficha técnica da construção escolhida e confirme o requisito exato com o seu consultor de acústica ou com o projetista de segurança contra incêndio.
 
-**Emissões e materiais.** Para o feltro, peça a OEKO-TEX Standard 100; o nosso rPET tem-na. Para a madeira, peça a FSC no folheado; o rWood usa apenas folheados com certificação FSC, com formaldeído de classe E1.
+**Emissões e materiais.** Para o feltro, peça a OEKO-TEX Standard 100; o nosso rPET tem-na. Para a madeira, peça a FSC no folheado; o rWood usa apenas folheados com certificação FSC.
 
 **Conteúdo reciclado e recolha.** Indique o conteúdo reciclado mínimo e o percurso no fim de vida. O rPET Groove é feito inteiramente em PET reciclado, e todos os nossos painéis são recolhidos gratuitamente em cinco países (Bélgica, Países Baixos, França, Alemanha, Luxemburgo) e em nenhum outro: para Portugal não há recolha (ver [sustentabilidade](/pt/sustainability)). A Re-Sound é uma marca do Stretch Group; as fábricas são nossas, em Beveren-Waas (Bélgica) e em Częstochowa (Polónia).
 

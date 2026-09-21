@@ -28,7 +28,7 @@ Una oficina abierta no es ruidosa por mala voluntad, sino por materiales duros y
 
 ## Por qué las oficinas abiertas suenan tan alto
 
-Hormigón, vidrio, yeso y pavimentos continuos apenas absorben sonido. Cada voz rebota varias veces por el recinto antes de extinguirse: eso es la reverberación. Cuanto más larga es, más sube el nivel de fondo y más alto habla todo el mundo para hacerse oír. Esa escalada, el efecto Lombard, explica por qué una oficina suena mucho más fuerte a las tres de la tarde que a las ocho de la mañana.
+Hormigón, vidrio, yeso y pavimentos continuos apenas absorben sonido. Cada voz rebota varias veces antes de extinguirse: eso es la reverberación, y cuanto más larga, más sube el nivel de fondo y más alto habla todo el mundo para hacerse oír. Esa escalada, el efecto Lombard, explica por qué una oficina suena mucho más fuerte a las tres de la tarde que a las ocho de la mañana.
 
 El segundo problema es la inteligibilidad: no el volumen, sino que usted *entienda* a sus compañeros, porque una conversación que se puede seguir atrae la atención, se quiera o no. Por eso ISO 22955 (2021) describe para las oficinas abiertas no solo la reverberación, sino sobre todo la rapidez con la que el habla decae con la distancia (ISO 3382-3). Una buena oficina abierta es aquella donde a seis metros ya no se entiende a los compañeros.
 
@@ -47,7 +47,7 @@ Con 1,0 s o más, la absorción es el primer paso. En torno a 0,6 s y con inquie
 El techo es la superficie continua más grande y la única que "ve" todos los puestos; un techo absorbente es lo que más rápido baja la reverberación. Dos opciones:
 
 - **Un techo tensado acústico**: una tela perforada con material absorbente detrás, sin juntas hasta 5 m de ancho e instalada en un día. Los instala nuestra empresa hermana STRETCH: [stretchplafond.be](https://stretchplafond.be/products/acoustic-stretch-system).
-- **Paneles e islas de techo** de PET reciclado o madera, allí donde el techo debe seguir a la vista (instalaciones, hormigón como estética).
+- **Paneles e islas de techo** de PET reciclado o madera donde el techo debe seguir a la vista (instalaciones, hormigón visto).
 
 Regla práctica: hacer absorbente entre el 60 y el 80 % del techo resuelve el problema de reverberación en la mayoría de las oficinas.
 
@@ -55,15 +55,15 @@ Regla práctica: hacer absorbente entre el 60 y el 80 % del techo resuelve el pr
 
 Las paredes vienen después del techo, pero no en cualquier sitio. El sonido rebota con más fuerza en la pared opuesta a la fuente y en las paredes largas de un recinto rectangular. Ahí van los paneles:
 
-- **[rPET Groove](/es/products/rpet-groove)** (ranurado, diez colores de stock y cualquier color por encargo, 12/24/36 mm) para grandes paños de pared que admiten color. NRC 0,55 / 0,75 / 0,90 según el espesor, reacción al fuego B-s1,d0 en blanco, gris y negro y B-s2,d0 en los demás colores.
-- **rWood Groove o rWood Micro** ([paneles acústicos de madera](/es/products/wood-acoustic-panels)) donde el interior pide calidez: chapa con certificación FSC sobre núcleo de MDF (en Groove, lamas de MDF sobre 3 mm de fieltro de PET reciclado; en Micro, un núcleo de MDF ignífugo con cámaras acústicas), αw 0,90 (clase A).
+- **[rPET Groove](/es/products/rpet-groove)** (ranurado, diez colores de stock y cualquier color por encargo, 12/24/36 mm) para grandes paños de pared que admiten color. NRC 0,55 / 0,75 / 0,90 según el espesor, clase de fuego B-s1,d0 (blanco, gris, negro) o B-s2,d0 (resto de la carta).
+- **rWood Groove o rWood Micro** ([toda la gama de madera](/es/products/wood-acoustic-panels)) donde el interior pide calidez: chapa con certificación FSC sobre núcleo de MDF (lamas de MDF sobre 3 mm de fieltro rPET en Groove; núcleo de MDF ignífugo con cámaras acústicas en Micro), αw 0,90 (clase A).
 - **[Interior](/es/products/interior)**, nuestros paneles textiles modulares con funda extraíble y lavable, para zonas donde los paneles se cambian o se mueven a menudo.
 
 Cuelgue los paneles a la altura del oído, hasta unos 2,2 m: ahí se produce la reflexión del habla. Un panel por encima de los armarios rinde mucho menos que el mismo panel detrás de una mesa.
 
 ## 3. Zonifique con mamparas acústicas
 
-Una oficina abierta de cuarenta puestos es, acústicamente, un único recinto. Divídala en grupos de ocho a doce con mamparas absorbentes autoportantes. **[Divide](/es/products/divide)** está hecho para eso: módulos con pie integrado que se acoplan entre sí magnéticamente, absorbentes por las dos caras y sin montaje; cortan la línea de visión y la de sonido, y se trasladan con los equipos cuando cambian de sitio.
+Una oficina abierta de cuarenta puestos es, acústicamente, un único recinto. Divídala en grupos de ocho a doce con mamparas absorbentes autoportantes. **[Divide](/es/products/divide)** está hecho para eso: módulos con pie integrado que se acoplan entre sí magnéticamente, absorbentes por las dos caras y sin montaje; cortan la línea de visión y la de sonido, y se mudan con los equipos.
 
 ## 4. Cabinas telefónicas para las llamadas
 
@@ -75,11 +75,11 @@ Con pocas salas de reuniones, las reuniones acaban en la planta. Un pod **[Modul
 
 ## 6. Materiales blandos y mobiliario
 
-Losetas de moqueta, sillas tapizadas, cortinas y estanterías absorben cada una un poco; solo cambiar el pavimento continuo por moqueta ya se nota, en una oficina grande, en el ruido de pasos y sillas. No las cuente como absorción principal (una moqueta no llega a αw 0,90), pero inclúyalas en cada reforma.
+Losetas de moqueta, sillas tapizadas, cortinas y estanterías absorben un poco cada una; solo pasar de pavimento continuo a moqueta ya se nota en el ruido de pasos y sillas. No cuentan como absorción principal (una moqueta no llega a αw 0,90), pero entran en cada reforma.
 
 ## 7. Acuerdos y distribución
 
-La medida más barata: agrupe a quienes llaman mucho y no los siente junto a quienes trabajan concentrados todo el día; no haga pasar los pasillos ni la zona de café por las zonas de trabajo; acuerde que las llamadas van a la cabina y las reuniones de grupo al pod. Sin esos acuerdos, la gente vuelve a llenar el silencio que crean los paneles.
+La medida más barata: agrupe a quienes llaman mucho lejos de quienes trabajan concentrados; no cruce pasillos ni zona de café por las zonas de trabajo; acuerde que las llamadas van a la cabina y las reuniones de grupo al pod. Sin esos acuerdos, la gente vuelve a llenar el silencio que crean los paneles.
 
 ## Cuánto cuesta y por dónde empezar
 
@@ -90,9 +90,9 @@ Un orden realista para una oficina abierta de 300 m² con treinta puestos:
 3. **Dos o tres cabinas telefónicas** y, si faltan salas, un Duo o un Modular XL.
 4. **Módulos Divide** entre los equipos y acuerdos de uso.
 
-Cada paso se puede ejecutar y medir por separado. El rPET lo servimos en unas 3 o 4 semanas laborables, rWood Micro y Perf en chapas de stock en 3 o 4 semanas y rWood Groove con un plazo que confirmamos al hacer el pedido; las cabinas, en cuatro a seis semanas. Al final de su vida útil recogemos los paneles sin coste, pero únicamente en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo: una oficina en España no dispone de esa recogida gratuita. Re-Sound es una marca de Stretch Group y fabrica en plantas propias en Beveren-Waas (Bélgica) y Częstochowa (Polonia).
+Cada paso se puede ejecutar y medir por separado. Para el rPET cuente con unas 3 o 4 semanas laborables; para rWood Micro y Perf con chapa de stock, 3 o 4 semanas; para rWood Groove, un plazo que confirmamos al hacer el pedido; para las cabinas, de cuatro a seis semanas. Los paneles se recogen sin coste al final de su vida útil, pero únicamente en Bélgica, los Países Bajos, Luxemburgo, Francia y Alemania: una oficina en España no dispone de esa recogida gratuita. Detrás de Re-Sound está Stretch Group, con fábricas propias en Beveren-Waas (Bélgica) y en Częstochowa (Polonia).
 
-**¿Quiere saber en qué punto está su oficina?** Solicite el kit de muestras gratuito en la [página de contacto](/es/contact); la exposición de Beveren-Waas, con todos los paneles y cabinas instalados, y los distribuidores figuran en [dónde comprar](/es/where-to-buy).
+**¿Quiere saber en qué punto está su oficina?** Solicite el kit de muestras gratuito en la [página de contacto](/es/contact); en [dónde comprar](/es/where-to-buy) figuran los distribuidores y la exposición de Beveren-Waas, con todos los paneles y cabinas instalados.
 
 ## Preguntas frecuentes
 

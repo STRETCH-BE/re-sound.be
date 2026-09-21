@@ -16,8 +16,8 @@ heroImage: "/images/products/rwood-groove/hero-rWood-Groove.webp"
 heroAlt: "Nærbillede af et rWood Groove-akustikpanel i egefinér ved siden af et udprintet datablad og en laboratorierapport"
 internalLinks: ["/da/products/rwood-groove","/da/products/rpet-groove","/da/products/interior","/da/products/rwood-micro","/da/products/pet-acoustic-panels","/da/products/wood-acoustic-panels","/da/products/solo-flex","/da/products/modular-xl","/da/sustainability","/da/contact","/da/where-to-buy"]
 cta: "Bestil det gratis prøvesæt, eller send os din rumliste, så svarer vi med tilbud, datablad og testrapport for hver serie."
-sources: "ISO 11654 (αw og klasser); ASTM C423 (NRC); EN 13501-1 (brandklassificering); ISO 22955 og ISO 3382-3 som pejlemærker; DS 490 (dansk standard); ISO 23351-1 (telefonbokse); W.C. Sabine; OEKO-TEX Standard 100; FSC; produktdata og testrapporter fra Re-Sound."
-faq: [{"question":"Er αw det samme som NRC?","answer":"Nej. αw (ISO 11654) tilpasser den målte kurve fra 250 til 4.000 Hz til en referencekurve i trin på 0,05, afskåret ved 1,00; NRC (ASTM C423) tager gennemsnittet af koefficienterne ved 250, 500, 1.000 og 2.000 Hz. rWood Perf i mønstret PD8 er αw 0,85, men NRC 0,90. Specificer én værdi, nævn dens standard, og regn aldrig om."},{"question":"Hvad betyder klasse A for et akustikpanel?","answer":"Klasse A er det øverste bånd i ISO 11654, αw 0,90 til 1,00; klasse B er 0,80 til 0,85, klasse C 0,60 til 0,75. Interior, Solid og Divide er αw 1,0, klasse A, og det er rWood Groove og rWood Micro også med αw 0,90; 12 mm rPET Panel er klasse B (αw 0,80) på 100 mm luftspalte og klasse A (αw 1,00) på 50 mm luftspalte med 50 mm stenuld. Hvilken klasse et rum kræver, afhænger af den standard, der anvendes; tjek det præcise krav med din akustiker."},{"question":"Hvilke dokumenter skal udbuddet bede om?","answer":"Databladet, testrapporten med angivelse af monteringsbetingelsen, klassificeringsrapporten efter EN 13501-1, OEKO-TEX Standard 100- eller FSC-certifikatet, en erklæring om genanvendt indhold og vejen ved endt levetid (tilbagetagning, hvor den tilbydes) samt monteringsvejledningen. Skriv »eller tilsvarende godkendt« kun, hvis et alternativ skal aflevere samme sæt."}]
+sources: "ISO 11654 (αw og klasser); ASTM C423 (NRC); EN 13501-1 (brandklassificering); ISO 22955 og ISO 3382-3 (pejlemærker for storrumskontorer); DS 490 (dansk standard); ISO 23351-1 (telefonbokse); W.C. Sabine; OEKO-TEX Standard 100; FSC; produktdata og testrapporter fra Re-Sound."
+faq: [{"question":"Er αw det samme som NRC?","answer":"Nej. αw (ISO 11654) tilpasser den målte kurve fra 250 til 4.000 Hz til en referencekurve i trin på 0,05, afskåret ved 1,00; NRC (ASTM C423) tager gennemsnittet af koefficienterne ved 250, 500, 1.000 og 2.000 Hz. rWood Perf i mønstret PD8 er αw 0,85, men NRC 0,90. Specificer én værdi, nævn dens standard, og regn aldrig om."},{"question":"Hvad betyder klasse A for et akustikpanel?","answer":"Klasse A er det øverste bånd i ISO 11654, αw 0,90 til 1,00; klasse B er 0,80 til 0,85, klasse C 0,60 til 0,75. Interior, Solid og Divide er αw 1,0, klasse A, og det er rWood Groove og rWood Micro også med αw 0,90; 12 mm rPET Panel er klasse B (αw 0,80) på 100 mm luftspalte og klasse A (αw 1,00) med 50 mm luftspalte og 50 mm stenuld. Hvilken klasse et rum kræver, afhænger af den standard, der anvendes; tjek det præcise krav med din akustiker."},{"question":"Hvilke dokumenter skal udbuddet bede om?","answer":"Databladet, testrapporten med angivelse af monteringsbetingelsen, klassificeringsrapporten efter EN 13501-1, OEKO-TEX Standard 100- eller FSC-certifikatet, en erklæring om genanvendt indhold og vejen ved endt levetid (tilbagetagning, hvor den tilbydes) samt monteringsvejledningen. Skriv »eller tilsvarende godkendt« kun, hvis et alternativ skal aflevere samme sæt."}]
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
@@ -28,13 +28,13 @@ wordCount: 1600
 
 ## αw og NRC: to værdier for ét panel
 
-Begge stammer fra samme slags laboratorieprøve: en stor prøveflade i et efterklangsrum, lydens henfald målt med og uden prøven, en absorptionskoefficient α pr. frekvensbånd fra 0 (kaster alt tilbage) til 1 (opsuger alt).
+Begge stammer fra samme slags laboratorieprøve: en stor prøveflade i et efterklangsrum, lydens henfald målt med og uden prøven, en absorptionskoefficient α pr. frekvensbånd fra 0 (alt reflekteres) til 1 (alt opsuges).
 
 **αw (ISO 11654)** tilpasser den målte kurve fra 250 Hz til 4.000 Hz til en referencekurve, der forskydes i trin på 0,05. Et panel, der er svagt i ét bånd, straffes; resultatet afskæres ved 1,00 og inddeles i klasserne A til E.
 
 **NRC (ASTM C423)** tager gennemsnittet af koefficienterne ved 250, 500, 1.000 og 2.000 Hz, afrundet til 0,05. Et gennemsnit tilgiver et svagt bånd, og kanteffekter i laboratoriet kan skubbe NRC over 1,00.
 
-De kan ikke byttes om: rWood Perf i mønstret PD8 er αw 0,85 og NRC 0,90; 12 mm rPET Panel er αw 1,00 og NRC 0,95 på 50 mm luftspalte med 50 mm stenuld, αw 0,80 og NRC 0,80 på 100 mm luftspalte. Nogle produkter offentliggør kun den ene: [rWood Groove](/da/products/rwood-groove) har αw 0,90 og ingen NRC, [rPET Groove](/da/products/rpet-groove) kun NRC (0,55, 0,75 og 0,90 ved 12, 24 og 36 mm). Specificer én værdi, nævn dens standard, og regn aldrig om.
+De kan ikke byttes om: rWood Perf i mønstret PD8 er αw 0,85 og NRC 0,90; 12 mm rPET Panel er αw 1,00 og NRC 0,95 med 50 mm luftspalte og 50 mm stenuld, αw 0,80 og NRC 0,80 på 100 mm luftspalte. Nogle produkter offentliggør kun den ene: [rWood Groove](/da/products/rwood-groove) har αw 0,90 og ingen NRC, [rPET Groove](/da/products/rpet-groove) kun NRC: 0,55 i 12 mm, 0,75 i 24 mm og 0,90 i 36 mm. Specificer én værdi, nævn dens standard, og regn aldrig om.
 
 ## Hvad klasse A, B og C betyder
 
@@ -44,7 +44,7 @@ ISO 11654 inddeler αw i fem klasser:
 - **Klasse B**: αw 0,80–0,85
 - **Klasse C**: αw 0,60–0,75
 
-Klassen er en forkortelse, ikke et krav. Hvilken klasse et rum har brug for, afhænger af volumen, den ønskede efterklangstid og den standard, der anvendes: ISO 22955 for storrumskontorer, ISO 3382-3 for talens henfald hen over et åbent gulv, og i Danmark DS 490 som national reference; tjek det præcise krav med din akustiker. Vores tekstilpaneler [Interior](/da/products/interior), Solid og Divide er αw 1,0, klasse A; rWood Groove og rWood Micro er αw 0,90, klasse A; 12 mm rPET Panel er klasse B (αw 0,80) på 100 mm luftspalte og klasse A (αw 1,00) på 50 mm luftspalte med 50 mm stenuld.
+Klassen er en forkortelse, ikke et krav. Hvilken klasse et rum har brug for, afhænger af volumen, den ønskede efterklangstid og den standard, der anvendes: ISO 22955 for storrumskontorer, ISO 3382-3 for talens henfald hen over et åbent gulv, og herhjemme DS 490; tjek det præcise krav med din akustiker. Vores tekstilpaneler [Interior](/da/products/interior), Solid og Divide er αw 1,0, klasse A; rWood Groove og rWood Micro er αw 0,90, klasse A; 12 mm rPET Panel er klasse B (αw 0,80) på 100 mm luftspalte og klasse A (αw 1,00) med 50 mm luftspalte og 50 mm stenuld.
 
 ## Monteringsbetingelser: type A eller luftspalte
 
@@ -75,11 +75,11 @@ Laboratorieværdier kommer fra en stor, jævnt monteret prøve i et diffust lydf
 | Absorption ved 0,6 s | 0,161 × 56 / 0,6 | 15,0 m² Sabine |
 | Mangler | 15,0 − 10,0 | 5,0 m² Sabine |
 
-Ved αw 0,80 (12 mm rPET Panel på 100 mm luftspalte, klasse B) svarer de 5,0 m² Sabine til **6,3 m² panel**, i praksis to plader i formatet 2.800 × 1.220 mm med tilsammen 6,84 m². Ved αw 1,0 (Interior, eller samme rPET Panel på 50 mm luftspalte med 50 mm stenuld) er behovet 5,0 / 1,0 = **5,0 m²**. Erstatter man klasse A med klasse B uden at regne om, får rummet 5,0 × 0,80 = 4,0 m² Sabine, et underskud på 20 %; limes de samme 5,0 m² fladt på væggen (αw 0,25), får det 1,25 m² Sabine, en fjerdedel af det specificerede.
+Ved αw 0,80 (rPET Panel 12 mm på 100 mm luftspalte, klasse B) svarer de 5,0 m² Sabine til **6,3 m² panel**, i praksis to plader i formatet 2.800 × 1.220 mm med tilsammen 6,84 m². Ved αw 1,0 (Interior, eller samme rPET Panel med 50 mm luftspalte og 50 mm stenuld) er behovet 5,0 / 1,0 = **5,0 m²**. Erstatter man klasse A med klasse B uden at regne om, får rummet 5,0 × 0,80 = 4,0 m² Sabine, et underskud på 20 %; limes de samme 5,0 m² fladt på væggen (αw 0,25), får det 1,25 m² Sabine, en fjerdedel af det specificerede.
 
 ## Brand, emissioner og cirkularitet
 
-**Brandklasse, EN 13501-1.** B-s1,d0 betyder begrænset brandbidrag, lidt røg (s1) og ingen brændende dråber (d0). Vores rPET-serie er B-s1,d0 i hvid, grå og sort og B-s2,d0 i de øvrige farver (klassen følger farven, ens for Standard- og FR-version); rWood Micro og rWood Perf er B-s1,d0 på den brandhæmmende MDF-kerne, rWood Groove B-s1,d0 på FR-kernen og D-s2,d2 på standardkernen; tag klassen fra databladet for den valgte opbygning. Tjek det præcise krav med din akustiker eller brandrådgiver.
+**Brandklasse, EN 13501-1.** B-s1,d0 betyder begrænset brandbidrag, lidt røg (s1) og ingen brændende dråber (d0). Vores rPET-serie får B-s1,d0 i hvid, grå og sort, mens de øvrige farver får B-s2,d0 (klassen følger farven, ens for Standard- og FR-version); rWood Micro og rWood Perf er B-s1,d0 på den brandhæmmende MDF-kerne, rWood Groove B-s1,d0 på FR-kernen og D-s2,d2 på standardkernen; tag klassen fra databladet for den valgte opbygning. Tjek det præcise krav med din brandrådgiver eller akustiker.
 
 **Emissioner og materialer.** Til filt beder du om OEKO-TEX Standard 100; vores rPET har den. Til træ beder du om FSC på finéren; rWood bruger udelukkende FSC-certificerede finérer.
 
@@ -89,7 +89,7 @@ Ved αw 0,80 (12 mm rPET Panel på 100 mm luftspalte, klasse B) svarer de 5,0 m�
 
 | | rPET Panel 12 mm | rWood Groove | rWood Micro | Interior / Solid / Divide |
 |---|---|---|---|---|
-| αw (ISO 11654) | 0,80, klasse B på 100 mm luftspalte; 1,00, klasse A på 50 mm luftspalte med 50 mm stenuld | 0,90, klasse A | 0,90, klasse A; op til 1,00 med 50 mm mineraluld | 1,0, klasse A |
+| αw (ISO 11654) | 0,80, klasse B på 100 mm luftspalte; 1,00, klasse A med 50 mm luftspalte og 50 mm stenuld | 0,90, klasse A | 0,90, klasse A; op til 1,00 med 50 mm mineraluld | 1,0, klasse A |
 | NRC (ASTM C423) | 0,80 (100 mm luftspalte) og 0,95 (50 mm luftspalte + 50 mm stenuld) | ingen offentliggjort værdi | ingen offentliggjort værdi | se testrapport |
 | Brand (EN 13501-1) | hvid, grå, sort: B-s1,d0; øvrige farver: B-s2,d0 | FR-MDF-kerne: B-s1,d0; standard-MDF: D-s2,d2 | FR-MDF-kerne: B-s1,d0 | se datablad |
 
@@ -99,7 +99,7 @@ Interior begynder ved {{price:interior}} pr. sæt ekskl. moms; [filt](/da/produc
 
 Eksempel på tekst til et filtpanel på væg, klasse A eller klasse B alt efter hulrummet:
 
-> Akustisk vægpanel, PET-filt fremstillet udelukkende af genanvendt PET, 12 mm, 2.800 × 1.220 mm, i en af ti lagerfarver. αw 1,00, klasse A efter ISO 11654 på 50 mm luftspalte med 50 mm stenuld [eller: αw 0,80, klasse B på 100 mm luftspalte], i testrapportens monteringsbetingelse, svarende til den monterede opbygning [hulrum på … mm / absorbent …]. Brandklasse B-s1,d0 (hvid, grå, sort) eller B-s2,d0 (øvrige farver) efter EN 13501-1. OEKO-TEX Standard 100. Fastgjort med skruer eller lim; genanvendeligt i én materialefraktion, bortskaffelsesvej ved endt levetid oplyst af producenten. Afleveres: datablad, testrapport efter den angivne standard, klassificeringsrapport efter EN 13501-1, certifikater og monteringsvejledning. Reference: Re-Sound rPET Panel, eller tilsvarende godkendt på samme dokumenter.
+> Akustisk vægpanel, PET-filt fremstillet udelukkende af genanvendt PET, 12 mm, 2.800 × 1.220 mm, i en af ti lagerfarver. αw 1,00, klasse A efter ISO 11654 med 50 mm luftspalte og 50 mm stenuld [eller: αw 0,80, klasse B på 100 mm luftspalte], i testrapportens monteringsbetingelse, svarende til den monterede opbygning [hulrum på … mm / absorbent …]. Brandklasse B-s1,d0 (hvid, grå, sort) eller B-s2,d0 (øvrige farver) efter EN 13501-1. OEKO-TEX Standard 100. Fastgjort med skruer eller lim; genanvendeligt i én materialefraktion, bortskaffelsesvej ved endt levetid oplyst af producenten. Afleveres: datablad, testrapport efter den angivne standard, klassificeringsrapport efter EN 13501-1, certifikater og monteringsvejledning. Reference: Re-Sound rPET Panel, eller tilsvarende godkendt på samme dokumenter.
 
 Til et tekstilpanel sætter du Interior, Solid eller Divide ind (αw 1,0, klasse A); til en trævæg rWood Groove eller rWood Micro (αw 0,90, klasse A) med angivelse af MDF-kernen for brandklassen og, for rWood Micro, hulrummet og dets mineraluld.
 
@@ -123,9 +123,9 @@ Send os rumlisten, så får du datablade, testrapporter og et tilbud pr. serie, 
 Nej. αw (ISO 11654) tilpasser den målte kurve fra 250 til 4.000 Hz til en referencekurve i trin på 0,05, afskåret ved 1,00; NRC (ASTM C423) tager gennemsnittet af koefficienterne ved 250, 500, 1.000 og 2.000 Hz. rWood Perf i mønstret PD8 er αw 0,85, men NRC 0,90. Specificer én værdi, nævn dens standard, og regn aldrig om.
 
 **Hvad betyder klasse A for et akustikpanel?**
-Klasse A er det øverste bånd i ISO 11654, αw 0,90 til 1,00; klasse B er 0,80 til 0,85, klasse C 0,60 til 0,75. Interior, Solid og Divide er αw 1,0, klasse A, og det er rWood Groove og rWood Micro også med αw 0,90; 12 mm rPET Panel er klasse B (αw 0,80) på 100 mm luftspalte og klasse A (αw 1,00) på 50 mm luftspalte med 50 mm stenuld. Hvilken klasse et rum kræver, afhænger af den standard, der anvendes; tjek det præcise krav med din akustiker.
+Klasse A er det øverste bånd i ISO 11654, αw 0,90 til 1,00; klasse B er 0,80 til 0,85, klasse C 0,60 til 0,75. Interior, Solid og Divide er αw 1,0, klasse A, og det er rWood Groove og rWood Micro også med αw 0,90; 12 mm rPET Panel er klasse B (αw 0,80) på 100 mm luftspalte og klasse A (αw 1,00) med 50 mm luftspalte og 50 mm stenuld. Hvilken klasse et rum kræver, afhænger af den standard, der anvendes; tjek det præcise krav med din akustiker.
 
 **Hvilke dokumenter skal udbuddet bede om?**
 Databladet, testrapporten med angivelse af monteringsbetingelsen, klassificeringsrapporten efter EN 13501-1, OEKO-TEX Standard 100- eller FSC-certifikatet, en erklæring om genanvendt indhold og vejen ved endt levetid (tilbagetagning, hvor den tilbydes) samt monteringsvejledningen. Skriv »eller tilsvarende godkendt« kun, hvis et alternativ skal aflevere samme sæt.
 
-*Kilder: ISO 11654 (αw og klasser); ASTM C423 (NRC); EN 13501-1 (brandklassificering); ISO 22955 og ISO 3382-3 som pejlemærker; DS 490 (dansk standard); ISO 23351-1 (telefonbokse); W.C. Sabine; OEKO-TEX Standard 100; FSC; produktdata og testrapporter fra Re-Sound.*
+*Kilder: ISO 11654 (αw og klasser); ASTM C423 (NRC); EN 13501-1 (brandklassificering); ISO 22955 og ISO 3382-3 (pejlemærker for storrumskontorer); DS 490 (dansk standard); ISO 23351-1 (telefonbokse); W.C. Sabine; OEKO-TEX Standard 100; FSC; produktdata og testrapporter fra Re-Sound.*
