@@ -21,7 +21,7 @@ faq: [{"question":"Quel temps de réverbération la DIN 18041 demande-t-elle pou
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1878
+wordCount: 1879
 ---
 
 **Pour le temps de réverbération d'un bureau, la méthode la plus précise que nous connaissions est celle de la norme allemande DIN 18041, prise ici comme référence : pour les salles de réunion et de conférence (catégorie A, groupe A3 « enseignement/communication »), T_cible = 0,32·log(V) − 0,17 s, soit 0,39 s environ pour 56 m³ ; les bureaux ouverts relèvent de la catégorie B et se dimensionnent par le rapport entre surface d'absorption et volume, en complément des normes ISO 22955 et ISO 3382-3.** Voici les deux calculs et les mesures qui vont avec.
@@ -49,7 +49,7 @@ Les petites salles de réunion sont les plus exigeantes : aucun local avec pla
 
 ## Exemple chiffré, salle de réunion : de 0,9 s à la valeur cible
 
-Salle de réunion de 5 m sur 4 sous 2,8 m de hauteur, soit 56 m³, dalles de moquette, paroi vitrée, écran sur le mur du fond. Mesuré : **0,9 s**. Cible selon A3 : **0,39 s**. Formule de Sabine A = 0,161 × V / T :
+Salle de réunion de 5 × 4 m et 2,8 m de hauteur (56 m³), dalles de moquette, paroi vitrée, écran sur le mur du fond. Mesuré : **0,9 s**. Cible selon A3 : **0,39 s**. Sabine (A = 0,161 × V / T) donne :
 
 - Aujourd'hui : A = 0,161 × 56 / 0,9 = **10,0 m² Sabine**
 - Cible : A = 0,161 × 56 / 0,39 = **23,1 m² Sabine**
@@ -76,7 +76,7 @@ Plateau de 20 × 12 m sous 3 m = 720 m³, sol en chape, plafond en béton. Estim
 
 Avec des panneaux muraux seulement (rPET Panel de 12 mm devant 100 mm d'air, αw 0,80), il faudrait 69 / 0,80 = 86 m². Une meilleure répartition :
 
-- **Plafond** : 50 m² d'éléments de plafond de classe A (αw 0,9 supposé) = 45 m² Sabine. Alternative : un [plafond tendu acoustique](https://stretchplafond.be/products/acoustic-stretch-system) sans joint, que notre société sœur STRETCH pose en une journée.
+- **Plafond** : 50 m² d'éléments de plafond de classe A (αw 0,9 supposé) = 45 m² Sabine. Alternative : un [plafond tendu acoustique](https://stretchplafond.be/products/acoustic-stretch-system) d'un seul tenant, que notre société sœur STRETCH pose en une journée.
 - **Murs** : 30 m² de rPET Panel de 12 mm devant 100 mm d'air (αw 0,80, classe B) = 24,0 m² Sabine, aux points de réflexion.
 - Au total **69,0 m² Sabine** : T = 0,161 × 720 / (96,6 + 69,0) = 0,70 s, objectif atteint.
 
@@ -84,11 +84,11 @@ Avec des panneaux muraux seulement (rPET Panel de 12 mm devant 100 mm d'air, αw
 
 **1. Le plafond d'abord.** La plus grande surface continue et la seule que chaque poste « voit ». 60 à 80 % du plafond en absorbant (plafond tendu ou éléments de plafond en rPET) règlent le plus souvent le problème de réverbération.
 
-**2. Des panneaux muraux aux points de réflexion.** Les réflexions les plus fortes viennent du mur qui fait face à la source et des longs murs. C'est là que se placent les [panneaux acoustiques en PET recyclé](/fr/products/panneaux-acoustiques-pet), à hauteur d'oreille et jusqu'à 2,2 m environ, pas au-dessus des armoires. [rPET Groove](/fr/products/rpet-groove) : dix coloris en stock, toute autre teinte sur commande, épaisseurs 12, 24 et 36 mm (NRC 0,55, 0,75 et 0,90), B-s1,d0 en blanc, gris et noir, B-s2,d0 pour les autres coloris selon EN 13501-1 ; la plaque lisse rPET Panel (12 mm) atteint selon la pose αw 0,80 (classe B selon ISO 11654) devant 100 mm d'air et 1,00 (classe A) devant 50 mm d'air avec 50 mm de laine de roche. Alternatives : [rWood Groove](/fr/products/rwood-groove) en placage FSC (αw 0,90, classe A) et les panneaux textiles [Interior](/fr/products/interior) (αw 1,0, classe A).
+**2. Des panneaux muraux là où le son se réfléchit.** Les réflexions les plus fortes viennent du mur situé en face de la source et des longs murs. C'est là que se placent les [panneaux acoustiques en PET recyclé](/fr/products/panneaux-acoustiques-pet), à hauteur d'oreille et jusqu'à 2,2 m environ, pas au-dessus des armoires. [rPET Groove](/fr/products/rpet-groove) : dix coloris en stock, toute autre teinte sur commande, en 12, 24 ou 36 mm d'épaisseur (NRC 0,55, 0,75 ou 0,90), B-s1,d0 dans les coloris blanc, gris et noir, B-s2,d0 dans les autres, selon EN 13501-1 ; la plaque lisse rPET Panel (12 mm) atteint selon la pose αw 0,80 (classe B selon ISO 11654) devant 100 mm d'air et 1,00 (classe A) devant 50 mm d'air avec 50 mm de laine de roche. Alternatives : [rWood Groove](/fr/products/rwood-groove) en placage FSC (αw 0,90, classe A) et les panneaux textiles [Interior](/fr/products/interior) (αw 1,0, classe A).
 
 **3. Cloisonner avec Divide.** Quarante postes forment acoustiquement une seule pièce. [Divide](/fr/products/divide) : des parois autoportantes absorbantes des deux côtés (αw 1,0, classe A), sur pied intégré, assemblables par aimants, sans montage.
 
-**4. Des cabines pour les appels et les visioconférences.** Ce sont les appels passés sur le plateau qui gênent le plus ; la réponse est une [cabine acoustique](/fr/products/cabines-acoustiques). La [Solo Flex](/fr/products/solo-flex) tient sur 1 m², ventile à 4,6 m³/min et réduit le niveau de parole d'environ 24 dB(A), classe C selon ISO 23351-1. À partir de {{price:solo-flex}} hors TVA, pose non comprise ; pose par notre équipe {{price:article:WEB-SOLO-FLEX-INST}}, transport en Europe continentale {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, chaque montant hors TVA ; comptez une cabine pour huit à dix postes. Pour deux personnes : [Duo](/fr/products/duo) à partir de {{price:duo}} hors TVA. Comparaison dans le [guide des prix des cabines acoustiques](/fr/guides/prix-cabines-acoustiques).
+**4. Des cabines pour les appels et les visioconférences.** Ce sont les appels passés sur le plateau qui gênent le plus ; la réponse est une [cabine acoustique](/fr/products/cabines-acoustiques). La [Solo Flex](/fr/products/solo-flex) tient sur 1 m², ventile à 4,6 m³/min et réduit le niveau de parole d'environ 24 dB(A), classe C selon ISO 23351-1. À partir de {{price:solo-flex}} hors TVA, pose non comprise ; pose par notre équipe {{price:article:WEB-SOLO-FLEX-INST}}, transport en Europe continentale {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, chaque montant hors TVA ; prévoyez une cabine pour huit à dix postes. Pour deux personnes : [Duo](/fr/products/duo) à partir de {{price:duo}} hors TVA. Comparaison dans le [guide des prix des cabines acoustiques](/fr/guides/prix-cabines-acoustiques).
 
 **5. Des pods de réunion.** Faute de salles de réunion, les réunions se tiennent sur le plateau. [Modular XL](/fr/products/modular-xl) est une salle dans la salle pour six à dix personnes, extensible par éléments de 90 cm, avec 25,9 dB(A) de réduction du niveau de parole (classe C), à partir de {{price:modular-xl}} hors TVA, pose non comprise (pose par notre équipe {{price:article:WEB-MODULAR-XL-INST}} pour le module de base et {{price:article:WEB-MODULAR-XL-INST-EXT}} par élément supplémentaire ; transport en Europe continentale {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} ; chaque montant hors TVA) ; il se pose sans fixation au bâtiment.
 
@@ -96,9 +96,9 @@ Pour l'ordre complet des interventions, du plafond aux règles d'usage, lisez [A
 
 ## Fabrication, délais et reprise
 
-Re-Sound est une marque du groupe Stretch ; les deux usines du groupe, à Beveren-Waas (Belgique) et à Częstochowa (Pologne), nous appartiennent. Comptez 3 à 4 semaines ouvrées environ pour le rPET Groove et 4 à 6 semaines pour les cabines en configuration standard. Montage par vos soins (deux personnes, moins de trois heures pour la Solo Flex) ou par notre équipe (une heure environ par cabine individuelle, deux heures par pod de réunion, deux à six heures pour Modular XL). Les panneaux acoustiques sont repris gratuitement en France, en Belgique, aux Pays-Bas, en Allemagne et au Luxembourg ; les cabines se revendent ou se démontent en kit pour être recyclées.
+Re-Sound est une marque du groupe Stretch ; les deux usines du groupe, à Beveren-Waas (Belgique) et à Częstochowa (Pologne), nous appartiennent. Le rPET Groove part sous 3 à 4 semaines ouvrées environ, les cabines en configuration standard sous 4 à 6 semaines. Montage par vos soins (deux personnes, moins de trois heures pour la Solo Flex) ou par notre équipe (une heure environ par cabine individuelle, deux heures par pod de réunion, deux à six heures pour Modular XL). Les panneaux acoustiques sont repris gratuitement en France, en Belgique, aux Pays-Bas, en Allemagne et au Luxembourg ; les cabines se revendent ou se démontent en kit pour être recyclées.
 
-**Où en est l'acoustique de votre bureau ?** Envoyez-nous le plan et la hauteur sous plafond via la [page de contact](/fr/contact) : vous recevrez un premier calcul d'absorption et un kit d'échantillons gratuit. Cabines et panneaux sont exposés à Beveren-Waas ; la liste des revendeurs se trouve sur la page [où acheter](/fr/where-to-buy).
+**Et votre bureau, où en est-il ?** Envoyez-nous le plan et la hauteur sous plafond via la [page de contact](/fr/contact) : vous recevrez un premier calcul d'absorption et un kit d'échantillons gratuit. Cabines et panneaux sont exposés à Beveren-Waas ; la liste des revendeurs se trouve sur la page [où acheter](/fr/where-to-buy).
 
 ## Questions fréquentes
 

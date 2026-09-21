@@ -17,11 +17,11 @@ heroAlt: "Panneau rPET Groove en feutre gris à côté d'un panneau rWood Groove
 internalLinks: ["/fr/products/panneaux-acoustiques-pet","/fr/products/panneaux-acoustiques-bois","/fr/products/rwood-groove","/fr/products/rwood-perf","/fr/products/rwood-micro","/fr/products/rpet-groove","/fr/products/rpet-flex-groove","/fr/products/rwood-veneer","/fr/sustainability","/fr/where-to-buy","/fr/contact","/fr/products/rpet-panel","/fr/products/cabines-acoustiques"]
 cta: "Demandez le kit d'échantillons gratuit avec les deux matériaux, ou envoyez-nous vos m² pour un devis."
 sources: "ISO 11654 (αw, classes d'absorption) ; ASTM C423 (indice NRC) ; EN 13501-1 (classement au feu) ; ISO 22955 et NBN S 01-400-2 cités comme repères ; W.C. Sabine (formule de réverbération) ; OEKO-TEX® Standard 100 ; FSC ; fiches techniques et rapports d'essai rPET et rWood de Re-Sound."
-faq: [{"question":"Le bois absorbe-t-il moins bien le son que le feutre PET ?","answer":"Pas dans nos gammes. rWood Groove et rWood Micro affichent tous deux un αw de 0,90 en classe A (ISO 11654), et le Micro grimpe à 1,00 dès qu'on place 50 mm de laine minérale derrière. Le rPET Panel de 12 mm couvre la même plage selon sa pose : αw 0,80 (classe B) sur 100 mm de lame d'air, 1,00 (classe A) sur 50 mm de lame d'air plus 50 mm de laine de roche. Le choix se joue sur l'aspect, la classe feu, le budget et l'argument environnemental."},{"question":"Peut-on associer panneaux PET et panneaux bois ?","answer":"Oui, et c'est souvent la meilleure réponse : bois sur le mur d'accent, feutre PET sur les longs murs et au plafond. Le rPET se fixe par colle, clips en Z, vis ou tasseaux ; le rWood Groove sur tasseaux ou collé ; le rWood Micro sur clips invisibles. Un panneau rPET peut même garnir la cavité derrière un rWood Groove. Nous reprenons les deux gratuitement en BE, NL, FR, DE et LU."},{"question":"Quel panneau est le plus durable ?","answer":"Le rPET Groove est entièrement fait de PET recyclé et certifié OEKO-TEX® Standard 100 ; le rWood n'utilise que des placages certifiés FSC. Les deux sortent de notre usine de Częstochowa et sont repris gratuitement en BE, NL, FR, DE et LU. Contenu recyclé : rPET. Surface renouvelable : rWood."}]
+faq: [{"question":"Le bois absorbe-t-il moins bien le son que le feutre PET ?","answer":"Pas dans nos gammes. rWood Groove et rWood Micro affichent tous deux un αw de 0,90 en classe A (ISO 11654), et le Micro grimpe à 1,00 dès qu'on place 50 mm de laine minérale derrière. Le rPET Panel de 12 mm couvre la même plage selon sa pose : classe B (αw 0,80) devant 100 mm de lame d'air, classe A (αw 1,00) devant 50 mm de lame d'air plus 50 mm de laine de roche. Le choix se joue sur l'aspect, la classe feu, le budget et l'argument environnemental."},{"question":"Peut-on associer panneaux PET et panneaux bois ?","answer":"Oui, et c'est souvent la meilleure réponse : bois sur le mur d'accent, feutre PET sur les longs murs et au plafond. Le rPET se fixe par colle, clips en Z, vis ou tasseaux ; le rWood Groove sur tasseaux ou collé ; le rWood Micro sur clips invisibles. Un panneau rPET peut même garnir la cavité derrière un rWood Groove. Nous reprenons les deux gratuitement en BE, NL, FR, DE et LU."},{"question":"Quel panneau est le plus durable ?","answer":"Le rPET Groove est entièrement fait de PET recyclé et certifié OEKO-TEX® Standard 100 ; le rWood n'utilise que des placages certifiés FSC. Les deux sortent de notre usine de Częstochowa et sont repris gratuitement en BE, NL, FR, DE et LU. Contenu recyclé : rPET. Surface renouvelable : rWood."}]
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 1958
+wordCount: 1955
 ---
 
 **En résumé : nos panneaux en feutre PET et nos panneaux en bois se valent acoustiquement (rWood Groove et rWood Micro à αw 0,90 en classe A, rPET Panel de 12 mm entre αw 0,80 et 1,00 selon la pose) ; le choix se fait donc sur l'aspect, la classe feu, le budget et l'argument environnemental, pas sur l'absorption.** Le [feutre PET](/fr/products/panneaux-acoustiques-pet) l'emporte pour la couleur, les visuels imprimés, les budgets serrés et les découpes sur place ; le [bois](/fr/products/panneaux-acoustiques-bois) pour la chaleur, les espaces d'accueil et, sur âme MDF ignifugée, la même classe B-s1,d0 que le rPET blanc, gris ou noir.
@@ -47,13 +47,13 @@ Le rPET Groove, découpé dans cette même plaque, n'est caractérisé que par u
 
 La classe B (αw entre 0,80 et 0,85) fait le gros du travail dans les bureaux, les écoles et les restaurants ; la classe A (αw 0,90 et plus) est le domaine du rWood Groove, du rWood Micro, d'Interior (notre panneau textile, αw 1,0) et du rPET Panel devant une cavité garnie de laine de roche. Le niveau à atteindre dépend des règles applicables au local : ISO 22955 pour un bureau ouvert, NBN S 01-400-2 pour une école belge. Vérifiez l'exigence exacte avec votre acousticien avant de fixer la classe.
 
-**Le calcul ne change pas d'un matériau à l'autre.** Prenons une salle de réunion de 20 m² (5 × 4 m) sous 2,8 m de hauteur, soit 56 m³, mesurée à 0,9 s et à ramener à 0,6 s pour des visioconférences intelligibles. Formule de Sabine, A = 0,161 × V / T : 0,161 × 56 = 9,02, à diviser par le temps de réverbération.
+**Le calcul ne change pas d'un matériau à l'autre.** Prenons une salle de réunion de 20 m² (5 × 4 m) sous 2,8 m de hauteur, soit 56 m³, mesurée à 0,9 s et à ramener à 0,6 s pour des visioconférences intelligibles. Selon Sabine, A = 0,161 × V / T : 0,161 × 56 = 9,02, à diviser par le temps de réverbération.
 
 - À 0,9 s : 9,02 / 0,9 = **10,0 m² Sabine** aujourd'hui
 - À 0,6 s : 9,02 / 0,6 = **15,0 m² Sabine** visés
 - Différence à combler : **5,0 m² Sabine**
 
-Avec le rPET Panel de 12 mm sur 100 mm de lame d'air (αw 0,80), il faut 5,0 / 0,80 = **6,3 m²**, soit deux plaques rPET Panel de 2 800 × 1 220 mm, c'est-à-dire 6,84 m². Avec le rWood Groove (αw 0,90), 5,0 / 0,90 = **5,6 m²** ; et 5,0 m² seulement avec le rPET Panel à αw 1,00 (50 mm d'air plus 50 mm de laine de roche). Le matériau change bien plus l'allure de la pièce et la facture que le nombre de panneaux.
+Avec le rPET Panel de 12 mm sur 100 mm de lame d'air (αw 0,80), il faut 5,0 / 0,80 = **6,3 m²**, soit deux plaques de 2 800 sur 1 220 mm, c'est-à-dire 6,84 m². Avec le rWood Groove (αw 0,90), 5,0 / 0,90 = **5,6 m²** ; et 5,0 m² seulement avec le rPET Panel à αw 1,00 (50 mm d'air plus 50 mm de laine de roche). Le matériau change bien plus l'allure de la pièce et la facture que le nombre de panneaux.
 
 ## Aspect et ambiance intérieure
 
@@ -95,7 +95,7 @@ Au mètre carré, le feutre PET est le plus économique et le bois plaqué le pr
 
 - **rPET Groove** : 3 à 4 semaines ouvrées environ ; coloris hors stock : délai sur demande.
 - **rWood Groove** : délai lié au stock, confirmé à la commande.
-- **rWood Micro et rWood Perf** : 3 à 4 semaines pour les placages de stock, 6 à 8 semaines pour les autres.
+- **rWood Micro et rWood Perf** : placages de stock en 3 à 4 semaines, autres placages en 6 à 8 semaines.
 
 Re-Sound est une marque du groupe Stretch, avec deux usines en propre : Beveren-Waas en Belgique et Częstochowa en Pologne. rPET et rWood viennent de Częstochowa, la gamme textile de Beveren-Waas, où la salle d'exposition permet de comparer les deux matériaux sur rendez-vous. Voyez [où acheter](/fr/where-to-buy) ou passez par le [formulaire de contact](/fr/contact).
 
@@ -117,7 +117,7 @@ Toujours indécis ? Demandez le kit d'échantillons gratuit et comparez les de
 ## Questions fréquentes
 
 **Le bois absorbe-t-il moins bien le son que le feutre PET ?**
-Pas dans nos gammes. rWood Groove et rWood Micro affichent tous deux un αw de 0,90 en classe A (ISO 11654), et le Micro grimpe à 1,00 dès qu'on place 50 mm de laine minérale derrière. Le rPET Panel de 12 mm couvre la même plage selon sa pose : αw 0,80 (classe B) sur 100 mm de lame d'air, 1,00 (classe A) sur 50 mm de lame d'air plus 50 mm de laine de roche. Le choix se joue sur l'aspect, la classe feu, le budget et l'argument environnemental.
+Pas dans nos gammes. rWood Groove et rWood Micro affichent tous deux un αw de 0,90 en classe A (ISO 11654), et le Micro grimpe à 1,00 dès qu'on place 50 mm de laine minérale derrière. Le rPET Panel de 12 mm couvre la même plage selon sa pose : classe B (αw 0,80) devant 100 mm de lame d'air, classe A (αw 1,00) devant 50 mm de lame d'air plus 50 mm de laine de roche. Le choix se joue sur l'aspect, la classe feu, le budget et l'argument environnemental.
 
 **Peut-on associer panneaux PET et panneaux bois ?**
 Oui, et c'est souvent la meilleure réponse : bois sur le mur d'accent, feutre PET sur les longs murs et au plafond. Le rPET se fixe par colle, clips en Z, vis ou tasseaux ; le rWood Groove sur tasseaux ou collé ; le rWood Micro sur clips invisibles. Un panneau rPET peut même garnir la cavité derrière un rWood Groove. Nous reprenons les deux gratuitement en BE, NL, FR, DE et LU.

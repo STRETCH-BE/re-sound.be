@@ -17,11 +17,11 @@ heroAlt: "Salle de restaurant avec panneaux muraux rWood Micro en chêne derriè
 internalLinks: ["https://stretchplafond.be/products/acoustic-stretch-system","/fr/products/rwood-micro","/fr/products/rwood-groove","/fr/products/rpet-groove","/fr/products/interior","/fr/products/divide","/fr/blog/combien-de-panneaux-acoustiques","/fr/products/panneaux-acoustiques-bois","/fr/where-to-buy"]
 cta: "Demandez une démonstration sur place ou le kit d'échantillons."
 sources: "ISO 3382-2 (mesure du temps de réverbération) ; ISO 11654 (classes d'absorption) ; EN 13501-1 (réaction au feu) ; W.C. Sabine (formule de réverbération) ; données produit et rapports d'essai Re-Sound."
-faq: [{"question":"Quels panneaux acoustiques conviennent à un restaurant ?","answer":"Pour le plafond, un plafond tendu acoustique ou des panneaux de plafond en PET ; pour les murs, rWood Micro ou Groove (bois) et rPET Groove (couleur) : le rWood en classe feu B-s1,d0 sur âme MDF ignifugée, le rPET en B-s1,d0 pour le blanc, le gris et le noir et en B-s2,d0 pour les autres teintes ; nous fournissons sur demande le rapport de classement pour votre dossier de sécurité incendie."},{"question":"De combien de panneaux un restaurant de 100 m² a-t-il besoin ?","answer":"Environ 35 m² de plafond absorbant plus 8 à 15 m² de panneaux muraux pour passer de 1,4 à 0,7 s. Après une mesure sur place, nous calculons la quantité exacte."},{"question":"La pose peut-elle se faire entre deux services ?","answer":"Un plafond tendu acoustique se pose en une journée sans poussière ; une équipe installe les panneaux muraux en une demi-journée ; les modules Divide ne demandent aucun montage."}]
+faq: [{"question":"Quels panneaux acoustiques conviennent à un restaurant ?","answer":"Pour le plafond, un plafond tendu acoustique ou des panneaux de plafond en PET ; pour les murs, rWood Micro ou Groove (bois) et rPET Groove (couleur) : le rWood en classe feu B-s1,d0 sur âme MDF ignifugée, le rPET en B-s1,d0 s'il est blanc, gris ou noir et en B-s2,d0 dans les autres teintes ; nous fournissons sur demande le rapport de classement pour votre dossier de sécurité incendie."},{"question":"De combien de panneaux un restaurant de 100 m² a-t-il besoin ?","answer":"Environ 35 m² de plafond absorbant plus 8 à 15 m² de panneaux muraux pour passer de 1,4 à 0,7 s. Après une mesure sur place, nous calculons la quantité exacte."},{"question":"La pose peut-elle se faire entre deux services ?","answer":"Un plafond tendu acoustique se pose en une journée sans poussière ; une équipe installe les panneaux muraux en une demi-journée ; les modules Divide ne demandent aucun montage."}]
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 1535
+wordCount: 1538
 ---
 
 **Dans un restaurant dont le temps de réverbération dépasse 1 seconde, les clients parlent plus fort, restent moins longtemps et le signalent dans leurs avis en ligne.** Des panneaux acoustiques au plafond et sur les murs derrière les banquettes ramènent la réverbération entre 0,6 et 0,8 seconde : les conversations restent à leur table, l'ambiance reste animée et la salle paraît pleine sans être bruyante. Cet article explique quel temps de réverbération convient à quel concept, où les panneaux sont les plus efficaces, ce que la classe feu impose dans l'horeca et ce qu'il faut prévoir pour une salle de 100 m².
@@ -40,7 +40,7 @@ Aucune exigence légale ne fixe le temps de réverbération d'un restaurant, mai
 | Brasserie, bistrot | 0,6 – 0,8 s |
 | Bar, food hall, salle de fête | 0,8 – 1,0 s (animé, mais où l'on se comprend à table) |
 
-Une salle non traitée, carrelée et vitrée, affiche souvent 1,2 à 1,6 s à vide. Les clients apportent leur propre absorption (comptez 0,4 à 0,5 m² Sabine par personne) : une salle à 0,8 s à vide tourne autour de 0,6 s une fois pleine. Dimensionnez pour la salle vide ; la salle pleine suivra.
+Une salle non traitée, carrelée et vitrée, affiche souvent 1,2 à 1,6 s à vide. Les clients apportent leur propre absorption (0,4 à 0,5 m² Sabine environ par client) : une salle à 0,8 s à vide tourne autour de 0,6 s une fois pleine. Dimensionnez pour la salle vide ; la salle pleine suivra.
 
 ## Le plafond d'abord
 
@@ -57,7 +57,7 @@ Les panneaux muraux donnent le ton et cassent les réflexions entre les longs mu
 
 - **[rWood Micro](/fr/products/rwood-micro)** : placage bois microperforé sur âme MDF ignifugée qui, à deux mètres, ressemble à un mur en bois lisse. αw 0,90 (classe A), classe feu B-s1,d0. Le choix des restaurants gastronomiques et d'hôtel.
 - **[rWood Groove](/fr/products/rwood-groove)** : placage chêne ou noyer rainuré sur lamelles MDF avec 3 mm de feutre PET recyclé au dos, αw 0,90 (classe A). Chaleur et rythme pour la brasserie et le bistrot.
-- **[rPET Groove](/fr/products/rpet-groove)** : feutre PET recyclé, dix teintes de stock (autres couleurs sur commande), NRC de 0,55 à 0,90 selon l'épaisseur, B-s1,d0 en blanc, en gris et en noir, B-s2,d0 pour les autres teintes ; pour les concepts colorés, ou derrière les banquettes là où le bois serait trop fragile.
+- **[rPET Groove](/fr/products/rpet-groove)** : feutre PET recyclé, dix teintes de stock (autres couleurs sur commande), NRC de 0,55 à 0,90 selon l'épaisseur, B-s1,d0 en blanc, en gris et en noir, B-s2,d0 dans les autres coloris ; pour les concepts colorés, ou derrière les banquettes là où le bois serait trop fragile.
 - **[Interior](/fr/products/interior)** : panneaux textiles à housse amovible et lavable (αw 1,0, classe A) pour les zones exposées aux taches.
 
 Placez les panneaux muraux à hauteur d'oreille des clients assis (0,9 à 1,8 m), surtout sur le mur derrière les banquettes et face au bar ou à la cuisine ouverte : c'est de là que vient le plus de bruit et c'est là qu'il se réfléchit le plus fort.
@@ -70,14 +70,14 @@ Quand plafond et murs sont traités et que les grandes tablées restent bruyante
 
 L'horeca est soumis à des règles incendie strictes, et les pompiers examinent les revêtements des murs et du plafond.
 
-- **Classe feu (EN 13501-1)** : la gamme rPET (Panel, Groove, Flex Groove) est classée B-s1,d0 (combustibilité limitée, peu de fumée, aucune gouttelette enflammée) en blanc, en gris et en noir, et B-s2,d0 pour les autres teintes ; la gamme rWood (Groove, Micro, Perf) est classée B-s1,d0 sur âme MDF ignifugée. Demandez toujours le rapport de classement et conservez-le dans votre dossier de sécurité incendie ; nous le fournissons sur demande.
+- **Classe feu (EN 13501-1)** : la gamme rPET (Panel, Groove, Flex Groove) est classée B-s1,d0 (combustibilité limitée, peu de fumée, aucune gouttelette enflammée) en blanc, en gris et en noir, et B-s2,d0 pour les autres teintes, tandis que la gamme rWood (Groove, Micro, Perf) est classée B-s1,d0 sur âme MDF ignifugée. Demandez toujours le rapport de classement et conservez-le dans votre dossier de sécurité incendie ; nous le fournissons sur demande.
 - **Graisse et humidité** : aucun panneau absorbant n'a sa place juste au-dessus d'une friteuse ou d'un gril. Au-dessus de la cuisine ouverte, un plafond tendu acoustique posé à distance convient mieux que des panneaux à proximité.
 - **Nettoyage** : le feutre PET s'aspire et se nettoie localement ; le bois s'entretient comme un meuble ; les housses Interior se lavent en machine. Un panneau abîmé se remplace individuellement.
-- **Émissions** : le rPET est certifié OEKO-TEX® Standard 100.
+- **Émissions** : certification OEKO-TEX® Standard 100 pour le rPET.
 
 ## Exemple chiffré pour 100 m²
 
-Salle de 12,5 × 8 m sous 3,2 m (320 m³), sol carrelé, beaucoup de vitrage, 50 couverts. Mesuré à vide : **1,4 s**. Objectif : **0,7 s** (brasserie).
+Salle de 12,5 × 8 m sous 3,2 m (320 m³), sol carrelé, beaucoup de vitrage, 50 couverts. Temps mesuré à vide : **1,4 s** ; valeur visée : **0,7 s** (brasserie).
 
 Avec la formule de Sabine (A = 0,161 × V / T) :
 
@@ -85,7 +85,7 @@ Avec la formule de Sabine (A = 0,161 × V / T) :
 - Absorption nécessaire = 0,161 × 320 / 0,7 = **73,6 m² Sabine**
 - Reste à apporter : **36,8 m² Sabine**
 
-Proposition : **35 m² de plafond** en classe A (αw 0,9 → 31,5 m² Sabine) plus **8 m² de rWood Micro** derrière les banquettes (à αw 0,90, environ 7,2 m² Sabine) = 38,7 m² Sabine. Salle pleine (50 clients, soit environ 22 m² Sabine de plus), la réverbération descend vers 0,5 s : un niveau digne de la gastronomie pendant le service, encore assez animé à l'apéritif. La méthode pas à pas se trouve dans [Combien de panneaux acoustiques faut-il ?](/fr/blog/combien-de-panneaux-acoustiques).
+Proposition : **35 m² de plafond** absorbant en classe A (αw 0,9, soit 31,5 m² Sabine) plus **8 m² de rWood Micro** derrière les banquettes (à αw 0,90, environ 7,2 m² Sabine) = 38,7 m² Sabine. Salle pleine (50 clients, soit environ 22 m² Sabine de plus), la réverbération descend vers 0,5 s : un niveau digne de la gastronomie pendant le service, encore assez animé à l'apéritif. La méthode pas à pas se trouve dans [Combien de panneaux acoustiques faut-il ?](/fr/blog/combien-de-panneaux-acoustiques).
 
 ## Phasage et budget
 
@@ -103,7 +103,7 @@ Délais de livraison depuis notre propre production : comptez 3 à 4 semaines 
 ## Questions fréquentes
 
 **Quels panneaux acoustiques conviennent à un restaurant ?**
-Pour le plafond, un plafond tendu acoustique ou des panneaux de plafond en PET ; pour les murs, rWood Micro ou Groove (bois) et rPET Groove (couleur) : le rWood en classe feu B-s1,d0 sur âme MDF ignifugée, le rPET en B-s1,d0 pour le blanc, le gris et le noir et en B-s2,d0 pour les autres teintes ; nous fournissons sur demande le rapport de classement pour votre dossier de sécurité incendie.
+Pour le plafond, un plafond tendu acoustique ou des panneaux de plafond en PET ; pour les murs, rWood Micro ou Groove (bois) et rPET Groove (couleur) : le rWood en classe feu B-s1,d0 sur âme MDF ignifugée, le rPET en B-s1,d0 s'il est blanc, gris ou noir et en B-s2,d0 dans les autres teintes ; nous fournissons sur demande le rapport de classement pour votre dossier de sécurité incendie.
 
 **De combien de panneaux un restaurant de 100 m² a-t-il besoin ?**
 Environ 35 m² de plafond absorbant plus 8 à 15 m² de panneaux muraux pour passer de 1,4 à 0,7 s. Après une mesure sur place, nous calculons la quantité exacte.

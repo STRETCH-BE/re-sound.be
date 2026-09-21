@@ -21,7 +21,7 @@ faq: [{"question": "Hur många akustikpaneler behöver jag för ett kontor på 1
 draft: false
 translationKey: "how-many-panels"
 model: "how-many-acoustic-panels-do-i-need"
-wordCount: 1636
+wordCount: 1652
 ---
 
 **Hur många akustikpaneler du behöver avgörs av tre tal: rummets volym, efterklangstiden du har i dag och efterklangstiden du vill nå.** Sabines formel gör om de tre talen till kvadratmeter absorption, och panelens αw gör om kvadratmetrarna till paneler. Här går vi igenom metoden, riktvärdena, klasserna i ISO 11654 och fyra räkneexempel: mötesrum, öppet kontor, restaurang och klassrum.

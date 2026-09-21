@@ -34,7 +34,7 @@ Les deux indices sortent du même essai : un grand échantillon dans une chamb
 
 **Le NRC (ASTM C423)** fait la moyenne des coefficients à 250, 500, 1 000 et 2 000 Hz, arrondie à 0,05. Une moyenne pardonne une bande faible, et les effets de bord en laboratoire peuvent pousser le NRC au-delà de 1,00.
 
-Ils ne sont pas interchangeables : le rWood Perf en motif PD8 donne αw 0,85 et NRC 0,90 ; le rPET Panel de 12 mm donne αw 1,00 et NRC 0,95 avec 50 mm d'air et 50 mm de laine de roche derrière, αw 0,80 et NRC 0,80 sur 100 mm de lame d'air. Certains produits n'en publient qu'un seul : le [rWood Groove](/fr/products/rwood-groove) affiche αw 0,90 sans NRC ; le [rPET Groove](/fr/products/rpet-groove), un NRC seulement (0,55 en 12 mm, 0,75 en 24 mm, 0,90 en 36 mm). Prescrivez un indice, nommez sa norme et ne convertissez jamais.
+Ils ne sont pas interchangeables : le rWood Perf en motif PD8 donne αw 0,85 et NRC 0,90 ; le rPET Panel de 12 mm donne αw 1,00 et NRC 0,95 avec 50 mm d'air et 50 mm de laine de roche derrière, αw 0,80 et NRC 0,80 sur 100 mm de lame d'air. Certains produits n'en publient qu'un seul : le [rWood Groove](/fr/products/rwood-groove) affiche αw 0,90 sans NRC ; le [rPET Groove](/fr/products/rpet-groove), un NRC seulement (0,55 pour 12 mm, 0,75 pour 24 mm et 0,90 pour 36 mm). Prescrivez un indice, nommez sa norme et ne convertissez jamais.
 
 ## Ce que signifient les classes A, B et C
 
@@ -58,11 +58,11 @@ Le rapport d'essai indique comment l'échantillon était monté, et l'indice ne 
 | 50 mm d'air + 50 mm de laine de roche | 1,00 | A |
 | 100 mm d'air + 100 mm de laine de roche | 0,95 | A |
 
-Une valeur obtenue avec lame d'air ne sera pas reproduite par un panneau collé sur une plaque de plâtre ; la clause doit mentionner la valeur et sa condition de pose ensemble. Nos [gammes en bois](/fr/products/panneaux-acoustiques-bois) ajoutent une seconde condition : le rWood Groove (αw 0,90, classe A) intègre son feutre de 3 mm, se pose sur tasseaux ou se colle et, monté sur tasseaux, accepte derrière lui un feutre acoustique, un panneau rPET ou de la laine minérale ; le [rWood Micro](/fr/products/rwood-micro), lui aussi à αw 0,90 en classe A, se fixe sur clips devant une cavité et atteint 1,00 avec 50 mm de laine minérale. Prescrivez donc la cavité et ce qui la remplit.
+Une valeur obtenue avec lame d'air ne sera pas reproduite par un panneau collé sur une plaque de plâtre ; la clause doit mentionner la valeur et sa condition de pose ensemble. Nos [gammes en bois](/fr/products/panneaux-acoustiques-bois) ajoutent une seconde condition : le rWood Groove (αw 0,90, classe A) intègre son feutre de 3 mm, se fixe sur tasseaux ou se colle et, monté sur tasseaux, accepte derrière lui un feutre acoustique, un panneau rPET ou de la laine minérale ; le [rWood Micro](/fr/products/rwood-micro), lui aussi à αw 0,90 en classe A, se fixe sur clips devant une cavité et atteint 1,00 avec 50 mm de laine minérale. Prescrivez donc la cavité et ce qui la remplit.
 
 ## Pourquoi les conditions de laboratoire comptent : un exemple chiffré
 
-Les valeurs de laboratoire viennent d'un grand échantillon posé uniformément dans un champ diffus ; dans une pièce réelle, les panneaux ne couvrent qu'une fraction des surfaces, et l'indice sert de base de calcul, pas de garantie. Prenons une salle de réunion de 56 m³ (5 m sur 4 sous 2,8 m de plafond), mesurée à 0,9 s, avec une cible de 0,6 s. Formule de Sabine : A = 0,161 × V / T.
+Les valeurs de laboratoire viennent d'un grand échantillon posé uniformément dans un champ diffus ; dans une pièce réelle, les panneaux ne couvrent qu'une fraction des surfaces, et l'indice sert de base de calcul, pas de garantie. Prenons une salle de réunion de 56 m³ (5 m sur 4 sous 2,8 m de plafond), mesurée à 0,9 s, avec une cible de 0,6 s. D'après Sabine, A = 0,161 × V / T.
 
 | Temps | Calcul | Absorption (m² Sabine) |
 |---|---|---|
@@ -74,9 +74,9 @@ Les valeurs de laboratoire viennent d'un grand échantillon posé uniformément 
 
 ## Feu, émissions et circularité
 
-**Réaction au feu, EN 13501-1.** B-s1,d0 signifie contribution limitée au feu, peu de fumée (s1) et aucune gouttelette enflammée (d0). Notre gamme rPET est B-s1,d0 dans les teintes blanche, grise et noire et B-s2,d0 dans les autres (la classe dépend de la couleur, en version Standard comme en version FR) ; rWood Micro et rWood Perf sont B-s1,d0 sur âme MDF ignifugée, le rWood Groove B-s1,d0 sur âme ignifugée et D-s2,d2 sur âme standard ; reprenez la classe de la fiche technique pour la composition retenue. Vérifiez l'exigence exacte avec votre acousticien, et la classe feu avec le conseiller en prévention incendie.
+**Réaction au feu, EN 13501-1.** B-s1,d0 signifie contribution limitée au feu, peu de fumée (s1) et aucune gouttelette enflammée (d0). Notre gamme rPET est B-s1,d0 dans les teintes blanche, grise et noire et B-s2,d0 dans les autres (la classe est fonction de la couleur, que la version soit Standard ou FR) ; rWood Micro et rWood Perf sont B-s1,d0 sur âme MDF ignifugée, le rWood Groove B-s1,d0 sur âme ignifugée et D-s2,d2 sur âme standard ; reprenez la classe de la fiche technique pour la composition retenue. Vérifiez l'exigence exacte avec votre acousticien, et la classe feu avec le conseiller en prévention incendie.
 
-**Émissions et matières.** Pour le feutre, exigez la certification OEKO-TEX® Standard 100 ; notre rPET la possède. Pour le bois, exigez un placage certifié FSC ; le rWood n'utilise que des placages certifiés FSC.
+**Émissions et matières.** Pour le feutre, exigez la certification OEKO-TEX® Standard 100 ; notre rPET la possède. Pour le bois, exigez un placage certifié FSC ; chez Re-Sound, tous les placages rWood le sont.
 
 **Contenu recyclé et reprise.** Indiquez le contenu recyclé minimal et la filière de fin de vie. Le rPET Groove ne contient que du PET recyclé, et tous nos panneaux sont repris gratuitement au Luxembourg, en Allemagne, en France, aux Pays-Bas et en Belgique (voir [développement durable](/fr/sustainability)). Re-Sound, marque du groupe Stretch, fabrique dans ses propres usines de Beveren-Waas (Belgique) et de Częstochowa (Pologne).
 

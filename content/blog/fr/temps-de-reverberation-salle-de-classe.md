@@ -21,7 +21,7 @@ faq: [{"question":"Quel temps de réverbération est obligatoire dans une salle 
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 1509
+wordCount: 1512
 ---
 
 **Dans une salle de classe, le temps de réverbération détermine si les élèves comprennent l'enseignant et si celui-ci a encore de la voix à 16 h.** En Belgique, la norme NBN S 01-400-2 impose des temps de réverbération maximaux dans les bâtiments scolaires ; pour une classe ordinaire, cela revient en pratique à 0,6 à 0,8 seconde environ, alors qu'un local non traité, avec plâtre, vitrage et carrelage, dépasse souvent la seconde. Cet article explique ce que demande la norme, comment mesurer, combien d'absorption prévoir et quelles solutions résistent à dix années scolaires.
@@ -44,7 +44,7 @@ Pour une classe standard de 180 à 250 m³, l'exigence se situe en pratique entr
 
 Une mesure selon ISO 3382-2 prend une demi-heure par local : une brève impulsion ou un bruit, un microphone à quelques positions, et un relevé par bande d'octave de 125 à 4 000 Hz. Ce qu'elle vous apprend et qu'une estimation ne dira jamais :
 
-- **Par fréquence** : beaucoup de locaux résonnent surtout dans les graves, où les panneaux minces ont peu d'effet. On choisit alors des panneaux plus épais ou une lame d'air.
+- **Par fréquence** : beaucoup de locaux résonnent surtout dans les graves, où les panneaux minces ont peu d'effet. On choisit alors des panneaux plus épais ou l'on prévoit une lame d'air.
 - **Vide ou meublé** : la norme évalue le local meublé. Armoires, tables et rideaux comptent, mais moins qu'on ne l'espère.
 - **Avant et après** : une mesure avant les travaux et une autre après constituent la preuve pour la direction et le pouvoir organisateur et, dans un dossier de subvention, pour l'autorité subsidiante.
 
@@ -67,7 +67,7 @@ Proposition : **30 m² de plafond absorbant** en classe A (αw 0,9), soit 27 m
 Une école n'est pas un bureau : on s'appuie contre les murs, on traîne les chaises, on manie des éponges mouillées. Nos recommandations par zone :
 
 - **Le plafond d'abord.** Un [plafond tendu acoustique](https://stretchplafond.be/products/acoustic-stretch-system) (sans joint, posé en une journée par notre société sœur STRETCH) ou des panneaux de plafond en PET recyclé éliminent l'essentiel de la réverbération sans occuper de surface murale.
-- **Mur du fond et mur latéral.** [rPET Groove](/fr/products/rpet-groove) : dix coloris en stock (toute autre teinte sur commande), 12 / 24 / 36 mm (NRC de 0,55 à 0,90), classe feu B-s1,d0 en blanc, gris et noir, B-s2,d0 pour les autres coloris ; il se découpe comme un panneau de menuiserie et se remplace panneau par panneau. À hauteur d'oreille des élèves, pas au-dessus des armoires.
+- **Mur du fond et mur latéral.** [rPET Groove](/fr/products/rpet-groove) : dix coloris en stock et n'importe quelle teinte sur commande, 12 / 24 / 36 mm (NRC de 0,55 à 0,90), classe feu B-s1,d0 en blanc, gris et noir, B-s2,d0 pour les autres coloris ; il se découpe comme un panneau de menuiserie et se remplace panneau par panneau. À hauteur d'oreille des élèves, pas au-dessus des armoires.
 - **Classes maternelles et locaux de soins.** [Interior](/fr/products/interior) : panneaux textiles modulaires (αw 1,0, classe A) à housse amovible et lavable.
 - **Réfectoire, auditorium et salle polyvalente.** [rWood Micro](/fr/products/rwood-micro) : un placage bois microperforé en classe feu B-s1,d0, assez prestigieux pour l'auditorium et assez absorbant pour le réfectoire.
 - **Espaces d'apprentissage ouverts.** [Divide](/fr/products/divide) : parois autoportantes à assemblage magnétique qui délimitent des zones d'apprentissage sans construire de murs.
@@ -76,8 +76,8 @@ Une école n'est pas un bureau : on s'appuie contre les murs, on traîne les c
 
 Dans un bâtiment scolaire, la classe feu et la qualité de l'air intérieur comptent autant que l'acoustique :
 
-- **Classe feu (EN 13501-1)** : la gamme rPET (Panel, Groove, Flex Groove) obtient B-s1,d0 (combustibilité limitée, peu de fumée, aucune gouttelette enflammée) en blanc, gris et noir, et B-s2,d0 dans les autres coloris ; la gamme rWood (Groove, Micro, Perf) obtient B-s1,d0 sur âme MDF ignifugée.
-- **Émissions** : le feutre rPET est certifié OEKO-TEX® Standard 100.
+- **Classe feu (EN 13501-1)** : toute la gamme rPET (Panel, Groove, Flex Groove) obtient B-s1,d0 en blanc, gris et noir (combustibilité limitée, peu de fumée, aucune gouttelette enflammée) et B-s2,d0 dans les autres coloris ; la gamme rWood (Groove, Micro, Perf) obtient B-s1,d0 sur âme MDF ignifugée.
+- **Émissions** : le rPET porte la certification OEKO-TEX® Standard 100.
 - **Entretien** : le [feutre PET](/fr/products/panneaux-acoustiques-pet) s'aspire et se traite localement en cas de tache ; les housses Interior passent en machine. Un panneau abîmé se remplace à l'unité, sans repeindre le mur.
 - **Provenance** : le placage de chaque produit rWood est certifié FSC®, certificat de chaîne de contrôle C191539.
 
@@ -87,7 +87,7 @@ La plupart des écoles font poser l'acoustique pendant les vacances d'été. Com
 
 1. **Mesure et proposition** au printemps ; approbation par la direction et le pouvoir organisateur.
 2. **Cahier des charges** : pour chaque produit, nous fournissons un texte de prescription avec αw, classe, classe feu, format, épaisseur et matériau, utilisable dans un marché sans mention de marque.
-3. **Commande avant fin mai** : rPET livré en 3 à 4 semaines ouvrées environ (coloris sur mesure : délai sur demande) ; rWood Micro et Perf en placages de stock en 3 à 4 semaines, hors stock en 6 à 8 semaines ; délai du rWood Groove confirmé à la commande.
+3. **Commande avant fin mai** : rPET livré en 3 à 4 semaines ouvrées environ (coloris sur mesure : délai sur demande) ; rWood Micro et Perf : 3 à 4 semaines en placages de stock, 6 à 8 semaines hors stock ; délai du rWood Groove confirmé à la commande.
 4. **Pose** en juillet, mesure en août, prêt pour septembre.
 
 En fin de vie, ou lors d'une rénovation, nous reprenons les panneaux gratuitement en Allemagne, au Luxembourg, en Belgique, en France et aux Pays-Bas ; la matière repart dans notre production. Re-Sound, marque du groupe Stretch, produit dans ses usines de Beveren-Waas (Belgique) et de Częstochowa (Pologne).
