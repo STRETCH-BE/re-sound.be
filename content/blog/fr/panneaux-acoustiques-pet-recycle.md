@@ -3,7 +3,7 @@ id: "BP-008"
 slug: "panneaux-acoustiques-pet-recycle"
 locale: "fr"
 title: "Panneaux acoustiques PET recyclé : atouts, pose, prix | Re-Sound"
-description: "Panneaux acoustiques en PET recyclé : absorption selon le montage, feu B-s1,d0 ou B-s2,d0 selon la couleur, OEKO-TEX, découpe, impression UV, pose clips ou colle, prix face au bois."
+description: "Panneaux acoustiques en PET recyclé : absorption selon le montage, classe feu selon la couleur, OEKO-TEX, pose par clips ou colle, prix face au bois."
 h1: "Panneaux acoustiques en PET recyclé : avantages, pose et prix"
 keyword: "panneaux acoustiques pet recyclé"
 secondaryKeywords: ["panneau acoustique pet","feutre pet acoustique","panneaux acoustiques recyclés","panneau acoustique pet ou bois"]

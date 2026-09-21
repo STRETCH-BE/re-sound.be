@@ -3,7 +3,7 @@ id: "BP-specifying-aw-nrc-es"
 slug: "especificar-paneles-acusticos-aw-nrc-clase-a"
 locale: "es"
 title: "Especificar paneles acústicos: αw, NRC y clase A | Re-Sound"
-description: "Prescripción de paneles acústicos: αw (ISO 11654) frente a NRC (ASTM C423), clases A/B/C, condición de montaje, fuego B-s1,d0, documentos y lista de control."
+description: "Prescripción de paneles acústicos: αw (ISO 11654) frente a NRC (ASTM C423), clases A/B/C, montaje, fuego B-s1,d0, documentos y lista de control."
 h1: "Cómo especificar paneles acústicos: αw, NRC y clase A explicados para arquitectos"
 keyword: "especificación de paneles acústicos"
 secondaryKeywords: ["αw frente a nrc","paneles acústicos clase a","cláusula de prescripción acústica","clase de absorción iso 11654"]

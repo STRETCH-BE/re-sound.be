@@ -3,7 +3,7 @@ id: "BP-specifying-aw-nrc-sv"
 slug: "foreskriva-akustikpaneler-aw-nrc-klass-a"
 locale: "sv"
 title: "Föreskriva akustikpaneler: αw, NRC och klass A | Re-Sound"
-description: "Så föreskriver du akustikpaneler: αw (ISO 11654) mot NRC (ASTM C423), klass A/B/C, montering, brandklass B-s1,d0, dokument och en checklista att klistra in."
+description: "Så föreskriver du akustikpaneler: αw (ISO 11654) mot NRC (ASTM C423), klass A/B/C, montering, brandklass B-s1,d0, dokument och checklista att klistra in."
 h1: "Att föreskriva akustikpaneler: så läser du αw, NRC och klass A"
 keyword: "föreskriva akustikpaneler"
 secondaryKeywords: ["αw eller nrc","ljudabsorptionsklass a","iso 11654 ljudabsorption","akustikpaneler beskrivningstext","akustikpaneler arkitekt"]

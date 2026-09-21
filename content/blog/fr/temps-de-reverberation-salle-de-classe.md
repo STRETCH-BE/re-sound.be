@@ -3,7 +3,7 @@ id: "BP-classroom-reverberation-fr"
 slug: "temps-de-reverberation-salle-de-classe"
 locale: "fr"
 title: "Temps de réverbération en classe : norme et solutions | Re-Sound"
-description: "Que demande la NBN S 01-400-2 pour la réverbération d'une classe, comment mesurer et combien d'absorption prévoir ? Calcul et solutions qui tiennent à l'école."
+description: "Que demande la NBN S 01-400-2 pour la réverbération d'une classe, comment la mesurer et combien d'absorption prévoir ? Calcul et solutions qui durent."
 h1: "Temps de réverbération dans les salles de classe : normes, mesures et solutions"
 keyword: "temps de réverbération salle de classe norme"
 secondaryKeywords: ["acoustique salle de classe","NBN S 01-400-2 réverbération","panneaux acoustiques école","réverbération école solution"]

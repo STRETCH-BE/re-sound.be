@@ -3,7 +3,7 @@ id: "BP-007"
 slug: "cabine-acoustique-bureau-prix"
 locale: "fr"
 title: "Cabine acoustique bureau prix : guide d'achat 2026 | Re-Sound"
-description: "Combien coûte une cabine acoustique de bureau ? Solo Flex dès {{price:solo-flex}} hors TVA. Classes ISO 23351-1, ventilation, placement et délais, par le fabricant."
+description: "Combien coûte une cabine acoustique de bureau ? Solo Flex dès {{price:solo-flex}} hors TVA. Classes ISO 23351-1, ventilation, placement et délais."
 h1: "Cabine acoustique de bureau : prix, choix et placement (2026)"
 keyword: "cabine acoustique bureau prix"
 secondaryKeywords: ["cabine téléphonique de bureau prix","phone box bureau prix","cabine acoustique 1 personne","acheter cabine acoustique bureau"]

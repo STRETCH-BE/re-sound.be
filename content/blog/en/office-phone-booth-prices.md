@@ -3,7 +3,7 @@ id: "BP-015"
 slug: "office-phone-booth-prices"
 locale: "en"
 title: "Office phone booth prices and ISO 23351-1 classes | Re-Sound"
-description: "Office phone booth prices: Solo Flex from {{price:solo-flex}} excl. VAT. Plus ISO 23351-1 classes, ventilation, placement and lead time, from the manufacturer."
+description: "Office phone booth prices: Solo Flex from {{price:solo-flex}} excl. VAT. Plus ISO 23351-1 classes, ventilation, placement and lead time."
 h1: "Office phone booth prices and ISO 23351-1 classes explained (2026)"
 keyword: "office phone booth prices"
 secondaryKeywords: ["acoustic phone booth price","office phone booth cost","privacy pod price","meeting pod cost"]

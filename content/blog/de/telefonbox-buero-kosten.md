@@ -3,7 +3,7 @@ id: "BP-011"
 slug: "telefonbox-buero-kosten"
 locale: "de"
 title: "Telefonbox Büro: Kosten und Klassen 2026 | Re-Sound"
-description: "Was kostet eine Telefonbox fürs Büro? Solo Flex ab {{price:solo-flex}} zzgl. MwSt. Dazu ISO-23351-1-Klassen, Lüftung, Aufstellung und Lieferzeit – vom Hersteller."
+description: "Was kostet eine Telefonbox fürs Büro? Solo Flex ab {{price:solo-flex}} zzgl. MwSt. Dazu ISO-23351-1-Klassen, Lüftung, Aufstellung und Lieferzeit."
 h1: "Telefonbox fürs Büro: Kosten, Klassen und Aufstellung (2026)"
 keyword: "telefonbox büro kosten"
 secondaryKeywords: ["telefonbox büro preis","akustikkabine büro kosten","telefonzelle fürs büro kaufen","raum-in-raum system preis"]

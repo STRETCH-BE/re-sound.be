@@ -3,7 +3,7 @@ id: "BP-012"
 slug: "akustikpaneele-recyceltes-pet"
 locale: "de"
 title: "Akustikpaneele aus recyceltem PET: Vorteile & Preise | Re-Sound"
-description: "Akustikpaneele aus recyceltem PET: Absorption je nach Montage, B-s1,d0 oder B-s2,d0 je nach Farbe, OEKO-TEX, 12/24/36 mm, UV-Druck, Clip- oder Klebemontage, Lieferzeit, Preis gegenüber Holz."
+description: "Akustikpaneele aus recyceltem PET: Absorption je nach Montage, Brandklasse je nach Farbe, OEKO-TEX, UV-Druck, Lieferzeit und Preis gegenüber Holz."
 h1: "Akustikpaneele aus recyceltem PET: Vorteile, Montage und Preise"
 keyword: "akustikpaneele recyceltes pet"
 secondaryKeywords: ["pet akustikpaneele","akustikpaneele pet filz","recycelte akustikpaneele","akustikpaneele pet oder holz"]

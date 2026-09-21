@@ -3,7 +3,7 @@ id: "BP-office-reverberation-norm-fr"
 slug: "temps-de-reverberation-bureau-norme"
 locale: "fr"
 title: "Temps de réverbération au bureau : norme et calcul | Re-Sound"
-description: "Quel temps de réverbération viser au bureau ? La méthode DIN 18041 en référence, ISO 22955 et ISO 3382-3 pour l'open space, deux calculs et les mesures à prendre."
+description: "Quel temps de réverbération viser au bureau ? DIN 18041 en référence, ISO 22955 et ISO 3382-3 pour l'open space, deux calculs et les mesures à prendre."
 h1: "Temps de réverbération au bureau : quelle norme, quel calcul, quelles mesures ?"
 keyword: "temps de réverbération bureau norme"
 secondaryKeywords: ["réverbération bureau","din 18041 bureau","iso 22955 bureau ouvert","temps de réverbération open space"]

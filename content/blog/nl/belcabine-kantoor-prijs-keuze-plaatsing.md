@@ -3,7 +3,7 @@ id: "BP-001"
 slug: "belcabine-kantoor-prijs-keuze-plaatsing"
 locale: "nl"
 title: "Belcabine kantoor: prijs, keuze en plaatsing in 2026 | Re-Sound"
-description: "Wat kost een belcabine voor kantoor? Solo ECO vanaf {{price:solo-eco}} excl. btw, Solo Flex vanaf {{price:solo-flex}}. Plus negen concurrentprijzen en de ISO 23351-1-klassen."
+description: "Wat kost een belcabine? Solo ECO vanaf {{price:solo-eco}}, Solo Flex vanaf {{price:solo-flex}} excl. btw, plus negen concurrentprijzen en de ISO-klassen."
 h1: "Belcabine voor kantoor: prijs, keuze en plaatsing (2026)"
 keyword: "belcabine kantoor prijs"
 secondaryKeywords: ["belcel prijs","telefooncabine kantoor kopen","akoestische telefooncel prijs","belcabine kopen"]
