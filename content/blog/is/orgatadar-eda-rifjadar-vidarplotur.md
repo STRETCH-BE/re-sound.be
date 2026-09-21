@@ -21,7 +21,7 @@ faq: [{"question":"Ísogar örgötuð viðarplata verr en rifjuð?","answer":"Ne
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "holz-akustikpaneele-mikroperforiert-oder-genutet"
-wordCount: 1597
+wordCount: 1596
 ---
 
 **Örgataðar og rifjaðar hljóðdeyfiplötur úr viði ísoga jafn vel: rWood Groove og rWood Micro ná báðar αw 0,90, það er flokki A samkvæmt ISO 11654, og rWood Micro nær allt að 1,00 með 50 mm steinull í holrúminu. Þú velur því eftir uppbyggingu, útliti, brunaflokki, framleiðslutíma og fjárhag.** Hér er leiðarvísirinn með tölum fyrir [rWood Groove](/is/products/rwood-groove) (rifjuð) og [rWood Micro](/is/products/rwood-micro) (örgötuð), reiknidæmi eftir Sabine og ákvörðunartöflu.
@@ -54,7 +54,7 @@ Veitingasalur 15 × 10 m með 3,5 m lofthæð er **525 m³**; flísalagt gólf o
 
 Tillaga: **55 m² af ísogandi lofti í flokki A** (αw 0,90 → 55 × 0,90 = 49,5 m² Sabine) og **15 m² af rWood Micro** fyrir aftan bekkina, smellt á brautir með holrúmi að baki (αw 0,90 → 15 × 0,90 = 13,5 m² Sabine), samtals 49,5 + 13,5 = **63,0 m² Sabine**. Fyrir loftið skaltu biðja um prófunarskýrslu fyrir það kerfi sem valið er, svo sem [hljóðdeyfandi strekkiloft](https://stretchplafond.be/products/acoustic-stretch-system) frá STRETCH, systurfyrirtæki okkar. Með 50 mm steinull í holrúminu færu þessir 15 m² af rWood Micro upp í 15,0 m² Sabine (αw 1,00): þar sést munurinn á stakri plötu og heilu kerfi.
 
-Plötur lækka óminn í rýminu, en símtal sem berst yfir opið skrifstofurými stöðva þær ekki; fyrir slík rými gefa ISO 22955 og ISO 3382-3 stefnuna, og lausnin er [símaklefi](/is/products/acoustic-phone-booths) eins og [Solo Flex](/is/products/solo-flex): frá {{price:solo-flex}} án VSK og án uppsetningar; flutning til Íslands og uppsetningu setjum við í tilboð.
+Plötur lækka óminn í rýminu, en símtal sem berst yfir opið skrifstofurými stöðva þær ekki; fyrir slík rými gefa ISO 22955 og ISO 3382-3 stefnuna, og lausnin er [símaklefi](/is/products/acoustic-phone-booths) eins og [Solo Flex](/is/products/solo-flex): frá {{price:solo-flex}} án VSK og uppsetningar; flutning til Íslands og uppsetningu setjum við í tilboð.
 
 ## Útlit og innrétting: línutaktur eða rólegur viðarflötur
 
