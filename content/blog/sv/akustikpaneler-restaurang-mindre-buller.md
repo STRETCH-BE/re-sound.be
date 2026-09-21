@@ -21,7 +21,7 @@ faq: [{"question":"Vilka akustikpaneler passar i en restaurang?","answer":"I tak
 draft: false
 translationKey: "restaurant-acoustics"
 model: "akoestische-panelen-restaurant"
-wordCount: 0
+wordCount: 1242
 ---
 
 **I en restaurang med en efterklangstid över 1 sekund pratar gästerna högre, stannar kortare och skriver om det i sin recension.** Akustikpaneler i taket och på väggarna bakom sofforna tar ner efterklangen till 0,6 till 0,8 sekunder: samtalen stannar vid bordet, stämningen förblir levande och lokalen låter full utan att vara högljudd. Den här artikeln går igenom vilken efterklangstid som passar vilket koncept, var panelerna ger mest, vad brandklassen kräver i serveringslokaler och vad en matsal på 100 m² behöver.

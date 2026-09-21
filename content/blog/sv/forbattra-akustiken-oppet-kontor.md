@@ -21,7 +21,7 @@ faq: [{"question":"Vad är en bra efterklangstid för ett öppet kontor?","answe
 draft: false
 translationKey: "open-office-acoustics"
 model: "akoestiek-open-kantoor-verbeteren"
-wordCount: 0
+wordCount: 1416
 ---
 
 Ett öppet kontor blir inte högljutt av illvilja utan av hårda ytor och för många människor som vill göra sig hörda samtidigt. **Nästan alltid löser du akustiken med en kombination av tre saker: tillföra absorption (tak och väggar), skärma av zoner (skärmväggar och bås) och komma överens om var man ringer och håller möten.** Här är de sju åtgärder som vi på Re-Sound ser fungera i praktiken, i den ordning som ger mest effekt per krona.

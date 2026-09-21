@@ -3,7 +3,7 @@ id: "BP-booth-prices-no"
 slug: "telefonboks-til-kontor-priser-og-klasser"
 locale: "no"
 title: "Telefonboks til kontor: priser og ISO 23351-1-klasser | Re-Sound"
-description: "Hva koster en telefonboks til kontoret? Solo ECO fra {{price:solo-eco}}, Solo Flex fra {{price:solo-flex}} eks. mva. Pluss ISO 23351-1-klassene og levering."
+description: "Hva koster en telefonboks til kontoret? Solo ECO fra {{price:solo-eco}}, Solo Flex fra {{price:solo-flex}} eks. mva. Pluss ISO 23351-1-klassene."
 h1: "Telefonboks til kontoret: hva den koster, og hva klassene i ISO 23351-1 betyr (2026)"
 keyword: "telefonboks kontor pris"
 secondaryKeywords: ["akustisk telefonboks pris","stillerom kontor pris","møteboks pris","lydboks kontor","kjøpe telefonboks"]
@@ -21,10 +21,10 @@ faq: [{"question":"Hva koster en telefonboks til kontoret i 2026?","answer":"Hos
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 1400
+wordCount: 1656
 ---
 
-**En [telefonboks til kontoret](/no/products/acoustic-phone-booths) fra Re-Sound starter på {{price:solo-eco}} eks. mva. for [Solo ECO](/no/products/solo-eco) og {{price:solo-flex}} eks. mva. for [Solo Flex](/no/products/solo-flex), begge uten transport og montering.** Solo ECO er innstegsmodellen for én person, med ståbord, ventilasjon og stikkontakt inkludert; Solo Flex legger til hev-senk-bord, kraftigere ventilasjon og en målt akustisk klasse. Under går vi gjennom hva prisen dekker, hvordan du velger størrelse, hva klassene i ISO 23351-1 betyr, og hva du bør sjekke før du bestiller. Skrevet av produsenten, ikke av en forhandler.
+**En [telefonboks til kontoret](/no/products/acoustic-phone-booths) fra Re-Sound starter på {{price:solo-eco}} eks. mva. for [Solo ECO](/no/products/solo-eco) og {{price:solo-flex}} eks. mva. for [Solo Flex](/no/products/solo-flex), begge uten transport og montering.** Solo ECO er innstegsmodellen for én person, med ståbord, ventilasjon og stikkontakt inkludert; Solo Flex legger til hev-senk-bord, kraftigere ventilasjon og en målt akustisk klasse. Under går vi gjennom hva prisen dekker, hvordan du velger størrelse, hva klassene i ISO 23351-1 betyr, og hva du bør sjekke før du bestiller.
 
 ## Hva koster en telefonboks i 2026?
 
@@ -38,7 +38,7 @@ I september 2026 lå de publiserte prisene for en boks til én person hos tre ko
 | Solo Flex | Re-Sound | {{price:solo-flex}} eks. mva. uten montering · montering {{price:article:WEB-SOLO-FLEX-INST}} |
 | Boks til én person | Konkurrent 3 | 9.320 € eks. mva. |
 
-Transport på det europeiske fastlandet er en fast sum per modell, {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} for Solo ECO og {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} for Solo Flex; for adresser utenfor fastlandet får du transportprisen sammen med ordrebekreftelsen. Konkurrentprisene står i euro, slik leverandørene selv publiserer dem.
+Transport på det europeiske fastlandet er en fast sum per modell, {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} for Solo ECO og {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} for Solo Flex; for adresser utenfor fastlandet får du transportprisen sammen med ordrebekreftelsen.
 
 At vi kan ligge i den nedre halvdelen av tabellen, skyldes at vi bygger boksene selv. Re-Sound er et merke i Stretch Group, med egne fabrikker i Beveren-Waas i Belgia og Częstochowa i Polen; telefonboksene kommer fra fabrikken i Częstochowa.
 
@@ -46,11 +46,11 @@ Trenger du plass til to, starter [Duo](/no/products/duo) på {{price:duo}} eks. 
 
 ## Hva som er med i prisen, og hva som ikke er det
 
-**Solo ECO, {{price:solo-eco}} eks. mva.:** 1,1 m² fotavtrykk (105 × 108 cm utvendig, 208 cm høy), fast ståbord på 95 × 30 cm, én 230 V-stikkontakt med USB-A og USB-C, ventilasjon opptil 4 m³/min, 8 mm emaljert akustisk glass, beige filt innvendig og hvitt (RAL 9016) utvendig, og fem års garanti på reservedeler. Én utførelse, med døren hengslet til venstre.
+**Solo ECO, {{price:solo-eco}} eks. mva.:** 1,1 m² fotavtrykk (105 × 108 cm utvendig, 208 cm høy), fast ståbord på 95 × 30 cm, én 230 V-stikkontakt med USB-A og USB-C, ventilasjon opptil 4 m³/min, 8 mm emaljert akustisk glass og fem års garanti på reservedeler. Én utførelse: hvit med beige filt.
 
-**Solo Flex, {{price:solo-flex}} eks. mva.:** 1 m² fotavtrykk (102 × 102 cm, 226 cm høy), integrert hev-senk-bord, fire EC-vifter som skifter ut 4,6 m³ luft i minuttet og styres av en PIR-bevegelsessensor, 230 V-uttak med USB-C (60 W) og USB-A, LED-belysning på samme sensor, 10 mm laminert akustisk glass, valgfri utvendig farge, filtfarge og hengsling av døren, og 24 dB(A) talenivåreduksjon målt etter ISO 23351-1. Garanti: fem år på ramme og karosseri, to år på elektronikk og slitedeler.
+**Solo Flex, {{price:solo-flex}} eks. mva.:** 1 m² fotavtrykk (102 × 102 cm, 226 cm høy), integrert hev-senk-bord, fire EC-vifter som skifter ut 4,6 m³ luft i minuttet og styres av en PIR-bevegelsessensor, 230 V-uttak med USB-C (60 W) og USB-A, LED-belysning på samme sensor, 10 mm laminert akustisk glass og 24 dB(A) talenivåreduksjon målt etter ISO 23351-1. Garanti: fem år på ramme og karosseri, to år på elektronikk og slitedeler.
 
-Utenfor prisen ligger transporten og monteringen, begge faste beløp per modell. To personer setter sammen Solo Flex på under tre timer, eller teamet vårt gjør det på omtrent én time for {{price:article:WEB-SOLO-FLEX-INST}} eks. mva. Rullestoltilgang er ikke standard på noen av boksene, men kan tilpasses på forespørsel; spesialstoff eller -finish på Solo Flex legger to til tre uker til leveringstiden.
+Utenfor prisen ligger transporten og monteringen, begge faste beløp per modell. To personer setter sammen Solo Flex på under tre timer, eller teamet vårt gjør det på omtrent én time for {{price:article:WEB-SOLO-FLEX-INST}} eks. mva. Rullestoltilgang er ikke standard på noen av boksene, men kan tilpasses på forespørsel.
 
 ## Hvilken størrelse: 1, 2 eller 4–10 personer
 
@@ -80,7 +80,7 @@ Be alle leverandører om testrapporten etter ISO 23351-1.
 
 ## Ventilasjon, lys og strøm
 
-Etter akustikken er det ventilasjonen som avgjør om boksen blir brukt: en innestengt boks ender med døren på gløtt. Alle Re-Sounds bokser er ventilert; de elektriske modellene bruker stillegående EC-vifter.
+Etter akustikken er det ventilasjonen som avgjør om boksen blir brukt: en innestengt boks ender med døren på gløtt.
 
 - **Luftskifte**: Solo Flex omslutter høyst 1,02 × 1,02 × 2,26 = 2,35 m³ (utvendige mål); ved 4,6 m³/min skiftes den luften ut hvert 2,35 / 4,6 = 0,51 minutt, altså omtrent hvert halve minutt.
 - **Styring**: én PIR-sensor slår på vifter og LED-lys når du går inn.
@@ -97,7 +97,7 @@ Etter akustikken er det ventilasjonen som avgjør om boksen blir brukt: en innes
 
 ## Boks eller paneler? Et regneeksempel
 
-En telefonboks løser problemet med én person som snakker; den korter ikke ned etterklangen i hele landskapet. Det er jobben til akustikkpaneler. ISO 22955 (akustisk kvalitet i åpne kontorlandskap) og ISO 3382-3 (hvordan tale avtar med avstanden) gir retningen, og i Norge er NS 8175 referansen for lydforhold i bygninger; sjekk det nøyaktige kravet med akustikeren din.
+En telefonboks løser problemet med én person som snakker; den korter ikke ned etterklangen i hele landskapet. Det er jobben til akustikkpaneler. ISO 22955 og ISO 3382-3 gir retningen, og i Norge er NS 8175 referansen for lydforhold i bygninger; sjekk det nøyaktige kravet med akustikeren din.
 
 Ta et landskap på 240 m² med 3 m takhøyde, altså 720 m³, målt etterklangstid 1,2 s og mål 0,7 s. Sabines formel A = 0,161 × V / T gir:
 
@@ -115,7 +115,7 @@ Solo ECO produseres **fire uker** etter bekreftet bestilling og sendes fra fabri
 
 Ved endt levetid kan boksen selges videre eller demonteres for gjenvinning; alle materialene kan resirkuleres. Den gratis returordningen vår for bokser og paneler gjelder bare i Belgia, Nederland, Frankrike, Tyskland og Luxembourg, ikke i Norge.
 
-Solo Flex, Duo og Modular XL står i showrommet vårt i Beveren-Waas, mandag til fredag 08:00–16:30 etter avtale; se [hvor du kjøper](/no/where-to-buy). Be om tilbud på Solo ECO eller Solo Flex via [kontaktsiden](/no/contact); vi svarer med pris, leveringstid og monteringsalternativ for adressen din.
+Solo Flex, Duo og Modular XL står i showrommet vårt i Beveren-Waas, mandag til fredag 08:00–16:30 etter avtale; se [hvor du kjøper](/no/where-to-buy). Be om tilbud på Solo ECO eller Solo Flex via [kontaktsiden](/no/contact).
 
 ## Ofte stilte spørsmål
 

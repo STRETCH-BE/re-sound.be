@@ -21,7 +21,7 @@ faq: [{"question":"Absorberer tre dårligere enn PET-filt?","answer":"Ikke i vå
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 1400
+wordCount: 1574
 ---
 
 **Kort svar: PET-filt- og trepanelene våre ligger i samme absorpsjonsbånd (rWood Groove og rWood Micro αw 0,90, klasse A; 12 mm rPET Panel αw 0,80 til 1,00 avhengig av monteringen), så du velger etter utseende, brannklasse, budsjett og bærekraft, ikke etter akustikken.** [PET-filt](/no/products/pet-acoustic-panels) er valget for farge, egen grafikk, stramme budsjetter og kapping på byggeplassen; [tre](/no/products/wood-acoustic-panels) for varme, representative rom og, på den brannhemmende MDF-kjernen, samme brannklasse B-s1,d0 som rPET i hvitt, grått og svart.

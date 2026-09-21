@@ -3,7 +3,7 @@ id: "BP-recycled-pet-panels-no"
 slug: "akustikkpaneler-av-resirkulert-pet"
 locale: "no"
 title: "Akustikkpaneler av resirkulert PET: fordeler og pris | Re-Sound"
-description: "Akustikkpaneler av resirkulert PET: absorpsjon etter montering, B-s1,d0 eller B-s2,d0 etter farge, OEKO-TEX, 12/24/36 mm, UV-trykk, montering og pris mot tre."
+description: "Akustikkpaneler av resirkulert PET: absorpsjon etter montering, B-s1,d0 eller B-s2,d0 etter farge, OEKO-TEX, 12/24/36 mm, UV-trykk og pris mot tre."
 h1: "Akustikkpaneler av resirkulert PET: fordeler, montering og pris"
 keyword: "akustikkpaneler resirkulert pet"
 secondaryKeywords: ["pet akustikkpaneler","akustikkpaneler pet-filt","resirkulerte akustikkpaneler","akustikkpaneler pet eller tre","filtpaneler akustikk"]
@@ -17,11 +17,11 @@ heroAlt: "Akustikkpanelet rPET Groove i grå resirkulert PET-filt, nærbilde av 
 internalLinks: ["/no/products/pet-acoustic-panels","/no/products/rpet-groove","/no/products/rpet-panel","/no/products/interior","/no/products/acoustic-phone-booths","/no/products/solo-flex","/no/sustainability","/no/where-to-buy","/no/products/rwood-micro","/no/products/wood-acoustic-panels","/no/contact","https://stretchplafond.be/products/acoustic-stretch-system"]
 cta: "Be om rPET-prøvesettet eller et tilbud per m² for rommet ditt."
 sources: "ISO 11654 (lydabsorpsjonsklasser); EN 13501-1 (reaksjon på brann); OEKO-TEX Standard 100; FSC; W.C. Sabine (etterklangsformel); DIN 18041 (den tyske standardens metode, brukt som referanse); ISO 22955; NS 8175 (norsk referanse); datablad og testrapporter fra Re-Sound for rPET og rWood."
-faq: [{"question":"Absorberer et akustikkpanel av resirkulert PET like godt som ett i tre?","answer":"Ja, når monteringen er riktig. 12 mm-platen rPET Panel når αw 0,80 (klasse B etter ISO 11654) på 100 mm luftspalte og αw 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull; for rPET Groove med spor er NRC oppgitt: 0,55 / 0,75 / 0,90 ved 12 / 24 / 36 mm. rWood Groove og rWood Micro når begge αw 0,90 (klasse A), rWood Micro opptil 1,00 med 50 mm mineralull i hulrommet. Forskjellen ligger i oppbygging, utseende, budsjett og leveringstid, ikke i materialet."},{"question":"Hvilken tykkelse bør jeg velge: 12, 24 eller 36 mm?","answer":"For rPET Groove stiger absorpsjonen med tykkelsen: NRC 0,55 ved 12 mm, 0,75 ved 24 mm og 0,90 ved 36 mm. For den glatte platen rPET Panel (12 mm) er det først og fremst monteringen som avgjør: αw 0,25 (klasse D) rett på veggen, 0,60 (klasse C) på 50 mm luftspalte, 0,80 (klasse B) på 100 mm luftspalte og 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull. Tykkere panel og luft bak bedrer de lave frekvensene; 12 mm velger du når plassen er knapp eller panelet skal bygges inn i møbler. Hvilken etterklangstid rommet ditt trenger, avhenger av standarden som legges til grunn, i Norge NS 8175; sjekk det nøyaktige kravet med akustikeren din."},{"question":"Hvordan monteres PET-akustikkpaneler, og kan de trykkes på?","answer":"Med lim, Z-klips, skruer eller på lekter; klips og skruer lar deg ta panelet ned igjen, lim er for den permanente monteringen. På stedet kapper du filten med kniv, sirkelsag, platesag eller vinkelsliper med metallskive; den kan males, og Re-Sound UV-trykker rPET-paneler i eget hus, så logoer, skilting og motiver er mulig. Leveringstiden er omtrent 3–4 arbeidsuker."}]
+faq: [{"question":"Absorberer et akustikkpanel av resirkulert PET like godt som ett i tre?","answer":"Ja, når monteringen er riktig. 12 mm-platen rPET Panel når αw 0,80 (klasse B etter ISO 11654) på 100 mm luftspalte og αw 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull; for rPET Groove med spor er NRC oppgitt: 0,55 / 0,75 / 0,90 ved 12 / 24 / 36 mm. rWood Groove og rWood Micro når begge αw 0,90 (klasse A), rWood Micro opptil 1,00 med 50 mm mineralull i hulrommet. Forskjellen ligger i oppbygging, utseende, budsjett og leveringstid, ikke i materialet."},{"question":"Hvilken tykkelse bør jeg velge: 12, 24 eller 36 mm?","answer":"For rPET Groove stiger absorpsjonen med tykkelsen: NRC 0,55 ved 12 mm, 0,75 ved 24 mm og 0,90 ved 36 mm. For den glatte platen rPET Panel (12 mm) er det først og fremst monteringen som avgjør: αw 0,25 (klasse D) rett på veggen, 0,60 (klasse C) på 50 mm luftspalte, 0,80 (klasse B) på 100 mm luftspalte og 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull. 12 mm velger du når plassen er knapp eller panelet skal bygges inn i møbler. Hvilken etterklangstid rommet trenger, sier standarden som gjelder, i Norge NS 8175; sjekk det nøyaktige kravet med akustikeren din."},{"question":"Hvordan monteres PET-akustikkpaneler, og kan de trykkes på?","answer":"Med lim, Z-klips, skruer eller på lekter; klips og skruer lar deg ta panelet ned igjen, lim er for den permanente monteringen. På stedet kapper du filten med kniv, sirkelsag, platesag eller vinkelsliper med metallskive; den kan males, og Re-Sound UV-trykker rPET-paneler i eget hus, så logoer, skilting og motiver er mulig. Leveringstiden er omtrent 3–4 arbeidsuker."}]
 draft: false
 translationKey: "recycled-pet-panels"
 model: "akustikpaneele-recyceltes-pet"
-wordCount: 1400
+wordCount: 1725
 ---
 
 **Et akustikkpanel av resirkulert PET er en filtplate presset av brukte PET-flasker. Den absorberer tale (12 mm-platen rPET Panel når αw 0,80, klasse B etter ISO 11654, på 100 mm luftspalte, og αw 1,00, klasse A, på 50 mm luftspalte med 50 mm steinull), lar seg kappe og male som en snekkerplate, kan UV-trykkes og festes med lim, klips, skruer eller på lekter, til en kvadratmeterpris under finert tre.** Her er fakta om rPET-serien vår, fra oppbygging til sammenligningen med tre.
@@ -30,7 +30,7 @@ wordCount: 1400
 
 PET er plasten i vann- og brusflasker. Etter innsamling blir flaskene sortert, vasket, kvernet, smeltet til fibre og presset varmt til en tett plate: PET-filten. [rPET](/no/products/pet-acoustic-panels)-serien vår består utelukkende av resirkulert PET; fiberen er bærer, synlig overflate og absorbent på én gang, uten vev og uten finer.
 
-To familier hos Re-Sound: [rPET Groove](/no/products/rpet-groove), med spor, i ti lagerfarger og alle farger på bestilling, i bredder på 600 og 1.200 mm og tykkelser på 12, 24 og 36 mm; og [rPET Panel](/no/products/rpet-panel), den glatte helplaten i 9 og 12 mm, på 2.800 × 1.220 mm (3,42 m²) eller 2.440 × 1.220 mm (2,98 m²), der absorpsjonen avhenger av monteringen: αw 0,25 (klasse D) rett på veggen, opptil 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull (målt på 12 mm etter EN ISO 354).
+To familier hos Re-Sound: [rPET Groove](/no/products/rpet-groove), med spor, i ti lagerfarger og alle farger på bestilling, i 12, 24 og 36 mm; og [rPET Panel](/no/products/rpet-panel), den glatte helplaten i 9 og 12 mm, på 2.800 × 1.220 mm (3,42 m²) eller 2.440 × 1.220 mm (2,98 m²), der absorpsjonen avhenger av monteringen: αw 0,25 (klasse D) rett på veggen, opptil 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull.
 
 ## Slik absorberer PET-filten lyd
 
@@ -44,7 +44,7 @@ Lyden trenger inn i filten, setter fibrene i bevegelse og mister energien sin de
 | 50 mm luftspalte + 50 mm steinull | 1,00 | A |
 | 100 mm luftspalte + 100 mm steinull | 0,95 | A |
 
-Monteringen avgjør. **rPET Groove** i 12, 24 og 36 mm oppgis med NRC 0,55 / 0,75 / 0,90; absorpsjonen stiger med tykkelsen, men noen αw eller ISO 11654-klasse er ikke publisert for Groove, så regn med rPET Panel og monteringen. En luftspalte bak panelet bedrer dessuten absorpsjonen i de lave frekvensene.
+Monteringen avgjør. **rPET Groove** i 12, 24 og 36 mm oppgis med NRC 0,55 / 0,75 / 0,90; absorpsjonen stiger med tykkelsen, men noen αw eller ISO 11654-klasse er ikke publisert for Groove, så regn med rPET Panel og monteringen.
 
 Klasse A (αw ≥ 0,90) får du med rPET Panel på 50 mm luftspalte med 50 mm steinull (αw 1,00) eller med tekstilserien vår [Interior](/no/products/interior) (αw 1,0). I de fleste kontorer, skoler og serveringssteder holder klasse B; det avgjørende er hvor mange m² som monteres, hvordan og hvor. Hvilken etterklangstid rommet ditt trenger, følger av standarden som legges til grunn: i Norge NS 8175 for lydforhold i bygninger, for åpne kontorlandskap ISO 22955. Sjekk det nøyaktige kravet med akustikeren din.
 
@@ -66,13 +66,13 @@ Paneler demper etterklangen, ikke telefonsamtalen som bærer gjennom kontorlands
 
 ## Brannsikkerhet og utslipp: B-s1,d0 og OEKO-TEX
 
-I skoler og offentlige bygg er reaksjon på brann etter EN 13501-1 som regel et absolutt krav. Klassifiseringen av rPET-serien vår avhenger av fargen: hvitt, grått og svart er **B-s1,d0** (lite bidrag til brannen, lite røyk (s1), ingen brennende dråper (d0)), alle andre farger **B-s2,d0**; det gjelder Standard- så vel som FR-versjonen. Klassifiseringsrapporter får du på forespørsel. Hvilken klasse byggeprosjektet ditt krever, avhenger av regelverk og bruk; sjekk det nøyaktige kravet med akustikeren din og brannrådgiveren.
+I skoler og offentlige bygg er reaksjon på brann etter EN 13501-1 som regel et absolutt krav. Klassifiseringen av rPET-serien vår avhenger av fargen: hvitt, grått og svart er **B-s1,d0** (lite bidrag til brannen, lite røyk (s1), ingen brennende dråper (d0)), alle andre farger **B-s2,d0**; det gjelder Standard- så vel som FR-versjonen. Hvilken klasse byggeprosjektet ditt krever, avhenger av regelverk og bruk; sjekk det nøyaktige kravet med akustikeren din og brannrådgiveren.
 
-For inneluften er rPET-filten sertifisert etter **OEKO-TEX Standard 100**, testsystemet for skadelige stoffer i tekstiler.
+For inneluften er rPET-filten sertifisert etter **OEKO-TEX Standard 100**.
 
 ## Kapping, maling, UV-trykk og montering
 
-På byggeplassen kappes et rPET-panel **med kniv, sirkelsag, platesag eller vinkelsliper med metallskive**; snekkeren bygger det inn i møbler, disker eller skillevegger og tilpasser utsparinger på stedet. Fresing på CNC gir former, utskjæringer, spor og V-kutt for foldede hjørner.
+På byggeplassen kappes et rPET-panel **med kniv, sirkelsag, platesag eller vinkelsliper med metallskive**; snekkeren bygger det inn i møbler, disker eller skillevegger og tilpasser utsparinger på stedet.
 
 Filten kan **males** når en nøyaktig husfarge er påkrevd, med vann- eller løsemiddelbasert maling. Og Re-Sound **UV-trykker rPET-paneler** i eget hus: logoer, skilting, motiver, etter tilbud.
 
@@ -91,7 +91,7 @@ Leveringstider fra fabrikk:
 - **rWood Micro**: 3–4 uker for lagerfinerer, 6–8 uker for finerer utenfor lagerprogrammet.
 - **rWood Groove**: avhengig av lagerbeholdningen; leveringstiden bekreftes ved bestilling.
 
-Re-Sound er et merke i Stretch Group. Vi produserer i egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen); rPET-panelene kommer fra den polske fabrikken, levert EXW Częstochowa, og frakt til Norge avtales på forespørsel.
+Re-Sound er et merke i Stretch Group. Vi produserer i egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen); rPET-panelene kommer fra den polske fabrikken; frakt til Norge avtales på forespørsel.
 
 Kvadratmeterprisen avhenger av tykkelse, farge, trykk og mengde og oppgis i tilbud, eks. mva. Resirkulert PET ligger likevel klart under finert tre for samme areal. Til orientering: tekstilserien vår Interior starter på {{price:interior}} eks. mva. per sett. Send oss kvadratmeterne dine, eller ta kontakt med en [forhandler](/no/where-to-buy) i nærheten.
 
@@ -127,7 +127,7 @@ Ofte er svaret begge deler: tre på veggen folk ser på, PET alle andre steder. 
 Ja, når monteringen er riktig. 12 mm-platen rPET Panel når αw 0,80 (klasse B etter ISO 11654) på 100 mm luftspalte og αw 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull; for rPET Groove med spor er NRC oppgitt: 0,55 / 0,75 / 0,90 ved 12 / 24 / 36 mm. rWood Groove og rWood Micro når begge αw 0,90 (klasse A), rWood Micro opptil 1,00 med 50 mm mineralull i hulrommet. Forskjellen ligger i oppbygging, utseende, budsjett og leveringstid, ikke i materialet.
 
 **Hvilken tykkelse bør jeg velge: 12, 24 eller 36 mm?**
-For rPET Groove stiger absorpsjonen med tykkelsen: NRC 0,55 ved 12 mm, 0,75 ved 24 mm og 0,90 ved 36 mm. For den glatte platen rPET Panel (12 mm) er det først og fremst monteringen som avgjør: αw 0,25 (klasse D) rett på veggen, 0,60 (klasse C) på 50 mm luftspalte, 0,80 (klasse B) på 100 mm luftspalte og 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull. Tykkere panel og luft bak bedrer de lave frekvensene; 12 mm velger du når plassen er knapp eller panelet skal bygges inn i møbler. Hvilken etterklangstid rommet ditt trenger, avhenger av standarden som legges til grunn, i Norge NS 8175; sjekk det nøyaktige kravet med akustikeren din.
+For rPET Groove stiger absorpsjonen med tykkelsen: NRC 0,55 ved 12 mm, 0,75 ved 24 mm og 0,90 ved 36 mm. For den glatte platen rPET Panel (12 mm) er det først og fremst monteringen som avgjør: αw 0,25 (klasse D) rett på veggen, 0,60 (klasse C) på 50 mm luftspalte, 0,80 (klasse B) på 100 mm luftspalte og 1,00 (klasse A) på 50 mm luftspalte med 50 mm steinull. 12 mm velger du når plassen er knapp eller panelet skal bygges inn i møbler. Hvilken etterklangstid rommet trenger, sier standarden som gjelder, i Norge NS 8175; sjekk det nøyaktige kravet med akustikeren din.
 
 **Hvordan monteres PET-akustikkpaneler, og kan de trykkes på?**
 Med lim, Z-klips, skruer eller på lekter; klips og skruer lar deg ta panelet ned igjen, lim er for den permanente monteringen. På stedet kapper du filten med kniv, sirkelsag, platesag eller vinkelsliper med metallskive; den kan males, og Re-Sound UV-trykker rPET-paneler i eget hus, så logoer, skilting og motiver er mulig. Leveringstiden er omtrent 3–4 arbeidsuker.

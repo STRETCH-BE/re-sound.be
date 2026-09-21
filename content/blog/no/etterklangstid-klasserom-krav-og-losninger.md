@@ -21,7 +21,7 @@ faq: [{"question":"Hvilken etterklangstid kreves i et klasserom?","answer":"I No
 draft: false
 translationKey: "classroom-reverberation"
 model: "nagalmtijd-klaslokaal-normen"
-wordCount: 1291
+wordCount: 1293
 ---
 
 **I et klasserom avgjør etterklangstiden om elevene forstår læreren, og om læreren fortsatt har stemme igjen klokka 16.** I Norge er NS 8175 referansen for lydforhold i skolebygg; som størrelsesorden ber den belgiske standarden NBN S 01-400-2 om omtrent 0,6 til 0,8 sekunder for et vanlig klasserom, mens et ubehandlet rom med gips, glass og flisgulv ofte ligger over 1 sekund. Denne artikkelen forklarer hva standardene ser på, hvordan du måler, hvor mye absorpsjon du trenger og hvilke løsninger som holder i ti skoleår.
@@ -54,9 +54,9 @@ Vi måler på forespørsel; for et første overslag holder det med rommets mål.
 
 Klasserom på 8 × 7 m, 3,2 m høyt (179 m³), flisgulv, gipshimling, én glassvegg. Målt: **1,2 s**. Mål: **0,6 s**.
 
-Med Sabines formel (A = 0,161 × V / T):
+Sabines formel gir, med A = 0,161 × V / T:
 
-- Absorpsjon i dag: 0,161 × 179 m³ / 1,2 s = **24 m² Sabine**
+- Absorpsjon nå: 0,161 × 179 m³ / 1,2 s = **24 m² Sabine**
 - Absorpsjon ved målet: 0,161 × 179 m³ / 0,6 s = **48 m² Sabine**
 - Må legges til: **24 m² Sabine**
 
@@ -76,7 +76,7 @@ En skole er ikke et kontor: elevene lener seg mot veggen, skyver på stolene og 
 
 For skolebygg er brannklassen og inneluften like viktige som akustikken:
 
-- **Brannklasse (EN 13501-1)**: rPET-serien (Panel, Groove, Flex Groove) er B-s1,d0 i hvitt, grått og svart og B-s2,d0 i de andre fargene – begrenset bidrag til brann, lite røyk, ingen brennende dråper; rWood-serien (Groove, Micro, Perf) er B-s1,d0 på den brannhemmende MDF-kjernen. Sjekk det nøyaktige kravet med akustikeren eller brannrådgiveren din.
+- **Brannklasse (EN 13501-1)**: hvite, grå og svarte rPET-paneler (Panel, Groove og Flex Groove) er klassifisert B-s1,d0, de øvrige fargene B-s2,d0; det vil si begrenset bidrag til brann, lite røykutvikling og ingen brennende dråper. rWood Groove, Micro og Perf oppnår B-s1,d0 på den brannhemmende MDF-kjernen. Sjekk det nøyaktige kravet med akustikeren eller brannrådgiveren din.
 - **Utslipp**: rPET er OEKO-TEX® Standard 100-sertifisert.
 - **Vedlikehold**: [PET-filt](/no/products/pet-acoustic-panels) støvsuger du og flekkbehandler lokalt; trekkene på Interior går i vaskemaskinen. Skadde paneler bytter du enkeltvis, uten å male veggen på nytt.
 - **Opprinnelse**: fineret på alle rWood-produkter er FSC®-sertifisert, chain-of-custody-sertifikat C191539.
@@ -87,10 +87,10 @@ De fleste skoler monterer akustikk i sommerferien. Regn bakover fra første skol
 
 1. **Måling og forslag** om våren; godkjenning hos skoleeier.
 2. **Beskrivelsestekst**: for hvert produkt leverer vi en beskrivelsestekst med αw, klasse, brannklasse, format, tykkelse og materiale, slik at anbudet kan skrives uten merkenavn.
-3. **Bestilling i god tid før ferien**: produksjonstiden for rPET er omtrent 3 til 4 arbeidsuker (spesialfarger på forespørsel); rWood Micro og Perf i lagerfiner 3 til 4 uker, andre finertyper 6 til 8 uker; leveringstiden for rWood Groove bekrefter vi ved bestilling. Frakt og leveringstid til Norge avtaler vi på forespørsel.
+3. **Bestilling i god tid før ferien**: produksjonstiden for rPET er omtrent 3 til 4 arbeidsuker (spesialfarger på forespørsel); rWood Micro og Perf i lagerfiner 3 til 4 uker, andre finertyper 6 til 8 uker; for rWood Groove bekreftes leveringstiden når du bestiller. Frakt og leveringstid til Norge avtaler vi på forespørsel.
 4. **Montering** i ferien, kontrollmåling før skolestart.
 
-Ved endt levetid, eller ved ombygging, tar vi panelene gratis i retur i Belgia, Nederland, Frankrike, Tyskland og Luxembourg, der materialet går tilbake i produksjonen vår; i Norge gjelder returordningen ikke. Re-Sound er et merke i Stretch Group og produserer i egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).
+Ved endt levetid, eller ved ombygging, tar vi panelene gratis i retur i Belgia, Nederland, Frankrike, Tyskland og Luxembourg, der materialet går tilbake i produksjonen vår; i Norge gjelder returordningen ikke. Re-Sound tilhører Stretch Group, og alt lages i konsernets egne fabrikker i Beveren-Waas (Belgia) og Częstochowa (Polen).
 
 **Klar til å komme i gang?** Be om prøvesettet (A4-prøver av hver serie; frakt og leveringstid til Norge på forespørsel) og beskrivelsestekstene til prosjektet ditt, eller book et besøk i [showrommet](/no/where-to-buy) i Beveren-Waas.
 

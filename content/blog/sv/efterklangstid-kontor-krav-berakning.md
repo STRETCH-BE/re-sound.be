@@ -21,10 +21,10 @@ faq: [{"question":"Vilken efterklangstid ska ett kontor ha?","answer":"I Sverige
 draft: false
 translationKey: "office-reverberation-norm"
 model: "din-18041-nachhallzeit-buero"
-wordCount: 1512
+wordCount: 1502
 ---
 
-**Det finns ingen enskild siffra som gäller alla kontor: i Sverige styr SS 25268 ljudklassningen av lokaler, och det exakta värdet för ditt rum ger din akustiker. Som referensmetod använder vi den tyska standarden DIN 18041, som härleder börvärdet ur rumsvolymen: för mötes- och konferensrum (kategori A, grupp A3) gäller T = 0,32·lg(V) − 0,17 s, cirka 0,39 s vid 56 m³, medan öppna kontorslandskap planeras som kategori B via förhållandet mellan absorptionsyta och rumsvolym, kompletterat av VDI 2569 och ISO 22955.** Nedan båda beräkningarna och åtgärderna som hör till.
+**Det finns ingen enskild siffra som gäller alla kontor: i Sverige styr SS 25268 ljudklassningen av lokaler, och det exakta värdet för ditt rum ger din akustiker. Som referensmetod använder vi den tyska standarden DIN 18041, som härleder börvärdet ur rumsvolymen: för mötes- och konferensrum (kategori A, grupp A3) gäller T = 0,32·lg(V) − 0,17 s, cirka 0,39 s vid 56 m³, medan öppna kontorslandskap planeras som kategori B via förhållandet mellan absorptionsyta och rumsvolym, kompletterat av VDI 2569 och ISO 22955.** Nedan båda beräkningarna och åtgärderna.
 
 ## Vad DIN 18041 reglerar: hörbarhet i kategori A och B
 
@@ -90,11 +90,11 @@ Enbart med väggpaneler, rPET Panel 12 mm på 100 mm luftspalt med αw 0,80, sku
 
 **4. Telefonbås för samtal och videomöten.** Samtal ute på ytan stör mest; mot det hjälper ett [telefonbås](/sv/products/acoustic-phone-booths). Ett bås som [Solo Flex](/sv/products/solo-flex) tar 1 m², ventilerar med 4,6 m³/min och dämpar talnivån med cirka 24 dB(A), klass C enligt ISO 23351-1. Från {{price:solo-flex}} exkl. moms utan montering; montering av vårt team {{price:article:WEB-SOLO-FLEX-INST}}, frakt inom det europeiska fastlandet {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, båda exkl. moms; ett bås per åtta till tio arbetsplatser. För två personer: [Duo](/sv/products/duo) från {{price:duo}} exkl. moms.
 
-**5. Mötespoddar.** Saknas mötesrum landar mötena ute på ytan. [Modular XL](/sv/products/modular-xl) är ett rum-i-rum-system för sex till tio personer, utbyggbart i element om 90 cm, med 25,9 dB(A) talnivåreduktion (klass C), från {{price:modular-xl}} exkl. moms utan montering (montering av vårt team {{price:article:WEB-MODULAR-XL-INST}} för grundmodulen plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element; frakt inom det europeiska fastlandet {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}}, allt exkl. moms), fristående uppställt.
+**5. Mötespoddar.** Saknas mötesrum landar mötena på ytan. [Modular XL](/sv/products/modular-xl) är ett rum-i-rum-system för sex till tio personer, utbyggbart i element om 90 cm, med 25,9 dB(A) talnivåreduktion (klass C), från {{price:modular-xl}} exkl. moms utan montering (montering av vårt team {{price:article:WEB-MODULAR-XL-INST}} för grundmodulen plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element; frakt inom det europeiska fastlandet {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}}, allt exkl. moms), fristående uppställt.
 
 ## Tillverkning, leveranstid och återtag
 
-Re-Sound är ett av Stretch Groups varumärken, med egen tillverkning i Beveren-Waas i Belgien och Częstochowa i Polen. rPET Groove levererar vi på ungefär 3 till 4 arbetsveckor, bås i standardkonfiguration på 4 till 6 veckor. Monteringen gör du själv (två personer, under tre timmar för Solo Flex) eller låter vårt team göra den (cirka en timme per enkelbås, två per mötespodd, två till sex för Modular XL). Akustikpaneler tar vi tillbaka kostnadsfritt i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg, och bara där: ett kontor i Sverige omfattas inte av det kostnadsfria återtaget. Bås går att sälja vidare eller demontera och återvinna.
+Re-Sound är ett av Stretch Groups varumärken, med egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen). rPET Groove levererar vi på ungefär 3 till 4 arbetsveckor, bås i standardkonfiguration på 4 till 6 veckor. Montering: själv (två personer, under tre timmar för Solo Flex) eller av vårt team (cirka en timme per enkelbås, två per mötespodd, två till sex för Modular XL). Akustikpaneler tar vi tillbaka kostnadsfritt i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg, och bara där: ett kontor i Sverige omfattas inte av det kostnadsfria återtaget. Bås går att sälja vidare eller demontera och återvinna.
 
 **Var står ditt kontor akustiskt?** Skicka oss planritning och takhöjd via [kontaktsidan](/sv/contact); du får en första absorptionsberäkning och ett kostnadsfritt provpaket. Bås och paneler står i vår showroom i Beveren-Waas; återförsäljare hittar du under [Var du köper](/sv/where-to-buy).
 
