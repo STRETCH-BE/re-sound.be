@@ -21,7 +21,7 @@ faq: [{"question": "Absorberar trä sämre än PET-filt?", "answer": "Inte i vå
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 1595
+wordCount: 1594
 ---
 
 **Kort svar: våra akustikpaneler i PET-filt och trä ligger i samma absorptionsspann (rWood Groove och rWood Micro αw 0,90, klass A; rPET Panel 12 mm αw 0,80 till 1,00 beroende på montering), så valet handlar om utseende, brandklass, budget och hållbarhetsprofil, inte om akustik.** [PET-filt](/sv/products/pet-acoustic-panels) väljer du för kulör, egen grafik, snäva budgetar och kapning på plats; [trä](/sv/products/wood-acoustic-panels) för värme och representativa ytor, och på den brandhämmande MDF-kärnan får du samma brandklass B-s1,d0 som rPET har i vitt, grått och svart.
@@ -32,7 +32,7 @@ wordCount: 1595
 
 **Akustikpaneler i trä** är ett äkta träfaner på en kärna. Ett slutet faner reflekterar ljud, så ytan måste öppnas: spår ([rWood Groove](/sv/products/rwood-groove)), perforeringar ([rWood Perf](/sv/products/rwood-perf)) eller mikroperforeringar ([rWood Micro](/sv/products/rwood-micro)) släpper ljudet genom ytan in i det absorberande skiktet bakom. Träet är ansiktet utåt; absorbenten gör jobbet.
 
-Båda når samma klass: rWood Groove och rWood Micro har αw 0,90, klass A. rWood Groove har sin egen 3 mm filt av återvunnen PET på baksidan, sätts på reglar eller limmas, och hålrummet bakom kan vid behov fyllas med ytterligare en absorbent: akustikfilt, en rPET-skiva eller mineralull. rWood Micro clipsas på skenor med ett hålrum bakom och når αw 1,00 med 50 mm mineralull. PET-filt absorberar av sig själv, men hur mycket beror på monteringen: rPET Panel 12 mm mäter αw 0,25 direkt mot vägg, 0,80 med 100 mm spalt och 1,00 med 50 mm spalt plus 50 mm stenull.
+Båda når samma klass: rWood Groove och rWood Micro har αw 0,90, klass A. rWood Groove har sin egen 3 mm filt av återvunnen PET på baksidan, sätts på reglar eller limmas, och hålrummet bakom kan vid behov fyllas med ytterligare en absorbent: akustikfilt, en rPET-skiva eller mineralull. rWood Micro clipsas på skenor framför ett hålrum och når αw 1,00 när det fylls med 50 mm mineralull. PET-filt absorberar av sig själv, men hur mycket beror på monteringen: rPET Panel 12 mm mäter αw 0,25 direkt mot vägg, 0,80 med 100 mm spalt och 1,00 med 50 mm spalt plus 50 mm stenull.
 
 ## Prestanda sida vid sida
 
@@ -63,7 +63,7 @@ Ofta är svaret inte antingen–eller: trä på fondväggen, PET på långvägga
 
 I offentliga byggnader är brandklassen enligt EN 13501-1 ofta ett hårt krav; stäm av det exakta kravet med din akustiker eller brandkonsult.
 
-- **rPET-serien**: B-s1,d0 i vitt, grått och svart, B-s2,d0 i övriga kulörer; klassen följer kulören, och Standard- och FR-utförandet har samma klass. B-s1,d0 betyder begränsat bidrag till brand, låg rökutveckling och inga brinnande droppar.
+- **rPET-serien**: vitt, grått och svart ger B-s1,d0, alla andra kulörer B-s2,d0; klassen följer kulören, och Standard- och FR-utförandet har samma klass. B-s1,d0 betyder begränsat bidrag till brand, låg rökutveckling och inga brinnande droppar.
 - **rWood Micro och rWood Perf**: B-s1,d0 på den brandhämmande MDF-kärnan.
 - **rWood Groove**: B-s1,d0 på FR-MDF-kärnan, D-s2,d2 på standard-MDF, så ange kärnan i beskrivningen.
 
@@ -79,9 +79,9 @@ Båda tillverkas i vår egen fabrik i Częstochowa; mer på vår [hållbarhetssi
 
 ## Bearbetning, montering och underhåll
 
-**PET beter sig som ett skivmaterial.** rPET kapar du med kniv, cirkel- eller skivsåg, eller med vinkelslip och metallkapskiva, och det går att måla. Snickare och inredningsentreprenörer uppskattar det vid måttanpassade jobb, där skivan passas in runt uttag och socklar. Fästs med lim eller Z-clips, skruvas eller sätts på reglar.
+**PET beter sig som ett skivmaterial.** rPET kapar du med kniv, cirkel- eller skivsåg, eller med vinkelslip och metallkapskiva, och det går att måla. Snickare och inredningsentreprenörer uppskattar det vid måttanpassade jobb, där skivan passas in runt uttag och socklar. Skivan fästs med lim eller Z-clips, skruvas eller sätts på reglar.
 
-**Trä kräver precision.** Varje snitt genom ett faner syns, så planera indelning och kaplista i förväg i stället för att justera på plats. rWood Groove har not och spont och fästs på reglar eller limmas mot underlaget; rWood Micro och rWood Perf hängs på ett dolt clipssystem på skenor, verktygsfritt och demonterbart. Faner är känsligare för stötar och fukt än filt.
+**Trä kräver precision.** Varje snitt genom ett faner syns, så planera indelning och kaplista i förväg i stället för att justera på plats. rWood Groove är spontad och sätts på reglar eller limmas mot underlaget; rWood Micro och rWood Perf hängs på ett dolt clipssystem på skenor, verktygsfritt och demonterbart. Faner är känsligare för stötar och fukt än filt.
 
 **Underhåll**: PET dammsugs, fläckar behandlas lokalt; trä dammas av och sköts som en möbel.
 
@@ -93,7 +93,7 @@ Per kvadratmeter är PET-filt det mer ekonomiska av de två och fanerat trä pre
 - **rWood Groove**: beroende på lagerstatus, bekräftas vid beställning.
 - **rWood Micro och rWood Perf**: lagerfaner på 3–4 veckor; övriga faner 6–8 veckor.
 
-Re-Sound är ett varumärke inom Stretch Group, som tillverkar i egen regi i Beveren-Waas (Belgien) och Częstochowa (Polen). rPET och rWood kommer från Częstochowa; textilserien från Beveren-Waas, där du kan se båda materialen i showroomen efter överenskommelse. Se [var du köper](/sv/where-to-buy) eller använd [kontaktsidan](/sv/contact).
+Re-Sound är ett varumärke inom Stretch Group med egen tillverkning i Beveren-Waas (Belgien) och Częstochowa (Polen). rPET och rWood kommer från Częstochowa; textilserien från Beveren-Waas, där du kan se båda materialen i showroomen efter överenskommelse. Se [var du köper](/sv/where-to-buy) eller använd [kontaktsidan](/sv/contact).
 
 ## Beslutstabell: när PET, när trä
 
@@ -105,7 +105,7 @@ Re-Sound är ett varumärke inom Stretch Group, som tillverkar i egen regi i Bev
 | Brandklass B-s1,d0 krävs i en offentlig byggnad | rPET i vit, grå eller svart kulör, eller rWood på FR-MDF-kärnan |
 | Styrelserum, reception, restaurang, träinredning | rWood Groove / rWood Panel |
 | Högst andel återvunnet | rPET (tillverkad helt av återvunnen PET) |
-| Förnybar, certifierad råvara på fronten | rWood (enbart FSC-faner) |
+| Förnybar, certifierad råvara på ytan | rWood (enbart FSC-faner) |
 | Snabbast leverans | rPET Groove i lagerfärg, eller rWood Micro / Perf i lagerfaner (cirka 3–4 veckor) |
 
 Fortfarande osäker? Beställ det kostnadsfria [provpaketet](/sv/samples) och jämför båda materialen i själva rummet. De samtal som fortfarande stör när panelerna sitter uppe är ett jobb för ett [telefonbås](/sv/products/acoustic-phone-booths), inte för mer filt.

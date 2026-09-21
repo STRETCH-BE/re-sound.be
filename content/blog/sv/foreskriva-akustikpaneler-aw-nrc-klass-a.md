@@ -21,7 +21,7 @@ faq: [{"question":"Är αw samma sak som NRC?","answer":"Nej. αw (ISO 11654) an
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
-wordCount: 1759
+wordCount: 1762
 ---
 
 **Kort svar: föreskriv en akustikpanel med ett enda absorptionsmått, dess standard och monteringsvillkor (αw och klass enligt ISO 11654, eller NRC enligt ASTM C423), plus brandklass enligt EN 13501-1, certifikat, återvunnet innehåll, återtag och de dokument som ska lämnas in; räkna aldrig om det ena måttet till det andra.** Nedan går vi igenom vad siffrorna betyder och varför monteringen avgör, och ger dig en föreskriftstext och en checklista att klistra in.
@@ -34,7 +34,7 @@ Båda bygger på samma typ av laboratoriemätning: ett stort provstycke placeras
 
 **NRC (ASTM C423)** tar medelvärdet av koefficienterna vid 250, 500, 1 000 och 2 000 Hz, avrundat till närmaste 0,05. Ett medelvärde förlåter ett svagt band, och kanteffekter i labbet kan lyfta NRC över 1,00.
 
-Måtten är inte utbytbara. rWood Perf i mönstret PD8 har αw 0,85 och NRC 0,90; rPET Panel 12 mm har αw 1,00 och NRC 0,95 på 50 mm spalt med 50 mm stenull, men αw 0,80 och NRC 0,80 på 100 mm luftspalt. För vissa produkter publiceras bara det ena måttet: [rWood Groove](/sv/products/rwood-groove) har αw 0,90 och inget NRC-värde, [rPET Groove](/sv/products/rpet-groove) enbart NRC (0,55 vid 12 mm, 0,75 vid 24 mm och 0,90 vid 36 mm). Välj ett mått, namnge standarden och räkna aldrig om.
+Måtten är inte utbytbara. rWood Perf i mönstret PD8 har αw 0,85 och NRC 0,90; rPET Panel 12 mm har αw 1,00 och NRC 0,95 på 50 mm spalt med 50 mm stenull, men αw 0,80 och NRC 0,80 på 100 mm luftspalt. För vissa produkter publiceras bara det ena måttet: [rWood Groove](/sv/products/rwood-groove) har αw 0,90 och inget NRC-värde, [rPET Groove](/sv/products/rpet-groove) enbart NRC (0,55, 0,75 respektive 0,90 vid 12, 24 och 36 mm). Välj ett mått, namnge standarden och räkna aldrig om.
 
 ## Vad klass A, B och C betyder
 
@@ -44,7 +44,7 @@ ISO 11654 delar in αw i fem klasser:
 - **Klass B**: αw 0,80–0,85
 - **Klass C**: αw 0,60–0,75
 
-Klassen är en sammanfattning, inte ett krav i sig. Vilken klass ett rum behöver beror på volymen, den efterklangstid du siktar på och vilken standard som gäller: ISO 22955 för öppna kontorslandskap, ISO 3382-3 för hur tal klingar av över en öppen yta, och i Sverige SS 25268, som ger ljudklassen för lokalen; det exakta kravet kontrollerar du med din akustiker. Våra textilpaneler [Interior](/sv/products/interior), Solid och Divide har αw 1,0, klass A; rWood Groove och rWood Micro ligger på αw 0,90, klass A, och rPET Panel 12 mm hamnar i klass B (αw 0,80) på 100 mm luftspalt och i klass A (αw 1,00) på 50 mm spalt med 50 mm stenull.
+Klassen är en sammanfattning, inte ett krav i sig. Vilken klass ett rum behöver beror på volymen, den efterklangstid du siktar på och vilken standard som gäller: ISO 22955 för öppna kontorslandskap, ISO 3382-3 för hur tal klingar av över en öppen yta, och i Sverige SS 25268, som ger ljudklassen för lokalen; vilket krav som gäller för ditt rum bekräftar din akustiker. Våra textilpaneler [Interior](/sv/products/interior), Solid och Divide har αw 1,0, klass A; rWood Groove och rWood Micro ligger på αw 0,90, klass A, och rPET Panel 12 mm hamnar i klass B (αw 0,80) på 100 mm luftspalt och i klass A (αw 1,00) på 50 mm spalt med 50 mm stenull.
 
 ## Monteringsvillkor: typ A eller luftspalt
 
@@ -67,7 +67,7 @@ Med αw 0,80 (rPET Panel 12 mm på 100 mm luftspalt, klass B) blir det 5,0 / 0,8
 
 ## Brand, emissioner och kretslopp
 
-**Brandklass, EN 13501-1.** B-s1,d0 betyder begränsat bidrag till brand, lite rök (s1) och inga brinnande droppar (d0). Vår rPET-serie är B-s1,d0 i kulörerna vitt, grått och svart och B-s2,d0 i alla andra kulörer; klassen följer kulören och är densamma i Standard- och FR-utförande. rWood Micro och rWood Perf är B-s1,d0 på den brandhämmande MDF-kärnan, rWood Groove B-s1,d0 på FR-kärnan och D-s2,d2 på standardkärnan; hämta klassen från databladet för det utförande du väljer. Det exakta kravet stämmer du av med din akustiker eller brandkonsult.
+**Brandklass, EN 13501-1.** B-s1,d0 betyder begränsat bidrag till brand, lite rök (s1) och inga brinnande droppar (d0). Vår rPET-serie är B-s1,d0 i kulörerna vitt, grått och svart och B-s2,d0 i alla andra kulörer; klassen följer kulören och är densamma i Standard- och FR-utförande. rWood Micro och rWood Perf är B-s1,d0 på den brandhämmande MDF-kärnan, rWood Groove B-s1,d0 på FR-kärnan och D-s2,d2 på standardkärnan; hämta klassen från databladet för det utförande du väljer. Vilken klass ditt projekt måste uppfylla avgör byggreglerna; stäm av med din akustiker eller brandkonsult.
 
 **Emissioner och material.** För filt: begär OEKO-TEX Standard 100; vår rPET har det. För trä: begär FSC på faneret; rWood använder enbart FSC-certifierat faner.
 

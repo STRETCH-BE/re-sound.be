@@ -21,7 +21,7 @@ faq: [{"question": "Absorberar en mikroperforerad träpanel sämre än en spåra
 draft: false
 translationKey: "wood-micro-vs-grooved"
 model: "holz-akustikpaneele-mikroperforiert-oder-genutet"
-wordCount: 1695
+wordCount: 1697
 ---
 
 **Mikroperforerade och spårade akustikpaneler i trä absorberar lika bra: rWood Groove och rWood Micro når båda αw 0,90, alltså klass A enligt ISO 11654, och rWood Micro kommer upp i 1,00 med 50 mm mineralull i hålrummet. Därför väljer du efter uppbyggnad, utseende, brandklass, leveranstid och budget.** Här är guiden med siffrorna för [rWood Groove](/sv/products/rwood-groove) (spårad) och [rWood Micro](/sv/products/rwood-micro) (mikroperforerad), ett räkneexempel enligt Sabine och en beslutstabell.
@@ -39,7 +39,7 @@ Båda hör till våra [akustikpaneler i trä](/sv/products/wood-acoustic-panels)
 Den som jämför mikroperforerat med spårat jämför i själva verket två uppbyggnader. rWood Groove har sin absorbent inbyggd, 3 mm rPET-filt på baksidan, fogas med not och spont och fästs på reglar eller limmas direkt mot underlaget; på reglar kan hålrummet bakom ta en extra absorbent. rWood Micro monteras verktygsfritt med ett dolt clipssystem på aluminiumskenor, alltid med ett hålrum bakom, som vid behov fylls med mineralull. Tre absorbenter kommer i fråga för hålrummet:
 
 - **Akustikfilt**: den slanka lösningen när uppbyggnaden måste hållas tunn.
-- **[rPET-skiva](/sv/products/rpet-panel)**: helt av återvunnen PET, B-s1,d0 i vitt, grått och svart, B-s2,d0 i övriga kulörer (EN 13501-1); kapas på plats med kniv, cirkelsåg eller skivsåg. Direkt mot väggen ger 12 mm-skivan αw 0,25, med 50 mm luftspalt och 50 mm stenull bakom αw 1,00 (EN ISO 354): hålrummet avgör.
+- **[rPET-skiva](/sv/products/rpet-panel)**: helt av återvunnen PET, B-s1,d0 i vitt, grått och svart, B-s2,d0 i övriga kulörer (EN 13501-1); kapas på plats med kniv, cirkelsåg eller skivsåg. Direkt mot väggen ger 12 mm-skivan αw 0,25, med en 50 mm luftspalt fylld med 50 mm stenull bakom αw 1,00 (EN ISO 354): hålrummet avgör.
 - **Mineralull**: det vanliga valet när en underkonstruktion med hålrum ändå är planerad; bakom rWood Micro lyfter 50 mm mineralull värdet till αw 1,00.
 
 Båda utförandena ligger i klass A; en absorbent i hålrummet ger extra marginal, hos rWood Micro upp till αw 1,00. Det som återstår att väga är byggdjup, utseende och brandskydd. Vilka värden din beskrivning kräver kontrollerar du med din akustiker.
@@ -52,7 +52,7 @@ Absorptionen i dag är 0,161 × 525 / 1,4, det vill säga 60,4 m² Sabine. Vid m
 
 Förslag: **55 m² absorberande undertak** i klass A (αw 0,90 → 55 × 0,90 = 49,5 m² Sabine) och **15 m² rWood Micro** bakom soffbänkarna, monterad med clips på skenor framför ett hålrum (αw 0,90 → 15 × 0,90 = 13,5 m² Sabine), sammanlagt 49,5 + 13,5 = **63,0 m² Sabine**. Med 50 mm mineralull i hålrummet stiger samma 15 m² rWood Micro till 15,0 m² Sabine (αw 1,00); med rWood Groove på reglar landar väggen på samma 13,5 m² Sabine, men med spårens linjer som blickfång. Det är skillnaden mellan en panel och ett system: begär provningsrapporten för den montering du ritar.
 
-Vill du dessutom få bort samtalen som hörs över hela kontorslandskapet räcker inga paneler; då behövs ett [telefonbås](/sv/products/acoustic-phone-booths). [Solo Flex](/sv/products/solo-flex) kostar från {{price:solo-flex}} exkl. moms utan montering (montering {{price:article:WEB-SOLO-FLEX-INST}}, transport inom det europeiska fastlandet {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}, vardera exkl. moms).
+Vill du dessutom få bort samtalen som hörs över hela kontorslandskapet räcker inga paneler; då behövs ett [telefonbås](/sv/products/acoustic-phone-booths). [Solo Flex](/sv/products/solo-flex) kostar från {{price:solo-flex}} exkl. moms; montering ({{price:article:WEB-SOLO-FLEX-INST}}) och frakt inom det europeiska fastlandet ({{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}) tillkommer, vardera exkl. moms.
 
 ## Utseende och inredning: linjerytm eller lugn träyta
 

@@ -21,7 +21,7 @@ faq: [{"question": "Vad kostar ett telefonbås för kontor 2026?", "answer": "Pu
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 1571
+wordCount: 1572
 ---
 
 **Ett [telefonbås för kontor](/sv/products/acoustic-phone-booths) från Re-Sound kostar från {{price:solo-flex}} exkl. moms; montering av vårt eget team tillkommer med {{price:article:WEB-SOLO-FLEX-INST}} och transport inom det europeiska fastlandet med {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}}.** Det är priset för [Solo Flex](/sv/products/solo-flex), vårt akustiska telefonbås för en person. Vill du ha en enklare instegsmodell finns [Solo ECO](/sv/products/solo-eco) från {{price:solo-eco}} exkl. moms. Här reder vi ut vad du får för pengarna, vilken storlek du ska välja, vad klasserna i ISO 23351-1 betyder och vad du bör kontrollera innan du beställer, direkt från tillverkaren.
@@ -40,7 +40,7 @@ I september 2026 ligger de publicerade priserna för ett akustiskt telefonbås f
 
 Re-Sounds priser anges exkl. moms. Transport inom det europeiska fastlandet är ett fast belopp per bås, {{price:article:WEB-SOLO-ECO-TRANSPORT-EU}} för Solo ECO och {{price:article:WEB-SOLO-FLEX-TRANSPORT-EU}} för Solo Flex; utanför fastlandet offererar vi transporten i orderbekräftelsen.
 
-Solo Flex hamnar mellan konkurrent 2 och konkurrent 3 i jämförelsen; vi bygger båsen själva. Re-Sound är ett varumärke inom Stretch Group, med egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen); telefonbåsen tillverkas i fabriken i Częstochowa.
+Solo Flex hamnar mellan konkurrent 2 och konkurrent 3 i jämförelsen; vi bygger båsen själva. Re-Sound är ett varumärke inom Stretch Group; koncernen har egna fabriker i Beveren-Waas (Belgien) och Częstochowa (Polen), och telefonbåsen tillverkas i den polska.
 
 För två personer börjar [Duo](/sv/products/duo) på {{price:duo}} exkl. moms; transport inom fastlandet kostar {{price:article:WEB-DUO-WORK-TRANSPORT-EU}} och montering {{price:article:WEB-DUO-WORK-INST}}. För fyra till tio personer börjar [Modular XL](/sv/products/modular-xl) på {{price:modular-xl}} exkl. moms utan montering, plus {{price:article:RS-MX-AS1}} per extra element om 90 cm. Transport inom fastlandet kostar {{price:article:WEB-MODULAR-XL-TRANSPORT-EU}} och montering av vårt eget team {{price:article:WEB-MODULAR-XL-INST}} för huvudmodulen plus {{price:article:WEB-MODULAR-XL-INST-EXT}} per extra element.
 
