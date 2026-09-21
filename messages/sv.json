@@ -2084,7 +2084,7 @@
       "usp1": "Runda perforeringar",
       "usp2": "Brandklass {fireClass}",
       "usp3": "αw {alphaW} beroende på mönster",
-      "description2": "Måttbeställd för väggar och tak, upp till 3 050 × 1 220 mm, i 10 och 19 mm. Åtta lagerfaner, alla faner och ytbehandlingar på beställning."
+      "description2": "Varje panel skärs efter era ritningar, upp till 3 050 × 1 220 mm och 10 eller 19 mm tjock, för väggar och tak. Välj ett av de åtta lagerfaneren eller beställ vilket annat faner och vilken ytbehandling som helst."
     },
     "patterns": {
       "tag": "PERFORERING",
@@ -2208,7 +2208,7 @@
       "questions": {
         "fscSource": {
           "question": "Var kommer det FSC-certifierade faneret ifrån?",
-          "answer": "Alla rWood-faner är FSC®-certifierade (chain-of-custody-certifikat C191539) och kommer från ansvarsfullt brukade skogar. De åtta lagerfaneren kommer från Europa, Skandinavien och Nordamerika; certifikatet lämnas på begäran."
+          "answer": "Varje faner vi borrar för rWood Perf är FSC®-certifierat under chain-of-custody-certifikat C191539. De åtta lagerfaneren kommer från skogar i Europa, Skandinavien och Nordamerika; be om certifikatet tillsammans med er offert."
         },
         "fireRating": {
           "question": "Vilken brandklass har panelen?",
@@ -2216,7 +2216,7 @@
         },
         "leadTime": {
           "question": "Vad är normal leveranstid?",
-          "answer": "Lagerfaner levereras inom 3–4 veckor; träslag som inte lagerförs och specialytor tar 6–8 veckor. Måttbeställda paneler tillverkas efter era ritningar."
+          "answer": "En perforerad panel i ett lagerfaner lämnar fabriken 3–4 veckor efter er beställning; ett träslag vi inte lagerför, eller en specialyta, kräver 6–8 veckor. Varje panel borras och skärs efter era ritningar."
         },
         "installMethod": {
           "question": "Hur monteras rWood-paneler?",
@@ -2224,7 +2224,7 @@
         },
         "substrateCleanup": {
           "question": "Vad händer med panelerna när de tjänat ut?",
-          "answer": "Re-Sound tar kostnadsfritt tillbaka uttjänta paneler i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
+          "answer": "När de tjänat ut kommer rWood Perf-panelerna tillbaka till oss: återtagningen är kostnadsfri i Belgien, Nederländerna, Frankrike, Tyskland och Luxemburg."
         }
       }
     },
@@ -2262,7 +2262,7 @@
     },
     "veneers": {
       "title": "Åtta lagerfaner, alla faner på beställning",
-      "description": "Alla rWood-faner är FSC®-certifierade och kommer från ansvarsfullt brukade skogar. Trä är ett naturmaterial: ådring och färg varierar från panel till panel, och prover på skärm är endast vägledande.",
+      "description": "Perforeringarna går rakt igenom faneret, så ådring och färg räknas dubbelt: på ytan och runt varje hål. Alla åtta lagerfaner är FSC®-certifierade; eftersom trä är ett naturmaterial skiljer sig panelerna åt, och proverna på skärmen ger bara ett intryck.",
       "alt": "Faner {name}",
       "origin": {
         "europe": "Europa",
@@ -2291,7 +2291,7 @@
       "title": "Efter era ritningar",
       "description": "rWood Perf tillverkas måttbeställd för väggar och tak: från 100 × 100 mm upp till 3 050 × 1 220 mm, i 10 och 19 mm, i vart och ett av de fyra mönstren.",
       "customDimTitle": "Egna mått",
-      "customDimDesc": "Varje panel tillverkas i måtten på era ritningar, från 100 × 100 mm upp till 3 050 × 1 220 mm.",
+      "customDimDesc": "Från en utfyllnadsbit på 100 × 100 mm till en hel skiva på 3 050 × 1 220 mm skärs varje perforerad panel i måtten på era ritningar.",
       "finishTitle": "Alla faner och ytbehandlingar",
       "finishDesc": "Åtta lagerfaner; alla andra träslag, betsfärger och ytbehandlingar på beställning.",
       "samplesTitle": "Kostnadsfria fanerprover",

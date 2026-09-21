@@ -2081,7 +2081,7 @@
       "usp1": "Ronde perforaties",
       "usp2": "Brandklasse {fireClass}",
       "usp3": "αw {alphaW} per patroon",
-      "description2": "Op maat gemaakt voor wanden en plafonds, tot 3 050 × 1 220 mm, in 10 en 19 mm. Acht voorraadfineren, elk fineer en elke afwerking op bestelling."
+      "description2": "Elk paneel wordt op je tekeningen gezaagd, tot 3 050 × 1 220 mm en 10 of 19 mm dik, voor wanden en plafonds. Kies een van de acht voorraadfineren of bestel elk ander fineer en elke afwerking."
     },
     "patterns": {
       "tag": "PERFORATIE",
@@ -2205,7 +2205,7 @@
       "questions": {
         "fscSource": {
           "question": "Waar komt het FSC-gecertificeerde fineer vandaan?",
-          "answer": "Alle rWood-fineren zijn FSC®-gecertificeerd (chain-of-custody-certificaat C191539) en komen uit verantwoord beheerde bossen. De acht voorraadfineren komen uit Europa, Scandinavië en Noord-Amerika; het certificaat krijg je op aanvraag."
+          "answer": "Elk fineer dat we voor rWood Perf doorboren is FSC®-gecertificeerd onder chain-of-custody-certificaat C191539. De acht voorraadfineren komen uit bossen in Europa, Scandinavië en Noord-Amerika; vraag het certificaat mee met je offerte."
         },
         "fireRating": {
           "question": "Wat is de brandklasse?",
@@ -2213,7 +2213,7 @@
         },
         "leadTime": {
           "question": "Wat is de standaard levertermijn?",
-          "answer": "Voorraadfineren leveren we in 3–4 weken; niet-voorraadhoutsoorten en maatwerkafwerkingen in 6–8 weken. Panelen op maat maken we volgens je tekeningen."
+          "answer": "Een geperforeerd paneel in een voorraadfineer verlaat de fabriek 3–4 weken na je bestelling; een houtsoort die we niet op voorraad hebben, of een maatwerkafwerking, vraagt 6–8 weken. Elk paneel wordt geboord en gezaagd volgens je tekeningen."
         },
         "installMethod": {
           "question": "Hoe worden rWood-panelen gemonteerd?",
@@ -2221,7 +2221,7 @@
         },
         "substrateCleanup": {
           "question": "Wat gebeurt er met de panelen aan het einde van hun levensduur?",
-          "answer": "Re-Sound neemt panelen aan het einde van hun levensduur gratis terug in België, Nederland, Frankrijk, Duitsland en Luxemburg."
+          "answer": "Aan het einde van hun levensduur komen rWood Perf-panelen naar ons terug: de terugname is gratis in België, Nederland, Frankrijk, Duitsland en Luxemburg."
         }
       }
     },
@@ -2259,7 +2259,7 @@
     },
     "veneers": {
       "title": "Acht voorraadfineren, elk fineer op bestelling",
-      "description": "Alle rWood-fineren zijn FSC®-gecertificeerd en komen uit verantwoord beheerde bossen. Hout is een natuurlijk materiaal: nerf en kleur verschillen van paneel tot paneel, en stalen op je scherm zijn enkel indicatief.",
+      "description": "De perforaties gaan dwars door het fineer, dus nerf en kleur tellen dubbel: op het vlak en rond elk gaatje. Alle acht voorraadfineren zijn FSC®-gecertificeerd; hout is een natuurlijk materiaal, dus panelen verschillen onderling en de stalen op je scherm geven enkel een indruk.",
       "alt": "Fineer {name}",
       "origin": {
         "europe": "Europa",
@@ -2288,7 +2288,7 @@
       "title": "Volgens je tekeningen",
       "description": "rWood Perf maken we op maat voor wanden en plafonds: van 100 × 100 mm tot 3 050 × 1 220 mm, in 10 en 19 mm, in elk van de vier patronen.",
       "customDimTitle": "Eigen afmetingen",
-      "customDimDesc": "Elk paneel wordt gemaakt op de maten van je tekeningen, van 100 × 100 mm tot 3 050 × 1 220 mm.",
+      "customDimDesc": "Van een invulstuk van 100 × 100 mm tot een volle plaat van 3 050 × 1 220 mm: elk geperforeerd paneel wordt gezaagd op de maten van je tekeningen.",
       "finishTitle": "Elk fineer en elke afwerking",
       "finishDesc": "Acht voorraadfineren; elke andere houtsoort, beitskleur en afwerking op bestelling.",
       "samplesTitle": "Gratis fineerstalen",

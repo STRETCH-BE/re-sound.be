@@ -2084,7 +2084,7 @@
       "usp1": "Perforaciones redondas",
       "usp2": "Reacción al fuego {fireClass}",
       "usp3": "αw {alphaW} según el patrón",
-      "description2": "A medida para paredes y techos, hasta 3 050 × 1 220 mm, en 10 y 19 mm. Ocho chapas de stock, cualquier chapa y acabado por encargo."
+      "description2": "Cada panel se corta según sus planos, hasta 3 050 × 1 220 mm y 10 o 19 mm de espesor, para paredes y techos. Elija una de las ocho chapas de stock o encargue cualquier otra chapa y acabado."
     },
     "patterns": {
       "tag": "PERFORACIÓN",
@@ -2208,7 +2208,7 @@
       "questions": {
         "fscSource": {
           "question": "¿De dónde procede la chapa certificada FSC?",
-          "answer": "Todas las chapas rWood están certificadas FSC® (certificado de cadena de custodia C191539) y proceden de bosques gestionados de forma responsable. Las ocho chapas de stock provienen de Europa, Escandinavia y América del Norte; el certificado está disponible a petición."
+          "answer": "Cada chapa que perforamos para rWood Perf está certificada FSC® bajo el certificado de cadena de custodia C191539. Las ocho chapas de stock proceden de bosques de Europa, Escandinavia y América del Norte; solicite el certificado junto con su presupuesto."
         },
         "fireRating": {
           "question": "¿Cuál es la clasificación al fuego?",
@@ -2216,7 +2216,7 @@
         },
         "leadTime": {
           "question": "¿Cuál es el plazo de entrega estándar?",
-          "answer": "Las chapas de stock se entregan en 3–4 semanas; las especies fuera de stock y los acabados a medida requieren 6–8 semanas. Los paneles a medida se fabrican según sus planos."
+          "answer": "Un panel perforado en una chapa de stock sale de fábrica 3–4 semanas después de su pedido; una especie que no tenemos en stock, o un acabado a medida, necesita 6–8 semanas. Cada panel se perfora y se corta según sus planos."
         },
         "installMethod": {
           "question": "¿Cómo se instalan los paneles rWood?",
@@ -2224,7 +2224,7 @@
         },
         "substrateCleanup": {
           "question": "¿Qué ocurre con los paneles al final de su vida útil?",
-          "answer": "Re-Sound recoge los paneles gratuitamente al final de su vida útil en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
+          "answer": "Al final de su vida útil, los paneles rWood Perf vuelven a nosotros: la recogida es gratuita en Bélgica, los Países Bajos, Francia, Alemania y Luxemburgo."
         }
       }
     },
@@ -2262,7 +2262,7 @@
     },
     "veneers": {
       "title": "Ocho chapas de stock, cualquier chapa por encargo",
-      "description": "Todas las chapas rWood están certificadas FSC® y proceden de bosques gestionados de forma responsable. La madera es un material natural: la veta y el color varían de un panel a otro, y las muestras en pantalla son solo orientativas.",
+      "description": "Las perforaciones atraviesan la chapa de lado a lado, así que la veta y el color cuentan dos veces: en la cara y alrededor de cada orificio. Las ocho chapas de stock están certificadas FSC®; como la madera es un material natural, los paneles difieren entre sí y las muestras en pantalla solo dan una impresión.",
       "alt": "Chapa {name}",
       "origin": {
         "europe": "Europa",
@@ -2291,7 +2291,7 @@
       "title": "Según sus planos",
       "description": "rWood Perf se fabrica a medida para paredes y techos: desde 100 × 100 mm hasta 3 050 × 1 220 mm, en 10 y 19 mm, en cualquiera de los cuatro patrones.",
       "customDimTitle": "Dimensiones a medida",
-      "customDimDesc": "Cada panel se fabrica con las medidas de sus planos, desde 100 × 100 mm hasta 3 050 × 1 220 mm.",
+      "customDimDesc": "Desde una pieza de relleno de 100 × 100 mm hasta una plancha completa de 3 050 × 1 220 mm, cada panel perforado se corta a las dimensiones de sus planos.",
       "finishTitle": "Cualquier chapa y acabado",
       "finishDesc": "Ocho chapas de stock; cualquier otra especie, color de tinte y acabado por encargo.",
       "samplesTitle": "Muestras de chapa gratuitas",

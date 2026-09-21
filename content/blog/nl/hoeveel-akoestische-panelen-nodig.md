@@ -21,6 +21,8 @@ cta: "Stuur ons de afmetingen van je ruimte en we rekenen het na"
 sources: "W.C. Sabine, Collected Papers on Acoustics (formule van Sabine); ISO 11654 (absorptieklassen); ISO 3382-2 (meting van de nagalmtijd); NBN S 01-400-2 (akoestische criteria voor schoolgebouwen); productgegevens Re-Sound."
 faq: [{"question":"Hoeveel akoestische panelen heb ik nodig voor een kantoor van 100 m²?","answer":"Zonder absorberend plafond en met een hoogte van 3 m reken je op 30 à 35 m² wandpanelen van klasse A (zoals rWood Groove of Interior) om van 1,2 naar 0,7 s te gaan. Met een absorberend plafond volstaat 10 à 15 m² op de wanden."},{"question":"Maakt de dikte van het paneel veel uit?","answer":"Ja, en de montage maakt nog meer uit. Een rPET Panel van 12 mm haalt αw 0,25 rechtstreeks op de wand, 0,60 met een spouw van 50 mm, 0,80 met een spouw van 100 mm en 1,00 met een spouw van 50 mm en 50 mm steenwol erachter; bij rPET Groove stijgt de NRC met de dikte: 0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm. Een spouw of steenwol achter het paneel weegt vooral in de lage tonen door. Reken dus altijd met de waarde bij de montage die je gaat toepassen."},{"question":"Kan ik te veel panelen hangen?","answer":"Ja: onder 0,4 s klinkt een ruimte dof en gaan mensen luider praten omdat ze zichzelf niet meer horen. Mik op de richtwaarde en verdeel de panelen over de ruimte."}]
 draft: false
+translationKey: "how-many-panels"
+model: "original"
 wordCount: 1346
 ---
 

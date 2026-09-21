@@ -4,9 +4,10 @@ import { permanentRedirect } from 'next/navigation';
 import { Metadata } from 'next';
 
 import { buildAlternates, ogLocale, ogAlternateLocales } from '@/lib/seo';
+import { SEO_LOCALES, defaultLocale, isSeoLocale } from '@/i18n/config';
 import { pickMessages } from '@/lib/i18n-messages';
 import { blogPostingSchema, breadcrumbSchema } from '@/lib/structured-data';
-import { getContentPost, getContentPosts, resolveContentPost } from '@/lib/content/blog';
+import { getContentPost, getContentPosts, getTranslationPaths, resolveContentPost } from '@/lib/content/blog';
 import JsonLd from '@/components/seo/JsonLd';
 
 import ContentPost from '@/components/blog/ContentPost';
@@ -53,12 +54,20 @@ export async function generateMetadata({
   if (draftPost) {
     // Prices in the description come from the catalogue, not the markdown.
     const post = await resolveContentPost(draftPost);
-    // Single-locale editorial post: canonical to itself, no hreflang
-    // alternates (it is not translated). Drafts are noindex.
+    // Translations of the same topic (translationKey) reference each other
+    // as hreflang alternates, indexable locales only, x-default = English
+    // when it exists; a post without translations is canonical only. Drafts
+    // and the Nordic locales are noindex (the layout's rule, kept here
+    // because this robots value overrides it).
+    const translations = getTranslationPaths(post.translationKey);
+    const languages: Record<string, string> = {};
+    for (const loc of SEO_LOCALES) if (translations[loc]) languages[loc] = `/${loc}${translations[loc]}`;
+    if (translations[defaultLocale]) languages['x-default'] = `/${defaultLocale}${translations[defaultLocale]}`;
+    const indexable = !post.draft && isSeoLocale(locale);
     return {
       title: { absolute: post.title },
       description: post.description,
-      robots: post.draft ? { index: false, follow: false } : { index: true, follow: true },
+      robots: indexable ? { index: true, follow: true } : { index: false, follow: !post.draft },
       openGraph: {
         title: post.h1,
         description: post.description,
@@ -69,7 +78,10 @@ export async function generateMetadata({
         locale: ogLocale(locale),
         images: [{ url: post.heroImage, width: 1600, height: 900, alt: post.heroAlt }],
       },
-      alternates: { canonical: `/${locale}/blog/${post.slug}` },
+      alternates: {
+        canonical: `/${locale}/blog/${post.slug}`,
+        ...(Object.keys(languages).length > 1 ? { languages } : {}),
+      },
     };
   }
 

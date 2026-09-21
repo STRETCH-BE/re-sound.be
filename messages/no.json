@@ -2084,7 +2084,7 @@
       "usp1": "Runde perforeringer",
       "usp2": "Brannklasse {fireClass}",
       "usp3": "αw {alphaW} etter mønster",
-      "description2": "Etter mål for vegger og himlinger, opptil 3 050 × 1 220 mm, i 10 og 19 mm. Åtte lagerfinerer, enhver finer og overflate på bestilling."
+      "description2": "Hvert panel skjæres etter tegningene dine, opptil 3 050 × 1 220 mm og 10 eller 19 mm tykt, for vegger og himlinger. Velg en av de åtte lagerfinerene, eller bestill enhver annen finer og overflate."
     },
     "patterns": {
       "tag": "PERFORERING",
@@ -2208,7 +2208,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvor kommer den FSC-sertifiserte fineren fra?",
-          "answer": "Alle rWood-finerer er FSC®-sertifiserte (chain-of-custody-sertifikat C191539) og kommer fra ansvarlig forvaltede skoger. De åtte lagerfinerene kommer fra Europa, Skandinavia og Nord-Amerika; sertifikatet fås på forespørsel."
+          "answer": "Hver finer vi borer for rWood Perf er FSC®-sertifisert under chain-of-custody-sertifikat C191539. De åtte lagerfinerene kommer fra skoger i Europa, Skandinavia og Nord-Amerika; be om sertifikatet sammen med tilbudet ditt."
         },
         "fireRating": {
           "question": "Hva er brannklassen?",
@@ -2216,7 +2216,7 @@
         },
         "leadTime": {
           "question": "Hva er vanlig leveringstid?",
-          "answer": "Lagerfinerer leveres på 3–4 uker; treslag utenfor lager og spesialoverflater tar 6–8 uker. Paneler etter mål produseres etter tegningene dine."
+          "answer": "Et perforert panel i en lagerfiner forlater fabrikken 3–4 uker etter bestillingen din; et treslag vi ikke har på lager, eller en spesialoverflate, trenger 6–8 uker. Hvert panel bores og skjæres etter tegningene dine."
         },
         "installMethod": {
           "question": "Hvordan monteres rWood-paneler?",
@@ -2224,7 +2224,7 @@
         },
         "substrateCleanup": {
           "question": "Hva skjer med panelene ved endt levetid?",
-          "answer": "Re-Sound tar panelene gratis tilbake ved endt levetid i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
+          "answer": "Ved endt levetid kommer rWood Perf-panelene tilbake til oss: tilbaketakingen er gratis i Belgia, Nederland, Frankrike, Tyskland og Luxembourg."
         }
       }
     },
@@ -2262,7 +2262,7 @@
     },
     "veneers": {
       "title": "Åtte lagerfinerer, enhver finer på bestilling",
-      "description": "Alle rWood-finerer er FSC®-sertifiserte og kommer fra ansvarlig forvaltede skoger. Tre er et naturmateriale: åretegning og farge varierer fra panel til panel, og prøver på skjerm er kun veiledende.",
+      "description": "Perforeringene går tvers gjennom fineren, så åretegning og farge teller dobbelt: på flaten og rundt hvert hull. Alle de åtte lagerfinerene er FSC®-sertifiserte; siden tre er et naturmateriale, er panelene forskjellige fra hverandre, og prøvene på skjermen gir bare et inntrykk.",
       "alt": "Finer {name}",
       "origin": {
         "europe": "Europa",
@@ -2291,7 +2291,7 @@
       "title": "Etter dine tegninger",
       "description": "rWood Perf produseres etter mål for vegger og himlinger: fra 100 × 100 mm opptil 3 050 × 1 220 mm, i 10 og 19 mm, i hvert av de fire mønstrene.",
       "customDimTitle": "Egne mål",
-      "customDimDesc": "Hvert panel produseres i målene fra tegningene dine, fra 100 × 100 mm opptil 3 050 × 1 220 mm.",
+      "customDimDesc": "Fra et fyllstykke på 100 × 100 mm til en hel plate på 3 050 × 1 220 mm skjæres hvert perforerte panel i målene fra tegningene dine.",
       "finishTitle": "Enhver finer og overflate",
       "finishDesc": "Åtte lagerfinerer; ethvert annet treslag, beisfarge og overflate på bestilling.",
       "samplesTitle": "Gratis finerprøver",

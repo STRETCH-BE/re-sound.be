@@ -16,11 +16,13 @@ dateModified: "2026-09-20"
 heroImage: "/images/products/rwood-micro/hero-rwood-micro.webp"
 heroImageMissing: "/images/blog/akoestische-panelen-restaurant.jpg"
 heroAlt: "Restaurant met rWood Micro wandpanelen in eik achter de banken en een akoestisch plafond"
-internalLinks: ["/nl/applications/horeca","/nl/products/houten-akoestische-panelen","/nl/products/rwood-micro","/nl/products/rwood-groove","/nl/products/rpet-groove","/nl/products/divide","/nl/products/interior","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
+internalLinks: ["/nl/products/houten-akoestische-panelen","/nl/products/rwood-micro","/nl/products/rwood-groove","/nl/products/rpet-groove","/nl/products/divide","/nl/products/interior","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag een demonstratie op locatie of het stalenpakket"
 sources: "ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); W.C. Sabine (nagalmformule); productgegevens en testrapporten Re-Sound."
 faq: [{"question":"Welke akoestische panelen zijn geschikt voor een restaurant?","answer":"Voor het plafond een akoestisch spanplafond of PET-plafondpanelen; voor de wanden rWood Micro of Groove (hout) en rPET Groove (kleur), rWood met brandklasse B-s1,d0 op de brandvertragende MDF-kern, rPET B-s1,d0 in wit, grijs en zwart en B-s2,d0 in de andere kleuren; het classificatierapport voor je brandveiligheidsdossier leveren we op aanvraag."},{"question":"Hoeveel panelen heeft een restaurant van 100 m² nodig?","answer":"Ongeveer 35 m² absorberend plafond plus 8 à 15 m² wandpanelen om van 1,4 naar 0,7 s te gaan. Met een meting rekenen we het exact uit."},{"question":"Kan de plaatsing tussen twee diensten?","answer":"Een akoestisch spanplafond wordt in één dag geplaatst zonder stof; wandpanelen plaatst een team in een halve dag; Divide-modules vragen geen montage."}]
 draft: false
+translationKey: "restaurant-acoustics"
+model: "original"
 wordCount: 1238
 ---
 

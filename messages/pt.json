@@ -2084,7 +2084,7 @@
       "usp1": "Perfurações redondas",
       "usp2": "Reação ao fogo {fireClass}",
       "usp3": "αw {alphaW} consoante o padrão",
-      "description2": "À medida para paredes e tetos, até 3 050 × 1 220 mm, em 10 e 19 mm. Oito folheados de stock, qualquer folheado e acabamento por encomenda."
+      "description2": "Cada painel é cortado segundo os seus desenhos, até 3 050 × 1 220 mm e 10 ou 19 mm de espessura, para paredes e tetos. Escolha um dos oito folheados de stock ou encomende qualquer outro folheado e acabamento."
     },
     "patterns": {
       "tag": "PERFURAÇÃO",
@@ -2208,7 +2208,7 @@
       "questions": {
         "fscSource": {
           "question": "De onde provém o folheado certificado FSC?",
-          "answer": "Todos os folheados rWood são certificados FSC® (certificado de cadeia de custódia C191539) e provêm de florestas geridas de forma responsável. Os oito folheados de stock vêm da Europa, da Escandinávia e da América do Norte; o certificado está disponível a pedido."
+          "answer": "Cada folheado que perfuramos para o rWood Perf é certificado FSC® ao abrigo do certificado de cadeia de custódia C191539. Os oito folheados de stock provêm de florestas da Europa, da Escandinávia e da América do Norte; peça o certificado juntamente com o seu orçamento."
         },
         "fireRating": {
           "question": "Qual é a classificação ao fogo?",
@@ -2216,7 +2216,7 @@
         },
         "leadTime": {
           "question": "Qual é o prazo de entrega habitual?",
-          "answer": "Os folheados de stock são entregues em 3–4 semanas; as espécies fora de stock e os acabamentos à medida requerem 6–8 semanas. Os painéis à medida são fabricados segundo os seus desenhos."
+          "answer": "Um painel perfurado num folheado de stock sai da fábrica 3–4 semanas após a sua encomenda; uma espécie que não temos em stock, ou um acabamento à medida, necessita de 6–8 semanas. Cada painel é perfurado e cortado segundo os seus desenhos."
         },
         "installMethod": {
           "question": "Como se instalam os painéis rWood?",
@@ -2224,7 +2224,7 @@
         },
         "substrateCleanup": {
           "question": "O que acontece aos painéis no fim de vida?",
-          "answer": "A Re-Sound recolhe gratuitamente os painéis no fim de vida na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
+          "answer": "No fim de vida, os painéis rWood Perf voltam para nós: a recolha é gratuita na Bélgica, nos Países Baixos, em França, na Alemanha e no Luxemburgo."
         }
       }
     },
@@ -2262,7 +2262,7 @@
     },
     "veneers": {
       "title": "Oito folheados de stock, qualquer folheado por encomenda",
-      "description": "Todos os folheados rWood são certificados FSC® e provêm de florestas geridas de forma responsável. A madeira é um material natural: o veio e a cor variam de painel para painel, e as amostras no ecrã são apenas indicativas.",
+      "description": "As perfurações atravessam o folheado de lado a lado, pelo que o veio e a cor contam a dobrar: na face e à volta de cada furo. Os oito folheados de stock são certificados FSC®; como a madeira é um material natural, os painéis diferem entre si e as amostras no ecrã dão apenas uma impressão.",
       "alt": "Folheado {name}",
       "origin": {
         "europe": "Europa",
@@ -2291,7 +2291,7 @@
       "title": "Segundo os seus desenhos",
       "description": "O rWood Perf é fabricado à medida para paredes e tetos: de 100 × 100 mm até 3 050 × 1 220 mm, em 10 e 19 mm, em qualquer dos quatro padrões.",
       "customDimTitle": "Dimensões à medida",
-      "customDimDesc": "Cada painel é fabricado com as medidas dos seus desenhos, de 100 × 100 mm até 3 050 × 1 220 mm.",
+      "customDimDesc": "De uma peça de enchimento de 100 × 100 mm a uma placa inteira de 3 050 × 1 220 mm, cada painel perfurado é cortado às dimensões dos seus desenhos.",
       "finishTitle": "Qualquer folheado e acabamento",
       "finishDesc": "Oito folheados de stock; qualquer outra espécie, cor de velatura e acabamento por encomenda.",
       "samplesTitle": "Amostras de folheado gratuitas",

@@ -6,7 +6,7 @@ import { BOOTH_GUIDE, GUIDE_LOCALES, guidePath, isGuideLocale } from '@/data/gui
 import { HUB_IDS, HUBS, hubPath } from '@/data/hubs';
 import { MANUFACTURING_LOCALES, isManufacturingLocale, manufacturingPath } from '@/data/manufacturing';
 import { PRODUCTS, PRODUCT_SLUGS } from '@/data/products';
-import { getContentPosts } from '@/lib/content/blog';
+import { getContentPosts, getTranslationPaths } from '@/lib/content/blog';
 import { SEO_LOCALES, defaultLocale } from '@/i18n/config';
 
 
@@ -183,14 +183,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
-    // Editorial posts (content/blog/<locale>/*.md): single-locale, so no
-    // hreflang alternates; drafts are excluded.
+    // Editorial posts (content/blog/<locale>/*.md): translations of one
+    // topic (translationKey) list each other as hreflang alternates, in the
+    // indexable locales that have the post, x-default = English when it
+    // exists; a post without translations has none. Drafts are excluded.
     for (const post of getContentPosts(locale)) {
+      const translations = getTranslationPaths(post.translationKey);
+      const languages: Record<string, string> = {};
+      for (const loc of SEO_LOCALES) if (translations[loc]) languages[loc] = `${base}/${loc}${translations[loc]}`;
+      if (translations[defaultLocale]) languages['x-default'] = `${base}/${defaultLocale}${translations[defaultLocale]}`;
       entries.push({
         url: `${base}/${locale}/blog/${post.slug}`,
         lastModified: new Date(post.dateModified || post.datePublished),
         changeFrequency: 'monthly',
         priority: 0.6,
+        ...(Object.keys(languages).length > 1 ? { alternates: { languages } } : {}),
       });
     }
 

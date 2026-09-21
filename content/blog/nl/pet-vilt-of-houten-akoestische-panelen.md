@@ -21,6 +21,8 @@ cta: "Vraag het gratis stalenpakket met beide materialen"
 sources: "ISO 11654 (geluidsabsorptieklassen); ASTM C423 (NRC); EN 13501-1 (brandclassificatie); OEKO-TEX® Standard 100; FSC; productgegevens en testrapporten Re-Sound rPET en rWood."
 faq: [{"question":"Absorbeert hout minder goed dan PET-vilt?","answer":"Nee. rWood Groove en rWood Micro halen αw 0,90 (ISO 11654, klasse A); rPET Groove wordt per dikte met een NRC opgegeven (0,55 / 0,75 / 0,90 bij 12 / 24 / 36 mm). Het verschil zit in het uitzicht, de brandklasse en de prijs, niet in de akoestiek."},{"question":"Kan ik PET-panelen en houten panelen combineren?","answer":"Ja, en dat is vaak de beste oplossing: hout op de wand die je ziet, PET op de lange wanden of het plafond. Beide reeksen nemen we aan het einde van hun levensduur gratis terug."},{"question":"Welk paneel is het duurzaamst?","answer":"rPET Panel en rPET Flex Groove bestaan volledig uit gerecycleerd PET; rWood combineert FSC®-gecertificeerd fineer (certificaat C191539) met een MDF-kern en heeft voor rWood Panel een EPD. Beide nemen we aan het einde van hun levensduur gratis terug."}]
 draft: false
+translationKey: "pet-vs-wood"
+model: "original"
 wordCount: 1320
 ---
 

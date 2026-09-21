@@ -2081,7 +2081,7 @@
       "usp1": "Perforations rondes",
       "usp2": "Réaction au feu {fireClass}",
       "usp3": "αw {alphaW} selon le motif",
-      "description2": "Sur mesure pour murs et plafonds, jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm. Huit placages de stock, tout placage et toute finition sur commande."
+      "description2": "Chaque panneau est découpé d’après vos plans, jusqu’à 3 050 × 1 220 mm en 10 ou 19 mm d’épaisseur, pour murs et plafonds. Choisissez l’un des huit placages de stock ou commandez tout autre placage et finition."
     },
     "patterns": {
       "tag": "PERFORATION",
@@ -2205,7 +2205,7 @@
       "questions": {
         "fscSource": {
           "question": "D’où provient le placage certifié FSC ?",
-          "answer": "Tous les placages rWood sont certifiés FSC® (certificat de chaîne de contrôle C191539) et proviennent de forêts gérées durablement. Les huit placages de stock viennent d’Europe, de Scandinavie et d’Amérique du Nord ; le certificat est disponible sur demande."
+          "answer": "Chaque placage que nous perçons pour rWood Perf est certifié FSC® sous le certificat de chaîne de contrôle C191539. Les huit placages de stock proviennent de forêts d’Europe, de Scandinavie et d’Amérique du Nord ; demandez le certificat avec votre devis."
         },
         "fireRating": {
           "question": "Quel est le classement au feu ?",
@@ -2213,7 +2213,7 @@
         },
         "leadTime": {
           "question": "Quel est le délai de livraison standard ?",
-          "answer": "Les placages de stock sont livrés en 3–4 semaines ; les essences hors stock et les finitions sur mesure demandent 6–8 semaines. Les panneaux sur mesure sont fabriqués d’après vos plans."
+          "answer": "Un panneau perforé dans un placage de stock quitte l’usine 3–4 semaines après votre commande ; une essence hors stock ou une finition sur mesure demande 6–8 semaines. Chaque panneau est percé et découpé d’après vos plans."
         },
         "installMethod": {
           "question": "Comment les panneaux rWood sont-ils posés ?",
@@ -2221,7 +2221,7 @@
         },
         "substrateCleanup": {
           "question": "Que deviennent les panneaux en fin de vie ?",
-          "answer": "Re-Sound reprend gratuitement les panneaux en fin de vie en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
+          "answer": "En fin de vie, les panneaux rWood Perf nous reviennent : la reprise est gratuite en Belgique, aux Pays-Bas, en France, en Allemagne et au Luxembourg."
         }
       }
     },
@@ -2259,7 +2259,7 @@
     },
     "veneers": {
       "title": "Huit placages de stock, tout placage sur commande",
-      "description": "Tous les placages rWood sont certifiés FSC® et proviennent de forêts gérées durablement. Le bois est un matériau naturel : le veinage et la teinte varient d’un panneau à l’autre, et les échantillons à l’écran ne sont qu’indicatifs.",
+      "description": "Les perforations traversent le placage de part en part : veinage et teinte comptent donc deux fois, sur la face et autour de chaque trou. Les huit placages de stock sont certifiés FSC® ; le bois étant un matériau naturel, les panneaux diffèrent les uns des autres et les échantillons à l’écran ne donnent qu’une impression.",
       "alt": "Placage {name}",
       "origin": {
         "europe": "Europe",
@@ -2288,7 +2288,7 @@
       "title": "D’après vos plans",
       "description": "rWood Perf est fabriqué sur mesure pour murs et plafonds : de 100 × 100 mm jusqu’à 3 050 × 1 220 mm, en 10 et 19 mm, dans chacun des quatre motifs.",
       "customDimTitle": "Dimensions sur mesure",
-      "customDimDesc": "Chaque panneau est fabriqué aux dimensions de vos plans, de 100 × 100 mm jusqu’à 3 050 × 1 220 mm.",
+      "customDimDesc": "D’un remplissage de 100 × 100 mm à une plaque entière de 3 050 × 1 220 mm, chaque panneau perforé est découpé aux dimensions de vos plans.",
       "finishTitle": "Tout placage et toute finition",
       "finishDesc": "Huit placages de stock ; toute autre essence, teinte et finition sur commande.",
       "samplesTitle": "Échantillons de placage gratuits",

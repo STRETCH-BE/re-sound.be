@@ -2081,7 +2081,7 @@
       "usp1": "Runde Perforationen",
       "usp2": "Brandverhalten {fireClass}",
       "usp3": "αw {alphaW} je nach Muster",
-      "description2": "Nach Maß für Wände und Decken, bis 3 050 × 1 220 mm, in 10 und 19 mm. Acht Lagerfurniere, jedes Furnier und jede Oberfläche auf Bestellung."
+      "description2": "Jedes Paneel wird nach Ihren Zeichnungen zugeschnitten, bis 3 050 × 1 220 mm und 10 oder 19 mm stark, für Wände und Decken. Wählen Sie eines der acht Lagerfurniere oder bestellen Sie jedes andere Furnier und jede Oberfläche."
     },
     "patterns": {
       "tag": "PERFORATION",
@@ -2205,7 +2205,7 @@
       "questions": {
         "fscSource": {
           "question": "Woher stammt das FSC-zertifizierte Furnier?",
-          "answer": "Alle rWood-Furniere sind FSC®-zertifiziert (Chain-of-Custody-Zertifikat C191539) und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Die acht Lagerfurniere kommen aus Europa, Skandinavien und Nordamerika; das Zertifikat erhalten Sie auf Anfrage."
+          "answer": "Jedes Furnier, das wir für rWood Perf bohren, ist FSC®-zertifiziert unter dem Chain-of-Custody-Zertifikat C191539. Die acht Lagerfurniere stammen aus Wäldern in Europa, Skandinavien und Nordamerika; fordern Sie das Zertifikat mit Ihrem Angebot an."
         },
         "fireRating": {
           "question": "Welche Brandklasse hat das Paneel?",
@@ -2213,7 +2213,7 @@
         },
         "leadTime": {
           "question": "Wie lang ist die Standardlieferzeit?",
-          "answer": "Lagerfurniere liefern wir in 3–4 Wochen; nicht bevorratete Holzarten und Sonderoberflächen benötigen 6–8 Wochen. Maßpaneele fertigen wir nach Ihren Zeichnungen."
+          "answer": "Ein perforiertes Paneel in einem Lagerfurnier verlässt das Werk 3–4 Wochen nach Ihrer Bestellung; eine nicht bevorratete Holzart oder eine Sonderoberfläche braucht 6–8 Wochen. Jedes Paneel wird nach Ihren Zeichnungen gebohrt und zugeschnitten."
         },
         "installMethod": {
           "question": "Wie werden rWood-Paneele montiert?",
@@ -2221,7 +2221,7 @@
         },
         "substrateCleanup": {
           "question": "Was geschieht mit den Paneelen am Ende der Nutzungsdauer?",
-          "answer": "Re-Sound nimmt Paneele am Ende der Nutzungsdauer in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos zurück."
+          "answer": "Am Ende ihrer Nutzungsdauer kommen rWood-Perf-Paneele zu uns zurück: Die Rücknahme ist in Belgien, den Niederlanden, Frankreich, Deutschland und Luxemburg kostenlos."
         }
       }
     },
@@ -2259,7 +2259,7 @@
     },
     "veneers": {
       "title": "Acht Lagerfurniere, jedes Furnier auf Bestellung",
-      "description": "Alle rWood-Furniere sind FSC®-zertifiziert und stammen aus verantwortungsvoll bewirtschafteten Wäldern. Holz ist ein Naturmaterial: Maserung und Farbe variieren von Paneel zu Paneel, Bildschirmmuster sind nur ein Anhaltspunkt.",
+      "description": "Die Perforationen gehen durch das Furnier hindurch, Maserung und Farbe zählen also doppelt: auf der Fläche und rund um jedes Loch. Alle acht Lagerfurniere sind FSC®-zertifiziert; da Holz ein Naturmaterial ist, unterscheiden sich die Paneele voneinander, und die Muster am Bildschirm geben nur einen Eindruck.",
       "alt": "Furnier {name}",
       "origin": {
         "europe": "Europa",
@@ -2288,7 +2288,7 @@
       "title": "Nach Ihren Zeichnungen",
       "description": "rWood Perf wird nach Maß für Wände und Decken gefertigt: von 100 × 100 mm bis 3 050 × 1 220 mm, in 10 und 19 mm, in jedem der vier Muster.",
       "customDimTitle": "Individuelle Abmessungen",
-      "customDimDesc": "Jedes Paneel wird in den Maßen Ihrer Zeichnungen gefertigt, von 100 × 100 mm bis 3 050 × 1 220 mm.",
+      "customDimDesc": "Vom Füllstück von 100 × 100 mm bis zur vollen Platte von 3 050 × 1 220 mm wird jedes perforierte Paneel auf die Maße Ihrer Zeichnungen zugeschnitten.",
       "finishTitle": "Jedes Furnier, jede Oberfläche",
       "finishDesc": "Acht Lagerfurniere; jede andere Holzart, Beizfarbe und Oberfläche auf Bestellung.",
       "samplesTitle": "Kostenlose Furniermuster",

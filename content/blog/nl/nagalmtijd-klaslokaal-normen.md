@@ -16,11 +16,13 @@ dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/nagalmtijd-klaslokaal.jpg"
 heroAlt: "Klaslokaal met rPET Groove panelen op de achterwand en een absorberend plafond"
-internalLinks: ["/nl/applications/onderwijs","/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/interior","/nl/products/rwood-micro","/nl/products/divide","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
+internalLinks: ["/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/interior","/nl/products/rwood-micro","/nl/products/divide","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag de bestektekst en een stalenpakket voor je school"
 sources: "NBN S 01-400-2:2012 (akoestische criteria voor schoolgebouwen); DIN 18041:2016 (Hörsamkeit in Räumen); ISO 3382-2 (meting van de nagalmtijd); ISO 11654 (absorptieklassen); EN 13501-1 (brandclassificatie); productgegevens Re-Sound."
 faq: [{"question":"Welke nagalmtijd is verplicht in een klaslokaal?","answer":"NBN S 01-400-2 legt per lokaaltype en volume een maximale nominale nagalmtijd op; voor een standaardklas komt dat in de praktijk neer op ongeveer 0,6 tot 0,8 s (normaal comfort), strenger voor verhoogd comfort. Laat de exacte eis berekenen door je architect of akoesticus."},{"question":"Volstaan wandpanelen alleen in een klas?","answer":"Meestal niet zonder veel wandoppervlak in te nemen: het plafond is het grootste vlak en het efficiëntst. Plafond plus achterwand is de combinatie die in de meeste klassen de norm haalt."},{"question":"Hoe snel kan een school geplaatst worden?","answer":"rPET leveren we in ongeveer 3 à 4 werkweken; een gemiddelde klas plaatst een team op een halve dag. Bestel vóór eind mei om zeker in de zomervakantie te plaatsen."}]
 draft: false
+translationKey: "classroom-reverberation"
+model: "original"
 wordCount: 1286
 ---
 

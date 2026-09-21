@@ -16,7 +16,8 @@
     "pricelist:build": "node scripts/build-price-list-pdf.mjs",
     "blog:slugs": "node scripts/build-blog-slugs.mjs",
     "verify:redirects": "node scripts/verify-redirects.mjs",
-    "verify:redirects:build": "node scripts/verify-redirects-build.mjs"
+    "verify:redirects:build": "node scripts/verify-redirects-build.mjs",
+    "verify:unique": "node scripts/uniqueness-check.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",

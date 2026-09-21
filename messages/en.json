@@ -2081,7 +2081,7 @@
       "usp1": "Round perforations",
       "usp2": "{fireClass} reaction to fire",
       "usp3": "αw {alphaW} by pattern",
-      "description2": "Made to measure for walls and ceilings, up to 3 050 × 1 220 mm, in 10 and 19 mm. Eight stock veneers, any veneer and finish to order."
+      "description2": "Each panel is cut to your drawings, up to 3 050 × 1 220 mm and 10 or 19 mm thick, for walls and ceilings. Choose one of the eight stock veneers or order any veneer and finish."
     },
     "patterns": {
       "tag": "PERFORATION",
@@ -2205,7 +2205,7 @@
       "questions": {
         "fscSource": {
           "question": "Where does the FSC-certified veneer come from?",
-          "answer": "All rWood veneers are FSC®-certified, chain-of-custody certificate C191539, and come from responsibly managed forests. The eight stock veneers are sourced in Europe, Scandinavia and North America; the certificate is available on request."
+          "answer": "Every veneer we drill for rWood Perf is FSC®-certified under chain-of-custody certificate C191539. The eight stock veneers come from forests in Europe, Scandinavia and North America; ask us for the certificate with your quote."
         },
         "fireRating": {
           "question": "What is the fire rating?",
@@ -2213,7 +2213,7 @@
         },
         "leadTime": {
           "question": "What is the standard lead time?",
-          "answer": "Stock veneers ship in 3–4 weeks; non-stock species and custom finishes take 6–8 weeks. Made-to-measure panels are produced from your drawings."
+          "answer": "A perforated panel in a stock veneer leaves the plant 3–4 weeks after your order; a species we do not keep in stock, or a custom finish, needs 6–8 weeks. Every panel is drilled and cut to your drawings."
         },
         "installMethod": {
           "question": "How are rWood panels installed?",
@@ -2221,7 +2221,7 @@
         },
         "substrateCleanup": {
           "question": "What happens to the panels at end of life?",
-          "answer": "Re-Sound takes panels back free of charge at end of life in Belgium, the Netherlands, France, Germany and Luxembourg."
+          "answer": "At the end of their life, rWood Perf panels come back to us: the take-back is free of charge in Belgium, the Netherlands, France, Germany and Luxembourg."
         }
       }
     },
@@ -2259,7 +2259,7 @@
     },
     "veneers": {
       "title": "Eight stock veneers, any veneer to order",
-      "description": "All rWood veneers are FSC®-certified and come from responsibly managed forests. Wood is a natural material: grain and colour vary from panel to panel, and on-screen swatches are indicative only.",
+      "description": "Perforations cut straight through the veneer, so grain and colour matter twice: on the face and around every hole. All eight stock veneers are FSC®-certified; as wood is a natural material, panels differ from one to the next and the swatches on screen only give an impression.",
       "alt": "{name} veneer",
       "origin": {
         "europe": "Europe",
@@ -2288,7 +2288,7 @@
       "title": "From your drawings",
       "description": "rWood Perf is made to measure for walls and ceilings: from 100 × 100 mm up to 3 050 × 1 220 mm, in 10 and 19 mm, in any of the four patterns.",
       "customDimTitle": "Custom dimensions",
-      "customDimDesc": "Every panel is produced to the sizes on your drawings, from 100 × 100 mm up to 3 050 × 1 220 mm.",
+      "customDimDesc": "From a 100 × 100 mm infill to a full 3 050 × 1 220 mm sheet, each perforated panel is cut to the dimensions on your drawings.",
       "finishTitle": "Any veneer and finish",
       "finishDesc": "Eight stock veneers; any other veneer species, stain colour and finish to order.",
       "samplesTitle": "Free veneer samples",

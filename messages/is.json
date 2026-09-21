@@ -2084,7 +2084,7 @@
       "usp1": "Hringlaga göt",
       "usp2": "Brunaflokkur {fireClass}",
       "usp3": "αw {alphaW} eftir mynstri",
-      "description2": "Sérsniðið fyrir veggi og loft, allt að 3 050 × 1 220 mm, í 10 og 19 mm. Átta spónategundir á lager, hvaða spónn og áferð sem er eftir pöntun."
+      "description2": "Hver plata er skorin eftir teikningunum þínum, allt að 3 050 × 1 220 mm og 10 eða 19 mm þykk, fyrir veggi og loft. Veldu eina af átta spónategundum á lager eða pantaðu hvaða spón og áferð sem er."
     },
     "patterns": {
       "tag": "GÖTUN",
@@ -2208,7 +2208,7 @@
       "questions": {
         "fscSource": {
           "question": "Hvaðan kemur FSC-vottaði spónninn?",
-          "answer": "Allur rWood-spónn er FSC®-vottaður (rekjanleikavottorð C191539) og kemur úr skógum sem eru nýttir á ábyrgan hátt. Spónategundirnar átta á lager koma frá Evrópu, Skandinavíu og Norður-Ameríku; vottorðið fæst sé þess óskað."
+          "answer": "Hver spónn sem við borum fyrir rWood Perf er FSC®-vottaður samkvæmt rekjanleikavottorði C191539. Spónategundirnar átta á lager koma úr skógum í Evrópu, Skandinavíu og Norður-Ameríku; biddu um vottorðið með tilboðinu þínu."
         },
         "fireRating": {
           "question": "Hver er brunaflokkurinn?",
@@ -2216,7 +2216,7 @@
         },
         "leadTime": {
           "question": "Hver er venjulegur afhendingartími?",
-          "answer": "Spónn á lager er afhentur á 3–4 vikum; viðartegundir sem ekki eru á lager og sérsniðin áferð taka 6–8 vikur. Sérsniðnar plötur eru framleiddar eftir teikningum ykkar."
+          "answer": "Götuð plata í spóni á lager fer frá verksmiðjunni 3–4 vikum eftir pöntun; viðartegund sem við eigum ekki á lager, eða sérsniðin áferð, tekur 6–8 vikur. Hver plata er boruð og skorin eftir teikningunum þínum."
         },
         "installMethod": {
           "question": "Hvernig eru rWood-plötur settar upp?",
@@ -2224,7 +2224,7 @@
         },
         "substrateCleanup": {
           "question": "Hvað verður um plöturnar við lok líftíma?",
-          "answer": "Re-Sound tekur plötur til baka án endurgjalds við lok líftíma í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
+          "answer": "Við lok líftíma koma rWood Perf-plötur aftur til okkar: við tökum þær til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."
         }
       }
     },
@@ -2262,7 +2262,7 @@
     },
     "veneers": {
       "title": "Átta spónategundir á lager, hvaða spónn sem er eftir pöntun",
-      "description": "Allur rWood-spónn er FSC®-vottaður og kemur úr skógum sem eru nýttir á ábyrgan hátt. Viður er náttúrulegt efni: æðar og litur eru breytileg frá plötu til plötu og sýnishorn á skjá eru aðeins til viðmiðunar.",
+      "description": "Götin fara í gegnum spóninn, svo æðar og litur skipta tvöfalt máli: á fletinum og í kringum hvert gat. Allar átta spónategundirnar á lager eru FSC®-vottaðar; þar sem viður er náttúrulegt efni eru plöturnar ólíkar innbyrðis og sýnishornin á skjánum gefa aðeins hugmynd.",
       "alt": "Spónn {name}",
       "origin": {
         "europe": "Evrópa",
@@ -2291,7 +2291,7 @@
       "title": "Eftir teikningum ykkar",
       "description": "rWood Perf er framleitt sérsniðið fyrir veggi og loft: frá 100 × 100 mm upp í 3 050 × 1 220 mm, í 10 og 19 mm, í hverju mynstranna fjögurra sem er.",
       "customDimTitle": "Sérsniðnar stærðir",
-      "customDimDesc": "Hver plata er framleidd í þeim stærðum sem teikningar ykkar segja til um, frá 100 × 100 mm upp í 3 050 × 1 220 mm.",
+      "customDimDesc": "Frá 100 × 100 mm fyllistykki upp í heila plötu, 3 050 × 1 220 mm, er hver götuð plata skorin í þær stærðir sem teikningarnar þínar segja til um.",
       "finishTitle": "Hvaða spónn og áferð sem er",
       "finishDesc": "Átta spónategundir á lager; hvaða önnur viðartegund, bæslit og áferð sem er eftir pöntun.",
       "samplesTitle": "Ókeypis spónsýnishorn",

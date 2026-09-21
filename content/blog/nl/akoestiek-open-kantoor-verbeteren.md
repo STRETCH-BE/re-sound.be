@@ -16,11 +16,13 @@ dateModified: "2026-09-20"
 heroImage: "/images/products/rpet-groove/hero-rpet-groove.webp"
 heroImageMissing: "/images/blog/akoestiek-open-kantoor.jpg"
 heroAlt: "Open kantoor met rPET Groove wandpanelen en een Solo Flex belcabine"
-internalLinks: ["/nl/applications/kantoor","/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/divide","/nl/products/solo-eco","/nl/products/solo-flex","/nl/products/modular-xl","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
+internalLinks: ["/nl/products/pet-akoestische-panelen","/nl/products/rpet-groove","/nl/products/divide","/nl/products/solo-eco","/nl/products/solo-flex","/nl/products/modular-xl","https://stretchplafond.be/products/acoustic-stretch-system","/nl/where-to-buy"]
 cta: "Vraag gratis akoestisch advies of een stalenpakket"
 sources: "ISO 22955:2021 (akoestische kwaliteit van open kantoren); ISO 3382-3 (spraakafname in open kantoren); ISO 3382-2 (nagalmtijdmeting); ISO 11654 (absorptieklassen); productgegevens Re-Sound."
 faq: [{"question":"Wat is een goede nagalmtijd voor een open kantoor?","answer":"Tussen 0,5 en 0,8 seconden, afhankelijk van de hoogte en de bezetting. Boven 1 seconde is absorptie (plafond, wanden) de eerste stap; rond 0,6 seconden en toch onrustig, dan helpen zoneren en belcabines meer."},{"question":"Helpen akoestische panelen tegen het lawaai van collega's?","answer":"Ja, op twee manieren: ze verkorten de nagalm zodat het achtergrondniveau daalt, en ze verlagen de afstand waarop je collega's nog verstaat. Ze maken een gesprek op de vloer niet onhoorbaar; daarvoor dienen belcabines en pods."},{"question":"Hoeveel panelen heeft een open kantoor nodig?","answer":"Als vuistregel 15 à 20 % van het vloeroppervlak aan absorptie van klasse A of B, bovenop een absorberend plafond. In [Hoeveel akoestische panelen heb je nodig?](/nl/blog/hoeveel-akoestische-panelen-nodig) rekenen we het voor drie ruimtes uit."}]
 draft: false
+translationKey: "open-office-acoustics"
+model: "original"
 wordCount: 1310
 ---
 
