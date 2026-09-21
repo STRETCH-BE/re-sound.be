@@ -19,19 +19,19 @@
     "divideTitle": "Divide – frístandandi hljóðskilrúm | Re-Sound",
     "divideDescription": "Frístandandi hljóðdeyfiskilrúm með segultengdum einingum: ísog á báðum hliðum, engin uppsetning, endurunninn textíll. Framleitt í Belgíu.",
     "rwoodGrooveTitle": "rWood Groove – rifjaðar hljóðdeyfiplötur, eik/hnota | Re-Sound",
-    "rwoodGrooveDescription": "Rifjuð hljóðdeyfiborð úr viði: FSC®-vottaður eikar- eða hnotuspónn á MDF-kjarna með 3 mm filti úr endurunnu PET. αw 0,90, flokkur A, mynstrið Original sem staðall, fimm spónar, 10 og 19 mm.",
+    "rwoodGrooveDescription": "Rifjuð hljóðdeyfiborð úr viði: FSC®-eikar- eða hnotuspónn á MDF með filti úr endurunnu PET. αw 0,90, flokkur A, mynstrið Original sem staðall, 10/19 mm.",
     "rwoodPerfTitle": "rWood Perf – götaðar hljóðdeyfiplötur úr viði | Re-Sound",
     "rwoodPerfDescription": "Götaðar hljóðdeyfiplötur úr viði með FSC-vottuðum spón: fjögur götunarmynstur fyrir breiðbandsísog, 8 áferðir, eldtefjandi kjarni.",
     "rwoodMicroTitle": "rWood Micro – örgötaðar hljóðdeyfiplötur úr viði | Re-Sound",
-    "rwoodMicroDescription": "Örgataðar hljóðdeyfiplötur úr viði (frá 0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur {fireClass}, sérsniðið allt að 3 050 × 1 220 mm.",
+    "rwoodMicroDescription": "Örgataðar hljóðdeyfiplötur úr viði (frá 0,5 mm) með FSC-vottuðum spón: nánast ósýnilegt mynstur, brunaflokkur {fireClass}, sérsniðnar eftir máli.",
     "rwoodVeneerTitle": "rWood Panel – spónlagðar hljóðdeyfiplötur, 12 viðarspónar | Re-Sound",
-    "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 12 spónum úr ekta viði, Nature- eða Gemini-lína: FSC®-vottaðar, náttúrulegt eða litað lakk, HPL, filma eða málning. Verksmiðjufrágengnar, hvaða spónn sem er eftir pöntun.",
+    "rwoodVeneerDescription": "Sléttar spónlagðar hljóðdeyfiplötur í 12 spónum úr ekta viði: FSC®, náttúrulegt eða litað lakk, HPL, filma eða málning. Hvaða spónn sem er eftir pöntun.",
     "rpetGrooveTitle": "rPET Groove — rifflaðar PET-plötur, 10 lagerlitir | Re-Sound",
-    "rpetGrooveDescription": "Rifflaðar PET-hljóðdeyfiplötur fræstar úr rPET Panel: 10 lagerlitir og hvaða litur sem er eftir pöntun, 12/24/36 mm, NRC allt að 0,90, brunaviðbrögð eftir lit (EN 13501-1). Framleitt í Póllandi.",
+    "rpetGrooveDescription": "Rifflaðar PET-hljóðdeyfiplötur fræstar úr rPET Panel: hvaða litur sem er eftir pöntun, 12/24/36 mm, NRC allt að 0,90, brunaflokkur eftir lit.",
     "rpetPanelTitle": "rPET Panel — hljóðdeyfiplata úr endurunnu PET, 10 lagerlitir | Re-Sound",
-    "rpetPanelDescription": "Hljóðdeyfiplata úr endurunnu PET sem er unnin eins og MDF: skera, fræsa, bora, mála eða UV-prenta. 10 lagerlitir og hvaða litur sem er eftir pöntun, 9/12 mm, 2 800 × 1 220 eða 2 440 × 1 220 mm, OEKO-TEX®-vottað. Framleitt í Póllandi.",
+    "rpetPanelDescription": "Hljóðdeyfiplata úr endurunnu PET, unnin eins og MDF: skera, fræsa, bora, mála eða UV-prenta. Hvaða litur sem er eftir pöntun, 9/12 mm, OEKO-TEX®.",
     "rpetFlexGrooveTitle": "rPET Flex Groove — sveigjanlegar PET-plötur, bogar | Re-Sound",
-    "rpetFlexGrooveDescription": "Sveigjanlegar PET-hljóðdeyfiplötur fyrir bogadregna veggi, súlur og loft, skornar úr 9 mm rPET Panel: V-skurðir, lágmarksradíus 500 mm, 10 lagerlitir og hvaða litur sem er eftir pöntun, OEKO-TEX®-vottað.",
+    "rpetFlexGrooveDescription": "Sveigjanlegar PET-hljóðdeyfiplötur fyrir bogadregna veggi, úr 9 mm rPET Panel: V-skurðir, radíus frá 500 mm, hvaða litur sem er eftir pöntun, OEKO-TEX®.",
     "faqTitle": "FAQ — Re-Sound Hljóðplötur",
     "faqDescription": "Svör við algengum spurningum um hljóðdeyfiplötur og símaklefa frá Re-Sound: ísog, brunaflokkar, afhendingartími, skilakerfi og vöruval.",
     "soloFlexTitle": "Solo Flex – hljóðeinangraður símaklefi fyrir einn | Re-Sound",
@@ -4075,7 +4075,7 @@
     },
     "rpet": {
       "title": "PET hljóðdeyfiplötur úr endurunnum flöskum | Re-Sound",
-      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove, Flex Groove. Tíu lagerlitir, hvaða litur sem er eftir pöntun, OEKO-TEX®, B-s1,d0 eða B-s2,d0 eftir lit. Framleiddar í verksmiðju okkar í Póllandi.",
+      "description": "PET hljóðdeyfiplötur úr endurunnum flöskum: rPET Panel, Groove, Flex Groove. Hvaða litur sem er eftir pöntun, OEKO-TEX®, brunaflokkur eftir lit.",
       "h1": "PET hljóðdeyfiplötur: rPET Panel, Groove og Flex Groove",
       "breadcrumb": "rPET",
       "intro": "PET hljóðdeyfiplötur breyta notuðum drykkjarflöskum í þétt pólýesterfilt sem gleypir hljóð, lætur vinna sig með CNC-fræsara eins og MDF og fæst í litavali sem arkitektar nota í raun og veru. Re-Sound er vörumerki Stretch Group. Við framleiðum í okkar eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); rPET línan er framleidd í Częstochowa. Línan samanstendur af þremur gerðum. rPET Panel er slétta platan: hana má skera, fræsa, bora og mála fyrir veggi, loft og húsgögn. rPET Groove bætir við rifflaðri áferð í lagerlitunum tíu og þremur þykktum fyrir meiri hljóðgleypni á veggjum og í lofti. rPET Flex Groove heldur rifflaða útlitinu en sveigist utan um súlur og bogadregna veggi niður í 500 mm radíus. Allar þrjár gerðirnar eru vottaðar samkvæmt OEKO-TEX® Standard 100, ná B-s1,d0 eða B-s2,d0 samkvæmt EN 13501-1 og má skila til endurvinnslu þegar líftíma lýkur. Notaðu töfluna hér að neðan til að bera PET hljóðdeyfiplötur saman eftir sniði, hljóðgleypni og afhendingartíma og opnaðu síðan gerðasíðuna til að sjá áferðir og niðurhal.",
@@ -4256,7 +4256,7 @@
   },
   "boothGuide": {
     "title": "Skrifstofusímaklefar: verð og ISO-flokkar 2026 | Re-Sound",
-    "description": "Hvað kostar símaklefi? Solo ECO frá {soloEco}, Solo Flex frá {soloFlex} án vsk., Modular XL frá {modularXl}. ISO-flokkar, uppsetning, afhending og ábyrgð.",
+    "description": "Hvað kostar símaklefi? Solo ECO frá {soloEco}, Solo Flex frá {soloFlex} án vsk., Modular XL frá {modularXl}. ISO-flokkar, afhending og ábyrgð.",
     "h1": "Símaklefar fyrir skrifstofur: verð, flokkar og hvernig á að velja",
     "intro": "Símaklefi fyrir skrifstofur frá Re-Sound kostar frá {soloEco} án vsk. án uppsetningar (Solo ECO), Solo Flex frá {soloFlex} og Modular XL fundarklefi frá {modularXl}. Hér fyrir neðan finnur þú öll verð sem við birtum, hvað er innifalið, ISO 23351-1 talhljóðsflokkana gefna upp af heiðarleika og hvernig uppsetning, prófun og ábyrgð virka.",
     "breadcrumb": "Verð á símaklefum",
@@ -4715,7 +4715,7 @@
   "calculator": {
     "meta": {
       "title": "Ómtímareiknivél (RT60)",
-      "description": "Áætlaðu ómtíma rýmisins með Sabine-formúlunni, berðu hann saman við markgildið fyrir tegund rýmis og sjáðu hversu marga m² af Re-Sound hljóðdeyfiplötum þú þarft."
+      "description": "Áætlaðu ómtíma rýmisins með Sabine-formúlunni, berðu hann saman við markgildið fyrir tegund rýmis og sjáðu hversu marga m² af hljóðdeyfiplötum þú þarft."
     },
     "hero": {
       "tag": "Ókeypis verkfæri",

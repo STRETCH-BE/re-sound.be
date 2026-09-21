@@ -19,25 +19,25 @@
     "divideTitle": "Separadores Acústicos Autoportantes Divide | Re-Sound",
     "divideDescription": "Mamparas acústicas autoportantes con conexión modular magnética: absorción por ambas caras, sin instalación, textil reciclado. Fabricadas en Bélgica.",
     "rwoodGrooveTitle": "rWood Groove — Paneles acústicos de madera ranurados | Re-Sound",
-    "rwoodGrooveDescription": "Tablas acústicas de madera ranurada: chapa de roble o nogal con certificación FSC® sobre núcleo de MDF con fieltro de 3 mm de PET reciclado. αw 0,90, clase A, patrón Original como estándar, cinco chapas, 10 y 19 mm.",
+    "rwoodGrooveDescription": "Tablas acústicas de madera ranurada: chapa de roble o nogal FSC® sobre MDF y fieltro PET reciclado. αw 0,90, clase A, patrón Original de serie, 10/19 mm.",
     "rwoodPerfTitle": "rWood Perf — Paneles acústicos de madera perforada | Re-Sound",
     "rwoodPerfDescription": "Paneles acústicos de madera perforada con chapa certificada FSC: cuatro patrones de perforación para absorción de banda ancha, 8 acabados, núcleo ignífugo.",
     "rwoodMicroTitle": "rWood Micro — Paneles acústicos microperforados | Re-Sound",
-    "rwoodMicroDescription": "Paneles acústicos de madera microperforados (desde 0,5 mm) con chapa certificada FSC: patrón casi invisible, reacción al fuego {fireClass}, a medida hasta 3 050 × 1 220 mm.",
+    "rwoodMicroDescription": "Paneles acústicos de madera microperforados (desde 0,5 mm) con chapa FSC: patrón casi invisible, reacción al fuego {fireClass}, fabricados a medida.",
     "rwoodVeneerTitle": "rWood Panel — Paneles acústicos chapados, 12 chapas de madera | Re-Sound",
-    "rwoodVeneerDescription": "Paneles acústicos chapados lisos en 12 chapas de madera natural, gama Nature o Gemini: certificación FSC®, laca natural o pigmentada, HPL, lámina o pintura. Acabados en fábrica, cualquier chapa por encargo.",
+    "rwoodVeneerDescription": "Paneles acústicos chapados lisos en 12 chapas de madera natural: FSC®, laca natural o pigmentada, HPL, lámina o pintura. Cualquier chapa por encargo.",
     "rpetGrooveTitle": "rPET Groove — paneles de PET ranurados, 10 colores de stock | Re-Sound",
-    "rpetGrooveDescription": "Paneles acústicos de PET ranurados, mecanizados a partir del rPET Panel: 10 colores de stock y cualquier color por encargo, 12/24/36 mm, NRC hasta 0,90, reacción al fuego según el color (EN 13501-1). Fabricado en Polonia.",
+    "rpetGrooveDescription": "Paneles acústicos de PET ranurados, mecanizados del rPET Panel: cualquier color por encargo, 12/24/36 mm, NRC hasta 0,90, reacción al fuego según color.",
     "rpetPanelTitle": "rPET Panel — panel acústico de PET reciclado, 10 colores de stock | Re-Sound",
-    "rpetPanelDescription": "Panel acústico de PET reciclado que se mecaniza como el MDF: cortar, fresar, taladrar, pintar o imprimir en UV. 10 colores de stock y cualquier color por encargo, 9/12 mm, 2 800 × 1 220 o 2 440 × 1 220 mm, certificado OEKO-TEX®. Fabricado en Polonia.",
+    "rpetPanelDescription": "Panel acústico de PET reciclado que se mecaniza como el MDF: cortar, fresar, pintar o imprimir en UV. Cualquier color por encargo, 9/12 mm, OEKO-TEX®.",
     "rpetFlexGrooveTitle": "rPET Flex Groove — paneles de PET flexibles, curvas | Re-Sound",
-    "rpetFlexGrooveDescription": "Paneles acústicos de PET flexibles para paredes curvas, columnas y techos, cortados del rPET Panel de 9 mm: cortes en V, radio mínimo 500 mm, 10 colores de stock y cualquier color por encargo, certificado OEKO-TEX®.",
+    "rpetFlexGrooveDescription": "Paneles acústicos de PET flexibles para paredes curvas, del rPET Panel de 9 mm: cortes en V, radio desde 500 mm, cualquier color por encargo, OEKO-TEX®.",
     "faqTitle": "FAQ — Paneles Acústicos Re-Sound",
     "faqDescription": "Respuestas a las preguntas frecuentes sobre paneles acústicos y cabinas telefónicas Re-Sound: absorción, reacción al fuego, plazos, recogida y selección.",
     "soloFlexTitle": "Solo Flex — Cabina acústica individual para la oficina | Re-Sound",
     "soloFlexDescription": "Cabina acústica individual para llamadas: 1 m² de huella, mesa regulable en altura, 230 V y USB-C, ventilación silenciosa, 24 dB(A) de reducción de voz.",
     "soloEcoTitle": "Solo ECO — Cabina telefónica individual de entrada | Re-Sound",
-    "soloEcoDescription": "Cabina telefónica de oficina individual de entrada: 1,1 m², mesa alta, enchufe 230 V con USB, ventilación hasta 4 m³/min, pared trasera cerrada o de vidrio.",
+    "soloEcoDescription": "Cabina telefónica individual de entrada: 1,1 m², mesa alta, enchufe 230 V con USB, ventilación hasta 4 m³/min, pared trasera cerrada o de vidrio.",
     "duoTitle": "Duo — Cabina telefónica de oficina para 2 personas | Re-Sound",
     "duoDescription": "Cabina telefónica de oficina con dos configuraciones: Flex sienta a dos para reunirse, Work da a una persona una mesa amplia. 2 m², 230 V, ventilada.",
     "modularXlTitle": "Modular XL — Pod de reuniones acústico, 6–10 personas | Re-Sound",
@@ -4075,7 +4075,7 @@
     },
     "rpet": {
       "title": "Paneles acústicos PET de botellas recicladas | Re-Sound",
-      "description": "Paneles acústicos de PET de botellas recicladas: rPET Panel, Groove, Flex Groove. Diez colores de stock, cualquier color bajo pedido, OEKO-TEX®, B-s1,d0 o B-s2,d0 según el color. Fabricados en nuestra planta de Polonia.",
+      "description": "Paneles acústicos de PET de botellas recicladas: rPET Panel, Groove, Flex Groove. Cualquier color bajo pedido, OEKO-TEX®, reacción al fuego según color.",
       "h1": "Paneles acústicos PET: rPET Panel, Groove y Flex Groove",
       "breadcrumb": "rPET",
       "intro": "Los paneles acústicos PET convierten botellas posconsumo en un fieltro denso de poliéster que absorbe el sonido, se mecaniza en CNC como el MDF y se ofrece en una paleta de colores que los arquitectos realmente utilizan. Re-Sound es una marca de Stretch Group. Fabricamos en nuestras propias plantas de Beveren-Waas (Bélgica) y Częstochowa (Polonia); la gama rPET se produce en Częstochowa. La gama consta de tres modelos. rPET Panel es la placa lisa: córtela, frésela, taládrela y píntela para paredes, techos y mobiliario. rPET Groove añade una superficie ranurada en los diez colores de stock y tres grosores para una mayor absorción en paredes y techos. rPET Flex Groove conserva el aspecto ranurado pero se curva alrededor de columnas y paredes curvas hasta un radio de 500 mm. Los tres modelos cuentan con la certificación OEKO-TEX® Standard 100, alcanzan B-s1,d0 o B-s2,d0 según EN 13501-1 y pueden recogerse para su reciclaje al final de su vida útil. Utilice la tabla siguiente para comparar los paneles acústicos PET por formato, absorción y plazo de entrega, y abra después la página del modelo para ver acabados y descargas.",
@@ -4151,7 +4151,7 @@
     },
     "booths": {
       "title": "Fabricante de cabinas telefónicas de oficina: Solo, Duo, Modular XL | Re-Sound",
-      "description": "Cabinas telefónicas de oficina y pods de reuniones: Solo ECO y Solo Flex (1 pers.), Duo (2), Modular XL (6–10). Reducción de voz ISO 23351-1 (Flex y XL), 230 V.",
+      "description": "Cabinas telefónicas de oficina y pods de reuniones: Solo ECO y Solo Flex (1 pers.), Duo (2), Modular XL (6–10). Reducción de voz ISO 23351-1 en Flex y XL.",
       "h1": "Cabinas telefónicas de oficina y pods de reuniones, directamente del fabricante",
       "breadcrumb": "Cabinas",
       "intro": "Una cabina telefónica de oficina ofrece a una persona un espacio silencioso y ventilado para llamadas y videorreuniones dentro de una planta diáfana; un pod de reuniones hace lo mismo para un equipo. Las cabinas de Re-Sound se fabrican en nuestra propia planta de Częstochowa (Polonia) y nuestro propio equipo las entrega e instala a precios fijos en Europa continental, con una garantía estructural de 5 años (Solo ECO: garantía de piezas de repuesto de 5 años). La gama de cabinas tiene cuatro modelos. Solo ECO es el modelo de entrada: una cabina individual con mesa alta, enchufe según el país con USB-A y USB-C (solo enchufe para Dinamarca), ventilación de hasta 4 m³/min y pared trasera cerrada o de vidrio. Solo Flex es la cabina telefónica de oficina individual: 1 m² de superficie, mesa regulable en altura, alimentación de 230 V y USB-C, ventiladores EC silenciosos y una reducción del nivel de voz de 24 dB(A) medida según ISO 23351-1. Duo es la cabina acústica para dos personas con dos configuraciones: Flex para una conversación a dos y Work para una persona con mesa de ancho completo. Modular XL es el pod de reuniones acústico para seis a diez personas: la unidad base se amplía en segmentos de 90 cm y alcanza una reducción del nivel de voz de 25,9 dB(A). Solo Flex, Duo y Modular XL incluyen la garantía estructural de 5 años y Solo ECO la garantía de piezas de repuesto de 5 años; los cuatro modelos se entregan en toda la UE. Compare las cabinas telefónicas de oficina a continuación y abra la página de cada modelo para ver accesorios y descargas.",
@@ -4256,7 +4256,7 @@
   },
   "boothGuide": {
     "title": "Cabinas telefónicas de oficina: precios e ISO 2026 | Re-Sound",
-    "description": "Precio cabina telefónica de oficina: Solo ECO desde {soloEco}, Solo Flex desde {soloFlex} sin IVA, Modular XL desde {modularXl}. ISO 23351-1, plazos y garantía.",
+    "description": "Precios de cabinas: Solo ECO desde {soloEco}, Solo Flex desde {soloFlex}, Modular XL desde {modularXl} sin IVA. ISO 23351-1 y garantía.",
     "h1": "Cabinas telefónicas de oficina: precios, clases y cómo elegir",
     "intro": "Una cabina telefónica de oficina Re-Sound cuesta desde {soloEco} sin IVA y sin instalación (Solo ECO), Solo Flex desde {soloFlex} y un pod de reuniones Modular XL desde {modularXl}. A continuación encontrará todos los precios que publicamos, qué está incluido, las clases de nivel de voz ISO 23351-1 indicadas con honestidad y cómo funcionan la instalación, las pruebas y la garantía.",
     "breadcrumb": "Precios de cabinas telefónicas",
@@ -4715,7 +4715,7 @@
   "calculator": {
     "meta": {
       "title": "Calculadora de tiempo de reverberación (RT60)",
-      "description": "Estime el tiempo de reverberación de su sala con la fórmula de Sabine, compárelo con el objetivo para su tipo de sala y vea cuántos m² de paneles acústicos Re-Sound necesita."
+      "description": "Estime el tiempo de reverberación de su sala con la fórmula de Sabine, compárelo con el objetivo de su tipo de sala y vea cuántos m² de paneles necesita."
     },
     "hero": {
       "tag": "Herramienta gratuita",

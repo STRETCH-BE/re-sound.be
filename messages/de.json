@@ -19,19 +19,19 @@
     "divideTitle": "Divide Freistehende Akustiktrennwände | Re-Sound",
     "divideDescription": "Freistehende Akustiktrennwände mit magnetischer Modulverbindung: beidseitige Absorption, keine Montage, recyceltes Textil. Hergestellt in Belgien.",
     "rwoodGrooveTitle": "rWood Groove — genutete Holzpaneele, Eiche & Nussbaum | Re-Sound",
-    "rwoodGrooveDescription": "Genutete Holz-Akustikdielen: FSC®-zertifiziertes Eichen- oder Nussbaumfurnier auf MDF-Kern mit 3 mm Filz aus recyceltem PET. αw 0,90, Klasse A, Muster Original als Standard, fünf Furniere, 10 und 19 mm.",
+    "rwoodGrooveDescription": "Genutete Holz-Akustikdielen: FSC®-Eichen- oder Nussbaumfurnier auf MDF mit recyceltem PET-Filz. αw 0,90, Klasse A, Muster Original als Standard, 10/19 mm.",
     "rwoodPerfTitle": "rWood Perf — perforierte Holz-Akustikpaneele | Re-Sound",
     "rwoodPerfDescription": "Perforierte Holz-Akustikpaneele mit FSC-zertifiziertem Furnier: vier Lochmuster für breitbandige Absorption, 8 Oberflächen, schwer entflammbarer Kern.",
     "rwoodMicroTitle": "rWood Micro — mikroperforierte Holz-Akustikpaneele | Re-Sound",
-    "rwoodMicroDescription": "Mikroperforierte Holz-Akustikpaneele (ab 0,5 mm) mit FSC-zertifiziertem Furnier: nahezu unsichtbares Muster, Brandklasse {fireClass}, nach Maß bis 3 050 × 1 220 mm.",
+    "rwoodMicroDescription": "Mikroperforierte Holz-Akustikpaneele (ab 0,5 mm) mit FSC-zertifiziertem Furnier: nahezu unsichtbares Muster, Brandklasse {fireClass}, nach Maß gefertigt.",
     "rwoodVeneerTitle": "rWood Panel — furnierte Akustikpaneele, 12 Echtholzfurniere | Re-Sound",
-    "rwoodVeneerDescription": "Glatte furnierte Akustikpaneele in 12 Echtholzfurnieren, Nature- oder Gemini-Linie: FSC®-zertifiziert, Naturlack oder pigmentiert, HPL, Folie oder Farbe. Werkseitig veredelt, jedes Furnier auf Bestellung.",
+    "rwoodVeneerDescription": "Glatte furnierte Akustikpaneele in 12 Echtholzfurnieren: FSC®, Naturlack oder pigmentiert, HPL, Folie oder Farbe. Jedes Furnier auf Bestellung.",
     "rpetGrooveTitle": "rPET Groove — genutete PET-Paneele, 10 Lagerfarben | Re-Sound",
-    "rpetGrooveDescription": "Genutete PET-Akustikpaneele, aus dem rPET Panel gefräst: 10 Lagerfarben und jede Farbe auf Bestellung, 12/24/36 mm, NRC bis 0,90, Brandverhalten nach Farbe (EN 13501-1). Hergestellt in Polen.",
+    "rpetGrooveDescription": "Genutete PET-Akustikpaneele, aus dem rPET Panel gefräst: 10 Lagerfarben, jede Farbe auf Bestellung, 12/24/36 mm, NRC bis 0,90, Brandklasse nach Farbe.",
     "rpetPanelTitle": "rPET Panel — Akustikpaneel aus recyceltem PET, 10 Lagerfarben | Re-Sound",
-    "rpetPanelDescription": "Akustikpaneel aus recyceltem PET, bearbeitbar wie MDF: schneiden, fräsen, bohren, lackieren oder UV-bedrucken. 10 Lagerfarben und jede Farbe auf Bestellung, 9/12 mm, 2 800 × 1 220 oder 2 440 × 1 220 mm, OEKO-TEX®-zertifiziert. Hergestellt in Polen.",
+    "rpetPanelDescription": "Akustikpaneel aus recyceltem PET, bearbeitbar wie MDF: schneiden, fräsen, bohren, lackieren, UV-bedrucken. Jede Farbe auf Bestellung, 9/12 mm, OEKO-TEX®.",
     "rpetFlexGrooveTitle": "rPET Flex Groove — flexible PET-Paneele, Rundungen | Re-Sound",
-    "rpetFlexGrooveDescription": "Flexible PET-Akustikpaneele für gebogene Wände, Säulen und Decken, aus dem 9 mm rPET Panel geschnitten: V-Schnitte, Mindestradius 500 mm, 10 Lagerfarben und jede Farbe auf Bestellung, OEKO-TEX®-zertifiziert.",
+    "rpetFlexGrooveDescription": "Flexible PET-Akustikpaneele für gebogene Wände und Decken aus dem 9 mm rPET Panel: V-Schnitte, Radius ab 500 mm, jede Farbe auf Bestellung, OEKO-TEX®.",
     "faqTitle": "FAQ — Re-Sound Akustikpaneele",
     "faqDescription": "Antworten auf häufige Fragen zu Re-Sound Akustikpaneelen und Telefonboxen: Absorption, Brandklassen, Lieferzeiten, Rücknahme und Produktauswahl.",
     "soloFlexTitle": "Solo Flex — Telefonbox für 1 Person im Büro, akustisch | Re-Sound",
@@ -45,7 +45,7 @@
     "whereToBuyTitle": "Wo Re-Sound zu sehen und zu kaufen",
     "whereToBuyDescription": "Erleben Sie Re-Sound in unserem Showroom in Beveren-Waas, fordern Sie ein Musterpaket an, buchen Sie eine Videotour oder eine Demo vor Ort im Benelux.",
     "soloEcoTitle": "Solo ECO — Telefonbox für 1 Person, Einstiegsmodell | Re-Sound",
-    "soloEcoDescription": "Telefonbox für eine Person, Einstiegsmodell: 1,1 m² Stellfläche, Stehtisch, 230-V-Steckdose mit USB, Lüftung bis 4 m³/min, Rückwand geschlossen oder aus Glas."
+    "soloEcoDescription": "Telefonbox für eine Person, Einstiegsmodell: 1,1 m² Stellfläche, Stehtisch, 230-V-Steckdose mit USB, Lüftung bis 4 m³/min, Rückwand geschlossen oder Glas."
   },
   "nav": {
     "products": "Produkte",
@@ -4075,7 +4075,7 @@
     },
     "rpet": {
       "title": "PET-Akustikpaneele aus recycelten Flaschen — Hersteller | Re-Sound",
-      "description": "PET-Akustikpaneele aus recycelten Flaschen: rPET Panel, Groove, Flex Groove. Zehn Lagerfarben, jede Farbe auf Bestellung, OEKO-TEX®, B-s1,d0 oder B-s2,d0 je nach Farbe. Hergestellt in unserem Werk in Polen.",
+      "description": "PET-Akustikpaneele aus recycelten Flaschen: rPET Panel, Groove, Flex Groove. Jede Farbe auf Bestellung, OEKO-TEX®, Brandklasse je nach Farbe.",
       "h1": "PET-Akustikpaneele: rPET Panel, Groove und Flex Groove",
       "breadcrumb": "rPET",
       "intro": "PET-Akustikpaneele verwandeln Post-Consumer-Flaschen in einen dichten Polyesterfilz, der Schall absorbiert, sich wie MDF auf der CNC-Fräse bearbeiten lässt und in einer Farbpalette erhältlich ist, mit der Architekten tatsächlich arbeiten. Re-Sound ist eine Marke der Stretch Group. Wir fertigen in unseren eigenen Werken in Beveren-Waas (Belgien) und Częstochowa (Polen); die rPET-Serie wird in Częstochowa produziert. Die Serie umfasst drei Modelle. rPET Panel ist die glatte Platte: schneiden, fräsen, bohren und lackieren Sie sie für Wände, Decken und Möbel. rPET Groove ergänzt eine genutete Oberfläche in den zehn Lagerfarben und drei Dicken für höhere Absorption an Wänden und Decken. rPET Flex Groove behält die genutete Optik bei, lässt sich aber bis zu einem Radius von 500 mm um Säulen und gebogene Wände formen. Alle drei Modelle sind nach OEKO-TEX® Standard 100 zertifiziert, erreichen B-s1,d0 bzw. B-s2,d0 nach EN 13501-1 und können am Ende der Nutzungsdauer zum Recycling zurückgenommen werden. Vergleichen Sie in der Tabelle unten PET-Akustikpaneele nach Format, Absorption und Lieferzeit und öffnen Sie anschließend die Modellseite für Oberflächen und Downloads.",
@@ -4256,7 +4256,7 @@
   },
   "boothGuide": {
     "title": "Telefonbox fürs Büro: Preise & ISO-Klassen 2026 | Re-Sound",
-    "description": "Büro-Telefonbox: Preise. Solo ECO ab {soloEco}, Solo Flex ab {soloFlex} netto, Modular XL ab {modularXl}. ISO 23351-1-Klassen, Montage, Lieferzeit, Garantie.",
+    "description": "Büro-Telefonbox: Preise. Solo ECO ab {soloEco}, Solo Flex ab {soloFlex} netto, Modular XL ab {modularXl}. ISO 23351-1, Lieferzeit, Garantie.",
     "h1": "Telefonboxen fürs Büro: Preise, Klassen und Auswahlhilfe",
     "intro": "Eine Re-Sound Telefonbox fürs Büro kostet ab {soloEco} zzgl. MwSt. ohne Montage (Solo ECO), Solo Flex ab {soloFlex} und ein Modular XL Meeting-Pod ab {modularXl}. Unten finden Sie jeden Preis, den wir veröffentlichen, was im Preis enthalten ist, die ehrlich angegebenen ISO 23351-1-Sprachpegelklassen und wie Montage, Testen und Garantie ablaufen.",
     "breadcrumb": "Telefonbox-Preise",
@@ -4715,7 +4715,7 @@
   "calculator": {
     "meta": {
       "title": "Nachhallzeit-Rechner (RT60)",
-      "description": "Schätzen Sie die Nachhallzeit Ihres Raums mit der Sabine-Formel, vergleichen Sie sie mit dem Zielwert für Ihren Raumtyp und erfahren Sie, wie viele m² Re-Sound Akustikpaneele Sie benötigen."
+      "description": "Nachhallzeit Ihres Raums mit der Sabine-Formel schätzen, mit dem Zielwert für Ihren Raumtyp vergleichen und sehen, wie viele m² Paneele Sie brauchen."
     },
     "hero": {
       "tag": "Kostenloser Rechner",
