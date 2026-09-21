@@ -1,27 +1,27 @@
-Re-Sound SEO check — 2026-09-20T22:01:51.940Z
+Re-Sound SEO check — 2026-09-21T08:50:32.752Z
 Base URL: http://localhost:3999
 
 == (e) Sitemap
-URLs in sitemap: 196
-Per locale: en=34, nl=36, fr=34, de=34, es=29, pt=29
-lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=37, 2026-09-13=22, 2026-09-20=119
+URLs in sitemap: 238
+Per locale: en=40, nl=40, fr=40, de=40, es=39, pt=39
+lastmod distribution (by day): 2026-08-10=12, 2026-09-08=6, 2026-09-12=37, 2026-09-13=22, 2026-09-20=161
 distinct lastmod values: 9
-single-locale URLs (no hreflang by design): 18
-hreflang alternates per URL: min 0, max 7
+single-locale URLs (no hreflang by design): 0
+hreflang alternates per URL: min 5, max 7
 
-Crawling 196 pages …
+Crawling 238 pages …
 
 == (a) Forbidden strings
 OK — none found
 
 == (b) English text segments on non-English pages (unique segments >= 4 words)
    (the noindex legal pages privacy/terms are excluded from the aggregate and listed separately below)
-de: 0.2% English (5/2160 segments over 34 pages)
-es: 0.1% English (3/2023 segments over 29 pages)
-fr: 0.2% English (6/2435 segments over 34 pages)
-nl: 0.3% English (8/2309 segments over 36 pages)
+de: 0.2% English (5/2661 segments over 40 pages)
+es: 0.1% English (3/3004 segments over 39 pages)
+fr: 0.2% English (6/2977 segments over 40 pages)
+nl: 0.3% English (8/2726 segments over 40 pages)
     3.4%  /nl  (2/58)
-pt: 0.2% English (3/1971 segments over 29 pages)
+pt: 0.1% English (3/2948 segments over 39 pages)
 
 -- sample English segments per flagged page (max 12 each)
 /nl:
@@ -32,21 +32,20 @@ pt: 0.2% English (3/1971 segments over 29 pages)
 OK — none found
 
 == (c) hreflang + canonical per page
-174 pages: 7 hreflang, canonical present
-18 pages: 0 hreflang, canonical present
+234 pages: 7 hreflang, canonical present
 4 pages: 5 hreflang, canonical present — /en/guides/phone-booth-prices, /nl/guides/prijzen-belcabines, /fr/guides/prix-cabines-acoustiques, /de/guides/telefonbox-preise
 
 == (d) JSON-LD
-blocks: 446, parse errors: 0
-types: Question=923, Answer=923, ListItem=600, PropertyValue=492, FAQPage=142, BreadcrumbList=130, Organization=126, ImageObject=114, Product=84, Brand=84, Offer=84, MerchantReturnPolicy=84, Country=84, PostalAddress=42, UnitPriceSpecification=42, LocalBusiness=30, OpeningHoursSpecification=30, ItemList=24, GeoCoordinates=18, CollectionPage=18, BlogPosting=18, Person=18, ContactPoint=12, WebSite=6
+blocks: 572, parse errors: 0
+types: Question=1049, Answer=1049, ListItem=726, PropertyValue=492, FAQPage=184, BreadcrumbList=172, Organization=168, ImageObject=156, Product=84, Brand=84, Offer=84, MerchantReturnPolicy=84, Country=84, BlogPosting=60, Person=60, PostalAddress=42, UnitPriceSpecification=42, LocalBusiness=30, OpeningHoursSpecification=30, ItemList=24, GeoCoordinates=18, CollectionPage=18, ContactPoint=12, WebSite=6
 Product nodes: 84, with offers: 84  OK
 
 == (f) Internal links returning 404 (from crawled pages + sitemap document entries)
-checked 265 distinct internal URLs, 0 broken
+checked 299 distinct internal URLs, 0 broken
 note: 1 links redirect (e.g. /documents/rwood-groove/datasheet.pdf → /)
 
 == (g) Title / meta description lengths (warn > 65 / > 155)
-titles > 65 chars: 31; descriptions > 155 chars: 56
+titles > 65 chars: 42; descriptions > 155 chars: 59
 WARN title  67  /en/products/pet-acoustic-panels  "PET Acoustic Panels from Recycled Bottles — Manufacturer | Re-Sound"
 WARN title  71  /en/products/wood-acoustic-panels  "Wood Acoustic Panels — Veneer, Perforated & Micro-perforated | Re-Sound"
 WARN title  68  /en/products/rwood-groove  "rWood Groove — Grooved Wood Acoustic Panels, Oak & Walnut | Re-Sound"
@@ -55,11 +54,16 @@ WARN title  69  /en/products/rpet-panel  "rPET Panel — Recycled PET Acoustic P
 WARN title  70  /en/products/rpet-groove  "rPET Groove — Grooved PET Acoustic Panels, 10 Stock Colours | Re-Sound"
 WARN title  69  /en/products/rpet-flex-groove  "rPET Flex Groove — Flexible PET Acoustic Panels for Curves | Re-Sound"
 WARN title  67  /en/products/solo-flex  "Solo Flex — 1-Person Acoustic Phone Booth for the Office | Re-Sound"
+WARN title  66  /en/blog/recycled-pet-acoustic-panels  "Recycled PET acoustic panels: absorption, fixing, price | Re-Sound"
+WARN title  68  /en/blog/classroom-reverberation-time-standards  "Classroom reverberation time: standards, measuring, fixes | Re-Sound"
 WARN title  72  /nl/products/pet-akoestische-panelen  "PET akoestische panelen van gerecycleerde flessen — fabrikant | Re-Sound"
 WARN title  80  /nl/products/houten-akoestische-panelen  "Houten akoestische panelen — fineer, geperforeerd & microgeperforeerd | Re-Sound"
 WARN title  71  /nl/products/akoestische-belcabines  "Fabrikant van belcabines voor kantoor: Solo, Duo, Modular XL | Re-Sound"
 WARN title  71  /nl/products/rwood-veneer  "rWood Panel — gefineerde akoestische panelen, 12 houtfineren | Re-Sound"
 WARN title  66  /nl/products/rpet-groove  "rPET Groove — gegroefde PET-panelen, 10 voorraadkleuren | Re-Sound"
+WARN title  68  /nl/blog/nagalmtijd-kantoor-norm-berekenen  "Nagalmtijd in een kantoor: norm en berekening (DIN 18041) | Re-Sound"
+WARN title  69  /nl/blog/houten-akoestische-panelen-microgeperforeerd-of-gegroefd  "Houten akoestische panelen: microgeperforeerd of gegroefd? | Re-Sound"
+WARN title  67  /nl/blog/akoestische-panelen-gerecycleerd-pet  "Akoestische panelen van gerecycleerd PET: montage, prijs | Re-Sound"
 WARN title  75  /fr/products/panneaux-acoustiques-bois  "Panneaux acoustiques en bois — placage, perforés & microperforés | Re-Sound"
 WARN title  79  /fr/products/cabines-acoustiques  "Fabricant de cabines téléphoniques de bureau : Solo, Duo, Modular XL | Re-Sound"
 WARN title  71  /fr/products/rwood-veneer  "rWood Panel — panneaux acoustiques plaqués, 12 placages bois | Re-Sound"
@@ -70,14 +74,20 @@ WARN title  70  /de/products/holz-akustikpaneele  "Holz-Akustikpaneele — Furni
 WARN title  66  /de/products/telefonboxen  "Hersteller von Büro-Telefonboxen: Solo, Duo, Modular XL | Re-Sound"
 WARN title  70  /de/products/rwood-veneer  "rWood Panel — furnierte Akustikpaneele, 12 Echtholzfurniere | Re-Sound"
 WARN title  72  /de/products/rpet-panel  "rPET Panel — Akustikpaneel aus recyceltem PET, 10 Lagerfarben | Re-Sound"
+WARN title  66  /de/blog/wie-viele-akustikpaneele-brauche-ich  "Wie viele Akustikpaneele brauche ich? 4 Rechenbeispiele | Re-Sound"
 WARN title  78  /es/products/acoustic-phone-booths  "Fabricante de cabinas telefónicas de oficina: Solo, Duo, Modular XL | Re-Sound"
 WARN title  72  /es/products/rwood-veneer  "rWood Panel — Paneles acústicos chapados, 12 chapas de madera | Re-Sound"
 WARN title  76  /es/products/rpet-panel  "rPET Panel — panel acústico de PET reciclado, 10 colores de stock | Re-Sound"
 WARN title  70  /es/products/rpet-groove  "rPET Groove — paneles de PET ranurados, 10 colores de stock | Re-Sound"
+WARN title  67  /es/blog/precio-cabina-acustica-oficina  "Cabina acústica de oficina: precios y clases ISO 23351-1 | Re-Sound"
+WARN title  69  /es/blog/paneles-acusticos-madera-microperforados-o-ranurados  "Paneles acústicos de madera: ¿microperforados o ranurados? | Re-Sound"
 WARN title  81  /pt/products/acoustic-phone-booths  "Fabricante de cabines telefónicas de escritório: Solo, Duo, Modular XL | Re-Sound"
 WARN title  77  /pt/products/rwood-veneer  "rWood Panel — Painéis Acústicos Folheados, 12 Folheados de Madeira | Re-Sound"
 WARN title  75  /pt/products/rpet-panel  "rPET Panel — painel acústico em PET reciclado, 10 cores de stock | Re-Sound"
 WARN title  69  /pt/products/rpet-groove  "rPET Groove — painéis em PET ranhurados, 10 cores de stock | Re-Sound"
+WARN title  68  /pt/blog/tempo-reverberacao-sala-aula-normas  "Tempo de reverberação em salas de aula: normas e soluções | Re-Sound"
+WARN title  67  /pt/blog/quantos-paineis-acusticos-preciso  "Quantos painéis acústicos preciso? 4 exemplos calculados | Re-Sound"
+WARN title  66  /pt/blog/melhorar-acustica-escritorio-open-space  "Melhorar a acústica do escritório open space: 7 medidas | Re-Sound"
 WARN desc  185  /en/products/pet-acoustic-panels
 WARN desc  181  /en/guides/phone-booth-prices
 WARN desc  187  /en/products/rwood-groove
@@ -104,6 +114,8 @@ WARN desc  204  /fr/products/rwood-veneer
 WARN desc  250  /fr/products/rpet-panel
 WARN desc  215  /fr/products/rpet-groove
 WARN desc  221  /fr/products/rpet-flex-groove
+WARN desc  159  /fr/blog/temps-de-reverberation-salle-de-classe
+WARN desc  162  /fr/blog/temps-de-reverberation-bureau-norme
 WARN desc  181  /fr/blog/panneaux-acoustiques-pet-recycle
 WARN desc  189  /de/acoustic-calculator
 WARN desc  206  /de/products/pet-akustikpaneele
@@ -125,6 +137,7 @@ WARN desc  250  /es/products/rpet-panel
 WARN desc  221  /es/products/rpet-groove
 WARN desc  215  /es/products/rpet-flex-groove
 WARN desc  156  /es/products/solo-eco
+WARN desc  157  /es/blog/especificar-paneles-acusticos-aw-nrc-clase-a
 WARN desc  174  /pt/acoustic-calculator
 WARN desc  213  /pt/products/pet-acoustic-panels
 WARN desc  159  /pt/products/acoustic-phone-booths
@@ -187,10 +200,16 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     en       67    144    1         7     yes    3          1/1  index           —  /en/products/solo-flex
 200     en       56    150    1         7     yes    3          1/1  index           —  /en/products/duo
 200     en       56    146    1         7     yes    3          1/1  index           —  /en/products/modular-xl
-200     en       65    149    1         0     yes    3          0/0  index           —  /en/blog/specifying-acoustic-panels-aw-nrc-class-a
-200     en       56    143    1         0     yes    3          0/0  index           —  /en/blog/pet-acoustic-panels-vs-wood
-200     en       60    149    1         0     yes    3          0/0  index           —  /en/blog/office-phone-booth-prices
-200     en       64    155    1         0     yes    3          0/0  index           —  /en/blog/how-many-acoustic-panels-do-i-need
+200     en       65    149    1         7     yes    3          0/0  index           —  /en/blog/specifying-acoustic-panels-aw-nrc-class-a
+200     en       66    152    1         7     yes    3          0/0  index           —  /en/blog/recycled-pet-acoustic-panels
+200     en       56    143    1         7     yes    3          0/0  index           —  /en/blog/pet-acoustic-panels-vs-wood
+200     en       58    150    1         7     yes    3          0/0  index           —  /en/blog/office-reverberation-time-din-18041
+200     en       60    149    1         7     yes    3          0/0  index           —  /en/blog/office-phone-booth-prices
+200     en       61    153    1         7     yes    3          0/0  index           —  /en/blog/micro-perforated-or-grooved-wood-panels
+200     en       57    148    1         7     yes    3          0/0  index           —  /en/blog/improve-open-plan-office-acoustics
+200     en       64    155    1         7     yes    3          0/0  index           —  /en/blog/how-many-acoustic-panels-do-i-need
+200     en       68    152    1         7     yes    3          0/0  index           —  /en/blog/classroom-reverberation-time-standards
+200     en       54    155    1         7     yes    3          0/0  index           —  /en/blog/acoustic-panels-for-restaurants
 200     nl       55    145    1         7     yes    3          0/0  index         3.4  /nl
 200     nl       20    152    1         7     yes    1          0/0  index         0.0  /nl/products
 200     nl       24    136    1         7     yes    0          0/0  index         0.0  /nl/about
@@ -221,12 +240,16 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     nl       59    152    1         7     yes    3          1/1  index         0.0  /nl/products/solo-flex
 200     nl       53    154    1         7     yes    3          1/1  index         0.0  /nl/products/duo
 200     nl       62    147    1         7     yes    3          1/1  index         0.0  /nl/products/modular-xl
-200     nl       60    145    1         0     yes    3          0/0  index         0.0  /nl/blog/pet-vilt-of-houten-akoestische-panelen
-200     nl       63    155    1         0     yes    3          0/0  index         0.0  /nl/blog/nagalmtijd-klaslokaal-normen
-200     nl       64    154    1         0     yes    3          0/0  index         0.0  /nl/blog/hoeveel-akoestische-panelen-nodig
-200     nl       63    154    1         0     yes    3          0/0  index         1.8  /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing
-200     nl       62    150    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-restaurant
-200     nl       59    146    1         0     yes    3          0/0  index         0.0  /nl/blog/akoestiek-open-kantoor-verbeteren
+200     nl       68    153    1         7     yes    3          0/0  index         0.0  /nl/blog/nagalmtijd-kantoor-norm-berekenen
+200     nl       69    145    1         7     yes    3          0/0  index         0.0  /nl/blog/houten-akoestische-panelen-microgeperforeerd-of-gegroefd
+200     nl       65    154    1         7     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-specificeren-aw-nrc-klasse-a
+200     nl       67    153    1         7     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-gerecycleerd-pet
+200     nl       60    145    1         7     yes    3          0/0  index         0.0  /nl/blog/pet-vilt-of-houten-akoestische-panelen
+200     nl       63    155    1         7     yes    3          0/0  index         0.0  /nl/blog/nagalmtijd-klaslokaal-normen
+200     nl       64    154    1         7     yes    3          0/0  index         0.0  /nl/blog/hoeveel-akoestische-panelen-nodig
+200     nl       63    154    1         7     yes    3          0/0  index         1.8  /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing
+200     nl       62    150    1         7     yes    3          0/0  index         0.0  /nl/blog/akoestische-panelen-restaurant
+200     nl       59    146    1         7     yes    3          0/0  index         0.0  /nl/blog/akoestiek-open-kantoor-verbeteren
 200     fr       59    149    1         7     yes    3          0/0  index         2.9  /fr
 200     fr       19    147    1         7     yes    1          0/0  index         0.0  /fr/products
 200     fr       31    148    1         7     yes    0          0/0  index         0.0  /fr/about
@@ -257,10 +280,16 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     fr       59    154    1         7     yes    3          1/1  index         0.0  /fr/products/solo-flex
 200     fr       58    150    1         7     yes    3          1/1  index         0.0  /fr/products/duo
 200     fr       64    155    1         7     yes    3          1/1  index         0.0  /fr/products/modular-xl
-200     fr       64    181    1         0     yes    3          0/0  index         0.0  /fr/blog/panneaux-acoustiques-pet-recycle
-200     fr       64    148    1         0     yes    3          0/0  index         0.0  /fr/blog/panneau-acoustique-bois-microperfore
-200     fr       64    150    1         0     yes    3          0/0  index         0.0  /fr/blog/combien-de-panneaux-acoustiques
-200     fr       61    155    1         0     yes    3          0/0  index         0.0  /fr/blog/cabine-acoustique-bureau-prix
+200     fr       64    159    1         7     yes    3          0/0  index         0.0  /fr/blog/temps-de-reverberation-salle-de-classe
+200     fr       61    162    1         7     yes    3          0/0  index         0.0  /fr/blog/temps-de-reverberation-bureau-norme
+200     fr       62    147    1         7     yes    3          0/0  index         0.0  /fr/blog/prescrire-panneaux-acoustiques-aw-nrc
+200     fr       64    154    1         7     yes    3          0/0  index         0.0  /fr/blog/panneaux-acoustiques-restaurant
+200     fr       64    181    1         7     yes    3          0/0  index         0.0  /fr/blog/panneaux-acoustiques-pet-recycle
+200     fr       62    151    1         7     yes    3          0/0  index         0.0  /fr/blog/panneaux-acoustiques-pet-ou-bois
+200     fr       64    148    1         7     yes    3          0/0  index         0.0  /fr/blog/panneau-acoustique-bois-microperfore
+200     fr       64    150    1         7     yes    3          0/0  index         0.0  /fr/blog/combien-de-panneaux-acoustiques
+200     fr       61    155    1         7     yes    3          0/0  index         0.0  /fr/blog/cabine-acoustique-bureau-prix
+200     fr       64    153    1         7     yes    3          0/0  index         0.0  /fr/blog/ameliorer-acoustique-bureau-ouvert
 200     de       61    134    1         7     yes    3          0/0  index         1.8  /de
 200     de       19    148    1         7     yes    1          0/0  index         0.0  /de/products
 200     de       24    127    1         7     yes    0          0/0  index         0.0  /de/about
@@ -291,10 +320,16 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     de       65    150    1         7     yes    3          1/1  index         0.0  /de/products/solo-flex
 200     de       64    154    1         7     yes    3          1/1  index         0.0  /de/products/duo
 200     de       61    151    1         7     yes    3          1/1  index         0.0  /de/products/modular-xl
-200     de       51    153    1         0     yes    3          0/0  index         0.0  /de/blog/telefonbox-buero-kosten
-200     de       61    155    1         0     yes    3          0/0  index         0.0  /de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet
-200     de       57    153    1         0     yes    3          0/0  index         0.0  /de/blog/din-18041-nachhallzeit-buero
-200     de       63    190    1         0     yes    3          0/0  index         0.0  /de/blog/akustikpaneele-recyceltes-pet
+200     de       66    155    1         7     yes    3          0/0  index         0.0  /de/blog/wie-viele-akustikpaneele-brauche-ich
+200     de       51    153    1         7     yes    3          0/0  index         0.0  /de/blog/telefonbox-buero-kosten
+200     de       54    149    1         7     yes    3          0/0  index         0.0  /de/blog/pet-oder-holz-akustikpaneele
+200     de       63    153    1         7     yes    3          0/0  index         0.0  /de/blog/nachhallzeit-klassenzimmer-normen
+200     de       61    155    1         7     yes    3          0/0  index         0.0  /de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet
+200     de       57    153    1         7     yes    3          0/0  index         0.0  /de/blog/din-18041-nachhallzeit-buero
+200     de       63    190    1         7     yes    3          0/0  index         0.0  /de/blog/akustikpaneele-recyceltes-pet
+200     de       55    155    1         7     yes    3          0/0  index         0.0  /de/blog/akustikpaneele-fuer-restaurants
+200     de       60    152    1         7     yes    3          0/0  index         0.0  /de/blog/akustikpaneele-ausschreiben-aw-nrc-klasse-a
+200     de       58    144    1         7     yes    3          0/0  index         0.0  /de/blog/akustik-grossraumbuero-verbessern
 200     es       57    152    1         7     yes    3          0/0  index         1.4  /es
 200     es       20    147    1         7     yes    1          0/0  index         0.0  /es/products
 200     es       25    142    1         7     yes    0          0/0  index         0.0  /es/about
@@ -324,6 +359,16 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     es       65    152    1         7     yes    3          1/1  index         0.0  /es/products/solo-flex
 200     es       61    149    1         7     yes    3          1/1  index         0.0  /es/products/duo
 200     es       64    151    1         7     yes    3          1/1  index         0.0  /es/products/modular-xl
+200     es       62    148    1         7     yes    3          0/0  index         0.0  /es/blog/tiempo-reverberacion-aulas-normativa
+200     es       67    140    1         7     yes    3          0/0  index         0.0  /es/blog/precio-cabina-acustica-oficina
+200     es       59    145    1         7     yes    3          0/0  index         0.0  /es/blog/paneles-acusticos-restaurante
+200     es       65    145    1         7     yes    3          0/0  index         0.0  /es/blog/paneles-acusticos-pet-reciclado
+200     es       63    153    1         7     yes    3          0/0  index         0.0  /es/blog/paneles-acusticos-pet-o-madera
+200     es       69    151    1         7     yes    3          0/0  index         0.0  /es/blog/paneles-acusticos-madera-microperforados-o-ranurados
+200     es       63    146    1         7     yes    3          0/0  index         0.0  /es/blog/norma-reverberacion-oficina-din-18041
+200     es       65    145    1         7     yes    3          0/0  index         0.0  /es/blog/mejorar-acustica-oficina-abierta
+200     es       59    157    1         7     yes    3          0/0  index         0.0  /es/blog/especificar-paneles-acusticos-aw-nrc-clase-a
+200     es       58    147    1         7     yes    3          0/0  index         0.0  /es/blog/cuantos-paneles-acusticos-necesito
 200     pt       57    152    1         7     yes    3          0/0  index         1.5  /pt
 200     pt       19    155    1         7     yes    1          0/0  index         0.0  /pt/products
 200     pt       27    134    1         7     yes    0          0/0  index         0.0  /pt/about
@@ -353,24 +398,16 @@ status  loc  title  desc  h1  hreflang  canon  ld  prod/offers  robots  english%
 200     pt       65    147    1         7     yes    3          1/1  index         0.0  /pt/products/solo-flex
 200     pt       63    154    1         7     yes    3          1/1  index         0.0  /pt/products/duo
 200     pt       62    153    1         7     yes    3          1/1  index         0.0  /pt/products/modular-xl
+200     pt       68    154    1         7     yes    3          0/0  index         0.0  /pt/blog/tempo-reverberacao-sala-aula-normas
+200     pt       67    146    1         7     yes    3          0/0  index         0.0  /pt/blog/quantos-paineis-acusticos-preciso
+200     pt       60    154    1         7     yes    3          0/0  index         0.0  /pt/blog/paineis-madeira-microperfurados-ou-ranhurados
+200     pt       59    148    1         7     yes    3          0/0  index         0.0  /pt/blog/paineis-acusticos-restaurante-menos-ruido
+200     pt       65    150    1         7     yes    3          0/0  index         0.0  /pt/blog/paineis-acusticos-pet-reciclado
+200     pt       57    148    1         7     yes    3          0/0  index         0.0  /pt/blog/paineis-acusticos-pet-ou-madeira
+200     pt       65    153    1         7     yes    3          0/0  index         0.0  /pt/blog/norma-tempo-reverberacao-escritorio
+200     pt       66    154    1         7     yes    3          0/0  index         0.0  /pt/blog/melhorar-acustica-escritorio-open-space
+200     pt       60    152    1         7     yes    3          0/0  index         0.0  /pt/blog/especificar-paineis-acusticos-aw-nrc-classe-a
+200     pt       62    131    1         7     yes    3          0/0  index         0.0  /pt/blog/cabine-acustica-escritorio-precos
 
 == Claims: 0 forbidden-string hits, 0 spec mismatches  OK
-== Summary: 196 pages, 0 failures, 105 warnings
-warn /en/blog/specifying-acoustic-panels-aw-nrc-class-a: single-locale page: no hreflang by design
-warn /en/blog/pet-acoustic-panels-vs-wood: single-locale page: no hreflang by design
-warn /en/blog/office-phone-booth-prices: single-locale page: no hreflang by design
-warn /en/blog/how-many-acoustic-panels-do-i-need: single-locale page: no hreflang by design
-warn /nl/blog/pet-vilt-of-houten-akoestische-panelen: single-locale page: no hreflang by design
-warn /nl/blog/nagalmtijd-klaslokaal-normen: single-locale page: no hreflang by design
-warn /nl/blog/hoeveel-akoestische-panelen-nodig: single-locale page: no hreflang by design
-warn /nl/blog/belcabine-kantoor-prijs-keuze-plaatsing: single-locale page: no hreflang by design
-warn /nl/blog/akoestische-panelen-restaurant: single-locale page: no hreflang by design
-warn /nl/blog/akoestiek-open-kantoor-verbeteren: single-locale page: no hreflang by design
-warn /fr/blog/panneaux-acoustiques-pet-recycle: single-locale page: no hreflang by design
-warn /fr/blog/panneau-acoustique-bois-microperfore: single-locale page: no hreflang by design
-warn /fr/blog/combien-de-panneaux-acoustiques: single-locale page: no hreflang by design
-warn /fr/blog/cabine-acoustique-bureau-prix: single-locale page: no hreflang by design
-warn /de/blog/telefonbox-buero-kosten: single-locale page: no hreflang by design
-warn /de/blog/holz-akustikpaneele-mikroperforiert-oder-genutet: single-locale page: no hreflang by design
-warn /de/blog/din-18041-nachhallzeit-buero: single-locale page: no hreflang by design
-warn /de/blog/akustikpaneele-recyceltes-pet: single-locale page: no hreflang by design
+== Summary: 238 pages, 0 failures, 101 warnings

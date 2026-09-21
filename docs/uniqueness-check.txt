@@ -1,65 +1,65 @@
-uniqueness-check — http://localhost:3999 — threshold 0.3 — 2026-09-21T07:34:39.541Z
-candidate paths: 661
-pages fetched: 308 (skipped 353 non-200)
+uniqueness-check — http://localhost:3999 — threshold 0.3 — 2026-09-21T08:50:38.452Z
+candidate paths: 1110
+pages fetched: 390 (skipped 720 non-200)
 
-== da: 28 pages, 348 chrome shingles removed
-    26.3 %  /da/products/rwood-micro  ~  /da/products/rwood-perf
+== da: 38 pages, 428 chrome shingles removed
     18.9 %  /da/faq  ~  /da/products/acoustic-phone-booths
     18.0 %  /da/products/rpet-flex-groove  ~  /da/products/rpet-groove
+    16.3 %  /da/products/rwood-micro  ~  /da/products/rwood-perf
     14.6 %  /da/products/rpet-groove  ~  /da/products/rpet-panel
     14.5 %  /da/products/rpet-flex-groove  ~  /da/products/rpet-panel
-== de: 34 pages, 474 chrome shingles removed
-    26.4 %  /de/products/rwood-micro  ~  /de/products/rwood-perf
+== de: 40 pages, 510 chrome shingles removed
     18.4 %  /de/products/rpet-flex-groove  ~  /de/products/rpet-groove
-    17.6 %  /de/faq  ~  /de/products/telefonboxen
+    17.4 %  /de/faq  ~  /de/products/telefonboxen
+    16.1 %  /de/products/rwood-micro  ~  /de/products/rwood-perf
     15.6 %  /de/products/rpet-groove  ~  /de/products/rpet-panel
     14.7 %  /de/products/rpet-flex-groove  ~  /de/products/rpet-panel
-== en: 34 pages, 550 chrome shingles removed
-    27.2 %  /en/products/rwood-micro  ~  /en/products/rwood-perf
-    20.1 %  /en/products/rpet-flex-groove  ~  /en/products/rpet-groove
+== en: 40 pages, 588 chrome shingles removed
+    20.2 %  /en/products/rpet-flex-groove  ~  /en/products/rpet-groove
+    17.7 %  /en/products/rwood-micro  ~  /en/products/rwood-perf
     16.8 %  /en/products/rpet-groove  ~  /en/products/rpet-panel
     16.8 %  /en/faq  ~  /en/products/acoustic-phone-booths
     16.0 %  /en/products/rpet-flex-groove  ~  /en/products/rpet-panel
-== es: 29 pages, 488 chrome shingles removed
-    29.2 %  /es/products/rwood-micro  ~  /es/products/rwood-perf
+== es: 39 pages, 593 chrome shingles removed
     19.4 %  /es/products/rpet-flex-groove  ~  /es/products/rpet-groove
+    18.8 %  /es/products/rwood-micro  ~  /es/products/rwood-perf
     18.3 %  /es/faq  ~  /es/products/acoustic-phone-booths
     16.4 %  /es/products/rpet-groove  ~  /es/products/rpet-panel
     16.1 %  /es/products/rpet-flex-groove  ~  /es/products/rpet-panel
-== fr: 34 pages, 587 chrome shingles removed
-    28.4 %  /fr/products/rwood-micro  ~  /fr/products/rwood-perf
+== fr: 40 pages, 621 chrome shingles removed
     19.9 %  /fr/products/rpet-flex-groove  ~  /fr/products/rpet-groove
+    18.6 %  /fr/products/rwood-micro  ~  /fr/products/rwood-perf
     17.5 %  /fr/products/rpet-groove  ~  /fr/products/rpet-panel
     16.7 %  /fr/faq  ~  /fr/products/cabines-acoustiques
     16.4 %  /fr/products/rpet-flex-groove  ~  /fr/products/rpet-panel
-== is: 28 pages, 334 chrome shingles removed
-    28.7 %  /is/products/rwood-micro  ~  /is/products/rwood-perf
+== is: 38 pages, 438 chrome shingles removed
     18.8 %  /is/faq  ~  /is/products/acoustic-phone-booths
     18.2 %  /is/products/rpet-flex-groove  ~  /is/products/rpet-groove
+    17.3 %  /is/products/rwood-micro  ~  /is/products/rwood-perf
     14.9 %  /is/products/rpet-flex-groove  ~  /is/products/rpet-panel
     14.9 %  /is/products/rpet-groove  ~  /is/products/rpet-panel
-== nl: 36 pages, 566 chrome shingles removed
-    26.4 %  /nl/products/rwood-micro  ~  /nl/products/rwood-perf
+== nl: 40 pages, 585 chrome shingles removed
     18.5 %  /nl/products/rpet-flex-groove  ~  /nl/products/rpet-groove
-    16.9 %  /nl/faq  ~  /nl/products/akoestische-belcabines
+    16.8 %  /nl/faq  ~  /nl/products/akoestische-belcabines
+    16.5 %  /nl/products/rwood-micro  ~  /nl/products/rwood-perf
     15.8 %  /nl/products/rpet-groove  ~  /nl/products/rpet-panel
     14.5 %  /nl/products/rpet-flex-groove  ~  /nl/products/rpet-panel
-== no: 28 pages, 347 chrome shingles removed
-    26.4 %  /no/products/rwood-micro  ~  /no/products/rwood-perf
+== no: 38 pages, 462 chrome shingles removed
     19.1 %  /no/faq  ~  /no/products/acoustic-phone-booths
     18.0 %  /no/products/rpet-flex-groove  ~  /no/products/rpet-groove
+    16.4 %  /no/products/rwood-micro  ~  /no/products/rwood-perf
     14.6 %  /no/products/rpet-flex-groove  ~  /no/products/rpet-panel
     14.6 %  /no/products/rpet-groove  ~  /no/products/rpet-panel
-== pt: 29 pages, 490 chrome shingles removed
-    29.0 %  /pt/products/rwood-micro  ~  /pt/products/rwood-perf
-    19.7 %  /pt/products/rpet-flex-groove  ~  /pt/products/rpet-groove
+== pt: 39 pages, 608 chrome shingles removed
+    19.6 %  /pt/products/rpet-flex-groove  ~  /pt/products/rpet-groove
+    18.9 %  /pt/products/rwood-micro  ~  /pt/products/rwood-perf
     18.3 %  /pt/faq  ~  /pt/products/acoustic-phone-booths
     16.2 %  /pt/products/rpet-groove  ~  /pt/products/rpet-panel
-    16.0 %  /pt/products/rpet-flex-groove  ~  /pt/products/rpet-panel
-== sv: 28 pages, 338 chrome shingles removed
-    25.9 %  /sv/products/rwood-micro  ~  /sv/products/rwood-perf
+    15.9 %  /pt/products/rpet-flex-groove  ~  /pt/products/rpet-panel
+== sv: 38 pages, 413 chrome shingles removed
     18.9 %  /sv/faq  ~  /sv/products/acoustic-phone-booths
     17.8 %  /sv/products/rpet-flex-groove  ~  /sv/products/rpet-groove
+    16.1 %  /sv/products/rwood-micro  ~  /sv/products/rwood-perf
     14.7 %  /sv/products/rpet-flex-groove  ~  /sv/products/rpet-panel
     14.5 %  /sv/products/rpet-groove  ~  /sv/products/rpet-panel
 
