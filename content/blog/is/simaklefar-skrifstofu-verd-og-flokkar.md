@@ -17,18 +17,18 @@ heroAlt: "Solo Flex símaklefi fyrir einn frá Re-Sound í opnu skrifstofurými"
 internalLinks: ["/is/products/acoustic-phone-booths","/is/products/solo-flex","/is/products/solo-eco","/is/products/duo","/is/products/modular-xl","/is/products/pet-acoustic-panels","/is/blog/hve-margar-hljoddeyfiplotur-tharf-eg","/is/where-to-buy","/is/contact"]
 cta: "Biddu um tilboð í Solo ECO eða Solo Flex og þú færð verð, flutning til Íslands, afhendingartíma og uppsetningarkost fyrir þitt heimilisfang."
 sources: "ISO 23351-1:2020 (taldeyfing lokaðra skrifstofuklefa); ISO 22955 og ISO 3382-3 til viðmiðunar; ISO 11654; W.C. Sabine; vörugögn Re-Sound; birt verð þriggja keppinauta, september 2026 (2.990 € nettó, 3.990 € og 9.320 € án VSK fyrir klefa fyrir einn)."
-faq: [{"question":"Hvað kostar símaklefi fyrir skrifstofu árið 2026?","answer":"Birt verð keppinauta fyrir klefa fyrir einn í september 2026 liggja frá 2.990 € nettó um 3.990 € án VSK upp í 9.320 € án VSK. Solo ECO frá Re-Sound kostar {{price:solo-eco}} án VSK og Solo Flex {{price:solo-flex}} án VSK, hvort tveggja án flutnings og uppsetningar. Flutning til Íslands, afhendingartíma og uppsetningu setjum við í tilboðið með staðfestingu pöntunar."},{"question":"Er símaklefi í flokki C nógu hljóðlátur?","answer":"Fyrir símtöl og myndfundi í opnu skrifstofurými, já: við um 24 dB(A) taldeyfingu heyrir samstarfsfólk fyrir utan fjarlægt muldur en engin orð. Fyrir trúnaðarfundi rétt við annasamt gólf skaltu velja hærri flokk eða lokað herbergi og athuga nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum."},{"question":"Hve fljótt getur símaklefi verið kominn á skrifstofuna mína?","answer":"Stöðluð útfærsla af Solo Flex er framleidd fjórum til sex vikum eftir staðfestingu pöntunar, Solo ECO á fjórum vikum; flutningur til Íslands og afhendingartími eru eftir samkomulagi. Tveir geta sett Solo Flex saman sjálfir á innan við þremur klukkustundum; setji teymið okkar upp tekur það um klukkustund fyrir einn klefa, tvær fyrir fundarklefa og tvær til sex fyrir Modular XL."}]
+faq: [{"question":"Hvað kostar símaklefi fyrir skrifstofu árið 2026?","answer":"Birt verð keppinauta fyrir klefa fyrir einn í september 2026 spanna frá 2.990 € nettó, um 3.990 € án VSK, upp í 9.320 € án VSK. Solo ECO frá Re-Sound kostar {{price:solo-eco}} án VSK og Solo Flex {{price:solo-flex}} án VSK, hvort tveggja án flutnings og uppsetningar. Flutning til Íslands, afhendingartíma og uppsetningu tilgreinum við í tilboðinu og staðfestum með pöntuninni."},{"question":"Er símaklefi í flokki C nógu hljóðlátur?","answer":"Fyrir símtöl og myndfundi í opnu skrifstofurými, já: við um 24 dB(A) taldeyfingu heyrir samstarfsfólk fyrir utan fjarlægt muldur en engin orð. Fyrir trúnaðarfundi rétt við annasamt gólf skaltu velja hærri flokk eða lokað herbergi og athuga nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum."},{"question":"Hve fljótt getur símaklefi verið kominn á skrifstofuna mína?","answer":"Stöðluð útfærsla af Solo Flex er framleidd á fjórum til sex vikum frá staðfestingu pöntunar, Solo ECO á fjórum vikum; flutningur til Íslands og afhendingartími eru eftir samkomulagi. Tveir geta sett Solo Flex saman sjálfir á innan við þremur klukkustundum; setji teymið okkar upp tekur það um klukkustund fyrir einn klefa, tvær fyrir fundarklefa og tvær til sex fyrir Modular XL."}]
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 1606
+wordCount: 1628
 ---
 
 **[Símaklefi fyrir skrifstofu](/is/products/acoustic-phone-booths) frá Re-Sound kostar frá {{price:solo-eco}} án VSK fyrir grunngerðina Solo ECO og frá {{price:solo-flex}} án VSK fyrir Solo Flex, í báðum tilvikum án flutnings og uppsetningar; flutningur til Íslands og afhendingartími eru eftir samkomulagi.** [Solo Flex](/is/products/solo-flex) er hljóðeinangraði símaklefinn okkar fyrir einn með mældri taldeyfingu, [Solo ECO](/is/products/solo-eco) einfaldari grunngerð með föstu standborði. Hér er farið yfir hvað verðið nær yfir, hvaða stærð þú átt að velja, hvað flokkar ISO 23351-1 merkja og hvað þarf að athuga áður en þú pantar, beint frá framleiðandanum.
 
 ## Hvað kostar símaklefi fyrir skrifstofu árið 2026?
 
-Í september 2026 liggja birt verð fyrir hljóðeinangraðan símaklefa fyrir einn frá 2.990 € til 9.320 € án VSK (einn keppinautur gefur upp nettóverð):
+Í september 2026 eru birt verð fyrir hljóðeinangraðan símaklefa fyrir einn á bilinu 2.990 € til 9.320 € án VSK (einn keppinautur gefur upp nettóverð):
 
 | Klefi | Söluaðili | Verð án VSK |
 |---|---|---|
@@ -38,9 +38,9 @@ wordCount: 1606
 | Klefi fyrir einn | Keppinautur 2 | 3.990 € án VSK |
 | Klefi fyrir einn | Keppinautur 3 | 9.320 € án VSK |
 
-Verð Re-Sound eru án VSK og án flutnings; fyrir Ísland gerum við tilboð í flutning og uppsetningu með staðfestingu pöntunar. Verð keppinauta eru í evrum eins og þau birtast.
+Verð Re-Sound eru án VSK og án flutnings; fyrir Ísland gerum við tilboð í flutning og uppsetningu og staðfestum það með pöntuninni. Verð keppinauta eru í evrum eins og þau birtast.
 
-Solo Flex situr á milli keppinauta 2 og 3 í þessum samanburði, Solo ECO undir keppinauti 1; við smíðum klefana sjálf. Re-Sound er vörumerki Stretch Group og framleiðir í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); símaklefarnir koma úr verksmiðjunni í Częstochowa.
+Solo Flex lendir á milli keppinauta 2 og 3 í þessum samanburði, Solo ECO undir keppinauti 1; við smíðum klefana sjálf. Re-Sound er vörumerki Stretch Group og framleiðir í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); símaklefarnir koma úr verksmiðjunni í Częstochowa.
 
 Fyrir tvo byrjar [Duo](/is/products/duo) á {{price:duo}} án VSK. Fyrir fjóra til tíu byrjar [Modular XL](/is/products/modular-xl) á {{price:modular-xl}} án VSK fyrir grunneininguna án uppsetningar og stækkar í 90 cm einingum; verð á viðbótareiningu, flutning og uppsetningu setjum við í tilboð.
 
@@ -64,17 +64,17 @@ Fyrir tvo byrjar [Duo](/is/products/duo) á {{price:duo}} án VSK. Fyrir fjóra 
 - **LED-lýsing** á sama skynjara, 10 mm lagskipt hljóðgler og val um ytri lit, filtlit og opnunarátt hurðar.
 - **Ábyrgð**: fimm ár á burðargrind og skel, tvö ár á rafbúnaði og slithlutum.
 
-Verðið án uppsetningar nær ekki yfir að bera klefann upp á hæðina og setja hann saman. Tveir einstaklingar gera það á innan við þremur klukkustundum; uppsetningu okkar eigin teymis, sem tekur um klukkustund fyrir einn klefa, verðleggjum við fyrir Ísland eftir samkomulagi. Aðgengi fyrir hjólastóla er ekki staðalbúnaður í neinum klefa en má útfæra sé þess óskað.
+Verðið án uppsetningar nær ekki yfir að bera klefann upp á hæðina og setja hann saman. Tveir menn ráða við það á innan við þremur klukkustundum; uppsetningu okkar eigin teymis, sem tekur um klukkustund fyrir einn klefa, verðleggjum við fyrir Ísland eftir samkomulagi. Aðgengi fyrir hjólastóla er ekki staðalbúnaður í neinum klefa en má útfæra sé þess óskað.
 
 ## Hvaða stærð: 1, 2 eða 4–10 manns
 
-Stærðin ræðst af því hvað fer úrskeiðis á gólfinu, ekki af því hvað kæmist fyrir. Teldu samstarfsfólkið sem er í símanum á sama augnabliki á álagstíma; það er fjöldi klefa fyrir einn sem þú þarft.
+Stærðin ræðst af því hvaða vandamál er á gólfinu, ekki af því hvað kæmist fyrir. Teldu samstarfsfólkið sem er í símanum á sama tíma þegar mest er að gera; sú tala er fjöldi eins manns klefa sem þú þarft.
 
-**Einn (Solo ECO 1,1 m², Solo Flex 1 m²).** Næðisklefi fyrir símtöl, myndfundi og einbeitta vinnu. Solo ECO er valið þegar fjárhagsáætlun eða fjöldi klefa ræður; Solo Flex þegar klefinn á líka að vera vinnustaður hálfan dag í senn.
+**Fyrir einn (Solo ECO 1,1 m², Solo Flex 1 m²).** Næðisklefi fyrir símtöl, myndfundi og einbeitta vinnu. Solo ECO er valið þegar fjárhagsáætlun eða fjöldi klefa ræður; Solo Flex þegar klefinn á líka að vera vinnustaður hálfan dag í senn.
 
-**Tveir (Duo, 2 m²).** Fyrir samtal undir fjögur augu eða tvo samstarfsmenn sem hringja inn í sama fund. Með 230 V tengli og rafdrifnu skrifborði; engin ISO 23351-1 mæling enn.
+**Fyrir tvo (Duo, 2 m²).** Fyrir samtal undir fjögur augu eða tvo samstarfsmenn sem hringja inn í sama fund. Með 230 V tengli og rafdrifnu skrifborði; engin ISO 23351-1 mæling enn.
 
-**Fjórir til tíu (Modular XL).** Fundarklefi sem herbergi inni í herbergi, stækkanlegur í 90 cm einingum (grunneiningin rúmar allt að fjóra, hver eining bætir tveimur við, allt að tíu með þremur einingum), með fullum hljóð- og myndbúnaði; sá stærsti sem hefur verið smíðaður hingað til rúmar tuttugu.
+**Fyrir fjóra til tíu (Modular XL).** Fundarklefi, herbergi inni í herbergi, stækkanlegur í 90 cm einingum (grunneiningin rúmar allt að fjóra, hver eining bætir tveimur við, allt að tíu með þremur einingum), með fullum hljóð- og myndbúnaði; sá stærsti sem hefur verið smíðaður hingað til rúmar tuttugu.
 
 ## Hljóðvist: hvað flokkar ISO 23351-1 merkja
 
@@ -94,15 +94,15 @@ Biddu hvern söluaðila um prófunarskýrsluna samkvæmt ISO 23351-1.
 
 ## Loftræsting, ljós og rafmagn
 
-Á eftir hljóðvistinni ræður loftræstingin því hvort klefinn er notaður: loftlaus klefi endar með hurðina opna. Allir klefar Re-Sound eru loftræstir; rafvæddu gerðirnar nota hljóðlátt EC-viftukerfi.
+Næst á eftir hljóðvistinni ræður loftræstingin því hvort klefinn er notaður: í loftlausum klefa endar hurðin opin. Allir klefar Re-Sound eru loftræstir; rafvæddu gerðirnar nota hljóðlátt EC-viftukerfi.
 
-- **Loftskipti**: Solo Flex lokar í mesta lagi 1,02 × 1,02 × 2,26 = 2,35 m³ (utanmál); við 4,6 m³/mín er því lofti skipt út á 2,35 / 4,6 = 0,51 mínútum, um það bil á 30 sekúndna fresti.
+- **Loftskipti**: Solo Flex umlykur í mesta lagi 1,02 × 1,02 × 2,26 = 2,35 m³ (utanmál); við 4,6 m³/mín er því lofti skipt út á 2,35 / 4,6 = 0,51 mínútum, um það bil á 30 sekúndna fresti.
 - **Stýring**: einn PIR-skynjari kveikir á viftum og LED-lýsingu þegar þú stígur inn.
 - **Rafmagn**: 230 V og USB-C inni í klefanum, svo engin snúra liggur út um dyrnar.
 
 ## Staðsetning: sex atriði til að athuga áður en þú pantar
 
-1. **Hæð**: 2.260 mm fyrir Solo Flex, 2.080 mm fyrir Solo ECO; gefðu rými undir loftum, úðakerfi og ljósum.
+1. **Hæð**: 2.260 mm fyrir Solo Flex, 2.080 mm fyrir Solo ECO; gættu að rými undir lofti, úðakerfi og ljósum.
 2. **Grunnflötur og hurðaropnun**: 1.020 × 1.020 mm (Solo Flex) eða 1.050 × 1.080 mm (Solo ECO) auk pláss til að opna hurðina og ganga fram hjá.
 3. **Gólfálag**: 280 kg á 1 m², það er 280 kg/m²; nefndu það ef þú ert með upphækkað tölvugólf.
 4. **Tengill**: venjulegur tengill innan seilingar snúrunnar; engar byggingarframkvæmdir.
@@ -111,7 +111,7 @@ Biddu hvern söluaðila um prófunarskýrsluna samkvæmt ISO 23351-1.
 
 ## Klefi eða plötur? Reiknidæmi
 
-Símaklefi leysir vandann með einn sem talar; hann styttir ekki ómtíma allrar hæðarinnar, sem er verkefni fyrir hljóðdeyfiplötur. ISO 22955 (hljóðvist í opnum skrifstofurýmum) og ISO 3382-3 (hvernig tal dofnar með fjarlægð) gefa stefnuna; athugaðu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum.
+Símaklefi leysir vandann með þann eina sem talar; ómtíma allrar hæðarinnar styttir hann ekki, það er verkefni hljóðdeyfiplatna. ISO 22955 (hljóðvist í opnum skrifstofurýmum) og ISO 3382-3 (hvernig tal dofnar með fjarlægð) gefa stefnuna; athugaðu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum.
 
 Dæmi: opið skrifstofurými 240 m² × 3 m = 720 m³, mældur ómtími 1,2 s, markmið 0,7 s. Sabine-jafnan A = 0,161 × V / T:
 
@@ -119,25 +119,25 @@ Dæmi: opið skrifstofurými 240 m² × 3 m = 720 m³, mældur ómtími 1,2 s, m
 - Ísog við markmið: 0,161 × 720 / 0,7 = **165,6 m² Sabine**
 - Til viðbótar: 165,6 − 96,6 = **69,0 m² Sabine**
 
-Með 12 mm [rPET hljóðdeyfiplötum](/is/products/pet-acoustic-panels) á 100 mm loftbili (αw 0,80, ísogsflokkur B samkvæmt ISO 11654) eru það 69,0 / 0,80 = **86 m² af plötum** á loft og veggi, sem fyrsta mat; athugaðu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum. Fleiri reiknidæmi eru í greininni [hve margar hljóðdeyfiplötur þarf ég](/is/blog/hve-margar-hljoddeyfiplotur-tharf-eg). Klefinn kemur til viðbótar, ekki í staðinn.
+Með 12 mm [rPET-hljóðdeyfiplötum](/is/products/pet-acoustic-panels) á 100 mm loftbili (αw 0,80, ísogsflokkur B samkvæmt ISO 11654) eru það 69,0 / 0,80 = **86 m² af plötum** á loft og veggi, sem fyrsta mat; athugaðu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum. Fleiri reiknidæmi eru í greininni [hve margar hljóðdeyfiplötur þarf ég](/is/blog/hve-margar-hljoddeyfiplotur-tharf-eg). Klefinn kemur til viðbótar, ekki í staðinn.
 
 ## Að kaupa beint frá framleiðanda: framleiðsla, uppsetning og lok líftíma
 
-Staðlaðar útfærslur af Solo Flex og Duo eru framleiddar **fjórum til sex vikum** eftir staðfestingu pöntunar, Solo ECO á **fjórum vikum**; flutningur til Íslands og afhendingartími eru eftir samkomulagi og fylgja tilboðinu. Uppsetningin er þín eða okkar: um klukkustund fyrir einn klefa, um tvær fyrir fundarklefa, tvær til sex fyrir Modular XL.
+Staðlaðar útfærslur af Solo Flex og Duo eru framleiddar á **fjórum til sex vikum** frá staðfestingu pöntunar, Solo ECO á **fjórum vikum**; flutningur til Íslands og afhendingartími eru eftir samkomulagi og fylgja tilboðinu. Uppsetningin er þín eða okkar: um klukkustund fyrir einn klefa, um tvær fyrir fundarklefa, tvær til sex fyrir Modular XL.
 
-Við lok líftíma má endurselja klefann eða taka hann í sundur til endurvinnslu; hvert efni er endurvinnanlegt. Plötur tökum við til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, en ekki á Íslandi.
+Við lok líftíma má endurselja klefann eða taka hann í sundur til endurvinnslu; öll efnin eru endurvinnanleg. Hljóðdeyfiplötur tökum við aftur án endurgjalds þegar þær hafa lokið hlutverki sínu, þó aðeins í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg; Ísland er utan þess svæðis.
 
 Solo Flex, Duo og Modular XL standa í sýningarsalnum okkar í Beveren-Waas, mánudaga til föstudaga kl. 08:00–16:30 eftir bókun; sjá [hvar er hægt að kaupa](/is/where-to-buy). Biddu um tilboð í Solo ECO eða Solo Flex í gegnum [tengiliðasíðuna](/is/contact).
 
 ## Algengar spurningar
 
 **Hvað kostar símaklefi fyrir skrifstofu árið 2026?**
-Birt verð keppinauta fyrir klefa fyrir einn í september 2026 liggja frá 2.990 € nettó um 3.990 € án VSK upp í 9.320 € án VSK. Solo ECO frá Re-Sound kostar {{price:solo-eco}} án VSK og Solo Flex {{price:solo-flex}} án VSK, hvort tveggja án flutnings og uppsetningar. Flutning til Íslands, afhendingartíma og uppsetningu setjum við í tilboðið með staðfestingu pöntunar.
+Birt verð keppinauta fyrir klefa fyrir einn í september 2026 spanna frá 2.990 € nettó, um 3.990 € án VSK, upp í 9.320 € án VSK. Solo ECO frá Re-Sound kostar {{price:solo-eco}} án VSK og Solo Flex {{price:solo-flex}} án VSK, hvort tveggja án flutnings og uppsetningar. Flutning til Íslands, afhendingartíma og uppsetningu tilgreinum við í tilboðinu og staðfestum með pöntuninni.
 
 **Er símaklefi í flokki C nógu hljóðlátur?**
 Fyrir símtöl og myndfundi í opnu skrifstofurými, já: við um 24 dB(A) taldeyfingu heyrir samstarfsfólk fyrir utan fjarlægt muldur en engin orð. Fyrir trúnaðarfundi rétt við annasamt gólf skaltu velja hærri flokk eða lokað herbergi og athuga nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum.
 
 **Hve fljótt getur símaklefi verið kominn á skrifstofuna mína?**
-Stöðluð útfærsla af Solo Flex er framleidd fjórum til sex vikum eftir staðfestingu pöntunar, Solo ECO á fjórum vikum; flutningur til Íslands og afhendingartími eru eftir samkomulagi. Tveir geta sett Solo Flex saman sjálfir á innan við þremur klukkustundum; setji teymið okkar upp tekur það um klukkustund fyrir einn klefa, tvær fyrir fundarklefa og tvær til sex fyrir Modular XL.
+Stöðluð útfærsla af Solo Flex er framleidd á fjórum til sex vikum frá staðfestingu pöntunar, Solo ECO á fjórum vikum; flutningur til Íslands og afhendingartími eru eftir samkomulagi. Tveir geta sett Solo Flex saman sjálfir á innan við þremur klukkustundum; setji teymið okkar upp tekur það um klukkustund fyrir einn klefa, tvær fyrir fundarklefa og tvær til sex fyrir Modular XL.
 
 *Heimildir: ISO 23351-1:2020 (taldeyfing lokaðra skrifstofuklefa); ISO 22955 og ISO 3382-3 til viðmiðunar; ISO 11654; W.C. Sabine; vörugögn Re-Sound; birt verð þriggja keppinauta, september 2026 (2.990 € nettó, 3.990 € og 9.320 € án VSK fyrir klefa fyrir einn).*
