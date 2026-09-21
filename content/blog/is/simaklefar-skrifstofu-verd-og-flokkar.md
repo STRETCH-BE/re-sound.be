@@ -21,7 +21,7 @@ faq: [{"question":"Hvað kostar símaklefi fyrir skrifstofu árið 2026?","answe
 draft: false
 translationKey: "booth-prices"
 model: "office-phone-booth-prices"
-wordCount: 1628
+wordCount: 1627
 ---
 
 **[Símaklefi fyrir skrifstofu](/is/products/acoustic-phone-booths) frá Re-Sound kostar frá {{price:solo-eco}} án VSK fyrir grunngerðina Solo ECO og frá {{price:solo-flex}} án VSK fyrir Solo Flex, í báðum tilvikum án flutnings og uppsetningar; flutningur til Íslands og afhendingartími eru eftir samkomulagi.** [Solo Flex](/is/products/solo-flex) er hljóðeinangraði símaklefinn okkar fyrir einn með mældri taldeyfingu, [Solo ECO](/is/products/solo-eco) einfaldari grunngerð með föstu standborði. Hér er farið yfir hvað verðið nær yfir, hvaða stærð þú átt að velja, hvað flokkar ISO 23351-1 merkja og hvað þarf að athuga áður en þú pantar, beint frá framleiðandanum.
@@ -40,7 +40,7 @@ wordCount: 1628
 
 Verð Re-Sound eru án VSK og án flutnings; fyrir Ísland gerum við tilboð í flutning og uppsetningu og staðfestum það með pöntuninni. Verð keppinauta eru í evrum eins og þau birtast.
 
-Solo Flex lendir á milli keppinauta 2 og 3 í þessum samanburði, Solo ECO undir keppinauti 1; við smíðum klefana sjálf. Re-Sound er vörumerki Stretch Group og framleiðir í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); símaklefarnir koma úr verksmiðjunni í Częstochowa.
+Solo Flex lendir á milli keppinauta 2 og 3 í þessum samanburði, Solo ECO undir keppinauti 1; við smíðum klefana sjálf. Re-Sound er vörumerki Stretch Group og á verksmiðjurnar sjálft, í Beveren-Waas (Belgíu) og Częstochowa (Póllandi); símaklefarnir koma úr verksmiðjunni í Częstochowa.
 
 Fyrir tvo byrjar [Duo](/is/products/duo) á {{price:duo}} án VSK. Fyrir fjóra til tíu byrjar [Modular XL](/is/products/modular-xl) á {{price:modular-xl}} án VSK fyrir grunneininguna án uppsetningar og stækkar í 90 cm einingum; verð á viðbótareiningu, flutning og uppsetningu setjum við í tilboð.
 
@@ -125,7 +125,7 @@ Með 12 mm [rPET-hljóðdeyfiplötum](/is/products/pet-acoustic-panels) á 100 m
 
 Staðlaðar útfærslur af Solo Flex og Duo eru framleiddar á **fjórum til sex vikum** frá staðfestingu pöntunar, Solo ECO á **fjórum vikum**; flutningur til Íslands og afhendingartími eru eftir samkomulagi og fylgja tilboðinu. Uppsetningin er þín eða okkar: um klukkustund fyrir einn klefa, um tvær fyrir fundarklefa, tvær til sex fyrir Modular XL.
 
-Við lok líftíma má endurselja klefann eða taka hann í sundur til endurvinnslu; öll efnin eru endurvinnanleg. Hljóðdeyfiplötur tökum við aftur án endurgjalds þegar þær hafa lokið hlutverki sínu, þó aðeins í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg; Ísland er utan þess svæðis.
+Við lok líftíma má endurselja klefann eða taka hann í sundur til endurvinnslu; öll efnin eru endurvinnanleg. Hljóðdeyfiplötur tökum við aftur án endurgjalds þegar þær hafa lokið hlutverki sínu, þó aðeins í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, en ekki hér á landi.
 
 Solo Flex, Duo og Modular XL standa í sýningarsalnum okkar í Beveren-Waas, mánudaga til föstudaga kl. 08:00–16:30 eftir bókun; sjá [hvar er hægt að kaupa](/is/where-to-buy). Biddu um tilboð í Solo ECO eða Solo Flex í gegnum [tengiliðasíðuna](/is/contact).
 

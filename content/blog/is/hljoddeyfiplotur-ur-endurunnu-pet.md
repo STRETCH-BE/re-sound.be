@@ -21,7 +21,7 @@ faq: [{"question":"Ísogar hljóðdeyfiplata úr endurunnu PET jafn vel og plata
 draft: false
 translationKey: "recycled-pet-panels"
 model: "akustikpaneele-recyceltes-pet"
-wordCount: 1637
+wordCount: 1636
 ---
 
 **Hljóðdeyfiplata úr endurunnu PET er filtplata, pressuð úr notuðum PET-flöskum, sem ísogar tal (12 mm rPET Panel nær αw 0,80, flokki B samkvæmt ISO 11654, á 100 mm loftbili og αw 1,00, flokki A, á 50 mm loftbili með 50 mm steinull), er skorin og máluð eins og hver önnur smíðaplata, má UV-prenta og er fest með klemmum eða lími, allt á fermetraverði sem liggur undir spónlögðum viði.** Hér eru staðreyndirnar um rPET-línuna okkar, frá uppbyggingu til samanburðar við viðarplötur.
@@ -46,11 +46,11 @@ Flokki A (αw ≥ 0,90) nærðu með rPET Panel á 50 mm loftbili með 50 mm ste
 
 Tökum kennslustofu 8 × 7 m með 3,2 m lofthæð, það er **179 m³**, með flísalögðu gólfi, gifslofti og einum glervegg. Mældur ómtími: **1,2 s**. Sem markmið notum við **0,6 s**, viðmiðunargildið okkar fyrir kennslustofur; athugaðu nákvæmu kröfuna hjá hljóðvistarráðgjafanum þínum. Sabine-jafnan segir síðan hve mikið ísog þarf: **A = 0,161 × V / T**.
 
-- Ísog í dag: 0,161 × 179 / 1,2 = **24,0 m² Sabine**
-- Ísog við markmið: 0,161 × 179 / 0,6 = **48,0 m² Sabine**
+- Ísogið nú: 0,161 × 179 / 1,2 = **24,0 m² Sabine**
+- Ísogið sem þarf: 0,161 × 179 / 0,6 = **48,0 m² Sabine**
 - Bæta þarf við: 48,0 − 24,0 = **24,0 m² Sabine**
 
-Eingöngu með rPET Panel 12 mm á 100 mm loftbili (αw 0,80, flokkur B) á veggjunum væru það 24,0 / 0,80 = **30,0 m² af plötum**, það er 9 plötur 2.800 × 1.220 mm (9 × 3,42 = 30,8 m²). Hagkvæmara er að blanda saman: **30 m² af ísogandi lofti** í flokki A (gert ráð fyrir αw 0,9; til dæmis [hljóðdeyfandi strekkiloft](https://stretchplafond.be/products/acoustic-stretch-system) frá systurfyrirtæki okkar STRETCH) gefa 30 × 0,9 = 27,0 m² Sabine, auk **tveggja rPET Panel platna** á 100 mm loftbili á bakveggnum (2 × 3,42 = 6,84 m² × 0,80 = 5,5 m² Sabine). Samtals 32,5 m² Sabine, meira en þau 24,0 sem þarf; stofan lendir í 0,161 × 179 / (24,0 + 32,5) = **0,51 s**. Fleiri rými eru reiknuð í greininni [hve margar hljóðdeyfiplötur þarf ég](/is/blog/hve-margar-hljoddeyfiplotur-tharf-eg).
+Eingöngu með 12 mm rPET Panel á veggjunum, á 100 mm loftbili (αw 0,80, flokkur B), væru það 24,0 / 0,80 = **30,0 m² af plötum**, það er 9 plötur 2.800 × 1.220 mm (9 × 3,42 = 30,8 m²). Hagkvæmara er að blanda saman: **30 m² af ísogandi lofti** í flokki A (gert ráð fyrir αw 0,9; til dæmis [hljóðdeyfandi strekkiloft](https://stretchplafond.be/products/acoustic-stretch-system) frá systurfyrirtæki okkar STRETCH) gefa 30 × 0,9 = 27,0 m² Sabine, auk **tveggja rPET Panel platna** á 100 mm loftbili á bakveggnum (2 × 3,42 = 6,84 m² × 0,80 = 5,5 m² Sabine). Samtals 32,5 m² Sabine, meira en þau 24,0 sem þarf; stofan lendir í 0,161 × 179 / (24,0 + 32,5) = **0,51 s**. Fleiri rými eru reiknuð í greininni [hve margar hljóðdeyfiplötur þarf ég](/is/blog/hve-margar-hljoddeyfiplotur-tharf-eg).
 
 Plötur draga úr óminum, ekki símtalinu sem berst um opið skrifstofurými. Til þess þarftu [símaklefa](/is/products/acoustic-phone-booths) eins og [Solo Flex](/is/products/solo-flex), frá {{price:solo-flex}} án VSK; uppsetning er ekki innifalin, og flutning til Íslands og uppsetningu tökum við inn í tilboðið.
 
@@ -89,9 +89,9 @@ Fermetraverðið ræðst af þykkt, lit, prentun og magni og fæst með tilboði
 
 | Viðmið | rPET | rWood |
 |---|---|---|
-| Ísog αw (ISO 11654) | rPET Panel 12 mm: 0,80, flokkur B á 100 mm loftbili; 1,00, flokkur A á 50 mm loftbili með 50 mm steinull | rWood Groove: 0,90, flokkur A; rWood Micro: 0,90, flokkur A, með 50 mm steinull allt að 1,00 |
+| Ísog αw (ISO 11654) | rPET Panel 12 mm: flokkur B (0,80) á 100 mm loftbili; flokkur A (1,00) á 50 mm loftbili og 50 mm steinull | rWood Groove: 0,90, flokkur A; rWood Micro: 0,90, flokkur A, með 50 mm steinull allt að 1,00 |
 | NRC | rPET Groove: 0,55 / 0,75 / 0,90 við 12 / 24 / 36 mm | ekki birt |
-| Viðbrögð við bruna (EN 13501-1) | hvítt, grátt og svart B-s1,d0; aðrir litir B-s2,d0 | rWood Groove: B-s1,d0 með FR MDF-kjarna, D-s2,d2 með venjulegum MDF-kjarna; rWood Micro: B-s1,d0 (FR MDF-kjarni) |
+| Viðbrögð við bruna (EN 13501-1) | hvítt, grátt og svart B-s1,d0; aðrir litir B-s2,d0 | rWood Groove: B-s1,d0 á FR MDF-kjarna, D-s2,d2 á venjulegum MDF-kjarna; rWood Micro: B-s1,d0 (FR MDF-kjarni) |
 | Efni | alfarið endurunnið PET, OEKO-TEX Standard 100 | eingöngu FSC-vottaður spónn |
 | Yfirborð | tíu lagerlitir, hvaða litur sem er eftir pöntun, má mála, UV-prentun | spónartegundir |
 | Vinnsla á staðnum | hnífur, sög, slípirokkur | skipulagt fyrir fram (spónn) |

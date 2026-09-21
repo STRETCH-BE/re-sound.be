@@ -17,11 +17,11 @@ heroAlt: "Grá rPET Groove filtplata við hlið rWood Groove plötu með viðars
 internalLinks: ["/is/products/pet-acoustic-panels","/is/products/wood-acoustic-panels","/is/products/rwood-groove","/is/products/rwood-perf","/is/products/rwood-micro","/is/products/interior","/is/blog/aw-nrc-flokkur-a-utbodslysing","/is/products/rpet-groove","/is/products/rpet-flex-groove","/is/products/rwood-veneer","/is/sustainability","/is/where-to-buy","/is/contact","/is/products/rpet-panel","/is/samples","/is/products/acoustic-phone-booths"]
 cta: "Biddu um ókeypis sýnishornasett með báðum efnunum, eða sendu okkur flatarmálið þitt og fáðu tilboð."
 sources: "ISO 11654 (ísogsflokkar); ASTM C423 (NRC); EN 13501-1 (viðbrögð við bruna); ISO 22955 til viðmiðunar; W.C. Sabine (ómtímajafnan); OEKO-TEX Standard 100; FSC; vörugögn og prófunarskýrslur Re-Sound fyrir rPET og rWood."
-faq: [{"question":"Ísogar viður minna hljóð en PET-filt?","answer":"Ekki í vörulínunum okkar. rWood Groove og rWood Micro eru báðar αw 0,90, flokkur A samkvæmt ISO 11654, og Micro nær 1,00 með 50 mm steinull í holrúminu. 12 mm rPET Panel spannar sama bil eftir uppsetningu: αw 0,80 (flokkur B) á 100 mm loftbili, 1,00 (flokkur A) á 50 mm loftbili með 50 mm steinull. Valið snýst um útlit, brunaflokk, fjárhagsáætlun og sjálfbærni, ekki um ísog."},{"question":"Get ég sameinað PET- og viðarplötur?","answer":"Já, og oft er það besta svarið: viður á áhersluveggnum, PET-filt á langveggjunum og loftinu. rPET er fest með lími, Z-klemmum, skrúfum eða á lista, rWood Groove á lista eða límd, rWood Micro með huldum klemmum; rPET-plata getur meira að segja fyllt holrúmið á bak við rWood Groove sem aukaísogsefni. Ókeypis móttaka við lok líftíma gildir um bæði efnin, en aðeins í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."},{"question":"Hvor platan er sjálfbærari kosturinn?","answer":"rPET Groove er alfarið úr endurunnu PET og með OEKO-TEX Standard 100-vottun; rWood notar eingöngu FSC-vottaðan spón. Báðar eru framleiddar í eigin verksmiðju okkar í Częstochowa og teknar til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, ekki á Íslandi. Endurunnið efni: rPET. Endurnýjanlegt yfirborð: rWood."}]
+faq: [{"question":"Ísogar viður minna hljóð en PET-filt?","answer":"Ekki í vörulínunum okkar. rWood Groove og rWood Micro eru báðar αw 0,90, flokkur A samkvæmt ISO 11654, og Micro nær 1,00 með 50 mm steinull í holrúminu. 12 mm rPET Panel spannar sama bil eftir uppsetningu: αw 0,80 (flokkur B) með 100 mm loftbili að baki og 1,00 (flokkur A) þegar 50 mm loftbil er fyllt með 50 mm steinull. Valið snýst um útlit, brunaflokk, fjárhagsáætlun og sjálfbærni, ekki um ísog."},{"question":"Get ég sameinað PET- og viðarplötur?","answer":"Já, og oft er það besta svarið: viður á áhersluveggnum, PET-filt á langveggjunum og loftinu. rPET er fest með lími, Z-klemmum, skrúfum eða á lista, rWood Groove á lista eða límd, rWood Micro með huldum klemmum; rPET-plata getur meira að segja fyllt holrúmið á bak við rWood Groove sem aukaísogsefni. Ókeypis móttaka við lok líftíma gildir um bæði efnin, en aðeins í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg."},{"question":"Hvor platan er sjálfbærari kosturinn?","answer":"rPET Groove er alfarið úr endurunnu PET og með OEKO-TEX Standard 100-vottun; rWood notar eingöngu FSC-vottaðan spón. Báðar eru framleiddar í eigin verksmiðju okkar í Częstochowa og teknar til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, þó ekki á Íslandi. Endurunnið efni: rPET. Endurnýjanlegt yfirborð: rWood."}]
 draft: false
 translationKey: "pet-vs-wood"
 model: "pet-acoustic-panels-vs-wood"
-wordCount: 1574
+wordCount: 1585
 ---
 
 **Stutta svarið: PET-filt og viður eru á sama ísogsbili í vörulínunum okkar (rWood Groove og rWood Micro αw 0,90, flokkur A; 12 mm rPET Panel αw 0,80 til 1,00 eftir uppsetningu), svo þú velur eftir útliti, brunaflokki, fjárhagsáætlun og sjálfbærni, ekki eftir hljóðvist.** [PET-filt](/is/products/pet-acoustic-panels) er kosturinn fyrir liti, sérprentaða grafík, þröngan fjárhag og skurð á staðnum; [viður](/is/products/wood-acoustic-panels) fyrir hlýju, rými sem gestir sjá og, á eldtefjandi MDF-kjarna, sama brunaflokk B-s1,d0 og rPET í hvítu, gráu og svörtu.
@@ -32,7 +32,7 @@ wordCount: 1574
 
 **Hljóðdeyfiplötur úr viði** eru ekta viðarspónn á kjarna. Lokaður spónn endurkastar hljóði, svo það þarf að opna yfirborðið: rifur ([rWood Groove](/is/products/rwood-groove)), göt ([rWood Perf](/is/products/rwood-perf)) eða örgöt ([rWood Micro](/is/products/rwood-micro)) hleypa hljóðinu gegnum framhliðina inn í ísogandi lagið að baki. Viðurinn er andlitið; ísogsefnið vinnur verkið.
 
-Báðar gerðir ná sama flokki: rWood Groove og rWood Micro eru αw 0,90, flokkur A. Groove ber sitt eigið 3 mm filt úr endurunnu PET á bakhliðinni, er fest á lista eða límd, og í holrúmið að baki má bæta ísogsefni, hljóðfilti, rPET-plötu eða steinull; Micro er smellt á brautir með holrúmi að baki og nær αw 1,00 með 50 mm steinull. PET-filt ísogar sjálft, en hve mikið ræðst af uppsetningunni: 12 mm rPET Panel mælist αw 0,25 beint á vegg, 0,80 á 100 mm loftbili og 1,00 á 50 mm loftbili með 50 mm steinull.
+Báðar gerðir ná sama flokki: rWood Groove og rWood Micro eru αw 0,90, flokkur A. Groove ber sitt eigið 3 mm filt úr endurunnu PET á bakhliðinni, er fest á lista eða límd, og í holrúmið að baki má bæta ísogsefni, hljóðfilti, rPET-plötu eða steinull; Micro er smellt á brautir, alltaf með holrúmi að baki, og fer upp í αw 1,00 með 50 mm steinull. PET-filt ísogar sjálft, en hve mikið ræðst af uppsetningunni: 12 mm rPET Panel mælist αw 0,25 beint á vegg, 0,80 á 100 mm loftbili og 1,00 á 50 mm loftbili með 50 mm steinull.
 
 ## Frammistaða hlið við hlið
 
@@ -52,7 +52,7 @@ Flokkur B (αw 0,80–0,85) er vinnuhesturinn fyrir skrifstofur, skóla og veiti
 - Markmið: A = 0,161 × 56 / 0,6 = **15,0 m² Sabine**
 - Viðbót: 15,0 − 10,0 = **5,0 m² Sabine**
 
-Með 12 mm rPET Panel á 100 mm loftbili (αw 0,80) verða það 5,0 / 0,80 = **6,3 m²**, eða tvær plötur í stærðinni 2.800 × 1.220 mm (2 × 3,42 = 6,84 m²). Með rWood Groove (αw 0,90) verða það 5,0 / 0,90 = **5,6 m²**, og með rPET Panel á 50 mm loftbili með 50 mm steinull (αw 1,00) 5,0 m². Efnið breytir útlitinu og verðinu miklu meira en fjölda platnanna.
+Með 12 mm rPET Panel og 100 mm loftbili að baki (αw 0,80) verða það 5,0 / 0,80 = **6,3 m²**, eða tvær plötur í stærðinni 2.800 × 1.220 mm (2 × 3,42 = 6,84 m²). Með rWood Groove (αw 0,90) verða það 5,0 / 0,90 = **5,6 m²**, og með rPET Panel á 50 mm loftbili með 50 mm steinull (αw 1,00) 5,0 m². Efnið breytir útlitinu og verðinu miklu meira en fjölda platnanna.
 
 ## Útlit og innrétting
 
@@ -116,12 +116,12 @@ Enn óviss? Biddu um ókeypis [sýnishornasett](/is/samples) og berðu bæði ef
 ## Algengar spurningar
 
 **Ísogar viður minna hljóð en PET-filt?**
-Ekki í vörulínunum okkar. rWood Groove og rWood Micro eru báðar αw 0,90, flokkur A samkvæmt ISO 11654, og Micro nær 1,00 með 50 mm steinull í holrúminu. 12 mm rPET Panel spannar sama bil eftir uppsetningu: αw 0,80 (flokkur B) á 100 mm loftbili, 1,00 (flokkur A) á 50 mm loftbili með 50 mm steinull. Valið snýst um útlit, brunaflokk, fjárhagsáætlun og sjálfbærni, ekki um ísog.
+Ekki í vörulínunum okkar. rWood Groove og rWood Micro eru báðar αw 0,90, flokkur A samkvæmt ISO 11654, og Micro nær 1,00 með 50 mm steinull í holrúminu. 12 mm rPET Panel spannar sama bil eftir uppsetningu: αw 0,80 (flokkur B) með 100 mm loftbili að baki og 1,00 (flokkur A) þegar 50 mm loftbil er fyllt með 50 mm steinull. Valið snýst um útlit, brunaflokk, fjárhagsáætlun og sjálfbærni, ekki um ísog.
 
 **Get ég sameinað PET- og viðarplötur?**
 Já, og oft er það besta svarið: viður á áhersluveggnum, PET-filt á langveggjunum og loftinu. rPET er fest með lími, Z-klemmum, skrúfum eða á lista, rWood Groove á lista eða límd, rWood Micro með huldum klemmum; rPET-plata getur meira að segja fyllt holrúmið á bak við rWood Groove sem aukaísogsefni. Ókeypis móttaka við lok líftíma gildir um bæði efnin, en aðeins í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg.
 
 **Hvor platan er sjálfbærari kosturinn?**
-rPET Groove er alfarið úr endurunnu PET og með OEKO-TEX Standard 100-vottun; rWood notar eingöngu FSC-vottaðan spón. Báðar eru framleiddar í eigin verksmiðju okkar í Częstochowa og teknar til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, ekki á Íslandi. Endurunnið efni: rPET. Endurnýjanlegt yfirborð: rWood.
+rPET Groove er alfarið úr endurunnu PET og með OEKO-TEX Standard 100-vottun; rWood notar eingöngu FSC-vottaðan spón. Báðar eru framleiddar í eigin verksmiðju okkar í Częstochowa og teknar til baka án endurgjalds í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, þó ekki á Íslandi. Endurunnið efni: rPET. Endurnýjanlegt yfirborð: rWood.
 
 *Heimildir: ISO 11654 (ísogsflokkar); ASTM C423 (NRC); EN 13501-1 (viðbrögð við bruna); ISO 22955 til viðmiðunar; W.C. Sabine (ómtímajafnan); OEKO-TEX Standard 100; FSC; vörugögn og prófunarskýrslur Re-Sound fyrir rPET og rWood.*

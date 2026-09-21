@@ -21,7 +21,7 @@ faq: [{"question":"Er αw það sama og NRC?","answer":"Nei. αw (ISO 11654) fel
 draft: false
 translationKey: "specifying-aw-nrc"
 model: "specifying-acoustic-panels-aw-nrc-class-a"
-wordCount: 1757
+wordCount: 1771
 ---
 
 **Stutta svarið: tilgreindu hljóðdeyfiplötu með einu ísogsgildi ásamt staðli þess og uppsetningarskilyrði (αw og flokkur samkvæmt ISO 11654, eða NRC samkvæmt ASTM C423), auk brunaflokks samkvæmt EN 13501-1, vottorða, endurunnins hlutfalls, móttöku við lok líftíma og þeirra skjala sem á að skila; umreiknaðu aldrei annað gildið yfir í hitt.** Hér á eftir: hvað tölurnar merkja, hvers vegna uppsetningin skiptir máli, og útboðstexti og gátlisti sem þú getur afritað beint.
@@ -51,7 +51,7 @@ Flokkurinn er styttri leið til að nefna αw, ekki krafa í sjálfu sér. Hvað
 Prófunarskýrslan tilgreinir hvernig sýnið var sett upp, og talan á aðeins við um þá uppsetningu.
 
 - **Gerð A**: platan liggur beint á hörðu yfirborði, eins og þegar hún er límd eða fest flöt á vegg.
-- **Loftbil**: prófað með bili frá yfirborðinu, á listum eða hangandi sem loft; loftbil að baki bætir ísog lágra tíðna, þannig að sama plata mælist hærra. 12 mm rPET Panel sýnir hve breitt bilið getur verið: αw 0,25 (flokkur D) beint á vegg, 0,60 (flokkur C) á 50 mm loftbili, 0,80 (flokkur B) á 100 mm loftbili, 1,00 (flokkur A) á 50 mm loftbili með 50 mm steinull og 0,95 (flokkur A) á 100 mm loftbili með 100 mm steinull.
+- **Loftbil**: prófað með bili frá yfirborðinu, á listum eða hangandi sem loft; loftbil að baki bætir ísog lágra tíðna, þannig að sama plata mælist hærra. 12 mm rPET Panel sýnir hve breitt bilið getur verið: 1,00 (flokkur A) á 50 mm loftbili sem er fyllt með 50 mm steinull, 0,95 (flokkur A) á 100 mm loftbili sem er fyllt með 100 mm steinull, en 0,80 (flokkur B) á 100 mm loftbili einu saman, 0,60 (flokkur C) á 50 mm loftbili og aðeins 0,25 (flokkur D) límd beint á vegg.
 
 Gildi sem mælt var með loftbili næst ekki með plötu sem límd er á gifsvegg, svo gildið og uppsetningarskilyrðið verða að standa saman í textanum. [Hljóðdeyfiplötur úr viði](/is/products/wood-acoustic-panels) bæta við öðru skilyrði: rWood Groove (αw 0,90, flokkur A) ber sitt eigið 3 mm filtbak, fer á lista eða er límd, og holrúmið að baki getur tekið aukaísogsefni (hljóðfilt, rPET-plötu eða steinull); [rWood Micro](/is/products/rwood-micro) (αw 0,90, flokkur A) hangir á klemmum með holrúmi að baki og nær αw 1,00 með 50 mm steinull, svo tilgreindu holrúmið og hvað fyllir það.
 
@@ -67,11 +67,11 @@ Við αw 0,80 (12 mm rPET Panel á 100 mm loftbili, flokkur B) þarf 5,0 / 0,80 
 
 ## Bruni, útgufun og hringrás
 
-**Viðbrögð við bruna, EN 13501-1.** B-s1,d0 þýðir takmarkað framlag til bruna, lítinn reyk (s1) og enga logandi dropa (d0). rPET-línan okkar er B-s1,d0 í hvítu, gráu og svörtu og B-s2,d0 í öðrum litum (flokkurinn fylgir litnum, hvort sem um Standard- eða FR-útgáfu er að ræða); rWood Micro og rWood Perf eru B-s1,d0 á eldtefjandi MDF-kjarna, rWood Groove B-s1,d0 á FR-kjarna og D-s2,d2 á venjulegum kjarna — taktu flokkinn úr tæknilýsingunni fyrir þá uppbyggingu sem valin er. Staðfestu nákvæmu kröfuna hjá hljóðvistarráðgjafa eða brunahönnuði.
+**Viðbrögð við bruna, EN 13501-1.** B-s1,d0 þýðir takmarkað framlag til bruna, lítinn reyk (s1) og enga logandi dropa (d0). rPET-línan okkar er B-s1,d0 í hvítu, gráu og svörtu en B-s2,d0 í öllum öðrum litum (flokkurinn fylgir litnum, hvort sem um Standard- eða FR-útgáfu er að ræða); rWood Micro og rWood Perf eru B-s1,d0 á eldtefjandi MDF-kjarna, rWood Groove B-s1,d0 á FR-kjarna og D-s2,d2 á venjulegum kjarna — taktu flokkinn úr tæknilýsingunni fyrir þá uppbyggingu sem valin er. Staðfestu nákvæmu kröfuna hjá hljóðvistarráðgjafa eða brunahönnuði.
 
 **Útgufun og efni.** Fyrir filt skaltu biðja um OEKO-TEX Standard 100; rPET-plöturnar okkar bera þá vottun. Fyrir viðarplötur skaltu biðja um FSC-vottun á spóninn; rWood notar eingöngu FSC-vottaðan spón.
 
-**Endurunnið hlutfall og móttaka.** Tilgreindu lágmarkshlutfall endurunnins efnis og hvað verður um plötuna við lok líftíma. rPET Groove er alfarið úr endurunnu PET, og við tökum við öllum plötunum okkar án endurgjalds þegar líftíma þeirra lýkur — sú þjónusta gildir eingöngu í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg, ekki á Íslandi (sjá [sjálfbærni](/is/sustainability)). Re-Sound er vörumerki Stretch Group. Við framleiðum í eigin verksmiðjum í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).
+**Endurunnið hlutfall og móttaka.** Tilgreindu lágmarkshlutfall endurunnins efnis og hvað verður um plötuna við lok líftíma. rPET Groove er alfarið úr endurunnu PET, og við tökum við öllum plötunum okkar án endurgjalds þegar líftíma þeirra lýkur — sú þjónusta gildir eingöngu í Belgíu, Hollandi, Frakklandi, Þýskalandi og Lúxemborg og nær ekki til Íslands (sjá [sjálfbærni](/is/sustainability)). Re-Sound er vörumerki Stretch Group. Við framleiðum sjálf, í verksmiðjum okkar í Beveren-Waas (Belgíu) og Częstochowa (Póllandi).
 
 ## Vörulínur Re-Sound sem dæmi
 

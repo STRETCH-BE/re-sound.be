@@ -21,7 +21,7 @@ faq: [{"question":"Hve margar hljóðdeyfiplötur þarf ég fyrir 100 m² skrifs
 draft: false
 translationKey: "how-many-panels"
 model: "how-many-acoustic-panels-do-i-need"
-wordCount: 1534
+wordCount: 1536
 ---
 
 **Fjöldi hljóðdeyfiplatna sem þú þarft ræðst af þremur tölum: rúmmáli rýmisins, ómtímanum sem þú mælir í dag og ómtímanum sem þú vilt ná.** Sabine-jafnan breytir þessum tölum í fermetra af ísogi, og αw plötunnar breytir fermetrunum í plötur. Hér á eftir koma aðferðin, viðmiðunargildin, flokkar ISO 11654 og fjögur reiknidæmi.
@@ -67,7 +67,7 @@ Hart rými með gleri, gifsplötum og flísalögðu gólfi mælist yfirleitt á 
 | D | 0,30 – 0,55 |
 | E | 0,15 – 0,25 |
 
-Vörulínurnar okkar: **[Interior](/is/products/interior)** (textíll) αw 1,0, flokkur A. **[rWood Groove](/is/products/rwood-groove)** og **[rWood Micro](/is/products/rwood-micro)** αw 0,90, flokkur A. 12 mm **[rPET Panel](/is/products/pet-acoustic-panels)** ræðst af uppsetningunni: αw 0,25 beint á vegg (flokkur D), 0,60 með 50 mm loftbili (flokkur C), 0,80 með 100 mm loftbili (flokkur B) og 1,00 með 50 mm loftbili og 50 mm steinull (flokkur A). **[rPET Groove](/is/products/rpet-groove)**, sem er skorin úr þeirri plötu, er aðeins gefin upp með NRC (0,55, 0,75 og 0,90 við 12, 24 og 36 mm), svo dæmin hér að neðan reikna með rPET Panel og uppsetningu hennar.
+Vörulínurnar okkar: **[Interior](/is/products/interior)** (textíll) αw 1,0, flokkur A. **[rWood Groove](/is/products/rwood-groove)** og **[rWood Micro](/is/products/rwood-micro)** eru báðar αw 0,90, flokkur A. Hjá 12 mm **[rPET Panel](/is/products/pet-acoustic-panels)** ræðst gildið af uppsetningunni: αw 0,25 beint á vegg (flokkur D), 0,60 með 50 mm loftbili (flokkur C), 0,80 með 100 mm loftbili (flokkur B) og 1,00 með 50 mm loftbili og 50 mm steinull (flokkur A). **[rPET Groove](/is/products/rpet-groove)**, sem er skorin úr þeirri plötu, er aðeins gefin upp með NRC (0,55, 0,75 og 0,90 við 12, 24 og 36 mm), svo dæmin hér að neðan reikna með rPET Panel og uppsetningu hennar.
 
 Reiknaðu með raunflatarmáli plötunnar: rPET Panel 2.800 × 1.220 mm er 3,42 m² og 2.440 × 1.220 mm er 2,98 m²; rWood Groove-borð 300 × 2.400 mm er 0,72 m² og 300 × 2.780 mm er 0,83 m².
 
@@ -79,7 +79,7 @@ Herbergi 5 × 4 m, 2,8 m hátt, teppaflísar, bólstraðir stólar, einn glerveg
 - A markmið = 0,161 × 56 / 0,6 = **15,0 m² Sabine**
 - Bæta við: **5,0 m² Sabine**
 
-Með rPET Panel, 12 mm, á 100 mm loftbili (αw 0,80) þarf 5,0 / 0,80 = **6,3 m² af plötum**, það er tvær plötur 2.800 × 1.220 mm (6,84 m²) á vegginn á móti skjánum og fyrir aftan þá sem tala. Á 50 mm loftbili með 50 mm steinull (αw 1,00), eða með Interior (αw 1,0), duga 5 m². Um það bil þriðjungur gólfflatarins: eðlilegt fyrir lítið, hart herbergi.
+Sé 12 mm rPET Panel sett á 100 mm loftbil (αw 0,80) þarf 5,0 / 0,80 = **6,3 m² af plötum**, það er tvær plötur 2.800 × 1.220 mm (6,84 m²) á vegginn á móti skjánum og fyrir aftan þá sem tala. Á 50 mm loftbili með 50 mm steinull (αw 1,00), eða með Interior (αw 1,0), duga 5 m². Um það bil þriðjungur gólfflatarins: eðlilegt fyrir lítið, hart herbergi.
 
 ## Reiknidæmi 2: opið skrifstofurými, 720 m³
 
@@ -91,7 +91,7 @@ Gólf 20 × 12 m, 3 m hátt, 30 vinnustöðvar, epoxýgólf, steypt loft. Áætl
 
 Með veggplötum eingöngu þyrfti 69,0 / 0,80 = **86 m² af plötum** (rPET Panel á 100 mm loftbili, αw 0,80), meira en tvo þriðju beggja langveggja. Betri dreifing:
 
-- **Loft**: 50 m² af ísogsefni í flokki A (gert ráð fyrir αw 0,9) = 45,0 m² Sabine. [Hljóðdeyfandi strekkiloft](https://stretchplafond.be/products/acoustic-stretch-system) yfir allan flötinn skilar enn meiru.
+- **Loft**: 50 m² af ísogsefni í flokki A (reiknað með αw 0,9) = 45,0 m² Sabine. [Hljóðdeyfandi strekkiloft](https://stretchplafond.be/products/acoustic-stretch-system) yfir allan flötinn skilar enn meiru.
 - **Veggir**: 30 m² af rPET Panel á 100 mm loftbili (αw 0,80) = 24,0 m² Sabine.
 - Samtals **69,0 m² Sabine** — nákvæmlega markmiðið; sömu 30 m² á 50 mm loftbili með 50 mm steinull (αw 1,00) gefa 30,0 m² Sabine og borð fyrir báru.
 
@@ -115,7 +115,7 @@ Kennslustofa, 8 × 7 m að grunnfleti og 3,2 m há: flísalagt gólf, gifsloft o
 - A markmið = 0,161 × 179 / 0,6 = **48,0 m² Sabine**
 - Bæta við: **24,0 m² Sabine**
 
-Tillaga: **30 m² af ísogandi lofti** í flokki A (αw 0,9, 27,0 m² Sabine) auk **tveggja rPET Panel platna** 2.800 × 1.220 mm á bakvegginn, á 100 mm loftbili (6,84 m², αw 0,80, 5,5 m² Sabine). Samtals 32,5 m² Sabine, yfir þeim 24,0 sem þarf: stofan helst undir 0,6 s jafnvel tóm. Fyrir skóla leggjum við til [rPET](/is/products/pet-acoustic-panels): brunaflokkur B-s1,d0 í hvítu, gráu og svörtu og B-s2,d0 í öðrum litum samkvæmt EN 13501-1, OEKO-TEX Standard 100, rPET Groove í tíu lagerlitum, og hægt er að skipta út einni plötu í senn.
+Tillaga: **30 m² af ísogandi lofti** í flokki A (αw 0,9, 27,0 m² Sabine) auk **tveggja rPET Panel platna** 2.800 × 1.220 mm á bakvegginn, á 100 mm loftbili (6,84 m², αw 0,80, 5,5 m² Sabine). Samtals 32,5 m² Sabine, yfir þeim 24,0 sem þarf: stofan helst undir 0,6 s jafnvel tóm. Fyrir skóla leggjum við til [rPET](/is/products/pet-acoustic-panels): brunaflokkur B-s1,d0 í hvítu, gráu og svörtu, B-s2,d0 í öðrum litum (EN 13501-1), OEKO-TEX Standard 100, rPET Groove í tíu lagerlitum, og hægt er að skipta út einni plötu í senn.
 
 ## Þumalputtareglur og hvar plöturnar eiga að vera
 
