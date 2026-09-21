@@ -282,8 +282,11 @@ hub, price guide, blog posts, manufacturing page).
    outside Benelux/DE. **Icelandic needs a native read** before you point
    anyone at /is/blog — the register is informal þú and the terminology
    (hljóðdeyfiplötur, ómtími) is consistent, but nobody Icelandic has read
-   it. Meta descriptions of many posts run 158–200 characters (Google shows
-   about 155); shortening them is a copy job, not a correctness one.
+   it. Meta descriptions: on 21 September every page description on the
+   site was brought to 155 characters or fewer in all ten languages (ten
+   blog posts, the seven rPET/rWood product pages, the rPET and booth
+   range pages, the calculator and the booth price guide); nothing was
+   added, only trimmed.
 
 ## B. Confirmed price list (per model)
 
